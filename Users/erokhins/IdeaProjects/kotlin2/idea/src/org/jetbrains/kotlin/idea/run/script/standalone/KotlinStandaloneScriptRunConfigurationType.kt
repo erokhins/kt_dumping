@@ -20,7 +20,7 @@
 
 'findConfigurationType' @ [41:43] ==> @NotNull public open fun <T : (ConfigurationType..ConfigurationType?)> findConfigurationType(@NotNull p0: Class<(KotlinStandaloneScriptRunConfigurationType..KotlinStandaloneScriptRunConfigurationType?)>): KotlinStandaloneScriptRunConfigurationType defined in com.intellij.execution.configurations.ConfigurationTypeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (ConfigurationType..ConfigurationType?)> -> KotlinStandaloneScriptRunConfigurationType
+    <T : (ConfigurationType..ConfigurationType?)> -> (org.jetbrains.kotlin.idea.run.script.standalone.KotlinStandaloneScriptRunConfigurationType..org.jetbrains.kotlin.idea.run.script.standalone.KotlinStandaloneScriptRunConfigurationType?)
 
 'KotlinStandaloneScriptRunConfigurationType' @ [41:65] ==> public companion object defined in org.jetbrains.kotlin.idea.run.script.standalone.KotlinStandaloneScriptRunConfigurationType[FakeCallableDescriptorForObject]
 

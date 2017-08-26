@@ -6,7 +6,7 @@
 
 'deserialize' @ [33:38] ==> @NotNull public open fun <T : (Any..Any?)> deserialize(@NotNull p0: Element, @NotNull p1: Class<(CommonCompilerArguments.DummyImpl..CommonCompilerArguments.DummyImpl?)>): CommonCompilerArguments.DummyImpl defined in com.intellij.util.xmlb.XmlSerializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DummyImpl
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.DummyImpl..org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.DummyImpl?)
 
 'componentTag' @ [33:50] ==> value-parameter componentTag: Element defined in org.jetbrains.kotlin.jps.model.KotlinCommonCompilerArgumentsSerializer.loadExtension[ValueParameterDescriptorImpl]
 

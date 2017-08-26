@@ -38,7 +38,7 @@ Inferred types:
 
 'fqName' @ [40:75] ==> val fqName: String defined in org.jetbrains.kotlin.idea.core.isExcludedFromAutoImport[LocalVariableDescriptor]
 
-'shouldBeHiddenAsInternalImplementationDetail' @ [41:12] ==> private fun shouldBeHiddenAsInternalImplementationDetail(fqName: String, locationFqName: String): Boolean defined in org.jetbrains.kotlin.idea.core[SimpleFunctionDescriptorImpl]
+'shouldBeHiddenAsInternalImplementationDetail' @ [41:12] ==> private fun shouldBeHiddenAsInternalImplementationDetail(fqName: String, locationFqName: String): Boolean defined in org.jetbrains.kotlin.idea.core in file excludedFromImportsAndCompletion.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [41:57] ==> val fqName: String defined in org.jetbrains.kotlin.idea.core.isExcludedFromAutoImport[LocalVariableDescriptor]
 

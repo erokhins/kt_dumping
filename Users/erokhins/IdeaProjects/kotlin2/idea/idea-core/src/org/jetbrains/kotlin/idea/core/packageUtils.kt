@@ -21,6 +21,8 @@ Inferred types:
     <T> -> String
     <R> -> FqName
 
+'FqName' @ [30:44] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
+
 'ROOT' @ [30:62] ==> public final val ROOT: (FqName..FqName?) defined in org.jetbrains.kotlin.name.FqName[JavaPropertyDescriptor]
 
 'packageFqName' @ [33:49] ==> public final val KtFile.packageFqName: FqName[MyPropertyDescriptor]

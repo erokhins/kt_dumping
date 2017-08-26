@@ -364,13 +364,9 @@ Inferred types:
 
 'BranchedValue' @ [151:5] ==> public constructor BranchedValue(arg1: StackValue, arg2: StackValue? = ..., operandType: Type, opcode: Int) defined in org.jetbrains.kotlin.codegen.BranchedValue[ClassConstructorDescriptorImpl]
 
-'BranchedValue' @ [151:19] ==> public companion object defined in org.jetbrains.kotlin.codegen.BranchedValue[FakeCallableDescriptorForObject]
-
 'condJump' @ [151:33] ==> public final fun condJump(condition: StackValue): CondJump defined in org.jetbrains.kotlin.codegen.BranchedValue.Companion[SimpleFunctionDescriptorImpl]
 
 'arg1' @ [151:42] ==> value-parameter arg1: StackValue defined in org.jetbrains.kotlin.codegen.And.<init>[ValueParameterDescriptorImpl]
-
-'BranchedValue' @ [151:49] ==> public companion object defined in org.jetbrains.kotlin.codegen.BranchedValue[FakeCallableDescriptorForObject]
 
 'condJump' @ [151:63] ==> public final fun condJump(condition: StackValue): CondJump defined in org.jetbrains.kotlin.codegen.BranchedValue.Companion[SimpleFunctionDescriptorImpl]
 
@@ -416,13 +412,9 @@ Inferred types:
 
 'BranchedValue' @ [164:5] ==> public constructor BranchedValue(arg1: StackValue, arg2: StackValue? = ..., operandType: Type, opcode: Int) defined in org.jetbrains.kotlin.codegen.BranchedValue[ClassConstructorDescriptorImpl]
 
-'BranchedValue' @ [164:19] ==> public companion object defined in org.jetbrains.kotlin.codegen.BranchedValue[FakeCallableDescriptorForObject]
-
 'condJump' @ [164:33] ==> public final fun condJump(condition: StackValue): CondJump defined in org.jetbrains.kotlin.codegen.BranchedValue.Companion[SimpleFunctionDescriptorImpl]
 
 'arg1' @ [164:42] ==> value-parameter arg1: StackValue defined in org.jetbrains.kotlin.codegen.Or.<init>[ValueParameterDescriptorImpl]
-
-'BranchedValue' @ [164:49] ==> public companion object defined in org.jetbrains.kotlin.codegen.BranchedValue[FakeCallableDescriptorForObject]
 
 'condJump' @ [164:63] ==> public final fun condJump(condition: StackValue): CondJump defined in org.jetbrains.kotlin.codegen.BranchedValue.Companion[SimpleFunctionDescriptorImpl]
 
@@ -523,8 +515,6 @@ Inferred types:
 'right' @ [201:25] ==> value-parameter right: StackValue defined in org.jetbrains.kotlin.codegen.NumberCompare.<init>[ValueParameterDescriptorImpl]
 
 'operandType' @ [201:32] ==> value-parameter operandType: Type defined in org.jetbrains.kotlin.codegen.NumberCompare.<init>[ValueParameterDescriptorImpl]
-
-'NumberCompare' @ [201:45] ==> public companion object defined in org.jetbrains.kotlin.codegen.NumberCompare[FakeCallableDescriptorForObject]
 
 'getNumberCompareOpcode' @ [201:59] ==> public final fun getNumberCompareOpcode(opToken: IElementType): Int defined in org.jetbrains.kotlin.codegen.NumberCompare.Companion[SimpleFunctionDescriptorImpl]
 
@@ -678,8 +668,6 @@ Inferred types:
 'right' @ [247:25] ==> value-parameter right: StackValue defined in org.jetbrains.kotlin.codegen.ObjectCompare.<init>[ValueParameterDescriptorImpl]
 
 'operandType' @ [247:32] ==> value-parameter operandType: Type defined in org.jetbrains.kotlin.codegen.ObjectCompare.<init>[ValueParameterDescriptorImpl]
-
-'ObjectCompare' @ [247:45] ==> public companion object defined in org.jetbrains.kotlin.codegen.ObjectCompare[FakeCallableDescriptorForObject]
 
 'getObjectCompareOpcode' @ [247:59] ==> public final fun getObjectCompareOpcode(opToken: IElementType): Int defined in org.jetbrains.kotlin.codegen.ObjectCompare.Companion[SimpleFunctionDescriptorImpl]
 

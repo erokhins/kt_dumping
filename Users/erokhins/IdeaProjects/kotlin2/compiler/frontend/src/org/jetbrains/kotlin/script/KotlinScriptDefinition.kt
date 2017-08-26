@@ -8,8 +8,6 @@ Inferred types:
 
 'endsWith' @ [40:22] ==> public fun String.endsWith(suffix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'KotlinParserDefinition' @ [40:31] ==> public companion object defined in org.jetbrains.kotlin.parsing.KotlinParserDefinition[FakeCallableDescriptorForObject]
-
 'STD_SCRIPT_EXT' @ [40:54] ==> @JvmField public final val STD_SCRIPT_EXT: String defined in org.jetbrains.kotlin.parsing.KotlinParserDefinition.Companion[PropertyDescriptorImpl]
 
 'NameUtils' @ [43:13] ==> public object NameUtils defined in org.jetbrains.kotlin.name[FakeCallableDescriptorForObject]

@@ -204,8 +204,6 @@ Inferred types:
 
 'predefinedSignature' @ [123:38] ==> val predefinedSignature: RawSignature defined in org.jetbrains.kotlin.codegen.state.BuilderFactoryForDuplicateSignatureDiagnostics.reportClashingWithPredefinedSignatures[LocalVariableDescriptor]
 
-'JvmDeclarationOrigin' @ [123:61] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [123:82] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'computeDiagnosticToReport' @ [125:30] ==> private final fun computeDiagnosticToReport(classOrigin: JvmDeclarationOrigin, classInternalName: String, rawSignature: RawSignature, origins: Collection<JvmDeclarationOrigin>): BuilderFactoryForDuplicateSignatureDiagnostics.ConflictingDeclarationError? defined in org.jetbrains.kotlin.codegen.state.BuilderFactoryForDuplicateSignatureDiagnostics[SimpleFunctionDescriptorImpl]
@@ -397,8 +395,6 @@ Inferred types:
 
 'element' @ [188:44] ==> public final val element: PsiElement? defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[DeserializedPropertyDescriptor]
 
-'DescriptorToSourceUtils' @ [188:55] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
-
 'descriptorToDeclaration' @ [188:79] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
 'member' @ [188:103] ==> val member: CallableMemberDescriptor? defined in org.jetbrains.kotlin.codegen.state.BuilderFactoryForDuplicateSignatureDiagnostics.computeDiagnosticToReport[LocalVariableDescriptor]
@@ -576,6 +572,8 @@ Inferred types:
 Inferred types:
     <T> -> DeclarationDescriptor
 
+'processMember' @ [238:82] ==> local final fun processMember(member: DeclarationDescriptor?): Unit defined in org.jetbrains.kotlin.codegen.state.BuilderFactoryForDuplicateSignatureDiagnostics.groupMembersDescriptorsBySignature[SimpleFunctionDescriptorImpl]
+
 'descriptor' @ [239:9] ==> value-parameter descriptor: ClassDescriptor defined in org.jetbrains.kotlin.codegen.state.BuilderFactoryForDuplicateSignatureDiagnostics.groupMembersDescriptorsBySignature[ValueParameterDescriptorImpl]
 
 'getParentJavaStaticClassScope' @ [239:20] ==> public fun ClassDescriptor.getParentJavaStaticClassScope(): LazyJavaStaticClassScope? defined in org.jetbrains.kotlin.load.java.descriptors[DeserializedSimpleFunctionDescriptor]
@@ -586,8 +584,6 @@ Inferred types:
     <R> -> Unit
 
 'getContributedDescriptors' @ [240:13] ==> public open fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaStaticClassScope[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [240:39] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'FUNCTIONS' @ [240:60] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -606,6 +602,8 @@ Inferred types:
 'forEach' @ [244:22] ==> @HidesMembers public inline fun <T> Iterable<DeclarationDescriptor>.forEach(action: (DeclarationDescriptor) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DeclarationDescriptor
+
+'processMember' @ [244:32] ==> local final fun processMember(member: DeclarationDescriptor?): Unit defined in org.jetbrains.kotlin.codegen.state.BuilderFactoryForDuplicateSignatureDiagnostics.groupMembersDescriptorsBySignature[SimpleFunctionDescriptorImpl]
 
 'groupedBySignature' @ [247:16] ==> val groupedBySignature: MultiMap<(RawSignature..RawSignature?), (JvmDeclarationOrigin..JvmDeclarationOrigin?)> defined in org.jetbrains.kotlin.codegen.state.BuilderFactoryForDuplicateSignatureDiagnostics.groupMembersDescriptorsBySignature[LocalVariableDescriptor]
 

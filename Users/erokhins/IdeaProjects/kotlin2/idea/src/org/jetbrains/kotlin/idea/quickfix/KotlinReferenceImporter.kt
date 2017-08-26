@@ -191,7 +191,7 @@ Inferred types:
 
 'result' @ [99:17] ==> var result: Boolean defined in org.jetbrains.kotlin.idea.quickfix.KotlinReferenceImporter.Companion.autoImport[LocalVariableDescriptor]
 
-'createSingleImportAction' @ [99:26] ==> internal fun createSingleImportAction(project: Project, editor: Editor, element: KtElement, fqNames: Collection<FqName>): KotlinAddImportAction defined in org.jetbrains.kotlin.idea.actions[SimpleFunctionDescriptorImpl]
+'createSingleImportAction' @ [99:26] ==> internal fun createSingleImportAction(project: Project, editor: Editor, element: KtElement, fqNames: Collection<FqName>): KotlinAddImportAction defined in org.jetbrains.kotlin.idea.actions in file KotlinAddImportAction.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [99:51] ==> public final val KtSimpleNameExpression.project: Project[MyPropertyDescriptor]
 

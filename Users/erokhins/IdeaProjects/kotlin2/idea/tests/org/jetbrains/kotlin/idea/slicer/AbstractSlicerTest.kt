@@ -40,7 +40,7 @@ Inferred types:
 
 'UniqueProcessor' @ [54:48] ==> public constructor UniqueProcessor<T : (Any..Any?)>(@NotNull p0: ((KotlinSliceUsage..KotlinSliceUsage?)) -> Boolean, @NotNull p1: TObjectHashingStrategy<(KotlinSliceUsage..KotlinSliceUsage?)>) defined in com.intellij.util.CommonProcessors.UniqueProcessor[SamAdapterClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinSliceUsage
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.slicer.KotlinSliceUsage..org.jetbrains.kotlin.idea.slicer.KotlinSliceUsage?)
 
 'invoke' @ [56:21] ==> public abstract operator fun invoke(p1: KotlinSliceUsage): Unit defined in kotlin.Function1[FunctionInvokeDescriptor]
 

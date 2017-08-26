@@ -170,8 +170,6 @@ Inferred types:
 
 'isTests' @ [80:51] ==> value-parameter isTests: Boolean defined in org.jetbrains.kotlin.jps.build.JpsJsModuleUtils.getOutputFile[ValueParameterDescriptorImpl]
 
-'KotlinJavascriptMetadataUtils' @ [80:62] ==> public object KotlinJavascriptMetadataUtils defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'JS_EXT' @ [80:92] ==> public const final val JS_EXT: String defined in org.jetbrains.kotlin.utils.KotlinJavascriptMetadataUtils[DeserializedPropertyDescriptor]
 
 'JvmStatic' @ [82:5] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
@@ -185,8 +183,6 @@ Inferred types:
 'suffix' @ [84:44] ==> private final fun suffix(isTests: Boolean): String defined in org.jetbrains.kotlin.jps.build.JpsJsModuleUtils[SimpleFunctionDescriptorImpl]
 
 'isTests' @ [84:51] ==> value-parameter isTests: Boolean defined in org.jetbrains.kotlin.jps.build.JpsJsModuleUtils.getOutputMetaFile[ValueParameterDescriptorImpl]
-
-'KotlinJavascriptMetadataUtils' @ [84:62] ==> public object KotlinJavascriptMetadataUtils defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'META_JS_SUFFIX' @ [84:92] ==> public const final val META_JS_SUFFIX: String defined in org.jetbrains.kotlin.utils.KotlinJavascriptMetadataUtils[DeserializedPropertyDescriptor]
 

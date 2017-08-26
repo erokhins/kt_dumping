@@ -12,7 +12,7 @@
 
 'builder' @ [33:9] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.ImportList.generateCode[ValueParameterDescriptorImpl]
 
-'append' @ [33:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [33:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'imports' @ [33:24] ==> public final var imports: List<Import> defined in org.jetbrains.kotlin.j2k.ast.ImportList[PropertyDescriptorImpl]
 

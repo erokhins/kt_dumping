@@ -30,7 +30,7 @@ Inferred types:
 
 'findChildByType' @ [40:13] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtTypeAlias[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'TYPE_ALIAS_KEYWORD' @ [40:38] ==> public final val TYPE_ALIAS_KEYWORD: (KtKeywordToken..KtKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
@@ -59,7 +59,7 @@ Inferred types:
 
 'findChildByType' @ [49:13] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): KtTypeReference? defined in org.jetbrains.kotlin.psi.KtTypeAlias[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <T : (PsiElement..PsiElement?)> -> KtTypeReference
 
 'TYPE_REFERENCE' @ [49:41] ==> public final val TYPE_REFERENCE: (IElementType..IElementType?) defined in org.jetbrains.kotlin.KtNodeTypes[JavaPropertyDescriptor]
 

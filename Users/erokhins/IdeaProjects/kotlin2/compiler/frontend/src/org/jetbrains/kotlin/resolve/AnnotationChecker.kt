@@ -146,7 +146,7 @@ Inferred types:
 
 'expression' @ [74:22] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.resolve.AnnotationChecker.checkExpression[ValueParameterDescriptorImpl]
 
-'getAnnotationEntries' @ [74:33] ==> public fun KtExpression.getAnnotationEntries(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'getAnnotationEntries' @ [74:33] ==> public fun KtExpression.getAnnotationEntries(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil in file ktPsiUtil.kt[SimpleFunctionDescriptorImpl]
 
 'getActualTargetList' @ [74:57] ==> private final fun getActualTargetList(annotated: KtElement, descriptor: DeclarationDescriptor?, trace: BindingTrace): AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[SimpleFunctionDescriptorImpl]
 
@@ -198,8 +198,6 @@ Inferred types:
 
 'ownerFunction' @ [84:21] ==> public final val KtParameter.ownerFunction: KtDeclarationWithBody?[MyPropertyDescriptor]
 
-'UseSiteTargetsList' @ [84:60] ==> private object UseSiteTargetsList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_CONSTRUCTOR_PARAMETER' @ [84:79] ==> public final val T_CONSTRUCTOR_PARAMETER: List<AnnotationUseSiteTarget> defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.UseSiteTargetsList[PropertyDescriptorImpl]
 
 'emptyList' @ [84:108] ==> public fun <T> emptyList(): List<AnnotationUseSiteTarget> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -213,8 +211,6 @@ Inferred types:
 '!' @ [86:21] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
 'isLocal' @ [86:22] ==> public final val KtProperty.isLocal: Boolean[MyPropertyDescriptor]
-
-'UseSiteTargetsList' @ [86:31] ==> private object UseSiteTargetsList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_PROPERTY' @ [86:50] ==> public final val T_PROPERTY: List<AnnotationUseSiteTarget> defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.UseSiteTargetsList[PropertyDescriptorImpl]
 
@@ -232,15 +228,11 @@ Inferred types:
 Inferred types:
     <T> -> AnnotationUseSiteTarget
 
-'AnnotationUseSiteTarget' @ [88:38] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY_GETTER' @ [88:62] ==> enum entry PROPERTY_GETTER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'listOf' @ [88:84] ==> public fun <T> listOf(element: AnnotationUseSiteTarget): List<AnnotationUseSiteTarget> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AnnotationUseSiteTarget
-
-'AnnotationUseSiteTarget' @ [88:91] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'PROPERTY_SETTER' @ [88:115] ==> enum entry PROPERTY_SETTER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
@@ -285,8 +277,8 @@ Inferred types:
 
 'get' @ [108:36] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?), key: (KtAnnotationEntry..KtAnnotationEntry?)): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtAnnotationEntry
-    <V : (Any..Any?)> -> AnnotationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor..org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor?)
 
 'ANNOTATION' @ [108:55] ==> public final val ANNOTATION: (WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -413,7 +405,7 @@ Inferred types:
 
 'it' @ [130:114] ==> value-parameter it: KotlinTarget defined in org.jetbrains.kotlin.resolve.AnnotationChecker.checkAnnotationEntry.check.<anonymous>[ValueParameterDescriptorImpl]
 
-'KotlinTarget' @ [135:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+'!in' @ [135:17] ==> public abstract fun contains(element: KotlinTarget): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'FUNCTION' @ [135:30] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -427,8 +419,8 @@ Inferred types:
 
 'get' @ [137:36] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?), key: (KtAnnotationEntry..KtAnnotationEntry?)): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtAnnotationEntry
-    <V : (Any..Any?)> -> AnnotationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor..org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor?)
 
 'ANNOTATION' @ [137:55] ==> public final val ANNOTATION: (WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -567,8 +559,8 @@ Inferred types:
 
 'get' @ [168:36] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?), key: (KtAnnotationEntry..KtAnnotationEntry?)): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtAnnotationEntry
-    <V : (Any..Any?)> -> AnnotationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor..org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor?)
 
 'ANNOTATION' @ [168:55] ==> public final val ANNOTATION: (WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -599,7 +591,7 @@ Inferred types:
 
 'this' @ [171:52] ==> <this> defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[LazyClassReceiverParameterDescriptor]
 
-'KotlinTarget' @ [171:82] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+'applicableTargetSet' @ [171:58] ==> public final fun applicableTargetSet(classDescriptor: ClassDescriptor): Set<KotlinTarget>? defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[SimpleFunctionDescriptorImpl]
 
 'DEFAULT_TARGET_SET' @ [171:95] ==> public final val DEFAULT_TARGET_SET: Set<KotlinTarget> defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget.Companion[DeserializedPropertyDescriptor]
 
@@ -616,8 +608,6 @@ Inferred types:
 'applicableTargetSet' @ [176:20] ==> public final fun applicableTargetSet(classDescriptor: ClassDescriptor): Set<KotlinTarget>? defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[SimpleFunctionDescriptorImpl]
 
 'classDescriptor' @ [176:40] ==> val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.applicableTargetSet[LocalVariableDescriptor]
-
-'KotlinTarget' @ [176:60] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'DEFAULT_TARGET_SET' @ [176:73] ==> public final val DEFAULT_TARGET_SET: Set<KotlinTarget> defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget.Companion[DeserializedPropertyDescriptor]
 
@@ -699,8 +689,8 @@ Inferred types:
 
 'get' @ [195:69] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), key: (PropertyDescriptor..PropertyDescriptor?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'BACKING_FIELD_REQUIRED' @ [195:88] ==> public final val BACKING_FIELD_REQUIRED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -766,17 +756,11 @@ Inferred types:
 
 'TargetList' @ [200:61] ==> public constructor TargetList(defaultTargets: List<KotlinTarget>, canBeSubstituted: List<KotlinTarget> = ..., onlyWithUseSiteTarget: List<KotlinTarget> = ...) defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetList[ClassConstructorDescriptorImpl]
 
-'KotlinTarget' @ [200:72] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
 'classActualTargets' @ [200:85] ==> public final fun classActualTargets(descriptor: ClassDescriptor): List<KotlinTarget> defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget.Companion[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [200:104] ==> value-parameter it: ClassDescriptor defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.getActualTargetList.<anonymous>[ValueParameterDescriptorImpl]
 
-'TargetLists' @ [200:114] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_CLASSIFIER' @ [200:126] ==> public final val T_CLASSIFIER: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
-
-'TargetLists' @ [201:55] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_LOCAL_VARIABLE' @ [201:67] ==> public final val T_LOCAL_VARIABLE: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
@@ -792,15 +776,11 @@ Inferred types:
 
 'isLocal' @ [204:35] ==> public final val KtProperty.isLocal: Boolean[MyPropertyDescriptor]
 
-'TargetLists' @ [204:46] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_LOCAL_VARIABLE' @ [204:58] ==> public final val T_LOCAL_VARIABLE: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
 'annotated' @ [205:25] ==> value-parameter annotated: KtElement defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.getActualTargetList[ValueParameterDescriptorImpl]
 
 'isMember' @ [205:35] ==> public final val KtProperty.isMember: Boolean[MyPropertyDescriptor]
-
-'TargetLists' @ [205:47] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_MEMBER_PROPERTY' @ [205:59] ==> public final fun T_MEMBER_PROPERTY(backingField: Boolean, delegate: Boolean): AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[SimpleFunctionDescriptorImpl]
 
@@ -813,8 +793,6 @@ Inferred types:
 'annotated' @ [205:112] ==> value-parameter annotated: KtElement defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.getActualTargetList[ValueParameterDescriptorImpl]
 
 'hasDelegate' @ [205:122] ==> public open fun hasDelegate(): Boolean defined in org.jetbrains.kotlin.psi.KtProperty[JavaMethodDescriptor]
-
-'TargetLists' @ [206:33] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_TOP_LEVEL_PROPERTY' @ [206:45] ==> public final fun T_TOP_LEVEL_PROPERTY(backingField: Boolean, delegate: Boolean): AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[SimpleFunctionDescriptorImpl]
 
@@ -842,23 +820,15 @@ Inferred types:
 
 'destructuringDeclaration' @ [212:25] ==> val destructuringDeclaration: KtDestructuringDeclaration? defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.getActualTargetList[LocalVariableDescriptor]
 
-'TargetLists' @ [212:61] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_DESTRUCTURING_DECLARATION' @ [212:73] ==> public final val T_DESTRUCTURING_DECLARATION: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
 'annotated' @ [213:25] ==> value-parameter annotated: KtElement defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.getActualTargetList[ValueParameterDescriptorImpl]
 
 'hasValOrVar' @ [213:35] ==> public open fun hasValOrVar(): Boolean defined in org.jetbrains.kotlin.psi.KtParameter[JavaMethodDescriptor]
 
-'TargetLists' @ [213:52] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_VALUE_PARAMETER_WITH_VAL' @ [213:64] ==> public final val T_VALUE_PARAMETER_WITH_VAL: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
-'TargetLists' @ [214:33] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_VALUE_PARAMETER_WITHOUT_VAL' @ [214:45] ==> public final val T_VALUE_PARAMETER_WITHOUT_VAL: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
-
-'TargetLists' @ [217:40] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_CONSTRUCTOR' @ [217:52] ==> public final val T_CONSTRUCTOR: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
@@ -875,15 +845,11 @@ Inferred types:
 
 'descriptor' @ [220:68] ==> value-parameter descriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.getActualTargetList[ValueParameterDescriptorImpl]
 
-'TargetLists' @ [220:83] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_FUNCTION_EXPRESSION' @ [220:95] ==> public final val T_FUNCTION_EXPRESSION: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
 'annotated' @ [221:25] ==> value-parameter annotated: KtElement defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.getActualTargetList[ValueParameterDescriptorImpl]
 
 'isLocal' @ [221:35] ==> public final val KtFunction.isLocal: Boolean[MyPropertyDescriptor]
-
-'TargetLists' @ [221:46] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_LOCAL_FUNCTION' @ [221:58] ==> public final val T_LOCAL_FUNCTION: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
@@ -895,15 +861,9 @@ Inferred types:
 
 'parent' @ [222:74] ==> public final val KtFunction.parent: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'TargetLists' @ [222:99] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_MEMBER_FUNCTION' @ [222:111] ==> public final val T_MEMBER_FUNCTION: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
-'TargetLists' @ [223:33] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_TOP_LEVEL_FUNCTION' @ [223:45] ==> public final val T_TOP_LEVEL_FUNCTION: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
-
-'TargetLists' @ [226:35] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_TYPEALIAS' @ [226:47] ==> public final val T_TYPEALIAS: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
@@ -915,23 +875,13 @@ Inferred types:
 
 'isGetter' @ [227:56] ==> public final val KtPropertyAccessor.isGetter: Boolean[MyPropertyDescriptor]
 
-'TargetLists' @ [227:66] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_PROPERTY_GETTER' @ [227:78] ==> public final val T_PROPERTY_GETTER: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
-
-'TargetLists' @ [227:101] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_PROPERTY_SETTER' @ [227:113] ==> public final val T_PROPERTY_SETTER: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
-'TargetLists' @ [228:39] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_TYPE_REFERENCE' @ [228:51] ==> public final val T_TYPE_REFERENCE: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
-'TargetLists' @ [229:30] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_FILE' @ [229:42] ==> public final val T_FILE: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
-
-'TargetLists' @ [230:39] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_TYPE_PARAMETER' @ [230:51] ==> public final val T_TYPE_PARAMETER: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
@@ -945,35 +895,19 @@ Inferred types:
 
 'STAR' @ [232:70] ==> enum entry STAR defined in org.jetbrains.kotlin.psi.KtProjectionKind[FakeCallableDescriptorForObject]
 
-'TargetLists' @ [232:76] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_STAR_PROJECTION' @ [232:88] ==> public final val T_STAR_PROJECTION: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
-
-'TargetLists' @ [232:111] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_TYPE_PROJECTION' @ [232:123] ==> public final val T_TYPE_PROJECTION: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
-'TargetLists' @ [233:46] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_INITIALIZER' @ [233:58] ==> public final val T_INITIALIZER: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
-
-'TargetLists' @ [234:50] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_DESTRUCTURING_DECLARATION' @ [234:62] ==> public final val T_DESTRUCTURING_DECLARATION: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
-'TargetLists' @ [235:42] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_FUNCTION_LITERAL' @ [235:54] ==> public final val T_FUNCTION_LITERAL: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
-
-'TargetLists' @ [236:49] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'T_OBJECT_LITERAL' @ [236:61] ==> public final val T_OBJECT_LITERAL: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
-'TargetLists' @ [237:36] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
-
 'T_EXPRESSION' @ [237:48] ==> public final val T_EXPRESSION: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
-
-'TargetLists' @ [238:25] ==> private object TargetLists defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [238:37] ==> public final val EMPTY: AnnotationChecker.Companion.TargetList defined in org.jetbrains.kotlin.resolve.AnnotationChecker.Companion.TargetLists[PropertyDescriptorImpl]
 
@@ -1276,15 +1210,9 @@ Inferred types:
 Inferred types:
     <T> -> AnnotationUseSiteTarget
 
-'AnnotationUseSiteTarget' @ [356:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'CONSTRUCTOR_PARAMETER' @ [356:74] ==> enum entry CONSTRUCTOR_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
-'AnnotationUseSiteTarget' @ [357:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY' @ [357:74] ==> enum entry PROPERTY defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
-'AnnotationUseSiteTarget' @ [358:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'FIELD' @ [358:74] ==> enum entry FIELD defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
@@ -1292,11 +1220,7 @@ Inferred types:
 Inferred types:
     <T> -> AnnotationUseSiteTarget
 
-'AnnotationUseSiteTarget' @ [360:37] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY' @ [360:61] ==> enum entry PROPERTY defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
-'AnnotationUseSiteTarget' @ [361:37] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'FIELD' @ [361:61] ==> enum entry FIELD defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 

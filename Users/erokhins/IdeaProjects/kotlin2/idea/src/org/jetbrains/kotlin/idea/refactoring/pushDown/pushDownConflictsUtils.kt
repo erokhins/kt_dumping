@@ -68,8 +68,6 @@ Inferred types:
 
 'modality' @ [60:80] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [60:92] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [60:101] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'membersToKeepAbstract' @ [61:13] ==> val membersToKeepAbstract: ArrayList<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.analyzePushDownConflicts[LocalVariableDescriptor]
@@ -78,7 +76,7 @@ Inferred types:
 
 'targetClasses' @ [65:25] ==> val targetClasses: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.analyzePushDownConflicts[LocalVariableDescriptor]
 
-'checkConflicts' @ [66:9] ==> private fun checkConflicts(conflicts: MultiMap<PsiElement, String>, context: KotlinPushDownContext, targetClass: PsiElement, membersToKeepAbstract: List<KtNamedDeclaration>, membersToPush: ArrayList<KtNamedDeclaration>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown[SimpleFunctionDescriptorImpl]
+'checkConflicts' @ [66:9] ==> private fun checkConflicts(conflicts: MultiMap<PsiElement, String>, context: KotlinPushDownContext, targetClass: PsiElement, membersToKeepAbstract: List<KtNamedDeclaration>, membersToPush: ArrayList<KtNamedDeclaration>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown in file pushDownConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [66:24] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.analyzePushDownConflicts[LocalVariableDescriptor]
 
@@ -164,7 +162,7 @@ Inferred types:
 
 'membersToPush' @ [98:20] ==> value-parameter membersToPush: ArrayList<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.checkConflicts[ValueParameterDescriptorImpl]
 
-'checkMemberClashing' @ [99:9] ==> private fun checkMemberClashing(conflicts: MultiMap<PsiElement, String>, context: KotlinPushDownContext, member: KtNamedDeclaration, membersToKeepAbstract: List<KtNamedDeclaration>, substitutor: TypeSubstitutor, targetClass: KtClassOrObject, targetClassDescriptor: ClassDescriptor): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown[SimpleFunctionDescriptorImpl]
+'checkMemberClashing' @ [99:9] ==> private fun checkMemberClashing(conflicts: MultiMap<PsiElement, String>, context: KotlinPushDownContext, member: KtNamedDeclaration, membersToKeepAbstract: List<KtNamedDeclaration>, substitutor: TypeSubstitutor, targetClass: KtClassOrObject, targetClassDescriptor: ClassDescriptor): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown in file pushDownConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [99:29] ==> value-parameter conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.checkConflicts[ValueParameterDescriptorImpl]
 
@@ -180,7 +178,7 @@ Inferred types:
 
 'targetClassDescriptor' @ [99:106] ==> val targetClassDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.idea.refactoring.pushDown.checkConflicts[LocalVariableDescriptor]
 
-'checkSuperCalls' @ [100:9] ==> private fun checkSuperCalls(conflicts: MultiMap<PsiElement, String>, context: KotlinPushDownContext, member: KtNamedDeclaration, membersToPush: ArrayList<KtNamedDeclaration>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown[SimpleFunctionDescriptorImpl]
+'checkSuperCalls' @ [100:9] ==> private fun checkSuperCalls(conflicts: MultiMap<PsiElement, String>, context: KotlinPushDownContext, member: KtNamedDeclaration, membersToPush: ArrayList<KtNamedDeclaration>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown in file pushDownConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [100:25] ==> value-parameter conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.checkConflicts[ValueParameterDescriptorImpl]
 
@@ -190,7 +188,7 @@ Inferred types:
 
 'membersToPush' @ [100:53] ==> value-parameter membersToPush: ArrayList<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.checkConflicts[ValueParameterDescriptorImpl]
 
-'checkExternalUsages' @ [101:9] ==> internal fun checkExternalUsages(conflicts: MultiMap<PsiElement, String>, member: PsiElement, targetClassDescriptor: ClassDescriptor, resolutionFacade: ResolutionFacade): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown[SimpleFunctionDescriptorImpl]
+'checkExternalUsages' @ [101:9] ==> internal fun checkExternalUsages(conflicts: MultiMap<PsiElement, String>, member: PsiElement, targetClassDescriptor: ClassDescriptor, resolutionFacade: ResolutionFacade): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown in file pushDownConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [101:29] ==> value-parameter conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.checkConflicts[ValueParameterDescriptorImpl]
 
@@ -202,7 +200,7 @@ Inferred types:
 
 'resolutionFacade' @ [101:79] ==> public final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownContext[PropertyDescriptorImpl]
 
-'checkVisibility' @ [102:9] ==> private fun checkVisibility(conflicts: MultiMap<PsiElement, String>, context: KotlinPushDownContext, member: KtNamedDeclaration, targetClassDescriptor: ClassDescriptor): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown[SimpleFunctionDescriptorImpl]
+'checkVisibility' @ [102:9] ==> private fun checkVisibility(conflicts: MultiMap<PsiElement, String>, context: KotlinPushDownContext, member: KtNamedDeclaration, targetClassDescriptor: ClassDescriptor): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown in file pushDownConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [102:25] ==> value-parameter conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.checkConflicts[ValueParameterDescriptorImpl]
 
@@ -276,8 +274,6 @@ Inferred types:
 'memberDescriptor' @ [120:21] ==> val memberDescriptor: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.refactoring.pushDown.checkMemberClashing[LocalVariableDescriptor]
 
 'modality' @ [120:38] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [120:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [120:59] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -480,7 +476,7 @@ Inferred types:
 
 'call' @ [182:40] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [182:45] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -488,7 +484,7 @@ Inferred types:
 
 'dispatchReceiver' @ [183:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'dispatchReceiver' @ [184:13] ==> val dispatchReceiver: ReceiverValue? defined in org.jetbrains.kotlin.idea.refactoring.pushDown.checkExternalUsages[LocalVariableDescriptor]
 
@@ -608,4 +604,6 @@ Inferred types:
 'forEach' @ [216:30] ==> @HidesMembers public inline fun <T> Iterable<DeclarationDescriptor>.forEach(action: (DeclarationDescriptor) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DeclarationDescriptor
+
+'reportConflictIfAny' @ [216:40] ==> local final fun reportConflictIfAny(targetDescriptor: DeclarationDescriptor): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown.checkVisibility[SimpleFunctionDescriptorImpl]
 

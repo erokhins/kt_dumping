@@ -64,8 +64,6 @@ Inferred types:
 
 'builtIns' @ [68:72] ==> public val DeclarationDescriptor.builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
-'LanguageVersionSettingsImpl' @ [68:82] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [68:110] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 
 'evaluateExpression' @ [68:119] ==> public final fun evaluateExpression(expression: KtExpression, trace: BindingTrace, expectedType: KotlinType? = ...): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[DeserializedSimpleFunctionDescriptor]

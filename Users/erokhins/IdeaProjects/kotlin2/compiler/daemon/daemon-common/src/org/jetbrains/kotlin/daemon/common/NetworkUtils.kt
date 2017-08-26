@@ -1,18 +1,18 @@
-'lazy' @ [44:40] ==> public fun <T> lazy(initializer: () -> LoopbackNetworkInterface.ServerLoopbackSocketFactory): Lazy<LoopbackNetworkInterface.ServerLoopbackSocketFactory> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [44:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ServerLoopbackSocketFactory
+    <T> -> T
 
 'ServerLoopbackSocketFactory' @ [44:47] ==> public constructor ServerLoopbackSocketFactory() defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface.ServerLoopbackSocketFactory[ClassConstructorDescriptorImpl]
 
-'lazy' @ [45:40] ==> public fun <T> lazy(initializer: () -> LoopbackNetworkInterface.ClientLoopbackSocketFactory): Lazy<LoopbackNetworkInterface.ClientLoopbackSocketFactory> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [45:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ClientLoopbackSocketFactory
+    <T> -> T
 
 'ClientLoopbackSocketFactory' @ [45:47] ==> public constructor ClientLoopbackSocketFactory() defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface.ClientLoopbackSocketFactory[ClassConstructorDescriptorImpl]
 
-'lazy' @ [48:36] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [48:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'if (InetAddress.getByName(null) is Inet6Address) IPV6_LOOPBACK_INET_ADDRESS else IPV4_LOOPBACK_INET_ADDRESS' @ [50:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -101,11 +101,7 @@ Inferred types:
 
 'port' @ [90:55] ==> val port: Int defined in org.jetbrains.kotlin.daemon.common.findPortAndCreateRegistry[LocalVariableDescriptor]
 
-'LoopbackNetworkInterface' @ [90:61] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common in file NetworkUtils.kt[FakeCallableDescriptorForObject]
-
 'clientLoopbackSocketFactory' @ [90:86] ==> public final val clientLoopbackSocketFactory: LoopbackNetworkInterface.ClientLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[PropertyDescriptorImpl]
-
-'LoopbackNetworkInterface' @ [90:115] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common in file NetworkUtils.kt[FakeCallableDescriptorForObject]
 
 'serverLoopbackSocketFactory' @ [90:140] ==> public final val serverLoopbackSocketFactory: LoopbackNetworkInterface.ServerLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[PropertyDescriptorImpl]
 
@@ -130,8 +126,6 @@ Inferred types:
 'setProperty' @ [106:16] ==> public open fun setProperty(p0: (String..String?), p1: (String..String?)): (String..String?) defined in java.lang.System[JavaMethodDescriptor]
 
 'JAVA_RMI_SERVER_HOSTNAME' @ [106:28] ==> public val JAVA_RMI_SERVER_HOSTNAME: String defined in org.jetbrains.kotlin.daemon.common in file NetworkUtils.kt[PropertyDescriptorImpl]
-
-'LoopbackNetworkInterface' @ [106:54] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common in file NetworkUtils.kt[FakeCallableDescriptorForObject]
 
 'loopbackInetAddressName' @ [106:79] ==> public final val loopbackInetAddressName: String defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[PropertyDescriptorImpl]
 

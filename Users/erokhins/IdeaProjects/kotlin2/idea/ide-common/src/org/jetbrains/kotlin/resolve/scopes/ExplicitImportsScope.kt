@@ -74,9 +74,9 @@ Inferred types:
 
 'java' @ [42:31] ==> public val <T> KClass<out ExplicitImportsScope>.java: Class<out ExplicitImportsScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ExplicitImportsScope
+    <T> -> Captured(out ExplicitImportsScope)
 
 'name' @ [42:36] ==> public final val <T : (Any..Any?)> Class<out ExplicitImportsScope>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ExplicitImportsScope
+    <T : (Any..Any?)> -> Captured(out ExplicitImportsScope)
 

@@ -67,7 +67,7 @@ Inferred types:
 
 'resultingDescriptor' @ [54:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'sourceElement' @ [58:26] ==> value-parameter sourceElement: PsiElement defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidGotoDeclarationHandler.getLayoutManager[ValueParameterDescriptorImpl]
 
@@ -77,7 +77,7 @@ Inferred types:
 
 'getService' @ [60:37] ==> @Nullable public open fun <T : (Any..Any?)> getService(@NotNull p0: Module, @NotNull p1: Class<(AndroidLayoutXmlFileManager..AndroidLayoutXmlFileManager?)>): AndroidLayoutXmlFileManager? defined in com.intellij.openapi.module.ModuleServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AndroidLayoutXmlFileManager
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager..org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager?)
 
 'moduleInfo' @ [60:48] ==> val moduleInfo: IdeaModuleInfo defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidGotoDeclarationHandler.getLayoutManager[LocalVariableDescriptor]
 

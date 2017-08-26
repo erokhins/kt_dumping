@@ -220,7 +220,7 @@ Inferred types:
 
 'getParentOfType' @ [140:43] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtTypeParameterListOwner..KtTypeParameterListOwner?)>..Class<out (KtTypeParameterListOwner..KtTypeParameterListOwner?)>?)): KtTypeParameterListOwner? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtTypeParameterListOwner
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeParameterListOwner..org.jetbrains.kotlin.psi.KtTypeParameterListOwner?)
 
 'topmostElement' @ [140:59] ==> val topmostElement: KtElement? defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinResolveDataProvider.findAnalyzableParent[LocalVariableDescriptor]
 
@@ -250,7 +250,7 @@ Inferred types:
 
 'getTopmostParentOfType' @ [149:36] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getTopmostParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtDeclaration..KtDeclaration?)>): KtDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
 'element' @ [149:59] ==> value-parameter element: KtElement defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinResolveDataProvider.findAnalyzableParent[ValueParameterDescriptorImpl]
 

@@ -86,7 +86,7 @@ Inferred types:
 
 'trace' @ [74:17] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.frontend.di.configureModule[ValueParameterDescriptorImpl]
 
-'createContainer' @ [84:32] ==> public fun createContainer(id: String, platform: TargetPlatform, init: StorageComponentContainer.() -> Unit): StorageComponentContainer defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'createContainer' @ [84:32] ==> public fun createContainer(id: String, platform: TargetPlatform, init: StorageComponentContainer.() -> Unit): StorageComponentContainer defined in org.jetbrains.kotlin.resolve in file TargetPlatform.kt[SimpleFunctionDescriptorImpl]
 
 'platform' @ [84:63] ==> value-parameter platform: TargetPlatform defined in org.jetbrains.kotlin.frontend.di.createContainerForBodyResolve[ValueParameterDescriptorImpl]
 
@@ -120,7 +120,7 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> BodyResolver
 
-'createContainer' @ [104:32] ==> public fun createContainer(id: String, platform: TargetPlatform, init: StorageComponentContainer.() -> Unit): StorageComponentContainer defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'createContainer' @ [104:32] ==> public fun createContainer(id: String, platform: TargetPlatform, init: StorageComponentContainer.() -> Unit): StorageComponentContainer defined in org.jetbrains.kotlin.resolve in file TargetPlatform.kt[SimpleFunctionDescriptorImpl]
 
 'platform' @ [104:67] ==> value-parameter platform: TargetPlatform defined in org.jetbrains.kotlin.frontend.di.createContainerForLazyBodyResolve[ValueParameterDescriptorImpl]
 
@@ -164,7 +164,7 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> BasicAbsentDescriptorHandler
 
-'createContainer' @ [125:32] ==> public fun createContainer(id: String, platform: TargetPlatform, init: StorageComponentContainer.() -> Unit): StorageComponentContainer defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'createContainer' @ [125:32] ==> public fun createContainer(id: String, platform: TargetPlatform, init: StorageComponentContainer.() -> Unit): StorageComponentContainer defined in org.jetbrains.kotlin.resolve in file TargetPlatform.kt[SimpleFunctionDescriptorImpl]
 
 'platform' @ [125:75] ==> value-parameter platform: TargetPlatform defined in org.jetbrains.kotlin.frontend.di.createContainerForLazyLocalClassifierAnalyzer[ValueParameterDescriptorImpl]
 
@@ -224,7 +224,7 @@ Inferred types:
 
 'statementFilter' @ [144:17] ==> value-parameter statementFilter: StatementFilter defined in org.jetbrains.kotlin.frontend.di.createContainerForLazyLocalClassifierAnalyzer[ValueParameterDescriptorImpl]
 
-'createContainer' @ [155:32] ==> public fun createContainer(id: String, platform: TargetPlatform, init: StorageComponentContainer.() -> Unit): StorageComponentContainer defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'createContainer' @ [155:32] ==> public fun createContainer(id: String, platform: TargetPlatform, init: StorageComponentContainer.() -> Unit): StorageComponentContainer defined in org.jetbrains.kotlin.resolve in file TargetPlatform.kt[SimpleFunctionDescriptorImpl]
 
 'platform' @ [155:63] ==> value-parameter platform: TargetPlatform defined in org.jetbrains.kotlin.frontend.di.createContainerForLazyResolve[ValueParameterDescriptorImpl]
 
@@ -283,8 +283,6 @@ Inferred types:
 'NoVersion' @ [174:39] ==> public object NoVersion : TargetPlatformVersion defined in org.jetbrains.kotlin.config.TargetPlatformVersion[FakeCallableDescriptorForObject]
 
 'CompilerEnvironment' @ [175:17] ==> public object CompilerEnvironment : TargetEnvironment defined in org.jetbrains.kotlin.resolve in file CompilerEnvironment.kt[FakeCallableDescriptorForObject]
-
-'LanguageVersionSettingsImpl' @ [176:17] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [176:45] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 

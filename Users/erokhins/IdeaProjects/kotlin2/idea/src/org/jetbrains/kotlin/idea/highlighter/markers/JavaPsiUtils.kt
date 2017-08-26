@@ -83,8 +83,6 @@ Inferred types:
 
 'parent' @ [60:38] ==> val parent: PsiElement? defined in org.jetbrains.kotlin.idea.highlighter.markers.getPsiMethod[LocalVariableDescriptor]
 
-'LightClassUtil' @ [60:74] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
-
 'getLightClassMethod' @ [60:89] ==> public final fun getLightClassMethod(function: KtFunction): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
 'parent' @ [60:109] ==> val parent: PsiElement? defined in org.jetbrains.kotlin.idea.highlighter.markers.getPsiMethod[LocalVariableDescriptor]

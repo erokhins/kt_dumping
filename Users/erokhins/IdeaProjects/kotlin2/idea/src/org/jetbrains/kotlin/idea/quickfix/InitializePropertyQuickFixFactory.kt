@@ -82,7 +82,7 @@ Inferred types:
 
 'originalDescriptor' @ [80:28] ==> value-parameter originalDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.MoveToConstructorParameters.configureChangeSignature.<no name provided>.configure[ValueParameterDescriptorImpl]
 
-'modify' @ [80:47] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'modify' @ [80:47] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeSignature.kt[SimpleFunctionDescriptorImpl]
 
 '?:' @ [81:47] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -227,7 +227,7 @@ Inferred types:
 
 'changeSignature' @ [116:17] ==> val changeSignature: () -> Boolean defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.MoveToConstructorParameters.invoke[LocalVariableDescriptor]
 
-'runRefactoringWithPostprocessing' @ [116:33] ==> public fun (() -> Any).runRefactoringWithPostprocessing(project: Project, targetRefactoringId: String, finishAction: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'runRefactoringWithPostprocessing' @ [116:33] ==> public fun (() -> Any).runRefactoringWithPostprocessing(project: Project, targetRefactoringId: String, finishAction: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [116:66] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.MoveToConstructorParameters.invoke[ValueParameterDescriptorImpl]
 
@@ -243,7 +243,7 @@ Inferred types:
 
 'primaryConstructor' @ [118:116] ==> public final val KtClass.primaryConstructor: KtPrimaryConstructor?[MyPropertyDescriptor]
 
-'constructor' @ [119:21] ==> val constructor: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>>? defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.MoveToConstructorParameters.invoke.<anonymous>[LocalVariableDescriptor]
+'constructor' @ [119:21] ==> val constructor: KtConstructor<*>? defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.MoveToConstructorParameters.invoke.<anonymous>[LocalVariableDescriptor]
 
 'getValueParameters' @ [119:34] ==> public open fun getValueParameters(): (MutableList<(KtParameter..KtParameter?)>..List<(KtParameter..KtParameter?)>) defined in org.jetbrains.kotlin.psi.KtConstructor[DeserializedSimpleFunctionDescriptor]
 
@@ -273,7 +273,7 @@ Inferred types:
 
 'originalDescriptor' @ [137:28] ==> value-parameter originalDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.configureChangeSignature.<no name provided>.configure[ValueParameterDescriptorImpl]
 
-'modify' @ [137:47] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'modify' @ [137:47] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'propertyDescriptor' @ [138:47] ==> value-parameter propertyDescriptor: PropertyDescriptor defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.configureChangeSignature[ValueParameterDescriptorImpl]
 
@@ -301,8 +301,6 @@ Inferred types:
 'constructorScope' @ [141:29] ==> val constructorScope: LexicalScope defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.configureChangeSignature.<no name provided>.configure.<anonymous>[LocalVariableDescriptor]
 
 'getContributedDescriptors' @ [141:46] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.LexicalScope[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [141:72] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES' @ [141:93] ==> @field:JvmField public final val VARIABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -335,8 +333,6 @@ Inferred types:
 'originalDescriptor' @ [147:54] ==> value-parameter originalDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.configureChangeSignature.<no name provided>.configure[ValueParameterDescriptorImpl]
 
 'baseDescriptor' @ [147:73] ==> public abstract val baseDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinMethodDescriptor[PropertyDescriptorImpl]
-
-'KotlinNameSuggester' @ [148:40] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
 
 'suggestNameByName' @ [148:60] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
@@ -420,7 +416,7 @@ Inferred types:
 
 'changeSignature' @ [175:13] ==> val changeSignature: () -> Boolean defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.processConstructors[LocalVariableDescriptor]
 
-'runRefactoringWithPostprocessing' @ [175:29] ==> public fun (() -> Any).runRefactoringWithPostprocessing(project: Project, targetRefactoringId: String, finishAction: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'runRefactoringWithPostprocessing' @ [175:29] ==> public fun (() -> Any).runRefactoringWithPostprocessing(project: Project, targetRefactoringId: String, finishAction: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [175:62] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.processConstructors[ValueParameterDescriptorImpl]
 
@@ -436,7 +432,7 @@ Inferred types:
 
 'primaryConstructor' @ [177:112] ==> public final val KtClass.primaryConstructor: KtPrimaryConstructor?[MyPropertyDescriptor]
 
-'constructor' @ [178:21] ==> val constructor: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>>? defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.processConstructors.<anonymous>[LocalVariableDescriptor]
+'constructor' @ [178:21] ==> val constructor: KtConstructor<*>? defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.processConstructors.<anonymous>[LocalVariableDescriptor]
 
 '!' @ [178:44] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -444,9 +440,9 @@ Inferred types:
 
 'add' @ [178:61] ==> public abstract fun add(element: PsiElement): Boolean defined in kotlin.collections.MutableSet[DeserializedSimpleFunctionDescriptor]
 
-'constructor' @ [178:65] ==> val constructor: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>>? defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.processConstructors.<anonymous>[LocalVariableDescriptor]
+'constructor' @ [178:65] ==> val constructor: KtConstructor<*>? defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.processConstructors.<anonymous>[LocalVariableDescriptor]
 
-'constructor' @ [179:17] ==> val constructor: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>>? defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.processConstructors.<anonymous>[LocalVariableDescriptor]
+'constructor' @ [179:17] ==> val constructor: KtConstructor<*>? defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.processConstructors.<anonymous>[LocalVariableDescriptor]
 
 'getValueParameters' @ [179:29] ==> public open fun getValueParameters(): (MutableList<(KtParameter..KtParameter?)>..List<(KtParameter..KtParameter?)>) defined in org.jetbrains.kotlin.psi.KtConstructor[DeserializedSimpleFunctionDescriptor]
 
@@ -467,7 +463,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtElement?
 
-'constructor' @ [181:22] ==> val constructor: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>>? defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.processConstructors.<anonymous>[LocalVariableDescriptor]
+'constructor' @ [181:22] ==> val constructor: KtConstructor<*>? defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.InitializeWithConstructorParameter.processConstructors.<anonymous>[LocalVariableDescriptor]
 
 'getOrCreateBody' @ [181:63] ==> public fun KtSecondaryConstructor.getOrCreateBody(): KtBlockExpression defined in org.jetbrains.kotlin.idea.core[DeserializedSimpleFunctionDescriptor]
 
@@ -654,6 +650,15 @@ Inferred types:
 'klass' @ [223:41] ==> value-parameter klass: KtClass defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.doCreateActions.<anonymous>[ValueParameterDescriptorImpl]
 
 'isInterface' @ [223:47] ==> public final fun isInterface(): Boolean defined in org.jetbrains.kotlin.psi.KtClass[DeserializedSimpleFunctionDescriptor]
+
+'if (property.accessors.isNotEmpty() || klass.secondaryConstructors.any { !it.getDelegationCall().isCallToThis }) {
+                actions.add(InitializeWithConstructorParameter(property))
+            }
+            else {
+                actions.add(MoveToConstructorParameters(property))
+            }' @ [225:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Boolean, elseBranch: Boolean): Boolean[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Boolean
 
 'property' @ [225:17] ==> val property: KtProperty defined in org.jetbrains.kotlin.idea.quickfix.InitializePropertyQuickFixFactory.doCreateActions[LocalVariableDescriptor]
 

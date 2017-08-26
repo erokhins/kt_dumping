@@ -10,13 +10,13 @@
 
 'path' @ [27:132] ==> value-parameter path: String defined in org.jetbrains.kotlin.android.synthetic.test.AbstractAndroidBytecodeShapeTest.createAndroidAPIEnvironment[ValueParameterDescriptorImpl]
 
-'getResPaths' @ [31:27] ==> public fun getResPaths(path: String): List<String> defined in org.jetbrains.kotlin.android.synthetic.test[SimpleFunctionDescriptorImpl]
+'getResPaths' @ [31:27] ==> public fun getResPaths(path: String): List<String> defined in org.jetbrains.kotlin.android.synthetic.test in file CompilerTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'path' @ [31:39] ==> value-parameter path: String defined in org.jetbrains.kotlin.android.synthetic.test.AbstractAndroidBytecodeShapeTest.createEnvironmentForConfiguration[ValueParameterDescriptorImpl]
 
 'myEnvironment' @ [32:9] ==> protected/*protected and package*/ final var myEnvironment: (KotlinCoreEnvironment..KotlinCoreEnvironment?) defined in org.jetbrains.kotlin.android.synthetic.test.AbstractAndroidBytecodeShapeTest[JavaPropertyDescriptor]
 
-'createTestEnvironment' @ [32:25] ==> public fun KtUsefulTestCase.createTestEnvironment(configuration: CompilerConfiguration, resDirectories: List<String>): KotlinCoreEnvironment defined in org.jetbrains.kotlin.android.synthetic.test[SimpleFunctionDescriptorImpl]
+'createTestEnvironment' @ [32:25] ==> public fun KtUsefulTestCase.createTestEnvironment(configuration: CompilerConfiguration, resDirectories: List<String>): KotlinCoreEnvironment defined in org.jetbrains.kotlin.android.synthetic.test in file CompilerTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'configuration' @ [32:47] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.android.synthetic.test.AbstractAndroidBytecodeShapeTest.createEnvironmentForConfiguration[ValueParameterDescriptorImpl]
 

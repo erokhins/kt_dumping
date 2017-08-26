@@ -33,16 +33,16 @@ Inferred types:
 
 'reference' @ [85:30] ==> val reference: PsiReference defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.processReferenceElement[LocalVariableDescriptor]
 
-'runReadAction' @ [100:20] ==> public fun <T> runReadAction(action: () -> OperatorReferenceSearcher<out KtElement>?): OperatorReferenceSearcher<out KtElement>? defined in org.jetbrains.kotlin.idea.util.application[SimpleFunctionDescriptorImpl]
+'runReadAction' @ [100:20] ==> public fun <T> runReadAction(action: () -> OperatorReferenceSearcher<*>?): OperatorReferenceSearcher<*>? defined in org.jetbrains.kotlin.idea.util.application[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> OperatorReferenceSearcher<out KtElement>?
+    <T> -> OperatorReferenceSearcher<*>?
 
 'if (declaration.isValid)
                     createInReadAction(declaration, searchScope, consumer, optimizer, options)
                 else
-                    null' @ [101:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: OperatorReferenceSearcher<out KtElement>?, elseBranch: OperatorReferenceSearcher<out KtElement>?): OperatorReferenceSearcher<out KtElement>?[SimpleFunctionDescriptorImpl]
+                    null' @ [101:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: OperatorReferenceSearcher<*>?, elseBranch: OperatorReferenceSearcher<*>?): OperatorReferenceSearcher<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> OperatorReferenceSearcher<out KtElement>?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> OperatorReferenceSearcher<*>?
 
 'declaration' @ [101:21] ==> value-parameter declaration: PsiElement defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.create[ValueParameterDescriptorImpl]
 
@@ -300,8 +300,6 @@ Inferred types:
 
 'name' @ [167:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
 
-'OperatorNameConventions' @ [167:25] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INVOKE' @ [167:49] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'InvokeOperatorReferenceSearcher' @ [168:28] ==> public constructor InvokeOperatorReferenceSearcher(targetFunction: PsiElement, searchScope: SearchScope, consumer: Processor<PsiReference>, optimizer: SearchRequestCollector, options: KotlinReferencesSearchOptions) defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.InvokeOperatorReferenceSearcher[ClassConstructorDescriptorImpl]
@@ -317,8 +315,6 @@ Inferred types:
 'options' @ [168:107] ==> value-parameter options: KotlinReferencesSearchOptions defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
 
 'name' @ [170:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
-
-'OperatorNameConventions' @ [170:25] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'GET' @ [170:49] ==> @field:JvmField public final val GET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -336,8 +332,6 @@ Inferred types:
 
 'name' @ [173:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
 
-'OperatorNameConventions' @ [173:25] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'SET' @ [173:49] ==> @field:JvmField public final val SET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'IndexingOperatorReferenceSearcher' @ [174:28] ==> public constructor IndexingOperatorReferenceSearcher(targetFunction: PsiElement, searchScope: SearchScope, consumer: Processor<PsiReference>, optimizer: SearchRequestCollector, options: KotlinReferencesSearchOptions, isSet: Boolean) defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.IndexingOperatorReferenceSearcher[ClassConstructorDescriptorImpl]
@@ -354,8 +348,6 @@ Inferred types:
 
 'name' @ [176:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
 
-'OperatorNameConventions' @ [176:25] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'CONTAINS' @ [176:49] ==> @field:JvmField public final val CONTAINS: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'ContainsOperatorReferenceSearcher' @ [177:28] ==> public constructor ContainsOperatorReferenceSearcher(targetFunction: PsiElement, searchScope: SearchScope, consumer: Processor<PsiReference>, optimizer: SearchRequestCollector, options: KotlinReferencesSearchOptions) defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.ContainsOperatorReferenceSearcher[ClassConstructorDescriptorImpl]
@@ -371,8 +363,6 @@ Inferred types:
 'options' @ [177:109] ==> value-parameter options: KotlinReferencesSearchOptions defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
 
 'name' @ [179:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
-
-'OperatorNameConventions' @ [179:25] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'EQUALS' @ [179:49] ==> @field:JvmField public final val EQUALS: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -397,8 +387,6 @@ Inferred types:
 'options' @ [180:147] ==> value-parameter options: KotlinReferencesSearchOptions defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
 
 'name' @ [182:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
-
-'OperatorNameConventions' @ [182:25] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'COMPARE_TO' @ [182:49] ==> @field:JvmField public final val COMPARE_TO: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -428,8 +416,6 @@ Inferred types:
 
 'name' @ [185:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
 
-'OperatorNameConventions' @ [185:25] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'ITERATOR' @ [185:49] ==> @field:JvmField public final val ITERATOR: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'IteratorOperatorReferenceSearcher' @ [186:28] ==> public constructor IteratorOperatorReferenceSearcher(targetFunction: PsiElement, searchScope: SearchScope, consumer: Processor<PsiReference>, optimizer: SearchRequestCollector, options: KotlinReferencesSearchOptions) defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.IteratorOperatorReferenceSearcher[ClassConstructorDescriptorImpl]
@@ -446,19 +432,13 @@ Inferred types:
 
 'name' @ [188:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
 
-'OperatorNameConventions' @ [188:25] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'GET_VALUE' @ [188:49] ==> @field:JvmField public final val GET_VALUE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'name' @ [188:62] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
 
-'OperatorNameConventions' @ [188:70] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'SET_VALUE' @ [188:94] ==> @field:JvmField public final val SET_VALUE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'name' @ [188:107] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.Companion.createInReadAction[ValueParameterDescriptorImpl]
-
-'OperatorNameConventions' @ [188:115] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'PROVIDE_DELEGATE' @ [188:139] ==> @field:JvmField public final val PROVIDE_DELEGATE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -901,7 +881,7 @@ Inferred types:
 
 'scope' @ [299:46] ==> value-parameter scope: SearchScope defined in org.jetbrains.kotlin.idea.search.usagesSearch.operators.OperatorReferenceSearcher.doPlainSearch[ValueParameterDescriptorImpl]
 
-'restrictToKotlinSources' @ [299:52] ==> public fun GlobalSearchScope.restrictToKotlinSources(): GlobalSearchScope defined in org.jetbrains.kotlin.idea.search[SimpleFunctionDescriptorImpl]
+'restrictToKotlinSources' @ [299:52] ==> public fun GlobalSearchScope.restrictToKotlinSources(): GlobalSearchScope defined in org.jetbrains.kotlin.idea.search in file searchUtil.kt[SimpleFunctionDescriptorImpl]
 
 'IN_CODE' @ [299:98] ==> public const final val IN_CODE: Short defined in com.intellij.psi.search.UsageSearchContext[JavaPropertyDescriptor]
 

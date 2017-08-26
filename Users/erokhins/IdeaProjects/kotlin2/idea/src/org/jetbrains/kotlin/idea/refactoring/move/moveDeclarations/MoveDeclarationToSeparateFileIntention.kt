@@ -172,7 +172,7 @@ Inferred types:
 
 'TopLevel' @ [100:53] ==> public object TopLevel : MoveDeclarationsDelegate defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveDeclarationsDelegate[FakeCallableDescriptorForObject]
 
-'MoveCallback' @ [103:32] ==> public fun MoveCallback(function: () -> Unit): MoveCallback defined in com.intellij.refactoring.move[SimpleFunctionDescriptorImpl]
+'MoveCallback' @ [103:32] ==> public fun MoveCallback(function: () -> Unit): MoveCallback defined in com.intellij.refactoring.move[SamConstructorDescriptorImpl]
 
 'directory' @ [104:35] ==> val directory: PsiDirectory defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveDeclarationToSeparateFileIntention.applyTo[LocalVariableDescriptor]
 
@@ -222,11 +222,9 @@ Inferred types:
 
 'move' @ [114:9] ==> val move: () -> Unit defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveDeclarationToSeparateFileIntention.applyTo[LocalVariableDescriptor]
 
-'runRefactoringWithPostprocessing' @ [114:14] ==> public fun (() -> Any).runRefactoringWithPostprocessing(project: Project, targetRefactoringId: String, finishAction: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'runRefactoringWithPostprocessing' @ [114:14] ==> public fun (() -> Any).runRefactoringWithPostprocessing(project: Project, targetRefactoringId: String, finishAction: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [114:47] ==> val project: Project defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveDeclarationToSeparateFileIntention.applyTo[LocalVariableDescriptor]
-
-'MoveKotlinDeclarationsProcessor' @ [114:56] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor[FakeCallableDescriptorForObject]
 
 'REFACTORING_ID' @ [114:88] ==> public final val REFACTORING_ID: String defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.Companion[PropertyDescriptorImpl]
 

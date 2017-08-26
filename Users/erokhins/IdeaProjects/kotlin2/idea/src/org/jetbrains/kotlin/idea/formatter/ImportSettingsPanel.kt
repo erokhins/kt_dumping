@@ -8,7 +8,7 @@
 
 'getCustomSettings' @ [40:54] ==> public open fun <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> getCustomSettings(@NotNull p0: Class<(KotlinCodeStyleSettings..KotlinCodeStyleSettings?)>): (KotlinCodeStyleSettings..KotlinCodeStyleSettings?) defined in com.intellij.psi.codeStyle.CodeStyleSettings[JavaMethodDescriptor]
 Inferred types:
-    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> KotlinCodeStyleSettings
+    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> (org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings..org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings?)
 
 'KotlinCodeStyleSettings' @ [40:72] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
@@ -413,8 +413,6 @@ Inferred types:
 'rbUseSingleImports' @ [166:21] ==> private final val rbUseSingleImports: JRadioButton defined in org.jetbrains.kotlin.idea.formatter.ImportSettingsPanel.NameCountToUseStarImportSelector[PropertyDescriptorImpl]
 
 'isSelected' @ [166:40] ==> public final var JRadioButton.isSelected: Boolean[MyPropertyDescriptor]
-
-'Int' @ [166:54] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [166:58] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 

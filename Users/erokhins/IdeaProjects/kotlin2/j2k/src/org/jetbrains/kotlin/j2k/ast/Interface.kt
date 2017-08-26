@@ -16,7 +16,7 @@
 
 'modifiers' @ [33:15] ==> public final val modifiers: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Interface[PropertyDescriptorImpl]
 
-'filter' @ [33:25] ==> public fun Modifiers.filter(predicate: (Modifier) -> Boolean): Modifiers defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'filter' @ [33:25] ==> public fun Modifiers.filter(predicate: (Modifier) -> Boolean): Modifiers defined in org.jetbrains.kotlin.j2k.ast in file Modifier.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [33:34] ==> value-parameter it: Modifier defined in org.jetbrains.kotlin.j2k.ast.Interface.presentationModifiers.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -1,10 +1,10 @@
-'any' @ [25:9] ==> public fun JsNode.any(predicate: (JsNode) -> Boolean): Boolean defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils[SimpleFunctionDescriptorImpl]
+'any' @ [25:9] ==> public fun JsNode.any(predicate: (JsNode) -> Boolean): Boolean defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils in file astUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [25:15] ==> value-parameter it: JsNode defined in org.jetbrains.kotlin.js.inline.util.canHaveSideEffect.<anonymous>[ValueParameterDescriptorImpl]
 
 'it' @ [25:37] ==> value-parameter it: JsNode defined in org.jetbrains.kotlin.js.inline.util.canHaveSideEffect.<anonymous>[ValueParameterDescriptorImpl]
 
-'canHaveOwnSideEffect' @ [25:40] ==> public fun JsExpression.canHaveOwnSideEffect(vars: Set<JsName>): Boolean defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'canHaveOwnSideEffect' @ [25:40] ==> public fun JsExpression.canHaveOwnSideEffect(vars: Set<JsName>): Boolean defined in org.jetbrains.kotlin.js.inline.util in file sideEffectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'localVars' @ [25:61] ==> value-parameter localVars: Set<JsName> defined in org.jetbrains.kotlin.js.inline.util.canHaveSideEffect[ValueParameterDescriptorImpl]
 

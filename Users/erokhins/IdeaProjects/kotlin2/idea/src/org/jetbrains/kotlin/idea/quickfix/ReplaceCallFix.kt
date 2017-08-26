@@ -228,7 +228,7 @@ Inferred types:
 
 'candidateDescriptor' @ [122:89] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 '?:' @ [123:40] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ResolvedCall<out CallableDescriptor>?, right: ResolvedCall<out CallableDescriptor>): ResolvedCall<out CallableDescriptor>[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -300,7 +300,7 @@ Inferred types:
 
 'resultingDescriptor' @ [145:56] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'fqNameUnsafe' @ [145:77] ==> public val DeclarationDescriptor.fqNameUnsafe: FqNameUnsafe defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 

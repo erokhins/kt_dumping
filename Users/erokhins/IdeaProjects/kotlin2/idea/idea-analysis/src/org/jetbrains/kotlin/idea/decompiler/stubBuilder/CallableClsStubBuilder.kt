@@ -1,4 +1,4 @@
-'createDeclarationsStubs' @ [41:5] ==> public fun createDeclarationsStubs(parentStub: StubElement<out PsiElement>, outerContext: ClsStubBuilderContext, protoContainer: ProtoContainer, functionProtos: List<ProtoBuf.Function>, propertyProtos: List<ProtoBuf.Property>, typeAliasesProtos: List<ProtoBuf.TypeAlias>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createDeclarationsStubs' @ [41:5] ==> public fun createDeclarationsStubs(parentStub: StubElement<out PsiElement>, outerContext: ClsStubBuilderContext, protoContainer: ProtoContainer, functionProtos: List<ProtoBuf.Function>, propertyProtos: List<ProtoBuf.Property>, typeAliasesProtos: List<ProtoBuf.TypeAlias>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file CallableClsStubBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'parentStub' @ [42:13] ==> value-parameter parentStub: StubElement<out PsiElement> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createDeclarationsStubs[ValueParameterDescriptorImpl]
 
@@ -84,7 +84,7 @@
 
 'typeAliasesProtos' @ [64:28] ==> value-parameter typeAliasesProtos: List<ProtoBuf.TypeAlias> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createDeclarationsStubs[ValueParameterDescriptorImpl]
 
-'createTypeAliasStub' @ [65:9] ==> public fun createTypeAliasStub(parent: StubElement<out PsiElement>, typeAliasProto: ProtoBuf.TypeAlias, protoContainer: ProtoContainer, context: ClsStubBuilderContext): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createTypeAliasStub' @ [65:9] ==> public fun createTypeAliasStub(parent: StubElement<out PsiElement>, typeAliasProto: ProtoBuf.TypeAlias, protoContainer: ProtoContainer, context: ClsStubBuilderContext): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file typeAliasClsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'parentStub' @ [65:29] ==> value-parameter parentStub: StubElement<out PsiElement> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createDeclarationsStubs[ValueParameterDescriptorImpl]
 
@@ -137,7 +137,7 @@ Inferred types:
 
 'outerContext' @ [93:23] ==> value-parameter outerContext: ClsStubBuilderContext defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.CallableClsStubBuilder.<init>[ValueParameterDescriptorImpl]
 
-'child' @ [93:36] ==> internal fun ClsStubBuilderContext.child(typeParameterList: List<ProtoBuf.TypeParameter>, name: Name? = ..., nameResolver: NameResolver = ..., typeTable: TypeTable = ..., protoContainer: ProtoContainer.Class? = ...): ClsStubBuilderContext defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'child' @ [93:36] ==> internal fun ClsStubBuilderContext.child(typeParameterList: List<ProtoBuf.TypeParameter>, name: Name? = ..., nameResolver: NameResolver = ..., typeTable: TypeTable = ..., protoContainer: ProtoContainer.Class? = ...): ClsStubBuilderContext defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file ClsStubBuilderContext.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameters' @ [93:42] ==> private final val typeParameters: List<ProtoBuf.TypeParameter> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.CallableClsStubBuilder[PropertyDescriptorImpl]
 
@@ -147,9 +147,9 @@ Inferred types:
 
 'protoContainer' @ [95:47] ==> protected final val protoContainer: ProtoContainer defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.CallableClsStubBuilder[PropertyDescriptorImpl]
 
-'lazy' @ [96:64] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> StubElement<out PsiElement>): Lazy<StubElement<out PsiElement>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [96:64] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> StubElement<out PsiElement>
+    <T> -> T
 
 'NONE' @ [96:90] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -197,6 +197,8 @@ Inferred types:
 'it' @ [114:67] ==> value-parameter it: ProtoBuf.Type defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.CallableClsStubBuilder.createReceiverTypeReferenceStub.<anonymous>[ValueParameterDescriptorImpl]
 
 'this' @ [114:71] ==> <this> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.CallableClsStubBuilder[LazyClassReceiverParameterDescriptor]
+
+'receiverAnnotations' @ [114:77] ==> public abstract val receiverAnnotations: List<ClassIdWithTarget> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.CallableClsStubBuilder[PropertyDescriptorImpl]
 
 'returnType' @ [119:9] ==> public abstract val returnType: ProtoBuf.Type? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.CallableClsStubBuilder[PropertyDescriptorImpl]
 
@@ -256,8 +258,6 @@ Inferred types:
 
 'it' @ [144:46] ==> value-parameter it: ClassId defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.FunctionClsStubBuilder.<get-receiverAnnotations>.<anonymous>[ValueParameterDescriptorImpl]
 
-'AnnotationUseSiteTarget' @ [144:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'RECEIVER' @ [144:74] ==> enum entry RECEIVER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'functionProto' @ [148:17] ==> private final val functionProto: ProtoBuf.Function defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.FunctionClsStubBuilder[PropertyDescriptorImpl]
@@ -298,7 +298,7 @@ Inferred types:
 
 'MODALITY' @ [155:69] ==> public val MODALITY: FlagsToModifiers defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.flags in file flags.kt[PropertyDescriptorImpl]
 
-'createModifierListStubForDeclaration' @ [156:36] ==> public fun createModifierListStubForDeclaration(parent: StubElement<out PsiElement>, flags: Int, flagsToTranslate: List<FlagsToModifiers> = ..., additionalModifiers: List<KtModifierKeywordToken> = ...): KotlinModifierListStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createModifierListStubForDeclaration' @ [156:36] ==> public fun createModifierListStubForDeclaration(parent: StubElement<out PsiElement>, flags: Int, flagsToTranslate: List<FlagsToModifiers> = ..., additionalModifiers: List<KtModifierKeywordToken> = ...): KotlinModifierListStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'callableStub' @ [157:17] ==> protected final val callableStub: StubElement<out PsiElement> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.FunctionClsStubBuilder[PropertyDescriptorImpl]
 
@@ -340,7 +340,7 @@ Inferred types:
 
 'FUNCTION' @ [162:70] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
 
-'createTargetedAnnotationStubs' @ [164:9] ==> public fun createTargetedAnnotationStubs(annotationIds: List<ClassIdWithTarget>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createTargetedAnnotationStubs' @ [164:9] ==> public fun createTargetedAnnotationStubs(annotationIds: List<ClassIdWithTarget>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'annotationIds' @ [164:39] ==> val annotationIds: List<ClassIdWithTarget> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.FunctionClsStubBuilder.createModifierListStub[LocalVariableDescriptor]
 
@@ -362,7 +362,7 @@ Inferred types:
 
 'callableName' @ [172:17] ==> val callableName: Name defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.FunctionClsStubBuilder.doCreateCallableStub[LocalVariableDescriptor]
 
-'ref' @ [172:30] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [172:30] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'isTopLevel' @ [173:17] ==> protected final val isTopLevel: Boolean defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.FunctionClsStubBuilder[PropertyDescriptorImpl]
 
@@ -449,8 +449,6 @@ Inferred types:
 
 'it' @ [198:46] ==> value-parameter it: ClassId defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.PropertyClsStubBuilder.<get-receiverAnnotations>.<anonymous>[ValueParameterDescriptorImpl]
 
-'AnnotationUseSiteTarget' @ [198:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'RECEIVER' @ [198:74] ==> enum entry RECEIVER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'propertyProto' @ [202:17] ==> private final val propertyProto: ProtoBuf.Property defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.PropertyClsStubBuilder[PropertyDescriptorImpl]
@@ -493,7 +491,7 @@ Inferred types:
 
 'MODALITY' @ [209:69] ==> public val MODALITY: FlagsToModifiers defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.flags in file flags.kt[PropertyDescriptorImpl]
 
-'createModifierListStubForDeclaration' @ [211:36] ==> public fun createModifierListStubForDeclaration(parent: StubElement<out PsiElement>, flags: Int, flagsToTranslate: List<FlagsToModifiers> = ..., additionalModifiers: List<KtModifierKeywordToken> = ...): KotlinModifierListStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createModifierListStubForDeclaration' @ [211:36] ==> public fun createModifierListStubForDeclaration(parent: StubElement<out PsiElement>, flags: Int, flagsToTranslate: List<FlagsToModifiers> = ..., additionalModifiers: List<KtModifierKeywordToken> = ...): KotlinModifierListStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'callableStub' @ [212:17] ==> protected final val callableStub: StubElement<out PsiElement> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.PropertyClsStubBuilder[PropertyDescriptorImpl]
 
@@ -529,7 +527,7 @@ Inferred types:
 
 'PROPERTY' @ [217:70] ==> enum entry PROPERTY defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
 
-'createTargetedAnnotationStubs' @ [219:9] ==> public fun createTargetedAnnotationStubs(annotationIds: List<ClassIdWithTarget>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createTargetedAnnotationStubs' @ [219:9] ==> public fun createTargetedAnnotationStubs(annotationIds: List<ClassIdWithTarget>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'annotationIds' @ [219:39] ==> val annotationIds: List<ClassIdWithTarget> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.PropertyClsStubBuilder.createModifierListStub[LocalVariableDescriptor]
 
@@ -551,7 +549,7 @@ Inferred types:
 
 'callableName' @ [227:17] ==> val callableName: Name defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.PropertyClsStubBuilder.doCreateCallableStub[LocalVariableDescriptor]
 
-'ref' @ [227:30] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [227:30] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'isVar' @ [228:17] ==> private final val isVar: Boolean defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.PropertyClsStubBuilder[PropertyDescriptorImpl]
 
@@ -599,7 +597,7 @@ Inferred types:
 
 'protoContainer' @ [256:123] ==> protected final val protoContainer: ProtoContainer defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.ConstructorClsStubBuilder[PropertyDescriptorImpl]
 
-'createModifierListStubForDeclaration' @ [260:36] ==> public fun createModifierListStubForDeclaration(parent: StubElement<out PsiElement>, flags: Int, flagsToTranslate: List<FlagsToModifiers> = ..., additionalModifiers: List<KtModifierKeywordToken> = ...): KotlinModifierListStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createModifierListStubForDeclaration' @ [260:36] ==> public fun createModifierListStubForDeclaration(parent: StubElement<out PsiElement>, flags: Int, flagsToTranslate: List<FlagsToModifiers> = ..., additionalModifiers: List<KtModifierKeywordToken> = ...): KotlinModifierListStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'callableStub' @ [260:73] ==> protected final val callableStub: StubElement<out PsiElement> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.ConstructorClsStubBuilder[PropertyDescriptorImpl]
 
@@ -627,7 +625,7 @@ Inferred types:
 
 'FUNCTION' @ [263:73] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
 
-'createTargetedAnnotationStubs' @ [265:9] ==> public fun createTargetedAnnotationStubs(annotationIds: List<ClassIdWithTarget>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createTargetedAnnotationStubs' @ [265:9] ==> public fun createTargetedAnnotationStubs(annotationIds: List<ClassIdWithTarget>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'annotationIds' @ [265:39] ==> val annotationIds: List<ClassIdWithTarget> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.ConstructorClsStubBuilder.createModifierListStub[LocalVariableDescriptor]
 

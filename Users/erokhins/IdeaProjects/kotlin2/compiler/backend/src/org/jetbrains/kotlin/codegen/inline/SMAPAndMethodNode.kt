@@ -1,4 +1,4 @@
-'createLineNumberSequence' @ [26:24] ==> private fun createLineNumberSequence(node: MethodNode, classSMAP: SMAP): Sequence<LabelAndMapping> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'createLineNumberSequence' @ [26:24] ==> private fun createLineNumberSequence(node: MethodNode, classSMAP: SMAP): Sequence<LabelAndMapping> defined in org.jetbrains.kotlin.codegen.inline in file SMAPAndMethodNode.kt[SimpleFunctionDescriptorImpl]
 
 'node' @ [26:49] ==> public final val node: MethodNode defined in org.jetbrains.kotlin.codegen.inline.SMAPAndMethodNode[PropertyDescriptorImpl]
 
@@ -24,8 +24,6 @@ Inferred types:
 'sortedWith' @ [26:104] ==> public fun <T> Iterable<RangeMapping>.sortedWith(comparator: Comparator<in RangeMapping> /* = Comparator<in RangeMapping> */): List<RangeMapping> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> RangeMapping
-
-'RangeMapping' @ [26:115] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.RangeMapping[FakeCallableDescriptorForObject]
 
 'Comparator' @ [26:128] ==> public object Comparator : Comparator<RangeMapping> defined in org.jetbrains.kotlin.codegen.inline.RangeMapping[FakeCallableDescriptorForObject]
 
@@ -83,8 +81,6 @@ Inferred types:
 'dest' @ [35:21] ==> public final val dest: Int defined in org.jetbrains.kotlin.codegen.inline.RangeMapping[PropertyDescriptorImpl]
 
 'value' @ [35:29] ==> value-parameter value: (RangeMapping..RangeMapping?) defined in org.jetbrains.kotlin.codegen.inline.createLineNumberSequence.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
-
-'RangeMapping' @ [35:43] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.RangeMapping[FakeCallableDescriptorForObject]
 
 'compare' @ [35:67] ==> public open fun compare(o1: RangeMapping, o2: RangeMapping): Int defined in org.jetbrains.kotlin.codegen.inline.RangeMapping.Comparator[SimpleFunctionDescriptorImpl]
 

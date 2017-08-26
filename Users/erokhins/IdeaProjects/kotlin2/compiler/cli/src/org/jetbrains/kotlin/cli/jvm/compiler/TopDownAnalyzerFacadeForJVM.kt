@@ -156,7 +156,7 @@ Inferred types:
 
 'get' @ [133:51] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(IncrementalCompilationComponents..IncrementalCompilationComponents?)>): IncrementalCompilationComponents? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IncrementalCompilationComponents
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.incremental.components.IncrementalCompilationComponents..org.jetbrains.kotlin.load.kotlin.incremental.components.IncrementalCompilationComponents?)
 
 'INCREMENTAL_COMPILATION_COMPONENTS' @ [133:76] ==> public final val INCREMENTAL_COMPILATION_COMPONENTS: (CompilerConfigurationKey<(IncrementalCompilationComponents..IncrementalCompilationComponents?)>..CompilerConfigurationKey<(IncrementalCompilationComponents..IncrementalCompilationComponents?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -164,9 +164,7 @@ Inferred types:
 
 'get' @ [134:43] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(LookupTracker..LookupTracker?)>): LookupTracker? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LookupTracker
-
-'CommonConfigurationKeys' @ [134:47] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.incremental.components.LookupTracker..org.jetbrains.kotlin.incremental.components.LookupTracker?)
 
 'LOOKUP_TRACKER' @ [134:71] ==> @field:JvmField public final val LOOKUP_TRACKER: CompilerConfigurationKey<(LookupTracker..LookupTracker?)> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -176,7 +174,7 @@ Inferred types:
 
 'get' @ [135:39] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(MutableList<(Module..Module?)>..List<(Module..Module?)>?)>): (MutableList<(Module..Module?)>?..List<(Module..Module?)>?) defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.modules.Module..org.jetbrains.kotlin.modules.Module?)>..kotlin.collections.List<(org.jetbrains.kotlin.modules.Module..org.jetbrains.kotlin.modules.Module?)>)
+    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.modules.Module..org.jetbrains.kotlin.modules.Module?)>..kotlin.collections.List<(org.jetbrains.kotlin.modules.Module..org.jetbrains.kotlin.modules.Module?)>?)
 
 'MODULES' @ [135:64] ==> public final val MODULES: (CompilerConfigurationKey<(MutableList<(Module..Module?)>..List<(Module..Module?)>?)>..CompilerConfigurationKey<(MutableList<(Module..Module?)>..List<(Module..Module?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -184,6 +182,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.modules.Module..org.jetbrains.kotlin.modules.Module?)
     <R> -> TargetId
+
+'TargetId' @ [135:80] ==> public fun TargetId(module: Module): TargetId defined in org.jetbrains.kotlin.modules[DeserializedSimpleFunctionDescriptor]
 
 '!' @ [137:31] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -213,11 +213,9 @@ Inferred types:
 
 'get' @ [142:39] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(JvmTarget..JvmTarget?)>): JvmTarget? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JvmTarget
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.JvmTarget..org.jetbrains.kotlin.config.JvmTarget?)
 
 'JVM_TARGET' @ [142:64] ==> public final val JVM_TARGET: (CompilerConfigurationKey<(JvmTarget..JvmTarget?)>..CompilerConfigurationKey<(JvmTarget..JvmTarget?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
-
-'JvmTarget' @ [142:79] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [142:89] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -295,6 +293,8 @@ Inferred types:
 
 'StorageComponentContainer' @ [160:79] ==> public constructor StorageComponentContainer(id: String, parent: StorageComponentContainer? = ...) defined in org.jetbrains.kotlin.container.StorageComponentContainer[DeserializedClassConstructorDescriptor]
 
+'useJavac' @ [160:106] ==> local final fun StorageComponentContainer.useJavac(): Unit defined in org.jetbrains.kotlin.cli.jvm.compiler.TopDownAnalyzerFacadeForJVM.createContainer[SimpleFunctionDescriptorImpl]
+
 'if (separateModules) {
             val dependenciesContext = ContextForNewModule(
                     moduleContext, Name.special("<dependencies of ${configuration.getNotNull(CommonConfigurationKeys.MODULE_NAME)}>"),
@@ -334,9 +334,7 @@ Inferred types:
 
 'getNotNull' @ [165:83] ==> @NotNull public open fun <T : (Any..Any?)> getNotNull(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [165:94] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [165:118] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -454,6 +452,8 @@ Inferred types:
     <R> -> IncrementalCache
 
 'incrementalComponents' @ [190:73] ==> val incrementalComponents: IncrementalCompilationComponents? defined in org.jetbrains.kotlin.cli.jvm.compiler.TopDownAnalyzerFacadeForJVM.createContainer[LocalVariableDescriptor]
+
+'getIncrementalCache' @ [190:96] ==> public abstract fun getIncrementalCache(target: TargetId): IncrementalCache defined in org.jetbrains.kotlin.load.kotlin.incremental.components.IncrementalCompilationComponents[DeserializedSimpleFunctionDescriptor]
 
 'storageManager' @ [190:118] ==> val storageManager: StorageManager defined in org.jetbrains.kotlin.cli.jvm.compiler.TopDownAnalyzerFacadeForJVM.createContainer[LocalVariableDescriptor]
 
@@ -769,9 +769,7 @@ Inferred types:
 
 'getNotNull' @ [282:64] ==> @NotNull public open fun <T : (Any..Any?)> getNotNull(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [282:75] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [282:99] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 

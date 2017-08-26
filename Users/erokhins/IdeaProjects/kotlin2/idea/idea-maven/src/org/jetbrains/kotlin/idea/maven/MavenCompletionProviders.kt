@@ -1,7 +1,5 @@
 'MavenFixedValueReferenceProvider' @ [26:49] ==> public constructor MavenFixedValueReferenceProvider(p0: (Array<(String..String?)>..Array<out (String..String?)>?)) defined in org.jetbrains.idea.maven.plugins.api.MavenFixedValueReferenceProvider[JavaClassConstructorDescriptor]
 
-'LanguageVersion' @ [27:9] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'values' @ [27:25] ==> public final fun values(): Array<LanguageVersion> defined in org.jetbrains.kotlin.config.LanguageVersion[SimpleFunctionDescriptorImpl]
 
 'filter' @ [27:34] ==> public inline fun <T> Array<out LanguageVersion>.filter(predicate: (LanguageVersion) -> Boolean): List<LanguageVersion> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -30,8 +28,6 @@ Inferred types:
     <reified T> -> String
 
 'MavenFixedValueReferenceProvider' @ [30:44] ==> public constructor MavenFixedValueReferenceProvider(p0: (Array<(String..String?)>..Array<out (String..String?)>?)) defined in org.jetbrains.idea.maven.plugins.api.MavenFixedValueReferenceProvider[JavaClassConstructorDescriptor]
-
-'LanguageVersion' @ [31:9] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'values' @ [31:25] ==> public final fun values(): Array<LanguageVersion> defined in org.jetbrains.kotlin.config.LanguageVersion[SimpleFunctionDescriptorImpl]
 
@@ -62,8 +58,6 @@ Inferred types:
 
 'MavenFixedValueReferenceProvider' @ [34:43] ==> public constructor MavenFixedValueReferenceProvider(p0: (Array<(String..String?)>..Array<out (String..String?)>?)) defined in org.jetbrains.idea.maven.plugins.api.MavenFixedValueReferenceProvider[JavaClassConstructorDescriptor]
 
-'JvmTarget' @ [35:9] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'values' @ [35:19] ==> public final fun values(): Array<JvmTarget> defined in org.jetbrains.kotlin.config.JvmTarget[SimpleFunctionDescriptorImpl]
 
 'map' @ [35:28] ==> public inline fun <T, R> Array<out JvmTarget>.map(transform: (JvmTarget) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -72,6 +66,8 @@ Inferred types:
     <R> -> String
 
 'JvmTarget' @ [35:32] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
+
+'description' @ [35:43] ==> public open val description: String defined in org.jetbrains.kotlin.config.JvmTarget[DeserializedPropertyDescriptor]
 
 'toTypedArray' @ [35:56] ==> public inline fun <reified T> Collection<String>.toTypedArray(): Array<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -92,6 +88,8 @@ Inferred types:
 
 'StringUtil' @ [39:58] ==> public constructor StringUtil() defined in com.intellij.openapi.util.text.StringUtil[JavaClassConstructorDescriptor]
 
+'unquoteString' @ [39:70] ==> @NotNull @Contract public open fun unquoteString(@NotNull p0: String): String defined in com.intellij.openapi.util.text.StringUtil[JavaMethodDescriptor]
+
 'toTypedArray' @ [39:85] ==> public inline fun <reified T> Collection<String>.toTypedArray(): Array<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T> -> String
@@ -110,6 +108,8 @@ Inferred types:
     <R> -> String
 
 'StringUtil' @ [43:51] ==> public constructor StringUtil() defined in com.intellij.openapi.util.text.StringUtil[JavaClassConstructorDescriptor]
+
+'unquoteString' @ [43:63] ==> @NotNull @Contract public open fun unquoteString(@NotNull p0: String): String defined in com.intellij.openapi.util.text.StringUtil[JavaMethodDescriptor]
 
 'toTypedArray' @ [43:78] ==> public inline fun <reified T> Collection<String>.toTypedArray(): Array<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

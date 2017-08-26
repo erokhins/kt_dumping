@@ -110,8 +110,8 @@ Inferred types:
 
 'record' @ [97:17] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?), key: (KtAnnotationEntry..KtAnnotationEntry?), value: (AnnotationDescriptor..AnnotationDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtAnnotationEntry
-    <V : (Any..Any?)> -> AnnotationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor..org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor?)
 
 'ANNOTATION' @ [97:39] ==> public final val ANNOTATION: (WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -235,11 +235,11 @@ Inferred types:
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
-'mapNotNull' @ [119:56] ==> public inline fun <K, V, R : Any> Map<out (ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>.mapNotNull(transform: (Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>) -> Pair<Name, ConstantValue<Any?>>?): List<Pair<Name, ConstantValue<Any?>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapNotNull' @ [119:56] ==> public inline fun <K, V, R : Any> Map<out (ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>.mapNotNull(transform: (Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>) -> Pair<Name, ConstantValue<*>>?): List<Pair<Name, ConstantValue<*>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
     <V> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedValueArgument..org.jetbrains.kotlin.resolve.calls.model.ResolvedValueArgument?)
-    <R : Any> -> Pair<Name, ConstantValue<Any?>>
+    <R : Any> -> Pair<Name, ConstantValue<*>>
 
 'component1' @ [119:70] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>.component1(): (ValueParameterDescriptor..ValueParameterDescriptor?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -254,9 +254,9 @@ Inferred types:
 'if (resolvedArgument == null) null
             else c.annotationResolver.getAnnotationArgumentValue(c.trace, valueParameter, resolvedArgument)?.let { value ->
                 valueParameter.name to value
-            }' @ [120:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Pair<Name, ConstantValue<Any?>>?, elseBranch: Pair<Name, ConstantValue<Any?>>?): Pair<Name, ConstantValue<Any?>>?[SimpleFunctionDescriptorImpl]
+            }' @ [120:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Pair<Name, ConstantValue<*>>?, elseBranch: Pair<Name, ConstantValue<*>>?): Pair<Name, ConstantValue<*>>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Pair<Name, ConstantValue<Any?>>?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Pair<Name, ConstantValue<*>>?
 
 'resolvedArgument' @ [120:17] ==> val resolvedArgument: (ResolvedValueArgument..ResolvedValueArgument?) defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -274,21 +274,21 @@ Inferred types:
 
 'resolvedArgument' @ [121:91] ==> val resolvedArgument: (ResolvedValueArgument..ResolvedValueArgument?) defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'let' @ [121:110] ==> @InlineOnly public inline fun <T, R> ConstantValue<Any?>.let(block: (ConstantValue<Any?>) -> Pair<Name, ConstantValue<Any?>>): Pair<Name, ConstantValue<Any?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [121:110] ==> @InlineOnly public inline fun <T, R> ConstantValue<*>.let(block: (ConstantValue<*>) -> Pair<Name, ConstantValue<*>>): Pair<Name, ConstantValue<*>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ConstantValue<Any?>
-    <R> -> Pair<Name, ConstantValue<Any?>>
+    <T> -> ConstantValue<*>
+    <R> -> Pair<Name, ConstantValue<*>>
 
 'valueParameter' @ [122:17] ==> val valueParameter: (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'name' @ [122:32] ==> public final val ValueParameterDescriptor.name: Name[MyPropertyDescriptor]
 
-'value' @ [122:40] ==> value-parameter value: ConstantValue<Any?> defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'value' @ [122:40] ==> value-parameter value: ConstantValue<*> defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'toMap' @ [124:11] ==> public fun <K, V> Iterable<Pair<Name, ConstantValue<Any?>>>.toMap(): Map<Name, ConstantValue<Any?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toMap' @ [124:11] ==> public fun <K, V> Iterable<Pair<Name, ConstantValue<*>>>.toMap(): Map<Name, ConstantValue<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> Name
-    <V> -> ConstantValue<Any?>
+    <V> -> ConstantValue<*>
 
 'forceResolveAllContents' @ [128:26] ==> @Nullable public open fun forceResolveAllContents(@Nullable type: KotlinType?): KotlinType? defined in org.jetbrains.kotlin.resolve.lazy.ForceResolveUtil[JavaMethodDescriptor]
 

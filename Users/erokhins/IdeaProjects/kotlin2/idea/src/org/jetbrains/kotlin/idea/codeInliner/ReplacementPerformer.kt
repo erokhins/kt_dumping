@@ -453,8 +453,6 @@ Inferred types:
 
 'isEmpty' @ [140:36] ==> public open fun isEmpty(): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'PsiChildRange' @ [141:17] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
-
 'singleElement' @ [141:31] ==> public final fun singleElement(element: PsiElement): PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[DeserializedSimpleFunctionDescriptor]
 
 'replaced' @ [141:45] ==> val replaced: KtExpression? defined in org.jetbrains.kotlin.idea.codeInliner.ExpressionReplacementPerformer.doIt[LocalVariableDescriptor]
@@ -497,8 +495,6 @@ Inferred types:
 'insertedStatements' @ [149:17] ==> val insertedStatements: ArrayList<KtExpression> defined in org.jetbrains.kotlin.idea.codeInliner.ExpressionReplacementPerformer.doIt[LocalVariableDescriptor]
 
 'isEmpty' @ [149:36] ==> public open fun isEmpty(): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
-
-'PsiChildRange' @ [150:17] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [150:31] ==> public final val EMPTY: PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[DeserializedPropertyDescriptor]
 
@@ -710,7 +706,7 @@ Inferred types:
 
 'putCopyableUserData' @ [227:29] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?), @Nullable p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'ELEMENT_TO_BE_REPLACED_KEY' @ [227:49] ==> private val ELEMENT_TO_BE_REPLACED_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner in file ReplacementPerformer.kt[PropertyDescriptorImpl]
 
@@ -730,7 +726,7 @@ Inferred types:
 
 'getCopyableUserData' @ [229:78] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?)): Unit? defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'ELEMENT_TO_BE_REPLACED_KEY' @ [229:98] ==> private val ELEMENT_TO_BE_REPLACED_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner in file ReplacementPerformer.kt[PropertyDescriptorImpl]
 
@@ -738,7 +734,7 @@ Inferred types:
 
 'putCopyableUserData' @ [230:29] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?), @Nullable p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'ELEMENT_TO_BE_REPLACED_KEY' @ [230:49] ==> private val ELEMENT_TO_BE_REPLACED_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner in file ReplacementPerformer.kt[PropertyDescriptorImpl]
 

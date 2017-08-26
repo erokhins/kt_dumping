@@ -1273,8 +1273,6 @@ Inferred types:
 
 'returnType' @ [483:35] ==> public final val FunctionDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
-'Modality' @ [484:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [484:30] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PRIVATE' @ [485:34] ==> @NotNull public final val PRIVATE: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -1518,8 +1516,6 @@ Inferred types:
 
 'descriptor' @ [549:39] ==> public final val descriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.common.lower.LocalDeclarationsLowering.LocalClassContext[PropertyDescriptorImpl]
 
-'Annotations' @ [550:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [550:33] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'oldDescriptor' @ [550:40] ==> val oldDescriptor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.backend.common.lower.LocalDeclarationsLowering.LocalDeclarationsTransformer.createTransformedConstructorDescriptor[LocalVariableDescriptor]
@@ -1666,11 +1662,7 @@ Inferred types:
 
 'classDescriptor' @ [590:25] ==> val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.common.lower.LocalDeclarationsLowering.LocalDeclarationsTransformer.createFieldsForCapturedValues[LocalVariableDescriptor]
 
-'Annotations' @ [591:25] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [591:37] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [592:25] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [592:34] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

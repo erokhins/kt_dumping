@@ -52,11 +52,11 @@
 
 'Frame' @ [91:17] ==> public constructor Frame<V : (Value..Value?)>(p0: (Frame<out (Value..Value?)>..Frame<out (Value..Value?)>?)) defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaClassConstructorDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> Value
+    <V : (Value..Value?)> -> (org.jetbrains.eval4j.Value..org.jetbrains.eval4j.Value?)
 
 'initialState' @ [91:23] ==> value-parameter initialState: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[ValueParameterDescriptorImpl]
 
-'computeHandlers' @ [92:20] ==> public fun computeHandlers(m: MethodNode): Array<out List<TryCatchBlockNode>?> defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'computeHandlers' @ [92:20] ==> public fun computeHandlers(m: MethodNode): Array<out List<TryCatchBlockNode>?> defined in org.jetbrains.eval4j in file interpreterLoop.kt[SimpleFunctionDescriptorImpl]
 
 'm' @ [92:36] ==> value-parameter m: MethodNode defined in org.jetbrains.eval4j.interpreterLoop[ValueParameterDescriptorImpl]
 
@@ -96,7 +96,7 @@ Inferred types:
 
 'exceptionCaught' @ [103:43] ==> public abstract fun exceptionCaught(currentState: Frame<Value>, currentInsn: AbstractInsnNode, exception: Value): InterpreterResult? defined in org.jetbrains.eval4j.InterpretationEventHandler[SimpleFunctionDescriptorImpl]
 
-'frame' @ [103:59] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [103:59] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'currentInsn' @ [103:66] ==> var currentInsn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
@@ -108,11 +108,11 @@ Inferred types:
 
 'handled' @ [104:64] ==> val handled: InterpreterResult? defined in org.jetbrains.eval4j.interpreterLoop.exceptionCaught[LocalVariableDescriptor]
 
-'frame' @ [105:21] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [105:21] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'clearStack' @ [105:27] ==> public open fun clearStack(): Unit defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaMethodDescriptor]
 
-'frame' @ [106:21] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [106:21] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'push' @ [106:27] ==> public open fun push(p0: (Value..Value?)): Unit defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaMethodDescriptor]
 
@@ -144,7 +144,7 @@ Inferred types:
 
 'java' @ [123:55] ==> public val <T> KClass<out Throwable>.java: Class<out Throwable> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Throwable
+    <T> -> Captured(out Throwable)
 
 'forName' @ [124:36] ==> @CallerSensitive public open fun forName(p0: (String..String?), p1: Boolean, p2: (ClassLoader..ClassLoader?)): (Class<*>..Class<*>?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -158,7 +158,7 @@ Inferred types:
 
 'classLoader' @ [127:40] ==> public final val <T : (Any..Any?)> Class<out Throwable>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Throwable
+    <T : (Any..Any?)> -> Captured(out Throwable)
 
 '_class' @ [129:17] ==> val _class: (Class<*>..Class<*>?) defined in org.jetbrains.eval4j.interpreterLoop.exceptionFromEvalCaught.<anonymous>[LocalVariableDescriptor]
 
@@ -369,7 +369,7 @@ Inferred types:
 
 'currentInsn' @ [158:43] ==> var currentInsn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
-'frame' @ [159:43] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [159:43] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'getLocal' @ [159:49] ==> public open fun getLocal(p0: Int): (Value..Value?) defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaMethodDescriptor]
 
@@ -401,11 +401,11 @@ Inferred types:
 
 'ARETURN' @ [168:61] ==> public const final val ARETURN: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'frame' @ [169:41] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [169:41] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
-'getStackTop' @ [169:47] ==> private fun <T : Value> Frame<Value>.getStackTop(i: Int = ...): Value defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'getStackTop' @ [169:47] ==> private fun <T : Value> Frame<(Value..Value?)>.getStackTop(i: Int = ...): (Value..Value?) defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Value> -> Value
+    <T : Value> -> (org.jetbrains.eval4j.Value..org.jetbrains.eval4j.Value?)
 
 'getReturnType' @ [170:53] ==> public open fun getReturnType(p0: (String..String?)): (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaMethodDescriptor]
 
@@ -427,15 +427,15 @@ Inferred types:
 
 'if (value != NULL_VALUE && value.asmType != expectedType)
                                                     ObjectValue(value.obj(), expectedType)
-                                              else value' @ [172:47] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Value, elseBranch: Value): Value[SimpleFunctionDescriptorImpl]
+                                              else value' @ [172:47] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Value..Value?), elseBranch: (Value..Value?)): (Value..Value?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Value
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.eval4j.Value..org.jetbrains.eval4j.Value?)
 
-'value' @ [172:51] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [172:51] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'NULL_VALUE' @ [172:60] ==> public val NULL_VALUE: ObjectValue defined in org.jetbrains.eval4j in file values.kt[PropertyDescriptorImpl]
 
-'value' @ [172:74] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [172:74] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'asmType' @ [172:80] ==> public abstract val asmType: Type defined in org.jetbrains.eval4j.Value[PropertyDescriptorImpl]
 
@@ -443,19 +443,19 @@ Inferred types:
 
 'ObjectValue' @ [173:53] ==> public constructor ObjectValue(value: Any?, asmType: Type) defined in org.jetbrains.eval4j.ObjectValue[ClassConstructorDescriptorImpl]
 
-'value' @ [173:65] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [173:65] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'obj' @ [173:71] ==> public fun Value.obj(expectedType: Type = ...): Any? defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'expectedType' @ [173:78] ==> val expectedType: (Type..Type?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
-'value' @ [174:52] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [174:52] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'ValueReturned' @ [175:40] ==> public constructor ValueReturned(result: Value) defined in org.jetbrains.eval4j.ValueReturned[ClassConstructorDescriptorImpl]
 
-'coerced' @ [175:54] ==> val coerced: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'coerced' @ [175:54] ==> val coerced: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
-'value' @ [177:33] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [177:33] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'asmType' @ [177:39] ==> public abstract val asmType: Type defined in org.jetbrains.eval4j.Value[PropertyDescriptorImpl]
 
@@ -490,17 +490,17 @@ Inferred types:
 
 'BOOLEAN' @ [181:42] ==> public const final val BOOLEAN: Int defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
 
-'boolean' @ [181:53] ==> public fun boolean(v: Boolean): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'boolean' @ [181:53] ==> public fun boolean(v: Boolean): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
-'value' @ [181:61] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [181:61] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'boolean' @ [181:67] ==> public val Value.boolean: Boolean defined in org.jetbrains.eval4j in file values.kt[PropertyDescriptorImpl]
 
 'BYTE' @ [182:42] ==> public const final val BYTE: Int defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
 
-'byte' @ [182:50] ==> public fun byte(v: Byte): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'byte' @ [182:50] ==> public fun byte(v: Byte): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
-'value' @ [182:55] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [182:55] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'int' @ [182:61] ==> public val Value.int: Int defined in org.jetbrains.eval4j in file values.kt[PropertyDescriptorImpl]
 
@@ -508,9 +508,9 @@ Inferred types:
 
 'SHORT' @ [183:42] ==> public const final val SHORT: Int defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
 
-'short' @ [183:51] ==> public fun short(v: Short): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'short' @ [183:51] ==> public fun short(v: Short): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
-'value' @ [183:57] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [183:57] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'int' @ [183:63] ==> public val Value.int: Int defined in org.jetbrains.eval4j in file values.kt[PropertyDescriptorImpl]
 
@@ -518,9 +518,9 @@ Inferred types:
 
 'CHAR' @ [184:42] ==> public const final val CHAR: Int defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
 
-'char' @ [184:50] ==> public fun char(v: Char): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'char' @ [184:50] ==> public fun char(v: Char): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
-'value' @ [184:55] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [184:55] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'int' @ [184:61] ==> public val Value.int: Int defined in org.jetbrains.eval4j in file values.kt[PropertyDescriptorImpl]
 
@@ -528,9 +528,9 @@ Inferred types:
 
 'INT' @ [185:42] ==> public const final val INT: Int defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
 
-'int' @ [185:49] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [185:49] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
-'value' @ [185:53] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [185:53] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'int' @ [185:59] ==> public val Value.int: Int defined in org.jetbrains.eval4j in file values.kt[PropertyDescriptorImpl]
 
@@ -544,7 +544,7 @@ Inferred types:
 
 'ValueReturned' @ [190:36] ==> public constructor ValueReturned(result: Value) defined in org.jetbrains.eval4j.ValueReturned[ClassConstructorDescriptorImpl]
 
-'value' @ [190:50] ==> val value: Value defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'value' @ [190:50] ==> val value: (Value..Value?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'RETURN' @ [192:25] ==> public const final val RETURN: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -572,15 +572,15 @@ Inferred types:
 
 'checkUnaryCondition' @ [194:45] ==> public final fun checkUnaryCondition(value: Value, opcode: Int): Boolean defined in org.jetbrains.eval4j.SingleInstructionInterpreter[SimpleFunctionDescriptorImpl]
 
-'frame' @ [194:65] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [194:65] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
-'getStackTop' @ [194:71] ==> private fun <T : Value> Frame<Value>.getStackTop(i: Int = ...): Value defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'getStackTop' @ [194:71] ==> private fun <T : Value> Frame<(Value..Value?)>.getStackTop(i: Int = ...): (Value..Value?) defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Value> -> Value
+    <T : Value> -> (org.jetbrains.eval4j.Value..org.jetbrains.eval4j.Value?)
 
 'insnOpcode' @ [194:86] ==> val insnOpcode: Int defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
-'frame' @ [195:33] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [195:33] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'execute' @ [195:39] ==> public open fun execute(p0: (AbstractInsnNode..AbstractInsnNode?), p1: (Interpreter<(Value..Value?)>..Interpreter<(Value..Value?)>?)): Unit defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaMethodDescriptor]
 
@@ -614,21 +614,21 @@ Inferred types:
 
 'checkBinaryCondition' @ [201:45] ==> public final fun checkBinaryCondition(value1: Value, value2: Value, opcode: Int): Boolean defined in org.jetbrains.eval4j.SingleInstructionInterpreter[SimpleFunctionDescriptorImpl]
 
-'frame' @ [201:66] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [201:66] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
-'getStackTop' @ [201:72] ==> private fun <T : Value> Frame<Value>.getStackTop(i: Int = ...): Value defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'getStackTop' @ [201:72] ==> private fun <T : Value> Frame<(Value..Value?)>.getStackTop(i: Int = ...): (Value..Value?) defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Value> -> Value
+    <T : Value> -> (org.jetbrains.eval4j.Value..org.jetbrains.eval4j.Value?)
 
-'frame' @ [201:88] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [201:88] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
-'getStackTop' @ [201:94] ==> private fun <T : Value> Frame<Value>.getStackTop(i: Int = ...): Value defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'getStackTop' @ [201:94] ==> private fun <T : Value> Frame<(Value..Value?)>.getStackTop(i: Int = ...): (Value..Value?) defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Value> -> Value
+    <T : Value> -> (org.jetbrains.eval4j.Value..org.jetbrains.eval4j.Value?)
 
 'insnOpcode' @ [201:110] ==> val insnOpcode: Int defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
-'frame' @ [202:33] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [202:33] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'execute' @ [202:39] ==> public open fun execute(p0: (AbstractInsnNode..AbstractInsnNode?), p1: (Interpreter<(Value..Value?)>..Interpreter<(Value..Value?)>?)): Unit defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaMethodDescriptor]
 
@@ -644,17 +644,17 @@ Inferred types:
 
 'ATHROW' @ [208:25] ==> public const final val ATHROW: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'frame' @ [209:50] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [209:50] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
-'getStackTop' @ [209:56] ==> private fun <T : Value> Frame<Value>.getStackTop(i: Int = ...): Value defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'getStackTop' @ [209:56] ==> private fun <T : Value> Frame<(Value..Value?)>.getStackTop(i: Int = ...): (Value..Value?) defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Value> -> Value
+    <T : Value> -> (org.jetbrains.eval4j.Value..org.jetbrains.eval4j.Value?)
 
 'handler' @ [210:43] ==> value-parameter handler: InterpretationEventHandler = ... defined in org.jetbrains.eval4j.interpreterLoop[ValueParameterDescriptorImpl]
 
 'exceptionThrown' @ [210:51] ==> public abstract fun exceptionThrown(currentState: Frame<Value>, currentInsn: AbstractInsnNode, exception: Value): InterpreterResult? defined in org.jetbrains.eval4j.InterpretationEventHandler[SimpleFunctionDescriptorImpl]
 
-'frame' @ [210:67] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [210:67] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'currentInsn' @ [210:74] ==> var currentInsn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
@@ -674,7 +674,7 @@ Inferred types:
 
 'FROM_EVALUATED_CODE' @ [213:82] ==> enum entry FROM_EVALUATED_CODE defined in org.jetbrains.eval4j.ExceptionThrown.ExceptionKind[FakeCallableDescriptorForObject]
 
-'frame' @ [221:25] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [221:25] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'execute' @ [221:31] ==> public open fun execute(p0: (AbstractInsnNode..AbstractInsnNode?), p1: (Interpreter<(Value..Value?)>..Interpreter<(Value..Value?)>?)): Unit defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaMethodDescriptor]
 
@@ -696,13 +696,13 @@ Inferred types:
 
 'java' @ [225:99] ==> public val <T> KClass<out Throwable>.java: Class<out Throwable> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Throwable
+    <T> -> Captured(out Throwable)
 
 'handler' @ [226:39] ==> value-parameter handler: InterpretationEventHandler = ... defined in org.jetbrains.eval4j.interpreterLoop[ValueParameterDescriptorImpl]
 
 'exceptionThrown' @ [226:47] ==> public abstract fun exceptionThrown(currentState: Frame<Value>, currentInsn: AbstractInsnNode, exception: Value): InterpreterResult? defined in org.jetbrains.eval4j.InterpretationEventHandler[SimpleFunctionDescriptorImpl]
 
-'frame' @ [226:63] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [226:63] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'currentInsn' @ [226:70] ==> var currentInsn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
@@ -738,7 +738,7 @@ Inferred types:
 
 'exceptionThrown' @ [235:47] ==> public abstract fun exceptionThrown(currentState: Frame<Value>, currentInsn: AbstractInsnNode, exception: Value): InterpreterResult? defined in org.jetbrains.eval4j.InterpretationEventHandler[SimpleFunctionDescriptorImpl]
 
-'frame' @ [235:63] ==> val frame: Frame<Value> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
+'frame' @ [235:63] ==> val frame: Frame<(Value..Value?)> defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
 'currentInsn' @ [235:70] ==> var currentInsn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.eval4j.interpreterLoop[LocalVariableDescriptor]
 
@@ -850,11 +850,11 @@ Inferred types:
 
 'i' @ [265:22] ==> val i: Int defined in org.jetbrains.eval4j.computeHandlers[LocalVariableDescriptor]
 
-'insnHandlers' @ [265:27] ==> val insnHandlers: MutableList<TryCatchBlockNode> defined in org.jetbrains.eval4j.computeHandlers[LocalVariableDescriptor]
+'insnHandlers' @ [265:27] ==> val insnHandlers: MutableList<(TryCatchBlockNode..TryCatchBlockNode?)> defined in org.jetbrains.eval4j.computeHandlers[LocalVariableDescriptor]
 
-'insnHandlers' @ [267:13] ==> val insnHandlers: MutableList<TryCatchBlockNode> defined in org.jetbrains.eval4j.computeHandlers[LocalVariableDescriptor]
+'insnHandlers' @ [267:13] ==> val insnHandlers: MutableList<(TryCatchBlockNode..TryCatchBlockNode?)> defined in org.jetbrains.eval4j.computeHandlers[LocalVariableDescriptor]
 
-'add' @ [267:26] ==> public abstract fun add(element: TryCatchBlockNode): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
+'add' @ [267:26] ==> public abstract fun add(element: (TryCatchBlockNode..TryCatchBlockNode?)): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
 'tcb' @ [267:30] ==> val tcb: (TryCatchBlockNode..TryCatchBlockNode?) defined in org.jetbrains.eval4j.computeHandlers[LocalVariableDescriptor]
 

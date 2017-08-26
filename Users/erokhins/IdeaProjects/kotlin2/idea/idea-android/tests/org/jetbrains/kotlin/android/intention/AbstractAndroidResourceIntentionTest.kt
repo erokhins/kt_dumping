@@ -261,7 +261,7 @@ Inferred types:
 
 'putUserData' @ [101:18] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(String..String?)>, @Nullable p1: String?): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'CREATE_XML_RESOURCE_PARAMETERS_NAME_KEY' @ [101:30] ==> public val CREATE_XML_RESOURCE_PARAMETERS_NAME_KEY: Key<String> defined in org.jetbrains.kotlin.android.intention[DeserializedPropertyDescriptor]
 

@@ -71,8 +71,6 @@ Inferred types:
 
 'JvmSimpleFileClassInfo' @ [54:13] ==> public constructor JvmSimpleFileClassInfo(fileClassFqName: FqName, withJvmName: Boolean) defined in org.jetbrains.kotlin.fileClasses.JvmSimpleFileClassInfo[ClassConstructorDescriptorImpl]
 
-'PackagePartClassUtils' @ [54:36] ==> public object PackagePartClassUtils defined in org.jetbrains.kotlin.load.kotlin in file PackagePartClassUtils.kt[FakeCallableDescriptorForObject]
-
 'getPackagePartFqName' @ [54:58] ==> @JvmStatic public final fun getPackagePartFqName(packageFqName: FqName, fileName: String): FqName defined in org.jetbrains.kotlin.load.kotlin.PackagePartClassUtils[SimpleFunctionDescriptorImpl]
 
 'file' @ [54:79] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil.getDefaultFileClassInfo[ValueParameterDescriptorImpl]
@@ -261,7 +259,7 @@ Inferred types:
 
 'getCachedValue' @ [112:36] ==> public final fun <T : (Any..Any?)> getCachedValue(@NotNull p0: PsiElement, @NotNull p1: () -> CachedValueProvider.Result<(FqName..FqName?)>?): (FqName..FqName?) defined in com.intellij.psi.util.CachedValuesManager[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FqName
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
 
 'this' @ [112:51] ==> <this> defined in org.jetbrains.kotlin.fileClasses.javaFileFacadeFqName[ReceiverParameterDescriptorImpl]
 
@@ -282,8 +280,6 @@ Inferred types:
 
 'nameWithoutExtension' @ [114:85] ==> public final val VirtualFile.nameWithoutExtension: String[MyPropertyDescriptor]
 
-'JvmFileClassUtil' @ [115:26] ==> public object JvmFileClassUtil defined in org.jetbrains.kotlin.fileClasses in file JvmFileClassUtil.kt[FakeCallableDescriptorForObject]
-
 'getFileClassInfoNoResolve' @ [115:43] ==> @JvmStatic public final fun getFileClassInfoNoResolve(file: KtFile): JvmFileClassInfo defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil[SimpleFunctionDescriptorImpl]
 
 'this' @ [115:69] ==> <this> defined in org.jetbrains.kotlin.fileClasses.javaFileFacadeFqName[ReceiverParameterDescriptorImpl]
@@ -303,8 +299,6 @@ Inferred types:
 'findAnnotationEntryOnFileNoResolve' @ [120:70] ==> @JvmStatic public final fun findAnnotationEntryOnFileNoResolve(file: KtFile, shortName: String): KtAnnotationEntry? defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil[SimpleFunctionDescriptorImpl]
 
 'containingKtFile' @ [121:9] ==> public final val KtDeclaration.containingKtFile: KtFile[MyPropertyDescriptor]
-
-'JvmFileClassUtil' @ [122:9] ==> public object JvmFileClassUtil defined in org.jetbrains.kotlin.fileClasses in file JvmFileClassUtil.kt[FakeCallableDescriptorForObject]
 
 'JVM_MULTIFILE_CLASS_SHORT' @ [122:26] ==> public final val JVM_MULTIFILE_CLASS_SHORT: String defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil[PropertyDescriptorImpl]
 

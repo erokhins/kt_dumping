@@ -6,7 +6,7 @@
 
 'this' @ [40:53] ==> public constructor Scope(scopeOwnerSymbol: IrSymbol) defined in org.jetbrains.kotlin.ir.builders.Scope[ClassConstructorDescriptorImpl]
 
-'createSymbolForScopeOwner' @ [40:58] ==> @Suppress @Deprecated public fun createSymbolForScopeOwner(descriptor: DeclarationDescriptor): IrSymbol defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'createSymbolForScopeOwner' @ [40:58] ==> @Suppress @Deprecated public fun createSymbolForScopeOwner(descriptor: DeclarationDescriptor): IrSymbol defined in org.jetbrains.kotlin.ir.builders in file Scope.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [40:84] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.ir.builders.Scope.<init>[ValueParameterDescriptorImpl]
 

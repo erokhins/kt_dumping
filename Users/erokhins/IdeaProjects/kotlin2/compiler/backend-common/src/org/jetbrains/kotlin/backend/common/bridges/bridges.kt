@@ -137,8 +137,8 @@ Inferred types:
 
 'dfs' @ [87:9] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull p0: (MutableCollection<(Function..Function?)>..Collection<(Function..Function?)>), @NotNull p1: ((Function..Function?)) -> (MutableIterable<(Function..Function?)>..Iterable<(Function..Function?)>), @NotNull p2: DFS.NodeHandler<(Function..Function?), (LinkedList<(Function..Function?)>..LinkedList<(Function..Function?)>?)>): (LinkedList<(Function..Function?)>..LinkedList<(Function..Function?)>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> Function
-    <R : (Any..Any?)> -> LinkedList<(Function..Function?)>
+    <N : (Any..Any?)> -> (Function..Function?)
+    <R : (Any..Any?)> -> (java.util.LinkedList<(Function..Function?)>..java.util.LinkedList<(Function..Function?)>?)
 
 'listOf' @ [87:13] ==> public fun <T> listOf(element: Function): List<Function> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

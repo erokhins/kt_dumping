@@ -36,10 +36,10 @@ Inferred types:
 
 'version' @ [40:103] ==> value-parameter version: Int defined in org.jetbrains.kotlin.preprocessor.profileEvaluators.<anonymous>[ValueParameterDescriptorImpl]
 
-'to' @ [40:133] ==> public infix fun <A, B> String.to(that: () -> Evaluator): Pair<String, () -> Evaluator> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [40:133] ==> public infix fun <A, B> String.to(that: () -> JsPlatformEvaluator): Pair<String, () -> JsPlatformEvaluator> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> Function0<Evaluator>
+    <B> -> Function0<JsPlatformEvaluator>
 
 'JsPlatformEvaluator' @ [40:143] ==> public constructor JsPlatformEvaluator(ecmaScriptVersion: Int = ...) defined in org.jetbrains.kotlin.preprocessor.JsPlatformEvaluator[ClassConstructorDescriptorImpl]
 
@@ -91,7 +91,7 @@ Inferred types:
 
 'createForProduction' @ [55:49] ==> @JvmStatic public final fun createForProduction(parentDisposable: Disposable, configuration: CompilerConfiguration, configFiles: EnvironmentConfigFiles): KotlinCoreEnvironment defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.Companion[DeserializedSimpleFunctionDescriptor]
 
-'Disposable' @ [55:69] ==> public fun Disposable(function: () -> Unit): Disposable defined in com.intellij.openapi[SimpleFunctionDescriptorImpl]
+'Disposable' @ [55:69] ==> public fun Disposable(function: () -> Unit): Disposable defined in com.intellij.openapi[SamConstructorDescriptorImpl]
 
 'configuration' @ [55:86] ==> val configuration: CompilerConfiguration defined in org.jetbrains.kotlin.preprocessor.Preprocessor.<init>[LocalVariableDescriptor]
 
@@ -115,7 +115,7 @@ Inferred types:
 
 'modifications' @ [66:45] ==> public final val modifications: List<Modification> defined in org.jetbrains.kotlin.preprocessor.Preprocessor.FileProcessingResult.Modify[PropertyDescriptorImpl]
 
-'applyTo' @ [66:59] ==> public fun List<Modification>.applyTo(sourceText: String): String defined in org.jetbrains.kotlin.preprocessor[SimpleFunctionDescriptorImpl]
+'applyTo' @ [66:59] ==> public fun List<Modification>.applyTo(sourceText: String): String defined in org.jetbrains.kotlin.preprocessor in file Modifications.kt[SimpleFunctionDescriptorImpl]
 
 'sourceText' @ [66:67] ==> public final val sourceText: String defined in org.jetbrains.kotlin.preprocessor.Preprocessor.FileProcessingResult.Modify[PropertyDescriptorImpl]
 
@@ -127,11 +127,11 @@ Inferred types:
 
 'java' @ [71:47] ==> public val <T> KClass<out Preprocessor.FileProcessingResult>.java: Class<out Preprocessor.FileProcessingResult> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> FileProcessingResult
+    <T> -> Captured(out FileProcessingResult)
 
 'simpleName' @ [71:52] ==> public final val <T : (Any..Any?)> Class<out Preprocessor.FileProcessingResult>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FileProcessingResult
+    <T : (Any..Any?)> -> Captured(out FileProcessingResult)
 
 'processDirectorySingleEvaluator' @ [75:9] ==> private final fun processDirectorySingleEvaluator(sourceRoot: File, targetRoot: File, evaluator: Evaluator): Unit defined in org.jetbrains.kotlin.preprocessor.Preprocessor[SimpleFunctionDescriptorImpl]
 
@@ -173,7 +173,7 @@ Inferred types:
 
 'psiFile' @ [85:31] ==> val psiFile: KtFile defined in org.jetbrains.kotlin.preprocessor.Preprocessor.processFileSingleEvaluator[LocalVariableDescriptor]
 
-'parseConditionalAnnotations' @ [85:39] ==> public fun KtAnnotated.parseConditionalAnnotations(): List<Conditional> defined in org.jetbrains.kotlin.preprocessor[SimpleFunctionDescriptorImpl]
+'parseConditionalAnnotations' @ [85:39] ==> public fun KtAnnotated.parseConditionalAnnotations(): List<Conditional> defined in org.jetbrains.kotlin.preprocessor in file Conditional.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [86:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -270,7 +270,7 @@ Inferred types:
 
 'sourceFile' @ [112:30] ==> val sourceFile: (File..File?) defined in org.jetbrains.kotlin.preprocessor.Preprocessor.processDirectorySingleEvaluator[LocalVariableDescriptor]
 
-'makeRelativeTo' @ [112:41] ==> public fun File.makeRelativeTo(from: File, to: File): File defined in org.jetbrains.kotlin.preprocessor[SimpleFunctionDescriptorImpl]
+'makeRelativeTo' @ [112:41] ==> public fun File.makeRelativeTo(from: File, to: File): File defined in org.jetbrains.kotlin.preprocessor in file Preprocessor.kt[SimpleFunctionDescriptorImpl]
 
 'sourceRoot' @ [112:56] ==> value-parameter sourceRoot: File defined in org.jetbrains.kotlin.preprocessor.Preprocessor.processDirectorySingleEvaluator[ValueParameterDescriptorImpl]
 
@@ -351,7 +351,7 @@ Inferred types:
 
 'sourceDir' @ [132:29] ==> val sourceDir: (File..File?) defined in org.jetbrains.kotlin.preprocessor.Preprocessor.processDirectorySingleEvaluator[LocalVariableDescriptor]
 
-'makeRelativeTo' @ [132:39] ==> public fun File.makeRelativeTo(from: File, to: File): File defined in org.jetbrains.kotlin.preprocessor[SimpleFunctionDescriptorImpl]
+'makeRelativeTo' @ [132:39] ==> public fun File.makeRelativeTo(from: File, to: File): File defined in org.jetbrains.kotlin.preprocessor in file Preprocessor.kt[SimpleFunctionDescriptorImpl]
 
 'sourceRoot' @ [132:54] ==> value-parameter sourceRoot: File defined in org.jetbrains.kotlin.preprocessor.Preprocessor.processDirectorySingleEvaluator[ValueParameterDescriptorImpl]
 

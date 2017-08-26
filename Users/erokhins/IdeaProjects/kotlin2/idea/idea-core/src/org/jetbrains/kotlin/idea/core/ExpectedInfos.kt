@@ -116,8 +116,6 @@ Inferred types:
 
 'None' @ [111:46] ==> public object None : ByTypeFilter defined in org.jetbrains.kotlin.idea.core.ByTypeFilter[FakeCallableDescriptorForObject]
 
-'ItemOptions' @ [111:73] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ItemOptions[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [111:85] ==> public final val DEFAULT: ItemOptions defined in org.jetbrains.kotlin.idea.core.ItemOptions.Companion[PropertyDescriptorImpl]
 
 'argumentData' @ [111:94] ==> value-parameter argumentData: ArgumentPositionData defined in org.jetbrains.kotlin.idea.core.ExpectedInfo.Companion.createForNamedArgumentExpected[ValueParameterDescriptorImpl]
@@ -406,6 +404,8 @@ Inferred types:
 Inferred types:
     <T> -> ExpectedInfo
 
+'makesSenseToUseOuterCallExpectedType' @ [218:65] ==> local final fun makesSenseToUseOuterCallExpectedType(info: ExpectedInfo): Boolean defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.calculateForArgument[SimpleFunctionDescriptorImpl]
+
 '?:' @ [219:34] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtExpression?, right: KtExpression): KtExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtExpression
@@ -553,7 +553,7 @@ Inferred types:
 
 'truncatedCall' @ [253:26] ==> val truncatedCall: <no name provided> defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.calculateForArgument[LocalVariableDescriptor]
 
-'resolveCandidates' @ [253:40] ==> public fun Call.resolveCandidates(bindingContext: BindingContext, resolutionFacade: ResolutionFacade, expectedType: KotlinType = ..., filterOutWrongReceiver: Boolean = ..., filterOutByVisibility: Boolean = ...): Collection<ResolvedCall<FunctionDescriptor>> defined in org.jetbrains.kotlin.idea.core[SimpleFunctionDescriptorImpl]
+'resolveCandidates' @ [253:40] ==> public fun Call.resolveCandidates(bindingContext: BindingContext, resolutionFacade: ResolutionFacade, expectedType: KotlinType = ..., filterOutWrongReceiver: Boolean = ..., filterOutByVisibility: Boolean = ...): Collection<ResolvedCall<FunctionDescriptor>> defined in org.jetbrains.kotlin.idea.core in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [253:58] ==> private final val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.core.ExpectedInfos[PropertyDescriptorImpl]
 
@@ -631,7 +631,7 @@ Inferred types:
 
 'call' @ [286:35] ==> value-parameter call: Call defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.addExpectedInfoForCandidate[ValueParameterDescriptorImpl]
 
-'mapArgumentsToParameters' @ [286:40] ==> public fun Call.mapArgumentsToParameters(targetDescriptor: CallableDescriptor): Map<ValueArgument, ValueParameterDescriptor> defined in org.jetbrains.kotlin.idea.core[SimpleFunctionDescriptorImpl]
+'mapArgumentsToParameters' @ [286:40] ==> public fun Call.mapArgumentsToParameters(targetDescriptor: CallableDescriptor): Map<ValueArgument, ValueParameterDescriptor> defined in org.jetbrains.kotlin.idea.core in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [286:65] ==> var descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.addExpectedInfoForCandidate[LocalVariableDescriptor]
 
@@ -854,8 +854,6 @@ Inferred types:
 
 'add' @ [329:17] ==> public abstract fun add(element: ExpectedInfo): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
-'ExpectedInfo' @ [329:21] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ExpectedInfo[FakeCallableDescriptorForObject]
-
 'createForNamedArgumentExpected' @ [329:34] ==> public final fun createForNamedArgumentExpected(argumentData: ArgumentPositionData): ExpectedInfo defined in org.jetbrains.kotlin.idea.core.ExpectedInfo.Companion[SimpleFunctionDescriptorImpl]
 
 'argumentPositionData' @ [329:65] ==> val argumentPositionData: ArgumentPositionData defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.addExpectedInfoForCandidate[LocalVariableDescriptor]
@@ -953,6 +951,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
 
+'needCommaForParameter' @ [348:72] ==> local final fun needCommaForParameter(parameter: ValueParameterDescriptor): Boolean defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.addExpectedInfoForCandidate[SimpleFunctionDescriptorImpl]
+
 'COMMA' @ [348:103] ==> enum entry COMMA defined in org.jetbrains.kotlin.idea.core.Tail[FakeCallableDescriptorForObject]
 
 'namedArgumentTail' @ [353:13] ==> private final fun namedArgumentTail(argumentToParameter: Map<ValueArgument, ValueParameterDescriptor>, argumentName: Name, descriptor: FunctionDescriptor): Tail? defined in org.jetbrains.kotlin.idea.core.ExpectedInfos[SimpleFunctionDescriptorImpl]
@@ -1026,8 +1026,6 @@ Inferred types:
 
 'add' @ [368:17] ==> public abstract fun add(element: ExpectedInfo): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
-'ExpectedInfo' @ [368:21] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ExpectedInfo[FakeCallableDescriptorForObject]
-
 'createForArgument' @ [368:34] ==> public final fun createForArgument(type: KotlinType, expectedName: String?, tail: Tail?, argumentData: ArgumentPositionData, itemOptions: ItemOptions = ...): ExpectedInfo defined in org.jetbrains.kotlin.idea.core.ExpectedInfo.Companion[SimpleFunctionDescriptorImpl]
 
 'varargElementType' @ [368:52] ==> val varargElementType: KotlinType? defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.addExpectedInfoForCandidate[LocalVariableDescriptor]
@@ -1048,17 +1046,11 @@ Inferred types:
 
 'alreadyHasStar' @ [371:36] ==> val alreadyHasStar: Boolean defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.addExpectedInfoForCandidate[LocalVariableDescriptor]
 
-'ItemOptions' @ [371:52] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ItemOptions[FakeCallableDescriptorForObject]
-
 'STAR_PREFIX' @ [371:64] ==> public final val STAR_PREFIX: ItemOptions defined in org.jetbrains.kotlin.idea.core.ItemOptions.Companion[PropertyDescriptorImpl]
-
-'ItemOptions' @ [371:81] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ItemOptions[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [371:93] ==> public final val DEFAULT: ItemOptions defined in org.jetbrains.kotlin.idea.core.ItemOptions.Companion[PropertyDescriptorImpl]
 
 'add' @ [372:13] ==> public abstract fun add(element: ExpectedInfo): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
-
-'ExpectedInfo' @ [372:17] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ExpectedInfo[FakeCallableDescriptorForObject]
 
 'createForArgument' @ [372:30] ==> public final fun createForArgument(type: KotlinType, expectedName: String?, tail: Tail?, argumentData: ArgumentPositionData, itemOptions: ItemOptions = ...): ExpectedInfo defined in org.jetbrains.kotlin.idea.core.ExpectedInfo.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1093,8 +1085,6 @@ Inferred types:
 
 'add' @ [379:21] ==> public abstract fun add(element: ExpectedInfo): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
-'ExpectedInfo' @ [379:25] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ExpectedInfo[FakeCallableDescriptorForObject]
-
 'createForArgument' @ [379:38] ==> public final fun createForArgument(type: KotlinType, expectedName: String?, tail: Tail?, argumentData: ArgumentPositionData, itemOptions: ItemOptions = ...): ExpectedInfo defined in org.jetbrains.kotlin.idea.core.ExpectedInfo.Companion[SimpleFunctionDescriptorImpl]
 
 'parameterType' @ [379:56] ==> var parameterType: KotlinType? defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.addExpectedInfoForCandidate[LocalVariableDescriptor]
@@ -1104,8 +1094,6 @@ Inferred types:
 'argumentPositionData' @ [379:91] ==> val argumentPositionData: ArgumentPositionData defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.addExpectedInfoForCandidate[LocalVariableDescriptor]
 
 'add' @ [383:17] ==> public abstract fun add(element: ExpectedInfo): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
-
-'ExpectedInfo' @ [383:21] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ExpectedInfo[FakeCallableDescriptorForObject]
 
 'createForArgument' @ [383:34] ==> public final fun createForArgument(type: KotlinType, expectedName: String?, tail: Tail?, argumentData: ArgumentPositionData, itemOptions: ItemOptions = ...): ExpectedInfo defined in org.jetbrains.kotlin.idea.core.ExpectedInfo.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1970,8 +1958,6 @@ Inferred types:
 
 'descriptor' @ [565:22] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.functionReturnValueExpectedInfo[ValueParameterDescriptorImpl]
 
-'ExpectedInfo' @ [567:17] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ExpectedInfo[FakeCallableDescriptorForObject]
-
 'createForReturnValue' @ [567:30] ==> public final fun createForReturnValue(type: KotlinType?, callable: CallableDescriptor): ExpectedInfo defined in org.jetbrains.kotlin.idea.core.ExpectedInfo.Companion[SimpleFunctionDescriptorImpl]
 
 'returnTypeToUse' @ [567:51] ==> private final fun returnTypeToUse(descriptor: CallableDescriptor, hasExplicitReturnType: Boolean): KotlinType? defined in org.jetbrains.kotlin.idea.core.ExpectedInfos[SimpleFunctionDescriptorImpl]
@@ -1985,8 +1971,6 @@ Inferred types:
 'descriptor' @ [571:32] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.functionReturnValueExpectedInfo[ValueParameterDescriptorImpl]
 
 'correspondingProperty' @ [571:43] ==> public final val PropertyGetterDescriptor.correspondingProperty: PropertyDescriptor[MyPropertyDescriptor]
-
-'ExpectedInfo' @ [572:17] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ExpectedInfo[FakeCallableDescriptorForObject]
 
 'createForReturnValue' @ [572:30] ==> public final fun createForReturnValue(type: KotlinType?, callable: CallableDescriptor): ExpectedInfo defined in org.jetbrains.kotlin.idea.core.ExpectedInfo.Companion[SimpleFunctionDescriptorImpl]
 
@@ -2363,9 +2347,9 @@ Inferred types:
 
 'freeParameters' @ [654:88] ==> public final val freeParameters: Set<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.util.FuzzyType[DeserializedPropertyDescriptor]
 
-'lazy' @ [657:71] ==> public fun <T> lazy(initializer: () -> ArrayList<FuzzyType>): Lazy<ArrayList<FuzzyType>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [657:71] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ArrayList<FuzzyType>
+    <T> -> T
 
 'ArrayList' @ [658:30] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -2513,8 +2497,6 @@ Inferred types:
 'it' @ [697:77] ==> value-parameter it: ExpectedInfo defined in org.jetbrains.kotlin.idea.core.ExpectedInfos.copyWithNoAdditionalData.<anonymous>[ValueParameterDescriptorImpl]
 
 'copy' @ [697:80] ==> public final fun copy(filter: ByTypeFilter = ..., expectedName: String? = ..., tail: Tail? = ..., itemOptions: ItemOptions = ..., additionalData: ExpectedInfo.AdditionalData? = ...): ExpectedInfo defined in org.jetbrains.kotlin.idea.core.ExpectedInfo[SimpleFunctionDescriptorImpl]
-
-'ItemOptions' @ [697:122] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ItemOptions[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [697:134] ==> public final val DEFAULT: ItemOptions defined in org.jetbrains.kotlin.idea.core.ItemOptions.Companion[PropertyDescriptorImpl]
 

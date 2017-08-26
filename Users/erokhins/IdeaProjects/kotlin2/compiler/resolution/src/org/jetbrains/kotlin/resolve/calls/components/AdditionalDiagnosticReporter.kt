@@ -169,7 +169,7 @@ Inferred types:
 
 'argument' @ [82:90] ==> val argument: KotlinCallArgument defined in org.jetbrains.kotlin.resolve.calls.components.AdditionalDiagnosticReporter.reportSmartCasts[LocalVariableDescriptor]
 
-'getExpectedType' @ [82:99] ==> internal fun KotlinCallArgument.getExpectedType(parameter: ParameterDescriptor): UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components[SimpleFunctionDescriptorImpl]
+'getExpectedType' @ [82:99] ==> internal fun KotlinCallArgument.getExpectedType(parameter: ParameterDescriptor): UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components in file ArgumentsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'parameter' @ [82:115] ==> val parameter: (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.resolve.calls.components.AdditionalDiagnosticReporter.reportSmartCasts[LocalVariableDescriptor]
 

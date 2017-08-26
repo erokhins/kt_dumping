@@ -22,7 +22,7 @@ Inferred types:
 
 'java' @ [55:58] ==> public val <T> KClass<out KotlinFieldBreakpointType>.java: Class<out KotlinFieldBreakpointType> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinFieldBreakpointType
+    <T> -> Captured(out KotlinFieldBreakpointType)
 
 'KotlinPropertyBreakpointProperties' @ [61:16] ==> public constructor KotlinPropertyBreakpointProperties(myFieldName: String = ..., myClassName: String = ...) defined in org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinPropertyBreakpointProperties[ClassConstructorDescriptorImpl]
 
@@ -196,9 +196,9 @@ Inferred types:
 
 'textOffset' @ [120:52] ==> public final val KtDeclaration.textOffset: Int[MyPropertyDescriptor]
 
-'runWriteAction' @ [121:16] ==> public fun <T> runWriteAction(action: () -> XLineBreakpoint<KotlinPropertyBreakpointProperties>): XLineBreakpoint<KotlinPropertyBreakpointProperties> defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
+'runWriteAction' @ [121:16] ==> public fun <T> runWriteAction(action: () -> XLineBreakpoint<(KotlinPropertyBreakpointProperties..KotlinPropertyBreakpointProperties?)>): XLineBreakpoint<(KotlinPropertyBreakpointProperties..KotlinPropertyBreakpointProperties?)> defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> XLineBreakpoint<KotlinPropertyBreakpointProperties>
+    <T> -> XLineBreakpoint<(org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinPropertyBreakpointProperties..org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinPropertyBreakpointProperties?)>
 
 'getInstance' @ [122:30] ==> public open fun getInstance(@NotNull p0: Project): (XDebuggerManager..XDebuggerManager?) defined in com.intellij.xdebugger.XDebuggerManager[JavaMethodDescriptor]
 
@@ -208,7 +208,7 @@ Inferred types:
 
 'addLineBreakpoint' @ [122:69] ==> @NotNull public abstract fun <T : raw (XBreakpointProperties<(Any..Any?)>..XBreakpointProperties<*>?)> addLineBreakpoint(p0: (XLineBreakpointType<(KotlinPropertyBreakpointProperties..KotlinPropertyBreakpointProperties?)>..XLineBreakpointType<(KotlinPropertyBreakpointProperties..KotlinPropertyBreakpointProperties?)>?), @NotNull p1: String, p2: Int, @Nullable p3: KotlinPropertyBreakpointProperties?): XLineBreakpoint<(KotlinPropertyBreakpointProperties..KotlinPropertyBreakpointProperties?)> defined in com.intellij.xdebugger.breakpoints.XBreakpointManager[JavaMethodDescriptor]
 Inferred types:
-    <T : raw (XBreakpointProperties<(Any..Any?)>..XBreakpointProperties<*>?)> -> KotlinPropertyBreakpointProperties
+    <T : raw (XBreakpointProperties<(Any..Any?)>..XBreakpointProperties<*>?)> -> (org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinPropertyBreakpointProperties..org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinPropertyBreakpointProperties?)
 
 'this' @ [123:21] ==> <this> defined in org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinFieldBreakpointType[LazyClassReceiverParameterDescriptor]
 
@@ -307,8 +307,8 @@ Inferred types:
 
 'KotlinBreakpointFiltersPanel' @ [174:16] ==> public constructor KotlinBreakpointFiltersPanel<T : (KotlinPropertyBreakpointProperties..KotlinPropertyBreakpointProperties?), B : (XBreakpoint<(KotlinPropertyBreakpointProperties..KotlinPropertyBreakpointProperties?)>..XBreakpoint<(KotlinPropertyBreakpointProperties..KotlinPropertyBreakpointProperties?)>?)>(project: (Project..Project?)) defined in org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinBreakpointFiltersPanel[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (KotlinPropertyBreakpointProperties..KotlinPropertyBreakpointProperties?)> -> KotlinPropertyBreakpointProperties
-    <B : (XBreakpoint<(T..T?)>..XBreakpoint<(T..T?)>?)> -> XLineBreakpoint<KotlinPropertyBreakpointProperties>
+    <T : (KotlinPropertyBreakpointProperties..KotlinPropertyBreakpointProperties?)> -> (org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinPropertyBreakpointProperties..org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinPropertyBreakpointProperties?)
+    <B : (XBreakpoint<(T..T?)>..XBreakpoint<(T..T?)>?)> -> (com.intellij.xdebugger.breakpoints.XLineBreakpoint<org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinPropertyBreakpointProperties>..com.intellij.xdebugger.breakpoints.XLineBreakpoint<org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinPropertyBreakpointProperties>?)
 
 'project' @ [174:45] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinFieldBreakpointType.createCustomRightPropertiesPanel[ValueParameterDescriptorImpl]
 

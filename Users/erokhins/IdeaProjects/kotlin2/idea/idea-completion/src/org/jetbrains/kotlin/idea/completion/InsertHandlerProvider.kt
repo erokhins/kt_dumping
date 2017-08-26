@@ -1,6 +1,6 @@
-'lazy' @ [38:34] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> Collection<ExpectedInfo>): Lazy<Collection<ExpectedInfo>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [38:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Collection<ExpectedInfo>
+    <T> -> T
 
 'NONE' @ [38:60] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -271,6 +271,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
+'addPotentiallyInferred' @ [101:87] ==> local final fun addPotentiallyInferred(type: KotlinType): Unit defined in org.jetbrains.kotlin.idea.completion.InsertHandlerProvider.needTypeArguments[SimpleFunctionDescriptorImpl]
+
 'type' @ [104:17] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.idea.completion.InsertHandlerProvider.needTypeArguments.addPotentiallyInferred[ValueParameterDescriptorImpl]
 
 'isFunctionType' @ [104:22] ==> public val KotlinType.isFunctionType: Boolean defined in org.jetbrains.kotlin.builtins[DeserializedPropertyDescriptor]
@@ -311,6 +313,8 @@ Inferred types:
 Inferred types:
     <T> -> KotlinType
     <R> -> Unit
+
+'addPotentiallyInferred' @ [117:66] ==> local final fun addPotentiallyInferred(type: KotlinType): Unit defined in org.jetbrains.kotlin.idea.completion.InsertHandlerProvider.needTypeArguments[SimpleFunctionDescriptorImpl]
 
 'originalFunction' @ [118:9] ==> val originalFunction: FunctionDescriptor defined in org.jetbrains.kotlin.idea.completion.InsertHandlerProvider.needTypeArguments[LocalVariableDescriptor]
 

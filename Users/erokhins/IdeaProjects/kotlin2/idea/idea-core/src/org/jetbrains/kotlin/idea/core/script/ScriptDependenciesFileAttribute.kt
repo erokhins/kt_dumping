@@ -88,11 +88,11 @@ Inferred types:
 
 'output' @ [65:18] ==> value-parameter output: DataOutput defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesFileAttribute.writeDependencies[ValueParameterDescriptorImpl]
 
-'writeFileList' @ [66:17] ==> private fun DataOutput.writeFileList(iterable: Iterable<File>): Unit defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'writeFileList' @ [66:17] ==> private fun DataOutput.writeFileList(iterable: Iterable<File>): Unit defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'classpath' @ [66:31] ==> public final val classpath: List<File> defined in kotlin.script.experimental.dependencies.ScriptDependencies[DeserializedPropertyDescriptor]
 
-'writeStringList' @ [67:17] ==> private fun DataOutput.writeStringList(iterable: Iterable<String>): Unit defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'writeStringList' @ [67:17] ==> private fun DataOutput.writeStringList(iterable: Iterable<String>): Unit defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'imports' @ [67:33] ==> public final val imports: List<String> defined in kotlin.script.experimental.dependencies.ScriptDependencies[DeserializedPropertyDescriptor]
 
@@ -102,11 +102,13 @@ Inferred types:
 
 'javaHome' @ [68:31] ==> public final val javaHome: File? defined in kotlin.script.experimental.dependencies.ScriptDependencies[DeserializedPropertyDescriptor]
 
-'writeFileList' @ [69:17] ==> private fun DataOutput.writeFileList(iterable: Iterable<File>): Unit defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'writeFile' @ [68:53] ==> private fun DataOutput.writeFile(it: File): Unit defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
+
+'writeFileList' @ [69:17] ==> private fun DataOutput.writeFileList(iterable: Iterable<File>): Unit defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'scripts' @ [69:31] ==> public final val scripts: List<File> defined in kotlin.script.experimental.dependencies.ScriptDependencies[DeserializedPropertyDescriptor]
 
-'writeFileList' @ [70:17] ==> private fun DataOutput.writeFileList(iterable: Iterable<File>): Unit defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'writeFileList' @ [70:17] ==> private fun DataOutput.writeFileList(iterable: Iterable<File>): Unit defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'sources' @ [70:31] ==> public final val sources: List<File> defined in kotlin.script.experimental.dependencies.ScriptDependencies[DeserializedPropertyDescriptor]
 
@@ -119,33 +121,35 @@ Inferred types:
 
 'ScriptDependencies' @ [78:20] ==> public constructor ScriptDependencies(javaHome: File? = ..., classpath: List<File> = ..., imports: List<String> = ..., sources: List<File> = ..., scripts: List<File> = ...) defined in kotlin.script.experimental.dependencies.ScriptDependencies[DeserializedClassConstructorDescriptor]
 
-'readFileList' @ [79:33] ==> private fun DataInput.readFileList(): (MutableList<(File..File?)>..List<(File..File?)>) defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'readFileList' @ [79:33] ==> private fun DataInput.readFileList(): (MutableList<(File..File?)>..List<(File..File?)>) defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
-'readStringList' @ [80:31] ==> private fun DataInput.readStringList(): List<String> defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'readStringList' @ [80:31] ==> private fun DataInput.readStringList(): List<String> defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'readNullable' @ [81:32] ==> private fun <T : Any> DataInput.readNullable(readT: DataInput.() -> File): File? defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : Any> -> File
 
-'readFileList' @ [82:31] ==> private fun DataInput.readFileList(): (MutableList<(File..File?)>..List<(File..File?)>) defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'readFile' @ [81:56] ==> private fun DataInput.readFile(): File defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
-'readFileList' @ [83:31] ==> private fun DataInput.readFileList(): (MutableList<(File..File?)>..List<(File..File?)>) defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'readFileList' @ [82:31] ==> private fun DataInput.readFileList(): (MutableList<(File..File?)>..List<(File..File?)>) defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
+
+'readFileList' @ [83:31] ==> private fun DataInput.readFileList(): (MutableList<(File..File?)>..List<(File..File?)>) defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'readSeq' @ [89:56] ==> @NotNull public final fun <T : (Any..Any?)> readSeq(@NotNull p0: DataInput, @NotNull p1: () -> (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>) defined in com.intellij.util.io.DataInputOutputUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'this' @ [89:64] ==> <this> defined in org.jetbrains.kotlin.idea.core.script.readStringList[ReceiverParameterDescriptorImpl]
 
-'readString' @ [89:72] ==> private fun DataInput.readString(): (String..String?) defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'readString' @ [89:72] ==> private fun DataInput.readString(): (String..String?) defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'readSeq' @ [90:40] ==> @NotNull public final fun <T : (Any..Any?)> readSeq(@NotNull p0: DataInput, @NotNull p1: () -> (File..File?)): (MutableList<(File..File?)>..List<(File..File?)>) defined in com.intellij.util.io.DataInputOutputUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'this' @ [90:48] ==> <this> defined in org.jetbrains.kotlin.idea.core.script.readFileList[ReceiverParameterDescriptorImpl]
 
-'readFile' @ [90:56] ==> private fun DataInput.readFile(): File defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'readFile' @ [90:56] ==> private fun DataInput.readFile(): File defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'readUTF' @ [91:38] ==> public open fun readUTF(@NotNull p0: DataInput): (String..String?) defined in com.intellij.util.io.IOUtil[JavaMethodDescriptor]
 
@@ -166,7 +170,7 @@ Inferred types:
 
 'writeSeq' @ [94:66] ==> public final fun <T : (Any..Any?)> writeSeq(@NotNull p0: DataOutput, @NotNull p1: (MutableCollection<(File..File?)>..Collection<(File..File?)>), @NotNull p2: ((File..File?)) -> Unit): Unit defined in com.intellij.util.io.DataInputOutputUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'this' @ [94:75] ==> <this> defined in org.jetbrains.kotlin.idea.core.script.writeFileList[ReceiverParameterDescriptorImpl]
 
@@ -176,11 +180,11 @@ Inferred types:
 Inferred types:
     <T> -> File
 
-'writeFile' @ [94:102] ==> private fun DataOutput.writeFile(it: File): Unit defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'writeFile' @ [94:102] ==> private fun DataOutput.writeFile(it: File): Unit defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [94:112] ==> value-parameter it: (File..File?) defined in org.jetbrains.kotlin.idea.core.script.writeFileList.<anonymous>[ValueParameterDescriptorImpl]
 
-'writeString' @ [95:46] ==> private fun DataOutput.writeString(string: String): Unit defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'writeString' @ [95:46] ==> private fun DataOutput.writeString(string: String): Unit defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [95:58] ==> value-parameter it: File defined in org.jetbrains.kotlin.idea.core.script.writeFile[ValueParameterDescriptorImpl]
 
@@ -194,7 +198,7 @@ Inferred types:
 
 'writeSeq' @ [97:70] ==> public final fun <T : (Any..Any?)> writeSeq(@NotNull p0: DataOutput, @NotNull p1: (MutableCollection<(String..String?)>..Collection<(String..String?)>), @NotNull p2: ((String..String?)) -> Unit): Unit defined in com.intellij.util.io.DataInputOutputUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'this' @ [97:79] ==> <this> defined in org.jetbrains.kotlin.idea.core.script.writeStringList[ReceiverParameterDescriptorImpl]
 
@@ -204,7 +208,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'writeString' @ [97:106] ==> private fun DataOutput.writeString(string: String): Unit defined in org.jetbrains.kotlin.idea.core.script[SimpleFunctionDescriptorImpl]
+'writeString' @ [97:106] ==> private fun DataOutput.writeString(string: String): Unit defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [97:118] ==> value-parameter it: (String..String?) defined in org.jetbrains.kotlin.idea.core.script.writeStringList.<anonymous>[ValueParameterDescriptorImpl]
 

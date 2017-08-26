@@ -215,6 +215,8 @@ Inferred types:
     <T> -> File
     <R> -> (kotlin.String..kotlin.String?)
 
+'getAbsolutePath' @ [88:35] ==> public open fun getAbsolutePath(): (String..String?) defined in java.io.File[JavaMethodDescriptor]
+
 'listOf' @ [88:54] ==> public fun <T> listOf(element: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String

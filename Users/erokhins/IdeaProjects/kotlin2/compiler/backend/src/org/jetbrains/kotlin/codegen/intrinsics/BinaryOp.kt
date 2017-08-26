@@ -83,7 +83,7 @@ Inferred types:
 
 'returnType' @ [48:64] ==> val returnType: Type defined in org.jetbrains.kotlin.codegen.intrinsics.BinaryOp.toCallable[LocalVariableDescriptor]
 
-'createBinaryIntrinsicCallable' @ [51:16] ==> public fun createBinaryIntrinsicCallable(returnType: Type, valueParameterType: Type, thisType: Type? = ..., receiverType: Type? = ..., lambda: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics[SimpleFunctionDescriptorImpl]
+'createBinaryIntrinsicCallable' @ [51:16] ==> public fun createBinaryIntrinsicCallable(returnType: Type, valueParameterType: Type, thisType: Type? = ..., receiverType: Type? = ..., lambda: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics in file IntrinsicCallable.kt[SimpleFunctionDescriptorImpl]
 
 'returnType' @ [51:46] ==> val returnType: Type defined in org.jetbrains.kotlin.codegen.intrinsics.BinaryOp.toCallable[LocalVariableDescriptor]
 

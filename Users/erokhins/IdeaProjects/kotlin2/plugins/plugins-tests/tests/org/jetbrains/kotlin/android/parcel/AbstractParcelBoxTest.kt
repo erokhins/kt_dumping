@@ -30,11 +30,11 @@ Inferred types:
 
 'java' @ [44:63] ==> public val <T> KClass<out AbstractParcelBoxTest>.java: Class<out AbstractParcelBoxTest> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AbstractParcelBoxTest
+    <T> -> Captured(out AbstractParcelBoxTest)
 
 'classLoader' @ [44:68] ==> public final val <T : (Any..Any?)> Class<out AbstractParcelBoxTest>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AbstractParcelBoxTest
+    <T : (Any..Any?)> -> Captured(out AbstractParcelBoxTest)
 
 'classFileFactory' @ [46:35] ==> protected/*protected and package*/ final var classFileFactory: (ClassFileFactory..ClassFileFactory?) defined in org.jetbrains.kotlin.android.parcel.AbstractParcelBoxTest[JavaPropertyDescriptor]
 

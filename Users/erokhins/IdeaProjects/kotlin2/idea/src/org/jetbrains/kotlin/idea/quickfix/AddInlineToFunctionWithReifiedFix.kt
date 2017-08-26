@@ -14,7 +14,7 @@
 
 'element' @ [30:28] ==> val element: SimpleDiagnostic<(PsiElement..PsiElement?)> defined in org.jetbrains.kotlin.idea.quickfix.AddInlineToFunctionWithReifiedFix.Factory.createAction[LocalVariableDescriptor]
 
-'psiElement' @ [30:36] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(PsiElement..PsiElement?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [30:36] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(PsiElement..PsiElement?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 

@@ -450,11 +450,11 @@ Inferred types:
 
 'filter' @ [227:45] ==> @NotNull @Contract public final fun <T : (Any..Any?)> filter(@NotNull p0: (MutableCollection<out (CheckerTestUtil.ActualDiagnostic..CheckerTestUtil.ActualDiagnostic?)>..Collection<(CheckerTestUtil.ActualDiagnostic..CheckerTestUtil.ActualDiagnostic?)>), @NotNull p1: ((CheckerTestUtil.ActualDiagnostic..CheckerTestUtil.ActualDiagnostic?)) -> Boolean): (MutableList<(CheckerTestUtil.ActualDiagnostic..CheckerTestUtil.ActualDiagnostic?)>..List<(CheckerTestUtil.ActualDiagnostic..CheckerTestUtil.ActualDiagnostic?)>) defined in com.intellij.util.containers.ContainerUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ActualDiagnostic
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.checkers.CheckerTestUtil.ActualDiagnostic..org.jetbrains.kotlin.checkers.CheckerTestUtil.ActualDiagnostic?)
 
-'+' @ [228:21] ==> public operator fun <T> Collection<CheckerTestUtil.ActualDiagnostic>.plus(elements: Iterable<CheckerTestUtil.ActualDiagnostic>): List<CheckerTestUtil.ActualDiagnostic> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'+' @ [228:21] ==> public operator fun <T> Collection<(CheckerTestUtil.ActualDiagnostic..CheckerTestUtil.ActualDiagnostic?)>.plus(elements: Iterable<(CheckerTestUtil.ActualDiagnostic..CheckerTestUtil.ActualDiagnostic?)>): List<(CheckerTestUtil.ActualDiagnostic..CheckerTestUtil.ActualDiagnostic?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ActualDiagnostic
+    <T> -> (org.jetbrains.kotlin.checkers.CheckerTestUtil.ActualDiagnostic..org.jetbrains.kotlin.checkers.CheckerTestUtil.ActualDiagnostic?)
 
 'getDiagnosticsIncludingSyntaxErrors' @ [228:37] ==> @NotNull public open fun getDiagnosticsIncludingSyntaxErrors(@NotNull p0: BindingContext, @NotNull p1: (MutableList<(Pair<(MultiTargetPlatform..MultiTargetPlatform?), (BindingContext..BindingContext?)>..Pair<(MultiTargetPlatform..MultiTargetPlatform?), (BindingContext..BindingContext?)>?)>..List<(Pair<(MultiTargetPlatform..MultiTargetPlatform?), (BindingContext..BindingContext?)>..Pair<(MultiTargetPlatform..MultiTargetPlatform?), (BindingContext..BindingContext?)>?)>), @NotNull p2: PsiElement, p3: Boolean, @Nullable p4: (MutableList<(DeclarationDescriptor..DeclarationDescriptor?)>?..List<(DeclarationDescriptor..DeclarationDescriptor?)>?)): (MutableList<(CheckerTestUtil.ActualDiagnostic..CheckerTestUtil.ActualDiagnostic?)>..List<(CheckerTestUtil.ActualDiagnostic..CheckerTestUtil.ActualDiagnostic?)>) defined in org.jetbrains.kotlin.checkers.CheckerTestUtil[JavaMethodDescriptor]
 
@@ -584,7 +584,7 @@ Inferred types:
 
 'findChildrenOfType' @ [272:44] ==> @NotNull public open fun <T : (PsiElement..PsiElement?)> findChildrenOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<out (KtDeclaration..KtDeclaration?)>): (MutableCollection<(KtDeclaration..KtDeclaration?)>..Collection<(KtDeclaration..KtDeclaration?)>) defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
 'ktFile' @ [272:63] ==> public final val ktFile: KtFile? defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.TestFile[PropertyDescriptorImpl]
 
@@ -660,8 +660,6 @@ Inferred types:
 
 'Coroutines' @ [300:33] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
-'LanguageFeature' @ [300:47] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [300:69] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 '+' @ [307:47] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
@@ -722,13 +720,9 @@ Inferred types:
 
 'apiVersionString' @ [330:35] ==> val apiVersionString: String? defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseLanguageVersionSettings[LocalVariableDescriptor]
 
-'ApiVersion' @ [330:61] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
-
 'parse' @ [330:72] ==> public final fun parse(versionString: String): ApiVersion? defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedSimpleFunctionDescriptor]
 
 'apiVersionString' @ [330:78] ==> val apiVersionString: String? defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseLanguageVersionSettings[LocalVariableDescriptor]
-
-'ApiVersion' @ [330:101] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [330:112] ==> @field:JvmField public final val LATEST_STABLE: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -745,6 +739,8 @@ Inferred types:
 
 'this' @ [333:52] ==> <this> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion[LazyClassReceiverParameterDescriptor]
 
+'collectLanguageFeatureMap' @ [333:58] ==> private final fun collectLanguageFeatureMap(directives: String): Map<LanguageFeature, LanguageFeature.State> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion[SimpleFunctionDescriptorImpl]
+
 'orEmpty' @ [333:85] ==> @InlineOnly public inline fun <K, V> Map<LanguageFeature, LanguageFeature.State>?.orEmpty(): Map<LanguageFeature, LanguageFeature.State> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> LanguageFeature
@@ -755,8 +751,6 @@ Inferred types:
 'languageFeatures' @ [335:58] ==> val languageFeatures: Map<LanguageFeature, LanguageFeature.State> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseLanguageVersionSettings[LocalVariableDescriptor]
 
 'apiVersion' @ [335:76] ==> val apiVersion: ApiVersion defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseLanguageVersionSettings[LocalVariableDescriptor]
-
-'LanguageVersion' @ [335:88] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [335:104] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -798,15 +792,9 @@ Inferred types:
 
 'group' @ [352:42] ==> public open fun group(p0: Int): (String..String?) defined in java.util.regex.Matcher[JavaMethodDescriptor]
 
-'LanguageFeature' @ [353:28] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [353:50] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
-'LanguageFeature' @ [354:28] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'DISABLED' @ [354:50] ==> enum entry DISABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
-
-'LanguageFeature' @ [355:32] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_WARNING' @ [355:54] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -820,7 +808,9 @@ Inferred types:
 
 'group' @ [358:36] ==> public open fun group(p0: Int): (String..String?) defined in java.util.regex.Matcher[JavaMethodDescriptor]
 
-'LanguageFeature' @ [359:31] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
+'?:' @ [359:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: LanguageFeature?, right: LanguageFeature): LanguageFeature[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> LanguageFeature
 
 'fromString' @ [359:47] ==> @JvmStatic public final fun fromString(str: String): LanguageFeature? defined in org.jetbrains.kotlin.config.LanguageFeature.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -865,9 +855,9 @@ Inferred types:
 'if (allowUnderscoreUsage)
                         Condition<Diagnostic> { it.factory.name != "UNDERSCORE_USAGE_WITHOUT_BACKTICKS" }
                     else
-                        Conditions.alwaysTrue()' @ [375:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Condition<Diagnostic>..Condition<Diagnostic>?), elseBranch: (Condition<Diagnostic>..Condition<Diagnostic>?)): (Condition<Diagnostic>..Condition<Diagnostic>?)[SimpleFunctionDescriptorImpl]
+                        Conditions.alwaysTrue()' @ [375:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Condition<Diagnostic>, elseBranch: Condition<Diagnostic>): Condition<Diagnostic>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.intellij.openapi.util.Condition<org.jetbrains.kotlin.diagnostics.Diagnostic>..com.intellij.openapi.util.Condition<org.jetbrains.kotlin.diagnostics.Diagnostic>?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Condition<Diagnostic>
 
 'allowUnderscoreUsage' @ [375:25] ==> value-parameter allowUnderscoreUsage: Boolean defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[ValueParameterDescriptorImpl]
 
@@ -881,11 +871,11 @@ Inferred types:
 
 'name' @ [376:60] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'alwaysTrue' @ [378:36] ==> public open fun <T : (Any..Any?)> alwaysTrue(): (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?) defined in com.intellij.openapi.util.Conditions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Diagnostic
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
 
 'directives' @ [380:17] ==> val directives: String? defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
@@ -895,13 +885,13 @@ Inferred types:
 
 'and' @ [384:39] ==> public open fun <T : (Any..Any?)> and(p0: (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?), p1: (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?)): (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?) defined in com.intellij.openapi.util.Conditions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Diagnostic
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
 
-'initialCondition' @ [384:43] ==> val initialCondition: (Condition<Diagnostic>..Condition<Diagnostic>?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
+'initialCondition' @ [384:43] ==> val initialCondition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
-'Condition' @ [384:61] ==> public fun <T : (Any..Any?)> Condition(function: ((Diagnostic..Diagnostic?)) -> Boolean): Condition<Diagnostic> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
+'Condition' @ [384:61] ==> public fun <T : (Any..Any?)> Condition(function: ((Diagnostic..Diagnostic?)) -> Boolean): Condition<(Diagnostic..Diagnostic?)> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> Diagnostic
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
 
 'diagnostic' @ [385:39] ==> value-parameter diagnostic: (Diagnostic..Diagnostic?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -909,9 +899,9 @@ Inferred types:
 
 'NEWER_VERSION_IN_SINCE_KOTLIN' @ [385:69] ==> public final val NEWER_VERSION_IN_SINCE_KOTLIN: (DiagnosticFactory1<(PsiElement..PsiElement?), (String..String?)>..DiagnosticFactory1<(PsiElement..PsiElement?), (String..String?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
-'initialCondition' @ [388:24] ==> val initialCondition: (Condition<Diagnostic>..Condition<Diagnostic>?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
+'initialCondition' @ [388:24] ==> val initialCondition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
-'initialCondition' @ [391:29] ==> val initialCondition: (Condition<Diagnostic>..Condition<Diagnostic>?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
+'initialCondition' @ [391:29] ==> val initialCondition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
 'DIAGNOSTICS_PATTERN' @ [392:27] ==> public final val DIAGNOSTICS_PATTERN: Pattern defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion[PropertyDescriptorImpl]
 
@@ -980,7 +970,7 @@ Inferred types:
 
 'name' @ [413:82] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'when (operation) {
                     "!" -> {
@@ -1010,31 +1000,31 @@ Inferred types:
 
 'name' @ [419:54] ==> val name: (String..String?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
-'condition' @ [422:25] ==> var condition: (Condition<Diagnostic>..Condition<Diagnostic>?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
+'condition' @ [422:25] ==> var condition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
 'newCondition' @ [422:37] ==> val newCondition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
-'condition' @ [424:28] ==> var condition: (Condition<Diagnostic>..Condition<Diagnostic>?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
+'condition' @ [424:28] ==> var condition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
 'or' @ [424:51] ==> public open fun <T : (Any..Any?)> or(p0: (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?), p1: (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?)): (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?) defined in com.intellij.openapi.util.Conditions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Diagnostic
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
 
-'condition' @ [424:54] ==> var condition: (Condition<Diagnostic>..Condition<Diagnostic>?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
+'condition' @ [424:54] ==> var condition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
 'newCondition' @ [424:65] ==> val newCondition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
-'condition' @ [425:28] ==> var condition: (Condition<Diagnostic>..Condition<Diagnostic>?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
+'condition' @ [425:28] ==> var condition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
 'and' @ [425:51] ==> public open fun <T : (Any..Any?)> and(p0: (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?), p1: (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?)): (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?) defined in com.intellij.openapi.util.Conditions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Diagnostic
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
 
-'condition' @ [425:55] ==> var condition: (Condition<Diagnostic>..Condition<Diagnostic>?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
+'condition' @ [425:55] ==> var condition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
 'not' @ [425:77] ==> public open fun <T : (Any..Any?)> not(p0: (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?)): (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?) defined in com.intellij.openapi.util.Conditions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Diagnostic
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
 
 'newCondition' @ [425:81] ==> val newCondition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
@@ -1046,13 +1036,13 @@ Inferred types:
 
 'or' @ [432:31] ==> public open fun <T : (Any..Any?)> or(p0: (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?), p1: (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?)): (Condition<(Diagnostic..Diagnostic?)>..Condition<(Diagnostic..Diagnostic?)>?) defined in com.intellij.openapi.util.Conditions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Diagnostic
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
 
-'condition' @ [433:21] ==> var condition: (Condition<Diagnostic>..Condition<Diagnostic>?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
+'condition' @ [433:21] ==> var condition: Condition<Diagnostic> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective[LocalVariableDescriptor]
 
-'Condition' @ [434:21] ==> public fun <T : (Any..Any?)> Condition(function: ((Diagnostic..Diagnostic?)) -> Boolean): Condition<Diagnostic> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
+'Condition' @ [434:21] ==> public fun <T : (Any..Any?)> Condition(function: ((Diagnostic..Diagnostic?)) -> Boolean): Condition<(Diagnostic..Diagnostic?)> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> Diagnostic
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
 
 'diagnostic' @ [434:47] ==> value-parameter diagnostic: (Diagnostic..Diagnostic?) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion.parseDiagnosticFilterDirective.<anonymous>[ValueParameterDescriptorImpl]
 

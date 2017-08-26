@@ -110,8 +110,6 @@ Inferred types:
 
 'modality' @ [68:34] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [68:46] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [68:55] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'findImplementationFromInterface' @ [70:34] ==> public fun findImplementationFromInterface(descriptor: CallableMemberDescriptor): CallableMemberDescriptor? defined in org.jetbrains.kotlin.backend.common.bridges[DeserializedSimpleFunctionDescriptor]
@@ -120,7 +118,7 @@ Inferred types:
 
 'implementation' @ [73:17] ==> val implementation: CallableMemberDescriptor defined in org.jetbrains.kotlin.codegen.InterfaceImplBodyCodegen.generateSyntheticPartsAfterBody[LocalVariableDescriptor]
 
-'isDefinitelyNotDefaultImplsMethod' @ [73:32] ==> public fun CallableMemberDescriptor.isDefinitelyNotDefaultImplsMethod(): Boolean defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'isDefinitelyNotDefaultImplsMethod' @ [73:32] ==> public fun CallableMemberDescriptor.isDefinitelyNotDefaultImplsMethod(): Boolean defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'memberDescriptor' @ [76:24] ==> val memberDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.codegen.InterfaceImplBodyCodegen.generateSyntheticPartsAfterBody[LocalVariableDescriptor]
 
@@ -129,8 +127,6 @@ Inferred types:
 'memberDescriptor' @ [76:46] ==> val memberDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.codegen.InterfaceImplBodyCodegen.generateSyntheticPartsAfterBody[LocalVariableDescriptor]
 
 'containingDeclaration' @ [76:63] ==> public final val CallableMemberDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
-
-'Modality' @ [76:86] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [76:95] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -224,8 +220,6 @@ Inferred types:
 'JvmDeclarationOrigin' @ [107:17] ==> public constructor JvmDeclarationOrigin(originKind: JvmDeclarationOriginKind, element: PsiElement?, descriptor: DeclarationDescriptor?) defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[DeserializedClassConstructorDescriptor]
 
 'DEFAULT_IMPL_DELEGATION_TO_SUPERINTERFACE_DEFAULT_IMPL' @ [108:50] ==> enum entry DEFAULT_IMPL_DELEGATION_TO_SUPERINTERFACE_DEFAULT_IMPL defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOriginKind[FakeCallableDescriptorForObject]
-
-'DescriptorToSourceUtils' @ [109:25] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
 'descriptorToDeclaration' @ [109:49] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 

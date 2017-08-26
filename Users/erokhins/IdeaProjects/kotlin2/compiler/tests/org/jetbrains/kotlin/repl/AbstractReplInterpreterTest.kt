@@ -10,7 +10,7 @@
 
 'ArrayDeque' @ [51:21] ==> public constructor ArrayDeque<E : (Any..Any?)>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)) defined in java.util.ArrayDeque[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'file' @ [51:32] ==> value-parameter file: File defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[ValueParameterDescriptorImpl]
 
@@ -20,13 +20,13 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> OneLine
 
-'lines' @ [55:16] ==> val lines: ArrayDeque<String> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
+'lines' @ [55:16] ==> val lines: ArrayDeque<(String..String?)> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
 
 'isNotEmpty' @ [55:22] ==> @InlineOnly public inline fun <T> Collection<(String..String?)>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
 
-'lines' @ [56:24] ==> val lines: ArrayDeque<String> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
+'lines' @ [56:24] ==> val lines: ArrayDeque<(String..String?)> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
 
 'poll' @ [56:30] ==> public open fun poll(): (String..String?) defined in java.util.ArrayDeque[JavaMethodDescriptor]
 
@@ -62,13 +62,13 @@ Inferred types:
 
 'group' @ [62:32] ==> public open fun group(p0: Int): (String..String?) defined in java.util.regex.Matcher[JavaMethodDescriptor]
 
-'lines' @ [64:17] ==> val lines: ArrayDeque<String> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
+'lines' @ [64:17] ==> val lines: ArrayDeque<(String..String?)> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
 
 'isNotEmpty' @ [64:23] ==> @InlineOnly public inline fun <T> Collection<(String..String?)>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
 
-'lines' @ [65:32] ==> val lines: ArrayDeque<String> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
+'lines' @ [65:32] ==> val lines: ArrayDeque<(String..String?)> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
 
 'peek' @ [65:38] ==> public open fun peek(): (String..String?) defined in java.util.ArrayDeque[JavaMethodDescriptor]
 
@@ -94,7 +94,7 @@ Inferred types:
 
 'StringBuilder' @ [74:25] ==> public final fun <init>(): StringBuilder /* = StringBuilder */ defined in kotlin.text.StringBuilder[TypeAliasConstructorDescriptorImpl]
 
-'lines' @ [75:20] ==> val lines: ArrayDeque<String> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
+'lines' @ [75:20] ==> val lines: ArrayDeque<(String..String?)> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
 
 'isNotEmpty' @ [75:26] ==> @InlineOnly public inline fun <T> Collection<(String..String?)>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -106,7 +106,7 @@ Inferred types:
 
 'matcher' @ [75:57] ==> public open fun matcher(p0: (CharSequence..CharSequence?)): (Matcher..Matcher?) defined in java.util.regex.Pattern[JavaMethodDescriptor]
 
-'lines' @ [75:65] ==> val lines: ArrayDeque<String> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
+'lines' @ [75:65] ==> val lines: ArrayDeque<(String..String?)> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
 
 'peek' @ [75:71] ==> public open fun peek(): (String..String?) defined in java.util.ArrayDeque[JavaMethodDescriptor]
 
@@ -116,7 +116,7 @@ Inferred types:
 
 'appendln' @ [76:23] ==> @InlineOnly public inline fun StringBuilder /* = StringBuilder */.appendln(value: String?): StringBuilder /* = StringBuilder */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'lines' @ [76:32] ==> val lines: ArrayDeque<String> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
+'lines' @ [76:32] ==> val lines: ArrayDeque<(String..String?)> defined in org.jetbrains.kotlin.repl.AbstractReplInterpreterTest.loadLines[LocalVariableDescriptor]
 
 'poll' @ [76:38] ==> public open fun poll(): (String..String?) defined in java.util.ArrayDeque[JavaMethodDescriptor]
 

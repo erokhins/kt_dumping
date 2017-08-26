@@ -65,7 +65,9 @@ Inferred types:
 
 'problemNodes' @ [50:34] ==> val problemNodes: List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.NonExpansiveInheritanceRestrictionChecker.check[LocalVariableDescriptor]
 
-'DescriptorToSourceUtils' @ [51:31] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve in file DescriptorToSourceUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [51:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'descriptorToDeclaration' @ [51:55] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[SimpleFunctionDescriptorImpl]
 
@@ -452,8 +454,8 @@ Inferred types:
 
 'dfs' @ [159:13] ==> public open fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull p0: (MutableCollection<(T..T?)>..Collection<(T..T?)>), @NotNull p1: DFS.Neighbors<(T..T?)>, @NotNull p2: DFS.NodeHandler<(T..T?), (LinkedList<(T..T?)>..LinkedList<(T..T?)>?)>): (LinkedList<(T..T?)>..LinkedList<(T..T?)>?) defined in org.jetbrains.kotlin.utils.DFS[JavaMethodDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> T
-    <R : (Any..Any?)> -> LinkedList<(T..T?)>
+    <N : (Any..Any?)> -> (T..T?)
+    <R : (Any..Any?)> -> (java.util.LinkedList<(T..T?)>..java.util.LinkedList<(T..T?)>?)
 
 'listOf' @ [159:17] ==> public fun <T> listOf(element: T): List<T> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

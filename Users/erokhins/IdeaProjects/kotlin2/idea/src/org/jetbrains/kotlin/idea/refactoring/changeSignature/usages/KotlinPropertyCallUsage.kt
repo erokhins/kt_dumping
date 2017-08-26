@@ -64,7 +64,7 @@ Inferred types:
 
 'dispatchReceiver' @ [56:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'newReceiver' @ [58:32] ==> val newReceiver: KotlinParameterInfo? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinPropertyCallUsage.updateReceiver[LocalVariableDescriptor]
 

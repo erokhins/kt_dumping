@@ -30,6 +30,8 @@ Inferred types:
     <T> -> String
     <R> -> FqName
 
+'FqName' @ [35:53] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
+
 'element' @ [36:25] ==> val element: PsiNamedElement? defined in org.jetbrains.kotlin.idea.refactoring.fqName.getKotlinFqName[LocalVariableDescriptor]
 
 'getName' @ [36:33] ==> @Nullable public abstract fun getName(): String? defined in com.intellij.psi.PsiNamedElement[JavaMethodDescriptor]
@@ -127,7 +129,7 @@ Inferred types:
 
 'it' @ [57:102] ==> value-parameter it: ImportPath defined in org.jetbrains.kotlin.idea.refactoring.fqName.isImported.<anonymous>[ValueParameterDescriptorImpl]
 
-'isImported' @ [60:12] ==> private fun ImportPath.isImported(imports: Iterable<ImportPath>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.fqName[SimpleFunctionDescriptorImpl]
+'isImported' @ [60:12] ==> private fun ImportPath.isImported(imports: Iterable<ImportPath>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.fqName in file fqNameUtil.kt[SimpleFunctionDescriptorImpl]
 
 'imports' @ [60:23] ==> value-parameter imports: Iterable<ImportPath> defined in org.jetbrains.kotlin.idea.refactoring.fqName.isImported[ValueParameterDescriptorImpl]
 

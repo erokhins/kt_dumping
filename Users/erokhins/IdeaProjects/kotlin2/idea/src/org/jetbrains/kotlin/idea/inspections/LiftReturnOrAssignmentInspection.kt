@@ -10,7 +10,7 @@
 
 'expression' @ [35:25] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.inspections.LiftReturnOrAssignmentInspection.buildVisitor.<no name provided>.visitIfOrWhenOrTry[ValueParameterDescriptorImpl]
 
-'isElseIf' @ [35:36] ==> internal fun KtExpression.isElseIf(): Boolean defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations[SimpleFunctionDescriptorImpl]
+'isElseIf' @ [35:36] ==> internal fun KtExpression.isElseIf(): Boolean defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file IfThenUtils.kt[SimpleFunctionDescriptorImpl]
 
 'BranchedFoldingUtils' @ [37:43] ==> public object BranchedFoldingUtils defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file BranchedFoldingUtils.kt[FakeCallableDescriptorForObject]
 

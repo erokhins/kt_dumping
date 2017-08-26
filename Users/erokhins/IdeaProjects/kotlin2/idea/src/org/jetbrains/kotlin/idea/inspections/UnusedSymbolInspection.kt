@@ -26,8 +26,6 @@ Inferred types:
 
 'toLightClass' @ [86:51] ==> public fun KtClassOrObject.toLightClass(): KtLightClass? defined in org.jetbrains.kotlin.asJava[DeserializedSimpleFunctionDescriptor]
 
-'LightClassUtil' @ [87:66] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
-
 'getLightClassMethod' @ [87:81] ==> public final fun getLightClassMethod(function: KtFunction): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
 'declaration' @ [87:101] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection.Companion.isEntryPoint[ValueParameterDescriptorImpl]
@@ -676,8 +674,6 @@ Inferred types:
 
 'modality' @ [298:24] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [298:36] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [298:45] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'declaration' @ [299:28] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection.hasFakeOverrides[ValueParameterDescriptorImpl]
@@ -820,13 +816,13 @@ Inferred types:
 
 'it' @ [334:78] ==> value-parameter it: ModuleDescriptor defined in org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection.hasPlatformImplementations.<anonymous>[ValueParameterDescriptorImpl]
 
-'hasImplementationsOf' @ [334:81] ==> public fun ModuleDescriptor.hasImplementationsOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'hasImplementationsOf' @ [334:81] ==> public fun ModuleDescriptor.hasImplementationsOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [334:102] ==> value-parameter descriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection.hasPlatformImplementations[ValueParameterDescriptorImpl]
 
 'commonModuleDescriptor' @ [335:16] ==> val commonModuleDescriptor: ModuleDescriptor defined in org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection.hasPlatformImplementations[LocalVariableDescriptor]
 
-'hasImplementationsOf' @ [335:39] ==> public fun ModuleDescriptor.hasImplementationsOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'hasImplementationsOf' @ [335:39] ==> public fun ModuleDescriptor.hasImplementationsOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [335:60] ==> value-parameter descriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection.hasPlatformImplementations[ValueParameterDescriptorImpl]
 

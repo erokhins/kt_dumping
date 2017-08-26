@@ -112,8 +112,6 @@ Inferred types:
 
 'version' @ [95:38] ==> val version: String? defined in org.jetbrains.kotlin.idea.inspections.AbstractLocalInspectionTest.doTest[LocalVariableDescriptor]
 
-'LanguageFeature' @ [95:47] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'DISABLED' @ [95:69] ==> enum entry DISABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'modelsProvider' @ [95:85] ==> val modelsProvider: IdeModifiableModelsProviderImpl defined in org.jetbrains.kotlin.idea.inspections.AbstractLocalInspectionTest.doTest[LocalVariableDescriptor]
@@ -208,7 +206,7 @@ Inferred types:
 
 'expectedProblemHighlightType' @ [124:32] ==> private final val expectedProblemHighlightType: String defined in org.jetbrains.kotlin.idea.inspections.AbstractLocalInspectionTest[PropertyDescriptorImpl]
 
-'runInspection' @ [126:28] ==> public fun runInspection(inspection: LocalInspectionTool, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections[SimpleFunctionDescriptorImpl]
+'runInspection' @ [126:28] ==> public fun runInspection(inspection: LocalInspectionTool, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections in file InspectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'inspection' @ [126:42] ==> value-parameter inspection: AbstractKotlinInspection defined in org.jetbrains.kotlin.idea.inspections.AbstractLocalInspectionTest.doTestFor[ValueParameterDescriptorImpl]
 

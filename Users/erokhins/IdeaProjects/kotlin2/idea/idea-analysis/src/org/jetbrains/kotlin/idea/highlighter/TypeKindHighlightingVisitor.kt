@@ -20,8 +20,8 @@
 
 'get' @ [40:50] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [40:69] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -45,7 +45,7 @@ Inferred types:
 
 'calleeExpression' @ [43:90] ==> public final val KtSuperTypeCallEntry.calleeExpression: KtConstructorCalleeExpression[MyPropertyDescriptor]
 
-'callElement' @ [44:21] ==> val callElement: {KtCallElement & ASTDelegatePsiElement}? defined in org.jetbrains.kotlin.idea.highlighter.TypeKindHighlightingVisitor.visitSimpleNameExpression[LocalVariableDescriptor]
+'callElement' @ [44:21] ==> val callElement: NavigatablePsiElement? defined in org.jetbrains.kotlin.idea.highlighter.TypeKindHighlightingVisitor.visitSimpleNameExpression[LocalVariableDescriptor]
 
 'referenceTarget' @ [45:21] ==> var referenceTarget: DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.highlighter.TypeKindHighlightingVisitor.visitSimpleNameExpression[LocalVariableDescriptor]
 
@@ -110,7 +110,7 @@ Inferred types:
 
 'getParentOfType' @ [68:43] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtAnnotationEntry..KtAnnotationEntry?)>, p2: Boolean, @NotNull vararg p3: (Class<out (PsiElement..PsiElement?)>..Class<out (PsiElement..PsiElement?)>?)): KtAnnotationEntry? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtAnnotationEntry
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
 
 'expression' @ [69:17] ==> value-parameter expression: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.highlighter.TypeKindHighlightingVisitor.highlightAnnotation[ValueParameterDescriptorImpl]
 
@@ -183,8 +183,8 @@ Inferred types:
 
 'get' @ [87:46] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [87:65] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

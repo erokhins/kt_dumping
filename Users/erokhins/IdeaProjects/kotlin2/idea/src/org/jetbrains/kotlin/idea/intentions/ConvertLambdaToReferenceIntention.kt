@@ -84,7 +84,7 @@ Inferred types:
 
 'isSuspend' @ [78:56] ==> public final val FunctionDescriptor.isSuspend: Boolean[MyPropertyDescriptor]
 
-'with' @ [80:37] ==> @InlineOnly public inline fun <T, R> with(receiver: CallableMemberDescriptor, block: CallableMemberDescriptor.() -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [80:37] ==> @InlineOnly public inline fun <T, R> with(receiver: CallableMemberDescriptor, block: (CallableMemberDescriptor).() -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> CallableMemberDescriptor
     <R> -> Boolean
@@ -112,8 +112,6 @@ Inferred types:
 'languageVersionSettings' @ [87:53] ==> public val KtElement.languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[DeserializedPropertyDescriptor]
 
 'supportsFeature' @ [87:77] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [87:93] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'BoundCallableReferences' @ [87:109] ==> enum entry BoundCallableReferences defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -278,7 +276,7 @@ Inferred types:
 
 'valueArguments' @ [124:26] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'entries' @ [124:41] ==> public abstract val entries: MutableSet<MutableMap.MutableEntry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>> defined in kotlin.collections.MutableMap[DeserializedPropertyDescriptor]
 
@@ -753,13 +751,13 @@ Inferred types:
 
 'dispatchReceiver' @ [225:38] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [225:66] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.intentions.ConvertLambdaToReferenceIntention.Companion.buildReferenceText[LocalVariableDescriptor]
 
 'extensionReceiver' @ [225:79] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'singleStatement' @ [226:34] ==> val singleStatement: KtExpression? defined in org.jetbrains.kotlin.idea.intentions.ConvertLambdaToReferenceIntention.Companion.buildReferenceText[LocalVariableDescriptor]
 

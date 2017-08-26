@@ -91,9 +91,9 @@ Inferred types:
 
 'expression' @ [68:25] ==> value-parameter expression: IrMemberAccessExpression defined in org.jetbrains.kotlin.backend.jvm.intrinsics.Concat.toCallable[ValueParameterDescriptorImpl]
 
-'receiverAndArgs' @ [68:36] ==> public fun IrMemberAccessExpression.receiverAndArgs(): List<IrExpression> defined in org.jetbrains.kotlin.backend.jvm.intrinsics[SimpleFunctionDescriptorImpl]
+'receiverAndArgs' @ [68:36] ==> public fun IrMemberAccessExpression.receiverAndArgs(): List<IrExpression> defined in org.jetbrains.kotlin.backend.jvm.intrinsics in file IrIntrinsicFunction.kt[SimpleFunctionDescriptorImpl]
 
-'asmTypes' @ [68:54] ==> public fun List<IrExpression>.asmTypes(context: JvmBackendContext): List<Type> defined in org.jetbrains.kotlin.backend.jvm.intrinsics[SimpleFunctionDescriptorImpl]
+'asmTypes' @ [68:54] ==> public fun List<IrExpression>.asmTypes(context: JvmBackendContext): List<Type> defined in org.jetbrains.kotlin.backend.jvm.intrinsics in file IrIntrinsicFunction.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [68:63] ==> value-parameter context: JvmBackendContext defined in org.jetbrains.kotlin.backend.jvm.intrinsics.Concat.toCallable[ValueParameterDescriptorImpl]
 
@@ -173,7 +173,7 @@ Inferred types:
 
 'call' @ [102:38] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [102:43] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -197,7 +197,7 @@ Inferred types:
 
 'call' @ [108:54] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueArguments' @ [108:59] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
@@ -222,7 +222,7 @@ Inferred types:
 
 'call' @ [111:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [111:51] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 

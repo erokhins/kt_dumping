@@ -350,7 +350,7 @@ Inferred types:
 
 'filterOutOverridden' @ [149:27] ==> @NotNull public open fun <D : (CallableDescriptor..CallableDescriptor?)> filterOutOverridden(@NotNull p0: (MutableSet<(D..D?)>..Set<(D..D?)>)): (MutableSet<(D..D?)>..Set<(D..D?)>) defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'result' @ [149:47] ==> val result: LinkedHashSet<D> defined in org.jetbrains.kotlin.idea.core.getDirectlyOverriddenDeclarations[LocalVariableDescriptor]
 
@@ -377,4 +377,6 @@ Inferred types:
     <T> -> (D..D?)
 
 'DescriptorUtils' @ [158:45] ==> private constructor DescriptorUtils() defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaClassConstructorDescriptor]
+
+'isOverride' @ [158:62] ==> public open fun isOverride(@NotNull p0: CallableMemberDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 

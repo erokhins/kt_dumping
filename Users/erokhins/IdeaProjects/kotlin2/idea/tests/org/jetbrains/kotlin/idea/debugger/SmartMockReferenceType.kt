@@ -41,9 +41,9 @@ Inferred types:
 
 'EXPAND_FRAMES' @ [34:83] ==> public const final val EXPAND_FRAMES: Int defined in org.jetbrains.org.objectweb.asm.ClassReader[JavaPropertyDescriptor]
 
-'lazy' @ [37:48] ==> public fun <T> lazy(initializer: () -> List<SmartMockReferenceType>): Lazy<List<SmartMockReferenceType>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [37:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<SmartMockReferenceType>
+    <T> -> T
 
 'classes' @ [37:55] ==> public final val classes: List<ClassNode> defined in org.jetbrains.kotlin.idea.debugger.SmartMockReferenceTypeContext[PropertyDescriptorImpl]
 
@@ -58,9 +58,9 @@ Inferred types:
 
 'this' @ [37:96] ==> <this> defined in org.jetbrains.kotlin.idea.debugger.SmartMockReferenceTypeContext[LazyClassReceiverParameterDescriptor]
 
-'lazy' @ [39:33] ==> public fun <T> lazy(initializer: () -> Map<(String..String?), ReferenceType>): Lazy<Map<(String..String?), ReferenceType>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [39:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<(kotlin.String..kotlin.String?), ReferenceType>
+    <T> -> T
 
 'referenceTypes' @ [39:40] ==> public final val referenceTypes: List<ReferenceType> defined in org.jetbrains.kotlin.idea.debugger.SmartMockReferenceTypeContext[PropertyDescriptorImpl]
 
@@ -141,9 +141,9 @@ Inferred types:
 
 'TODO' @ [67:41] ==> @InlineOnly public inline fun TODO(): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [69:34] ==> public fun <T> lazy(initializer: () -> List<SmartMockReferenceType.MockMethod>): Lazy<List<SmartMockReferenceType.MockMethod>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [69:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<MockMethod>
+    <T> -> T
 
 'classNode' @ [69:41] ==> public final val classNode: ClassNode defined in org.jetbrains.kotlin.idea.debugger.SmartMockReferenceType[PropertyDescriptorImpl]
 

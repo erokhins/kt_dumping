@@ -128,7 +128,7 @@ Inferred types:
 
 'resultingDescriptor' @ [83:75] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'name' @ [83:97] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 

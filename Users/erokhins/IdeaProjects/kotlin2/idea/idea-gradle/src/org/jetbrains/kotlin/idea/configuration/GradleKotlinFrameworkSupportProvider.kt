@@ -26,7 +26,7 @@
 
 'additionalRepository' @ [55:37] ==> val additionalRepository: RepositoryDescription? defined in org.jetbrains.kotlin.idea.configuration.GradleKotlinFrameworkSupportProvider.addSupport[LocalVariableDescriptor]
 
-'toGroovyRepositorySnippet' @ [55:58] ==> public fun RepositoryDescription.toGroovyRepositorySnippet(): String defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'toGroovyRepositorySnippet' @ [55:58] ==> public fun RepositoryDescription.toGroovyRepositorySnippet(): String defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'replace' @ [55:86] ==> public fun String.replace(oldChar: Char, newChar: Char, ignoreCase: Boolean = ...): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -68,8 +68,6 @@
 
 'addBuildscriptDependencyNotation' @ [70:18] ==> public open fun addBuildscriptDependencyNotation(@NotNull p0: String): (BuildScriptDataBuilder..BuildScriptDataBuilder?) defined in org.jetbrains.plugins.gradle.frameworkSupport.BuildScriptDataBuilder[JavaMethodDescriptor]
 
-'KotlinWithGradleConfigurator' @ [70:51] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator[FakeCallableDescriptorForObject]
-
 'CLASSPATH' @ [70:80] ==> public final val CLASSPATH: String defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator.Companion[PropertyDescriptorImpl]
 
 'GradleKotlinFrameworkSupportProvider' @ [78:50] ==> public constructor GradleKotlinFrameworkSupportProvider(frameworkTypeId: String, displayName: String, frameworkIcon: Icon) defined in org.jetbrains.kotlin.idea.configuration.GradleKotlinFrameworkSupportProvider[ClassConstructorDescriptorImpl]
@@ -79,8 +77,6 @@
 'KotlinWithGradleConfigurator' @ [80:13] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator[FakeCallableDescriptorForObject]
 
 'getGroovyApplyPluginDirective' @ [80:42] ==> public final fun getGroovyApplyPluginDirective(pluginName: String): String defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator.Companion[SimpleFunctionDescriptorImpl]
-
-'KotlinGradleModuleConfigurator' @ [80:72] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleModuleConfigurator[FakeCallableDescriptorForObject]
 
 'KOTLIN' @ [80:103] ==> public final val KOTLIN: String defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleModuleConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -133,8 +129,6 @@
 'KotlinWithGradleConfigurator' @ [97:13] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator[FakeCallableDescriptorForObject]
 
 'getGroovyApplyPluginDirective' @ [97:42] ==> public final fun getGroovyApplyPluginDirective(pluginName: String): String defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator.Companion[SimpleFunctionDescriptorImpl]
-
-'KotlinJsGradleModuleConfigurator' @ [97:72] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinJsGradleModuleConfigurator[FakeCallableDescriptorForObject]
 
 'KOTLIN_JS' @ [97:105] ==> public final val KOTLIN_JS: String defined in org.jetbrains.kotlin.idea.configuration.KotlinJsGradleModuleConfigurator.Companion[PropertyDescriptorImpl]
 

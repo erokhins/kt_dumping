@@ -113,7 +113,7 @@ Inferred types:
 
 'context' @ [74:17] ==> public final val context: CommonBackendContext defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering[PropertyDescriptorImpl]
 
-'createIrBuilder' @ [74:25] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createIrBuilder' @ [74:25] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'owner' @ [74:41] ==> value-parameter owner: IrSymbol defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering.lower[ValueParameterDescriptorImpl]
 
@@ -253,7 +253,7 @@ Inferred types:
 
 'context' @ [107:33] ==> public final val context: CommonBackendContext defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering[PropertyDescriptorImpl]
 
-'createIrBuilder' @ [107:41] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createIrBuilder' @ [107:41] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'owner' @ [107:57] ==> value-parameter owner: IrSymbol defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering.lower[ValueParameterDescriptorImpl]
 
@@ -344,7 +344,7 @@ Inferred types:
 
 'arrayConstructor' @ [115:32] ==> val arrayConstructor: IrConstructorSymbol defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering.lower.<no name provided>.visitVararg.<anonymous>[LocalVariableDescriptor]
 
-'irCall' @ [117:25] ==> public fun IrBuilderWithScope.irCall(symbol: IrFunctionSymbol, typeArguments: List<KotlinType>): IrCallImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irCall' @ [117:25] ==> public fun IrBuilderWithScope.irCall(symbol: IrFunctionSymbol, typeArguments: List<KotlinType>): IrCallImpl defined in org.jetbrains.kotlin.ir.builders in file IrBuilders.kt[SimpleFunctionDescriptorImpl]
 
 'arrayConstructor' @ [117:32] ==> val arrayConstructor: IrConstructorSymbol defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering.lower.<no name provided>.visitVararg.<anonymous>[LocalVariableDescriptor]
 
@@ -549,7 +549,7 @@ Inferred types:
 
 'symbol' @ [144:118] ==> public abstract val symbol: IrVariableSymbol defined in org.jetbrains.kotlin.ir.declarations.IrVariable[DeserializedPropertyDescriptor]
 
-'irConstInt' @ [144:131] ==> private fun IrBuilderWithScope.irConstInt(value: Int): IrConst<Int> defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irConstInt' @ [144:131] ==> private fun IrBuilderWithScope.irConstInt(value: Int): IrConst<Int> defined in org.jetbrains.kotlin.backend.common.lower in file VarargLowering.kt[SimpleFunctionDescriptorImpl]
 
 'i' @ [144:142] ==> value-parameter i: Int defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering.lower.<no name provided>.visitVararg.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -843,7 +843,7 @@ Inferred types:
 
 'context' @ [210:9] ==> public final val context: CommonBackendContext defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering[PropertyDescriptorImpl]
 
-'createIrBuilder' @ [210:17] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createIrBuilder' @ [210:17] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'scope' @ [210:33] ==> value-parameter scope: Scope defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering.calculateArraySize[ValueParameterDescriptorImpl]
 
@@ -866,7 +866,7 @@ Inferred types:
 
 'hasSpreadElement' @ [211:18] ==> value-parameter hasSpreadElement: Boolean defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering.calculateArraySize[ValueParameterDescriptorImpl]
 
-'irConstInt' @ [212:24] ==> private fun IrBuilderWithScope.irConstInt(value: Int): IrConst<Int> defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irConstInt' @ [212:24] ==> private fun IrBuilderWithScope.irConstInt(value: Int): IrConst<Int> defined in org.jetbrains.kotlin.backend.common.lower in file VarargLowering.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [212:35] ==> value-parameter expression: IrVararg defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering.calculateArraySize[ValueParameterDescriptorImpl]
 
@@ -886,7 +886,7 @@ Inferred types:
 
 'size' @ [213:94] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'irConstInt' @ [214:32] ==> private fun IrBuilderWithScope.irConstInt(value: Int): IrConst<Int> defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irConstInt' @ [214:32] ==> private fun IrBuilderWithScope.irConstInt(value: Int): IrConst<Int> defined in org.jetbrains.kotlin.backend.common.lower in file VarargLowering.kt[SimpleFunctionDescriptorImpl]
 
 'notSpreadElementCount' @ [214:43] ==> val notSpreadElementCount: Int defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering.calculateArraySize.<anonymous>[LocalVariableDescriptor]
 
@@ -906,7 +906,7 @@ Inferred types:
     <K> -> IrVarargElement
     <V> -> IrVariable
 
-'fold' @ [215:68] ==> public inline fun <T, R> Iterable<Pair<IrVarargElement, IrVariable>>.fold(initial: IrExpression, operation: (IrExpression, Pair<IrVarargElement, IrVariable>) -> IrExpression): IrExpression defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [215:68] ==> public inline fun <T, R> Iterable<Pair<IrVarargElement, IrVariable>>.fold(initial: IrExpression, operation: (acc: IrExpression, Pair<IrVarargElement, IrVariable>) -> IrExpression): IrExpression defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<IrVarargElement, IrVariable>
     <R> -> IrExpression
@@ -1035,8 +1035,6 @@ Inferred types:
 
 'name' @ [253:71] ==> public final val FunctionDescriptor.name: Name[MyPropertyDescriptor]
 
-'OperatorNameConventions' @ [253:79] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'SET' @ [253:103] ==> @field:JvmField public final val SET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'symbol' @ [254:32] ==> value-parameter symbol: IrClassSymbol defined in org.jetbrains.kotlin.backend.common.lower.VarargInjectionLowering.handle[ValueParameterDescriptorImpl]
@@ -1075,7 +1073,7 @@ Inferred types:
 
 'type' @ [261:105] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.backend.common.lower.irBlock[ValueParameterDescriptorImpl]
 
-'irConstInt' @ [262:49] ==> private fun IrBuilderWithScope.irConstInt(value: Int): IrConst<Int> defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irConstInt' @ [262:49] ==> private fun IrBuilderWithScope.irConstInt(value: Int): IrConst<Int> defined in org.jetbrains.kotlin.backend.common.lower in file VarargLowering.kt[SimpleFunctionDescriptorImpl]
 
-'irConstInt' @ [263:48] ==> private fun IrBuilderWithScope.irConstInt(value: Int): IrConst<Int> defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irConstInt' @ [263:48] ==> private fun IrBuilderWithScope.irConstInt(value: Int): IrConst<Int> defined in org.jetbrains.kotlin.backend.common.lower in file VarargLowering.kt[SimpleFunctionDescriptorImpl]
 

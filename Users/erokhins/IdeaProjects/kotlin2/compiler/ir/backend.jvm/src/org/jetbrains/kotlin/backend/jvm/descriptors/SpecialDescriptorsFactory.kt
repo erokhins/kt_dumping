@@ -66,8 +66,6 @@ Inferred types:
 
 'sourceElement' @ [56:17] ==> val sourceElement: KotlinSourceElement defined in org.jetbrains.kotlin.backend.jvm.descriptors.SpecialDescriptorsFactory.createFileClassDescriptor[LocalVariableDescriptor]
 
-'Annotations' @ [57:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [57:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'if (!innerClassDescriptor.isInner) throw AssertionError("Class is not inner: $innerClassDescriptor")
@@ -125,8 +123,6 @@ Inferred types:
 'defaultType' @ [68:73] ==> public final val ClassDescriptor.defaultType: SimpleType[MyPropertyDescriptor]
 
 'innerClassDescriptor' @ [68:86] ==> value-parameter innerClassDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.descriptors.SpecialDescriptorsFactory.getOuterThisFieldDescriptor[ValueParameterDescriptorImpl]
-
-'Annotations' @ [69:25] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [69:37] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -284,8 +280,6 @@ Inferred types:
 
 'annotations' @ [112:37] ==> public abstract val annotations: Annotations defined in org.jetbrains.kotlin.descriptors.ClassDescriptor[DeserializedPropertyDescriptor]
 
-'Modality' @ [113:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [113:26] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [114:30] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -323,11 +317,7 @@ Inferred types:
 
 'objectDescriptor' @ [129:17] ==> value-parameter objectDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.descriptors.SpecialDescriptorsFactory.createObjectInstanceFieldDescriptor[ValueParameterDescriptorImpl]
 
-'Annotations' @ [130:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [130:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [130:36] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [130:45] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -339,7 +329,7 @@ Inferred types:
 
 'NO_SOURCE' @ [132:74] ==> public final val NO_SOURCE: (SourceElement..SourceElement?) defined in org.jetbrains.kotlin.descriptors.SourceElement[JavaPropertyDescriptor]
 
-'initialize' @ [134:11] ==> public fun PropertyDescriptorImpl.initialize(type: KotlinType, typeParameters: List<TypeParameterDescriptor> = ..., dispatchReceiverParameter: ReceiverParameterDescriptor? = ..., extensionReceiverParameter: ReceiverParameterDescriptor? = ..., getter: PropertyGetterDescriptorImpl? = ..., setter: PropertySetterDescriptorImpl? = ...): PropertyDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors[SimpleFunctionDescriptorImpl]
+'initialize' @ [134:11] ==> public fun PropertyDescriptorImpl.initialize(type: KotlinType, typeParameters: List<TypeParameterDescriptor> = ..., dispatchReceiverParameter: ReceiverParameterDescriptor? = ..., extensionReceiverParameter: ReceiverParameterDescriptor? = ..., getter: PropertyGetterDescriptorImpl? = ..., setter: PropertySetterDescriptorImpl? = ...): PropertyDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'objectDescriptor' @ [134:22] ==> value-parameter objectDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.descriptors.SpecialDescriptorsFactory.createObjectInstanceFieldDescriptor[ValueParameterDescriptorImpl]
 

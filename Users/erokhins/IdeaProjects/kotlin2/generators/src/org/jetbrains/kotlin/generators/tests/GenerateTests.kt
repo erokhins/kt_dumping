@@ -4,7 +4,7 @@
 
 'setProperty' @ [198:12] ==> public open fun setProperty(p0: (String..String?), p1: (String..String?)): (String..String?) defined in java.lang.System[JavaMethodDescriptor]
 
-'testGroup' @ [200:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [200:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [202:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -412,7 +412,7 @@ Inferred types:
 
 'model' @ [448:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [452:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [452:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [453:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -434,7 +434,7 @@ Inferred types:
 
 'model' @ [462:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [466:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [466:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [467:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -496,7 +496,7 @@ Inferred types:
 
 'model' @ [501:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [505:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [505:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [506:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1462,7 +1462,7 @@ Inferred types:
 
 'model' @ [1057:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1061:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1061:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1062:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1478,7 +1478,7 @@ Inferred types:
 
 'model' @ [1068:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1072:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1072:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1073:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1516,7 +1516,7 @@ Inferred types:
 
 'KT_WITHOUT_DOTS_IN_NAME' @ [1086:121] ==> @Language private val KT_WITHOUT_DOTS_IN_NAME: String defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[PropertyDescriptorImpl]
 
-'testGroup' @ [1090:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1090:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1091:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1642,7 +1642,7 @@ Inferred types:
 
 'model' @ [1166:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1171:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1171:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1172:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1656,7 +1656,7 @@ Inferred types:
 
 'model' @ [1177:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1181:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1181:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1182:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1664,7 +1664,7 @@ Inferred types:
 
 'model' @ [1183:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1186:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1186:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1187:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1672,7 +1672,7 @@ Inferred types:
 
 'model' @ [1188:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1191:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1191:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1192:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1680,7 +1680,7 @@ Inferred types:
 
 'model' @ [1193:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1197:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1197:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1198:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1736,7 +1736,7 @@ Inferred types:
 
 'model' @ [1223:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1228:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1228:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'model' @ [1230:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
@@ -1764,7 +1764,7 @@ Inferred types:
 
 'model' @ [1244:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1248:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1248:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1249:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1792,7 +1792,7 @@ Inferred types:
 
 'model' @ [1263:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1267:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1267:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1268:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1800,7 +1800,7 @@ Inferred types:
 
 'model' @ [1269:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1273:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1273:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1274:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1814,7 +1814,7 @@ Inferred types:
 
 'model' @ [1279:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1283:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1283:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1284:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1822,7 +1822,7 @@ Inferred types:
 
 'model' @ [1285:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1289:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1289:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1290:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1838,7 +1838,7 @@ Inferred types:
 
 'JVM' @ [1295:56] ==> enum entry JVM defined in org.jetbrains.kotlin.test.TargetBackend[FakeCallableDescriptorForObject]
 
-'testGroup' @ [1299:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1299:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1300:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1852,7 +1852,7 @@ Inferred types:
 
 'model' @ [1304:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1308:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1308:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1309:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1902,7 +1902,7 @@ Inferred types:
 
 'model' @ [1338:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1342:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1342:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1343:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1954,7 +1954,7 @@ Inferred types:
 
 'model' @ [1373:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1377:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1377:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1378:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1962,7 +1962,7 @@ Inferred types:
 
 'model' @ [1379:13] ==> public final fun model(relativeRootPath: String, recursive: Boolean = ..., excludeParentDirs: Boolean = ..., extension: String? = ..., pattern: String = ..., testMethod: String = ..., singleClass: Boolean = ..., testClassName: String? = ..., targetBackend: TargetBackend = ..., excludeDirs: List<String> = ..., filenameStartsLowerCase: Boolean? = ..., skipIgnored: Boolean = ...): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup.TestClass[SimpleFunctionDescriptorImpl]
 
-'testGroup' @ [1386:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1386:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1387:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2004,7 +2004,7 @@ Inferred types:
 
 'JS' @ [1404:96] ==> enum entry JS defined in org.jetbrains.kotlin.test.TargetBackend[FakeCallableDescriptorForObject]
 
-'testGroup' @ [1408:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testGroup' @ [1408:5] ==> public fun testGroup(testsRoot: String, testDataRoot: String, init: TestGroup.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file GenerateTests.kt[SimpleFunctionDescriptorImpl]
 
 'testClass' @ [1409:9] ==> public final inline fun <reified T : TestCase> testClass(suiteTestClass: String = ..., noinline init: TestGroup.TestClass.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests.TestGroup[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2128,7 +2128,7 @@ Inferred types:
 
 '`package`' @ [1461:70] ==> public final val <T : (Any..Any?)> Class<out TestCase>.`package`: (Package..Package?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TestCase
+    <T : (Any..Any?)> -> Captured(out TestCase)
 
 'name' @ [1461:80] ==> public final val Package.name: (String..String?)[MyPropertyDescriptor]
 
@@ -2265,7 +2265,7 @@ Inferred types:
 
 'simpleName' @ [1514:34] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 '!' @ [1515:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 

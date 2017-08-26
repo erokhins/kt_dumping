@@ -25,8 +25,6 @@ Inferred types:
     <T> -> List<WhenMissingCase>
     <R> -> Boolean
 
-'WhenChecker' @ [42:21] ==> public object WhenChecker defined in org.jetbrains.kotlin.cfg[FakeCallableDescriptorForObject]
-
 'getMissingCases' @ [42:33] ==> public final fun getMissingCases(expression: KtWhenExpression, context: BindingContext): List<WhenMissingCase> defined in org.jetbrains.kotlin.cfg.WhenChecker[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [42:49] ==> val element: KtWhenExpression defined in org.jetbrains.kotlin.idea.quickfix.AddWhenRemainingBranchesFix.isAvailable[LocalVariableDescriptor]

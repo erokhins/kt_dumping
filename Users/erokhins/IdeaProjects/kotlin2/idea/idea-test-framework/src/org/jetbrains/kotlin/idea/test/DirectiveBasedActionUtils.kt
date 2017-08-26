@@ -51,7 +51,7 @@ Inferred types:
 
 'assertOrderedEquals' @ [41:24] ==> public open fun <T : (Any..Any?)> assertOrderedEquals(p0: (String..String?), @NotNull p1: (MutableIterable<(String..String?)>..Iterable<(String..String?)>), @NotNull p2: (MutableCollection<out (String..String?)>..Collection<(String..String?)>)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'actualErrors' @ [42:44] ==> val actualErrors: List<String> defined in org.jetbrains.kotlin.idea.test.DirectiveBasedActionUtils.checkForUnexpectedErrors[LocalVariableDescriptor]
 
@@ -69,7 +69,7 @@ Inferred types:
 
 'assertEmpty' @ [49:24] ==> public open fun <T : (Any..Any?)> assertEmpty(p0: (String..String?), p1: (MutableCollection<(String..String?)>..Collection<(String..String?)>?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'expectedActions' @ [50:36] ==> val expectedActions: List<(String..String?)> defined in org.jetbrains.kotlin.idea.test.DirectiveBasedActionUtils.checkAvailableActionsAreExpected[LocalVariableDescriptor]
 
@@ -98,7 +98,7 @@ Inferred types:
 
 'assertOrderedEquals' @ [54:24] ==> public open fun <T : (Any..Any?)> assertOrderedEquals(p0: (String..String?), @NotNull p1: (MutableIterable<(String..String?)>..Iterable<(String..String?)>), @NotNull p2: (MutableCollection<out (String..String?)>..Collection<(String..String?)>)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'filterOutIrrelevantActions' @ [55:44] ==> private final fun filterOutIrrelevantActions(actions: Collection<String>): Collection<String> defined in org.jetbrains.kotlin.idea.test.DirectiveBasedActionUtils[SimpleFunctionDescriptorImpl]
 

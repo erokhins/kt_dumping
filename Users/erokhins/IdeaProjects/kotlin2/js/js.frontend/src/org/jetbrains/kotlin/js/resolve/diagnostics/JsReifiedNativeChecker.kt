@@ -2,7 +2,7 @@
 
 'call' @ [27:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'typeArgumentList' @ [27:50] ==> public final val Call.typeArgumentList: KtTypeArgumentList?[MyPropertyDescriptor]
 
@@ -22,7 +22,7 @@ Inferred types:
 
 'typeArguments' @ [28:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 '!' @ [29:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -65,7 +65,7 @@ Inferred types:
 
 'call' @ [37:34] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [37:39] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 

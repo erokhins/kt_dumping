@@ -1,12 +1,8 @@
 'ShortenedNameCache' @ [51:44] ==> public constructor ShortenedNameCache(type: String) defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.ShortenedNameCache[ClassConstructorDescriptorImpl]
 
-'RecordTypes' @ [51:63] ==> private object RecordTypes defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase[FakeCallableDescriptorForObject]
-
 'SHORTENED_ANNOTATION' @ [51:75] ==> public final val SHORTENED_ANNOTATION: String defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.RecordTypes[PropertyDescriptorImpl]
 
 'ShortenedNameCache' @ [52:45] ==> public constructor ShortenedNameCache(type: String) defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.ShortenedNameCache[ClassConstructorDescriptorImpl]
-
-'RecordTypes' @ [52:64] ==> private object RecordTypes defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase[FakeCallableDescriptorForObject]
 
 'SHORTENED_PACKAGE_NAME' @ [52:76] ==> public final val SHORTENED_PACKAGE_NAME: String defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.RecordTypes[PropertyDescriptorImpl]
 
@@ -75,9 +71,9 @@ Inferred types:
 Inferred types:
     <T : Any> -> Pattern
 
-'lazy' @ [95:51] ==> public fun <T> lazy(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [95:51] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
 'ClassVisitor' @ [96:22] ==> public constructor ClassVisitor(p0: Int, p1: (ClassVisitor..ClassVisitor?)) defined in org.jetbrains.org.objectweb.asm.ClassVisitor[JavaClassConstructorDescriptor]
 
@@ -88,8 +84,6 @@ Inferred types:
 'getVisitor' @ [96:55] ==> @NotNull public open fun getVisitor(): ClassVisitor defined in org.jetbrains.kotlin.codegen.DelegatingClassBuilder[JavaMethodDescriptor]
 
 'recordAnnotation' @ [98:21] ==> private final fun recordAnnotation(name: String?, type: String, annotationDesc: String): Unit defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.AnnotationCollectorClassBuilder[SimpleFunctionDescriptorImpl]
-
-'RecordTypes' @ [98:44] ==> private object RecordTypes defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase[FakeCallableDescriptorForObject]
 
 'ANNOTATED_CLASS' @ [98:56] ==> public final val ANNOTATED_CLASS: String defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.RecordTypes[PropertyDescriptorImpl]
 
@@ -179,8 +173,6 @@ Inferred types:
 
 'name' @ [144:38] ==> value-parameter name: String defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.AnnotationCollectorClassBuilder.newField[ValueParameterDescriptorImpl]
 
-'RecordTypes' @ [144:44] ==> private object RecordTypes defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase[FakeCallableDescriptorForObject]
-
 'ANNOTATED_FIELD' @ [144:56] ==> public final val ANNOTATED_FIELD: String defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.RecordTypes[PropertyDescriptorImpl]
 
 'desc' @ [144:73] ==> value-parameter desc: String defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.AnnotationCollectorClassBuilder.newField.<no name provided>.visitAnnotation[ValueParameterDescriptorImpl]
@@ -216,8 +208,6 @@ Inferred types:
 'recordAnnotation' @ [160:21] ==> private final fun recordAnnotation(name: String?, type: String, annotationDesc: String): Unit defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.AnnotationCollectorClassBuilder[SimpleFunctionDescriptorImpl]
 
 'name' @ [160:38] ==> value-parameter name: String defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.AnnotationCollectorClassBuilder.newMethod[ValueParameterDescriptorImpl]
-
-'RecordTypes' @ [160:44] ==> private object RecordTypes defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase[FakeCallableDescriptorForObject]
 
 'ANNOTATED_METHOD' @ [160:56] ==> public final val ANNOTATED_METHOD: String defined in org.jetbrains.kotlin.annotation.AnnotationCollectorExtensionBase.RecordTypes[PropertyDescriptorImpl]
 

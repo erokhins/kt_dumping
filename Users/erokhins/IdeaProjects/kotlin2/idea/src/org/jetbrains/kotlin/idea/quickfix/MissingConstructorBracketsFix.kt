@@ -55,3 +55,5 @@ Inferred types:
 Inferred types:
     <reified T : PsiElement> -> KtPrimaryConstructor
 
+'MissingConstructorBracketsFix' @ [48:66] ==> public constructor MissingConstructorBracketsFix(element: KtPrimaryConstructor) defined in org.jetbrains.kotlin.idea.quickfix.MissingConstructorBracketsFix[ClassConstructorDescriptorImpl]
+

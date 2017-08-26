@@ -128,7 +128,7 @@ Inferred types:
 
 'originalDescriptor' @ [90:24] ==> value-parameter originalDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.quickfix.AddFunctionParametersFix.addParameterConfiguration.<no name provided>.configure[ValueParameterDescriptorImpl]
 
-'modify' @ [90:43] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'modify' @ [90:43] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'callElement' @ [91:39] ==> private final val callElement: KtCallElement? defined in org.jetbrains.kotlin.idea.quickfix.AddFunctionParametersFix[PropertyDescriptorImpl]
 

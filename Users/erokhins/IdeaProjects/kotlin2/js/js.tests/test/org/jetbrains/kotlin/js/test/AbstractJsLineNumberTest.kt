@@ -17,8 +17,8 @@ Inferred types:
 
 'createTestFiles' @ [61:46] ==> @NotNull public open fun <M : (Any..Any?), F : (Any..Any?)> createTestFiles(p0: (String..String?), p1: (String..String?), p2: (KotlinTestUtils.TestFileFactory<(AbstractJsLineNumberTest.TestModule..AbstractJsLineNumberTest.TestModule?), (AbstractJsLineNumberTest.TestFile..AbstractJsLineNumberTest.TestFile?)>..KotlinTestUtils.TestFileFactory<(AbstractJsLineNumberTest.TestModule..AbstractJsLineNumberTest.TestModule?), (AbstractJsLineNumberTest.TestFile..AbstractJsLineNumberTest.TestFile?)>?), p3: Boolean): (MutableList<(AbstractJsLineNumberTest.TestFile..AbstractJsLineNumberTest.TestFile?)>..List<(AbstractJsLineNumberTest.TestFile..AbstractJsLineNumberTest.TestFile?)>) defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 Inferred types:
-    <M : (Any..Any?)> -> TestModule
-    <F : (Any..Any?)> -> TestFile
+    <M : (Any..Any?)> -> (org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.TestModule..org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.TestModule?)
+    <F : (Any..Any?)> -> (org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.TestFile..org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.TestFile?)
 
 'file' @ [61:62] ==> val file: File defined in org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.doTest[LocalVariableDescriptor]
 
@@ -54,7 +54,7 @@ Inferred types:
 
 'topologicalOrder' @ [66:38] ==> public final fun <N : (Any..Any?)> topologicalOrder(@NotNull p0: (MutableIterable<(AbstractJsLineNumberTest.TestModule..AbstractJsLineNumberTest.TestModule?)>..Iterable<(AbstractJsLineNumberTest.TestModule..AbstractJsLineNumberTest.TestModule?)>), @NotNull p1: ((AbstractJsLineNumberTest.TestModule..AbstractJsLineNumberTest.TestModule?)) -> (MutableIterable<(AbstractJsLineNumberTest.TestModule..AbstractJsLineNumberTest.TestModule?)>..Iterable<(AbstractJsLineNumberTest.TestModule..AbstractJsLineNumberTest.TestModule?)>)): (MutableList<(AbstractJsLineNumberTest.TestModule..AbstractJsLineNumberTest.TestModule?)>..List<(AbstractJsLineNumberTest.TestModule..AbstractJsLineNumberTest.TestModule?)>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> TestModule
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.TestModule..org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.TestModule?)
 
 'modules' @ [66:55] ==> val modules: Map<String, AbstractJsLineNumberTest.TestModule> defined in org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.doTest.<anonymous>[LocalVariableDescriptor]
 
@@ -394,9 +394,9 @@ Inferred types:
 
 'configuration' @ [138:9] ==> val configuration: (CompilerConfiguration..CompilerConfiguration?) defined in org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.createConfig[LocalVariableDescriptor]
 
-'put' @ [138:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(List<String>..List<(String..String?)>?)>, @NotNull p1: (List<String>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
+'put' @ [138:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableList<(String..String?)>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<(kotlin.String..kotlin.String?)>)
+    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(kotlin.String..kotlin.String?)>..kotlin.collections.List<(kotlin.String..kotlin.String?)>?)
 
 'LIBRARIES' @ [138:47] ==> public final val LIBRARIES: (CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>..CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -414,9 +414,7 @@ Inferred types:
 
 'put' @ [140:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [140:27] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [140:51] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -428,7 +426,7 @@ Inferred types:
 
 'put' @ [141:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(ModuleKind..ModuleKind?)>, @NotNull p1: ModuleKind): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleKind
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.js.ModuleKind..org.jetbrains.kotlin.serialization.js.ModuleKind?)
 
 'MODULE_KIND' @ [141:47] ==> public final val MODULE_KIND: (CompilerConfigurationKey<(ModuleKind..ModuleKind?)>..CompilerConfigurationKey<(ModuleKind..ModuleKind?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -438,7 +436,7 @@ Inferred types:
 
 'put' @ [142:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(EcmaVersion..EcmaVersion?)>, @NotNull p1: EcmaVersion): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> EcmaVersion
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.js.config.EcmaVersion..org.jetbrains.kotlin.js.config.EcmaVersion?)
 
 'TARGET' @ [142:47] ==> public final val TARGET: (CompilerConfigurationKey<(EcmaVersion..EcmaVersion?)>..CompilerConfigurationKey<(EcmaVersion..EcmaVersion?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -448,7 +446,7 @@ Inferred types:
 
 'put' @ [144:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'SOURCE_MAP' @ [144:47] ==> public final val SOURCE_MAP: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -482,8 +480,6 @@ Inferred types:
 
 'TestModule' @ [158:29] ==> public constructor TestModule(name: String, dependencies: List<String>) defined in org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.TestModule[ClassConstructorDescriptorImpl]
 
-'BasicBoxTest' @ [158:40] ==> public companion object defined in org.jetbrains.kotlin.js.test.BasicBoxTest[FakeCallableDescriptorForObject]
-
 'TEST_MODULE' @ [158:53] ==> public final val TEST_MODULE: String defined in org.jetbrains.kotlin.js.test.BasicBoxTest.Companion[PropertyDescriptorImpl]
 
 'emptyList' @ [158:66] ==> public fun <T> emptyList(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -515,8 +511,6 @@ Inferred types:
 'writeText' @ [165:27] ==> public fun File.writeText(text: String, charset: Charset = ...): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
 'text' @ [165:37] ==> value-parameter text: String defined in org.jetbrains.kotlin.js.test.AbstractJsLineNumberTest.TestFileFactoryImpl.createFile[ValueParameterDescriptorImpl]
-
-'Charsets' @ [165:43] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
 
 'UTF_8' @ [165:52] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 

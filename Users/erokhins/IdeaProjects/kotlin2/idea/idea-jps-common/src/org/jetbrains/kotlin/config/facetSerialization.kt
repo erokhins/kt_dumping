@@ -12,7 +12,7 @@ Inferred types:
 
 'name' @ [31:108] ==> value-parameter name: String defined in org.jetbrains.kotlin.config.getOption[ValueParameterDescriptorImpl]
 
-'getOption' @ [33:52] ==> public fun Element.getOption(name: String): Element? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOption' @ [33:52] ==> public fun Element.getOption(name: String): Element? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [33:62] ==> value-parameter name: String defined in org.jetbrains.kotlin.config.getOptionValue[ValueParameterDescriptorImpl]
 
@@ -20,7 +20,7 @@ Inferred types:
 
 'value' @ [33:92] ==> public final var Attribute.value: (String..String?)[MyPropertyDescriptor]
 
-'getOption' @ [35:51] ==> public fun Element.getOption(name: String): Element? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOption' @ [35:51] ==> public fun Element.getOption(name: String): Element? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [35:61] ==> value-parameter name: String defined in org.jetbrains.kotlin.config.getOptionBody[ValueParameterDescriptorImpl]
 
@@ -38,27 +38,29 @@ Inferred types:
 
 'element' @ [39:34] ==> value-parameter element: Element defined in org.jetbrains.kotlin.config.readV1Config[ValueParameterDescriptorImpl]
 
-'getOptionValue' @ [39:42] ==> private fun Element.getOptionValue(name: String): String? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOptionValue' @ [39:42] ==> private fun Element.getOptionValue(name: String): String? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'toBoolean' @ [39:80] ==> @InlineOnly public inline fun String.toBoolean(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [41:34] ==> value-parameter element: Element defined in org.jetbrains.kotlin.config.readV1Config[ValueParameterDescriptorImpl]
 
-'getOptionBody' @ [41:42] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOptionBody' @ [41:42] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'versionInfoElement' @ [42:34] ==> val versionInfoElement: Element? defined in org.jetbrains.kotlin.config.readV1Config.<anonymous>[LocalVariableDescriptor]
 
-'getOptionValue' @ [42:54] ==> private fun Element.getOptionValue(name: String): String? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOptionValue' @ [42:54] ==> private fun Element.getOptionValue(name: String): String? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'versionInfoElement' @ [43:29] ==> val versionInfoElement: Element? defined in org.jetbrains.kotlin.config.readV1Config.<anonymous>[LocalVariableDescriptor]
 
-'getOptionValue' @ [43:49] ==> private fun Element.getOptionValue(name: String): String? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOptionValue' @ [43:49] ==> private fun Element.getOptionValue(name: String): String? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'versionInfoElement' @ [44:24] ==> val versionInfoElement: Element? defined in org.jetbrains.kotlin.config.readV1Config.<anonymous>[LocalVariableDescriptor]
 
-'getOptionValue' @ [44:44] ==> private fun Element.getOptionValue(name: String): String? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOptionValue' @ [44:44] ==> private fun Element.getOptionValue(name: String): String? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
-'TargetPlatformKind' @ [45:30] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
+'?:' @ [45:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: TargetPlatformKind<TargetPlatformVersion>?, right: TargetPlatformKind<TargetPlatformVersion>): TargetPlatformKind<TargetPlatformVersion>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> TargetPlatformKind<TargetPlatformVersion>
 
 'ALL_PLATFORMS' @ [45:49] ==> public final val ALL_PLATFORMS: List<TargetPlatformKind<*>> defined in org.jetbrains.kotlin.config.TargetPlatformKind.Companion[PropertyDescriptorImpl]
 
@@ -76,13 +78,11 @@ Inferred types:
 
 'Jvm' @ [46:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [46:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [46:66] ==> @field:JvmField public final val DEFAULT: JvmTarget defined in org.jetbrains.kotlin.config.JvmTarget.Companion[DeserializedPropertyDescriptor]
 
 'element' @ [48:35] ==> value-parameter element: Element defined in org.jetbrains.kotlin.config.readV1Config[ValueParameterDescriptorImpl]
 
-'getOptionBody' @ [48:43] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOptionBody' @ [48:43] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'CompilerSettings' @ [50:32] ==> public constructor CompilerSettings() defined in org.jetbrains.kotlin.config.CompilerSettings[ClassConstructorDescriptorImpl]
 
@@ -92,7 +92,7 @@ Inferred types:
 
 'compilerInfoElement' @ [51:13] ==> val compilerInfoElement: Element? defined in org.jetbrains.kotlin.config.readV1Config.<anonymous>[LocalVariableDescriptor]
 
-'getOptionBody' @ [51:34] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOptionBody' @ [51:34] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [51:69] ==> @InlineOnly public inline fun <T, R> Element.let(block: (Element) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -107,19 +107,19 @@ Inferred types:
 
 'compilerInfoElement' @ [56:38] ==> val compilerInfoElement: Element? defined in org.jetbrains.kotlin.config.readV1Config.<anonymous>[LocalVariableDescriptor]
 
-'getOptionBody' @ [56:59] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOptionBody' @ [56:59] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'compilerInfoElement' @ [57:35] ==> val compilerInfoElement: Element? defined in org.jetbrains.kotlin.config.readV1Config.<anonymous>[LocalVariableDescriptor]
 
-'getOptionBody' @ [57:56] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOptionBody' @ [57:56] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'compilerInfoElement' @ [58:34] ==> val compilerInfoElement: Element? defined in org.jetbrains.kotlin.config.readV1Config.<anonymous>[LocalVariableDescriptor]
 
-'getOptionBody' @ [58:55] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOptionBody' @ [58:55] ==> private fun Element.getOptionBody(name: String): Element? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
-'targetPlatform' @ [60:33] ==> val targetPlatform: TargetPlatformKind<*> defined in org.jetbrains.kotlin.config.readV1Config.<anonymous>[LocalVariableDescriptor]
+'targetPlatform' @ [60:33] ==> val targetPlatform: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.config.readV1Config.<anonymous>[LocalVariableDescriptor]
 
-'createCompilerArguments' @ [60:48] ==> public fun TargetPlatformKind<*>.createCompilerArguments(init: CommonCompilerArguments.() -> Unit = ...): CommonCompilerArguments defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'createCompilerArguments' @ [60:48] ==> public fun TargetPlatformKind<*>.createCompilerArguments(init: CommonCompilerArguments.() -> Unit = ...): CommonCompilerArguments defined in org.jetbrains.kotlin.config in file KotlinFacetSettings.kt[SimpleFunctionDescriptorImpl]
 
 'commonArgumentsElement' @ [62:9] ==> val commonArgumentsElement: Element? defined in org.jetbrains.kotlin.config.readV1Config.<anonymous>[LocalVariableDescriptor]
 
@@ -250,7 +250,9 @@ Inferred types:
 
 'getAttributeValue' @ [96:36] ==> public open fun getAttributeValue(p0: (String..String?)): (String..String?) defined in org.jdom.Element[JavaMethodDescriptor]
 
-'TargetPlatformKind' @ [97:28] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
+'?:' @ [97:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: TargetPlatformKind<*>?, right: TargetPlatformKind<*>): TargetPlatformKind<*>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> TargetPlatformKind<*>
 
 'ALL_PLATFORMS' @ [97:47] ==> public final val ALL_PLATFORMS: List<TargetPlatformKind<*>> defined in org.jetbrains.kotlin.config.TargetPlatformKind.Companion[PropertyDescriptorImpl]
 
@@ -263,8 +265,6 @@ Inferred types:
 'description' @ [97:78] ==> public open val description: String defined in org.jetbrains.kotlin.config.TargetPlatformKind[PropertyDescriptorImpl]
 
 'platformName' @ [97:93] ==> val platformName: (String..String?) defined in org.jetbrains.kotlin.config.readV2AndLaterConfig.<anonymous>[LocalVariableDescriptor]
-
-'TargetPlatformKind' @ [97:111] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'DEFAULT_PLATFORM' @ [97:130] ==> public final val DEFAULT_PLATFORM: TargetPlatformKind<*> defined in org.jetbrains.kotlin.config.TargetPlatformKind.Companion[PropertyDescriptorImpl]
 
@@ -300,7 +300,7 @@ Inferred types:
 
 'platformKind' @ [103:33] ==> val platformKind: TargetPlatformKind<*> defined in org.jetbrains.kotlin.config.readV2AndLaterConfig.<anonymous>[LocalVariableDescriptor]
 
-'createCompilerArguments' @ [103:46] ==> public fun TargetPlatformKind<*>.createCompilerArguments(init: CommonCompilerArguments.() -> Unit = ...): CommonCompilerArguments defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'createCompilerArguments' @ [103:46] ==> public fun TargetPlatformKind<*>.createCompilerArguments(init: CommonCompilerArguments.() -> Unit = ...): CommonCompilerArguments defined in org.jetbrains.kotlin.config in file KotlinFacetSettings.kt[SimpleFunctionDescriptorImpl]
 
 'deserializeInto' @ [104:27] ==> public open fun deserializeInto(@NotNull p0: Any, @NotNull p1: Element): Unit defined in com.intellij.util.xmlb.XmlSerializer[JavaMethodDescriptor]
 
@@ -429,8 +429,6 @@ Inferred types:
 'getAttribute' @ [131:25] ==> public open fun getAttribute(p0: (String..String?)): (Attribute..Attribute?) defined in org.jdom.Element[JavaMethodDescriptor]
 
 'intValue' @ [131:50] ==> public final val Attribute.intValue: Int[MyPropertyDescriptor]
-
-'KotlinFacetSettings' @ [135:18] ==> public companion object defined in org.jetbrains.kotlin.config.KotlinFacetSettings[FakeCallableDescriptorForObject]
 
 'DEFAULT_VERSION' @ [135:38] ==> public final val DEFAULT_VERSION: Int defined in org.jetbrains.kotlin.config.KotlinFacetSettings.Companion[PropertyDescriptorImpl]
 
@@ -604,38 +602,38 @@ Inferred types:
 
 'java' @ [174:69] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'isInterface' @ [174:74] ==> public final val <T : (Any..Any?)> Class<out Any>.isInterface: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'LinkedHashMap' @ [177:18] ==> public final fun <K, V> <init>(): LinkedHashMap<String, Int> /* = LinkedHashMap<String, Int> */ defined in kotlin.collections.LinkedHashMap[TypeAliasConstructorDescriptorImpl]
 Inferred types:
     <K> -> String
     <V> -> Int
 
-'generateSequence' @ [179:5] ==> @LowPriorityInOverloadResolution public fun <T : Any> generateSequence(seed: Class<out (Any..Any?)>?, nextFunction: (Class<out (Any..Any?)>) -> Class<out (Any..Any?)>?): Sequence<Class<out (Any..Any?)>> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'generateSequence' @ [179:5] ==> @LowPriorityInOverloadResolution public fun <T : Any> generateSequence(seed: Class<out Any?>?, nextFunction: (Class<out Any?>) -> Class<out Any?>?): Sequence<Class<out Any?>> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : Any> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <T : Any> -> Class<out Any?>
 
 'this' @ [179:22] ==> <this> defined in org.jetbrains.kotlin.config.computeNormalPropertyOrdering[ReceiverParameterDescriptorImpl]
 
-'it' @ [179:30] ==> value-parameter it: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.config.computeNormalPropertyOrdering.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [179:30] ==> value-parameter it: Class<*> defined in org.jetbrains.kotlin.config.computeNormalPropertyOrdering.<anonymous>[ValueParameterDescriptorImpl]
 
-'superclass' @ [179:33] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [179:33] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'forEach' @ [179:46] ==> public inline fun <T> Sequence<Class<out (Any..Any?)>>.forEach(action: (Class<out (Any..Any?)>) -> Unit): Unit defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [179:46] ==> public inline fun <T> Sequence<Class<out Any?>>.forEach(action: (Class<out Any?>) -> Unit): Unit defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <T> -> Class<out Any?>
 
-'clazz' @ [180:23] ==> value-parameter clazz: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.config.computeNormalPropertyOrdering.<anonymous>[ValueParameterDescriptorImpl]
+'clazz' @ [180:23] ==> value-parameter clazz: Class<out Any?> defined in org.jetbrains.kotlin.config.computeNormalPropertyOrdering.<anonymous>[ValueParameterDescriptorImpl]
 
-'declaredFields' @ [180:29] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
+'declaredFields' @ [180:29] ==> public final val <T : (Any..Any?)> Class<out Any?>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out Any?)
 
 'field' @ [181:17] ==> val field: (Field..Field?) defined in org.jetbrains.kotlin.config.computeNormalPropertyOrdering.<anonymous>[LocalVariableDescriptor]
 
@@ -691,7 +689,7 @@ Inferred types:
 
 'this' @ [197:76] ==> <this> defined in org.jetbrains.kotlin.config.normalOrdering[ReceiverParameterDescriptorImpl]
 
-'computeNormalPropertyOrdering' @ [197:84] ==> private fun Class<*>.computeNormalPropertyOrdering(): Map<String, Int> defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'computeNormalPropertyOrdering' @ [197:84] ==> private fun Class<*>.computeNormalPropertyOrdering(): Map<String, Int> defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'bean' @ [203:26] ==> value-parameter bean: Any defined in org.jetbrains.kotlin.config.restoreNormalOrdering[ValueParameterDescriptorImpl]
 
@@ -774,16 +772,16 @@ Inferred types:
 
 'targetPlatformKind' @ [221:5] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[PropertyDescriptorImpl]
 
-'let' @ [221:25] ==> @InlineOnly public inline fun <T, R> TargetPlatformKind<TargetPlatformVersion>.let(block: (TargetPlatformKind<TargetPlatformVersion>) -> (Element..Element?)): (Element..Element?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [221:25] ==> @InlineOnly public inline fun <T, R> TargetPlatformKind<*>.let(block: (TargetPlatformKind<*>) -> (Element..Element?)): (Element..Element?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TargetPlatformKind<TargetPlatformVersion>
+    <T> -> TargetPlatformKind<*>
     <R> -> (org.jdom.Element..org.jdom.Element?)
 
 'element' @ [222:9] ==> value-parameter element: Element defined in org.jetbrains.kotlin.config.writeLatestConfig[ValueParameterDescriptorImpl]
 
 'setAttribute' @ [222:17] ==> public open fun setAttribute(p0: (String..String?), p1: (String..String?)): (Element..Element?) defined in org.jdom.Element[JavaMethodDescriptor]
 
-'it' @ [222:42] ==> value-parameter it: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.config.writeLatestConfig.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [222:42] ==> value-parameter it: TargetPlatformKind<*> defined in org.jetbrains.kotlin.config.writeLatestConfig.<anonymous>[ValueParameterDescriptorImpl]
 
 'description' @ [222:45] ==> public open val description: String defined in org.jetbrains.kotlin.config.TargetPlatformKind[PropertyDescriptorImpl]
 
@@ -874,7 +872,7 @@ Inferred types:
 
 'it' @ [241:9] ==> value-parameter it: Element defined in org.jetbrains.kotlin.config.writeV2Config.<anonymous>[ValueParameterDescriptorImpl]
 
-'getOption' @ [241:12] ==> public fun Element.getOption(name: String): Element? defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'getOption' @ [241:12] ==> public fun Element.getOption(name: String): Element? defined in org.jetbrains.kotlin.config in file facetSerialization.kt[SimpleFunctionDescriptorImpl]
 
 'detach' @ [241:42] ==> public open fun detach(): (Content..Content?) defined in org.jdom.Element[JavaMethodDescriptor]
 
@@ -930,8 +928,6 @@ Inferred types:
 'version' @ [259:30] ==> public final var version: Int defined in org.jetbrains.kotlin.config.KotlinFacetSettings[PropertyDescriptorImpl]
 
 'version' @ [259:44] ==> public final var version: Int defined in org.jetbrains.kotlin.config.KotlinFacetSettings[PropertyDescriptorImpl]
-
-'KotlinFacetSettings' @ [259:57] ==> public companion object defined in org.jetbrains.kotlin.config.KotlinFacetSettings[FakeCallableDescriptorForObject]
 
 'CURRENT_VERSION' @ [259:77] ==> public final val CURRENT_VERSION: Int defined in org.jetbrains.kotlin.config.KotlinFacetSettings.Companion[PropertyDescriptorImpl]
 

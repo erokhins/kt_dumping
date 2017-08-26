@@ -286,7 +286,7 @@ Inferred types:
 
 'expression' @ [119:92] ==> public final val KtWhenConditionWithExpression.expression: KtExpression?[MyPropertyDescriptor]
 
-'appendConditionWithSubjectRemoved' @ [120:21] ==> private fun BuilderByPattern<KtExpression>.appendConditionWithSubjectRemoved(conditionExpression: KtExpression?, subject: KtExpression): Unit defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations[SimpleFunctionDescriptorImpl]
+'appendConditionWithSubjectRemoved' @ [120:21] ==> private fun BuilderByPattern<KtExpression>.appendConditionWithSubjectRemoved(conditionExpression: KtExpression?, subject: KtExpression): Unit defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file branchedTransformationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'conditionExpression' @ [120:55] ==> val conditionExpression: KtExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.introduceSubject.<anonymous>[LocalVariableDescriptor]
 
@@ -429,7 +429,7 @@ Inferred types:
 
 'OROR' @ [155:26] ==> public final val OROR: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'appendConditionWithSubjectRemoved' @ [156:21] ==> private fun BuilderByPattern<KtExpression>.appendConditionWithSubjectRemoved(conditionExpression: KtExpression?, subject: KtExpression): Unit defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations[SimpleFunctionDescriptorImpl]
+'appendConditionWithSubjectRemoved' @ [156:21] ==> private fun BuilderByPattern<KtExpression>.appendConditionWithSubjectRemoved(conditionExpression: KtExpression?, subject: KtExpression): Unit defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file branchedTransformationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lhs' @ [156:55] ==> val lhs: KtExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.appendConditionWithSubjectRemoved[LocalVariableDescriptor]
 
@@ -437,7 +437,7 @@ Inferred types:
 
 'appendFixedText' @ [157:21] ==> public final fun appendFixedText(text: String): BuilderByPattern<KtExpression> defined in org.jetbrains.kotlin.psi.BuilderByPattern[DeserializedSimpleFunctionDescriptor]
 
-'appendConditionWithSubjectRemoved' @ [158:21] ==> private fun BuilderByPattern<KtExpression>.appendConditionWithSubjectRemoved(conditionExpression: KtExpression?, subject: KtExpression): Unit defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations[SimpleFunctionDescriptorImpl]
+'appendConditionWithSubjectRemoved' @ [158:21] ==> private fun BuilderByPattern<KtExpression>.appendConditionWithSubjectRemoved(conditionExpression: KtExpression?, subject: KtExpression): Unit defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file branchedTransformationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'rhs' @ [158:55] ==> val rhs: KtExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.appendConditionWithSubjectRemoved[LocalVariableDescriptor]
 

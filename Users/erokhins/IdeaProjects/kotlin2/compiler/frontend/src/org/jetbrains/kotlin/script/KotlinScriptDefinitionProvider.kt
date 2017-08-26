@@ -127,7 +127,7 @@ Inferred types:
 
 'getService' @ [75:32] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(KotlinScriptDefinitionProvider..KotlinScriptDefinitionProvider?)>): (KotlinScriptDefinitionProvider..KotlinScriptDefinitionProvider?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinScriptDefinitionProvider
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider..org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider?)
 
 'project' @ [75:43] ==> value-parameter project: Project defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider.Companion.getInstance[ValueParameterDescriptorImpl]
 

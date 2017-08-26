@@ -24,7 +24,7 @@
 
 'subscribe' @ [46:20] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(ModuleRootListener..ModuleRootListener?)>, @NotNull p1: ModuleRootListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> ModuleRootListener
+    <L : (Any..Any?)> -> (com.intellij.openapi.roots.ModuleRootListener..com.intellij.openapi.roots.ModuleRootListener?)
 
 'PROJECT_ROOTS' @ [46:44] ==> public final val PROJECT_ROOTS: (Topic<(ModuleRootListener..ModuleRootListener?)>..Topic<(ModuleRootListener..ModuleRootListener?)>?) defined in com.intellij.ProjectTopics[JavaPropertyDescriptor]
 
@@ -50,13 +50,13 @@ Inferred types:
 
 'notificationPostponed' @ [52:29] ==> @Volatile private final var notificationPostponed: Boolean defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent[PropertyDescriptorImpl]
 
-'showConfigureKotlinNotificationIfNeeded' @ [53:29] ==> public fun showConfigureKotlinNotificationIfNeeded(project: Project, excludeModules: List<Module> = ...): Unit defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'showConfigureKotlinNotificationIfNeeded' @ [53:29] ==> public fun showConfigureKotlinNotificationIfNeeded(project: Project, excludeModules: List<Module> = ...): Unit defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'myProject' @ [53:69] ==> protected/*protected and package*/ final val myProject: (Project..Project?) defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent[JavaPropertyDescriptor]
 
-'collectModulesWithOutdatedRuntime' @ [54:69] ==> public fun collectModulesWithOutdatedRuntime(libraries: List<VersionedLibrary>): List<Module> defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'collectModulesWithOutdatedRuntime' @ [54:69] ==> public fun collectModulesWithOutdatedRuntime(libraries: List<VersionedLibrary>): List<Module> defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
-'findOutdatedKotlinLibraries' @ [54:103] ==> public fun findOutdatedKotlinLibraries(project: Project): List<VersionedLibrary> defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'findOutdatedKotlinLibraries' @ [54:103] ==> public fun findOutdatedKotlinLibraries(project: Project): List<VersionedLibrary> defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
 'myProject' @ [54:131] ==> protected/*protected and package*/ final val myProject: (Project..Project?) defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent[JavaPropertyDescriptor]
 
@@ -84,7 +84,7 @@ Inferred types:
 
 'waitForSmartMode' @ [69:52] ==> public abstract fun waitForSmartMode(): Unit defined in com.intellij.openapi.project.DumbService[JavaMethodDescriptor]
 
-'getModulesWithKotlinFiles' @ [71:32] ==> public fun getModulesWithKotlinFiles(project: Project): Collection<Module> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getModulesWithKotlinFiles' @ [71:32] ==> public fun getModulesWithKotlinFiles(project: Project): Collection<Module> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'myProject' @ [71:58] ==> protected/*protected and package*/ final val myProject: (Project..Project?) defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent[JavaPropertyDescriptor]
 
@@ -92,7 +92,7 @@ Inferred types:
 
 'getAndCacheLanguageLevelByDependencies' @ [72:28] ==> public fun Module.getAndCacheLanguageLevelByDependencies(): LanguageVersion defined in org.jetbrains.kotlin.idea.project[DeserializedSimpleFunctionDescriptor]
 
-'findOutdatedKotlinLibraries' @ [75:33] ==> public fun findOutdatedKotlinLibraries(project: Project): List<VersionedLibrary> defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'findOutdatedKotlinLibraries' @ [75:33] ==> public fun findOutdatedKotlinLibraries(project: Project): List<VersionedLibrary> defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
 'myProject' @ [75:61] ==> protected/*protected and package*/ final val myProject: (Project..Project?) defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent[JavaPropertyDescriptor]
 
@@ -106,7 +106,7 @@ Inferred types:
 
 'invokeLater' @ [77:57] ==> public final fun invokeLater(@NotNull p0: () -> Unit): Unit defined in com.intellij.openapi.application.Application[MyFunctionDescriptor]
 
-'notifyOutdatedKotlinRuntime' @ [78:25] ==> public fun notifyOutdatedKotlinRuntime(project: Project, outdatedLibraries: Collection<VersionedLibrary>): Unit defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'notifyOutdatedKotlinRuntime' @ [78:25] ==> public fun notifyOutdatedKotlinRuntime(project: Project, outdatedLibraries: Collection<VersionedLibrary>): Unit defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
 'myProject' @ [78:53] ==> protected/*protected and package*/ final val myProject: (Project..Project?) defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent[JavaPropertyDescriptor]
 
@@ -126,11 +126,11 @@ Inferred types:
 
 'isSyncing' @ [81:22] ==> public final val isSyncing: Boolean defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent[PropertyDescriptorImpl]
 
-'collectModulesWithOutdatedRuntime' @ [82:42] ==> public fun collectModulesWithOutdatedRuntime(libraries: List<VersionedLibrary>): List<Module> defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'collectModulesWithOutdatedRuntime' @ [82:42] ==> public fun collectModulesWithOutdatedRuntime(libraries: List<VersionedLibrary>): List<Module> defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
 'libraries' @ [82:76] ==> val libraries: List<VersionedLibrary> defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent.projectOpened.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'showConfigureKotlinNotificationIfNeeded' @ [83:21] ==> public fun showConfigureKotlinNotificationIfNeeded(project: Project, excludeModules: List<Module> = ...): Unit defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'showConfigureKotlinNotificationIfNeeded' @ [83:21] ==> public fun showConfigureKotlinNotificationIfNeeded(project: Project, excludeModules: List<Module> = ...): Unit defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'myProject' @ [83:61] ==> protected/*protected and package*/ final val myProject: (Project..Project?) defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent[JavaPropertyDescriptor]
 
@@ -154,7 +154,7 @@ Inferred types:
 
 'getComponent' @ [106:27] ==> public abstract fun <T : (Any..Any?)> getComponent(@NotNull p0: Class<(KotlinConfigurationCheckerComponent..KotlinConfigurationCheckerComponent?)>): (KotlinConfigurationCheckerComponent..KotlinConfigurationCheckerComponent?) defined in com.intellij.openapi.project.Project[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinConfigurationCheckerComponent
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent..org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent?)
 
 'KotlinConfigurationCheckerComponent' @ [106:40] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent[FakeCallableDescriptorForObject]
 

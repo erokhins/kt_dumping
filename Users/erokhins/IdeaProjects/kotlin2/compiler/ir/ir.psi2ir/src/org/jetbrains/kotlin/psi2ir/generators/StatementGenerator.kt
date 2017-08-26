@@ -68,11 +68,11 @@ Inferred types:
 
 'java' @ [75:65] ==> public val <T> KClass<out KtExpression>.java: Class<out KtExpression> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtExpression
+    <T> -> Captured(out KtExpression)
 
 'simpleName' @ [75:70] ==> public final val <T : (Any..Any?)> Class<out KtExpression>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> Captured(out KtExpression)
 
 'getOrFail' @ [78:34] ==> public fun <K, V : Any> Generator.getOrFail(slice: ReadOnlySlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>, key: (PsiElement..PsiElement?)): (VariableDescriptor..VariableDescriptor?) defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -460,9 +460,9 @@ Inferred types:
                     else -> {
                         scopeOwnerAsCallable()
                     }
-                }' @ [166:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: CallableDescriptor, entry1: CallableDescriptor, entry2: CallableDescriptor): CallableDescriptor[SimpleFunctionDescriptorImpl]
+                }' @ [166:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (CallableDescriptor..CallableDescriptor?), entry1: (CallableDescriptor..CallableDescriptor?), entry2: (CallableDescriptor..CallableDescriptor?)): (CallableDescriptor..CallableDescriptor?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> CallableDescriptor
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
 
 'label' @ [167:21] ==> val label: KtSimpleNameExpression? defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.getReturnExpressionTarget[LocalVariableDescriptor]
 
@@ -524,7 +524,9 @@ Inferred types:
 
 'expression' @ [186:40] ==> value-parameter expression: KtConstantExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.visitConstantExpression[ValueParameterDescriptorImpl]
 
-'ConstantExpressionEvaluator' @ [187:40] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [187:40] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CompileTimeConstant<*>?, right: CompileTimeConstant<*>): CompileTimeConstant<*>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CompileTimeConstant<*>
 
 'getConstant' @ [187:68] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -581,8 +583,6 @@ Inferred types:
 
 'constantValue' @ [194:22] ==> val constantValue: ConstantValue<Any?> defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[LocalVariableDescriptor]
 
-'IrConstImpl' @ [196:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
-
 'string' @ [196:29] ==> public final fun string(startOffset: Int, endOffset: Int, type: KotlinType, value: String): IrConstImpl<String> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
 'expression' @ [196:36] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[ValueParameterDescriptorImpl]
@@ -598,8 +598,6 @@ Inferred types:
 'constantValue' @ [196:96] ==> val constantValue: ConstantValue<Any?> defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[LocalVariableDescriptor]
 
 'value' @ [196:110] ==> public open val value: String defined in org.jetbrains.kotlin.resolve.constants.StringValue[DeserializedPropertyDescriptor]
-
-'IrConstImpl' @ [198:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
 
 'int' @ [198:29] ==> public final fun int(startOffset: Int, endOffset: Int, type: KotlinType, value: Int): IrConstImpl<Int> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -617,8 +615,6 @@ Inferred types:
 
 'value' @ [198:107] ==> public open val value: Int defined in org.jetbrains.kotlin.resolve.constants.IntValue[DeserializedPropertyDescriptor]
 
-'IrConstImpl' @ [200:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
-
 'constNull' @ [200:29] ==> public final fun constNull(startOffset: Int, endOffset: Int, type: KotlinType): IrConstImpl<Nothing?> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
 'expression' @ [200:39] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[ValueParameterDescriptorImpl]
@@ -630,8 +626,6 @@ Inferred types:
 'endOffset' @ [200:74] ==> public val PsiElement.endOffset: Int defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 
 'constantType' @ [200:85] ==> val constantType: KotlinType defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[LocalVariableDescriptor]
-
-'IrConstImpl' @ [202:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
 
 'boolean' @ [202:29] ==> public final fun boolean(startOffset: Int, endOffset: Int, type: KotlinType, value: Boolean): IrConstImpl<Boolean> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -649,8 +643,6 @@ Inferred types:
 
 'value' @ [202:111] ==> public open val value: Boolean defined in org.jetbrains.kotlin.resolve.constants.BooleanValue[DeserializedPropertyDescriptor]
 
-'IrConstImpl' @ [204:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
-
 'long' @ [204:29] ==> public final fun long(startOffset: Int, endOffset: Int, type: KotlinType, value: Long): IrExpression defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
 'expression' @ [204:34] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[ValueParameterDescriptorImpl]
@@ -666,8 +658,6 @@ Inferred types:
 'constantValue' @ [204:94] ==> val constantValue: ConstantValue<Any?> defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[LocalVariableDescriptor]
 
 'value' @ [204:108] ==> public open val value: Long defined in org.jetbrains.kotlin.resolve.constants.LongValue[DeserializedPropertyDescriptor]
-
-'IrConstImpl' @ [206:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
 
 'double' @ [206:29] ==> public final fun double(startOffset: Int, endOffset: Int, type: KotlinType, value: Double): IrExpression defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -685,8 +675,6 @@ Inferred types:
 
 'value' @ [206:110] ==> public open val value: Double defined in org.jetbrains.kotlin.resolve.constants.DoubleValue[DeserializedPropertyDescriptor]
 
-'IrConstImpl' @ [208:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
-
 'float' @ [208:29] ==> public final fun float(startOffset: Int, endOffset: Int, type: KotlinType, value: Float): IrExpression defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
 'expression' @ [208:35] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[ValueParameterDescriptorImpl]
@@ -702,8 +690,6 @@ Inferred types:
 'constantValue' @ [208:95] ==> val constantValue: ConstantValue<Any?> defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[LocalVariableDescriptor]
 
 'value' @ [208:109] ==> public open val value: Float defined in org.jetbrains.kotlin.resolve.constants.FloatValue[DeserializedPropertyDescriptor]
-
-'IrConstImpl' @ [210:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
 
 'char' @ [210:29] ==> public final fun char(startOffset: Int, endOffset: Int, type: KotlinType, value: Char): IrExpression defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -721,8 +707,6 @@ Inferred types:
 
 'value' @ [210:108] ==> public open val value: Char defined in org.jetbrains.kotlin.resolve.constants.CharValue[DeserializedPropertyDescriptor]
 
-'IrConstImpl' @ [212:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
-
 'byte' @ [212:29] ==> public final fun byte(startOffset: Int, endOffset: Int, type: KotlinType, value: Byte): IrExpression defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
 'expression' @ [212:34] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[ValueParameterDescriptorImpl]
@@ -738,8 +722,6 @@ Inferred types:
 'constantValue' @ [212:94] ==> val constantValue: ConstantValue<Any?> defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateConstantExpression[LocalVariableDescriptor]
 
 'value' @ [212:108] ==> public open val value: Byte defined in org.jetbrains.kotlin.resolve.constants.ByteValue[DeserializedPropertyDescriptor]
-
-'IrConstImpl' @ [214:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
 
 'short' @ [214:29] ==> public final fun short(startOffset: Int, endOffset: Int, type: KotlinType, value: Short): IrExpression defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -830,8 +812,6 @@ Inferred types:
 
 'irArg' @ [229:112] ==> val irArg: IrExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.visitStringTemplateExpression[LocalVariableDescriptor]
 
-'IrConstImpl' @ [232:17] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
-
 'string' @ [232:29] ==> public final fun string(startOffset: Int, endOffset: Int, type: KotlinType, value: String): IrConstImpl<String> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
 'expression' @ [232:36] ==> value-parameter expression: KtStringTemplateExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.visitStringTemplateExpression[ValueParameterDescriptorImpl]
@@ -917,7 +897,7 @@ Inferred types:
 
 'genExpr' @ [245:32] ==> private final fun KtElement.genExpr(): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator[SimpleFunctionDescriptorImpl]
 
-'getResolvedCall' @ [248:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [248:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [248:44] ==> value-parameter expression: KtSimpleNameExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.visitSimpleNameExpression[ValueParameterDescriptorImpl]
 
@@ -935,7 +915,7 @@ Inferred types:
 
 'this' @ [253:38] ==> <this> defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator[LazyClassReceiverParameterDescriptor]
 
-'generateCall' @ [253:44] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [253:44] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [253:57] ==> value-parameter expression: KtSimpleNameExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.visitSimpleNameExpression[ValueParameterDescriptorImpl]
 
@@ -947,7 +927,7 @@ Inferred types:
 
 'resultingDescriptor' @ [256:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'generateExpressionForReferencedDescriptor' @ [258:20] ==> private final fun generateExpressionForReferencedDescriptor(descriptor: DeclarationDescriptor, expression: KtExpression, resolvedCall: ResolvedCall<*>?): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator[SimpleFunctionDescriptorImpl]
 
@@ -1000,7 +980,7 @@ Inferred types:
 
 'resolvedCall' @ [276:33] ==> value-parameter resolvedCall: ResolvedCall<*>? defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.generateExpressionForReferencedDescriptor[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [280:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [280:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [280:44] ==> value-parameter expression: KtCallExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.visitCallExpression[ValueParameterDescriptorImpl]
 
@@ -1024,7 +1004,7 @@ Inferred types:
 
 'this' @ [285:34] ==> <this> defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator[LazyClassReceiverParameterDescriptor]
 
-'generateCall' @ [285:40] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [285:40] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [285:53] ==> value-parameter expression: KtCallExpression defined in org.jetbrains.kotlin.psi2ir.generators.StatementGenerator.visitCallExpression[ValueParameterDescriptorImpl]
 

@@ -1,6 +1,6 @@
 'this' @ [36:50] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.getModuleInfo[ReceiverParameterDescriptorImpl]
 
-'getModuleInfo' @ [36:55] ==> private fun PsiElement.getModuleInfo(onFailure: (String) -> IdeaModuleInfo?): IdeaModuleInfo? defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'getModuleInfo' @ [36:55] ==> private fun PsiElement.getModuleInfo(onFailure: (String) -> IdeaModuleInfo?): IdeaModuleInfo? defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
 
 'LOG' @ [37:5] ==> internal val LOG: Logger defined in org.jetbrains.kotlin.idea.caches.resolve in file KotlinCacheServiceImpl.kt[PropertyDescriptorImpl]
 
@@ -14,7 +14,7 @@
 
 'this' @ [41:59] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.getNullableModuleInfo[ReceiverParameterDescriptorImpl]
 
-'getModuleInfo' @ [41:64] ==> private fun PsiElement.getModuleInfo(onFailure: (String) -> IdeaModuleInfo?): IdeaModuleInfo? defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'getModuleInfo' @ [41:64] ==> private fun PsiElement.getModuleInfo(onFailure: (String) -> IdeaModuleInfo?): IdeaModuleInfo? defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
 
 'LOG' @ [42:5] ==> internal val LOG: Logger defined in org.jetbrains.kotlin.idea.caches.resolve in file KotlinCacheServiceImpl.kt[PropertyDescriptorImpl]
 
@@ -37,7 +37,7 @@ Inferred types:
 
 'this' @ [49:46] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.getModuleInfo[ReceiverParameterDescriptorImpl]
 
-'getModuleInfoForLightElement' @ [49:51] ==> private fun KtLightElement<*, *>.getModuleInfoForLightElement(onFailure: (String) -> IdeaModuleInfo?): IdeaModuleInfo? defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'getModuleInfoForLightElement' @ [49:51] ==> private fun KtLightElement<*, *>.getModuleInfoForLightElement(onFailure: (String) -> IdeaModuleInfo?): IdeaModuleInfo? defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
 
 'onFailure' @ [49:80] ==> value-parameter onFailure: (String) -> IdeaModuleInfo? defined in org.jetbrains.kotlin.idea.caches.resolve.getModuleInfo[ValueParameterDescriptorImpl]
 
@@ -99,7 +99,7 @@ Inferred types:
 
 'java' @ [67:89] ==> public val <T> KClass<out KtFile>.java: Class<out KtFile> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtFile
+    <T> -> Captured(out KtFile)
 
 'containingJetFile' @ [67:129] ==> val containingJetFile: KtFile? defined in org.jetbrains.kotlin.idea.caches.resolve.getModuleInfo[LocalVariableDescriptor]
 
@@ -113,7 +113,7 @@ Inferred types:
 
 'java' @ [70:102] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'text' @ [70:141] ==> public final val PsiElement.text: (String..String?)[MyPropertyDescriptor]
 
@@ -129,7 +129,7 @@ Inferred types:
 
 'java' @ [73:74] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'containingFile' @ [73:102] ==> val containingFile: PsiFile defined in org.jetbrains.kotlin.idea.caches.resolve.getModuleInfo[LocalVariableDescriptor]
 
@@ -137,7 +137,7 @@ Inferred types:
 
 'java' @ [73:149] ==> public val <T> KClass<out PsiFile>.java: Class<out PsiFile> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiFile
+    <T> -> Captured(out PsiFile)
 
 'text' @ [73:164] ==> public final val PsiElement.text: (String..String?)[MyPropertyDescriptor]
 
@@ -236,7 +236,7 @@ Inferred types:
 
 'virtualFile' @ [110:45] ==> value-parameter virtualFile: VirtualFile defined in org.jetbrains.kotlin.idea.caches.resolve.getModuleInfoByVirtualFile[ValueParameterDescriptorImpl]
 
-'process' @ [111:14] ==> private inline fun List<OrderEntry>.process(project: Project, virtualFile: VirtualFile, treatAsLibrarySource: Boolean = ..., body: (IdeaModuleInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'process' @ [111:14] ==> private inline fun List<OrderEntry>.process(project: Project, virtualFile: VirtualFile, treatAsLibrarySource: Boolean = ..., body: (IdeaModuleInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [111:22] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.getModuleInfoByVirtualFile[ValueParameterDescriptorImpl]
 
@@ -407,7 +407,7 @@ Inferred types:
 
 'orderEntries' @ [161:5] ==> val orderEntries: (MutableList<(OrderEntry..OrderEntry?)>..List<(OrderEntry..OrderEntry?)>) defined in org.jetbrains.kotlin.idea.caches.resolve.collectModuleInfosByType[LocalVariableDescriptor]
 
-'process' @ [161:18] ==> private inline fun List<OrderEntry>.process(project: Project, virtualFile: VirtualFile, treatAsLibrarySource: Boolean = ..., body: (IdeaModuleInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'process' @ [161:18] ==> private inline fun List<OrderEntry>.process(project: Project, virtualFile: VirtualFile, treatAsLibrarySource: Boolean = ..., body: (IdeaModuleInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [161:26] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.collectModuleInfosByType[ValueParameterDescriptorImpl]
 

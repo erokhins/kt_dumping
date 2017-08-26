@@ -66,11 +66,11 @@ Inferred types:
 
 'java' @ [38:78] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'kotlin' @ [38:83] ==> public val <T : Any> Class<out Any>.kotlin: KClass<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> Captured(out Any)
 
 'history' @ [39:41] ==> value-parameter history: List<EvalClassWithInstanceAndLoader> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.prioritizedHistory.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -94,11 +94,11 @@ Inferred types:
 
 'java' @ [40:119] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'classLoader' @ [40:124] ==> public final val <T : (Any..Any?)> Class<out Any>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'history' @ [40:137] ==> value-parameter history: List<EvalClassWithInstanceAndLoader> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.prioritizedHistory.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -154,11 +154,11 @@ Inferred types:
 
 'java' @ [57:58] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'kotlin' @ [57:63] ==> public val <T : Any> Class<out Any>.kotlin: KClass<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> Captured(out Any)
 
 'thiz' @ [57:71] ==> value-parameter thiz: Any? defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeMethod[ValueParameterDescriptorImpl]
 
@@ -166,7 +166,7 @@ Inferred types:
 
 'args' @ [57:84] ==> value-parameter vararg args: Any? defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeMethod[ValueParameterDescriptorImpl]
 
-'component1' @ [63:14] ==> public final operator fun component1(): KFunction<Any?> defined in kotlin.Triple[DeserializedSimpleFunctionDescriptor]
+'component1' @ [63:14] ==> public final operator fun component1(): KFunction<*> defined in kotlin.Triple[DeserializedSimpleFunctionDescriptor]
 
 'component2' @ [63:18] ==> public final operator fun component2(): Map<KParameter, Any?> defined in kotlin.Triple[DeserializedSimpleFunctionDescriptor]
 
@@ -178,10 +178,10 @@ Inferred types:
 Inferred types:
     <T> -> EvalClassWithInstanceAndLoader
 
-'map' @ [63:78] ==> public fun <T, R> Sequence<EvalClassWithInstanceAndLoader>.map(transform: (EvalClassWithInstanceAndLoader) -> Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>?): Sequence<Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>?> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'map' @ [63:78] ==> public fun <T, R> Sequence<EvalClassWithInstanceAndLoader>.map(transform: (EvalClassWithInstanceAndLoader) -> Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>?): Sequence<Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>?> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> EvalClassWithInstanceAndLoader
-    <R> -> Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>?
+    <R> -> Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>?
 
 'component1' @ [63:85] ==> public final operator fun component1(): KClass<*> defined in org.jetbrains.kotlin.cli.common.repl.EvalClassWithInstanceAndLoader[SimpleFunctionDescriptorImpl]
 
@@ -207,7 +207,7 @@ Inferred types:
 
 'candidates' @ [65:13] ==> val candidates: List<KFunction<*>> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl.<anonymous>[LocalVariableDescriptor]
 
-'findMapping' @ [65:24] ==> private fun Iterable<KFunction<*>>.findMapping(args: List<Any?>): Pair<KFunction<*>, Map<KParameter, Any?>>? defined in org.jetbrains.kotlin.cli.common.repl[SimpleFunctionDescriptorImpl]
+'findMapping' @ [65:24] ==> private fun Iterable<KFunction<*>>.findMapping(args: List<Any?>): Pair<KFunction<*>, Map<KParameter, Any?>>? defined in org.jetbrains.kotlin.cli.common.repl in file KotlinJsr223JvmInvocableScriptEngine.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [65:36] ==> public fun <T> listOf(element: Any?): List<Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -217,14 +217,14 @@ Inferred types:
 
 'args' @ [65:55] ==> value-parameter args: Array<out Any?> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl[ValueParameterDescriptorImpl]
 
-'let' @ [65:62] ==> @InlineOnly public inline fun <T, R> Pair<KFunction<*>, Map<KParameter, Any?>>.let(block: (Pair<KFunction<*>, Map<KParameter, Any?>>) -> Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>): Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [65:62] ==> @InlineOnly public inline fun <T, R> Pair<KFunction<*>, Map<KParameter, Any?>>.let(block: (Pair<KFunction<*>, Map<KParameter, Any?>>) -> Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>): Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<KFunction<*>, Map<KParameter, Any?>>
-    <R> -> Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>
+    <R> -> Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>
 
-'Triple' @ [66:17] ==> public constructor Triple<out A, out B, out C>(first: KFunction<Any?>, second: Map<KParameter, Any?>, third: InvokeWrapper?) defined in kotlin.Triple[DeserializedClassConstructorDescriptor]
+'Triple' @ [66:17] ==> public constructor Triple<out A, out B, out C>(first: KFunction<*>, second: Map<KParameter, Any?>, third: InvokeWrapper?) defined in kotlin.Triple[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out A> -> KFunction<Any?>
+    <out A> -> KFunction<*>
     <out B> -> Map<KParameter, Any?>
     <out C> -> InvokeWrapper?
 
@@ -238,13 +238,13 @@ Inferred types:
 
 'invokeWrapper' @ [66:45] ==> val invokeWrapper: InvokeWrapper? defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl.<anonymous>[LocalVariableDescriptor]
 
-'filterNotNull' @ [68:11] ==> public fun <T : Any> Sequence<Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>?>.filterNotNull(): Sequence<Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'filterNotNull' @ [68:11] ==> public fun <T : Any> Sequence<Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>?>.filterNotNull(): Sequence<Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : Any> -> Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>
+    <T : Any> -> Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>
 
-'firstOrNull' @ [68:27] ==> public fun <T> Sequence<Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>>.firstOrNull(): Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>? defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'firstOrNull' @ [68:27] ==> public fun <T> Sequence<Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>>.firstOrNull(): Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>? defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Triple<KFunction<Any?>, Map<KParameter, Any?>, InvokeWrapper?>
+    <T> -> Triple<KFunction<*>, Map<KParameter, Any?>, InvokeWrapper?>
 
 'NoSuchMethodException' @ [68:50] ==> public constructor NoSuchMethodException(p0: (String..String?)) defined in java.lang.NoSuchMethodException[JavaClassConstructorDescriptor]
 
@@ -269,13 +269,13 @@ Inferred types:
 Inferred types:
     <T> -> Any?
 
-'fn' @ [73:21] ==> val fn: KFunction<Any?> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl[LocalVariableDescriptor]
+'fn' @ [73:21] ==> val fn: KFunction<*> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl[LocalVariableDescriptor]
 
 'callBy' @ [73:24] ==> public abstract fun callBy(args: Map<KParameter, Any?>): Any? defined in kotlin.reflect.KFunction[DeserializedSimpleFunctionDescriptor]
 
 'mapping' @ [73:31] ==> val mapping: Map<KParameter, Any?> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl[LocalVariableDescriptor]
 
-'fn' @ [77:17] ==> val fn: KFunction<Any?> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl[LocalVariableDescriptor]
+'fn' @ [77:17] ==> val fn: KFunction<*> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl[LocalVariableDescriptor]
 
 'callBy' @ [77:20] ==> public abstract fun callBy(args: Map<KParameter, Any?>): Any? defined in kotlin.reflect.KFunction[DeserializedSimpleFunctionDescriptor]
 
@@ -289,7 +289,7 @@ Inferred types:
 
 'cause' @ [82:58] ==> public open val cause: Throwable? defined in kotlin.Throwable[DeserializedPropertyDescriptor]
 
-'fn' @ [82:89] ==> val fn: KFunction<Any?> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl[LocalVariableDescriptor]
+'fn' @ [82:89] ==> val fn: KFunction<*> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl[LocalVariableDescriptor]
 
 'name' @ [82:92] ==> public abstract val name: String defined in kotlin.reflect.KFunction[DeserializedPropertyDescriptor]
 
@@ -297,7 +297,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Any?
 
-'fn' @ [84:20] ==> val fn: KFunction<Any?> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl[LocalVariableDescriptor]
+'fn' @ [84:20] ==> val fn: KFunction<*> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.invokeImpl[LocalVariableDescriptor]
 
 'returnType' @ [84:23] ==> public abstract val returnType: KType defined in kotlin.reflect.KFunction[DeserializedPropertyDescriptor]
 
@@ -385,9 +385,9 @@ Inferred types:
 
 'args' @ [107:47] ==> value-parameter args: (Array<(Any..Any?)>..Array<out (Any..Any?)>?) defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.proxyInterface.<anonymous>[ValueParameterDescriptorImpl]
 
-'emptyArray' @ [107:55] ==> public inline fun <reified @PureReifiable T> emptyArray(): Array<(Any..Any?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'emptyArray' @ [107:55] ==> public inline fun <reified @PureReifiable T> emptyArray(): Array<Any?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> (kotlin.Any..kotlin.Any?)
+    <reified @PureReifiable T> -> Any?
 
 'clasz' @ [109:16] ==> value-parameter clasz: Class<T>? defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmInvocableScriptEngine.proxyInterface[ValueParameterDescriptorImpl]
 

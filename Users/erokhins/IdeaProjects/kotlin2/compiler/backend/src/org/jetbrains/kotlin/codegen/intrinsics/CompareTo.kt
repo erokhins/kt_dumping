@@ -62,7 +62,7 @@ Inferred types:
 Inferred types:
     <T> -> Type
 
-'createBinaryIntrinsicCallable' @ [41:16] ==> public fun createBinaryIntrinsicCallable(returnType: Type, valueParameterType: Type, thisType: Type? = ..., receiverType: Type? = ..., lambda: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics[SimpleFunctionDescriptorImpl]
+'createBinaryIntrinsicCallable' @ [41:16] ==> public fun createBinaryIntrinsicCallable(returnType: Type, valueParameterType: Type, thisType: Type? = ..., receiverType: Type? = ..., lambda: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics in file IntrinsicCallable.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [41:46] ==> value-parameter method: CallableMethod defined in org.jetbrains.kotlin.codegen.intrinsics.CompareTo.toCallable[ValueParameterDescriptorImpl]
 

@@ -57,15 +57,11 @@ Inferred types:
 
 'nameSuggestion' @ [76:24] ==> value-parameter nameSuggestion: String? = ... defined in org.jetbrains.kotlin.idea.codeInliner.introduceValue[ValueParameterDescriptorImpl]
 
-'KotlinNameSuggester' @ [77:13] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
-
 'suggestNameByName' @ [77:33] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
 'nameSuggestion' @ [77:51] ==> value-parameter nameSuggestion: String? = ... defined in org.jetbrains.kotlin.idea.codeInliner.introduceValue[ValueParameterDescriptorImpl]
 
 'validator' @ [77:67] ==> value-parameter validator: (String) -> Boolean defined in org.jetbrains.kotlin.idea.codeInliner.introduceValue.suggestName[ValueParameterDescriptorImpl]
-
-'KotlinNameSuggester' @ [79:13] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
 
 'suggestNamesByExpressionOnly' @ [79:33] ==> public final fun suggestNamesByExpressionOnly(expression: KtExpression, bindingContext: BindingContext?, validator: (String) -> Boolean, defaultName: String? = ...): List<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
@@ -83,7 +79,7 @@ Inferred types:
 
 'name' @ [80:32] ==> val name: String defined in org.jetbrains.kotlin.idea.codeInliner.introduceValue.suggestName[LocalVariableDescriptor]
 
-'collectNameUsages' @ [84:36] ==> private fun collectNameUsages(scope: MutableCodeToInline, name: String): List<KtSimpleNameExpression> defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'collectNameUsages' @ [84:36] ==> private fun collectNameUsages(scope: MutableCodeToInline, name: String): List<KtSimpleNameExpression> defined in org.jetbrains.kotlin.idea.codeInliner in file introduceValue.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [84:54] ==> <this> defined in org.jetbrains.kotlin.idea.codeInliner.introduceValue[ReceiverParameterDescriptorImpl]
 
@@ -206,7 +202,7 @@ Inferred types:
 
 'name' @ [90:47] ==> value-parameter name: String defined in org.jetbrains.kotlin.idea.codeInliner.introduceValue.<anonymous>[ValueParameterDescriptorImpl]
 
-'nameHasConflictsInScope' @ [90:52] ==> public fun String.nameHasConflictsInScope(lexicalScope: LexicalScope): Boolean defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'nameHasConflictsInScope' @ [90:52] ==> public fun String.nameHasConflictsInScope(lexicalScope: LexicalScope): Boolean defined in org.jetbrains.kotlin.idea.codeInliner in file introduceValue.kt[SimpleFunctionDescriptorImpl]
 
 'resolutionScope' @ [90:76] ==> val resolutionScope: LexicalScope defined in org.jetbrains.kotlin.idea.codeInliner.introduceValue[LocalVariableDescriptor]
 

@@ -138,11 +138,11 @@ Inferred types:
 
 'threadMXBean' @ [98:27] ==> value-parameter threadMXBean: ThreadMXBean defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimes[ValueParameterDescriptorImpl]
 
-'threadCpuTime' @ [98:40] ==> @Suppress public inline fun ThreadMXBean.threadCpuTime(): Long defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'threadCpuTime' @ [98:40] ==> @Suppress public inline fun ThreadMXBean.threadCpuTime(): Long defined in org.jetbrains.kotlin.daemon.common in file PerfUtils.kt[SimpleFunctionDescriptorImpl]
 
 'threadMXBean' @ [99:31] ==> value-parameter threadMXBean: ThreadMXBean defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimes[ValueParameterDescriptorImpl]
 
-'threadUserTime' @ [99:44] ==> @Suppress public inline fun ThreadMXBean.threadUserTime(): Long defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'threadUserTime' @ [99:44] ==> @Suppress public inline fun ThreadMXBean.threadUserTime(): Long defined in org.jetbrains.kotlin.daemon.common in file PerfUtils.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [101:15] ==> public abstract operator fun invoke(): R defined in kotlin.Function0[FunctionInvokeDescriptor]
 
@@ -158,13 +158,13 @@ Inferred types:
 
 'threadMXBean' @ [105:42] ==> value-parameter threadMXBean: ThreadMXBean defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimes[ValueParameterDescriptorImpl]
 
-'threadCpuTime' @ [105:55] ==> @Suppress public inline fun ThreadMXBean.threadCpuTime(): Long defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'threadCpuTime' @ [105:55] ==> @Suppress public inline fun ThreadMXBean.threadCpuTime(): Long defined in org.jetbrains.kotlin.daemon.common in file PerfUtils.kt[SimpleFunctionDescriptorImpl]
 
 'startThreadTime' @ [105:73] ==> val startThreadTime: Long defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimes[LocalVariableDescriptor]
 
 'threadMXBean' @ [106:46] ==> value-parameter threadMXBean: ThreadMXBean defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimes[ValueParameterDescriptorImpl]
 
-'threadUserTime' @ [106:59] ==> @Suppress public inline fun ThreadMXBean.threadUserTime(): Long defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'threadUserTime' @ [106:59] ==> @Suppress public inline fun ThreadMXBean.threadUserTime(): Long defined in org.jetbrains.kotlin.daemon.common in file PerfUtils.kt[SimpleFunctionDescriptorImpl]
 
 'startThreadUserTime' @ [106:78] ==> val startThreadUserTime: Long defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimes[LocalVariableDescriptor]
 
@@ -188,11 +188,11 @@ Inferred types:
 
 'threadMXBean' @ [116:27] ==> value-parameter threadMXBean: ThreadMXBean defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimesAndMemory[ValueParameterDescriptorImpl]
 
-'threadCpuTime' @ [116:40] ==> @Suppress public inline fun ThreadMXBean.threadCpuTime(): Long defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'threadCpuTime' @ [116:40] ==> @Suppress public inline fun ThreadMXBean.threadCpuTime(): Long defined in org.jetbrains.kotlin.daemon.common in file PerfUtils.kt[SimpleFunctionDescriptorImpl]
 
 'threadMXBean' @ [117:31] ==> value-parameter threadMXBean: ThreadMXBean defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimesAndMemory[ValueParameterDescriptorImpl]
 
-'threadUserTime' @ [117:44] ==> @Suppress public inline fun ThreadMXBean.threadUserTime(): Long defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'threadUserTime' @ [117:44] ==> @Suppress public inline fun ThreadMXBean.threadUserTime(): Long defined in org.jetbrains.kotlin.daemon.common in file PerfUtils.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [119:15] ==> public abstract operator fun invoke(): R defined in kotlin.Function0[FunctionInvokeDescriptor]
 
@@ -208,13 +208,13 @@ Inferred types:
 
 'threadMXBean' @ [123:42] ==> value-parameter threadMXBean: ThreadMXBean defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimesAndMemory[ValueParameterDescriptorImpl]
 
-'threadCpuTime' @ [123:55] ==> @Suppress public inline fun ThreadMXBean.threadCpuTime(): Long defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'threadCpuTime' @ [123:55] ==> @Suppress public inline fun ThreadMXBean.threadCpuTime(): Long defined in org.jetbrains.kotlin.daemon.common in file PerfUtils.kt[SimpleFunctionDescriptorImpl]
 
 'startThreadTime' @ [123:73] ==> val startThreadTime: Long defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimesAndMemory[LocalVariableDescriptor]
 
 'threadMXBean' @ [124:46] ==> value-parameter threadMXBean: ThreadMXBean defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimesAndMemory[ValueParameterDescriptorImpl]
 
-'threadUserTime' @ [124:59] ==> @Suppress public inline fun ThreadMXBean.threadUserTime(): Long defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'threadUserTime' @ [124:59] ==> @Suppress public inline fun ThreadMXBean.threadUserTime(): Long defined in org.jetbrains.kotlin.daemon.common in file PerfUtils.kt[SimpleFunctionDescriptorImpl]
 
 'startThreadUserTime' @ [124:78] ==> val startThreadUserTime: Long defined in org.jetbrains.kotlin.daemon.common.withMeasureWallAndThreadTimesAndMemory[LocalVariableDescriptor]
 

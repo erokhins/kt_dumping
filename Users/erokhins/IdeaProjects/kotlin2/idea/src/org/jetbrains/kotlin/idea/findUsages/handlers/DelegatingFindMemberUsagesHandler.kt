@@ -29,8 +29,6 @@ Inferred types:
 
 'HandlerAndOptions' @ [48:17] ==> public constructor HandlerAndOptions(handler: FindUsagesHandler, options: FindUsagesOptions?) defined in org.jetbrains.kotlin.idea.findUsages.handlers.DelegatingFindMemberUsagesHandler.HandlerAndOptions[ClassConstructorDescriptorImpl]
 
-'KotlinFindMemberUsagesHandler' @ [48:35] ==> public companion object defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler[FakeCallableDescriptorForObject]
-
 'getInstance' @ [48:65] ==> public final fun getInstance(declaration: KtNamedDeclaration, elementsToSearch: Collection<PsiElement> = ..., factory: KotlinFindUsagesHandlerFactory): KotlinFindMemberUsagesHandler<out KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.Companion[SimpleFunctionDescriptorImpl]
 
 'element' @ [48:77] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.findUsages.handlers.DelegatingFindMemberUsagesHandler.getHandlerAndOptions[ValueParameterDescriptorImpl]
@@ -91,13 +89,13 @@ Inferred types:
 
 'primaryElements' @ [64:30] ==> public final val <T : KtNamedDeclaration> KotlinFindMemberUsagesHandler<out KtNamedDeclaration>.primaryElements: Array<PsiElement>[MyPropertyDescriptor]
 Inferred types:
-    <T : KtNamedDeclaration> -> KtNamedDeclaration
+    <T : KtNamedDeclaration> -> Captured(out KtNamedDeclaration)
 
 'kotlinHandler' @ [68:16] ==> private final val kotlinHandler: KotlinFindMemberUsagesHandler<out KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.findUsages.handlers.DelegatingFindMemberUsagesHandler[PropertyDescriptorImpl]
 
 'secondaryElements' @ [68:30] ==> public final val <T : KtNamedDeclaration> KotlinFindMemberUsagesHandler<out KtNamedDeclaration>.secondaryElements: (Array<(PsiElement..PsiElement?)>..Array<out (PsiElement..PsiElement?)>)[MyPropertyDescriptor]
 Inferred types:
-    <T : KtNamedDeclaration> -> KtNamedDeclaration
+    <T : KtNamedDeclaration> -> Captured(out KtNamedDeclaration)
 
 'kotlinHandler' @ [72:16] ==> private final val kotlinHandler: KotlinFindMemberUsagesHandler<out KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.findUsages.handlers.DelegatingFindMemberUsagesHandler[PropertyDescriptorImpl]
 

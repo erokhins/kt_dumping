@@ -20,11 +20,7 @@ Inferred types:
 
 'isCovariant' @ [33:24] ==> public final val isCovariant: Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinTypeInfo[PropertyDescriptorImpl]
 
-'IdeDescriptorRenderers' @ [33:37] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE' @ [33:60] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
-
-'IdeDescriptorRenderers' @ [33:77] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE_NOT_NULL_TYPE_APPROXIMATION' @ [33:100] ==> @field:JvmField public final val SOURCE_CODE_NOT_NULL_TYPE_APPROXIMATION: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 

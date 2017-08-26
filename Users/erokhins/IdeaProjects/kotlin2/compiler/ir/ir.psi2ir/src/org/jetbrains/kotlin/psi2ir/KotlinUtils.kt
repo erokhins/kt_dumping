@@ -18,7 +18,7 @@ Inferred types:
 
 'call' @ [50:27] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueArguments' @ [50:32] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
@@ -52,8 +52,8 @@ Inferred types:
 
 'get' @ [64:48] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>?), p1: (PsiElement..PsiElement?)): ConstructorDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ConstructorDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)
 
 'CONSTRUCTOR' @ [64:67] ==> public final val CONSTRUCTOR: (WritableSlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -67,7 +67,7 @@ Inferred types:
 
 'resultingDescriptor' @ [66:56] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'containingDeclaration' @ [66:76] ==> public final val CallableDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
@@ -77,7 +77,7 @@ Inferred types:
 
 'unsubstitutedMemberScope' @ [71:9] ==> public final val ClassDescriptor.unsubstitutedMemberScope: MemberScope[MyPropertyDescriptor]
 
-'findFirstFunction' @ [71:34] ==> public inline fun MemberScope.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir[SimpleFunctionDescriptorImpl]
+'findFirstFunction' @ [71:34] ==> public inline fun MemberScope.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [71:52] ==> value-parameter name: String defined in org.jetbrains.kotlin.psi2ir.findFirstFunction[ValueParameterDescriptorImpl]
 

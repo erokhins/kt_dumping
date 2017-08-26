@@ -16,7 +16,7 @@ Inferred types:
 
 'typeElement' @ [30:33] ==> public final val typeElement: KtTypeElement? defined in org.jetbrains.kotlin.psi.KtTypeReference[DeserializedPropertyDescriptor]
 
-'index' @ [30:46] ==> private fun KtTypeElement.index(declaration: KtTypeParameterListOwner, containingTypeReference: KtTypeReference, occurrence: (String) -> Unit): Unit defined in org.jetbrains.kotlin.idea.stubindex[SimpleFunctionDescriptorImpl]
+'index' @ [30:46] ==> private fun KtTypeElement.index(declaration: KtTypeParameterListOwner, containingTypeReference: KtTypeReference, occurrence: (String) -> Unit): Unit defined in org.jetbrains.kotlin.idea.stubindex in file IndexUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [30:52] ==> val declaration: (TDeclaration..TDeclaration?) defined in org.jetbrains.kotlin.idea.stubindex.indexTopLevelExtension[LocalVariableDescriptor]
 
@@ -30,16 +30,12 @@ Inferred types:
 
 'occurrence' @ [32:18] ==> public abstract fun <Psi : (PsiElement..PsiElement?), K : (Any..Any?)> occurrence(@NotNull p0: StubIndexKey<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)>, @NotNull p1: String): Unit defined in com.intellij.psi.stubs.IndexSink[JavaMethodDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> KtCallableDeclaration
-    <K : (Any..Any?)> -> String
-
-'KotlinTopLevelExtensionsByReceiverTypeIndex' @ [32:29] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex[FakeCallableDescriptorForObject]
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallableDeclaration..org.jetbrains.kotlin.psi.KtCallableDeclaration?)
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'INSTANCE' @ [32:73] ==> public final val INSTANCE: KotlinTopLevelExtensionsByReceiverTypeIndex defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex.Companion[PropertyDescriptorImpl]
 
 'key' @ [32:82] ==> public final val KotlinTopLevelExtensionsByReceiverTypeIndex.key: StubIndexKey<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)>[MyPropertyDescriptor]
-
-'KotlinTopLevelExtensionsByReceiverTypeIndex' @ [33:29] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex[FakeCallableDescriptorForObject]
 
 'buildKey' @ [33:73] ==> public final fun buildKey(receiverTypeName: String, callableName: String): String defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex.Companion[SimpleFunctionDescriptorImpl]
 
@@ -61,7 +57,7 @@ Inferred types:
 
 'typeElement' @ [42:5] ==> val typeElement: KtTypeElement defined in org.jetbrains.kotlin.idea.stubindex.indexTypeAliasExpansion[LocalVariableDescriptor]
 
-'index' @ [42:17] ==> private fun KtTypeElement.index(declaration: KtTypeParameterListOwner, containingTypeReference: KtTypeReference, occurrence: (String) -> Unit): Unit defined in org.jetbrains.kotlin.idea.stubindex[SimpleFunctionDescriptorImpl]
+'index' @ [42:17] ==> private fun KtTypeElement.index(declaration: KtTypeParameterListOwner, containingTypeReference: KtTypeReference, occurrence: (String) -> Unit): Unit defined in org.jetbrains.kotlin.idea.stubindex in file IndexUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [42:23] ==> val declaration: (KtTypeAlias..KtTypeAlias?) defined in org.jetbrains.kotlin.idea.stubindex.indexTypeAliasExpansion[LocalVariableDescriptor]
 
@@ -71,10 +67,8 @@ Inferred types:
 
 'occurrence' @ [43:14] ==> public abstract fun <Psi : (PsiElement..PsiElement?), K : (Any..Any?)> occurrence(@NotNull p0: StubIndexKey<(String..String?), (KtTypeAlias..KtTypeAlias?)>, @NotNull p1: String): Unit defined in com.intellij.psi.stubs.IndexSink[JavaMethodDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> KtTypeAlias
-    <K : (Any..Any?)> -> String
-
-'KotlinTypeAliasByExpansionShortNameIndex' @ [43:25] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex[FakeCallableDescriptorForObject]
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'KEY' @ [43:66] ==> public final val KEY: StubIndexKey<(String..String?), (KtTypeAlias..KtTypeAlias?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex.Companion[PropertyDescriptorImpl]
 
@@ -159,7 +153,7 @@ Inferred types:
 
 'typeElement' @ [60:27] ==> public final val typeElement: KtTypeElement? defined in org.jetbrains.kotlin.psi.KtTypeReference[DeserializedPropertyDescriptor]
 
-'index' @ [60:40] ==> private fun KtTypeElement.index(declaration: KtTypeParameterListOwner, containingTypeReference: KtTypeReference, occurrence: (String) -> Unit): Unit defined in org.jetbrains.kotlin.idea.stubindex[SimpleFunctionDescriptorImpl]
+'index' @ [60:40] ==> private fun KtTypeElement.index(declaration: KtTypeParameterListOwner, containingTypeReference: KtTypeReference, occurrence: (String) -> Unit): Unit defined in org.jetbrains.kotlin.idea.stubindex in file IndexUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [60:46] ==> value-parameter declaration: KtTypeParameterListOwner defined in org.jetbrains.kotlin.idea.stubindex.index[ValueParameterDescriptorImpl]
 
@@ -187,7 +181,7 @@ Inferred types:
 
 'innerType' @ [73:30] ==> public final val KtNullableType.innerType: KtTypeElement?[MyPropertyDescriptor]
 
-'index' @ [73:41] ==> private fun KtTypeElement.index(declaration: KtTypeParameterListOwner, containingTypeReference: KtTypeReference, occurrence: (String) -> Unit): Unit defined in org.jetbrains.kotlin.idea.stubindex[SimpleFunctionDescriptorImpl]
+'index' @ [73:41] ==> private fun KtTypeElement.index(declaration: KtTypeParameterListOwner, containingTypeReference: KtTypeReference, occurrence: (String) -> Unit): Unit defined in org.jetbrains.kotlin.idea.stubindex in file IndexUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [73:47] ==> value-parameter declaration: KtTypeParameterListOwner defined in org.jetbrains.kotlin.idea.stubindex.index[ValueParameterDescriptorImpl]
 
@@ -236,7 +230,7 @@ Inferred types:
 
 'name' @ [92:21] ==> public final val <TDeclaration : KtCallableDeclaration> KotlinCallableStubBase<out KtCallableDeclaration>.name: String?[MyPropertyDescriptor]
 Inferred types:
-    <TDeclaration : KtCallableDeclaration> -> KtCallableDeclaration
+    <TDeclaration : KtCallableDeclaration> -> Captured(*)
 
 'stub' @ [94:28] ==> value-parameter stub: KotlinCallableStubBase<*> defined in org.jetbrains.kotlin.idea.stubindex.indexInternals[ValueParameterDescriptorImpl]
 
@@ -270,10 +264,8 @@ Inferred types:
 
 'occurrence' @ [102:14] ==> public abstract fun <Psi : (PsiElement..PsiElement?), K : (Any..Any?)> occurrence(@NotNull p0: StubIndexKey<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)>, @NotNull p1: String): Unit defined in com.intellij.psi.stubs.IndexSink[JavaMethodDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> KtCallableDeclaration
-    <K : (Any..Any?)> -> String
-
-'KotlinOverridableInternalMembersShortNameIndex' @ [102:25] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex[FakeCallableDescriptorForObject]
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallableDeclaration..org.jetbrains.kotlin.psi.KtCallableDeclaration?)
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'Instance' @ [102:72] ==> @JvmField public final val Instance: KotlinOverridableInternalMembersShortNameIndex defined in org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex.Companion[PropertyDescriptorImpl]
 
@@ -283,7 +275,7 @@ Inferred types:
 
 'findChildStubByType' @ [107:13] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtDeclarationModifierList..KtDeclarationModifierList?)>): StubElement<(KtDeclarationModifierList..KtDeclarationModifierList?)>? defined in org.jetbrains.kotlin.psi.stubs.KotlinStubWithFqName[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtDeclarationModifierList
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclarationModifierList..org.jetbrains.kotlin.psi.KtDeclarationModifierList?)
 
 'MODIFIER_LIST' @ [107:52] ==> public final val MODIFIER_LIST: (KtModifierListElementType<(KtDeclarationModifierList..KtDeclarationModifierList?)>..KtModifierListElementType<(KtDeclarationModifierList..KtDeclarationModifierList?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 

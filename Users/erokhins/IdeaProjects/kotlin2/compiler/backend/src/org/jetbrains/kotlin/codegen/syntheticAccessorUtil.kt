@@ -35,11 +35,11 @@ Inferred types:
 
 'descriptor' @ [39:13] ==> value-parameter descriptor: CallableMemberDescriptor defined in org.jetbrains.kotlin.codegen.getAccessorNameSuffix[ValueParameterDescriptorImpl]
 
-'getJvmName' @ [39:24] ==> private fun CallableMemberDescriptor.getJvmName(): String defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'getJvmName' @ [39:24] ==> private fun CallableMemberDescriptor.getJvmName(): String defined in org.jetbrains.kotlin.codegen in file syntheticAccessorUtil.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [41:13] ==> value-parameter descriptor: CallableMemberDescriptor defined in org.jetbrains.kotlin.codegen.getAccessorNameSuffix[ValueParameterDescriptorImpl]
 
-'getJvmName' @ [41:24] ==> private fun CallableMemberDescriptor.getJvmName(): String defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'getJvmName' @ [41:24] ==> private fun CallableMemberDescriptor.getJvmName(): String defined in org.jetbrains.kotlin.codegen in file syntheticAccessorUtil.kt[SimpleFunctionDescriptorImpl]
 
 'accessorKind' @ [41:45] ==> value-parameter accessorKind: FieldAccessorKind defined in org.jetbrains.kotlin.codegen.getAccessorNameSuffix[ValueParameterDescriptorImpl]
 

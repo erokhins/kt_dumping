@@ -31,8 +31,6 @@ Inferred types:
 
 'add' @ [54:29] ==> public open fun add(element: ImportPath): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'ImportPath' @ [54:33] ==> public companion object defined in org.jetbrains.kotlin.resolve.ImportPath[FakeCallableDescriptorForObject]
-
 'fromString' @ [54:44] ==> @JvmStatic public final fun fromString(pathStr: String): ImportPath defined in org.jetbrains.kotlin.resolve.ImportPath.Companion[SimpleFunctionDescriptorImpl]
 
 'it' @ [54:55] ==> value-parameter it: String defined in org.jetbrains.kotlin.resolve.TargetPlatform.Default.defaultImports.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -40,8 +38,6 @@ Inferred types:
 'includeKotlinComparisons' @ [56:21] ==> value-parameter includeKotlinComparisons: Boolean defined in org.jetbrains.kotlin.resolve.TargetPlatform.Default.defaultImports.<anonymous>[ValueParameterDescriptorImpl]
 
 'add' @ [57:21] ==> public open fun add(element: ImportPath): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
-
-'ImportPath' @ [57:25] ==> public companion object defined in org.jetbrains.kotlin.resolve.ImportPath[FakeCallableDescriptorForObject]
 
 'fromString' @ [57:36] ==> @JvmStatic public final fun fromString(pathStr: String): ImportPath defined in org.jetbrains.kotlin.resolve.ImportPath.Companion[SimpleFunctionDescriptorImpl]
 
@@ -173,8 +169,6 @@ Inferred types:
 
 'ApiVersionClassifierUsageChecker' @ [105:45] ==> public object ApiVersionClassifierUsageChecker : ClassifierUsageChecker defined in org.jetbrains.kotlin.resolve.checkers in file ApiVersionClassifierUsageChecker.kt[FakeCallableDescriptorForObject]
 
-'MissingDependencyClassChecker' @ [105:79] ==> public object MissingDependencyClassChecker : CallChecker defined in org.jetbrains.kotlin.resolve.checkers in file MissingDependencyClassChecker.kt[FakeCallableDescriptorForObject]
-
 'ClassifierUsage' @ [105:109] ==> public object ClassifierUsage : ClassifierUsageChecker defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker[FakeCallableDescriptorForObject]
 
 'DEFAULT_DECLARATION_CHECKERS' @ [122:65] ==> private val DEFAULT_DECLARATION_CHECKERS: List<DeclarationChecker> defined in org.jetbrains.kotlin.resolve in file TargetPlatform.kt[PropertyDescriptorImpl]
@@ -199,11 +193,11 @@ Inferred types:
 
 'java' @ [129:66] ==> public val <T> KClass<out PlatformConfigurator>.java: Class<out PlatformConfigurator> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PlatformConfigurator
+    <T> -> Captured(out PlatformConfigurator)
 
 'simpleName' @ [129:71] ==> public final val <T : (Any..Any?)> Class<out PlatformConfigurator>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PlatformConfigurator
+    <T : (Any..Any?)> -> Captured(out PlatformConfigurator)
 
 'useInstance' @ [130:9] ==> public fun StorageComponentContainer.useInstance(instance: Any): Unit defined in org.jetbrains.kotlin.container[DeserializedSimpleFunctionDescriptor]
 

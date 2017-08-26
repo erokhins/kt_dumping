@@ -42,7 +42,7 @@ Inferred types:
 
 'provideDelegateCall' @ [38:52] ==> val provideDelegateCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.js.resolve.diagnostics.JsDynamicDeclarationChecker.check.<anonymous>[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [38:72] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [38:72] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 

@@ -4,8 +4,6 @@
 
 'containingDeclaration' @ [29:31] ==> public final val LocalVariableDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'Annotations' @ [31:9] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [31:21] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'special' @ [32:14] ==> @NotNull public open fun special(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
@@ -84,8 +82,6 @@ Inferred types:
 
 'returnType' @ [45:62] ==> val returnType: KotlinType defined in org.jetbrains.kotlin.descriptors.impl.LocalVariableAccessorDescriptor.<init>[LocalVariableDescriptor]
 
-'Modality' @ [45:74] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [45:83] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'LOCAL' @ [45:103] ==> @NotNull public final val LOCAL: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -93,8 +89,6 @@ Inferred types:
 'ValueParameterDescriptorImpl' @ [49:16] ==> public constructor ValueParameterDescriptorImpl(containingDeclaration: CallableDescriptor, original: ValueParameterDescriptor?, index: Int, annotations: Annotations, name: Name, outType: KotlinType, declaresDefaultValue: Boolean, isCrossinline: Boolean, isNoinline: Boolean, varargElementType: KotlinType?, source: SourceElement) defined in org.jetbrains.kotlin.descriptors.impl.ValueParameterDescriptorImpl[DeserializedClassConstructorDescriptor]
 
 'this' @ [49:45] ==> <this> defined in org.jetbrains.kotlin.descriptors.impl.LocalVariableAccessorDescriptor[LazyClassReceiverParameterDescriptor]
-
-'Annotations' @ [49:60] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [49:72] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

@@ -103,7 +103,7 @@ Inferred types:
 
 'findElementOfClassAtRange' @ [75:25] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtRange(@NotNull p0: PsiFile, p1: Int, p2: Int, @NotNull p3: Class<(KtExpression..KtExpression?)>): KtExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'file' @ [75:51] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
 
@@ -181,21 +181,21 @@ Inferred types:
 
 'HashSet' @ [92:19] ==> public constructor HashSet<E : (Any..Any?)>(p0: (MutableCollection<out (KtExpression..KtExpression?)>..Collection<(KtExpression..KtExpression?)>?)) defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> KtExpression
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'processedStatements2' @ [92:27] ==> val processedStatements2: Collection<KtExpression> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
 
 'assert' @ [93:9] ==> @InlineOnly public inline fun assert(value: Boolean): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'set' @ [93:17] ==> val set: HashSet<KtExpression> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
+'set' @ [93:17] ==> val set: HashSet<(KtExpression..KtExpression?)> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
 
-'containsAll' @ [93:21] ==> public open fun containsAll(elements: Collection<KtExpression>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'containsAll' @ [93:21] ==> public open fun containsAll(elements: Collection<(KtExpression..KtExpression?)>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'processedStatements1' @ [93:33] ==> val processedStatements1: Collection<KtExpression> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
 
-'set' @ [94:9] ==> val set: HashSet<KtExpression> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
+'set' @ [94:9] ==> val set: HashSet<(KtExpression..KtExpression?)> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
 
-'removeAll' @ [94:13] ==> public open fun removeAll(elements: Collection<KtExpression>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'removeAll' @ [94:13] ==> public open fun removeAll(elements: Collection<(KtExpression..KtExpression?)>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'processedStatements1' @ [94:23] ==> val processedStatements1: Collection<KtExpression> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
 
@@ -234,15 +234,15 @@ Inferred types:
 
 'append' @ [104:17] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'set' @ [106:33] ==> val set: HashSet<KtExpression> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
+'set' @ [106:33] ==> val set: HashSet<(KtExpression..KtExpression?)> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
 
-'filter' @ [107:18] ==> public inline fun <T> Iterable<KtExpression>.filter(predicate: (KtExpression) -> Boolean): List<KtExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'filter' @ [107:18] ==> public inline fun <T> Iterable<(KtExpression..KtExpression?)>.filter(predicate: ((KtExpression..KtExpression?)) -> Boolean): List<(KtExpression..KtExpression?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtExpression
+    <T> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 '!' @ [107:27] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [107:28] ==> value-parameter it: KtExpression defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [107:28] ==> value-parameter it: (KtExpression..KtExpression?) defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump.<anonymous>[ValueParameterDescriptorImpl]
 
 'parents' @ [107:31] ==> public val PsiElement.parents: Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 
@@ -252,14 +252,14 @@ Inferred types:
 
 'it' @ [107:45] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'set' @ [107:51] ==> val set: HashSet<KtExpression> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
+'set' @ [107:51] ==> val set: HashSet<(KtExpression..KtExpression?)> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
 
-'sortedBy' @ [108:18] ==> public inline fun <T, R : Comparable<Int>> Iterable<KtExpression>.sortedBy(crossinline selector: (KtExpression) -> Int?): List<KtExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'sortedBy' @ [108:18] ==> public inline fun <T, R : Comparable<Int>> Iterable<(KtExpression..KtExpression?)>.sortedBy(crossinline selector: ((KtExpression..KtExpression?)) -> Int?): List<(KtExpression..KtExpression?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtExpression
+    <T> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <R : Comparable<R>> -> Int
 
-'it' @ [108:29] ==> value-parameter it: KtExpression defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [108:29] ==> value-parameter it: (KtExpression..KtExpression?) defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump.<anonymous>[ValueParameterDescriptorImpl]
 
 'textOffset' @ [108:32] ==> public final val KtExpression.textOffset: Int[MyPropertyDescriptor]
 
@@ -269,9 +269,9 @@ Inferred types:
 
 'executeWriteCommand' @ [110:27] ==> public fun Project.executeWriteCommand(name: String, command: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
 
-'skippedStatements' @ [111:31] ==> val skippedStatements: List<KtExpression> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
+'skippedStatements' @ [111:31] ==> val skippedStatements: List<(KtExpression..KtExpression?)> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump[LocalVariableDescriptor]
 
-'statement' @ [112:17] ==> val statement: KtExpression defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump.<anonymous>[LocalVariableDescriptor]
+'statement' @ [112:17] ==> val statement: (KtExpression..KtExpression?) defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump.<anonymous>[LocalVariableDescriptor]
 
 'replace' @ [112:27] ==> public abstract fun replace(@NotNull p0: PsiElement): (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 
@@ -281,7 +281,7 @@ Inferred types:
 
 'createComment' @ [112:57] ==> public final fun createComment(text: String): PsiComment defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
 
-'statement' @ [112:96] ==> val statement: KtExpression defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump.<anonymous>[LocalVariableDescriptor]
+'statement' @ [112:96] ==> val statement: (KtExpression..KtExpression?) defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.dump.<anonymous>[LocalVariableDescriptor]
 
 'compactPresentation' @ [112:106] ==> private final fun KtExpression.compactPresentation(): String defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest[SimpleFunctionDescriptorImpl]
 
@@ -429,8 +429,8 @@ Inferred types:
 
 'getSliceContents' @ [148:50] ==> @NotNull public abstract fun <K : (Any..Any?), V : (Any..Any?)> getSliceContents(@NotNull p0: ReadOnlySlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>): ImmutableMap<(KtExpression..KtExpression?), (Boolean..Boolean?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'PROCESSED' @ [148:82] ==> public final val PROCESSED: (WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>..WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -533,8 +533,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> String
 
 'this' @ [176:19] ==> <this> defined in org.jetbrains.kotlin.idea.resolve.AbstractPartialBodyResolveTest.presentation[ReceiverParameterDescriptorImpl]
-
-'DescriptorRenderer' @ [176:33] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
 
 'COMPACT' @ [176:52] ==> @field:JvmField public final val COMPACT: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 

@@ -412,8 +412,6 @@ Inferred types:
 
 'builtIns' @ [145:28] ==> public/*package*/ final var builtIns: (KotlinBuiltIns..KotlinBuiltIns?) defined in org.jetbrains.kotlin.types.expressions.ExpressionTypingComponents[JavaPropertyDescriptor]
 
-'Annotations' @ [146:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [146:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'extensionReceiverParameter' @ [147:17] ==> public final val SimpleFunctionDescriptor.extensionReceiverParameter: ReceiverParameterDescriptor?[MyPropertyDescriptor]
@@ -577,7 +575,7 @@ Inferred types:
 
 'expression' @ [191:94] ==> value-parameter expression: KtLambdaExpression defined in org.jetbrains.kotlin.types.expressions.FunctionsTypingVisitor.createFunctionLiteralDescriptor[ValueParameterDescriptorImpl]
 
-'getAnnotationEntries' @ [191:105] ==> public fun KtExpression.getAnnotationEntries(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'getAnnotationEntries' @ [191:105] ==> public fun KtExpression.getAnnotationEntries(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil in file ktPsiUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [191:129] ==> value-parameter context: ExpressionTypingContext defined in org.jetbrains.kotlin.types.expressions.FunctionsTypingVisitor.createFunctionLiteralDescriptor[ValueParameterDescriptorImpl]
 
@@ -753,8 +751,8 @@ Inferred types:
 
 'record' @ [241:23] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtFunction..KtFunction?), (KotlinType..KotlinType?)>..WritableSlice<(KtFunction..KtFunction?), (KotlinType..KotlinType?)>?), key: (KtFunction..KtFunction?), value: (KotlinType..KotlinType?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtFunction
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFunction..org.jetbrains.kotlin.psi.KtFunction?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'EXPECTED_RETURN_TYPE' @ [241:30] ==> public final val EXPECTED_RETURN_TYPE: (WritableSlice<(KtFunction..KtFunction?), (KotlinType..KotlinType?)>..WritableSlice<(KtFunction..KtFunction?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -958,8 +956,8 @@ Inferred types:
 
 'get' @ [306:46] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (PsiElement..PsiElement?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (PsiElement..PsiElement?)>?), key: (KtReferenceExpression..KtReferenceExpression?)): PsiElement? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> PsiElement
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'LABEL_TARGET' @ [306:65] ==> public final val LABEL_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (PsiElement..PsiElement?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (PsiElement..PsiElement?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

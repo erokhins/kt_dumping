@@ -2,11 +2,7 @@
 
 'accessorDescriptor' @ [31:28] ==> value-parameter accessorDescriptor: PropertyAccessorDescriptor defined in org.jetbrains.kotlin.descriptors.impl.SyntheticFieldDescriptor.<init>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [31:48] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [31:60] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'SyntheticFieldDescriptor' @ [31:67] ==> public companion object defined in org.jetbrains.kotlin.descriptors.impl.SyntheticFieldDescriptor[FakeCallableDescriptorForObject]
 
 'NAME' @ [31:92] ==> @JvmField public final val NAME: Name defined in org.jetbrains.kotlin.descriptors.impl.SyntheticFieldDescriptor.Companion[PropertyDescriptorImpl]
 

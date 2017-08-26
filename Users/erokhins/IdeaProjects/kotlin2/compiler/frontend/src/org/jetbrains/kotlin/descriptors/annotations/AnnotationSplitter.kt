@@ -214,8 +214,6 @@ Inferred types:
 
 'map' @ [109:9] ==> val map: HashMap<AnnotationUseSiteTarget, MutableList<AnnotationWithTarget>> /* = HashMap<AnnotationUseSiteTarget, MutableList<AnnotationWithTarget>> */ defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationSplitter.splitAnnotations.<anonymous>[LocalVariableDescriptor]
 
-'AnnotationsImpl' @ [109:16] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationsImpl[FakeCallableDescriptorForObject]
-
 'create' @ [109:32] ==> @JvmStatic public final fun create(annotationsWithTargets: List<AnnotationWithTarget>): AnnotationsImpl defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationsImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
 'other' @ [109:39] ==> val other: ArrayList<AnnotationWithTarget> /* = ArrayList<AnnotationWithTarget> */ defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationSplitter.splitAnnotations.<anonymous>[LocalVariableDescriptor]
@@ -261,8 +259,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> AnnotationsImpl
 
 'target' @ [124:17] ==> public final val target: AnnotationUseSiteTarget? defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationSplitter.LazySplitAnnotations[PropertyDescriptorImpl]
-
-'AnnotationsImpl' @ [125:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationsImpl[FakeCallableDescriptorForObject]
 
 'create' @ [125:33] ==> @JvmStatic public final fun create(annotationsWithTargets: List<AnnotationWithTarget>): AnnotationsImpl defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationsImpl.Companion[DeserializedSimpleFunctionDescriptor]
 

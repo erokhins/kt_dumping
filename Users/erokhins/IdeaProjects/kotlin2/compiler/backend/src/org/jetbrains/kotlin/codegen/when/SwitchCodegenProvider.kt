@@ -44,9 +44,9 @@ Inferred types:
 
 'expression' @ [46:55] ==> public final val KtWhenConditionWithExpression.expression: KtExpression?[MyPropertyDescriptor]
 
-'?:' @ [47:36] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ConstantValue<Any?>?, right: ConstantValue<Any?>): ConstantValue<Any?>[SimpleFunctionDescriptorImpl]
+'?:' @ [47:36] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ConstantValue<*>?, right: ConstantValue<*>): ConstantValue<*>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ConstantValue<Any?>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ConstantValue<*>
 
 'getCompileTimeConstant' @ [47:54] ==> @Nullable public open fun getCompileTimeConstant(@NotNull expression: KtExpression, @NotNull bindingContext: BindingContext, shouldInlineConstVals: Boolean): ConstantValue<*>? defined in org.jetbrains.kotlin.codegen.ExpressionCodegen[JavaMethodDescriptor]
 
@@ -60,7 +60,7 @@ Inferred types:
 
 'invoke' @ [48:31] ==> public abstract operator fun invoke(p1: ConstantValue<*>): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'constant' @ [48:38] ==> val constant: ConstantValue<Any?> defined in org.jetbrains.kotlin.codegen.`when`.SwitchCodegenProvider.checkAllItemsAreConstantsSatisfying.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'constant' @ [48:38] ==> val constant: ConstantValue<*> defined in org.jetbrains.kotlin.codegen.`when`.SwitchCodegenProvider.checkAllItemsAreConstantsSatisfying.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'ArrayList' @ [53:13] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -136,8 +136,8 @@ Inferred types:
 
 'get' @ [85:46] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtWhenExpression..KtWhenExpression?), (WhenByEnumsMapping..WhenByEnumsMapping?)>..ReadOnlySlice<(KtWhenExpression..KtWhenExpression?), (WhenByEnumsMapping..WhenByEnumsMapping?)>?), p1: (KtWhenExpression..KtWhenExpression?)): WhenByEnumsMapping? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtWhenExpression
-    <V : (Any..Any?)> -> WhenByEnumsMapping
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtWhenExpression..org.jetbrains.kotlin.psi.KtWhenExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.codegen.`when`.WhenByEnumsMapping..org.jetbrains.kotlin.codegen.`when`.WhenByEnumsMapping?)
 
 'MAPPING_FOR_WHEN_BY_ENUM' @ [85:65] ==> public final val MAPPING_FOR_WHEN_BY_ENUM: (WritableSlice<(KtWhenExpression..KtWhenExpression?), (WhenByEnumsMapping..WhenByEnumsMapping?)>..WritableSlice<(KtWhenExpression..KtWhenExpression?), (WhenByEnumsMapping..WhenByEnumsMapping?)>?) defined in org.jetbrains.kotlin.codegen.binding.CodegenBinding[JavaPropertyDescriptor]
 

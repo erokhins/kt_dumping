@@ -186,7 +186,7 @@ Inferred types:
 
 'right' @ [117:40] ==> public final val KtBinaryExpression.right: KtExpression?[MyPropertyDescriptor]
 
-'extractStaticFunctionCallArguments' @ [117:46] ==> public fun KtExpression?.extractStaticFunctionCallArguments(functionFqName: String): List<KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'extractStaticFunctionCallArguments' @ [117:46] ==> public fun KtExpression?.extractStaticFunctionCallArguments(functionFqName: String): List<KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 '+' @ [117:81] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 

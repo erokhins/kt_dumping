@@ -1,4 +1,4 @@
-'configureWithExtraFile' @ [25:5] ==> public fun CodeInsightTestFixture.configureWithExtraFile(path: String, vararg extraNameParts: String = ..., relativePaths: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'configureWithExtraFile' @ [25:5] ==> public fun CodeInsightTestFixture.configureWithExtraFile(path: String, vararg extraNameParts: String = ..., relativePaths: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test in file ideaTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'path' @ [25:28] ==> value-parameter path: String defined in org.jetbrains.kotlin.idea.completion.test.configureWithExtraFileAbs[ValueParameterDescriptorImpl]
 
@@ -80,7 +80,7 @@ Inferred types:
 
 'assertInstanceOf' @ [41:70] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<(T..T?)>): (T..T?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'this' @ [41:87] ==> <this> defined in org.jetbrains.kotlin.idea.completion.test.assertInstanceOf[ReceiverParameterDescriptorImpl]
 

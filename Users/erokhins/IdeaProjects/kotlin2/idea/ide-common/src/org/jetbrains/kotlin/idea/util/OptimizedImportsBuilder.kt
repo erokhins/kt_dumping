@@ -388,6 +388,8 @@ Inferred types:
 
 'this' @ [163:34] ==> <this> defined in org.jetbrains.kotlin.idea.imports.OptimizedImportsBuilder[LazyClassReceiverParameterDescriptor]
 
+'isImportedByDefault' @ [163:40] ==> private final fun isImportedByDefault(fqName: FqName): Boolean defined in org.jetbrains.kotlin.idea.imports.OptimizedImportsBuilder[SimpleFunctionDescriptorImpl]
+
 'importsToGenerate' @ [164:21] ==> val importsToGenerate: HashSet<ImportPath> defined in org.jetbrains.kotlin.idea.imports.OptimizedImportsBuilder.tryBuildOptimizedImports[LocalVariableDescriptor]
 
 'add' @ [164:39] ==> public open fun add(element: ImportPath): Boolean defined in java.util.HashSet[JavaMethodDescriptor]

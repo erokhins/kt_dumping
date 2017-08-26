@@ -115,8 +115,6 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.openapi.util.ModificationTracker..com.intellij.openapi.util.ModificationTracker?)
 
-'LibraryModificationTracker' @ [108:25] ==> public companion object defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker[FakeCallableDescriptorForObject]
-
 'getInstance' @ [108:52] ==> @JvmStatic public final fun getInstance(project: Project): LibraryModificationTracker defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker.Companion[SimpleFunctionDescriptorImpl]
 
 'project' @ [108:64] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[PropertyDescriptorImpl]
@@ -124,8 +122,6 @@ Inferred types:
 'getInstance' @ [109:56] ==> public open fun getInstance(p0: (Project..Project?)): (ProjectRootModificationTracker..ProjectRootModificationTracker?) defined in com.intellij.openapi.roots.ProjectRootModificationTracker[JavaMethodDescriptor]
 
 'project' @ [109:68] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[PropertyDescriptorImpl]
-
-'ScriptDependenciesModificationTracker' @ [110:25] ==> public companion object defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesModificationTracker[FakeCallableDescriptorForObject]
 
 'getInstance' @ [110:63] ==> @JvmStatic public final fun getInstance(project: Project): ScriptDependenciesModificationTracker defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesModificationTracker.Companion[SimpleFunctionDescriptorImpl]
 
@@ -156,8 +152,6 @@ Inferred types:
 'listOf' @ [124:32] ==> public fun <T> listOf(vararg elements: (ModificationTracker..ModificationTracker?)): List<(ModificationTracker..ModificationTracker?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.intellij.openapi.util.ModificationTracker..com.intellij.openapi.util.ModificationTracker?)
-
-'LibraryModificationTracker' @ [125:24] ==> public companion object defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker[FakeCallableDescriptorForObject]
 
 'getInstance' @ [125:51] ==> @JvmStatic public final fun getInstance(project: Project): LibraryModificationTracker defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker.Companion[SimpleFunctionDescriptorImpl]
 
@@ -191,8 +185,6 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.openapi.util.ModificationTracker..com.intellij.openapi.util.ModificationTracker?)
 
-'LibraryModificationTracker' @ [140:25] ==> public companion object defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker[FakeCallableDescriptorForObject]
-
 'getInstance' @ [140:52] ==> @JvmStatic public final fun getInstance(project: Project): LibraryModificationTracker defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker.Companion[SimpleFunctionDescriptorImpl]
 
 'project' @ [140:64] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[PropertyDescriptorImpl]
@@ -223,13 +215,11 @@ Inferred types:
 
 'it' @ [150:35] ==> value-parameter it: IdeaModuleInfo defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.GlobalFacade.facadeForModules.<anonymous>[ValueParameterDescriptorImpl]
 
-'isLibraryClasses' @ [150:38] ==> internal fun IdeaModuleInfo.isLibraryClasses(): Boolean defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'isLibraryClasses' @ [150:38] ==> internal fun IdeaModuleInfo.isLibraryClasses(): Boolean defined in org.jetbrains.kotlin.idea.caches.resolve in file IdeaModuleInfos.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [151:32] ==> public fun <T> listOf(vararg elements: (ModificationTracker..ModificationTracker?)): List<(ModificationTracker..ModificationTracker?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.intellij.openapi.util.ModificationTracker..com.intellij.openapi.util.ModificationTracker?)
-
-'LibraryModificationTracker' @ [152:25] ==> public companion object defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker[FakeCallableDescriptorForObject]
 
 'getInstance' @ [152:52] ==> @JvmStatic public final fun getInstance(project: Project): LibraryModificationTracker defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker.Companion[SimpleFunctionDescriptorImpl]
 
@@ -278,8 +268,6 @@ Inferred types:
 'project' @ [166:51] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[PropertyDescriptorImpl]
 
 'supportsFeature' @ [167:18] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [167:34] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'AdditionalBuiltInsMembers' @ [167:50] ==> enum entry AdditionalBuiltInsMembers defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -365,6 +353,8 @@ Inferred types:
 
 'KtFile' @ [188:45] ==> public constructor KtFile(p0: (FileViewProvider..FileViewProvider?), p1: Boolean) defined in org.jetbrains.kotlin.psi.KtFile[JavaClassConstructorDescriptor]
 
+'getModuleInfo' @ [188:53] ==> public fun PsiElement.getModuleInfo(): IdeaModuleInfo defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
+
 'toSet' @ [188:68] ==> public fun <T> Iterable<IdeaModuleInfo>.toSet(): Set<IdeaModuleInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> IdeaModuleInfo
@@ -412,7 +402,7 @@ Inferred types:
 
 'it' @ [193:75] ==> value-parameter it: KtFile defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.createFacadeForSyntheticFiles.<anonymous>[ValueParameterDescriptorImpl]
 
-'ModificationTracker' @ [194:13] ==> public fun ModificationTracker(function: () -> Long): ModificationTracker defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
+'ModificationTracker' @ [194:13] ==> public fun ModificationTracker(function: () -> Long): ModificationTracker defined in com.intellij.openapi.util[SamConstructorDescriptorImpl]
 
 'files' @ [195:17] ==> value-parameter files: Set<KtFile> defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.createFacadeForSyntheticFiles[ValueParameterDescriptorImpl]
 
@@ -424,7 +414,7 @@ Inferred types:
 
 'outOfBlockModificationCount' @ [195:38] ==> public val KtFile.outOfBlockModificationCount: Long defined in org.jetbrains.kotlin.idea.project in file KotlinCodeBlockModificationListener.kt[PropertyDescriptorImpl]
 
-'ModificationTracker' @ [199:13] ==> public fun ModificationTracker(function: () -> Long): ModificationTracker defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
+'ModificationTracker' @ [199:13] ==> public fun ModificationTracker(function: () -> Long): ModificationTracker defined in com.intellij.openapi.util[SamConstructorDescriptorImpl]
 
 'files' @ [200:17] ==> value-parameter files: Set<KtFile> defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.createFacadeForSyntheticFiles[ValueParameterDescriptorImpl]
 
@@ -556,7 +546,7 @@ Inferred types:
 
 'syntheticFileModule' @ [228:40] ==> val syntheticFileModule: IdeaModuleInfo defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.createFacadeForSyntheticFiles[LocalVariableDescriptor]
 
-'getDependentModules' @ [228:60] ==> public fun ModuleSourceInfo.getDependentModules(): Set<ModuleSourceInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'getDependentModules' @ [228:60] ==> public fun ModuleSourceInfo.getDependentModules(): Set<ModuleSourceInfo> defined in org.jetbrains.kotlin.idea.caches.resolve in file moduleDependents.kt[SimpleFunctionDescriptorImpl]
 
 'globalFacade' @ [229:37] ==> private final fun globalFacade(settings: PlatformAnalysisSettings): ProjectResolutionFacade defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[SimpleFunctionDescriptorImpl]
 
@@ -668,7 +658,7 @@ Inferred types:
 
 'syntheticFileModule' @ [277:13] ==> val syntheticFileModule: IdeaModuleInfo defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.createFacadeForSyntheticFiles[LocalVariableDescriptor]
 
-'isLibraryClasses' @ [277:33] ==> internal fun IdeaModuleInfo.isLibraryClasses(): Boolean defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'isLibraryClasses' @ [277:33] ==> internal fun IdeaModuleInfo.isLibraryClasses(): Boolean defined in org.jetbrains.kotlin.idea.caches.resolve in file IdeaModuleInfos.kt[SimpleFunctionDescriptorImpl]
 
 'LOG' @ [281:17] ==> internal val LOG: Logger defined in org.jetbrains.kotlin.idea.caches.resolve in file KotlinCacheServiceImpl.kt[PropertyDescriptorImpl]
 
@@ -690,7 +680,7 @@ Inferred types:
 
 'java' @ [289:102] ==> public val <T> KClass<out IdeaModuleInfo>.java: Class<out IdeaModuleInfo> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IdeaModuleInfo
+    <T> -> Captured(out IdeaModuleInfo)
 
 'FQ_NAMES' @ [293:62] ==> public final val FQ_NAMES: (KotlinBuiltIns.FqNames..KotlinBuiltIns.FqNames?) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaPropertyDescriptor]
 
@@ -706,7 +696,7 @@ Inferred types:
 
 'createCachedValue' @ [294:113] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(KotlinSuppressCache..KotlinSuppressCache?)>?, p1: Boolean): CachedValue<(KotlinSuppressCache..KotlinSuppressCache?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinSuppressCache
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.diagnostics.KotlinSuppressCache..org.jetbrains.kotlin.resolve.diagnostics.KotlinSuppressCache?)
 
 'Result' @ [295:29] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: KotlinSuppressCache?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
 Inferred types:
@@ -780,8 +770,8 @@ Inferred types:
 
 'get' @ [310:51] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [310:70] ==> public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -819,14 +809,12 @@ Inferred types:
 
 'get' @ [316:70] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?), p1: (KtAnnotationEntry..KtAnnotationEntry?)): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtAnnotationEntry
-    <V : (Any..Any?)> -> AnnotationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor..org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor?)
 
 'ANNOTATION' @ [316:89] ==> public final val ANNOTATION: (WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
 'it' @ [316:101] ==> value-parameter it: (KtAnnotationEntry..KtAnnotationEntry?) defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.kotlinSuppressCache.<anonymous>.<no name provided>.getSuppressionAnnotations.<anonymous>[ValueParameterDescriptorImpl]
-
-'LibraryModificationTracker' @ [319:12] ==> public companion object defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker[FakeCallableDescriptorForObject]
 
 'getInstance' @ [319:39] ==> @JvmStatic public final fun getInstance(project: Project): LibraryModificationTracker defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker.Companion[SimpleFunctionDescriptorImpl]
 
@@ -836,9 +824,9 @@ Inferred types:
 
 'Any' @ [322:43] ==> public constructor Any() defined in kotlin.Any[DeserializedClassConstructorDescriptor]
 
-'CachedValueProvider' @ [324:47] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(<no name provided>..<no name provided>?)>?): CachedValueProvider<<no name provided>> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
+'CachedValueProvider' @ [324:47] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(<no name provided>..<no name provided>?)>?): CachedValueProvider<(<no name provided>..<no name provided>?)> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> <no name provided>
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.syntheticFilesCacheProvider.<anonymous>.<no name provided>..org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.syntheticFilesCacheProvider.<anonymous>.<no name provided>?)
 
 'Result' @ [325:29] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: <no name provided>?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
 Inferred types:
@@ -853,8 +841,6 @@ Inferred types:
 
 'files' @ [326:90] ==> value-parameter files: Set<KtFile> defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.syntheticFilesCacheProvider.<anonymous>.<no name provided>.createValue[ValueParameterDescriptorImpl]
 
-'LibraryModificationTracker' @ [327:12] ==> public companion object defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker[FakeCallableDescriptorForObject]
-
 'getInstance' @ [327:39] ==> @JvmStatic public final fun getInstance(project: Project): LibraryModificationTracker defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker.Companion[SimpleFunctionDescriptorImpl]
 
 'project' @ [327:51] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[PropertyDescriptorImpl]
@@ -863,9 +849,9 @@ Inferred types:
 
 'project' @ [327:104] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[PropertyDescriptorImpl]
 
-'synchronized' @ [331:27] ==> @InlineOnly public inline fun <R> synchronized(lock: Any, block: () -> <no name provided>): <no name provided> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'synchronized' @ [331:27] ==> @InlineOnly public inline fun <R> synchronized(lock: Any, block: () -> (<no name provided>..<no name provided>?)): (<no name provided>..<no name provided>?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <R> -> <no name provided>
+    <R> -> (org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.syntheticFilesCacheProvider.<anonymous>.<no name provided>..org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.syntheticFilesCacheProvider.<anonymous>.<no name provided>?)
 
 'syntheticFileCachesLock' @ [331:40] ==> private final val syntheticFileCachesLock: Any defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[PropertyDescriptorImpl]
 
@@ -875,20 +861,20 @@ Inferred types:
 
 'getCachedValue' @ [334:53] ==> public open fun <T : (Any..Any?), D : (UserDataHolder..UserDataHolder?)> getCachedValue(@NotNull p0: Project, @NotNull p1: CachedValueProvider<(<no name provided>..<no name provided>?)>): (<no name provided>..<no name provided>?) defined in com.intellij.psi.util.CachedValuesManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> <no name provided>
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.syntheticFilesCacheProvider.<anonymous>.<no name provided>..org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.syntheticFilesCacheProvider.<anonymous>.<no name provided>?)
     <D : (UserDataHolder..UserDataHolder?)> -> Project
 
 'project' @ [334:68] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[PropertyDescriptorImpl]
 
-'syntheticFilesCacheProvider' @ [334:77] ==> private final val syntheticFilesCacheProvider: CachedValueProvider<<no name provided>> defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[PropertyDescriptorImpl]
+'syntheticFilesCacheProvider' @ [334:77] ==> private final val syntheticFilesCacheProvider: CachedValueProvider<(<no name provided>..<no name provided>?)> defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl[PropertyDescriptorImpl]
 
 'synchronized' @ [338:9] ==> @InlineOnly public inline fun <R> synchronized(lock: Any, block: () -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <R> -> Nothing
 
-'cachedValue' @ [338:22] ==> val cachedValue: <no name provided> defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.getFacadeForSyntheticFiles[LocalVariableDescriptor]
+'cachedValue' @ [338:22] ==> val cachedValue: (<no name provided>..<no name provided>?) defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.getFacadeForSyntheticFiles[LocalVariableDescriptor]
 
-'cachedValue' @ [339:20] ==> val cachedValue: <no name provided> defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.getFacadeForSyntheticFiles[LocalVariableDescriptor]
+'cachedValue' @ [339:20] ==> val cachedValue: (<no name provided>..<no name provided>?) defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.getFacadeForSyntheticFiles[LocalVariableDescriptor]
 
 'get' @ [339:32] ==> @NotNull public open fun get(p0: (Set<KtFile>..Set<KtFile>?)): ProjectResolutionFacade defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.syntheticFilesCacheProvider.<anonymous>.<no name provided>[JavaMethodDescriptor]
 
@@ -952,8 +938,6 @@ Inferred types:
 'file' @ [358:16] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.getResolutionFacadeByFile[ValueParameterDescriptorImpl]
 
 'assert' @ [359:9] ==> @InlineOnly public inline fun assert(value: Boolean): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
-
-'ProjectRootsUtil' @ [359:16] ==> public object ProjectRootsUtil defined in org.jetbrains.kotlin.idea.util in file ProjectRootsUtil.kt[FakeCallableDescriptorForObject]
 
 'isInProjectOrLibraryContent' @ [359:33] ==> @JvmStatic public final fun isInProjectOrLibraryContent(element: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.util.ProjectRootsUtil[SimpleFunctionDescriptorImpl]
 
@@ -1050,13 +1034,13 @@ Inferred types:
 
 'java' @ [379:105] ==> public val <T> KClass<out KtCodeFragment>.java: Class<out KtCodeFragment> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtCodeFragment
+    <T> -> Captured(out KtCodeFragment)
 
 'contextElement' @ [379:139] ==> val contextElement: PsiElement defined in org.jetbrains.kotlin.idea.caches.resolve.KotlinCacheServiceImpl.getContextFile[LocalVariableDescriptor]
 
 'java' @ [379:161] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'if (contextFile is KtCodeFragment) contextFile.getContextFile() else contextFile' @ [380:16] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtFile?, elseBranch: KtFile?): KtFile?[SimpleFunctionDescriptorImpl]
 Inferred types:

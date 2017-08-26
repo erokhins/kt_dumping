@@ -22,8 +22,6 @@ Inferred types:
 
 'getModuleInfo' @ [31:31] ==> public fun PsiElement.getModuleInfo(): IdeaModuleInfo defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
 
-'KotlinSourceFilterScope' @ [32:49] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope[FakeCallableDescriptorForObject]
-
 'libraryClassFiles' @ [32:73] ==> @JvmStatic public final fun libraryClassFiles(delegate: GlobalSearchScope, project: Project): GlobalSearchScope defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope.Companion[SimpleFunctionDescriptorImpl]
 
 'it' @ [32:91] ==> value-parameter it: GlobalSearchScope defined in org.jetbrains.kotlin.idea.caches.resolve.getResolveScope.<anonymous>[ValueParameterDescriptorImpl]
@@ -31,8 +29,6 @@ Inferred types:
 'file' @ [32:95] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.caches.resolve.getResolveScope[ValueParameterDescriptorImpl]
 
 'project' @ [32:100] ==> public final val KtCodeFragment.project: Project[MyPropertyDescriptor]
-
-'KotlinSourceFilterScope' @ [33:25] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope[FakeCallableDescriptorForObject]
 
 'sourceAndClassFiles' @ [33:49] ==> @JvmStatic public final fun sourceAndClassFiles(delegate: GlobalSearchScope, project: Project): GlobalSearchScope defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope.Companion[SimpleFunctionDescriptorImpl]
 
@@ -53,8 +49,6 @@ Inferred types:
 'file' @ [38:18] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.caches.resolve.getResolveScope[ValueParameterDescriptorImpl]
 
 'getModuleInfo' @ [38:23] ==> public fun PsiElement.getModuleInfo(): IdeaModuleInfo defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
-
-'KotlinSourceFilterScope' @ [39:32] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope[FakeCallableDescriptorForObject]
 
 'projectSourceAndClassFiles' @ [39:56] ==> @JvmStatic public final fun projectSourceAndClassFiles(delegate: GlobalSearchScope, project: Project): GlobalSearchScope defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope.Companion[SimpleFunctionDescriptorImpl]
 

@@ -10,8 +10,8 @@
 
 'get' @ [41:53] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtExpression..KtExpression?), (LeakingThisDescriptor..LeakingThisDescriptor?)>..ReadOnlySlice<(KtExpression..KtExpression?), (LeakingThisDescriptor..LeakingThisDescriptor?)>?), p1: (KtExpression..KtExpression?)): LeakingThisDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> LeakingThisDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.LeakingThisDescriptor..org.jetbrains.kotlin.cfg.LeakingThisDescriptor?)
 
 'LEAKING_THIS' @ [41:57] ==> public final val LEAKING_THIS: (WritableSlice<(KtExpression..KtExpression?), (LeakingThisDescriptor..LeakingThisDescriptor?)>..WritableSlice<(KtExpression..KtExpression?), (LeakingThisDescriptor..LeakingThisDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -97,8 +97,6 @@ Inferred types:
 'it' @ [60:25] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.inspections.LeakingThisInspection.buildVisitor.<no name provided>.visitExpression.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [60:28] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [60:40] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [60:49] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

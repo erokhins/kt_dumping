@@ -8,9 +8,9 @@ Inferred types:
 
 'template' @ [42:28] ==> value-parameter template: KClass<out Any> defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [44:30] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [44:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'providedScriptFilePattern' @ [45:9] ==> value-parameter providedScriptFilePattern: String? = ... defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate.<init>[ValueParameterDescriptorImpl]
 
@@ -44,9 +44,9 @@ Inferred types:
 
 'DEFAULT_SCRIPT_FILE_PATTERN' @ [48:12] ==> public const val DEFAULT_SCRIPT_FILE_PATTERN: String defined in org.jetbrains.kotlin.script in file scriptTemplate.kt[PropertyDescriptorImpl]
 
-'lazy' @ [51:62] ==> public fun <T> lazy(initializer: () -> DependenciesResolver): Lazy<DependenciesResolver> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [51:62] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> DependenciesResolver
+    <T> -> T
 
 'providedResolver' @ [52:9] ==> value-parameter providedResolver: DependenciesResolver? = ... defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate.<init>[ValueParameterDescriptorImpl]
 
@@ -78,7 +78,7 @@ Inferred types:
 
 'instantiateResolver' @ [65:16] ==> private final fun <T : Any> instantiateResolver(resolverClass: KClass<out ScriptDependenciesResolver>): ScriptDependenciesResolver? defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Any> -> ScriptDependenciesResolver
+    <T : Any> -> Captured(out ScriptDependenciesResolver)
 
 'legacyDefAnn' @ [65:36] ==> val legacyDefAnn: ScriptTemplateDefinition defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate.resolverFromLegacyAnnotation[LocalVariableDescriptor]
 
@@ -88,6 +88,8 @@ Inferred types:
 Inferred types:
     <T> -> ScriptDependenciesResolver
     <R> -> LegacyPackageDependencyResolverWrapper
+
+'LegacyPackageDependencyResolverWrapper' @ [65:66] ==> public constructor LegacyPackageDependencyResolverWrapper(legacyResolver: ScriptDependenciesResolver) defined in org.jetbrains.kotlin.script.LegacyPackageDependencyResolverWrapper[ClassConstructorDescriptorImpl]
 
 'takeUnlessError' @ [69:22] ==> private final inline fun <T> takeUnlessError(reportError: Boolean = ..., body: () -> ScriptTemplateDefinition?): ScriptTemplateDefinition? defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -103,7 +105,7 @@ Inferred types:
 
 'instantiateResolver' @ [73:24] ==> private final fun <T : Any> instantiateResolver(resolverClass: KClass<out ScriptDependenciesResolver>): ScriptDependenciesResolver? defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Any> -> ScriptDependenciesResolver
+    <T : Any> -> Captured(out ScriptDependenciesResolver)
 
 'defAnn' @ [73:44] ==> val defAnn: ScriptTemplateDefinition defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate.resolverFromAnnotation[LocalVariableDescriptor]
 
@@ -131,6 +133,8 @@ Inferred types:
 Inferred types:
     <T> -> ScriptDependenciesResolver
     <R> -> ApiChangeDependencyResolverWrapper
+
+'ApiChangeDependencyResolverWrapper' @ [77:37] ==> public constructor ApiChangeDependencyResolverWrapper(delegate: ScriptDependenciesResolver) defined in org.jetbrains.kotlin.script.ApiChangeDependencyResolverWrapper[ClassConstructorDescriptorImpl]
 
 'resolverClass' @ [83:48] ==> value-parameter resolverClass: KClass<T> defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate.instantiateResolver[ValueParameterDescriptorImpl]
 
@@ -179,9 +183,9 @@ Inferred types:
 
 'message' @ [91:51] ==> public open val message: String? defined in java.lang.ClassCastException[DeserializedPropertyDescriptor]
 
-'lazy' @ [96:62] ==> public fun <T> lazy(initializer: () -> List<String>?): Lazy<List<String>?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [96:62] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<String>?
+    <T> -> T
 
 'takeUnlessError' @ [97:9] ==> private final inline fun <T> takeUnlessError(reportError: Boolean = ..., body: () -> List<String>?): List<String>? defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -219,9 +223,9 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'lazy' @ [101:71] ==> public fun <T> lazy(initializer: () -> List<KClass<out Annotation>>): Lazy<List<KClass<out Annotation>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [101:71] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KClass<out Annotation>>
+    <T> -> T
 
 'left' @ [104:17] ==> value-parameter left: KFunction<*> defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionFromAnnotatedTemplate.acceptedAnnotations.<anonymous>.sameSignature[ValueParameterDescriptorImpl]
 

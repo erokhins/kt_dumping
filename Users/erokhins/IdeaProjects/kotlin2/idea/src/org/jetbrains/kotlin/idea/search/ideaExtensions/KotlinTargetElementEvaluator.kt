@@ -177,9 +177,9 @@ Inferred types:
 
 'resolve' @ [102:18] ==> @Nullable public abstract fun resolve(): PsiElement? defined in com.intellij.psi.PsiReference[JavaMethodDescriptor]
 
-'let' @ [102:51] ==> @InlineOnly public inline fun <T, R> KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>.let(block: (KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [102:51] ==> @InlineOnly public inline fun <T, R> KtConstructor<*>.let(block: (KtConstructor<*>) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>
+    <T> -> KtConstructor<*>
     <R> -> Nothing
 
 'if (flags and JavaTargetElementEvaluator.NEW_AS_CONSTRUCTOR != 0) it else it.containingClassOrObject' @ [103:24] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiElement?, elseBranch: PsiElement?): PsiElement?[SimpleFunctionDescriptorImpl]
@@ -190,9 +190,9 @@ Inferred types:
 
 'NEW_AS_CONSTRUCTOR' @ [103:65] ==> public const final val NEW_AS_CONSTRUCTOR: Int defined in com.intellij.codeInsight.JavaTargetElementEvaluator[JavaPropertyDescriptor]
 
-'it' @ [103:90] ==> value-parameter it: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>> defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinTargetElementEvaluator.getElementByReference.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [103:90] ==> value-parameter it: KtConstructor<*> defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinTargetElementEvaluator.getElementByReference.<anonymous>[ValueParameterDescriptorImpl]
 
-'it' @ [103:98] ==> value-parameter it: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>> defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinTargetElementEvaluator.getElementByReference.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [103:98] ==> value-parameter it: KtConstructor<*> defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinTargetElementEvaluator.getElementByReference.<anonymous>[ValueParameterDescriptorImpl]
 
 'containingClassOrObject' @ [103:101] ==> public val KtDeclaration.containingClassOrObject: KtClassOrObject? defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 

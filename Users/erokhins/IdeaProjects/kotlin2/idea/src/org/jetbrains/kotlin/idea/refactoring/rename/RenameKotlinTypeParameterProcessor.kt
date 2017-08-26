@@ -10,7 +10,7 @@
 
 'resolveToDescriptor' @ [35:38] ==> public fun KtDeclaration.resolveToDescriptor(bodyResolveMode: BodyResolveMode = ...): DeclarationDescriptor defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
-'checkRedeclarations' @ [36:9] ==> internal fun checkRedeclarations(descriptor: DeclarationDescriptor, newName: String, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkRedeclarations' @ [36:9] ==> internal fun checkRedeclarations(descriptor: DeclarationDescriptor, newName: String, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [36:29] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinTypeParameterProcessor.findCollisions[LocalVariableDescriptor]
 

@@ -423,11 +423,11 @@ Inferred types:
 
 'java' @ [178:95] ==> public val <T> KClass<out DetailedReceiver>.java: Class<out DetailedReceiver> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DetailedReceiver
+    <T> -> Captured(out DetailedReceiver)
 
 'simpleName' @ [178:100] ==> public final val <T : (Any..Any?)> Class<out DetailedReceiver>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DetailedReceiver
+    <T : (Any..Any?)> -> Captured(out DetailedReceiver)
 
 'NoExplicitReceiverScopeTowerProcessor' @ [180:17] ==> public constructor NoExplicitReceiverScopeTowerProcessor<C : Candidate>(context: CandidateFactory<C>, collectCandidates: CandidatesCollector /* = ScopeTowerLevel.(extensionReceiver: ReceiverValueWithSmartCastInfo?) -> Collection<CandidateWithBoundDispatchReceiver> */) defined in org.jetbrains.kotlin.resolve.calls.tower.NoExplicitReceiverScopeTowerProcessor[ClassConstructorDescriptorImpl]
 Inferred types:

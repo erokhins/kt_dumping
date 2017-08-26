@@ -34,8 +34,6 @@ Inferred types:
 
 'this' @ [45:29] ==> <this> defined in org.jetbrains.kotlin.builtins.FAKE_CONTINUATION_CLASS_DESCRIPTOR.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'Annotations' @ [45:35] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [45:47] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
 'IN_VARIANCE' @ [45:70] ==> enum entry IN_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
@@ -47,6 +45,10 @@ Inferred types:
     <T> -> TypeParameterDescriptor
     <R> -> List<TypeParameterDescriptor>
 
+'listOf' @ [46:29] ==> public fun <T> listOf(element: TypeParameterDescriptor): List<TypeParameterDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> TypeParameterDescriptor
+
 'createTypeConstructor' @ [48:13] ==> public open fun createTypeConstructor(): Unit defined in org.jetbrains.kotlin.descriptors.impl.MutableClassDescriptor[JavaMethodDescriptor]
 
 'assert' @ [53:5] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -57,7 +59,7 @@ Inferred types:
 
 'suspendFunType' @ [54:54] ==> value-parameter suspendFunType: KotlinType defined in org.jetbrains.kotlin.builtins.transformSuspendFunctionToRuntimeFunctionType[ValueParameterDescriptorImpl]
 
-'createFunctionType' @ [57:12] ==> @JvmOverloads public fun createFunctionType(builtIns: KotlinBuiltIns, annotations: Annotations, receiverType: KotlinType?, parameterTypes: List<KotlinType>, parameterNames: List<Name>?, returnType: KotlinType, suspendFunction: Boolean = ...): SimpleType defined in org.jetbrains.kotlin.builtins[SimpleFunctionDescriptorImpl]
+'createFunctionType' @ [57:12] ==> @JvmOverloads public fun createFunctionType(builtIns: KotlinBuiltIns, annotations: Annotations, receiverType: KotlinType?, parameterTypes: List<KotlinType>, parameterNames: List<Name>?, returnType: KotlinType, suspendFunction: Boolean = ...): SimpleType defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[SimpleFunctionDescriptorImpl]
 
 'suspendFunType' @ [58:13] ==> value-parameter suspendFunType: KotlinType defined in org.jetbrains.kotlin.builtins.transformSuspendFunctionToRuntimeFunctionType[ValueParameterDescriptorImpl]
 
@@ -73,18 +75,16 @@ Inferred types:
 
 'suspendFunType' @ [61:13] ==> value-parameter suspendFunType: KotlinType defined in org.jetbrains.kotlin.builtins.transformSuspendFunctionToRuntimeFunctionType[ValueParameterDescriptorImpl]
 
-'getValueParameterTypesFromFunctionType' @ [61:28] ==> public fun KotlinType.getValueParameterTypesFromFunctionType(): List<TypeProjection> defined in org.jetbrains.kotlin.builtins[SimpleFunctionDescriptorImpl]
+'getValueParameterTypesFromFunctionType' @ [61:28] ==> public fun KotlinType.getValueParameterTypesFromFunctionType(): List<TypeProjection> defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [61:69] ==> public inline fun <T, R> Iterable<TypeProjection>.map(transform: (TypeProjection) -> KotlinType): List<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TypeProjection
     <R> -> KotlinType
 
-'KotlinTypeFactory' @ [62:13] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
+'getType' @ [61:89] ==> @NotNull public abstract fun getType(): KotlinType defined in org.jetbrains.kotlin.types.TypeProjection[JavaMethodDescriptor]
 
 'simpleType' @ [62:31] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
-
-'Annotations' @ [63:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [63:33] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'funType' @ [81:36] ==> value-parameter funType: KotlinType defined in org.jetbrains.kotlin.builtins.transformRuntimeFunctionTypeToSuspendFunction[ValueParameterDescriptorImpl]
 
-'getValueParameterTypesFromFunctionType' @ [81:44] ==> public fun KotlinType.getValueParameterTypesFromFunctionType(): List<TypeProjection> defined in org.jetbrains.kotlin.builtins[SimpleFunctionDescriptorImpl]
+'getValueParameterTypesFromFunctionType' @ [81:44] ==> public fun KotlinType.getValueParameterTypesFromFunctionType(): List<TypeProjection> defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[SimpleFunctionDescriptorImpl]
 
 'lastOrNull' @ [81:85] ==> public fun <T> List<TypeProjection>.lastOrNull(): TypeProjection? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -158,7 +158,7 @@ Inferred types:
 
 'type' @ [88:73] ==> public final val TypeProjection.type: KotlinType[MyPropertyDescriptor]
 
-'createFunctionType' @ [90:12] ==> @JvmOverloads public fun createFunctionType(builtIns: KotlinBuiltIns, annotations: Annotations, receiverType: KotlinType?, parameterTypes: List<KotlinType>, parameterNames: List<Name>?, returnType: KotlinType, suspendFunction: Boolean = ...): SimpleType defined in org.jetbrains.kotlin.builtins[SimpleFunctionDescriptorImpl]
+'createFunctionType' @ [90:12] ==> @JvmOverloads public fun createFunctionType(builtIns: KotlinBuiltIns, annotations: Annotations, receiverType: KotlinType?, parameterTypes: List<KotlinType>, parameterNames: List<Name>?, returnType: KotlinType, suspendFunction: Boolean = ...): SimpleType defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[SimpleFunctionDescriptorImpl]
 
 'funType' @ [91:13] ==> value-parameter funType: KotlinType defined in org.jetbrains.kotlin.builtins.transformRuntimeFunctionTypeToSuspendFunction[ValueParameterDescriptorImpl]
 
@@ -174,7 +174,7 @@ Inferred types:
 
 'funType' @ [94:13] ==> value-parameter funType: KotlinType defined in org.jetbrains.kotlin.builtins.transformRuntimeFunctionTypeToSuspendFunction[ValueParameterDescriptorImpl]
 
-'getValueParameterTypesFromFunctionType' @ [94:21] ==> public fun KotlinType.getValueParameterTypesFromFunctionType(): List<TypeProjection> defined in org.jetbrains.kotlin.builtins[SimpleFunctionDescriptorImpl]
+'getValueParameterTypesFromFunctionType' @ [94:21] ==> public fun KotlinType.getValueParameterTypesFromFunctionType(): List<TypeProjection> defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[SimpleFunctionDescriptorImpl]
 
 'dropLast' @ [94:62] ==> public fun <T> List<TypeProjection>.dropLast(n: Int): List<TypeProjection> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -184,6 +184,8 @@ Inferred types:
 Inferred types:
     <T> -> TypeProjection
     <R> -> KotlinType
+
+'getType' @ [94:94] ==> @NotNull public abstract fun getType(): KotlinType defined in org.jetbrains.kotlin.types.TypeProjection[JavaMethodDescriptor]
 
 'suspendReturnType' @ [97:13] ==> val suspendReturnType: KotlinType defined in org.jetbrains.kotlin.builtins.transformRuntimeFunctionTypeToSuspendFunction[LocalVariableDescriptor]
 

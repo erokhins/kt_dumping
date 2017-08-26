@@ -1,6 +1,6 @@
 'targetDescriptor' @ [33:9] ==> value-parameter targetDescriptor: ClassifierDescriptor defined in org.jetbrains.kotlin.resolve.checkers.ApiVersionClassifierUsageChecker.check[ValueParameterDescriptorImpl]
 
-'checkSinceKotlinVersionAccessibility' @ [33:26] ==> internal fun DeclarationDescriptor.checkSinceKotlinVersionAccessibility(languageVersionSettings: LanguageVersionSettings, actionIfInaccessible: ((ApiVersion) -> Unit)? = ...): Boolean defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'checkSinceKotlinVersionAccessibility' @ [33:26] ==> internal fun DeclarationDescriptor.checkSinceKotlinVersionAccessibility(languageVersionSettings: LanguageVersionSettings, actionIfInaccessible: ((ApiVersion) -> Unit)? = ...): Boolean defined in org.jetbrains.kotlin.resolve in file sinceKotlinUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [33:63] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.checkers.ApiVersionClassifierUsageChecker.check[ValueParameterDescriptorImpl]
 

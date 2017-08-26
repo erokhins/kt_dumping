@@ -335,16 +335,16 @@ Inferred types:
 
 'rawType' @ [165:42] ==> val rawType: Class<*>? defined in org.jetbrains.kotlin.container.ComponentStorage.collectAdhocComponents[LocalVariableDescriptor]
 
-'let' @ [165:51] ==> @InlineOnly public inline fun <T, R> Class<out (Any..Any?)>.let(block: (Class<out (Any..Any?)>) -> ComponentDescriptor?): ComponentDescriptor? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [165:51] ==> @InlineOnly public inline fun <T, R> Class<*>.let(block: (Class<*>) -> ComponentDescriptor?): ComponentDescriptor? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <T> -> Class<*>
     <R> -> ComponentDescriptor?
 
 'getImplicitlyDefinedDependency' @ [165:57] ==> private final fun getImplicitlyDefinedDependency(context: ComponentResolveContext, rawType: Class<*>): ComponentDescriptor? defined in org.jetbrains.kotlin.container.ComponentStorage[SimpleFunctionDescriptorImpl]
 
 'context' @ [165:88] ==> value-parameter context: ComponentResolveContext defined in org.jetbrains.kotlin.container.ComponentStorage.collectAdhocComponents[ValueParameterDescriptorImpl]
 
-'it' @ [165:97] ==> value-parameter it: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.container.ComponentStorage.collectAdhocComponents.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [165:97] ==> value-parameter it: Class<*> defined in org.jetbrains.kotlin.container.ComponentStorage.collectAdhocComponents.<anonymous>[ValueParameterDescriptorImpl]
 
 'adhocDescriptors' @ [167:17] ==> value-parameter adhocDescriptors: LinkedHashSet<ComponentDescriptor> defined in org.jetbrains.kotlin.container.ComponentStorage.collectAdhocComponents[ValueParameterDescriptorImpl]
 
@@ -370,7 +370,7 @@ Inferred types:
 
 'modifiers' @ [174:42] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.modifiers: Int[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 '!' @ [174:56] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -378,7 +378,7 @@ Inferred types:
 
 'isPrimitive' @ [174:65] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'ImplicitSingletonTypeComponentDescriptor' @ [175:20] ==> public constructor ImplicitSingletonTypeComponentDescriptor(container: ComponentContainer, klass: Class<*>) defined in org.jetbrains.kotlin.container.ImplicitSingletonTypeComponentDescriptor[ClassConstructorDescriptorImpl]
 
@@ -423,11 +423,13 @@ Inferred types:
     <T> -> Any
     <R> -> DefaultInstanceComponentDescriptor
 
+'DefaultInstanceComponentDescriptor' @ [184:81] ==> public constructor DefaultInstanceComponentDescriptor(instance: Any) defined in org.jetbrains.kotlin.container.DefaultInstanceComponentDescriptor[ClassConstructorDescriptorImpl]
+
 'instance' @ [191:25] ==> value-parameter instance: Any defined in org.jetbrains.kotlin.container.ComponentStorage.injectProperties[ValueParameterDescriptorImpl]
 
 'java' @ [191:41] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'getInfo' @ [191:46] ==> public fun Class<*>.getInfo(): ClassInfo defined in org.jetbrains.kotlin.container in file Cache.kt[SimpleFunctionDescriptorImpl]
 

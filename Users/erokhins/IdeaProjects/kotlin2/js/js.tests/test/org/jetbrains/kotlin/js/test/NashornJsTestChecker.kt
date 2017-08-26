@@ -52,7 +52,7 @@ Inferred types:
 
 'split' @ [52:37] ==> public fun CharSequence.split(vararg delimiters: String, ignoreCase: Boolean = ..., limit: Int = ...): List<String> defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'fold' @ [52:48] ==> public inline fun <T, R> Iterable<String>.fold(initial: ScriptObjectMirror, operation: (ScriptObjectMirror, String) -> ScriptObjectMirror): ScriptObjectMirror defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [52:48] ==> public inline fun <T, R> Iterable<String>.fold(initial: ScriptObjectMirror, operation: (acc: ScriptObjectMirror, String) -> ScriptObjectMirror): ScriptObjectMirror defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> ScriptObjectMirror
@@ -85,7 +85,7 @@ Inferred types:
 
 'globalObject' @ [68:18] ==> val globalObject: ScriptObjectMirror defined in org.jetbrains.kotlin.js.test.runAndRestoreContext[LocalVariableDescriptor]
 
-'toMapWithAllMembers' @ [68:31] ==> private fun ScriptObjectMirror.toMapWithAllMembers(): Map<String, Any?> defined in org.jetbrains.kotlin.js.test[SimpleFunctionDescriptorImpl]
+'toMapWithAllMembers' @ [68:31] ==> private fun ScriptObjectMirror.toMapWithAllMembers(): Map<String, Any?> defined in org.jetbrains.kotlin.js.test in file NashornJsTestChecker.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [71:9] ==> <this> defined in org.jetbrains.kotlin.js.test.runAndRestoreContext[ReceiverParameterDescriptorImpl]
 
@@ -93,7 +93,7 @@ Inferred types:
 
 'globalObject' @ [74:21] ==> val globalObject: ScriptObjectMirror defined in org.jetbrains.kotlin.js.test.runAndRestoreContext[LocalVariableDescriptor]
 
-'toMapWithAllMembers' @ [74:34] ==> private fun ScriptObjectMirror.toMapWithAllMembers(): Map<String, Any?> defined in org.jetbrains.kotlin.js.test[SimpleFunctionDescriptorImpl]
+'toMapWithAllMembers' @ [74:34] ==> private fun ScriptObjectMirror.toMapWithAllMembers(): Map<String, Any?> defined in org.jetbrains.kotlin.js.test in file NashornJsTestChecker.kt[SimpleFunctionDescriptorImpl]
 
 'after' @ [75:20] ==> val after: Map<String, Any?> defined in org.jetbrains.kotlin.js.test.runAndRestoreContext[LocalVariableDescriptor]
 
@@ -201,7 +201,7 @@ Inferred types:
 
 'engine' @ [128:16] ==> private final val engine: ScriptEngine defined in org.jetbrains.kotlin.js.test.NashornJsTestChecker[PropertyDescriptorImpl]
 
-'runAndRestoreContext' @ [128:23] ==> public fun ScriptEngine.runAndRestoreContext(f: ScriptEngine.() -> Any?): Any? defined in org.jetbrains.kotlin.js.test[SimpleFunctionDescriptorImpl]
+'runAndRestoreContext' @ [128:23] ==> public fun ScriptEngine.runAndRestoreContext(f: ScriptEngine.() -> Any?): Any? defined in org.jetbrains.kotlin.js.test in file NashornJsTestChecker.kt[SimpleFunctionDescriptorImpl]
 
 'files' @ [129:13] ==> value-parameter files: List<String> defined in org.jetbrains.kotlin.js.test.NashornJsTestChecker.run[ValueParameterDescriptorImpl]
 
@@ -210,6 +210,8 @@ Inferred types:
     <T> -> String
 
 'engine' @ [129:27] ==> private final val engine: ScriptEngine defined in org.jetbrains.kotlin.js.test.NashornJsTestChecker[PropertyDescriptorImpl]
+
+'loadFile' @ [129:35] ==> public fun ScriptEngine.loadFile(path: String): Unit defined in org.jetbrains.kotlin.js.test in file NashornJsTestChecker.kt[SimpleFunctionDescriptorImpl]
 
 'engine' @ [130:13] ==> private final val engine: ScriptEngine defined in org.jetbrains.kotlin.js.test.NashornJsTestChecker[PropertyDescriptorImpl]
 
@@ -238,6 +240,8 @@ Inferred types:
     <T> -> String
 
 'engine' @ [141:19] ==> val engine: ScriptEngine defined in org.jetbrains.kotlin.js.test.NashornJsTestChecker.createScriptEngineForTest[LocalVariableDescriptor]
+
+'loadFile' @ [141:27] ==> public fun ScriptEngine.loadFile(path: String): Unit defined in org.jetbrains.kotlin.js.test in file NashornJsTestChecker.kt[SimpleFunctionDescriptorImpl]
 
 'engine' @ [143:9] ==> val engine: ScriptEngine defined in org.jetbrains.kotlin.js.test.NashornJsTestChecker.createScriptEngineForTest[LocalVariableDescriptor]
 

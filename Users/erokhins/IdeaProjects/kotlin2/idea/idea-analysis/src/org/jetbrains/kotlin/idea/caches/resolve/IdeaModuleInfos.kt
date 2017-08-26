@@ -127,7 +127,7 @@ Inferred types:
 
 'getCachedValue' @ [85:52] ==> public open fun <T : (Any..Any?), D : (UserDataHolder..UserDataHolder?)> getCachedValue(@NotNull p0: Module, @NotNull p1: CachedValueProvider<(T..T?)>): (T..T?) defined in com.intellij.psi.util.CachedValuesManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
     <D : (UserDataHolder..UserDataHolder?)> -> Module
 
 'this' @ [85:67] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.cached[ReceiverParameterDescriptorImpl]
@@ -164,7 +164,7 @@ Inferred types:
 
 'addAll' @ [97:16] ==> public open fun addAll(elements: Collection<IdeaModuleInfo>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
-'orderEntryToModuleInfo' @ [97:23] ==> private fun orderEntryToModuleInfo(project: Project, orderEntry: OrderEntry, productionOnly: Boolean): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'orderEntryToModuleInfo' @ [97:23] ==> private fun orderEntryToModuleInfo(project: Project, orderEntry: OrderEntry, productionOnly: Boolean): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve in file IdeaModuleInfos.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [97:46] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.caches.resolve.ideaModelDependencies[ValueParameterDescriptorImpl]
 
@@ -206,19 +206,19 @@ Inferred types:
 
 'module' @ [123:35] ==> public open val module: Module defined in org.jetbrains.kotlin.idea.caches.resolve.ModuleProductionSourceInfo[PropertyDescriptorImpl]
 
-'cached' @ [123:42] ==> public fun <T> Module.cached(provider: CachedValueProvider<List<IdeaModuleInfo>>): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'cached' @ [123:42] ==> public fun <T> Module.cached(provider: CachedValueProvider<(List<IdeaModuleInfo>..List<IdeaModuleInfo>?)>): (List<IdeaModuleInfo>..List<IdeaModuleInfo>?) defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> List<IdeaModuleInfo>
+    <T> -> (kotlin.collections.List<org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo>..kotlin.collections.List<org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo>?)
 
-'CachedValueProvider' @ [123:49] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(List<IdeaModuleInfo>..List<IdeaModuleInfo>?)>?): CachedValueProvider<List<IdeaModuleInfo>> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
+'CachedValueProvider' @ [123:49] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(List<IdeaModuleInfo>..List<IdeaModuleInfo>?)>?): CachedValueProvider<(List<IdeaModuleInfo>..List<IdeaModuleInfo>?)> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> List<IdeaModuleInfo>
+    <T : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo>..kotlin.collections.List<org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo>?)
 
 'Result' @ [124:29] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: List<IdeaModuleInfo>?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> List<IdeaModuleInfo>
 
-'ideaModelDependencies' @ [125:17] ==> private fun ideaModelDependencies(module: Module, productionOnly: Boolean): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'ideaModelDependencies' @ [125:17] ==> private fun ideaModelDependencies(module: Module, productionOnly: Boolean): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve in file IdeaModuleInfos.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [125:39] ==> public open val module: Module defined in org.jetbrains.kotlin.idea.caches.resolve.ModuleProductionSourceInfo[PropertyDescriptorImpl]
 
@@ -244,19 +244,19 @@ Inferred types:
 
 'module' @ [138:35] ==> public open val module: Module defined in org.jetbrains.kotlin.idea.caches.resolve.ModuleTestSourceInfo[PropertyDescriptorImpl]
 
-'cached' @ [138:42] ==> public fun <T> Module.cached(provider: CachedValueProvider<List<IdeaModuleInfo>>): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'cached' @ [138:42] ==> public fun <T> Module.cached(provider: CachedValueProvider<(List<IdeaModuleInfo>..List<IdeaModuleInfo>?)>): (List<IdeaModuleInfo>..List<IdeaModuleInfo>?) defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> List<IdeaModuleInfo>
+    <T> -> (kotlin.collections.List<org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo>..kotlin.collections.List<org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo>?)
 
-'CachedValueProvider' @ [138:49] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(List<IdeaModuleInfo>..List<IdeaModuleInfo>?)>?): CachedValueProvider<List<IdeaModuleInfo>> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
+'CachedValueProvider' @ [138:49] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(List<IdeaModuleInfo>..List<IdeaModuleInfo>?)>?): CachedValueProvider<(List<IdeaModuleInfo>..List<IdeaModuleInfo>?)> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> List<IdeaModuleInfo>
+    <T : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo>..kotlin.collections.List<org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo>?)
 
 'Result' @ [139:29] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: List<IdeaModuleInfo>?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> List<IdeaModuleInfo>
 
-'ideaModelDependencies' @ [140:17] ==> private fun ideaModelDependencies(module: Module, productionOnly: Boolean): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'ideaModelDependencies' @ [140:17] ==> private fun ideaModelDependencies(module: Module, productionOnly: Boolean): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve in file IdeaModuleInfos.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [140:39] ==> public open val module: Module defined in org.jetbrains.kotlin.idea.caches.resolve.ModuleTestSourceInfo[PropertyDescriptorImpl]
 
@@ -268,13 +268,13 @@ Inferred types:
 
 'module' @ [144:54] ==> public open val module: Module defined in org.jetbrains.kotlin.idea.caches.resolve.ModuleTestSourceInfo[PropertyDescriptorImpl]
 
-'cached' @ [144:61] ==> public fun <T> Module.cached(provider: CachedValueProvider<SmartList<ModuleInfo>>): SmartList<ModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'cached' @ [144:61] ==> public fun <T> Module.cached(provider: CachedValueProvider<(SmartList<ModuleInfo>..SmartList<ModuleInfo>?)>): (SmartList<ModuleInfo>..SmartList<ModuleInfo>?) defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> SmartList<ModuleInfo>
+    <T> -> (com.intellij.util.SmartList<org.jetbrains.kotlin.analyzer.ModuleInfo>..com.intellij.util.SmartList<org.jetbrains.kotlin.analyzer.ModuleInfo>?)
 
-'CachedValueProvider' @ [144:68] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(SmartList<ModuleInfo>..SmartList<ModuleInfo>?)>?): CachedValueProvider<SmartList<ModuleInfo>> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
+'CachedValueProvider' @ [144:68] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(SmartList<ModuleInfo>..SmartList<ModuleInfo>?)>?): CachedValueProvider<(SmartList<ModuleInfo>..SmartList<ModuleInfo>?)> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> SmartList<ModuleInfo>
+    <T : (Any..Any?)> -> (com.intellij.util.SmartList<org.jetbrains.kotlin.analyzer.ModuleInfo>..com.intellij.util.SmartList<org.jetbrains.kotlin.analyzer.ModuleInfo>?)
 
 'SmartList' @ [145:20] ==> public constructor SmartList<E : (Any..Any?)>(p0: (ModuleInfo..ModuleInfo?)) defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -525,6 +525,8 @@ Inferred types:
     <R : Any> -> String
 
 'PathUtil' @ [226:64] ==> private constructor PathUtil() defined in com.intellij.util.PathUtil[JavaClassConstructorDescriptor]
+
+'getLocalPath' @ [226:74] ==> @Nullable public open fun getLocalPath(@Nullable p0: VirtualFile?): String? defined in com.intellij.util.PathUtil[JavaMethodDescriptor]
 
 'library' @ [228:58] ==> public final val library: Library defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryInfo[PropertyDescriptorImpl]
 

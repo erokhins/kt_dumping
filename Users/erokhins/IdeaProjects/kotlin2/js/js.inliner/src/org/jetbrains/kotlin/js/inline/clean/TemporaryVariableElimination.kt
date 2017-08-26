@@ -23,7 +23,7 @@ Inferred types:
 
 'function' @ [99:34] ==> private final val function: JsFunction defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination[PropertyDescriptorImpl]
 
-'collectLocalVariables' @ [99:43] ==> public fun JsFunction.collectLocalVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectLocalVariables' @ [99:43] ==> public fun JsFunction.collectLocalVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'mutableSetOf' @ [103:37] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<JsName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -346,7 +346,7 @@ Inferred types:
 
 'x' @ [207:33] ==> value-parameter x: JsFunction defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.analyze.<no name provided>.visitFunction[ValueParameterDescriptorImpl]
 
-'collectFreeVariables' @ [207:35] ==> public fun JsFunction.collectFreeVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectFreeVariables' @ [207:35] ==> public fun JsFunction.collectFreeVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'useVariable' @ [208:21] ==> private final fun useVariable(name: JsName): Unit defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination[SimpleFunctionDescriptorImpl]
 
@@ -1212,7 +1212,7 @@ Inferred types:
 
 'accept' @ [517:44] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'it' @ [517:51] ==> value-parameter it: JsExpression defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>.visit.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1235,13 +1235,13 @@ Inferred types:
 
 'addPrevious' @ [520:33] ==> public open fun <R : (JsNode..JsNode?)> addPrevious(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpressionStatement
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'JsExpressionStatement' @ [520:45] ==> public constructor JsExpressionStatement(@NotNull p0: JsExpression) defined in org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement[JavaClassConstructorDescriptor]
 
 'accept' @ [520:67] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'initializer' @ [520:74] ==> val initializer: JsExpression defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>.visit[LocalVariableDescriptor]
 
@@ -1255,7 +1255,7 @@ Inferred types:
 
 'addPrevious' @ [524:29] ==> public open fun <R : (JsNode..JsNode?)> addPrevious(p0: (JsVars..JsVars?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsVars
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsVars..org.jetbrains.kotlin.js.backend.ast.JsVars?)
 
 'JsVars' @ [524:41] ==> public constructor JsVars(vararg p0: (JsVars.JsVar..JsVars.JsVar?)) defined in org.jetbrains.kotlin.js.backend.ast.JsVars[JavaClassConstructorDescriptor]
 
@@ -1327,11 +1327,11 @@ Inferred types:
 
 'replaceMe' @ [548:29] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpressionStatement
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'accept' @ [548:39] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpressionStatement..JsExpressionStatement?)): (JsExpressionStatement..JsExpressionStatement?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpressionStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'JsExpressionStatement' @ [548:46] ==> public constructor JsExpressionStatement(@NotNull p0: JsExpression) defined in org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement[JavaClassConstructorDescriptor]
 
@@ -1357,7 +1357,7 @@ Inferred types:
 
 'accept' @ [558:21] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'initializer' @ [558:28] ==> val initializer: (JsPropertyInitializer..JsPropertyInitializer?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>.visit[LocalVariableDescriptor]
 
@@ -1387,7 +1387,7 @@ Inferred types:
 
 'accept' @ [566:39] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'definedValues' @ [566:46] ==> private final val definedValues: MutableMap<JsName, JsExpression> defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination[PropertyDescriptorImpl]
 
@@ -1397,7 +1397,7 @@ Inferred types:
 
 'replaceMe' @ [567:25] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpression..JsExpression?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpression
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'replacement' @ [567:35] ==> val replacement: (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>.visit[LocalVariableDescriptor]
 
@@ -1435,11 +1435,11 @@ Inferred types:
 
 'replaceMe' @ [584:29] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpression..JsExpression?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpression
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'accept' @ [584:39] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'x' @ [584:46] ==> value-parameter x: JsBinaryOperation defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>.endVisit[ValueParameterDescriptorImpl]
 
@@ -1461,7 +1461,7 @@ Inferred types:
 
 'accept' @ [589:11] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsBlock..JsBlock?)): (JsBlock..JsBlock?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination.cleanUp.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsBlock
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsBlock..org.jetbrains.kotlin.js.backend.ast.JsBlock?)
 
 'root' @ [589:18] ==> private final val root: JsBlock defined in org.jetbrains.kotlin.js.inline.clean.TemporaryVariableElimination[PropertyDescriptorImpl]
 

@@ -60,7 +60,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [45:46] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (Int..Int?), (String..String?)> defined in org.jetbrains.kotlin.idea.quickfix.AddStarProjectionsFix.IsExpressionFactory.createAction[LocalVariableDescriptor]
 
-'psiElement' @ [45:71] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (Int..Int?), (String..String?)>.psiElement: (KtTypeReference..KtTypeReference?)[MyPropertyDescriptor]
+'psiElement' @ [45:71] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (Int..Int?), (String..String?)>.psiElement: KtTypeReference[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
     <A : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
@@ -88,7 +88,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [47:57] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (Int..Int?), (String..String?)> defined in org.jetbrains.kotlin.idea.quickfix.AddStarProjectionsFix.IsExpressionFactory.createAction[LocalVariableDescriptor]
 
-'a' @ [47:82] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (Int..Int?), (String..String?)>.a: (Int..Int?)[MyPropertyDescriptor]
+'a' @ [47:82] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (Int..Int?), (String..String?)>.a: Int[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
     <A : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)

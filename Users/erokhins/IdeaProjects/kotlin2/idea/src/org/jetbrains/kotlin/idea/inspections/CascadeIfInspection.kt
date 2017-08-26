@@ -34,7 +34,7 @@ Inferred types:
 
 'expression' @ [47:25] ==> value-parameter expression: KtIfExpression defined in org.jetbrains.kotlin.idea.inspections.CascadeIfInspection.buildVisitor.<no name provided>.visitIfExpression[ValueParameterDescriptorImpl]
 
-'isElseIf' @ [47:36] ==> internal fun KtExpression.isElseIf(): Boolean defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations[SimpleFunctionDescriptorImpl]
+'isElseIf' @ [47:36] ==> internal fun KtExpression.isElseIf(): Boolean defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file IfThenUtils.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [49:25] ==> value-parameter expression: KtIfExpression defined in org.jetbrains.kotlin.idea.inspections.CascadeIfInspection.buildVisitor.<no name provided>.visitIfExpression[ValueParameterDescriptorImpl]
 

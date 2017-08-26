@@ -1,6 +1,6 @@
-'lazy' @ [40:30] ==> public fun <T> lazy(initializer: () -> Boolean): Lazy<Boolean> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [40:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Boolean
+    <T> -> T
 
 'isEnabled' @ [40:35] ==> value-parameter isEnabled: () -> Boolean defined in org.jetbrains.kotlin.incremental.CacheVersion.<init>[ValueParameterDescriptorImpl]
 

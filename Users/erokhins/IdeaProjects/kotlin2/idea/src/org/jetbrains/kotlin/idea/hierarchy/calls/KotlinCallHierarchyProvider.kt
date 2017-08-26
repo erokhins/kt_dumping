@@ -7,7 +7,7 @@ Inferred types:
     <T> -> PsiElement
     <R> -> KtElement?
 
-'getCallHierarchyElement' @ [30:53] ==> public fun getCallHierarchyElement(element: PsiElement): KtElement? defined in org.jetbrains.kotlin.idea.hierarchy.calls[SimpleFunctionDescriptorImpl]
+'getCallHierarchyElement' @ [30:53] ==> public fun getCallHierarchyElement(element: PsiElement): KtElement? defined in org.jetbrains.kotlin.idea.hierarchy.calls in file callHierarchyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [30:77] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCallHierarchyProvider.getTarget.<anonymous>[ValueParameterDescriptorImpl]
 

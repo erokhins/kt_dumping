@@ -20,7 +20,7 @@
 Inferred types:
     <reified T : PsiElement> -> KtExpression
 
-'getTargetScope' @ [61:23] ==> private fun IntroduceTypeAliasData.getTargetScope(): LexicalScope defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias[SimpleFunctionDescriptorImpl]
+'getTargetScope' @ [61:23] ==> private fun IntroduceTypeAliasData.getTargetScope(): LexicalScope defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias in file introduceTypeAliasImpl.kt[SimpleFunctionDescriptorImpl]
 
 'psiFactory' @ [63:20] ==> val psiFactory: KtPsiFactory defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.analyze[LocalVariableDescriptor]
 
@@ -419,7 +419,7 @@ Inferred types:
 
 'originalData' @ [142:9] ==> public final val originalData: IntroduceTypeAliasData defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.IntroduceTypeAliasDescriptor[PropertyDescriptorImpl]
 
-'getTargetScope' @ [142:22] ==> private fun IntroduceTypeAliasData.getTargetScope(): LexicalScope defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias[SimpleFunctionDescriptorImpl]
+'getTargetScope' @ [142:22] ==> private fun IntroduceTypeAliasData.getTargetScope(): LexicalScope defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias in file introduceTypeAliasImpl.kt[SimpleFunctionDescriptorImpl]
 
 'findClassifier' @ [142:39] ==> public fun HierarchicalScope.findClassifier(name: Name, location: LookupLocation): ClassifierDescriptor? defined in org.jetbrains.kotlin.resolve.scopes.utils[DeserializedSimpleFunctionDescriptor]
 
@@ -466,7 +466,7 @@ Inferred types:
 
 'originalData' @ [150:46] ==> public final val originalData: IntroduceTypeAliasData defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.IntroduceTypeAliasDescriptor[PropertyDescriptorImpl]
 
-'getApplicableVisibilities' @ [150:59] ==> public fun IntroduceTypeAliasData.getApplicableVisibilities(): List<KtModifierKeywordToken> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias[SimpleFunctionDescriptorImpl]
+'getApplicableVisibilities' @ [150:59] ==> public fun IntroduceTypeAliasData.getApplicableVisibilities(): List<KtModifierKeywordToken> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias in file introduceTypeAliasImpl.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [151:9] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.validate[LocalVariableDescriptor]
 
@@ -898,14 +898,11 @@ Inferred types:
     <K> -> KotlinPsiRange
     <V> -> Function0<Unit>
 
-'CopyableUserDataProperty' @ [236:67] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<TypeParameter>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtTypeReference
-    <T : Any> -> TypeParameter
+'getValue' @ [236:67] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [236:96] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(TypeParameter..TypeParameter?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeParameter
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.TypeParameter..org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.TypeParameter?)
 
 'originalData' @ [239:27] ==> public final val originalData: IntroduceTypeAliasData defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.IntroduceTypeAliasDescriptor[PropertyDescriptorImpl]
 

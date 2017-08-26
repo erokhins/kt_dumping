@@ -70,7 +70,7 @@ Inferred types:
 
 'putUserData' @ [63:18] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(IDEKotlinBinaryClassCache.KotlinBinaryData..IDEKotlinBinaryClassCache.KotlinBinaryData?)>, @Nullable p1: IDEKotlinBinaryClassCache.KotlinBinaryData?): Unit defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinBinaryData
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache.KotlinBinaryData..org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache.KotlinBinaryData?)
 
 'KOTLIN_BINARY_DATA_KEY' @ [63:30] ==> private final val KOTLIN_BINARY_DATA_KEY: Key<(IDEKotlinBinaryClassCache.KotlinBinaryData..IDEKotlinBinaryClassCache.KotlinBinaryData?)> defined in org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache[PropertyDescriptorImpl]
 
@@ -118,7 +118,7 @@ Inferred types:
 
 'getService' @ [84:51] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Class<(FileAttributeService..FileAttributeService?)>): (FileAttributeService..FileAttributeService?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FileAttributeService
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.FileAttributeService..org.jetbrains.kotlin.idea.caches.FileAttributeService?)
 
 'java' @ [84:90] ==> public val <T> KClass<FileAttributeService>.java: Class<FileAttributeService> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -152,7 +152,7 @@ Inferred types:
 
 'getService' @ [94:24] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Class<(FileAttributeService..FileAttributeService?)>): (FileAttributeService..FileAttributeService?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FileAttributeService
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.FileAttributeService..org.jetbrains.kotlin.idea.caches.FileAttributeService?)
 
 'java' @ [94:63] ==> public val <T> KClass<FileAttributeService>.java: Class<FileAttributeService> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -172,7 +172,7 @@ Inferred types:
 
 'getUserData' @ [100:29] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(IDEKotlinBinaryClassCache.KotlinBinaryData..IDEKotlinBinaryClassCache.KotlinBinaryData?)>): IDEKotlinBinaryClassCache.KotlinBinaryData? defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinBinaryData
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache.KotlinBinaryData..org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache.KotlinBinaryData?)
 
 'KOTLIN_BINARY_DATA_KEY' @ [100:41] ==> private final val KOTLIN_BINARY_DATA_KEY: Key<(IDEKotlinBinaryClassCache.KotlinBinaryData..IDEKotlinBinaryClassCache.KotlinBinaryData?)> defined in org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache[PropertyDescriptorImpl]
 
@@ -225,7 +225,7 @@ Inferred types:
 
 'putUserData' @ [114:22] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(IDEKotlinBinaryClassCache.KotlinBinaryData..IDEKotlinBinaryClassCache.KotlinBinaryData?)>, @Nullable p1: IDEKotlinBinaryClassCache.KotlinBinaryData?): Unit defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinBinaryData
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache.KotlinBinaryData..org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache.KotlinBinaryData?)
 
 'KOTLIN_BINARY_DATA_KEY' @ [114:34] ==> private final val KOTLIN_BINARY_DATA_KEY: Key<(IDEKotlinBinaryClassCache.KotlinBinaryData..IDEKotlinBinaryClassCache.KotlinBinaryData?)> defined in org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache[PropertyDescriptorImpl]
 

@@ -10,7 +10,7 @@
 
 'extensionReceiverType' @ [25:84] ==> public open val extensionReceiverType: Type? defined in org.jetbrains.kotlin.codegen.CallableMethod[PropertyDescriptorImpl]
 
-'createUnaryIntrinsicCallable' @ [26:16] ==> public fun createUnaryIntrinsicCallable(callable: CallableMethod, newReturnType: Type? = ..., needPrimitiveCheck: Boolean = ..., newThisType: Type? = ..., invoke: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics[SimpleFunctionDescriptorImpl]
+'createUnaryIntrinsicCallable' @ [26:16] ==> public fun createUnaryIntrinsicCallable(callable: CallableMethod, newReturnType: Type? = ..., needPrimitiveCheck: Boolean = ..., newThisType: Type? = ..., invoke: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics in file IntrinsicCallable.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [26:45] ==> value-parameter method: CallableMethod defined in org.jetbrains.kotlin.codegen.intrinsics.ToString.toCallable[ValueParameterDescriptorImpl]
 

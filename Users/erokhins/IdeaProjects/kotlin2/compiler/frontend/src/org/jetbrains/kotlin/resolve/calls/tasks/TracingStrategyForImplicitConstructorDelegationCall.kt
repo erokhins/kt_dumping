@@ -14,8 +14,8 @@
 
 'record' @ [46:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtElement..KtElement?), (Call..Call?)>..WritableSlice<(KtElement..KtElement?), (Call..Call?)>?), key: (KtElement..KtElement?), value: (Call..Call?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtElement
-    <V : (Any..Any?)> -> Call
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
 
 'CALL' @ [46:22] ==> public final val CALL: (WritableSlice<(KtElement..KtElement?), (Call..Call?)>..WritableSlice<(KtElement..KtElement?), (Call..Call?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -35,8 +35,8 @@ Inferred types:
 
 'get' @ [51:37] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [51:41] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -54,8 +54,8 @@ Inferred types:
 
 'record' @ [53:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?), value: (DeclarationDescriptor..DeclarationDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [53:26] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -67,8 +67,8 @@ Inferred types:
 
 'record' @ [58:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(Call..Call?), (ResolvedCall<*>..ResolvedCall<*>?)>..WritableSlice<(Call..Call?), (ResolvedCall<*>..ResolvedCall<*>?)>?), key: (Call..Call?), value: (ResolvedCall<*>..ResolvedCall<*>?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Call
-    <V : (Any..Any?)> -> ResolvedCall<*>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)
 
 'RESOLVED_CALL' @ [58:22] ==> public final val RESOLVED_CALL: (WritableSlice<(Call..Call?), (ResolvedCall<*>..ResolvedCall<*>?)>..WritableSlice<(Call..Call?), (ResolvedCall<*>..ResolvedCall<*>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

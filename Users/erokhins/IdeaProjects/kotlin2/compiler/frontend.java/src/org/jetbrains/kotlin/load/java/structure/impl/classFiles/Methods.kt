@@ -2,7 +2,7 @@
 
 'newSmartList' @ [40:74] ==> @NotNull @Contract public open fun <T : (Any..Any?)> newSmartList(): (MutableList<(JavaAnnotation..JavaAnnotation?)>..List<(JavaAnnotation..JavaAnnotation?)>) defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaAnnotation
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.structure.JavaAnnotation..org.jetbrains.kotlin.load.java.structure.JavaAnnotation?)
 
 '==' @ [58:33] ==> public open fun equals(other: Any?): Boolean defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
@@ -10,7 +10,7 @@ Inferred types:
 
 'access' @ [59:29] ==> value-parameter access: Int defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaMethodBase.Companion.create[ValueParameterDescriptorImpl]
 
-'isSet' @ [59:36] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles[SimpleFunctionDescriptorImpl]
+'isSet' @ [59:36] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles in file commonMixins.kt[SimpleFunctionDescriptorImpl]
 
 'ACC_VARARGS' @ [59:50] ==> public const final val ACC_VARARGS: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -343,7 +343,7 @@ Inferred types:
 
 'newArrayList' @ [138:48] ==> @NotNull @Contract public open fun <T : (Any..Any?)> newArrayList(): ArrayList<(JavaType..JavaType?)> defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.structure.JavaType..org.jetbrains.kotlin.load.java.structure.JavaType?)
 
 'iterator' @ [139:24] ==> val iterator: StringCharacterIterator defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaMethodBase.Companion.parseMethodSignature[LocalVariableDescriptor]
 

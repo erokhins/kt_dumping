@@ -182,8 +182,6 @@ Inferred types:
 
 'supportsFeature' @ [105:37] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [105:53] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'SafeCallBoundSmartCasts' @ [105:69] ==> enum entry SafeCallBoundSmartCasts defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'when (identifierInfo) {
@@ -259,8 +257,6 @@ Inferred types:
 'languageVersionSettings' @ [118:25] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DelegatingDataFlowInfo.putNullabilityAndTypeInfo[ValueParameterDescriptorImpl]
 
 'supportsFeature' @ [118:49] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [118:65] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'SafeCastCheckBoundSmartCasts' @ [118:81] ==> enum entry SafeCastCheckBoundSmartCasts defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -891,18 +887,18 @@ Inferred types:
 
 'this' @ [267:23] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DelegatingDataFlowInfo[LazyClassReceiverParameterDescriptor]
 
-'if (type.isMarkedNullable) emptyMap() else nullabilityInfo' @ [267:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Map<DataFlowValue, Nullability>, elseBranch: Map<DataFlowValue, Nullability>): Map<DataFlowValue, Nullability>[SimpleFunctionDescriptorImpl]
+'if (type.isMarkedNullable) emptyMap() else nullabilityInfo' @ [267:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Map<(DataFlowValue..DataFlowValue?), (Nullability..Nullability?)>, elseBranch: Map<(DataFlowValue..DataFlowValue?), (Nullability..Nullability?)>): Map<(DataFlowValue..DataFlowValue?), (Nullability..Nullability?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Map<DataFlowValue, Nullability>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Map<(org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue..org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue?), (org.jetbrains.kotlin.resolve.calls.smartcasts.Nullability..org.jetbrains.kotlin.resolve.calls.smartcasts.Nullability?)>
 
 'type' @ [267:33] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DelegatingDataFlowInfo.establishSubtyping[ValueParameterDescriptorImpl]
 
 'isMarkedNullable' @ [267:38] ==> public abstract val isMarkedNullable: Boolean defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 
-'emptyMap' @ [267:56] ==> public fun <K, V> emptyMap(): Map<DataFlowValue, Nullability> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [267:56] ==> public fun <K, V> emptyMap(): Map<(DataFlowValue..DataFlowValue?), (Nullability..Nullability?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> DataFlowValue
-    <V> -> Nullability
+    <K> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue..org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue?)
+    <V> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.Nullability..org.jetbrains.kotlin.resolve.calls.smartcasts.Nullability?)
 
 'nullabilityInfo' @ [267:72] ==> val nullabilityInfo: HashMap<DataFlowValue, Nullability> /* = HashMap<DataFlowValue, Nullability> */ defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DelegatingDataFlowInfo.establishSubtyping[LocalVariableDescriptor]
 
@@ -1250,8 +1246,6 @@ Inferred types:
 'valueWithGivenTypeInfo' @ [357:66] ==> value-parameter valueWithGivenTypeInfo: DataFlowValue? = ... defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DelegatingDataFlowInfo.Companion.create[ValueParameterDescriptorImpl]
 
 'parent' @ [358:24] ==> value-parameter parent: DataFlowInfo? defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DelegatingDataFlowInfo.Companion.create[ValueParameterDescriptorImpl]
-
-'DataFlowInfoFactory' @ [358:34] ==> public object DataFlowInfoFactory defined in org.jetbrains.kotlin.resolve.calls.smartcasts in file DataFlowInfo.kt[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [358:54] ==> @JvmField public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfoFactory[PropertyDescriptorImpl]
 

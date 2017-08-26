@@ -4,7 +4,7 @@
 
 'severity' @ [35:35] ==> public final val <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.severity: Severity[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'WARNING' @ [35:56] ==> enum entry WARNING defined in org.jetbrains.kotlin.diagnostics.Severity[FakeCallableDescriptorForObject]
 
@@ -12,13 +12,13 @@ Inferred types:
 
 'name' @ [38:55] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'element' @ [41:13] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.idea.highlighter.KotlinSuppressableWarningProblemGroup.getSuppressActions[ValueParameterDescriptorImpl]
 
 'EMPTY_ARRAY' @ [42:44] ==> public final var EMPTY_ARRAY: (Array<(SuppressIntentionAction..SuppressIntentionAction?)>..Array<out (SuppressIntentionAction..SuppressIntentionAction?)>?) defined in com.intellij.codeInspection.SuppressIntentionAction[JavaPropertyDescriptor]
 
-'createSuppressWarningActions' @ [44:16] ==> public fun createSuppressWarningActions(element: PsiElement, diagnosticFactory: DiagnosticFactory<*>): List<SuppressIntentionAction> defined in org.jetbrains.kotlin.idea.highlighter[SimpleFunctionDescriptorImpl]
+'createSuppressWarningActions' @ [44:16] ==> public fun createSuppressWarningActions(element: PsiElement, diagnosticFactory: DiagnosticFactory<*>): List<SuppressIntentionAction> defined in org.jetbrains.kotlin.idea.highlighter in file KotlinSuppressableWarningProblemGroup.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [44:45] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.idea.highlighter.KotlinSuppressableWarningProblemGroup.getSuppressActions[ValueParameterDescriptorImpl]
 
@@ -28,7 +28,7 @@ Inferred types:
 Inferred types:
     <reified T> -> SuppressIntentionAction
 
-'createSuppressWarningActions' @ [50:9] ==> public fun createSuppressWarningActions(element: PsiElement, severity: Severity, suppressionKey: String): List<SuppressIntentionAction> defined in org.jetbrains.kotlin.idea.highlighter[SimpleFunctionDescriptorImpl]
+'createSuppressWarningActions' @ [50:9] ==> public fun createSuppressWarningActions(element: PsiElement, severity: Severity, suppressionKey: String): List<SuppressIntentionAction> defined in org.jetbrains.kotlin.idea.highlighter in file KotlinSuppressableWarningProblemGroup.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [50:38] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.createSuppressWarningActions[ValueParameterDescriptorImpl]
 
@@ -36,13 +36,13 @@ Inferred types:
 
 'severity' @ [50:65] ==> public final val <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.severity: Severity[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'diagnosticFactory' @ [50:75] ==> value-parameter diagnosticFactory: DiagnosticFactory<*> defined in org.jetbrains.kotlin.idea.highlighter.createSuppressWarningActions[ValueParameterDescriptorImpl]
 
 'name' @ [50:93] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'severity' @ [54:9] ==> value-parameter severity: Severity defined in org.jetbrains.kotlin.idea.highlighter.createSuppressWarningActions[ValueParameterDescriptorImpl]
 
@@ -50,7 +50,7 @@ Inferred types:
 
 'emptyList' @ [54:58] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(SuppressIntentionAction..SuppressIntentionAction?)>..List<(SuppressIntentionAction..SuppressIntentionAction?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SuppressIntentionAction
+    <T : (Any..Any?)> -> (com.intellij.codeInspection.SuppressIntentionAction..com.intellij.codeInspection.SuppressIntentionAction?)
 
 'arrayListOf' @ [56:19] ==> @SinceKotlin @InlineOnly public inline fun <T> arrayListOf(): ArrayList<SuppressIntentionAction> /* = ArrayList<SuppressIntentionAction> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

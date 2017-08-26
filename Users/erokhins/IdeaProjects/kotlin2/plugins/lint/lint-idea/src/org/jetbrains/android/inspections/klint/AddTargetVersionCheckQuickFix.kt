@@ -112,7 +112,7 @@ Inferred types:
 
 'getParentOfType' @ [64:35] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtExpression..KtExpression?)>): KtExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'element' @ [64:51] ==> value-parameter element: PsiElement defined in org.jetbrains.android.inspections.klint.AddTargetVersionCheckQuickFix.getTargetExpression[ValueParameterDescriptorImpl]
 
@@ -158,7 +158,7 @@ Inferred types:
 
 'getParentOfType' @ [76:35] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtExpression..KtExpression?)>, p2: Boolean): KtExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'current' @ [76:51] ==> var current: KtExpression? defined in org.jetbrains.android.inspections.klint.AddTargetVersionCheckQuickFix.getTargetExpression[LocalVariableDescriptor]
 

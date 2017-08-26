@@ -1,14 +1,8 @@
 'KotlinMavenConfigurator' @ [29:37] ==> protected constructor KotlinMavenConfigurator(testArtifactId: String?, addJunit: Boolean, name: String, presentableText: String) defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[ClassConstructorDescriptorImpl]
 
-'KotlinJavaMavenConfigurator' @ [29:61] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator[FakeCallableDescriptorForObject]
-
 'TEST_LIB_ID' @ [29:89] ==> public final val TEST_LIB_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator.Companion[PropertyDescriptorImpl]
 
-'KotlinJavaMavenConfigurator' @ [29:109] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator[FakeCallableDescriptorForObject]
-
 'NAME' @ [29:137] ==> private final val NAME: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator.Companion[PropertyDescriptorImpl]
-
-'KotlinJavaMavenConfigurator' @ [29:143] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator[FakeCallableDescriptorForObject]
 
 'PRESENTABLE_TEXT' @ [29:171] ==> private final val PRESENTABLE_TEXT: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -17,8 +11,6 @@
 'module' @ [32:43] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator.isKotlinModule[ValueParameterDescriptorImpl]
 
 'goalName' @ [36:16] ==> value-parameter goalName: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator.isRelevantGoal[ValueParameterDescriptorImpl]
-
-'PomFile' @ [36:28] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'Compile' @ [36:48] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -38,11 +30,7 @@
 
 'kotlinPlugin' @ [44:34] ==> value-parameter kotlinPlugin: MavenDomPlugin defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator.createExecutions[ValueParameterDescriptorImpl]
 
-'PomFile' @ [44:48] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [44:70] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
-
-'PomFile' @ [44:79] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'Compile' @ [44:99] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -54,11 +42,7 @@
 
 'kotlinPlugin' @ [45:34] ==> value-parameter kotlinPlugin: MavenDomPlugin defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator.createExecutions[ValueParameterDescriptorImpl]
 
-'PomFile' @ [45:48] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'TestCompile' @ [45:70] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
-
-'PomFile' @ [45:83] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'TestCompile' @ [45:103] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 

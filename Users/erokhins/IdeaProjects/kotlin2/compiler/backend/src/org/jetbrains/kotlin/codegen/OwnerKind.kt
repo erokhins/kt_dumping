@@ -8,11 +8,7 @@ Inferred types:
 
 'descriptor' @ [30:86] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.codegen.OwnerKind.Companion.getMemberOwnerKind[ValueParameterDescriptorImpl]
 
-'OwnerKind' @ [31:69] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
 'PACKAGE' @ [31:79] ==> enum entry PACKAGE defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
-'OwnerKind' @ [32:35] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'IMPLEMENTATION' @ [32:45] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 

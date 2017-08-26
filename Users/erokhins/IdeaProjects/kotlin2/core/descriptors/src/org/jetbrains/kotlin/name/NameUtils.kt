@@ -58,8 +58,6 @@ Inferred types:
 
 'identifier' @ [52:18] ==> @NotNull public open fun identifier(@NotNull name: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'NameUtils' @ [52:29] ==> public object NameUtils defined in org.jetbrains.kotlin.name in file NameUtils.kt[FakeCallableDescriptorForObject]
-
 'getPackagePartClassNamePrefix' @ [52:39] ==> @JvmStatic public final fun getPackagePartClassNamePrefix(shortFileName: String): String defined in org.jetbrains.kotlin.name.NameUtils[SimpleFunctionDescriptorImpl]
 
 'filePath' @ [52:69] ==> value-parameter filePath: String defined in org.jetbrains.kotlin.name.NameUtils.getScriptNameForFile[ValueParameterDescriptorImpl]

@@ -23,17 +23,13 @@ Inferred types:
 
 'containingDeclaration' @ [48:45] ==> val containingDeclaration: DeclarationDescriptor defined in org.jetbrains.kotlin.codegen.inline.extractDefaultLambdaOffsetAndDescriptor[LocalVariableDescriptor]
 
-'OwnerKind' @ [48:69] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
 'DEFAULT_IMPLS' @ [48:79] ==> enum entry DEFAULT_IMPLS defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
-'OwnerKind' @ [49:18] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'getMemberOwnerKind' @ [49:28] ==> public final fun getMemberOwnerKind(descriptor: DeclarationDescriptor): OwnerKind defined in org.jetbrains.kotlin.codegen.OwnerKind.Companion[SimpleFunctionDescriptorImpl]
 
 'containingDeclaration' @ [49:47] ==> val containingDeclaration: DeclarationDescriptor defined in org.jetbrains.kotlin.codegen.inline.extractDefaultLambdaOffsetAndDescriptor[LocalVariableDescriptor]
 
-'parameterOffsets' @ [50:28] ==> public fun parameterOffsets(isStatic: Boolean, valueParameters: List<JvmMethodParameterSignature>): Array<Int> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'parameterOffsets' @ [50:28] ==> public fun parameterOffsets(isStatic: Boolean, valueParameters: List<JvmMethodParameterSignature>): Array<Int> defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'isStaticMethod' @ [50:53] ==> public open fun isStaticMethod(kind: (OwnerKind..OwnerKind?), functionDescriptor: (CallableMemberDescriptor..CallableMemberDescriptor?)): Boolean defined in org.jetbrains.kotlin.codegen.AsmUtil[JavaMethodDescriptor]
 
@@ -102,7 +98,7 @@ Inferred types:
 
 'instructions' @ [72:37] ==> public final var instructions: (InsnList..InsnList?) defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaPropertyDescriptor]
 
-'asSequence' @ [72:50] ==> public fun InsnList.asSequence(): InsnSequence defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'asSequence' @ [72:50] ==> public fun InsnList.asSequence(): InsnSequence defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'takeWhile' @ [72:63] ==> public fun <T> Sequence<AbstractInsnNode>.takeWhile(predicate: (AbstractInsnNode) -> Boolean): Sequence<AbstractInsnNode> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -295,7 +291,7 @@ Inferred types:
 Inferred types:
     <T> -> Pair<AbstractInsnNode, AbstractInsnNode>
 
-'extractDefaultLambdasInfo' @ [111:30] ==> private fun extractDefaultLambdasInfo(conditions: List<Condition>, defaultLambdas: Map<Int, ValueParameterDescriptor>, toDelete: MutableCollection<AbstractInsnNode>, toInsert: MutableList<Pair<AbstractInsnNode, AbstractInsnNode>>): List<DefaultLambda> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'extractDefaultLambdasInfo' @ [111:30] ==> private fun extractDefaultLambdasInfo(conditions: List<Condition>, defaultLambdas: Map<Int, ValueParameterDescriptor>, toDelete: MutableCollection<AbstractInsnNode>, toInsert: MutableList<Pair<AbstractInsnNode, AbstractInsnNode>>): List<DefaultLambda> defined in org.jetbrains.kotlin.codegen.inline in file defaultMethodUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conditions' @ [111:56] ==> val conditions: List<Condition> defined in org.jetbrains.kotlin.codegen.inline.expandMaskConditionsAndUpdateVariableNodes[LocalVariableDescriptor]
 
@@ -440,7 +436,7 @@ Inferred types:
 
 'node' @ [132:5] ==> value-parameter node: MethodNode defined in org.jetbrains.kotlin.codegen.inline.expandMaskConditionsAndUpdateVariableNodes[ValueParameterDescriptorImpl]
 
-'remove' @ [132:10] ==> public fun MethodNode.remove(instructions: Collection<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'remove' @ [132:10] ==> public fun MethodNode.remove(instructions: Collection<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'toDelete' @ [132:17] ==> val toDelete: LinkedHashSet<AbstractInsnNode> /* = LinkedHashSet<AbstractInsnNode> */ defined in org.jetbrains.kotlin.codegen.inline.expandMaskConditionsAndUpdateVariableNodes[LocalVariableDescriptor]
 
@@ -605,9 +601,9 @@ Inferred types:
 
 'addAll' @ [165:21] ==> public abstract fun addAll(elements: Collection<AbstractInsnNode>): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
-'listOf' @ [165:28] ==> public fun <T> listOf(vararg elements: AbstractInsnNode): List<AbstractInsnNode> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [165:28] ==> public fun <T> listOf(vararg elements: (AbstractInsnNode..AbstractInsnNode?)): List<(AbstractInsnNode..AbstractInsnNode?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> AbstractInsnNode
+    <T> -> (org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode..org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode?)
 
 'instanceCreation' @ [165:35] ==> val instanceCreation: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.inline.extractDefaultLambdasInfo.<anonymous>[LocalVariableDescriptor]
 
@@ -743,7 +739,7 @@ Inferred types:
 
 'varAssignmentInstruction' @ [183:22] ==> val varAssignmentInstruction: VarInsnNode defined in org.jetbrains.kotlin.codegen.inline.extractDefaultLambdasInfo.<anonymous>[LocalVariableDescriptor]
 
-'defaultLambdaFakeCallStub' @ [183:50] ==> private fun defaultLambdaFakeCallStub(args: Array<Type>, lambdaOffset: Int): MethodInsnNode defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'defaultLambdaFakeCallStub' @ [183:50] ==> private fun defaultLambdaFakeCallStub(args: Array<Type>, lambdaOffset: Int): MethodInsnNode defined in org.jetbrains.kotlin.codegen.inline in file defaultMethodUtil.kt[SimpleFunctionDescriptorImpl]
 
 'argTypes' @ [183:76] ==> val argTypes: (Array<(Type..Type?)>..Array<out (Type..Type?)>?) defined in org.jetbrains.kotlin.codegen.inline.extractDefaultLambdasInfo.<anonymous>[LocalVariableDescriptor]
 

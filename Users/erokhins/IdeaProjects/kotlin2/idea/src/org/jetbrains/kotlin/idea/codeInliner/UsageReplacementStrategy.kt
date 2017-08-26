@@ -53,7 +53,7 @@ Inferred types:
 
 'this@replaceUsagesInWholeProject' @ [71:21] ==> <this> defined in org.jetbrains.kotlin.idea.codeInliner.replaceUsagesInWholeProject[ReceiverParameterDescriptorImpl]
 
-'replaceUsages' @ [71:54] ==> public fun UsageReplacementStrategy.replaceUsages(usages: Collection<KtSimpleNameExpression>, targetPsiElement: PsiElement, project: Project, commandName: String, postAction: () -> Unit = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'replaceUsages' @ [71:54] ==> public fun UsageReplacementStrategy.replaceUsages(usages: Collection<KtSimpleNameExpression>, targetPsiElement: PsiElement, project: Project, commandName: String, postAction: () -> Unit = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner in file UsageReplacementStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'usages' @ [71:68] ==> val usages: List<KtSimpleNameExpression> defined in org.jetbrains.kotlin.idea.codeInliner.replaceUsagesInWholeProject.<no name provided>.run[LocalVariableDescriptor]
 
@@ -112,7 +112,7 @@ Inferred types:
 
 'putCopyableUserData' @ [92:43] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?), @Nullable p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtSimpleNameExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'KEY' @ [92:63] ==> val KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner.replaceUsages.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -130,7 +130,7 @@ Inferred types:
 Inferred types:
     <T> -> KtSimpleNameExpression
 
-'processUsages' @ [99:25] ==> private fun UsageReplacementStrategy.processUsages(usages: List<KtSimpleNameExpression>, targetDeclaration: KtNamedDeclaration?, importsToDelete: MutableList<KtImportDirective>): Boolean defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'processUsages' @ [99:25] ==> private fun UsageReplacementStrategy.processUsages(usages: List<KtSimpleNameExpression>, targetDeclaration: KtNamedDeclaration?, importsToDelete: MutableList<KtImportDirective>): Boolean defined in org.jetbrains.kotlin.idea.codeInliner in file UsageReplacementStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'usagesToProcess' @ [99:39] ==> var usagesToProcess: List<KtSimpleNameExpression> defined in org.jetbrains.kotlin.idea.codeInliner.replaceUsages.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -150,7 +150,7 @@ Inferred types:
 
 'getCopyableUserData' @ [102:98] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?)): Unit? defined in org.jetbrains.kotlin.psi.KtSimpleNameExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'KEY' @ [102:118] ==> val KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner.replaceUsages.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -164,7 +164,7 @@ Inferred types:
 
 'putCopyableUserData' @ [105:75] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?), @Nullable p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtSimpleNameExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'KEY' @ [105:95] ==> val KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner.replaceUsages.<anonymous>.<anonymous>[LocalVariableDescriptor]
 

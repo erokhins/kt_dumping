@@ -118,7 +118,7 @@ Inferred types:
 
 'extensionReceiver' @ [78:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'extensionReceiver' @ [79:17] ==> val extensionReceiver: ReceiverValue? defined in org.jetbrains.kotlin.idea.inspections.NullChecksToSafeCallInspection.Companion.isNullChecksToSafeCallFixAvailable[LocalVariableDescriptor]
 

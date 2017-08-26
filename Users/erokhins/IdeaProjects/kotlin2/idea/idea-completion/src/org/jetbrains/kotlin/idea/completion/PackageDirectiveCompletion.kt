@@ -80,13 +80,11 @@ Inferred types:
 
 'getContributedDescriptors' @ [55:43] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [55:69] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'PACKAGES' @ [55:90] ==> @field:JvmField public final val PACKAGES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'prefixMatcher' @ [55:100] ==> val prefixMatcher: PlainPrefixMatcher defined in org.jetbrains.kotlin.idea.completion.PackageDirectiveCompletion.perform[LocalVariableDescriptor]
 
-'asNameFilter' @ [55:114] ==> public fun PrefixMatcher.asNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'asNameFilter' @ [55:114] ==> public fun PrefixMatcher.asNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'BasicLookupElementFactory' @ [56:36] ==> public constructor BasicLookupElementFactory(project: Project, insertHandlerProvider: InsertHandlerProvider) defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory[ClassConstructorDescriptorImpl]
 

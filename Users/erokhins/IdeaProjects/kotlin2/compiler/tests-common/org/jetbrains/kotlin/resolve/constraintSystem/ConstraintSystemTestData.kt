@@ -2,8 +2,8 @@
 
 'getSliceContents' @ [46:33] ==> @NotNull public abstract fun <K : (Any..Any?), V : (Any..Any?)> getSliceContents(@NotNull p0: ReadOnlySlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>): ImmutableMap<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> SimpleFunctionDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'FUNCTION' @ [46:65] ==> public final val FUNCTION: (WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -31,8 +31,8 @@ Inferred types:
 
 'get' @ [50:48] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtElement..KtElement?), (LexicalScope..LexicalScope?)>..ReadOnlySlice<(KtElement..KtElement?), (LexicalScope..LexicalScope?)>?), p1: (KtElement..KtElement?)): LexicalScope? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtElement
-    <V : (Any..Any?)> -> LexicalScope
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.LexicalScope..org.jetbrains.kotlin.resolve.scopes.LexicalScope?)
 
 'LEXICAL_SCOPE' @ [50:67] ==> public final val LEXICAL_SCOPE: (WritableSlice<(KtElement..KtElement?), (LexicalScope..LexicalScope?)>..WritableSlice<(KtElement..KtElement?), (LexicalScope..LexicalScope?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -94,8 +94,6 @@ Inferred types:
 
 'simpleType' @ [67:38] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean, memberScope: MemberScope): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [67:49] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [67:61] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'IntegerValueTypeConstructor' @ [67:68] ==> public constructor IntegerValueTypeConstructor(value: Long, builtIns: KotlinBuiltIns) defined in org.jetbrains.kotlin.resolve.constants.IntegerValueTypeConstructor[DeserializedClassConstructorDescriptor]
@@ -111,8 +109,6 @@ Inferred types:
 'listOf' @ [68:49] ==> @InlineOnly public inline fun <T> listOf(): List<TypeProjection> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TypeProjection
-
-'MemberScope' @ [68:66] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'Empty' @ [68:78] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 

@@ -173,7 +173,7 @@ Inferred types:
 
 'annotations' @ [73:49] ==> value-parameter annotations: List<ClassIdWithTarget> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createTypeParameterStub[ValueParameterDescriptorImpl]
 
-'createStubForTypeName' @ [74:9] ==> public fun createStubForTypeName(typeClassId: ClassId, parent: StubElement<out PsiElement>, bindTypeArguments: (KotlinUserTypeStub, Int) -> Unit = ...): KotlinUserTypeStub defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createStubForTypeName' @ [74:9] ==> public fun createStubForTypeName(typeClassId: ClassId, parent: StubElement<out PsiElement>, bindTypeArguments: (KotlinUserTypeStub, Int) -> Unit = ...): KotlinUserTypeStub defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'topLevel' @ [74:39] ==> @NotNull public open fun topLevel(@NotNull p0: FqName): ClassId defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
 
@@ -202,8 +202,6 @@ Inferred types:
 'flexibleTypeCapabilitiesId' @ [79:52] ==> public final val ProtoBuf.Type.flexibleTypeCapabilitiesId: Int[MyPropertyDescriptor]
 
 'id' @ [81:17] ==> val id: String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createClassReferenceTypeStub[LocalVariableDescriptor]
-
-'DynamicTypeDeserializer' @ [81:23] ==> public object DynamicTypeDeserializer : FlexibleTypeDeserializer defined in org.jetbrains.kotlin.serialization.js[FakeCallableDescriptorForObject]
 
 'id' @ [81:47] ==> public final val id: String defined in org.jetbrains.kotlin.serialization.js.DynamicTypeDeserializer[DeserializedPropertyDescriptor]
 
@@ -351,7 +349,7 @@ Inferred types:
 Inferred types:
     <T> -> Type
 
-'createStubForTypeName' @ [110:9] ==> public fun createStubForTypeName(typeClassId: ClassId, parent: StubElement<out PsiElement>, bindTypeArguments: (KotlinUserTypeStub, Int) -> Unit = ...): KotlinUserTypeStub defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createStubForTypeName' @ [110:9] ==> public fun createStubForTypeName(typeClassId: ClassId, parent: StubElement<out PsiElement>, bindTypeArguments: (KotlinUserTypeStub, Int) -> Unit = ...): KotlinUserTypeStub defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'classId' @ [110:31] ==> val classId: ClassId defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createClassReferenceTypeStub[LocalVariableDescriptor]
 
@@ -410,7 +408,7 @@ Inferred types:
 
 'MODIFIER_LIST' @ [120:102] ==> public final val MODIFIER_LIST: (KtModifierListElementType<(KtDeclarationModifierList..KtDeclarationModifierList?)>..KtModifierListElementType<(KtDeclarationModifierList..KtDeclarationModifierList?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
-'createTargetedAnnotationStubs' @ [121:9] ==> public fun createTargetedAnnotationStubs(annotationIds: List<ClassIdWithTarget>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createTargetedAnnotationStubs' @ [121:9] ==> public fun createTargetedAnnotationStubs(annotationIds: List<ClassIdWithTarget>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'annotations' @ [121:39] ==> value-parameter annotations: List<ClassIdWithTarget> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createTypeAnnotationStubs[ValueParameterDescriptorImpl]
 
@@ -492,7 +490,7 @@ Inferred types:
 
 'token' @ [145:59] ==> public final val KtProjectionKind.token: KtSingleValueToken?[MyPropertyDescriptor]
 
-'createModifierListStub' @ [146:17] ==> public fun createModifierListStub(parent: StubElement<out PsiElement>, modifiers: Collection<KtModifierKeywordToken>): KotlinModifierListStubImpl? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createModifierListStub' @ [146:17] ==> public fun createModifierListStub(parent: StubElement<out PsiElement>, modifiers: Collection<KtModifierKeywordToken>): KotlinModifierListStubImpl? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'typeProjection' @ [146:40] ==> val typeProjection: KotlinTypeProjectionStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createTypeArgumentListStub.<anonymous>[LocalVariableDescriptor]
 
@@ -749,7 +747,7 @@ Inferred types:
 
 'name' @ [214:28] ==> val name: Name defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createValueParameterListStub[LocalVariableDescriptor]
 
-'ref' @ [214:33] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [214:33] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'valueParameterProto' @ [220:37] ==> val valueParameterProto: ProtoBuf.ValueParameter defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createValueParameterListStub[LocalVariableDescriptor]
 
@@ -809,7 +807,7 @@ Inferred types:
 
 'NOINLINE_KEYWORD' @ [226:92] ==> public final val NOINLINE_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'createModifierListStub' @ [228:32] ==> public fun createModifierListStub(parent: StubElement<out PsiElement>, modifiers: Collection<KtModifierKeywordToken>): KotlinModifierListStubImpl? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createModifierListStub' @ [228:32] ==> public fun createModifierListStub(parent: StubElement<out PsiElement>, modifiers: Collection<KtModifierKeywordToken>): KotlinModifierListStubImpl? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'parameterStub' @ [228:55] ==> val parameterStub: KotlinParameterStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createValueParameterListStub[LocalVariableDescriptor]
 
@@ -841,7 +839,7 @@ Inferred types:
 Inferred types:
     <T> -> ClassId
 
-'createAnnotationStubs' @ [233:17] ==> public fun createAnnotationStubs(annotationIds: List<ClassId>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createAnnotationStubs' @ [233:17] ==> public fun createAnnotationStubs(annotationIds: List<ClassId>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'parameterAnnotations' @ [233:39] ==> val parameterAnnotations: List<ClassId> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createValueParameterListStub[LocalVariableDescriptor]
 
@@ -895,7 +893,7 @@ Inferred types:
 
 'name' @ [252:28] ==> val name: Name defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createTypeParameterListStub[LocalVariableDescriptor]
 
-'ref' @ [252:33] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [252:33] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'proto' @ [253:36] ==> val proto: ProtoBuf.TypeParameter defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createTypeParameterListStub[LocalVariableDescriptor]
 
@@ -1005,7 +1003,7 @@ Inferred types:
 
 'name' @ [279:71] ==> val name: Name defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createTypeConstraintListStub[LocalVariableDescriptor]
 
-'ref' @ [279:76] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [279:76] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'createTypeReferenceStub' @ [280:13] ==> public final fun createTypeReferenceStub(parent: StubElement<out PsiElement>, type: ProtoBuf.Type, additionalAnnotations: () -> List<ClassIdWithTarget> = ...): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder[SimpleFunctionDescriptorImpl]
 
@@ -1058,7 +1056,7 @@ Inferred types:
 
 'REIFIED_KEYWORD' @ [296:36] ==> public final val REIFIED_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'createModifierListStub' @ [299:28] ==> public fun createModifierListStub(parent: StubElement<out PsiElement>, modifiers: Collection<KtModifierKeywordToken>): KotlinModifierListStubImpl? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createModifierListStub' @ [299:28] ==> public fun createModifierListStub(parent: StubElement<out PsiElement>, modifiers: Collection<KtModifierKeywordToken>): KotlinModifierListStubImpl? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameterStub' @ [299:51] ==> value-parameter typeParameterStub: KotlinTypeParameterStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createTypeParameterModifierListStub[ValueParameterDescriptorImpl]
 
@@ -1084,7 +1082,7 @@ Inferred types:
 Inferred types:
     <T> -> ClassId
 
-'createAnnotationStubs' @ [303:13] ==> public fun createAnnotationStubs(annotationIds: List<ClassId>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createAnnotationStubs' @ [303:13] ==> public fun createAnnotationStubs(annotationIds: List<ClassId>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'annotations' @ [304:21] ==> val annotations: List<ClassId> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.TypeClsStubBuilder.createTypeParameterModifierListStub[LocalVariableDescriptor]
 

@@ -45,7 +45,7 @@ Inferred types:
 
 'javaUtil' @ [49:22] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'enhancement' @ [51:5] ==> private inline fun enhancement(block: SignatureEnhancementBuilder.() -> Unit): Map<String, PredefinedFunctionEnhancementInfo> defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'enhancement' @ [51:5] ==> private inline fun enhancement(block: SignatureEnhancementBuilder.() -> Unit): Map<String, PredefinedFunctionEnhancementInfo> defined in org.jetbrains.kotlin.load.java.typeEnhancement in file predefinedEnhancementInfo.kt[SimpleFunctionDescriptorImpl]
 
 'forClass' @ [52:9] ==> public final inline fun forClass(internalName: String, block: SignatureEnhancementBuilder.ClassEnhancementBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancementBuilder[SimpleFunctionDescriptorImpl]
 

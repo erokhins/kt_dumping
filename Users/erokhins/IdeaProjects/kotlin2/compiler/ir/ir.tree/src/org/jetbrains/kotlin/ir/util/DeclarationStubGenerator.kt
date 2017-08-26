@@ -33,9 +33,9 @@ Inferred types:
 'if (DescriptorUtils.isEnumEntry(descriptor))
                         generateEnumEntryStub(descriptor)
                     else
-                        generateClassStub(descriptor)' @ [47:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<*, *>>>>>>, elseBranch: IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<*, *>>>>>>): IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<*, *>>>>>>[SimpleFunctionDescriptorImpl]
+                        generateClassStub(descriptor)' @ [47:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<*>>>>>, elseBranch: IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<*>>>>>): IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<*>>>>>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<*, *>>>>>>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<IrBindableSymbol<ClassDescriptor, out IrSymbolDeclaration<*>>>>>
 
 'isEnumEntry' @ [47:41] ==> public open fun isEnumEntry(@NotNull p0: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 

@@ -14,19 +14,19 @@ Inferred types:
 
 'diagnostic' @ [37:58] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateInvokeFunctionActionFactory.createCallableInfo[ValueParameterDescriptorImpl]
 
-'b' @ [37:70] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KtExpression..KtExpression?), (KotlinType..KotlinType?)>.b: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'b' @ [37:70] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KtExpression..KtExpression?), (KotlinType..KotlinType?)>.b: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <B : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
-'expectedType' @ [38:13] ==> val expectedType: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateInvokeFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
+'expectedType' @ [38:13] ==> val expectedType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateInvokeFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
 'isError' @ [38:26] ==> public val KotlinType.isError: Boolean defined in org.jetbrains.kotlin.types[DeserializedPropertyDescriptor]
 
 'TypeInfo' @ [40:28] ==> public fun TypeInfo(theType: KotlinType, variance: Variance): TypeInfo defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableInfo.kt[SimpleFunctionDescriptorImpl]
 
-'expectedType' @ [40:37] ==> val expectedType: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateInvokeFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
+'expectedType' @ [40:37] ==> val expectedType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateInvokeFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
 'IN_VARIANCE' @ [40:60] ==> enum entry IN_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
@@ -83,8 +83,6 @@ Inferred types:
 'OUT_VARIANCE' @ [50:53] ==> enum entry OUT_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
 'FunctionInfo' @ [51:16] ==> public constructor FunctionInfo(name: String, receiverTypeInfo: TypeInfo, returnTypeInfo: TypeInfo, possibleContainers: List<KtElement> = ..., parameterInfos: List<ParameterInfo> = ..., typeParameterInfos: List<TypeInfo> = ..., isOperator: Boolean = ..., isInfix: Boolean = ..., isAbstract: Boolean = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.FunctionInfo[ClassConstructorDescriptorImpl]
-
-'OperatorNameConventions' @ [51:29] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'INVOKE' @ [51:53] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 

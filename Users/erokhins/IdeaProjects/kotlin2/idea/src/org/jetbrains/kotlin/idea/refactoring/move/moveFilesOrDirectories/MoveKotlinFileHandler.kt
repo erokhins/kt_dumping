@@ -1,11 +1,8 @@
-'UserDataProperty' @ [44:61] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<List<PsiElement>>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> KtFile
-    <T : Any> -> List<PsiElement>
+'getValue' @ [44:61] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [44:82] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(List<PsiElement>..List<PsiElement>?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<PsiElement>
+    <T : (Any..Any?)> -> (kotlin.collections.List<com.intellij.psi.PsiElement>..kotlin.collections.List<com.intellij.psi.PsiElement>?)
 
 'MoveFileHandler' @ [46:31] ==> public constructor MoveFileHandler() defined in com.intellij.refactoring.move.moveFilesOrDirectories.MoveFileHandler[JavaClassConstructorDescriptor]
 

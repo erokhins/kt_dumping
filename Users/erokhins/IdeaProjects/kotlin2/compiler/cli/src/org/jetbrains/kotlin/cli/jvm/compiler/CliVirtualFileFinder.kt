@@ -32,8 +32,6 @@
 
 'asString' @ [41:64] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'MetadataPackageFragment' @ [41:77] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment[FakeCallableDescriptorForObject]
-
 'DOT_METADATA_FILE_EXTENSION' @ [41:101] ==> public final val DOT_METADATA_FILE_EXTENSION: String defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment.Companion[DeserializedPropertyDescriptor]
 
 'inputStream' @ [41:131] ==> public final val VirtualFile.inputStream: (InputStream..InputStream?)[MyPropertyDescriptor]
@@ -60,8 +58,6 @@ Inferred types:
 
 'extension' @ [47:52] ==> public final val VirtualFile.extension: String?[MyPropertyDescriptor]
 
-'MetadataPackageFragment' @ [47:65] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment[FakeCallableDescriptorForObject]
-
 'METADATA_FILE_EXTENSION' @ [47:89] ==> public final val METADATA_FILE_EXTENSION: String defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment.Companion[DeserializedPropertyDescriptor]
 
 '!' @ [48:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
@@ -80,8 +76,6 @@ Inferred types:
 
 'classId' @ [58:32] ==> val classId: ClassId defined in org.jetbrains.kotlin.cli.jvm.compiler.CliVirtualFileFinder.findBuiltInsData[LocalVariableDescriptor]
 
-'BuiltInSerializerProtocol' @ [58:41] ==> public object BuiltInSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.builtins[FakeCallableDescriptorForObject]
-
 'getBuiltInsFileName' @ [58:67] ==> public final fun getBuiltInsFileName(fqName: FqName): String defined in org.jetbrains.kotlin.builtins.BuiltInSerializerProtocol[DeserializedSimpleFunctionDescriptor]
 
 'packageFqName' @ [58:87] ==> value-parameter packageFqName: FqName defined in org.jetbrains.kotlin.cli.jvm.compiler.CliVirtualFileFinder.findBuiltInsData[ValueParameterDescriptorImpl]
@@ -96,8 +90,6 @@ Inferred types:
 
 'classId' @ [62:29] ==> value-parameter classId: ClassId defined in org.jetbrains.kotlin.cli.jvm.compiler.CliVirtualFileFinder.findBinaryClass[ValueParameterDescriptorImpl]
 
-'JavaRoot' @ [62:58] ==> public companion object RootTypes defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot[FakeCallableDescriptorForObject]
-
 'OnlyBinary' @ [62:67] ==> public final val OnlyBinary: Set<JavaRoot.RootType> defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootTypes[PropertyDescriptorImpl]
 
 'dir' @ [63:17] ==> value-parameter dir: VirtualFile defined in org.jetbrains.kotlin.cli.jvm.compiler.CliVirtualFileFinder.findBinaryClass.<anonymous>[ValueParameterDescriptorImpl]
@@ -111,6 +103,8 @@ Inferred types:
     <T> -> VirtualFile
 
 'VirtualFile' @ [63:49] ==> protected/*protected and package*/ constructor VirtualFile() defined in com.intellij.openapi.vfs.VirtualFile[JavaClassConstructorDescriptor]
+
+'isValid' @ [63:62] ==> public abstract fun isValid(): Boolean defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
 
 'takeIf' @ [64:16] ==> @InlineOnly @SinceKotlin public inline fun <T> VirtualFile.takeIf(predicate: (VirtualFile) -> Boolean): VirtualFile? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:

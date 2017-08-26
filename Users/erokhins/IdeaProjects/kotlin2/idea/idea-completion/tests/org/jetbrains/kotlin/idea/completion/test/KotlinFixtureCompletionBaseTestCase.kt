@@ -36,7 +36,7 @@
 
 'doHighlighting' @ [44:27] ==> @NotNull public abstract fun doHighlighting(): (MutableList<(HighlightInfo..HighlightInfo?)>..List<(HighlightInfo..HighlightInfo?)>) defined in com.intellij.testFramework.fixtures.JavaCodeInsightTestFixture[JavaMethodDescriptor]
 
-'testCompletion' @ [47:13] ==> public fun testCompletion(fileText: String, platform: TargetPlatform?, complete: (CompletionType, Int) -> Array<LookupElement>?, defaultCompletionType: CompletionType = ..., defaultInvocationCount: Int = ..., additionalValidDirectives: Collection<String> = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'testCompletion' @ [47:13] ==> public fun testCompletion(fileText: String, platform: TargetPlatform?, complete: (CompletionType, Int) -> Array<LookupElement>?, defaultCompletionType: CompletionType = ..., defaultInvocationCount: Int = ..., additionalValidDirectives: Collection<String> = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test in file CompletionTestUtil.kt[SimpleFunctionDescriptorImpl]
 
 'fileText' @ [47:28] ==> val fileText: String defined in org.jetbrains.kotlin.idea.completion.test.KotlinFixtureCompletionBaseTestCase.doTest[LocalVariableDescriptor]
 

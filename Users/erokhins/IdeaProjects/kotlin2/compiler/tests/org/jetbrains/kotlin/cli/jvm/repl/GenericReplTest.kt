@@ -170,7 +170,7 @@ Inferred types:
 
 'repl' @ [87:13] ==> value-parameter repl: TestRepl defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.testReplErrors.<anonymous>[ValueParameterDescriptorImpl]
 
-'compileAndEval' @ [87:18] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl[SimpleFunctionDescriptorImpl]
+'compileAndEval' @ [87:18] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl in file GenericReplTest.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [87:33] ==> val state: IReplStageState<*> defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.testReplErrors.<anonymous>[LocalVariableDescriptor]
 
@@ -180,7 +180,7 @@ Inferred types:
 
 'repl' @ [89:23] ==> value-parameter repl: TestRepl defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.testReplErrors.<anonymous>[ValueParameterDescriptorImpl]
 
-'compileAndEval' @ [89:28] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl[SimpleFunctionDescriptorImpl]
+'compileAndEval' @ [89:28] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl in file GenericReplTest.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [89:43] ==> val state: IReplStageState<*> defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.testReplErrors.<anonymous>[LocalVariableDescriptor]
 
@@ -196,7 +196,7 @@ Inferred types:
 
 'repl' @ [92:26] ==> value-parameter repl: TestRepl defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.testReplErrors.<anonymous>[ValueParameterDescriptorImpl]
 
-'compileAndEval' @ [92:31] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl[SimpleFunctionDescriptorImpl]
+'compileAndEval' @ [92:31] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl in file GenericReplTest.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [92:46] ==> val state: IReplStageState<*> defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.testReplErrors.<anonymous>[LocalVariableDescriptor]
 
@@ -428,7 +428,7 @@ Inferred types:
 
 'repl' @ [156:13] ==> value-parameter repl: TestRepl defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.test256Evals.<anonymous>[ValueParameterDescriptorImpl]
 
-'compileAndEval' @ [156:18] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl[SimpleFunctionDescriptorImpl]
+'compileAndEval' @ [156:18] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl in file GenericReplTest.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [156:33] ==> val state: IReplStageState<*> defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.test256Evals.<anonymous>[LocalVariableDescriptor]
 
@@ -440,7 +440,7 @@ Inferred types:
 
 'repl' @ [160:17] ==> value-parameter repl: TestRepl defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.test256Evals.<anonymous>[ValueParameterDescriptorImpl]
 
-'compileAndEval' @ [160:22] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl[SimpleFunctionDescriptorImpl]
+'compileAndEval' @ [160:22] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl in file GenericReplTest.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [160:37] ==> val state: IReplStageState<*> defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.test256Evals.<anonymous>[LocalVariableDescriptor]
 
@@ -454,7 +454,7 @@ Inferred types:
 
 'repl' @ [163:23] ==> value-parameter repl: TestRepl defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.test256Evals.<anonymous>[ValueParameterDescriptorImpl]
 
-'compileAndEval' @ [163:28] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl[SimpleFunctionDescriptorImpl]
+'compileAndEval' @ [163:28] ==> private fun TestRepl.compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine): Pair<ReplCompileResult, ReplEvalResult?> defined in org.jetbrains.kotlin.cli.jvm.repl in file GenericReplTest.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [163:43] ==> val state: IReplStageState<*> defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplTest.test256Evals.<anonymous>[LocalVariableDescriptor]
 
@@ -492,9 +492,9 @@ Inferred types:
 
 'getApplication' @ [175:42] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 
-'lazy' @ [177:43] ==> public fun <T> lazy(initializer: () -> Disposable): Lazy<Disposable> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [177:43] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Disposable
+    <T> -> T
 
 'newDisposable' @ [177:59] ==> @NotNull public open fun newDisposable(): Disposable defined in com.intellij.openapi.util.Disposer[JavaMethodDescriptor]
 
@@ -512,9 +512,9 @@ Inferred types:
 Inferred types:
     <reified @PureReifiable T> -> KClass<Array<String>>
 
-'Array' @ [179:86] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [179:86] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@61afba40
 
 'newConfiguration' @ [181:49] ==> @NotNull public open fun newConfiguration(@NotNull p0: ConfigurationKind, @NotNull p1: TestJdkKind, @NotNull vararg p2: (File..File?)): CompilerConfiguration defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 
@@ -534,9 +534,7 @@ Inferred types:
 
 'put' @ [182:9] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [182:13] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [182:37] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -577,11 +575,11 @@ Inferred types:
 
 'java' @ [192:115] ==> public val <T> KClass<out TestRepl>.java: Class<out TestRepl> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> TestRepl
+    <T> -> Captured(out TestRepl)
 
 'classLoader' @ [192:120] ==> public final val <T : (Any..Any?)> Class<out TestRepl>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TestRepl
+    <T : (Any..Any?)> -> Captured(out TestRepl)
 
 'classloader' @ [193:19] ==> val classloader: URLClassLoader defined in org.jetbrains.kotlin.cli.jvm.repl.TestRepl.makeScriptDefinition[LocalVariableDescriptor]
 
@@ -595,7 +593,7 @@ Inferred types:
 
 'kotlin' @ [194:64] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'emptyMap' @ [194:84] ==> public fun <K, V> emptyMap(): Map<String, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -608,9 +606,9 @@ Inferred types:
 
 'templateClassName' @ [197:69] ==> value-parameter templateClassName: String = ... defined in org.jetbrains.kotlin.cli.jvm.repl.TestRepl.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [199:47] ==> public fun <T> lazy(initializer: () -> GenericReplCompiler): Lazy<GenericReplCompiler> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [199:47] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> GenericReplCompiler
+    <T> -> T
 
 'GenericReplCompiler' @ [200:9] ==> public constructor GenericReplCompiler(disposable: Disposable, scriptDefinition: KotlinScriptDefinition, compilerConfiguration: CompilerConfiguration, messageCollector: MessageCollector) defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplCompiler[DeserializedClassConstructorDescriptor]
 
@@ -626,9 +624,9 @@ Inferred types:
 
 'WITHOUT_PATHS' @ [200:120] ==> public final val WITHOUT_PATHS: (MessageRenderer..MessageRenderer?) defined in org.jetbrains.kotlin.cli.common.messages.MessageRenderer[JavaPropertyDescriptor]
 
-'lazy' @ [203:45] ==> public fun <T> lazy(initializer: () -> GenericReplEvaluator): Lazy<GenericReplEvaluator> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [203:45] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> GenericReplEvaluator
+    <T> -> T
 
 'GenericReplEvaluator' @ [204:9] ==> public constructor GenericReplEvaluator(baseClasspath: Iterable<File>, baseClassloader: ClassLoader? = ..., fallbackScriptArgs: ScriptArgsWithTypes? = ..., repeatingMode: ReplRepeatingMode = ...) defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluator[DeserializedClassConstructorDescriptor]
 
@@ -642,8 +640,8 @@ Inferred types:
 
 'AggregatedReplStageState' @ [208:13] ==> public constructor AggregatedReplStageState<T1, T2>(state1: IReplStageState<out Any?>, state2: IReplStageState<out Any?>, lock: ReentrantReadWriteLock = ...) defined in org.jetbrains.kotlin.cli.common.repl.AggregatedReplStageState[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T1> -> Any?
-    <T2> -> Any?
+    <T1> -> Captured(*)
+    <T2> -> Captured(*)
 
 'replCompiler' @ [208:38] ==> public final val replCompiler: GenericReplCompiler defined in org.jetbrains.kotlin.cli.jvm.repl.TestRepl[PropertyDescriptorImpl]
 

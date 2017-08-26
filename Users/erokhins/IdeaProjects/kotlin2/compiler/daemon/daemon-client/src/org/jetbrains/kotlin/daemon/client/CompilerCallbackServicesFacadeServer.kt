@@ -4,11 +4,7 @@
 
 'port' @ [40:25] ==> value-parameter port: Int = ... defined in org.jetbrains.kotlin.daemon.client.CompilerCallbackServicesFacadeServer.<init>[ValueParameterDescriptorImpl]
 
-'LoopbackNetworkInterface' @ [40:31] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common[FakeCallableDescriptorForObject]
-
 'clientLoopbackSocketFactory' @ [40:56] ==> public final val clientLoopbackSocketFactory: LoopbackNetworkInterface.ClientLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[DeserializedPropertyDescriptor]
-
-'LoopbackNetworkInterface' @ [40:85] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common[FakeCallableDescriptorForObject]
 
 'serverLoopbackSocketFactory' @ [40:110] ==> public final val serverLoopbackSocketFactory: LoopbackNetworkInterface.ServerLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[DeserializedPropertyDescriptor]
 

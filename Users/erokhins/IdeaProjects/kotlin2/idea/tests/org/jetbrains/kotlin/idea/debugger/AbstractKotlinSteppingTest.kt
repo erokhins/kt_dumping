@@ -64,9 +64,9 @@
 
 'command' @ [62:27] ==> value-parameter command: String defined in org.jetbrains.kotlin.idea.debugger.AbstractKotlinSteppingTest.doTest[ValueParameterDescriptorImpl]
 
-'?:' @ [63:21] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: {Comparable<{String & Int}> & java.io.Serializable}?, right: {Comparable<{String & Int}> & java.io.Serializable}): {Comparable<{String & Int}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
+'?:' @ [63:21] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Any?, right: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> {Comparable<{String & Int}> & java.io.Serializable}
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Any
 
 'getPrefixedInt' @ [63:43] ==> @Nullable public open fun getPrefixedInt(p0: (String..String?), p1: (String..String?)): Int? defined in org.jetbrains.kotlin.test.InTextDirectivesUtils[JavaMethodDescriptor]
 
@@ -78,7 +78,7 @@ Inferred types:
 
 'prefix' @ [64:38] ==> val prefix: String defined in org.jetbrains.kotlin.idea.debugger.AbstractKotlinSteppingTest.doTest[LocalVariableDescriptor]
 
-'count' @ [64:45] ==> val count: {Comparable<{String & Int}> & java.io.Serializable} defined in org.jetbrains.kotlin.idea.debugger.AbstractKotlinSteppingTest.doTest[LocalVariableDescriptor]
+'count' @ [64:45] ==> val count: Any defined in org.jetbrains.kotlin.idea.debugger.AbstractKotlinSteppingTest.doTest[LocalVariableDescriptor]
 
 'finish' @ [66:9] ==> protected final fun finish(): Unit defined in org.jetbrains.kotlin.idea.debugger.AbstractKotlinSteppingTest[SimpleFunctionDescriptorImpl]
 

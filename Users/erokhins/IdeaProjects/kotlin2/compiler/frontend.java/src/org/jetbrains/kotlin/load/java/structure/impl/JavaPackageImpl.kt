@@ -26,11 +26,11 @@ Inferred types:
 
 'name' @ [32:56] ==> val name: String? defined in org.jetbrains.kotlin.load.java.structure.impl.JavaPackageImpl.getClasses.<anonymous>[LocalVariableDescriptor]
 
-'classes' @ [34:16] ==> internal fun classes(classes: Collection<PsiClass>): Collection<JavaClass> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
+'classes' @ [34:16] ==> internal fun classes(classes: Collection<PsiClass>): Collection<JavaClass> defined in org.jetbrains.kotlin.load.java.structure.impl in file JavaElementCollectionFromPsiArrayUtil.kt[SimpleFunctionDescriptorImpl]
 
 'psiClasses' @ [34:24] ==> val psiClasses: List<(PsiClass..PsiClass?)> defined in org.jetbrains.kotlin.load.java.structure.impl.JavaPackageImpl.getClasses[LocalVariableDescriptor]
 
-'packages' @ [38:17] ==> internal fun packages(packages: Array<PsiPackage>, scope: GlobalSearchScope): Collection<JavaPackage> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
+'packages' @ [38:17] ==> internal fun packages(packages: Array<PsiPackage>, scope: GlobalSearchScope): Collection<JavaPackage> defined in org.jetbrains.kotlin.load.java.structure.impl in file JavaElementCollectionFromPsiArrayUtil.kt[SimpleFunctionDescriptorImpl]
 
 'psi' @ [38:26] ==> public final val JavaPackageImpl.psi: PsiPackage[MyPropertyDescriptor]
 
@@ -56,7 +56,7 @@ Inferred types:
 Inferred types:
     <reified T> -> (com.intellij.psi.PsiAnnotation..com.intellij.psi.PsiAnnotation?)
 
-'annotations' @ [46:66] ==> internal fun annotations(annotations: Array<out PsiAnnotation>): Collection<JavaAnnotation> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
+'annotations' @ [46:66] ==> internal fun annotations(annotations: Array<out PsiAnnotation>): Collection<JavaAnnotation> defined in org.jetbrains.kotlin.load.java.structure.impl in file JavaElementCollectionFromPsiArrayUtil.kt[SimpleFunctionDescriptorImpl]
 
 'annotations1' @ [46:78] ==> val annotations1: Array<out (PsiAnnotation..PsiAnnotation?)> defined in org.jetbrains.kotlin.load.java.structure.impl.JavaPackageImpl.<get-annotations>[LocalVariableDescriptor]
 

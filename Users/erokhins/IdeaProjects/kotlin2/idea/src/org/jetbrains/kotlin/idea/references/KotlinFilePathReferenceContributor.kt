@@ -91,9 +91,7 @@ Inferred types:
 
 'putUserData' @ [46:53] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'KotlinCompletionCharFilter' @ [46:65] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'SUPPRESS_ITEM_SELECTION_BY_CHARS_ON_TYPING' @ [46:92] ==> public final val SUPPRESS_ITEM_SELECTION_BY_CHARS_ON_TYPING: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -117,7 +115,7 @@ Inferred types:
 
 'psiElement' @ [61:34] ==> public open fun <T : (PsiElement..PsiElement?)> psiElement(p0: (Class<(KtStringTemplateExpression..KtStringTemplateExpression?)>..Class<(KtStringTemplateExpression..KtStringTemplateExpression?)>?)): (PsiElementPattern.Capture<(KtStringTemplateExpression..KtStringTemplateExpression?)>..PsiElementPattern.Capture<(KtStringTemplateExpression..KtStringTemplateExpression?)>?) defined in com.intellij.patterns.PlatformPatterns[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtStringTemplateExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtStringTemplateExpression..org.jetbrains.kotlin.psi.KtStringTemplateExpression?)
 
 'KtStringTemplateExpression' @ [61:45] ==> public constructor KtStringTemplateExpression(@NotNull p0: ASTNode) defined in org.jetbrains.kotlin.psi.KtStringTemplateExpression[JavaClassConstructorDescriptor]
 

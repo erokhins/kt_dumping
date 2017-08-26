@@ -29,7 +29,7 @@ Inferred types:
 
 'isInterface' @ [62:58] ==> public final fun isInterface(): Boolean defined in org.jetbrains.kotlin.psi.KtClass[DeserializedSimpleFunctionDescriptor]
 
-'isConstructorDeclaredProperty' @ [62:75] ==> public fun KtNamedDeclaration.isConstructorDeclaredProperty(): Boolean defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'isConstructorDeclaredProperty' @ [62:75] ==> public fun KtNamedDeclaration.isConstructorDeclaredProperty(): Boolean defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'superClass' @ [77:30] ==> public final val KotlinPullUpDialog.superClass: PsiNamedElement?[MyPropertyDescriptor]
 
@@ -61,7 +61,7 @@ Inferred types:
 
 'member' @ [85:17] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpDialog.MemberInfoModelImpl.isAbstractEnabled[LocalVariableDescriptor]
 
-'isAbstractInInterface' @ [85:24] ==> public fun KtNamedDeclaration.isAbstractInInterface(originalClass: KtClassOrObject): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'isAbstractInInterface' @ [85:24] ==> public fun KtNamedDeclaration.isAbstractInInterface(originalClass: KtClassOrObject): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpUtils.kt[SimpleFunctionDescriptorImpl]
 
 'sourceClass' @ [85:46] ==> private final val sourceClass: KtClassOrObject defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpDialog[PropertyDescriptorImpl]
 
@@ -91,7 +91,7 @@ Inferred types:
 
 'member' @ [91:75] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpDialog.MemberInfoModelImpl.isAbstractEnabled[LocalVariableDescriptor]
 
-'mustBeAbstractInInterface' @ [91:82] ==> public fun KtProperty.mustBeAbstractInInterface(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'mustBeAbstractInInterface' @ [91:82] ==> public fun KtProperty.mustBeAbstractInInterface(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpUtils.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [91:114] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpDialog.MemberInfoModelImpl.isAbstractEnabled[LocalVariableDescriptor]
 
@@ -109,7 +109,7 @@ Inferred types:
 
 'member' @ [98:17] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpDialog.MemberInfoModelImpl.isAbstractWhenDisabled[LocalVariableDescriptor]
 
-'isAbstractInInterface' @ [98:24] ==> public fun KtNamedDeclaration.isAbstractInInterface(originalClass: KtClassOrObject): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'isAbstractInInterface' @ [98:24] ==> public fun KtNamedDeclaration.isAbstractInInterface(originalClass: KtClassOrObject): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpUtils.kt[SimpleFunctionDescriptorImpl]
 
 'sourceClass' @ [98:46] ==> private final val sourceClass: KtClassOrObject defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpDialog[PropertyDescriptorImpl]
 
@@ -246,11 +246,11 @@ Inferred types:
 
 'java' @ [138:63] ==> public val <T> KClass<out KotlinPullUpDialog>.java: Class<out KotlinPullUpDialog> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinPullUpDialog
+    <T> -> Captured(out KotlinPullUpDialog)
 
 'name' @ [138:68] ==> public final val <T : (Any..Any?)> Class<out KotlinPullUpDialog>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinPullUpDialog
+    <T : (Any..Any?)> -> Captured(out KotlinPullUpDialog)
 
 'super' @ [140:36] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpDialog[LazyClassReceiverParameterDescriptor]
 
@@ -262,7 +262,7 @@ Inferred types:
 
 'preselection' @ [143:46] ==> protected for synthetic extension final val KotlinPullUpDialog.preselection: PsiNamedElement?[MyPropertyDescriptor]
 
-'getInterfaceContainmentVerifier' @ [143:60] ==> public fun getInterfaceContainmentVerifier(getMemberInfos: () -> List<KotlinMemberInfo>): (KtNamedDeclaration) -> Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'getInterfaceContainmentVerifier' @ [143:60] ==> public fun getInterfaceContainmentVerifier(getMemberInfos: () -> List<KotlinMemberInfo>): (KtNamedDeclaration) -> Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpUtils.kt[SimpleFunctionDescriptorImpl]
 
 'selectedMemberInfos' @ [143:94] ==> public final val KotlinPullUpDialog.selectedMemberInfos: (MutableList<(KotlinMemberInfo..KotlinMemberInfo?)>..List<(KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
 
@@ -296,7 +296,7 @@ Inferred types:
 
 'superClass' @ [154:27] ==> public final val KotlinPullUpDialog.superClass: PsiNamedElement?[MyPropertyDescriptor]
 
-'checkConflicts' @ [155:9] ==> public fun checkConflicts(project: Project, sourceClass: KtClassOrObject, targetClass: PsiNamedElement, memberInfos: List<KotlinMemberInfo>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'checkConflicts' @ [155:9] ==> public fun checkConflicts(project: Project, sourceClass: KtClassOrObject, targetClass: PsiNamedElement, memberInfos: List<KotlinMemberInfo>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [155:24] ==> protected/*protected and package*/ for synthetic extension final val KotlinPullUpDialog.project: (Project..Project?)[MyPropertyDescriptor]
 
@@ -343,7 +343,7 @@ Inferred types:
 
 'it' @ [167:61] ==> value-parameter it: KotlinMemberInfo defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpDialog.Companion.createProcessor.<anonymous>[ValueParameterDescriptorImpl]
 
-'toJavaMemberInfo' @ [167:64] ==> public fun MemberInfoBase<out KtNamedDeclaration>.toJavaMemberInfo(): MemberInfo? defined in org.jetbrains.kotlin.idea.refactoring.memberInfo[SimpleFunctionDescriptorImpl]
+'toJavaMemberInfo' @ [167:64] ==> public fun MemberInfoBase<out KtNamedDeclaration>.toJavaMemberInfo(): MemberInfo? defined in org.jetbrains.kotlin.idea.refactoring.memberInfo in file KotlinMemberInfo.kt[SimpleFunctionDescriptorImpl]
 
 'toTypedArray' @ [167:85] ==> public inline fun <reified T> Collection<MemberInfo>.toTypedArray(): Array<MemberInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

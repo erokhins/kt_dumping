@@ -389,8 +389,8 @@ Inferred types:
 
 'get' @ [168:61] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?), p1: (PsiElement..PsiElement?)): SimpleFunctionDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> SimpleFunctionDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'FUNCTION' @ [168:80] ==> public final val FUNCTION: (WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -416,8 +416,8 @@ Inferred types:
 
 'get' @ [172:51] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?), p1: (PsiElement..PsiElement?)): VariableDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VARIABLE' @ [172:70] ==> public final val VARIABLE: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -483,7 +483,7 @@ Inferred types:
 
 'METADATA_MULTIFILE_PARTS_INHERIT_FLAG' @ [184:78] ==> public const final val METADATA_MULTIFILE_PARTS_INHERIT_FLAG: Int defined in org.jetbrains.kotlin.load.java.JvmAnnotationNames[JavaPropertyDescriptor]
 
-'writeKotlinMetadata' @ [186:9] ==> public fun writeKotlinMetadata(cb: ClassBuilder, state: GenerationState, kind: KotlinClassHeader.Kind, extraFlags: Int, action: (AnnotationVisitor) -> Unit): Unit defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'writeKotlinMetadata' @ [186:9] ==> public fun writeKotlinMetadata(cb: ClassBuilder, state: GenerationState, kind: KotlinClassHeader.Kind, extraFlags: Int, action: (AnnotationVisitor) -> Unit): Unit defined in org.jetbrains.kotlin.codegen in file writeAnnotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'v' @ [186:29] ==> public final val v: (ClassBuilder..ClassBuilder?) defined in org.jetbrains.kotlin.codegen.MultifileClassPartCodegen[JavaPropertyDescriptor]
 

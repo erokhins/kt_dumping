@@ -8,11 +8,11 @@ Inferred types:
 
 'java' @ [26:44] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out Annotation)
 
 'declaredMethods' @ [26:49] ==> public final val <T : (Any..Any?)> Class<out Annotation>.declaredMethods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Annotation
+    <T : (Any..Any?)> -> Captured(out Annotation)
 
 'map' @ [26:65] ==> public inline fun <T, R> Array<out (Method..Method?)>.map(transform: ((Method..Method?)) -> ReflectJavaAnnotationArgument): List<ReflectJavaAnnotationArgument> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -43,7 +43,7 @@ Inferred types:
 
 'java' @ [31:44] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out Annotation)
 
 'classId' @ [31:49] ==> public val Class<*>.classId: ClassId defined in org.jetbrains.kotlin.load.java.structure.reflect in file reflectClassUtil.kt[PropertyDescriptorImpl]
 
@@ -57,7 +57,7 @@ Inferred types:
 
 'java' @ [33:74] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out Annotation)
 
 'other' @ [35:40] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaAnnotation.equals[ValueParameterDescriptorImpl]
 
@@ -75,11 +75,11 @@ Inferred types:
 
 'java' @ [39:43] ==> public val <T> KClass<out ReflectJavaAnnotation>.java: Class<out ReflectJavaAnnotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ReflectJavaAnnotation
+    <T> -> Captured(out ReflectJavaAnnotation)
 
 'name' @ [39:48] ==> public final val <T : (Any..Any?)> Class<out ReflectJavaAnnotation>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ReflectJavaAnnotation
+    <T : (Any..Any?)> -> Captured(out ReflectJavaAnnotation)
 
 'annotation' @ [39:62] ==> public final val annotation: Annotation defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaAnnotation[PropertyDescriptorImpl]
 

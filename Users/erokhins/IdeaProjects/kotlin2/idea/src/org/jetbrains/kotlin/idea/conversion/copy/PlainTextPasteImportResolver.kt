@@ -14,9 +14,9 @@
 
 'project' @ [45:75] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.conversion.copy.PlainTextPasteImportResolver[PropertyDescriptorImpl]
 
-'lazy' @ [47:35] ==> public fun <T> lazy(initializer: () -> BindingContext): Lazy<BindingContext> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [47:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> BindingContext
+    <T> -> T
 
 'targetFile' @ [47:42] ==> public final val targetFile: KtFile defined in org.jetbrains.kotlin.idea.conversion.copy.PlainTextPasteImportResolver[PropertyDescriptorImpl]
 
@@ -216,6 +216,8 @@ Inferred types:
 'forEach' @ [108:45] ==> @HidesMembers public inline fun <T> Iterable<(KtImportDirective..KtImportDirective?)>.forEach(action: ((KtImportDirective..KtImportDirective?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.KtImportDirective..org.jetbrains.kotlin.psi.KtImportDirective?)
+
+'tryConvertKotlinImport' @ [108:55] ==> local final fun tryConvertKotlinImport(importDirective: KtImportDirective): Unit defined in org.jetbrains.kotlin.idea.conversion.copy.PlainTextPasteImportResolver.addImportsFromTargetFile[SimpleFunctionDescriptorImpl]
 
 'collectElements' @ [114:53] ==> @NotNull public final fun collectElements(@Nullable p0: PsiElement?, @NotNull p1: ((PsiElement..PsiElement?)) -> Boolean): (Array<(PsiElement..PsiElement?)>..Array<out (PsiElement..PsiElement?)>) defined in com.intellij.psi.util.PsiTreeUtil[SamAdapterFunctionDescriptor]
 
@@ -422,12 +424,12 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiField..com.intellij.psi.PsiField?)
 
-'map' @ [157:22] ==> public inline fun <T, R> Iterable<{PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}>.map(transform: ({PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}) -> PsiMember): List<PsiMember> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [157:22] ==> public inline fun <T, R> Iterable<(Any..Any?)>.map(transform: ((Any..Any?)) -> PsiMember): List<PsiMember> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}
+    <T> -> (kotlin.Any..kotlin.Any?)
     <R> -> PsiMember
 
-'it' @ [157:28] ==> value-parameter it: {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner} defined in org.jetbrains.kotlin.idea.conversion.copy.PlainTextPasteImportResolver.tryResolveReferences.tryResolveReference.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [157:28] ==> value-parameter it: (Any..Any?) defined in org.jetbrains.kotlin.idea.conversion.copy.PlainTextPasteImportResolver.tryResolveReferences.tryResolveReference.<anonymous>[ValueParameterDescriptorImpl]
 
 'filter' @ [158:22] ==> public inline fun <T> Iterable<PsiMember>.filter(predicate: (PsiMember) -> Boolean): List<PsiMember> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

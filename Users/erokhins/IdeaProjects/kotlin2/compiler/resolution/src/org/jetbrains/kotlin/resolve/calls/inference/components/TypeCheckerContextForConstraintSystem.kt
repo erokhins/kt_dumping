@@ -24,6 +24,8 @@ Inferred types:
 
 'this' @ [37:40] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[LazyClassReceiverParameterDescriptor]
 
+'isMyTypeVariable' @ [37:46] ==> public abstract fun isMyTypeVariable(type: SimpleType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
+
 'CHECK_ONLY_LOWER' @ [37:93] ==> enum entry CHECK_ONLY_LOWER defined in org.jetbrains.kotlin.types.checker.TypeCheckerContext.LowerCapturedTypePolicy[FakeCallableDescriptorForObject]
 
 'CHECK_SUBTYPE_AND_LOWER' @ [38:41] ==> enum entry CHECK_SUBTYPE_AND_LOWER defined in org.jetbrains.kotlin.types.checker.TypeCheckerContext.LowerCapturedTypePolicy[FakeCallableDescriptorForObject]
@@ -56,8 +58,6 @@ Inferred types:
 
 'replaceAnnotations' @ [54:47] ==> public abstract fun replaceAnnotations(newAnnotations: Annotations): UnwrappedType defined in org.jetbrains.kotlin.types.UnwrappedType[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [54:66] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [54:78] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'subType' @ [54:90] ==> value-parameter subType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem.addSubtypeConstraint[ValueParameterDescriptorImpl]
@@ -71,8 +71,6 @@ Inferred types:
 'superType' @ [55:41] ==> value-parameter superType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem.addSubtypeConstraint[ValueParameterDescriptorImpl]
 
 'replaceAnnotations' @ [55:51] ==> public abstract fun replaceAnnotations(newAnnotations: Annotations): UnwrappedType defined in org.jetbrains.kotlin.types.UnwrappedType[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [55:70] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [55:82] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -108,11 +106,15 @@ Inferred types:
 
 'this@TypeCheckerContextForConstraintSystem' @ [67:22] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[LazyClassReceiverParameterDescriptor]
 
+'isMyTypeVariable' @ [67:66] ==> public abstract fun isMyTypeVariable(type: SimpleType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
+
 'hasExactAnnotation' @ [67:87] ==> public fun KotlinType.hasExactAnnotation(): Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedSimpleFunctionDescriptor]
 
 'anyBound' @ [70:13] ==> private final inline fun UnwrappedType.anyBound(f: (SimpleType) -> Boolean): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
 
 'this@TypeCheckerContextForConstraintSystem' @ [70:22] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[LazyClassReceiverParameterDescriptor]
+
+'isMyTypeVariable' @ [70:66] ==> public abstract fun isMyTypeVariable(type: SimpleType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
 
 'hasNoInferAnnotation' @ [70:87] ==> public fun KotlinType.hasNoInferAnnotation(): Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -127,6 +129,8 @@ Inferred types:
 'anyBound' @ [77:23] ==> private final inline fun UnwrappedType.anyBound(f: (SimpleType) -> Boolean): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
 
 'this' @ [77:32] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[LazyClassReceiverParameterDescriptor]
+
+'isMyTypeVariable' @ [77:38] ==> public abstract fun isMyTypeVariable(type: SimpleType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
 
 'answer' @ [78:13] ==> var answer: Boolean? defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem.internalAddSubtypeConstraint[LocalVariableDescriptor]
 
@@ -150,6 +154,8 @@ Inferred types:
 'anyBound' @ [81:21] ==> private final inline fun UnwrappedType.anyBound(f: (SimpleType) -> Boolean): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
 
 'this' @ [81:30] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[LazyClassReceiverParameterDescriptor]
+
+'isMyTypeVariable' @ [81:36] ==> public abstract fun isMyTypeVariable(type: SimpleType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
 
 'simplifyUpperConstraint' @ [82:20] ==> private final fun simplifyUpperConstraint(typeVariable: UnwrappedType, superType: UnwrappedType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
 
@@ -238,6 +244,8 @@ Inferred types:
 
 'this' @ [121:39] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[LazyClassReceiverParameterDescriptor]
 
+'isMyTypeVariable' @ [121:45] ==> public abstract fun isMyTypeVariable(type: SimpleType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
+
 'isSubtypeOfByTypeChecker' @ [122:17] ==> private final fun isSubtypeOfByTypeChecker(subType: UnwrappedType, superType: UnwrappedType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
 
 'typeVariable' @ [122:42] ==> val typeVariable: SimpleType defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem.simplifyUpperConstraint[LocalVariableDescriptor]
@@ -293,6 +301,8 @@ Inferred types:
 
 'this' @ [139:57] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[LazyClassReceiverParameterDescriptor]
 
+'isMyTypeVariable' @ [139:63] ==> public abstract fun isMyTypeVariable(type: SimpleType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
+
 'takeIf' @ [139:81] ==> @InlineOnly @SinceKotlin public inline fun <T> List<SimpleType>.takeIf(predicate: (List<SimpleType>) -> Boolean): List<SimpleType>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> List<SimpleType>
@@ -310,6 +320,8 @@ Inferred types:
     <T> -> SimpleType
 
 'this' @ [140:63] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[LazyClassReceiverParameterDescriptor]
+
+'isMyTypeVariable' @ [140:69] ==> public abstract fun isMyTypeVariable(type: SimpleType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
 
 'notTypeVariables' @ [143:13] ==> val notTypeVariables: List<SimpleType> defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem.simplifyConstraintForPossibleIntersectionSubType[LocalVariableDescriptor]
 
@@ -406,6 +418,8 @@ Inferred types:
 
 'bothBounds' @ [176:24] ==> private final inline fun UnwrappedType.bothBounds(f: (SimpleType) -> Boolean): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
 
+'correctSubType' @ [176:37] ==> local final fun correctSubType(subType: SimpleType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem.assertInputTypes[SimpleFunctionDescriptorImpl]
+
 'subType' @ [177:70] ==> value-parameter subType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem.assertInputTypes[ValueParameterDescriptorImpl]
 
 'assert' @ [179:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -413,6 +427,8 @@ Inferred types:
 'superType' @ [179:16] ==> value-parameter superType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem.assertInputTypes[ValueParameterDescriptorImpl]
 
 'bothBounds' @ [179:26] ==> private final inline fun UnwrappedType.bothBounds(f: (SimpleType) -> Boolean): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem[SimpleFunctionDescriptorImpl]
+
+'correctSuperType' @ [179:39] ==> local final fun correctSuperType(superType: SimpleType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem.assertInputTypes[SimpleFunctionDescriptorImpl]
 
 'superType' @ [180:51] ==> value-parameter superType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.inference.components.TypeCheckerContextForConstraintSystem.assertInputTypes[ValueParameterDescriptorImpl]
 

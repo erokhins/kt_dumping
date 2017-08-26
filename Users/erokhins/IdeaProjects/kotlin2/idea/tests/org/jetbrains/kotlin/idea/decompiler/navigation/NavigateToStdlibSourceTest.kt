@@ -42,7 +42,7 @@
 
 'tearDown' @ [53:15] ==> @Override protected/*protected and package*/ open fun tearDown(): Unit defined in org.jetbrains.kotlin.idea.test.KotlinCodeInsightTestCase[JavaMethodDescriptor]
 
-'closeAndDeleteProject' @ [57:9] ==> public fun closeAndDeleteProject(): Unit defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'closeAndDeleteProject' @ [57:9] ==> public fun closeAndDeleteProject(): Unit defined in org.jetbrains.kotlin.idea.test in file testUtils.kt[SimpleFunctionDescriptorImpl]
 
 'configureByText' @ [65:9] ==> protected/*protected and package*/ open fun configureByText(@NotNull p0: FileType, @NotNull p1: String): (PsiFile..PsiFile?) defined in org.jetbrains.kotlin.idea.decompiler.navigation.NavigateToStdlibSourceTest[JavaMethodDescriptor]
 

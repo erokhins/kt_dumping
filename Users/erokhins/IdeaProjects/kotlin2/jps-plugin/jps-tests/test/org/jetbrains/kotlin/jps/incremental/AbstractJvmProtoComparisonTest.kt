@@ -29,7 +29,9 @@ Inferred types:
     <T> -> File
     <R> -> LocalFileKotlinClass
 
-'LocalFileKotlinClass' @ [35:48] ==> public companion object defined in org.jetbrains.kotlin.incremental.LocalFileKotlinClass[FakeCallableDescriptorForObject]
+'!!' @ [35:48] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: LocalFileKotlinClass?): LocalFileKotlinClass[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> LocalFileKotlinClass
 
 'create' @ [35:69] ==> public final fun create(file: File): LocalFileKotlinClass? defined in org.jetbrains.kotlin.incremental.LocalFileKotlinClass.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -72,9 +74,9 @@ Inferred types:
 
 'location' @ [46:99] ==> public abstract val location: String defined in org.jetbrains.kotlin.load.kotlin.KotlinJvmBinaryClass[DeserializedPropertyDescriptor]
 
-'lazy' @ [48:22] ==> public fun <T> lazy(initializer: () -> ByteArray): Lazy<ByteArray> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [48:22] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ByteArray
+    <T> -> T
 
 'decodeBytes' @ [48:41] ==> @NotNull public open fun decodeBytes(@NotNull p0: (Array<(String..String?)>..Array<out (String..String?)>)): ByteArray defined in org.jetbrains.kotlin.serialization.jvm.BitEncoding[JavaMethodDescriptor]
 
@@ -82,9 +84,9 @@ Inferred types:
 
 'data' @ [48:65] ==> public final val data: Array<String>? defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader[DeserializedPropertyDescriptor]
 
-'lazy' @ [49:24] ==> public fun <T> lazy(initializer: () -> Array<String>): Lazy<Array<String>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [49:24] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Array<String>
+    <T> -> T
 
 'classHeader' @ [49:31] ==> public abstract val classHeader: KotlinClassHeader defined in org.jetbrains.kotlin.load.kotlin.KotlinJvmBinaryClass[DeserializedPropertyDescriptor]
 

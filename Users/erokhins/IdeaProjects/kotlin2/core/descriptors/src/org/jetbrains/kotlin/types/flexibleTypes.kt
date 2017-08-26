@@ -92,7 +92,7 @@ Inferred types:
 
 'type' @ [64:34] ==> public final val TypeProjection.type: KotlinType[MyPropertyDescriptor]
 
-'singleBestRepresentative' @ [64:41] ==> public fun Collection<KotlinType>.singleBestRepresentative(): KotlinType? defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'singleBestRepresentative' @ [64:41] ==> public fun Collection<KotlinType>.singleBestRepresentative(): KotlinType? defined in org.jetbrains.kotlin.types in file flexibleTypes.kt[SimpleFunctionDescriptorImpl]
 
 'TypeProjectionImpl' @ [66:12] ==> public constructor TypeProjectionImpl(@NotNull projection: Variance, @NotNull type: KotlinType) defined in org.jetbrains.kotlin.types.TypeProjectionImpl[JavaClassConstructorDescriptor]
 
@@ -236,8 +236,6 @@ Inferred types:
 'unwrapped' @ [119:21] ==> val unwrapped: UnwrappedType defined in org.jetbrains.kotlin.types.FlexibleTypeImpl.substitutionResult[LocalVariableDescriptor]
 
 'unwrapped' @ [120:32] ==> val unwrapped: UnwrappedType defined in org.jetbrains.kotlin.types.FlexibleTypeImpl.substitutionResult[LocalVariableDescriptor]
-
-'KotlinTypeFactory' @ [121:30] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
 
 'flexibleType' @ [121:48] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 

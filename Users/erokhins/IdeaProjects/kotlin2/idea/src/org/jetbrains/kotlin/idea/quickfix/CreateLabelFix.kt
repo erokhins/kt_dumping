@@ -174,8 +174,6 @@ Inferred types:
 Inferred types:
     <T> -> KtLoopExpression
 
-'CreateLabelFix' @ [102:78] ==> public companion object : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.CreateLabelFix[FakeCallableDescriptorForObject]
-
 'ForLoop' @ [102:93] ==> public constructor ForLoop(expression: KtLabelReferenceExpression) defined in org.jetbrains.kotlin.idea.quickfix.CreateLabelFix.ForLoop[ClassConstructorDescriptorImpl]
 
 'labelReferenceExpression' @ [102:101] ==> val labelReferenceExpression: KtLabelReferenceExpression defined in org.jetbrains.kotlin.idea.quickfix.CreateLabelFix.Companion.createAction[LocalVariableDescriptor]
@@ -191,8 +189,6 @@ Inferred types:
 'any' @ [105:73] ==> public fun <T> Sequence<KtLambdaExpression>.any(): Boolean defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtLambdaExpression
-
-'CreateLabelFix' @ [105:80] ==> public companion object : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.CreateLabelFix[FakeCallableDescriptorForObject]
 
 'ForLambda' @ [105:95] ==> public constructor ForLambda(expression: KtLabelReferenceExpression) defined in org.jetbrains.kotlin.idea.quickfix.CreateLabelFix.ForLambda[ClassConstructorDescriptorImpl]
 

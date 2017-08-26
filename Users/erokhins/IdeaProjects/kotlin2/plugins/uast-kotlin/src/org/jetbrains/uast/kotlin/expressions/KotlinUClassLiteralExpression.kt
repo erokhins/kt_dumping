@@ -1,8 +1,8 @@
 'KotlinAbstractUExpression' @ [28:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [29:26] ==> internal fun <T> lz(initializer: () -> PsiType?): Lazy<PsiType?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [29:26] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiType?
+    <T> -> T
 
 'psi' @ [30:22] ==> public open val psi: KtClassLiteralExpression defined in org.jetbrains.uast.kotlin.KotlinUClassLiteralExpression[PropertyDescriptorImpl]
 

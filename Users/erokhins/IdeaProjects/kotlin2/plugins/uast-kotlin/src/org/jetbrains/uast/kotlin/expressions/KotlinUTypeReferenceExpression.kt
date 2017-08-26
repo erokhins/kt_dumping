@@ -2,9 +2,9 @@
 
 'KotlinAbstractUExpression' @ [19:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [20:35] ==> internal fun <T> lz(initializer: () -> PsiType): Lazy<PsiType> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [20:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiType
+    <T> -> T
 
 'invoke' @ [20:40] ==> public abstract operator fun invoke(): PsiType defined in kotlin.Function0[FunctionInvokeDescriptor]
 

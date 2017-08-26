@@ -8,7 +8,7 @@
 
 'allModules' @ [58:27] ==> value-parameter allModules: Collection<IdeaModuleInfo>? defined in org.jetbrains.kotlin.idea.caches.resolve.createModuleResolverProvider[ValueParameterDescriptorImpl]
 
-'collectAllModuleInfosFromIdeaModel' @ [58:41] ==> public fun collectAllModuleInfosFromIdeaModel(project: Project): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'collectAllModuleInfosFromIdeaModel' @ [58:41] ==> public fun collectAllModuleInfosFromIdeaModel(project: Project): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve in file ModuleDependencyMapper.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [58:76] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.createModuleResolverProvider[ValueParameterDescriptorImpl]
 
@@ -24,6 +24,8 @@ Inferred types:
     <K> -> IdeaModuleInfo
 
 'KtFile' @ [60:57] ==> public constructor KtFile(p0: (FileViewProvider..FileViewProvider?), p1: Boolean) defined in org.jetbrains.kotlin.psi.KtFile[JavaClassConstructorDescriptor]
+
+'getModuleInfo' @ [60:65] ==> public fun PsiElement.getModuleInfo(): IdeaModuleInfo defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
 
 'syntheticFilesByModule' @ [61:33] ==> val syntheticFilesByModule: Map<IdeaModuleInfo, List<KtFile>> defined in org.jetbrains.kotlin.idea.caches.resolve.createModuleResolverProvider[LocalVariableDescriptor]
 
@@ -299,7 +301,7 @@ Inferred types:
 
 'sdksFromModulesDependencies' @ [122:22] ==> val sdksFromModulesDependencies: List<(Sdk..Sdk?)> defined in org.jetbrains.kotlin.idea.caches.resolve.collectAllModuleInfosFromIdeaModel[LocalVariableDescriptor]
 
-'getAllProjectSdks' @ [122:52] ==> public fun getAllProjectSdks(): Collection<Sdk> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'getAllProjectSdks' @ [122:52] ==> public fun getAllProjectSdks(): Collection<Sdk> defined in org.jetbrains.kotlin.idea.caches.resolve in file ModuleDependencyMapper.kt[SimpleFunctionDescriptorImpl]
 
 'filterNotNull' @ [122:73] ==> public fun <T : Any> Iterable<Sdk?>.filterNotNull(): List<Sdk> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

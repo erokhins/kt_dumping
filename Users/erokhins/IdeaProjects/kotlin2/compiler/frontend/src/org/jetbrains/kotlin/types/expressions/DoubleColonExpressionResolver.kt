@@ -160,8 +160,6 @@ Inferred types:
 
 'getKClassType' @ [123:50] ==> public final fun getKClassType(annotations: Annotations, type: KotlinType, variance: Variance): KotlinType defined in org.jetbrains.kotlin.builtins.ReflectionTypes[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [123:64] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [123:76] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'type' @ [123:83] ==> val type: KotlinType defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.visitClassLiteralExpression[LocalVariableDescriptor]
@@ -461,8 +459,6 @@ Inferred types:
 'languageVersionSettings' @ [207:14] ==> public final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[PropertyDescriptorImpl]
 
 'supportsFeature' @ [207:38] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [207:54] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'BoundCallableReferences' @ [207:70] ==> enum entry BoundCallableReferences defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -806,7 +802,11 @@ Inferred types:
 
 'this' @ [308:51] ==> <this> defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[LazyClassReceiverParameterDescriptor]
 
+'shouldTryResolveLHSAsReservedExpression' @ [308:57] ==> private final fun shouldTryResolveLHSAsReservedExpression(expression: KtDoubleColonExpression): Boolean defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[SimpleFunctionDescriptorImpl]
+
 'this' @ [309:51] ==> <this> defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[LazyClassReceiverParameterDescriptor]
+
+'resolveReservedExpressionOnLHS' @ [309:57] ==> private final fun resolveReservedExpressionOnLHS(expression: KtExpression, c: ExpressionTypingContext): DoubleColonLHS.Expression? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[SimpleFunctionDescriptorImpl]
 
 'resultForReservedExpr' @ [310:13] ==> val resultForReservedExpr: DoubleColonExpressionResolver.LHSResolutionResult<DoubleColonLHS.Expression>? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.resolveReservedExpressionSyntaxOnDoubleColonLHS[LocalVariableDescriptor]
 
@@ -849,7 +849,11 @@ Inferred types:
 
 'this' @ [319:56] ==> <this> defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[LazyClassReceiverParameterDescriptor]
 
+'shouldTryResolveLHSAsReservedCallChain' @ [319:62] ==> private final fun shouldTryResolveLHSAsReservedCallChain(expression: KtDoubleColonExpression): Boolean defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[SimpleFunctionDescriptorImpl]
+
 'this' @ [320:56] ==> <this> defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[LazyClassReceiverParameterDescriptor]
+
+'resolveReservedCallChainOnLHS' @ [320:62] ==> private final fun resolveReservedCallChainOnLHS(expression: KtExpression, c: ExpressionTypingContext): DoubleColonLHS.Expression? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[SimpleFunctionDescriptorImpl]
 
 'resultForReservedCallChain' @ [321:13] ==> val resultForReservedCallChain: DoubleColonExpressionResolver.LHSResolutionResult<DoubleColonLHS.Expression>? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.resolveReservedExpressionSyntaxOnDoubleColonLHS[LocalVariableDescriptor]
 
@@ -920,7 +924,11 @@ Inferred types:
 
 'this' @ [342:69] ==> <this> defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[LazyClassReceiverParameterDescriptor]
 
+'shouldTryResolveLHSAsExpression' @ [342:75] ==> private final fun shouldTryResolveLHSAsExpression(expression: KtDoubleColonExpression): Boolean defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[SimpleFunctionDescriptorImpl]
+
 'this' @ [342:108] ==> <this> defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[LazyClassReceiverParameterDescriptor]
+
+'resolveExpressionOnLHS' @ [342:114] ==> private final fun resolveExpressionOnLHS(expression: KtExpression, c: ExpressionTypingContext): DoubleColonLHS.Expression? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[SimpleFunctionDescriptorImpl]
 
 'resultForExpr' @ [343:13] ==> val resultForExpr: DoubleColonExpressionResolver.LHSResolutionResult<DoubleColonLHS.Expression>? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.resolveDoubleColonLHS[LocalVariableDescriptor]
 
@@ -963,6 +971,8 @@ Inferred types:
 'c' @ [355:66] ==> value-parameter c: ExpressionTypingContext defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.resolveDoubleColonLHS[ValueParameterDescriptorImpl]
 
 'this' @ [355:69] ==> <this> defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[LazyClassReceiverParameterDescriptor]
+
+'shouldTryResolveLHSAsType' @ [355:75] ==> private final fun shouldTryResolveLHSAsType(expression: KtDoubleColonExpression): Boolean defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[SimpleFunctionDescriptorImpl]
 
 'resolveTypeOnLHS' @ [356:13] ==> private final fun resolveTypeOnLHS(expression: KtExpression, doubleColonExpression: KtDoubleColonExpression, c: ExpressionTypingContext): DoubleColonLHS.Type? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[SimpleFunctionDescriptorImpl]
 
@@ -1109,7 +1119,7 @@ Inferred types:
 
 'call' @ [426:28] ==> val call: Call? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.resolveExpressionOnLHS[LocalVariableDescriptor]
 
-'getResolvedCall' @ [426:33] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [426:33] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'c' @ [426:49] ==> value-parameter c: ExpressionTypingContext defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.resolveExpressionOnLHS[ValueParameterDescriptorImpl]
 
@@ -1123,7 +1133,7 @@ Inferred types:
 
 'resultingDescriptor' @ [429:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resultingDescriptor' @ [430:17] ==> val resultingDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.resolveExpressionOnLHS[LocalVariableDescriptor]
 
@@ -1144,8 +1154,6 @@ Inferred types:
 'languageVersionSettings' @ [435:23] ==> public final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[PropertyDescriptorImpl]
 
 'supportsFeature' @ [435:47] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [435:63] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'BoundCallableReferences' @ [435:79] ==> enum entry BoundCallableReferences defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -1231,8 +1239,6 @@ Inferred types:
 
 'expression' @ [468:79] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.resolveTypeOnLHS[ValueParameterDescriptorImpl]
 
-'Annotations' @ [468:91] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [468:103] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'if (possiblyBareType.isBare) {
@@ -1307,11 +1313,9 @@ Inferred types:
 
 'TypeUtils' @ [479:71] ==> public constructor TypeUtils() defined in org.jetbrains.kotlin.types.TypeUtils[JavaClassConstructorDescriptor]
 
-'KotlinTypeFactory' @ [480:13] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
+'makeStarProjection' @ [479:82] ==> @NotNull public open fun makeStarProjection(@NotNull p0: TypeParameterDescriptor): TypeProjection defined in org.jetbrains.kotlin.types.TypeUtils[JavaMethodDescriptor]
 
 'simpleType' @ [480:31] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [481:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [481:33] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -1518,9 +1522,9 @@ Inferred types:
                         context.trace.report(UNRESOLVED_REFERENCE.on(expression.callableReference, expression.callableReference))
                     }
                     return null
-                }' @ [534:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (CallableDescriptor..CallableDescriptor?), elseBranch: (CallableDescriptor..CallableDescriptor?)): (CallableDescriptor..CallableDescriptor?)[SimpleFunctionDescriptorImpl]
+                }' @ [534:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: CallableDescriptor, elseBranch: CallableDescriptor): CallableDescriptor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CallableDescriptor
 
 'resolutionResults' @ [534:21] ==> value-parameter resolutionResults: OverloadResolutionResults<*>? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[ValueParameterDescriptorImpl]
 
@@ -1530,11 +1534,11 @@ Inferred types:
 
 'isNothing' @ [534:69] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<out (CallableDescriptor..CallableDescriptor?)>.isNothing: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'getResultingCall' @ [535:70] ==> @Nullable public open fun <D : (CallableDescriptor..CallableDescriptor?)> getResultingCall(@NotNull results: OverloadResolutionResults<out (CallableDescriptor..CallableDescriptor?)>, @NotNull contextDependency: ContextDependency): ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>? defined in org.jetbrains.kotlin.resolve.calls.results.OverloadResolutionResultsUtil[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolutionResults' @ [535:87] ==> value-parameter resolutionResults: OverloadResolutionResults<*>? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[ValueParameterDescriptorImpl]
 
@@ -1546,7 +1550,7 @@ Inferred types:
 
 'resultingDescriptor' @ [536:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'lhs' @ [539:25] ==> value-parameter lhs: DoubleColonLHS? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[ValueParameterDescriptorImpl]
 
@@ -1574,7 +1578,7 @@ Inferred types:
 
 'checkReferenceIsToAllowedMember' @ [545:9] ==> internal final fun checkReferenceIsToAllowedMember(descriptor: CallableDescriptor, trace: BindingTrace, expression: KtCallableReferenceExpression): Unit defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[SimpleFunctionDescriptorImpl]
 
-'descriptor' @ [545:41] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[LocalVariableDescriptor]
+'descriptor' @ [545:41] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[LocalVariableDescriptor]
 
 'context' @ [545:53] ==> value-parameter context: ExpressionTypingContext defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[ValueParameterDescriptorImpl]
 
@@ -1584,7 +1588,7 @@ Inferred types:
 
 'createKCallableTypeForReference' @ [547:20] ==> public final fun createKCallableTypeForReference(descriptor: CallableDescriptor, lhs: DoubleColonLHS?, reflectionTypes: ReflectionTypes, scopeOwnerDescriptor: DeclarationDescriptor): KotlinType? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.Companion[SimpleFunctionDescriptorImpl]
 
-'descriptor' @ [547:52] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[LocalVariableDescriptor]
+'descriptor' @ [547:52] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[LocalVariableDescriptor]
 
 'lhs' @ [547:64] ==> value-parameter lhs: DoubleColonLHS? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[ValueParameterDescriptorImpl]
 
@@ -1603,7 +1607,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Unit
 
-'descriptor' @ [549:15] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[LocalVariableDescriptor]
+'descriptor' @ [549:15] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.getCallableReferenceType[LocalVariableDescriptor]
 
 'bindFunctionReference' @ [550:38] ==> internal final fun bindFunctionReference(expression: KtCallableReferenceExpression, type: KotlinType, context: ResolutionContext<*>): Unit defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver[SimpleFunctionDescriptorImpl]
 
@@ -1725,8 +1729,6 @@ Inferred types:
 
 'ownerDescriptor' @ [583:31] ==> public abstract val ownerDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.LexicalScope[DeserializedPropertyDescriptor]
 
-'Annotations' @ [584:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [584:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'DECLARATION' @ [585:47] ==> enum entry DECLARATION defined in org.jetbrains.kotlin.descriptors.CallableMemberDescriptor.Kind[FakeCallableDescriptorForObject]
@@ -1765,8 +1767,6 @@ Inferred types:
 
 'type' @ [593:39] ==> public final val TypeProjection.type: KotlinType[MyPropertyDescriptor]
 
-'Modality' @ [594:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [594:26] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [595:30] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -1777,8 +1777,8 @@ Inferred types:
 
 'record' @ [598:23] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?), key: (PsiElement..PsiElement?), value: (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> SimpleFunctionDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'FUNCTION' @ [598:45] ==> public final val FUNCTION: (WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1793,8 +1793,6 @@ Inferred types:
 'scope' @ [603:25] ==> @NotNull public final val scope: LexicalScope defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaPropertyDescriptor]
 
 'ownerDescriptor' @ [603:31] ==> public abstract val ownerDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.LexicalScope[DeserializedPropertyDescriptor]
-
-'Annotations' @ [603:48] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [603:60] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -1812,8 +1810,8 @@ Inferred types:
 
 'record' @ [607:23] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?), key: (PsiElement..PsiElement?), value: (VariableDescriptor..VariableDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VARIABLE' @ [607:45] ==> public final val VARIABLE: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1944,9 +1942,9 @@ Inferred types:
                             .replaceExpectedType(TypeUtils.NO_EXPECTED_TYPE)
                             .replaceContextDependency(ContextDependency.DEPENDENT)
                 else
-                    outerContext.replaceTraceAndCache(temporaryTrace)' @ [662:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: ResolutionContext<out ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>?)>?)>>, elseBranch: ResolutionContext<out ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>?)>?)>>): ResolutionContext<out ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>?)>?)>>[SimpleFunctionDescriptorImpl]
+                    outerContext.replaceTraceAndCache(temporaryTrace)' @ [662:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (ResolutionContext<*>..ResolutionContext<*>?), elseBranch: (ResolutionContext<*>..ResolutionContext<*>?)): (ResolutionContext<*>..ResolutionContext<*>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> ResolutionContext<out ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>?)>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>?)>?)>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>?)>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<out (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)>?)>?)>?)>?)>>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>..org.jetbrains.kotlin.resolve.calls.context.ResolutionContext<*>?)
 
 'resolutionMode' @ [662:21] ==> value-parameter resolutionMode: ResolveArgumentsMode defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.tryResolveRHSWithReceiver[ValueParameterDescriptorImpl]
 
@@ -1954,21 +1952,21 @@ Inferred types:
 
 'outerContext' @ [663:21] ==> value-parameter outerContext: ResolutionContext<*> defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.tryResolveRHSWithReceiver[ValueParameterDescriptorImpl]
 
-'replaceTraceAndCache' @ [664:30] ==> @NotNull public open fun replaceTraceAndCache(@NotNull traceAndCache: TemporaryTraceAndCache): (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
+'replaceTraceAndCache' @ [664:30] ==> @NotNull public open fun replaceTraceAndCache(@NotNull traceAndCache: TemporaryTraceAndCache): (ResolutionContext<*>..ResolutionContext<*>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
 
 'temporaryTrace' @ [664:51] ==> val temporaryTrace: (TemporaryTraceAndCache..TemporaryTraceAndCache?) defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.tryResolveRHSWithReceiver[LocalVariableDescriptor]
 
-'replaceExpectedType' @ [665:30] ==> @NotNull public open fun replaceExpectedType(@Nullable newExpectedType: KotlinType?): (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
+'replaceExpectedType' @ [665:30] ==> @NotNull public open fun replaceExpectedType(@Nullable newExpectedType: KotlinType?): (ResolutionContext<*>..ResolutionContext<*>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
 
 'NO_EXPECTED_TYPE' @ [665:60] ==> @NotNull public final val NO_EXPECTED_TYPE: SimpleType defined in org.jetbrains.kotlin.types.TypeUtils[JavaPropertyDescriptor]
 
-'replaceContextDependency' @ [666:30] ==> @NotNull public open fun replaceContextDependency(@NotNull newContextDependency: ContextDependency): (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
+'replaceContextDependency' @ [666:30] ==> @NotNull public open fun replaceContextDependency(@NotNull newContextDependency: ContextDependency): (ResolutionContext<*>..ResolutionContext<*>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
 
 'DEPENDENT' @ [666:73] ==> enum entry DEPENDENT defined in org.jetbrains.kotlin.resolve.calls.context.ContextDependency[FakeCallableDescriptorForObject]
 
 'outerContext' @ [668:21] ==> value-parameter outerContext: ResolutionContext<*> defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.tryResolveRHSWithReceiver[ValueParameterDescriptorImpl]
 
-'replaceTraceAndCache' @ [668:34] ==> @NotNull public open fun replaceTraceAndCache(@NotNull traceAndCache: TemporaryTraceAndCache): (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
+'replaceTraceAndCache' @ [668:34] ==> @NotNull public open fun replaceTraceAndCache(@NotNull traceAndCache: TemporaryTraceAndCache): (ResolutionContext<*>..ResolutionContext<*>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
 
 'temporaryTrace' @ [668:55] ==> val temporaryTrace: (TemporaryTraceAndCache..TemporaryTraceAndCache?) defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.tryResolveRHSWithReceiver[LocalVariableDescriptor]
 
@@ -1980,7 +1978,7 @@ Inferred types:
 
 'create' @ [671:55] ==> @NotNull public open fun create(@NotNull context: raw (ResolutionContext<(ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>), @NotNull call: Call, @NotNull checkArguments: CheckArgumentTypesMode): BasicCallResolutionContext defined in org.jetbrains.kotlin.resolve.calls.context.BasicCallResolutionContext[JavaMethodDescriptor]
 
-'newContext' @ [671:62] ==> val newContext: ResolutionContext<out ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>..ResolutionContext<out (ResolutionContext<*>..ResolutionContext<*>?)>?)>?)>?)>?)>> defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.tryResolveRHSWithReceiver[LocalVariableDescriptor]
+'newContext' @ [671:62] ==> val newContext: (ResolutionContext<*>..ResolutionContext<*>?) defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.tryResolveRHSWithReceiver[LocalVariableDescriptor]
 
 'call' @ [671:74] ==> val call: Call defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.tryResolveRHSWithReceiver[LocalVariableDescriptor]
 
@@ -2142,8 +2140,8 @@ Inferred types:
 
 'get' @ [710:45] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?), key: (KtExpression..KtExpression?)): Qualifier? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Qualifier
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier..org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier?)
 
 'QUALIFIER' @ [710:64] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2357,8 +2355,6 @@ Inferred types:
 
 'getKFunctionType' @ [780:44] ==> public final fun getKFunctionType(annotations: Annotations, receiverType: KotlinType?, parameterTypes: List<KotlinType>, parameterNames: List<Name>?, returnType: KotlinType, builtIns: KotlinBuiltIns): SimpleType defined in org.jetbrains.kotlin.builtins.ReflectionTypes[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [780:61] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [780:73] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'receiverType' @ [780:80] ==> val receiverType: KotlinType? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.Companion.createKCallableTypeForReference[LocalVariableDescriptor]
@@ -2397,6 +2393,8 @@ Inferred types:
     <T> -> KotlinType
     <R> -> TransientReceiver
 
+'TransientReceiver' @ [786:86] ==> public constructor TransientReceiver(@NotNull p0: KotlinType) defined in org.jetbrains.kotlin.resolve.scopes.receivers.TransientReceiver[JavaClassConstructorDescriptor]
+
 'setter' @ [786:106] ==> val setter: PropertySetterDescriptor? defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.Companion.createKCallableTypeForReference.<anonymous>[LocalVariableDescriptor]
 
 'scopeOwnerDescriptor' @ [786:114] ==> value-parameter scopeOwnerDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.Companion.createKCallableTypeForReference[ValueParameterDescriptorImpl]
@@ -2404,8 +2402,6 @@ Inferred types:
 'reflectionTypes' @ [788:21] ==> value-parameter reflectionTypes: ReflectionTypes defined in org.jetbrains.kotlin.types.expressions.DoubleColonExpressionResolver.Companion.createKCallableTypeForReference[ValueParameterDescriptorImpl]
 
 'getKPropertyType' @ [788:37] ==> public final fun getKPropertyType(annotations: Annotations, receiverTypes: List<KotlinType>, returnType: KotlinType, mutable: Boolean): SimpleType defined in org.jetbrains.kotlin.builtins.ReflectionTypes[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [788:54] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [788:66] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

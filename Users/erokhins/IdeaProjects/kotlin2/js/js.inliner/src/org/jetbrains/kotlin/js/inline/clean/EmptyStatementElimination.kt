@@ -14,7 +14,7 @@
 
 'replaceMe' @ [33:29] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsStatement..JsStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsStatement
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'x' @ [33:39] ==> value-parameter x: JsLabel defined in org.jetbrains.kotlin.js.inline.clean.EmptyStatementElimination.apply.<no name provided>.endVisit[ValueParameterDescriptorImpl]
 
@@ -78,7 +78,7 @@ Inferred types:
 
 'replaceMe' @ [49:29] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsStatement..JsStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsStatement
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'asSyntheticStatement' @ [49:50] ==> public open fun asSyntheticStatement(@NotNull expression: JsExpression): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
@@ -138,9 +138,9 @@ Inferred types:
 
 'ctx' @ [70:21] ==> value-parameter ctx: JsContext<JsNode> defined in org.jetbrains.kotlin.js.inline.clean.EmptyStatementElimination.apply.<no name provided>.endVisit[ValueParameterDescriptorImpl]
 
-'replaceMe' @ [70:25] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: ({SourceInfoAwareJsNode & JsStatement}..{SourceInfoAwareJsNode & JsStatement}?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
+'replaceMe' @ [70:25] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsNode..JsNode?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> {SourceInfoAwareJsNode & JsStatement}
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'finallyBlock' @ [70:35] ==> val finallyBlock: (JsBlock..JsBlock?) defined in org.jetbrains.kotlin.js.inline.clean.EmptyStatementElimination.apply.<no name provided>.endVisit[LocalVariableDescriptor]
 
@@ -200,7 +200,7 @@ Inferred types:
 
 'replaceMe' @ [81:25] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsBlock..JsBlock?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsBlock
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsBlock..org.jetbrains.kotlin.js.backend.ast.JsBlock?)
 
 'JsBlock' @ [81:35] ==> public constructor JsBlock(@NotNull p0: (MutableList<(JsStatement..JsStatement?)>..List<(JsStatement..JsStatement?)>)) defined in org.jetbrains.kotlin.js.backend.ast.JsBlock[JavaClassConstructorDescriptor]
 
@@ -283,7 +283,7 @@ Inferred types:
 
 'accept' @ [99:11] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.inline.clean.EmptyStatementElimination.apply.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'root' @ [99:18] ==> private final val root: JsStatement defined in org.jetbrains.kotlin.js.inline.clean.EmptyStatementElimination[PropertyDescriptorImpl]
 

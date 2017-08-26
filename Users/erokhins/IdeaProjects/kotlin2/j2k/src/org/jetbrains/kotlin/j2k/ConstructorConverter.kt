@@ -197,7 +197,7 @@ Inferred types:
 
 'converter' @ [86:26] ==> private final val converter: Converter defined in org.jetbrains.kotlin.j2k.ConstructorConverter[PropertyDescriptorImpl]
 
-'convertParameterList' @ [86:36] ==> public fun Converter.convertParameterList(method: PsiMethod, overloadReducer: OverloadReducer?, convertParameter: (parameter: PsiParameter, default: DeferredElement<Expression>?) -> FunctionParameter = ..., correctCodeConverter: CodeConverter.() -> CodeConverter = ...): ParameterList defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'convertParameterList' @ [86:36] ==> public fun Converter.convertParameterList(method: PsiMethod, overloadReducer: OverloadReducer?, convertParameter: (parameter: PsiParameter, default: DeferredElement<Expression>?) -> FunctionParameter = ..., correctCodeConverter: CodeConverter.() -> CodeConverter = ...): ParameterList defined in org.jetbrains.kotlin.j2k in file OverloadReducer.kt[SimpleFunctionDescriptorImpl]
 
 'constructor' @ [86:57] ==> value-parameter constructor: PsiMethod defined in org.jetbrains.kotlin.j2k.ConstructorConverter.convertConstructor[ValueParameterDescriptorImpl]
 
@@ -265,6 +265,8 @@ Inferred types:
 'deferredElement' @ [105:76] ==> public final fun <TResult : Element> deferredElement(generator: (CodeConverter) -> Block): DeferredElement<Block> defined in org.jetbrains.kotlin.j2k.Converter[SimpleFunctionDescriptorImpl]
 Inferred types:
     <TResult : Element> -> Block
+
+'convertBody' @ [105:94] ==> local final fun convertBody(codeConverter: CodeConverter): Block defined in org.jetbrains.kotlin.j2k.ConstructorConverter.convertConstructor[SimpleFunctionDescriptorImpl]
 
 'thisOrSuperDeferred' @ [105:108] ==> val thisOrSuperDeferred: DeferredElement<Expression>? defined in org.jetbrains.kotlin.j2k.ConstructorConverter.convertConstructor[LocalVariableDescriptor]
 
@@ -615,7 +617,7 @@ Inferred types:
 
 'converter' @ [189:29] ==> private final val converter: Converter defined in org.jetbrains.kotlin.j2k.ConstructorConverter[PropertyDescriptorImpl]
 
-'convertParameterList' @ [189:39] ==> public fun Converter.convertParameterList(method: PsiMethod, overloadReducer: OverloadReducer?, convertParameter: (parameter: PsiParameter, default: DeferredElement<Expression>?) -> FunctionParameter = ..., correctCodeConverter: CodeConverter.() -> CodeConverter = ...): ParameterList defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'convertParameterList' @ [189:39] ==> public fun Converter.convertParameterList(method: PsiMethod, overloadReducer: OverloadReducer?, convertParameter: (parameter: PsiParameter, default: DeferredElement<Expression>?) -> FunctionParameter = ..., correctCodeConverter: CodeConverter.() -> CodeConverter = ...): ParameterList defined in org.jetbrains.kotlin.j2k in file OverloadReducer.kt[SimpleFunctionDescriptorImpl]
 
 'primaryConstructor' @ [190:17] ==> private final val primaryConstructor: PsiMethod? defined in org.jetbrains.kotlin.j2k.ConstructorConverter[PropertyDescriptorImpl]
 
@@ -763,15 +765,11 @@ Inferred types:
 
 'parameter' @ [216:47] ==> value-parameter parameter: PsiParameter defined in org.jetbrains.kotlin.j2k.ConstructorConverter.convertPrimaryConstructor.<anonymous>[ValueParameterDescriptorImpl]
 
-'CommentsAndSpacesInheritance' @ [216:58] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'LINE_BREAKS' @ [216:87] ==> public final val LINE_BREAKS: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
 'PrototypeInfo' @ [217:33] ==> public constructor PrototypeInfo(element: PsiElement, commentsAndSpacesInheritance: CommentsAndSpacesInheritance) defined in org.jetbrains.kotlin.j2k.ast.PrototypeInfo[ClassConstructorDescriptorImpl]
 
 'field' @ [217:47] ==> val field: PsiField defined in org.jetbrains.kotlin.j2k.ConstructorConverter.convertPrimaryConstructor.<anonymous>[LocalVariableDescriptor]
-
-'CommentsAndSpacesInheritance' @ [217:54] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [217:83] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -807,7 +805,7 @@ Inferred types:
 
 'referenceSearcher' @ [229:30] ==> public final val referenceSearcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.Converter[PropertyDescriptorImpl]
 
-'findVariableUsages' @ [229:48] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findVariableUsages' @ [229:48] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'parameter' @ [229:67] ==> value-parameter parameter: PsiParameter defined in org.jetbrains.kotlin.j2k.ConstructorConverter.findBackingFieldForConstructorParameter[ValueParameterDescriptorImpl]
 
@@ -883,7 +881,7 @@ Inferred types:
 
 'referenceSearcher' @ [248:27] ==> public final val referenceSearcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.Converter[PropertyDescriptorImpl]
 
-'findVariableUsages' @ [248:45] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findVariableUsages' @ [248:45] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'field' @ [248:64] ==> val field: PsiField defined in org.jetbrains.kotlin.j2k.ConstructorConverter.findBackingFieldForConstructorParameter[LocalVariableDescriptor]
 
@@ -973,7 +971,7 @@ Inferred types:
 
 'target' @ [270:108] ==> val target: PsiElement? defined in org.jetbrains.kotlin.j2k.ConstructorConverter.ReplacingExpressionConverter.convertExpression[LocalVariableDescriptor]
 
-'isNullable' @ [270:116] ==> public fun Nullability.isNullable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'isNullable' @ [270:116] ==> public fun Nullability.isNullable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast in file Types.kt[SimpleFunctionDescriptorImpl]
 
 'codeConverter' @ [270:127] ==> value-parameter codeConverter: CodeConverter defined in org.jetbrains.kotlin.j2k.ConstructorConverter.ReplacingExpressionConverter.convertExpression[ValueParameterDescriptorImpl]
 

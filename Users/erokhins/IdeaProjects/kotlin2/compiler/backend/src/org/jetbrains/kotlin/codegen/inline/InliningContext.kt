@@ -6,8 +6,6 @@
 
 'nameGenerator' @ [31:37] ==> value-parameter nameGenerator: NameGenerator defined in org.jetbrains.kotlin.codegen.inline.RootInliningContext.<init>[ValueParameterDescriptorImpl]
 
-'TypeRemapper' @ [31:52] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.TypeRemapper[FakeCallableDescriptorForObject]
-
 'createRoot' @ [31:65] ==> @JvmStatic public final fun createRoot(formalTypeParameters: TypeParameterMappings?): TypeRemapper defined in org.jetbrains.kotlin.codegen.inline.TypeRemapper.Companion[SimpleFunctionDescriptorImpl]
 
 'typeParameterMappings' @ [31:76] ==> value-parameter typeParameterMappings: TypeParameterMappings defined in org.jetbrains.kotlin.codegen.inline.RootInliningContext.<init>[ValueParameterDescriptorImpl]
@@ -76,8 +74,6 @@ Inferred types:
 
 'generator' @ [80:41] ==> value-parameter generator: NameGenerator defined in org.jetbrains.kotlin.codegen.inline.InliningContext.subInlineWithClassRegeneration[ValueParameterDescriptorImpl]
 
-'TypeRemapper' @ [80:52] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.TypeRemapper[FakeCallableDescriptorForObject]
-
 'createFrom' @ [80:65] ==> @JvmStatic @JvmOverloads public final fun createFrom(parentRemapper: TypeRemapper, mappings: Map<String, String?>, isRootInlineLambda: Boolean = ...): TypeRemapper defined in org.jetbrains.kotlin.codegen.inline.TypeRemapper.Companion[SimpleFunctionDescriptorImpl]
 
 'typeRemapper' @ [80:76] ==> public final val typeRemapper: TypeRemapper defined in org.jetbrains.kotlin.codegen.inline.InliningContext[PropertyDescriptorImpl]
@@ -110,8 +106,6 @@ Inferred types:
 'state' @ [92:38] ==> public final val state: GenerationState defined in org.jetbrains.kotlin.codegen.inline.InliningContext[PropertyDescriptorImpl]
 
 'generator' @ [92:45] ==> value-parameter generator: NameGenerator defined in org.jetbrains.kotlin.codegen.inline.InliningContext.subInline[ValueParameterDescriptorImpl]
-
-'TypeRemapper' @ [93:17] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.TypeRemapper[FakeCallableDescriptorForObject]
 
 'createFrom' @ [93:30] ==> @JvmStatic @JvmOverloads public final fun createFrom(parentRemapper: TypeRemapper, mappings: Map<String, String?>, isRootInlineLambda: Boolean = ...): TypeRemapper defined in org.jetbrains.kotlin.codegen.inline.TypeRemapper.Companion[SimpleFunctionDescriptorImpl]
 

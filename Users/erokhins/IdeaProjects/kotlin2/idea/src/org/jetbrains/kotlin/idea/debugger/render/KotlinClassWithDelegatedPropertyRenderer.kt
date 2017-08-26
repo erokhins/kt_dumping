@@ -38,7 +38,7 @@ Inferred types:
 
 'info' @ [51:17] ==> public abstract fun info(@NonNls p0: (String..String?)): Unit defined in com.intellij.openapi.diagnostic.Logger[JavaMethodDescriptor]
 
-'notPreparedClassMessage' @ [51:22] ==> private fun notPreparedClassMessage(referenceType: ReferenceType): String defined in org.jetbrains.kotlin.idea.debugger.render[SimpleFunctionDescriptorImpl]
+'notPreparedClassMessage' @ [51:22] ==> private fun notPreparedClassMessage(referenceType: ReferenceType): String defined in org.jetbrains.kotlin.idea.debugger.render in file KotlinClassWithDelegatedPropertyRenderer.kt[SimpleFunctionDescriptorImpl]
 
 'jdiType' @ [51:46] ==> value-parameter jdiType: Type? defined in org.jetbrains.kotlin.idea.debugger.render.KotlinClassWithDelegatedPropertyRenderer.isApplicable[ValueParameterDescriptorImpl]
 
@@ -62,7 +62,7 @@ Inferred types:
 
 'error' @ [59:17] ==> public open fun error(@NonNls p0: (String..String?), @Nullable p1: Throwable?): Unit defined in com.intellij.openapi.diagnostic.Logger[JavaMethodDescriptor]
 
-'notPreparedClassMessage' @ [59:23] ==> private fun notPreparedClassMessage(referenceType: ReferenceType): String defined in org.jetbrains.kotlin.idea.debugger.render[SimpleFunctionDescriptorImpl]
+'notPreparedClassMessage' @ [59:23] ==> private fun notPreparedClassMessage(referenceType: ReferenceType): String defined in org.jetbrains.kotlin.idea.debugger.render in file KotlinClassWithDelegatedPropertyRenderer.kt[SimpleFunctionDescriptorImpl]
 
 'jdiType' @ [59:47] ==> value-parameter jdiType: Type? defined in org.jetbrains.kotlin.idea.debugger.render.KotlinClassWithDelegatedPropertyRenderer.isApplicable[ValueParameterDescriptorImpl]
 

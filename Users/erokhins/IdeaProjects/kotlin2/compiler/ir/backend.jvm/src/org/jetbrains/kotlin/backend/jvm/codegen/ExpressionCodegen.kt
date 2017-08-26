@@ -147,7 +147,7 @@ Inferred types:
 
 'statements' @ [132:21] ==> public abstract val statements: MutableList<IrStatement> defined in org.jetbrains.kotlin.ir.expressions.IrBlockBody[DeserializedPropertyDescriptor]
 
-'fold' @ [132:32] ==> public inline fun <T, R> Iterable<IrStatement>.fold(initial: (StackValue..StackValue?), operation: ((StackValue..StackValue?), IrStatement) -> (StackValue..StackValue?)): (StackValue..StackValue?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [132:32] ==> public inline fun <T, R> Iterable<IrStatement>.fold(initial: (StackValue..StackValue?), operation: (acc: (StackValue..StackValue?), IrStatement) -> (StackValue..StackValue?)): (StackValue..StackValue?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> IrStatement
     <R> -> (org.jetbrains.kotlin.codegen.StackValue..org.jetbrains.kotlin.codegen.StackValue?)
@@ -280,7 +280,7 @@ Inferred types:
 
 'statements' @ [164:33] ==> public abstract val statements: MutableList<IrStatement> defined in org.jetbrains.kotlin.ir.expressions.IrContainerExpression[DeserializedPropertyDescriptor]
 
-'fold' @ [164:44] ==> public inline fun <T, R> Iterable<IrStatement>.fold(initial: (StackValue..StackValue?), operation: ((StackValue..StackValue?), IrStatement) -> (StackValue..StackValue?)): (StackValue..StackValue?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [164:44] ==> public inline fun <T, R> Iterable<IrStatement>.fold(initial: (StackValue..StackValue?), operation: (acc: (StackValue..StackValue?), IrStatement) -> (StackValue..StackValue?)): (StackValue..StackValue?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> IrStatement
     <R> -> (org.jetbrains.kotlin.codegen.StackValue..org.jetbrains.kotlin.codegen.StackValue?)
@@ -2649,9 +2649,9 @@ Inferred types:
 
 'onStack' @ [746:21] ==> public final val IrExpression.onStack: StackValue defined in org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen[PropertyDescriptorImpl]
 
-'if (finallyBlockStackElement != null) ArrayList<Label>(finallyBlockStackElement.gaps) else emptyList<Label>()' @ [754:27] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<Label>, elseBranch: List<Label>): List<Label>[SimpleFunctionDescriptorImpl]
+'if (finallyBlockStackElement != null) ArrayList<Label>(finallyBlockStackElement.gaps) else emptyList<Label>()' @ [754:27] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<(Label..Label?)>, elseBranch: List<(Label..Label?)>): List<(Label..Label?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<Label>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<(org.jetbrains.org.objectweb.asm.Label..org.jetbrains.org.objectweb.asm.Label?)>
 
 'finallyBlockStackElement' @ [754:31] ==> value-parameter finallyBlockStackElement: TryInfo? defined in org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.getCurrentTryIntervals[ValueParameterDescriptorImpl]
 
@@ -2669,7 +2669,7 @@ Inferred types:
 
 'assert' @ [755:9] ==> @InlineOnly public inline fun assert(value: Boolean): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'gapsInBlock' @ [755:16] ==> val gapsInBlock: List<Label> defined in org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.getCurrentTryIntervals[LocalVariableDescriptor]
+'gapsInBlock' @ [755:16] ==> val gapsInBlock: List<(Label..Label?)> defined in org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.getCurrentTryIntervals[LocalVariableDescriptor]
 
 'size' @ [755:28] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
@@ -2677,7 +2677,7 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> Label
 
-'gapsInBlock' @ [756:45] ==> val gapsInBlock: List<Label> defined in org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.getCurrentTryIntervals[LocalVariableDescriptor]
+'gapsInBlock' @ [756:45] ==> val gapsInBlock: List<(Label..Label?)> defined in org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.getCurrentTryIntervals[LocalVariableDescriptor]
 
 'size' @ [756:57] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
@@ -2691,7 +2691,7 @@ Inferred types:
 
 'addAll' @ [758:22] ==> public open fun addAll(elements: Collection<Label>): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'gapsInBlock' @ [758:29] ==> val gapsInBlock: List<Label> defined in org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.getCurrentTryIntervals[LocalVariableDescriptor]
+'gapsInBlock' @ [758:29] ==> val gapsInBlock: List<(Label..Label?)> defined in org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.getCurrentTryIntervals[LocalVariableDescriptor]
 
 'blockRegions' @ [759:9] ==> val blockRegions: ArrayList<Label> defined in org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.getCurrentTryIntervals[LocalVariableDescriptor]
 
@@ -2972,8 +2972,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Any
 
 'receiverExpression' @ [858:13] ==> value-parameter receiverExpression: IrExpression defined in org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generateClassLiteralReference[ValueParameterDescriptorImpl]
-
-'JavaClassProperty' @ [859:13] ==> public object JavaClassProperty : IntrinsicPropertyGetter defined in org.jetbrains.kotlin.codegen.intrinsics[FakeCallableDescriptorForObject]
 
 'generateImpl' @ [859:31] ==> public final fun generateImpl(v: InstructionAdapter, receiver: StackValue): Type defined in org.jetbrains.kotlin.codegen.intrinsics.JavaClassProperty[DeserializedSimpleFunctionDescriptor]
 

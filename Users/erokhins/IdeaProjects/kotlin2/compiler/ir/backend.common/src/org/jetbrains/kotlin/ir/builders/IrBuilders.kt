@@ -84,13 +84,13 @@
 
 'descriptor' @ [45:69] ==> public abstract val descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.ir.symbols.IrFunctionSymbol[DeserializedPropertyDescriptor]
 
-'substitute' @ [45:80] ==> public fun FunctionDescriptor.substitute(typeArguments: Map<TypeParameterDescriptor, KotlinType>): FunctionDescriptor defined in org.jetbrains.kotlin.backend.common.descriptors[SimpleFunctionDescriptorImpl]
+'substitute' @ [45:80] ==> public fun FunctionDescriptor.substitute(typeArguments: Map<TypeParameterDescriptor, KotlinType>): FunctionDescriptor defined in org.jetbrains.kotlin.backend.common.descriptors in file DescriptorUtils.kt[SimpleFunctionDescriptorImpl]
 
 'typeArguments' @ [45:91] ==> value-parameter typeArguments: Map<TypeParameterDescriptor, KotlinType> defined in org.jetbrains.kotlin.ir.builders.irCall[ValueParameterDescriptorImpl]
 
 'typeArguments' @ [45:107] ==> value-parameter typeArguments: Map<TypeParameterDescriptor, KotlinType> defined in org.jetbrains.kotlin.ir.builders.irCall[ValueParameterDescriptorImpl]
 
-'irCall' @ [48:5] ==> public fun IrBuilderWithScope.irCall(symbol: IrFunctionSymbol, typeArguments: Map<TypeParameterDescriptor, KotlinType>): IrCallImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irCall' @ [48:5] ==> public fun IrBuilderWithScope.irCall(symbol: IrFunctionSymbol, typeArguments: Map<TypeParameterDescriptor, KotlinType>): IrCallImpl defined in org.jetbrains.kotlin.ir.builders in file IrBuilders.kt[SimpleFunctionDescriptorImpl]
 
 'symbol' @ [48:12] ==> value-parameter symbol: IrFunctionSymbol defined in org.jetbrains.kotlin.ir.builders.irCall[ValueParameterDescriptorImpl]
 

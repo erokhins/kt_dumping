@@ -60,19 +60,19 @@ Inferred types:
 
 'primaryConstructor' @ [58:64] ==> val primaryConstructor: KtPrimaryConstructor? defined in org.jetbrains.kotlin.idea.intentions.CreateKotlinSubClassIntention.applicabilityRange[LocalVariableDescriptor]
 
-'constructors' @ [59:17] ==> val constructors: List<KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>> defined in org.jetbrains.kotlin.idea.intentions.CreateKotlinSubClassIntention.applicabilityRange[LocalVariableDescriptor]
+'constructors' @ [59:17] ==> val constructors: List<KtConstructor<*>> defined in org.jetbrains.kotlin.idea.intentions.CreateKotlinSubClassIntention.applicabilityRange[LocalVariableDescriptor]
 
-'none' @ [59:30] ==> public inline fun <T> Iterable<KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>>.none(predicate: (KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'none' @ [59:30] ==> public inline fun <T> Iterable<KtConstructor<*>>.none(predicate: (KtConstructor<*>) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>
+    <T> -> KtConstructor<*>
 
 '!' @ [60:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [60:18] ==> value-parameter it: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>> defined in org.jetbrains.kotlin.idea.intentions.CreateKotlinSubClassIntention.applicabilityRange.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [60:18] ==> value-parameter it: KtConstructor<*> defined in org.jetbrains.kotlin.idea.intentions.CreateKotlinSubClassIntention.applicabilityRange.<anonymous>[ValueParameterDescriptorImpl]
 
 'isPrivate' @ [60:21] ==> public fun KtModifierListOwner.isPrivate(): Boolean defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [61:17] ==> value-parameter it: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>> defined in org.jetbrains.kotlin.idea.intentions.CreateKotlinSubClassIntention.applicabilityRange.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [61:17] ==> value-parameter it: KtConstructor<*> defined in org.jetbrains.kotlin.idea.intentions.CreateKotlinSubClassIntention.applicabilityRange.<anonymous>[ValueParameterDescriptorImpl]
 
 'getValueParameters' @ [61:20] ==> public open fun getValueParameters(): (MutableList<(KtParameter..KtParameter?)>..List<(KtParameter..KtParameter?)>) defined in org.jetbrains.kotlin.psi.KtConstructor[DeserializedSimpleFunctionDescriptor]
 

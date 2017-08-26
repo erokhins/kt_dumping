@@ -268,7 +268,7 @@ Inferred types:
 
 'resultingDescriptor' @ [140:84] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'original' @ [140:104] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
@@ -337,7 +337,7 @@ Inferred types:
 
 'resultingDescriptor' @ [156:95] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'original' @ [156:115] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 

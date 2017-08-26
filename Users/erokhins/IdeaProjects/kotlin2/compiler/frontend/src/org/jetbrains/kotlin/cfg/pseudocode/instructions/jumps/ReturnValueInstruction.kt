@@ -8,7 +8,7 @@
 
 'singletonList' @ [36:69] ==> public open fun <T : (Any..Any?)> singletonList(p0: (PseudoValue..PseudoValue?)): (MutableList<(PseudoValue..PseudoValue?)>..List<(PseudoValue..PseudoValue?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PseudoValue
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.pseudocode.PseudoValue..org.jetbrains.kotlin.cfg.pseudocode.PseudoValue?)
 
 'returnedValue' @ [36:83] ==> public final val returnedValue: PseudoValue defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.jumps.ReturnValueInstruction[PropertyDescriptorImpl]
 

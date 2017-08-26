@@ -36,11 +36,7 @@
 
 'getContributedDescriptors' @ [43:48] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [43:74] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CLASSIFIERS' @ [43:95] ==> @field:JvmField public final val CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'MemberScope' @ [43:108] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'ALL_NAME_FILTER' @ [43:120] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 
@@ -92,8 +88,6 @@ Inferred types:
 
 'packageName' @ [55:66] ==> value-parameter packageName: FqName defined in org.jetbrains.kotlin.js.translate.test.JSTestGenerator.generateTestCalls[ValueParameterDescriptorImpl]
 
-'MemberScope' @ [55:79] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
-
 'ALL_NAME_FILTER' @ [55:91] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 
 'generateTestCalls' @ [56:13] ==> private final fun generateTestCalls(moduleDescriptor: ModuleDescriptor, packageName: FqName): Unit defined in org.jetbrains.kotlin.js.translate.test.JSTestGenerator[SimpleFunctionDescriptorImpl]
@@ -124,11 +118,7 @@ Inferred types:
 
 'getContributedDescriptors' @ [65:50] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [65:76] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS' @ [65:97] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'MemberScope' @ [65:108] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'ALL_NAME_FILTER' @ [65:120] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 
@@ -268,15 +258,15 @@ Inferred types:
 
 'functionToTest' @ [92:16] ==> val functionToTest: JsFunction defined in org.jetbrains.kotlin.js.translate.test.JSTestGenerator.generateTestFunction[LocalVariableDescriptor]
 
-'lazy' @ [95:43] ==> public fun <T> lazy(initializer: () -> JsExpression): Lazy<JsExpression> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [95:43] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JsExpression
+    <T> -> T
 
 'findFunction' @ [95:50] ==> private final fun findFunction(name: String): JsExpression defined in org.jetbrains.kotlin.js.translate.test.JSTestGenerator[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [96:42] ==> public fun <T> lazy(initializer: () -> JsExpression): Lazy<JsExpression> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [96:42] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JsExpression
+    <T> -> T
 
 'findFunction' @ [96:49] ==> private final fun findFunction(name: String): JsExpression defined in org.jetbrains.kotlin.js.translate.test.JSTestGenerator[SimpleFunctionDescriptorImpl]
 

@@ -59,7 +59,7 @@ Inferred types:
 
 'resultingDescriptor' @ [84:78] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [85:29] ==> var descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.isMovable.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
@@ -154,11 +154,44 @@ Inferred types:
 
 'resultingDescriptor' @ [119:34] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'propertyDescriptor' @ [119:57] ==> value-parameter propertyDescriptor: PropertyDescriptor defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.getCommonInitializer[ValueParameterDescriptorImpl]
 
+'if (initializerCandidate == null) {
+                    if (currentInitializer == null) {
+                        if (!statement.isMovable()) return null
+
+                        initializerCandidate = statement
+                        elementsToRemove.add(statement)
+                    }
+                    else {
+                        if (!KotlinPsiUnifier.DEFAULT.unify(statement, currentInitializer).matched) return null
+
+                        initializerCandidate = currentInitializer
+                        elementsToRemove.add(statement)
+                    }
+                }
+                else if (!KotlinPsiUnifier.DEFAULT.unify(statement, initializerCandidate).matched) return null' @ [121:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Any, elseBranch: Any): Any[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Any
+
 'initializerCandidate' @ [121:21] ==> var initializerCandidate: KtExpression? defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.getCommonInitializer[LocalVariableDescriptor]
+
+'if (currentInitializer == null) {
+                        if (!statement.isMovable()) return null
+
+                        initializerCandidate = statement
+                        elementsToRemove.add(statement)
+                    }
+                    else {
+                        if (!KotlinPsiUnifier.DEFAULT.unify(statement, currentInitializer).matched) return null
+
+                        initializerCandidate = currentInitializer
+                        elementsToRemove.add(statement)
+                    }' @ [122:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Boolean, elseBranch: Boolean): Boolean[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Boolean
 
 'currentInitializer' @ [122:25] ==> value-parameter currentInitializer: KtExpression? defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.getCommonInitializer[ValueParameterDescriptorImpl]
 
@@ -228,7 +261,7 @@ Inferred types:
 
 'sourceConstructors' @ [154:33] ==> val sourceConstructors: MutableList<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.getInitializerInfo[LocalVariableDescriptor]
 
-'fold' @ [154:52] ==> public inline fun <T, R> Iterable<KtElement>.fold(initial: KtExpression?, operation: (KtExpression?, KtElement) -> KtExpression?): KtExpression? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [154:52] ==> public inline fun <T, R> Iterable<KtElement>.fold(initial: KtExpression?, operation: (acc: KtExpression?, KtElement) -> KtExpression?): KtExpression? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtElement
     <R> -> KtExpression?
@@ -291,7 +324,7 @@ Inferred types:
 
 'resultingDescriptor' @ [170:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'source' @ [170:102] ==> public final val DeclarationDescriptorWithSource.source: SourceElement[MyPropertyDescriptor]
 
@@ -326,9 +359,9 @@ Inferred types:
 
 'targetConstructor' @ [178:13] ==> value-parameter targetConstructor: KtElement defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.getInitializerInfo[ValueParameterDescriptorImpl]
 
-'?:' @ [178:34] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiNamedElement?, right: PsiNamedElement): PsiNamedElement[SimpleFunctionDescriptorImpl]
+'?:' @ [178:34] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Any?, right: Any?): Any?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiNamedElement
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Any?
 
 'data' @ [178:35] ==> private final val data: KotlinPullUpData defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper[PropertyDescriptorImpl]
 
@@ -510,7 +543,7 @@ Inferred types:
 
 'constructorRef' @ [212:57] ==> val constructorRef: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.targetToSourceConstructors.<anonymous>.<no name provided>.visitSuperTypeCallEntry[LocalVariableDescriptor]
 
-'callingConstructorElement' @ [212:73] ==> val callingConstructorElement: {KtTypeParameterListOwner & KtDeclarationStub<out (com.intellij.psi.stubs.StubElement<out ({KtTypeParameterListOwner & KtDeclarationStub<out (com.intellij.psi.stubs.StubElement<out ({KtTypeParameterListOwner & KtDeclarationStub<out Any?>}..{KtTypeParameterListOwner? & KtDeclarationStub<out Any?>?})>..com.intellij.psi.stubs.StubElement<out ({KtTypeParameterListOwner & KtDeclarationStub<out Any?>}..{KtTypeParameterListOwner? & KtDeclarationStub<out Any?>?})>?)>}..{KtTypeParameterListOwner? & KtDeclarationStub<out (com.intellij.psi.stubs.StubElement<out ({KtTypeParameterListOwner & KtDeclarationStub<out Any?>}..{KtTypeParameterListOwner? & KtDeclarationStub<out Any?>?})>..com.intellij.psi.stubs.StubElement<out ({KtTypeParameterListOwner & KtDeclarationStub<out Any?>}..{KtTypeParameterListOwner? & KtDeclarationStub<out Any?>?})>?)>?})>..com.intellij.psi.stubs.StubElement<out ({KtTypeParameterListOwner & KtDeclarationStub<out (com.intellij.psi.stubs.StubElement<out ({KtTypeParameterListOwner & KtDeclarationStub<out Any?>}..{KtTypeParameterListOwner? & KtDeclarationStub<out Any?>?})>..com.intellij.psi.stubs.StubElement<out ({KtTypeParameterListOwner & KtDeclarationStub<out Any?>}..{KtTypeParameterListOwner? & KtDeclarationStub<out Any?>?})>?)>}..{KtTypeParameterListOwner? & KtDeclarationStub<out (com.intellij.psi.stubs.StubElement<out ({KtTypeParameterListOwner & KtDeclarationStub<out Any?>}..{KtTypeParameterListOwner? & KtDeclarationStub<out Any?>?})>..com.intellij.psi.stubs.StubElement<out ({KtTypeParameterListOwner & KtDeclarationStub<out Any?>}..{KtTypeParameterListOwner? & KtDeclarationStub<out Any?>?})>?)>?})>?)>} defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.targetToSourceConstructors.<anonymous>.<no name provided>.visitSuperTypeCallEntry[LocalVariableDescriptor]
+'callingConstructorElement' @ [212:73] ==> val callingConstructorElement: KtDeclaration defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.targetToSourceConstructors.<anonymous>.<no name provided>.visitSuperTypeCallEntry[LocalVariableDescriptor]
 
 'constructor' @ [216:50] ==> value-parameter constructor: KtSecondaryConstructor defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.targetToSourceConstructors.<anonymous>.<no name provided>.visitSecondaryConstructor[ValueParameterDescriptorImpl]
 
@@ -567,7 +600,7 @@ Inferred types:
 
 'transitiveClosure' @ [232:55] ==> public final fun <T : (Any..Any?)> transitiveClosure(p0: (RefactoringUtil.Graph<(KtProperty..KtProperty?)>..RefactoringUtil.Graph<(KtProperty..KtProperty?)>?), p1: (((KtProperty..KtProperty?)) -> Boolean..(((KtProperty..KtProperty?)) -> Boolean)?)): (MutableSet<(KtProperty..KtProperty?)>..Set<(KtProperty..KtProperty?)>?) defined in com.intellij.refactoring.util.RefactoringUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtProperty
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'propertyToInitializerInfo' @ [234:54] ==> val propertyToInitializerInfo: LinkedHashMap<KtProperty, KotlinPullUpHelper.InitializerInfo> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.targetConstructorToPropertyInitializerInfoMap.<anonymous>[LocalVariableDescriptor]
 
@@ -696,7 +729,7 @@ Inferred types:
 
 'ignoreUsages' @ [278:13] ==> value-parameter ignoreUsages: Boolean = ... defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.liftToProtected[ValueParameterDescriptorImpl]
 
-'willBeUsedInSourceClass' @ [278:29] ==> internal fun willBeUsedInSourceClass(member: PsiElement, sourceClass: KtClassOrObject, membersToMove: Collection<KtNamedDeclaration>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'willBeUsedInSourceClass' @ [278:29] ==> internal fun willBeUsedInSourceClass(member: PsiElement, sourceClass: KtClassOrObject, membersToMove: Collection<KtNamedDeclaration>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [278:53] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.liftToProtected[ValueParameterDescriptorImpl]
 
@@ -1446,7 +1479,7 @@ Inferred types:
 
 'substitutor' @ [438:37] ==> value-parameter substitutor: PsiSubstitutor defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.move[ValueParameterDescriptorImpl]
 
-'markElements' @ [442:30] ==> public fun markElements(declaration: KtNamedDeclaration, context: BindingContext, sourceClassDescriptor: ClassDescriptor, targetClassDescriptor: ClassDescriptor?): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'markElements' @ [442:30] ==> public fun markElements(declaration: KtNamedDeclaration, context: BindingContext, sourceClassDescriptor: ClassDescriptor, targetClassDescriptor: ClassDescriptor?): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file markingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [442:43] ==> val member: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.move[LocalVariableDescriptor]
 
@@ -1535,7 +1568,7 @@ Inferred types:
 
 'member' @ [467:41] ==> value-parameter member: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.move.moveCallableMember[ValueParameterDescriptorImpl]
 
-'mustBeAbstractInInterface' @ [467:48] ==> public fun KtProperty.mustBeAbstractInInterface(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'mustBeAbstractInInterface' @ [467:48] ==> public fun KtProperty.mustBeAbstractInInterface(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpUtils.kt[SimpleFunctionDescriptorImpl]
 
 'if (member.isCompanionMemberOf(data.sourceClass)) data.targetClass.getOrCreateCompanionObject() else data.targetClass' @ [471:32] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtClassOrObject, elseBranch: KtClassOrObject): KtClassOrObject[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1766,7 +1799,7 @@ Inferred types:
 
 'resultingDescriptor' @ [500:73] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueParameters' @ [500:93] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -1780,7 +1813,7 @@ Inferred types:
 
 'valueArguments' @ [501:62] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'prevParameterDescriptor' @ [501:77] ==> val prevParameterDescriptor: ValueParameterDescriptor? defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.move.moveCallableMember[LocalVariableDescriptor]
 
@@ -1932,7 +1965,7 @@ Inferred types:
 
 'movedMember' @ [537:28] ==> val movedMember: KtTypeParameterListOwner defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.move[LocalVariableDescriptor]
 
-'clearMarking' @ [540:13] ==> public fun clearMarking(markedElements: List<KtElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'clearMarking' @ [540:13] ==> public fun clearMarking(markedElements: List<KtElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file markingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'markedElements' @ [540:26] ==> val markedElements: List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHelper.move[LocalVariableDescriptor]
 

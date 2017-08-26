@@ -587,8 +587,6 @@ Inferred types:
 
 'name' @ [224:100] ==> public final var XmlTag.name: String[MyPropertyDescriptor]
 
-'MarkdownSpan' @ [225:30] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
-
 'wrap' @ [225:43] ==> public final fun wrap(text: String): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[SimpleFunctionDescriptorImpl]
 
 'if (atLineStart) MarkdownSpan.prefix("\n * ") else MarkdownSpan.prefix("\n *\n *")' @ [227:20] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan, elseBranch: IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[SimpleFunctionDescriptorImpl]
@@ -597,19 +595,11 @@ Inferred types:
 
 'atLineStart' @ [227:24] ==> value-parameter atLineStart: Boolean defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.getMarkdownForTag[ValueParameterDescriptorImpl]
 
-'MarkdownSpan' @ [227:37] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
-
 'prefix' @ [227:50] ==> public final fun prefix(text: String): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[SimpleFunctionDescriptorImpl]
-
-'MarkdownSpan' @ [227:71] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
 
 'prefix' @ [227:84] ==> public final fun prefix(text: String): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[SimpleFunctionDescriptorImpl]
 
-'MarkdownSpan' @ [229:26] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
-
 'wrap' @ [229:39] ==> public final fun wrap(text: String): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[SimpleFunctionDescriptorImpl]
-
-'MarkdownSpan' @ [231:27] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
 
 'wrap' @ [231:40] ==> public final fun wrap(text: String): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[SimpleFunctionDescriptorImpl]
 
@@ -637,8 +627,6 @@ Inferred types:
 'endsWith' @ [235:60] ==> public fun CharSequence.endsWith(char: Char, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'MarkdownSpan' @ [236:21] ==> public constructor MarkdownSpan(prefix: String, suffix: String) defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[ClassConstructorDescriptorImpl]
-
-'MarkdownSpan' @ [238:21] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
 
 'wrap' @ [238:34] ==> public final fun wrap(text: String): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[SimpleFunctionDescriptorImpl]
 
@@ -703,8 +691,6 @@ Inferred types:
 
 'getAttributeValue' @ [248:48] ==> @Nullable public abstract fun getAttributeValue(@NonNls p0: (String..String?)): String? defined in com.intellij.psi.xml.XmlTag[JavaMethodDescriptor]
 
-'MarkdownSpan' @ [251:21] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
-
 'preserveTag' @ [251:34] ==> public final fun preserveTag(tag: XmlTag): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[SimpleFunctionDescriptorImpl]
 
 'tag' @ [251:46] ==> value-parameter tag: XmlTag defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.getMarkdownForTag[ValueParameterDescriptorImpl]
@@ -713,15 +699,11 @@ Inferred types:
 
 'Unordered' @ [256:44] ==> enum entry Unordered defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.ListType[FakeCallableDescriptorForObject]
 
-'MarkdownSpan' @ [256:55] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
-
 'Empty' @ [256:68] ==> public final val Empty: IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[PropertyDescriptorImpl]
 
 'currentListType' @ [260:17] ==> private final var currentListType: IdeaDocCommentConverter.HtmlToMarkdownConverter.ListType defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter[PropertyDescriptorImpl]
 
 'Ordered' @ [260:44] ==> enum entry Ordered defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.ListType[FakeCallableDescriptorForObject]
-
-'MarkdownSpan' @ [260:53] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
 
 'Empty' @ [260:66] ==> public final val Empty: IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[PropertyDescriptorImpl]
 
@@ -733,15 +715,9 @@ Inferred types:
 
 'Unordered' @ [263:53] ==> enum entry Unordered defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.ListType[FakeCallableDescriptorForObject]
 
-'MarkdownSpan' @ [263:64] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
-
 'prefix' @ [263:77] ==> public final fun prefix(text: String): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[SimpleFunctionDescriptorImpl]
 
-'MarkdownSpan' @ [263:96] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
-
 'prefix' @ [263:109] ==> public final fun prefix(text: String): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[SimpleFunctionDescriptorImpl]
-
-'MarkdownSpan' @ [265:21] ==> public companion object defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan[FakeCallableDescriptorForObject]
 
 'preserveTag' @ [265:34] ==> public final fun preserveTag(tag: XmlTag): IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan defined in org.jetbrains.kotlin.idea.j2k.IdeaDocCommentConverter.HtmlToMarkdownConverter.MarkdownSpan.Companion[SimpleFunctionDescriptorImpl]
 

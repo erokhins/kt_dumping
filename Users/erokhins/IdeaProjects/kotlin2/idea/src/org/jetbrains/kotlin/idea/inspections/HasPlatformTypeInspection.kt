@@ -31,7 +31,9 @@ Inferred types:
 
 '+' @ [44:32] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'SpecifyTypeExplicitlyIntention' @ [48:20] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.SpecifyTypeExplicitlyIntention[FakeCallableDescriptorForObject]
+'?:' @ [48:20] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinType?, right: KotlinType): KotlinType[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinType
 
 'dangerousFlexibleTypeOrNull' @ [48:51] ==> public final fun dangerousFlexibleTypeOrNull(declaration: KtCallableDeclaration, publicAPIOnly: Boolean, reportPlatformArguments: Boolean): KotlinType? defined in org.jetbrains.kotlin.idea.intentions.SpecifyTypeExplicitlyIntention.Companion[SimpleFunctionDescriptorImpl]
 

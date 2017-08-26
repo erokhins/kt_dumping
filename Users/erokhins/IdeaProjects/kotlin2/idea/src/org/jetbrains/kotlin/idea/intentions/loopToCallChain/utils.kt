@@ -32,7 +32,7 @@ Inferred types:
 
 'lambdaExpression' @ [58:18] ==> val lambdaExpression: KtLambdaExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.generateLambda[LocalVariableDescriptor]
 
-'findParameterUsages' @ [58:35] ==> private fun KtLambdaExpression.findParameterUsages(lambdaParam: KtParameter, context: KtExpression): Collection<KtNameReferenceExpression> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'findParameterUsages' @ [58:35] ==> private fun KtLambdaExpression.findParameterUsages(lambdaParam: KtParameter, context: KtExpression): Collection<KtNameReferenceExpression> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'lambdaExpression' @ [58:55] ==> val lambdaExpression: KtLambdaExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.generateLambda[LocalVariableDescriptor]
 
@@ -84,7 +84,7 @@ Inferred types:
 
 'expression' @ [73:46] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.generateLambda[ValueParameterDescriptorImpl]
 
-'generateLambda' @ [76:28] ==> public fun generateLambda(expression: KtExpression, vararg inputVariables: KtCallableDeclaration): KtLambdaExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'generateLambda' @ [76:28] ==> public fun generateLambda(expression: KtExpression, vararg inputVariables: KtCallableDeclaration): KtLambdaExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [76:43] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.generateLambda[ValueParameterDescriptorImpl]
 
@@ -421,7 +421,7 @@ Inferred types:
 
 'resultingDescriptor' @ [200:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'when (descriptor) {
         is ConstructorDescriptor -> {
@@ -556,7 +556,7 @@ Inferred types:
 
 'putCopyableUserData' @ [250:24] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?), @Nullable p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'EXPRESSION' @ [250:44] ==> val EXPRESSION: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.tryChangeAndCheckErrors[LocalVariableDescriptor]
 
@@ -566,7 +566,7 @@ Inferred types:
 
 'putCopyableUserData' @ [251:21] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?), @Nullable p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'SCOPE_TO_EXCLUDE' @ [251:41] ==> val SCOPE_TO_EXCLUDE: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.tryChangeAndCheckErrors[LocalVariableDescriptor]
 
@@ -606,16 +606,16 @@ Inferred types:
 
 'putCopyableUserData' @ [257:21] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Collection<DiagnosticFactory<*>>..Collection<DiagnosticFactory<*>>?)>..Key<(Collection<DiagnosticFactory<*>>..Collection<DiagnosticFactory<*>>?)>?), @Nullable p1: Collection<DiagnosticFactory<*>>?): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Collection<DiagnosticFactory<*>>
+    <T : (Any..Any?)> -> (kotlin.collections.Collection<org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>>..kotlin.collections.Collection<org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>>?)
 
 'ERRORS_BEFORE' @ [257:41] ==> val ERRORS_BEFORE: Key<Collection<DiagnosticFactory<*>>> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.tryChangeAndCheckErrors[LocalVariableDescriptor]
 
 'errors' @ [257:56] ==> val errors: List<Diagnostic> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.tryChangeAndCheckErrors.<anonymous>[LocalVariableDescriptor]
 
-'map' @ [257:63] ==> public inline fun <T, R> Iterable<Diagnostic>.map(transform: (Diagnostic) -> DiagnosticFactory<out (Diagnostic..Diagnostic?)>): List<DiagnosticFactory<out (Diagnostic..Diagnostic?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [257:63] ==> public inline fun <T, R> Iterable<Diagnostic>.map(transform: (Diagnostic) -> DiagnosticFactory<*>): List<DiagnosticFactory<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Diagnostic
-    <R> -> DiagnosticFactory<out (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)>
+    <R> -> DiagnosticFactory<*>
 
 'it' @ [257:69] ==> value-parameter it: Diagnostic defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.tryChangeAndCheckErrors.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -641,7 +641,7 @@ Inferred types:
 
 'getCopyableUserData' @ [266:76] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?)): Unit? defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'EXPRESSION' @ [266:96] ==> val EXPRESSION: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.tryChangeAndCheckErrors[LocalVariableDescriptor]
 
@@ -657,7 +657,7 @@ Inferred types:
 
 'getCopyableUserData' @ [267:77] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?)): Unit? defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'SCOPE_TO_EXCLUDE' @ [267:97] ==> val SCOPE_TO_EXCLUDE: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.tryChangeAndCheckErrors[LocalVariableDescriptor]
 
@@ -665,7 +665,7 @@ Inferred types:
 
 'putCopyableUserData' @ [270:28] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?), @Nullable p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'EXPRESSION' @ [270:48] ==> val EXPRESSION: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.tryChangeAndCheckErrors[LocalVariableDescriptor]
 
@@ -673,7 +673,7 @@ Inferred types:
 
 'putCopyableUserData' @ [271:25] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?), @Nullable p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'SCOPE_TO_EXCLUDE' @ [271:45] ==> val SCOPE_TO_EXCLUDE: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.tryChangeAndCheckErrors[LocalVariableDescriptor]
 
@@ -723,7 +723,7 @@ Inferred types:
 
 'getCopyableUserData' @ [280:46] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(Collection<DiagnosticFactory<*>>..Collection<DiagnosticFactory<*>>?)>..Key<(Collection<DiagnosticFactory<*>>..Collection<DiagnosticFactory<*>>?)>?)): Collection<DiagnosticFactory<*>>? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Collection<DiagnosticFactory<*>>
+    <T : (Any..Any?)> -> (kotlin.collections.Collection<org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>>..kotlin.collections.Collection<org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>>?)
 
 'ERRORS_BEFORE' @ [280:66] ==> val ERRORS_BEFORE: Key<Collection<DiagnosticFactory<*>>> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.tryChangeAndCheckErrors[LocalVariableDescriptor]
 
@@ -773,7 +773,7 @@ Inferred types:
 
 'resultingDescriptor' @ [301:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'constructorDescriptor' @ [302:27] ==> val constructorDescriptor: ConstructorDescriptor defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.hasNoSideEffect[LocalVariableDescriptor]
 

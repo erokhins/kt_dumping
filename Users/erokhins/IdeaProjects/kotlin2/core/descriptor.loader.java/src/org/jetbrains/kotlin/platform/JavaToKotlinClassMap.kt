@@ -538,7 +538,7 @@ Inferred types:
 
 'asList' @ [175:23] ==> public open fun <T : (Any..Any?)> asList(vararg p0: (ClassDescriptor..ClassDescriptor?)): (MutableList<(ClassDescriptor..ClassDescriptor?)>..List<(ClassDescriptor..ClassDescriptor?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClassDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'kotlinAnalog' @ [175:30] ==> val kotlinAnalog: ClassDescriptor defined in org.jetbrains.kotlin.platform.JavaToKotlinClassMap.mapPlatformClass[LocalVariableDescriptor]
 
@@ -633,7 +633,7 @@ Inferred types:
 
 'isPrimitive' @ [209:23] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 '!' @ [209:38] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -641,7 +641,7 @@ Inferred types:
 
 'isArray' @ [209:45] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 '+' @ [209:56] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
@@ -651,7 +651,7 @@ Inferred types:
 
 'declaringClass' @ [210:27] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaringClass: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'if (outer == null)
             ClassId.topLevel(FqName(clazz.canonicalName))
@@ -670,7 +670,7 @@ Inferred types:
 
 'canonicalName' @ [212:43] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'classId' @ [214:13] ==> private final fun classId(clazz: Class<*>): ClassId defined in org.jetbrains.kotlin.platform.JavaToKotlinClassMap[SimpleFunctionDescriptorImpl]
 
@@ -684,7 +684,7 @@ Inferred types:
 
 'simpleName' @ [214:70] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'map' @ [222:35] ==> value-parameter map: Map<FqNameUnsafe, FqName> defined in org.jetbrains.kotlin.platform.JavaToKotlinClassMap.convertToOppositeMutability[ValueParameterDescriptorImpl]
 

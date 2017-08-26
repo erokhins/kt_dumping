@@ -20,11 +20,11 @@ Inferred types:
 
 'java' @ [33:63] ==> public val <T> KClass<out TestWithWorkingDir>.java: Class<out TestWithWorkingDir> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> TestWithWorkingDir
+    <T> -> Captured(out TestWithWorkingDir)
 
 'simpleName' @ [33:68] ==> public final val <T : (Any..Any?)> Class<out TestWithWorkingDir>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TestWithWorkingDir
+    <T : (Any..Any?)> -> Captured(out TestWithWorkingDir)
 
 'After' @ [36:5] ==> public constructor After() defined in org.junit.After[JavaClassConstructorDescriptor]
 

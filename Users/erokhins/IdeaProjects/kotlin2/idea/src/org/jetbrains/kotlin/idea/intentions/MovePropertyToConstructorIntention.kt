@@ -70,7 +70,7 @@ Inferred types:
 
 'getParentOfType' @ [72:39] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtClass..KtClass?)>): KtClass? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClass
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'element' @ [72:55] ==> value-parameter element: KtProperty defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToConstructorIntention.applyTo[ValueParameterDescriptorImpl]
 
@@ -195,6 +195,8 @@ Inferred types:
 
 'this' @ [93:63] ==> <this> defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToConstructorIntention.applyTo.<anonymous>[ReceiverParameterDescriptorImpl]
 
+'append' @ [93:69] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
+
 'propertyAnnotationsText' @ [94:17] ==> val propertyAnnotationsText: String? defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToConstructorIntention.applyTo[LocalVariableDescriptor]
 
 'takeIf' @ [94:42] ==> @InlineOnly @SinceKotlin public inline fun <T> String.takeIf(predicate: (String) -> Boolean): String? defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -202,6 +204,8 @@ Inferred types:
     <T> -> String
 
 'String' @ [94:49] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'isNotBlank' @ [94:57] ==> @InlineOnly public inline fun CharSequence.isNotBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'let' @ [94:70] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> (StringBuilder..StringBuilder?)): (StringBuilder..StringBuilder?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -335,6 +339,8 @@ Inferred types:
 
 'this' @ [111:63] ==> <this> defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToConstructorIntention.applyTo.<anonymous>[ReceiverParameterDescriptorImpl]
 
+'append' @ [111:69] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
+
 'propertyAnnotationsText' @ [112:17] ==> val propertyAnnotationsText: String? defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToConstructorIntention.applyTo[LocalVariableDescriptor]
 
 'takeIf' @ [112:42] ==> @InlineOnly @SinceKotlin public inline fun <T> String.takeIf(predicate: (String) -> Boolean): String? defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -342,6 +348,8 @@ Inferred types:
     <T> -> String
 
 'String' @ [112:49] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'isNotBlank' @ [112:57] ==> @InlineOnly public inline fun CharSequence.isNotBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'let' @ [112:70] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> (StringBuilder..StringBuilder?)): (StringBuilder..StringBuilder?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -464,8 +472,6 @@ Inferred types:
 
 'contains' @ [139:34] ==> public abstract fun contains(element: KotlinTarget): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
-'KotlinTarget' @ [139:43] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
 'VALUE_PARAMETER' @ [139:56] ==> enum entry VALUE_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'if (useSiteTarget == null)
@@ -568,7 +574,7 @@ Inferred types:
 
 'resultingDescriptor' @ [167:82] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'declarationDescriptor' @ [168:21] ==> val declarationDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToConstructorIntention.isValidInConstructor.<no name provided>.visitReferenceExpression[LocalVariableDescriptor]
 

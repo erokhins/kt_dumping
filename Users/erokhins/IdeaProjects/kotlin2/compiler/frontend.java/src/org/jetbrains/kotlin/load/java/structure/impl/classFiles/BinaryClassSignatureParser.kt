@@ -118,7 +118,7 @@ Inferred types:
 
 'newSmartList' @ [81:40] ==> @NotNull @Contract public open fun <T : (Any..Any?)> newSmartList(): (MutableList<(JavaClassifierType..JavaClassifierType?)>..List<(JavaClassifierType..JavaClassifierType?)>) defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaClassifierType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.structure.JavaClassifierType..org.jetbrains.kotlin.load.java.structure.JavaClassifierType?)
 
 'jlo' @ [82:21] ==> var jlo: Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryClassSignatureParser.parseTypeParameter[LocalVariableDescriptor]
 
@@ -456,7 +456,7 @@ Inferred types:
 
 'dimensions' @ [209:20] ==> val dimensions: Int defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryClassSignatureParser.parseTypeString[LocalVariableDescriptor]
 
-'fold' @ [209:32] ==> public inline fun <T, R> Iterable<Int>.fold(initial: JavaType, operation: (JavaType, Int) -> JavaType): JavaType defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [209:32] ==> public inline fun <T, R> Iterable<Int>.fold(initial: JavaType, operation: (acc: JavaType, Int) -> JavaType): JavaType defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Int
     <R> -> JavaType

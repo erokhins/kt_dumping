@@ -16,7 +16,7 @@ Inferred types:
 
 'setChild' @ [32:15] ==> public abstract fun <T : (JpsElement..JpsElement?)> setChild(p0: (JpsElementChildRole<(JpsSimpleElement<out TestingContext>..JpsSimpleElement<out TestingContext>?)>..JpsElementChildRole<(JpsSimpleElement<out TestingContext>..JpsSimpleElement<out TestingContext>?)>?), p1: (JpsSimpleElement<out TestingContext>..JpsSimpleElement<out TestingContext>?)): (JpsSimpleElement<out TestingContext>..JpsSimpleElement<out TestingContext>?) defined in org.jetbrains.jps.model.JpsElementContainer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JpsElement..JpsElement?)> -> JpsSimpleElement<out TestingContext>
+    <T : (JpsElement..JpsElement?)> -> (org.jetbrains.jps.model.JpsSimpleElement<out org.jetbrains.kotlin.jps.build.TestingContext>..org.jetbrains.jps.model.JpsSimpleElement<out org.jetbrains.kotlin.jps.build.TestingContext>?)
 
 'TESTING_CONTEXT' @ [32:24] ==> private val TESTING_CONTEXT: (JpsElementChildRoleBase<(JpsSimpleElement<out TestingContext>..JpsSimpleElement<out TestingContext>?)>..JpsElementChildRoleBase<(JpsSimpleElement<out TestingContext>..JpsSimpleElement<out TestingContext>?)>?) defined in org.jetbrains.kotlin.jps.build in file TestingContext.kt[PropertyDescriptorImpl]
 
@@ -26,13 +26,13 @@ Inferred types:
 
 'getChild' @ [36:23] ==> public abstract fun <T : (JpsElement..JpsElement?)> getChild(@NotNull p0: JpsElementChildRole<(JpsSimpleElement<out TestingContext>..JpsSimpleElement<out TestingContext>?)>): (JpsSimpleElement<out TestingContext>..JpsSimpleElement<out TestingContext>?) defined in org.jetbrains.jps.model.JpsElementContainer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JpsElement..JpsElement?)> -> JpsSimpleElement<out TestingContext>
+    <T : (JpsElement..JpsElement?)> -> (org.jetbrains.jps.model.JpsSimpleElement<out org.jetbrains.kotlin.jps.build.TestingContext>..org.jetbrains.jps.model.JpsSimpleElement<out org.jetbrains.kotlin.jps.build.TestingContext>?)
 
 'TESTING_CONTEXT' @ [36:32] ==> private val TESTING_CONTEXT: (JpsElementChildRoleBase<(JpsSimpleElement<out TestingContext>..JpsSimpleElement<out TestingContext>?)>..JpsElementChildRoleBase<(JpsSimpleElement<out TestingContext>..JpsSimpleElement<out TestingContext>?)>?) defined in org.jetbrains.kotlin.jps.build in file TestingContext.kt[PropertyDescriptorImpl]
 
 'data' @ [36:50] ==> public final var <D : (Any..Any?)> JpsSimpleElement<out TestingContext>.data: TestingContext[MyPropertyDescriptor]
 Inferred types:
-    <D : (Any..Any?)> -> TestingContext
+    <D : (Any..Any?)> -> Captured(out TestingContext)
 
 'projectDescriptor' @ [39:13] ==> public final val CompileContext.projectDescriptor: (ProjectDescriptor..ProjectDescriptor?)[MyPropertyDescriptor]
 

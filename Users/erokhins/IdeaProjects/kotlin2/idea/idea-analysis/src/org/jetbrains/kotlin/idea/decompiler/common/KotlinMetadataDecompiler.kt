@@ -10,6 +10,8 @@
 
 'this' @ [50:100] ==> <this> defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataDecompiler[LazyClassReceiverParameterDescriptor]
 
+'readFile' @ [50:106] ==> public abstract fun readFile(bytes: ByteArray, file: VirtualFile): FileWithMetadata? defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataDecompiler[SimpleFunctionDescriptorImpl]
+
 'DescriptorRenderer' @ [52:28] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
 
 'withOptions' @ [52:47] ==> public final fun withOptions(changeOptions: DescriptorRendererOptions.() -> Unit): DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedSimpleFunctionDescriptor]
@@ -52,6 +54,8 @@ Inferred types:
 'provider' @ [66:34] ==> value-parameter provider: KotlinDecompiledFileViewProvider defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataDecompiler.createFileViewProvider.<anonymous>[ValueParameterDescriptorImpl]
 
 'this' @ [66:44] ==> <this> defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataDecompiler[LazyClassReceiverParameterDescriptor]
+
+'buildDecompiledText' @ [66:50] ==> private final fun buildDecompiledText(virtualFile: VirtualFile): DecompiledText defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataDecompiler[SimpleFunctionDescriptorImpl]
 
 '!' @ [72:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -190,7 +194,7 @@ Inferred types:
 
 'classId' @ [110:77] ==> val classId: ClassId defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataDecompiler.buildDecompiledText[LocalVariableDescriptor]
 
-'buildDecompiledText' @ [112:17] ==> public fun buildDecompiledText(packageFqName: FqName, descriptors: List<DeclarationDescriptor>, descriptorRenderer: DescriptorRenderer, indexers: Collection<DecompiledTextIndexer<*>> = ...): DecompiledText defined in org.jetbrains.kotlin.idea.decompiler.textBuilder[SimpleFunctionDescriptorImpl]
+'buildDecompiledText' @ [112:17] ==> public fun buildDecompiledText(packageFqName: FqName, descriptors: List<DeclarationDescriptor>, descriptorRenderer: DescriptorRenderer, indexers: Collection<DecompiledTextIndexer<*>> = ...): DecompiledText defined in org.jetbrains.kotlin.idea.decompiler.textBuilder in file buildDecompiledText.kt[SimpleFunctionDescriptorImpl]
 
 'packageFqName' @ [112:37] ==> val packageFqName: FqName defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataDecompiler.buildDecompiledText[LocalVariableDescriptor]
 
@@ -222,7 +226,7 @@ Inferred types:
 
 'getExtension' @ [126:75] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'serializerProtocol' @ [126:88] ==> value-parameter serializerProtocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.idea.decompiler.common.FileWithMetadata.Compatible.<init>[ValueParameterDescriptorImpl]
 

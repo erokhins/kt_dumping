@@ -193,6 +193,8 @@ Inferred types:
 
 'String' @ [66:70] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isNotEmpty' @ [66:78] ==> @InlineOnly public inline fun CharSequence.isNotEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'classpath' @ [67:21] ==> val classpath: ArrayList<URL> /* = ArrayList<URL> */ defined in org.jetbrains.kotlin.runner.Main.run[LocalVariableDescriptor]
 
 'addPath' @ [67:31] ==> private final fun MutableList<URL>.addPath(path: String): Unit defined in org.jetbrains.kotlin.runner.Main[SimpleFunctionDescriptorImpl]

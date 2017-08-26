@@ -22,9 +22,9 @@ Inferred types:
 
 'isAllUnder' @ [53:52] ==> public final val KtImportDirective.isAllUnder: Boolean[MyPropertyDescriptor]
 
-'lazy' @ [55:76] ==> public fun <T> lazy(initializer: () -> (ImmutableListMultimap<(Name..Name?), (KtImportDirective..KtImportDirective?)>..ImmutableListMultimap<(Name..Name?), (KtImportDirective..KtImportDirective?)>?)): Lazy<(ImmutableListMultimap<(Name..Name?), (KtImportDirective..KtImportDirective?)>..ImmutableListMultimap<(Name..Name?), (KtImportDirective..KtImportDirective?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [55:76] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (com.google.common.collect.ImmutableListMultimap<(org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?), (org.jetbrains.kotlin.psi.KtImportDirective..org.jetbrains.kotlin.psi.KtImportDirective?)>..com.google.common.collect.ImmutableListMultimap<(org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?), (org.jetbrains.kotlin.psi.KtImportDirective..org.jetbrains.kotlin.psi.KtImportDirective?)>?)
+    <T> -> T
 
 'builder' @ [56:45] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> builder(): (ImmutableListMultimap.Builder<(Name..Name?), (KtImportDirective..KtImportDirective?)>..ImmutableListMultimap.Builder<(Name..Name?), (KtImportDirective..KtImportDirective?)>?) defined in com.google.common.collect.ImmutableListMultimap[JavaMethodDescriptor]
 Inferred types:
@@ -246,8 +246,8 @@ Inferred types:
 
 'get' @ [143:71] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [143:90] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -318,6 +318,8 @@ Inferred types:
 'compute' @ [172:31] ==> public abstract fun <T> compute(computable: () -> D?): D? defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> D?
+
+'compute' @ [172:41] ==> local final fun compute(): D? defined in org.jetbrains.kotlin.resolve.lazy.LazyImportResolver.selectSingleFromImports[SimpleFunctionDescriptorImpl]
 
 'storageManager' @ [179:16] ==> public final val storageManager: StorageManager defined in org.jetbrains.kotlin.resolve.lazy.LazyImportResolver[PropertyDescriptorImpl]
 
@@ -554,11 +556,11 @@ Inferred types:
 
 'java' @ [265:31] ==> public val <T> KClass<out LazyImportScope>.java: Class<out LazyImportScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> LazyImportScope
+    <T> -> Captured(out LazyImportScope)
 
 'simpleName' @ [265:36] ==> public final val <T : (Any..Any?)> Class<out LazyImportScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LazyImportScope
+    <T : (Any..Any?)> -> Captured(out LazyImportScope)
 
 'debugName' @ [265:54] ==> private final val debugName: String defined in org.jetbrains.kotlin.resolve.lazy.LazyImportScope[PropertyDescriptorImpl]
 

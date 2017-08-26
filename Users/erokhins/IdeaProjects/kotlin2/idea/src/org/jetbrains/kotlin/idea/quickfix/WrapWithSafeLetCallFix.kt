@@ -105,7 +105,7 @@ Inferred types:
 
 'call' @ [65:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callType' @ [65:41] ==> public final val Call.callType: Call.CallType[MyPropertyDescriptor]
 
@@ -145,7 +145,7 @@ Inferred types:
 
 'typeMismatch' @ [80:28] ==> val typeMismatch: DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.WrapWithSafeLetCallFix.TypeMismatchFactory.createAction[LocalVariableDescriptor]
 
-'psiElement' @ [80:41] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.psiElement: (KtExpression..KtExpression?)[MyPropertyDescriptor]
+'psiElement' @ [80:41] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.psiElement: KtExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -165,7 +165,7 @@ Inferred types:
 
 'typeMismatch' @ [83:51] ==> val typeMismatch: DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.WrapWithSafeLetCallFix.TypeMismatchFactory.createAction[LocalVariableDescriptor]
 
-'a' @ [83:64] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'a' @ [83:64] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -173,7 +173,7 @@ Inferred types:
 
 'typeMismatch' @ [83:76] ==> val typeMismatch: DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.WrapWithSafeLetCallFix.TypeMismatchFactory.createAction[LocalVariableDescriptor]
 
-'b' @ [83:89] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.b: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'b' @ [83:89] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.b: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -191,7 +191,7 @@ Inferred types:
 
 'typeMismatch' @ [85:107] ==> val typeMismatch: DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.WrapWithSafeLetCallFix.TypeMismatchFactory.createAction[LocalVariableDescriptor]
 
-'psiElement' @ [85:120] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.psiElement: (KtExpression..KtExpression?)[MyPropertyDescriptor]
+'psiElement' @ [85:120] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.psiElement: KtExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)

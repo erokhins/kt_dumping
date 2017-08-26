@@ -40,7 +40,7 @@ Inferred types:
 
 'emptyList' @ [47:79] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'when (this) {
         is KtProperty ->
@@ -75,7 +75,7 @@ Inferred types:
 
 'emptyList' @ [58:24] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'if (this is KtObjectDeclaration && this.isCompanion()) {
         getNonStrictParentOfType<KtClass>()?.name

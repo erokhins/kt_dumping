@@ -116,7 +116,7 @@ Inferred types:
 
 'java' @ [65:66] ==> public val <T> KClass<out KotlinAndroidJpsPlugin>.java: Class<out KotlinAndroidJpsPlugin> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinAndroidJpsPlugin
+    <T> -> Captured(out KotlinAndroidJpsPlugin)
 
 'isFile' @ [65:73] ==> public final val File.isFile: Boolean[MyPropertyDescriptor]
 
@@ -168,7 +168,7 @@ Inferred types:
 
 'java' @ [70:89] ==> public val <T> KClass<out KotlinAndroidJpsPlugin>.java: Class<out KotlinAndroidJpsPlugin> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinAndroidJpsPlugin
+    <T> -> Captured(out KotlinAndroidJpsPlugin)
 
 'parentFile' @ [70:96] ==> public final val File.parentFile: (File..File?)[MyPropertyDescriptor]
 
@@ -190,7 +190,7 @@ Inferred types:
 
 'java' @ [74:99] ==> public val <T> KClass<out KotlinAndroidJpsPlugin>.java: Class<out KotlinAndroidJpsPlugin> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinAndroidJpsPlugin
+    <T> -> Captured(out KotlinAndroidJpsPlugin)
 
 'parentFile' @ [74:106] ==> public final val File.parentFile: (File..File?)[MyPropertyDescriptor]
 

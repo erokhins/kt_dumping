@@ -268,8 +268,8 @@ Inferred types:
 
 'getNotNull' @ [140:17] ==> @NotNull public open fun <K : (Any..Any?), V : (Any..Any?)> getNotNull(@NotNull p0: BindingContext, @NotNull p1: ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>, @NotNull p2: KtTypeReference): KotlinType defined in org.jetbrains.kotlin.resolve.BindingContextUtils[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'bindingContext' @ [140:28] ==> @NotNull protected/*protected and package*/ open fun bindingContext(): BindingContext defined in org.jetbrains.kotlin.js.translate.expression.CatchTranslator[JavaMethodDescriptor]
 

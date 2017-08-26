@@ -4,11 +4,7 @@
 
 'port' @ [28:23] ==> value-parameter port: Int = ... defined in org.jetbrains.kotlin.daemon.client.RemoteInputStreamServer.<init>[ValueParameterDescriptorImpl]
 
-'LoopbackNetworkInterface' @ [28:29] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common[FakeCallableDescriptorForObject]
-
 'clientLoopbackSocketFactory' @ [28:54] ==> public final val clientLoopbackSocketFactory: LoopbackNetworkInterface.ClientLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[DeserializedPropertyDescriptor]
-
-'LoopbackNetworkInterface' @ [28:83] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common[FakeCallableDescriptorForObject]
 
 'serverLoopbackSocketFactory' @ [28:108] ==> public final val serverLoopbackSocketFactory: LoopbackNetworkInterface.ServerLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[DeserializedPropertyDescriptor]
 

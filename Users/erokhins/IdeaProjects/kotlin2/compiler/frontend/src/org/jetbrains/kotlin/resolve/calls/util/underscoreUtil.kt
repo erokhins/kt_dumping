@@ -4,7 +4,7 @@
 
 'stub' @ [31:52] ==> public final val <Stub : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> StubBasedPsiElement<out raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>.stub: (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <Stub : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> raw (com.intellij.psi.stubs.StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<*>?)
+    <Stub : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> Captured(*)
 
 'nameIdentifier' @ [32:16] ==> public final val KtNamedDeclaration.nameIdentifier: PsiElement?[MyPropertyDescriptor]
 

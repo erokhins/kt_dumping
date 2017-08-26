@@ -290,6 +290,8 @@ Inferred types:
 
 'KtFile' @ [146:74] ==> public constructor KtFile(p0: (FileViewProvider..FileViewProvider?), p1: Boolean) defined in org.jetbrains.kotlin.psi.KtFile[JavaClassConstructorDescriptor]
 
+'isInJavaSourceRoot' @ [146:82] ==> public fun PsiElement.isInJavaSourceRoot(): Boolean defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
+
 'jetFiles' @ [147:17] ==> val jetFiles: List<KtFile> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.KotlinAwareMoveFilesOrDirectoriesDialog.setData.<anonymous>[LocalVariableDescriptor]
 
 'isEmpty' @ [147:26] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]

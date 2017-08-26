@@ -20,8 +20,6 @@ Inferred types:
 
 'bytecodeVersion' @ [41:45] ==> public final val bytecodeVersion: JvmBytecodeBinaryVersion defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader[DeserializedPropertyDescriptor]
 
-'JvmBytecodeBinaryVersion' @ [42:21] ==> public companion object defined in org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [42:46] ==> @field:JvmField public final val INSTANCE: JvmBytecodeBinaryVersion defined in org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion.Companion[DeserializedPropertyDescriptor]
 
 'binaryClass' @ [43:21] ==> value-parameter binaryClass: KotlinJvmBinaryClass defined in org.jetbrains.kotlin.codegen.state.IncompatibleClassTrackerImpl.record[ValueParameterDescriptorImpl]
@@ -36,8 +34,8 @@ Inferred types:
 
 'record' @ [46:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(String..String?), (IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>..IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>?)>..WritableSlice<(String..String?), (IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>..IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>?)>?), p1: (String..String?), p2: (IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>..IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.deserialization.IncompatibleVersionErrorData<org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion>..org.jetbrains.kotlin.serialization.deserialization.IncompatibleVersionErrorData<org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion>?)
 
 'BYTECODE_VERSION_ERRORS' @ [46:26] ==> @JvmField public final val BYTECODE_VERSION_ERRORS: WritableSlice<String, IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>> defined in org.jetbrains.kotlin.codegen.state.IncompatibleClassTrackerImpl.Companion[PropertyDescriptorImpl]
 
@@ -51,6 +49,6 @@ Inferred types:
 
 'createCollectiveSlice' @ [52:125] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> createCollectiveSlice(): (WritableSlice<(String..String?), (IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>..IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>?)>..WritableSlice<(String..String?), (IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>..IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>?)>?) defined in org.jetbrains.kotlin.util.slicedMap.Slices[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.deserialization.IncompatibleVersionErrorData<org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion>..org.jetbrains.kotlin.serialization.deserialization.IncompatibleVersionErrorData<org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion>?)
 

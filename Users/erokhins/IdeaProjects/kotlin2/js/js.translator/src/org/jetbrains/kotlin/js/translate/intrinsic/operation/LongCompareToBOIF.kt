@@ -80,6 +80,8 @@
 
 'CompareToBinaryIntrinsic' @ [67:43] ==> public constructor CompareToBinaryIntrinsic(toLeft: (JsExpression) -> JsExpression, toRight: (JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.operation.LongCompareToBOIF.CompareToBinaryIntrinsic[ClassConstructorDescriptorImpl]
 
+'longFromInt' @ [67:70] ==> @NotNull public open fun longFromInt(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
+
 'ID' @ [67:83] ==> public fun <T> identity(): (JsExpression) -> JsExpression defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JsExpression
@@ -101,6 +103,8 @@ Inferred types:
 'ID' @ [69:69] ==> public fun <T> identity(): (JsExpression) -> JsExpression defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JsExpression
+
+'longFromInt' @ [69:77] ==> @NotNull public open fun longFromInt(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
 'CompareToBinaryIntrinsic' @ [70:41] ==> public constructor CompareToBinaryIntrinsic(toLeft: (JsExpression) -> JsExpression, toRight: (JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.operation.LongCompareToBOIF.CompareToBinaryIntrinsic[ClassConstructorDescriptorImpl]
 

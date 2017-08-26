@@ -33,7 +33,7 @@ Inferred types:
 
 'analyze' @ [56:26] ==> @NotNull public open fun <V : (Value..Value?)> analyze(@NotNull internalClassName: String, @NotNull node: MethodNode, @NotNull interpreter: Interpreter<(BasicValue..BasicValue?)>): (Array<(Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>..Array<out (Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>) defined in org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer[JavaMethodDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)
 
 'internalClassName' @ [56:34] ==> public final val internalClassName: String defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass[PropertyDescriptorImpl]
 
@@ -74,7 +74,7 @@ Inferred types:
 
 'insn' @ [62:21] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeTypesAndRemoveDeadCode[LocalVariableDescriptor]
 
-'isInstanceOfOrNullCheck' @ [62:26] ==> internal fun AbstractInsnNode.isInstanceOfOrNullCheck(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isInstanceOfOrNullCheck' @ [62:26] ==> internal fun AbstractInsnNode.isInstanceOfOrNullCheck(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'checkedReferenceTypes' @ [63:21] ==> val checkedReferenceTypes: HashMap<AbstractInsnNode, Type> /* = HashMap<AbstractInsnNode, Type> */ defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeTypesAndRemoveDeadCode[LocalVariableDescriptor]
 
@@ -99,11 +99,11 @@ Inferred types:
 
 'insn' @ [65:26] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeTypesAndRemoveDeadCode[LocalVariableDescriptor]
 
-'isCheckParameterIsNotNull' @ [65:31] ==> internal fun AbstractInsnNode.isCheckParameterIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isCheckParameterIsNotNull' @ [65:31] ==> internal fun AbstractInsnNode.isCheckParameterIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [65:62] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeTypesAndRemoveDeadCode[LocalVariableDescriptor]
 
-'isCheckExpressionValueIsNotNull' @ [65:67] ==> internal fun AbstractInsnNode.isCheckExpressionValueIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isCheckExpressionValueIsNotNull' @ [65:67] ==> internal fun AbstractInsnNode.isCheckExpressionValueIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'checkedReferenceTypes' @ [66:21] ==> val checkedReferenceTypes: HashMap<AbstractInsnNode, Type> /* = HashMap<AbstractInsnNode, Type> */ defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeTypesAndRemoveDeadCode[LocalVariableDescriptor]
 
@@ -119,7 +119,7 @@ Inferred types:
 
 'insn' @ [68:26] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeTypesAndRemoveDeadCode[LocalVariableDescriptor]
 
-'isThrowNpeIntrinsic' @ [68:31] ==> internal fun AbstractInsnNode.isThrowNpeIntrinsic(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isThrowNpeIntrinsic' @ [68:31] ==> internal fun AbstractInsnNode.isThrowNpeIntrinsic(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'stackOnThrowExceptionsHolder' @ [69:21] ==> value-parameter stackOnThrowExceptionsHolder: MutableMap<AbstractInsnNode, Int> defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeTypesAndRemoveDeadCode[ValueParameterDescriptorImpl]
 
@@ -173,7 +173,7 @@ Inferred types:
 
 'analyze' @ [100:26] ==> @NotNull public open fun <V : (Value..Value?)> analyze(@NotNull internalClassName: String, @NotNull node: MethodNode, @NotNull interpreter: Interpreter<(BasicValue..BasicValue?)>): (Array<(Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>..Array<out (Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>) defined in org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer[JavaMethodDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)
 
 'internalClassName' @ [100:34] ==> public final val internalClassName: String defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass[PropertyDescriptorImpl]
 
@@ -216,7 +216,7 @@ Inferred types:
 
 'insn' @ [108:21] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeNullabilities[LocalVariableDescriptor]
 
-'isInstanceOfOrNullCheck' @ [108:26] ==> internal fun AbstractInsnNode.isInstanceOfOrNullCheck(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isInstanceOfOrNullCheck' @ [108:26] ==> internal fun AbstractInsnNode.isInstanceOfOrNullCheck(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'frame' @ [108:55] ==> val frame: Frame<(BasicValue..BasicValue?)> defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeNullabilities[LocalVariableDescriptor]
 
@@ -226,7 +226,7 @@ Inferred types:
 
 'insn' @ [109:21] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeNullabilities[LocalVariableDescriptor]
 
-'isCheckExpressionValueIsNotNull' @ [109:26] ==> internal fun AbstractInsnNode.isCheckExpressionValueIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isCheckExpressionValueIsNotNull' @ [109:26] ==> internal fun AbstractInsnNode.isCheckExpressionValueIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'frame' @ [109:63] ==> val frame: Frame<(BasicValue..BasicValue?)> defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.analyzeNullabilities[LocalVariableDescriptor]
 
@@ -318,7 +318,7 @@ Inferred types:
 
 'insn' @ [129:29] ==> val insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.transformTrivialChecks[LocalVariableDescriptor]
 
-'isCheckExpressionValueIsNotNull' @ [129:34] ==> internal fun AbstractInsnNode.isCheckExpressionValueIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isCheckExpressionValueIsNotNull' @ [129:34] ==> internal fun AbstractInsnNode.isCheckExpressionValueIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'transformTrivialCheckExpressionValueIsNotNull' @ [130:29] ==> private final fun transformTrivialCheckExpressionValueIsNotNull(insn: AbstractInsnNode, nullability: Nullability): Unit defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass[SimpleFunctionDescriptorImpl]
 
@@ -546,7 +546,7 @@ Inferred types:
 
 'insn' @ [195:25] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.collectVariableDependentChecks[LocalVariableDescriptor]
 
-'isInstanceOfOrNullCheck' @ [195:30] ==> internal fun AbstractInsnNode.isInstanceOfOrNullCheck(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isInstanceOfOrNullCheck' @ [195:30] ==> internal fun AbstractInsnNode.isInstanceOfOrNullCheck(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [196:44] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.collectVariableDependentChecks[LocalVariableDescriptor]
 
@@ -600,7 +600,7 @@ Inferred types:
 
 'insn' @ [208:25] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.collectVariableDependentChecks[LocalVariableDescriptor]
 
-'isCheckParameterIsNotNull' @ [208:30] ==> internal fun AbstractInsnNode.isCheckParameterIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isCheckParameterIsNotNull' @ [208:30] ==> internal fun AbstractInsnNode.isCheckParameterIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [209:43] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.collectVariableDependentChecks[LocalVariableDescriptor]
 
@@ -630,7 +630,7 @@ Inferred types:
 
 'insn' @ [216:25] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.collectVariableDependentChecks[LocalVariableDescriptor]
 
-'isCheckExpressionValueIsNotNull' @ [216:30] ==> internal fun AbstractInsnNode.isCheckExpressionValueIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isCheckExpressionValueIsNotNull' @ [216:30] ==> internal fun AbstractInsnNode.isCheckExpressionValueIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [217:43] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.collectVariableDependentChecks[LocalVariableDescriptor]
 
@@ -753,7 +753,7 @@ Inferred types:
 
 'insn' @ [254:25] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.injectAssumptions[LocalVariableDescriptor]
 
-'isThrowNpeIntrinsic' @ [254:30] ==> internal fun AbstractInsnNode.isThrowNpeIntrinsic(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isThrowNpeIntrinsic' @ [254:30] ==> internal fun AbstractInsnNode.isThrowNpeIntrinsic(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'nullabilityAssumptions' @ [255:25] ==> val nullabilityAssumptions: RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptions defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.injectAssumptions[LocalVariableDescriptor]
 
@@ -801,11 +801,11 @@ Inferred types:
 
 'insn' @ [267:32] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.injectAssumptionsForCheck[ValueParameterDescriptorImpl]
 
-'isCheckParameterIsNotNull' @ [267:37] ==> internal fun AbstractInsnNode.isCheckParameterIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isCheckParameterIsNotNull' @ [267:37] ==> internal fun AbstractInsnNode.isCheckParameterIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [267:68] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.injectAssumptionsForCheck[ValueParameterDescriptorImpl]
 
-'isCheckExpressionValueIsNotNull' @ [267:73] ==> internal fun AbstractInsnNode.isCheckExpressionValueIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck[SimpleFunctionDescriptorImpl]
+'isCheckExpressionValueIsNotNull' @ [267:73] ==> internal fun AbstractInsnNode.isCheckExpressionValueIsNotNull(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.nullCheck in file RedundantNullCheckMethodTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [268:61] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptionsBuilder.injectAssumptionsForCheck[ValueParameterDescriptorImpl]
 
@@ -1138,7 +1138,7 @@ Inferred types:
 
 'insn' @ [389:24] ==> value-parameter insn: T defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptions.synthetic[ValueParameterDescriptorImpl]
 
-'withInstructionAdapter' @ [393:32] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [393:32] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'block' @ [393:55] ==> value-parameter block: InstructionAdapter.() -> Unit defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.RedundantNullCheckMethodTransformer.TransformerPass.NullabilityAssumptions.listOfSynthetics[ValueParameterDescriptorImpl]
 

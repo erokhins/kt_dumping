@@ -1,8 +1,8 @@
 'KotlinAbstractUExpression' @ [30:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [31:35] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [31:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [31:40] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -14,9 +14,9 @@ Inferred types:
 
 'this' @ [31:86] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUForEachExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [32:26] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [32:26] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [32:31] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -28,9 +28,9 @@ Inferred types:
 
 'this' @ [32:72] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUForEachExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [34:30] ==> internal fun <T> lz(initializer: () -> KotlinUParameter): Lazy<KotlinUParameter> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [34:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinUParameter
+    <T> -> T
 
 'psi' @ [35:25] ==> public open val psi: KtForExpression defined in org.jetbrains.uast.kotlin.KotlinUForEachExpression[PropertyDescriptorImpl]
 

@@ -26,7 +26,5 @@
 
 'SMALL_LOGO_13' @ [40:62] ==> public final val SMALL_LOGO_13: (Icon..Icon?) defined in org.jetbrains.kotlin.idea.KotlinIcons[JavaPropertyDescriptor]
 
-'ExecutorAction' @ [40:83] ==> public companion object defined in com.intellij.execution.lineMarker.ExecutorAction[FakeCallableDescriptorForObject]
-
 'getActions' @ [40:98] ==> @JvmStatic @JvmOverloads public final fun getActions(order: Int = ...): Array<AnAction> defined in com.intellij.execution.lineMarker.ExecutorAction.Companion[DeserializedSimpleFunctionDescriptor]
 

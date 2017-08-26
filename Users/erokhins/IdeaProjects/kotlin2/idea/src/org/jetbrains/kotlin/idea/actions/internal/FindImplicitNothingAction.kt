@@ -26,7 +26,7 @@ Inferred types:
 
 'runProcessWithProgressSynchronously' @ [56:39] ==> public abstract fun runProcessWithProgressSynchronously(@NotNull p0: Runnable, @NotNull @Nls p1: String, p2: Boolean, @Nullable p3: Project?): Boolean defined in com.intellij.openapi.progress.ProgressManager[JavaMethodDescriptor]
 
-'Runnable' @ [57:17] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [57:17] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'find' @ [57:28] ==> private final fun find(files: Collection<KtFile>, project: Project): Unit defined in org.jetbrains.kotlin.idea.actions.internal.FindImplicitNothingAction[SimpleFunctionDescriptorImpl]
 
@@ -341,7 +341,7 @@ Inferred types:
 
 'getData' @ [147:30] ==> @Nullable public open fun <T : (Any..Any?)> getData(@NotNull p0: DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>): (Array<(VirtualFile..VirtualFile?)>?..Array<out (VirtualFile..VirtualFile?)>?) defined in com.intellij.openapi.actionSystem.AnActionEvent[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Array<(com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>..kotlin.Array<out (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>)
+    <T : (Any..Any?)> -> (kotlin.Array<(com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>..kotlin.Array<out (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>?)
 
 'VIRTUAL_FILE_ARRAY' @ [147:53] ==> public final val VIRTUAL_FILE_ARRAY: (DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>..DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>?) defined in com.intellij.openapi.actionSystem.CommonDataKeys[JavaPropertyDescriptor]
 

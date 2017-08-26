@@ -8,6 +8,8 @@ Inferred types:
 
 'interpreter' @ [75:65] ==> val interpreter: UninitializedNewValueMarkerInterpreter defined in org.jetbrains.kotlin.codegen.coroutines.processUninitializedStores[LocalVariableDescriptor]
 
+'UninitializedNewValueFrame' @ [75:80] ==> public constructor UninitializedNewValueFrame(nLocals: Int, nStack: Int) defined in org.jetbrains.kotlin.codegen.coroutines.UninitializedNewValueFrame[ClassConstructorDescriptorImpl]
+
 'analyze' @ [75:108] ==> public final fun analyze(): Array<Frame<(BasicValue..BasicValue?)>?> defined in org.jetbrains.kotlin.codegen.optimization.common.CustomFramesMethodAnalyzer[SimpleFunctionDescriptorImpl]
 
 'component1' @ [77:11] ==> public final operator fun component1(): Int defined in kotlin.collections.IndexedValue[DeserializedSimpleFunctionDescriptor]
@@ -30,7 +32,7 @@ Inferred types:
 
 'frame' @ [79:34] ==> val frame: Frame<(BasicValue..BasicValue?)> defined in org.jetbrains.kotlin.codegen.coroutines.processUninitializedStores[LocalVariableDescriptor]
 
-'getUninitializedValueForConstructorCall' @ [79:40] ==> private fun Frame<BasicValue>.getUninitializedValueForConstructorCall(insn: AbstractInsnNode): UninitializedNewValue? defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'getUninitializedValueForConstructorCall' @ [79:40] ==> private fun Frame<BasicValue>.getUninitializedValueForConstructorCall(insn: AbstractInsnNode): UninitializedNewValue? defined in org.jetbrains.kotlin.codegen.coroutines in file processUninitializedStores.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [79:80] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.coroutines.processUninitializedStores[LocalVariableDescriptor]
 
@@ -156,7 +158,7 @@ Inferred types:
 
 'insn' @ [104:46] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.coroutines.processUninitializedStores[LocalVariableDescriptor]
 
-'insnListOf' @ [104:52] ==> public fun insnListOf(vararg insns: AbstractInsnNode): InsnList defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'insnListOf' @ [104:52] ==> public fun insnListOf(vararg insns: AbstractInsnNode): InsnList defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'TypeInsnNode' @ [105:17] ==> public constructor TypeInsnNode(p0: Int, p1: (String..String?)) defined in org.jetbrains.org.objectweb.asm.tree.TypeInsnNode[JavaClassConstructorDescriptor]
 
@@ -218,7 +220,7 @@ Inferred types:
 
 'nStack' @ [122:98] ==> value-parameter nStack: Int defined in org.jetbrains.kotlin.codegen.coroutines.UninitializedNewValueFrame.<init>[ValueParameterDescriptorImpl]
 
-'getUninitializedValueForConstructorCall' @ [124:46] ==> private fun Frame<BasicValue>.getUninitializedValueForConstructorCall(insn: AbstractInsnNode): UninitializedNewValue? defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'getUninitializedValueForConstructorCall' @ [124:46] ==> private fun Frame<BasicValue>.getUninitializedValueForConstructorCall(insn: AbstractInsnNode): UninitializedNewValue? defined in org.jetbrains.kotlin.codegen.coroutines in file processUninitializedStores.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [124:86] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.UninitializedNewValueFrame.execute[ValueParameterDescriptorImpl]
 
@@ -246,7 +248,7 @@ Inferred types:
 
 'insn' @ [144:10] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.getUninitializedValueForConstructorCall[ValueParameterDescriptorImpl]
 
-'isConstructorCall' @ [144:15] ==> private fun AbstractInsnNode.isConstructorCall(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'isConstructorCall' @ [144:15] ==> private fun AbstractInsnNode.isConstructorCall(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file processUninitializedStores.kt[SimpleFunctionDescriptorImpl]
 
 'assert' @ [146:5] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 

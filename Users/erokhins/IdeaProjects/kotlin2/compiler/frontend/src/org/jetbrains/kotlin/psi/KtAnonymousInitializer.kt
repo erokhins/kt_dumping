@@ -22,7 +22,7 @@ Inferred types:
 
 'findChildByClass' @ [40:17] ==> @Nullable protected/*protected and package*/ open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtExpression..KtExpression?)>..Class<(KtExpression..KtExpression?)>?)): KtExpression? defined in org.jetbrains.kotlin.psi.KtClassInitializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'java' @ [40:54] ==> public val <T> KClass<KtExpression>.java: Class<KtExpression> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -34,7 +34,7 @@ Inferred types:
 
 'findChildByType' @ [46:17] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtClassInitializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'INIT_KEYWORD' @ [46:42] ==> public final val INIT_KEYWORD: (KtKeywordToken..KtKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
@@ -52,7 +52,7 @@ Inferred types:
 
 'findChildByClass' @ [54:17] ==> @Nullable protected/*protected and package*/ open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtExpression..KtExpression?)>..Class<(KtExpression..KtExpression?)>?)): KtExpression? defined in org.jetbrains.kotlin.psi.KtScriptInitializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'java' @ [54:54] ==> public val <T> KClass<KtExpression>.java: Class<KtExpression> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

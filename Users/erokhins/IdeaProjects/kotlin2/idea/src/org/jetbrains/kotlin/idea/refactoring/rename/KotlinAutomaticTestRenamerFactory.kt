@@ -41,8 +41,6 @@ Inferred types:
 
 'psiClass' @ [49:35] ==> val psiClass: PsiClass defined in org.jetbrains.kotlin.idea.refactoring.rename.KotlinAutomaticTestRenamerFactory.createRenamer[LocalVariableDescriptor]
 
-'PackagePartClassUtils' @ [49:70] ==> public object PackagePartClassUtils defined in org.jetbrains.kotlin.load.kotlin[FakeCallableDescriptorForObject]
-
 'getFilePartShortName' @ [49:92] ==> @JvmStatic public final fun getFilePartShortName(fileName: String): String defined in org.jetbrains.kotlin.load.kotlin.PackagePartClassUtils[DeserializedSimpleFunctionDescriptor]
 
 'newName' @ [49:113] ==> value-parameter newName: String defined in org.jetbrains.kotlin.idea.refactoring.rename.KotlinAutomaticTestRenamerFactory.createRenamer[ValueParameterDescriptorImpl]

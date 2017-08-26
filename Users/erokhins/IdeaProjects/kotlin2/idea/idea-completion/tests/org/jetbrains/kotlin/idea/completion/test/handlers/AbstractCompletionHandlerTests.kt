@@ -84,7 +84,9 @@ Inferred types:
 
 'completionCharString' @ [57:101] ==> val completionCharString: String? defined in org.jetbrains.kotlin.idea.completion.test.handlers.AbstractCompletionHandlerTest.doTest[LocalVariableDescriptor]
 
-'ExpectedCompletionUtils' @ [60:34] ==> public object ExpectedCompletionUtils defined in org.jetbrains.kotlin.idea.completion.test in file ExpectedCompletionUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [60:34] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CompletionType?, right: CompletionType): CompletionType[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CompletionType
 
 'getCompletionType' @ [60:58] ==> public final fun getCompletionType(fileText: String): CompletionType? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 
@@ -142,9 +144,9 @@ Inferred types:
 
 'kotlinStyleSettings' @ [69:21] ==> val kotlinStyleSettings: (KotlinCodeStyleSettings..KotlinCodeStyleSettings?) defined in org.jetbrains.kotlin.idea.completion.test.handlers.AbstractCompletionHandlerTest.doTest[LocalVariableDescriptor]
 
-'java' @ [69:48] ==> public val <T> KClass<out KotlinCodeStyleSettings>.java: Class<out KotlinCodeStyleSettings> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [69:48] ==> public val <T> KClass<out (KotlinCodeStyleSettings..KotlinCodeStyleSettings?)>.java: Class<out (KotlinCodeStyleSettings..KotlinCodeStyleSettings?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinCodeStyleSettings
+    <T> -> Captured(out (org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings..org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings?))
 
 'getDeclaredField' @ [69:53] ==> @CallerSensitive public open fun getDeclaredField(p0: (String..String?)): (Field..Field?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -154,9 +156,9 @@ Inferred types:
 
 'commonStyleSettings' @ [72:21] ==> val commonStyleSettings: (CommonCodeStyleSettings..CommonCodeStyleSettings?) defined in org.jetbrains.kotlin.idea.completion.test.handlers.AbstractCompletionHandlerTest.doTest[LocalVariableDescriptor]
 
-'java' @ [72:48] ==> public val <T> KClass<out CommonCodeStyleSettings>.java: Class<out CommonCodeStyleSettings> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [72:48] ==> public val <T> KClass<out (CommonCodeStyleSettings..CommonCodeStyleSettings?)>.java: Class<out (CommonCodeStyleSettings..CommonCodeStyleSettings?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> CommonCodeStyleSettings
+    <T> -> Captured(out (com.intellij.psi.codeStyle.CommonCodeStyleSettings..com.intellij.psi.codeStyle.CommonCodeStyleSettings?))
 
 'getDeclaredField' @ [72:53] ==> @CallerSensitive public open fun getDeclaredField(p0: (String..String?)): (Field..Field?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -178,7 +180,7 @@ Inferred types:
 
 'name' @ [74:34] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'field' @ [75:34] ==> val field: (Field..Field?) defined in org.jetbrains.kotlin.idea.completion.test.handlers.AbstractCompletionHandlerTest.doTest[LocalVariableDescriptor]
 
@@ -230,7 +232,7 @@ Inferred types:
 
 'fixture' @ [90:9] ==> protected final val fixture: JavaCodeInsightTestFixture defined in org.jetbrains.kotlin.idea.completion.test.handlers.AbstractCompletionHandlerTest[PropertyDescriptorImpl]
 
-'configureWithExtraFile' @ [90:17] ==> public fun CodeInsightTestFixture.configureWithExtraFile(path: String, vararg extraNameParts: String = ..., relativePaths: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'configureWithExtraFile' @ [90:17] ==> public fun CodeInsightTestFixture.configureWithExtraFile(path: String, vararg extraNameParts: String = ..., relativePaths: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test in file ideaTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'testPath' @ [90:40] ==> value-parameter testPath: String defined in org.jetbrains.kotlin.idea.completion.test.handlers.AbstractCompletionHandlerTest.setUpFixture[ValueParameterDescriptorImpl]
 

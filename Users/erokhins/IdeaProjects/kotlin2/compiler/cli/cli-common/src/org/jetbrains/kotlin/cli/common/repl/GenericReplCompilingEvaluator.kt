@@ -16,8 +16,8 @@
 
 'AggregatedReplStageState' @ [31:82] ==> public constructor AggregatedReplStageState<T1, T2>(state1: IReplStageState<out Any?>, state2: IReplStageState<out Any?>, lock: ReentrantReadWriteLock = ...) defined in org.jetbrains.kotlin.cli.common.repl.AggregatedReplStageState[ClassConstructorDescriptorImpl]
 Inferred types:
-    <T1> -> Any?
-    <T2> -> Any?
+    <T1> -> Captured(*)
+    <T2> -> Captured(*)
 
 'compiler' @ [31:107] ==> public final val compiler: ReplCompiler defined in org.jetbrains.kotlin.cli.common.repl.GenericReplCompilingEvaluator[PropertyDescriptorImpl]
 
@@ -47,10 +47,10 @@ Inferred types:
 Inferred types:
     <StateT : IReplStageState<*>> -> AggregatedReplStageState<*, *>
 
-'AggregatedReplStageState' @ [35:49] ==> public constructor AggregatedReplStageState<T1, T2>(state1: IReplStageState<Any?>, state2: IReplStageState<Any?>, lock: ReentrantReadWriteLock = ...) defined in org.jetbrains.kotlin.cli.common.repl.AggregatedReplStageState[ClassConstructorDescriptorImpl]
+'AggregatedReplStageState' @ [35:49] ==> public constructor AggregatedReplStageState<T1, T2>(state1: IReplStageState<???>, state2: IReplStageState<???>, lock: ReentrantReadWriteLock = ...) defined in org.jetbrains.kotlin.cli.common.repl.AggregatedReplStageState[ClassConstructorDescriptorImpl]
 Inferred types:
-    <T1> -> Any?
-    <T2> -> Any?
+    <T1> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@2c72165b
+    <T2> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@7b2d3129
 
 'java' @ [35:81] ==> public val <T> KClass<AggregatedReplStageState<*, *>>.java: Class<AggregatedReplStageState<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -101,8 +101,6 @@ Inferred types:
 
 'compiled' @ [37:19] ==> val compiled: ReplCompileResult defined in org.jetbrains.kotlin.cli.common.repl.GenericReplCompilingEvaluator.compileAndEval.<anonymous>[LocalVariableDescriptor]
 
-'ReplEvalResult' @ [38:47] ==> public companion object defined in org.jetbrains.kotlin.cli.common.repl.ReplEvalResult[FakeCallableDescriptorForObject]
-
 'CompileTime' @ [38:68] ==> public constructor CompileTime(message: String, location: CompilerMessageLocation? = ...) defined in org.jetbrains.kotlin.cli.common.repl.ReplEvalResult.Error.CompileTime[ClassConstructorDescriptorImpl]
 
 'compiled' @ [38:80] ==> val compiled: ReplCompileResult defined in org.jetbrains.kotlin.cli.common.repl.GenericReplCompilingEvaluator.compileAndEval.<anonymous>[LocalVariableDescriptor]
@@ -112,8 +110,6 @@ Inferred types:
 'compiled' @ [38:98] ==> val compiled: ReplCompileResult defined in org.jetbrains.kotlin.cli.common.repl.GenericReplCompilingEvaluator.compileAndEval.<anonymous>[LocalVariableDescriptor]
 
 'location' @ [38:107] ==> public final val location: CompilerMessageLocation? defined in org.jetbrains.kotlin.cli.common.repl.ReplCompileResult.Error[PropertyDescriptorImpl]
-
-'ReplEvalResult' @ [39:52] ==> public companion object defined in org.jetbrains.kotlin.cli.common.repl.ReplEvalResult[FakeCallableDescriptorForObject]
 
 'Incomplete' @ [39:67] ==> public constructor Incomplete() defined in org.jetbrains.kotlin.cli.common.repl.ReplEvalResult.Incomplete[ClassConstructorDescriptorImpl]
 
@@ -159,9 +155,9 @@ Inferred types:
 
 'aggregatedState' @ [46:29] ==> val aggregatedState: AggregatedReplStageState<*, *> defined in org.jetbrains.kotlin.cli.common.repl.GenericReplCompilingEvaluator.compileAndEval.<anonymous>[LocalVariableDescriptor]
 
-'apply' @ [46:45] ==> @InlineOnly public inline fun <T> AggregatedReplStageState<out Any?, out Any?>.apply(block: AggregatedReplStageState<out Any?, out Any?>.() -> Unit): AggregatedReplStageState<out Any?, out Any?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [46:45] ==> @InlineOnly public inline fun <T> AggregatedReplStageState<*, *>.apply(block: AggregatedReplStageState<*, *>.() -> Unit): AggregatedReplStageState<*, *> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> AggregatedReplStageState<out Any?, out Any?>
+    <T> -> AggregatedReplStageState<*, *>
 
 'lock' @ [47:33] ==> public final val lock: ReentrantReadWriteLock defined in org.jetbrains.kotlin.cli.common.repl.AggregatedReplStageState[PropertyDescriptorImpl]
 

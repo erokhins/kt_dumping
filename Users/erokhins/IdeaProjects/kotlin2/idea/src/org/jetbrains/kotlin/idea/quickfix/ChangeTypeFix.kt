@@ -30,8 +30,6 @@ Inferred types:
 
 'createType' @ [42:62] ==> public final fun createType(type: String): KtTypeReference defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
 
-'IdeDescriptorRenderers' @ [42:73] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE' @ [42:96] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderType' @ [42:108] ==> public abstract fun renderType(type: KotlinType): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -57,7 +55,7 @@ Inferred types:
 
 'diagnostic' @ [48:62] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeTypeFix.Companion.getElementOfInterest[ValueParameterDescriptorImpl]
 
-'psiElement' @ [48:74] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtParameter..KtParameter?), (KotlinType..KotlinType?)>.psiElement: (KtParameter..KtParameter?)[MyPropertyDescriptor]
+'psiElement' @ [48:74] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtParameter..KtParameter?), (KotlinType..KotlinType?)>.psiElement: KtParameter[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -70,7 +68,7 @@ Inferred types:
 
 'diagnostic' @ [51:62] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeTypeFix.Companion.extractFixData[ValueParameterDescriptorImpl]
 
-'a' @ [51:74] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtParameter..KtParameter?), (KotlinType..KotlinType?)>.a: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'a' @ [51:74] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtParameter..KtParameter?), (KotlinType..KotlinType?)>.a: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)

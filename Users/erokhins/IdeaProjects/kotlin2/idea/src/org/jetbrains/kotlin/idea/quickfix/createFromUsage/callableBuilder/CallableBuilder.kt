@@ -6,7 +6,7 @@ Inferred types:
 
 'theType' @ [95:25] ==> public final val theType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate[PropertyDescriptorImpl]
 
-'renderShort' @ [95:33] ==> internal fun KotlinType.renderShort(typeParameterNameMap: Map<TypeParameterDescriptor, String>): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'renderShort' @ [95:33] ==> internal fun KotlinType.renderShort(typeParameterNameMap: Map<TypeParameterDescriptor, String>): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameterNameMap' @ [95:45] ==> value-parameter typeParameterNameMap: Map<TypeParameterDescriptor, String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate.render[ValueParameterDescriptorImpl]
 
@@ -35,7 +35,7 @@ Inferred types:
 
 'theType' @ [102:36] ==> public final val theType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate[PropertyDescriptorImpl]
 
-'getTypeParameters' @ [102:44] ==> public fun KotlinType.getTypeParameters(): Set<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getTypeParameters' @ [102:44] ==> public fun KotlinType.getTypeParameters(): Set<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'if (scope == null) {
             typeParameters = typeParametersInType.toTypedArray()
@@ -61,16 +61,16 @@ Inferred types:
 
 'theType' @ [105:29] ==> public final val theType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate[PropertyDescriptorImpl]
 
-'renderShort' @ [105:37] ==> internal fun KotlinType.renderShort(typeParameterNameMap: Map<TypeParameterDescriptor, String>): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'renderShort' @ [105:37] ==> internal fun KotlinType.renderShort(typeParameterNameMap: Map<TypeParameterDescriptor, String>): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'emptyMap' @ [105:61] ==> public final fun <K : (Any..Any?), V : (Any..Any?)> emptyMap(): (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (String..String?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> TypeParameterDescriptor
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'typeParameters' @ [108:13] ==> public final val typeParameters: Array<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate[PropertyDescriptorImpl]
 
-'getTypeParameterNamesNotInScope' @ [108:30] ==> internal fun getTypeParameterNamesNotInScope(typeParameters: Collection<TypeParameterDescriptor>, scope: HierarchicalScope): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getTypeParameterNamesNotInScope' @ [108:30] ==> internal fun getTypeParameterNamesNotInScope(typeParameters: Collection<TypeParameterDescriptor>, scope: HierarchicalScope): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'typeParametersInType' @ [108:62] ==> val typeParametersInType: Set<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate.<init>[LocalVariableDescriptor]
 
@@ -122,9 +122,9 @@ Inferred types:
 
 'moduleDescriptor' @ [147:36] ==> public final val moduleDescriptor: ModuleDescriptor defined in org.jetbrains.kotlin.analyzer.AnalysisResult[DeserializedPropertyDescriptor]
 
-'lazy' @ [150:36] ==> public fun <T> lazy(initializer: () -> Pseudocode?): Lazy<Pseudocode?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [150:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Pseudocode?
+    <T> -> T
 
 'config' @ [150:43] ==> public final val config: CallableBuilderConfiguration defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder[PropertyDescriptorImpl]
 
@@ -214,7 +214,7 @@ Inferred types:
 
 'LinkedHashSet' @ [176:28] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (EqWrapper..EqWrapper?)>..Collection<(EqWrapper..EqWrapper?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> EqWrapper
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper?)
 
 'types' @ [176:42] ==> val types: List<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
 
@@ -223,16 +223,18 @@ Inferred types:
     <T> -> KotlinType
     <R> -> EqWrapper
 
+'EqWrapper' @ [176:54] ==> public constructor EqWrapper(_type: KotlinType) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper[ClassConstructorDescriptorImpl]
+
 'substitutions' @ [177:34] ==> value-parameter substitutions: List<KotlinTypeSubstitution> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates[ValueParameterDescriptorImpl]
 
-'newTypes' @ [179:29] ==> val newTypes: LinkedHashSet<EqWrapper> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
+'newTypes' @ [179:29] ==> val newTypes: LinkedHashSet<(EqWrapper..EqWrapper?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
 
-'map' @ [179:38] ==> public inline fun <T, R> Iterable<EqWrapper>.map(transform: (EqWrapper) -> KotlinType): List<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [179:38] ==> public inline fun <T, R> Iterable<(EqWrapper..EqWrapper?)>.map(transform: ((EqWrapper..EqWrapper?)) -> KotlinType): List<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> EqWrapper
+    <T> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper?)
     <R> -> KotlinType
 
-'it' @ [179:44] ==> value-parameter it: EqWrapper defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [179:44] ==> value-parameter it: (EqWrapper..EqWrapper?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 '_type' @ [179:47] ==> public final val _type: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper[PropertyDescriptorImpl]
 
@@ -244,23 +246,23 @@ Inferred types:
 
 'variance' @ [179:87] ==> public final val variance: Variance defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo[PropertyDescriptorImpl]
 
-'newTypes' @ [181:32] ==> val newTypes: LinkedHashSet<EqWrapper> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
+'newTypes' @ [181:32] ==> val newTypes: LinkedHashSet<(EqWrapper..EqWrapper?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
 
-'filter' @ [181:41] ==> public inline fun <T> Iterable<EqWrapper>.filter(predicate: (EqWrapper) -> Boolean): List<EqWrapper> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'filter' @ [181:41] ==> public inline fun <T> Iterable<(EqWrapper..EqWrapper?)>.filter(predicate: ((EqWrapper..EqWrapper?)) -> Boolean): List<(EqWrapper..EqWrapper?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> EqWrapper
+    <T> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper?)
 
 'substitution' @ [181:50] ==> val substitution: KotlinTypeSubstitution defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
 
 'byType' @ [181:63] ==> public final val byType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.KotlinTypeSubstitution[PropertyDescriptorImpl]
 
-'it' @ [181:73] ==> value-parameter it: EqWrapper defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [181:73] ==> value-parameter it: (EqWrapper..EqWrapper?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 '_type' @ [181:76] ==> public final val _type: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper[PropertyDescriptorImpl]
 
-'newTypes' @ [183:17] ==> val newTypes: LinkedHashSet<EqWrapper> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
+'newTypes' @ [183:17] ==> val newTypes: LinkedHashSet<(EqWrapper..EqWrapper?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
 
-'addAll' @ [183:26] ==> public open fun addAll(elements: Collection<EqWrapper>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
+'addAll' @ [183:26] ==> public open fun addAll(elements: Collection<(EqWrapper..EqWrapper?)>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
 'toAdd' @ [183:33] ==> val toAdd: List<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
 
@@ -269,19 +271,21 @@ Inferred types:
     <T> -> KotlinType
     <R> -> EqWrapper
 
-'newTypes' @ [184:17] ==> val newTypes: LinkedHashSet<EqWrapper> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
+'EqWrapper' @ [183:45] ==> public constructor EqWrapper(_type: KotlinType) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper[ClassConstructorDescriptorImpl]
 
-'removeAll' @ [184:26] ==> public open fun removeAll(elements: Collection<EqWrapper>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
+'newTypes' @ [184:17] ==> val newTypes: LinkedHashSet<(EqWrapper..EqWrapper?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
 
-'toRemove' @ [184:36] ==> val toRemove: List<EqWrapper> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
+'removeAll' @ [184:26] ==> public open fun removeAll(elements: Collection<(EqWrapper..EqWrapper?)>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
-'newTypes' @ [187:17] ==> val newTypes: LinkedHashSet<EqWrapper> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
+'toRemove' @ [184:36] ==> val toRemove: List<(EqWrapper..EqWrapper?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
+
+'newTypes' @ [187:17] ==> val newTypes: LinkedHashSet<(EqWrapper..EqWrapper?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
 
 'isEmpty' @ [187:26] ==> public open fun isEmpty(): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
-'newTypes' @ [188:17] ==> val newTypes: LinkedHashSet<EqWrapper> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
+'newTypes' @ [188:17] ==> val newTypes: LinkedHashSet<(EqWrapper..EqWrapper?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
 
-'add' @ [188:26] ==> public open fun add(element: EqWrapper): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
+'add' @ [188:26] ==> public open fun add(element: (EqWrapper..EqWrapper?)): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
 'EqWrapper' @ [188:30] ==> public constructor EqWrapper(_type: KotlinType) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper[ClassConstructorDescriptorImpl]
 
@@ -291,16 +295,16 @@ Inferred types:
 
 'anyType' @ [188:67] ==> public final val KotlinBuiltIns.anyType: SimpleType[MyPropertyDescriptor]
 
-'newTypes' @ [191:13] ==> val newTypes: LinkedHashSet<EqWrapper> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
+'newTypes' @ [191:13] ==> val newTypes: LinkedHashSet<(EqWrapper..EqWrapper?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>[LocalVariableDescriptor]
 
-'map' @ [191:22] ==> public inline fun <T, R> Iterable<EqWrapper>.map(transform: (EqWrapper) -> TypeCandidate): List<TypeCandidate> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [191:22] ==> public inline fun <T, R> Iterable<(EqWrapper..EqWrapper?)>.map(transform: ((EqWrapper..EqWrapper?)) -> TypeCandidate): List<TypeCandidate> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> EqWrapper
+    <T> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper?)
     <R> -> TypeCandidate
 
 'TypeCandidate' @ [191:28] ==> public constructor TypeCandidate(theType: KotlinType, scope: HierarchicalScope? = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate[ClassConstructorDescriptorImpl]
 
-'it' @ [191:42] ==> value-parameter it: EqWrapper defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [191:42] ==> value-parameter it: (EqWrapper..EqWrapper?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 '_type' @ [191:45] ==> public final val _type: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.computeTypeCandidates.<anonymous>.EqWrapper[PropertyDescriptorImpl]
 
@@ -417,10 +421,10 @@ Inferred types:
 
 'receiverClassDescriptor' @ [237:21] ==> public final val receiverClassDescriptor: ClassifierDescriptor? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context[PropertyDescriptorImpl]
 
-'with' @ [237:47] ==> @InlineOnly public inline fun <T, R> with(receiver: PsiElement, block: PsiElement.() -> ClassDescriptor?): ClassDescriptor? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [237:47] ==> @InlineOnly public inline fun <T, R> with(receiver: PsiElement, block: PsiElement.() -> ClassifierDescriptor?): ClassifierDescriptor? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiElement
-    <R> -> ClassDescriptor?
+    <R> -> ClassifierDescriptor?
 
 'placement' @ [237:53] ==> val placement: CallablePlacement? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.<init>[LocalVariableDescriptor]
 
@@ -430,9 +434,9 @@ Inferred types:
                             is KtClassOrObject -> currentFileContext[BindingContext.CLASS, this]
                             is PsiClass -> getJavaClassDescriptor()
                             else -> null
-                        }' @ [238:25] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: ClassDescriptor?, entry1: ClassDescriptor?, entry2: ClassDescriptor?): ClassDescriptor?[SimpleFunctionDescriptorImpl]
+                        }' @ [238:25] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: ClassifierDescriptor?, entry1: ClassifierDescriptor?, entry2: ClassifierDescriptor?): ClassifierDescriptor?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> ClassDescriptor?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> ClassifierDescriptor?
 
 'this' @ [238:31] ==> <this> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.<init>.<anonymous>[ReceiverParameterDescriptorImpl]
 
@@ -791,7 +795,7 @@ Inferred types:
 
 'emptyList' @ [311:67] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeCandidate..TypeCandidate?)>..List<(TypeCandidate..TypeCandidate?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeCandidate
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate?)
 
 'substitutions' @ [313:13] ==> public final val substitutions: List<KotlinTypeSubstitution> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context[PropertyDescriptorImpl]
 
@@ -1035,11 +1039,11 @@ Inferred types:
 
 'emptyList' @ [366:78] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeProjection..TypeProjection?)>..List<(TypeProjection..TypeProjection?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeProjection
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.TypeProjection..org.jetbrains.kotlin.types.TypeProjection?)
 
-'?:' @ [367:38] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<TypeProjection>?, right: (List<TypeProjection>..List<TypeProjection>?)): (List<TypeProjection>..List<TypeProjection>?)[SimpleFunctionDescriptorImpl]
+'?:' @ [367:38] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<TypeProjection>?, right: List<TypeProjection>): List<TypeProjection>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> (kotlin.collections.List<org.jetbrains.kotlin.types.TypeProjection>..kotlin.collections.List<org.jetbrains.kotlin.types.TypeProjection>?)
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<TypeProjection>
 
 'placement' @ [367:39] ==> public final var placement: CallablePlacement? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder[PropertyDescriptorImpl]
 
@@ -1051,26 +1055,26 @@ Inferred types:
 
 'emptyList' @ [368:53] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeProjection..TypeProjection?)>..List<(TypeProjection..TypeProjection?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeProjection
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.TypeProjection..org.jetbrains.kotlin.types.TypeProjection?)
 
 'assert' @ [369:13] ==> @InlineOnly public inline fun assert(value: Boolean): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'ownerTypeArguments' @ [369:20] ==> val ownerTypeArguments: (List<TypeProjection>..List<TypeProjection>?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.collectSubstitutionsForReceiverTypeParameters[LocalVariableDescriptor]
+'ownerTypeArguments' @ [369:20] ==> val ownerTypeArguments: List<TypeProjection> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.collectSubstitutionsForReceiverTypeParameters[LocalVariableDescriptor]
 
 'size' @ [369:39] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'classTypeParameters' @ [369:47] ==> val classTypeParameters: (List<TypeProjection>..List<TypeProjection>?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.collectSubstitutionsForReceiverTypeParameters[LocalVariableDescriptor]
+'classTypeParameters' @ [369:47] ==> val classTypeParameters: List<TypeProjection> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.collectSubstitutionsForReceiverTypeParameters[LocalVariableDescriptor]
 
 'size' @ [369:67] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'ownerTypeArguments' @ [370:13] ==> val ownerTypeArguments: (List<TypeProjection>..List<TypeProjection>?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.collectSubstitutionsForReceiverTypeParameters[LocalVariableDescriptor]
+'ownerTypeArguments' @ [370:13] ==> val ownerTypeArguments: List<TypeProjection> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.collectSubstitutionsForReceiverTypeParameters[LocalVariableDescriptor]
 
 'zip' @ [370:32] ==> public infix fun <T, R> Iterable<TypeProjection>.zip(other: Iterable<TypeProjection>): List<Pair<TypeProjection, TypeProjection>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TypeProjection
     <R> -> TypeProjection
 
-'classTypeParameters' @ [370:36] ==> val classTypeParameters: (List<TypeProjection>..List<TypeProjection>?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.collectSubstitutionsForReceiverTypeParameters[LocalVariableDescriptor]
+'classTypeParameters' @ [370:36] ==> val classTypeParameters: List<TypeProjection> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.collectSubstitutionsForReceiverTypeParameters[LocalVariableDescriptor]
 
 'forEach' @ [370:57] ==> @HidesMembers public inline fun <T> Iterable<Pair<TypeProjection, TypeProjection>>.forEach(action: (Pair<TypeProjection, TypeProjection>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1121,8 +1125,6 @@ Inferred types:
 
 'FqName' @ [384:73] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
-'Annotations' @ [385:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [385:33] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'identifier' @ [386:26] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
@@ -1163,8 +1165,6 @@ Inferred types:
 'createWithDefaultBound' @ [394:45] ==> @NotNull public open fun createWithDefaultBound(@NotNull p0: DeclarationDescriptor, @NotNull p1: Annotations, p2: Boolean, @NotNull p3: Variance, @NotNull p4: Name, p5: Int): TypeParameterDescriptor defined in org.jetbrains.kotlin.descriptors.impl.TypeParameterDescriptorImpl[JavaMethodDescriptor]
 
 'fakeFunction' @ [395:25] ==> val fakeFunction: SimpleFunctionDescriptorImpl defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.createFakeFunctionDescriptor[LocalVariableDescriptor]
-
-'Annotations' @ [396:25] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [396:37] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -2064,7 +2064,7 @@ Inferred types:
 
 'theType' @ [579:64] ==> public final val theType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate[PropertyDescriptorImpl]
 
-'renderLong' @ [579:72] ==> internal fun KotlinType.renderLong(typeParameterNameMap: Map<TypeParameterDescriptor, String>): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'renderLong' @ [579:72] ==> internal fun KotlinType.renderLong(typeParameterNameMap: Map<TypeParameterDescriptor, String>): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameterNameMap' @ [579:83] ==> public final val typeParameterNameMap: Map<TypeParameterDescriptor, String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context[PropertyDescriptorImpl]
 
@@ -2098,7 +2098,7 @@ Inferred types:
 
 'declaration' @ [585:34] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.setupTypeReferencesForShortening[ValueParameterDescriptorImpl]
 
-'getReturnTypeReferences' @ [585:46] ==> internal fun KtNamedDeclaration.getReturnTypeReferences(): List<KtTypeReference> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getReturnTypeReferences' @ [585:46] ==> internal fun KtNamedDeclaration.getReturnTypeReferences(): List<KtTypeReference> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'returnTypeRefs' @ [586:17] ==> val returnTypeRefs: List<KtTypeReference> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.setupTypeReferencesForShortening[LocalVariableDescriptor]
 
@@ -2112,7 +2112,7 @@ Inferred types:
 
 'returnTypeInfo' @ [587:62] ==> public final val returnTypeInfo: TypeInfo defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableInfo[PropertyDescriptorImpl]
 
-'getTypeByRenderedType' @ [587:80] ==> public fun List<TypeCandidate>.getTypeByRenderedType(renderedTypes: List<String>): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getTypeByRenderedType' @ [587:80] ==> public fun List<TypeCandidate>.getTypeByRenderedType(renderedTypes: List<String>): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'returnTypeRefs' @ [588:25] ==> val returnTypeRefs: List<KtTypeReference> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.setupTypeReferencesForShortening[LocalVariableDescriptor]
 
@@ -2139,7 +2139,7 @@ Inferred types:
 
 'declaration' @ [593:46] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.setupTypeReferencesForShortening[ValueParameterDescriptorImpl]
 
-'getReturnTypeReferences' @ [593:58] ==> internal fun KtNamedDeclaration.getReturnTypeReferences(): List<KtTypeReference> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getReturnTypeReferences' @ [593:58] ==> internal fun KtNamedDeclaration.getReturnTypeReferences(): List<KtTypeReference> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [597:35] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.setupTypeReferencesForShortening[ValueParameterDescriptorImpl]
 
@@ -2185,7 +2185,7 @@ Inferred types:
 
 'typeCandidates' @ [603:69] ==> public final val typeCandidates: List<TypeCandidate> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeExpression[PropertyDescriptorImpl]
 
-'getTypeByRenderedType' @ [603:84] ==> public fun List<TypeCandidate>.getTypeByRenderedType(renderedTypes: List<String>): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getTypeByRenderedType' @ [603:84] ==> public fun List<TypeCandidate>.getTypeByRenderedType(renderedTypes: List<String>): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [604:29] ==> public fun <T> listOf(element: (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -2636,7 +2636,7 @@ Inferred types:
 
 'declaration' @ [715:17] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.setupTypeParameterListTemplate[ValueParameterDescriptorImpl]
 
-'getReturnTypeReference' @ [715:29] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getReturnTypeReference' @ [715:29] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'typeCandidates' @ [716:17] ==> private final val typeCandidates: HashMap<TypeInfo, List<TypeCandidate>> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder[PropertyDescriptorImpl]
 
@@ -2877,7 +2877,7 @@ Inferred types:
 
 'theType' @ [772:50] ==> value-parameter theType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context.replaceWithLongerName[ValueParameterDescriptorImpl]
 
-'renderLong' @ [772:58] ==> internal fun KotlinType.renderLong(typeParameterNameMap: Map<TypeParameterDescriptor, String>): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'renderLong' @ [772:58] ==> internal fun KotlinType.renderLong(typeParameterNameMap: Map<TypeParameterDescriptor, String>): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameterNameMap' @ [772:69] ==> public final val typeParameterNameMap: Map<TypeParameterDescriptor, String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context[PropertyDescriptorImpl]
 
@@ -3536,9 +3536,9 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtNamedDeclaration
 
-'findElementOfClassAtOffset' @ [930:58] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<out (KtNamedDeclaration..KtNamedDeclaration?)>, p3: Boolean): KtNamedDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'findElementOfClassAtOffset' @ [930:58] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<out KtNamedDeclaration>, p3: Boolean): KtNamedDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> Captured(out KtNamedDeclaration)
 
 'jetFileToEdit' @ [930:85] ==> public final val jetFileToEdit: KtFile defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableBuilder.Context[PropertyDescriptorImpl]
 
@@ -3550,7 +3550,7 @@ Inferred types:
 
 'java' @ [932:104] ==> public val <T> KClass<out KtNamedDeclaration>.java: Class<out KtNamedDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtNamedDeclaration
+    <T> -> Captured(out KtNamedDeclaration)
 
 'runWriteAction' @ [935:25] ==> public fun <T> runWriteAction(action: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -3599,7 +3599,7 @@ Inferred types:
 
 'emptyList' @ [949:118] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeParameterDescriptor..TypeParameterDescriptor?)>..List<(TypeParameterDescriptor..TypeParameterDescriptor?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeParameterDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
 'getInstance' @ [952:46] ==> public open fun getInstance(@NotNull p0: Project): (CodeStyleManager..CodeStyleManager?) defined in com.intellij.psi.codeStyle.CodeStyleManager[JavaMethodDescriptor]
 
@@ -4058,7 +4058,7 @@ Inferred types:
 
 'declarationInPlace' @ [1092:12] ==> val declarationInPlace: D defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.placeDeclarationInContainer[LocalVariableDescriptor]
 
-'getReturnTypeReferences' @ [1095:60] ==> internal fun KtNamedDeclaration.getReturnTypeReferences(): List<KtTypeReference> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getReturnTypeReferences' @ [1095:60] ==> internal fun KtNamedDeclaration.getReturnTypeReferences(): List<KtTypeReference> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'singleOrNull' @ [1095:86] ==> public fun <T> List<KtTypeReference>.singleOrNull(): KtTypeReference? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

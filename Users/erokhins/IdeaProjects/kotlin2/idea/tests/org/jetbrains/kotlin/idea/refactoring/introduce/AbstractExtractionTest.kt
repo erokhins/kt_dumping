@@ -63,15 +63,15 @@ Inferred types:
 
 'copy' @ [107:25] ==> public final fun copy(originalRange: KotlinPsiRange = ..., callable: KtNamedDeclaration = ..., callableDescriptor: FunctionDescriptor = ..., newParameterName: String = ..., newParameterTypeText: String = ..., argumentValue: KtExpression = ..., withDefaultValue: Boolean = ..., parametersUsages: MultiMap<KtElement, KtElement> = ..., occurrencesToReplace: List<KotlinPsiRange> = ..., parametersToRemove: List<KtElement> = ..., occurrenceReplacer: IntroduceParameterDescriptor.(KotlinPsiRange) -> Unit = ...): IntroduceParameterDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.IntroduceParameterDescriptor[DeserializedSimpleFunctionDescriptor]
 
-'if (singleReplace) Collections.singletonList(originalOccurrence) else occurrencesToReplace' @ [107:53] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<KotlinPsiRange>, elseBranch: List<KotlinPsiRange>): List<KotlinPsiRange>[SimpleFunctionDescriptorImpl]
+'if (singleReplace) Collections.singletonList(originalOccurrence) else occurrencesToReplace' @ [107:53] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<(KotlinPsiRange..KotlinPsiRange?)>..List<KotlinPsiRange>?), elseBranch: (List<(KotlinPsiRange..KotlinPsiRange?)>..List<KotlinPsiRange>?)): (List<(KotlinPsiRange..KotlinPsiRange?)>..List<KotlinPsiRange>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<KotlinPsiRange>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.List<(org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange..org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange?)>..kotlin.collections.List<org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange>?)
 
 'singleReplace' @ [107:57] ==> val singleReplace: Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.AbstractExtractionTest.doIntroduceParameterTest.<anonymous>.HelperImpl.configure.<anonymous>[LocalVariableDescriptor]
 
 'singletonList' @ [107:84] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KotlinPsiRange..KotlinPsiRange?)): (MutableList<(KotlinPsiRange..KotlinPsiRange?)>..List<(KotlinPsiRange..KotlinPsiRange?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinPsiRange
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange..org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange?)
 
 'originalOccurrence' @ [107:98] ==> public final val originalOccurrence: KotlinPsiRange defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.IntroduceParameterDescriptor[DeserializedPropertyDescriptor]
 
@@ -414,8 +414,6 @@ Inferred types:
 'descriptorWithConflicts' @ [241:37] ==> value-parameter descriptorWithConflicts: ExtractableCodeDescriptorWithConflicts defined in org.jetbrains.kotlin.idea.refactoring.introduce.AbstractExtractionTest.doIntroducePropertyTest.<anonymous>.<no name provided>.configureAndRun[ValueParameterDescriptorImpl]
 
 'descriptor' @ [241:61] ==> public final val descriptor: ExtractableCodeDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractableCodeDescriptorWithConflicts[DeserializedPropertyDescriptor]
-
-'ExtractionGeneratorOptions' @ [242:37] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorOptions[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [242:64] ==> @field:JvmField public final val DEFAULT: ExtractionGeneratorOptions defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorOptions.Companion[DeserializedPropertyDescriptor]
 
@@ -787,7 +785,7 @@ Inferred types:
 
 'mockJdk' @ [346:89] ==> @NotNull public open fun mockJdk(): Sdk defined in org.jetbrains.kotlin.idea.test.PluginTestCaseBase[JavaMethodDescriptor]
 
-'checkExtract' @ [350:13] ==> public fun checkExtract(files: ExtractTestFiles, checkAdditionalAfterdata: Boolean = ..., action: (PsiFile) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce[SimpleFunctionDescriptorImpl]
+'checkExtract' @ [350:13] ==> public fun checkExtract(files: ExtractTestFiles, checkAdditionalAfterdata: Boolean = ..., action: (PsiFile) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce in file AbstractExtractionTest.kt[SimpleFunctionDescriptorImpl]
 
 'ExtractTestFiles' @ [350:26] ==> public constructor ExtractTestFiles(path: String, mainFile: PsiFile, extraFilesToPsi: Map<PsiFile, File> = ...) defined in org.jetbrains.kotlin.idea.refactoring.introduce.ExtractTestFiles[ClassConstructorDescriptorImpl]
 
@@ -929,7 +927,7 @@ Inferred types:
 
 'java' @ [393:22] ==> public val <T> KClass<out RuntimeException /* = RuntimeException */>.java: Class<out RuntimeException /* = RuntimeException */> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> RuntimeException
+    <T> -> Captured(out RuntimeException)
 
 'RuntimeException' @ [393:30] ==> public final fun <init>(): RuntimeException /* = RuntimeException */ defined in kotlin.RuntimeException[TypeAliasConstructorDescriptorImpl]
 
@@ -1044,7 +1042,7 @@ Inferred types:
 
 'parameterTypes' @ [412:67] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterTypes: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'size' @ [412:82] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
@@ -1055,8 +1053,6 @@ Inferred types:
 'newInstance' @ [412:102] ==> @CallerSensitive public open fun newInstance(vararg p0: (Any..Any?)): (Any..Any?) defined in java.lang.reflect.Constructor[JavaMethodDescriptor]
 
 'args' @ [412:115] ==> val args: Array<Any?> defined in org.jetbrains.kotlin.idea.refactoring.introduce.doExtractFunction.<anonymous>[LocalVariableDescriptor]
-
-'ExtractionOptions' @ [413:16] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionOptions[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [413:34] ==> public final val DEFAULT: ExtractionOptions defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionOptions.Companion[DeserializedPropertyDescriptor]
 
@@ -1235,7 +1231,7 @@ Inferred types:
 
 'singletonList' @ [452:70] ==> public open fun <T : (Any..Any?)> singletonList(p0: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'descriptor' @ [455:25] ==> val descriptor: ExtractableCodeDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.doExtractFunction.<no name provided>.configureAndRun[LocalVariableDescriptor]
 
@@ -1244,8 +1240,6 @@ Inferred types:
 'ExtractionGeneratorConfiguration' @ [458:32] ==> public constructor ExtractionGeneratorConfiguration(descriptor: ExtractableCodeDescriptor, generatorOptions: ExtractionGeneratorOptions) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorConfiguration[DeserializedClassConstructorDescriptor]
 
 'newDescriptor' @ [458:65] ==> val newDescriptor: ExtractableCodeDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.doExtractFunction.<no name provided>.configureAndRun[LocalVariableDescriptor]
-
-'ExtractionGeneratorOptions' @ [458:80] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorOptions[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [458:107] ==> @field:JvmField public final val DEFAULT: ExtractionGeneratorOptions defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorOptions.Companion[DeserializedPropertyDescriptor]
 

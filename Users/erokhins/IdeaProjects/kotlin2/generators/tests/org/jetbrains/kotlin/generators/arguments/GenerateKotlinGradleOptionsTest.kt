@@ -31,5 +31,7 @@ Inferred types:
 
 'upToDateContent' @ [35:71] ==> val upToDateContent: String defined in org.jetbrains.kotlin.generators.arguments.test.GenerateKotlinGradleOptionsTest.testKotlinGradleOptionsAreUpToDate.getPrinter[LocalVariableDescriptor]
 
-'generateKotlinGradleOptions' @ [38:9] ==> public fun generateKotlinGradleOptions(withPrinterToFile: (targetFile: File, Printer.() -> Unit) -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateKotlinGradleOptions' @ [38:9] ==> public fun generateKotlinGradleOptions(withPrinterToFile: (targetFile: File, Printer.() -> Unit) -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
+
+'getPrinter' @ [38:39] ==> local final fun getPrinter(file: File, fn: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments.test.GenerateKotlinGradleOptionsTest.testKotlinGradleOptionsAreUpToDate[SimpleFunctionDescriptorImpl]
 

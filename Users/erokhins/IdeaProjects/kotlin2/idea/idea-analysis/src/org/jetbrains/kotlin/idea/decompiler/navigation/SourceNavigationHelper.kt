@@ -36,7 +36,7 @@ Inferred types:
 
 'CLASS_FILES_TO_SOURCES' @ [67:28] ==> enum entry CLASS_FILES_TO_SOURCES defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.NavigationKind[FakeCallableDescriptorForObject]
 
-'getBinaryLibrariesModuleInfos' @ [67:54] ==> public fun getBinaryLibrariesModuleInfos(project: Project, virtualFile: VirtualFile): Collection<BinaryModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'getBinaryLibrariesModuleInfos' @ [67:54] ==> public fun getBinaryLibrariesModuleInfos(project: Project, virtualFile: VirtualFile): Collection<BinaryModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [67:84] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.targetScope[ValueParameterDescriptorImpl]
 
@@ -59,7 +59,7 @@ Inferred types:
 
 'SOURCES_TO_CLASS_FILES' @ [70:28] ==> enum entry SOURCES_TO_CLASS_FILES defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.NavigationKind[FakeCallableDescriptorForObject]
 
-'getLibrarySourcesModuleInfos' @ [70:54] ==> public fun getLibrarySourcesModuleInfos(project: Project, virtualFile: VirtualFile): Collection<LibrarySourceInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'getLibrarySourcesModuleInfos' @ [70:54] ==> public fun getLibrarySourcesModuleInfos(project: Project, virtualFile: VirtualFile): Collection<LibrarySourceInfo> defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [70:83] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.targetScope[ValueParameterDescriptorImpl]
 
@@ -266,7 +266,7 @@ Inferred types:
 
 'java' @ [125:100] ==> public val <T> KClass<out KtNamedDeclaration>.java: Class<out KtNamedDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtNamedDeclaration
+    <T> -> Captured(out KtNamedDeclaration)
 
 'orEmpty' @ [126:19] ==> @InlineOnly public inline fun <T> List<KtNamedDeclaration>?.orEmpty(): List<KtNamedDeclaration> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -300,13 +300,13 @@ Inferred types:
 
 'decompiledContainer' @ [137:49] ==> val decompiledContainer: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.convertPropertyOrFunction[LocalVariableDescriptor]
 
-'java' @ [137:76] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [137:76] ==> public val <T> KClass<out (PsiElement..PsiElement?)>.java: Class<out (PsiElement..PsiElement?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
 
-'simpleName' @ [137:81] ==> public final val <T : (Any..Any?)> Class<out PsiElement>.simpleName: (String..String?)[MyPropertyDescriptor]
+'simpleName' @ [137:81] ==> public final val <T : (Any..Any?)> Class<out (PsiElement..PsiElement?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
 
 'candidates' @ [140:13] ==> var candidates: Collection<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.convertPropertyOrFunction[LocalVariableDescriptor]
 
@@ -346,7 +346,7 @@ Inferred types:
 
 'candidates' @ [151:39] ==> var candidates: Collection<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.convertPropertyOrFunction[LocalVariableDescriptor]
 
-'getContainingFiles' @ [151:50] ==> private fun Collection<KtNamedDeclaration>.getContainingFiles(): Collection<KtFile> defined in org.jetbrains.kotlin.idea.decompiler.navigation[SimpleFunctionDescriptorImpl]
+'getContainingFiles' @ [151:50] ==> private fun Collection<KtNamedDeclaration>.getContainingFiles(): Collection<KtFile> defined in org.jetbrains.kotlin.idea.decompiler.navigation in file SourceNavigationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'candidates' @ [152:17] ==> var candidates: Collection<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.convertPropertyOrFunction[LocalVariableDescriptor]
 
@@ -490,11 +490,11 @@ Inferred types:
 
 'java' @ [202:116] ==> public val <T> KClass<out KtNamedDeclaration>.java: Class<out KtNamedDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtNamedDeclaration
+    <T> -> Captured(out KtNamedDeclaration)
 
 'name' @ [202:121] ==> public final val <T : (Any..Any?)> Class<out KtNamedDeclaration>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtNamedDeclaration
+    <T : (Any..Any?)> -> Captured(out KtNamedDeclaration)
 
 'sourceClassOrObject' @ [209:9] ==> value-parameter sourceClassOrObject: KtClassOrObject defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.getInitialMemberCandidates[ValueParameterDescriptorImpl]
 
@@ -502,7 +502,7 @@ Inferred types:
 
 'filterIsInstance' @ [209:42] ==> public fun <R> Iterable<*>.filterIsInstance(klass: Class<out KtNamedDeclaration>): List<KtNamedDeclaration> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <R> -> KtNamedDeclaration
+    <R> -> Captured(out KtNamedDeclaration)
 
 'declarationClass' @ [209:59] ==> value-parameter declarationClass: Class<out KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.getInitialMemberCandidates[ValueParameterDescriptorImpl]
 
@@ -752,8 +752,6 @@ Inferred types:
 'typeAlias' @ [298:44] ==> value-parameter typeAlias: KtTypeAlias defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.SourceAndDecompiledConversionVisitor.visitTypeAlias[ValueParameterDescriptorImpl]
 
 'navigationKind' @ [298:55] ==> private final val navigationKind: SourceNavigationHelper.NavigationKind defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper.SourceAndDecompiledConversionVisitor[PropertyDescriptorImpl]
-
-'KotlinTopLevelTypeAliasFqNameIndex' @ [298:71] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex[FakeCallableDescriptorForObject]
 
 'getInstance' @ [298:106] ==> @JvmStatic public final fun getInstance(): KotlinTopLevelTypeAliasFqNameIndex defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex.Companion[SimpleFunctionDescriptorImpl]
 

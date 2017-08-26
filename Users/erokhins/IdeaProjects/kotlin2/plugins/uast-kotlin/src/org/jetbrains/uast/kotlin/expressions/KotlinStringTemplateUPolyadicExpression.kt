@@ -1,8 +1,8 @@
 'KotlinAbstractUExpression' @ [28:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [32:49] ==> internal fun <T> lz(initializer: () -> List<UExpression>): Lazy<List<UExpression>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [32:49] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UExpression>
+    <T> -> T
 
 'psi' @ [32:54] ==> public open val psi: KtStringTemplateExpression defined in org.jetbrains.uast.kotlin.KotlinStringTemplateUPolyadicExpression[PropertyDescriptorImpl]
 
@@ -13,7 +13,9 @@ Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.KtStringTemplateEntry..org.jetbrains.kotlin.psi.KtStringTemplateEntry?)
     <R> -> UExpression
 
-'KotlinConverter' @ [32:72] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
+'!!' @ [32:72] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: UExpression?): UExpression[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> UExpression
 
 'convertEntry' @ [32:88] ==> internal final fun convertEntry(entry: KtStringTemplateEntry, parentCallback: (() -> UElement?)?, requiredType: Class<out UElement>? = ...): UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 

@@ -14,7 +14,7 @@
 
 'declaredMethods' @ [30:55] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredMethods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'single' @ [30:71] ==> public inline fun <T> Array<out (Method..Method?)>.single(predicate: ((Method..Method?)) -> Boolean): (Method..Method?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

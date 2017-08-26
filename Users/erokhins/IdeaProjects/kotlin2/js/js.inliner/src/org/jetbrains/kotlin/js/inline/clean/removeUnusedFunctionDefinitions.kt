@@ -17,7 +17,7 @@ Inferred types:
 
 'accept' @ [35:25] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsNode..JsNode?)): (JsNode..JsNode?) defined in org.jetbrains.kotlin.js.inline.clean.UnusedLocalFunctionsCollector[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsNode
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'it' @ [35:32] ==> value-parameter it: JsNode defined in org.jetbrains.kotlin.js.inline.clean.removeUnusedFunctionDefinitions.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -81,7 +81,7 @@ Inferred types:
 
 'accept' @ [48:29] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsNode..JsNode?)): (JsNode..JsNode?) defined in org.jetbrains.kotlin.js.inline.clean.NodeRemover[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsNode
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'it' @ [48:36] ==> value-parameter it: JsNode defined in org.jetbrains.kotlin.js.inline.clean.removeUnusedFunctionDefinitions.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -225,7 +225,7 @@ Inferred types:
 
 'name' @ [93:35] ==> val name: JsName? defined in org.jetbrains.kotlin.js.inline.clean.UnusedLocalFunctionsCollector.endVisit[LocalVariableDescriptor]
 
-'collectFunctionReferencesInside' @ [98:28] ==> public fun collectFunctionReferencesInside(scope: JsNode): List<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectFunctionReferencesInside' @ [98:28] ==> public fun collectFunctionReferencesInside(scope: JsNode): List<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [98:60] ==> value-parameter function: JsFunction defined in org.jetbrains.kotlin.js.inline.clean.UnusedLocalFunctionsCollector.processLocalFunction[ValueParameterDescriptorImpl]
 
@@ -237,7 +237,7 @@ Inferred types:
 
 'referenced' @ [99:49] ==> val referenced: JsName defined in org.jetbrains.kotlin.js.inline.clean.UnusedLocalFunctionsCollector.processLocalFunction[LocalVariableDescriptor]
 
-'collectFunctionReferencesInside' @ [104:28] ==> public fun collectFunctionReferencesInside(scope: JsNode): List<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectFunctionReferencesInside' @ [104:28] ==> public fun collectFunctionReferencesInside(scope: JsNode): List<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [104:60] ==> value-parameter function: JsFunction defined in org.jetbrains.kotlin.js.inline.clean.UnusedLocalFunctionsCollector.processNonLocalFunction[ValueParameterDescriptorImpl]
 

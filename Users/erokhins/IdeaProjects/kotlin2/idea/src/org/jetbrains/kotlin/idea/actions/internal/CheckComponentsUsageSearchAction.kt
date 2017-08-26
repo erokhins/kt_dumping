@@ -264,7 +264,7 @@ Inferred types:
 
 'getData' @ [111:30] ==> @Nullable public open fun <T : (Any..Any?)> getData(@NotNull p0: DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>): (Array<(VirtualFile..VirtualFile?)>?..Array<out (VirtualFile..VirtualFile?)>?) defined in com.intellij.openapi.actionSystem.AnActionEvent[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Array<(com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>..kotlin.Array<out (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>)
+    <T : (Any..Any?)> -> (kotlin.Array<(com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>..kotlin.Array<out (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>?)
 
 'VIRTUAL_FILE_ARRAY' @ [111:53] ==> public final val VIRTUAL_FILE_ARRAY: (DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>..DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>?) defined in com.intellij.openapi.actionSystem.CommonDataKeys[JavaPropertyDescriptor]
 

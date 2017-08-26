@@ -76,7 +76,7 @@ Inferred types:
 
 'expression' @ [44:67] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.psi.KtExpressionImpl.Companion.replaceExpression[ValueParameterDescriptorImpl]
 
-'createExpressionByPattern' @ [44:79] ==> public fun KtPsiFactory.createExpressionByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtExpression defined in org.jetbrains.kotlin.psi[SimpleFunctionDescriptorImpl]
+'createExpressionByPattern' @ [44:79] ==> public fun KtPsiFactory.createExpressionByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtExpression defined in org.jetbrains.kotlin.psi in file createByPattern.kt[SimpleFunctionDescriptorImpl]
 
 'newElement' @ [44:113] ==> value-parameter newElement: PsiElement defined in org.jetbrains.kotlin.psi.KtExpressionImpl.Companion.replaceExpression[ValueParameterDescriptorImpl]
 

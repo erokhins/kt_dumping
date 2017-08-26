@@ -109,7 +109,7 @@ Inferred types:
 
 'project' @ [95:40] ==> val project: Project defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator.configureKotlinSettings[LocalVariableDescriptor]
 
-'allModules' @ [95:48] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'allModules' @ [95:48] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'all' @ [95:61] ==> public inline fun <T> Iterable<(Module..Module?)>.all(predicate: ((Module..Module?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -155,8 +155,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Unit
 
 'canChangeProjectSettings' @ [98:13] ==> val canChangeProjectSettings: Boolean defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator.configureKotlinSettings[LocalVariableDescriptor]
-
-'Kotlin2JvmCompilerArgumentsHolder' @ [99:13] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder[FakeCallableDescriptorForObject]
 
 'getInstance' @ [99:47] ==> public final fun getInstance(project: Project): Kotlin2JvmCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -211,11 +209,7 @@ Inferred types:
 
 'module' @ [110:54] ==> val module: Module defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator.configureKotlinSettings[LocalVariableDescriptor]
 
-'TargetPlatformKind' @ [110:68] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'Jvm' @ [110:87] ==> public constructor Jvm(version: JvmTarget) defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[DeserializedClassConstructorDescriptor]
-
-'JvmTarget' @ [110:91] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_8' @ [110:101] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -227,10 +221,8 @@ Inferred types:
 
 'findExtension' @ [121:32] ==> @NotNull public open fun <T : (Any..Any?), U : (KotlinProjectConfigurator..KotlinProjectConfigurator?)> findExtension(@NotNull p0: ExtensionPointName<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>, @NotNull p1: Class<(KotlinJavaModuleConfigurator..KotlinJavaModuleConfigurator?)>): KotlinJavaModuleConfigurator defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinProjectConfigurator
-    <U : (T..T?)> -> KotlinJavaModuleConfigurator
-
-'KotlinProjectConfigurator' @ [121:46] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator..org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator?)
+    <U : (T..T?)> -> (org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator..org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator?)
 
 'EP_NAME' @ [121:72] ==> public final val EP_NAME: ExtensionPointName<(KotlinProjectConfigurator..KotlinProjectConfigurator?)> defined in org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator.Companion[PropertyDescriptorImpl]
 

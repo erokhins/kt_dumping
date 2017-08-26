@@ -112,11 +112,11 @@ Inferred types:
 
 'java' @ [91:31] ==> public val <T> KClass<out LexicalWritableScope>.java: Class<out LexicalWritableScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> LexicalWritableScope
+    <T> -> Captured(out LexicalWritableScope)
 
 'simpleName' @ [91:36] ==> public final val <T : (Any..Any?)> Class<out LexicalWritableScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LexicalWritableScope
+    <T : (Any..Any?)> -> Captured(out LexicalWritableScope)
 
 'kind' @ [91:54] ==> public open val kind: LexicalScopeKind defined in org.jetbrains.kotlin.resolve.scopes.LexicalWritableScope[PropertyDescriptorImpl]
 

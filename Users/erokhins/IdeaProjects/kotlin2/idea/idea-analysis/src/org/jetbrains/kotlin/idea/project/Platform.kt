@@ -8,9 +8,9 @@
 
 'builtIns' @ [42:52] ==> public abstract val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.descriptors.ModuleDescriptor[DeserializedPropertyDescriptor]
 
-'lazy' @ [44:49] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [44:49] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'CommonCompilerArguments' @ [45:5] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
 
@@ -73,8 +73,6 @@ Inferred types:
 
 'useProjectSettings' @ [53:23] ==> public final var useProjectSettings: Boolean defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
 
-'KotlinCommonCompilerArgumentsHolder' @ [54:9] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
-
 'getInstance' @ [54:45] ==> public final fun getInstance(project: Project): KotlinCommonCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder.Companion[SimpleFunctionDescriptorImpl]
 
 'project' @ [54:57] ==> public final val Module.project: Project[MyPropertyDescriptor]
@@ -128,10 +126,10 @@ Inferred types:
 
 'JvmOverloads' @ [77:1] ==> public constructor JvmOverloads() defined in kotlin.jvm.JvmOverloads[DeserializedClassConstructorDescriptor]
 
-'emptyMap' @ [79:89] ==> public fun <K, V> emptyMap(): Map<AnalysisFlag<*>, Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [79:89] ==> public fun <K, V> emptyMap(): Map<AnalysisFlag<*>, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> AnalysisFlag<*>
-    <V> -> Nothing
+    <V> -> Any?
 
 'KotlinCommonCompilerArgumentsHolder' @ [80:21] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
 
@@ -141,7 +139,9 @@ Inferred types:
 
 'settings' @ [80:75] ==> public final var settings: CommonCompilerArguments defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[PropertyDescriptorImpl]
 
-'LanguageVersion' @ [82:13] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
+'?:' @ [82:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: LanguageVersion?, right: LanguageVersion?): LanguageVersion?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> LanguageVersion?
 
 'fromVersionString' @ [82:29] ==> @JvmStatic public final fun fromVersionString(str: String?): LanguageVersion? defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -153,15 +153,15 @@ Inferred types:
 
 'getAndCacheLanguageLevelByDependencies' @ [83:31] ==> public fun Module.getAndCacheLanguageLevelByDependencies(): LanguageVersion defined in org.jetbrains.kotlin.idea.project in file Platform.kt[SimpleFunctionDescriptorImpl]
 
-'LanguageVersion' @ [84:16] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'LATEST_STABLE' @ [84:32] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
 
 'ApiVersion' @ [85:22] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
 'createByLanguageVersion' @ [85:33] ==> @JvmStatic public final fun createByLanguageVersion(version: LanguageVersion): ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedSimpleFunctionDescriptor]
 
-'LanguageVersion' @ [85:57] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
+'?:' @ [85:57] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: LanguageVersion?, right: LanguageVersion): LanguageVersion[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> LanguageVersion
 
 'fromVersionString' @ [85:73] ==> @JvmStatic public final fun fromVersionString(str: String?): LanguageVersion? defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -179,17 +179,11 @@ Inferred types:
 
 'settings' @ [86:69] ==> public final var settings: CompilerSettings defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCompilerSettings[PropertyDescriptorImpl]
 
-'getExtraLanguageFeatures' @ [87:33] ==> private fun getExtraLanguageFeatures(targetPlatformKind: TargetPlatformKind<*>, coroutineSupport: LanguageFeature.State, compilerSettings: CompilerSettings?, module: Module?): Map<LanguageFeature, LanguageFeature.State> defined in org.jetbrains.kotlin.idea.project[SimpleFunctionDescriptorImpl]
-
-'TargetPlatformKind' @ [88:13] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
+'getExtraLanguageFeatures' @ [87:33] ==> private fun getExtraLanguageFeatures(targetPlatformKind: TargetPlatformKind<*>, coroutineSupport: LanguageFeature.State, compilerSettings: CompilerSettings?, module: Module?): Map<LanguageFeature, LanguageFeature.State> defined in org.jetbrains.kotlin.idea.project in file Platform.kt[SimpleFunctionDescriptorImpl]
 
 'Common' @ [88:32] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
-'CoroutineSupport' @ [89:13] ==> public object CoroutineSupport defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
-
 'byCompilerArguments' @ [89:30] ==> @JvmStatic public final fun byCompilerArguments(arguments: CommonCompilerArguments?): LanguageFeature.State defined in org.jetbrains.kotlin.config.CoroutineSupport[DeserializedSimpleFunctionDescriptor]
-
-'KotlinCommonCompilerArgumentsHolder' @ [89:50] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
 
 'getInstance' @ [89:86] ==> public final fun getInstance(project: Project): KotlinCommonCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder.Companion[SimpleFunctionDescriptorImpl]
 
@@ -227,7 +221,7 @@ Inferred types:
 
 'project' @ [101:69] ==> public final val Module.project: Project[MyPropertyDescriptor]
 
-'getLanguageVersionSettings' @ [101:77] ==> @JvmOverloads public fun Project.getLanguageVersionSettings(contextModule: Module? = ..., extraAnalysisFlags: Map<AnalysisFlag<*>, Any?> = ...): LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[SimpleFunctionDescriptorImpl]
+'getLanguageVersionSettings' @ [101:77] ==> @JvmOverloads public fun Project.getLanguageVersionSettings(contextModule: Module? = ..., extraAnalysisFlags: Map<AnalysisFlag<*>, Any?> = ...): LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project in file Platform.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [101:104] ==> <this> defined in org.jetbrains.kotlin.idea.project.languageVersionSettings[ReceiverParameterDescriptorImpl]
 
@@ -243,7 +237,7 @@ Inferred types:
 
 'project' @ [103:54] ==> public final val Module.project: Project[MyPropertyDescriptor]
 
-'getLanguageVersionSettings' @ [103:62] ==> @JvmOverloads public fun Project.getLanguageVersionSettings(contextModule: Module? = ..., extraAnalysisFlags: Map<AnalysisFlag<*>, Any?> = ...): LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[SimpleFunctionDescriptorImpl]
+'getLanguageVersionSettings' @ [103:62] ==> @JvmOverloads public fun Project.getLanguageVersionSettings(contextModule: Module? = ..., extraAnalysisFlags: Map<AnalysisFlag<*>, Any?> = ...): LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project in file Platform.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [103:89] ==> <this> defined in org.jetbrains.kotlin.idea.project.languageVersionSettings[ReceiverParameterDescriptorImpl]
 
@@ -259,13 +253,11 @@ Inferred types:
 
 'languageVersion' @ [105:52] ==> val languageVersion: LanguageVersion defined in org.jetbrains.kotlin.idea.project.<get-languageVersionSettings>[LocalVariableDescriptor]
 
-'getExtraLanguageFeatures' @ [107:37] ==> private fun getExtraLanguageFeatures(targetPlatformKind: TargetPlatformKind<*>, coroutineSupport: LanguageFeature.State, compilerSettings: CompilerSettings?, module: Module?): Map<LanguageFeature, LanguageFeature.State> defined in org.jetbrains.kotlin.idea.project[SimpleFunctionDescriptorImpl]
+'getExtraLanguageFeatures' @ [107:37] ==> private fun getExtraLanguageFeatures(targetPlatformKind: TargetPlatformKind<*>, coroutineSupport: LanguageFeature.State, compilerSettings: CompilerSettings?, module: Module?): Map<LanguageFeature, LanguageFeature.State> defined in org.jetbrains.kotlin.idea.project in file Platform.kt[SimpleFunctionDescriptorImpl]
 
 'facetSettings' @ [108:17] ==> val facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.project.<get-languageVersionSettings>[LocalVariableDescriptor]
 
 'targetPlatformKind' @ [108:31] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
-
-'TargetPlatformKind' @ [108:53] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [108:72] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -308,8 +300,6 @@ Inferred types:
 
 'languageVersion' @ [122:17] ==> val languageVersion: LanguageVersion defined in org.jetbrains.kotlin.idea.project.<get-languageVersionSettings>[LocalVariableDescriptor]
 
-'ApiVersion' @ [123:17] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
-
 'createByLanguageVersion' @ [123:28] ==> @JvmStatic public final fun createByLanguageVersion(version: LanguageVersion): ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedSimpleFunctionDescriptor]
 
 'apiVersion' @ [123:52] ==> val apiVersion: LanguageVersion defined in org.jetbrains.kotlin.idea.project.<get-languageVersionSettings>[LocalVariableDescriptor]
@@ -325,7 +315,9 @@ Inferred types:
 
 'extraLanguageFeatures' @ [125:17] ==> val extraLanguageFeatures: Map<LanguageFeature, LanguageFeature.State> defined in org.jetbrains.kotlin.idea.project.<get-languageVersionSettings>[LocalVariableDescriptor]
 
-'KotlinFacetSettingsProvider' @ [130:13] ==> public companion object defined in org.jetbrains.kotlin.config.KotlinFacetSettingsProvider[FakeCallableDescriptorForObject]
+'?:' @ [130:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: TargetPlatformKind<*>?, right: TargetPlatformKind<*>?): TargetPlatformKind<*>?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> TargetPlatformKind<*>?
 
 'getInstance' @ [130:41] ==> public final fun getInstance(project: Project): KotlinFacetSettingsProvider defined in org.jetbrains.kotlin.config.KotlinFacetSettingsProvider.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -341,7 +333,9 @@ Inferred types:
 
 'targetPlatform' @ [130:111] ==> public val Project.targetPlatform: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.project in file Platform.kt[PropertyDescriptorImpl]
 
-'Kotlin2JvmCompilerArgumentsHolder' @ [134:25] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder[FakeCallableDescriptorForObject]
+'?:' @ [134:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String): String[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> String
 
 'getInstance' @ [134:59] ==> public final fun getInstance(project: Project): Kotlin2JvmCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder.Companion[SimpleFunctionDescriptorImpl]
 
@@ -351,7 +345,9 @@ Inferred types:
 
 'jvmTarget' @ [134:86] ==> @GradleOption @Argument public final var jvmTarget: String? defined in org.jetbrains.kotlin.cli.common.arguments.K2JVMCompilerArguments[DeserializedPropertyDescriptor]
 
-'JvmTarget' @ [135:23] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
+'?:' @ [135:23] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: JvmTarget?, right: JvmTarget): JvmTarget[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> JvmTarget
 
 'fromString' @ [135:33] ==> @JvmStatic public final fun fromString(string: String): JvmTarget? defined in org.jetbrains.kotlin.config.JvmTarget.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -364,8 +360,6 @@ Inferred types:
 'version' @ [136:39] ==> val version: JvmTarget defined in org.jetbrains.kotlin.idea.project.<get-targetPlatform>[LocalVariableDescriptor]
 
 'targetPlatform' @ [140:13] ==> public val Module.targetPlatform: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.project in file Platform.kt[PropertyDescriptorImpl]
-
-'TargetPlatformKind' @ [140:31] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [140:50] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -383,8 +377,6 @@ Inferred types:
 
 'targetPlatform' @ [141:74] ==> public val Module.targetPlatform: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.project in file Platform.kt[PropertyDescriptorImpl]
 
-'TargetPlatformKind' @ [141:92] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'Common' @ [141:111] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'mutableMapOf' @ [149:12] ==> @SinceKotlin @InlineOnly public inline fun <K, V> mutableMapOf(): MutableMap<LanguageFeature, LanguageFeature.State> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -398,15 +390,11 @@ Inferred types:
 
 'put' @ [150:9] ==> public abstract fun put(key: LanguageFeature, value: LanguageFeature.State): LanguageFeature.State? defined in kotlin.collections.MutableMap[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [150:13] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'Coroutines' @ [150:29] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'coroutineSupport' @ [150:41] ==> value-parameter coroutineSupport: LanguageFeature.State defined in org.jetbrains.kotlin.idea.project.getExtraLanguageFeatures[ValueParameterDescriptorImpl]
 
 'targetPlatformKind' @ [151:13] ==> value-parameter targetPlatformKind: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.project.getExtraLanguageFeatures[ValueParameterDescriptorImpl]
-
-'TargetPlatformKind' @ [151:35] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [151:54] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -426,11 +414,7 @@ Inferred types:
 
 'put' @ [155:13] ==> public abstract fun put(key: LanguageFeature, value: LanguageFeature.State): LanguageFeature.State? defined in kotlin.collections.MutableMap[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [155:17] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'MultiPlatformProjects' @ [155:33] ==> enum entry MultiPlatformProjects defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
-'LanguageFeature' @ [155:56] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED' @ [155:78] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -438,7 +422,7 @@ Inferred types:
 
 'getService' @ [162:28] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(ProjectFileIndex..ProjectFileIndex?)>): (ProjectFileIndex..ProjectFileIndex?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ProjectFileIndex
+    <T : (Any..Any?)> -> (com.intellij.openapi.roots.ProjectFileIndex..com.intellij.openapi.roots.ProjectFileIndex?)
 
 'containingKtFile' @ [162:39] ==> public final val KtElement.containingKtFile: KtFile[MyPropertyDescriptor]
 
@@ -462,15 +446,13 @@ Inferred types:
 
 'languageVersionSettings' @ [165:62] ==> public val Module.languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project in file Platform.kt[PropertyDescriptorImpl]
 
-'LanguageVersionSettingsImpl' @ [165:89] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [165:117] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 
 '==' @ [170:13] ==> public open fun equals(other: Any?): Boolean defined in com.intellij.openapi.roots.ProjectFileIndex[DeserializedSimpleFunctionDescriptor]
 
 'getService' @ [170:28] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(ProjectFileIndex..ProjectFileIndex?)>): (ProjectFileIndex..ProjectFileIndex?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ProjectFileIndex
+    <T : (Any..Any?)> -> (com.intellij.openapi.roots.ProjectFileIndex..com.intellij.openapi.roots.ProjectFileIndex?)
 
 'containingKtFile' @ [170:39] ==> public final val KtElement.containingKtFile: KtFile[MyPropertyDescriptor]
 
@@ -495,8 +477,6 @@ Inferred types:
 'targetPlatform' @ [173:62] ==> public val Module.targetPlatform: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.project in file Platform.kt[PropertyDescriptorImpl]
 
 'version' @ [173:78] ==> public final val version: TargetPlatformVersion defined in org.jetbrains.kotlin.config.TargetPlatformKind[DeserializedPropertyDescriptor]
-
-'JvmTarget' @ [173:103] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [173:113] ==> @field:JvmField public final val DEFAULT: JvmTarget defined in org.jetbrains.kotlin.config.JvmTarget.Companion[DeserializedPropertyDescriptor]
 

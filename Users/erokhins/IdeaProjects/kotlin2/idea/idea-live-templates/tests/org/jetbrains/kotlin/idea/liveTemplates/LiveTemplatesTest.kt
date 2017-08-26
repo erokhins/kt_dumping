@@ -244,7 +244,7 @@
 
 'invokeAndWaitIfNeeded' @ [279:16] ==> public open fun invokeAndWaitIfNeeded(@NotNull p0: Runnable): Unit defined in com.intellij.util.ui.UIUtil[JavaMethodDescriptor]
 
-'Runnable' @ [279:38] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [279:38] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'getInstance' @ [280:30] ==> public open fun getInstance(): (CommandProcessor..CommandProcessor?) defined in com.intellij.openapi.command.CommandProcessor[JavaMethodDescriptor]
 
@@ -302,13 +302,13 @@
 
 'asList' @ [310:38] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'items' @ [310:46] ==> value-parameter @NonNls vararg items: String defined in org.jetbrains.kotlin.idea.liveTemplates.LiveTemplatesTest.assertStringItems[ValueParameterDescriptorImpl]
 
 'asList' @ [310:61] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'itemStringsSorted' @ [310:69] ==> private final val itemStringsSorted: Array<String> defined in org.jetbrains.kotlin.idea.liveTemplates.LiveTemplatesTest[PropertyDescriptorImpl]
 

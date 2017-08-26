@@ -75,6 +75,8 @@ Inferred types:
     <T> -> UnwrappedType
     <R> -> UnwrappedType
 
+'substitute' @ [65:47] ==> local final fun substitute(type: UnwrappedType): UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components.PostponedArgumentsAnalyzer.analyzeLambda[SimpleFunctionDescriptorImpl]
+
 'lambda' @ [66:26] ==> value-parameter lambda: ResolvedLambdaAtom defined in org.jetbrains.kotlin.resolve.calls.components.PostponedArgumentsAnalyzer.analyzeLambda[ValueParameterDescriptorImpl]
 
 'parameters' @ [66:33] ==> public final val parameters: List<UnwrappedType> defined in org.jetbrains.kotlin.resolve.calls.model.ResolvedLambdaAtom[PropertyDescriptorImpl]
@@ -83,6 +85,8 @@ Inferred types:
 Inferred types:
     <T> -> UnwrappedType
     <R> -> UnwrappedType
+
+'substitute' @ [66:50] ==> local final fun substitute(type: UnwrappedType): UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components.PostponedArgumentsAnalyzer.analyzeLambda[SimpleFunctionDescriptorImpl]
 
 'calculateExpectedType' @ [67:28] ==> private final fun calculateExpectedType(lambdaReturnType: UnwrappedType, c: PostponedArgumentsAnalyzer.Context): UnwrappedType? defined in org.jetbrains.kotlin.resolve.calls.components.PostponedArgumentsAnalyzer[SimpleFunctionDescriptorImpl]
 
@@ -148,6 +152,8 @@ Inferred types:
     <T> -> UnwrappedType
     <R> -> UnwrappedType
 
+'substitute' @ [76:76] ==> local final fun substitute(type: UnwrappedType): UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components.PostponedArgumentsAnalyzer.analyzeLambda[SimpleFunctionDescriptorImpl]
+
 'diagnosticHolder' @ [76:89] ==> val diagnosticHolder: KotlinDiagnosticsHolder.SimpleHolder defined in org.jetbrains.kotlin.resolve.calls.components.PostponedArgumentsAnalyzer.analyzeLambda[LocalVariableDescriptor]
 
 'resultArguments' @ [78:13] ==> val resultArguments: List<KotlinCallArgument> defined in org.jetbrains.kotlin.resolve.calls.components.PostponedArgumentsAnalyzer.analyzeLambda[LocalVariableDescriptor]
@@ -176,6 +182,8 @@ Inferred types:
 Inferred types:
     <T> -> UnwrappedType
     <R> -> UnwrappedType
+
+'substitute' @ [80:73] ==> local final fun substitute(type: UnwrappedType): UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components.PostponedArgumentsAnalyzer.analyzeLambda[SimpleFunctionDescriptorImpl]
 
 'unitType' @ [80:86] ==> val unitType: SimpleType defined in org.jetbrains.kotlin.resolve.calls.components.PostponedArgumentsAnalyzer.analyzeLambda[LocalVariableDescriptor]
 

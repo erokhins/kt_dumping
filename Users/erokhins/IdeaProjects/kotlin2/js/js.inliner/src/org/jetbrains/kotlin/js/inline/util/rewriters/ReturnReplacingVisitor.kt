@@ -42,13 +42,13 @@
 
 'addNext' @ [52:17] ==> public open fun <R : (JsNode..JsNode?)> addNext(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpressionStatement
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'JsExpressionStatement' @ [52:25] ==> public constructor JsExpressionStatement(@NotNull p0: JsExpression) defined in org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement[JavaClassConstructorDescriptor]
 
 'returnReplacement' @ [52:47] ==> val returnReplacement: JsExpression? defined in org.jetbrains.kotlin.js.inline.util.rewriters.ReturnReplacingVisitor.endVisit[LocalVariableDescriptor]
 
-'apply' @ [52:65] ==> @InlineOnly public inline fun <T> JsExpression.apply(block: (JsExpression).() -> Unit): JsExpression defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [52:65] ==> @InlineOnly public inline fun <T> JsExpression.apply(block: JsExpression.() -> Unit): JsExpression defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JsExpression
 
@@ -64,7 +64,7 @@ Inferred types:
 
 'addNext' @ [56:17] ==> public open fun <R : (JsNode..JsNode?)> addNext(p0: (JsBreak..JsBreak?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsBreak
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsBreak..org.jetbrains.kotlin.js.backend.ast.JsBreak?)
 
 'JsBreak' @ [56:25] ==> public constructor JsBreak(p0: (JsNameRef..JsNameRef?)) defined in org.jetbrains.kotlin.js.backend.ast.JsBreak[JavaClassConstructorDescriptor]
 

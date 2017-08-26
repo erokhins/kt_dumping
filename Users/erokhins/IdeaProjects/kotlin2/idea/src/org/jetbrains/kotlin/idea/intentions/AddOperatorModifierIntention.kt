@@ -34,7 +34,7 @@ Inferred types:
 
 'element' @ [37:9] ==> value-parameter element: KtNamedFunction defined in org.jetbrains.kotlin.idea.intentions.AddOperatorModifierIntention.applyTo[ValueParameterDescriptorImpl]
 
-'withHeaderImplementations' @ [37:17] ==> internal fun KtDeclaration.withHeaderImplementations(): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'withHeaderImplementations' @ [37:17] ==> internal fun KtDeclaration.withHeaderImplementations(): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'forEach' @ [37:45] ==> @HidesMembers public inline fun <T> Iterable<KtDeclaration>.forEach(action: (KtDeclaration) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

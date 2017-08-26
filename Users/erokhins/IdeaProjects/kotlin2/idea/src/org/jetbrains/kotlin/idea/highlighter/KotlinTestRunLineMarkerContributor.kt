@@ -192,7 +192,5 @@ Inferred types:
 
 'icon' @ [86:46] ==> val icon: Icon defined in org.jetbrains.kotlin.idea.highlighter.KotlinTestRunLineMarkerContributor.getInfo[LocalVariableDescriptor]
 
-'ExecutorAction' @ [86:68] ==> public companion object defined in com.intellij.execution.lineMarker.ExecutorAction[FakeCallableDescriptorForObject]
-
 'getActions' @ [86:83] ==> @JvmStatic @JvmOverloads public final fun getActions(order: Int = ...): Array<AnAction> defined in com.intellij.execution.lineMarker.ExecutorAction.Companion[DeserializedSimpleFunctionDescriptor]
 

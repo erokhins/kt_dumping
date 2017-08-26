@@ -59,7 +59,7 @@ Inferred types:
 
 'function' @ [56:31] ==> private final val function: KtNamedFunction defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineFunctionDialog[PropertyDescriptorImpl]
 
-'getReturnTypeReference' @ [56:40] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getReturnTypeReference' @ [56:40] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [56:66] ==> @InlineOnly public inline fun <T, R> KtTypeReference.let(block: (KtTypeReference) -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:

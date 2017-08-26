@@ -18,13 +18,13 @@ Inferred types:
 
 'sort' @ [64:20] ==> public open fun <T : (Any..Any?)> sort(p0: (Array<(LookupElement..LookupElement?)>..Array<out (LookupElement..LookupElement?)>?), p1: (Comparator<in (LookupElement..LookupElement?)>..Comparator<in (LookupElement..LookupElement?)>?)): Unit defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LookupElement
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.lookup.LookupElement..com.intellij.codeInsight.lookup.LookupElement?)
 
 'items' @ [64:25] ==> private final val items: Array<out LookupElement> defined in org.jetbrains.kotlin.idea.quickfix.RenameUnresolvedReferenceFix.ReferenceNameExpression[PropertyDescriptorImpl]
 
-'HammingComparator' @ [64:32] ==> public constructor HammingComparator<T>(referenceString: String, asString: LookupElement.() -> String) defined in org.jetbrains.kotlin.idea.quickfix.HammingComparator[ClassConstructorDescriptorImpl]
+'HammingComparator' @ [64:32] ==> public constructor HammingComparator<T>(referenceString: String, asString: (LookupElement..LookupElement?).() -> String) defined in org.jetbrains.kotlin.idea.quickfix.HammingComparator[ClassConstructorDescriptorImpl]
 Inferred types:
-    <T> -> LookupElement
+    <T> -> (com.intellij.codeInsight.lookup.LookupElement..com.intellij.codeInsight.lookup.LookupElement?)
 
 'originalReferenceName' @ [64:50] ==> private final val originalReferenceName: String defined in org.jetbrains.kotlin.idea.quickfix.RenameUnresolvedReferenceFix.ReferenceNameExpression[PropertyDescriptorImpl]
 
@@ -114,8 +114,6 @@ Inferred types:
 
 'container' @ [94:24] ==> val container: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.RenameUnresolvedReferenceFix.invoke[LocalVariableDescriptor]
 
-'KotlinPsiUnifier' @ [94:35] ==> public companion object defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [94:52] ==> public final val DEFAULT: KotlinPsiUnifier defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Companion[DeserializedPropertyDescriptor]
 
 'mapNotNull' @ [95:18] ==> public inline fun <T, R : Any> Iterable<UnificationResult.Matched>.mapNotNull(transform: (UnificationResult.Matched) -> KtNameReferenceExpression?): List<KtNameReferenceExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -185,15 +183,13 @@ Inferred types:
 
 'resolutionFacade' @ [104:96] ==> val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.quickfix.RenameUnresolvedReferenceFix.invoke[LocalVariableDescriptor]
 
-'NotPropertiesService' @ [105:12] ==> public companion object defined in org.jetbrains.kotlin.idea.core.NotPropertiesService[FakeCallableDescriptorForObject]
-
 'getNotProperties' @ [105:33] ==> public final fun getNotProperties(element: PsiElement): Set<FqNameUnsafe> defined in org.jetbrains.kotlin.idea.core.NotPropertiesService.Companion[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [105:50] ==> val element: KtNameReferenceExpression defined in org.jetbrains.kotlin.idea.quickfix.RenameUnresolvedReferenceFix.invoke[LocalVariableDescriptor]
 
 'patternExpression' @ [106:29] ==> val patternExpression: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.RenameUnresolvedReferenceFix.invoke[LocalVariableDescriptor]
 
-'guessTypes' @ [107:18] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [107:18] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [107:29] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.RenameUnresolvedReferenceFix.invoke[LocalVariableDescriptor]
 
@@ -219,11 +215,7 @@ Inferred types:
 
 'isCallee' @ [109:40] ==> val isCallee: Boolean defined in org.jetbrains.kotlin.idea.quickfix.RenameUnresolvedReferenceFix.invoke[LocalVariableDescriptor]
 
-'DescriptorKindFilter' @ [109:50] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS' @ [109:71] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'DescriptorKindFilter' @ [109:86] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES' @ [109:107] ==> @field:JvmField public final val VARIABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 

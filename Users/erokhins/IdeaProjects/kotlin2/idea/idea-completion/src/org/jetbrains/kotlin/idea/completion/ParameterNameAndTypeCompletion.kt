@@ -123,13 +123,11 @@ Inferred types:
 
 'collectDescriptorsFiltered' @ [78:47] ==> public fun HierarchicalScope.collectDescriptorsFiltered(kindFilter: DescriptorKindFilter = ..., nameFilter: (Name) -> Boolean = ..., changeNamesForAliased: Boolean = ...): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.utils[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [78:74] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'NON_SINGLETON_CLASSIFIERS' @ [78:95] ==> @field:JvmField public final val NON_SINGLETON_CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'classNameMatcher' @ [78:122] ==> val classNameMatcher: PrefixMatcher defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.addFromImportedClasses[LocalVariableDescriptor]
 
-'asNameFilter' @ [78:139] ==> public fun PrefixMatcher.asNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'asNameFilter' @ [78:139] ==> public fun PrefixMatcher.asNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'classifiers' @ [80:32] ==> val classifiers: Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.addFromImportedClasses[LocalVariableDescriptor]
 
@@ -247,7 +245,9 @@ Inferred types:
 
 'visibilityFilter' @ [116:49] ==> value-parameter visibilityFilter: (DeclarationDescriptor) -> Boolean defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.addFromParametersInFile[ValueParameterDescriptorImpl]
 
-'MyLookupElement' @ [117:45] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.MyLookupElement[FakeCallableDescriptorForObject]
+'!!' @ [117:45] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: LookupElement?): LookupElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> LookupElement
 
 'create' @ [117:61] ==> public final fun create(parameterName: String, type: ParameterNameAndTypeCompletion.Type, factory: BasicLookupElementFactory): LookupElement? defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.MyLookupElement.Companion[SimpleFunctionDescriptorImpl]
 
@@ -285,7 +285,7 @@ Inferred types:
 
 'putUserData' @ [126:27] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Int..Int?)>, @Nullable p1: Int?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'PRIORITY_KEY' @ [126:39] ==> private final val PRIORITY_KEY: Key<Int> defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.Companion[PropertyDescriptorImpl]
 
@@ -375,7 +375,7 @@ Inferred types:
 
 'putUserData' @ [149:35] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Int..Int?)>, @Nullable p1: Int?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'PRIORITY_KEY' @ [149:47] ==> private final val PRIORITY_KEY: Key<Int> defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.Companion[PropertyDescriptorImpl]
 
@@ -439,8 +439,6 @@ Inferred types:
 
 'Type' @ [170:82] ==> public constructor Type(idString: String) defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.Type[ClassConstructorDescriptorImpl]
 
-'IdeDescriptorRenderers' @ [170:87] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE' @ [170:110] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderClassifierName' @ [170:122] ==> public abstract fun renderClassifierName(klass: ClassifierDescriptor): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -466,8 +464,6 @@ Inferred types:
 'psiClass' @ [177:72] ==> private final val psiClass: PsiClass defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.JavaClassType[PropertyDescriptorImpl]
 
 'Type' @ [180:65] ==> public constructor Type(idString: String) defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.Type[ClassConstructorDescriptorImpl]
-
-'IdeDescriptorRenderers' @ [180:70] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [180:93] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -503,7 +499,7 @@ Inferred types:
 
 'lookupElement' @ [195:24] ==> val lookupElement: ParameterNameAndTypeCompletion.MyLookupElement defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.MyLookupElement.Companion.create[LocalVariableDescriptor]
 
-'suppressAutoInsertion' @ [195:38] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'suppressAutoInsertion' @ [195:38] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'parameterName' @ [200:36] ==> private final val parameterName: String defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.MyLookupElement[PropertyDescriptorImpl]
 
@@ -579,7 +575,7 @@ Inferred types:
 
 'chars' @ [219:25] ==> val chars: CharSequence defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.MyLookupElement.handleInsert[LocalVariableDescriptor]
 
-'isCharAt' @ [219:31] ==> public fun CharSequence.isCharAt(offset: Int, c: Char): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers[SimpleFunctionDescriptorImpl]
+'isCharAt' @ [219:31] ==> public fun CharSequence.isCharAt(offset: Int, c: Char): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers in file handlerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'offset' @ [219:40] ==> var offset: Int defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.MyLookupElement.handleInsert[LocalVariableDescriptor]
 
@@ -611,7 +607,7 @@ Inferred types:
 
 'getCustomSettings' @ [227:98] ==> public open fun <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> getCustomSettings(@NotNull p0: Class<(KotlinCodeStyleSettings..KotlinCodeStyleSettings?)>): (KotlinCodeStyleSettings..KotlinCodeStyleSettings?) defined in com.intellij.psi.codeStyle.CodeStyleSettings[JavaMethodDescriptor]
 Inferred types:
-    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> KotlinCodeStyleSettings
+    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> (org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings..org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings?)
 
 'KotlinCodeStyleSettings' @ [227:116] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
@@ -705,7 +701,7 @@ Inferred types:
 
 'getUserData' @ [252:93] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Int..Int?)>): Int? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'PRIORITY_KEY' @ [252:105] ==> private final val PRIORITY_KEY: Key<Int> defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.Companion[PropertyDescriptorImpl]
 

@@ -104,7 +104,7 @@ Inferred types:
 
 'removeLast' @ [66:33] ==> public open fun removeLast(): (CompiledHistoryItem<T> /* = Pair<CompiledReplCodeLine, T> */..CompiledHistoryItem<T>? /* = Pair<CompiledReplCodeLine, T>? */) defined in java.util.ArrayDeque[JavaMethodDescriptor]
 
-'let' @ [66:46] ==> @InlineOnly public inline fun <T, R> (CompiledHistoryItem<T> /* = Pair<CompiledReplCodeLine, T> */..CompiledHistoryItem<T>? /* = Pair<CompiledReplCodeLine, T>? */).let(block: ((CompiledHistoryItem<T> /* = Pair<CompiledReplCodeLine, T> */..CompiledHistoryItem<T>? /* = Pair<CompiledReplCodeLine, T>? */)) -> SourceHistoryItem<T> /* = Pair<ReplCodeLine, T> */): SourceHistoryItem<T> /* = Pair<ReplCodeLine, T> */ defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [66:46] ==> @InlineOnly public inline fun <T, R> (CompiledHistoryItem<T> /* = Pair<CompiledReplCodeLine, T> */..CompiledHistoryItem<T>? /* = Pair<CompiledReplCodeLine, T>? */).let(block: ((CompiledHistoryItem<T> /* = Pair<CompiledReplCodeLine, T> */..CompiledHistoryItem<T>? /* = Pair<CompiledReplCodeLine, T>? */)) -> Pair<ReplCodeLine, T>): Pair<ReplCodeLine, T> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.cli.common.repl.CompiledHistoryItem<T> /* = kotlin.Pair<org.jetbrains.kotlin.cli.common.repl.CompiledReplCodeLine, T> */..org.jetbrains.kotlin.cli.common.repl.CompiledHistoryItem<T>? /* = kotlin.Pair<org.jetbrains.kotlin.cli.common.repl.CompiledReplCodeLine, T>? */)
     <R> -> Pair<ReplCodeLine, T>

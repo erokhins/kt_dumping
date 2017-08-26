@@ -30,8 +30,6 @@ Inferred types:
 
 'refClass' @ [47:55] ==> value-parameter refClass: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmSharedVariablesManager.PrimitiveRefDescriptorsProvider.<init>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [47:65] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [47:77] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'NO_SOURCE' @ [47:104] ==> public final val NO_SOURCE: (SourceElement..SourceElement?) defined in org.jetbrains.kotlin.descriptors.SourceElement[JavaPropertyDescriptor]
@@ -60,11 +58,7 @@ Inferred types:
 
 'refClass' @ [54:25] ==> value-parameter refClass: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmSharedVariablesManager.PrimitiveRefDescriptorsProvider.<init>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [54:35] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [54:47] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [54:54] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [54:63] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -76,7 +70,7 @@ Inferred types:
 
 'NO_SOURCE' @ [55:110] ==> public final val NO_SOURCE: (SourceElement..SourceElement?) defined in org.jetbrains.kotlin.descriptors.SourceElement[JavaPropertyDescriptor]
 
-'initialize' @ [58:19] ==> public fun PropertyDescriptorImpl.initialize(type: KotlinType, typeParameters: List<TypeParameterDescriptor> = ..., dispatchReceiverParameter: ReceiverParameterDescriptor? = ..., extensionReceiverParameter: ReceiverParameterDescriptor? = ..., getter: PropertyGetterDescriptorImpl? = ..., setter: PropertySetterDescriptorImpl? = ...): PropertyDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors[SimpleFunctionDescriptorImpl]
+'initialize' @ [58:19] ==> public fun PropertyDescriptorImpl.initialize(type: KotlinType, typeParameters: List<TypeParameterDescriptor> = ..., dispatchReceiverParameter: ReceiverParameterDescriptor? = ..., extensionReceiverParameter: ReceiverParameterDescriptor? = ..., getter: PropertyGetterDescriptorImpl? = ..., setter: PropertySetterDescriptorImpl? = ...): PropertyDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [58:30] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmSharedVariablesManager.PrimitiveRefDescriptorsProvider.<init>[ValueParameterDescriptorImpl]
 
@@ -156,8 +150,6 @@ Inferred types:
 
 'genericRefClass' @ [78:55] ==> public final val genericRefClass: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmSharedVariablesManager.ObjectRefDescriptorsProvider[PropertyDescriptorImpl]
 
-'Annotations' @ [78:72] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [78:84] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'NO_SOURCE' @ [78:111] ==> public final val NO_SOURCE: (SourceElement..SourceElement?) defined in org.jetbrains.kotlin.descriptors.SourceElement[JavaPropertyDescriptor]
@@ -180,8 +172,6 @@ Inferred types:
 
 'simpleType' @ [81:63] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean, memberScope: MemberScope): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [81:74] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [81:86] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'typeParameter' @ [81:93] ==> val typeParameter: (TypeParameterDescriptor..TypeParameterDescriptor?) defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmSharedVariablesManager.ObjectRefDescriptorsProvider.genericRefConstructor.<anonymous>[LocalVariableDescriptor]
@@ -192,8 +182,6 @@ Inferred types:
 Inferred types:
     <T> -> TypeProjection
 
-'MemberScope' @ [81:141] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
-
 'Empty' @ [81:153] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'returnType' @ [82:21] ==> public final var ClassConstructorDescriptorImpl.returnType: KotlinType[MyPropertyDescriptor]
@@ -201,8 +189,6 @@ Inferred types:
 'KotlinTypeFactory' @ [82:34] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
 
 'simpleNotNullType' @ [82:52] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [82:70] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [82:82] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -247,11 +233,7 @@ Inferred types:
 
 'genericRefClass' @ [95:25] ==> public final val genericRefClass: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmSharedVariablesManager.ObjectRefDescriptorsProvider[PropertyDescriptorImpl]
 
-'Annotations' @ [95:42] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [95:54] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [95:61] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [95:70] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -263,7 +245,7 @@ Inferred types:
 
 'NO_SOURCE' @ [96:110] ==> public final val NO_SOURCE: (SourceElement..SourceElement?) defined in org.jetbrains.kotlin.descriptors.SourceElement[JavaPropertyDescriptor]
 
-'initialize' @ [99:19] ==> public fun PropertyDescriptorImpl.initialize(type: KotlinType, typeParameters: List<TypeParameterDescriptor> = ..., dispatchReceiverParameter: ReceiverParameterDescriptor? = ..., extensionReceiverParameter: ReceiverParameterDescriptor? = ..., getter: PropertyGetterDescriptorImpl? = ..., setter: PropertySetterDescriptorImpl? = ...): PropertyDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors[SimpleFunctionDescriptorImpl]
+'initialize' @ [99:19] ==> public fun PropertyDescriptorImpl.initialize(type: KotlinType, typeParameters: List<TypeParameterDescriptor> = ..., dispatchReceiverParameter: ReceiverParameterDescriptor? = ..., extensionReceiverParameter: ReceiverParameterDescriptor? = ..., getter: PropertyGetterDescriptorImpl? = ..., setter: PropertySetterDescriptorImpl? = ...): PropertyDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'builtIns' @ [100:32] ==> public final val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmSharedVariablesManager[PropertyDescriptorImpl]
 
@@ -276,8 +258,6 @@ Inferred types:
 'KotlinTypeFactory' @ [105:17] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
 
 'simpleNotNullType' @ [105:35] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [105:53] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [105:65] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -445,9 +425,9 @@ Inferred types:
 
 'unitType' @ [153:90] ==> public final val KotlinBuiltIns.unitType: SimpleType[MyPropertyDescriptor]
 
-'listOf' @ [154:17] ==> public fun <T> listOf(vararg elements: {IrElementBase & IrStatement}): List<{IrElementBase & IrStatement}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [154:17] ==> public fun <T> listOf(vararg elements: IrStatement): List<IrStatement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {IrElementBase & IrStatement}
+    <T> -> IrStatement
 
 'sharedVariableDeclaration' @ [154:24] ==> val sharedVariableDeclaration: IrVariableImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmSharedVariablesManager.defineSharedValue[LocalVariableDescriptor]
 

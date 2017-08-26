@@ -7,9 +7,9 @@ Inferred types:
 
 'it' @ [28:38] ==> value-parameter it: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.NewCommonSuperTypeCalculator.commonSuperType.<anonymous>[ValueParameterDescriptorImpl]
 
-'typeDepth' @ [28:41] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'typeDepth' @ [28:41] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types in file TypeApproximator.kt[SimpleFunctionDescriptorImpl]
 
-'typeDepth' @ [28:56] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'typeDepth' @ [28:56] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types in file TypeApproximator.kt[SimpleFunctionDescriptorImpl]
 
 'commonSuperType' @ [29:16] ==> private final fun commonSuperType(types: List<UnwrappedType>, depth: Int): UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.NewCommonSuperTypeCalculator[SimpleFunctionDescriptorImpl]
 
@@ -346,8 +346,6 @@ Inferred types:
 
 'simpleType' @ [122:72] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [122:83] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [122:95] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'constructor' @ [122:102] ==> value-parameter constructor: TypeConstructor defined in org.jetbrains.kotlin.resolve.calls.NewCommonSuperTypeCalculator.superTypeWithGivenConstructor[ValueParameterDescriptorImpl]
@@ -475,8 +473,6 @@ Inferred types:
 'KotlinTypeFactory' @ [160:16] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
 
 'simpleType' @ [160:34] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [160:45] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [160:57] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

@@ -58,15 +58,15 @@ Inferred types:
 
 'JBList' @ [44:24] ==> public constructor JBList<E : (Any..Any?)>(@NotNull p0: (MutableCollection<(InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)>..Collection<(InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)>)) defined in com.intellij.ui.components.JBList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> InlineInfo
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.InlineInfo..org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.InlineInfo?)
 
 'inlineInfo' @ [44:31] ==> private final val inlineInfo: List<InlineFunctionHyperLinkInfo.InlineInfo> defined in org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo[PropertyDescriptorImpl]
 
-'list' @ [45:13] ==> val list: JBList<InlineFunctionHyperLinkInfo.InlineInfo> defined in org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.navigate[LocalVariableDescriptor]
+'list' @ [45:13] ==> val list: JBList<(InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)> defined in org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.navigate[LocalVariableDescriptor]
 
-'cellRenderer' @ [45:18] ==> public final var <E : (Any..Any?)> JBList<InlineFunctionHyperLinkInfo.InlineInfo>.cellRenderer: (ListCellRenderer<in (InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)>..ListCellRenderer<in (InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)>?)[MyPropertyDescriptor]
+'cellRenderer' @ [45:18] ==> public final var <E : (Any..Any?)> JBList<(InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)>.cellRenderer: (ListCellRenderer<in (InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)>..ListCellRenderer<in (InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> InlineInfo
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.InlineInfo..org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.InlineInfo?)
 
 'InlineInfoCellRenderer' @ [45:33] ==> public constructor InlineInfoCellRenderer() defined in org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.InlineInfoCellRenderer[ClassConstructorDescriptorImpl]
 
@@ -74,17 +74,17 @@ Inferred types:
 
 'createListPopupBuilder' @ [46:54] ==> @NotNull public open fun createListPopupBuilder(@NotNull p0: raw (JList<(Any..Any?)>..JList<*>)): PopupChooserBuilder defined in com.intellij.openapi.ui.popup.JBPopupFactory[JavaMethodDescriptor]
 
-'list' @ [46:77] ==> val list: JBList<InlineFunctionHyperLinkInfo.InlineInfo> defined in org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.navigate[LocalVariableDescriptor]
+'list' @ [46:77] ==> val list: JBList<(InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)> defined in org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.navigate[LocalVariableDescriptor]
 
 'setTitle' @ [47:22] ==> @NotNull public open fun setTitle(@NotNull @Nls p0: String): PopupChooserBuilder defined in com.intellij.openapi.ui.popup.PopupChooserBuilder[JavaMethodDescriptor]
 
 'setItemChoosenCallback' @ [48:22] ==> @NotNull public final fun setItemChoosenCallback(@NotNull p0: () -> Unit): PopupChooserBuilder defined in com.intellij.openapi.ui.popup.PopupChooserBuilder[MyFunctionDescriptor]
 
-'list' @ [49:40] ==> val list: JBList<InlineFunctionHyperLinkInfo.InlineInfo> defined in org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.navigate[LocalVariableDescriptor]
+'list' @ [49:40] ==> val list: JBList<(InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)> defined in org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.navigate[LocalVariableDescriptor]
 
-'selectedValue' @ [49:45] ==> public final val <E : (Any..Any?)> JBList<InlineFunctionHyperLinkInfo.InlineInfo>.selectedValue: (InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)[MyPropertyDescriptor]
+'selectedValue' @ [49:45] ==> public final val <E : (Any..Any?)> JBList<(InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)>.selectedValue: (InlineFunctionHyperLinkInfo.InlineInfo..InlineFunctionHyperLinkInfo.InlineInfo?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> InlineInfo
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.InlineInfo..org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.InlineInfo?)
 
 'OpenFileHyperlinkInfo' @ [50:25] ==> public constructor OpenFileHyperlinkInfo(@NotNull p0: Project, @NotNull p1: VirtualFile, p2: Int) defined in com.intellij.execution.filters.OpenFileHyperlinkInfo[JavaClassConstructorDescriptor]
 
@@ -195,7 +195,7 @@ Inferred types:
 
 'selectionBackground' @ [93:36] ==> public final var <E : (Any..Any?)> JList<out InlineFunctionHyperLinkInfo.InlineInfo>.selectionBackground: (Color..Color?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> InlineInfo
+    <E : (Any..Any?)> -> Captured(out InlineInfo)
 
 'foreground' @ [94:17] ==> public final var InlineFunctionHyperLinkInfo.InlineInfoCellRenderer.foreground: (Color..Color?)[MyPropertyDescriptor]
 
@@ -203,7 +203,7 @@ Inferred types:
 
 'selectionForeground' @ [94:36] ==> public final var <E : (Any..Any?)> JList<out InlineFunctionHyperLinkInfo.InlineInfo>.selectionForeground: (Color..Color?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> InlineInfo
+    <E : (Any..Any?)> -> Captured(out InlineInfo)
 
 'background' @ [97:17] ==> public final var InlineFunctionHyperLinkInfo.InlineInfoCellRenderer.background: (Color..Color?)[MyPropertyDescriptor]
 
@@ -211,7 +211,7 @@ Inferred types:
 
 'background' @ [97:36] ==> public final var <E : (Any..Any?)> JList<out InlineFunctionHyperLinkInfo.InlineInfo>.background: (Color..Color?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> InlineInfo
+    <E : (Any..Any?)> -> Captured(out InlineInfo)
 
 'foreground' @ [98:17] ==> public final var InlineFunctionHyperLinkInfo.InlineInfoCellRenderer.foreground: (Color..Color?)[MyPropertyDescriptor]
 
@@ -219,7 +219,7 @@ Inferred types:
 
 'foreground' @ [98:36] ==> public final var <E : (Any..Any?)> JList<out InlineFunctionHyperLinkInfo.InlineInfo>.foreground: (Color..Color?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> InlineInfo
+    <E : (Any..Any?)> -> Captured(out InlineInfo)
 
 'this' @ [101:20] ==> <this> defined in org.jetbrains.kotlin.idea.filters.InlineFunctionHyperLinkInfo.InlineInfoCellRenderer[LazyClassReceiverParameterDescriptor]
 

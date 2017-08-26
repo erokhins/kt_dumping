@@ -62,17 +62,17 @@ Inferred types:
 
 'isMarkedNullable' @ [48:20] ==> public abstract val isMarkedNullable: Boolean defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 
-'getPrimitiveProgressionElementType' @ [48:40] ==> private fun getPrimitiveProgressionElementType(rangeType: KotlinType): PrimitiveType? defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'getPrimitiveProgressionElementType' @ [48:40] ==> private fun getPrimitiveProgressionElementType(rangeType: KotlinType): PrimitiveType? defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeType' @ [48:75] ==> value-parameter rangeType: KotlinType defined in org.jetbrains.kotlin.codegen.isPrimitiveProgression[ValueParameterDescriptorImpl]
 
-'getPrimitiveRangeOrProgressionElementType' @ [51:9] ==> private fun getPrimitiveRangeOrProgressionElementType(rangeOrProgression: KotlinType, map: Map<FqName, PrimitiveType>): PrimitiveType? defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'getPrimitiveRangeOrProgressionElementType' @ [51:9] ==> private fun getPrimitiveRangeOrProgressionElementType(rangeOrProgression: KotlinType, map: Map<FqName, PrimitiveType>): PrimitiveType? defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeType' @ [51:51] ==> value-parameter rangeType: KotlinType defined in org.jetbrains.kotlin.codegen.getPrimitiveRangeElementType[ValueParameterDescriptorImpl]
 
 'RANGE_TO_ELEMENT_TYPE' @ [51:62] ==> private val RANGE_TO_ELEMENT_TYPE: Map<FqName, PrimitiveType> defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[PropertyDescriptorImpl]
 
-'getPrimitiveRangeOrProgressionElementType' @ [54:9] ==> private fun getPrimitiveRangeOrProgressionElementType(rangeOrProgression: KotlinType, map: Map<FqName, PrimitiveType>): PrimitiveType? defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'getPrimitiveRangeOrProgressionElementType' @ [54:9] ==> private fun getPrimitiveRangeOrProgressionElementType(rangeOrProgression: KotlinType, map: Map<FqName, PrimitiveType>): PrimitiveType? defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeType' @ [54:51] ==> value-parameter rangeType: KotlinType defined in org.jetbrains.kotlin.codegen.getPrimitiveProgressionElementType[ValueParameterDescriptorImpl]
 
@@ -463,7 +463,7 @@ Inferred types:
 
 '!' @ [172:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'isPrimitiveRange' @ [172:10] ==> public fun isPrimitiveRange(rangeType: KotlinType): Boolean defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'isPrimitiveRange' @ [172:10] ==> public fun isPrimitiveRange(rangeType: KotlinType): Boolean defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'dispatchReceiverType' @ [172:27] ==> val dispatchReceiverType: KotlinType defined in org.jetbrains.kotlin.codegen.isPrimitiveRangeContains[LocalVariableDescriptor]
 
@@ -485,7 +485,7 @@ Inferred types:
 
 '!' @ [183:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'isPrimitiveNumberType' @ [183:10] ==> private fun isPrimitiveNumberType(type: KotlinType): Boolean defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'isPrimitiveNumberType' @ [183:10] ==> private fun isPrimitiveNumberType(type: KotlinType): Boolean defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeElementType' @ [183:32] ==> val rangeElementType: KotlinType defined in org.jetbrains.kotlin.codegen.isPrimitiveNumberRangeExtensionContainsPrimitiveNumber[LocalVariableDescriptor]
 
@@ -501,7 +501,7 @@ Inferred types:
 
 '!' @ [186:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'isPrimitiveNumberType' @ [186:10] ==> private fun isPrimitiveNumberType(type: KotlinType): Boolean defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'isPrimitiveNumberType' @ [186:10] ==> private fun isPrimitiveNumberType(type: KotlinType): Boolean defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'argumentType' @ [186:32] ==> val argumentType: KotlinType defined in org.jetbrains.kotlin.codegen.isPrimitiveNumberRangeExtensionContainsPrimitiveNumber[LocalVariableDescriptor]
 
@@ -610,7 +610,7 @@ Inferred types:
 
 'it' @ [226:47] ==> value-parameter it: PrimitiveType defined in org.jetbrains.kotlin.codegen.getAsmRangeElementTypeForPrimitiveRangeOrProgression.<anonymous>[ValueParameterDescriptorImpl]
 
-'getPrimitiveProgressionElementType' @ [229:5] ==> private fun getPrimitiveProgressionElementType(rangeType: KotlinType): PrimitiveType? defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'getPrimitiveProgressionElementType' @ [229:5] ==> private fun getPrimitiveProgressionElementType(rangeType: KotlinType): PrimitiveType? defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeType' @ [229:40] ==> val rangeType: KotlinType defined in org.jetbrains.kotlin.codegen.getAsmRangeElementTypeForPrimitiveRangeOrProgression[LocalVariableDescriptor]
 

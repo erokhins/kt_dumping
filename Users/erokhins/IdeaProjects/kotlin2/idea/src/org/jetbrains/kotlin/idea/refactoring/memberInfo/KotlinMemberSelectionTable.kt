@@ -111,8 +111,6 @@ Inferred types:
 
 'setIcon' @ [65:14] ==> public open fun setIcon(p0: (Icon..Icon?), p1: Int): Unit defined in com.intellij.ui.RowIcon[JavaMethodDescriptor]
 
-'KotlinIconProvider' @ [65:22] ==> public companion object defined in org.jetbrains.kotlin.idea.KotlinIconProvider[FakeCallableDescriptorForObject]
-
 'getVisibilityIcon' @ [65:41] ==> public final fun getVisibilityIcon(list: KtModifierList?): Icon defined in org.jetbrains.kotlin.idea.KotlinIconProvider.Companion[DeserializedSimpleFunctionDescriptor]
 
 'memberInfo' @ [65:59] ==> value-parameter memberInfo: KotlinMemberInfo defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberSelectionTable.setVisibilityIcon[ValueParameterDescriptorImpl]

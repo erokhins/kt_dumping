@@ -30,8 +30,6 @@ Inferred types:
 Inferred types:
     <T> -> ThreadBlockedMonitor
 
-'ThreadBlockedMonitor' @ [55:75] ==> public constructor ThreadBlockedMonitor(p0: (DebugProcessImpl..DebugProcessImpl?), p1: (Disposable..Disposable?)) defined in com.intellij.debugger.engine.ThreadBlockedMonitor[JavaClassConstructorDescriptor]
-
 'java' @ [55:103] ==> public val <T> KClass<ThreadBlockedMonitor>.java: Class<ThreadBlockedMonitor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> ThreadBlockedMonitor

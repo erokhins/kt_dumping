@@ -36,6 +36,8 @@
 Inferred types:
     <T> -> KtBinaryExpression
 
+'checkAssignment' @ [45:86] ==> local final fun checkAssignment(expression: KtBinaryExpression): Boolean defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.BranchedFoldingUtils.getFoldableBranchedAssignment[SimpleFunctionDescriptorImpl]
+
 'branch' @ [49:14] ==> value-parameter branch: KtExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.BranchedFoldingUtils.getFoldableBranchedReturn[ValueParameterDescriptorImpl]
 
 'lastBlockStatementOrThis' @ [49:22] ==> public fun KtExpression.lastBlockStatementOrThis(): KtExpression defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedSimpleFunctionDescriptor]
@@ -327,8 +329,6 @@ Inferred types:
 Inferred types:
     <reified T : PsiElement> -> KtFinallySection
 
-'BranchedFoldingUtils' @ [102:29] ==> public object BranchedFoldingUtils defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file BranchedFoldingUtils.kt[FakeCallableDescriptorForObject]
-
 'checkAssignmentsMatch' @ [102:50] ==> private final fun checkAssignmentsMatch(a1: KtBinaryExpression, a2: KtBinaryExpression): Boolean defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.BranchedFoldingUtils[SimpleFunctionDescriptorImpl]
 
 'it' @ [102:72] ==> value-parameter it: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.BranchedFoldingUtils.getFoldableAssignmentNumber.<anonymous>[ValueParameterDescriptorImpl]
@@ -347,7 +347,7 @@ Inferred types:
 
 'branches' @ [115:13] ==> value-parameter branches: List<KtExpression?> defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.BranchedFoldingUtils.getFoldableReturns[ValueParameterDescriptorImpl]
 
-'fold' @ [115:22] ==> public inline fun <T, R> Iterable<KtExpression?>.fold(initial: MutableList<KtReturnExpression>?, operation: (MutableList<KtReturnExpression>?, KtExpression?) -> MutableList<KtReturnExpression>?): MutableList<KtReturnExpression>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [115:22] ==> public inline fun <T, R> Iterable<KtExpression?>.fold(initial: MutableList<KtReturnExpression>?, operation: (acc: MutableList<KtReturnExpression>?, KtExpression?) -> MutableList<KtReturnExpression>?): MutableList<KtReturnExpression>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtExpression?
     <R> -> MutableList<KtReturnExpression>?

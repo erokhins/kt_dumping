@@ -10,8 +10,6 @@
 
 'modifiers' @ [45:13] ==> public abstract var modifiers: Set<DescriptorRendererModifier> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptions[DeserializedPropertyDescriptor]
 
-'DescriptorRendererModifier' @ [45:26] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
-
 'VISIBILITY' @ [45:53] ==> enum entry VISIBILITY defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
 'DescriptorRenderer' @ [47:29] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
@@ -22,13 +20,11 @@
 
 'modifiers' @ [49:13] ==> public abstract var modifiers: Set<DescriptorRendererModifier> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptions[DeserializedPropertyDescriptor]
 
-'DescriptorRendererModifier' @ [49:26] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
-
 'VISIBILITY' @ [49:53] ==> enum entry VISIBILITY defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
-'lazy' @ [53:49] ==> public fun <T> lazy(initializer: () -> BufferedWriter): Lazy<BufferedWriter> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [53:49] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> BufferedWriter
+    <T> -> T
 
 'println' @ [55:9] ==> @InlineOnly public inline fun println(message: Any?): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
@@ -191,7 +187,7 @@ Inferred types:
 
 'append' @ [98:30] ==> public open fun append(p0: (CharSequence..CharSequence?)): (Writer..Writer?) defined in java.io.BufferedWriter[JavaMethodDescriptor]
 
-'appendNameValue' @ [98:45] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'appendNameValue' @ [98:45] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state in file SignatureDumpingBuilderFactory.kt[SimpleFunctionDescriptorImpl]
 
 'TYPE_RENDERER' @ [98:76] ==> public final val TYPE_RENDERER: DescriptorRenderer defined in org.jetbrains.kotlin.codegen.state.SignatureDumpingBuilderFactory.Companion[PropertyDescriptorImpl]
 
@@ -214,7 +210,7 @@ Inferred types:
 
 'append' @ [100:34] ==> public open fun append(p0: (CharSequence..CharSequence?)): (Writer..Writer?) defined in java.io.BufferedWriter[JavaMethodDescriptor]
 
-'appendNameValue' @ [100:49] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'appendNameValue' @ [100:49] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state in file SignatureDumpingBuilderFactory.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [100:79] ==> value-parameter it: Visibility defined in org.jetbrains.kotlin.codegen.state.SignatureDumpingBuilderFactory.SignatureDumpingClassBuilder.done.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -226,7 +222,7 @@ Inferred types:
 
 'append' @ [103:26] ==> public open fun append(p0: (CharSequence..CharSequence?)): (Writer..Writer?) defined in java.io.BufferedWriter[JavaMethodDescriptor]
 
-'appendNameValue' @ [103:41] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'appendNameValue' @ [103:41] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state in file SignatureDumpingBuilderFactory.kt[SimpleFunctionDescriptorImpl]
 
 'javaClassName' @ [103:66] ==> private final lateinit var javaClassName: String defined in org.jetbrains.kotlin.codegen.state.SignatureDumpingBuilderFactory.SignatureDumpingClassBuilder[PropertyDescriptorImpl]
 
@@ -236,7 +232,7 @@ Inferred types:
 
 'append' @ [105:26] ==> public open fun append(p0: (CharSequence..CharSequence?)): (Writer..Writer?) defined in java.io.BufferedWriter[JavaMethodDescriptor]
 
-'appendQuoted' @ [105:41] ==> private fun Appendable /* = Appendable */.appendQuoted(value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'appendQuoted' @ [105:41] ==> private fun Appendable /* = Appendable */.appendQuoted(value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state in file SignatureDumpingBuilderFactory.kt[SimpleFunctionDescriptorImpl]
 
 'append' @ [105:65] ==> public abstract fun append(p0: (CharSequence..CharSequence?)): (Appendable..Appendable?) defined in java.lang.Appendable[JavaMethodDescriptor]
 
@@ -275,7 +271,7 @@ Inferred types:
     <T> -> Visibility
     <R> -> (java.lang.Appendable..java.lang.Appendable?)
 
-'appendNameValue' @ [111:25] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'appendNameValue' @ [111:25] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state in file SignatureDumpingBuilderFactory.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [111:55] ==> value-parameter it: Visibility defined in org.jetbrains.kotlin.codegen.state.SignatureDumpingBuilderFactory.SignatureDumpingClassBuilder.done.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -283,7 +279,7 @@ Inferred types:
 
 'append' @ [111:71] ==> public abstract fun append(p0: (CharSequence..CharSequence?)): (Appendable..Appendable?) defined in java.lang.Appendable[JavaMethodDescriptor]
 
-'appendNameValue' @ [113:21] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'appendNameValue' @ [113:21] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state in file SignatureDumpingBuilderFactory.kt[SimpleFunctionDescriptorImpl]
 
 'MEMBER_RENDERER' @ [113:52] ==> public final val MEMBER_RENDERER: DescriptorRenderer defined in org.jetbrains.kotlin.codegen.state.SignatureDumpingBuilderFactory.Companion[PropertyDescriptorImpl]
 
@@ -293,7 +289,7 @@ Inferred types:
 
 'append' @ [113:80] ==> public abstract fun append(p0: (CharSequence..CharSequence?)): (Appendable..Appendable?) defined in java.lang.Appendable[JavaMethodDescriptor]
 
-'appendNameValue' @ [116:17] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'appendNameValue' @ [116:17] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state in file SignatureDumpingBuilderFactory.kt[SimpleFunctionDescriptorImpl]
 
 'signature' @ [116:41] ==> val signature: RawSignature defined in org.jetbrains.kotlin.codegen.state.SignatureDumpingBuilderFactory.SignatureDumpingClassBuilder.done.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -301,7 +297,7 @@ Inferred types:
 
 'append' @ [116:57] ==> public abstract fun append(p0: (CharSequence..CharSequence?)): (Appendable..Appendable?) defined in java.lang.Appendable[JavaMethodDescriptor]
 
-'appendNameValue' @ [117:17] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'appendNameValue' @ [117:17] ==> private fun Appendable /* = Appendable */.appendNameValue(name: String, value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state in file SignatureDumpingBuilderFactory.kt[SimpleFunctionDescriptorImpl]
 
 'signature' @ [117:41] ==> val signature: RawSignature defined in org.jetbrains.kotlin.codegen.state.SignatureDumpingBuilderFactory.SignatureDumpingClassBuilder.done.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -336,13 +332,13 @@ Inferred types:
 
 'append' @ [126:132] ==> public abstract fun append(p0: (CharSequence..CharSequence?)): (Appendable..Appendable?) defined in java.lang.Appendable[JavaMethodDescriptor]
 
-'appendQuoted' @ [127:84] ==> private fun Appendable /* = Appendable */.appendQuoted(value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'appendQuoted' @ [127:84] ==> private fun Appendable /* = Appendable */.appendQuoted(value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state in file SignatureDumpingBuilderFactory.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [127:97] ==> value-parameter name: String defined in org.jetbrains.kotlin.codegen.state.appendNameValue[ValueParameterDescriptorImpl]
 
 'append' @ [127:103] ==> public abstract fun append(p0: (CharSequence..CharSequence?)): (Appendable..Appendable?) defined in java.lang.Appendable[JavaMethodDescriptor]
 
-'appendQuoted' @ [127:116] ==> private fun Appendable /* = Appendable */.appendQuoted(value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'appendQuoted' @ [127:116] ==> private fun Appendable /* = Appendable */.appendQuoted(value: String?): Appendable /* = Appendable */ defined in org.jetbrains.kotlin.codegen.state in file SignatureDumpingBuilderFactory.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [127:129] ==> value-parameter value: String? defined in org.jetbrains.kotlin.codegen.state.appendNameValue[ValueParameterDescriptorImpl]
 

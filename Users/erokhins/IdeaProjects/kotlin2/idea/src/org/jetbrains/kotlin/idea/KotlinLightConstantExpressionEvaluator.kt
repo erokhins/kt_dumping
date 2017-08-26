@@ -102,13 +102,13 @@ Inferred types:
 
 'evaluatorTrace' @ [61:82] ==> val evaluatorTrace: DelegatingBindingTrace defined in org.jetbrains.kotlin.idea.KotlinLightConstantExpressionEvaluator.computeExpression[LocalVariableDescriptor]
 
-'constant' @ [62:21] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.idea.KotlinLightConstantExpressionEvaluator.computeExpression[LocalVariableDescriptor]
+'constant' @ [62:21] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.idea.KotlinLightConstantExpressionEvaluator.computeExpression[LocalVariableDescriptor]
 
 'isError' @ [62:30] ==> public open val isError: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
 'evalConstantValue' @ [63:17] ==> private final fun evalConstantValue(constantValue: ConstantValue<*>): Any? defined in org.jetbrains.kotlin.idea.KotlinLightConstantExpressionEvaluator[SimpleFunctionDescriptorImpl]
 
-'constant' @ [63:35] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.idea.KotlinLightConstantExpressionEvaluator.computeExpression[LocalVariableDescriptor]
+'constant' @ [63:35] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.idea.KotlinLightConstantExpressionEvaluator.computeExpression[LocalVariableDescriptor]
 
 'toConstantValue' @ [63:44] ==> public abstract fun toConstantValue(expectedType: KotlinType): ConstantValue<Any?> defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedSimpleFunctionDescriptor]
 

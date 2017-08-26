@@ -53,8 +53,6 @@ Inferred types:
 
 'supportsFeature' @ [44:70] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [44:86] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'SingleUnderscoreForParameterName' @ [44:102] ==> enum entry SingleUnderscoreForParameterName defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'diagnosticHolder' @ [45:13] ==> value-parameter diagnosticHolder: DiagnosticSink defined in org.jetbrains.kotlin.resolve.checkers.UnderscoreChecker.checkIdentifier[ValueParameterDescriptorImpl]

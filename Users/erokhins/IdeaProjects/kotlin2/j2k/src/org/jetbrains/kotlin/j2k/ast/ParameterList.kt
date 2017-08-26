@@ -15,7 +15,7 @@ Inferred types:
 
 'builder' @ [31:9] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.ParameterList.generateCode[ValueParameterDescriptorImpl]
 
-'append' @ [31:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [31:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'parameters' @ [31:24] ==> public final val parameters: List<Parameter> defined in org.jetbrains.kotlin.j2k.ast.ParameterList[PropertyDescriptorImpl]
 
@@ -36,11 +36,7 @@ Inferred types:
 
 'parameters' @ [38:34] ==> value-parameter parameters: List<Parameter> defined in org.jetbrains.kotlin.j2k.ast.ParameterList.Companion.withNoPrototype[ValueParameterDescriptorImpl]
 
-'LPar' @ [38:46] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.LPar[FakeCallableDescriptorForObject]
-
 'withPrototype' @ [38:51] ==> public final fun withPrototype(element: PsiElement?): LPar defined in org.jetbrains.kotlin.j2k.ast.LPar.Companion[SimpleFunctionDescriptorImpl]
-
-'RPar' @ [38:72] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.RPar[FakeCallableDescriptorForObject]
 
 'withPrototype' @ [38:77] ==> public final fun withPrototype(element: PsiElement?): RPar defined in org.jetbrains.kotlin.j2k.ast.RPar.Companion[SimpleFunctionDescriptorImpl]
 
@@ -62,8 +58,6 @@ Inferred types:
 
 'element' @ [50:74] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.j2k.ast.LPar.Companion.withPrototype[ValueParameterDescriptorImpl]
 
-'CommentsAndSpacesInheritance' @ [50:83] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'LINE_BREAKS' @ [50:112] ==> public final val LINE_BREAKS: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
 'Element' @ [54:36] ==> public constructor Element() defined in org.jetbrains.kotlin.j2k.ast.Element[ClassConstructorDescriptorImpl]
@@ -79,8 +73,6 @@ Inferred types:
     <TElement : Element> -> RPar
 
 'element' @ [60:74] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.j2k.ast.RPar.Companion.withPrototype[ValueParameterDescriptorImpl]
-
-'CommentsAndSpacesInheritance' @ [60:83] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'LINE_BREAKS' @ [60:112] ==> public final val LINE_BREAKS: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 

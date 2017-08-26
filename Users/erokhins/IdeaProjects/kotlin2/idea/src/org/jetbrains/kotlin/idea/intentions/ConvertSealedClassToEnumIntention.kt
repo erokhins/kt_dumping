@@ -179,9 +179,9 @@ Inferred types:
 
 'append' @ [85:21] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'?:' @ [85:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String): String[SimpleFunctionDescriptorImpl]
+'?:' @ [85:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: (String..String?)): (String..String?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> (kotlin.String..kotlin.String?)
 
 'subclass' @ [85:29] ==> value-parameter subclass: PsiElement defined in org.jetbrains.kotlin.idea.intentions.ConvertSealedClassToEnumIntention.applyTo.<anonymous>[ValueParameterDescriptorImpl]
 

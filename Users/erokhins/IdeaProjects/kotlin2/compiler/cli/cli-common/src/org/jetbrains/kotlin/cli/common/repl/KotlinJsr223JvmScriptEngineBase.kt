@@ -46,18 +46,18 @@ Inferred types:
 
 'context' @ [44:78] ==> value-parameter context: ScriptContext defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmScriptEngineBase.nextCodeLine[ValueParameterDescriptorImpl]
 
-'let' @ [44:87] ==> @InlineOnly public inline fun <T, R> IReplStageState<out Any?>.let(block: (IReplStageState<out Any?>) -> ReplCodeLine): ReplCodeLine defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [44:87] ==> @InlineOnly public inline fun <T, R> IReplStageState<*>.let(block: (IReplStageState<*>) -> ReplCodeLine): ReplCodeLine defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> IReplStageState<out Any?>
+    <T> -> IReplStageState<*>
     <R> -> ReplCodeLine
 
 'ReplCodeLine' @ [44:93] ==> public constructor ReplCodeLine(no: Int, generation: Int, code: String) defined in org.jetbrains.kotlin.cli.common.repl.ReplCodeLine[ClassConstructorDescriptorImpl]
 
-'it' @ [44:106] ==> value-parameter it: IReplStageState<out Any?> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmScriptEngineBase.nextCodeLine.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [44:106] ==> value-parameter it: IReplStageState<*> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmScriptEngineBase.nextCodeLine.<anonymous>[ValueParameterDescriptorImpl]
 
 'getNextLineNo' @ [44:109] ==> public open fun getNextLineNo(): Int defined in org.jetbrains.kotlin.cli.common.repl.IReplStageState[SimpleFunctionDescriptorImpl]
 
-'it' @ [44:126] ==> value-parameter it: IReplStageState<out Any?> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmScriptEngineBase.nextCodeLine.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [44:126] ==> value-parameter it: IReplStageState<*> defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmScriptEngineBase.nextCodeLine.<anonymous>[ValueParameterDescriptorImpl]
 
 'currentGeneration' @ [44:129] ==> public abstract val currentGeneration: Int defined in org.jetbrains.kotlin.cli.common.repl.IReplStageState[PropertyDescriptorImpl]
 
@@ -176,7 +176,7 @@ Inferred types:
 
 'result' @ [77:73] ==> val result: ReplCompileResult defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmScriptEngineBase.compile[LocalVariableDescriptor]
 
-'locationString' @ [77:80] ==> private fun ReplCompileResult.Error.locationString(): String defined in org.jetbrains.kotlin.cli.common.repl[SimpleFunctionDescriptorImpl]
+'locationString' @ [77:80] ==> private fun ReplCompileResult.Error.locationString(): String defined in org.jetbrains.kotlin.cli.common.repl in file KotlinJsr223JvmScriptEngineBase.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [77:101] ==> val result: ReplCompileResult defined in org.jetbrains.kotlin.cli.common.repl.KotlinJsr223JvmScriptEngineBase.compile[LocalVariableDescriptor]
 

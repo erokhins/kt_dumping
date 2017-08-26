@@ -42,7 +42,7 @@
 
 'getParentOfType' @ [46:59] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtExpressionImpl..KtExpressionImpl?)>..Class<out (KtExpressionImpl..KtExpressionImpl?)>?)): KtExpressionImpl? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpressionImpl
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpressionImpl..org.jetbrains.kotlin.psi.KtExpressionImpl?)
 
 'expression' @ [47:33] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.idea.inspections.NullableBooleanElvisInspection.buildVisitor.<no name provided>.visitBinaryExpression[ValueParameterDescriptorImpl]
 

@@ -82,14 +82,11 @@ Inferred types:
 
 'isOK' @ [85:19] ==> public final val RefactoringMessageDialog.isOK: Boolean[MyPropertyDescriptor]
 
-'CopyableUserDataProperty' @ [89:12] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<MutableMap<FqName, (KtSimpleNameExpression) -> UsageInfo?>>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtSimpleNameExpression
-    <T : Any> -> MutableMap<FqName, Function1<KtSimpleNameExpression, UsageInfo?>>
+'getValue' @ [89:12] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [89:41] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(MutableMap<FqName, (KtSimpleNameExpression) -> UsageInfo?>..MutableMap<FqName, (KtSimpleNameExpression) -> UsageInfo?>?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MutableMap<FqName, Function1<KtSimpleNameExpression, UsageInfo?>>
+    <T : (Any..Any?)> -> (kotlin.collections.MutableMap<org.jetbrains.kotlin.name.FqName, (org.jetbrains.kotlin.psi.KtSimpleNameExpression) -> com.intellij.usageView.UsageInfo?>..kotlin.collections.MutableMap<org.jetbrains.kotlin.name.FqName, (org.jetbrains.kotlin.psi.KtSimpleNameExpression) -> com.intellij.usageView.UsageInfo?>?)
 
 'element' @ [92:20] ==> value-parameter element: KtElement defined in org.jetbrains.kotlin.idea.refactoring.inline.preProcessInternalUsages[ValueParameterDescriptorImpl]
 
@@ -135,7 +132,7 @@ Inferred types:
 
 'element' @ [97:9] ==> value-parameter element: KtElement defined in org.jetbrains.kotlin.idea.refactoring.inline.preProcessInternalUsages[ValueParameterDescriptorImpl]
 
-'processInternalReferencesToUpdateOnPackageNameChange' @ [97:17] ==> public fun KtElement.processInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo, body: (originalRefExpr: KtSimpleNameExpression, usageFactory: UsageInfoFactory /* = (KtSimpleNameExpression) -> UsageInfo? */) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'processInternalReferencesToUpdateOnPackageNameChange' @ [97:17] ==> public fun KtElement.processInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo, body: (originalRefExpr: KtSimpleNameExpression, usageFactory: UsageInfoFactory /* = (KtSimpleNameExpression) -> UsageInfo? */) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'packageNameInfo' @ [97:70] ==> val packageNameInfo: ContainerChangeInfo defined in org.jetbrains.kotlin.idea.refactoring.inline.preProcessInternalUsages[LocalVariableDescriptor]
 
@@ -213,7 +210,7 @@ Inferred types:
 
 'internalUsageInfos' @ [111:39] ==> internal var KtSimpleNameExpression.internalUsageInfos: MutableMap<FqName, (KtSimpleNameExpression) -> UsageInfo?>? defined in org.jetbrains.kotlin.idea.refactoring.inline in file inlineUtils.kt[PropertyDescriptorImpl]
 
-'postProcessMoveUsages' @ [112:5] ==> public fun postProcessMoveUsages(usages: Collection<UsageInfo>, oldToNewElementsMapping: Map<PsiElement, PsiElement> = ..., shorteningMode: KtSimpleNameReference.ShorteningMode = ...): List<NonCodeUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'postProcessMoveUsages' @ [112:5] ==> public fun postProcessMoveUsages(usages: Collection<UsageInfo>, oldToNewElementsMapping: Map<PsiElement, PsiElement> = ..., shorteningMode: KtSimpleNameReference.ShorteningMode = ...): List<NonCodeUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'internalUsages' @ [112:27] ==> val internalUsages: List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.inline.postProcessInternalReferences[LocalVariableDescriptor]
 
@@ -389,6 +386,8 @@ Inferred types:
 
 'size' @ [160:81] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
+'analyzeBodyCopy' @ [160:90] ==> local final fun analyzeBodyCopy(): BindingContext defined in org.jetbrains.kotlin.idea.refactoring.inline.buildCodeToInline[SimpleFunctionDescriptorImpl]
+
 'builder' @ [163:16] ==> val builder: CodeToInlineBuilder defined in org.jetbrains.kotlin.idea.refactoring.inline.buildCodeToInline[LocalVariableDescriptor]
 
 'prepareCodeToInline' @ [163:24] ==> public final fun prepareCodeToInline(mainExpression: KtExpression?, statementsBefore: List<KtExpression>, analyze: () -> BindingContext): CodeToInline defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInlineBuilder[SimpleFunctionDescriptorImpl]
@@ -398,4 +397,6 @@ Inferred types:
 'emptyList' @ [163:54] ==> public fun <T> emptyList(): List<KtExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtExpression
+
+'analyzeBodyCopy' @ [163:69] ==> local final fun analyzeBodyCopy(): BindingContext defined in org.jetbrains.kotlin.idea.refactoring.inline.buildCodeToInline[SimpleFunctionDescriptorImpl]
 

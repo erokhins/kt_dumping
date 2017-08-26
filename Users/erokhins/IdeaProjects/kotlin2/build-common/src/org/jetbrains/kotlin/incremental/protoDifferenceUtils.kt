@@ -134,8 +134,6 @@ Inferred types:
 
 'isPrivate' @ [78:26] ==> public open fun isPrivate(@NotNull p0: Visibility): Boolean defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaMethodDescriptor]
 
-'Deserialization' @ [78:36] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization[FakeCallableDescriptorForObject]
-
 'visibility' @ [78:52] ==> @JvmStatic public final fun visibility(visibility: ProtoBuf.Visibility?): Visibility defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[DeserializedSimpleFunctionDescriptor]
 
 'when (this) {
@@ -303,7 +301,7 @@ Inferred types:
 
 'oldMembers' @ [118:39] ==> val oldMembers: List<MessageLite>? defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForMembers[LocalVariableDescriptor]
 
-'names' @ [118:52] ==> internal fun List<MessageLite>.names(nameResolver: NameResolver): List<String> defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'names' @ [118:52] ==> internal fun List<MessageLite>.names(nameResolver: NameResolver): List<String> defined in org.jetbrains.kotlin.incremental in file protoDifferenceUtils.kt[SimpleFunctionDescriptorImpl]
 
 'compareObject' @ [118:58] ==> protected abstract val compareObject: ProtoCompareGenerated defined in org.jetbrains.kotlin.incremental.DifferenceCalculator[PropertyDescriptorImpl]
 
@@ -313,7 +311,7 @@ Inferred types:
 
 'newMembers' @ [119:39] ==> val newMembers: List<MessageLite>? defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForMembers[LocalVariableDescriptor]
 
-'names' @ [119:50] ==> internal fun List<MessageLite>.names(nameResolver: NameResolver): List<String> defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'names' @ [119:50] ==> internal fun List<MessageLite>.names(nameResolver: NameResolver): List<String> defined in org.jetbrains.kotlin.incremental in file protoDifferenceUtils.kt[SimpleFunctionDescriptorImpl]
 
 'compareObject' @ [119:56] ==> protected abstract val compareObject: ProtoCompareGenerated defined in org.jetbrains.kotlin.incremental.DifferenceCalculator[PropertyDescriptorImpl]
 
@@ -339,7 +337,7 @@ Inferred types:
 
 'HashSet' @ [133:22] ==> public constructor HashSet<E : (Any..Any?)>(p0: (MutableCollection<out (MessageLite..MessageLite?)>..Collection<(MessageLite..MessageLite?)>?)) defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> MessageLite
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.protobuf.MessageLite..org.jetbrains.kotlin.protobuf.MessageLite?)
 
 'newList' @ [133:30] ==> value-parameter newList: List<MessageLite> defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes[ValueParameterDescriptorImpl]
 
@@ -349,11 +347,11 @@ Inferred types:
 Inferred types:
     <T> -> MessageLite
 
-'newSet' @ [136:29] ==> val newSet: HashSet<MessageLite> defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes[LocalVariableDescriptor]
+'newSet' @ [136:29] ==> val newSet: HashSet<(MessageLite..MessageLite?)> defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes[LocalVariableDescriptor]
 
-'firstOrNull' @ [136:36] ==> public inline fun <T> Iterable<MessageLite>.firstOrNull(predicate: (MessageLite) -> Boolean): MessageLite? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'firstOrNull' @ [136:36] ==> public inline fun <T> Iterable<(MessageLite..MessageLite?)>.firstOrNull(predicate: ((MessageLite..MessageLite?)) -> Boolean): MessageLite? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MessageLite
+    <T> -> (org.jetbrains.kotlin.protobuf.MessageLite..org.jetbrains.kotlin.protobuf.MessageLite?)
 
 'compareObject' @ [136:50] ==> protected abstract val compareObject: ProtoCompareGenerated defined in org.jetbrains.kotlin.incremental.DifferenceCalculator[PropertyDescriptorImpl]
 
@@ -361,7 +359,7 @@ Inferred types:
 
 'oldMember' @ [136:76] ==> value-parameter oldMember: MessageLite defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes.<anonymous>[ValueParameterDescriptorImpl]
 
-'it' @ [136:87] ==> value-parameter it: MessageLite defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [136:87] ==> value-parameter it: (MessageLite..MessageLite?) defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'if (newMember != null) {
                 newSet.remove(newMember)
@@ -374,9 +372,9 @@ Inferred types:
 
 'newMember' @ [137:17] ==> val newMember: MessageLite? defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes.<anonymous>[LocalVariableDescriptor]
 
-'newSet' @ [138:17] ==> val newSet: HashSet<MessageLite> defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes[LocalVariableDescriptor]
+'newSet' @ [138:17] ==> val newSet: HashSet<(MessageLite..MessageLite?)> defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes[LocalVariableDescriptor]
 
-'remove' @ [138:24] ==> public open fun remove(element: MessageLite): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'remove' @ [138:24] ==> public open fun remove(element: (MessageLite..MessageLite?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'newMember' @ [138:31] ==> val newMember: MessageLite? defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes.<anonymous>[LocalVariableDescriptor]
 
@@ -392,17 +390,17 @@ Inferred types:
 
 'oldNameResolver' @ [141:57] ==> public final val oldNameResolver: NameResolver defined in org.jetbrains.kotlin.incremental.ProtoCompareGenerated[PropertyDescriptorImpl]
 
-'newSet' @ [145:9] ==> val newSet: HashSet<MessageLite> defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes[LocalVariableDescriptor]
+'newSet' @ [145:9] ==> val newSet: HashSet<(MessageLite..MessageLite?)> defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes[LocalVariableDescriptor]
 
-'forEach' @ [145:16] ==> @HidesMembers public inline fun <T> Iterable<MessageLite>.forEach(action: (MessageLite) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [145:16] ==> @HidesMembers public inline fun <T> Iterable<(MessageLite..MessageLite?)>.forEach(action: ((MessageLite..MessageLite?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MessageLite
+    <T> -> (org.jetbrains.kotlin.protobuf.MessageLite..org.jetbrains.kotlin.protobuf.MessageLite?)
 
 'result' @ [146:13] ==> val result: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes[LocalVariableDescriptor]
 
 'add' @ [146:20] ==> public open fun add(element: String): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
-'newMember' @ [146:24] ==> value-parameter newMember: MessageLite defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes.<anonymous>[ValueParameterDescriptorImpl]
+'newMember' @ [146:24] ==> value-parameter newMember: (MessageLite..MessageLite?) defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.calcDifferenceForEqualHashes.<anonymous>[ValueParameterDescriptorImpl]
 
 'name' @ [146:34] ==> private fun MessageLite.name(nameResolver: NameResolver): String defined in org.jetbrains.kotlin.incremental in file protoDifferenceUtils.kt[SimpleFunctionDescriptorImpl]
 
@@ -478,25 +476,25 @@ Inferred types:
 
 'this' @ [162:22] ==> <this> defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.getHashCode[ReceiverParameterDescriptorImpl]
 
-'hashCode' @ [163:40] ==> public fun ProtoBuf.Constructor.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [163:40] ==> public fun ProtoBuf.Constructor.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [163:49] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.getHashCode[ValueParameterDescriptorImpl]
 
 'fqNameIndexes' @ [163:64] ==> value-parameter fqNameIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.getHashCode[ValueParameterDescriptorImpl]
 
-'hashCode' @ [164:37] ==> public fun ProtoBuf.Function.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [164:37] ==> public fun ProtoBuf.Function.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [164:46] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.getHashCode[ValueParameterDescriptorImpl]
 
 'fqNameIndexes' @ [164:61] ==> value-parameter fqNameIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.getHashCode[ValueParameterDescriptorImpl]
 
-'hashCode' @ [165:37] ==> public fun ProtoBuf.Property.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [165:37] ==> public fun ProtoBuf.Property.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [165:46] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.getHashCode[ValueParameterDescriptorImpl]
 
 'fqNameIndexes' @ [165:61] ==> value-parameter fqNameIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.getHashCode[ValueParameterDescriptorImpl]
 
-'hashCode' @ [166:38] ==> public fun ProtoBuf.TypeAlias.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [166:38] ==> public fun ProtoBuf.TypeAlias.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [166:47] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.DifferenceCalculator.getHashCode[ValueParameterDescriptorImpl]
 
@@ -774,6 +772,8 @@ Inferred types:
 
 'calcDifferenceForNonPrivateMembers' @ [226:59] ==> local final fun calcDifferenceForNonPrivateMembers(members: (ProtoBuf.Class) -> List<MessageLite>): Collection<String> defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForClass.difference[SimpleFunctionDescriptorImpl]
 
+'getConstructorList' @ [226:110] ==> public open fun getConstructorList(): (MutableList<(ProtoBuf.Constructor..ProtoBuf.Constructor?)>..List<(ProtoBuf.Constructor..ProtoBuf.Constructor?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
+
 'isClassAffected' @ [227:21] ==> var isClassAffected: Boolean defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForClass.difference[LocalVariableDescriptor]
 
 'isClassAffected' @ [227:39] ==> var isClassAffected: Boolean defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForClass.difference[LocalVariableDescriptor]
@@ -792,6 +792,8 @@ Inferred types:
 
 'calcDifferenceForNonPrivateMembers' @ [230:34] ==> local final fun calcDifferenceForNonPrivateMembers(members: (ProtoBuf.Class) -> List<MessageLite>): Collection<String> defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForClass.difference[SimpleFunctionDescriptorImpl]
 
+'getFunctionList' @ [230:85] ==> public open fun getFunctionList(): (MutableList<(ProtoBuf.Function..ProtoBuf.Function?)>..List<(ProtoBuf.Function..ProtoBuf.Function?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
+
 'PROPERTY_LIST' @ [231:35] ==> enum entry PROPERTY_LIST defined in org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufClassKind[FakeCallableDescriptorForObject]
 
 'names' @ [232:21] ==> val names: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForClass.difference[LocalVariableDescriptor]
@@ -800,6 +802,8 @@ Inferred types:
 
 'calcDifferenceForNonPrivateMembers' @ [232:34] ==> local final fun calcDifferenceForNonPrivateMembers(members: (ProtoBuf.Class) -> List<MessageLite>): Collection<String> defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForClass.difference[SimpleFunctionDescriptorImpl]
 
+'getPropertyList' @ [232:85] ==> public open fun getPropertyList(): (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
+
 'TYPE_ALIAS_LIST' @ [233:35] ==> enum entry TYPE_ALIAS_LIST defined in org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufClassKind[FakeCallableDescriptorForObject]
 
 'names' @ [234:21] ==> val names: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForClass.difference[LocalVariableDescriptor]
@@ -807,6 +811,8 @@ Inferred types:
 'addAll' @ [234:27] ==> public open fun addAll(elements: Collection<String>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'calcDifferenceForNonPrivateMembers' @ [234:34] ==> local final fun calcDifferenceForNonPrivateMembers(members: (ProtoBuf.Class) -> List<MessageLite>): Collection<String> defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForClass.difference[SimpleFunctionDescriptorImpl]
+
+'getTypeAliasList' @ [234:85] ==> public open fun getTypeAliasList(): (MutableList<(ProtoBuf.TypeAlias..ProtoBuf.TypeAlias?)>..List<(ProtoBuf.TypeAlias..ProtoBuf.TypeAlias?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 
 'ENUM_ENTRY_LIST' @ [235:35] ==> enum entry ENUM_ENTRY_LIST defined in org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufClassKind[FakeCallableDescriptorForObject]
 
@@ -952,6 +958,8 @@ Inferred types:
 
 'calcDifferenceForNonPrivateMembers' @ [303:34] ==> local final fun calcDifferenceForNonPrivateMembers(members: (ProtoBuf.Package) -> List<MessageLite>): Collection<String> defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForPackageFacade.difference[SimpleFunctionDescriptorImpl]
 
+'getFunctionList' @ [303:87] ==> public open fun getFunctionList(): (MutableList<(ProtoBuf.Function..ProtoBuf.Function?)>..List<(ProtoBuf.Function..ProtoBuf.Function?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
+
 'PROPERTY_LIST' @ [304:37] ==> enum entry PROPERTY_LIST defined in org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufPackageKind[FakeCallableDescriptorForObject]
 
 'names' @ [305:21] ==> val names: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForPackageFacade.difference[LocalVariableDescriptor]
@@ -960,6 +968,8 @@ Inferred types:
 
 'calcDifferenceForNonPrivateMembers' @ [305:34] ==> local final fun calcDifferenceForNonPrivateMembers(members: (ProtoBuf.Package) -> List<MessageLite>): Collection<String> defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForPackageFacade.difference[SimpleFunctionDescriptorImpl]
 
+'getPropertyList' @ [305:87] ==> public open fun getPropertyList(): (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
+
 'TYPE_ALIAS_LIST' @ [306:37] ==> enum entry TYPE_ALIAS_LIST defined in org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufPackageKind[FakeCallableDescriptorForObject]
 
 'names' @ [307:21] ==> val names: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForPackageFacade.difference[LocalVariableDescriptor]
@@ -967,6 +977,8 @@ Inferred types:
 'addAll' @ [307:27] ==> public open fun addAll(elements: Collection<String>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'calcDifferenceForNonPrivateMembers' @ [307:34] ==> local final fun calcDifferenceForNonPrivateMembers(members: (ProtoBuf.Package) -> List<MessageLite>): Collection<String> defined in org.jetbrains.kotlin.incremental.DifferenceCalculatorForPackageFacade.difference[SimpleFunctionDescriptorImpl]
+
+'getTypeAliasList' @ [307:87] ==> public open fun getTypeAliasList(): (MutableList<(ProtoBuf.TypeAlias..ProtoBuf.TypeAlias?)>..List<(ProtoBuf.TypeAlias..ProtoBuf.TypeAlias?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 
 'TYPE_TABLE' @ [308:37] ==> enum entry TYPE_TABLE defined in org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufPackageKind[FakeCallableDescriptorForObject]
 

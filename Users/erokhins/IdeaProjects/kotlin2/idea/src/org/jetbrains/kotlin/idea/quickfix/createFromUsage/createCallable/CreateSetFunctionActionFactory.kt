@@ -42,7 +42,7 @@ Inferred types:
 
 'getParentElementOfType' @ [48:43] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtOperationExpression..KtOperationExpression?)>..Class<(KtOperationExpression..KtOperationExpression?)>?)): KtOperationExpression? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtOperationExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtOperationExpression..org.jetbrains.kotlin.psi.KtOperationExpression?)
 
 'diagnostic' @ [48:66] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateSetFunctionActionFactory.createCallableInfo[ValueParameterDescriptorImpl]
 
@@ -94,7 +94,7 @@ Inferred types:
 
 'resultingDescriptor' @ [57:72] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'returnType' @ [57:93] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -136,8 +136,6 @@ Inferred types:
 
 'FunctionInfo' @ [65:16] ==> public constructor FunctionInfo(name: String, receiverTypeInfo: TypeInfo, returnTypeInfo: TypeInfo, possibleContainers: List<KtElement> = ..., parameterInfos: List<ParameterInfo> = ..., typeParameterInfos: List<TypeInfo> = ..., isOperator: Boolean = ..., isInfix: Boolean = ..., isAbstract: Boolean = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.FunctionInfo[ClassConstructorDescriptorImpl]
 
-'OperatorNameConventions' @ [66:17] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'SET' @ [66:41] ==> @field:JvmField public final val SET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'asString' @ [66:45] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
@@ -148,7 +146,7 @@ Inferred types:
 
 'emptyList' @ [66:92] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KtElement..KtElement?)>..List<(KtElement..KtElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtElement
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'parameters' @ [66:105] ==> val parameters: ArrayList<ParameterInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateSetFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 

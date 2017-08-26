@@ -399,11 +399,11 @@ Inferred types:
 
 'java' @ [133:54] ==> public val <T> KClass<out Modification>.java: Class<out Modification> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Modification
+    <T> -> Captured(out Modification)
 
 'simpleName' @ [133:59] ==> public final val <T : (Any..Any?)> Class<out Modification>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Modification
+    <T : (Any..Any?)> -> Captured(out Modification)
 
 'path' @ [133:72] ==> public final val path: String defined in org.jetbrains.kotlin.incremental.testingUtils.Modification[PropertyDescriptorImpl]
 

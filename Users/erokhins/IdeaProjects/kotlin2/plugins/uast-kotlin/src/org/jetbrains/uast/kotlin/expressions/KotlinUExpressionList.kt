@@ -20,8 +20,6 @@
 
 'psi' @ [45:39] ==> value-parameter psi: PsiElement? defined in org.jetbrains.uast.kotlin.KotlinUExpressionList.Companion.createClassBody[ValueParameterDescriptorImpl]
 
-'KotlinSpecialExpressionKinds' @ [45:44] ==> public object KotlinSpecialExpressionKinds defined in org.jetbrains.uast.kotlin.kinds in file KotlinSpecialExpressionKinds.kt[FakeCallableDescriptorForObject]
-
 'CLASS_BODY' @ [45:73] ==> @JvmField public final val CLASS_BODY: UastSpecialExpressionKind defined in org.jetbrains.uast.kotlin.kinds.KotlinSpecialExpressionKinds[PropertyDescriptorImpl]
 
 'uastParent' @ [45:85] ==> value-parameter uastParent: UElement? defined in org.jetbrains.uast.kotlin.KotlinUExpressionList.Companion.createClassBody[ValueParameterDescriptorImpl]

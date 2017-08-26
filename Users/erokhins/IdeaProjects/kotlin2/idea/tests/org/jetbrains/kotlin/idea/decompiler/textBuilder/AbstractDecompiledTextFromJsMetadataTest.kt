@@ -18,7 +18,7 @@
 
 'java' @ [34:123] ==> public val <T> KClass<out PsiFile>.java: Class<out PsiFile> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiFile
+    <T> -> Captured(out PsiFile)
 
 'super' @ [37:9] ==> <this> defined in org.jetbrains.kotlin.idea.decompiler.textBuilder.AbstractDecompiledTextFromJsMetadataTest[LazyClassReceiverParameterDescriptor]
 
@@ -57,8 +57,6 @@ Inferred types:
 'packageDir' @ [50:12] ==> val packageDir: VirtualFile defined in org.jetbrains.kotlin.idea.decompiler.textBuilder.getKjsmFile[LocalVariableDescriptor]
 
 'findChild' @ [50:23] ==> @Nullable public open fun findChild(@NotNull p0: String): VirtualFile? defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
-
-'JsSerializerProtocol' @ [50:33] ==> public object JsSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.js[FakeCallableDescriptorForObject]
 
 'getKjsmFilePath' @ [50:54] ==> public final fun getKjsmFilePath(packageFqName: FqName): String defined in org.jetbrains.kotlin.serialization.js.JsSerializerProtocol[DeserializedSimpleFunctionDescriptor]
 

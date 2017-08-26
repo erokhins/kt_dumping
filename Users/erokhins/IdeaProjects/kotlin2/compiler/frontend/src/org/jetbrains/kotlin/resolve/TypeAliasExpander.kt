@@ -118,8 +118,6 @@ Inferred types:
 
 'isNullable' @ [72:21] ==> value-parameter isNullable: Boolean defined in org.jetbrains.kotlin.resolve.TypeAliasExpander.createAbbreviation[ValueParameterDescriptorImpl]
 
-'MemberScope' @ [73:21] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
-
 'Empty' @ [73:33] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'assertRecursionDepth' @ [83:9] ==> private final fun assertRecursionDepth(recursionDepth: Int, typeAliasDescriptor: TypeAliasDescriptor): Unit defined in org.jetbrains.kotlin.resolve.TypeAliasExpander.Companion[SimpleFunctionDescriptorImpl]

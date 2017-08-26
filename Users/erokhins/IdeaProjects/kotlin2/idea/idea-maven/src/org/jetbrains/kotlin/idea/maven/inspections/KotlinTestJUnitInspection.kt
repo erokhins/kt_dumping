@@ -74,8 +74,6 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'KotlinMavenConfigurator' @ [48:62] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [48:86] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
 'it' @ [48:98] ==> value-parameter it: (MavenDomDependency..MavenDomDependency?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinTestJUnitInspection.checkFileElement.<anonymous>[ValueParameterDescriptorImpl]
@@ -85,8 +83,6 @@ Inferred types:
 'rawText' @ [48:112] ==> public final val <T : (Any..Any?)> GenericDomValue<(String..String?)>.rawText: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
-
-'KotlinJavaMavenConfigurator' @ [48:123] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator[FakeCallableDescriptorForObject]
 
 'TEST_LIB_ID' @ [48:151] ==> public final val TEST_LIB_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinJavaMavenConfigurator.Companion[PropertyDescriptorImpl]
 

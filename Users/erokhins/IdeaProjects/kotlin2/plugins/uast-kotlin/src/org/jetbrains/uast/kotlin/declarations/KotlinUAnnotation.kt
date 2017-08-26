@@ -1,6 +1,6 @@
-'lz' @ [14:39] ==> internal fun <T> lz(initializer: () -> AnnotationDescriptor?): Lazy<AnnotationDescriptor?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [14:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> AnnotationDescriptor?
+    <T> -> T
 
 'psi' @ [14:44] ==> public open val psi: KtAnnotationEntry defined in org.jetbrains.uast.kotlin.KotlinUAnnotation[PropertyDescriptorImpl]
 
@@ -16,9 +16,9 @@ Inferred types:
 
 'asString' @ [17:45] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.FqName[JavaMethodDescriptor]
 
-'lz' @ [19:37] ==> internal fun <T> lz(initializer: () -> List<KotlinUNamedExpression>): Lazy<List<KotlinUNamedExpression>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [19:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KotlinUNamedExpression>
+    <T> -> T
 
 'getUastContext' @ [20:23] ==> public tailrec fun UElement.getUastContext(): UastContext defined in org.jetbrains.uast[DeserializedSimpleFunctionDescriptor]
 

@@ -343,7 +343,7 @@ Inferred types:
 
 'resolutionFacade' @ [179:91] ==> val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ExtractSuperRefactoring.Companion.collectConflicts.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'checkPrivateMembersWithUsages' @ [180:29] ==> internal fun checkPrivateMembersWithUsages(member: KtNamedDeclaration, memberDescriptor: DeclarationDescriptor, sourceClass: KtClassOrObject, membersToMove: Collection<KtNamedDeclaration>, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'checkPrivateMembersWithUsages' @ [180:29] ==> internal fun checkPrivateMembersWithUsages(member: KtNamedDeclaration, memberDescriptor: DeclarationDescriptor, sourceClass: KtClassOrObject, membersToMove: Collection<KtNamedDeclaration>, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [180:59] ==> val member: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ExtractSuperRefactoring.Companion.collectConflicts.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -466,7 +466,7 @@ Inferred types:
 
 'info' @ [220:21] ==> val info: KotlinMemberInfo? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ExtractSuperRefactoring.analyzeContext.<anonymous>[LocalVariableDescriptor]
 
-'getChildrenToAnalyze' @ [220:27] ==> public fun KotlinMemberInfo.getChildrenToAnalyze(): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo[SimpleFunctionDescriptorImpl]
+'getChildrenToAnalyze' @ [220:27] ==> public fun KotlinMemberInfo.getChildrenToAnalyze(): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo in file memberInfoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'asSequence' @ [220:51] ==> public fun <T> Iterable<PsiElement>.asSequence(): Sequence<PsiElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -823,8 +823,6 @@ Inferred types:
 
 'superClassEntryToAdd' @ [281:44] ==> val superClassEntryToAdd: KtSuperTypeListEntry defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ExtractSuperRefactoring.createClass[LocalVariableDescriptor]
 
-'ShortenReferences' @ [282:13] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [282:31] ==> @field:JvmField public final val DEFAULT: ShortenReferences defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Companion[DeserializedPropertyDescriptor]
 
 'process' @ [282:39] ==> @JvmOverloads public final fun process(element: KtElement, elementFilter: (PsiElement) -> ShortenReferences.FilterResult = ...): KtElement defined in org.jetbrains.kotlin.idea.core.ShortenReferences[DeserializedSimpleFunctionDescriptor]
@@ -836,8 +834,6 @@ Inferred types:
     <reified T : PsiElement> -> KtSuperTypeListEntry
 
 'newSuperTypeListEntry' @ [282:72] ==> val newSuperTypeListEntry: KtSuperTypeListEntry defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ExtractSuperRefactoring.createClass[LocalVariableDescriptor]
-
-'ShortenReferences' @ [285:13] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [285:31] ==> @field:JvmField public final val DEFAULT: ShortenReferences defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Companion[DeserializedPropertyDescriptor]
 
@@ -955,8 +951,6 @@ Inferred types:
 
 'executeWriteCommand' @ [310:17] ==> public fun Project.executeWriteCommand(name: String, command: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
 
-'KotlinExtractSuperclassHandler' @ [310:37] ==> public object KotlinExtractSuperclassHandler : KotlinExtractSuperHandlerBase defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass in file KotlinExtractSuperclassHandler.kt[FakeCallableDescriptorForObject]
-
 'REFACTORING_NAME' @ [310:68] ==> public final val REFACTORING_NAME: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.KotlinExtractSuperclassHandler[PropertyDescriptorImpl]
 
 'createClass' @ [311:28] ==> private final fun createClass(superClassEntry: KtSuperTypeListEntry?): KtClass defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ExtractSuperRefactoring[SimpleFunctionDescriptorImpl]
@@ -990,7 +984,7 @@ Inferred types:
 
 'it' @ [319:58] ==> value-parameter it: KotlinMemberInfo defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ExtractSuperRefactoring.performRefactoring.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'toJavaMemberInfo' @ [319:61] ==> public fun MemberInfoBase<out KtNamedDeclaration>.toJavaMemberInfo(): MemberInfo? defined in org.jetbrains.kotlin.idea.refactoring.memberInfo[SimpleFunctionDescriptorImpl]
+'toJavaMemberInfo' @ [319:61] ==> public fun MemberInfoBase<out KtNamedDeclaration>.toJavaMemberInfo(): MemberInfo? defined in org.jetbrains.kotlin.idea.refactoring.memberInfo in file KotlinMemberInfo.kt[SimpleFunctionDescriptorImpl]
 
 'toTypedArray' @ [319:82] ==> public inline fun <reified T> Collection<MemberInfo>.toTypedArray(): Array<MemberInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -25,6 +25,8 @@ Inferred types:
 
 'this' @ [53:32] ==> <this> defined in org.jetbrains.kotlin.load.kotlin.incremental.IncrementalPackageFragmentProvider[LazyClassReceiverParameterDescriptor]
 
+'IncrementalPackageFragment' @ [53:38] ==> public constructor IncrementalPackageFragment(fqName: FqName) defined in org.jetbrains.kotlin.load.kotlin.incremental.IncrementalPackageFragmentProvider.IncrementalPackageFragment[ClassConstructorDescriptorImpl]
+
 'emptySet' @ [55:104] ==> public fun <T> emptySet(): Set<FqName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FqName

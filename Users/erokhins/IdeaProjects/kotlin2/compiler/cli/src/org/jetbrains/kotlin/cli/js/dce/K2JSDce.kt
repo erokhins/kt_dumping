@@ -163,7 +163,7 @@ Inferred types:
 
 'files' @ [70:16] ==> value-parameter files: List<InputFile> defined in org.jetbrains.kotlin.cli.js.dce.K2JSDce.checkSourceFiles[ValueParameterDescriptorImpl]
 
-'fold' @ [70:22] ==> public inline fun <T, R> Iterable<InputFile>.fold(initial: Boolean, operation: (Boolean, InputFile) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [70:22] ==> public inline fun <T, R> Iterable<InputFile>.fold(initial: Boolean, operation: (acc: Boolean, InputFile) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> InputFile
     <R> -> Boolean

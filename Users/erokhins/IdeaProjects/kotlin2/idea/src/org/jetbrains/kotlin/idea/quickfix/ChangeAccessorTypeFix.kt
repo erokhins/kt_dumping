@@ -18,6 +18,8 @@ Inferred types:
 
 'KotlinType' @ [37:102] ==> private constructor KotlinType() defined in org.jetbrains.kotlin.types.KotlinType[DeserializedClassConstructorDescriptor]
 
+'isError' @ [37:114] ==> public val KotlinType.isError: Boolean defined in org.jetbrains.kotlin.types[DeserializedPropertyDescriptor]
+
 'super' @ [39:82] ==> <this> defined in org.jetbrains.kotlin.idea.quickfix.ChangeAccessorTypeFix[LazyClassReceiverParameterDescriptor]
 
 'isAvailable' @ [39:88] ==> public open fun isAvailable(project: Project, editor: Editor?, file: PsiFile): Boolean defined in org.jetbrains.kotlin.idea.quickfix.KotlinQuickFixAction[SimpleFunctionDescriptorImpl]
@@ -65,8 +67,6 @@ Inferred types:
 'file' @ [54:45] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.quickfix.ChangeAccessorTypeFix.invoke[ValueParameterDescriptorImpl]
 
 'createType' @ [54:51] ==> public final fun createType(type: String): KtTypeReference defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
-
-'IdeDescriptorRenderers' @ [54:62] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [54:85] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -122,4 +122,6 @@ Inferred types:
 Inferred types:
     <T> -> KtPropertyAccessor
     <R> -> ChangeAccessorTypeFix
+
+'ChangeAccessorTypeFix' @ [64:96] ==> public constructor ChangeAccessorTypeFix(element: KtPropertyAccessor) defined in org.jetbrains.kotlin.idea.quickfix.ChangeAccessorTypeFix[ClassConstructorDescriptorImpl]
 

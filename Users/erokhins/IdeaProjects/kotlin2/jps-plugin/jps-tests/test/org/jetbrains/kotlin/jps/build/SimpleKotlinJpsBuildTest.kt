@@ -105,8 +105,6 @@ Inferred types:
 
 'current' @ [96:16] ==> public final val current: OSKind defined in org.jetbrains.kotlin.daemon.common.OSKind.Companion[DeserializedPropertyDescriptor]
 
-'OSKind' @ [96:27] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.OSKind[FakeCallableDescriptorForObject]
-
 'Windows' @ [96:34] ==> enum entry Windows defined in org.jetbrains.kotlin.daemon.common.OSKind[FakeCallableDescriptorForObject]
 
 'absolutePath' @ [96:43] ==> public final val File.absolutePath: (String..String?)[MyPropertyDescriptor]

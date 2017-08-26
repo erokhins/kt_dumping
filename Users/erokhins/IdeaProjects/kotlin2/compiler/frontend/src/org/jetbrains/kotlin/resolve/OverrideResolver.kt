@@ -1180,9 +1180,9 @@ Inferred types:
 
 'DELEGATION' @ [475:76] ==> enum entry DELEGATION defined in org.jetbrains.kotlin.descriptors.CallableMemberDescriptor.Kind[FakeCallableDescriptorForObject]
 
-'?:' @ [476:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ClassDescriptor?, right: ClassDescriptor): ClassDescriptor[SimpleFunctionDescriptorImpl]
+'?:' @ [476:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: DeclarationDescriptor?, right: DeclarationDescriptor): DeclarationDescriptor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ClassDescriptor
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> DeclarationDescriptor
 
 'getContainingClass' @ [476:41] ==> @Nullable public open fun getContainingClass(@NotNull p0: DeclarationDescriptor): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
@@ -1304,7 +1304,7 @@ Inferred types:
 
 'flatten' @ [526:59] ==> @NotNull @Contract public open fun <E : (Any..Any?)> flatten(@NotNull p0: (MutableIterable<(MutableCollection<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)>..Iterable<(MutableCollection<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)>)): (MutableList<(CallableMemberDescriptor..CallableMemberDescriptor?)>..List<(CallableMemberDescriptor..CallableMemberDescriptor?)>) defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> CallableMemberDescriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
 'overriddenDeclarationsByDirectParent' @ [526:67] ==> val overriddenDeclarationsByDirectParent: MutableMap<CallableMemberDescriptor, Set<CallableMemberDescriptor>> defined in org.jetbrains.kotlin.resolve.OverrideResolver.Companion.checkInheritedAndDelegatedSignatures[LocalVariableDescriptor]
 
@@ -1312,11 +1312,11 @@ Inferred types:
 
 'filterOutOverridden' @ [527:68] ==> @NotNull public open fun <D : (CallableDescriptor..CallableDescriptor?)> filterOutOverridden(@NotNull p0: (MutableSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Set<(CallableMemberDescriptor..CallableMemberDescriptor?)>)): (MutableSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Set<(CallableMemberDescriptor..CallableMemberDescriptor?)>) defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableMemberDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
 'newLinkedHashSet' @ [528:26] ==> public open fun <E : (Any..Any?)> newLinkedHashSet(p0: (MutableIterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Iterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)): (LinkedHashSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>..LinkedHashSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>?) defined in com.google.common.collect.Sets[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> CallableMemberDescriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
 'allOverriddenDeclarations' @ [528:43] ==> val allOverriddenDeclarations: (MutableList<(CallableMemberDescriptor..CallableMemberDescriptor?)>..List<(CallableMemberDescriptor..CallableMemberDescriptor?)>) defined in org.jetbrains.kotlin.resolve.OverrideResolver.Companion.checkInheritedAndDelegatedSignatures[LocalVariableDescriptor]
 
@@ -1381,8 +1381,6 @@ Inferred types:
 'it' @ [544:34] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.OverrideResolver.Companion.checkInheritedAndDelegatedSignatures.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [544:37] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [544:49] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [544:58] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -1644,7 +1642,7 @@ Inferred types:
 
 'filterOutOverridden' @ [679:56] ==> @NotNull public open fun <D : (CallableDescriptor..CallableDescriptor?)> filterOutOverridden(@NotNull p0: (MutableSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Set<(CallableMemberDescriptor..CallableMemberDescriptor?)>)): (MutableSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Set<(CallableMemberDescriptor..CallableMemberDescriptor?)>) defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableMemberDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
 'overriddenDeclarations' @ [679:76] ==> val overriddenDeclarations: (MutableSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Set<(CallableMemberDescriptor..CallableMemberDescriptor?)>) defined in org.jetbrains.kotlin.resolve.OverrideResolver.Companion.collectOverriddenDeclarations[LocalVariableDescriptor]
 
@@ -1656,7 +1654,7 @@ Inferred types:
 
 'LinkedHashSet' @ [680:70] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> CallableMemberDescriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
 'filteredOverrides' @ [680:84] ==> val filteredOverrides: (MutableSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Set<(CallableMemberDescriptor..CallableMemberDescriptor?)>) defined in org.jetbrains.kotlin.resolve.OverrideResolver.Companion.collectOverriddenDeclarations[LocalVariableDescriptor]
 
@@ -1800,8 +1798,6 @@ Inferred types:
 'overridden' @ [741:21] ==> val overridden: CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.OverrideResolver.Companion.checkOverridesForMember[LocalVariableDescriptor]
 
 'modality' @ [741:32] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [741:44] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [741:53] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

@@ -218,13 +218,13 @@ Inferred types:
 
 'key' @ [86:70] ==> value-parameter key: KotlinType defined in org.jetbrains.kotlin.load.java.lazy.types.RawSubstitution.get[ValueParameterDescriptorImpl]
 
-'toAttributes' @ [88:50] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [88:50] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'withFlexibility' @ [88:65] ==> public final fun withFlexibility(flexibility: JavaTypeFlexibility): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeAttributes[SimpleFunctionDescriptorImpl]
 
 'FLEXIBLE_LOWER_BOUND' @ [88:101] ==> enum entry FLEXIBLE_LOWER_BOUND defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeFlexibility[FakeCallableDescriptorForObject]
 
-'toAttributes' @ [89:50] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [89:50] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'withFlexibility' @ [89:65] ==> public final fun withFlexibility(flexibility: JavaTypeFlexibility): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeAttributes[SimpleFunctionDescriptorImpl]
 
@@ -260,7 +260,7 @@ Inferred types:
 
 'declaration' @ [94:53] ==> val declaration: ClassifierDescriptor? defined in org.jetbrains.kotlin.load.java.lazy.types.RawSubstitution.eraseType[LocalVariableDescriptor]
 
-'getErasedUpperBound' @ [94:65] ==> internal fun TypeParameterDescriptor.getErasedUpperBound(potentiallyRecursiveTypeParameter: TypeParameterDescriptor? = ..., defaultValue: () -> KotlinType = ...): KotlinType defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'getErasedUpperBound' @ [94:65] ==> internal fun TypeParameterDescriptor.getErasedUpperBound(potentiallyRecursiveTypeParameter: TypeParameterDescriptor? = ..., defaultValue: () -> KotlinType = ...): KotlinType defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'component1' @ [96:22] ==> public final operator fun component1(): SimpleType defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
@@ -308,8 +308,6 @@ Inferred types:
 'lower' @ [100:33] ==> val lower: SimpleType defined in org.jetbrains.kotlin.load.java.lazy.types.RawSubstitution.eraseType[LocalVariableDescriptor]
 
 'upper' @ [100:40] ==> val upper: SimpleType defined in org.jetbrains.kotlin.load.java.lazy.types.RawSubstitution.eraseType[LocalVariableDescriptor]
-
-'KotlinTypeFactory' @ [103:21] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
 
 'flexibleType' @ [103:39] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
@@ -429,7 +427,7 @@ Inferred types:
 
 'parameter' @ [141:44] ==> value-parameter parameter: TypeParameterDescriptor defined in org.jetbrains.kotlin.load.java.lazy.types.RawSubstitution.computeProjection[ValueParameterDescriptorImpl]
 
-'getErasedUpperBound' @ [141:54] ==> internal fun TypeParameterDescriptor.getErasedUpperBound(potentiallyRecursiveTypeParameter: TypeParameterDescriptor? = ..., defaultValue: () -> KotlinType = ...): KotlinType defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'getErasedUpperBound' @ [141:54] ==> internal fun TypeParameterDescriptor.getErasedUpperBound(potentiallyRecursiveTypeParameter: TypeParameterDescriptor? = ..., defaultValue: () -> KotlinType = ...): KotlinType defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'when (attr.flexibility) {
         // Raw(List<T>) => (List<Any?>..List<*>)

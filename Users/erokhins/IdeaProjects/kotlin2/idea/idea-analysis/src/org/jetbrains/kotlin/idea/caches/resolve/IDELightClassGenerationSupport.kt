@@ -171,8 +171,6 @@ Inferred types:
 
 'project' @ [110:96] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.IDELightClassGenerationSupport[PropertyDescriptorImpl]
 
-'MemberScope' @ [110:105] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
-
 'ALL_NAME_FILTER' @ [110:117] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 
 'classOrObject' @ [114:27] ==> value-parameter classOrObject: KtClassOrObject defined in org.jetbrains.kotlin.idea.caches.resolve.IDELightClassGenerationSupport.getLightClass[ValueParameterDescriptorImpl]
@@ -300,6 +298,8 @@ Inferred types:
 
 'KtFile' @ [149:77] ==> public constructor KtFile(p0: (FileViewProvider..FileViewProvider?), p1: Boolean) defined in org.jetbrains.kotlin.psi.KtFile[JavaClassConstructorDescriptor]
 
+'getModuleInfo' @ [149:85] ==> public fun PsiElement.getModuleInfo(): IdeaModuleInfo defined in org.jetbrains.kotlin.idea.caches.resolve in file getModuleInfo.kt[SimpleFunctionDescriptorImpl]
+
 'filesByModule' @ [151:16] ==> val filesByModule: Map<IdeaModuleInfo, List<KtFile>> defined in org.jetbrains.kotlin.idea.caches.resolve.IDELightClassGenerationSupport.getFacadeClasses[LocalVariableDescriptor]
 
 'flatMap' @ [151:30] ==> public inline fun <K, V, R> Map<out IdeaModuleInfo, List<KtFile>>.flatMap(transform: (Map.Entry<IdeaModuleInfo, List<KtFile>>) -> Iterable<PsiClass>): List<PsiClass> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -401,7 +401,7 @@ Inferred types:
 
 'facadeKtFile' @ [171:74] ==> value-parameter facadeKtFile: KtFile defined in org.jetbrains.kotlin.idea.caches.resolve.IDELightClassGenerationSupport.findPackageParts.<anonymous>[ValueParameterDescriptorImpl]
 
-'platformMutabilityWrapper' @ [181:16] ==> public fun platformMutabilityWrapper(fqName: FqName, findJavaClass: (String) -> PsiClass?): PsiClass? defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'platformMutabilityWrapper' @ [181:16] ==> public fun platformMutabilityWrapper(fqName: FqName, findJavaClass: (String) -> PsiClass?): PsiClass? defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file platformWrappers.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [181:42] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.idea.caches.resolve.IDELightClassGenerationSupport.findPlatformWrapper[ValueParameterDescriptorImpl]
 
@@ -723,7 +723,7 @@ Inferred types:
 
 'getParentOfType' @ [271:34] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtClassOrObject..KtClassOrObject?)>, p2: Boolean): KtClassOrObject? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClassOrObject
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassOrObject..org.jetbrains.kotlin.psi.KtClassOrObject?)
 
 'decompiledClassOrObject' @ [271:50] ==> value-parameter decompiledClassOrObject: KtClassOrObject defined in org.jetbrains.kotlin.idea.caches.resolve.IDELightClassGenerationSupport.getClassRelativeName[ValueParameterDescriptorImpl]
 
@@ -783,7 +783,9 @@ Inferred types:
 
 'file' @ [289:82] ==> value-parameter file: KtClsFile defined in org.jetbrains.kotlin.idea.caches.resolve.IDELightClassGenerationSupport.createLightClassForDecompiledKotlinFile[ValueParameterDescriptorImpl]
 
-'ClsJavaStubByVirtualFileCache' @ [297:28] ==> public companion object defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ClsJavaStubByVirtualFileCache[FakeCallableDescriptorForObject]
+'?:' @ [297:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiJavaFileStubImpl?, right: PsiJavaFileStubImpl): PsiJavaFileStubImpl[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiJavaFileStubImpl
 
 'getInstance' @ [297:58] ==> public final fun getInstance(project: Project): ClsJavaStubByVirtualFileCache defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ClsJavaStubByVirtualFileCache.Companion[SimpleFunctionDescriptorImpl]
 
@@ -924,8 +926,6 @@ Inferred types:
 'listOf' @ [334:17] ==> public fun <T> listOf(element: KtLightClassForFacade): List<KtLightClassForFacade> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtLightClassForFacade
-
-'KtLightClassForFacade' @ [334:24] ==> public companion object Factory defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade[FakeCallableDescriptorForObject]
 
 'createForSyntheticFile' @ [334:46] ==> public final fun createForSyntheticFile(manager: PsiManager, facadeClassFqName: FqName, file: KtFile): KtLightClassForFacade defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.Factory[DeserializedSimpleFunctionDescriptor]
 

@@ -2,7 +2,7 @@
 
 'JvmStatic' @ [25:19] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
-'runInEdtAndWait' @ [26:13] ==> @TestOnly public fun runInEdtAndWait(runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.test.testFramework[SimpleFunctionDescriptorImpl]
+'runInEdtAndWait' @ [26:13] ==> @TestOnly public fun runInEdtAndWait(runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.test.testFramework in file EdtTestUtil.kt[SimpleFunctionDescriptorImpl]
 
 'runnable' @ [26:31] ==> value-parameter runnable: Runnable defined in org.jetbrains.kotlin.test.testFramework.EdtTestUtil.Companion.runInEdtAndWait[ValueParameterDescriptorImpl]
 

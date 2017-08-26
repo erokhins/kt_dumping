@@ -12,8 +12,6 @@ Inferred types:
 
 'getContributedDescriptors' @ [36:13] ==> public open fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScopeImpl[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [37:21] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS' @ [37:42] ==> @JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
 'alwaysTrue' @ [37:53] ==> public fun <T> alwaysTrue(): (Name) -> Boolean defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
@@ -39,8 +37,6 @@ Inferred types:
 'name' @ [38:87] ==> public final val SimpleFunctionDescriptor.name: Name[MyPropertyDescriptor]
 
 'getContributedDescriptors' @ [41:13] ==> public open fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScopeImpl[SimpleFunctionDescriptorImpl]
-
-'DescriptorKindFilter' @ [42:21] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES' @ [42:42] ==> @JvmField public final val VARIABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 

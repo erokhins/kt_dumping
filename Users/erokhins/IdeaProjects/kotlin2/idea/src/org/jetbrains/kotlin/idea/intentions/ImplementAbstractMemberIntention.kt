@@ -125,6 +125,8 @@ Inferred types:
 Inferred types:
     <T> -> KtEnumEntry
 
+'acceptSubClass' @ [96:31] ==> local final fun acceptSubClass(subClass: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.findClassesToProcess[SimpleFunctionDescriptorImpl]
+
 'HierarchySearchRequest' @ [99:16] ==> public constructor HierarchySearchRequest<T : PsiElement>(originalElement: KtClass, searchScope: SearchScope, searchDeeply: Boolean = ...) defined in org.jetbrains.kotlin.idea.search.declarationsSearch.HierarchySearchRequest[DeserializedClassConstructorDescriptor]
 Inferred types:
     <T : PsiElement> -> KtClass
@@ -144,6 +146,8 @@ Inferred types:
 'filter' @ [102:18] ==> public fun <T> Sequence<(PsiClass..PsiClass?)>.filter(predicate: ((PsiClass..PsiClass?)) -> Boolean): Sequence<(PsiClass..PsiClass?)> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
+
+'acceptSubClass' @ [102:27] ==> local final fun acceptSubClass(subClass: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.findClassesToProcess[SimpleFunctionDescriptorImpl]
 
 '!' @ [108:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -214,8 +218,6 @@ Inferred types:
 'descriptorToImplement' @ [127:64] ==> val descriptorToImplement: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.implementInKotlinClass[LocalVariableDescriptor]
 
 'descriptorToImplement' @ [128:64] ==> val descriptorToImplement: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.implementInKotlinClass[LocalVariableDescriptor]
-
-'OverrideMemberChooserObject' @ [129:64] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [129:101] ==> public object EMPTY : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 
@@ -517,29 +519,29 @@ Inferred types:
 
 'JBList' @ [213:20] ==> public constructor JBList<E : (Any..Any?)>(@NotNull p0: (MutableCollection<(PsiElement..PsiElement?)>..Collection<(PsiElement..PsiElement?)>)) defined in com.intellij.ui.components.JBList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> PsiElement
+    <E : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'sortedClasses' @ [213:27] ==> val sortedClasses: List<PsiElement> defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo[LocalVariableDescriptor]
 
-'apply' @ [213:42] ==> @InlineOnly public inline fun <T> JBList<PsiElement>.apply(block: JBList<PsiElement>.() -> Unit): JBList<PsiElement> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [213:42] ==> @InlineOnly public inline fun <T> JBList<(PsiElement..PsiElement?)>.apply(block: JBList<(PsiElement..PsiElement?)>.() -> Unit): JBList<(PsiElement..PsiElement?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JBList<PsiElement>
+    <T> -> JBList<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>
 
-'selectionMode' @ [214:13] ==> public final var <E : (Any..Any?)> JBList<PsiElement>.selectionMode: Int[MyPropertyDescriptor]
+'selectionMode' @ [214:13] ==> public final var <E : (Any..Any?)> JBList<(PsiElement..PsiElement?)>.selectionMode: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> PsiElement
+    <E : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'MULTIPLE_INTERVAL_SELECTION' @ [214:48] ==> public const final val MULTIPLE_INTERVAL_SELECTION: Int defined in javax.swing.ListSelectionModel[JavaPropertyDescriptor]
 
-'cellRenderer' @ [215:13] ==> public final var <E : (Any..Any?)> JBList<PsiElement>.cellRenderer: (ListCellRenderer<in (PsiElement..PsiElement?)>..ListCellRenderer<in (PsiElement..PsiElement?)>?)[MyPropertyDescriptor]
+'cellRenderer' @ [215:13] ==> public final var <E : (Any..Any?)> JBList<(PsiElement..PsiElement?)>.cellRenderer: (ListCellRenderer<in (PsiElement..PsiElement?)>..ListCellRenderer<in (PsiElement..PsiElement?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> PsiElement
+    <E : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'renderer' @ [215:28] ==> val renderer: ImplementAbstractMemberIntentionBase.ClassRenderer defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo[LocalVariableDescriptor]
 
 'PopupChooserBuilder' @ [217:23] ==> public constructor PopupChooserBuilder(@NotNull p0: raw (JList<(Any..Any?)>..JList<*>)) defined in com.intellij.openapi.ui.popup.PopupChooserBuilder[JavaClassConstructorDescriptor]
 
-'list' @ [217:43] ==> val list: JBList<PsiElement> defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo[LocalVariableDescriptor]
+'list' @ [217:43] ==> val list: JBList<(PsiElement..PsiElement?)> defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo[LocalVariableDescriptor]
 
 'renderer' @ [218:9] ==> val renderer: ImplementAbstractMemberIntentionBase.ClassRenderer defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo[LocalVariableDescriptor]
 
@@ -555,11 +557,11 @@ Inferred types:
 
 'setItemChoosenCallback' @ [221:18] ==> @NotNull public final fun setItemChoosenCallback(@NotNull p0: () -> Unit): PopupChooserBuilder defined in com.intellij.openapi.ui.popup.PopupChooserBuilder[MyFunctionDescriptor]
 
-'list' @ [222:33] ==> val list: JBList<PsiElement> defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo[LocalVariableDescriptor]
+'list' @ [222:33] ==> val list: JBList<(PsiElement..PsiElement?)> defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo[LocalVariableDescriptor]
 
-'selectedIndex' @ [222:38] ==> public final var <E : (Any..Any?)> JBList<PsiElement>.selectedIndex: Int[MyPropertyDescriptor]
+'selectedIndex' @ [222:38] ==> public final var <E : (Any..Any?)> JBList<(PsiElement..PsiElement?)>.selectedIndex: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> PsiElement
+    <E : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'index' @ [223:25] ==> val index: Int defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo.<anonymous>[LocalVariableDescriptor]
 
@@ -569,11 +571,11 @@ Inferred types:
 
 'element' @ [225:38] ==> value-parameter element: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo[ValueParameterDescriptorImpl]
 
-'list' @ [225:47] ==> val list: JBList<PsiElement> defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo[LocalVariableDescriptor]
+'list' @ [225:47] ==> val list: JBList<(PsiElement..PsiElement?)> defined in org.jetbrains.kotlin.idea.intentions.ImplementAbstractMemberIntentionBase.applyTo[LocalVariableDescriptor]
 
-'selectedValues' @ [225:52] ==> public final val <E : (Any..Any?)> JBList<PsiElement>.selectedValues: (Array<(Any..Any?)>..Array<out (Any..Any?)>?)[MyPropertyDescriptor]
+'selectedValues' @ [225:52] ==> public final val <E : (Any..Any?)> JBList<(PsiElement..PsiElement?)>.selectedValues: (Array<(Any..Any?)>..Array<out (Any..Any?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> PsiElement
+    <E : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'toList' @ [225:67] ==> public fun <T> Array<out (Any..Any?)>.toList(): List<(Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -22,9 +22,9 @@ Inferred types:
 
 'compilerLibDir' @ [46:18] ==> private final val compilerLibDir: (File..File?) defined in org.jetbrains.kotlin.daemon.CompilerApiTest[PropertyDescriptorImpl]
 
-'lazy' @ [47:23] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> CompilerId): Lazy<CompilerId> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [47:23] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompilerId
+    <T> -> T
 
 'NONE' @ [47:49] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -41,8 +41,6 @@ Inferred types:
 'exec' @ [52:40] ==> public final fun exec(messageCollector: MessageCollector, services: Services, arguments: (K2JVMCompilerArguments..K2JVMCompilerArguments?)): ExitCode defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler[DeserializedSimpleFunctionDescriptor]
 
 'messageCollector' @ [52:45] ==> value-parameter messageCollector: TestMessageCollector defined in org.jetbrains.kotlin.daemon.CompilerApiTest.compileLocally[ValueParameterDescriptorImpl]
-
-'Services' @ [53:45] ==> public companion object defined in org.jetbrains.kotlin.config.Services[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [53:54] ==> @field:JvmField public final val EMPTY: Services defined in org.jetbrains.kotlin.config.Services.Companion[DeserializedPropertyDescriptor]
 
@@ -155,11 +153,7 @@ Inferred types:
 
 'daemon' @ [77:49] ==> val daemon: CompileService? defined in org.jetbrains.kotlin.daemon.CompilerApiTest.compileOnDaemon[LocalVariableDescriptor]
 
-'CompileService' @ [77:59] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'NO_SESSION' @ [77:74] ==> public final val NO_SESSION: Int defined in org.jetbrains.kotlin.daemon.common.CompileService.Companion[DeserializedPropertyDescriptor]
-
-'CompileService' @ [77:86] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [77:116] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
@@ -176,8 +170,6 @@ Inferred types:
 'srcFiles' @ [78:109] ==> value-parameter srcFiles: List<File> defined in org.jetbrains.kotlin.daemon.CompilerApiTest.compileOnDaemon.<anonymous>[ValueParameterDescriptorImpl]
 
 'outFile' @ [78:119] ==> value-parameter outFile: File defined in org.jetbrains.kotlin.daemon.CompilerApiTest.compileOnDaemon.<anonymous>[ValueParameterDescriptorImpl]
-
-'ReportSeverity' @ [79:66] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'DEBUG' @ [79:81] ==> enum entry DEBUG defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
@@ -226,13 +218,13 @@ Inferred types:
 
 'scriptClassName' @ [91:40] ==> value-parameter scriptClassName: String defined in org.jetbrains.kotlin.daemon.CompilerApiTest.runScriptWithArgs[ValueParameterDescriptorImpl]
 
-'captureOut' @ [93:25] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [93:25] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'scriptClass' @ [93:38] ==> val scriptClass: (Class<*>..Class<*>?) defined in org.jetbrains.kotlin.daemon.CompilerApiTest.runScriptWithArgs[LocalVariableDescriptor]
 
 'constructors' @ [93:50] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.constructors: (Array<(Constructor<*>..Constructor<*>?)>..Array<out (Constructor<*>..Constructor<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'first' @ [93:63] ==> public fun <T> Array<out (Constructor<*>..Constructor<*>?)>.first(): (Constructor<*>..Constructor<*>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -312,8 +304,6 @@ Inferred types:
 
 'longStr' @ [111:107] ==> val longStr: String defined in org.jetbrains.kotlin.daemon.CompilerApiTest.testScriptResolverEnvironmentArgsParsing[LocalVariableDescriptor]
 
-'K2JVMCompiler' @ [112:29] ==> public companion object defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler[FakeCallableDescriptorForObject]
-
 'createScriptResolverEnvironment' @ [112:43] ==> public final fun createScriptResolverEnvironment(arguments: K2JVMCompilerArguments, messageCollector: MessageCollector): HashMap<String, Any?>? defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion[DeserializedSimpleFunctionDescriptor]
 
 'args' @ [113:33] ==> local final fun args(body: K2JVMCompilerArguments.() -> Unit): K2JVMCompilerArguments defined in org.jetbrains.kotlin.daemon.CompilerApiTest.testScriptResolverEnvironmentArgsParsing[SimpleFunctionDescriptorImpl]
@@ -384,7 +374,7 @@ Inferred types:
 
 'jar' @ [125:55] ==> val jar: String defined in org.jetbrains.kotlin.daemon.CompilerApiTest.testHelloAppLocal[LocalVariableDescriptor]
 
-'withFlagFile' @ [129:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [129:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [129:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerApiTest[JavaMethodDescriptor]
 
@@ -540,7 +530,7 @@ Inferred types:
 
 'tmpdir' @ [164:98] ==> protected/*protected and package*/ final var tmpdir: (File..File?) defined in org.jetbrains.kotlin.daemon.CompilerApiTest[JavaPropertyDescriptor]
 
-'withFlagFile' @ [168:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [168:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [168:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerApiTest[JavaMethodDescriptor]
 

@@ -8,9 +8,9 @@
 
 'variableDescriptor' @ [37:30] ==> value-parameter variableDescriptor: VariableDescriptor defined in org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor.writers[ValueParameterDescriptorImpl]
 
-'lazy' @ [40:32] ==> public fun <T> lazy(initializer: () -> Unit): Lazy<Unit> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [40:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Unit
+    <T> -> T
 
 'declaration' @ [41:9] ==> public final val declaration: KtDeclaration defined in org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor[PropertyDescriptorImpl]
 
@@ -61,8 +61,8 @@ Inferred types:
 
 'get' @ [55:23] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>..ReadOnlySlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>?), key: (KtDeclaration..KtDeclaration?)): PreliminaryDeclarationVisitor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtDeclaration
-    <V : (Any..Any?)> -> PreliminaryDeclarationVisitor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor..org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor?)
 
 'PRELIMINARY_VISITOR' @ [55:42] ==> public final val PRELIMINARY_VISITOR: (WritableSlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>..WritableSlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -72,8 +72,8 @@ Inferred types:
 
 'record' @ [56:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>..WritableSlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>?), key: (KtDeclaration..KtDeclaration?), value: (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtDeclaration
-    <V : (Any..Any?)> -> PreliminaryDeclarationVisitor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor..org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor?)
 
 'PRELIMINARY_VISITOR' @ [56:41] ==> public final val PRELIMINARY_VISITOR: (WritableSlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>..WritableSlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -99,8 +99,8 @@ Inferred types:
 
 'get' @ [65:53] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>..ReadOnlySlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>?), key: (KtDeclaration..KtDeclaration?)): PreliminaryDeclarationVisitor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtDeclaration
-    <V : (Any..Any?)> -> PreliminaryDeclarationVisitor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor..org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor?)
 
 'PRELIMINARY_VISITOR' @ [65:72] ==> public final val PRELIMINARY_VISITOR: (WritableSlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>..WritableSlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -124,8 +124,8 @@ Inferred types:
 
 'get' @ [68:53] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>..ReadOnlySlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>?), key: (KtDeclaration..KtDeclaration?)): PreliminaryDeclarationVisitor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtDeclaration
-    <V : (Any..Any?)> -> PreliminaryDeclarationVisitor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor..org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor?)
 
 'PRELIMINARY_VISITOR' @ [68:72] ==> public final val PRELIMINARY_VISITOR: (WritableSlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>..WritableSlice<(KtDeclaration..KtDeclaration?), (PreliminaryDeclarationVisitor..PreliminaryDeclarationVisitor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

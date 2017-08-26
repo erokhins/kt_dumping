@@ -9,9 +9,9 @@ Inferred types:
     <K> -> Pseudocode
     <V> -> Set<VariableDescriptor>
 
-'lazy' @ [40:79] ==> public fun <T> lazy(initializer: () -> Map<Instruction, Edges<InitControlFlowInfo>>): Lazy<Map<Instruction, Edges<InitControlFlowInfo>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [40:79] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<Instruction, Edges<InitControlFlowInfo>>
+    <T> -> T
 
 'computeVariableInitializers' @ [41:9] ==> private final fun computeVariableInitializers(): Map<Instruction, Edges<InitControlFlowInfo>> defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData[SimpleFunctionDescriptorImpl]
 
@@ -97,8 +97,8 @@ Inferred types:
 
 'get' @ [75:49] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [75:68] ==> @SuppressWarnings public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -121,7 +121,7 @@ Inferred types:
 
 'unmodifiableSet' @ [81:28] ==> public open fun <T : (Any..Any?)> unmodifiableSet(p0: (MutableSet<out (VariableDescriptor..VariableDescriptor?)>..Set<(VariableDescriptor..VariableDescriptor?)>?)): (MutableSet<(VariableDescriptor..VariableDescriptor?)>..Set<(VariableDescriptor..VariableDescriptor?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> VariableDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'declaredVariables' @ [81:44] ==> val declaredVariables: LinkedHashSet<VariableDescriptor> /* = LinkedHashSet<VariableDescriptor> */ defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData.computeDeclaredVariablesForPseudocode[LocalVariableDescriptor]
 
@@ -175,7 +175,7 @@ Inferred types:
 
 'iterator' @ [106:45] ==> public open fun iterator(): Iterator<(Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>..Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>?)> defined in org.jetbrains.kotlin.cfg.InitControlFlowInfo[JavaMethodDescriptor]
 
-'fold' @ [106:56] ==> public inline fun <T, R> Iterable<(Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>..Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>?)>.fold(initial: InitControlFlowInfo, operation: (InitControlFlowInfo, (Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>..Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>?)) -> InitControlFlowInfo): InitControlFlowInfo defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [106:56] ==> public inline fun <T, R> Iterable<(Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>..Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>?)>.fold(initial: InitControlFlowInfo, operation: (acc: InitControlFlowInfo, (Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>..Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>?)) -> InitControlFlowInfo): InitControlFlowInfo defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (javaslang.Tuple2<(org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?), (org.jetbrains.kotlin.cfg.VariableControlFlowState..org.jetbrains.kotlin.cfg.VariableControlFlowState?)>..javaslang.Tuple2<(org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?), (org.jetbrains.kotlin.cfg.VariableControlFlowState..org.jetbrains.kotlin.cfg.VariableControlFlowState?)>?)
     <R> -> InitControlFlowInfo
@@ -208,8 +208,6 @@ Inferred types:
 'put' @ [109:32] ==> public open fun put(key: VariableDescriptor, value: VariableControlFlowState): InitControlFlowInfo defined in org.jetbrains.kotlin.cfg.InitControlFlowInfo[SimpleFunctionDescriptorImpl]
 
 'key' @ [109:36] ==> val key: (VariableDescriptor..VariableDescriptor?) defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData.addVariableInitStateFromCurrentInstructionIfAny.<anonymous>[LocalVariableDescriptor]
-
-'VariableControlFlowState' @ [109:41] ==> public companion object defined in org.jetbrains.kotlin.cfg.VariableControlFlowState[FakeCallableDescriptorForObject]
 
 'createInitializedExhaustively' @ [109:66] ==> public final fun createInitializedExhaustively(isDeclared: Boolean): VariableControlFlowState defined in org.jetbrains.kotlin.cfg.VariableControlFlowState.Companion[SimpleFunctionDescriptorImpl]
 
@@ -396,7 +394,7 @@ Inferred types:
 
 'incomingEdgesData' @ [154:17] ==> value-parameter incomingEdgesData: Collection<UseControlFlowInfo> defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData.<get-variableUseStatusData>.<anonymous>[ValueParameterDescriptorImpl]
 
-'fold' @ [154:35] ==> public inline fun <T, R> Iterable<UseControlFlowInfo>.fold(initial: UseControlFlowInfo, operation: (UseControlFlowInfo, UseControlFlowInfo) -> UseControlFlowInfo): UseControlFlowInfo defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [154:35] ==> public inline fun <T, R> Iterable<UseControlFlowInfo>.fold(initial: UseControlFlowInfo, operation: (acc: UseControlFlowInfo, UseControlFlowInfo) -> UseControlFlowInfo): UseControlFlowInfo defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> UseControlFlowInfo
     <R> -> UseControlFlowInfo
@@ -407,7 +405,7 @@ Inferred types:
 
 'iterator' @ [155:30] ==> public open fun iterator(): Iterator<(Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>..Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>?)> defined in org.jetbrains.kotlin.cfg.UseControlFlowInfo[JavaMethodDescriptor]
 
-'fold' @ [155:41] ==> public inline fun <T, R> Iterable<(Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>..Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>?)>.fold(initial: UseControlFlowInfo, operation: (UseControlFlowInfo, (Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>..Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>?)) -> UseControlFlowInfo): UseControlFlowInfo defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [155:41] ==> public inline fun <T, R> Iterable<(Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>..Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>?)>.fold(initial: UseControlFlowInfo, operation: (acc: UseControlFlowInfo, (Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>..Tuple2<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>?)) -> UseControlFlowInfo): UseControlFlowInfo defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (javaslang.Tuple2<(org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?), (org.jetbrains.kotlin.cfg.VariableUseState..org.jetbrains.kotlin.cfg.VariableUseState?)>..javaslang.Tuple2<(org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?), (org.jetbrains.kotlin.cfg.VariableUseState..org.jetbrains.kotlin.cfg.VariableUseState?)>?)
     <R> -> UseControlFlowInfo
@@ -512,8 +510,6 @@ Inferred types:
 
 'variableDescriptor' @ [168:41] ==> val variableDescriptor: VariableDescriptor? defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData.<get-variableUseStatusData>.<anonymous>[LocalVariableDescriptor]
 
-'VariableUseState' @ [168:61] ==> public companion object defined in org.jetbrains.kotlin.cfg.VariableUseState[FakeCallableDescriptorForObject]
-
 'READ' @ [168:78] ==> enum entry READ defined in org.jetbrains.kotlin.cfg.VariableUseState[FakeCallableDescriptorForObject]
 
 'enterResult' @ [171:67] ==> val enterResult: UseControlFlowInfo defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData.<get-variableUseStatusData>.<anonymous>[LocalVariableDescriptor]
@@ -558,8 +554,6 @@ Inferred types:
 
 'variableDescriptor' @ [177:49] ==> val variableDescriptor: VariableDescriptor? defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData.<get-variableUseStatusData>.<anonymous>[LocalVariableDescriptor]
 
-'VariableUseState' @ [177:69] ==> public companion object defined in org.jetbrains.kotlin.cfg.VariableUseState[FakeCallableDescriptorForObject]
-
 'ONLY_WRITTEN_NEVER_READ' @ [177:86] ==> enum entry ONLY_WRITTEN_NEVER_READ defined in org.jetbrains.kotlin.cfg.VariableUseState[FakeCallableDescriptorForObject]
 
 'VariableUseState' @ [178:29] ==> public companion object defined in org.jetbrains.kotlin.cfg.VariableUseState[FakeCallableDescriptorForObject]
@@ -575,8 +569,6 @@ Inferred types:
 'put' @ [179:45] ==> public open fun put(key: VariableDescriptor, value: VariableUseState): UseControlFlowInfo defined in org.jetbrains.kotlin.cfg.UseControlFlowInfo[SimpleFunctionDescriptorImpl]
 
 'variableDescriptor' @ [179:49] ==> val variableDescriptor: VariableDescriptor? defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData.<get-variableUseStatusData>.<anonymous>[LocalVariableDescriptor]
-
-'VariableUseState' @ [179:69] ==> public companion object defined in org.jetbrains.kotlin.cfg.VariableUseState[FakeCallableDescriptorForObject]
 
 'WRITTEN_AFTER_READ' @ [179:86] ==> enum entry WRITTEN_AFTER_READ defined in org.jetbrains.kotlin.cfg.VariableUseState[FakeCallableDescriptorForObject]
 
@@ -650,7 +642,7 @@ Inferred types:
 
 'variablesInScope' @ [216:20] ==> val variablesInScope: LinkedHashSet<VariableDescriptor> /* = LinkedHashSet<VariableDescriptor> */ defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData.Companion.mergeIncomingEdgesDataForInitializers[LocalVariableDescriptor]
 
-'fold' @ [216:37] ==> public inline fun <T, R> Iterable<VariableDescriptor>.fold(initial: InitControlFlowInfo, operation: (InitControlFlowInfo, VariableDescriptor) -> InitControlFlowInfo): InitControlFlowInfo defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [216:37] ==> public inline fun <T, R> Iterable<VariableDescriptor>.fold(initial: InitControlFlowInfo, operation: (acc: InitControlFlowInfo, VariableDescriptor) -> InitControlFlowInfo): InitControlFlowInfo defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> VariableDescriptor
     <R> -> InitControlFlowInfo
@@ -707,8 +699,6 @@ Inferred types:
 'put' @ [230:24] ==> public open fun put(key: VariableDescriptor, value: VariableControlFlowState): InitControlFlowInfo defined in org.jetbrains.kotlin.cfg.InitControlFlowInfo[SimpleFunctionDescriptorImpl]
 
 'variable' @ [230:28] ==> value-parameter variable: VariableDescriptor defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData.Companion.mergeIncomingEdgesDataForInitializers.<anonymous>[ValueParameterDescriptorImpl]
-
-'VariableControlFlowState' @ [230:38] ==> public companion object defined in org.jetbrains.kotlin.cfg.VariableControlFlowState[FakeCallableDescriptorForObject]
 
 'create' @ [230:63] ==> public final fun create(initState: InitState, isDeclared: Boolean): VariableControlFlowState defined in org.jetbrains.kotlin.cfg.VariableControlFlowState.Companion[SimpleFunctionDescriptorImpl]
 

@@ -22,7 +22,7 @@ Inferred types:
 
 'getParentOfType' @ [38:39] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtClass..KtClass?)>): KtClass? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClass
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'element' @ [38:55] ==> value-parameter element: KtParameter defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToClassBodyIntention.applyTo[ValueParameterDescriptorImpl]
 
@@ -138,8 +138,6 @@ Inferred types:
 
 'getAnnotationUseSiteTarget' @ [52:44] ==> public final fun getAnnotationUseSiteTarget(): AnnotationUseSiteTarget defined in org.jetbrains.kotlin.psi.KtAnnotationUseSiteTarget[DeserializedSimpleFunctionDescriptor]
 
-'AnnotationUseSiteTarget' @ [52:76] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY' @ [52:100] ==> enum entry PROPERTY defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'it' @ [53:21] ==> value-parameter it: (KtAnnotationEntry..KtAnnotationEntry?) defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToClassBodyIntention.applyTo.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -242,31 +240,21 @@ Inferred types:
 
 'it' @ [76:20] ==> value-parameter it: AnnotationUseSiteTarget defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToClassBodyIntention.isAppliedToProperty.<anonymous>[ValueParameterDescriptorImpl]
 
-'AnnotationUseSiteTarget' @ [76:26] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'FIELD' @ [76:50] ==> enum entry FIELD defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'it' @ [77:23] ==> value-parameter it: AnnotationUseSiteTarget defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToClassBodyIntention.isAppliedToProperty.<anonymous>[ValueParameterDescriptorImpl]
-
-'AnnotationUseSiteTarget' @ [77:29] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'PROPERTY' @ [77:53] ==> enum entry PROPERTY defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'it' @ [78:23] ==> value-parameter it: AnnotationUseSiteTarget defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToClassBodyIntention.isAppliedToProperty.<anonymous>[ValueParameterDescriptorImpl]
 
-'AnnotationUseSiteTarget' @ [78:29] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY_GETTER' @ [78:53] ==> enum entry PROPERTY_GETTER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'it' @ [79:23] ==> value-parameter it: AnnotationUseSiteTarget defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToClassBodyIntention.isAppliedToProperty.<anonymous>[ValueParameterDescriptorImpl]
 
-'AnnotationUseSiteTarget' @ [79:29] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY_SETTER' @ [79:53] ==> enum entry PROPERTY_SETTER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'it' @ [80:23] ==> value-parameter it: AnnotationUseSiteTarget defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToClassBodyIntention.isAppliedToProperty.<anonymous>[ValueParameterDescriptorImpl]
-
-'AnnotationUseSiteTarget' @ [80:29] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'SETTER_PARAMETER' @ [80:53] ==> enum entry SETTER_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
@@ -284,8 +272,6 @@ Inferred types:
     <R> -> Nothing
 
 'it' @ [88:20] ==> value-parameter it: AnnotationUseSiteTarget defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToClassBodyIntention.isAppliedToConstructorParameter.<anonymous>[ValueParameterDescriptorImpl]
-
-'AnnotationUseSiteTarget' @ [88:26] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'CONSTRUCTOR_PARAMETER' @ [88:50] ==> enum entry CONSTRUCTOR_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
@@ -310,8 +296,6 @@ Inferred types:
 'applicableTargets' @ [98:16] ==> val applicableTargets: Set<KotlinTarget> defined in org.jetbrains.kotlin.idea.intentions.MovePropertyToClassBodyIntention.isApplicableToConstructorParameter[LocalVariableDescriptor]
 
 'contains' @ [98:34] ==> public abstract fun contains(element: KotlinTarget): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
-
-'KotlinTarget' @ [98:43] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'VALUE_PARAMETER' @ [98:56] ==> enum entry VALUE_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 

@@ -234,7 +234,7 @@ Inferred types:
 
 'item' @ [76:21] ==> value-parameter item: TItem defined in org.jetbrains.kotlin.psi.EditCommaSeparatedListHelper.removeItem[ValueParameterDescriptorImpl]
 
-'siblings' @ [76:26] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [76:26] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [76:55] ==> public inline fun <T> Sequence<PsiElement>.firstOrNull(predicate: (PsiElement) -> Boolean): PsiElement? defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -256,7 +256,7 @@ Inferred types:
 
 'item' @ [78:21] ==> value-parameter item: TItem defined in org.jetbrains.kotlin.psi.EditCommaSeparatedListHelper.removeItem[ValueParameterDescriptorImpl]
 
-'siblings' @ [78:26] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [78:26] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [78:72] ==> public inline fun <T> Sequence<PsiElement>.firstOrNull(predicate: (PsiElement) -> Boolean): PsiElement? defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:

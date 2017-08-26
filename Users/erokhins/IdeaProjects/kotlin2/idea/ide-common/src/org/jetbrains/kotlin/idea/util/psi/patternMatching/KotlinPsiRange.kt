@@ -84,7 +84,7 @@ Inferred types:
 
 'emptyList' @ [62:52] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(UnificationResult.Matched..UnificationResult.Matched?)>..List<(UnificationResult.Matched..UnificationResult.Matched?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Matched
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.util.psi.patternMatching.UnificationResult.Matched..org.jetbrains.kotlin.idea.util.psi.patternMatching.UnificationResult.Matched?)
 
 'ArrayList' @ [64:23] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -118,7 +118,7 @@ Inferred types:
 Inferred types:
     <T> -> PsiElement
 
-'toRange' @ [73:34] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching[SimpleFunctionDescriptorImpl]
+'toRange' @ [73:34] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching in file KotlinPsiRange.kt[SimpleFunctionDescriptorImpl]
 
 'unifier' @ [75:38] ==> value-parameter unifier: KotlinPsiUnifier defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange.match[ValueParameterDescriptorImpl]
 
@@ -210,7 +210,7 @@ Inferred types:
 
 'singletonList' @ [98:94] ==> public open fun <T : (Any..Any?)> singletonList(p0: (PsiElement..PsiElement?)): (MutableList<(PsiElement..PsiElement?)>..List<(PsiElement..PsiElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'it' @ [98:108] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.toRange.<anonymous>[ValueParameterDescriptorImpl]
 

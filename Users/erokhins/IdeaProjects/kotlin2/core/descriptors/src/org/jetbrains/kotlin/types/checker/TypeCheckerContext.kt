@@ -42,9 +42,9 @@ Inferred types:
 
 'SmartSet' @ [58:29] ==> public companion object defined in org.jetbrains.kotlin.utils.SmartSet[FakeCallableDescriptorForObject]
 
-'create' @ [58:38] ==> @JvmStatic public final fun <T> create(): SmartSet<SimpleType> defined in org.jetbrains.kotlin.utils.SmartSet.Companion[DeserializedSimpleFunctionDescriptor]
+'create' @ [58:38] ==> @JvmStatic public final fun <T> create(): SmartSet<(SimpleType..SimpleType?)> defined in org.jetbrains.kotlin.utils.SmartSet.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SimpleType
+    <T> -> (org.jetbrains.kotlin.types.SimpleType..org.jetbrains.kotlin.types.SimpleType?)
 
 'supertypesDeque' @ [63:9] ==> private final var supertypesDeque: ArrayDeque<SimpleType>? defined in org.jetbrains.kotlin.types.checker.TypeCheckerContext[PropertyDescriptorImpl]
 

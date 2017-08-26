@@ -53,7 +53,7 @@ Inferred types:
 
 'psi' @ [50:75] ==> public final val <T : (PsiClass..PsiClass?)> PsiClassStub<out (PsiClass..PsiClass?)>.psi: (PsiClass..PsiClass?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiClass..PsiClass?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
+    <T : (PsiClass..PsiClass?)> -> Captured(*)
 
 'toTypedArray' @ [50:81] ==> public inline fun <reified T> Collection<PsiClass>.toTypedArray(): Array<PsiClass> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

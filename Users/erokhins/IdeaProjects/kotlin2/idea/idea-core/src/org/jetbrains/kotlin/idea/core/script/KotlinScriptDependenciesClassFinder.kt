@@ -2,9 +2,9 @@
 
 'project' @ [34:29] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.core.script.KotlinScriptDependenciesClassFinder.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [36:29] ==> public fun <T> lazy(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [36:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
 'ConcurrentFactoryMap<VirtualFile, PackageDirectoryCache>' @ [37:18] ==> public constructor ConcurrentFactoryMap<T : (Any..Any?), V : (Any..Any?)>() defined in com.intellij.util.containers.ConcurrentFactoryMap[JavaClassConstructorDescriptor]
 Inferred types:

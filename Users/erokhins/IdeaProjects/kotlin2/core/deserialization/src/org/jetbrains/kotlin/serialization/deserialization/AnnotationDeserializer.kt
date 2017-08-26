@@ -102,10 +102,10 @@ Inferred types:
 
 'nameId' @ [66:68] ==> public final val ProtoBuf.Annotation.Argument.nameId: Int[MyPropertyDescriptor]
 
-'Pair' @ [67:16] ==> public constructor Pair<out A, out B>(first: Name, second: ConstantValue<Any?>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [67:16] ==> public constructor Pair<out A, out B>(first: Name, second: ConstantValue<*>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> Name
-    <out B> -> ConstantValue<Any?>
+    <out B> -> ConstantValue<*>
 
 'nameResolver' @ [67:21] ==> value-parameter nameResolver: NameResolver defined in org.jetbrains.kotlin.serialization.deserialization.AnnotationDeserializer.resolveArgument[ValueParameterDescriptorImpl]
 
@@ -426,10 +426,10 @@ Inferred types:
 
 'arrayElements' @ [117:25] ==> val arrayElements: (MutableList<(ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..List<(ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?) defined in org.jetbrains.kotlin.serialization.deserialization.AnnotationDeserializer.resolveValue[LocalVariableDescriptor]
 
-'map' @ [117:39] ==> public inline fun <T, R> Iterable<(ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>.map(transform: ((ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)) -> ConstantValue<Any?>): List<ConstantValue<Any?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [117:39] ==> public inline fun <T, R> Iterable<(ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>.map(transform: ((ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)) -> ConstantValue<*>): List<ConstantValue<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value?)
-    <R> -> ConstantValue<Any?>
+    <R> -> ConstantValue<*>
 
 'resolveValue' @ [118:29] ==> public final fun resolveValue(expectedType: KotlinType, value: ProtoBuf.Annotation.Argument.Value, nameResolver: NameResolver): ConstantValue<*> defined in org.jetbrains.kotlin.serialization.deserialization.AnnotationDeserializer[SimpleFunctionDescriptorImpl]
 

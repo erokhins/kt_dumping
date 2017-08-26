@@ -145,6 +145,8 @@ Inferred types:
 Inferred types:
     <T> -> Instruction
 
+'doTraversal' @ [123:15] ==> local final fun doTraversal(instruction: Instruction): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.getVarDescriptorsAccessedAfterwards[SimpleFunctionDescriptorImpl]
+
 'accessedAfterwards' @ [124:12] ==> val accessedAfterwards: HashSet<VariableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.getVarDescriptorsAccessedAfterwards[LocalVariableDescriptor]
 
 'filter' @ [128:9] ==> public inline fun <T> Iterable<Instruction>.filter(predicate: (Instruction) -> Boolean): List<Instruction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -259,6 +261,8 @@ Inferred types:
 Inferred types:
     <T> -> Instruction
     <R : Any> -> KotlinType
+
+'instructionToType' @ [161:49] ==> local final fun instructionToType(instruction: Instruction): KotlinType? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.getResultTypeAndExpressions[SimpleFunctionDescriptorImpl]
 
 'if (resultTypes.isNotEmpty()) CommonSupertypes.commonSupertype(resultTypes) else module.builtIns.defaultReturnType' @ [162:27] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KotlinType, elseBranch: KotlinType): KotlinType[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -488,7 +492,7 @@ Inferred types:
 
 'localInstructions' @ [236:22] ==> value-parameter localInstructions: List<Instruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.analyzeControlFlow[ValueParameterDescriptorImpl]
 
-'getExitPoints' @ [236:40] ==> private fun List<Instruction>.getExitPoints(): List<Instruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getExitPoints' @ [236:40] ==> private fun List<Instruction>.getExitPoints(): List<Instruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'ArrayList' @ [238:29] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -684,7 +688,7 @@ Inferred types:
 
 'inst' @ [280:34] ==> val inst: Instruction? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.analyzeControlFlow.<anonymous>[LocalVariableDescriptor]
 
-'getLocalDeclarationsWithNonLocalUsages' @ [285:38] ==> private fun ExtractionData.getLocalDeclarationsWithNonLocalUsages(pseudocode: Pseudocode, localInstructions: List<Instruction>, bindingContext: BindingContext): List<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getLocalDeclarationsWithNonLocalUsages' @ [285:38] ==> private fun ExtractionData.getLocalDeclarationsWithNonLocalUsages(pseudocode: Pseudocode, localInstructions: List<Instruction>, bindingContext: BindingContext): List<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'pseudocode' @ [285:77] ==> value-parameter pseudocode: Pseudocode defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.analyzeControlFlow[ValueParameterDescriptorImpl]
 
@@ -712,7 +716,7 @@ Inferred types:
 
 'component2' @ [288:29] ==> public final operator fun component2(): List<KtExpression> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'getResultTypeAndExpressions' @ [288:57] ==> private fun ExtractionData.getResultTypeAndExpressions(instructions: List<Instruction>, bindingContext: BindingContext, targetScope: LexicalScope?, options: ExtractionOptions, module: ModuleDescriptor): Pair<KotlinType, List<KtExpression>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getResultTypeAndExpressions' @ [288:57] ==> private fun ExtractionData.getResultTypeAndExpressions(instructions: List<Instruction>, bindingContext: BindingContext, targetScope: LexicalScope?, options: ExtractionOptions, module: ModuleDescriptor): Pair<KotlinType, List<KtExpression>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'defaultExits' @ [288:85] ==> val defaultExits: ArrayList<Instruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.analyzeControlFlow[LocalVariableDescriptor]
 
@@ -728,7 +732,7 @@ Inferred types:
 
 'component2' @ [289:27] ==> public final operator fun component2(): List<KtExpression> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'getResultTypeAndExpressions' @ [289:54] ==> private fun ExtractionData.getResultTypeAndExpressions(instructions: List<Instruction>, bindingContext: BindingContext, targetScope: LexicalScope?, options: ExtractionOptions, module: ModuleDescriptor): Pair<KotlinType, List<KtExpression>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getResultTypeAndExpressions' @ [289:54] ==> private fun ExtractionData.getResultTypeAndExpressions(instructions: List<Instruction>, bindingContext: BindingContext, targetScope: LexicalScope?, options: ExtractionOptions, module: ModuleDescriptor): Pair<KotlinType, List<KtExpression>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'valuedReturnExits' @ [289:82] ==> val valuedReturnExits: ArrayList<ReturnValueInstruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.analyzeControlFlow[LocalVariableDescriptor]
 
@@ -744,7 +748,7 @@ Inferred types:
 
 'emptyList' @ [292:37] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(OutputValue..OutputValue?)>..List<(OutputValue..OutputValue?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> OutputValue
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue?)
 
 'AsTuple' @ [292:69] ==> public constructor AsTuple(outputValues: List<OutputValue>, module: ModuleDescriptor) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValueBoxer.AsTuple[ClassConstructorDescriptorImpl]
 
@@ -793,7 +797,7 @@ Inferred types:
 
 'singletonList' @ [298:58] ==> public open fun <T : (Any..Any?)> singletonList(p0: (OutputValue.ExpressionValue..OutputValue.ExpressionValue?)): (MutableList<(OutputValue.ExpressionValue..OutputValue.ExpressionValue?)>..List<(OutputValue.ExpressionValue..OutputValue.ExpressionValue?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ExpressionValue
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.ExpressionValue..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.ExpressionValue?)
 
 'ExpressionValue' @ [298:72] ==> public constructor ExpressionValue(callSiteReturn: Boolean, originalExpressions: List<KtExpression>, valueType: KotlinType) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.ExpressionValue[ClassConstructorDescriptorImpl]
 
@@ -989,7 +993,7 @@ Inferred types:
 
 'singletonList' @ [333:64] ==> public open fun <T : (Any..Any?)> singletonList(p0: (OutputValue.Jump..OutputValue.Jump?)): (MutableList<(OutputValue.Jump..OutputValue.Jump?)>..List<(OutputValue.Jump..OutputValue.Jump?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Jump
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.Jump..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.Jump?)
 
 'Jump' @ [333:78] ==> public constructor Jump(elementsToReplace: List<KtExpression>, elementToInsertAfterCall: KtElement?, conditional: Boolean, builtIns: KotlinBuiltIns) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.Jump[ClassConstructorDescriptorImpl]
 
@@ -1005,7 +1009,7 @@ Inferred types:
 
 'builtIns' @ [333:122] ==> public abstract val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.descriptors.ModuleDescriptor[DeserializedPropertyDescriptor]
 
-'getCommonNonTrivialSuccessorIfAny' @ [336:13] ==> private fun getCommonNonTrivialSuccessorIfAny(instructions: List<Instruction>): Instruction? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getCommonNonTrivialSuccessorIfAny' @ [336:13] ==> private fun getCommonNonTrivialSuccessorIfAny(instructions: List<Instruction>): Instruction? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'valuedReturnExits' @ [336:47] ==> val valuedReturnExits: ArrayList<ReturnValueInstruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.analyzeControlFlow[LocalVariableDescriptor]
 
@@ -1169,13 +1173,13 @@ Inferred types:
 Inferred types:
     <T> -> AbstractJumpInstruction
 
-'getCommonNonTrivialSuccessorIfAny' @ [367:26] ==> private fun getCommonNonTrivialSuccessorIfAny(instructions: List<Instruction>): Instruction? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getCommonNonTrivialSuccessorIfAny' @ [367:26] ==> private fun getCommonNonTrivialSuccessorIfAny(instructions: List<Instruction>): Instruction? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'jumpExits' @ [367:60] ==> val jumpExits: ArrayList<AbstractJumpInstruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.analyzeControlFlow[LocalVariableDescriptor]
 
 'multipleExitsError' @ [367:81] ==> val multipleExitsError: Pair<ControlFlow, AnalysisResult.ErrorMessage> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.analyzeControlFlow[LocalVariableDescriptor]
 
-'getCommonNonTrivialSuccessorIfAny' @ [369:26] ==> private fun getCommonNonTrivialSuccessorIfAny(instructions: List<Instruction>): Instruction? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getCommonNonTrivialSuccessorIfAny' @ [369:26] ==> private fun getCommonNonTrivialSuccessorIfAny(instructions: List<Instruction>): Instruction? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'defaultExits' @ [369:60] ==> val defaultExits: ArrayList<Instruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.analyzeControlFlow[LocalVariableDescriptor]
 
@@ -1220,7 +1224,7 @@ Inferred types:
 
 'singletonList' @ [373:60] ==> public open fun <T : (Any..Any?)> singletonList(p0: (OutputValue.Jump..OutputValue.Jump?)): (MutableList<(OutputValue.Jump..OutputValue.Jump?)>..List<(OutputValue.Jump..OutputValue.Jump?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Jump
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.Jump..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.Jump?)
 
 'Jump' @ [373:74] ==> public constructor Jump(elementsToReplace: List<KtExpression>, elementToInsertAfterCall: KtElement?, conditional: Boolean, builtIns: KotlinBuiltIns) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.Jump[ClassConstructorDescriptorImpl]
 
@@ -1361,7 +1365,7 @@ Inferred types:
 
 'singletonList' @ [408:51] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KotlinType..KotlinType?)): (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'this' @ [408:65] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.collectReferencedTypes[ReceiverParameterDescriptorImpl]
 
@@ -1371,8 +1375,8 @@ Inferred types:
 
 'dfsFromNode' @ [409:16] ==> public open fun <N : (Any..Any?), R : (Any..Any?)> dfsFromNode(@NotNull p0: KotlinType, @NotNull p1: DFS.Neighbors<(KotlinType..KotlinType?)>, @NotNull p2: DFS.Visited<(KotlinType..KotlinType?)>, @NotNull p3: DFS.NodeHandler<(KotlinType..KotlinType?), (ArrayList<KotlinType>..ArrayList<KotlinType>?)>): (ArrayList<KotlinType>..ArrayList<KotlinType>?) defined in org.jetbrains.kotlin.utils.DFS[JavaMethodDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> KotlinType
-    <R : (Any..Any?)> -> ArrayList<KotlinType>
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
+    <R : (Any..Any?)> -> (java.util.ArrayList<org.jetbrains.kotlin.types.KotlinType>..java.util.ArrayList<org.jetbrains.kotlin.types.KotlinType>?)
 
 'this' @ [410:13] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.collectReferencedTypes[ReceiverParameterDescriptorImpl]
 
@@ -1395,7 +1399,7 @@ Inferred types:
 
 'VisitedWithSet' @ [412:13] ==> public constructor VisitedWithSet<N : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.DFS.VisitedWithSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> KotlinType
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'CollectingNodeHandler<KotlinType, KotlinType, ArrayList<KotlinType>>' @ [413:21] ==> protected/*protected and package*/ constructor CollectingNodeHandler<N : (Any..Any?), R : (Any..Any?), C : (MutableIterable<(KotlinType..KotlinType?)>..Iterable<(KotlinType..KotlinType?)>?)>(@NotNull p0: ArrayList<KotlinType>) defined in org.jetbrains.kotlin.utils.DFS.CollectingNodeHandler[JavaClassConstructorDescriptor]
 Inferred types:
@@ -1421,7 +1425,7 @@ Inferred types:
 
 'emptyList' @ [422:119] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KtTypeConstraint..KtTypeConstraint?)>..List<(KtTypeConstraint..KtTypeConstraint?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtTypeConstraint
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeConstraint..org.jetbrains.kotlin.psi.KtTypeConstraint?)
 
 'typeConstraints' @ [423:12] ==> val typeConstraints: (MutableList<(KtTypeConstraint..KtTypeConstraint?)>..List<(KtTypeConstraint..KtTypeConstraint?)>) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.collectRelevantConstraints[LocalVariableDescriptor]
 
@@ -1485,9 +1489,9 @@ Inferred types:
 
 'it' @ [431:70] ==> value-parameter it: KtTypeReference defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.collectReferencedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
-'collectReferencedTypes' @ [435:12] ==> private fun KotlinType.collectReferencedTypes(processTypeArguments: Boolean): List<KotlinType> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'collectReferencedTypes' @ [435:12] ==> private fun KotlinType.collectReferencedTypes(processTypeArguments: Boolean): List<KotlinType> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
-'fold' @ [435:41] ==> public inline fun <T, R> Iterable<KotlinType>.fold(initial: Boolean, operation: (Boolean, KotlinType) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [435:41] ==> public inline fun <T, R> Iterable<KotlinType>.fold(initial: Boolean, operation: (acc: Boolean, KotlinType) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KotlinType
     <R> -> Boolean
@@ -1521,11 +1525,11 @@ Inferred types:
 
 'targetScope' @ [441:82] ==> value-parameter targetScope: LexicalScope? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.isExtractable[ValueParameterDescriptorImpl]
 
-'collectReferencedTypes' @ [452:12] ==> private fun KotlinType.collectReferencedTypes(processTypeArguments: Boolean): List<KotlinType> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'collectReferencedTypes' @ [452:12] ==> private fun KotlinType.collectReferencedTypes(processTypeArguments: Boolean): List<KotlinType> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'processTypeArguments' @ [452:35] ==> value-parameter processTypeArguments: Boolean = ... defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.processTypeIfExtractable[ValueParameterDescriptorImpl]
 
-'fold' @ [452:57] ==> public inline fun <T, R> Iterable<KotlinType>.fold(initial: Boolean, operation: (Boolean, KotlinType) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [452:57] ==> public inline fun <T, R> Iterable<KotlinType>.fold(initial: Boolean, operation: (acc: Boolean, KotlinType) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KotlinType
     <R> -> Boolean
@@ -1592,7 +1596,7 @@ Inferred types:
 
 'typeParameter' @ [463:65] ==> val typeParameter: KtTypeParameter? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.processTypeIfExtractable.<anonymous>[LocalVariableDescriptor]
 
-'collectRelevantConstraints' @ [463:79] ==> public fun KtTypeParameter.collectRelevantConstraints(): List<KtTypeConstraint> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'collectRelevantConstraints' @ [463:79] ==> public fun KtTypeParameter.collectRelevantConstraints(): List<KtTypeConstraint> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'extractable' @ [464:17] ==> value-parameter extractable: Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.processTypeIfExtractable.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1654,9 +1658,9 @@ Inferred types:
 
 'currentName' @ [510:39] ==> public final var currentName: String? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.MutableParameter[PropertyDescriptorImpl]
 
-'lazy' @ [514:44] ==> public fun <T> lazy(initializer: () -> KotlinType): Lazy<KotlinType> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [514:44] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinType
+    <T> -> T
 
 'writable' @ [515:9] ==> private final var writable: Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.MutableParameter[PropertyDescriptorImpl]
 
@@ -1685,9 +1689,9 @@ Inferred types:
 
 'originalType' @ [519:14] ==> private final val originalType: KotlinType defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.MutableParameter[PropertyDescriptorImpl]
 
-'lazy' @ [522:62] ==> public fun <T> lazy(initializer: () -> List<KotlinType>): Lazy<List<KotlinType>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [522:62] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KotlinType>
+    <T> -> T
 
 'writable' @ [523:9] ==> private final var writable: Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.MutableParameter[PropertyDescriptorImpl]
 
@@ -2043,13 +2047,13 @@ Inferred types:
 
 'SYNTAX_ERRORS' @ [636:96] ==> enum entry SYNTAX_ERRORS defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.AnalysisResult.ErrorMessage[FakeCallableDescriptorForObject]
 
-'getLocalInstructions' @ [637:29] ==> private fun ExtractionData.getLocalInstructions(pseudocode: Pseudocode): List<Instruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getLocalInstructions' @ [637:29] ==> private fun ExtractionData.getLocalInstructions(pseudocode: Pseudocode): List<Instruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'pseudocode' @ [637:50] ==> val pseudocode: Pseudocode defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
 'localInstructions' @ [639:49] ==> val localInstructions: List<Instruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
-'getModifiedVarDescriptors' @ [639:67] ==> private fun List<Instruction>.getModifiedVarDescriptors(bindingContext: BindingContext): Map<VariableDescriptor, List<KtExpression>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getModifiedVarDescriptors' @ [639:67] ==> private fun List<Instruction>.getModifiedVarDescriptors(bindingContext: BindingContext): Map<VariableDescriptor, List<KtExpression>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [639:93] ==> val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
@@ -2065,7 +2069,7 @@ Inferred types:
 
 'getResolutionFacade' @ [643:85] ==> public fun KtElement.getResolutionFacade(): ResolutionFacade defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
-'inferParametersInfo' @ [644:22] ==> internal fun ExtractionData.inferParametersInfo(virtualBlock: KtBlockExpression, commonParent: PsiElement, pseudocode: Pseudocode, bindingContext: BindingContext, targetScope: LexicalScope, modifiedVarDescriptors: Set<VariableDescriptor>): ParametersInfo defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'inferParametersInfo' @ [644:22] ==> internal fun ExtractionData.inferParametersInfo(virtualBlock: KtBlockExpression, commonParent: PsiElement, pseudocode: Pseudocode, bindingContext: BindingContext, targetScope: LexicalScope, modifiedVarDescriptors: Set<VariableDescriptor>): ParametersInfo defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file inferParameterInfo.kt[SimpleFunctionDescriptorImpl]
 
 'virtualBlock' @ [645:13] ==> val virtualBlock: KtBlockExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
@@ -2103,20 +2107,20 @@ Inferred types:
 
 'HashMap' @ [658:48] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (VariableDescriptor..VariableDescriptor?), out (List<KtExpression>..List<KtExpression>?)>..Map<out (VariableDescriptor..VariableDescriptor?), (List<KtExpression>..List<KtExpression>?)>?)) defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptor
-    <V : (Any..Any?)> -> List<KtExpression>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.psi.KtExpression>..kotlin.collections.List<org.jetbrains.kotlin.psi.KtExpression>?)
 
 'modifiedVarDescriptorsWithExpressions' @ [658:56] ==> val modifiedVarDescriptorsWithExpressions: Map<VariableDescriptor, List<KtExpression>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
-'modifiedVarDescriptorsForControlFlow' @ [659:5] ==> val modifiedVarDescriptorsForControlFlow: HashMap<VariableDescriptor, List<KtExpression>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
+'modifiedVarDescriptorsForControlFlow' @ [659:5] ==> val modifiedVarDescriptorsForControlFlow: HashMap<(VariableDescriptor..VariableDescriptor?), (List<KtExpression>..List<KtExpression>?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
-'keys' @ [659:42] ==> public open val keys: MutableSet<VariableDescriptor> defined in java.util.HashMap[JavaPropertyDescriptor]
+'keys' @ [659:42] ==> public open val keys: MutableSet<(VariableDescriptor..VariableDescriptor?)> defined in java.util.HashMap[JavaPropertyDescriptor]
 
-'retainAll' @ [659:47] ==> public abstract fun retainAll(elements: Collection<VariableDescriptor>): Boolean defined in kotlin.collections.MutableSet[DeserializedSimpleFunctionDescriptor]
+'retainAll' @ [659:47] ==> public abstract fun retainAll(elements: Collection<(VariableDescriptor..VariableDescriptor?)>): Boolean defined in kotlin.collections.MutableSet[DeserializedSimpleFunctionDescriptor]
 
 'localInstructions' @ [659:57] ==> val localInstructions: List<Instruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
-'getVarDescriptorsAccessedAfterwards' @ [659:75] ==> private fun List<Instruction>.getVarDescriptorsAccessedAfterwards(bindingContext: BindingContext): Set<VariableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getVarDescriptorsAccessedAfterwards' @ [659:75] ==> private fun List<Instruction>.getVarDescriptorsAccessedAfterwards(bindingContext: BindingContext): Set<VariableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [659:111] ==> val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
@@ -2124,7 +2128,7 @@ Inferred types:
 
 'component2' @ [660:23] ==> public final operator fun component2(): AnalysisResult.ErrorMessage? defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'analyzeControlFlow' @ [661:13] ==> private fun ExtractionData.analyzeControlFlow(localInstructions: List<Instruction>, pseudocode: Pseudocode, module: ModuleDescriptor, bindingContext: BindingContext, modifiedVarDescriptors: Map<VariableDescriptor, List<KtExpression>>, options: ExtractionOptions, targetScope: LexicalScope?, parameters: Set<Parameter>): Pair<ControlFlow, AnalysisResult.ErrorMessage?> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'analyzeControlFlow' @ [661:13] ==> private fun ExtractionData.analyzeControlFlow(localInstructions: List<Instruction>, pseudocode: Pseudocode, module: ModuleDescriptor, bindingContext: BindingContext, modifiedVarDescriptors: Map<VariableDescriptor, List<KtExpression>>, options: ExtractionOptions, targetScope: LexicalScope?, parameters: Set<Parameter>): Pair<ControlFlow, AnalysisResult.ErrorMessage?> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'localInstructions' @ [662:21] ==> val localInstructions: List<Instruction> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
@@ -2136,7 +2140,7 @@ Inferred types:
 
 'bindingContext' @ [665:21] ==> val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
-'modifiedVarDescriptorsForControlFlow' @ [666:21] ==> val modifiedVarDescriptorsForControlFlow: HashMap<VariableDescriptor, List<KtExpression>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
+'modifiedVarDescriptorsForControlFlow' @ [666:21] ==> val modifiedVarDescriptorsForControlFlow: HashMap<(VariableDescriptor..VariableDescriptor?), (List<KtExpression>..List<KtExpression>?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
 'options' @ [667:21] ==> public final val options: ExtractionOptions defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionData[PropertyDescriptorImpl]
 
@@ -2167,7 +2171,7 @@ Inferred types:
 
 'returnType' @ [674:5] ==> val returnType: KotlinType defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
-'processTypeIfExtractable' @ [674:16] ==> internal fun KotlinType.processTypeIfExtractable(typeParameters: MutableSet<TypeParameter>, nonDenotableTypes: MutableSet<KotlinType>, options: ExtractionOptions, targetScope: LexicalScope?, processTypeArguments: Boolean = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'processTypeIfExtractable' @ [674:16] ==> internal fun KotlinType.processTypeIfExtractable(typeParameters: MutableSet<TypeParameter>, nonDenotableTypes: MutableSet<KotlinType>, options: ExtractionOptions, targetScope: LexicalScope?, processTypeArguments: Boolean = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'paramsInfo' @ [674:41] ==> val paramsInfo: ParametersInfo defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
@@ -2343,7 +2347,7 @@ Inferred types:
 
 'bindingContext' @ [703:13] ==> val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
-'suggestFunctionNames' @ [704:13] ==> private fun ExtractionData.suggestFunctionNames(returnType: KotlinType): List<String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'suggestFunctionNames' @ [704:13] ==> private fun ExtractionData.suggestFunctionNames(returnType: KotlinType): List<String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'returnType' @ [704:34] ==> val returnType: KotlinType defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
@@ -2406,7 +2410,7 @@ Inferred types:
 
 'declaration' @ [718:29] ==> public final val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionResult[PropertyDescriptorImpl]
 
-'getGeneratedBody' @ [718:41] ==> internal fun KtNamedDeclaration.getGeneratedBody(): KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getGeneratedBody' @ [718:41] ==> internal fun KtNamedDeclaration.getGeneratedBody(): KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'body' @ [719:26] ==> val body: KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.performAnalysis[LocalVariableDescriptor]
 
@@ -2502,8 +2506,6 @@ Inferred types:
 
 'addAll' @ [742:23] ==> public open fun addAll(elements: Collection<String>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
-'KotlinNameSuggester' @ [742:30] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
-
 'suggestNamesByType' @ [742:50] ==> public final fun suggestNamesByType(type: KotlinType, validator: (String) -> Boolean, defaultName: String? = ...): List<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
 'returnType' @ [742:69] ==> value-parameter returnType: KotlinType defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.suggestFunctionNames[ValueParameterDescriptorImpl]
@@ -2545,8 +2547,6 @@ Inferred types:
 'functionNames' @ [748:34] ==> val functionNames: LinkedHashSet<String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.suggestFunctionNames[LocalVariableDescriptor]
 
 'add' @ [748:48] ==> public open fun add(element: String): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
-
-'KotlinNameSuggester' @ [748:52] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
 
 'suggestNameByName' @ [748:72] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
@@ -2701,7 +2701,7 @@ Inferred types:
 
 'declaration' @ [788:23] ==> public final val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionResult[PropertyDescriptorImpl]
 
-'getGeneratedBody' @ [788:35] ==> internal fun KtNamedDeclaration.getGeneratedBody(): KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getGeneratedBody' @ [788:35] ==> internal fun KtNamedDeclaration.getGeneratedBody(): KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'body' @ [789:26] ==> val body: KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.validate[LocalVariableDescriptor]
 

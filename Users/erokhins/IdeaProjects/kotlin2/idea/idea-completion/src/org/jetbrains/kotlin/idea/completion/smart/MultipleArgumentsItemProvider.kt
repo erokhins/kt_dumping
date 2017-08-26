@@ -197,8 +197,6 @@ Inferred types:
 
 'tryGetOffset' @ [95:56] ==> public fun OffsetMap.tryGetOffset(key: OffsetKey): Int? defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
-'SmartCompletion' @ [95:69] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion[FakeCallableDescriptorForObject]
-
 'MULTIPLE_ARGUMENTS_REPLACEMENT_OFFSET' @ [95:85] ==> public final val MULTIPLE_ARGUMENTS_REPLACEMENT_OFFSET: OffsetKey defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.Companion[PropertyDescriptorImpl]
 
 'offset' @ [96:29] ==> val offset: Int? defined in org.jetbrains.kotlin.idea.completion.smart.MultipleArgumentsItemProvider.createParametersLookupElement.<anonymous>[LocalVariableDescriptor]

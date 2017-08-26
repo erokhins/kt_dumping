@@ -202,7 +202,7 @@ Inferred types:
 
 'document' @ [119:24] ==> val document: Document defined in org.jetbrains.kotlin.idea.refactoring.runRefactoringTest[LocalVariableDescriptor]
 
-'extractMultipleMarkerOffsets' @ [119:33] ==> public fun Document.extractMultipleMarkerOffsets(project: Project, caretMarker: String = ...): List<Int> defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'extractMultipleMarkerOffsets' @ [119:33] ==> public fun Document.extractMultipleMarkerOffsets(project: Project, caretMarker: String = ...): List<Int> defined in org.jetbrains.kotlin.idea.test in file testUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [119:62] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.runRefactoringTest[ValueParameterDescriptorImpl]
 

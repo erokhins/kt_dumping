@@ -74,7 +74,7 @@
 
 'source' @ [75:68] ==> value-parameter source: SourceElement defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmPropertyDescriptorImpl.Companion.createStaticVal[ValueParameterDescriptorImpl]
 
-'initialize' @ [76:19] ==> public fun PropertyDescriptorImpl.initialize(type: KotlinType, typeParameters: List<TypeParameterDescriptor> = ..., dispatchReceiverParameter: ReceiverParameterDescriptor? = ..., extensionReceiverParameter: ReceiverParameterDescriptor? = ..., getter: PropertyGetterDescriptorImpl? = ..., setter: PropertySetterDescriptorImpl? = ...): PropertyDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors[SimpleFunctionDescriptorImpl]
+'initialize' @ [76:19] ==> public fun PropertyDescriptorImpl.initialize(type: KotlinType, typeParameters: List<TypeParameterDescriptor> = ..., dispatchReceiverParameter: ReceiverParameterDescriptor? = ..., extensionReceiverParameter: ReceiverParameterDescriptor? = ..., getter: PropertyGetterDescriptorImpl? = ..., setter: PropertySetterDescriptorImpl? = ...): PropertyDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [76:30] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmPropertyDescriptorImpl.Companion.createStaticVal[ValueParameterDescriptorImpl]
 
@@ -83,8 +83,6 @@
 'classDescriptor' @ [88:25] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmPropertyDescriptorImpl.Companion.createFinalField[ValueParameterDescriptorImpl]
 
 'annotations' @ [88:48] ==> value-parameter annotations: Annotations defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmPropertyDescriptorImpl.Companion.createFinalField[ValueParameterDescriptorImpl]
-
-'Modality' @ [88:61] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [88:70] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -98,7 +96,7 @@
 
 'source' @ [89:68] ==> value-parameter source: SourceElement defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmPropertyDescriptorImpl.Companion.createFinalField[ValueParameterDescriptorImpl]
 
-'initialize' @ [90:19] ==> public fun PropertyDescriptorImpl.initialize(type: KotlinType, typeParameters: List<TypeParameterDescriptor> = ..., dispatchReceiverParameter: ReceiverParameterDescriptor? = ..., extensionReceiverParameter: ReceiverParameterDescriptor? = ..., getter: PropertyGetterDescriptorImpl? = ..., setter: PropertySetterDescriptorImpl? = ...): PropertyDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors[SimpleFunctionDescriptorImpl]
+'initialize' @ [90:19] ==> public fun PropertyDescriptorImpl.initialize(type: KotlinType, typeParameters: List<TypeParameterDescriptor> = ..., dispatchReceiverParameter: ReceiverParameterDescriptor? = ..., extensionReceiverParameter: ReceiverParameterDescriptor? = ..., getter: PropertyGetterDescriptorImpl? = ..., setter: PropertySetterDescriptorImpl? = ...): PropertyDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.descriptors in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [90:30] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.backend.jvm.descriptors.JvmPropertyDescriptorImpl.Companion.createFinalField[ValueParameterDescriptorImpl]
 

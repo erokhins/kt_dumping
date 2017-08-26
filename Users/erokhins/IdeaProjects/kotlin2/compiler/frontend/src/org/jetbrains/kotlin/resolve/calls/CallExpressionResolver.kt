@@ -37,14 +37,14 @@ Inferred types:
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
-'Pair' @ [93:40] ==> public constructor Pair<out A, out B>(first: Boolean, second: ResolvedCall<FunctionDescriptor>?) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [93:40] ==> public constructor Pair<out A, out B>(first: Boolean, second: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> Boolean
-    <out B> -> ResolvedCall<FunctionDescriptor>?
+    <out B> -> ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>?
 
 'getResultingCall' @ [93:81] ==> @Nullable public open fun <D : (CallableDescriptor..CallableDescriptor?)> getResultingCall(@NotNull results: OverloadResolutionResults<(FunctionDescriptor..FunctionDescriptor?)>, @NotNull contextDependency: ContextDependency): ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.resolve.calls.results.OverloadResolutionResultsUtil[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'results' @ [93:98] ==> val results: OverloadResolutionResults<(FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver.getResolvedCallForFunction[LocalVariableDescriptor]
 
@@ -119,7 +119,7 @@ Inferred types:
 
 'resolutionResult' @ [114:31] ==> val resolutionResult: OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver.getVariableType[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [114:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)>.resultingDescriptor: (VariableDescriptor..VariableDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [114:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)>.resultingDescriptor: VariableDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
@@ -148,7 +148,7 @@ Inferred types:
 
 'resolutionResult' @ [117:72] ==> val resolutionResult: OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver.getVariableType[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [117:89] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)>.resultingDescriptor: (VariableDescriptor..VariableDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [117:89] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)>.resultingDescriptor: VariableDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
@@ -183,7 +183,7 @@ Inferred types:
 
 'resolutionResult' @ [123:58] ==> val resolutionResult: OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver.getVariableType[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [123:75] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)>.resultingDescriptor: (VariableDescriptor..VariableDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [123:75] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)>.resultingDescriptor: VariableDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
@@ -578,8 +578,8 @@ Inferred types:
 
 'get' @ [233:49] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (KotlinTypeInfo..KotlinTypeInfo?)>..ReadOnlySlice<(KtExpression..KtExpression?), (KotlinTypeInfo..KotlinTypeInfo?)>?), key: (KtExpression..KtExpression?)): KotlinTypeInfo? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> KotlinTypeInfo
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.KotlinTypeInfo..org.jetbrains.kotlin.types.expressions.KotlinTypeInfo?)
 
 'EXPRESSION_TYPE_INFO' @ [233:68] ==> public final val EXPRESSION_TYPE_INFO: (WritableSlice<(KtExpression..KtExpression?), (KotlinTypeInfo..KotlinTypeInfo?)>..WritableSlice<(KtExpression..KtExpression?), (KotlinTypeInfo..KotlinTypeInfo?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -666,7 +666,7 @@ Inferred types:
 
 'callExpression' @ [253:17] ==> value-parameter callExpression: KtCallExpression defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver.getCallExpressionTypeInfoWithoutFinalTypeCheck[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [253:32] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [253:32] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'temporaryForVariable' @ [253:48] ==> val temporaryForVariable: (TemporaryTraceAndCache..TemporaryTraceAndCache?) defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver.getCallExpressionTypeInfoWithoutFinalTypeCheck[LocalVariableDescriptor]
 
@@ -954,8 +954,6 @@ Inferred types:
 
 'receiverDataFlowValue' @ [328:25] ==> val receiverDataFlowValue: DataFlowValue? defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver.getSafeOrUnsafeSelectorTypeInfo[LocalVariableDescriptor]
 
-'DataFlowValue' @ [328:48] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue[FakeCallableDescriptorForObject]
-
 'nullValue' @ [328:62] ==> @JvmStatic public final fun nullValue(builtIns: KotlinBuiltIns): DataFlowValue defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue.Companion[SimpleFunctionDescriptorImpl]
 
 'builtIns' @ [328:72] ==> private final val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver[PropertyDescriptorImpl]
@@ -1122,8 +1120,8 @@ Inferred types:
 
 'get' @ [372:19] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>..ReadOnlySlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>?), key: (KtExpression..KtExpression?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'PROCESSED' @ [372:38] ==> public final val PROCESSED: (WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>..WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1133,7 +1131,7 @@ Inferred types:
 
 'record' @ [374:19] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>..WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>?), key: (KtExpression..KtExpression?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'PROCESSED' @ [374:41] ==> public final val PROCESSED: (WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>..WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1143,8 +1141,8 @@ Inferred types:
 
 'record' @ [375:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (KotlinTypeInfo..KotlinTypeInfo?)>..WritableSlice<(KtExpression..KtExpression?), (KotlinTypeInfo..KotlinTypeInfo?)>?), key: (KtExpression..KtExpression?), value: (KotlinTypeInfo..KotlinTypeInfo?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> KotlinTypeInfo
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.KotlinTypeInfo..org.jetbrains.kotlin.types.expressions.KotlinTypeInfo?)
 
 'EXPRESSION_TYPE_INFO' @ [375:41] ==> public final val EXPRESSION_TYPE_INFO: (WritableSlice<(KtExpression..KtExpression?), (KotlinTypeInfo..KotlinTypeInfo?)>..WritableSlice<(KtExpression..KtExpression?), (KotlinTypeInfo..KotlinTypeInfo?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1215,8 +1213,8 @@ Inferred types:
 
 'get' @ [394:44] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?), key: (KtExpression..KtExpression?)): Qualifier? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Qualifier
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier..org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier?)
 
 'QUALIFIER' @ [394:63] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1262,16 +1260,14 @@ Inferred types:
 
 'get' @ [408:34] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?), key: (KtExpression..KtExpression?)): Qualifier? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Qualifier
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier..org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier?)
 
 'QUALIFIER' @ [408:53] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
 'element' @ [408:64] ==> val element: CallExpressionElement defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver.getQualifiedExpressionTypeInfo[LocalVariableDescriptor]
 
 'receiver' @ [408:72] ==> public final val receiver: KtExpression defined in org.jetbrains.kotlin.resolve.calls.CallExpressionElement[PropertyDescriptorImpl]
-
-'ExpressionReceiver' @ [409:31] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.receivers.ExpressionReceiver[FakeCallableDescriptorForObject]
 
 'create' @ [409:50] ==> public final fun create(expression: KtExpression, type: KotlinType, bindingContext: BindingContext): ExpressionReceiver defined in org.jetbrains.kotlin.resolve.scopes.receivers.ExpressionReceiver.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1413,8 +1409,8 @@ Inferred types:
 
 'get' @ [450:27] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [450:46] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1428,9 +1424,9 @@ Inferred types:
 
 'context' @ [453:79] ==> value-parameter context: ExpressionTypingContext defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver.resolveDeferredReceiverInQualifiedExpression[ValueParameterDescriptorImpl]
 
-'getParentOfType' @ [460:51] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out ({KtElement & ASTDelegatePsiElement}..{KtElement & ASTDelegatePsiElement}?)>..Class<out ({KtElement & ASTDelegatePsiElement}..{KtElement & ASTDelegatePsiElement}?)>?)): {KtElement & ASTDelegatePsiElement}? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'getParentOfType' @ [460:51] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (NavigatablePsiElement..NavigatablePsiElement?)>..Class<out (NavigatablePsiElement..NavigatablePsiElement?)>?)): NavigatablePsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> {KtElement & ASTDelegatePsiElement}
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.NavigatablePsiElement..com.intellij.psi.NavigatablePsiElement?)
 
 'expression' @ [460:67] ==> value-parameter expression: KtCallExpression defined in org.jetbrains.kotlin.resolve.calls.CallExpressionResolver.Companion.canInstantiateAnnotationClass[ValueParameterDescriptorImpl]
 
@@ -1508,8 +1504,8 @@ Inferred types:
 
 'get' @ [478:61] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [478:80] ==> @SuppressWarnings public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1562,8 +1558,8 @@ Inferred types:
 
 'get' @ [502:53] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?), key: (KtExpression..KtExpression?)): Qualifier? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Qualifier
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier..org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier?)
 
 'QUALIFIER' @ [502:72] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1575,8 +1571,8 @@ Inferred types:
 
 'get' @ [503:51] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?), key: (KtExpression..KtExpression?)): Qualifier? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Qualifier
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier..org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier?)
 
 'QUALIFIER' @ [503:70] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

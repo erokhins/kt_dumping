@@ -39,11 +39,11 @@ Inferred types:
 
 'c' @ [59:41] ==> value-parameter c: Class<*> defined in org.jetbrains.kotlin.container.traverseClass[ValueParameterDescriptorImpl]
 
-'getSetterInfos' @ [59:45] ==> private fun getSetterInfos(c: Class<*>): List<SetterInfo> defined in org.jetbrains.kotlin.container[SimpleFunctionDescriptorImpl]
+'getSetterInfos' @ [59:45] ==> private fun getSetterInfos(c: Class<*>): List<SetterInfo> defined in org.jetbrains.kotlin.container in file Cache.kt[SimpleFunctionDescriptorImpl]
 
 'c' @ [59:60] ==> value-parameter c: Class<*> defined in org.jetbrains.kotlin.container.traverseClass[ValueParameterDescriptorImpl]
 
-'getRegistrations' @ [59:64] ==> private fun getRegistrations(klass: Class<*>): List<Type> defined in org.jetbrains.kotlin.container[SimpleFunctionDescriptorImpl]
+'getRegistrations' @ [59:64] ==> private fun getRegistrations(klass: Class<*>): List<Type> defined in org.jetbrains.kotlin.container in file Cache.kt[SimpleFunctionDescriptorImpl]
 
 'c' @ [59:81] ==> value-parameter c: Class<*> defined in org.jetbrains.kotlin.container.traverseClass[ValueParameterDescriptorImpl]
 
@@ -59,7 +59,7 @@ Inferred types:
 
 'methods' @ [64:22] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'method' @ [65:28] ==> val method: (Method..Method?) defined in org.jetbrains.kotlin.container.getSetterInfos[LocalVariableDescriptor]
 
@@ -71,13 +71,13 @@ Inferred types:
 Inferred types:
     <T : Annotation> -> (kotlin.Annotation..kotlin.Annotation?)
 
-'java' @ [66:44] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [66:44] ==> public val <T> KClass<out (Annotation..Annotation?)>.java: Class<out (Annotation..Annotation?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out (kotlin.Annotation..kotlin.Annotation?))
 
-'name' @ [66:49] ==> public final val <T : (Any..Any?)> Class<out Annotation>.name: (String..String?)[MyPropertyDescriptor]
+'name' @ [66:49] ==> public final val <T : (Any..Any?)> Class<out (Annotation..Annotation?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Annotation
+    <T : (Any..Any?)> -> Captured(out (kotlin.Annotation..kotlin.Annotation?))
 
 'endsWith' @ [66:54] ==> public fun String.endsWith(suffix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -105,19 +105,19 @@ Inferred types:
 
 'modifiers' @ [75:31] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.modifiers: Int[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'c' @ [75:45] ==> value-parameter c: Class<*> defined in org.jetbrains.kotlin.container.getConstructorInfo[ValueParameterDescriptorImpl]
 
 'isPrimitive' @ [75:47] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'c' @ [78:24] ==> value-parameter c: Class<*> defined in org.jetbrains.kotlin.container.getConstructorInfo[ValueParameterDescriptorImpl]
 
 'constructors' @ [78:26] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.constructors: (Array<(Constructor<*>..Constructor<*>?)>..Array<out (Constructor<*>..Constructor<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'constructors' @ [79:38] ==> val constructors: (Array<(Constructor<*>..Constructor<*>?)>..Array<out (Constructor<*>..Constructor<*>?)>?) defined in org.jetbrains.kotlin.container.getConstructorInfo[LocalVariableDescriptor]
 
@@ -125,18 +125,18 @@ Inferred types:
 Inferred types:
     <T> -> (java.lang.reflect.Constructor<*>..java.lang.reflect.Constructor<*>?)
 
-'let' @ [79:67] ==> @InlineOnly public inline fun <T, R> Constructor<out (Any..Any?)>.let(block: (Constructor<out (Any..Any?)>) -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [79:67] ==> @InlineOnly public inline fun <T, R> Constructor<*>.let(block: (Constructor<*>) -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Constructor<out (kotlin.Any..kotlin.Any?)>
+    <T> -> Constructor<*>
     <R> -> Boolean
 
 'isPublic' @ [79:82] ==> public open fun isPublic(p0: Int): Boolean defined in java.lang.reflect.Modifier[JavaMethodDescriptor]
 
-'it' @ [79:91] ==> value-parameter it: Constructor<out (Any..Any?)> defined in org.jetbrains.kotlin.container.getConstructorInfo.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [79:91] ==> value-parameter it: Constructor<*> defined in org.jetbrains.kotlin.container.getConstructorInfo.<anonymous>[ValueParameterDescriptorImpl]
 
 'modifiers' @ [79:94] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.modifiers: Int[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 '!' @ [80:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -158,7 +158,7 @@ Inferred types:
 
 'declaringClass' @ [85:19] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaringClass: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 '!' @ [85:45] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -168,7 +168,7 @@ Inferred types:
 
 'modifiers' @ [85:66] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.modifiers: Int[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'listOf' @ [86:17] ==> public fun <T> listOf(vararg elements: (Type..Type?)): List<(Type..Type?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -178,19 +178,19 @@ Inferred types:
 
 'declaringClass' @ [86:26] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaringClass: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'constructor' @ [86:43] ==> val constructor: (Constructor<*>..Constructor<*>?) defined in org.jetbrains.kotlin.container.getConstructorInfo[LocalVariableDescriptor]
 
 'genericParameterTypes' @ [86:55] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.genericParameterTypes: (Array<(Type..Type?)>..Array<out (Type..Type?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'constructor' @ [87:18] ==> val constructor: (Constructor<*>..Constructor<*>?) defined in org.jetbrains.kotlin.container.getConstructorInfo[LocalVariableDescriptor]
 
 'genericParameterTypes' @ [87:30] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.genericParameterTypes: (Array<(Type..Type?)>..Array<out (Type..Type?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'toList' @ [87:52] ==> public fun <T> Array<out (Type..Type?)>.toList(): List<(Type..Type?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -222,7 +222,7 @@ Inferred types:
 
 'genericInterfaces' @ [99:12] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.genericInterfaces: (Array<(Type..Type?)>..Array<out (Type..Type?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'forEach' @ [99:31] ==> public inline fun <T> Array<out (Type..Type?)>.forEach(action: ((Type..Type?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -234,7 +234,7 @@ Inferred types:
 
 'it' @ [100:24] ==> value-parameter it: (Type..Type?) defined in org.jetbrains.kotlin.container.collectInterfacesRecursive.<anonymous>[ValueParameterDescriptorImpl]
 
-'collectInterfacesRecursive' @ [101:13] ==> private fun collectInterfacesRecursive(type: Type, result: MutableSet<Type>): Unit defined in org.jetbrains.kotlin.container[SimpleFunctionDescriptorImpl]
+'collectInterfacesRecursive' @ [101:13] ==> private fun collectInterfacesRecursive(type: Type, result: MutableSet<Type>): Unit defined in org.jetbrains.kotlin.container in file Cache.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [101:40] ==> value-parameter it: (Type..Type?) defined in org.jetbrains.kotlin.container.collectInterfacesRecursive.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -244,7 +244,7 @@ Inferred types:
 
 'getAnnotation' @ [107:18] ==> public open fun <A : (Annotation..Annotation?)> getAnnotation(p0: (Class<(DefaultImplementation..DefaultImplementation?)>..Class<(DefaultImplementation..DefaultImplementation?)>?)): (DefaultImplementation..DefaultImplementation?) defined in java.lang.Class[JavaMethodDescriptor]
 Inferred types:
-    <A : (Annotation..Annotation?)> -> DefaultImplementation
+    <A : (Annotation..Annotation?)> -> (org.jetbrains.kotlin.container.DefaultImplementation..org.jetbrains.kotlin.container.DefaultImplementation?)
 
 'DefaultImplementation' @ [107:32] ==> public constructor DefaultImplementation(impl: KClass<*>) defined in org.jetbrains.kotlin.container.DefaultImplementation[DeserializedClassConstructorDescriptor]
 
@@ -256,7 +256,7 @@ Inferred types:
 
 'java' @ [107:74] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'ArrayList' @ [111:25] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -282,7 +282,7 @@ Inferred types:
 
 'genericSuperclass' @ [115:31] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.genericSuperclass: (Type..Type?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'it' @ [116:38] ==> value-parameter it: Type defined in org.jetbrains.kotlin.container.getRegistrations.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -290,7 +290,7 @@ Inferred types:
 
 'genericSuperclass' @ [116:64] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.genericSuperclass: (Type..Type?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'registrations' @ [120:5] ==> val registrations: ArrayList<Type> defined in org.jetbrains.kotlin.container.getRegistrations[LocalVariableDescriptor]
 
@@ -310,7 +310,7 @@ Inferred types:
 Inferred types:
     <T> -> Type
 
-'collectInterfacesRecursive' @ [123:28] ==> private fun collectInterfacesRecursive(type: Type, result: MutableSet<Type>): Unit defined in org.jetbrains.kotlin.container[SimpleFunctionDescriptorImpl]
+'collectInterfacesRecursive' @ [123:28] ==> private fun collectInterfacesRecursive(type: Type, result: MutableSet<Type>): Unit defined in org.jetbrains.kotlin.container in file Cache.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [123:55] ==> value-parameter it: Type defined in org.jetbrains.kotlin.container.getRegistrations.<anonymous>[ValueParameterDescriptorImpl]
 

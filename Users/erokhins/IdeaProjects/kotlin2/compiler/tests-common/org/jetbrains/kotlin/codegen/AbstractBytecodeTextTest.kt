@@ -114,8 +114,6 @@ Inferred types:
 
 'filename' @ [66:44] ==> value-parameter filename: String defined in org.jetbrains.kotlin.codegen.AbstractBytecodeTextTest.readExpectedOccurrences[ValueParameterDescriptorImpl]
 
-'Charsets' @ [66:55] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
-
 'UTF_8' @ [66:64] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 
 'name' @ [66:70] ==> public final fun name(): (String..String?) defined in java.nio.charset.Charset[JavaMethodDescriptor]

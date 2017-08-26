@@ -126,8 +126,6 @@ Inferred types:
 
 'supportsFeature' @ [87:26] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [87:42] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'AdditionalBuiltInsMembers' @ [87:58] ==> enum entry AdditionalBuiltInsMembers defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'performChecks' @ [89:9] ==> private final fun performChecks(resolverForProject: ResolverForProject<MultiModuleJavaAnalysisCustomTest.TestModule>, modules: List<MultiModuleJavaAnalysisCustomTest.TestModule>): Unit defined in org.jetbrains.kotlin.jvm.compiler.MultiModuleJavaAnalysisCustomTest[SimpleFunctionDescriptorImpl]

@@ -158,7 +158,5 @@ Inferred types:
 
 'modifiers' @ [68:9] ==> public abstract var modifiers: Set<DescriptorRendererModifier> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptions[DeserializedPropertyDescriptor]
 
-'DescriptorRendererModifier' @ [68:22] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
-
 'ANNOTATIONS' @ [68:49] ==> enum entry ANNOTATIONS defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 

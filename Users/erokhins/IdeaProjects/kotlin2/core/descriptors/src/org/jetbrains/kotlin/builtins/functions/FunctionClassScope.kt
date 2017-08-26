@@ -22,8 +22,6 @@ Inferred types:
 Inferred types:
     <T> -> FunctionInvokeDescriptor
 
-'FunctionInvokeDescriptor' @ [29:65] ==> public companion object Factory defined in org.jetbrains.kotlin.builtins.functions.FunctionInvokeDescriptor[FakeCallableDescriptorForObject]
-
 'create' @ [29:90] ==> public final fun create(functionClass: FunctionClassDescriptor, isSuspend: Boolean): FunctionInvokeDescriptor defined in org.jetbrains.kotlin.builtins.functions.FunctionInvokeDescriptor.Factory[SimpleFunctionDescriptorImpl]
 
 'containingClass' @ [29:97] ==> protected final val containingClass: ClassDescriptor defined in org.jetbrains.kotlin.builtins.functions.FunctionClassScope[PropertyDescriptorImpl]
@@ -33,8 +31,6 @@ Inferred types:
 'listOf' @ [30:65] ==> public fun <T> listOf(element: FunctionInvokeDescriptor): List<FunctionInvokeDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FunctionInvokeDescriptor
-
-'FunctionInvokeDescriptor' @ [30:72] ==> public companion object Factory defined in org.jetbrains.kotlin.builtins.functions.FunctionInvokeDescriptor[FakeCallableDescriptorForObject]
 
 'create' @ [30:97] ==> public final fun create(functionClass: FunctionClassDescriptor, isSuspend: Boolean): FunctionInvokeDescriptor defined in org.jetbrains.kotlin.builtins.functions.FunctionInvokeDescriptor.Factory[SimpleFunctionDescriptorImpl]
 

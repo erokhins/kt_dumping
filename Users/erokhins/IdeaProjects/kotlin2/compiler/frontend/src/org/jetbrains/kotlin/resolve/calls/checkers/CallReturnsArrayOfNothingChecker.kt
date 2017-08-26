@@ -2,7 +2,7 @@
 
 'resultingDescriptor' @ [27:26] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'returnType' @ [27:46] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -22,7 +22,7 @@ Inferred types:
 
 'this' @ [33:13] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.checkers.CallReturnsArrayOfNothingChecker.containsArrayOfNothing[ReceiverParameterDescriptorImpl]
 
-'isComputingDeferredType' @ [33:29] ==> @Suppress public fun CallChecker.isComputingDeferredType(type: KotlinType): Boolean defined in org.jetbrains.kotlin.resolve.calls.checkers[SimpleFunctionDescriptorImpl]
+'isComputingDeferredType' @ [33:29] ==> @Suppress public fun CallChecker.isComputingDeferredType(type: KotlinType): Boolean defined in org.jetbrains.kotlin.resolve.calls.checkers in file CallChecker.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [33:53] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.checkers.CallReturnsArrayOfNothingChecker.containsArrayOfNothing[ReceiverParameterDescriptorImpl]
 

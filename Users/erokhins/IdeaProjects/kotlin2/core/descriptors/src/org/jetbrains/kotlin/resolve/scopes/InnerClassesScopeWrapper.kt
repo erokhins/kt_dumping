@@ -8,10 +8,10 @@
 
 'location' @ [29:56] ==> value-parameter location: LookupLocation defined in org.jetbrains.kotlin.resolve.scopes.InnerClassesScopeWrapper.getContributedClassifier[ValueParameterDescriptorImpl]
 
-'let' @ [29:67] ==> @InlineOnly public inline fun <T, R> ClassifierDescriptor.let(block: (ClassifierDescriptor) -> ClassifierDescriptorWithTypeParameters?): ClassifierDescriptorWithTypeParameters? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [29:67] ==> @InlineOnly public inline fun <T, R> ClassifierDescriptor.let(block: (ClassifierDescriptor) -> ClassifierDescriptor?): ClassifierDescriptor? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ClassifierDescriptor
-    <R> -> ClassifierDescriptorWithTypeParameters?
+    <R> -> ClassifierDescriptor?
 
 'it' @ [30:17] ==> value-parameter it: ClassifierDescriptor defined in org.jetbrains.kotlin.resolve.scopes.InnerClassesScopeWrapper.getContributedClassifier.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -20,8 +20,6 @@ Inferred types:
 'kindFilter' @ [34:32] ==> value-parameter kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.InnerClassesScopeWrapper.getContributedDescriptors[ValueParameterDescriptorImpl]
 
 'restrictedToKindsOrNull' @ [34:43] ==> public final fun restrictedToKindsOrNull(kinds: Int): DescriptorKindFilter? defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[SimpleFunctionDescriptorImpl]
-
-'DescriptorKindFilter' @ [34:67] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'CLASSIFIERS_MASK' @ [34:88] ==> public final val CLASSIFIERS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 

@@ -12,8 +12,6 @@ Inferred types:
 
 'lastChild' @ [37:56] ==> public final val PsiElement.lastChild: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'PsiChildRange' @ [37:72] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [37:86] ==> public final val EMPTY: PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[PropertyDescriptorImpl]
 
 'this@siblings' @ [43:37] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.siblings[ReceiverParameterDescriptorImpl]
@@ -197,7 +195,7 @@ Inferred types:
 
 'getParentOfType' @ [114:24] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(T..T?)>, p2: Boolean): T? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [114:40] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.getNonStrictParentOfType[ReceiverParameterDescriptorImpl]
 
@@ -205,7 +203,7 @@ Inferred types:
 
 'getParentOfType' @ [118:24] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(T..T?)>, p2: Boolean): T? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [118:40] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.getParentOfType[ReceiverParameterDescriptorImpl]
 
@@ -217,7 +215,7 @@ Inferred types:
 
 'getParentOfType' @ [122:24] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(T..T?)>, p2: Boolean): T? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [122:40] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.getStrictParentOfType[ReceiverParameterDescriptorImpl]
 
@@ -227,7 +225,7 @@ Inferred types:
 
 'getParentOfType' @ [126:24] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(T..T?)>, p2: Boolean): T? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [126:40] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.getNonStrictParentOfType[ReceiverParameterDescriptorImpl]
 
@@ -237,7 +235,7 @@ Inferred types:
 
 'getTopmostParentOfType' @ [130:24] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getTopmostParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(T..T?)>): T? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [130:47] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.getTopmostParentOfType[ReceiverParameterDescriptorImpl]
 
@@ -247,7 +245,7 @@ Inferred types:
 
 'getChildOfType' @ [134:24] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getChildOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(T..T?)>): T? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [134:39] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.getChildOfType[ReceiverParameterDescriptorImpl]
 
@@ -261,7 +259,7 @@ Inferred types:
 
 'getChildrenOfType' @ [138:24] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getChildrenOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(T..T?)>): (Array<(T..T?)>?..Array<out (T..T?)>?) defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [138:42] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.getChildrenOfType[ReceiverParameterDescriptorImpl]
 
@@ -273,7 +271,7 @@ Inferred types:
 Inferred types:
     <reified @PureReifiable T> -> T
 
-'siblings' @ [142:12] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [142:12] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'withItself' @ [142:34] ==> value-parameter withItself: Boolean = ... defined in org.jetbrains.kotlin.psi.psiUtil.getNextSiblingIgnoringWhitespaceAndComments[ValueParameterDescriptorImpl]
 
@@ -289,7 +287,7 @@ Inferred types:
 Inferred types:
     <T> -> PsiElement
 
-'siblings' @ [146:12] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [146:12] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'withItself' @ [146:34] ==> value-parameter withItself: Boolean = ... defined in org.jetbrains.kotlin.psi.psiUtil.getNextSiblingIgnoringWhitespace[ValueParameterDescriptorImpl]
 
@@ -303,7 +301,7 @@ Inferred types:
 Inferred types:
     <T> -> PsiElement
 
-'siblings' @ [150:12] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [150:12] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'withItself' @ [150:34] ==> value-parameter withItself: Boolean = ... defined in org.jetbrains.kotlin.psi.psiUtil.getPrevSiblingIgnoringWhitespaceAndComments[ValueParameterDescriptorImpl]
 
@@ -321,7 +319,7 @@ Inferred types:
 
 'getNextSiblingOfType' @ [153:77] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getNextSiblingOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(T..T?)>): T? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [153:98] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.nextSiblingOfSameType[ReceiverParameterDescriptorImpl]
 
@@ -331,7 +329,7 @@ Inferred types:
 
 'getPrevSiblingOfType' @ [155:77] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getPrevSiblingOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(T..T?)>): T? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [155:98] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.prevSiblingOfSameType[ReceiverParameterDescriptorImpl]
 
@@ -443,7 +441,7 @@ Inferred types:
 
 'first' @ [186:26] ==> public final val first: PsiElement? defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[PropertyDescriptorImpl]
 
-'siblings' @ [186:32] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [186:32] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [186:43] ==> public inline fun <T> Sequence<PsiElement>.firstOrNull(predicate: (PsiElement) -> Boolean): PsiElement? defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -453,7 +451,7 @@ Inferred types:
 
 'last' @ [186:81] ==> public final val last: PsiElement? defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[PropertyDescriptorImpl]
 
-'siblings' @ [186:88] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [186:88] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [186:114] ==> public inline fun <T> Sequence<PsiElement>.firstOrNull(predicate: (PsiElement) -> Boolean): PsiElement? defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -939,7 +937,7 @@ Inferred types:
 
 'createSmartPsiElementPointer' @ [377:50] ==> @NotNull public abstract fun <E : (PsiElement..PsiElement?)> createSmartPsiElementPointer(@NotNull p0: E): SmartPsiElementPointer<(E..E?)> defined in com.intellij.psi.SmartPointerManager[JavaMethodDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> E
+    <E : (PsiElement..PsiElement?)> -> (E..E?)
 
 'this' @ [377:79] ==> <this> defined in org.jetbrains.kotlin.psi.psiUtil.createSmartPointer[ReceiverParameterDescriptorImpl]
 

@@ -10,16 +10,12 @@ Inferred types:
     <A> -> String
     <B> -> BitwiseOperator
 
-'UastBinaryOperator' @ [35:25] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'BITWISE_OR' @ [35:44] ==> @field:JvmField public final val BITWISE_OR: UastBinaryOperator.BitwiseOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'to' @ [36:17] ==> public infix fun <A, B> String.to(that: UastBinaryOperator.BitwiseOperator): Pair<String, UastBinaryOperator.BitwiseOperator> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> BitwiseOperator
-
-'UastBinaryOperator' @ [36:26] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'BITWISE_AND' @ [36:45] ==> @field:JvmField public final val BITWISE_AND: UastBinaryOperator.BitwiseOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
@@ -28,13 +24,11 @@ Inferred types:
     <A> -> String
     <B> -> BitwiseOperator
 
-'UastBinaryOperator' @ [37:26] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'BITWISE_XOR' @ [37:45] ==> @field:JvmField public final val BITWISE_XOR: UastBinaryOperator.BitwiseOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
-'lz' @ [41:33] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [41:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [41:38] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -46,9 +40,9 @@ Inferred types:
 
 'this' @ [41:79] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUBinaryExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [42:34] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [42:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [42:39] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -123,145 +117,97 @@ Inferred types:
 
 'EQ' @ [50:18] ==> public final val EQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [50:24] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'ASSIGN' @ [50:43] ==> @field:JvmField public final val ASSIGN: UastBinaryOperator.AssignOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'PLUS' @ [51:18] ==> public final val PLUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastBinaryOperator' @ [51:26] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'PLUS' @ [51:45] ==> @field:JvmField public final val PLUS: UastBinaryOperator.ArithmeticOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'MINUS' @ [52:18] ==> public final val MINUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [52:27] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'MINUS' @ [52:46] ==> @field:JvmField public final val MINUS: UastBinaryOperator.ArithmeticOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'MUL' @ [53:18] ==> public final val MUL: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastBinaryOperator' @ [53:25] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'MULTIPLY' @ [53:44] ==> @field:JvmField public final val MULTIPLY: UastBinaryOperator.ArithmeticOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'DIV' @ [54:18] ==> public final val DIV: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [54:25] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'DIV' @ [54:44] ==> @field:JvmField public final val DIV: UastBinaryOperator.ArithmeticOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'PERC' @ [55:18] ==> public final val PERC: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastBinaryOperator' @ [55:26] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'MOD' @ [55:45] ==> @field:JvmField public final val MOD: UastBinaryOperator.ArithmeticOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'OROR' @ [56:18] ==> public final val OROR: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [56:26] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'LOGICAL_OR' @ [56:45] ==> @field:JvmField public final val LOGICAL_OR: UastBinaryOperator.LogicalOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'ANDAND' @ [57:18] ==> public final val ANDAND: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastBinaryOperator' @ [57:28] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'LOGICAL_AND' @ [57:47] ==> @field:JvmField public final val LOGICAL_AND: UastBinaryOperator.LogicalOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'EQEQ' @ [58:18] ==> public final val EQEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [58:26] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'EQUALS' @ [58:45] ==> @field:JvmField public final val EQUALS: UastBinaryOperator.ComparisonOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'EXCLEQ' @ [59:18] ==> public final val EXCLEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastBinaryOperator' @ [59:28] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'NOT_EQUALS' @ [59:47] ==> @field:JvmField public final val NOT_EQUALS: UastBinaryOperator.ComparisonOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'EQEQEQ' @ [60:18] ==> public final val EQEQEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [60:28] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'IDENTITY_EQUALS' @ [60:47] ==> @field:JvmField public final val IDENTITY_EQUALS: UastBinaryOperator.ComparisonOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'EXCLEQEQEQ' @ [61:18] ==> public final val EXCLEQEQEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastBinaryOperator' @ [61:32] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'IDENTITY_NOT_EQUALS' @ [61:51] ==> @field:JvmField public final val IDENTITY_NOT_EQUALS: UastBinaryOperator.ComparisonOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'GT' @ [62:18] ==> public final val GT: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [62:24] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'GREATER' @ [62:43] ==> @field:JvmField public final val GREATER: UastBinaryOperator.ComparisonOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'GTEQ' @ [63:18] ==> public final val GTEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastBinaryOperator' @ [63:26] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'GREATER_OR_EQUALS' @ [63:45] ==> @field:JvmField public final val GREATER_OR_EQUALS: UastBinaryOperator.ComparisonOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'LT' @ [64:18] ==> public final val LT: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [64:24] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'LESS' @ [64:43] ==> @field:JvmField public final val LESS: UastBinaryOperator.ComparisonOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'LTEQ' @ [65:18] ==> public final val LTEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastBinaryOperator' @ [65:26] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'LESS_OR_EQUALS' @ [65:45] ==> @field:JvmField public final val LESS_OR_EQUALS: UastBinaryOperator.ComparisonOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'PLUSEQ' @ [66:18] ==> public final val PLUSEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [66:28] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'PLUS_ASSIGN' @ [66:47] ==> @field:JvmField public final val PLUS_ASSIGN: UastBinaryOperator.AssignOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'MINUSEQ' @ [67:18] ==> public final val MINUSEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastBinaryOperator' @ [67:29] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'MINUS_ASSIGN' @ [67:48] ==> @field:JvmField public final val MINUS_ASSIGN: UastBinaryOperator.AssignOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'MULTEQ' @ [68:18] ==> public final val MULTEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [68:28] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'MULTIPLY_ASSIGN' @ [68:47] ==> @field:JvmField public final val MULTIPLY_ASSIGN: UastBinaryOperator.AssignOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'DIVEQ' @ [69:18] ==> public final val DIVEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastBinaryOperator' @ [69:27] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
 
 'DIVIDE_ASSIGN' @ [69:46] ==> @field:JvmField public final val DIVIDE_ASSIGN: UastBinaryOperator.AssignOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'PERCEQ' @ [70:18] ==> public final val PERCEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryOperator' @ [70:28] ==> public companion object defined in org.jetbrains.uast.UastBinaryOperator[FakeCallableDescriptorForObject]
-
 'REMAINDER_ASSIGN' @ [70:47] ==> @field:JvmField public final val REMAINDER_ASSIGN: UastBinaryOperator.AssignOperator defined in org.jetbrains.uast.UastBinaryOperator.Companion[DeserializedPropertyDescriptor]
 
 'IN_KEYWORD' @ [71:18] ==> public final val IN_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'KotlinBinaryOperators' @ [71:32] ==> public object KotlinBinaryOperators defined in org.jetbrains.uast.kotlin in file KotlinBinaryOperators.kt[FakeCallableDescriptorForObject]
 
 'IN' @ [71:54] ==> @JvmField public final val IN: UastBinaryOperator defined in org.jetbrains.uast.kotlin.KotlinBinaryOperators[PropertyDescriptorImpl]
 
 'NOT_IN' @ [72:18] ==> public final val NOT_IN: (KtKeywordToken..KtKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'KotlinBinaryOperators' @ [72:28] ==> public object KotlinBinaryOperators defined in org.jetbrains.uast.kotlin in file KotlinBinaryOperators.kt[FakeCallableDescriptorForObject]
-
 'NOT_IN' @ [72:50] ==> @JvmField public final val NOT_IN: UastBinaryOperator defined in org.jetbrains.uast.kotlin.KotlinBinaryOperators[PropertyDescriptorImpl]
 
 'RANGE' @ [73:18] ==> public final val RANGE: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'KotlinBinaryOperators' @ [73:27] ==> public object KotlinBinaryOperators defined in org.jetbrains.uast.kotlin in file KotlinBinaryOperators.kt[FakeCallableDescriptorForObject]
 
 'RANGE_TO' @ [73:49] ==> @JvmField public final val RANGE_TO: UastBinaryOperator defined in org.jetbrains.uast.kotlin.KotlinBinaryOperators[PropertyDescriptorImpl]
 
@@ -294,7 +240,7 @@ Inferred types:
 
 'resultingDescriptor' @ [78:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'other' @ [78:109] ==> val other: UastBinaryOperator defined in org.jetbrains.uast.kotlin.KotlinUBinaryExpression.operator.<anonymous>[LocalVariableDescriptor]
 

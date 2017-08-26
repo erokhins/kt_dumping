@@ -274,8 +274,6 @@ Inferred types:
 
 'SubstitutionFilteringInternalResolveAnnotations' @ [147:25] ==> public constructor SubstitutionFilteringInternalResolveAnnotations(substitution: TypeSubstitution) defined in org.jetbrains.kotlin.resolve.calls.inference.SubstitutionFilteringInternalResolveAnnotations[ClassConstructorDescriptorImpl]
 
-'TypeConstructorSubstitution' @ [148:33] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
-
 'createByConstructorsMap' @ [148:61] ==> @JvmStatic @JvmOverloads public final fun createByConstructorsMap(map: Map<TypeConstructor, TypeProjection>, approximateCapturedTypes: Boolean = ...): TypeConstructorSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[DeserializedSimpleFunctionDescriptor]
 
 'parameterToInferredValueMap' @ [148:85] ==> val parameterToInferredValueMap: Map<TypeConstructor, TypeProjection> defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemImpl.getSubstitutor[LocalVariableDescriptor]

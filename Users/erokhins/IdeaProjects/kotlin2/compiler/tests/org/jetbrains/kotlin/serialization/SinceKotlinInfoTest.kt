@@ -24,8 +24,6 @@ Inferred types:
 
 'analyze' @ [53:42] ==> @JvmStatic public final fun analyze(environment: KotlinCoreEnvironment): AnalysisResult defined in org.jetbrains.kotlin.resolve.lazy.JvmResolveUtil[DeserializedSimpleFunctionDescriptor]
 
-'KotlinCoreEnvironment' @ [54:17] ==> public companion object defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[FakeCallableDescriptorForObject]
-
 'createForTests' @ [54:39] ==> @JvmStatic public final fun createForTests(parentDisposable: Disposable, configuration: CompilerConfiguration, extensionConfigs: EnvironmentConfigFiles): KotlinCoreEnvironment defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.Companion[DeserializedSimpleFunctionDescriptor]
 
 'testRootDisposable' @ [55:25] ==> public final val SinceKotlinInfoTest.testRootDisposable: Disposable[MyPropertyDescriptor]
@@ -126,9 +124,9 @@ Inferred types:
                     }
                     scope.getDescriptorsFiltered(nameFilter = { it.asString() == name })
                 }
-            }' @ [83:31] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Collection<DeclarationDescriptor>, entry1: Collection<DeclarationDescriptor>): Collection<DeclarationDescriptor>[SimpleFunctionDescriptorImpl]
+            }' @ [83:31] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Collection<(DeclarationDescriptor..DeclarationDescriptor?)>, entry1: Collection<(DeclarationDescriptor..DeclarationDescriptor?)>): Collection<(DeclarationDescriptor..DeclarationDescriptor?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Collection<DeclarationDescriptor>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Collection<(org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>
 
 'name' @ [83:37] ==> val name: String defined in org.jetbrains.kotlin.serialization.SinceKotlinInfoTest.findUnambiguousDescriptorByFqName[LocalVariableDescriptor]
 
@@ -168,7 +166,7 @@ Inferred types:
 
 'name' @ [91:82] ==> val name: String defined in org.jetbrains.kotlin.serialization.SinceKotlinInfoTest.findUnambiguousDescriptorByFqName[LocalVariableDescriptor]
 
-'descriptors' @ [94:17] ==> val descriptors: Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.serialization.SinceKotlinInfoTest.findUnambiguousDescriptorByFqName[LocalVariableDescriptor]
+'descriptors' @ [94:17] ==> val descriptors: Collection<(DeclarationDescriptor..DeclarationDescriptor?)> defined in org.jetbrains.kotlin.serialization.SinceKotlinInfoTest.findUnambiguousDescriptorByFqName[LocalVariableDescriptor]
 
 'isEmpty' @ [94:29] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.Collection[DeserializedSimpleFunctionDescriptor]
 
@@ -180,11 +178,11 @@ Inferred types:
 
 'descriptor' @ [95:13] ==> var descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.serialization.SinceKotlinInfoTest.findUnambiguousDescriptorByFqName[LocalVariableDescriptor]
 
-'descriptors' @ [95:26] ==> val descriptors: Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.serialization.SinceKotlinInfoTest.findUnambiguousDescriptorByFqName[LocalVariableDescriptor]
+'descriptors' @ [95:26] ==> val descriptors: Collection<(DeclarationDescriptor..DeclarationDescriptor?)> defined in org.jetbrains.kotlin.serialization.SinceKotlinInfoTest.findUnambiguousDescriptorByFqName[LocalVariableDescriptor]
 
-'singleOrNull' @ [95:38] ==> public fun <T> Iterable<DeclarationDescriptor>.singleOrNull(): DeclarationDescriptor? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'singleOrNull' @ [95:38] ==> public fun <T> Iterable<(DeclarationDescriptor..DeclarationDescriptor?)>.singleOrNull(): DeclarationDescriptor? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> DeclarationDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'AssertionError' @ [95:62] ==> public final fun <init>(p0: (Any..Any?)): AssertionError /* = AssertionError */ defined in kotlin.AssertionError[TypeAliasConstructorDescriptorImpl]
 
@@ -195,8 +193,6 @@ Inferred types:
 'descriptor' @ [97:16] ==> var descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.serialization.SinceKotlinInfoTest.findUnambiguousDescriptorByFqName[LocalVariableDescriptor]
 
 'doTest' @ [101:9] ==> public final fun doTest(fileName: String, expectedSinceKotlinInfoVersion: SinceKotlinInfo.Version, expectedLevel: DeprecationLevel, expectedMessage: String?, expectedErrorCode: Int?, vararg fqNames: String): Unit defined in org.jetbrains.kotlin.serialization.SinceKotlinInfoTest[SimpleFunctionDescriptorImpl]
-
-'SinceKotlinInfo' @ [102:16] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfo[FakeCallableDescriptorForObject]
 
 'Version' @ [102:32] ==> public constructor Version(major: Int, minor: Int, patch: Int = ...) defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfo.Version[DeserializedClassConstructorDescriptor]
 

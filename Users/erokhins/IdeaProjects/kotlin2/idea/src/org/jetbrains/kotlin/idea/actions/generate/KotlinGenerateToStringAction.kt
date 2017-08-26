@@ -1,4 +1,4 @@
-'findDeclaredFunction' @ [48:12] ==> public tailrec fun ClassDescriptor.findDeclaredFunction(name: String, checkSuperClasses: Boolean, filter: (FunctionDescriptor) -> Boolean): FunctionDescriptor? defined in org.jetbrains.kotlin.idea.actions.generate[SimpleFunctionDescriptorImpl]
+'findDeclaredFunction' @ [48:12] ==> public tailrec fun ClassDescriptor.findDeclaredFunction(name: String, checkSuperClasses: Boolean, filter: (FunctionDescriptor) -> Boolean): FunctionDescriptor? defined in org.jetbrains.kotlin.idea.actions.generate in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'checkSupers' @ [48:45] ==> value-parameter checkSupers: Boolean defined in org.jetbrains.kotlin.idea.actions.generate.findDeclaredToString[ValueParameterDescriptorImpl]
 
@@ -26,14 +26,11 @@ Inferred types:
 Inferred types:
     <T> -> KotlinGenerateToStringAction
 
-'UserDataProperty' @ [55:52] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<(KotlinGenerateToStringAction.Info) -> KotlinGenerateToStringAction.Info>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> KtClass
-    <T : Any> -> Function1<Info, Info>
+'getValue' @ [55:52] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [55:73] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<((KotlinGenerateToStringAction.Info) -> KotlinGenerateToStringAction.Info..((KotlinGenerateToStringAction.Info) -> KotlinGenerateToStringAction.Info)?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<Info, Info>
+    <T : (Any..Any?)> -> ((org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateToStringAction.Info) -> org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateToStringAction.Info..((org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateToStringAction.Info) -> org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateToStringAction.Info)?)
 
 '' @ [65:24] ==> private constructor Generator(text: String) defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateToStringAction.Generator[ClassConstructorDescriptorImpl]
 
@@ -268,8 +265,8 @@ Inferred types:
 
 'get' @ [136:39] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [136:58] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -286,7 +283,7 @@ Inferred types:
 
 '!' @ [139:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'confirmMemberRewrite' @ [139:18] ==> public fun confirmMemberRewrite(targetClass: KtClass, vararg descriptors: FunctionDescriptor): Boolean defined in org.jetbrains.kotlin.idea.actions.generate[SimpleFunctionDescriptorImpl]
+'confirmMemberRewrite' @ [139:18] ==> public fun confirmMemberRewrite(targetClass: KtClass, vararg descriptors: FunctionDescriptor): Boolean defined in org.jetbrains.kotlin.idea.actions.generate in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [139:39] ==> value-parameter klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateToStringAction.prepareMembersInfo[ValueParameterDescriptorImpl]
 
@@ -310,7 +307,7 @@ Inferred types:
 
 'e' @ [146:31] ==> val e: IncorrectOperationException defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateToStringAction.prepareMembersInfo.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'getPropertiesToUseInGeneratedMember' @ [151:26] ==> public fun getPropertiesToUseInGeneratedMember(classOrObject: KtClassOrObject): List<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.actions.generate[SimpleFunctionDescriptorImpl]
+'getPropertiesToUseInGeneratedMember' @ [151:26] ==> public fun getPropertiesToUseInGeneratedMember(classOrObject: KtClassOrObject): List<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.actions.generate in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [151:62] ==> value-parameter klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateToStringAction.prepareMembersInfo[ValueParameterDescriptorImpl]
 

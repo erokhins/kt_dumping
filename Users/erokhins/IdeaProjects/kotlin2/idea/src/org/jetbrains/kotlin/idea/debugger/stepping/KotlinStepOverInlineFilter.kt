@@ -1,6 +1,6 @@
 '-' @ [32:40] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'ktLocationInfo' @ [36:43] ==> public fun ktLocationInfo(location: Location, isDexDebug: Boolean, project: Project, preferInlined: Boolean = ..., locationFile: KtFile? = ...): Pair<Int, KtFile?> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'ktLocationInfo' @ [36:43] ==> public fun ktLocationInfo(location: Location, isDexDebug: Boolean, project: Project, preferInlined: Boolean = ..., locationFile: KtFile? = ...): Pair<Int, KtFile?> defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [36:58] ==> <this> defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinStepOverInlineFilter.ktLineNumber[ReceiverParameterDescriptorImpl]
 
@@ -50,7 +50,7 @@
 
 'lineNumber' @ [47:40] ==> public final val lineNumber: Int defined in org.jetbrains.kotlin.idea.debugger.stepping.StepOverFilterData[PropertyDescriptorImpl]
 
-'getInlineRangeLocalVariables' @ [50:38] ==> public fun getInlineRangeLocalVariables(stackFrame: StackFrameProxyImpl): List<LocalVariable> defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getInlineRangeLocalVariables' @ [50:38] ==> public fun getInlineRangeLocalVariables(stackFrame: StackFrameProxyImpl): List<LocalVariable> defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'frameProxy' @ [50:67] ==> val frameProxy: StackFrameProxyImpl defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinStepOverInlineFilter.locationMatches[LocalVariableDescriptor]
 

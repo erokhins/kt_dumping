@@ -28,7 +28,9 @@ Inferred types:
 
 'module' @ [55:48] ==> val module: Module defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [57:19] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'?:' @ [57:19] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PomFile?, right: PomFile): PomFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PomFile
 
 'forFileOrNull' @ [57:27] ==> public final fun forFileOrNull(xmlFile: XmlFile): PomFile? defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
@@ -52,7 +54,7 @@ Inferred types:
 
 'it' @ [62:27] ==> value-parameter it: (MavenPlugin..MavenPlugin?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement.<anonymous>[ValueParameterDescriptorImpl]
 
-'isKotlinMavenPlugin' @ [62:30] ==> private fun MavenPlugin.isKotlinMavenPlugin(): Boolean defined in org.jetbrains.kotlin.idea.maven.inspections[SimpleFunctionDescriptorImpl]
+'isKotlinMavenPlugin' @ [62:30] ==> private fun MavenPlugin.isKotlinMavenPlugin(): Boolean defined in org.jetbrains.kotlin.idea.maven.inspections in file KotlinMavenPluginPhaseInspection.kt[SimpleFunctionDescriptorImpl]
 
 'flatMap' @ [63:18] ==> public inline fun <T, R> Iterable<(MavenPlugin..MavenPlugin?)>.flatMap(transform: ((MavenPlugin..MavenPlugin?)) -> Iterable<(MavenPlugin.Execution..MavenPlugin.Execution?)>): List<(MavenPlugin.Execution..MavenPlugin.Execution?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -79,25 +81,25 @@ Inferred types:
 
 'goals' @ [64:77] ==> public final val MavenPlugin.Execution.goals: (MutableList<(String..String?)>..List<(String..String?)>?)[MyPropertyDescriptor]
 
-'PomFile' @ [65:31] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'in' @ [65:31] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'Compile' @ [65:51] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'allGoalsSet' @ [65:62] ==> val allGoalsSet: Set<String> defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [65:77] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'in' @ [65:77] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'TestCompile' @ [65:97] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'allGoalsSet' @ [65:112] ==> val allGoalsSet: Set<String> defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [66:30] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'in' @ [66:30] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'Js' @ [66:50] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'allGoalsSet' @ [66:56] ==> val allGoalsSet: Set<String> defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [66:71] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'in' @ [66:71] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'TestJs' @ [66:91] ==> public final val TestJs: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -173,13 +175,13 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.Any..kotlin.Any?)
 
-'PomFile' @ [71:17] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'!in' @ [71:17] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'Compile' @ [71:37] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'allGoalsSet' @ [71:49] ==> val allGoalsSet: Set<String> defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [71:64] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'!in' @ [71:64] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'Js' @ [71:84] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -213,8 +215,6 @@ Inferred types:
 
 'kotlinPlugin' @ [73:79] ==> val kotlinPlugin: (MavenDomPlugin..MavenDomPlugin?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [73:93] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [73:113] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'arrayOf' @ [76:21] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: KotlinMavenPluginPhaseInspection.AddExecutionLocalFix): Array<KotlinMavenPluginPhaseInspection.AddExecutionLocalFix> defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -233,8 +233,6 @@ Inferred types:
 
 'kotlinPlugin' @ [76:79] ==> val kotlinPlugin: (MavenDomPlugin..MavenDomPlugin?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [76:93] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [76:113] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'AddExecutionLocalFix' @ [77:29] ==> public constructor AddExecutionLocalFix(file: XmlFile, module: Module, kotlinPlugin: MavenDomPlugin, goal: String) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.AddExecutionLocalFix[ClassConstructorDescriptorImpl]
@@ -249,8 +247,6 @@ Inferred types:
 
 'kotlinPlugin' @ [77:79] ==> val kotlinPlugin: (MavenDomPlugin..MavenDomPlugin?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [77:93] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Js' @ [77:113] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'holder' @ [80:17] ==> value-parameter holder: DomElementAnnotationHolder? defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[ValueParameterDescriptorImpl]
@@ -263,7 +259,7 @@ Inferred types:
 
 'createStableCopy' @ [80:62] ==> public abstract fun <T : (DomElement..DomElement?)> createStableCopy(): (DomElement..DomElement?) defined in com.intellij.util.xml.GenericDomValue[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> DomElement
+    <T : (DomElement..DomElement?)> -> (com.intellij.util.xml.DomElement..com.intellij.util.xml.DomElement?)
 
 'WARNING' @ [81:56] ==> public final val WARNING: (HighlightSeverity..HighlightSeverity?) defined in com.intellij.lang.annotation.HighlightSeverity[JavaPropertyDescriptor]
 
@@ -277,13 +273,9 @@ Inferred types:
 
 'kotlinPlugin' @ [87:40] ==> val kotlinPlugin: (MavenDomPlugin..MavenDomPlugin?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [87:54] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [87:74] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
-'notAtPhase' @ [87:83] ==> private fun List<MavenDomPluginExecution>.notAtPhase(phase: String): List<MavenDomPluginExecution> defined in org.jetbrains.kotlin.idea.maven.inspections[SimpleFunctionDescriptorImpl]
-
-'PomFile' @ [87:94] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'notAtPhase' @ [87:83] ==> private fun List<MavenDomPluginExecution>.notAtPhase(phase: String): List<MavenDomPluginExecution> defined in org.jetbrains.kotlin.idea.maven.inspections in file KotlinMavenPluginPhaseInspection.kt[SimpleFunctionDescriptorImpl]
 
 'ProcessSources' @ [87:116] ==> public final val ProcessSources: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
 
@@ -371,15 +363,13 @@ Inferred types:
 
 'createStableCopy' @ [101:69] ==> public abstract fun <T : (DomElement..DomElement?)> createStableCopy(): (DomElement..DomElement?) defined in com.intellij.util.xml.GenericDomValue[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> DomElement
+    <T : (DomElement..DomElement?)> -> (com.intellij.util.xml.DomElement..com.intellij.util.xml.DomElement?)
 
 'WARNING' @ [102:68] ==> public final val WARNING: (HighlightSeverity..HighlightSeverity?) defined in com.intellij.lang.annotation.HighlightSeverity[JavaPropertyDescriptor]
 
 'FixExecutionPhaseLocalFix' @ [104:50] ==> public constructor FixExecutionPhaseLocalFix(execution: MavenDomPluginExecution, newPhase: String) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.FixExecutionPhaseLocalFix[ClassConstructorDescriptorImpl]
 
 'badExecution' @ [104:76] ==> value-parameter badExecution: MavenDomPluginExecution defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement.<anonymous>[ValueParameterDescriptorImpl]
-
-'PomFile' @ [104:90] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'ProcessSources' @ [104:112] ==> public final val ProcessSources: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
 
@@ -401,11 +391,7 @@ Inferred types:
 
 'kotlinPlugin' @ [109:40] ==> val kotlinPlugin: (MavenDomPlugin..MavenDomPlugin?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [109:54] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Js' @ [109:74] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
-
-'PomFile' @ [109:78] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'TestJs' @ [109:98] ==> public final val TestJs: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -429,19 +415,17 @@ Inferred types:
 
 'it' @ [110:79] ==> value-parameter it: (MavenDomGoal..MavenDomGoal?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'isJsGoal' @ [110:82] ==> private fun MavenDomGoal.isJsGoal(): Boolean defined in org.jetbrains.kotlin.idea.maven.inspections[SimpleFunctionDescriptorImpl]
+'isJsGoal' @ [110:82] ==> private fun MavenDomGoal.isJsGoal(): Boolean defined in org.jetbrains.kotlin.idea.maven.inspections in file KotlinMavenPluginPhaseInspection.kt[SimpleFunctionDescriptorImpl]
 
 'createStableCopy' @ [110:95] ==> public abstract fun <T : (DomElement..DomElement?)> createStableCopy(): (DomElement..DomElement?) defined in org.jetbrains.idea.maven.dom.model.MavenDomGoal[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> DomElement
+    <T : (DomElement..DomElement?)> -> (com.intellij.util.xml.DomElement..com.intellij.util.xml.DomElement?)
 
 'WARNING' @ [111:64] ==> public final val WARNING: (HighlightSeverity..HighlightSeverity?) defined in com.intellij.lang.annotation.HighlightSeverity[JavaPropertyDescriptor]
 
 'mavenProject' @ [116:42] ==> val mavenProject: MavenProject defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
 'findDependencies' @ [116:55] ==> @NotNull public open fun findDependencies(@Nullable p0: String?, @Nullable p1: String?): (MutableList<(MavenArtifact..MavenArtifact?)>..List<(MavenArtifact..MavenArtifact?)>) defined in org.jetbrains.idea.maven.project.MavenProject[JavaMethodDescriptor]
-
-'KotlinMavenConfigurator' @ [116:72] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'GROUP_ID' @ [116:96] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -450,8 +434,6 @@ Inferred types:
 'mavenProject' @ [117:38] ==> val mavenProject: MavenProject defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement[LocalVariableDescriptor]
 
 'findDependencies' @ [117:51] ==> @NotNull public open fun findDependencies(@Nullable p0: String?, @Nullable p1: String?): (MutableList<(MavenArtifact..MavenArtifact?)>..List<(MavenArtifact..MavenArtifact?)>) defined in org.jetbrains.idea.maven.project.MavenProject[JavaMethodDescriptor]
-
-'KotlinMavenConfigurator' @ [117:68] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'GROUP_ID' @ [117:92] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -473,7 +455,7 @@ Inferred types:
 
 'createStableCopy' @ [120:66] ==> public abstract fun <T : (DomElement..DomElement?)> createStableCopy(): (DomElement..DomElement?) defined in com.intellij.util.xml.GenericDomValue[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> DomElement
+    <T : (DomElement..DomElement?)> -> (com.intellij.util.xml.DomElement..com.intellij.util.xml.DomElement?)
 
 'WARNING' @ [121:60] ==> public final val WARNING: (HighlightSeverity..HighlightSeverity?) defined in com.intellij.lang.annotation.HighlightSeverity[JavaPropertyDescriptor]
 
@@ -513,7 +495,7 @@ Inferred types:
 
 'createStableCopy' @ [126:66] ==> public abstract fun <T : (DomElement..DomElement?)> createStableCopy(): (DomElement..DomElement?) defined in com.intellij.util.xml.GenericDomValue[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> DomElement
+    <T : (DomElement..DomElement?)> -> (com.intellij.util.xml.DomElement..com.intellij.util.xml.DomElement?)
 
 'WARNING' @ [127:60] ==> public final val WARNING: (HighlightSeverity..HighlightSeverity?) defined in com.intellij.lang.annotation.HighlightSeverity[JavaPropertyDescriptor]
 
@@ -542,8 +524,6 @@ Inferred types:
 'findDependencies' @ [134:38] ==> public final fun findDependencies(artifact: MavenId, scope: MavenArtifactScope? = ...): List<(MavenDomDependency..MavenDomDependency?)> defined in org.jetbrains.kotlin.idea.maven.PomFile[SimpleFunctionDescriptorImpl]
 
 'MavenId' @ [134:55] ==> public constructor MavenId(@Nullable p0: String?, @Nullable p1: String?, @Nullable p2: String?) defined in org.jetbrains.idea.maven.model.MavenId[JavaClassConstructorDescriptor]
-
-'KotlinMavenConfigurator' @ [134:63] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'GROUP_ID' @ [134:87] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -575,7 +555,7 @@ Inferred types:
 
 'createStableCopy' @ [137:53] ==> public abstract fun <T : (DomElement..DomElement?)> createStableCopy(): (DomElement..DomElement?) defined in com.intellij.util.xml.GenericDomValue[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> DomElement
+    <T : (DomElement..DomElement?)> -> (com.intellij.util.xml.DomElement..com.intellij.util.xml.DomElement?)
 
 'WARNING' @ [138:56] ==> public final val WARNING: (HighlightSeverity..HighlightSeverity?) defined in com.intellij.lang.annotation.HighlightSeverity[JavaPropertyDescriptor]
 
@@ -593,8 +573,6 @@ Inferred types:
 Inferred types:
     <T : (DomElement..DomElement?)> -> MavenDomProjectModel
 
-'PomFile' @ [140:100] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [140:120] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'dep' @ [140:129] ==> value-parameter dep: (MavenDomDependency..MavenDomDependency?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement.<anonymous>[ValueParameterDescriptorImpl]
@@ -610,8 +588,6 @@ Inferred types:
 'findDependencies' @ [144:40] ==> public final fun findDependencies(artifact: MavenId, scope: MavenArtifactScope? = ...): List<(MavenDomDependency..MavenDomDependency?)> defined in org.jetbrains.kotlin.idea.maven.PomFile[SimpleFunctionDescriptorImpl]
 
 'MavenId' @ [144:57] ==> public constructor MavenId(@Nullable p0: String?, @Nullable p1: String?, @Nullable p2: String?) defined in org.jetbrains.idea.maven.model.MavenId[JavaClassConstructorDescriptor]
-
-'KotlinMavenConfigurator' @ [144:65] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'GROUP_ID' @ [144:89] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -643,7 +619,7 @@ Inferred types:
 
 'createStableCopy' @ [147:53] ==> public abstract fun <T : (DomElement..DomElement?)> createStableCopy(): (DomElement..DomElement?) defined in com.intellij.util.xml.GenericDomValue[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> DomElement
+    <T : (DomElement..DomElement?)> -> (com.intellij.util.xml.DomElement..com.intellij.util.xml.DomElement?)
 
 'WARNING' @ [148:56] ==> public final val WARNING: (HighlightSeverity..HighlightSeverity?) defined in com.intellij.lang.annotation.HighlightSeverity[JavaPropertyDescriptor]
 
@@ -660,8 +636,6 @@ Inferred types:
 'file' @ [150:94] ==> public final val <T : (DomElement..DomElement?)> DomFileElement<MavenDomProjectModel>.file: XmlFile[MyPropertyDescriptor]
 Inferred types:
     <T : (DomElement..DomElement?)> -> MavenDomProjectModel
-
-'PomFile' @ [150:100] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'Js' @ [150:120] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -695,15 +669,11 @@ Inferred types:
 
 'rawText' @ [155:37] ==> public final val MavenDomGoal.rawText: (String..String?)[MyPropertyDescriptor]
 
-'PomFile' @ [155:48] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [155:68] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'it' @ [155:79] ==> value-parameter it: (MavenDomGoal..MavenDomGoal?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'rawText' @ [155:82] ==> public final val MavenDomGoal.rawText: (String..String?)[MyPropertyDescriptor]
-
-'PomFile' @ [155:93] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'Js' @ [155:113] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -721,15 +691,11 @@ Inferred types:
 
 'rawText' @ [156:40] ==> public final val MavenDomGoal.rawText: (String..String?)[MyPropertyDescriptor]
 
-'PomFile' @ [156:51] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'TestCompile' @ [156:71] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'it' @ [156:86] ==> value-parameter it: (MavenDomGoal..MavenDomGoal?) defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.checkFileElement.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'rawText' @ [156:89] ==> public final val MavenDomGoal.rawText: (String..String?)[MyPropertyDescriptor]
-
-'PomFile' @ [156:100] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'TestJs' @ [156:120] ==> public final val TestJs: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -747,7 +713,7 @@ Inferred types:
 
 'createStableCopy' @ [158:53] ==> public abstract fun <T : (DomElement..DomElement?)> createStableCopy(): (DomElement..DomElement?) defined in org.jetbrains.idea.maven.dom.model.MavenDomGoals[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> DomElement
+    <T : (DomElement..DomElement?)> -> (com.intellij.util.xml.DomElement..com.intellij.util.xml.DomElement?)
 
 'WEAK_WARNING' @ [159:52] ==> public final val WEAK_WARNING: (HighlightSeverity..HighlightSeverity?) defined in com.intellij.lang.annotation.HighlightSeverity[JavaPropertyDescriptor]
 
@@ -766,8 +732,6 @@ Inferred types:
 'kotlinPlugin' @ [170:69] ==> public final val kotlinPlugin: MavenDomPlugin defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.AddExecutionLocalFix[PropertyDescriptorImpl]
 
 'goal' @ [170:83] ==> public final val goal: String defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.AddExecutionLocalFix[PropertyDescriptorImpl]
-
-'PomFile' @ [170:89] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'getPhase' @ [170:97] ==> @Deprecated public final fun getPhase(hasJavaFiles: Boolean, isTest: Boolean): String defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
@@ -819,8 +783,6 @@ Inferred types:
 
 'MavenId' @ [198:59] ==> public constructor MavenId(@Nullable p0: String?, @Nullable p1: String?, @Nullable p2: String?) defined in org.jetbrains.idea.maven.model.MavenId[JavaClassConstructorDescriptor]
 
-'KotlinMavenConfigurator' @ [198:67] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [198:91] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
 'id' @ [198:101] ==> public final val id: String defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.FixAddStdlibLocalFix[PropertyDescriptorImpl]
@@ -856,8 +818,6 @@ Inferred types:
 
 'plugin' @ [209:48] ==> val plugin: MavenDomPlugin defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.ConfigurePluginExecutionLocalFix.applyFix.<anonymous>[LocalVariableDescriptor]
 
-'PomFile' @ [209:67] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'getPhase' @ [209:75] ==> @Deprecated public final fun getPhase(hasJavaFiles: Boolean, isTest: Boolean): String defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
 'module' @ [209:84] ==> public final val module: Module defined in org.jetbrains.kotlin.idea.maven.inspections.KotlinMavenPluginPhaseInspection.ConfigurePluginExecutionLocalFix[PropertyDescriptorImpl]
@@ -880,25 +840,17 @@ Inferred types:
 
 'groupId' @ [219:49] ==> public final val MavenPlugin.groupId: (String..String?)[MyPropertyDescriptor]
 
-'KotlinMavenConfigurator' @ [219:60] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [219:84] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
 'artifactId' @ [220:52] ==> public final val MavenPlugin.artifactId: (String..String?)[MyPropertyDescriptor]
-
-'KotlinMavenConfigurator' @ [220:66] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'MAVEN_PLUGIN_ID' @ [220:90] ==> public final val MAVEN_PLUGIN_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
 'rawText' @ [222:39] ==> public final val MavenDomGoal.rawText: (String..String?)[MyPropertyDescriptor]
 
-'PomFile' @ [222:50] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Js' @ [222:70] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'rawText' @ [222:76] ==> public final val MavenDomGoal.rawText: (String..String?)[MyPropertyDescriptor]
-
-'PomFile' @ [222:87] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'TestJs' @ [222:107] ==> public final val TestJs: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 

@@ -34,7 +34,7 @@
 
 'newArrayList' @ [45:101] ==> @SafeVarargs @CanIgnoreReturnValue @GwtCompatible public open fun <E : (Any..Any?)> newArrayList(vararg p0: (String..String?)): (ArrayList<(String..String?)>..ArrayList<(String..String?)>?) defined in com.google.common.collect.Lists[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'args' @ [45:115] ==> value-parameter vararg args: String defined in org.jetbrains.kotlin.js.test.semantics.AbstractWebDemoExamplesTest.runMainAndCheckOutput[ValueParameterDescriptorImpl]
 
@@ -62,7 +62,7 @@ Inferred types:
 
 'newArrayList' @ [50:109] ==> @SafeVarargs @CanIgnoreReturnValue @GwtCompatible public open fun <E : (Any..Any?)> newArrayList(vararg p0: (String..String?)): (ArrayList<(String..String?)>..ArrayList<(String..String?)>?) defined in com.google.common.collect.Lists[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'args' @ [50:123] ==> value-parameter vararg args: String defined in org.jetbrains.kotlin.js.test.semantics.AbstractWebDemoExamplesTest.runMainAndCheckOutputWithExpectedFile[ValueParameterDescriptorImpl]
 

@@ -34,7 +34,9 @@
 
 'sourcePosition' @ [81:86] ==> public final val DebuggerContextImpl.sourcePosition: (SourcePosition..SourcePosition?)[MyPropertyDescriptor]
 
-'KotlinSourcePosition' @ [88:36] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingCommandProvider.KotlinSourcePosition[FakeCallableDescriptorForObject]
+'?:' @ [88:36] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinSteppingCommandProvider.KotlinSourcePosition?, right: KotlinSteppingCommandProvider.KotlinSourcePosition): KotlinSteppingCommandProvider.KotlinSourcePosition[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinSourcePosition
 
 'create' @ [88:57] ==> public final fun create(sourcePosition: SourcePosition): KotlinSteppingCommandProvider.KotlinSourcePosition? defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingCommandProvider.KotlinSourcePosition.Companion[SimpleFunctionDescriptorImpl]
 
@@ -162,7 +164,7 @@ Inferred types:
 
 'sourcePosition' @ [127:51] ==> public final val sourcePosition: SourcePosition defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingCommandProvider.KotlinSourcePosition[PropertyDescriptorImpl]
 
-'getInlineFunctionCallsIfAny' @ [129:36] ==> private fun getInlineFunctionCallsIfAny(sourcePosition: SourcePosition): List<KtCallExpression> defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getInlineFunctionCallsIfAny' @ [129:36] ==> private fun getInlineFunctionCallsIfAny(sourcePosition: SourcePosition): List<KtCallExpression> defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'sourcePosition' @ [129:64] ==> val sourcePosition: SourcePosition defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingCommandProvider.isSpecialStepOverNeeded[LocalVariableDescriptor]
 
@@ -182,7 +184,7 @@ Inferred types:
 
 'containingFunctionDescriptor' @ [136:33] ==> val containingFunctionDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingCommandProvider.isSpecialStepOverNeeded[LocalVariableDescriptor]
 
-'getInlineArgumentsCallsIfAny' @ [137:45] ==> private fun getInlineArgumentsCallsIfAny(sourcePosition: SourcePosition, declarationDescriptor: DeclarationDescriptor): List<KtCallExpression>? defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getInlineArgumentsCallsIfAny' @ [137:45] ==> private fun getInlineArgumentsCallsIfAny(sourcePosition: SourcePosition, declarationDescriptor: DeclarationDescriptor): List<KtCallExpression>? defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'sourcePosition' @ [137:74] ==> val sourcePosition: SourcePosition defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingCommandProvider.isSpecialStepOverNeeded[LocalVariableDescriptor]
 
@@ -242,7 +244,7 @@ Inferred types:
 
 'line' @ [162:70] ==> public final val SourcePosition.line: Int[MyPropertyDescriptor]
 
-'getInlineFunctionsIfAny' @ [164:31] ==> private fun getInlineFunctionsIfAny(file: KtFile, offset: Int): List<KtNamedFunction> defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getInlineFunctionsIfAny' @ [164:31] ==> private fun getInlineFunctionsIfAny(file: KtFile, offset: Int): List<KtNamedFunction> defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [164:55] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingCommandProvider.getStepOutCommand[LocalVariableDescriptor]
 
@@ -278,11 +280,11 @@ Inferred types:
 
 'textRange' @ [174:46] ==> public final val PsiElement.textRange: (TextRange..TextRange?)[MyPropertyDescriptor]
 
-'getInlineFunctionCallsIfAny' @ [178:31] ==> private fun getInlineFunctionCallsIfAny(sourcePosition: SourcePosition): List<KtCallExpression> defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getInlineFunctionCallsIfAny' @ [178:31] ==> private fun getInlineFunctionCallsIfAny(sourcePosition: SourcePosition): List<KtCallExpression> defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'sourcePosition' @ [178:59] ==> value-parameter sourcePosition: SourcePosition defined in org.jetbrains.kotlin.idea.debugger.stepping.getInlineCallFunctionArgumentsIfAny[ValueParameterDescriptorImpl]
 
-'getInlineArgumentsIfAny' @ [179:12] ==> private fun getInlineArgumentsIfAny(inlineFunctionCalls: List<KtCallExpression>): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getInlineArgumentsIfAny' @ [179:12] ==> private fun getInlineArgumentsIfAny(inlineFunctionCalls: List<KtCallExpression>): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'inlineFunctionCalls' @ [179:36] ==> val inlineFunctionCalls: List<KtCallExpression> defined in org.jetbrains.kotlin.idea.debugger.stepping.getInlineCallFunctionArgumentsIfAny[LocalVariableDescriptor]
 
@@ -345,6 +347,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.KtValueArgument..org.jetbrains.kotlin.psi.KtValueArgument?)
     <R> -> KtExpression?
+
+'getArgumentExpression' @ [195:24] ==> private fun getArgumentExpression(it: ValueArgument): KtExpression? defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'filterIsInstance' @ [196:18] ==> public inline fun <reified R> Iterable<*>.filterIsInstance(): List<KtFunction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -412,9 +416,11 @@ Inferred types:
 
 'valueParameters' @ [217:39] ==> val valueParameters: Set<(ValueParameterDescriptor..ValueParameterDescriptor?)> defined in org.jetbrains.kotlin.idea.debugger.stepping.getInlineArgumentsCallsIfAny[LocalVariableDescriptor]
 
-'findCallsOnPosition' @ [220:12] ==> private fun findCallsOnPosition(sourcePosition: SourcePosition, filter: (KtCallExpression) -> Boolean): List<KtCallExpression> defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'findCallsOnPosition' @ [220:12] ==> private fun findCallsOnPosition(sourcePosition: SourcePosition, filter: (KtCallExpression) -> Boolean): List<KtCallExpression> defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'sourcePosition' @ [220:32] ==> value-parameter sourcePosition: SourcePosition defined in org.jetbrains.kotlin.idea.debugger.stepping.getInlineArgumentsCallsIfAny[ValueParameterDescriptorImpl]
+
+'isCallOfArgument' @ [220:50] ==> local final fun isCallOfArgument(ktCallExpression: KtCallExpression): Boolean defined in org.jetbrains.kotlin.idea.debugger.stepping.getInlineArgumentsCallsIfAny[SimpleFunctionDescriptorImpl]
 
 'expr' @ [225:23] ==> value-parameter expr: KtCallExpression defined in org.jetbrains.kotlin.idea.debugger.stepping.getInlineFunctionCallsIfAny.isInlineCall[ValueParameterDescriptorImpl]
 
@@ -434,11 +440,13 @@ Inferred types:
 
 'resultingDescriptor' @ [227:49] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
-'findCallsOnPosition' @ [230:12] ==> private fun findCallsOnPosition(sourcePosition: SourcePosition, filter: (KtCallExpression) -> Boolean): List<KtCallExpression> defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'findCallsOnPosition' @ [230:12] ==> private fun findCallsOnPosition(sourcePosition: SourcePosition, filter: (KtCallExpression) -> Boolean): List<KtCallExpression> defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'sourcePosition' @ [230:32] ==> value-parameter sourcePosition: SourcePosition defined in org.jetbrains.kotlin.idea.debugger.stepping.getInlineFunctionCallsIfAny[ValueParameterDescriptorImpl]
+
+'isInlineCall' @ [230:50] ==> local final fun isInlineCall(expr: KtCallExpression): Boolean defined in org.jetbrains.kotlin.idea.debugger.stepping.getInlineFunctionCallsIfAny[SimpleFunctionDescriptorImpl]
 
 'sourcePosition' @ [234:16] ==> value-parameter sourcePosition: SourcePosition defined in org.jetbrains.kotlin.idea.debugger.stepping.findCallsOnPosition[ValueParameterDescriptorImpl]
 
@@ -645,13 +653,13 @@ Inferred types:
 Inferred types:
     <T> -> List<KtFunction>
 
-'getInlineCallFunctionArgumentsIfAny' @ [309:9] ==> private fun getInlineCallFunctionArgumentsIfAny(sourcePosition: SourcePosition): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getInlineCallFunctionArgumentsIfAny' @ [309:9] ==> private fun getInlineCallFunctionArgumentsIfAny(sourcePosition: SourcePosition): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'kotlinSourcePosition' @ [309:45] ==> value-parameter kotlinSourcePosition: KotlinSteppingCommandProvider.KotlinSourcePosition defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction[ValueParameterDescriptorImpl]
 
 'sourcePosition' @ [309:66] ==> public final val sourcePosition: SourcePosition defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingCommandProvider.KotlinSourcePosition[PropertyDescriptorImpl]
 
-'getStepOverAction' @ [312:12] ==> public fun getStepOverAction(location: Location, sourceFile: KtFile, range: IntRange, inlineFunctionArguments: List<KtElement>, frameProxy: StackFrameProxyImpl, isDexDebug: Boolean): Action defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getStepOverAction' @ [312:12] ==> public fun getStepOverAction(location: Location, sourceFile: KtFile, range: IntRange, inlineFunctionArguments: List<KtElement>, frameProxy: StackFrameProxyImpl, isDexDebug: Boolean): Action defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'location' @ [312:30] ==> value-parameter location: Location defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction[ValueParameterDescriptorImpl]
 
@@ -692,7 +700,7 @@ Inferred types:
     <K> -> (com.sun.jdi.Location..com.sun.jdi.Location?)
     <V> -> Pair<Int, KtFile?>
 
-'ktLocationInfo' @ [329:60] ==> public fun ktLocationInfo(location: Location, isDexDebug: Boolean, project: Project, preferInlined: Boolean = ..., locationFile: KtFile? = ...): Pair<Int, KtFile?> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'ktLocationInfo' @ [329:60] ==> public fun ktLocationInfo(location: Location, isDexDebug: Boolean, project: Project, preferInlined: Boolean = ..., locationFile: KtFile? = ...): Pair<Int, KtFile?> defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [329:75] ==> value-parameter it: (Location..Location?) defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -704,7 +712,7 @@ Inferred types:
 
 'this' @ [331:62] ==> <this> defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction.ktLineNumber[ReceiverParameterDescriptorImpl]
 
-'ktLocationInfo' @ [331:71] ==> public fun ktLocationInfo(location: Location, isDexDebug: Boolean, project: Project, preferInlined: Boolean = ..., locationFile: KtFile? = ...): Pair<Int, KtFile?> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'ktLocationInfo' @ [331:71] ==> public fun ktLocationInfo(location: Location, isDexDebug: Boolean, project: Project, preferInlined: Boolean = ..., locationFile: KtFile? = ...): Pair<Int, KtFile?> defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [331:86] ==> <this> defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction.ktLineNumber[ReceiverParameterDescriptorImpl]
 
@@ -718,7 +726,7 @@ Inferred types:
 
 'this' @ [333:44] ==> <this> defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction.ktFileName[ReceiverParameterDescriptorImpl]
 
-'ktLocationInfo' @ [333:53] ==> public fun ktLocationInfo(location: Location, isDexDebug: Boolean, project: Project, preferInlined: Boolean = ..., locationFile: KtFile? = ...): Pair<Int, KtFile?> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'ktLocationInfo' @ [333:53] ==> public fun ktLocationInfo(location: Location, isDexDebug: Boolean, project: Project, preferInlined: Boolean = ..., locationFile: KtFile? = ...): Pair<Int, KtFile?> defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [333:68] ==> <this> defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction.ktFileName[ReceiverParameterDescriptorImpl]
 
@@ -784,6 +792,8 @@ Inferred types:
 Inferred types:
     <T> -> (com.sun.jdi.Location..com.sun.jdi.Location?)
 
+'isLocationSuitable' @ [360:27] ==> local final fun isLocationSuitable(nextLocation: Location): Boolean defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction[SimpleFunctionDescriptorImpl]
+
 'dropWhile' @ [361:18] ==> public inline fun <T> Iterable<(Location..Location?)>.dropWhile(predicate: ((Location..Location?)) -> Boolean): List<(Location..Location?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.sun.jdi.Location..com.sun.jdi.Location?)
@@ -830,6 +840,8 @@ Inferred types:
 Inferred types:
     <T> -> (com.sun.jdi.Location..com.sun.jdi.Location?)
 
+'isLocationSuitable' @ [370:27] ==> local final fun isLocationSuitable(nextLocation: Location): Boolean defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction[SimpleFunctionDescriptorImpl]
+
 'firstOrNull' @ [371:18] ==> public inline fun <T> Iterable<(Location..Location?)>.firstOrNull(predicate: ((Location..Location?)) -> Boolean): Location? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.sun.jdi.Location..com.sun.jdi.Location?)
@@ -873,7 +885,7 @@ Inferred types:
 
 'endLineNumber' @ [384:30] ==> val endLineNumber: Int defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'getInlineRangeLocalVariables' @ [388:32] ==> public fun getInlineRangeLocalVariables(stackFrame: StackFrameProxyImpl): List<LocalVariable> defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getInlineRangeLocalVariables' @ [388:32] ==> public fun getInlineRangeLocalVariables(stackFrame: StackFrameProxyImpl): List<LocalVariable> defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'frameProxy' @ [388:61] ==> value-parameter frameProxy: StackFrameProxyImpl defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOverAction[ValueParameterDescriptorImpl]
 
@@ -1092,7 +1104,7 @@ Inferred types:
 
 'suspendContext' @ [451:24] ==> value-parameter suspendContext: SuspendContextImpl defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOutAction[ValueParameterDescriptorImpl]
 
-'getXPositionForStepOutFromInlineFunction' @ [451:39] ==> private fun SuspendContextImpl.getXPositionForStepOutFromInlineFunction(locations: List<Location>, inlineFunctionsToSkip: List<KtNamedFunction>): XSourcePositionImpl? defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getXPositionForStepOutFromInlineFunction' @ [451:39] ==> private fun SuspendContextImpl.getXPositionForStepOutFromInlineFunction(locations: List<Location>, inlineFunctionsToSkip: List<KtNamedFunction>): XSourcePositionImpl? defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'nextLineLocations' @ [451:80] ==> val nextLineLocations: List<(Location..Location?)> defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOutAction[LocalVariableDescriptor]
 
@@ -1115,7 +1127,7 @@ Inferred types:
 
 'suspendContext' @ [456:24] ==> value-parameter suspendContext: SuspendContextImpl defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOutAction[ValueParameterDescriptorImpl]
 
-'getXPositionForStepOutFromInlinedArgument' @ [456:39] ==> private fun SuspendContextImpl.getXPositionForStepOutFromInlinedArgument(locations: List<Location>, inlinedArgumentToSkip: KtFunctionLiteral): XSourcePositionImpl? defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getXPositionForStepOutFromInlinedArgument' @ [456:39] ==> private fun SuspendContextImpl.getXPositionForStepOutFromInlinedArgument(locations: List<Location>, inlinedArgumentToSkip: KtFunctionLiteral): XSourcePositionImpl? defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'nextLineLocations' @ [456:81] ==> val nextLineLocations: List<(Location..Location?)> defined in org.jetbrains.kotlin.idea.debugger.stepping.getStepOutAction[LocalVariableDescriptor]
 
@@ -1136,7 +1148,7 @@ Inferred types:
 
 'STEP_OVER' @ [460:19] ==> public constructor STEP_OVER() defined in org.jetbrains.kotlin.idea.debugger.stepping.Action.STEP_OVER[ClassConstructorDescriptorImpl]
 
-'getNextPositionWithFilter' @ [467:12] ==> private fun SuspendContextImpl.getNextPositionWithFilter(locations: List<Location>, skip: (Int, PsiElement) -> Boolean): XSourcePositionImpl? defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getNextPositionWithFilter' @ [467:12] ==> private fun SuspendContextImpl.getNextPositionWithFilter(locations: List<Location>, skip: (Int, PsiElement) -> Boolean): XSourcePositionImpl? defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'locations' @ [467:38] ==> value-parameter locations: List<Location> defined in org.jetbrains.kotlin.idea.debugger.stepping.getXPositionForStepOutFromInlineFunction[ValueParameterDescriptorImpl]
 
@@ -1158,7 +1170,7 @@ Inferred types:
 
 'elementAt' @ [473:32] ==> value-parameter elementAt: PsiElement defined in org.jetbrains.kotlin.idea.debugger.stepping.getXPositionForStepOutFromInlineFunction.<anonymous>[ValueParameterDescriptorImpl]
 
-'getNextPositionWithFilter' @ [481:12] ==> private fun SuspendContextImpl.getNextPositionWithFilter(locations: List<Location>, skip: (Int, PsiElement) -> Boolean): XSourcePositionImpl? defined in org.jetbrains.kotlin.idea.debugger.stepping[SimpleFunctionDescriptorImpl]
+'getNextPositionWithFilter' @ [481:12] ==> private fun SuspendContextImpl.getNextPositionWithFilter(locations: List<Location>, skip: (Int, PsiElement) -> Boolean): XSourcePositionImpl? defined in org.jetbrains.kotlin.idea.debugger.stepping in file KotlinSteppingCommandProvider.kt[SimpleFunctionDescriptorImpl]
 
 'locations' @ [481:38] ==> value-parameter locations: List<Location> defined in org.jetbrains.kotlin.idea.debugger.stepping.getXPositionForStepOutFromInlinedArgument[ValueParameterDescriptorImpl]
 

@@ -44,8 +44,6 @@ Inferred types:
 
 'PROPERTY' @ [40:68] ==> enum entry PROPERTY defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
 
-'Deserialization' @ [41:17] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
-
 'modality' @ [41:33] ==> @JvmStatic public final fun modality(modality: ProtoBuf.Modality?): Modality defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
 'MODALITY' @ [41:48] ==> public final val MODALITY: (Flags.FlagField<(ProtoBuf.Modality..ProtoBuf.Modality?)>..Flags.FlagField<(ProtoBuf.Modality..ProtoBuf.Modality?)>?) defined in org.jetbrains.kotlin.serialization.Flags[JavaPropertyDescriptor]
@@ -53,8 +51,6 @@ Inferred types:
 'get' @ [41:57] ==> public abstract operator fun get(flags: Int): (ProtoBuf.Modality..ProtoBuf.Modality?) defined in org.jetbrains.kotlin.serialization.Flags.FlagField[JavaMethodDescriptor]
 
 'flags' @ [41:61] ==> val flags: Int defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer.loadProperty[LocalVariableDescriptor]
-
-'Deserialization' @ [42:17] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
 
 'visibility' @ [42:33] ==> @JvmStatic public final fun visibility(visibility: ProtoBuf.Visibility?): Visibility defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
@@ -79,8 +75,6 @@ Inferred types:
 'proto' @ [44:40] ==> value-parameter proto: ProtoBuf.Property defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer.loadProperty[ValueParameterDescriptorImpl]
 
 'name' @ [44:46] ==> public final val ProtoBuf.Property.name: Int[MyPropertyDescriptor]
-
-'Deserialization' @ [45:17] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
 
 'memberKind' @ [45:33] ==> @JvmStatic public final fun memberKind(memberKind: ProtoBuf.MemberKind?): CallableMemberDescriptor.Kind defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
@@ -172,8 +166,6 @@ Inferred types:
 'proto' @ [62:45] ==> value-parameter proto: ProtoBuf.Property defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer.loadProperty[ValueParameterDescriptorImpl]
 
 'PROPERTY_GETTER' @ [62:74] ==> enum entry PROPERTY_GETTER defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
-
-'Annotations' @ [64:13] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [64:25] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -323,8 +315,6 @@ Inferred types:
 
 'PROPERTY_GETTER' @ [81:82] ==> enum entry PROPERTY_GETTER defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
 
-'Deserialization' @ [82:25] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
-
 'modality' @ [82:41] ==> @JvmStatic public final fun modality(modality: ProtoBuf.Modality?): Modality defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
 'MODALITY' @ [82:56] ==> public final val MODALITY: (Flags.FlagField<(ProtoBuf.Modality..ProtoBuf.Modality?)>..Flags.FlagField<(ProtoBuf.Modality..ProtoBuf.Modality?)>?) defined in org.jetbrains.kotlin.serialization.Flags[JavaPropertyDescriptor]
@@ -332,8 +322,6 @@ Inferred types:
 'get' @ [82:65] ==> public abstract operator fun get(flags: Int): (ProtoBuf.Modality..ProtoBuf.Modality?) defined in org.jetbrains.kotlin.serialization.Flags.FlagField[JavaMethodDescriptor]
 
 'getterFlags' @ [82:69] ==> val getterFlags: Int defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer.loadProperty[LocalVariableDescriptor]
-
-'Deserialization' @ [83:25] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
 
 'visibility' @ [83:41] ==> @JvmStatic public final fun visibility(visibility: ProtoBuf.Visibility?): Visibility defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
@@ -360,8 +348,6 @@ Inferred types:
 'createDefaultGetter' @ [91:35] ==> @NotNull public open fun createDefaultGetter(@NotNull p0: PropertyDescriptor, @NotNull p1: Annotations): PropertyGetterDescriptorImpl defined in org.jetbrains.kotlin.resolve.DescriptorFactory[JavaMethodDescriptor]
 
 'property' @ [91:55] ==> val property: DeserializedPropertyDescriptor defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer.loadProperty[LocalVariableDescriptor]
-
-'Annotations' @ [91:65] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [91:77] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -486,8 +472,6 @@ Inferred types:
 
 'PROPERTY_SETTER' @ [108:82] ==> enum entry PROPERTY_SETTER defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
 
-'Deserialization' @ [109:25] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
-
 'modality' @ [109:41] ==> @JvmStatic public final fun modality(modality: ProtoBuf.Modality?): Modality defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
 'MODALITY' @ [109:56] ==> public final val MODALITY: (Flags.FlagField<(ProtoBuf.Modality..ProtoBuf.Modality?)>..Flags.FlagField<(ProtoBuf.Modality..ProtoBuf.Modality?)>?) defined in org.jetbrains.kotlin.serialization.Flags[JavaPropertyDescriptor]
@@ -495,8 +479,6 @@ Inferred types:
 'get' @ [109:65] ==> public abstract operator fun get(flags: Int): (ProtoBuf.Modality..ProtoBuf.Modality?) defined in org.jetbrains.kotlin.serialization.Flags.FlagField[JavaMethodDescriptor]
 
 'setterFlags' @ [109:69] ==> val setterFlags: Int defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer.loadProperty[LocalVariableDescriptor]
-
-'Deserialization' @ [110:25] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
 
 'visibility' @ [110:41] ==> @JvmStatic public final fun visibility(visibility: ProtoBuf.Visibility?): Visibility defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
@@ -564,8 +546,6 @@ Inferred types:
 
 'property' @ [124:55] ==> val property: DeserializedPropertyDescriptor defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer.loadProperty[LocalVariableDescriptor]
 
-'Annotations' @ [124:65] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [124:77] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'HAS_CONSTANT' @ [131:19] ==> public final val HAS_CONSTANT: (Flags.BooleanFlagField..Flags.BooleanFlagField?) defined in org.jetbrains.kotlin.serialization.Flags[JavaPropertyDescriptor]
@@ -582,9 +562,9 @@ Inferred types:
 
 'storageManager' @ [133:23] ==> public final val storageManager: StorageManager defined in org.jetbrains.kotlin.serialization.deserialization.DeserializationContext[PropertyDescriptorImpl]
 
-'createNullableLazyValue' @ [133:38] ==> public abstract fun <T : Any> createNullableLazyValue(computable: () -> ConstantValue<Any?>?): NullableLazyValue<ConstantValue<Any?>> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
+'createNullableLazyValue' @ [133:38] ==> public abstract fun <T : Any> createNullableLazyValue(computable: () -> ConstantValue<*>?): NullableLazyValue<ConstantValue<*>> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : Any> -> ConstantValue<Any?>
+    <T : Any> -> ConstantValue<*>
 
 'c' @ [134:41] ==> private final val c: DeserializationContext defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer[PropertyDescriptorImpl]
 
@@ -670,8 +650,6 @@ Inferred types:
 
 'FUNCTION' @ [155:74] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
 
-'Annotations' @ [156:14] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [156:26] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'DeserializedSimpleFunctionDescriptor' @ [157:24] ==> public constructor DeserializedSimpleFunctionDescriptor(containingDeclaration: DeclarationDescriptor, original: SimpleFunctionDescriptor?, annotations: Annotations, name: Name, kind: CallableMemberDescriptor.Kind, proto: ProtoBuf.Function, nameResolver: NameResolver, typeTable: TypeTable, sinceKotlinInfoTable: SinceKotlinInfoTable, containerSource: DeserializedContainerSource?, source: SourceElement? = ...) defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedSimpleFunctionDescriptor[ClassConstructorDescriptorImpl]
@@ -691,8 +669,6 @@ Inferred types:
 'proto' @ [158:101] ==> value-parameter proto: ProtoBuf.Function defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer.loadFunction[ValueParameterDescriptorImpl]
 
 'name' @ [158:107] ==> public final val ProtoBuf.Function.name: Int[MyPropertyDescriptor]
-
-'Deserialization' @ [159:17] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
 
 'memberKind' @ [159:33] ==> @JvmStatic public final fun memberKind(memberKind: ProtoBuf.MemberKind?): CallableMemberDescriptor.Kind defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
@@ -793,8 +769,6 @@ Inferred types:
 
 'typeTable' @ [168:64] ==> public final val typeTable: TypeTable defined in org.jetbrains.kotlin.serialization.deserialization.DeserializationContext[PropertyDescriptorImpl]
 
-'Deserialization' @ [169:17] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
-
 'modality' @ [169:33] ==> @JvmStatic public final fun modality(modality: ProtoBuf.Modality?): Modality defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
 'MODALITY' @ [169:48] ==> public final val MODALITY: (Flags.FlagField<(ProtoBuf.Modality..ProtoBuf.Modality?)>..Flags.FlagField<(ProtoBuf.Modality..ProtoBuf.Modality?)>?) defined in org.jetbrains.kotlin.serialization.Flags[JavaPropertyDescriptor]
@@ -802,8 +776,6 @@ Inferred types:
 'get' @ [169:57] ==> public abstract operator fun get(flags: Int): (ProtoBuf.Modality..ProtoBuf.Modality?) defined in org.jetbrains.kotlin.serialization.Flags.FlagField[JavaMethodDescriptor]
 
 'flags' @ [169:61] ==> val flags: Int defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer.loadFunction[LocalVariableDescriptor]
-
-'Deserialization' @ [170:17] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
 
 'visibility' @ [170:33] ==> @JvmStatic public final fun visibility(visibility: ProtoBuf.Visibility?): Visibility defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
@@ -1084,8 +1056,6 @@ Inferred types:
 
 'FUNCTION' @ [214:113] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
 
-'Deserialization' @ [215:17] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
-
 'visibility' @ [215:33] ==> @JvmStatic public final fun visibility(visibility: ProtoBuf.Visibility?): Visibility defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
 'VISIBILITY' @ [215:50] ==> public final val VISIBILITY: (Flags.FlagField<(ProtoBuf.Visibility..ProtoBuf.Visibility?)>..Flags.FlagField<(ProtoBuf.Visibility..ProtoBuf.Visibility?)>?) defined in org.jetbrains.kotlin.serialization.Flags[JavaPropertyDescriptor]
@@ -1199,8 +1169,6 @@ Inferred types:
 
 'it' @ [241:53] ==> value-parameter it: AnnotationDescriptor defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer.getReceiverParameterAnnotations.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'AnnotationUseSiteTarget' @ [241:57] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'RECEIVER' @ [241:81] ==> enum entry RECEIVER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'toList' @ [242:26] ==> public fun <T> Iterable<AnnotationWithTarget>.toList(): List<AnnotationWithTarget> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -1286,8 +1254,6 @@ Inferred types:
 'toList' @ [261:30] ==> public fun <T> Iterable<AnnotationDescriptor>.toList(): List<AnnotationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AnnotationDescriptor
-
-'Annotations' @ [264:18] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [264:30] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

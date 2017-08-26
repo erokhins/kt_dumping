@@ -2,11 +2,11 @@
 
 'getProperty' @ [40:31] ==> public open fun getProperty(p0: (String..String?)): (String..String?) defined in java.lang.System[JavaMethodDescriptor]
 
-'getAllRelativePaths' @ [43:27] ==> private fun getAllRelativePaths(dir: File): Set<String> defined in org.jetbrains.kotlin.incremental.testingUtils[SimpleFunctionDescriptorImpl]
+'getAllRelativePaths' @ [43:27] ==> private fun getAllRelativePaths(dir: File): Set<String> defined in org.jetbrains.kotlin.incremental.testingUtils in file classFilesComparison.kt[SimpleFunctionDescriptorImpl]
 
 'expected' @ [43:47] ==> value-parameter expected: File defined in org.jetbrains.kotlin.incremental.testingUtils.assertEqualDirectories[ValueParameterDescriptorImpl]
 
-'getAllRelativePaths' @ [44:25] ==> private fun getAllRelativePaths(dir: File): Set<String> defined in org.jetbrains.kotlin.incremental.testingUtils[SimpleFunctionDescriptorImpl]
+'getAllRelativePaths' @ [44:25] ==> private fun getAllRelativePaths(dir: File): Set<String> defined in org.jetbrains.kotlin.incremental.testingUtils in file classFilesComparison.kt[SimpleFunctionDescriptorImpl]
 
 'actual' @ [44:45] ==> value-parameter actual: File defined in org.jetbrains.kotlin.incremental.testingUtils.assertEqualDirectories[ValueParameterDescriptorImpl]
 
@@ -50,13 +50,13 @@ Inferred types:
 Inferred types:
     <T : Comparable<T>> -> String
 
-'getDirectoryString' @ [51:26] ==> private fun getDirectoryString(dir: File, interestingPaths: List<String>): String defined in org.jetbrains.kotlin.incremental.testingUtils[SimpleFunctionDescriptorImpl]
+'getDirectoryString' @ [51:26] ==> private fun getDirectoryString(dir: File, interestingPaths: List<String>): String defined in org.jetbrains.kotlin.incremental.testingUtils in file classFilesComparison.kt[SimpleFunctionDescriptorImpl]
 
 'expected' @ [51:45] ==> value-parameter expected: File defined in org.jetbrains.kotlin.incremental.testingUtils.assertEqualDirectories[ValueParameterDescriptorImpl]
 
 'changedPaths' @ [51:55] ==> val changedPaths: List<String> defined in org.jetbrains.kotlin.incremental.testingUtils.assertEqualDirectories[LocalVariableDescriptor]
 
-'getDirectoryString' @ [52:24] ==> private fun getDirectoryString(dir: File, interestingPaths: List<String>): String defined in org.jetbrains.kotlin.incremental.testingUtils[SimpleFunctionDescriptorImpl]
+'getDirectoryString' @ [52:24] ==> private fun getDirectoryString(dir: File, interestingPaths: List<String>): String defined in org.jetbrains.kotlin.incremental.testingUtils in file classFilesComparison.kt[SimpleFunctionDescriptorImpl]
 
 'actual' @ [52:43] ==> value-parameter actual: File defined in org.jetbrains.kotlin.incremental.testingUtils.assertEqualDirectories[ValueParameterDescriptorImpl]
 

@@ -16,7 +16,7 @@ Inferred types:
 
 'put' @ [47:17] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'USE_JAVAC' @ [47:42] ==> public final val USE_JAVAC: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -24,11 +24,7 @@ Inferred types:
 
 'LanguageVersionSettingsImpl' @ [49:39] ==> @JvmOverloads public constructor LanguageVersionSettingsImpl(languageVersion: LanguageVersion, apiVersion: ApiVersion, analysisFlags: Map<AnalysisFlag<*>, Any?> = ..., specificFeatures: Map<LanguageFeature, LanguageFeature.State> = ...) defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[DeserializedClassConstructorDescriptor]
 
-'LanguageVersion' @ [50:21] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'LATEST_STABLE' @ [50:37] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
-
-'ApiVersion' @ [50:52] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [50:63] ==> @field:JvmField public final val LATEST_STABLE: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -40,8 +36,6 @@ Inferred types:
 'AnalysisFlag' @ [50:84] ==> public companion object Flags defined in org.jetbrains.kotlin.config.AnalysisFlag[FakeCallableDescriptorForObject]
 
 'jsr305GlobalState' @ [50:97] ==> @JvmStatic public final val jsr305GlobalState: AnalysisFlag<Jsr305State> defined in org.jetbrains.kotlin.config.AnalysisFlag.Flags[DeserializedPropertyDescriptor]
-
-'Jsr305State' @ [50:118] ==> public companion object defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
 
 'ENABLE' @ [50:130] ==> enum entry ENABLE defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
 
@@ -97,14 +91,14 @@ Inferred types:
 
 'FROM_TEST' @ [69:113] ==> enum entry FROM_TEST defined in org.jetbrains.kotlin.incremental.components.NoLookupLocation[FakeCallableDescriptorForObject]
 
-'let' @ [70:27] ==> @InlineOnly public inline fun <T, R> PackageFragmentDescriptor?.let(block: (PackageFragmentDescriptor?) -> LazyJavaPackageFragment): LazyJavaPackageFragment defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [70:27] ==> @InlineOnly public inline fun <T, R> PackageFragmentDescriptor?.let(block: (PackageFragmentDescriptor?) -> (LazyJavaPackageFragment..LazyJavaPackageFragment?)): (LazyJavaPackageFragment..LazyJavaPackageFragment?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PackageFragmentDescriptor?
-    <R> -> LazyJavaPackageFragment
+    <R> -> (org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaPackageFragment..org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaPackageFragment?)
 
 'assertInstanceOf' @ [70:33] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), p1: (Class<(LazyJavaPackageFragment..LazyJavaPackageFragment?)>..Class<(LazyJavaPackageFragment..LazyJavaPackageFragment?)>?)): (LazyJavaPackageFragment..LazyJavaPackageFragment?) defined in org.jetbrains.kotlin.test.testFramework.KtUsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LazyJavaPackageFragment
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaPackageFragment..org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaPackageFragment?)
 
 'it' @ [70:50] ==> value-parameter it: PackageFragmentDescriptor? defined in org.jetbrains.kotlin.jvm.compiler.LoadJavaPackageAnnotationsTest.doTest.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -114,7 +108,7 @@ Inferred types:
 Inferred types:
     <T> -> LazyJavaPackageFragment
 
-'packageFragmentDescriptor' @ [72:26] ==> val packageFragmentDescriptor: LazyJavaPackageFragment defined in org.jetbrains.kotlin.jvm.compiler.LoadJavaPackageAnnotationsTest.doTest[LocalVariableDescriptor]
+'packageFragmentDescriptor' @ [72:26] ==> val packageFragmentDescriptor: (LazyJavaPackageFragment..LazyJavaPackageFragment?) defined in org.jetbrains.kotlin.jvm.compiler.LoadJavaPackageAnnotationsTest.doTest[LocalVariableDescriptor]
 
 'annotations' @ [72:52] ==> public open val annotations: Annotations defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaPackageFragment[DeserializedPropertyDescriptor]
 
@@ -126,7 +120,7 @@ Inferred types:
 
 'annotation' @ [73:23] ==> val annotation: AnnotationDescriptor? defined in org.jetbrains.kotlin.jvm.compiler.LoadJavaPackageAnnotationsTest.doTest[LocalVariableDescriptor]
 
-'packageFragmentDescriptor' @ [75:32] ==> val packageFragmentDescriptor: LazyJavaPackageFragment defined in org.jetbrains.kotlin.jvm.compiler.LoadJavaPackageAnnotationsTest.doTest[LocalVariableDescriptor]
+'packageFragmentDescriptor' @ [75:32] ==> val packageFragmentDescriptor: (LazyJavaPackageFragment..LazyJavaPackageFragment?) defined in org.jetbrains.kotlin.jvm.compiler.LoadJavaPackageAnnotationsTest.doTest[LocalVariableDescriptor]
 
 'annotations' @ [75:58] ==> public open val annotations: Annotations defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaPackageFragment[DeserializedPropertyDescriptor]
 

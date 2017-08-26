@@ -22,7 +22,7 @@ Inferred types:
 
 'it' @ [36:47] ==> value-parameter it: (KtExpression..KtExpression?) defined in org.jetbrains.kotlin.resolve.filterStatements.<anonymous>[ValueParameterDescriptorImpl]
 
-'filterStatements' @ [39:74] ==> public fun StatementFilter.filterStatements(block: KtBlockExpression): List<KtExpression> defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'filterStatements' @ [39:74] ==> public fun StatementFilter.filterStatements(block: KtBlockExpression): List<KtExpression> defined in org.jetbrains.kotlin.resolve in file StatementFilter.kt[SimpleFunctionDescriptorImpl]
 
 'block' @ [39:91] ==> value-parameter block: KtBlockExpression defined in org.jetbrains.kotlin.resolve.getLastStatementInABlock[ValueParameterDescriptorImpl]
 

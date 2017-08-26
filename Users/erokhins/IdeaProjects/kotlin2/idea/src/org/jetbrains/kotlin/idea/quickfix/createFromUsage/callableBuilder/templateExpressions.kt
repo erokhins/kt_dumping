@@ -10,6 +10,8 @@ Inferred types:
 
 'String' @ [45:26] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isNotEmpty' @ [45:34] ==> @InlineOnly public inline fun CharSequence.isNotEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'calculateLookupItems' @ [49:27] ==> public open fun calculateLookupItems(context: ExpressionContext?): Array<LookupElement>? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression[SimpleFunctionDescriptorImpl]
 
 'context' @ [49:48] ==> value-parameter context: ExpressionContext? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateResult[ValueParameterDescriptorImpl]
@@ -42,7 +44,7 @@ Inferred types:
 
 'LinkedHashSet' @ [57:21] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'this' @ [57:35] ==> <this> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression[LazyClassReceiverParameterDescriptor]
 
@@ -92,7 +94,7 @@ Inferred types:
 
 'getParentOfType' @ [66:39] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtTypeParameterListOwner..KtTypeParameterListOwner?)>..Class<out (KtTypeParameterListOwner..KtTypeParameterListOwner?)>?)): KtTypeParameterListOwner? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtTypeParameterListOwner
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeParameterListOwner..org.jetbrains.kotlin.psi.KtTypeParameterListOwner?)
 
 'elementAt' @ [66:55] ==> val elementAt: PsiElement? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
 
@@ -154,7 +156,7 @@ Inferred types:
 
 'suggestedNamesBasedOnType' @ [79:21] ==> val suggestedNamesBasedOnType: Array<String>? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
 
-'names' @ [80:21] ==> val names: LinkedHashSet<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
+'names' @ [80:21] ==> val names: LinkedHashSet<(String..String?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
 
 'addAll' @ [80:27] ==> public fun <T> MutableCollection<in String>.addAll(elements: Array<out String>): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -188,32 +190,30 @@ Inferred types:
 
 'name' @ [87:67] ==> public final val KtParameter.name: String?[MyPropertyDescriptor]
 
-'names' @ [91:13] ==> val names: LinkedHashSet<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
+'names' @ [91:13] ==> val names: LinkedHashSet<(String..String?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
 
 'isEmpty' @ [91:19] ==> public open fun isEmpty(): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
-'names' @ [92:13] ==> val names: LinkedHashSet<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
+'names' @ [92:13] ==> val names: LinkedHashSet<(String..String?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
 
-'add' @ [92:19] ==> public open fun add(element: String): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
+'add' @ [92:19] ==> public open fun add(element: (String..String?)): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
 'CollectingNameValidator' @ [96:25] ==> @JvmOverloads public constructor CollectingNameValidator(existingNames: Collection<String> = ..., filter: (String) -> Boolean = ...) defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator[DeserializedClassConstructorDescriptor]
 
 'parameterNames' @ [96:49] ==> val parameterNames: HashSet<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
 
-'names' @ [97:16] ==> val names: LinkedHashSet<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
+'names' @ [97:16] ==> val names: LinkedHashSet<(String..String?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
 
-'map' @ [97:22] ==> public inline fun <T, R> Iterable<String>.map(transform: (String) -> LookupElementBuilder): List<LookupElementBuilder> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [97:22] ==> public inline fun <T, R> Iterable<(String..String?)>.map(transform: ((String..String?)) -> LookupElementBuilder): List<LookupElementBuilder> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> (kotlin.String..kotlin.String?)
     <R> -> LookupElementBuilder
 
 'create' @ [97:49] ==> @NotNull public open fun create(@NotNull p0: String): LookupElementBuilder defined in com.intellij.codeInsight.lookup.LookupElementBuilder[JavaMethodDescriptor]
 
-'KotlinNameSuggester' @ [97:56] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
-
 'suggestNameByName' @ [97:76] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [97:94] ==> value-parameter it: String defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [97:94] ==> value-parameter it: (String..String?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems.<anonymous>[ValueParameterDescriptorImpl]
 
 'validator' @ [97:98] ==> val validator: CollectingNameValidator defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterNameExpression.calculateLookupItems[LocalVariableDescriptor]
 
@@ -265,7 +265,7 @@ Inferred types:
 
 'theType' @ [113:36] ==> public final val theType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeCandidate[PropertyDescriptorImpl]
 
-'decomposeIntersection' @ [113:44] ==> internal fun KotlinType.decomposeIntersection(): List<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'decomposeIntersection' @ [113:44] ==> internal fun KotlinType.decomposeIntersection(): List<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'types' @ [114:33] ==> val types: List<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeExpression.ForDelegationSpecifier.cachedLookupElements.<anonymous>[LocalVariableDescriptor]
 
@@ -343,7 +343,7 @@ Inferred types:
 
 'emptyList' @ [142:76] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeParameterDescriptor..TypeParameterDescriptor?)>..List<(TypeParameterDescriptor..TypeParameterDescriptor?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeParameterDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
 'context' @ [146:9] ==> value-parameter context: ExpressionContext? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeParameterListExpression.calculateResult[ValueParameterDescriptorImpl]
 
@@ -425,7 +425,7 @@ Inferred types:
 
 'declaration' @ [167:29] ==> val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeParameterListExpression.calculateResult[LocalVariableDescriptor]
 
-'getReturnTypeReference' @ [167:41] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getReturnTypeReference' @ [167:41] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'returnTypeRef' @ [168:13] ==> val returnTypeRef: KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeParameterListExpression.calculateResult[LocalVariableDescriptor]
 

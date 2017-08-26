@@ -72,9 +72,9 @@ Inferred types:
 
 'ELEMENT_NAME_ACCEPTED' @ [54:92] ==> public const final val ELEMENT_NAME_ACCEPTED: Int defined in com.intellij.codeInsight.TargetElementUtil[JavaPropertyDescriptor]
 
-'assertInstanceOf' @ [55:24] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<out (KtDeclaration..KtDeclaration?)>): (KtDeclaration..KtDeclaration?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
+'assertInstanceOf' @ [55:24] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<out KtDeclaration>): (KtDeclaration..KtDeclaration?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtDeclaration
+    <T : (Any..Any?)> -> Captured(out KtDeclaration)
 
 'caretElement' @ [55:41] ==> val caretElement: PsiElement? defined in org.jetbrains.kotlin.findUsages.AbstractFindUsagesMultiModuleTest.doFindUsagesTest[LocalVariableDescriptor]
 

@@ -58,8 +58,6 @@ Inferred types:
 Inferred types:
     <T : Any> -> PsiElement
 
-'DescriptorToSourceUtilsIde' @ [65:27] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
-
 'getAnyDeclaration' @ [65:54] ==> public final fun getAnyDeclaration(project: Project, descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 
 'project' @ [65:72] ==> val project: Project defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.getTargetParentsByQualifier[LocalVariableDescriptor]
@@ -71,9 +69,9 @@ Inferred types:
 'if (qualifierDescriptor.fqName != file.packageFqName) {
                 listOfNotNull(JavaPsiFacade.getInstance(project).findPackage(qualifierDescriptor.fqName.asString()))
             }
-            else listOf(file)' @ [67:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<{NavigationItem & PsiCheckedRenameElement}>, elseBranch: List<{NavigationItem & PsiCheckedRenameElement}>): List<{NavigationItem & PsiCheckedRenameElement}>[SimpleFunctionDescriptorImpl]
+            else listOf(file)' @ [67:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<PsiElement>, elseBranch: List<PsiElement>): List<PsiElement>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<{NavigationItem & PsiCheckedRenameElement}>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<PsiElement>
 
 'qualifierDescriptor' @ [67:17] ==> value-parameter qualifierDescriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.getTargetParentsByQualifier[ValueParameterDescriptorImpl]
 
@@ -138,11 +136,11 @@ Inferred types:
 
 'receiver' @ [80:18] ==> val receiver: Receiver? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.getTargetParentsByCall[LocalVariableDescriptor]
 
-'getTargetParentsByQualifier' @ [81:17] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTargetParentsByQualifier' @ [81:17] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'callElement' @ [81:45] ==> val callElement: KtElement defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.getTargetParentsByCall[LocalVariableDescriptor]
 
-'getTargetParentsByQualifier' @ [82:25] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTargetParentsByQualifier' @ [82:25] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'callElement' @ [82:53] ==> val callElement: KtElement defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.getTargetParentsByCall[LocalVariableDescriptor]
 
@@ -154,7 +152,7 @@ Inferred types:
 
 'referenceExpression' @ [82:122] ==> public abstract val referenceExpression: KtSimpleNameExpression defined in org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier[DeserializedPropertyDescriptor]
 
-'getTargetParentsByQualifier' @ [83:29] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTargetParentsByQualifier' @ [83:29] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'callElement' @ [83:57] ==> val callElement: KtElement defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.getTargetParentsByCall[LocalVariableDescriptor]
 
@@ -174,7 +172,7 @@ Inferred types:
 
 'explicitReceiver' @ [88:54] ==> public final val Call.explicitReceiver: Receiver?[MyPropertyDescriptor]
 
-'guessTypes' @ [91:9] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [91:9] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [91:20] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.guessTypeForClass[ValueParameterDescriptorImpl]
 
@@ -238,8 +236,6 @@ Inferred types:
 'isEnum' @ [108:37] ==> val isEnum: Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.getClassKindFilter[LocalVariableDescriptor]
 
 'containingDeclaration' @ [108:47] ==> value-parameter containingDeclaration: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.getClassKindFilter[ValueParameterDescriptorImpl]
-
-'DescriptorToSourceUtils' @ [108:72] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
 'descriptorToDeclaration' @ [108:96] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 

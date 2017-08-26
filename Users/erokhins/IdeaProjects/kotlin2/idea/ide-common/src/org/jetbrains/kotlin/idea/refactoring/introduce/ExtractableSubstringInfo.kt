@@ -296,14 +296,11 @@ Inferred types:
 
 'type' @ [94:103] ==> public final val type: KotlinType defined in org.jetbrains.kotlin.idea.refactoring.introduce.ExtractableSubstringInfo[PropertyDescriptorImpl]
 
-'UserDataProperty' @ [98:73] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<ExtractableSubstringInfo>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> KtExpression
-    <T : Any> -> ExtractableSubstringInfo
+'getValue' @ [98:73] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [98:94] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(ExtractableSubstringInfo..ExtractableSubstringInfo?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ExtractableSubstringInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.ExtractableSubstringInfo..org.jetbrains.kotlin.idea.refactoring.introduce.ExtractableSubstringInfo?)
 
 'extractableSubstringInfo' @ [101:13] ==> public var KtExpression.extractableSubstringInfo: ExtractableSubstringInfo? defined in org.jetbrains.kotlin.idea.refactoring.introduce in file ExtractableSubstringInfo.kt[PropertyDescriptorImpl]
 

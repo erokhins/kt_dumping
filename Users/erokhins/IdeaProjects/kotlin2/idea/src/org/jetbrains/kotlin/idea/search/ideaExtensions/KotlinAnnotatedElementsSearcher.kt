@@ -68,8 +68,6 @@ Inferred types:
 
 'backingField' @ [62:73] ==> val backingField: PsiField? defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinAnnotatedElementsSearcher.execute.<anonymous>[LocalVariableDescriptor]
 
-'LightClassUtil' @ [65:21] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
-
 'getLightClassPropertyMethods' @ [65:36] ==> public final fun getLightClassPropertyMethods(property: KtProperty): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
 'declaration' @ [65:65] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinAnnotatedElementsSearcher.execute.<anonymous>[ValueParameterDescriptorImpl]
@@ -165,8 +163,8 @@ Inferred types:
 
 'get' @ [101:60] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?), p1: (KtAnnotationEntry..KtAnnotationEntry?)): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtAnnotationEntry
-    <V : (Any..Any?)> -> AnnotationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor..org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor?)
 
 'ANNOTATION' @ [101:79] ==> public final val ANNOTATION: (WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

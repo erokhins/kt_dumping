@@ -62,7 +62,7 @@ Inferred types:
 
 'kotlinPluginStatement' @ [68:53] ==> val kotlinPluginStatement: GrCallExpression defined in org.jetbrains.kotlin.idea.inspections.gradle.DifferentKotlinGradleVersionInspection.VersionFinder.visitClosure[LocalVariableDescriptor]
 
-'getResolvedKotlinGradleVersion' @ [69:21] ==> public fun getResolvedKotlinGradleVersion(file: PsiFile): String? defined in org.jetbrains.kotlin.idea.inspections.gradle[SimpleFunctionDescriptorImpl]
+'getResolvedKotlinGradleVersion' @ [69:21] ==> public fun getResolvedKotlinGradleVersion(file: PsiFile): String? defined in org.jetbrains.kotlin.idea.inspections.gradle in file KotlinGradleInspectionVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'closure' @ [69:52] ==> value-parameter closure: GrClosableBlock defined in org.jetbrains.kotlin.idea.inspections.gradle.DifferentKotlinGradleVersionInspection.VersionFinder.visitClosure[ValueParameterDescriptorImpl]
 
@@ -76,9 +76,9 @@ Inferred types:
 
 'VersionFinder' @ [76:36] ==> public constructor VersionFinder() defined in org.jetbrains.kotlin.idea.inspections.gradle.DifferentKotlinGradleVersionInspection.VersionFinder[ClassConstructorDescriptorImpl]
 
-'lazy' @ [77:41] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [77:41] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'bundledRuntimeVersion' @ [77:48] ==> public fun bundledRuntimeVersion(): String defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 

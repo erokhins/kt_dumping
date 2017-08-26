@@ -151,7 +151,7 @@ Inferred types:
 
 'newArrayList' @ [120:39] ==> @CanIgnoreReturnValue @GwtCompatible public open fun <E : (Any..Any?)> newArrayList(p0: (MutableIterable<(ValueParameterDescriptor..ValueParameterDescriptor?)>..Iterable<(ValueParameterDescriptor..ValueParameterDescriptor?)>?)): (ArrayList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..ArrayList<(ValueParameterDescriptor..ValueParameterDescriptor?)>?) defined in com.google.common.collect.Lists[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ValueParameterDescriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
 
 'superParameters' @ [120:52] ==> val superParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>) defined in org.jetbrains.kotlin.idea.quickfix.ChangeMemberFunctionSignatureFix.Companion.signatureToMatch[LocalVariableDescriptor]
 
@@ -204,8 +204,6 @@ Inferred types:
 'function' @ [132:29] ==> value-parameter function: FunctionDescriptor defined in org.jetbrains.kotlin.idea.quickfix.ChangeMemberFunctionSignatureFix.Companion.signatureToMatch[ValueParameterDescriptorImpl]
 
 'containingDeclaration' @ [132:38] ==> public final val FunctionDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
-
-'Modality' @ [133:29] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [133:38] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

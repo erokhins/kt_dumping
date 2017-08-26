@@ -273,6 +273,8 @@ Inferred types:
 
 'String' @ [111:23] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isNotBlank' @ [111:31] ==> @InlineOnly public inline fun CharSequence.isNotBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'targetStringLine' @ [112:20] ==> val targetStringLine: String defined in org.jetbrains.kotlin.idea.KotlinFoldingBuilder.getFirstLineOfString[LocalVariableDescriptor]
 
 'replace' @ [112:37] ==> public fun String.replace(oldValue: String, newValue: String, ignoreCase: Boolean = ...): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]

@@ -6,8 +6,6 @@
 
 'conflictChecker' @ [38:63] ==> value-parameter conflictChecker: (KotlinExtractSuperDialogBase) -> Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractSuperclassDialog.<init>[ValueParameterDescriptorImpl]
 
-'KotlinExtractSuperclassHandler' @ [38:87] ==> public object KotlinExtractSuperclassHandler : KotlinExtractSuperHandlerBase defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass in file KotlinExtractSuperclassHandler.kt[FakeCallableDescriptorForObject]
-
 'REFACTORING_NAME' @ [38:118] ==> public final val REFACTORING_NAME: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.KotlinExtractSuperclassHandler[PropertyDescriptorImpl]
 
 'refactoring' @ [38:136] ==> value-parameter refactoring: (ExtractSuperInfo) -> Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractSuperclassDialog.<init>[ValueParameterDescriptorImpl]
@@ -18,11 +16,11 @@
 
 'originalClass' @ [49:17] ==> protected final val originalClass: KtClassOrObject defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractSuperclassDialog[PropertyDescriptorImpl]
 
-'extractClassMembers' @ [50:17] ==> public fun extractClassMembers(aClass: KtClassOrObject, collectSuperTypeEntries: Boolean = ..., filter: ((KtNamedDeclaration) -> Boolean)? = ...): List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo[SimpleFunctionDescriptorImpl]
+'extractClassMembers' @ [50:17] ==> public fun extractClassMembers(aClass: KtClassOrObject, collectSuperTypeEntries: Boolean = ..., filter: ((KtNamedDeclaration) -> Boolean)? = ...): List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo in file KotlinMemberInfoStorage.kt[SimpleFunctionDescriptorImpl]
 
 'originalClass' @ [50:37] ==> protected final val originalClass: KtClassOrObject defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractSuperclassDialog[PropertyDescriptorImpl]
 
-'getInterfaceContainmentVerifier' @ [51:17] ==> public fun getInterfaceContainmentVerifier(getMemberInfos: () -> List<KotlinMemberInfo>): (KtNamedDeclaration) -> Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'getInterfaceContainmentVerifier' @ [51:17] ==> public fun getInterfaceContainmentVerifier(getMemberInfos: () -> List<KotlinMemberInfo>): (KtNamedDeclaration) -> Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpUtils.kt[SimpleFunctionDescriptorImpl]
 
 'selectedMembers' @ [51:51] ==> public final val selectedMembers: List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractSuperclassDialog[PropertyDescriptorImpl]
 

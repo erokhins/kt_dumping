@@ -111,8 +111,6 @@ Inferred types:
 
 'endsWith' @ [55:22] ==> public fun String.endsWith(suffix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'KotlinJavascriptMetadataUtils' @ [55:31] ==> public object KotlinJavascriptMetadataUtils defined in org.jetbrains.kotlin.utils in file KotlinJavascriptMetadataUtils.kt[FakeCallableDescriptorForObject]
-
 'JS_EXT' @ [55:61] ==> public const final val JS_EXT: String defined in org.jetbrains.kotlin.utils.KotlinJavascriptMetadataUtils[PropertyDescriptorImpl]
 
 'lib' @ [56:17] ==> value-parameter lib: File defined in org.jetbrains.kotlin.utils.JsLibraryUtils.traverseJsLibrary[ValueParameterDescriptorImpl]
@@ -129,11 +127,7 @@ Inferred types:
 
 'withReplacedExtensionOrNull' @ [57:34] ==> public fun File.withReplacedExtensionOrNull(oldExt: String, newExt: String): File? defined in org.jetbrains.kotlin.utils.fileUtils in file fileUtils.kt[SimpleFunctionDescriptorImpl]
 
-'KotlinJavascriptMetadataUtils' @ [58:25] ==> public object KotlinJavascriptMetadataUtils defined in org.jetbrains.kotlin.utils in file KotlinJavascriptMetadataUtils.kt[FakeCallableDescriptorForObject]
-
 'META_JS_SUFFIX' @ [58:55] ==> public const final val META_JS_SUFFIX: String defined in org.jetbrains.kotlin.utils.KotlinJavascriptMetadataUtils[PropertyDescriptorImpl]
-
-'KotlinJavascriptMetadataUtils' @ [58:71] ==> public object KotlinJavascriptMetadataUtils defined in org.jetbrains.kotlin.utils in file KotlinJavascriptMetadataUtils.kt[FakeCallableDescriptorForObject]
 
 'JS_EXT' @ [58:101] ==> public const final val JS_EXT: String defined in org.jetbrains.kotlin.utils.KotlinJavascriptMetadataUtils[PropertyDescriptorImpl]
 
@@ -214,8 +208,6 @@ Inferred types:
 'relativePath' @ [83:17] ==> val relativePath: String defined in org.jetbrains.kotlin.utils.JsLibraryUtils.processDirectory.<anonymous>[LocalVariableDescriptor]
 
 'endsWith' @ [83:30] ==> public fun String.endsWith(suffix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'KotlinJavascriptMetadataUtils' @ [83:39] ==> public object KotlinJavascriptMetadataUtils defined in org.jetbrains.kotlin.utils in file KotlinJavascriptMetadataUtils.kt[FakeCallableDescriptorForObject]
 
 'JS_EXT' @ [83:69] ==> public const final val JS_EXT: String defined in org.jetbrains.kotlin.utils.KotlinJavascriptMetadataUtils[PropertyDescriptorImpl]
 
@@ -364,8 +356,6 @@ Inferred types:
 
 'endsWith' @ [124:35] ==> public fun String.endsWith(suffix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'KotlinJavascriptMetadataUtils' @ [124:44] ==> public object KotlinJavascriptMetadataUtils defined in org.jetbrains.kotlin.utils in file KotlinJavascriptMetadataUtils.kt[FakeCallableDescriptorForObject]
-
 'JS_EXT' @ [124:74] ==> public const final val JS_EXT: String defined in org.jetbrains.kotlin.utils.KotlinJavascriptMetadataUtils[PropertyDescriptorImpl]
 
 'getSuggestedPath' @ [125:44] ==> private final fun getSuggestedPath(path: String): String? defined in org.jetbrains.kotlin.utils.JsLibraryUtils[SimpleFunctionDescriptorImpl]
@@ -394,19 +384,13 @@ Inferred types:
 
 'endsWith' @ [131:40] ==> public fun String.endsWith(suffix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'KotlinJavascriptMetadataUtils' @ [131:49] ==> public object KotlinJavascriptMetadataUtils defined in org.jetbrains.kotlin.utils in file KotlinJavascriptMetadataUtils.kt[FakeCallableDescriptorForObject]
-
 'JS_MAP_EXT' @ [131:79] ==> public const final val JS_MAP_EXT: String defined in org.jetbrains.kotlin.utils.KotlinJavascriptMetadataUtils[PropertyDescriptorImpl]
 
 'entryName' @ [132:51] ==> val entryName: (String..String?) defined in org.jetbrains.kotlin.utils.JsLibraryUtils.traverseArchive[LocalVariableDescriptor]
 
 'removeSuffix' @ [132:61] ==> public fun String.removeSuffix(suffix: CharSequence): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'KotlinJavascriptMetadataUtils' @ [132:74] ==> public object KotlinJavascriptMetadataUtils defined in org.jetbrains.kotlin.utils in file KotlinJavascriptMetadataUtils.kt[FakeCallableDescriptorForObject]
-
 'JS_MAP_EXT' @ [132:104] ==> public const final val JS_MAP_EXT: String defined in org.jetbrains.kotlin.utils.KotlinJavascriptMetadataUtils[PropertyDescriptorImpl]
-
-'KotlinJavascriptMetadataUtils' @ [133:51] ==> public object KotlinJavascriptMetadataUtils defined in org.jetbrains.kotlin.utils in file KotlinJavascriptMetadataUtils.kt[FakeCallableDescriptorForObject]
 
 'JS_EXT' @ [133:81] ==> public const final val JS_EXT: String defined in org.jetbrains.kotlin.utils.KotlinJavascriptMetadataUtils[PropertyDescriptorImpl]
 
@@ -489,8 +473,6 @@ Inferred types:
 'systemIndependentPath' @ [163:13] ==> val systemIndependentPath: String defined in org.jetbrains.kotlin.utils.JsLibraryUtils.getSuggestedPath[LocalVariableDescriptor]
 
 'startsWith' @ [163:35] ==> public fun String.startsWith(prefix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'LibraryUtils' @ [163:46] ==> public object LibraryUtils defined in org.jetbrains.kotlin.utils in file LibraryUtils.kt[FakeCallableDescriptorForObject]
 
 'META_INF' @ [163:59] ==> public final val META_INF: String defined in org.jetbrains.kotlin.utils.LibraryUtils[PropertyDescriptorImpl]
 

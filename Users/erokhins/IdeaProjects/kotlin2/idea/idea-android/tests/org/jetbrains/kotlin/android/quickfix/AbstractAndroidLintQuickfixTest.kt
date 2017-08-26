@@ -91,6 +91,8 @@ Inferred types:
 
 'String' @ [49:87] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'trim' @ [49:95] ==> @InlineOnly public inline fun String.trim(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'myFixture' @ [50:13] ==> protected/*protected and package*/ final var myFixture: (JavaCodeInsightTestFixture..JavaCodeInsightTestFixture?) defined in org.jetbrains.kotlin.android.quickfix.AbstractAndroidLintQuickfixTest[JavaPropertyDescriptor]
 
 'copyFileToProject' @ [50:23] ==> @NotNull public abstract fun copyFileToProject(@NotNull p0: String, @NotNull p1: String): VirtualFile defined in com.intellij.testFramework.fixtures.JavaCodeInsightTestFixture[JavaMethodDescriptor]

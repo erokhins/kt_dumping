@@ -99,7 +99,7 @@ Inferred types:
 
 'headerDeclaration' @ [76:17] ==> value-parameter headerDeclaration: KtDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinPsiProcessor.prepareRenaming.<anonymous>[ValueParameterDescriptorImpl]
 
-'headerImplementations' @ [76:35] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerImplementations' @ [76:35] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'forEach' @ [76:59] ==> @HidesMembers public inline fun <T> Iterable<KtDeclaration>.forEach(action: (KtDeclaration) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -111,14 +111,11 @@ Inferred types:
 
 'safeNewName' @ [76:86] ==> val safeNewName: String defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinPsiProcessor.prepareRenaming[LocalVariableDescriptor]
 
-'UserDataProperty' @ [81:73] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<List<UsageInfo>>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> PsiElement
-    <T : Any> -> List<UsageInfo>
+'getValue' @ [81:73] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [81:94] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(List<UsageInfo>..List<UsageInfo>?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<UsageInfo>
+    <T : (Any..Any?)> -> (kotlin.collections.List<com.intellij.usageView.UsageInfo>..kotlin.collections.List<com.intellij.usageView.UsageInfo>?)
 
 'reference' @ [84:19] ==> public final val UsageInfo.reference: PsiReference?[MyPropertyDescriptor]
 
@@ -158,7 +155,7 @@ Inferred types:
 
 'newName' @ [91:13] ==> value-parameter newName: String? defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinPsiProcessor.getPostRenameCallback[ValueParameterDescriptorImpl]
 
-'Runnable' @ [93:16] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [93:16] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'element' @ [94:13] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinPsiProcessor.getPostRenameCallback[ValueParameterDescriptorImpl]
 

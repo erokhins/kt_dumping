@@ -6,7 +6,7 @@
 
 'resultingDescriptor' @ [32:65] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'returnType' @ [32:85] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -18,7 +18,7 @@ Inferred types:
 
 'call' @ [35:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'rangeCall' @ [35:48] ==> protected final val rangeCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.codegen.range.AbstractBoundedValue[PropertyDescriptorImpl]
 

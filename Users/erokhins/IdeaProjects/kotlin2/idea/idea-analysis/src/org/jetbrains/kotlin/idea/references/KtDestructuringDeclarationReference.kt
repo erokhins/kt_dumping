@@ -14,7 +14,7 @@ Inferred types:
 
 'element' @ [32:78] ==> public final val KtDestructuringDeclarationReference.element: (KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?)[MyPropertyDescriptor]
 
-'candidateDescriptor' @ [32:88] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.candidateDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'candidateDescriptor' @ [32:88] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.candidateDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 

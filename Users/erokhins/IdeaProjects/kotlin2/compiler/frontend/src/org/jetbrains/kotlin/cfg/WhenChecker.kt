@@ -145,8 +145,6 @@ Inferred types:
 Inferred types:
     <T> -> BooleanMissingCase
 
-'WhenOnNullableExhaustivenessChecker' @ [121:16] ==> private object WhenOnNullableExhaustivenessChecker defined in org.jetbrains.kotlin.cfg in file WhenChecker.kt[FakeCallableDescriptorForObject]
-
 'getMissingCases' @ [121:52] ==> public final fun getMissingCases(expression: KtWhenExpression, context: BindingContext, nullable: Boolean): List<WhenMissingCase> defined in org.jetbrains.kotlin.cfg.WhenOnNullableExhaustivenessChecker[SimpleFunctionDescriptorImpl]
 
 'expression' @ [121:68] ==> value-parameter expression: KtWhenExpression defined in org.jetbrains.kotlin.cfg.WhenOnBooleanExhaustivenessChecker.getMissingCases[ValueParameterDescriptorImpl]
@@ -241,15 +239,13 @@ Inferred types:
     <R> -> ClassDescriptor
 
 'if (it.modality == Modality.SEALED) it.deepSealedSubclasses
-            else setOf(it)' @ [149:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Collection<(ClassDescriptor..ClassDescriptor?)>, elseBranch: Collection<(ClassDescriptor..ClassDescriptor?)>): Collection<(ClassDescriptor..ClassDescriptor?)>[SimpleFunctionDescriptorImpl]
+            else setOf(it)' @ [149:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Collection<ClassDescriptor>, elseBranch: Collection<ClassDescriptor>): Collection<ClassDescriptor>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Collection<(org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Collection<ClassDescriptor>
 
 'it' @ [149:17] ==> value-parameter it: (ClassDescriptor..ClassDescriptor?) defined in org.jetbrains.kotlin.cfg.WhenOnClassExhaustivenessChecker.<get-deepSealedSubclasses>.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [149:20] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [149:32] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'SEALED' @ [149:41] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -303,8 +299,8 @@ Inferred types:
 
 'get' @ [164:43] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), key: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [164:62] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -329,8 +325,8 @@ Inferred types:
 
 'get' @ [169:25] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [169:44] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -376,8 +372,6 @@ Inferred types:
 'checkedDescriptor' @ [191:29] ==> val checkedDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.cfg.WhenOnClassExhaustivenessChecker.getMissingClassCases[LocalVariableDescriptor]
 
 'modality' @ [191:47] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [191:59] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'SEALED' @ [191:68] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -461,6 +455,8 @@ Inferred types:
     <T> -> ClassDescriptor
     <R> -> ClassMissingCase
 
+'ClassMissingCase' @ [210:56] ==> public constructor ClassMissingCase(descriptor: ClassDescriptor) defined in org.jetbrains.kotlin.cfg.ClassMissingCase[ClassConstructorDescriptorImpl]
+
 'WhenOnClassExhaustivenessChecker' @ [214:50] ==> public constructor WhenOnClassExhaustivenessChecker() defined in org.jetbrains.kotlin.cfg.WhenOnClassExhaustivenessChecker[ClassConstructorDescriptorImpl]
 
 'assert' @ [221:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -479,6 +475,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
+'isEnumEntry' @ [224:35] ==> public open fun isEnumEntry(@NotNull p0: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
+
 'filterIsInstance' @ [225:26] ==> public inline fun <reified R> Iterable<*>.filterIsInstance(): List<ClassDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified R> -> ClassDescriptor
@@ -494,8 +492,6 @@ Inferred types:
 'entryDescriptors' @ [227:49] ==> val entryDescriptors: Set<ClassDescriptor> defined in org.jetbrains.kotlin.cfg.WhenOnEnumExhaustivenessChecker.getMissingCases[LocalVariableDescriptor]
 
 'context' @ [227:67] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.cfg.WhenOnEnumExhaustivenessChecker.getMissingCases[ValueParameterDescriptorImpl]
-
-'WhenOnNullableExhaustivenessChecker' @ [228:16] ==> private object WhenOnNullableExhaustivenessChecker defined in org.jetbrains.kotlin.cfg in file WhenChecker.kt[FakeCallableDescriptorForObject]
 
 'getMissingCases' @ [228:52] ==> public final fun getMissingCases(expression: KtWhenExpression, context: BindingContext, nullable: Boolean): List<WhenMissingCase> defined in org.jetbrains.kotlin.cfg.WhenOnNullableExhaustivenessChecker[SimpleFunctionDescriptorImpl]
 
@@ -536,8 +532,6 @@ Inferred types:
     <T> -> ClassDescriptor
 
 'context' @ [249:72] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.cfg.WhenOnSealedExhaustivenessChecker.getMissingCases[ValueParameterDescriptorImpl]
-
-'WhenOnNullableExhaustivenessChecker' @ [250:16] ==> private object WhenOnNullableExhaustivenessChecker defined in org.jetbrains.kotlin.cfg in file WhenChecker.kt[FakeCallableDescriptorForObject]
 
 'getMissingCases' @ [250:52] ==> public final fun getMissingCases(expression: KtWhenExpression, context: BindingContext, nullable: Boolean): List<WhenMissingCase> defined in org.jetbrains.kotlin.cfg.WhenOnNullableExhaustivenessChecker[SimpleFunctionDescriptorImpl]
 
@@ -629,8 +623,8 @@ Inferred types:
 
 'get' @ [285:57] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>..ReadOnlySlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>?), key: (KtExpression..KtExpression?)): ExplicitSmartCasts? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> ExplicitSmartCasts
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts..org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts?)
 
 'SMARTCAST' @ [285:61] ==> public final val SMARTCAST: (WritableSlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>..WritableSlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -756,7 +750,7 @@ Inferred types:
 
 'record' @ [312:23] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?), key: (KtWhenExpression..KtWhenExpression?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtWhenExpression
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtWhenExpression..org.jetbrains.kotlin.psi.KtWhenExpression?)
 
 'EXHAUSTIVE_WHEN' @ [312:45] ==> public final val EXHAUSTIVE_WHEN: (WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -831,7 +825,9 @@ Inferred types:
 
 'expression' @ [332:60] ==> public final val KtWhenConditionWithExpression.expression: KtExpression?[MyPropertyDescriptor]
 
-'ConstantExpressionEvaluator' @ [333:40] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [333:40] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CompileTimeConstant<*>?, right: CompileTimeConstant<*>): CompileTimeConstant<*>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CompileTimeConstant<*>
 
 'getConstant' @ [333:68] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[SimpleFunctionDescriptorImpl]
 
@@ -854,7 +850,7 @@ Inferred types:
 
 'contains' @ [335:46] ==> public open fun contains(element: CompileTimeConstant<*>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
-'constant' @ [335:55] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.cfg.WhenChecker.checkDuplicatedLabels[LocalVariableDescriptor]
+'constant' @ [335:55] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.cfg.WhenChecker.checkDuplicatedLabels[LocalVariableDescriptor]
 
 'trace' @ [336:29] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.cfg.WhenChecker.checkDuplicatedLabels[ValueParameterDescriptorImpl]
 
@@ -870,7 +866,7 @@ Inferred types:
 
 'add' @ [339:46] ==> public open fun add(element: CompileTimeConstant<*>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
-'constant' @ [339:50] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.cfg.WhenChecker.checkDuplicatedLabels[LocalVariableDescriptor]
+'constant' @ [339:50] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.cfg.WhenChecker.checkDuplicatedLabels[LocalVariableDescriptor]
 
 'condition' @ [344:45] ==> val condition: (KtWhenCondition..KtWhenCondition?) defined in org.jetbrains.kotlin.cfg.WhenChecker.checkDuplicatedLabels[LocalVariableDescriptor]
 
@@ -880,8 +876,8 @@ Inferred types:
 
 'get' @ [345:42] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), key: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [345:61] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

@@ -46,11 +46,11 @@
 
 'java' @ [52:46] ==> public val <T> KClass<out VirtualFileKotlinClass>.java: Class<out VirtualFileKotlinClass> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> VirtualFileKotlinClass
+    <T> -> Captured(out VirtualFileKotlinClass)
 
 'simpleName' @ [52:51] ==> public final val <T : (Any..Any?)> Class<out VirtualFileKotlinClass>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> VirtualFileKotlinClass
+    <T : (Any..Any?)> -> Captured(out VirtualFileKotlinClass)
 
 'file' @ [52:65] ==> public final val file: VirtualFile defined in org.jetbrains.kotlin.load.kotlin.VirtualFileKotlinClass[PropertyDescriptorImpl]
 
@@ -98,7 +98,7 @@ Inferred types:
 
 'create' @ [66:58] ==> @Nullable public open fun <T : (FileBasedKotlinClass..FileBasedKotlinClass?)> create(@NotNull fileContents: ByteArray, @NotNull factory: ((ClassId..ClassId?), (Int..Int?), (KotlinClassHeader..KotlinClassHeader?), (FileBasedKotlinClass.InnerClassesInfo..FileBasedKotlinClass.InnerClassesInfo?)) -> (VirtualFileKotlinClass..VirtualFileKotlinClass?)): VirtualFileKotlinClass? defined in org.jetbrains.kotlin.load.kotlin.FileBasedKotlinClass[JavaMethodDescriptor]
 Inferred types:
-    <T : (FileBasedKotlinClass..FileBasedKotlinClass?)> -> VirtualFileKotlinClass
+    <T : (FileBasedKotlinClass..FileBasedKotlinClass?)> -> (org.jetbrains.kotlin.load.kotlin.VirtualFileKotlinClass..org.jetbrains.kotlin.load.kotlin.VirtualFileKotlinClass?)
 
 'byteContent' @ [66:65] ==> val byteContent: ByteArray defined in org.jetbrains.kotlin.load.kotlin.VirtualFileKotlinClass.Factory.create.<anonymous>[LocalVariableDescriptor]
 

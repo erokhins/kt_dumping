@@ -10,7 +10,7 @@ Inferred types:
 
 'type' @ [38:13] ==> value-parameter type: Type defined in org.jetbrains.kotlin.codegen.range.comparison.getComparisonGeneratorForPrimitiveType[ValueParameterDescriptorImpl]
 
-'isRepresentedAsPrimitiveInt' @ [38:18] ==> private fun Type.isRepresentedAsPrimitiveInt(): Boolean defined in org.jetbrains.kotlin.codegen.range.comparison[SimpleFunctionDescriptorImpl]
+'isRepresentedAsPrimitiveInt' @ [38:18] ==> private fun Type.isRepresentedAsPrimitiveInt(): Boolean defined in org.jetbrains.kotlin.codegen.range.comparison in file ComparisonGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'IntComparisonGenerator' @ [38:51] ==> public object IntComparisonGenerator : ComparisonGenerator defined in org.jetbrains.kotlin.codegen.range.comparison in file IntComparisonGenerator.kt[FakeCallableDescriptorForObject]
 
@@ -42,7 +42,7 @@ Inferred types:
 
 'resultingDescriptor' @ [46:27] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [48:24] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.codegen.range.comparison.getComparisonGeneratorForRangeContainsCall[LocalVariableDescriptor]
 
@@ -112,17 +112,17 @@ Inferred types:
 
 'asmElementType' @ [61:9] ==> val asmElementType: Type defined in org.jetbrains.kotlin.codegen.range.comparison.getComparisonGeneratorForRangeContainsCall[LocalVariableDescriptor]
 
-'isRepresentedAsPrimitiveInt' @ [61:24] ==> private fun Type.isRepresentedAsPrimitiveInt(): Boolean defined in org.jetbrains.kotlin.codegen.range.comparison[SimpleFunctionDescriptorImpl]
+'isRepresentedAsPrimitiveInt' @ [61:24] ==> private fun Type.isRepresentedAsPrimitiveInt(): Boolean defined in org.jetbrains.kotlin.codegen.range.comparison in file ComparisonGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'asmValueParameterType' @ [61:57] ==> val asmValueParameterType: Type defined in org.jetbrains.kotlin.codegen.range.comparison.getComparisonGeneratorForRangeContainsCall[LocalVariableDescriptor]
 
-'isRepresentedAsPrimitiveInt' @ [61:79] ==> private fun Type.isRepresentedAsPrimitiveInt(): Boolean defined in org.jetbrains.kotlin.codegen.range.comparison[SimpleFunctionDescriptorImpl]
+'isRepresentedAsPrimitiveInt' @ [61:79] ==> private fun Type.isRepresentedAsPrimitiveInt(): Boolean defined in org.jetbrains.kotlin.codegen.range.comparison in file ComparisonGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'IntComparisonGenerator' @ [62:13] ==> public object IntComparisonGenerator : ComparisonGenerator defined in org.jetbrains.kotlin.codegen.range.comparison in file IntComparisonGenerator.kt[FakeCallableDescriptorForObject]
 
 'asmElementType' @ [64:9] ==> val asmElementType: Type defined in org.jetbrains.kotlin.codegen.range.comparison.getComparisonGeneratorForRangeContainsCall[LocalVariableDescriptor]
 
-'isRepresentedAsPrimitiveInt' @ [64:24] ==> private fun Type.isRepresentedAsPrimitiveInt(): Boolean defined in org.jetbrains.kotlin.codegen.range.comparison[SimpleFunctionDescriptorImpl]
+'isRepresentedAsPrimitiveInt' @ [64:24] ==> private fun Type.isRepresentedAsPrimitiveInt(): Boolean defined in org.jetbrains.kotlin.codegen.range.comparison in file ComparisonGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'asmValueParameterType' @ [64:57] ==> val asmValueParameterType: Type defined in org.jetbrains.kotlin.codegen.range.comparison.getComparisonGeneratorForRangeContainsCall[LocalVariableDescriptor]
 
@@ -130,7 +130,7 @@ Inferred types:
 
 'asmValueParameterType' @ [65:9] ==> val asmValueParameterType: Type defined in org.jetbrains.kotlin.codegen.range.comparison.getComparisonGeneratorForRangeContainsCall[LocalVariableDescriptor]
 
-'isRepresentedAsPrimitiveInt' @ [65:31] ==> private fun Type.isRepresentedAsPrimitiveInt(): Boolean defined in org.jetbrains.kotlin.codegen.range.comparison[SimpleFunctionDescriptorImpl]
+'isRepresentedAsPrimitiveInt' @ [65:31] ==> private fun Type.isRepresentedAsPrimitiveInt(): Boolean defined in org.jetbrains.kotlin.codegen.range.comparison in file ComparisonGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'asmElementType' @ [65:64] ==> val asmElementType: Type defined in org.jetbrains.kotlin.codegen.range.comparison.getComparisonGeneratorForRangeContainsCall[LocalVariableDescriptor]
 

@@ -78,7 +78,7 @@ Inferred types:
 
 'getParentStubOfType' @ [59:18] ==> @Nullable public abstract fun <E : (PsiElement..PsiElement?)> getParentStubOfType(@NotNull p0: Class<(KtImportDirective..KtImportDirective?)>): KtImportDirective? defined in org.jetbrains.kotlin.psi.stubs.KotlinPlaceHolderStub[JavaMethodDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> KtImportDirective
+    <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtImportDirective..org.jetbrains.kotlin.psi.KtImportDirective?)
 
 'java' @ [59:63] ==> public val <T> KClass<KtImportDirective>.java: Class<KtImportDirective> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -88,7 +88,7 @@ Inferred types:
 
 'getParentStubOfType' @ [60:18] ==> @Nullable public abstract fun <E : (PsiElement..PsiElement?)> getParentStubOfType(@NotNull p0: Class<(KtPackageDirective..KtPackageDirective?)>): KtPackageDirective? defined in org.jetbrains.kotlin.psi.stubs.KotlinPlaceHolderStub[JavaMethodDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> KtPackageDirective
+    <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtPackageDirective..org.jetbrains.kotlin.psi.KtPackageDirective?)
 
 'java' @ [60:64] ==> public val <T> KClass<KtPackageDirective>.java: Class<KtPackageDirective> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -110,7 +110,7 @@ Inferred types:
 
 'getChildrenByType' @ [66:36] ==> @NotNull public abstract fun <E : (PsiElement..PsiElement?)> getChildrenByType(@NotNull p0: TokenSet, @NotNull p1: ArrayFactory<(KtExpression..KtExpression?)>): (Array<(KtExpression..KtExpression?)>..Array<out (KtExpression..KtExpression?)>) defined in org.jetbrains.kotlin.psi.stubs.KotlinPlaceHolderStub[JavaMethodDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> KtExpression
+    <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'INSIDE_DIRECTIVE_EXPRESSIONS' @ [66:54] ==> public final val INSIDE_DIRECTIVE_EXPRESSIONS: (TokenSet..TokenSet?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 

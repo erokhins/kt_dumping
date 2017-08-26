@@ -94,8 +94,6 @@ Inferred types:
 
 'createClass' @ [68:45] ==> public final fun createClass(text: String): KtClass defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
 
-'IdeDescriptorRenderers' @ [68:57] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE_SHORT_NAMES_IN_TYPES' @ [68:80] ==> @field:JvmField public final val SOURCE_CODE_SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'render' @ [68:113] ==> public abstract fun render(declarationDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -295,8 +293,6 @@ Inferred types:
     <R> -> (java.lang.StringBuilder..java.lang.StringBuilder?)
 
 'append' @ [115:33] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
-
-'IdeDescriptorRenderers' @ [115:40] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE_SHORT_NAMES_IN_TYPES' @ [115:63] ==> @field:JvmField public final val SOURCE_CODE_SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 

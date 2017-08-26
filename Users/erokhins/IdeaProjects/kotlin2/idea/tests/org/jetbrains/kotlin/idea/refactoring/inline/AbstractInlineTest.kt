@@ -89,7 +89,7 @@ Inferred types:
 
 'getExtensions' @ [56:34] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(InlineActionHandler..InlineActionHandler?)>): (Array<(InlineActionHandler..InlineActionHandler?)>..Array<out (InlineActionHandler..InlineActionHandler?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> InlineActionHandler
+    <T : (Any..Any?)> -> (com.intellij.lang.refactoring.InlineActionHandler..com.intellij.lang.refactoring.InlineActionHandler?)
 
 'EP_NAME' @ [56:68] ==> public final val EP_NAME: (ExtensionPointName<(InlineActionHandler..InlineActionHandler?)>..ExtensionPointName<(InlineActionHandler..InlineActionHandler?)>?) defined in com.intellij.lang.refactoring.InlineActionHandler[JavaPropertyDescriptor]
 

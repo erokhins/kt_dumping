@@ -313,7 +313,7 @@ Inferred types:
 
 'file' @ [160:28] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.search.PsiBasedClassResolver.canBeTargetReference[LocalVariableDescriptor]
 
-'getDefaultImports' @ [160:33] ==> private fun KtFile.getDefaultImports(): List<ImportPath> defined in org.jetbrains.kotlin.idea.search[SimpleFunctionDescriptorImpl]
+'getDefaultImports' @ [160:33] ==> private fun KtFile.getDefaultImports(): List<ImportPath> defined in org.jetbrains.kotlin.idea.search in file PsiBasedClassResolver.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [161:13] ==> var result: PsiBasedClassResolver.Result defined in org.jetbrains.kotlin.idea.search.PsiBasedClassResolver.canBeTargetReference[LocalVariableDescriptor]
 
@@ -558,9 +558,9 @@ Inferred types:
                 importedFqName?.asString() == targetPackage -> return result.changeTo(Result.Found)
                 importedFqName?.asString() in conflictingPackages -> return result.changeTo(Result.FoundOther)
                 importedFqName?.asString() in packagesWithTypeAliases -> return Result.Ambiguity
-            }' @ [200:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Unit, entry1: Unit, entry2: Unit): Unit[SimpleFunctionDescriptorImpl]
+            }' @ [200:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Nothing, entry1: Nothing, entry2: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Unit
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Nothing
 
 'importedFqName' @ [201:17] ==> value-parameter importedFqName: FqName? defined in org.jetbrains.kotlin.idea.search.PsiBasedClassResolver.analyzeSingleImport[ValueParameterDescriptorImpl]
 
@@ -669,8 +669,6 @@ Inferred types:
 'versionSettings' @ [240:13] ==> val versionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.idea.search.getDefaultImports[LocalVariableDescriptor]
 
 'supportsFeature' @ [240:29] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [240:45] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'DefaultImportOfPackageKotlinComparisons' @ [240:61] ==> enum entry DefaultImportOfPackageKotlinComparisons defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

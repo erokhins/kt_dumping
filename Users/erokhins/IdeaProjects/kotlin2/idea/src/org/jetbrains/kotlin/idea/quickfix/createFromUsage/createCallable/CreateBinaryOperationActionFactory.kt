@@ -121,7 +121,7 @@ Inferred types:
 
 'singletonList' @ [56:38] ==> public open fun <T : (Any..Any?)> singletonList(p0: (ParameterInfo..ParameterInfo?)): (MutableList<(ParameterInfo..ParameterInfo?)>..List<(ParameterInfo..ParameterInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ParameterInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterInfo..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterInfo?)
 
 'ParameterInfo' @ [56:52] ==> public constructor ParameterInfo(typeInfo: TypeInfo, preferredName: String? = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterInfo[ClassConstructorDescriptorImpl]
 

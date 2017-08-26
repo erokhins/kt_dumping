@@ -2,7 +2,7 @@
 
 'analyze' @ [26:13] ==> @NotNull public open fun <V : (Value..Value?)> analyze(@NotNull internalClassName: String, @NotNull node: MethodNode, @NotNull interpreter: Interpreter<(BasicValue..BasicValue?)>): (Array<(Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>..Array<out (Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>) defined in org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer[JavaMethodDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)
 
 'internalClassName' @ [26:21] ==> value-parameter internalClassName: String defined in org.jetbrains.kotlin.codegen.optimization.MethodVerifier.transform[ValueParameterDescriptorImpl]
 

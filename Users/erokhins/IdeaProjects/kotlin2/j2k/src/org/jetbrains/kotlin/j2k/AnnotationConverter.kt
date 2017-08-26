@@ -320,8 +320,6 @@ Inferred types:
 
 'Annotation' @ [94:21] ==> public constructor Annotation(name: Identifier, arguments: List<Pair<Identifier?, DeferredElement<Expression>>>, newLineAfter: Boolean, target: AnnotationUseTarget? = ...) defined in org.jetbrains.kotlin.j2k.ast.Annotation[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [94:32] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'withNoPrototype' @ [94:43] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
 'it' @ [94:59] ==> value-parameter it: Pair<String, String> defined in org.jetbrains.kotlin.j2k.AnnotationConverter.convertModifiersToAnnotations.<anonymous>[ValueParameterDescriptorImpl]
@@ -446,8 +444,6 @@ Inferred types:
     <TElement : Element> -> Annotation
 
 'annotation' @ [123:123] ==> value-parameter annotation: PsiAnnotation defined in org.jetbrains.kotlin.j2k.AnnotationConverter.convertAnnotation[ValueParameterDescriptorImpl]
-
-'CommentsAndSpacesInheritance' @ [123:135] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [123:164] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -601,11 +597,7 @@ Inferred types:
 
 'QualifiedExpression' @ [150:21] ==> public constructor QualifiedExpression(qualifier: Expression, identifier: Expression, dotPrototype: PsiElement?) defined in org.jetbrains.kotlin.j2k.ast.QualifiedExpression[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [150:41] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'withNoPrototype' @ [150:52] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
-
-'Identifier' @ [151:41] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [151:52] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1038,7 +1030,7 @@ Inferred types:
 
 'valueText' @ [250:35] ==> value-parameter valueText: String defined in org.jetbrains.kotlin.j2k.AnnotationConverter.convertArrayInitializerValue[ValueParameterDescriptorImpl]
 
-'createArrayInitializerExpression' @ [255:21] ==> public fun createArrayInitializerExpression(arrayType: ArrayType, initializers: List<Expression>, needExplicitType: Boolean = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'createArrayInitializerExpression' @ [255:21] ==> public fun createArrayInitializerExpression(arrayType: ArrayType, initializers: List<Expression>, needExplicitType: Boolean = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast in file Expressions.kt[SimpleFunctionDescriptorImpl]
 
 'expectedType' @ [255:54] ==> value-parameter expectedType: ArrayType defined in org.jetbrains.kotlin.j2k.AnnotationConverter.createArrayExpression[ValueParameterDescriptorImpl]
 

@@ -2,8 +2,6 @@
 
 'module' @ [29:38] ==> value-parameter module: ModuleDescriptor defined in org.jetbrains.kotlin.descriptors.impl.PackageFragmentDescriptorImpl.<init>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [29:46] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [29:58] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
 'fqName' @ [29:65] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.descriptors.impl.PackageFragmentDescriptorImpl.<init>[ValueParameterDescriptorImpl]

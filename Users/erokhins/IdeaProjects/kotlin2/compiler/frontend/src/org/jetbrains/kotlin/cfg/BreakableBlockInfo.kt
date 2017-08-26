@@ -12,7 +12,7 @@ Inferred types:
 
 'addAll' @ [31:21] ==> @SafeVarargs public open fun <T : (Any..Any?)> addAll(p0: (MutableCollection<in (Label..Label?)>..MutableCollection<in (Label..Label?)>?), vararg p1: (Label..Label?)): Boolean defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Label
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.Label..org.jetbrains.kotlin.cfg.Label?)
 
 'referablePoints' @ [31:28] ==> public final val referablePoints: MutableSet<Label> defined in org.jetbrains.kotlin.cfg.BreakableBlockInfo[PropertyDescriptorImpl]
 

@@ -2,8 +2,6 @@
 Inferred types:
     <T : (RunConfiguration..RunConfiguration?)> -> KotlinStandaloneScriptRunConfiguration
 
-'KotlinStandaloneScriptRunConfigurationType' @ [27:74] ==> public companion object defined in org.jetbrains.kotlin.idea.run.script.standalone.KotlinStandaloneScriptRunConfigurationType[FakeCallableDescriptorForObject]
-
 'instance' @ [27:117] ==> public final val instance: KotlinStandaloneScriptRunConfigurationType defined in org.jetbrains.kotlin.idea.run.script.standalone.KotlinStandaloneScriptRunConfigurationType.Companion[PropertyDescriptorImpl]
 
 'configuration' @ [33:9] ==> value-parameter configuration: KotlinStandaloneScriptRunConfiguration defined in org.jetbrains.kotlin.idea.run.script.standalone.KotlinStandaloneScriptRunConfigurationProducer.setupConfigurationFromContext[ValueParameterDescriptorImpl]
@@ -26,7 +24,7 @@ Inferred types:
 
 'location' @ [40:35] ==> val location: (Location<(PsiElement..PsiElement?)>..Location<*>) defined in org.jetbrains.kotlin.idea.run.script.standalone.KotlinStandaloneScriptRunConfigurationProducer.pathFromContext[LocalVariableDescriptor]
 
-'psiElement' @ [40:44] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [40:44] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 

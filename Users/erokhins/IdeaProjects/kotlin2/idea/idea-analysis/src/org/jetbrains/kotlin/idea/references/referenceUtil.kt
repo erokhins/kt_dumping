@@ -113,8 +113,6 @@ Inferred types:
 
 'name' @ [84:54] ==> public final val PsiNamedElement.name: String?[MyPropertyDescriptor]
 
-'OperatorNameConventions' @ [84:62] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INVOKE' @ [84:86] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'asString' @ [84:93] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
@@ -347,7 +345,7 @@ Inferred types:
 
 'it' @ [137:13] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.idea.references.matchesTarget.<anonymous>[ValueParameterDescriptorImpl]
 
-'isConstructorOf' @ [137:16] ==> private fun PsiElement.isConstructorOf(unwrappedCandidate: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.references[SimpleFunctionDescriptorImpl]
+'isConstructorOf' @ [137:16] ==> private fun PsiElement.isConstructorOf(unwrappedCandidate: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.references in file referenceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'unwrappedCandidate' @ [137:32] ==> val unwrappedCandidate: PsiElement defined in org.jetbrains.kotlin.idea.references.matchesTarget[LocalVariableDescriptor]
 
@@ -677,7 +675,7 @@ Inferred types:
 
 'resultingDescriptor' @ [244:41] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'name' @ [244:61] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 

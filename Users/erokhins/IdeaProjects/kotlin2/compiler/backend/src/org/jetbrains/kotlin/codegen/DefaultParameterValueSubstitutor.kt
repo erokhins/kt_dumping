@@ -132,8 +132,6 @@ Inferred types:
 
 'modality' @ [137:41] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [137:53] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [137:62] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'functionDescriptor' @ [137:71] ==> value-parameter functionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.DefaultParameterValueSubstitutor.generateOverloadWithSubstitutedParameters[ValueParameterDescriptorImpl]
@@ -343,8 +341,8 @@ Inferred types:
 
 'get' @ [173:52] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(ClassDescriptor..ClassDescriptor?), (MutableClosure..MutableClosure?)>..ReadOnlySlice<(ClassDescriptor..ClassDescriptor?), (MutableClosure..MutableClosure?)>?), p1: (ClassDescriptor..ClassDescriptor?)): MutableClosure? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassDescriptor
-    <V : (Any..Any?)> -> MutableClosure
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.codegen.binding.MutableClosure..org.jetbrains.kotlin.codegen.binding.MutableClosure?)
 
 'CLOSURE' @ [173:71] ==> public final val CLOSURE: (WritableSlice<(ClassDescriptor..ClassDescriptor?), (MutableClosure..MutableClosure?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (MutableClosure..MutableClosure?)>?) defined in org.jetbrains.kotlin.codegen.binding.CodegenBinding[JavaPropertyDescriptor]
 

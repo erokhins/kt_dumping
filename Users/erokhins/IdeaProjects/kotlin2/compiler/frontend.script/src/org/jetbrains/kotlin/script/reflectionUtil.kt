@@ -2,9 +2,9 @@
 
 'getConstructor' @ [27:22] ==> @CallerSensitive public open fun getConstructor(vararg p0: (Class<*>..Class<*>?)): (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?) defined in java.lang.Class[JavaMethodDescriptor]
 
-'Array' @ [27:37] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [27:37] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@11ad9d2c
 
 'java' @ [27:58] ==> public val <T> KClass<Array<String>>.java: Class<Array<String>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -22,21 +22,21 @@ Inferred types:
 
 'kotlin' @ [30:28] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
-'constructors' @ [30:35] ==> public abstract val constructors: Collection<KFunction<Any>> defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
+'constructors' @ [30:35] ==> public abstract val constructors: Collection<KFunction<(Any..Any?)>> defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
-'tryCreateCallableMappingFromStringArgs' @ [31:27] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
+'tryCreateCallableMappingFromStringArgs' @ [31:27] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script in file reflectionUtil.kt[SimpleFunctionDescriptorImpl]
 
-'ctor' @ [31:66] ==> val ctor: KFunction<Any> defined in org.jetbrains.kotlin.script.tryConstructClassFromStringArgs[LocalVariableDescriptor]
+'ctor' @ [31:66] ==> val ctor: KFunction<(Any..Any?)> defined in org.jetbrains.kotlin.script.tryConstructClassFromStringArgs[LocalVariableDescriptor]
 
 'args' @ [31:72] ==> value-parameter args: List<String> defined in org.jetbrains.kotlin.script.tryConstructClassFromStringArgs[ValueParameterDescriptorImpl]
 
 'mapping' @ [32:17] ==> val mapping: Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script.tryConstructClassFromStringArgs[LocalVariableDescriptor]
 
-'ctor' @ [34:28] ==> val ctor: KFunction<Any> defined in org.jetbrains.kotlin.script.tryConstructClassFromStringArgs[LocalVariableDescriptor]
+'ctor' @ [34:28] ==> val ctor: KFunction<(Any..Any?)> defined in org.jetbrains.kotlin.script.tryConstructClassFromStringArgs[LocalVariableDescriptor]
 
-'callBy' @ [34:33] ==> public abstract fun callBy(args: Map<KParameter, Any?>): Any defined in kotlin.reflect.KFunction[DeserializedSimpleFunctionDescriptor]
+'callBy' @ [34:33] ==> public abstract fun callBy(args: Map<KParameter, Any?>): (Any..Any?) defined in kotlin.reflect.KFunction[DeserializedSimpleFunctionDescriptor]
 
 'mapping' @ [34:40] ==> val mapping: Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script.tryConstructClassFromStringArgs[LocalVariableDescriptor]
 
@@ -316,11 +316,11 @@ Inferred types:
 
 'java' @ [96:46] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'isArray' @ [96:51] ==> public final val <T : (Any..Any?)> Class<out Any>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'converter' @ [98:35] ==> value-parameter converter: ArgsConverter<T> defined in org.jetbrains.kotlin.script.tryCreateCallableMapping[ValueParameterDescriptorImpl]
 
@@ -510,6 +510,8 @@ Inferred types:
 Inferred types:
     <T> -> KType
 
+'allowsNulls' @ [137:76] ==> private fun KType.allowsNulls(): Boolean defined in org.jetbrains.kotlin.script in file reflectionUtil.kt[SimpleFunctionDescriptorImpl]
+
 'arg' @ [143:21] ==> value-parameter arg: NamedArgument<String> defined in org.jetbrains.kotlin.script.StringArgsConverter.tryConvertSingle[ValueParameterDescriptorImpl]
 
 'value' @ [143:25] ==> public final val value: String? defined in org.jetbrains.kotlin.script.NamedArgument[PropertyDescriptorImpl]
@@ -527,9 +529,9 @@ Inferred types:
             Double::class -> value.toDoubleOrNull()
             Boolean::class -> value.toBoolean()
             else -> null
-        }' @ [145:31] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?, entry1: {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?, entry2: {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?, entry3: {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?, entry4: {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?, entry5: {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?, entry6: {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?, entry7: {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?, entry8: {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?, entry9: {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?): {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?[SimpleFunctionDescriptorImpl]
+        }' @ [145:31] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any?, entry1: Any?, entry2: Any?, entry3: Any?, entry4: Any?, entry5: Any?, entry6: Any?, entry7: Any?, entry8: Any?, entry9: Any?): Any?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & String & Int}>}?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any?
 
 'parameter' @ [145:37] ==> value-parameter parameter: KParameter defined in org.jetbrains.kotlin.script.StringArgsConverter.tryConvertSingle[ValueParameterDescriptorImpl]
 
@@ -668,9 +670,9 @@ Inferred types:
                     DoubleArray::class -> args.map { it?.toDoubleOrNull() }
                     BooleanArray::class -> args.map { it?.toBoolean() }
                     else -> null
-                }' @ [176:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?, entry1: Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?, entry2: Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?, entry3: Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?, entry4: Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?, entry5: Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?, entry6: Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?, entry7: Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?, entry8: Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?): Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?[SimpleFunctionDescriptorImpl]
+                }' @ [176:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Sequence<Any?>?, entry1: Sequence<Any?>?, entry2: Sequence<Any?>?, entry3: Sequence<Any?>?, entry4: Sequence<Any?>?, entry5: Sequence<Any?>?, entry6: Sequence<Any?>?, entry7: Sequence<Any?>?, entry8: Sequence<Any?>?): Sequence<Any?>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Sequence<{java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>}?>?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Sequence<Any?>?
 
 'type' @ [176:23] ==> value-parameter type: KType defined in org.jetbrains.kotlin.script.StringArgsConverter.tryConvertVararg.convertPrimitivesArray[ValueParameterDescriptorImpl]
 
@@ -764,21 +766,21 @@ Inferred types:
 
 'toBoolean' @ [184:59] ==> @InlineOnly public inline fun String.toBoolean(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'toList' @ [186:20] ==> public fun <T> Sequence<{java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}>.toList(): List<{java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'toList' @ [186:20] ==> public fun <T> Sequence<Any?>.toList(): List<Any?> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}
+    <T> -> Any?
 
-'takeUnless' @ [186:30] ==> @InlineOnly @SinceKotlin public inline fun <T> List<{java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}>.takeUnless(predicate: (List<{java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}>) -> Boolean): List<{java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'takeUnless' @ [186:30] ==> @InlineOnly @SinceKotlin public inline fun <T> List<Any?>.takeUnless(predicate: (List<Any?>) -> Boolean): List<Any?>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<{java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}>
+    <T> -> List<Any?>
 
-'in' @ [186:43] ==> public abstract fun contains(element: {java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
+'in' @ [186:43] ==> public abstract fun contains(element: Any?): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [186:51] ==> value-parameter it: List<{java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}> defined in org.jetbrains.kotlin.script.StringArgsConverter.tryConvertVararg.convertPrimitivesArray.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [186:51] ==> value-parameter it: List<Any?> defined in org.jetbrains.kotlin.script.StringArgsConverter.tryConvertVararg.convertPrimitivesArray.<anonymous>[ValueParameterDescriptorImpl]
 
-'toTypedArray' @ [186:57] ==> public inline fun <reified T> Collection<{java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}>.toTypedArray(): Array<{java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toTypedArray' @ [186:57] ==> public inline fun <reified T> Collection<Any?>.toTypedArray(): Array<Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified T> -> {java.io.Serializable? & Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}>?}
+    <reified T> -> Any?
 
 'parameter' @ [188:29] ==> value-parameter parameter: KParameter defined in org.jetbrains.kotlin.script.StringArgsConverter.tryConvertVararg[ValueParameterDescriptorImpl]
 
@@ -790,11 +792,11 @@ Inferred types:
 
 'java' @ [189:38] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'isArray' @ [189:43] ==> public final val <T : (Any..Any?)> Class<out Any>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'sequenceOf' @ [190:32] ==> public fun <T> sequenceOf(vararg elements: String?): Sequence<String?> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -883,9 +885,9 @@ Inferred types:
                     DoubleArray::class -> (arg as? Array<Double>)?.toDoubleArray()
                     BooleanArray::class -> (arg as? Array<Boolean>)?.toBooleanArray()
                     else -> null
-                }' @ [213:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {kotlin.Cloneable & java.io.Serializable}?, entry1: {kotlin.Cloneable & java.io.Serializable}?, entry2: {kotlin.Cloneable & java.io.Serializable}?, entry3: {kotlin.Cloneable & java.io.Serializable}?, entry4: {kotlin.Cloneable & java.io.Serializable}?, entry5: {kotlin.Cloneable & java.io.Serializable}?, entry6: {kotlin.Cloneable & java.io.Serializable}?, entry7: {kotlin.Cloneable & java.io.Serializable}?, entry8: {kotlin.Cloneable & java.io.Serializable}?): {kotlin.Cloneable & java.io.Serializable}?[SimpleFunctionDescriptorImpl]
+                }' @ [213:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any?, entry1: Any?, entry2: Any?, entry3: Any?, entry4: Any?, entry5: Any?, entry6: Any?, entry7: Any?, entry8: Any?): Any?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {kotlin.Cloneable & java.io.Serializable}?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any?
 
 'type' @ [213:23] ==> value-parameter type: KType? defined in org.jetbrains.kotlin.script.AnyArgsConverter.tryConvertSingle.convertPrimitivesArray[ValueParameterDescriptorImpl]
 

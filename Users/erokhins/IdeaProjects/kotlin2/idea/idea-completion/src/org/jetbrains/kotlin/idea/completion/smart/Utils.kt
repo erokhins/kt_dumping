@@ -258,7 +258,7 @@ Inferred types:
 
 'addTail' @ [126:25] ==> public fun LookupElement.addTail(tail: Tail?): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
-'mergeTails' @ [126:33] ==> public fun mergeTails(tails: Collection<Tail?>): Tail? defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'mergeTails' @ [126:33] ==> public fun mergeTails(tails: Collection<Tail?>): Tail? defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'matchedExpectedInfos' @ [126:44] ==> value-parameter matchedExpectedInfos: Collection<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.addTailAndNameSimilarity[ValueParameterDescriptorImpl]
 
@@ -271,7 +271,7 @@ Inferred types:
 
 'tail' @ [126:74] ==> public final val tail: Tail? defined in org.jetbrains.kotlin.idea.core.ExpectedInfo[DeserializedPropertyDescriptor]
 
-'calcNameSimilarity' @ [127:22] ==> public fun calcNameSimilarity(name: String, expectedInfos: Collection<ExpectedInfo>): Int defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'calcNameSimilarity' @ [127:22] ==> public fun calcNameSimilarity(name: String, expectedInfos: Collection<ExpectedInfo>): Int defined in org.jetbrains.kotlin.idea.completion.smart in file NameSimilarity.kt[SimpleFunctionDescriptorImpl]
 
 'lookupElement' @ [127:41] ==> val lookupElement: LookupElement defined in org.jetbrains.kotlin.idea.completion.smart.addTailAndNameSimilarity[LocalVariableDescriptor]
 
@@ -285,7 +285,7 @@ Inferred types:
 
 'putUserData' @ [129:23] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Int..Int?)>, @Nullable p1: Int?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'NAME_SIMILARITY_KEY' @ [129:35] ==> public val NAME_SIMILARITY_KEY: Key<Int> defined in org.jetbrains.kotlin.idea.completion.smart in file NameSimilarity.kt[PropertyDescriptorImpl]
 
@@ -387,7 +387,7 @@ Inferred types:
 
 'this' @ [165:70] ==> <this> defined in org.jetbrains.kotlin.idea.completion.smart.matchExpectedInfo[ReceiverParameterDescriptorImpl]
 
-'matchExpectedInfo' @ [165:76] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'matchExpectedInfo' @ [165:76] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'expectedInfo' @ [165:94] ==> value-parameter expectedInfo: ExpectedInfo defined in org.jetbrains.kotlin.idea.completion.smart.matchExpectedInfo[ValueParameterDescriptorImpl]
 
@@ -594,7 +594,7 @@ Inferred types:
 
 'it' @ [204:42] ==> value-parameter it: LookupElement defined in org.jetbrains.kotlin.idea.completion.smart.addLookupElements.<anonymous>[ValueParameterDescriptorImpl]
 
-'addTailAndNameSimilarity' @ [204:45] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'addTailAndNameSimilarity' @ [204:45] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'infos' @ [204:70] ==> val infos: MutableList<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.addLookupElements[LocalVariableDescriptor]
 
@@ -612,7 +612,7 @@ Inferred types:
 
 'makeNullableInfos' @ [208:35] ==> val makeNullableInfos: HashMap<ItemData<TDescriptor>, MutableList<ExpectedInfo>> defined in org.jetbrains.kotlin.idea.completion.smart.addLookupElements[LocalVariableDescriptor]
 
-'addLookupElementsForNullable' @ [209:13] ==> private fun MutableCollection<LookupElement>.addLookupElementsForNullable(factory: () -> Collection<LookupElement>, matchedInfos: Collection<ExpectedInfo>): Unit defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'addLookupElementsForNullable' @ [209:13] ==> private fun MutableCollection<LookupElement>.addLookupElementsForNullable(factory: () -> Collection<LookupElement>, matchedInfos: Collection<ExpectedInfo>): Unit defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'itemData' @ [209:44] ==> val itemData: ItemData<TDescriptor> defined in org.jetbrains.kotlin.idea.completion.smart.addLookupElements[LocalVariableDescriptor]
 
@@ -642,7 +642,7 @@ Inferred types:
 
 'element' @ [225:19] ==> var element: LookupElement defined in org.jetbrains.kotlin.idea.completion.smart.addLookupElementsForNullable.postProcess[LocalVariableDescriptor]
 
-'suppressAutoInsertion' @ [225:27] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'suppressAutoInsertion' @ [225:27] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [226:9] ==> var element: LookupElement defined in org.jetbrains.kotlin.idea.completion.smart.addLookupElementsForNullable.postProcess[LocalVariableDescriptor]
 
@@ -656,7 +656,7 @@ Inferred types:
 
 'element' @ [227:19] ==> var element: LookupElement defined in org.jetbrains.kotlin.idea.completion.smart.addLookupElementsForNullable.postProcess[LocalVariableDescriptor]
 
-'addTailAndNameSimilarity' @ [227:27] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'addTailAndNameSimilarity' @ [227:27] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'matchedInfos' @ [227:52] ==> value-parameter matchedInfos: Collection<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.addLookupElementsForNullable[ValueParameterDescriptorImpl]
 
@@ -790,7 +790,7 @@ Inferred types:
 
 'putUserData' @ [295:5] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(SmartCompletionItemPriority..SmartCompletionItemPriority?)>, @Nullable p1: SmartCompletionItemPriority?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SmartCompletionItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority..org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority?)
 
 'SMART_COMPLETION_ITEM_PRIORITY_KEY' @ [295:17] ==> public val SMART_COMPLETION_ITEM_PRIORITY_KEY: Key<SmartCompletionItemPriority> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[PropertyDescriptorImpl]
 

@@ -20,7 +20,7 @@ Inferred types:
 
 'resolveWithCaching' @ [49:61] ==> @NotNull public open fun <T : (PsiPolyVariantReference..PsiPolyVariantReference?)> resolveWithCaching(@NotNull p0: AbstractKtReference<T>, @NotNull p1: ResolveCache.PolyVariantResolver<(AbstractKtReference<T>..AbstractKtReference<T>?)>, p2: Boolean, p3: Boolean): (Array<(ResolveResult..ResolveResult?)>..Array<out (ResolveResult..ResolveResult?)>) defined in com.intellij.psi.impl.source.resolve.ResolveCache[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiPolyVariantReference..PsiPolyVariantReference?)> -> AbstractKtReference<T>
+    <T : (PsiPolyVariantReference..PsiPolyVariantReference?)> -> (org.jetbrains.kotlin.idea.references.AbstractKtReference<T>..org.jetbrains.kotlin.idea.references.AbstractKtReference<T>?)
 
 'this' @ [49:80] ==> <this> defined in org.jetbrains.kotlin.idea.references.AbstractKtReference[LazyClassReceiverParameterDescriptor]
 
@@ -50,11 +50,11 @@ Inferred types:
 
 'java' @ [74:43] ==> public val <T> KClass<out AbstractKtReference<T>>.java: Class<out AbstractKtReference<T>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AbstractKtReference<T>
+    <T> -> Captured(out AbstractKtReference<T>)
 
 'simpleName' @ [74:48] ==> public final val <T : (Any..Any?)> Class<out AbstractKtReference<T>>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AbstractKtReference<T>
+    <T : (Any..Any?)> -> Captured(out AbstractKtReference<T>)
 
 'expression' @ [74:68] ==> public final val expression: T defined in org.jetbrains.kotlin.idea.references.AbstractKtReference[PropertyDescriptorImpl]
 
@@ -119,7 +119,7 @@ Inferred types:
 
 'emptySet' @ [95:36] ==> public final fun <T : (Any..Any?)> emptySet(): (MutableSet<(PsiElement..PsiElement?)>..Set<(PsiElement..PsiElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'if (targetDescriptor is PackageViewDescriptor) {
                     val psiFacade = JavaPsiFacade.getInstance(ref.expression.project)
@@ -157,8 +157,6 @@ Inferred types:
 'findPackage' @ [102:45] ==> @Nullable public abstract fun findPackage(@NonNls @NotNull p0: String): PsiPackage? defined in com.intellij.psi.JavaPsiFacade[JavaMethodDescriptor]
 
 'fqName' @ [102:57] ==> val fqName: String defined in org.jetbrains.kotlin.idea.references.AbstractKtReference.Companion.KotlinReferenceResolver.resolveToPsiElements[LocalVariableDescriptor]
-
-'DescriptorToSourceUtilsIde' @ [105:21] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight in file DescriptorToSourceUtilsIde.kt[FakeCallableDescriptorForObject]
 
 'getAllDeclarations' @ [105:48] ==> public final fun getAllDeclarations(project: Project, targetDescriptor: DeclarationDescriptor, builtInsSearchScope: GlobalSearchScope? = ...): Collection<PsiElement> defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[SimpleFunctionDescriptorImpl]
 

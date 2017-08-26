@@ -9,7 +9,7 @@ Inferred types:
 
 'currentScope' @ [26:13] ==> public final val currentScope: MutableMap<String, JsName> defined in org.jetbrains.kotlin.js.inline.util.fixForwardNameReferences.<no name provided>[PropertyDescriptorImpl]
 
-'collectDefinedNames' @ [26:29] ==> public fun collectDefinedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectDefinedNames' @ [26:29] ==> public fun collectDefinedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this@fixForwardNameReferences' @ [26:49] ==> <this> defined in org.jetbrains.kotlin.js.inline.util.fixForwardNameReferences[ReceiverParameterDescriptorImpl]
 
@@ -29,7 +29,7 @@ Inferred types:
 
 'x' @ [31:29] ==> value-parameter x: JsFunction defined in org.jetbrains.kotlin.js.inline.util.fixForwardNameReferences.<no name provided>.visitFunction[ValueParameterDescriptorImpl]
 
-'collectLocalVariables' @ [31:31] ==> public fun JsFunction.collectLocalVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectLocalVariables' @ [31:31] ==> public fun JsFunction.collectLocalVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'localVars' @ [32:30] ==> val localVars: Set<JsName> defined in org.jetbrains.kotlin.js.inline.util.fixForwardNameReferences.<no name provided>.visitFunction[LocalVariableDescriptor]
 

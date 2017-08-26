@@ -20,11 +20,11 @@
 
 'java' @ [44:28] ==> public val <T> KClass<out ExceptionTracker>.java: Class<out ExceptionTracker> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ExceptionTracker
+    <T> -> Captured(out ExceptionTracker)
 
 'name' @ [44:33] ==> public final val <T : (Any..Any?)> Class<out ExceptionTracker>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ExceptionTracker
+    <T : (Any..Any?)> -> Captured(out ExceptionTracker)
 
 'modificationCount' @ [44:47] ==> public final val ExceptionTracker.modificationCount: Long[MyPropertyDescriptor]
 

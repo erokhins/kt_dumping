@@ -436,7 +436,7 @@ Inferred types:
 
 'descriptor' @ [121:41] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.DeclarationBodyVisitor.addFunction[ValueParameterDescriptorImpl]
 
-'translateAndAliasParameters' @ [122:26] ==> public fun TranslationContext.translateAndAliasParameters(descriptor: FunctionDescriptor, targetList: MutableList<JsParameter>): TranslationContext defined in org.jetbrains.kotlin.js.translate.expression[SimpleFunctionDescriptorImpl]
+'translateAndAliasParameters' @ [122:26] ==> public fun TranslationContext.translateAndAliasParameters(descriptor: FunctionDescriptor, targetList: MutableList<JsParameter>): TranslationContext defined in org.jetbrains.kotlin.js.translate.expression in file FunctionTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [122:54] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.DeclarationBodyVisitor.addFunction[ValueParameterDescriptorImpl]
 

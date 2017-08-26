@@ -12,8 +12,6 @@ Inferred types:
 
 'File' @ [38:28] ==> public constructor File(p0: (File..File?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
-'PathUtil' @ [38:33] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'kotlinPathsForDistDirectory' @ [38:42] ==> @JvmStatic public final val kotlinPathsForDistDirectory: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'homePath' @ [38:70] ==> public final val KotlinPaths.homePath: File[MyPropertyDescriptor]
@@ -46,6 +44,8 @@ Inferred types:
     <R> -> GeneralCommandLine
 
 'cmd' @ [42:28] ==> val cmd: GeneralCommandLine defined in org.jetbrains.kotlin.cli.LauncherScriptTest.runProcess[LocalVariableDescriptor]
+
+'withWorkDirectory' @ [42:33] ==> @NotNull public open fun withWorkDirectory(@Nullable p0: File?): GeneralCommandLine defined in com.intellij.execution.configurations.GeneralCommandLine[JavaMethodDescriptor]
 
 'execAndGetOutput' @ [43:38] ==> @NotNull public open fun execAndGetOutput(@NotNull p0: GeneralCommandLine): ProcessOutput defined in com.intellij.execution.util.ExecUtil[JavaMethodDescriptor]
 

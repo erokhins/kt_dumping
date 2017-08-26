@@ -29,7 +29,7 @@ Inferred types:
 
 'classLoader' @ [35:21] ==> private final val classLoader: ClassLoader defined in org.jetbrains.kotlin.load.java.reflect.ReflectJavaClassFinder[PropertyDescriptorImpl]
 
-'tryLoadClass' @ [35:33] ==> public fun ClassLoader.tryLoadClass(fqName: String): Class<*>? defined in org.jetbrains.kotlin.load.java.reflect[SimpleFunctionDescriptorImpl]
+'tryLoadClass' @ [35:33] ==> public fun ClassLoader.tryLoadClass(fqName: String): Class<*>? defined in org.jetbrains.kotlin.load.java.reflect in file ReflectJavaClassFinder.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [35:46] ==> val name: String defined in org.jetbrains.kotlin.load.java.reflect.ReflectJavaClassFinder.findClass[LocalVariableDescriptor]
 

@@ -20,7 +20,7 @@ Inferred types:
 
 'getService' @ [77:74] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(JavacWrapper..JavacWrapper?)>): (JavacWrapper..JavacWrapper?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavacWrapper
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.javac.JavacWrapper..org.jetbrains.kotlin.javac.JavacWrapper?)
 
 'project' @ [77:85] ==> value-parameter project: Project defined in org.jetbrains.kotlin.javac.JavacWrapper.Companion.getInstance[ValueParameterDescriptorImpl]
 
@@ -51,25 +51,25 @@ Inferred types:
 
 'this' @ [82:64] ==> <this> defined in org.jetbrains.kotlin.javac.JavacWrapper[LazyClassReceiverParameterDescriptor]
 
-'lazy' @ [85:29] ==> public fun <T> lazy(initializer: () -> SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>?): Lazy<SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [85:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SymbolBasedClassifierType<(javax.lang.model.type.TypeMirror..javax.lang.model.type.TypeMirror?)>?
+    <T> -> T
 
 'createCommonClassifierType' @ [86:9] ==> private final fun createCommonClassifierType(fqName: String): SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>? defined in org.jetbrains.kotlin.javac.JavacWrapper[SimpleFunctionDescriptorImpl]
 
 'JAVA_LANG_OBJECT' @ [86:53] ==> @NonNls public const final val JAVA_LANG_OBJECT: String defined in com.intellij.psi.CommonClassNames[JavaPropertyDescriptor]
 
-'lazy' @ [89:27] ==> public fun <T> lazy(initializer: () -> SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>?): Lazy<SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [89:27] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SymbolBasedClassifierType<(javax.lang.model.type.TypeMirror..javax.lang.model.type.TypeMirror?)>?
+    <T> -> T
 
 'createCommonClassifierType' @ [90:9] ==> private final fun createCommonClassifierType(fqName: String): SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>? defined in org.jetbrains.kotlin.javac.JavacWrapper[SimpleFunctionDescriptorImpl]
 
 'JAVA_LANG_ENUM' @ [90:53] ==> @NonNls public const final val JAVA_LANG_ENUM: String defined in com.intellij.psi.CommonClassNames[JavaPropertyDescriptor]
 
-'lazy' @ [93:44] ==> public fun <T> lazy(initializer: () -> SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>?): Lazy<SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [93:44] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SymbolBasedClassifierType<(javax.lang.model.type.TypeMirror..javax.lang.model.type.TypeMirror?)>?
+    <T> -> T
 
 'createCommonClassifierType' @ [94:9] ==> private final fun createCommonClassifierType(fqName: String): SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>? defined in org.jetbrains.kotlin.javac.JavacWrapper[SimpleFunctionDescriptorImpl]
 
@@ -159,9 +159,11 @@ Inferred types:
 
 'javac' @ [119:89] ==> private final val javac: <no name provided> defined in org.jetbrains.kotlin.javac.JavacWrapper[PropertyDescriptorImpl]
 
-'toJavacList' @ [119:103] ==> private final inline fun <reified T> Iterable<JCTree.JCCompilationUnit>.toJavacList(): (List<(JCTree.JCCompilationUnit..JCTree.JCCompilationUnit?)>..List<(JCTree.JCCompilationUnit..JCTree.JCCompilationUnit?)>?) defined in org.jetbrains.kotlin.javac.JavacWrapper[SimpleFunctionDescriptorImpl]
+'parse' @ [119:96] ==> public open fun parse(p0: (JavaFileObject..JavaFileObject?)): (JCTree.JCCompilationUnit..JCTree.JCCompilationUnit?) defined in org.jetbrains.kotlin.javac.JavacWrapper.javac.<no name provided>[JavaMethodDescriptor]
+
+'toJavacList' @ [119:103] ==> private final inline fun <reified T> Iterable<(JCTree.JCCompilationUnit..JCTree.JCCompilationUnit?)>.toJavacList(): (List<(JCTree.JCCompilationUnit..JCTree.JCCompilationUnit?)>..List<(JCTree.JCCompilationUnit..JCTree.JCCompilationUnit?)>?) defined in org.jetbrains.kotlin.javac.JavacWrapper[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <reified T> -> JCCompilationUnit
+    <reified T> -> (com.sun.tools.javac.tree.JCTree.JCCompilationUnit..com.sun.tools.javac.tree.JCTree.JCCompilationUnit?)
 
 'compilationUnits' @ [121:31] ==> private final val compilationUnits: List<JCTree.JCCompilationUnit> defined in org.jetbrains.kotlin.javac.JavacWrapper[PropertyDescriptorImpl]
 
@@ -203,6 +205,8 @@ Inferred types:
 Inferred types:
     <T> -> TreeBasedClass
     <K> -> FqName?
+
+'fqName' @ [130:37] ==> public abstract val fqName: FqName? defined in org.jetbrains.kotlin.load.java.structure.JavaClass[DeserializedPropertyDescriptor]
 
 'javaClasses' @ [133:13] ==> private final val javaClasses: Map<FqName?, TreeBasedClass> defined in org.jetbrains.kotlin.javac.JavacWrapper[PropertyDescriptorImpl]
 
@@ -256,6 +260,8 @@ Inferred types:
     <K> -> FqName
 
 'TreeBasedPackage' @ [141:26] ==> public constructor TreeBasedPackage(name: String, javac: JavacWrapper, file: JavaFileObject) defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedPackage[ClassConstructorDescriptorImpl]
+
+'fqName' @ [141:44] ==> public open val fqName: FqName defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedPackage[PropertyDescriptorImpl]
 
 'compilationUnits' @ [143:44] ==> private final val compilationUnits: List<JCTree.JCCompilationUnit> defined in org.jetbrains.kotlin.javac.JavacWrapper[PropertyDescriptorImpl]
 
@@ -365,7 +371,7 @@ Inferred types:
 
 'get' @ [163:17] ==> public open operator fun <T : (Any..Any?)> get(p0: (Context.Key<(PrintWriter..PrintWriter?)>..Context.Key<(PrintWriter..PrintWriter?)>?)): (PrintWriter..PrintWriter?) defined in com.sun.tools.javac.util.Context[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PrintWriter
+    <T : (Any..Any?)> -> (java.io.PrintWriter..java.io.PrintWriter?)
 
 'outKey' @ [163:25] ==> public final val outKey: (Context.Key<(PrintWriter..PrintWriter?)>..Context.Key<(PrintWriter..PrintWriter?)>?) defined in com.sun.tools.javac.util.Log[JavaPropertyDescriptor]
 
@@ -825,7 +831,7 @@ Inferred types:
 
 'from' @ [268:74] ==> public open fun <A : (Any..Any?)> from(p0: (MutableIterable<(T..T?)>..Iterable<(T..T?)>?)): (List<(T..T?)>..List<(T..T?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> T
+    <A : (Any..Any?)> -> (T..T?)
 
 'this' @ [268:79] ==> <this> defined in org.jetbrains.kotlin.javac.JavacWrapper.toJavacList[ReceiverParameterDescriptorImpl]
 
@@ -1013,6 +1019,8 @@ Inferred types:
     <R> -> (com.sun.tools.javac.util.Name..com.sun.tools.javac.util.Name?)
 
 'names' @ [310:35] ==> val names: (Names..Names?) defined in org.jetbrains.kotlin.javac.JavacWrapper.setClassPathForCompilation.<anonymous>[LocalVariableDescriptor]
+
+'fromString' @ [310:42] ==> public open fun fromString(p0: (String..String?)): (Name..Name?) defined in com.sun.tools.javac.util.Names[JavaMethodDescriptor]
 
 'symbols' @ [312:21] ==> private final val symbols: (Symtab..Symtab?) defined in org.jetbrains.kotlin.javac.JavacWrapper[PropertyDescriptorImpl]
 

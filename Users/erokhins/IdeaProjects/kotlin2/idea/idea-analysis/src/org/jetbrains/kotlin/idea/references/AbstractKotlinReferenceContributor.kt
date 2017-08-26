@@ -27,13 +27,13 @@ Inferred types:
 
 'DEFAULT_PRIORITY' @ [34:54] ==> public const final val DEFAULT_PRIORITY: Double defined in com.intellij.psi.PsiReferenceRegistrar[JavaPropertyDescriptor]
 
-'registerMultiProvider' @ [37:9] ==> protected final inline fun <E : KtElement> PsiReferenceRegistrar.registerMultiProvider(pattern: ElementPattern<E>, priority: Double = ..., crossinline factory: (E) -> Array<PsiReference>): Unit defined in org.jetbrains.kotlin.idea.references.AbstractKotlinReferenceContributor[SimpleFunctionDescriptorImpl]
+'registerMultiProvider' @ [37:9] ==> protected final inline fun <E : KtElement> PsiReferenceRegistrar.registerMultiProvider(pattern: ElementPattern<(E..E?)>, priority: Double = ..., crossinline factory: ((E..E?)) -> Array<PsiReference>): Unit defined in org.jetbrains.kotlin.idea.references.AbstractKotlinReferenceContributor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <E : KtElement> -> E
+    <E : KtElement> -> (E..E?)
 
 'psiElement' @ [37:48] ==> public open fun <T : (PsiElement..PsiElement?)> psiElement(p0: (Class<(E..E?)>..Class<(E..E?)>?)): (PsiElementPattern.Capture<(E..E?)>..PsiElementPattern.Capture<(E..E?)>?) defined in com.intellij.patterns.PlatformPatterns[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> E
+    <T : (PsiElement..PsiElement?)> -> (E..E?)
 
 'java' @ [37:68] ==> public val <T> KClass<E>.java: Class<E> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -47,7 +47,7 @@ Inferred types:
 
 'registerReferenceProvider' @ [45:9] ==> public abstract fun <T : (PsiElement..PsiElement?)> registerReferenceProvider(@NotNull p0: ElementPattern<(E..E?)>, @NotNull p1: PsiReferenceProvider, p2: Double): Unit defined in com.intellij.psi.PsiReferenceRegistrar[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> E
+    <T : (PsiElement..PsiElement?)> -> (E..E?)
 
 'pattern' @ [46:17] ==> value-parameter pattern: ElementPattern<E> defined in org.jetbrains.kotlin.idea.references.AbstractKotlinReferenceContributor.registerMultiProvider[ValueParameterDescriptorImpl]
 

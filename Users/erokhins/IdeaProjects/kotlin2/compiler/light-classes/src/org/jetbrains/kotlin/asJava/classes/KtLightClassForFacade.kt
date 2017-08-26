@@ -39,7 +39,7 @@ Inferred types:
 
 'create' @ [68:46] ==> public open fun <T : (Any..Any?)> create(@Nullable p0: KtLightClassForFacade.FacadeStubCache.FacadeCacheData?, @NotNull vararg p1: (Any..Any?)): (CachedValueProvider.Result<(KtLightClassForFacade.FacadeStubCache.FacadeCacheData..KtLightClassForFacade.FacadeStubCache.FacadeCacheData?)>..CachedValueProvider.Result<(KtLightClassForFacade.FacadeStubCache.FacadeCacheData..KtLightClassForFacade.FacadeStubCache.FacadeCacheData?)>?) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FacadeCacheData
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.FacadeStubCache.FacadeCacheData..org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.FacadeStubCache.FacadeCacheData?)
 
 'FacadeCacheData' @ [68:53] ==> public constructor FacadeCacheData() defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.FacadeStubCache.FacadeCacheData[ClassConstructorDescriptorImpl]
 
@@ -172,8 +172,6 @@ Inferred types:
 'findAnnotationEntryOnFileNoResolve' @ [154:49] ==> @JvmStatic public final fun findAnnotationEntryOnFileNoResolve(file: KtFile, shortName: String): KtAnnotationEntry? defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil[DeserializedSimpleFunctionDescriptor]
 
 'file' @ [154:84] ==> val file: KtFile defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.setName[LocalVariableDescriptor]
-
-'JvmFileClassUtil' @ [154:90] ==> public object JvmFileClassUtil defined in org.jetbrains.kotlin.fileClasses[FakeCallableDescriptorForObject]
 
 'JVM_NAME_SHORT' @ [154:107] ==> public final val JVM_NAME_SHORT: String defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil[DeserializedPropertyDescriptor]
 
@@ -444,13 +442,13 @@ Inferred types:
 
 'java' @ [234:42] ==> public val <T> KClass<out KtLightClassForFacade>.java: Class<out KtLightClassForFacade> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtLightClassForFacade
+    <T> -> Captured(out KtLightClassForFacade)
 
 'other' @ [234:50] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.equals[ValueParameterDescriptorImpl]
 
 'java' @ [234:63] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'other' @ [238:26] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.equals[ValueParameterDescriptorImpl]
 

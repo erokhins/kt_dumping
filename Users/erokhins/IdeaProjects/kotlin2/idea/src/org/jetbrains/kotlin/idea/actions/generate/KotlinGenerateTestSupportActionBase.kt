@@ -166,7 +166,7 @@ Inferred types:
 
 'file' @ [119:40] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateTestSupportActionBase.getTargetClass[ValueParameterDescriptorImpl]
 
-'findSuitableFrameworks' @ [123:16] ==> public fun findSuitableFrameworks(klass: KtClassOrObject): List<TestFramework> defined in org.jetbrains.kotlin.idea.testIntegration[SimpleFunctionDescriptorImpl]
+'findSuitableFrameworks' @ [123:16] ==> public fun findSuitableFrameworks(klass: KtClassOrObject): List<TestFramework> defined in org.jetbrains.kotlin.idea.testIntegration in file testIntegrationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'targetClass' @ [123:39] ==> value-parameter targetClass: KtClassOrObject defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateTestSupportActionBase.isValidForClass[ValueParameterDescriptorImpl]
 
@@ -203,7 +203,7 @@ Inferred types:
 
 'testFrameworkToUse' @ [131:13] ==> public final var testFrameworkToUse: String? defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateTestSupportActionBase[PropertyDescriptorImpl]
 
-'findSuitableFrameworks' @ [132:34] ==> public fun findSuitableFrameworks(klass: KtClassOrObject): List<TestFramework> defined in org.jetbrains.kotlin.idea.testIntegration[SimpleFunctionDescriptorImpl]
+'findSuitableFrameworks' @ [132:34] ==> public fun findSuitableFrameworks(klass: KtClassOrObject): List<TestFramework> defined in org.jetbrains.kotlin.idea.testIntegration in file testIntegrationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [132:57] ==> val klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateTestSupportActionBase.invoke[LocalVariableDescriptor]
 
@@ -233,7 +233,7 @@ Inferred types:
 
 'frameworkToUse' @ [134:49] ==> val frameworkToUse: TestFramework defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateTestSupportActionBase.invoke[LocalVariableDescriptor]
 
-'findSuitableFrameworks' @ [138:30] ==> public fun findSuitableFrameworks(klass: KtClassOrObject): List<TestFramework> defined in org.jetbrains.kotlin.idea.testIntegration[SimpleFunctionDescriptorImpl]
+'findSuitableFrameworks' @ [138:30] ==> public fun findSuitableFrameworks(klass: KtClassOrObject): List<TestFramework> defined in org.jetbrains.kotlin.idea.testIntegration in file testIntegrationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [138:53] ==> val klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateTestSupportActionBase.invoke[LocalVariableDescriptor]
 
@@ -387,10 +387,10 @@ Inferred types:
 
 'j2k' @ [175:42] ==> public fun PsiMember.j2k(): KtNamedDeclaration? defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
-'run' @ [175:71] ==> @InlineOnly public inline fun <T, R> KotlinGenerateTestSupportActionBase.run(block: KotlinGenerateTestSupportActionBase.() -> KtNamedFunction): KtNamedFunction defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'run' @ [175:71] ==> @InlineOnly public inline fun <T, R> KotlinGenerateTestSupportActionBase.run(block: KotlinGenerateTestSupportActionBase.() -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KotlinGenerateTestSupportActionBase
-    <R> -> KtNamedFunction
+    <R> -> Nothing
 
 'errorHint' @ [176:21] ==> var errorHint: String? defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateTestSupportActionBase.doGenerate[LocalVariableDescriptor]
 
@@ -660,7 +660,7 @@ Inferred types:
 
 'file' @ [244:50] ==> val file: PsiFile defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateTestSupportActionBase.createEditTemplateAction[LocalVariableDescriptor]
 
-'findSuitableFrameworks' @ [245:26] ==> public fun findSuitableFrameworks(klass: KtClassOrObject): List<TestFramework> defined in org.jetbrains.kotlin.idea.testIntegration[SimpleFunctionDescriptorImpl]
+'findSuitableFrameworks' @ [245:26] ==> public fun findSuitableFrameworks(klass: KtClassOrObject): List<TestFramework> defined in org.jetbrains.kotlin.idea.testIntegration in file testIntegrationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'targetClass' @ [245:49] ==> val targetClass: KtClassOrObject defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateTestSupportActionBase.createEditTemplateAction[LocalVariableDescriptor]
 

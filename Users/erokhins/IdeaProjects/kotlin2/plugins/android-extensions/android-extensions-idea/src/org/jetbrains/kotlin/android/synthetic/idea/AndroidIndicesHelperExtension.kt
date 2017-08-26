@@ -4,8 +4,6 @@
 
 'FqName' @ [39:61] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
-'AndroidConst' @ [39:68] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic[FakeCallableDescriptorForObject]
-
 'SYNTHETIC_PACKAGE' @ [39:81] ==> public final val SYNTHETIC_PACKAGE: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[DeserializedPropertyDescriptor]
 
 'fragments' @ [39:101] ==> public abstract val fragments: List<PackageFragmentDescriptor> defined in org.jetbrains.kotlin.descriptors.PackageViewDescriptor[DeserializedPropertyDescriptor]
@@ -15,8 +13,6 @@
 'scope' @ [43:35] ==> value-parameter scope: MemberScope defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidIndicesHelperExtension.appendExtensionCallables.handleScope[ValueParameterDescriptorImpl]
 
 'getContributedDescriptors' @ [43:41] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [43:67] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'CALLABLES' @ [43:88] ==> @field:JvmField public final val CALLABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 

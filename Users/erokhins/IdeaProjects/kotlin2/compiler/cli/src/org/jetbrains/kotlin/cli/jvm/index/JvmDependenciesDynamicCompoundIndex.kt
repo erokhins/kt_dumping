@@ -18,9 +18,9 @@ Inferred types:
 
 'lock' @ [37:13] ==> private final val lock: ReentrantReadWriteLock defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesDynamicCompoundIndex[PropertyDescriptorImpl]
 
-'read' @ [37:18] ==> @InlineOnly public inline fun <T> ReentrantReadWriteLock.read(action: () -> JvmDependenciesIndexImpl?): JvmDependenciesIndexImpl? defined in kotlin.concurrent[DeserializedSimpleFunctionDescriptor]
+'read' @ [37:18] ==> @InlineOnly public inline fun <T> ReentrantReadWriteLock.read(action: () -> JvmDependenciesIndex?): JvmDependenciesIndex? defined in kotlin.concurrent[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JvmDependenciesIndexImpl?
+    <T> -> JvmDependenciesIndex?
 
 'indexedRoots' @ [38:38] ==> public open val indexedRoots: Sequence<JavaRoot> defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesDynamicCompoundIndex[PropertyDescriptorImpl]
 
@@ -39,9 +39,9 @@ Inferred types:
 'alreadyIndexed' @ [39:64] ==> val alreadyIndexed: HashSet<JavaRoot> /* = HashSet<JavaRoot> */ defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesDynamicCompoundIndex.addNewIndexForRoots.<anonymous>[LocalVariableDescriptor]
 
 'if (newRoots.isEmpty()) null
-                else JvmDependenciesIndexImpl(newRoots).also(this::addIndex)' @ [40:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: JvmDependenciesIndexImpl?, elseBranch: JvmDependenciesIndexImpl?): JvmDependenciesIndexImpl?[SimpleFunctionDescriptorImpl]
+                else JvmDependenciesIndexImpl(newRoots).also(this::addIndex)' @ [40:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: JvmDependenciesIndex?, elseBranch: JvmDependenciesIndex?): JvmDependenciesIndex?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JvmDependenciesIndexImpl?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JvmDependenciesIndex?
 
 'newRoots' @ [40:21] ==> val newRoots: List<JavaRoot> defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesDynamicCompoundIndex.addNewIndexForRoots.<anonymous>[LocalVariableDescriptor]
 
@@ -56,6 +56,8 @@ Inferred types:
     <T> -> JvmDependenciesIndexImpl
 
 'this' @ [41:62] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesDynamicCompoundIndex[LazyClassReceiverParameterDescriptor]
+
+'addIndex' @ [41:68] ==> public final fun addIndex(index: JvmDependenciesIndex): Unit defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesDynamicCompoundIndex[SimpleFunctionDescriptorImpl]
 
 'indices' @ [44:59] ==> private final val indices: ArrayList<JvmDependenciesIndex> /* = ArrayList<JvmDependenciesIndex> */ defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesDynamicCompoundIndex[PropertyDescriptorImpl]
 

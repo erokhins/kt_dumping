@@ -17,8 +17,6 @@ Inferred types:
 
 'this' @ [26:13] ==> <this> defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaArrayType.componentType.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'ReflectJavaType' @ [26:41] ==> public companion object Factory defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType[FakeCallableDescriptorForObject]
-
 'create' @ [26:57] ==> public final fun create(type: Type): ReflectJavaType defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType.Factory[SimpleFunctionDescriptorImpl]
 
 'genericComponentType' @ [26:64] ==> public final val GenericArrayType.genericComponentType: (Type..Type?)[MyPropertyDescriptor]
@@ -26,8 +24,6 @@ Inferred types:
 'this' @ [27:13] ==> <this> defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaArrayType.componentType.<anonymous>[ReceiverParameterDescriptorImpl]
 
 'isArray' @ [27:33] ==> public open fun isArray(): Boolean defined in java.lang.Class[JavaMethodDescriptor]
-
-'ReflectJavaType' @ [27:46] ==> public companion object Factory defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType[FakeCallableDescriptorForObject]
 
 'create' @ [27:62] ==> public final fun create(type: Type): ReflectJavaType defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType.Factory[SimpleFunctionDescriptorImpl]
 
@@ -39,7 +35,7 @@ Inferred types:
 
 'java' @ [28:93] ==> public val <T> KClass<out Type>.java: Class<out Type> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Type
+    <T> -> Captured(out Type)
 
 'reflectType' @ [28:102] ==> protected open val reflectType: Type defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaArrayType[PropertyDescriptorImpl]
 

@@ -4,9 +4,9 @@
 
 'psiElement' @ [30:32] ==> public final val <E : (PsiElement..PsiElement?)> ParametrizedDiagnostic<out E>.psiElement: E[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> E
+    <E : (PsiElement..PsiElement?)> -> Captured(out E)
 
-'markElement' @ [34:16] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [34:16] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [34:28] ==> value-parameter element: E defined in org.jetbrains.kotlin.diagnostics.PositioningStrategy.mark[ValueParameterDescriptorImpl]
 
@@ -30,7 +30,7 @@ Inferred types:
 
 'element' @ [43:67] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.diagnostics.markElement[ValueParameterDescriptorImpl]
 
-'markElement' @ [47:12] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [47:12] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'node' @ [47:24] ==> value-parameter node: ASTNode defined in org.jetbrains.kotlin.diagnostics.markNode[ValueParameterDescriptorImpl]
 
@@ -42,7 +42,7 @@ Inferred types:
 
 'range' @ [51:19] ==> value-parameter range: TextRange defined in org.jetbrains.kotlin.diagnostics.markRange[ValueParameterDescriptorImpl]
 
-'markRange' @ [55:12] ==> public fun markRange(range: TextRange): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [55:12] ==> public fun markRange(range: TextRange): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'TextRange' @ [55:22] ==> public constructor TextRange(p0: Int, p1: Int) defined in com.intellij.openapi.util.TextRange[JavaClassConstructorDescriptor]
 

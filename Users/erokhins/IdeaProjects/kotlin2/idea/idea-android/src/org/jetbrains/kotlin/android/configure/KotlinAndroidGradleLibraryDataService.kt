@@ -7,7 +7,7 @@ Inferred types:
 
 'toImport' @ [42:26] ==> value-parameter toImport: MutableCollection<DataNode<JavaModuleModel>> defined in org.jetbrains.kotlin.android.configure.KotlinAndroidGradleLibraryDataService.postProcess[ValueParameterDescriptorImpl]
 
-'detectPlatformByPlugin' @ [43:37] ==> public fun detectPlatformByPlugin(moduleNode: DataNode<ModuleData>): TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'detectPlatformByPlugin' @ [43:37] ==> public fun detectPlatformByPlugin(moduleNode: DataNode<ModuleData>): TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleSourceSetDataService.kt[SimpleFunctionDescriptorImpl]
 
 'dataNode' @ [43:60] ==> val dataNode: DataNode<JavaModuleModel> defined in org.jetbrains.kotlin.android.configure.KotlinAndroidGradleLibraryDataService.postProcess[LocalVariableDescriptor]
 
@@ -53,14 +53,14 @@ Inferred types:
 
 'CLASSES' @ [49:72] ==> public final val CLASSES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
 
-'let' @ [49:83] ==> @InlineOnly public inline fun <T, R> PersistentLibraryKind<out raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)>.let(block: (PersistentLibraryKind<out raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [49:83] ==> @InlineOnly public inline fun <T, R> PersistentLibraryKind<*>.let(block: (PersistentLibraryKind<*>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PersistentLibraryKind<out raw (com.intellij.openapi.roots.libraries.LibraryProperties<(kotlin.Any..kotlin.Any?)>..com.intellij.openapi.roots.libraries.LibraryProperties<*>?)>
+    <T> -> PersistentLibraryKind<*>
     <R> -> Unit
 
 'model' @ [49:89] ==> val model: LibraryEx.ModifiableModelEx defined in org.jetbrains.kotlin.android.configure.KotlinAndroidGradleLibraryDataService.postProcess[LocalVariableDescriptor]
 
 'kind' @ [49:95] ==> public final var LibraryEx.ModifiableModelEx.kind: (PersistentLibraryKind<*>..PersistentLibraryKind<*>?)[MyPropertyDescriptor]
 
-'it' @ [49:102] ==> value-parameter it: PersistentLibraryKind<out raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)> defined in org.jetbrains.kotlin.android.configure.KotlinAndroidGradleLibraryDataService.postProcess.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [49:102] ==> value-parameter it: PersistentLibraryKind<*> defined in org.jetbrains.kotlin.android.configure.KotlinAndroidGradleLibraryDataService.postProcess.<anonymous>[ValueParameterDescriptorImpl]
 

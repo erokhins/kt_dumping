@@ -268,7 +268,7 @@ Inferred types:
 
 'scope' @ [127:17] ==> value-parameter scope: DependencyScope defined in org.jetbrains.kotlin.idea.configuration.GroovyBuildScriptManipulator.addKotlinLibraryToModuleBuildScript[ValueParameterDescriptorImpl]
 
-'toGradleCompileScope' @ [127:23] ==> public fun DependencyScope.toGradleCompileScope(isAndroidModule: Boolean): String defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'toGradleCompileScope' @ [127:23] ==> public fun DependencyScope.toGradleCompileScope(isAndroidModule: Boolean): String defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'isAndroidModule' @ [127:44] ==> value-parameter isAndroidModule: Boolean defined in org.jetbrains.kotlin.idea.configuration.GroovyBuildScriptManipulator.addKotlinLibraryToModuleBuildScript[ValueParameterDescriptorImpl]
 
@@ -518,7 +518,7 @@ Inferred types:
 
 'repository' @ [206:35] ==> val repository: RepositoryDescription? defined in org.jetbrains.kotlin.idea.configuration.GroovyBuildScriptManipulator.addRepository[LocalVariableDescriptor]
 
-'toGroovyRepositorySnippet' @ [206:46] ==> public fun RepositoryDescription.toGroovyRepositorySnippet(): String defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'toGroovyRepositorySnippet' @ [206:46] ==> public fun RepositoryDescription.toGroovyRepositorySnippet(): String defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [207:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -701,7 +701,7 @@ Inferred types:
 
 'replaceWithStatement' @ [273:16] ==> public abstract fun <T : (GrStatement..GrStatement?)> replaceWithStatement(p0: (GrExpression..GrExpression?)): (GrExpression..GrExpression?) defined in org.jetbrains.plugins.groovy.lang.psi.api.statements.GrStatement[JavaMethodDescriptor]
 Inferred types:
-    <T : (GrStatement..GrStatement?)> -> GrExpression
+    <T : (GrStatement..GrStatement?)> -> (org.jetbrains.plugins.groovy.lang.psi.api.statements.expressions.GrExpression..org.jetbrains.plugins.groovy.lang.psi.api.statements.expressions.GrExpression?)
 
 'newStatement' @ [273:37] ==> val newStatement: GrExpression defined in org.jetbrains.kotlin.idea.configuration.GroovyBuildScriptManipulator.replaceWithStatementFromText[LocalVariableDescriptor]
 

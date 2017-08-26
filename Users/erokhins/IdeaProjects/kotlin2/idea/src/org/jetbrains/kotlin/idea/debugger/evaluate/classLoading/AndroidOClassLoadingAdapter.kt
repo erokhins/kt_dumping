@@ -8,7 +8,7 @@
 
 'debugProcess' @ [28:62] ==> public final val EvaluationContextImpl.debugProcess: DebugProcessImpl[MyPropertyDescriptor]
 
-'isDexDebug' @ [28:75] ==> public fun DebugProcess.isDexDebug(): Boolean defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'isDexDebug' @ [28:75] ==> public fun DebugProcess.isDexDebug(): Boolean defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [33:20] ==> value-parameter context: EvaluationContextImpl defined in org.jetbrains.kotlin.idea.debugger.evaluate.classLoading.AndroidOClassLoadingAdapter.resolveClassLoaderClass[ValueParameterDescriptorImpl]
 

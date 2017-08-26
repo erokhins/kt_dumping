@@ -10,9 +10,9 @@
 
 'sorter' @ [89:53] ==> value-parameter sorter: CompletionSorter defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.CompletionKind.addWeighers[ValueParameterDescriptorImpl]
 
-'lazy' @ [92:35] ==> public fun <T> lazy(initializer: () -> BasicCompletionSession.CompletionKind): Lazy<BasicCompletionSession.CompletionKind> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [92:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompletionKind
+    <T> -> T
 
 'detectCompletionKind' @ [92:42] ==> private final fun detectCompletionKind(): BasicCompletionSession.CompletionKind defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[SimpleFunctionDescriptorImpl]
 
@@ -47,7 +47,7 @@ Inferred types:
 
 'toFromOriginalFileMapper' @ [100:48] ==> value-parameter toFromOriginalFileMapper: ToFromOriginalFileMapper defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.<init>[ValueParameterDescriptorImpl]
 
-'callTypeAndReceiver' @ [100:74] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [100:74] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'isJvmModule' @ [101:17] ==> protected final val isJvmModule: Boolean defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -139,9 +139,7 @@ Inferred types:
 
 'putUserData' @ [142:31] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Int..Int?)>, @Nullable p1: Int?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
-
-'LookupCancelWatcher' @ [142:43] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.LookupCancelWatcher[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'AUTO_POPUP_AT' @ [142:63] ==> public final val AUTO_POPUP_AT: Key<Int> defined in org.jetbrains.kotlin.idea.completion.LookupCancelWatcher.Companion[PropertyDescriptorImpl]
 
@@ -163,9 +161,7 @@ Inferred types:
 
 'putUserData' @ [148:35] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'KotlinCompletionCharFilter' @ [148:47] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'SUPPRESS_ITEM_SELECTION_BY_CHARS_ON_TYPING' @ [148:74] ==> public final val SUPPRESS_ITEM_SELECTION_BY_CHARS_ON_TYPING: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter.Companion[PropertyDescriptorImpl]
 
@@ -231,7 +227,7 @@ Inferred types:
 
 'smartCompletion' @ [171:79] ==> private final val smartCompletion: SmartCompletion? defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [171:96] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [171:96] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'resolutionFacade' @ [171:117] ==> protected final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -243,17 +239,15 @@ Inferred types:
 
 'weighBefore' @ [172:29] ==> public abstract fun weighBefore(@NotNull p0: String, vararg p1: (LookupElementWeigher..LookupElementWeigher?)): (CompletionSorter..CompletionSorter?) defined in com.intellij.codeInsight.completion.CompletionSorter[JavaMethodDescriptor]
 
-'KindWeigher' @ [172:41] ==> public object KindWeigher : LookupElementWeigher defined in org.jetbrains.kotlin.idea.completion in file Weighers.kt[FakeCallableDescriptorForObject]
-
 'toString' @ [172:53] ==> public open fun toString(): String defined in org.jetbrains.kotlin.idea.completion.KindWeigher[JavaMethodDescriptor]
 
 'smartCompletionInBasicWeigher' @ [173:41] ==> val smartCompletionInBasicWeigher: SmartCompletionInBasicWeigher defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.createSorter[LocalVariableDescriptor]
 
 'CallableReferenceWeigher' @ [174:41] ==> public constructor CallableReferenceWeigher(callType: CallType<*>) defined in org.jetbrains.kotlin.idea.completion.CallableReferenceWeigher[ClassConstructorDescriptorImpl]
 
-'callTypeAndReceiver' @ [174:66] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [174:66] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [174:86] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [174:86] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'sorter' @ [177:9] ==> var sorter: CompletionSorter defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.createSorter[LocalVariableDescriptor]
 
@@ -265,13 +259,13 @@ Inferred types:
 
 'sorter' @ [179:16] ==> var sorter: CompletionSorter defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.createSorter[LocalVariableDescriptor]
 
-'lazy' @ [183:68] ==> public fun <T> lazy(initializer: () -> DescriptorKindFilter): Lazy<DescriptorKindFilter> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [183:68] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> DescriptorKindFilter
+    <T> -> T
 
-'callTypeAndReceiver' @ [184:26] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [184:26] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [184:46] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [184:46] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'descriptorKindFilter' @ [184:55] ==> public final val descriptorKindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.util.CallType[DeserializedPropertyDescriptor]
 
@@ -280,8 +274,6 @@ Inferred types:
 'kindMask' @ [186:24] ==> public final val kindMask: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedPropertyDescriptor]
 
 'and' @ [186:33] ==> public final infix fun and(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [186:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'PACKAGES_MASK' @ [186:58] ==> public final val PACKAGES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -353,7 +345,7 @@ Inferred types:
 
 'getUserData' @ [214:34] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(SmartCompletionItemPriority..SmartCompletionItemPriority?)>): SmartCompletionItemPriority? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SmartCompletionItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority..org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority?)
 
 'SMART_COMPLETION_ITEM_PRIORITY_KEY' @ [214:46] ==> public val SMART_COMPLETION_ITEM_PRIORITY_KEY: Key<SmartCompletionItemPriority> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[PropertyDescriptorImpl]
 
@@ -361,7 +353,7 @@ Inferred types:
 
 'putUserData' @ [215:34] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(SmartCompletionItemPriority..SmartCompletionItemPriority?)>, @Nullable p1: SmartCompletionItemPriority?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SmartCompletionItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority..org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority?)
 
 'SMART_COMPLETION_ITEM_PRIORITY_KEY' @ [215:46] ==> public val SMART_COMPLETION_ITEM_PRIORITY_KEY: Key<SmartCompletionItemPriority> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[PropertyDescriptorImpl]
 
@@ -374,6 +366,8 @@ Inferred types:
 'additionalItems' @ [219:43] ==> val additionalItems: Collection<LookupElement> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.ALL.<no name provided>.doComplete.completeWithSmartCompletion[LocalVariableDescriptor]
 
 'withCollectRequiredContextVariableTypes' @ [223:58] ==> protected final fun withCollectRequiredContextVariableTypes(action: (LookupElementFactory) -> Unit): Collection<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[SimpleFunctionDescriptorImpl]
+
+'completeWithSmartCompletion' @ [223:100] ==> local final fun completeWithSmartCompletion(lookupElementFactory: LookupElementFactory): Unit defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.ALL.<no name provided>.doComplete[SimpleFunctionDescriptorImpl]
 
 'withCollectRequiredContextVariableTypes' @ [225:60] ==> protected final fun withCollectRequiredContextVariableTypes(action: (LookupElementFactory) -> Unit): Collection<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[SimpleFunctionDescriptorImpl]
 
@@ -403,7 +397,7 @@ Inferred types:
 
 'isEmpty' @ [227:28] ==> @InlineOnly public inline fun CharSequence.isEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'callTypeAndReceiver' @ [228:24] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [228:24] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'receiver' @ [228:44] ==> public final val receiver: KtElement? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
@@ -477,21 +471,19 @@ Inferred types:
 
 'doComplete' @ [248:27] ==> public open fun doComplete(): Unit defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.KEYWORDS_ONLY.<no name provided>[SimpleFunctionDescriptorImpl]
 
-'callTypeAndReceiver' @ [251:17] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [251:17] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'receiver' @ [251:37] ==> public final val receiver: KtElement? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
-'callTypeAndReceiver' @ [251:57] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [251:57] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [251:77] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [251:77] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'descriptorKindFilter' @ [251:86] ==> public final val descriptorKindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.util.CallType[DeserializedPropertyDescriptor]
 
 'kindMask' @ [251:107] ==> public final val kindMask: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedPropertyDescriptor]
 
 'and' @ [251:116] ==> public final infix fun and(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [251:120] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'PACKAGES_MASK' @ [251:141] ==> public final val PACKAGES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -507,7 +499,7 @@ Inferred types:
 
 'prefixMatcher' @ [253:109] ==> protected final val prefixMatcher: CamelHumpMatcher defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'asNameFilter' @ [253:123] ==> public fun PrefixMatcher.asNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'asNameFilter' @ [253:123] ==> public fun PrefixMatcher.asNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'toMutableSet' @ [254:26] ==> public fun <T> Iterable<FqName>.toMutableSet(): MutableSet<FqName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -579,9 +571,9 @@ Inferred types:
 
 'expectedInfos' @ [270:57] ==> protected open val expectedInfos: Collection<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [270:72] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [270:72] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [270:92] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [270:92] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'flushToResultSet' @ [271:13] ==> protected final fun flushToResultSet(): Unit defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[SimpleFunctionDescriptorImpl]
 
@@ -601,9 +593,9 @@ Inferred types:
 
 'receiverTypes' @ [276:58] ==> protected final val receiverTypes: Collection<ReceiverType>? defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [276:73] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [276:73] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [276:93] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [276:93] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'lookupElementFactory' @ [276:103] ==> value-parameter lookupElementFactory: LookupElementFactory defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.ALL.<no name provided>.doComplete.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -705,7 +697,7 @@ Inferred types:
 
 'isJvmModule' @ [299:25] ==> protected final val isJvmModule: Boolean defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [300:21] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [300:21] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'staticMembersCompletion' @ [301:21] ==> val staticMembersCompletion: StaticMembersCompletion defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.ALL.<no name provided>.doComplete.<anonymous>[LocalVariableDescriptor]
 
@@ -765,7 +757,7 @@ Inferred types:
 
 'staticMembers' @ [318:35] ==> public final val staticMembers: Boolean defined in org.jetbrains.kotlin.idea.completion.CompletionSessionConfiguration[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [318:52] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [318:52] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'prefix' @ [318:106] ==> protected final val prefix: String defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -928,7 +920,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Unit
 
-'callTypeAndReceiver' @ [332:17] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [332:17] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'receiver' @ [332:37] ==> public final val receiver: KtElement? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
@@ -957,7 +949,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Boolean
 
-'callTypeAndReceiver' @ [335:44] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [335:44] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'classKindFilter' @ [337:25] ==> val classKindFilter: ((ClassKind) -> Boolean)? defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.ALL.<no name provided>.completeNonImported[LocalVariableDescriptor]
 
@@ -1004,19 +996,19 @@ Inferred types:
 
 'prefixMatcher' @ [357:78] ==> val prefixMatcher: PrefixMatcher defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.ALL.<no name provided>.completeNonImported[LocalVariableDescriptor]
 
-'callTypeAndReceiver' @ [360:22] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [360:22] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'bindingContext' @ [361:33] ==> protected final val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'QUALIFIER' @ [361:63] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
-'callTypeAndReceiver' @ [361:74] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [361:74] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'receiver' @ [361:94] ==> public final val receiver: KtExpression defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.DOT[DeserializedPropertyDescriptor]
 
 'qualifier' @ [362:21] ==> val qualifier: Qualifier? defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.ALL.<no name provided>.completeNonImported[LocalVariableDescriptor]
 
-'callTypeAndReceiver' @ [363:32] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [363:32] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'receiver' @ [363:52] ==> public final val receiver: KtExpression defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.DOT[DeserializedPropertyDescriptor]
 
@@ -1160,8 +1152,6 @@ Inferred types:
 
 'isVisibleFilter' @ [401:68] ==> protected final val isVisibleFilter: (DeclarationDescriptor) -> Boolean defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'NotPropertiesService' @ [402:68] ==> public companion object defined in org.jetbrains.kotlin.idea.core.NotPropertiesService[FakeCallableDescriptorForObject]
-
 'getNotProperties' @ [402:89] ==> public final fun getNotProperties(element: PsiElement): Set<FqNameUnsafe> defined in org.jetbrains.kotlin.idea.core.NotPropertiesService.Companion[DeserializedSimpleFunctionDescriptor]
 
 'position' @ [402:106] ==> protected final val position: PsiElement defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
@@ -1176,7 +1166,7 @@ Inferred types:
 
 'nameExpression' @ [404:74] ==> protected final val nameExpression: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [404:90] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [404:90] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'resolutionFacade' @ [404:111] ==> protected final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -1192,7 +1182,7 @@ Inferred types:
 
 'nameExpression' @ [407:81] ==> protected final val nameExpression: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [407:97] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [407:97] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'lookupElementFactory' @ [409:43] ==> value-parameter lookupElementFactory: LookupElementFactory defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.ALL.<no name provided>.completeNonImported[ValueParameterDescriptorImpl]
 
@@ -1498,9 +1488,7 @@ Inferred types:
 
 'putUserData' @ [497:39] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'SmartCompletionInBasicWeigher' @ [497:51] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'KEYWORD_VALUE_MATCHED_KEY' @ [497:81] ==> public final val KEYWORD_VALUE_MATCHED_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher.Companion[PropertyDescriptorImpl]
 
@@ -1510,7 +1498,7 @@ Inferred types:
 
 'putUserData' @ [498:39] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(SmartCompletionItemPriority..SmartCompletionItemPriority?)>, @Nullable p1: SmartCompletionItemPriority?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SmartCompletionItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority..org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority?)
 
 'SMART_COMPLETION_ITEM_PRIORITY_KEY' @ [498:51] ==> public val SMART_COMPLETION_ITEM_PRIORITY_KEY: Key<SmartCompletionItemPriority> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[PropertyDescriptorImpl]
 
@@ -1528,7 +1516,7 @@ Inferred types:
 
 'keywordValueConsumer' @ [503:35] ==> val keywordValueConsumer: <no name provided> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.KEYWORDS_ONLY.<no name provided>.doComplete[LocalVariableDescriptor]
 
-'callTypeAndReceiver' @ [503:57] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [503:57] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'bindingContext' @ [503:78] ==> protected final val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -1652,7 +1640,7 @@ Inferred types:
 
 'addElements' @ [515:39] ==> public final fun addElements(elements: Iterable<LookupElement>, notImported: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.LookupElementsCollector[SimpleFunctionDescriptorImpl]
 
-'thisExpressionItems' @ [515:51] ==> public fun thisExpressionItems(bindingContext: BindingContext, position: KtExpression, prefix: String, resolutionFacade: ResolutionFacade): Collection<ThisItemLookupObject> defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'thisExpressionItems' @ [515:51] ==> public fun thisExpressionItems(bindingContext: BindingContext, position: KtExpression, prefix: String, resolutionFacade: ResolutionFacade): Collection<ThisItemLookupObject> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [515:71] ==> protected final val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -1669,7 +1657,7 @@ Inferred types:
 
 'it' @ [515:131] ==> value-parameter it: ThisItemLookupObject defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.KEYWORDS_ONLY.<no name provided>.doComplete.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'createLookupElement' @ [515:134] ==> public fun ThisItemLookupObject.createLookupElement(): (LookupElementBuilder..LookupElementBuilder?) defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'createLookupElement' @ [515:134] ==> public fun ThisItemLookupObject.createLookupElement(): (LookupElementBuilder..LookupElementBuilder?) defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'collector' @ [519:29] ==> protected final val collector: LookupElementsCollector defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -1683,7 +1671,7 @@ Inferred types:
 
 'addElements' @ [526:39] ==> public final fun addElements(elements: Iterable<LookupElement>, notImported: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.LookupElementsCollector[SimpleFunctionDescriptorImpl]
 
-'returnExpressionItems' @ [526:51] ==> public fun returnExpressionItems(bindingContext: BindingContext, position: KtElement): Collection<LookupElement> defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'returnExpressionItems' @ [526:51] ==> public fun returnExpressionItems(bindingContext: BindingContext, position: KtElement): Collection<LookupElement> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [526:73] ==> protected final val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -1695,7 +1683,7 @@ Inferred types:
 
 'addElements' @ [532:39] ==> public final fun addElements(elements: Iterable<LookupElement>, notImported: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.LookupElementsCollector[SimpleFunctionDescriptorImpl]
 
-'breakOrContinueExpressionItems' @ [532:51] ==> public fun breakOrContinueExpressionItems(position: KtElement, breakOrContinue: String): Collection<LookupElement> defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'breakOrContinueExpressionItems' @ [532:51] ==> public fun breakOrContinueExpressionItems(position: KtElement, breakOrContinue: String): Collection<LookupElement> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [532:82] ==> protected final val expression: KtExpression? defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -1717,7 +1705,7 @@ Inferred types:
 
 'position' @ [539:92] ==> protected final val position: PsiElement defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [543:29] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [543:29] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'collector' @ [544:29] ==> protected final val collector: LookupElementsCollector defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -1799,9 +1787,9 @@ Inferred types:
 
 'expectedInfos' @ [577:57] ==> protected open val expectedInfos: Collection<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [577:72] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [577:72] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [577:92] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [577:92] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'nameExpression' @ [586:17] ==> protected final val nameExpression: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
@@ -1887,9 +1875,7 @@ Inferred types:
 
 'putUserData' @ [610:31] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'KotlinCompletionCharFilter' @ [610:43] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'SUPPRESS_ITEM_SELECTION_BY_CHARS_ON_TYPING' @ [610:70] ==> public final val SUPPRESS_ITEM_SELECTION_BY_CHARS_ON_TYPING: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter.Companion[PropertyDescriptorImpl]
 
@@ -1964,8 +1950,6 @@ Inferred types:
 
 'weighBefore' @ [644:31] ==> public abstract fun weighBefore(@NotNull p0: String, vararg p1: (LookupElementWeigher..LookupElementWeigher?)): (CompletionSorter..CompletionSorter?) defined in com.intellij.codeInsight.completion.CompletionSorter[JavaMethodDescriptor]
 
-'ParameterNameAndTypeCompletion' @ [644:53] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion[FakeCallableDescriptorForObject]
-
 'Weigher' @ [644:84] ==> public object Weigher : LookupElementWeigher defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion[FakeCallableDescriptorForObject]
 
 'sorter' @ [646:20] ==> value-parameter sorter: CompletionSorter defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession.DECLARATION_NAME.<no name provided>.addWeighers[ValueParameterDescriptorImpl]
@@ -2012,9 +1996,7 @@ Inferred types:
 
 'putUserData' @ [659:31] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'KotlinCompletionCharFilter' @ [659:43] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'HIDE_LOOKUP_ON_COLON' @ [659:70] ==> public final val HIDE_LOOKUP_ON_COLON: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter.Companion[PropertyDescriptorImpl]
 
@@ -2184,7 +2166,7 @@ Inferred types:
 
 'declarationDescriptor' @ [703:50] ==> public final val TypeConstructor.declarationDescriptor: ClassifierDescriptor?[MyPropertyDescriptor]
 
-'callTypeAndReceiver' @ [705:17] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [705:17] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.BasicCompletionSession[PropertyDescriptorImpl]
 
 'receiver' @ [705:37] ==> public final val receiver: KtElement? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
@@ -2461,8 +2443,6 @@ Inferred types:
 
 'CLASSIFIERS_MASK' @ [778:82] ==> public final val CLASSIFIERS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
-'DescriptorKindFilter' @ [778:102] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS_MASK' @ [778:123] ==> public final val FUNCTIONS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'listOf' @ [779:61] ==> public fun <T> listOf(vararg elements: DescriptorKindExclude): List<DescriptorKindExclude> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -2478,8 +2458,6 @@ Inferred types:
 'DescriptorKindFilter' @ [780:61] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'CALLABLES_MASK' @ [780:82] ==> public final val CALLABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'DescriptorKindFilter' @ [780:100] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'PACKAGES_MASK' @ [780:121] ==> public final val PACKAGES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 

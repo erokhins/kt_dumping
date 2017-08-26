@@ -21,12 +21,12 @@ Inferred types:
 
 'nameIdentifier' @ [45:18] ==> public final val KtCallableDeclaration.nameIdentifier: PsiElement?[MyPropertyDescriptor]
 
-'let' @ [45:34] ==> @InlineOnly public inline fun <T, R> PsiElement.let(block: (PsiElement) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [45:34] ==> @InlineOnly public inline fun <T, R> PsiElement.let(block: (PsiElement) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiElement
-    <R> -> Nothing?
+    <R> -> Nothing
 
-'provideTypeHint' @ [46:20] ==> public fun provideTypeHint(element: KtCallableDeclaration, offset: Int): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'provideTypeHint' @ [46:20] ==> public fun provideTypeHint(element: KtCallableDeclaration, offset: Int): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo in file TypeHints.kt[SimpleFunctionDescriptorImpl]
 
 'property' @ [46:36] ==> value-parameter property: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.parameterInfo.providePropertyTypeHint.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -134,7 +134,7 @@ Inferred types:
 
 'getCustomSettings' @ [65:18] ==> public open fun <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> getCustomSettings(@NotNull p0: Class<(KotlinCodeStyleSettings..KotlinCodeStyleSettings?)>): (KotlinCodeStyleSettings..KotlinCodeStyleSettings?) defined in com.intellij.psi.codeStyle.CodeStyleSettings[JavaMethodDescriptor]
 Inferred types:
-    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> KotlinCodeStyleSettings
+    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> (org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings..org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings?)
 
 'KotlinCodeStyleSettings' @ [65:36] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
@@ -216,7 +216,7 @@ Inferred types:
 
 'candidateDescriptor' @ [91:55] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'constructorDescriptor' @ [92:17] ==> val constructorDescriptor: ConstructorDescriptor? defined in org.jetbrains.kotlin.idea.parameterInfo.isUnclearType[LocalVariableDescriptor]
 

@@ -51,7 +51,9 @@ Inferred types:
 
 'errorNotification' @ [49:43] ==> public fun errorNotification(project: Project?, message: String): Unit defined in org.jetbrains.kotlin.console.actions in file RunExecuteActions.kt[SimpleFunctionDescriptorImpl]
 
-'KotlinConsoleKeeper' @ [50:25] ==> public companion object defined in org.jetbrains.kotlin.console.KotlinConsoleKeeper[FakeCallableDescriptorForObject]
+'?:' @ [50:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinConsoleRunner?, right: KotlinConsoleRunner): KotlinConsoleRunner[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinConsoleRunner
 
 'getInstance' @ [50:45] ==> @JvmStatic public final fun getInstance(project: Project): (KotlinConsoleKeeper..KotlinConsoleKeeper?) defined in org.jetbrains.kotlin.console.KotlinConsoleKeeper.Companion[SimpleFunctionDescriptorImpl]
 

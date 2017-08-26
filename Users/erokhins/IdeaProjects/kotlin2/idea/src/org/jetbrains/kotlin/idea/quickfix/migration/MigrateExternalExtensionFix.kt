@@ -215,8 +215,6 @@ Inferred types:
 
 'isJsAnnotation' @ [99:20] ==> private final fun KtAnnotationEntry.isJsAnnotation(vararg predefinedAnnotations: PredefinedAnnotation): Boolean defined in org.jetbrains.kotlin.idea.quickfix.migration.MigrateExternalExtensionFix.Companion[SimpleFunctionDescriptorImpl]
 
-'PredefinedAnnotation' @ [99:35] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
 'NATIVE_GETTER' @ [99:56] ==> enum entry NATIVE_GETTER defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'isGetter' @ [100:21] ==> var isGetter: Boolean defined in org.jetbrains.kotlin.idea.quickfix.migration.MigrateExternalExtensionFix.fetchJsNativeAnnotations[LocalVariableDescriptor]
@@ -230,8 +228,6 @@ Inferred types:
 'it' @ [103:17] ==> value-parameter it: (KtAnnotationEntry..KtAnnotationEntry?) defined in org.jetbrains.kotlin.idea.quickfix.migration.MigrateExternalExtensionFix.fetchJsNativeAnnotations.<anonymous>[ValueParameterDescriptorImpl]
 
 'isJsAnnotation' @ [103:20] ==> private final fun KtAnnotationEntry.isJsAnnotation(vararg predefinedAnnotations: PredefinedAnnotation): Boolean defined in org.jetbrains.kotlin.idea.quickfix.migration.MigrateExternalExtensionFix.Companion[SimpleFunctionDescriptorImpl]
-
-'PredefinedAnnotation' @ [103:35] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'NATIVE_SETTER' @ [103:56] ==> enum entry NATIVE_SETTER defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
@@ -247,8 +243,6 @@ Inferred types:
 
 'isJsAnnotation' @ [107:20] ==> private final fun KtAnnotationEntry.isJsAnnotation(vararg predefinedAnnotations: PredefinedAnnotation): Boolean defined in org.jetbrains.kotlin.idea.quickfix.migration.MigrateExternalExtensionFix.Companion[SimpleFunctionDescriptorImpl]
 
-'PredefinedAnnotation' @ [107:35] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
 'NATIVE_INVOKE' @ [107:56] ==> enum entry NATIVE_INVOKE defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'isInvoke' @ [108:21] ==> var isInvoke: Boolean defined in org.jetbrains.kotlin.idea.quickfix.migration.MigrateExternalExtensionFix.fetchJsNativeAnnotations[LocalVariableDescriptor]
@@ -262,8 +256,6 @@ Inferred types:
 'it' @ [111:17] ==> value-parameter it: (KtAnnotationEntry..KtAnnotationEntry?) defined in org.jetbrains.kotlin.idea.quickfix.migration.MigrateExternalExtensionFix.fetchJsNativeAnnotations.<anonymous>[ValueParameterDescriptorImpl]
 
 'isJsAnnotation' @ [111:20] ==> private final fun KtAnnotationEntry.isJsAnnotation(vararg predefinedAnnotations: PredefinedAnnotation): Boolean defined in org.jetbrains.kotlin.idea.quickfix.migration.MigrateExternalExtensionFix.Companion[SimpleFunctionDescriptorImpl]
-
-'PredefinedAnnotation' @ [111:35] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'NATIVE' @ [111:56] ==> enum entry NATIVE defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
@@ -811,19 +803,11 @@ Inferred types:
 
 'isJsAnnotation' @ [245:20] ==> private final fun KtAnnotationEntry.isJsAnnotation(vararg predefinedAnnotations: PredefinedAnnotation): Boolean defined in org.jetbrains.kotlin.idea.quickfix.migration.MigrateExternalExtensionFix.Companion[SimpleFunctionDescriptorImpl]
 
-'PredefinedAnnotation' @ [245:35] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
 'NATIVE' @ [245:56] ==> enum entry NATIVE defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
-'PredefinedAnnotation' @ [245:64] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'NATIVE_GETTER' @ [245:85] ==> enum entry NATIVE_GETTER defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
-'PredefinedAnnotation' @ [245:100] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
 'NATIVE_SETTER' @ [245:121] ==> enum entry NATIVE_SETTER defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
-'PredefinedAnnotation' @ [245:136] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'NATIVE_INVOKE' @ [245:157] ==> enum entry NATIVE_INVOKE defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 

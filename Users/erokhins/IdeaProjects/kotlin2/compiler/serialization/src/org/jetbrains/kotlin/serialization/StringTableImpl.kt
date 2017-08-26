@@ -127,6 +127,8 @@ Inferred types:
 
 'this' @ [70:43] ==> <this> defined in org.jetbrains.kotlin.serialization.StringTableImpl[LazyClassReceiverParameterDescriptor]
 
+'getClassIdIndex' @ [70:49] ==> public final fun getClassIdIndex(classId: ClassId): Int defined in org.jetbrains.kotlin.serialization.StringTableImpl[SimpleFunctionDescriptorImpl]
+
 'getPackageFqNameIndex' @ [71:20] ==> public final fun getPackageFqNameIndex(fqName: FqName): Int defined in org.jetbrains.kotlin.serialization.StringTableImpl[SimpleFunctionDescriptorImpl]
 
 'classId' @ [71:42] ==> value-parameter classId: ClassId defined in org.jetbrains.kotlin.serialization.StringTableImpl.getClassIdIndex[ValueParameterDescriptorImpl]

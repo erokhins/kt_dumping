@@ -104,8 +104,6 @@ Inferred types:
 
 'modality' @ [77:36] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [77:48] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [77:57] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'MethodDefined' @ [78:39] ==> public final val MethodDefined: (Icon..Icon?) defined in com.intellij.icons.AllIcons.Hierarchy[JavaPropertyDescriptor]
@@ -113,8 +111,6 @@ Inferred types:
 'classDescriptor' @ [81:31] ==> val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.idea.hierarchy.overrides.KotlinOverrideHierarchyNodeDescriptor.calculateState[LocalVariableDescriptor]
 
 'modality' @ [81:47] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [81:59] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [81:68] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -131,8 +127,6 @@ Inferred types:
 'it' @ [82:108] ==> value-parameter it: (CallableMemberDescriptor..CallableMemberDescriptor?) defined in org.jetbrains.kotlin.idea.hierarchy.overrides.KotlinOverrideHierarchyNodeDescriptor.calculateState.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [82:111] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [82:123] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [82:132] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

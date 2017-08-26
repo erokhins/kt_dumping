@@ -62,9 +62,9 @@ Inferred types:
 
 'DefaultStatementConverter' @ [71:98] ==> public constructor DefaultStatementConverter() defined in org.jetbrains.kotlin.j2k.DefaultStatementConverter[ClassConstructorDescriptorImpl]
 
-'lazy' @ [74:33] ==> public fun <T> lazy(initializer: () -> CodeConverter): Lazy<CodeConverter> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [74:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CodeConverter
+    <T> -> T
 
 'withCommonState' @ [74:40] ==> private final fun withCommonState(state: Converter.CommonState): Converter defined in org.jetbrains.kotlin.j2k.Converter[SimpleFunctionDescriptorImpl]
 
@@ -162,8 +162,6 @@ Inferred types:
 
 'convertProperty' @ [107:24] ==> public final fun convertProperty(propertyInfo: PropertyInfo, classKind: ClassKind): Member defined in org.jetbrains.kotlin.j2k.Converter[SimpleFunctionDescriptorImpl]
 
-'PropertyInfo' @ [107:40] ==> public companion object defined in org.jetbrains.kotlin.j2k.PropertyInfo[FakeCallableDescriptorForObject]
-
 'fromFieldWithNoAccessors' @ [107:53] ==> public final fun fromFieldWithNoAccessors(field: PsiField, converter: Converter): PropertyInfo defined in org.jetbrains.kotlin.j2k.PropertyInfo.Companion[SimpleFunctionDescriptorImpl]
 
 'element' @ [107:78] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.j2k.Converter.convertTopElement[ValueParameterDescriptorImpl]
@@ -188,7 +186,7 @@ Inferred types:
 
 'element' @ [110:47] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.j2k.Converter.convertTopElement[ValueParameterDescriptorImpl]
 
-'convertImport' @ [111:38] ==> public fun Converter.convertImport(anImport: PsiImportStatementBase, dumpConversion: Boolean = ...): List<Import> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'convertImport' @ [111:38] ==> public fun Converter.convertImport(anImport: PsiImportStatementBase, dumpConversion: Boolean = ...): List<Import> defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [111:52] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.j2k.Converter.convertTopElement[ValueParameterDescriptorImpl]
 
@@ -694,8 +692,6 @@ Inferred types:
 
 'primaryConstructor' @ [212:77] ==> val primaryConstructor: PrimaryConstructor? defined in org.jetbrains.kotlin.j2k.Converter.convertClass.<anonymous>[LocalVariableDescriptor]
 
-'CommentsAndSpacesInheritance' @ [212:97] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'NO_SPACES' @ [212:126] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
 'converted' @ [215:16] ==> val converted: Class defined in org.jetbrains.kotlin.j2k.Converter.convertClass[LocalVariableDescriptor]
@@ -783,6 +779,8 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiField..com.intellij.psi.PsiField?)
 
+'isStatic' @ [231:80] ==> local final fun isStatic(member: PsiMember): Boolean defined in org.jetbrains.kotlin.j2k.Converter.shouldConvertIntoObject[SimpleFunctionDescriptorImpl]
+
 '!' @ [231:93] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
 'classes' @ [231:94] ==> val classes: (Array<(PsiClass..PsiClass?)>..Array<out (PsiClass..PsiClass?)>) defined in org.jetbrains.kotlin.j2k.Converter.shouldConvertIntoObject[LocalVariableDescriptor]
@@ -790,6 +788,8 @@ Inferred types:
 'all' @ [231:102] ==> public inline fun <T> Array<out (PsiClass..PsiClass?)>.all(predicate: ((PsiClass..PsiClass?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
+
+'isStatic' @ [231:108] ==> local final fun isStatic(member: PsiMember): Boolean defined in org.jetbrains.kotlin.j2k.Converter.shouldConvertIntoObject[SimpleFunctionDescriptorImpl]
 
 'psiClass' @ [233:28] ==> value-parameter psiClass: PsiClass defined in org.jetbrains.kotlin.j2k.Converter.shouldConvertIntoObject[ValueParameterDescriptorImpl]
 
@@ -919,8 +919,6 @@ Inferred types:
 
 'returnTypeElement' @ [257:41] ==> public final val PsiAnnotationMethod.returnTypeElement: PsiTypeElement?[MyPropertyDescriptor]
 
-'CommentsAndSpacesInheritance' @ [257:60] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'NO_SPACES' @ [257:89] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
 'FunctionParameter' @ [259:20] ==> public constructor FunctionParameter(identifier: Identifier, type: Type?, varVal: FunctionParameter.VarValModifier, annotations: Annotations, modifiers: Modifiers, defaultValue: DeferredElement<Expression>? = ...) defined in org.jetbrains.kotlin.j2k.ast.FunctionParameter[ClassConstructorDescriptorImpl]
@@ -950,8 +948,6 @@ Inferred types:
     <TElement : Element> -> FunctionParameter
 
 'method' @ [264:114] ==> value-parameter method: PsiAnnotationMethod defined in org.jetbrains.kotlin.j2k.Converter.convertAnnotationType.createParameter[ValueParameterDescriptorImpl]
-
-'CommentsAndSpacesInheritance' @ [264:122] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [264:151] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -1041,11 +1037,7 @@ Inferred types:
 
 'PrimaryConstructorSignature' @ [287:13] ==> public constructor PrimaryConstructorSignature(annotations: Annotations, modifiers: Modifiers, parameterList: ParameterList) defined in org.jetbrains.kotlin.j2k.ast.PrimaryConstructorSignature[ClassConstructorDescriptorImpl]
 
-'Annotations' @ [287:41] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Annotations[FakeCallableDescriptorForObject]
-
 'Empty' @ [287:53] ==> public final val Empty: Annotations defined in org.jetbrains.kotlin.j2k.ast.Annotations.Companion[PropertyDescriptorImpl]
-
-'Modifiers' @ [287:60] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
 
 'Empty' @ [287:70] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
@@ -1116,8 +1108,6 @@ Inferred types:
 'without' @ [298:82] ==> public final fun without(modifier: Modifier?): Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers[SimpleFunctionDescriptorImpl]
 
 'ABSTRACT' @ [298:99] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.j2k.ast.Modifier[FakeCallableDescriptorForObject]
-
-'TypeParameterList' @ [299:22] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.TypeParameterList[FakeCallableDescriptorForObject]
 
 'Empty' @ [299:40] ==> public final val Empty: TypeParameterList defined in org.jetbrains.kotlin.j2k.ast.TypeParameterList.Companion[PropertyDescriptorImpl]
 
@@ -1246,8 +1236,6 @@ Inferred types:
 'specialModifiersCase' @ [328:65] ==> private final fun specialModifiersCase(field: PsiField): Modifiers defined in org.jetbrains.kotlin.j2k.Converter[SimpleFunctionDescriptorImpl]
 
 'field' @ [328:86] ==> val field: PsiField? defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
-
-'Modifiers' @ [328:98] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
 
 'Empty' @ [328:108] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
@@ -1445,8 +1433,6 @@ Inferred types:
 
 'field' @ [342:38] ==> val field: PsiField? defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
 
-'CommentsAndSpacesInheritance' @ [342:45] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'LINE_BREAKS' @ [342:74] ==> public final val LINE_BREAKS: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
 'setMethod' @ [345:35] ==> val setMethod: PsiMethod? defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
@@ -1626,8 +1612,6 @@ Inferred types:
 
 'annotations' @ [371:70] ==> public final var annotations: Annotations defined in org.jetbrains.kotlin.j2k.ast.FunctionLike[PropertyDescriptorImpl]
 
-'Modifiers' @ [371:83] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
-
 'Empty' @ [371:93] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
 'method' @ [371:100] ==> val method: FunctionLike defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
@@ -1645,8 +1629,6 @@ Inferred types:
     <TElement : Element> -> PropertyAccessor
 
 'getMethod' @ [372:44] ==> val getMethod: PsiMethod? defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
-
-'CommentsAndSpacesInheritance' @ [372:55] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [372:84] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -1683,8 +1665,6 @@ Inferred types:
 'isAbstract' @ [374:106] ==> public final fun isAbstract(): Boolean defined in org.jetbrains.kotlin.j2k.SuperInfo[SimpleFunctionDescriptorImpl]
 
 'SuperExpression' @ [375:43] ==> public constructor SuperExpression(identifier: Identifier) defined in org.jetbrains.kotlin.j2k.ast.SuperExpression[ClassConstructorDescriptorImpl]
-
-'Identifier' @ [375:59] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'Empty' @ [375:70] ==> public final val Empty: Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[PropertyDescriptorImpl]
 
@@ -1736,11 +1716,7 @@ Inferred types:
 
 'GETTER' @ [380:60] ==> enum entry GETTER defined in org.jetbrains.kotlin.j2k.AccessorKind[FakeCallableDescriptorForObject]
 
-'Annotations' @ [380:68] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Annotations[FakeCallableDescriptorForObject]
-
 'Empty' @ [380:80] ==> public final val Empty: Annotations defined in org.jetbrains.kotlin.j2k.ast.Annotations.Companion[PropertyDescriptorImpl]
-
-'Modifiers' @ [380:87] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
 
 'Empty' @ [380:97] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
@@ -1764,11 +1740,7 @@ Inferred types:
 
 'GETTER' @ [385:60] ==> enum entry GETTER defined in org.jetbrains.kotlin.j2k.AccessorKind[FakeCallableDescriptorForObject]
 
-'Annotations' @ [385:68] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Annotations[FakeCallableDescriptorForObject]
-
 'Empty' @ [385:80] ==> public final val Empty: Annotations defined in org.jetbrains.kotlin.j2k.ast.Annotations.Companion[PropertyDescriptorImpl]
-
-'Modifiers' @ [385:87] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
 
 'Empty' @ [385:97] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
@@ -1931,8 +1903,6 @@ Inferred types:
 
 'parameterAnnotations' @ [400:139] ==> val parameterAnnotations: Annotations defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
 
-'Modifiers' @ [400:161] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
-
 'Empty' @ [400:171] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
 'assignPrototypesFrom' @ [401:38] ==> public fun <TElement : Element> FunctionParameter.assignPrototypesFrom(element: Element, inheritance: CommentsAndSpacesInheritance? = ...): FunctionParameter defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
@@ -1941,11 +1911,7 @@ Inferred types:
 
 'convertedParameter' @ [401:59] ==> val convertedParameter: FunctionParameter defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
 
-'CommentsAndSpacesInheritance' @ [401:79] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'NO_SPACES' @ [401:108] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
-
-'ParameterList' @ [402:29] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.ParameterList[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [402:43] ==> public final fun withNoPrototype(parameters: List<Parameter>): ParameterList defined in org.jetbrains.kotlin.j2k.ast.ParameterList.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1978,8 +1944,6 @@ Inferred types:
     <TElement : Element> -> PropertyAccessor
 
 'setMethod' @ [409:44] ==> val setMethod: PsiMethod? defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
-
-'CommentsAndSpacesInheritance' @ [409:55] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [409:84] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -2018,8 +1982,6 @@ Inferred types:
 
 'SuperExpression' @ [412:43] ==> public constructor SuperExpression(identifier: Identifier) defined in org.jetbrains.kotlin.j2k.ast.SuperExpression[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [412:59] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'Empty' @ [412:70] ==> public final val Empty: Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[PropertyDescriptorImpl]
 
 'assignNoPrototype' @ [412:77] ==> public fun <TElement : Element> SuperExpression.assignNoPrototype(): SuperExpression defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
@@ -2048,8 +2010,6 @@ Inferred types:
 
 'valueIdentifier' @ [415:72] ==> val valueIdentifier: Identifier defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
 
-'Operator' @ [415:89] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Operator[FakeCallableDescriptorForObject]
-
 'EQ' @ [415:98] ==> public final val EQ: Operator defined in org.jetbrains.kotlin.j2k.ast.Operator.Companion[PropertyDescriptorImpl]
 
 'assignNoPrototype' @ [415:102] ==> public fun <TElement : Element> AssignmentExpression.assignNoPrototype(): AssignmentExpression defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
@@ -2074,11 +2034,7 @@ Inferred types:
 
 'None' @ [417:119] ==> enum entry None defined in org.jetbrains.kotlin.j2k.ast.FunctionParameter.VarValModifier[FakeCallableDescriptorForObject]
 
-'Annotations' @ [417:125] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Annotations[FakeCallableDescriptorForObject]
-
 'Empty' @ [417:137] ==> public final val Empty: Annotations defined in org.jetbrains.kotlin.j2k.ast.Annotations.Companion[PropertyDescriptorImpl]
-
-'Modifiers' @ [417:144] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
 
 'Empty' @ [417:154] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
@@ -2101,8 +2057,6 @@ Inferred types:
 'PropertyAccessor' @ [419:30] ==> public constructor PropertyAccessor(kind: AccessorKind, annotations: Annotations, modifiers: Modifiers, parameterList: ParameterList?, body: DeferredElement<Block>?) defined in org.jetbrains.kotlin.j2k.ast.PropertyAccessor[ClassConstructorDescriptorImpl]
 
 'SETTER' @ [419:60] ==> enum entry SETTER defined in org.jetbrains.kotlin.j2k.AccessorKind[FakeCallableDescriptorForObject]
-
-'Annotations' @ [419:68] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Annotations[FakeCallableDescriptorForObject]
 
 'Empty' @ [419:80] ==> public final val Empty: Annotations defined in org.jetbrains.kotlin.j2k.ast.Annotations.Companion[PropertyDescriptorImpl]
 
@@ -2128,8 +2082,6 @@ Inferred types:
 
 'SETTER' @ [423:60] ==> enum entry SETTER defined in org.jetbrains.kotlin.j2k.AccessorKind[FakeCallableDescriptorForObject]
 
-'Annotations' @ [423:68] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Annotations[FakeCallableDescriptorForObject]
-
 'Empty' @ [423:80] ==> public final val Empty: Annotations defined in org.jetbrains.kotlin.j2k.ast.Annotations.Companion[PropertyDescriptorImpl]
 
 'accessorModifiers' @ [423:87] ==> val accessorModifiers: Modifiers defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
@@ -2140,7 +2092,7 @@ Inferred types:
 
 'field' @ [427:35] ==> val field: PsiField? defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
 
-'shouldGenerateDefaultInitializer' @ [427:52] ==> public fun shouldGenerateDefaultInitializer(searcher: ReferenceSearcher, field: PsiField): Boolean defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'shouldGenerateDefaultInitializer' @ [427:52] ==> public fun shouldGenerateDefaultInitializer(searcher: ReferenceSearcher, field: PsiField): Boolean defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'referenceSearcher' @ [427:85] ==> public final val referenceSearcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.Converter[PropertyDescriptorImpl]
 
@@ -2228,13 +2180,9 @@ Inferred types:
 
 'it' @ [443:50] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.j2k.Converter.convertProperty.<anonymous>[ValueParameterDescriptorImpl]
 
-'placementElement' @ [443:56] ==> val placementElement: {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}? defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
-
-'CommentsAndSpacesInheritance' @ [443:74] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
+'placementElement' @ [443:56] ==> val placementElement: Any? defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
 
 'LINE_BREAKS' @ [443:103] ==> public final val LINE_BREAKS: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
-
-'CommentsAndSpacesInheritance' @ [443:120] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [443:149] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -2440,7 +2388,7 @@ Inferred types:
 
 'initializer' @ [499:36] ==> val initializer: PsiExpression? defined in org.jetbrains.kotlin.j2k.Converter.shouldDeclareVariableType[LocalVariableDescriptor]
 
-'isNullLiteral' @ [499:48] ==> public fun PsiExpression.isNullLiteral(): Boolean defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'isNullLiteral' @ [499:48] ==> public fun PsiExpression.isNullLiteral(): Boolean defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'initializer' @ [500:13] ==> val initializer: PsiExpression? defined in org.jetbrains.kotlin.j2k.Converter.shouldDeclareVariableType[LocalVariableDescriptor]
 
@@ -2582,11 +2530,7 @@ Inferred types:
 
 'declarationIdentifier' @ [552:56] ==> public fun PsiNameIdentifierOwner.declarationIdentifier(): Identifier defined in org.jetbrains.kotlin.j2k.ast in file Identifier.kt[SimpleFunctionDescriptorImpl]
 
-'Annotations' @ [553:46] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Annotations[FakeCallableDescriptorForObject]
-
 'Empty' @ [553:58] ==> public final val Empty: Annotations defined in org.jetbrains.kotlin.j2k.ast.Annotations.Companion[PropertyDescriptorImpl]
-
-'Modifiers' @ [554:46] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
 
 'Empty' @ [554:56] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
@@ -2749,7 +2693,7 @@ Inferred types:
 
 'OPEN' @ [580:57] ==> enum entry OPEN defined in org.jetbrains.kotlin.j2k.ast.Modifier[FakeCallableDescriptorForObject]
 
-'convertParameterList' @ [584:26] ==> public fun Converter.convertParameterList(method: PsiMethod, overloadReducer: OverloadReducer?, convertParameter: (parameter: PsiParameter, default: DeferredElement<Expression>?) -> FunctionParameter = ..., correctCodeConverter: CodeConverter.() -> CodeConverter = ...): ParameterList defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'convertParameterList' @ [584:26] ==> public fun Converter.convertParameterList(method: PsiMethod, overloadReducer: OverloadReducer?, convertParameter: (parameter: PsiParameter, default: DeferredElement<Expression>?) -> FunctionParameter = ..., correctCodeConverter: CodeConverter.() -> CodeConverter = ...): ParameterList defined in org.jetbrains.kotlin.j2k in file OverloadReducer.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [584:47] ==> value-parameter method: PsiMethod defined in org.jetbrains.kotlin.j2k.Converter.convertMethod[ValueParameterDescriptorImpl]
 
@@ -2823,8 +2767,6 @@ Inferred types:
 
 'Annotation' @ [598:28] ==> public constructor Annotation(name: Identifier, arguments: List<Pair<Identifier?, DeferredElement<Expression>>>, newLineAfter: Boolean, target: AnnotationUseTarget? = ...) defined in org.jetbrains.kotlin.j2k.ast.Annotation[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [598:39] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'withNoPrototype' @ [598:50] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [599:39] ==> @InlineOnly public inline fun <T> listOf(): List<Pair<Identifier?, DeferredElement<Expression>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -2874,8 +2816,6 @@ Inferred types:
     <T> -> Annotation
 
 'Annotation' @ [605:28] ==> public constructor Annotation(name: Identifier, arguments: List<Pair<Identifier?, DeferredElement<Expression>>>, newLineAfter: Boolean, target: AnnotationUseTarget? = ...) defined in org.jetbrains.kotlin.j2k.ast.Annotation[ClassConstructorDescriptorImpl]
-
-'Identifier' @ [605:39] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [605:50] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
@@ -3163,8 +3103,6 @@ Inferred types:
 
 'ReferenceElement' @ [678:13] ==> public constructor ReferenceElement(name: Identifier, typeArgs: List<Element>) defined in org.jetbrains.kotlin.j2k.ast.ReferenceElement[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [678:30] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'withNoPrototype' @ [678:41] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
 'result' @ [678:57] ==> var result: String defined in org.jetbrains.kotlin.j2k.Converter.convertCodeReferenceElement[LocalVariableDescriptor]
@@ -3176,8 +3114,6 @@ Inferred types:
     <TElement : Element> -> ReferenceElement
 
 'element' @ [678:92] ==> value-parameter element: PsiJavaCodeReferenceElement defined in org.jetbrains.kotlin.j2k.Converter.convertCodeReferenceElement[ValueParameterDescriptorImpl]
-
-'CommentsAndSpacesInheritance' @ [678:101] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [678:130] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -3207,13 +3143,9 @@ Inferred types:
 
 'element' @ [686:87] ==> value-parameter element: PsiJavaCodeReferenceElement defined in org.jetbrains.kotlin.j2k.Converter.convertCodeReferenceElement[ValueParameterDescriptorImpl]
 
-'CommentsAndSpacesInheritance' @ [686:96] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'NO_SPACES' @ [686:125] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
 'ReferenceElement' @ [691:13] ==> public constructor ReferenceElement(name: Identifier, typeArgs: List<Element>) defined in org.jetbrains.kotlin.j2k.ast.ReferenceElement[ClassConstructorDescriptorImpl]
-
-'Identifier' @ [691:30] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [691:41] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
@@ -3228,8 +3160,6 @@ Inferred types:
     <TElement : Element> -> ReferenceElement
 
 'element' @ [691:109] ==> value-parameter element: PsiJavaCodeReferenceElement defined in org.jetbrains.kotlin.j2k.Converter.convertCodeReferenceElement[ValueParameterDescriptorImpl]
-
-'CommentsAndSpacesInheritance' @ [691:118] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [691:147] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -3278,8 +3208,6 @@ Inferred types:
 'toKotlin' @ [701:58] ==> public final fun toKotlin(name: String): String defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
 'qualifier' @ [701:67] ==> val qualifier: String defined in org.jetbrains.kotlin.j2k.Converter.constructNestedClassReferenceIdentifier[LocalVariableDescriptor]
-
-'Identifier' @ [701:86] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'toKotlin' @ [701:97] ==> public final fun toKotlin(name: String): String defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
@@ -3410,8 +3338,6 @@ Inferred types:
 
 'parameter' @ [729:106] ==> value-parameter parameter: PsiParameter defined in org.jetbrains.kotlin.j2k.Converter.convertParameter[ValueParameterDescriptorImpl]
 
-'CommentsAndSpacesInheritance' @ [729:117] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'LINE_BREAKS' @ [729:146] ==> public final val LINE_BREAKS: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
 'identifier' @ [733:13] ==> value-parameter identifier: PsiIdentifier? defined in org.jetbrains.kotlin.j2k.Converter.convertIdentifier[ValueParameterDescriptorImpl]
@@ -3464,8 +3390,6 @@ Inferred types:
 'owner' @ [740:34] ==> value-parameter owner: PsiModifierListOwner defined in org.jetbrains.kotlin.j2k.Converter.convertModifiers[ValueParameterDescriptorImpl]
 
 'modifierList' @ [740:40] ==> public final val PsiModifierListOwner.modifierList: PsiModifierList?[MyPropertyDescriptor]
-
-'CommentsAndSpacesInheritance' @ [740:54] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [740:83] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -3912,8 +3836,6 @@ Inferred types:
 'index' @ [832:116] ==> value-parameter index: Int defined in org.jetbrains.kotlin.j2k.Converter.convertThrows.<anonymous>[ValueParameterDescriptorImpl]
 
 'Annotation' @ [834:26] ==> public constructor Annotation(name: Identifier, arguments: List<Pair<Identifier?, DeferredElement<Expression>>>, newLineAfter: Boolean, target: AnnotationUseTarget? = ...) defined in org.jetbrains.kotlin.j2k.ast.Annotation[ClassConstructorDescriptorImpl]
-
-'Identifier' @ [834:37] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [834:48] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 

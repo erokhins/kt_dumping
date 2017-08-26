@@ -2,7 +2,7 @@
 
 'IntroduceRefactoringException' @ [46:9] ==> public constructor IntroduceRefactoringException(message: String) defined in org.jetbrains.kotlin.idea.refactoring.IntroduceRefactoringException[ClassConstructorDescriptorImpl]
 
-'selectElement' @ [52:5] ==> @Throws public fun selectElement(editor: Editor, file: KtFile, failOnEmptySuggestion: Boolean, elementKinds: Collection<CodeInsightUtils.ElementKind>, callback: (PsiElement?) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'selectElement' @ [52:5] ==> @Throws public fun selectElement(editor: Editor, file: KtFile, failOnEmptySuggestion: Boolean, elementKinds: Collection<CodeInsightUtils.ElementKind>, callback: (PsiElement?) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file elementSelectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'editor' @ [52:19] ==> value-parameter editor: Editor defined in org.jetbrains.kotlin.idea.refactoring.selectElement[ValueParameterDescriptorImpl]
 
@@ -77,7 +77,7 @@ Inferred types:
 
 'getParentOfType' @ [67:25] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtStringTemplateEntry..KtStringTemplateEntry?)>..Class<out (KtStringTemplateEntry..KtStringTemplateEntry?)>?)): KtStringTemplateEntry? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtStringTemplateEntry
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtStringTemplateEntry..org.jetbrains.kotlin.psi.KtStringTemplateEntry?)
 
 'firstElement' @ [67:41] ==> var firstElement: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.selectElement[LocalVariableDescriptor]
 
@@ -97,7 +97,7 @@ Inferred types:
 
 'getParentOfType' @ [68:28] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtStringTemplateEntry..KtStringTemplateEntry?)>..Class<out (KtStringTemplateEntry..KtStringTemplateEntry?)>?)): KtStringTemplateEntry? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtStringTemplateEntry
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtStringTemplateEntry..org.jetbrains.kotlin.psi.KtStringTemplateEntry?)
 
 'lastElement' @ [68:44] ==> var lastElement: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.selectElement[LocalVariableDescriptor]
 
@@ -178,7 +178,7 @@ Inferred types:
 
 'offset' @ [81:40] ==> public final val CaretModel.offset: Int[MyPropertyDescriptor]
 
-'smartSelectElement' @ [82:9] ==> @Throws private fun smartSelectElement(editor: Editor, file: PsiFile, offset: Int, failOnEmptySuggestion: Boolean, elementKinds: Collection<CodeInsightUtils.ElementKind>, callback: (PsiElement?) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'smartSelectElement' @ [82:9] ==> @Throws private fun smartSelectElement(editor: Editor, file: PsiFile, offset: Int, failOnEmptySuggestion: Boolean, elementKinds: Collection<CodeInsightUtils.ElementKind>, callback: (PsiElement?) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file elementSelectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'editor' @ [82:28] ==> value-parameter editor: Editor defined in org.jetbrains.kotlin.idea.refactoring.selectElement[ValueParameterDescriptorImpl]
 
@@ -214,7 +214,7 @@ Inferred types:
 
 'element' @ [96:9] ==> var element: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.getSmartSelectSuggestions[LocalVariableDescriptor]
 
-'getSmartSelectSuggestions' @ [96:42] ==> @Throws public fun getSmartSelectSuggestions(file: PsiFile, offset: Int, elementKind: CodeInsightUtils.ElementKind): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getSmartSelectSuggestions' @ [96:42] ==> @Throws public fun getSmartSelectSuggestions(file: PsiFile, offset: Int, elementKind: CodeInsightUtils.ElementKind): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring in file elementSelectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [96:68] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.refactoring.getSmartSelectSuggestions[ValueParameterDescriptorImpl]
 
@@ -442,7 +442,7 @@ Inferred types:
 
 'getParentOfType' @ [131:41] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtSuperExpression..KtSuperExpression?)>): KtSuperExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtSuperExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtSuperExpression..org.jetbrains.kotlin.psi.KtSuperExpression?)
 
 'element' @ [131:57] ==> var element: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.getSmartSelectSuggestions[LocalVariableDescriptor]
 
@@ -527,7 +527,7 @@ Inferred types:
     <T> -> ElementKind
     <R> -> KtElement
 
-'getSmartSelectSuggestions' @ [172:43] ==> @Throws public fun getSmartSelectSuggestions(file: PsiFile, offset: Int, elementKind: CodeInsightUtils.ElementKind): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getSmartSelectSuggestions' @ [172:43] ==> @Throws public fun getSmartSelectSuggestions(file: PsiFile, offset: Int, elementKind: CodeInsightUtils.ElementKind): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring in file elementSelectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [172:69] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.refactoring.smartSelectElement[ValueParameterDescriptorImpl]
 

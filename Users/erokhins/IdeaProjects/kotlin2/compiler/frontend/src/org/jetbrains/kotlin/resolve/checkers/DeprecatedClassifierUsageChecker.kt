@@ -4,7 +4,7 @@
 
 'targetDescriptor' @ [35:29] ==> value-parameter targetDescriptor: ClassifierDescriptor defined in org.jetbrains.kotlin.resolve.checkers.DeprecatedClassifierUsageChecker.check[ValueParameterDescriptorImpl]
 
-'getDeprecations' @ [35:46] ==> public fun DeclarationDescriptor.getDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'getDeprecations' @ [35:46] ==> public fun DeclarationDescriptor.getDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve in file deprecationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [35:62] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.checkers.DeprecatedClassifierUsageChecker.check[ValueParameterDescriptorImpl]
 

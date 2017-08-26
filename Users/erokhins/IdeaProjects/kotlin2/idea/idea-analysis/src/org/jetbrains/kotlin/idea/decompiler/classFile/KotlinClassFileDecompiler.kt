@@ -28,7 +28,7 @@
 
 'getService' @ [53:44] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(FileIndexFacade..FileIndexFacade?)>): (FileIndexFacade..FileIndexFacade?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FileIndexFacade
+    <T : (Any..Any?)> -> (com.intellij.openapi.roots.FileIndexFacade..com.intellij.openapi.roots.FileIndexFacade?)
 
 'project' @ [53:55] ==> val project: Project defined in org.jetbrains.kotlin.idea.decompiler.classFile.KotlinClassFileDecompiler.createFileViewProvider[LocalVariableDescriptor]
 
@@ -107,7 +107,9 @@ Inferred types:
 
 'component2' @ [75:23] ==> public final operator fun component2(): ClassId defined in org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache.KotlinBinaryHeaderData[SimpleFunctionDescriptorImpl]
 
-'IDEKotlinBinaryClassCache' @ [75:34] ==> public object IDEKotlinBinaryClassCache defined in org.jetbrains.kotlin.idea.caches in file IDEKotlinBinaryClassCache.kt[FakeCallableDescriptorForObject]
+'?:' @ [75:34] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: IDEKotlinBinaryClassCache.KotlinBinaryHeaderData?, right: IDEKotlinBinaryClassCache.KotlinBinaryHeaderData): IDEKotlinBinaryClassCache.KotlinBinaryHeaderData[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinBinaryHeaderData
 
 'getKotlinBinaryClassHeaderData' @ [75:60] ==> public final fun getKotlinBinaryClassHeaderData(file: VirtualFile, fileContent: ByteArray? = ...): IDEKotlinBinaryClassCache.KotlinBinaryHeaderData? defined in org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache[SimpleFunctionDescriptorImpl]
 
@@ -131,15 +133,13 @@ Inferred types:
 Inferred types:
     <V : BinaryVersion> -> JvmMetadataVersion
 
-'JvmMetadataVersion' @ [79:59] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [79:78] ==> @field:JvmField public final val INSTANCE: JvmMetadataVersion defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion.Companion[DeserializedPropertyDescriptor]
 
 'classHeader' @ [79:88] ==> val classHeader: KotlinClassHeader defined in org.jetbrains.kotlin.idea.decompiler.classFile.buildDecompiledTextForClassFile[LocalVariableDescriptor]
 
 'metadataVersion' @ [79:100] ==> public final val metadataVersion: JvmMetadataVersion defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader[DeserializedPropertyDescriptor]
 
-'buildDecompiledText' @ [83:13] ==> public fun buildDecompiledText(packageFqName: FqName, descriptors: List<DeclarationDescriptor>, descriptorRenderer: DescriptorRenderer, indexers: Collection<DecompiledTextIndexer<*>> = ...): DecompiledText defined in org.jetbrains.kotlin.idea.decompiler.textBuilder[SimpleFunctionDescriptorImpl]
+'buildDecompiledText' @ [83:13] ==> public fun buildDecompiledText(packageFqName: FqName, descriptors: List<DeclarationDescriptor>, descriptorRenderer: DescriptorRenderer, indexers: Collection<DecompiledTextIndexer<*>> = ...): DecompiledText defined in org.jetbrains.kotlin.idea.decompiler.textBuilder in file buildDecompiledText.kt[SimpleFunctionDescriptorImpl]
 
 'classId' @ [83:33] ==> val classId: ClassId defined in org.jetbrains.kotlin.idea.decompiler.classFile.buildDecompiledTextForClassFile[LocalVariableDescriptor]
 
@@ -208,7 +208,7 @@ Inferred types:
 
 'MULTIFILE_CLASS' @ [91:32] ==> enum entry MULTIFILE_CLASS defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
 
-'findMultifileClassParts' @ [92:31] ==> public fun findMultifileClassParts(file: VirtualFile, classId: ClassId, header: KotlinClassHeader): List<KotlinJvmBinaryClass> defined in org.jetbrains.kotlin.idea.decompiler.classFile[SimpleFunctionDescriptorImpl]
+'findMultifileClassParts' @ [92:31] ==> public fun findMultifileClassParts(file: VirtualFile, classId: ClassId, header: KotlinClassHeader): List<KotlinJvmBinaryClass> defined in org.jetbrains.kotlin.idea.decompiler.classFile in file ClassFileDecompilerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'classFile' @ [92:55] ==> value-parameter classFile: VirtualFile defined in org.jetbrains.kotlin.idea.decompiler.classFile.buildDecompiledTextForClassFile[ValueParameterDescriptorImpl]
 

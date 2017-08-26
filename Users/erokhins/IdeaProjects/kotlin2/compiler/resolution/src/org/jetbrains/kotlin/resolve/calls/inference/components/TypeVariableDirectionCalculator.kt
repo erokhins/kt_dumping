@@ -257,7 +257,9 @@ Inferred types:
 
 'isStarProjection' @ [136:26] ==> public final val TypeProjection.isStarProjection: Boolean[MyPropertyDescriptor]
 
-'NewKotlinTypeChecker' @ [138:28] ==> public object NewKotlinTypeChecker : KotlinTypeChecker defined in org.jetbrains.kotlin.types.checker[FakeCallableDescriptorForObject]
+'?:' @ [138:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Variance?, right: Variance): Variance[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Variance
 
 'effectiveVariance' @ [138:49] ==> public final fun effectiveVariance(declared: Variance, useSite: Variance): Variance? defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker[DeserializedSimpleFunctionDescriptor]
 

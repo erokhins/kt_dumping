@@ -42,7 +42,7 @@ Inferred types:
 
 'getParentOfType' @ [55:48] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(PsiComment..PsiComment?)>, p2: Boolean): PsiComment? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiComment
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiComment..com.intellij.psi.PsiComment?)
 
 'el' @ [55:64] ==> value-parameter el: PsiElement defined in org.jetbrains.kotlin.idea.debugger.breakpoints.canPutAt.<no name provided>[ValueParameterDescriptorImpl]
 
@@ -176,7 +176,7 @@ Inferred types:
 
 'line' @ [94:60] ==> public final val XSourcePosition.line: Int[MyPropertyDescriptor]
 
-'getLambdasAtLineIfAny' @ [95:19] ==> public fun getLambdasAtLineIfAny(sourcePosition: SourcePosition): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.breakpoints[SimpleFunctionDescriptorImpl]
+'getLambdasAtLineIfAny' @ [95:19] ==> public fun getLambdasAtLineIfAny(sourcePosition: SourcePosition): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.breakpoints in file breakpointTypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'pos' @ [95:41] ==> val pos: (SourcePosition..SourcePosition?) defined in org.jetbrains.kotlin.idea.debugger.breakpoints.computeVariants[LocalVariableDescriptor]
 
@@ -278,7 +278,7 @@ Inferred types:
 
 'line' @ [121:37] ==> public final val SourcePosition.line: Int[MyPropertyDescriptor]
 
-'getLambdasAtLineIfAny' @ [122:12] ==> public fun getLambdasAtLineIfAny(file: KtFile, line: Int): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.breakpoints[SimpleFunctionDescriptorImpl]
+'getLambdasAtLineIfAny' @ [122:12] ==> public fun getLambdasAtLineIfAny(file: KtFile, line: Int): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.breakpoints in file breakpointTypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [122:34] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.debugger.breakpoints.getLambdasAtLineIfAny[LocalVariableDescriptor]
 

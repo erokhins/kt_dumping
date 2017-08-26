@@ -40,8 +40,8 @@ Inferred types:
 
 'get' @ [50:42] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?), p1: (KtExpression..KtExpression?)): DoubleColonLHS? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> DoubleColonLHS
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.DoubleColonLHS..org.jetbrains.kotlin.types.expressions.DoubleColonLHS?)
 
 'DOUBLE_COLON_LHS' @ [50:61] ==> public final val DOUBLE_COLON_LHS: (WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -181,6 +181,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.ValueArgument..org.jetbrains.kotlin.psi.ValueArgument?)
     <R> -> ExpressionValueArgument
+
+'ExpressionValueArgument' @ [89:67] ==> public constructor ExpressionValueArgument(@Nullable p0: ValueArgument?) defined in org.jetbrains.kotlin.resolve.calls.model.ExpressionValueArgument[JavaClassConstructorDescriptor]
 
 'valueArgumentList' @ [90:36] ==> public final val valueArgumentList: List<ExpressionValueArgument> defined in org.jetbrains.kotlin.js.translate.reference.CallableReferenceTranslator.translateForFunction.<no name provided>[PropertyDescriptorImpl]
 
@@ -416,6 +418,8 @@ Inferred types:
 'receiver' @ [137:81] ==> value-parameter receiver: JsExpression? defined in org.jetbrains.kotlin.js.translate.reference.CallableReferenceTranslator.translateForProperty[ValueParameterDescriptorImpl]
 
 'CallTranslator' @ [137:97] ==> public object CallTranslator defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[FakeCallableDescriptorForObject]
+
+'translateSet' @ [137:113] ==> public final fun translateSet(context: TranslationContext, resolvedCall: ResolvedCall<out VariableDescriptor>, value: JsExpression, extensionOrDispatchReceiver: JsExpression? = ...): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator[SimpleFunctionDescriptorImpl]
 
 'wrapPropertyCallableRef' @ [143:16] ==> private final fun wrapPropertyCallableRef(receiver: JsExpression?, descriptor: PropertyDescriptor, name: String, getter: JsExpression, setter: JsExpression?): JsExpression defined in org.jetbrains.kotlin.js.translate.reference.CallableReferenceTranslator[SimpleFunctionDescriptorImpl]
 

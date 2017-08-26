@@ -2,8 +2,6 @@
 
 'errStream' @ [36:21] ==> value-parameter errStream: PrintStream defined in org.jetbrains.kotlin.cli.common.CLITool.exec[ValueParameterDescriptorImpl]
 
-'Services' @ [36:32] ==> public companion object defined in org.jetbrains.kotlin.config.Services[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [36:41] ==> @field:JvmField public final val EMPTY: Services defined in org.jetbrains.kotlin.config.Services.Companion[DeserializedPropertyDescriptor]
 
 'PLAIN_RELATIVE_PATHS' @ [36:64] ==> public final val PLAIN_RELATIVE_PATHS: (MessageRenderer..MessageRenderer?) defined in org.jetbrains.kotlin.cli.common.messages.MessageRenderer[JavaPropertyDescriptor]
@@ -92,7 +90,7 @@ Inferred types:
 
 'render' @ [66:67] ==> @NotNull public open fun <A : (CommonToolArguments..CommonToolArguments?)> render(@NotNull tool: CLITool<(A..A?)>, @NotNull arguments: A): String defined in org.jetbrains.kotlin.cli.common.Usage[JavaMethodDescriptor]
 Inferred types:
-    <A : (CommonToolArguments..CommonToolArguments?)> -> A
+    <A : (CommonToolArguments..CommonToolArguments?)> -> (A..A?)
 
 'this' @ [66:74] ==> <this> defined in org.jetbrains.kotlin.cli.common.CLITool[LazyClassReceiverParameterDescriptor]
 
@@ -147,7 +145,7 @@ Inferred types:
 
 'isEqual' @ [85:67] ==> public open fun <T : (Any..Any?)> isEqual(p0: (Any..Any?)): (Predicate<(CompilerMessageSeverity..CompilerMessageSeverity?)>..Predicate<(CompilerMessageSeverity..CompilerMessageSeverity?)>?) defined in java.util.function.Predicate[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CompilerMessageSeverity
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.CompilerMessageSeverity..org.jetbrains.kotlin.cli.common.messages.CompilerMessageSeverity?)
 
 'WARNING' @ [85:99] ==> enum entry WARNING defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageSeverity[FakeCallableDescriptorForObject]
 

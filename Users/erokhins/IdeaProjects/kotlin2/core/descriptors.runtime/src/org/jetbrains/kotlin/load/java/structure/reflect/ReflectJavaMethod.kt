@@ -35,3 +35,5 @@ Inferred types:
     <T> -> (java.lang.reflect.TypeVariable<(java.lang.reflect.Method..java.lang.reflect.Method?)>..java.lang.reflect.TypeVariable<(java.lang.reflect.Method..java.lang.reflect.Method?)>?)
     <R> -> ReflectJavaTypeParameter
 
+'ReflectJavaTypeParameter' @ [34:45] ==> public constructor ReflectJavaTypeParameter(typeVariable: TypeVariable<*>) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaTypeParameter[ClassConstructorDescriptorImpl]
+

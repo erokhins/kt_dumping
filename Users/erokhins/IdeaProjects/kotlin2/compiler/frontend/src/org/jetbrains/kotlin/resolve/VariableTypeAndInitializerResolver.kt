@@ -242,7 +242,7 @@ Inferred types:
 
 'initializerType' @ [115:111] ==> val initializerType: KotlinType defined in org.jetbrains.kotlin.resolve.VariableTypeAndInitializerResolver.setConstantForVariableIfNeeded.<anonymous>[LocalVariableDescriptor]
 
-'constant' @ [118:33] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.VariableTypeAndInitializerResolver.setConstantForVariableIfNeeded.<anonymous>[LocalVariableDescriptor]
+'constant' @ [118:33] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.VariableTypeAndInitializerResolver.setConstantForVariableIfNeeded.<anonymous>[LocalVariableDescriptor]
 
 'usesNonConstValAsConstant' @ [118:42] ==> public open val usesNonConstValAsConstant: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
@@ -260,7 +260,7 @@ Inferred types:
 
 'initializer' @ [119:98] ==> val initializer: KtExpression? defined in org.jetbrains.kotlin.resolve.VariableTypeAndInitializerResolver.setConstantForVariableIfNeeded.<anonymous>[LocalVariableDescriptor]
 
-'constant' @ [122:29] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.VariableTypeAndInitializerResolver.setConstantForVariableIfNeeded.<anonymous>[LocalVariableDescriptor]
+'constant' @ [122:29] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.VariableTypeAndInitializerResolver.setConstantForVariableIfNeeded.<anonymous>[LocalVariableDescriptor]
 
 'toConstantValue' @ [122:38] ==> public abstract fun toConstantValue(expectedType: KotlinType): ConstantValue<Any?> defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedSimpleFunctionDescriptor]
 

@@ -8,7 +8,7 @@
 
 'resultingDescriptor' @ [47:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 '?:' @ [51:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ClassOrPackageFragmentDescriptor?, right: ClassOrPackageFragmentDescriptor): ClassOrPackageFragmentDescriptor[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -16,7 +16,7 @@ Inferred types:
 
 'getParentOfType' @ [51:48] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(ClassOrPackageFragmentDescriptor..ClassOrPackageFragmentDescriptor?)>): ClassOrPackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> ClassOrPackageFragmentDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ClassOrPackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.ClassOrPackageFragmentDescriptor?)
 
 'descriptor' @ [51:64] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker.check[LocalVariableDescriptor]
 
@@ -55,6 +55,8 @@ Inferred types:
 
 'trace' @ [54:95] ==> public final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.checkers.CallCheckerContext[DeserializedPropertyDescriptor]
 
+'report' @ [54:102] ==> public abstract fun report(@NotNull p0: Diagnostic): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
+
 'findVirtualFile' @ [63:30] ==> private final fun findVirtualFile(descriptor: ClassOrPackageFragmentDescriptor, originalDescriptor: DeclarationDescriptorWithSource?): VirtualFile? defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker[SimpleFunctionDescriptorImpl]
 
 'targetClassOrPackage' @ [63:46] ==> value-parameter targetClassOrPackage: ClassOrPackageFragmentDescriptor defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker.diagnosticFor[ValueParameterDescriptorImpl]
@@ -63,7 +65,7 @@ Inferred types:
 
 'getParentOfType' @ [66:33] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(PackageFragmentDescriptor..PackageFragmentDescriptor?)>, p2: Boolean): PackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> PackageFragmentDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor?)
 
 'targetClassOrPackage' @ [66:49] ==> value-parameter targetClassOrPackage: ClassOrPackageFragmentDescriptor defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker.diagnosticFor[ValueParameterDescriptorImpl]
 
@@ -151,10 +153,10 @@ Inferred types:
 
 'file' @ [86:97] ==> public final val file: VirtualFile defined in org.jetbrains.kotlin.load.kotlin.VirtualFileKotlinClass[PropertyDescriptorImpl]
 
-'let' @ [86:103] ==> @InlineOnly public inline fun <T, R> VirtualFile.let(block: (VirtualFile) -> Unit?): Unit? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [86:103] ==> @InlineOnly public inline fun <T, R> VirtualFile.let(block: (VirtualFile) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> VirtualFile
-    <R> -> Unit?
+    <R> -> Nothing
 
 'it' @ [86:116] ==> value-parameter it: VirtualFile defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker.findVirtualFile.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -164,10 +166,10 @@ Inferred types:
 
 'virtualFile' @ [87:89] ==> public abstract val virtualFile: VirtualFile? defined in org.jetbrains.kotlin.load.java.structure.impl.VirtualFileBoundJavaClass[PropertyDescriptorImpl]
 
-'let' @ [87:102] ==> @InlineOnly public inline fun <T, R> VirtualFile.let(block: (VirtualFile) -> Unit?): Unit? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [87:102] ==> @InlineOnly public inline fun <T, R> VirtualFile.let(block: (VirtualFile) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> VirtualFile
-    <R> -> Unit?
+    <R> -> Nothing
 
 'it' @ [87:115] ==> value-parameter it: VirtualFile defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker.findVirtualFile.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -257,9 +259,11 @@ Inferred types:
 
 'trace' @ [110:98] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker.ClassifierUsage.check[ValueParameterDescriptorImpl]
 
+'report' @ [110:105] ==> public abstract fun report(@NotNull p0: Diagnostic): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
+
 'getParentOfType' @ [113:68] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(ClassOrPackageFragmentDescriptor..ClassOrPackageFragmentDescriptor?)>): ClassOrPackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> ClassOrPackageFragmentDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ClassOrPackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.ClassOrPackageFragmentDescriptor?)
 
 'targetDescriptor' @ [113:84] ==> value-parameter targetDescriptor: ClassifierDescriptor defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker.ClassifierUsage.check[ValueParameterDescriptorImpl]
 
@@ -285,6 +289,8 @@ Inferred types:
     <R> -> Unit
 
 'trace' @ [115:110] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker.ClassifierUsage.check[ValueParameterDescriptorImpl]
+
+'report' @ [115:117] ==> public abstract fun report(@NotNull p0: Diagnostic): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 
 'targetDescriptor' @ [118:41] ==> value-parameter targetDescriptor: ClassifierDescriptor defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker.ClassifierUsage.check[ValueParameterDescriptorImpl]
 
@@ -312,4 +318,6 @@ Inferred types:
     <R> -> Unit
 
 'trace' @ [120:96] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmModuleAccessibilityChecker.ClassifierUsage.check[ValueParameterDescriptorImpl]
+
+'report' @ [120:103] ==> public abstract fun report(@NotNull p0: Diagnostic): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 

@@ -132,7 +132,7 @@ Inferred types:
 
 'getParentOfType' @ [86:54] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtPrimaryConstructor..KtPrimaryConstructor?)>): KtPrimaryConstructor? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtPrimaryConstructor
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtPrimaryConstructor..org.jetbrains.kotlin.psi.KtPrimaryConstructor?)
 
 'elementParent' @ [86:70] ==> val elementParent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureHandler.Companion.findTargetForRefactoring[LocalVariableDescriptor]
 
@@ -191,7 +191,7 @@ Inferred types:
 
 'getParentOfType' @ [96:36] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtTypeParameterListOwner..KtTypeParameterListOwner?)>..Class<out (KtTypeParameterListOwner..KtTypeParameterListOwner?)>?)): KtTypeParameterListOwner? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtTypeParameterListOwner
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeParameterListOwner..org.jetbrains.kotlin.psi.KtTypeParameterListOwner?)
 
 'parameterList' @ [96:52] ==> value-parameter parameterList: KtParameterList defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureHandler.Companion.findTargetForRefactoring.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -220,7 +220,7 @@ Inferred types:
 
 'getParentOfType' @ [100:36] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtTypeParameterListOwner..KtTypeParameterListOwner?)>..Class<out (KtTypeParameterListOwner..KtTypeParameterListOwner?)>?)): KtTypeParameterListOwner? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtTypeParameterListOwner
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeParameterListOwner..org.jetbrains.kotlin.psi.KtTypeParameterListOwner?)
 
 'typeParameterList' @ [100:52] ==> value-parameter typeParameterList: KtTypeParameterList defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureHandler.Companion.findTargetForRefactoring.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -236,9 +236,9 @@ Inferred types:
 Inferred types:
     <T> -> KtClass
 
-'getParentOfType' @ [103:52] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out ({KtCallElement & ASTDelegatePsiElement}..{KtCallElement & ASTDelegatePsiElement}?)>..Class<out ({KtCallElement & ASTDelegatePsiElement}..{KtCallElement & ASTDelegatePsiElement}?)>?)): {KtCallElement & ASTDelegatePsiElement}? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'getParentOfType' @ [103:52] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtCallElement..KtCallElement?)>..Class<out (KtCallElement..KtCallElement?)>?)): KtCallElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> {KtCallElement & ASTDelegatePsiElement}
+    <T : (PsiElement..PsiElement?)> -> KtCallElement
 
 'element' @ [103:68] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureHandler.Companion.findTargetForRefactoring[ValueParameterDescriptorImpl]
 
@@ -446,7 +446,7 @@ Inferred types:
 
 'descriptor' @ [169:30] ==> var descriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureHandler.Companion.findDescriptor[LocalVariableDescriptor]
 
-'headerDescriptor' @ [169:41] ==> internal fun MemberDescriptor.headerDescriptor(): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerDescriptor' @ [169:41] ==> internal fun MemberDescriptor.headerDescriptor(): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.highlighter.markers in file DeclaredHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [169:63] ==> var descriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureHandler.Companion.findDescriptor[LocalVariableDescriptor]
 

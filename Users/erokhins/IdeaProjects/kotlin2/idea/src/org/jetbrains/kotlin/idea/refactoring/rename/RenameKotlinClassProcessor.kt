@@ -186,7 +186,7 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> UsageInfo
 
-'checkRedeclarations' @ [119:9] ==> internal fun checkRedeclarations(descriptor: DeclarationDescriptor, newName: String, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkRedeclarations' @ [119:9] ==> internal fun checkRedeclarations(descriptor: DeclarationDescriptor, newName: String, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [119:29] ==> val descriptor: ClassDescriptor defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinClassProcessor.findCollisions[LocalVariableDescriptor]
 
@@ -194,7 +194,7 @@ Inferred types:
 
 'collisions' @ [119:50] ==> val collisions: SmartList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinClassProcessor.findCollisions[LocalVariableDescriptor]
 
-'checkOriginalUsagesRetargeting' @ [120:9] ==> internal fun checkOriginalUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkOriginalUsagesRetargeting' @ [120:9] ==> internal fun checkOriginalUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [120:40] ==> val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinClassProcessor.findCollisions[LocalVariableDescriptor]
 
@@ -204,7 +204,7 @@ Inferred types:
 
 'collisions' @ [120:70] ==> val collisions: SmartList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinClassProcessor.findCollisions[LocalVariableDescriptor]
 
-'checkNewNameUsagesRetargeting' @ [121:9] ==> internal fun checkNewNameUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkNewNameUsagesRetargeting' @ [121:9] ==> internal fun checkNewNameUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [121:39] ==> val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinClassProcessor.findCollisions[LocalVariableDescriptor]
 
@@ -239,9 +239,9 @@ Inferred types:
                 is KtLightClassForSourceDeclaration -> element.kotlinOrigin
                 is KtLightClassForFacade -> element
                 else -> throw AssertionError("Should not be suggested to rename element of type " + element::class.java + " " + element)
-            }' @ [127:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {PsiNameIdentifierOwner & PsiElementBase}, entry1: {PsiNameIdentifierOwner & PsiElementBase}, entry2: {PsiNameIdentifierOwner & PsiElementBase}): {PsiNameIdentifierOwner & PsiElementBase}[SimpleFunctionDescriptorImpl]
+            }' @ [127:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: PsiElement, entry1: PsiElement, entry2: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {PsiNameIdentifierOwner & PsiElementBase}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> PsiElement
 
 'element' @ [127:19] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinClassProcessor.getClassOrObject[ValueParameterDescriptorImpl]
 
@@ -259,7 +259,7 @@ Inferred types:
 
 'java' @ [130:116] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'element' @ [130:129] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinClassProcessor.getClassOrObject[ValueParameterDescriptorImpl]
 

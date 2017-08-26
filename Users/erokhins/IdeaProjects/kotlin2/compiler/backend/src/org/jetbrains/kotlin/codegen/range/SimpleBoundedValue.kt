@@ -16,7 +16,7 @@
 
 'codegen' @ [41:13] ==> value-parameter codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.range.SimpleBoundedValue.<init>[ValueParameterDescriptorImpl]
 
-'generateCallReceiver' @ [41:21] ==> public fun ExpressionCodegen.generateCallReceiver(rangeCall: ResolvedCall<out CallableDescriptor>): StackValue defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'generateCallReceiver' @ [41:21] ==> public fun ExpressionCodegen.generateCallReceiver(rangeCall: ResolvedCall<out CallableDescriptor>): StackValue defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeCall' @ [41:42] ==> value-parameter rangeCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.codegen.range.SimpleBoundedValue.<init>[ValueParameterDescriptorImpl]
 
@@ -24,7 +24,7 @@
 
 'codegen' @ [43:13] ==> value-parameter codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.range.SimpleBoundedValue.<init>[ValueParameterDescriptorImpl]
 
-'generateCallSingleArgument' @ [43:21] ==> public fun ExpressionCodegen.generateCallSingleArgument(rangeCall: ResolvedCall<out CallableDescriptor>): StackValue defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'generateCallSingleArgument' @ [43:21] ==> public fun ExpressionCodegen.generateCallSingleArgument(rangeCall: ResolvedCall<out CallableDescriptor>): StackValue defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeCall' @ [43:48] ==> value-parameter rangeCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.codegen.range.SimpleBoundedValue.<init>[ValueParameterDescriptorImpl]
 

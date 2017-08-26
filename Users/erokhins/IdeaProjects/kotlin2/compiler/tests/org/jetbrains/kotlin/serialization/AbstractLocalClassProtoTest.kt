@@ -113,7 +113,7 @@ Inferred types:
 
 'put' @ [56:13] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'USE_SINGLE_MODULE' @ [56:38] ==> public final val USE_SINGLE_MODULE: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -177,13 +177,13 @@ Inferred types:
 
 'getAnnotation' @ [74:28] ==> public open fun <A : (Annotation..Annotation?)> getAnnotation(p0: (Class<(Annotation..Annotation?)>..Class<(Annotation..Annotation?)>?)): (Annotation..Annotation?) defined in java.lang.Class[JavaMethodDescriptor]
 Inferred types:
-    <A : (Annotation..Annotation?)> -> Annotation
+    <A : (Annotation..Annotation?)> -> (kotlin.Annotation..kotlin.Annotation?)
 
 'clazz' @ [75:17] ==> value-parameter clazz: Class<*> defined in org.jetbrains.kotlin.serialization.AbstractLocalClassProtoTest.assertHasAnnotationData[ValueParameterDescriptorImpl]
 
 'classLoader' @ [75:23] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'loadClass' @ [75:35] ==> public open fun loadClass(p0: (String..String?)): (Class<*>..Class<*>?) defined in java.lang.ClassLoader[JavaMethodDescriptor]
 

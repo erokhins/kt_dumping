@@ -17,7 +17,7 @@ Inferred types:
 
 'psiElement' @ [40:32] ==> val psiElement: KtTypeElement? defined in org.jetbrains.kotlin.resolve.typeBinding.createTypeBinding[LocalVariableDescriptor]
 
-'createTypeBindingFromPsi' @ [43:9] ==> private fun createTypeBindingFromPsi(trace: BindingContext, psiElement: KtTypeElement, type: KotlinType): TypeBinding<KtTypeElement> defined in org.jetbrains.kotlin.resolve.typeBinding[SimpleFunctionDescriptorImpl]
+'createTypeBindingFromPsi' @ [43:9] ==> private fun createTypeBindingFromPsi(trace: BindingContext, psiElement: KtTypeElement, type: KotlinType): TypeBinding<KtTypeElement> defined in org.jetbrains.kotlin.resolve.typeBinding in file TypeBinding.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [43:34] ==> value-parameter trace: BindingContext defined in org.jetbrains.kotlin.resolve.typeBinding.createTypeBinding[ValueParameterDescriptorImpl]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'jetTypeReference' @ [56:42] ==> val jetTypeReference: KtTypeReference? defined in org.jetbrains.kotlin.resolve.typeBinding.createTypeBindingForReturnType[LocalVariableDescriptor]
 
-'createTypeBinding' @ [56:59] ==> public fun KtTypeReference.createTypeBinding(trace: BindingContext): TypeBinding<KtTypeElement>? defined in org.jetbrains.kotlin.resolve.typeBinding[SimpleFunctionDescriptorImpl]
+'createTypeBinding' @ [56:59] ==> public fun KtTypeReference.createTypeBinding(trace: BindingContext): TypeBinding<KtTypeElement>? defined in org.jetbrains.kotlin.resolve.typeBinding in file TypeBinding.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [56:77] ==> value-parameter trace: BindingContext defined in org.jetbrains.kotlin.resolve.typeBinding.createTypeBindingForReturnType[ValueParameterDescriptorImpl]
 
@@ -169,7 +169,7 @@ Inferred types:
 
 'nextJetType' @ [96:48] ==> val nextJetType: KotlinType defined in org.jetbrains.kotlin.resolve.typeBinding.ExplicitTypeBinding.<get-arguments>.<anonymous>[LocalVariableDescriptor]
 
-'createTypeBindingFromPsi' @ [98:29] ==> private fun createTypeBindingFromPsi(trace: BindingContext, psiElement: KtTypeElement, type: KotlinType): TypeBinding<KtTypeElement> defined in org.jetbrains.kotlin.resolve.typeBinding[SimpleFunctionDescriptorImpl]
+'createTypeBindingFromPsi' @ [98:29] ==> private fun createTypeBindingFromPsi(trace: BindingContext, psiElement: KtTypeElement, type: KotlinType): TypeBinding<KtTypeElement> defined in org.jetbrains.kotlin.resolve.typeBinding in file TypeBinding.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [98:54] ==> private final val trace: BindingContext defined in org.jetbrains.kotlin.resolve.typeBinding.ExplicitTypeBinding[PropertyDescriptorImpl]
 
@@ -197,7 +197,7 @@ Inferred types:
 
 'index' @ [105:53] ==> value-parameter index: Int defined in org.jetbrains.kotlin.resolve.typeBinding.ExplicitTypeBinding.<get-arguments>.<anonymous>[ValueParameterDescriptorImpl]
 
-'createTypeBindingFromPsi' @ [106:25] ==> private fun createTypeBindingFromPsi(trace: BindingContext, psiElement: KtTypeElement, type: KotlinType): TypeBinding<KtTypeElement> defined in org.jetbrains.kotlin.resolve.typeBinding[SimpleFunctionDescriptorImpl]
+'createTypeBindingFromPsi' @ [106:25] ==> private fun createTypeBindingFromPsi(trace: BindingContext, psiElement: KtTypeElement, type: KotlinType): TypeBinding<KtTypeElement> defined in org.jetbrains.kotlin.resolve.typeBinding in file TypeBinding.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [106:50] ==> private final val trace: BindingContext defined in org.jetbrains.kotlin.resolve.typeBinding.ExplicitTypeBinding[PropertyDescriptorImpl]
 

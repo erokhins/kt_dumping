@@ -51,11 +51,7 @@ Inferred types:
 
 'report' @ [41:32] ==> public fun CompilerServicesFacadeBase.report(category: ReportCategory, severity: ReportSeverity, message: String? = ..., attachment: Serializable? = ...): Unit defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
 
-'ReportCategory' @ [41:39] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
 'OUTPUT_MESSAGE' @ [41:54] ==> enum entry OUTPUT_MESSAGE defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
-'ReportSeverity' @ [41:70] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'ERROR' @ [41:85] ==> enum entry ERROR defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
@@ -67,11 +63,7 @@ Inferred types:
 
 'report' @ [44:32] ==> public fun CompilerServicesFacadeBase.report(category: ReportCategory, severity: ReportSeverity, message: String? = ..., attachment: Serializable? = ...): Unit defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
 
-'ReportCategory' @ [44:39] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
 'EXCEPTION' @ [44:54] ==> enum entry EXCEPTION defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
-'ReportSeverity' @ [44:65] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'ERROR' @ [44:80] ==> enum entry ERROR defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
@@ -90,25 +82,17 @@ Inferred types:
 
 'ERROR' @ [48:45] ==> enum entry ERROR defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageSeverity[FakeCallableDescriptorForObject]
 
-'ReportSeverity' @ [48:54] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
-
 'ERROR' @ [48:69] ==> enum entry ERROR defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'WARNING' @ [49:45] ==> enum entry WARNING defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageSeverity[FakeCallableDescriptorForObject]
 
 'STRONG_WARNING' @ [49:78] ==> enum entry STRONG_WARNING defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageSeverity[FakeCallableDescriptorForObject]
 
-'ReportSeverity' @ [49:96] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
-
 'WARNING' @ [49:111] ==> enum entry WARNING defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'INFO' @ [50:45] ==> enum entry INFO defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageSeverity[FakeCallableDescriptorForObject]
 
-'ReportSeverity' @ [50:53] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
-
 'INFO' @ [50:68] ==> enum entry INFO defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
-
-'ReportSeverity' @ [51:29] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'DEBUG' @ [51:44] ==> enum entry DEBUG defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
@@ -121,8 +105,6 @@ Inferred types:
 'servicesFacade' @ [55:21] ==> private final val servicesFacade: CompilerServicesFacadeBase defined in org.jetbrains.kotlin.daemon.report.CompileServicesFacadeMessageCollector[PropertyDescriptorImpl]
 
 'report' @ [55:36] ==> public fun CompilerServicesFacadeBase.report(category: ReportCategory, severity: ReportSeverity, message: String? = ..., attachment: Serializable? = ...): Unit defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
-
-'ReportCategory' @ [55:43] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
 
 'COMPILER_MESSAGE' @ [55:58] ==> enum entry COMPILER_MESSAGE defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
 

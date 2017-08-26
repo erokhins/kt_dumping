@@ -72,3 +72,5 @@ Inferred types:
 Inferred types:
     <reified T : PsiElement> -> KtAnnotationEntry
 
+'ReplaceJavaAnnotationPositionedArgumentsFix' @ [51:66] ==> public constructor ReplaceJavaAnnotationPositionedArgumentsFix(element: KtAnnotationEntry) defined in org.jetbrains.kotlin.idea.quickfix.ReplaceJavaAnnotationPositionedArgumentsFix[ClassConstructorDescriptorImpl]
+

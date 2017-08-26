@@ -101,7 +101,7 @@ Inferred types:
 
 'candidateDescriptor' @ [52:56] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'typeParameters' @ [52:76] ==> public final val CallableDescriptor.typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)>[MyPropertyDescriptor]
 
@@ -113,7 +113,7 @@ Inferred types:
 
 'typeArguments' @ [53:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'typeParameterDescriptor' @ [53:59] ==> val typeParameterDescriptor: TypeParameterDescriptor defined in org.jetbrains.kotlin.idea.inspections.collections.UselessCallOnCollectionInspection.suggestConversionIfNeeded[LocalVariableDescriptor]
 
@@ -141,7 +141,7 @@ Inferred types:
 
 'resolvedCall' @ [61:22] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.inspections.collections.UselessCallOnCollectionInspection.suggestConversionIfNeeded[LocalVariableDescriptor]
 
-'hasLastFunctionalParameterWithResult' @ [61:35] ==> public fun ResolvedCall<*>.hasLastFunctionalParameterWithResult(context: BindingContext, predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.inspections.collections[SimpleFunctionDescriptorImpl]
+'hasLastFunctionalParameterWithResult' @ [61:35] ==> public fun ResolvedCall<*>.hasLastFunctionalParameterWithResult(context: BindingContext, predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.inspections.collections in file FunctionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [61:72] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.inspections.collections.UselessCallOnCollectionInspection.suggestConversionIfNeeded[ValueParameterDescriptorImpl]
 

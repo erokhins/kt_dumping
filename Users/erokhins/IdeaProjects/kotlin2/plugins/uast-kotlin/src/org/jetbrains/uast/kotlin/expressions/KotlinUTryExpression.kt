@@ -1,8 +1,8 @@
 'KotlinAbstractUExpression' @ [28:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [29:31] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [29:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [29:36] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -14,9 +14,9 @@ Inferred types:
 
 'this' @ [29:81] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUTryExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [30:34] ==> internal fun <T> lz(initializer: () -> List<KotlinUCatchClause>): Lazy<List<KotlinUCatchClause>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [30:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KotlinUCatchClause>
+    <T> -> T
 
 'psi' @ [30:39] ==> public open val psi: KtTryExpression defined in org.jetbrains.uast.kotlin.KotlinUTryExpression[PropertyDescriptorImpl]
 
@@ -33,9 +33,9 @@ Inferred types:
 
 'this' @ [30:85] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUTryExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [31:35] ==> internal fun <T> lz(initializer: () -> UExpression?): Lazy<UExpression?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [31:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression?
+    <T> -> T
 
 'psi' @ [31:40] ==> public open val psi: KtTryExpression defined in org.jetbrains.uast.kotlin.KotlinUTryExpression[PropertyDescriptorImpl]
 

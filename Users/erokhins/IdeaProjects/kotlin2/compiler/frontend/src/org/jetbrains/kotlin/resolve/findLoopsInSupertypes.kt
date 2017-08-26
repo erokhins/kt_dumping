@@ -23,7 +23,7 @@ Inferred types:
 
 'superTypes' @ [37:27] ==> value-parameter superTypes: Collection<KotlinType> defined in org.jetbrains.kotlin.resolve.SupertypeLoopCheckerImpl.findLoopsInSupertypesAndDisconnect[ValueParameterDescriptorImpl]
 
-'isReachable' @ [38:17] ==> private fun isReachable(from: TypeConstructor, to: TypeConstructor, neighbors: DFS.Neighbors<TypeConstructor>): Boolean defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'isReachable' @ [38:17] ==> private fun isReachable(from: TypeConstructor, to: TypeConstructor, neighbors: DFS.Neighbors<TypeConstructor>): Boolean defined in org.jetbrains.kotlin.resolve in file findLoopsInSupertypes.kt[SimpleFunctionDescriptorImpl]
 
 'superType' @ [38:29] ==> val superType: KotlinType defined in org.jetbrains.kotlin.resolve.SupertypeLoopCheckerImpl.findLoopsInSupertypesAndDisconnect[LocalVariableDescriptor]
 
@@ -59,8 +59,8 @@ Inferred types:
 
 'dfs' @ [53:9] ==> public open fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull p0: (MutableCollection<(TypeConstructor..TypeConstructor?)>..Collection<(TypeConstructor..TypeConstructor?)>), @NotNull p1: DFS.Neighbors<(TypeConstructor..TypeConstructor?)>, @NotNull p2: DFS.Visited<(TypeConstructor..TypeConstructor?)>, @NotNull p3: DFS.NodeHandler<(TypeConstructor..TypeConstructor?), (Unit..Unit?)>): (Unit..Unit?) defined in org.jetbrains.kotlin.utils.DFS[JavaMethodDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> TypeConstructor
-    <R : (Any..Any?)> -> Unit
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.types.TypeConstructor..org.jetbrains.kotlin.types.TypeConstructor?)
+    <R : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'listOf' @ [53:13] ==> public fun <T> listOf(element: TypeConstructor): List<TypeConstructor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -72,7 +72,7 @@ Inferred types:
 
 'VisitedWithSet' @ [53:42] ==> public constructor VisitedWithSet<N : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.DFS.VisitedWithSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> TypeConstructor
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.types.TypeConstructor..org.jetbrains.kotlin.types.TypeConstructor?)
 
 'DFS.AbstractNodeHandler<TypeConstructor, Unit>' @ [53:69] ==> public constructor AbstractNodeHandler<N : (Any..Any?), R : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.DFS.AbstractNodeHandler[JavaClassConstructorDescriptor]
 Inferred types:

@@ -29,7 +29,7 @@ Inferred types:
 
 'it' @ [46:9] ==> value-parameter it: FileMapping defined in org.jetbrains.kotlin.idea.debugger.mapStacktraceLineToSource.<anonymous>[ValueParameterDescriptorImpl]
 
-'getIntervalIfContains' @ [46:12] ==> private fun FileMapping.getIntervalIfContains(destLine: Int): RangeMapping? defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'getIntervalIfContains' @ [46:12] ==> private fun FileMapping.getIntervalIfContains(destLine: Int): RangeMapping? defined in org.jetbrains.kotlin.idea.debugger in file smapUtil.kt[SimpleFunctionDescriptorImpl]
 
 'line' @ [46:34] ==> value-parameter line: Int defined in org.jetbrains.kotlin.idea.debugger.mapStacktraceLineToSource[ValueParameterDescriptorImpl]
 
@@ -39,7 +39,9 @@ Inferred types:
 
 'path' @ [49:59] ==> public final val path: String defined in org.jetbrains.kotlin.codegen.inline.FileMapping[DeserializedPropertyDescriptor]
 
-'DebuggerUtils' @ [50:22] ==> public object DebuggerUtils defined in org.jetbrains.kotlin.idea.debugger in file DebuggerUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [50:22] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtFile?, right: KtFile): KtFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtFile
 
 'findSourceFileForClassIncludeLibrarySources' @ [50:36] ==> public final fun findSourceFileForClassIncludeLibrarySources(project: Project, scope: GlobalSearchScope, className: JvmClassName, fileName: String): KtFile? defined in org.jetbrains.kotlin.idea.debugger.DebuggerUtils[SimpleFunctionDescriptorImpl]
 
@@ -55,7 +57,7 @@ Inferred types:
 
 'mappingInfo' @ [53:20] ==> val mappingInfo: FileMapping defined in org.jetbrains.kotlin.idea.debugger.mapStacktraceLineToSource[LocalVariableDescriptor]
 
-'getIntervalIfContains' @ [53:32] ==> private fun FileMapping.getIntervalIfContains(destLine: Int): RangeMapping? defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'getIntervalIfContains' @ [53:32] ==> private fun FileMapping.getIntervalIfContains(destLine: Int): RangeMapping? defined in org.jetbrains.kotlin.idea.debugger in file smapUtil.kt[SimpleFunctionDescriptorImpl]
 
 'line' @ [53:54] ==> value-parameter line: Int defined in org.jetbrains.kotlin.idea.debugger.mapStacktraceLineToSource[ValueParameterDescriptorImpl]
 
@@ -115,11 +117,11 @@ Inferred types:
     <T> -> String
     <R> -> SmapData
 
+'SmapData' @ [70:29] ==> public constructor SmapData(debugInfo: String) defined in org.jetbrains.kotlin.idea.debugger.SmapData[ClassConstructorDescriptorImpl]
+
 'debugInfo' @ [78:25] ==> value-parameter debugInfo: String defined in org.jetbrains.kotlin.idea.debugger.SmapData.<init>[ValueParameterDescriptorImpl]
 
 'split' @ [78:35] ==> public fun CharSequence.split(vararg delimiters: String, ignoreCase: Boolean = ..., limit: Int = ...): List<String> defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'SMAP' @ [78:41] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.SMAP[FakeCallableDescriptorForObject]
 
 'END' @ [78:46] ==> public const final val END: String defined in org.jetbrains.kotlin.codegen.inline.SMAP.Companion[DeserializedPropertyDescriptor]
 
@@ -128,6 +130,8 @@ Inferred types:
     <T> -> String
 
 'String' @ [78:58] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'isNotBlank' @ [78:66] ==> @InlineOnly public inline fun CharSequence.isNotBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'when (intervals.count()) {
             1 -> {
@@ -160,8 +164,6 @@ Inferred types:
 
 'intervals' @ [81:49] ==> val intervals: List<String> defined in org.jetbrains.kotlin.idea.debugger.SmapData.<init>[LocalVariableDescriptor]
 
-'SMAP' @ [81:64] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.SMAP[FakeCallableDescriptorForObject]
-
 'END' @ [81:69] ==> public const final val END: String defined in org.jetbrains.kotlin.codegen.inline.SMAP.Companion[DeserializedPropertyDescriptor]
 
 'kotlinDebugStrata' @ [82:17] ==> public final var kotlinDebugStrata: SMAP? defined in org.jetbrains.kotlin.idea.debugger.SmapData[PropertyDescriptorImpl]
@@ -174,8 +176,6 @@ Inferred types:
 
 'intervals' @ [85:49] ==> val intervals: List<String> defined in org.jetbrains.kotlin.idea.debugger.SmapData.<init>[LocalVariableDescriptor]
 
-'SMAP' @ [85:64] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.SMAP[FakeCallableDescriptorForObject]
-
 'END' @ [85:69] ==> public const final val END: String defined in org.jetbrains.kotlin.codegen.inline.SMAP.Companion[DeserializedPropertyDescriptor]
 
 'kotlinDebugStrata' @ [86:17] ==> public final var kotlinDebugStrata: SMAP? defined in org.jetbrains.kotlin.idea.debugger.SmapData[PropertyDescriptorImpl]
@@ -185,8 +185,6 @@ Inferred types:
 'parse' @ [86:48] ==> @JvmStatic public final fun parse(mappingInfo: String): SMAP defined in org.jetbrains.kotlin.codegen.inline.SMAPParser[DeserializedSimpleFunctionDescriptor]
 
 'intervals' @ [86:54] ==> val intervals: List<String> defined in org.jetbrains.kotlin.idea.debugger.SmapData.<init>[LocalVariableDescriptor]
-
-'SMAP' @ [86:69] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.SMAP[FakeCallableDescriptorForObject]
 
 'END' @ [86:74] ==> public const final val END: String defined in org.jetbrains.kotlin.codegen.inline.SMAP.Companion[DeserializedPropertyDescriptor]
 

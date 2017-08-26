@@ -55,8 +55,6 @@ Inferred types:
 
 'shouldPresentMapped' @ [59:20] ==> val shouldPresentMapped: Boolean defined in org.jetbrains.kotlin.idea.intentions.KotlinCommonIntentionActionsFactory.createChangeModifierAction[LocalVariableDescriptor]
 
-'AddModifierFix' @ [60:13] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
-
 'createIfApplicable' @ [60:28] ==> public final fun createIfApplicable(modifierListOwner: KtModifierListOwner, modifier: KtModifierKeywordToken): AddModifierFix? defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
 'kModifierOwner' @ [60:47] ==> val kModifierOwner: KtModifierListOwner defined in org.jetbrains.kotlin.idea.intentions.KotlinCommonIntentionActionsFactory.createChangeModifierAction[LocalVariableDescriptor]
@@ -298,7 +296,7 @@ Inferred types:
 
 'displayName' @ [118:68] ==> public open val displayName: String defined in org.jetbrains.kotlin.descriptors.Visibility[DeserializedPropertyDescriptor]
 
-'withDefault' @ [119:11] ==> public fun <K, V> Map<String, String>.withDefault(defaultValue: (String) -> String): Map<String, String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'withDefault' @ [119:11] ==> public fun <K, V> Map<String, String>.withDefault(defaultValue: (key: String) -> String): Map<String, String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
     <V> -> String
@@ -355,8 +353,6 @@ Inferred types:
 'str' @ [135:72] ==> value-parameter str: PsiType defined in org.jetbrains.kotlin.idea.intentions.KotlinCommonIntentionActionsFactory.Companion.typeString[ValueParameterDescriptorImpl]
 
 'canonicalText' @ [135:76] ==> public final val PsiType.canonicalText: String[MyPropertyDescriptor]
-
-'DefaultBuiltIns' @ [135:92] ==> public companion object defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns[FakeCallableDescriptorForObject]
 
 'Instance' @ [135:108] ==> @JvmStatic public final val Instance: DefaultBuiltIns defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns.Companion[DeserializedPropertyDescriptor]
 
@@ -690,7 +686,9 @@ Inferred types:
 
 'createChangeMethodSignatureFromUsageFix' @ [212:22] ==> @NotNull public abstract fun createChangeMethodSignatureFromUsageFix(@NotNull p0: PsiMethod, @NotNull p1: (Array<(PsiExpression..PsiExpression?)>..Array<out (PsiExpression..PsiExpression?)>), @NotNull p2: PsiSubstitutor, @NotNull p3: PsiElement, p4: Boolean, p5: Int): IntentionAction defined in com.intellij.codeInsight.intention.QuickFixFactory[JavaMethodDescriptor]
 
-'LightClassUtil' @ [213:29] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
+'!!' @ [213:29] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: PsiMethod?): PsiMethod[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> PsiMethod
 
 'getLightClassMethod' @ [213:44] ==> public final fun getLightClassMethod(function: KtFunction): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 

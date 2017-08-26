@@ -2,9 +2,9 @@
 
 'owner' @ [39:26] ==> value-parameter owner: T defined in org.jetbrains.kotlin.asJava.elements.KtLightModifierList.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [40:33] ==> public fun <T> lazyPub(initializer: () -> PsiModifierList): Lazy<PsiModifierList> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [40:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiModifierList
+    <T> -> T
 
 'owner' @ [40:43] ==> protected final val owner: T defined in org.jetbrains.kotlin.asJava.elements.KtLightModifierList[PropertyDescriptorImpl]
 
@@ -12,11 +12,11 @@ Inferred types:
 
 'modifierList' @ [40:61] ==> public final val PsiModifierListOwner.modifierList: PsiModifierList?[MyPropertyDescriptor]
 
-'lazyPub' @ [41:33] ==> public fun <T> lazyPub(initializer: () -> List<KtLightAbstractAnnotation>): Lazy<List<KtLightAbstractAnnotation>> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [41:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KtLightAbstractAnnotation>
+    <T> -> T
 
-'computeAnnotations' @ [41:43] ==> private fun computeAnnotations(lightModifierList: KtLightModifierList<*>): List<KtLightAbstractAnnotation> defined in org.jetbrains.kotlin.asJava.elements[SimpleFunctionDescriptorImpl]
+'computeAnnotations' @ [41:43] ==> private fun computeAnnotations(lightModifierList: KtLightModifierList<*>): List<KtLightAbstractAnnotation> defined in org.jetbrains.kotlin.asJava.elements in file KtLightModifierList.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [41:62] ==> <this> defined in org.jetbrains.kotlin.asJava.elements.KtLightModifierList[LazyClassReceiverParameterDescriptor]
 
@@ -102,7 +102,7 @@ Inferred types:
 
 'modifiers' @ [72:60] ==> private final val modifiers: Set<String> defined in org.jetbrains.kotlin.asJava.elements.KtLightSimpleModifierList[PropertyDescriptorImpl]
 
-'lightAnnotationsForEntries' @ [76:33] ==> private fun lightAnnotationsForEntries(lightModifierList: KtLightModifierList<*>): List<KtLightAnnotationForSourceEntry> defined in org.jetbrains.kotlin.asJava.elements[SimpleFunctionDescriptorImpl]
+'lightAnnotationsForEntries' @ [76:33] ==> private fun lightAnnotationsForEntries(lightModifierList: KtLightModifierList<*>): List<KtLightAnnotationForSourceEntry> defined in org.jetbrains.kotlin.asJava.elements in file KtLightModifierList.kt[SimpleFunctionDescriptorImpl]
 
 'lightModifierList' @ [76:60] ==> value-parameter lightModifierList: KtLightModifierList<*> defined in org.jetbrains.kotlin.asJava.elements.computeAnnotations[ValueParameterDescriptorImpl]
 
@@ -221,7 +221,7 @@ Inferred types:
 Inferred types:
     <T> -> KtLightAnnotationForSourceEntry
 
-'getAnnotationDescriptors' @ [102:12] ==> private fun getAnnotationDescriptors(declaration: KtDeclaration, annotatedLightElement: KtLightElement<*, *>): List<AnnotationDescriptor> defined in org.jetbrains.kotlin.asJava.elements[SimpleFunctionDescriptorImpl]
+'getAnnotationDescriptors' @ [102:12] ==> private fun getAnnotationDescriptors(declaration: KtDeclaration, annotatedLightElement: KtLightElement<*, *>): List<AnnotationDescriptor> defined in org.jetbrains.kotlin.asJava.elements in file KtLightModifierList.kt[SimpleFunctionDescriptorImpl]
 
 'annotatedKtDeclaration' @ [102:37] ==> val annotatedKtDeclaration: KtDeclaration? defined in org.jetbrains.kotlin.asJava.elements.lightAnnotationsForEntries[LocalVariableDescriptor]
 
@@ -502,8 +502,6 @@ Inferred types:
 
 'target' @ [160:13] ==> public final val target: AnnotationUseSiteTarget? defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationWithTarget[DeserializedPropertyDescriptor]
 
-'AnnotationUseSiteTarget' @ [160:23] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'FIELD' @ [160:47] ==> enum entry FIELD defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'target' @ [162:13] ==> public final val target: AnnotationUseSiteTarget? defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationWithTarget[DeserializedPropertyDescriptor]
@@ -514,13 +512,13 @@ Inferred types:
 
 'annotation' @ [164:76] ==> public final val annotation: AnnotationDescriptor defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationWithTarget[DeserializedPropertyDescriptor]
 
-'KotlinTarget' @ [165:16] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+'in' @ [165:16] ==> public abstract fun contains(element: KotlinTarget): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'FIELD' @ [165:29] ==> enum entry FIELD defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'declarationSiteTargets' @ [165:38] ==> val declarationSiteTargets: Set<KotlinTarget> defined in org.jetbrains.kotlin.asJava.elements.matches[LocalVariableDescriptor]
 
-'KotlinTarget' @ [165:64] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+'!in' @ [165:64] ==> public abstract fun contains(element: KotlinTarget): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'PROPERTY' @ [165:77] ==> enum entry PROPERTY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -535,8 +533,6 @@ Inferred types:
 'isSetter' @ [167:64] ==> public val KtLightMethod.isSetter: Boolean defined in org.jetbrains.kotlin.asJava.elements in file KtLightMethodImpl.kt[PropertyDescriptorImpl]
 
 'target' @ [168:16] ==> public final val target: AnnotationUseSiteTarget? defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationWithTarget[DeserializedPropertyDescriptor]
-
-'AnnotationUseSiteTarget' @ [168:26] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'SETTER_PARAMETER' @ [168:50] ==> enum entry SETTER_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 

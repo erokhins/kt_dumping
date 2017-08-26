@@ -48,7 +48,7 @@ Inferred types:
 
 'prefixMatcher' @ [67:45] ==> private final val prefixMatcher: PrefixMatcher defined in org.jetbrains.kotlin.idea.completion.AllClassesCompletion[PropertyDescriptorImpl]
 
-'asStringNameFilter' @ [67:59] ==> public fun PrefixMatcher.asStringNameFilter(): (String) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'asStringNameFilter' @ [67:59] ==> public fun PrefixMatcher.asStringNameFilter(): (String) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'forEach' @ [68:22] ==> @HidesMembers public inline fun <T> Iterable<TypeAliasDescriptor>.forEach(action: (TypeAliasDescriptor) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -75,8 +75,6 @@ Inferred types:
 'scope' @ [77:28] ==> value-parameter scope: MemberScope defined in org.jetbrains.kotlin.idea.completion.AllClassesCompletion.collectClassesFromScope[ValueParameterDescriptorImpl]
 
 'getDescriptorsFiltered' @ [77:34] ==> public fun MemberScope.getDescriptorsFiltered(kindFilter: DescriptorKindFilter = ..., nameFilter: (Name) -> Boolean = ...): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [77:57] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'CLASSIFIERS' @ [77:78] ==> @field:JvmField public final val CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 

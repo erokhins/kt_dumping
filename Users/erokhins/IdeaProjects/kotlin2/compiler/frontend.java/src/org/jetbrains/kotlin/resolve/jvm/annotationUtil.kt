@@ -10,5 +10,5 @@
 
 'FqName' @ [25:105] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
-'findJvmFieldAnnotation' @ [28:12] ==> public fun DeclarationDescriptor.findJvmFieldAnnotation(): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.jvm.annotations[SimpleFunctionDescriptorImpl]
+'findJvmFieldAnnotation' @ [28:12] ==> public fun DeclarationDescriptor.findJvmFieldAnnotation(): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.jvm.annotations in file annotationUtil.kt[SimpleFunctionDescriptorImpl]
 

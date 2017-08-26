@@ -253,21 +253,21 @@ Inferred types:
 
 'executeOnPooledThread' @ [132:72] ==> @NotNull public abstract fun <T : (Any..Any?)> executeOnPooledThread(@NotNull p0: Callable<(Boolean..Boolean?)>): Future<(Boolean..Boolean?)> defined in com.intellij.openapi.application.Application[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
-'Callable' @ [132:115] ==> @FunctionalInterface public fun <V : (Any..Any?)> Callable(function: () -> (Boolean..Boolean?)): Callable<Boolean> defined in java.util.concurrent[SimpleFunctionDescriptorImpl]
+'Callable' @ [132:115] ==> @FunctionalInterface public fun <V : (Any..Any?)> Callable(function: () -> (Boolean..Boolean?)): Callable<(Boolean..Boolean?)> defined in java.util.concurrent[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <V : (Any..Any?)> -> Boolean
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'getApplication' @ [132:145] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 
 'runReadAction' @ [132:162] ==> public abstract fun <T : (Any..Any?)> runReadAction(@NotNull p0: Computable<(Boolean..Boolean?)>): (Boolean..Boolean?) defined in com.intellij.openapi.application.Application[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
-'Computable' @ [132:176] ==> public fun <T : (Any..Any?)> Computable(function: () -> (Boolean..Boolean?)): Computable<Boolean> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
+'Computable' @ [132:176] ==> public fun <T : (Any..Any?)> Computable(function: () -> (Boolean..Boolean?)): Computable<(Boolean..Boolean?)> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'intentionAction' @ [132:189] ==> value-parameter intentionAction: IntentionAction defined in org.jetbrains.kotlin.idea.intentions.AbstractIntentionTest.doTestFor[ValueParameterDescriptorImpl]
 

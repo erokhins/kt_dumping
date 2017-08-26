@@ -105,8 +105,6 @@ Inferred types:
 
 'this' @ [71:61] ==> <this> defined in org.jetbrains.kotlin.types.AbstractTypeBindingTest.MyPrinter.render[ReceiverParameterDescriptorImpl]
 
-'DescriptorRenderer' @ [71:87] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'SHORT_NAMES_IN_TYPES' @ [71:106] ==> @field:JvmField public final val SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
 'render' @ [71:127] ==> public abstract fun render(declarationDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]

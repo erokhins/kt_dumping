@@ -140,13 +140,9 @@ Inferred types:
 
 'getter' @ [77:27] ==> private final val getter: Boolean defined in org.jetbrains.kotlin.idea.references.SyntheticPropertyAccessorReference[PropertyDescriptorImpl]
 
-'SyntheticJavaPropertyDescriptor' @ [78:13] ==> public companion object defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor[FakeCallableDescriptorForObject]
-
 'propertyNameByGetMethodName' @ [78:45] ==> public final fun propertyNameByGetMethodName(methodName: Name): Name? defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor.Companion[DeserializedSimpleFunctionDescriptor]
 
 'newNameAsName' @ [78:73] ==> val newNameAsName: Name defined in org.jetbrains.kotlin.idea.references.SyntheticPropertyAccessorReference.handleElementRename[LocalVariableDescriptor]
-
-'SyntheticJavaPropertyDescriptor' @ [83:13] ==> public companion object defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor[FakeCallableDescriptorForObject]
 
 'propertyNameBySetMethodName' @ [83:45] ==> public final fun propertyNameBySetMethodName(methodName: Name, withIsPrefix: Boolean): Name? defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor.Companion[DeserializedSimpleFunctionDescriptor]
 

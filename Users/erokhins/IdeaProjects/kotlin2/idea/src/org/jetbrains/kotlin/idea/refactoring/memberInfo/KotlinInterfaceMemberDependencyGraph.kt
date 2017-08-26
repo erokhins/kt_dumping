@@ -13,7 +13,7 @@ Inferred types:
 
 'memberInfo' @ [35:37] ==> value-parameter memberInfo: M defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinInterfaceMemberDependencyGraph.memberChanged[ValueParameterDescriptorImpl]
 
-'toJavaMemberInfo' @ [35:48] ==> public fun MemberInfoBase<out KtNamedDeclaration>.toJavaMemberInfo(): MemberInfo? defined in org.jetbrains.kotlin.idea.refactoring.memberInfo[SimpleFunctionDescriptorImpl]
+'toJavaMemberInfo' @ [35:48] ==> public fun MemberInfoBase<out KtNamedDeclaration>.toJavaMemberInfo(): MemberInfo? defined in org.jetbrains.kotlin.idea.refactoring.memberInfo in file KotlinMemberInfo.kt[SimpleFunctionDescriptorImpl]
 
 'Suppress' @ [38:5] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
@@ -62,7 +62,7 @@ Inferred types:
 Inferred types:
     <T> -> T
 
-'psiMemberDependencies' @ [47:16] ==> val psiMemberDependencies: MutableSet<out (PsiMember..PsiMember?)> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinInterfaceMemberDependencyGraph.getDependenciesOf[LocalVariableDescriptor]
+'psiMemberDependencies' @ [47:16] ==> val psiMemberDependencies: (MutableSet<out (PsiMember..PsiMember?)>..Set<(PsiMember..PsiMember?)>) defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinInterfaceMemberDependencyGraph.getDependenciesOf[LocalVariableDescriptor]
 
 'mapNotNull' @ [48:18] ==> public inline fun <T, R : Any> Iterable<(PsiMember..PsiMember?)>.mapNotNull(transform: ((PsiMember..PsiMember?)) -> PsiElement?): List<PsiElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

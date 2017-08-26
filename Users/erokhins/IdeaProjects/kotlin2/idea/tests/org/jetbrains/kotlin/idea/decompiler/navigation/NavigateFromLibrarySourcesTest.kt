@@ -144,7 +144,7 @@ Inferred types:
 
 'java' @ [86:93] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'element' @ [86:107] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.decompiler.navigation.NavigateFromLibrarySourcesTest.checkNavigationElement[ValueParameterDescriptorImpl]
 

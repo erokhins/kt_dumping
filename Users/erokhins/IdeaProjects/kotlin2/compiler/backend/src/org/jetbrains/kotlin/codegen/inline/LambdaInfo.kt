@@ -152,8 +152,6 @@ Inferred types:
 
 'getContributedFunctions' @ [126:26] ==> public abstract fun getContributedFunctions(name: Name, location: LookupLocation): Collection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'OperatorNameConventions' @ [126:50] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INVOKE' @ [126:74] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'FROM_BACKEND' @ [126:99] ==> enum entry FROM_BACKEND defined in org.jetbrains.kotlin.incremental.components.NoLookupLocation[FakeCallableDescriptorForObject]
@@ -162,14 +160,14 @@ Inferred types:
 Inferred types:
     <T> -> SimpleFunctionDescriptor
 
-'let' @ [128:26] ==> @InlineOnly public inline fun <T, R> SimpleFunctionDescriptor.let(block: (SimpleFunctionDescriptor) -> SimpleFunctionDescriptor): SimpleFunctionDescriptor defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [128:26] ==> @InlineOnly public inline fun <T, R> SimpleFunctionDescriptor.let(block: (SimpleFunctionDescriptor) -> FunctionDescriptor): FunctionDescriptor defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> SimpleFunctionDescriptor
-    <R> -> SimpleFunctionDescriptor
+    <R> -> FunctionDescriptor
 
-'if (isPropertyReference) it.original else it' @ [130:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: SimpleFunctionDescriptor, elseBranch: SimpleFunctionDescriptor): SimpleFunctionDescriptor[SimpleFunctionDescriptorImpl]
+'if (isPropertyReference) it.original else it' @ [130:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: FunctionDescriptor, elseBranch: FunctionDescriptor): FunctionDescriptor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> SimpleFunctionDescriptor
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> FunctionDescriptor
 
 'isPropertyReference' @ [130:33] ==> var isPropertyReference: Boolean defined in org.jetbrains.kotlin.codegen.inline.DefaultLambda.generateLambdaBody[LocalVariableDescriptor]
 
@@ -266,7 +264,7 @@ Inferred types:
 
 'it' @ [148:73] ==> value-parameter it: Type defined in org.jetbrains.kotlin.codegen.inline.DefaultLambda.generateLambdaBody.<anonymous>[ValueParameterDescriptorImpl]
 
-'boxReceiverForBoundReference' @ [148:76] ==> public fun Type.boxReceiverForBoundReference(): Type defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'boxReceiverForBoundReference' @ [148:76] ==> public fun Type.boxReceiverForBoundReference(): Type defined in org.jetbrains.kotlin.codegen.inline in file LambdaInfo.kt[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [149:26] ==> public fun <T> emptyList(): List<CapturedParamDesc> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -274,7 +272,7 @@ Inferred types:
 
 'constructor' @ [151:21] ==> val constructor: MethodNode? defined in org.jetbrains.kotlin.codegen.inline.DefaultLambda.generateLambdaBody[LocalVariableDescriptor]
 
-'findCapturedFieldAssignmentInstructions' @ [151:34] ==> public fun MethodNode.findCapturedFieldAssignmentInstructions(): Sequence<FieldInsnNode> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'findCapturedFieldAssignmentInstructions' @ [151:34] ==> public fun MethodNode.findCapturedFieldAssignmentInstructions(): Sequence<FieldInsnNode> defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [151:77] ==> public fun <T, R> Sequence<FieldInsnNode>.map(transform: (FieldInsnNode) -> CapturedParamDesc): Sequence<CapturedParamDesc> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -323,11 +321,7 @@ Inferred types:
 
 'isPropertyReference' @ [159:22] ==> var isPropertyReference: Boolean defined in org.jetbrains.kotlin.codegen.inline.DefaultLambda.generateLambdaBody[LocalVariableDescriptor]
 
-'OperatorNameConventions' @ [159:43] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'GET' @ [159:67] ==> @field:JvmField public final val GET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
-
-'OperatorNameConventions' @ [159:76] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'INVOKE' @ [159:100] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -438,8 +432,8 @@ Inferred types:
 
 'get' @ [207:36] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?), p1: (PsiElement..PsiElement?)): VariableDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VARIABLE' @ [207:55] ==> public final val VARIABLE: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -499,7 +493,7 @@ Inferred types:
 
 'resultingDescriptor' @ [215:34] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'getFunction' @ [215:77] ==> val getFunction: SimpleFunctionDescriptor defined in org.jetbrains.kotlin.codegen.inline.ExpressionLambda.<init>[LocalVariableDescriptor]
 
@@ -581,9 +575,9 @@ Inferred types:
 
 'invokeMethodDescriptor' @ [231:48] ==> public open val invokeMethodDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.inline.ExpressionLambda[PropertyDescriptorImpl]
 
-'lazy' @ [234:59] ==> public fun <T> lazy(initializer: () -> ArrayList<CapturedParamDesc> /* = ArrayList<CapturedParamDesc> */): Lazy<ArrayList<CapturedParamDesc> /* = ArrayList<CapturedParamDesc> */> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [234:59] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ArrayList<CapturedParamDesc>
+    <T> -> T
 
 'arrayListOf' @ [235:9] ==> @SinceKotlin @InlineOnly public inline fun <T> arrayListOf(): ArrayList<CapturedParamDesc> /* = ArrayList<CapturedParamDesc> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -652,7 +646,7 @@ Inferred types:
 
 'it' @ [248:51] ==> value-parameter it: Type defined in org.jetbrains.kotlin.codegen.inline.ExpressionLambda.capturedVars.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'boxReceiverForBoundReference' @ [248:54] ==> public fun Type.boxReceiverForBoundReference(): Type defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'boxReceiverForBoundReference' @ [248:54] ==> public fun Type.boxReceiverForBoundReference(): Type defined in org.jetbrains.kotlin.codegen.inline in file LambdaInfo.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [248:90] ==> value-parameter it: Type defined in org.jetbrains.kotlin.codegen.inline.ExpressionLambda.capturedVars.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -719,8 +713,6 @@ Inferred types:
 'getMethodAsmFlags' @ [276:30] ==> public open fun getMethodAsmFlags(functionDescriptor: (FunctionDescriptor..FunctionDescriptor?), kind: (OwnerKind..OwnerKind?), state: (GenerationState..GenerationState?)): Int defined in org.jetbrains.kotlin.codegen.AsmUtil[JavaMethodDescriptor]
 
 'invokeMethodDescriptor' @ [276:48] ==> public open val invokeMethodDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.inline.ExpressionLambda[PropertyDescriptorImpl]
-
-'OwnerKind' @ [276:72] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'IMPLEMENTATION' @ [276:82] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 

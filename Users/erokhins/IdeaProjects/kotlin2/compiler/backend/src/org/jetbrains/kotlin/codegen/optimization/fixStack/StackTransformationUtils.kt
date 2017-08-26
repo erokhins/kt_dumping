@@ -106,7 +106,7 @@ Inferred types:
 
 'savedValues' @ [60:35] ==> public final val savedValues: List<BasicValue> defined in org.jetbrains.kotlin.codegen.optimization.fixStack.SavedStackDescriptor[PropertyDescriptorImpl]
 
-'fold' @ [60:47] ==> public inline fun <T, R> Iterable<BasicValue>.fold(initial: Int, operation: (Int, BasicValue) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [60:47] ==> public inline fun <T, R> Iterable<BasicValue>.fold(initial: Int, operation: (acc: Int, BasicValue) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> BasicValue
     <R> -> Int
@@ -393,7 +393,7 @@ Inferred types:
 
 'node' @ [146:20] ==> value-parameter node: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack.replaceMarkerWithPops[ValueParameterDescriptorImpl]
 
-'getPopInstruction' @ [146:26] ==> public fun getPopInstruction(top: BasicValue): InsnNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack[SimpleFunctionDescriptorImpl]
+'getPopInstruction' @ [146:26] ==> public fun getPopInstruction(top: BasicValue): InsnNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack in file StackTransformationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'stackValue' @ [146:44] ==> val stackValue: BasicValue defined in org.jetbrains.kotlin.codegen.optimization.fixStack.replaceMarkerWithPops.<anonymous>[LocalVariableDescriptor]
 

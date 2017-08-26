@@ -76,8 +76,6 @@ Inferred types:
 
 'startOffset' @ [61:35] ==> public val PsiElement.startOffset: Int defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 
-'Int' @ [61:50] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [61:54] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'lastNonComment' @ [62:21] ==> val lastNonComment: PsiElement defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.select[LocalVariableDescriptor]
@@ -90,8 +88,6 @@ Inferred types:
 
 'endOffset' @ [64:34] ==> public val PsiElement.endOffset: Int defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 
-'Int' @ [64:47] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MIN_VALUE' @ [64:51] ==> public const final val MIN_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'lastNonComment' @ [65:21] ==> val lastNonComment: PsiElement defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.select[LocalVariableDescriptor]
@@ -100,7 +96,7 @@ Inferred types:
 
 'result' @ [66:13] ==> val result: ArrayList<TextRange> defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.select[LocalVariableDescriptor]
 
-'addRange' @ [66:20] ==> public fun MutableList<TextRange>.addRange(editorText: CharSequence, range: TextRange): Unit defined in org.jetbrains.kotlin.idea.editor.wordSelection[SimpleFunctionDescriptorImpl]
+'addRange' @ [66:20] ==> public fun MutableList<TextRange>.addRange(editorText: CharSequence, range: TextRange): Unit defined in org.jetbrains.kotlin.idea.editor.wordSelection in file KotlinDeclarationSelectioner.kt[SimpleFunctionDescriptorImpl]
 
 'editorText' @ [66:29] ==> value-parameter editorText: CharSequence defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.select[ValueParameterDescriptorImpl]
 
@@ -120,7 +116,7 @@ Inferred types:
 
 'result' @ [70:13] ==> val result: ArrayList<TextRange> defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.select[LocalVariableDescriptor]
 
-'addRange' @ [70:20] ==> public fun MutableList<TextRange>.addRange(editorText: CharSequence, range: TextRange): Unit defined in org.jetbrains.kotlin.idea.editor.wordSelection[SimpleFunctionDescriptorImpl]
+'addRange' @ [70:20] ==> public fun MutableList<TextRange>.addRange(editorText: CharSequence, range: TextRange): Unit defined in org.jetbrains.kotlin.idea.editor.wordSelection in file KotlinDeclarationSelectioner.kt[SimpleFunctionDescriptorImpl]
 
 'editorText' @ [70:29] ==> value-parameter editorText: CharSequence defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.select[ValueParameterDescriptorImpl]
 
@@ -136,7 +132,7 @@ Inferred types:
 
 'result' @ [73:9] ==> val result: ArrayList<TextRange> defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.select[LocalVariableDescriptor]
 
-'addRange' @ [73:16] ==> public fun MutableList<TextRange>.addRange(editorText: CharSequence, range: TextRange): Unit defined in org.jetbrains.kotlin.idea.editor.wordSelection[SimpleFunctionDescriptorImpl]
+'addRange' @ [73:16] ==> public fun MutableList<TextRange>.addRange(editorText: CharSequence, range: TextRange): Unit defined in org.jetbrains.kotlin.idea.editor.wordSelection in file KotlinDeclarationSelectioner.kt[SimpleFunctionDescriptorImpl]
 
 'editorText' @ [73:25] ==> value-parameter editorText: CharSequence defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.select[ValueParameterDescriptorImpl]
 
@@ -164,7 +160,7 @@ Inferred types:
 
 'result' @ [83:13] ==> val result: ArrayList<TextRange> defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.selectMultiDeclaration[LocalVariableDescriptor]
 
-'addRange' @ [83:20] ==> public fun MutableList<TextRange>.addRange(editorText: CharSequence, range: TextRange): Unit defined in org.jetbrains.kotlin.idea.editor.wordSelection[SimpleFunctionDescriptorImpl]
+'addRange' @ [83:20] ==> public fun MutableList<TextRange>.addRange(editorText: CharSequence, range: TextRange): Unit defined in org.jetbrains.kotlin.idea.editor.wordSelection in file KotlinDeclarationSelectioner.kt[SimpleFunctionDescriptorImpl]
 
 'editorText' @ [83:29] ==> value-parameter editorText: CharSequence defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.selectMultiDeclaration[ValueParameterDescriptorImpl]
 
@@ -184,7 +180,7 @@ Inferred types:
 
 'result' @ [84:13] ==> val result: ArrayList<TextRange> defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.selectMultiDeclaration[LocalVariableDescriptor]
 
-'addRange' @ [84:20] ==> public fun MutableList<TextRange>.addRange(editorText: CharSequence, range: TextRange): Unit defined in org.jetbrains.kotlin.idea.editor.wordSelection[SimpleFunctionDescriptorImpl]
+'addRange' @ [84:20] ==> public fun MutableList<TextRange>.addRange(editorText: CharSequence, range: TextRange): Unit defined in org.jetbrains.kotlin.idea.editor.wordSelection in file KotlinDeclarationSelectioner.kt[SimpleFunctionDescriptorImpl]
 
 'editorText' @ [84:29] ==> value-parameter editorText: CharSequence defined in org.jetbrains.kotlin.idea.editor.wordSelection.KotlinDeclarationSelectioner.selectMultiDeclaration[ValueParameterDescriptorImpl]
 

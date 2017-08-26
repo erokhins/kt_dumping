@@ -24,8 +24,6 @@
 
 'redundancyType' @ [35:21] ==> val redundancyType: RedundantIfInspection.RedundancyType defined in org.jetbrains.kotlin.idea.inspections.RedundantIfInspection.buildVisitor.<no name provided>.visitIfExpression[LocalVariableDescriptor]
 
-'RedundancyType' @ [35:39] ==> public companion object defined in org.jetbrains.kotlin.idea.inspections.RedundantIfInspection.RedundancyType[FakeCallableDescriptorForObject]
-
 'NONE' @ [35:54] ==> enum entry NONE defined in org.jetbrains.kotlin.idea.inspections.RedundantIfInspection.RedundancyType[FakeCallableDescriptorForObject]
 
 'holder' @ [37:17] ==> value-parameter holder: ProblemsHolder defined in org.jetbrains.kotlin.idea.inspections.RedundantIfInspection.buildVisitor[ValueParameterDescriptorImpl]

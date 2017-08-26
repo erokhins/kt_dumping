@@ -14,8 +14,6 @@
 
 'modality' @ [45:46] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [45:58] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [45:67] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'DescriptorRenderer' @ [47:24] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
@@ -54,8 +52,6 @@ Inferred types:
 'it' @ [58:34] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.SuperDeclarationMarkerTooltip.`fun`.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [58:37] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [58:49] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [58:58] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

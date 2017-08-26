@@ -58,8 +58,6 @@ Inferred types:
 
 'LiteralExpression' @ [34:23] ==> public constructor LiteralExpression(literalText: String) defined in org.jetbrains.kotlin.j2k.ast.LiteralExpression[ClassConstructorDescriptorImpl]
 
-'MethodCallExpression' @ [35:25] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[FakeCallableDescriptorForObject]
-
 'buildNonNull' @ [35:46] ==> public final fun buildNonNull(receiver: Expression?, methodName: String, argumentList: ArgumentList = ..., typeArguments: List<Type> = ..., dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
 'LiteralExpression' @ [35:59] ==> public constructor LiteralExpression(literalText: String) defined in org.jetbrains.kotlin.j2k.ast.LiteralExpression[ClassConstructorDescriptorImpl]
@@ -71,8 +69,6 @@ Inferred types:
 'DOUBLE' @ [35:123] ==> public final val DOUBLE: (Name..Name?) defined in org.jetbrains.kotlin.types.expressions.OperatorConventions[JavaPropertyDescriptor]
 
 'toString' @ [35:130] ==> public open fun toString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
-
-'MethodCallExpression' @ [36:24] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[FakeCallableDescriptorForObject]
 
 'buildNonNull' @ [36:45] ==> public final fun buildNonNull(receiver: Expression?, methodName: String, argumentList: ArgumentList = ..., typeArguments: List<Type> = ..., dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
@@ -397,7 +393,7 @@ Inferred types:
 
 'mutability' @ [136:17] ==> value-parameter mutability: Mutability defined in org.jetbrains.kotlin.j2k.convertToKotlinAnalog[ValueParameterDescriptorImpl]
 
-'isMutable' @ [136:28] ==> public fun Mutability.isMutable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'isMutable' @ [136:28] ==> public fun Mutability.isMutable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast in file Types.kt[SimpleFunctionDescriptorImpl]
 
 'settings' @ [136:38] ==> public final val settings: ConverterSettings defined in org.jetbrains.kotlin.j2k.Converter[PropertyDescriptorImpl]
 

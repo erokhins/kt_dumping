@@ -74,7 +74,7 @@ Inferred types:
 
 'getService' @ [70:42] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(UastContext..UastContext?)>): (UastContext..UastContext?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UastContext
+    <T : (Any..Any?)> -> (org.jetbrains.uast.UastContext..org.jetbrains.uast.UastContext?)
 
 'element' @ [70:53] ==> val element: PsiElement defined in org.jetbrains.kotlin.android.folding.ResourceFoldingBuilder.getPlaceholderText[LocalVariableDescriptor]
 

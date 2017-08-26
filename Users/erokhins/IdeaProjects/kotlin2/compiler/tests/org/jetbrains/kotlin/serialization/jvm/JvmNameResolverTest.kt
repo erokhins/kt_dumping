@@ -89,6 +89,8 @@ Inferred types:
 
 'Char' @ [47:61] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
 
+'toInt' @ [47:67] ==> public final fun toInt(): Int defined in kotlin.Char[DeserializedSimpleFunctionDescriptor]
+
 'build' @ [48:15] ==> public open fun build(): (JvmProtoBuf.StringTableTypes.Record..JvmProtoBuf.StringTableTypes.Record?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.StringTableTypes.Record.Builder[JavaMethodDescriptor]
 
 'string' @ [50:13] ==> value-parameter string: String? defined in org.jetbrains.kotlin.serialization.jvm.JvmNameResolverTest.Context.string[ValueParameterDescriptorImpl]

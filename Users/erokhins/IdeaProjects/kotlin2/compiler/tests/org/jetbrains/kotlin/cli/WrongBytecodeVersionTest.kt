@@ -26,11 +26,11 @@
 
 'java' @ [38:57] ==> public val <T> KClass<out WrongBytecodeVersionTest>.java: Class<out WrongBytecodeVersionTest> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> WrongBytecodeVersionTest
+    <T> -> Captured(out WrongBytecodeVersionTest)
 
 'simpleName' @ [38:62] ==> public final val <T : (Any..Any?)> Class<out WrongBytecodeVersionTest>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> WrongBytecodeVersionTest
+    <T : (Any..Any?)> -> Captured(out WrongBytecodeVersionTest)
 
 'createEnvironmentWithMockJdkAndIdeaAnnotations' @ [40:43] ==> @NotNull public open fun createEnvironmentWithMockJdkAndIdeaAnnotations(p0: (Disposable..Disposable?)): KotlinCoreEnvironment defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 

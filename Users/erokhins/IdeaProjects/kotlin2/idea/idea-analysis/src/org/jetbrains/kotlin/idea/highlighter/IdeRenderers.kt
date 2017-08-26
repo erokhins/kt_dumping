@@ -15,7 +15,7 @@ Inferred types:
 
 'resultingDescriptor' @ [33:27] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'sortedWith' @ [34:18] ==> public fun <T> Iterable<(CallableDescriptor..CallableDescriptor?)>.sortedWith(comparator: Comparator<in (CallableDescriptor..CallableDescriptor?)> /* = Comparator<in (CallableDescriptor..CallableDescriptor?)> */): List<(CallableDescriptor..CallableDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -47,8 +47,6 @@ Inferred types:
 
 'SmartTypeRenderer' @ [39:38] ==> public constructor SmartTypeRenderer(baseRenderer: DescriptorRenderer) defined in org.jetbrains.kotlin.diagnostics.rendering.SmartTypeRenderer[DeserializedClassConstructorDescriptor]
 
-'DescriptorRenderer' @ [39:56] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'HTML' @ [39:75] ==> @field:JvmField public final val HTML: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
 'withOptions' @ [39:80] ==> public final fun withOptions(changeOptions: DescriptorRendererOptions.() -> Unit): DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -76,7 +74,7 @@ Inferred types:
 
 'resultingDescriptor' @ [43:60] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'compareBy' @ [44:26] ==> @InlineOnly public inline fun <T, K> compareBy(comparator: Comparator<in (CallableDescriptor..CallableDescriptor?)> /* = Comparator<in (CallableDescriptor..CallableDescriptor?)> */, crossinline selector: (ResolvedCall<*>) -> (CallableDescriptor..CallableDescriptor?)): Comparator<ResolvedCall<*>> /* = Comparator<ResolvedCall<*>> */ defined in kotlin.comparisons[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -89,7 +87,7 @@ Inferred types:
 
 'resultingDescriptor' @ [44:89] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'calls' @ [45:9] ==> value-parameter calls: Collection<ResolvedCall<*>> defined in org.jetbrains.kotlin.idea.highlighter.IdeRenderers.HTML_NONE_APPLICABLE_CALLS.<anonymous>[ValueParameterDescriptorImpl]
 

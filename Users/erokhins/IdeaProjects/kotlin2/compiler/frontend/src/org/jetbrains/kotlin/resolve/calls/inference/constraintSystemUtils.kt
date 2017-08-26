@@ -1,6 +1,6 @@
 'type' @ [28:32] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.resolve.calls.inference.getNestedTypeVariables[ValueParameterDescriptorImpl]
 
-'getNestedTypeParameters' @ [28:37] ==> internal fun KotlinType.getNestedTypeParameters(): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'getNestedTypeParameters' @ [28:37] ==> internal fun KotlinType.getNestedTypeParameters(): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.calls.inference in file constraintSystemUtils.kt[SimpleFunctionDescriptorImpl]
 
 'toSet' @ [28:63] ==> public fun <T> Iterable<TypeParameterDescriptor>.toSet(): Set<TypeParameterDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -108,7 +108,7 @@ Inferred types:
 
 'result' @ [56:12] ==> val result: ArrayList<TypeProjection> defined in org.jetbrains.kotlin.resolve.calls.inference.getNestedArguments[LocalVariableDescriptor]
 
-'getNestedArguments' @ [60:12] ==> internal fun KotlinType.getNestedArguments(): List<TypeProjection> defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'getNestedArguments' @ [60:12] ==> internal fun KotlinType.getNestedArguments(): List<TypeProjection> defined in org.jetbrains.kotlin.resolve.calls.inference in file constraintSystemUtils.kt[SimpleFunctionDescriptorImpl]
 
 'mapNotNull' @ [60:33] ==> public inline fun <T, R : Any> Iterable<TypeProjection>.mapNotNull(transform: (TypeProjection) -> TypeParameterDescriptor?): List<TypeParameterDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

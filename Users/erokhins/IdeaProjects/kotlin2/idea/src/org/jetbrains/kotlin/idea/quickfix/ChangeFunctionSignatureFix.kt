@@ -67,8 +67,6 @@ Inferred types:
 
 'argumentName' @ [67:13] ==> val argumentName: ValueArgumentName? defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionSignatureFix.getNewArgumentName[LocalVariableDescriptor]
 
-'KotlinNameSuggester' @ [67:37] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
-
 'suggestNameByName' @ [67:57] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
 'argumentName' @ [67:75] ==> val argumentName: ValueArgumentName? defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionSignatureFix.getNewArgumentName[LocalVariableDescriptor]
@@ -87,8 +85,6 @@ Inferred types:
 
 'PARTIAL' @ [69:73] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
-'KotlinNameSuggester' @ [70:17] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
-
 'suggestNamesByExpressionAndType' @ [70:37] ==> public final fun suggestNamesByExpressionAndType(expression: KtExpression, type: KotlinType?, bindingContext: BindingContext?, validator: (String) -> Boolean, defaultName: String?): Collection<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
 'expression' @ [70:69] ==> val expression: KtExpression? defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionSignatureFix.getNewArgumentName[LocalVariableDescriptor]
@@ -100,8 +96,6 @@ Inferred types:
 'first' @ [70:123] ==> public fun <T> Iterable<String>.first(): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
-
-'KotlinNameSuggester' @ [72:21] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
 
 'suggestNameByName' @ [72:41] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
@@ -122,7 +116,7 @@ Inferred types:
 
 'cast' @ [82:38] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull vararg p1: (DiagnosticFactory<out (DiagnosticWithParameters1<out (PsiElement..PsiElement?), out (CallableDescriptor..CallableDescriptor?)>..DiagnosticWithParameters1<out (PsiElement..PsiElement?), out (CallableDescriptor..CallableDescriptor?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters1<out (PsiElement..PsiElement?), out (CallableDescriptor..CallableDescriptor?)>..DiagnosticWithParameters1<out (PsiElement..PsiElement?), out (CallableDescriptor..CallableDescriptor?)>?)>?)): DiagnosticWithParameters1<out (PsiElement..PsiElement?), out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> DiagnosticWithParameters1<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>
+    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters1<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>..org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters1<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?)
 
 'diagnostic' @ [82:43] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionSignatureFix.Companion.extractFixData[ValueParameterDescriptorImpl]
 
@@ -132,8 +126,8 @@ Inferred types:
 
 'a' @ [82:113] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<out (PsiElement..PsiElement?), out (CallableDescriptor..CallableDescriptor?)>.a: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <E : (PsiElement..PsiElement?)> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
+    <A : (Any..Any?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'data' @ [86:38] ==> value-parameter data: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionSignatureFix.Companion.createFix[ValueParameterDescriptorImpl]
 
@@ -299,7 +293,7 @@ Inferred types:
 
 'originalDescriptor' @ [137:36] ==> value-parameter originalDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionSignatureFix.Companion.runRemoveParameter.<no name provided>.configure[ValueParameterDescriptorImpl]
 
-'modify' @ [137:55] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'modify' @ [137:55] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'if (descriptor.receiver != null) parameterDescriptor.index + 1 else parameterDescriptor.index' @ [138:45] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Int, elseBranch: Int): Int[SimpleFunctionDescriptorImpl]
 Inferred types:

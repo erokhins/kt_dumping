@@ -1,11 +1,8 @@
-'UserDataProperty' @ [45:39] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> KtFile
-    <T : Any> -> Boolean
+'getValue' @ [45:39] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [45:60] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'CompletionContributor' @ [47:37] ==> public constructor CompletionContributor() defined in com.intellij.codeInsight.completion.CompletionContributor[JavaClassConstructorDescriptor]
 
@@ -213,8 +210,6 @@ Inferred types:
 
 'tokenBefore' @ [91:67] ==> val tokenBefore: PsiElement? defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionContributor.beforeCompletion[LocalVariableDescriptor]
 
-'PackageDirectiveCompletion' @ [91:83] ==> public object PackageDirectiveCompletion defined in org.jetbrains.kotlin.idea.completion in file PackageDirectiveCompletion.kt[FakeCallableDescriptorForObject]
-
 'DUMMY_IDENTIFIER' @ [91:110] ==> public final val DUMMY_IDENTIFIER: String defined in org.jetbrains.kotlin.idea.completion.PackageDirectiveCompletion[PropertyDescriptorImpl]
 
 'isInClassHeader' @ [93:13] ==> private final fun isInClassHeader(tokenBefore: PsiElement?): Boolean defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionContributor[SimpleFunctionDescriptorImpl]
@@ -339,8 +334,6 @@ Inferred types:
 
 'addOffset' @ [124:39] ==> public open fun addOffset(p0: (OffsetKey..OffsetKey?), p1: Int): Unit defined in com.intellij.codeInsight.completion.OffsetMap[JavaMethodDescriptor]
 
-'SmartCompletion' @ [124:49] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion[FakeCallableDescriptorForObject]
-
 'OLD_ARGUMENTS_REPLACEMENT_OFFSET' @ [124:65] ==> public final val OLD_ARGUMENTS_REPLACEMENT_OFFSET: OffsetKey defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.Companion[PropertyDescriptorImpl]
 
 'expression' @ [124:99] ==> var expression: KtExpression defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionContributor.beforeCompletion[LocalVariableDescriptor]
@@ -360,8 +353,6 @@ Inferred types:
 'offsetMap' @ [128:33] ==> public final val CompletionInitializationContext.offsetMap: OffsetMap[MyPropertyDescriptor]
 
 'addOffset' @ [128:43] ==> public open fun addOffset(p0: (OffsetKey..OffsetKey?), p1: Int): Unit defined in com.intellij.codeInsight.completion.OffsetMap[JavaMethodDescriptor]
-
-'SmartCompletion' @ [128:53] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion[FakeCallableDescriptorForObject]
 
 'MULTIPLE_ARGUMENTS_REPLACEMENT_OFFSET' @ [128:69] ==> public final val MULTIPLE_ARGUMENTS_REPLACEMENT_OFFSET: OffsetKey defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.Companion[PropertyDescriptorImpl]
 
@@ -396,8 +387,6 @@ Inferred types:
 'offsetMap' @ [137:29] ==> public final val CompletionInitializationContext.offsetMap: OffsetMap[MyPropertyDescriptor]
 
 'addOffset' @ [137:39] ==> public open fun addOffset(p0: (OffsetKey..OffsetKey?), p1: Int): Unit defined in com.intellij.codeInsight.completion.OffsetMap[JavaMethodDescriptor]
-
-'ParameterNameAndTypeCompletion' @ [137:49] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion[FakeCallableDescriptorForObject]
 
 'REPLACEMENT_OFFSET' @ [137:80] ==> public final val REPLACEMENT_OFFSET: (OffsetKey..OffsetKey?) defined in org.jetbrains.kotlin.idea.completion.ParameterNameAndTypeCompletion.Companion[PropertyDescriptorImpl]
 
@@ -848,7 +837,7 @@ Inferred types:
 
 'restartCompletionWhenNothingMatches' @ [288:16] ==> public abstract fun restartCompletionWhenNothingMatches(): Unit defined in com.intellij.codeInsight.completion.CompletionResultSet[JavaMethodDescriptor]
 
-'CompletionSessionConfiguration' @ [290:29] ==> public fun CompletionSessionConfiguration(parameters: CompletionParameters): CompletionSessionConfiguration defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'CompletionSessionConfiguration' @ [290:29] ==> public fun CompletionSessionConfiguration(parameters: CompletionParameters): CompletionSessionConfiguration defined in org.jetbrains.kotlin.idea.completion in file CompletionSession.kt[SimpleFunctionDescriptorImpl]
 
 'parameters' @ [290:60] ==> value-parameter parameters: CompletionParameters defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionContributor.doComplete[ValueParameterDescriptorImpl]
 

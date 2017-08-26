@@ -95,8 +95,6 @@ Inferred types:
 
 'upperBound' @ [43:47] ==> val upperBound: UnwrappedType? defined in org.jetbrains.kotlin.resolve.calls.inference.components.NewTypeSubstitutor.substitute[LocalVariableDescriptor]
 
-'KotlinTypeFactory' @ [48:25] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
-
 'flexibleType' @ [48:43] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
 'lowerBound' @ [48:56] ==> val lowerBound: UnwrappedType? defined in org.jetbrains.kotlin.resolve.calls.inference.components.NewTypeSubstitutor.substitute[LocalVariableDescriptor]
@@ -209,11 +207,11 @@ Inferred types:
 
 'java' @ [79:43] ==> public val <T> KClass<out SimpleType>.java: Class<out SimpleType> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> SimpleType
+    <T> -> Captured(out SimpleType)
 
 'canonicalName' @ [79:48] ==> public final val <T : (Any..Any?)> Class<out SimpleType>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SimpleType
+    <T : (Any..Any?)> -> Captured(out SimpleType)
 
 'type' @ [79:83] ==> value-parameter type: SimpleType defined in org.jetbrains.kotlin.resolve.calls.inference.components.NewTypeSubstitutor.substitute[ValueParameterDescriptorImpl]
 
@@ -320,14 +318,14 @@ Inferred types:
 
 'newTypes' @ [103:35] ==> val newTypes: List<UnwrappedType> defined in org.jetbrains.kotlin.resolve.calls.inference.components.NewTypeSubstitutor.substitute[LocalVariableDescriptor]
 
-'let' @ [103:45] ==> @InlineOnly public inline fun <T, R> UnwrappedType.let(block: (UnwrappedType) -> UnwrappedType): UnwrappedType defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [103:45] ==> @InlineOnly public inline fun <T, R> UnwrappedType.let(block: (UnwrappedType) -> UnwrappedType?): UnwrappedType? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> UnwrappedType
-    <R> -> UnwrappedType
+    <R> -> UnwrappedType?
 
-'if (type.isMarkedNullable) it.makeNullableAsSpecified(true) else it' @ [103:51] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: UnwrappedType, elseBranch: UnwrappedType): UnwrappedType[SimpleFunctionDescriptorImpl]
+'if (type.isMarkedNullable) it.makeNullableAsSpecified(true) else it' @ [103:51] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: UnwrappedType?, elseBranch: UnwrappedType?): UnwrappedType?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> UnwrappedType
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> UnwrappedType?
 
 'type' @ [103:55] ==> value-parameter type: SimpleType defined in org.jetbrains.kotlin.resolve.calls.inference.components.NewTypeSubstitutor.substitute[ValueParameterDescriptorImpl]
 

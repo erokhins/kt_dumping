@@ -22,7 +22,7 @@ Inferred types:
 
 'findElementOfClassAtOffsetWithStopSet' @ [38:35] ==> @SafeVarargs @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffsetWithStopSet(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<(KtSecondaryConstructor..KtSecondaryConstructor?)>, p3: Boolean, @NotNull vararg p4: (Class<out (PsiElement..PsiElement?)>..Class<out (PsiElement..PsiElement?)>?)): KtSecondaryConstructor? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtSecondaryConstructor
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtSecondaryConstructor..org.jetbrains.kotlin.psi.KtSecondaryConstructor?)
 
 'file' @ [39:17] ==> val file: PsiFile defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameOnSecondaryConstructorHandler.isAvailableOnDataContext[LocalVariableDescriptor]
 

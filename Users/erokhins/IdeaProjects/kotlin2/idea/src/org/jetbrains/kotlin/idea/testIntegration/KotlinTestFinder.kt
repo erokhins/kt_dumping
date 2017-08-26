@@ -131,18 +131,18 @@ Inferred types:
 
 'files' @ [73:31] ==> public final val files: Collection<KtFile> defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade[DeserializedPropertyDescriptor]
 
-'mapTo' @ [73:37] ==> public inline fun <T, R, C : MutableCollection<in Pair<KtFile, Int>>> Iterable<KtFile>.mapTo(destination: ArrayList<Pair<out PsiNamedElement, Int>>, transform: (KtFile) -> Pair<KtFile, Int>): ArrayList<Pair<out PsiNamedElement, Int>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapTo' @ [73:37] ==> public inline fun <T, R, C : MutableCollection<in Pair<(KtFile..KtFile?), (Int..Int?)>>> Iterable<KtFile>.mapTo(destination: ArrayList<Pair<out PsiNamedElement, Int>>, transform: (KtFile) -> Pair<(KtFile..KtFile?), (Int..Int?)>): ArrayList<Pair<out PsiNamedElement, Int>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtFile
-    <R> -> Pair<KtFile, Int>
+    <R> -> Pair<(org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?), (kotlin.Int..kotlin.Int?)>
     <C : MutableCollection<in R>> -> ArrayList<Pair<out PsiNamedElement, Int>>
 
 'classesWithWeights' @ [73:43] ==> val classesWithWeights: ArrayList<Pair<out PsiNamedElement, Int>> defined in org.jetbrains.kotlin.idea.testIntegration.KotlinTestFinder.findClassesForTest[LocalVariableDescriptor]
 
 'create' @ [73:70] ==> @NotNull public open fun <A : (Any..Any?), B : (Any..Any?)> create(p0: (KtFile..KtFile?), p1: (Int..Int?)): Pair<(KtFile..KtFile?), (Int..Int?)> defined in com.intellij.openapi.util.Pair[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> KtFile
-    <B : (Any..Any?)> -> Int
+    <A : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
+    <B : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'it' @ [73:77] ==> value-parameter it: KtFile defined in org.jetbrains.kotlin.idea.testIntegration.KotlinTestFinder.findClassesForTest.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -162,8 +162,8 @@ Inferred types:
 
 'create' @ [76:49] ==> @NotNull public open fun <A : (Any..Any?), B : (Any..Any?)> create(p0: (PsiClass..PsiClass?), p1: (Int..Int?)): Pair<(PsiClass..PsiClass?), (Int..Int?)> defined in com.intellij.openapi.util.Pair[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> PsiClass
-    <B : (Any..Any?)> -> Int
+    <A : (Any..Any?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
+    <B : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'eachClass' @ [76:56] ==> val eachClass: (PsiClass..PsiClass?) defined in org.jetbrains.kotlin.idea.testIntegration.KotlinTestFinder.findClassesForTest[LocalVariableDescriptor]
 
@@ -189,7 +189,7 @@ Inferred types:
 
 'CollectProcessor' @ [88:42] ==> public constructor CollectProcessor<T : (Any..Any?)>(@NotNull p0: (MutableCollection<(Pair<out PsiNamedElement, Int>..Pair<out PsiNamedElement, Int>?)>..Collection<(Pair<out PsiNamedElement, Int>..Pair<out PsiNamedElement, Int>?)>)) defined in com.intellij.util.CommonProcessors.CollectProcessor[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Pair<out PsiNamedElement, Int>
+    <T : (Any..Any?)> -> (com.intellij.openapi.util.Pair<out com.intellij.psi.PsiNamedElement, kotlin.Int>..com.intellij.openapi.util.Pair<out com.intellij.psi.PsiNamedElement, kotlin.Int>?)
 
 'classesWithProximities' @ [88:59] ==> val classesWithProximities: ArrayList<Pair<out PsiNamedElement, Int>> defined in org.jetbrains.kotlin.idea.testIntegration.KotlinTestFinder.findTestsForClass[LocalVariableDescriptor]
 
@@ -271,14 +271,14 @@ Inferred types:
 
 'candidateClass' @ [104:51] ==> val candidateClass: (PsiClass..PsiClass?) defined in org.jetbrains.kotlin.idea.testIntegration.KotlinTestFinder.findTestsForClass[LocalVariableDescriptor]
 
-'processor' @ [105:17] ==> val processor: CommonProcessors.CollectProcessor<Pair<out PsiNamedElement, Int>> defined in org.jetbrains.kotlin.idea.testIntegration.KotlinTestFinder.findTestsForClass[LocalVariableDescriptor]
+'processor' @ [105:17] ==> val processor: CommonProcessors.CollectProcessor<(Pair<out PsiNamedElement, Int>..Pair<out PsiNamedElement, Int>?)> defined in org.jetbrains.kotlin.idea.testIntegration.KotlinTestFinder.findTestsForClass[LocalVariableDescriptor]
 
 'process' @ [105:27] ==> public open fun process(p0: (Pair<out PsiNamedElement, Int>..Pair<out PsiNamedElement, Int>?)): Boolean defined in com.intellij.util.CommonProcessors.CollectProcessor[JavaMethodDescriptor]
 
 'create' @ [105:40] ==> @NotNull public open fun <A : (Any..Any?), B : (Any..Any?)> create(p0: (PsiClass..PsiClass?), p1: (Int..Int?)): Pair<(PsiClass..PsiClass?), (Int..Int?)> defined in com.intellij.openapi.util.Pair[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> PsiClass
-    <B : (Any..Any?)> -> Int
+    <A : (Any..Any?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
+    <B : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'candidateClass' @ [105:47] ==> val candidateClass: (PsiClass..PsiClass?) defined in org.jetbrains.kotlin.idea.testIntegration.KotlinTestFinder.findTestsForClass[LocalVariableDescriptor]
 

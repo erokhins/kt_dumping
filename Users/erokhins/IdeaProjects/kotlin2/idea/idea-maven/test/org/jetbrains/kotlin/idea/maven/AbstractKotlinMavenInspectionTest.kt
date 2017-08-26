@@ -116,7 +116,7 @@ Inferred types:
 
 'trim' @ [66:157] ==> @InlineOnly public inline fun String.trim(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'runInspection' @ [67:22] ==> public fun runInspection(inspectionClass: Class<*>, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections[SimpleFunctionDescriptorImpl]
+'runInspection' @ [67:22] ==> public fun runInspection(inspectionClass: Class<*>, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections in file InspectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'inspectionClass' @ [67:36] ==> val inspectionClass: (Class<*>..Class<*>?) defined in org.jetbrains.kotlin.idea.maven.AbstractKotlinMavenInspectionTest.doTest[LocalVariableDescriptor]
 
@@ -494,8 +494,6 @@ Inferred types:
 'contentsToByteArray' @ [138:34] ==> @NotNull public abstract fun contentsToByteArray(): ByteArray defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
 
 'toString' @ [138:56] ==> @InlineOnly public inline fun ByteArray.toString(charset: Charset): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
-
-'Charsets' @ [138:65] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
 
 'UTF_8' @ [138:74] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 

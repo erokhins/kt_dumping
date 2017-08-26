@@ -118,7 +118,7 @@ Inferred types:
 
 'resultingDescriptor' @ [74:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (calleeDescriptor.isDynamic()) {
             highlightName(callee, DYNAMIC_FUNCTION_CALL)

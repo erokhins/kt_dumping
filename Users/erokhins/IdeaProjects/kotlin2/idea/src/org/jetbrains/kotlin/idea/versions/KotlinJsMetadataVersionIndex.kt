@@ -13,9 +13,9 @@ Inferred types:
 
 'it' @ [29:72] ==> value-parameter it: IntArray defined in org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'INDEXER' @ [31:33] ==> private final val INDEXER: DataIndexer<JsMetadataVersion, Void, FileContent> defined in org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex[PropertyDescriptorImpl]
+'INDEXER' @ [31:33] ==> private final val INDEXER: DataIndexer<(JsMetadataVersion..JsMetadataVersion?), Void?, FileContent> defined in org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex[PropertyDescriptorImpl]
 
-'InputFilter' @ [33:52] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SimpleFunctionDescriptorImpl]
+'InputFilter' @ [33:52] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SamConstructorDescriptorImpl]
 
 'JavaScript' @ [33:74] ==> public object JavaScript defined in org.jetbrains.kotlin.js[FakeCallableDescriptorForObject]
 
@@ -27,10 +27,10 @@ Inferred types:
 
 'VERSION' @ [35:33] ==> private final val VERSION: Int defined in org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex[PropertyDescriptorImpl]
 
-'DataIndexer' @ [39:27] ==> public fun <Key : (Any..Any?), Value : (Any..Any?), Data : (Any..Any?)> DataIndexer(function: (FileContent) -> (MutableMap<(JsMetadataVersion..JsMetadataVersion?), (Void..Void?)>..Map<(JsMetadataVersion..JsMetadataVersion?), (Void..Void?)>)): DataIndexer<JsMetadataVersion, Void, FileContent> defined in com.intellij.util.indexing[SimpleFunctionDescriptorImpl]
+'DataIndexer' @ [39:27] ==> public fun <Key : (Any..Any?), Value : (Any..Any?), Data : (Any..Any?)> DataIndexer(function: (FileContent) -> (MutableMap<(JsMetadataVersion..JsMetadataVersion?), Void?>..Map<(JsMetadataVersion..JsMetadataVersion?), Void?>)): DataIndexer<(JsMetadataVersion..JsMetadataVersion?), Void?, FileContent> defined in com.intellij.util.indexing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <Key : (Any..Any?)> -> JsMetadataVersion
-    <Value : (Any..Any?)> -> Void
+    <Key : (Any..Any?)> -> (org.jetbrains.kotlin.utils.JsMetadataVersion..org.jetbrains.kotlin.utils.JsMetadataVersion?)
+    <Value : (Any..Any?)> -> Void?
     <Data : (Any..Any?)> -> FileContent
 
 'HashMap' @ [40:22] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
@@ -69,8 +69,6 @@ Inferred types:
 'it' @ [46:57] ==> value-parameter it: JsMetadataVersion defined in org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex.INDEXER.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'isCompatible' @ [46:60] ==> public open fun isCompatible(): Boolean defined in org.jetbrains.kotlin.utils.JsMetadataVersion[DeserializedSimpleFunctionDescriptor]
-
-'JsMetadataVersion' @ [48:34] ==> public companion object defined in org.jetbrains.kotlin.utils.JsMetadataVersion[FakeCallableDescriptorForObject]
 
 'INVALID_VERSION' @ [48:52] ==> @field:JvmField public final val INVALID_VERSION: JsMetadataVersion defined in org.jetbrains.kotlin.utils.JsMetadataVersion.Companion[DeserializedPropertyDescriptor]
 

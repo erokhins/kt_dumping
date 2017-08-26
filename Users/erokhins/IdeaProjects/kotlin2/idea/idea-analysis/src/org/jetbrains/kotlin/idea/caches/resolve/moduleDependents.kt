@@ -1,4 +1,4 @@
-'getDependents' @ [34:22] ==> private fun getDependents(module: Module): Set<Module> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'getDependents' @ [34:22] ==> private fun getDependents(module: Module): Set<Module> defined in org.jetbrains.kotlin.idea.caches.resolve in file moduleDependents.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [34:36] ==> public abstract val module: Module defined in org.jetbrains.kotlin.idea.caches.resolve.ModuleSourceInfo[PropertyDescriptorImpl]
 
@@ -11,7 +11,7 @@
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Set<ModuleSourceInfo>
 
-'isTests' @ [35:16] ==> internal fun ModuleSourceInfo.isTests(): Boolean defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'isTests' @ [35:16] ==> internal fun ModuleSourceInfo.isTests(): Boolean defined in org.jetbrains.kotlin.idea.caches.resolve in file IdeaModuleInfos.kt[SimpleFunctionDescriptorImpl]
 
 'dependents' @ [36:9] ==> val dependents: Set<Module> defined in org.jetbrains.kotlin.idea.caches.resolve.getDependentModules[LocalVariableDescriptor]
 
@@ -24,6 +24,8 @@ Inferred types:
 'HashSet' @ [36:26] ==> public constructor HashSet<E : (Any..Any?)>() defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
     <E : (Any..Any?)> -> ModuleSourceInfo
+
+'testSourceInfo' @ [36:63] ==> public fun Module.testSourceInfo(): ModuleTestSourceInfo defined in org.jetbrains.kotlin.idea.caches.resolve in file IdeaModuleInfos.kt[SimpleFunctionDescriptorImpl]
 
 'dependents' @ [39:9] ==> val dependents: Set<Module> defined in org.jetbrains.kotlin.idea.caches.resolve.getDependentModules[LocalVariableDescriptor]
 
@@ -153,7 +155,7 @@ Inferred types:
 
 'getCachedValue' @ [75:52] ==> public final fun <T : (Any..Any?), D : (UserDataHolder..UserDataHolder?)> getCachedValue(@NotNull p0: Project, @NotNull p1: () -> CachedValueProvider.Result<(ModuleIndex..ModuleIndex?)>?): (ModuleIndex..ModuleIndex?) defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleIndex
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.ModuleIndex..org.jetbrains.kotlin.idea.caches.resolve.ModuleIndex?)
     <D : (UserDataHolder..UserDataHolder?)> -> Project
 
 'project' @ [75:67] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.getModuleIndex[ValueParameterDescriptorImpl]

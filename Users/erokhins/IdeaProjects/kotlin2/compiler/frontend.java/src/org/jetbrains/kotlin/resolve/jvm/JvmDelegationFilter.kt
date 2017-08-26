@@ -4,8 +4,6 @@
 
 'supportsFeature' @ [32:38] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [32:54] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'NoDelegationToJavaDefaultInterfaceMembers' @ [32:70] ==> enum entry NoDelegationToJavaDefaultInterfaceMembers defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'unwrapFakeOverride' @ [35:42] ==> @NotNull public open fun <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> unwrapFakeOverride(@NotNull p0: CallableMemberDescriptor): CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
@@ -32,15 +30,11 @@ Inferred types:
 
 'modality' @ [40:75] ==> public final val JavaMethodDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [40:87] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [40:96] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'interfaceMember' @ [44:16] ==> value-parameter interfaceMember: CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.jvm.JvmDelegationFilter.isBuiltInMemberMappedToJavaDefault[ValueParameterDescriptorImpl]
 
 'modality' @ [44:32] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [44:44] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [44:53] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

@@ -14,8 +14,6 @@ Inferred types:
 
 'contextDescriptor' @ [57:100] ==> value-parameter contextDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.lower.StubCodegenContext.<init>[ValueParameterDescriptorImpl]
 
-'OwnerKind' @ [58:9] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
 'IMPLEMENTATION' @ [58:19] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'parentContext' @ [58:35] ==> value-parameter parentContext: CodegenContext<*>? defined in org.jetbrains.kotlin.backend.jvm.lower.StubCodegenContext.<init>[ValueParameterDescriptorImpl]
@@ -33,8 +31,6 @@ Inferred types:
 'typeMapper' @ [68:32] ==> value-parameter typeMapper: KotlinTypeMapper defined in org.jetbrains.kotlin.backend.jvm.lower.ClassStubContext.<init>[ValueParameterDescriptorImpl]
 
 'contextDescriptor' @ [68:44] ==> value-parameter contextDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.lower.ClassStubContext.<init>[ValueParameterDescriptorImpl]
-
-'OwnerKind' @ [68:63] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'IMPLEMENTATION' @ [68:73] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
@@ -105,9 +101,9 @@ Inferred types:
 
 'newContext' @ [90:9] ==> val newContext: CodegenContext<*> defined in org.jetbrains.kotlin.backend.jvm.lower.ContextAnnotator.lowerBefore[LocalVariableDescriptor]
 
-'apply' @ [90:20] ==> @InlineOnly public inline fun <T> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.apply(block: CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.() -> Unit): CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [90:20] ==> @InlineOnly public inline fun <T> CodegenContext<*>.apply(block: CodegenContext<*>.() -> Unit): CodegenContext<*> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CodegenContext<out (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>
+    <T> -> CodegenContext<*>
 
 'context2Codegen' @ [91:13] ==> public final val context2Codegen: HashMap<IrClassContext, CodegenContext<*>> /* = HashMap<IrClassContext, CodegenContext<*>> */ defined in org.jetbrains.kotlin.backend.jvm.lower.ContextAnnotator[PropertyDescriptorImpl]
 
@@ -191,7 +187,7 @@ Inferred types:
 
 'accessors' @ [126:40] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.accessors: Collection<(AccessorForCallableDescriptor<*>..AccessorForCallableDescriptor<*>?)>[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 
 'accessors' @ [129:25] ==> val accessors: Collection<(AccessorForCallableDescriptor<*>..AccessorForCallableDescriptor<*>?)> defined in org.jetbrains.kotlin.backend.jvm.lower.SyntheticAccessorLowering.lower[LocalVariableDescriptor]
 
@@ -296,7 +292,7 @@ Inferred types:
 
 'calleeDescriptor' @ [142:45] ==> public final val <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> AccessorForCallableDescriptor<out (CallableMemberDescriptor..CallableMemberDescriptor?)>.calleeDescriptor: (CallableMemberDescriptor..CallableMemberDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
+    <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> Captured(*)
 
 'IrCallImpl' @ [143:30] ==> @Deprecated public constructor IrCallImpl(startOffset: Int, endOffset: Int, calleeDescriptor: FunctionDescriptor, typeArguments: Map<TypeParameterDescriptor, KotlinType>? = ..., origin: IrStatementOrigin? = ..., superQualifierDescriptor: ClassDescriptor? = ...) defined in org.jetbrains.kotlin.ir.expressions.impl.IrCallImpl[DeserializedClassConstructorDescriptor]
 
@@ -423,7 +419,7 @@ Inferred types:
 
 'expression' @ [163:17] ==> value-parameter expression: IrMemberAccessExpression defined in org.jetbrains.kotlin.backend.jvm.lower.SyntheticAccessorLowering.visitMemberAccess[ValueParameterDescriptorImpl]
 
-'receiverAndArgs' @ [163:28] ==> public fun IrMemberAccessExpression.receiverAndArgs(): List<IrExpression> defined in org.jetbrains.kotlin.backend.jvm.intrinsics[SimpleFunctionDescriptorImpl]
+'receiverAndArgs' @ [163:28] ==> public fun IrMemberAccessExpression.receiverAndArgs(): List<IrExpression> defined in org.jetbrains.kotlin.backend.jvm.intrinsics in file IrIntrinsicFunction.kt[SimpleFunctionDescriptorImpl]
 
 'forEachIndexed' @ [163:46] ==> public inline fun <T> Iterable<IrExpression>.forEachIndexed(action: (index: Int, IrExpression) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

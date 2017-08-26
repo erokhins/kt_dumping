@@ -309,16 +309,16 @@ Inferred types:
 
 'next' @ [134:26] ==> public abstract operator fun next(): String defined in kotlin.collections.Iterator[DeserializedSimpleFunctionDescriptor]
 
-'component1' @ [135:14] ==> public final operator fun component1(): PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>? defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
+'component1' @ [135:14] ==> public final operator fun component1(): PropMapper<*, *, *>? defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
 'component2' @ [135:26] ==> public final operator fun component2(): String? defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
 'propMappers' @ [135:44] ==> value-parameter propMappers: List<PropMapper<*, *, *>> defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[ValueParameterDescriptorImpl]
 
-'findWithTransform' @ [135:56] ==> public inline fun <T, R : Any> Iterable<PropMapper<*, *, *>>.findWithTransform(mappingPredicate: (PropMapper<*, *, *>) -> Pair<Boolean, Pair<PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>, String?>?>): Pair<PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>, String?>? defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'findWithTransform' @ [135:56] ==> public inline fun <T, R : Any> Iterable<PropMapper<*, *, *>>.findWithTransform(mappingPredicate: (PropMapper<*, *, *>) -> Pair<Boolean, Pair<PropMapper<*, *, *>, String?>?>): Pair<PropMapper<*, *, *>, String?>? defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> PropMapper<*, *, *>
-    <R : Any> -> Pair<PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>, String?>
+    <R : Any> -> Pair<PropMapper<*, *, *>, String?>
 
 'mapper' @ [136:13] ==> value-parameter mapper: PropMapper<*, *, *> defined in org.jetbrains.kotlin.daemon.common.filterExtractProps.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -336,21 +336,21 @@ Inferred types:
 
 'it' @ [137:62] ==> value-parameter it: String defined in org.jetbrains.kotlin.daemon.common.filterExtractProps.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [138:22] ==> @InlineOnly public inline fun <T, R> String?.let(block: (String?) -> Pair<Boolean, Pair<PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>, String?>>): Pair<Boolean, Pair<PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>, String?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [138:22] ==> @InlineOnly public inline fun <T, R> String?.let(block: (String?) -> Pair<Boolean, Pair<PropMapper<*, *, *>, String?>>): Pair<Boolean, Pair<PropMapper<*, *, *>, String?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String?
-    <R> -> Pair<Boolean, Pair<PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>, String?>>
+    <R> -> Pair<Boolean, Pair<PropMapper<*, *, *>, String?>>
 
-'Pair' @ [138:28] ==> public constructor Pair<out A, out B>(first: Boolean, second: Pair<PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>, String?>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [138:28] ==> public constructor Pair<out A, out B>(first: Boolean, second: Pair<PropMapper<*, *, *>, String?>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> Boolean
-    <out B> -> Pair<PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>, String?>
+    <out B> -> Pair<PropMapper<*, *, *>, String?>
 
 'it' @ [138:33] ==> value-parameter it: String? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'Pair' @ [138:45] ==> public constructor Pair<out A, out B>(first: PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>, second: String?) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [138:45] ==> public constructor Pair<out A, out B>(first: PropMapper<*, *, *>, second: String?) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out A> -> PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>
+    <out A> -> PropMapper<*, *, *>
     <out B> -> String?
 
 'mapper' @ [138:50] ==> value-parameter mapper: PropMapper<*, *, *> defined in org.jetbrains.kotlin.daemon.common.filterExtractProps.<anonymous>[ValueParameterDescriptorImpl]
@@ -393,7 +393,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
 
-'propMapper' @ [142:13] ==> val propMapper: PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
+'propMapper' @ [142:13] ==> val propMapper: PropMapper<*, *, *>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
 'prefix' @ [143:36] ==> value-parameter prefix: String defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[ValueParameterDescriptorImpl]
 
@@ -426,7 +426,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Unit
 
-'propMapper' @ [145:21] ==> val propMapper: PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
+'propMapper' @ [145:21] ==> val propMapper: PropMapper<*, *, *>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
 'param' @ [146:29] ==> val param: String defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
@@ -442,7 +442,7 @@ Inferred types:
 
 'matchingOption' @ [147:111] ==> val matchingOption: String? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
-'propMapper' @ [148:25] ==> val propMapper: PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
+'propMapper' @ [148:25] ==> val propMapper: PropMapper<*, *, *>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
 'apply' @ [148:36] ==> public open fun apply(s: String): Unit defined in org.jetbrains.kotlin.daemon.common.PropMapper[SimpleFunctionDescriptorImpl]
 
@@ -467,7 +467,7 @@ Inferred types:
 
 'optionLength' @ [151:35] ==> val optionLength: Int defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
-'propMapper' @ [152:33] ==> val propMapper: PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
+'propMapper' @ [152:33] ==> val propMapper: PropMapper<*, *, *>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
 'mergeDelimiter' @ [152:44] ==> public final val mergeDelimiter: String? defined in org.jetbrains.kotlin.daemon.common.PropMapper[PropertyDescriptorImpl]
 
@@ -479,7 +479,7 @@ Inferred types:
 
 'matchingOption' @ [153:115] ==> val matchingOption: String? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
-'propMapper' @ [154:29] ==> val propMapper: PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
+'propMapper' @ [154:29] ==> val propMapper: PropMapper<*, *, *>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
 'apply' @ [154:40] ==> public open fun apply(s: String): Unit defined in org.jetbrains.kotlin.daemon.common.PropMapper[SimpleFunctionDescriptorImpl]
 
@@ -489,7 +489,7 @@ Inferred types:
 
 'optionLength' @ [154:62] ==> val optionLength: Int defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
-'propMapper' @ [157:29] ==> val propMapper: PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
+'propMapper' @ [157:29] ==> val propMapper: PropMapper<*, *, *>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
 'apply' @ [157:40] ==> public open fun apply(s: String): Unit defined in org.jetbrains.kotlin.daemon.common.PropMapper[SimpleFunctionDescriptorImpl]
 
@@ -511,7 +511,7 @@ Inferred types:
 
 'matchingOption' @ [160:120] ==> val matchingOption: String? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
-'propMapper' @ [161:25] ==> val propMapper: PropMapper<out Any?, out Any?, KMutableProperty1<out Any?, out Any?>>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
+'propMapper' @ [161:25] ==> val propMapper: PropMapper<*, *, *>? defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[LocalVariableDescriptor]
 
 'apply' @ [161:36] ==> public open fun apply(s: String): Unit defined in org.jetbrains.kotlin.daemon.common.PropMapper[SimpleFunctionDescriptorImpl]
 
@@ -547,7 +547,7 @@ Inferred types:
 
 'trim' @ [174:27] ==> public fun String.trim(vararg chars: Char): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'filterExtractProps' @ [182:9] ==> public fun Iterable<String>.filterExtractProps(propMappers: List<PropMapper<*, *, *>>, prefix: String, restParser: RestPropMapper<*, *>? = ...): Iterable<String> defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'filterExtractProps' @ [182:9] ==> public fun Iterable<String>.filterExtractProps(propMappers: List<PropMapper<*, *, *>>, prefix: String, restParser: RestPropMapper<*, *>? = ...): Iterable<String> defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'groups' @ [182:28] ==> value-parameter vararg groups: OptionsGroup defined in org.jetbrains.kotlin.daemon.common.filterExtractProps[ValueParameterDescriptorImpl]
 
@@ -566,9 +566,9 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'listOf' @ [193:17] ==> public fun <T> listOf(vararg elements: PropMapper<out Any?, out Any, KMutableProperty1<out Any?, out Any>>): List<PropMapper<out Any?, out Any, KMutableProperty1<out Any?, out Any>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [193:17] ==> public fun <T> listOf(vararg elements: PropMapper<out Any?, out Any, *>): List<PropMapper<out Any?, out Any, *>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PropMapper<out Any?, out Any, KMutableProperty1<out Any?, out Any>>
+    <T> -> PropMapper<out Any?, out Any, *>
 
 'StringPropMapper' @ [193:24] ==> public constructor StringPropMapper<C, out P : KMutableProperty1<DaemonJVMOptions, String>>(dest: DaemonJVMOptions, prop: KMutableProperty1<DaemonJVMOptions, String>, names: List<String> = ..., fromString: (String) -> String = ..., toString: (String) -> String? = ..., skipIf: (String) -> Boolean = ..., mergeDelimiter: String? = ...) defined in org.jetbrains.kotlin.daemon.common.StringPropMapper[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -578,6 +578,8 @@ Inferred types:
 'this' @ [193:41] ==> <this> defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[LazyClassReceiverParameterDescriptor]
 
 'DaemonJVMOptions' @ [193:47] ==> public constructor DaemonJVMOptions(maxMemory: String = ..., maxPermSize: String = ..., reservedCodeCacheSize: String = ..., jvmParams: MutableCollection<String> = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[ClassConstructorDescriptorImpl]
+
+'maxMemory' @ [193:65] ==> public final var maxMemory: String defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[PropertyDescriptorImpl]
 
 'listOf' @ [193:76] ==> public fun <T> listOf(element: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -592,6 +594,8 @@ Inferred types:
 
 'DaemonJVMOptions' @ [194:47] ==> public constructor DaemonJVMOptions(maxMemory: String = ..., maxPermSize: String = ..., reservedCodeCacheSize: String = ..., jvmParams: MutableCollection<String> = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[ClassConstructorDescriptorImpl]
 
+'maxPermSize' @ [194:65] ==> public final var maxPermSize: String defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[PropertyDescriptorImpl]
+
 'listOf' @ [194:78] ==> public fun <T> listOf(element: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -604,6 +608,8 @@ Inferred types:
 'this' @ [195:41] ==> <this> defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[LazyClassReceiverParameterDescriptor]
 
 'DaemonJVMOptions' @ [195:47] ==> public constructor DaemonJVMOptions(maxMemory: String = ..., maxPermSize: String = ..., reservedCodeCacheSize: String = ..., jvmParams: MutableCollection<String> = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[ClassConstructorDescriptorImpl]
+
+'reservedCodeCacheSize' @ [195:65] ==> public final var reservedCodeCacheSize: String defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[PropertyDescriptorImpl]
 
 'listOf' @ [195:88] ==> public fun <T> listOf(element: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -620,6 +626,8 @@ Inferred types:
 
 'DaemonJVMOptions' @ [199:38] ==> public constructor DaemonJVMOptions(maxMemory: String = ..., maxPermSize: String = ..., reservedCodeCacheSize: String = ..., jvmParams: MutableCollection<String> = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[ClassConstructorDescriptorImpl]
 
+'jvmParams' @ [199:56] ==> public final var jvmParams: MutableCollection<String> defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[PropertyDescriptorImpl]
+
 'COMPILE_DAEMON_DEFAULT_RUN_DIR_PATH' @ [204:36] ==> public val COMPILE_DAEMON_DEFAULT_RUN_DIR_PATH: String defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[PropertyDescriptorImpl]
 
 'COMPILE_DAEMON_MEMORY_THRESHOLD_INFINITE' @ [205:49] ==> public val COMPILE_DAEMON_MEMORY_THRESHOLD_INFINITE: Long defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[PropertyDescriptorImpl]
@@ -632,9 +640,9 @@ Inferred types:
 
 'COMPILE_DAEMON_FORCE_SHUTDOWN_DEFAULT_TIMEOUT_MS' @ [209:54] ==> public val COMPILE_DAEMON_FORCE_SHUTDOWN_DEFAULT_TIMEOUT_MS: Long defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[PropertyDescriptorImpl]
 
-'listOf' @ [215:17] ==> public fun <T> listOf(vararg elements: PropMapper<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}, KMutableProperty1<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}>>): List<PropMapper<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}, KMutableProperty1<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [215:17] ==> public fun <T> listOf(vararg elements: PropMapper<DaemonOptions, out Any, *>): List<PropMapper<DaemonOptions, out Any, *>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PropMapper<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}, KMutableProperty1<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}>>
+    <T> -> PropMapper<DaemonOptions, out Any, *>
 
 'PropMapper' @ [215:24] ==> public constructor PropMapper<C, V, out P : KMutableProperty1<DaemonOptions, String>>(dest: DaemonOptions, prop: KMutableProperty1<DaemonOptions, String>, names: List<String> = ..., fromString: (String) -> String, toString: (String) -> String? = ..., skipIf: (String) -> Boolean = ..., mergeDelimiter: String? = ...) defined in org.jetbrains.kotlin.daemon.common.PropMapper[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -646,7 +654,11 @@ Inferred types:
 
 'DaemonOptions' @ [215:41] ==> public constructor DaemonOptions(runFilesPath: String = ..., autoshutdownMemoryThreshold: Long = ..., autoshutdownIdleSeconds: Int = ..., autoshutdownUnusedSeconds: Int = ..., shutdownDelayMilliseconds: Long = ..., forceShutdownTimeoutMilliseconds: Long = ..., verbose: Boolean = ..., reportPerf: Boolean = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[ClassConstructorDescriptorImpl]
 
+'runFilesPath' @ [215:56] ==> public final var runFilesPath: String defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[PropertyDescriptorImpl]
+
 'String' @ [215:83] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'trimQuotes' @ [215:91] ==> public fun String.trimQuotes(): String defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'PropMapper' @ [216:24] ==> public constructor PropMapper<C, V, out P : KMutableProperty1<DaemonOptions, Long>>(dest: DaemonOptions, prop: KMutableProperty1<DaemonOptions, Long>, names: List<String> = ..., fromString: (String) -> Long, toString: (Long) -> String? = ..., skipIf: (Long) -> Boolean = ..., mergeDelimiter: String? = ...) defined in org.jetbrains.kotlin.daemon.common.PropMapper[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -658,7 +670,11 @@ Inferred types:
 
 'DaemonOptions' @ [216:41] ==> public constructor DaemonOptions(runFilesPath: String = ..., autoshutdownMemoryThreshold: Long = ..., autoshutdownIdleSeconds: Int = ..., autoshutdownUnusedSeconds: Int = ..., shutdownDelayMilliseconds: Long = ..., forceShutdownTimeoutMilliseconds: Long = ..., verbose: Boolean = ..., reportPerf: Boolean = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[ClassConstructorDescriptorImpl]
 
+'autoshutdownMemoryThreshold' @ [216:56] ==> public final var autoshutdownMemoryThreshold: Long defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[PropertyDescriptorImpl]
+
 'String' @ [216:98] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'toLong' @ [216:106] ==> @InlineOnly public inline fun String.toLong(): Long defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [216:125] ==> value-parameter it: Long defined in org.jetbrains.kotlin.daemon.common.DaemonOptions.<get-mappers>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -672,7 +688,11 @@ Inferred types:
 
 'DaemonOptions' @ [218:41] ==> public constructor DaemonOptions(runFilesPath: String = ..., autoshutdownMemoryThreshold: Long = ..., autoshutdownIdleSeconds: Int = ..., autoshutdownUnusedSeconds: Int = ..., shutdownDelayMilliseconds: Long = ..., forceShutdownTimeoutMilliseconds: Long = ..., verbose: Boolean = ..., reportPerf: Boolean = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[ClassConstructorDescriptorImpl]
 
+'autoshutdownIdleSeconds' @ [218:56] ==> public final var autoshutdownIdleSeconds: Int defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[PropertyDescriptorImpl]
+
 'String' @ [218:94] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'toInt' @ [218:102] ==> @InlineOnly public inline fun String.toInt(): Int defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [218:120] ==> value-parameter it: Int defined in org.jetbrains.kotlin.daemon.common.DaemonOptions.<get-mappers>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -686,7 +706,11 @@ Inferred types:
 
 'DaemonOptions' @ [219:41] ==> public constructor DaemonOptions(runFilesPath: String = ..., autoshutdownMemoryThreshold: Long = ..., autoshutdownIdleSeconds: Int = ..., autoshutdownUnusedSeconds: Int = ..., shutdownDelayMilliseconds: Long = ..., forceShutdownTimeoutMilliseconds: Long = ..., verbose: Boolean = ..., reportPerf: Boolean = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[ClassConstructorDescriptorImpl]
 
+'autoshutdownUnusedSeconds' @ [219:56] ==> public final var autoshutdownUnusedSeconds: Int defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[PropertyDescriptorImpl]
+
 'String' @ [219:96] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'toInt' @ [219:104] ==> @InlineOnly public inline fun String.toInt(): Int defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [219:122] ==> value-parameter it: Int defined in org.jetbrains.kotlin.daemon.common.DaemonOptions.<get-mappers>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -702,7 +726,11 @@ Inferred types:
 
 'DaemonOptions' @ [220:41] ==> public constructor DaemonOptions(runFilesPath: String = ..., autoshutdownMemoryThreshold: Long = ..., autoshutdownIdleSeconds: Int = ..., autoshutdownUnusedSeconds: Int = ..., shutdownDelayMilliseconds: Long = ..., forceShutdownTimeoutMilliseconds: Long = ..., verbose: Boolean = ..., reportPerf: Boolean = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[ClassConstructorDescriptorImpl]
 
+'shutdownDelayMilliseconds' @ [220:56] ==> public final var shutdownDelayMilliseconds: Long defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[PropertyDescriptorImpl]
+
 'String' @ [220:96] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'toLong' @ [220:104] ==> @InlineOnly public inline fun String.toLong(): Long defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [220:123] ==> value-parameter it: Long defined in org.jetbrains.kotlin.daemon.common.DaemonOptions.<get-mappers>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -718,7 +746,11 @@ Inferred types:
 
 'DaemonOptions' @ [221:41] ==> public constructor DaemonOptions(runFilesPath: String = ..., autoshutdownMemoryThreshold: Long = ..., autoshutdownIdleSeconds: Int = ..., autoshutdownUnusedSeconds: Int = ..., shutdownDelayMilliseconds: Long = ..., forceShutdownTimeoutMilliseconds: Long = ..., verbose: Boolean = ..., reportPerf: Boolean = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[ClassConstructorDescriptorImpl]
 
+'forceShutdownTimeoutMilliseconds' @ [221:56] ==> public final var forceShutdownTimeoutMilliseconds: Long defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[PropertyDescriptorImpl]
+
 'String' @ [221:103] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'toLong' @ [221:111] ==> @InlineOnly public inline fun String.toLong(): Long defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [221:130] ==> value-parameter it: Long defined in org.jetbrains.kotlin.daemon.common.DaemonOptions.<get-mappers>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -733,6 +765,8 @@ Inferred types:
 
 'DaemonOptions' @ [222:45] ==> public constructor DaemonOptions(runFilesPath: String = ..., autoshutdownMemoryThreshold: Long = ..., autoshutdownIdleSeconds: Int = ..., autoshutdownUnusedSeconds: Int = ..., shutdownDelayMilliseconds: Long = ..., forceShutdownTimeoutMilliseconds: Long = ..., verbose: Boolean = ..., reportPerf: Boolean = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[ClassConstructorDescriptorImpl]
 
+'verbose' @ [222:60] ==> public final var verbose: Boolean defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[PropertyDescriptorImpl]
+
 'BoolPropMapper' @ [223:24] ==> public constructor BoolPropMapper<C, out P : KMutableProperty1<DaemonOptions, Boolean>>(dest: DaemonOptions, prop: KMutableProperty1<DaemonOptions, Boolean>, names: List<String> = ...) defined in org.jetbrains.kotlin.daemon.common.BoolPropMapper[ClassConstructorDescriptorImpl]
 Inferred types:
     <C> -> DaemonOptions
@@ -741,6 +775,8 @@ Inferred types:
 'this' @ [223:39] ==> <this> defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[LazyClassReceiverParameterDescriptor]
 
 'DaemonOptions' @ [223:45] ==> public constructor DaemonOptions(runFilesPath: String = ..., autoshutdownMemoryThreshold: Long = ..., autoshutdownIdleSeconds: Int = ..., autoshutdownUnusedSeconds: Int = ..., shutdownDelayMilliseconds: Long = ..., forceShutdownTimeoutMilliseconds: Long = ..., verbose: Boolean = ..., reportPerf: Boolean = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[ClassConstructorDescriptorImpl]
+
+'reportPerf' @ [223:60] ==> public final var reportPerf: Boolean defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[PropertyDescriptorImpl]
 
 'if (runFilesPath.isBlank()) COMPILE_DAEMON_DEFAULT_RUN_DIR_PATH else runFilesPath' @ [228:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -786,9 +822,9 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'listOf' @ [244:17] ==> public fun <T> listOf(vararg elements: PropMapper<CompilerId, out Any, KMutableProperty1<CompilerId, out Any>>): List<PropMapper<CompilerId, out Any, KMutableProperty1<CompilerId, out Any>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [244:17] ==> public fun <T> listOf(vararg elements: PropMapper<CompilerId, out Any, *>): List<PropMapper<CompilerId, out Any, *>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PropMapper<CompilerId, out Any, KMutableProperty1<CompilerId, out Any>>
+    <T> -> PropMapper<CompilerId, out Any, *>
 
 'PropMapper' @ [244:24] ==> public constructor PropMapper<C, V, out P : KMutableProperty1<CompilerId, List<String>>>(dest: CompilerId, prop: KMutableProperty1<CompilerId, List<String>>, names: List<String> = ..., fromString: (String) -> List<String>, toString: (List<String>) -> String? = ..., skipIf: (List<String>) -> Boolean = ..., mergeDelimiter: String? = ...) defined in org.jetbrains.kotlin.daemon.common.PropMapper[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -800,6 +836,8 @@ Inferred types:
 
 'CompilerId' @ [244:41] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompilerId[FakeCallableDescriptorForObject]
 
+'compilerClasspath' @ [244:53] ==> public final var compilerClasspath: List<String> defined in org.jetbrains.kotlin.daemon.common.CompilerId[PropertyDescriptorImpl]
+
 'it' @ [244:85] ==> value-parameter it: List<String> defined in org.jetbrains.kotlin.daemon.common.CompilerId.<get-mappers>.<anonymous>[ValueParameterDescriptorImpl]
 
 'joinToString' @ [244:88] ==> public fun <T> Iterable<String>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: ((String) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -810,7 +848,7 @@ Inferred types:
 
 'it' @ [244:139] ==> value-parameter it: String defined in org.jetbrains.kotlin.daemon.common.CompilerId.<get-mappers>.<anonymous>[ValueParameterDescriptorImpl]
 
-'trimQuotes' @ [244:142] ==> public fun String.trimQuotes(): String defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'trimQuotes' @ [244:142] ==> public fun String.trimQuotes(): String defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'split' @ [244:155] ==> public fun CharSequence.split(vararg delimiters: String, ignoreCase: Boolean = ..., limit: Int = ...): List<String> defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -824,6 +862,8 @@ Inferred types:
 'this' @ [245:41] ==> <this> defined in org.jetbrains.kotlin.daemon.common.CompilerId[LazyClassReceiverParameterDescriptor]
 
 'CompilerId' @ [245:47] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompilerId[FakeCallableDescriptorForObject]
+
+'compilerVersion' @ [245:59] ==> public final var compilerVersion: String defined in org.jetbrains.kotlin.daemon.common.CompilerId[PropertyDescriptorImpl]
 
 'JvmStatic' @ [248:9] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
@@ -856,7 +896,7 @@ Inferred types:
 
 'COMPILE_DAEMON_ENABLED_PROPERTY' @ [258:53] ==> public val COMPILE_DAEMON_ENABLED_PROPERTY: String defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[PropertyDescriptorImpl]
 
-'configureDaemonJVMOptions' @ [266:9] ==> public fun configureDaemonJVMOptions(opts: DaemonJVMOptions, additionalParams: Iterable<String>, inheritMemoryLimits: Boolean, inheritOtherJvmOptions: Boolean, inheritAdditionalProperties: Boolean): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'configureDaemonJVMOptions' @ [266:9] ==> public fun configureDaemonJVMOptions(opts: DaemonJVMOptions, additionalParams: Iterable<String>, inheritMemoryLimits: Boolean, inheritOtherJvmOptions: Boolean, inheritAdditionalProperties: Boolean): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'opts' @ [266:35] ==> value-parameter opts: DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.common.configureDaemonJVMOptions[ValueParameterDescriptorImpl]
 
@@ -892,7 +932,7 @@ Inferred types:
 
 'jvmArguments' @ [279:25] ==> val jvmArguments: (MutableList<(String..String?)>..List<(String..String?)>?) defined in org.jetbrains.kotlin.daemon.common.configureDaemonJVMOptions[LocalVariableDescriptor]
 
-'filterExtractProps' @ [279:38] ==> public fun Iterable<String>.filterExtractProps(propMappers: List<PropMapper<*, *, *>>, prefix: String, restParser: RestPropMapper<*, *>? = ...): Iterable<String> defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'filterExtractProps' @ [279:38] ==> public fun Iterable<String>.filterExtractProps(propMappers: List<PropMapper<*, *, *>>, prefix: String, restParser: RestPropMapper<*, *>? = ...): Iterable<String> defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'targetOptions' @ [279:57] ==> val targetOptions: DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.common.configureDaemonJVMOptions[LocalVariableDescriptor]
 
@@ -997,7 +1037,7 @@ Inferred types:
 
 'it' @ [301:17] ==> value-parameter it: String defined in org.jetbrains.kotlin.daemon.common.configureDaemonJVMOptions.<anonymous>[ValueParameterDescriptorImpl]
 
-'trimQuotes' @ [301:20] ==> public fun String.trimQuotes(): String defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'trimQuotes' @ [301:20] ==> public fun String.trimQuotes(): String defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'split' @ [302:20] ==> @InlineOnly public inline fun CharSequence.split(regex: Regex, limit: Int = ...): List<String> defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -1014,7 +1054,7 @@ Inferred types:
 
 'toRegex' @ [303:47] ==> @InlineOnly public inline fun String.toRegex(): Regex defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'filterExtractProps' @ [304:20] ==> public fun Iterable<String>.filterExtractProps(propMappers: List<PropMapper<*, *, *>>, prefix: String, restParser: RestPropMapper<*, *>? = ...): Iterable<String> defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'filterExtractProps' @ [304:20] ==> public fun Iterable<String>.filterExtractProps(propMappers: List<PropMapper<*, *, *>>, prefix: String, restParser: RestPropMapper<*, *>? = ...): Iterable<String> defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'opts' @ [304:39] ==> value-parameter opts: DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.common.configureDaemonJVMOptions[ValueParameterDescriptorImpl]
 
@@ -1074,7 +1114,7 @@ Inferred types:
 
 'opts' @ [315:12] ==> value-parameter opts: DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.common.configureDaemonJVMOptions[ValueParameterDescriptorImpl]
 
-'configureDaemonJVMOptions' @ [324:9] ==> public fun configureDaemonJVMOptions(opts: DaemonJVMOptions, vararg additionalParams: String, inheritMemoryLimits: Boolean, inheritOtherJvmOptions: Boolean, inheritAdditionalProperties: Boolean): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'configureDaemonJVMOptions' @ [324:9] ==> public fun configureDaemonJVMOptions(opts: DaemonJVMOptions, vararg additionalParams: String, inheritMemoryLimits: Boolean, inheritOtherJvmOptions: Boolean, inheritAdditionalProperties: Boolean): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'DaemonJVMOptions' @ [324:35] ==> public constructor DaemonJVMOptions(maxMemory: String = ..., maxPermSize: String = ..., reservedCodeCacheSize: String = ..., jvmParams: MutableCollection<String> = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[ClassConstructorDescriptorImpl]
 
@@ -1097,11 +1137,11 @@ Inferred types:
 
 'it' @ [333:28] ==> value-parameter it: String defined in org.jetbrains.kotlin.daemon.common.configureDaemonOptions.<anonymous>[ValueParameterDescriptorImpl]
 
-'trimQuotes' @ [333:31] ==> public fun String.trimQuotes(): String defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'trimQuotes' @ [333:31] ==> public fun String.trimQuotes(): String defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'split' @ [333:44] ==> public fun CharSequence.split(vararg delimiters: String, ignoreCase: Boolean = ..., limit: Int = ...): List<String> defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'filterExtractProps' @ [333:55] ==> public fun Iterable<String>.filterExtractProps(propMappers: List<PropMapper<*, *, *>>, prefix: String, restParser: RestPropMapper<*, *>? = ...): Iterable<String> defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'filterExtractProps' @ [333:55] ==> public fun Iterable<String>.filterExtractProps(propMappers: List<PropMapper<*, *, *>>, prefix: String, restParser: RestPropMapper<*, *>? = ...): Iterable<String> defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'opts' @ [333:74] ==> value-parameter opts: DaemonOptions defined in org.jetbrains.kotlin.daemon.common.configureDaemonOptions[ValueParameterDescriptorImpl]
 
@@ -1230,9 +1270,15 @@ Inferred types:
 
 'DaemonJVMOptions' @ [367:12] ==> public constructor DaemonJVMOptions(maxMemory: String = ..., maxPermSize: String = ..., reservedCodeCacheSize: String = ..., jvmParams: MutableCollection<String> = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[ClassConstructorDescriptorImpl]
 
+'maxMemory' @ [367:30] ==> public final var maxMemory: String defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[PropertyDescriptorImpl]
+
 'DaemonJVMOptions' @ [367:41] ==> public constructor DaemonJVMOptions(maxMemory: String = ..., maxPermSize: String = ..., reservedCodeCacheSize: String = ..., jvmParams: MutableCollection<String> = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[ClassConstructorDescriptorImpl]
 
+'maxPermSize' @ [367:59] ==> public final var maxPermSize: String defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[PropertyDescriptorImpl]
+
 'DaemonJVMOptions' @ [367:72] ==> public constructor DaemonJVMOptions(maxMemory: String = ..., maxPermSize: String = ..., reservedCodeCacheSize: String = ..., jvmParams: MutableCollection<String> = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[ClassConstructorDescriptorImpl]
+
+'reservedCodeCacheSize' @ [367:90] ==> public final var reservedCodeCacheSize: String defined in org.jetbrains.kotlin.daemon.common.DaemonJVMOptions[PropertyDescriptorImpl]
 
 'daemonJVMOptionsMemoryProps' @ [370:9] ==> private val daemonJVMOptionsMemoryProps: List<KMutableProperty1<DaemonJVMOptions, String>> defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[PropertyDescriptorImpl]
 

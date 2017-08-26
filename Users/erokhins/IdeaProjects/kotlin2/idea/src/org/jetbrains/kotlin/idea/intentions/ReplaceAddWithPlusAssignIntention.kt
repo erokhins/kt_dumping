@@ -77,8 +77,6 @@ Inferred types:
 
 'isSubclassOf' @ [49:30] ==> public fun ClassDescriptor.isSubclassOf(superclass: ClassDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedSimpleFunctionDescriptor]
 
-'DefaultBuiltIns' @ [49:43] ==> public companion object defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns[FakeCallableDescriptorForObject]
-
 'Instance' @ [49:59] ==> @JvmStatic public final val Instance: DefaultBuiltIns defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns.Companion[DeserializedPropertyDescriptor]
 
 'mutableCollection' @ [49:68] ==> public final val DefaultBuiltIns.mutableCollection: ClassDescriptor[MyPropertyDescriptor]

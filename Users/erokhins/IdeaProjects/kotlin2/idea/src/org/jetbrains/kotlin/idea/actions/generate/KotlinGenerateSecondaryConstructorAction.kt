@@ -65,7 +65,9 @@ Inferred types:
 
 'DescriptorMemberChooserObject' @ [76:24] ==> public constructor DescriptorMemberChooserObject(psiElement: PsiElement, descriptor: DeclarationDescriptor) defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject[DeserializedClassConstructorDescriptor]
 
-'DescriptorToSourceUtilsIde' @ [76:54] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
+'?:' @ [76:54] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'getAnyDeclaration' @ [76:81] ==> public final fun getAnyDeclaration(project: Project, descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 
@@ -87,14 +89,14 @@ Inferred types:
 
 'candidates' @ [77:96] ==> val candidates: List<DescriptorMemberChooserObject> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateSecondaryConstructorAction.chooseSuperConstructors[LocalVariableDescriptor]
 
-'with' @ [79:16] ==> @InlineOnly public inline fun <T, R> with(receiver: MemberChooser<DescriptorMemberChooserObject>, block: MemberChooser<DescriptorMemberChooserObject>.() -> List<DescriptorMemberChooserObject>): List<DescriptorMemberChooserObject> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [79:16] ==> @InlineOnly public inline fun <T, R> with(receiver: MemberChooser<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>, block: MemberChooser<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>.() -> List<DescriptorMemberChooserObject>): List<DescriptorMemberChooserObject> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MemberChooser<DescriptorMemberChooserObject>
+    <T> -> MemberChooser<(org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject..org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject?)>
     <R> -> List<DescriptorMemberChooserObject>
 
 'MemberChooser' @ [79:21] ==> public constructor MemberChooser<T : (ClassMember..ClassMember?)>(p0: (Array<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>..Array<out (DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>?), p1: Boolean, p2: Boolean, @NotNull p3: Project) defined in com.intellij.ide.util.MemberChooser[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (ClassMember..ClassMember?)> -> DescriptorMemberChooserObject
+    <T : (ClassMember..ClassMember?)> -> (org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject..org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject?)
 
 'candidates' @ [79:35] ==> val candidates: List<DescriptorMemberChooserObject> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateSecondaryConstructorAction.chooseSuperConstructors[LocalVariableDescriptor]
 
@@ -106,9 +108,9 @@ Inferred types:
 
 'project' @ [79:81] ==> public final val KtClassOrObject.project: Project[MyPropertyDescriptor]
 
-'title' @ [80:13] ==> public final var <T : (ClassMember..ClassMember?)> MemberChooser<DescriptorMemberChooserObject>.title: (String..String?)[MyPropertyDescriptor]
+'title' @ [80:13] ==> public final var <T : (ClassMember..ClassMember?)> MemberChooser<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>.title: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (ClassMember..ClassMember?)> -> DescriptorMemberChooserObject
+    <T : (ClassMember..ClassMember?)> -> (org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject..org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject?)
 
 'message' @ [80:39] ==> public open fun message(@NotNull @PropertyKey p0: String, @NotNull vararg p1: (Any..Any?)): (String..String?) defined in com.intellij.codeInsight.CodeInsightBundle[JavaMethodDescriptor]
 
@@ -116,9 +118,9 @@ Inferred types:
 
 'show' @ [82:13] ==> public open fun show(): Unit defined in com.intellij.ide.util.MemberChooser[JavaMethodDescriptor]
 
-'selectedElements' @ [84:13] ==> public final val <T : (ClassMember..ClassMember?)> MemberChooser<DescriptorMemberChooserObject>.selectedElements: (MutableList<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>?..List<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>?)[MyPropertyDescriptor]
+'selectedElements' @ [84:13] ==> public final val <T : (ClassMember..ClassMember?)> MemberChooser<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>.selectedElements: (MutableList<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>?..List<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (ClassMember..ClassMember?)> -> DescriptorMemberChooserObject
+    <T : (ClassMember..ClassMember?)> -> (org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject..org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject?)
 
 'emptyList' @ [84:33] ==> public fun <T> emptyList(): List<DescriptorMemberChooserObject> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -167,8 +169,8 @@ Inferred types:
 
 'get' @ [92:32] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?), p1: (PsiElement..PsiElement?)): VariableDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VARIABLE' @ [92:51] ==> public final val VARIABLE: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -199,14 +201,14 @@ Inferred types:
 
 'candidates' @ [94:96] ==> val candidates: List<DescriptorMemberChooserObject> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateSecondaryConstructorAction.choosePropertiesToInitialize[LocalVariableDescriptor]
 
-'with' @ [96:16] ==> @InlineOnly public inline fun <T, R> with(receiver: MemberChooser<DescriptorMemberChooserObject>, block: MemberChooser<DescriptorMemberChooserObject>.() -> List<DescriptorMemberChooserObject>): List<DescriptorMemberChooserObject> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [96:16] ==> @InlineOnly public inline fun <T, R> with(receiver: MemberChooser<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>, block: MemberChooser<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>.() -> List<DescriptorMemberChooserObject>): List<DescriptorMemberChooserObject> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MemberChooser<DescriptorMemberChooserObject>
+    <T> -> MemberChooser<(org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject..org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject?)>
     <R> -> List<DescriptorMemberChooserObject>
 
 'MemberChooser' @ [96:21] ==> public constructor MemberChooser<T : (ClassMember..ClassMember?)>(p0: (Array<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>..Array<out (DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>?), p1: Boolean, p2: Boolean, @NotNull p3: Project, p4: Boolean, @Nullable p5: JComponent?) defined in com.intellij.ide.util.MemberChooser[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (ClassMember..ClassMember?)> -> DescriptorMemberChooserObject
+    <T : (ClassMember..ClassMember?)> -> (org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject..org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject?)
 
 'candidates' @ [96:35] ==> val candidates: List<DescriptorMemberChooserObject> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateSecondaryConstructorAction.choosePropertiesToInitialize[LocalVariableDescriptor]
 
@@ -218,9 +220,9 @@ Inferred types:
 
 'project' @ [96:80] ==> public final val KtClassOrObject.project: Project[MyPropertyDescriptor]
 
-'title' @ [97:13] ==> public final var <T : (ClassMember..ClassMember?)> MemberChooser<DescriptorMemberChooserObject>.title: (String..String?)[MyPropertyDescriptor]
+'title' @ [97:13] ==> public final var <T : (ClassMember..ClassMember?)> MemberChooser<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>.title: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (ClassMember..ClassMember?)> -> DescriptorMemberChooserObject
+    <T : (ClassMember..ClassMember?)> -> (org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject..org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject?)
 
 'setCopyJavadocVisible' @ [98:13] ==> public open fun setCopyJavadocVisible(p0: Boolean): Unit defined in com.intellij.ide.util.MemberChooser[JavaMethodDescriptor]
 
@@ -244,9 +246,9 @@ Inferred types:
 
 'show' @ [100:13] ==> public open fun show(): Unit defined in com.intellij.ide.util.MemberChooser[JavaMethodDescriptor]
 
-'selectedElements' @ [102:13] ==> public final val <T : (ClassMember..ClassMember?)> MemberChooser<DescriptorMemberChooserObject>.selectedElements: (MutableList<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>?..List<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>?)[MyPropertyDescriptor]
+'selectedElements' @ [102:13] ==> public final val <T : (ClassMember..ClassMember?)> MemberChooser<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>.selectedElements: (MutableList<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>?..List<(DescriptorMemberChooserObject..DescriptorMemberChooserObject?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (ClassMember..ClassMember?)> -> DescriptorMemberChooserObject
+    <T : (ClassMember..ClassMember?)> -> (org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject..org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject?)
 
 'emptyList' @ [102:33] ==> public fun <T> emptyList(): List<DescriptorMemberChooserObject> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -260,8 +262,8 @@ Inferred types:
 
 'get' @ [108:39] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [108:58] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

@@ -41,13 +41,9 @@ Inferred types:
 
 'isBooleanOrNullableBoolean' @ [70:43] ==> public fun KotlinType.isBooleanOrNullableBoolean(): Boolean defined in org.jetbrains.kotlin.types.typeUtil[DeserializedSimpleFunctionDescriptor]
 
-'ExpectedInfoMatch' @ [71:21] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch[FakeCallableDescriptorForObject]
-
 'match' @ [71:39] ==> public final fun match(substitutor: TypeSubstitutor): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch.Companion[SimpleFunctionDescriptorImpl]
 
 'EMPTY' @ [71:61] ==> public final val EMPTY: (TypeSubstitutor..TypeSubstitutor?) defined in org.jetbrains.kotlin.types.TypeSubstitutor[JavaPropertyDescriptor]
-
-'ExpectedInfoMatch' @ [73:21] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch[FakeCallableDescriptorForObject]
 
 'noMatch' @ [73:39] ==> public final val noMatch: ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch.Companion[PropertyDescriptorImpl]
 
@@ -97,8 +93,6 @@ Inferred types:
 
 'suppressNullLiteral' @ [84:80] ==> public final val suppressNullLiteral: Boolean defined in org.jetbrains.kotlin.idea.core.ComparisonOperandAdditionalData[DeserializedPropertyDescriptor]
 
-'ExpectedInfoMatch' @ [84:111] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch[FakeCallableDescriptorForObject]
-
 'noMatch' @ [84:129] ==> public final val noMatch: ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch.Companion[PropertyDescriptorImpl]
 
 'info' @ [86:21] ==> value-parameter info: ExpectedInfo defined in org.jetbrains.kotlin.idea.completion.KeywordValues.process.<anonymous>[ValueParameterDescriptorImpl]
@@ -109,13 +103,9 @@ Inferred types:
 
 'isMarkedNullable' @ [86:43] ==> public abstract val isMarkedNullable: Boolean defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 
-'ExpectedInfoMatch' @ [86:71] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch[FakeCallableDescriptorForObject]
-
 'match' @ [86:89] ==> public final fun match(substitutor: TypeSubstitutor): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch.Companion[SimpleFunctionDescriptorImpl]
 
 'EMPTY' @ [86:111] ==> public final val EMPTY: (TypeSubstitutor..TypeSubstitutor?) defined in org.jetbrains.kotlin.types.TypeSubstitutor[JavaPropertyDescriptor]
-
-'ExpectedInfoMatch' @ [88:29] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch[FakeCallableDescriptorForObject]
 
 'noMatch' @ [88:47] ==> public final val noMatch: ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch.Companion[PropertyDescriptorImpl]
 
@@ -143,8 +133,8 @@ Inferred types:
 
 'get' @ [97:48] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?), p1: (KtExpression..KtExpression?)): DoubleColonLHS? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> DoubleColonLHS
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.DoubleColonLHS..org.jetbrains.kotlin.types.expressions.DoubleColonLHS?)
 
 'DOUBLE_COLON_LHS' @ [97:67] ==> public final val DOUBLE_COLON_LHS: (WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -174,8 +164,6 @@ Inferred types:
 
 'simpleNotNullType' @ [100:58] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [100:76] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [100:88] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'kClassDescriptor' @ [100:95] ==> val kClassDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.idea.completion.KeywordValues.process[LocalVariableDescriptor]
@@ -202,7 +190,7 @@ Inferred types:
 
 'kClassTypes' @ [102:61] ==> val kClassTypes: List<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.KeywordValues.process[LocalVariableDescriptor]
 
-'matchExpectedInfo' @ [102:73] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'matchExpectedInfo' @ [102:73] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'info' @ [102:91] ==> value-parameter info: ExpectedInfo defined in org.jetbrains.kotlin.idea.completion.KeywordValues.process.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -240,8 +228,6 @@ Inferred types:
 
 'simpleNotNullType' @ [112:67] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [112:85] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [112:97] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'javaLangClassDescriptor' @ [112:104] ==> val javaLangClassDescriptor: ClassDescriptor? defined in org.jetbrains.kotlin.idea.completion.KeywordValues.process[LocalVariableDescriptor]
@@ -268,7 +254,7 @@ Inferred types:
 
 'javaClassTypes' @ [114:72] ==> val javaClassTypes: List<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.KeywordValues.process[LocalVariableDescriptor]
 
-'matchExpectedInfo' @ [114:87] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'matchExpectedInfo' @ [114:87] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'info' @ [114:105] ==> value-parameter info: ExpectedInfo defined in org.jetbrains.kotlin.idea.completion.KeywordValues.process.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -273,7 +273,9 @@ Inferred types:
 
 'optimizeImportsOnTheFly' @ [146:69] ==> public final var optimizeImportsOnTheFly: Boolean defined in com.intellij.codeInsight.CodeInsightWorkspaceSettings[JavaPropertyDescriptor]
 
-'KotlinImportOptimizer' @ [147:32] ==> public companion object defined in org.jetbrains.kotlin.idea.imports.KotlinImportOptimizer[FakeCallableDescriptorForObject]
+'?:' @ [147:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<ImportPath>?, right: List<ImportPath>): List<ImportPath>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<ImportPath>
 
 'prepareOptimizedImports' @ [147:54] ==> public final fun prepareOptimizedImports(file: KtFile, data: OptimizedImportsBuilder.InputData): List<ImportPath>? defined in org.jetbrains.kotlin.idea.imports.KotlinImportOptimizer.Companion[SimpleFunctionDescriptorImpl]
 
@@ -319,7 +321,7 @@ Inferred types:
 
 'modificationStamp' @ [158:53] ==> public final val Document.modificationStamp: Long[MyPropertyDescriptor]
 
-'Disposable' @ [159:34] ==> public fun Disposable(function: () -> Unit): Disposable defined in com.intellij.openapi[SimpleFunctionDescriptorImpl]
+'Disposable' @ [159:34] ==> public fun Disposable(function: () -> Unit): Disposable defined in com.intellij.openapi[SamConstructorDescriptorImpl]
 
 'getApplication' @ [161:36] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 

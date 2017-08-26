@@ -33,15 +33,13 @@ Inferred types:
 
 'append' @ [34:17] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'String' @ [34:24] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
-
 'format' @ [34:31] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'index' @ [34:46] ==> val index: Int defined in org.jetbrains.kotlin.ir2cfg.util.dump[LocalVariableDescriptor]
 
 'element' @ [35:20] ==> val element: IrStatement defined in org.jetbrains.kotlin.ir2cfg.util.dump[LocalVariableDescriptor]
 
-'cfgDump' @ [35:28] ==> private fun IrElement.cfgDump(): String defined in org.jetbrains.kotlin.ir2cfg.util[SimpleFunctionDescriptorImpl]
+'cfgDump' @ [35:28] ==> private fun IrElement.cfgDump(): String defined in org.jetbrains.kotlin.ir2cfg.util in file ControlFlowRenderer.kt[SimpleFunctionDescriptorImpl]
 
 'builder' @ [36:9] ==> value-parameter builder: StringBuilder /* = StringBuilder */ = ... defined in org.jetbrains.kotlin.ir2cfg.util.dump[ValueParameterDescriptorImpl]
 
@@ -69,7 +67,7 @@ Inferred types:
 
 'element' @ [43:16] ==> public abstract val element: IrStatement defined in org.jetbrains.kotlin.ir2cfg.graph.BlockConnector[PropertyDescriptorImpl]
 
-'cfgDump' @ [43:24] ==> private fun IrElement.cfgDump(): String defined in org.jetbrains.kotlin.ir2cfg.util[SimpleFunctionDescriptorImpl]
+'cfgDump' @ [43:24] ==> private fun IrElement.cfgDump(): String defined in org.jetbrains.kotlin.ir2cfg.util in file ControlFlowRenderer.kt[SimpleFunctionDescriptorImpl]
 
 'builder' @ [44:5] ==> value-parameter builder: StringBuilder /* = StringBuilder */ = ... defined in org.jetbrains.kotlin.ir2cfg.util.dump[ValueParameterDescriptorImpl]
 
@@ -173,7 +171,7 @@ Inferred types:
 
 'incoming' @ [63:13] ==> val incoming: BlockConnector? defined in org.jetbrains.kotlin.ir2cfg.util.dump[LocalVariableDescriptor]
 
-'dump' @ [63:22] ==> public fun BlockConnector.dump(builder: StringBuilder /* = StringBuilder */ = ..., indent: String = ...): String defined in org.jetbrains.kotlin.ir2cfg.util[SimpleFunctionDescriptorImpl]
+'dump' @ [63:22] ==> public fun BlockConnector.dump(builder: StringBuilder /* = StringBuilder */ = ..., indent: String = ...): String defined in org.jetbrains.kotlin.ir2cfg.util in file ControlFlowRenderer.kt[SimpleFunctionDescriptorImpl]
 
 'builder' @ [63:27] ==> val builder: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.ir2cfg.util.dump[LocalVariableDescriptor]
 
@@ -183,7 +181,7 @@ Inferred types:
 
 'block' @ [66:9] ==> val block: BasicBlock defined in org.jetbrains.kotlin.ir2cfg.util.dump[LocalVariableDescriptor]
 
-'dump' @ [66:15] ==> public fun BasicBlock.dump(builder: StringBuilder /* = StringBuilder */ = ..., indent: String = ...): String defined in org.jetbrains.kotlin.ir2cfg.util[SimpleFunctionDescriptorImpl]
+'dump' @ [66:15] ==> public fun BasicBlock.dump(builder: StringBuilder /* = StringBuilder */ = ..., indent: String = ...): String defined in org.jetbrains.kotlin.ir2cfg.util in file ControlFlowRenderer.kt[SimpleFunctionDescriptorImpl]
 
 'builder' @ [66:20] ==> val builder: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.ir2cfg.util.dump[LocalVariableDescriptor]
 
@@ -232,7 +230,7 @@ Inferred types:
 
 'outgoing' @ [75:13] ==> val outgoing: BlockConnector? defined in org.jetbrains.kotlin.ir2cfg.util.dump[LocalVariableDescriptor]
 
-'dump' @ [75:22] ==> public fun BlockConnector.dump(builder: StringBuilder /* = StringBuilder */ = ..., indent: String = ...): String defined in org.jetbrains.kotlin.ir2cfg.util[SimpleFunctionDescriptorImpl]
+'dump' @ [75:22] ==> public fun BlockConnector.dump(builder: StringBuilder /* = StringBuilder */ = ..., indent: String = ...): String defined in org.jetbrains.kotlin.ir2cfg.util in file ControlFlowRenderer.kt[SimpleFunctionDescriptorImpl]
 
 'builder' @ [75:27] ==> val builder: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.ir2cfg.util.dump[LocalVariableDescriptor]
 

@@ -34,7 +34,7 @@ Inferred types:
 
 'findChildByType' @ [47:16] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (TokenSet..TokenSet?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtNameReferenceExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'NAME_REFERENCE_EXPRESSIONS' @ [47:32] ==> private final val NAME_REFERENCE_EXPRESSIONS: TokenSet defined in org.jetbrains.kotlin.psi.KtNameReferenceExpression.Companion[PropertyDescriptorImpl]
 
@@ -42,7 +42,7 @@ Inferred types:
 
 'findChildByType' @ [51:16] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtNameReferenceExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'IDENTIFIER' @ [51:41] ==> public final val IDENTIFIER: (KtToken..KtToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 

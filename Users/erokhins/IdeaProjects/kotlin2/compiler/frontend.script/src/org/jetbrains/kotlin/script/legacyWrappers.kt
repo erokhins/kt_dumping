@@ -57,6 +57,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [52:55] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'legacyDeps' @ [53:29] ==> val legacyDeps: KotlinScriptExternalDependencies defined in org.jetbrains.kotlin.script.LegacyPackageDependencyResolverWrapper.resolve[LocalVariableDescriptor]
 
 'classpath' @ [53:40] ==> public open val classpath: Iterable<File> defined in org.jetbrains.kotlin.script.KotlinScriptExternalDependencies[PropertyDescriptorImpl]
@@ -172,6 +174,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [90:55] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'legacyDeps' @ [91:29] ==> val legacyDeps: KotlinScriptExternalDependencies defined in org.jetbrains.kotlin.script.ApiChangeDependencyResolverWrapper.resolve[LocalVariableDescriptor]
 

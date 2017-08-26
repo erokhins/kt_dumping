@@ -217,7 +217,7 @@ Inferred types:
 
 'blockBuilder' @ [97:16] ==> val blockBuilder: IrBuilderWithScope defined in org.jetbrains.kotlin.backend.common.lower.StringConcatenationTransformer.visitStringConcatenation[LocalVariableDescriptor]
 
-'irBlock' @ [97:29] ==> public inline fun IrGeneratorWithScope.irBlock(expression: IrExpression, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irBlock' @ [97:29] ==> public inline fun IrGeneratorWithScope.irBlock(expression: IrExpression, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [97:37] ==> value-parameter expression: IrStringConcatenation defined in org.jetbrains.kotlin.backend.common.lower.StringConcatenationTransformer.visitStringConcatenation[ValueParameterDescriptorImpl]
 
@@ -289,9 +289,9 @@ Inferred types:
 
 'declaration' @ [114:43] ==> value-parameter declaration: IrDeclaration defined in org.jetbrains.kotlin.backend.common.lower.StringConcatenationTransformer.visitDeclaration[ValueParameterDescriptorImpl]
 
-'with' @ [117:9] ==> @InlineOnly public inline fun <T, R> with(receiver: IrSymbolDeclaration<IrSymbol>, block: IrSymbolDeclaration<IrSymbol>.() -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [117:9] ==> @InlineOnly public inline fun <T, R> with(receiver: IrSymbolDeclaration<*>, block: IrSymbolDeclaration<*>.() -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> IrSymbolDeclaration<IrSymbol>
+    <T> -> IrSymbolDeclaration<*>
     <R> -> Nothing
 
 'declaration' @ [117:14] ==> value-parameter declaration: IrDeclaration defined in org.jetbrains.kotlin.backend.common.lower.StringConcatenationTransformer.visitDeclaration[ValueParameterDescriptorImpl]
@@ -302,7 +302,7 @@ Inferred types:
 
 'context' @ [119:21] ==> private final val context: CommonBackendContext defined in org.jetbrains.kotlin.backend.common.lower.StringConcatenationTransformer[PropertyDescriptorImpl]
 
-'createIrBuilder' @ [119:29] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createIrBuilder' @ [119:29] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [119:45] ==> value-parameter declaration: IrDeclaration defined in org.jetbrains.kotlin.backend.common.lower.StringConcatenationTransformer.visitDeclaration[ValueParameterDescriptorImpl]
 

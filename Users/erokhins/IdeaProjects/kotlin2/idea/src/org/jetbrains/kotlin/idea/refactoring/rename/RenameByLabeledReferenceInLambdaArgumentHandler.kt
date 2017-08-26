@@ -51,8 +51,6 @@ Inferred types:
 
 'calleeExpression' @ [45:71] ==> val calleeExpression: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameByLabeledReferenceInLambdaArgumentHandler.getElementToRename[LocalVariableDescriptor]
 
-'DescriptorToSourceUtilsIde' @ [46:13] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
-
 'getAnyDeclaration' @ [46:40] ==> public final fun getAnyDeclaration(project: Project, descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 
 'dataContext' @ [46:58] ==> value-parameter dataContext: DataContext defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameByLabeledReferenceInLambdaArgumentHandler.getElementToRename[ValueParameterDescriptorImpl]

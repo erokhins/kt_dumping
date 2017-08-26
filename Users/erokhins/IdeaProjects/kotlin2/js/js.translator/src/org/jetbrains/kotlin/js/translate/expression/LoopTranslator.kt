@@ -400,9 +400,9 @@ Inferred types:
 
 'statements' @ [130:19] ==> public final val JsBlock.statements: (MutableList<(JsStatement..JsStatement?)>..List<(JsStatement..JsStatement?)>)[MyPropertyDescriptor]
 
-'if (realBody is JsBlock) realBody.statements else listOfNotNull(realBody)' @ [130:33] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<JsStatement>..List<(JsStatement..JsStatement?)>), elseBranch: (List<JsStatement>..List<(JsStatement..JsStatement?)>)): (List<JsStatement>..List<(JsStatement..JsStatement?)>)[SimpleFunctionDescriptorImpl]
+'if (realBody is JsBlock) realBody.statements else listOfNotNull(realBody)' @ [130:33] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<(JsStatement..JsStatement?)>, elseBranch: List<(JsStatement..JsStatement?)>): List<(JsStatement..JsStatement?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.List<org.jetbrains.kotlin.js.backend.ast.JsStatement>..kotlin.collections.List<(org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)>)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<(org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)>
 
 'realBody' @ [130:37] ==> val realBody: JsStatement? defined in org.jetbrains.kotlin.js.translate.expression.translateForExpression.translateBody[LocalVariableDescriptor]
 
@@ -861,6 +861,8 @@ Inferred types:
 Inferred types:
     <T> -> JsStatement
     <R> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)>..kotlin.collections.List<(org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)>)
+
+'flattenStatement' @ [227:60] ==> @NotNull public open fun flattenStatement(@NotNull statement: JsStatement): (MutableList<(JsStatement..JsStatement?)>..List<(JsStatement..JsStatement?)>) defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
 'orEmpty' @ [227:78] ==> @InlineOnly public inline fun <T> List<(JsStatement..JsStatement?)>?.orEmpty(): List<(JsStatement..JsStatement?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

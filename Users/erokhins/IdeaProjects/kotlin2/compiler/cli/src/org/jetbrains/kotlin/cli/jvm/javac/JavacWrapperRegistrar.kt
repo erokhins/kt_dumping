@@ -2,7 +2,7 @@
 
 'getNotNull' @ [41:46] ==> @NotNull public open fun <T : (Any..Any?)> getNotNull(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>): MessageCollector defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [41:78] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -36,7 +36,7 @@ Inferred types:
 
 'get' @ [55:45] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(File..File?)>): File? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'OUTPUT_DIRECTORY' @ [55:70] ==> public final val OUTPUT_DIRECTORY: (CompilerConfigurationKey<(File..File?)>..CompilerConfigurationKey<(File..File?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'registerService' @ [59:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(JavacWrapper..JavacWrapper?)>, @NotNull p1: JavacWrapper): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavacWrapper
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.javac.JavacWrapper..org.jetbrains.kotlin.javac.JavacWrapper?)
 
 'JavacWrapper' @ [59:33] ==> public companion object defined in org.jetbrains.kotlin.javac.JavacWrapper[FakeCallableDescriptorForObject]
 

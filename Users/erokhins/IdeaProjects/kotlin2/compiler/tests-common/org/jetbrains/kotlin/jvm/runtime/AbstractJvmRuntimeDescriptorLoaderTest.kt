@@ -189,8 +189,8 @@ Inferred types:
 
 'createTestFiles' @ [123:47] ==> @NotNull public open fun <M : (Any..Any?), F : (Any..Any?)> createTestFiles(@Nullable testFileName: String?, expectedText: (String..String?), factory: (KotlinTestUtils.TestFileFactory<(Void..Void?), (File..File?)>..KotlinTestUtils.TestFileFactory<(Void..Void?), (File..File?)>?)): (MutableList<(File..File?)>..List<(File..File?)>) defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 Inferred types:
-    <M : (Any..Any?)> -> Void
-    <F : (Any..Any?)> -> File
+    <M : (Any..Any?)> -> (java.lang.Void..java.lang.Void?)
+    <F : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'fileName' @ [123:63] ==> val fileName: (String..String?) defined in org.jetbrains.kotlin.jvm.runtime.AbstractJvmRuntimeDescriptorLoaderTest.compileFile[LocalVariableDescriptor]
 
@@ -245,8 +245,6 @@ Inferred types:
 'environment' @ [136:74] ==> val environment: KotlinCoreEnvironment defined in org.jetbrains.kotlin.jvm.runtime.AbstractJvmRuntimeDescriptorLoaderTest.compileFile[LocalVariableDescriptor]
 
 'project' @ [136:86] ==> public final val project: Project defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[DeserializedPropertyDescriptor]
-
-'GenerationUtils' @ [137:17] ==> public object GenerationUtils defined in org.jetbrains.kotlin.codegen in file GenerationUtils.kt[FakeCallableDescriptorForObject]
 
 'compileFileTo' @ [137:33] ==> @JvmStatic public final fun compileFileTo(ktFile: KtFile, environment: KotlinCoreEnvironment, output: File): ClassFileFactory defined in org.jetbrains.kotlin.codegen.GenerationUtils[SimpleFunctionDescriptorImpl]
 
@@ -322,9 +320,9 @@ Inferred types:
 
 'className' @ [155:47] ==> val className: String defined in org.jetbrains.kotlin.jvm.runtime.AbstractJvmRuntimeDescriptorLoaderTest.createReflectedPackageView[LocalVariableDescriptor]
 
-'sure' @ [155:58] ==> public inline fun <T : Any> Class<out (Any..Any?)>?.sure(message: () -> String): Class<out (Any..Any?)> defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
+'sure' @ [155:58] ==> public inline fun <T : Any> Class<*>?.sure(message: () -> String): Class<*> defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : Any> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <T : Any> -> Class<*>
 
 'className' @ [155:87] ==> val className: String defined in org.jetbrains.kotlin.jvm.runtime.AbstractJvmRuntimeDescriptorLoaderTest.createReflectedPackageView[LocalVariableDescriptor]
 
@@ -332,7 +330,7 @@ Inferred types:
 
 'create' @ [156:50] ==> public final fun create(klass: Class<*>): ReflectKotlinClass? defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClass.Factory[DeserializedSimpleFunctionDescriptor]
 
-'klass' @ [156:57] ==> val klass: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.jvm.runtime.AbstractJvmRuntimeDescriptorLoaderTest.createReflectedPackageView[LocalVariableDescriptor]
+'klass' @ [156:57] ==> val klass: Class<*> defined in org.jetbrains.kotlin.jvm.runtime.AbstractJvmRuntimeDescriptorLoaderTest.createReflectedPackageView[LocalVariableDescriptor]
 
 'binaryClass' @ [157:26] ==> val binaryClass: ReflectKotlinClass? defined in org.jetbrains.kotlin.jvm.runtime.AbstractJvmRuntimeDescriptorLoaderTest.createReflectedPackageView[LocalVariableDescriptor]
 
@@ -401,7 +399,7 @@ Inferred types:
 
 'CLASS' @ [165:78] ==> enum entry CLASS defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
 
-'klass' @ [167:31] ==> val klass: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.jvm.runtime.AbstractJvmRuntimeDescriptorLoaderTest.createReflectedPackageView[LocalVariableDescriptor]
+'klass' @ [167:31] ==> val klass: Class<*> defined in org.jetbrains.kotlin.jvm.runtime.AbstractJvmRuntimeDescriptorLoaderTest.createReflectedPackageView[LocalVariableDescriptor]
 
 'classId' @ [167:37] ==> public val Class<*>.classId: ClassId defined in org.jetbrains.kotlin.load.java.structure.reflect[DeserializedPropertyDescriptor]
 
@@ -447,7 +445,7 @@ Inferred types:
 
 'typeAnnotations' @ [184:29] ==> val typeAnnotations: Array<String> defined in org.jetbrains.kotlin.jvm.runtime.AbstractJvmRuntimeDescriptorLoaderTest.adaptJavaSource[LocalVariableDescriptor]
 
-'fold' @ [184:45] ==> public inline fun <T, R> Array<out String>.fold(initial: String, operation: (String, String) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [184:45] ==> public inline fun <T, R> Array<out String>.fold(initial: String, operation: (acc: String, String) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> String
@@ -555,8 +553,6 @@ Inferred types:
     <R> -> Nothing
 
 'IllegalStateException' @ [233:27] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
-
-'String' @ [233:49] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
 'format' @ [233:56] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 

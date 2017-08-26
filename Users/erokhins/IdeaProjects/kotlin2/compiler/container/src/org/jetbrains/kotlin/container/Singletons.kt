@@ -1,8 +1,8 @@
 'Null' @ [34:58] ==> enum entry Null defined in org.jetbrains.kotlin.container.ComponentState[FakeCallableDescriptorForObject]
 
-'lazy' @ [35:38] ==> public fun <T> lazy(initializer: () -> ArrayList<Closeable>): Lazy<ArrayList<Closeable>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [35:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ArrayList<Closeable>
+    <T> -> T
 
 'ArrayList' @ [35:45] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -241,7 +241,7 @@ Inferred types:
 
 'constructor' @ [131:35] ==> public final val constructor: Constructor<*> defined in org.jetbrains.kotlin.container.ConstructorBinding[PropertyDescriptorImpl]
 
-'computeArguments' @ [132:25] ==> public fun computeArguments(argumentDescriptors: List<ValueDescriptor>): List<Any> defined in org.jetbrains.kotlin.container[SimpleFunctionDescriptorImpl]
+'computeArguments' @ [132:25] ==> public fun computeArguments(argumentDescriptors: List<ValueDescriptor>): List<Any> defined in org.jetbrains.kotlin.container in file Resolve.kt[SimpleFunctionDescriptorImpl]
 
 'binding' @ [132:42] ==> val binding: ConstructorBinding defined in org.jetbrains.kotlin.container.SingletonTypeComponentDescriptor.createInstanceOf[LocalVariableDescriptor]
 
@@ -294,7 +294,7 @@ Inferred types:
 
 'simpleName' @ [144:59] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'SingletonTypeComponentDescriptor' @ [147:98] ==> public constructor SingletonTypeComponentDescriptor(container: ComponentContainer, klass: Class<*>) defined in org.jetbrains.kotlin.container.SingletonTypeComponentDescriptor[ClassConstructorDescriptorImpl]
 
@@ -306,7 +306,7 @@ Inferred types:
 
 'simpleName' @ [149:35] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'SingletonTypeComponentDescriptor' @ [153:97] ==> public constructor SingletonTypeComponentDescriptor(container: ComponentContainer, klass: Class<*>) defined in org.jetbrains.kotlin.container.SingletonTypeComponentDescriptor[ClassConstructorDescriptorImpl]
 
@@ -318,5 +318,5 @@ Inferred types:
 
 'simpleName' @ [155:34] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 

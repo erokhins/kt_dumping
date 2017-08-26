@@ -130,7 +130,7 @@ Inferred types:
 
 'builder' @ [79:9] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.Annotations.generateCode[ValueParameterDescriptorImpl]
 
-'append' @ [79:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [79:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'annotations' @ [79:24] ==> public final val annotations: List<Annotation> defined in org.jetbrains.kotlin.j2k.ast.Annotations[PropertyDescriptorImpl]
 

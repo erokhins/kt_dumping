@@ -194,7 +194,7 @@ Inferred types:
 
 'this' @ [118:9] ==> <this> defined in org.jetbrains.kotlin.ir.util.addArguments[ReceiverParameterDescriptorImpl]
 
-'addArguments' @ [118:14] ==> public fun IrMemberAccessExpression.addArguments(args: Map<ParameterDescriptor, IrExpression>): Unit defined in org.jetbrains.kotlin.ir.util[SimpleFunctionDescriptorImpl]
+'addArguments' @ [118:14] ==> public fun IrMemberAccessExpression.addArguments(args: Map<ParameterDescriptor, IrExpression>): Unit defined in org.jetbrains.kotlin.ir.util in file IrUtils.kt[SimpleFunctionDescriptorImpl]
 
 'args' @ [118:27] ==> value-parameter args: List<Pair<ParameterDescriptor, IrExpression>> defined in org.jetbrains.kotlin.ir.util.addArguments[ValueParameterDescriptorImpl]
 
@@ -619,7 +619,7 @@ Inferred types:
 
 'this' @ [229:9] ==> <this> defined in org.jetbrains.kotlin.ir.util.getPropertyGetter[ReceiverParameterDescriptorImpl]
 
-'getPropertyDeclaration' @ [229:14] ==> private fun IrClassSymbol.getPropertyDeclaration(name: String): IrProperty? defined in org.jetbrains.kotlin.ir.util[SimpleFunctionDescriptorImpl]
+'getPropertyDeclaration' @ [229:14] ==> private fun IrClassSymbol.getPropertyDeclaration(name: String): IrProperty? defined in org.jetbrains.kotlin.ir.util in file IrUtils.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [229:37] ==> value-parameter name: String defined in org.jetbrains.kotlin.ir.util.getPropertyGetter[ValueParameterDescriptorImpl]
 
@@ -629,7 +629,7 @@ Inferred types:
 
 'this' @ [232:9] ==> <this> defined in org.jetbrains.kotlin.ir.util.getPropertySetter[ReceiverParameterDescriptorImpl]
 
-'getPropertyDeclaration' @ [232:14] ==> private fun IrClassSymbol.getPropertyDeclaration(name: String): IrProperty? defined in org.jetbrains.kotlin.ir.util[SimpleFunctionDescriptorImpl]
+'getPropertyDeclaration' @ [232:14] ==> private fun IrClassSymbol.getPropertyDeclaration(name: String): IrProperty? defined in org.jetbrains.kotlin.ir.util in file IrUtils.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [232:37] ==> value-parameter name: String defined in org.jetbrains.kotlin.ir.util.getPropertySetter[ValueParameterDescriptorImpl]
 

@@ -1,4 +1,4 @@
-'getParametersToRemove' @ [78:51] ==> public fun getParametersToRemove(withDefaultValue: Boolean, parametersUsages: MultiMap<KtElement, KtElement>, occurrencesToReplace: List<KotlinPsiRange>): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter[SimpleFunctionDescriptorImpl]
+'getParametersToRemove' @ [78:51] ==> public fun getParametersToRemove(withDefaultValue: Boolean, parametersUsages: MultiMap<KtElement, KtElement>, occurrencesToReplace: List<KotlinPsiRange>): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter in file KotlinIntroduceParameterHandler.kt[SimpleFunctionDescriptorImpl]
 
 'withDefaultValue' @ [78:73] ==> value-parameter withDefaultValue: Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.IntroduceParameterDescriptor.<init>[ValueParameterDescriptorImpl]
 
@@ -6,9 +6,9 @@
 
 'occurrencesToReplace' @ [78:109] ==> value-parameter occurrencesToReplace: List<KotlinPsiRange> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.IntroduceParameterDescriptor.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [81:43] ==> public fun <T> lazy(initializer: () -> KtExpression): Lazy<KtExpression> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [81:43] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtExpression
+    <T> -> T
 
 'if (argumentValue.mustBeParenthesizedInInitializerPosition()) {
             KtPsiFactory(callable).createExpressionByPattern("($0)", argumentValue)
@@ -151,7 +151,7 @@ Inferred types:
 
 'emptyList' @ [121:46] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KtElement..KtElement?)>..List<(KtElement..KtElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtElement
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'occurrencesToReplace' @ [123:28] ==> value-parameter occurrencesToReplace: List<KotlinPsiRange> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.getParametersToRemove[ValueParameterDescriptorImpl]
 
@@ -205,7 +205,7 @@ Inferred types:
 
 'originalDescriptor' @ [136:20] ==> value-parameter originalDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.performRefactoring.<no name provided>.configure[ValueParameterDescriptorImpl]
 
-'modify' @ [136:39] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'modify' @ [136:39] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeSignature.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [137:21] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -328,7 +328,7 @@ Inferred types:
 
 'changeSignature' @ [167:5] ==> val changeSignature: () -> Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.performRefactoring[LocalVariableDescriptor]
 
-'runRefactoringWithPostprocessing' @ [167:21] ==> public fun (() -> Any).runRefactoringWithPostprocessing(project: Project, targetRefactoringId: String, finishAction: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'runRefactoringWithPostprocessing' @ [167:21] ==> public fun (() -> Any).runRefactoringWithPostprocessing(project: Project, targetRefactoringId: String, finishAction: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [167:54] ==> val project: Project defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.performRefactoring[LocalVariableDescriptor]
 
@@ -348,7 +348,7 @@ Inferred types:
 
 'syncPublisher' @ [173:22] ==> @NotNull public abstract fun <L : (Any..Any?)> syncPublisher(@NotNull p0: Topic<(RefactoringEventListener..RefactoringEventListener?)>): RefactoringEventListener defined in com.intellij.util.messages.MessageBus[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> RefactoringEventListener
+    <L : (Any..Any?)> -> (com.intellij.refactoring.listeners.RefactoringEventListener..com.intellij.refactoring.listeners.RefactoringEventListener?)
 
 'REFACTORING_EVENT_TOPIC' @ [173:61] ==> public final val REFACTORING_EVENT_TOPIC: (Topic<(RefactoringEventListener..RefactoringEventListener?)>..Topic<(RefactoringEventListener..RefactoringEventListener?)>?) defined in com.intellij.refactoring.listeners.RefactoringEventListener[JavaPropertyDescriptor]
 
@@ -356,7 +356,7 @@ Inferred types:
 
 'INTRODUCE_PARAMETER_REFACTORING_ID' @ [174:38] ==> public val INTRODUCE_PARAMETER_REFACTORING_ID: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter in file KotlinIntroduceParameterHandler.kt[PropertyDescriptorImpl]
 
-'selectElementsWithTargetParent' @ [184:5] ==> public fun selectElementsWithTargetParent(operationName: String, editor: Editor, file: KtFile, title: String, elementKinds: Collection<CodeInsightUtils.ElementKind>, getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement>, continuation: (elements: List<PsiElement>, targetParent: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce[SimpleFunctionDescriptorImpl]
+'selectElementsWithTargetParent' @ [184:5] ==> public fun selectElementsWithTargetParent(operationName: String, editor: Editor, file: KtFile, title: String, elementKinds: Collection<CodeInsightUtils.ElementKind>, getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement>, continuation: (elements: List<PsiElement>, targetParent: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'INTRODUCE_PARAMETER' @ [185:29] ==> public val INTRODUCE_PARAMETER: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter in file KotlinIntroduceParameterHandler.kt[PropertyDescriptorImpl]
 
@@ -542,8 +542,6 @@ Inferred types:
 
 'message' @ [238:51] ==> @NotNull public open fun message(@NonNls @PropertyKey key: (String..String?), vararg params: (Any..Any?)): String defined in org.jetbrains.kotlin.idea.refactoring.KotlinRefactoringBundle[JavaMethodDescriptor]
 
-'IdeDescriptorRenderers' @ [240:21] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE_SHORT_NAMES_IN_TYPES' @ [240:44] ==> @field:JvmField public final val SOURCE_CODE_SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderType' @ [240:77] ==> public abstract fun renderType(type: KotlinType): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -648,23 +646,21 @@ Inferred types:
 
 'addAll' @ [261:13] ==> public open fun addAll(elements: Collection<(String..String?)>): Boolean defined in com.intellij.util.SmartList[JavaMethodDescriptor]
 
-'KotlinNameSuggester' @ [261:20] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
-
 'suggestNamesByType' @ [261:40] ==> public final fun suggestNamesByType(type: KotlinType, validator: (String) -> Boolean, defaultName: String? = ...): List<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
 'replacementType' @ [261:59] ==> val replacementType: KotlinType defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[LocalVariableDescriptor]
 
 'nameValidator' @ [261:76] ==> val nameValidator: NewDeclarationNameValidator defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[LocalVariableDescriptor]
 
-'findInternalUsagesOfParametersAndReceiver' @ [264:32] ==> private fun findInternalUsagesOfParametersAndReceiver(targetParent: KtNamedDeclaration, targetDescriptor: FunctionDescriptor): MultiMap<KtElement, KtElement>? defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter[SimpleFunctionDescriptorImpl]
+'findInternalUsagesOfParametersAndReceiver' @ [264:32] ==> private fun findInternalUsagesOfParametersAndReceiver(targetParent: KtNamedDeclaration, targetDescriptor: FunctionDescriptor): MultiMap<KtElement, KtElement>? defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter in file KotlinIntroduceParameterHandler.kt[SimpleFunctionDescriptorImpl]
 
 'targetParent' @ [264:74] ==> value-parameter targetParent: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[ValueParameterDescriptorImpl]
 
 'functionDescriptor' @ [264:88] ==> val functionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[LocalVariableDescriptor]
 
-'?:' @ [266:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<(TextRange..TextRange?)>?, right: (List<(TextRange..TextRange?)>..List<(TextRange..TextRange?)>?)): (List<(TextRange..TextRange?)>..List<(TextRange..TextRange?)>?)[SimpleFunctionDescriptorImpl]
+'?:' @ [266:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<(TextRange..TextRange?)>?, right: List<(TextRange..TextRange?)>): List<(TextRange..TextRange?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> (kotlin.collections.List<(com.intellij.openapi.util.TextRange..com.intellij.openapi.util.TextRange?)>..kotlin.collections.List<(com.intellij.openapi.util.TextRange..com.intellij.openapi.util.TextRange?)>?)
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<(com.intellij.openapi.util.TextRange..com.intellij.openapi.util.TextRange?)>
 
 'targetParent' @ [266:32] ==> value-parameter targetParent: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[ValueParameterDescriptorImpl]
 
@@ -673,6 +669,8 @@ Inferred types:
 'filter' @ [266:73] ==> public inline fun <T> Iterable<KtDeclaration>.filter(predicate: (KtDeclaration) -> Boolean): List<KtDeclaration> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtDeclaration
+
+'isObjectOrNonInnerClass' @ [266:82] ==> public fun isObjectOrNonInnerClass(e: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [266:108] ==> public inline fun <T, R> Iterable<KtDeclaration>.map(transform: (KtDeclaration) -> (TextRange..TextRange?)): List<(TextRange..TextRange?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -716,15 +714,15 @@ Inferred types:
 
 'expression' @ [270:37] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[ValueParameterDescriptorImpl]
 
-'mapNotNullTo' @ [270:49] ==> public inline fun <T, R : Any, C : MutableCollection<in KotlinPsiRange>> Iterable<(PsiReference..PsiReference?)>.mapNotNullTo(destination: SmartList<KotlinPsiRange>, transform: ((PsiReference..PsiReference?)) -> KotlinPsiRange?): SmartList<KotlinPsiRange> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapNotNullTo' @ [270:49] ==> public inline fun <T, R : Any, C : MutableCollection<in KotlinPsiRange>> Iterable<(PsiReference..PsiReference?)>.mapNotNullTo(destination: SmartList<(KotlinPsiRange..KotlinPsiRange?)>, transform: ((PsiReference..PsiReference?)) -> KotlinPsiRange?): SmartList<(KotlinPsiRange..KotlinPsiRange?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
     <R : Any> -> KotlinPsiRange
-    <C : MutableCollection<in R>> -> SmartList<KotlinPsiRange>
+    <C : MutableCollection<in R>> -> SmartList<(org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange..org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange?)>
 
 'SmartList' @ [270:62] ==> public constructor SmartList<E : (Any..Any?)>(p0: (KotlinPsiRange..KotlinPsiRange?)) defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> KotlinPsiRange
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange..org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange?)
 
 'expression' @ [270:72] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[ValueParameterDescriptorImpl]
 
@@ -744,8 +742,6 @@ Inferred types:
 
 'body' @ [274:28] ==> val body: KtElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[LocalVariableDescriptor]
 
-'KotlinPsiUnifier' @ [274:34] ==> public companion object defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [274:51] ==> public final val DEFAULT: KotlinPsiUnifier defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Companion[DeserializedPropertyDescriptor]
 
 'filterNot' @ [275:22] ==> public inline fun <T> Iterable<UnificationResult.Matched>.filterNot(predicate: (UnificationResult.Matched) -> Boolean): List<UnificationResult.Matched> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -758,7 +754,7 @@ Inferred types:
 
 'getPhysicalTextRange' @ [276:50] ==> public fun KotlinPsiRange.getPhysicalTextRange(): TextRange defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
-'forbiddenRanges' @ [277:25] ==> val forbiddenRanges: (List<(TextRange..TextRange?)>..List<(TextRange..TextRange?)>?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[LocalVariableDescriptor]
+'forbiddenRanges' @ [277:25] ==> val forbiddenRanges: List<(TextRange..TextRange?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[LocalVariableDescriptor]
 
 'any' @ [277:41] ==> public inline fun <T> Iterable<(TextRange..TextRange?)>.any(predicate: ((TextRange..TextRange?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -890,8 +886,6 @@ Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
 
 'quoteIfNeeded' @ [312:87] ==> public fun String.quoteIfNeeded(): String defined in org.jetbrains.kotlin.idea.core[DeserializedSimpleFunctionDescriptor]
-
-'IdeDescriptorRenderers' @ [313:68] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE_SHORT_NAMES_IN_TYPES' @ [313:91] ==> @field:JvmField public final val SOURCE_CODE_SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -1070,15 +1064,15 @@ Inferred types:
 
 'file' @ [371:13] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[ValueParameterDescriptorImpl]
 
-'selectNewParameterContext' @ [372:9] ==> public fun selectNewParameterContext(editor: Editor, file: KtFile, continuation: (elements: List<PsiElement>, targetParent: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter[SimpleFunctionDescriptorImpl]
+'selectNewParameterContext' @ [372:9] ==> public fun selectNewParameterContext(editor: Editor, file: KtFile, continuation: (elements: List<PsiElement>, targetParent: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter in file KotlinIntroduceParameterHandler.kt[SimpleFunctionDescriptorImpl]
 
 'editor' @ [372:35] ==> value-parameter editor: Editor defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[ValueParameterDescriptorImpl]
 
 'file' @ [372:43] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke[ValueParameterDescriptorImpl]
 
-'?:' @ [373:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<PsiElement>?, right: List<PsiElement>): List<PsiElement>[SimpleFunctionDescriptorImpl]
+'?:' @ [373:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<(PsiElement..PsiElement?)>?, right: List<(PsiElement..PsiElement?)>): List<(PsiElement..PsiElement?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<PsiElement>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>
 
 'elements' @ [373:32] ==> value-parameter elements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1090,9 +1084,9 @@ Inferred types:
 
 'elements' @ [373:94] ==> value-parameter elements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterHandler.invoke.<anonymous>[ValueParameterDescriptorImpl]
 
-'singleOrNull' @ [373:104] ==> public fun <T> List<PsiElement>.singleOrNull(): PsiElement? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'singleOrNull' @ [373:104] ==> public fun <T> List<(PsiElement..PsiElement?)>.singleOrNull(): PsiElement? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'if (expression is KtExpression) {
                 invoke(project, editor, expression, targetParent as KtNamedDeclaration)
@@ -1279,7 +1273,7 @@ Inferred types:
 
 'extensionReceiver' @ [434:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'declarationDescriptor' @ [434:84] ==> public abstract val declarationDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.receivers.ImplicitReceiver[DeserializedPropertyDescriptor]
 
@@ -1291,7 +1285,7 @@ Inferred types:
 
 'dispatchReceiver' @ [435:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'declarationDescriptor' @ [435:83] ==> public abstract val declarationDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.receivers.ImplicitReceiver[DeserializedPropertyDescriptor]
 
@@ -1307,7 +1301,7 @@ Inferred types:
 
 'call' @ [436:75] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [436:80] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -1347,7 +1341,7 @@ Inferred types:
 
 'originalRange' @ [463:75] ==> public final val originalRange: KotlinPsiRange defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionData[PropertyDescriptorImpl]
 
-'findInternalUsagesOfParametersAndReceiver' @ [464:36] ==> private fun findInternalUsagesOfParametersAndReceiver(targetParent: KtNamedDeclaration, targetDescriptor: FunctionDescriptor): MultiMap<KtElement, KtElement>? defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter[SimpleFunctionDescriptorImpl]
+'findInternalUsagesOfParametersAndReceiver' @ [464:36] ==> private fun findInternalUsagesOfParametersAndReceiver(targetParent: KtNamedDeclaration, targetDescriptor: FunctionDescriptor): MultiMap<KtElement, KtElement>? defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter in file KotlinIntroduceParameterHandler.kt[SimpleFunctionDescriptorImpl]
 
 'callable' @ [464:78] ==> val callable: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceLambdaParameterHandler.extractLambdaHelper.<no name provided>.createDialog[LocalVariableDescriptor]
 
@@ -1485,8 +1479,6 @@ Inferred types:
 'targetParent' @ [512:45] ==> value-parameter targetParent: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceLambdaParameterHandler.invoke[ValueParameterDescriptorImpl]
 
 'duplicateContainer' @ [513:45] ==> val duplicateContainer: KtElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceLambdaParameterHandler.invoke[LocalVariableDescriptor]
-
-'ExtractionOptions' @ [514:45] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionOptions[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [514:63] ==> public final val DEFAULT: ExtractionOptions defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionOptions.Companion[PropertyDescriptorImpl]
 

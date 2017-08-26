@@ -10,11 +10,13 @@
 
 '_parent' @ [38:32] ==> private final val _parent: PsiElement? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForLocalDeclaration[PropertyDescriptorImpl]
 
-'lazyPub' @ [40:41] ==> public fun <T> lazyPub(initializer: () -> PsiElement?): Lazy<PsiElement?> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [40:41] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiElement?
+    <T> -> T
 
 'this' @ [40:49] ==> <this> defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForLocalDeclaration[LazyClassReceiverParameterDescriptor]
+
+'computeParent' @ [40:55] ==> private final fun computeParent(): PsiElement? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForLocalDeclaration[SimpleFunctionDescriptorImpl]
 
 'method' @ [44:17] ==> value-parameter method: PsiMethod? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForLocalDeclaration.computeParent.getParentByPsiMethod[ValueParameterDescriptorImpl]
 
@@ -102,8 +104,6 @@ Inferred types:
 
 'getParentByPsiMethod' @ [89:20] ==> local final fun getParentByPsiMethod(method: PsiMethod?, name: String?, forceMethodWrapping: Boolean): PsiElement? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForLocalDeclaration.computeParent[SimpleFunctionDescriptorImpl]
 
-'LightClassUtil' @ [89:41] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
-
 'getLightClassMethod' @ [89:56] ==> public final fun getLightClassMethod(function: KtFunction): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [89:76] ==> var declaration: PsiElement? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForLocalDeclaration.computeParent[LocalVariableDescriptor]
@@ -115,8 +115,6 @@ Inferred types:
 'declaration' @ [93:13] ==> var declaration: PsiElement? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForLocalDeclaration.computeParent[LocalVariableDescriptor]
 
 'getParentByPsiMethod' @ [94:20] ==> local final fun getParentByPsiMethod(method: PsiMethod?, name: String?, forceMethodWrapping: Boolean): PsiElement? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForLocalDeclaration.computeParent[SimpleFunctionDescriptorImpl]
-
-'LightClassUtil' @ [94:41] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
 
 'getLightClassPropertyMethods' @ [94:56] ==> public final fun getLightClassPropertyMethods(property: KtProperty): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 

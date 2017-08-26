@@ -47,6 +47,8 @@ Inferred types:
 
 'KotlinBuiltIns' @ [50:93] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull p0: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
 
+'isChar' @ [50:109] ==> public open fun isChar(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
+
 'append' @ [52:29] ==> val append: SimpleFunctionDescriptor defined in org.jetbrains.kotlin.jvm.compiler.MemoryOptimizationsTest.testBasicFlexibleTypeCase[LocalVariableDescriptor]
 
 'valueParameters' @ [52:36] ==> public final val SimpleFunctionDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
@@ -127,8 +129,6 @@ Inferred types:
 
 'getMemberScope' @ [89:24] ==> @NotNull public abstract fun getMemberScope(@NotNull p0: TypeSubstitution): MemberScope defined in org.jetbrains.kotlin.descriptors.ClassDescriptor[JavaMethodDescriptor]
 
-'TypeConstructorSubstitution' @ [90:25] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
-
 'create' @ [90:53] ==> @JvmStatic public final fun create(typeConstructor: TypeConstructor, arguments: List<TypeProjection>): TypeSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[DeserializedSimpleFunctionDescriptor]
 
 'aClass' @ [91:33] ==> val aClass: ClassDescriptor defined in org.jetbrains.kotlin.jvm.compiler.MemoryOptimizationsTest.testSubstitutorDoNotRecreateUnchangedDescriptor[LocalVariableDescriptor]
@@ -167,6 +167,8 @@ Inferred types:
     <R> -> Boolean
 
 'KotlinBuiltIns' @ [97:66] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull p0: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
+
+'isChar' @ [97:82] ==> public open fun isChar(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 
 'assertTrue' @ [100:9] ==> public open fun assertTrue(p0: Boolean): Unit defined in org.jetbrains.kotlin.test.testFramework.KtUsefulTestCase[JavaMethodDescriptor]
 

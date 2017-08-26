@@ -6,8 +6,6 @@ Inferred types:
 
 'expression' @ [65:36] ==> value-parameter expression: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariants[ValueParameterDescriptorImpl]
 
-'CallTypeAndReceiver' @ [65:48] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
-
 'detect' @ [65:68] ==> public final fun detect(expression: KtSimpleNameExpression): CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.Companion[SimpleFunctionDescriptorImpl]
 
 'expression' @ [65:75] ==> value-parameter expression: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariants[ValueParameterDescriptorImpl]
@@ -93,8 +91,6 @@ Inferred types:
 
 'and' @ [88:67] ==> public final infix fun and(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [88:71] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS_MASK' @ [88:92] ==> public final val FUNCTIONS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'variants' @ [89:13] ==> var variants: Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariants[LocalVariableDescriptor]
@@ -112,8 +108,6 @@ Inferred types:
 'kindMask' @ [92:57] ==> public final val kindMask: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedPropertyDescriptor]
 
 'and' @ [92:66] ==> public final infix fun and(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [92:70] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES_MASK' @ [92:91] ==> public final val VARIABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -143,7 +137,7 @@ Inferred types:
 
 'it' @ [101:93] ==> value-parameter it: TDescriptor defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.filterOutJavaGettersAndSetters.<anonymous>[ValueParameterDescriptorImpl]
 
-'suppressedByNotPropertyList' @ [101:96] ==> public fun SyntheticJavaPropertyDescriptor.suppressedByNotPropertyList(set: Set<FqNameUnsafe>): Boolean defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'suppressedByNotPropertyList' @ [101:96] ==> public fun SyntheticJavaPropertyDescriptor.suppressedByNotPropertyList(set: Set<FqNameUnsafe>): Boolean defined in org.jetbrains.kotlin.idea.util in file NotPropertyList.kt[SimpleFunctionDescriptorImpl]
 
 'notProperties' @ [101:124] ==> private final val notProperties: Set<FqNameUnsafe> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper[PropertyDescriptorImpl]
 
@@ -233,7 +227,7 @@ Inferred types:
 
 'callTypeAndReceiver' @ [137:24] ==> value-parameter callTypeAndReceiver: CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[ValueParameterDescriptorImpl]
 
-'callType' @ [137:44] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[PropertyDescriptorImpl]
+'callType' @ [137:44] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[PropertyDescriptorImpl]
 
 'Suppress' @ [139:9] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
@@ -241,7 +235,7 @@ Inferred types:
 
 'intersect' @ [140:37] ==> public final fun intersect(other: DescriptorKindFilter): DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
 
-'callType' @ [140:47] ==> val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
+'callType' @ [140:47] ==> val callType: CallType<*> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
 
 'descriptorKindFilter' @ [140:56] ==> public final val descriptorKindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.util.CallType[PropertyDescriptorImpl]
 
@@ -398,7 +392,7 @@ Inferred types:
 
 'resolutionScope' @ [179:37] ==> val resolutionScope: LexicalScope defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
 
-'getImplicitReceiversWithInstance' @ [179:53] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'getImplicitReceiversWithInstance' @ [179:53] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util in file implicitReceiversUtils.kt[SimpleFunctionDescriptorImpl]
 
 'flatMap' @ [179:88] ==> public inline fun <T, R> Iterable<ReceiverParameterDescriptor>.flatMap(transform: (ReceiverParameterDescriptor) -> Iterable<KotlinType>): List<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -407,7 +401,7 @@ Inferred types:
 
 'smartCastManager' @ [180:13] ==> val smartCastManager: SmartCastManager defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
 
-'getSmartCastVariantsWithLessSpecificExcluded' @ [180:30] ==> public fun SmartCastManager.getSmartCastVariantsWithLessSpecificExcluded(receiverToCast: ReceiverValue, bindingContext: BindingContext, containingDeclarationOrModule: DeclarationDescriptor, dataFlowInfo: DataFlowInfo): List<KotlinType> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'getSmartCastVariantsWithLessSpecificExcluded' @ [180:30] ==> public fun SmartCastManager.getSmartCastVariantsWithLessSpecificExcluded(receiverToCast: ReceiverValue, bindingContext: BindingContext, containingDeclarationOrModule: DeclarationDescriptor, dataFlowInfo: DataFlowInfo): List<KotlinType> defined in org.jetbrains.kotlin.idea.util in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [180:75] ==> value-parameter it: ReceiverParameterDescriptor defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -478,7 +472,7 @@ Inferred types:
 
 'staticScope' @ [189:46] ==> public abstract val staticScope: MemberScope defined in org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier[DeserializedPropertyDescriptor]
 
-'collectStaticMembers' @ [189:58] ==> private fun MemberScope.collectStaticMembers(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight[SimpleFunctionDescriptorImpl]
+'collectStaticMembers' @ [189:58] ==> private fun MemberScope.collectStaticMembers(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight in file ReferenceVariantsHelper.kt[SimpleFunctionDescriptorImpl]
 
 'resolutionFacade' @ [189:79] ==> private final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper[PropertyDescriptorImpl]
 
@@ -505,7 +499,7 @@ Inferred types:
 
 'callTypeAndReceiver' @ [196:17] ==> value-parameter callTypeAndReceiver: CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[ValueParameterDescriptorImpl]
 
-'receiverTypes' @ [196:37] ==> public fun CallTypeAndReceiver<*, *>.receiverTypes(bindingContext: BindingContext, contextElement: PsiElement, moduleDescriptor: ModuleDescriptor, resolutionFacade: ResolutionFacade, stableSmartCastsOnly: Boolean): Collection<KotlinType>? defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'receiverTypes' @ [196:37] ==> public fun CallTypeAndReceiver<*, *>.receiverTypes(bindingContext: BindingContext, contextElement: PsiElement, moduleDescriptor: ModuleDescriptor, resolutionFacade: ResolutionFacade, stableSmartCastsOnly: Boolean): Collection<KotlinType>? defined in org.jetbrains.kotlin.idea.util in file CallType.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [196:51] ==> private final val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper[PropertyDescriptorImpl]
 
@@ -525,7 +519,7 @@ Inferred types:
 
 'resolutionScope' @ [199:82] ==> val resolutionScope: LexicalScope defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
 
-'callType' @ [199:99] ==> val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
+'callType' @ [199:99] ==> val callType: CallType<*> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
 
 'kindFilter' @ [199:109] ==> val kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
 
@@ -545,7 +539,7 @@ Inferred types:
 
 'resolutionScope' @ [204:82] ==> val resolutionScope: LexicalScope defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
 
-'callType' @ [204:99] ==> val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
+'callType' @ [204:99] ==> val callType: CallType<*> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
 
 'kindFilter' @ [204:109] ==> val kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
 
@@ -575,7 +569,7 @@ Inferred types:
 
 'scope' @ [209:17] ==> value-parameter scope: HierarchicalScope defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter.<anonymous>[ValueParameterDescriptorImpl]
 
-'collectSyntheticStaticMembersAndConstructors' @ [209:23] ==> public fun ResolutionScope.collectSyntheticStaticMembersAndConstructors(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): List<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight[SimpleFunctionDescriptorImpl]
+'collectSyntheticStaticMembersAndConstructors' @ [209:23] ==> public fun ResolutionScope.collectSyntheticStaticMembersAndConstructors(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): List<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight in file ReferenceVariantsHelper.kt[SimpleFunctionDescriptorImpl]
 
 'resolutionFacade' @ [209:68] ==> private final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper[PropertyDescriptorImpl]
 
@@ -583,7 +577,7 @@ Inferred types:
 
 'nameFilter' @ [209:98] ==> value-parameter nameFilter: (Name) -> Boolean defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[ValueParameterDescriptorImpl]
 
-'callType' @ [213:13] ==> val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
+'callType' @ [213:13] ==> val callType: CallType<*> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter[LocalVariableDescriptor]
 
 'SUPER_MEMBERS' @ [213:34] ==> public object SUPER_MEMBERS : CallType<KtSuperExpression> defined in org.jetbrains.kotlin.idea.util.CallType[FakeCallableDescriptorForObject]
 
@@ -599,9 +593,9 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> DeclarationDescriptor
 
-'if (it is CallableMemberDescriptor && it.kind == CallableMemberDescriptor.Kind.FAKE_OVERRIDE) it.overriddenDescriptors else listOf(it)' @ [215:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Collection<DeclarationDescriptor>, elseBranch: Collection<DeclarationDescriptor>): Collection<DeclarationDescriptor>[SimpleFunctionDescriptorImpl]
+'if (it is CallableMemberDescriptor && it.kind == CallableMemberDescriptor.Kind.FAKE_OVERRIDE) it.overriddenDescriptors else listOf(it)' @ [215:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Iterable<DeclarationDescriptor>, elseBranch: Iterable<DeclarationDescriptor>): Iterable<DeclarationDescriptor>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Collection<DeclarationDescriptor>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Iterable<DeclarationDescriptor>
 
 'it' @ [215:21] ==> value-parameter it: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getReferenceVariantsNoVisibilityFilter.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -650,7 +644,7 @@ Inferred types:
 
 'staticScope' @ [230:30] ==> public abstract val staticScope: MemberScope defined in org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier[DeserializedPropertyDescriptor]
 
-'collectStaticMembers' @ [230:42] ==> private fun MemberScope.collectStaticMembers(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight[SimpleFunctionDescriptorImpl]
+'collectStaticMembers' @ [230:42] ==> private fun MemberScope.collectStaticMembers(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight in file ReferenceVariantsHelper.kt[SimpleFunctionDescriptorImpl]
 
 'resolutionFacade' @ [230:63] ==> private final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper[PropertyDescriptorImpl]
 
@@ -745,7 +739,7 @@ Inferred types:
 
 'callTypeAndReceiver' @ [257:17] ==> value-parameter callTypeAndReceiver: CallTypeAndReceiver.CALLABLE_REFERENCE defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getVariantsForCallableReference[ValueParameterDescriptorImpl]
 
-'receiverTypes' @ [257:37] ==> public fun CallTypeAndReceiver<*, *>.receiverTypes(bindingContext: BindingContext, contextElement: PsiElement, moduleDescriptor: ModuleDescriptor, resolutionFacade: ResolutionFacade, stableSmartCastsOnly: Boolean): Collection<KotlinType>? defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'receiverTypes' @ [257:37] ==> public fun CallTypeAndReceiver<*, *>.receiverTypes(bindingContext: BindingContext, contextElement: PsiElement, moduleDescriptor: ModuleDescriptor, resolutionFacade: ResolutionFacade, stableSmartCastsOnly: Boolean): Collection<KotlinType>? defined in org.jetbrains.kotlin.idea.util in file CallType.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [257:51] ==> private final val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper[PropertyDescriptorImpl]
 
@@ -818,7 +812,7 @@ Inferred types:
 
 'it' @ [268:51] ==> value-parameter it: MemberScope defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.getVariantsForCallableReference.<anonymous>[ValueParameterDescriptorImpl]
 
-'collectStaticMembers' @ [268:54] ==> private fun MemberScope.collectStaticMembers(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight[SimpleFunctionDescriptorImpl]
+'collectStaticMembers' @ [268:54] ==> private fun MemberScope.collectStaticMembers(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight in file ReferenceVariantsHelper.kt[SimpleFunctionDescriptorImpl]
 
 'resolutionFacade' @ [268:75] ==> private final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper[PropertyDescriptorImpl]
 
@@ -875,7 +869,7 @@ Inferred types:
 
 'staticScope' @ [285:47] ==> public abstract val staticScope: MemberScope defined in org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier[DeserializedPropertyDescriptor]
 
-'collectStaticMembers' @ [285:59] ==> private fun MemberScope.collectStaticMembers(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight[SimpleFunctionDescriptorImpl]
+'collectStaticMembers' @ [285:59] ==> private fun MemberScope.collectStaticMembers(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight in file ReferenceVariantsHelper.kt[SimpleFunctionDescriptorImpl]
 
 'resolutionFacade' @ [285:80] ==> private final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper[PropertyDescriptorImpl]
 
@@ -1021,8 +1015,6 @@ Inferred types:
 
 'kindMask' @ [342:59] ==> public final val kindMask: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedPropertyDescriptor]
 
-'DescriptorKindFilter' @ [342:72] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CALLABLES' @ [342:93] ==> @field:JvmField public final val CALLABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'kindMask' @ [342:103] ==> public final val kindMask: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedPropertyDescriptor]
@@ -1035,8 +1027,6 @@ Inferred types:
 
 'acceptsKinds' @ [345:25] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [345:38] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS_MASK' @ [345:59] ==> public final val FUNCTIONS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'filterToUse' @ [346:13] ==> var filterToUse: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.addNonExtensionCallablesAndConstructors[LocalVariableDescriptor]
@@ -1044,8 +1034,6 @@ Inferred types:
 'filterToUse' @ [346:27] ==> var filterToUse: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.addNonExtensionCallablesAndConstructors[LocalVariableDescriptor]
 
 'withKinds' @ [346:39] ==> public final fun withKinds(kinds: Int): DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [346:49] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'NON_SINGLETON_CLASSIFIERS_MASK' @ [346:70] ==> public final val NON_SINGLETON_CLASSIFIERS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -1074,15 +1062,11 @@ Inferred types:
 
 'modality' @ [351:32] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [351:44] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [351:53] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'descriptor' @ [351:65] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.addNonExtensionCallablesAndConstructors[LocalVariableDescriptor]
 
 'modality' @ [351:76] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [351:88] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'SEALED' @ [351:97] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -1202,8 +1186,6 @@ Inferred types:
 
 'acceptsKinds' @ [388:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [388:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'VARIABLES_MASK' @ [388:58] ==> public final val VARIABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'syntheticScopes' @ [389:31] ==> val syntheticScopes: SyntheticScopes defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.addScopeAndSyntheticExtensions[LocalVariableDescriptor]
@@ -1219,8 +1201,6 @@ Inferred types:
 'kindFilter' @ [394:13] ==> value-parameter kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper.addScopeAndSyntheticExtensions[ValueParameterDescriptorImpl]
 
 'acceptsKinds' @ [394:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [394:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'FUNCTIONS_MASK' @ [394:58] ==> public final val FUNCTIONS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -1240,7 +1220,7 @@ Inferred types:
 
 'nameFilter' @ [407:47] ==> value-parameter nameFilter: (Name) -> Boolean defined in org.jetbrains.kotlin.idea.codeInsight.collectStaticMembers[ValueParameterDescriptorImpl]
 
-'collectSyntheticStaticMembersAndConstructors' @ [407:61] ==> public fun ResolutionScope.collectSyntheticStaticMembersAndConstructors(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): List<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight[SimpleFunctionDescriptorImpl]
+'collectSyntheticStaticMembersAndConstructors' @ [407:61] ==> public fun ResolutionScope.collectSyntheticStaticMembersAndConstructors(resolutionFacade: ResolutionFacade, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): List<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight in file ReferenceVariantsHelper.kt[SimpleFunctionDescriptorImpl]
 
 'resolutionFacade' @ [407:106] ==> value-parameter resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.codeInsight.collectStaticMembers[ValueParameterDescriptorImpl]
 

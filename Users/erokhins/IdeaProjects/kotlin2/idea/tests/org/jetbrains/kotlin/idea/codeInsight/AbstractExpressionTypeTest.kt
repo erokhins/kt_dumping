@@ -63,7 +63,7 @@ Inferred types:
 
 'assertOrderedEquals' @ [37:24] ==> public open fun <T : (Any..Any?)> assertOrderedEquals(@NotNull p0: (MutableIterable<(String..String?)>..Iterable<(String..String?)>), @NotNull p1: (MutableCollection<out (String..String?)>..Collection<(String..String?)>)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'types' @ [37:44] ==> val types: List<String> defined in org.jetbrains.kotlin.idea.codeInsight.AbstractExpressionTypeTest.doTest[LocalVariableDescriptor]
 

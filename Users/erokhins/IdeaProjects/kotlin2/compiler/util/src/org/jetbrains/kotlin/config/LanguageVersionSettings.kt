@@ -12,15 +12,11 @@
 
 'KOTLIN_1_1' @ [32:29] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
-'ApiVersion' @ [32:41] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_1' @ [32:52] ==> @JvmField public final val KOTLIN_1_1: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[PropertyDescriptorImpl]
 
 '' @ [33:29] ==> private constructor LanguageFeature(sinceVersion: LanguageVersion?, sinceApiVersion: ApiVersion = ..., hintUrl: String? = ..., defaultState: LanguageFeature.State = ...) defined in org.jetbrains.kotlin.config.LanguageFeature[ClassConstructorDescriptorImpl]
 
 'KOTLIN_1_1' @ [33:30] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
-'ApiVersion' @ [33:42] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_1' @ [33:53] ==> @JvmField public final val KOTLIN_1_1: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[PropertyDescriptorImpl]
 
@@ -128,8 +124,6 @@
 
 'KOTLIN_1_1' @ [63:16] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
-'ApiVersion' @ [63:28] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_1' @ [63:39] ==> @JvmField public final val KOTLIN_1_1: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[PropertyDescriptorImpl]
 
 'ENABLED_WITH_WARNING' @ [63:124] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
@@ -149,6 +143,8 @@ Inferred types:
     <T> -> String
 
 'String' @ [71:99] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'toLowerCase' @ [71:107] ==> @InlineOnly public inline fun String.toLowerCase(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'if (hintUrl == null) presentableName else "$presentableName (See: $hintUrl)"' @ [73:33] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -264,39 +260,35 @@ Inferred types:
 
 'it' @ [120:46] ==> value-parameter it: LanguageFeature.State defined in org.jetbrains.kotlin.config.LanguageVersionSettings.supportsFeature.<anonymous>[ValueParameterDescriptorImpl]
 
-'LanguageFeature' @ [120:52] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [120:74] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'it' @ [120:85] ==> value-parameter it: LanguageFeature.State defined in org.jetbrains.kotlin.config.LanguageVersionSettings.supportsFeature.<anonymous>[ValueParameterDescriptorImpl]
-
-'LanguageFeature' @ [120:91] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_WARNING' @ [120:113] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'JvmOverloads' @ [130:35] ==> public constructor JvmOverloads() defined in kotlin.jvm.JvmOverloads[DeserializedClassConstructorDescriptor]
 
-'emptyMap' @ [133:53] ==> public fun <K, V> emptyMap(): Map<AnalysisFlag<*>, Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [133:53] ==> public fun <K, V> emptyMap(): Map<AnalysisFlag<*>, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> AnalysisFlag<*>
-    <V> -> Nothing
+    <V> -> Any?
 
 'emptyMap' @ [134:73] ==> public fun <K, V> emptyMap(): Map<LanguageFeature, LanguageFeature.State> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> LanguageFeature
     <V> -> State
 
-'unmodifiableMap' @ [136:70] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> unmodifiableMap(p0: (MutableMap<out (AnalysisFlag<*>..AnalysisFlag<*>?), out (Any..Any?)>..Map<out (AnalysisFlag<*>..AnalysisFlag<*>?), (Any..Any?)>?)): (MutableMap<(AnalysisFlag<*>..AnalysisFlag<*>?), (Any..Any?)>..Map<(AnalysisFlag<*>..AnalysisFlag<*>?), (Any..Any?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'unmodifiableMap' @ [136:70] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> unmodifiableMap(p0: (MutableMap<out (AnalysisFlag<*>..AnalysisFlag<*>?), out Any?>..Map<out (AnalysisFlag<*>..AnalysisFlag<*>?), Any?>?)): (MutableMap<(AnalysisFlag<*>..AnalysisFlag<*>?), Any?>..Map<(AnalysisFlag<*>..AnalysisFlag<*>?), Any?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> AnalysisFlag<*>
-    <V : (Any..Any?)> -> Any
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.config.AnalysisFlag<*>..org.jetbrains.kotlin.config.AnalysisFlag<*>?)
+    <V : (Any..Any?)> -> Any?
 
 'analysisFlags' @ [136:86] ==> value-parameter analysisFlags: Map<AnalysisFlag<*>, Any?> = ... defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.<init>[ValueParameterDescriptorImpl]
 
 'unmodifiableMap' @ [137:93] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> unmodifiableMap(p0: (MutableMap<out (LanguageFeature..LanguageFeature?), out (LanguageFeature.State..LanguageFeature.State?)>..Map<out (LanguageFeature..LanguageFeature?), (LanguageFeature.State..LanguageFeature.State?)>?)): (MutableMap<(LanguageFeature..LanguageFeature?), (LanguageFeature.State..LanguageFeature.State?)>..Map<(LanguageFeature..LanguageFeature?), (LanguageFeature.State..LanguageFeature.State?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> LanguageFeature
-    <V : (Any..Any?)> -> State
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.config.LanguageFeature..org.jetbrains.kotlin.config.LanguageFeature?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.config.LanguageFeature.State..org.jetbrains.kotlin.config.LanguageFeature.State?)
 
 'specificFeatures' @ [137:109] ==> value-parameter specificFeatures: Map<LanguageFeature, LanguageFeature.State> = ... defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.<init>[ValueParameterDescriptorImpl]
 
@@ -406,11 +398,7 @@ Inferred types:
 
 'LanguageVersionSettingsImpl' @ [167:23] ==> @JvmOverloads public constructor LanguageVersionSettingsImpl(languageVersion: LanguageVersion, apiVersion: ApiVersion, analysisFlags: Map<AnalysisFlag<*>, Any?> = ..., specificFeatures: Map<LanguageFeature, LanguageFeature.State> = ...) defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[ClassConstructorDescriptorImpl]
 
-'LanguageVersion' @ [167:51] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'LATEST_STABLE' @ [167:67] ==> @JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[PropertyDescriptorImpl]
-
-'ApiVersion' @ [167:82] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [167:93] ==> @JvmField public final val LATEST_STABLE: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[PropertyDescriptorImpl]
 

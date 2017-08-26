@@ -20,7 +20,7 @@
 
 'myFixture' @ [36:9] ==> protected/*protected and package*/ final var myFixture: (JavaCodeInsightTestFixture..JavaCodeInsightTestFixture?) defined in org.jetbrains.kotlin.idea.completion.test.weighers.AbstractCompletionWeigherTest[JavaPropertyDescriptor]
 
-'configureWithExtraFile' @ [36:19] ==> public fun CodeInsightTestFixture.configureWithExtraFile(path: String, vararg extraNameParts: String = ..., relativePaths: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'configureWithExtraFile' @ [36:19] ==> public fun CodeInsightTestFixture.configureWithExtraFile(path: String, vararg extraNameParts: String = ..., relativePaths: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test in file ideaTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'relativePath' @ [36:42] ==> val relativePath: String defined in org.jetbrains.kotlin.idea.completion.test.weighers.AbstractCompletionWeigherTest.doTest[LocalVariableDescriptor]
 

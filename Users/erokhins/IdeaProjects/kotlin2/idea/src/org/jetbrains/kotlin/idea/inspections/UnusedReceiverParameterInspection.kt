@@ -109,7 +109,7 @@ Inferred types:
 
 'dispatchReceiver' @ [79:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'getThisReceiverOwner' @ [79:59] ==> public fun ReceiverValue?.getThisReceiverOwner(bindingContext: BindingContext): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.util[DeserializedSimpleFunctionDescriptor]
 
@@ -121,7 +121,7 @@ Inferred types:
 
 'extensionReceiver' @ [80:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'getThisReceiverOwner' @ [80:60] ==> public fun ReceiverValue?.getThisReceiverOwner(bindingContext: BindingContext): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.util[DeserializedSimpleFunctionDescriptor]
 
@@ -135,7 +135,7 @@ Inferred types:
 
 'candidateDescriptor' @ [84:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'containingDeclaration' @ [84:97] ==> public final val ReceiverParameterDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
@@ -171,7 +171,7 @@ Inferred types:
 
 'originalDescriptor' @ [118:82] ==> value-parameter originalDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.inspections.UnusedReceiverParameterInspection.MyQuickFix.configureChangeSignature.<no name provided>.configure[ValueParameterDescriptorImpl]
 
-'modify' @ [118:101] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'modify' @ [118:101] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [118:110] ==> value-parameter it: KotlinMutableMethodDescriptor defined in org.jetbrains.kotlin.idea.inspections.UnusedReceiverParameterInspection.MyQuickFix.configureChangeSignature.<no name provided>.configure.<anonymous>[ValueParameterDescriptorImpl]
 

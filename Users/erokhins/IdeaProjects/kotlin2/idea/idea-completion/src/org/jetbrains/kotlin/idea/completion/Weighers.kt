@@ -4,7 +4,7 @@
 
 'getUserData' @ [43:23] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(ItemPriority..ItemPriority?)>): ItemPriority? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.ItemPriority..org.jetbrains.kotlin.idea.completion.ItemPriority?)
 
 'ITEM_PRIORITY_KEY' @ [43:35] ==> public val ITEM_PRIORITY_KEY: Key<ItemPriority> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -16,7 +16,7 @@ Inferred types:
 
 'getUserData' @ [55:21] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Unit..Unit?)>): Unit? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'NOT_IMPORTED_KEY' @ [55:33] ==> public val NOT_IMPORTED_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -69,7 +69,7 @@ Inferred types:
 
 'getUserData' @ [69:21] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(ItemPriority..ItemPriority?)>): ItemPriority? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.ItemPriority..org.jetbrains.kotlin.idea.completion.ItemPriority?)
 
 'ITEM_PRIORITY_KEY' @ [69:33] ==> public val ITEM_PRIORITY_KEY: Key<ItemPriority> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -169,7 +169,7 @@ Inferred types:
 
 'getUserData' @ [106:23] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(SmartCompletionItemPriority..SmartCompletionItemPriority?)>): SmartCompletionItemPriority? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SmartCompletionItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority..org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority?)
 
 'SMART_COMPLETION_ITEM_PRIORITY_KEY' @ [106:35] ==> public val SMART_COMPLETION_ITEM_PRIORITY_KEY: Key<SmartCompletionItemPriority> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[PropertyDescriptorImpl]
 
@@ -282,7 +282,7 @@ Inferred types:
 
 'getUserData' @ [166:30] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(CallableWeight..CallableWeight?)>): CallableWeight? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CallableWeight
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.CallableWeight..org.jetbrains.kotlin.idea.completion.CallableWeight?)
 
 'CALLABLE_WEIGHT_KEY' @ [166:42] ==> public val CALLABLE_WEIGHT_KEY: Key<CallableWeight> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -372,8 +372,6 @@ Inferred types:
 'weight' @ [188:35] ==> val weight: CallableWeight defined in org.jetbrains.kotlin.idea.completion.CallableWeigher.weigh[LocalVariableDescriptor]
 
 'receiverIndex' @ [188:42] ==> public final val receiverIndex: Int? defined in org.jetbrains.kotlin.idea.completion.CallableWeight[PropertyDescriptorImpl]
-
-'Int' @ [188:59] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [188:63] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
@@ -549,7 +547,7 @@ Inferred types:
 
 'getUserData' @ [249:59] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(SmartCompletionItemPriority..SmartCompletionItemPriority?)>): SmartCompletionItemPriority? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SmartCompletionItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority..org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority?)
 
 'SMART_COMPLETION_ITEM_PRIORITY_KEY' @ [249:71] ==> public val SMART_COMPLETION_ITEM_PRIORITY_KEY: Key<SmartCompletionItemPriority> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[PropertyDescriptorImpl]
 
@@ -574,7 +572,7 @@ Inferred types:
 
 'getUserData' @ [252:33] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Unit..Unit?)>): Unit? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'NOT_IMPORTED_KEY' @ [252:45] ==> public val NOT_IMPORTED_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -630,7 +628,7 @@ Inferred types:
 
 'getUserData' @ [291:21] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Unit..Unit?)>): Unit? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'NAMED_ARGUMENT_KEY' @ [291:33] ==> public final val NAMED_ARGUMENT_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher.Companion[PropertyDescriptorImpl]
 
@@ -640,7 +638,7 @@ Inferred types:
 
 'getUserData' @ [295:32] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(SmartCompletionItemPriority..SmartCompletionItemPriority?)>): SmartCompletionItemPriority? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SmartCompletionItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority..org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority?)
 
 'SMART_COMPLETION_ITEM_PRIORITY_KEY' @ [295:44] ==> public val SMART_COMPLETION_ITEM_PRIORITY_KEY: Key<SmartCompletionItemPriority> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[PropertyDescriptorImpl]
 
@@ -654,7 +652,7 @@ Inferred types:
 
 'getUserData' @ [297:49] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Int..Int?)>): Int? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'NAME_SIMILARITY_KEY' @ [297:61] ==> public val NAME_SIMILARITY_KEY: Key<Int> defined in org.jetbrains.kotlin.idea.completion.smart in file NameSimilarity.kt[PropertyDescriptorImpl]
 
@@ -711,7 +709,7 @@ Inferred types:
 
 'descriptor' @ [311:17] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher.weigh[LocalVariableDescriptor]
 
-'fuzzyTypesForSmartCompletion' @ [311:28] ==> public fun DeclarationDescriptor.fuzzyTypesForSmartCompletion(smartCastCalculator: SmartCastCalculator, callTypeAndReceiver: CallTypeAndReceiver<*, *>, resolutionFacade: ResolutionFacade, bindingContext: BindingContext): Collection<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'fuzzyTypesForSmartCompletion' @ [311:28] ==> public fun DeclarationDescriptor.fuzzyTypesForSmartCompletion(smartCastCalculator: SmartCastCalculator, callTypeAndReceiver: CallTypeAndReceiver<*, *>, resolutionFacade: ResolutionFacade, bindingContext: BindingContext): Collection<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'smartCastCalculator' @ [311:57] ==> val smartCastCalculator: SmartCastCalculator defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher.weigh[LocalVariableDescriptor]
 
@@ -765,7 +763,7 @@ Inferred types:
 
 'fuzzyTypes' @ [321:100] ==> val fuzzyTypes: Collection<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher.weigh[LocalVariableDescriptor]
 
-'matchExpectedInfo' @ [321:111] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'matchExpectedInfo' @ [321:111] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [321:129] ==> value-parameter it: ExpectedInfo defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher.weigh.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -778,8 +776,6 @@ Inferred types:
 'it' @ [322:27] ==> value-parameter it: Pair<ExpectedInfo, ExpectedInfoMatch> defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher.weigh.<anonymous>[ValueParameterDescriptorImpl]
 
 'second' @ [322:30] ==> public final val second: ExpectedInfoMatch defined in kotlin.Pair[DeserializedPropertyDescriptor]
-
-'ExpectedInfoMatch' @ [322:40] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch[FakeCallableDescriptorForObject]
 
 'noMatch' @ [322:58] ==> public final val noMatch: ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch.Companion[PropertyDescriptorImpl]
 
@@ -807,8 +803,6 @@ Inferred types:
 
 'second' @ [325:53] ==> public final val second: ExpectedInfoMatch defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
-'ExpectedInfoMatch' @ [325:63] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch[FakeCallableDescriptorForObject]
-
 'noMatch' @ [325:81] ==> public final val noMatch: ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart.ExpectedInfoMatch.Companion[PropertyDescriptorImpl]
 
 'map' @ [325:91] ==> public inline fun <T, R> Iterable<Pair<ExpectedInfo, ExpectedInfoMatch>>.map(transform: (Pair<ExpectedInfo, ExpectedInfoMatch>) -> ExpectedInfo): List<ExpectedInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -820,7 +814,7 @@ Inferred types:
 
 'first' @ [325:100] ==> public final val first: ExpectedInfo defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
-'calcNameSimilarity' @ [326:13] ==> public fun calcNameSimilarity(name: String, expectedInfos: Collection<ExpectedInfo>): Int defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'calcNameSimilarity' @ [326:13] ==> public fun calcNameSimilarity(name: String, expectedInfos: Collection<ExpectedInfo>): Int defined in org.jetbrains.kotlin.idea.completion.smart in file NameSimilarity.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [326:32] ==> val name: Name? defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher.weigh[LocalVariableDescriptor]
 
@@ -997,7 +991,7 @@ Inferred types:
 
 'getUserData' @ [384:64] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(SmartCompletionItemPriority..SmartCompletionItemPriority?)>): SmartCompletionItemPriority? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SmartCompletionItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority..org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority?)
 
 'SMART_COMPLETION_ITEM_PRIORITY_KEY' @ [384:76] ==> public val SMART_COMPLETION_ITEM_PRIORITY_KEY: Key<SmartCompletionItemPriority> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[PropertyDescriptorImpl]
 

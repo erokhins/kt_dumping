@@ -556,7 +556,7 @@ Inferred types:
 
 'destructuringDeclaration' @ [201:53] ==> public final val KtForExpression.destructuringDeclaration: KtDestructuringDeclaration?[MyPropertyDescriptor]
 
-'accept' @ [201:80] ==> public open fun accept(@NotNull p0: PsiElementVisitor): Unit defined in com.intellij.extapi.psi.ASTDelegatePsiElement[JavaMethodDescriptor]
+'accept' @ [201:80] ==> public abstract fun accept(@NotNull p0: PsiElementVisitor): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 
 'this' @ [201:87] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.renderTrimmed.Renderer[LazyClassReceiverParameterDescriptor]
 

@@ -4,8 +4,6 @@
 
 'supportsFeature' @ [60:38] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [60:54] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'MultiPlatformProjects' @ [60:70] ==> enum entry MultiPlatformProjects defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'descriptor' @ [62:13] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.check[ValueParameterDescriptorImpl]
@@ -17,8 +15,6 @@
 'getFlag' @ [64:50] ==> public abstract fun <T> getFlag(flag: AnalysisFlag<Boolean>): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Boolean
-
-'AnalysisFlag' @ [64:58] ==> public companion object Flags defined in org.jetbrains.kotlin.config.AnalysisFlag[FakeCallableDescriptorForObject]
 
 'multiPlatformDoNotCheckImpl' @ [64:71] ==> @JvmStatic public final val multiPlatformDoNotCheckImpl: AnalysisFlag<Boolean> defined in org.jetbrains.kotlin.config.AnalysisFlag.Flags[DeserializedPropertyDescriptor]
 
@@ -578,8 +574,6 @@ Inferred types:
 
 'getDescriptorsFiltered' @ [205:17] ==> public fun MemberScope.getDescriptorsFiltered(kindFilter: DescriptorKindFilter = ..., nameFilter: (Name) -> Boolean = ...): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [205:40] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CLASSIFIERS' @ [205:61] ==> @field:JvmField public final val CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'it' @ [205:76] ==> value-parameter it: Name defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.findClassifiersFromModule.getAllClassifiers.<anonymous>[ValueParameterDescriptorImpl]
@@ -877,6 +871,8 @@ Inferred types:
 
 'bParams' @ [317:63] ==> val bParams: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>) defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleCallables[LocalVariableDescriptor]
 
+'getName' @ [317:98] ==> @NotNull public abstract fun getName(): Name defined in org.jetbrains.kotlin.descriptors.ValueParameterDescriptor[JavaMethodDescriptor]
+
 'ParameterNames' @ [317:128] ==> public object ParameterNames : HeaderImplDeclarationChecker.Compatibility.Incompatible defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.Compatibility.Incompatible[FakeCallableDescriptorForObject]
 
 '!' @ [318:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
@@ -889,6 +885,8 @@ Inferred types:
 'aTypeParams' @ [318:23] ==> val aTypeParams: List<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleCallables[LocalVariableDescriptor]
 
 'bTypeParams' @ [318:36] ==> val bTypeParams: List<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleCallables[LocalVariableDescriptor]
+
+'getName' @ [318:74] ==> @NotNull public abstract fun getName(): Name defined in org.jetbrains.kotlin.descriptors.TypeParameterDescriptor[JavaMethodDescriptor]
 
 'TypeParameterNames' @ [318:104] ==> public object TypeParameterNames : HeaderImplDeclarationChecker.Compatibility.Incompatible defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.Compatibility.Incompatible[FakeCallableDescriptorForObject]
 
@@ -943,6 +941,8 @@ Inferred types:
 'aParams' @ [325:23] ==> val aParams: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>) defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleCallables[LocalVariableDescriptor]
 
 'bParams' @ [325:32] ==> val bParams: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>) defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleCallables[LocalVariableDescriptor]
+
+'declaresDefaultValue' @ [325:67] ==> public abstract fun declaresDefaultValue(): Boolean defined in org.jetbrains.kotlin.descriptors.ValueParameterDescriptor[DeserializedSimpleFunctionDescriptor]
 
 'ValueParameterHasDefault' @ [325:110] ==> public object ValueParameterHasDefault : HeaderImplDeclarationChecker.Compatibility.Incompatible defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.Compatibility.Incompatible[FakeCallableDescriptorForObject]
 
@@ -1195,6 +1195,8 @@ Inferred types:
 
 'b' @ [392:26] ==> value-parameter b: List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleTypeParameters[ValueParameterDescriptorImpl]
 
+'getVariance' @ [392:54] ==> @NotNull public abstract fun getVariance(): Variance defined in org.jetbrains.kotlin.descriptors.TypeParameterDescriptor[JavaMethodDescriptor]
+
 'TypeParameterVariance' @ [392:88] ==> public object TypeParameterVariance : HeaderImplDeclarationChecker.Compatibility.Incompatible defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.Compatibility.Incompatible[FakeCallableDescriptorForObject]
 
 '!' @ [393:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
@@ -1207,6 +1209,8 @@ Inferred types:
 'a' @ [393:23] ==> value-parameter a: List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleTypeParameters[ValueParameterDescriptorImpl]
 
 'b' @ [393:26] ==> value-parameter b: List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleTypeParameters[ValueParameterDescriptorImpl]
+
+'isReified' @ [393:54] ==> public abstract fun isReified(): Boolean defined in org.jetbrains.kotlin.descriptors.TypeParameterDescriptor[JavaMethodDescriptor]
 
 'TypeParameterReified' @ [393:86] ==> public object TypeParameterReified : HeaderImplDeclarationChecker.Compatibility.Incompatible defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.Compatibility.Incompatible[FakeCallableDescriptorForObject]
 
@@ -1437,15 +1441,11 @@ Inferred types:
 
 'modality' @ [438:45] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [438:57] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [438:66] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'b' @ [438:75] ==> val b: ClassDescriptor defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleClassifiers[LocalVariableDescriptor]
 
 'modality' @ [438:77] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [438:89] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [438:98] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -1504,6 +1504,8 @@ Inferred types:
 
 'KotlinBuiltIns' @ [448:66] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull p0: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
 
+'isAny' @ [448:82] ==> public open fun isAny(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
+
 'b' @ [449:27] ==> val b: ClassDescriptor defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleClassifiers[LocalVariableDescriptor]
 
 'typeConstructor' @ [449:29] ==> public final val ClassDescriptor.typeConstructor: TypeConstructor[MyPropertyDescriptor]
@@ -1515,6 +1517,8 @@ Inferred types:
     <T> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'KotlinBuiltIns' @ [449:66] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull p0: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
+
+'isAny' @ [449:82] ==> public open fun isAny(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 
 'aSupertypes' @ [450:13] ==> val aSupertypes: List<(KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.areCompatibleClassifiers[LocalVariableDescriptor]
 
@@ -1695,7 +1699,7 @@ Inferred types:
 
 'SmartList' @ [484:85] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> CallableMemberDescriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
 'add' @ [484:99] ==> public abstract fun add(element: CallableMemberDescriptor): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
@@ -1724,6 +1728,8 @@ Inferred types:
     <T> -> DeclarationDescriptor
 
 'DescriptorUtils' @ [493:78] ==> private constructor DescriptorUtils() defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaClassConstructorDescriptor]
+
+'isEnumEntry' @ [493:95] ==> public open fun isEnumEntry(@NotNull p0: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
 'map' @ [493:108] ==> public inline fun <T, R> Iterable<DeclarationDescriptor>.map(transform: (DeclarationDescriptor) -> Name): List<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1771,8 +1777,6 @@ Inferred types:
 'it' @ [508:52] ==> value-parameter it: Name defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.getMembers.<anonymous>[ValueParameterDescriptorImpl]
 
 'name' @ [508:58] ==> value-parameter name: Name? = ... defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.getMembers[ValueParameterDescriptorImpl]
-
-'MemberScope' @ [508:70] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'ALL_NAME_FILTER' @ [508:82] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 
@@ -1826,8 +1830,6 @@ Inferred types:
 
 'create' @ [530:55] ==> @NotNull public open fun create(@NotNull p0: TypeSubstitution): TypeSubstitutor defined in org.jetbrains.kotlin.types.TypeSubstitutor[JavaMethodDescriptor]
 
-'TypeConstructorSubstitution' @ [531:17] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
-
 'createByParametersMap' @ [531:45] ==> @JvmStatic public final fun createByParametersMap(map: Map<TypeParameterDescriptor, TypeProjection>): TypeConstructorSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[DeserializedSimpleFunctionDescriptor]
 
 'aTypeParams' @ [531:67] ==> value-parameter aTypeParams: List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.Substitutor.<init>[ValueParameterDescriptorImpl]
@@ -1863,6 +1865,8 @@ Inferred types:
     <R> -> TypeProjection?
 
 'typeSubstitutor' @ [537:73] ==> private final val typeSubstitutor: TypeSubstitutor defined in org.jetbrains.kotlin.resolve.checkers.HeaderImplDeclarationChecker.Substitutor[PropertyDescriptorImpl]
+
+'substitute' @ [537:90] ==> @Nullable public open fun substitute(@NotNull p0: TypeProjection): TypeProjection? defined in org.jetbrains.kotlin.types.TypeSubstitutor[JavaMethodDescriptor]
 
 'type' @ [537:103] ==> public final val TypeProjection.type: KotlinType[MyPropertyDescriptor]
 

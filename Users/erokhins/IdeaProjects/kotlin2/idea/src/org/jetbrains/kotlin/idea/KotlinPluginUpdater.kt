@@ -338,7 +338,7 @@ Inferred types:
 
 'connect' @ [181:53] ==> public final fun <T : (Any..Any?)> connect(@NotNull p0: (HttpRequests.Request) -> (Element..Element?)): (Element..Element?) defined in com.intellij.util.io.RequestBuilder[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Element
+    <T : (Any..Any?)> -> (org.jdom.Element..org.jdom.Element?)
 
 'load' @ [182:22] ==> @Contract public open fun load(p0: (InputStream..InputStream?)): (Element..Element?) defined in com.intellij.openapi.util.JDOMUtil[JavaMethodDescriptor]
 
@@ -607,7 +607,7 @@ Inferred types:
 
 'getService' @ [303:65] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Class<(KotlinPluginUpdater..KotlinPluginUpdater?)>): (KotlinPluginUpdater..KotlinPluginUpdater?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinPluginUpdater
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.KotlinPluginUpdater..org.jetbrains.kotlin.idea.KotlinPluginUpdater?)
 
 'KotlinPluginUpdater' @ [303:76] ==> public companion object defined in org.jetbrains.kotlin.idea.KotlinPluginUpdater[FakeCallableDescriptorForObject]
 

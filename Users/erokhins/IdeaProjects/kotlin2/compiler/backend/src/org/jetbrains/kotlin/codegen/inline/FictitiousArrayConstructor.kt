@@ -4,8 +4,6 @@
 
 'containingDeclaration' @ [24:20] ==> public final val ClassDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'Annotations' @ [24:49] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [24:61] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'arrayClass' @ [24:68] ==> value-parameter arrayClass: ClassDescriptor defined in org.jetbrains.kotlin.codegen.inline.FictitiousArrayConstructor.<init>[ValueParameterDescriptorImpl]
@@ -45,8 +43,6 @@ Inferred types:
 'arrayClass' @ [32:112] ==> val arrayClass: ClassDescriptor defined in org.jetbrains.kotlin.codegen.inline.FictitiousArrayConstructor.Factory.create[LocalVariableDescriptor]
 
 'defaultType' @ [32:123] ==> public final val ClassDescriptor.defaultType: SimpleType[MyPropertyDescriptor]
-
-'Modality' @ [33:33] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [33:42] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

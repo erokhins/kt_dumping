@@ -108,7 +108,9 @@
 
 'file' @ [70:49] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.refactoring.rename.KotlinMemberInplaceRenameHandler.isAvailable[ValueParameterDescriptorImpl]
 
-'AbstractReferenceSubstitutionRenameHandler' @ [72:35] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.rename.AbstractReferenceSubstitutionRenameHandler[FakeCallableDescriptorForObject]
+'?:' @ [72:35] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtSimpleNameExpression?, right: KtSimpleNameExpression): KtSimpleNameExpression[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtSimpleNameExpression
 
 'getReferenceExpression' @ [72:78] ==> public final fun getReferenceExpression(file: PsiFile, offset: Int): KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.refactoring.rename.AbstractReferenceSubstitutionRenameHandler.Companion[SimpleFunctionDescriptorImpl]
 

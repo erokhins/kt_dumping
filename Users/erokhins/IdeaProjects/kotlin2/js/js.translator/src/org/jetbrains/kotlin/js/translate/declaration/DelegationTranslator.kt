@@ -196,7 +196,9 @@ Inferred types:
 
 'specifier' @ [90:57] ==> val specifier: KtDelegatedSuperTypeEntry defined in org.jetbrains.kotlin.js.translate.declaration.DelegationTranslator.generateDelegated[LocalVariableDescriptor]
 
-'CodegenUtil' @ [96:13] ==> public object CodegenUtil defined in org.jetbrains.kotlin.backend.common[FakeCallableDescriptorForObject]
+'?:' @ [96:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ClassDescriptor?, right: ClassDescriptor?): ClassDescriptor?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ClassDescriptor?
 
 'getSuperClassBySuperTypeListEntry' @ [96:25] ==> @JvmStatic public final fun getSuperClassBySuperTypeListEntry(specifier: KtSuperTypeListEntry, bindingContext: BindingContext): ClassDescriptor? defined in org.jetbrains.kotlin.backend.common.CodegenUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -624,9 +626,13 @@ Inferred types:
 
 'propertyInitializers' @ [197:21] ==> public final val JsObjectLiteral.propertyInitializers: (MutableList<(JsPropertyInitializer..JsPropertyInitializer?)>..List<(JsPropertyInitializer..JsPropertyInitializer?)>?)[MyPropertyDescriptor]
 
-'addGetterAndSetter' @ [197:42] ==> public fun MutableList<JsPropertyInitializer>.addGetterAndSetter(descriptor: VariableDescriptorWithAccessors, generateGetter: () -> JsPropertyInitializer, generateSetter: () -> JsPropertyInitializer): Unit defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'addGetterAndSetter' @ [197:42] ==> public fun MutableList<JsPropertyInitializer>.addGetterAndSetter(descriptor: VariableDescriptorWithAccessors, generateGetter: () -> JsPropertyInitializer, generateSetter: () -> JsPropertyInitializer): Unit defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [197:61] ==> value-parameter descriptor: PropertyDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.DelegationTranslator.generateDelegateCallForPropertyMember[ValueParameterDescriptorImpl]
+
+'generateDelegateGetter' @ [197:75] ==> local final fun generateDelegateGetter(): JsPropertyInitializer defined in org.jetbrains.kotlin.js.translate.declaration.DelegationTranslator.generateDelegateCallForPropertyMember[SimpleFunctionDescriptorImpl]
+
+'generateDelegateSetter' @ [197:101] ==> local final fun generateDelegateSetter(): JsPropertyInitializer defined in org.jetbrains.kotlin.js.translate.declaration.DelegationTranslator.generateDelegateCallForPropertyMember[SimpleFunctionDescriptorImpl]
 
 'context' @ [198:13] ==> @NotNull protected/*protected and package*/ open fun context(): TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration.DelegationTranslator[JavaMethodDescriptor]
 

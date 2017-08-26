@@ -4,7 +4,7 @@
 
 'typeArguments' @ [28:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'assert' @ [29:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -54,7 +54,7 @@ Inferred types:
 
 'arrayKtType' @ [37:44] ==> val arrayKtType: SimpleType defined in org.jetbrains.kotlin.codegen.intrinsics.IsArrayOf.toCallable[LocalVariableDescriptor]
 
-'createIntrinsicCallable' @ [39:16] ==> public fun createIntrinsicCallable(callable: CallableMethod, invoke: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics[SimpleFunctionDescriptorImpl]
+'createIntrinsicCallable' @ [39:16] ==> public fun createIntrinsicCallable(callable: CallableMethod, invoke: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics in file IntrinsicCallable.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [39:40] ==> val method: CallableMethod defined in org.jetbrains.kotlin.codegen.intrinsics.IsArrayOf.toCallable[LocalVariableDescriptor]
 

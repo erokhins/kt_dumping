@@ -81,7 +81,7 @@ Inferred types:
 
 'this' @ [56:18] ==> <this> defined in org.jetbrains.kotlin.idea.search.restrictToKotlinSources[ReceiverParameterDescriptorImpl]
 
-'restrictToKotlinSources' @ [57:33] ==> public fun GlobalSearchScope.restrictToKotlinSources(): GlobalSearchScope defined in org.jetbrains.kotlin.idea.search[SimpleFunctionDescriptorImpl]
+'restrictToKotlinSources' @ [57:33] ==> public fun GlobalSearchScope.restrictToKotlinSources(): GlobalSearchScope defined in org.jetbrains.kotlin.idea.search in file searchUtil.kt[SimpleFunctionDescriptorImpl]
 
 'scope' @ [59:30] ==> public final val LocalSearchScope.scope: (Array<(PsiElement..PsiElement?)>..Array<out (PsiElement..PsiElement?)>)[MyPropertyDescriptor]
 
@@ -123,7 +123,7 @@ Inferred types:
 
 'this' @ [66:17] ==> <this> defined in org.jetbrains.kotlin.idea.search.restrictToKotlinSources[ReceiverParameterDescriptorImpl]
 
-'excludeFileTypes' @ [70:55] ==> public fun SearchScope.excludeFileTypes(vararg fileTypes: FileType): SearchScope defined in org.jetbrains.kotlin.idea.search[SimpleFunctionDescriptorImpl]
+'excludeFileTypes' @ [70:55] ==> public fun SearchScope.excludeFileTypes(vararg fileTypes: FileType): SearchScope defined in org.jetbrains.kotlin.idea.search in file searchUtil.kt[SimpleFunctionDescriptorImpl]
 
 'INSTANCE' @ [70:87] ==> public final val INSTANCE: (KotlinFileType..KotlinFileType?) defined in org.jetbrains.kotlin.idea.KotlinFileType[JavaPropertyDescriptor]
 

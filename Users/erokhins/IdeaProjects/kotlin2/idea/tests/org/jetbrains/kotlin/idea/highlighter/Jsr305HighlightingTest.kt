@@ -40,11 +40,7 @@ Inferred types:
 
 'createFacet' @ [47:24] ==> public fun Module.createFacet(platformKind: TargetPlatformKind<*>? = ...): Unit defined in org.jetbrains.kotlin.idea.stubs in file AbstractMultiModuleTest.kt[SimpleFunctionDescriptorImpl]
 
-'TargetPlatformKind' @ [47:36] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'Jvm' @ [47:55] ==> public constructor Jvm(version: JvmTarget) defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[DeserializedClassConstructorDescriptor]
-
-'JvmTarget' @ [47:59] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_8' @ [47:69] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 

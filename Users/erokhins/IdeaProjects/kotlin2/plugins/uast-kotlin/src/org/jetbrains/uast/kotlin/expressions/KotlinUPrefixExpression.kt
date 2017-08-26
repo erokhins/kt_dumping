@@ -1,8 +1,8 @@
 'KotlinAbstractUExpression' @ [30:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [31:29] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [31:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [31:34] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -47,35 +47,23 @@ Inferred types:
 
 'EXCL' @ [39:18] ==> public final val EXCL: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastPrefixOperator' @ [39:26] ==> public companion object defined in org.jetbrains.uast.UastPrefixOperator[FakeCallableDescriptorForObject]
-
 'LOGICAL_NOT' @ [39:45] ==> @field:JvmField public final val LOGICAL_NOT: UastPrefixOperator defined in org.jetbrains.uast.UastPrefixOperator.Companion[DeserializedPropertyDescriptor]
 
 'PLUS' @ [40:18] ==> public final val PLUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastPrefixOperator' @ [40:26] ==> public companion object defined in org.jetbrains.uast.UastPrefixOperator[FakeCallableDescriptorForObject]
 
 'UNARY_PLUS' @ [40:45] ==> @field:JvmField public final val UNARY_PLUS: UastPrefixOperator defined in org.jetbrains.uast.UastPrefixOperator.Companion[DeserializedPropertyDescriptor]
 
 'MINUS' @ [41:18] ==> public final val MINUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastPrefixOperator' @ [41:27] ==> public companion object defined in org.jetbrains.uast.UastPrefixOperator[FakeCallableDescriptorForObject]
-
 'UNARY_MINUS' @ [41:46] ==> @field:JvmField public final val UNARY_MINUS: UastPrefixOperator defined in org.jetbrains.uast.UastPrefixOperator.Companion[DeserializedPropertyDescriptor]
 
 'PLUSPLUS' @ [42:18] ==> public final val PLUSPLUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastPrefixOperator' @ [42:30] ==> public companion object defined in org.jetbrains.uast.UastPrefixOperator[FakeCallableDescriptorForObject]
 
 'INC' @ [42:49] ==> @field:JvmField public final val INC: UastPrefixOperator defined in org.jetbrains.uast.UastPrefixOperator.Companion[DeserializedPropertyDescriptor]
 
 'MINUSMINUS' @ [43:18] ==> public final val MINUSMINUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastPrefixOperator' @ [43:32] ==> public companion object defined in org.jetbrains.uast.UastPrefixOperator[FakeCallableDescriptorForObject]
-
 'DEC' @ [43:51] ==> @field:JvmField public final val DEC: UastPrefixOperator defined in org.jetbrains.uast.UastPrefixOperator.Companion[DeserializedPropertyDescriptor]
-
-'UastPrefixOperator' @ [44:17] ==> public companion object defined in org.jetbrains.uast.UastPrefixOperator[FakeCallableDescriptorForObject]
 
 'UNKNOWN' @ [44:36] ==> @field:JvmField public final val UNKNOWN: UastPrefixOperator defined in org.jetbrains.uast.UastPrefixOperator.Companion[DeserializedPropertyDescriptor]
 

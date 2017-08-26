@@ -6,13 +6,11 @@
 
 'supportsFeature' @ [40:46] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [40:62] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'DslMarkersSupport' @ [40:78] ==> enum entry DslMarkersSupport defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'resolvedCall' @ [41:37] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.resolve.calls.checkers.DslScopeViolationCallChecker.check[ValueParameterDescriptorImpl]
 
-'getImplicitReceivers' @ [41:50] ==> public fun ResolvedCall<*>.getImplicitReceivers(): Collection<ReceiverValue> defined in org.jetbrains.kotlin.resolve.calls.resolvedCallUtil[SimpleFunctionDescriptorImpl]
+'getImplicitReceivers' @ [41:50] ==> public fun ResolvedCall<*>.getImplicitReceivers(): Collection<ReceiverValue> defined in org.jetbrains.kotlin.resolve.calls.resolvedCallUtil in file resolvedCallUtil.kt[SimpleFunctionDescriptorImpl]
 
 'callImplicitReceivers' @ [43:38] ==> val callImplicitReceivers: Collection<ReceiverValue> defined in org.jetbrains.kotlin.resolve.calls.checkers.DslScopeViolationCallChecker.check[LocalVariableDescriptor]
 
@@ -87,6 +85,8 @@ Inferred types:
 
 'callDslMarkers' @ [65:116] ==> val callDslMarkers: Set<FqName> defined in org.jetbrains.kotlin.resolve.calls.checkers.DslScopeViolationCallChecker.checkCallImplicitReceiver[LocalVariableDescriptor]
 
+'contains' @ [65:132] ==> public abstract fun contains(element: FqName): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
+
 'closestAnotherReceiverWithSameDslMarker' @ [67:13] ==> val closestAnotherReceiverWithSameDslMarker: ReceiverValue? defined in org.jetbrains.kotlin.resolve.calls.checkers.DslScopeViolationCallChecker.checkCallImplicitReceiver[LocalVariableDescriptor]
 
 'context' @ [69:13] ==> value-parameter context: CallCheckerContext defined in org.jetbrains.kotlin.resolve.calls.checkers.DslScopeViolationCallChecker.checkCallImplicitReceiver[ValueParameterDescriptorImpl]
@@ -105,7 +105,7 @@ Inferred types:
 
 'resultingDescriptor' @ [69:87] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'mutableSetOf' @ [74:22] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<FqName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -117,7 +117,7 @@ Inferred types:
 
 'annotations' @ [76:23] ==> public abstract val annotations: Annotations defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 
-'extractDslMarkerFqNames' @ [76:35] ==> private fun Annotations.extractDslMarkerFqNames(): List<FqName> defined in org.jetbrains.kotlin.resolve.calls.checkers[SimpleFunctionDescriptorImpl]
+'extractDslMarkerFqNames' @ [76:35] ==> private fun Annotations.extractDslMarkerFqNames(): List<FqName> defined in org.jetbrains.kotlin.resolve.calls.checkers in file DslScopeViolationCallChecker.kt[SimpleFunctionDescriptorImpl]
 
 'getAbbreviation' @ [78:9] ==> public fun KotlinType.getAbbreviation(): SimpleType? defined in org.jetbrains.kotlin.types[DeserializedSimpleFunctionDescriptor]
 
@@ -136,7 +136,7 @@ Inferred types:
 
 'annotations' @ [79:27] ==> public abstract val annotations: Annotations defined in org.jetbrains.kotlin.descriptors.ClassifierDescriptor[DeserializedPropertyDescriptor]
 
-'extractDslMarkerFqNames' @ [79:39] ==> private fun Annotations.extractDslMarkerFqNames(): List<FqName> defined in org.jetbrains.kotlin.resolve.calls.checkers[SimpleFunctionDescriptorImpl]
+'extractDslMarkerFqNames' @ [79:39] ==> private fun Annotations.extractDslMarkerFqNames(): List<FqName> defined in org.jetbrains.kotlin.resolve.calls.checkers in file DslScopeViolationCallChecker.kt[SimpleFunctionDescriptorImpl]
 
 'safeAs' @ [80:13] ==> public inline fun <reified T : Any> Any?.safeAs(): TypeAliasDescriptor? defined in org.jetbrains.kotlin.utils.addToStdlib[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -177,13 +177,15 @@ Inferred types:
 
 'annotations' @ [86:42] ==> public abstract val annotations: Annotations defined in org.jetbrains.kotlin.descriptors.ClassifierDescriptor[DeserializedPropertyDescriptor]
 
-'extractDslMarkerFqNames' @ [86:54] ==> private fun Annotations.extractDslMarkerFqNames(): List<FqName> defined in org.jetbrains.kotlin.resolve.calls.checkers[SimpleFunctionDescriptorImpl]
+'extractDslMarkerFqNames' @ [86:54] ==> private fun Annotations.extractDslMarkerFqNames(): List<FqName> defined in org.jetbrains.kotlin.resolve.calls.checkers in file DslScopeViolationCallChecker.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [88:16] ==> val result: MutableSet<FqName> defined in org.jetbrains.kotlin.resolve.calls.checkers.DslScopeViolationCallChecker.extractDslMarkerFqNames[LocalVariableDescriptor]
 
 'filter' @ [94:9] ==> public inline fun <T> Iterable<AnnotationDescriptor>.filter(predicate: (AnnotationDescriptor) -> Boolean): List<AnnotationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AnnotationDescriptor
+
+'isDslMarker' @ [94:38] ==> private fun AnnotationDescriptor.isDslMarker(): Boolean defined in org.jetbrains.kotlin.resolve.calls.checkers in file DslScopeViolationCallChecker.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [94:51] ==> public inline fun <T, R> Iterable<AnnotationDescriptor>.map(transform: (AnnotationDescriptor) -> FqName): List<FqName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

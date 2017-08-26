@@ -788,7 +788,7 @@ Inferred types:
 
 'memberDescriptor' @ [301:19] ==> val memberDescriptor: DeclarationDescriptorNonRoot defined in org.jetbrains.kotlin.resolve.OverloadResolver.reportRedeclarations[LocalVariableDescriptor]
 
-'reportOnDeclaration' @ [304:21] ==> public inline fun reportOnDeclaration(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'reportOnDeclaration' @ [304:21] ==> public inline fun reportOnDeclaration(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics in file diagnosticUtils.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [304:41] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.OverloadResolver[PropertyDescriptorImpl]
 
@@ -802,7 +802,7 @@ Inferred types:
 
 'redeclarations' @ [304:96] ==> value-parameter redeclarations: Collection<DeclarationDescriptorNonRoot> defined in org.jetbrains.kotlin.resolve.OverloadResolver.reportRedeclarations[ValueParameterDescriptorImpl]
 
-'reportOnDeclaration' @ [306:21] ==> public inline fun reportOnDeclaration(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'reportOnDeclaration' @ [306:21] ==> public inline fun reportOnDeclaration(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics in file diagnosticUtils.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [306:41] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.OverloadResolver[PropertyDescriptorImpl]
 

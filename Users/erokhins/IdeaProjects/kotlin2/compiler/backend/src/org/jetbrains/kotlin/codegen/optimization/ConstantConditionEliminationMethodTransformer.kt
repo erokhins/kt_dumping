@@ -48,7 +48,7 @@ Inferred types:
 
 'analyze' @ [52:34] ==> @NotNull public open fun <V : (Value..Value?)> analyze(@NotNull internalClassName: String, @NotNull node: MethodNode, @NotNull interpreter: Interpreter<(BasicValue..BasicValue?)>): (Array<(Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>..Array<out (Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>) defined in org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer[JavaMethodDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)
 
 'internalClassName' @ [52:42] ==> public final val internalClassName: String defined in org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer.ConstantConditionsOptimization[PropertyDescriptorImpl]
 
@@ -557,8 +557,6 @@ Inferred types:
 
 'ICONST_5' @ [168:53] ==> public const final val ICONST_5: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'IConstValue' @ [169:25] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer.IConstValue[FakeCallableDescriptorForObject]
-
 'of' @ [169:37] ==> public final fun of(value: Int): ConstantConditionEliminationMethodTransformer.IConstValue defined in org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer.IConstValue.Companion[SimpleFunctionDescriptorImpl]
 
 'insn' @ [169:40] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer.ConstantPropagationInterpreter.newOperation[ValueParameterDescriptorImpl]
@@ -570,8 +568,6 @@ Inferred types:
 'BIPUSH' @ [170:29] ==> public const final val BIPUSH: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
 'SIPUSH' @ [170:45] ==> public const final val SIPUSH: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
-
-'IConstValue' @ [171:25] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer.IConstValue[FakeCallableDescriptorForObject]
 
 'of' @ [171:37] ==> public final fun of(value: Int): ConstantConditionEliminationMethodTransformer.IConstValue defined in org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer.IConstValue.Companion[SimpleFunctionDescriptorImpl]
 
@@ -601,8 +597,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)
 
 'operand' @ [174:29] ==> val operand: (Any..Any?) defined in org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer.ConstantPropagationInterpreter.newOperation[LocalVariableDescriptor]
-
-'IConstValue' @ [175:29] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer.IConstValue[FakeCallableDescriptorForObject]
 
 'of' @ [175:41] ==> public final fun of(value: Int): ConstantConditionEliminationMethodTransformer.IConstValue defined in org.jetbrains.kotlin.codegen.optimization.ConstantConditionEliminationMethodTransformer.IConstValue.Companion[SimpleFunctionDescriptorImpl]
 

@@ -6,9 +6,9 @@ Inferred types:
 Inferred types:
     <T> -> MavenDomProjectModel
 
-'lazy' @ [31:37] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [31:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'bundledRuntimeVersion' @ [31:44] ==> public fun bundledRuntimeVersion(): String defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -54,7 +54,9 @@ Inferred types:
 
 'virtualFile' @ [44:97] ==> public final val XmlFile.virtualFile: (VirtualFile..VirtualFile?)[MyPropertyDescriptor]
 
-'PomFile' @ [48:23] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'?:' @ [48:23] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PomFile?, right: PomFile): PomFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PomFile
 
 'forFileOrNull' @ [48:31] ==> public final fun forFileOrNull(xmlFile: XmlFile): PomFile? defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 

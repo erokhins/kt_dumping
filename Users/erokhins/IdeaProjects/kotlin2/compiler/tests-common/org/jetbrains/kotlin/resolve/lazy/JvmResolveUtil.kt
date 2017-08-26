@@ -24,6 +24,8 @@ Inferred types:
 
 'Empty' @ [38:70] ==> public object Empty : PackagePartProvider defined in org.jetbrains.kotlin.descriptors.PackagePartProvider[FakeCallableDescriptorForObject]
 
+'FileBasedDeclarationProviderFactory' @ [38:81] ==> public constructor FileBasedDeclarationProviderFactory(@NotNull p0: StorageManager, @NotNull p1: (MutableCollection<(KtFile..KtFile?)>..Collection<(KtFile..KtFile?)>)) defined in org.jetbrains.kotlin.resolve.lazy.declarations.FileBasedDeclarationProviderFactory[JavaClassConstructorDescriptor]
+
 'JvmStatic' @ [41:5] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
 'analyzeAndCheckForErrors' @ [43:13] ==> @JvmStatic public final fun analyzeAndCheckForErrors(files: Collection<KtFile>, environment: KotlinCoreEnvironment): AnalysisResult defined in org.jetbrains.kotlin.resolve.lazy.JvmResolveUtil[SimpleFunctionDescriptorImpl]
@@ -51,6 +53,8 @@ Inferred types:
 'configuration' @ [47:78] ==> public final val configuration: CompilerConfiguration defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[DeserializedPropertyDescriptor]
 
 'environment' @ [47:93] ==> value-parameter environment: KotlinCoreEnvironment defined in org.jetbrains.kotlin.resolve.lazy.JvmResolveUtil.analyzeAndCheckForErrors[ValueParameterDescriptorImpl]
+
+'createPackagePartProvider' @ [47:106] ==> public final fun createPackagePartProvider(scope: GlobalSearchScope): JvmPackagePartProvider defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[DeserializedSimpleFunctionDescriptor]
 
 'JvmStatic' @ [49:5] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
@@ -125,6 +129,8 @@ Inferred types:
 'configuration' @ [79:49] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.resolve.lazy.JvmResolveUtil.analyze[ValueParameterDescriptorImpl]
 
 'environment' @ [79:64] ==> value-parameter environment: KotlinCoreEnvironment defined in org.jetbrains.kotlin.resolve.lazy.JvmResolveUtil.analyze[ValueParameterDescriptorImpl]
+
+'createPackagePartProvider' @ [79:77] ==> public final fun createPackagePartProvider(scope: GlobalSearchScope): JvmPackagePartProvider defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[DeserializedSimpleFunctionDescriptor]
 
 'TopDownAnalyzerFacadeForJVM' @ [87:16] ==> public object TopDownAnalyzerFacadeForJVM defined in org.jetbrains.kotlin.cli.jvm.compiler[FakeCallableDescriptorForObject]
 

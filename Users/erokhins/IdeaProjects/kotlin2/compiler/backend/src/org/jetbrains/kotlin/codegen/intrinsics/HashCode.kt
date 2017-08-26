@@ -68,9 +68,9 @@ Inferred types:
 
 'invokeHashCode' @ [39:19] ==> public final fun InstructionAdapter.invokeHashCode(type: Type): Unit defined in org.jetbrains.kotlin.codegen.intrinsics.HashCode.Companion[SimpleFunctionDescriptorImpl]
 
-'if (useObjectHashCode) AsmTypes.OBJECT_TYPE else receiverType' @ [39:34] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Type, elseBranch: Type): Type[SimpleFunctionDescriptorImpl]
+'if (useObjectHashCode) AsmTypes.OBJECT_TYPE else receiverType' @ [39:34] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Type..Type?), elseBranch: (Type..Type?)): (Type..Type?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Type
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)
 
 'useObjectHashCode' @ [39:38] ==> val useObjectHashCode: Boolean defined in org.jetbrains.kotlin.codegen.intrinsics.HashCode.toCallable[LocalVariableDescriptor]
 

@@ -50,7 +50,7 @@ Inferred types:
 
 'findChildByType' @ [46:53] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtImportAlias[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'IDENTIFIER' @ [46:78] ==> public final val IDENTIFIER: (KtToken..KtToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 

@@ -77,7 +77,7 @@ Inferred types:
 
 'getParentOfType' @ [64:41] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtElement..KtElement?)>): KtElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtElement
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'element' @ [64:57] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.debugger.KotlinEditorTextProvider.Companion.findExpressionInner[ValueParameterDescriptorImpl]
 
@@ -298,9 +298,9 @@ Inferred types:
 
 'ktElement' @ [129:25] ==> val ktElement: KtElement defined in org.jetbrains.kotlin.idea.debugger.KotlinEditorTextProvider.Companion.findExpressionInner[LocalVariableDescriptor]
 
-'arrayOf' @ [138:17] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: Class<out {KtElement & ASTDelegatePsiElement}>): Array<Class<out {KtElement & ASTDelegatePsiElement}>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [138:17] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: Class<out NavigatablePsiElement>): Array<Class<out NavigatablePsiElement>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> Class<out {KtElement & ASTDelegatePsiElement}>
+    <reified @PureReifiable T> -> Class<out NavigatablePsiElement>
 
 'java' @ [138:43] ==> public val <T> KClass<KtUserType>.java: Class<KtUserType> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -322,25 +322,25 @@ Inferred types:
 
 '!' @ [141:20] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'NOT_ACCEPTED_AS_CONTEXT_TYPES' @ [141:21] ==> private final val NOT_ACCEPTED_AS_CONTEXT_TYPES: Array<out Class<out NavigatablePsiElement>> defined in org.jetbrains.kotlin.idea.debugger.KotlinEditorTextProvider.Companion[PropertyDescriptorImpl]
+'NOT_ACCEPTED_AS_CONTEXT_TYPES' @ [141:21] ==> private final val NOT_ACCEPTED_AS_CONTEXT_TYPES: Array<Class<out NavigatablePsiElement>> defined in org.jetbrains.kotlin.idea.debugger.KotlinEditorTextProvider.Companion[PropertyDescriptorImpl]
 
-'contains' @ [141:51] ==> public operator fun <@OnlyInputTypes T> Array<out Class<out Any>>.contains(element: Class<out Any>): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'contains' @ [141:51] ==> public operator fun <@OnlyInputTypes T> Array<out Class<out (Any..Any?)>>.contains(element: Class<out (Any..Any?)>): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> Class<out Any>
+    <@OnlyInputTypes T> -> Class<out (kotlin.Any..kotlin.Any?)>
 
 'element' @ [141:60] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.debugger.KotlinEditorTextProvider.Companion.isAcceptedAsCodeFragmentContext[ValueParameterDescriptorImpl]
 
 'java' @ [141:75] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 '==' @ [142:20] ==> public open fun equals(other: Any?): Boolean defined in com.intellij.psi.NavigatablePsiElement[DeserializedSimpleFunctionDescriptor]
 
 'getParentOfType' @ [142:32] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (NavigatablePsiElement..NavigatablePsiElement?)>..Class<out (NavigatablePsiElement..NavigatablePsiElement?)>?)): NavigatablePsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> NavigatablePsiElement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.NavigatablePsiElement..com.intellij.psi.NavigatablePsiElement?)
 
 'element' @ [142:48] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.debugger.KotlinEditorTextProvider.Companion.isAcceptedAsCodeFragmentContext[ValueParameterDescriptorImpl]
 
-'NOT_ACCEPTED_AS_CONTEXT_TYPES' @ [142:58] ==> private final val NOT_ACCEPTED_AS_CONTEXT_TYPES: Array<out Class<out NavigatablePsiElement>> defined in org.jetbrains.kotlin.idea.debugger.KotlinEditorTextProvider.Companion[PropertyDescriptorImpl]
+'NOT_ACCEPTED_AS_CONTEXT_TYPES' @ [142:58] ==> private final val NOT_ACCEPTED_AS_CONTEXT_TYPES: Array<Class<out NavigatablePsiElement>> defined in org.jetbrains.kotlin.idea.debugger.KotlinEditorTextProvider.Companion[PropertyDescriptorImpl]
 

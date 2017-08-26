@@ -18,7 +18,7 @@
 
 'receiverValue' @ [54:22] ==> public final val receiverValue: ReceiverValue defined in org.jetbrains.kotlin.resolve.scopes.receivers.ReceiverValueWithSmartCastInfo[PropertyDescriptorImpl]
 
-'getResultApplicability' @ [73:43] ==> public fun getResultApplicability(diagnostics: Collection<KotlinCallDiagnostic>): ResolutionCandidateApplicability defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'getResultApplicability' @ [73:43] ==> public fun getResultApplicability(diagnostics: Collection<KotlinCallDiagnostic>): ResolutionCandidateApplicability defined in org.jetbrains.kotlin.resolve.calls.tower in file ImplicitScopeTower.kt[SimpleFunctionDescriptorImpl]
 
 'diagnostics' @ [73:66] ==> public final val diagnostics: List<KotlinCallDiagnostic> defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferenceCandidate[PropertyDescriptorImpl]
 
@@ -211,6 +211,8 @@ Inferred types:
     <T> -> DeclarationDescriptorWithVisibility
     <R> -> VisibilityError
 
+'VisibilityError' @ [137:57] ==> public constructor VisibilityError(invisibleMember: DeclarationDescriptorWithVisibility) defined in org.jetbrains.kotlin.resolve.calls.tower.VisibilityError[ClassConstructorDescriptorImpl]
+
 'receiverArgument' @ [147:9] ==> value-parameter receiverArgument: CallableReceiver? defined in org.jetbrains.kotlin.resolve.calls.components.addReceiverConstraint[ValueParameterDescriptorImpl]
 
 'receiverParameter' @ [147:37] ==> value-parameter receiverParameter: ReceiverParameterDescriptor? defined in org.jetbrains.kotlin.resolve.calls.components.addReceiverConstraint[ValueParameterDescriptorImpl]
@@ -381,7 +383,7 @@ Inferred types:
 
 'it' @ [202:40] ==> value-parameter it: ConstraintSystemOperation defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferencesCandidateFactory.createCandidate.<anonymous>[ValueParameterDescriptorImpl]
 
-'checkCallableReference' @ [202:43] ==> public fun ConstraintSystemOperation.checkCallableReference(argument: CallableReferenceKotlinCallArgument, dispatchReceiver: CallableReceiver?, extensionReceiver: CallableReceiver?, candidateDescriptor: CallableDescriptor, reflectionCandidateType: UnwrappedType, expectedType: UnwrappedType?, ownerDescriptor: DeclarationDescriptor): Pair<FreshVariableNewTypeSubstitutor, KotlinCallDiagnostic?> defined in org.jetbrains.kotlin.resolve.calls.components[SimpleFunctionDescriptorImpl]
+'checkCallableReference' @ [202:43] ==> public fun ConstraintSystemOperation.checkCallableReference(argument: CallableReferenceKotlinCallArgument, dispatchReceiver: CallableReceiver?, extensionReceiver: CallableReceiver?, candidateDescriptor: CallableDescriptor, reflectionCandidateType: UnwrappedType, expectedType: UnwrappedType?, ownerDescriptor: DeclarationDescriptor): Pair<FreshVariableNewTypeSubstitutor, KotlinCallDiagnostic?> defined in org.jetbrains.kotlin.resolve.calls.components in file CallableReferenceResolution.kt[SimpleFunctionDescriptorImpl]
 
 'argument' @ [203:21] ==> public final val argument: CallableReferenceKotlinCallArgument defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferencesCandidateFactory[PropertyDescriptorImpl]
 
@@ -712,8 +714,6 @@ Inferred types:
 
 'getKPropertyType' @ [281:55] ==> public final fun getKPropertyType(annotations: Annotations, receiverTypes: List<KotlinType>, returnType: KotlinType, mutable: Boolean): SimpleType defined in org.jetbrains.kotlin.builtins.ReflectionTypes[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [281:72] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [281:84] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'argumentsAndReceivers' @ [281:91] ==> val argumentsAndReceivers: ArrayList<KotlinType> /* = ArrayList<KotlinType> */ defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferencesCandidateFactory.buildReflectionType[LocalVariableDescriptor]
@@ -814,8 +814,6 @@ Inferred types:
 'reflectionTypes' @ [302:39] ==> public final val reflectionTypes: ReflectionTypes defined in org.jetbrains.kotlin.resolve.calls.model.KotlinCallComponents[PropertyDescriptorImpl]
 
 'getKFunctionType' @ [302:55] ==> public final fun getKFunctionType(annotations: Annotations, receiverType: KotlinType?, parameterTypes: List<KotlinType>, parameterNames: List<Name>?, returnType: KotlinType, builtIns: KotlinBuiltIns): SimpleType defined in org.jetbrains.kotlin.builtins.ReflectionTypes[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [302:72] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [302:84] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

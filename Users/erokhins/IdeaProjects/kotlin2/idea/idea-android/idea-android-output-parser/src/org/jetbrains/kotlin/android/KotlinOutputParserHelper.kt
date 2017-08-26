@@ -1,6 +1,6 @@
 'line' @ [31:23] ==> value-parameter line: String defined in org.jetbrains.kotlin.android.parse[ValueParameterDescriptorImpl]
 
-'colon' @ [31:28] ==> private fun String.colon(): Int defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'colon' @ [31:28] ==> private fun String.colon(): Int defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'if (colonIndex1 >= 0) line.substringBeforeAndTrim(colonIndex1) else return false' @ [32:20] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -10,7 +10,7 @@ Inferred types:
 
 'line' @ [32:42] ==> value-parameter line: String defined in org.jetbrains.kotlin.android.parse[ValueParameterDescriptorImpl]
 
-'substringBeforeAndTrim' @ [32:47] ==> private fun String.substringBeforeAndTrim(index: Int): String defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'substringBeforeAndTrim' @ [32:47] ==> private fun String.substringBeforeAndTrim(index: Int): String defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'colonIndex1' @ [32:70] ==> val colonIndex1: Int defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
@@ -22,13 +22,13 @@ Inferred types:
 
 'line' @ [35:26] ==> value-parameter line: String defined in org.jetbrains.kotlin.android.parse[ValueParameterDescriptorImpl]
 
-'substringAfterAndTrim' @ [35:31] ==> private fun String.substringAfterAndTrim(index: Int): String defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'substringAfterAndTrim' @ [35:31] ==> private fun String.substringAfterAndTrim(index: Int): String defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'colonIndex1' @ [35:53] ==> val colonIndex1: Int defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
 'lineWoSeverity' @ [36:23] ==> val lineWoSeverity: String defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
-'colon' @ [36:38] ==> private fun String.colon(): Int defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'colon' @ [36:38] ==> private fun String.colon(): Int defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'skipDriveOnWin' @ [36:46] ==> private fun Int.skipDriveOnWin(line: String): Int defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
@@ -38,7 +38,7 @@ Inferred types:
 
 'lineWoSeverity' @ [38:20] ==> val lineWoSeverity: String defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
-'substringBeforeAndTrim' @ [38:35] ==> private fun String.substringBeforeAndTrim(index: Int): String defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'substringBeforeAndTrim' @ [38:35] ==> private fun String.substringBeforeAndTrim(index: Int): String defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'colonIndex2' @ [38:58] ==> val colonIndex2: Int defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
@@ -60,9 +60,7 @@ Inferred types:
 
 'name' @ [40:58] ==> public final val File.name: (String..String?)[MyPropertyDescriptor]
 
-'addMessage' @ [41:20] ==> private fun addMessage(message: Any?, messages: MutableList<Any>): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
-
-'KotlinOutputParserHelper' @ [41:31] ==> public object KotlinOutputParserHelper defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[FakeCallableDescriptorForObject]
+'addMessage' @ [41:20] ==> private fun addMessage(message: Any?, messages: MutableList<Any>): Boolean defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'createMessage' @ [41:56] ==> public final fun createMessage(logger: ILogger, severity: String, text: String, file: String? = ..., lineNumber: Int? = ..., columnIndex: Int? = ..., offset: Int? = ...): Any? defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper[SimpleFunctionDescriptorImpl]
 
@@ -80,13 +78,13 @@ Inferred types:
 
 'lineWoSeverity' @ [44:26] ==> val lineWoSeverity: String defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
-'substringAfterAndTrim' @ [44:41] ==> private fun String.substringAfterAndTrim(index: Int): String defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'substringAfterAndTrim' @ [44:41] ==> private fun String.substringAfterAndTrim(index: Int): String defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'colonIndex2' @ [44:63] ==> val colonIndex2: Int defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
 'lineWoPath' @ [45:27] ==> val lineWoPath: String defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
-'colon' @ [45:38] ==> private fun String.colon(): Int defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'colon' @ [45:38] ==> private fun String.colon(): Int defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'if (colonIndex3 >= 0) {
             val position = lineWoPath.substringBeforeAndTrim(colonIndex3)
@@ -120,7 +118,7 @@ Inferred types:
 
 'lineWoPath' @ [47:28] ==> val lineWoPath: String defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
-'substringBeforeAndTrim' @ [47:39] ==> private fun String.substringBeforeAndTrim(index: Int): String defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'substringBeforeAndTrim' @ [47:39] ==> private fun String.substringBeforeAndTrim(index: Int): String defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'colonIndex3' @ [47:62] ==> val colonIndex3: Int defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
@@ -132,7 +130,7 @@ Inferred types:
 
 'lineWoPath' @ [50:27] ==> val lineWoPath: String defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
-'substringAfterAndTrim' @ [50:38] ==> private fun String.substringAfterAndTrim(index: Int): String defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'substringAfterAndTrim' @ [50:38] ==> private fun String.substringAfterAndTrim(index: Int): String defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'colonIndex3' @ [50:60] ==> val colonIndex3: Int defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
@@ -156,9 +154,7 @@ Inferred types:
 
 'symbolNumber' @ [55:43] ==> val symbolNumber: (String..String?) defined in org.jetbrains.kotlin.android.parse[LocalVariableDescriptor]
 
-'addMessage' @ [57:32] ==> private fun addMessage(message: Any?, messages: MutableList<Any>): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
-
-'KotlinOutputParserHelper' @ [57:43] ==> public object KotlinOutputParserHelper defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[FakeCallableDescriptorForObject]
+'addMessage' @ [57:32] ==> private fun addMessage(message: Any?, messages: MutableList<Any>): Boolean defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'createMessage' @ [57:68] ==> public final fun createMessage(logger: ILogger, severity: String, text: String, file: String? = ..., lineNumber: Int? = ..., columnIndex: Int? = ..., offset: Int? = ...): Any? defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper[SimpleFunctionDescriptorImpl]
 
@@ -184,9 +180,7 @@ Inferred types:
 
 'messages' @ [57:180] ==> value-parameter messages: MutableList<Any> defined in org.jetbrains.kotlin.android.parse[ValueParameterDescriptorImpl]
 
-'addMessage' @ [66:20] ==> private fun addMessage(message: Any?, messages: MutableList<Any>): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
-
-'KotlinOutputParserHelper' @ [66:31] ==> public object KotlinOutputParserHelper defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[FakeCallableDescriptorForObject]
+'addMessage' @ [66:20] ==> private fun addMessage(message: Any?, messages: MutableList<Any>): Boolean defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'createMessage' @ [66:56] ==> public final fun createMessage(logger: ILogger, severity: String, text: String, file: String? = ..., lineNumber: Int? = ..., columnIndex: Int? = ..., offset: Int? = ...): Any? defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper[SimpleFunctionDescriptorImpl]
 
@@ -198,9 +192,7 @@ Inferred types:
 
 'messages' @ [66:98] ==> value-parameter messages: MutableList<Any> defined in org.jetbrains.kotlin.android.parse[ValueParameterDescriptorImpl]
 
-'addMessage' @ [69:20] ==> private fun addMessage(message: Any?, messages: MutableList<Any>): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
-
-'KotlinOutputParserHelper' @ [69:31] ==> public object KotlinOutputParserHelper defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[FakeCallableDescriptorForObject]
+'addMessage' @ [69:20] ==> private fun addMessage(message: Any?, messages: MutableList<Any>): Boolean defined in org.jetbrains.kotlin.android in file KotlinOutputParserHelper.kt[SimpleFunctionDescriptorImpl]
 
 'createMessage' @ [69:56] ==> public final fun createMessage(logger: ILogger, severity: String, text: String, file: String? = ..., lineNumber: Int? = ..., columnIndex: Int? = ..., offset: Int? = ...): Any? defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper[SimpleFunctionDescriptorImpl]
 
@@ -260,7 +252,7 @@ Inferred types:
 
 'java' @ [93:27] ==> public val <T> KClass<out OutputLineReader>.java: Class<out OutputLineReader> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> OutputLineReader
+    <T> -> Captured(out OutputLineReader)
 
 'getDeclaredField' @ [93:32] ==> @CallerSensitive public open fun getDeclaredField(p0: (String..String?)): (Field..Field?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -400,9 +392,9 @@ Inferred types:
 
 'loadSeverityEnums' @ [159:9] ==> private final fun loadSeverityEnums(): Unit defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [162:61] ==> public fun <T> lazy(initializer: () -> Constructor<out Any>): Lazy<Constructor<out Any>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [162:61] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Constructor<out Any>
+    <T> -> T
 
 'if (!isNewAndroidPlugin) {
             val messageClass = Class.forName("$packagePrefix.GradleMessage")
@@ -417,9 +409,9 @@ Inferred types:
                     String::class.java,
                     String::class.java,
                     ImmutableList::class.java)
-        }' @ [163:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Constructor<out Any>, elseBranch: Constructor<out Any>): Constructor<out Any>[SimpleFunctionDescriptorImpl]
+        }' @ [163:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?), elseBranch: (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)): (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Constructor<out Any>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.lang.reflect.Constructor<out (kotlin.Any..kotlin.Any?)>..java.lang.reflect.Constructor<out (kotlin.Any..kotlin.Any?)>?)
 
 '!' @ [163:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -473,15 +465,15 @@ Inferred types:
 
 'ImmutableList' @ [175:21] ==> public/*package*/ constructor ImmutableList<E : (Any..Any?)>() defined in com.google.common.collect.ImmutableList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@75451676
 
 'java' @ [175:42] ==> public val <T> KClass<ImmutableList<*>>.java: Class<ImmutableList<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> ImmutableList<*>
 
-'lazy' @ [179:62] ==> public fun <T> lazy(initializer: () -> Constructor<out Any>): Lazy<Constructor<out Any>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [179:62] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Constructor<out Any>
+    <T> -> T
 
 'if (!isNewAndroidPlugin) {
             val messageClass = Class.forName("$packagePrefix.GradleMessage")
@@ -501,9 +493,9 @@ Inferred types:
                     String::class.java,
                     sourceFilePositionClass,
                     sourceFilePositionArrayClass)
-        }' @ [180:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Constructor<out Any>, elseBranch: Constructor<out Any>): Constructor<out Any>[SimpleFunctionDescriptorImpl]
+        }' @ [180:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?), elseBranch: (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)): (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Constructor<out Any>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.lang.reflect.Constructor<out (kotlin.Any..kotlin.Any?)>..java.lang.reflect.Constructor<out (kotlin.Any..kotlin.Any?)>?)
 
 '!' @ [180:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -579,9 +571,9 @@ Inferred types:
 
 'sourceFilePositionArrayClass' @ [197:21] ==> val sourceFilePositionArrayClass: (Class<*>..Class<*>?) defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper.complexMessageConstructor.<anonymous>[LocalVariableDescriptor]
 
-'lazy' @ [201:66] ==> public fun <T> lazy(initializer: () -> Constructor<out (Any..Any?)>): Lazy<Constructor<out (Any..Any?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [201:66] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Constructor<out (kotlin.Any..kotlin.Any?)>
+    <T> -> T
 
 'assert' @ [202:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -605,9 +597,9 @@ Inferred types:
 
 'sourcePositionClass' @ [205:66] ==> val sourcePositionClass: (Class<*>..Class<*>?) defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper.sourceFilePositionConstructor.<anonymous>[LocalVariableDescriptor]
 
-'lazy' @ [208:62] ==> public fun <T> lazy(initializer: () -> Constructor<out (Any..Any?)>): Lazy<Constructor<out (Any..Any?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [208:62] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Constructor<out (kotlin.Any..kotlin.Any?)>
+    <T> -> T
 
 'assert' @ [209:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -639,9 +631,9 @@ Inferred types:
 Inferred types:
     <T> -> Int
 
-'lazy' @ [214:49] ==> public fun <T> lazy(initializer: () -> (Any..Any?)): Lazy<(Any..Any?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [214:49] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (kotlin.Any..kotlin.Any?)
+    <T> -> T
 
 'assert' @ [215:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -658,9 +650,9 @@ Inferred types:
 'if (isNewAndroidPlugin)
                                     Class.forName("$packagePrefix.Message\$Kind")
                                else
-                                    Class.forName("$packagePrefix.GradleMessage\$Kind")' @ [221:32] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out Any>, elseBranch: Class<out Any>): Class<out Any>[SimpleFunctionDescriptorImpl]
+                                    Class.forName("$packagePrefix.GradleMessage\$Kind")' @ [221:32] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Class<*>..Class<*>?), elseBranch: (Class<*>..Class<*>?)): (Class<*>..Class<*>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out Any>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.lang.Class<*>..java.lang.Class<*>?)
 
 'isNewAndroidPlugin' @ [221:36] ==> private final val isNewAndroidPlugin: Boolean defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper[PropertyDescriptorImpl]
 
@@ -672,11 +664,11 @@ Inferred types:
 
 'packagePrefix' @ [224:53] ==> private final val packagePrefix: String defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper[PropertyDescriptorImpl]
 
-'messageKindClass' @ [226:36] ==> val messageKindClass: Class<out Any> defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper.loadSeverityEnums[LocalVariableDescriptor]
+'messageKindClass' @ [226:36] ==> val messageKindClass: (Class<*>..Class<*>?) defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper.loadSeverityEnums[LocalVariableDescriptor]
 
-'enumConstants' @ [226:53] ==> public final val <T : (Any..Any?)> Class<out Any>.enumConstants: (Array<out (Any..Any?)>..Array<out (Any..Any?)>?)[MyPropertyDescriptor]
+'enumConstants' @ [226:53] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.enumConstants: (Array<out (Any..Any?)>..Array<out (Any..Any?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(*)
 
 'messageKindConstants' @ [227:22] ==> val messageKindConstants: Array<Any> defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper.loadSeverityEnums[LocalVariableDescriptor]
 

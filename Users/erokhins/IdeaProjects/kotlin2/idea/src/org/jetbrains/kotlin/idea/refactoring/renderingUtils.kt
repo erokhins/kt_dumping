@@ -44,7 +44,7 @@ Inferred types:
 
 'description' @ [50:5] ==> var description: String defined in org.jetbrains.kotlin.idea.refactoring.formatPsiClass[LocalVariableDescriptor]
 
-'wrapOrSkip' @ [50:19] ==> public fun wrapOrSkip(s: String, inCode: Boolean): String defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'wrapOrSkip' @ [50:19] ==> public fun wrapOrSkip(s: String, inCode: Boolean): String defined in org.jetbrains.kotlin.idea.refactoring in file renderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'description' @ [50:30] ==> var description: String defined in org.jetbrains.kotlin.idea.refactoring.formatPsiClass[LocalVariableDescriptor]
 
@@ -83,9 +83,9 @@ Inferred types:
 
 'inCode' @ [58:40] ==> value-parameter inCode: Boolean defined in org.jetbrains.kotlin.idea.refactoring.formatClass[ValueParameterDescriptorImpl]
 
-'wrapOrSkip' @ [61:9] ==> public fun wrapOrSkip(s: String, inCode: Boolean): String defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'wrapOrSkip' @ [61:9] ==> public fun wrapOrSkip(s: String, inCode: Boolean): String defined in org.jetbrains.kotlin.idea.refactoring in file renderingUtils.kt[SimpleFunctionDescriptorImpl]
 
-'formatClassDescriptor' @ [61:20] ==> public fun formatClassDescriptor(classDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'formatClassDescriptor' @ [61:20] ==> public fun formatClassDescriptor(classDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.refactoring in file renderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'classDescriptor' @ [61:42] ==> value-parameter classDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.formatClass[ValueParameterDescriptorImpl]
 
@@ -114,9 +114,9 @@ Inferred types:
 
 'inCode' @ [68:41] ==> value-parameter inCode: Boolean defined in org.jetbrains.kotlin.idea.refactoring.formatFunction[ValueParameterDescriptorImpl]
 
-'wrapOrSkip' @ [71:9] ==> public fun wrapOrSkip(s: String, inCode: Boolean): String defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'wrapOrSkip' @ [71:9] ==> public fun wrapOrSkip(s: String, inCode: Boolean): String defined in org.jetbrains.kotlin.idea.refactoring in file renderingUtils.kt[SimpleFunctionDescriptorImpl]
 
-'formatFunctionDescriptor' @ [71:20] ==> private fun formatFunctionDescriptor(functionDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'formatFunctionDescriptor' @ [71:20] ==> private fun formatFunctionDescriptor(functionDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.refactoring in file renderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'functionDescriptor' @ [71:45] ==> value-parameter functionDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.formatFunction[ValueParameterDescriptorImpl]
 
@@ -158,7 +158,7 @@ Inferred types:
 
 'description' @ [89:5] ==> var description: (String..String?) defined in org.jetbrains.kotlin.idea.refactoring.formatPsiMethod[LocalVariableDescriptor]
 
-'wrapOrSkip' @ [89:19] ==> public fun wrapOrSkip(s: String, inCode: Boolean): String defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'wrapOrSkip' @ [89:19] ==> public fun wrapOrSkip(s: String, inCode: Boolean): String defined in org.jetbrains.kotlin.idea.refactoring in file renderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'description' @ [89:30] ==> var description: (String..String?) defined in org.jetbrains.kotlin.idea.refactoring.formatPsiMethod[LocalVariableDescriptor]
 
@@ -181,7 +181,7 @@ Inferred types:
 
 'originalDeclaration' @ [96:16] ==> val originalDeclaration: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.formatJavaOrLightMethod[LocalVariableDescriptor]
 
-'formatFunctionDescriptor' @ [97:9] ==> private fun formatFunctionDescriptor(functionDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'formatFunctionDescriptor' @ [97:9] ==> private fun formatFunctionDescriptor(functionDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.refactoring in file renderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'originalDeclaration' @ [97:34] ==> val originalDeclaration: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.formatJavaOrLightMethod[LocalVariableDescriptor]
 
@@ -191,7 +191,7 @@ Inferred types:
 
 'method' @ [100:25] ==> value-parameter method: PsiMethod defined in org.jetbrains.kotlin.idea.refactoring.formatJavaOrLightMethod[ValueParameterDescriptorImpl]
 
-'formatClassDescriptor' @ [104:51] ==> public fun formatClassDescriptor(classDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'formatClassDescriptor' @ [104:51] ==> public fun formatClassDescriptor(classDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.refactoring in file renderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'classOrObject' @ [104:73] ==> value-parameter classOrObject: KtClassOrObject defined in org.jetbrains.kotlin.idea.refactoring.formatClass[ValueParameterDescriptorImpl]
 

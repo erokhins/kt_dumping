@@ -100,7 +100,7 @@ Inferred types:
 
 'body' @ [68:83] ==> val body: KtExpression defined in org.jetbrains.kotlin.idea.intentions.ConvertToBlockBodyIntention.Companion.convert[LocalVariableDescriptor]
 
-'resultingWhens' @ [68:88] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resultingWhens' @ [68:88] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'isNotEmpty' @ [68:105] ==> @InlineOnly public inline fun <T> Collection<KtWhenExpression>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

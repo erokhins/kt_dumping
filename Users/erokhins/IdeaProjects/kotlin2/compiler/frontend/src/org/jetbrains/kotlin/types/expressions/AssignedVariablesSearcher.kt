@@ -2,8 +2,8 @@
 
 'create' @ [30:79] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> create(): (LinkedHashMultimap<(Name..Name?), (AssignedVariablesSearcher.Writer..AssignedVariablesSearcher.Writer?)>..LinkedHashMultimap<(Name..Name?), (AssignedVariablesSearcher.Writer..AssignedVariablesSearcher.Writer?)>?) defined in com.google.common.collect.LinkedHashMultimap[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Name
-    <V : (Any..Any?)> -> Writer
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.AssignedVariablesSearcher.Writer..org.jetbrains.kotlin.types.expressions.AssignedVariablesSearcher.Writer?)
 
 'assignedNames' @ [32:84] ==> private final val assignedNames: SetMultimap<Name, AssignedVariablesSearcher.Writer> defined in org.jetbrains.kotlin.types.expressions.AssignedVariablesSearcher[PropertyDescriptorImpl]
 

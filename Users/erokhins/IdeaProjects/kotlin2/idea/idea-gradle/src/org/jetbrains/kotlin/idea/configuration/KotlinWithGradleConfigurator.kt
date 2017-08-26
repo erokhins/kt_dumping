@@ -18,6 +18,8 @@
 Inferred types:
     <T> -> Module
 
+'hasAnyKotlinRuntimeInScope' @ [55:59] ==> public fun hasAnyKotlinRuntimeInScope(module: Module): Boolean defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
+
 'CONFIGURED' @ [56:42] ==> enum entry CONFIGURED defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinStatus[FakeCallableDescriptorForObject]
 
 'listOf' @ [59:26] ==> public fun <T> listOf(vararg elements: PsiFile?): List<PsiFile?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -60,9 +62,7 @@ Inferred types:
 
 'getExtensions' @ [73:27] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinProjectConfigurator
-
-'KotlinProjectConfigurator' @ [73:41] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator..org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator?)
 
 'EP_NAME' @ [73:67] ==> public final val EP_NAME: ExtensionPointName<(KotlinProjectConfigurator..KotlinProjectConfigurator?)> defined in org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -126,7 +126,7 @@ Inferred types:
 Inferred types:
     <T> -> Unit
 
-'createConfigureKotlinNotificationCollector' @ [93:29] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'createConfigureKotlinNotificationCollector' @ [93:29] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration in file NotificationMessageCollector.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [93:72] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator.configure[ValueParameterDescriptorImpl]
 
@@ -414,7 +414,7 @@ Inferred types:
     <T> -> VirtualFile
     <R> -> Unit
 
-'createConfigureKotlinNotificationCollector' @ [208:17] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'createConfigureKotlinNotificationCollector' @ [208:17] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration in file NotificationMessageCollector.kt[SimpleFunctionDescriptorImpl]
 
 'buildScript' @ [208:60] ==> val buildScript: PsiFile defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator.Companion.addKotlinLibraryToModule[LocalVariableDescriptor]
 
@@ -599,10 +599,10 @@ Inferred types:
 
 'externalProjectPath' @ [271:37] ==> value-parameter externalProjectPath: String defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator.Companion.getBuildScriptFile.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [271:59] ==> @InlineOnly public inline fun <T, R> File.let(block: (File) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [271:59] ==> @InlineOnly public inline fun <T, R> File.let(block: (File) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
-    <R> -> Nothing?
+    <R> -> Nothing
 
 'it' @ [272:28] ==> value-parameter it: File defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator.Companion.getBuildScriptFile.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 

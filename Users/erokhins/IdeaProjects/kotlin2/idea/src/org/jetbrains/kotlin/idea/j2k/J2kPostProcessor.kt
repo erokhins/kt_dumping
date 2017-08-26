@@ -41,8 +41,6 @@ Inferred types:
 Inferred types:
     <T> -> Unit
 
-'EDT' @ [60:25] ==> public object EDT : CoroutineDispatcher defined in org.jetbrains.kotlin.idea.core.util[FakeCallableDescriptorForObject]
-
 'ModalityStateElement' @ [60:29] ==> public constructor ModalityStateElement(modalityState: ModalityState) defined in org.jetbrains.kotlin.idea.core.util.EDT.ModalityStateElement[DeserializedClassConstructorDescriptor]
 
 'defaultModalityState' @ [60:64] ==> @NotNull public open fun defaultModalityState(): ModalityState defined in com.intellij.openapi.application.ModalityState[JavaMethodDescriptor]
@@ -255,8 +253,6 @@ Inferred types:
 
 'action' @ [128:74] ==> val action: (() -> Unit)? defined in org.jetbrains.kotlin.idea.j2k.J2kPostProcessor.collectAvailableActions.<no name provided>.visitElement.<anonymous>[LocalVariableDescriptor]
 
-'J2KPostProcessingRegistrar' @ [129:65] ==> public object J2KPostProcessingRegistrar defined in org.jetbrains.kotlin.idea.j2k in file J2kPostProcessings.kt[FakeCallableDescriptorForObject]
-
 'priority' @ [129:92] ==> public final fun priority(processing: J2kPostProcessing): Int defined in org.jetbrains.kotlin.idea.j2k.J2KPostProcessingRegistrar[SimpleFunctionDescriptorImpl]
 
 'processing' @ [129:101] ==> value-parameter processing: J2kPostProcessing defined in org.jetbrains.kotlin.idea.j2k.J2kPostProcessor.collectAvailableActions.<no name provided>.visitElement.<anonymous>[ValueParameterDescriptorImpl]
@@ -329,8 +325,6 @@ Inferred types:
 'bindingContext' @ [148:75] ==> public final val bindingContext: BindingContext defined in org.jetbrains.kotlin.analyzer.AnalysisResult[DeserializedPropertyDescriptor]
 
 'diagnostics' @ [148:90] ==> public final val BindingContext.diagnostics: Diagnostics[MyPropertyDescriptor]
-
-'Diagnostics' @ [150:13] ==> public companion object defined in org.jetbrains.kotlin.resolve.diagnostics.Diagnostics[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [150:25] ==> public final val EMPTY: Diagnostics defined in org.jetbrains.kotlin.resolve.diagnostics.Diagnostics.Companion[DeserializedPropertyDescriptor]
 

@@ -1,8 +1,10 @@
 'create' @ [29:89] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): ExtensionPointName<(KotlinVersionInfoProvider..KotlinVersionInfoProvider?)> defined in com.intellij.openapi.extensions.ExtensionPointName[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinVersionInfoProvider
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.facet.KotlinVersionInfoProvider..org.jetbrains.kotlin.idea.facet.KotlinVersionInfoProvider?)
 
-'KotlinVersionInfoProvider' @ [45:12] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinVersionInfoProvider[FakeCallableDescriptorForObject]
+'?:' @ [45:12] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Collection<String>?, right: Collection<String>): Collection<String>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Collection<String>
 
 'EP_NAME' @ [45:38] ==> public final val EP_NAME: ExtensionPointName<KotlinVersionInfoProvider> defined in org.jetbrains.kotlin.idea.facet.KotlinVersionInfoProvider.Companion[PropertyDescriptorImpl]
 
@@ -39,15 +41,13 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'getRuntimeLibraryVersions' @ [56:22] ==> public fun getRuntimeLibraryVersions(module: Module, rootModel: ModuleRootModel?, targetPlatform: TargetPlatformKind<*>): Collection<String> defined in org.jetbrains.kotlin.idea.facet[SimpleFunctionDescriptorImpl]
+'getRuntimeLibraryVersions' @ [56:22] ==> public fun getRuntimeLibraryVersions(module: Module, rootModel: ModuleRootModel?, targetPlatform: TargetPlatformKind<*>): Collection<String> defined in org.jetbrains.kotlin.idea.facet in file KotlinVersionInfoProvider.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [56:48] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.facet.getLibraryLanguageLevel[ValueParameterDescriptorImpl]
 
 'rootModel' @ [56:56] ==> value-parameter rootModel: ModuleRootModel? defined in org.jetbrains.kotlin.idea.facet.getLibraryLanguageLevel[ValueParameterDescriptorImpl]
 
 'targetPlatform' @ [56:67] ==> value-parameter targetPlatform: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.facet.getLibraryLanguageLevel[ValueParameterDescriptorImpl]
-
-'TargetPlatformKind' @ [56:85] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'DEFAULT_PLATFORM' @ [56:104] ==> public final val DEFAULT_PLATFORM: TargetPlatformKind<*> defined in org.jetbrains.kotlin.config.TargetPlatformKind.Companion[DeserializedPropertyDescriptor]
 
@@ -64,8 +64,6 @@ Inferred types:
 'minVersion' @ [58:44] ==> val minVersion: String? defined in org.jetbrains.kotlin.idea.facet.getLibraryLanguageLevel[LocalVariableDescriptor]
 
 'explicitVersion' @ [65:22] ==> value-parameter explicitVersion: String? = ... defined in org.jetbrains.kotlin.idea.facet.getDefaultLanguageLevel[ValueParameterDescriptorImpl]
-
-'KotlinVersionInfoProvider' @ [66:25] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinVersionInfoProvider[FakeCallableDescriptorForObject]
 
 'EP_NAME' @ [66:51] ==> public final val EP_NAME: ExtensionPointName<KotlinVersionInfoProvider> defined in org.jetbrains.kotlin.idea.facet.KotlinVersionInfoProvider.Companion[PropertyDescriptorImpl]
 
@@ -107,15 +105,11 @@ Inferred types:
 
 'startsWith' @ [71:20] ==> public fun String.startsWith(prefix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'LanguageVersion' @ [71:41] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_2' @ [71:57] ==> enum entry KOTLIN_1_2 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'libVersion' @ [72:9] ==> val libVersion: String defined in org.jetbrains.kotlin.idea.facet.getDefaultLanguageLevel[LocalVariableDescriptor]
 
 'startsWith' @ [72:20] ==> public fun String.startsWith(prefix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'LanguageVersion' @ [72:41] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_1' @ [72:57] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
@@ -123,11 +117,7 @@ Inferred types:
 
 'startsWith' @ [73:20] ==> public fun String.startsWith(prefix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'LanguageVersion' @ [73:41] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_0' @ [73:57] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
-'LanguageVersion' @ [74:17] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [74:33] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -145,13 +135,11 @@ Inferred types:
 
 'targetPlatformKind' @ [79:113] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
 
-'getRuntimeLibraryVersions' @ [80:20] ==> public fun getRuntimeLibraryVersions(module: Module, rootModel: ModuleRootModel?, targetPlatform: TargetPlatformKind<*>): Collection<String> defined in org.jetbrains.kotlin.idea.facet[SimpleFunctionDescriptorImpl]
+'getRuntimeLibraryVersions' @ [80:20] ==> public fun getRuntimeLibraryVersions(module: Module, rootModel: ModuleRootModel?, targetPlatform: TargetPlatformKind<*>): Collection<String> defined in org.jetbrains.kotlin.idea.facet in file KotlinVersionInfoProvider.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [80:46] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.facet.getRuntimeLibraryVersion[ValueParameterDescriptorImpl]
 
 'targetPlatform' @ [80:60] ==> val targetPlatform: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.facet.getRuntimeLibraryVersion[LocalVariableDescriptor]
-
-'TargetPlatformKind' @ [80:78] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'DEFAULT_PLATFORM' @ [80:97] ==> public final val DEFAULT_PLATFORM: TargetPlatformKind<*> defined in org.jetbrains.kotlin.config.TargetPlatformKind.Companion[DeserializedPropertyDescriptor]
 

@@ -20,9 +20,9 @@
 
 'getDeclaredMethod' @ [46:23] ==> public open fun getDeclaredMethod(p0: (String..String?), vararg p1: (Class<*>..Class<*>?)): (Method..Method?) defined in java.lang.Class[JavaMethodDescriptor]
 
-'Array' @ [46:49] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [46:49] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@114e0b53
 
 'java' @ [46:70] ==> public val <T> KClass<Array<String>>.java: Class<Array<String>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

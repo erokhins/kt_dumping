@@ -6,7 +6,7 @@
 
 'findChildByClass' @ [27:17] ==> @Nullable protected/*protected and package*/ open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtExpression..KtExpression?)>..Class<(KtExpression..KtExpression?)>?)): KtExpression? defined in org.jetbrains.kotlin.psi.KtLabeledExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'java' @ [27:54] ==> public val <T> KClass<KtExpression>.java: Class<KtExpression> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

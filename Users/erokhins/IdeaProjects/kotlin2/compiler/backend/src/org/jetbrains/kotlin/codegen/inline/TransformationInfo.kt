@@ -2,9 +2,9 @@
 
 'generatorClass' @ [25:31] ==> public final val NameGenerator.generatorClass: (String..String?)[MyPropertyDescriptor]
 
-'lazy' @ [47:35] ==> public fun <T> lazy(initializer: () -> NameGenerator): Lazy<NameGenerator> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [47:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> NameGenerator
+    <T> -> T
 
 'parentNameGenerator' @ [48:9] ==> value-parameter parentNameGenerator: NameGenerator defined in org.jetbrains.kotlin.codegen.inline.WhenMappingTransformationInfo.<init>[ValueParameterDescriptorImpl]
 
@@ -32,9 +32,9 @@ Inferred types:
 
 'inliningContext' @ [56:42] ==> value-parameter inliningContext: InliningContext defined in org.jetbrains.kotlin.codegen.inline.WhenMappingTransformationInfo.createTransformer[ValueParameterDescriptorImpl]
 
-'lazy' @ [75:35] ==> public fun <T> lazy(initializer: () -> NameGenerator): Lazy<NameGenerator> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [75:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> NameGenerator
+    <T> -> T
 
 'parentNameGenerator' @ [76:9] ==> value-parameter parentNameGenerator: NameGenerator defined in org.jetbrains.kotlin.codegen.inline.AnonymousObjectTransformationInfo.<init>[ValueParameterDescriptorImpl]
 

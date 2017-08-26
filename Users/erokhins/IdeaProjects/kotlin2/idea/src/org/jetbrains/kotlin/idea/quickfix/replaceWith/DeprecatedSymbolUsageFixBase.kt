@@ -92,7 +92,7 @@ Inferred types:
 
 'name' @ [85:91] ==> public abstract val name: String defined in kotlin.reflect.KProperty1[DeserializedPropertyDescriptor]
 
-'importValues' @ [86:17] ==> val importValues: List<Any?> defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.fetchReplaceWithPattern[LocalVariableDescriptor]
+'importValues' @ [86:17] ==> val importValues: List<*> defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.fetchReplaceWithPattern[LocalVariableDescriptor]
 
 'any' @ [86:30] ==> public inline fun <T> Iterable<Any?>.any(predicate: (Any?) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -100,7 +100,7 @@ Inferred types:
 
 'it' @ [86:36] ==> value-parameter it: Any? defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.fetchReplaceWithPattern.<anonymous>[ValueParameterDescriptorImpl]
 
-'importValues' @ [87:27] ==> val importValues: List<Any?> defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.fetchReplaceWithPattern[LocalVariableDescriptor]
+'importValues' @ [87:27] ==> val importValues: List<*> defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.fetchReplaceWithPattern[LocalVariableDescriptor]
 
 'map' @ [87:40] ==> public inline fun <T, R> Iterable<Any?>.map(transform: (Any?) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -167,9 +167,9 @@ Inferred types:
                 Errors.TYPEALIAS_EXPANSION_DEPRECATION_ERROR ->
                     DiagnosticFactory.cast(deprecatedDiagnostic, Errors.TYPEALIAS_EXPANSION_DEPRECATION_ERROR).b
                 else -> throw IllegalStateException("Bad QuickFixRegistrar configuration")
-            }' @ [119:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (DeclarationDescriptor..DeclarationDescriptor?), entry1: (DeclarationDescriptor..DeclarationDescriptor?), entry2: (DeclarationDescriptor..DeclarationDescriptor?), entry3: (DeclarationDescriptor..DeclarationDescriptor?), entry4: (DeclarationDescriptor..DeclarationDescriptor?)): (DeclarationDescriptor..DeclarationDescriptor?)[SimpleFunctionDescriptorImpl]
+            }' @ [119:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: DeclarationDescriptor, entry1: DeclarationDescriptor, entry2: DeclarationDescriptor, entry3: DeclarationDescriptor, entry4: DeclarationDescriptor): DeclarationDescriptor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> DeclarationDescriptor
 
 'deprecatedDiagnostic' @ [119:36] ==> value-parameter deprecatedDiagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[ValueParameterDescriptorImpl]
 
@@ -179,13 +179,13 @@ Inferred types:
 
 'cast' @ [120:57] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull vararg p1: (DiagnosticFactory<out (DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?)>?)): DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> DiagnosticWithParameters2<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>
+    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters2<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>..org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters2<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>?)
 
 'deprecatedDiagnostic' @ [120:62] ==> value-parameter deprecatedDiagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[ValueParameterDescriptorImpl]
 
 'DEPRECATION' @ [120:91] ==> public final val DEPRECATION: (DiagnosticFactory2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticFactory2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
-'a' @ [120:104] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>.a: (DeclarationDescriptor..DeclarationDescriptor?)[MyPropertyDescriptor]
+'a' @ [120:104] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>.a: DeclarationDescriptor[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
@@ -195,13 +195,13 @@ Inferred types:
 
 'cast' @ [121:63] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull vararg p1: (DiagnosticFactory<out (DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?)>?)): DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> DiagnosticWithParameters2<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>
+    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters2<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>..org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters2<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>?)
 
 'deprecatedDiagnostic' @ [121:68] ==> value-parameter deprecatedDiagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[ValueParameterDescriptorImpl]
 
 'DEPRECATION_ERROR' @ [121:97] ==> public final val DEPRECATION_ERROR: (DiagnosticFactory2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticFactory2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
-'a' @ [121:116] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>.a: (DeclarationDescriptor..DeclarationDescriptor?)[MyPropertyDescriptor]
+'a' @ [121:116] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>.a: DeclarationDescriptor[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
@@ -211,13 +211,13 @@ Inferred types:
 
 'cast' @ [123:39] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull vararg p1: (DiagnosticFactory<out (DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?)>?)): DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> DiagnosticWithParameters3<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.TypeAliasDescriptor..org.jetbrains.kotlin.descriptors.TypeAliasDescriptor?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>
+    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters3<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.TypeAliasDescriptor..org.jetbrains.kotlin.descriptors.TypeAliasDescriptor?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>..org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters3<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.TypeAliasDescriptor..org.jetbrains.kotlin.descriptors.TypeAliasDescriptor?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>?)
 
 'deprecatedDiagnostic' @ [123:44] ==> value-parameter deprecatedDiagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[ValueParameterDescriptorImpl]
 
 'TYPEALIAS_EXPANSION_DEPRECATION' @ [123:73] ==> public final val TYPEALIAS_EXPANSION_DEPRECATION: (DiagnosticFactory3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticFactory3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
-'b' @ [123:106] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>.b: (DeclarationDescriptor..DeclarationDescriptor?)[MyPropertyDescriptor]
+'b' @ [123:106] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>.b: DeclarationDescriptor[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeAliasDescriptor..org.jetbrains.kotlin.descriptors.TypeAliasDescriptor?)
@@ -228,13 +228,13 @@ Inferred types:
 
 'cast' @ [125:39] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull vararg p1: (DiagnosticFactory<out (DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?)>?)): DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> DiagnosticWithParameters3<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.TypeAliasDescriptor..org.jetbrains.kotlin.descriptors.TypeAliasDescriptor?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>
+    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters3<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.TypeAliasDescriptor..org.jetbrains.kotlin.descriptors.TypeAliasDescriptor?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>..org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters3<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.TypeAliasDescriptor..org.jetbrains.kotlin.descriptors.TypeAliasDescriptor?), (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?), (kotlin.String..kotlin.String?)>?)
 
 'deprecatedDiagnostic' @ [125:44] ==> value-parameter deprecatedDiagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[ValueParameterDescriptorImpl]
 
 'TYPEALIAS_EXPANSION_DEPRECATION_ERROR' @ [125:73] ==> public final val TYPEALIAS_EXPANSION_DEPRECATION_ERROR: (DiagnosticFactory3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>..DiagnosticFactory3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
-'b' @ [125:112] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>.b: (DeclarationDescriptor..DeclarationDescriptor?)[MyPropertyDescriptor]
+'b' @ [125:112] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<(PsiElement..PsiElement?), (TypeAliasDescriptor..TypeAliasDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?), (String..String?)>.b: DeclarationDescriptor[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeAliasDescriptor..org.jetbrains.kotlin.descriptors.TypeAliasDescriptor?)
@@ -243,11 +243,13 @@ Inferred types:
 
 'IllegalStateException' @ [126:31] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
 
-'DeprecatedSymbolUsageFixBase' @ [129:31] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase[FakeCallableDescriptorForObject]
+'?:' @ [129:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ReplaceWith?, right: ReplaceWith): ReplaceWith[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ReplaceWith
 
 'fetchReplaceWithPattern' @ [129:60] ==> public final fun fetchReplaceWithPattern(descriptor: DeclarationDescriptor, project: Project): ReplaceWith? defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion[SimpleFunctionDescriptorImpl]
 
-'descriptor' @ [129:84] ==> val descriptor: (DeclarationDescriptor..DeclarationDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[LocalVariableDescriptor]
+'descriptor' @ [129:84] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[LocalVariableDescriptor]
 
 'nameExpression' @ [129:96] ==> val nameExpression: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[LocalVariableDescriptor]
 
@@ -259,7 +261,7 @@ Inferred types:
 
 'replacement' @ [130:41] ==> val replacement: ReplaceWith defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[LocalVariableDescriptor]
 
-'descriptor' @ [130:54] ==> val descriptor: (DeclarationDescriptor..DeclarationDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[LocalVariableDescriptor]
+'descriptor' @ [130:54] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.extractDataFromDiagnostic[LocalVariableDescriptor]
 
 'element' @ [134:36] ==> value-parameter element: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.buildUsageReplacementStrategy[ValueParameterDescriptorImpl]
 
@@ -386,7 +388,9 @@ Inferred types:
 
 'isReallySuccess' @ [150:39] ==> public fun ResolvedCall<*>.isReallySuccess(): Boolean defined in org.jetbrains.kotlin.resolve.calls.model[DeserializedSimpleFunctionDescriptor]
 
-'ReplaceWithAnnotationAnalyzer' @ [151:39] ==> public object ReplaceWithAnnotationAnalyzer defined in org.jetbrains.kotlin.idea.quickfix.replaceWith in file ReplaceWithAnnotationAnalyzer.kt[FakeCallableDescriptorForObject]
+'?:' @ [151:39] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CodeToInline?, right: CodeToInline): CodeToInline[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CodeToInline
 
 'analyzeCallableReplacement' @ [151:69] ==> public final fun analyzeCallableReplacement(annotation: ReplaceWith, symbolDescriptor: CallableDescriptor, resolutionFacade: ResolutionFacade): CodeToInline? defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceWithAnnotationAnalyzer[SimpleFunctionDescriptorImpl]
 
@@ -509,7 +513,9 @@ Inferred types:
 
 'unsubstitutedPrimaryConstructor' @ [183:54] ==> public final val ClassDescriptor.unsubstitutedPrimaryConstructor: ClassConstructorDescriptor?[MyPropertyDescriptor]
 
-'ReplaceWithAnnotationAnalyzer' @ [184:57] ==> public object ReplaceWithAnnotationAnalyzer defined in org.jetbrains.kotlin.idea.quickfix.replaceWith in file ReplaceWithAnnotationAnalyzer.kt[FakeCallableDescriptorForObject]
+'?:' @ [184:57] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CodeToInline?, right: CodeToInline): CodeToInline[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CodeToInline
 
 'analyzeCallableReplacement' @ [184:87] ==> public final fun analyzeCallableReplacement(annotation: ReplaceWith, symbolDescriptor: CallableDescriptor, resolutionFacade: ResolutionFacade): CodeToInline? defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceWithAnnotationAnalyzer[SimpleFunctionDescriptorImpl]
 

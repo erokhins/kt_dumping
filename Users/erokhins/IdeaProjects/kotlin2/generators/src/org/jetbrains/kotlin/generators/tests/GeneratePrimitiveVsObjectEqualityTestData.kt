@@ -8,11 +8,11 @@
 
 'java' @ [27:69] ==> public val <T> KClass<out GeneratePrimitiveVsObjectEqualityTestData>.java: Class<out GeneratePrimitiveVsObjectEqualityTestData> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> GeneratePrimitiveVsObjectEqualityTestData
+    <T> -> Captured(out GeneratePrimitiveVsObjectEqualityTestData)
 
 'simpleName' @ [27:74] ==> public final val <T : (Any..Any?)> Class<out GeneratePrimitiveVsObjectEqualityTestData>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> GeneratePrimitiveVsObjectEqualityTestData
+    <T : (Any..Any?)> -> Captured(out GeneratePrimitiveVsObjectEqualityTestData)
 
 'PrintWriter' @ [30:9] ==> public constructor PrintWriter(p0: (File..File?)) defined in java.io.PrintWriter[JavaClassConstructorDescriptor]
 

@@ -46,7 +46,7 @@ Inferred types:
 
 'size' @ [43:62] ==> public abstract val size: Int defined in kotlin.collections.MutableList[DeserializedPropertyDescriptor]
 
-'toResolvedCall' @ [47:28] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'toResolvedCall' @ [47:28] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'PARTIAL' @ [47:59] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
@@ -54,7 +54,7 @@ Inferred types:
 
 'resultingDescriptor' @ [48:29] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'fqNameUnsafe' @ [48:49] ==> public val DeclarationDescriptor.fqNameUnsafe: FqNameUnsafe defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
@@ -74,13 +74,15 @@ Inferred types:
 
 'call' @ [54:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueArguments' @ [54:44] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
 'getArgumentExpression' @ [54:62] ==> @IfNotParsed public abstract fun getArgumentExpression(): KtExpression? defined in org.jetbrains.kotlin.psi.ValueArgument[DeserializedSimpleFunctionDescriptor]
 
-'ConstantExpressionEvaluator' @ [56:24] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [56:24] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CompileTimeConstant<*>?, right: CompileTimeConstant<*>): CompileTimeConstant<*>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CompileTimeConstant<*>
 
 'getConstant' @ [56:52] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -94,7 +96,7 @@ Inferred types:
 
 'expression' @ [57:51] ==> val expression: KtConstantExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceSubstringIntention.isFirstArgumentZero[LocalVariableDescriptor]
 
-'constant' @ [58:16] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.idea.intentions.ReplaceSubstringIntention.isFirstArgumentZero[LocalVariableDescriptor]
+'constant' @ [58:16] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.idea.intentions.ReplaceSubstringIntention.isFirstArgumentZero[LocalVariableDescriptor]
 
 'getValue' @ [58:25] ==> public open fun getValue(expectedType: KotlinType): Any? defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedSimpleFunctionDescriptor]
 

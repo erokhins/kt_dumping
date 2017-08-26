@@ -64,7 +64,7 @@ Inferred types:
 
 'getPsi' @ [33:21] ==> public abstract fun <T : (PsiElement..PsiElement?)> getPsi(@NotNull p0: Class<(KtStringTemplateExpression..KtStringTemplateExpression?)>): (KtStringTemplateExpression..KtStringTemplateExpression?) defined in com.intellij.lang.ASTNode[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtStringTemplateExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtStringTemplateExpression..org.jetbrains.kotlin.psi.KtStringTemplateExpression?)
 
 'KtStringTemplateExpression' @ [33:28] ==> public constructor KtStringTemplateExpression(@NotNull node: ASTNode) defined in org.jetbrains.kotlin.psi.KtStringTemplateExpression[JavaClassConstructorDescriptor]
 

@@ -148,8 +148,6 @@ Inferred types:
 
 'it' @ [60:71] ==> value-parameter it: PsiExpression defined in org.jetbrains.kotlin.j2k.CodeConverter.convertExpressionsInList.<anonymous>[ValueParameterDescriptorImpl]
 
-'CommentsAndSpacesInheritance' @ [60:75] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'LINE_BREAKS' @ [60:104] ==> public final val LINE_BREAKS: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
 'ArgumentList' @ [63:16] ==> public constructor ArgumentList(expressions: List<Expression>, lPar: LPar, rPar: RPar) defined in org.jetbrains.kotlin.j2k.ast.ArgumentList[ClassConstructorDescriptorImpl]
@@ -164,15 +162,11 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiExpression..com.intellij.psi.PsiExpression?)
 
-'LPar' @ [65:17] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.LPar[FakeCallableDescriptorForObject]
-
 'withPrototype' @ [65:22] ==> public final fun withPrototype(element: PsiElement?): LPar defined in org.jetbrains.kotlin.j2k.ast.LPar.Companion[SimpleFunctionDescriptorImpl]
 
 'list' @ [65:36] ==> value-parameter list: PsiExpressionList defined in org.jetbrains.kotlin.j2k.CodeConverter.convertArgumentList[ValueParameterDescriptorImpl]
 
 'lPar' @ [65:41] ==> public fun PsiExpressionList.lPar(): PsiElement? defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
-
-'RPar' @ [66:17] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.RPar[FakeCallableDescriptorForObject]
 
 'withPrototype' @ [66:22] ==> public final fun withPrototype(element: PsiElement?): RPar defined in org.jetbrains.kotlin.j2k.ast.RPar.Companion[SimpleFunctionDescriptorImpl]
 

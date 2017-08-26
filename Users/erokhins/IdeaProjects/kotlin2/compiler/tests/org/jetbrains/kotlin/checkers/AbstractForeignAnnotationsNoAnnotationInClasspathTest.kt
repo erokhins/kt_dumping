@@ -67,8 +67,6 @@ Inferred types:
 Inferred types:
     <T> -> File
 
-'MockLibraryUtil' @ [50:20] ==> public object MockLibraryUtil defined in org.jetbrains.kotlin.test[FakeCallableDescriptorForObject]
-
 'compileJvmLibraryToJar' @ [50:36] ==> @JvmStatic @JvmOverloads public final fun compileJvmLibraryToJar(sourcesPath: String, jarName: String, addSources: Boolean = ..., allowKotlinSources: Boolean = ..., extraOptions: List<String> = ..., extraClasspath: List<String> = ..., useJava9: Boolean = ...): File defined in org.jetbrains.kotlin.test.MockLibraryUtil[DeserializedSimpleFunctionDescriptor]
 
 'annotationsPath' @ [50:59] ==> protected open val annotationsPath: String defined in org.jetbrains.kotlin.checkers.AbstractForeignAnnotationsNoAnnotationInClasspathTest[PropertyDescriptorImpl]

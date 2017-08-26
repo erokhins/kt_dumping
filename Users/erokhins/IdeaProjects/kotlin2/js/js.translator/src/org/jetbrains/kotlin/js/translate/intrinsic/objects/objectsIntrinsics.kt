@@ -1,6 +1,6 @@
-'lazy' @ [33:38] ==> public fun <T> lazy(initializer: () -> JsName): Lazy<JsName> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [33:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JsName
+    <T> -> T
 
 'replaceRootReference' @ [34:38] ==> public open fun replaceRootReference(@NotNull fullQualifier: JsNameRef, @NotNull newQualifier: JsExpression): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 

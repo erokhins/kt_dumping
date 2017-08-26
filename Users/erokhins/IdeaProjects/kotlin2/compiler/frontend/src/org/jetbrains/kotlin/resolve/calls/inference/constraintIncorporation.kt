@@ -76,7 +76,7 @@ Inferred types:
 
 'kind' @ [58:85] ==> public final val kind: TypeBounds.BoundKind defined in org.jetbrains.kotlin.resolve.calls.inference.TypeBounds.Bound[PropertyDescriptorImpl]
 
-'reverse' @ [58:90] ==> public fun TypeBounds.BoundKind.reverse(): TypeBounds.BoundKind defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'reverse' @ [58:90] ==> public fun TypeBounds.BoundKind.reverse(): TypeBounds.BoundKind defined in org.jetbrains.kotlin.resolve.calls.inference in file TypeBounds.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [58:101] ==> val context: ConstraintContext defined in org.jetbrains.kotlin.resolve.calls.inference.incorporateBound[LocalVariableDescriptor]
 
@@ -307,7 +307,7 @@ Inferred types:
 
 'HashSet' @ [106:27] ==> public constructor HashSet<E : (Any..Any?)>(p0: (MutableCollection<out (TypeVariable..TypeVariable?)>..Collection<(TypeVariable..TypeVariable?)>?)) defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> TypeVariable
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.inference.TypeVariable..org.jetbrains.kotlin.resolve.calls.inference.TypeVariable?)
 
 'bound' @ [106:35] ==> value-parameter bound: TypeBounds.Bound defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound[ValueParameterDescriptorImpl]
 
@@ -317,17 +317,17 @@ Inferred types:
 
 'derivedFrom' @ [106:68] ==> public final val derivedFrom: Set<TypeVariable> defined in org.jetbrains.kotlin.resolve.calls.inference.TypeBounds.Bound[PropertyDescriptorImpl]
 
-'derivedFrom' @ [107:13] ==> val derivedFrom: HashSet<TypeVariable> defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound.addNewBound[LocalVariableDescriptor]
+'derivedFrom' @ [107:13] ==> val derivedFrom: HashSet<(TypeVariable..TypeVariable?)> defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound.addNewBound[LocalVariableDescriptor]
 
-'contains' @ [107:25] ==> public open fun contains(element: TypeVariable): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'contains' @ [107:25] ==> public open fun contains(element: (TypeVariable..TypeVariable?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'substitution' @ [107:34] ==> value-parameter substitution: TypeBounds.Bound defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound[ValueParameterDescriptorImpl]
 
 'typeVariable' @ [107:47] ==> public final val typeVariable: TypeVariable defined in org.jetbrains.kotlin.resolve.calls.inference.TypeBounds.Bound[PropertyDescriptorImpl]
 
-'derivedFrom' @ [109:9] ==> val derivedFrom: HashSet<TypeVariable> defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound.addNewBound[LocalVariableDescriptor]
+'derivedFrom' @ [109:9] ==> val derivedFrom: HashSet<(TypeVariable..TypeVariable?)> defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound.addNewBound[LocalVariableDescriptor]
 
-'add' @ [109:21] ==> public open fun add(element: TypeVariable): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'add' @ [109:21] ==> public open fun add(element: (TypeVariable..TypeVariable?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'substitution' @ [109:25] ==> value-parameter substitution: TypeBounds.Bound defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound[ValueParameterDescriptorImpl]
 
@@ -347,7 +347,7 @@ Inferred types:
 
 'position' @ [110:91] ==> val position: CompoundConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound[LocalVariableDescriptor]
 
-'derivedFrom' @ [110:101] ==> val derivedFrom: HashSet<TypeVariable> defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound.addNewBound[LocalVariableDescriptor]
+'derivedFrom' @ [110:101] ==> val derivedFrom: HashSet<(TypeVariable..TypeVariable?)> defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound.addNewBound[LocalVariableDescriptor]
 
 'substitution' @ [113:9] ==> value-parameter substitution: TypeBounds.Bound defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound[ValueParameterDescriptorImpl]
 
@@ -369,7 +369,7 @@ Inferred types:
 
 'this' @ [121:66] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.inference.generateNewBound.containsConstrainingTypeWithoutProjection[ReceiverParameterDescriptorImpl]
 
-'getNestedArguments' @ [121:71] ==> internal fun KotlinType.getNestedArguments(): List<TypeProjection> defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'getNestedArguments' @ [121:71] ==> internal fun KotlinType.getNestedArguments(): List<TypeProjection> defined in org.jetbrains.kotlin.resolve.calls.inference in file constraintSystemUtils.kt[SimpleFunctionDescriptorImpl]
 
 'any' @ [121:92] ==> public inline fun <T> Iterable<TypeProjection>.any(predicate: (TypeProjection) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

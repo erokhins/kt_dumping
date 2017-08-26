@@ -121,7 +121,7 @@ Inferred types:
 
 'synchronizedList' @ [79:35] ==> public open fun <T : (Any..Any?)> synchronizedList(p0: (MutableList<(PsiReference..PsiReference?)>..List<(PsiReference..PsiReference?)>?)): (MutableList<(PsiReference..PsiReference?)>..List<(PsiReference..PsiReference?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiReference
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
 
 'arrayListOf' @ [79:52] ==> @SinceKotlin @InlineOnly public inline fun <T> arrayListOf(): ArrayList<PsiReference> /* = ArrayList<PsiReference> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -237,7 +237,7 @@ Inferred types:
 
 'UniqueProcessor' @ [132:52] ==> public constructor UniqueProcessor<T : (Any..Any?)>(@NotNull p0: Processor<(UsageInfo..UsageInfo?)>) defined in com.intellij.util.CommonProcessors.UniqueProcessor[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UsageInfo
+    <T : (Any..Any?)> -> (com.intellij.usageView.UsageInfo..com.intellij.usageView.UsageInfo?)
 
 'usageInfoProcessor' @ [132:68] ==> value-parameter usageInfoProcessor: Processor<UsageInfo> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindUsagesHandler.Companion.createReferenceProcessor[ValueParameterDescriptorImpl]
 
@@ -249,7 +249,7 @@ Inferred types:
 
 'processUsage' @ [134:56] ==> internal final fun processUsage(processor: Processor<UsageInfo>, ref: PsiReference): Boolean defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindUsagesHandler.Companion[SimpleFunctionDescriptorImpl]
 
-'uniqueProcessor' @ [134:69] ==> val uniqueProcessor: CommonProcessors.UniqueProcessor<UsageInfo> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindUsagesHandler.Companion.createReferenceProcessor[LocalVariableDescriptor]
+'uniqueProcessor' @ [134:69] ==> val uniqueProcessor: CommonProcessors.UniqueProcessor<(UsageInfo..UsageInfo?)> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindUsagesHandler.Companion.createReferenceProcessor[LocalVariableDescriptor]
 
 'it' @ [134:86] ==> value-parameter it: (PsiReference..PsiReference?) defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindUsagesHandler.Companion.createReferenceProcessor.<anonymous>[ValueParameterDescriptorImpl]
 

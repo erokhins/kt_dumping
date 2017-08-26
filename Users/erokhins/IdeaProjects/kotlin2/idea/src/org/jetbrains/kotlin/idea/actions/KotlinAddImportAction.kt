@@ -469,8 +469,8 @@ Inferred types:
 
 'incUseCount' @ [203:49] ==> public open fun <T : (Any..Any?), Loc : (Any..Any?)> incUseCount(p0: (Key<out (Statistician<(PsiElement..PsiElement?), (ProximityLocation..ProximityLocation?)>..Statistician<(PsiElement..PsiElement?), (ProximityLocation..ProximityLocation?)>?)>..Key<out (Statistician<(PsiElement..PsiElement?), (ProximityLocation..ProximityLocation?)>..Statistician<(PsiElement..PsiElement?), (ProximityLocation..ProximityLocation?)>?)>?), p1: (PsiElement..PsiElement?), p2: (ProximityLocation..ProximityLocation?)): Unit defined in com.intellij.psi.statistics.StatisticsManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
-    <Loc : (Any..Any?)> -> ProximityLocation
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <Loc : (Any..Any?)> -> (com.intellij.psi.util.ProximityLocation..com.intellij.psi.util.ProximityLocation?)
 
 'STATISTICS_KEY' @ [203:84] ==> public final val STATISTICS_KEY: (Key<(ProximityStatistician..ProximityStatistician?)>..Key<(ProximityStatistician..ProximityStatistician?)>?) defined in com.intellij.psi.util.proximity.PsiProximityComparator[JavaPropertyDescriptor]
 
@@ -509,8 +509,6 @@ Inferred types:
 'importableFqName' @ [211:71] ==> public val DeclarationDescriptor.importableFqName: FqName? defined in org.jetbrains.kotlin.idea.imports[DeserializedPropertyDescriptor]
 
 'FORCED_SHORTENING' @ [211:128] ==> enum entry FORCED_SHORTENING defined in org.jetbrains.kotlin.idea.references.KtSimpleNameReference.ShorteningMode[FakeCallableDescriptorForObject]
-
-'ImportInsertHelper' @ [214:21] ==> public companion object defined in org.jetbrains.kotlin.idea.util.ImportInsertHelper[FakeCallableDescriptorForObject]
 
 'getInstance' @ [214:40] ==> @JvmStatic public final fun getInstance(project: Project): ImportInsertHelper defined in org.jetbrains.kotlin.idea.util.ImportInsertHelper.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -713,14 +711,14 @@ Inferred types:
 
 'descriptors' @ [296:50] ==> public final val descriptors: Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.actions.SingleImportVariant[PropertyDescriptorImpl]
 
-'sortedBy' @ [296:62] ==> public inline fun <T, R : Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>> Iterable<DeclarationDescriptor>.sortedBy(crossinline selector: (DeclarationDescriptor) -> {Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}?): List<DeclarationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'sortedBy' @ [296:62] ==> public inline fun <T, R : Comparable<Int>> Iterable<DeclarationDescriptor>.sortedBy(crossinline selector: (DeclarationDescriptor) -> Int?): List<DeclarationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DeclarationDescriptor
-    <R : Comparable<R>> -> {Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}
+    <R : Comparable<R>> -> Int
 
-'if (it is ClassDescriptor) 0 else 1' @ [296:73] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}, elseBranch: {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}): {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}[SimpleFunctionDescriptorImpl]
+'if (it is ClassDescriptor) 0 else 1' @ [296:73] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Int, elseBranch: Int): Int[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Int
 
 'it' @ [296:77] ==> value-parameter it: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.actions.SingleImportVariant.<get-descriptorsToImport>.<anonymous>[ValueParameterDescriptorImpl]
 

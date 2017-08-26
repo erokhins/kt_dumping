@@ -50,17 +50,17 @@
 
 'body' @ [41:31] ==> public final val KtWhileExpression.body: KtExpression?[MyPropertyDescriptor]
 
-'let' @ [41:37] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> IrExpression): IrExpression defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [41:37] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> IrExpression?): IrExpression? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtExpression
-    <R> -> IrExpression
+    <R> -> IrExpression?
 
 'if (ktLoopBody is KtBlockExpression)
                 generateWhileLoopBody(ktLoopBody)
             else
-                statementGenerator.generateExpression(ktLoopBody)' @ [42:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: IrExpression, elseBranch: IrExpression): IrExpression[SimpleFunctionDescriptorImpl]
+                statementGenerator.generateExpression(ktLoopBody)' @ [42:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: IrExpression?, elseBranch: IrExpression?): IrExpression?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> IrExpression
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> IrExpression?
 
 'ktLoopBody' @ [42:17] ==> value-parameter ktLoopBody: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.LoopExpressionGenerator.generateWhileLoop.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -120,17 +120,17 @@ Inferred types:
 
 'body' @ [59:33] ==> public final val KtDoWhileExpression.body: KtExpression?[MyPropertyDescriptor]
 
-'let' @ [59:39] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> IrExpression): IrExpression defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [59:39] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> IrExpression?): IrExpression? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtExpression
-    <R> -> IrExpression
+    <R> -> IrExpression?
 
 'if (ktLoopBody is KtBlockExpression)
                 generateDoWhileLoopBody(ktLoopBody)
             else
-                statementGenerator.generateExpression(ktLoopBody)' @ [60:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: IrExpression, elseBranch: IrExpression): IrExpression[SimpleFunctionDescriptorImpl]
+                statementGenerator.generateExpression(ktLoopBody)' @ [60:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: IrExpression?, elseBranch: IrExpression?): IrExpression?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> IrExpression
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> IrExpression?
 
 'ktLoopBody' @ [60:17] ==> value-parameter ktLoopBody: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.LoopExpressionGenerator.generateDoWhileLoop.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -502,7 +502,7 @@ Inferred types:
 
 'callGenerator' @ [157:30] ==> val callGenerator: CallGenerator defined in org.jetbrains.kotlin.psi2ir.generators.LoopExpressionGenerator.generateForLoop[LocalVariableDescriptor]
 
-'generateCall' @ [157:44] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [157:44] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'ktLoopRange' @ [157:57] ==> val ktLoopRange: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.LoopExpressionGenerator.generateForLoop[LocalVariableDescriptor]
 
@@ -588,7 +588,7 @@ Inferred types:
 
 'callGenerator' @ [169:29] ==> val callGenerator: CallGenerator defined in org.jetbrains.kotlin.psi2ir.generators.LoopExpressionGenerator.generateForLoop[LocalVariableDescriptor]
 
-'generateCall' @ [169:43] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [169:43] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'ktLoopRange' @ [169:56] ==> val ktLoopRange: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.LoopExpressionGenerator.generateForLoop[LocalVariableDescriptor]
 
@@ -640,7 +640,7 @@ Inferred types:
 
 'callGenerator' @ [177:26] ==> val callGenerator: CallGenerator defined in org.jetbrains.kotlin.psi2ir.generators.LoopExpressionGenerator.generateForLoop[LocalVariableDescriptor]
 
-'generateCall' @ [177:40] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [177:40] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'ktLoopRange' @ [177:53] ==> val ktLoopRange: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.LoopExpressionGenerator.generateForLoop[LocalVariableDescriptor]
 

@@ -2,11 +2,7 @@
 
 'containingDeclaration' @ [52:9] ==> value-parameter containingDeclaration: DeclarationDescriptor defined in org.jetbrains.kotlin.ir.descriptors.IrDelegateDescriptorBase.<init>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [54:9] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [54:21] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [55:9] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [55:18] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -117,8 +113,6 @@ Inferred types:
 'correspondingLocalProperty' @ [130:17] ==> value-parameter correspondingLocalProperty: VariableDescriptorWithAccessors defined in org.jetbrains.kotlin.ir.descriptors.IrLocalDelegatedPropertyDelegateDescriptorImpl.<init>[ValueParameterDescriptorImpl]
 
 'containingDeclaration' @ [130:44] ==> public final val VariableDescriptorWithAccessors.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
-
-'Annotations' @ [131:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [131:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

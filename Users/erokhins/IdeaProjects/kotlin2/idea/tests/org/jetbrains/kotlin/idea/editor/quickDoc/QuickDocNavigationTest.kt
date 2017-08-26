@@ -10,7 +10,7 @@
 
 'assertInstanceOf' @ [42:24] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<(KtClass..KtClass?)>): (KtClass..KtClass?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtClass
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'target' @ [42:41] ==> val target: PsiElement? defined in org.jetbrains.kotlin.idea.editor.quickDoc.QuickDocNavigationTest.testSimple[LocalVariableDescriptor]
 
@@ -28,7 +28,7 @@ Inferred types:
 
 'assertInstanceOf' @ [48:24] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<(PsiClass..PsiClass?)>): (PsiClass..PsiClass?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiClass
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
 
 'target' @ [48:41] ==> val target: PsiElement? defined in org.jetbrains.kotlin.idea.editor.quickDoc.QuickDocNavigationTest.testJdkClass[LocalVariableDescriptor]
 
@@ -46,7 +46,7 @@ Inferred types:
 
 'assertInstanceOf' @ [54:24] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<(KtFunction..KtFunction?)>): (KtFunction..KtFunction?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtFunction
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFunction..org.jetbrains.kotlin.psi.KtFunction?)
 
 'target' @ [54:41] ==> val target: PsiElement? defined in org.jetbrains.kotlin.idea.editor.quickDoc.QuickDocNavigationTest.testStdlibFunction[LocalVariableDescriptor]
 
@@ -72,7 +72,7 @@ Inferred types:
 
 'assertInstanceOf' @ [59:24] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<(PsiClass..PsiClass?)>): (PsiClass..PsiClass?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiClass
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
 
 'secondaryTarget' @ [59:41] ==> val secondaryTarget: PsiElement? defined in org.jetbrains.kotlin.idea.editor.quickDoc.QuickDocNavigationTest.testStdlibFunction[LocalVariableDescriptor]
 
@@ -90,7 +90,7 @@ Inferred types:
 
 'assertInstanceOf' @ [65:24] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<(KtClass..KtClass?)>): (KtClass..KtClass?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtClass
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'target' @ [65:41] ==> val target: PsiElement? defined in org.jetbrains.kotlin.idea.editor.quickDoc.QuickDocNavigationTest.testQualifiedName[LocalVariableDescriptor]
 
@@ -108,7 +108,7 @@ Inferred types:
 
 'assertInstanceOf' @ [71:24] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<(KtFunction..KtFunction?)>): (KtFunction..KtFunction?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtFunction
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFunction..org.jetbrains.kotlin.psi.KtFunction?)
 
 'target' @ [71:41] ==> val target: PsiElement? defined in org.jetbrains.kotlin.idea.editor.quickDoc.QuickDocNavigationTest.testTopLevelFun[LocalVariableDescriptor]
 
@@ -126,7 +126,7 @@ Inferred types:
 
 'assertInstanceOf' @ [77:24] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<(KtProperty..KtProperty?)>): (KtProperty..KtProperty?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtProperty
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'target' @ [77:41] ==> val target: PsiElement? defined in org.jetbrains.kotlin.idea.editor.quickDoc.QuickDocNavigationTest.testTopLevelProperty[LocalVariableDescriptor]
 

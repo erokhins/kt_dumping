@@ -28,7 +28,7 @@ Inferred types:
 
 'getNotificationsOfType' @ [37:63] ==> @NotNull public abstract fun <T : (Notification..Notification?)> getNotificationsOfType(@NotNull p0: Class<(ConfigureKotlinNotification..ConfigureKotlinNotification?)>, @Nullable p1: Project?): (Array<(ConfigureKotlinNotification..ConfigureKotlinNotification?)>..Array<out (ConfigureKotlinNotification..ConfigureKotlinNotification?)>) defined in com.intellij.notification.NotificationsManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Notification..Notification?)> -> ConfigureKotlinNotification
+    <T : (Notification..Notification?)> -> (org.jetbrains.kotlin.idea.configuration.ui.notifications.ConfigureKotlinNotification..org.jetbrains.kotlin.idea.configuration.ui.notifications.ConfigureKotlinNotification?)
 
 'ConfigureKotlinNotification' @ [37:86] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.ui.notifications.ConfigureKotlinNotification[FakeCallableDescriptorForObject]
 
@@ -64,15 +64,15 @@ Inferred types:
 
 'notificationsManager' @ [56:29] ==> val notificationsManager: (NotificationsManager..NotificationsManager?) defined in org.jetbrains.kotlin.idea.configuration.KotlinSingleNotificationManager.expireOldNotifications[LocalVariableDescriptor]
 
-'getNotificationsOfType' @ [56:50] ==> @NotNull public abstract fun <T : (Notification..Notification?)> getNotificationsOfType(@NotNull p0: Class<out (T..T?)>, @Nullable p1: Project?): Array<out (T..T?)> defined in com.intellij.notification.NotificationsManager[JavaMethodDescriptor]
+'getNotificationsOfType' @ [56:50] ==> @NotNull public abstract fun <T : (Notification..Notification?)> getNotificationsOfType(@NotNull p0: Class<out T>, @Nullable p1: Project?): Array<out (T..T?)> defined in com.intellij.notification.NotificationsManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Notification..Notification?)> -> T
+    <T : (Notification..Notification?)> -> Captured(out T)
 
 'notificationClass' @ [56:73] ==> value-parameter notificationClass: KClass<out T> defined in org.jetbrains.kotlin.idea.configuration.KotlinSingleNotificationManager.expireOldNotifications[ValueParameterDescriptorImpl]
 
 'java' @ [56:91] ==> public val <T> KClass<out T>.java: Class<out T> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> T
+    <T> -> Captured(out T)
 
 'project' @ [56:97] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.KotlinSingleNotificationManager.expireOldNotifications[ValueParameterDescriptorImpl]
 
@@ -119,13 +119,15 @@ Inferred types:
 
 'waitForSmartMode' @ [73:46] ==> public abstract fun waitForSmartMode(): Unit defined in com.intellij.openapi.project.DumbService[JavaMethodDescriptor]
 
-'getConfigurableModulesWithKotlinFiles' @ [74:17] ==> public fun getConfigurableModulesWithKotlinFiles(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getConfigurableModulesWithKotlinFiles' @ [74:17] ==> public fun getConfigurableModulesWithKotlinFiles(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [74:55] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.checkHideNonConfiguredNotifications[ValueParameterDescriptorImpl]
 
 'all' @ [74:64] ==> public inline fun <T> Iterable<ModuleSourceRootGroup>.all(predicate: (ModuleSourceRootGroup) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ModuleSourceRootGroup
+
+'isModuleConfigured' @ [74:70] ==> public fun isModuleConfigured(moduleSourceRootGroup: ModuleSourceRootGroup): Boolean defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'getApplication' @ [75:36] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 

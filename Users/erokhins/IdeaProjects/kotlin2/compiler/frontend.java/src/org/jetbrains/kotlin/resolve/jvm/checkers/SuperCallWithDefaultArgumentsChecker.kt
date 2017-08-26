@@ -4,7 +4,7 @@
 
 'call' @ [29:71] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'superCallExpression' @ [30:13] ==> val superCallExpression: KtSuperExpression? defined in org.jetbrains.kotlin.resolve.jvm.checkers.SuperCallWithDefaultArgumentsChecker.check[LocalVariableDescriptor]
 
@@ -14,7 +14,7 @@ Inferred types:
 
 'usesDefaultArguments' @ [30:58] ==> public fun <D : CallableDescriptor> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.usesDefaultArguments(): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'context' @ [31:9] ==> value-parameter context: CallCheckerContext defined in org.jetbrains.kotlin.resolve.jvm.checkers.SuperCallWithDefaultArgumentsChecker.check[ValueParameterDescriptorImpl]
 
@@ -32,7 +32,7 @@ Inferred types:
 
 'resultingDescriptor' @ [31:101] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'name' @ [31:121] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 

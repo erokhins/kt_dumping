@@ -127,12 +127,16 @@ Inferred types:
 
 'BaseBinaryIntrinsic' @ [62:36] ==> public constructor BaseBinaryIntrinsic(applyFun: (left: JsExpression, right: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.LongOperationFIF.BaseBinaryIntrinsic[ClassConstructorDescriptorImpl]
 
+'primitiveCompareTo' @ [62:58] ==> @NotNull public open fun primitiveCompareTo(@NotNull left: JsExpression, @NotNull right: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
+
 'to' @ [63:21] ==> public infix fun <A, B> String.to(that: LongOperationFIF.BaseBinaryIntrinsic): Pair<String, LongOperationFIF.BaseBinaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> BaseBinaryIntrinsic
 
 'BaseBinaryIntrinsic' @ [63:31] ==> public constructor BaseBinaryIntrinsic(applyFun: (left: JsExpression, right: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.LongOperationFIF.BaseBinaryIntrinsic[ClassConstructorDescriptorImpl]
+
+'sum' @ [63:53] ==> @NotNull public open fun sum(@NotNull left: JsExpression, @NotNull right: JsExpression): JsBinaryOperation defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
 'to' @ [64:21] ==> public infix fun <A, B> String.to(that: LongOperationFIF.BaseBinaryIntrinsic): Pair<String, LongOperationFIF.BaseBinaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -141,12 +145,16 @@ Inferred types:
 
 'BaseBinaryIntrinsic' @ [64:32] ==> public constructor BaseBinaryIntrinsic(applyFun: (left: JsExpression, right: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.LongOperationFIF.BaseBinaryIntrinsic[ClassConstructorDescriptorImpl]
 
+'subtract' @ [64:54] ==> @NotNull public open fun subtract(@NotNull left: JsExpression, @NotNull right: JsExpression): JsBinaryOperation defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
+
 'to' @ [65:21] ==> public infix fun <A, B> String.to(that: LongOperationFIF.BaseBinaryIntrinsic): Pair<String, LongOperationFIF.BaseBinaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> BaseBinaryIntrinsic
 
 'BaseBinaryIntrinsic' @ [65:32] ==> public constructor BaseBinaryIntrinsic(applyFun: (left: JsExpression, right: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.LongOperationFIF.BaseBinaryIntrinsic[ClassConstructorDescriptorImpl]
+
+'mul' @ [65:54] ==> @NotNull public open fun mul(@NotNull left: JsExpression, @NotNull right: JsExpression): JsBinaryOperation defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
 'to' @ [66:21] ==> public infix fun <A, B> String.to(that: LongOperationFIF.BaseBinaryIntrinsic): Pair<String, LongOperationFIF.BaseBinaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -155,6 +163,8 @@ Inferred types:
 
 'BaseBinaryIntrinsic' @ [66:30] ==> public constructor BaseBinaryIntrinsic(applyFun: (left: JsExpression, right: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.LongOperationFIF.BaseBinaryIntrinsic[ClassConstructorDescriptorImpl]
 
+'div' @ [66:52] ==> @NotNull public open fun div(@NotNull left: JsExpression, @NotNull right: JsExpression): JsBinaryOperation defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
+
 'to' @ [67:21] ==> public infix fun <A, B> String.to(that: LongOperationFIF.BaseBinaryIntrinsic): Pair<String, LongOperationFIF.BaseBinaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
@@ -162,12 +172,16 @@ Inferred types:
 
 'BaseBinaryIntrinsic' @ [67:30] ==> public constructor BaseBinaryIntrinsic(applyFun: (left: JsExpression, right: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.LongOperationFIF.BaseBinaryIntrinsic[ClassConstructorDescriptorImpl]
 
+'mod' @ [67:52] ==> @NotNull public open fun mod(@NotNull left: JsExpression, @NotNull right: JsExpression): JsBinaryOperation defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
+
 'to' @ [68:21] ==> public infix fun <A, B> String.to(that: LongOperationFIF.BaseBinaryIntrinsic): Pair<String, LongOperationFIF.BaseBinaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> BaseBinaryIntrinsic
 
 'BaseBinaryIntrinsic' @ [68:30] ==> public constructor BaseBinaryIntrinsic(applyFun: (left: JsExpression, right: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.LongOperationFIF.BaseBinaryIntrinsic[ClassConstructorDescriptorImpl]
+
+'mod' @ [68:52] ==> @NotNull public open fun mod(@NotNull left: JsExpression, @NotNull right: JsExpression): JsBinaryOperation defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
 'FunctionIntrinsicWithReceiverComputed' @ [72:13] ==> public constructor FunctionIntrinsicWithReceiverComputed() defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.basic.FunctionIntrinsicWithReceiverComputed[ClassConstructorDescriptorImpl]
 
@@ -276,6 +290,8 @@ Inferred types:
 
 'operationName' @ [92:60] ==> val operationName: String defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.LongOperationFIF.getIntrinsic[LocalVariableDescriptor]
 
+'longFromInt' @ [92:78] ==> @NotNull public open fun longFromInt(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
+
 'ID' @ [92:91] ==> public fun <T> identity(): (JsExpression) -> JsExpression defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JsExpression
@@ -295,6 +311,8 @@ Inferred types:
 'ID' @ [94:76] ==> public fun <T> identity(): (JsExpression) -> JsExpression defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JsExpression
+
+'longFromInt' @ [94:84] ==> @NotNull public open fun longFromInt(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
 'FLOATING_POINT_BINARY_OPERATION_LONG' @ [95:12] ==> public final val FLOATING_POINT_BINARY_OPERATION_LONG: DescriptorPredicate defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.LongOperationFIF[PropertyDescriptorImpl]
 

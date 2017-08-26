@@ -6,8 +6,8 @@ Inferred types:
 
 'getElements' @ [30:25] ==> public open fun <Key : (Any..Any?), Psi : (PsiElement..PsiElement?)> getElements(@NotNull p0: StubIndexKey<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)>, @NotNull p1: String, @NotNull p2: Project, @Nullable p3: GlobalSearchScope?, @NotNull p4: Class<(KtCallableDeclaration..KtCallableDeclaration?)>): (MutableCollection<(KtCallableDeclaration..KtCallableDeclaration?)>..Collection<(KtCallableDeclaration..KtCallableDeclaration?)>?) defined in com.intellij.psi.stubs.StubIndex[JavaMethodDescriptor]
 Inferred types:
-    <Key : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtCallableDeclaration
+    <Key : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallableDeclaration..org.jetbrains.kotlin.psi.KtCallableDeclaration?)
 
 'KEY' @ [30:37] ==> private final val KEY: StubIndexKey<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex.Companion[PropertyDescriptorImpl]
 

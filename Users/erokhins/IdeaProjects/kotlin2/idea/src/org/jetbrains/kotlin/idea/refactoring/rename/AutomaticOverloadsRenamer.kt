@@ -1,13 +1,10 @@
 'AutomaticRenamer' @ [43:79] ==> protected/*protected and package*/ constructor AutomaticRenamer() defined in com.intellij.refactoring.rename.naming.AutomaticRenamer[JavaClassConstructorDescriptor]
 
-'UserDataProperty' @ [47:78] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<(PsiElement) -> Boolean>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> PsiElement
-    <T : Any> -> Function1<PsiElement, Boolean>
+'getValue' @ [47:78] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [47:99] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<((PsiElement) -> Boolean..((PsiElement) -> Boolean)?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<PsiElement, Boolean>
+    <T : (Any..Any?)> -> ((com.intellij.psi.PsiElement) -> kotlin.Boolean..((com.intellij.psi.PsiElement) -> kotlin.Boolean)?)
 
 'function' @ [51:22] ==> value-parameter function: KtNamedFunction defined in org.jetbrains.kotlin.idea.refactoring.rename.AutomaticOverloadsRenamer.<init>[ValueParameterDescriptorImpl]
 
@@ -15,12 +12,12 @@ Inferred types:
 
 'function' @ [52:9] ==> value-parameter function: KtNamedFunction defined in org.jetbrains.kotlin.idea.refactoring.rename.AutomaticOverloadsRenamer.<init>[ValueParameterDescriptorImpl]
 
-'getOverloads' @ [52:18] ==> private fun KtNamedFunction.getOverloads(): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'getOverloads' @ [52:18] ==> private fun KtNamedFunction.getOverloads(): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.rename in file AutomaticOverloadsRenamer.kt[SimpleFunctionDescriptorImpl]
 
-'mapNotNullTo' @ [52:33] ==> public inline fun <T, R : Any, C : MutableCollection<in KtNamedFunction>> Iterable<FunctionDescriptor>.mapNotNullTo(destination: (MutableList<(PsiNamedElement..PsiNamedElement?)>..List<(PsiNamedElement..PsiNamedElement?)>?), transform: (FunctionDescriptor) -> KtNamedFunction?): (MutableList<(PsiNamedElement..PsiNamedElement?)>..List<(PsiNamedElement..PsiNamedElement?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapNotNullTo' @ [52:33] ==> public inline fun <T, R : Any, C : MutableCollection<in PsiNamedElement>> Iterable<FunctionDescriptor>.mapNotNullTo(destination: (MutableList<(PsiNamedElement..PsiNamedElement?)>..List<(PsiNamedElement..PsiNamedElement?)>?), transform: (FunctionDescriptor) -> PsiNamedElement?): (MutableList<(PsiNamedElement..PsiNamedElement?)>..List<(PsiNamedElement..PsiNamedElement?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FunctionDescriptor
-    <R : Any> -> KtNamedFunction
+    <R : Any> -> PsiNamedElement
     <C : MutableCollection<in R>> -> (kotlin.collections.MutableList<(com.intellij.psi.PsiNamedElement..com.intellij.psi.PsiNamedElement?)>..kotlin.collections.List<(com.intellij.psi.PsiNamedElement..com.intellij.psi.PsiNamedElement?)>?)
 
 'myElements' @ [52:46] ==> protected/*protected and package*/ final val myElements: (MutableList<(PsiNamedElement..PsiNamedElement?)>..List<(PsiNamedElement..PsiNamedElement?)>?) defined in org.jetbrains.kotlin.idea.refactoring.rename.AutomaticOverloadsRenamer[JavaPropertyDescriptor]
@@ -39,9 +36,9 @@ Inferred types:
 
 'candidate' @ [54:43] ==> val candidate: KtNamedFunction defined in org.jetbrains.kotlin.idea.refactoring.rename.AutomaticOverloadsRenamer.<init>.<anonymous>[LocalVariableDescriptor]
 
-'if (candidate != function) candidate else null' @ [55:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtNamedFunction?, elseBranch: KtNamedFunction?): KtNamedFunction?[SimpleFunctionDescriptorImpl]
+'if (candidate != function) candidate else null' @ [55:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiNamedElement?, elseBranch: PsiNamedElement?): PsiNamedElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtNamedFunction?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> PsiNamedElement?
 
 'candidate' @ [55:17] ==> val candidate: KtNamedFunction defined in org.jetbrains.kotlin.idea.refactoring.rename.AutomaticOverloadsRenamer.<init>.<anonymous>[LocalVariableDescriptor]
 
@@ -99,7 +96,7 @@ Inferred types:
 
 'descriptor' @ [74:30] ==> val descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.refactoring.rename.getOverloads[LocalVariableDescriptor]
 
-'headerDescriptor' @ [74:41] ==> internal fun MemberDescriptor.headerDescriptor(): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerDescriptor' @ [74:41] ==> internal fun MemberDescriptor.headerDescriptor(): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.highlighter.markers in file DeclaredHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [74:76] ==> public fun <T> emptyList(): List<FunctionDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -141,7 +138,7 @@ Inferred types:
 
 'element' @ [89:16] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.rename.AutomaticOverloadsRenamerFactory.isApplicable[ValueParameterDescriptorImpl]
 
-'getOverloads' @ [89:24] ==> private fun KtNamedFunction.getOverloads(): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'getOverloads' @ [89:24] ==> private fun KtNamedFunction.getOverloads(): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.rename in file AutomaticOverloadsRenamer.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [89:39] ==> public abstract val size: Int defined in kotlin.collections.Collection[DeserializedPropertyDescriptor]
 

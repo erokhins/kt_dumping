@@ -3,7 +3,7 @@ Inferred types:
     <E : KtElement> -> E
     <D : Any> -> List<CallableInfo>
 
-'QuickFixWithDelegateFactory' @ [40:16] ==> public fun QuickFixWithDelegateFactory(priority: IntentionActionPriority, createAction: () -> IntentionAction?): QuickFixWithDelegateFactory defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'QuickFixWithDelegateFactory' @ [40:16] ==> public fun QuickFixWithDelegateFactory(priority: IntentionActionPriority, createAction: () -> IntentionAction?): QuickFixWithDelegateFactory defined in org.jetbrains.kotlin.idea.quickfix in file QuickFixWithDelegateFactory.kt[SimpleFunctionDescriptorImpl]
 
 'priority' @ [40:44] ==> value-parameter priority: IntentionActionPriority defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableMemberFromUsageFactory.newCallableQuickFix[ValueParameterDescriptorImpl]
 

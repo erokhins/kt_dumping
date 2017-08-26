@@ -86,16 +86,16 @@ Inferred types:
 
 'CLASSES' @ [99:72] ==> public final val CLASSES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
 
-'let' @ [99:83] ==> @InlineOnly public inline fun <T, R> PersistentLibraryKind<out raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)>.let(block: (PersistentLibraryKind<out raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [99:83] ==> @InlineOnly public inline fun <T, R> PersistentLibraryKind<*>.let(block: (PersistentLibraryKind<*>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PersistentLibraryKind<out raw (com.intellij.openapi.roots.libraries.LibraryProperties<(kotlin.Any..kotlin.Any?)>..com.intellij.openapi.roots.libraries.LibraryProperties<*>?)>
+    <T> -> PersistentLibraryKind<*>
     <R> -> Unit
 
 'model' @ [99:89] ==> val model: LibraryEx.ModifiableModelEx defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.postProcess.<anonymous>[LocalVariableDescriptor]
 
 'kind' @ [99:95] ==> public final var LibraryEx.ModifiableModelEx.kind: (PersistentLibraryKind<*>..PersistentLibraryKind<*>?)[MyPropertyDescriptor]
 
-'it' @ [99:102] ==> value-parameter it: PersistentLibraryKind<out raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)> defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.postProcess.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [99:102] ==> value-parameter it: PersistentLibraryKind<*> defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.postProcess.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'configureFacet' @ [106:9] ==> private final fun configureFacet(mavenProject: MavenProject, modifiableModelsProvider: IdeModifiableModelsProvider, module: Module): Unit defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter[SimpleFunctionDescriptorImpl]
 
@@ -485,23 +485,13 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'PomFile' @ [169:43] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [169:63] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
-
-'PomFile' @ [170:43] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'TestCompile' @ [170:63] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
-'PomFile' @ [171:43] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Js' @ [171:63] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
-'PomFile' @ [172:43] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'TestJs' @ [172:63] ==> public final val TestJs: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
-
-'PomFile' @ [173:43] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'MetaData' @ [173:63] ==> public final val MetaData: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -509,19 +499,13 @@ Inferred types:
 
 'findPlugin' @ [176:40] ==> @Nullable public open fun findPlugin(@Nullable p0: String?, @Nullable p1: String?): MavenPlugin? defined in org.jetbrains.idea.maven.project.MavenProject[JavaMethodDescriptor]
 
-'KotlinMavenConfigurator' @ [176:51] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [176:75] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
-
-'KotlinMavenConfigurator' @ [176:85] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'MAVEN_PLUGIN_ID' @ [176:109] ==> public final val MAVEN_PLUGIN_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
 'mavenPlugin' @ [177:31] ==> val mavenPlugin: MavenPlugin defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
 
 'version' @ [177:43] ==> public final val MavenPlugin.version: (String..String?)[MyPropertyDescriptor]
-
-'LanguageVersion' @ [177:54] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [177:70] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -547,11 +531,9 @@ Inferred types:
 
 'compilerVersion' @ [181:36] ==> val compilerVersion: String defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
 
-'LanguageFeature' @ [181:53] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'defaultState' @ [181:80] ==> public final val defaultState: LanguageFeature.State defined in org.jetbrains.kotlin.config.LanguageFeature[DeserializedPropertyDescriptor]
 
-'platform' @ [181:94] ==> val platform: TargetPlatformKind<TargetPlatformVersion>? defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
+'platform' @ [181:94] ==> val platform: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
 
 'modifiableModelsProvider' @ [181:104] ==> value-parameter modifiableModelsProvider: IdeModifiableModelsProvider defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[ValueParameterDescriptorImpl]
 
@@ -573,7 +555,7 @@ Inferred types:
 
 'configuration' @ [184:88] ==> val configuration: Element? defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
 
-'configuredPlatform' @ [184:103] ==> val configuredPlatform: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
+'configuredPlatform' @ [184:103] ==> val configuredPlatform: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
 
 'mavenPlugin' @ [185:34] ==> val mavenPlugin: MavenPlugin defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
 
@@ -612,9 +594,9 @@ Inferred types:
 
 'it' @ [187:129] ==> value-parameter it: Element defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet.<anonymous>[ValueParameterDescriptorImpl]
 
-'configuredPlatform' @ [187:133] ==> val configuredPlatform: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
+'configuredPlatform' @ [187:133] ==> val configuredPlatform: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
 
-'parseCompilerArgumentsToFacet' @ [188:9] ==> public fun parseCompilerArgumentsToFacet(arguments: List<String>, defaultArguments: List<String>, kotlinFacet: KotlinFacet, modelsProvider: IdeModifiableModelsProvider): Unit defined in org.jetbrains.kotlin.idea.facet[SimpleFunctionDescriptorImpl]
+'parseCompilerArgumentsToFacet' @ [188:9] ==> public fun parseCompilerArgumentsToFacet(arguments: List<String>, defaultArguments: List<String>, kotlinFacet: KotlinFacet, modelsProvider: IdeModifiableModelsProvider): Unit defined in org.jetbrains.kotlin.idea.facet in file facetUtils.kt[SimpleFunctionDescriptorImpl]
 
 'sharedArguments' @ [188:39] ==> val sharedArguments: List<String> defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
 
@@ -628,7 +610,7 @@ Inferred types:
 
 'executionArguments' @ [189:13] ==> val executionArguments: List<String>? defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
 
-'parseCompilerArgumentsToFacet' @ [190:13] ==> public fun parseCompilerArgumentsToFacet(arguments: List<String>, defaultArguments: List<String>, kotlinFacet: KotlinFacet, modelsProvider: IdeModifiableModelsProvider): Unit defined in org.jetbrains.kotlin.idea.facet[SimpleFunctionDescriptorImpl]
+'parseCompilerArgumentsToFacet' @ [190:13] ==> public fun parseCompilerArgumentsToFacet(arguments: List<String>, defaultArguments: List<String>, kotlinFacet: KotlinFacet, modelsProvider: IdeModifiableModelsProvider): Unit defined in org.jetbrains.kotlin.idea.facet in file facetUtils.kt[SimpleFunctionDescriptorImpl]
 
 'executionArguments' @ [190:43] ==> val executionArguments: List<String>? defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.configureFacet[LocalVariableDescriptor]
 
@@ -705,8 +687,6 @@ Inferred types:
 
 'Jvm' @ [198:100] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [198:104] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [198:114] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'PomFile' @ [199:17] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
@@ -717,15 +697,11 @@ Inferred types:
 
 'TestJs' @ [199:61] ==> public final val TestJs: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
-'TargetPlatformKind' @ [199:71] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'JavaScript' @ [199:90] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'PomFile' @ [200:17] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'MetaData' @ [200:37] ==> public final val MetaData: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
-
-'TargetPlatformKind' @ [200:49] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [200:68] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -823,7 +799,7 @@ Inferred types:
 
 'addSourceFolder' @ [241:27] ==> public open fun <P : (JpsElement..JpsElement?)> addSourceFolder(p0: (String..String?), p1: (JpsModuleSourceRootType<out (JpsElement..JpsElement?)>..JpsModuleSourceRootType<out (JpsElement..JpsElement?)>?)): Unit defined in org.jetbrains.idea.maven.importing.MavenRootModelAdapter[JavaMethodDescriptor]
 Inferred types:
-    <P : (JpsElement..JpsElement?)> -> (org.jetbrains.jps.model.JpsElement..org.jetbrains.jps.model.JpsElement?)
+    <P : (JpsElement..JpsElement?)> -> Captured(*)
 
 'dir' @ [241:43] ==> val dir: String defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.contributeSourceDirectories[LocalVariableDescriptor]
 
@@ -877,7 +853,7 @@ Inferred types:
 
 'it' @ [253:43] ==> value-parameter it: (MavenPlugin..MavenPlugin?) defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.collectSourceDirectories.<anonymous>[ValueParameterDescriptorImpl]
 
-'isKotlinPlugin' @ [253:46] ==> private fun MavenPlugin.isKotlinPlugin(): Boolean defined in org.jetbrains.kotlin.idea.maven[SimpleFunctionDescriptorImpl]
+'isKotlinPlugin' @ [253:46] ==> private fun MavenPlugin.isKotlinPlugin(): Boolean defined in org.jetbrains.kotlin.idea.maven in file KotlinMavenImporter.kt[SimpleFunctionDescriptorImpl]
 
 'flatMap' @ [253:65] ==> public inline fun <T, R> Iterable<(MavenPlugin..MavenPlugin?)>.flatMap(transform: ((MavenPlugin..MavenPlugin?)) -> Iterable<Pair<SourceType, String>>): List<Pair<SourceType, String>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -888,7 +864,7 @@ Inferred types:
 
 'configurationElement' @ [254:24] ==> public final val MavenPlugin.configurationElement: Element?[MyPropertyDescriptor]
 
-'sourceDirectories' @ [254:45] ==> private fun Element?.sourceDirectories(): List<String> defined in org.jetbrains.kotlin.idea.maven[SimpleFunctionDescriptorImpl]
+'sourceDirectories' @ [254:45] ==> private fun Element?.sourceDirectories(): List<String> defined in org.jetbrains.kotlin.idea.maven in file KotlinMavenImporter.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [254:65] ==> public inline fun <T, R> Iterable<String>.map(transform: (String) -> Pair<SourceType, String>): List<Pair<SourceType, String>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -917,7 +893,7 @@ Inferred types:
 
 'configurationElement' @ [255:68] ==> public final val MavenPlugin.Execution.configurationElement: Element?[MyPropertyDescriptor]
 
-'sourceDirectories' @ [255:89] ==> private fun Element?.sourceDirectories(): List<String> defined in org.jetbrains.kotlin.idea.maven[SimpleFunctionDescriptorImpl]
+'sourceDirectories' @ [255:89] ==> private fun Element?.sourceDirectories(): List<String> defined in org.jetbrains.kotlin.idea.maven in file KotlinMavenImporter.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [255:109] ==> public inline fun <T, R> Iterable<String>.map(transform: (String) -> Pair<SourceType, String>): List<Pair<SourceType, String>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -926,7 +902,7 @@ Inferred types:
 
 'execution' @ [255:115] ==> value-parameter execution: (MavenPlugin.Execution..MavenPlugin.Execution?) defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.collectSourceDirectories.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'sourceType' @ [255:125] ==> private fun MavenPlugin.Execution.sourceType(): SourceType defined in org.jetbrains.kotlin.idea.maven[SimpleFunctionDescriptorImpl]
+'sourceType' @ [255:125] ==> private fun MavenPlugin.Execution.sourceType(): SourceType defined in org.jetbrains.kotlin.idea.maven in file KotlinMavenImporter.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [255:141] ==> value-parameter it: String defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.collectSourceDirectories.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -936,21 +912,15 @@ Inferred types:
 
 'groupId' @ [259:44] ==> public final val MavenPlugin.groupId: (String..String?)[MyPropertyDescriptor]
 
-'KotlinMavenImporter' @ [259:55] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter[FakeCallableDescriptorForObject]
-
 'KOTLIN_PLUGIN_GROUP_ID' @ [259:75] ==> public final val KOTLIN_PLUGIN_GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.Companion[PropertyDescriptorImpl]
 
 'artifactId' @ [259:101] ==> public final val MavenPlugin.artifactId: (String..String?)[MyPropertyDescriptor]
-
-'KotlinMavenImporter' @ [259:115] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter[FakeCallableDescriptorForObject]
 
 'KOTLIN_PLUGIN_ARTIFACT_ID' @ [259:135] ==> public final val KOTLIN_PLUGIN_ARTIFACT_ID: String defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.Companion[PropertyDescriptorImpl]
 
 'this' @ [260:58] ==> <this> defined in org.jetbrains.kotlin.idea.maven.sourceDirectories[ReceiverParameterDescriptorImpl]
 
 'getChildren' @ [260:64] ==> public open fun getChildren(p0: (String..String?)): (MutableList<(Element..Element?)>..List<(Element..Element?)>?) defined in org.jdom.Element[JavaMethodDescriptor]
-
-'KotlinMavenImporter' @ [260:76] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter[FakeCallableDescriptorForObject]
 
 'KOTLIN_PLUGIN_SOURCE_DIRS_CONFIG' @ [260:96] ==> public final val KOTLIN_PLUGIN_SOURCE_DIRS_CONFIG: String defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporter.Companion[PropertyDescriptorImpl]
 
@@ -991,7 +961,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> SourceType
 
-'isTestGoalName' @ [262:25] ==> private fun isTestGoalName(goalName: String): Boolean defined in org.jetbrains.kotlin.idea.maven[SimpleFunctionDescriptorImpl]
+'isTestGoalName' @ [262:25] ==> private fun isTestGoalName(goalName: String): Boolean defined in org.jetbrains.kotlin.idea.maven in file KotlinMavenImporter.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [262:40] ==> value-parameter it: (String..String?) defined in org.jetbrains.kotlin.idea.maven.sourceType.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1029,7 +999,7 @@ Inferred types:
 
 'synchronizedSet' @ [279:36] ==> public open fun <T : (Any..Any?)> synchronizedSet(p0: (MutableSet<(String..String?)>..Set<(String..String?)>?)): (MutableSet<(String..String?)>..Set<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'HashSet' @ [279:52] ==> public constructor HashSet<E : (Any..Any?)>() defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
@@ -1059,7 +1029,7 @@ Inferred types:
 
 'getComponent' @ [294:13] ==> public abstract fun <T : (Any..Any?)> getComponent(@NotNull p0: Class<(KotlinImporterComponent..KotlinImporterComponent?)>): (KotlinImporterComponent..KotlinImporterComponent?) defined in com.intellij.openapi.module.Module[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinImporterComponent
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.maven.KotlinImporterComponent..org.jetbrains.kotlin.idea.maven.KotlinImporterComponent?)
 
 'KotlinImporterComponent' @ [294:26] ==> public constructor KotlinImporterComponent() defined in org.jetbrains.kotlin.idea.maven.KotlinImporterComponent[ClassConstructorDescriptorImpl]
 

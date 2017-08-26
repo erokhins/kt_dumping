@@ -112,6 +112,8 @@ Inferred types:
 
 'this' @ [116:46] ==> <this> defined in org.jetbrains.kotlin.load.java.lazy.computeNewDefaultTypeQualifiers[ReceiverParameterDescriptorImpl]
 
+'extractDefaultNullabilityQualifier' @ [116:52] ==> private fun LazyJavaResolverContext.extractDefaultNullabilityQualifier(annotationDescriptor: AnnotationDescriptor): NullabilityQualifierWithApplicability? defined in org.jetbrains.kotlin.load.java.lazy in file context.kt[SimpleFunctionDescriptorImpl]
+
 'nullabilityQualifiersWithApplicability' @ [118:9] ==> val nullabilityQualifiersWithApplicability: List<NullabilityQualifierWithApplicability> defined in org.jetbrains.kotlin.load.java.lazy.computeNewDefaultTypeQualifiers[LocalVariableDescriptor]
 
 'isEmpty' @ [118:48] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
@@ -126,6 +128,8 @@ Inferred types:
 Inferred types:
     <T> -> EnumMap<QualifierApplicabilityType, NullabilityQualifierWithMigrationStatus?>
     <R> -> EnumMap<QualifierApplicabilityType, NullabilityQualifierWithMigrationStatus?>
+
+'QualifierByApplicabilityType' @ [121:65] ==> private final fun <init>(p0: (EnumMap<(AnnotationTypeQualifierResolver.QualifierApplicabilityType..AnnotationTypeQualifierResolver.QualifierApplicabilityType?), out NullabilityQualifierWithMigrationStatus?>..EnumMap<(AnnotationTypeQualifierResolver.QualifierApplicabilityType..AnnotationTypeQualifierResolver.QualifierApplicabilityType?), out NullabilityQualifierWithMigrationStatus?>?)): QualifierByApplicabilityType /* = EnumMap<AnnotationTypeQualifierResolver.QualifierApplicabilityType, NullabilityQualifierWithMigrationStatus?> */ defined in org.jetbrains.kotlin.load.java.lazy.QualifierByApplicabilityType[TypeAliasConstructorDescriptorImpl]
 
 'QualifierByApplicabilityType' @ [122:16] ==> private final fun <init>(p0: (Class<(AnnotationTypeQualifierResolver.QualifierApplicabilityType..AnnotationTypeQualifierResolver.QualifierApplicabilityType?)>..Class<(AnnotationTypeQualifierResolver.QualifierApplicabilityType..AnnotationTypeQualifierResolver.QualifierApplicabilityType?)>?)): QualifierByApplicabilityType /* = EnumMap<AnnotationTypeQualifierResolver.QualifierApplicabilityType, NullabilityQualifierWithMigrationStatus?> */ defined in org.jetbrains.kotlin.load.java.lazy.QualifierByApplicabilityType[TypeAliasConstructorDescriptorImpl]
 
@@ -280,7 +284,7 @@ Inferred types:
 
 'delegateForTypeQualifiers' @ [181:9] ==> value-parameter delegateForTypeQualifiers: Lazy<JavaTypeQualifiersByElementType?> defined in org.jetbrains.kotlin.load.java.lazy.child[ValueParameterDescriptorImpl]
 
-'child' @ [188:5] ==> private fun LazyJavaResolverContext.child(containingDeclaration: DeclarationDescriptor, typeParameterOwner: JavaTypeParameterListOwner?, typeParametersIndexOffset: Int = ..., delegateForTypeQualifiers: Lazy<JavaTypeQualifiersByElementType?>): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy[SimpleFunctionDescriptorImpl]
+'child' @ [188:5] ==> private fun LazyJavaResolverContext.child(containingDeclaration: DeclarationDescriptor, typeParameterOwner: JavaTypeParameterListOwner?, typeParametersIndexOffset: Int = ..., delegateForTypeQualifiers: Lazy<JavaTypeQualifiersByElementType?>): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy in file context.kt[SimpleFunctionDescriptorImpl]
 
 'containingDeclaration' @ [188:11] ==> value-parameter containingDeclaration: DeclarationDescriptor defined in org.jetbrains.kotlin.load.java.lazy.childForMethod[ValueParameterDescriptorImpl]
 
@@ -290,7 +294,7 @@ Inferred types:
 
 'delegateForDefaultTypeQualifiers' @ [188:81] ==> internal final val delegateForDefaultTypeQualifiers: Lazy<JavaTypeQualifiersByElementType?> defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaResolverContext[PropertyDescriptorImpl]
 
-'child' @ [194:5] ==> private fun LazyJavaResolverContext.child(containingDeclaration: DeclarationDescriptor, typeParameterOwner: JavaTypeParameterListOwner?, typeParametersIndexOffset: Int = ..., delegateForTypeQualifiers: Lazy<JavaTypeQualifiersByElementType?>): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy[SimpleFunctionDescriptorImpl]
+'child' @ [194:5] ==> private fun LazyJavaResolverContext.child(containingDeclaration: DeclarationDescriptor, typeParameterOwner: JavaTypeParameterListOwner?, typeParametersIndexOffset: Int = ..., delegateForTypeQualifiers: Lazy<JavaTypeQualifiersByElementType?>): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy in file context.kt[SimpleFunctionDescriptorImpl]
 
 'containingDeclaration' @ [195:9] ==> value-parameter containingDeclaration: ClassOrPackageFragmentDescriptor defined in org.jetbrains.kotlin.load.java.lazy.childForClassOrPackage[ValueParameterDescriptorImpl]
 

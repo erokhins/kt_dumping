@@ -2,7 +2,7 @@
 
 'resultingDescriptor' @ [37:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'collectDiagnostics' @ [38:28] ==> private final fun collectDiagnostics(reportOn: PsiElement, descriptor: CallableDescriptor): Set<Diagnostic> defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker[SimpleFunctionDescriptorImpl]
 
@@ -36,6 +36,8 @@ Inferred types:
 'context' @ [43:70] ==> value-parameter context: CallCheckerContext defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.check[ValueParameterDescriptorImpl]
 
 'trace' @ [43:78] ==> public final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.checkers.CallCheckerContext[PropertyDescriptorImpl]
+
+'report' @ [43:85] ==> public abstract fun report(@NotNull diagnostic: Diagnostic): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 
 'descriptor' @ [47:13] ==> value-parameter descriptor: ClassifierDescriptor defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.diagnosticFor[ValueParameterDescriptorImpl]
 
@@ -118,9 +120,11 @@ Inferred types:
     <T> -> ClassDescriptor
     <R> -> Unit
 
+'consider' @ [77:80] ==> local final fun consider(classDescriptor: ClassDescriptor): Unit defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.collectDiagnostics[SimpleFunctionDescriptorImpl]
+
 '!' @ [81:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'isComputingDeferredType' @ [81:18] ==> @Suppress public fun CallChecker.isComputingDeferredType(type: KotlinType): Boolean defined in org.jetbrains.kotlin.resolve.calls.checkers[SimpleFunctionDescriptorImpl]
+'isComputingDeferredType' @ [81:18] ==> @Suppress public fun CallChecker.isComputingDeferredType(type: KotlinType): Boolean defined in org.jetbrains.kotlin.resolve.calls.checkers in file CallChecker.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [81:42] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.collectDiagnostics.consider[ValueParameterDescriptorImpl]
 
@@ -135,6 +139,8 @@ Inferred types:
     <T> -> ClassDescriptor
     <R> -> Unit
 
+'consider' @ [82:85] ==> local final fun consider(classDescriptor: ClassDescriptor): Unit defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.collectDiagnostics[SimpleFunctionDescriptorImpl]
+
 'descriptor' @ [86:9] ==> value-parameter descriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.collectDiagnostics[ValueParameterDescriptorImpl]
 
 'returnType' @ [86:20] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
@@ -143,6 +149,8 @@ Inferred types:
 Inferred types:
     <T> -> KotlinType
     <R> -> Unit
+
+'consider' @ [86:38] ==> local final fun consider(type: KotlinType): Unit defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.collectDiagnostics[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [87:9] ==> value-parameter descriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.collectDiagnostics[ValueParameterDescriptorImpl]
 
@@ -156,6 +164,8 @@ Inferred types:
 Inferred types:
     <T> -> KotlinType
     <R> -> Unit
+
+'consider' @ [87:67] ==> local final fun consider(type: KotlinType): Unit defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.collectDiagnostics[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [88:9] ==> value-parameter descriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.collectDiagnostics[ValueParameterDescriptorImpl]
 
@@ -186,6 +196,8 @@ Inferred types:
 
 'trace' @ [100:59] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.ClassifierUsage.check[ValueParameterDescriptorImpl]
 
+'report' @ [100:66] ==> public abstract fun report(@NotNull diagnostic: Diagnostic): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
+
 'targetDescriptor' @ [102:36] ==> value-parameter targetDescriptor: ClassifierDescriptor defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.ClassifierUsage.check[ValueParameterDescriptorImpl]
 
 'containerSource' @ [102:88] ==> public abstract val containerSource: DeserializedContainerSource? defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedMemberDescriptor[DeserializedPropertyDescriptor]
@@ -202,4 +214,6 @@ Inferred types:
     <R> -> Unit
 
 'trace' @ [103:73] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.checkers.MissingDependencyClassChecker.ClassifierUsage.check[ValueParameterDescriptorImpl]
+
+'report' @ [103:80] ==> public abstract fun report(@NotNull diagnostic: Diagnostic): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 

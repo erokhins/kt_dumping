@@ -86,8 +86,6 @@ Inferred types:
 Inferred types:
     <T> -> ModuleInfo
 
-'ModuleInfo' @ [82:30] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
-
 'Capability' @ [82:41] ==> public final val Capability: ModuleDescriptor.Capability<ModuleInfo> defined in org.jetbrains.kotlin.analyzer.ModuleInfo.Companion[PropertyDescriptorImpl]
 
 'displayedName' @ [82:54] ==> public open val displayedName: String defined in org.jetbrains.kotlin.analyzer.ModuleInfo[PropertyDescriptorImpl]
@@ -304,8 +302,6 @@ Inferred types:
 
 'SmartTypeRenderer' @ [138:33] ==> public constructor SmartTypeRenderer(baseRenderer: DescriptorRenderer) defined in org.jetbrains.kotlin.diagnostics.rendering.SmartTypeRenderer[ClassConstructorDescriptorImpl]
 
-'DescriptorRenderer' @ [138:51] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'FQ_NAMES_IN_TYPES' @ [138:70] ==> @field:JvmField public final val FQ_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
 'withOptions' @ [138:88] ==> public final fun withOptions(changeOptions: DescriptorRendererOptions.() -> Unit): DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -351,7 +347,7 @@ Inferred types:
 
 'resultingDescriptor' @ [151:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'RenderingContext' @ [152:23] ==> public companion object defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext[FakeCallableDescriptorForObject]
 
@@ -645,8 +641,6 @@ Inferred types:
 
 'add' @ [229:36] ==> public open fun add(element: (ConstraintPosition..ConstraintPosition?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
-'VALUE_PARAMETER_POSITION' @ [229:40] ==> enum entry VALUE_PARAMETER_POSITION defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[FakeCallableDescriptorForObject]
-
 'position' @ [229:65] ==> public final fun position(index: Int): ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[SimpleFunctionDescriptorImpl]
 
 'valueParameterDescriptor' @ [229:74] ==> val valueParameterDescriptor: (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.diagnostics.rendering.Renderers.renderConflictingSubstitutionsInferenceError[LocalVariableDescriptor]
@@ -674,8 +668,6 @@ Inferred types:
 'errorPositions' @ [235:17] ==> val errorPositions: (HashSet<(ConstraintPosition..ConstraintPosition?)>..HashSet<(ConstraintPosition..ConstraintPosition?)>?) defined in org.jetbrains.kotlin.diagnostics.rendering.Renderers.renderConflictingSubstitutionsInferenceError[LocalVariableDescriptor]
 
 'add' @ [235:32] ==> public open fun add(element: (ConstraintPosition..ConstraintPosition?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
-
-'RECEIVER_POSITION' @ [235:36] ==> enum entry RECEIVER_POSITION defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[FakeCallableDescriptorForObject]
 
 'position' @ [235:54] ==> public final fun position(): ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[SimpleFunctionDescriptorImpl]
 
@@ -1160,6 +1152,8 @@ Inferred types:
     <T> -> KotlinType
     <R> -> TypeProjectionImpl
 
+'TypeProjectionImpl' @ [370:84] ==> public constructor TypeProjectionImpl(@NotNull p0: KotlinType) defined in org.jetbrains.kotlin.types.TypeProjectionImpl[JavaClassConstructorDescriptor]
+
 'inferenceErrorData' @ [374:33] ==> value-parameter inferenceErrorData: InferenceErrorData defined in org.jetbrains.kotlin.diagnostics.rendering.Renderers.renderUpperBoundViolatedInferenceErrorForTypeAliasConstructor[ValueParameterDescriptorImpl]
 
 'constraintSystem' @ [374:52] ==> @NotNull public final val constraintSystem: ConstraintSystem defined in org.jetbrains.kotlin.resolve.calls.inference.InferenceErrorData[JavaPropertyDescriptor]
@@ -1370,8 +1364,6 @@ Inferred types:
 
 'upperBound' @ [423:81] ==> val upperBound: KotlinType defined in org.jetbrains.kotlin.diagnostics.rendering.Renderers.renderCannotCaptureTypeParameterError[LocalVariableDescriptor]
 
-'RenderingContext' @ [423:93] ==> public companion object defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext[FakeCallableDescriptorForObject]
-
 'of' @ [423:110] ==> @JvmStatic public final fun of(vararg objectsToRender: Any?): RenderingContext defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext.Companion[SimpleFunctionDescriptorImpl]
 
 'upperBound' @ [423:113] ==> val upperBound: KotlinType defined in org.jetbrains.kotlin.diagnostics.rendering.Renderers.renderCannotCaptureTypeParameterError[LocalVariableDescriptor]
@@ -1451,7 +1443,7 @@ Inferred types:
 
 'join' @ [452:100] ==> @NotNull @Contract public final fun <T : (Any..Any?)> join(@NotNull p0: (MutableCollection<out (KotlinType..KotlinType?)>..Collection<(KotlinType..KotlinType?)>), @NotNull p1: ((KotlinType..KotlinType?)) -> (String..String?), @NotNull @NonNls p2: String): String defined in com.intellij.openapi.util.text.StringUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'types' @ [452:105] ==> value-parameter types: Collection<KotlinType> defined in org.jetbrains.kotlin.diagnostics.rendering.Renderers.renderTypes[ValueParameterDescriptorImpl]
 
@@ -1497,7 +1489,7 @@ Inferred types:
 
 'join' @ [462:27] ==> @NotNull @Contract public final fun <T : (Any..Any?)> join(@NotNull p0: (MutableCollection<out (TypeBounds..TypeBounds?)>..Collection<(TypeBounds..TypeBounds?)>), @NotNull p1: ((TypeBounds..TypeBounds?)) -> (String..String?), @NotNull @NonNls p2: String): String defined in com.intellij.openapi.util.text.StringUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeBounds
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.inference.TypeBounds..org.jetbrains.kotlin.resolve.calls.inference.TypeBounds?)
 
 'typeBounds' @ [462:32] ==> val typeBounds: LinkedHashSet<TypeBounds> /* = LinkedHashSet<TypeBounds> */ defined in org.jetbrains.kotlin.diagnostics.rendering.Renderers.renderConstraintSystem[LocalVariableDescriptor]
 
@@ -1535,11 +1527,7 @@ Inferred types:
 
 'short' @ [473:32] ==> value-parameter short: Boolean defined in org.jetbrains.kotlin.diagnostics.rendering.Renderers.renderTypeBounds[ValueParameterDescriptorImpl]
 
-'DescriptorRenderer' @ [473:39] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'SHORT_NAMES_IN_TYPES' @ [473:58] ==> @field:JvmField public final val SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
-
-'DescriptorRenderer' @ [473:84] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
 
 'FQ_NAMES_IN_TYPES' @ [473:103] ==> @field:JvmField public final val FQ_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
@@ -1605,7 +1593,7 @@ Inferred types:
 
 'join' @ [482:45] ==> @NotNull @Contract public final fun <T : (Any..Any?)> join(@NotNull p0: (MutableCollection<out (TypeBounds.Bound..TypeBounds.Bound?)>..Collection<(TypeBounds.Bound..TypeBounds.Bound?)>), @NotNull p1: ((TypeBounds.Bound..TypeBounds.Bound?)) -> (String..String?), @NotNull @NonNls p2: String): String defined in com.intellij.openapi.util.text.StringUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Bound
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.inference.TypeBounds.Bound..org.jetbrains.kotlin.resolve.calls.inference.TypeBounds.Bound?)
 
 'typeBounds' @ [482:50] ==> value-parameter typeBounds: TypeBounds defined in org.jetbrains.kotlin.diagnostics.rendering.Renderers.renderTypeBounds[ValueParameterDescriptorImpl]
 
@@ -1767,7 +1755,7 @@ Inferred types:
 
 'FQ_NAMES_IN_TYPES' @ [522:58] ==> @field:JvmField public final val FQ_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
-'asRenderer' @ [522:76] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'asRenderer' @ [522:76] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering in file Renderers.kt[SimpleFunctionDescriptorImpl]
 
 'JvmField' @ [523:5] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
@@ -1775,7 +1763,7 @@ Inferred types:
 
 'COMPACT' @ [523:48] ==> @field:JvmField public final val COMPACT: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
-'asRenderer' @ [523:56] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'asRenderer' @ [523:56] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering in file Renderers.kt[SimpleFunctionDescriptorImpl]
 
 'JvmField' @ [524:5] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
@@ -1783,7 +1771,7 @@ Inferred types:
 
 'COMPACT_WITHOUT_SUPERTYPES' @ [524:67] ==> @field:JvmField public final val COMPACT_WITHOUT_SUPERTYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
-'asRenderer' @ [524:94] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'asRenderer' @ [524:94] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering in file Renderers.kt[SimpleFunctionDescriptorImpl]
 
 'JvmField' @ [525:5] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
@@ -1797,7 +1785,7 @@ Inferred types:
 Inferred types:
     <T> -> DescriptorRendererModifier
 
-'asRenderer' @ [527:7] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'asRenderer' @ [527:7] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering in file Renderers.kt[SimpleFunctionDescriptorImpl]
 
 'JvmField' @ [528:5] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
@@ -1805,7 +1793,7 @@ Inferred types:
 
 'SHORT_NAMES_IN_TYPES' @ [528:61] ==> @field:JvmField public final val SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
-'asRenderer' @ [528:82] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'asRenderer' @ [528:82] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering in file Renderers.kt[SimpleFunctionDescriptorImpl]
 
 'JvmField' @ [529:5] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
@@ -1813,7 +1801,7 @@ Inferred types:
 
 'COMPACT_WITH_MODIFIERS' @ [529:63] ==> @field:JvmField public final val COMPACT_WITH_MODIFIERS: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
-'asRenderer' @ [529:86] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'asRenderer' @ [529:86] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering in file Renderers.kt[SimpleFunctionDescriptorImpl]
 
 'JvmField' @ [530:5] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
@@ -1829,7 +1817,7 @@ Inferred types:
 
 'renderAccessors' @ [533:9] ==> public abstract var renderAccessors: Boolean defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptions[DeserializedPropertyDescriptor]
 
-'asRenderer' @ [534:7] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'asRenderer' @ [534:7] ==> public fun DescriptorRenderer.asRenderer(): SmartDescriptorRenderer defined in org.jetbrains.kotlin.diagnostics.rendering in file Renderers.kt[SimpleFunctionDescriptorImpl]
 
 'SmartDescriptorRenderer' @ [537:39] ==> public constructor SmartDescriptorRenderer(baseRenderer: DescriptorRenderer) defined in org.jetbrains.kotlin.diagnostics.rendering.SmartDescriptorRenderer[ClassConstructorDescriptorImpl]
 

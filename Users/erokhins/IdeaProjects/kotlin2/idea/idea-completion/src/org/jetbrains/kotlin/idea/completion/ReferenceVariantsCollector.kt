@@ -26,7 +26,7 @@ Inferred types:
 
 'prefixMatcher' @ [62:40] ==> private final val prefixMatcher: PrefixMatcher defined in org.jetbrains.kotlin.idea.completion.ReferenceVariantsCollector[PropertyDescriptorImpl]
 
-'asStringNameFilter' @ [62:54] ==> public fun PrefixMatcher.asStringNameFilter(): (String) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'asStringNameFilter' @ [62:54] ==> public fun PrefixMatcher.asStringNameFilter(): (String) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'LinkedHashSet' @ [64:37] ==> public constructor LinkedHashSet<E : (Any..Any?)>() defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
@@ -142,8 +142,6 @@ Inferred types:
 
 'and' @ [111:75] ==> public final infix fun and(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [111:79] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CALLABLES_MASK' @ [111:100] ==> public final val CALLABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 '!in' @ [112:48] ==> public abstract fun contains(element: DescriptorKindExclude): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
@@ -204,7 +202,7 @@ Inferred types:
 
 'decapitalizeSmart' @ [122:91] ==> public fun String.decapitalizeSmart(asciiOnly: Boolean = ...): String defined in org.jetbrains.kotlin.util.capitalizeDecapitalize[DeserializedSimpleFunctionDescriptor]
 
-'asStringNameFilter' @ [122:112] ==> public fun PrefixMatcher.asStringNameFilter(): (String) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'asStringNameFilter' @ [122:112] ==> public fun PrefixMatcher.asStringNameFilter(): (String) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'if (runtimeReceiver != null)
             ShadowedDeclarationsFilter(bindingContext, resolutionFacade, nameExpression, runtimeReceiver)
@@ -224,8 +222,6 @@ Inferred types:
 'nameExpression' @ [125:74] ==> private final val nameExpression: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.completion.ReferenceVariantsCollector[PropertyDescriptorImpl]
 
 'runtimeReceiver' @ [125:90] ==> private final val runtimeReceiver: ExpressionReceiver? defined in org.jetbrains.kotlin.idea.completion.ReferenceVariantsCollector[PropertyDescriptorImpl]
-
-'ShadowedDeclarationsFilter' @ [127:13] ==> public companion object defined in org.jetbrains.kotlin.idea.util.ShadowedDeclarationsFilter[FakeCallableDescriptorForObject]
 
 'create' @ [127:40] ==> public final fun create(bindingContext: BindingContext, resolutionFacade: ResolutionFacade, context: PsiElement, callTypeAndReceiver: CallTypeAndReceiver<*, *>): ShadowedDeclarationsFilter? defined in org.jetbrains.kotlin.idea.util.ShadowedDeclarationsFilter.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -273,7 +269,7 @@ Inferred types:
 
 'descriptorNameFilter' @ [146:72] ==> private final val descriptorNameFilter: (String) -> Boolean defined in org.jetbrains.kotlin.idea.completion.ReferenceVariantsCollector[PropertyDescriptorImpl]
 
-'toNameFilter' @ [146:93] ==> public fun ((String) -> Boolean).toNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'toNameFilter' @ [146:93] ==> public fun ((String) -> Boolean).toNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'additionalPropertyNameFilter' @ [147:13] ==> val additionalPropertyNameFilter: ((String) -> Boolean)? defined in org.jetbrains.kotlin.idea.completion.ReferenceVariantsCollector.doCollectBasicVariants[LocalVariableDescriptor]
 
@@ -285,13 +281,11 @@ Inferred types:
 
 'intersect' @ [148:72] ==> public final fun intersect(other: DescriptorKindFilter): DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [148:82] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'VARIABLES' @ [148:103] ==> @field:JvmField public final val VARIABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'additionalPropertyNameFilter' @ [148:115] ==> val additionalPropertyNameFilter: ((String) -> Boolean)? defined in org.jetbrains.kotlin.idea.completion.ReferenceVariantsCollector.doCollectBasicVariants[LocalVariableDescriptor]
 
-'toNameFilter' @ [148:144] ==> public fun ((String) -> Boolean).toNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'toNameFilter' @ [148:144] ==> public fun ((String) -> Boolean).toNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'basicVariants' @ [149:13] ==> var basicVariants: Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.completion.ReferenceVariantsCollector.doCollectBasicVariants[LocalVariableDescriptor]
 

@@ -157,8 +157,6 @@ Inferred types:
 
 'descriptor' @ [109:29] ==> public abstract val descriptor: ClassDescriptor defined in org.jetbrains.kotlin.ir.declarations.IrClass[DeserializedPropertyDescriptor]
 
-'Annotations' @ [109:41] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [109:53] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'clinitName' @ [109:60] ==> public final val clinitName: Name defined in org.jetbrains.kotlin.backend.jvm.lower.InitializersLowering.Companion[PropertyDescriptorImpl]
@@ -186,8 +184,6 @@ Inferred types:
 'builtIns' @ [115:40] ==> public val DeclarationDescriptor.builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
 'unitType' @ [115:49] ==> public final val KotlinBuiltIns.unitType: SimpleType[MyPropertyDescriptor]
-
-'Modality' @ [116:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [116:30] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

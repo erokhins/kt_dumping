@@ -14,7 +14,7 @@
 
 'findChildByClass' @ [31:40] ==> @Nullable public open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtBlockExpression..KtBlockExpression?)>..Class<(KtBlockExpression..KtBlockExpression?)>?)): KtBlockExpression? defined in org.jetbrains.kotlin.psi.KtBlockCodeFragment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtBlockExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtBlockExpression..org.jetbrains.kotlin.psi.KtBlockExpression?)
 
 'KtBlockExpression' @ [31:57] ==> public constructor KtBlockExpression(@NotNull node: ASTNode) defined in org.jetbrains.kotlin.psi.KtBlockExpression[JavaClassConstructorDescriptor]
 

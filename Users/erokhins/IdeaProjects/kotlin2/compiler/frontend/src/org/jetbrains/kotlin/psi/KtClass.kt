@@ -20,7 +20,7 @@
 
 'findChildByType' @ [40:35] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtClass[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'COLON' @ [40:60] ==> public final val COLON: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
@@ -164,7 +164,7 @@ Inferred types:
 
 'findChildByType' @ [101:53] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (TokenSet..TokenSet?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtClass[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'create' @ [101:78] ==> @NotNull public open fun create(@NotNull vararg p0: (IElementType..IElementType?)): TokenSet defined in com.intellij.psi.tree.TokenSet[JavaMethodDescriptor]
 

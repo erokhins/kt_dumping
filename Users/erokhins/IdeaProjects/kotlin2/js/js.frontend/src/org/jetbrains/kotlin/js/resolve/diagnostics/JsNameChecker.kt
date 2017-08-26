@@ -56,8 +56,6 @@ Inferred types:
 
 'descriptor' @ [42:56] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.js.resolve.diagnostics.JsNameChecker.check[ValueParameterDescriptorImpl]
 
-'PredefinedAnnotation' @ [42:68] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
 'NATIVE' @ [42:89] ==> enum entry NATIVE defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'diagnosticHolder' @ [43:13] ==> value-parameter diagnosticHolder: DiagnosticSink defined in org.jetbrains.kotlin.js.resolve.diagnostics.JsNameChecker.check[ValueParameterDescriptorImpl]

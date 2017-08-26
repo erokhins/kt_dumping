@@ -86,7 +86,7 @@ Inferred types:
 
 'java' @ [120:65] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'codeFragment' @ [120:86] ==> value-parameter codeFragment: PsiElement defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluationBuilder.build[ValueParameterDescriptorImpl]
 
@@ -96,7 +96,7 @@ Inferred types:
 Inferred types:
     <T : Any> -> PsiElement
 
-'mergeAttachments' @ [120:121] ==> public fun mergeAttachments(vararg attachments: Attachment?): Attachment defined in org.jetbrains.kotlin.idea.util.attachment[SimpleFunctionDescriptorImpl]
+'mergeAttachments' @ [120:121] ==> public fun mergeAttachments(vararg attachments: Attachment?): Attachment defined in org.jetbrains.kotlin.idea.util.attachment in file attachmentUtils.kt[SimpleFunctionDescriptorImpl]
 
 'attachments' @ [120:139] ==> val attachments: Array<Attachment?> defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluationBuilder.build[LocalVariableDescriptor]
 
@@ -144,7 +144,7 @@ Inferred types:
 
 'context' @ [139:55] ==> value-parameter context: EvaluationContextImpl defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluator.evaluate[ValueParameterDescriptorImpl]
 
-'loadClassesSafely' @ [142:38] ==> public fun loadClassesSafely(evaluationContext: EvaluationContextImpl, classes: Collection<ClassToLoad>): ClassLoaderHandler? defined in org.jetbrains.kotlin.idea.debugger.evaluate.compilingEvaluator[SimpleFunctionDescriptorImpl]
+'loadClassesSafely' @ [142:38] ==> public fun loadClassesSafely(evaluationContext: EvaluationContextImpl, classes: Collection<ClassToLoad>): ClassLoaderHandler? defined in org.jetbrains.kotlin.idea.debugger.evaluate.compilingEvaluator in file compilingEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [142:56] ==> value-parameter context: EvaluationContextImpl defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluator.evaluate[ValueParameterDescriptorImpl]
 
@@ -199,7 +199,7 @@ Inferred types:
 
 'BROKEN_CODE' @ [156:118] ==> enum entry BROKEN_CODE defined in org.jetbrains.eval4j.ExceptionThrown.ExceptionKind[FakeCallableDescriptorForObject]
 
-'loadClasses' @ [158:42] ==> public fun loadClasses(evaluationContext: EvaluationContextImpl, classes: Collection<ClassToLoad>): ClassLoaderHandler? defined in org.jetbrains.kotlin.idea.debugger.evaluate.compilingEvaluator[SimpleFunctionDescriptorImpl]
+'loadClasses' @ [158:42] ==> public fun loadClasses(evaluationContext: EvaluationContextImpl, classes: Collection<ClassToLoad>): ClassLoaderHandler? defined in org.jetbrains.kotlin.idea.debugger.evaluate.compilingEvaluator in file compilingEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [158:54] ==> value-parameter context: EvaluationContextImpl defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluator.evaluate[ValueParameterDescriptorImpl]
 
@@ -315,7 +315,7 @@ Inferred types:
 
 'e' @ [194:52] ==> val e: Exception /* = Exception */ defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluator.evaluate[LocalVariableDescriptor]
 
-'mergeAttachments' @ [195:21] ==> public fun mergeAttachments(vararg attachments: Attachment?): Attachment defined in org.jetbrains.kotlin.idea.util.attachment[SimpleFunctionDescriptorImpl]
+'mergeAttachments' @ [195:21] ==> public fun mergeAttachments(vararg attachments: Attachment?): Attachment defined in org.jetbrains.kotlin.idea.util.attachment in file attachmentUtils.kt[SimpleFunctionDescriptorImpl]
 
 'attachments' @ [195:39] ==> val attachments: Array<Attachment?> defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluator.evaluate[LocalVariableDescriptor]
 
@@ -917,8 +917,6 @@ Inferred types:
 
 'parameterType' @ [368:21] ==> value-parameter parameterType: Type defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluator.Companion.boxOrUnboxArgumentIfNeeded[ValueParameterDescriptorImpl]
 
-'FrameVisitor' @ [368:38] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.FrameVisitor[FakeCallableDescriptorForObject]
-
 'OBJECT_TYPE' @ [368:51] ==> public final val OBJECT_TYPE: (Type..Type?) defined in org.jetbrains.kotlin.idea.debugger.evaluate.FrameVisitor.Companion[PropertyDescriptorImpl]
 
 'parameterType' @ [368:66] ==> value-parameter parameterType: Type defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluator.Companion.boxOrUnboxArgumentIfNeeded[ValueParameterDescriptorImpl]
@@ -964,9 +962,9 @@ Inferred types:
                             throw exception.value as Throwable
                         else ->
                             exception(exception.toString())
-                    }' @ [380:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Value, entry1: Value, entry2: Value): Value[SimpleFunctionDescriptorImpl]
+                    }' @ [380:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Nothing, entry1: Nothing, entry2: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Value
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Nothing
 
 'this' @ [381:25] ==> <this> defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluator.Companion.toJdiValue[ReceiverParameterDescriptorImpl]
 
@@ -1073,9 +1071,7 @@ Inferred types:
 
 'getUserData' @ [406:50] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Value..Value?)>): Value? defined in org.jetbrains.kotlin.psi.KtProperty[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Value
-
-'KotlinCodeFragmentFactory' @ [406:62] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (com.sun.jdi.Value..com.sun.jdi.Value?)
 
 'LABEL_VARIABLE_VALUE_KEY' @ [406:88] ==> public final val LABEL_VARIABLE_VALUE_KEY: Key<Value> defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion[PropertyDescriptorImpl]
 
@@ -1306,9 +1302,9 @@ Inferred types:
 
 'project' @ [470:41] ==> public final val KtFile.project: Project[MyPropertyDescriptor]
 
-'if (!DEBUG_MODE) ClassBuilderFactories.binaries(false) else ClassBuilderFactories.TEST' @ [471:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: ClassBuilderFactory, elseBranch: ClassBuilderFactory): ClassBuilderFactory[SimpleFunctionDescriptorImpl]
+'if (!DEBUG_MODE) ClassBuilderFactories.binaries(false) else ClassBuilderFactories.TEST' @ [471:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (ClassBuilderFactory..ClassBuilderFactory?), elseBranch: (ClassBuilderFactory..ClassBuilderFactory?)): (ClassBuilderFactory..ClassBuilderFactory?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> ClassBuilderFactory
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.kotlin.codegen.ClassBuilderFactory..org.jetbrains.kotlin.codegen.ClassBuilderFactory?)
 
 '!' @ [471:29] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -1437,8 +1433,8 @@ Inferred types:
 
 'record' @ [515:21] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(ClassDescriptor..ClassDescriptor?), (Type..Type?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (Type..Type?)>?), p1: (ClassDescriptor..ClassDescriptor?), p2: (Type..Type?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassDescriptor
-    <V : (Any..Any?)> -> Type
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)
 
 'ASM_TYPE' @ [515:43] ==> public final val ASM_TYPE: (WritableSlice<(ClassDescriptor..ClassDescriptor?), (Type..Type?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (Type..Type?)>?) defined in org.jetbrains.kotlin.codegen.binding.CodegenBinding[JavaPropertyDescriptor]
 
@@ -1615,7 +1611,7 @@ Inferred types:
 
 'singletonList' @ [557:105] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KtFile..KtFile?)): (MutableList<(KtFile..KtFile?)>..List<(KtFile..KtFile?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtFile
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
 
 'this' @ [557:119] ==> <this> defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinEvaluator.Companion.checkForErrors[ReceiverParameterDescriptorImpl]
 
@@ -1647,8 +1643,6 @@ Inferred types:
 'importsToString' @ [582:51] ==> public open fun importsToString(): String defined in org.jetbrains.kotlin.psi.KtCodeFragment[DeserializedSimpleFunctionDescriptor]
 
 'split' @ [582:69] ==> public fun CharSequence.split(vararg delimiters: String, ignoreCase: Boolean = ..., limit: Int = ...): List<String> defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'KtCodeFragment' @ [582:75] ==> public companion object defined in org.jetbrains.kotlin.psi.KtCodeFragment[FakeCallableDescriptorForObject]
 
 'IMPORT_SEPARATOR' @ [582:90] ==> public final val IMPORT_SEPARATOR: String defined in org.jetbrains.kotlin.psi.KtCodeFragment.Companion[DeserializedPropertyDescriptor]
 
@@ -1844,6 +1838,8 @@ Inferred types:
 'Instance' @ [632:29] ==> @JvmStatic public final val Instance: DefaultBuiltIns defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns.Companion[DeserializedPropertyDescriptor]
 
 'builtInsModule' @ [632:38] ==> public final var DefaultBuiltIns.builtInsModule: ModuleDescriptorImpl[MyPropertyDescriptor]
+
+'findClassAcrossModuleDependencies' @ [632:54] ==> public fun ModuleDescriptor.findClassAcrossModuleDependencies(classId: ClassId): ClassDescriptor? defined in org.jetbrains.kotlin.descriptors[DeserializedSimpleFunctionDescriptor]
 
 'let' @ [633:8] ==> @InlineOnly public inline fun <T, R> ClassDescriptor.let(block: (ClassDescriptor) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:

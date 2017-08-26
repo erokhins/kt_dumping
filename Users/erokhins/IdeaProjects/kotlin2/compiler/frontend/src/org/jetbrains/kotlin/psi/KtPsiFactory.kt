@@ -18,41 +18,29 @@
 
 '+' @ [43:43] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'UserDataProperty' @ [46:37] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<String>) defined in org.jetbrains.kotlin.psi.UserDataProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <in R : UserDataHolder> -> KtFile
-    <T : Any> -> String
+'getValue' @ [46:37] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[SimpleFunctionDescriptorImpl]
 
 'create' @ [46:58] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(String..String?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'UserDataProperty' @ [47:44] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<PsiElement>) defined in org.jetbrains.kotlin.psi.UserDataProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <in R : UserDataHolder> -> KtFile
-    <T : Any> -> PsiElement
+'getValue' @ [47:44] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[SimpleFunctionDescriptorImpl]
 
 'create' @ [47:65] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(PsiElement..PsiElement?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
-'UserDataProperty' @ [48:40] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<ModuleInfo>) defined in org.jetbrains.kotlin.psi.UserDataProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <in R : UserDataHolder> -> PsiFile
-    <T : Any> -> ModuleInfo
+'getValue' @ [48:40] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[SimpleFunctionDescriptorImpl]
 
 'create' @ [48:61] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(ModuleInfo..ModuleInfo?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.analyzer.ModuleInfo..org.jetbrains.kotlin.analyzer.ModuleInfo?)
 
-'UserDataProperty' @ [49:47] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<TargetPlatform>) defined in org.jetbrains.kotlin.psi.UserDataProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <in R : UserDataHolder> -> KtFile
-    <T : Any> -> TargetPlatform
+'getValue' @ [49:47] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[SimpleFunctionDescriptorImpl]
 
 'create' @ [49:68] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(TargetPlatform..TargetPlatform?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TargetPlatform
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.TargetPlatform..org.jetbrains.kotlin.resolve.TargetPlatform?)
 
 'JvmOverloads' @ [56:20] ==> public constructor JvmOverloads() defined in kotlin.jvm.JvmOverloads[DeserializedClassConstructorDescriptor]
 
@@ -220,7 +208,7 @@ Inferred types:
 
 'receiver' @ [121:72] ==> public final val KtFunctionType.receiver: KtFunctionTypeReceiver?[MyPropertyDescriptor]
 
-'apply' @ [121:83] ==> @InlineOnly public inline fun <T> KtFunctionTypeReceiver.apply(block: KtFunctionTypeReceiver.() -> Unit): KtFunctionTypeReceiver defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [121:83] ==> @InlineOnly public inline fun <T> KtFunctionTypeReceiver.apply(block: (KtFunctionTypeReceiver).() -> Unit): KtFunctionTypeReceiver defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtFunctionTypeReceiver
 
@@ -805,7 +793,7 @@ Inferred types:
 
 'findChildOfType' @ [376:37] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> findChildOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtWhenEntry..KtWhenEntry?)>): KtWhenEntry? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtWhenEntry
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtWhenEntry..org.jetbrains.kotlin.psi.KtWhenEntry?)
 
 'function' @ [376:53] ==> val function: KtNamedFunction defined in org.jetbrains.kotlin.psi.KtPsiFactory.createWhenEntry[LocalVariableDescriptor]
 
@@ -829,7 +817,7 @@ Inferred types:
 
 'whenEntry' @ [381:16] ==> val whenEntry: KtWhenEntry? defined in org.jetbrains.kotlin.psi.KtPsiFactory.createWhenEntry[LocalVariableDescriptor]
 
-'createExpressionByPattern' @ [386:40] ==> public fun KtPsiFactory.createExpressionByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtExpression defined in org.jetbrains.kotlin.psi[SimpleFunctionDescriptorImpl]
+'createExpressionByPattern' @ [386:40] ==> public fun KtPsiFactory.createExpressionByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtExpression defined in org.jetbrains.kotlin.psi in file createByPattern.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [386:81] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.psi.KtPsiFactory.createBlockStringTemplateEntry[ValueParameterDescriptorImpl]
 
@@ -979,7 +967,7 @@ Inferred types:
 
 'elseExpr' @ [449:21] ==> value-parameter elseExpr: KtExpression? = ... defined in org.jetbrains.kotlin.psi.KtPsiFactory.createIf[ValueParameterDescriptorImpl]
 
-'createExpressionByPattern' @ [450:13] ==> public fun KtPsiFactory.createExpressionByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtExpression defined in org.jetbrains.kotlin.psi[SimpleFunctionDescriptorImpl]
+'createExpressionByPattern' @ [450:13] ==> public fun KtPsiFactory.createExpressionByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtExpression defined in org.jetbrains.kotlin.psi in file createByPattern.kt[SimpleFunctionDescriptorImpl]
 
 'condition' @ [450:61] ==> value-parameter condition: KtExpression defined in org.jetbrains.kotlin.psi.KtPsiFactory.createIf[ValueParameterDescriptorImpl]
 
@@ -987,7 +975,7 @@ Inferred types:
 
 'elseExpr' @ [450:82] ==> value-parameter elseExpr: KtExpression? = ... defined in org.jetbrains.kotlin.psi.KtPsiFactory.createIf[ValueParameterDescriptorImpl]
 
-'createExpressionByPattern' @ [452:13] ==> public fun KtPsiFactory.createExpressionByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtExpression defined in org.jetbrains.kotlin.psi[SimpleFunctionDescriptorImpl]
+'createExpressionByPattern' @ [452:13] ==> public fun KtPsiFactory.createExpressionByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtExpression defined in org.jetbrains.kotlin.psi in file createByPattern.kt[SimpleFunctionDescriptorImpl]
 
 'condition' @ [452:53] ==> value-parameter condition: KtExpression defined in org.jetbrains.kotlin.psi.KtPsiFactory.createIf[ValueParameterDescriptorImpl]
 

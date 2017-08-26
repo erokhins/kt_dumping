@@ -6,9 +6,9 @@
 
 'trace' @ [38:67] ==> protected final val trace: BindingTrace defined in org.jetbrains.kotlin.load.java.components.LazyResolveBasedCache[PropertyDescriptorImpl]
 
-'?:' @ [38:74] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiMethod?, right: PsiMethod): PsiMethod[SimpleFunctionDescriptorImpl]
+'?:' @ [38:74] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiMethod
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'method' @ [38:75] ==> value-parameter method: JavaMethod defined in org.jetbrains.kotlin.load.java.components.LazyResolveBasedCache.recordMethod[ValueParameterDescriptorImpl]
 
@@ -20,8 +20,8 @@ Inferred types:
 
 'record' @ [42:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>?), p1: (PsiElement..PsiElement?), p2: (ConstructorDescriptor..ConstructorDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ConstructorDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)
 
 'CONSTRUCTOR' @ [42:22] ==> public final val CONSTRUCTOR: (WritableSlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -33,7 +33,7 @@ Inferred types:
 
 'psi' @ [42:69] ==> public final val <Psi : (PsiElement..PsiElement?)> JavaElementImpl<out (PsiElement..PsiElement?)>.psi: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <Psi : (PsiElement..PsiElement?)> -> Captured(*)
 
 'descriptor' @ [42:84] ==> value-parameter descriptor: ConstructorDescriptor defined in org.jetbrains.kotlin.load.java.components.LazyResolveBasedCache.recordConstructor[ValueParameterDescriptorImpl]
 
@@ -41,14 +41,14 @@ Inferred types:
 
 'record' @ [46:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?), p1: (PsiElement..PsiElement?), p2: (VariableDescriptor..VariableDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VARIABLE' @ [46:22] ==> public final val VARIABLE: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
-'?:' @ [46:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiField?, right: PsiField): PsiField[SimpleFunctionDescriptorImpl]
+'?:' @ [46:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: (PsiElement..PsiElement?)): (PsiElement..PsiElement?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiField
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'field' @ [46:33] ==> value-parameter field: JavaField defined in org.jetbrains.kotlin.load.java.components.LazyResolveBasedCache.recordField[ValueParameterDescriptorImpl]
 
@@ -60,14 +60,14 @@ Inferred types:
 
 'record' @ [50:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?), p2: (ClassDescriptor..ClassDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [50:22] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
-'?:' @ [50:29] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiClass?, right: PsiClass): PsiClass[SimpleFunctionDescriptorImpl]
+'?:' @ [50:29] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: (PsiElement..PsiElement?)): (PsiElement..PsiElement?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiClass
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'javaClass' @ [50:30] ==> value-parameter javaClass: JavaClass defined in org.jetbrains.kotlin.load.java.components.LazyResolveBasedCache.recordClass[ValueParameterDescriptorImpl]
 

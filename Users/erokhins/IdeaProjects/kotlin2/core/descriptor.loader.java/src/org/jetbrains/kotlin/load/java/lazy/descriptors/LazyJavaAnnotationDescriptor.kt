@@ -26,7 +26,9 @@ Inferred types:
 
 'javaAnnotation' @ [51:95] ==> private final val javaAnnotation: JavaAnnotation defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaAnnotationDescriptor[PropertyDescriptorImpl]
 
-'JavaToKotlinClassMap' @ [52:31] ==> public object JavaToKotlinClassMap : PlatformToKotlinClassMap defined in org.jetbrains.kotlin.platform in file JavaToKotlinClassMap.kt[FakeCallableDescriptorForObject]
+'?:' @ [52:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ClassDescriptor?, right: ClassDescriptor?): ClassDescriptor?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ClassDescriptor?
 
 'mapJavaToKotlin' @ [52:52] ==> public final fun mapJavaToKotlin(fqName: FqName, builtIns: KotlinBuiltIns): ClassDescriptor? defined in org.jetbrains.kotlin.platform.JavaToKotlinClassMap[SimpleFunctionDescriptorImpl]
 
@@ -87,18 +89,18 @@ Inferred types:
 
 'storageManager' @ [62:41] ==> public final val storageManager: StorageManager defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaResolverContext[PropertyDescriptorImpl]
 
-'createLazyValue' @ [62:56] ==> public abstract fun <T : Any> createLazyValue(computable: () -> Map<(Name..Name?), ConstantValue<Any?>>): NotNullLazyValue<Map<(Name..Name?), ConstantValue<Any?>>> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
+'createLazyValue' @ [62:56] ==> public abstract fun <T : Any> createLazyValue(computable: () -> Map<(Name..Name?), ConstantValue<*>>): NotNullLazyValue<Map<(Name..Name?), ConstantValue<*>>> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : Any> -> Map<(org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?), ConstantValue<Any?>>
+    <T : Any> -> Map<(org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?), ConstantValue<*>>
 
 'javaAnnotation' @ [63:9] ==> private final val javaAnnotation: JavaAnnotation defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaAnnotationDescriptor[PropertyDescriptorImpl]
 
 'arguments' @ [63:24] ==> public abstract val arguments: Collection<JavaAnnotationArgument> defined in org.jetbrains.kotlin.load.java.structure.JavaAnnotation[PropertyDescriptorImpl]
 
-'mapNotNull' @ [63:34] ==> public inline fun <T, R : Any> Iterable<JavaAnnotationArgument>.mapNotNull(transform: (JavaAnnotationArgument) -> Pair<(Name..Name?), ConstantValue<Any?>>?): List<Pair<(Name..Name?), ConstantValue<Any?>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapNotNull' @ [63:34] ==> public inline fun <T, R : Any> Iterable<JavaAnnotationArgument>.mapNotNull(transform: (JavaAnnotationArgument) -> Pair<(Name..Name?), ConstantValue<*>>?): List<Pair<(Name..Name?), ConstantValue<*>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JavaAnnotationArgument
-    <R : Any> -> Pair<(org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?), ConstantValue<Any?>>
+    <R : Any> -> Pair<(org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?), ConstantValue<*>>
 
 'arg' @ [64:24] ==> value-parameter arg: JavaAnnotationArgument defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -110,19 +112,19 @@ Inferred types:
 
 'arg' @ [65:39] ==> value-parameter arg: JavaAnnotationArgument defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [65:45] ==> @InlineOnly public inline fun <T, R> ConstantValue<Any?>.let(block: (ConstantValue<Any?>) -> Pair<(Name..Name?), ConstantValue<Any?>>): Pair<(Name..Name?), ConstantValue<Any?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [65:45] ==> @InlineOnly public inline fun <T, R> ConstantValue<*>.let(block: (ConstantValue<*>) -> Pair<(Name..Name?), ConstantValue<*>>): Pair<(Name..Name?), ConstantValue<*>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ConstantValue<Any?>
-    <R> -> Pair<(org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?), ConstantValue<Any?>>
+    <T> -> ConstantValue<*>
+    <R> -> Pair<(org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?), ConstantValue<*>>
 
 'name' @ [65:60] ==> val name: (Name..Name?) defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'value' @ [65:68] ==> value-parameter value: ConstantValue<Any?> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'value' @ [65:68] ==> value-parameter value: ConstantValue<*> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'toMap' @ [66:11] ==> public fun <K, V> Iterable<Pair<(Name..Name?), ConstantValue<Any?>>>.toMap(): Map<(Name..Name?), ConstantValue<Any?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toMap' @ [66:11] ==> public fun <K, V> Iterable<Pair<(Name..Name?), ConstantValue<*>>>.toMap(): Map<(Name..Name?), ConstantValue<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
-    <V> -> ConstantValue<Any?>
+    <V> -> ConstantValue<*>
 
 'when (argument) {
             is JavaLiteralAnnotationArgument -> factory.createConstantValue(argument.value)
@@ -302,7 +304,7 @@ Inferred types:
 
 'javaType' @ [121:17] ==> value-parameter javaType: JavaType defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaAnnotationDescriptor.resolveFromJavaClassObjectType[ValueParameterDescriptorImpl]
 
-'toAttributes' @ [122:34] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [122:34] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'c' @ [125:23] ==> private final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaAnnotationDescriptor[PropertyDescriptorImpl]
 
@@ -325,8 +327,6 @@ Inferred types:
 'KotlinTypeFactory' @ [129:35] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
 
 'simpleNotNullType' @ [129:53] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [129:71] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [129:83] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

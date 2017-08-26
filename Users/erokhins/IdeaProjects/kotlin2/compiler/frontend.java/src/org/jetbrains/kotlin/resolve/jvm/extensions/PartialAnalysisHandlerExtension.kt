@@ -24,8 +24,6 @@ Inferred types:
 
 'TopLevelDeclarations' @ [55:37] ==> enum entry TopLevelDeclarations defined in org.jetbrains.kotlin.resolve.TopDownAnalysisMode[FakeCallableDescriptorForObject]
 
-'DataFlowInfo' @ [55:59] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [55:72] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 
 'declarationScopeProvider' @ [55:79] ==> val declarationScopeProvider: DeclarationScopeProvider defined in org.jetbrains.kotlin.resolve.jvm.extensions.PartialAnalysisHandlerExtension.doAnalysis[LocalVariableDescriptor]
@@ -114,8 +112,6 @@ Inferred types:
 'bodyResolver' @ [70:25] ==> val bodyResolver: BodyResolver defined in org.jetbrains.kotlin.resolve.jvm.extensions.PartialAnalysisHandlerExtension.doAnalysis[LocalVariableDescriptor]
 
 'resolveSuperTypeEntryList' @ [70:38] ==> public open fun resolveSuperTypeEntryList(@NotNull p0: DataFlowInfo, @NotNull p1: KtClassOrObject, @NotNull p2: ClassDescriptor, @Nullable p3: ConstructorDescriptor?, @NotNull p4: LexicalScope, @NotNull p5: LexicalScope): Unit defined in org.jetbrains.kotlin.resolve.BodyResolver[JavaMethodDescriptor]
-
-'DataFlowInfo' @ [70:64] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [70:77] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 

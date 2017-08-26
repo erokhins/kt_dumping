@@ -2,9 +2,7 @@
 
 'put' @ [41:19] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(List<String>..List<String>?)>, @NotNull p1: List<String>): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
-
-'AndroidConfigurationKeys' @ [41:23] ==> public object AndroidConfigurationKeys defined in org.jetbrains.kotlin.android.synthetic[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'VARIANT' @ [41:48] ==> public final val VARIANT: CompilerConfigurationKey<(List<String>..List<String>?)> defined in org.jetbrains.kotlin.android.synthetic.AndroidConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -14,9 +12,7 @@ Inferred types:
 
 'put' @ [42:19] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AndroidConfigurationKeys' @ [42:23] ==> public object AndroidConfigurationKeys defined in org.jetbrains.kotlin.android.synthetic[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'PACKAGE' @ [42:48] ==> public final val PACKAGE: CompilerConfigurationKey<(String..String?)> defined in org.jetbrains.kotlin.android.synthetic.AndroidConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -37,8 +33,6 @@ Inferred types:
 'listOf' @ [47:20] ==> public fun <T> listOf(element: AndroidVariant): List<AndroidVariant> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AndroidVariant
-
-'AndroidVariant' @ [47:27] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.res.AndroidVariant[FakeCallableDescriptorForObject]
 
 'createMainVariant' @ [47:42] ==> public final fun createMainVariant(resDirectories: List<String>): AndroidVariant defined in org.jetbrains.kotlin.android.synthetic.res.AndroidVariant.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -70,8 +64,6 @@ Inferred types:
 
 'CliAndroidExtensionsExpressionCodegenExtension' @ [50:59] ==> public constructor CliAndroidExtensionsExpressionCodegenExtension(isExperimental: Boolean, globalCacheImpl: CacheImplementation) defined in org.jetbrains.kotlin.android.synthetic.codegen.CliAndroidExtensionsExpressionCodegenExtension[DeserializedClassConstructorDescriptor]
 
-'CacheImplementation' @ [50:112] ==> public companion object defined in kotlinx.android.extensions.CacheImplementation[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [50:132] ==> public final val DEFAULT: CacheImplementation defined in kotlinx.android.extensions.CacheImplementation.Companion[DeserializedPropertyDescriptor]
 
 'StorageComponentContainerContributor' @ [51:5] ==> public companion object : ProjectExtensionDescriptor<StorageComponentContainerContributor> defined in org.jetbrains.kotlin.extensions.StorageComponentContainerContributor[FakeCallableDescriptorForObject]
@@ -89,8 +81,6 @@ Inferred types:
 'project' @ [52:56] ==> val project: Project defined in org.jetbrains.kotlin.android.synthetic.test.createTestEnvironment[LocalVariableDescriptor]
 
 'CliAndroidOnDestroyClassBuilderInterceptorExtension' @ [52:65] ==> public constructor CliAndroidOnDestroyClassBuilderInterceptorExtension(globalCacheImpl: CacheImplementation) defined in org.jetbrains.kotlin.android.synthetic.codegen.CliAndroidOnDestroyClassBuilderInterceptorExtension[DeserializedClassConstructorDescriptor]
-
-'CacheImplementation' @ [52:117] ==> public companion object defined in kotlinx.android.extensions.CacheImplementation[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [52:137] ==> public final val DEFAULT: CacheImplementation defined in kotlinx.android.extensions.CacheImplementation.Companion[DeserializedPropertyDescriptor]
 

@@ -213,6 +213,8 @@ Inferred types:
 
 'String' @ [88:69] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'leadingIndent' @ [88:77] ==> local final fun String.leadingIndent(): Int defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.trimCommonIndent[SimpleFunctionDescriptorImpl]
+
 'min' @ [88:92] ==> public fun <T : Comparable<Int>> Iterable<Int>.min(): Int? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Comparable<T>> -> Int
@@ -239,7 +241,7 @@ Inferred types:
 Inferred types:
     <T> -> StringBuilder
 
-'wrapTag' @ [96:13] ==> public inline fun StringBuilder /* = StringBuilder */.wrapTag(tag: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'wrapTag' @ [96:13] ==> public inline fun StringBuilder /* = StringBuilder */.wrapTag(tag: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util in file xmlMarkupStringBuilderUtil.kt[SimpleFunctionDescriptorImpl]
 
 'append' @ [97:17] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
@@ -249,7 +251,7 @@ Inferred types:
 Inferred types:
     <T> -> KDocTag
 
-'wrapTag' @ [99:21] ==> public inline fun StringBuilder /* = StringBuilder */.wrapTag(tag: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'wrapTag' @ [99:21] ==> public inline fun StringBuilder /* = StringBuilder */.wrapTag(tag: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util in file xmlMarkupStringBuilderUtil.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [100:25] ==> value-parameter it: KDocTag defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.renderSamplesList.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -270,9 +272,9 @@ Inferred types:
 
 'getTargetElement' @ [102:54] ==> private final fun KDocLink.getTargetElement(): PsiElement? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer[SimpleFunctionDescriptorImpl]
 
-'wrapTag' @ [103:29] ==> public inline fun StringBuilder /* = StringBuilder */.wrapTag(tag: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'wrapTag' @ [103:29] ==> public inline fun StringBuilder /* = StringBuilder */.wrapTag(tag: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util in file xmlMarkupStringBuilderUtil.kt[SimpleFunctionDescriptorImpl]
 
-'wrapTag' @ [104:33] ==> public inline fun StringBuilder /* = StringBuilder */.wrapTag(tag: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'wrapTag' @ [104:33] ==> public inline fun StringBuilder /* = StringBuilder */.wrapTag(tag: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util in file xmlMarkupStringBuilderUtil.kt[SimpleFunctionDescriptorImpl]
 
 'if (target == null)
                                         to.append("// Unresolved")
@@ -457,8 +459,6 @@ Inferred types:
 
 'type' @ [164:76] ==> public final val type: IElementType defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.MarkdownNode[PropertyDescriptorImpl]
 
-'MarkdownTokenTypes' @ [164:84] ==> public companion object defined in org.intellij.markdown.MarkdownTokenTypes[FakeCallableDescriptorForObject]
-
 'EOL' @ [164:103] ==> @field:JvmField public final val EOL: IElementType defined in org.intellij.markdown.MarkdownTokenTypes.Companion[DeserializedPropertyDescriptor]
 
 'if (maybeSingleParagraph != null && !allowSingleParagraph) {
@@ -556,8 +556,6 @@ Inferred types:
 'node' @ [191:13] ==> public final val node: ASTNode defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.MarkdownNode[PropertyDescriptorImpl]
 
 'type' @ [191:18] ==> public abstract val type: IElementType defined in org.intellij.markdown.ast.ASTNode[DeserializedPropertyDescriptor]
-
-'MarkdownTokenTypes' @ [191:26] ==> public companion object defined in org.intellij.markdown.MarkdownTokenTypes[FakeCallableDescriptorForObject]
 
 'WHITE_SPACE' @ [191:45] ==> @field:JvmField public final val WHITE_SPACE: IElementType defined in org.intellij.markdown.MarkdownTokenTypes.Companion[DeserializedPropertyDescriptor]
 
@@ -794,8 +792,6 @@ Inferred types:
 
 'child' @ [224:47] ==> public final fun child(type: IElementType): KDocRenderer.MarkdownNode? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.MarkdownNode[SimpleFunctionDescriptorImpl]
 
-'MarkdownTokenTypes' @ [224:53] ==> public companion object defined in org.intellij.markdown.MarkdownTokenTypes[FakeCallableDescriptorForObject]
-
 'BACKTICK' @ [224:72] ==> @field:JvmField public final val BACKTICK: IElementType defined in org.intellij.markdown.MarkdownTokenTypes.Companion[DeserializedPropertyDescriptor]
 
 'text' @ [224:83] ==> public final val text: String defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.MarkdownNode[PropertyDescriptorImpl]
@@ -862,8 +858,6 @@ Inferred types:
 
 'child' @ [239:46] ==> public final fun child(type: IElementType): KDocRenderer.MarkdownNode? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.MarkdownNode[SimpleFunctionDescriptorImpl]
 
-'MarkdownElementTypes' @ [239:52] ==> public object MarkdownElementTypes defined in org.intellij.markdown[FakeCallableDescriptorForObject]
-
 'LINK_LABEL' @ [239:73] ==> @field:JvmField public final val LINK_LABEL: IElementType defined in org.intellij.markdown.MarkdownElementTypes[DeserializedPropertyDescriptor]
 
 'linkLabelNode' @ [240:44] ==> val linkLabelNode: KDocRenderer.MarkdownNode? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.toHtml.<anonymous>[LocalVariableDescriptor]
@@ -878,8 +872,6 @@ Inferred types:
 
 'type' @ [241:46] ==> public final val type: IElementType defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.MarkdownNode[PropertyDescriptorImpl]
 
-'MarkdownTokenTypes' @ [241:54] ==> public companion object defined in org.intellij.markdown.MarkdownTokenTypes[FakeCallableDescriptorForObject]
-
 'LBRACKET' @ [241:73] ==> @field:JvmField public final val LBRACKET: IElementType defined in org.intellij.markdown.MarkdownTokenTypes.Companion[DeserializedPropertyDescriptor]
 
 'dropLastWhile' @ [242:31] ==> public inline fun <T> List<KDocRenderer.MarkdownNode>.dropLastWhile(predicate: (KDocRenderer.MarkdownNode) -> Boolean): List<KDocRenderer.MarkdownNode> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -889,8 +881,6 @@ Inferred types:
 'it' @ [242:47] ==> value-parameter it: KDocRenderer.MarkdownNode defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.toHtml.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'type' @ [242:50] ==> public final val type: IElementType defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.MarkdownNode[PropertyDescriptorImpl]
-
-'MarkdownTokenTypes' @ [242:58] ==> public companion object defined in org.intellij.markdown.MarkdownTokenTypes[FakeCallableDescriptorForObject]
 
 'RBRACKET' @ [242:77] ==> @field:JvmField public final val RBRACKET: IElementType defined in org.intellij.markdown.MarkdownTokenTypes.Companion[DeserializedPropertyDescriptor]
 
@@ -920,8 +910,6 @@ Inferred types:
 'node' @ [245:40] ==> value-parameter node: KDocRenderer.MarkdownNode defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.toHtml.<anonymous>[ValueParameterDescriptorImpl]
 
 'child' @ [245:45] ==> public final fun child(type: IElementType): KDocRenderer.MarkdownNode? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.MarkdownNode[SimpleFunctionDescriptorImpl]
-
-'MarkdownElementTypes' @ [245:51] ==> public object MarkdownElementTypes defined in org.intellij.markdown[FakeCallableDescriptorForObject]
 
 'LINK_TEXT' @ [245:72] ==> @field:JvmField public final val LINK_TEXT: IElementType defined in org.intellij.markdown.MarkdownElementTypes[DeserializedPropertyDescriptor]
 
@@ -953,8 +941,6 @@ Inferred types:
 
 'child' @ [253:38] ==> public final fun child(type: IElementType): KDocRenderer.MarkdownNode? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.MarkdownNode[SimpleFunctionDescriptorImpl]
 
-'MarkdownElementTypes' @ [253:44] ==> public object MarkdownElementTypes defined in org.intellij.markdown[FakeCallableDescriptorForObject]
-
 'LINK_TEXT' @ [253:65] ==> @field:JvmField public final val LINK_TEXT: IElementType defined in org.intellij.markdown.MarkdownElementTypes[DeserializedPropertyDescriptor]
 
 'toHtml' @ [253:77] ==> private final fun KDocRenderer.MarkdownNode.toHtml(): String defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer[SimpleFunctionDescriptorImpl]
@@ -962,8 +948,6 @@ Inferred types:
 'node' @ [254:39] ==> value-parameter node: KDocRenderer.MarkdownNode defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.toHtml.<anonymous>[ValueParameterDescriptorImpl]
 
 'child' @ [254:44] ==> public final fun child(type: IElementType): KDocRenderer.MarkdownNode? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.MarkdownNode[SimpleFunctionDescriptorImpl]
-
-'MarkdownElementTypes' @ [254:50] ==> public object MarkdownElementTypes defined in org.intellij.markdown[FakeCallableDescriptorForObject]
 
 'LINK_DESTINATION' @ [254:71] ==> @field:JvmField public final val LINK_DESTINATION: IElementType defined in org.intellij.markdown.MarkdownElementTypes[DeserializedPropertyDescriptor]
 
@@ -1056,8 +1040,6 @@ Inferred types:
 
 'removePrefix' @ [275:40] ==> public fun String.removePrefix(prefix: CharSequence): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'KDocTag' @ [275:53] ==> public companion object defined in org.jetbrains.kotlin.kdoc.psi.impl.KDocTag[FakeCallableDescriptorForObject]
-
 'indentationWhiteSpaces' @ [275:61] ==> public final val indentationWhiteSpaces: String defined in org.jetbrains.kotlin.kdoc.psi.impl.KDocTag.Companion[DeserializedPropertyDescriptor]
 
 'htmlEscape' @ [275:85] ==> private final fun String.htmlEscape(): String defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer[SimpleFunctionDescriptorImpl]
@@ -1095,13 +1077,9 @@ Inferred types:
 
 'parentType' @ [282:25] ==> val parentType: IElementType? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.toHtml.<anonymous>[LocalVariableDescriptor]
 
-'MarkdownElementTypes' @ [282:39] ==> public object MarkdownElementTypes defined in org.intellij.markdown[FakeCallableDescriptorForObject]
-
 'CODE_BLOCK' @ [282:60] ==> @field:JvmField public final val CODE_BLOCK: IElementType defined in org.intellij.markdown.MarkdownElementTypes[DeserializedPropertyDescriptor]
 
 'parentType' @ [282:74] ==> val parentType: IElementType? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.toHtml.<anonymous>[LocalVariableDescriptor]
-
-'MarkdownElementTypes' @ [282:88] ==> public object MarkdownElementTypes defined in org.intellij.markdown[FakeCallableDescriptorForObject]
 
 'CODE_FENCE' @ [282:109] ==> @field:JvmField public final val CODE_FENCE: IElementType defined in org.intellij.markdown.MarkdownElementTypes[DeserializedPropertyDescriptor]
 
@@ -1167,13 +1145,9 @@ Inferred types:
 
 'parentNodeType' @ [301:25] ==> val parentNodeType: IElementType? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.toHtml.<anonymous>[LocalVariableDescriptor]
 
-'MarkdownElementTypes' @ [301:43] ==> public object MarkdownElementTypes defined in org.intellij.markdown[FakeCallableDescriptorForObject]
-
 'EMPH' @ [301:64] ==> @field:JvmField public final val EMPH: IElementType defined in org.intellij.markdown.MarkdownElementTypes[DeserializedPropertyDescriptor]
 
 'parentNodeType' @ [301:72] ==> val parentNodeType: IElementType? defined in org.jetbrains.kotlin.idea.kdoc.KDocRenderer.toHtml.<anonymous>[LocalVariableDescriptor]
-
-'MarkdownElementTypes' @ [301:90] ==> public object MarkdownElementTypes defined in org.intellij.markdown[FakeCallableDescriptorForObject]
 
 'STRONG' @ [301:111] ==> @field:JvmField public final val STRONG: IElementType defined in org.intellij.markdown.MarkdownElementTypes[DeserializedPropertyDescriptor]
 

@@ -437,7 +437,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'fold' @ [160:52] ==> public inline fun <T, R> Iterable<String>.fold(initial: Context.Node, operation: (Context.Node, String) -> Context.Node): Context.Node defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [160:52] ==> public inline fun <T, R> Iterable<String>.fold(initial: Context.Node, operation: (acc: Context.Node, String) -> Context.Node): Context.Node defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> Node

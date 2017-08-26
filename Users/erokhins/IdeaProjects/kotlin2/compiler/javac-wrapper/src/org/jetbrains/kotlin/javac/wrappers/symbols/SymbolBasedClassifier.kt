@@ -23,7 +23,7 @@ Inferred types:
 
 'element' @ [34:51] ==> public final val element: T defined in org.jetbrains.kotlin.javac.wrappers.symbols.SymbolBasedClassifier[PropertyDescriptorImpl]
 
-'findAnnotation' @ [34:59] ==> internal fun AnnotatedConstruct.findAnnotation(fqName: FqName, javac: JavacWrapper): SymbolBasedAnnotation? defined in org.jetbrains.kotlin.javac.wrappers.symbols[SimpleFunctionDescriptorImpl]
+'findAnnotation' @ [34:59] ==> internal fun AnnotatedConstruct.findAnnotation(fqName: FqName, javac: JavacWrapper): SymbolBasedAnnotation? defined in org.jetbrains.kotlin.javac.wrappers.symbols in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [34:74] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.javac.wrappers.symbols.SymbolBasedClassifier.findAnnotation[ValueParameterDescriptorImpl]
 

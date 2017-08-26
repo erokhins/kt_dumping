@@ -558,6 +558,8 @@ Inferred types:
     <T> -> String
     <R> -> DependencyDescriptor
 
+'parseDependency' @ [240:51] ==> private fun parseDependency(dependency: String): DependencyDescriptor defined in org.jetbrains.kotlin.jps.build in file AbstractIncrementalJpsTest.kt[SimpleFunctionDescriptorImpl]
+
 'result' @ [243:16] ==> val result: HashMap<String, List<DependencyDescriptor>> defined in org.jetbrains.kotlin.jps.build.AbstractIncrementalJpsTest.readModuleDependencies[LocalVariableDescriptor]
 
 'buildString' @ [247:13] ==> @InlineOnly public inline fun buildString(builderAction: StringBuilder /* = StringBuilder */.() -> Unit): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
@@ -598,7 +600,7 @@ Inferred types:
 
 'testRootDisposable' @ [258:27] ==> public final val AbstractIncrementalJpsTest.testRootDisposable: Disposable[MyPropertyDescriptor]
 
-'Disposable' @ [258:47] ==> public fun Disposable(function: () -> Unit): Disposable defined in com.intellij.openapi[SimpleFunctionDescriptorImpl]
+'Disposable' @ [258:47] ==> public fun Disposable(function: () -> Unit): Disposable defined in com.intellij.openapi[SamConstructorDescriptorImpl]
 
 'delete' @ [258:71] ==> public open fun delete(@NotNull p0: File): Boolean defined in com.intellij.openapi.util.io.FileUtilRt[JavaMethodDescriptor]
 
@@ -738,7 +740,7 @@ Inferred types:
 
 'getStorage' @ [301:49] ==> @NotNull public open fun <S : (StorageOwner..StorageOwner?)> getStorage(@NotNull p0: BuildTarget<*>, @NotNull p1: StorageProvider<(JpsLookupStorage..JpsLookupStorage?)>): JpsLookupStorage defined in org.jetbrains.jps.incremental.storage.BuildDataManager[JavaMethodDescriptor]
 Inferred types:
-    <S : (StorageOwner..StorageOwner?)> -> JpsLookupStorage
+    <S : (StorageOwner..StorageOwner?)> -> (org.jetbrains.kotlin.jps.incremental.JpsLookupStorage..org.jetbrains.kotlin.jps.incremental.JpsLookupStorage?)
 
 'KotlinDataContainerTarget' @ [301:60] ==> public object KotlinDataContainerTarget : BuildTarget<BuildRootDescriptor> defined in org.jetbrains.kotlin.jps.incremental[FakeCallableDescriptorForObject]
 
@@ -1052,7 +1054,7 @@ Inferred types:
 
 'addModule' @ [389:13] ==> protected/*protected and package*/ open fun <T : (JpsElement..JpsElement?)> addModule(p0: (String..String?), p1: (Array<(String..String?)>..Array<out (String..String?)>?), @Nullable p2: String?, @Nullable p3: String?, p4: (JpsSdk<(JpsDummyElement..JpsDummyElement?)>..JpsSdk<(JpsDummyElement..JpsDummyElement?)>?)): (JpsModule..JpsModule?) defined in org.jetbrains.kotlin.jps.build.AbstractIncrementalJpsTest[JavaMethodDescriptor]
 Inferred types:
-    <T : (JpsElement..JpsElement?)> -> JpsDummyElement
+    <T : (JpsElement..JpsElement?)> -> (org.jetbrains.jps.model.JpsDummyElement..org.jetbrains.jps.model.JpsDummyElement?)
 
 'arrayOf' @ [389:33] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: (String..String?)): Array<(String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1077,7 +1079,7 @@ Inferred types:
 
 'addModule' @ [395:34] ==> protected/*protected and package*/ open fun <T : (JpsElement..JpsElement?)> addModule(p0: (String..String?), p1: (Array<(String..String?)>..Array<out (String..String?)>?), @Nullable p2: String?, @Nullable p3: String?, p4: (JpsSdk<(JpsDummyElement..JpsDummyElement?)>..JpsSdk<(JpsDummyElement..JpsDummyElement?)>?)): (JpsModule..JpsModule?) defined in org.jetbrains.kotlin.jps.build.AbstractIncrementalJpsTest[JavaMethodDescriptor]
 Inferred types:
-    <T : (JpsElement..JpsElement?)> -> JpsDummyElement
+    <T : (JpsElement..JpsElement?)> -> (org.jetbrains.jps.model.JpsDummyElement..org.jetbrains.jps.model.JpsDummyElement?)
 
 'it' @ [395:44] ==> value-parameter it: String defined in org.jetbrains.kotlin.jps.build.AbstractIncrementalJpsTest.configureModules.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1290,8 +1292,6 @@ Inferred types:
 'description' @ [466:56] ==> value-parameter description: String? defined in org.jetbrains.kotlin.jps.build.AbstractIncrementalJpsTest.MyLogger.logCompiledFiles[ValueParameterDescriptorImpl]
 
 'builderName' @ [468:17] ==> value-parameter builderName: String? defined in org.jetbrains.kotlin.jps.build.AbstractIncrementalJpsTest.MyLogger.logCompiledFiles[ValueParameterDescriptorImpl]
-
-'KotlinBuilder' @ [468:32] ==> public companion object defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[FakeCallableDescriptorForObject]
 
 'KOTLIN_BUILDER_NAME' @ [468:46] ==> @field:JvmField public final val KOTLIN_BUILDER_NAME: String defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion[DeserializedPropertyDescriptor]
 

@@ -100,8 +100,6 @@ Inferred types:
 
 'ThrowingMessageCollector' @ [56:37] ==> public constructor ThrowingMessageCollector() defined in org.jetbrains.kotlin.cli.FriendPathsTest.ThrowingMessageCollector[ClassConstructorDescriptorImpl]
 
-'Services' @ [56:65] ==> public companion object defined in org.jetbrains.kotlin.config.Services[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [56:74] ==> @field:JvmField public final val EMPTY: Services defined in org.jetbrains.kotlin.config.Services.Companion[DeserializedPropertyDescriptor]
 
 'K2JVMCompilerArguments' @ [56:81] ==> public constructor K2JVMCompilerArguments() defined in org.jetbrains.kotlin.cli.common.arguments.K2JVMCompilerArguments[DeserializedClassConstructorDescriptor]

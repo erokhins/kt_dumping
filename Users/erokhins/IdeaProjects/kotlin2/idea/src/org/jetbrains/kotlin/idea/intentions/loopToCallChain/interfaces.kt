@@ -230,8 +230,6 @@ Inferred types:
 
 'last' @ [200:51] ==> public final val last: PsiElement? defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[DeserializedPropertyDescriptor]
 
-'PsiChildRange' @ [203:21] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [203:35] ==> public final val EMPTY: PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[DeserializedPropertyDescriptor]
 
 'element' @ [207:13] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.CommentSavingRangeHolder.remove[ValueParameterDescriptorImpl]
@@ -283,8 +281,6 @@ Inferred types:
 
 'newLast' @ [213:48] ==> val newLast: PsiElement? defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.CommentSavingRangeHolder.remove[LocalVariableDescriptor]
 
-'PsiChildRange' @ [216:21] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [216:35] ==> public final val EMPTY: PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[DeserializedPropertyDescriptor]
 
 'if (prevSibling != null) PsiChildRange(parent.firstChild, prevSibling) else PsiChildRange.EMPTY' @ [222:47] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiChildRange, elseBranch: PsiChildRange): PsiChildRange[SimpleFunctionDescriptorImpl]
@@ -300,8 +296,6 @@ Inferred types:
 'firstChild' @ [222:93] ==> public final val PsiElement.firstChild: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
 'prevSibling' @ [222:105] ==> public final val PsiElement.prevSibling: (PsiElement..PsiElement?)[MyPropertyDescriptor]
-
-'PsiChildRange' @ [222:123] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [222:137] ==> public final val EMPTY: PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[DeserializedPropertyDescriptor]
 

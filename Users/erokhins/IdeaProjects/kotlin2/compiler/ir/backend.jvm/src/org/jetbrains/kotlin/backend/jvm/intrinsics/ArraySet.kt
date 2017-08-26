@@ -22,9 +22,9 @@
 
 'context' @ [30:66] ==> value-parameter context: JvmBackendContext defined in org.jetbrains.kotlin.backend.jvm.intrinsics.ArraySet.toCallable[ValueParameterDescriptorImpl]
 
-'listOf' @ [30:75] ==> public fun <T> listOf(vararg elements: Type): List<Type> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [30:75] ==> public fun <T> listOf(vararg elements: (Type..Type?)): List<(Type..Type?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Type
+    <T> -> (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)
 
 'arrayType' @ [30:82] ==> val arrayType: Type defined in org.jetbrains.kotlin.backend.jvm.intrinsics.ArraySet.toCallable[LocalVariableDescriptor]
 

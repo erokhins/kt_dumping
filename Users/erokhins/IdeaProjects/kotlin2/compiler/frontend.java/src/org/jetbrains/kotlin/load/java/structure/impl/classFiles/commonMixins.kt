@@ -2,7 +2,7 @@
 
 'access' @ [31:28] ==> public abstract val access: Int defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaModifierListOwner[PropertyDescriptorImpl]
 
-'isSet' @ [31:35] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles[SimpleFunctionDescriptorImpl]
+'isSet' @ [31:35] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles in file commonMixins.kt[SimpleFunctionDescriptorImpl]
 
 'flag' @ [31:41] ==> value-parameter flag: Int defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaModifierListOwner.isSet[ValueParameterDescriptorImpl]
 

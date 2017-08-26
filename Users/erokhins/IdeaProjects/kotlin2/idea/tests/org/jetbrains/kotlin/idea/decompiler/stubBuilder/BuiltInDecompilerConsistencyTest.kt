@@ -66,8 +66,6 @@ Inferred types:
 
 'groupedByExtension' @ [65:28] ==> val groupedByExtension: Map<String?, List<(VirtualFile..VirtualFile?)>> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.BuiltInDecompilerConsistencyTest.doTest[LocalVariableDescriptor]
 
-'BuiltInSerializerProtocol' @ [65:47] ==> public object BuiltInSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.builtins[FakeCallableDescriptorForObject]
-
 'BUILTINS_FILE_EXTENSION' @ [65:73] ==> public final val BUILTINS_FILE_EXTENSION: String defined in org.jetbrains.kotlin.builtins.BuiltInSerializerProtocol[DeserializedPropertyDescriptor]
 
 'single' @ [65:100] ==> public fun <T> List<(VirtualFile..VirtualFile?)>.single(): (VirtualFile..VirtualFile?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -120,11 +118,11 @@ Inferred types:
 
 'fileContent' @ [75:74] ==> val fileContent: (FileContent..FileContent?) defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.BuiltInDecompilerConsistencyTest.doTest[LocalVariableDescriptor]
 
-'fileStub' @ [76:29] ==> val fileStub: PsiFileStub<out (PsiFile..PsiFile?)> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.BuiltInDecompilerConsistencyTest.doTest[LocalVariableDescriptor]
+'fileStub' @ [76:29] ==> val fileStub: PsiFileStub<*> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.BuiltInDecompilerConsistencyTest.doTest[LocalVariableDescriptor]
 
 'findChildStubByType' @ [76:38] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClass..KtClass?)>): StubElement<(KtClass..KtClass?)>? defined in com.intellij.psi.stubs.PsiFileStub[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClass
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'getStubType' @ [76:77] ==> public open fun getStubType(p0: Boolean): (KtClassElementType..KtClassElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtClassElementType[JavaMethodDescriptor]
 
@@ -132,11 +130,11 @@ Inferred types:
 
 'getFqName' @ [77:41] ==> public abstract fun getFqName(): FqName? defined in org.jetbrains.kotlin.psi.stubs.KotlinClassStub[DeserializedSimpleFunctionDescriptor]
 
-'builtInFileStub' @ [78:36] ==> val builtInFileStub: PsiFileStub<out (PsiFile..PsiFile?)> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.BuiltInDecompilerConsistencyTest.doTest[LocalVariableDescriptor]
+'builtInFileStub' @ [78:36] ==> val builtInFileStub: PsiFileStub<*> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.BuiltInDecompilerConsistencyTest.doTest[LocalVariableDescriptor]
 
 'childrenStubs' @ [78:52] ==> public final val <T : (PsiFile..PsiFile?)> PsiFileStub<out (PsiFile..PsiFile?)>.childrenStubs: (MutableList<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>..List<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiFile..PsiFile?)> -> (com.intellij.psi.PsiFile..com.intellij.psi.PsiFile?)
+    <T : (PsiFile..PsiFile?)> -> Captured(*)
 
 'firstOrNull' @ [78:66] ==> public inline fun <T> Iterable<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>.firstOrNull(predicate: (raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)) -> Boolean): raw (StubElement<(PsiElement..PsiElement?)>?..StubElement<*>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -156,11 +154,11 @@ Inferred types:
 
 'classStub' @ [81:67] ==> val classStub: KotlinClassStub defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.BuiltInDecompilerConsistencyTest.doTest[LocalVariableDescriptor]
 
-'serializeToString' @ [81:77] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'serializeToString' @ [81:77] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file AbstractClsStubBuilderTest.kt[SimpleFunctionDescriptorImpl]
 
 'builtInClassStub' @ [81:98] ==> val builtInClassStub: (StubElement<(PsiElement..PsiElement?)>..StubElement<*>) defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.BuiltInDecompilerConsistencyTest.doTest[LocalVariableDescriptor]
 
-'serializeToString' @ [81:115] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'serializeToString' @ [81:115] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file AbstractClsStubBuilderTest.kt[SimpleFunctionDescriptorImpl]
 
 'classesEncountered' @ [82:13] ==> val classesEncountered: ArrayList<FqName> /* = ArrayList<FqName> */ defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.BuiltInDecompilerConsistencyTest.doTest[LocalVariableDescriptor]
 

@@ -114,7 +114,7 @@ Inferred types:
 
 'casted' @ [74:43] ==> val casted: DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.ConvertClassToKClassFix.Factory.doCreateActions[LocalVariableDescriptor]
 
-'a' @ [74:50] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'a' @ [74:50] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -140,7 +140,7 @@ Inferred types:
 
 'casted' @ [77:27] ==> val casted: DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.ConvertClassToKClassFix.Factory.doCreateActions[LocalVariableDescriptor]
 
-'psiElement' @ [77:34] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.psiElement: (KtElement..KtElement?)[MyPropertyDescriptor]
+'psiElement' @ [77:34] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.psiElement: KtElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -162,7 +162,7 @@ Inferred types:
 
 'casted' @ [78:60] ==> val casted: DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.ConvertClassToKClassFix.Factory.doCreateActions[LocalVariableDescriptor]
 
-'a' @ [78:67] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'a' @ [78:67] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)

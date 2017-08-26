@@ -200,22 +200,22 @@ Inferred types:
 
 'caretOffset' @ [68:93] ==> public final val JavaCodeInsightTestFixture.caretOffset: Int[MyPropertyDescriptor]
 
-'map' @ [68:108] ==> public inline fun <T, R> Iterable<(TemplateContextType..TemplateContextType?)>.map(transform: ((TemplateContextType..TemplateContextType?)) -> Class<out TemplateContextType>): List<Class<out TemplateContextType>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [68:108] ==> public inline fun <T, R> Iterable<(TemplateContextType..TemplateContextType?)>.map(transform: ((TemplateContextType..TemplateContextType?)) -> Class<out (TemplateContextType..TemplateContextType?)>): List<Class<out (TemplateContextType..TemplateContextType?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.intellij.codeInsight.template.TemplateContextType..com.intellij.codeInsight.template.TemplateContextType?)
-    <R> -> Class<out TemplateContextType>
+    <R> -> Class<out (com.intellij.codeInsight.template.TemplateContextType..com.intellij.codeInsight.template.TemplateContextType?)>
 
 'it' @ [68:114] ==> value-parameter it: (TemplateContextType..TemplateContextType?) defined in org.jetbrains.kotlin.idea.liveTemplates.LiveTemplatesContextTest.assertInContexts.<anonymous>[ValueParameterDescriptorImpl]
 
-'java' @ [68:124] ==> public val <T> KClass<out TemplateContextType>.java: Class<out TemplateContextType> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [68:124] ==> public val <T> KClass<out (TemplateContextType..TemplateContextType?)>.java: Class<out (TemplateContextType..TemplateContextType?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> TemplateContextType
+    <T> -> Captured(out (com.intellij.codeInsight.template.TemplateContextType..com.intellij.codeInsight.template.TemplateContextType?))
 
-'assertSameElements' @ [69:24] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (Class<out TemplateContextType>..Class<out TemplateContextType>?)>..Collection<(Class<out TemplateContextType>..Class<out TemplateContextType>?)>), @NotNull vararg p1: (Class<out TemplateContextType>..Class<out TemplateContextType>?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
+'assertSameElements' @ [69:24] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (Class<out (TemplateContextType..TemplateContextType?)>..Class<out (TemplateContextType..TemplateContextType?)>?)>..Collection<(Class<out (TemplateContextType..TemplateContextType?)>..Class<out (TemplateContextType..TemplateContextType?)>?)>), @NotNull vararg p1: (Class<out (TemplateContextType..TemplateContextType?)>..Class<out (TemplateContextType..TemplateContextType?)>?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Class<out TemplateContextType>
+    <T : (Any..Any?)> -> (java.lang.Class<out (com.intellij.codeInsight.template.TemplateContextType..com.intellij.codeInsight.template.TemplateContextType?)>..java.lang.Class<out (com.intellij.codeInsight.template.TemplateContextType..com.intellij.codeInsight.template.TemplateContextType?)>?)
 
-'enabledContexts' @ [69:43] ==> val enabledContexts: List<Class<out TemplateContextType>> defined in org.jetbrains.kotlin.idea.liveTemplates.LiveTemplatesContextTest.assertInContexts[LocalVariableDescriptor]
+'enabledContexts' @ [69:43] ==> val enabledContexts: List<Class<out (TemplateContextType..TemplateContextType?)>> defined in org.jetbrains.kotlin.idea.liveTemplates.LiveTemplatesContextTest.assertInContexts[LocalVariableDescriptor]
 
 'expectedContexts' @ [69:61] ==> value-parameter vararg expectedContexts: Class<out KotlinTemplateContextType> defined in org.jetbrains.kotlin.idea.liveTemplates.LiveTemplatesContextTest.assertInContexts[ValueParameterDescriptorImpl]
 

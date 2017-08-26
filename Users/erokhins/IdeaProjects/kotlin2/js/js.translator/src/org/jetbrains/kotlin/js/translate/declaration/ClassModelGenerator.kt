@@ -55,8 +55,6 @@ Inferred types:
 
 'getContributedDescriptors' @ [54:18] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [54:44] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS' @ [54:65] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'mapNotNull' @ [55:18] ==> public inline fun <T, R : Any> Iterable<DeclarationDescriptor>.mapNotNull(transform: (DeclarationDescriptor) -> CallableMemberDescriptor?): List<CallableMemberDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -83,8 +81,6 @@ Inferred types:
 'it' @ [59:60] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator.copyDefaultMembers.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [59:63] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [59:75] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [59:84] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -136,8 +132,6 @@ Inferred types:
 
 'modality' @ [77:85] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [77:97] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [77:106] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'it' @ [77:118] ==> value-parameter it: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator.copyDefaultMembers.<anonymous>[ValueParameterDescriptorImpl]
@@ -165,8 +159,6 @@ Inferred types:
 'it' @ [84:13] ==> value-parameter it: (CallableMemberDescriptor..CallableMemberDescriptor?) defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator.hasImplementationInPrototype.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [84:16] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [84:28] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [84:37] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -468,23 +460,21 @@ Inferred types:
 
 'member' @ [159:28] ==> value-parameter member: CallableMemberDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator.findMemberToCopy[ValueParameterDescriptorImpl]
 
-'findNonRepeatingOverriddenDescriptors' @ [159:35] ==> private final fun <T : CallableMemberDescriptor> CallableMemberDescriptor.findNonRepeatingOverriddenDescriptors(getTypedOverriddenDescriptors: CallableMemberDescriptor.() -> Collection<CallableMemberDescriptor>, getOriginalDescriptor: CallableMemberDescriptor.() -> CallableMemberDescriptor): List<CallableMemberDescriptor> defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator[SimpleFunctionDescriptorImpl]
+'findNonRepeatingOverriddenDescriptors' @ [159:35] ==> private final fun <T : CallableMemberDescriptor> (CallableMemberDescriptor..CallableMemberDescriptor?).findNonRepeatingOverriddenDescriptors(getTypedOverriddenDescriptors: (CallableMemberDescriptor..CallableMemberDescriptor?).() -> Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>, getOriginalDescriptor: (CallableMemberDescriptor..CallableMemberDescriptor?).() -> (CallableMemberDescriptor..CallableMemberDescriptor?)): List<(CallableMemberDescriptor..CallableMemberDescriptor?)> defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : CallableMemberDescriptor> -> CallableMemberDescriptor
+    <T : CallableMemberDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
 'overriddenDescriptors' @ [159:75] ==> public final var CallableMemberDescriptor.overriddenDescriptors: (MutableCollection<out (CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>)[MyPropertyDescriptor]
 
 'original' @ [159:102] ==> public final val CallableMemberDescriptor.original: CallableMemberDescriptor[MyPropertyDescriptor]
 
-'singleOrNull' @ [160:37] ==> public inline fun <T> Iterable<CallableMemberDescriptor>.singleOrNull(predicate: (CallableMemberDescriptor) -> Boolean): CallableMemberDescriptor? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'singleOrNull' @ [160:37] ==> public inline fun <T> Iterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>.singleOrNull(predicate: ((CallableMemberDescriptor..CallableMemberDescriptor?)) -> Boolean): CallableMemberDescriptor? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CallableMemberDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
-'it' @ [160:52] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator.findMemberToCopy.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [160:52] ==> value-parameter it: (CallableMemberDescriptor..CallableMemberDescriptor?) defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator.findMemberToCopy.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [160:55] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [160:67] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [160:76] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -518,19 +508,19 @@ Inferred types:
 
 'member' @ [173:28] ==> value-parameter member: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator.findOptionalArgsMemberToCopy[ValueParameterDescriptorImpl]
 
-'findNonRepeatingOverriddenDescriptors' @ [173:35] ==> private final fun <T : CallableMemberDescriptor> FunctionDescriptor.findNonRepeatingOverriddenDescriptors(getTypedOverriddenDescriptors: FunctionDescriptor.() -> Collection<FunctionDescriptor>, getOriginalDescriptor: FunctionDescriptor.() -> FunctionDescriptor): List<FunctionDescriptor> defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator[SimpleFunctionDescriptorImpl]
+'findNonRepeatingOverriddenDescriptors' @ [173:35] ==> private final fun <T : CallableMemberDescriptor> (FunctionDescriptor..FunctionDescriptor?).findNonRepeatingOverriddenDescriptors(getTypedOverriddenDescriptors: (FunctionDescriptor..FunctionDescriptor?).() -> Collection<(FunctionDescriptor..FunctionDescriptor?)>, getOriginalDescriptor: (FunctionDescriptor..FunctionDescriptor?).() -> (FunctionDescriptor..FunctionDescriptor?)): List<(FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : CallableMemberDescriptor> -> FunctionDescriptor
+    <T : CallableMemberDescriptor> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'overriddenDescriptors' @ [173:75] ==> public final var FunctionDescriptor.overriddenDescriptors: (MutableCollection<out (FunctionDescriptor..FunctionDescriptor?)>..Collection<(FunctionDescriptor..FunctionDescriptor?)>)[MyPropertyDescriptor]
 
 'original' @ [173:102] ==> public final val FunctionDescriptor.original: FunctionDescriptor[MyPropertyDescriptor]
 
-'singleOrNull' @ [174:37] ==> public inline fun <T> Iterable<FunctionDescriptor>.singleOrNull(predicate: (FunctionDescriptor) -> Boolean): FunctionDescriptor? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'singleOrNull' @ [174:37] ==> public inline fun <T> Iterable<(FunctionDescriptor..FunctionDescriptor?)>.singleOrNull(predicate: ((FunctionDescriptor..FunctionDescriptor?)) -> Boolean): FunctionDescriptor? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> FunctionDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
-'it' @ [174:52] ==> value-parameter it: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator.findOptionalArgsMemberToCopy.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [174:52] ==> value-parameter it: (FunctionDescriptor..FunctionDescriptor?) defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator.findOptionalArgsMemberToCopy.<anonymous>[ValueParameterDescriptorImpl]
 
 'hasOrInheritsParametersWithDefaultValue' @ [174:55] ==> public fun FunctionDescriptor.hasOrInheritsParametersWithDefaultValue(): Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -794,8 +784,6 @@ Inferred types:
 'fromDescriptor' @ [246:47] ==> val fromDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.ClassModelGenerator.generateBridge[LocalVariableDescriptor]
 
 'modality' @ [246:62] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [246:74] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [246:83] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

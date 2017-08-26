@@ -13,8 +13,6 @@ Inferred types:
 
 'includeKotlinComparisons' @ [30:39] ==> value-parameter includeKotlinComparisons: Boolean defined in org.jetbrains.kotlin.js.resolve.JsPlatform.defaultImports.<anonymous>[ValueParameterDescriptorImpl]
 
-'ImportPath' @ [30:67] ==> public companion object defined in org.jetbrains.kotlin.resolve.ImportPath[FakeCallableDescriptorForObject]
-
 'fromString' @ [30:78] ==> @JvmStatic public final fun fromString(pathStr: String): ImportPath defined in org.jetbrains.kotlin.resolve.ImportPath.Companion[DeserializedSimpleFunctionDescriptor]
 
 'invoke' @ [33:91] ==> public abstract fun invoke(p1: (Boolean..Boolean?)): (List<ImportPath>..List<ImportPath>?) defined in org.jetbrains.kotlin.storage.MemoizedFunctionToNotNull[FunctionInvokeDescriptor]

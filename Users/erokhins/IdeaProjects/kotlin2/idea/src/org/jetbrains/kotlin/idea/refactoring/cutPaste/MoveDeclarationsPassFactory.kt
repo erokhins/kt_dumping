@@ -56,9 +56,7 @@ Inferred types:
 
 'getUserData' @ [60:33] ==> @Nullable public abstract fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(MoveDeclarationsEditorCookie..MoveDeclarationsEditorCookie?)>): MoveDeclarationsEditorCookie? defined in com.intellij.openapi.editor.Editor[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MoveDeclarationsEditorCookie
-
-'MoveDeclarationsEditorCookie' @ [60:45] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie..org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie?)
 
 'KEY' @ [60:74] ==> public final val KEY: Key<MoveDeclarationsEditorCookie> defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie.Companion[PropertyDescriptorImpl]
 
@@ -86,9 +84,7 @@ Inferred types:
 
 'putUserData' @ [67:24] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(MoveDeclarationsEditorCookie..MoveDeclarationsEditorCookie?)>, @Nullable p1: MoveDeclarationsEditorCookie?): Unit defined in com.intellij.openapi.editor.Editor[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MoveDeclarationsEditorCookie
-
-'MoveDeclarationsEditorCookie' @ [67:36] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie..org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie?)
 
 'KEY' @ [67:65] ==> public final val KEY: Key<MoveDeclarationsEditorCookie> defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie.Companion[PropertyDescriptorImpl]
 

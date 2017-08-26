@@ -91,7 +91,7 @@ Inferred types:
 
 'isReplScriptExecuting' @ [74:30] ==> @Volatile public final var isReplScriptExecuting: Boolean defined in org.jetbrains.kotlin.cli.jvm.repl.messages.ReplSystemInWrapper[PropertyDescriptorImpl]
 
-'unescapeLineBreaks' @ [75:13] ==> public fun unescapeLineBreaks(s: String): String defined in org.jetbrains.kotlin.cli.jvm.repl.messages[SimpleFunctionDescriptorImpl]
+'unescapeLineBreaks' @ [75:13] ==> public fun unescapeLineBreaks(s: String): String defined in org.jetbrains.kotlin.cli.jvm.repl.messages in file UnescapeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'unescapedXml' @ [75:32] ==> val unescapedXml: String defined in org.jetbrains.kotlin.cli.jvm.repl.messages.ReplSystemInWrapper.parseInput[LocalVariableDescriptor]
 

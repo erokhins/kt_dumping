@@ -81,7 +81,7 @@ Inferred types:
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
 
-'foldRight' @ [44:87] ==> public inline fun <T, R> List<(String..String?)>.foldRight(initial: String, operation: ((String..String?), String) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'foldRight' @ [44:87] ==> public inline fun <T, R> List<(String..String?)>.foldRight(initial: String, operation: ((String..String?), acc: String) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
     <R> -> String

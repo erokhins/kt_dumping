@@ -176,8 +176,6 @@ Inferred types:
 
 'PATCH_MASK' @ [82:77] ==> private const final val PATCH_MASK: Int defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfo.Version.Companion[PropertyDescriptorImpl]
 
-'Version' @ [84:25] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfo.Version[FakeCallableDescriptorForObject]
-
 'INFINITY' @ [84:33] ==> @JvmField public final val INFINITY: SinceKotlinInfo.Version defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfo.Version.Companion[PropertyDescriptorImpl]
 
 '+' @ [90:13] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
@@ -281,7 +279,7 @@ Inferred types:
 
 'java' @ [100:93] ==> public val <T> KClass<out MessageLite>.java: Class<out MessageLite> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> MessageLite
+    <T> -> Captured(out MessageLite)
 
 'table' @ [103:24] ==> value-parameter table: SinceKotlinInfoTable defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfo.Companion.create[ValueParameterDescriptorImpl]
 

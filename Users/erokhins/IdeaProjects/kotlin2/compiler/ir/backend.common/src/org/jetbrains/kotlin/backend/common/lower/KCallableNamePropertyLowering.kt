@@ -108,8 +108,6 @@ Inferred types:
 
 'add' @ [66:28] ==> public abstract fun add(element: IrStatement): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'IrConstImpl' @ [67:25] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
-
 'string' @ [67:37] ==> public final fun string(startOffset: Int, endOffset: Int, type: KotlinType, value: String): IrConstImpl<String> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
 'expression' @ [68:33] ==> value-parameter expression: IrCall defined in org.jetbrains.kotlin.backend.common.lower.KCallableNamePropertyTransformer.visitCall[ValueParameterDescriptorImpl]

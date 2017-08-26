@@ -59,10 +59,10 @@ Inferred types:
 
 'HashMap' @ [52:40] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?), K1 : (File..File?), V1 : (File..File?)>(p0: (MutableMap<out (File..File?), out (File..File?)>..Map<out (File..File?), (File..File?)>?)) defined in com.intellij.util.containers.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> File
-    <V : (Any..Any?)> -> File
-    <K1 : (K..K?)> -> File
-    <V1 : (V..V?)> -> File
+    <K : (Any..Any?)> -> (java.io.File..java.io.File?)
+    <V : (Any..Any?)> -> (java.io.File..java.io.File?)
+    <K1 : (K..K?)> -> (java.io.File..java.io.File?)
+    <V1 : (V..V?)> -> (java.io.File..java.io.File?)
 
 'copyTestSources' @ [52:48] ==> public fun copyTestSources(testDataDir: File, sourceDestinationDir: File, filePrefix: String): Map<File, File> defined in org.jetbrains.kotlin.incremental.testingUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -118,7 +118,7 @@ Inferred types:
 
 'workingDir' @ [62:126] ==> protected final var workingDir: File defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest[DeserializedPropertyDescriptor]
 
-'parseTestBuildLog' @ [63:29] ==> public fun parseTestBuildLog(file: File): List<BuildStep> defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'parseTestBuildLog' @ [63:29] ==> public fun parseTestBuildLog(file: File): List<BuildStep> defined in org.jetbrains.kotlin.incremental in file testLogsParsingUtil.kt[SimpleFunctionDescriptorImpl]
 
 'buildLogFile' @ [63:47] ==> val buildLogFile: File defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest.testFromJps[LocalVariableDescriptor]
 
@@ -179,7 +179,7 @@ Inferred types:
 
 'workingDir' @ [83:51] ==> protected final var workingDir: File defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest[DeserializedPropertyDescriptor]
 
-'mapWorkingToOriginalFile' @ [83:63] ==> val mapWorkingToOriginalFile: HashMap<File, File> defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest.testFromJps[LocalVariableDescriptor]
+'mapWorkingToOriginalFile' @ [83:63] ==> val mapWorkingToOriginalFile: HashMap<(File..File?), (File..File?)> defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest.testFromJps[LocalVariableDescriptor]
 
 'component1' @ [84:18] ==> public final operator fun component1(): ExitCode defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest.CompilationResult[SimpleFunctionDescriptorImpl]
 
@@ -504,6 +504,8 @@ Inferred types:
 
 'String' @ [157:31] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isNotEmpty' @ [157:39] ==> @InlineOnly public inline fun CharSequence.isNotEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'forEach' @ [157:51] ==> @HidesMembers public inline fun <T> Iterable<String>.forEach(action: (String) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -572,7 +574,7 @@ Inferred types:
 
 'this' @ [188:59] ==> <this> defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest.Companion.data.isValidTestDir[ReceiverParameterDescriptorImpl]
 
-'parseTestBuildLog' @ [189:33] ==> public fun parseTestBuildLog(file: File): List<BuildStep> defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'parseTestBuildLog' @ [189:33] ==> public fun parseTestBuildLog(file: File): List<BuildStep> defined in org.jetbrains.kotlin.incremental in file testLogsParsingUtil.kt[SimpleFunctionDescriptorImpl]
 
 'logFile' @ [189:51] ==> val logFile: File defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest.Companion.data.isValidTestDir[LocalVariableDescriptor]
 
@@ -620,14 +622,16 @@ Inferred types:
 Inferred types:
     <T> -> File
 
+'isValidTestDir' @ [199:35] ==> local final fun File.isValidTestDir(): Boolean defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest.Companion.data[SimpleFunctionDescriptorImpl]
+
 'map' @ [200:22] ==> public fun <T, R> Sequence<File>.map(transform: (File) -> Array<*>): Sequence<Array<*>> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
     <R> -> Array<*>
 
-'arrayOf' @ [200:44] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: {Serializable & Comparable<{File & String}>}): Array<{Serializable & Comparable<{File & String}>}> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [200:44] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: (Any..Any?)): Array<(Any..Any?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> {Serializable & Comparable<{File & String}>}
+    <reified @PureReifiable T> -> (kotlin.Any..kotlin.Any?)
 
 'it' @ [200:52] ==> value-parameter it: File defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest.Companion.data.<anonymous>[ValueParameterDescriptorImpl]
 

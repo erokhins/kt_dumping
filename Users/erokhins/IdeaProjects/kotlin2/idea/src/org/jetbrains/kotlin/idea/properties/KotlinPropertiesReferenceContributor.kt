@@ -6,7 +6,7 @@
 
 'psiElement' @ [27:34] ==> public open fun <T : (PsiElement..PsiElement?)> psiElement(p0: (Class<(KtStringTemplateExpression..KtStringTemplateExpression?)>..Class<(KtStringTemplateExpression..KtStringTemplateExpression?)>?)): (PsiElementPattern.Capture<(KtStringTemplateExpression..KtStringTemplateExpression?)>..PsiElementPattern.Capture<(KtStringTemplateExpression..KtStringTemplateExpression?)>?) defined in com.intellij.patterns.PlatformPatterns[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtStringTemplateExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtStringTemplateExpression..org.jetbrains.kotlin.psi.KtStringTemplateExpression?)
 
 'KtStringTemplateExpression' @ [27:45] ==> public constructor KtStringTemplateExpression(@NotNull p0: ASTNode) defined in org.jetbrains.kotlin.psi.KtStringTemplateExpression[JavaClassConstructorDescriptor]
 
@@ -22,7 +22,7 @@ Inferred types:
 
 'psiElement' @ [32:34] ==> public open fun <T : (PsiElement..PsiElement?)> psiElement(p0: (Class<(KtStringTemplateExpression..KtStringTemplateExpression?)>..Class<(KtStringTemplateExpression..KtStringTemplateExpression?)>?)): (PsiElementPattern.Capture<(KtStringTemplateExpression..KtStringTemplateExpression?)>..PsiElementPattern.Capture<(KtStringTemplateExpression..KtStringTemplateExpression?)>?) defined in com.intellij.patterns.PlatformPatterns[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtStringTemplateExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtStringTemplateExpression..org.jetbrains.kotlin.psi.KtStringTemplateExpression?)
 
 'KtStringTemplateExpression' @ [32:45] ==> public constructor KtStringTemplateExpression(@NotNull p0: ASTNode) defined in org.jetbrains.kotlin.psi.KtStringTemplateExpression[JavaClassConstructorDescriptor]
 

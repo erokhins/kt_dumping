@@ -1,8 +1,8 @@
 'KotlinAbstractUExpression' @ [26:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [27:30] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [27:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [27:35] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -14,9 +14,9 @@ Inferred types:
 
 'this' @ [27:87] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUArrayAccessExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [28:29] ==> internal fun <T> lz(initializer: () -> List<UExpression>): Lazy<List<UExpression>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [28:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UExpression>
+    <T> -> T
 
 'psi' @ [28:34] ==> public open val psi: KtArrayAccessExpression defined in org.jetbrains.uast.kotlin.KotlinUArrayAccessExpression[PropertyDescriptorImpl]
 

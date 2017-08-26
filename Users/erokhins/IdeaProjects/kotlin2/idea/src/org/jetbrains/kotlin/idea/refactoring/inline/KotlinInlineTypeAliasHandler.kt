@@ -110,7 +110,7 @@ Inferred types:
 Inferred types:
     <T> -> KtElement
 
-'highlightElements' @ [84:9] ==> public fun highlightElements(project: Project, editor: Editor?, elements: List<PsiElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.inline[SimpleFunctionDescriptorImpl]
+'highlightElements' @ [84:9] ==> public fun highlightElements(project: Project, editor: Editor?, elements: List<PsiElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.inline in file inlineUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [84:27] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineTypeAliasHandler.inlineElement[ValueParameterDescriptorImpl]
 
@@ -126,7 +126,7 @@ Inferred types:
 
 'size' @ [86:49] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'preProcessInternalUsages' @ [87:13] ==> internal fun preProcessInternalUsages(element: KtElement, usages: Collection<KtElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.inline[SimpleFunctionDescriptorImpl]
+'preProcessInternalUsages' @ [87:13] ==> internal fun preProcessInternalUsages(element: KtElement, usages: Collection<KtElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.inline in file inlineUtils.kt[SimpleFunctionDescriptorImpl]
 
 'aliasBody' @ [87:38] ==> val aliasBody: KtTypeReference defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineTypeAliasHandler.inlineElement[LocalVariableDescriptor]
 
@@ -134,7 +134,7 @@ Inferred types:
 
 '!' @ [90:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'showDialog' @ [90:14] ==> public fun showDialog(project: Project, name: String, title: String, declaration: KtNamedDeclaration, usages: List<KtElement>, helpTopic: String? = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.inline[SimpleFunctionDescriptorImpl]
+'showDialog' @ [90:14] ==> public fun showDialog(project: Project, name: String, title: String, declaration: KtNamedDeclaration, usages: List<KtElement>, helpTopic: String? = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.inline in file inlineUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [90:25] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineTypeAliasHandler.inlineElement[ValueParameterDescriptorImpl]
 
@@ -356,7 +356,7 @@ Inferred types:
 
 'call' @ [148:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [148:49] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -364,7 +364,7 @@ Inferred types:
 
 'typeArguments' @ [149:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'mapKeys' @ [150:22] ==> public inline fun <K, V, R> Map<out (TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>.mapKeys(transform: (Map.Entry<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>) -> TypeConstructor): Map<TypeConstructor, (KotlinType..KotlinType?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -548,7 +548,7 @@ Inferred types:
 
 'isHighlighting' @ [190:49] ==> val isHighlighting: Boolean defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineTypeAliasHandler.inlineElement[LocalVariableDescriptor]
 
-'highlightElements' @ [191:17] ==> public fun highlightElements(project: Project, editor: Editor?, elements: List<PsiElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.inline[SimpleFunctionDescriptorImpl]
+'highlightElements' @ [191:17] ==> public fun highlightElements(project: Project, editor: Editor?, elements: List<PsiElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.inline in file inlineUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [191:35] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineTypeAliasHandler.inlineElement[ValueParameterDescriptorImpl]
 

@@ -244,6 +244,8 @@ Inferred types:
     <T> -> JavaClass
     <R> -> Name
 
+'name' @ [147:45] ==> public abstract val name: Name defined in org.jetbrains.kotlin.load.java.structure.JavaClass[DeserializedPropertyDescriptor]
+
 'innerClasses' @ [150:13] ==> public final val innerClasses: Collection<JavaClass> defined in org.jetbrains.kotlin.javac.MockKotlinClassifier[PropertyDescriptorImpl]
 
 'find' @ [150:26] ==> @InlineOnly public inline fun <T> Iterable<JavaClass>.find(predicate: (JavaClass) -> Boolean): JavaClass? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -278,7 +280,7 @@ Inferred types:
 
 'containingKtFile' @ [183:32] ==> public final val KtClassOrObject.containingKtFile: KtFile[MyPropertyDescriptor]
 
-'tryToResolveInner' @ [185:5] ==> private fun tryToResolveInner(name: String, classOrObject: KtClassOrObject, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac[SimpleFunctionDescriptorImpl]
+'tryToResolveInner' @ [185:5] ==> private fun tryToResolveInner(name: String, classOrObject: KtClassOrObject, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac in file KotlinClassifiersCache.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [185:23] ==> value-parameter name: String defined in org.jetbrains.kotlin.javac.resolveSupertype[ValueParameterDescriptorImpl]
 
@@ -297,7 +299,7 @@ Inferred types:
 
 'ktFile' @ [186:5] ==> val ktFile: KtFile defined in org.jetbrains.kotlin.javac.resolveSupertype[LocalVariableDescriptor]
 
-'tryToResolvePackageClass' @ [186:12] ==> private fun KtFile.tryToResolvePackageClass(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac[SimpleFunctionDescriptorImpl]
+'tryToResolvePackageClass' @ [186:12] ==> private fun KtFile.tryToResolvePackageClass(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac in file KotlinClassifiersCache.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [186:37] ==> value-parameter name: String defined in org.jetbrains.kotlin.javac.resolveSupertype[ValueParameterDescriptorImpl]
 
@@ -312,7 +314,7 @@ Inferred types:
 
 'it' @ [186:75] ==> value-parameter it: JavaClass defined in org.jetbrains.kotlin.javac.resolveSupertype.<anonymous>[ValueParameterDescriptorImpl]
 
-'tryToResolveByFqName' @ [187:5] ==> public fun tryToResolveByFqName(name: String, javac: JavacWrapper): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'tryToResolveByFqName' @ [187:5] ==> public fun tryToResolveByFqName(name: String, javac: JavacWrapper): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [187:26] ==> value-parameter name: String defined in org.jetbrains.kotlin.javac.resolveSupertype[ValueParameterDescriptorImpl]
 
@@ -327,7 +329,7 @@ Inferred types:
 
 'ktFile' @ [188:5] ==> val ktFile: KtFile defined in org.jetbrains.kotlin.javac.resolveSupertype[LocalVariableDescriptor]
 
-'tryToResolveSingleTypeImport' @ [188:12] ==> private fun KtFile.tryToResolveSingleTypeImport(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac[SimpleFunctionDescriptorImpl]
+'tryToResolveSingleTypeImport' @ [188:12] ==> private fun KtFile.tryToResolveSingleTypeImport(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac in file KotlinClassifiersCache.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [188:41] ==> value-parameter name: String defined in org.jetbrains.kotlin.javac.resolveSupertype[ValueParameterDescriptorImpl]
 
@@ -344,7 +346,7 @@ Inferred types:
 
 'ktFile' @ [189:5] ==> val ktFile: KtFile defined in org.jetbrains.kotlin.javac.resolveSupertype[LocalVariableDescriptor]
 
-'tryToResolveTypeImportOnDemand' @ [189:12] ==> private fun KtFile.tryToResolveTypeImportOnDemand(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac[SimpleFunctionDescriptorImpl]
+'tryToResolveTypeImportOnDemand' @ [189:12] ==> private fun KtFile.tryToResolveTypeImportOnDemand(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac in file KotlinClassifiersCache.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [189:43] ==> value-parameter name: String defined in org.jetbrains.kotlin.javac.resolveSupertype[ValueParameterDescriptorImpl]
 
@@ -359,7 +361,7 @@ Inferred types:
 
 'it' @ [189:81] ==> value-parameter it: JavaClass defined in org.jetbrains.kotlin.javac.resolveSupertype.<anonymous>[ValueParameterDescriptorImpl]
 
-'tryToResolveInJavaLang' @ [190:5] ==> public fun tryToResolveInJavaLang(name: String, javac: JavacWrapper): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'tryToResolveInJavaLang' @ [190:5] ==> public fun tryToResolveInJavaLang(name: String, javac: JavacWrapper): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [190:28] ==> value-parameter name: String defined in org.jetbrains.kotlin.javac.resolveSupertype[ValueParameterDescriptorImpl]
 
@@ -402,7 +404,7 @@ Inferred types:
 
 'it' @ [201:66] ==> value-parameter it: FqName defined in org.jetbrains.kotlin.javac.tryToResolveInner.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'findInner' @ [203:12] ==> public fun JavaClass.findInner(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'findInner' @ [203:12] ==> public fun JavaClass.findInner(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [203:22] ==> value-parameter name: String defined in org.jetbrains.kotlin.javac.tryToResolveInner[ValueParameterDescriptorImpl]
 
@@ -428,7 +430,7 @@ Inferred types:
 
 'size' @ [208:26] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'find' @ [209:9] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'find' @ [209:9] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'FqName' @ [209:14] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
@@ -534,7 +536,7 @@ Inferred types:
     <T> -> FqName
     <R> -> Nothing?
 
-'find' @ [224:17] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'find' @ [224:17] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'importedFqName' @ [224:22] ==> value-parameter importedFqName: FqName defined in org.jetbrains.kotlin.javac.tryToResolveSingleTypeImport.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -542,10 +544,10 @@ Inferred types:
 
 'nameParts' @ [224:45] ==> value-parameter nameParts: List<String> = ... defined in org.jetbrains.kotlin.javac.tryToResolveSingleTypeImport[ValueParameterDescriptorImpl]
 
-'let' @ [224:57] ==> @InlineOnly public inline fun <T, R> JavaClass.let(block: (JavaClass) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [224:57] ==> @InlineOnly public inline fun <T, R> JavaClass.let(block: (JavaClass) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JavaClass
-    <R> -> Nothing?
+    <R> -> Nothing
 
 'importedClass' @ [225:28] ==> value-parameter importedClass: JavaClass defined in org.jetbrains.kotlin.javac.tryToResolveSingleTypeImport.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -634,7 +636,7 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.KtImportDirective..org.jetbrains.kotlin.psi.KtImportDirective?)
 
-'find' @ [249:13] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'find' @ [249:13] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'FqName' @ [249:18] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
@@ -680,16 +682,18 @@ Inferred types:
     <T> -> String
     <R> -> FqName
 
+'FqName' @ [257:86] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
+
 'javac' @ [258:13] ==> value-parameter javac: JavacWrapper defined in org.jetbrains.kotlin.javac.tryToResolveTypeImportOnDemand[ValueParameterDescriptorImpl]
 
 'findClass' @ [258:19] ==> public final fun findClass(fqName: FqName, scope: GlobalSearchScope = ...): JavaClass? defined in org.jetbrains.kotlin.javac.JavacWrapper[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [258:29] ==> val fqName: FqName defined in org.jetbrains.kotlin.javac.tryToResolveTypeImportOnDemand.<anonymous>[LocalVariableDescriptor]
 
-'let' @ [258:38] ==> @InlineOnly public inline fun <T, R> JavaClass.let(block: (JavaClass) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [258:38] ==> @InlineOnly public inline fun <T, R> JavaClass.let(block: (JavaClass) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JavaClass
-    <R> -> Nothing?
+    <R> -> Nothing
 
 'it' @ [258:51] ==> value-parameter it: JavaClass defined in org.jetbrains.kotlin.javac.tryToResolveTypeImportOnDemand.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -699,10 +703,10 @@ Inferred types:
 
 'fqName' @ [258:85] ==> val fqName: FqName defined in org.jetbrains.kotlin.javac.tryToResolveTypeImportOnDemand.<anonymous>[LocalVariableDescriptor]
 
-'let' @ [258:94] ==> @InlineOnly public inline fun <T, R> JavaClass.let(block: (JavaClass) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [258:94] ==> @InlineOnly public inline fun <T, R> JavaClass.let(block: (JavaClass) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JavaClass
-    <R> -> Nothing?
+    <R> -> Nothing
 
 'it' @ [258:107] ==> value-parameter it: JavaClass defined in org.jetbrains.kotlin.javac.tryToResolveTypeImportOnDemand.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 

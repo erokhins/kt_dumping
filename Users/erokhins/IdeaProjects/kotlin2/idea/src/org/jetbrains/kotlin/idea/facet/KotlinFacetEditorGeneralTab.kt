@@ -117,8 +117,6 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> TargetPlatformKind<*>
 
-'TargetPlatformKind' @ [91:50] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'ALL_PLATFORMS' @ [91:69] ==> public final val ALL_PLATFORMS: List<TargetPlatformKind<*>> defined in org.jetbrains.kotlin.config.TargetPlatformKind.Companion[DeserializedPropertyDescriptor]
 
 'toTypedArray' @ [91:83] ==> public inline fun <reified T> Collection<TargetPlatformKind<*>>.toTypedArray(): Array<TargetPlatformKind<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -360,7 +358,7 @@ Inferred types:
 
 'OK' @ [155:124] ==> public final val OK: (ValidationResult..ValidationResult?) defined in com.intellij.facet.ui.ValidationResult[JavaPropertyDescriptor]
 
-'platform' @ [156:36] ==> val platform: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab.ArgumentConsistencyValidator.check[LocalVariableDescriptor]
+'platform' @ [156:36] ==> val platform: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab.ArgumentConsistencyValidator.check[LocalVariableDescriptor]
 
 'createCompilerArguments' @ [156:45] ==> public fun TargetPlatformKind<*>.createCompilerArguments(init: CommonCompilerArguments.() -> Unit = ...): CommonCompilerArguments defined in org.jetbrains.kotlin.config[DeserializedSimpleFunctionDescriptor]
 
@@ -441,7 +439,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> List<String>
 
-'platform' @ [170:43] ==> val platform: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab.ArgumentConsistencyValidator.check[LocalVariableDescriptor]
+'platform' @ [170:43] ==> val platform: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab.ArgumentConsistencyValidator.check[LocalVariableDescriptor]
 
 'jvmUIExposedFields' @ [171:46] ==> public val jvmUIExposedFields: List<String> defined in org.jetbrains.kotlin.idea.facet in file facetUtils.kt[PropertyDescriptorImpl]
 
@@ -874,12 +872,12 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> TargetPlatformKind<*>
 
-'let' @ [304:89] ==> @InlineOnly public inline fun <T, R> TargetPlatformKind<TargetPlatformVersion>.let(block: (TargetPlatformKind<TargetPlatformVersion>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [304:89] ==> @InlineOnly public inline fun <T, R> TargetPlatformKind<*>.let(block: (TargetPlatformKind<*>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TargetPlatformKind<TargetPlatformVersion>
+    <T> -> TargetPlatformKind<*>
     <R> -> Unit
 
-'it' @ [305:25] ==> value-parameter it: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab.apply.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [305:25] ==> value-parameter it: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab.apply.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'targetPlatformKind' @ [305:31] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
 
@@ -891,7 +889,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> CommonCompilerArguments?
 
-'it' @ [306:55] ==> value-parameter it: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab.apply.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [306:55] ==> value-parameter it: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab.apply.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'editor' @ [307:58] ==> public final val editor: KotlinFacetEditorGeneralTab.EditorComponent defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab[PropertyDescriptorImpl]
 
@@ -907,7 +905,7 @@ Inferred types:
 
 'compilerArguments' @ [311:25] ==> public final var compilerArguments: CommonCompilerArguments? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
 
-'it' @ [311:45] ==> value-parameter it: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab.apply.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [311:45] ==> value-parameter it: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetEditorGeneralTab.apply.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'createCompilerArguments' @ [311:48] ==> public fun TargetPlatformKind<*>.createCompilerArguments(init: CommonCompilerArguments.() -> Unit = ...): CommonCompilerArguments defined in org.jetbrains.kotlin.config[DeserializedSimpleFunctionDescriptor]
 

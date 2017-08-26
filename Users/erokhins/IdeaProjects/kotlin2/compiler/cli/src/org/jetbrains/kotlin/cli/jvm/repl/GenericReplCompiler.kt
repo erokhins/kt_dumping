@@ -166,6 +166,8 @@ Inferred types:
     <T> -> File
     <R> -> JvmClasspathRoot
 
+'JvmClasspathRoot' @ [75:115] ==> public constructor JvmClasspathRoot(file: File) defined in org.jetbrains.kotlin.cli.jvm.config.JvmClasspathRoot[ClassConstructorDescriptorImpl]
+
 'compilerState' @ [78:34] ==> val compilerState: GenericReplCompilerState defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplCompiler.compile.<anonymous>[LocalVariableDescriptor]
 
 'analyzerEngine' @ [78:48] ==> public final val analyzerEngine: ReplCodeAnalyzer defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplCompilerState[PropertyDescriptorImpl]
@@ -214,7 +216,7 @@ Inferred types:
 
 'java' @ [83:74] ==> public val <T> KClass<out ReplCodeAnalyzer.ReplLineAnalysisResult>.java: Class<out ReplCodeAnalyzer.ReplLineAnalysisResult> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ReplLineAnalysisResult
+    <T> -> Captured(out ReplLineAnalysisResult)
 
 'GenerationState' @ [86:35] ==> @JvmOverloads public constructor GenerationState(project: Project, builderFactory: ClassBuilderFactory, module: ModuleDescriptor, bindingContext: BindingContext, files: List<KtFile>, configuration: CompilerConfiguration, generateDeclaredClassFilter: GenerationState.GenerateClassFilter = ..., codegenFactory: CodegenFactory = ..., targetId: TargetId? = ..., moduleName: String? = ..., outDirectory: File? = ..., onIndependentPartCompilationEnd: GenerationStateEventCallback = ..., wantsDiagnostics: Boolean = ...) defined in org.jetbrains.kotlin.codegen.state.GenerationState[DeserializedClassConstructorDescriptor]
 

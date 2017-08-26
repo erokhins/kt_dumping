@@ -34,7 +34,7 @@ Inferred types:
     <K> -> (com.intellij.openapi.roots.libraries.Library..com.intellij.openapi.roots.libraries.Library?)
     <V> -> (kotlin.collections.MutableCollection<(com.intellij.openapi.module.Module..com.intellij.openapi.module.Module?)>..kotlin.collections.Collection<(com.intellij.openapi.module.Module..com.intellij.openapi.module.Module?)>?)
 
-'findAllUsedLibraries' @ [50:32] ==> public fun findAllUsedLibraries(project: Project): MultiMap<Library, Module> defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'findAllUsedLibraries' @ [50:32] ==> public fun findAllUsedLibraries(project: Project): MultiMap<Library, Module> defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [50:53] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.versions.findOutdatedKotlinLibraries[ValueParameterDescriptorImpl]
 
@@ -89,8 +89,6 @@ Inferred types:
 
 'library' @ [67:56] ==> value-parameter library: Library defined in org.jetbrains.kotlin.idea.versions.getKotlinLibraryVersion[ValueParameterDescriptorImpl]
 
-'JsLibraryStdDetectionUtil' @ [68:9] ==> public object JsLibraryStdDetectionUtil defined in org.jetbrains.kotlin.idea.framework[FakeCallableDescriptorForObject]
-
 'getJsLibraryStdVersion' @ [68:35] ==> public final fun getJsLibraryStdVersion(library: Library): String? defined in org.jetbrains.kotlin.idea.framework.JsLibraryStdDetectionUtil[DeserializedSimpleFunctionDescriptor]
 
 'library' @ [68:58] ==> value-parameter library: Library defined in org.jetbrains.kotlin.idea.versions.getKotlinLibraryVersion[ValueParameterDescriptorImpl]
@@ -128,11 +126,11 @@ Inferred types:
 
 'predicate' @ [74:26] ==> value-parameter predicate: (Library) -> Boolean = ... defined in org.jetbrains.kotlin.idea.versions.findKotlinRuntimeLibrary[ValueParameterDescriptorImpl]
 
-'isKotlinJavaRuntime' @ [77:41] ==> public fun isKotlinJavaRuntime(library: Library): Boolean defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'isKotlinJavaRuntime' @ [77:41] ==> public fun isKotlinJavaRuntime(library: Library): Boolean defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
 'library' @ [77:61] ==> value-parameter library: Library defined in org.jetbrains.kotlin.idea.versions.isKotlinRuntime[ValueParameterDescriptorImpl]
 
-'isKotlinJsRuntime' @ [77:73] ==> public fun isKotlinJsRuntime(library: Library): Boolean defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'isKotlinJsRuntime' @ [77:73] ==> public fun isKotlinJsRuntime(library: Library): Boolean defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
 'library' @ [77:91] ==> value-parameter library: Library defined in org.jetbrains.kotlin.idea.versions.isKotlinRuntime[ValueParameterDescriptorImpl]
 
@@ -248,7 +246,7 @@ Inferred types:
 
 'WARNING' @ [111:60] ==> enum entry WARNING defined in com.intellij.notification.NotificationType[FakeCallableDescriptorForObject]
 
-'NotificationListener' @ [111:69] ==> public fun NotificationListener(function: (Notification, HyperlinkEvent) -> Unit): NotificationListener defined in com.intellij.notification[SimpleFunctionDescriptorImpl]
+'NotificationListener' @ [111:69] ==> public fun NotificationListener(function: (Notification, HyperlinkEvent) -> Unit): NotificationListener defined in com.intellij.notification[SamConstructorDescriptorImpl]
 
 'event' @ [112:13] ==> value-parameter event: HyperlinkEvent defined in org.jetbrains.kotlin.idea.versions.notifyOutdatedKotlinRuntime.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -279,7 +277,7 @@ Inferred types:
 
 'description' @ [114:35] ==> public final val HyperlinkEvent.description: (String..String?)[MyPropertyDescriptor]
 
-'findOutdatedKotlinLibraries' @ [115:45] ==> public fun findOutdatedKotlinLibraries(project: Project): List<VersionedLibrary> defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'findOutdatedKotlinLibraries' @ [115:45] ==> public fun findOutdatedKotlinLibraries(project: Project): List<VersionedLibrary> defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [115:73] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.versions.notifyOutdatedKotlinRuntime[ValueParameterDescriptorImpl]
 
@@ -296,7 +294,7 @@ Inferred types:
 
 'invokeLater' @ [116:57] ==> public final fun invokeLater(@NotNull p0: () -> Unit): Unit defined in com.intellij.openapi.application.Application[MyFunctionDescriptor]
 
-'updateLibraries' @ [117:25] ==> public fun updateLibraries(project: Project, libraries: Collection<Library>): Unit defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'updateLibraries' @ [117:25] ==> public fun updateLibraries(project: Project, libraries: Collection<Library>): Unit defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [117:41] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.versions.notifyOutdatedKotlinRuntime[ValueParameterDescriptorImpl]
 

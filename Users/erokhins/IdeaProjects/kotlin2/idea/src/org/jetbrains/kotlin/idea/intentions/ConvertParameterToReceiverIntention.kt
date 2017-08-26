@@ -44,7 +44,7 @@ Inferred types:
 
 'originalDescriptor' @ [43:24] ==> value-parameter originalDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.intentions.ConvertParameterToReceiverIntention.configureChangeSignature.<no name provided>.configure[ValueParameterDescriptorImpl]
 
-'modify' @ [43:43] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'modify' @ [43:43] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [43:52] ==> value-parameter it: KotlinMutableMethodDescriptor defined in org.jetbrains.kotlin.idea.intentions.ConvertParameterToReceiverIntention.configureChangeSignature.<no name provided>.configure.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -1,7 +1,7 @@
 'WeakHashMap' @ [43:76] ==> public constructor WeakHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.WeakHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> DeclarationDescriptor
-    <V : (Any..Any?)> -> SuggestedName
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <V : (Any..Any?)> -> SuggestedName?
 
 'cache' @ [64:54] ==> private final val cache: MutableMap<DeclarationDescriptor, SuggestedName?> defined in org.jetbrains.kotlin.js.naming.NameSuggestion[PropertyDescriptorImpl]
 
@@ -167,6 +167,8 @@ Inferred types:
     <R> -> String
 
 'Name' @ [89:72] ==> private constructor Name(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.name.Name[JavaClassConstructorDescriptor]
+
+'asString' @ [89:78] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
 'descriptor' @ [89:95] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.js.naming.NameSuggestion.generate[ValueParameterDescriptorImpl]
 
@@ -950,7 +952,7 @@ Inferred types:
 
 'it' @ [349:48] ==> value-parameter it: Char defined in org.jetbrains.kotlin.js.naming.NameSuggestion.Companion.sanitizeName.<anonymous>[ValueParameterDescriptorImpl]
 
-'isES5IdentifierStart' @ [349:51] ==> public fun Char.isES5IdentifierStart(): Boolean defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'isES5IdentifierStart' @ [349:51] ==> public fun Char.isES5IdentifierStart(): Boolean defined in org.jetbrains.kotlin.js.naming in file NameSuggestion.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [349:75] ==> value-parameter it: Char defined in org.jetbrains.kotlin.js.naming.NameSuggestion.Companion.sanitizeName.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -972,7 +974,7 @@ Inferred types:
 
 'it' @ [350:62] ==> value-parameter it: Char defined in org.jetbrains.kotlin.js.naming.NameSuggestion.Companion.sanitizeName.<anonymous>[ValueParameterDescriptorImpl]
 
-'isES5IdentifierPart' @ [350:65] ==> public fun Char.isES5IdentifierPart(): Boolean defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'isES5IdentifierPart' @ [350:65] ==> public fun Char.isES5IdentifierPart(): Boolean defined in org.jetbrains.kotlin.js.naming in file NameSuggestion.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [350:88] ==> value-parameter it: Char defined in org.jetbrains.kotlin.js.naming.NameSuggestion.Companion.sanitizeName.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -998,7 +1000,7 @@ Inferred types:
 
 'this' @ [361:9] ==> <this> defined in org.jetbrains.kotlin.js.naming.isES5IdentifierStart[ReceiverParameterDescriptorImpl]
 
-'isES5IdentifierStart' @ [364:9] ==> public fun Char.isES5IdentifierStart(): Boolean defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'isES5IdentifierStart' @ [364:9] ==> public fun Char.isES5IdentifierStart(): Boolean defined in org.jetbrains.kotlin.js.naming in file NameSuggestion.kt[SimpleFunctionDescriptorImpl]
 
 'when (Character.getType(this).toByte()) {
             Character.NON_SPACING_MARK,
@@ -1032,7 +1034,7 @@ Inferred types:
 
 'first' @ [377:9] ==> public fun CharSequence.first(): Char defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'isES5IdentifierStart' @ [377:17] ==> public fun Char.isES5IdentifierStart(): Boolean defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'isES5IdentifierStart' @ [377:17] ==> public fun Char.isES5IdentifierStart(): Boolean defined in org.jetbrains.kotlin.js.naming in file NameSuggestion.kt[SimpleFunctionDescriptorImpl]
 
 'drop' @ [378:9] ==> public fun String.drop(n: Int): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -1040,5 +1042,5 @@ Inferred types:
 
 'it' @ [378:23] ==> value-parameter it: Char defined in org.jetbrains.kotlin.js.naming.isValidES5Identifier.<anonymous>[ValueParameterDescriptorImpl]
 
-'isES5IdentifierPart' @ [378:26] ==> public fun Char.isES5IdentifierPart(): Boolean defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'isES5IdentifierPart' @ [378:26] ==> public fun Char.isES5IdentifierPart(): Boolean defined in org.jetbrains.kotlin.js.naming in file NameSuggestion.kt[SimpleFunctionDescriptorImpl]
 

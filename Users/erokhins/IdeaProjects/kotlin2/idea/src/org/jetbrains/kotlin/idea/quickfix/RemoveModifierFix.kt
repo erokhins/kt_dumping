@@ -92,7 +92,7 @@ Inferred types:
 
 'getParentElementOfType' @ [74:58] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtModifierListOwner..KtModifierListOwner?)>..Class<(KtModifierListOwner..KtModifierListOwner?)>?)): KtModifierListOwner? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtModifierListOwner
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtModifierListOwner..org.jetbrains.kotlin.psi.KtModifierListOwner?)
 
 'diagnostic' @ [74:81] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix.Companion.createRemoveModifierFromListOwnerFactory.<no name provided>.createAction[ValueParameterDescriptorImpl]
 

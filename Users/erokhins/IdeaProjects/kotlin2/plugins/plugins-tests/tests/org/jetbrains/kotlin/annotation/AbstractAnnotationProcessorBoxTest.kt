@@ -134,8 +134,6 @@ Inferred types:
 
 'stubsDir' @ [64:63] ==> val stubsDir: File defined in org.jetbrains.kotlin.annotation.AbstractAnnotationProcessorBoxTest.doTest[LocalVariableDescriptor]
 
-'MessageCollector' @ [64:73] ==> public companion object defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector[FakeCallableDescriptorForObject]
-
 'NONE' @ [64:90] ==> public final val NONE: MessageCollector defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector.Companion[DeserializedPropertyDescriptor]
 
 'AnalysisHandlerExtension' @ [65:13] ==> public companion object : ProjectExtensionDescriptor<AnalysisHandlerExtension> defined in org.jetbrains.kotlin.resolve.jvm.extensions.AnalysisHandlerExtension[FakeCallableDescriptorForObject]

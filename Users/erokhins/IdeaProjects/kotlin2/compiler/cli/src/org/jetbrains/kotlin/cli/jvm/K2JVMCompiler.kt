@@ -14,7 +14,7 @@ Inferred types:
 
 'getNotNull' @ [67:46] ==> @NotNull public open fun <T : (Any..Any?)> getNotNull(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>): MessageCollector defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [67:78] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -159,9 +159,7 @@ Inferred types:
 
 'put' @ [106:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [106:27] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [106:51] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -217,7 +215,7 @@ Inferred types:
 
 'put' @ [118:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'INCLUDE_RUNTIME' @ [118:52] ==> public final val INCLUDE_RUNTIME: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -233,9 +231,9 @@ Inferred types:
 
 'configuration' @ [122:13] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute[ValueParameterDescriptorImpl]
 
-'put' @ [122:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(List<String>..List<(String..String?)>?)>, @NotNull p1: (List<String>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
+'put' @ [122:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableList<(String..String?)>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<(kotlin.String..kotlin.String?)>)
+    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(kotlin.String..kotlin.String?)>..kotlin.collections.List<(kotlin.String..kotlin.String?)>?)
 
 'FRIEND_PATHS' @ [122:52] ==> public final val FRIEND_PATHS: (CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>..CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -269,7 +267,7 @@ Inferred types:
 
 'put' @ [128:31] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(JvmTarget..JvmTarget?)>, @NotNull p1: JvmTarget): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JvmTarget
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.JvmTarget..org.jetbrains.kotlin.config.JvmTarget?)
 
 'JVM_TARGET' @ [128:56] ==> public final val JVM_TARGET: (CompilerConfigurationKey<(JvmTarget..JvmTarget?)>..CompilerConfigurationKey<(JvmTarget..JvmTarget?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -303,7 +301,7 @@ Inferred types:
 
 'put' @ [136:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'PARAMETERS_METADATA' @ [136:48] ==> public final val PARAMETERS_METADATA: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -419,6 +417,8 @@ Inferred types:
 
 'VERBOSE' @ [145:86] ==> public final val VERBOSE: (EnumSet<(CompilerMessageSeverity..CompilerMessageSeverity?)>..EnumSet<(CompilerMessageSeverity..CompilerMessageSeverity?)>?) defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageSeverity[JavaPropertyDescriptor]
 
+'contains' @ [145:95] ==> public open fun contains(element: (CompilerMessageSeverity..CompilerMessageSeverity?)): Boolean defined in java.util.EnumSet[JavaMethodDescriptor]
+
 'loadModuleDescriptions' @ [146:59] ==> @NotNull public open fun loadModuleDescriptions(moduleDefinitionFile: (String..String?), messageCollector: (MessageCollector..MessageCollector?)): ModuleScriptData defined in org.jetbrains.kotlin.cli.jvm.compiler.CompileEnvironmentUtil[JavaMethodDescriptor]
 
 'arguments' @ [146:82] ==> value-parameter arguments: K2JVMCompilerArguments defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute[ValueParameterDescriptorImpl]
@@ -463,7 +463,7 @@ Inferred types:
 
 'put' @ [159:31] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(File..File?)>, @NotNull p1: File): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'MODULE_XML_FILE' @ [159:56] ==> public final val MODULE_XML_FILE: (CompilerConfigurationKey<(File..File?)>..CompilerConfigurationKey<(File..File?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -497,8 +497,6 @@ Inferred types:
 'it' @ [165:26] ==> value-parameter it: Boolean defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute.<anonymous>[ValueParameterDescriptorImpl]
 
 'COMPILATION_ERROR' @ [165:37] ==> enum entry COMPILATION_ERROR defined in org.jetbrains.kotlin.cli.common.ExitCode[FakeCallableDescriptorForObject]
-
-'KotlinToJVMBytecodeCompiler' @ [168:17] ==> public object KotlinToJVMBytecodeCompiler defined in org.jetbrains.kotlin.cli.jvm.compiler in file KotlinToJVMBytecodeCompiler.kt[FakeCallableDescriptorForObject]
 
 'compileModules' @ [168:45] ==> public final fun compileModules(environment: KotlinCoreEnvironment, directory: File): Boolean defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler[SimpleFunctionDescriptorImpl]
 
@@ -584,7 +582,7 @@ Inferred types:
 
 'put' @ [174:31] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'RETAIN_OUTPUT_IN_MEMORY' @ [174:56] ==> public final val RETAIN_OUTPUT_IN_MEMORY: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -600,7 +598,9 @@ Inferred types:
 
 'COMPILATION_ERROR' @ [177:45] ==> enum entry COMPILATION_ERROR defined in org.jetbrains.kotlin.cli.common.ExitCode[FakeCallableDescriptorForObject]
 
-'KotlinScriptDefinitionProvider' @ [179:48] ==> public companion object defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider[FakeCallableDescriptorForObject]
+'!!' @ [179:48] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KotlinScriptDefinitionProvider?): KotlinScriptDefinitionProvider[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KotlinScriptDefinitionProvider
 
 'getInstance' @ [179:79] ==> @JvmStatic public final fun getInstance(project: Project): KotlinScriptDefinitionProvider? defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -635,7 +635,7 @@ Inferred types:
 
 'get' @ [183:47] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>): (MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>?..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?) defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)>..kotlin.collections.List<(org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)>)
+    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)>..kotlin.collections.List<(org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)>?)
 
 'SCRIPT_DEFINITIONS' @ [183:72] ==> public final val SCRIPT_DEFINITIONS: (CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>..CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -694,7 +694,7 @@ Inferred types:
 
 'put' @ [195:39] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(File..File?)>, @NotNull p1: File): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'OUTPUT_JAR' @ [195:64] ==> public final val OUTPUT_JAR: (CompilerConfigurationKey<(File..File?)>..CompilerConfigurationKey<(File..File?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -706,7 +706,7 @@ Inferred types:
 
 'put' @ [198:39] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(File..File?)>, @NotNull p1: File): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'OUTPUT_DIRECTORY' @ [198:64] ==> public final val OUTPUT_DIRECTORY: (CompilerConfigurationKey<(File..File?)>..CompilerConfigurationKey<(File..File?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -838,7 +838,7 @@ Inferred types:
 
 'put' @ [244:39] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'USE_JAVAC' @ [244:64] ==> public final val USE_JAVAC: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -931,6 +931,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [270:124] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'environment' @ [271:24] ==> val environment: KotlinCoreEnvironment defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.createEnvironmentWithScriptingSupport[LocalVariableDescriptor]
 
 'KotlinCoreEnvironment' @ [278:22] ==> public companion object defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[FakeCallableDescriptorForObject]
@@ -986,9 +988,7 @@ Inferred types:
 
 'put' @ [293:31] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(LookupTracker..LookupTracker?)>, @NotNull p1: LookupTracker): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LookupTracker
-
-'CommonConfigurationKeys' @ [293:35] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.incremental.components.LookupTracker..org.jetbrains.kotlin.incremental.components.LookupTracker?)
 
 'LOOKUP_TRACKER' @ [293:59] ==> @field:JvmField public final val LOOKUP_TRACKER: CompilerConfigurationKey<(LookupTracker..LookupTracker?)> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -1013,7 +1013,7 @@ Inferred types:
 
 'put' @ [297:31] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(IncrementalCompilationComponents..IncrementalCompilationComponents?)>, @NotNull p1: IncrementalCompilationComponents): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IncrementalCompilationComponents
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.incremental.components.IncrementalCompilationComponents..org.jetbrains.kotlin.load.kotlin.incremental.components.IncrementalCompilationComponents?)
 
 'INCREMENTAL_COMPILATION_COMPONENTS' @ [297:56] ==> public final val INCREMENTAL_COMPILATION_COMPONENTS: (CompilerConfigurationKey<(IncrementalCompilationComponents..IncrementalCompilationComponents?)>..CompilerConfigurationKey<(IncrementalCompilationComponents..IncrementalCompilationComponents?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1032,7 +1032,7 @@ Inferred types:
 
 'addAll' @ [302:27] ==> public open fun <T : (Any..Any?)> addAll(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableCollection<(String..String?)>..Collection<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'ADDITIONAL_JAVA_MODULES' @ [302:55] ==> public final val ADDITIONAL_JAVA_MODULES: (CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>..CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1089,7 +1089,7 @@ Inferred types:
 
 'getNotNull' @ [333:27] ==> @NotNull public open fun <T : (Any..Any?)> getNotNull(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>): MessageCollector defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [333:59] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1168,7 +1168,7 @@ Inferred types:
 
 'put' @ [354:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'DISABLE_CALL_ASSERTIONS' @ [354:52] ==> public final val DISABLE_CALL_ASSERTIONS: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1180,7 +1180,7 @@ Inferred types:
 
 'put' @ [355:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'DISABLE_PARAM_ASSERTIONS' @ [355:52] ==> public final val DISABLE_PARAM_ASSERTIONS: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1192,7 +1192,7 @@ Inferred types:
 
 'put' @ [356:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'DISABLE_OPTIMIZATION' @ [356:52] ==> public final val DISABLE_OPTIMIZATION: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1204,7 +1204,7 @@ Inferred types:
 
 'put' @ [357:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'INHERIT_MULTIFILE_PARTS' @ [357:52] ==> public final val INHERIT_MULTIFILE_PARTS: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1216,7 +1216,7 @@ Inferred types:
 
 'put' @ [358:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'SKIP_RUNTIME_VERSION_CHECK' @ [358:52] ==> public final val SKIP_RUNTIME_VERSION_CHECK: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1228,7 +1228,7 @@ Inferred types:
 
 'put' @ [359:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'USE_FAST_CLASS_FILES_READING' @ [359:52] ==> public final val USE_FAST_CLASS_FILES_READING: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1246,7 +1246,7 @@ Inferred types:
 
 'getNotNull' @ [362:31] ==> @NotNull public open fun <T : (Any..Any?)> getNotNull(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>): MessageCollector defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [362:63] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1258,7 +1258,7 @@ Inferred types:
 
 'put' @ [366:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'ALLOW_KOTLIN_PACKAGE' @ [366:52] ==> public final val ALLOW_KOTLIN_PACKAGE: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1270,7 +1270,7 @@ Inferred types:
 
 'put' @ [367:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'REPORT_PERF' @ [367:52] ==> public final val REPORT_PERF: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1282,7 +1282,7 @@ Inferred types:
 
 'put' @ [368:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'USE_SINGLE_MODULE' @ [368:52] ==> public final val USE_SINGLE_MODULE: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1294,7 +1294,7 @@ Inferred types:
 
 'put' @ [369:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'ADD_BUILT_INS_FROM_COMPILER_TO_DEPENDENCIES' @ [369:52] ==> public final val ADD_BUILT_INS_FROM_COMPILER_TO_DEPENDENCIES: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1306,7 +1306,7 @@ Inferred types:
 
 'put' @ [370:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'CREATE_BUILT_INS_FROM_MODULE_DEPENDENCIES' @ [370:52] ==> public final val CREATE_BUILT_INS_FROM_MODULE_DEPENDENCIES: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1327,7 +1327,7 @@ Inferred types:
 
 'put' @ [372:67] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DECLARATIONS_JSON_PATH' @ [372:92] ==> public final val DECLARATIONS_JSON_PATH: (CompilerConfigurationKey<(String..String?)>..CompilerConfigurationKey<(String..String?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1337,7 +1337,7 @@ Inferred types:
 
 'getNotNull' @ [376:50] ==> @NotNull public open fun <T : (Any..Any?)> getNotNull(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>): MessageCollector defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [376:82] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1357,7 +1357,7 @@ Inferred types:
 
 'add' @ [378:31] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>, @NotNull p1: ContentRoot): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContentRoot
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.ContentRoot..org.jetbrains.kotlin.config.ContentRoot?)
 
 'CONTENT_ROOTS' @ [378:56] ==> public final val CONTENT_ROOTS: (CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>..CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1383,7 +1383,7 @@ Inferred types:
 
 'add' @ [382:31] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>, @NotNull p1: ContentRoot): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContentRoot
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.ContentRoot..org.jetbrains.kotlin.config.ContentRoot?)
 
 'CONTENT_ROOTS' @ [382:56] ==> public final val CONTENT_ROOTS: (CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>..CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1397,7 +1397,7 @@ Inferred types:
 
 'get' @ [385:47] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(File..File?)>): File? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'JDK_HOME' @ [385:72] ==> public final val JDK_HOME: (CompilerConfigurationKey<(File..File?)>..CompilerConfigurationKey<(File..File?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1442,7 +1442,7 @@ Inferred types:
 
 'add' @ [389:35] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>, @NotNull p1: ContentRoot): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContentRoot
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.ContentRoot..org.jetbrains.kotlin.config.ContentRoot?)
 
 'CONTENT_ROOTS' @ [389:60] ==> public final val CONTENT_ROOTS: (CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>..CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1454,7 +1454,7 @@ Inferred types:
 
 'add' @ [390:35] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'ADDITIONAL_JAVA_MODULES' @ [390:60] ==> public final val ADDITIONAL_JAVA_MODULES: (CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>..CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1464,7 +1464,7 @@ Inferred types:
 
 'add' @ [393:35] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>, @NotNull p1: ContentRoot): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContentRoot
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.ContentRoot..org.jetbrains.kotlin.config.ContentRoot?)
 
 'CONTENT_ROOTS' @ [393:60] ==> public final val CONTENT_ROOTS: (CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>..CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1480,15 +1480,15 @@ Inferred types:
 
 'addRoot' @ [398:17] ==> local final fun addRoot(moduleName: String, libraryName: String, getLibrary: (KotlinPaths) -> File, noLibraryArgument: String): Unit defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion.configureContentRoots[SimpleFunctionDescriptorImpl]
 
-'PathUtil' @ [398:42] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'KOTLIN_JAVA_STDLIB_JAR' @ [398:51] ==> public const final val KOTLIN_JAVA_STDLIB_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
+
+'getStdlibPath' @ [398:88] ==> @NotNull public abstract fun getStdlibPath(): File defined in org.jetbrains.kotlin.utils.KotlinPaths[JavaMethodDescriptor]
 
 'addRoot' @ [399:17] ==> local final fun addRoot(moduleName: String, libraryName: String, getLibrary: (KotlinPaths) -> File, noLibraryArgument: String): Unit defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion.configureContentRoots[SimpleFunctionDescriptorImpl]
 
-'PathUtil' @ [399:50] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'KOTLIN_JAVA_SCRIPT_RUNTIME_JAR' @ [399:59] ==> public const final val KOTLIN_JAVA_SCRIPT_RUNTIME_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
+
+'getScriptRuntimePath' @ [399:104] ==> @NotNull public abstract fun getScriptRuntimePath(): File defined in org.jetbrains.kotlin.utils.KotlinPaths[JavaMethodDescriptor]
 
 '!' @ [403:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -1504,9 +1504,9 @@ Inferred types:
 
 'addRoot' @ [404:17] ==> local final fun addRoot(moduleName: String, libraryName: String, getLibrary: (KotlinPaths) -> File, noLibraryArgument: String): Unit defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion.configureContentRoots[SimpleFunctionDescriptorImpl]
 
-'PathUtil' @ [404:43] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'KOTLIN_JAVA_REFLECT_JAR' @ [404:52] ==> public const final val KOTLIN_JAVA_REFLECT_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
+
+'getReflectPath' @ [404:90] ==> @NotNull public abstract fun getReflectPath(): File defined in org.jetbrains.kotlin.utils.KotlinPaths[JavaMethodDescriptor]
 
 'arguments' @ [410:21] ==> value-parameter arguments: K2JVMCompilerArguments defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion.setupJdkClasspathRoots[ValueParameterDescriptorImpl]
 
@@ -1579,8 +1579,6 @@ Inferred types:
 
 'jdkHome' @ [424:21] ==> val jdkHome: File defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion.setupJdkClasspathRoots[LocalVariableDescriptor]
 
-'PathUtil' @ [424:32] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'getJdkClassesRoots' @ [424:41] ==> @JvmStatic public final fun getJdkClassesRoots(jdkHome: File): List<File> defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedSimpleFunctionDescriptor]
 
 'jdkHome' @ [424:60] ==> val jdkHome: File defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion.setupJdkClasspathRoots[LocalVariableDescriptor]
@@ -1589,15 +1587,13 @@ Inferred types:
 
 'getProperty' @ [427:33] ==> public open fun getProperty(p0: (String..String?)): (String..String?) defined in java.lang.System[JavaMethodDescriptor]
 
-'PathUtil' @ [427:62] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'getJdkClassesRootsFromCurrentJre' @ [427:71] ==> @JvmStatic public final fun getJdkClassesRootsFromCurrentJre(): List<File> defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedSimpleFunctionDescriptor]
 
 'configuration' @ [430:17] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion.setupJdkClasspathRoots[ValueParameterDescriptorImpl]
 
 'put' @ [430:31] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(File..File?)>, @NotNull p1: File): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'JDK_HOME' @ [430:56] ==> public final val JDK_HOME: (CompilerConfigurationKey<(File..File?)>..CompilerConfigurationKey<(File..File?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1613,7 +1609,7 @@ Inferred types:
 
 'configuration' @ [433:21] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion.setupJdkClasspathRoots[ValueParameterDescriptorImpl]
 
-'addJvmClasspathRoots' @ [433:35] ==> public fun CompilerConfiguration.addJvmClasspathRoots(files: List<File>): Unit defined in org.jetbrains.kotlin.cli.jvm.config[SimpleFunctionDescriptorImpl]
+'addJvmClasspathRoots' @ [433:35] ==> public fun CompilerConfiguration.addJvmClasspathRoots(files: List<File>): Unit defined in org.jetbrains.kotlin.cli.jvm.config in file JvmContentRoots.kt[SimpleFunctionDescriptorImpl]
 
 'classesRoots' @ [433:56] ==> val classesRoots: List<File> defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion.setupJdkClasspathRoots[LocalVariableDescriptor]
 
@@ -1690,7 +1686,7 @@ Inferred types:
 
 'kotlin' @ [459:83] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'scriptResolverEnv' @ [459:103] ==> value-parameter scriptResolverEnv: HashMap<String, Any?> defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.Companion.configureScriptDefinitions[ValueParameterDescriptorImpl]
 
@@ -1698,7 +1694,7 @@ Inferred types:
 
 'add' @ [460:39] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>, @NotNull p1: KotlinScriptDefinition): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinScriptDefinition
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)
 
 'SCRIPT_DEFINITIONS' @ [460:64] ==> public final val SCRIPT_DEFINITIONS: (CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>..CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1768,7 +1764,7 @@ Inferred types:
 
 'add' @ [482:27] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>, @NotNull p1: KotlinScriptDefinition): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinScriptDefinition
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)
 
 'SCRIPT_DEFINITIONS' @ [482:52] ==> public final val SCRIPT_DEFINITIONS: (CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>..CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 

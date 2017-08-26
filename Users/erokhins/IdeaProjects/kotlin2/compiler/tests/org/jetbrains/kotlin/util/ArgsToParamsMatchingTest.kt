@@ -6,6 +6,8 @@
 
 'tryCreateCallableMappingFromStringArgs' @ [30:27] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
+'foo' @ [30:68] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
 'listOf' @ [30:73] ==> @InlineOnly public inline fun <T> listOf(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -14,13 +16,17 @@ Inferred types:
 
 'tryCreateCallableMappingFromStringArgs' @ [31:27] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
+'foo' @ [31:68] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
 'listOf' @ [31:73] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
-'assertParamMapsEquals' @ [33:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'assertParamMapsEquals' @ [33:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'tryCreateCallableMappingFromStringArgs' @ [33:31] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
+
+'foo' @ [33:72] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [33:77] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -52,6 +58,8 @@ Inferred types:
 
 'tryCreateCallableMappingFromStringArgs' @ [36:27] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
+'foo' @ [36:68] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
 'listOf' @ [36:73] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -59,6 +67,8 @@ Inferred types:
 'assertNull' @ [37:16] ==> public open fun assertNull(p0: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
 'tryCreateCallableMappingFromStringArgs' @ [37:27] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
+
+'foo' @ [37:68] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [37:73] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -68,13 +78,17 @@ Inferred types:
 
 'tryCreateCallableMappingFromStringArgs' @ [38:27] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
+'foo' @ [38:68] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
 'listOf' @ [38:73] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
-'assertParamMapsEquals' @ [40:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'assertParamMapsEquals' @ [40:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'tryCreateCallableMappingFromStringArgs' @ [40:31] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
+
+'foo' @ [40:72] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [40:77] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -125,6 +139,8 @@ Inferred types:
 
 'tryCreateCallableMappingFromStringArgs' @ [43:27] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
+'foo' @ [43:68] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
 'listOf' @ [43:73] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -132,6 +148,8 @@ Inferred types:
 'assertNull' @ [44:16] ==> public open fun assertNull(p0: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
 'tryCreateCallableMappingFromStringArgs' @ [44:27] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
+
+'foo' @ [44:68] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [44:73] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -141,13 +159,17 @@ Inferred types:
 
 'tryCreateCallableMappingFromStringArgs' @ [45:27] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
+'charArray' @ [45:68] ==> private fun charArray(c: CharArray): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
 'listOf' @ [45:79] ==> public fun <T> listOf(element: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
-'assertParamMapsEquals' @ [47:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'assertParamMapsEquals' @ [47:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'tryCreateCallableMappingFromStringArgs' @ [47:31] ==> public fun tryCreateCallableMappingFromStringArgs(callable: KCallable<*>, args: List<String>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
+
+'varargStrings' @ [47:72] ==> private fun varargStrings(vararg s: String): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [47:87] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -168,6 +190,8 @@ Inferred types:
 
 'tryCreateCallableMappingFromNamedArgs' @ [53:27] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
+'foo' @ [53:67] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
 'listOf' @ [53:72] ==> @InlineOnly public inline fun <T> listOf(): List<Pair<String?, Any?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<String?, Any?>
@@ -175,6 +199,8 @@ Inferred types:
 'assertNull' @ [54:16] ==> public open fun assertNull(p0: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
 'tryCreateCallableMappingFromNamedArgs' @ [54:27] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
+
+'foo' @ [54:67] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [54:72] ==> public fun <T> listOf(vararg elements: Pair<Nothing?, Int>): List<Pair<Nothing?, Int>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -190,13 +216,15 @@ Inferred types:
     <A> -> Nothing?
     <B> -> Int
 
-'assertParamMapsEquals' @ [56:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'assertParamMapsEquals' @ [56:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'tryCreateCallableMappingFromNamedArgs' @ [56:31] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
-'listOf' @ [56:76] ==> public fun <T> listOf(vararg elements: Pair<Nothing?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>): List<Pair<Nothing?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'foo' @ [56:71] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
+'listOf' @ [56:76] ==> public fun <T> listOf(vararg elements: Pair<Nothing?, Any>): List<Pair<Nothing?, Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Pair<Nothing?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>
+    <T> -> Pair<Nothing?, Any>
 
 'to' @ [56:83] ==> public infix fun <A, B> Nothing?.to(that: Int): Pair<Nothing?, Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -242,13 +270,15 @@ Inferred types:
     <A> -> String
     <B> -> Double
 
-'assertParamMapsEquals' @ [59:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'assertParamMapsEquals' @ [59:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'tryCreateCallableMappingFromNamedArgs' @ [59:31] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
-'listOf' @ [59:76] ==> public fun <T> listOf(vararg elements: Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>): List<Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'foo' @ [59:71] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
+'listOf' @ [59:76] ==> public fun <T> listOf(vararg elements: Pair<String?, Any>): List<Pair<String?, Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>
+    <T> -> Pair<String?, Any>
 
 'to' @ [59:83] ==> public infix fun <A, B> Nothing?.to(that: Int): Pair<Nothing?, Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -294,13 +324,15 @@ Inferred types:
     <A> -> String
     <B> -> Double
 
-'assertParamMapsEquals' @ [62:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'assertParamMapsEquals' @ [62:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'tryCreateCallableMappingFromNamedArgs' @ [62:31] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
-'listOf' @ [62:76] ==> public fun <T> listOf(vararg elements: Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>): List<Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'foo' @ [62:71] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
+'listOf' @ [62:76] ==> public fun <T> listOf(vararg elements: Pair<String?, Any>): List<Pair<String?, Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>
+    <T> -> Pair<String?, Any>
 
 'to' @ [62:83] ==> public infix fun <A, B> Nothing?.to(that: Int): Pair<Nothing?, Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -346,9 +378,11 @@ Inferred types:
     <A> -> String
     <B> -> Double
 
-'assertParamMapsEquals' @ [65:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'assertParamMapsEquals' @ [65:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'tryCreateCallableMappingFromNamedArgs' @ [65:31] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
+
+'foo' @ [65:71] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [65:76] ==> public fun <T> listOf(vararg elements: Pair<String?, Serializable>): List<Pair<String?, Serializable>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -420,9 +454,11 @@ Inferred types:
 
 'tryCreateCallableMappingFromNamedArgs' @ [68:27] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
-'listOf' @ [68:72] ==> public fun <T> listOf(vararg elements: Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>): List<Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'foo' @ [68:67] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
+'listOf' @ [68:72] ==> public fun <T> listOf(vararg elements: Pair<String?, Any>): List<Pair<String?, Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>
+    <T> -> Pair<String?, Any>
 
 'to' @ [68:79] ==> public infix fun <A, B> Nothing?.to(that: Int): Pair<Nothing?, Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -450,9 +486,11 @@ Inferred types:
 
 'tryCreateCallableMappingFromNamedArgs' @ [69:27] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
-'listOf' @ [69:72] ==> public fun <T> listOf(vararg elements: Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>): List<Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'foo' @ [69:67] ==> private fun foo(i: Int, b: Byte, c: Char, d: Double = ..., s: String = ..., t: Boolean = ..., vararg v: Long): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
+'listOf' @ [69:72] ==> public fun <T> listOf(vararg elements: Pair<String?, Any>): List<Pair<String?, Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Pair<String?, {java.io.Serializable & Comparable<{Byte & Char & Double & Int}>}>
+    <T> -> Pair<String?, Any>
 
 'to' @ [69:79] ==> public infix fun <A, B> Nothing?.to(that: Int): Pair<Nothing?, Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -480,6 +518,8 @@ Inferred types:
 
 'tryCreateCallableMappingFromNamedArgs' @ [71:27] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
+'notNullNumber' @ [71:67] ==> private fun notNullNumber(n: Number): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
+
 'listOf' @ [71:82] ==> public fun <T> listOf(element: Pair<Nothing?, Nothing?>): List<Pair<Nothing?, Nothing?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<Nothing?, Nothing?>
@@ -489,9 +529,11 @@ Inferred types:
     <A> -> Nothing?
     <B> -> Nothing?
 
-'assertParamMapsEquals' @ [72:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'assertParamMapsEquals' @ [72:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'tryCreateCallableMappingFromNamedArgs' @ [72:31] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
+
+'nullableNumber' @ [72:71] ==> private fun nullableNumber(n: Number?): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [72:87] ==> public fun <T> listOf(element: Pair<Nothing?, Nothing?>): List<Pair<Nothing?, Nothing?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -507,9 +549,11 @@ Inferred types:
     <A> -> String
     <B> -> Nothing?
 
-'assertParamMapsEquals' @ [74:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'assertParamMapsEquals' @ [74:9] ==> private fun assertParamMapsEquals(actuals: Map<KParameter, Any?>?, vararg expected: Pair<String, Any?>): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'tryCreateCallableMappingFromNamedArgs' @ [74:31] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
+
+'notNullNumber' @ [74:71] ==> private fun notNullNumber(n: Number): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [74:86] ==> public fun <T> listOf(element: Pair<Nothing?, Int>): List<Pair<Nothing?, Int>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -528,6 +572,8 @@ Inferred types:
 'assertNull' @ [76:16] ==> public open fun assertNull(p0: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
 'tryCreateCallableMappingFromNamedArgs' @ [76:27] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
+
+'notNullNumber' @ [76:67] ==> private fun notNullNumber(n: Number): Unit defined in org.jetbrains.kotlin.util in file ArgsToParamsMatchingTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [76:82] ==> public fun <T> listOf(element: Pair<Nothing?, String>): List<Pair<Nothing?, String>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

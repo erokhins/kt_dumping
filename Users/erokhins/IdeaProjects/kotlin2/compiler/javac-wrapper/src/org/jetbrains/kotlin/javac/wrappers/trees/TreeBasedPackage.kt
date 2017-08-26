@@ -8,9 +8,9 @@
 
 'fqName' @ [35:39] ==> public open val fqName: FqName defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedPackage[PropertyDescriptorImpl]
 
-'lazy' @ [37:38] ==> public fun <T> lazy(initializer: () -> VirtualFile?): Lazy<VirtualFile?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [37:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> VirtualFile?
+    <T> -> T
 
 'javac' @ [38:9] ==> public final val javac: JavacWrapper defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedPackage[PropertyDescriptorImpl]
 

@@ -5,7 +5,7 @@ Inferred types:
     <E : KtElement> -> E
     <D : Any> -> D
 
-'QuickFixWithDelegateFactory' @ [40:16] ==> public fun QuickFixWithDelegateFactory(priority: IntentionActionPriority, createAction: () -> IntentionAction?): QuickFixWithDelegateFactory defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'QuickFixWithDelegateFactory' @ [40:16] ==> public fun QuickFixWithDelegateFactory(priority: IntentionActionPriority, createAction: () -> IntentionAction?): QuickFixWithDelegateFactory defined in org.jetbrains.kotlin.idea.quickfix in file QuickFixWithDelegateFactory.kt[SimpleFunctionDescriptorImpl]
 
 'actionPriority' @ [40:44] ==> private final val actionPriority: IntentionActionPriority defined in org.jetbrains.kotlin.idea.quickfix.KotlinSingleIntentionActionFactoryWithDelegate[PropertyDescriptorImpl]
 
@@ -27,6 +27,10 @@ Inferred types:
 Inferred types:
     <T> -> QuickFixWithDelegateFactory
     <R> -> List<QuickFixWithDelegateFactory>
+
+'listOf' @ [44:17] ==> public fun <T> listOf(element: QuickFixWithDelegateFactory): List<QuickFixWithDelegateFactory> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> QuickFixWithDelegateFactory
 
 'KotlinIntentionActionsFactory' @ [48:83] ==> public constructor KotlinIntentionActionsFactory() defined in org.jetbrains.kotlin.idea.quickfix.KotlinIntentionActionsFactory[DeserializedClassConstructorDescriptor]
 
@@ -66,7 +70,7 @@ Inferred types:
 
 'create' @ [70:38] ==> public open fun <T : (Any..Any?)> create(@Nullable p0: D?): (Ref<(D..D?)>..Ref<(D..D?)>?) defined in com.intellij.openapi.util.Ref[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> D
+    <T : (Any..Any?)> -> (D..D?)
 
 'extractFixData' @ [70:45] ==> public abstract fun extractFixData(element: E, diagnostic: Diagnostic): D? defined in org.jetbrains.kotlin.idea.quickfix.KotlinIntentionActionFactoryWithDelegate[SimpleFunctionDescriptorImpl]
 

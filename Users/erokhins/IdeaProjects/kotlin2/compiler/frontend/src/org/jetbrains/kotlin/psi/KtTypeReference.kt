@@ -22,7 +22,7 @@ Inferred types:
 
 'getStubOrPsiChild' @ [42:34] ==> @Nullable public open fun <T : (KtElement..KtElement?)> getStubOrPsiChild(@NotNull element: KtElementImplStub<*>, @NotNull types: TokenSet, @NotNull factory: ArrayFactory<(KtTypeElement..KtTypeElement?)>): KtTypeElement? defined in org.jetbrains.kotlin.psi.KtStubbedPsiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (KtElement..KtElement?)> -> KtTypeElement
+    <T : (KtElement..KtElement?)> -> (org.jetbrains.kotlin.psi.KtTypeElement..org.jetbrains.kotlin.psi.KtTypeElement?)
 
 'this' @ [42:52] ==> <this> defined in org.jetbrains.kotlin.psi.KtTypeReference[LazyClassReceiverParameterDescriptor]
 

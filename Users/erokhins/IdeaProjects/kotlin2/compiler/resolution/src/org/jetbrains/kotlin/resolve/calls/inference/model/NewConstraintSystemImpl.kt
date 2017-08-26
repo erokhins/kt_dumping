@@ -4,7 +4,7 @@
 
 'SmartList' @ [53:74] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> NewTypeVariable
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.inference.model.NewTypeVariable..org.jetbrains.kotlin.resolve.calls.inference.model.NewTypeVariable?)
 
 'assert' @ [63:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -710,5 +710,5 @@ Inferred types:
 
 'storage' @ [256:16] ==> private final val storage: MutableConstraintStorage defined in org.jetbrains.kotlin.resolve.calls.inference.model.NewConstraintSystemImpl[PropertyDescriptorImpl]
 
-'buildCurrentSubstitutor' @ [256:24] ==> public fun ConstraintStorage.buildCurrentSubstitutor(): NewTypeSubstitutorByConstructorMap defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'buildCurrentSubstitutor' @ [256:24] ==> public fun ConstraintStorage.buildCurrentSubstitutor(): NewTypeSubstitutorByConstructorMap defined in org.jetbrains.kotlin.resolve.calls.inference in file InferenceUtils.kt[SimpleFunctionDescriptorImpl]
 

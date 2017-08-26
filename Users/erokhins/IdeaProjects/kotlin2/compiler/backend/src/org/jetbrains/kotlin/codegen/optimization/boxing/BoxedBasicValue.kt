@@ -88,7 +88,7 @@ Inferred types:
 
 'ArrayList' @ [79:13] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (Int..Int?)>..Collection<(Int..Int?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Int
+    <E : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'associatedVariables' @ [79:23] ==> private final val associatedVariables: HashSet<Int> defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxedValueDescriptor[PropertyDescriptorImpl]
 
@@ -114,8 +114,8 @@ Inferred types:
 
 'create' @ [97:40] ==> @NotNull public open fun <A : (Any..Any?), B : (Any..Any?)> create(p0: (AbstractInsnNode..AbstractInsnNode?), p1: (Type..Type?)): Pair<(AbstractInsnNode..AbstractInsnNode?), (Type..Type?)> defined in com.intellij.openapi.util.Pair[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> AbstractInsnNode
-    <B : (Any..Any?)> -> Type
+    <A : (Any..Any?)> -> (org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode..org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode?)
+    <B : (Any..Any?)> -> (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)
 
 'insn' @ [97:47] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxedValueDescriptor.addUnboxingWithCastTo[ValueParameterDescriptorImpl]
 

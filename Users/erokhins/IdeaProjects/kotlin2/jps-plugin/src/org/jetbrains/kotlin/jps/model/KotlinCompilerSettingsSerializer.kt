@@ -6,7 +6,7 @@
 
 'deserialize' @ [33:38] ==> @NotNull public open fun <T : (Any..Any?)> deserialize(@NotNull p0: Element, @NotNull p1: Class<(CompilerSettings..CompilerSettings?)>): CompilerSettings defined in com.intellij.util.xmlb.XmlSerializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CompilerSettings
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.CompilerSettings..org.jetbrains.kotlin.config.CompilerSettings?)
 
 'componentTag' @ [33:50] ==> value-parameter componentTag: Element defined in org.jetbrains.kotlin.jps.model.KotlinCompilerSettingsSerializer.loadExtension[ValueParameterDescriptorImpl]
 

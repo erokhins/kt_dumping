@@ -56,7 +56,9 @@ Inferred types:
 
 'FULL' @ [46:66] ==> enum entry FULL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
-'KotlinChangeSignatureHandler' @ [47:38] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureHandler[FakeCallableDescriptorForObject]
+'!!' @ [47:38] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: CallableDescriptor?): CallableDescriptor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> CallableDescriptor
 
 'findDescriptor' @ [47:67] ==> public final fun findDescriptor(element: PsiElement, project: Project, editor: Editor?, bindingContext: BindingContext): CallableDescriptor? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureHandler.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -134,8 +136,6 @@ Inferred types:
 
 'addParameter' @ [82:9] ==> private final fun KotlinChangeInfo.addParameter(name: String, type: KotlinType, defaultValue: String): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinMultiModuleChangeSignatureTest[SimpleFunctionDescriptorImpl]
 
-'KotlinChangeSignatureTest' @ [82:27] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest[FakeCallableDescriptorForObject]
-
 'BUILT_INS' @ [82:53] ==> internal final val BUILT_INS: DefaultBuiltIns defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest.Companion[PropertyDescriptorImpl]
 
 'intType' @ [82:63] ==> public final val DefaultBuiltIns.intType: SimpleType[MyPropertyDescriptor]
@@ -143,8 +143,6 @@ Inferred types:
 'doTest' @ [85:42] ==> private final fun doTest(filePath: String, configure: KotlinChangeInfo.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinMultiModuleChangeSignatureTest[SimpleFunctionDescriptorImpl]
 
 'addParameter' @ [86:9] ==> private final fun KotlinChangeInfo.addParameter(name: String, type: KotlinType, defaultValue: String): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinMultiModuleChangeSignatureTest[SimpleFunctionDescriptorImpl]
-
-'KotlinChangeSignatureTest' @ [86:27] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest[FakeCallableDescriptorForObject]
 
 'BUILT_INS' @ [86:53] ==> internal final val BUILT_INS: DefaultBuiltIns defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest.Companion[PropertyDescriptorImpl]
 
@@ -154,8 +152,6 @@ Inferred types:
 
 'addParameter' @ [90:9] ==> private final fun KotlinChangeInfo.addParameter(name: String, type: KotlinType, defaultValue: String): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinMultiModuleChangeSignatureTest[SimpleFunctionDescriptorImpl]
 
-'KotlinChangeSignatureTest' @ [90:27] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest[FakeCallableDescriptorForObject]
-
 'BUILT_INS' @ [90:53] ==> internal final val BUILT_INS: DefaultBuiltIns defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest.Companion[PropertyDescriptorImpl]
 
 'booleanType' @ [90:63] ==> public final val DefaultBuiltIns.booleanType: SimpleType[MyPropertyDescriptor]
@@ -163,8 +159,6 @@ Inferred types:
 'doTest' @ [93:48] ==> private final fun doTest(filePath: String, configure: KotlinChangeInfo.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinMultiModuleChangeSignatureTest[SimpleFunctionDescriptorImpl]
 
 'addParameter' @ [94:9] ==> private final fun KotlinChangeInfo.addParameter(name: String, type: KotlinType, defaultValue: String): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinMultiModuleChangeSignatureTest[SimpleFunctionDescriptorImpl]
-
-'KotlinChangeSignatureTest' @ [94:27] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest[FakeCallableDescriptorForObject]
 
 'BUILT_INS' @ [94:53] ==> internal final val BUILT_INS: DefaultBuiltIns defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest.Companion[PropertyDescriptorImpl]
 
@@ -174,8 +168,6 @@ Inferred types:
 
 'addParameter' @ [98:9] ==> private final fun KotlinChangeInfo.addParameter(name: String, type: KotlinType, defaultValue: String): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinMultiModuleChangeSignatureTest[SimpleFunctionDescriptorImpl]
 
-'KotlinChangeSignatureTest' @ [98:27] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest[FakeCallableDescriptorForObject]
-
 'BUILT_INS' @ [98:53] ==> internal final val BUILT_INS: DefaultBuiltIns defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest.Companion[PropertyDescriptorImpl]
 
 'booleanType' @ [98:63] ==> public final val DefaultBuiltIns.booleanType: SimpleType[MyPropertyDescriptor]
@@ -183,8 +175,6 @@ Inferred types:
 'doTest' @ [101:42] ==> private final fun doTest(filePath: String, configure: KotlinChangeInfo.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinMultiModuleChangeSignatureTest[SimpleFunctionDescriptorImpl]
 
 'addParameter' @ [102:9] ==> private final fun KotlinChangeInfo.addParameter(name: String, type: KotlinType, defaultValue: String): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinMultiModuleChangeSignatureTest[SimpleFunctionDescriptorImpl]
-
-'KotlinChangeSignatureTest' @ [102:27] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest[FakeCallableDescriptorForObject]
 
 'BUILT_INS' @ [102:53] ==> internal final val BUILT_INS: DefaultBuiltIns defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureTest.Companion[PropertyDescriptorImpl]
 

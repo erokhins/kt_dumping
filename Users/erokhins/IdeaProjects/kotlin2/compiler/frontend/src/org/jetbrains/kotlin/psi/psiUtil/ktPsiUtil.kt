@@ -129,9 +129,9 @@ Inferred types:
 
 'selectorExpression' @ [91:28] ==> public open val selectorExpression: KtExpression? defined in org.jetbrains.kotlin.psi.KtQualifiedExpression[PropertyDescriptorImpl]
 
-'?:' @ [92:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtExpression?, right: KtExpression?): KtExpression?[SimpleFunctionDescriptorImpl]
+'?:' @ [92:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtElement?, right: KtElement?): KtElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtExpression?
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtElement?
 
 'selector' @ [92:14] ==> val selector: KtExpression? defined in org.jetbrains.kotlin.psi.psiUtil.getQualifiedElementSelector[LocalVariableDescriptor]
 
@@ -343,7 +343,7 @@ Inferred types:
 
 'firstChild' @ [166:41] ==> public final val KtBlockExpression.firstChild: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'siblings' @ [167:15] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [167:15] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [168:15] ==> public inline fun <T> Sequence<PsiElement>.firstOrNull(predicate: (PsiElement) -> Boolean): PsiElement? defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -363,7 +363,7 @@ Inferred types:
 
 'rBrace' @ [171:16] ==> val rBrace: PsiElement? defined in org.jetbrains.kotlin.psi.psiUtil.contentRange[LocalVariableDescriptor]
 
-'siblings' @ [172:14] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [172:14] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'first' @ [173:14] ==> public inline fun <T> Sequence<PsiElement>.first(predicate: (PsiElement) -> Boolean): PsiElement defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -397,9 +397,9 @@ Inferred types:
 
 'referencedName' @ [190:20] ==> value-parameter referencedName: String defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames.addSuperName[ValueParameterDescriptorImpl]
 
-'containingFile' @ [192:20] ==> public final val <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> StubBasedPsiElementBase<out ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}..KotlinClassOrObjectStub<out KtClassOrObject>)>.containingFile: PsiFile[MyPropertyDescriptor]
+'containingFile' @ [192:20] ==> public final val <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> StubBasedPsiElementBase<out KotlinClassOrObjectStub<out KtClassOrObject>>.containingFile: PsiFile[MyPropertyDescriptor]
 Inferred types:
-    <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}..org.jetbrains.kotlin.psi.stubs.KotlinClassOrObjectStub<out org.jetbrains.kotlin.psi.KtClassOrObject>)
+    <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> Captured(out KotlinClassOrObjectStub<out KtClassOrObject>)
 
 'file' @ [193:13] ==> val file: PsiFile defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames.addSuperName[LocalVariableDescriptor]
 
@@ -441,19 +441,19 @@ Inferred types:
 
 'java' @ [207:106] ==> public val <T> KClass<out StubBasedPsiElementBase<out KotlinClassOrObjectStub<out KtClassOrObject>>>.java: Class<out StubBasedPsiElementBase<out KotlinClassOrObjectStub<out KtClassOrObject>>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> StubBasedPsiElementBase<out KotlinClassOrObjectStub<out KtClassOrObject>>
+    <T> -> Captured(out StubBasedPsiElementBase<out KotlinClassOrObjectStub<out KtClassOrObject>>)
 
 'name' @ [207:111] ==> public final val <T : (Any..Any?)> Class<out StubBasedPsiElementBase<out KotlinClassOrObjectStub<out KtClassOrObject>>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> StubBasedPsiElementBase<out KotlinClassOrObjectStub<out KtClassOrObject>>
+    <T : (Any..Any?)> -> Captured(out StubBasedPsiElementBase<out KotlinClassOrObjectStub<out KtClassOrObject>>)
 
-'stub' @ [209:16] ==> public final val <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> StubBasedPsiElementBase<out ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}..KotlinClassOrObjectStub<out KtClassOrObject>)>.stub: ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}?..KotlinClassOrObjectStub<out KtClassOrObject>?)[MyPropertyDescriptor]
+'stub' @ [209:16] ==> public final val <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> StubBasedPsiElementBase<out KotlinClassOrObjectStub<out KtClassOrObject>>.stub: KotlinClassOrObjectStub<out KtClassOrObject>?[MyPropertyDescriptor]
 Inferred types:
-    <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}..org.jetbrains.kotlin.psi.stubs.KotlinClassOrObjectStub<out org.jetbrains.kotlin.psi.KtClassOrObject>)
+    <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> Captured(out KotlinClassOrObjectStub<out KtClassOrObject>)
 
-'stub' @ [210:9] ==> val stub: ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}?..KotlinClassOrObjectStub<out KtClassOrObject>?) defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames[LocalVariableDescriptor]
+'stub' @ [210:9] ==> val stub: KotlinClassOrObjectStub<out KtClassOrObject>? defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames[LocalVariableDescriptor]
 
-'stub' @ [211:16] ==> val stub: ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}?..KotlinClassOrObjectStub<out KtClassOrObject>?) defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames[LocalVariableDescriptor]
+'stub' @ [211:16] ==> val stub: KotlinClassOrObjectStub<out KtClassOrObject>? defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames[LocalVariableDescriptor]
 
 'getSuperNames' @ [211:21] ==> public abstract fun getSuperNames(): List<String> defined in org.jetbrains.kotlin.psi.stubs.KotlinClassOrObjectStub[SimpleFunctionDescriptorImpl]
 
@@ -513,7 +513,7 @@ Inferred types:
 
 'parent' @ [238:35] ==> val parent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.psi.psiUtil.getAnnotationEntries[LocalVariableDescriptor]
 
-'getAnnotationEntries' @ [238:42] ==> public fun KtExpression.getAnnotationEntries(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'getAnnotationEntries' @ [238:42] ==> public fun KtExpression.getAnnotationEntries(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil in file ktPsiUtil.kt[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [239:17] ==> public fun <T> emptyList(): List<KtAnnotationEntry> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -530,28 +530,28 @@ Inferred types:
 
 'getStub' @ [245:42] ==> @Nullable public open fun getStub(): raw (StubElement<(PsiElement..PsiElement?)>?..StubElement<*>?) defined in com.intellij.extapi.psi.StubBasedPsiElementBase[JavaMethodDescriptor]
 
-'collectAnnotationEntriesFromStubElement' @ [245:53] ==> private fun StubElement<*>.collectAnnotationEntriesFromStubElement(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'collectAnnotationEntriesFromStubElement' @ [245:53] ==> private fun StubElement<*>.collectAnnotationEntriesFromStubElement(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil in file ktPsiUtil.kt[SimpleFunctionDescriptorImpl]
 
-'collectAnnotationEntriesFromPsi' @ [245:98] ==> private fun KtAnnotationsContainer.collectAnnotationEntriesFromPsi(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'collectAnnotationEntriesFromPsi' @ [245:98] ==> private fun KtAnnotationsContainer.collectAnnotationEntriesFromPsi(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil in file ktPsiUtil.kt[SimpleFunctionDescriptorImpl]
 
-'collectAnnotationEntriesFromPsi' @ [246:17] ==> private fun KtAnnotationsContainer.collectAnnotationEntriesFromPsi(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'collectAnnotationEntriesFromPsi' @ [246:17] ==> private fun KtAnnotationsContainer.collectAnnotationEntriesFromPsi(): List<KtAnnotationEntry> defined in org.jetbrains.kotlin.psi.psiUtil in file ktPsiUtil.kt[SimpleFunctionDescriptorImpl]
 
 'childrenStubs' @ [251:12] ==> public final val <T : (PsiElement..PsiElement?)> StubElement<out (PsiElement..PsiElement?)>.childrenStubs: (MutableList<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>..List<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
-'flatMap' @ [251:26] ==> public inline fun <T, R> Iterable<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>.flatMap(transform: (raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)) -> Iterable<KtAnnotationEntry>): List<KtAnnotationEntry> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [251:26] ==> public inline fun <T, R> Iterable<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>.flatMap(transform: (raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)) -> Iterable<(KtAnnotationEntry..KtAnnotationEntry?)>): List<(KtAnnotationEntry..KtAnnotationEntry?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> raw (com.intellij.psi.stubs.StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<*>?)
-    <R> -> KtAnnotationEntry
+    <R> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
 
 'when (child.stubType) {
             KtNodeTypes.ANNOTATION_ENTRY -> listOf(child.psi as KtAnnotationEntry)
             KtNodeTypes.ANNOTATION -> (child.psi as KtAnnotation).entries
             else -> emptyList<KtAnnotationEntry>()
-        }' @ [253:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (List<KtAnnotationEntry>..List<KtAnnotationEntry>?), entry1: (List<KtAnnotationEntry>..List<KtAnnotationEntry>?), entry2: (List<KtAnnotationEntry>..List<KtAnnotationEntry>?)): (List<KtAnnotationEntry>..List<KtAnnotationEntry>?)[SimpleFunctionDescriptorImpl]
+        }' @ [253:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (List<(KtAnnotationEntry..KtAnnotationEntry?)>..List<(KtAnnotationEntry..KtAnnotationEntry?)>?), entry1: (List<(KtAnnotationEntry..KtAnnotationEntry?)>..List<(KtAnnotationEntry..KtAnnotationEntry?)>?), entry2: (List<(KtAnnotationEntry..KtAnnotationEntry?)>..List<(KtAnnotationEntry..KtAnnotationEntry?)>?)): (List<(KtAnnotationEntry..KtAnnotationEntry?)>..List<(KtAnnotationEntry..KtAnnotationEntry?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.collections.List<org.jetbrains.kotlin.psi.KtAnnotationEntry>..kotlin.collections.List<org.jetbrains.kotlin.psi.KtAnnotationEntry>?)
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.collections.List<(org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)>..kotlin.collections.List<(org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)>?)
 
 'child' @ [253:15] ==> value-parameter child: raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?) defined in org.jetbrains.kotlin.psi.psiUtil.collectAnnotationEntriesFromStubElement.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -587,18 +587,18 @@ Inferred types:
 
 'children' @ [262:12] ==> public final val KtAnnotationsContainer.children: (Array<(PsiElement..PsiElement?)>..Array<out (PsiElement..PsiElement?)>)[MyPropertyDescriptor]
 
-'flatMap' @ [262:21] ==> public inline fun <T, R> Array<out (PsiElement..PsiElement?)>.flatMap(transform: ((PsiElement..PsiElement?)) -> Iterable<KtAnnotationEntry>): List<KtAnnotationEntry> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [262:21] ==> public inline fun <T, R> Array<out (PsiElement..PsiElement?)>.flatMap(transform: ((PsiElement..PsiElement?)) -> Iterable<(KtAnnotationEntry..KtAnnotationEntry?)>): List<(KtAnnotationEntry..KtAnnotationEntry?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <R> -> KtAnnotationEntry
+    <R> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
 
 'when (child) {
             is KtAnnotationEntry -> listOf(child)
             is KtAnnotation -> child.entries
             else -> emptyList<KtAnnotationEntry>()
-        }' @ [263:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (List<KtAnnotationEntry>..List<KtAnnotationEntry>?), entry1: (List<KtAnnotationEntry>..List<KtAnnotationEntry>?), entry2: (List<KtAnnotationEntry>..List<KtAnnotationEntry>?)): (List<KtAnnotationEntry>..List<KtAnnotationEntry>?)[SimpleFunctionDescriptorImpl]
+        }' @ [263:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (List<(KtAnnotationEntry..KtAnnotationEntry?)>..List<(KtAnnotationEntry..KtAnnotationEntry?)>?), entry1: (List<(KtAnnotationEntry..KtAnnotationEntry?)>..List<(KtAnnotationEntry..KtAnnotationEntry?)>?), entry2: (List<(KtAnnotationEntry..KtAnnotationEntry?)>..List<(KtAnnotationEntry..KtAnnotationEntry?)>?)): (List<(KtAnnotationEntry..KtAnnotationEntry?)>..List<(KtAnnotationEntry..KtAnnotationEntry?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.collections.List<org.jetbrains.kotlin.psi.KtAnnotationEntry>..kotlin.collections.List<org.jetbrains.kotlin.psi.KtAnnotationEntry>?)
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.collections.List<(org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)>..kotlin.collections.List<(org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)>?)
 
 'child' @ [263:15] ==> value-parameter child: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.psi.psiUtil.collectAnnotationEntriesFromPsi.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -931,7 +931,7 @@ Inferred types:
 
 'emptyList' @ [394:63] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KtParameter..KtParameter?)>..List<(KtParameter..KtParameter?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtParameter
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
 
 'when (this) {
         is KtCallableDeclaration -> valueParameterList
@@ -951,7 +951,7 @@ Inferred types:
 
 'callExpression' @ [407:24] ==> val callExpression: KtCallExpression defined in org.jetbrains.kotlin.psi.psiUtil.getLambdaArgumentName[LocalVariableDescriptor]
 
-'getResolvedCall' @ [407:39] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [407:39] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [407:55] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.psi.psiUtil.getLambdaArgumentName[ValueParameterDescriptorImpl]
 
@@ -1006,7 +1006,7 @@ Inferred types:
 
 'VISIBILITY_MODIFIERS' @ [423:72] ==> public final val VISIBILITY_MODIFIERS: (TokenSet..TokenSet?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'visibilityModifier' @ [426:11] ==> public fun KtDeclaration.visibilityModifier(): PsiElement? defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'visibilityModifier' @ [426:11] ==> public fun KtDeclaration.visibilityModifier(): PsiElement? defined in org.jetbrains.kotlin.psi.psiUtil in file ktPsiUtil.kt[SimpleFunctionDescriptorImpl]
 
 'node' @ [426:33] ==> public final val PsiElement.node: (ASTNode..ASTNode?)[MyPropertyDescriptor]
 

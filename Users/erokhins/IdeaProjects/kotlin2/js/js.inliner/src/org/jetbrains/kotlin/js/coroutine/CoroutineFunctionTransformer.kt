@@ -12,11 +12,11 @@
 
 'function' @ [33:35] ==> private final val function: JsFunction defined in org.jetbrains.kotlin.js.coroutine.CoroutineFunctionTransformer[PropertyDescriptorImpl]
 
-'collectLocalVariables' @ [33:44] ==> public fun JsFunction.collectLocalVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectLocalVariables' @ [33:44] ==> public fun JsFunction.collectLocalVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'functionWithBody' @ [33:70] ==> private final val functionWithBody: JsFunction defined in org.jetbrains.kotlin.js.coroutine.CoroutineFunctionTransformer[PropertyDescriptorImpl]
 
-'collectLocalVariables' @ [33:87] ==> public fun JsFunction.collectLocalVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectLocalVariables' @ [33:87] ==> public fun JsFunction.collectLocalVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'functionWithBody' @ [34:35] ==> private final val functionWithBody: JsFunction defined in org.jetbrains.kotlin.js.coroutine.CoroutineFunctionTransformer[PropertyDescriptorImpl]
 
@@ -102,7 +102,7 @@ Inferred types:
 
 'jsBlock' @ [46:38] ==> public final val jsBlock: JsBlock defined in org.jetbrains.kotlin.js.coroutine.CoroutineBlock[PropertyDescriptorImpl]
 
-'replaceLocalVariables' @ [46:46] ==> public fun JsBlock.replaceLocalVariables(context: CoroutineTransformationContext, localVariables: Set<JsName>): Unit defined in org.jetbrains.kotlin.js.coroutine[SimpleFunctionDescriptorImpl]
+'replaceLocalVariables' @ [46:46] ==> public fun JsBlock.replaceLocalVariables(context: CoroutineTransformationContext, localVariables: Set<JsName>): Unit defined in org.jetbrains.kotlin.js.coroutine in file CoroutinePasses.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [46:68] ==> val context: CoroutineTransformationContext defined in org.jetbrains.kotlin.js.coroutine.CoroutineFunctionTransformer.transform[LocalVariableDescriptor]
 

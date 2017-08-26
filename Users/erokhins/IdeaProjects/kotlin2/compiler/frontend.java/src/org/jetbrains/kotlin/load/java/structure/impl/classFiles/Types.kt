@@ -1,6 +1,6 @@
-'lazy' @ [35:45] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> ClassifierResolutionContext.Result): Lazy<ClassifierResolutionContext.Result> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [35:45] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Result
+    <T> -> T
 
 'NONE' @ [35:71] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 

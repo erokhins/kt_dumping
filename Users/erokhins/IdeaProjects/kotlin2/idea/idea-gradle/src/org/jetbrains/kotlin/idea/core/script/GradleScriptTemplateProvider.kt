@@ -1,6 +1,6 @@
-'lazy' @ [36:64] ==> public fun <T> lazy(initializer: () -> GradleExecutionSettings?): Lazy<GradleExecutionSettings?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [36:64] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> GradleExecutionSettings?
+    <T> -> T
 
 'getExecutionSettings' @ [38:35] ==> public open fun <S : (ExternalSystemExecutionSettings..ExternalSystemExecutionSettings?)> getExecutionSettings(@NotNull p0: Project, @NotNull p1: String, @NotNull p2: ProjectSystemId): (GradleExecutionSettings..GradleExecutionSettings?) defined in com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil[JavaMethodDescriptor]
 Inferred types:
@@ -28,9 +28,9 @@ Inferred types:
 
 'e' @ [45:134] ==> val e: Throwable defined in org.jetbrains.kotlin.idea.core.script.AbstractGradleScriptTemplatesProvider.gradleExeSettings.<anonymous>[LocalVariableDescriptor]
 
-'lazy' @ [50:51] ==> public fun <T> lazy(initializer: () -> List<String>): Lazy<List<String>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [50:51] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<String>
+    <T> -> T
 
 'gradleExeSettings' @ [51:9] ==> private final val gradleExeSettings: GradleExecutionSettings? defined in org.jetbrains.kotlin.idea.core.script.AbstractGradleScriptTemplatesProvider[PropertyDescriptorImpl]
 
@@ -69,6 +69,8 @@ Inferred types:
 
 'String' @ [54:32] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isBlank' @ [54:40] ==> public fun CharSequence.isBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'distinct' @ [55:22] ==> public fun <T> Iterable<String>.distinct(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -77,9 +79,9 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'lazy' @ [59:40] ==> public fun <T> lazy(initializer: () -> File): Lazy<File> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [59:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> File
+    <T> -> T
 
 'gradleExeSettings' @ [60:26] ==> private final val gradleExeSettings: GradleExecutionSettings? defined in org.jetbrains.kotlin.idea.core.script.AbstractGradleScriptTemplatesProvider[PropertyDescriptorImpl]
 
@@ -148,9 +150,9 @@ Inferred types:
 
 'error' @ [75:51] ==> @InlineOnly public inline fun error(message: Any): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [78:53] ==> public fun <T> lazy(initializer: () -> Map<String, Any?>): Lazy<Map<String, Any?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [78:53] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<String, Any?>
+    <T> -> T
 
 'mapOf' @ [79:9] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, Any?>): Map<String, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -170,6 +172,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [80:70] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'to' @ [81:17] ==> public infix fun <A, B> String.to(that: File?): Pair<String, File?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -191,16 +195,18 @@ Inferred types:
     <T> -> String
     <R> -> File
 
-'to' @ [82:17] ==> public infix fun <A, B> String.to(that: ((ProjectConnection) -> Unit) -> Unit): Pair<String, ((ProjectConnection) -> Unit) -> Unit> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'File' @ [81:93] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
+'to' @ [82:17] ==> public infix fun <A, B> String.to(that: ((ProjectConnection) -> Unit) -> (Unit..Unit?)): Pair<String, ((ProjectConnection) -> Unit) -> (Unit..Unit?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> Function1<Function1<ProjectConnection, Unit>, Unit>
+    <B> -> Function1<Function1<ProjectConnection, Unit>, (kotlin.Unit..kotlin.Unit?)>
 
 'GradleExecutionHelper' @ [83:17] ==> public constructor GradleExecutionHelper() defined in org.jetbrains.plugins.gradle.service.execution.GradleExecutionHelper[JavaClassConstructorDescriptor]
 
 'execute' @ [83:41] ==> public final fun <T : (Any..Any?)> execute(@NotNull p0: String, @Nullable p1: GradleExecutionSettings?, @NotNull p2: ((ProjectConnection..ProjectConnection?)) -> (Unit..Unit?)): (Unit..Unit?) defined in org.jetbrains.plugins.gradle.service.execution.GradleExecutionHelper[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'project' @ [83:49] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.core.script.AbstractGradleScriptTemplatesProvider.<init>[ValueParameterDescriptorImpl]
 
@@ -226,10 +232,12 @@ Inferred types:
 
 'gradleJvmOptions' @ [85:39] ==> private final val gradleJvmOptions: List<String> defined in org.jetbrains.kotlin.idea.core.script.AbstractGradleScriptTemplatesProvider[PropertyDescriptorImpl]
 
-'to' @ [86:17] ==> public infix fun <A, B> String.to(that: KFunction2<CharSequence, String, Sequence<CharSequence>>): Pair<String, KFunction2<CharSequence, String, Sequence<CharSequence>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [86:17] ==> public infix fun <A, B> String.to(that: KFunction2<@ParameterName CharSequence, @ParameterName String, Sequence<CharSequence>>): Pair<String, KFunction2<@ParameterName CharSequence, @ParameterName String, Sequence<CharSequence>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> KFunction2<CharSequence, String, Sequence<CharSequence>>
+    <B> -> KFunction2<[@kotlin.ParameterName] CharSequence, [@kotlin.ParameterName] String, Sequence<CharSequence>>
+
+'topLevelSectionCodeTextTokens' @ [86:47] ==> public fun topLevelSectionCodeTextTokens(script: CharSequence, sectionIdentifier: String): Sequence<CharSequence> defined in org.jetbrains.kotlin.idea.core.script in file GradleScriptTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'AbstractGradleScriptTemplatesProvider' @ [91:59] ==> public constructor AbstractGradleScriptTemplatesProvider(project: Project, id: String, templateClass: String, dependencySelector: Regex) defined in org.jetbrains.kotlin.idea.core.script.AbstractGradleScriptTemplatesProvider[ClassConstructorDescriptorImpl]
 
@@ -256,6 +264,10 @@ Inferred types:
     <T> -> File
     <R> -> List<File>
 
+'listOf' @ [101:43] ==> public fun <T> listOf(element: File): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> File
+
 'orEmpty' @ [101:51] ==> @InlineOnly public inline fun <T> List<File>?.orEmpty(): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
@@ -277,8 +289,6 @@ Inferred types:
 'script' @ [114:15] ==> value-parameter script: CharSequence defined in org.jetbrains.kotlin.idea.core.script.TopLevelSectionTokensEnumerator.<init>[ValueParameterDescriptorImpl]
 
 'replace' @ [114:22] ==> @InlineOnly public inline fun CharSequence.replace(regex: Regex, replacement: String): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'Regex' @ [114:30] ==> public companion object defined in kotlin.text.Regex[FakeCallableDescriptorForObject]
 
 'fromLiteral' @ [114:36] ==> public final fun fromLiteral(literal: String): Regex defined in kotlin.text.Regex.Companion[DeserializedSimpleFunctionDescriptor]
 

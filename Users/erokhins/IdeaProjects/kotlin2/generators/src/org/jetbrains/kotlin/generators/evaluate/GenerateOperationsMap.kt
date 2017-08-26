@@ -124,7 +124,7 @@ Inferred types:
 
 'function' @ [63:35] ==> val function: CallableDescriptor defined in org.jetbrains.kotlin.generators.evaluate.generate[LocalVariableDescriptor]
 
-'getParametersTypes' @ [63:44] ==> private fun CallableDescriptor.getParametersTypes(): List<KotlinType> defined in org.jetbrains.kotlin.generators.evaluate[SimpleFunctionDescriptorImpl]
+'getParametersTypes' @ [63:44] ==> private fun CallableDescriptor.getParametersTypes(): List<KotlinType> defined in org.jetbrains.kotlin.generators.evaluate in file GenerateOperationsMap.kt[SimpleFunctionDescriptorImpl]
 
 'when (parametersTypes.size) {
                 1 -> unaryOperationsMap.add(Triple(function.name.asString(), parametersTypes, function is FunctionDescriptor))
@@ -253,7 +253,7 @@ Inferred types:
 
 'parenthesesOrBlank' @ [89:39] ==> val parenthesesOrBlank: String defined in org.jetbrains.kotlin.generators.evaluate.generate[LocalVariableDescriptor]
 
-'renderCheckUnaryOperation' @ [90:17] ==> public fun renderCheckUnaryOperation(name: String, params: List<KotlinType>): String defined in org.jetbrains.kotlin.generators.evaluate[SimpleFunctionDescriptorImpl]
+'renderCheckUnaryOperation' @ [90:17] ==> public fun renderCheckUnaryOperation(name: String, params: List<KotlinType>): String defined in org.jetbrains.kotlin.generators.evaluate in file GenerateOperationsMap.kt[SimpleFunctionDescriptorImpl]
 
 'funcName' @ [90:43] ==> val funcName: String defined in org.jetbrains.kotlin.generators.evaluate.generate[LocalVariableDescriptor]
 
@@ -330,7 +330,7 @@ Inferred types:
 
 'funcName' @ [112:33] ==> val funcName: String defined in org.jetbrains.kotlin.generators.evaluate.generate[LocalVariableDescriptor]
 
-'renderCheckBinaryOperation' @ [113:17] ==> public fun renderCheckBinaryOperation(name: String, params: List<KotlinType>): String defined in org.jetbrains.kotlin.generators.evaluate[SimpleFunctionDescriptorImpl]
+'renderCheckBinaryOperation' @ [113:17] ==> public fun renderCheckBinaryOperation(name: String, params: List<KotlinType>): String defined in org.jetbrains.kotlin.generators.evaluate in file GenerateOperationsMap.kt[SimpleFunctionDescriptorImpl]
 
 'funcName' @ [113:44] ==> val funcName: String defined in org.jetbrains.kotlin.generators.evaluate.generate[LocalVariableDescriptor]
 
@@ -358,7 +358,7 @@ Inferred types:
 
 'params' @ [125:31] ==> value-parameter params: List<KotlinType> defined in org.jetbrains.kotlin.generators.evaluate.renderCheckUnaryOperation[ValueParameterDescriptorImpl]
 
-'fold' @ [125:38] ==> public inline fun <T, R> Iterable<KotlinType>.fold(initial: Boolean, operation: (Boolean, KotlinType) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [125:38] ==> public inline fun <T, R> Iterable<KotlinType>.fold(initial: Boolean, operation: (acc: Boolean, KotlinType) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KotlinType
     <R> -> Boolean
@@ -386,7 +386,7 @@ Inferred types:
 
 'params' @ [137:31] ==> value-parameter params: List<KotlinType> defined in org.jetbrains.kotlin.generators.evaluate.renderCheckBinaryOperation[ValueParameterDescriptorImpl]
 
-'fold' @ [137:38] ==> public inline fun <T, R> Iterable<KotlinType>.fold(initial: Boolean, operation: (Boolean, KotlinType) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [137:38] ==> public inline fun <T, R> Iterable<KotlinType>.fold(initial: Boolean, operation: (acc: Boolean, KotlinType) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KotlinType
     <R> -> Boolean

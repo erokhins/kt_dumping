@@ -600,15 +600,15 @@ Inferred types:
 
 'JComboBox' @ [200:40] ==> public constructor JComboBox<E : (Any..Any?)>(p0: (Array<(KotlinValVar..KotlinValVar?)>..Array<out (KotlinValVar..KotlinValVar?)>?)) defined in javax.swing.JComboBox[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> KotlinValVar
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinValVar..org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinValVar?)
 
 'values' @ [200:63] ==> public final fun values(): Array<KotlinValVar> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinValVar[SimpleFunctionDescriptorImpl]
 
-'comboBox' @ [201:25] ==> val comboBox: JComboBox<KotlinValVar> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.getTableEditor.<no name provided>.prepareEditor[LocalVariableDescriptor]
+'comboBox' @ [201:25] ==> val comboBox: JComboBox<(KotlinValVar..KotlinValVar?)> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.getTableEditor.<no name provided>.prepareEditor[LocalVariableDescriptor]
 
-'selectedItem' @ [201:34] ==> public final var <E : (Any..Any?)> JComboBox<KotlinValVar>.selectedItem: (Any..Any?)[MyPropertyDescriptor]
+'selectedItem' @ [201:34] ==> public final var <E : (Any..Any?)> JComboBox<(KotlinValVar..KotlinValVar?)>.selectedItem: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> KotlinValVar
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinValVar..org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinValVar?)
 
 'item' @ [201:49] ==> value-parameter item: ParameterTableModelItemBase<KotlinParameterInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.getTableEditor[ValueParameterDescriptorImpl]
 
@@ -616,7 +616,7 @@ Inferred types:
 
 'valOrVar' @ [201:64] ==> public final var valOrVar: KotlinValVar defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinParameterInfo[PropertyDescriptorImpl]
 
-'comboBox' @ [202:25] ==> val comboBox: JComboBox<KotlinValVar> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.getTableEditor.<no name provided>.prepareEditor[LocalVariableDescriptor]
+'comboBox' @ [202:25] ==> val comboBox: JComboBox<(KotlinValVar..KotlinValVar?)> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.getTableEditor.<no name provided>.prepareEditor[LocalVariableDescriptor]
 
 'addItemListener' @ [202:34] ==> public final fun addItemListener(p0: (((ItemEvent..ItemEvent?)) -> Unit..(((ItemEvent..ItemEvent?)) -> Unit)?)): Unit defined in javax.swing.JComboBox[MyFunctionDescriptor]
 
@@ -636,7 +636,7 @@ Inferred types:
 
 'component' @ [206:25] ==> val component: JComponent defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.getTableEditor.<no name provided>.prepareEditor[LocalVariableDescriptor]
 
-'comboBox' @ [206:37] ==> val comboBox: JComboBox<KotlinValVar> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.getTableEditor.<no name provided>.prepareEditor[LocalVariableDescriptor]
+'comboBox' @ [206:37] ==> val comboBox: JComboBox<(KotlinValVar..KotlinValVar?)> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.getTableEditor.<no name provided>.prepareEditor[LocalVariableDescriptor]
 
 'editor' @ [207:25] ==> val editor: EditorTextField? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.getTableEditor.<no name provided>.prepareEditor[LocalVariableDescriptor]
 
@@ -776,7 +776,7 @@ Inferred types:
 
 'column' @ [242:21] ==> var column: Int defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.getTableEditor.<no name provided>.prepareEditor[LocalVariableDescriptor]
 
-'JBTableRow' @ [247:24] ==> public fun JBTableRow(function: (Int) -> (Any..Any?)): JBTableRow defined in com.intellij.util.ui.table[SimpleFunctionDescriptorImpl]
+'JBTableRow' @ [247:24] ==> public fun JBTableRow(function: (Int) -> (Any..Any?)): JBTableRow defined in com.intellij.util.ui.table[SamConstructorDescriptorImpl]
 
 'parametersTableModel' @ [248:38] ==> private final val parametersTableModel: KotlinCallableParameterTableModel defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog[PropertyDescriptorImpl]
 
@@ -795,9 +795,9 @@ Inferred types:
                             item.defaultValueCodeFragment
                         else ->
                             null
-                    }' @ [250:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Any..Any?), entry1: (Any..Any?), entry2: (Any..Any?), entry3: (Any..Any?), entry4: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
+                    }' @ [250:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any?, entry1: Any?, entry2: Any?, entry3: Any?, entry4: Any?): Any?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.Any..kotlin.Any?)
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any?
 
 'isValVarColumn' @ [251:69] ==> public open fun isValVarColumn(column: raw (ColumnInfo<(Any..Any?), (Any..Any?)>..ColumnInfo<*, *>?)): Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinPrimaryConstructorParameterTableModel[JavaMethodDescriptor]
 
@@ -811,7 +811,7 @@ Inferred types:
 
 'selectedItem' @ [252:101] ==> public final var <E : (Any..Any?)> JComboBox<out (Any..Any?)>.selectedItem: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> Captured(*)
 
 'isTypeColumn' @ [253:59] ==> public open fun isTypeColumn(column: raw (ColumnInfo<(Any..Any?), (Any..Any?)>..ColumnInfo<*, *>?)): Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinCallableParameterTableModel[JavaMethodDescriptor]
 
@@ -1022,7 +1022,7 @@ Inferred types:
 
 'ComboBoxVisibilityPanel' @ [324:46] ==> public constructor ComboBoxVisibilityPanel<V : (Any..Any?)>(p0: (Array<(Visibility..Visibility?)>..Array<out (Visibility..Visibility?)>?)) defined in com.intellij.refactoring.ui.ComboBoxVisibilityPanel[JavaClassConstructorDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Visibility
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.Visibility..org.jetbrains.kotlin.descriptors.Visibility?)
 
 'arrayOf' @ [325:13] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: Visibility): Array<Visibility> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1445,8 +1445,8 @@ Inferred types:
 
 'get' @ [450:67] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), p1: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [450:86] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

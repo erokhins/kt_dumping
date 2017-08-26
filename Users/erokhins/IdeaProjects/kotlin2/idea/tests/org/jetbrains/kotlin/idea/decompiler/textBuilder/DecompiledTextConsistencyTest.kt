@@ -20,7 +20,9 @@ Inferred types:
 
 'packageFacadeFqName' @ [54:44] ==> val packageFacadeFqName: FqName defined in org.jetbrains.kotlin.idea.decompiler.textBuilder.DecompiledTextConsistencyTest.testConsistency[LocalVariableDescriptor]
 
-'VirtualFileFinder' @ [55:29] ==> public companion object SERVICE defined in org.jetbrains.kotlin.load.kotlin.VirtualFileFinder[FakeCallableDescriptorForObject]
+'!!' @ [55:29] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: VirtualFile?): VirtualFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> VirtualFile
 
 'getInstance' @ [55:55] ==> public final fun getInstance(project: Project): VirtualFileFinder defined in org.jetbrains.kotlin.load.kotlin.VirtualFileFinder.SERVICE[DeserializedSimpleFunctionDescriptor]
 
@@ -43,6 +45,8 @@ Inferred types:
 'BindingTraceContext' @ [58:40] ==> public constructor BindingTraceContext() defined in org.jetbrains.kotlin.resolve.BindingTraceContext[JavaClassConstructorDescriptor]
 
 'newConfiguration' @ [58:79] ==> @NotNull public open fun newConfiguration(): CompilerConfiguration defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
+
+'IDEPackagePartProvider' @ [58:101] ==> public constructor IDEPackagePartProvider(scope: GlobalSearchScope) defined in org.jetbrains.kotlin.idea.caches.resolve.IDEPackagePartProvider[DeserializedClassConstructorDescriptor]
 
 'moduleDescriptor' @ [59:15] ==> public final val moduleDescriptor: ModuleDescriptor defined in org.jetbrains.kotlin.analyzer.AnalysisResult[DeserializedPropertyDescriptor]
 
@@ -137,8 +141,6 @@ Inferred types:
 'isFromJvmPackagePart' @ [86:28] ==> public fun DeserializedMemberDescriptor.isFromJvmPackagePart(): Boolean defined in org.jetbrains.kotlin.load.java.descriptors[DeserializedSimpleFunctionDescriptor]
 
 'facadeFqName' @ [87:17] ==> value-parameter facadeFqName: FqName defined in org.jetbrains.kotlin.idea.decompiler.textBuilder.DecompiledTextConsistencyTest.ResolverForDecompilerImpl.isFromFacade[ValueParameterDescriptorImpl]
-
-'JvmFileClassUtil' @ [87:33] ==> public object JvmFileClassUtil defined in org.jetbrains.kotlin.fileClasses[FakeCallableDescriptorForObject]
 
 'getPartFqNameForDeserialized' @ [87:50] ==> @JvmStatic public final fun getPartFqNameForDeserialized(deserializedMemberDescriptor: DeserializedMemberDescriptor): FqName defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil[DeserializedSimpleFunctionDescriptor]
 

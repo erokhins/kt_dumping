@@ -1,4 +1,4 @@
-'splitCanonicalFqName' @ [21:44] ==> private fun String.splitCanonicalFqName(): List<String> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
+'splitCanonicalFqName' @ [21:44] ==> private fun String.splitCanonicalFqName(): List<String> defined in org.jetbrains.kotlin.load.java.structure.impl in file classNamesUtil.kt[SimpleFunctionDescriptorImpl]
 
 'joinToString' @ [21:67] ==> public fun <T> Iterable<String>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: ((String) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -37,7 +37,7 @@ Inferred types:
 
 'assertOrderedEquals' @ [42:26] ==> public open fun <T : (Any..Any?)> assertOrderedEquals(p0: (String..String?), p1: (MutableIterable<(String..String?)>..Iterable<(String..String?)>?), p2: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)): Unit defined in org.jetbrains.kotlin.test.testFramework.KtUsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 '+' @ [42:46] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 

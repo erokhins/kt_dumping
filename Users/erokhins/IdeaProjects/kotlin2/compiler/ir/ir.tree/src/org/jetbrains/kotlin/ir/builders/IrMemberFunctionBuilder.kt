@@ -56,7 +56,7 @@
 
 'parameter' @ [51:31] ==> value-parameter parameter: ValueParameterDescriptor defined in org.jetbrains.kotlin.ir.builders.IrMemberFunctionBuilder.putDefault[ValueParameterDescriptorImpl]
 
-'irExprBody' @ [51:42] ==> public fun IrBuilderWithScope.irExprBody(value: IrExpression): IrExpressionBodyImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irExprBody' @ [51:42] ==> public fun IrBuilderWithScope.irExprBody(value: IrExpression): IrExpressionBodyImpl defined in org.jetbrains.kotlin.ir.builders in file ExpressionHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [51:53] ==> value-parameter value: IrExpression defined in org.jetbrains.kotlin.ir.builders.IrMemberFunctionBuilder.putDefault[ValueParameterDescriptorImpl]
 

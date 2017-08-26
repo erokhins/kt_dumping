@@ -4,7 +4,7 @@
 
 'stub' @ [27:47] ==> public final val <T : (StubElement<*>..StubElement<*>?)> KtElementImplStub<out (StubElement<*>..StubElement<*>?)>.stub: StubElement<*>?[MyPropertyDescriptor]
 Inferred types:
-    <T : (StubElement<*>..StubElement<*>?)> -> (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)
+    <T : (StubElement<*>..StubElement<*>?)> -> Captured(*)
 
 'text' @ [28:16] ==> public final val KtElement.text: (String..String?)[MyPropertyDescriptor]
 
@@ -42,7 +42,7 @@ Inferred types:
 
 'java' @ [43:54] ==> public val <T> KClass<out DebugTextBuildingVisitor>.java: Class<out DebugTextBuildingVisitor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DebugTextBuildingVisitor
+    <T> -> Captured(out DebugTextBuildingVisitor)
 
 'file' @ [46:30] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitKtFile[ValueParameterDescriptorImpl]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'java' @ [51:75] ==> public val <T> KClass<out KtElement>.java: Class<out KtElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtElement
+    <T> -> Captured(out KtElement)
 
 'element' @ [53:16] ==> value-parameter element: KtElement defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitKtElement[ValueParameterDescriptorImpl]
 
@@ -180,7 +180,7 @@ Inferred types:
 
 'append' @ [124:13] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendInn' @ [125:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [125:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'enumEntry' @ [125:23] ==> value-parameter enumEntry: KtEnumEntry defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitEnumEntry[ValueParameterDescriptorImpl]
 
@@ -188,13 +188,13 @@ Inferred types:
 
 'append' @ [126:13] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendInn' @ [127:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [127:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'enumEntry' @ [127:23] ==> value-parameter enumEntry: KtEnumEntry defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitEnumEntry[ValueParameterDescriptorImpl]
 
 'nameAsName' @ [127:33] ==> public final val KtEnumEntry.nameAsName: Name?[MyPropertyDescriptor]
 
-'appendInn' @ [128:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [128:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'enumEntry' @ [128:23] ==> value-parameter enumEntry: KtEnumEntry defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitEnumEntry[ValueParameterDescriptorImpl]
 
@@ -202,19 +202,19 @@ Inferred types:
 
 'buildText' @ [133:16] ==> public final fun buildText(body: StringBuilder /* = StringBuilder */.() -> Unit): String? defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor[SimpleFunctionDescriptorImpl]
 
-'appendInn' @ [134:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [134:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'functionType' @ [134:23] ==> value-parameter functionType: KtFunctionType defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitFunctionType[ValueParameterDescriptorImpl]
 
 'receiverTypeReference' @ [134:36] ==> public final val KtFunctionType.receiverTypeReference: KtTypeReference?[MyPropertyDescriptor]
 
-'appendInn' @ [135:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [135:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'functionType' @ [135:23] ==> value-parameter functionType: KtFunctionType defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitFunctionType[ValueParameterDescriptorImpl]
 
 'parameterList' @ [135:36] ==> public final val KtFunctionType.parameterList: KtParameterList?[MyPropertyDescriptor]
 
-'appendInn' @ [136:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [136:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'functionType' @ [136:23] ==> value-parameter functionType: KtFunctionType defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitFunctionType[ValueParameterDescriptorImpl]
 
@@ -222,19 +222,19 @@ Inferred types:
 
 'buildText' @ [141:16] ==> public final fun buildText(body: StringBuilder /* = StringBuilder */.() -> Unit): String? defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor[SimpleFunctionDescriptorImpl]
 
-'appendInn' @ [142:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [142:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'parameter' @ [142:23] ==> value-parameter parameter: KtTypeParameter defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitTypeParameter[ValueParameterDescriptorImpl]
 
 'modifierList' @ [142:33] ==> public final val KtTypeParameter.modifierList: KtModifierList?[MyPropertyDescriptor]
 
-'appendInn' @ [143:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [143:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'parameter' @ [143:23] ==> value-parameter parameter: KtTypeParameter defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitTypeParameter[ValueParameterDescriptorImpl]
 
 'nameAsName' @ [143:33] ==> public final val KtTypeParameter.nameAsName: Name?[MyPropertyDescriptor]
 
-'appendInn' @ [144:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [144:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'parameter' @ [144:23] ==> value-parameter parameter: KtTypeParameter defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitTypeParameter[ValueParameterDescriptorImpl]
 
@@ -248,7 +248,7 @@ Inferred types:
 
 'token' @ [150:55] ==> public final val KtProjectionKind.token: KtSingleValueToken?[MyPropertyDescriptor]
 
-'appendInn' @ [151:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [151:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'token' @ [151:23] ==> val token: KtSingleValueToken? defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitTypeProjection.<anonymous>[LocalVariableDescriptor]
 
@@ -264,7 +264,7 @@ Inferred types:
 
 'append' @ [154:17] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendInn' @ [156:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [156:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'typeReference' @ [156:23] ==> val typeReference: KtTypeReference? defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitTypeProjection.<anonymous>[LocalVariableDescriptor]
 
@@ -324,7 +324,7 @@ Inferred types:
 
 'getContainingDeclaration' @ [194:51] ==> @Nullable public open fun <T : (KtDeclaration..KtDeclaration?)> getContainingDeclaration(@NotNull element: PsiElement, @NotNull declarationClass: Class<(KtProperty..KtProperty?)>): KtProperty? defined in org.jetbrains.kotlin.psi.KtStubbedPsiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (KtDeclaration..KtDeclaration?)> -> KtProperty
+    <T : (KtDeclaration..KtDeclaration?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'accessor' @ [194:76] ==> value-parameter accessor: KtPropertyAccessor defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitPropertyAccessor[ValueParameterDescriptorImpl]
 
@@ -350,7 +350,7 @@ Inferred types:
 
 'append' @ [201:13] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendInn' @ [202:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [202:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [202:23] ==> value-parameter klass: KtClass defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitClass[ValueParameterDescriptorImpl]
 
@@ -358,31 +358,31 @@ Inferred types:
 
 'append' @ [203:13] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendInn' @ [204:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [204:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [204:23] ==> value-parameter klass: KtClass defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitClass[ValueParameterDescriptorImpl]
 
 'nameAsName' @ [204:29] ==> public final val KtClass.nameAsName: Name?[MyPropertyDescriptor]
 
-'appendInn' @ [205:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [205:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [205:23] ==> value-parameter klass: KtClass defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitClass[ValueParameterDescriptorImpl]
 
 'typeParameterList' @ [205:29] ==> public final val KtClass.typeParameterList: KtTypeParameterList?[MyPropertyDescriptor]
 
-'appendInn' @ [206:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [206:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [206:23] ==> value-parameter klass: KtClass defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitClass[ValueParameterDescriptorImpl]
 
 'primaryConstructorModifierList' @ [206:29] ==> public final val KtClass.primaryConstructorModifierList: KtModifierList?[MyPropertyDescriptor]
 
-'appendInn' @ [207:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [207:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [207:23] ==> value-parameter klass: KtClass defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitClass[ValueParameterDescriptorImpl]
 
 'getPrimaryConstructorParameterList' @ [207:29] ==> public final fun getPrimaryConstructorParameterList(): KtParameterList? defined in org.jetbrains.kotlin.psi.KtClass[SimpleFunctionDescriptorImpl]
 
-'appendInn' @ [208:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [208:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [208:23] ==> value-parameter klass: KtClass defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitClass[ValueParameterDescriptorImpl]
 
@@ -392,7 +392,7 @@ Inferred types:
 
 'append' @ [214:13] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendInn' @ [215:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [215:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [215:23] ==> value-parameter function: KtNamedFunction defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitNamedFunction[ValueParameterDescriptorImpl]
 
@@ -408,17 +408,17 @@ Inferred types:
 
 'hasTypeParameterListBeforeFunctionName' @ [219:26] ==> public open fun hasTypeParameterListBeforeFunctionName(): Boolean defined in org.jetbrains.kotlin.psi.KtNamedFunction[JavaMethodDescriptor]
 
-'appendInn' @ [220:17] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [220:17] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameterList' @ [220:27] ==> val typeParameterList: KtTypeParameterList? defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitNamedFunction.<anonymous>[LocalVariableDescriptor]
 
-'appendInn' @ [222:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [222:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [222:23] ==> value-parameter function: KtNamedFunction defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitNamedFunction[ValueParameterDescriptorImpl]
 
 'receiverTypeReference' @ [222:32] ==> public final val KtNamedFunction.receiverTypeReference: KtTypeReference?[MyPropertyDescriptor]
 
-'appendInn' @ [223:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [223:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [223:23] ==> value-parameter function: KtNamedFunction defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitNamedFunction[ValueParameterDescriptorImpl]
 
@@ -430,23 +430,23 @@ Inferred types:
 
 'hasTypeParameterListBeforeFunctionName' @ [224:27] ==> public open fun hasTypeParameterListBeforeFunctionName(): Boolean defined in org.jetbrains.kotlin.psi.KtNamedFunction[JavaMethodDescriptor]
 
-'appendInn' @ [225:17] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [225:17] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameterList' @ [225:27] ==> val typeParameterList: KtTypeParameterList? defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitNamedFunction.<anonymous>[LocalVariableDescriptor]
 
-'appendInn' @ [227:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [227:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [227:23] ==> value-parameter function: KtNamedFunction defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitNamedFunction[ValueParameterDescriptorImpl]
 
 'valueParameterList' @ [227:32] ==> public final val KtNamedFunction.valueParameterList: KtParameterList?[MyPropertyDescriptor]
 
-'appendInn' @ [228:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [228:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [228:23] ==> value-parameter function: KtNamedFunction defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitNamedFunction[ValueParameterDescriptorImpl]
 
 'typeReference' @ [228:32] ==> public final var KtNamedFunction.typeReference: KtTypeReference?[MyPropertyDescriptor]
 
-'appendInn' @ [229:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [229:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [229:23] ==> value-parameter function: KtNamedFunction defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitNamedFunction[ValueParameterDescriptorImpl]
 
@@ -456,7 +456,7 @@ Inferred types:
 
 'append' @ [235:13] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendInn' @ [236:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [236:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [236:23] ==> value-parameter declaration: KtObjectDeclaration defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitObjectDeclaration[ValueParameterDescriptorImpl]
 
@@ -464,13 +464,13 @@ Inferred types:
 
 'append' @ [237:13] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendInn' @ [238:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [238:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [238:23] ==> value-parameter declaration: KtObjectDeclaration defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitObjectDeclaration[ValueParameterDescriptorImpl]
 
 'nameAsName' @ [238:35] ==> public final val KtObjectDeclaration.nameAsName: Name?[MyPropertyDescriptor]
 
-'appendInn' @ [239:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [239:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [239:23] ==> value-parameter declaration: KtObjectDeclaration defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitObjectDeclaration[ValueParameterDescriptorImpl]
 
@@ -498,7 +498,7 @@ Inferred types:
 
 'nameAsName' @ [248:34] ==> public final val KtParameter.nameAsName: Name?[MyPropertyDescriptor]
 
-'appendInn' @ [249:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [249:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [249:23] ==> val name: Name? defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitParameter.<anonymous>[LocalVariableDescriptor]
 
@@ -512,7 +512,7 @@ Inferred types:
 
 'append' @ [252:17] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendInn' @ [254:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [254:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'typeReference' @ [254:23] ==> val typeReference: KtTypeReference? defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitParameter.<anonymous>[LocalVariableDescriptor]
 
@@ -520,7 +520,7 @@ Inferred types:
 
 'append' @ [260:13] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendInn' @ [261:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [261:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'property' @ [261:23] ==> value-parameter property: KtProperty defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitProperty[ValueParameterDescriptorImpl]
 
@@ -536,13 +536,13 @@ Inferred types:
 
 'isVar' @ [262:33] ==> public final val KtProperty.isVar: Boolean[MyPropertyDescriptor]
 
-'appendInn' @ [263:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [263:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'property' @ [263:23] ==> value-parameter property: KtProperty defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitProperty[ValueParameterDescriptorImpl]
 
 'nameAsName' @ [263:32] ==> public final val KtProperty.nameAsName: Name?[MyPropertyDescriptor]
 
-'appendInn' @ [264:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [264:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'property' @ [264:23] ==> value-parameter property: KtProperty defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitProperty[ValueParameterDescriptorImpl]
 
@@ -550,13 +550,13 @@ Inferred types:
 
 'buildText' @ [269:16] ==> public final fun buildText(body: StringBuilder /* = StringBuilder */.() -> Unit): String? defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor[SimpleFunctionDescriptorImpl]
 
-'appendInn' @ [270:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [270:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'constraint' @ [270:23] ==> value-parameter constraint: KtTypeConstraint defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitTypeConstraint[ValueParameterDescriptorImpl]
 
 'subjectTypeParameterName' @ [270:34] ==> public final val KtTypeConstraint.subjectTypeParameterName: KtSimpleNameExpression?[MyPropertyDescriptor]
 
-'appendInn' @ [271:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText[SimpleFunctionDescriptorImpl]
+'appendInn' @ [271:13] ==> private fun StringBuilder /* = StringBuilder */.appendInn(target: Any?, prefix: String = ..., suffix: String = ...): Unit defined in org.jetbrains.kotlin.psi.debugText in file DebugTextUtil.kt[SimpleFunctionDescriptorImpl]
 
 'constraint' @ [271:23] ==> value-parameter constraint: KtTypeConstraint defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.visitTypeConstraint[ValueParameterDescriptorImpl]
 
@@ -576,11 +576,11 @@ Inferred types:
 
 'stub' @ [282:37] ==> public final val <T : (StubElement<*>..StubElement<*>?)> KtElementImplStub<out (StubElement<*>..StubElement<*>?)>.stub: StubElement<*>?[MyPropertyDescriptor]
 Inferred types:
-    <T : (StubElement<*>..StubElement<*>?)> -> (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)
+    <T : (StubElement<*>..StubElement<*>?)> -> Captured(*)
 
 'childrenStubs' @ [282:43] ==> public final val <T : (PsiElement..PsiElement?)> StubElement<out (PsiElement..PsiElement?)>.childrenStubs: (MutableList<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>..List<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'mapNotNull' @ [282:58] ==> public inline fun <T, R : Any> Iterable<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>.mapNotNull(transform: (raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)) -> String?): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -611,19 +611,19 @@ Inferred types:
 
 'text' @ [283:83] ==> public final val <T : (StubElement<*>..StubElement<*>?)> KtElementImplStub<out (StubElement<*>..StubElement<*>?)>.text: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (StubElement<*>..StubElement<*>?)> -> (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)
+    <T : (StubElement<*>..StubElement<*>?)> -> Captured(*)
 
 'element' @ [287:13] ==> value-parameter element: KtElementImplStub<*> defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.render[ValueParameterDescriptorImpl]
 
 'stub' @ [287:21] ==> public final val <T : (StubElement<*>..StubElement<*>?)> KtElementImplStub<out (StubElement<*>..StubElement<*>?)>.stub: StubElement<*>?[MyPropertyDescriptor]
 Inferred types:
-    <T : (StubElement<*>..StubElement<*>?)> -> (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)
+    <T : (StubElement<*>..StubElement<*>?)> -> Captured(*)
 
 'element' @ [287:42] ==> value-parameter element: KtElementImplStub<*> defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.render[ValueParameterDescriptorImpl]
 
 'text' @ [287:50] ==> public final val <T : (StubElement<*>..StubElement<*>?)> KtElementImplStub<out (StubElement<*>..StubElement<*>?)>.text: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (StubElement<*>..StubElement<*>?)> -> (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)
+    <T : (StubElement<*>..StubElement<*>?)> -> Captured(*)
 
 'relevantChildren' @ [288:16] ==> value-parameter vararg relevantChildren: KtElement? defined in org.jetbrains.kotlin.psi.debugText.DebugTextBuildingVisitor.render[ValueParameterDescriptorImpl]
 

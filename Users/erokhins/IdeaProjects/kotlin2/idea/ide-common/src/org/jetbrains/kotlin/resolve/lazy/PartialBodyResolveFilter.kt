@@ -4,7 +4,7 @@
 
 'HashSet' @ [41:40] ==> public constructor HashSet<E : (Any..Any?)>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)) defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'probablyNothingCallableNames' @ [41:48] ==> value-parameter probablyNothingCallableNames: ProbablyNothingCallableNames defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.<init>[ValueParameterDescriptorImpl]
 
@@ -12,7 +12,7 @@ Inferred types:
 
 'HashSet' @ [42:40] ==> public constructor HashSet<E : (Any..Any?)>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)) defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'probablyNothingCallableNames' @ [42:48] ==> value-parameter probablyNothingCallableNames: ProbablyNothingCallableNames defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.<init>[ValueParameterDescriptorImpl]
 
@@ -81,15 +81,15 @@ Inferred types:
 
 'declaration' @ [57:25] ==> value-parameter declaration: KtCallableDeclaration defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'nothingFunctionNames' @ [58:25] ==> private final val nothingFunctionNames: HashSet<String> defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter[PropertyDescriptorImpl]
+'nothingFunctionNames' @ [58:25] ==> private final val nothingFunctionNames: HashSet<(String..String?)> defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter[PropertyDescriptorImpl]
 
-'add' @ [58:46] ==> public open fun add(element: String): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'add' @ [58:46] ==> public open fun add(element: (String..String?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'name' @ [58:50] ==> val name: String? defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.<init>.<anonymous>[LocalVariableDescriptor]
 
-'nothingVariableNames' @ [61:25] ==> private final val nothingVariableNames: HashSet<String> defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter[PropertyDescriptorImpl]
+'nothingVariableNames' @ [61:25] ==> private final val nothingVariableNames: HashSet<(String..String?)> defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter[PropertyDescriptorImpl]
 
-'add' @ [61:46] ==> public open fun add(element: String): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'add' @ [61:46] ==> public open fun add(element: (String..String?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'name' @ [61:50] ==> val name: String? defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.<init>.<anonymous>[LocalVariableDescriptor]
 
@@ -183,7 +183,7 @@ Inferred types:
 
 'statement' @ [87:28] ==> val statement: PsiElement defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.processBlock[LocalVariableDescriptor]
 
-'getName' @ [87:38] ==> @Nullable public abstract fun getName(): String? defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
+'getName' @ [87:38] ==> @Nullable public abstract fun getName(): String? defined in org.jetbrains.kotlin.psi.KtNamedDeclaration[JavaMethodDescriptor]
 
 'name' @ [88:21] ==> val name: String? defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.processBlock[LocalVariableDescriptor]
 
@@ -868,9 +868,9 @@ Inferred types:
                         val casts2 = possiblySmartCastInCondition(right)
                         return Pair(casts1.first.intersect(casts2.first), casts1.second.union(casts2.second))
                     }
-                }' @ [289:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Unit, entry1: Unit, entry2: Unit, entry3: Unit): Unit[SimpleFunctionDescriptorImpl]
+                }' @ [289:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Nothing, entry1: Nothing, entry2: Nothing, entry3: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Unit
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Nothing
 
 'operation' @ [289:23] ==> val operation: IElementType defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.possiblySmartCastInCondition[LocalVariableDescriptor]
 
@@ -1216,7 +1216,7 @@ Inferred types:
 
 'name' @ [402:37] ==> val name: String? defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.collectAlwaysExitPoints.<no name provided>.visitCallExpression[LocalVariableDescriptor]
 
-'nothingFunctionNames' @ [402:45] ==> private final val nothingFunctionNames: HashSet<String> defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter[PropertyDescriptorImpl]
+'nothingFunctionNames' @ [402:45] ==> private final val nothingFunctionNames: HashSet<(String..String?)> defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter[PropertyDescriptorImpl]
 
 'result' @ [403:21] ==> val result: ArrayList<KtExpression> defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.collectAlwaysExitPoints[LocalVariableDescriptor]
 
@@ -1236,7 +1236,7 @@ Inferred types:
 
 'name' @ [410:21] ==> val name: String defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.collectAlwaysExitPoints.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
-'nothingVariableNames' @ [410:29] ==> private final val nothingVariableNames: HashSet<String> defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter[PropertyDescriptorImpl]
+'nothingVariableNames' @ [410:29] ==> private final val nothingVariableNames: HashSet<(String..String?)> defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter[PropertyDescriptorImpl]
 
 'result' @ [411:21] ==> val result: ArrayList<KtExpression> defined in org.jetbrains.kotlin.resolve.lazy.PartialBodyResolveFilter.collectAlwaysExitPoints[LocalVariableDescriptor]
 

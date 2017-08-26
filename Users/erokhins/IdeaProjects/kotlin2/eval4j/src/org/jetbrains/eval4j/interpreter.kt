@@ -79,67 +79,67 @@ Inferred types:
 
 'ICONST_M1' @ [64:13] ==> public const final val ICONST_M1: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [64:26] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [64:26] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 '-' @ [64:30] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
 'ICONST_0' @ [65:13] ==> public const final val ICONST_0: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [65:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [65:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'ICONST_1' @ [66:13] ==> public const final val ICONST_1: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [66:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [66:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'ICONST_2' @ [67:13] ==> public const final val ICONST_2: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [67:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [67:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'ICONST_3' @ [68:13] ==> public const final val ICONST_3: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [68:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [68:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'ICONST_4' @ [69:13] ==> public const final val ICONST_4: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [69:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [69:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'ICONST_5' @ [70:13] ==> public const final val ICONST_5: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [70:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [70:25] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'LCONST_0' @ [72:13] ==> public const final val LCONST_0: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [72:25] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [72:25] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'LCONST_1' @ [73:13] ==> public const final val LCONST_1: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [73:25] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [73:25] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'FCONST_0' @ [75:13] ==> public const final val FCONST_0: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [75:25] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [75:25] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'FCONST_1' @ [76:13] ==> public const final val FCONST_1: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [76:25] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [76:25] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'FCONST_2' @ [77:13] ==> public const final val FCONST_2: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [77:25] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [77:25] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'DCONST_0' @ [79:13] ==> public const final val DCONST_0: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [79:25] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [79:25] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'DCONST_1' @ [80:13] ==> public const final val DCONST_1: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [80:25] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [80:25] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'BIPUSH' @ [82:13] ==> public const final val BIPUSH: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
 'SIPUSH' @ [82:21] ==> public const final val SIPUSH: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [82:31] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [82:31] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [82:36] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.eval4j.SingleInstructionInterpreter.newOperation[ValueParameterDescriptorImpl]
 
@@ -173,19 +173,19 @@ Inferred types:
 
 'cst' @ [86:23] ==> val cst: (Any..Any?) defined in org.jetbrains.eval4j.SingleInstructionInterpreter.newOperation[LocalVariableDescriptor]
 
-'int' @ [87:31] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [87:31] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'cst' @ [87:35] ==> val cst: (Any..Any?) defined in org.jetbrains.eval4j.SingleInstructionInterpreter.newOperation[LocalVariableDescriptor]
 
-'float' @ [88:33] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [88:33] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'cst' @ [88:39] ==> val cst: (Any..Any?) defined in org.jetbrains.eval4j.SingleInstructionInterpreter.newOperation[LocalVariableDescriptor]
 
-'long' @ [89:32] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [89:32] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'cst' @ [89:37] ==> val cst: (Any..Any?) defined in org.jetbrains.eval4j.SingleInstructionInterpreter.newOperation[LocalVariableDescriptor]
 
-'double' @ [90:34] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [90:34] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'cst' @ [90:41] ==> val cst: (Any..Any?) defined in org.jetbrains.eval4j.SingleInstructionInterpreter.newOperation[LocalVariableDescriptor]
 
@@ -367,7 +367,7 @@ Inferred types:
 
 'INEG' @ [117:13] ==> public const final val INEG: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [117:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [117:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 '-' @ [117:25] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
@@ -377,7 +377,7 @@ Inferred types:
 
 'IINC' @ [118:13] ==> public const final val IINC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [118:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [118:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [118:25] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -389,7 +389,7 @@ Inferred types:
 
 'L2I' @ [119:13] ==> public const final val L2I: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [119:20] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [119:20] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [119:24] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -399,7 +399,7 @@ Inferred types:
 
 'F2I' @ [120:13] ==> public const final val F2I: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [120:20] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [120:20] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [120:24] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -409,7 +409,7 @@ Inferred types:
 
 'D2I' @ [121:13] ==> public const final val D2I: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [121:20] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [121:20] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [121:24] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -419,7 +419,7 @@ Inferred types:
 
 'I2B' @ [122:13] ==> public const final val I2B: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'byte' @ [122:20] ==> public fun byte(v: Byte): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'byte' @ [122:20] ==> public fun byte(v: Byte): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [122:25] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -429,7 +429,7 @@ Inferred types:
 
 'I2C' @ [123:13] ==> public const final val I2C: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'char' @ [123:20] ==> public fun char(v: Char): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'char' @ [123:20] ==> public fun char(v: Char): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [123:25] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -439,7 +439,7 @@ Inferred types:
 
 'I2S' @ [124:13] ==> public const final val I2S: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'short' @ [124:20] ==> public fun short(v: Short): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'short' @ [124:20] ==> public fun short(v: Short): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [124:26] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -449,7 +449,7 @@ Inferred types:
 
 'FNEG' @ [126:13] ==> public const final val FNEG: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [126:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [126:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 '-' @ [126:27] ==> public final operator fun unaryMinus(): Float defined in kotlin.Float[DeserializedSimpleFunctionDescriptor]
 
@@ -459,7 +459,7 @@ Inferred types:
 
 'I2F' @ [127:13] ==> public const final val I2F: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [127:20] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [127:20] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [127:26] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -469,7 +469,7 @@ Inferred types:
 
 'L2F' @ [128:13] ==> public const final val L2F: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [128:20] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [128:20] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [128:26] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -479,7 +479,7 @@ Inferred types:
 
 'D2F' @ [129:13] ==> public const final val D2F: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [129:20] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [129:20] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [129:26] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -489,7 +489,7 @@ Inferred types:
 
 'LNEG' @ [131:13] ==> public const final val LNEG: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [131:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [131:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 '-' @ [131:26] ==> public final operator fun unaryMinus(): Long defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
@@ -499,7 +499,7 @@ Inferred types:
 
 'I2L' @ [132:13] ==> public const final val I2L: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [132:20] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [132:20] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [132:25] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -509,7 +509,7 @@ Inferred types:
 
 'F2L' @ [133:13] ==> public const final val F2L: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [133:20] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [133:20] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [133:25] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -519,7 +519,7 @@ Inferred types:
 
 'D2L' @ [134:13] ==> public const final val D2L: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [134:20] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [134:20] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [134:25] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -529,7 +529,7 @@ Inferred types:
 
 'DNEG' @ [136:13] ==> public const final val DNEG: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [136:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [136:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 '-' @ [136:28] ==> public final operator fun unaryMinus(): Double defined in kotlin.Double[DeserializedSimpleFunctionDescriptor]
 
@@ -539,7 +539,7 @@ Inferred types:
 
 'I2D' @ [137:13] ==> public const final val I2D: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [137:20] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [137:20] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [137:27] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -549,7 +549,7 @@ Inferred types:
 
 'L2D' @ [138:13] ==> public const final val L2D: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [138:20] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [138:20] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [138:27] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -559,7 +559,7 @@ Inferred types:
 
 'F2D' @ [139:13] ==> public const final val F2D: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [139:20] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [139:20] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [139:27] ==> value-parameter value: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -757,7 +757,7 @@ Inferred types:
 
 'desc' @ [192:76] ==> public final var desc: (String..String?) defined in org.jetbrains.org.objectweb.asm.tree.TypeInsnNode[JavaPropertyDescriptor]
 
-'boolean' @ [193:17] ==> public fun boolean(v: Boolean): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'boolean' @ [193:17] ==> public fun boolean(v: Boolean): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'eval' @ [193:25] ==> private final val eval: Eval defined in org.jetbrains.eval4j.SingleInstructionInterpreter[PropertyDescriptorImpl]
 
@@ -970,7 +970,7 @@ Inferred types:
 
 'IADD' @ [223:13] ==> public const final val IADD: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [223:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [223:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [223:25] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -982,7 +982,7 @@ Inferred types:
 
 'ISUB' @ [224:13] ==> public const final val ISUB: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [224:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [224:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [224:25] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -994,7 +994,7 @@ Inferred types:
 
 'IMUL' @ [225:13] ==> public const final val IMUL: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [225:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [225:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [225:25] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1006,7 +1006,7 @@ Inferred types:
 
 'IDIV' @ [226:13] ==> public const final val IDIV: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [226:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [226:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [226:25] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1018,7 +1018,7 @@ Inferred types:
 
 'IREM' @ [227:13] ==> public const final val IREM: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [227:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [227:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [227:25] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1030,7 +1030,7 @@ Inferred types:
 
 'ISHL' @ [228:13] ==> public const final val ISHL: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [228:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [228:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [228:25] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1042,7 +1042,7 @@ Inferred types:
 
 'ISHR' @ [229:13] ==> public const final val ISHR: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [229:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [229:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [229:25] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1054,7 +1054,7 @@ Inferred types:
 
 'IUSHR' @ [230:13] ==> public const final val IUSHR: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [230:22] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [230:22] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [230:26] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1066,7 +1066,7 @@ Inferred types:
 
 'IAND' @ [231:13] ==> public const final val IAND: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [231:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [231:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [231:25] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1078,7 +1078,7 @@ Inferred types:
 
 'IOR' @ [232:13] ==> public const final val IOR: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [232:20] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [232:20] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [232:24] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1090,7 +1090,7 @@ Inferred types:
 
 'IXOR' @ [233:13] ==> public const final val IXOR: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'int' @ [233:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [233:21] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [233:25] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1102,7 +1102,7 @@ Inferred types:
 
 'LADD' @ [235:13] ==> public const final val LADD: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [235:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [235:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [235:26] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1114,7 +1114,7 @@ Inferred types:
 
 'LSUB' @ [236:13] ==> public const final val LSUB: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [236:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [236:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [236:26] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1126,7 +1126,7 @@ Inferred types:
 
 'LMUL' @ [237:13] ==> public const final val LMUL: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [237:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [237:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [237:26] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1138,7 +1138,7 @@ Inferred types:
 
 'LDIV' @ [238:13] ==> public const final val LDIV: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [238:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [238:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [238:26] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1150,7 +1150,7 @@ Inferred types:
 
 'LREM' @ [239:13] ==> public const final val LREM: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [239:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [239:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [239:26] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1162,7 +1162,7 @@ Inferred types:
 
 'LSHL' @ [240:13] ==> public const final val LSHL: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [240:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [240:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [240:26] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1174,7 +1174,7 @@ Inferred types:
 
 'LSHR' @ [241:13] ==> public const final val LSHR: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [241:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [241:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [241:26] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1186,7 +1186,7 @@ Inferred types:
 
 'LUSHR' @ [242:13] ==> public const final val LUSHR: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [242:22] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [242:22] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [242:27] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1198,7 +1198,7 @@ Inferred types:
 
 'LAND' @ [243:13] ==> public const final val LAND: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [243:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [243:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [243:26] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1210,7 +1210,7 @@ Inferred types:
 
 'LOR' @ [244:13] ==> public const final val LOR: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [244:20] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [244:20] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [244:25] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1222,7 +1222,7 @@ Inferred types:
 
 'LXOR' @ [245:13] ==> public const final val LXOR: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'long' @ [245:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'long' @ [245:21] ==> public fun long(v: Long): LongValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [245:26] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1234,7 +1234,7 @@ Inferred types:
 
 'FADD' @ [247:13] ==> public const final val FADD: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [247:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [247:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [247:27] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1246,7 +1246,7 @@ Inferred types:
 
 'FSUB' @ [248:13] ==> public const final val FSUB: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [248:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [248:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [248:27] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1258,7 +1258,7 @@ Inferred types:
 
 'FMUL' @ [249:13] ==> public const final val FMUL: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [249:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [249:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [249:27] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1270,7 +1270,7 @@ Inferred types:
 
 'FDIV' @ [250:13] ==> public const final val FDIV: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [250:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [250:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [250:27] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1282,7 +1282,7 @@ Inferred types:
 
 'FREM' @ [251:13] ==> public const final val FREM: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'float' @ [251:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'float' @ [251:21] ==> public fun float(v: Float): FloatValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [251:27] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1294,7 +1294,7 @@ Inferred types:
 
 'DADD' @ [253:13] ==> public const final val DADD: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [253:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [253:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [253:28] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1306,7 +1306,7 @@ Inferred types:
 
 'DSUB' @ [254:13] ==> public const final val DSUB: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [254:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [254:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [254:28] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1318,7 +1318,7 @@ Inferred types:
 
 'DMUL' @ [255:13] ==> public const final val DMUL: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [255:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [255:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [255:28] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1330,7 +1330,7 @@ Inferred types:
 
 'DDIV' @ [256:13] ==> public const final val DDIV: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [256:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [256:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [256:28] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1342,7 +1342,7 @@ Inferred types:
 
 'DREM' @ [257:13] ==> public const final val DREM: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'double' @ [257:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'double' @ [257:21] ==> public fun double(v: Double): DoubleValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'value1' @ [257:28] ==> value-parameter value1: Value defined in org.jetbrains.eval4j.SingleInstructionInterpreter.binaryOperation[ValueParameterDescriptorImpl]
 
@@ -1362,7 +1362,7 @@ Inferred types:
 
 'long' @ [261:33] ==> public val Value.long: Long defined in org.jetbrains.eval4j in file values.kt[PropertyDescriptorImpl]
 
-'int' @ [263:17] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [263:17] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'when {
                     l1 > l2 -> 1
@@ -1394,7 +1394,7 @@ Inferred types:
 
 'float' @ [273:33] ==> public val Value.float: Float defined in org.jetbrains.eval4j in file values.kt[PropertyDescriptorImpl]
 
-'int' @ [275:17] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [275:17] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'when {
                     l1 > l2 -> 1
@@ -1444,7 +1444,7 @@ Inferred types:
 
 'double' @ [287:33] ==> public val Value.double: Double defined in org.jetbrains.eval4j in file values.kt[PropertyDescriptorImpl]
 
-'int' @ [289:17] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [289:17] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'when {
                     l1 > l2 -> 1
@@ -1708,6 +1708,8 @@ Inferred types:
 Inferred types:
     <T> -> Value
     <R> -> Int
+
+'int' @ [341:90] ==> public val Value.int: Int defined in org.jetbrains.eval4j in file values.kt[PropertyDescriptorImpl]
 
 'INVOKEVIRTUAL' @ [344:13] ==> public const final val INVOKEVIRTUAL: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 

@@ -119,7 +119,7 @@ Inferred types:
 
 'call' @ [97:27] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueArguments' @ [97:32] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
@@ -137,7 +137,7 @@ Inferred types:
 
 'valueArguments' @ [99:38] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 '!' @ [100:16] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -145,7 +145,7 @@ Inferred types:
 
 'resultingDescriptor' @ [100:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueParameters' @ [100:50] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -165,7 +165,7 @@ Inferred types:
 
 'element' @ [105:45] ==> public final val <T : PsiElement> KotlinCallableDefinitionUsage<out PsiElement>.element: PsiElement?[MyPropertyDescriptor]
 Inferred types:
-    <T : PsiElement> -> PsiElement
+    <T : PsiElement> -> Captured(*)
 
 'calleeElement' @ [106:17] ==> val calleeElement: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.<get-isPropertyJavaUsage>[LocalVariableDescriptor]
 
@@ -175,7 +175,7 @@ Inferred types:
 
 'resultingDescriptor' @ [107:34] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 '!' @ [111:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -260,7 +260,7 @@ Inferred types:
 
 'extensionReceiver' @ [141:49] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'receiverValue' @ [141:70] ==> value-parameter receiverValue: ReceiverValue? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.getReceiverExpressionIfMatched[ValueParameterDescriptorImpl]
 
@@ -363,7 +363,7 @@ Inferred types:
 
 'resultingDescriptor' @ [160:78] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'element' @ [161:21] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.needSeparateVariable[ValueParameterDescriptorImpl]
 
@@ -389,7 +389,7 @@ Inferred types:
 
 'copy' @ [172:40] ==> public abstract fun copy(): (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 
-'createNameCounterpartMap' @ [174:34] ==> public fun createNameCounterpartMap(from: KtElement, to: KtElement): Map<KtSimpleNameExpression, KtSimpleNameExpression> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'createNameCounterpartMap' @ [174:34] ==> public fun createNameCounterpartMap(from: KtElement, to: KtElement): Map<KtSimpleNameExpression, KtSimpleNameExpression> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractorUtil.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [174:59] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.substituteReferences[ValueParameterDescriptorImpl]
 
@@ -399,7 +399,7 @@ Inferred types:
 
 'valueArguments' @ [176:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'ArrayList' @ [178:28] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -444,7 +444,7 @@ Inferred types:
 
 'resultingDescriptor' @ [185:56] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueParameters' @ [185:76] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -480,7 +480,7 @@ Inferred types:
 
 'extensionReceiver' @ [195:69] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [195:88] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.substituteReferences[LocalVariableDescriptor]
 
@@ -492,7 +492,7 @@ Inferred types:
 
 'dispatchReceiver' @ [196:72] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [196:90] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.substituteReferences[LocalVariableDescriptor]
 
@@ -504,11 +504,11 @@ Inferred types:
 
 'argumentExpression' @ [200:38] ==> var argumentExpression: KtExpression? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.substituteReferences[LocalVariableDescriptor]
 
-'==' @ [201:20] ==> public open fun equals(other: Any?): Boolean defined in org.jetbrains.kotlin.psi.KtElement[DeserializedSimpleFunctionDescriptor]
+'==' @ [201:20] ==> public open fun equals(other: Any?): Boolean defined in com.intellij.psi.NavigatablePsiElement[DeserializedSimpleFunctionDescriptor]
 
-'getNonStrictParentOfType' @ [201:32] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getNonStrictParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out ({KtElement & ASTDelegatePsiElement}..{KtElement & ASTDelegatePsiElement}?)>..Class<out ({KtElement & ASTDelegatePsiElement}..{KtElement & ASTDelegatePsiElement}?)>?)): {KtElement & ASTDelegatePsiElement}? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'getNonStrictParentOfType' @ [201:32] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getNonStrictParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (NavigatablePsiElement..NavigatablePsiElement?)>..Class<out (NavigatablePsiElement..NavigatablePsiElement?)>?)): NavigatablePsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> {KtElement & ASTDelegatePsiElement}
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.NavigatablePsiElement..com.intellij.psi.NavigatablePsiElement?)
 
 'element' @ [201:57] ==> public final val KotlinFunctionCallUsage.element: KtCallElement?[MyPropertyDescriptor]
 
@@ -643,7 +643,7 @@ Inferred types:
 
 'sort' @ [238:23] ==> public open fun <T : (Any..Any?)> sort(@NotNull p0: (MutableList<(Pair<KtExpression, KtExpression>..Pair<KtExpression, KtExpression>?)>..List<(Pair<KtExpression, KtExpression>..Pair<KtExpression, KtExpression>?)>), @NotNull p1: Comparator<in (Pair<KtExpression, KtExpression>..Pair<KtExpression, KtExpression>?)>): Unit defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Pair<KtExpression, KtExpression>
+    <T : (Any..Any?)> -> (kotlin.Pair<org.jetbrains.kotlin.psi.KtExpression, org.jetbrains.kotlin.psi.KtExpression>..kotlin.Pair<org.jetbrains.kotlin.psi.KtExpression, org.jetbrains.kotlin.psi.KtExpression>?)
 
 'replacements' @ [238:28] ==> val replacements: ArrayList<Pair<KtExpression, KtExpression>> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.substituteReferences[LocalVariableDescriptor]
 
@@ -705,7 +705,7 @@ Inferred types:
 
 'resultingDescriptor' @ [274:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueParameters' @ [274:70] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -715,22 +715,19 @@ Inferred types:
 
 'valueArguments' @ [275:29] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'parameterDescriptor' @ [275:44] ==> val parameterDescriptor: (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.getResolvedValueArgument[LocalVariableDescriptor]
 
-'NotNullableCopyableUserDataProperty' @ [279:16] ==> public constructor NotNullableCopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtValueArgument
-    <T : Any> -> Boolean
+'getValue' @ [279:16] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [279:56] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'element' @ [286:36] ==> value-parameter element: KtCallElement defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.getArgumentByDefaultValue[ValueParameterDescriptorImpl]
 
-'isInsideOfCallerBody' @ [286:44] ==> public fun KtElement.isInsideOfCallerBody(allUsages: Array<out UsageInfo>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'isInsideOfCallerBody' @ [286:44] ==> public fun KtElement.isInsideOfCallerBody(allUsages: Array<out UsageInfo>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file changeSignatureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'allUsages' @ [286:65] ==> value-parameter allUsages: Array<out UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.getArgumentByDefaultValue[ValueParameterDescriptorImpl]
 
@@ -871,13 +868,13 @@ Inferred types:
 
 'extensionReceiver' @ [321:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [322:32] ==> private final val resolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage[PropertyDescriptorImpl]
 
 'dispatchReceiver' @ [322:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'newReceiverInfo' @ [325:13] ==> val newReceiverInfo: KotlinParameterInfo? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinFunctionCallUsage.updateArgumentsAndReceiver[LocalVariableDescriptor]
 

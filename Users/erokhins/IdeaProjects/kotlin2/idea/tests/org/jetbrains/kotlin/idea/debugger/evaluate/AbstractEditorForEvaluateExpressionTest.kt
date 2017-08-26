@@ -251,9 +251,7 @@ Inferred types:
 
 'putCopyableUserData' @ [128:14] ==> public open fun <T : (Any..Any?)> putCopyableUserData(@NotNull p0: Key<((KtExpression) -> KotlinType?..((KtExpression) -> KotlinType?)?)>, p1: ((KtExpression) -> KotlinType?)?): Unit defined in org.jetbrains.kotlin.psi.KtCodeFragment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<KtExpression, KotlinType?>
-
-'KtCodeFragment' @ [128:34] ==> public companion object defined in org.jetbrains.kotlin.psi.KtCodeFragment[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> ((org.jetbrains.kotlin.psi.KtExpression) -> org.jetbrains.kotlin.types.KotlinType?..((org.jetbrains.kotlin.psi.KtExpression) -> org.jetbrains.kotlin.types.KotlinType?)?)
 
 'RUNTIME_TYPE_EVALUATOR' @ [128:49] ==> public final val RUNTIME_TYPE_EVALUATOR: Key<(KtExpression) -> KotlinType?> defined in org.jetbrains.kotlin.psi.KtCodeFragment.Companion[DeserializedPropertyDescriptor]
 
@@ -267,7 +265,7 @@ Inferred types:
 
 'getParentOfType' @ [129:111] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtElement..KtElement?)>): KtElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtElement
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'elementAt' @ [129:127] ==> val elementAt: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.evaluate.configureByCodeFragment[LocalVariableDescriptor]
 
@@ -285,7 +283,7 @@ Inferred types:
 
 'getChildOfType' @ [131:62] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getChildOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtTypeReference..KtTypeReference?)>): KtTypeReference? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtTypeReference
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
 
 'codeFragment' @ [131:77] ==> val codeFragment: KtBlockCodeFragment defined in org.jetbrains.kotlin.idea.debugger.evaluate.configureByCodeFragment.<anonymous>[LocalVariableDescriptor]
 
@@ -337,8 +335,6 @@ Inferred types:
 
 'codeFragmentText' @ [145:17] ==> val codeFragmentText: String defined in org.jetbrains.kotlin.idea.debugger.evaluate.createCodeFragment[LocalVariableDescriptor]
 
-'KotlinCodeFragmentFactory' @ [146:17] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory[FakeCallableDescriptorForObject]
-
 'getContextElement' @ [146:43] ==> public final fun getContextElement(elementAt: PsiElement?): PsiElement? defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion[DeserializedSimpleFunctionDescriptor]
 
 'contextElement' @ [146:61] ==> value-parameter contextElement: PsiElement defined in org.jetbrains.kotlin.idea.debugger.evaluate.createCodeFragment[ValueParameterDescriptorImpl]
@@ -348,8 +344,6 @@ Inferred types:
 'createBlockCodeFragment' @ [149:23] ==> public final fun createBlockCodeFragment(text: String, context: PsiElement?): KtBlockCodeFragment defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
 
 'codeFragmentText' @ [150:13] ==> val codeFragmentText: String defined in org.jetbrains.kotlin.idea.debugger.evaluate.createCodeFragment[LocalVariableDescriptor]
-
-'KotlinCodeFragmentFactory' @ [151:13] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory[FakeCallableDescriptorForObject]
 
 'getContextElement' @ [151:39] ==> public final fun getContextElement(elementAt: PsiElement?): PsiElement? defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion[DeserializedSimpleFunctionDescriptor]
 

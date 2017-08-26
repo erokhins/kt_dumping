@@ -22,13 +22,13 @@ Inferred types:
 
 'java' @ [51:46] ==> public val <T> KClass<out TypeBounds.Bound>.java: Class<out TypeBounds.Bound> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Bound
+    <T> -> Captured(out Bound)
 
 'other' @ [51:54] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.resolve.calls.inference.TypeBounds.Bound.equals[ValueParameterDescriptorImpl]
 
 'java' @ [51:67] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'other' @ [53:25] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.resolve.calls.inference.TypeBounds.Bound.equals[ValueParameterDescriptorImpl]
 

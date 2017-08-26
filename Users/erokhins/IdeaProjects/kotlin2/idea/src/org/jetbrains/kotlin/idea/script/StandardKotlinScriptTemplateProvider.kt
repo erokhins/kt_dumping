@@ -10,10 +10,10 @@ Inferred types:
 Inferred types:
     <T> -> File
 
-'mapOf' @ [40:16] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {Comparable<{Boolean & String}> & java.io.Serializable}?>): Map<String, {Comparable<{Boolean & String}> & java.io.Serializable}?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [40:16] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, Any?>): Map<String, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> {Comparable<{Boolean & String}> & java.io.Serializable}?
+    <V> -> Any?
 
 'KotlinScriptResolveScopeProvider' @ [41:17] ==> public companion object defined in org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptResolveScopeProvider[FakeCallableDescriptorForObject]
 
@@ -67,12 +67,12 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [63:44] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'with' @ [64:29] ==> @InlineOnly public inline fun <T, R> with(receiver: KotlinPaths, block: KotlinPaths.() -> List<File>): List<File> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KotlinPaths
     <R> -> List<File>
-
-'PathUtil' @ [64:34] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'kotlinPathsForIdeaPlugin' @ [64:43] ==> @JvmStatic public final val kotlinPathsForIdeaPlugin: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 

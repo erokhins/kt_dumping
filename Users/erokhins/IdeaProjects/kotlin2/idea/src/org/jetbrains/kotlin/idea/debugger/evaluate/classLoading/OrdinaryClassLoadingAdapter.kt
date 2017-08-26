@@ -18,7 +18,7 @@ Inferred types:
 
 'debugProcess' @ [41:94] ==> public final val EvaluationContextImpl.debugProcess: DebugProcessImpl[MyPropertyDescriptor]
 
-'isDexDebug' @ [41:107] ==> public fun DebugProcess.isDexDebug(): Boolean defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'isDexDebug' @ [41:107] ==> public fun DebugProcess.isDexDebug(): Boolean defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [45:23] ==> value-parameter context: EvaluationContextImpl defined in org.jetbrains.kotlin.idea.debugger.evaluate.classLoading.OrdinaryClassLoadingAdapter.loadClasses[ValueParameterDescriptorImpl]
 
@@ -230,19 +230,19 @@ Inferred types:
 
 'e' @ [117:80] ==> val e: Exception /* = Exception */ defined in org.jetbrains.kotlin.idea.debugger.evaluate.classLoading.OrdinaryClassLoadingAdapter.defineClass[LocalVariableDescriptor]
 
-'lazy' @ [123:33] ==> public fun <T> lazy(initializer: () -> ByteArray): Lazy<ByteArray> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [123:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ByteArray
+    <T> -> T
 
 'this' @ [124:31] ==> <this> defined in org.jetbrains.kotlin.idea.debugger.evaluate.classLoading.OrdinaryClassLoadingAdapter.ClassBytes[LazyClassReceiverParameterDescriptor]
 
 'java' @ [124:43] ==> public val <T> KClass<out OrdinaryClassLoadingAdapter.ClassBytes>.java: Class<out OrdinaryClassLoadingAdapter.ClassBytes> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ClassBytes
+    <T> -> Captured(out ClassBytes)
 
 'classLoader' @ [124:48] ==> public final val <T : (Any..Any?)> Class<out OrdinaryClassLoadingAdapter.ClassBytes>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClassBytes
+    <T : (Any..Any?)> -> Captured(out ClassBytes)
 
 'getResourceAsStream' @ [124:60] ==> public open fun getResourceAsStream(p0: (String..String?)): (InputStream..InputStream?) defined in java.lang.ClassLoader[JavaMethodDescriptor]
 

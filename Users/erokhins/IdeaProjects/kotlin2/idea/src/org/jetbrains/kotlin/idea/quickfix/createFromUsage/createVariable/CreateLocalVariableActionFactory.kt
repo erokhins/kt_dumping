@@ -6,7 +6,7 @@ Inferred types:
 
 'getParentElementOfType' @ [40:36] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtNameReferenceExpression..KtNameReferenceExpression?)>..Class<(KtNameReferenceExpression..KtNameReferenceExpression?)>?)): KtNameReferenceExpression? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNameReferenceExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNameReferenceExpression..org.jetbrains.kotlin.psi.KtNameReferenceExpression?)
 
 'diagnostic' @ [40:59] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.CreateLocalVariableActionFactory.createAction[ValueParameterDescriptorImpl]
 
@@ -81,7 +81,9 @@ Inferred types:
 
 'container' @ [59:45] ==> val container: KtElement defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.CreateLocalVariableActionFactory.createAction[LocalVariableDescriptor]
 
-'ConvertToBlockBodyIntention' @ [60:29] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.ConvertToBlockBodyIntention[FakeCallableDescriptorForObject]
+'!!' @ [60:29] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KtExpression?): KtExpression[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KtExpression
 
 'convert' @ [60:57] ==> public final fun convert(declaration: KtDeclarationWithBody): KtDeclarationWithBody defined in org.jetbrains.kotlin.idea.intentions.ConvertToBlockBodyIntention.Companion[SimpleFunctionDescriptorImpl]
 
@@ -117,7 +119,7 @@ Inferred types:
 
 'originalElement' @ [69:25] ==> var originalElement: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.CreateLocalVariableActionFactory.createAction.<no name provided>.invoke[LocalVariableDescriptor]
 
-'getExpressionForTypeGuess' @ [69:41] ==> public fun KtExpression.getExpressionForTypeGuess(): KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getExpressionForTypeGuess' @ [69:41] ==> public fun KtExpression.getExpressionForTypeGuess(): KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'if (varExpected) Variance.INVARIANT else Variance.OUT_VARIANCE' @ [70:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Variance, elseBranch: Variance): Variance[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -141,7 +143,7 @@ Inferred types:
 
 'singletonList' @ [72:114] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KtBlockExpression..KtBlockExpression?)): (MutableList<(KtBlockExpression..KtBlockExpression?)>..List<(KtBlockExpression..KtBlockExpression?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtBlockExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtBlockExpression..org.jetbrains.kotlin.psi.KtBlockExpression?)
 
 'actualContainer' @ [72:128] ==> val actualContainer: KtBlockExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.CreateLocalVariableActionFactory.createAction.<no name provided>.invoke[LocalVariableDescriptor]
 

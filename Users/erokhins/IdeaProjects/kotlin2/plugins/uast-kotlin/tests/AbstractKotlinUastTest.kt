@@ -40,6 +40,8 @@
 
 'environment' @ [57:86] ==> val environment: KotlinCoreEnvironment defined in org.jetbrains.uast.test.kotlin.AbstractKotlinUastTest.getVirtualFile[LocalVariableDescriptor]
 
+'createPackagePartProvider' @ [57:99] ==> public final fun createPackagePartProvider(scope: GlobalSearchScope): JvmPackagePartProvider defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[DeserializedSimpleFunctionDescriptor]
+
 'getInstance' @ [60:38] ==> @NotNull public open fun getInstance(): VirtualFileManager defined in com.intellij.openapi.vfs.VirtualFileManager[JavaMethodDescriptor]
 
 'getFileSystem' @ [60:52] ==> public abstract fun getFileSystem(p0: (String..String?)): (VirtualFileSystem..VirtualFileSystem?) defined in com.intellij.openapi.vfs.VirtualFileManager[JavaMethodDescriptor]
@@ -74,9 +76,7 @@
 
 'getExtensionPoint' @ [70:14] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensionPoint(@NotNull p0: ExtensionPointName<(UastLanguagePlugin..UastLanguagePlugin?)>): ExtensionPoint<(UastLanguagePlugin..UastLanguagePlugin?)> defined in com.intellij.openapi.extensions.ExtensionsArea[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UastLanguagePlugin
-
-'UastLanguagePlugin' @ [70:32] ==> public companion object defined in org.jetbrains.uast.UastLanguagePlugin[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.uast.UastLanguagePlugin..org.jetbrains.uast.UastLanguagePlugin?)
 
 'extensionPointName' @ [70:51] ==> public final val extensionPointName: ExtensionPointName<UastLanguagePlugin> defined in org.jetbrains.uast.UastLanguagePlugin.Companion[DeserializedPropertyDescriptor]
 
@@ -88,9 +88,7 @@ Inferred types:
 
 'getExtensionPoint' @ [72:14] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensionPoint(@NotNull p0: ExtensionPointName<(UEvaluatorExtension..UEvaluatorExtension?)>): ExtensionPoint<(UEvaluatorExtension..UEvaluatorExtension?)> defined in com.intellij.openapi.extensions.ExtensionsArea[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UEvaluatorExtension
-
-'UEvaluatorExtension' @ [72:32] ==> public companion object defined in org.jetbrains.uast.evaluation.UEvaluatorExtension[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.uast.evaluation.UEvaluatorExtension..org.jetbrains.uast.evaluation.UEvaluatorExtension?)
 
 'EXTENSION_POINT_NAME' @ [72:52] ==> public final val EXTENSION_POINT_NAME: ExtensionPointName<UEvaluatorExtension> defined in org.jetbrains.uast.evaluation.UEvaluatorExtension.Companion[DeserializedPropertyDescriptor]
 
@@ -102,7 +100,7 @@ Inferred types:
 
 'registerService' @ [75:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(KotlinUastBindingContextProviderService..KotlinUastBindingContextProviderService?)>, @NotNull p1: Class<out (KotlinUastBindingContextProviderService..KotlinUastBindingContextProviderService?)>): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinUastBindingContextProviderService
+    <T : (Any..Any?)> -> (org.jetbrains.uast.kotlin.KotlinUastBindingContextProviderService..org.jetbrains.uast.kotlin.KotlinUastBindingContextProviderService?)
 
 'java' @ [76:64] ==> public val <T> KClass<KotlinUastBindingContextProviderService>.java: Class<KotlinUastBindingContextProviderService> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -172,7 +170,7 @@ Inferred types:
 
 'FULL_JDK' @ [103:84] ==> enum entry FULL_JDK defined in org.jetbrains.kotlin.test.TestJdkKind[FakeCallableDescriptorForObject]
 
-'apply' @ [103:94] ==> @InlineOnly public inline fun <T> CompilerConfiguration.apply(block: CompilerConfiguration.() -> Unit): CompilerConfiguration defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [103:94] ==> @InlineOnly public inline fun <T> CompilerConfiguration.apply(block: (CompilerConfiguration).() -> Unit): CompilerConfiguration defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> CompilerConfiguration
 
@@ -190,7 +188,7 @@ Inferred types:
 
 'put' @ [107:13] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>, @NotNull p1: MessageCollector): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [107:38] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -198,9 +196,7 @@ Inferred types:
 
 'put' @ [109:13] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [109:17] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [109:41] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 

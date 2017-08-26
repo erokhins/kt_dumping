@@ -2,8 +2,8 @@
 
 'createCollectiveSlice' @ [31:89] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> createCollectiveSlice(): (WritableSlice<(ClassDescriptor..ClassDescriptor?), (List<String>..List<String>?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (List<String>..List<String>?)>?) defined in org.jetbrains.kotlin.util.slicedMap.Slices[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassDescriptor
-    <V : (Any..Any?)> -> List<String>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'initSliceDebugNames' @ [34:32] ==> public open fun initSliceDebugNames(p0: (Class<*>..Class<*>?)): (Void..Void?) defined in org.jetbrains.kotlin.util.slicedMap.BasicWritableSlice[JavaMethodDescriptor]
 
@@ -17,8 +17,8 @@ Inferred types:
 
 'record' @ [39:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(ClassDescriptor..ClassDescriptor?), (List<String>..List<String>?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (List<String>..List<String>?)>?), p1: (ClassDescriptor..ClassDescriptor?), p2: (List<String>..List<String>?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassDescriptor
-    <V : (Any..Any?)> -> List<String>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'INCOMPLETE_HIERARCHY' @ [39:22] ==> @JvmField public final val INCOMPLETE_HIERARCHY: WritableSlice<ClassDescriptor, List<String>> defined in org.jetbrains.kotlin.load.java.components.TraceBasedErrorReporter.Companion[PropertyDescriptorImpl]
 

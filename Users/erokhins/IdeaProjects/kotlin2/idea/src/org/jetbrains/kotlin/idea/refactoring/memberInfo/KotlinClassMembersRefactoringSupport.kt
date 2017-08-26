@@ -2,7 +2,7 @@
 
 'member' @ [34:33] ==> public final val <T : (PsiElement..PsiElement?)> MemberInfoBase<out (PsiElement..PsiElement?)>.member: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'member' @ [35:16] ==> val member: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinClassMembersRefactoringSupport.isProperMember[LocalVariableDescriptor]
 
@@ -20,7 +20,7 @@ Inferred types:
 
 'overrides' @ [38:60] ==> public final val <T : (PsiElement..PsiElement?)> MemberInfoBase<out (PsiElement..PsiElement?)>.overrides: (Boolean..Boolean?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'DependentMembersCollectorBase<KtNamedDeclaration, PsiNamedElement>' @ [42:25] ==> public constructor DependentMembersCollectorBase<T : (PsiElement..PsiElement?), C : (Any..Any?)>(p0: (PsiNamedElement..PsiNamedElement?), p1: (PsiNamedElement..PsiNamedElement?)) defined in com.intellij.refactoring.classMembers.DependentMembersCollectorBase[JavaClassConstructorDescriptor]
 Inferred types:
@@ -60,9 +60,9 @@ Inferred types:
 
 'clazz' @ [52:44] ==> value-parameter clazz: Any defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinClassMembersRefactoringSupport.createDependentMembersCollector[ValueParameterDescriptorImpl]
 
-'?:' @ [52:54] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<Any>?, right: List<Any>): List<Any>[SimpleFunctionDescriptorImpl]
+'?:' @ [52:54] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Iterable<Any>?, right: Iterable<Any>): Iterable<Any>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<Any>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Iterable<Any>
 
 'clazz' @ [52:55] ==> value-parameter clazz: Any defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinClassMembersRefactoringSupport.createDependentMembersCollector[ValueParameterDescriptorImpl]
 

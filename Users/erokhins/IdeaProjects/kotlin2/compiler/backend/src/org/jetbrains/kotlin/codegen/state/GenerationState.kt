@@ -8,9 +8,7 @@
 
 'get' @ [61:45] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [61:49] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [61:73] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -40,7 +38,7 @@ Inferred types:
 
 'get' @ [99:42] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(IncrementalCompilationComponents..IncrementalCompilationComponents?)>): IncrementalCompilationComponents? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IncrementalCompilationComponents
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.incremental.components.IncrementalCompilationComponents..org.jetbrains.kotlin.load.kotlin.incremental.components.IncrementalCompilationComponents?)
 
 'INCREMENTAL_COMPILATION_COMPONENTS' @ [99:67] ==> public final val INCREMENTAL_COMPILATION_COMPONENTS: (CompilerConfigurationKey<(IncrementalCompilationComponents..IncrementalCompilationComponents?)>..CompilerConfigurationKey<(IncrementalCompilationComponents..IncrementalCompilationComponents?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -134,7 +132,7 @@ Inferred types:
 
 'java' @ [117:129] ==> public val <T> KClass<out GenerationState>.java: Class<out GenerationState> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> GenerationState
+    <T> -> Captured(out GenerationState)
 
 'extraJvmDiagnosticsTrace' @ [121:45] ==> public final val extraJvmDiagnosticsTrace: BindingTrace defined in org.jetbrains.kotlin.codegen.state.GenerationState[PropertyDescriptorImpl]
 
@@ -154,17 +152,13 @@ Inferred types:
 
 'get' @ [127:32] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(JvmTarget..JvmTarget?)>): JvmTarget? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JvmTarget
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.JvmTarget..org.jetbrains.kotlin.config.JvmTarget?)
 
 'JVM_TARGET' @ [127:57] ==> public final val JVM_TARGET: (CompilerConfigurationKey<(JvmTarget..JvmTarget?)>..CompilerConfigurationKey<(JvmTarget..JvmTarget?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
-
-'JvmTarget' @ [127:72] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [127:82] ==> @field:JvmField public final val DEFAULT: JvmTarget defined in org.jetbrains.kotlin.config.JvmTarget.Companion[DeserializedPropertyDescriptor]
 
 'target' @ [128:33] ==> public final val target: JvmTarget defined in org.jetbrains.kotlin.codegen.state.GenerationState[PropertyDescriptorImpl]
-
-'JvmTarget' @ [128:43] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_8' @ [128:53] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -202,11 +196,7 @@ Inferred types:
 
 'wantsDiagnostics' @ [135:74] ==> value-parameter wantsDiagnostics: Boolean = ... defined in org.jetbrains.kotlin.codegen.state.GenerationState.<init>[ValueParameterDescriptorImpl]
 
-'BindingTraceFilter' @ [135:92] ==> public companion object defined in org.jetbrains.kotlin.resolve.BindingTraceFilter[FakeCallableDescriptorForObject]
-
 'ACCEPT_ALL' @ [135:111] ==> public final val ACCEPT_ALL: BindingTraceFilter defined in org.jetbrains.kotlin.resolve.BindingTraceFilter.Companion[DeserializedPropertyDescriptor]
-
-'BindingTraceFilter' @ [135:127] ==> public companion object defined in org.jetbrains.kotlin.resolve.BindingTraceFilter[FakeCallableDescriptorForObject]
 
 'NO_DIAGNOSTICS' @ [135:146] ==> public final val NO_DIAGNOSTICS: BindingTraceFilter defined in org.jetbrains.kotlin.resolve.BindingTraceFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -276,8 +266,6 @@ Inferred types:
 
 'getBoolean' @ [161:51] ==> public open fun getBoolean(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>): Boolean defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 
-'CommonConfigurationKeys' @ [161:62] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
-
 'DISABLE_INLINE' @ [161:86] ==> @field:JvmField public final val DISABLE_INLINE: CompilerConfigurationKey<Boolean> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
 'configuration' @ [162:45] ==> public final val configuration: CompilerConfiguration defined in org.jetbrains.kotlin.codegen.state.GenerationState[PropertyDescriptorImpl]
@@ -314,8 +302,6 @@ Inferred types:
 
 'supportsFeature' @ [172:57] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [172:73] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'InlineConstVals' @ [172:89] ==> enum entry InlineConstVals defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'this' @ [175:9] ==> <this> defined in org.jetbrains.kotlin.codegen.state.GenerationState[LazyClassReceiverParameterDescriptor]
@@ -324,7 +310,7 @@ Inferred types:
 
 'builderFactory' @ [175:42] ==> value-parameter builderFactory: ClassBuilderFactory defined in org.jetbrains.kotlin.codegen.state.GenerationState.<init>[ValueParameterDescriptorImpl]
 
-'wrapWith' @ [176:18] ==> private fun ClassBuilderFactory.wrapWith(vararg wrappers: (ClassBuilderFactory) -> ClassBuilderFactory): ClassBuilderFactory defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'wrapWith' @ [176:18] ==> private fun ClassBuilderFactory.wrapWith(vararg wrappers: (ClassBuilderFactory) -> ClassBuilderFactory): ClassBuilderFactory defined in org.jetbrains.kotlin.codegen.state in file GenerationState.kt[SimpleFunctionDescriptorImpl]
 
 'OptimizationClassBuilderFactory' @ [177:23] ==> public constructor OptimizationClassBuilderFactory(delegate: (ClassBuilderFactory..ClassBuilderFactory?), disableOptimization: Boolean) defined in org.jetbrains.kotlin.codegen.optimization.OptimizationClassBuilderFactory[JavaClassConstructorDescriptor]
 
@@ -334,7 +320,7 @@ Inferred types:
 
 'get' @ [177:73] ==> @NotNull public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Boolean defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'DISABLE_OPTIMIZATION' @ [177:98] ==> public final val DISABLE_OPTIMIZATION: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -378,7 +364,7 @@ Inferred types:
 
 'get' @ [184:37] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DECLARATIONS_JSON_PATH' @ [184:62] ==> public final val DECLARATIONS_JSON_PATH: (CompilerConfigurationKey<(String..String?)>..CompilerConfigurationKey<(String..String?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -400,8 +386,6 @@ Inferred types:
 'wrapWith' @ [187:18] ==> private inline fun <T> ClassBuilderFactory.wrapWith(elements: Iterable<ClassBuilderInterceptorExtension>, wrapper: (ClassBuilderFactory, ClassBuilderInterceptorExtension) -> ClassBuilderFactory): ClassBuilderFactory defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> ClassBuilderInterceptorExtension
-
-'ClassBuilderInterceptorExtension' @ [187:27] ==> public companion object : ProjectExtensionDescriptor<ClassBuilderInterceptorExtension> defined in org.jetbrains.kotlin.codegen.extensions.ClassBuilderInterceptorExtension[FakeCallableDescriptorForObject]
 
 'getInstances' @ [187:60] ==> public final fun getInstances(project: Project): List<ClassBuilderInterceptorExtension> defined in org.jetbrains.kotlin.codegen.extensions.ClassBuilderInterceptorExtension.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -475,9 +459,9 @@ Inferred types:
 
 'AUGMENTED_BUILTIN_API' @ [218:117] ==> enum entry AUGMENTED_BUILTIN_API defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOriginKind[FakeCallableDescriptorForObject]
 
-'lazy' @ [221:29] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> Diagnostics): Lazy<Diagnostics> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [221:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Diagnostics
+    <T> -> T
 
 'SYNCHRONIZED' @ [221:55] ==> enum entry SYNCHRONIZED defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -509,7 +493,7 @@ Inferred types:
 
 'iterator' @ [234:40] ==> public open fun iterator(): Iterator<Diagnostic> defined in org.jetbrains.kotlin.resolve.diagnostics.Diagnostics[DeserializedSimpleFunctionDescriptor]
 
-'GenerationStateEventCallback' @ [239:26] ==> public fun GenerationStateEventCallback(block: (GenerationState) -> Unit): GenerationStateEventCallback defined in org.jetbrains.kotlin.codegen.state[SimpleFunctionDescriptorImpl]
+'GenerationStateEventCallback' @ [239:26] ==> public fun GenerationStateEventCallback(block: (GenerationState) -> Unit): GenerationStateEventCallback defined in org.jetbrains.kotlin.codegen.state in file GenerationState.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [245:55] ==> public abstract operator fun invoke(p1: GenerationState): Unit defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -517,7 +501,7 @@ Inferred types:
 
 'wrappers' @ [249:9] ==> value-parameter vararg wrappers: (ClassBuilderFactory) -> ClassBuilderFactory defined in org.jetbrains.kotlin.codegen.state.wrapWith[ValueParameterDescriptorImpl]
 
-'fold' @ [249:18] ==> public inline fun <T, R> Array<out (ClassBuilderFactory) -> ClassBuilderFactory>.fold(initial: ClassBuilderFactory, operation: (ClassBuilderFactory, (ClassBuilderFactory) -> ClassBuilderFactory) -> ClassBuilderFactory): ClassBuilderFactory defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [249:18] ==> public inline fun <T, R> Array<out (ClassBuilderFactory) -> ClassBuilderFactory>.fold(initial: ClassBuilderFactory, operation: (acc: ClassBuilderFactory, (ClassBuilderFactory) -> ClassBuilderFactory) -> ClassBuilderFactory): ClassBuilderFactory defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Function1<ClassBuilderFactory, ClassBuilderFactory>
     <R> -> ClassBuilderFactory
@@ -530,7 +514,7 @@ Inferred types:
 
 'elements' @ [252:9] ==> value-parameter elements: Iterable<T> defined in org.jetbrains.kotlin.codegen.state.wrapWith[ValueParameterDescriptorImpl]
 
-'fold' @ [252:18] ==> public inline fun <T, R> Iterable<T>.fold(initial: ClassBuilderFactory, operation: (ClassBuilderFactory, T) -> ClassBuilderFactory): ClassBuilderFactory defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [252:18] ==> public inline fun <T, R> Iterable<T>.fold(initial: ClassBuilderFactory, operation: (acc: ClassBuilderFactory, T) -> ClassBuilderFactory): ClassBuilderFactory defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> T
     <R> -> ClassBuilderFactory

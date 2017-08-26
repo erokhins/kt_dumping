@@ -102,11 +102,11 @@ Inferred types:
 
 'compareCall' @ [64:20] ==> val compareCall: IrCall defined in org.jetbrains.kotlin.backend.jvm.intrinsics.IrCompareTo.toCallable[LocalVariableDescriptor]
 
-'receiverAndArgs' @ [64:32] ==> public fun IrMemberAccessExpression.receiverAndArgs(): List<IrExpression> defined in org.jetbrains.kotlin.backend.jvm.intrinsics[SimpleFunctionDescriptorImpl]
+'receiverAndArgs' @ [64:32] ==> public fun IrMemberAccessExpression.receiverAndArgs(): List<IrExpression> defined in org.jetbrains.kotlin.backend.jvm.intrinsics in file IrIntrinsicFunction.kt[SimpleFunctionDescriptorImpl]
 
 'args' @ [65:24] ==> val args: List<IrExpression> defined in org.jetbrains.kotlin.backend.jvm.intrinsics.IrCompareTo.toCallable[LocalVariableDescriptor]
 
-'asmTypes' @ [65:29] ==> public fun List<IrExpression>.asmTypes(context: JvmBackendContext): List<Type> defined in org.jetbrains.kotlin.backend.jvm.intrinsics[SimpleFunctionDescriptorImpl]
+'asmTypes' @ [65:29] ==> public fun List<IrExpression>.asmTypes(context: JvmBackendContext): List<Type> defined in org.jetbrains.kotlin.backend.jvm.intrinsics in file IrIntrinsicFunction.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [65:38] ==> value-parameter context: JvmBackendContext defined in org.jetbrains.kotlin.backend.jvm.intrinsics.IrCompareTo.toCallable[ValueParameterDescriptorImpl]
 
@@ -131,8 +131,6 @@ Inferred types:
 'compareCall' @ [70:77] ==> val compareCall: IrCall defined in org.jetbrains.kotlin.backend.jvm.intrinsics.IrCompareTo.toCallable[LocalVariableDescriptor]
 
 'descriptor' @ [70:89] ==> public abstract val descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.ir.expressions.IrCall[DeserializedPropertyDescriptor]
-
-'OwnerKind' @ [70:101] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'IMPLEMENTATION' @ [70:111] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 

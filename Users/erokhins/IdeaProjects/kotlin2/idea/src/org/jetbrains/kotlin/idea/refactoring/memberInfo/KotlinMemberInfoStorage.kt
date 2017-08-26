@@ -122,7 +122,7 @@ Inferred types:
 
 'temp' @ [78:13] ==> value-parameter temp: ArrayList<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfoStorage.extractClassMembers[ValueParameterDescriptorImpl]
 
-'extractClassMembers' @ [78:21] ==> public fun extractClassMembers(aClass: KtClassOrObject, collectSuperTypeEntries: Boolean = ..., filter: ((KtNamedDeclaration) -> Boolean)? = ...): List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo[SimpleFunctionDescriptorImpl]
+'extractClassMembers' @ [78:21] ==> public fun extractClassMembers(aClass: KtClassOrObject, collectSuperTypeEntries: Boolean = ..., filter: ((KtNamedDeclaration) -> Boolean)? = ...): List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo in file KotlinMemberInfoStorage.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [78:41] ==> value-parameter aClass: PsiNamedElement defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfoStorage.extractClassMembers[ValueParameterDescriptorImpl]
 

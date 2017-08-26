@@ -26,11 +26,13 @@ Inferred types:
 
 'put' @ [33:21] ==> public open fun <T : (Any..Any?)> put(p0: (Context.Key<(JavaCompiler..JavaCompiler?)>..Context.Key<(JavaCompiler..JavaCompiler?)>?), p1: (Context.Factory<(JavaCompiler..JavaCompiler?)>..Context.Factory<(JavaCompiler..JavaCompiler?)>?)): Unit defined in com.sun.tools.javac.util.Context[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaCompiler
+    <T : (Any..Any?)> -> (com.sun.tools.javac.main.JavaCompiler..com.sun.tools.javac.main.JavaCompiler?)
 
 'compilerKey' @ [33:25] ==> protected/*protected static*/ final val compilerKey: (Context.Key<(JavaCompiler..JavaCompiler?)>..Context.Key<(JavaCompiler..JavaCompiler?)>?) defined in com.sun.tools.javac.main.JavaCompiler[JavaPropertyDescriptor]
 
 'Factory' @ [33:46] ==> public final fun <T : (Any..Any?)> Factory(function: ((Context..Context?)) -> (JavaCompiler..JavaCompiler?)): Context.Factory<JavaCompiler> defined in com.sun.tools.javac.util.Context[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : (Any..Any?)> -> JavaCompiler
+
+'KaptJavaCompiler' @ [33:70] ==> public constructor KaptJavaCompiler(context: Context) defined in org.jetbrains.kotlin.kapt3.javac.KaptJavaCompiler[ClassConstructorDescriptorImpl]
 

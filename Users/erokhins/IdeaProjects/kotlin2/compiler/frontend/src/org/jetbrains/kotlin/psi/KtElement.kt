@@ -19,7 +19,7 @@ Inferred types:
 
 'modificationStamp' @ [34:41] ==> public final val <T : (StubElement<*>..StubElement<*>?)> KtDeclarationStub<out (StubElement<*>..StubElement<*>?)>.modificationStamp: Long[MyPropertyDescriptor]
 Inferred types:
-    <T : (StubElement<*>..StubElement<*>?)> -> (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)
+    <T : (StubElement<*>..StubElement<*>?)> -> Captured(*)
 
 'this' @ [35:31] ==> <this> defined in org.jetbrains.kotlin.psi.getModificationStamp[ReceiverParameterDescriptorImpl]
 

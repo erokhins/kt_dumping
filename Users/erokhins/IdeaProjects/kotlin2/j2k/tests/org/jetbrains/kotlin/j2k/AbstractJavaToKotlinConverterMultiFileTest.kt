@@ -90,8 +90,6 @@ Inferred types:
 
 'project' @ [56:47] ==> val project: Project defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterMultiFileTest.doTest[LocalVariableDescriptor]
 
-'ConverterSettings' @ [56:56] ==> public companion object defined in org.jetbrains.kotlin.j2k.ConverterSettings[FakeCallableDescriptorForObject]
-
 'defaultSettings' @ [56:74] ==> public final val defaultSettings: ConverterSettings defined in org.jetbrains.kotlin.j2k.ConverterSettings.Companion[DeserializedPropertyDescriptor]
 
 'IdeaJavaToKotlinServices' @ [56:91] ==> public object IdeaJavaToKotlinServices : JavaToKotlinConverterServices defined in org.jetbrains.kotlin.idea.j2k[FakeCallableDescriptorForObject]

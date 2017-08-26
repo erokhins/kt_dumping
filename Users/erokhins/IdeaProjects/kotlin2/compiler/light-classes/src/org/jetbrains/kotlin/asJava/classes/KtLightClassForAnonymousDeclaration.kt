@@ -136,13 +136,13 @@ Inferred types:
 
 'java' @ [90:42] ==> public val <T> KClass<out KtLightClassForAnonymousDeclaration>.java: Class<out KtLightClassForAnonymousDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtLightClassForAnonymousDeclaration
+    <T> -> Captured(out KtLightClassForAnonymousDeclaration)
 
 'other' @ [90:50] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForAnonymousDeclaration.equals[ValueParameterDescriptorImpl]
 
 'java' @ [90:63] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'other' @ [92:22] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForAnonymousDeclaration.equals[ValueParameterDescriptorImpl]
 

@@ -46,7 +46,7 @@ Inferred types:
 
 'diagnostic' @ [51:52] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ReplacePrimitiveCastWithNumberConversionFix.Factory.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [51:64] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtSimpleNameExpression..KtSimpleNameExpression?)>.psiElement: (KtSimpleNameExpression..KtSimpleNameExpression?)[MyPropertyDescriptor]
+'psiElement' @ [51:64] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtSimpleNameExpression..KtSimpleNameExpression?)>.psiElement: KtSimpleNameExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtSimpleNameExpression..org.jetbrains.kotlin.psi.KtSimpleNameExpression?)
 

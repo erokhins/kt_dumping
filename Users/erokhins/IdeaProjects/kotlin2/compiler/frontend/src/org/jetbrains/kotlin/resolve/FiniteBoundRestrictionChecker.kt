@@ -44,7 +44,9 @@ Inferred types:
 
 'problemNodes' @ [52:34] ==> val problemNodes: List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.FiniteBoundRestrictionChecker.check[LocalVariableDescriptor]
 
-'DescriptorToSourceUtils' @ [53:31] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve in file DescriptorToSourceUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [53:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'descriptorToDeclaration' @ [53:55] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[SimpleFunctionDescriptorImpl]
 
@@ -287,8 +289,8 @@ Inferred types:
 
 'dfs' @ [132:13] ==> public open fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull p0: (MutableCollection<(T..T?)>..Collection<(T..T?)>), @NotNull p1: DFS.Neighbors<(T..T?)>, @NotNull p2: DFS.Visited<(T..T?)>, @NotNull p3: DFS.NodeHandler<(T..T?), (Unit..Unit?)>): (Unit..Unit?) defined in org.jetbrains.kotlin.utils.DFS[JavaMethodDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> T
-    <R : (Any..Any?)> -> Unit
+    <N : (Any..Any?)> -> (T..T?)
+    <R : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'listOf' @ [132:17] ==> public fun <T> listOf(element: T): List<T> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

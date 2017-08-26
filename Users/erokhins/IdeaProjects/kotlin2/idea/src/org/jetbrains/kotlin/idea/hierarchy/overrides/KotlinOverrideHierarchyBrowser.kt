@@ -60,7 +60,7 @@
 
 'psiElement' @ [65:13] ==> value-parameter psiElement: PsiElement defined in org.jetbrains.kotlin.idea.hierarchy.overrides.KotlinOverrideHierarchyBrowser.isApplicableElement[ValueParameterDescriptorImpl]
 
-'isOverrideHierarchyElement' @ [65:24] ==> public fun PsiElement.isOverrideHierarchyElement(): Boolean defined in org.jetbrains.kotlin.idea.hierarchy.overrides[SimpleFunctionDescriptorImpl]
+'isOverrideHierarchyElement' @ [65:24] ==> public fun PsiElement.isOverrideHierarchyElement(): Boolean defined in org.jetbrains.kotlin.idea.hierarchy.overrides in file KotlinOverrideHierarchyProvider.kt[SimpleFunctionDescriptorImpl]
 
 'if (typeName == MethodHierarchyBrowserBase.METHOD_TYPE) KotlinOverrideTreeStructure(myProject, psiElement as KtCallableDeclaration) else null' @ [68:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: HierarchyTreeStructure?, elseBranch: HierarchyTreeStructure?): HierarchyTreeStructure?[SimpleFunctionDescriptorImpl]
 Inferred types:

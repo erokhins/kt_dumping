@@ -2,9 +2,9 @@
 
 'DummyProfiler' @ [30:114] ==> public constructor DummyProfiler() defined in org.jetbrains.kotlin.daemon.common.DummyProfiler[DeserializedClassConstructorDescriptor]
 
-'lazy' @ [32:24] ==> public fun <T> lazy(initializer: () -> (Logger..Logger?)): Lazy<(Logger..Logger?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [32:24] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (java.util.logging.Logger..java.util.logging.Logger?)
+    <T> -> T
 
 'getLogger' @ [32:38] ==> @CallerSensitive public open fun getLogger(p0: (String..String?)): (Logger..Logger?) defined in java.util.logging.Logger[JavaMethodDescriptor]
 

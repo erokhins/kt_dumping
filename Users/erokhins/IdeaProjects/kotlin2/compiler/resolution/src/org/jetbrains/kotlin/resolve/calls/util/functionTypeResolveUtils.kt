@@ -11,8 +11,6 @@ Inferred types:
 
 'i' @ [35:43] ==> value-parameter i: Int defined in org.jetbrains.kotlin.resolve.calls.util.createValueParametersForInvokeInFunctionType.<anonymous>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [35:46] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [35:58] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'identifier' @ [36:22] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]

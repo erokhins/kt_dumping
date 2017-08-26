@@ -38,7 +38,7 @@ Inferred types:
 
 'getService' @ [61:42] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Class<(KotlinBinaryClassCache..KotlinBinaryClassCache?)>): (KotlinBinaryClassCache..KotlinBinaryClassCache?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinBinaryClassCache
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.KotlinBinaryClassCache..org.jetbrains.kotlin.load.kotlin.KotlinBinaryClassCache?)
 
 'KotlinBinaryClassCache' @ [61:53] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.KotlinBinaryClassCache[FakeCallableDescriptorForObject]
 
@@ -72,13 +72,13 @@ Inferred types:
 
 'getApplication' @ [68:45] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 
-'runReadAction' @ [68:62] ==> public abstract fun <T : (Any..Any?)> runReadAction(@NotNull p0: Computable<(VirtualFileKotlinClass..VirtualFileKotlinClass?)>): (VirtualFileKotlinClass..VirtualFileKotlinClass?) defined in com.intellij.openapi.application.Application[JavaMethodDescriptor]
+'runReadAction' @ [68:62] ==> public abstract fun <T : (Any..Any?)> runReadAction(@NotNull p0: Computable<VirtualFileKotlinClass?>): VirtualFileKotlinClass? defined in com.intellij.openapi.application.Application[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> VirtualFileKotlinClass
+    <T : (Any..Any?)> -> VirtualFileKotlinClass?
 
-'Computable' @ [68:76] ==> public fun <T : (Any..Any?)> Computable(function: () -> (VirtualFileKotlinClass..VirtualFileKotlinClass?)): Computable<VirtualFileKotlinClass> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
+'Computable' @ [68:76] ==> public fun <T : (Any..Any?)> Computable(function: () -> VirtualFileKotlinClass?): Computable<VirtualFileKotlinClass?> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> VirtualFileKotlinClass
+    <T : (Any..Any?)> -> VirtualFileKotlinClass?
 
 'Suppress' @ [69:17] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
@@ -96,5 +96,5 @@ Inferred types:
 
 'file' @ [73:39] ==> value-parameter file: VirtualFile defined in org.jetbrains.kotlin.load.kotlin.KotlinBinaryClassCache.Companion.getKotlinBinaryClass[ValueParameterDescriptorImpl]
 
-'aClass' @ [73:45] ==> val aClass: (VirtualFileKotlinClass..VirtualFileKotlinClass?) defined in org.jetbrains.kotlin.load.kotlin.KotlinBinaryClassCache.Companion.getKotlinBinaryClass[LocalVariableDescriptor]
+'aClass' @ [73:45] ==> val aClass: VirtualFileKotlinClass? defined in org.jetbrains.kotlin.load.kotlin.KotlinBinaryClassCache.Companion.getKotlinBinaryClass[LocalVariableDescriptor]
 

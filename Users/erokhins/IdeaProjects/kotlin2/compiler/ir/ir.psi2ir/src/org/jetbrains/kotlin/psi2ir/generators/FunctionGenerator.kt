@@ -121,7 +121,7 @@ Inferred types:
 
 'body' @ [77:28] ==> public abstract var body: IrBody? defined in org.jetbrains.kotlin.ir.declarations.IrSimpleFunction[DeserializedPropertyDescriptor]
 
-'createBodyGenerator' @ [77:35] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [77:35] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'irFunction' @ [77:55] ==> value-parameter irFunction: IrSimpleFunction defined in org.jetbrains.kotlin.psi2ir.generators.FunctionGenerator.declareSimpleFunction.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -216,7 +216,7 @@ Inferred types:
 
 'ktBodyExpression' @ [103:29] ==> val ktBodyExpression: KtExpression? defined in org.jetbrains.kotlin.psi2ir.generators.FunctionGenerator.generatePropertyAccessor.<anonymous>[LocalVariableDescriptor]
 
-'createBodyGenerator' @ [104:29] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [104:29] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'irAccessor' @ [104:49] ==> value-parameter irAccessor: IrSimpleFunction defined in org.jetbrains.kotlin.psi2ir.generators.FunctionGenerator.generatePropertyAccessor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -300,8 +300,6 @@ Inferred types:
 'accessor' @ [125:17] ==> value-parameter accessor: PropertyAccessorDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.FunctionGenerator.generateDefaultAccessorBody[ValueParameterDescriptorImpl]
 
 'modality' @ [125:26] ==> public final val PropertyAccessorDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [125:38] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [125:47] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -594,7 +592,7 @@ Inferred types:
 
 'body' @ [214:31] ==> public abstract var body: IrBody? defined in org.jetbrains.kotlin.ir.declarations.IrConstructor[DeserializedPropertyDescriptor]
 
-'createBodyGenerator' @ [214:38] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [214:38] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'irConstructor' @ [214:58] ==> value-parameter irConstructor: IrConstructor defined in org.jetbrains.kotlin.psi2ir.generators.FunctionGenerator.declareConstructor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -662,7 +660,7 @@ Inferred types:
 
 'ktParameterOwner' @ [235:84] ==> value-parameter ktParameterOwner: KtElement? defined in org.jetbrains.kotlin.psi2ir.generators.FunctionGenerator.generateValueParameterDeclarations[ValueParameterDescriptorImpl]
 
-'createBodyGenerator' @ [238:29] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [238:29] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'irFunction' @ [238:49] ==> value-parameter irFunction: IrFunction defined in org.jetbrains.kotlin.psi2ir.generators.FunctionGenerator.generateValueParameterDeclarations[ValueParameterDescriptorImpl]
 

@@ -42,7 +42,7 @@ Inferred types:
 
 'project' @ [83:56] ==> public final val KotlinChangeSignatureTest.project: Project[MyPropertyDescriptor]
 
-'Runnable' @ [83:65] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [83:65] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 '..' @ [84:17] ==> public final operator fun rangeTo(other: Int): IntRange defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 

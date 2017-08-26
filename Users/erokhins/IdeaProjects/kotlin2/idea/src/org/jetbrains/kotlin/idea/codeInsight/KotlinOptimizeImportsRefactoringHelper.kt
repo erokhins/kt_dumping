@@ -168,7 +168,9 @@ Inferred types:
 
 'fileCount' @ [103:66] ==> val fileCount: Int defined in org.jetbrains.kotlin.idea.codeInsight.KotlinOptimizeImportsRefactoringHelper.performOperation.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'KotlinUnusedImportInspection' @ [105:42] ==> public companion object defined in org.jetbrains.kotlin.idea.inspections.KotlinUnusedImportInspection[FakeCallableDescriptorForObject]
+'?:' @ [105:42] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinUnusedImportInspection.ImportData?, right: KotlinUnusedImportInspection.ImportData): KotlinUnusedImportInspection.ImportData[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ImportData
 
 'analyzeImports' @ [105:71] ==> public final fun analyzeImports(file: KtFile): KotlinUnusedImportInspection.ImportData? defined in org.jetbrains.kotlin.idea.inspections.KotlinUnusedImportInspection.Companion[SimpleFunctionDescriptorImpl]
 

@@ -86,8 +86,6 @@ Inferred types:
 
 'knownTag' @ [61:46] ==> public final val knownTag: KDocKnownTag? defined in org.jetbrains.kotlin.kdoc.psi.impl.KDocTag[DeserializedPropertyDescriptor]
 
-'KDocKnownTag' @ [61:58] ==> public companion object defined in org.jetbrains.kotlin.kdoc.parser.KDocKnownTag[FakeCallableDescriptorForObject]
-
 'PARAM' @ [61:71] ==> enum entry PARAM defined in org.jetbrains.kotlin.kdoc.parser.KDocKnownTag[FakeCallableDescriptorForObject]
 
 'getApplication' @ [65:32] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]

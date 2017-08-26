@@ -10,15 +10,9 @@ Inferred types:
 
 'DynamicTypeDeserializer' @ [32:73] ==> public object DynamicTypeDeserializer : FlexibleTypeDeserializer defined in org.jetbrains.kotlin.serialization.js[FakeCallableDescriptorForObject]
 
-'JsMetadataVersion' @ [33:9] ==> public companion object defined in org.jetbrains.kotlin.utils.JsMetadataVersion[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [33:27] ==> @field:JvmField public final val INSTANCE: JsMetadataVersion defined in org.jetbrains.kotlin.utils.JsMetadataVersion.Companion[DeserializedPropertyDescriptor]
 
-'JsMetadataVersion' @ [33:37] ==> public companion object defined in org.jetbrains.kotlin.utils.JsMetadataVersion[FakeCallableDescriptorForObject]
-
 'INVALID_VERSION' @ [33:55] ==> @field:JvmField public final val INVALID_VERSION: JsMetadataVersion defined in org.jetbrains.kotlin.utils.JsMetadataVersion.Companion[DeserializedPropertyDescriptor]
-
-'KotlinStubVersions' @ [33:72] ==> public object KotlinStubVersions defined in org.jetbrains.kotlin.psi.stubs[FakeCallableDescriptorForObject]
 
 'JS_STUB_VERSION' @ [33:91] ==> public const final val JS_STUB_VERSION: Int defined in org.jetbrains.kotlin.psi.stubs.KotlinStubVersions[DeserializedPropertyDescriptor]
 
@@ -49,8 +43,6 @@ Inferred types:
 'parseFrom' @ [45:46] ==> public open fun parseFrom(p0: (InputStream..InputStream?), p1: (ExtensionRegistryLite..ExtensionRegistryLite?)): (ProtoBuf.PackageFragment..ProtoBuf.PackageFragment?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.PackageFragment[JavaMethodDescriptor]
 
 'stream' @ [45:56] ==> val stream: ByteArrayInputStream defined in org.jetbrains.kotlin.idea.decompiler.js.KotlinJavaScriptMetaFileDecompiler.readFile[LocalVariableDescriptor]
-
-'JsSerializerProtocol' @ [45:64] ==> public object JsSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.js[FakeCallableDescriptorForObject]
 
 'extensionRegistry' @ [45:85] ==> public final val extensionRegistry: ExtensionRegistryLite defined in org.jetbrains.kotlin.serialization.js.JsSerializerProtocol[DeserializedPropertyDescriptor]
 

@@ -78,9 +78,9 @@ Inferred types:
 
 'COMMA' @ [89:63] ==> public final val COMMA: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'setOf' @ [91:50] ==> public fun <T> setOf(vararg elements: Class<out {KtCallableDeclaration & KtDeclarationWithInitializer}>): Set<Class<out {KtCallableDeclaration & KtDeclarationWithInitializer}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'setOf' @ [91:50] ==> public fun <T> setOf(vararg elements: Class<out KtDeclaration>): Set<Class<out KtDeclaration>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Class<out {KtCallableDeclaration & KtDeclarationWithInitializer}>
+    <T> -> Class<out KtDeclaration>
 
 'java' @ [91:79] ==> public val <T> KClass<KtNamedFunction>.java: Class<KtNamedFunction> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -126,7 +126,7 @@ Inferred types:
 
 'getParentOfType' @ [101:40] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(TArgumentList..TArgumentList?)>): TArgumentList? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> TArgumentList
+    <T : (PsiElement..PsiElement?)> -> (TArgumentList..TArgumentList?)
 
 'element' @ [101:56] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.findElementForUpdatingParameterInfo[LocalVariableDescriptor]
 
@@ -210,7 +210,7 @@ Inferred types:
 
 'getParentOfType' @ [117:40] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(TArgumentList..TArgumentList?)>): TArgumentList? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> TArgumentList
+    <T : (PsiElement..PsiElement?)> -> (TArgumentList..TArgumentList?)
 
 'token' @ [117:56] ==> val token: PsiElement defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.findElementForParameterInfo[LocalVariableDescriptor]
 
@@ -563,8 +563,6 @@ Inferred types:
 
 'bindingContext' @ [228:66] ==> val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.updateUIOrFail[LocalVariableDescriptor]
 
-'KotlinParameterInfoWithCallHandlerBase' @ [229:13] ==> public companion object defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase[FakeCallableDescriptorForObject]
-
 'GREEN_BACKGROUND' @ [229:52] ==> @JvmField public final val GREEN_BACKGROUND: Color defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.Companion[PropertyDescriptorImpl]
 
 'context' @ [231:13] ==> value-parameter context: ParameterInfoUIContext defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.updateUIOrFail[ValueParameterDescriptorImpl]
@@ -736,7 +734,7 @@ Inferred types:
 
 'resultingDescriptor' @ [311:60] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'target' @ [312:16] ==> val target: FunctionDescriptor? defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.isResolvedToDescriptor[LocalVariableDescriptor]
 
@@ -973,6 +971,8 @@ Inferred types:
 
 'resultingDescriptor' @ [388:34] ==> val resultingDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.matchCallWithSignature[LocalVariableDescriptor]
 
+'argumentToParameter' @ [388:57] ==> local final fun argumentToParameter(argument: ValueArgument): ValueParameterDescriptor? defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.matchCallWithSignature[SimpleFunctionDescriptorImpl]
+
 'highlightParameterIndex' @ [388:78] ==> val highlightParameterIndex: Int? defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.matchCallWithSignature[LocalVariableDescriptor]
 
 'argumentsBeforeCurrent' @ [392:22] ==> val argumentsBeforeCurrent: List<(ValueArgument..ValueArgument?)> defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.matchCallWithSignature[LocalVariableDescriptor]
@@ -1000,6 +1000,8 @@ Inferred types:
 'SignatureInfo' @ [396:16] ==> public constructor SignatureInfo(substitutedDescriptor: FunctionDescriptor, argumentToParameter: (ValueArgument) -> ValueParameterDescriptor?, highlightParameterIndex: Int?, isGrey: Boolean) defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.SignatureInfo[ClassConstructorDescriptorImpl]
 
 'resultingDescriptor' @ [396:30] ==> val resultingDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.matchCallWithSignature[LocalVariableDescriptor]
+
+'argumentToParameter' @ [396:53] ==> local final fun argumentToParameter(argument: ValueArgument): ValueParameterDescriptor? defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.matchCallWithSignature[SimpleFunctionDescriptorImpl]
 
 'highlightParameterIndex' @ [396:74] ==> val highlightParameterIndex: Int? defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.matchCallWithSignature[LocalVariableDescriptor]
 
@@ -1036,7 +1038,9 @@ Inferred types:
 
 'isSamDescriptor2' @ [410:34] ==> val isSamDescriptor2: Boolean defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinParameterInfoWithCallHandlerBase.descriptorsEqual[LocalVariableDescriptor]
 
-'DescriptorToSourceUtils' @ [412:28] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [412:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'descriptorToDeclaration' @ [412:52] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 

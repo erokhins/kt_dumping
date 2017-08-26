@@ -1,8 +1,8 @@
 'KotlinAbstractUExpression' @ [27:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [28:29] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [28:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [28:34] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -29,23 +29,15 @@ Inferred types:
 
 'PLUSPLUS' @ [31:18] ==> public final val PLUSPLUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastPostfixOperator' @ [31:30] ==> public companion object defined in org.jetbrains.uast.UastPostfixOperator[FakeCallableDescriptorForObject]
-
 'INC' @ [31:50] ==> @field:JvmField public final val INC: UastPostfixOperator defined in org.jetbrains.uast.UastPostfixOperator.Companion[DeserializedPropertyDescriptor]
 
 'MINUSMINUS' @ [32:18] ==> public final val MINUSMINUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'UastPostfixOperator' @ [32:32] ==> public companion object defined in org.jetbrains.uast.UastPostfixOperator[FakeCallableDescriptorForObject]
 
 'DEC' @ [32:52] ==> @field:JvmField public final val DEC: UastPostfixOperator defined in org.jetbrains.uast.UastPostfixOperator.Companion[DeserializedPropertyDescriptor]
 
 'EXCLEXCL' @ [33:18] ==> public final val EXCLEXCL: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'KotlinPostfixOperators' @ [33:30] ==> public object KotlinPostfixOperators defined in org.jetbrains.uast.kotlin in file KotlinPostfixOperators.kt[FakeCallableDescriptorForObject]
-
 'EXCLEXCL' @ [33:53] ==> @JvmField public final val EXCLEXCL: UastPostfixOperator defined in org.jetbrains.uast.kotlin.KotlinPostfixOperators[PropertyDescriptorImpl]
-
-'UastPostfixOperator' @ [34:17] ==> public companion object defined in org.jetbrains.uast.UastPostfixOperator[FakeCallableDescriptorForObject]
 
 'UNKNOWN' @ [34:37] ==> @field:JvmField public final val UNKNOWN: UastPostfixOperator defined in org.jetbrains.uast.UastPostfixOperator.Companion[DeserializedPropertyDescriptor]
 

@@ -153,7 +153,7 @@ Inferred types:
     <K : (Any..Any?)> -> PsiElement
     <V : (Any..Any?)> -> String
 
-'getAffectedCallables' @ [91:29] ==> public fun getAffectedCallables(project: Project, descriptorsForChange: Collection<CallableDescriptor>): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getAffectedCallables' @ [91:29] ==> public fun getAffectedCallables(project: Project, descriptorsForChange: Collection<CallableDescriptor>): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring in file CallableRefactoring.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [91:50] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.intentions.ConvertPropertyToFunctionIntention.Converter[PropertyDescriptorImpl]
 
@@ -285,7 +285,7 @@ Inferred types:
     <T> -> PsiElement
     <R> -> Unit
 
-'reportDeclarationConflict' @ [113:45] ==> public fun reportDeclarationConflict(conflicts: MultiMap<PsiElement, String>, declaration: PsiElement, message: (renderedDeclaration: String) -> String): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'reportDeclarationConflict' @ [113:45] ==> public fun reportDeclarationConflict(conflicts: MultiMap<PsiElement, String>, declaration: PsiElement, message: (renderedDeclaration: String) -> String): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [113:71] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.ConvertPropertyToFunctionIntention.Converter.performRefactoring[LocalVariableDescriptor]
 
@@ -330,7 +330,7 @@ Inferred types:
     <T> -> PsiMethod
     <R> -> Unit
 
-'reportDeclarationConflict' @ [120:45] ==> public fun reportDeclarationConflict(conflicts: MultiMap<PsiElement, String>, declaration: PsiElement, message: (renderedDeclaration: String) -> String): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'reportDeclarationConflict' @ [120:45] ==> public fun reportDeclarationConflict(conflicts: MultiMap<PsiElement, String>, declaration: PsiElement, message: (renderedDeclaration: String) -> String): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [120:71] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.ConvertPropertyToFunctionIntention.Converter.performRefactoring[LocalVariableDescriptor]
 
@@ -472,7 +472,7 @@ Inferred types:
 
 'project' @ [166:13] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.intentions.ConvertPropertyToFunctionIntention.Converter[PropertyDescriptorImpl]
 
-'checkConflictsInteractively' @ [166:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [166:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [166:49] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.ConvertPropertyToFunctionIntention.Converter.performRefactoring[LocalVariableDescriptor]
 

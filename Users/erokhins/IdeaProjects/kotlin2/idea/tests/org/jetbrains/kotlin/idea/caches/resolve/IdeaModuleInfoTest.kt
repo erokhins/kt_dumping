@@ -28,13 +28,13 @@
 
 'assertDoesntContain' @ [41:24] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertDoesntContain(@NotNull p0: (MutableCollection<out (IdeaModuleInfo..IdeaModuleInfo?)>..Collection<(IdeaModuleInfo..IdeaModuleInfo?)>), @NotNull vararg p1: (IdeaModuleInfo..IdeaModuleInfo?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IdeaModuleInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo..org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo?)
 
 'a' @ [41:44] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSimpleModuleDependency[LocalVariableDescriptor]
 
 'production' @ [41:46] ==> private final val Module.production: ModuleProductionSourceInfo defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest[PropertyDescriptorImpl]
 
-'dependencies' @ [41:57] ==> public open fun dependencies(): List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve.ModuleProductionSourceInfo[DeserializedSimpleFunctionDescriptor]
+'dependencies' @ [41:57] ==> public open fun dependencies(): (List<IdeaModuleInfo>..List<IdeaModuleInfo>?) defined in org.jetbrains.kotlin.idea.caches.resolve.ModuleProductionSourceInfo[DeserializedSimpleFunctionDescriptor]
 
 'b' @ [41:73] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSimpleModuleDependency[LocalVariableDescriptor]
 
@@ -302,7 +302,7 @@ Inferred types:
 
 'a' @ [92:9] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSimpleLibDependency[LocalVariableDescriptor]
 
-'addDependency' @ [92:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [92:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib' @ [92:25] ==> val lib: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSimpleLibDependency[LocalVariableDescriptor]
 
@@ -332,7 +332,7 @@ Inferred types:
 
 'a' @ [102:9] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCircularExportedDependencyWithLib[LocalVariableDescriptor]
 
-'addDependency' @ [102:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [102:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib' @ [102:25] ==> val lib: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCircularExportedDependencyWithLib[LocalVariableDescriptor]
 
@@ -356,13 +356,13 @@ Inferred types:
 
 'b' @ [108:9] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCircularExportedDependencyWithLib[LocalVariableDescriptor]
 
-'addDependency' @ [108:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [108:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib' @ [108:25] ==> val lib: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCircularExportedDependencyWithLib[LocalVariableDescriptor]
 
 'c' @ [109:9] ==> val c: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCircularExportedDependencyWithLib[LocalVariableDescriptor]
 
-'addDependency' @ [109:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [109:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib' @ [109:25] ==> val lib: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCircularExportedDependencyWithLib[LocalVariableDescriptor]
 
@@ -446,13 +446,13 @@ Inferred types:
 
 'a' @ [122:9] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSeveralModulesExportLibs[LocalVariableDescriptor]
 
-'addDependency' @ [122:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [122:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib1' @ [122:25] ==> val lib1: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSeveralModulesExportLibs[LocalVariableDescriptor]
 
 'b' @ [123:9] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSeveralModulesExportLibs[LocalVariableDescriptor]
 
-'addDependency' @ [123:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [123:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib2' @ [123:25] ==> val lib2: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSeveralModulesExportLibs[LocalVariableDescriptor]
 
@@ -506,13 +506,13 @@ Inferred types:
 
 'a' @ [135:9] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSeveralModulesExportSameLib[LocalVariableDescriptor]
 
-'addDependency' @ [135:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [135:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib' @ [135:25] ==> val lib: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSeveralModulesExportSameLib[LocalVariableDescriptor]
 
 'b' @ [136:9] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSeveralModulesExportSameLib[LocalVariableDescriptor]
 
-'addDependency' @ [136:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [136:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib' @ [136:25] ==> val lib: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testSeveralModulesExportSameLib[LocalVariableDescriptor]
 
@@ -566,7 +566,7 @@ Inferred types:
 
 'b' @ [147:9] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testRuntimeDependency[LocalVariableDescriptor]
 
-'addDependency' @ [147:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [147:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'projectLibrary' @ [147:25] ==> public fun PlatformTestCase.projectLibrary(libraryName: String = ..., classesRoot: VirtualFile? = ..., sourcesRoot: VirtualFile? = ..., kind: PersistentLibraryKind<*>? = ...): Library defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
@@ -600,7 +600,7 @@ Inferred types:
 
 'b' @ [157:9] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testProvidedDependency[LocalVariableDescriptor]
 
-'addDependency' @ [157:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [157:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib' @ [157:25] ==> val lib: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testProvidedDependency[LocalVariableDescriptor]
 
@@ -700,7 +700,7 @@ Inferred types:
 
 'a' @ [175:9] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibTestDependency[LocalVariableDescriptor]
 
-'addDependency' @ [175:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [175:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib' @ [175:25] ==> val lib: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibTestDependency[LocalVariableDescriptor]
 
@@ -1096,13 +1096,13 @@ Inferred types:
 
 'module' @ [232:9] ==> val module: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency1[LocalVariableDescriptor]
 
-'addDependency' @ [232:16] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [232:16] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib1' @ [232:30] ==> val lib1: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency1[LocalVariableDescriptor]
 
 'module' @ [233:9] ==> val module: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency1[LocalVariableDescriptor]
 
-'addDependency' @ [233:16] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [233:16] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib2' @ [233:30] ==> val lib2: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency1[LocalVariableDescriptor]
 
@@ -1142,19 +1142,19 @@ Inferred types:
 
 'a' @ [245:9] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency2[LocalVariableDescriptor]
 
-'addDependency' @ [245:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [245:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib1' @ [245:25] ==> val lib1: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency2[LocalVariableDescriptor]
 
 'b' @ [246:9] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency2[LocalVariableDescriptor]
 
-'addDependency' @ [246:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [246:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib2' @ [246:25] ==> val lib2: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency2[LocalVariableDescriptor]
 
 'c' @ [247:9] ==> val c: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency2[LocalVariableDescriptor]
 
-'addDependency' @ [247:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [247:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib3' @ [247:25] ==> val lib3: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency2[LocalVariableDescriptor]
 
@@ -1210,25 +1210,25 @@ Inferred types:
 
 'a' @ [263:9] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency3[LocalVariableDescriptor]
 
-'addDependency' @ [263:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [263:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib1' @ [263:25] ==> val lib1: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency3[LocalVariableDescriptor]
 
 'b' @ [264:9] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency3[LocalVariableDescriptor]
 
-'addDependency' @ [264:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [264:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib2' @ [264:25] ==> val lib2: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency3[LocalVariableDescriptor]
 
 'a' @ [266:9] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency3[LocalVariableDescriptor]
 
-'addDependency' @ [266:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [266:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib3' @ [266:25] ==> val lib3: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency3[LocalVariableDescriptor]
 
 'b' @ [267:9] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency3[LocalVariableDescriptor]
 
-'addDependency' @ [267:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [267:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lib3' @ [267:25] ==> val lib3: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testLibraryDependency3[LocalVariableDescriptor]
 
@@ -1276,13 +1276,13 @@ Inferred types:
 
 'a' @ [280:9] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCommonLibraryDoesNotDependOnPlatform[LocalVariableDescriptor]
 
-'addDependency' @ [280:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [280:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'stdlibCommon' @ [280:25] ==> val stdlibCommon: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCommonLibraryDoesNotDependOnPlatform[LocalVariableDescriptor]
 
 'a' @ [281:9] ==> val a: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCommonLibraryDoesNotDependOnPlatform[LocalVariableDescriptor]
 
-'addDependency' @ [281:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [281:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'stdlibJvm' @ [281:25] ==> val stdlibJvm: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCommonLibraryDoesNotDependOnPlatform[LocalVariableDescriptor]
 
@@ -1290,13 +1290,13 @@ Inferred types:
 
 'b' @ [284:9] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCommonLibraryDoesNotDependOnPlatform[LocalVariableDescriptor]
 
-'addDependency' @ [284:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [284:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'stdlibCommon' @ [284:25] ==> val stdlibCommon: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCommonLibraryDoesNotDependOnPlatform[LocalVariableDescriptor]
 
 'b' @ [285:9] ==> val b: Module defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCommonLibraryDoesNotDependOnPlatform[LocalVariableDescriptor]
 
-'addDependency' @ [285:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [285:11] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'stdlibJs' @ [285:25] ==> val stdlibJs: Library defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.testCommonLibraryDoesNotDependOnPlatform[LocalVariableDescriptor]
 
@@ -1408,7 +1408,7 @@ Inferred types:
 
 'assertSameElements' @ [320:24] ==> public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (IdeaModuleInfo..IdeaModuleInfo?)>..Collection<(IdeaModuleInfo..IdeaModuleInfo?)>), @NotNull p1: (MutableCollection<(IdeaModuleInfo..IdeaModuleInfo?)>..Collection<(IdeaModuleInfo..IdeaModuleInfo?)>)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IdeaModuleInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo..org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfo?)
 
 'dependenciesWithoutSelf' @ [320:43] ==> val dependenciesWithoutSelf: List<IdeaModuleInfo> defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.assertAdditionalLibraryDependencies[LocalVariableDescriptor]
 
@@ -1420,7 +1420,7 @@ Inferred types:
 
 'assertSameElements' @ [324:24] ==> public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (ModuleSourceInfo..ModuleSourceInfo?)>..Collection<(ModuleSourceInfo..ModuleSourceInfo?)>), @NotNull p1: (MutableCollection<(ModuleSourceInfo..ModuleSourceInfo?)>..Collection<(ModuleSourceInfo..ModuleSourceInfo?)>)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleSourceInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.ModuleSourceInfo..org.jetbrains.kotlin.idea.caches.resolve.ModuleSourceInfo?)
 
 'this' @ [324:43] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.IdeaModuleInfoTest.assertDependentsEqual[ReceiverParameterDescriptorImpl]
 

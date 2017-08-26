@@ -1,6 +1,6 @@
-'lazy' @ [34:42] ==> public fun <T> lazy(initializer: () -> List<JavaRoot>): Lazy<List<JavaRoot>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [34:42] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<JavaRoot>
+    <T> -> T
 
 '_roots' @ [34:49] ==> value-parameter _roots: List<JavaRoot> defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesIndexImpl.<init>[ValueParameterDescriptorImpl]
 
@@ -26,11 +26,13 @@ Inferred types:
 
 'name' @ [43:70] ==> value-parameter name: String defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesIndexImpl.Cache.get[ValueParameterDescriptorImpl]
 
+'Cache' @ [43:78] ==> public constructor Cache() defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesIndexImpl.Cache[ClassConstructorDescriptorImpl]
+
 'IntArrayList' @ [48:27] ==> public constructor IntArrayList(p0: Int) defined in com.intellij.util.containers.IntArrayList[JavaClassConstructorDescriptor]
 
-'lazy' @ [53:37] ==> public fun <T> lazy(initializer: () -> JvmDependenciesIndexImpl.Cache): Lazy<JvmDependenciesIndexImpl.Cache> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [53:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Cache
+    <T> -> T
 
 'Cache' @ [54:9] ==> public constructor Cache() defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesIndexImpl.Cache[ClassConstructorDescriptorImpl]
 
@@ -48,6 +50,8 @@ Inferred types:
 
 'rootIndices' @ [55:35] ==> public final val rootIndices: IntArrayList defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesIndexImpl.Cache[PropertyDescriptorImpl]
 
+'add' @ [55:48] ==> public open fun add(p0: Int): Unit defined in com.intellij.util.containers.IntArrayList[JavaMethodDescriptor]
+
 'rootIndices' @ [56:13] ==> public final val rootIndices: IntArrayList defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesIndexImpl.Cache[PropertyDescriptorImpl]
 
 'add' @ [56:25] ==> public open fun add(p0: Int): Unit defined in com.intellij.util.containers.IntArrayList[JavaMethodDescriptor]
@@ -58,9 +62,9 @@ Inferred types:
 
 'trimToSize' @ [57:25] ==> public open fun trimToSize(): Unit defined in com.intellij.util.containers.IntArrayList[JavaMethodDescriptor]
 
-'lazy' @ [65:34] ==> public fun <T> lazy(initializer: () -> Sequence<JavaRoot>): Lazy<Sequence<JavaRoot>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [65:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Sequence<JavaRoot>
+    <T> -> T
 
 'roots' @ [65:41] ==> private final val roots: List<JavaRoot> defined in org.jetbrains.kotlin.cli.jvm.index.JvmDependenciesIndexImpl[PropertyDescriptorImpl]
 
@@ -68,9 +72,9 @@ Inferred types:
 Inferred types:
     <T> -> JavaRoot
 
-'lazy' @ [67:78] ==> public fun <T> lazy(initializer: () -> Array<THashMap<String, VirtualFile?>>): Lazy<Array<THashMap<String, VirtualFile?>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [67:78] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Array<THashMap<String, VirtualFile?>>
+    <T> -> T
 
 'Array' @ [68:9] ==> public constructor Array<T>(size: Int, init: (Int) -> THashMap<String, VirtualFile?>) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:

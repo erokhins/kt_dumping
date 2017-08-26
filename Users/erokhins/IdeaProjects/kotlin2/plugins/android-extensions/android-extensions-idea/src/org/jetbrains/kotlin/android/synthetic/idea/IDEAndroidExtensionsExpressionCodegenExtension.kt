@@ -12,7 +12,5 @@
 
 'androidExtensionsGlobalCacheImpl' @ [29:39] ==> public val ModuleInfo.androidExtensionsGlobalCacheImpl: CacheImplementation defined in org.jetbrains.kotlin.android.synthetic.idea in file ExperimentalUtils.kt[PropertyDescriptorImpl]
 
-'CacheImplementation' @ [29:75] ==> public companion object defined in kotlinx.android.extensions.CacheImplementation[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [29:95] ==> public final val DEFAULT: CacheImplementation defined in kotlinx.android.extensions.CacheImplementation.Companion[DeserializedPropertyDescriptor]
 

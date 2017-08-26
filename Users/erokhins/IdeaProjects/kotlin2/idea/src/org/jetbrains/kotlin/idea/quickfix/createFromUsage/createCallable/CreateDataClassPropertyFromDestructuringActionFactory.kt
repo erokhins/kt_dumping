@@ -16,7 +16,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [44:28] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateDataClassPropertyFromDestructuringActionFactory.extractFixData[LocalVariableDescriptor]
 
-'a' @ [44:53] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)>.a: (Name..Name?)[MyPropertyDescriptor]
+'a' @ [44:53] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)>.a: Name[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
@@ -28,19 +28,19 @@ Inferred types:
 
 'isComponentLike' @ [45:42] ==> public final fun isComponentLike(name: Name): Boolean defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[DeserializedSimpleFunctionDescriptor]
 
-'functionName' @ [45:58] ==> val functionName: (Name..Name?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateDataClassPropertyFromDestructuringActionFactory.extractFixData[LocalVariableDescriptor]
+'functionName' @ [45:58] ==> val functionName: Name defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateDataClassPropertyFromDestructuringActionFactory.extractFixData[LocalVariableDescriptor]
 
 'DataClassDescriptorResolver' @ [46:31] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
 'getComponentIndex' @ [46:59] ==> public final fun getComponentIndex(componentName: String): Int defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[DeserializedSimpleFunctionDescriptor]
 
-'functionName' @ [46:77] ==> val functionName: (Name..Name?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateDataClassPropertyFromDestructuringActionFactory.extractFixData[LocalVariableDescriptor]
+'functionName' @ [46:77] ==> val functionName: Name defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateDataClassPropertyFromDestructuringActionFactory.extractFixData[LocalVariableDescriptor]
 
 'asString' @ [46:90] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
 'diagnosticWithParameters' @ [48:37] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateDataClassPropertyFromDestructuringActionFactory.extractFixData[LocalVariableDescriptor]
 
-'b' @ [48:62] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)>.b: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'b' @ [48:62] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)>.b: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
@@ -88,7 +88,7 @@ Inferred types:
 
 'name' @ [56:31] ==> public final val KtDestructuringDeclarationEntry.name: String?[MyPropertyDescriptor]
 
-'functionName' @ [56:39] ==> val functionName: (Name..Name?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateDataClassPropertyFromDestructuringActionFactory.extractFixData[LocalVariableDescriptor]
+'functionName' @ [56:39] ==> val functionName: Name defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateDataClassPropertyFromDestructuringActionFactory.extractFixData[LocalVariableDescriptor]
 
 'asString' @ [56:52] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 

@@ -16,7 +16,7 @@ Inferred types:
 
 'ArrayDeque' @ [37:44] ==> public constructor ArrayDeque<E : (Any..Any?)>() defined in java.util.ArrayDeque[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'deserialize' @ [40:16] ==> public final fun deserialize(proto: JsAstProtoBuf.Chunk): JsProgramFragment defined in org.jetbrains.kotlin.serialization.js.ast.JsAstDeserializer[SimpleFunctionDescriptorImpl]
 
@@ -1978,8 +1978,6 @@ Inferred types:
 'declareTemporaryName' @ [430:25] ==> @NotNull public open fun declareTemporaryName(@NotNull p0: String): JsName defined in org.jetbrains.kotlin.js.backend.ast.JsScope[JavaMethodDescriptor]
 
 'identifier' @ [430:46] ==> val identifier: String defined in org.jetbrains.kotlin.serialization.js.ast.JsAstDeserializer.deserializeName.<anonymous>[LocalVariableDescriptor]
-
-'JsDynamicScope' @ [433:17] ==> public object JsDynamicScope : JsScope defined in org.jetbrains.kotlin.js.backend.ast[FakeCallableDescriptorForObject]
 
 'declareName' @ [433:32] ==> @NotNull public open fun declareName(@NotNull p0: String): JsName defined in org.jetbrains.kotlin.js.backend.ast.JsDynamicScope[JavaMethodDescriptor]
 

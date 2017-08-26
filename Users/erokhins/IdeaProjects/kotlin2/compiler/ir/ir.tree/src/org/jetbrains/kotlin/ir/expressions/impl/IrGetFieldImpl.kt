@@ -30,7 +30,7 @@
 
 'origin' @ [48:13] ==> value-parameter origin: IrStatementOrigin? = ... defined in org.jetbrains.kotlin.ir.expressions.impl.IrGetFieldImpl.<init>[ValueParameterDescriptorImpl]
 
-'createClassSymbolOrNull' @ [49:13] ==> public fun createClassSymbolOrNull(descriptor: ClassDescriptor?): IrClassSymbolImpl? defined in org.jetbrains.kotlin.ir.symbols.impl[SimpleFunctionDescriptorImpl]
+'createClassSymbolOrNull' @ [49:13] ==> public fun createClassSymbolOrNull(descriptor: ClassDescriptor?): IrClassSymbolImpl? defined in org.jetbrains.kotlin.ir.symbols.impl in file IrSymbolBase.kt[SimpleFunctionDescriptorImpl]
 
 'superQualifier' @ [49:37] ==> value-parameter superQualifier: ClassDescriptor? = ... defined in org.jetbrains.kotlin.ir.expressions.impl.IrGetFieldImpl.<init>[ValueParameterDescriptorImpl]
 
@@ -50,7 +50,7 @@
 
 'origin' @ [62:23] ==> value-parameter origin: IrStatementOrigin? = ... defined in org.jetbrains.kotlin.ir.expressions.impl.IrGetFieldImpl.<init>[ValueParameterDescriptorImpl]
 
-'createClassSymbolOrNull' @ [63:13] ==> public fun createClassSymbolOrNull(descriptor: ClassDescriptor?): IrClassSymbolImpl? defined in org.jetbrains.kotlin.ir.symbols.impl[SimpleFunctionDescriptorImpl]
+'createClassSymbolOrNull' @ [63:13] ==> public fun createClassSymbolOrNull(descriptor: ClassDescriptor?): IrClassSymbolImpl? defined in org.jetbrains.kotlin.ir.symbols.impl in file IrSymbolBase.kt[SimpleFunctionDescriptorImpl]
 
 'superQualifier' @ [63:37] ==> value-parameter superQualifier: ClassDescriptor? = ... defined in org.jetbrains.kotlin.ir.expressions.impl.IrGetFieldImpl.<init>[ValueParameterDescriptorImpl]
 

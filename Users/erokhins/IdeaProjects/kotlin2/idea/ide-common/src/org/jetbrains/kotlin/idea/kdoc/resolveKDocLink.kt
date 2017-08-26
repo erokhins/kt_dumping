@@ -14,7 +14,7 @@ Inferred types:
 
 'PARAM' @ [56:26] ==> enum entry PARAM defined in org.jetbrains.kotlin.kdoc.parser.KDocKnownTag[FakeCallableDescriptorForObject]
 
-'resolveParamLink' @ [56:35] ==> private fun resolveParamLink(fromDescriptor: DeclarationDescriptor, qualifiedName: List<String>): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc[SimpleFunctionDescriptorImpl]
+'resolveParamLink' @ [56:35] ==> private fun resolveParamLink(fromDescriptor: DeclarationDescriptor, qualifiedName: List<String>): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc in file resolveKDocLink.kt[SimpleFunctionDescriptorImpl]
 
 'fromDescriptor' @ [56:52] ==> value-parameter fromDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.kdoc.resolveKDocLink[ValueParameterDescriptorImpl]
 
@@ -24,7 +24,7 @@ Inferred types:
 
 'SAMPLE' @ [57:26] ==> enum entry SAMPLE defined in org.jetbrains.kotlin.kdoc.parser.KDocKnownTag[FakeCallableDescriptorForObject]
 
-'resolveKDocSampleLink' @ [57:36] ==> public fun resolveKDocSampleLink(context: BindingContext, resolutionFacade: ResolutionFacade, fromDescriptor: DeclarationDescriptor, qualifiedName: List<String>): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc[SimpleFunctionDescriptorImpl]
+'resolveKDocSampleLink' @ [57:36] ==> public fun resolveKDocSampleLink(context: BindingContext, resolutionFacade: ResolutionFacade, fromDescriptor: DeclarationDescriptor, qualifiedName: List<String>): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc in file resolveKDocLink.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [57:58] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.kdoc.resolveKDocLink[ValueParameterDescriptorImpl]
 
@@ -34,7 +34,7 @@ Inferred types:
 
 'qualifiedName' @ [57:101] ==> value-parameter qualifiedName: List<String> defined in org.jetbrains.kotlin.idea.kdoc.resolveKDocLink[ValueParameterDescriptorImpl]
 
-'resolveDefaultKDocLink' @ [58:21] ==> private fun resolveDefaultKDocLink(context: BindingContext, resolutionFacade: ResolutionFacade, fromDescriptor: DeclarationDescriptor, qualifiedName: List<String>): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc[SimpleFunctionDescriptorImpl]
+'resolveDefaultKDocLink' @ [58:21] ==> private fun resolveDefaultKDocLink(context: BindingContext, resolutionFacade: ResolutionFacade, fromDescriptor: DeclarationDescriptor, qualifiedName: List<String>): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc in file resolveKDocLink.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [58:44] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.kdoc.resolveKDocLink[ValueParameterDescriptorImpl]
 
@@ -113,7 +113,7 @@ Inferred types:
 Inferred types:
     <T> -> DeclarationDescriptor
 
-'getParamDescriptors' @ [88:12] ==> public fun getParamDescriptors(fromDescriptor: DeclarationDescriptor): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc[SimpleFunctionDescriptorImpl]
+'getParamDescriptors' @ [88:12] ==> public fun getParamDescriptors(fromDescriptor: DeclarationDescriptor): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc in file resolveKDocLink.kt[SimpleFunctionDescriptorImpl]
 
 'fromDescriptor' @ [88:32] ==> value-parameter fromDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.kdoc.resolveParamLink[ValueParameterDescriptorImpl]
 
@@ -149,7 +149,7 @@ Inferred types:
 
 'resolvedViaService' @ [99:49] ==> val resolvedViaService: Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc.resolveKDocSampleLink[LocalVariableDescriptor]
 
-'resolveDefaultKDocLink' @ [101:12] ==> private fun resolveDefaultKDocLink(context: BindingContext, resolutionFacade: ResolutionFacade, fromDescriptor: DeclarationDescriptor, qualifiedName: List<String>): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc[SimpleFunctionDescriptorImpl]
+'resolveDefaultKDocLink' @ [101:12] ==> private fun resolveDefaultKDocLink(context: BindingContext, resolutionFacade: ResolutionFacade, fromDescriptor: DeclarationDescriptor, qualifiedName: List<String>): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc in file resolveKDocLink.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [101:35] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.kdoc.resolveKDocSampleLink[ValueParameterDescriptorImpl]
 
@@ -555,7 +555,7 @@ Inferred types:
 
 'getService' @ [192:49] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(KotlinCacheService..KotlinCacheService?)>): (KotlinCacheService..KotlinCacheService?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinCacheService
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.caches.resolve.KotlinCacheService..org.jetbrains.kotlin.caches.resolve.KotlinCacheService?)
 
 'containingFile' @ [192:60] ==> val containingFile: KtFile defined in org.jetbrains.kotlin.idea.kdoc.getOuterScope[LocalVariableDescriptor]
 
@@ -645,8 +645,6 @@ Inferred types:
 'descriptor' @ [212:37] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.kdoc.getKDocLinkMemberScope[ValueParameterDescriptorImpl]
 
 'contextScope' @ [212:49] ==> value-parameter contextScope: LexicalScope defined in org.jetbrains.kotlin.idea.kdoc.getKDocLinkMemberScope[ValueParameterDescriptorImpl]
-
-'MemberScope' @ [216:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'Empty' @ [216:29] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
@@ -785,8 +783,6 @@ Inferred types:
 
 'getContributedDescriptors' @ [245:16] ==> public open fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc.ExtensionsScope[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [245:55] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS' @ [245:76] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'map' @ [246:18] ==> public inline fun <T, R> Iterable<DeclarationDescriptor>.map(transform: (DeclarationDescriptor) -> Name): List<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -803,8 +799,6 @@ Inferred types:
     <T> -> Name
 
 'getContributedDescriptors' @ [251:16] ==> public open fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.kdoc.ExtensionsScope[SimpleFunctionDescriptorImpl]
-
-'DescriptorKindFilter' @ [251:55] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES' @ [251:76] ==> @field:JvmField public final val VARIABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 

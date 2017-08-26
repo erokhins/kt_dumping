@@ -1,6 +1,6 @@
 'findAllRecursively' @ [43:18] ==> @NotNull public open fun <T : (Any..Any?)> findAllRecursively(@Nullable p0: DataNode<*>?, @NotNull p1: Key<(JavaModuleModel..JavaModuleModel?)>): (MutableCollection<(DataNode<(JavaModuleModel..JavaModuleModel?)>..DataNode<(JavaModuleModel..JavaModuleModel?)>?)>..Collection<(DataNode<(JavaModuleModel..JavaModuleModel?)>..DataNode<(JavaModuleModel..JavaModuleModel?)>?)>) defined in com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaModuleModel
+    <T : (Any..Any?)> -> (com.android.tools.idea.gradle.project.model.JavaModuleModel..com.android.tools.idea.gradle.project.model.JavaModuleModel?)
 
 'moduleData' @ [43:37] ==> value-parameter moduleData: DataNode<*> defined in org.jetbrains.kotlin.android.configure.PlatformAndroidGradleDetector.getResolvedKotlinStdlibVersionByModuleData[ValueParameterDescriptorImpl]
 
@@ -17,7 +17,7 @@ Inferred types:
 
 'it' @ [44:28] ==> value-parameter it: (DataNode<(JavaModuleModel..JavaModuleModel?)>..DataNode<(JavaModuleModel..JavaModuleModel?)>?) defined in org.jetbrains.kotlin.android.configure.PlatformAndroidGradleDetector.getResolvedKotlinStdlibVersionByModuleData.<anonymous>[ValueParameterDescriptorImpl]
 
-'data' @ [44:31] ==> public final val <T : (Any..Any?)> DataNode<(JavaModuleModel..JavaModuleModel?)>.data: (JavaModuleModel..JavaModuleModel?)[MyPropertyDescriptor]
+'data' @ [44:31] ==> public final val <T : (Any..Any?)> DataNode<(JavaModuleModel..JavaModuleModel?)>.data: JavaModuleModel[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> (com.android.tools.idea.gradle.project.model.JavaModuleModel..com.android.tools.idea.gradle.project.model.JavaModuleModel?)
 

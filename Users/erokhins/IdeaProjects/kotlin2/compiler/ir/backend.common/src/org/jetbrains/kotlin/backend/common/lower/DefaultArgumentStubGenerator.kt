@@ -106,7 +106,7 @@ Inferred types:
 
 'context' @ [81:27] ==> public final val context: CommonBackendContext defined in org.jetbrains.kotlin.backend.common.lower.DefaultArgumentStubGenerator[PropertyDescriptorImpl]
 
-'createIrBuilder' @ [81:35] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createIrBuilder' @ [81:35] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'newIrFunction' @ [81:51] ==> val newIrFunction: IrFunction defined in org.jetbrains.kotlin.backend.common.lower.DefaultArgumentStubGenerator.lower[LocalVariableDescriptor]
 
@@ -114,7 +114,7 @@ Inferred types:
 
 'builder' @ [82:24] ==> val builder: DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower.DefaultArgumentStubGenerator.lower[LocalVariableDescriptor]
 
-'irBlockBody' @ [82:32] ==> public inline fun IrGeneratorWithScope.irBlockBody(irElement: IrElement, body: IrBlockBodyBuilder.() -> Unit): IrBlockBody defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irBlockBody' @ [82:32] ==> public inline fun IrGeneratorWithScope.irBlockBody(irElement: IrElement, body: IrBlockBodyBuilder.() -> Unit): IrBlockBody defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'irFunction' @ [82:44] ==> value-parameter irFunction: IrFunction defined in org.jetbrains.kotlin.backend.common.lower.DefaultArgumentStubGenerator.lower[ValueParameterDescriptorImpl]
 
@@ -236,7 +236,7 @@ Inferred types:
 
 'irGet' @ [99:48] ==> public fun IrBuilderWithScope.irGet(variable: IrValueSymbol): IrGetValueImpl defined in org.jetbrains.kotlin.ir.builders[DeserializedSimpleFunctionDescriptor]
 
-'maskParameterSymbol' @ [99:54] ==> private fun maskParameterSymbol(function: IrFunction, number: Int): IrValueParameterSymbol defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'maskParameterSymbol' @ [99:54] ==> private fun maskParameterSymbol(function: IrFunction, number: Int): IrValueParameterSymbol defined in org.jetbrains.kotlin.backend.common.lower in file DefaultArgumentStubGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'newIrFunction' @ [99:74] ==> val newIrFunction: IrFunction defined in org.jetbrains.kotlin.backend.common.lower.DefaultArgumentStubGenerator.lower[LocalVariableDescriptor]
 
@@ -308,7 +308,7 @@ Inferred types:
 
 'scope' @ [117:27] ==> public open val scope: Scope defined in org.jetbrains.kotlin.ir.builders.IrBlockBodyBuilder[DeserializedPropertyDescriptor]
 
-'createTemporaryVariable' @ [117:33] ==> private fun Scope.createTemporaryVariable(symbol: IrVariableSymbol, initializer: IrExpression): IrVariableImpl defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createTemporaryVariable' @ [117:33] ==> private fun Scope.createTemporaryVariable(symbol: IrVariableSymbol, initializer: IrExpression): IrVariableImpl defined in org.jetbrains.kotlin.backend.common.lower in file DefaultArgumentStubGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'temporaryVariableSymbol' @ [118:43] ==> val temporaryVariableSymbol: IrVariableSymbolImpl defined in org.jetbrains.kotlin.backend.common.lower.DefaultArgumentStubGenerator.lower.<anonymous>[LocalVariableDescriptor]
 
@@ -318,7 +318,7 @@ Inferred types:
 
 'scope' @ [122:27] ==> public open val scope: Scope defined in org.jetbrains.kotlin.ir.builders.IrBlockBodyBuilder[DeserializedPropertyDescriptor]
 
-'createTemporaryVariable' @ [122:33] ==> private fun Scope.createTemporaryVariable(symbol: IrVariableSymbol, initializer: IrExpression): IrVariableImpl defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createTemporaryVariable' @ [122:33] ==> private fun Scope.createTemporaryVariable(symbol: IrVariableSymbol, initializer: IrExpression): IrVariableImpl defined in org.jetbrains.kotlin.backend.common.lower in file DefaultArgumentStubGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'temporaryVariableSymbol' @ [123:43] ==> val temporaryVariableSymbol: IrVariableSymbolImpl defined in org.jetbrains.kotlin.backend.common.lower.DefaultArgumentStubGenerator.lower.<anonymous>[LocalVariableDescriptor]
 
@@ -616,7 +616,7 @@ Inferred types:
 
 'TODO' @ [198:53] ==> @InlineOnly public inline fun TODO(reason: String): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'maskParameterSymbol' @ [202:9] ==> private fun maskParameterSymbol(function: IrFunction, number: Int): IrValueParameterSymbol defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'maskParameterSymbol' @ [202:9] ==> private fun maskParameterSymbol(function: IrFunction, number: Int): IrValueParameterSymbol defined in org.jetbrains.kotlin.backend.common.lower in file DefaultArgumentStubGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [202:29] ==> value-parameter function: IrFunction defined in org.jetbrains.kotlin.backend.common.lower.maskParameterDescriptor[ValueParameterDescriptorImpl]
 
@@ -638,7 +638,7 @@ Inferred types:
 
 'name' @ [204:57] ==> public final val ParameterDescriptor.name: Name[MyPropertyDescriptor]
 
-'parameterMaskName' @ [204:65] ==> private fun parameterMaskName(number: Int): Name defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'parameterMaskName' @ [204:65] ==> private fun parameterMaskName(number: Int): Name defined in org.jetbrains.kotlin.backend.common.lower in file DefaultArgumentStubGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'number' @ [204:83] ==> value-parameter number: Int defined in org.jetbrains.kotlin.backend.common.lower.maskParameterSymbol[ValueParameterDescriptorImpl]
 
@@ -1284,13 +1284,11 @@ Inferred types:
 
 'params' @ [309:21] ==> val params: MutableList<Pair<ValueParameterDescriptor, IrExpression?>> defined in org.jetbrains.kotlin.backend.common.lower.DefaultParameterInjector.lower.<no name provided>.parametersForCall[LocalVariableDescriptor]
 
-'maskParameterDescriptor' @ [309:31] ==> private fun maskParameterDescriptor(function: IrFunction, number: Int): ValueParameterDescriptor defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'maskParameterDescriptor' @ [309:31] ==> private fun maskParameterDescriptor(function: IrFunction, number: Int): ValueParameterDescriptor defined in org.jetbrains.kotlin.backend.common.lower in file DefaultArgumentStubGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'realFunction' @ [309:55] ==> val realFunction: IrFunction defined in org.jetbrains.kotlin.backend.common.lower.DefaultParameterInjector.lower.<no name provided>.parametersForCall[LocalVariableDescriptor]
 
 'i' @ [309:69] ==> value-parameter i: Int defined in org.jetbrains.kotlin.backend.common.lower.DefaultParameterInjector.lower.<no name provided>.parametersForCall.<anonymous>[ValueParameterDescriptorImpl]
-
-'IrConstImpl' @ [309:75] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
 
 'int' @ [309:87] ==> public final fun int(startOffset: Int, endOffset: Int, type: KotlinType, value: Int): IrConstImpl<Int> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -1339,7 +1337,7 @@ Inferred types:
 
 'params' @ [317:21] ==> val params: MutableList<Pair<ValueParameterDescriptor, IrExpression?>> defined in org.jetbrains.kotlin.backend.common.lower.DefaultParameterInjector.lower.<no name provided>.parametersForCall[LocalVariableDescriptor]
 
-'markerParameterDescriptor' @ [317:31] ==> private fun markerParameterDescriptor(descriptor: FunctionDescriptor): (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'markerParameterDescriptor' @ [317:31] ==> private fun markerParameterDescriptor(descriptor: FunctionDescriptor): (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.backend.common.lower in file DefaultArgumentStubGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'realDescriptor' @ [317:57] ==> val realDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.backend.common.lower.DefaultParameterInjector.lower.<no name provided>.parametersForCall[LocalVariableDescriptor]
 
@@ -1376,8 +1374,6 @@ Inferred types:
 'last' @ [324:62] ==> public fun <T> List<(ValueParameterDescriptor..ValueParameterDescriptor?)>.last(): (ValueParameterDescriptor..ValueParameterDescriptor?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
-
-'IrConstImpl' @ [325:29] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
 
 'constNull' @ [325:41] ==> public final fun constNull(startOffset: Int, endOffset: Int, type: KotlinType): IrConstImpl<Nothing?> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -1552,7 +1548,7 @@ Inferred types:
 
 'i' @ [366:63] ==> value-parameter i: Int defined in org.jetbrains.kotlin.backend.common.lower.generateDefaultsFunction.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'parameterMaskName' @ [366:66] ==> private fun parameterMaskName(number: Int): Name defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'parameterMaskName' @ [366:66] ==> private fun parameterMaskName(number: Int): Name defined in org.jetbrains.kotlin.backend.common.lower in file DefaultArgumentStubGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'i' @ [366:84] ==> value-parameter i: Int defined in org.jetbrains.kotlin.backend.common.lower.generateDefaultsFunction.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1751,8 +1747,6 @@ Inferred types:
 
 'returnType' @ [412:55] ==> public final val FunctionDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
-'Modality' @ [413:55] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [413:64] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'this' @ [414:55] ==> <this> defined in org.jetbrains.kotlin.backend.common.lower.generateDefaultsFunction[ReceiverParameterDescriptorImpl]
@@ -1834,8 +1828,6 @@ Inferred types:
 'descriptor' @ [446:37] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.backend.common.lower.valueParameter[ValueParameterDescriptorImpl]
 
 'index' @ [448:37] ==> value-parameter index: Int defined in org.jetbrains.kotlin.backend.common.lower.valueParameter[ValueParameterDescriptorImpl]
-
-'Annotations' @ [449:37] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [449:49] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

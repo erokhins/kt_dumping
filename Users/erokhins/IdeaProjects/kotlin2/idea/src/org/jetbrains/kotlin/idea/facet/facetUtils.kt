@@ -55,15 +55,11 @@ Inferred types:
 
 'Jvm' @ [51:90] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [51:94] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_8' @ [51:104] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'TargetPlatformKind' @ [52:17] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [52:36] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [52:40] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [52:50] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -105,11 +101,11 @@ Inferred types:
 
 'compilerArguments' @ [71:9] ==> public final var compilerArguments: CommonCompilerArguments? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
 
-'targetPlatformKind' @ [71:29] ==> val targetPlatformKind: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.facet.initializeIfNeeded[LocalVariableDescriptor]
+'targetPlatformKind' @ [71:29] ==> val targetPlatformKind: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.initializeIfNeeded[LocalVariableDescriptor]
 
 'createCompilerArguments' @ [71:48] ==> public fun TargetPlatformKind<*>.createCompilerArguments(init: CommonCompilerArguments.() -> Unit = ...): CommonCompilerArguments defined in org.jetbrains.kotlin.config[DeserializedSimpleFunctionDescriptor]
 
-'targetPlatformKind' @ [72:13] ==> val targetPlatformKind: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.facet.initializeIfNeeded[LocalVariableDescriptor]
+'targetPlatformKind' @ [72:13] ==> val targetPlatformKind: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.initializeIfNeeded[LocalVariableDescriptor]
 
 'getPlatformCompilerArgumentsByProject' @ [72:32] ==> public fun TargetPlatformKind<*>.getPlatformCompilerArgumentsByProject(project: Project): CommonCompilerArguments? defined in org.jetbrains.kotlin.idea.facet in file facetUtils.kt[SimpleFunctionDescriptorImpl]
 
@@ -154,8 +150,6 @@ Inferred types:
 
 'useProjectSettings' @ [78:30] ==> public final var useProjectSettings: Boolean defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
 
-'LanguageVersion' @ [78:50] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'fromVersionString' @ [78:66] ==> @JvmStatic public final fun fromVersionString(str: String?): LanguageVersion? defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedSimpleFunctionDescriptor]
 
 'commonArguments' @ [78:84] ==> val commonArguments: CommonCompilerArguments defined in org.jetbrains.kotlin.idea.facet.initializeIfNeeded[LocalVariableDescriptor]
@@ -181,7 +175,9 @@ Inferred types:
 
 'useProjectSettings' @ [83:24] ==> public final var useProjectSettings: Boolean defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
 
-'LanguageVersion' @ [84:13] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
+'?:' @ [84:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: LanguageVersion?, right: LanguageVersion?): LanguageVersion?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> LanguageVersion?
 
 'fromVersionString' @ [84:29] ==> @JvmStatic public final fun fromVersionString(str: String?): LanguageVersion? defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -215,15 +211,11 @@ Inferred types:
 
 'this' @ [93:18] ==> <this> defined in org.jetbrains.kotlin.idea.facet.getPlatformCompilerArgumentsByProject[ReceiverParameterDescriptorImpl]
 
-'Kotlin2JvmCompilerArgumentsHolder' @ [94:38] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder[FakeCallableDescriptorForObject]
-
 'getInstance' @ [94:72] ==> public final fun getInstance(project: Project): Kotlin2JvmCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
 'project' @ [94:84] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.facet.getPlatformCompilerArgumentsByProject[ValueParameterDescriptorImpl]
 
 'settings' @ [94:93] ==> public final var settings: K2JVMCompilerArguments defined in org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder[DeserializedPropertyDescriptor]
-
-'Kotlin2JsCompilerArgumentsHolder' @ [95:45] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JsCompilerArgumentsHolder[FakeCallableDescriptorForObject]
 
 'getInstance' @ [95:78] ==> public final fun getInstance(project: Project): Kotlin2JsCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JsCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -265,47 +257,47 @@ Inferred types:
 
 'MAVEN_COMMON_STDLIB_ID' @ [104:48] ==> public val MAVEN_COMMON_STDLIB_ID: String defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[PropertyDescriptorImpl]
 
-'lazy' @ [107:69] ==> public fun <T> lazy(initializer: () -> Map<String, TargetPlatformKind<TargetPlatformVersion>>): Lazy<Map<String, TargetPlatformKind<TargetPlatformVersion>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [107:69] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<String, TargetPlatformKind<TargetPlatformVersion>>
+    <T> -> T
 
 'TargetPlatformKind' @ [108:5] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'ALL_PLATFORMS' @ [108:24] ==> public final val ALL_PLATFORMS: List<TargetPlatformKind<*>> defined in org.jetbrains.kotlin.config.TargetPlatformKind.Companion[DeserializedPropertyDescriptor]
 
-'flatMap' @ [109:14] ==> public inline fun <T, R> Iterable<TargetPlatformKind<*>>.flatMap(transform: (TargetPlatformKind<*>) -> Iterable<Pair<String, TargetPlatformKind<TargetPlatformVersion>>>): List<Pair<String, TargetPlatformKind<TargetPlatformVersion>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [109:14] ==> public inline fun <T, R> Iterable<TargetPlatformKind<*>>.flatMap(transform: (TargetPlatformKind<*>) -> Iterable<Pair<String, TargetPlatformKind<*>>>): List<Pair<String, TargetPlatformKind<*>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TargetPlatformKind<*>
-    <R> -> Pair<String, TargetPlatformKind<TargetPlatformVersion>>
+    <R> -> Pair<String, TargetPlatformKind<*>>
 
 'platform' @ [109:36] ==> value-parameter platform: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.mavenLibraryIdToPlatform.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'mavenLibraryIds' @ [109:45] ==> public val TargetPlatformKind<*>.mavenLibraryIds: List<String> defined in org.jetbrains.kotlin.idea.facet in file facetUtils.kt[PropertyDescriptorImpl]
 
-'map' @ [109:61] ==> public inline fun <T, R> Iterable<String>.map(transform: (String) -> Pair<String, TargetPlatformKind<TargetPlatformVersion>>): List<Pair<String, TargetPlatformKind<TargetPlatformVersion>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [109:61] ==> public inline fun <T, R> Iterable<String>.map(transform: (String) -> Pair<String, TargetPlatformKind<*>>): List<Pair<String, TargetPlatformKind<*>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
-    <R> -> Pair<String, TargetPlatformKind<TargetPlatformVersion>>
+    <R> -> Pair<String, TargetPlatformKind<*>>
 
 'it' @ [109:67] ==> value-parameter it: String defined in org.jetbrains.kotlin.idea.facet.mavenLibraryIdToPlatform.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'platform' @ [109:73] ==> value-parameter platform: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.mavenLibraryIdToPlatform.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'sortedByDescending' @ [110:14] ==> public inline fun <T, R : Comparable<Int>> Iterable<Pair<String, TargetPlatformKind<TargetPlatformVersion>>>.sortedByDescending(crossinline selector: (Pair<String, TargetPlatformKind<TargetPlatformVersion>>) -> Int?): List<Pair<String, TargetPlatformKind<TargetPlatformVersion>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'sortedByDescending' @ [110:14] ==> public inline fun <T, R : Comparable<Int>> Iterable<Pair<String, TargetPlatformKind<*>>>.sortedByDescending(crossinline selector: (Pair<String, TargetPlatformKind<*>>) -> Int?): List<Pair<String, TargetPlatformKind<*>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Pair<String, TargetPlatformKind<TargetPlatformVersion>>
+    <T> -> Pair<String, TargetPlatformKind<*>>
     <R : Comparable<R>> -> Int
 
-'it' @ [110:35] ==> value-parameter it: Pair<String, TargetPlatformKind<TargetPlatformVersion>> defined in org.jetbrains.kotlin.idea.facet.mavenLibraryIdToPlatform.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [110:35] ==> value-parameter it: Pair<String, TargetPlatformKind<*>> defined in org.jetbrains.kotlin.idea.facet.mavenLibraryIdToPlatform.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'first' @ [110:38] ==> public final val first: String defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
 'length' @ [110:44] ==> public open val length: Int defined in kotlin.String[DeserializedPropertyDescriptor]
 
-'toMap' @ [111:14] ==> public fun <K, V> Iterable<Pair<String, TargetPlatformKind<TargetPlatformVersion>>>.toMap(): Map<String, TargetPlatformKind<TargetPlatformVersion>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toMap' @ [111:14] ==> public fun <K, V> Iterable<Pair<String, TargetPlatformKind<*>>>.toMap(): Map<String, TargetPlatformKind<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> TargetPlatformKind<TargetPlatformVersion>
+    <V> -> TargetPlatformKind<*>
 
 'modelsProvider' @ [117:22] ==> value-parameter modelsProvider: IdeModifiableModelsProvider defined in org.jetbrains.kotlin.idea.facet.getOrCreateFacet[ValueParameterDescriptorImpl]
 
@@ -317,13 +309,9 @@ Inferred types:
 
 'findFacet' @ [119:28] ==> @Nullable public abstract fun <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> findFacet(p0: (FacetTypeId<(KotlinFacet..KotlinFacet?)>..FacetTypeId<(KotlinFacet..KotlinFacet?)>?), p1: (String..String?)): KotlinFacet? defined in com.intellij.facet.ModifiableFacetModel[JavaMethodDescriptor]
 Inferred types:
-    <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> KotlinFacet
-
-'KotlinFacetType' @ [119:38] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType[FakeCallableDescriptorForObject]
+    <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> (org.jetbrains.kotlin.idea.facet.KotlinFacet..org.jetbrains.kotlin.idea.facet.KotlinFacet?)
 
 'TYPE_ID' @ [119:54] ==> public final val TYPE_ID: FacetTypeId<KotlinFacet> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[PropertyDescriptorImpl]
-
-'KotlinFacetType' @ [119:63] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType[FakeCallableDescriptorForObject]
 
 'INSTANCE' @ [119:79] ==> public final val INSTANCE: KotlinFacetType defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[PropertyDescriptorImpl]
 
@@ -333,8 +321,6 @@ Inferred types:
 Inferred types:
     <T> -> KotlinFacetType
     <R> -> KotlinFacet
-
-'KotlinFacetType' @ [120:25] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType[FakeCallableDescriptorForObject]
 
 'INSTANCE' @ [120:41] ==> public final val INSTANCE: KotlinFacetType defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[PropertyDescriptorImpl]
 
@@ -407,13 +393,13 @@ Inferred types:
 
 'languageLevel' @ [142:9] ==> public final var languageLevel: LanguageVersion? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
 
-'LanguageVersion' @ [142:25] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
+'?:' @ [142:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: LanguageVersion?, right: LanguageVersion?): LanguageVersion?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> LanguageVersion?
 
 'fromFullVersionString' @ [142:41] ==> @JvmStatic public final fun fromFullVersionString(str: String): LanguageVersion? defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedSimpleFunctionDescriptor]
 
 'compilerVersion' @ [142:63] ==> value-parameter compilerVersion: String defined in org.jetbrains.kotlin.idea.facet.configureFacet[ValueParameterDescriptorImpl]
-
-'LanguageVersion' @ [142:83] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [142:99] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -661,7 +647,7 @@ Inferred types:
 
 'java' @ [206:65] ==> public val <T> KClass<out CommonCompilerArguments>.java: Class<out CommonCompilerArguments> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> CommonCompilerArguments
+    <T> -> Captured(out CommonCompilerArguments)
 
 'newInstance' @ [206:70] ==> @CallerSensitive public open fun newInstance(): (CommonCompilerArguments..CommonCompilerArguments?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -727,7 +713,7 @@ Inferred types:
 
 'defaultCompilerArguments' @ [225:100] ==> val defaultCompilerArguments: (CommonCompilerArguments..CommonCompilerArguments?) defined in org.jetbrains.kotlin.idea.facet.parseCompilerArgumentsToFacet.<anonymous>[LocalVariableDescriptor]
 
-'with' @ [227:41] ==> @InlineOnly public inline fun <T, R> with(receiver: (CommonCompilerArguments..CommonCompilerArguments?), block: (CommonCompilerArguments..CommonCompilerArguments?).() -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [227:41] ==> @InlineOnly public inline fun <T, R> with(receiver: (CommonCompilerArguments..CommonCompilerArguments?), block: ((CommonCompilerArguments..CommonCompilerArguments?)).() -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments..org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments?)
     <R> -> String
@@ -736,7 +722,7 @@ Inferred types:
 
 'java' @ [227:71] ==> public val <T> KClass<out CommonCompilerArguments>.java: Class<out CommonCompilerArguments> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> CommonCompilerArguments
+    <T> -> Captured(out CommonCompilerArguments)
 
 'newInstance' @ [227:76] ==> @CallerSensitive public open fun newInstance(): (CommonCompilerArguments..CommonCompilerArguments?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -803,11 +789,9 @@ Inferred types:
 
 'additionalArgumentsString' @ [236:61] ==> val additionalArgumentsString: String defined in org.jetbrains.kotlin.idea.facet.parseCompilerArgumentsToFacet.<anonymous>[LocalVariableDescriptor]
 
-'CompilerSettings' @ [236:92] ==> public companion object defined in org.jetbrains.kotlin.config.CompilerSettings[FakeCallableDescriptorForObject]
-
 'DEFAULT_ADDITIONAL_ARGUMENTS' @ [236:109] ==> public final val DEFAULT_ADDITIONAL_ARGUMENTS: String defined in org.jetbrains.kotlin.config.CompilerSettings.Companion[DeserializedPropertyDescriptor]
 
-'with' @ [238:9] ==> @InlineOnly public inline fun <T, R> with(receiver: (CommonCompilerArguments..CommonCompilerArguments?), block: (CommonCompilerArguments..CommonCompilerArguments?).() -> CommonCompilerArguments): CommonCompilerArguments defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [238:9] ==> @InlineOnly public inline fun <T, R> with(receiver: (CommonCompilerArguments..CommonCompilerArguments?), block: ((CommonCompilerArguments..CommonCompilerArguments?)).() -> CommonCompilerArguments): CommonCompilerArguments defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments..org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments?)
     <R> -> CommonCompilerArguments
@@ -816,7 +800,7 @@ Inferred types:
 
 'java' @ [238:39] ==> public val <T> KClass<out CommonCompilerArguments>.java: Class<out CommonCompilerArguments> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> CommonCompilerArguments
+    <T> -> Captured(out CommonCompilerArguments)
 
 'newInstance' @ [238:44] ==> @CallerSensitive public open fun newInstance(): (CommonCompilerArguments..CommonCompilerArguments?) defined in java.lang.Class[JavaMethodDescriptor]
 

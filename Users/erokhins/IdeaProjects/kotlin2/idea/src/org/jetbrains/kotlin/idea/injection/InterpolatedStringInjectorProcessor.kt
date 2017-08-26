@@ -52,9 +52,9 @@ Inferred types:
 
 'create' @ [44:28] ==> public open fun <A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> create(p0: (PsiLanguageInjectionHost..PsiLanguageInjectionHost?), p1: (InjectedLanguage..InjectedLanguage?), p2: (TextRange..TextRange?)): (Trinity<(PsiLanguageInjectionHost..PsiLanguageInjectionHost?), (InjectedLanguage..InjectedLanguage?), (TextRange..TextRange?)>..Trinity<(PsiLanguageInjectionHost..PsiLanguageInjectionHost?), (InjectedLanguage..InjectedLanguage?), (TextRange..TextRange?)>?) defined in com.intellij.openapi.util.Trinity[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> PsiLanguageInjectionHost
-    <B : (Any..Any?)> -> InjectedLanguage
-    <C : (Any..Any?)> -> TextRange
+    <A : (Any..Any?)> -> (com.intellij.psi.PsiLanguageInjectionHost..com.intellij.psi.PsiLanguageInjectionHost?)
+    <B : (Any..Any?)> -> (org.intellij.plugins.intelliLang.inject.InjectedLanguage..org.intellij.plugins.intelliLang.inject.InjectedLanguage?)
+    <C : (Any..Any?)> -> (com.intellij.openapi.util.TextRange..com.intellij.openapi.util.TextRange?)
 
 'literal' @ [44:35] ==> value-parameter literal: KtStringTemplateExpression defined in org.jetbrains.kotlin.idea.injection.splitLiteralToInjectionParts[ValueParameterDescriptorImpl]
 

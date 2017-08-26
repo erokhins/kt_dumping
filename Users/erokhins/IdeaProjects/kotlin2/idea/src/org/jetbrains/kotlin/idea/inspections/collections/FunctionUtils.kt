@@ -6,7 +6,7 @@
 
 'resultingDescriptor' @ [28:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueParameters' @ [28:45] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -16,7 +16,7 @@ Inferred types:
 
 'valueArguments' @ [29:24] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'lastParameter' @ [29:39] ==> val lastParameter: ValueParameterDescriptor defined in org.jetbrains.kotlin.idea.inspections.collections.hasLastFunctionalParameterWithResult[LocalVariableDescriptor]
 
@@ -38,7 +38,7 @@ Inferred types:
 
 'functionalType' @ [32:10] ==> val functionalType: KotlinType defined in org.jetbrains.kotlin.idea.inspections.collections.hasLastFunctionalParameterWithResult[LocalVariableDescriptor]
 
-'isFunctionOfAnyKind' @ [32:25] ==> public fun KotlinType.isFunctionOfAnyKind(): Boolean defined in org.jetbrains.kotlin.idea.inspections.collections[SimpleFunctionDescriptorImpl]
+'isFunctionOfAnyKind' @ [32:25] ==> public fun KotlinType.isFunctionOfAnyKind(): Boolean defined in org.jetbrains.kotlin.idea.inspections.collections in file FunctionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'functionalType' @ [33:22] ==> val functionalType: KotlinType defined in org.jetbrains.kotlin.idea.inspections.collections.hasLastFunctionalParameterWithResult[LocalVariableDescriptor]
 

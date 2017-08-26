@@ -48,7 +48,7 @@
 
 'parameter' @ [66:21] ==> value-parameter parameter: KtParameter defined in org.jetbrains.kotlin.idea.inspections.MemberVisibilityCanPrivateInspection.buildVisitor.<no name provided>.visitParameter[ValueParameterDescriptorImpl]
 
-'isConstructorDeclaredProperty' @ [66:31] ==> public fun KtNamedDeclaration.isConstructorDeclaredProperty(): Boolean defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'isConstructorDeclaredProperty' @ [66:31] ==> public fun KtNamedDeclaration.isConstructorDeclaredProperty(): Boolean defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'canBePrivate' @ [66:66] ==> private final fun canBePrivate(declaration: KtNamedDeclaration): Boolean defined in org.jetbrains.kotlin.idea.inspections.MemberVisibilityCanPrivateInspection[SimpleFunctionDescriptorImpl]
 

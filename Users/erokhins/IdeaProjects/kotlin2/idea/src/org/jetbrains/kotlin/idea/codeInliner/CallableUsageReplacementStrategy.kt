@@ -16,7 +16,7 @@
 
 'status' @ [31:27] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.status: ResolutionStatus[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'isSuccess' @ [31:34] ==> public final val ResolutionStatus.isSuccess: Boolean[MyPropertyDescriptor]
 
@@ -44,7 +44,7 @@ Inferred types:
 
 'call' @ [35:34] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [35:39] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 

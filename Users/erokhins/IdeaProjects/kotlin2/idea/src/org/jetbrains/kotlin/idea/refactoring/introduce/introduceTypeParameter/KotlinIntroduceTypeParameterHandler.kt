@@ -1,6 +1,6 @@
 'JvmField' @ [67:5] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
-'selectElementsWithTargetParent' @ [71:9] ==> public fun selectElementsWithTargetParent(operationName: String, editor: Editor, file: KtFile, title: String, elementKinds: Collection<CodeInsightUtils.ElementKind>, getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement>, continuation: (elements: List<PsiElement>, targetParent: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce[SimpleFunctionDescriptorImpl]
+'selectElementsWithTargetParent' @ [71:9] ==> public fun selectElementsWithTargetParent(operationName: String, editor: Editor, file: KtFile, title: String, elementKinds: Collection<CodeInsightUtils.ElementKind>, getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement>, continuation: (elements: List<PsiElement>, targetParent: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'REFACTORING_NAME' @ [72:17] ==> @JvmField public final val REFACTORING_NAME: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeParameter.KotlinIntroduceTypeParameterHandler[PropertyDescriptorImpl]
 
@@ -14,7 +14,7 @@ Inferred types:
 
 'TYPE_ELEMENT' @ [76:53] ==> enum entry TYPE_ELEMENT defined in org.jetbrains.kotlin.idea.codeInsight.CodeInsightUtils.ElementKind[FakeCallableDescriptorForObject]
 
-'getPossibleTypeParameterContainers' @ [77:32] ==> public fun getPossibleTypeParameterContainers(startFrom: PsiElement): List<KtTypeParameterListOwner> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createTypeParameter[SimpleFunctionDescriptorImpl]
+'getPossibleTypeParameterContainers' @ [77:32] ==> public fun getPossibleTypeParameterContainers(startFrom: PsiElement): List<KtTypeParameterListOwner> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createTypeParameter in file CreateTypeParameterByUnresolvedRefActionFactory.kt[SimpleFunctionDescriptorImpl]
 
 'parent' @ [77:67] ==> value-parameter parent: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeParameter.KotlinIntroduceTypeParameterHandler.selectElements.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -93,7 +93,9 @@ Inferred types:
 
 'context' @ [99:74] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeParameter.KotlinIntroduceTypeParameterHandler.doInvoke[LocalVariableDescriptor]
 
-'CreateTypeParameterByUnresolvedRefActionFactory' @ [102:17] ==> public object CreateTypeParameterByUnresolvedRefActionFactory : KotlinIntentionActionFactoryWithDelegate<KtUserType, CreateTypeParameterData> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createTypeParameter in file CreateTypeParameterByUnresolvedRefActionFactory.kt[FakeCallableDescriptorForObject]
+'?:' @ [102:17] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CreateTypeParameterData?, right: CreateTypeParameterData): CreateTypeParameterData[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CreateTypeParameterData
 
 'extractFixData' @ [102:65] ==> public final fun extractFixData(element: KtTypeElement, newName: String): CreateTypeParameterData? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createTypeParameter.CreateTypeParameterByUnresolvedRefActionFactory[SimpleFunctionDescriptorImpl]
 
@@ -204,8 +206,6 @@ Inferred types:
 
 'restoredOwner' @ [121:36] ==> val restoredOwner: KtTypeParameterListOwner defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeParameter.KotlinIntroduceTypeParameterHandler.doInvoke.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'KotlinPsiUnifier' @ [121:51] ==> public companion object defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [121:68] ==> public final val DEFAULT: KotlinPsiUnifier defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Companion[DeserializedPropertyDescriptor]
 
 'filterNot' @ [122:30] ==> public inline fun <T> Iterable<UnificationResult.Matched>.filterNot(predicate: (UnificationResult.Matched) -> Boolean): List<UnificationResult.Matched> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -255,7 +255,7 @@ Inferred types:
 
 'parameterRefElement' @ [129:57] ==> val parameterRefElement: KtTypeElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeParameter.KotlinIntroduceTypeParameterHandler.doInvoke.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'processDuplicates' @ [131:21] ==> public fun processDuplicates(duplicateReplacers: Map<KotlinPsiRange, () -> Unit>, project: Project, editor: Editor, scopeDescription: String = ..., usageDescription: String = ...): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'processDuplicates' @ [131:21] ==> public fun processDuplicates(duplicateReplacers: Map<KotlinPsiRange, () -> Unit>, project: Project, editor: Editor, scopeDescription: String = ..., usageDescription: String = ...): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file duplicateUtil.kt[SimpleFunctionDescriptorImpl]
 
 'duplicateRanges' @ [132:29] ==> val duplicateRanges: List<KotlinPsiRange> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeParameter.KotlinIntroduceTypeParameterHandler.doInvoke.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -326,6 +326,19 @@ Inferred types:
 'it' @ [146:56] ==> value-parameter it: KtTypeReference defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeParameter.KotlinIntroduceTypeParameterHandler.doInvoke.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'startOffset' @ [146:59] ==> public val PsiElement.startOffset: Int defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
+
+'if (!ApplicationManager.getApplication().isUnitTestMode) {
+                val dataContext = SimpleDataContext.getSimpleContext(CommonDataKeys.PSI_ELEMENT.name, newTypeParameter,
+                                                                     (editor as? EditorEx)?.dataContext)
+                editor.selectionModel.removeSelection()
+                editor.caretModel.moveToOffset(newTypeParameter.startOffset)
+                VariableInplaceRenameHandlerWithFinishHook(postRename).doRename(newTypeParameter, editor, dataContext)
+            }
+            else {
+                postRename()
+            }' @ [151:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Any?, elseBranch: Any?): Any?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Any?
 
 '!' @ [151:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 

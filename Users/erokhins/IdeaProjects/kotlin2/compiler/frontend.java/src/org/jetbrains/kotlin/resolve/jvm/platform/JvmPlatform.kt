@@ -17,21 +17,15 @@ Inferred types:
 
 'addAll' @ [29:13] ==> public open fun addAll(elements: Collection<ImportPath>): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'Default' @ [29:20] ==> public object Default : TargetPlatform defined in org.jetbrains.kotlin.resolve.TargetPlatform[FakeCallableDescriptorForObject]
-
 'getDefaultImports' @ [29:28] ==> public open fun getDefaultImports(includeKotlinComparisons: Boolean): List<ImportPath> defined in org.jetbrains.kotlin.resolve.TargetPlatform.Default[DeserializedSimpleFunctionDescriptor]
 
 'includeKotlinComparisons' @ [29:46] ==> value-parameter includeKotlinComparisons: Boolean defined in org.jetbrains.kotlin.resolve.jvm.platform.JvmPlatform.defaultImports.<anonymous>[ValueParameterDescriptorImpl]
 
 'add' @ [31:13] ==> public open fun add(element: ImportPath): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'ImportPath' @ [31:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.ImportPath[FakeCallableDescriptorForObject]
-
 'fromString' @ [31:28] ==> @JvmStatic public final fun fromString(pathStr: String): ImportPath defined in org.jetbrains.kotlin.resolve.ImportPath.Companion[DeserializedSimpleFunctionDescriptor]
 
 'add' @ [32:13] ==> public open fun add(element: ImportPath): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
-
-'ImportPath' @ [32:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.ImportPath[FakeCallableDescriptorForObject]
 
 'fromString' @ [32:28] ==> @JvmStatic public final fun fromString(pathStr: String): ImportPath defined in org.jetbrains.kotlin.resolve.ImportPath.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -39,11 +33,7 @@ Inferred types:
 
 'getContributedDescriptors' @ [35:42] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [35:68] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CLASSIFIERS' @ [35:89] ==> @field:JvmField public final val CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'MemberScope' @ [35:102] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'ALL_NAME_FILTER' @ [35:114] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 

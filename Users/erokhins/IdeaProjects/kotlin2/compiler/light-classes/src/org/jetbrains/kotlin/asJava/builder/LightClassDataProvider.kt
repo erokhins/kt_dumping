@@ -18,7 +18,7 @@
 
 'classOrObject' @ [46:104] ==> private final val classOrObject: KtClassOrObject defined in org.jetbrains.kotlin.asJava.builder.LightClassDataProviderForClassOrObject[PropertyDescriptorImpl]
 
-'buildLightClass' @ [48:13] ==> public fun buildLightClass(packageFqName: FqName, files: Collection<KtFile>, generateClassFilter: GenerationState.GenerateClassFilter, context: LightClassConstructionContext, generate: (state: GenerationState, files: Collection<KtFile>) -> Unit): LightClassBuilderResult defined in org.jetbrains.kotlin.asJava.builder[SimpleFunctionDescriptorImpl]
+'buildLightClass' @ [48:13] ==> public fun buildLightClass(packageFqName: FqName, files: Collection<KtFile>, generateClassFilter: GenerationState.GenerateClassFilter, context: LightClassConstructionContext, generate: (state: GenerationState, files: Collection<KtFile>) -> Unit): LightClassBuilderResult defined in org.jetbrains.kotlin.asJava.builder in file LightClassBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'packageFqName' @ [48:29] ==> val packageFqName: FqName defined in org.jetbrains.kotlin.asJava.builder.LightClassDataProviderForClassOrObject.computeLightClassData[LocalVariableDescriptor]
 
@@ -84,7 +84,7 @@ Inferred types:
 
 'create' @ [60:43] ==> public open fun <T : (Any..Any?)> create(@Nullable p0: LightClassDataHolder.ForClass?, @NotNull vararg p1: (Any..Any?)): (CachedValueProvider.Result<(LightClassDataHolder.ForClass..LightClassDataHolder.ForClass?)>..CachedValueProvider.Result<(LightClassDataHolder.ForClass..LightClassDataHolder.ForClass?)>?) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ForClass
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForClass..org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForClass?)
 
 'computeLightClassData' @ [61:17] ==> private final fun computeLightClassData(): LightClassDataHolder.ForClass defined in org.jetbrains.kotlin.asJava.builder.LightClassDataProviderForClassOrObject[SimpleFunctionDescriptorImpl]
 
@@ -104,11 +104,11 @@ Inferred types:
 
 'java' @ [67:28] ==> public val <T> KClass<out LightClassDataProviderForClassOrObject>.java: Class<out LightClassDataProviderForClassOrObject> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> LightClassDataProviderForClassOrObject
+    <T> -> Captured(out LightClassDataProviderForClassOrObject)
 
 'name' @ [67:33] ==> public final val <T : (Any..Any?)> Class<out LightClassDataProviderForClassOrObject>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LightClassDataProviderForClassOrObject
+    <T : (Any..Any?)> -> Captured(out LightClassDataProviderForClassOrObject)
 
 'classOrObject' @ [67:50] ==> private final val classOrObject: KtClassOrObject defined in org.jetbrains.kotlin.asJava.builder.LightClassDataProviderForClassOrObject[PropertyDescriptorImpl]
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'files' @ [77:91] ==> value-parameter files: Collection<KtFile> defined in org.jetbrains.kotlin.asJava.builder.LightClassDataProviderForFileFacade.computeLightClassData[ValueParameterDescriptorImpl]
 
-'buildLightClass' @ [79:13] ==> public fun buildLightClass(packageFqName: FqName, files: Collection<KtFile>, generateClassFilter: GenerationState.GenerateClassFilter, context: LightClassConstructionContext, generate: (state: GenerationState, files: Collection<KtFile>) -> Unit): LightClassBuilderResult defined in org.jetbrains.kotlin.asJava.builder[SimpleFunctionDescriptorImpl]
+'buildLightClass' @ [79:13] ==> public fun buildLightClass(packageFqName: FqName, files: Collection<KtFile>, generateClassFilter: GenerationState.GenerateClassFilter, context: LightClassConstructionContext, generate: (state: GenerationState, files: Collection<KtFile>) -> Unit): LightClassBuilderResult defined in org.jetbrains.kotlin.asJava.builder in file LightClassBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'facadeFqName' @ [79:29] ==> protected final val facadeFqName: FqName defined in org.jetbrains.kotlin.asJava.builder.LightClassDataProviderForFileFacade[PropertyDescriptorImpl]
 
@@ -208,7 +208,7 @@ Inferred types:
 
 'create' @ [101:43] ==> public open fun <T : (Any..Any?)> create(@Nullable p0: LightClassDataHolder.ForFacade?, @NotNull vararg p1: (Any..Any?)): (CachedValueProvider.Result<(LightClassDataHolder.ForFacade..LightClassDataHolder.ForFacade?)>..CachedValueProvider.Result<(LightClassDataHolder.ForFacade..LightClassDataHolder.ForFacade?)>?) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ForFacade
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForFacade..org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForFacade?)
 
 'computeLightClassData' @ [102:17] ==> private final fun computeLightClassData(files: Collection<KtFile>): LightClassDataHolder.ForFacade defined in org.jetbrains.kotlin.asJava.builder.LightClassDataProviderForFileFacade[SimpleFunctionDescriptorImpl]
 
@@ -220,11 +220,11 @@ Inferred types:
 
 'java' @ [108:28] ==> public val <T> KClass<out LightClassDataProviderForFileFacade>.java: Class<out LightClassDataProviderForFileFacade> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> LightClassDataProviderForFileFacade
+    <T> -> Captured(out LightClassDataProviderForFileFacade)
 
 'name' @ [108:33] ==> public final val <T : (Any..Any?)> Class<out LightClassDataProviderForFileFacade>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LightClassDataProviderForFileFacade
+    <T : (Any..Any?)> -> Captured(out LightClassDataProviderForFileFacade)
 
 'facadeFqName' @ [108:47] ==> protected final val facadeFqName: FqName defined in org.jetbrains.kotlin.asJava.builder.LightClassDataProviderForFileFacade[PropertyDescriptorImpl]
 

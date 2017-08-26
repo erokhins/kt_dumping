@@ -156,8 +156,6 @@ Inferred types:
 
 'protoBytes' @ [75:60] ==> val protoBytes: ByteArray defined in org.jetbrains.kotlin.jps.incremental.AbstractJsProtoComparisonTest.compileAndGetClasses[LocalVariableDescriptor]
 
-'JsSerializerProtocol' @ [75:72] ==> public object JsSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.js[FakeCallableDescriptorForObject]
-
 'extensionRegistry' @ [75:93] ==> public final val extensionRegistry: ExtensionRegistryLite defined in org.jetbrains.kotlin.serialization.js.JsSerializerProtocol[DeserializedPropertyDescriptor]
 
 'NameResolverImpl' @ [76:32] ==> public constructor NameResolverImpl(strings: ProtoBuf.StringTable, qualifiedNames: ProtoBuf.QualifiedNameTable) defined in org.jetbrains.kotlin.serialization.deserialization.NameResolverImpl[DeserializedClassConstructorDescriptor]
@@ -213,7 +211,7 @@ Inferred types:
 
 'hasExtension' @ [84:41] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [84:65] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -223,7 +221,7 @@ Inferred types:
 
 'getExtension' @ [85:51] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [85:75] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 

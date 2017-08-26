@@ -702,11 +702,11 @@ Inferred types:
 
 'valueIfFound' @ [275:17] ==> value-parameter valueIfFound: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FindTransformationMatcher.buildFindOperationGenerator[ValueParameterDescriptorImpl]
 
-'isTrueConstant' @ [275:30] ==> public fun KtExpression?.isTrueConstant(): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'isTrueConstant' @ [275:30] ==> public fun KtExpression?.isTrueConstant(): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'valueIfNotFound' @ [275:50] ==> value-parameter valueIfNotFound: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FindTransformationMatcher.buildFindOperationGenerator[ValueParameterDescriptorImpl]
 
-'isFalseConstant' @ [275:66] ==> public fun KtExpression?.isFalseConstant(): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'isFalseConstant' @ [275:66] ==> public fun KtExpression?.isFalseConstant(): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'buildFoundFlagGenerator' @ [276:28] ==> private final fun buildFoundFlagGenerator(loop: KtForExpression, inputVariable: KtCallableDeclaration, filter: Condition?, negated: Boolean): FindTransformationMatcher.FindOperationGenerator defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FindTransformationMatcher[SimpleFunctionDescriptorImpl]
 
@@ -718,11 +718,11 @@ Inferred types:
 
 'valueIfFound' @ [279:17] ==> value-parameter valueIfFound: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FindTransformationMatcher.buildFindOperationGenerator[ValueParameterDescriptorImpl]
 
-'isFalseConstant' @ [279:30] ==> public fun KtExpression?.isFalseConstant(): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'isFalseConstant' @ [279:30] ==> public fun KtExpression?.isFalseConstant(): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'valueIfNotFound' @ [279:51] ==> value-parameter valueIfNotFound: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FindTransformationMatcher.buildFindOperationGenerator[ValueParameterDescriptorImpl]
 
-'isTrueConstant' @ [279:67] ==> public fun KtExpression?.isTrueConstant(): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'isTrueConstant' @ [279:67] ==> public fun KtExpression?.isTrueConstant(): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'buildFoundFlagGenerator' @ [280:28] ==> private final fun buildFoundFlagGenerator(loop: KtForExpression, inputVariable: KtCallableDeclaration, filter: Condition?, negated: Boolean): FindTransformationMatcher.FindOperationGenerator defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FindTransformationMatcher[SimpleFunctionDescriptorImpl]
 

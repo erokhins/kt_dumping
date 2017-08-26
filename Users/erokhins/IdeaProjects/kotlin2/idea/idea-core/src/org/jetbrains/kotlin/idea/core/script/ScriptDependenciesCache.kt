@@ -119,7 +119,7 @@ Inferred types:
 
 'getExtensionPoint' @ [64:45] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensionPoint(@NotNull p0: ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>): ExtensionPoint<(PsiElementFinder..PsiElementFinder?)> defined in com.intellij.openapi.extensions.ExtensionsArea[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElementFinder
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElementFinder..com.intellij.psi.PsiElementFinder?)
 
 'EP_NAME' @ [64:80] ==> public final val EP_NAME: (ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>..ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>?) defined in com.intellij.psi.PsiElementFinder[JavaPropertyDescriptor]
 
@@ -217,8 +217,6 @@ Inferred types:
 
 'containsAll' @ [89:48] ==> public abstract fun containsAll(elements: Collection<VirtualFile>): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'ScriptDependenciesManager' @ [89:60] ==> public companion object defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager[FakeCallableDescriptorForObject]
-
 'toVfsRoots' @ [89:86] ==> public final fun toVfsRoots(roots: Iterable<File>): List<VirtualFile> defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager.Companion[SimpleFunctionDescriptorImpl]
 
 'scriptDependencies' @ [89:97] ==> value-parameter scriptDependencies: ScriptDependencies defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesCache.hasNotCachedRoots[ValueParameterDescriptorImpl]
@@ -233,8 +231,6 @@ Inferred types:
 
 'containsAll' @ [90:46] ==> public abstract fun containsAll(elements: Collection<VirtualFile>): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'ScriptDependenciesManager' @ [90:58] ==> public companion object defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager[FakeCallableDescriptorForObject]
-
 'toVfsRoots' @ [90:84] ==> public final fun toVfsRoots(roots: Iterable<File>): List<VirtualFile> defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager.Companion[SimpleFunctionDescriptorImpl]
 
 'scriptDependencies' @ [90:95] ==> value-parameter scriptDependencies: ScriptDependencies defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesCache.hasNotCachedRoots[ValueParameterDescriptorImpl]
@@ -248,6 +244,8 @@ Inferred types:
     <T> -> Unit
 
 'cache' @ [94:25] ==> private final val cache: HashMap<String, ScriptDependencies> /* = HashMap<String, ScriptDependencies> */ defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesCache[PropertyDescriptorImpl]
+
+'clear' @ [94:32] ==> public open fun clear(): Unit defined in java.util.HashMap[JavaMethodDescriptor]
 
 'onChange' @ [95:9] ==> private final fun onChange(file: VirtualFile?): Unit defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesCache[SimpleFunctionDescriptorImpl]
 

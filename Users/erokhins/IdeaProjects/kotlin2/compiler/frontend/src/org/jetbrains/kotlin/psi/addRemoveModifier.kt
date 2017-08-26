@@ -1,6 +1,6 @@
 'firstChild' @ [28:18] ==> public final val KtModifierListOwner.firstChild: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'siblings' @ [29:14] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [29:14] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'dropWhile' @ [30:14] ==> public fun <T> Sequence<PsiElement>.dropWhile(predicate: (PsiElement) -> Boolean): Sequence<PsiElement> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -253,11 +253,13 @@ Inferred types:
 
 'lastChild' @ [101:22] ==> val lastChild: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.psi.addRemoveModifier.addModifier[LocalVariableDescriptor]
 
-'siblings' @ [101:33] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [101:33] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [101:60] ==> public inline fun <T> Sequence<PsiElement>.firstOrNull(predicate: (PsiElement) -> Boolean): PsiElement? defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiElement
+
+'placeAfter' @ [101:74] ==> local final fun placeAfter(child: PsiElement): Boolean defined in org.jetbrains.kotlin.psi.addRemoveModifier.addModifier[SimpleFunctionDescriptorImpl]
 
 'modifierList' @ [102:9] ==> value-parameter modifierList: KtModifierList defined in org.jetbrains.kotlin.psi.addRemoveModifier.addModifier[ValueParameterDescriptorImpl]
 

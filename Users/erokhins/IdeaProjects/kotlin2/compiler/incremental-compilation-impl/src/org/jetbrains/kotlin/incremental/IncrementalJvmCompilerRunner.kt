@@ -4,7 +4,7 @@
 
 'EmptyICReporter' @ [51:32] ==> private object EmptyICReporter : ICReporter defined in org.jetbrains.kotlin.incremental in file IncrementalJvmCompilerRunner.kt[FakeCallableDescriptorForObject]
 
-'commonCacheVersions' @ [53:20] ==> public fun commonCacheVersions(cachesDir: File): List<CacheVersion> defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'commonCacheVersions' @ [53:20] ==> public fun commonCacheVersions(cachesDir: File): List<CacheVersion> defined in org.jetbrains.kotlin.incremental in file cacheVersions.kt[SimpleFunctionDescriptorImpl]
 
 'cachesDir' @ [53:40] ==> value-parameter cachesDir: File defined in org.jetbrains.kotlin.incremental.makeIncrementally[ValueParameterDescriptorImpl]
 
@@ -42,6 +42,8 @@ Inferred types:
 'filter' @ [58:27] ==> public fun <T> Sequence<File>.filter(predicate: (File) -> Boolean): Sequence<File> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
+
+'isFile' @ [58:40] ==> public open fun isFile(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
 'files' @ [59:23] ==> val files: Sequence<File> defined in org.jetbrains.kotlin.incremental.makeIncrementally[LocalVariableDescriptor]
 
@@ -304,6 +306,8 @@ Inferred types:
 Inferred types:
     <T> -> File
 
+'isClassFile' @ [164:67] ==> public fun File.isClassFile(): Boolean defined in org.jetbrains.kotlin.incremental[DeserializedSimpleFunctionDescriptor]
+
 'removedClassFiles' @ [165:13] ==> val removedClassFiles: List<File> defined in org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.calculateSourcesToCompile[LocalVariableDescriptor]
 
 'any' @ [165:31] ==> public fun <T> Iterable<File>.any(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -325,6 +329,8 @@ Inferred types:
 'filter' @ [167:56] ==> public inline fun <T> Iterable<File>.filter(predicate: (File) -> Boolean): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
+
+'isClassFile' @ [167:69] ==> public fun File.isClassFile(): Boolean defined in org.jetbrains.kotlin.incremental[DeserializedSimpleFunctionDescriptor]
 
 'modifiedClassFiles' @ [168:13] ==> val modifiedClassFiles: List<File> defined in org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.calculateSourcesToCompile[LocalVariableDescriptor]
 
@@ -565,9 +571,13 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [206:73] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'filter' @ [206:79] ==> public inline fun <T> Iterable<File>.filter(predicate: (File) -> Boolean): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
+
+'exists' @ [206:92] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
 'files' @ [207:17] ==> val files: List<File> defined in org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.calculateSourcesToCompile[LocalVariableDescriptor]
 
@@ -800,6 +810,8 @@ Inferred types:
 'partition' @ [290:73] ==> public inline fun <T> Iterable<File>.partition(predicate: (File) -> Boolean): Pair<List<File>, List<File>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
+
+'exists' @ [290:89] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
 'allSourcesToCompile' @ [294:13] ==> val allSourcesToCompile: HashSet<File> defined in org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.compileIncrementally[LocalVariableDescriptor]
 
@@ -1119,7 +1131,7 @@ Inferred types:
 
 'java' @ [354:125] ==> public val <T> KClass<out IncrementalJvmCompilerRunner.CompilationMode>.java: Class<out IncrementalJvmCompilerRunner.CompilationMode> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> CompilationMode
+    <T> -> Captured(out CompilationMode)
 
 'changesRegistry' @ [355:17] ==> private final val changesRegistry: ChangesRegistry? defined in org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner[PropertyDescriptorImpl]
 
@@ -1475,6 +1487,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [476:57] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'classpath' @ [477:18] ==> @Argument public final var classpath: String? defined in org.jetbrains.kotlin.cli.common.arguments.K2JVMCompilerArguments[DeserializedPropertyDescriptor]
 

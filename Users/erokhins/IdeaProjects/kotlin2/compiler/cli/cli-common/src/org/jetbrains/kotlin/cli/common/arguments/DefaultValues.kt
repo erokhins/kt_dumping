@@ -8,8 +8,6 @@
 
 'DefaultValues' @ [33:31] ==> public constructor DefaultValues(defaultValue: String, possibleValues: List<String>? = ...) defined in org.jetbrains.kotlin.cli.common.arguments.DefaultValues[ClassConstructorDescriptorImpl]
 
-'LanguageVersion' @ [35:13] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'values' @ [35:29] ==> public final fun values(): Array<LanguageVersion> defined in org.jetbrains.kotlin.config.LanguageVersion[SimpleFunctionDescriptorImpl]
 
 'map' @ [35:38] ==> public inline fun <T, R> Array<out LanguageVersion>.map(transform: (LanguageVersion) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -25,13 +23,9 @@ Inferred types:
 
 '+' @ [39:13] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'JvmTarget' @ [39:20] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [39:30] ==> @field:JvmField public final val DEFAULT: JvmTarget defined in org.jetbrains.kotlin.config.JvmTarget.Companion[DeserializedPropertyDescriptor]
 
 'description' @ [39:38] ==> public open val description: String defined in org.jetbrains.kotlin.config.JvmTarget[DeserializedPropertyDescriptor]
-
-'JvmTarget' @ [40:13] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'values' @ [40:23] ==> public final fun values(): Array<JvmTarget> defined in org.jetbrains.kotlin.config.JvmTarget[SimpleFunctionDescriptorImpl]
 

@@ -1,6 +1,6 @@
 'ArrayList' @ [26:31] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (Diagnostic..Diagnostic?)>..Collection<(Diagnostic..Diagnostic?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Diagnostic
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
 
 'diagnostics' @ [26:41] ==> value-parameter diagnostics: Collection<Diagnostic> defined in org.jetbrains.kotlin.resolve.diagnostics.SimpleDiagnostics.<init>[ValueParameterDescriptorImpl]
 
@@ -10,7 +10,7 @@ Inferred types:
 
 'this' @ [29:58] ==> <this> defined in org.jetbrains.kotlin.resolve.diagnostics.SimpleDiagnostics[LazyClassReceiverParameterDescriptor]
 
-'diagnostics' @ [31:26] ==> private final val diagnostics: ArrayList<Diagnostic> defined in org.jetbrains.kotlin.resolve.diagnostics.SimpleDiagnostics[PropertyDescriptorImpl]
+'diagnostics' @ [31:26] ==> private final val diagnostics: ArrayList<(Diagnostic..Diagnostic?)> defined in org.jetbrains.kotlin.resolve.diagnostics.SimpleDiagnostics[PropertyDescriptorImpl]
 
 'elementsCache' @ [33:55] ==> @Suppress private final val elementsCache: DiagnosticsElementsCache defined in org.jetbrains.kotlin.resolve.diagnostics.SimpleDiagnostics[PropertyDescriptorImpl]
 

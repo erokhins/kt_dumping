@@ -2,15 +2,11 @@
 Inferred types:
     <TReceiver : KtElement?> -> Nothing?
 
-'DescriptorKindFilter' @ [50:41] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'ALL' @ [50:62] ==> @field:JvmField public final val ALL: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'CallType<Nothing?>' @ [52:22] ==> private constructor CallType<TReceiver : KtElement?>(descriptorKindFilter: DescriptorKindFilter) defined in org.jetbrains.kotlin.idea.util.CallType[ClassConstructorDescriptorImpl]
 Inferred types:
     <TReceiver : KtElement?> -> Nothing?
-
-'DescriptorKindFilter' @ [52:41] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'ALL' @ [52:62] ==> @field:JvmField public final val ALL: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -18,15 +14,11 @@ Inferred types:
 Inferred types:
     <TReceiver : KtElement?> -> KtExpression
 
-'DescriptorKindFilter' @ [54:41] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'ALL' @ [54:62] ==> @field:JvmField public final val ALL: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'CallType<KtExpression>' @ [56:19] ==> private constructor CallType<TReceiver : KtElement?>(descriptorKindFilter: DescriptorKindFilter) defined in org.jetbrains.kotlin.idea.util.CallType[ClassConstructorDescriptorImpl]
 Inferred types:
     <TReceiver : KtElement?> -> KtExpression
-
-'DescriptorKindFilter' @ [56:42] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'ALL' @ [56:63] ==> @field:JvmField public final val ALL: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -76,15 +68,11 @@ Inferred types:
 Inferred types:
     <TReceiver : KtElement?> -> KtExpression?
 
-'DescriptorKindFilter' @ [66:55] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'ALL' @ [66:76] ==> @field:JvmField public final val ALL: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'CallType<KtExpression?>' @ [68:32] ==> private constructor CallType<TReceiver : KtElement?>(descriptorKindFilter: DescriptorKindFilter) defined in org.jetbrains.kotlin.idea.util.CallType[ClassConstructorDescriptorImpl]
 Inferred types:
     <TReceiver : KtElement?> -> KtExpression?
-
-'DescriptorKindFilter' @ [68:56] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'PACKAGES' @ [68:77] ==> @field:JvmField public final val PACKAGES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -97,8 +85,6 @@ Inferred types:
 'DescriptorKindFilter' @ [70:64] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'CLASSIFIERS_MASK' @ [70:85] ==> public final val CLASSIFIERS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'DescriptorKindFilter' @ [70:105] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'PACKAGES_MASK' @ [70:126] ==> public final val PACKAGES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -123,8 +109,6 @@ Inferred types:
 'DescriptorKindFilter' @ [74:70] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'CLASSIFIERS_MASK' @ [74:91] ==> public final val CLASSIFIERS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'DescriptorKindFilter' @ [74:111] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'PACKAGES_MASK' @ [74:132] ==> public final val PACKAGES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -179,8 +163,6 @@ Inferred types:
 'descriptor' @ [111:61] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.util.CallType.AbstractMembersExclude.excludes[ValueParameterDescriptorImpl]
 
 'modality' @ [111:72] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [111:84] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [111:93] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -445,9 +427,9 @@ Inferred types:
 'if (parent.operationToken == KtTokens.IDENTIFIER)
                                 CallTypeAndReceiver.INFIX(receiverExpression)
                             else
-                                CallTypeAndReceiver.OPERATOR(receiverExpression)' @ [169:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: CallTypeAndReceiver<KtExpression, CallType<KtExpression>>, elseBranch: CallTypeAndReceiver<KtExpression, CallType<KtExpression>>): CallTypeAndReceiver<KtExpression, CallType<KtExpression>>[SimpleFunctionDescriptorImpl]
+                                CallTypeAndReceiver.OPERATOR(receiverExpression)' @ [169:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: CallTypeAndReceiver<KtExpression, *>, elseBranch: CallTypeAndReceiver<KtExpression, *>): CallTypeAndReceiver<KtExpression, *>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CallTypeAndReceiver<KtExpression, CallType<KtExpression>>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CallTypeAndReceiver<KtExpression, *>
 
 'parent' @ [169:33] ==> val parent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.Companion.detect[LocalVariableDescriptor]
 
@@ -455,19 +437,13 @@ Inferred types:
 
 'IDENTIFIER' @ [169:67] ==> public final val IDENTIFIER: (KtToken..KtToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'CallTypeAndReceiver' @ [170:33] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
-
 'INFIX' @ [170:53] ==> public constructor INFIX(receiver: KtExpression) defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.INFIX[ClassConstructorDescriptorImpl]
 
 'receiverExpression' @ [170:59] ==> val receiverExpression: KtExpression? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.Companion.detect[LocalVariableDescriptor]
 
-'CallTypeAndReceiver' @ [172:33] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
-
 'OPERATOR' @ [172:53] ==> public constructor OPERATOR(receiver: KtExpression) defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.OPERATOR[ClassConstructorDescriptorImpl]
 
 'receiverExpression' @ [172:62] ==> val receiverExpression: KtExpression? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.Companion.detect[LocalVariableDescriptor]
-
-'CallTypeAndReceiver' @ [175:49] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
 
 'OPERATOR' @ [175:69] ==> public constructor OPERATOR(receiver: KtExpression) defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.OPERATOR[ClassConstructorDescriptorImpl]
 
@@ -520,9 +496,9 @@ Inferred types:
 'if ((parent.parent as KtQualifiedExpression).operationSign == KtTokens.SAFE_ACCESS)
                                 CallTypeAndReceiver.SAFE(receiverExpression)
                             else
-                                CallTypeAndReceiver.DOT(receiverExpression)' @ [192:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: CallTypeAndReceiver<KtExpression, CallType<KtExpression>>, elseBranch: CallTypeAndReceiver<KtExpression, CallType<KtExpression>>): CallTypeAndReceiver<KtExpression, CallType<KtExpression>>[SimpleFunctionDescriptorImpl]
+                                CallTypeAndReceiver.DOT(receiverExpression)' @ [192:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: CallTypeAndReceiver<KtExpression, *>, elseBranch: CallTypeAndReceiver<KtExpression, *>): CallTypeAndReceiver<KtExpression, *>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CallTypeAndReceiver<KtExpression, CallType<KtExpression>>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CallTypeAndReceiver<KtExpression, *>
 
 '==' @ [192:33] ==> public open fun equals(other: Any?): Boolean defined in org.jetbrains.kotlin.lexer.KtSingleValueToken[DeserializedSimpleFunctionDescriptor]
 
@@ -534,13 +510,9 @@ Inferred types:
 
 'SAFE_ACCESS' @ [192:100] ==> public final val SAFE_ACCESS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'CallTypeAndReceiver' @ [193:33] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
-
 'SAFE' @ [193:53] ==> public constructor SAFE(receiver: KtExpression) defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.SAFE[ClassConstructorDescriptorImpl]
 
 'receiverExpression' @ [193:58] ==> val receiverExpression: KtExpression? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.Companion.detect[LocalVariableDescriptor]
-
-'CallTypeAndReceiver' @ [195:33] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
 
 'DOT' @ [195:53] ==> public constructor DOT(receiver: KtExpression) defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.DOT[ClassConstructorDescriptorImpl]
 
@@ -549,9 +521,9 @@ Inferred types:
 'if (parent.operationSign == KtTokens.SAFE_ACCESS)
                                 CallTypeAndReceiver.SAFE(receiverExpression)
                             else
-                                CallTypeAndReceiver.DOT(receiverExpression)' @ [199:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: CallTypeAndReceiver<KtExpression, CallType<KtExpression>>, elseBranch: CallTypeAndReceiver<KtExpression, CallType<KtExpression>>): CallTypeAndReceiver<KtExpression, CallType<KtExpression>>[SimpleFunctionDescriptorImpl]
+                                CallTypeAndReceiver.DOT(receiverExpression)' @ [199:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: CallTypeAndReceiver<KtExpression, *>, elseBranch: CallTypeAndReceiver<KtExpression, *>): CallTypeAndReceiver<KtExpression, *>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CallTypeAndReceiver<KtExpression, CallType<KtExpression>>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CallTypeAndReceiver<KtExpression, *>
 
 'parent' @ [199:33] ==> val parent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.Companion.detect[LocalVariableDescriptor]
 
@@ -559,13 +531,9 @@ Inferred types:
 
 'SAFE_ACCESS' @ [199:66] ==> public final val SAFE_ACCESS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'CallTypeAndReceiver' @ [200:33] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
-
 'SAFE' @ [200:53] ==> public constructor SAFE(receiver: KtExpression) defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.SAFE[ClassConstructorDescriptorImpl]
 
 'receiverExpression' @ [200:58] ==> val receiverExpression: KtExpression? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.Companion.detect[LocalVariableDescriptor]
-
-'CallTypeAndReceiver' @ [202:33] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
 
 'DOT' @ [202:53] ==> public constructor DOT(receiver: KtExpression) defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.DOT[ClassConstructorDescriptorImpl]
 
@@ -577,7 +545,7 @@ Inferred types:
 
 'UNKNOWN' @ [209:32] ==> public object UNKNOWN : CallTypeAndReceiver<Nothing?, CallType.UNKNOWN> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
 
-'receiverTypesWithIndex' @ [224:12] ==> public fun CallTypeAndReceiver<*, *>.receiverTypesWithIndex(bindingContext: BindingContext, contextElement: PsiElement, moduleDescriptor: ModuleDescriptor, resolutionFacade: ResolutionFacade, stableSmartCastsOnly: Boolean, withImplicitReceiversWhenExplicitPresent: Boolean = ...): Collection<ReceiverType>? defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'receiverTypesWithIndex' @ [224:12] ==> public fun CallTypeAndReceiver<*, *>.receiverTypesWithIndex(bindingContext: BindingContext, contextElement: PsiElement, moduleDescriptor: ModuleDescriptor, resolutionFacade: ResolutionFacade, stableSmartCastsOnly: Boolean, withImplicitReceiversWhenExplicitPresent: Boolean = ...): Collection<ReceiverType>? defined in org.jetbrains.kotlin.idea.util in file CallType.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [224:35] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.util.receiverTypes[ValueParameterDescriptorImpl]
 
@@ -717,7 +685,7 @@ Inferred types:
 
 'bindingContext' @ [244:91] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.util.receiverTypesWithIndex[ValueParameterDescriptorImpl]
 
-'receiverValueTypes' @ [245:32] ==> private fun receiverValueTypes(receiverValue: ReceiverValue, dataFlowInfo: DataFlowInfo, bindingContext: BindingContext, moduleDescriptor: ModuleDescriptor, stableSmartCastsOnly: Boolean): List<KotlinType> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'receiverValueTypes' @ [245:32] ==> private fun receiverValueTypes(receiverValue: ReceiverValue, dataFlowInfo: DataFlowInfo, bindingContext: BindingContext, moduleDescriptor: ModuleDescriptor, stableSmartCastsOnly: Boolean): List<KotlinType> defined in org.jetbrains.kotlin.idea.util in file CallType.kt[SimpleFunctionDescriptorImpl]
 
 'receiverValue' @ [245:51] ==> val receiverValue: ExpressionReceiver defined in org.jetbrains.kotlin.idea.util.receiverTypesWithIndex[LocalVariableDescriptor]
 
@@ -830,7 +798,7 @@ Inferred types:
 
 'typeConstructor' @ [272:33] ==> public final val ClassDescriptor.typeConstructor: TypeConstructor[MyPropertyDescriptor]
 
-'supertypesWithAny' @ [272:49] ==> public fun TypeConstructor.supertypesWithAny(): Collection<KotlinType> defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'supertypesWithAny' @ [272:49] ==> public fun TypeConstructor.supertypesWithAny(): Collection<KotlinType> defined in org.jetbrains.kotlin.util in file descriptorUtils.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [272:69] ==> public inline fun <T, R> Iterable<KotlinType>.map(transform: (KotlinType) -> ReceiverType): List<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -866,8 +834,8 @@ Inferred types:
 
 'get' @ [289:33] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?), p1: (KtExpression..KtExpression?)): Qualifier? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Qualifier
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier..org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier?)
 
 'QUALIFIER' @ [289:52] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -881,8 +849,8 @@ Inferred types:
 
 'get' @ [290:33] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?), p1: (KtExpression..KtExpression?)): Qualifier? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Qualifier
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier..org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier?)
 
 'QUALIFIER' @ [290:52] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -908,7 +876,7 @@ Inferred types:
 
 'resolutionScope' @ [295:34] ==> val resolutionScope: LexicalScope defined in org.jetbrains.kotlin.idea.util.receiverTypesWithIndex[LocalVariableDescriptor]
 
-'getImplicitReceiversWithInstance' @ [295:50] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'getImplicitReceiversWithInstance' @ [295:50] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util in file implicitReceiversUtils.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [295:85] ==> public inline fun <T, R> Iterable<ReceiverParameterDescriptor>.map(transform: (ReceiverParameterDescriptor) -> ReceiverValue): List<ReceiverValue> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -929,7 +897,7 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> ReceiverType
 
-'receiverValueTypes' @ [304:21] ==> private fun receiverValueTypes(receiverValue: ReceiverValue, dataFlowInfo: DataFlowInfo, bindingContext: BindingContext, moduleDescriptor: ModuleDescriptor, stableSmartCastsOnly: Boolean): List<KotlinType> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'receiverValueTypes' @ [304:21] ==> private fun receiverValueTypes(receiverValue: ReceiverValue, dataFlowInfo: DataFlowInfo, bindingContext: BindingContext, moduleDescriptor: ModuleDescriptor, stableSmartCastsOnly: Boolean): List<KotlinType> defined in org.jetbrains.kotlin.idea.util in file CallType.kt[SimpleFunctionDescriptorImpl]
 
 'receiverValue' @ [304:40] ==> value-parameter receiverValue: ReceiverValue defined in org.jetbrains.kotlin.idea.util.receiverTypesWithIndex.addReceiverType[ValueParameterDescriptorImpl]
 
@@ -1012,7 +980,7 @@ Inferred types:
 
 'SmartCastManager' @ [326:9] ==> public constructor SmartCastManager() defined in org.jetbrains.kotlin.resolve.calls.smartcasts.SmartCastManager[DeserializedClassConstructorDescriptor]
 
-'getSmartCastVariantsWithLessSpecificExcluded' @ [326:28] ==> public fun SmartCastManager.getSmartCastVariantsWithLessSpecificExcluded(receiverToCast: ReceiverValue, bindingContext: BindingContext, containingDeclarationOrModule: DeclarationDescriptor, dataFlowInfo: DataFlowInfo): List<KotlinType> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'getSmartCastVariantsWithLessSpecificExcluded' @ [326:28] ==> public fun SmartCastManager.getSmartCastVariantsWithLessSpecificExcluded(receiverToCast: ReceiverValue, bindingContext: BindingContext, containingDeclarationOrModule: DeclarationDescriptor, dataFlowInfo: DataFlowInfo): List<KotlinType> defined in org.jetbrains.kotlin.idea.util in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'receiverValue' @ [326:73] ==> value-parameter receiverValue: ReceiverValue defined in org.jetbrains.kotlin.idea.util.receiverValueTypes[ValueParameterDescriptorImpl]
 
@@ -1095,40 +1063,40 @@ Inferred types:
 Inferred types:
     <T> -> ReceiverType
 
-'typesByDslScopes' @ [347:5] ==> val typesByDslScopes: LinkedHashMap<FqName, MutableList<ReceiverType>> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
+'typesByDslScopes' @ [345:5] ==> val typesByDslScopes: LinkedHashMap<FqName, MutableList<ReceiverType>> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
 
-'flatMapTo' @ [347:22] ==> public inline fun <K, V, R, C : MutableCollection<in ReceiverType>> Map<out FqName, MutableList<ReceiverType>>.flatMapTo(destination: MutableSet<ReceiverType>, transform: (Map.Entry<FqName, MutableList<ReceiverType>>) -> Iterable<ReceiverType>): MutableSet<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMapTo' @ [345:22] ==> public inline fun <K, V, R, C : MutableCollection<in ReceiverType>> Map<out FqName, MutableList<ReceiverType>>.flatMapTo(destination: MutableSet<ReceiverType>, transform: (Map.Entry<FqName, MutableList<ReceiverType>>) -> Iterable<ReceiverType>): MutableSet<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> FqName
     <V> -> MutableList<ReceiverType>
     <R> -> ReceiverType
     <C : MutableCollection<in R>> -> MutableSet<ReceiverType>
 
-'shadowedDslReceivers' @ [347:32] ==> val shadowedDslReceivers: MutableSet<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
+'shadowedDslReceivers' @ [345:32] ==> val shadowedDslReceivers: MutableSet<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
 
-'component1' @ [347:57] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<FqName, MutableList<ReceiverType>>.component1(): FqName defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'component1' @ [345:57] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<FqName, MutableList<ReceiverType>>.component1(): FqName defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> FqName
     <V> -> MutableList<ReceiverType>
 
-'component2' @ [347:60] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<FqName, MutableList<ReceiverType>>.component2(): MutableList<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'component2' @ [345:60] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<FqName, MutableList<ReceiverType>>.component2(): MutableList<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> FqName
     <V> -> MutableList<ReceiverType>
 
-'v' @ [347:66] ==> val v: MutableList<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers.<anonymous>[LocalVariableDescriptor]
+'v' @ [345:66] ==> val v: MutableList<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers.<anonymous>[LocalVariableDescriptor]
 
-'asSequence' @ [347:68] ==> public fun <T> Iterable<ReceiverType>.asSequence(): Sequence<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'asSequence' @ [345:68] ==> public fun <T> Iterable<ReceiverType>.asSequence(): Sequence<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ReceiverType
 
-'drop' @ [347:81] ==> public fun <T> Sequence<ReceiverType>.drop(n: Int): Sequence<ReceiverType> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'drop' @ [345:81] ==> public fun <T> Sequence<ReceiverType>.drop(n: Int): Sequence<ReceiverType> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ReceiverType
 
-'asIterable' @ [347:89] ==> public fun <T> Sequence<ReceiverType>.asIterable(): Iterable<ReceiverType> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'asIterable' @ [345:89] ==> public fun <T> Sequence<ReceiverType>.asIterable(): Iterable<ReceiverType> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ReceiverType
 
-'shadowedDslReceivers' @ [349:12] ==> val shadowedDslReceivers: MutableSet<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
+'shadowedDslReceivers' @ [347:12] ==> val shadowedDslReceivers: MutableSet<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
 

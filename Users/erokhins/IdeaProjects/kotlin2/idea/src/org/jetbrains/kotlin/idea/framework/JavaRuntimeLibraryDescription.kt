@@ -2,8 +2,6 @@
 
 'project' @ [31:51] ==> value-parameter project: Project? defined in org.jetbrains.kotlin.idea.framework.JavaRuntimeLibraryDescription.<init>[ValueParameterDescriptorImpl]
 
-'KotlinJavaModuleConfigurator' @ [32:51] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator[FakeCallableDescriptorForObject]
-
 'NAME' @ [32:80] ==> public final val NAME: String defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator.Companion[PropertyDescriptorImpl]
 
 'LIBRARY_NAME' @ [33:51] ==> public final val LIBRARY_NAME: String defined in org.jetbrains.kotlin.idea.framework.JavaRuntimeLibraryDescription.Companion[PropertyDescriptorImpl]

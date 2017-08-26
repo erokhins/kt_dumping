@@ -12,14 +12,14 @@
 
 'file' @ [45:54] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.createFileAndStubTree[LocalVariableDescriptor]
 
-'Pair' @ [46:16] ==> public constructor Pair<out A, out B>(first: KtFile, second: (StubElement<(PsiElement..PsiElement?)>..StubElement<*>)) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [46:16] ==> public constructor Pair<out A, out B>(first: KtFile, second: raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>)) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> KtFile
-    <out B> -> (com.intellij.psi.stubs.StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<*>)
+    <out B> -> raw (com.intellij.psi.stubs.StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<*>)
 
 'file' @ [46:21] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.createFileAndStubTree[LocalVariableDescriptor]
 
-'stub' @ [46:27] ==> val stub: (StubElement<(PsiElement..PsiElement?)>..StubElement<*>) defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.createFileAndStubTree[LocalVariableDescriptor]
+'stub' @ [46:27] ==> val stub: raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>) defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.createFileAndStubTree[LocalVariableDescriptor]
 
 'createFileAndStubTree' @ [49:48] ==> private final fun createFileAndStubTree(text: String): Pair<KtFile, StubElement<*>> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest[SimpleFunctionDescriptorImpl]
 
@@ -39,7 +39,7 @@ Inferred types:
 
 'findChildStubByType' @ [53:37] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtPackageDirective..KtPackageDirective?)>): StubElement<(KtPackageDirective..KtPackageDirective?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtPackageDirective
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtPackageDirective..org.jetbrains.kotlin.psi.KtPackageDirective?)
 
 'PACKAGE_DIRECTIVE' @ [53:76] ==> public final val PACKAGE_DIRECTIVE: (KtPlaceHolderStubElementType<(KtPackageDirective..KtPackageDirective?)>..KtPlaceHolderStubElementType<(KtPackageDirective..KtPackageDirective?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -71,7 +71,7 @@ Inferred types:
 
 'findChildStubByType' @ [60:29] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtNamedFunction..KtNamedFunction?)>): StubElement<(KtNamedFunction..KtNamedFunction?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtNamedFunction
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedFunction..org.jetbrains.kotlin.psi.KtNamedFunction?)
 
 'FUNCTION' @ [60:68] ==> public final val FUNCTION: (KtFunctionElementType..KtFunctionElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -87,7 +87,7 @@ Inferred types:
 
 'findChildByClass' @ [62:45] ==> @Nullable public open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtNamedFunction..KtNamedFunction?)>..Class<(KtNamedFunction..KtNamedFunction?)>?)): KtNamedFunction? defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtNamedFunction
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtNamedFunction..org.jetbrains.kotlin.psi.KtNamedFunction?)
 
 'java' @ [62:85] ==> public val <T> KClass<KtNamedFunction>.java: Class<KtNamedFunction> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -111,31 +111,31 @@ Inferred types:
 
 'findChildStubByType' @ [67:29] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtNamedFunction..KtNamedFunction?)>): StubElement<(KtNamedFunction..KtNamedFunction?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtNamedFunction
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedFunction..org.jetbrains.kotlin.psi.KtNamedFunction?)
 
 'FUNCTION' @ [67:68] ==> public final val FUNCTION: (KtFunctionElementType..KtFunctionElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
-'function' @ [68:29] ==> val function: StubElement<KtNamedFunction> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.typeReference[LocalVariableDescriptor]
+'function' @ [68:29] ==> val function: StubElement<(KtNamedFunction..KtNamedFunction?)> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.typeReference[LocalVariableDescriptor]
 
 'findChildStubByType' @ [68:38] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtParameterList..KtParameterList?)>): StubElement<(KtParameterList..KtParameterList?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtParameterList
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtParameterList..org.jetbrains.kotlin.psi.KtParameterList?)
 
 'VALUE_PARAMETER_LIST' @ [68:77] ==> public final val VALUE_PARAMETER_LIST: (KtPlaceHolderStubElementType<(KtParameterList..KtParameterList?)>..KtPlaceHolderStubElementType<(KtParameterList..KtParameterList?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
-'parameterList' @ [69:30] ==> val parameterList: StubElement<KtParameterList> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.typeReference[LocalVariableDescriptor]
+'parameterList' @ [69:30] ==> val parameterList: StubElement<(KtParameterList..KtParameterList?)> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.typeReference[LocalVariableDescriptor]
 
 'findChildStubByType' @ [69:44] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtParameter..KtParameter?)>): StubElement<(KtParameter..KtParameter?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtParameter
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
 
 'VALUE_PARAMETER' @ [69:83] ==> public final val VALUE_PARAMETER: (KtParameterElementType..KtParameterElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
-'valueParameter' @ [70:33] ==> val valueParameter: StubElement<KtParameter> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.typeReference[LocalVariableDescriptor]
+'valueParameter' @ [70:33] ==> val valueParameter: StubElement<(KtParameter..KtParameter?)> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.typeReference[LocalVariableDescriptor]
 
 'findChildStubByType' @ [70:48] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtTypeReference..KtTypeReference?)>): StubElement<(KtTypeReference..KtTypeReference?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtTypeReference
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
 
 'TYPE_REFERENCE' @ [70:87] ==> public final val TYPE_REFERENCE: (KtPlaceHolderStubElementType<(KtTypeReference..KtTypeReference?)>..KtPlaceHolderStubElementType<(KtTypeReference..KtTypeReference?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -147,7 +147,7 @@ Inferred types:
 
 'findChildByClass' @ [72:39] ==> @Nullable public open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtNamedFunction..KtNamedFunction?)>..Class<(KtNamedFunction..KtNamedFunction?)>?)): KtNamedFunction? defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtNamedFunction
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtNamedFunction..org.jetbrains.kotlin.psi.KtNamedFunction?)
 
 'java' @ [72:79] ==> public val <T> KClass<KtNamedFunction>.java: Class<KtNamedFunction> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -179,19 +179,19 @@ Inferred types:
 
 'findChildStubByType' @ [78:26] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClass..KtClass?)>): StubElement<(KtClass..KtClass?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClass
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'CLASS' @ [78:65] ==> public final val CLASS: (KtClassElementType..KtClassElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'KtClass' @ [79:27] ==> public constructor KtClass(stub: KotlinClassStub) defined in org.jetbrains.kotlin.psi.KtClass[DeserializedClassConstructorDescriptor]
 
-'clazz' @ [79:35] ==> val clazz: StubElement<KtClass> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.clazz[LocalVariableDescriptor]
+'clazz' @ [79:35] ==> val clazz: StubElement<(KtClass..KtClass?)> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.clazz[LocalVariableDescriptor]
 
 'file' @ [80:26] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.clazz[LocalVariableDescriptor]
 
 'findChildByClass' @ [80:31] ==> @Nullable public open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtClass..KtClass?)>..Class<(KtClass..KtClass?)>?)): KtClass? defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtClass
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'java' @ [80:63] ==> public val <T> KClass<KtClass>.java: Class<KtClass> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -237,19 +237,19 @@ Inferred types:
 
 'findChildStubByType' @ [90:24] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtObjectDeclaration..KtObjectDeclaration?)>): StubElement<(KtObjectDeclaration..KtObjectDeclaration?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtObjectDeclaration
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtObjectDeclaration..org.jetbrains.kotlin.psi.KtObjectDeclaration?)
 
 'OBJECT_DECLARATION' @ [90:63] ==> public final val OBJECT_DECLARATION: (KtObjectElementType..KtObjectElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'KtObjectDeclaration' @ [91:27] ==> public constructor KtObjectDeclaration(stub: KotlinObjectStub) defined in org.jetbrains.kotlin.psi.KtObjectDeclaration[DeserializedClassConstructorDescriptor]
 
-'obj' @ [91:47] ==> val obj: StubElement<KtObjectDeclaration> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.obj[LocalVariableDescriptor]
+'obj' @ [91:47] ==> val obj: StubElement<(KtObjectDeclaration..KtObjectDeclaration?)> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.obj[LocalVariableDescriptor]
 
 'file' @ [92:27] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.obj[LocalVariableDescriptor]
 
 'findChildByClass' @ [92:32] ==> @Nullable public open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtObjectDeclaration..KtObjectDeclaration?)>..Class<(KtObjectDeclaration..KtObjectDeclaration?)>?)): KtObjectDeclaration? defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtObjectDeclaration
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtObjectDeclaration..org.jetbrains.kotlin.psi.KtObjectDeclaration?)
 
 'java' @ [92:76] ==> public val <T> KClass<KtObjectDeclaration>.java: Class<KtObjectDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -283,19 +283,19 @@ Inferred types:
 
 'findChildStubByType' @ [99:29] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtProperty..KtProperty?)>): StubElement<(KtProperty..KtProperty?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtProperty
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'PROPERTY' @ [99:68] ==> public final val PROPERTY: (KtPropertyElementType..KtPropertyElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'KtProperty' @ [100:27] ==> public constructor KtProperty(@NotNull p0: KotlinPropertyStub) defined in org.jetbrains.kotlin.psi.KtProperty[JavaClassConstructorDescriptor]
 
-'property' @ [100:38] ==> val property: StubElement<KtProperty> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.property[LocalVariableDescriptor]
+'property' @ [100:38] ==> val property: StubElement<(KtProperty..KtProperty?)> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.property[LocalVariableDescriptor]
 
 'file' @ [101:29] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.property[LocalVariableDescriptor]
 
 'findChildByClass' @ [101:34] ==> @Nullable public open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtProperty..KtProperty?)>..Class<(KtProperty..KtProperty?)>?)): KtProperty? defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtProperty
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'java' @ [101:69] ==> public val <T> KClass<KtProperty>.java: Class<KtProperty> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -329,7 +329,7 @@ Inferred types:
 
 'findChildStubByType' @ [108:31] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtImportList..KtImportList?)>): StubElement<(KtImportList..KtImportList?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtImportList
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtImportList..org.jetbrains.kotlin.psi.KtImportList?)
 
 'IMPORT_LIST' @ [108:70] ==> public final val IMPORT_LIST: (KtPlaceHolderStubElementType<(KtImportList..KtImportList?)>..KtPlaceHolderStubElementType<(KtImportList..KtImportList?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -463,13 +463,13 @@ Inferred types:
 
 'findChildStubByType' @ [190:30] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClass..KtClass?)>): StubElement<(KtClass..KtClass?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClass
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'CLASS' @ [190:69] ==> public final val CLASS: (KtClassElementType..KtClassElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'findChildStubByType' @ [190:78] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClassBody..KtClassBody?)>): StubElement<(KtClassBody..KtClassBody?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClassBody
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassBody..org.jetbrains.kotlin.psi.KtClassBody?)
 
 'CLASS_BODY' @ [190:117] ==> public final val CLASS_BODY: (KtPlaceHolderStubElementType<(KtClassBody..KtClassBody?)>..KtPlaceHolderStubElementType<(KtClassBody..KtClassBody?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -487,19 +487,19 @@ Inferred types:
 
 'findChildStubByType' @ [196:32] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClass..KtClass?)>): StubElement<(KtClass..KtClass?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClass
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'CLASS' @ [196:71] ==> public final val CLASS: (KtClassElementType..KtClassElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'findChildStubByType' @ [196:80] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClassBody..KtClassBody?)>): StubElement<(KtClassBody..KtClassBody?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClassBody
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassBody..org.jetbrains.kotlin.psi.KtClassBody?)
 
 'CLASS_BODY' @ [196:119] ==> public final val CLASS_BODY: (KtPlaceHolderStubElementType<(KtClassBody..KtClassBody?)>..KtPlaceHolderStubElementType<(KtClassBody..KtClassBody?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'findChildStubByType' @ [197:18] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClassInitializer..KtClassInitializer?)>): StubElement<(KtClassInitializer..KtClassInitializer?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClassInitializer
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassInitializer..org.jetbrains.kotlin.psi.KtClassInitializer?)
 
 'CLASS_INITIALIZER' @ [197:57] ==> public final val CLASS_INITIALIZER: (KtPlaceHolderStubElementType<(KtClassInitializer..KtClassInitializer?)>..KtPlaceHolderStubElementType<(KtClassInitializer..KtClassInitializer?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -517,19 +517,19 @@ Inferred types:
 
 'findChildStubByType' @ [203:36] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClass..KtClass?)>): StubElement<(KtClass..KtClass?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClass
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'CLASS' @ [203:75] ==> public final val CLASS: (KtClassElementType..KtClassElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'findChildStubByType' @ [203:84] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClassBody..KtClassBody?)>): StubElement<(KtClassBody..KtClassBody?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClassBody
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassBody..org.jetbrains.kotlin.psi.KtClassBody?)
 
 'CLASS_BODY' @ [203:123] ==> public final val CLASS_BODY: (KtPlaceHolderStubElementType<(KtClassBody..KtClassBody?)>..KtPlaceHolderStubElementType<(KtClassBody..KtClassBody?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'findChildStubByType' @ [204:18] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtObjectDeclaration..KtObjectDeclaration?)>): StubElement<(KtObjectDeclaration..KtObjectDeclaration?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtObjectDeclaration
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtObjectDeclaration..org.jetbrains.kotlin.psi.KtObjectDeclaration?)
 
 'OBJECT_DECLARATION' @ [204:57] ==> public final val OBJECT_DECLARATION: (KtObjectElementType..KtObjectElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -547,15 +547,15 @@ Inferred types:
 
 'findChildStubByType' @ [210:33] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtProperty..KtProperty?)>): StubElement<(KtProperty..KtProperty?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtProperty
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'PROPERTY' @ [210:72] ==> public final val PROPERTY: (KtPropertyElementType..KtPropertyElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
-'propertyStub' @ [211:25] ==> val propertyStub: StubElement<KtProperty> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.testPropertyAccessors[LocalVariableDescriptor]
+'propertyStub' @ [211:25] ==> val propertyStub: StubElement<(KtProperty..KtProperty?)> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.testPropertyAccessors[LocalVariableDescriptor]
 
 'getChildrenByType' @ [211:38] ==> @NotNull public abstract fun <E : (PsiElement..PsiElement?)> getChildrenByType(@NotNull p0: IElementType, @NotNull p1: ArrayFactory<(KtPropertyAccessor..KtPropertyAccessor?)>): (Array<(KtPropertyAccessor..KtPropertyAccessor?)>..Array<out (KtPropertyAccessor..KtPropertyAccessor?)>) defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> KtPropertyAccessor
+    <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtPropertyAccessor..org.jetbrains.kotlin.psi.KtPropertyAccessor?)
 
 'PROPERTY_ACCESSOR' @ [211:75] ==> public final val PROPERTY_ACCESSOR: (KtPropertyAccessorElementType..KtPropertyAccessorElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -581,21 +581,21 @@ Inferred types:
 
 'findChildStubByType' @ [218:30] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClass..KtClass?)>): StubElement<(KtClass..KtClass?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClass
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'CLASS' @ [218:69] ==> public final val CLASS: (KtClassElementType..KtClassElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'findChildStubByType' @ [218:78] ==> @Nullable public abstract fun <P : (PsiElement..PsiElement?)> findChildStubByType(@NotNull p0: IStubElementType<*, (KtClassBody..KtClassBody?)>): StubElement<(KtClassBody..KtClassBody?)>? defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <P : (PsiElement..PsiElement?)> -> KtClassBody
+    <P : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassBody..org.jetbrains.kotlin.psi.KtClassBody?)
 
 'CLASS_BODY' @ [218:117] ==> public final val CLASS_BODY: (KtPlaceHolderStubElementType<(KtClassBody..KtClassBody?)>..KtPlaceHolderStubElementType<(KtClassBody..KtClassBody?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
-'enumClass' @ [219:23] ==> val enumClass: StubElement<KtClassBody> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.testEnumEntry[LocalVariableDescriptor]
+'enumClass' @ [219:23] ==> val enumClass: StubElement<(KtClassBody..KtClassBody?)> defined in org.jetbrains.kotlin.idea.stubs.DebugTextByStubTest.testEnumEntry[LocalVariableDescriptor]
 
 'getChildrenByType' @ [219:33] ==> @NotNull public abstract fun <E : (PsiElement..PsiElement?)> getChildrenByType(@NotNull p0: IElementType, @NotNull p1: ArrayFactory<(KtClass..KtClass?)>): (Array<(KtClass..KtClass?)>..Array<out (KtClass..KtClass?)>) defined in com.intellij.psi.stubs.StubElement[JavaMethodDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> KtClass
+    <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'ENUM_ENTRY' @ [219:70] ==> public final val ENUM_ENTRY: (KtClassElementType..KtClassElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 

@@ -1,6 +1,6 @@
 'element' @ [40:5] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.rename.checkConflictsAndReplaceUsageInfos[ValueParameterDescriptorImpl]
 
-'getOverriddenFunctionWithDefaultValues' @ [40:13] ==> private fun PsiElement.getOverriddenFunctionWithDefaultValues(allRenames: Map<out PsiElement?, String>): KtNamedFunction? defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'getOverriddenFunctionWithDefaultValues' @ [40:13] ==> private fun PsiElement.getOverriddenFunctionWithDefaultValues(allRenames: Map<out PsiElement?, String>): KtNamedFunction? defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameUtil.kt[SimpleFunctionDescriptorImpl]
 
 'allRenames' @ [40:52] ==> value-parameter allRenames: Map<out PsiElement?, String> defined in org.jetbrains.kotlin.idea.refactoring.rename.checkConflictsAndReplaceUsageInfos[ValueParameterDescriptorImpl]
 
@@ -37,7 +37,7 @@ Inferred types:
 
 '!' @ [48:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'ref' @ [48:14] ==> val ref: AbstractKtReference<out KtElement> defined in org.jetbrains.kotlin.idea.refactoring.rename.checkConflictsAndReplaceUsageInfos[LocalVariableDescriptor]
+'ref' @ [48:14] ==> val ref: AbstractKtReference<*> defined in org.jetbrains.kotlin.idea.refactoring.rename.checkConflictsAndReplaceUsageInfos[LocalVariableDescriptor]
 
 'canRename' @ [48:18] ==> public open fun canRename(): Boolean defined in org.jetbrains.kotlin.idea.references.AbstractKtReference[DeserializedSimpleFunctionDescriptor]
 
@@ -167,7 +167,7 @@ Inferred types:
 
 'findElementOfClassAtOffset' @ [87:24] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<(T..T?)>, p3: Boolean): T? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [87:51] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.rename.findElementForRename[ReceiverParameterDescriptorImpl]
 
@@ -179,7 +179,7 @@ Inferred types:
 
 'findElementOfClassAtOffset' @ [88:27] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<(T..T?)>, p3: Boolean): T? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'this' @ [88:54] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.rename.findElementForRename[ReceiverParameterDescriptorImpl]
 

@@ -4,7 +4,7 @@
 
 'declaration' @ [26:55] ==> value-parameter declaration: KtDeclarationWithBody defined in org.jetbrains.kotlin.codegen.ClosureGenerationStrategy.<init>[ValueParameterDescriptorImpl]
 
-'initializeVariablesForDestructuredLambdaParameters' @ [29:9] ==> public fun initializeVariablesForDestructuredLambdaParameters(codegen: ExpressionCodegen, valueParameters: List<ValueParameterDescriptor>): Unit defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'initializeVariablesForDestructuredLambdaParameters' @ [29:9] ==> public fun initializeVariablesForDestructuredLambdaParameters(codegen: ExpressionCodegen, valueParameters: List<ValueParameterDescriptor>): Unit defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'codegen' @ [29:60] ==> value-parameter codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.ClosureGenerationStrategy.doGenerateBody[ValueParameterDescriptorImpl]
 

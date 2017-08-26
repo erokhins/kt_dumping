@@ -191,8 +191,6 @@ Inferred types:
 
 'getContributedDescriptors' @ [92:22] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [92:48] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CALLABLES' @ [92:69] ==> @field:JvmField public final val CALLABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'filterIsInstance' @ [93:22] ==> public inline fun <reified R> Iterable<*>.filterIsInstance(): List<CallableMemberDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -292,7 +290,7 @@ Inferred types:
 
 'delegateDescriptor' @ [121:17] ==> val delegateDescriptor: IrImplementingDelegateDescriptorImpl defined in org.jetbrains.kotlin.psi2ir.generators.ClassGenerator.generateDelegatedImplementationMembers[LocalVariableDescriptor]
 
-'createBodyGenerator' @ [122:17] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [122:17] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'irClass' @ [122:37] ==> value-parameter irClass: IrClass defined in org.jetbrains.kotlin.psi2ir.generators.ClassGenerator.generateDelegatedImplementationMembers[ValueParameterDescriptorImpl]
 
@@ -843,7 +841,7 @@ Inferred types:
 
 'initializerExpression' @ [266:25] ==> public abstract var initializerExpression: IrExpression? defined in org.jetbrains.kotlin.ir.declarations.IrEnumEntry[DeserializedPropertyDescriptor]
 
-'createBodyGenerator' @ [267:21] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [267:21] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'irEnumEntry' @ [267:41] ==> value-parameter irEnumEntry: IrEnumEntry defined in org.jetbrains.kotlin.psi2ir.generators.ClassGenerator.generateEnumEntry.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -31,15 +31,15 @@ Inferred types:
 
 'java' @ [36:29] ==> public val <T> KClass<out PluginCliParser>.java: Class<out PluginCliParser> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PluginCliParser
+    <T> -> Captured(out PluginCliParser)
 
 'classLoader' @ [36:34] ==> public final val <T : (Any..Any?)> Class<out PluginCliParser>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PluginCliParser
+    <T : (Any..Any?)> -> Captured(out PluginCliParser)
 
 'load' @ [39:49] ==> public open fun <S : (Any..Any?)> load(p0: (Class<(ComponentRegistrar..ComponentRegistrar?)>..Class<(ComponentRegistrar..ComponentRegistrar?)>?), p1: (ClassLoader..ClassLoader?)): (ServiceLoader<(ComponentRegistrar..ComponentRegistrar?)>..ServiceLoader<(ComponentRegistrar..ComponentRegistrar?)>?) defined in java.util.ServiceLoader[JavaMethodDescriptor]
 Inferred types:
-    <S : (Any..Any?)> -> ComponentRegistrar
+    <S : (Any..Any?)> -> (org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar..org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar?)
 
 'ComponentRegistrar' @ [39:54] ==> public companion object defined in org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar[FakeCallableDescriptorForObject]
 
@@ -57,17 +57,13 @@ Inferred types:
 
 'addAll' @ [40:29] ==> public abstract fun addAll(elements: Collection<(ComponentRegistrar..ComponentRegistrar?)>): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'BundledCompilerPlugins' @ [40:36] ==> public object BundledCompilerPlugins defined in org.jetbrains.kotlin.cli.jvm in file BundledCompilerPlugins.kt[FakeCallableDescriptorForObject]
-
 'componentRegistrars' @ [40:59] ==> public final val componentRegistrars: List<ComponentRegistrar> defined in org.jetbrains.kotlin.cli.jvm.BundledCompilerPlugins[PropertyDescriptorImpl]
 
 'configuration' @ [41:9] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.cli.jvm.plugins.PluginCliParser.loadPlugins[ValueParameterDescriptorImpl]
 
 'addAll' @ [41:23] ==> public open fun <T : (Any..Any?)> addAll(@NotNull p0: CompilerConfigurationKey<(MutableList<(ComponentRegistrar..ComponentRegistrar?)>..List<(ComponentRegistrar..ComponentRegistrar?)>?)>, @NotNull p1: (MutableCollection<(ComponentRegistrar..ComponentRegistrar?)>..Collection<(ComponentRegistrar..ComponentRegistrar?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ComponentRegistrar
-
-'ComponentRegistrar' @ [41:30] ==> public companion object defined in org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar..org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar?)
 
 'PLUGIN_COMPONENT_REGISTRARS' @ [41:49] ==> public final val PLUGIN_COMPONENT_REGISTRARS: CompilerConfigurationKey<MutableList<ComponentRegistrar>> defined in org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar.Companion[DeserializedPropertyDescriptor]
 
@@ -89,6 +85,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> CliOptionValue?
+
+'parsePluginOption' @ [51:67] ==> public fun parsePluginOption(argumentValue: String): CliOptionValue? defined in org.jetbrains.kotlin.compiler.plugin[DeserializedSimpleFunctionDescriptor]
 
 'groupBy' @ [51:87] ==> public inline fun <T, K> Iterable<CliOptionValue?>.groupBy(keySelector: (CliOptionValue?) -> String): Map<String, List<CliOptionValue?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -116,7 +114,7 @@ Inferred types:
 
 'load' @ [56:51] ==> public open fun <S : (Any..Any?)> load(p0: (Class<(CommandLineProcessor..CommandLineProcessor?)>..Class<(CommandLineProcessor..CommandLineProcessor?)>?), p1: (ClassLoader..ClassLoader?)): (ServiceLoader<(CommandLineProcessor..CommandLineProcessor?)>..ServiceLoader<(CommandLineProcessor..CommandLineProcessor?)>?) defined in java.util.ServiceLoader[JavaMethodDescriptor]
 Inferred types:
-    <S : (Any..Any?)> -> CommandLineProcessor
+    <S : (Any..Any?)> -> (org.jetbrains.kotlin.compiler.plugin.CommandLineProcessor..org.jetbrains.kotlin.compiler.plugin.CommandLineProcessor?)
 
 'java' @ [56:84] ==> public val <T> KClass<CommandLineProcessor>.java: Class<CommandLineProcessor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -131,8 +129,6 @@ Inferred types:
 'commandLineProcessors' @ [57:9] ==> val commandLineProcessors: MutableList<(CommandLineProcessor..CommandLineProcessor?)> defined in org.jetbrains.kotlin.cli.jvm.plugins.PluginCliParser.processPluginOptions[LocalVariableDescriptor]
 
 'addAll' @ [57:31] ==> public abstract fun addAll(elements: Collection<(CommandLineProcessor..CommandLineProcessor?)>): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
-
-'BundledCompilerPlugins' @ [57:38] ==> public object BundledCompilerPlugins defined in org.jetbrains.kotlin.cli.jvm in file BundledCompilerPlugins.kt[FakeCallableDescriptorForObject]
 
 'commandLineProcessors' @ [57:61] ==> public final val commandLineProcessors: List<CommandLineProcessor> defined in org.jetbrains.kotlin.cli.jvm.BundledCompilerPlugins[PropertyDescriptorImpl]
 

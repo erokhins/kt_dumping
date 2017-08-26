@@ -1,12 +1,12 @@
 'create' @ [26:92] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): ExtensionPointName<(KotlinPlatformGradleDetector..KotlinPlatformGradleDetector?)> defined in com.intellij.openapi.extensions.ExtensionPointName[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinPlatformGradleDetector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.inspections.gradle.KotlinPlatformGradleDetector..org.jetbrains.kotlin.idea.inspections.gradle.KotlinPlatformGradleDetector?)
 
 'iterator' @ [34:39] ==> public abstract fun iterator(): MutableIterator<(DataNode<(LibraryDependencyData..LibraryDependencyData?)>..DataNode<(LibraryDependencyData..LibraryDependencyData?)>?)> defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
 'findAllRecursively' @ [34:61] ==> @NotNull public open fun <T : (Any..Any?)> findAllRecursively(@Nullable p0: DataNode<*>?, @NotNull p1: Key<(LibraryDependencyData..LibraryDependencyData?)>): (MutableCollection<(DataNode<(LibraryDependencyData..LibraryDependencyData?)>..DataNode<(LibraryDependencyData..LibraryDependencyData?)>?)>..Collection<(DataNode<(LibraryDependencyData..LibraryDependencyData?)>..DataNode<(LibraryDependencyData..LibraryDependencyData?)>?)>) defined in com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LibraryDependencyData
+    <T : (Any..Any?)> -> (com.intellij.openapi.externalSystem.model.project.LibraryDependencyData..com.intellij.openapi.externalSystem.model.project.LibraryDependencyData?)
 
 'moduleData' @ [34:80] ==> value-parameter moduleData: DataNode<*> defined in org.jetbrains.kotlin.idea.inspections.gradle.DefaultPlatformGradleDetector.getResolvedKotlinStdlibVersionByModuleData[ValueParameterDescriptorImpl]
 
@@ -18,7 +18,7 @@ Inferred types:
 
 'libraryDependencyData' @ [37:21] ==> val libraryDependencyData: (DataNode<(LibraryDependencyData..LibraryDependencyData?)>..DataNode<(LibraryDependencyData..LibraryDependencyData?)>?) defined in org.jetbrains.kotlin.idea.inspections.gradle.DefaultPlatformGradleDetector.getResolvedKotlinStdlibVersionByModuleData[LocalVariableDescriptor]
 
-'data' @ [37:43] ==> public final val <T : (Any..Any?)> DataNode<(LibraryDependencyData..LibraryDependencyData?)>.data: (LibraryDependencyData..LibraryDependencyData?)[MyPropertyDescriptor]
+'data' @ [37:43] ==> public final val <T : (Any..Any?)> DataNode<(LibraryDependencyData..LibraryDependencyData?)>.data: LibraryDependencyData[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> (com.intellij.openapi.externalSystem.model.project.LibraryDependencyData..com.intellij.openapi.externalSystem.model.project.LibraryDependencyData?)
 
@@ -30,7 +30,7 @@ Inferred types:
 
 'libraryDependencyData' @ [38:28] ==> val libraryDependencyData: (DataNode<(LibraryDependencyData..LibraryDependencyData?)>..DataNode<(LibraryDependencyData..LibraryDependencyData?)>?) defined in org.jetbrains.kotlin.idea.inspections.gradle.DefaultPlatformGradleDetector.getResolvedKotlinStdlibVersionByModuleData[LocalVariableDescriptor]
 
-'data' @ [38:50] ==> public final val <T : (Any..Any?)> DataNode<(LibraryDependencyData..LibraryDependencyData?)>.data: (LibraryDependencyData..LibraryDependencyData?)[MyPropertyDescriptor]
+'data' @ [38:50] ==> public final val <T : (Any..Any?)> DataNode<(LibraryDependencyData..LibraryDependencyData?)>.data: LibraryDependencyData[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> (com.intellij.openapi.externalSystem.model.project.LibraryDependencyData..com.intellij.openapi.externalSystem.model.project.LibraryDependencyData?)
 

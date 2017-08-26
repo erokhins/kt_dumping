@@ -5,7 +5,7 @@ Inferred types:
 
 'getParentElementOfType' @ [36:78] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtNameReferenceExpression..KtNameReferenceExpression?)>..Class<(KtNameReferenceExpression..KtNameReferenceExpression?)>?)): KtNameReferenceExpression? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNameReferenceExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNameReferenceExpression..org.jetbrains.kotlin.psi.KtNameReferenceExpression?)
 
 'diagnostic' @ [36:101] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.inspections.PlatformUnresolvedProvider.getElementOfInterest[ValueParameterDescriptorImpl]
 
@@ -54,7 +54,7 @@ Inferred types:
 
 'add' @ [45:28] ==> public open fun add(element: QuickFixWithDelegateFactory): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'QuickFixWithDelegateFactory' @ [45:32] ==> public fun QuickFixWithDelegateFactory(priority: IntentionActionPriority, createAction: () -> IntentionAction?): QuickFixWithDelegateFactory defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'QuickFixWithDelegateFactory' @ [45:32] ==> public fun QuickFixWithDelegateFactory(priority: IntentionActionPriority, createAction: () -> IntentionAction?): QuickFixWithDelegateFactory defined in org.jetbrains.kotlin.idea.quickfix in file QuickFixWithDelegateFactory.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [45:60] ==> value-parameter action: IntentionAction defined in org.jetbrains.kotlin.idea.inspections.PlatformUnresolvedProvider.createFixes.<anonymous>.<no name provided>.register[ValueParameterDescriptorImpl]
 

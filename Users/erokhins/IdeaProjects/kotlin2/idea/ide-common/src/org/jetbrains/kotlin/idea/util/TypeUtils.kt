@@ -193,15 +193,15 @@ Inferred types:
 
 'createErrorScope' @ [83:52] ==> @NotNull public open fun createErrorScope(@NotNull p0: String, p1: Boolean): MemberScope defined in org.jetbrains.kotlin.types.ErrorUtils[JavaMethodDescriptor]
 
-'hasAnnotationMaybeExternal' @ [87:49] ==> private fun KotlinType.hasAnnotationMaybeExternal(fqName: FqName): Boolean defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'hasAnnotationMaybeExternal' @ [87:49] ==> private fun KotlinType.hasAnnotationMaybeExternal(fqName: FqName): Boolean defined in org.jetbrains.kotlin.idea.util in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'JETBRAINS_READONLY_ANNOTATION' @ [87:76] ==> public final val JETBRAINS_READONLY_ANNOTATION: (FqName..FqName?) defined in org.jetbrains.kotlin.load.java.JvmAnnotationNames[JavaPropertyDescriptor]
 
-'hasAnnotationMaybeExternal' @ [88:48] ==> private fun KotlinType.hasAnnotationMaybeExternal(fqName: FqName): Boolean defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'hasAnnotationMaybeExternal' @ [88:48] ==> private fun KotlinType.hasAnnotationMaybeExternal(fqName: FqName): Boolean defined in org.jetbrains.kotlin.idea.util in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'JETBRAINS_NOT_NULL_ANNOTATION' @ [88:75] ==> public final val JETBRAINS_NOT_NULL_ANNOTATION: (FqName..FqName?) defined in org.jetbrains.kotlin.load.java.JvmAnnotationNames[JavaPropertyDescriptor]
 
-'hasAnnotationMaybeExternal' @ [89:49] ==> private fun KotlinType.hasAnnotationMaybeExternal(fqName: FqName): Boolean defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'hasAnnotationMaybeExternal' @ [89:49] ==> private fun KotlinType.hasAnnotationMaybeExternal(fqName: FqName): Boolean defined in org.jetbrains.kotlin.idea.util in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'JETBRAINS_NULLABLE_ANNOTATION' @ [89:76] ==> public final val JETBRAINS_NULLABLE_ANNOTATION: (FqName..FqName?) defined in org.jetbrains.kotlin.load.java.JvmAnnotationNames[JavaPropertyDescriptor]
 
@@ -365,16 +365,14 @@ Inferred types:
 
 'arguments' @ [133:41] ==> public abstract val arguments: List<TypeProjection> defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 
-'filterTo' @ [133:51] ==> public inline fun <T, C : MutableCollection<in TypeProjection>> Iterable<TypeProjection>.filterTo(destination: SmartSet<TypeProjection>, predicate: (TypeProjection) -> Boolean): SmartSet<TypeProjection> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'filterTo' @ [133:51] ==> public inline fun <T, C : MutableCollection<in TypeProjection>> Iterable<TypeProjection>.filterTo(destination: SmartSet<(TypeProjection..TypeProjection?)>, predicate: (TypeProjection) -> Boolean): SmartSet<(TypeProjection..TypeProjection?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TypeProjection
-    <C : MutableCollection<in T>> -> SmartSet<TypeProjection>
+    <C : MutableCollection<in T>> -> SmartSet<(org.jetbrains.kotlin.types.TypeProjection..org.jetbrains.kotlin.types.TypeProjection?)>
 
-'SmartSet' @ [133:60] ==> public companion object defined in org.jetbrains.kotlin.utils.SmartSet[FakeCallableDescriptorForObject]
-
-'create' @ [133:69] ==> @JvmStatic public final fun <T> create(): SmartSet<TypeProjection> defined in org.jetbrains.kotlin.utils.SmartSet.Companion[DeserializedSimpleFunctionDescriptor]
+'create' @ [133:69] ==> @JvmStatic public final fun <T> create(): SmartSet<(TypeProjection..TypeProjection?)> defined in org.jetbrains.kotlin.utils.SmartSet.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TypeProjection
+    <T> -> (org.jetbrains.kotlin.types.TypeProjection..org.jetbrains.kotlin.types.TypeProjection?)
 
 'it' @ [133:81] ==> value-parameter it: TypeProjection defined in org.jetbrains.kotlin.idea.util.getResolvableApproximations.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -386,7 +384,7 @@ Inferred types:
 
 'checkTypeParameters' @ [133:116] ==> value-parameter checkTypeParameters: Boolean defined in org.jetbrains.kotlin.idea.util.getResolvableApproximations[ValueParameterDescriptorImpl]
 
-'resolvableArgs' @ [134:21] ==> val resolvableArgs: SmartSet<TypeProjection> defined in org.jetbrains.kotlin.idea.util.getResolvableApproximations.<anonymous>[LocalVariableDescriptor]
+'resolvableArgs' @ [134:21] ==> val resolvableArgs: SmartSet<(TypeProjection..TypeProjection?)> defined in org.jetbrains.kotlin.idea.util.getResolvableApproximations.<anonymous>[LocalVariableDescriptor]
 
 'containsAll' @ [134:36] ==> public open fun containsAll(elements: Collection<(TypeProjection..TypeProjection?)>): Boolean defined in org.jetbrains.kotlin.utils.SmartSet[JavaMethodDescriptor]
 
@@ -433,7 +431,7 @@ Inferred types:
 
 'arg' @ [139:25] ==> val arg: TypeProjection defined in org.jetbrains.kotlin.idea.util.getResolvableApproximations.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'resolvableArgs' @ [139:32] ==> val resolvableArgs: SmartSet<TypeProjection> defined in org.jetbrains.kotlin.idea.util.getResolvableApproximations.<anonymous>[LocalVariableDescriptor]
+'resolvableArgs' @ [139:32] ==> val resolvableArgs: SmartSet<(TypeProjection..TypeProjection?)> defined in org.jetbrains.kotlin.idea.util.getResolvableApproximations.<anonymous>[LocalVariableDescriptor]
 
 'arg' @ [139:50] ==> val arg: TypeProjection defined in org.jetbrains.kotlin.idea.util.getResolvableApproximations.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -479,13 +477,9 @@ Inferred types:
 
 'modality' @ [157:12] ==> val modality: Modality? defined in org.jetbrains.kotlin.idea.util.isAbstract[LocalVariableDescriptor]
 
-'Modality' @ [157:24] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [157:33] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'modality' @ [157:45] ==> val modality: Modality? defined in org.jetbrains.kotlin.idea.util.isAbstract[LocalVariableDescriptor]
-
-'Modality' @ [157:57] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'SEALED' @ [157:66] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

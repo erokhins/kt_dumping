@@ -14,8 +14,6 @@
 
 'services' @ [37:42] ==> value-parameter services: Services defined in org.jetbrains.kotlin.jps.incremental.createTestingCompilerEnvironment[ValueParameterDescriptorImpl]
 
-'KotlinBuilder' @ [37:52] ==> public companion object defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[FakeCallableDescriptorForObject]
-
 'classesToLoadByParent' @ [37:66] ==> public final val classesToLoadByParent: ClassCondition defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion[DeserializedPropertyDescriptor]
 
 'wrappedMessageCollector' @ [37:89] ==> val wrappedMessageCollector: MessageCollectorToOutputItemsCollectorAdapter defined in org.jetbrains.kotlin.jps.incremental.createTestingCompilerEnvironment[LocalVariableDescriptor]

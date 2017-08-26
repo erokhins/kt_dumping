@@ -4,20 +4,20 @@
 
 'psi' @ [30:47] ==> public final val <T : (PsiFile..PsiFile?)> PsiFileStub<out (PsiFile..PsiFile?)>.psi: (PsiFile..PsiFile?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiFile..PsiFile?)> -> (com.intellij.psi.PsiFile..com.intellij.psi.PsiFile?)
+    <T : (PsiFile..PsiFile?)> -> Captured(*)
 
 'create' @ [30:74] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> create(): (HashMultimap<(String..String?), (String..String?)>..HashMultimap<(String..String?), (String..String?)>?) defined in com.google.common.collect.HashMultimap[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'file' @ [31:13] ==> val file: PsiFile defined in org.jetbrains.kotlin.util.aliasImportMap[LocalVariableDescriptor]
 
-'aliasImportMap' @ [31:29] ==> private fun KtFile.aliasImportMap(): Multimap<String, String> defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'aliasImportMap' @ [31:29] ==> private fun KtFile.aliasImportMap(): Multimap<String, String> defined in org.jetbrains.kotlin.util in file TypeIndexUtil.kt[SimpleFunctionDescriptorImpl]
 
 'getUserData' @ [35:18] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(CachedAliasImportData..CachedAliasImportData?)>): CachedAliasImportData? defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CachedAliasImportData
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.util.CachedAliasImportData..org.jetbrains.kotlin.util.CachedAliasImportData?)
 
 'ALIAS_IMPORT_DATA_KEY' @ [35:30] ==> private val ALIAS_IMPORT_DATA_KEY: Key<CachedAliasImportData> defined in org.jetbrains.kotlin.util in file TypeIndexUtil.kt[PropertyDescriptorImpl]
 
@@ -37,13 +37,13 @@ Inferred types:
 
 'CachedAliasImportData' @ [41:16] ==> public constructor CachedAliasImportData(map: Multimap<String, String>, fileModificationStamp: Long) defined in org.jetbrains.kotlin.util.CachedAliasImportData[ClassConstructorDescriptorImpl]
 
-'buildAliasImportMap' @ [41:38] ==> private fun KtFile.buildAliasImportMap(): Multimap<String, String> defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'buildAliasImportMap' @ [41:38] ==> private fun KtFile.buildAliasImportMap(): Multimap<String, String> defined in org.jetbrains.kotlin.util in file TypeIndexUtil.kt[SimpleFunctionDescriptorImpl]
 
 'modificationStamp' @ [41:61] ==> val modificationStamp: Long defined in org.jetbrains.kotlin.util.aliasImportMap[LocalVariableDescriptor]
 
 'putUserData' @ [42:5] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(CachedAliasImportData..CachedAliasImportData?)>, @Nullable p1: CachedAliasImportData?): Unit defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CachedAliasImportData
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.util.CachedAliasImportData..org.jetbrains.kotlin.util.CachedAliasImportData?)
 
 'ALIAS_IMPORT_DATA_KEY' @ [42:17] ==> private val ALIAS_IMPORT_DATA_KEY: Key<CachedAliasImportData> defined in org.jetbrains.kotlin.util in file TypeIndexUtil.kt[PropertyDescriptorImpl]
 
@@ -108,7 +108,7 @@ Inferred types:
 
 'referencedName' @ [70:12] ==> val referencedName: String? defined in org.jetbrains.kotlin.util.isProbablyNothing[LocalVariableDescriptor]
 
-'aliasImportMap' @ [70:43] ==> public fun KtUserType.aliasImportMap(): Multimap<String, String> defined in org.jetbrains.kotlin.util[SimpleFunctionDescriptorImpl]
+'aliasImportMap' @ [70:43] ==> public fun KtUserType.aliasImportMap(): Multimap<String, String> defined in org.jetbrains.kotlin.util in file TypeIndexUtil.kt[SimpleFunctionDescriptorImpl]
 
 'referencedName' @ [70:60] ==> val referencedName: String? defined in org.jetbrains.kotlin.util.isProbablyNothing[LocalVariableDescriptor]
 
@@ -127,7 +127,7 @@ Inferred types:
 
 'parentStub' @ [77:9] ==> public final val <T : (PsiElement..PsiElement?)> StubElement<out (PsiElement..PsiElement?)>.parentStub: raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'getContainingFileStub' @ [77:20] ==> private fun StubElement<*>.getContainingFileStub(): PsiFileStub<*> defined in org.jetbrains.kotlin.util in file TypeIndexUtil.kt[SimpleFunctionDescriptorImpl]
 

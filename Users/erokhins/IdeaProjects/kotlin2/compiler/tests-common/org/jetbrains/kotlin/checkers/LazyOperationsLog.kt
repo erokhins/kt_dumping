@@ -32,16 +32,16 @@ Inferred types:
 
 'records' @ [59:30] ==> private final val records: ArrayList<LazyOperationsLog.Record> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog[PropertyDescriptorImpl]
 
-'groupByTo' @ [59:38] ==> public inline fun <T, K, M : MutableMap<in Any?, MutableList<LazyOperationsLog.Record>>> Iterable<LazyOperationsLog.Record>.groupByTo(destination: IdentityHashMap<Any, MutableList<LazyOperationsLog.Record>>, keySelector: (LazyOperationsLog.Record) -> Any?): IdentityHashMap<Any, MutableList<LazyOperationsLog.Record>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'groupByTo' @ [59:38] ==> public inline fun <T, K, M : MutableMap<in Any?, MutableList<LazyOperationsLog.Record>>> Iterable<LazyOperationsLog.Record>.groupByTo(destination: IdentityHashMap<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>, keySelector: (LazyOperationsLog.Record) -> Any?): IdentityHashMap<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Record
     <K> -> Any?
-    <M : MutableMap<in K, MutableList<T>>> -> IdentityHashMap<Any, MutableList<Record>>
+    <M : MutableMap<in K, MutableList<T>>> -> IdentityHashMap<Any?, (kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>..kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>?)>
 
 'IdentityHashMap' @ [59:48] ==> public constructor IdentityHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.IdentityHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Any
-    <V : (Any..Any?)> -> MutableList<Record>
+    <K : (Any..Any?)> -> Any?
+    <V : (Any..Any?)> -> (kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>..kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>?)
 
 'it' @ [60:13] ==> value-parameter it: LazyOperationsLog.Record defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -49,41 +49,41 @@ Inferred types:
 
 'fieldOwner' @ [60:21] ==> public final val fieldOwner: Any? defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.CallData[PropertyDescriptorImpl]
 
-'map' @ [61:11] ==> public inline fun <K, V, R> Map<out (Any..Any?), (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>.map(transform: (Map.Entry<(Any..Any?), (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>) -> Pair<(Any..Any?), (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>): List<Pair<(Any..Any?), (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [61:11] ==> public inline fun <K, V, R> Map<out Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>.map(transform: (Map.Entry<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>) -> Pair<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>): List<Pair<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> (kotlin.Any..kotlin.Any?)
+    <K> -> Any?
     <V> -> (kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>..kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>?)
-    <R> -> Pair<(kotlin.Any..kotlin.Any?), (kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>..kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>?)>
+    <R> -> Pair<Any?, (kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>..kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>?)>
 
-'Pair' @ [61:17] ==> public constructor Pair<out A, out B>(first: (Any..Any?), second: (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [61:17] ==> public constructor Pair<out A, out B>(first: Any?, second: (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out A> -> (kotlin.Any..kotlin.Any?)
+    <out A> -> Any?
     <out B> -> (kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>..kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>?)
 
-'it' @ [61:22] ==> value-parameter it: Map.Entry<(Any..Any?), (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [61:22] ==> value-parameter it: Map.Entry<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [61:25] ==> public abstract val key: (Any..Any?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'key' @ [61:25] ==> public abstract val key: Any? defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'it' @ [61:30] ==> value-parameter it: Map.Entry<(Any..Any?), (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [61:30] ==> value-parameter it: Map.Entry<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText.<anonymous>[ValueParameterDescriptorImpl]
 
 'value' @ [61:33] ==> public abstract val value: (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'groupedByOwner' @ [63:16] ==> val groupedByOwner: List<Pair<(Any..Any?), (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText[LocalVariableDescriptor]
+'groupedByOwner' @ [63:16] ==> val groupedByOwner: List<Pair<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText[LocalVariableDescriptor]
 
-'map' @ [63:31] ==> public inline fun <T, R> Iterable<Pair<(Any..Any?), (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>>.map(transform: (Pair<(Any..Any?), (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [63:31] ==> public inline fun <T, R> Iterable<Pair<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>>.map(transform: (Pair<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)>) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Pair<(kotlin.Any..kotlin.Any?), (kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>..kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>?)>
+    <T> -> Pair<Any?, (kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>..kotlin.collections.MutableList<org.jetbrains.kotlin.checkers.LazyOperationsLog.Record>?)>
     <R> -> String
 
-'component1' @ [64:18] ==> public final operator fun component1(): (Any..Any?) defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
+'component1' @ [64:18] ==> public final operator fun component1(): Any? defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
 'component2' @ [64:25] ==> public final operator fun component2(): (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?) defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [64:36] ==> value-parameter it: Pair<(Any..Any?), (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [64:36] ==> value-parameter it: Pair<Any?, (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?)> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText.<anonymous>[ValueParameterDescriptorImpl]
 
 'renderOwner' @ [65:13] ==> private final fun renderOwner(owner: Any?, records: List<LazyOperationsLog.Record>): String defined in org.jetbrains.kotlin.checkers.LazyOperationsLog[SimpleFunctionDescriptorImpl]
 
-'owner' @ [65:25] ==> val owner: (Any..Any?) defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText.<anonymous>[LocalVariableDescriptor]
+'owner' @ [65:25] ==> val owner: Any? defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText.<anonymous>[LocalVariableDescriptor]
 
 'records' @ [65:32] ==> val records: (MutableList<LazyOperationsLog.Record>..MutableList<LazyOperationsLog.Record>?) defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.getText.<anonymous>[LocalVariableDescriptor]
 
@@ -171,7 +171,7 @@ Inferred types:
 
 'owner' @ [93:28] ==> value-parameter owner: Any? defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.renderOwner[ValueParameterDescriptorImpl]
 
-'indent' @ [94:13] ==> private fun Printer.indent(body: Printer.() -> Unit): Printer defined in org.jetbrains.kotlin.checkers[SimpleFunctionDescriptorImpl]
+'indent' @ [94:13] ==> private fun Printer.indent(body: Printer.() -> Unit): Printer defined in org.jetbrains.kotlin.checkers in file LazyOperationsLog.kt[SimpleFunctionDescriptorImpl]
 
 'records' @ [95:17] ==> value-parameter records: List<LazyOperationsLog.Record> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.renderOwner[ValueParameterDescriptorImpl]
 
@@ -306,7 +306,7 @@ Inferred types:
 
 'java' @ [133:31] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'sb' @ [134:9] ==> val sb: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.render[LocalVariableDescriptor]
 
@@ -320,13 +320,13 @@ Inferred types:
 
 'isAnonymousClass' @ [134:30] ==> public final val <T : (Any..Any?)> Class<out Any>.isAnonymousClass: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'aClass' @ [134:48] ==> val aClass: Class<out Any> defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.render[LocalVariableDescriptor]
 
 'name' @ [134:55] ==> public final val <T : (Any..Any?)> Class<out Any>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'substringAfterLast' @ [134:60] ==> public fun String.substringAfterLast(delimiter: Char, missingDelimiterValue: String = ...): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -334,7 +334,7 @@ Inferred types:
 
 'simpleName' @ [134:96] ==> public final val <T : (Any..Any?)> Class<out Any>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'append' @ [134:108] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
@@ -414,11 +414,11 @@ Inferred types:
 
 'java' @ [142:22] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'simpleName' @ [142:27] ==> public final val <T : (Any..Any?)> Class<out Any>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'o' @ [143:32] ==> value-parameter o: Any? defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.render[ValueParameterDescriptorImpl]
 
@@ -430,7 +430,7 @@ Inferred types:
 
 'psi' @ [144:26] ==> public final val <Psi : (PsiType..PsiType?)> JavaTypeImpl<out (PsiType..PsiType?)>.psi: (PsiType..PsiType?)[MyPropertyDescriptor]
 Inferred types:
-    <Psi : (PsiType..PsiType?)> -> (com.intellij.psi.PsiType..com.intellij.psi.PsiType?)
+    <Psi : (PsiType..PsiType?)> -> Captured(*)
 
 'presentableText' @ [144:30] ==> public final val PsiType.presentableText: String[MyPropertyDescriptor]
 
@@ -440,11 +440,11 @@ Inferred types:
 
 'java' @ [146:22] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'simpleName' @ [146:27] ==> public final val <T : (Any..Any?)> Class<out Any>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'o' @ [147:33] ==> value-parameter o: Any? defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.render[ValueParameterDescriptorImpl]
 
@@ -468,11 +468,11 @@ Inferred types:
 
 'java' @ [150:22] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'simpleName' @ [150:27] ==> public final val <T : (Any..Any?)> Class<out Any>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'o' @ [151:40] ==> value-parameter o: Any? defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.render[ValueParameterDescriptorImpl]
 
@@ -565,7 +565,7 @@ Inferred types:
 
 'psi' @ [168:19] ==> public final val <Psi : (PsiType..PsiType?)> JavaTypeImpl<out (PsiType..PsiType?)>.psi: (PsiType..PsiType?)[MyPropertyDescriptor]
 Inferred types:
-    <Psi : (PsiType..PsiType?)> -> (com.intellij.psi.PsiType..com.intellij.psi.PsiType?)
+    <Psi : (PsiType..PsiType?)> -> Captured(*)
 
 'presentableText' @ [168:23] ==> public final val PsiType.presentableText: String[MyPropertyDescriptor]
 
@@ -646,8 +646,6 @@ Inferred types:
 
 'o' @ [187:13] ==> value-parameter o: Any? defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.render[ValueParameterDescriptorImpl]
 
-'DescriptorRenderer' @ [187:44] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'COMPACT' @ [187:63] ==> @field:JvmField public final val COMPACT: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
 'render' @ [187:71] ==> public abstract fun render(declarationDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -656,7 +654,7 @@ Inferred types:
 
 'descriptor' @ [187:80] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolutionCandidate<out (CallableDescriptor..CallableDescriptor?)>.descriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'appendQuoted' @ [187:92] ==> local final fun Any.appendQuoted(): Unit defined in org.jetbrains.kotlin.checkers.LazyOperationsLog.render[SimpleFunctionDescriptorImpl]
 
@@ -668,7 +666,7 @@ Inferred types:
 
 'java' @ [194:29] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'getDeclaredField' @ [194:34] ==> @CallerSensitive public open fun getDeclaredField(p0: (String..String?)): (Field..Field?) defined in java.lang.Class[JavaMethodDescriptor]
 

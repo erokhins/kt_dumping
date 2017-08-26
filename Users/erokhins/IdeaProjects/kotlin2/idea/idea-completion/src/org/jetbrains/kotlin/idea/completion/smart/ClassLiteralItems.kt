@@ -223,7 +223,7 @@ Inferred types:
 
 'lookupElement' @ [92:29] ==> var lookupElement: LookupElement defined in org.jetbrains.kotlin.idea.completion.smart.ClassLiteralItems.addToCollection[LocalVariableDescriptor]
 
-'addTailAndNameSimilarity' @ [92:43] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'addTailAndNameSimilarity' @ [92:43] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'matchedExpectedInfos' @ [92:68] ==> val matchedExpectedInfos: MutableList<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.ClassLiteralItems.addToCollection[LocalVariableDescriptor]
 

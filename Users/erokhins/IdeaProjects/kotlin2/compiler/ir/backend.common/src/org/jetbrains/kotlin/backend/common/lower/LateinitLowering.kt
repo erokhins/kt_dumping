@@ -56,7 +56,7 @@
 
 'context' @ [50:33] ==> public final val context: CommonBackendContext defined in org.jetbrains.kotlin.backend.common.lower.LateinitLowering[PropertyDescriptorImpl]
 
-'createIrBuilder' @ [50:41] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createIrBuilder' @ [50:41] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'getter' @ [50:57] ==> value-parameter getter: IrFunction defined in org.jetbrains.kotlin.backend.common.lower.LateinitLowering.lower.<no name provided>.transformGetter[ValueParameterDescriptorImpl]
 
@@ -81,7 +81,7 @@ Inferred types:
 
 'createTemporaryVariable' @ [53:43] ==> public final fun createTemporaryVariable(irExpression: IrExpression, nameHint: String? = ..., isMutable: Boolean = ..., origin: IrDeclarationOrigin = ...): IrVariable defined in org.jetbrains.kotlin.ir.builders.Scope[DeserializedSimpleFunctionDescriptor]
 
-'irGetField' @ [54:29] ==> public fun IrBuilderWithScope.irGetField(receiver: IrExpression, symbol: IrFieldSymbol): IrGetFieldImpl defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irGetField' @ [54:29] ==> public fun IrBuilderWithScope.irGetField(receiver: IrExpression, symbol: IrFieldSymbol): IrGetFieldImpl defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'irGet' @ [54:40] ==> public fun IrBuilderWithScope.irGet(variable: IrValueSymbol): IrGetValueImpl defined in org.jetbrains.kotlin.ir.builders[DeserializedSimpleFunctionDescriptor]
 

@@ -18,8 +18,6 @@ Inferred types:
 Inferred types:
     <T> -> DescriptorRendererModifier
 
-'DescriptorRendererModifier' @ [46:31] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
-
 'INNER' @ [46:58] ==> enum entry INNER defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
 'member' @ [51:32] ==> value-parameter member: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo.<init>[ValueParameterDescriptorImpl]
@@ -114,8 +112,6 @@ Inferred types:
 
 'modality' @ [66:74] ==> public final val MemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [66:86] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [66:95] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'displayName' @ [67:17] ==> protected/*protected and package*/ final var displayName: (String..String?) defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo[JavaPropertyDescriptor]
@@ -158,8 +154,6 @@ Inferred types:
 
 'modality' @ [75:60] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [75:72] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [75:81] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'when (declaration) {
@@ -184,10 +178,10 @@ Inferred types:
 
 'toLightElements' @ [84:54] ==> public fun KtElement.toLightElements(): List<PsiNamedElement> defined in org.jetbrains.kotlin.asJava[DeserializedSimpleFunctionDescriptor]
 
-'let' @ [84:72] ==> @InlineOnly public inline fun <T, R> List<PsiNamedElement>.let(block: (List<PsiNamedElement>) -> {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}?): {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [84:72] ==> @InlineOnly public inline fun <T, R> List<PsiNamedElement>.let(block: (List<PsiNamedElement>) -> Any?): Any? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> List<PsiNamedElement>
-    <R> -> {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}?
+    <R> -> Any?
 
 'it' @ [85:13] ==> value-parameter it: List<PsiNamedElement> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.lightElementForMemberInfo.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -211,7 +205,7 @@ Inferred types:
 
 'member' @ [94:23] ==> public final val <T : (PsiElement..PsiElement?)> MemberInfoBase<out KtNamedDeclaration>.member: (KtNamedDeclaration..KtNamedDeclaration?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> Captured(out KtNamedDeclaration)
 
 'lightElementForMemberInfo' @ [95:33] ==> public fun lightElementForMemberInfo(declaration: KtNamedDeclaration?): PsiMember? defined in org.jetbrains.kotlin.idea.refactoring.memberInfo in file KotlinMemberInfo.kt[SimpleFunctionDescriptorImpl]
 
@@ -225,7 +219,7 @@ Inferred types:
 
 'overrides' @ [96:78] ==> public final val <T : (PsiElement..PsiElement?)> MemberInfoBase<out KtNamedDeclaration>.overrides: (Boolean..Boolean?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> Captured(out KtNamedDeclaration)
 
 'info' @ [97:5] ==> val info: MemberInfo defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.toJavaMemberInfo[LocalVariableDescriptor]
 
@@ -233,7 +227,7 @@ Inferred types:
 
 'isToAbstract' @ [97:25] ==> public final var <T : (PsiElement..PsiElement?)> MemberInfoBase<out KtNamedDeclaration>.isToAbstract: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> Captured(out KtNamedDeclaration)
 
 'info' @ [98:5] ==> val info: MemberInfo defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.toJavaMemberInfo[LocalVariableDescriptor]
 
@@ -241,7 +235,7 @@ Inferred types:
 
 'isChecked' @ [98:22] ==> public final var <T : (PsiElement..PsiElement?)> MemberInfoBase<out KtNamedDeclaration>.isChecked: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> Captured(out KtNamedDeclaration)
 
 'info' @ [99:12] ==> val info: MemberInfo defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.toJavaMemberInfo[LocalVariableDescriptor]
 

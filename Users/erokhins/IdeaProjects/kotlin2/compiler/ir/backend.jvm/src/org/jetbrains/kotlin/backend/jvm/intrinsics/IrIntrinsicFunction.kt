@@ -1,6 +1,6 @@
 'expression' @ [37:37] ==> value-parameter expression: IrMemberAccessExpression defined in org.jetbrains.kotlin.backend.jvm.intrinsics.IrIntrinsicFunction.<init>[ValueParameterDescriptorImpl]
 
-'argTypes' @ [37:48] ==> public fun IrMemberAccessExpression.argTypes(context: JvmBackendContext): ArrayList<Type> defined in org.jetbrains.kotlin.backend.jvm.intrinsics[SimpleFunctionDescriptorImpl]
+'argTypes' @ [37:48] ==> public fun IrMemberAccessExpression.argTypes(context: JvmBackendContext): ArrayList<Type> defined in org.jetbrains.kotlin.backend.jvm.intrinsics in file IrIntrinsicFunction.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [37:57] ==> value-parameter context: JvmBackendContext defined in org.jetbrains.kotlin.backend.jvm.intrinsics.IrIntrinsicFunction.<init>[ValueParameterDescriptorImpl]
 
@@ -110,7 +110,7 @@ Inferred types:
 
 'expression' @ [81:44] ==> value-parameter expression: IrMemberAccessExpression defined in org.jetbrains.kotlin.backend.jvm.intrinsics.IrIntrinsicFunction.Companion.create[ValueParameterDescriptorImpl]
 
-'argTypes' @ [81:55] ==> public fun IrMemberAccessExpression.argTypes(context: JvmBackendContext): ArrayList<Type> defined in org.jetbrains.kotlin.backend.jvm.intrinsics[SimpleFunctionDescriptorImpl]
+'argTypes' @ [81:55] ==> public fun IrMemberAccessExpression.argTypes(context: JvmBackendContext): ArrayList<Type> defined in org.jetbrains.kotlin.backend.jvm.intrinsics in file IrIntrinsicFunction.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [81:64] ==> value-parameter context: JvmBackendContext defined in org.jetbrains.kotlin.backend.jvm.intrinsics.IrIntrinsicFunction.Companion.create[ValueParameterDescriptorImpl]
 
@@ -158,7 +158,7 @@ Inferred types:
 Inferred types:
     <T> -> Type
 
-'apply' @ [102:32] ==> @InlineOnly public inline fun <T> ArrayList<Type>.apply(block: ArrayList<Type>.() -> Unit): ArrayList<Type> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [102:32] ==> @InlineOnly public inline fun <T> ArrayList<Type> /* = ArrayList<Type> */.apply(block: ArrayList<Type> /* = ArrayList<Type> */.() -> Unit): ArrayList<Type> /* = ArrayList<Type> */ defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ArrayList<Type>
 

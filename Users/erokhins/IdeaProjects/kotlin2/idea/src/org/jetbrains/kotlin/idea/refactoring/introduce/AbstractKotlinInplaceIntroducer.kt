@@ -44,7 +44,7 @@ Inferred types:
 
 'putUserData' @ [54:18] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Boolean..Boolean?)>, @Nullable p1: Boolean?): Unit defined in com.intellij.openapi.editor.Editor[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'INTRODUCE_RESTART' @ [54:49] ==> public final val INTRODUCE_RESTART: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?) defined in com.intellij.refactoring.rename.inplace.InplaceRefactoring[JavaPropertyDescriptor]
 
@@ -87,7 +87,7 @@ Inferred types:
 
 'putUserData' @ [63:22] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Boolean..Boolean?)>, @Nullable p1: Boolean?): Unit defined in com.intellij.openapi.editor.Editor[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'INTRODUCE_RESTART' @ [63:53] ==> public final val INTRODUCE_RESTART: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?) defined in com.intellij.refactoring.rename.inplace.InplaceRefactoring[JavaPropertyDescriptor]
 

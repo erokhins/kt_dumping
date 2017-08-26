@@ -14,8 +14,6 @@ Inferred types:
 
 'KotlinTypeInfo' @ [39:28] ==> public constructor KotlinTypeInfo(isCovariant: Boolean, type: KotlinType? = ..., text: String? = ...) defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinTypeInfo[ClassConstructorDescriptorImpl]
 
-'IdeDescriptorRenderers' @ [39:71] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE_NOT_NULL_TYPE_APPROXIMATION' @ [39:94] ==> @field:JvmField public final val SOURCE_CODE_NOT_NULL_TYPE_APPROXIMATION: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderType' @ [39:134] ==> public abstract fun renderType(type: KotlinType): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -24,7 +22,7 @@ Inferred types:
 
 'getParentOfType' @ [45:39] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtNamedDeclaration..KtNamedDeclaration?)>): KtNamedDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
 
 'element' @ [45:55] ==> value-parameter element: KtParameter defined in org.jetbrains.kotlin.idea.quickfix.ChangeParameterTypeFix.<init>[ValueParameterDescriptorImpl]
 

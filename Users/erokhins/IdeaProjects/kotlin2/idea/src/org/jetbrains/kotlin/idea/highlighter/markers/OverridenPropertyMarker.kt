@@ -13,14 +13,14 @@ Inferred types:
 
 'PsiElementProcessorAdapter' @ [49:56] ==> public constructor PsiElementProcessorAdapter<T : (PsiElement..PsiElement?)>(p0: (PsiElementProcessor<(PsiClass..PsiClass?)>..PsiElementProcessor<(PsiClass..PsiClass?)>?)) defined in com.intellij.psi.search.PsiElementProcessorAdapter[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiClass
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
 
 'overriddenInClassesProcessor' @ [49:83] ==> val overriddenInClassesProcessor: PsiElementProcessor.CollectElementsWithLimit<PsiClass> defined in org.jetbrains.kotlin.idea.highlighter.markers.getOverriddenPropertyTooltip[LocalVariableDescriptor]
 
-'Function' @ [50:13] ==> public fun <Param : (Any..Any?), Result : (Any..Any?)> Function(function: ((PsiMethod..PsiMethod?)) -> (PsiClass..PsiClass?)): Function<PsiMethod, PsiClass> defined in com.intellij.util[SimpleFunctionDescriptorImpl]
+'Function' @ [50:13] ==> public fun <Param : (Any..Any?), Result : (Any..Any?)> Function(function: ((PsiMethod..PsiMethod?)) -> (PsiClass..PsiClass?)): Function<(PsiMethod..PsiMethod?), (PsiClass..PsiClass?)> defined in com.intellij.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <Param : (Any..Any?)> -> PsiMethod
-    <Result : (Any..Any?)> -> PsiClass
+    <Param : (Any..Any?)> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
+    <Result : (Any..Any?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
 
 'method' @ [50:46] ==> value-parameter method: PsiMethod? defined in org.jetbrains.kotlin.idea.highlighter.markers.getOverriddenPropertyTooltip.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -136,13 +136,9 @@ Inferred types:
 
 'propertyOrParameter' @ [88:35] ==> val propertyOrParameter: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.highlighter.markers.buildNavigateToPropertyOverriddenDeclarationsPopup[LocalVariableDescriptor]
 
-'LightClassUtil' @ [89:27] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
-
 'getLightClassPropertyMethods' @ [89:42] ==> public final fun getLightClassPropertyMethods(property: KtProperty): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
 'propertyOrParameter' @ [89:71] ==> val propertyOrParameter: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.highlighter.markers.buildNavigateToPropertyOverriddenDeclarationsPopup[LocalVariableDescriptor]
-
-'LightClassUtil' @ [90:27] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
 
 'getLightClassPropertyMethods' @ [90:42] ==> public final fun getLightClassPropertyMethods(parameter: KtParameter): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -152,7 +148,7 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> PsiElement
 
-'Runnable' @ [94:32] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [94:32] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'KotlinDefinitionsSearcher' @ [95:9] ==> public companion object defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinDefinitionsSearcher[FakeCallableDescriptorForObject]
 

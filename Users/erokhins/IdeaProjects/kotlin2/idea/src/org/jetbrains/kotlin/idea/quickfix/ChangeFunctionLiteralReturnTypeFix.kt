@@ -98,7 +98,7 @@ Inferred types:
 
 'getParentOfType' @ [66:49] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtProperty..KtProperty?)>): KtProperty? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtProperty
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'functionLiteralExpression' @ [66:65] ==> value-parameter functionLiteralExpression: KtLambdaExpression defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralReturnTypeFix.createAppropriateQuickFix[ValueParameterDescriptorImpl]
 
@@ -131,8 +131,8 @@ Inferred types:
 
 'get' @ [71:40] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), p1: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [71:59] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -175,7 +175,7 @@ Inferred types:
 
 'call' @ [80:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'getValueArgumentForExpression' @ [80:51] ==> public fun Call.getValueArgumentForExpression(expression: KtExpression): ValueArgument? defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -197,8 +197,8 @@ Inferred types:
 
 'get' @ [84:45] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), p1: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [84:64] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -231,7 +231,7 @@ Inferred types:
 
 'getParentOfType' @ [93:42] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtFunction..KtFunction?)>, p2: Boolean): KtFunction? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtFunction
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFunction..org.jetbrains.kotlin.psi.KtFunction?)
 
 'functionLiteralExpression' @ [93:58] ==> value-parameter functionLiteralExpression: KtLambdaExpression defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralReturnTypeFix.createAppropriateQuickFix[ValueParameterDescriptorImpl]
 
@@ -255,8 +255,8 @@ Inferred types:
 
 'get' @ [96:52] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), p1: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [96:71] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -280,8 +280,6 @@ Inferred types:
 'eventualFunctionLiteralType' @ [97:99] ==> val eventualFunctionLiteralType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralReturnTypeFix.createAppropriateQuickFix[LocalVariableDescriptor]
 
 'parentFunctionReturnType' @ [97:128] ==> val parentFunctionReturnType: KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralReturnTypeFix.createAppropriateQuickFix[LocalVariableDescriptor]
-
-'ChangeCallableReturnTypeFix' @ [98:17] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
 'ForEnclosing' @ [98:45] ==> public constructor ForEnclosing(element: KtFunction, type: KotlinType) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ForEnclosing[ClassConstructorDescriptorImpl]
 
@@ -378,7 +376,7 @@ Inferred types:
 
 'getParentElementOfType' @ [127:58] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtLambdaExpression..KtLambdaExpression?)>..Class<(KtLambdaExpression..KtLambdaExpression?)>?)): KtLambdaExpression? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtLambdaExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtLambdaExpression..org.jetbrains.kotlin.psi.KtLambdaExpression?)
 
 'diagnostic' @ [127:81] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralReturnTypeFix.Companion.createAction[ValueParameterDescriptorImpl]
 

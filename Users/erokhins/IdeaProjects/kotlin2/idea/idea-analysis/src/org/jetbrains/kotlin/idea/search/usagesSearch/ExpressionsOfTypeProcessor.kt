@@ -350,7 +350,7 @@ Inferred types:
 
 'project' @ [212:56] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor[PropertyDescriptorImpl]
 
-'excludeFileTypes' @ [212:65] ==> public fun SearchScope.excludeFileTypes(vararg fileTypes: FileType): SearchScope defined in org.jetbrains.kotlin.idea.search[SimpleFunctionDescriptorImpl]
+'excludeFileTypes' @ [212:65] ==> public fun SearchScope.excludeFileTypes(vararg fileTypes: FileType): SearchScope defined in org.jetbrains.kotlin.idea.search in file searchUtil.kt[SimpleFunctionDescriptorImpl]
 
 'INSTANCE' @ [212:94] ==> public final val INSTANCE: (XmlFileType..XmlFileType?) defined in com.intellij.ide.highlighter.XmlFileType[JavaPropertyDescriptor]
 
@@ -510,6 +510,8 @@ Inferred types:
 '' @ [259:26] ==> private constructor ReferenceProcessor(handler: (ExpressionsOfTypeProcessor, PsiReference) -> Boolean) defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor.ReferenceProcessor[ClassConstructorDescriptorImpl]
 
 'ExpressionsOfTypeProcessor' @ [259:27] ==> public companion object defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor[FakeCallableDescriptorForObject]
+
+'processReferenceToCallableOfOurType' @ [259:55] ==> private final fun processReferenceToCallableOfOurType(reference: PsiReference): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor[SimpleFunctionDescriptorImpl]
 
 '' @ [261:30] ==> private constructor ReferenceProcessor(handler: (ExpressionsOfTypeProcessor, PsiReference) -> Boolean) defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor.ReferenceProcessor[ClassConstructorDescriptorImpl]
 
@@ -1039,7 +1041,7 @@ Inferred types:
 
 'project' @ [430:52] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor[PropertyDescriptorImpl]
 
-'excludeFileTypes' @ [430:61] ==> public fun SearchScope.excludeFileTypes(vararg fileTypes: FileType): SearchScope defined in org.jetbrains.kotlin.idea.search[SimpleFunctionDescriptorImpl]
+'excludeFileTypes' @ [430:61] ==> public fun SearchScope.excludeFileTypes(vararg fileTypes: FileType): SearchScope defined in org.jetbrains.kotlin.idea.search in file searchUtil.kt[SimpleFunctionDescriptorImpl]
 
 'INSTANCE' @ [430:91] ==> public final val INSTANCE: (JavaFileType..JavaFileType?) defined in com.intellij.ide.highlighter.JavaFileType[JavaPropertyDescriptor]
 
@@ -1119,7 +1121,7 @@ Inferred types:
 
 'project' @ [459:60] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor[PropertyDescriptorImpl]
 
-'excludeFileTypes' @ [459:69] ==> public fun SearchScope.excludeFileTypes(vararg fileTypes: FileType): SearchScope defined in org.jetbrains.kotlin.idea.search[SimpleFunctionDescriptorImpl]
+'excludeFileTypes' @ [459:69] ==> public fun SearchScope.excludeFileTypes(vararg fileTypes: FileType): SearchScope defined in org.jetbrains.kotlin.idea.search in file searchUtil.kt[SimpleFunctionDescriptorImpl]
 
 'INSTANCE' @ [459:101] ==> public final val INSTANCE: (KotlinFileType..KotlinFileType?) defined in org.jetbrains.kotlin.idea.KotlinFileType[JavaPropertyDescriptor]
 
@@ -1332,9 +1334,9 @@ Inferred types:
                                 processSuspiciousExpression(element)
                                 return true
                             }
-                        }' @ [512:25] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Unit, entry1: Unit): Unit[SimpleFunctionDescriptorImpl]
+                        }' @ [512:25] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Nothing, entry1: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Unit
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Nothing
 
 'element' @ [512:31] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor.processClassUsageInKotlin[ValueParameterDescriptorImpl]
 
@@ -1503,9 +1505,9 @@ Inferred types:
                         usePlainSearch(typeRefParent)
                         return true
                     }
-                }' @ [553:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Unit, entry1: Unit): Unit[SimpleFunctionDescriptorImpl]
+                }' @ [553:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Nothing, entry1: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Unit
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Nothing
 
 'typeRef' @ [553:23] ==> val typeRef: PsiElement? defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor.processClassUsageInUserType[LocalVariableDescriptor]
 
@@ -1975,7 +1977,7 @@ Inferred types:
 
 'psiClass' @ [764:39] ==> val psiClass: PsiClass? defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor.processParameterInSamClass[LocalVariableDescriptor]
 
-'resolveToDescriptor' @ [764:48] ==> public fun PsiClass.resolveToDescriptor(resolutionFacade: ResolutionFacade, declarationTranslator: (KtClassOrObject) -> KtClassOrObject? = ...): ClassDescriptor? defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'resolveToDescriptor' @ [764:48] ==> public fun PsiClass.resolveToDescriptor(resolutionFacade: ResolutionFacade, declarationTranslator: (KtClassOrObject) -> KtClassOrObject? = ...): ClassDescriptor? defined in org.jetbrains.kotlin.idea.caches.resolve in file JavaResolveExtension.kt[SimpleFunctionDescriptorImpl]
 
 'resolutionFacade' @ [764:68] ==> val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor.processParameterInSamClass[LocalVariableDescriptor]
 
@@ -2212,6 +2214,27 @@ Inferred types:
 'intersectWith' @ [863:54] ==> @NotNull public open fun intersectWith(@NotNull p0: SearchScope): SearchScope defined in com.intellij.psi.search.LocalSearchScope[JavaMethodDescriptor]
 
 'searchScope' @ [863:68] ==> private final val searchScope: SearchScope defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor[PropertyDescriptorImpl]
+
+'if (restricted is LocalSearchScope) {
+                ScopeLoop@
+                for (element in restricted.scope) {
+                    val prevElements = scopesToUsePlainSearch.getOrPut(file) { ArrayList() }
+                    for ((index, prevElement) in prevElements.withIndex()) {
+                        if (!prevElement.isValid) continue@ScopeLoop
+                        if (prevElement.isAncestor(element, strict = false)) continue@ScopeLoop
+                        if (element.isAncestor(prevElement)) {
+                            prevElements[index] = element
+                            continue@ScopeLoop
+                        }
+                    }
+                    prevElements.add(element)
+                }
+            }
+            else {
+                assert(restricted == GlobalSearchScope.EMPTY_SCOPE)
+            }' @ [864:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Unit, elseBranch: Unit): Unit[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Unit
 
 'restricted' @ [864:17] ==> val restricted: SearchScope defined in org.jetbrains.kotlin.idea.search.usagesSearch.ExpressionsOfTypeProcessor.usePlainSearch.<anonymous>[LocalVariableDescriptor]
 

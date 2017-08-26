@@ -24,7 +24,7 @@ Inferred types:
 
 'diagnostic' @ [38:116] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.RemoveFinalUpperBoundFix.Factory.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [38:128] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>.psiElement: (KtTypeReference..KtTypeReference?)[MyPropertyDescriptor]
+'psiElement' @ [38:128] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>.psiElement: KtTypeReference[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)

@@ -30,8 +30,6 @@ Inferred types:
 
 'targetPlatform' @ [53:13] ==> value-parameter targetPlatform: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.FrameworkLibraryValidatorWithDynamicDescription.checkLibraryIsConfigured[ValueParameterDescriptorImpl]
 
-'TargetPlatformKind' @ [53:31] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'Common' @ [53:50] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'KotlinVersionInfoProvider' @ [55:13] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinVersionInfoProvider[FakeCallableDescriptorForObject]
@@ -127,8 +125,6 @@ Inferred types:
     <T> -> TargetPlatformKind<*>
 
 'it' @ [82:17] ==> value-parameter it: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.facet.FrameworkLibraryValidatorWithDynamicDescription.check.<anonymous>[ValueParameterDescriptorImpl]
-
-'TargetPlatformKind' @ [82:23] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [82:42] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 

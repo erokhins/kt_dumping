@@ -54,7 +54,7 @@ Inferred types:
 
 'KtPostfixTemplatePsiInfo' @ [85:9] ==> internal object KtPostfixTemplatePsiInfo : PostfixTemplatePsiInfo defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[FakeCallableDescriptorForObject]
 
-'createExpressionSelector' @ [86:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [86:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [86:36] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.idea.codeInsight.postfix.KtNotPostfixTemplate.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -66,7 +66,7 @@ Inferred types:
 
 'kind' @ [91:51] ==> value-parameter kind: String defined in org.jetbrains.kotlin.idea.codeInsight.postfix.KtIntroduceVariablePostfixTemplate.<init>[ValueParameterDescriptorImpl]
 
-'createExpressionSelector' @ [91:76] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [91:76] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinIntroduceVariableHandler' @ [93:9] ==> public object KotlinIntroduceVariableHandler : RefactoringActionHandler defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable in file KotlinIntroduceVariableHandler.kt[FakeCallableDescriptorForObject]
 
@@ -126,7 +126,7 @@ Inferred types:
 
 'typePredicate' @ [116:61] ==> value-parameter typePredicate: ((KotlinType) -> Boolean)? = ... defined in org.jetbrains.kotlin.idea.codeInsight.postfix.createExpressionSelector[ValueParameterDescriptorImpl]
 
-'createExpressionSelectorWithComplexFilter' @ [119:12] ==> internal fun createExpressionSelectorWithComplexFilter(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., predicate: ((KtExpression, BindingContext) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelectorWithComplexFilter' @ [119:12] ==> internal fun createExpressionSelectorWithComplexFilter(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., predicate: ((KtExpression, BindingContext) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'checkCanBeUsedAsValue' @ [119:54] ==> value-parameter checkCanBeUsedAsValue: Boolean = ... defined in org.jetbrains.kotlin.idea.codeInsight.postfix.createExpressionSelector[ValueParameterDescriptorImpl]
 
@@ -160,9 +160,9 @@ Inferred types:
 
 'element' @ [142:13] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.codeInsight.postfix.KtExpressionPostfixTemplateSelector.filterElement[ValueParameterDescriptorImpl]
 
-'lazy' @ [144:31] ==> public fun <T> lazy(initializer: () -> BindingContext): Lazy<BindingContext> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [144:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> BindingContext
+    <T> -> T
 
 'element' @ [144:38] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.codeInsight.postfix.KtExpressionPostfixTemplateSelector.filterElement[ValueParameterDescriptorImpl]
 
@@ -230,9 +230,9 @@ Inferred types:
 
 'textRange' @ [170:33] ==> public final val PsiElement.textRange: (TextRange..TextRange?)[MyPropertyDescriptor]
 
-'findElementOfClassAtRange' @ [171:31] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtRange(@NotNull p0: PsiFile, p1: Int, p2: Int, @NotNull p3: Class<out (PsiElement..PsiElement?)>): PsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'findElementOfClassAtRange' @ [171:31] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtRange(@NotNull p0: PsiFile, p1: Int, p2: Int, @NotNull p3: Class<out PsiElement>): PsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiElement
+    <T : (PsiElement..PsiElement?)> -> Captured(out PsiElement)
 
 'originalFile' @ [171:57] ==> val originalFile: PsiFile defined in org.jetbrains.kotlin.idea.codeInsight.postfix.KtExpressionPostfixTemplateSelector.getExpressions[LocalVariableDescriptor]
 
@@ -248,7 +248,7 @@ Inferred types:
 
 'java' @ [171:130] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'emptyList' @ [172:41] ==> public fun <T> emptyList(): List<PsiElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -355,6 +355,8 @@ Inferred types:
 
 'this' @ [190:46] ==> <this> defined in org.jetbrains.kotlin.idea.codeInsight.postfix.KtExpressionPostfixTemplateSelector[LazyClassReceiverParameterDescriptor]
 
+'filterElement' @ [190:52] ==> private final fun filterElement(element: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.codeInsight.postfix.KtExpressionPostfixTemplateSelector[SimpleFunctionDescriptorImpl]
+
 'getApplication' @ [192:32] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 
 'isUnitTestMode' @ [192:49] ==> public final val Application.isUnitTestMode: Boolean[MyPropertyDescriptor]
@@ -392,10 +394,12 @@ Inferred types:
 
 'isEmpty' @ [200:66] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'Function' @ [203:34] ==> public fun <Param : (Any..Any?), Result : (Any..Any?)> Function(function: ((PsiElement..PsiElement?)) -> (String..String?)): Function<PsiElement, String> defined in com.intellij.util[SimpleFunctionDescriptorImpl]
+'Function' @ [203:34] ==> public fun <Param : (Any..Any?), Result : (Any..Any?)> Function(function: ((PsiElement..PsiElement?)) -> (String..String?)): Function<(PsiElement..PsiElement?), (String..String?)> defined in com.intellij.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <Param : (Any..Any?)> -> PsiElement
-    <Result : (Any..Any?)> -> String
+    <Param : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <Result : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+
+'getText' @ [203:55] ==> @NonNls @Contract public abstract fun getText(): (String..String?) defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 
 'this' @ [207:13] ==> <this> defined in org.jetbrains.kotlin.idea.codeInsight.postfix.isOperationReference[ReceiverParameterDescriptorImpl]
 

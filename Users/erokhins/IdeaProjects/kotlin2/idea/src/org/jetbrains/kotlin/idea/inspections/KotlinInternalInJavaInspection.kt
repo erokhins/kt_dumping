@@ -14,15 +14,15 @@
 
 'holder' @ [36:43] ==> value-parameter holder: ProblemsHolder defined in org.jetbrains.kotlin.idea.inspections.KotlinInternalInJavaInspection.buildVisitor[ValueParameterDescriptorImpl]
 
-'?:' @ [42:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtLightElement<KtElement, PsiElement>?, right: KtLightElement<KtElement, PsiElement>): KtLightElement<KtElement, PsiElement>[SimpleFunctionDescriptorImpl]
+'?:' @ [42:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtLightElement<*, *>?, right: KtLightElement<*, *>): KtLightElement<*, *>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtLightElement<KtElement, PsiElement>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtLightElement<*, *>
 
 'this' @ [42:29] ==> <this> defined in org.jetbrains.kotlin.idea.inspections.KotlinInternalInJavaInspection.checkAndReport[ReceiverParameterDescriptorImpl]
 
 'resolve' @ [42:53] ==> @Nullable public abstract fun resolve(): PsiElement? defined in com.intellij.psi.PsiReference[JavaMethodDescriptor]
 
-'lightElement' @ [43:33] ==> val lightElement: KtLightElement<KtElement, PsiElement> defined in org.jetbrains.kotlin.idea.inspections.KotlinInternalInJavaInspection.checkAndReport[LocalVariableDescriptor]
+'lightElement' @ [43:33] ==> val lightElement: KtLightElement<*, *> defined in org.jetbrains.kotlin.idea.inspections.KotlinInternalInJavaInspection.checkAndReport[LocalVariableDescriptor]
 
 'kotlinOrigin' @ [43:46] ==> public abstract val kotlinOrigin: KtElement? defined in org.jetbrains.kotlin.asJava.elements.KtLightElement[DeserializedPropertyDescriptor]
 

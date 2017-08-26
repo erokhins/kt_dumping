@@ -186,8 +186,6 @@ Inferred types:
 
 'createJdk' @ [96:46] ==> public open fun createJdk(@NotNull p0: String, @NotNull p1: String): (Sdk..Sdk?) defined in com.intellij.openapi.projectRoots.SimpleJavaSdkType[JavaMethodDescriptor]
 
-'SystemProperties' @ [96:63] ==> private object SystemProperties defined in kotlin.text[FakeCallableDescriptorForObject]
-
 'getJavaHome' @ [96:80] ==> public open fun getJavaHome(): (String..String?) defined in com.intellij.util.SystemProperties[JavaMethodDescriptor]
 
 'params' @ [99:16] ==> val params: JavaParameters defined in org.jetbrains.kotlin.console.KotlinConsoleKeeper.createJavaParametersWithSdk[LocalVariableDescriptor]
@@ -236,7 +234,7 @@ Inferred types:
 
 'getService' @ [112:71] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(KotlinConsoleKeeper..KotlinConsoleKeeper?)>): (KotlinConsoleKeeper..KotlinConsoleKeeper?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinConsoleKeeper
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.console.KotlinConsoleKeeper..org.jetbrains.kotlin.console.KotlinConsoleKeeper?)
 
 'project' @ [112:82] ==> value-parameter project: Project defined in org.jetbrains.kotlin.console.KotlinConsoleKeeper.Companion.getInstance[ValueParameterDescriptorImpl]
 

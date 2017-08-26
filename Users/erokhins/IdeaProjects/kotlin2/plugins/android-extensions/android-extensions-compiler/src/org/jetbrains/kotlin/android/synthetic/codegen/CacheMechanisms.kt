@@ -18,10 +18,10 @@ Inferred types:
 
 'HASH_MAP' @ [44:37] ==> enum entry HASH_MAP defined in kotlinx.android.extensions.CacheImplementation[FakeCallableDescriptorForObject]
 
-'HashMap' @ [44:49] ==> public final fun <K, V> <init>(): HashMap<Any?, Any?> /* = HashMap<Any?, Any?> */ defined in kotlin.collections.HashMap[TypeAliasConstructorDescriptorImpl]
+'HashMap' @ [44:49] ==> public final fun <K, V> <init>(): HashMap<???, ???> /* = HashMap<???, ???> */ defined in kotlin.collections.HashMap[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <K> -> Any?
-    <V> -> Any?
+    <K> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@2a5c5d7c
+    <V> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@3cbd5d0c
 
 'java' @ [44:64] ==> public val <T> KClass<HashMap<*, *>>.java: Class<HashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

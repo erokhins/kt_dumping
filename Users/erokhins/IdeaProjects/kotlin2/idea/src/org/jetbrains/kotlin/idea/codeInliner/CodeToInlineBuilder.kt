@@ -74,8 +74,8 @@ Inferred types:
 
 'get' @ [83:40] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?), p1: (PsiElement..PsiElement?)): SimpleFunctionDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> SimpleFunctionDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'FUNCTION' @ [83:59] ==> public final val FUNCTION: (WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -102,8 +102,6 @@ Inferred types:
 'name' @ [86:16] ==> public final val ValueParameterDescriptor.name: Name[MyPropertyDescriptor]
 
 'render' @ [86:21] ==> public fun Name.render(): String defined in org.jetbrains.kotlin.renderer[DeserializedSimpleFunctionDescriptor]
-
-'IdeDescriptorRenderers' @ [86:39] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [86:62] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -235,7 +233,9 @@ Inferred types:
 
 'it' @ [123:35] ==> value-parameter it: KtCallExpression defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInlineBuilder.insertExplicitTypeArguments.<anonymous>[ValueParameterDescriptorImpl]
 
-'InsertExplicitTypeArgumentsIntention' @ [123:41] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.InsertExplicitTypeArgumentsIntention[FakeCallableDescriptorForObject]
+'!!' @ [123:41] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KtTypeArgumentList?): KtTypeArgumentList[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KtTypeArgumentList
 
 'createTypeArguments' @ [123:78] ==> public final fun createTypeArguments(element: KtCallElement, bindingContext: BindingContext): KtTypeArgumentList? defined in org.jetbrains.kotlin.idea.intentions.InsertExplicitTypeArgumentsIntention.Companion[SimpleFunctionDescriptorImpl]
 
@@ -328,9 +328,7 @@ Inferred types:
 
 'putCopyableUserData' @ [150:32] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Name..Name?)>..Key<(Name..Name?)>?), @Nullable p1: Name?): Unit defined in org.jetbrains.kotlin.psi.KtSimpleNameExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Name
-
-'CodeToInline' @ [150:52] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
 
 'PARAMETER_USAGE_KEY' @ [150:65] ==> public final val PARAMETER_USAGE_KEY: Key<Name> defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline.Companion[PropertyDescriptorImpl]
 
@@ -350,9 +348,7 @@ Inferred types:
 
 'putCopyableUserData' @ [153:32] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Name..Name?)>..Key<(Name..Name?)>?), @Nullable p1: Name?): Unit defined in org.jetbrains.kotlin.psi.KtSimpleNameExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Name
-
-'CodeToInline' @ [153:52] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
 
 'TYPE_PARAMETER_USAGE_KEY' @ [153:65] ==> public final val TYPE_PARAMETER_USAGE_KEY: Key<Name> defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline.Companion[PropertyDescriptorImpl]
 
@@ -383,7 +379,7 @@ Inferred types:
 
 'resultingDescriptor' @ [158:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'isExtension' @ [158:73] ==> public val DeclarationDescriptor.isExtension: Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
@@ -391,13 +387,13 @@ Inferred types:
 
 'extensionReceiver' @ [159:38] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [161:25] ==> val resolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInlineBuilder.processReferences.<anonymous>[LocalVariableDescriptor]
 
 'dispatchReceiver' @ [161:38] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'receiver' @ [162:25] ==> val receiver: ReceiverValue? defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInlineBuilder.processReferences.<anonymous>[LocalVariableDescriptor]
 

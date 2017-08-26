@@ -20,5 +20,5 @@ Inferred types:
 
 'hasStableParameterNames' @ [27:9] ==> public abstract fun hasStableParameterNames(): Boolean defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor[JavaMethodDescriptor]
 
-'containsVarargs' @ [29:12] ==> internal fun FunctionDescriptor.containsVarargs(): Boolean defined in org.jetbrains.kotlin.resolve.jvm.kotlinSignature[SimpleFunctionDescriptorImpl]
+'containsVarargs' @ [29:12] ==> internal fun FunctionDescriptor.containsVarargs(): Boolean defined in org.jetbrains.kotlin.resolve.jvm.kotlinSignature in file signaturePropagationUtil.kt[SimpleFunctionDescriptorImpl]
 

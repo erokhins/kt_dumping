@@ -25,7 +25,7 @@ Inferred types:
 
 'name' @ [37:68] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out Diagnostic>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> Diagnostic
+    <D : (Diagnostic..Diagnostic?)> -> Captured(out Diagnostic)
 
 'toLowerCase' @ [37:73] ==> @InlineOnly public inline fun String.toLowerCase(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 

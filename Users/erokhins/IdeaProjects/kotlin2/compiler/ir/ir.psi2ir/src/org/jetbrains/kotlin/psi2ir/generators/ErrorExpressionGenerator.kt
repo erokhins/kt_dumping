@@ -29,11 +29,11 @@ Inferred types:
 
 'java' @ [34:75] ==> public val <T> KClass<out KtElement>.java: Class<out KtElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtElement
+    <T> -> Captured(out KtElement)
 
 'simpleName' @ [34:80] ==> public final val <T : (Any..Any?)> Class<out KtElement>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtElement
+    <T : (Any..Any?)> -> Captured(out KtElement)
 
 'ktElement' @ [34:96] ==> value-parameter ktElement: KtElement defined in org.jetbrains.kotlin.psi2ir.generators.ErrorExpressionGenerator.generateErrorExpression[ValueParameterDescriptorImpl]
 

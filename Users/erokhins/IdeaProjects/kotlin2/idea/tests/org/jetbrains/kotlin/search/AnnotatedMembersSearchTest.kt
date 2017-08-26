@@ -77,8 +77,6 @@ Inferred types:
 
 'toInt' @ [58:53] ==> public open fun toInt(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'PsiBasedClassResolver' @ [58:62] ==> public companion object defined in org.jetbrains.kotlin.idea.search.PsiBasedClassResolver[FakeCallableDescriptorForObject]
-
 'trueHits' @ [58:84] ==> public final val trueHits: AtomicInteger defined in org.jetbrains.kotlin.idea.search.PsiBasedClassResolver.Companion[DeserializedPropertyDescriptor]
 
 'get' @ [58:93] ==> public final fun get(): Int defined in java.util.concurrent.atomic.AtomicInteger[JavaMethodDescriptor]
@@ -94,8 +92,6 @@ Inferred types:
 'optimizedFalse' @ [62:39] ==> val optimizedFalse: Int? defined in org.jetbrains.kotlin.search.AbstractAnnotatedMembersSearchTest.doTest.<anonymous>[LocalVariableDescriptor]
 
 'toInt' @ [62:54] ==> public open fun toInt(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
-
-'PsiBasedClassResolver' @ [62:63] ==> public companion object defined in org.jetbrains.kotlin.idea.search.PsiBasedClassResolver[FakeCallableDescriptorForObject]
 
 'falseHits' @ [62:85] ==> public final val falseHits: AtomicInteger defined in org.jetbrains.kotlin.idea.search.PsiBasedClassResolver.Companion[DeserializedPropertyDescriptor]
 

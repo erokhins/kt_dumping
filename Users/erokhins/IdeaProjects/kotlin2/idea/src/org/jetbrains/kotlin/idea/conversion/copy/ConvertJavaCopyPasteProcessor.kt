@@ -14,8 +14,6 @@ Inferred types:
 
 'isDataFlavorSupported' @ [62:25] ==> public abstract fun isDataFlavorSupported(p0: (DataFlavor..DataFlavor?)): Boolean defined in java.awt.datatransfer.Transferable[JavaMethodDescriptor]
 
-'CopiedJavaCode' @ [62:47] ==> public companion object defined in org.jetbrains.kotlin.idea.conversion.copy.CopiedJavaCode[FakeCallableDescriptorForObject]
-
 'DATA_FLAVOR' @ [62:62] ==> public final val DATA_FLAVOR: DataFlavor defined in org.jetbrains.kotlin.idea.conversion.copy.CopiedJavaCode.Companion[PropertyDescriptorImpl]
 
 'listOf' @ [63:24] ==> public fun <T> listOf(element: TextBlockTransferableData): List<TextBlockTransferableData> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -25,8 +23,6 @@ Inferred types:
 'content' @ [63:31] ==> value-parameter content: Transferable defined in org.jetbrains.kotlin.idea.conversion.copy.ConvertJavaCopyPasteProcessor.extractTransferableData[ValueParameterDescriptorImpl]
 
 'getTransferData' @ [63:39] ==> public abstract fun getTransferData(p0: (DataFlavor..DataFlavor?)): (Any..Any?) defined in java.awt.datatransfer.Transferable[JavaMethodDescriptor]
-
-'CopiedJavaCode' @ [63:55] ==> public companion object defined in org.jetbrains.kotlin.idea.conversion.copy.CopiedJavaCode[FakeCallableDescriptorForObject]
 
 'DATA_FLAVOR' @ [63:70] ==> public final val DATA_FLAVOR: DataFlavor defined in org.jetbrains.kotlin.idea.conversion.copy.CopiedJavaCode.Companion[PropertyDescriptorImpl]
 
@@ -480,8 +476,6 @@ Inferred types:
 
 'project' @ [211:13] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.conversion.copy.convertCodeToKotlin[ValueParameterDescriptorImpl]
 
-'ConverterSettings' @ [212:13] ==> public companion object defined in org.jetbrains.kotlin.j2k.ConverterSettings[FakeCallableDescriptorForObject]
-
 'defaultSettings' @ [212:31] ==> public final val defaultSettings: ConverterSettings defined in org.jetbrains.kotlin.j2k.ConverterSettings.Companion[DeserializedPropertyDescriptor]
 
 'IdeaJavaToKotlinServices' @ [213:13] ==> public object IdeaJavaToKotlinServices : JavaToKotlinConverterServices defined in org.jetbrains.kotlin.idea.j2k in file IdeaJavaToKotlinServices.kt[FakeCallableDescriptorForObject]
@@ -498,8 +492,8 @@ Inferred types:
 
 'runProcessWithProgressSynchronously' @ [218:43] ==> public abstract fun <T : (Any..Any?), E : (Exception..Exception?)> runProcessWithProgressSynchronously(@NotNull p0: ThrowableComputable<(JavaToKotlinConverter.Result..JavaToKotlinConverter.Result?), (Exception /* = Exception */..Exception? /* = Exception? */)>, @NotNull @Nls p1: String, p2: Boolean, @Nullable p3: Project?): (JavaToKotlinConverter.Result..JavaToKotlinConverter.Result?) defined in com.intellij.openapi.progress.ProgressManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Result
-    <E : (Exception..Exception?)> -> Exception
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.j2k.JavaToKotlinConverter.Result..org.jetbrains.kotlin.j2k.JavaToKotlinConverter.Result?)
+    <E : (Exception..Exception?)> -> (kotlin.Exception /* = java.lang.Exception */..kotlin.Exception? /* = java.lang.Exception? */)
 
 'ThrowableComputable' @ [219:21] ==> public fun <T : (Any..Any?), E : (Throwable..Throwable?)> ThrowableComputable(function: () -> (JavaToKotlinConverter.Result..JavaToKotlinConverter.Result?)): ThrowableComputable<JavaToKotlinConverter.Result, Exception /* = Exception */> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -515,8 +509,6 @@ Inferred types:
 'elementsToKotlin' @ [220:51] ==> public final fun elementsToKotlin(inputElements: List<PsiElement>): JavaToKotlinConverter.Result defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter[DeserializedSimpleFunctionDescriptor]
 
 'inputElements' @ [220:68] ==> val inputElements: List<PsiElement> defined in org.jetbrains.kotlin.idea.conversion.copy.convertCodeToKotlin[LocalVariableDescriptor]
-
-'JavaToKotlinAction' @ [222:21] ==> public companion object defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction[FakeCallableDescriptorForObject]
 
 'title' @ [222:40] ==> public final val title: String defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction.Companion[PropertyDescriptorImpl]
 

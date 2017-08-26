@@ -1,6 +1,6 @@
-'?:' @ [34:36] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ResolvedCall<out CallableDescriptor>?, right: ResolvedCall<out CallableDescriptor>): ResolvedCall<out CallableDescriptor>[SimpleFunctionDescriptorImpl]
+'?:' @ [34:36] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?, right: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>): ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ResolvedCall<out CallableDescriptor>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>
 
 'resolvedCall' @ [34:37] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.resolve.calls.checkers.CapturingInClosureChecker.check[ValueParameterDescriptorImpl]
 
@@ -8,11 +8,11 @@ Inferred types:
 
 'resolvedCall' @ [34:103] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.resolve.calls.checkers.CapturingInClosureChecker.check[ValueParameterDescriptorImpl]
 
-'variableResolvedCall' @ [35:34] ==> val variableResolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.checkers.CapturingInClosureChecker.check[LocalVariableDescriptor]
+'variableResolvedCall' @ [35:34] ==> val variableResolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.checkers.CapturingInClosureChecker.check[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [35:55] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
+'resultingDescriptor' @ [35:55] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'variableDescriptor' @ [36:13] ==> val variableDescriptor: VariableDescriptor? defined in org.jetbrains.kotlin.resolve.calls.checkers.CapturingInClosureChecker.check[LocalVariableDescriptor]
 
@@ -46,8 +46,8 @@ Inferred types:
 
 'get' @ [45:23] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>..ReadOnlySlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>?), key: (VariableDescriptor..VariableDescriptor?)): CaptureKind? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptor
-    <V : (Any..Any?)> -> CaptureKind
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.CaptureKind..org.jetbrains.kotlin.types.expressions.CaptureKind?)
 
 'CAPTURED_IN_CLOSURE' @ [45:27] ==> public final val CAPTURED_IN_CLOSURE: (WritableSlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>..WritableSlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -69,8 +69,8 @@ Inferred types:
 
 'record' @ [47:23] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>..WritableSlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>?), key: (VariableDescriptor..VariableDescriptor?), value: (CaptureKind..CaptureKind?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptor
-    <V : (Any..Any?)> -> CaptureKind
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.CaptureKind..org.jetbrains.kotlin.types.expressions.CaptureKind?)
 
 'CAPTURED_IN_CLOSURE' @ [47:30] ==> public final val CAPTURED_IN_CLOSURE: (WritableSlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>..WritableSlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

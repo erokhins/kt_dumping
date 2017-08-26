@@ -4,9 +4,9 @@ Inferred types:
 
 'INSTANCE' @ [33:41] ==> @NotNull public final val INSTANCE: JavaLanguage defined in com.intellij.lang.java.JavaLanguage[JavaPropertyDescriptor]
 
-'lazy' @ [34:51] ==> public fun <T> lazy(initializer: () -> (PsiFileFactory..PsiFileFactory?)): Lazy<(PsiFileFactory..PsiFileFactory?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [34:51] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (com.intellij.psi.PsiFileFactory..com.intellij.psi.PsiFileFactory?)
+    <T> -> T
 
 'newDisposable' @ [35:39] ==> @NotNull public open fun newDisposable(): Disposable defined in com.intellij.openapi.util.Disposer[JavaMethodDescriptor]
 
@@ -40,6 +40,8 @@ Inferred types:
 Inferred types:
     <T> -> File
 
+'isJavaFile' @ [46:60] ==> public fun File.isJavaFile(): Boolean defined in org.jetbrains.kotlin.incremental[DeserializedSimpleFunctionDescriptor]
+
 'filesDiff' @ [47:27] ==> value-parameter filesDiff: ChangedFiles.Known defined in org.jetbrains.kotlin.incremental.ChangedJavaFilesProcessor.process[ValueParameterDescriptorImpl]
 
 'removed' @ [47:37] ==> public final val removed: List<File> defined in org.jetbrains.kotlin.incremental.ChangedFiles.Known[PropertyDescriptorImpl]
@@ -47,6 +49,8 @@ Inferred types:
 'filter' @ [47:45] ==> public inline fun <T> Iterable<File>.filter(predicate: (File) -> Boolean): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
+
+'isJavaFile' @ [47:58] ==> public fun File.isJavaFile(): Boolean defined in org.jetbrains.kotlin.incremental[DeserializedSimpleFunctionDescriptor]
 
 'removedJava' @ [49:13] ==> val removedJava: List<File> defined in org.jetbrains.kotlin.incremental.ChangedJavaFilesProcessor.process[LocalVariableDescriptor]
 

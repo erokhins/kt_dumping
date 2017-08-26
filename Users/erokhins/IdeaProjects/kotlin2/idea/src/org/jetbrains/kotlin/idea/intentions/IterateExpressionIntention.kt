@@ -132,7 +132,7 @@ Inferred types:
 
 'element' @ [71:95] ==> value-parameter element: KtExpression defined in org.jetbrains.kotlin.idea.intentions.IterateExpressionIntention.applyTo[ValueParameterDescriptorImpl]
 
-'chooseApplicableComponentFunctions' @ [72:9] ==> internal fun chooseApplicableComponentFunctions(contextExpression: KtExpression, editor: Editor?, type: KotlinType? = ..., receiverExpression: KtExpression? = ..., callback: (List<FunctionDescriptor>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable[SimpleFunctionDescriptorImpl]
+'chooseApplicableComponentFunctions' @ [72:9] ==> internal fun chooseApplicableComponentFunctions(contextExpression: KtExpression, editor: Editor?, type: KotlinType? = ..., receiverExpression: KtExpression? = ..., callback: (List<FunctionDescriptor>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable in file introduceVariableUtils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [72:44] ==> value-parameter element: KtExpression defined in org.jetbrains.kotlin.idea.intentions.IterateExpressionIntention.applyTo[ValueParameterDescriptorImpl]
 
@@ -175,7 +175,7 @@ Inferred types:
     <T> -> FunctionDescriptor
     <R> -> Set<String>
 
-'suggestNamesForComponent' @ [76:46] ==> internal fun suggestNamesForComponent(descriptor: FunctionDescriptor, project: Project, validator: (String) -> Boolean): Set<String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable[SimpleFunctionDescriptorImpl]
+'suggestNamesForComponent' @ [76:46] ==> internal fun suggestNamesForComponent(descriptor: FunctionDescriptor, project: Project, validator: (String) -> Boolean): Set<String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable in file introduceVariableUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [76:71] ==> value-parameter it: FunctionDescriptor defined in org.jetbrains.kotlin.idea.intentions.IterateExpressionIntention.applyTo.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -186,8 +186,6 @@ Inferred types:
 'listOf' @ [79:21] ==> public fun <T> listOf(element: Collection<String>): List<Collection<String>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Collection<String>
-
-'KotlinNameSuggester' @ [79:28] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
 
 'suggestIterationVariableNames' @ [79:48] ==> public final fun suggestIterationVariableNames(collection: KtExpression, elementType: KotlinType, bindingContext: BindingContext?, validator: (String) -> Boolean, defaultName: String?): Collection<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
@@ -280,13 +278,13 @@ Inferred types:
 
 'forExpression' @ [91:63] ==> value-parameter forExpression: KtForExpression defined in org.jetbrains.kotlin.idea.intentions.IterateExpressionIntention.applyTo.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'component1' @ [92:27] ==> public final operator fun component1(): {ASTDelegatePsiElement & KtCallableDeclaration & KtValVarKeywordOwner} defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
+'component1' @ [92:27] ==> public final operator fun component1(): (PsiElement..PsiElement?) defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
 'component2' @ [92:38] ==> public final operator fun component2(): Collection<String> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'iterator' @ [92:57] ==> public abstract fun iterator(): Iterator<Pair<{ASTDelegatePsiElement & KtCallableDeclaration & KtValVarKeywordOwner}, Collection<String>>> defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
+'iterator' @ [92:57] ==> public abstract fun iterator(): Iterator<Pair<(PsiElement..PsiElement?), Collection<String>>> defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'parameters' @ [92:58] ==> val parameters: List<({ASTDelegatePsiElement & KtCallableDeclaration & KtValVarKeywordOwner}..{ASTDelegatePsiElement & KtCallableDeclaration & KtValVarKeywordOwner}?)> defined in org.jetbrains.kotlin.idea.intentions.IterateExpressionIntention.applyTo.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'parameters' @ [92:58] ==> val parameters: List<(PsiElement..PsiElement?)> defined in org.jetbrains.kotlin.idea.intentions.IterateExpressionIntention.applyTo.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'names' @ [92:73] ==> val names: List<Collection<String>> defined in org.jetbrains.kotlin.idea.intentions.IterateExpressionIntention.applyTo.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -294,7 +292,7 @@ Inferred types:
 
 'replaceElement' @ [93:41] ==> public open fun replaceElement(@NotNull p0: PsiElement, p1: (Expression..Expression?)): Unit defined in com.intellij.codeInsight.template.TemplateBuilderImpl[JavaMethodDescriptor]
 
-'parameter' @ [93:56] ==> val parameter: {ASTDelegatePsiElement & KtCallableDeclaration & KtValVarKeywordOwner} defined in org.jetbrains.kotlin.idea.intentions.IterateExpressionIntention.applyTo.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'parameter' @ [93:56] ==> val parameter: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.intentions.IterateExpressionIntention.applyTo.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'ChooseStringExpression' @ [93:67] ==> public constructor ChooseStringExpression(suggestions: Collection<String>, default: String = ..., advertisementText: String? = ...) defined in org.jetbrains.kotlin.idea.intentions.ChooseStringExpression[ClassConstructorDescriptorImpl]
 

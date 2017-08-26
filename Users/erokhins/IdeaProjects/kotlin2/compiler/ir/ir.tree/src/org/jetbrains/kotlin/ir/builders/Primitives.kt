@@ -98,8 +98,6 @@
 
 'a' @ [55:26] ==> value-parameter a: IrExpression defined in org.jetbrains.kotlin.ir.builders.oror[ValueParameterDescriptorImpl]
 
-'IrConstImpl' @ [55:29] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
-
 'constTrue' @ [55:41] ==> public final fun constTrue(startOffset: Int, endOffset: Int, type: KotlinType): IrConstImpl<Boolean> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[SimpleFunctionDescriptorImpl]
 
 'b' @ [55:51] ==> value-parameter b: IrExpression defined in org.jetbrains.kotlin.ir.builders.oror[ValueParameterDescriptorImpl]
@@ -159,8 +157,6 @@
 'a' @ [67:26] ==> value-parameter a: IrExpression defined in org.jetbrains.kotlin.ir.builders.andand[ValueParameterDescriptorImpl]
 
 'b' @ [67:29] ==> value-parameter b: IrExpression defined in org.jetbrains.kotlin.ir.builders.andand[ValueParameterDescriptorImpl]
-
-'IrConstImpl' @ [67:32] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
 
 'constFalse' @ [67:44] ==> public final fun constFalse(startOffset: Int, endOffset: Int, type: KotlinType): IrConstImpl<Boolean> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[SimpleFunctionDescriptorImpl]
 

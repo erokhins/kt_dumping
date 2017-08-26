@@ -12,8 +12,6 @@
 
 'dataContainerCacheVersion' @ [34:48] ==> public fun dataContainerCacheVersion(dataRoot: File): CacheVersion defined in org.jetbrains.kotlin.incremental[DeserializedSimpleFunctionDescriptor]
 
-'KotlinDataContainerTarget' @ [34:74] ==> public object KotlinDataContainerTarget : BuildTarget<BuildRootDescriptor> defined in org.jetbrains.kotlin.jps.incremental in file KotlinDataContainerTargetType.kt[FakeCallableDescriptorForObject]
-
 'dataRoot' @ [34:100] ==> private final val BuildTarget<*>.dataRoot: File defined in org.jetbrains.kotlin.jps.incremental.CacheVersionProvider[PropertyDescriptorImpl]
 
 'arrayListOf' @ [37:24] ==> @SinceKotlin @InlineOnly public inline fun <T> arrayListOf(): ArrayList<CacheVersion> /* = ArrayList<CacheVersion> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -25,8 +23,6 @@ Inferred types:
 'add' @ [38:18] ==> public open fun add(element: CacheVersion): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
 'dataContainerCacheVersion' @ [38:22] ==> public fun dataContainerCacheVersion(dataRoot: File): CacheVersion defined in org.jetbrains.kotlin.incremental[DeserializedSimpleFunctionDescriptor]
-
-'KotlinDataContainerTarget' @ [38:48] ==> public object KotlinDataContainerTarget : BuildTarget<BuildRootDescriptor> defined in org.jetbrains.kotlin.jps.incremental in file KotlinDataContainerTargetType.kt[FakeCallableDescriptorForObject]
 
 'dataRoot' @ [38:74] ==> private final val BuildTarget<*>.dataRoot: File defined in org.jetbrains.kotlin.jps.incremental.CacheVersionProvider[PropertyDescriptorImpl]
 

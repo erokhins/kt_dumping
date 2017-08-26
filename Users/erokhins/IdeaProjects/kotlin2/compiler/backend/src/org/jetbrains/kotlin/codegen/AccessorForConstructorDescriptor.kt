@@ -52,8 +52,6 @@
 
 'returnType' @ [64:34] ==> public final val ClassConstructorDescriptor.returnType: KotlinType[MyPropertyDescriptor]
 
-'Modality' @ [65:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [65:26] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'LOCAL' @ [66:30] ==> @NotNull public final val LOCAL: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]

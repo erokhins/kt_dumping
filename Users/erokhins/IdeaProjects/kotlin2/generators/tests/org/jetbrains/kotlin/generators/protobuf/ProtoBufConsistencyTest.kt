@@ -19,11 +19,11 @@ Inferred types:
 
 'java' @ [34:37] ==> public val <T> KClass<out ProtoBufConsistencyTest>.java: Class<out ProtoBufConsistencyTest> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ProtoBufConsistencyTest
+    <T> -> Captured(out ProtoBufConsistencyTest)
 
 'classLoader' @ [34:42] ==> public final val <T : (Any..Any?)> Class<out ProtoBufConsistencyTest>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ProtoBufConsistencyTest
+    <T : (Any..Any?)> -> Captured(out ProtoBufConsistencyTest)
 
 'loadClass' @ [34:54] ==> public open fun loadClass(p0: (String..String?)): (Class<*>..Class<*>?) defined in java.lang.ClassLoader[JavaMethodDescriptor]
 
@@ -33,11 +33,11 @@ Inferred types:
 
 'classFqName' @ [34:105] ==> val classFqName: String defined in org.jetbrains.kotlin.generators.protobuf.ProtoBufConsistencyTest.testExtensionNumbersDoNotIntersect[LocalVariableDescriptor]
 
-'klass' @ [35:27] ==> val klass: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.generators.protobuf.ProtoBufConsistencyTest.testExtensionNumbersDoNotIntersect[LocalVariableDescriptor]
+'klass' @ [35:27] ==> val klass: Class<*> defined in org.jetbrains.kotlin.generators.protobuf.ProtoBufConsistencyTest.testExtensionNumbersDoNotIntersect[LocalVariableDescriptor]
 
 'declaredFields' @ [35:33] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'isStatic' @ [36:30] ==> public open fun isStatic(p0: Int): Boolean defined in java.lang.reflect.Modifier[JavaMethodDescriptor]
 
@@ -48,11 +48,6 @@ Inferred types:
 'field' @ [36:59] ==> val field: (Field..Field?) defined in org.jetbrains.kotlin.generators.protobuf.ProtoBufConsistencyTest.testExtensionNumbersDoNotIntersect[LocalVariableDescriptor]
 
 'type' @ [36:65] ==> public final val Field.type: (Class<*>..Class<*>?)[MyPropertyDescriptor]
-
-'GeneratedExtension' @ [36:73] ==> public/*package*/ constructor GeneratedExtension<ContainingType : (Message..Message?), Type : (Any..Any?)>(p0: (GeneratedMessage.ExtensionDescriptorRetriever..GeneratedMessage.ExtensionDescriptorRetriever?), p1: raw (Class<(Any..Any?)>..Class<*>?), p2: (Message..Message?), p3: (Extension.ExtensionType..Extension.ExtensionType?)) defined in org.jetbrains.kotlin.protobuf.GeneratedMessage.GeneratedExtension[JavaClassConstructorDescriptor]
-Inferred types:
-    <ContainingType : (Message..Message?)> -> (org.jetbrains.kotlin.protobuf.Message..org.jetbrains.kotlin.protobuf.Message?)
-    <Type : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'java' @ [36:99] ==> public val <T> KClass<GeneratedMessage.GeneratedExtension<*, *>>.java: Class<GeneratedMessage.GeneratedExtension<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -76,8 +71,8 @@ Inferred types:
 
 'descriptor' @ [41:38] ==> public final val <ContainingType : (Message..Message?), Type : (Any..Any?)> GeneratedMessage.GeneratedExtension<out (Message..Message?), out (Any..Any?)>.descriptor: (Descriptors.FieldDescriptor..Descriptors.FieldDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <ContainingType : (Message..Message?)> -> (org.jetbrains.kotlin.protobuf.Message..org.jetbrains.kotlin.protobuf.Message?)
-    <Type : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <ContainingType : (Message..Message?)> -> Captured(*)
+    <Type : (Any..Any?)> -> Captured(*)
 
 'extensions' @ [42:21] ==> val extensions: (LinkedHashMultimap<(Key..Key?), (Descriptors.FieldDescriptor..Descriptors.FieldDescriptor?)>..LinkedHashMultimap<(Key..Key?), (Descriptors.FieldDescriptor..Descriptors.FieldDescriptor?)>?) defined in org.jetbrains.kotlin.generators.protobuf.ProtoBufConsistencyTest.testExtensionNumbersDoNotIntersect[LocalVariableDescriptor]
 
@@ -121,7 +116,7 @@ Inferred types:
 
 'simpleName' @ [53:33] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'key' @ [54:10] ==> val key: (Key..Key?) defined in org.jetbrains.kotlin.generators.protobuf.ProtoBufConsistencyTest.testExtensionNumbersDoNotIntersect[LocalVariableDescriptor]
 

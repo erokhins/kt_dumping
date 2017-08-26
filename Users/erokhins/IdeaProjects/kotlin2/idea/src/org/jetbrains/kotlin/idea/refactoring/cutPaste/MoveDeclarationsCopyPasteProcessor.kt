@@ -119,9 +119,9 @@ Inferred types:
 
 'parent' @ [66:40] ==> val parent: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsCopyPasteProcessor.collectTransferableData[LocalVariableDescriptor]
 
-'?:' @ [68:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String): String[SimpleFunctionDescriptorImpl]
+'?:' @ [68:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String?): String?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> String?
 
 'parent' @ [68:32] ==> val parent: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsCopyPasteProcessor.collectTransferableData[LocalVariableDescriptor]
 
@@ -207,8 +207,6 @@ Inferred types:
 
 'isDataFlavorSupported' @ [81:25] ==> public abstract fun isDataFlavorSupported(p0: (DataFlavor..DataFlavor?)): Boolean defined in java.awt.datatransfer.Transferable[JavaMethodDescriptor]
 
-'MoveDeclarationsTransferableData' @ [81:47] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsTransferableData[FakeCallableDescriptorForObject]
-
 'DATA_FLAVOR' @ [81:80] ==> public final val DATA_FLAVOR: DataFlavor defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsTransferableData.Companion[PropertyDescriptorImpl]
 
 'listOf' @ [82:24] ==> public fun <T> listOf(element: MoveDeclarationsTransferableData): List<MoveDeclarationsTransferableData> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -218,8 +216,6 @@ Inferred types:
 'content' @ [82:31] ==> value-parameter content: Transferable defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsCopyPasteProcessor.extractTransferableData[ValueParameterDescriptorImpl]
 
 'getTransferData' @ [82:39] ==> public abstract fun getTransferData(p0: (DataFlavor..DataFlavor?)): (Any..Any?) defined in java.awt.datatransfer.Transferable[JavaMethodDescriptor]
-
-'MoveDeclarationsTransferableData' @ [82:55] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsTransferableData[FakeCallableDescriptorForObject]
 
 'DATA_FLAVOR' @ [82:88] ==> public final val DATA_FLAVOR: DataFlavor defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsTransferableData.Companion[PropertyDescriptorImpl]
 
@@ -259,9 +255,7 @@ Inferred types:
 
 'putUserData' @ [104:24] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(MoveDeclarationsEditorCookie..MoveDeclarationsEditorCookie?)>, @Nullable p1: MoveDeclarationsEditorCookie?): Unit defined in com.intellij.openapi.editor.Editor[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MoveDeclarationsEditorCookie
-
-'MoveDeclarationsEditorCookie' @ [104:36] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie..org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie?)
 
 'KEY' @ [104:65] ==> public final val KEY: Key<MoveDeclarationsEditorCookie> defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsEditorCookie.Companion[PropertyDescriptorImpl]
 
@@ -286,4 +280,6 @@ Inferred types:
 'getApplication' @ [113:32] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 
 'invokeLater' @ [113:49] ==> public final fun invokeLater(@NotNull p0: () -> Unit): Unit defined in com.intellij.openapi.application.Application[MyFunctionDescriptor]
+
+'putCookie' @ [113:63] ==> local final fun putCookie(): Unit defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsCopyPasteProcessor.processTransferableData[SimpleFunctionDescriptorImpl]
 

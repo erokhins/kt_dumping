@@ -15,7 +15,7 @@ Inferred types:
 
 'INDEXER' @ [34:33] ==> private final val INDEXER: DataIndexer<JvmMetadataVersion, Void, FileContent> defined in org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex[PropertyDescriptorImpl]
 
-'InputFilter' @ [36:52] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SimpleFunctionDescriptorImpl]
+'InputFilter' @ [36:52] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SamConstructorDescriptorImpl]
 
 'file' @ [36:74] ==> value-parameter file: VirtualFile defined in org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex.getInputFilter.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -137,21 +137,21 @@ Inferred types:
 
 'INVALID_VERSION' @ [82:42] ==> @field:JvmField public final val INVALID_VERSION: JvmMetadataVersion defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion.Companion[DeserializedPropertyDescriptor]
 
-'if (version != null) mapOf(version!! to null) else mapOf()' @ [85:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Map<JvmMetadataVersion, Void?>, elseBranch: Map<JvmMetadataVersion, Void?>): Map<JvmMetadataVersion, Void?>[SimpleFunctionDescriptorImpl]
+'if (version != null) mapOf(version!! to null) else mapOf()' @ [85:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (MutableMap<(JvmMetadataVersion..JvmMetadataVersion?), (Void..Void?)>..Map<(JvmMetadataVersion..JvmMetadataVersion?), (Void..Void?)>), elseBranch: (MutableMap<(JvmMetadataVersion..JvmMetadataVersion?), (Void..Void?)>..Map<(JvmMetadataVersion..JvmMetadataVersion?), (Void..Void?)>)): (MutableMap<(JvmMetadataVersion..JvmMetadataVersion?), (Void..Void?)>..Map<(JvmMetadataVersion..JvmMetadataVersion?), (Void..Void?)>)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Map<JvmMetadataVersion, Void?>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.MutableMap<(org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion..org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion?), (java.lang.Void..java.lang.Void?)>..kotlin.collections.Map<(org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion..org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion?), (java.lang.Void..java.lang.Void?)>)
 
 'version' @ [85:13] ==> var version: JvmMetadataVersion? defined in org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex.INDEXER.<anonymous>[LocalVariableDescriptor]
 
-'mapOf' @ [85:30] ==> public fun <K, V> mapOf(pair: Pair<JvmMetadataVersion, Nothing?>): Map<JvmMetadataVersion, Nothing?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [85:30] ==> public fun <K, V> mapOf(pair: Pair<(JvmMetadataVersion..JvmMetadataVersion?), Nothing?>): Map<(JvmMetadataVersion..JvmMetadataVersion?), Nothing?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> JvmMetadataVersion
+    <K> -> (org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion..org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion?)
     <V> -> Nothing?
 
 'version' @ [85:36] ==> var version: JvmMetadataVersion? defined in org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex.INDEXER.<anonymous>[LocalVariableDescriptor]
 
-'mapOf' @ [85:60] ==> @InlineOnly public inline fun <K, V> mapOf(): Map<JvmMetadataVersion, Void> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [85:60] ==> @InlineOnly public inline fun <K, V> mapOf(): Map<(JvmMetadataVersion..JvmMetadataVersion?), (Void..Void?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> JvmMetadataVersion
-    <V> -> Void
+    <K> -> (org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion..org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion?)
+    <V> -> (java.lang.Void..java.lang.Void?)
 

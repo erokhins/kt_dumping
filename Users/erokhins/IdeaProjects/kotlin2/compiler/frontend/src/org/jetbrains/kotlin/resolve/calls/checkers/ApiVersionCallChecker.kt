@@ -4,7 +4,7 @@
 
 'resultingDescriptor' @ [30:28] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'context' @ [30:49] ==> value-parameter context: CallCheckerContext defined in org.jetbrains.kotlin.resolve.calls.checkers.ApiVersionCallChecker.check[ValueParameterDescriptorImpl]
 
@@ -14,7 +14,7 @@ Inferred types:
 
 'targetDescriptor' @ [37:26] ==> value-parameter targetDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.calls.checkers.ApiVersionCallChecker.check[ValueParameterDescriptorImpl]
 
-'checkSinceKotlinVersionAccessibility' @ [37:43] ==> internal fun DeclarationDescriptor.checkSinceKotlinVersionAccessibility(languageVersionSettings: LanguageVersionSettings, actionIfInaccessible: ((ApiVersion) -> Unit)? = ...): Boolean defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'checkSinceKotlinVersionAccessibility' @ [37:43] ==> internal fun DeclarationDescriptor.checkSinceKotlinVersionAccessibility(languageVersionSettings: LanguageVersionSettings, actionIfInaccessible: ((ApiVersion) -> Unit)? = ...): Boolean defined in org.jetbrains.kotlin.resolve in file sinceKotlinUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [37:80] ==> value-parameter context: CallCheckerContext defined in org.jetbrains.kotlin.resolve.calls.checkers.ApiVersionCallChecker.check[ValueParameterDescriptorImpl]
 

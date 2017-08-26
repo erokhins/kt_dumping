@@ -12,8 +12,6 @@ Inferred types:
 
 'Storage' @ [30:27] ==> public constructor Storage(value: String = ..., file: String = ..., deprecated: Boolean = ..., roamingType: RoamingType = ..., storageClass: KClass<out (StateStorage..StateStorage?)> = ..., stateSplitter: KClass<out (StateSplitter..StateSplitter?)> = ..., scheme: StorageScheme = ..., id: String = ..., exclusive: Boolean = ...) defined in com.intellij.openapi.components.Storage[JavaClassConstructorDescriptor]
 
-'BaseKotlinCompilerSettings' @ [30:42] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.BaseKotlinCompilerSettings[FakeCallableDescriptorForObject]
-
 'KOTLIN_COMPILER_SETTINGS_PATH' @ [30:69] ==> public const final val KOTLIN_COMPILER_SETTINGS_PATH: String defined in org.jetbrains.kotlin.idea.compiler.configuration.BaseKotlinCompilerSettings.Companion[PropertyDescriptorImpl]
 
 'DIRECTORY_BASED' @ [31:58] ==> enum entry DIRECTORY_BASED defined in com.intellij.openapi.components.StorageScheme[FakeCallableDescriptorForObject]
@@ -34,7 +32,7 @@ Inferred types:
 
 'getState' @ [40:22] ==> public open fun getState(): Element defined in org.jetbrains.kotlin.idea.compiler.configuration.BaseKotlinCompilerSettings[SimpleFunctionDescriptorImpl]
 
-'apply' @ [40:33] ==> @InlineOnly public inline fun <T> Element.apply(block: Element.() -> Unit): Element defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [40:33] ==> @InlineOnly public inline fun <T> Element.apply(block: (Element).() -> Unit): Element defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Element
 

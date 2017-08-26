@@ -31,11 +31,7 @@ Inferred types:
 
 'ConstantExpressionEvaluator' @ [38:25] ==> public constructor ConstantExpressionEvaluator(builtIns: KotlinBuiltIns, languageVersionSettings: LanguageVersionSettings) defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[DeserializedClassConstructorDescriptor]
 
-'DefaultBuiltIns' @ [38:53] ==> public companion object defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns[FakeCallableDescriptorForObject]
-
 'Instance' @ [38:69] ==> @JvmStatic public final val Instance: DefaultBuiltIns defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns.Companion[DeserializedPropertyDescriptor]
-
-'LanguageVersionSettingsImpl' @ [38:79] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [38:107] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 
@@ -67,7 +63,7 @@ Inferred types:
 
 'value' @ [43:28] ==> public open val value: Any? defined in org.jetbrains.kotlin.resolve.constants.ConstantValue[DeserializedPropertyDescriptor]
 
-'tryCreateCallableMappingFromNamedArgs' @ [46:9] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
+'tryCreateCallableMappingFromNamedArgs' @ [46:9] ==> public fun tryCreateCallableMappingFromNamedArgs(callable: KCallable<*>, args: List<Pair<String?, Any?>>): Map<KParameter, Any?>? defined in org.jetbrains.kotlin.script in file reflectionUtil.kt[SimpleFunctionDescriptorImpl]
 
 'targetClass' @ [46:47] ==> value-parameter targetClass: KClass<out Annotation> defined in org.jetbrains.kotlin.script.constructAnnotation[ValueParameterDescriptorImpl]
 
@@ -91,7 +87,7 @@ Inferred types:
 
 'primaryConstructor' @ [50:28] ==> @SinceKotlin public val <T : Any> KClass<out Annotation>.primaryConstructor: KFunction<Annotation>? defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> Annotation
+    <T : Any> -> Captured(out Annotation)
 
 'callBy' @ [50:49] ==> public abstract fun callBy(args: Map<KParameter, Any?>): Annotation defined in kotlin.reflect.KFunction[DeserializedSimpleFunctionDescriptor]
 

@@ -4,7 +4,7 @@
 
 'emptyList' @ [42:97] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TypeInfo' @ [45:75] ==> public constructor TypeInfo(variance: Variance) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo[ClassConstructorDescriptorImpl]
 
@@ -24,7 +24,7 @@ Inferred types:
 
 'expression' @ [51:17] ==> public final val expression: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo.ByExpression[PropertyDescriptorImpl]
 
-'guessTypes' @ [51:28] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [51:28] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'builder' @ [52:35] ==> value-parameter builder: CallableBuilder defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo.ByExpression.getPossibleTypes[ValueParameterDescriptorImpl]
 
@@ -243,7 +243,7 @@ Inferred types:
 
 'singletonList' @ [116:32] ==> public open fun <T : (Any..Any?)> singletonList(p0: (SimpleType..SimpleType?)): (MutableList<(SimpleType..SimpleType?)>..List<(SimpleType..SimpleType?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SimpleType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.SimpleType..org.jetbrains.kotlin.types.SimpleType?)
 
 'callableBuilder' @ [116:46] ==> value-parameter callableBuilder: CallableBuilder defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo.getPossibleSupertypes[ValueParameterDescriptorImpl]
 
@@ -367,15 +367,15 @@ Inferred types:
 
 'emptyList' @ [176:70] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KtElement..KtElement?)>..List<(KtElement..KtElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtElement
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'emptyList' @ [177:83] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ParameterInfo..ParameterInfo?)>..List<(ParameterInfo..ParameterInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ParameterInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterInfo..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterInfo?)
 
 'emptyList' @ [178:69] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeInfo..TypeInfo?)>..List<(TypeInfo..TypeInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo?)
 
 'CallableInfo' @ [182:5] ==> public constructor CallableInfo(name: String, receiverTypeInfo: TypeInfo, returnTypeInfo: TypeInfo, possibleContainers: List<KtElement>, typeParameterInfos: List<TypeInfo>, isAbstract: Boolean = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableInfo[ClassConstructorDescriptorImpl]
 
@@ -427,7 +427,7 @@ Inferred types:
 
 'emptyList' @ [199:86] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KtElement..KtElement?)>..List<(KtElement..KtElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtElement
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'classInfo' @ [199:99] ==> value-parameter classInfo: ClassInfo defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.PrimaryConstructorInfo.<init>[ValueParameterDescriptorImpl]
 
@@ -449,11 +449,11 @@ Inferred types:
 
 'emptyList' @ [210:65] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KtElement..KtElement?)>..List<(KtElement..KtElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtElement
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'emptyList' @ [210:90] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeInfo..TypeInfo?)>..List<(TypeInfo..TypeInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo?)
 
 'SECONDARY_CONSTRUCTOR' @ [211:58] ==> enum entry SECONDARY_CONSTRUCTOR defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableKind[FakeCallableDescriptorForObject]
 
@@ -461,11 +461,11 @@ Inferred types:
 
 'emptyList' @ [220:70] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KtElement..KtElement?)>..List<(KtElement..KtElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtElement
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'emptyList' @ [221:69] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeInfo..TypeInfo?)>..List<(TypeInfo..TypeInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo?)
 
 'CallableInfo' @ [224:5] ==> public constructor CallableInfo(name: String, receiverTypeInfo: TypeInfo, returnTypeInfo: TypeInfo, possibleContainers: List<KtElement>, typeParameterInfos: List<TypeInfo>, isAbstract: Boolean = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.CallableInfo[ClassConstructorDescriptorImpl]
 
@@ -485,7 +485,7 @@ Inferred types:
 
 'emptyList' @ [226:74] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ParameterInfo..ParameterInfo?)>..List<(ParameterInfo..ParameterInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ParameterInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterInfo..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterInfo?)
 
 'PropertyInfo' @ [228:111] ==> public constructor PropertyInfo(name: String, receiverTypeInfo: TypeInfo, returnTypeInfo: TypeInfo, writable: Boolean, possibleContainers: List<KtElement> = ..., typeParameterInfos: List<TypeInfo> = ..., isAbstract: Boolean = ..., isLateinitPreferred: Boolean = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.PropertyInfo[ClassConstructorDescriptorImpl]
 

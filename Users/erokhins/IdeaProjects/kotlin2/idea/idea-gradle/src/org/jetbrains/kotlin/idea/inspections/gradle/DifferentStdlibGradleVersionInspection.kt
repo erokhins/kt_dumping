@@ -64,7 +64,7 @@ Inferred types:
 
 'libraryIds' @ [62:76] ==> value-parameter libraryIds: List<String> defined in org.jetbrains.kotlin.idea.inspections.gradle.DifferentStdlibGradleVersionInspection.MyVisitor.<init>[ValueParameterDescriptorImpl]
 
-'getResolvedKotlinGradleVersion' @ [64:39] ==> public fun getResolvedKotlinGradleVersion(file: PsiFile): String? defined in org.jetbrains.kotlin.idea.inspections.gradle[SimpleFunctionDescriptorImpl]
+'getResolvedKotlinGradleVersion' @ [64:39] ==> public fun getResolvedKotlinGradleVersion(file: PsiFile): String? defined in org.jetbrains.kotlin.idea.inspections.gradle in file KotlinGradleInspectionVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'stdlibStatement' @ [64:70] ==> value-parameter stdlibStatement: GrCallExpression defined in org.jetbrains.kotlin.idea.inspections.gradle.DifferentStdlibGradleVersionInspection.MyVisitor.onFound[ValueParameterDescriptorImpl]
 
@@ -158,7 +158,7 @@ Inferred types:
 
 'statement' @ [97:32] ==> val statement: GrCallExpression defined in org.jetbrains.kotlin.idea.inspections.gradle.DifferentStdlibGradleVersionInspection.Companion.findLibraryStatement[LocalVariableDescriptor]
 
-'findGradleProjectStructure' @ [106:40] ==> public fun findGradleProjectStructure(file: PsiFile): DataNode<ProjectData>? defined in org.jetbrains.kotlin.idea.inspections.gradle[SimpleFunctionDescriptorImpl]
+'findGradleProjectStructure' @ [106:40] ==> public fun findGradleProjectStructure(file: PsiFile): DataNode<ProjectData>? defined in org.jetbrains.kotlin.idea.inspections.gradle in file KotlinGradleInspectionVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [106:67] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.inspections.gradle.DifferentStdlibGradleVersionInspection.Companion.getResolvedKotlinStdlibVersion[ValueParameterDescriptorImpl]
 
@@ -206,7 +206,7 @@ Inferred types:
 
 'node' @ [110:28] ==> public final val node: DataNode<*> defined in org.jetbrains.kotlin.idea.inspections.gradle.NodeWithData[PropertyDescriptorImpl]
 
-'getResolvedKotlinStdlibVersionByModuleData' @ [110:33] ==> internal fun DataNode<*>.getResolvedKotlinStdlibVersionByModuleData(libraryIds: List<String>): String? defined in org.jetbrains.kotlin.idea.inspections.gradle[SimpleFunctionDescriptorImpl]
+'getResolvedKotlinStdlibVersionByModuleData' @ [110:33] ==> internal fun DataNode<*>.getResolvedKotlinStdlibVersionByModuleData(libraryIds: List<String>): String? defined in org.jetbrains.kotlin.idea.inspections.gradle in file DifferentStdlibGradleVersionInspection.kt[SimpleFunctionDescriptorImpl]
 
 'libraryIds' @ [110:76] ==> value-parameter libraryIds: List<String> defined in org.jetbrains.kotlin.idea.inspections.gradle.DifferentStdlibGradleVersionInspection.Companion.getResolvedKotlinStdlibVersion[ValueParameterDescriptorImpl]
 

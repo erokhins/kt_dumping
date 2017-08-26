@@ -50,3 +50,5 @@ Inferred types:
 Inferred types:
     <reified T : PsiElement> -> KtAnnotatedExpression
 
+'AddNewLineAfterAnnotationsFix' @ [41:66] ==> public constructor AddNewLineAfterAnnotationsFix(element: KtAnnotatedExpression) defined in org.jetbrains.kotlin.idea.quickfix.AddNewLineAfterAnnotationsFix[ClassConstructorDescriptorImpl]
+

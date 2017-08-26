@@ -14,7 +14,7 @@ Inferred types:
 
 'getStubOrPsiChild' @ [36:48] ==> @Nullable public open fun <Psi : (PsiElement..PsiElement?)> getStubOrPsiChild(@NotNull p0: IStubElementType<out raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?), (KtSuperTypeList..KtSuperTypeList?)>): KtSuperTypeList? defined in org.jetbrains.kotlin.psi.KtClassOrObject[JavaMethodDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> KtSuperTypeList
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtSuperTypeList..org.jetbrains.kotlin.psi.KtSuperTypeList?)
 
 'SUPER_TYPE_LIST' @ [36:85] ==> public final val SUPER_TYPE_LIST: (KtPlaceHolderStubElementType<(KtSuperTypeList..KtSuperTypeList?)>..KtPlaceHolderStubElementType<(KtSuperTypeList..KtSuperTypeList?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -126,8 +126,6 @@ Inferred types:
 
 'size' @ [59:35] ==> public abstract val size: Int defined in kotlin.collections.MutableList[DeserializedPropertyDescriptor]
 
-'EditCommaSeparatedListHelper' @ [60:13] ==> public object EditCommaSeparatedListHelper defined in org.jetbrains.kotlin.psi in file EditCommaSeparatedListHelper.kt[FakeCallableDescriptorForObject]
-
 'removeItem' @ [60:42] ==> public final fun <TItem : KtElement> removeItem(item: KtElement): Unit defined in org.jetbrains.kotlin.psi.EditCommaSeparatedListHelper[SimpleFunctionDescriptorImpl]
 Inferred types:
     <TItem : KtElement> -> KtElement
@@ -156,7 +154,7 @@ Inferred types:
 
 'getStubOrPsiChild' @ [69:35] ==> @Nullable public open fun <Psi : (PsiElement..PsiElement?)> getStubOrPsiChild(@NotNull p0: IStubElementType<out raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?), (KtClassBody..KtClassBody?)>): KtClassBody? defined in org.jetbrains.kotlin.psi.KtClassOrObject[JavaMethodDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> KtClassBody
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassBody..org.jetbrains.kotlin.psi.KtClassBody?)
 
 'CLASS_BODY' @ [69:72] ==> public final val CLASS_BODY: (KtPlaceHolderStubElementType<(KtClassBody..KtClassBody?)>..KtPlaceHolderStubElementType<(KtClassBody..KtClassBody?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -256,7 +254,7 @@ Inferred types:
 
 'getStubOrPsiChild' @ [95:67] ==> @Nullable public open fun <Psi : (PsiElement..PsiElement?)> getStubOrPsiChild(@NotNull p0: IStubElementType<out raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?), (KtPrimaryConstructor..KtPrimaryConstructor?)>): KtPrimaryConstructor? defined in org.jetbrains.kotlin.psi.KtClassOrObject[JavaMethodDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> KtPrimaryConstructor
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtPrimaryConstructor..org.jetbrains.kotlin.psi.KtPrimaryConstructor?)
 
 'PRIMARY_CONSTRUCTOR' @ [95:104] ==> public final val PRIMARY_CONSTRUCTOR: (KtPlaceHolderStubElementType<(KtPrimaryConstructor..KtPrimaryConstructor?)>..KtPlaceHolderStubElementType<(KtPrimaryConstructor..KtPrimaryConstructor?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 

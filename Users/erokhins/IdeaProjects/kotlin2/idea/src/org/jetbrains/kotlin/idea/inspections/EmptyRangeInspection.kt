@@ -6,7 +6,7 @@
 
 'expression' @ [34:29] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.inspections.EmptyRangeInspection.visitRangeToExpression[ValueParameterDescriptorImpl]
 
-'getArguments' @ [34:40] ==> internal fun KtExpression.getArguments(): Pair<KtExpression?, KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'getArguments' @ [34:40] ==> internal fun KtExpression.getArguments(): Pair<KtExpression?, KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions in file ReplaceUntilWithRangeToIntention.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [36:23] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.inspections.EmptyRangeInspection.visitRangeToExpression[ValueParameterDescriptorImpl]
 
@@ -52,7 +52,7 @@
 
 'element' @ [56:33] ==> val element: KtExpression defined in org.jetbrains.kotlin.idea.inspections.EmptyRangeInspection.ReplaceWithDownToFix.applyFix[LocalVariableDescriptor]
 
-'getArguments' @ [56:41] ==> internal fun KtExpression.getArguments(): Pair<KtExpression?, KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'getArguments' @ [56:41] ==> internal fun KtExpression.getArguments(): Pair<KtExpression?, KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions in file ReplaceUntilWithRangeToIntention.kt[SimpleFunctionDescriptorImpl]
 
 'left' @ [57:17] ==> val left: KtExpression? defined in org.jetbrains.kotlin.idea.inspections.EmptyRangeInspection.ReplaceWithDownToFix.applyFix[LocalVariableDescriptor]
 

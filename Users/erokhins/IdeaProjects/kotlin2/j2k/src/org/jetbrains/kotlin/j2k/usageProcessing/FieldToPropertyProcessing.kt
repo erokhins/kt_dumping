@@ -190,8 +190,6 @@ Inferred types:
 
 'ThisExpression' @ [76:41] ==> public constructor ThisExpression(identifier: Identifier) defined in org.jetbrains.kotlin.j2k.ast.ThisExpression[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [76:56] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'Empty' @ [76:67] ==> public final val Empty: Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[PropertyDescriptorImpl]
 
 'assignNoPrototype' @ [76:74] ==> public fun <TElement : Element> ThisExpression.assignNoPrototype(): ThisExpression defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]

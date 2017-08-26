@@ -49,11 +49,11 @@ Inferred types:
 
 'absolutePath' @ [57:71] ==> public final val File.absolutePath: (String..String?)[MyPropertyDescriptor]
 
-'distinctStringsDigest' @ [57:86] ==> public fun Iterable<String>.distinctStringsDigest(): ByteArray defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'distinctStringsDigest' @ [57:86] ==> public fun Iterable<String>.distinctStringsDigest(): ByteArray defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
 'toHexString' @ [57:110] ==> public fun ByteArray.toHexString(): String defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[SimpleFunctionDescriptorImpl]
 
-'makePortFromRunFilenameExtractor' @ [58:25] ==> public fun makePortFromRunFilenameExtractor(digest: String): (String) -> Int? defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'makePortFromRunFilenameExtractor' @ [58:25] ==> public fun makePortFromRunFilenameExtractor(digest: String): (String) -> Int? defined in org.jetbrains.kotlin.daemon.common in file ClientUtils.kt[SimpleFunctionDescriptorImpl]
 
 'classPathDigest' @ [58:58] ==> val classPathDigest: String defined in org.jetbrains.kotlin.daemon.common.walkDaemons[LocalVariableDescriptor]
 
@@ -128,7 +128,7 @@ Inferred types:
 
 'relativeAge' @ [65:82] ==> val relativeAge: Long defined in org.jetbrains.kotlin.daemon.common.walkDaemons.<anonymous>[LocalVariableDescriptor]
 
-'tryConnectToDaemon' @ [66:30] ==> private inline fun tryConnectToDaemon(port: Int, report: (DaemonReportCategory, String) -> Unit): CompileService? defined in org.jetbrains.kotlin.daemon.common[SimpleFunctionDescriptorImpl]
+'tryConnectToDaemon' @ [66:30] ==> private inline fun tryConnectToDaemon(port: Int, report: (DaemonReportCategory, String) -> Unit): CompileService? defined in org.jetbrains.kotlin.daemon.common in file ClientUtils.kt[SimpleFunctionDescriptorImpl]
 
 'port' @ [66:49] ==> val port: Int? defined in org.jetbrains.kotlin.daemon.common.walkDaemons.<anonymous>[LocalVariableDescriptor]
 
@@ -215,13 +215,9 @@ Inferred types:
 
 'getRegistry' @ [92:37] ==> public open fun getRegistry(p0: (String..String?), p1: Int, p2: (RMIClientSocketFactory..RMIClientSocketFactory?)): (Registry..Registry?) defined in java.rmi.registry.LocateRegistry[JavaMethodDescriptor]
 
-'LoopbackNetworkInterface' @ [92:49] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common in file NetworkUtils.kt[FakeCallableDescriptorForObject]
-
 'loopbackInetAddressName' @ [92:74] ==> public final val loopbackInetAddressName: String defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[PropertyDescriptorImpl]
 
 'port' @ [92:99] ==> value-parameter port: Int defined in org.jetbrains.kotlin.daemon.common.tryConnectToDaemon[ValueParameterDescriptorImpl]
-
-'LoopbackNetworkInterface' @ [92:105] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common in file NetworkUtils.kt[FakeCallableDescriptorForObject]
 
 'clientLoopbackSocketFactory' @ [92:130] ==> public final val clientLoopbackSocketFactory: LoopbackNetworkInterface.ClientLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[PropertyDescriptorImpl]
 
@@ -253,11 +249,11 @@ Inferred types:
 
 'java' @ [97:133] ==> public val <T> KClass<out Remote>.java: Class<out Remote> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Remote
+    <T> -> Captured(out Remote)
 
 'name' @ [97:138] ==> public final val <T : (Any..Any?)> Class<out Remote>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Remote
+    <T : (Any..Any?)> -> Captured(out Remote)
 
 'invoke' @ [101:9] ==> public abstract operator fun invoke(p1: DaemonReportCategory, p2: String): Unit defined in kotlin.Function2[FunctionInvokeDescriptor]
 

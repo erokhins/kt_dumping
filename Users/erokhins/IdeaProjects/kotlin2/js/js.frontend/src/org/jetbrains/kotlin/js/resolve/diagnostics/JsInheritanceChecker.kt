@@ -99,8 +99,6 @@ Inferred types:
 
 'modality' @ [62:47] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [62:59] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [62:68] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'function' @ [64:36] ==> value-parameter function: FunctionDescriptor defined in org.jetbrains.kotlin.js.resolve.diagnostics.JsInheritanceChecker.isOverridingExternalWithOptionalParams[ValueParameterDescriptorImpl]
@@ -132,8 +130,6 @@ Inferred types:
 'unsubstitutedMemberScope' @ [72:27] ==> public final val ClassDescriptor.unsubstitutedMemberScope: MemberScope[MyPropertyDescriptor]
 
 'getContributedDescriptors' @ [72:52] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [72:78] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'CALLABLES' @ [72:99] ==> @field:JvmField public final val CALLABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 

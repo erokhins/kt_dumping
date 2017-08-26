@@ -61,13 +61,9 @@ Inferred types:
 
 'MemberChooserObjectBase' @ [88:13] ==> public constructor MemberChooserObjectBase(@Nullable p0: String?, @Nullable p1: Icon?) defined in com.intellij.codeInsight.generation.MemberChooserObjectBase[JavaClassConstructorDescriptor]
 
-'DescriptorMemberChooserObject' @ [88:37] ==> public companion object defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject[FakeCallableDescriptorForObject]
-
 'getText' @ [88:67] ==> public final fun getText(descriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.Companion[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [88:75] ==> value-parameter descriptor: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.Companion.WithoutDeclaration.<init>[ValueParameterDescriptorImpl]
-
-'DescriptorMemberChooserObject' @ [88:88] ==> public companion object defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject[FakeCallableDescriptorForObject]
 
 'getIcon' @ [88:118] ==> public final fun getIcon(declaration: PsiElement?, descriptor: DeclarationDescriptor): Icon? defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.Companion[SimpleFunctionDescriptorImpl]
 
@@ -79,13 +75,9 @@ Inferred types:
 
 'MemberChooserObjectBase' @ [92:24] ==> public constructor MemberChooserObjectBase(@Nullable p0: String?, @Nullable p1: Icon?) defined in com.intellij.codeInsight.generation.MemberChooserObjectBase[JavaClassConstructorDescriptor]
 
-'DescriptorMemberChooserObject' @ [92:48] ==> public companion object defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject[FakeCallableDescriptorForObject]
-
 'getText' @ [92:78] ==> public final fun getText(descriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.Companion[SimpleFunctionDescriptorImpl]
 
 'parentClassifier' @ [92:86] ==> val parentClassifier: ClassifierDescriptor defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.Companion.WithoutDeclaration.getParentNodeDelegate[LocalVariableDescriptor]
-
-'DescriptorMemberChooserObject' @ [92:105] ==> public companion object defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject[FakeCallableDescriptorForObject]
 
 'getIcon' @ [92:135] ==> public final fun getIcon(declaration: PsiElement?, descriptor: DeclarationDescriptor): Icon? defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.Companion[SimpleFunctionDescriptorImpl]
 
@@ -216,8 +208,6 @@ Inferred types:
 Inferred types:
     <T> -> DescriptorRendererModifier
 
-'DescriptorRendererModifier' @ [129:23] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
-
 'OVERRIDE' @ [129:50] ==> enum entry OVERRIDE defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
 'withDefinedIn' @ [130:5] ==> public abstract var withDefinedIn: Boolean defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptions[DeserializedPropertyDescriptor]
@@ -243,8 +233,6 @@ Inferred types:
 'copy' @ [139:20] ==> @NotNull public abstract fun copy(p0: (DeclarationDescriptor..DeclarationDescriptor?), p1: (Modality..Modality?), p2: (Visibility..Visibility?), p3: (CallableMemberDescriptor.Kind..CallableMemberDescriptor.Kind?), p4: Boolean): CallableMemberDescriptor defined in org.jetbrains.kotlin.descriptors.PropertyDescriptor[JavaMethodDescriptor]
 
 'containingDeclaration' @ [139:25] ==> public final val PropertyDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
-
-'Modality' @ [139:48] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [139:57] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -376,8 +364,6 @@ Inferred types:
 
 'bodyType' @ [182:20] ==> value-parameter bodyType: OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.generateFunction[ValueParameterDescriptorImpl]
 
-'OverrideMemberChooserObject' @ [182:32] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
-
 'NO_BODY' @ [182:69] ==> public object NO_BODY : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 
 'generateUnsupportedOrSuperCall' @ [183:26] ==> public fun generateUnsupportedOrSuperCall(project: Project, descriptor: CallableMemberDescriptor, bodyType: OverrideMemberChooserObject.BodyType): String defined in org.jetbrains.kotlin.idea.core.overrideImplement in file OverrideMemberChooserObject.kt[SimpleFunctionDescriptorImpl]
@@ -397,8 +383,6 @@ Inferred types:
 'returnsNotUnit' @ [184:20] ==> val returnsNotUnit: Boolean defined in org.jetbrains.kotlin.idea.core.overrideImplement.generateFunction[LocalVariableDescriptor]
 
 'bodyType' @ [184:38] ==> value-parameter bodyType: OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.generateFunction[ValueParameterDescriptorImpl]
-
-'OverrideMemberChooserObject' @ [184:50] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [184:87] ==> public object EMPTY : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 
@@ -453,8 +437,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Nothing
 
 'bodyType' @ [196:9] ==> value-parameter bodyType: OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.generateUnsupportedOrSuperCall[ValueParameterDescriptorImpl]
-
-'OverrideMemberChooserObject' @ [196:21] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [196:58] ==> public object EMPTY : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 
@@ -523,8 +505,6 @@ Inferred types:
 'append' @ [210:17] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
 'bodyType' @ [211:21] ==> value-parameter bodyType: OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.generateUnsupportedOrSuperCall[ValueParameterDescriptorImpl]
-
-'OverrideMemberChooserObject' @ [211:33] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
 
 'QUALIFIED_SUPER' @ [211:70] ==> public object QUALIFIED_SUPER : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 

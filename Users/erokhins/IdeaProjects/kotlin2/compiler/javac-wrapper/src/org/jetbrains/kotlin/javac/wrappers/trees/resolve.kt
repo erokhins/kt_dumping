@@ -3,10 +3,10 @@ Inferred types:
     <K> -> Tree
     <V> -> JavaClassifier?
 
-'with' @ [31:56] ==> @InlineOnly public inline fun <T, R> with(receiver: TreePath, block: TreePath.() -> JavaClassifier?): JavaClassifier? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [31:56] ==> @InlineOnly public inline fun <T, R> with(receiver: TreePath, block: TreePath.() -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TreePath
-    <R> -> JavaClassifier?
+    <R> -> Nothing
 
 'treePath' @ [31:61] ==> value-parameter treePath: TreePath defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.resolve[ValueParameterDescriptorImpl]
 
@@ -81,7 +81,7 @@ Inferred types:
 
 'it' @ [43:76] ==> value-parameter it: JavaClass defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.tryToGetClassifier.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'tryToResolveByFqName' @ [44:13] ==> public fun tryToResolveByFqName(name: String, javac: JavacWrapper): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'tryToResolveByFqName' @ [44:13] ==> public fun tryToResolveByFqName(name: String, javac: JavacWrapper): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [44:34] ==> val name: String defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.tryToGetClassifier[LocalVariableDescriptor]
 
@@ -124,16 +124,16 @@ Inferred types:
 
 'it' @ [46:82] ==> value-parameter it: JavaClass defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.tryToGetClassifier.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'tryToResolveInJavaLang' @ [47:13] ==> public fun tryToResolveInJavaLang(name: String, javac: JavacWrapper): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'tryToResolveInJavaLang' @ [47:13] ==> public fun tryToResolveInJavaLang(name: String, javac: JavacWrapper): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [47:36] ==> val name: String defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.tryToGetClassifier[LocalVariableDescriptor]
 
 'javac' @ [47:42] ==> private final val javac: JavacWrapper defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache[PropertyDescriptorImpl]
 
-'let' @ [47:50] ==> @InlineOnly public inline fun <T, R> JavaClass.let(block: (JavaClass) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [47:50] ==> @InlineOnly public inline fun <T, R> JavaClass.let(block: (JavaClass) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JavaClass
-    <R> -> Nothing?
+    <R> -> Nothing
 
 'it' @ [47:63] ==> value-parameter it: JavaClass defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.tryToGetClassifier.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -155,7 +155,7 @@ Inferred types:
 
 'javaClass' @ [58:17] ==> value-parameter javaClass: JavaClass defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.tryToResolveInner.<anonymous>[ValueParameterDescriptorImpl]
 
-'findInner' @ [58:27] ==> public fun JavaClass.findInner(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'findInner' @ [58:27] ==> public fun JavaClass.findInner(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [58:37] ==> value-parameter name: String defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.tryToResolveInner[ValueParameterDescriptorImpl]
 
@@ -170,10 +170,10 @@ Inferred types:
 
 'inner' @ [58:84] ==> value-parameter inner: JavaClass defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.tryToResolveInner.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [59:15] ==> @InlineOnly public inline fun <T, R> Unit?.let(block: (Unit?) -> JavaClass?): JavaClass? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [59:15] ==> @InlineOnly public inline fun <T, R> Unit?.let(block: (Unit?) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Unit?
-    <R> -> JavaClass?
+    <R> -> Nothing
 
 'filterIsInstance' @ [62:13] ==> public inline fun <reified R> Iterable<*>.filterIsInstance(): List<JCTree.JCClassDecl> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -304,7 +304,7 @@ Inferred types:
 Inferred types:
     <T> -> (com.sun.tools.javac.tree.JCTree.JCImport..com.sun.tools.javac.tree.JCTree.JCImport?)
 
-'find' @ [85:33] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'find' @ [85:33] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'FqName' @ [85:38] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
@@ -393,7 +393,7 @@ Inferred types:
     <T> -> Int
     <R> -> JavaClass?
 
-'find' @ [107:21] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'find' @ [107:21] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'FqName' @ [107:26] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
@@ -471,7 +471,7 @@ Inferred types:
 Inferred types:
     <T> -> (com.sun.tools.javac.tree.JCTree.JCImport..com.sun.tools.javac.tree.JCTree.JCImport?)
 
-'find' @ [122:29] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'find' @ [122:29] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'FqName' @ [122:34] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
@@ -526,6 +526,8 @@ Inferred types:
     <T> -> String
     <R> -> FqName
 
+'FqName' @ [129:101] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
+
 'javac' @ [130:18] ==> value-parameter javac: JavacWrapper defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.tryToResolveTypeImportOnDemand[ValueParameterDescriptorImpl]
 
 'findClass' @ [130:24] ==> public final fun findClass(fqName: FqName, scope: GlobalSearchScope = ...): JavaClass? defined in org.jetbrains.kotlin.javac.JavacWrapper[SimpleFunctionDescriptorImpl]
@@ -559,9 +561,9 @@ Inferred types:
                     is JCTree.JCClassDecl -> it.typarams
                     is JCTree.JCMethodDecl -> it.typarams
                     else -> emptyList<JCTree.JCTypeParameter>()
-                }' @ [137:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (List<JCTree.JCTypeParameter>..List<JCTree.JCTypeParameter>?), entry1: (List<JCTree.JCTypeParameter>..List<JCTree.JCTypeParameter>?), entry2: (List<JCTree.JCTypeParameter>..List<JCTree.JCTypeParameter>?)): (List<JCTree.JCTypeParameter>..List<JCTree.JCTypeParameter>?)[SimpleFunctionDescriptorImpl]
+                }' @ [137:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?), entry1: (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?), entry2: (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?)): (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.collections.List<com.sun.tools.javac.tree.JCTree.JCTypeParameter>..kotlin.collections.List<com.sun.tools.javac.tree.JCTree.JCTypeParameter>?)
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.collections.List<(com.sun.tools.javac.tree.JCTree.JCTypeParameter..com.sun.tools.javac.tree.JCTree.JCTypeParameter?)>..kotlin.collections.List<(com.sun.tools.javac.tree.JCTree.JCTypeParameter..com.sun.tools.javac.tree.JCTree.JCTypeParameter?)>?)
 
 'it' @ [137:23] ==> value-parameter it: (Tree..Tree?) defined in org.jetbrains.kotlin.javac.wrappers.trees.TreePathResolverCache.tryToResolveTypeParameter.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -629,7 +631,7 @@ Inferred types:
     <T> -> Int
     <R> -> Nothing
 
-'find' @ [156:16] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'find' @ [156:16] ==> public fun find(fqName: FqName, javac: JavacWrapper, nameParts: List<String>): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'FqName' @ [156:21] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
@@ -687,10 +689,10 @@ Inferred types:
 
 'this' @ [163:35] ==> <this> defined in org.jetbrains.kotlin.javac.wrappers.trees.findInner.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'let' @ [163:42] ==> @InlineOnly public inline fun <T, R> JavaClass.let(block: (JavaClass) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [163:42] ==> @InlineOnly public inline fun <T, R> JavaClass.let(block: (JavaClass) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JavaClass
-    <R> -> Nothing?
+    <R> -> Nothing
 
 'it' @ [163:55] ==> value-parameter it: JavaClass defined in org.jetbrains.kotlin.javac.wrappers.trees.findInner.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -711,7 +713,7 @@ Inferred types:
 
 'javaClass' @ [168:17] ==> value-parameter javaClass: JavaClass defined in org.jetbrains.kotlin.javac.wrappers.trees.findInner.<anonymous>[ValueParameterDescriptorImpl]
 
-'findInner' @ [168:27] ==> public fun JavaClass.findInner(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'findInner' @ [168:27] ==> public fun JavaClass.findInner(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [168:37] ==> value-parameter name: String defined in org.jetbrains.kotlin.javac.wrappers.trees.findInner[ValueParameterDescriptorImpl]
 
@@ -783,7 +785,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'fold' @ [190:23] ==> public inline fun <T, R> Iterable<String>.fold(initial: JavaClass, operation: (JavaClass, String) -> JavaClass): JavaClass defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [190:23] ==> public inline fun <T, R> Iterable<String>.fold(initial: JavaClass, operation: (acc: JavaClass, String) -> JavaClass): JavaClass defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> JavaClass
@@ -792,7 +794,7 @@ Inferred types:
 
 'javaClass' @ [191:32] ==> value-parameter javaClass: JavaClass defined in org.jetbrains.kotlin.javac.wrappers.trees.find.<anonymous>[ValueParameterDescriptorImpl]
 
-'findInner' @ [191:42] ==> public fun JavaClass.findInner(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'findInner' @ [191:42] ==> public fun JavaClass.findInner(name: String, javac: JavacWrapper, nameParts: List<String> = ...): JavaClass? defined in org.jetbrains.kotlin.javac.wrappers.trees in file resolve.kt[SimpleFunctionDescriptorImpl]
 
 'namePart' @ [191:52] ==> value-parameter namePart: String defined in org.jetbrains.kotlin.javac.wrappers.trees.find.<anonymous>[ValueParameterDescriptorImpl]
 

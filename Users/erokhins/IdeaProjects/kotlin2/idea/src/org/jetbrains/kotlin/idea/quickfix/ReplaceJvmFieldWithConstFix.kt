@@ -64,7 +64,9 @@ Inferred types:
 
 'annotation' @ [62:48] ==> val annotation: KtAnnotationEntry defined in org.jetbrains.kotlin.idea.quickfix.ReplaceJvmFieldWithConstFix.Companion.createAction[LocalVariableDescriptor]
 
-'ConstantExpressionEvaluator' @ [66:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [66:17] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Boolean?, right: Boolean): Boolean[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Boolean
 
 'getConstant' @ [66:45] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -74,14 +76,14 @@ Inferred types:
 
 'PARTIAL' @ [66:87] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
-'let' @ [66:98] ==> @InlineOnly public inline fun <T, R> CompileTimeConstant<Any?>.let(block: (CompileTimeConstant<Any?>) -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [66:98] ==> @InlineOnly public inline fun <T, R> CompileTimeConstant<*>.let(block: (CompileTimeConstant<*>) -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompileTimeConstant<Any?>
+    <T> -> CompileTimeConstant<*>
     <R> -> Boolean
 
 '!' @ [67:21] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [67:22] ==> value-parameter it: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.idea.quickfix.ReplaceJvmFieldWithConstFix.Companion.isConstantExpression.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [67:22] ==> value-parameter it: CompileTimeConstant<*> defined in org.jetbrains.kotlin.idea.quickfix.ReplaceJvmFieldWithConstFix.Companion.isConstantExpression.<anonymous>[ValueParameterDescriptorImpl]
 
 'usesNonConstValAsConstant' @ [67:25] ==> public open val usesNonConstValAsConstant: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 

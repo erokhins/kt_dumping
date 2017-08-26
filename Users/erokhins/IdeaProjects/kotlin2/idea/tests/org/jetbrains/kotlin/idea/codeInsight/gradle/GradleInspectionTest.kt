@@ -128,7 +128,7 @@ Inferred types:
 
 'invokeTestRunnable' @ [160:9] ==> @Override protected/*protected and package*/ for synthetic extension final fun invokeTestRunnable(@NotNull runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleInspectionTest[MyFunctionDescriptor]
 
-'runInspection' @ [161:32] ==> public fun runInspection(inspection: LocalInspectionTool, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections[SimpleFunctionDescriptorImpl]
+'runInspection' @ [161:32] ==> public fun runInspection(inspection: LocalInspectionTool, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections in file InspectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'tool' @ [161:46] ==> value-parameter tool: LocalInspectionTool defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleInspectionTest.getInspectionResult[ValueParameterDescriptorImpl]
 

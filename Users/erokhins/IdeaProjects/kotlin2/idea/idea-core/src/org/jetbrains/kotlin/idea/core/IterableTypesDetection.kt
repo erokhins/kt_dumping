@@ -101,8 +101,6 @@ Inferred types:
 
 'scope' @ [78:85] ==> private final val scope: LexicalScope defined in org.jetbrains.kotlin.idea.core.IterableTypesDetection.Detector[PropertyDescriptorImpl]
 
-'DataFlowInfo' @ [78:92] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [78:105] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 
 'NO_EXPECTED_TYPE' @ [78:122] ==> @NotNull public final val NO_EXPECTED_TYPE: SimpleType defined in org.jetbrains.kotlin.types.TypeUtils[JavaPropertyDescriptor]

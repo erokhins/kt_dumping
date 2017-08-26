@@ -77,9 +77,9 @@ Inferred types:
 
 'sourceClassContext' @ [61:81] ==> public final val sourceClassContext: BindingContext defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpData[PropertyDescriptorImpl]
 
-'lazy' @ [63:55] ==> public fun <T> lazy(initializer: () -> List<(TypeParameterDescriptor..TypeParameterDescriptor?)>): Lazy<List<(TypeParameterDescriptor..TypeParameterDescriptor?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [63:55] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<(org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)>
+    <T> -> T
 
 'sourceClassDescriptor' @ [64:9] ==> public final val sourceClassDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpData[PropertyDescriptorImpl]
 
@@ -95,17 +95,15 @@ Inferred types:
 
 'collectDescriptorsFiltered' @ [66:18] ==> public fun HierarchicalScope.collectDescriptorsFiltered(kindFilter: DescriptorKindFilter = ..., nameFilter: (Name) -> Boolean = ..., changeNamesForAliased: Boolean = ...): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.utils[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [66:45] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'NON_SINGLETON_CLASSIFIERS' @ [66:66] ==> @field:JvmField public final val NON_SINGLETON_CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'filterIsInstance' @ [67:18] ==> public inline fun <reified R> Iterable<*>.filterIsInstance(): List<TypeParameterDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified R> -> TypeParameterDescriptor
 
-'lazy' @ [70:60] ==> public fun <T> lazy(initializer: () -> TypeSubstitutor): Lazy<TypeSubstitutor> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [70:60] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TypeSubstitutor
+    <T> -> T
 
 'LinkedHashMap' @ [71:28] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
 Inferred types:
@@ -145,19 +143,19 @@ Inferred types:
     <K> -> TypeConstructor
     <V> -> TypeProjection
 
-'component1' @ [79:15] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<TypeConstructor, TypeProjection>.component1(): TypeConstructor defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'component1' @ [79:15] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<(TypeConstructor..TypeConstructor?), (TypeProjection..TypeProjection?)>.component1(): (TypeConstructor..TypeConstructor?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> TypeConstructor
-    <V> -> TypeProjection
+    <K> -> (org.jetbrains.kotlin.types.TypeConstructor..org.jetbrains.kotlin.types.TypeConstructor?)
+    <V> -> (org.jetbrains.kotlin.types.TypeProjection..org.jetbrains.kotlin.types.TypeProjection?)
 
-'component2' @ [79:32] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<TypeConstructor, TypeProjection>.component2(): TypeProjection defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'component2' @ [79:32] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<(TypeConstructor..TypeConstructor?), (TypeProjection..TypeProjection?)>.component2(): (TypeProjection..TypeProjection?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> TypeConstructor
-    <V> -> TypeProjection
+    <K> -> (org.jetbrains.kotlin.types.TypeConstructor..org.jetbrains.kotlin.types.TypeConstructor?)
+    <V> -> (org.jetbrains.kotlin.types.TypeProjection..org.jetbrains.kotlin.types.TypeProjection?)
 
-'superClassSubstitution' @ [79:51] ==> val superClassSubstitution: Map<TypeConstructor, TypeProjection> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpData.sourceToTargetClassSubstitutor.<anonymous>[LocalVariableDescriptor]
+'superClassSubstitution' @ [79:51] ==> val superClassSubstitution: Map<(TypeConstructor..TypeConstructor?), (TypeProjection..TypeProjection?)> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpData.sourceToTargetClassSubstitutor.<anonymous>[LocalVariableDescriptor]
 
-'typeProjection' @ [80:41] ==> val typeProjection: TypeProjection defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpData.sourceToTargetClassSubstitutor.<anonymous>[LocalVariableDescriptor]
+'typeProjection' @ [80:41] ==> val typeProjection: (TypeProjection..TypeProjection?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpData.sourceToTargetClassSubstitutor.<anonymous>[LocalVariableDescriptor]
 
 'type' @ [80:56] ==> public final val TypeProjection.type: KotlinType[MyPropertyDescriptor]
 
@@ -165,7 +163,7 @@ Inferred types:
 
 'declarationDescriptor' @ [80:73] ==> public final val TypeConstructor.declarationDescriptor: ClassifierDescriptor?[MyPropertyDescriptor]
 
-'typeConstructor' @ [82:43] ==> val typeConstructor: TypeConstructor defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpData.sourceToTargetClassSubstitutor.<anonymous>[LocalVariableDescriptor]
+'typeConstructor' @ [82:43] ==> val typeConstructor: (TypeConstructor..TypeConstructor?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpData.sourceToTargetClassSubstitutor.<anonymous>[LocalVariableDescriptor]
 
 'declarationDescriptor' @ [82:59] ==> public final val TypeConstructor.declarationDescriptor: ClassifierDescriptor?[MyPropertyDescriptor]
 

@@ -8,7 +8,7 @@ Inferred types:
 
 'KotlinLightClassBuilderFactory' @ [49:35] ==> public constructor KotlinLightClassBuilderFactory(javaFileStub: PsiJavaFileStub) defined in org.jetbrains.kotlin.asJava.builder.KotlinLightClassBuilderFactory[ClassConstructorDescriptorImpl]
 
-'createJavaFileStub' @ [49:66] ==> private fun createJavaFileStub(project: Project, packageFqName: FqName, files: Collection<KtFile>): PsiJavaFileStub defined in org.jetbrains.kotlin.asJava.builder[SimpleFunctionDescriptorImpl]
+'createJavaFileStub' @ [49:66] ==> private fun createJavaFileStub(project: Project, packageFqName: FqName, files: Collection<KtFile>): PsiJavaFileStub defined in org.jetbrains.kotlin.asJava.builder in file LightClassBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [49:85] ==> val project: Project defined in org.jetbrains.kotlin.asJava.builder.buildLightClass[LocalVariableDescriptor]
 
@@ -56,7 +56,7 @@ Inferred types:
 
 'getService' @ [66:24] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(StubComputationTracker..StubComputationTracker?)>): (StubComputationTracker..StubComputationTracker?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> StubComputationTracker
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.asJava.builder.StubComputationTracker..org.jetbrains.kotlin.asJava.builder.StubComputationTracker?)
 
 'project' @ [66:35] ==> val project: Project defined in org.jetbrains.kotlin.asJava.builder.buildLightClass[LocalVariableDescriptor]
 
@@ -108,7 +108,7 @@ Inferred types:
 
 'project' @ [82:42] ==> value-parameter project: Project defined in org.jetbrains.kotlin.asJava.builder.createJavaFileStub[ValueParameterDescriptorImpl]
 
-'getRepresentativeVirtualFile' @ [84:23] ==> private fun getRepresentativeVirtualFile(files: Collection<KtFile>): VirtualFile defined in org.jetbrains.kotlin.asJava.builder[SimpleFunctionDescriptorImpl]
+'getRepresentativeVirtualFile' @ [84:23] ==> private fun getRepresentativeVirtualFile(files: Collection<KtFile>): VirtualFile defined in org.jetbrains.kotlin.asJava.builder in file LightClassBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'files' @ [84:52] ==> value-parameter files: Collection<KtFile> defined in org.jetbrains.kotlin.asJava.builder.createJavaFileStub[ValueParameterDescriptorImpl]
 

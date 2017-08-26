@@ -57,7 +57,7 @@ Inferred types:
 
 'processor' @ [80:22] ==> value-parameter processor: KtDeclaration.() -> Unit defined in org.jetbrains.kotlin.idea.slicer.processHierarchyUpward[ValueParameterDescriptorImpl]
 
-'processAllExactUsages' @ [84:5] ==> public fun KtDeclaration.processAllExactUsages(options: () -> FindUsagesOptions, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.findUsages[SimpleFunctionDescriptorImpl]
+'processAllExactUsages' @ [84:5] ==> public fun KtDeclaration.processAllExactUsages(options: () -> FindUsagesOptions, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.findUsages in file findUsageUtils.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinFunctionFindUsagesOptions' @ [86:17] ==> public constructor KotlinFunctionFindUsagesOptions(project: Project) defined in org.jetbrains.kotlin.idea.findUsages.KotlinFunctionFindUsagesOptions[ClassConstructorDescriptorImpl]
 
@@ -81,7 +81,7 @@ Inferred types:
 
 'processor' @ [92:13] ==> value-parameter processor: (UsageInfo) -> Unit defined in org.jetbrains.kotlin.idea.slicer.processCalls[ValueParameterDescriptorImpl]
 
-'processAllExactUsages' @ [101:5] ==> public fun KtDeclaration.processAllExactUsages(options: () -> FindUsagesOptions, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.findUsages[SimpleFunctionDescriptorImpl]
+'processAllExactUsages' @ [101:5] ==> public fun KtDeclaration.processAllExactUsages(options: () -> FindUsagesOptions, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.findUsages in file findUsageUtils.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinPropertyFindUsagesOptions' @ [103:17] ==> public constructor KotlinPropertyFindUsagesOptions(project: Project) defined in org.jetbrains.kotlin.idea.findUsages.KotlinPropertyFindUsagesOptions[ClassConstructorDescriptorImpl]
 
@@ -201,7 +201,7 @@ Inferred types:
 
 'parentUsage' @ [152:32] ==> value-parameter parentUsage: KotlinSliceUsage defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.<init>[ValueParameterDescriptorImpl]
 
-'processHierarchyDownward' @ [154:9] ==> private fun KtDeclaration.processHierarchyDownward(scope: SearchScope, processor: KtDeclaration.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer[SimpleFunctionDescriptorImpl]
+'processHierarchyDownward' @ [154:9] ==> private fun KtDeclaration.processHierarchyDownward(scope: SearchScope, processor: KtDeclaration.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer in file Slicer.kt[SimpleFunctionDescriptorImpl]
 
 'parentUsage' @ [154:34] ==> protected final val parentUsage: KotlinSliceUsage defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer[PropertyDescriptorImpl]
 
@@ -219,7 +219,7 @@ Inferred types:
 
 'lambdaLevel' @ [157:113] ==> value-parameter lambdaLevel: Int = ... defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.passToProcessorAsValue[ValueParameterDescriptorImpl]
 
-'processVariableAccesses' @ [160:9] ==> private fun KtDeclaration.processVariableAccesses(scope: SearchScope, kind: ReadWriteAccessDetector.Access, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer[SimpleFunctionDescriptorImpl]
+'processVariableAccesses' @ [160:9] ==> private fun KtDeclaration.processVariableAccesses(scope: SearchScope, kind: ReadWriteAccessDetector.Access, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer in file Slicer.kt[SimpleFunctionDescriptorImpl]
 
 'accessSearchScope' @ [160:33] ==> value-parameter accessSearchScope: SearchScope defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processAssignments[ValueParameterDescriptorImpl]
 
@@ -323,9 +323,9 @@ Inferred types:
 
 'accessSearchScope' @ [184:28] ==> val accessSearchScope: SearchScope defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processPropertyAssignments[LocalVariableDescriptor]
 
-'lazy' @ [188:31] ==> public fun <T> lazy(initializer: () -> BindingContext): Lazy<BindingContext> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [188:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> BindingContext
+    <T> -> T
 
 'analyzeFully' @ [188:38] ==> public fun KtElement.analyzeFully(): BindingContext defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
@@ -350,7 +350,7 @@ Inferred types:
 
 'delegateGetterResolvedCall' @ [193:14] ==> val delegateGetterResolvedCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processProperty[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [193:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [193:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -425,7 +425,7 @@ Inferred types:
 
 'function' @ [226:10] ==> val function: KtDeclarationWithBody defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processParameter[LocalVariableDescriptor]
 
-'processCalls' @ [226:36] ==> private fun KtFunction.processCalls(scope: SearchScope, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer[SimpleFunctionDescriptorImpl]
+'processCalls' @ [226:36] ==> private fun KtFunction.processCalls(scope: SearchScope, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer in file Slicer.kt[SimpleFunctionDescriptorImpl]
 
 'parentUsage' @ [226:49] ==> protected final val parentUsage: KotlinSliceUsage defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer[PropertyDescriptorImpl]
 
@@ -457,7 +457,7 @@ Inferred types:
 
 'valueArguments' @ [230:49] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'parameterDescriptor' @ [230:64] ==> val parameterDescriptor: VariableDescriptor defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processParameter[LocalVariableDescriptor]
 
@@ -549,8 +549,6 @@ Inferred types:
 
 'getReferencedName' @ [264:16] ==> public abstract fun getReferencedName(): String defined in org.jetbrains.kotlin.psi.KtSimpleNameExpression[DeserializedSimpleFunctionDescriptor]
 
-'SyntheticFieldDescriptor' @ [264:39] ==> public companion object defined in org.jetbrains.kotlin.descriptors.impl.SyntheticFieldDescriptor[FakeCallableDescriptorForObject]
-
 'NAME' @ [264:64] ==> @field:JvmField public final val NAME: Name defined in org.jetbrains.kotlin.descriptors.impl.SyntheticFieldDescriptor.Companion[DeserializedPropertyDescriptor]
 
 'asString' @ [264:69] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
@@ -565,9 +563,9 @@ Inferred types:
             is KtLambdaExpression -> functionLiteral
             is KtNamedFunction -> if (name == null) this else null
             else -> null
-        }' @ [269:22] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {KtFunction & ASTDelegatePsiElement}?, entry1: {KtFunction & ASTDelegatePsiElement}?, entry2: {KtFunction & ASTDelegatePsiElement}?): {KtFunction & ASTDelegatePsiElement}?[SimpleFunctionDescriptorImpl]
+        }' @ [269:22] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: NavigatablePsiElement?, entry1: NavigatablePsiElement?, entry2: NavigatablePsiElement?): NavigatablePsiElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {KtFunction & ASTDelegatePsiElement}?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> NavigatablePsiElement?
 
 'this' @ [269:28] ==> <this> defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processExpression[ReceiverParameterDescriptorImpl]
 
@@ -581,13 +579,13 @@ Inferred types:
 
 'this' @ [271:53] ==> <this> defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processExpression[ReceiverParameterDescriptorImpl]
 
-'lambda' @ [274:13] ==> val lambda: {KtFunction & ASTDelegatePsiElement}? defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processExpression[LocalVariableDescriptor]
+'lambda' @ [274:13] ==> val lambda: NavigatablePsiElement? defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processExpression[LocalVariableDescriptor]
 
 'parentUsage' @ [275:17] ==> protected final val parentUsage: KotlinSliceUsage defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer[PropertyDescriptorImpl]
 
 'lambdaLevel' @ [275:29] ==> public final val lambdaLevel: Int defined in org.jetbrains.kotlin.idea.slicer.KotlinSliceUsage[PropertyDescriptorImpl]
 
-'lambda' @ [276:17] ==> val lambda: {KtFunction & ASTDelegatePsiElement}? defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processExpression[LocalVariableDescriptor]
+'lambda' @ [276:17] ==> val lambda: NavigatablePsiElement? defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer.processExpression[LocalVariableDescriptor]
 
 'passToProcessor' @ [276:24] ==> protected final fun PsiElement.passToProcessor(lambdaLevel: Int, forcedExpressionMode: Boolean): Unit defined in org.jetbrains.kotlin.idea.slicer.InflowSlicer[SimpleFunctionDescriptorImpl]
 
@@ -798,7 +796,7 @@ Inferred types:
 
 'resultingDescriptor' @ [323:56] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'if (resultingDescriptor is FunctionInvokeDescriptor) {
                     (resolvedCall.dispatchReceiver as? ExpressionReceiver)?.expression?.passToProcessorAsValue(parentUsage.lambdaLevel + 1)
@@ -815,7 +813,7 @@ Inferred types:
 
 'dispatchReceiver' @ [325:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'expression' @ [325:77] ==> public abstract val expression: KtExpression defined in org.jetbrains.kotlin.resolve.scopes.receivers.ExpressionReceiver[DeserializedPropertyDescriptor]
 
@@ -876,7 +874,7 @@ Inferred types:
 
 'parentUsage' @ [350:32] ==> value-parameter parentUsage: KotlinSliceUsage defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.<init>[ValueParameterDescriptorImpl]
 
-'processHierarchyUpward' @ [352:9] ==> private fun KtDeclaration.processHierarchyUpward(scope: AnalysisScope, processor: KtDeclaration.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer[SimpleFunctionDescriptorImpl]
+'processHierarchyUpward' @ [352:9] ==> private fun KtDeclaration.processHierarchyUpward(scope: AnalysisScope, processor: KtDeclaration.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer in file Slicer.kt[SimpleFunctionDescriptorImpl]
 
 'parentUsage' @ [352:32] ==> protected final val parentUsage: KotlinSliceUsage defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer[PropertyDescriptorImpl]
 
@@ -894,7 +892,7 @@ Inferred types:
 
 'showInstanceDereferences' @ [355:55] ==> public final var showInstanceDereferences: Boolean defined in com.intellij.slicer.SliceAnalysisParams[JavaPropertyDescriptor]
 
-'processVariableAccesses' @ [356:13] ==> private fun KtDeclaration.processVariableAccesses(scope: SearchScope, kind: ReadWriteAccessDetector.Access, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer[SimpleFunctionDescriptorImpl]
+'processVariableAccesses' @ [356:13] ==> private fun KtDeclaration.processVariableAccesses(scope: SearchScope, kind: ReadWriteAccessDetector.Access, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer in file Slicer.kt[SimpleFunctionDescriptorImpl]
 
 'parentUsage' @ [356:37] ==> protected final val parentUsage: KotlinSliceUsage defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer[PropertyDescriptorImpl]
 
@@ -1028,7 +1026,7 @@ Inferred types:
 
 'name' @ [387:68] ==> public final val KtNamedFunction.name: String?[MyPropertyDescriptor]
 
-'processHierarchyUpward' @ [388:13] ==> private fun KtDeclaration.processHierarchyUpward(scope: AnalysisScope, processor: KtDeclaration.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer[SimpleFunctionDescriptorImpl]
+'processHierarchyUpward' @ [388:13] ==> private fun KtDeclaration.processHierarchyUpward(scope: AnalysisScope, processor: KtDeclaration.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer in file Slicer.kt[SimpleFunctionDescriptorImpl]
 
 'parentUsage' @ [388:36] ==> protected final val parentUsage: KotlinSliceUsage defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer[PropertyDescriptorImpl]
 
@@ -1036,7 +1034,7 @@ Inferred types:
 
 'this' @ [389:18] ==> <this> defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.processFunction.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'processCalls' @ [389:40] ==> private fun KtFunction.processCalls(scope: SearchScope, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer[SimpleFunctionDescriptorImpl]
+'processCalls' @ [389:40] ==> private fun KtFunction.processCalls(scope: SearchScope, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.slicer in file Slicer.kt[SimpleFunctionDescriptorImpl]
 
 'parentUsage' @ [389:53] ==> protected final val parentUsage: KotlinSliceUsage defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer[PropertyDescriptorImpl]
 
@@ -1068,9 +1066,9 @@ Inferred types:
                                 is KtFunctionLiteral -> parent as? KtLambdaExpression
                                 is KtNamedFunction -> this
                                 else -> null
-                            }' @ [397:29] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {ElementBase & KtExpression}?, entry1: {ElementBase & KtExpression}?, entry2: {ElementBase & KtExpression}?): {ElementBase & KtExpression}?[SimpleFunctionDescriptorImpl]
+                            }' @ [397:29] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any?, entry1: Any?, entry2: Any?): Any?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {ElementBase & KtExpression}?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any?
 
 'this' @ [397:35] ==> <this> defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.processFunction[ReceiverParameterDescriptorImpl]
 
@@ -1078,7 +1076,7 @@ Inferred types:
 
 'this' @ [399:55] ==> <this> defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.processFunction[ReceiverParameterDescriptorImpl]
 
-'funExpression' @ [402:10] ==> val funExpression: {ElementBase & KtExpression} defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.processFunction[LocalVariableDescriptor]
+'funExpression' @ [402:10] ==> val funExpression: Any defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.processFunction[LocalVariableDescriptor]
 
 'passToProcessor' @ [402:39] ==> protected final fun PsiElement.passToProcessor(lambdaLevel: Int, forcedExpressionMode: Boolean): Unit defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer[SimpleFunctionDescriptorImpl]
 
@@ -1104,9 +1102,9 @@ Inferred types:
                                is CallInstruction -> instr.resolvedCall
                                is ReadValueInstruction -> (instr.target as? AccessTarget.Call)?.resolvedCall
                                else -> null
-                           }' @ [413:28] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: ResolvedCall<out CallableDescriptor>?, entry1: ResolvedCall<out CallableDescriptor>?, entry2: ResolvedCall<out CallableDescriptor>?): ResolvedCall<out CallableDescriptor>?[SimpleFunctionDescriptorImpl]
+                           }' @ [413:28] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: ResolvedCall<*>?, entry1: ResolvedCall<*>?, entry2: ResolvedCall<*>?): ResolvedCall<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> ResolvedCall<out CallableDescriptor>?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> ResolvedCall<*>?
 
 'instr' @ [413:34] ==> value-parameter instr: InstructionWithReceivers defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.processDereferenceIsNeeded[ValueParameterDescriptorImpl]
 
@@ -1122,11 +1120,11 @@ Inferred types:
 
 'receiver' @ [419:13] ==> val receiver: ReceiverValue? defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.processDereferenceIsNeeded[LocalVariableDescriptor]
 
-'resolvedCall' @ [419:33] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.processDereferenceIsNeeded[LocalVariableDescriptor]
+'resolvedCall' @ [419:33] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.processDereferenceIsNeeded[LocalVariableDescriptor]
 
-'dispatchReceiver' @ [419:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
+'dispatchReceiver' @ [419:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'receiver' @ [419:66] ==> val receiver: ReceiverValue? defined in org.jetbrains.kotlin.idea.slicer.OutflowSlicer.processDereferenceIsNeeded[LocalVariableDescriptor]
 

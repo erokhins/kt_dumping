@@ -16,33 +16,33 @@ Inferred types:
 
 'MemberChooser' @ [46:23] ==> public constructor MemberChooser<T : (ClassMember..ClassMember?)>(p0: (Array<(OverrideMemberChooserObject..OverrideMemberChooserObject?)>..Array<out (OverrideMemberChooserObject..OverrideMemberChooserObject?)>?), p1: Boolean, p2: Boolean, @NotNull p3: Project) defined in com.intellij.ide.util.MemberChooser[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (ClassMember..ClassMember?)> -> OverrideMemberChooserObject
+    <T : (ClassMember..ClassMember?)> -> (org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject..org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject?)
 
 'members' @ [46:37] ==> value-parameter members: Array<OverrideMemberChooserObject> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.showOverrideImplementChooser[ValueParameterDescriptorImpl]
 
 'project' @ [46:58] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.showOverrideImplementChooser[ValueParameterDescriptorImpl]
 
-'chooser' @ [47:9] ==> val chooser: MemberChooser<OverrideMemberChooserObject> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.showOverrideImplementChooser[LocalVariableDescriptor]
+'chooser' @ [47:9] ==> val chooser: MemberChooser<(OverrideMemberChooserObject..OverrideMemberChooserObject?)> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.showOverrideImplementChooser[LocalVariableDescriptor]
 
-'title' @ [47:17] ==> public final var <T : (ClassMember..ClassMember?)> MemberChooser<OverrideMemberChooserObject>.title: (String..String?)[MyPropertyDescriptor]
+'title' @ [47:17] ==> public final var <T : (ClassMember..ClassMember?)> MemberChooser<(OverrideMemberChooserObject..OverrideMemberChooserObject?)>.title: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (ClassMember..ClassMember?)> -> OverrideMemberChooserObject
+    <T : (ClassMember..ClassMember?)> -> (org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject..org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject?)
 
 'getChooserTitle' @ [47:25] ==> protected abstract fun getChooserTitle(): String defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler[SimpleFunctionDescriptorImpl]
 
-'chooser' @ [48:9] ==> val chooser: MemberChooser<OverrideMemberChooserObject> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.showOverrideImplementChooser[LocalVariableDescriptor]
+'chooser' @ [48:9] ==> val chooser: MemberChooser<(OverrideMemberChooserObject..OverrideMemberChooserObject?)> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.showOverrideImplementChooser[LocalVariableDescriptor]
 
 'show' @ [48:17] ==> public open fun show(): Unit defined in com.intellij.ide.util.MemberChooser[JavaMethodDescriptor]
 
-'chooser' @ [49:13] ==> val chooser: MemberChooser<OverrideMemberChooserObject> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.showOverrideImplementChooser[LocalVariableDescriptor]
+'chooser' @ [49:13] ==> val chooser: MemberChooser<(OverrideMemberChooserObject..OverrideMemberChooserObject?)> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.showOverrideImplementChooser[LocalVariableDescriptor]
 
-'exitCode' @ [49:21] ==> public final val <T : (ClassMember..ClassMember?)> MemberChooser<OverrideMemberChooserObject>.exitCode: Int[MyPropertyDescriptor]
+'exitCode' @ [49:21] ==> public final val <T : (ClassMember..ClassMember?)> MemberChooser<(OverrideMemberChooserObject..OverrideMemberChooserObject?)>.exitCode: Int[MyPropertyDescriptor]
 Inferred types:
-    <T : (ClassMember..ClassMember?)> -> OverrideMemberChooserObject
+    <T : (ClassMember..ClassMember?)> -> (org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject..org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject?)
 
 'OK_EXIT_CODE' @ [49:47] ==> public const final val OK_EXIT_CODE: Int defined in com.intellij.openapi.ui.DialogWrapper[JavaPropertyDescriptor]
 
-'chooser' @ [50:16] ==> val chooser: MemberChooser<OverrideMemberChooserObject> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.showOverrideImplementChooser[LocalVariableDescriptor]
+'chooser' @ [50:16] ==> val chooser: MemberChooser<(OverrideMemberChooserObject..OverrideMemberChooserObject?)> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.showOverrideImplementChooser[LocalVariableDescriptor]
 
 'file' @ [58:13] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideImplementMembersHandler.isValidFor[ValueParameterDescriptorImpl]
 

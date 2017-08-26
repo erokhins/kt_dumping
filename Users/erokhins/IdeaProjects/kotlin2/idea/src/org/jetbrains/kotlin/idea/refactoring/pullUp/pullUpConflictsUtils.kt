@@ -39,7 +39,7 @@ Inferred types:
 
 'resolutionFacade' @ [64:75] ==> public final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpData[PropertyDescriptorImpl]
 
-'checkClashWithSuperDeclaration' @ [66:13] ==> private fun KotlinPullUpData.checkClashWithSuperDeclaration(member: KtNamedDeclaration, memberDescriptor: DeclarationDescriptor, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'checkClashWithSuperDeclaration' @ [66:13] ==> private fun KotlinPullUpData.checkClashWithSuperDeclaration(member: KtNamedDeclaration, memberDescriptor: DeclarationDescriptor, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [66:44] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkConflicts.<anonymous>[LocalVariableDescriptor]
 
@@ -47,7 +47,7 @@ Inferred types:
 
 'conflicts' @ [66:70] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkConflicts[LocalVariableDescriptor]
 
-'checkAccidentalOverrides' @ [67:13] ==> private fun KotlinPullUpData.checkAccidentalOverrides(member: KtNamedDeclaration, memberDescriptor: DeclarationDescriptor, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'checkAccidentalOverrides' @ [67:13] ==> private fun KotlinPullUpData.checkAccidentalOverrides(member: KtNamedDeclaration, memberDescriptor: DeclarationDescriptor, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [67:38] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkConflicts.<anonymous>[LocalVariableDescriptor]
 
@@ -55,7 +55,7 @@ Inferred types:
 
 'conflicts' @ [67:64] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkConflicts[LocalVariableDescriptor]
 
-'checkInnerClassToInterface' @ [68:13] ==> private fun KotlinPullUpData.checkInnerClassToInterface(member: KtNamedDeclaration, memberDescriptor: DeclarationDescriptor, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'checkInnerClassToInterface' @ [68:13] ==> private fun KotlinPullUpData.checkInnerClassToInterface(member: KtNamedDeclaration, memberDescriptor: DeclarationDescriptor, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [68:40] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkConflicts.<anonymous>[LocalVariableDescriptor]
 
@@ -63,7 +63,7 @@ Inferred types:
 
 'conflicts' @ [68:66] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkConflicts[LocalVariableDescriptor]
 
-'checkVisibility' @ [69:13] ==> private fun KotlinPullUpData.checkVisibility(memberInfo: KotlinMemberInfo, memberDescriptor: DeclarationDescriptor, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'checkVisibility' @ [69:13] ==> private fun KotlinPullUpData.checkVisibility(memberInfo: KotlinMemberInfo, memberDescriptor: DeclarationDescriptor, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'memberInfo' @ [69:29] ==> val memberInfo: KotlinMemberInfo defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkConflicts.<anonymous>[LocalVariableDescriptor]
 
@@ -73,7 +73,7 @@ Inferred types:
 
 'isInterfaceTarget' @ [70:17] ==> public final val isInterfaceTarget: Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpData[PropertyDescriptorImpl]
 
-'checkPrivateMembersWithUsages' @ [71:17] ==> internal fun checkPrivateMembersWithUsages(member: KtNamedDeclaration, memberDescriptor: DeclarationDescriptor, sourceClass: KtClassOrObject, membersToMove: Collection<KtNamedDeclaration>, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'checkPrivateMembersWithUsages' @ [71:17] ==> internal fun checkPrivateMembersWithUsages(member: KtNamedDeclaration, memberDescriptor: DeclarationDescriptor, sourceClass: KtClassOrObject, membersToMove: Collection<KtNamedDeclaration>, conflicts: MultiMap<PsiElement, String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [71:47] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkConflicts.<anonymous>[LocalVariableDescriptor]
 
@@ -89,7 +89,7 @@ Inferred types:
 
 'project' @ [76:5] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkConflicts[ValueParameterDescriptorImpl]
 
-'checkConflictsInteractively' @ [76:13] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [76:13] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [76:41] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkConflicts[LocalVariableDescriptor]
 
@@ -245,8 +245,6 @@ Inferred types:
 'clashingSuper' @ [126:9] ==> val clashingSuper: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkClashWithSuperDeclaration[LocalVariableDescriptor]
 
 'modality' @ [126:23] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [126:35] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [126:44] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -488,7 +486,7 @@ Inferred types:
 
 'memberInfo' @ [199:27] ==> value-parameter memberInfo: KotlinMemberInfo defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkVisibility[ValueParameterDescriptorImpl]
 
-'getChildrenToAnalyze' @ [199:38] ==> public fun KotlinMemberInfo.getChildrenToAnalyze(): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo[SimpleFunctionDescriptorImpl]
+'getChildrenToAnalyze' @ [199:38] ==> public fun KotlinMemberInfo.getChildrenToAnalyze(): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo in file memberInfoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'memberInfo' @ [200:9] ==> value-parameter memberInfo: KotlinMemberInfo defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkVisibility[ValueParameterDescriptorImpl]
 
@@ -580,13 +578,15 @@ Inferred types:
 Inferred types:
     <T> -> DeclarationDescriptor
 
+'reportConflictIfAny' @ [221:44] ==> local final fun reportConflictIfAny(targetDescriptor: DeclarationDescriptor): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkVisibility[SimpleFunctionDescriptorImpl]
+
 'member' @ [236:9] ==> value-parameter member: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkPrivateMembersWithUsages[ValueParameterDescriptorImpl]
 
 'hasModifier' @ [236:16] ==> public abstract fun hasModifier(@NotNull p0: KtModifierKeywordToken): Boolean defined in org.jetbrains.kotlin.psi.KtNamedDeclaration[JavaMethodDescriptor]
 
 'PRIVATE_KEYWORD' @ [236:37] ==> public final val PRIVATE_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'willBeUsedInSourceClass' @ [237:9] ==> internal fun willBeUsedInSourceClass(member: PsiElement, sourceClass: KtClassOrObject, membersToMove: Collection<KtNamedDeclaration>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'willBeUsedInSourceClass' @ [237:9] ==> internal fun willBeUsedInSourceClass(member: PsiElement, sourceClass: KtClassOrObject, membersToMove: Collection<KtNamedDeclaration>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [237:33] ==> value-parameter member: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.pullUp.checkPrivateMembersWithUsages[ValueParameterDescriptorImpl]
 

@@ -1,8 +1,8 @@
 'KotlinAbstractUElement' @ [29:5] ==> public constructor KotlinAbstractUElement() defined in org.jetbrains.uast.kotlin.KotlinAbstractUElement[ClassConstructorDescriptorImpl]
 
-'lz' @ [30:26] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [30:26] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [30:31] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -14,9 +14,9 @@ Inferred types:
 
 'this' @ [30:77] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUCatchClause[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [32:32] ==> internal fun <T> lz(initializer: () -> List<UParameter>): Lazy<List<UParameter>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [32:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UParameter>
+    <T> -> T
 
 'psi' @ [33:25] ==> public open val psi: KtCatchClause defined in org.jetbrains.uast.kotlin.KotlinUCatchClause[PropertyDescriptorImpl]
 
@@ -32,8 +32,6 @@ Inferred types:
 
 'KotlinUParameter' @ [34:16] ==> public constructor KotlinUParameter(psi: PsiParameter, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUParameter[ClassConstructorDescriptorImpl]
 
-'UastKotlinPsiParameter' @ [34:33] ==> public companion object defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiParameter[FakeCallableDescriptorForObject]
-
 'create' @ [34:56] ==> public final fun create(parameter: KtParameter, parent: PsiElement, containingElement: UElement, index: Int): PsiParameter defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiParameter.Companion[SimpleFunctionDescriptorImpl]
 
 'parameter' @ [34:63] ==> val parameter: KtParameter defined in org.jetbrains.uast.kotlin.KotlinUCatchClause.parameters.<anonymous>[LocalVariableDescriptor]
@@ -44,9 +42,9 @@ Inferred types:
 
 'this' @ [34:89] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUCatchClause[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [37:36] ==> internal fun <T> lz(initializer: () -> List<UTypeReferenceExpression>): Lazy<List<UTypeReferenceExpression>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [37:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UTypeReferenceExpression>
+    <T> -> T
 
 'psi' @ [38:25] ==> public open val psi: KtCatchClause defined in org.jetbrains.uast.kotlin.KotlinUCatchClause[PropertyDescriptorImpl]
 

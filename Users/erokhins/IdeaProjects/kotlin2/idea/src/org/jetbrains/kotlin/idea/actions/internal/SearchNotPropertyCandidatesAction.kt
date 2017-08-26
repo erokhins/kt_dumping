@@ -8,7 +8,7 @@
 
 'getData' @ [42:25] ==> @Nullable public open fun <T : (Any..Any?)> getData(@NotNull p0: DataKey<(PsiFile..PsiFile?)>): PsiFile? defined in com.intellij.openapi.actionSystem.AnActionEvent[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiFile
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiFile..com.intellij.psi.PsiFile?)
 
 'PSI_FILE' @ [42:48] ==> public final val PSI_FILE: (DataKey<(PsiFile..PsiFile?)>..DataKey<(PsiFile..PsiFile?)>?) defined in com.intellij.openapi.actionSystem.CommonDataKeys[JavaPropertyDescriptor]
 
@@ -124,6 +124,8 @@ Inferred types:
 Inferred types:
     <T> -> DeclarationDescriptor
 
+'recursive' @ [78:114] ==> local final fun recursive(desc: DeclarationDescriptor): Unit defined in org.jetbrains.kotlin.idea.actions.internal.SearchNotPropertyCandidatesAction.processAllDescriptors[SimpleFunctionDescriptorImpl]
+
 'desc' @ [79:45] ==> value-parameter desc: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.actions.internal.SearchNotPropertyCandidatesAction.processAllDescriptors.recursive[ValueParameterDescriptorImpl]
 
 'memberScope' @ [79:50] ==> public abstract val memberScope: MemberScope defined in org.jetbrains.kotlin.descriptors.PackageViewDescriptor[DeserializedPropertyDescriptor]
@@ -133,6 +135,8 @@ Inferred types:
 'forEach' @ [79:97] ==> @HidesMembers public inline fun <T> Iterable<DeclarationDescriptor>.forEach(action: (DeclarationDescriptor) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DeclarationDescriptor
+
+'recursive' @ [79:107] ==> local final fun recursive(desc: DeclarationDescriptor): Unit defined in org.jetbrains.kotlin.idea.actions.internal.SearchNotPropertyCandidatesAction.processAllDescriptors[SimpleFunctionDescriptorImpl]
 
 'desc' @ [82:25] ==> value-parameter desc: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.actions.internal.SearchNotPropertyCandidatesAction.processAllDescriptors.recursive[ValueParameterDescriptorImpl]
 
@@ -198,17 +202,17 @@ Inferred types:
 
 'matchedDescriptors' @ [100:9] ==> val matchedDescriptors: MutableSet<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.actions.internal.SearchNotPropertyCandidatesAction.processAllDescriptors[LocalVariableDescriptor]
 
-'flatMapTo' @ [100:28] ==> public inline fun <T, R, C : MutableCollection<in FunctionDescriptor>> Iterable<FunctionDescriptor>.flatMapTo(destination: MutableSet<FunctionDescriptor>, transform: (FunctionDescriptor) -> Iterable<FunctionDescriptor>): MutableSet<FunctionDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMapTo' @ [100:28] ==> public inline fun <T, R, C : MutableCollection<in (FunctionDescriptor..FunctionDescriptor?)>> Iterable<FunctionDescriptor>.flatMapTo(destination: MutableSet<FunctionDescriptor>, transform: (FunctionDescriptor) -> Iterable<(FunctionDescriptor..FunctionDescriptor?)>): MutableSet<FunctionDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FunctionDescriptor
-    <R> -> FunctionDescriptor
+    <R> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
     <C : MutableCollection<in R>> -> MutableSet<FunctionDescriptor>
 
 'resultDescriptors' @ [100:38] ==> val resultDescriptors: MutableSet<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.actions.internal.SearchNotPropertyCandidatesAction.processAllDescriptors[LocalVariableDescriptor]
 
-'sequenceOf' @ [101:13] ==> public fun <T> sequenceOf(vararg elements: FunctionDescriptor): Sequence<FunctionDescriptor> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'sequenceOf' @ [101:13] ==> public fun <T> sequenceOf(vararg elements: (FunctionDescriptor..FunctionDescriptor?)): Sequence<(FunctionDescriptor..FunctionDescriptor?)> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> FunctionDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'it' @ [101:24] ==> value-parameter it: FunctionDescriptor defined in org.jetbrains.kotlin.idea.actions.internal.SearchNotPropertyCandidatesAction.processAllDescriptors.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -220,9 +224,9 @@ Inferred types:
 Inferred types:
     <reified T> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
-'asIterable' @ [101:72] ==> public fun <T> Sequence<FunctionDescriptor>.asIterable(): Iterable<FunctionDescriptor> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'asIterable' @ [101:72] ==> public fun <T> Sequence<(FunctionDescriptor..FunctionDescriptor?)>.asIterable(): Iterable<(FunctionDescriptor..FunctionDescriptor?)> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> FunctionDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'println' @ [103:9] ==> @InlineOnly public inline fun println(message: Any?): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
@@ -287,7 +291,9 @@ Inferred types:
 
 'desc' @ [119:71] ==> value-parameter desc: FunctionDescriptor defined in org.jetbrains.kotlin.idea.actions.internal.SearchNotPropertyCandidatesAction.processAllDescriptors.<anonymous>[ValueParameterDescriptorImpl]
 
-'DescriptorToSourceUtilsIde' @ [120:26] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
+'?:' @ [120:26] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiMethod?, right: PsiMethod): PsiMethod[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiMethod
 
 'getAllDeclarations' @ [120:53] ==> public final fun getAllDeclarations(project: Project, targetDescriptor: DeclarationDescriptor, builtInsSearchScope: GlobalSearchScope? = ...): Collection<PsiElement> defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 
@@ -409,6 +415,8 @@ Inferred types:
 Inferred types:
     <T> -> FunctionDescriptor
 
+'println' @ [149:30] ==> @InlineOnly public inline fun println(message: Any?): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
+
 'println' @ [150:9] ==> @InlineOnly public inline fun println(message: Any?): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
 'nonTrivial' @ [150:39] ==> val nonTrivial: MutableSet<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.actions.internal.SearchNotPropertyCandidatesAction.processAllDescriptors[LocalVariableDescriptor]
@@ -460,7 +468,7 @@ Inferred types:
 
 'getData' @ [160:42] ==> @Nullable public open fun <T : (Any..Any?)> getData(@NotNull p0: DataKey<(PsiFile..PsiFile?)>): PsiFile? defined in com.intellij.openapi.actionSystem.AnActionEvent[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiFile
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiFile..com.intellij.psi.PsiFile?)
 
 'PSI_FILE' @ [160:65] ==> public final val PSI_FILE: (DataKey<(PsiFile..PsiFile?)>..DataKey<(PsiFile..PsiFile?)>?) defined in com.intellij.openapi.actionSystem.CommonDataKeys[JavaPropertyDescriptor]
 

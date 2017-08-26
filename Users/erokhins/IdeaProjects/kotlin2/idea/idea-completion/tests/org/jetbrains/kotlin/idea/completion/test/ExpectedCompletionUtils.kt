@@ -148,7 +148,7 @@ Inferred types:
 
 'of' @ [121:54] ==> @SafeVarargs public open fun <E : (Any..Any?)> of(p0: (String..String?), p1: (String..String?), p2: (String..String?), p3: (String..String?), p4: (String..String?), p5: (String..String?), p6: (String..String?), p7: (String..String?), p8: (String..String?), p9: (String..String?), p10: (String..String?), p11: (String..String?), vararg p12: (String..String?)): (ImmutableList<(String..String?)>..ImmutableList<(String..String?)>?) defined in com.google.common.collect.ImmutableList[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'EXIST_LINE_PREFIX' @ [122:13] ==> private final val EXIST_LINE_PREFIX: String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[PropertyDescriptorImpl]
 
@@ -182,11 +182,7 @@ Inferred types:
 
 'COMPLETION_TYPE_PREFIX' @ [137:13] ==> private final val COMPLETION_TYPE_PREFIX: String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[PropertyDescriptorImpl]
 
-'LightClassComputationControl' @ [138:13] ==> public object LightClassComputationControl defined in org.jetbrains.kotlin.idea.completion.test in file LightClassComputationControl.kt[FakeCallableDescriptorForObject]
-
 'LIGHT_CLASS_DIRECTIVE' @ [138:42] ==> public final val LIGHT_CLASS_DIRECTIVE: String defined in org.jetbrains.kotlin.idea.completion.test.LightClassComputationControl[PropertyDescriptorImpl]
-
-'AstAccessControl' @ [139:13] ==> public object AstAccessControl defined in org.jetbrains.kotlin.idea.test in file AstAccessControl.kt[FakeCallableDescriptorForObject]
 
 'ALLOW_AST_ACCESS_DIRECTIVE' @ [139:30] ==> public final val ALLOW_AST_ACCESS_DIRECTIVE: String defined in org.jetbrains.kotlin.idea.test.AstAccessControl[PropertyDescriptorImpl]
 
@@ -380,7 +376,7 @@ Inferred types:
 
 'toObjectArray' @ [182:26] ==> @NotNull @Contract public open fun <T : (Any..Any?)> toObjectArray(@NotNull p0: (MutableCollection<out (ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>..Collection<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>), @NotNull p1: Class<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>): (Array<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>..Array<out (ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>) defined in com.intellij.util.ArrayUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CompletionProposal
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal..org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal?)
 
 'proposals' @ [182:40] ==> val proposals: ArrayList<ExpectedCompletionUtils.CompletionProposal> defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.processProposalAssertions[LocalVariableDescriptor]
 
@@ -512,15 +508,15 @@ Inferred types:
 
 'itemsInformation' @ [230:43] ==> val itemsInformation: List<ExpectedCompletionUtils.CompletionProposal> defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
 
-'if (nothingElse) LinkedHashSet(itemsInformation) else null' @ [232:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: LinkedHashSet<ExpectedCompletionUtils.CompletionProposal>?, elseBranch: LinkedHashSet<ExpectedCompletionUtils.CompletionProposal>?): LinkedHashSet<ExpectedCompletionUtils.CompletionProposal>?[SimpleFunctionDescriptorImpl]
+'if (nothingElse) LinkedHashSet(itemsInformation) else null' @ [232:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: LinkedHashSet<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>?, elseBranch: LinkedHashSet<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>?): LinkedHashSet<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> LinkedHashSet<CompletionProposal>?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> LinkedHashSet<(org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal..org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal?)>?
 
 'nothingElse' @ [232:29] ==> value-parameter nothingElse: Boolean defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[ValueParameterDescriptorImpl]
 
 'LinkedHashSet' @ [232:42] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>..Collection<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> CompletionProposal
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal..org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal?)
 
 'itemsInformation' @ [232:56] ==> val itemsInformation: List<ExpectedCompletionUtils.CompletionProposal> defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
 
@@ -562,9 +558,9 @@ Inferred types:
 
 'index' @ [247:39] ==> val index: Int defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
 
-'leftItems' @ [249:21] ==> val leftItems: LinkedHashSet<ExpectedCompletionUtils.CompletionProposal>? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
+'leftItems' @ [249:21] ==> val leftItems: LinkedHashSet<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
 
-'remove' @ [249:32] ==> public open fun remove(element: ExpectedCompletionUtils.CompletionProposal): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
+'remove' @ [249:32] ==> public open fun remove(element: (ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
 'proposal' @ [249:39] ==> val proposal: ExpectedCompletionUtils.CompletionProposal defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
 
@@ -595,11 +591,11 @@ Inferred types:
 
 'allItemsString' @ [260:77] ==> val allItemsString: String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
 
-'leftItems' @ [265:13] ==> val leftItems: LinkedHashSet<ExpectedCompletionUtils.CompletionProposal>? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
+'leftItems' @ [265:13] ==> val leftItems: LinkedHashSet<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
 
 '!' @ [265:34] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'leftItems' @ [265:35] ==> val leftItems: LinkedHashSet<ExpectedCompletionUtils.CompletionProposal>? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
+'leftItems' @ [265:35] ==> val leftItems: LinkedHashSet<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
 
 'isEmpty' @ [265:45] ==> public open fun isEmpty(): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
@@ -609,7 +605,7 @@ Inferred types:
 
 'listToString' @ [266:99] ==> public final fun listToString(items: Collection<ExpectedCompletionUtils.CompletionProposal>): String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 
-'leftItems' @ [266:112] ==> val leftItems: LinkedHashSet<ExpectedCompletionUtils.CompletionProposal>? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
+'leftItems' @ [266:112] ==> val leftItems: LinkedHashSet<(ExpectedCompletionUtils.CompletionProposal..ExpectedCompletionUtils.CompletionProposal?)>? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.assertContainsRenderedItems[LocalVariableDescriptor]
 
 'getPrefixedInt' @ [271:49] ==> @Nullable public open fun getPrefixedInt(p0: (String..String?), p1: (String..String?)): Int? defined in org.jetbrains.kotlin.test.InTextDirectivesUtils[JavaMethodDescriptor]
 
@@ -690,8 +686,6 @@ Inferred types:
 
 'put' @ [301:17] ==> public open fun put(key: String, value: String?): String? defined in java.util.HashMap[JavaMethodDescriptor]
 
-'CompletionProposal' @ [301:21] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal[FakeCallableDescriptorForObject]
-
 'LOOKUP_STRING' @ [301:40] ==> public final val LOOKUP_STRING: String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal.Companion[PropertyDescriptorImpl]
 
 'item' @ [301:55] ==> val item: LookupElement defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.getItemsInformation[LocalVariableDescriptor]
@@ -701,8 +695,6 @@ Inferred types:
 'map' @ [303:13] ==> val map: HashMap<String, String?> defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.getItemsInformation[LocalVariableDescriptor]
 
 'put' @ [303:17] ==> public open fun put(key: String, value: String?): String? defined in java.util.HashMap[JavaMethodDescriptor]
-
-'CompletionProposal' @ [303:21] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal[FakeCallableDescriptorForObject]
 
 'ALL_LOOKUP_STRINGS' @ [303:40] ==> public final val ALL_LOOKUP_STRINGS: String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal.Companion[PropertyDescriptorImpl]
 
@@ -726,8 +718,6 @@ Inferred types:
 
 'put' @ [306:21] ==> public open fun put(key: String, value: String?): String? defined in java.util.HashMap[JavaMethodDescriptor]
 
-'CompletionProposal' @ [306:25] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal[FakeCallableDescriptorForObject]
-
 'PRESENTATION_ITEM_TEXT' @ [306:44] ==> public final val PRESENTATION_ITEM_TEXT: String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal.Companion[PropertyDescriptorImpl]
 
 'presentation' @ [306:68] ==> val presentation: LookupElementPresentation defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.getItemsInformation[LocalVariableDescriptor]
@@ -737,8 +727,6 @@ Inferred types:
 'map' @ [307:17] ==> val map: HashMap<String, String?> defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.getItemsInformation[LocalVariableDescriptor]
 
 'put' @ [307:21] ==> public open fun put(key: String, value: String?): String? defined in java.util.HashMap[JavaMethodDescriptor]
-
-'CompletionProposal' @ [307:25] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal[FakeCallableDescriptorForObject]
 
 'PRESENTATION_TEXT_ATTRIBUTES' @ [307:44] ==> public final val PRESENTATION_TEXT_ATTRIBUTES: String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal.Companion[PropertyDescriptorImpl]
 
@@ -754,8 +742,6 @@ Inferred types:
 
 'put' @ [311:21] ==> public open fun put(key: String, value: String?): String? defined in java.util.HashMap[JavaMethodDescriptor]
 
-'CompletionProposal' @ [311:25] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal[FakeCallableDescriptorForObject]
-
 'PRESENTATION_TYPE_TEXT' @ [311:44] ==> public final val PRESENTATION_TYPE_TEXT: String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal.Companion[PropertyDescriptorImpl]
 
 'presentation' @ [311:68] ==> val presentation: LookupElementPresentation defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.getItemsInformation[LocalVariableDescriptor]
@@ -770,8 +756,6 @@ Inferred types:
 
 'put' @ [315:21] ==> public open fun put(key: String, value: String?): String? defined in java.util.HashMap[JavaMethodDescriptor]
 
-'CompletionProposal' @ [315:25] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal[FakeCallableDescriptorForObject]
-
 'PRESENTATION_TAIL_TEXT' @ [315:44] ==> public final val PRESENTATION_TAIL_TEXT: String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal.Companion[PropertyDescriptorImpl]
 
 'presentation' @ [315:68] ==> val presentation: LookupElementPresentation defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.getItemsInformation[LocalVariableDescriptor]
@@ -781,8 +765,6 @@ Inferred types:
 'result' @ [318:13] ==> val result: ArrayList<ExpectedCompletionUtils.CompletionProposal> defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.getItemsInformation[LocalVariableDescriptor]
 
 'add' @ [318:20] ==> public open fun add(element: ExpectedCompletionUtils.CompletionProposal): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
-
-'ExpectedCompletionUtils' @ [318:24] ==> public object ExpectedCompletionUtils defined in org.jetbrains.kotlin.idea.completion.test in file ExpectedCompletionUtils.kt[FakeCallableDescriptorForObject]
 
 'CompletionProposal' @ [318:48] ==> public constructor CompletionProposal(map: MutableMap<String, String?>) defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils.CompletionProposal[ClassConstructorDescriptorImpl]
 

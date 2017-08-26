@@ -1,4 +1,4 @@
-'implementationsOf' @ [35:9] ==> private fun ModuleDescriptor.implementationsOf(descriptor: MemberDescriptor): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'implementationsOf' @ [35:9] ==> private fun ModuleDescriptor.implementationsOf(descriptor: MemberDescriptor): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [35:27] ==> value-parameter descriptor: MemberDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.hasImplementationsOf[ValueParameterDescriptorImpl]
 
@@ -39,7 +39,7 @@ Inferred types:
 
 'it' @ [47:9] ==> value-parameter it: ModuleDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.getPlatformImplementationTooltip.<anonymous>[ValueParameterDescriptorImpl]
 
-'hasImplementationsOf' @ [47:12] ==> public fun ModuleDescriptor.hasImplementationsOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'hasImplementationsOf' @ [47:12] ==> public fun ModuleDescriptor.hasImplementationsOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [47:33] ==> val descriptor: MemberDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.getPlatformImplementationTooltip[LocalVariableDescriptor]
 
@@ -61,7 +61,7 @@ Inferred types:
 
 'declaration' @ [57:27] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.idea.highlighter.markers.navigateToPlatformImplementation[ValueParameterDescriptorImpl]
 
-'headerImplementations' @ [57:39] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerImplementations' @ [57:39] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'implementations' @ [58:9] ==> val implementations: Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers.navigateToPlatformImplementation[LocalVariableDescriptor]
 
@@ -112,7 +112,7 @@ Inferred types:
 
 'it' @ [72:66] ==> value-parameter it: ModuleDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.headerImplementations.<anonymous>[ValueParameterDescriptorImpl]
 
-'implementationsOf' @ [72:69] ==> private fun ModuleDescriptor.implementationsOf(descriptor: MemberDescriptor): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'implementationsOf' @ [72:69] ==> private fun ModuleDescriptor.implementationsOf(descriptor: MemberDescriptor): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [72:87] ==> <this> defined in org.jetbrains.kotlin.idea.highlighter.markers.headerImplementations[ReceiverParameterDescriptorImpl]
 
@@ -120,7 +120,7 @@ Inferred types:
 
 'containingDeclaration' @ [76:16] ==> public final val ValueParameterDescriptor.containingDeclaration: CallableDescriptor[MyPropertyDescriptor]
 
-'headerImplementations' @ [76:38] ==> private fun DeclarationDescriptor.headerImplementations(): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerImplementations' @ [76:38] ==> private fun DeclarationDescriptor.headerImplementations(): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'mapNotNull' @ [76:62] ==> public inline fun <T, R : Any> Iterable<DeclarationDescriptor>.mapNotNull(transform: (DeclarationDescriptor) -> ValueParameterDescriptor?): List<ValueParameterDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -143,7 +143,7 @@ Inferred types:
 
 'resolveToDescriptor' @ [83:12] ==> public fun KtDeclaration.resolveToDescriptor(bodyResolveMode: BodyResolveMode = ...): DeclarationDescriptor defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
-'headerImplementations' @ [83:34] ==> private fun DeclarationDescriptor.headerImplementations(): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerImplementations' @ [83:34] ==> private fun DeclarationDescriptor.headerImplementations(): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'mapNotNullTo' @ [83:58] ==> public inline fun <T, R : Any, C : MutableCollection<in KtDeclaration>> Iterable<DeclarationDescriptor>.mapNotNullTo(destination: LinkedHashSet<KtDeclaration> /* = LinkedHashSet<KtDeclaration> */, transform: (DeclarationDescriptor) -> KtDeclaration?): LinkedHashSet<KtDeclaration> /* = LinkedHashSet<KtDeclaration> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -129,9 +129,9 @@ Inferred types:
     <K> -> ModuleDescriptor
     <V> -> ResolverForModule
 
-'lazy' @ [133:47] ==> public fun <T> lazy(initializer: () -> Set<M>): Lazy<Set<M>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [133:47] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Set<M>
+    <T> -> T
 
 'this' @ [134:9] ==> <this> defined in org.jetbrains.kotlin.analyzer.ResolverForProjectImpl[LazyClassReceiverParameterDescriptor]
 
@@ -427,11 +427,7 @@ Inferred types:
 
 'Default' @ [237:44] ==> public object Default : TargetPlatform defined in org.jetbrains.kotlin.resolve.TargetPlatform[FakeCallableDescriptorForObject]
 
-'ModuleInfo' @ [238:17] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
-
 'AFTER_SDK' @ [238:49] ==> enum entry AFTER_SDK defined in org.jetbrains.kotlin.analyzer.ModuleInfo.DependencyOnBuiltIns[FakeCallableDescriptorForObject]
-
-'ModuleInfo' @ [240:17] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
 
 'LAST' @ [240:49] ==> enum entry LAST defined in org.jetbrains.kotlin.analyzer.ModuleInfo.DependencyOnBuiltIns[FakeCallableDescriptorForObject]
 
@@ -469,8 +465,6 @@ Inferred types:
 
 'dependencyOnBuiltIns' @ [283:24] ==> public open fun dependencyOnBuiltIns(): ModuleInfo.DependencyOnBuiltIns defined in org.jetbrains.kotlin.analyzer.ModuleInfo[SimpleFunctionDescriptorImpl]
 
-'ModuleInfo' @ [283:50] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
-
 'AFTER_SDK' @ [283:82] ==> enum entry AFTER_SDK defined in org.jetbrains.kotlin.analyzer.ModuleInfo.DependencyOnBuiltIns[FakeCallableDescriptorForObject]
 
 'yield' @ [284:17] ==> public abstract suspend fun yield(value: ModuleDescriptorImpl): Unit defined in kotlin.coroutines.experimental.SequenceBuilder[DeserializedSimpleFunctionDescriptor]
@@ -496,8 +490,6 @@ Inferred types:
 'module' @ [289:17] ==> private final val module: M defined in org.jetbrains.kotlin.analyzer.LazyModuleDependencies[PropertyDescriptorImpl]
 
 'dependencyOnBuiltIns' @ [289:24] ==> public open fun dependencyOnBuiltIns(): ModuleInfo.DependencyOnBuiltIns defined in org.jetbrains.kotlin.analyzer.ModuleInfo[SimpleFunctionDescriptorImpl]
-
-'ModuleInfo' @ [289:50] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
 
 'LAST' @ [289:82] ==> enum entry LAST defined in org.jetbrains.kotlin.analyzer.ModuleInfo.DependencyOnBuiltIns[FakeCallableDescriptorForObject]
 
@@ -531,8 +523,6 @@ Inferred types:
 
 'module' @ [296:29] ==> private final val module: M defined in org.jetbrains.kotlin.analyzer.LazyModuleDependencies[PropertyDescriptorImpl]
 
-'MultiTargetPlatform' @ [296:40] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
-
 'Common' @ [296:60] ==> public object Common : MultiTargetPlatform defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'emptySet' @ [296:68] ==> public fun <T> emptySet(): Set<M> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -555,8 +545,6 @@ Inferred types:
 'invoke' @ [299:21] ==> public abstract operator fun invoke(p1: M): MultiTargetPlatform? defined in kotlin.Function1[FunctionInvokeDescriptor]
 
 'it' @ [299:37] ==> value-parameter it: M defined in org.jetbrains.kotlin.analyzer.LazyModuleDependencies.implementingModules.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
-
-'MultiTargetPlatform' @ [299:44] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'Common' @ [299:64] ==> public object Common : MultiTargetPlatform defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
@@ -697,7 +685,7 @@ Inferred types:
 
 'getService' @ [376:98] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(ResolverForModuleComputationTracker..ResolverForModuleComputationTracker?)>): (ResolverForModuleComputationTracker..ResolverForModuleComputationTracker?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ResolverForModuleComputationTracker
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.analyzer.ResolverForModuleComputationTracker..org.jetbrains.kotlin.analyzer.ResolverForModuleComputationTracker?)
 
 'project' @ [376:109] ==> value-parameter project: Project defined in org.jetbrains.kotlin.analyzer.ResolverForModuleComputationTracker.Companion.getInstance[ValueParameterDescriptorImpl]
 

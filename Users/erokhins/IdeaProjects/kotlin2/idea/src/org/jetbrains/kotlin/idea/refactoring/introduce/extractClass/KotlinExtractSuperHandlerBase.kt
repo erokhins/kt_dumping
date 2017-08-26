@@ -113,15 +113,13 @@ Inferred types:
 
 'it' @ [70:64] ==> value-parameter it: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.KotlinExtractSuperHandlerBase.checkClass.<anonymous>[ValueParameterDescriptorImpl]
 
-'KotlinExtractSuperclassHandler' @ [71:21] ==> public object KotlinExtractSuperclassHandler : KotlinExtractSuperHandlerBase defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass in file KotlinExtractSuperclassHandler.kt[FakeCallableDescriptorForObject]
-
 'REFACTORING_NAME' @ [71:52] ==> public final val REFACTORING_NAME: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.KotlinExtractSuperclassHandler[PropertyDescriptorImpl]
 
 'EXTRACT_SUPERCLASS' @ [72:28] ==> public const final val EXTRACT_SUPERCLASS: String defined in com.intellij.refactoring.HelpID[JavaPropertyDescriptor]
 
 'klass' @ [81:26] ==> value-parameter klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.KotlinExtractSuperHandlerBase.selectElements[ValueParameterDescriptorImpl]
 
-'getExtractionContainers' @ [81:32] ==> public fun PsiElement.getExtractionContainers(strict: Boolean = ..., includeAll: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getExtractionContainers' @ [81:32] ==> public fun PsiElement.getExtractionContainers(strict: Boolean = ..., includeAll: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'SeparateFileWrapper' @ [81:92] ==> public constructor SeparateFileWrapper(manager: PsiManager) defined in org.jetbrains.kotlin.idea.refactoring.SeparateFileWrapper[ClassConstructorDescriptorImpl]
 

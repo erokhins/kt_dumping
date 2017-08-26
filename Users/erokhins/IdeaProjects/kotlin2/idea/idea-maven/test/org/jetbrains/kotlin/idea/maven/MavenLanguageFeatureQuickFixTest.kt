@@ -16,7 +16,7 @@
 
 'getName' @ [38:89] ==> public open fun getName(): (String..String?) defined in org.jetbrains.kotlin.idea.maven.MavenLanguageFeatureQuickFixTest[JavaMethodDescriptor]
 
-'fixture' @ [38:100] ==> public final val <T : (IdeaTestFixture..IdeaTestFixture?)> TestFixtureBuilder<(IdeaProjectTestFixture..IdeaProjectTestFixture?)>.fixture: (IdeaProjectTestFixture..IdeaProjectTestFixture?)[MyPropertyDescriptor]
+'fixture' @ [38:100] ==> public final val <T : (IdeaTestFixture..IdeaTestFixture?)> TestFixtureBuilder<(IdeaProjectTestFixture..IdeaProjectTestFixture?)>.fixture: IdeaProjectTestFixture[MyPropertyDescriptor]
 Inferred types:
     <T : (IdeaTestFixture..IdeaTestFixture?)> -> (com.intellij.testFramework.fixtures.IdeaProjectTestFixture..com.intellij.testFramework.fixtures.IdeaProjectTestFixture?)
 

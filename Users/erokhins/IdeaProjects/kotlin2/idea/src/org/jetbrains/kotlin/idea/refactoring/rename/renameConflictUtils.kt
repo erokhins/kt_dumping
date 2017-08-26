@@ -1,10 +1,10 @@
 'dispatchReceiver' @ [64:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'extensionReceiver' @ [64:74] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'getType' @ [67:30] ==> public open fun getType(@NotNull p0: PsiElement): (String..String?) defined in com.intellij.usageView.UsageViewUtil[JavaMethodDescriptor]
 
@@ -101,15 +101,9 @@ Inferred types:
 
 'descriptor' @ [99:42] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.rename.checkRedeclarations[ValueParameterDescriptorImpl]
 
-'DescriptorKindFilter' @ [100:35] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CLASSIFIERS' @ [100:56] ==> @field:JvmField public final val CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
-'DescriptorKindFilter' @ [101:38] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'VARIABLES' @ [101:59] ==> @field:JvmField public final val VARIABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'DescriptorKindFilter' @ [102:38] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'FUNCTIONS' @ [102:59] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -509,7 +503,7 @@ Inferred types:
 
 'scope' @ [208:13] ==> val scope: LexicalScope defined in org.jetbrains.kotlin.idea.refactoring.rename.checkUsagesRetargeting[LocalVariableDescriptor]
 
-'getRelevantDescriptors' @ [208:19] ==> private fun LexicalScope.getRelevantDescriptors(declaration: PsiNamedElement, name: String): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'getRelevantDescriptors' @ [208:19] ==> private fun LexicalScope.getRelevantDescriptors(declaration: PsiNamedElement, name: String): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [208:42] ==> value-parameter declaration: PsiNamedElement defined in org.jetbrains.kotlin.idea.refactoring.rename.checkUsagesRetargeting[ValueParameterDescriptorImpl]
 
@@ -562,8 +556,6 @@ Inferred types:
 'declarationDescriptor' @ [218:93] ==> public final val TypeConstructor.declarationDescriptor: ClassifierDescriptor?[MyPropertyDescriptor]
 
 'FqName' @ [219:41] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
-
-'IdeDescriptorRenderers' @ [219:48] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [219:71] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -671,7 +663,7 @@ Inferred types:
 
 'newFqName' @ [229:91] ==> val newFqName: FqName defined in org.jetbrains.kotlin.idea.refactoring.rename.checkUsagesRetargeting[LocalVariableDescriptor]
 
-'reportShadowing' @ [232:17] ==> public fun reportShadowing(declaration: PsiNamedElement, elementToBindUsageInfoTo: PsiElement, candidateDescriptor: DeclarationDescriptor, refElement: PsiElement, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'reportShadowing' @ [232:17] ==> public fun reportShadowing(declaration: PsiNamedElement, elementToBindUsageInfoTo: PsiElement, candidateDescriptor: DeclarationDescriptor, refElement: PsiElement, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [232:33] ==> value-parameter declaration: PsiNamedElement defined in org.jetbrains.kotlin.idea.refactoring.rename.checkUsagesRetargeting[ValueParameterDescriptorImpl]
 
@@ -687,7 +679,7 @@ Inferred types:
 
 'call' @ [237:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [237:48] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -745,13 +737,13 @@ Inferred types:
 
 'resolvedCall' @ [240:39] ==> val resolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.refactoring.rename.checkUsagesRetargeting[LocalVariableDescriptor]
 
-'noReceivers' @ [240:52] ==> internal fun ResolvedCall<*>.noReceivers(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'noReceivers' @ [240:52] ==> internal fun ResolvedCall<*>.noReceivers(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [241:39] ==> val resolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.refactoring.rename.checkUsagesRetargeting[LocalVariableDescriptor]
 
 'resultingDescriptor' @ [241:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resultingDescriptor' @ [243:21] ==> val resultingDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.refactoring.rename.checkUsagesRetargeting[LocalVariableDescriptor]
 
@@ -765,8 +757,6 @@ Inferred types:
     <R> -> FqName
 
 'FqName' @ [245:25] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
-
-'IdeDescriptorRenderers' @ [245:32] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [245:55] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -991,7 +981,7 @@ Inferred types:
 
 'candidateDescriptor' @ [294:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'getImportableDescriptor' @ [294:67] ==> public fun DeclarationDescriptor.getImportableDescriptor(): DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -1017,13 +1007,13 @@ Inferred types:
 
 'candidateDescriptor' @ [298:29] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'canonicalRender' @ [298:49] ==> internal fun DeclarationDescriptor.canonicalRender(): String defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'candidateText' @ [298:70] ==> val candidateText: String? defined in org.jetbrains.kotlin.idea.refactoring.rename.checkUsagesRetargeting[LocalVariableDescriptor]
 
-'reportShadowing' @ [299:13] ==> public fun reportShadowing(declaration: PsiNamedElement, elementToBindUsageInfoTo: PsiElement, candidateDescriptor: DeclarationDescriptor, refElement: PsiElement, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'reportShadowing' @ [299:13] ==> public fun reportShadowing(declaration: PsiNamedElement, elementToBindUsageInfoTo: PsiElement, candidateDescriptor: DeclarationDescriptor, refElement: PsiElement, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [299:29] ==> value-parameter declaration: PsiNamedElement defined in org.jetbrains.kotlin.idea.refactoring.rename.checkUsagesRetargeting[ValueParameterDescriptorImpl]
 
@@ -1033,7 +1023,7 @@ Inferred types:
 
 'candidateDescriptor' @ [299:85] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'refElement' @ [299:106] ==> val refElement: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.refactoring.rename.checkUsagesRetargeting[LocalVariableDescriptor]
 
@@ -1057,13 +1047,13 @@ Inferred types:
 
 'getResolutionScope' @ [315:45] ==> public fun KtElement.getResolutionScope(): LexicalScope defined in org.jetbrains.kotlin.idea.util[DeserializedSimpleFunctionDescriptor]
 
-'getRelevantDescriptors' @ [315:66] ==> private fun LexicalScope.getRelevantDescriptors(declaration: PsiNamedElement, name: String): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'getRelevantDescriptors' @ [315:66] ==> private fun LexicalScope.getRelevantDescriptors(declaration: PsiNamedElement, name: String): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [315:89] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.checkOriginalUsagesRetargeting[ValueParameterDescriptorImpl]
 
 'newName' @ [315:102] ==> value-parameter newName: String defined in org.jetbrains.kotlin.idea.refactoring.rename.checkOriginalUsagesRetargeting[ValueParameterDescriptorImpl]
 
-'checkUsagesRetargeting' @ [316:5] ==> private fun checkUsagesRetargeting(elementToBindUsageInfosTo: PsiElement, declaration: PsiNamedElement, name: String, isNewName: Boolean, accessibleDescriptors: Collection<DeclarationDescriptor>, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkUsagesRetargeting' @ [316:5] ==> private fun checkUsagesRetargeting(elementToBindUsageInfosTo: PsiElement, declaration: PsiNamedElement, name: String, isNewName: Boolean, accessibleDescriptors: Collection<DeclarationDescriptor>, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [316:28] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.checkOriginalUsagesRetargeting[ValueParameterDescriptorImpl]
 
@@ -1149,7 +1139,7 @@ Inferred types:
 
 'SmartList' @ [339:65] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> UsageInfo
+    <E : (Any..Any?)> -> (com.intellij.usageView.UsageInfo..com.intellij.usageView.UsageInfo?)
 
 'add' @ [339:79] ==> public abstract fun add(element: UsageInfo): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
@@ -1171,7 +1161,7 @@ Inferred types:
 
 'usagesByCandidate' @ [344:37] ==> val usagesByCandidate: LinkedHashMap<PsiElement, MutableList<UsageInfo>> defined in org.jetbrains.kotlin.idea.refactoring.rename.checkNewNameUsagesRetargeting[LocalVariableDescriptor]
 
-'checkUsagesRetargeting' @ [345:13] ==> private fun checkUsagesRetargeting(elementToBindUsageInfosTo: PsiElement, declaration: PsiNamedElement, name: String, isNewName: Boolean, accessibleDescriptors: Collection<DeclarationDescriptor>, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkUsagesRetargeting' @ [345:13] ==> private fun checkUsagesRetargeting(elementToBindUsageInfosTo: PsiElement, declaration: PsiNamedElement, name: String, isNewName: Boolean, accessibleDescriptors: Collection<DeclarationDescriptor>, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'candidate' @ [345:36] ==> val candidate: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.rename.checkNewNameUsagesRetargeting[LocalVariableDescriptor]
 
@@ -1202,7 +1192,7 @@ Inferred types:
 
 'getResolutionScope' @ [352:45] ==> public fun KtElement.getResolutionScope(): LexicalScope defined in org.jetbrains.kotlin.idea.util[DeserializedSimpleFunctionDescriptor]
 
-'getRelevantDescriptors' @ [352:66] ==> private fun LexicalScope.getRelevantDescriptors(declaration: PsiNamedElement, name: String): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'getRelevantDescriptors' @ [352:66] ==> private fun LexicalScope.getRelevantDescriptors(declaration: PsiNamedElement, name: String): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [352:89] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.checkNewNameUsagesRetargeting[ValueParameterDescriptorImpl]
 
@@ -1248,7 +1238,7 @@ Inferred types:
 
 'candidate' @ [356:74] ==> val candidate: PsiNamedElement defined in org.jetbrains.kotlin.idea.refactoring.rename.checkNewNameUsagesRetargeting[LocalVariableDescriptor]
 
-'checkUsagesRetargeting' @ [357:9] ==> private fun checkUsagesRetargeting(elementToBindUsageInfosTo: PsiElement, declaration: PsiNamedElement, name: String, isNewName: Boolean, accessibleDescriptors: Collection<DeclarationDescriptor>, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkUsagesRetargeting' @ [357:9] ==> private fun checkUsagesRetargeting(elementToBindUsageInfosTo: PsiElement, declaration: PsiNamedElement, name: String, isNewName: Boolean, accessibleDescriptors: Collection<DeclarationDescriptor>, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'candidate' @ [357:32] ==> val candidate: PsiNamedElement defined in org.jetbrains.kotlin.idea.refactoring.rename.checkNewNameUsagesRetargeting[LocalVariableDescriptor]
 

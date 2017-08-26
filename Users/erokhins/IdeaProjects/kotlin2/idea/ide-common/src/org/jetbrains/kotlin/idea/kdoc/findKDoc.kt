@@ -30,8 +30,6 @@
 
 'findSectionByTag' @ [41:51] ==> public abstract fun findSectionByTag(tag: KDocKnownTag): KDocSection? defined in org.jetbrains.kotlin.kdoc.psi.api.KDoc[DeserializedSimpleFunctionDescriptor]
 
-'KDocKnownTag' @ [41:68] ==> public companion object defined in org.jetbrains.kotlin.kdoc.parser.KDocKnownTag[FakeCallableDescriptorForObject]
-
 'CONSTRUCTOR' @ [41:81] ==> enum entry CONSTRUCTOR defined in org.jetbrains.kotlin.kdoc.parser.KDocKnownTag[FakeCallableDescriptorForObject]
 
 'constructorSection' @ [42:25] ==> val constructorSection: KDocSection? defined in org.jetbrains.kotlin.idea.kdoc.findKDoc[LocalVariableDescriptor]
@@ -63,8 +61,6 @@ Inferred types:
 'classKDoc' @ [56:39] ==> val classKDoc: KDoc? defined in org.jetbrains.kotlin.idea.kdoc.findKDoc[LocalVariableDescriptor]
 
 'findSectionByTag' @ [56:49] ==> public abstract fun findSectionByTag(tag: KDocKnownTag, subjectName: String): KDocSection? defined in org.jetbrains.kotlin.kdoc.psi.api.KDoc[DeserializedSimpleFunctionDescriptor]
-
-'KDocKnownTag' @ [56:66] ==> public companion object defined in org.jetbrains.kotlin.kdoc.parser.KDocKnownTag[FakeCallableDescriptorForObject]
 
 'PROPERTY' @ [56:79] ==> enum entry PROPERTY defined in org.jetbrains.kotlin.kdoc.parser.KDocKnownTag[FakeCallableDescriptorForObject]
 

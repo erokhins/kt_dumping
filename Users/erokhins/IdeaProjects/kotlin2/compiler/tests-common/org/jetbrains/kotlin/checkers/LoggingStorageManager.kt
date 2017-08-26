@@ -50,13 +50,13 @@ Inferred types:
 
 'java' @ [57:41] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'lambdaClass' @ [59:44] ==> val lambdaClass: Class<out Any> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.computeCallerData[LocalVariableDescriptor]
 
 'enclosingClass' @ [59:56] ==> public final val <T : (Any..Any?)> Class<out Any>.enclosingClass: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'lambdaClass' @ [62:32] ==> val lambdaClass: Class<out Any> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.computeCallerData[LocalVariableDescriptor]
 
@@ -102,7 +102,7 @@ Inferred types:
 
 'name' @ [72:26] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'startsWith' @ [72:32] ==> public fun String.startsWith(prefix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -150,7 +150,7 @@ Inferred types:
 
 'java' @ [82:65] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'valueClass' @ [83:55] ==> val valueClass: Class<out Any> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.computeCallerData.<anonymous>[LocalVariableDescriptor]
 
@@ -198,9 +198,9 @@ Inferred types:
 
 'wrappedLambda' @ [96:70] ==> val wrappedLambda: (Any..Any?) defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.computeCallerData[LocalVariableDescriptor]
 
-'java' @ [96:91] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [96:91] ==> public val <T> KClass<out (Any..Any?)>.java: Class<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out (kotlin.Any..kotlin.Any?))
 
 'arguments' @ [96:98] ==> value-parameter arguments: List<Any?> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.computeCallerData[ValueParameterDescriptorImpl]
 
@@ -226,19 +226,19 @@ Inferred types:
 
 'enclosingConstructor' @ [106:19] ==> public final val <T : (Any..Any?)> Class<out Any>.enclosingConstructor: (Constructor<*>..Constructor<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'klass' @ [106:43] ==> value-parameter klass: Class<out Any> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.enclosingEntity[ValueParameterDescriptorImpl]
 
 'enclosingMethod' @ [106:49] ==> public final val <T : (Any..Any?)> Class<out Any>.enclosingMethod: (Method..Method?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'klass' @ [106:68] ==> value-parameter klass: Class<out Any> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.enclosingEntity[ValueParameterDescriptorImpl]
 
 'enclosingClass' @ [106:74] ==> public final val <T : (Any..Any?)> Class<out Any>.enclosingClass: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'arrayListOf' @ [109:22] ==> @SinceKotlin @InlineOnly public inline fun <T> arrayListOf(): ArrayList<Field> /* = ArrayList<Field> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -254,7 +254,7 @@ Inferred types:
 
 'declaredFields' @ [113:29] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'toList' @ [113:44] ==> public fun <T> Array<out (Field..Field?)>.toList(): List<(Field..Field?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -262,9 +262,9 @@ Inferred types:
 
 'Suppress' @ [114:13] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'?:' @ [115:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Class<in Any>?, right: Class<in Any>): Class<in Any>[SimpleFunctionDescriptorImpl]
+'?:' @ [115:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Class<in (Any..Any?)>?, right: Class<in (Any..Any?)>): Class<in (Any..Any?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Class<in Any>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Class<in (kotlin.Any..kotlin.Any?)>
 
 'c' @ [115:31] ==> var c: Class<*> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.getAllDeclaredFields[LocalVariableDescriptor]
 
@@ -274,11 +274,11 @@ Inferred types:
 
 'c' @ [116:17] ==> var c: Class<*> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.getAllDeclaredFields[LocalVariableDescriptor]
 
-'superClass' @ [116:22] ==> val superClass: Class<in Any> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.getAllDeclaredFields[LocalVariableDescriptor]
+'superClass' @ [116:22] ==> val superClass: Class<in (Any..Any?)> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.getAllDeclaredFields[LocalVariableDescriptor]
 
 'c' @ [117:13] ==> var c: Class<*> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.getAllDeclaredFields[LocalVariableDescriptor]
 
-'superClass' @ [117:17] ==> val superClass: Class<in Any> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.getAllDeclaredFields[LocalVariableDescriptor]
+'superClass' @ [117:17] ==> val superClass: Class<in (Any..Any?)> defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.getAllDeclaredFields[LocalVariableDescriptor]
 
 'result' @ [120:16] ==> val result: ArrayList<Field> /* = ArrayList<Field> */ defined in org.jetbrains.kotlin.checkers.LoggingStorageManager.getAllDeclaredFields[LocalVariableDescriptor]
 

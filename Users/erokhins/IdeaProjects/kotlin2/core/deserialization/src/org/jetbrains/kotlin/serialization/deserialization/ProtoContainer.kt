@@ -54,11 +54,11 @@ Inferred types:
 
 'java' @ [56:46] ==> public val <T> KClass<out ProtoContainer>.java: Class<out ProtoContainer> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ProtoContainer
+    <T> -> Captured(out ProtoContainer)
 
 'simpleName' @ [56:51] ==> public final val <T : (Any..Any?)> Class<out ProtoContainer>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ProtoContainer
+    <T : (Any..Any?)> -> Captured(out ProtoContainer)
 
 'debugFqName' @ [56:66] ==> public abstract fun debugFqName(): FqName defined in org.jetbrains.kotlin.serialization.deserialization.ProtoContainer[SimpleFunctionDescriptorImpl]
 

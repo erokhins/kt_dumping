@@ -60,7 +60,7 @@
 
 'getService' @ [71:32] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(ScriptDependenciesManager..ScriptDependenciesManager?)>): (ScriptDependenciesManager..ScriptDependenciesManager?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScriptDependenciesManager
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager..org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager?)
 
 'project' @ [71:43] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager.Companion.getInstance[ValueParameterDescriptorImpl]
 
@@ -137,7 +137,9 @@ Inferred types:
 
 'project' @ [92:30] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager.Companion.updateScriptDependenciesSynchronously[ValueParameterDescriptorImpl]
 
-'KotlinScriptDefinitionProvider' @ [93:40] ==> public companion object defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider[FakeCallableDescriptorForObject]
+'!!' @ [93:40] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KotlinScriptDefinitionProvider?): KotlinScriptDefinitionProvider[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KotlinScriptDefinitionProvider
 
 'getInstance' @ [93:71] ==> @JvmStatic public final fun getInstance(project: Project): KotlinScriptDefinitionProvider? defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider.Companion[DeserializedSimpleFunctionDescriptor]
 

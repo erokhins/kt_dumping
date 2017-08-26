@@ -16,13 +16,9 @@ Inferred types:
 
 'identifier' @ [46:13] ==> val identifier: Name? defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceCallWithComparisonInspection.<init>.<anonymous>[LocalVariableDescriptor]
 
-'OperatorNameConventions' @ [46:27] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'EQUALS' @ [46:51] ==> @field:JvmField public final val EQUALS: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'identifier' @ [46:61] ==> val identifier: Name? defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceCallWithComparisonInspection.<init>.<anonymous>[LocalVariableDescriptor]
-
-'OperatorNameConventions' @ [46:75] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'COMPARE_TO' @ [46:99] ==> @field:JvmField public final val COMPARE_TO: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -78,7 +74,7 @@ Inferred types:
 
 'element' @ [69:28] ==> value-parameter element: KtDotQualifiedExpression defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceCallWithBinaryOperatorIntention.applicabilityRange[ValueParameterDescriptorImpl]
 
-'toResolvedCall' @ [69:36] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'toResolvedCall' @ [69:36] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'PARTIAL' @ [69:67] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
@@ -92,7 +88,7 @@ Inferred types:
 
 'call' @ [71:26] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'typeArgumentList' @ [71:31] ==> public final val Call.typeArgumentList: KtTypeArgumentList?[MyPropertyDescriptor]
 
@@ -100,7 +96,7 @@ Inferred types:
 
 'call' @ [72:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueArguments' @ [72:42] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
@@ -307,7 +303,7 @@ Inferred types:
 
 'dotQualified' @ [115:36] ==> val dotQualified: KtDotQualifiedExpression defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceCallWithBinaryOperatorIntention.operation[LocalVariableDescriptor]
 
-'toResolvedCall' @ [115:49] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'toResolvedCall' @ [115:49] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'PARTIAL' @ [115:80] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
@@ -315,7 +311,7 @@ Inferred types:
 
 'resultingDescriptor' @ [116:58] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'findOriginalTopMostOverriddenDescriptors' @ [116:78] ==> public fun <D : CallableDescriptor> CallableDescriptor.findOriginalTopMostOverriddenDescriptors(): Set<CallableDescriptor> defined in org.jetbrains.kotlin.resolve[DeserializedSimpleFunctionDescriptor]
 Inferred types:

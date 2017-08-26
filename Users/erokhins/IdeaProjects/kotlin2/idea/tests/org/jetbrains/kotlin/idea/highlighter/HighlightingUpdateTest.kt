@@ -26,7 +26,7 @@
 
 'editorHighlighter' @ [39:13] ==> val editorHighlighter: LexerEditorHighlighter defined in org.jetbrains.kotlin.idea.highlighter.HighlightingUpdateTest.testUpdateWithBackticks[LocalVariableDescriptor]
 
-'assertHighlighterIteratorTokens' @ [39:31] ==> private fun LexerEditorHighlighter.assertHighlighterIteratorTokens(vararg tokens: IElementType): Unit defined in org.jetbrains.kotlin.idea.highlighter[SimpleFunctionDescriptorImpl]
+'assertHighlighterIteratorTokens' @ [39:31] ==> private fun LexerEditorHighlighter.assertHighlighterIteratorTokens(vararg tokens: IElementType): Unit defined in org.jetbrains.kotlin.idea.highlighter in file HighlightingUpdateTest.kt[SimpleFunctionDescriptorImpl]
 
 'FUN_KEYWORD' @ [39:72] ==> public final val FUN_KEYWORD: (KtKeywordToken..KtKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
@@ -48,7 +48,7 @@
 
 'editorHighlighter' @ [43:13] ==> val editorHighlighter: LexerEditorHighlighter defined in org.jetbrains.kotlin.idea.highlighter.HighlightingUpdateTest.testUpdateWithBackticks[LocalVariableDescriptor]
 
-'assertHighlighterIteratorTokens' @ [43:31] ==> private fun LexerEditorHighlighter.assertHighlighterIteratorTokens(vararg tokens: IElementType): Unit defined in org.jetbrains.kotlin.idea.highlighter[SimpleFunctionDescriptorImpl]
+'assertHighlighterIteratorTokens' @ [43:31] ==> private fun LexerEditorHighlighter.assertHighlighterIteratorTokens(vararg tokens: IElementType): Unit defined in org.jetbrains.kotlin.idea.highlighter in file HighlightingUpdateTest.kt[SimpleFunctionDescriptorImpl]
 
 'FUN_KEYWORD' @ [43:72] ==> public final val FUN_KEYWORD: (KtKeywordToken..KtKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
@@ -68,7 +68,7 @@
 
 'editorHighlighter' @ [47:13] ==> val editorHighlighter: LexerEditorHighlighter defined in org.jetbrains.kotlin.idea.highlighter.HighlightingUpdateTest.testUpdateWithBackticks[LocalVariableDescriptor]
 
-'assertHighlighterIteratorTokens' @ [47:31] ==> private fun LexerEditorHighlighter.assertHighlighterIteratorTokens(vararg tokens: IElementType): Unit defined in org.jetbrains.kotlin.idea.highlighter[SimpleFunctionDescriptorImpl]
+'assertHighlighterIteratorTokens' @ [47:31] ==> private fun LexerEditorHighlighter.assertHighlighterIteratorTokens(vararg tokens: IElementType): Unit defined in org.jetbrains.kotlin.idea.highlighter in file HighlightingUpdateTest.kt[SimpleFunctionDescriptorImpl]
 
 'FUN_KEYWORD' @ [47:72] ==> public final val FUN_KEYWORD: (KtKeywordToken..KtKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 

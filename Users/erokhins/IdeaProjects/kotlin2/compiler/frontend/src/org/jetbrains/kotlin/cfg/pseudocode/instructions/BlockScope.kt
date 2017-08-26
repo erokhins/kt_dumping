@@ -4,9 +4,9 @@
 
 'depth' @ [23:36] ==> public final val depth: Int defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.BlockScope[PropertyDescriptorImpl]
 
-'lazy' @ [25:60] ==> public fun <T> lazy(initializer: () -> BlockScope?): Lazy<BlockScope?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [25:60] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> BlockScope?
+    <T> -> T
 
 'this' @ [26:34] ==> <this> defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.BlockScope[LazyClassReceiverParameterDescriptor]
 

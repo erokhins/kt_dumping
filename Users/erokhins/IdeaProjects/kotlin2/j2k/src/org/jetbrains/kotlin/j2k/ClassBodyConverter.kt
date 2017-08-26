@@ -680,7 +680,7 @@ Inferred types:
 
 'referenceSearcher' @ [188:87] ==> public final val referenceSearcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.Converter[PropertyDescriptorImpl]
 
-'findMethodCalls' @ [188:105] ==> public fun ReferenceSearcher.findMethodCalls(method: PsiMethod, scope: PsiElement): Collection<PsiMethodCallExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findMethodCalls' @ [188:105] ==> public fun ReferenceSearcher.findMethodCalls(method: PsiMethod, scope: PsiElement): Collection<PsiMethodCallExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [188:121] ==> value-parameter it: PsiMember defined in org.jetbrains.kotlin.j2k.ClassBodyConverter.shouldGenerateCompanionObject.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 

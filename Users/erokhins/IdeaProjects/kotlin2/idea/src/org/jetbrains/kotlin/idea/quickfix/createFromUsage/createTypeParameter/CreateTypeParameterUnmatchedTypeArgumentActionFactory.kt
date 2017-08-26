@@ -49,7 +49,7 @@ Inferred types:
 
 'resultingDescriptor' @ [48:66] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'DescriptorToSourceUtilsIde' @ [51:37] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
 
@@ -149,4 +149,8 @@ Inferred types:
 Inferred types:
     <T> -> QuickFixWithDelegateFactory
     <R> -> List<QuickFixWithDelegateFactory>
+
+'listOf' @ [83:17] ==> public fun <T> listOf(element: QuickFixWithDelegateFactory): List<QuickFixWithDelegateFactory> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> QuickFixWithDelegateFactory
 

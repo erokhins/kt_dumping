@@ -21,14 +21,14 @@ Inferred types:
 
 'builtIns' @ [40:74] ==> public final val TypeConstructor.builtIns: KotlinBuiltIns[MyPropertyDescriptor]
 
-'run' @ [40:83] ==> @InlineOnly public inline fun <T, R> KotlinBuiltIns.run(block: (KotlinBuiltIns).() -> SimpleType): SimpleType defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'run' @ [40:83] ==> @InlineOnly public inline fun <T, R> KotlinBuiltIns.run(block: (KotlinBuiltIns).() -> UnwrappedType): UnwrappedType defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KotlinBuiltIns
-    <R> -> SimpleType
+    <R> -> UnwrappedType
 
-'if (direction == ResolveDirection.TO_SUBTYPE) nothingType else nullableAnyType' @ [41:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: SimpleType, elseBranch: SimpleType): SimpleType[SimpleFunctionDescriptorImpl]
+'if (direction == ResolveDirection.TO_SUBTYPE) nothingType else nullableAnyType' @ [41:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: UnwrappedType, elseBranch: UnwrappedType): UnwrappedType[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> SimpleType
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> UnwrappedType
 
 'direction' @ [41:17] ==> value-parameter direction: TypeVariableDirectionCalculator.ResolveDirection defined in org.jetbrains.kotlin.resolve.calls.inference.components.ResultTypeResolver.findResultType[ValueParameterDescriptorImpl]
 

@@ -18,7 +18,7 @@
 Inferred types:
     <T : CallableMemberDescriptor> -> FunctionDescriptor
 
-'findAllReachableDeclarations' @ [57:37] ==> private fun findAllReachableDeclarations(functionDescriptor: FunctionDescriptor, isBodyOwner: (DeclarationDescriptor) -> Boolean): MutableSet<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'findAllReachableDeclarations' @ [57:37] ==> private fun findAllReachableDeclarations(functionDescriptor: FunctionDescriptor, isBodyOwner: (DeclarationDescriptor) -> Boolean): MutableSet<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen in file builtinSpecialBridges.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [57:66] ==> value-parameter function: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.BuiltinSpecialBridgesUtil.generateBridgesForBuiltinSpecial[ValueParameterDescriptorImpl]
 
@@ -78,8 +78,6 @@ Inferred types:
 'it' @ [70:52] ==> value-parameter it: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.BuiltinSpecialBridgesUtil.generateBridgesForBuiltinSpecial.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [70:55] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [70:67] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [70:76] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -168,7 +166,7 @@ Inferred types:
 
 'removeAll' @ [82:35] ==> public open fun removeAll(elements: Collection<Signature>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
-'findAllReachableDeclarations' @ [82:45] ==> private fun findAllReachableDeclarations(functionDescriptor: FunctionDescriptor, isBodyOwner: (DeclarationDescriptor) -> Boolean): MutableSet<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'findAllReachableDeclarations' @ [82:45] ==> private fun findAllReachableDeclarations(functionDescriptor: FunctionDescriptor, isBodyOwner: (DeclarationDescriptor) -> Boolean): MutableSet<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen in file builtinSpecialBridges.kt[SimpleFunctionDescriptorImpl]
 
 'overridden' @ [82:74] ==> val overridden: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.BuiltinSpecialBridgesUtil.generateBridgesForBuiltinSpecial[LocalVariableDescriptor]
 
@@ -345,8 +343,6 @@ Inferred types:
 
 'modality' @ [152:21] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [152:33] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'OPEN' @ [152:42] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'function' @ [153:71] ==> value-parameter function: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.findSuperImplementationForStubDelegation[ValueParameterDescriptorImpl]
@@ -440,7 +436,7 @@ Inferred types:
 
 'candidateDescriptor' @ [194:75] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'candidateDescriptor' @ [197:12] ==> val candidateDescriptor: CallableMemberDescriptor defined in org.jetbrains.kotlin.codegen.isValueArgumentForCallToMethodWithTypeCheckBarrier[LocalVariableDescriptor]
 

@@ -16,7 +16,7 @@ Inferred types:
 
 'project' @ [36:35] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.compiler.IDELanguageSettingsProvider.getLanguageVersionSettings[ValueParameterDescriptorImpl]
 
-'getLanguageVersionSettings' @ [36:43] ==> @JvmOverloads public fun Project.getLanguageVersionSettings(contextModule: Module? = ..., extraAnalysisFlags: Map<AnalysisFlag<*>, Any?> = ...): LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[SimpleFunctionDescriptorImpl]
+'getLanguageVersionSettings' @ [36:43] ==> @JvmOverloads public fun Project.getLanguageVersionSettings(contextModule: Module? = ..., extraAnalysisFlags: Map<AnalysisFlag<*>, Any?> = ...): LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project in file Platform.kt[SimpleFunctionDescriptorImpl]
 
 'getExtraAnalysisFlags' @ [36:91] ==> private final fun getExtraAnalysisFlags(project: Project): Map<AnalysisFlag<*>, Any?> defined in org.jetbrains.kotlin.idea.compiler.IDELanguageSettingsProvider[SimpleFunctionDescriptorImpl]
 
@@ -24,7 +24,7 @@ Inferred types:
 
 'project' @ [37:25] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.compiler.IDELanguageSettingsProvider.getLanguageVersionSettings[ValueParameterDescriptorImpl]
 
-'getLanguageVersionSettings' @ [37:33] ==> @JvmOverloads public fun Project.getLanguageVersionSettings(contextModule: Module? = ..., extraAnalysisFlags: Map<AnalysisFlag<*>, Any?> = ...): LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[SimpleFunctionDescriptorImpl]
+'getLanguageVersionSettings' @ [37:33] ==> @JvmOverloads public fun Project.getLanguageVersionSettings(contextModule: Module? = ..., extraAnalysisFlags: Map<AnalysisFlag<*>, Any?> = ...): LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project in file Platform.kt[SimpleFunctionDescriptorImpl]
 
 'mutableMapOf' @ [41:19] ==> @SinceKotlin @InlineOnly public inline fun <K, V> mutableMapOf(): MutableMap<AnalysisFlag<*>, Any> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -39,7 +39,9 @@ Inferred types:
 
 'modules' @ [42:59] ==> public final val ModuleManager.modules: (Array<(Module..Module?)>..Array<out (Module..Module?)>)[MyPropertyDescriptor]
 
-'KotlinFacetSettingsProvider' @ [43:28] ==> public companion object defined in org.jetbrains.kotlin.config.KotlinFacetSettingsProvider[FakeCallableDescriptorForObject]
+'?:' @ [43:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinFacetSettings?, right: KotlinFacetSettings): KotlinFacetSettings[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinFacetSettings
 
 'getInstance' @ [43:56] ==> public final fun getInstance(project: Project): KotlinFacetSettingsProvider defined in org.jetbrains.kotlin.config.KotlinFacetSettingsProvider.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -65,15 +67,11 @@ Inferred types:
 
 'jsr305state' @ [47:40] ==> val jsr305state: Jsr305State? defined in org.jetbrains.kotlin.idea.compiler.IDELanguageSettingsProvider.getExtraAnalysisFlags[LocalVariableDescriptor]
 
-'Jsr305State' @ [47:55] ==> public companion object defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
-
 'IGNORE' @ [47:67] ==> enum entry IGNORE defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
 
 'map' @ [48:17] ==> val map: MutableMap<AnalysisFlag<*>, Any> defined in org.jetbrains.kotlin.idea.compiler.IDELanguageSettingsProvider.getExtraAnalysisFlags[LocalVariableDescriptor]
 
 'put' @ [48:21] ==> public abstract fun put(key: AnalysisFlag<*>, value: Any): Any? defined in kotlin.collections.MutableMap[DeserializedSimpleFunctionDescriptor]
-
-'AnalysisFlag' @ [48:25] ==> public companion object Flags defined in org.jetbrains.kotlin.config.AnalysisFlag[FakeCallableDescriptorForObject]
 
 'jsr305GlobalState' @ [48:38] ==> @JvmStatic public final val jsr305GlobalState: AnalysisFlag<Jsr305State> defined in org.jetbrains.kotlin.config.AnalysisFlag.Flags[DeserializedPropertyDescriptor]
 

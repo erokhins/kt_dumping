@@ -38,25 +38,25 @@ Inferred types:
 
 'secondaryConstructors' @ [33:80] ==> public final val KtClass.secondaryConstructors: List<KtSecondaryConstructor>[MyPropertyDescriptor]
 
-'constructors' @ [34:13] ==> val constructors: List<KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>> defined in org.jetbrains.kotlin.idea.intentions.ConvertClassToSealedClassIntention.applicabilityRange[LocalVariableDescriptor]
+'constructors' @ [34:13] ==> val constructors: List<KtConstructor<*>> defined in org.jetbrains.kotlin.idea.intentions.ConvertClassToSealedClassIntention.applicabilityRange[LocalVariableDescriptor]
 
 'isEmpty' @ [34:26] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
 '!' @ [35:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'constructors' @ [35:14] ==> val constructors: List<KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>> defined in org.jetbrains.kotlin.idea.intentions.ConvertClassToSealedClassIntention.applicabilityRange[LocalVariableDescriptor]
+'constructors' @ [35:14] ==> val constructors: List<KtConstructor<*>> defined in org.jetbrains.kotlin.idea.intentions.ConvertClassToSealedClassIntention.applicabilityRange[LocalVariableDescriptor]
 
-'all' @ [35:27] ==> public inline fun <T> Iterable<KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>>.all(predicate: (KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'all' @ [35:27] ==> public inline fun <T> Iterable<KtConstructor<*>>.all(predicate: (KtConstructor<*>) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>>
+    <T> -> KtConstructor<*>
 
-'it' @ [35:33] ==> value-parameter it: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>> defined in org.jetbrains.kotlin.idea.intentions.ConvertClassToSealedClassIntention.applicabilityRange.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [35:33] ==> value-parameter it: KtConstructor<*> defined in org.jetbrains.kotlin.idea.intentions.ConvertClassToSealedClassIntention.applicabilityRange.<anonymous>[ValueParameterDescriptorImpl]
 
 'hasModifier' @ [35:36] ==> public open fun hasModifier(@NotNull p0: KtModifierKeywordToken): Boolean defined in org.jetbrains.kotlin.psi.KtConstructor[JavaMethodDescriptor]
 
 'PRIVATE_KEYWORD' @ [35:48] ==> public final val PRIVATE_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'it' @ [35:68] ==> value-parameter it: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<*>>>>>> defined in org.jetbrains.kotlin.idea.intentions.ConvertClassToSealedClassIntention.applicabilityRange.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [35:68] ==> value-parameter it: KtConstructor<*> defined in org.jetbrains.kotlin.idea.intentions.ConvertClassToSealedClassIntention.applicabilityRange.<anonymous>[ValueParameterDescriptorImpl]
 
 'getAnnotationEntries' @ [35:71] ==> @NotNull public open fun getAnnotationEntries(): (MutableList<(KtAnnotationEntry..KtAnnotationEntry?)>..List<(KtAnnotationEntry..KtAnnotationEntry?)>) defined in org.jetbrains.kotlin.psi.KtConstructor[JavaMethodDescriptor]
 

@@ -8,7 +8,7 @@ Inferred types:
 
 'nil' @ [115:52] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCTypeParameter
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCTypeParameter..com.sun.tools.javac.tree.JCTree.JCTypeParameter?)
 
 'rawSuperClass' @ [115:59] ==> value-parameter rawSuperClass: JCTree.JCExpression defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseClassSignature[ValueParameterDescriptorImpl]
 
@@ -18,15 +18,15 @@ Inferred types:
 
 'signature' @ [118:26] ==> value-parameter signature: String? defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseClassSignature[ValueParameterDescriptorImpl]
 
-'smartList' @ [119:30] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'smartList' @ [119:30] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
-'smartList' @ [120:28] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'smartList' @ [120:28] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
-'smartList' @ [121:26] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'smartList' @ [121:26] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'root' @ [122:9] ==> val root: SignatureNode defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseClassSignature[LocalVariableDescriptor]
 
-'split' @ [122:14] ==> private fun SignatureNode.split(l1: MutableList<SignatureNode>, e1: ElementKind, l2: MutableList<SignatureNode>, e2: ElementKind, l3: MutableList<SignatureNode>, e3: ElementKind): Unit defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'split' @ [122:14] ==> private fun SignatureNode.split(l1: MutableList<SignatureNode>, e1: ElementKind, l2: MutableList<SignatureNode>, e2: ElementKind, l3: MutableList<SignatureNode>, e3: ElementKind): Unit defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameters' @ [122:20] ==> val typeParameters: SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseClassSignature[LocalVariableDescriptor]
 
@@ -129,7 +129,7 @@ Inferred types:
 
 'nil' @ [142:53] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCTypeParameter
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCTypeParameter..com.sun.tools.javac.tree.JCTree.JCTypeParameter?)
 
 'parameters' @ [142:60] ==> val parameters: List<JCTree.JCVariableDecl> defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseMethodSignature[LocalVariableDescriptor]
 
@@ -141,17 +141,17 @@ Inferred types:
 
 'signature' @ [145:26] ==> value-parameter signature: String? defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseMethodSignature[ValueParameterDescriptorImpl]
 
-'smartList' @ [146:30] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'smartList' @ [146:30] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
-'smartList' @ [147:30] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'smartList' @ [147:30] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
-'smartList' @ [148:30] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'smartList' @ [148:30] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
-'smartList' @ [149:27] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'smartList' @ [149:27] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'root' @ [150:9] ==> val root: SignatureNode defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseMethodSignature[LocalVariableDescriptor]
 
-'split' @ [150:14] ==> private fun SignatureNode.split(l1: MutableList<SignatureNode>, e1: ElementKind, l2: MutableList<SignatureNode>, e2: ElementKind, l3: MutableList<SignatureNode>, e3: ElementKind, l4: MutableList<SignatureNode>, e4: ElementKind): Unit defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'split' @ [150:14] ==> private fun SignatureNode.split(l1: MutableList<SignatureNode>, e1: ElementKind, l2: MutableList<SignatureNode>, e2: ElementKind, l3: MutableList<SignatureNode>, e3: ElementKind, l4: MutableList<SignatureNode>, e4: ElementKind): Unit defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameters' @ [150:20] ==> val typeParameters: SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseMethodSignature[LocalVariableDescriptor]
 
@@ -326,13 +326,13 @@ Inferred types:
 
 'TypeParameter' @ [180:29] ==> enum entry TypeParameter defined in org.jetbrains.kotlin.kapt3.stubs.ElementKind[FakeCallableDescriptorForObject]
 
-'smartList' @ [182:27] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'smartList' @ [182:27] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
-'smartList' @ [183:31] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'smartList' @ [183:31] ==> private fun smartList(): SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'node' @ [184:9] ==> value-parameter node: SignatureNode defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseTypeParameter[ValueParameterDescriptorImpl]
 
-'split' @ [184:14] ==> private fun SignatureNode.split(l1: MutableList<SignatureNode>, e1: ElementKind, l2: MutableList<SignatureNode>, e2: ElementKind): Unit defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'split' @ [184:14] ==> private fun SignatureNode.split(l1: MutableList<SignatureNode>, e1: ElementKind, l2: MutableList<SignatureNode>, e2: ElementKind): Unit defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'classBounds' @ [184:20] ==> val classBounds: SmartList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseTypeParameter[LocalVariableDescriptor]
 
@@ -483,7 +483,7 @@ Inferred types:
 
 'node' @ [204:17] ==> value-parameter node: SignatureNode defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseType[ValueParameterDescriptorImpl]
 
-'split' @ [204:22] ==> private fun SignatureNode.split(l1: MutableList<SignatureNode>, e1: ElementKind, l2: MutableList<SignatureNode>, e2: ElementKind): Unit defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'split' @ [204:22] ==> private fun SignatureNode.split(l1: MutableList<SignatureNode>, e1: ElementKind, l2: MutableList<SignatureNode>, e2: ElementKind): Unit defined in org.jetbrains.kotlin.kapt3.stubs in file SignatureParserVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'typeArgs' @ [204:28] ==> val typeArgs: MutableList<SignatureNode> defined in org.jetbrains.kotlin.kapt3.stubs.SignatureParser.parseType[LocalVariableDescriptor]
 

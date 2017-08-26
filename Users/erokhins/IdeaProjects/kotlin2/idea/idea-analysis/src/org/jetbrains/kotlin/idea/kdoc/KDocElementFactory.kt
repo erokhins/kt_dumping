@@ -16,7 +16,7 @@ Inferred types:
 
 'findChildOfType' @ [31:28] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> findChildOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KDoc..KDoc?)>): KDoc? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KDoc
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.kdoc.psi.api.KDoc..org.jetbrains.kotlin.kdoc.psi.api.KDoc?)
 
 'function' @ [31:44] ==> val function: KtFunction defined in org.jetbrains.kotlin.idea.kdoc.KDocElementFactory.createKDocFromText[LocalVariableDescriptor]
 

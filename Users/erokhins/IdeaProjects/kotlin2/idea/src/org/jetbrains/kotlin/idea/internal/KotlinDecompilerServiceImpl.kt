@@ -8,7 +8,7 @@ Inferred types:
 
 'file' @ [40:13] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.internal.KotlinDecompilerServiceImpl.decompile[ValueParameterDescriptorImpl]
 
-'canBeDecompiledToJava' @ [40:18] ==> public fun KtFile.canBeDecompiledToJava(): Boolean defined in org.jetbrains.kotlin.idea.actions[SimpleFunctionDescriptorImpl]
+'canBeDecompiledToJava' @ [40:18] ==> public fun KtFile.canBeDecompiledToJava(): Boolean defined in org.jetbrains.kotlin.idea.actions in file DecompileKotlinToJavaAction.kt[SimpleFunctionDescriptorImpl]
 
 'bytecodeMapForExistingClassfile' @ [40:45] ==> private final fun bytecodeMapForExistingClassfile(file: VirtualFile): Map<File, () -> ByteArray> defined in org.jetbrains.kotlin.idea.internal.KotlinDecompilerServiceImpl[SimpleFunctionDescriptorImpl]
 
@@ -40,7 +40,7 @@ Inferred types:
 
 'REMOVE_BRIDGE' @ [46:40] ==> public const final val REMOVE_BRIDGE: String defined in org.jetbrains.java.decompiler.main.extern.IFernflowerPreferences[JavaPropertyDescriptor]
 
-'IBytecodeProvider' @ [49:32] ==> public fun IBytecodeProvider(function: ((String..String?), (String..String?)) -> (ByteArray..ByteArray?)): IBytecodeProvider defined in org.jetbrains.java.decompiler.main.extern[SimpleFunctionDescriptorImpl]
+'IBytecodeProvider' @ [49:32] ==> public fun IBytecodeProvider(function: ((String..String?), (String..String?)) -> (ByteArray..ByteArray?)): IBytecodeProvider defined in org.jetbrains.java.decompiler.main.extern[SamConstructorDescriptorImpl]
 
 'File' @ [51:24] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 

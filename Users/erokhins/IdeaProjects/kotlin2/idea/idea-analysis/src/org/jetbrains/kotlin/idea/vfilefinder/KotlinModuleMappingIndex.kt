@@ -5,8 +5,8 @@ Inferred types:
 
 'create' @ [31:44] ==> @NotNull public open fun <K : (Any..Any?), V : (Any..Any?)> create(@NonNls @NotNull p0: String): ID<(String..String?), (PackageParts..PackageParts?)> defined in com.intellij.util.indexing.ID[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> PackageParts
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.PackageParts..org.jetbrains.kotlin.load.kotlin.PackageParts?)
 
 'KotlinModuleMappingIndex' @ [31:51] ==> public object KotlinModuleMappingIndex : FileBasedIndexExtension<String, PackageParts> defined in org.jetbrains.kotlin.idea.vfilefinder in file KotlinModuleMappingIndex.kt[FakeCallableDescriptorForObject]
 
@@ -86,6 +86,8 @@ Inferred types:
 
 'this' @ [51:58] ==> <this> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex.VALUE_EXTERNALIZER.<no name provided>.read.<anonymous>[ReceiverParameterDescriptorImpl]
 
+'addMetadataPart' @ [51:64] ==> public final fun addMetadataPart(shortName: String): Unit defined in org.jetbrains.kotlin.load.kotlin.PackageParts[DeserializedSimpleFunctionDescriptor]
+
 'writeUTF' @ [55:20] ==> public open fun writeUTF(@NotNull p0: DataOutput, @NotNull p1: String): Unit defined in com.intellij.util.io.IOUtil[JavaMethodDescriptor]
 
 'out' @ [55:29] ==> value-parameter out: DataOutput defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex.VALUE_EXTERNALIZER.<no name provided>.save[ValueParameterDescriptorImpl]
@@ -137,13 +139,11 @@ Inferred types:
 
 'VALUE_EXTERNALIZER' @ [68:43] ==> private final val VALUE_EXTERNALIZER: <no name provided> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex[PropertyDescriptorImpl]
 
-'InputFilter' @ [71:31] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SimpleFunctionDescriptorImpl]
+'InputFilter' @ [71:31] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SamConstructorDescriptorImpl]
 
 'file' @ [71:53] ==> value-parameter file: VirtualFile defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex.getInputFilter.<anonymous>[ValueParameterDescriptorImpl]
 
 'extension' @ [71:58] ==> public final val VirtualFile.extension: String?[MyPropertyDescriptor]
-
-'ModuleMapping' @ [71:71] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping[FakeCallableDescriptorForObject]
 
 'MAPPING_FILE_EXT' @ [71:85] ==> @field:JvmField public final val MAPPING_FILE_EXT: String defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping.Companion[DeserializedPropertyDescriptor]
 

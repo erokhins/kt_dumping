@@ -8,9 +8,9 @@
 
 'resultSet' @ [44:76] ==> value-parameter resultSet: CompletionResultSet defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [46:64] ==> public fun <T> lazy(initializer: () -> DescriptorKindFilter): Lazy<DescriptorKindFilter> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [46:64] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> DescriptorKindFilter
+    <T> -> T
 
 'DescriptorKindFilter' @ [48:22] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
@@ -22,7 +22,7 @@ Inferred types:
 
 'expectedInfos' @ [50:30] ==> public final val expectedInfos: Collection<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion[PropertyDescriptorImpl]
 
-'filterFunctionExpected' @ [50:45] ==> public fun Collection<ExpectedInfo>.filterFunctionExpected(): List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'filterFunctionExpected' @ [50:45] ==> public fun Collection<ExpectedInfo>.filterFunctionExpected(): List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'isNotEmpty' @ [50:71] ==> @InlineOnly public inline fun <T> Collection<ExpectedInfo>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -34,15 +34,13 @@ Inferred types:
 
 'withKinds' @ [52:29] ==> public final fun withKinds(kinds: Int): DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [52:39] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'NON_SINGLETON_CLASSIFIERS_MASK' @ [52:60] ==> public final val NON_SINGLETON_CLASSIFIERS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'filter' @ [55:9] ==> var filter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession.descriptorKindFilter.<anonymous>[LocalVariableDescriptor]
 
-'lazy' @ [58:36] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> SmartCompletion?): Lazy<SmartCompletion?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [58:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SmartCompletion?
+    <T> -> T
 
 'NONE' @ [58:62] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -73,7 +71,7 @@ Inferred types:
 
 'toFromOriginalFileMapper' @ [61:57] ==> value-parameter toFromOriginalFileMapper: ToFromOriginalFileMapper defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession.<init>[ValueParameterDescriptorImpl]
 
-'callTypeAndReceiver' @ [62:29] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [62:29] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
 
 'isJvmModule' @ [62:50] ==> protected final val isJvmModule: Boolean defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
 
@@ -101,9 +99,9 @@ Inferred types:
 
 'expectedInfos' @ [71:57] ==> protected open val expectedInfos: Collection<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [71:72] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [71:72] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [71:92] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [71:92] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'expression' @ [75:13] ==> protected final val expression: KtExpression? defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
 
@@ -214,9 +212,9 @@ Inferred types:
 
 'receiverTypes' @ [103:68] ==> protected final val receiverTypes: Collection<ReceiverType>? defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [103:83] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [103:83] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [103:103] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [103:103] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'lookupElementFactory' @ [103:113] ==> value-parameter lookupElementFactory: LookupElementFactory defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession.doComplete.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -344,7 +342,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Unit
 
-'callTypeAndReceiver' @ [125:21] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [125:21] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
 
 'referenceVariantsCollector' @ [126:44] ==> protected final val referenceVariantsCollector: ReferenceVariantsCollector? defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
 
@@ -617,8 +615,6 @@ Inferred types:
 
 'addElements' @ [199:27] ==> public final fun addElements(elements: Iterable<LookupElement>, notImported: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.LookupElementsCollector[SimpleFunctionDescriptorImpl]
 
-'LambdaItems' @ [199:39] ==> public object LambdaItems defined in org.jetbrains.kotlin.idea.completion.smart in file LambdaItems.kt[FakeCallableDescriptorForObject]
-
 'collect' @ [199:51] ==> public final fun collect(functionExpectedInfos: Collection<ExpectedInfo>): Collection<LookupElement> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems[SimpleFunctionDescriptorImpl]
 
 'expectedInfos' @ [199:59] ==> val expectedInfos: Collection<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession.addFunctionLiteralArgumentCompletions[LocalVariableDescriptor]
@@ -629,8 +625,6 @@ Inferred types:
 
 'weighBefore' @ [206:18] ==> public abstract fun weighBefore(@NotNull p0: String, vararg p1: (LookupElementWeigher..LookupElementWeigher?)): (CompletionSorter..CompletionSorter?) defined in com.intellij.codeInsight.completion.CompletionSorter[JavaMethodDescriptor]
 
-'KindWeigher' @ [206:30] ==> public object KindWeigher : LookupElementWeigher defined in org.jetbrains.kotlin.idea.completion in file Weighers.kt[FakeCallableDescriptorForObject]
-
 'toString' @ [206:42] ==> public open fun toString(): String defined in org.jetbrains.kotlin.idea.completion.KindWeigher[JavaMethodDescriptor]
 
 'NameSimilarityWeigher' @ [206:54] ==> public object NameSimilarityWeigher : LookupElementWeigher defined in org.jetbrains.kotlin.idea.completion.smart in file NameSimilarity.kt[FakeCallableDescriptorForObject]
@@ -639,9 +633,9 @@ Inferred types:
 
 'CallableReferenceWeigher' @ [206:109] ==> public constructor CallableReferenceWeigher(callType: CallType<*>) defined in org.jetbrains.kotlin.idea.completion.CallableReferenceWeigher[ClassConstructorDescriptorImpl]
 
-'callTypeAndReceiver' @ [206:134] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [206:134] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [206:154] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [206:154] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'super' @ [210:16] ==> <this> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionSession[LazyClassReceiverParameterDescriptor]
 

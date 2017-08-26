@@ -38,18 +38,18 @@ Inferred types:
 
 'result' @ [63:22] ==> value-parameter result: A defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments[ValueParameterDescriptorImpl]
 
-'memberProperties' @ [63:36] ==> @SinceKotlin public val <T : Any> KClass<out A>.memberProperties: Collection<KProperty1<out A, *>> defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
+'memberProperties' @ [63:36] ==> @SinceKotlin public val <T : Any> KClass<out A>.memberProperties: Collection<KProperty1<out A, Any?>> defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> A
+    <T : Any> -> Captured(out A)
 
-'mapNotNull' @ [63:53] ==> public inline fun <T, R : Any> Iterable<KProperty1<out A, *>>.mapNotNull(transform: (KProperty1<out A, *>) -> ArgumentField<A>?): List<ArgumentField<A>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapNotNull' @ [63:53] ==> public inline fun <T, R : Any> Iterable<KProperty1<out A, Any?>>.mapNotNull(transform: (KProperty1<out A, Any?>) -> ArgumentField<A>?): List<ArgumentField<A>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KProperty1<out A, *>
+    <T> -> KProperty1<out A, Any?>
     <R : Any> -> ArgumentField<A>
 
-'property' @ [64:13] ==> value-parameter property: KProperty1<out A, *> defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments.<anonymous>[ValueParameterDescriptorImpl]
+'property' @ [64:13] ==> value-parameter property: KProperty1<out A, Any?> defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments.<anonymous>[ValueParameterDescriptorImpl]
 
-'property' @ [65:24] ==> value-parameter property: KProperty1<out A, *> defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments.<anonymous>[ValueParameterDescriptorImpl]
+'property' @ [65:24] ==> value-parameter property: KProperty1<out A, Any?> defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments.<anonymous>[ValueParameterDescriptorImpl]
 
 'findAnnotation' @ [65:33] ==> @SinceKotlin public inline fun <reified T : Annotation> KAnnotatedElement.findAnnotation(): Argument? defined in kotlin.reflect.full[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -57,7 +57,7 @@ Inferred types:
 
 'ArgumentField' @ [66:9] ==> public constructor ArgumentField(property: KMutableProperty1<A, Any?>, argument: Argument) defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments.ArgumentField[ClassConstructorDescriptorImpl]
 
-'property' @ [66:23] ==> value-parameter property: KProperty1<out A, *> defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments.<anonymous>[ValueParameterDescriptorImpl]
+'property' @ [66:23] ==> value-parameter property: KProperty1<out A, Any?> defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments.<anonymous>[ValueParameterDescriptorImpl]
 
 'argument' @ [66:63] ==> val argument: Argument defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments.<anonymous>[LocalVariableDescriptor]
 
@@ -78,6 +78,8 @@ Inferred types:
     <T> -> String
 
 'String' @ [74:48] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'isEmpty' @ [74:56] ==> @InlineOnly public inline fun CharSequence.isEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'arg' @ [74:68] ==> value-parameter arg: String defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments.matches[ValueParameterDescriptorImpl]
 
@@ -128,6 +130,8 @@ Inferred types:
     <T> -> String
 
 'String' @ [86:46] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'isEmpty' @ [86:54] ==> @InlineOnly public inline fun CharSequence.isEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'arg' @ [86:66] ==> value-parameter arg: String defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments.matches[ValueParameterDescriptorImpl]
 
@@ -243,9 +247,9 @@ Inferred types:
             else -> {
                 args[i++]
             }
-        }' @ [114:26] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {Comparable<{Boolean & String}> & java.io.Serializable}, entry1: {Comparable<{Boolean & String}> & java.io.Serializable}, entry2: {Comparable<{Boolean & String}> & java.io.Serializable}, entry3: {Comparable<{Boolean & String}> & java.io.Serializable}): {Comparable<{Boolean & String}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
+        }' @ [114:26] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any, entry2: Any, entry3: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {Comparable<{Boolean & String}> & java.io.Serializable}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
 
 'argumentField' @ [115:13] ==> val argumentField: ArgumentField<A>? defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments[LocalVariableDescriptor]
 
@@ -307,11 +311,11 @@ Inferred types:
 
 'java' @ [128:75] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'isArray' @ [128:81] ==> public final val <T : (Any..Any?)> Class<out Any>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 '!' @ [129:16] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -390,9 +394,9 @@ Inferred types:
 
 'value' @ [139:63] ==> value-parameter value: Any defined in org.jetbrains.kotlin.cli.common.arguments.updateField[ValueParameterDescriptorImpl]
 
-'Array' @ [140:9] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [140:9] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@23de9ad6
 
 'value' @ [141:32] ==> value-parameter value: Any defined in org.jetbrains.kotlin.cli.common.arguments.updateField[ValueParameterDescriptorImpl]
 

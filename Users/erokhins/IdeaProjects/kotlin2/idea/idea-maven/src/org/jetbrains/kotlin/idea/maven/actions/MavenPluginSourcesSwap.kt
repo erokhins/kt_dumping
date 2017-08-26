@@ -46,7 +46,9 @@ Inferred types:
 
 'virtualFile' @ [53:64] ==> public final val PsiFile.virtualFile: (VirtualFile..VirtualFile?)[MyPropertyDescriptor]
 
-'PomFile' @ [57:19] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'?:' @ [57:19] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PomFile?, right: PomFile): PomFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PomFile
 
 'forFileOrNull' @ [57:27] ==> public final fun forFileOrNull(xmlFile: XmlFile): PomFile? defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
@@ -56,7 +58,7 @@ Inferred types:
 
 'getParentOfType' @ [58:24] ==> @Nullable public abstract fun <T : (DomElement..DomElement?)> getParentOfType(p0: (Class<(MavenDomBuild..MavenDomBuild?)>..Class<(MavenDomBuild..MavenDomBuild?)>?), p1: Boolean): MavenDomBuild? defined in com.intellij.util.xml.DomElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> MavenDomBuild
+    <T : (DomElement..DomElement?)> -> (org.jetbrains.idea.maven.dom.model.MavenDomBuild..org.jetbrains.idea.maven.dom.model.MavenDomBuild?)
 
 'java' @ [58:61] ==> public val <T> KClass<MavenDomBuild>.java: Class<MavenDomBuild> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -70,11 +72,7 @@ Inferred types:
 
 'findKotlinExecutions' @ [59:24] ==> public final fun findKotlinExecutions(vararg goals: String): List<(MavenDomPluginExecution..MavenDomPluginExecution?)> defined in org.jetbrains.kotlin.idea.maven.PomFile[SimpleFunctionDescriptorImpl]
 
-'PomFile' @ [59:45] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [59:65] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
-
-'PomFile' @ [59:74] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'Js' @ [59:94] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -86,7 +84,7 @@ Inferred types:
 
 'getParentOfType' @ [61:24] ==> @Nullable public abstract fun <T : (DomElement..DomElement?)> getParentOfType(p0: (Class<(MavenDomBuild..MavenDomBuild?)>..Class<(MavenDomBuild..MavenDomBuild?)>?), p1: Boolean): MavenDomBuild? defined in com.intellij.util.xml.DomElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> MavenDomBuild
+    <T : (DomElement..DomElement?)> -> (org.jetbrains.idea.maven.dom.model.MavenDomBuild..org.jetbrains.idea.maven.dom.model.MavenDomBuild?)
 
 'java' @ [61:61] ==> public val <T> KClass<MavenDomBuild>.java: Class<MavenDomBuild> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -100,11 +98,7 @@ Inferred types:
 
 'findKotlinExecutions' @ [62:24] ==> public final fun findKotlinExecutions(vararg goals: String): List<(MavenDomPluginExecution..MavenDomPluginExecution?)> defined in org.jetbrains.kotlin.idea.maven.PomFile[SimpleFunctionDescriptorImpl]
 
-'PomFile' @ [62:45] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'TestCompile' @ [62:65] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
-
-'PomFile' @ [62:78] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'TestJs' @ [62:98] ==> public final val TestJs: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -116,7 +110,9 @@ Inferred types:
 
 'containingFile' @ [71:31] ==> public final val PsiElement.containingFile: (PsiFile..PsiFile?)[MyPropertyDescriptor]
 
-'PomFile' @ [72:23] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'?:' @ [72:23] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PomFile?, right: PomFile): PomFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PomFile
 
 'forFileOrNull' @ [72:31] ==> public final fun forFileOrNull(xmlFile: XmlFile): PomFile? defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
@@ -128,9 +124,9 @@ Inferred types:
 Inferred types:
     <reified T : PsiElement> -> XmlTag
 
-'?:' @ [75:26] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: GenericDomValue<out (Any..Any?)>?, right: GenericDomValue<out (Any..Any?)>): GenericDomValue<out (Any..Any?)>[SimpleFunctionDescriptorImpl]
+'?:' @ [75:26] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: GenericDomValue<*>?, right: GenericDomValue<*>): GenericDomValue<*>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> GenericDomValue<out (kotlin.Any..kotlin.Any?)>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> GenericDomValue<*>
 
 'getDomManager' @ [75:37] ==> public open fun getDomManager(p0: (Project..Project?)): (DomManager..DomManager?) defined in com.intellij.util.xml.DomManager[JavaMethodDescriptor]
 
@@ -140,11 +136,11 @@ Inferred types:
 
 'tag' @ [75:74] ==> val tag: XmlTag defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
 
-'domElement' @ [76:19] ==> val domElement: GenericDomValue<out (Any..Any?)> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
+'domElement' @ [76:19] ==> val domElement: GenericDomValue<*> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
 
 'rawText' @ [76:30] ==> public final val <T : (Any..Any?)> GenericDomValue<out (Any..Any?)>.rawText: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'when {
             domElement.getParentOfType(MavenDomBuild::class.java, false)?.sourceDirectory === domElement ->
@@ -156,11 +152,11 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> List<(org.jetbrains.idea.maven.dom.model.MavenDomPluginExecution..org.jetbrains.idea.maven.dom.model.MavenDomPluginExecution?)>
 
-'domElement' @ [79:13] ==> val domElement: GenericDomValue<out (Any..Any?)> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
+'domElement' @ [79:13] ==> val domElement: GenericDomValue<*> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
 
 'getParentOfType' @ [79:24] ==> @Nullable public abstract fun <T : (DomElement..DomElement?)> getParentOfType(p0: (Class<(MavenDomBuild..MavenDomBuild?)>..Class<(MavenDomBuild..MavenDomBuild?)>?), p1: Boolean): MavenDomBuild? defined in com.intellij.util.xml.GenericDomValue[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> MavenDomBuild
+    <T : (DomElement..DomElement?)> -> (org.jetbrains.idea.maven.dom.model.MavenDomBuild..org.jetbrains.idea.maven.dom.model.MavenDomBuild?)
 
 'java' @ [79:61] ==> public val <T> KClass<MavenDomBuild>.java: Class<MavenDomBuild> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -168,25 +164,21 @@ Inferred types:
 
 'sourceDirectory' @ [79:75] ==> public final val MavenDomBuild.sourceDirectory: GenericDomValue<(PathReference..PathReference?)>[MyPropertyDescriptor]
 
-'domElement' @ [79:95] ==> val domElement: GenericDomValue<out (Any..Any?)> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
+'domElement' @ [79:95] ==> val domElement: GenericDomValue<*> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
 
 'pomFile' @ [80:17] ==> val pomFile: PomFile defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
 
 'findKotlinExecutions' @ [80:25] ==> public final fun findKotlinExecutions(vararg goals: String): List<(MavenDomPluginExecution..MavenDomPluginExecution?)> defined in org.jetbrains.kotlin.idea.maven.PomFile[SimpleFunctionDescriptorImpl]
 
-'PomFile' @ [80:46] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [80:66] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
-
-'PomFile' @ [80:75] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'Js' @ [80:95] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
-'domElement' @ [81:13] ==> val domElement: GenericDomValue<out (Any..Any?)> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
+'domElement' @ [81:13] ==> val domElement: GenericDomValue<*> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
 
 'getParentOfType' @ [81:24] ==> @Nullable public abstract fun <T : (DomElement..DomElement?)> getParentOfType(p0: (Class<(MavenDomBuild..MavenDomBuild?)>..Class<(MavenDomBuild..MavenDomBuild?)>?), p1: Boolean): MavenDomBuild? defined in com.intellij.util.xml.GenericDomValue[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> MavenDomBuild
+    <T : (DomElement..DomElement?)> -> (org.jetbrains.idea.maven.dom.model.MavenDomBuild..org.jetbrains.idea.maven.dom.model.MavenDomBuild?)
 
 'java' @ [81:61] ==> public val <T> KClass<MavenDomBuild>.java: Class<MavenDomBuild> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -194,17 +186,13 @@ Inferred types:
 
 'testSourceDirectory' @ [81:75] ==> public final val MavenDomBuild.testSourceDirectory: GenericDomValue<(PathReference..PathReference?)>[MyPropertyDescriptor]
 
-'domElement' @ [81:99] ==> val domElement: GenericDomValue<out (Any..Any?)> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
+'domElement' @ [81:99] ==> val domElement: GenericDomValue<*> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
 
 'pomFile' @ [82:17] ==> val pomFile: PomFile defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
 
 'findKotlinExecutions' @ [82:25] ==> public final fun findKotlinExecutions(vararg goals: String): List<(MavenDomPluginExecution..MavenDomPluginExecution?)> defined in org.jetbrains.kotlin.idea.maven.PomFile[SimpleFunctionDescriptorImpl]
 
-'PomFile' @ [82:46] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'TestCompile' @ [82:66] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
-
-'PomFile' @ [82:79] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'TestJs' @ [82:99] ==> public final val TestJs: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -244,7 +232,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'domElement' @ [92:13] ==> val domElement: GenericDomValue<out (Any..Any?)> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
+'domElement' @ [92:13] ==> val domElement: GenericDomValue<*> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToExecutionIntention.invoke[LocalVariableDescriptor]
 
 'undefine' @ [92:24] ==> public abstract fun undefine(): Unit defined in com.intellij.util.xml.GenericDomValue[JavaMethodDescriptor]
 
@@ -316,7 +304,7 @@ Inferred types:
 
 'getParentOfType' @ [123:36] ==> @Nullable public abstract fun <T : (DomElement..DomElement?)> getParentOfType(p0: (Class<(MavenDomPluginExecution..MavenDomPluginExecution?)>..Class<(MavenDomPluginExecution..MavenDomPluginExecution?)>?), p1: Boolean): MavenDomPluginExecution? defined in com.intellij.util.xml.DomElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> MavenDomPluginExecution
+    <T : (DomElement..DomElement?)> -> (org.jetbrains.idea.maven.dom.model.MavenDomPluginExecution..org.jetbrains.idea.maven.dom.model.MavenDomPluginExecution?)
 
 'java' @ [123:83] ==> public val <T> KClass<MavenDomPluginExecution>.java: Class<MavenDomPluginExecution> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -348,7 +336,9 @@ Inferred types:
 
 'localName' @ [127:35] ==> public final val XmlTag.localName: String[MyPropertyDescriptor]
 
-'PomFile' @ [129:19] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'?:' @ [129:19] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PomFile?, right: PomFile): PomFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PomFile
 
 'forFileOrNull' @ [129:27] ==> public final fun forFileOrNull(xmlFile: XmlFile): PomFile? defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
@@ -370,7 +360,7 @@ Inferred types:
 
 'getParentOfType' @ [136:31] ==> @Nullable public abstract fun <T : (DomElement..DomElement?)> getParentOfType(p0: (Class<(MavenDomBuild..MavenDomBuild?)>..Class<(MavenDomBuild..MavenDomBuild?)>?), p1: Boolean): MavenDomBuild? defined in org.jetbrains.idea.maven.dom.model.MavenDomPluginExecution[JavaMethodDescriptor]
 Inferred types:
-    <T : (DomElement..DomElement?)> -> MavenDomBuild
+    <T : (DomElement..DomElement?)> -> (org.jetbrains.idea.maven.dom.model.MavenDomBuild..org.jetbrains.idea.maven.dom.model.MavenDomBuild?)
 
 'java' @ [136:68] ==> public val <T> KClass<MavenDomBuild>.java: Class<MavenDomBuild> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -449,9 +439,9 @@ Inferred types:
 
 'sourceDirsToMove' @ [150:24] ==> val sourceDirsToMove: List<String> defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToBuild.tryInvoke[LocalVariableDescriptor]
 
-'single' @ [150:41] ==> public fun <T> List<@ParameterName String>.single(): @ParameterName String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'single' @ [150:41] ==> public fun <T> List<String>.single(): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> [@kotlin.ParameterName] String
+    <T> -> String
 
 'execution' @ [150:51] ==> val execution: MavenDomPluginExecution defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToBuild.tryInvoke[LocalVariableDescriptor]
 
@@ -471,15 +461,11 @@ Inferred types:
 
 'stringValue' @ [158:40] ==> public final var MavenDomGoal.stringValue: String?[MyPropertyDescriptor]
 
-'PomFile' @ [158:55] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [158:75] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'it' @ [158:86] ==> value-parameter it: (MavenDomGoal..MavenDomGoal?) defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToBuild.shouldMoveCompileSourceRoot.<anonymous>[ValueParameterDescriptorImpl]
 
 'stringValue' @ [158:89] ==> public final var MavenDomGoal.stringValue: String?[MyPropertyDescriptor]
-
-'PomFile' @ [158:104] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'Js' @ [158:124] ==> public final val Js: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -497,15 +483,11 @@ Inferred types:
 
 'stringValue' @ [161:44] ==> public final var MavenDomGoal.stringValue: String?[MyPropertyDescriptor]
 
-'PomFile' @ [161:59] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'TestCompile' @ [161:79] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'it' @ [161:94] ==> value-parameter it: (MavenDomGoal..MavenDomGoal?) defined in org.jetbrains.kotlin.idea.maven.actions.MavenPluginSourcesMoveToBuild.shouldMoveTestSourceRoot.<anonymous>[ValueParameterDescriptorImpl]
 
 'stringValue' @ [161:97] ==> public final var MavenDomGoal.stringValue: String?[MyPropertyDescriptor]
-
-'PomFile' @ [161:112] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'TestJs' @ [161:132] ==> public final val TestJs: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 

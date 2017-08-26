@@ -65,7 +65,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'testCompletion' @ [71:9] ==> public fun testCompletion(fileText: String, platform: TargetPlatform?, complete: (CompletionType, Int) -> Array<LookupElement>?, defaultCompletionType: CompletionType = ..., defaultInvocationCount: Int = ..., additionalValidDirectives: Collection<String> = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'testCompletion' @ [71:9] ==> public fun testCompletion(fileText: String, platform: TargetPlatform?, complete: (CompletionType, Int) -> Array<LookupElement>?, defaultCompletionType: CompletionType = ..., defaultInvocationCount: Int = ..., additionalValidDirectives: Collection<String> = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test in file CompletionTestUtil.kt[SimpleFunctionDescriptorImpl]
 
 'directives' @ [71:24] ==> val directives: String defined in org.jetbrains.kotlin.idea.debugger.evaluate.CodeFragmentCompletionInLibraryTest.testCompletionInLibraryCodeFragment[LocalVariableDescriptor]
 
@@ -106,8 +106,6 @@ Inferred types:
 'createExpressionCodeFragment' @ [78:65] ==> public final fun createExpressionCodeFragment(text: String, context: PsiElement?): KtExpressionCodeFragment defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
 
 'fragmentText' @ [79:17] ==> value-parameter fragmentText: String defined in org.jetbrains.kotlin.idea.debugger.evaluate.CodeFragmentCompletionInLibraryTest.setupFixtureByCodeFragment[ValueParameterDescriptorImpl]
-
-'KotlinCodeFragmentFactory' @ [80:17] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory[FakeCallableDescriptorForObject]
 
 'getContextElement' @ [80:43] ==> public final fun getContextElement(elementAt: PsiElement?): PsiElement? defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion[DeserializedSimpleFunctionDescriptor]
 

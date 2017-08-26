@@ -12,7 +12,7 @@
 
 'SUSPEND_COROUTINE_OR_RETURN_NAME' @ [32:17] ==> public val SUSPEND_COROUTINE_OR_RETURN_NAME: Name defined in org.jetbrains.kotlin.backend.common in file commonCoroutineCodegenUtil.kt[PropertyDescriptorImpl]
 
-'getBuiltInSuspendCoroutineOrReturn' @ [34:31] ==> public fun FunctionDescriptor.getBuiltInSuspendCoroutineOrReturn(): SimpleFunctionDescriptor? defined in org.jetbrains.kotlin.backend.common[SimpleFunctionDescriptorImpl]
+'getBuiltInSuspendCoroutineOrReturn' @ [34:31] ==> public fun FunctionDescriptor.getBuiltInSuspendCoroutineOrReturn(): SimpleFunctionDescriptor? defined in org.jetbrains.kotlin.backend.common in file commonCoroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'DescriptorEquivalenceForOverrides' @ [36:12] ==> public object DescriptorEquivalenceForOverrides defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 

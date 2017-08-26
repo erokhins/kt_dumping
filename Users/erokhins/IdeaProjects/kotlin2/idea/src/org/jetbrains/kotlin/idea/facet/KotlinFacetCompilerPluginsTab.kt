@@ -13,6 +13,8 @@ Inferred types:
     <T> -> String
     <R : Any> -> CliOptionValue
 
+'parsePluginOption' @ [40:87] ==> public fun parsePluginOption(argumentValue: String): CliOptionValue? defined in org.jetbrains.kotlin.compiler.plugin[DeserializedSimpleFunctionDescriptor]
+
 'emptyList' @ [40:109] ==> public fun <T> emptyList(): List<CliOptionValue> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> CliOptionValue

@@ -6,7 +6,7 @@
 
 'getService' @ [35:32] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(JavaModuleResolver..JavaModuleResolver?)>): (JavaModuleResolver..JavaModuleResolver?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaModuleResolver
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleResolver..org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleResolver?)
 
 'project' @ [35:43] ==> value-parameter project: Project defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleResolver.SERVICE.getInstance[ValueParameterDescriptorImpl]
 

@@ -14,7 +14,7 @@
 
 'resolveFunctionDescriptor' @ [77:16] ==> private final fun resolveFunctionDescriptor(functionConstructor: (DeclarationDescriptor, Annotations, Name, CallableMemberDescriptor.Kind, SourceElement) -> SimpleFunctionDescriptorImpl, containingDescriptor: DeclarationDescriptor, scope: LexicalScope, function: KtNamedFunction, trace: BindingTrace, dataFlowInfo: DataFlowInfo, expectedFunctionType: KotlinType): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.resolve.FunctionDescriptorResolver[SimpleFunctionDescriptorImpl]
 
-'SimpleFunctionDescriptorImpl' @ [78:17] ==> protected/*protected and package*/ constructor SimpleFunctionDescriptorImpl(@NotNull p0: DeclarationDescriptor, @Nullable p1: SimpleFunctionDescriptor?, @NotNull p2: Annotations, @NotNull p3: Name, @NotNull p4: CallableMemberDescriptor.Kind, @NotNull p5: SourceElement) defined in org.jetbrains.kotlin.descriptors.impl.SimpleFunctionDescriptorImpl[JavaClassConstructorDescriptor]
+'create' @ [78:47] ==> @NotNull public open fun create(@NotNull p0: DeclarationDescriptor, @NotNull p1: Annotations, @NotNull p2: Name, @NotNull p3: CallableMemberDescriptor.Kind, @NotNull p4: SourceElement): SimpleFunctionDescriptorImpl defined in org.jetbrains.kotlin.descriptors.impl.SimpleFunctionDescriptorImpl[JavaMethodDescriptor]
 
 'containingDescriptor' @ [78:55] ==> value-parameter containingDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.FunctionDescriptorResolver.resolveFunctionDescriptor[ValueParameterDescriptorImpl]
 
@@ -29,6 +29,8 @@
 'NO_EXPECTED_TYPE' @ [78:125] ==> @NotNull public final val NO_EXPECTED_TYPE: SimpleType defined in org.jetbrains.kotlin.types.TypeUtils[JavaPropertyDescriptor]
 
 'resolveFunctionDescriptor' @ [89:35] ==> private final fun resolveFunctionDescriptor(functionConstructor: (DeclarationDescriptor, Annotations, Name, CallableMemberDescriptor.Kind, SourceElement) -> SimpleFunctionDescriptorImpl, containingDescriptor: DeclarationDescriptor, scope: LexicalScope, function: KtNamedFunction, trace: BindingTrace, dataFlowInfo: DataFlowInfo, expectedFunctionType: KotlinType): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.resolve.FunctionDescriptorResolver[SimpleFunctionDescriptorImpl]
+
+'FunctionExpressionDescriptor' @ [90:15] ==> public constructor FunctionExpressionDescriptor(@NotNull containingDeclaration: DeclarationDescriptor, @NotNull annotations: Annotations, @NotNull name: Name, @NotNull kind: CallableMemberDescriptor.Kind, @NotNull source: SourceElement) defined in org.jetbrains.kotlin.descriptors.impl.FunctionExpressionDescriptor[JavaClassConstructorDescriptor]
 
 'containingDescriptor' @ [90:45] ==> value-parameter containingDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.FunctionDescriptorResolver.resolveFunctionExpressionDescriptor[ValueParameterDescriptorImpl]
 
@@ -483,8 +485,6 @@ Inferred types:
 
 'functionDescriptor' @ [208:55] ==> value-parameter functionDescriptor: SimpleFunctionDescriptorImpl defined in org.jetbrains.kotlin.resolve.FunctionDescriptorResolver.createValueParameterDescriptors[ValueParameterDescriptorImpl]
 
-'Annotations' @ [208:84] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [208:96] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'identifier' @ [208:108] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
@@ -517,7 +517,7 @@ Inferred types:
 
 'record' @ [212:23] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (Boolean..Boolean?)>..WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (Boolean..Boolean?)>?), key: (ValueParameterDescriptor..ValueParameterDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ValueParameterDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
 
 'AUTO_CREATED_IT' @ [212:45] ==> public final val AUTO_CREATED_IT: (WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (Boolean..Boolean?)>..WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -736,8 +736,8 @@ Inferred types:
 
 'record' @ [304:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>?), key: (PsiElement..PsiElement?), value: (ConstructorDescriptor..ConstructorDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ConstructorDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)
 
 'CONSTRUCTOR' @ [304:41] ==> public final val CONSTRUCTOR: (WritableSlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ConstructorDescriptor..ConstructorDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

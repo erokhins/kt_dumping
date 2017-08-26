@@ -66,3 +66,5 @@ Inferred types:
 
 'this' @ [56:44] ==> <this> defined in org.jetbrains.kotlin.idea.completion.OperatorNameCompletion[LazyClassReceiverParameterDescriptor]
 
+'buildLookupElement' @ [56:50] ==> private final fun buildLookupElement(opName: Name): LookupElement defined in org.jetbrains.kotlin.idea.completion.OperatorNameCompletion[SimpleFunctionDescriptorImpl]
+

@@ -90,7 +90,7 @@ Inferred types:
 
 'moduleDescriptor' @ [67:97] ==> public abstract val moduleDescriptor: ModuleDescriptor defined in org.jetbrains.kotlin.idea.resolve.ResolutionFacade[DeserializedPropertyDescriptor]
 
-'NotPropertiesService' @ [67:128] ==> public companion object defined in org.jetbrains.kotlin.idea.core.NotPropertiesService[FakeCallableDescriptorForObject]
+'isVisible' @ [67:117] ==> local final fun isVisible(descriptor: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.idea.liveTemplates.macro.BaseKotlinVariableMacro.getVariables[SimpleFunctionDescriptorImpl]
 
 'getNotProperties' @ [67:149] ==> public final fun getNotProperties(element: PsiElement): Set<FqNameUnsafe> defined in org.jetbrains.kotlin.idea.core.NotPropertiesService.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -102,11 +102,7 @@ Inferred types:
 
 'contextElement' @ [69:39] ==> val contextElement: KtElement defined in org.jetbrains.kotlin.idea.liveTemplates.macro.BaseKotlinVariableMacro.getVariables[LocalVariableDescriptor]
 
-'CallTypeAndReceiver' @ [69:55] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [69:75] ==> public object DEFAULT : CallTypeAndReceiver<Nothing?, CallType.DEFAULT> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
-
-'DescriptorKindFilter' @ [69:84] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES' @ [69:105] ==> @field:JvmField public final val VARIABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 

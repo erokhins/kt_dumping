@@ -123,13 +123,13 @@ Inferred types:
 
 'filterIsInstance' @ [72:43] ==> public fun <R> Iterable<*>.filterIsInstance(klass: Class<out KtNamedDeclaration>): List<KtNamedDeclaration> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <R> -> KtNamedDeclaration
+    <R> -> Captured(out KtNamedDeclaration)
 
 'targetMember' @ [72:60] ==> value-parameter targetMember: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.pullUp.addMemberToTarget[ValueParameterDescriptorImpl]
 
 'java' @ [72:80] ==> public val <T> KClass<out KtNamedDeclaration>.java: Class<out KtNamedDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtNamedDeclaration
+    <T> -> Captured(out KtNamedDeclaration)
 
 'lastOrNull' @ [72:86] ==> public fun <T> List<KtNamedDeclaration>.lastOrNull(): KtNamedDeclaration? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

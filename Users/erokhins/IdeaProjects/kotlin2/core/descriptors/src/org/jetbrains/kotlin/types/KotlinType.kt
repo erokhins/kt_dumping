@@ -121,8 +121,6 @@ Inferred types:
 
 'append' @ [127:17] ==> public fun StringBuilder /* = StringBuilder */.append(vararg value: String?): StringBuilder /* = StringBuilder */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorRenderer' @ [127:29] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'DEBUG_TEXT' @ [127:48] ==> @JvmField public final val DEBUG_TEXT: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[PropertyDescriptorImpl]
 
 'renderAnnotation' @ [127:59] ==> public abstract fun renderAnnotation(annotation: AnnotationDescriptor, target: AnnotationUseSiteTarget? = ...): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[SimpleFunctionDescriptorImpl]

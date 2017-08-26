@@ -56,7 +56,7 @@ Inferred types:
 
 'resultingDescriptor' @ [42:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'AssertionError' @ [42:89] ==> public final fun <init>(p0: (Any..Any?)): AssertionError /* = AssertionError */ defined in kotlin.AssertionError[TypeAliasConstructorDescriptorImpl]
 
@@ -86,7 +86,7 @@ Inferred types:
 
 'java' @ [46:110] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'assertEquals' @ [47:9] ==> public open fun assertEquals(p0: (String..String?), p1: (String..String?)): Unit defined in org.jetbrains.kotlin.android.AndroidTestCase[JavaMethodDescriptor]
 

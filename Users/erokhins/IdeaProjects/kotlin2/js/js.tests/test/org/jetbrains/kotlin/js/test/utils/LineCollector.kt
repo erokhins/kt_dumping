@@ -88,6 +88,10 @@ Inferred types:
 
 'it' @ [50:72] ==> value-parameter it: JsStatement defined in org.jetbrains.kotlin.js.test.utils.LineCollector.handleNodeLocation.<anonymous>[ValueParameterDescriptorImpl]
 
+'mutableListOf' @ [50:78] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableListOf(): MutableList<???> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@68166b68
+
 'linesByStatement' @ [51:21] ==> val linesByStatement: MutableList<Int> defined in org.jetbrains.kotlin.js.test.utils.LineCollector.handleNodeLocation.<anonymous>[LocalVariableDescriptor]
 
 'lastOrNull' @ [51:38] ==> public fun <T> List<Int>.lastOrNull(): Int? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]

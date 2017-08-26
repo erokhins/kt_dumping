@@ -2,7 +2,7 @@
 
 'resultingDescriptor' @ [32:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'descriptor' @ [33:32] ==> val descriptor: ConstructorDescriptor defined in org.jetbrains.kotlin.resolve.calls.checkers.ProtectedConstructorCallChecker.check[LocalVariableDescriptor]
 
@@ -46,7 +46,7 @@ Inferred types:
 
 'call' @ [42:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'calleeExpression' @ [42:50] ==> public final val Call.calleeExpression: KtExpression?[MyPropertyDescriptor]
 

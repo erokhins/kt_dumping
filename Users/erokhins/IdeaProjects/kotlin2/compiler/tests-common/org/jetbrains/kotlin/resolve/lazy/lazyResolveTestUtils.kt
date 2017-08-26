@@ -65,11 +65,7 @@ Inferred types:
 
 'dependsOnBuiltIns' @ [53:17] ==> public final val dependsOnBuiltIns: Boolean defined in org.jetbrains.kotlin.resolve.lazy.TestModule[PropertyDescriptorImpl]
 
-'ModuleInfo' @ [54:17] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
-
 'LAST' @ [54:49] ==> enum entry LAST defined in org.jetbrains.kotlin.analyzer.ModuleInfo.DependencyOnBuiltIns[FakeCallableDescriptorForObject]
-
-'ModuleInfo' @ [56:17] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
 
 'NONE' @ [56:49] ==> enum entry NONE defined in org.jetbrains.kotlin.analyzer.ModuleInfo.DependencyOnBuiltIns[FakeCallableDescriptorForObject]
 

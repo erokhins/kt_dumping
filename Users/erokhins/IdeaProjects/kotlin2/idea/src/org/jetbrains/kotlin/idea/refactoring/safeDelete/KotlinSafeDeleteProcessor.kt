@@ -1,22 +1,16 @@
 'JavaSafeDeleteProcessor' @ [64:35] ==> public constructor JavaSafeDeleteProcessor() defined in com.intellij.refactoring.safeDelete.JavaSafeDeleteProcessor[JavaClassConstructorDescriptor]
 
-'NotNullableUserDataProperty' @ [68:20] ==> public constructor NotNullableUserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> Project
-    <T : Any> -> Boolean
+'getValue' @ [68:20] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [68:52] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
-'UserDataProperty' @ [70:65] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> KtDeclaration
-    <T : Any> -> Boolean
+'getValue' @ [70:65] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [70:86] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'element' @ [73:65] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.handlesElement[ValueParameterDescriptorImpl]
 
@@ -70,7 +64,7 @@ Inferred types:
 
 'declaration' @ [89:68] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.findUsages.searchKotlinDeclarationReferences[ValueParameterDescriptorImpl]
 
-'withHeaderImplementations' @ [89:80] ==> internal fun KtDeclaration.withHeaderImplementations(): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'withHeaderImplementations' @ [89:80] ==> internal fun KtDeclaration.withHeaderImplementations(): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [89:113] ==> public fun <T> listOf(element: KtDeclaration): List<KtDeclaration> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -147,7 +141,7 @@ Inferred types:
 
 'candidateDescriptor' @ [108:56] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueParameters' @ [108:76] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -161,7 +155,7 @@ Inferred types:
 
 'valueArguments' @ [109:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'parameterDescriptor' @ [109:68] ==> val parameterDescriptor: ValueParameterDescriptor defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.findUsages.findKotlinParameterUsages[LocalVariableDescriptor]
 
@@ -195,10 +189,10 @@ Inferred types:
 
 'declaration' @ [118:47] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.findUsages.findKotlinDeclarationUsages[ValueParameterDescriptorImpl]
 
-'mapNotNullTo' @ [118:60] ==> public inline fun <T, R : Any, C : MutableCollection<in SafeDeleteReferenceSimpleDeleteUsageInfo>> Sequence<PsiReference>.mapNotNullTo(destination: MutableList<UsageInfo>, transform: (PsiReference) -> SafeDeleteReferenceSimpleDeleteUsageInfo?): MutableList<UsageInfo> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'mapNotNullTo' @ [118:60] ==> public inline fun <T, R : Any, C : MutableCollection<in UsageInfo>> Sequence<PsiReference>.mapNotNullTo(destination: MutableList<UsageInfo>, transform: (PsiReference) -> UsageInfo?): MutableList<UsageInfo> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiReference
-    <R : Any> -> SafeDeleteReferenceSimpleDeleteUsageInfo
+    <R : Any> -> UsageInfo
     <C : MutableCollection<in R>> -> MutableList<UsageInfo>
 
 'usages' @ [118:73] ==> value-parameter usages: MutableList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.findUsages[ValueParameterDescriptorImpl]
@@ -328,7 +322,7 @@ Inferred types:
 
 'element' @ [143:48] ==> public final val <E : (PsiElement..PsiElement?)> SmartPsiElementPointer<out (PsiElement..PsiElement?)>.element: PsiElement?[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
 
 'let' @ [143:57] ==> @InlineOnly public inline fun <T, R> PsiElement.let(block: (PsiElement) -> KotlinSafeDeleteOverridingUsageInfo): KotlinSafeDeleteOverridingUsageInfo defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -349,7 +343,7 @@ Inferred types:
 
 'element' @ [148:48] ==> public final val <E : (PsiElement..PsiElement?)> SmartPsiElementPointer<out (PsiElement..PsiElement?)>.element: PsiElement?[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
 
 'let' @ [148:57] ==> @InlineOnly public inline fun <T, R> PsiElement.let(block: (PsiElement) -> KotlinSafeDeleteOverrideAnnotation?): KotlinSafeDeleteOverrideAnnotation? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -511,16 +505,16 @@ Inferred types:
 
 'insideDeletedCondition' @ [181:92] ==> public final val NonCodeUsageSearchInfo.insideDeletedCondition: (Condition<(PsiElement..PsiElement?)>..Condition<(PsiElement..PsiElement?)>?)[MyPropertyDescriptor]
 
-'fold' @ [182:26] ==> public inline fun <T, R> Sequence<Condition<(PsiElement..PsiElement?)>>.fold(initial: Condition<PsiElement>, operation: (Condition<PsiElement>, Condition<(PsiElement..PsiElement?)>) -> Condition<PsiElement>): Condition<PsiElement> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'fold' @ [182:26] ==> public inline fun <T, R> Sequence<Condition<(PsiElement..PsiElement?)>>.fold(initial: (Condition<PsiElement>..Condition<PsiElement>?), operation: (acc: (Condition<PsiElement>..Condition<PsiElement>?), Condition<(PsiElement..PsiElement?)>) -> (Condition<PsiElement>..Condition<PsiElement>?)): (Condition<PsiElement>..Condition<PsiElement>?) defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Condition<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>
-    <R> -> Condition<PsiElement>
+    <R> -> (com.intellij.openapi.util.Condition<com.intellij.psi.PsiElement>..com.intellij.openapi.util.Condition<com.intellij.psi.PsiElement>?)
 
 'insideDeleted' @ [182:31] ==> value-parameter insideDeleted: Condition<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.findUsages.findUsagesByJavaProcessor[ValueParameterDescriptorImpl]
 
 'or' @ [182:85] ==> public open fun <T : (Any..Any?)> or(p0: (Condition<(PsiElement..PsiElement?)>..Condition<(PsiElement..PsiElement?)>?), p1: (Condition<(PsiElement..PsiElement?)>..Condition<(PsiElement..PsiElement?)>?)): (Condition<(PsiElement..PsiElement?)>..Condition<(PsiElement..PsiElement?)>?) defined in com.intellij.openapi.util.Conditions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'condition1' @ [182:88] ==> value-parameter condition1: Condition<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.findUsages.findUsagesByJavaProcessor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -944,8 +938,6 @@ Inferred types:
 
 'modality' @ [315:74] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [315:86] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [315:95] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'mapTo' @ [316:22] ==> public inline fun <T, R, C : MutableCollection<in String>> Sequence<(CallableMemberDescriptor..CallableMemberDescriptor?)>.mapTo(destination: ArrayList<String>, transform: ((CallableMemberDescriptor..CallableMemberDescriptor?)) -> String): ArrayList<String> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
@@ -1087,7 +1079,7 @@ Inferred types:
 
 'element' @ [365:13] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.prepareForDeletion[ValueParameterDescriptorImpl]
 
-'headerImplementations' @ [365:21] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerImplementations' @ [365:21] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'forEach' @ [365:45] ==> @HidesMembers public inline fun <T> Iterable<KtDeclaration>.forEach(action: (KtDeclaration) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1179,6 +1171,8 @@ Inferred types:
 Inferred types:
     <T> -> PsiMethod
 
+'cleanUpOverrides' @ [385:65] ==> public fun PsiMethod.cleanUpOverrides(): Unit defined in org.jetbrains.kotlin.idea.refactoring.safeDelete in file utils.kt[SimpleFunctionDescriptorImpl]
+
 'element' @ [389:17] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.prepareForDeletion[ValueParameterDescriptorImpl]
 
 'deleteElementAndCleanParent' @ [389:25] ==> public fun PsiElement.deleteElementAndCleanParent(): Unit defined in org.jetbrains.kotlin.idea.core[DeserializedSimpleFunctionDescriptor]
@@ -1222,7 +1216,7 @@ Inferred types:
 
 'project' @ [404:82] ==> public final val KtParameter.project: Project[MyPropertyDescriptor]
 
-'ALLOW_LIFTING_IMPL_PARAMETER_TO_HEADER' @ [404:90] ==> internal final var Project.ALLOW_LIFTING_IMPL_PARAMETER_TO_HEADER: Boolean defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.Companion[PropertyDescriptorImpl]
+'ALLOW_LIFTING_IMPL_PARAMETER_TO_HEADER' @ [404:90] ==> internal final var Project.ALLOW_LIFTING_IMPL_PARAMETER_TO_HEADER: (Boolean..Boolean?) defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.Companion[PropertyDescriptorImpl]
 
 '==' @ [406:16] ==> public open fun equals(other: Any?): Boolean defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
@@ -1309,7 +1303,7 @@ Inferred types:
     <T> -> PsiParameter
     <R> -> PsiElement
 
-'checkParametersInMethodHierarchy' @ [429:21] ==> public fun checkParametersInMethodHierarchy(parameter: PsiParameter): Collection<PsiElement>? defined in org.jetbrains.kotlin.idea.refactoring.safeDelete[SimpleFunctionDescriptorImpl]
+'checkParametersInMethodHierarchy' @ [429:21] ==> public fun checkParametersInMethodHierarchy(parameter: PsiParameter): Collection<PsiElement>? defined in org.jetbrains.kotlin.idea.refactoring.safeDelete in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'psiParameter' @ [429:54] ==> value-parameter psiParameter: PsiParameter defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.getElementsToSearch.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1328,7 +1322,7 @@ Inferred types:
 
 'element' @ [430:36] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.getElementsToSearch[ValueParameterDescriptorImpl]
 
-'checkParametersInMethodHierarchy' @ [434:24] ==> public fun checkParametersInMethodHierarchy(parameter: PsiParameter): Collection<PsiElement>? defined in org.jetbrains.kotlin.idea.refactoring.safeDelete[SimpleFunctionDescriptorImpl]
+'checkParametersInMethodHierarchy' @ [434:24] ==> public fun checkParametersInMethodHierarchy(parameter: PsiParameter): Collection<PsiElement>? defined in org.jetbrains.kotlin.idea.refactoring.safeDelete in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [434:57] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.getElementsToSearch[ValueParameterDescriptorImpl]
 
@@ -1342,7 +1336,7 @@ Inferred types:
 
 'singletonList' @ [437:86] ==> public open fun <T : (Any..Any?)> singletonList(p0: (PsiElement..PsiElement?)): (MutableList<(PsiElement..PsiElement?)>..List<(PsiElement..PsiElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'element' @ [437:100] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.getElementsToSearch[ValueParameterDescriptorImpl]
 
@@ -1355,7 +1349,7 @@ Inferred types:
 
 'element' @ [439:22] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.getElementsToSearch[ValueParameterDescriptorImpl]
 
-'checkSuperMethods' @ [440:50] ==> public fun checkSuperMethods(declaration: KtDeclaration, ignore: Collection<PsiElement>?, actionString: String): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkSuperMethods' @ [440:50] ==> public fun checkSuperMethods(declaration: KtDeclaration, ignore: Collection<PsiElement>?, actionString: String): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [440:68] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.getElementsToSearch[ValueParameterDescriptorImpl]
 

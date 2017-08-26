@@ -8,7 +8,7 @@
 
 'findExtension' @ [34:45] ==> public open fun <V : (FrameworkTypeEx..FrameworkTypeEx?)> findExtension(p0: (Class<(JSFrameworkType..JSFrameworkType?)>..Class<(JSFrameworkType..JSFrameworkType?)>?)): (JSFrameworkType..JSFrameworkType?) defined in com.intellij.openapi.extensions.ExtensionPointName[JavaMethodDescriptor]
 Inferred types:
-    <V : (FrameworkTypeEx..FrameworkTypeEx?)> -> JSFrameworkType
+    <V : (FrameworkTypeEx..FrameworkTypeEx?)> -> (org.jetbrains.kotlin.idea.framework.JSFrameworkType..org.jetbrains.kotlin.idea.framework.JSFrameworkType?)
 
 'JSFrameworkType' @ [34:59] ==> public companion object defined in org.jetbrains.kotlin.idea.framework.JSFrameworkType[FakeCallableDescriptorForObject]
 

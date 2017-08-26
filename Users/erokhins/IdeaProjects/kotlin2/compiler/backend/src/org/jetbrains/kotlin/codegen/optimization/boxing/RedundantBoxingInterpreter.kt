@@ -275,7 +275,7 @@ Inferred types:
 
 'of' @ [132:30] ==> @SafeVarargs public open fun <E : (Any..Any?)> of(p0: (Int..Int?), p1: (Int..Int?), p2: (Int..Int?), p3: (Int..Int?), p4: (Int..Int?), p5: (Int..Int?), vararg p6: (Int..Int?)): (ImmutableSet<(Int..Int?)>..ImmutableSet<(Int..Int?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Int
+    <E : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'ASTORE' @ [132:41] ==> public const final val ASTORE: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -291,7 +291,7 @@ Inferred types:
 
 'of' @ [135:30] ==> @SafeVarargs public open fun <E : (Any..Any?)> of(p0: (Int..Int?), p1: (Int..Int?), p2: (Int..Int?), p3: (Int..Int?), p4: (Int..Int?), p5: (Int..Int?), vararg p6: (Int..Int?)): (ImmutableSet<(Int..Int?)>..ImmutableSet<(Int..Int?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Int
+    <E : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'BYTE' @ [135:38] ==> public const final val BYTE: Int defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
 

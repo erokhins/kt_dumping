@@ -803,7 +803,9 @@ Inferred types:
 
 'memberScope' @ [306:75] ==> public abstract val memberScope: MemberScope defined in org.jetbrains.kotlin.descriptors.PackageViewDescriptor[DeserializedPropertyDescriptor]
 
-'DescriptorToSourceUtils' @ [309:30] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'!!' @ [309:30] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: PsiElement?): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> PsiElement
 
 'descriptorToDeclaration' @ [309:54] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -912,7 +914,7 @@ Inferred types:
 
 'TextEditorPsiDataProvider' @ [339:45] ==> public constructor TextEditorPsiDataProvider() defined in com.intellij.openapi.fileEditor.impl.text.TextEditorPsiDataProvider[JavaClassConstructorDescriptor]
 
-'DataContext' @ [341:31] ==> public fun DataContext(function: ((String..String?)) -> Any?): DataContext defined in com.intellij.openapi.actionSystem[SimpleFunctionDescriptorImpl]
+'DataContext' @ [341:31] ==> public fun DataContext(function: ((String..String?)) -> Any?): DataContext defined in com.intellij.openapi.actionSystem[SamConstructorDescriptorImpl]
 
 'when (dataId) {
                     CommonDataKeys.PROJECT.name -> project
@@ -1179,7 +1181,7 @@ Inferred types:
 
 'getExtensions' @ [422:20] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(AutomaticRenamerFactory..AutomaticRenamerFactory?)>): (Array<(AutomaticRenamerFactory..AutomaticRenamerFactory?)>..Array<out (AutomaticRenamerFactory..AutomaticRenamerFactory?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AutomaticRenamerFactory
+    <T : (Any..Any?)> -> (com.intellij.refactoring.rename.naming.AutomaticRenamerFactory..com.intellij.refactoring.rename.naming.AutomaticRenamerFactory?)
 
 'EP_NAME' @ [422:58] ==> public final val EP_NAME: (ExtensionPointName<(AutomaticRenamerFactory..AutomaticRenamerFactory?)>..ExtensionPointName<(AutomaticRenamerFactory..AutomaticRenamerFactory?)>?) defined in com.intellij.refactoring.rename.naming.AutomaticRenamerFactory[JavaPropertyDescriptor]
 

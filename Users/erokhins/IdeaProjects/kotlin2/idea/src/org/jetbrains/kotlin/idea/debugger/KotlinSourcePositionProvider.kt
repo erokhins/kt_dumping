@@ -40,7 +40,9 @@ Inferred types:
 
 'containingFile' @ [65:19] ==> public final val PsiElement.containingFile: (PsiFile..PsiFile?)[MyPropertyDescriptor]
 
-'KotlinCodeFragmentFactory' @ [67:30] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory[FakeCallableDescriptorForObject]
+'?:' @ [67:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'getContextElement' @ [67:56] ==> public final fun getContextElement(elementAt: PsiElement?): PsiElement? defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion[SimpleFunctionDescriptorImpl]
 

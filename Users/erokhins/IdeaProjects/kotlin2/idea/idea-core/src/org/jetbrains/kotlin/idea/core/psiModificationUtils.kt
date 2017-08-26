@@ -58,7 +58,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtValueArgument
 
-'shouldLambdaParameterBeNamed' @ [76:24] ==> private fun shouldLambdaParameterBeNamed(args: List<ValueArgument>, callExpr: KtCallExpression): Boolean defined in org.jetbrains.kotlin.idea.core[SimpleFunctionDescriptorImpl]
+'shouldLambdaParameterBeNamed' @ [76:24] ==> private fun shouldLambdaParameterBeNamed(args: List<ValueArgument>, callExpr: KtCallExpression): Boolean defined in org.jetbrains.kotlin.idea.core in file psiModificationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'newCallExpression' @ [76:53] ==> val newCallExpression: KtCallExpression defined in org.jetbrains.kotlin.idea.core.moveInsideParenthesesAndReplaceWith[LocalVariableDescriptor]
 
@@ -324,7 +324,7 @@ Inferred types:
 
 'deleteChildlessElement' @ [146:5] ==> private fun <T : PsiElement> deleteChildlessElement(element: PsiElement, childClass: Class<out PsiElement>): Unit defined in org.jetbrains.kotlin.idea.core[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : PsiElement> -> PsiElement
+    <T : PsiElement> -> Captured(out PsiElement)
 
 'parent' @ [146:28] ==> val parent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.core.deleteElementAndCleanParent[LocalVariableDescriptor]
 
@@ -332,7 +332,7 @@ Inferred types:
 
 'java' @ [146:48] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 '==' @ [151:9] ==> public open fun equals(other: Any?): Boolean defined in kotlin.Array[DeserializedSimpleFunctionDescriptor]
 
@@ -356,9 +356,9 @@ Inferred types:
 
 'element' @ [158:77] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.core.deleteElementWithDelimiters[ValueParameterDescriptorImpl]
 
-'javaClass' @ [158:85] ==> public val <T : Any> PsiElement.javaClass: Class<PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [158:85] ==> public val <T : Any> (PsiElement..PsiElement?).javaClass: Class<(PsiElement..PsiElement?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> PsiElement
+    <T : Any> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'if (paramBefore != null) {
         from = paramBefore.nextSibling
@@ -393,9 +393,9 @@ Inferred types:
 
 'element' @ [167:80] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.core.deleteElementWithDelimiters[ValueParameterDescriptorImpl]
 
-'javaClass' @ [167:88] ==> public val <T : Any> PsiElement.javaClass: Class<PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [167:88] ==> public val <T : Any> (PsiElement..PsiElement?).javaClass: Class<(PsiElement..PsiElement?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> PsiElement
+    <T : Any> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'from' @ [169:9] ==> val from: PsiElement defined in org.jetbrains.kotlin.idea.core.deleteElementWithDelimiters[LocalVariableDescriptor]
 
@@ -563,14 +563,14 @@ Inferred types:
 
 'overriddenDescriptors' @ [224:27] ==> public final var CallableMemberDescriptor.overriddenDescriptors: (MutableCollection<out (CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>)[MyPropertyDescriptor]
 
-'let' @ [225:27] ==> @InlineOnly public inline fun <T, R> MutableCollection<out (CallableMemberDescriptor..CallableMemberDescriptor?)>.let(block: (MutableCollection<out (CallableMemberDescriptor..CallableMemberDescriptor?)>) -> Visibility?): Visibility? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [225:27] ==> @InlineOnly public inline fun <T, R> (MutableCollection<out (CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>).let(block: ((MutableCollection<out (CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>)) -> Visibility?): Visibility? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MutableCollection<out (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)>
+    <T> -> (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)>)
     <R> -> Visibility?
 
 'findMaxVisibility' @ [225:48] ==> @Nullable public open fun findMaxVisibility(@NotNull p0: (MutableCollection<out (CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>)): Visibility? defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
 
-'it' @ [225:66] ==> value-parameter it: MutableCollection<out (CallableMemberDescriptor..CallableMemberDescriptor?)> defined in org.jetbrains.kotlin.idea.core.implicitVisibility.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [225:66] ==> value-parameter it: (MutableCollection<out (CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>) defined in org.jetbrains.kotlin.idea.core.implicitVisibility.<anonymous>[ValueParameterDescriptorImpl]
 
 'toKeywordToken' @ [226:27] ==> public fun Visibility.toKeywordToken(): KtModifierKeywordToken defined in org.jetbrains.kotlin.idea.core in file descriptorUtils.kt[SimpleFunctionDescriptorImpl]
 
@@ -800,25 +800,17 @@ Inferred types:
 
 'FINAL_KEYWORD' @ [314:14] ==> public final val FINAL_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'Modality' @ [314:31] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [314:40] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'SEALED_KEYWORD' @ [315:14] ==> public final val SEALED_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'Modality' @ [315:32] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'SEALED' @ [315:41] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN_KEYWORD' @ [316:14] ==> public final val OPEN_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'Modality' @ [316:30] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'OPEN' @ [316:39] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT_KEYWORD' @ [317:14] ==> public final val ABSTRACT_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'Modality' @ [317:34] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [317:43] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -901,9 +893,9 @@ Inferred types:
 
 'getDelegationCall' @ [343:26] ==> public final fun getDelegationCall(): KtConstructorDelegationCall defined in org.jetbrains.kotlin.psi.KtSecondaryConstructor[DeserializedSimpleFunctionDescriptor]
 
-'if (delegationCall.isImplicit) valueParameterList else delegationCall' @ [344:18] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {KtElement & ASTDelegatePsiElement}?, elseBranch: {KtElement & ASTDelegatePsiElement}?): {KtElement & ASTDelegatePsiElement}?[SimpleFunctionDescriptorImpl]
+'if (delegationCall.isImplicit) valueParameterList else delegationCall' @ [344:18] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: NavigatablePsiElement?, elseBranch: NavigatablePsiElement?): NavigatablePsiElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {KtElement & ASTDelegatePsiElement}?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> NavigatablePsiElement?
 
 'delegationCall' @ [344:22] ==> val delegationCall: KtConstructorDelegationCall defined in org.jetbrains.kotlin.idea.core.getOrCreateBody[LocalVariableDescriptor]
 
@@ -923,7 +915,7 @@ Inferred types:
 
 'newBody' @ [346:21] ==> val newBody: KtBlockExpression defined in org.jetbrains.kotlin.idea.core.getOrCreateBody[LocalVariableDescriptor]
 
-'anchor' @ [346:30] ==> val anchor: {KtElement & ASTDelegatePsiElement}? defined in org.jetbrains.kotlin.idea.core.getOrCreateBody[LocalVariableDescriptor]
+'anchor' @ [346:30] ==> val anchor: NavigatablePsiElement? defined in org.jetbrains.kotlin.idea.core.getOrCreateBody[LocalVariableDescriptor]
 
 'equalsToken' @ [350:16] ==> public final val KtParameter.equalsToken: PsiElement?[MyPropertyDescriptor]
 
@@ -1048,8 +1040,6 @@ Inferred types:
 
 'setType' @ [384:5] ==> public fun KtCallableDeclaration.setType(typeString: String, shortenReferences: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.core in file psiModificationUtils.kt[SimpleFunctionDescriptorImpl]
 
-'IdeDescriptorRenderers' @ [384:13] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE' @ [384:36] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderType' @ [384:48] ==> public abstract fun renderType(type: KotlinType): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -1089,8 +1079,6 @@ Inferred types:
 'project' @ [397:38] ==> public final val KtCallableDeclaration.project: Project[MyPropertyDescriptor]
 
 'createType' @ [397:47] ==> public final fun createType(type: String): KtTypeReference defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
-
-'IdeDescriptorRenderers' @ [397:58] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [397:81] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 

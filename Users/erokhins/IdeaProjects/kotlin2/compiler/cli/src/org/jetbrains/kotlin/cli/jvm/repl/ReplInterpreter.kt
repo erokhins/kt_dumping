@@ -10,7 +10,7 @@ Inferred types:
 
 'getList' @ [44:48] ==> @NotNull public open fun <T : (Any..Any?)> getList(@NotNull p0: CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>): (MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>) defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContentRoot
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.ContentRoot..org.jetbrains.kotlin.config.ContentRoot?)
 
 'CONTENT_ROOTS' @ [44:77] ==> public final val CONTENT_ROOTS: (CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>..CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -116,9 +116,9 @@ Inferred types:
 
 'hasErrors' @ [75:45] ==> private final var hasErrors: Boolean defined in org.jetbrains.kotlin.cli.jvm.repl.ReplInterpreter.messageCollector.<no name provided>[PropertyDescriptorImpl]
 
-'lazy' @ [79:49] ==> public fun <T> lazy(initializer: () -> GenericReplCompiler): Lazy<GenericReplCompiler> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [79:49] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> GenericReplCompiler
+    <T> -> T
 
 'GenericReplCompiler' @ [80:9] ==> public constructor GenericReplCompiler(disposable: Disposable, scriptDefinition: KotlinScriptDefinition, compilerConfiguration: CompilerConfiguration, messageCollector: MessageCollector) defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplCompiler[ClassConstructorDescriptorImpl]
 
@@ -130,9 +130,9 @@ Inferred types:
 
 'messageCollector' @ [80:88] ==> private final val messageCollector: <no name provided> defined in org.jetbrains.kotlin.cli.jvm.repl.ReplInterpreter[PropertyDescriptorImpl]
 
-'lazy' @ [82:55] ==> public fun <T> lazy(initializer: () -> GenericReplCompilingEvaluator): Lazy<GenericReplCompilingEvaluator> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [82:55] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> GenericReplCompilingEvaluator
+    <T> -> T
 
 'GenericReplCompilingEvaluator' @ [83:9] ==> public constructor GenericReplCompilingEvaluator(compiler: ReplCompiler, baseClasspath: Iterable<File>, baseClassloader: ClassLoader? = ..., fallbackScriptArgs: ScriptArgsWithTypes? = ..., repeatingMode: ReplRepeatingMode = ...) defined in org.jetbrains.kotlin.cli.common.repl.GenericReplCompilingEvaluator[DeserializedClassConstructorDescriptor]
 
@@ -144,9 +144,9 @@ Inferred types:
 
 'REPEAT_ANY_PREVIOUS' @ [83:108] ==> enum entry REPEAT_ANY_PREVIOUS defined in org.jetbrains.kotlin.cli.common.repl.ReplRepeatingMode[FakeCallableDescriptorForObject]
 
-'lazy' @ [86:30] ==> public fun <T> lazy(initializer: () -> IReplStageState<out Any?>): Lazy<IReplStageState<out Any?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [86:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> IReplStageState<out Any?>
+    <T> -> T
 
 'scriptEvaluator' @ [86:37] ==> private final val scriptEvaluator: ReplFullEvaluator defined in org.jetbrains.kotlin.cli.jvm.repl.ReplInterpreter[PropertyDescriptorImpl]
 
@@ -164,7 +164,7 @@ Inferred types:
 
 'compileAndEval' @ [94:43] ==> public abstract fun compileAndEval(state: IReplStageState<*>, codeLine: ReplCodeLine, scriptArgs: ScriptArgsWithTypes?, invokeWrapper: InvokeWrapper?): ReplEvalResult defined in org.jetbrains.kotlin.cli.common.repl.ReplFullEvaluator[DeserializedSimpleFunctionDescriptor]
 
-'evalState' @ [94:58] ==> private final val evalState: IReplStageState<out Any?> defined in org.jetbrains.kotlin.cli.jvm.repl.ReplInterpreter[PropertyDescriptorImpl]
+'evalState' @ [94:58] ==> private final val evalState: IReplStageState<*> defined in org.jetbrains.kotlin.cli.jvm.repl.ReplInterpreter[PropertyDescriptorImpl]
 
 'ReplCodeLine' @ [94:69] ==> public constructor ReplCodeLine(no: Int, generation: Int, code: String) defined in org.jetbrains.kotlin.cli.common.repl.ReplCodeLine[DeserializedClassConstructorDescriptor]
 

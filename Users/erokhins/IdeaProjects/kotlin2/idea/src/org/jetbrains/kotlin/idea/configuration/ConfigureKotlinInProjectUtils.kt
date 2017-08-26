@@ -83,7 +83,7 @@ Inferred types:
 
 'EAP_REPOSITORY' @ [101:23] ==> public val EAP_REPOSITORY: RepositoryDescription defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[PropertyDescriptorImpl]
 
-'allConfigurators' @ [106:12] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'allConfigurators' @ [106:12] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'any' @ [106:31] ==> public inline fun <T> Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>.any(predicate: ((KotlinProjectConfigurator..KotlinProjectConfigurator?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -125,7 +125,7 @@ Inferred types:
 
 'project' @ [120:12] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.getModulesWithKotlinFiles[ValueParameterDescriptorImpl]
 
-'allModules' @ [120:20] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'allModules' @ [120:20] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'filter' @ [121:14] ==> public inline fun <T> Iterable<(Module..Module?)>.filter(predicate: ((Module..Module?)) -> Boolean): List<(Module..Module?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -143,7 +143,7 @@ Inferred types:
 
 'getModuleScope' @ [123:86] ==> @NotNull public abstract fun getModuleScope(p0: Boolean): GlobalSearchScope defined in com.intellij.openapi.module.Module[JavaMethodDescriptor]
 
-'getModulesWithKotlinFiles' @ [129:19] ==> public fun getModulesWithKotlinFiles(project: Project): Collection<Module> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getModulesWithKotlinFiles' @ [129:19] ==> public fun getModulesWithKotlinFiles(project: Project): Collection<Module> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [129:45] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.getConfigurableModulesWithKotlinFiles[ValueParameterDescriptorImpl]
 
@@ -193,19 +193,19 @@ Inferred types:
 
 'project' @ [143:54] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded[ValueParameterDescriptorImpl]
 
-'runReadActionInSmartMode' @ [143:63] ==> public open fun <T : (Any..Any?)> runReadActionInSmartMode(@NotNull p0: Computable<(String..String?)>): (String..String?) defined in com.intellij.openapi.project.DumbService[JavaMethodDescriptor]
+'runReadActionInSmartMode' @ [143:63] ==> public open fun <T : (Any..Any?)> runReadActionInSmartMode(@NotNull p0: Computable<String?>): String? defined in com.intellij.openapi.project.DumbService[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> String?
 
 'Computable' @ [143:88] ==> public fun <T : (Any..Any?)> Computable(function: () -> String?): Computable<String?> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : (Any..Any?)> -> String?
 
-'getConfigurableModulesWithKotlinFiles' @ [144:23] ==> public fun getConfigurableModulesWithKotlinFiles(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getConfigurableModulesWithKotlinFiles' @ [144:23] ==> public fun getConfigurableModulesWithKotlinFiles(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [144:61] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded[ValueParameterDescriptorImpl]
 
-'exclude' @ [144:70] ==> public fun List<ModuleSourceRootGroup>.exclude(excludeModules: Collection<Module>): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'exclude' @ [144:70] ==> public fun List<ModuleSourceRootGroup>.exclude(excludeModules: Collection<Module>): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration in file ModuleSourceRootMap.kt[SimpleFunctionDescriptorImpl]
 
 'excludeModules' @ [144:78] ==> value-parameter excludeModules: List<Module> = ... defined in org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded[ValueParameterDescriptorImpl]
 
@@ -222,7 +222,7 @@ Inferred types:
 Inferred types:
     <T> -> ModuleSourceRootGroup
 
-'ConfigureKotlinNotification' @ [148:13] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.ui.notifications.ConfigureKotlinNotification[FakeCallableDescriptorForObject]
+'isModuleConfigured' @ [145:27] ==> public fun isModuleConfigured(moduleSourceRootGroup: ModuleSourceRootGroup): Boolean defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'getNotificationString' @ [148:41] ==> public final fun getNotificationString(project: Project, excludeModules: Collection<Module>): String? defined in org.jetbrains.kotlin.idea.configuration.ui.notifications.ConfigureKotlinNotification.Companion[SimpleFunctionDescriptorImpl]
 
@@ -230,7 +230,7 @@ Inferred types:
 
 'excludeModules' @ [148:72] ==> value-parameter excludeModules: List<Module> = ... defined in org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded[ValueParameterDescriptorImpl]
 
-'notificationString' @ [151:9] ==> val notificationString: (String..String?) defined in org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded[LocalVariableDescriptor]
+'notificationString' @ [151:9] ==> val notificationString: String? defined in org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded[LocalVariableDescriptor]
 
 'getApplication' @ [152:28] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 
@@ -248,13 +248,13 @@ Inferred types:
 
 'excludeModules' @ [153:101] ==> value-parameter excludeModules: List<Module> = ... defined in org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded[ValueParameterDescriptorImpl]
 
-'notificationString' @ [153:117] ==> val notificationString: (String..String?) defined in org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded[LocalVariableDescriptor]
+'notificationString' @ [153:117] ==> val notificationString: String? defined in org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded[LocalVariableDescriptor]
 
-'getConfigurableModules' @ [159:19] ==> public fun getConfigurableModules(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getConfigurableModules' @ [159:19] ==> public fun getConfigurableModules(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [159:42] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.getAbleToRunConfigurators[ValueParameterDescriptorImpl]
 
-'allConfigurators' @ [161:12] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'allConfigurators' @ [161:12] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'filter' @ [161:31] ==> public inline fun <T> Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>.filter(predicate: ((KotlinProjectConfigurator..KotlinProjectConfigurator?)) -> Boolean): List<(KotlinProjectConfigurator..KotlinProjectConfigurator?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -274,7 +274,7 @@ Inferred types:
 
 'CAN_BE_CONFIGURED' @ [162:75] ==> enum entry CAN_BE_CONFIGURED defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinStatus[FakeCallableDescriptorForObject]
 
-'getConfigurableModulesWithKotlinFiles' @ [167:12] ==> public fun getConfigurableModulesWithKotlinFiles(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getConfigurableModulesWithKotlinFiles' @ [167:12] ==> public fun getConfigurableModulesWithKotlinFiles(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [167:50] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.getConfigurableModules[ValueParameterDescriptorImpl]
 
@@ -291,7 +291,7 @@ Inferred types:
 
 'project' @ [168:57] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.getConfigurableModules[ValueParameterDescriptorImpl]
 
-'allModules' @ [168:65] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'allModules' @ [168:65] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'ModuleSourceRootMap' @ [173:23] ==> public constructor ModuleSourceRootMap(project: Project) defined in org.jetbrains.kotlin.idea.configuration.ModuleSourceRootMap[ClassConstructorDescriptorImpl]
 
@@ -303,7 +303,7 @@ Inferred types:
 
 'module' @ [173:73] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.configuration.getAbleToRunConfigurators[ValueParameterDescriptorImpl]
 
-'allConfigurators' @ [174:12] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'allConfigurators' @ [174:12] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'filter' @ [174:31] ==> public inline fun <T> Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>.filter(predicate: ((KotlinProjectConfigurator..KotlinProjectConfigurator?)) -> Boolean): List<(KotlinProjectConfigurator..KotlinProjectConfigurator?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -317,7 +317,7 @@ Inferred types:
 
 'CAN_BE_CONFIGURED' @ [175:60] ==> enum entry CAN_BE_CONFIGURED defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinStatus[FakeCallableDescriptorForObject]
 
-'allConfigurators' @ [180:12] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'allConfigurators' @ [180:12] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [180:31] ==> public inline fun <T> Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>.firstOrNull(predicate: ((KotlinProjectConfigurator..KotlinProjectConfigurator?)) -> Boolean): KotlinProjectConfigurator? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -331,9 +331,7 @@ Inferred types:
 
 'getExtensions' @ [183:37] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinProjectConfigurator
-
-'KotlinProjectConfigurator' @ [183:51] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator..org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator?)
 
 'EP_NAME' @ [183:77] ==> public final val EP_NAME: ExtensionPointName<(KotlinProjectConfigurator..KotlinProjectConfigurator?)> defined in org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -345,7 +343,7 @@ Inferred types:
 
 'project' @ [186:60] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.getCanBeConfiguredModules[ValueParameterDescriptorImpl]
 
-'allModules' @ [186:68] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'allModules' @ [186:68] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'filter' @ [187:14] ==> public inline fun <T> Iterable<ModuleSourceRootGroup>.filter(predicate: (ModuleSourceRootGroup) -> Boolean): List<ModuleSourceRootGroup> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -353,7 +351,7 @@ Inferred types:
 
 'configurator' @ [187:23] ==> value-parameter configurator: KotlinProjectConfigurator defined in org.jetbrains.kotlin.idea.configuration.getCanBeConfiguredModules[ValueParameterDescriptorImpl]
 
-'canConfigure' @ [187:36] ==> private fun KotlinProjectConfigurator.canConfigure(moduleSourceRootGroup: ModuleSourceRootGroup): Boolean defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'canConfigure' @ [187:36] ==> private fun KotlinProjectConfigurator.canConfigure(moduleSourceRootGroup: ModuleSourceRootGroup): Boolean defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [187:49] ==> value-parameter it: ModuleSourceRootGroup defined in org.jetbrains.kotlin.idea.configuration.getCanBeConfiguredModules.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -372,7 +370,7 @@ Inferred types:
 
 'CAN_BE_CONFIGURED' @ [192:67] ==> enum entry CAN_BE_CONFIGURED defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinStatus[FakeCallableDescriptorForObject]
 
-'allConfigurators' @ [193:10] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'allConfigurators' @ [193:10] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [193:29] ==> public fun <T> Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>.toList(): List<(KotlinProjectConfigurator..KotlinProjectConfigurator?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -392,7 +390,7 @@ Inferred types:
 
 'CONFIGURED' @ [193:114] ==> enum entry CONFIGURED defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinStatus[FakeCallableDescriptorForObject]
 
-'getConfigurableModulesWithKotlinFiles' @ [196:19] ==> public fun getConfigurableModulesWithKotlinFiles(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getConfigurableModulesWithKotlinFiles' @ [196:19] ==> public fun getConfigurableModulesWithKotlinFiles(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [196:57] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.getCanBeConfiguredModulesWithKotlinFiles[ValueParameterDescriptorImpl]
 
@@ -423,15 +421,15 @@ Inferred types:
 Inferred types:
     <T> -> Module
 
-'getConfigurableModulesWithKotlinFiles' @ [201:34] ==> public fun getConfigurableModulesWithKotlinFiles(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getConfigurableModulesWithKotlinFiles' @ [201:34] ==> public fun getConfigurableModulesWithKotlinFiles(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [201:72] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.getCanBeConfiguredModulesWithKotlinFiles[ValueParameterDescriptorImpl]
 
-'exclude' @ [201:81] ==> public fun List<ModuleSourceRootGroup>.exclude(excludeModules: Collection<Module>): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'exclude' @ [201:81] ==> public fun List<ModuleSourceRootGroup>.exclude(excludeModules: Collection<Module>): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration in file ModuleSourceRootMap.kt[SimpleFunctionDescriptorImpl]
 
 'excludeModules' @ [201:89] ==> value-parameter excludeModules: Collection<Module> = ... defined in org.jetbrains.kotlin.idea.configuration.getCanBeConfiguredModulesWithKotlinFiles[ValueParameterDescriptorImpl]
 
-'allConfigurators' @ [202:25] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'allConfigurators' @ [202:25] ==> public fun allConfigurators(): (Array<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>..Array<out (KotlinProjectConfigurator..KotlinProjectConfigurator?)>) defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'modulesWithKotlinFiles' @ [203:12] ==> val modulesWithKotlinFiles: List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration.getCanBeConfiguredModulesWithKotlinFiles[LocalVariableDescriptor]
 

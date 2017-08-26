@@ -32,7 +32,7 @@
 
 'srcPath' @ [60:31] ==> val srcPath: String defined in org.jetbrains.kotlin.idea.navigation.GotoWithMultipleLibrariesTest.doTestSameJarSharedByLibrariesWithAndWithoutSourceAttached[LocalVariableDescriptor]
 
-'addDependency' @ [60:40] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [60:40] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'projectLibrary' @ [60:54] ==> public fun PlatformTestCase.projectLibrary(libraryName: String = ..., classesRoot: VirtualFile? = ..., sourcesRoot: VirtualFile? = ..., kind: PersistentLibraryKind<*>? = ...): Library defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
@@ -50,7 +50,7 @@
 
 'srcPath' @ [63:31] ==> val srcPath: String defined in org.jetbrains.kotlin.idea.navigation.GotoWithMultipleLibrariesTest.doTestSameJarSharedByLibrariesWithAndWithoutSourceAttached[LocalVariableDescriptor]
 
-'addDependency' @ [63:40] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [63:40] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'projectLibrary' @ [63:54] ==> public fun PlatformTestCase.projectLibrary(libraryName: String = ..., classesRoot: VirtualFile? = ..., sourcesRoot: VirtualFile? = ..., kind: PersistentLibraryKind<*>? = ...): Library defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 

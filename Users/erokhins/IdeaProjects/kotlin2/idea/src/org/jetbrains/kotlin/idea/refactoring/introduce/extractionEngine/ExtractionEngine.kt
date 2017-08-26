@@ -77,7 +77,7 @@ Inferred types:
 
 'project' @ [67:13] ==> val project: Project defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionEngine.run[LocalVariableDescriptor]
 
-'checkConflictsInteractively' @ [67:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [67:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'validationResult' @ [67:49] ==> val validationResult: ExtractableCodeDescriptorWithConflicts defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionEngine.run.validateAndRefactor[LocalVariableDescriptor]
 

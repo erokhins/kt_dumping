@@ -4,8 +4,6 @@
 
 'resetProjectSettings' @ [44:9] ==> private final fun resetProjectSettings(version: LanguageVersion): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
 
-'LanguageVersion' @ [44:30] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_1' @ [44:46] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'myFixture' @ [45:9] ==> protected/*protected and package*/ final var myFixture: (CodeInsightTestFixture..CodeInsightTestFixture?) defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[JavaPropertyDescriptor]
@@ -14,11 +12,7 @@
 
 'assertEquals' @ [47:9] ==> public open fun assertEquals(p0: (String..String?), p1: (String..String?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'CommonCompilerArguments' @ [47:22] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
-
 'WARN' @ [47:46] ==> public const final val WARN: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
-
-'KotlinCommonCompilerArgumentsHolder' @ [47:52] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
 
 'getInstance' @ [47:88] ==> public final fun getInstance(project: Project): KotlinCommonCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -29,8 +23,6 @@
 'coroutinesState' @ [47:118] ==> @Argument public final var coroutinesState: String? defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [48:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
-
-'LanguageFeature' @ [48:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_WARNING' @ [48:44] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -46,8 +38,6 @@
 
 'assertEquals' @ [50:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'LanguageFeature' @ [50:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [50:44] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'coroutineSupport' @ [50:53] ==> private final val coroutineSupport: LanguageFeature.State defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[PropertyDescriptorImpl]
@@ -55,8 +45,6 @@
 'configureRuntime' @ [54:9] ==> private final fun configureRuntime(path: String): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
 
 'resetProjectSettings' @ [55:9] ==> private final fun resetProjectSettings(version: LanguageVersion): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
-
-'LanguageVersion' @ [55:30] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_1' @ [55:46] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
@@ -66,11 +54,7 @@
 
 'assertEquals' @ [58:9] ==> public open fun assertEquals(p0: (String..String?), p1: (String..String?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'CommonCompilerArguments' @ [58:22] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
-
 'WARN' @ [58:46] ==> public const final val WARN: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
-
-'KotlinCommonCompilerArgumentsHolder' @ [58:52] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
 
 'getInstance' @ [58:88] ==> public final fun getInstance(project: Project): KotlinCommonCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -81,8 +65,6 @@
 'coroutinesState' @ [58:118] ==> @Argument public final var coroutinesState: String? defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [59:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
-
-'LanguageFeature' @ [59:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_WARNING' @ [59:44] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -98,21 +80,17 @@
 
 'assertEquals' @ [61:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'LanguageFeature' @ [61:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED_WITH_ERROR' @ [61:44] ==> enum entry ENABLED_WITH_ERROR defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'coroutineSupport' @ [61:64] ==> private final val coroutineSupport: LanguageFeature.State defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[PropertyDescriptorImpl]
 
 'configureRuntime' @ [65:9] ==> private final fun configureRuntime(path: String): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
 
-'configureKotlinFacet' @ [66:21] ==> public fun configureKotlinFacet(module: Module, configureCallback: KotlinFacetConfiguration.() -> Unit = ...): KotlinFacet defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'configureKotlinFacet' @ [66:21] ==> public fun configureKotlinFacet(module: Module, configureCallback: KotlinFacetConfiguration.() -> Unit = ...): KotlinFacet defined in org.jetbrains.kotlin.idea.test in file KotlinProjectDescriptorWithFacet.kt[SimpleFunctionDescriptorImpl]
 
 'myModule' @ [66:42] ==> protected/*protected and package*/ final var myModule: (Module..Module?) defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[JavaPropertyDescriptor]
 
 'resetProjectSettings' @ [67:9] ==> private final fun resetProjectSettings(version: LanguageVersion): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
-
-'LanguageVersion' @ [67:30] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_1' @ [67:46] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
@@ -121,8 +99,6 @@
 'configureByText' @ [68:19] ==> public abstract fun configureByText(@NotNull p0: String, @NotNull p1: String): (PsiFile..PsiFile?) defined in com.intellij.testFramework.fixtures.CodeInsightTestFixture[JavaMethodDescriptor]
 
 'assertEquals' @ [70:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
-
-'LanguageFeature' @ [70:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_WARNING' @ [70:44] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -144,8 +120,6 @@
 
 'assertEquals' @ [72:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'LanguageFeature' @ [72:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [72:44] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'facet' @ [72:53] ==> val facet: KotlinFacet defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest.testEnableCoroutinesFacet[LocalVariableDescriptor]
@@ -160,8 +134,6 @@
 
 'resetProjectSettings' @ [77:9] ==> private final fun resetProjectSettings(version: LanguageVersion): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
 
-'LanguageVersion' @ [77:30] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_1' @ [77:46] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'myFixture' @ [78:9] ==> protected/*protected and package*/ final var myFixture: (CodeInsightTestFixture..CodeInsightTestFixture?) defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[JavaPropertyDescriptor]
@@ -169,8 +141,6 @@
 'configureByText' @ [78:19] ==> public abstract fun configureByText(@NotNull p0: String, @NotNull p1: String): (PsiFile..PsiFile?) defined in com.intellij.testFramework.fixtures.CodeInsightTestFixture[JavaMethodDescriptor]
 
 'assertEquals' @ [80:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
-
-'LanguageFeature' @ [80:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_WARNING' @ [80:44] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -185,8 +155,6 @@
 'findSingleIntention' @ [81:42] ==> @NotNull public abstract fun findSingleIntention(@NotNull p0: String): IntentionAction defined in com.intellij.testFramework.fixtures.CodeInsightTestFixture[JavaMethodDescriptor]
 
 'assertEquals' @ [82:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
-
-'LanguageFeature' @ [82:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED' @ [82:44] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -206,8 +174,6 @@
 
 'resetProjectSettings' @ [88:9] ==> private final fun resetProjectSettings(version: LanguageVersion): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
 
-'LanguageVersion' @ [88:30] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_0' @ [88:46] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'myFixture' @ [89:9] ==> protected/*protected and package*/ final var myFixture: (CodeInsightTestFixture..CodeInsightTestFixture?) defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[JavaPropertyDescriptor]
@@ -224,8 +190,6 @@
 
 'assertEquals' @ [93:9] ==> public open fun assertEquals(p0: (String..String?), p1: (String..String?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'KotlinCommonCompilerArgumentsHolder' @ [93:29] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
-
 'getInstance' @ [93:65] ==> public final fun getInstance(project: Project): KotlinCommonCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
 'project' @ [93:77] ==> protected/*protected and package*/ for synthetic extension final val LanguageFeatureQuickFixTest.project: (Project..Project?)[MyPropertyDescriptor]
@@ -235,8 +199,6 @@
 'languageVersion' @ [93:95] ==> @GradleOption @Argument public final var languageVersion: String? defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [94:9] ==> public open fun assertEquals(p0: (String..String?), p1: (String..String?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
-
-'KotlinCommonCompilerArgumentsHolder' @ [94:29] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
 
 'getInstance' @ [94:65] ==> public final fun getInstance(project: Project): KotlinCommonCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -250,11 +212,9 @@
 
 'resetProjectSettings' @ [99:9] ==> private final fun resetProjectSettings(version: LanguageVersion): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
 
-'LanguageVersion' @ [99:30] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_0' @ [99:46] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
-'configureKotlinFacet' @ [100:9] ==> public fun configureKotlinFacet(module: Module, configureCallback: KotlinFacetConfiguration.() -> Unit = ...): KotlinFacet defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'configureKotlinFacet' @ [100:9] ==> public fun configureKotlinFacet(module: Module, configureCallback: KotlinFacetConfiguration.() -> Unit = ...): KotlinFacet defined in org.jetbrains.kotlin.idea.test in file KotlinProjectDescriptorWithFacet.kt[SimpleFunctionDescriptorImpl]
 
 'myModule' @ [100:30] ==> protected/*protected and package*/ final var myModule: (Module..Module?) defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[JavaPropertyDescriptor]
 
@@ -280,8 +240,6 @@
 
 'assertEquals' @ [106:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'LanguageVersion' @ [106:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_0' @ [106:38] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'myModule' @ [106:50] ==> protected/*protected and package*/ final var myModule: (Module..Module?) defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[JavaPropertyDescriptor]
@@ -300,8 +258,6 @@
 
 'assertEquals' @ [108:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'LanguageVersion' @ [108:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_1' @ [108:38] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'myModule' @ [108:50] ==> protected/*protected and package*/ final var myModule: (Module..Module?) defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[JavaPropertyDescriptor]
@@ -313,8 +269,6 @@
 'configureRuntime' @ [112:9] ==> private final fun configureRuntime(path: String): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
 
 'resetProjectSettings' @ [113:9] ==> private final fun resetProjectSettings(version: LanguageVersion): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
-
-'LanguageVersion' @ [113:30] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_0' @ [113:46] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
@@ -332,8 +286,6 @@
 
 'assertEquals' @ [118:9] ==> public open fun assertEquals(p0: (String..String?), p1: (String..String?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'KotlinCommonCompilerArgumentsHolder' @ [118:29] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
-
 'getInstance' @ [118:65] ==> public final fun getInstance(project: Project): KotlinCommonCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
 'project' @ [118:77] ==> protected/*protected and package*/ for synthetic extension final val LanguageFeatureQuickFixTest.project: (Project..Project?)[MyPropertyDescriptor]
@@ -343,8 +295,6 @@
 'languageVersion' @ [118:95] ==> @GradleOption @Argument public final var languageVersion: String? defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [119:9] ==> public open fun assertEquals(p0: (String..String?), p1: (String..String?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
-
-'KotlinCommonCompilerArgumentsHolder' @ [119:29] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
 
 'getInstance' @ [119:65] ==> public final fun getInstance(project: Project): KotlinCommonCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -357,8 +307,6 @@
 'configureRuntime' @ [123:9] ==> private final fun configureRuntime(path: String): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
 
 'resetProjectSettings' @ [124:9] ==> private final fun resetProjectSettings(version: LanguageVersion): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
-
-'LanguageVersion' @ [124:30] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_0' @ [124:46] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
@@ -376,8 +324,6 @@
 
 'assertEquals' @ [129:9] ==> public open fun assertEquals(p0: (String..String?), p1: (String..String?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'KotlinCommonCompilerArgumentsHolder' @ [129:29] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
-
 'getInstance' @ [129:65] ==> public final fun getInstance(project: Project): KotlinCommonCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
 'project' @ [129:77] ==> protected/*protected and package*/ for synthetic extension final val LanguageFeatureQuickFixTest.project: (Project..Project?)[MyPropertyDescriptor]
@@ -387,8 +333,6 @@
 'languageVersion' @ [129:95] ==> @GradleOption @Argument public final var languageVersion: String? defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [130:9] ==> public open fun assertEquals(p0: (String..String?), p1: (String..String?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
-
-'KotlinCommonCompilerArgumentsHolder' @ [130:29] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
 
 'getInstance' @ [130:65] ==> public final fun getInstance(project: Project): KotlinCommonCompilerArgumentsHolder defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -412,11 +356,9 @@
 
 'resetProjectSettings' @ [137:9] ==> private final fun resetProjectSettings(version: LanguageVersion): Unit defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[SimpleFunctionDescriptorImpl]
 
-'LanguageVersion' @ [137:30] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_0' @ [137:46] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
-'configureKotlinFacet' @ [138:9] ==> public fun configureKotlinFacet(module: Module, configureCallback: KotlinFacetConfiguration.() -> Unit = ...): KotlinFacet defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'configureKotlinFacet' @ [138:9] ==> public fun configureKotlinFacet(module: Module, configureCallback: KotlinFacetConfiguration.() -> Unit = ...): KotlinFacet defined in org.jetbrains.kotlin.idea.test in file KotlinProjectDescriptorWithFacet.kt[SimpleFunctionDescriptorImpl]
 
 'myModule' @ [138:30] ==> protected/*protected and package*/ final var myModule: (Module..Module?) defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[JavaPropertyDescriptor]
 
@@ -442,8 +384,6 @@
 
 'assertEquals' @ [144:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
 
-'LanguageVersion' @ [144:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_0' @ [144:38] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'myModule' @ [144:50] ==> protected/*protected and package*/ final var myModule: (Module..Module?) defined in org.jetbrains.kotlin.idea.quickfix.LanguageFeatureQuickFixTest[JavaPropertyDescriptor]
@@ -461,8 +401,6 @@
 'findSingleIntention' @ [145:42] ==> @NotNull public abstract fun findSingleIntention(@NotNull p0: String): IntentionAction defined in com.intellij.testFramework.fixtures.CodeInsightTestFixture[JavaMethodDescriptor]
 
 'assertEquals' @ [146:9] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase[JavaMethodDescriptor]
-
-'LanguageVersion' @ [146:22] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_1' @ [146:38] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
@@ -576,8 +514,6 @@ Inferred types:
 
 'getFeatureSupport' @ [176:54] ==> public abstract fun getFeatureSupport(feature: LanguageFeature): LanguageFeature.State defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [176:72] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'Coroutines' @ [176:88] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'getInstance' @ [179:22] ==> public open fun getInstance(@NotNull p0: Module): (FacetManager..FacetManager?) defined in com.intellij.facet.FacetManager[JavaMethodDescriptor]
@@ -586,9 +522,7 @@ Inferred types:
 
 'getFacetByType' @ [179:44] ==> @Nullable public abstract fun <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> getFacetByType(p0: (FacetTypeId<(KotlinFacet..KotlinFacet?)>..FacetTypeId<(KotlinFacet..KotlinFacet?)>?)): KotlinFacet? defined in com.intellij.facet.FacetManager[JavaMethodDescriptor]
 Inferred types:
-    <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> KotlinFacet
-
-'KotlinFacetType' @ [179:59] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType[FakeCallableDescriptorForObject]
+    <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> (org.jetbrains.kotlin.idea.facet.KotlinFacet..org.jetbrains.kotlin.idea.facet.KotlinFacet?)
 
 'TYPE_ID' @ [179:75] ==> public final val TYPE_ID: FacetTypeId<KotlinFacet> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[DeserializedPropertyDescriptor]
 

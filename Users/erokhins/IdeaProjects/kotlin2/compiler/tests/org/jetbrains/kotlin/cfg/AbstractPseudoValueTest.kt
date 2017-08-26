@@ -65,8 +65,6 @@ Inferred types:
 
 'bindingContext' @ [54:49] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.cfg.AbstractPseudoValueTest.dumpInstructions[ValueParameterDescriptorImpl]
 
-'DefaultBuiltIns' @ [54:65] ==> public companion object defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns[FakeCallableDescriptorForObject]
-
 'Instance' @ [54:81] ==> @JvmStatic public final val Instance: DefaultBuiltIns defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns.Companion[DeserializedPropertyDescriptor]
 
 'value' @ [56:23] ==> value-parameter value: PseudoValue defined in org.jetbrains.kotlin.cfg.AbstractPseudoValueTest.dumpInstructions.valueDecl[ValueParameterDescriptorImpl]

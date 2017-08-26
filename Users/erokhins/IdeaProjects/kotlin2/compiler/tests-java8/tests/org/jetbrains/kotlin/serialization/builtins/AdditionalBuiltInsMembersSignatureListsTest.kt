@@ -18,19 +18,11 @@
 
 'BLACK_LIST_METHOD_SIGNATURES' @ [42:37] ==> public final val BLACK_LIST_METHOD_SIGNATURES: Set<String> defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.Companion[DeserializedPropertyDescriptor]
 
-'JvmBuiltInsSettings' @ [43:17] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings[FakeCallableDescriptorForObject]
-
 'MUTABLE_METHOD_SIGNATURES' @ [43:37] ==> public final val MUTABLE_METHOD_SIGNATURES: Set<String> defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.Companion[DeserializedPropertyDescriptor]
-
-'JvmBuiltInsSettings' @ [44:17] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings[FakeCallableDescriptorForObject]
 
 'BLACK_LIST_CONSTRUCTOR_SIGNATURES' @ [44:37] ==> public final val BLACK_LIST_CONSTRUCTOR_SIGNATURES: Set<String> defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.Companion[DeserializedPropertyDescriptor]
 
-'JvmBuiltInsSettings' @ [45:17] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings[FakeCallableDescriptorForObject]
-
 'WHITE_LIST_METHOD_SIGNATURES' @ [45:37] ==> public final val WHITE_LIST_METHOD_SIGNATURES: Set<String> defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.Companion[DeserializedPropertyDescriptor]
-
-'JvmBuiltInsSettings' @ [46:17] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings[FakeCallableDescriptorForObject]
 
 'WHITE_LIST_CONSTRUCTOR_SIGNATURES' @ [46:37] ==> public final val WHITE_LIST_CONSTRUCTOR_SIGNATURES: Set<String> defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.Companion[DeserializedPropertyDescriptor]
 

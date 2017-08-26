@@ -10,15 +10,9 @@ Inferred types:
 
 'ThrowException' @ [36:34] ==> public object ThrowException : FlexibleTypeDeserializer defined in org.jetbrains.kotlin.serialization.deserialization.FlexibleTypeDeserializer[FakeCallableDescriptorForObject]
 
-'BuiltInsBinaryVersion' @ [36:50] ==> public companion object defined in org.jetbrains.kotlin.builtins.BuiltInsBinaryVersion[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [36:72] ==> @field:JvmField public final val INSTANCE: BuiltInsBinaryVersion defined in org.jetbrains.kotlin.builtins.BuiltInsBinaryVersion.Companion[DeserializedPropertyDescriptor]
 
-'BuiltInsBinaryVersion' @ [36:82] ==> public companion object defined in org.jetbrains.kotlin.builtins.BuiltInsBinaryVersion[FakeCallableDescriptorForObject]
-
 'INVALID_VERSION' @ [36:104] ==> @field:JvmField public final val INVALID_VERSION: BuiltInsBinaryVersion defined in org.jetbrains.kotlin.builtins.BuiltInsBinaryVersion.Companion[DeserializedPropertyDescriptor]
-
-'KotlinStubVersions' @ [37:9] ==> public object KotlinStubVersions defined in org.jetbrains.kotlin.psi.stubs[FakeCallableDescriptorForObject]
 
 'BUILTIN_STUB_VERSION' @ [37:28] ==> public const final val BUILTIN_STUB_VERSION: Int defined in org.jetbrains.kotlin.psi.stubs.KotlinStubVersions[DeserializedPropertyDescriptor]
 
@@ -118,8 +112,6 @@ Inferred types:
 
 'stream' @ [74:60] ==> val stream: ByteArrayInputStream defined in org.jetbrains.kotlin.idea.decompiler.builtIns.BuiltInDefinitionFile.Companion.read[LocalVariableDescriptor]
 
-'BuiltInSerializerProtocol' @ [74:68] ==> public object BuiltInSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.builtins[FakeCallableDescriptorForObject]
-
 'extensionRegistry' @ [74:94] ==> public final val extensionRegistry: ExtensionRegistryLite defined in org.jetbrains.kotlin.builtins.BuiltInSerializerProtocol[DeserializedPropertyDescriptor]
 
 'BuiltInDefinitionFile' @ [75:26] ==> public constructor BuiltInDefinitionFile(proto: ProtoBuf.PackageFragment, packageDirectory: VirtualFile, isMetadata: Boolean) defined in org.jetbrains.kotlin.idea.decompiler.builtIns.BuiltInDefinitionFile[ClassConstructorDescriptorImpl]
@@ -133,8 +125,6 @@ Inferred types:
 'file' @ [75:68] ==> value-parameter file: VirtualFile defined in org.jetbrains.kotlin.idea.decompiler.builtIns.BuiltInDefinitionFile.Companion.read[ValueParameterDescriptorImpl]
 
 'extension' @ [75:73] ==> public final val VirtualFile.extension: String?[MyPropertyDescriptor]
-
-'MetadataPackageFragment' @ [75:86] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment[FakeCallableDescriptorForObject]
 
 'METADATA_FILE_EXTENSION' @ [75:110] ==> public final val METADATA_FILE_EXTENSION: String defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment.Companion[DeserializedPropertyDescriptor]
 

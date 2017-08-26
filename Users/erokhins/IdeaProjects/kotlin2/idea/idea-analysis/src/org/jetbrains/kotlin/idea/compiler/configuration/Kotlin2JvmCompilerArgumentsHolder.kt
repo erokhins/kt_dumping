@@ -32,7 +32,7 @@ Inferred types:
 
 'getService' @ [36:60] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(Kotlin2JvmCompilerArgumentsHolder..Kotlin2JvmCompilerArgumentsHolder?)>): (Kotlin2JvmCompilerArgumentsHolder..Kotlin2JvmCompilerArgumentsHolder?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Kotlin2JvmCompilerArgumentsHolder
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder..org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder?)
 
 'project' @ [36:71] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder.Companion.getInstance[ValueParameterDescriptorImpl]
 

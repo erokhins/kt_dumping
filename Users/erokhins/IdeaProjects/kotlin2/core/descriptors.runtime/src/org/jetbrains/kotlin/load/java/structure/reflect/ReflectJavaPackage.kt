@@ -28,11 +28,11 @@ Inferred types:
 
 'java' @ [49:43] ==> public val <T> KClass<out ReflectJavaPackage>.java: Class<out ReflectJavaPackage> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ReflectJavaPackage
+    <T> -> Captured(out ReflectJavaPackage)
 
 'name' @ [49:48] ==> public final val <T : (Any..Any?)> Class<out ReflectJavaPackage>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ReflectJavaPackage
+    <T : (Any..Any?)> -> Captured(out ReflectJavaPackage)
 
 'fqName' @ [49:62] ==> public open val fqName: FqName defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaPackage[PropertyDescriptorImpl]
 

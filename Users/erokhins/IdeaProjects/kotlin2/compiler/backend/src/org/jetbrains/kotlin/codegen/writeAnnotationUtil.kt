@@ -10,8 +10,6 @@
 
 'METADATA_VERSION_FIELD_NAME' @ [36:33] ==> public const final val METADATA_VERSION_FIELD_NAME: String defined in org.jetbrains.kotlin.load.java.JvmAnnotationNames[JavaPropertyDescriptor]
 
-'JvmMetadataVersion' @ [36:62] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [36:81] ==> @field:JvmField public final val INSTANCE: JvmMetadataVersion defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion.Companion[DeserializedPropertyDescriptor]
 
 'toArray' @ [36:90] ==> public final fun toArray(): IntArray defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion[DeserializedSimpleFunctionDescriptor]
@@ -21,8 +19,6 @@
 'visit' @ [37:8] ==> public open fun visit(p0: (String..String?), p1: (Any..Any?)): Unit defined in org.jetbrains.org.objectweb.asm.AnnotationVisitor[JavaMethodDescriptor]
 
 'BYTECODE_VERSION_FIELD_NAME' @ [37:33] ==> public const final val BYTECODE_VERSION_FIELD_NAME: String defined in org.jetbrains.kotlin.load.java.JvmAnnotationNames[JavaPropertyDescriptor]
-
-'JvmBytecodeBinaryVersion' @ [37:62] ==> public companion object defined in org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion[FakeCallableDescriptorForObject]
 
 'INSTANCE' @ [37:87] ==> @field:JvmField public final val INSTANCE: JvmBytecodeBinaryVersion defined in org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -47,8 +43,6 @@
 'languageVersionSettings' @ [40:55] ==> public final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.codegen.state.GenerationState[PropertyDescriptorImpl]
 
 'languageVersion' @ [40:79] ==> public abstract val languageVersion: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedPropertyDescriptor]
-
-'LanguageVersion' @ [40:98] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [40:114] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -76,7 +70,7 @@
 
 'visitEnd' @ [47:8] ==> public open fun visitEnd(): Unit defined in org.jetbrains.org.objectweb.asm.AnnotationVisitor[JavaMethodDescriptor]
 
-'writeKotlinMetadata' @ [51:5] ==> public fun writeKotlinMetadata(cb: ClassBuilder, state: GenerationState, kind: KotlinClassHeader.Kind, extraFlags: Int, action: (AnnotationVisitor) -> Unit): Unit defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'writeKotlinMetadata' @ [51:5] ==> public fun writeKotlinMetadata(cb: ClassBuilder, state: GenerationState, kind: KotlinClassHeader.Kind, extraFlags: Int, action: (AnnotationVisitor) -> Unit): Unit defined in org.jetbrains.kotlin.codegen in file writeAnnotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'cb' @ [51:25] ==> value-parameter cb: ClassBuilder defined in org.jetbrains.kotlin.codegen.writeSyntheticClassMetadata[ValueParameterDescriptorImpl]
 

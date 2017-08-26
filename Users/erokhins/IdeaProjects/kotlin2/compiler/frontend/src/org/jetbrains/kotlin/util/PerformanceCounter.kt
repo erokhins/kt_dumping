@@ -46,6 +46,8 @@ Inferred types:
 
 'PerformanceCounter' @ [50:37] ==> public companion object defined in org.jetbrains.kotlin.util.PerformanceCounter[FakeCallableDescriptorForObject]
 
+'reset' @ [50:57] ==> public final fun reset(): Unit defined in org.jetbrains.kotlin.util.PerformanceCounter[SimpleFunctionDescriptorImpl]
+
 'JvmOverloads' @ [54:9] ==> public constructor JvmOverloads() defined in kotlin.jvm.JvmOverloads[DeserializedClassConstructorDescriptor]
 
 'if (reenterable)

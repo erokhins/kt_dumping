@@ -78,7 +78,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [68:32] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
-'a' @ [68:57] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'a' @ [68:57] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -88,7 +88,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [69:34] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
-'b' @ [69:59] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.b: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'b' @ [69:59] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.b: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -106,7 +106,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [73:32] ==> val diagnosticWithParameters: DiagnosticWithParameters1<(KtConstantExpression..KtConstantExpression?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
-'a' @ [73:57] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtConstantExpression..KtConstantExpression?), (KotlinType..KotlinType?)>.a: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'a' @ [73:57] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtConstantExpression..KtConstantExpression?), (KotlinType..KotlinType?)>.a: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtConstantExpression..org.jetbrains.kotlin.psi.KtConstantExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -129,7 +129,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [78:32] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
-'a' @ [78:57] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'a' @ [78:57] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -139,7 +139,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [79:34] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
-'b' @ [79:59] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.b: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'b' @ [79:59] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.b: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -157,7 +157,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [83:32] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtConstantExpression..KtConstantExpression?), (String..String?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
-'b' @ [83:57] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtConstantExpression..KtConstantExpression?), (String..String?), (KotlinType..KotlinType?)>.b: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'b' @ [83:57] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtConstantExpression..KtConstantExpression?), (String..String?), (KotlinType..KotlinType?)>.b: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtConstantExpression..org.jetbrains.kotlin.psi.KtConstantExpression?)
     <A : (Any..Any?)> -> (kotlin.String..kotlin.String?)
@@ -383,7 +383,7 @@ Inferred types:
 
 'getParentOfType' @ [141:36] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtProperty..KtProperty?)>): KtProperty? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtProperty
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'diagnosticElement' @ [141:52] ==> val diagnosticElement: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
@@ -462,7 +462,7 @@ Inferred types:
 
 'getParentOfType' @ [159:25] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtFunction..KtFunction?)>, p2: Boolean): KtFunction? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtFunction
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFunction..org.jetbrains.kotlin.psi.KtFunction?)
 
 'diagnosticElement' @ [159:41] ==> val diagnosticElement: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
@@ -498,8 +498,6 @@ Inferred types:
 
 'add' @ [163:21] ==> public open fun add(element: IntentionAction): Boolean defined in java.util.LinkedList[JavaMethodDescriptor]
 
-'ChangeCallableReturnTypeFix' @ [163:25] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
-
 'ForEnclosing' @ [163:53] ==> public constructor ForEnclosing(element: KtFunction, type: KotlinType) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ForEnclosing[ClassConstructorDescriptorImpl]
 
 'function' @ [163:66] ==> val function: KtCallableDeclaration? defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
@@ -525,8 +523,6 @@ Inferred types:
 'actions' @ [172:21] ==> val actions: LinkedList<IntentionAction> defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
 'add' @ [172:29] ==> public open fun add(element: IntentionAction): Boolean defined in java.util.LinkedList[JavaMethodDescriptor]
-
-'ChangeCallableReturnTypeFix' @ [172:33] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
 'ForCalled' @ [172:61] ==> public constructor ForCalled(element: KtCallableDeclaration, type: KotlinType) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ForCalled[ClassConstructorDescriptorImpl]
 
@@ -554,8 +550,6 @@ Inferred types:
 
 'add' @ [183:29] ==> public open fun add(element: IntentionAction): Boolean defined in java.util.LinkedList[JavaMethodDescriptor]
 
-'ChangeCallableReturnTypeFix' @ [183:33] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
-
 'ForCalled' @ [183:61] ==> public constructor ForCalled(element: KtCallableDeclaration, type: KotlinType) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ForCalled[ClassConstructorDescriptorImpl]
 
 'declaration' @ [183:71] ==> val declaration: KtFunction? defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
@@ -564,7 +558,7 @@ Inferred types:
 
 'getParentOfType' @ [189:43] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtAnnotationEntry..KtAnnotationEntry?)>): KtAnnotationEntry? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtAnnotationEntry
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
 
 'diagnosticElement' @ [189:59] ==> val diagnosticElement: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
@@ -649,7 +643,7 @@ Inferred types:
 
 'call' @ [208:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'getValueArgumentForExpression' @ [208:51] ==> public fun Call.getValueArgumentForExpression(expression: KtExpression): ValueArgument? defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -661,7 +655,7 @@ Inferred types:
 
 'getParameterForArgument' @ [210:69] ==> public fun <D : CallableDescriptor> ResolvedCall<out CallableDescriptor>.getParameterForArgument(valueArgument: ValueArgument?): ValueParameterDescriptor? defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <D : CallableDescriptor> -> CallableDescriptor
+    <D : CallableDescriptor> -> Captured(out CallableDescriptor)
 
 'valueArgument' @ [210:93] ==> val valueArgument: ValueArgument? defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
@@ -707,7 +701,7 @@ Inferred types:
 
 'getParentOfType' @ [219:52] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtCallableDeclaration..KtCallableDeclaration?)>, p2: Boolean): KtCallableDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtCallableDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallableDeclaration..org.jetbrains.kotlin.psi.KtCallableDeclaration?)
 
 'correspondingParameter' @ [219:68] ==> val correspondingParameter: KtParameter? defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.doCreateActions[LocalVariableDescriptor]
 
@@ -793,7 +787,7 @@ Inferred types:
 
 'resultingDescriptor' @ [240:71] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'result' @ [241:17] ==> val result: PsiElement? defined in org.jetbrains.kotlin.idea.quickfix.QuickFixFactoryForTypeMismatchError.Companion.getFunctionDeclaration[LocalVariableDescriptor]
 

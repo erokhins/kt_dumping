@@ -146,8 +146,6 @@ Inferred types:
 
 'DataFlowValue' @ [109:73] ==> public constructor DataFlowValue(identifierInfo: IdentifierInfo, type: KotlinType, immanentNullability: Nullability = ...) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue[ClassConstructorDescriptorImpl]
 
-'IdentifierInfo' @ [109:87] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
 'Receiver' @ [109:102] ==> public constructor Receiver(value: ReceiverValue) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo.Receiver[ClassConstructorDescriptorImpl]
 
 'receiver' @ [109:111] ==> value-parameter receiver: ReceiverValue defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.createDataFlowValueForStableReceiver[ValueParameterDescriptorImpl]
@@ -215,17 +213,15 @@ Inferred types:
 
 'java' @ [128:107] ==> public val <T> KClass<out ReceiverValue>.java: Class<out ReceiverValue> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ReceiverValue
+    <T> -> Captured(out ReceiverValue)
 
 'name' @ [128:112] ==> public final val <T : (Any..Any?)> Class<out ReceiverValue>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ReceiverValue
+    <T : (Any..Any?)> -> Captured(out ReceiverValue)
 
 'JvmStatic' @ [131:5] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
 'DataFlowValue' @ [137:9] ==> public constructor DataFlowValue(identifierInfo: IdentifierInfo, type: KotlinType, immanentNullability: Nullability = ...) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue[ClassConstructorDescriptorImpl]
-
-'IdentifierInfo' @ [137:23] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
 'Variable' @ [137:38] ==> public constructor Variable(variable: VariableDescriptor, kind: DataFlowValue.Kind, bound: DataFlowValue?) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo.Variable[ClassConstructorDescriptorImpl]
 
@@ -304,11 +300,7 @@ Inferred types:
 
 'argumentInfo' @ [167:17] ==> value-parameter argumentInfo: IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.postfix[ValueParameterDescriptorImpl]
 
-'IdentifierInfo' @ [167:33] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
 'NO' @ [167:48] ==> public object NO : IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
-'IdentifierInfo' @ [168:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
 'NO' @ [168:32] ==> public object NO : IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
@@ -406,8 +398,6 @@ Inferred types:
 
 'containingDeclarationOrModule' @ [190:97] ==> value-parameter containingDeclarationOrModule: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.getIdForStableIdentifier[ValueParameterDescriptorImpl]
 
-'IdentifierInfo' @ [192:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
 'qualified' @ [192:32] ==> public final fun qualified(receiverInfo: IdentifierInfo, receiverType: KotlinType?, selectorInfo: IdentifierInfo, safe: Boolean): IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo.Companion[SimpleFunctionDescriptorImpl]
 
 'receiverInfo' @ [192:42] ==> val receiverInfo: IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.getIdForStableIdentifier[LocalVariableDescriptor]
@@ -459,11 +449,7 @@ Inferred types:
 
 'AS_KEYWORD' @ [199:89] ==> public final val AS_KEYWORD: (KtKeywordToken..KtKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'IdentifierInfo' @ [200:21] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
 'NO' @ [200:36] ==> public object NO : IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
-'IdentifierInfo' @ [203:21] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
 'SafeCast' @ [203:36] ==> public constructor SafeCast(subjectInfo: IdentifierInfo, subjectType: KotlinType?, targetType: KotlinType?) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo.SafeCast[ClassConstructorDescriptorImpl]
 
@@ -499,8 +485,8 @@ Inferred types:
 
 'get' @ [211:60] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [211:64] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -550,11 +536,7 @@ Inferred types:
 
 'operationType' @ [218:29] ==> val operationType: IElementType defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.getIdForStableIdentifier[LocalVariableDescriptor]
 
-'IdentifierInfo' @ [221:21] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
 'NO' @ [221:36] ==> public object NO : IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
-'IdentifierInfo' @ [224:21] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
 'NO' @ [224:36] ==> public object NO : IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
@@ -562,8 +544,8 @@ Inferred types:
 
 'get' @ [233:52] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [233:56] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -609,7 +591,7 @@ Inferred types:
 
 'simpleNameExpression' @ [236:36] ==> value-parameter simpleNameExpression: KtSimpleNameExpression defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.getIdForSimpleNameExpression[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [236:57] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [236:57] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [236:73] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.getIdForSimpleNameExpression[ValueParameterDescriptorImpl]
 
@@ -643,7 +625,7 @@ Inferred types:
 
 'dispatchReceiver' @ [248:54] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (implicitReceiver == null) {
                     selectorInfo
@@ -686,8 +668,6 @@ Inferred types:
 
 'selectorInfo' @ [256:25] ==> val selectorInfo: IdentifierInfo.Variable defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.getIdForSimpleNameExpression[LocalVariableDescriptor]
 
-'IdentifierInfo' @ [259:25] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
 'qualified' @ [259:40] ==> public final fun qualified(receiverInfo: IdentifierInfo, receiverType: KotlinType?, selectorInfo: IdentifierInfo, safe: Boolean): IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo.Companion[SimpleFunctionDescriptorImpl]
 
 'receiverInfo' @ [259:50] ==> val receiverInfo: IdentifierInfo? defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.getIdForSimpleNameExpression[LocalVariableDescriptor]
@@ -702,17 +682,13 @@ Inferred types:
 
 'call' @ [260:77] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'isSafeCall' @ [260:82] ==> public fun Call.isSafeCall(): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
-
-'IdentifierInfo' @ [264:61] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
 'PackageOrClass' @ [264:76] ==> public constructor PackageOrClass(descriptor: DeclarationDescriptor) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo.PackageOrClass[ClassConstructorDescriptorImpl]
 
 'declarationDescriptor' @ [264:91] ==> val declarationDescriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.getIdForSimpleNameExpression[LocalVariableDescriptor]
-
-'IdentifierInfo' @ [265:21] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
 'NO' @ [265:36] ==> public object NO : IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
@@ -761,15 +737,11 @@ Inferred types:
 
 'descriptorOfThisReceiver' @ [280:115] ==> value-parameter descriptorOfThisReceiver: DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.getIdForThisReceiver[ValueParameterDescriptorImpl]
 
-'IdentifierInfo' @ [281:13] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
 'Receiver' @ [281:28] ==> public constructor Receiver(value: ReceiverValue) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo.Receiver[ClassConstructorDescriptorImpl]
 
 'receiverParameter' @ [281:37] ==> val receiverParameter: ReceiverParameterDescriptor defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.getIdForThisReceiver[LocalVariableDescriptor]
 
 'value' @ [281:55] ==> public final val ReceiverParameterDescriptor.value: ReceiverValue[MyPropertyDescriptor]
-
-'IdentifierInfo' @ [283:31] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
 'Receiver' @ [283:46] ==> public constructor Receiver(value: ReceiverValue) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo.Receiver[ClassConstructorDescriptorImpl]
 
@@ -778,8 +750,6 @@ Inferred types:
 'thisAsReceiverParameter' @ [283:80] ==> public final val ClassDescriptor.thisAsReceiverParameter: ReceiverParameterDescriptor[MyPropertyDescriptor]
 
 'value' @ [283:104] ==> public final val ReceiverParameterDescriptor.value: ReceiverValue[MyPropertyDescriptor]
-
-'IdentifierInfo' @ [284:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
 'NO' @ [284:32] ==> public object NO : IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
@@ -841,7 +811,9 @@ Inferred types:
 
 'writerDescriptor' @ [310:75] ==> val writerDescriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.hasNoWritersInClosures.<anonymous>[LocalVariableDescriptor]
 
-'ControlFlowInformationProvider' @ [318:22] ==> public companion object defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[FakeCallableDescriptorForObject]
+'?:' @ [318:22] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtDeclaration?, right: KtDeclaration): KtDeclaration[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtDeclaration
 
 'getElementParentDeclaration' @ [318:53] ==> public final fun getElementParentDeclaration(element: KtElement): KtDeclaration? defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.Companion[SimpleFunctionDescriptorImpl]
 
@@ -859,7 +831,7 @@ Inferred types:
 
 'assignment' @ [319:48] ==> val assignment: KtBinaryExpression defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.isAccessedInsideClosureAfterAllWriters.<anonymous>[LocalVariableDescriptor]
 
-'before' @ [319:59] ==> public fun PsiElement.before(element: PsiElement): Boolean defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'before' @ [319:59] ==> public fun PsiElement.before(element: PsiElement): Boolean defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'parent' @ [319:66] ==> val parent: KtDeclaration defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.isAccessedInsideClosureAfterAllWriters[LocalVariableDescriptor]
 
@@ -894,7 +866,7 @@ Inferred types:
 
 'accessElement' @ [334:71] ==> value-parameter accessElement: KtElement defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.isAccessedBeforeAllClosureWriters[ValueParameterDescriptorImpl]
 
-'before' @ [334:85] ==> public fun PsiElement.before(element: PsiElement): Boolean defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'before' @ [334:85] ==> public fun PsiElement.before(element: PsiElement): Boolean defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'writerDeclaration' @ [334:92] ==> value-parameter writerDeclaration: KtDeclaration defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory.isAccessedBeforeAllClosureWriters.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -964,7 +936,9 @@ Inferred types:
 
 'MUTABLE_PROPERTY' @ [366:68] ==> enum entry MUTABLE_PROPERTY defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue.Kind[FakeCallableDescriptorForObject]
 
-'PreliminaryDeclarationVisitor' @ [369:34] ==> public companion object defined in org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor[FakeCallableDescriptorForObject]
+'?:' @ [369:34] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PreliminaryDeclarationVisitor?, right: PreliminaryDeclarationVisitor): PreliminaryDeclarationVisitor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PreliminaryDeclarationVisitor
 
 'getVisitorByVariable' @ [369:64] ==> public final fun getVisitorByVariable(variableDescriptor: VariableDescriptor, bindingContext: BindingContext): PreliminaryDeclarationVisitor? defined in org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1014,8 +988,6 @@ Inferred types:
 'languageVersionSettings' @ [382:43] ==> public final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.types.expressions.PreliminaryDeclarationVisitor[PropertyDescriptorImpl]
 
 'supportsFeature' @ [382:67] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [382:83] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'CapturedInClosureSmartCasts' @ [382:99] ==> enum entry CapturedInClosureSmartCasts defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

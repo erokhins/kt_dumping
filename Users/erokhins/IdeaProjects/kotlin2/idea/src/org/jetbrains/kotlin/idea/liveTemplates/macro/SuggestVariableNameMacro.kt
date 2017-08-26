@@ -13,6 +13,8 @@ Inferred types:
     <T> -> String
     <R> -> TextResult
 
+'TextResult' @ [45:59] ==> public constructor TextResult(@NotNull p0: String) defined in com.intellij.codeInsight.template.TextResult[JavaClassConstructorDescriptor]
+
 'suggestNames' @ [49:27] ==> private final fun suggestNames(context: ExpressionContext): Collection<String> defined in org.jetbrains.kotlin.idea.liveTemplates.macro.SuggestVariableNameMacro[SimpleFunctionDescriptorImpl]
 
 'context' @ [49:40] ==> value-parameter context: ExpressionContext defined in org.jetbrains.kotlin.idea.liveTemplates.macro.SuggestVariableNameMacro.calculateLookupItems[ValueParameterDescriptorImpl]

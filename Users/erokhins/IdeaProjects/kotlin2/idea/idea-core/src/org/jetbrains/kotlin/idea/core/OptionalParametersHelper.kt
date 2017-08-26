@@ -12,7 +12,7 @@ Inferred types:
 
 'resultingDescriptor' @ [47:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [49:39] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.core.OptionalParametersHelper.detectArgumentsToDropForDefaults[LocalVariableDescriptor]
 
@@ -55,7 +55,7 @@ Inferred types:
 
 'call' @ [56:38] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'getValueArgumentsInParentheses' @ [56:43] ==> public fun Call.getValueArgumentsInParentheses(): List<ValueArgument> defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -107,7 +107,7 @@ Inferred types:
 
 'getParameterForArgument' @ [69:38] ==> public fun <D : CallableDescriptor> ResolvedCall<out CallableDescriptor>.getParameterForArgument(valueArgument: ValueArgument?): ValueParameterDescriptor? defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <D : CallableDescriptor> -> CallableDescriptor
+    <D : CallableDescriptor> -> Captured(out CallableDescriptor)
 
 'this' @ [69:62] ==> <this> defined in org.jetbrains.kotlin.idea.core.OptionalParametersHelper.matchesDefault[ReceiverParameterDescriptorImpl]
 
@@ -157,7 +157,7 @@ Inferred types:
 
 'valueArguments' @ [82:49] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'parameter' @ [82:64] ==> val parameter: ValueParameterDescriptor defined in org.jetbrains.kotlin.idea.core.OptionalParametersHelper.substituteArguments[LocalVariableDescriptor]
 
@@ -179,7 +179,7 @@ Inferred types:
 
 'putCopyableUserData' @ [85:37] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(KtExpression..KtExpression?)>..Key<(KtExpression..KtExpression?)>?), @Nullable p1: KtExpression?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'key' @ [85:57] ==> val key: Key<KtExpression> defined in org.jetbrains.kotlin.idea.core.OptionalParametersHelper.substituteArguments[LocalVariableDescriptor]
 
@@ -201,7 +201,7 @@ Inferred types:
 
 'putCopyableUserData' @ [92:63] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(KtExpression..KtExpression?)>..Key<(KtExpression..KtExpression?)>?), @Nullable p1: KtExpression?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'key' @ [92:83] ==> val key: Key<KtExpression> defined in org.jetbrains.kotlin.idea.core.OptionalParametersHelper.substituteArguments[LocalVariableDescriptor]
 
@@ -219,7 +219,7 @@ Inferred types:
 
 'getCopyableUserData' @ [96:34] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(KtExpression..KtExpression?)>..Key<(KtExpression..KtExpression?)>?)): KtExpression? defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'key' @ [96:54] ==> val key: Key<KtExpression> defined in org.jetbrains.kotlin.idea.core.OptionalParametersHelper.substituteArguments[LocalVariableDescriptor]
 

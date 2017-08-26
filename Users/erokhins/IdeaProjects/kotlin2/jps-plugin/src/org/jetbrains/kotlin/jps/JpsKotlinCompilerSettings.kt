@@ -58,7 +58,7 @@ Inferred types:
 
 'getChild' @ [54:66] ==> public abstract fun <T : (JpsElement..JpsElement?)> getChild(@NotNull p0: JpsElementChildRole<(JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)>): (JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?) defined in org.jetbrains.jps.model.JpsElementContainer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JpsElement..JpsElement?)> -> JpsKotlinCompilerSettings
+    <T : (JpsElement..JpsElement?)> -> (org.jetbrains.kotlin.jps.JpsKotlinCompilerSettings..org.jetbrains.kotlin.jps.JpsKotlinCompilerSettings?)
 
 'ROLE' @ [54:75] ==> internal final val ROLE: (JpsElementChildRoleBase<(JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)>..JpsElementChildRoleBase<(JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)>?) defined in org.jetbrains.kotlin.jps.JpsKotlinCompilerSettings.Companion[PropertyDescriptorImpl]
 
@@ -70,7 +70,7 @@ Inferred types:
 
 'getChild' @ [57:46] ==> public abstract fun <T : (JpsElement..JpsElement?)> getChild(@NotNull p0: JpsElementChildRole<(JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)>): (JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?) defined in org.jetbrains.jps.model.JpsElementContainer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JpsElement..JpsElement?)> -> JpsKotlinCompilerSettings
+    <T : (JpsElement..JpsElement?)> -> (org.jetbrains.kotlin.jps.JpsKotlinCompilerSettings..org.jetbrains.kotlin.jps.JpsKotlinCompilerSettings?)
 
 'ROLE' @ [57:55] ==> internal final val ROLE: (JpsElementChildRoleBase<(JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)>..JpsElementChildRoleBase<(JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)>?) defined in org.jetbrains.kotlin.jps.JpsKotlinCompilerSettings.Companion[PropertyDescriptorImpl]
 
@@ -86,7 +86,7 @@ Inferred types:
 
 'setChild' @ [60:35] ==> public abstract fun <T : (JpsElement..JpsElement?)> setChild(p0: (JpsElementChildRole<(JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)>..JpsElementChildRole<(JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)>?), p1: (JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)): (JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?) defined in org.jetbrains.jps.model.JpsElementContainer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JpsElement..JpsElement?)> -> JpsKotlinCompilerSettings
+    <T : (JpsElement..JpsElement?)> -> (org.jetbrains.kotlin.jps.JpsKotlinCompilerSettings..org.jetbrains.kotlin.jps.JpsKotlinCompilerSettings?)
 
 'ROLE' @ [60:44] ==> internal final val ROLE: (JpsElementChildRoleBase<(JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)>..JpsElementChildRoleBase<(JpsKotlinCompilerSettings..JpsKotlinCompilerSettings?)>?) defined in org.jetbrains.kotlin.jps.JpsKotlinCompilerSettings.Companion[PropertyDescriptorImpl]
 
@@ -132,7 +132,7 @@ Inferred types:
 
 'facetArguments' @ [70:29] ==> val facetArguments: CommonCompilerArguments defined in org.jetbrains.kotlin.jps.JpsKotlinCompilerSettings.Companion.getCommonCompilerArguments[LocalVariableDescriptor]
 
-'apply' @ [70:45] ==> @InlineOnly public inline fun <T> CommonCompilerArguments.apply(block: CommonCompilerArguments.() -> Unit): CommonCompilerArguments defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [70:45] ==> @InlineOnly public inline fun <T> CommonCompilerArguments.apply(block: (CommonCompilerArguments).() -> Unit): CommonCompilerArguments defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> CommonCompilerArguments
 
@@ -155,8 +155,6 @@ Inferred types:
 'module' @ [74:62] ==> public final val JpsModuleDependency.module: JpsModule?[MyPropertyDescriptor]
 
 'targetPlatform' @ [74:70] ==> public val JpsModule.targetPlatform: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.jps in file JpsKotlinCompilerSettings.kt[PropertyDescriptorImpl]
-
-'TargetPlatformKind' @ [74:88] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [74:107] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 

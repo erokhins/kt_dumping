@@ -8,7 +8,7 @@
 
 'methodExpression' @ [31:37] ==> public final val methodExpression: Expression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[PropertyDescriptorImpl]
 
-'append' @ [31:55] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [31:55] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'typeArguments' @ [31:62] ==> public final val typeArguments: List<Type> defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[PropertyDescriptorImpl]
 

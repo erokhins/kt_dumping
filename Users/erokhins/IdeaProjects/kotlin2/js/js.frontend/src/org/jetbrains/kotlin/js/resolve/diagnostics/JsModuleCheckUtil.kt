@@ -8,7 +8,7 @@
 
 'module' @ [38:50] ==> val module: ModuleDescriptor defined in org.jetbrains.kotlin.js.resolve.diagnostics.checkJsModuleUsage[LocalVariableDescriptor]
 
-'findRoot' @ [39:31] ==> private fun findRoot(callee: DeclarationDescriptor): DeclarationDescriptor defined in org.jetbrains.kotlin.js.resolve.diagnostics[SimpleFunctionDescriptorImpl]
+'findRoot' @ [39:31] ==> private fun findRoot(callee: DeclarationDescriptor): DeclarationDescriptor defined in org.jetbrains.kotlin.js.resolve.diagnostics in file JsModuleCheckUtil.kt[SimpleFunctionDescriptorImpl]
 
 'callee' @ [39:40] ==> value-parameter callee: DeclarationDescriptor defined in org.jetbrains.kotlin.js.resolve.diagnostics.checkJsModuleUsage[ValueParameterDescriptorImpl]
 

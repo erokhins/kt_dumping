@@ -1,6 +1,6 @@
 'StringBuilder' @ [28:15] ==> public final fun <init>(): StringBuilder /* = StringBuilder */ defined in kotlin.text.StringBuilder[TypeAliasConstructorDescriptorImpl]
 
-'nameTypeParameters' @ [30:30] ==> private fun nameTypeParameters(descriptor: DeclarationDescriptor): Map<TypeParameterDescriptor, String> defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'nameTypeParameters' @ [30:30] ==> private fun nameTypeParameters(descriptor: DeclarationDescriptor): Map<TypeParameterDescriptor, String> defined in org.jetbrains.kotlin.js.naming in file encodeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [30:49] ==> value-parameter descriptor: CallableDescriptor defined in org.jetbrains.kotlin.js.naming.encodeSignature[ValueParameterDescriptorImpl]
 
@@ -48,7 +48,7 @@ Inferred types:
 
 'sig' @ [40:9] ==> val sig: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming.encodeSignature[LocalVariableDescriptor]
 
-'encodeForSignature' @ [40:13] ==> private fun StringBuilder /* = StringBuilder */.encodeForSignature(type: KotlinType, typeParameterNamer: (TypeParameterDescriptor) -> String): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'encodeForSignature' @ [40:13] ==> private fun StringBuilder /* = StringBuilder */.encodeForSignature(type: KotlinType, typeParameterNamer: (TypeParameterDescriptor) -> String): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming in file encodeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'receiverParameter' @ [40:32] ==> val receiverParameter: ReceiverParameterDescriptor? defined in org.jetbrains.kotlin.js.naming.encodeSignature[LocalVariableDescriptor]
 
@@ -80,7 +80,7 @@ Inferred types:
 
 'sig' @ [50:9] ==> val sig: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming.encodeSignature[LocalVariableDescriptor]
 
-'encodeForSignature' @ [50:13] ==> private fun StringBuilder /* = StringBuilder */.encodeForSignature(type: KotlinType, typeParameterNamer: (TypeParameterDescriptor) -> String): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'encodeForSignature' @ [50:13] ==> private fun StringBuilder /* = StringBuilder */.encodeForSignature(type: KotlinType, typeParameterNamer: (TypeParameterDescriptor) -> String): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming in file encodeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'valueParameter' @ [50:32] ==> val valueParameter: (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.js.naming.encodeSignature[LocalVariableDescriptor]
 
@@ -170,7 +170,7 @@ Inferred types:
 
 'sig' @ [67:13] ==> val sig: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming.encodeSignature[LocalVariableDescriptor]
 
-'encodeForSignature' @ [67:17] ==> private fun StringBuilder /* = StringBuilder */.encodeForSignature(type: KotlinType, typeParameterNamer: (TypeParameterDescriptor) -> String): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'encodeForSignature' @ [67:17] ==> private fun StringBuilder /* = StringBuilder */.encodeForSignature(type: KotlinType, typeParameterNamer: (TypeParameterDescriptor) -> String): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming in file encodeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'upperBound' @ [67:36] ==> val upperBound: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.js.naming.encodeSignature[LocalVariableDescriptor]
 
@@ -245,7 +245,7 @@ Inferred types:
 
 'append' @ [90:17] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'encodeForSignature' @ [92:13] ==> private fun StringBuilder /* = StringBuilder */.encodeForSignature(projection: TypeProjection, parameter: TypeParameterDescriptor, typeParameterNamer: (TypeParameterDescriptor) -> String): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'encodeForSignature' @ [92:13] ==> private fun StringBuilder /* = StringBuilder */.encodeForSignature(projection: TypeProjection, parameter: TypeParameterDescriptor, typeParameterNamer: (TypeParameterDescriptor) -> String): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming in file encodeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'argument' @ [92:32] ==> val argument: TypeProjection defined in org.jetbrains.kotlin.js.naming.encodeForSignature[LocalVariableDescriptor]
 
@@ -311,7 +311,7 @@ Inferred types:
 
 'INVARIANT' @ [116:22] ==> enum entry INVARIANT defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
-'encodeForSignature' @ [118:9] ==> private fun StringBuilder /* = StringBuilder */.encodeForSignature(type: KotlinType, typeParameterNamer: (TypeParameterDescriptor) -> String): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'encodeForSignature' @ [118:9] ==> private fun StringBuilder /* = StringBuilder */.encodeForSignature(type: KotlinType, typeParameterNamer: (TypeParameterDescriptor) -> String): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.js.naming in file encodeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'projection' @ [118:28] ==> value-parameter projection: TypeProjection defined in org.jetbrains.kotlin.js.naming.encodeForSignature[ValueParameterDescriptorImpl]
 
@@ -328,7 +328,7 @@ Inferred types:
 
 'component2' @ [124:22] ==> public final operator fun component2(): List<TypeParameterDescriptor> defined in kotlin.collections.IndexedValue[DeserializedSimpleFunctionDescriptor]
 
-'collectTypeParameters' @ [124:31] ==> private fun collectTypeParameters(descriptor: DeclarationDescriptor): List<List<TypeParameterDescriptor>> defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'collectTypeParameters' @ [124:31] ==> private fun collectTypeParameters(descriptor: DeclarationDescriptor): List<List<TypeParameterDescriptor>> defined in org.jetbrains.kotlin.js.naming in file encodeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [124:53] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.js.naming.nameTypeParameters[ValueParameterDescriptorImpl]
 
@@ -364,7 +364,7 @@ Inferred types:
 
 'currentDescriptor' @ [135:12] ==> var currentDescriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.js.naming.collectTypeParameters[LocalVariableDescriptor]
 
-'getOwnTypeParameters' @ [136:9] ==> private fun getOwnTypeParameters(descriptor: DeclarationDescriptor): List<TypeParameterDescriptor>? defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'getOwnTypeParameters' @ [136:9] ==> private fun getOwnTypeParameters(descriptor: DeclarationDescriptor): List<TypeParameterDescriptor>? defined in org.jetbrains.kotlin.js.naming in file encodeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'currentDescriptor' @ [136:30] ==> var currentDescriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.js.naming.collectTypeParameters[LocalVariableDescriptor]
 
@@ -427,7 +427,7 @@ Inferred types:
 
 'isCapturedFromOuterDeclaration' @ [149:82] ==> public final val TypeParameterDescriptor.isCapturedFromOuterDeclaration: Boolean[MyPropertyDescriptor]
 
-'getOwnTypeParameters' @ [150:46] ==> private fun getOwnTypeParameters(descriptor: DeclarationDescriptor): List<TypeParameterDescriptor>? defined in org.jetbrains.kotlin.js.naming[SimpleFunctionDescriptorImpl]
+'getOwnTypeParameters' @ [150:46] ==> private fun getOwnTypeParameters(descriptor: DeclarationDescriptor): List<TypeParameterDescriptor>? defined in org.jetbrains.kotlin.js.naming in file encodeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [150:67] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.js.naming.getOwnTypeParameters[ValueParameterDescriptorImpl]
 

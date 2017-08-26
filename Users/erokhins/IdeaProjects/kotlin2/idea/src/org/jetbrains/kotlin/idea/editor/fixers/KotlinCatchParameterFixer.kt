@@ -54,8 +54,6 @@ Inferred types:
 
 'startOffset' @ [36:82] ==> public val PsiElement.startOffset: Int defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 
-'Int' @ [36:97] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [36:101] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'parameterList' @ [37:29] ==> val parameterList: KtParameterList? defined in org.jetbrains.kotlin.idea.editor.fixers.KotlinCatchParameterFixer.apply[LocalVariableDescriptor]

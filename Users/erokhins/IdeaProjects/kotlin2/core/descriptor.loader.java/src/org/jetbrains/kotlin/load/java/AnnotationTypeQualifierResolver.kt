@@ -24,14 +24,18 @@ Inferred types:
 
 'this' @ [48:80] ==> <this> defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver.TypeQualifierWithApplicability[LazyClassReceiverParameterDescriptor]
 
+'isApplicableTo' @ [48:86] ==> private final fun isApplicableTo(elementType: AnnotationTypeQualifierResolver.QualifierApplicabilityType): Boolean defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver.TypeQualifierWithApplicability[SimpleFunctionDescriptorImpl]
+
 'storageManager' @ [52:13] ==> value-parameter storageManager: StorageManager defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver.<init>[ValueParameterDescriptorImpl]
 
-'createMemoizedFunctionWithNullableValues' @ [52:28] ==> public abstract fun <K, V : Any> createMemoizedFunctionWithNullableValues(compute: (ClassDescriptor) -> AnnotationDescriptor?): MemoizedFunctionToNullable<ClassDescriptor, AnnotationDescriptor> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
+'createMemoizedFunctionWithNullableValues' @ [52:28] ==> public abstract fun <K, V : Any> createMemoizedFunctionWithNullableValues(compute: (classDescriptor: ClassDescriptor) -> AnnotationDescriptor?): MemoizedFunctionToNullable<@ParameterName ClassDescriptor, AnnotationDescriptor> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> ClassDescriptor
+    <K> -> [@kotlin.ParameterName] ClassDescriptor
     <V : Any> -> AnnotationDescriptor
 
 'this' @ [52:69] ==> <this> defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver[LazyClassReceiverParameterDescriptor]
+
+'computeTypeQualifierNickname' @ [52:75] ==> private final fun computeTypeQualifierNickname(classDescriptor: ClassDescriptor): AnnotationDescriptor? defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver[SimpleFunctionDescriptorImpl]
 
 '!' @ [55:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -54,13 +58,15 @@ Inferred types:
 
 'this' @ [57:63] ==> <this> defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver[LazyClassReceiverParameterDescriptor]
 
+'resolveTypeQualifierAnnotation' @ [57:69] ==> public final fun resolveTypeQualifierAnnotation(annotationDescriptor: AnnotationDescriptor): AnnotationDescriptor? defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver[SimpleFunctionDescriptorImpl]
+
 'classDescriptor' @ [61:13] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver.resolveTypeQualifierNickname[ValueParameterDescriptorImpl]
 
 'kind' @ [61:29] ==> public final val ClassDescriptor.kind: ClassKind[MyPropertyDescriptor]
 
 'ANNOTATION_CLASS' @ [61:47] ==> enum entry ANNOTATION_CLASS defined in org.jetbrains.kotlin.descriptors.ClassKind[FakeCallableDescriptorForObject]
 
-'invoke' @ [63:16] ==> public abstract fun invoke(p1: ClassDescriptor): AnnotationDescriptor? defined in org.jetbrains.kotlin.storage.MemoizedFunctionToNullable[FunctionInvokeDescriptor]
+'invoke' @ [63:16] ==> public abstract fun invoke(classDescriptor: @ParameterName ClassDescriptor): AnnotationDescriptor? defined in org.jetbrains.kotlin.storage.MemoizedFunctionToNullable[FunctionInvokeDescriptor]
 
 'classDescriptor' @ [63:34] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver.resolveTypeQualifierNickname[ValueParameterDescriptorImpl]
 
@@ -149,7 +155,7 @@ Inferred types:
 Inferred types:
     <T> -> QualifierApplicabilityType
 
-'fold' @ [96:26] ==> public inline fun <T, R> Iterable<AnnotationTypeQualifierResolver.QualifierApplicabilityType>.fold(initial: Int, operation: (Int, AnnotationTypeQualifierResolver.QualifierApplicabilityType) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [96:26] ==> public inline fun <T, R> Iterable<AnnotationTypeQualifierResolver.QualifierApplicabilityType>.fold(initial: Int, operation: (acc: Int, AnnotationTypeQualifierResolver.QualifierApplicabilityType) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> QualifierApplicabilityType
     <R> -> Int
@@ -172,6 +178,8 @@ Inferred types:
     <R : Any> -> AnnotationDescriptor
 
 'this' @ [99:83] ==> <this> defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver[LazyClassReceiverParameterDescriptor]
+
+'resolveTypeQualifierAnnotation' @ [99:89] ==> public final fun resolveTypeQualifierAnnotation(annotationDescriptor: AnnotationDescriptor): AnnotationDescriptor? defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver[SimpleFunctionDescriptorImpl]
 
 'TypeQualifierWithApplicability' @ [101:16] ==> public constructor TypeQualifierWithApplicability(typeQualifier: AnnotationDescriptor, applicability: Int) defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver.TypeQualifierWithApplicability[ClassConstructorDescriptorImpl]
 

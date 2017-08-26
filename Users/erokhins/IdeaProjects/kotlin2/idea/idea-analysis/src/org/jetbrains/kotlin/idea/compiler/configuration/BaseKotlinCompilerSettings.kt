@@ -98,15 +98,15 @@ Inferred types:
 
 'deserialize' @ [67:35] ==> @NotNull public open fun <T : (Any..Any?)> deserialize(@NotNull p0: Element, @NotNull p1: Class<(T..T?)>): T defined in com.intellij.util.xmlb.XmlSerializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'state' @ [67:47] ==> value-parameter state: Element defined in org.jetbrains.kotlin.idea.compiler.configuration.BaseKotlinCompilerSettings.loadState[ValueParameterDescriptorImpl]
 
 '_settings' @ [67:54] ==> @Suppress private final var _settings: T defined in org.jetbrains.kotlin.idea.compiler.configuration.BaseKotlinCompilerSettings[PropertyDescriptorImpl]
 
-'javaClass' @ [67:64] ==> public val <T : Any> T.javaClass: Class<T> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [67:64] ==> public val <T : Any> (T..T?).javaClass: Class<(T..T?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> T
+    <T : Any> -> (T..T?)
 
 'super' @ [70:40] ==> <this> defined in org.jetbrains.kotlin.idea.compiler.configuration.BaseKotlinCompilerSettings[LazyClassReceiverParameterDescriptor]
 
@@ -117,8 +117,6 @@ Inferred types:
 'KOTLIN_COMPILER_SETTINGS_FILE' @ [73:95] ==> public const final val KOTLIN_COMPILER_SETTINGS_FILE: String defined in org.jetbrains.kotlin.config.SettingConstants[JavaPropertyDescriptor]
 
 'SkipDefaultValuesSerializationFilters' @ [75:43] ==> public constructor SkipDefaultValuesSerializationFilters(vararg p0: (Any..Any?)) defined in com.intellij.util.xmlb.SkipDefaultValuesSerializationFilters[JavaClassConstructorDescriptor]
-
-'CommonCompilerArguments' @ [76:17] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
 
 'DummyImpl' @ [76:41] ==> public constructor DummyImpl() defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.DummyImpl[DeserializedClassConstructorDescriptor]
 

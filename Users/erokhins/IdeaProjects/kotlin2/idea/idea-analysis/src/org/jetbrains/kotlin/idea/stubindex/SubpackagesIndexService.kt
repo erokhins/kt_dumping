@@ -4,7 +4,7 @@
 
 'createCachedValue' @ [33:71] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(SubpackagesIndexService.SubpackagesIndex..SubpackagesIndexService.SubpackagesIndex?)>?, p1: Boolean): CachedValue<(SubpackagesIndexService.SubpackagesIndex..SubpackagesIndexService.SubpackagesIndex?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SubpackagesIndex
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.stubindex.SubpackagesIndexService.SubpackagesIndex..org.jetbrains.kotlin.idea.stubindex.SubpackagesIndexService.SubpackagesIndex?)
 
 'Result' @ [35:37] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: SubpackagesIndexService.SubpackagesIndex?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
 Inferred types:
@@ -176,7 +176,7 @@ Inferred types:
 
 'getService' @ [91:35] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(SubpackagesIndexService..SubpackagesIndexService?)>): (SubpackagesIndexService..SubpackagesIndexService?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SubpackagesIndexService
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.stubindex.SubpackagesIndexService..org.jetbrains.kotlin.idea.stubindex.SubpackagesIndexService?)
 
 'project' @ [91:46] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.stubindex.SubpackagesIndexService.Companion.getInstance[ValueParameterDescriptorImpl]
 

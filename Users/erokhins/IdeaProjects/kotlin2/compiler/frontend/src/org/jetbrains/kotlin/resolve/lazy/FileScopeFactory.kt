@@ -472,9 +472,9 @@ Inferred types:
 
 'classifier' @ [196:24] ==> val classifier: ClassifierDescriptor defined in org.jetbrains.kotlin.resolve.lazy.FileScopeFactory.currentPackageScope.<no name provided>.getContributedClassifier[LocalVariableDescriptor]
 
-'takeIf' @ [196:35] ==> @InlineOnly @SinceKotlin public inline fun <T> {ClassifierDescriptor & DeclarationDescriptorWithVisibility}.takeIf(predicate: ({ClassifierDescriptor & DeclarationDescriptorWithVisibility}) -> Boolean): {ClassifierDescriptor & DeclarationDescriptorWithVisibility}? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'takeIf' @ [196:35] ==> @InlineOnly @SinceKotlin public inline fun <T> ClassifierDescriptor.takeIf(predicate: (ClassifierDescriptor) -> Boolean): ClassifierDescriptor? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {ClassifierDescriptor & DeclarationDescriptorWithVisibility}
+    <T> -> ClassifierDescriptor
 
 'filteringKind' @ [196:44] ==> value-parameter filteringKind: FileScopeFactory.FilteringKind defined in org.jetbrains.kotlin.resolve.lazy.FileScopeFactory.currentPackageScope[ValueParameterDescriptorImpl]
 
@@ -551,8 +551,6 @@ Inferred types:
 'kindFilter' @ [219:25] ==> value-parameter kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.lazy.FileScopeFactory.currentPackageScope.<no name provided>.getContributedDescriptors[ValueParameterDescriptorImpl]
 
 'withoutKinds' @ [219:36] ==> public final fun withoutKinds(kinds: Int): DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [219:49] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'PACKAGES_MASK' @ [219:70] ==> public final val PACKAGES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 

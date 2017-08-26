@@ -4,7 +4,7 @@ Inferred types:
 
 'getService' @ [33:20] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Class<(FileAttributeService..FileAttributeService?)>): (FileAttributeService..FileAttributeService?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FileAttributeService
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.FileAttributeService..org.jetbrains.kotlin.idea.caches.FileAttributeService?)
 
 'java' @ [33:59] ==> public val <T> KClass<FileAttributeService>.java: Class<FileAttributeService> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -79,7 +79,9 @@ Inferred types:
 
 'component2' @ [67:18] ==> public final operator fun component2(): ClassId defined in org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache.KotlinBinaryHeaderData[SimpleFunctionDescriptorImpl]
 
-'IDEKotlinBinaryClassCache' @ [67:29] ==> public object IDEKotlinBinaryClassCache defined in org.jetbrains.kotlin.idea.caches in file IDEKotlinBinaryClassCache.kt[FakeCallableDescriptorForObject]
+'?:' @ [67:29] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: IDEKotlinBinaryClassCache.KotlinBinaryHeaderData?, right: IDEKotlinBinaryClassCache.KotlinBinaryHeaderData): IDEKotlinBinaryClassCache.KotlinBinaryHeaderData[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinBinaryHeaderData
 
 'getKotlinBinaryClassHeaderData' @ [67:55] ==> public final fun getKotlinBinaryClassHeaderData(file: VirtualFile, fileContent: ByteArray? = ...): IDEKotlinBinaryClassCache.KotlinBinaryHeaderData? defined in org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache[SimpleFunctionDescriptorImpl]
 

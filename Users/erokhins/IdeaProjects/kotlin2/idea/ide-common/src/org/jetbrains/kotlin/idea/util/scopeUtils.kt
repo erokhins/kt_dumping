@@ -1,6 +1,6 @@
 'JvmName' @ [17:1] ==> public constructor JvmName(name: String) defined in kotlin.jvm.JvmName[DeserializedClassConstructorDescriptor]
 
-'getVariablesFromImplicitReceivers' @ [43:12] ==> public fun LexicalScope.getVariablesFromImplicitReceivers(name: Name): Collection<VariableDescriptor> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'getVariablesFromImplicitReceivers' @ [43:12] ==> public fun LexicalScope.getVariablesFromImplicitReceivers(name: Name): Collection<VariableDescriptor> defined in org.jetbrains.kotlin.idea.util in file scopeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [43:46] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.util.getAllAccessibleVariables[ValueParameterDescriptorImpl]
 
@@ -10,7 +10,7 @@
 
 'FROM_IDE' @ [43:94] ==> enum entry FROM_IDE defined in org.jetbrains.kotlin.incremental.components.NoLookupLocation[FakeCallableDescriptorForObject]
 
-'getImplicitReceiversWithInstance' @ [47:12] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'getImplicitReceiversWithInstance' @ [47:12] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util in file implicitReceiversUtils.kt[SimpleFunctionDescriptorImpl]
 
 'flatMap' @ [47:47] ==> public inline fun <T, R> Iterable<ReceiverParameterDescriptor>.flatMap(transform: (ReceiverParameterDescriptor) -> Iterable<SimpleFunctionDescriptor>): List<SimpleFunctionDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -35,7 +35,7 @@ Inferred types:
 
 'FROM_IDE' @ [48:52] ==> enum entry FROM_IDE defined in org.jetbrains.kotlin.incremental.components.NoLookupLocation[FakeCallableDescriptorForObject]
 
-'getImplicitReceiversWithInstance' @ [51:98] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'getImplicitReceiversWithInstance' @ [51:98] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util in file implicitReceiversUtils.kt[SimpleFunctionDescriptorImpl]
 
 'flatMap' @ [51:133] ==> public inline fun <T, R> Iterable<ReceiverParameterDescriptor>.flatMap(transform: (ReceiverParameterDescriptor) -> Iterable<PropertyDescriptor>): List<PropertyDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -54,7 +54,7 @@ Inferred types:
 
 'FROM_IDE' @ [52:72] ==> enum entry FROM_IDE defined in org.jetbrains.kotlin.incremental.components.NoLookupLocation[FakeCallableDescriptorForObject]
 
-'getImplicitReceiversWithInstance' @ [56:5] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'getImplicitReceiversWithInstance' @ [56:5] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util in file implicitReceiversUtils.kt[SimpleFunctionDescriptorImpl]
 
 'forEach' @ [56:40] ==> @HidesMembers public inline fun <T> Iterable<ReceiverParameterDescriptor>.forEach(action: (ReceiverParameterDescriptor) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

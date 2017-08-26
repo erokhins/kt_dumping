@@ -8,7 +8,7 @@
 
 'postfix' @ [23:12] ==> value-parameter postfix: String defined in org.jetbrains.kotlin.idea.util.wrap[ValueParameterDescriptorImpl]
 
-'wrap' @ [27:5] ==> public inline fun StringBuilder /* = StringBuilder */.wrap(prefix: String, postfix: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'wrap' @ [27:5] ==> public inline fun StringBuilder /* = StringBuilder */.wrap(prefix: String, postfix: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util in file xmlMarkupStringBuilderUtil.kt[SimpleFunctionDescriptorImpl]
 
 'tag' @ [27:13] ==> value-parameter tag: String defined in org.jetbrains.kotlin.idea.util.wrapTag[ValueParameterDescriptorImpl]
 
@@ -16,7 +16,7 @@
 
 'body' @ [27:31] ==> value-parameter crossinline body: () -> Unit defined in org.jetbrains.kotlin.idea.util.wrapTag[ValueParameterDescriptorImpl]
 
-'wrap' @ [31:5] ==> public inline fun StringBuilder /* = StringBuilder */.wrap(prefix: String, postfix: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'wrap' @ [31:5] ==> public inline fun StringBuilder /* = StringBuilder */.wrap(prefix: String, postfix: String, crossinline body: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.util in file xmlMarkupStringBuilderUtil.kt[SimpleFunctionDescriptorImpl]
 
 'tag' @ [31:13] ==> value-parameter tag: String defined in org.jetbrains.kotlin.idea.util.wrapTag[ValueParameterDescriptorImpl]
 

@@ -207,13 +207,13 @@ Inferred types:
 
 'ArrayList' @ [110:46] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (File..File?)>..Collection<(File..File?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> File
+    <E : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'sourceFiles' @ [110:56] ==> val sourceFiles: List<File> defined in org.jetbrains.kotlin.js.facade.TranslationResult.Success.getOutputFiles[LocalVariableDescriptor]
 
 'SimpleOutputFile' @ [111:34] ==> public constructor SimpleOutputFile(sourceFiles: List<File>, relativePath: String, content: String) defined in org.jetbrains.kotlin.backend.common.output.SimpleOutputFile[DeserializedClassConstructorDescriptor]
 
-'sourceFilesForMetaFile' @ [111:51] ==> val sourceFilesForMetaFile: ArrayList<File> defined in org.jetbrains.kotlin.js.facade.TranslationResult.Success.getOutputFiles[LocalVariableDescriptor]
+'sourceFilesForMetaFile' @ [111:51] ==> val sourceFilesForMetaFile: ArrayList<(File..File?)> defined in org.jetbrains.kotlin.js.facade.TranslationResult.Success.getOutputFiles[LocalVariableDescriptor]
 
 'metaFileName' @ [111:75] ==> val metaFileName: String defined in org.jetbrains.kotlin.js.facade.TranslationResult.Success.getOutputFiles[LocalVariableDescriptor]
 

@@ -1,13 +1,10 @@
 'ExtractionOptions' @ [62:23] ==> public constructor ExtractionOptions(inferUnitTypeForUnusedValues: Boolean = ..., enableListBoxing: Boolean = ..., extractAsProperty: Boolean = ..., allowSpecialClassNames: Boolean = ..., captureLocalFunctions: Boolean = ..., canWrapInWith: Boolean = ...) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionOptions[ClassConstructorDescriptorImpl]
 
-'CopyableUserDataProperty' @ [81:70] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<ResolveResult>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtSimpleNameExpression
-    <T : Any> -> ResolveResult
+'getValue' @ [81:70] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [81:99] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(ResolveResult..ResolveResult?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ResolveResult
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ResolveResult..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ResolveResult?)
 
 'ExtractionOptions' @ [88:42] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionOptions[FakeCallableDescriptorForObject]
 
@@ -65,9 +62,9 @@ Inferred types:
 Inferred types:
     <reified R> -> KtExpression
 
-'lazy' @ [104:37] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [104:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'originalElements' @ [105:32] ==> public final val originalElements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionData[PropertyDescriptorImpl]
 
@@ -75,9 +72,9 @@ Inferred types:
             0 -> ""
             1 -> originalElements.first().text
             else -> originalFile.text.substring(originalElements.first().startOffset, originalElements.last().endOffset)
-        }' @ [106:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: String, entry1: String, entry2: String): String[SimpleFunctionDescriptorImpl]
+        }' @ [106:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (String..String?), entry1: (String..String?), entry2: (String..String?)): (String..String?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.String..kotlin.String?)
 
 'originalElements' @ [106:15] ==> val originalElements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionData.codeFragmentText.<anonymous>[LocalVariableDescriptor]
 
@@ -117,17 +114,17 @@ Inferred types:
 
 'physicalElements' @ [113:53] ==> public final val physicalElements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionData[PropertyDescriptorImpl]
 
-'lazy' @ [115:44] ==> public fun <T> lazy(initializer: () -> BindingContext): Lazy<BindingContext> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [115:44] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> BindingContext
+    <T> -> T
 
 'commonParent' @ [115:51] ==> public final val commonParent: KtElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionData[PropertyDescriptorImpl]
 
 'analyze' @ [115:64] ==> @JvmOverloads public fun KtElement.analyze(bodyResolveMode: BodyResolveMode = ...): BindingContext defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [117:38] ==> public fun <T> lazy(initializer: () -> KtParameter): Lazy<KtParameter> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [117:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtParameter
+    <T> -> T
 
 'KtPsiFactory' @ [117:45] ==> @JvmOverloads public fun KtPsiFactory(elementForProject: PsiElement, markGenerated: Boolean = ...): KtPsiFactory defined in org.jetbrains.kotlin.psi[DeserializedSimpleFunctionDescriptor]
 
@@ -135,9 +132,9 @@ Inferred types:
 
 'createParameter' @ [117:72] ==> public final fun createParameter(text: String): KtParameter defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [118:49] ==> public fun <T> lazy(initializer: () -> KtNamedFunction): Lazy<KtNamedFunction> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [118:49] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtNamedFunction
+    <T> -> T
 
 'KtPsiFactory' @ [118:56] ==> @JvmOverloads public fun KtPsiFactory(elementForProject: PsiElement, markGenerated: Boolean = ...): KtPsiFactory defined in org.jetbrains.kotlin.psi[DeserializedSimpleFunctionDescriptor]
 
@@ -376,8 +373,6 @@ Inferred types:
 
 'getCollectedTypes' @ [186:33] ==> public abstract fun getCollectedTypes(key: DataFlowValue): Set<KotlinType> defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[DeserializedSimpleFunctionDescriptor]
 
-'DataFlowValueFactory' @ [186:51] ==> public object DataFlowValueFactory defined in org.jetbrains.kotlin.resolve.calls.smartcasts[FakeCallableDescriptorForObject]
-
 'createDataFlowValueForStableReceiver' @ [186:72] ==> @JvmStatic public final fun createDataFlowValueForStableReceiver(receiver: ReceiverValue): DataFlowValue defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [186:109] ==> value-parameter it: ImplicitReceiver defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionData.getPossibleTypes.<anonymous>[ValueParameterDescriptorImpl]
@@ -386,7 +381,7 @@ Inferred types:
 
 'resultingDescriptor' @ [189:34] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'returnType' @ [189:55] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -514,7 +509,7 @@ Inferred types:
 
 'dispatchReceiver' @ [217:62] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'declarationDescriptor' @ [217:102] ==> public abstract val declarationDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.receivers.ImplicitReceiver[DeserializedPropertyDescriptor]
 
@@ -769,6 +764,8 @@ Inferred types:
 'forEach' @ [264:21] ==> @HidesMembers public inline fun <T> Iterable<KtExpression>.forEach(action: (KtExpression) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtExpression
+
+'unmarkReferencesInside' @ [264:31] ==> public fun unmarkReferencesInside(root: PsiElement): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file ExtractionData.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [269:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 

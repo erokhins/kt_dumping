@@ -24,7 +24,7 @@ Inferred types:
 
 'Interner' @ [55:46] ==> public constructor Interner<T : (Any..Any?)>(p0: (Interner<(TypeParameterDescriptor..TypeParameterDescriptor?)>..Interner<(TypeParameterDescriptor..TypeParameterDescriptor?)>?)) defined in org.jetbrains.kotlin.utils.Interner[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeParameterDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
 'typeParameters' @ [55:55] ==> private final val typeParameters: Interner<TypeParameterDescriptor> defined in org.jetbrains.kotlin.serialization.DescriptorSerializer[PropertyDescriptorImpl]
 
@@ -616,8 +616,6 @@ Inferred types:
 
 'writeSinceKotlinInfo' @ [220:39] ==> private final fun writeSinceKotlinInfo(languageFeature: LanguageFeature): Int defined in org.jetbrains.kotlin.serialization.DescriptorSerializer[SimpleFunctionDescriptorImpl]
 
-'LanguageFeature' @ [220:60] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'Coroutines' @ [220:76] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'extension' @ [223:9] ==> private final val extension: SerializerExtension defined in org.jetbrains.kotlin.serialization.DescriptorSerializer[PropertyDescriptorImpl]
@@ -832,8 +830,6 @@ Inferred types:
 
 'writeSinceKotlinInfo' @ [277:39] ==> private final fun writeSinceKotlinInfo(languageFeature: LanguageFeature): Int defined in org.jetbrains.kotlin.serialization.DescriptorSerializer[SimpleFunctionDescriptorImpl]
 
-'LanguageFeature' @ [277:60] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'Coroutines' @ [277:76] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'extension' @ [280:9] ==> private final val extension: SerializerExtension defined in org.jetbrains.kotlin.serialization.DescriptorSerializer[PropertyDescriptorImpl]
@@ -904,8 +900,6 @@ Inferred types:
 
 'writeSinceKotlinInfo' @ [300:39] ==> private final fun writeSinceKotlinInfo(languageFeature: LanguageFeature): Int defined in org.jetbrains.kotlin.serialization.DescriptorSerializer[SimpleFunctionDescriptorImpl]
 
-'LanguageFeature' @ [300:60] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'Coroutines' @ [300:76] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'extension' @ [303:9] ==> private final val extension: SerializerExtension defined in org.jetbrains.kotlin.serialization.DescriptorSerializer[PropertyDescriptorImpl]
@@ -939,6 +933,8 @@ Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
     <R> -> KotlinType
 
+'getType' @ [314:64] ==> @NotNull public abstract fun getType(): KotlinType defined in org.jetbrains.kotlin.descriptors.ValueParameterDescriptor[JavaMethodDescriptor]
+
 'toTypedArray' @ [314:73] ==> public inline fun <reified T> Collection<KotlinType>.toTypedArray(): Array<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T> -> KotlinType
@@ -952,6 +948,8 @@ Inferred types:
 'contains' @ [315:30] ==> public fun KotlinType.contains(predicate: (UnwrappedType) -> Boolean): Boolean defined in org.jetbrains.kotlin.types.typeUtil[DeserializedSimpleFunctionDescriptor]
 
 'UnwrappedType' @ [315:39] ==> private constructor UnwrappedType() defined in org.jetbrains.kotlin.types.UnwrappedType[DeserializedClassConstructorDescriptor]
+
+'isSuspendFunctionType' @ [315:54] ==> public val KotlinType.isSuspendFunctionType: Boolean defined in org.jetbrains.kotlin.builtins[DeserializedPropertyDescriptor]
 
 'newBuilder' @ [319:42] ==> public open fun newBuilder(): (ProtoBuf.TypeAlias.Builder..ProtoBuf.TypeAlias.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeAlias[JavaMethodDescriptor]
 
@@ -1943,7 +1941,7 @@ Inferred types:
 
 'Interner' @ [616:21] ==> public constructor Interner<T : (Any..Any?)>(p0: (Interner<(TypeParameterDescriptor..TypeParameterDescriptor?)>..Interner<(TypeParameterDescriptor..TypeParameterDescriptor?)>?)) defined in org.jetbrains.kotlin.utils.Interner[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeParameterDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
 'parentSerializer' @ [616:30] ==> val parentSerializer: DescriptorSerializer defined in org.jetbrains.kotlin.serialization.DescriptorSerializer.Companion.create[LocalVariableDescriptor]
 
@@ -2053,17 +2051,17 @@ Inferred types:
 
 'ArrayList' @ [654:17] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (T..T?)>..Collection<(T..T?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> T
+    <E : (Any..Any?)> -> (T..T?)
 
 'descriptors' @ [654:27] ==> value-parameter descriptors: Collection<T> defined in org.jetbrains.kotlin.serialization.DescriptorSerializer.Companion.sort[ValueParameterDescriptorImpl]
 
-'apply' @ [654:40] ==> @InlineOnly public inline fun <T> ArrayList<T>.apply(block: ArrayList<T>.() -> Unit): ArrayList<T> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [654:40] ==> @InlineOnly public inline fun <T> ArrayList<(T..T?)>.apply(block: ArrayList<(T..T?)>.() -> Unit): ArrayList<(T..T?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ArrayList<T>
+    <T> -> ArrayList<(T..T?)>
 
 'sort' @ [656:33] ==> public open fun <T : (Any..Any?)> sort(p0: (MutableList<(T..T?)>..List<(T..T?)>?), p1: (Comparator<in (T..T?)>..Comparator<in (T..T?)>?)): Unit defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'this' @ [656:38] ==> <this> defined in org.jetbrains.kotlin.serialization.DescriptorSerializer.Companion.sort.<anonymous>[ReceiverParameterDescriptorImpl]
 

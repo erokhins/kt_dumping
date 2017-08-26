@@ -24,15 +24,15 @@
 Inferred types:
     <E : (Any..Any?)> -> String
 
-'lazy' @ [45:56] ==> public fun <T> lazy(initializer: () -> KtElement?): Lazy<KtElement?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [45:56] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtElement?
+    <T> -> T
 
 'this' @ [46:9] ==> <this> defined in org.jetbrains.kotlin.psi.KtCodeFragment[LazyClassReceiverParameterDescriptor]
 
 'getCopyableUserData' @ [46:14] ==> @Nullable @Contract public open fun <T : (Any..Any?)> getCopyableUserData(p0: Key<(() -> KtElement..(() -> KtElement)?)>): (() -> KtElement)? defined in org.jetbrains.kotlin.psi.KtCodeFragment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function0<KtElement>
+    <T : (Any..Any?)> -> (() -> org.jetbrains.kotlin.psi.KtElement..(() -> org.jetbrains.kotlin.psi.KtElement)?)
 
 'FAKE_CONTEXT_FOR_JAVA_FILE' @ [46:34] ==> public final val FAKE_CONTEXT_FOR_JAVA_FILE: Key<() -> KtElement> defined in org.jetbrains.kotlin.psi.KtCodeFragment.Companion[PropertyDescriptorImpl]
 
@@ -329,11 +329,11 @@ Inferred types:
 
 'create' @ [190:85] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<((KtExpression) -> KotlinType?..((KtExpression) -> KotlinType?)?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<KtExpression, KotlinType?>
+    <T : (Any..Any?)> -> ((org.jetbrains.kotlin.psi.KtExpression) -> org.jetbrains.kotlin.types.KotlinType?..((org.jetbrains.kotlin.psi.KtExpression) -> org.jetbrains.kotlin.types.KotlinType?)?)
 
 'create' @ [191:73] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(() -> KtElement..(() -> KtElement)?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function0<KtElement>
+    <T : (Any..Any?)> -> (() -> org.jetbrains.kotlin.psi.KtElement..(() -> org.jetbrains.kotlin.psi.KtElement)?)
 
 'getInstance' @ [193:34] ==> @NotNull public open fun getInstance(@NotNull p0: raw (Class<(Any..Any?)>..Class<*>)): Logger defined in com.intellij.openapi.diagnostic.Logger[JavaMethodDescriptor]
 

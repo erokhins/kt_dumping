@@ -6,11 +6,11 @@
 
 'ANDROID_API' @ [34:90] ==> enum entry ANDROID_API defined in org.jetbrains.kotlin.test.TestJdkKind[FakeCallableDescriptorForObject]
 
-'createTestEnvironment' @ [35:19] ==> public fun KtUsefulTestCase.createTestEnvironment(configuration: CompilerConfiguration, resDirectories: List<String>): KotlinCoreEnvironment defined in org.jetbrains.kotlin.android.synthetic.test[SimpleFunctionDescriptorImpl]
+'createTestEnvironment' @ [35:19] ==> public fun KtUsefulTestCase.createTestEnvironment(configuration: CompilerConfiguration, resDirectories: List<String>): KotlinCoreEnvironment defined in org.jetbrains.kotlin.android.synthetic.test in file CompilerTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'config' @ [35:41] ==> val config: CompilerConfiguration defined in org.jetbrains.kotlin.android.synthetic.test.AbstractAndroidSyntheticPropertyDescriptorTest.doTest[LocalVariableDescriptor]
 
-'getResPaths' @ [35:49] ==> public fun getResPaths(path: String): List<String> defined in org.jetbrains.kotlin.android.synthetic.test[SimpleFunctionDescriptorImpl]
+'getResPaths' @ [35:49] ==> public fun getResPaths(path: String): List<String> defined in org.jetbrains.kotlin.android.synthetic.test in file CompilerTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'path' @ [35:61] ==> value-parameter path: String defined in org.jetbrains.kotlin.android.synthetic.test.AbstractAndroidSyntheticPropertyDescriptorTest.doTest[ValueParameterDescriptorImpl]
 

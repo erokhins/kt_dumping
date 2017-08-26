@@ -24,15 +24,13 @@
 
 'IncorrectOperationException' @ [40:61] ==> public constructor IncorrectOperationException() defined in com.intellij.util.IncorrectOperationException[JavaClassConstructorDescriptor]
 
-'lazy' @ [45:5] ==> public fun <T> lazy(initializer: () -> Initializer): Lazy<Initializer> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [45:5] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Initializer
+    <T> -> T
 
 'Initializer' @ [45:12] ==> public constructor Initializer(body: DeferredElement<Block>, modifiers: Modifiers) defined in org.jetbrains.kotlin.j2k.ast.Initializer[ClassConstructorDescriptorImpl]
 
 'body' @ [45:24] ==> value-parameter body: DeferredElement<Block> defined in org.jetbrains.kotlin.j2k.ast.PrimaryConstructor.<init>[ValueParameterDescriptorImpl]
-
-'Modifiers' @ [45:30] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
 
 'Empty' @ [45:40] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 

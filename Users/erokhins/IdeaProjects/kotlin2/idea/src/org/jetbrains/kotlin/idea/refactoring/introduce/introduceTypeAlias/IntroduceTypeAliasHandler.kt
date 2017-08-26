@@ -2,7 +2,7 @@
 
 'KotlinIntroduceTypeAliasHandler' @ [48:24] ==> public constructor KotlinIntroduceTypeAliasHandler() defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.KotlinIntroduceTypeAliasHandler[ClassConstructorDescriptorImpl]
 
-'selectElementsWithTargetSibling' @ [52:9] ==> public fun selectElementsWithTargetSibling(operationName: String, editor: Editor, file: KtFile, title: String, elementKinds: Collection<CodeInsightUtils.ElementKind>, getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement>, continuation: (elements: List<PsiElement>, targetSibling: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce[SimpleFunctionDescriptorImpl]
+'selectElementsWithTargetSibling' @ [52:9] ==> public fun selectElementsWithTargetSibling(operationName: String, editor: Editor, file: KtFile, title: String, elementKinds: Collection<CodeInsightUtils.ElementKind>, getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement>, continuation: (elements: List<PsiElement>, targetSibling: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'REFACTORING_NAME' @ [53:17] ==> @JvmField public final val REFACTORING_NAME: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.KotlinIntroduceTypeAliasHandler.Companion[PropertyDescriptorImpl]
 
@@ -40,7 +40,7 @@ Inferred types:
 
 'generateTypeAlias' @ [64:97] ==> public fun IntroduceTypeAliasDescriptor.generateTypeAlias(previewOnly: Boolean = ...): KtTypeAlias defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias in file introduceTypeAliasImpl.kt[SimpleFunctionDescriptorImpl]
 
-'findDuplicates' @ [66:34] ==> public fun findDuplicates(typeAlias: KtTypeAlias): Map<KotlinPsiRange, () -> Unit> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias[SimpleFunctionDescriptorImpl]
+'findDuplicates' @ [66:34] ==> public fun findDuplicates(typeAlias: KtTypeAlias): Map<KotlinPsiRange, () -> Unit> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias in file introduceTypeAliasImpl.kt[SimpleFunctionDescriptorImpl]
 
 'typeAlias' @ [66:49] ==> val typeAlias: KtTypeAlias defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.KotlinIntroduceTypeAliasHandler.runRefactoring[LocalVariableDescriptor]
 
@@ -51,7 +51,7 @@ Inferred types:
     <K> -> KotlinPsiRange
     <V> -> Function0<Unit>
 
-'processDuplicates' @ [68:13] ==> public fun processDuplicates(duplicateReplacers: Map<KotlinPsiRange, () -> Unit>, project: Project, editor: Editor, scopeDescription: String = ..., usageDescription: String = ...): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'processDuplicates' @ [68:13] ==> public fun processDuplicates(duplicateReplacers: Map<KotlinPsiRange, () -> Unit>, project: Project, editor: Editor, scopeDescription: String = ..., usageDescription: String = ...): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file duplicateUtil.kt[SimpleFunctionDescriptorImpl]
 
 'duplicateReplacers' @ [68:31] ==> val duplicateReplacers: Map<KotlinPsiRange, () -> Unit> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.KotlinIntroduceTypeAliasHandler.runRefactoring[LocalVariableDescriptor]
 
@@ -197,7 +197,7 @@ Inferred types:
 
 'project' @ [104:21] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.KotlinIntroduceTypeAliasHandler.doInvoke[ValueParameterDescriptorImpl]
 
-'checkConflictsInteractively' @ [104:29] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [104:29] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [104:57] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.KotlinIntroduceTypeAliasHandler.doInvoke[LocalVariableDescriptor]
 
@@ -313,8 +313,6 @@ Inferred types:
 
 'provider' @ [133:20] ==> value-parameter provider: RefactoringSupportProvider defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.IntroduceTypeAliasAction.getRefactoringHandler[ValueParameterDescriptorImpl]
 
-'KotlinIntroduceTypeAliasHandler' @ [133:66] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.KotlinIntroduceTypeAliasHandler[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [133:98] ==> public final val INSTANCE: KotlinIntroduceTypeAliasHandler defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.KotlinIntroduceTypeAliasHandler.Companion[PropertyDescriptorImpl]
 
 'super' @ [137:16] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.IntroduceTypeAliasAction[LazyClassReceiverParameterDescriptor]
@@ -340,8 +338,6 @@ Inferred types:
 'languageVersionSettings' @ [138:59] ==> public val Module.languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[DeserializedPropertyDescriptor]
 
 'supportsFeature' @ [138:84] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [138:100] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'TypeAliases' @ [138:116] ==> enum entry TypeAliases defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

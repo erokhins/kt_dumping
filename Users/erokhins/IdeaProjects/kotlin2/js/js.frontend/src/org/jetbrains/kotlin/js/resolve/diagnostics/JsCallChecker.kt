@@ -32,13 +32,13 @@ Inferred types:
 
 'isJsCall' @ [69:58] ==> @JvmStatic public final fun <F : CallableDescriptor?> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.isJsCall(): Boolean defined in org.jetbrains.kotlin.js.resolve.diagnostics.JsCallChecker.Companion[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <F : CallableDescriptor?> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <F : CallableDescriptor?> -> Captured(*)
 
 'resolvedCall' @ [71:26] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.js.resolve.diagnostics.JsCallChecker.check[ValueParameterDescriptorImpl]
 
 'call' @ [71:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [71:44] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -150,8 +150,8 @@ Inferred types:
 
 'record' @ [103:23] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(ResolvedCall<out FunctionDescriptor>..ResolvedCall<out FunctionDescriptor>?), (LexicalScope..LexicalScope?)>..WritableSlice<(ResolvedCall<out FunctionDescriptor>..ResolvedCall<out FunctionDescriptor>?), (LexicalScope..LexicalScope?)>?), p1: (ResolvedCall<out FunctionDescriptor>..ResolvedCall<out FunctionDescriptor>?), p2: (LexicalScope..LexicalScope?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ResolvedCall<out FunctionDescriptor>
-    <V : (Any..Any?)> -> LexicalScope
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out org.jetbrains.kotlin.descriptors.FunctionDescriptor>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out org.jetbrains.kotlin.descriptors.FunctionDescriptor>?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.LexicalScope..org.jetbrains.kotlin.resolve.scopes.LexicalScope?)
 
 'LEXICAL_SCOPE_FOR_JS' @ [103:30] ==> @JvmField public val LEXICAL_SCOPE_FOR_JS: BasicWritableSlice<ResolvedCall<out FunctionDescriptor>, LexicalScope> defined in org.jetbrains.kotlin.js.resolve in file bindingContextSlicesJs.kt[PropertyDescriptorImpl]
 

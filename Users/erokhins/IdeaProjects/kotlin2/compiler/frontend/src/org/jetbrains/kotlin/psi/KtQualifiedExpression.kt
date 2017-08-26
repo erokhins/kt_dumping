@@ -20,7 +20,7 @@
 
 'psi' @ [41:35] ==> public final val ASTNode.psi: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'siblings' @ [41:40] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'siblings' @ [41:40] ==> public fun PsiElement.siblings(forward: Boolean = ..., withItself: Boolean = ...): Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'afterOperation' @ [41:49] ==> value-parameter afterOperation: Boolean defined in org.jetbrains.kotlin.psi.KtQualifiedExpression.getExpression[ValueParameterDescriptorImpl]
 

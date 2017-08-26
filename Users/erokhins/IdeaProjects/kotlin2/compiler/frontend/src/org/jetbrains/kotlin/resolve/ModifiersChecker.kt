@@ -1,6 +1,6 @@
 'of' @ [55:52] ==> @SafeVarargs public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), vararg p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [55:55] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -37,7 +37,7 @@ Inferred types:
 
 'of' @ [60:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'ENUM_CLASS' @ [60:45] ==> enum entry ENUM_CLASS defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -45,7 +45,7 @@ Inferred types:
 
 'of' @ [61:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?), p2: (KotlinTarget..KotlinTarget?), p3: (KotlinTarget..KotlinTarget?), p4: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [61:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -61,7 +61,7 @@ Inferred types:
 
 'of' @ [62:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?), p2: (KotlinTarget..KotlinTarget?), p3: (KotlinTarget..KotlinTarget?), p4: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [62:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -77,7 +77,7 @@ Inferred types:
 
 'of' @ [63:42] ==> @SafeVarargs public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), vararg p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [63:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -95,7 +95,7 @@ Inferred types:
 
 'of' @ [64:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [64:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -103,7 +103,7 @@ Inferred types:
 
 'of' @ [65:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [65:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -111,7 +111,7 @@ Inferred types:
 
 'of' @ [66:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'MEMBER_PROPERTY' @ [66:45] ==> enum entry MEMBER_PROPERTY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -133,7 +133,7 @@ Inferred types:
 
 'of' @ [70:42] ==> @SafeVarargs public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), vararg p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [70:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -161,7 +161,7 @@ Inferred types:
 
 'of' @ [72:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'TYPE_PARAMETER' @ [72:45] ==> enum entry TYPE_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -171,7 +171,7 @@ Inferred types:
 
 'of' @ [73:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'TYPE_PARAMETER' @ [73:45] ==> enum entry TYPE_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -181,7 +181,7 @@ Inferred types:
 
 'of' @ [74:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'TYPE_PARAMETER' @ [74:45] ==> enum entry TYPE_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -189,7 +189,7 @@ Inferred types:
 
 'of' @ [75:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'VALUE_PARAMETER' @ [75:45] ==> enum entry VALUE_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -199,7 +199,7 @@ Inferred types:
 
 'of' @ [76:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'OBJECT' @ [76:45] ==> enum entry OBJECT defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -207,7 +207,7 @@ Inferred types:
 
 'of' @ [77:41] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'MEMBER_PROPERTY' @ [77:44] ==> enum entry MEMBER_PROPERTY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -215,7 +215,7 @@ Inferred types:
 
 'of' @ [78:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [78:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -225,7 +225,7 @@ Inferred types:
 
 'of' @ [79:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?), p2: (KotlinTarget..KotlinTarget?), p3: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'FUNCTION' @ [79:45] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -239,7 +239,7 @@ Inferred types:
 
 'of' @ [80:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'VALUE_PARAMETER' @ [80:45] ==> enum entry VALUE_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -247,7 +247,7 @@ Inferred types:
 
 'of' @ [81:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'FUNCTION' @ [81:45] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -255,7 +255,7 @@ Inferred types:
 
 'of' @ [82:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'MEMBER_FUNCTION' @ [82:45] ==> enum entry MEMBER_FUNCTION defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -265,7 +265,7 @@ Inferred types:
 
 'of' @ [83:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?), p2: (KotlinTarget..KotlinTarget?), p3: (KotlinTarget..KotlinTarget?), p4: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'FUNCTION' @ [83:45] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -281,7 +281,7 @@ Inferred types:
 
 'of' @ [84:43] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'ANNOTATION_CLASS' @ [84:46] ==> enum entry ANNOTATION_CLASS defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -289,7 +289,7 @@ Inferred types:
 
 'of' @ [85:44] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'VALUE_PARAMETER' @ [85:47] ==> enum entry VALUE_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -297,7 +297,7 @@ Inferred types:
 
 'of' @ [86:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'MEMBER_PROPERTY' @ [86:45] ==> enum entry MEMBER_PROPERTY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -307,7 +307,7 @@ Inferred types:
 
 'of' @ [87:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'FUNCTION' @ [87:45] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -315,7 +315,7 @@ Inferred types:
 
 'of' @ [88:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'FUNCTION' @ [88:45] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -323,7 +323,7 @@ Inferred types:
 
 'of' @ [89:42] ==> @SafeVarargs public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), vararg p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'TOP_LEVEL_FUNCTION' @ [89:45] ==> enum entry TOP_LEVEL_FUNCTION defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -343,7 +343,7 @@ Inferred types:
 
 'of' @ [90:42] ==> @SafeVarargs public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), vararg p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'TOP_LEVEL_FUNCTION' @ [90:45] ==> enum entry TOP_LEVEL_FUNCTION defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -374,25 +374,17 @@ Inferred types:
 
 'SUSPEND_KEYWORD' @ [94:13] ==> public final val SUSPEND_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'LanguageFeature' @ [94:34] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'Coroutines' @ [94:50] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'INLINE_KEYWORD' @ [95:13] ==> public final val INLINE_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'LanguageFeature' @ [95:34] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'InlineProperties' @ [95:50] ==> enum entry InlineProperties defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'HEADER_KEYWORD' @ [96:13] ==> public final val HEADER_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'LanguageFeature' @ [96:34] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'MultiPlatformProjects' @ [96:50] ==> enum entry MultiPlatformProjects defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'IMPL_KEYWORD' @ [97:13] ==> public final val IMPL_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'LanguageFeature' @ [97:34] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'MultiPlatformProjects' @ [97:50] ==> enum entry MultiPlatformProjects defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -429,7 +421,7 @@ Inferred types:
 
 'of' @ [109:38] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'INTERFACE' @ [109:41] ==> enum entry INTERFACE defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -442,7 +434,7 @@ Inferred types:
 
 'of' @ [113:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?), p2: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [113:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -454,7 +446,7 @@ Inferred types:
 
 'of' @ [114:42] ==> @SafeVarargs public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), vararg p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [114:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -474,7 +466,7 @@ Inferred types:
 
 'of' @ [116:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?), p2: (KotlinTarget..KotlinTarget?), p3: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [116:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -488,7 +480,7 @@ Inferred types:
 
 'of' @ [117:42] ==> @SafeVarargs public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), vararg p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [117:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -508,7 +500,7 @@ Inferred types:
 
 'of' @ [119:42] ==> @SafeVarargs public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), vararg p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [119:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -530,7 +522,7 @@ Inferred types:
 
 'of' @ [121:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?), p2: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [121:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -542,7 +534,7 @@ Inferred types:
 
 'of' @ [122:42] ==> @SafeVarargs public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), vararg p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS_ONLY' @ [122:45] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -564,7 +556,7 @@ Inferred types:
 
 'of' @ [124:42] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?), p2: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CONSTRUCTOR' @ [124:45] ==> enum entry CONSTRUCTOR defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -1178,13 +1170,9 @@ Inferred types:
 
 'featureSupport' @ [277:13] ==> val featureSupport: LanguageFeature.State defined in org.jetbrains.kotlin.resolve.ModifierCheckerCore.checkLanguageLevelSupport[LocalVariableDescriptor]
 
-'LanguageFeature' @ [277:31] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED_WITH_ERROR' @ [277:53] ==> enum entry ENABLED_WITH_ERROR defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'featureSupport' @ [277:75] ==> val featureSupport: LanguageFeature.State defined in org.jetbrains.kotlin.resolve.ModifierCheckerCore.checkLanguageLevelSupport[LocalVariableDescriptor]
-
-'LanguageFeature' @ [277:93] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'DISABLED' @ [277:115] ==> enum entry DISABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -1214,8 +1202,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Unit
 
 'featureSupport' @ [283:17] ==> val featureSupport: LanguageFeature.State defined in org.jetbrains.kotlin.resolve.ModifierCheckerCore.checkLanguageLevelSupport[LocalVariableDescriptor]
-
-'LanguageFeature' @ [283:35] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'DISABLED' @ [283:57] ==> enum entry DISABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -1249,8 +1235,6 @@ Inferred types:
 
 'featureSupport' @ [292:13] ==> val featureSupport: LanguageFeature.State defined in org.jetbrains.kotlin.resolve.ModifierCheckerCore.checkLanguageLevelSupport[LocalVariableDescriptor]
 
-'LanguageFeature' @ [292:31] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED_WITH_WARNING' @ [292:53] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'trace' @ [293:13] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.ModifierCheckerCore.checkLanguageLevelSupport[ValueParameterDescriptorImpl]
@@ -1282,8 +1266,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> List<KotlinTarget>
 
 'parentDescriptor' @ [303:55] ==> value-parameter parentDescriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.ModifierCheckerCore.checkParent[ValueParameterDescriptorImpl]
-
-'KotlinTarget' @ [304:35] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'classActualTargets' @ [304:48] ==> public final fun classActualTargets(descriptor: ClassDescriptor): List<KotlinTarget> defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -1356,8 +1338,6 @@ Inferred types:
 'modifier' @ [315:55] ==> val modifier: KtModifierKeywordToken defined in org.jetbrains.kotlin.resolve.ModifierCheckerCore.checkParent[LocalVariableDescriptor]
 
 'possibleParents' @ [316:13] ==> val possibleParents: Set<KotlinTarget> defined in org.jetbrains.kotlin.resolve.ModifierCheckerCore.checkParent[LocalVariableDescriptor]
-
-'KotlinTarget' @ [316:32] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'ALL_TARGET_SET' @ [316:45] ==> public final val ALL_TARGET_SET: Set<KotlinTarget> defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget.Companion[DeserializedPropertyDescriptor]
 

@@ -1,4 +1,6 @@
-'KotlinDecompilerService' @ [31:29] ==> public companion object defined in org.jetbrains.kotlin.idea.internal.KotlinDecompilerService[FakeCallableDescriptorForObject]
+'?:' @ [31:29] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinDecompilerService?, right: KotlinDecompilerService): KotlinDecompilerService[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinDecompilerService
 
 'getInstance' @ [31:53] ==> public final fun getInstance(): KotlinDecompilerService? defined in org.jetbrains.kotlin.idea.internal.KotlinDecompilerService.Companion[SimpleFunctionDescriptorImpl]
 

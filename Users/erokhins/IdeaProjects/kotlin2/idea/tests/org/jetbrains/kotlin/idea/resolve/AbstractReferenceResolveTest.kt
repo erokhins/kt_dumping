@@ -12,7 +12,7 @@
 
 'myFixture' @ [45:9] ==> protected/*protected and package*/ final var myFixture: (CodeInsightTestFixture..CodeInsightTestFixture?) defined in org.jetbrains.kotlin.idea.resolve.AbstractReferenceResolveTest[JavaPropertyDescriptor]
 
-'configureWithExtraFile' @ [45:19] ==> public fun CodeInsightTestFixture.configureWithExtraFile(path: String, vararg extraNameParts: String = ..., relativePaths: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'configureWithExtraFile' @ [45:19] ==> public fun CodeInsightTestFixture.configureWithExtraFile(path: String, vararg extraNameParts: String = ..., relativePaths: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test in file ideaTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'path' @ [45:42] ==> value-parameter path: String defined in org.jetbrains.kotlin.idea.resolve.AbstractReferenceResolveTest.doTest[ValueParameterDescriptorImpl]
 
@@ -133,7 +133,7 @@ Inferred types:
 
 'assertOrderedEquals' @ [88:28] ==> public open fun <T : (Any..Any?)> assertOrderedEquals(p0: (String..String?), @NotNull p1: (MutableIterable<(String..String?)>..Iterable<(String..String?)>), @NotNull p2: (MutableCollection<out (String..String?)>..Collection<(String..String?)>)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'index' @ [88:78] ==> value-parameter index: Int defined in org.jetbrains.kotlin.idea.resolve.AbstractReferenceResolveTest.doMultiResolveTest.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -182,9 +182,9 @@ Inferred types:
 
 'invoke' @ [96:13] ==> public abstract operator fun invoke(index: @ParameterName Int, offset: @ParameterName Int): Unit defined in kotlin.Function2[FunctionInvokeDescriptor]
 
-'if (singleCaret) -1 else index + 1' @ [96:20] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: @ParameterName Int, elseBranch: @ParameterName Int): @ParameterName Int[SimpleFunctionDescriptorImpl]
+'if (singleCaret) -1 else index + 1' @ [96:20] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Int, elseBranch: Int): Int[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> [@kotlin.ParameterName] Int
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Int
 
 'singleCaret' @ [96:24] ==> val singleCaret: Boolean defined in org.jetbrains.kotlin.idea.resolve.AbstractReferenceResolveTest.forEachCaret[LocalVariableDescriptor]
 

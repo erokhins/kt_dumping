@@ -71,7 +71,7 @@ Inferred types:
 
 'scope' @ [58:26] ==> value-parameter scope: LexicalScope defined in org.jetbrains.kotlin.idea.util.substituteExtensionIfCallableWithImplicitReceiver[ValueParameterDescriptorImpl]
 
-'getImplicitReceiversWithInstance' @ [58:32] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'getImplicitReceiversWithInstance' @ [58:32] ==> public fun LexicalScope.getImplicitReceiversWithInstance(): Collection<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util in file implicitReceiversUtils.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [58:67] ==> public inline fun <T, R> Iterable<ReceiverParameterDescriptor>.map(transform: (ReceiverParameterDescriptor) -> ReceiverValue): List<ReceiverValue> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -155,7 +155,7 @@ Inferred types:
 
 'makeNotNullable' @ [81:32] ==> public fun KotlinType.makeNotNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil[DeserializedSimpleFunctionDescriptor]
 
-'fuzzyExtensionReceiverType' @ [84:33] ==> public fun CallableDescriptor.fuzzyExtensionReceiverType(): FuzzyType? defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'fuzzyExtensionReceiverType' @ [84:33] ==> public fun CallableDescriptor.fuzzyExtensionReceiverType(): FuzzyType? defined in org.jetbrains.kotlin.idea.util in file FuzzyType.kt[SimpleFunctionDescriptorImpl]
 
 'types' @ [85:24] ==> var types: Sequence<KotlinType> defined in org.jetbrains.kotlin.idea.util.substituteExtensionIfCallable[LocalVariableDescriptor]
 
@@ -180,7 +180,7 @@ Inferred types:
 
 'extensionReceiverType' @ [89:92] ==> val extensionReceiverType: FuzzyType defined in org.jetbrains.kotlin.idea.util.substituteExtensionIfCallable[LocalVariableDescriptor]
 
-'nullability' @ [89:114] ==> public fun FuzzyType.nullability(): TypeNullability defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'nullability' @ [89:114] ==> public fun FuzzyType.nullability(): TypeNullability defined in org.jetbrains.kotlin.idea.util in file FuzzyType.kt[SimpleFunctionDescriptorImpl]
 
 'NOT_NULL' @ [89:147] ==> enum entry NOT_NULL defined in org.jetbrains.kotlin.types.typeUtil.TypeNullability[FakeCallableDescriptorForObject]
 

@@ -362,7 +362,7 @@ Inferred types:
 
 'getDelegationCall' @ [137:57] ==> public final fun getDelegationCall(): KtConstructorDelegationCall defined in org.jetbrains.kotlin.psi.KtSecondaryConstructor[DeserializedSimpleFunctionDescriptor]
 
-'getResolvedCall' @ [138:49] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [138:49] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'ktDelegatingConstructorCall' @ [138:65] ==> val ktDelegatingConstructorCall: KtConstructorDelegationCall defined in org.jetbrains.kotlin.psi2ir.generators.BodyGenerator.generateDelegatingConstructorCall[LocalVariableDescriptor]
 
@@ -649,7 +649,7 @@ Inferred types:
 
 'pregenerateCall' @ [210:75] ==> public fun StatementGenerator.pregenerateCall(resolvedCall: ResolvedCall<*>): CallBuilder defined in org.jetbrains.kotlin.psi2ir.generators in file ArgumentsGenerationUtils.kt[SimpleFunctionDescriptorImpl]
 
-'getResolvedCall' @ [210:91] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [210:91] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'ktSuperTypeListEntry' @ [210:107] ==> val ktSuperTypeListEntry: (KtSuperTypeListEntry..KtSuperTypeListEntry?) defined in org.jetbrains.kotlin.psi2ir.generators.BodyGenerator.generateSuperConstructorCall.<anonymous>[LocalVariableDescriptor]
 
@@ -833,13 +833,13 @@ Inferred types:
 
 'generateEnumConstructorCall' @ [275:39] ==> private final fun StatementGenerator.generateEnumConstructorCall(constructorCall: ResolvedCall<out CallableDescriptor>, ktEnumEntry: KtEnumEntry): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators.BodyGenerator[SimpleFunctionDescriptorImpl]
 
-'getResolvedCall' @ [275:67] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [275:67] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'ktSuperCallElement' @ [275:83] ==> val ktSuperCallElement: KtSuperTypeListEntry? defined in org.jetbrains.kotlin.psi2ir.generators.BodyGenerator.generateEnumConstructorCallOrSuperCall[LocalVariableDescriptor]
 
 'ktEnumEntry' @ [275:106] ==> value-parameter ktEnumEntry: KtEnumEntry defined in org.jetbrains.kotlin.psi2ir.generators.BodyGenerator.generateEnumConstructorCallOrSuperCall[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [278:42] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [278:42] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'ktEnumEntry' @ [278:58] ==> value-parameter ktEnumEntry: KtEnumEntry defined in org.jetbrains.kotlin.psi2ir.generators.BodyGenerator.generateEnumConstructorCallOrSuperCall[ValueParameterDescriptorImpl]
 

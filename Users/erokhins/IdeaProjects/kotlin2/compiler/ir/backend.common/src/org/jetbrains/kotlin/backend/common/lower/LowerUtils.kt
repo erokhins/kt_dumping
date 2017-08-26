@@ -208,7 +208,7 @@ Inferred types:
 
 'context' @ [116:26] ==> private final val context: BackendContext defined in org.jetbrains.kotlin.backend.common.lower.IrBuildingTransformer[PropertyDescriptorImpl]
 
-'createIrBuilder' @ [116:34] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createIrBuilder' @ [116:34] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'symbol' @ [116:50] ==> value-parameter symbol: IrSymbol defined in org.jetbrains.kotlin.backend.common.lower.IrBuildingTransformer.withBuilder[ValueParameterDescriptorImpl]
 

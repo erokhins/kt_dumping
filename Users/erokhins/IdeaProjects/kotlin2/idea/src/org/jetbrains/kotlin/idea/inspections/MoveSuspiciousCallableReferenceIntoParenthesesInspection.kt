@@ -30,7 +30,7 @@ Inferred types:
 
 'getParameterForArgument' @ [47:52] ==> public fun <D : CallableDescriptor> ResolvedCall<out CallableDescriptor>.getParameterForArgument(valueArgument: ValueArgument?): ValueParameterDescriptor? defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <D : CallableDescriptor> -> CallableDescriptor
+    <D : CallableDescriptor> -> Captured(out CallableDescriptor)
 
 'lambdaExpression' @ [47:76] ==> value-parameter lambdaExpression: KtLambdaExpression defined in org.jetbrains.kotlin.idea.inspections.MoveSuspiciousCallableReferenceIntoParenthesesInspection.buildVisitor.<no name provided>.visitLambdaExpression[ValueParameterDescriptorImpl]
 
@@ -107,13 +107,13 @@ Inferred types:
 
 'extensionReceiver' @ [76:56] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'it' @ [76:77] ==> value-parameter it: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.inspections.MoveSuspiciousCallableReferenceIntoParenthesesInspection.MoveIntoParenthesesIntention.buildReferenceText.<anonymous>[ValueParameterDescriptorImpl]
 
 'dispatchReceiver' @ [76:80] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 '+' @ [77:20] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 

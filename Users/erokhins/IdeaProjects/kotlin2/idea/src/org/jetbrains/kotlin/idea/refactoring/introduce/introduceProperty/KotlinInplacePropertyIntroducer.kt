@@ -91,8 +91,6 @@ Inferred types:
 
 'currentTarget' @ [81:44] ==> private final var currentTarget: ExtractionTarget defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer[PropertyDescriptorImpl]
 
-'ExtractionTarget' @ [81:61] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY_WITH_INITIALIZER' @ [81:78] ==> enum entry PROPERTY_WITH_INITIALIZER defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
 'availableTargets' @ [84:13] ==> private final val availableTargets: List<ExtractionTarget> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer[PropertyDescriptorImpl]
@@ -103,14 +101,14 @@ Inferred types:
 
 'ControlWrapper' @ [86:21] ==> public constructor ControlWrapper(@NotNull factory: () -> (JComponent..JComponent?)) defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinInplaceVariableIntroducer.ControlWrapper[JavaClassConstructorDescriptor]
 
-'with' @ [87:52] ==> @InlineOnly public inline fun <T, R> with(receiver: JComboBox<String>, block: JComboBox<String>.() -> JComboBox<String>): JComboBox<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [87:52] ==> @InlineOnly public inline fun <T, R> with(receiver: JComboBox<(String..String?)>, block: JComboBox<(String..String?)>.() -> JComboBox<(String..String?)>): JComboBox<(String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JComboBox<String>
-    <R> -> JComboBox<String>
+    <T> -> JComboBox<(kotlin.String..kotlin.String?)>
+    <R> -> JComboBox<(kotlin.String..kotlin.String?)>
 
 'JComboBox' @ [87:57] ==> public constructor JComboBox<E : (Any..Any?)>(p0: (Array<(String..String?)>..Array<out (String..String?)>?)) defined in javax.swing.JComboBox[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'availableTargets' @ [87:67] ==> private final val availableTargets: List<ExtractionTarget> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer[PropertyDescriptorImpl]
 
@@ -141,13 +139,13 @@ Inferred types:
 
 'availableTargets' @ [92:65] ==> private final val availableTargets: List<ExtractionTarget> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer[PropertyDescriptorImpl]
 
-'selectedIndex' @ [92:82] ==> public final var <E : (Any..Any?)> JComboBox<String>.selectedIndex: Int[MyPropertyDescriptor]
+'selectedIndex' @ [92:82] ==> public final var <E : (Any..Any?)> JComboBox<(String..String?)>.selectedIndex: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'selectedIndex' @ [98:29] ==> public final var <E : (Any..Any?)> JComboBox<String>.selectedIndex: Int[MyPropertyDescriptor]
+'selectedIndex' @ [98:29] ==> public final var <E : (Any..Any?)> JComboBox<(String..String?)>.selectedIndex: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'availableTargets' @ [98:45] ==> private final val availableTargets: List<ExtractionTarget> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer[PropertyDescriptorImpl]
 
@@ -167,7 +165,7 @@ Inferred types:
 
 'labelFor' @ [105:43] ==> public final var JLabel.labelFor: (Component..Component?)[MyPropertyDescriptor]
 
-'propertyKindComboBox' @ [105:54] ==> val propertyKindComboBox: JComboBox<String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer.initPanelControls.<anonymous>[LocalVariableDescriptor]
+'propertyKindComboBox' @ [105:54] ==> val propertyKindComboBox: JComboBox<(String..String?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer.initPanelControls.<anonymous>[LocalVariableDescriptor]
 
 'JPanel' @ [107:37] ==> public constructor JPanel() defined in javax.swing.JPanel[JavaClassConstructorDescriptor]
 
@@ -181,11 +179,11 @@ Inferred types:
 
 'add' @ [109:31] ==> public open fun add(p0: (Component..Component?)): (Component..Component?) defined in javax.swing.JPanel[JavaMethodDescriptor]
 
-'propertyKindComboBox' @ [109:35] ==> val propertyKindComboBox: JComboBox<String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer.initPanelControls.<anonymous>[LocalVariableDescriptor]
+'propertyKindComboBox' @ [109:35] ==> val propertyKindComboBox: JComboBox<(String..String?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer.initPanelControls.<anonymous>[LocalVariableDescriptor]
 
 'panel' @ [111:25] ==> val panel: JPanel defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer.initPanelControls.<anonymous>[LocalVariableDescriptor]
 
-'ExtractionTarget' @ [116:13] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
+'in' @ [116:13] ==> public abstract fun contains(element: ExtractionTarget): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
 'PROPERTY_WITH_INITIALIZER' @ [116:30] ==> enum entry PROPERTY_WITH_INITIALIZER defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
@@ -313,7 +311,7 @@ Inferred types:
 
 'replaceAll' @ [161:13] ==> private final var replaceAll: Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer[PropertyDescriptorImpl]
 
-'processDuplicatesSilently' @ [162:13] ==> public fun processDuplicatesSilently(duplicateReplacers: Map<KotlinPsiRange, () -> Unit>, project: Project): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'processDuplicatesSilently' @ [162:13] ==> public fun processDuplicatesSilently(duplicateReplacers: Map<KotlinPsiRange, () -> Unit>, project: Project): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file duplicateUtil.kt[SimpleFunctionDescriptorImpl]
 
 'extractionResult' @ [162:39] ==> private final var extractionResult: ExtractionResult defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceProperty.KotlinInplacePropertyIntroducer[PropertyDescriptorImpl]
 

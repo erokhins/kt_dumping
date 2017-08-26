@@ -74,8 +74,6 @@
 
 'supportsFeature' @ [99:60] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [99:76] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'OperatorRem' @ [99:92] ==> enum entry OperatorRem defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'isBinaryRemOperator' @ [100:13] ==> val isBinaryRemOperator: Boolean defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.runResolutionAndInference[LocalVariableDescriptor]
@@ -128,7 +126,7 @@ Inferred types:
 
 'nameNotFound' @ [105:50] ==> public open fun <D : (CallableDescriptor..CallableDescriptor?)> nameNotFound(): (OverloadResolutionResultsImpl<(D..D?)>..OverloadResolutionResultsImpl<(D..D?)>?) defined in org.jetbrains.kotlin.resolve.calls.results.OverloadResolutionResultsImpl[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'convertToOverloadResolutionResults' @ [108:16] ==> private final fun <D : CallableDescriptor> convertToOverloadResolutionResults(context: BasicCallResolutionContext, result: CallResolutionResult, tracingStrategy: TracingStrategy): OverloadResolutionResults<D> defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -209,7 +207,7 @@ Inferred types:
 
 'context' @ [125:55] ==> value-parameter context: BasicCallResolutionContext defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.runResolutionAndInferenceForGivenCandidates[ValueParameterDescriptorImpl]
 
-'transformToReceiverWithSmartCastInfo' @ [125:63] ==> public fun ResolutionContext<*>.transformToReceiverWithSmartCastInfo(receiver: ReceiverValue): ReceiverValueWithSmartCastInfo defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'transformToReceiverWithSmartCastInfo' @ [125:63] ==> public fun ResolutionContext<*>.transformToReceiverWithSmartCastInfo(receiver: ReceiverValue): ReceiverValueWithSmartCastInfo defined in org.jetbrains.kotlin.resolve.calls.tower in file NewResolutionOldInference.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [125:100] ==> value-parameter it: ReceiverValue defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.runResolutionAndInferenceForGivenCandidates.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -300,8 +298,6 @@ Inferred types:
 'languageVersionSettings' @ [152:36] ==> private final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver[PropertyDescriptorImpl]
 
 'supportsFeature' @ [152:60] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [152:76] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'OperatorRem' @ [152:92] ==> enum entry OperatorRem defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -453,7 +449,7 @@ Inferred types:
 
 'nameNotFound' @ [192:50] ==> public open fun <D : (CallableDescriptor..CallableDescriptor?)> nameNotFound(): (OverloadResolutionResultsImpl<(D..D?)>..OverloadResolutionResultsImpl<(D..D?)>?) defined in org.jetbrains.kotlin.resolve.calls.results.OverloadResolutionResultsImpl[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'result' @ [195:9] ==> value-parameter result: CallResolutionResult defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.convertToOverloadResolutionResults[ValueParameterDescriptorImpl]
 
@@ -513,7 +509,7 @@ Inferred types:
 
 'noneApplicable' @ [198:33] ==> public abstract fun <D : (CallableDescriptor..CallableDescriptor?)> noneApplicable(@NotNull trace: BindingTrace, @NotNull descriptors: (MutableCollection<out (ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>..Collection<(ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>)): Unit defined in org.jetbrains.kotlin.resolve.calls.tasks.TracingStrategy[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'trace' @ [198:48] ==> val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.convertToOverloadResolutionResults[LocalVariableDescriptor]
 
@@ -523,7 +519,7 @@ Inferred types:
 
 'recordAmbiguity' @ [199:33] ==> public abstract fun <D : (CallableDescriptor..CallableDescriptor?)> recordAmbiguity(@NotNull trace: BindingTrace, @NotNull candidates: (MutableCollection<out (ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>..Collection<(ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>)): Unit defined in org.jetbrains.kotlin.resolve.calls.tasks.TracingStrategy[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'trace' @ [199:49] ==> val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.convertToOverloadResolutionResults[LocalVariableDescriptor]
 
@@ -533,7 +529,7 @@ Inferred types:
 
 'recordAmbiguity' @ [202:33] ==> public abstract fun <D : (CallableDescriptor..CallableDescriptor?)> recordAmbiguity(@NotNull trace: BindingTrace, @NotNull candidates: (MutableCollection<out (ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>..Collection<(ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>)): Unit defined in org.jetbrains.kotlin.resolve.calls.tasks.TracingStrategy[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'trace' @ [202:49] ==> val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.convertToOverloadResolutionResults[LocalVariableDescriptor]
 
@@ -564,7 +560,7 @@ Inferred types:
 
 'cannotCompleteResolve' @ [204:37] ==> public abstract fun <D : (CallableDescriptor..CallableDescriptor?)> cannotCompleteResolve(@NotNull trace: BindingTrace, @NotNull descriptors: (MutableCollection<out (ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>..Collection<(ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>)): Unit defined in org.jetbrains.kotlin.resolve.calls.tasks.TracingStrategy[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'trace' @ [204:59] ==> val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.convertToOverloadResolutionResults[LocalVariableDescriptor]
 
@@ -574,7 +570,7 @@ Inferred types:
 
 'ambiguity' @ [207:37] ==> public abstract fun <D : (CallableDescriptor..CallableDescriptor?)> ambiguity(@NotNull trace: BindingTrace, @NotNull descriptors: (MutableCollection<out (ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>..Collection<(ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>)): Unit defined in org.jetbrains.kotlin.resolve.calls.tasks.TracingStrategy[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'trace' @ [207:47] ==> val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.convertToOverloadResolutionResults[LocalVariableDescriptor]
 
@@ -631,7 +627,7 @@ Inferred types:
 
 'unresolvedReferenceWrongReceiver' @ [218:33] ==> public abstract fun <D : (CallableDescriptor..CallableDescriptor?)> unresolvedReferenceWrongReceiver(@NotNull trace: BindingTrace, @NotNull candidates: (MutableCollection<out (ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>..Collection<(ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>)): Unit defined in org.jetbrains.kotlin.resolve.calls.tasks.TracingStrategy[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'trace' @ [218:66] ==> val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.convertToOverloadResolutionResults[LocalVariableDescriptor]
 
@@ -786,8 +782,8 @@ Inferred types:
 
 'record' @ [266:31] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?), value: (DeclarationDescriptor..DeclarationDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [266:53] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -869,7 +865,7 @@ Inferred types:
 
 'context' @ [293:17] ==> public final val context: ResolutionContext<*> defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.ASTScopeTower[PropertyDescriptorImpl]
 
-'transformToReceiverWithSmartCastInfo' @ [293:25] ==> public fun ResolutionContext<*>.transformToReceiverWithSmartCastInfo(receiver: ReceiverValue): ReceiverValueWithSmartCastInfo defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'transformToReceiverWithSmartCastInfo' @ [293:25] ==> public fun ResolutionContext<*>.transformToReceiverWithSmartCastInfo(receiver: ReceiverValue): ReceiverValueWithSmartCastInfo defined in org.jetbrains.kotlin.resolve.calls.tower in file NewResolutionOldInference.kt[SimpleFunctionDescriptorImpl]
 
 'implicitReceiver' @ [293:62] ==> val implicitReceiver: ReceiverParameterDescriptor defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.ASTScopeTower.getImplicitReceiver[LocalVariableDescriptor]
 
@@ -1423,7 +1419,7 @@ Inferred types:
 
 'context' @ [435:44] ==> value-parameter context: BasicCallResolutionContext defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.resolveExplicitReceiver[ValueParameterDescriptorImpl]
 
-'transformToReceiverWithSmartCastInfo' @ [435:52] ==> public fun ResolutionContext<*>.transformToReceiverWithSmartCastInfo(receiver: ReceiverValue): ReceiverValueWithSmartCastInfo defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'transformToReceiverWithSmartCastInfo' @ [435:52] ==> public fun ResolutionContext<*>.transformToReceiverWithSmartCastInfo(receiver: ReceiverValue): ReceiverValueWithSmartCastInfo defined in org.jetbrains.kotlin.resolve.calls.tower in file NewResolutionOldInference.kt[SimpleFunctionDescriptorImpl]
 
 'oldReceiver' @ [435:89] ==> value-parameter oldReceiver: Receiver? defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.resolveExplicitReceiver[ValueParameterDescriptorImpl]
 
@@ -1468,8 +1464,8 @@ Inferred types:
 
 'get' @ [446:44] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(Call..Call?), (CallResolutionResult..CallResolutionResult?)>..ReadOnlySlice<(Call..Call?), (CallResolutionResult..CallResolutionResult?)>?), key: (Call..Call?)): CallResolutionResult? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Call
-    <V : (Any..Any?)> -> CallResolutionResult
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.CallResolutionResult..org.jetbrains.kotlin.resolve.calls.model.CallResolutionResult?)
 
 'ONLY_RESOLVED_CALL' @ [446:63] ==> public final val ONLY_RESOLVED_CALL: (WritableSlice<(Call..Call?), (CallResolutionResult..CallResolutionResult?)>..WritableSlice<(Call..Call?), (CallResolutionResult..CallResolutionResult?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1674,7 +1670,7 @@ Inferred types:
 
 'valueExpression' @ [502:13] ==> val valueExpression: KtExpression defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.resolveValueArgument[LocalVariableDescriptor]
 
-'initializeBlockInfo' @ [503:29] ==> public fun initializeBlockInfo(blockExpression: KtBlockExpression, trace: BindingTrace): NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'initializeBlockInfo' @ [503:29] ==> public fun initializeBlockInfo(blockExpression: KtBlockExpression, trace: BindingTrace): NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo defined in org.jetbrains.kotlin.resolve.calls.tower in file NewInferenceLastBlockExpressionHelper.kt[SimpleFunctionDescriptorImpl]
 
 'valueExpression' @ [503:49] ==> val valueExpression: KtExpression defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.resolveValueArgument[LocalVariableDescriptor]
 
@@ -2031,7 +2027,7 @@ Inferred types:
 
 'ktExpression' @ [570:86] ==> val ktExpression: Any defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.createValueArgument[LocalVariableDescriptor]
 
-'createSimplePSICallArgument' @ [572:50] ==> internal fun createSimplePSICallArgument(contextForArgument: ResolutionContext<*>, valueArgument: ValueArgument, typeInfoForArgument: KotlinTypeInfo): SimplePSIKotlinCallArgument? defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'createSimplePSICallArgument' @ [572:50] ==> internal fun createSimplePSICallArgument(contextForArgument: ResolutionContext<*>, valueArgument: ValueArgument, typeInfoForArgument: KotlinTypeInfo): SimplePSIKotlinCallArgument? defined in org.jetbrains.kotlin.resolve.calls.tower in file NewCallArguments.kt[SimpleFunctionDescriptorImpl]
 
 'callContext' @ [572:78] ==> value-parameter callContext: ResolutionContext<*> defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.createValueArgument[ValueParameterDescriptorImpl]
 
@@ -2075,8 +2071,8 @@ Inferred types:
 
 'get' @ [578:67] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?), key: (KtExpression..KtExpression?)): Qualifier? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Qualifier
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier..org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier?)
 
 'QUALIFIER' @ [578:86] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2143,7 +2139,7 @@ Inferred types:
 
 'callContext' @ [595:81] ==> value-parameter callContext: ResolutionContext<*> defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.createValueArgument[ValueParameterDescriptorImpl]
 
-'createSimplePSICallArgument' @ [596:16] ==> internal fun createSimplePSICallArgument(contextForArgument: ResolutionContext<*>, valueArgument: ValueArgument, typeInfoForArgument: KotlinTypeInfo): SimplePSIKotlinCallArgument? defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'createSimplePSICallArgument' @ [596:16] ==> internal fun createSimplePSICallArgument(contextForArgument: ResolutionContext<*>, valueArgument: ValueArgument, typeInfoForArgument: KotlinTypeInfo): SimplePSIKotlinCallArgument? defined in org.jetbrains.kotlin.resolve.calls.tower in file NewCallArguments.kt[SimpleFunctionDescriptorImpl]
 
 'callContext' @ [596:44] ==> value-parameter callContext: ResolutionContext<*> defined in org.jetbrains.kotlin.resolve.calls.tower.PSICallResolver.createValueArgument[ValueParameterDescriptorImpl]
 

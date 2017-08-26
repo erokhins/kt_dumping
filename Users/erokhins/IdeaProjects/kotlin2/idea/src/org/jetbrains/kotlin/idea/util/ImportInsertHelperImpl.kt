@@ -592,13 +592,13 @@ Inferred types:
 
 'getDescriptorsFiltered' @ [237:22] ==> public fun MemberScope.getDescriptorsFiltered(kindFilter: DescriptorKindFilter = ..., nameFilter: (Name) -> Boolean = ...): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [237:45] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CLASSIFIERS' @ [237:66] ==> @field:JvmField public final val CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'filter' @ [238:22] ==> public inline fun <T> Iterable<DeclarationDescriptor>.filter(predicate: (DeclarationDescriptor) -> Boolean): List<DeclarationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DeclarationDescriptor
+
+'isVisible' @ [238:31] ==> local final fun isVisible(descriptor: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.util.ImportInsertHelperImpl.Importer.addStarImport[SimpleFunctionDescriptorImpl]
 
 'map' @ [239:22] ==> public inline fun <T, R> Iterable<DeclarationDescriptor>.map(transform: (DeclarationDescriptor) -> Name): List<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1170,5 +1170,5 @@ Inferred types:
 
 'java' @ [395:103] ==> public val <T> KClass<out KtFile>.java: Class<out KtFile> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtFile
+    <T> -> Captured(out KtFile)
 

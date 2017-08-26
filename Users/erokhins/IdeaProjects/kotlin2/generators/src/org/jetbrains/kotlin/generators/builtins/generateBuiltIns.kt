@@ -140,7 +140,7 @@
 
 'it' @ [74:76] ==> value-parameter it: PrintWriter defined in org.jetbrains.kotlin.generators.builtins.generateBuiltIns.generateBuiltIns.<anonymous>[ValueParameterDescriptorImpl]
 
-'generateBuiltIns' @ [78:5] ==> public fun generateBuiltIns(generate: (File, (PrintWriter) -> BuiltInsSourceGenerator) -> Unit): Unit defined in org.jetbrains.kotlin.generators.builtins.generateBuiltIns[SimpleFunctionDescriptorImpl]
+'generateBuiltIns' @ [78:5] ==> public fun generateBuiltIns(generate: (File, (PrintWriter) -> BuiltInsSourceGenerator) -> Unit): Unit defined in org.jetbrains.kotlin.generators.builtins.generateBuiltIns in file generateBuiltIns.kt[SimpleFunctionDescriptorImpl]
 
 'println' @ [79:9] ==> @InlineOnly public inline fun println(message: Any?): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 

@@ -2,13 +2,13 @@
 Inferred types:
     <T : (Any..Any?)> -> IdePlatformSupport
 
-'lazy' @ [52:32] ==> public fun <T> lazy(initializer: () -> Map<TargetPlatform, (IdePlatformSupport..IdePlatformSupport?)>): Lazy<Map<TargetPlatform, (IdePlatformSupport..IdePlatformSupport?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [52:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<TargetPlatform, (org.jetbrains.kotlin.caches.resolve.IdePlatformSupport..org.jetbrains.kotlin.caches.resolve.IdePlatformSupport?)>
+    <T> -> T
 
 'getExtensions' @ [53:24] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(IdePlatformSupport..IdePlatformSupport?)>): (Array<(IdePlatformSupport..IdePlatformSupport?)>..Array<out (IdePlatformSupport..IdePlatformSupport?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IdePlatformSupport
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.caches.resolve.IdePlatformSupport..org.jetbrains.kotlin.caches.resolve.IdePlatformSupport?)
 
 'EP_NAME' @ [53:38] ==> public final val EP_NAME: ExtensionPointName<(IdePlatformSupport..IdePlatformSupport?)> defined in org.jetbrains.kotlin.caches.resolve.IdePlatformSupport.Companion[PropertyDescriptorImpl]
 
@@ -21,13 +21,13 @@ Inferred types:
 
 'platform' @ [53:64] ==> public abstract val platform: TargetPlatform defined in org.jetbrains.kotlin.caches.resolve.IdePlatformSupport[PropertyDescriptorImpl]
 
-'lazy' @ [56:24] ==> public fun <T> lazy(initializer: () -> Map<TargetPlatform, AnalyzerFacade>): Lazy<Map<TargetPlatform, AnalyzerFacade>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [56:24] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<TargetPlatform, AnalyzerFacade>
+    <T> -> T
 
 'getExtensions' @ [57:24] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(IdePlatformSupport..IdePlatformSupport?)>): (Array<(IdePlatformSupport..IdePlatformSupport?)>..Array<out (IdePlatformSupport..IdePlatformSupport?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IdePlatformSupport
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.caches.resolve.IdePlatformSupport..org.jetbrains.kotlin.caches.resolve.IdePlatformSupport?)
 
 'EP_NAME' @ [57:38] ==> public final val EP_NAME: ExtensionPointName<(IdePlatformSupport..IdePlatformSupport?)> defined in org.jetbrains.kotlin.caches.resolve.IdePlatformSupport.Companion[PropertyDescriptorImpl]
 
@@ -57,7 +57,7 @@ Inferred types:
 
 'getExtensions' @ [62:31] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(IdePlatformSupport..IdePlatformSupport?)>): (Array<(IdePlatformSupport..IdePlatformSupport?)>..Array<out (IdePlatformSupport..IdePlatformSupport?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IdePlatformSupport
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.caches.resolve.IdePlatformSupport..org.jetbrains.kotlin.caches.resolve.IdePlatformSupport?)
 
 'EP_NAME' @ [62:45] ==> public final val EP_NAME: ExtensionPointName<(IdePlatformSupport..IdePlatformSupport?)> defined in org.jetbrains.kotlin.caches.resolve.IdePlatformSupport.Companion[PropertyDescriptorImpl]
 
@@ -110,8 +110,6 @@ Inferred types:
 'sdkContext' @ [84:54] ==> value-parameter sdkContext: GlobalContextImpl defined in org.jetbrains.kotlin.caches.resolve.JvmPlatformSupport.createBuiltIns[ValueParameterDescriptorImpl]
 
 'storageManager' @ [84:65] ==> public open val storageManager: LockBasedStorageManager defined in org.jetbrains.kotlin.context.GlobalContextImpl[DeserializedPropertyDescriptor]
-
-'DefaultBuiltIns' @ [84:86] ==> public companion object defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns[FakeCallableDescriptorForObject]
 
 'Instance' @ [84:102] ==> @JvmStatic public final val Instance: DefaultBuiltIns defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns.Companion[DeserializedPropertyDescriptor]
 

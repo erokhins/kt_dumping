@@ -128,7 +128,7 @@ Inferred types:
     <V> -> TypeParameterDescriptorImpl
     <R> -> TypeProjection
 
-'it' @ [53:9] ==> value-parameter it: Map.Entry<TypeParameterDescriptor, TypeParameterDescriptorImpl> defined in org.jetbrains.kotlin.codegen.state.patchTypeParametersForDefaultImplMethod.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [53:9] ==> value-parameter it: Map.Entry<(TypeParameterDescriptor..TypeParameterDescriptor?), TypeParameterDescriptorImpl> defined in org.jetbrains.kotlin.codegen.state.patchTypeParametersForDefaultImplMethod.<anonymous>[ValueParameterDescriptorImpl]
 
 'value' @ [53:12] ==> public abstract val value: TypeParameterDescriptorImpl defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 

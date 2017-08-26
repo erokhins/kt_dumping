@@ -54,8 +54,6 @@ Inferred types:
 
 'getAnnotationsJar' @ [90:41] ==> public open fun getAnnotationsJar(): (File..File?) defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 
-'MockLibraryUtil' @ [91:25] ==> public object MockLibraryUtil defined in org.jetbrains.kotlin.test[FakeCallableDescriptorForObject]
-
 'compileJavaFilesLibraryToJar' @ [91:41] ==> @JvmStatic @JvmOverloads public final fun compileJavaFilesLibraryToJar(sourcesPath: String, jarName: String, addSources: Boolean = ..., extraOptions: List<String> = ..., extraClasspath: List<String> = ...): File defined in org.jetbrains.kotlin.test.MockLibraryUtil[DeserializedSimpleFunctionDescriptor]
 
 'FOREIGN_ANNOTATIONS_SOURCES_PATH' @ [92:33] ==> public val FOREIGN_ANNOTATIONS_SOURCES_PATH: String defined in org.jetbrains.kotlin.checkers in file AbstractForeignAnnotationsTest.kt[PropertyDescriptorImpl]
@@ -76,11 +74,7 @@ Inferred types:
 
 'LanguageVersionSettingsImpl' @ [98:39] ==> @JvmOverloads public constructor LanguageVersionSettingsImpl(languageVersion: LanguageVersion, apiVersion: ApiVersion, analysisFlags: Map<AnalysisFlag<*>, Any?> = ..., specificFeatures: Map<LanguageFeature, LanguageFeature.State> = ...) defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[DeserializedClassConstructorDescriptor]
 
-'LanguageVersion' @ [99:21] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'LATEST_STABLE' @ [99:37] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
-
-'ApiVersion' @ [99:52] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [99:63] ==> @field:JvmField public final val LATEST_STABLE: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -92,8 +86,6 @@ Inferred types:
 'AnalysisFlag' @ [99:84] ==> public companion object Flags defined in org.jetbrains.kotlin.config.AnalysisFlag[FakeCallableDescriptorForObject]
 
 'jsr305GlobalState' @ [99:97] ==> @JvmStatic public final val jsr305GlobalState: AnalysisFlag<Jsr305State> defined in org.jetbrains.kotlin.config.AnalysisFlag.Flags[DeserializedPropertyDescriptor]
-
-'Jsr305State' @ [99:118] ==> public companion object defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
 
 'ENABLE' @ [99:130] ==> enum entry ENABLE defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
 
@@ -143,8 +135,6 @@ Inferred types:
 
 'annotationText' @ [119:17] ==> value-parameter annotationText: String defined in org.jetbrains.kotlin.jvm.compiler.TypeQualifierAnnotationResolverTest.assertMethodHasUnwrappedAnnotation[ValueParameterDescriptorImpl]
 
-'DescriptorRenderer' @ [120:17] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'withOptions' @ [120:36] ==> public final fun withOptions(changeOptions: DescriptorRendererOptions.() -> Unit): DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedSimpleFunctionDescriptor]
 
 'annotationArgumentsRenderingPolicy' @ [121:21] ==> public abstract var annotationArgumentsRenderingPolicy: AnnotationArgumentsRenderingPolicy defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptions[DeserializedPropertyDescriptor]
@@ -188,7 +178,11 @@ Inferred types:
 
 'typeQualifierResolver' @ [135:18] ==> value-parameter typeQualifierResolver: AnnotationTypeQualifierResolver defined in org.jetbrains.kotlin.jvm.compiler.TypeQualifierAnnotationResolverTest.findSingleTypeQualifierAnnotationOnMethod[ValueParameterDescriptorImpl]
 
+'resolveTypeQualifierAnnotation' @ [135:41] ==> public final fun resolveTypeQualifierAnnotation(annotationDescriptor: AnnotationDescriptor): AnnotationDescriptor? defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver[DeserializedSimpleFunctionDescriptor]
+
 'also' @ [136:14] ==> @InlineOnly @SinceKotlin public inline fun <T> AnnotationDescriptor?.also(block: (AnnotationDescriptor?) -> Unit): AnnotationDescriptor? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AnnotationDescriptor?
+
+'assertNotNull' @ [136:21] ==> public open fun assertNotNull(p0: (Any..Any?)): Unit defined in org.jetbrains.kotlin.test.testFramework.KtUsefulTestCase[JavaMethodDescriptor]
 

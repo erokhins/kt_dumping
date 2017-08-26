@@ -170,15 +170,11 @@ Inferred types:
 
 'readText' @ [118:35] ==> public fun File.readText(charset: Charset = ...): String defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
-'Charsets' @ [118:44] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
-
 'UTF_8' @ [118:53] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 
 'replace' @ [118:60] ==> public fun String.replace(oldValue: String, newValue: String, ignoreCase: Boolean = ...): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 '+' @ [119:17] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
-
-'JsMetadataVersion' @ [119:23] ==> public companion object defined in org.jetbrains.kotlin.utils.JsMetadataVersion[FakeCallableDescriptorForObject]
 
 'INSTANCE' @ [119:41] ==> @field:JvmField public final val INSTANCE: JsMetadataVersion defined in org.jetbrains.kotlin.utils.JsMetadataVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -189,8 +185,6 @@ Inferred types:
 'JsMetadataVersion' @ [120:23] ==> public constructor JsMetadataVersion(vararg numbers: Int) defined in org.jetbrains.kotlin.utils.JsMetadataVersion[DeserializedClassConstructorDescriptor]
 
 'toInteger' @ [120:51] ==> public final fun toInteger(): Int defined in org.jetbrains.kotlin.utils.JsMetadataVersion[DeserializedSimpleFunctionDescriptor]
-
-'Charsets' @ [121:12] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
 
 'UTF_8' @ [121:21] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 
@@ -330,7 +324,7 @@ Inferred types:
 
 'assertEmpty' @ [173:9] ==> protected/*protected static*/ open fun <T : (Any..Any?)> assertEmpty(p0: (String..String?), p1: (MutableCollection<(DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)): Unit defined in org.jetbrains.kotlin.test.TestCaseWithTmpdir[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DeclarationDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 '+' @ [173:21] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
@@ -858,8 +852,6 @@ Inferred types:
 'component2' @ [398:39] ==> public final operator fun component2(): Int defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
 'stripSuspensionMarksToImitateLegacyCompiler' @ [398:57] ==> private final fun stripSuspensionMarksToImitateLegacyCompiler(bytes: ByteArray): Pair<ByteArray, Int> defined in org.jetbrains.kotlin.jvm.compiler.CompileKotlinAgainstCustomBinariesTest.Companion[SimpleFunctionDescriptorImpl]
-
-'WrongBytecodeVersionTest' @ [399:25] ==> public companion object defined in org.jetbrains.kotlin.cli.WrongBytecodeVersionTest[FakeCallableDescriptorForObject]
 
 'transformMetadataInClassFile' @ [399:50] ==> public final fun transformMetadataInClassFile(bytes: ByteArray, transform: (fieldName: String, value: Any?) -> Any?): ByteArray defined in org.jetbrains.kotlin.cli.WrongBytecodeVersionTest.Companion[SimpleFunctionDescriptorImpl]
 

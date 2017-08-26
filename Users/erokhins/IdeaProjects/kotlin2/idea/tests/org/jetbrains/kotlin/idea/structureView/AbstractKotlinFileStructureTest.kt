@@ -8,7 +8,7 @@
 
 'myFixture' @ [40:9] ==> protected/*protected and package*/ final var myFixture: (JavaCodeInsightTestFixture..JavaCodeInsightTestFixture?) defined in org.jetbrains.kotlin.idea.structureView.AbstractKotlinFileStructureTest[JavaPropertyDescriptor]
 
-'configureWithExtraFile' @ [40:19] ==> public fun CodeInsightTestFixture.configureWithExtraFile(path: String, vararg extraNameParts: String = ..., relativePaths: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'configureWithExtraFile' @ [40:19] ==> public fun CodeInsightTestFixture.configureWithExtraFile(path: String, vararg extraNameParts: String = ..., relativePaths: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test in file ideaTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'path' @ [40:42] ==> value-parameter path: String defined in org.jetbrains.kotlin.idea.structureView.AbstractKotlinFileStructureTest.doTest[ValueParameterDescriptorImpl]
 

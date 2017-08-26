@@ -91,7 +91,7 @@ Inferred types:
 Inferred types:
     <T> -> UsageInfo
 
-'collectOuterInstanceReferences' @ [83:20] ==> public fun collectOuterInstanceReferences(member: KtNamedDeclaration): List<OuterInstanceReferenceUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'collectOuterInstanceReferences' @ [83:20] ==> public fun collectOuterInstanceReferences(member: KtNamedDeclaration): List<OuterInstanceReferenceUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'classToMove' @ [83:51] ==> val classToMove: KtClass defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveDeclarationsDelegate.NestedClass.findInternalUsages[LocalVariableDescriptor]
 

@@ -1,6 +1,6 @@
-'lazy' @ [43:52] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> MemberScope): Lazy<MemberScope> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [43:52] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MemberScope
+    <T> -> T
 
 'PUBLICATION' @ [43:78] ==> enum entry PUBLICATION defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -12,9 +12,9 @@ Inferred types:
 
 'memberScope' @ [44:51] ==> public abstract val memberScope: MemberScope defined in org.jetbrains.kotlin.descriptors.PackageViewDescriptor[DeserializedPropertyDescriptor]
 
-'lazy' @ [47:47] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> MemberScope): Lazy<MemberScope> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [47:47] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MemberScope
+    <T> -> T
 
 'PUBLICATION' @ [47:73] ==> enum entry PUBLICATION defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -85,6 +85,8 @@ Inferred types:
 'arguments' @ [71:30] ==> val arguments: ArrayList<TypeProjection> defined in org.jetbrains.kotlin.backend.common.ReflectionTypes.getFunctionTypeArgumentProjections[LocalVariableDescriptor]
 
 'KotlinType' @ [71:41] ==> private constructor KotlinType() defined in org.jetbrains.kotlin.types.KotlinType[DeserializedClassConstructorDescriptor]
+
+'asTypeProjection' @ [71:53] ==> public fun KotlinType.asTypeProjection(): TypeProjection defined in org.jetbrains.kotlin.types.typeUtil[DeserializedSimpleFunctionDescriptor]
 
 'arguments' @ [73:9] ==> val arguments: ArrayList<TypeProjection> defined in org.jetbrains.kotlin.backend.common.ReflectionTypes.getFunctionTypeArgumentProjections[LocalVariableDescriptor]
 

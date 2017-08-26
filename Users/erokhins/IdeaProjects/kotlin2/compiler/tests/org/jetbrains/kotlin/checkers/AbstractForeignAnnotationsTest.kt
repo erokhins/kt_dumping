@@ -4,8 +4,6 @@
 Inferred types:
     <T> -> File
 
-'MockLibraryUtil' @ [34:41] ==> public object MockLibraryUtil defined in org.jetbrains.kotlin.test[FakeCallableDescriptorForObject]
-
 'compileJvmLibraryToJar' @ [34:57] ==> @JvmStatic @JvmOverloads public final fun compileJvmLibraryToJar(sourcesPath: String, jarName: String, addSources: Boolean = ..., allowKotlinSources: Boolean = ..., extraOptions: List<String> = ..., extraClasspath: List<String> = ..., useJava9: Boolean = ...): File defined in org.jetbrains.kotlin.test.MockLibraryUtil[DeserializedSimpleFunctionDescriptor]
 
 'annotationsPath' @ [34:80] ==> protected open val annotationsPath: String defined in org.jetbrains.kotlin.checkers.AbstractForeignAnnotationsTest[PropertyDescriptorImpl]
@@ -19,8 +17,6 @@ Inferred types:
 'listOf' @ [39:13] ==> public fun <T> listOf(element: File): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
-
-'MockLibraryUtil' @ [39:20] ==> public object MockLibraryUtil defined in org.jetbrains.kotlin.test[FakeCallableDescriptorForObject]
 
 'compileJvmLibraryToJar' @ [39:36] ==> @JvmStatic @JvmOverloads public final fun compileJvmLibraryToJar(sourcesPath: String, jarName: String, addSources: Boolean = ..., allowKotlinSources: Boolean = ..., extraOptions: List<String> = ..., extraClasspath: List<String> = ..., useJava9: Boolean = ...): File defined in org.jetbrains.kotlin.test.MockLibraryUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -63,21 +59,13 @@ Inferred types:
 
 'hasWarningDirective' @ [57:31] ==> val hasWarningDirective: Boolean defined in org.jetbrains.kotlin.checkers.AbstractForeignAnnotationsTest.loadLanguageVersionSettings[LocalVariableDescriptor]
 
-'Jsr305State' @ [57:52] ==> public companion object defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
-
 'WARN' @ [57:64] ==> enum entry WARN defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
-
-'Jsr305State' @ [57:74] ==> public companion object defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
 
 'ENABLE' @ [57:86] ==> enum entry ENABLE defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
 
 'LanguageVersionSettingsImpl' @ [58:16] ==> @JvmOverloads public constructor LanguageVersionSettingsImpl(languageVersion: LanguageVersion, apiVersion: ApiVersion, analysisFlags: Map<AnalysisFlag<*>, Any?> = ..., specificFeatures: Map<LanguageFeature, LanguageFeature.State> = ...) defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[DeserializedClassConstructorDescriptor]
 
-'LanguageVersion' @ [58:44] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'LATEST_STABLE' @ [58:60] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
-
-'ApiVersion' @ [58:75] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [58:86] ==> @field:JvmField public final val LATEST_STABLE: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedPropertyDescriptor]
 

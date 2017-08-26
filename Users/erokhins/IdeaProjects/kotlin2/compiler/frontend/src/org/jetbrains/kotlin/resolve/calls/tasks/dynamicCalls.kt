@@ -18,11 +18,11 @@ Inferred types:
 
 'java' @ [50:35] ==> public val <T> KClass<out <no name provided>>.java: Class<out <no name provided>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> Captured(out <no name provided>)
 
 'simpleName' @ [50:40] ==> public final val <T : (Any..Any?)> Class<out <no name provided>>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> <no name provided>
+    <T : (Any..Any?)> -> Captured(out <no name provided>)
 
 '+' @ [50:52] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
@@ -130,11 +130,7 @@ Inferred types:
 
 'owner' @ [91:17] ==> value-parameter owner: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks.DynamicCallableDescriptors.createDynamicProperty[ValueParameterDescriptorImpl]
 
-'Annotations' @ [92:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [92:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [93:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [93:26] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -166,8 +162,6 @@ Inferred types:
 
 'propertyDescriptor' @ [113:60] ==> val propertyDescriptor: PropertyDescriptorImpl defined in org.jetbrains.kotlin.resolve.calls.tasks.DynamicCallableDescriptors.createDynamicProperty[LocalVariableDescriptor]
 
-'Annotations' @ [113:80] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [113:92] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'getter' @ [114:9] ==> val getter: PropertyGetterDescriptorImpl defined in org.jetbrains.kotlin.resolve.calls.tasks.DynamicCallableDescriptors.createDynamicProperty[LocalVariableDescriptor]
@@ -181,8 +175,6 @@ Inferred types:
 'createDefaultSetter' @ [115:40] ==> @NotNull public open fun createDefaultSetter(@NotNull p0: PropertyDescriptor, @NotNull p1: Annotations): PropertySetterDescriptorImpl defined in org.jetbrains.kotlin.resolve.DescriptorFactory[JavaMethodDescriptor]
 
 'propertyDescriptor' @ [115:60] ==> val propertyDescriptor: PropertyDescriptorImpl defined in org.jetbrains.kotlin.resolve.calls.tasks.DynamicCallableDescriptors.createDynamicProperty[LocalVariableDescriptor]
-
-'Annotations' @ [115:80] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [115:92] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -199,8 +191,6 @@ Inferred types:
 'create' @ [123:63] ==> @NotNull public open fun create(@NotNull p0: DeclarationDescriptor, @NotNull p1: Annotations, @NotNull p2: Name, @NotNull p3: CallableMemberDescriptor.Kind, @NotNull p4: SourceElement): SimpleFunctionDescriptorImpl defined in org.jetbrains.kotlin.descriptors.impl.SimpleFunctionDescriptorImpl[JavaMethodDescriptor]
 
 'owner' @ [124:17] ==> value-parameter owner: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks.DynamicCallableDescriptors.createDynamicFunction[ValueParameterDescriptorImpl]
-
-'Annotations' @ [125:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [125:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -232,8 +222,6 @@ Inferred types:
 
 'dynamicType' @ [135:17] ==> public final val dynamicType: DynamicType defined in org.jetbrains.kotlin.resolve.calls.tasks.DynamicCallableDescriptors[PropertyDescriptorImpl]
 
-'Modality' @ [136:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [136:26] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [137:30] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -263,8 +251,6 @@ Inferred types:
 
 'owner' @ [150:17] ==> value-parameter owner: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks.DynamicCallableDescriptors.createTypeParameters[ValueParameterDescriptorImpl]
 
-'Annotations' @ [151:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [151:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'INVARIANT' @ [153:26] ==> enum entry INVARIANT defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
@@ -292,8 +278,6 @@ Inferred types:
 'owner' @ [166:21] ==> value-parameter owner: FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks.DynamicCallableDescriptors.createValueParameters[ValueParameterDescriptorImpl]
 
 'index' @ [168:21] ==> val index: Int defined in org.jetbrains.kotlin.resolve.calls.tasks.DynamicCallableDescriptors.createValueParameters.addParameter[LocalVariableDescriptor]
-
-'Annotations' @ [169:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [169:33] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -344,8 +328,6 @@ Inferred types:
 'owner' @ [186:39] ==> value-parameter owner: FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks.DynamicCallableDescriptors.createValueParameters[ValueParameterDescriptorImpl]
 
 'builtIns' @ [186:45] ==> public val DeclarationDescriptor.builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
-
-'Annotations' @ [186:55] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [186:67] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

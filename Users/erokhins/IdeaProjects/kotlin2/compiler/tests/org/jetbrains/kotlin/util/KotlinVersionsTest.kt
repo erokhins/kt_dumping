@@ -62,6 +62,8 @@ Inferred types:
 
 'String' @ [48:75] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isEmpty' @ [48:83] ==> @InlineOnly public inline fun CharSequence.isEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'toInt' @ [48:93] ==> @InlineOnly public inline fun String.toInt(): Int defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'this' @ [48:102] ==> <this> defined in org.jetbrains.kotlin.util.KotlinVersionsTest.testVersionsAreConsistent.toVersionOrNull[ReceiverParameterDescriptorImpl]
@@ -137,8 +139,6 @@ Inferred types:
 'versions' @ [75:9] ==> val versions: ArrayList<Version> /* = ArrayList<Version> */ defined in org.jetbrains.kotlin.util.KotlinVersionsTest.testVersionsAreConsistent[LocalVariableDescriptor]
 
 'add' @ [75:18] ==> public open fun add(element: Version): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
-
-'LanguageVersion' @ [76:17] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [76:33] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -264,6 +264,8 @@ Inferred types:
 
 'Pom' @ [108:23] ==> public constructor Pom(path: String, version: String) defined in org.jetbrains.kotlin.util.KotlinVersionsTest.testMavenProjectVersionsAreEqual.Pom[ClassConstructorDescriptorImpl]
 
+'version' @ [108:28] ==> public final val version: String defined in org.jetbrains.kotlin.util.KotlinVersionsTest.testMavenProjectVersionsAreEqual.Pom[PropertyDescriptorImpl]
+
 'areEqual' @ [108:37] ==> private final fun Collection<Any>.areEqual(): Boolean defined in org.jetbrains.kotlin.util.KotlinVersionsTest[SimpleFunctionDescriptorImpl]
 
 'fail' @ [109:20] ==> public open fun fail(p0: (String..String?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
@@ -371,4 +373,6 @@ Inferred types:
 'first' @ [144:59] ==> public fun <T> Iterable<Any>.first(): Any defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Any
+
+'equals' @ [144:68] ==> public open operator fun equals(other: Any?): Boolean defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
 

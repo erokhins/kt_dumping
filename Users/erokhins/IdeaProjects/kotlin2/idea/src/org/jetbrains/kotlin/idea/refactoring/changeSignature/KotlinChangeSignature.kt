@@ -74,8 +74,6 @@ Inferred types:
 
 'baseDeclaration' @ [83:31] ==> val baseDeclaration: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignature.runSilentRefactoring[LocalVariableDescriptor]
 
-'KotlinChangeSignatureDialog' @ [85:17] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog[FakeCallableDescriptorForObject]
-
 'createRefactoringProcessorForSilentChangeSignature' @ [85:45] ==> public final fun createRefactoringProcessorForSilentChangeSignature(project: Project, commandName: String, method: KotlinMethodDescriptor, defaultValueContext: PsiElement): BaseRefactoringProcessor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangeSignatureDialog.Companion[SimpleFunctionDescriptorImpl]
 
 'project' @ [85:96] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignature[PropertyDescriptorImpl]
@@ -85,8 +83,6 @@ Inferred types:
 'descriptor' @ [85:118] ==> value-parameter descriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignature.runSilentRefactoring[ValueParameterDescriptorImpl]
 
 'defaultValueContext' @ [85:130] ==> public final val defaultValueContext: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignature[PropertyDescriptorImpl]
-
-'KotlinChangePropertySignatureDialog' @ [88:17] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangePropertySignatureDialog[FakeCallableDescriptorForObject]
 
 'createProcessorForSilentRefactoring' @ [88:53] ==> public final fun createProcessorForSilentRefactoring(project: Project, commandName: String, descriptor: KotlinMethodDescriptor): BaseRefactoringProcessor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangePropertySignatureDialog.Companion[SimpleFunctionDescriptorImpl]
 

@@ -107,6 +107,8 @@ Inferred types:
 Inferred types:
     <T> -> KtExpression
 
+'analyzeExpression' @ [83:119] ==> local final fun analyzeExpression(): BindingContext defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceWithAnnotationAnalyzer.analyzeOriginal[SimpleFunctionDescriptorImpl]
+
 'KtPsiFactory' @ [91:26] ==> @JvmOverloads public constructor KtPsiFactory(project: Project, markGenerated: Boolean = ...) defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedClassConstructorDescriptor]
 
 'resolutionFacade' @ [91:39] ==> value-parameter resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceWithAnnotationAnalyzer.analyzeClassifierReplacement[ValueParameterDescriptorImpl]
@@ -357,14 +359,20 @@ Inferred types:
     <T> -> String
     <R> -> FqNameUnsafe
 
+'FqNameUnsafe' @ [150:24] ==> public constructor FqNameUnsafe(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqNameUnsafe[JavaClassConstructorDescriptor]
+
 'filter' @ [151:18] ==> public inline fun <T> Iterable<FqNameUnsafe>.filter(predicate: (FqNameUnsafe) -> Boolean): List<FqNameUnsafe> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FqNameUnsafe
+
+'isSafe' @ [151:39] ==> public open fun isSafe(): Boolean defined in org.jetbrains.kotlin.name.FqNameUnsafe[JavaMethodDescriptor]
 
 'map' @ [152:18] ==> public inline fun <T, R> Iterable<FqNameUnsafe>.map(transform: (FqNameUnsafe) -> FqName): List<FqName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FqNameUnsafe
     <R> -> FqName
+
+'toSafe' @ [152:36] ==> @NotNull public open fun toSafe(): FqName defined in org.jetbrains.kotlin.name.FqNameUnsafe[JavaMethodDescriptor]
 
 'when (descriptor) {
             is PackageFragmentDescriptor -> {

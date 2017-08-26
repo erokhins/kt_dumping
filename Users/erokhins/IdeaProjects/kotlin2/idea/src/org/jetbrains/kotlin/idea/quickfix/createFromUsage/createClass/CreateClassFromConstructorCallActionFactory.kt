@@ -54,7 +54,7 @@ Inferred types:
 Inferred types:
     <T> -> ClassKind
 
-'getTargetParentsByCall' @ [46:29] ==> internal fun getTargetParentsByCall(call: Call, context: BindingContext): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTargetParentsByCall' @ [46:29] ==> internal fun getTargetParentsByCall(call: Call, context: BindingContext): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [46:52] ==> val call: Call defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
@@ -85,7 +85,7 @@ Inferred types:
 
 'fullCallExpr' @ [50:28] ==> val fullCallExpr: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
-'guessTypeForClass' @ [50:41] ==> internal fun KtExpression.guessTypeForClass(context: BindingContext, moduleDescriptor: ModuleDescriptor): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'guessTypeForClass' @ [50:41] ==> internal fun KtExpression.guessTypeForClass(context: BindingContext, moduleDescriptor: ModuleDescriptor): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [50:59] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
@@ -101,7 +101,7 @@ Inferred types:
 Inferred types:
     <T> -> PsiElement
 
-'getClassKindFilter' @ [51:58] ==> internal fun getClassKindFilter(expectedType: KotlinType, containingDeclaration: PsiElement): (ClassKind) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getClassKindFilter' @ [51:58] ==> internal fun getClassKindFilter(expectedType: KotlinType, containingDeclaration: PsiElement): (ClassKind) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'expectedType' @ [51:77] ==> val expectedType: KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
@@ -197,7 +197,7 @@ Inferred types:
 
 'context' @ [76:37] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
-'getTargetParentsByCall' @ [77:29] ==> internal fun getTargetParentsByCall(call: Call, context: BindingContext): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTargetParentsByCall' @ [77:29] ==> internal fun getTargetParentsByCall(call: Call, context: BindingContext): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [77:52] ==> val call: Call defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
@@ -208,7 +208,7 @@ Inferred types:
     <T> -> PsiElement
     <C : Collection<T>> -> List<PsiElement>
 
-'isInnerClassExpected' @ [78:21] ==> internal fun isInnerClassExpected(call: Call): Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'isInnerClassExpected' @ [78:21] ==> internal fun isInnerClassExpected(call: Call): Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [78:42] ==> val call: Call defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
@@ -284,7 +284,7 @@ Inferred types:
 
 'fullCallExpr' @ [92:28] ==> val fullCallExpr: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
-'guessTypeForClass' @ [92:41] ==> internal fun KtExpression.guessTypeForClass(context: BindingContext, moduleDescriptor: ModuleDescriptor): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'guessTypeForClass' @ [92:41] ==> internal fun KtExpression.guessTypeForClass(context: BindingContext, moduleDescriptor: ModuleDescriptor): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [92:59] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
@@ -310,7 +310,7 @@ Inferred types:
 Inferred types:
     <T> -> PsiElement
 
-'getClassKindFilter' @ [95:36] ==> internal fun getClassKindFilter(expectedType: KotlinType, containingDeclaration: PsiElement): (ClassKind) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getClassKindFilter' @ [95:36] ==> internal fun getClassKindFilter(expectedType: KotlinType, containingDeclaration: PsiElement): (ClassKind) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'expectedType' @ [95:55] ==> val expectedType: KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
@@ -325,19 +325,19 @@ Inferred types:
 
 'targetParents' @ [96:16] ==> val targetParents: List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
-'if (inAnnotationEntry) Collections.emptyList() else callExpr.getTypeInfoForTypeArguments()' @ [98:33] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<TypeInfo>..List<TypeInfo>?), elseBranch: (List<TypeInfo>..List<TypeInfo>?)): (List<TypeInfo>..List<TypeInfo>?)[SimpleFunctionDescriptorImpl]
+'if (inAnnotationEntry) Collections.emptyList() else callExpr.getTypeInfoForTypeArguments()' @ [98:33] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<TypeInfo>, elseBranch: List<TypeInfo>): List<TypeInfo>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.List<org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo>..kotlin.collections.List<org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo>?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<TypeInfo>
 
 'inAnnotationEntry' @ [98:37] ==> val inAnnotationEntry: Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
 'emptyList' @ [98:68] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeInfo..TypeInfo?)>..List<(TypeInfo..TypeInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo?)
 
 'callExpr' @ [98:85] ==> val callExpr: KtCallExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
-'getTypeInfoForTypeArguments' @ [98:94] ==> public fun KtCallElement.getTypeInfoForTypeArguments(): List<TypeInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getTypeInfoForTypeArguments' @ [98:94] ==> public fun KtCallElement.getTypeInfoForTypeArguments(): List<TypeInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'ClassInfo' @ [100:16] ==> public constructor ClassInfo(kind: ClassKind = ..., name: String, targetParents: List<PsiElement>, expectedTypeInfo: TypeInfo, inner: Boolean = ..., open: Boolean = ..., typeArguments: List<TypeInfo> = ..., parameterInfos: List<ParameterInfo> = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassInfo[ClassConstructorDescriptorImpl]
 
@@ -349,7 +349,7 @@ Inferred types:
 
 'inner' @ [104:25] ==> val inner: Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
-'typeArgumentInfos' @ [105:33] ==> val typeArgumentInfos: (List<TypeInfo>..List<TypeInfo>?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
+'typeArgumentInfos' @ [105:33] ==> val typeArgumentInfos: List<TypeInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 
 'parameterInfos' @ [106:34] ==> val parameterInfos: List<ParameterInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromConstructorCallActionFactory.extractFixData[LocalVariableDescriptor]
 

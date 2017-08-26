@@ -16,8 +16,6 @@
 
 'getReferencedNameAsName' @ [43:31] ==> public open fun getReferencedNameAsName(): Name defined in org.jetbrains.kotlin.psi.KtNameReferenceExpression[DeserializedSimpleFunctionDescriptor]
 
-'DataClassDescriptorResolver' @ [43:60] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
-
 'COPY_METHOD_NAME' @ [43:88] ==> public final val COPY_METHOD_NAME: Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[DeserializedPropertyDescriptor]
 
 'expression' @ [44:21] ==> value-parameter expression: KtCallExpression defined in org.jetbrains.kotlin.idea.inspections.CopyWithoutNamedArgumentsInspection.buildVisitor.<no name provided>.visitCallExpression[ValueParameterDescriptorImpl]
@@ -48,7 +46,7 @@ Inferred types:
 
 'dispatchReceiver' @ [48:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'type' @ [48:55] ==> public final val ReceiverValue.type: KotlinType[MyPropertyDescriptor]
 
@@ -66,7 +64,7 @@ Inferred types:
 
 'candidateDescriptor' @ [51:26] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'context' @ [51:49] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.inspections.CopyWithoutNamedArgumentsInspection.buildVisitor.<no name provided>.visitCallExpression[LocalVariableDescriptor]
 

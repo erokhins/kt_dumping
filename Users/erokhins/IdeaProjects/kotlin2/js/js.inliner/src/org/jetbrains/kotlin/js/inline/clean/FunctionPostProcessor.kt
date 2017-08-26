@@ -88,7 +88,7 @@ Inferred types:
 
 'optimizations' @ [40:30] ==> public final val optimizations: List<() -> Boolean> defined in org.jetbrains.kotlin.js.inline.clean.FunctionPostProcessor[PropertyDescriptorImpl]
 
-'fold' @ [40:44] ==> public inline fun <T, R> Iterable<() -> Boolean>.fold(initial: Boolean, operation: (Boolean, () -> Boolean) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [40:44] ==> public inline fun <T, R> Iterable<() -> Boolean>.fold(initial: Boolean, operation: (acc: Boolean, () -> Boolean) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Function0<Boolean>
     <R> -> Boolean

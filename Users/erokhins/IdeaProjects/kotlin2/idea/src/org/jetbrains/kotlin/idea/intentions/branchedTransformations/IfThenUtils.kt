@@ -441,7 +441,7 @@ Inferred types:
 
 'condition' @ [191:30] ==> val condition: KtOperationExpression defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.buildSelectTransformationData[LocalVariableDescriptor]
 
-'checkedExpression' @ [191:40] ==> private fun KtExpression.checkedExpression(): KtExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations[SimpleFunctionDescriptorImpl]
+'checkedExpression' @ [191:40] ==> private fun KtExpression.checkedExpression(): KtExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file IfThenUtils.kt[SimpleFunctionDescriptorImpl]
 
 'component1' @ [193:10] ==> public final operator fun component1(): KtExpression? defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 

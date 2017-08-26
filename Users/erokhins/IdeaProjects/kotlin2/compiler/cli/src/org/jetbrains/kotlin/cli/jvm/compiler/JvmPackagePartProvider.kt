@@ -4,7 +4,7 @@
 
 'SmartList' @ [38:65] ==> public constructor SmartList<E : (Any..Any?)>() defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ModuleMappingInfo
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.cli.jvm.compiler.JvmPackagePartProvider.ModuleMappingInfo..org.jetbrains.kotlin.cli.jvm.compiler.JvmPackagePartProvider.ModuleMappingInfo?)
 
 'getPackageParts' @ [41:34] ==> @Synchronized private final fun getPackageParts(packageFqName: String): Map<VirtualFile, PackageParts> defined in org.jetbrains.kotlin.cli.jvm.compiler.JvmPackagePartProvider[SimpleFunctionDescriptorImpl]
 
@@ -74,6 +74,8 @@ Inferred types:
 
 'packageParts' @ [53:70] ==> val packageParts: PackageParts defined in org.jetbrains.kotlin.cli.jvm.compiler.JvmPackagePartProvider.findPackageParts[LocalVariableDescriptor]
 
+'getMultifileFacadeName' @ [53:84] ==> public final fun getMultifileFacadeName(partShortName: String): String? defined in org.jetbrains.kotlin.load.kotlin.PackageParts[DeserializedSimpleFunctionDescriptor]
+
 'result' @ [55:16] ==> val result: LinkedHashSet<String> /* = LinkedHashSet<String> */ defined in org.jetbrains.kotlin.cli.jvm.compiler.JvmPackagePartProvider.findPackageParts[LocalVariableDescriptor]
 
 'toList' @ [55:23] ==> public fun <T> Iterable<String>.toList(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -92,6 +94,8 @@ Inferred types:
     <R> -> String
 
 'PackageParts' @ [59:59] ==> public constructor PackageParts(packageFqName: String) defined in org.jetbrains.kotlin.load.kotlin.PackageParts[DeserializedClassConstructorDescriptor]
+
+'metadataParts' @ [59:73] ==> public final val metadataParts: Set<String> defined in org.jetbrains.kotlin.load.kotlin.PackageParts[DeserializedPropertyDescriptor]
 
 'distinct' @ [59:88] ==> public fun <T> Iterable<String>.distinct(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -147,8 +151,6 @@ Inferred types:
 
 'type' @ [73:17] ==> val type: JavaRoot.RootType defined in org.jetbrains.kotlin.cli.jvm.compiler.JvmPackagePartProvider.addRoots[LocalVariableDescriptor]
 
-'JavaRoot' @ [73:25] ==> public companion object RootTypes defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot[FakeCallableDescriptorForObject]
-
 'BINARY' @ [73:43] ==> enum entry BINARY defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType[FakeCallableDescriptorForObject]
 
 'root' @ [74:17] ==> val root: VirtualFile defined in org.jetbrains.kotlin.cli.jvm.compiler.JvmPackagePartProvider.addRoots[LocalVariableDescriptor]
@@ -170,8 +172,6 @@ Inferred types:
 'name' @ [78:33] ==> public final val VirtualFile.name: String[MyPropertyDescriptor]
 
 'endsWith' @ [78:38] ==> public fun String.endsWith(suffix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'ModuleMapping' @ [78:47] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping[FakeCallableDescriptorForObject]
 
 'MAPPING_FILE_EXT' @ [78:61] ==> @field:JvmField public final val MAPPING_FILE_EXT: String defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping.Companion[DeserializedPropertyDescriptor]
 

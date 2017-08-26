@@ -1,6 +1,8 @@
 'KotlinLightCodeInsightFixtureTestCase' @ [32:32] ==> public constructor KotlinLightCodeInsightFixtureTestCase() defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCase[ClassConstructorDescriptorImpl]
 
-'VirtualFileFinder' @ [34:27] ==> public companion object SERVICE defined in org.jetbrains.kotlin.load.kotlin.VirtualFileFinder[FakeCallableDescriptorForObject]
+'?:' @ [34:27] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: VirtualFile?, right: VirtualFile): VirtualFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> VirtualFile
 
 'getInstance' @ [34:53] ==> public final fun getInstance(project: Project): VirtualFileFinder defined in org.jetbrains.kotlin.load.kotlin.VirtualFileFinder.SERVICE[DeserializedSimpleFunctionDescriptor]
 
@@ -36,7 +38,7 @@
 
 'stubTreeFromDecompiledText' @ [39:28] ==> val stubTreeFromDecompiledText: raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?) defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.ClsStubConsistencyTest.doTest[LocalVariableDescriptor]
 
-'serializeToString' @ [39:55] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'serializeToString' @ [39:55] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file AbstractClsStubBuilderTest.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinClsStubBuilder' @ [41:24] ==> public constructor KotlinClsStubBuilder() defined in org.jetbrains.kotlin.idea.decompiler.classFile.KotlinClsStubBuilder[DeserializedClassConstructorDescriptor]
 
@@ -50,9 +52,9 @@
 
 'expectedText' @ [42:29] ==> val expectedText: String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.ClsStubConsistencyTest.doTest[LocalVariableDescriptor]
 
-'fileStub' @ [42:43] ==> val fileStub: PsiFileStub<out (PsiFile..PsiFile?)> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.ClsStubConsistencyTest.doTest[LocalVariableDescriptor]
+'fileStub' @ [42:43] ==> val fileStub: PsiFileStub<*> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.ClsStubConsistencyTest.doTest[LocalVariableDescriptor]
 
-'serializeToString' @ [42:52] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'serializeToString' @ [42:52] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file AbstractClsStubBuilderTest.kt[SimpleFunctionDescriptorImpl]
 
 'INSTANCE' @ [45:113] ==> @NotNull public final val INSTANCE: KotlinWithJdkAndRuntimeLightProjectDescriptor defined in org.jetbrains.kotlin.idea.test.KotlinWithJdkAndRuntimeLightProjectDescriptor[JavaPropertyDescriptor]
 

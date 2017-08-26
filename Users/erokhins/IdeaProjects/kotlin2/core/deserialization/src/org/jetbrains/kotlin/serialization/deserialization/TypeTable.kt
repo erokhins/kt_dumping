@@ -1,7 +1,7 @@
-'run' @ [22:38] ==> @InlineOnly public inline fun <T, R> TypeTable.run(block: TypeTable.() -> (List<(ProtoBuf.Type..ProtoBuf.Type?)>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?)): (List<(ProtoBuf.Type..ProtoBuf.Type?)>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'run' @ [22:38] ==> @InlineOnly public inline fun <T, R> TypeTable.run(block: TypeTable.() -> List<ProtoBuf.Type>): List<ProtoBuf.Type> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TypeTable
-    <R> -> (kotlin.collections.List<(org.jetbrains.kotlin.serialization.ProtoBuf.Type..org.jetbrains.kotlin.serialization.ProtoBuf.Type?)>..kotlin.collections.List<(org.jetbrains.kotlin.serialization.ProtoBuf.Type..org.jetbrains.kotlin.serialization.ProtoBuf.Type?)>?)
+    <R> -> List<Type>
 
 'typeTable' @ [23:29] ==> value-parameter typeTable: ProtoBuf.TypeTable defined in org.jetbrains.kotlin.serialization.deserialization.TypeTable.<init>[ValueParameterDescriptorImpl]
 
@@ -16,9 +16,9 @@ Inferred types:
                 else type
             }
         }
-        else originalTypes' @ [24:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<(ProtoBuf.Type..ProtoBuf.Type?)>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?), elseBranch: (List<(ProtoBuf.Type..ProtoBuf.Type?)>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?)): (List<(ProtoBuf.Type..ProtoBuf.Type?)>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?)[SimpleFunctionDescriptorImpl]
+        else originalTypes' @ [24:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<ProtoBuf.Type>, elseBranch: List<ProtoBuf.Type>): List<ProtoBuf.Type>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.List<(org.jetbrains.kotlin.serialization.ProtoBuf.Type..org.jetbrains.kotlin.serialization.ProtoBuf.Type?)>..kotlin.collections.List<(org.jetbrains.kotlin.serialization.ProtoBuf.Type..org.jetbrains.kotlin.serialization.ProtoBuf.Type?)>?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<Type>
 
 'typeTable' @ [24:13] ==> value-parameter typeTable: ProtoBuf.TypeTable defined in org.jetbrains.kotlin.serialization.deserialization.TypeTable.<init>[ValueParameterDescriptorImpl]
 

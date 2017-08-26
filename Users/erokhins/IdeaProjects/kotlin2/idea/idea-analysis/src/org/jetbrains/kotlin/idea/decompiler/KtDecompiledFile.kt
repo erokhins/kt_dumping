@@ -50,7 +50,7 @@ Inferred types:
 
 'findElementOfClassAtRange' @ [49:28] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtRange(@NotNull p0: PsiFile, p1: Int, p2: Int, @NotNull p3: Class<(KtDeclaration..KtDeclaration?)>): KtDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
 'this@KtDecompiledFile' @ [49:54] ==> <this> defined in org.jetbrains.kotlin.idea.decompiler.KtDecompiledFile[LazyClassReceiverParameterDescriptor]
 

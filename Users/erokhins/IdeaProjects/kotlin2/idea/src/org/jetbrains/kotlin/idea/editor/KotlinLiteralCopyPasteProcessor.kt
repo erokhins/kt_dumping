@@ -936,7 +936,7 @@ Inferred types:
 
 '-' @ [249:35] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'yield' @ [250:29] ==> public abstract suspend fun yield(value: TemplateChunk): Unit defined in kotlin.coroutines.experimental.SequenceBuilder[DeserializedSimpleFunctionDescriptor]
+'yield' @ [250:29] ==> public abstract suspend fun yield(value: ~T): Unit defined in kotlin.coroutines.experimental.SequenceBuilder[DeserializedSimpleFunctionDescriptor]
 
 'EntryChunk' @ [250:35] ==> public constructor EntryChunk(text: String) defined in org.jetbrains.kotlin.idea.editor.EntryChunk[ClassConstructorDescriptorImpl]
 

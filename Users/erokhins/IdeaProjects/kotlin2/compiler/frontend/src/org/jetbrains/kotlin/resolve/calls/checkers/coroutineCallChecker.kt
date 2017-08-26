@@ -10,7 +10,7 @@ Inferred types:
 
 'candidateDescriptor' @ [47:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 '!' @ [48:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -84,7 +84,7 @@ Inferred types:
 
 'call' @ [59:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [59:53] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -133,7 +133,7 @@ Inferred types:
 
 'it' @ [64:62] ==> value-parameter it: HierarchicalScope defined in org.jetbrains.kotlin.resolve.calls.checkers.CoroutineSuspendCallChecker.check.<anonymous>[ValueParameterDescriptorImpl]
 
-'isScopeForDefaultParameterValuesOf' @ [64:65] ==> private fun HierarchicalScope.isScopeForDefaultParameterValuesOf(enclosingSuspendFunction: FunctionDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.calls.checkers[SimpleFunctionDescriptorImpl]
+'isScopeForDefaultParameterValuesOf' @ [64:65] ==> private fun HierarchicalScope.isScopeForDefaultParameterValuesOf(enclosingSuspendFunction: FunctionDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.calls.checkers in file coroutineCallChecker.kt[SimpleFunctionDescriptorImpl]
 
 'enclosingSuspendFunction' @ [64:100] ==> val enclosingSuspendFunction: FunctionDescriptor? defined in org.jetbrains.kotlin.resolve.calls.checkers.CoroutineSuspendCallChecker.check[LocalVariableDescriptor]
 
@@ -155,8 +155,8 @@ Inferred types:
 
 'record' @ [68:31] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(Call..Call?), (FunctionDescriptor..FunctionDescriptor?)>..WritableSlice<(Call..Call?), (FunctionDescriptor..FunctionDescriptor?)>?), key: (Call..Call?), value: (FunctionDescriptor..FunctionDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Call
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'ENCLOSING_SUSPEND_FUNCTION_FOR_SUSPEND_FUNCTION_CALL' @ [68:53] ==> public final val ENCLOSING_SUSPEND_FUNCTION_FOR_SUSPEND_FUNCTION_CALL: (WritableSlice<(Call..Call?), (FunctionDescriptor..FunctionDescriptor?)>..WritableSlice<(Call..Call?), (FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -164,7 +164,7 @@ Inferred types:
 
 'call' @ [68:120] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'enclosingSuspendFunction' @ [68:126] ==> val enclosingSuspendFunction: FunctionDescriptor? defined in org.jetbrains.kotlin.resolve.calls.checkers.CoroutineSuspendCallChecker.check[LocalVariableDescriptor]
 
@@ -194,7 +194,7 @@ Inferred types:
 
 'candidateDescriptor' @ [73:101] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'this' @ [80:9] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.checkers.isScopeForDefaultParameterValuesOf[ReceiverParameterDescriptorImpl]
 
@@ -214,7 +214,7 @@ Inferred types:
 
 'candidateDescriptor' @ [84:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'descriptor' @ [85:13] ==> val descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.checkers.BuilderFunctionsCallChecker.check[LocalVariableDescriptor]
 
@@ -265,8 +265,6 @@ Inferred types:
 'languageVersionSettings' @ [93:11] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.calls.checkers.checkCoroutinesFeature[ValueParameterDescriptorImpl]
 
 'getFeatureSupport' @ [93:35] ==> public abstract fun getFeatureSupport(feature: LanguageFeature): LanguageFeature.State defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [93:53] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'Coroutines' @ [93:69] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -371,8 +369,8 @@ Inferred types:
 
 'get' @ [126:27] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [126:46] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -398,7 +396,7 @@ Inferred types:
 
 'dispatchReceiver' @ [135:65] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'enclosingSuspendReceiverValue' @ [137:9] ==> val enclosingSuspendReceiverValue: ReceiverValue defined in org.jetbrains.kotlin.resolve.calls.checkers.checkRestrictsSuspension[LocalVariableDescriptor]
 
@@ -406,13 +404,13 @@ Inferred types:
 
 'extensionReceiver' @ [137:65] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolvedCall' @ [138:9] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.resolve.calls.checkers.checkRestrictsSuspension[ValueParameterDescriptorImpl]
 
 'candidateDescriptor' @ [138:22] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'extensionReceiverParameter' @ [138:42] ==> public final val CallableDescriptor.extensionReceiverParameter: ReceiverParameterDescriptor?[MyPropertyDescriptor]
 

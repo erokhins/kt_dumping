@@ -5,7 +5,7 @@ Inferred types:
 
 'descriptor' @ [48:18] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.expression.translateAndAliasParameters[ValueParameterDescriptorImpl]
 
-'getCorrectTypeParameters' @ [48:29] ==> private fun FunctionDescriptor.getCorrectTypeParameters(): List<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.js.translate.expression[SimpleFunctionDescriptorImpl]
+'getCorrectTypeParameters' @ [48:29] ==> private fun FunctionDescriptor.getCorrectTypeParameters(): List<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.js.translate.expression in file FunctionTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [49:13] ==> val type: (TypeParameterDescriptor..TypeParameterDescriptor?) defined in org.jetbrains.kotlin.js.translate.expression.translateAndAliasParameters[LocalVariableDescriptor]
 

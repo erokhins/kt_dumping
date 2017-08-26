@@ -744,8 +744,6 @@ Inferred types:
 
 'returnType' @ [284:35] ==> public final val FunctionDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
-'Modality' @ [285:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [285:30] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PRIVATE' @ [286:34] ==> @NotNull public final val PRIVATE: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]

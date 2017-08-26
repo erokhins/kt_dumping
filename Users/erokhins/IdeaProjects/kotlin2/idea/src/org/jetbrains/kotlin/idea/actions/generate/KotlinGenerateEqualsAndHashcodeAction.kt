@@ -1,4 +1,4 @@
-'findDeclaredFunction' @ [57:12] ==> public tailrec fun ClassDescriptor.findDeclaredFunction(name: String, checkSuperClasses: Boolean, filter: (FunctionDescriptor) -> Boolean): FunctionDescriptor? defined in org.jetbrains.kotlin.idea.actions.generate[SimpleFunctionDescriptorImpl]
+'findDeclaredFunction' @ [57:12] ==> public tailrec fun ClassDescriptor.findDeclaredFunction(name: String, checkSuperClasses: Boolean, filter: (FunctionDescriptor) -> Boolean): FunctionDescriptor? defined in org.jetbrains.kotlin.idea.actions.generate in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'checkSupers' @ [57:43] ==> value-parameter checkSupers: Boolean defined in org.jetbrains.kotlin.idea.actions.generate.findDeclaredEquals[ValueParameterDescriptorImpl]
 
@@ -24,7 +24,7 @@ Inferred types:
 
 'isEmpty' @ [58:101] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'findDeclaredFunction' @ [63:12] ==> public tailrec fun ClassDescriptor.findDeclaredFunction(name: String, checkSuperClasses: Boolean, filter: (FunctionDescriptor) -> Boolean): FunctionDescriptor? defined in org.jetbrains.kotlin.idea.actions.generate[SimpleFunctionDescriptorImpl]
+'findDeclaredFunction' @ [63:12] ==> public tailrec fun ClassDescriptor.findDeclaredFunction(name: String, checkSuperClasses: Boolean, filter: (FunctionDescriptor) -> Boolean): FunctionDescriptor? defined in org.jetbrains.kotlin.idea.actions.generate in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'checkSupers' @ [63:45] ==> value-parameter checkSupers: Boolean defined in org.jetbrains.kotlin.idea.actions.generate.findDeclaredHashCode[ValueParameterDescriptorImpl]
 
@@ -110,8 +110,8 @@ Inferred types:
 
 'get' @ [92:48] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), p1: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [92:67] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -148,8 +148,8 @@ Inferred types:
 
 'get' @ [102:39] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [102:58] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -177,7 +177,7 @@ Inferred types:
 
 '!' @ [110:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'confirmMemberRewrite' @ [110:18] ==> public fun confirmMemberRewrite(targetClass: KtClass, vararg descriptors: FunctionDescriptor): Boolean defined in org.jetbrains.kotlin.idea.actions.generate[SimpleFunctionDescriptorImpl]
+'confirmMemberRewrite' @ [110:18] ==> public fun confirmMemberRewrite(targetClass: KtClass, vararg descriptors: FunctionDescriptor): Boolean defined in org.jetbrains.kotlin.idea.actions.generate in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [110:39] ==> value-parameter klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsAndHashcodeAction.prepareMembersInfo[ValueParameterDescriptorImpl]
 
@@ -215,7 +215,7 @@ Inferred types:
 
 'e' @ [119:31] ==> val e: IncorrectOperationException defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsAndHashcodeAction.prepareMembersInfo.<anonymous>[LocalVariableDescriptor]
 
-'getPropertiesToUseInGeneratedMember' @ [124:26] ==> public fun getPropertiesToUseInGeneratedMember(classOrObject: KtClassOrObject): List<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.actions.generate[SimpleFunctionDescriptorImpl]
+'getPropertiesToUseInGeneratedMember' @ [124:26] ==> public fun getPropertiesToUseInGeneratedMember(classOrObject: KtClassOrObject): List<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.actions.generate in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [124:62] ==> value-parameter klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsAndHashcodeAction.prepareMembersInfo[ValueParameterDescriptorImpl]
 
@@ -317,8 +317,6 @@ Inferred types:
 
 'supportsFeature' @ [144:50] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [144:66] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'BoundCallableReferences' @ [144:82] ==> enum entry BoundCallableReferences defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'defaultExpression' @ [144:115] ==> val defaultExpression: String defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsAndHashcodeAction.generateClassLiteralsNotEqual[LocalVariableDescriptor]
@@ -348,8 +346,6 @@ Inferred types:
 'languageVersionSettings' @ [154:26] ==> public val KtElement.languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[DeserializedPropertyDescriptor]
 
 'supportsFeature' @ [154:50] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [154:66] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'BoundCallableReferences' @ [154:82] ==> enum entry BoundCallableReferences defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

@@ -76,13 +76,13 @@
 
 'java' @ [55:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [55:51] ==> <this> defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue[LazyClassReceiverParameterDescriptor]
 
 'java' @ [55:63] ==> public val <T> KClass<out StrictBasicValue>.java: Class<out StrictBasicValue> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> StrictBasicValue
+    <T> -> Captured(out StrictBasicValue)
 
 '!' @ [56:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 

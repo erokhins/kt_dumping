@@ -1,6 +1,6 @@
-'lazy' @ [70:44] ==> public fun <T> lazy(initializer: () -> PseudocodeVariablesData): Lazy<PseudocodeVariablesData> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [70:44] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PseudocodeVariablesData
+    <T> -> T
 
 'PseudocodeVariablesData' @ [71:9] ==> public constructor PseudocodeVariablesData(pseudocode: Pseudocode, bindingContext: BindingContext) defined in org.jetbrains.kotlin.cfg.PseudocodeVariablesData[ClassConstructorDescriptorImpl]
 
@@ -183,8 +183,8 @@ Inferred types:
 
 'get' @ [177:63] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [177:82] ==> @SuppressWarnings public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -328,8 +328,8 @@ Inferred types:
 
 'record' @ [227:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>..WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>?), key: (KtElement..KtElement?), value: (Boolean..Boolean?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtElement
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'UNREACHABLE_CODE' @ [227:41] ==> public final val UNREACHABLE_CODE: (WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>..WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -565,8 +565,8 @@ Inferred types:
 
 'get' @ [313:19] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), key: (PropertyDescriptor..PropertyDescriptor?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'BACKING_FIELD_REQUIRED' @ [313:23] ==> public final val BACKING_FIELD_REQUIRED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -655,7 +655,7 @@ Inferred types:
 
 'record' @ [336:23] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), key: (PropertyDescriptor..PropertyDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'MUST_BE_LATEINIT' @ [336:30] ==> public final val MUST_BE_LATEINIT: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -873,8 +873,8 @@ Inferred types:
 
 'get' @ [403:19] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), key: (PropertyDescriptor..PropertyDescriptor?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'BACKING_FIELD_REQUIRED' @ [403:38] ==> public final val BACKING_FIELD_REQUIRED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -900,7 +900,7 @@ Inferred types:
 
 'expression' @ [409:33] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.checkValReassignment[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [409:44] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [409:44] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [409:60] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
 
@@ -1015,8 +1015,8 @@ Inferred types:
 
 'get' @ [432:40] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [432:59] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1045,8 +1045,8 @@ Inferred types:
 
 'get' @ [439:45] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>..ReadOnlySlice<(KtExpression..KtExpression?), (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>?), key: (KtExpression..KtExpression?)): (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>?..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>)
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>?)
 
 'AMBIGUOUS_REFERENCE_TARGET' @ [439:64] ==> public final val AMBIGUOUS_REFERENCE_TARGET: (WritableSlice<(KtExpression..KtExpression?), (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>..WritableSlice<(KtExpression..KtExpression?), (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1287,8 +1287,8 @@ Inferred types:
 
 'get' @ [497:22] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), key: (PropertyDescriptor..PropertyDescriptor?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'BACKING_FIELD_REQUIRED' @ [497:41] ==> public final val BACKING_FIELD_REQUIRED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1311,8 +1311,6 @@ Inferred types:
 'variableDescriptor' @ [504:13] ==> val variableDescriptor: VariableDescriptor? defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.checkInitializationForCustomSetter[LocalVariableDescriptor]
 
 'modality' @ [504:32] ==> public final val PropertyDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [504:44] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [504:53] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -1352,7 +1350,7 @@ Inferred types:
 
 'record' @ [516:19] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), key: (PropertyDescriptor..PropertyDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'IS_UNINITIALIZED' @ [516:26] ==> public final val IS_UNINITIALIZED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1391,7 +1389,7 @@ Inferred types:
 
 'record' @ [531:23] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), key: (PropertyDescriptor..PropertyDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'IS_UNINITIALIZED' @ [531:45] ==> public final val IS_UNINITIALIZED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1501,8 +1499,8 @@ Inferred types:
 
 'get' @ [561:31] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>..ReadOnlySlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>?), key: (VariableDescriptor..VariableDescriptor?)): CaptureKind? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptor
-    <V : (Any..Any?)> -> CaptureKind
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.CaptureKind..org.jetbrains.kotlin.types.expressions.CaptureKind?)
 
 'CAPTURED_IN_CLOSURE' @ [561:35] ==> public final val CAPTURED_IN_CLOSURE: (WritableSlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>..WritableSlice<(VariableDescriptor..VariableDescriptor?), (CaptureKind..CaptureKind?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1517,7 +1515,7 @@ Inferred types:
                     }
                     else {
                         usedValueExpressions.add(expressionInQuestion)
-                    }' @ [563:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Serializable?, elseBranch: Serializable?): Serializable?[SimpleFunctionDescriptorImpl]
+                    }' @ [563:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Serializable? /* = Serializable? */, elseBranch: Serializable? /* = Serializable? */): Serializable? /* = Serializable? */[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Serializable?
 
@@ -1914,8 +1912,8 @@ Inferred types:
 
 'get' @ [636:55] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [636:59] ==> @SuppressWarnings public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1965,8 +1963,6 @@ Inferred types:
 
 'supportsFeature' @ [645:59] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [645:75] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'SingleUnderscoreForParameterName' @ [645:91] ==> enum entry SingleUnderscoreForParameterName defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'MainFunctionDetector' @ [648:44] ==> public constructor MainFunctionDetector(bindingContext: BindingContext) defined in org.jetbrains.kotlin.idea.MainFunctionDetector[ClassConstructorDescriptorImpl]
@@ -1987,8 +1983,8 @@ Inferred types:
 
 'get' @ [651:31] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [651:35] ==> @SuppressWarnings public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2088,7 +2084,7 @@ Inferred types:
 
 'pseudocode' @ [679:9] ==> private final val pseudocode: Pseudocode defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
 
-'traverse' @ [679:20] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverse' @ [679:20] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'FORWARD' @ [679:44] ==> enum entry FORWARD defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.TraversalOrder[FakeCallableDescriptorForObject]
 
@@ -2143,7 +2139,7 @@ Inferred types:
 
 'pseudocode' @ [697:36] ==> private final val pseudocode: Pseudocode defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
 
-'traverse' @ [697:47] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverse' @ [697:47] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'FORWARD' @ [697:71] ==> enum entry FORWARD defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.TraversalOrder[FakeCallableDescriptorForObject]
 
@@ -2181,8 +2177,8 @@ Inferred types:
 
 'record' @ [704:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>..WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>?), key: (KtElement..KtElement?), value: (Boolean..Boolean?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtElement
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'USED_AS_EXPRESSION' @ [704:41] ==> public final val USED_AS_EXPRESSION: (WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>..WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2194,8 +2190,8 @@ Inferred types:
 
 'record' @ [705:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>..WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>?), key: (KtElement..KtElement?), value: (Boolean..Boolean?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtElement
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'USED_AS_RESULT_OF_LAMBDA' @ [705:41] ==> public final val USED_AS_RESULT_OF_LAMBDA: (WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>..WritableSlice<(KtElement..KtElement?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2205,7 +2201,7 @@ Inferred types:
 
 'pseudocode' @ [709:40] ==> private final val pseudocode: Pseudocode defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
 
-'traverse' @ [709:51] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverse' @ [709:51] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'FORWARD' @ [709:75] ==> enum entry FORWARD defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.TraversalOrder[FakeCallableDescriptorForObject]
 
@@ -2276,8 +2272,8 @@ Inferred types:
 
 'get' @ [731:44] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtExpression..KtExpression?), (KotlinType..KotlinType?)>?), key: (KtExpression..KtExpression?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'EXPECTED_EXPRESSION_TYPE' @ [731:48] ==> public final val EXPECTED_EXPRESSION_TYPE: (WritableSlice<(KtExpression..KtExpression?), (KotlinType..KotlinType?)>..WritableSlice<(KtExpression..KtExpression?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2359,7 +2355,7 @@ Inferred types:
 
 'pseudocode' @ [754:9] ==> private final val pseudocode: Pseudocode defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
 
-'traverse' @ [754:20] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverse' @ [754:20] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'FORWARD' @ [754:44] ==> enum entry FORWARD defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.TraversalOrder[FakeCallableDescriptorForObject]
 
@@ -2407,7 +2403,7 @@ Inferred types:
 
 'record' @ [763:39] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?), key: (KtWhenExpression..KtWhenExpression?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtWhenExpression
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtWhenExpression..org.jetbrains.kotlin.psi.KtWhenExpression?)
 
 'IMPLICIT_EXHAUSTIVE_WHEN' @ [763:46] ==> public final val IMPLICIT_EXHAUSTIVE_WHEN: (WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2681,8 +2677,6 @@ Inferred types:
 
 'subroutine' @ [824:15] ==> private final val subroutine: KtElement defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
 
-'ConstructorConsistencyChecker' @ [825:35] ==> public companion object defined in org.jetbrains.kotlin.cfg.ConstructorConsistencyChecker[FakeCallableDescriptorForObject]
-
 'check' @ [825:65] ==> @JvmStatic public final fun check(classOrObject: KtClassOrObject, trace: BindingTrace, pseudocode: Pseudocode, pseudocodeVariablesData: PseudocodeVariablesData): Unit defined in org.jetbrains.kotlin.cfg.ConstructorConsistencyChecker.Companion[SimpleFunctionDescriptorImpl]
 
 'subroutine' @ [825:71] ==> private final val subroutine: KtElement defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
@@ -2692,8 +2686,6 @@ Inferred types:
 'pseudocode' @ [825:90] ==> private final val pseudocode: Pseudocode defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
 
 'pseudocodeVariablesData' @ [825:102] ==> private final val pseudocodeVariablesData: PseudocodeVariablesData defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
-
-'ConstructorConsistencyChecker' @ [826:42] ==> public companion object defined in org.jetbrains.kotlin.cfg.ConstructorConsistencyChecker[FakeCallableDescriptorForObject]
 
 'check' @ [826:72] ==> @JvmStatic public final fun check(constructor: KtSecondaryConstructor, trace: BindingTrace, pseudocode: Pseudocode, pseudocodeVariablesData: PseudocodeVariablesData): Unit defined in org.jetbrains.kotlin.cfg.ConstructorConsistencyChecker.Companion[SimpleFunctionDescriptorImpl]
 
@@ -2709,8 +2701,8 @@ Inferred types:
 
 'get' @ [834:42] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [834:61] ==> @SuppressWarnings public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2736,7 +2728,7 @@ Inferred types:
 
 'resultingDescriptor' @ [845:49] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 '!' @ [846:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -2748,8 +2740,8 @@ Inferred types:
 
 'get' @ [851:27] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(Call..Call?), (FunctionDescriptor..FunctionDescriptor?)>..ReadOnlySlice<(Call..Call?), (FunctionDescriptor..FunctionDescriptor?)>?), key: (Call..Call?)): FunctionDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Call
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'ENCLOSING_SUSPEND_FUNCTION_FOR_SUSPEND_FUNCTION_CALL' @ [851:46] ==> public final val ENCLOSING_SUSPEND_FUNCTION_FOR_SUSPEND_FUNCTION_CALL: (WritableSlice<(Call..Call?), (FunctionDescriptor..FunctionDescriptor?)>..WritableSlice<(Call..Call?), (FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2757,7 +2749,7 @@ Inferred types:
 
 'call' @ [851:113] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'let' @ [852:23] ==> @InlineOnly public inline fun <T, R> FunctionDescriptor.let(block: (FunctionDescriptor) -> PsiElement?): PsiElement? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -2765,6 +2757,8 @@ Inferred types:
     <R> -> PsiElement?
 
 'DescriptorToSourceUtils' @ [852:27] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve in file DescriptorToSourceUtils.kt[FakeCallableDescriptorForObject]
+
+'descriptorToDeclaration' @ [852:52] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[SimpleFunctionDescriptorImpl]
 
 'instruction' @ [855:27] ==> value-parameter instruction: CallInstruction defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.checkSuspendCalls.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -2804,7 +2798,7 @@ Inferred types:
 
 'pseudocode' @ [863:9] ==> private final val pseudocode: Pseudocode defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
 
-'traverse' @ [863:20] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverse' @ [863:20] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'FORWARD' @ [863:44] ==> enum entry FORWARD defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.TraversalOrder[FakeCallableDescriptorForObject]
 
@@ -2848,7 +2842,7 @@ Inferred types:
 
 'it' @ [872:80] ==> value-parameter it: VariableAccessorDescriptor defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.checkSuspendCalls.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'candidateDescriptor' @ [872:85] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.candidateDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'candidateDescriptor' @ [872:85] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.candidateDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -2860,7 +2854,7 @@ Inferred types:
 
 'record' @ [877:19] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(FunctionDescriptor..FunctionDescriptor?), (Boolean..Boolean?)>..WritableSlice<(FunctionDescriptor..FunctionDescriptor?), (Boolean..Boolean?)>?), key: (FunctionDescriptor..FunctionDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> FunctionDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'CONTAINS_NON_TAIL_SUSPEND_CALLS' @ [877:41] ==> public final val CONTAINS_NON_TAIL_SUSPEND_CALLS: (WritableSlice<(FunctionDescriptor..FunctionDescriptor?), (Boolean..Boolean?)>..WritableSlice<(FunctionDescriptor..FunctionDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2893,7 +2887,7 @@ Inferred types:
 
 'resultingDescriptor' @ [891:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'functionDescriptor' @ [892:17] ==> val functionDescriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.markAndCheckRecursiveTailCalls.<anonymous>[LocalVariableDescriptor]
 
@@ -2905,7 +2899,7 @@ Inferred types:
 
 'call' @ [894:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueArguments' @ [894:35] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
@@ -3022,8 +3016,8 @@ Inferred types:
 
 'record' @ [926:27] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(Call..Call?), (TailRecursionKind..TailRecursionKind?)>..WritableSlice<(Call..Call?), (TailRecursionKind..TailRecursionKind?)>?), key: (Call..Call?), value: (TailRecursionKind..TailRecursionKind?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Call
-    <V : (Any..Any?)> -> TailRecursionKind
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.TailRecursionKind..org.jetbrains.kotlin.cfg.TailRecursionKind?)
 
 'TAIL_RECURSION_CALL' @ [926:34] ==> public final val TAIL_RECURSION_CALL: (WritableSlice<(Call..Call?), (TailRecursionKind..TailRecursionKind?)>..WritableSlice<(Call..Call?), (TailRecursionKind..TailRecursionKind?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -3033,7 +3027,7 @@ Inferred types:
 
 'call' @ [926:72] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'TAIL_CALL' @ [926:96] ==> enum entry TAIL_CALL defined in org.jetbrains.kotlin.cfg.TailRecursionKind[FakeCallableDescriptorForObject]
 
@@ -3081,7 +3075,7 @@ Inferred types:
 
 'getParentOfType' @ [940:13] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtExpression..KtExpression?)>..Class<out (KtExpression..KtExpression?)>?)): KtExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'element' @ [941:21] ==> value-parameter element: KtElement defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.isInsideTry[ValueParameterDescriptorImpl]
 
@@ -3107,7 +3101,7 @@ Inferred types:
 
 'subroutine' @ [946:63] ==> value-parameter subroutine: KtElement = ... defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.isTailCall[ValueParameterDescriptorImpl]
 
-'traverseFollowingInstructions' @ [947:16] ==> public fun traverseFollowingInstructions(rootInstruction: Instruction, visited: MutableSet<Instruction> = ..., order: TraversalOrder = ..., handler: ((Instruction) -> TraverseInstructionResult)?): Boolean defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverseFollowingInstructions' @ [947:16] ==> public fun traverseFollowingInstructions(rootInstruction: Instruction, visited: MutableSet<Instruction> = ..., order: TraversalOrder = ..., handler: ((Instruction) -> TraverseInstructionResult)?): Boolean defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [948:17] ==> <this> defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.isTailCall[ReceiverParameterDescriptorImpl]
 
@@ -3142,7 +3136,7 @@ Inferred types:
 
 'pseudocode' @ [960:9] ==> private final val pseudocode: Pseudocode defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider[PropertyDescriptorImpl]
 
-'traverse' @ [960:20] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverse' @ [960:20] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'FORWARD' @ [960:44] ==> enum entry FORWARD defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.TraversalOrder[FakeCallableDescriptorForObject]
 
@@ -3305,7 +3299,7 @@ Inferred types:
 
 'getParentOfType' @ [1049:17] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtDeclaration..KtDeclaration?)>..Class<out (KtDeclaration..KtDeclaration?)>?)): KtDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
 'element' @ [1049:33] ==> value-parameter element: KtElement defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.Companion.getElementParentDeclaration[ValueParameterDescriptorImpl]
 
@@ -3325,14 +3319,14 @@ Inferred types:
 
 'get' @ [1052:38] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [1052:42] ==> @SuppressWarnings public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
-'?:' @ [1053:40] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtDeclaration?, right: KtDeclaration?): KtDeclaration?[SimpleFunctionDescriptorImpl]
+'?:' @ [1053:40] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: (PsiElement..PsiElement?)): (PsiElement..PsiElement?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtDeclaration?
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'declaration' @ [1053:41] ==> value-parameter declaration: KtDeclaration? defined in org.jetbrains.kotlin.cfg.ControlFlowInformationProvider.Companion.getDeclarationDescriptorIncludingConstructors[ValueParameterDescriptorImpl]
 

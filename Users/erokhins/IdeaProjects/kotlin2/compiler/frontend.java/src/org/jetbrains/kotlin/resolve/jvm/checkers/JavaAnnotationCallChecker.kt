@@ -2,7 +2,7 @@
 
 'resultingDescriptor' @ [39:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'original' @ [39:68] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
@@ -32,7 +32,7 @@ Inferred types:
 
 'call' @ [48:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [48:49] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -42,8 +42,8 @@ Inferred types:
 
 'get' @ [49:34] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), p1: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [49:53] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -132,22 +132,22 @@ Inferred types:
 
 'valueArguments' @ [76:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'filter' @ [76:45] ==> public inline fun <K, V> Map<out ValueParameterDescriptor, (ResolvedValueArgument..ResolvedValueArgument?)>.filter(predicate: (Map.Entry<ValueParameterDescriptor, (ResolvedValueArgument..ResolvedValueArgument?)>) -> Boolean): Map<ValueParameterDescriptor, (ResolvedValueArgument..ResolvedValueArgument?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> ValueParameterDescriptor
     <V> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedValueArgument..org.jetbrains.kotlin.resolve.calls.model.ResolvedValueArgument?)
 
-'p' @ [78:21] ==> value-parameter p: Map.Entry<ValueParameterDescriptor, (ResolvedValueArgument..ResolvedValueArgument?)> defined in org.jetbrains.kotlin.resolve.jvm.checkers.JavaAnnotationCallChecker.Companion.getJavaAnnotationCallValueArgumentsThatShouldBeNamed.<anonymous>[ValueParameterDescriptorImpl]
+'p' @ [78:21] ==> value-parameter p: Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)> defined in org.jetbrains.kotlin.resolve.jvm.checkers.JavaAnnotationCallChecker.Companion.getJavaAnnotationCallValueArgumentsThatShouldBeNamed.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [78:23] ==> public abstract val key: ValueParameterDescriptor defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'key' @ [78:23] ==> public abstract val key: (ValueParameterDescriptor..ValueParameterDescriptor?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
 'name' @ [78:27] ==> public final val ValueParameterDescriptor.name: Name[MyPropertyDescriptor]
 
 'DEFAULT_ANNOTATION_MEMBER_NAME' @ [78:54] ==> public final val DEFAULT_ANNOTATION_MEMBER_NAME: (Name..Name?) defined in org.jetbrains.kotlin.load.java.JvmAnnotationNames[JavaPropertyDescriptor]
 
-'p' @ [79:21] ==> value-parameter p: Map.Entry<ValueParameterDescriptor, (ResolvedValueArgument..ResolvedValueArgument?)> defined in org.jetbrains.kotlin.resolve.jvm.checkers.JavaAnnotationCallChecker.Companion.getJavaAnnotationCallValueArgumentsThatShouldBeNamed.<anonymous>[ValueParameterDescriptorImpl]
+'p' @ [79:21] ==> value-parameter p: Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)> defined in org.jetbrains.kotlin.resolve.jvm.checkers.JavaAnnotationCallChecker.Companion.getJavaAnnotationCallValueArgumentsThatShouldBeNamed.<anonymous>[ValueParameterDescriptorImpl]
 
 'value' @ [79:23] ==> public abstract val value: (ResolvedValueArgument..ResolvedValueArgument?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
@@ -157,7 +157,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Boolean
 
-'p' @ [80:24] ==> value-parameter p: Map.Entry<ValueParameterDescriptor, (ResolvedValueArgument..ResolvedValueArgument?)> defined in org.jetbrains.kotlin.resolve.jvm.checkers.JavaAnnotationCallChecker.Companion.getJavaAnnotationCallValueArgumentsThatShouldBeNamed.<anonymous>[ValueParameterDescriptorImpl]
+'p' @ [80:24] ==> value-parameter p: Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)> defined in org.jetbrains.kotlin.resolve.jvm.checkers.JavaAnnotationCallChecker.Companion.getJavaAnnotationCallValueArgumentsThatShouldBeNamed.<anonymous>[ValueParameterDescriptorImpl]
 
 'value' @ [80:26] ==> public abstract val value: (ResolvedValueArgument..ResolvedValueArgument?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 

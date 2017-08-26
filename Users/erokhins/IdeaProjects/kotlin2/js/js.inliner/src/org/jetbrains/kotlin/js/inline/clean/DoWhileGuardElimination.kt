@@ -245,7 +245,7 @@ Inferred types:
 
 'accept' @ [156:34] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.inline.clean.DoWhileGuardElimination.perform.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'guard' @ [156:41] ==> value-parameter guard: JsLabel defined in org.jetbrains.kotlin.js.inline.clean.DoWhileGuardElimination.perform.<no name provided>.visit.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -279,7 +279,7 @@ Inferred types:
 
 'replaceMe' @ [168:25] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsContinue..JsContinue?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsContinue
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsContinue..org.jetbrains.kotlin.js.backend.ast.JsContinue?)
 
 'JsContinue' @ [168:35] ==> public constructor JsContinue(@Nullable p0: JsNameRef?) defined in org.jetbrains.kotlin.js.backend.ast.JsContinue[JavaClassConstructorDescriptor]
 
@@ -291,7 +291,7 @@ Inferred types:
 
 'accept' @ [173:11] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.inline.clean.DoWhileGuardElimination.perform.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'root' @ [173:18] ==> private final val root: JsStatement defined in org.jetbrains.kotlin.js.inline.clean.DoWhileGuardElimination[PropertyDescriptorImpl]
 

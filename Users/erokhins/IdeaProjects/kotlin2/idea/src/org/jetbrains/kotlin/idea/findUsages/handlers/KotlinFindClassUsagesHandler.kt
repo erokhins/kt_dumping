@@ -138,7 +138,7 @@ Inferred types:
 
 'FilteredQuery' @ [103:33] ==> public constructor FilteredQuery<T : (Any..Any?)>(@NotNull p0: Query<(PsiReference..PsiReference?)>, @NotNull p1: ((PsiReference..PsiReference?)) -> Boolean) defined in com.intellij.util.FilteredQuery[SamAdapterClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiReference
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
 
 'query' @ [103:47] ==> var query: (Query<(PsiReference..PsiReference?)>..Query<(PsiReference..PsiReference?)>?) defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindClassUsagesHandler.MySearcher.buildTaskList.<anonymous>[LocalVariableDescriptor]
 
@@ -198,7 +198,7 @@ Inferred types:
 
 'PsiElementProcessorAdapter' @ [120:25] ==> public constructor PsiElementProcessorAdapter<T : (PsiElement..PsiElement?)>(p0: (PsiElementProcessor<(PsiClass..PsiClass?)>..PsiElementProcessor<(PsiClass..PsiClass?)>?)) defined in com.intellij.psi.search.PsiElementProcessorAdapter[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiClass
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
 
 'PsiElementProcessor' @ [121:33] ==> public fun <T : (PsiElement..PsiElement?)> PsiElementProcessor(function: (PsiClass) -> Boolean): PsiElementProcessor<PsiClass> defined in com.intellij.psi.search[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -240,8 +240,6 @@ Inferred types:
 
 'isDerivedClasses' @ [126:127] ==> public final var isDerivedClasses: Boolean defined in org.jetbrains.kotlin.idea.findUsages.KotlinClassFindUsagesOptions[JavaPropertyDescriptor]
 
-'KotlinFindUsagesHandler' @ [127:49] ==> public companion object defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindUsagesHandler[FakeCallableDescriptorForObject]
-
 'processUsage' @ [127:73] ==> internal final fun processUsage(processor: Processor<UsageInfo>, element: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindUsagesHandler.Companion[SimpleFunctionDescriptorImpl]
 
 'processor' @ [127:86] ==> public final val processor: Processor<UsageInfo> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindClassUsagesHandler.MySearcher[PropertyDescriptorImpl]
@@ -272,7 +270,7 @@ Inferred types:
 
 'FilteredQuery' @ [144:31] ==> public constructor FilteredQuery<T : (Any..Any?)>(@NotNull p0: Query<(PsiReference..PsiReference?)>, @NotNull p1: ((PsiReference..PsiReference?)) -> Boolean) defined in com.intellij.util.FilteredQuery[SamAdapterClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiReference
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
 
 'usagesQuery' @ [144:45] ==> var usagesQuery: Query<(PsiReference..PsiReference?)> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindClassUsagesHandler.MySearcher.processClassReferencesLater[LocalVariableDescriptor]
 
@@ -301,7 +299,7 @@ Inferred types:
 
 'FilteredQuery' @ [148:31] ==> public constructor FilteredQuery<T : (Any..Any?)>(@NotNull p0: Query<(PsiReference..PsiReference?)>, @NotNull p1: ((PsiReference..PsiReference?)) -> Boolean) defined in com.intellij.util.FilteredQuery[SamAdapterClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiReference
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
 
 'usagesQuery' @ [148:45] ==> var usagesQuery: Query<(PsiReference..PsiReference?)> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindClassUsagesHandler.MySearcher.processClassReferencesLater[LocalVariableDescriptor]
 
@@ -323,7 +321,7 @@ Inferred types:
 
 'FilteredQuery' @ [151:31] ==> public constructor FilteredQuery<T : (Any..Any?)>(@NotNull p0: Query<(PsiReference..PsiReference?)>, @NotNull p1: ((PsiReference..PsiReference?)) -> Boolean) defined in com.intellij.util.FilteredQuery[SamAdapterClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiReference
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
 
 'usagesQuery' @ [151:45] ==> var usagesQuery: Query<(PsiReference..PsiReference?)> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindClassUsagesHandler.MySearcher.processClassReferencesLater[LocalVariableDescriptor]
 
@@ -383,7 +381,7 @@ Inferred types:
 
 'dispatchReceiver' @ [164:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'declarationDescriptor' @ [164:80] ==> public open val declarationDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.resolve.scopes.receivers.ImplicitClassReceiver[DeserializedPropertyDescriptor]
 
@@ -395,7 +393,7 @@ Inferred types:
 
 'extensionReceiver' @ [165:38] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'declarationDescriptor' @ [165:84] ==> public open val declarationDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.resolve.scopes.receivers.ImplicitClassReceiver[DeserializedPropertyDescriptor]
 
@@ -467,7 +465,7 @@ Inferred types:
 
 'emptyList' @ [187:48] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'getElementNames' @ [189:37] ==> @NotNull public open fun getElementNames(@NotNull p0: PsiElement): (MutableSet<(String..String?)>..Set<(String..String?)>) defined in com.intellij.find.findUsages.JavaFindUsagesHelper[JavaMethodDescriptor]
 

@@ -110,11 +110,11 @@ Inferred types:
 
 'java' @ [62:43] ==> public val <T> KClass<out ReflectJavaMember>.java: Class<out ReflectJavaMember> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ReflectJavaMember
+    <T> -> Captured(out ReflectJavaMember)
 
 'name' @ [62:48] ==> public final val <T : (Any..Any?)> Class<out ReflectJavaMember>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ReflectJavaMember
+    <T : (Any..Any?)> -> Captured(out ReflectJavaMember)
 
 'member' @ [62:62] ==> public abstract val member: Member defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaMember[PropertyDescriptorImpl]
 
@@ -122,7 +122,7 @@ Inferred types:
 
 'java' @ [72:54] ==> public val <T> KClass<out Member>.java: Class<out Member> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Member
+    <T> -> Captured(out Member)
 
 'methodOrConstructorClass' @ [75:13] ==> val methodOrConstructorClass: Class<out Member> defined in org.jetbrains.kotlin.load.java.structure.reflect.Java8ParameterNamesLoader.buildCache[LocalVariableDescriptor]
 

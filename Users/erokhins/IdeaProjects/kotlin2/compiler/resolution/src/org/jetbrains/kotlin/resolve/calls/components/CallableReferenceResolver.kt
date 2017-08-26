@@ -18,6 +18,8 @@ Inferred types:
 
 'Companion' @ [46:9] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferenceOverloadConflictResolver[FakeCallableDescriptorForObject]
 
+'createFlatSignature' @ [46:20] ==> private final fun createFlatSignature(candidate: CallableReferenceCandidate): FlatSignature<CallableReferenceCandidate> defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferenceOverloadConflictResolver.Companion[SimpleFunctionDescriptorImpl]
+
 'statelessCallbacks' @ [48:11] ==> value-parameter statelessCallbacks: KotlinResolutionStatelessCallbacks defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferenceOverloadConflictResolver.<init>[ValueParameterDescriptorImpl]
 
 'isDescriptorFromSource' @ [48:30] ==> public abstract fun isDescriptorFromSource(descriptor: CallableDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.calls.components.KotlinResolutionStatelessCallbacks[SimpleFunctionDescriptorImpl]
@@ -133,7 +135,7 @@ Inferred types:
 
 'csBuilder' @ [79:17] ==> value-parameter csBuilder: ConstraintSystemBuilder defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferenceResolver.processCallableReferenceArgument[ValueParameterDescriptorImpl]
 
-'checkCallableReference' @ [79:27] ==> public fun ConstraintSystemOperation.checkCallableReference(argument: CallableReferenceKotlinCallArgument, dispatchReceiver: CallableReceiver?, extensionReceiver: CallableReceiver?, candidateDescriptor: CallableDescriptor, reflectionCandidateType: UnwrappedType, expectedType: UnwrappedType?, ownerDescriptor: DeclarationDescriptor): Pair<FreshVariableNewTypeSubstitutor, KotlinCallDiagnostic?> defined in org.jetbrains.kotlin.resolve.calls.components[SimpleFunctionDescriptorImpl]
+'checkCallableReference' @ [79:27] ==> public fun ConstraintSystemOperation.checkCallableReference(argument: CallableReferenceKotlinCallArgument, dispatchReceiver: CallableReceiver?, extensionReceiver: CallableReceiver?, candidateDescriptor: CallableDescriptor, reflectionCandidateType: UnwrappedType, expectedType: UnwrappedType?, ownerDescriptor: DeclarationDescriptor): Pair<FreshVariableNewTypeSubstitutor, KotlinCallDiagnostic?> defined in org.jetbrains.kotlin.resolve.calls.components in file CallableReferenceResolution.kt[SimpleFunctionDescriptorImpl]
 
 'argument' @ [79:50] ==> val argument: CallableReferenceKotlinCallArgument defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferenceResolver.processCallableReferenceArgument[LocalVariableDescriptor]
 
@@ -258,7 +260,7 @@ Inferred types:
 
 'expectedType' @ [116:127] ==> value-parameter expectedType: UnwrappedType? defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferenceResolver.runRHSResolution[ValueParameterDescriptorImpl]
 
-'createCallableReferenceProcessor' @ [117:25] ==> public fun createCallableReferenceProcessor(factory: CallableReferencesCandidateFactory): ScopeTowerProcessor<CallableReferenceCandidate> defined in org.jetbrains.kotlin.resolve.calls.components[SimpleFunctionDescriptorImpl]
+'createCallableReferenceProcessor' @ [117:25] ==> public fun createCallableReferenceProcessor(factory: CallableReferencesCandidateFactory): ScopeTowerProcessor<CallableReferenceCandidate> defined in org.jetbrains.kotlin.resolve.calls.components in file CallableReferenceResolution.kt[SimpleFunctionDescriptorImpl]
 
 'factory' @ [117:58] ==> val factory: CallableReferencesCandidateFactory defined in org.jetbrains.kotlin.resolve.calls.components.CallableReferenceResolver.runRHSResolution[LocalVariableDescriptor]
 

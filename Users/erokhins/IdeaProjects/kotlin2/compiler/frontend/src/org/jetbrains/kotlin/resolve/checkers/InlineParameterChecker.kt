@@ -14,8 +14,8 @@
 
 'get' @ [39:58] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>..ReadOnlySlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>?), key: (KtParameter..KtParameter?)): VariableDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtParameter
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VALUE_PARAMETER' @ [39:77] ==> public final val VALUE_PARAMETER: (WritableSlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

@@ -31,11 +31,11 @@ Inferred types:
 
 'expectedInfos' @ [86:44] ==> public final val expectedInfos: Collection<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion[PropertyDescriptorImpl]
 
-'filterCallableExpected' @ [86:58] ==> public fun Collection<ExpectedInfo>.filterCallableExpected(): List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'filterCallableExpected' @ [86:58] ==> public fun Collection<ExpectedInfo>.filterCallableExpected(): List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [88:53] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> SmartCastCalculator): Lazy<SmartCastCalculator> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [88:53] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SmartCastCalculator
+    <T> -> T
 
 'NONE' @ [88:79] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -222,6 +222,10 @@ Inferred types:
     <T> -> DeclarationDescriptor
     <R> -> Set<DeclarationDescriptor>
 
+'setOf' @ [121:102] ==> public fun <T> setOf(element: DeclarationDescriptor): Set<DeclarationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> DeclarationDescriptor
+
 'orEmpty' @ [121:109] ==> @InlineOnly public inline fun <T> Set<DeclarationDescriptor>?.orEmpty(): Set<DeclarationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DeclarationDescriptor
@@ -353,7 +357,7 @@ Inferred types:
 
 'descriptor' @ [168:21] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.filterDescriptor[ValueParameterDescriptorImpl]
 
-'fuzzyTypesForSmartCompletion' @ [168:32] ==> public fun DeclarationDescriptor.fuzzyTypesForSmartCompletion(smartCastCalculator: SmartCastCalculator, callTypeAndReceiver: CallTypeAndReceiver<*, *>, resolutionFacade: ResolutionFacade, bindingContext: BindingContext): Collection<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'fuzzyTypesForSmartCompletion' @ [168:32] ==> public fun DeclarationDescriptor.fuzzyTypesForSmartCompletion(smartCastCalculator: SmartCastCalculator, callTypeAndReceiver: CallTypeAndReceiver<*, *>, resolutionFacade: ResolutionFacade, bindingContext: BindingContext): Collection<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'smartCastCalculator' @ [168:61] ==> public final val smartCastCalculator: SmartCastCalculator defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion[PropertyDescriptorImpl]
 
@@ -365,7 +369,7 @@ Inferred types:
 
 'types' @ [169:59] ==> val types: Collection<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.filterDescriptor[LocalVariableDescriptor]
 
-'matchExpectedInfo' @ [169:65] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'matchExpectedInfo' @ [169:65] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'expectedInfo' @ [169:83] ==> value-parameter expectedInfo: ExpectedInfo defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.filterDescriptor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -450,7 +454,7 @@ Inferred types:
 
 'putUserData' @ [197:39] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(SmartCompletionItemPriority..SmartCompletionItemPriority?)>, @Nullable p1: SmartCompletionItemPriority?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SmartCompletionItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority..org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority?)
 
 'SMART_COMPLETION_ITEM_PRIORITY_KEY' @ [197:51] ==> public val SMART_COMPLETION_ITEM_PRIORITY_KEY: Key<SmartCompletionItemPriority> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[PropertyDescriptorImpl]
 
@@ -738,7 +742,7 @@ Inferred types:
 
 'getUserData' @ [264:25] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Unit..Unit?)>): Unit? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'KEEP_OLD_ARGUMENT_LIST_ON_TAB_KEY' @ [264:37] ==> public val KEEP_OLD_ARGUMENT_LIST_ON_TAB_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -788,7 +792,7 @@ Inferred types:
 
 'prefixMatcher' @ [284:37] ==> private final val prefixMatcher: PrefixMatcher defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion[PropertyDescriptorImpl]
 
-'thisExpressionItems' @ [285:25] ==> public fun thisExpressionItems(bindingContext: BindingContext, position: KtExpression, prefix: String, resolutionFacade: ResolutionFacade): Collection<ThisItemLookupObject> defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'thisExpressionItems' @ [285:25] ==> public fun thisExpressionItems(bindingContext: BindingContext, position: KtExpression, prefix: String, resolutionFacade: ResolutionFacade): Collection<ThisItemLookupObject> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [285:45] ==> private final val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion[PropertyDescriptorImpl]
 
@@ -825,7 +829,7 @@ Inferred types:
 
 'types' @ [288:63] ==> val types: List<FuzzyType> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.addThisItems[LocalVariableDescriptor]
 
-'matchExpectedInfo' @ [288:69] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'matchExpectedInfo' @ [288:69] ==> public fun Collection<FuzzyType>.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'expectedInfo' @ [288:87] ==> value-parameter expectedInfo: ExpectedInfo defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.addThisItems.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -843,7 +847,7 @@ Inferred types:
 
 'item' @ [290:28] ==> val item: ThisItemLookupObject defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.addThisItems[LocalVariableDescriptor]
 
-'createLookupElement' @ [290:33] ==> public fun ThisItemLookupObject.createLookupElement(): (LookupElementBuilder..LookupElementBuilder?) defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'createLookupElement' @ [290:33] ==> public fun ThisItemLookupObject.createLookupElement(): (LookupElementBuilder..LookupElementBuilder?) defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'assignSmartCompletionPriority' @ [290:55] ==> public fun LookupElement.assignSmartCompletionPriority(priority: SmartCompletionItemPriority): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
@@ -983,7 +987,7 @@ Inferred types:
 
 'addTail' @ [323:43] ==> public fun LookupElement.addTail(tail: Tail?): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
-'mergeTails' @ [323:51] ==> public fun mergeTails(tails: Collection<Tail?>): Tail? defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'mergeTails' @ [323:51] ==> public fun mergeTails(tails: Collection<Tail?>): Tail? defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'infos' @ [323:62] ==> val infos: MutableList<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.addNamedArgumentsWithLiteralValueItems[LocalVariableDescriptor]
 
@@ -1038,9 +1042,7 @@ Inferred types:
 
 'putUserData' @ [332:23] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElementBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'SmartCompletionInBasicWeigher' @ [332:35] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'NAMED_ARGUMENT_KEY' @ [332:65] ==> public final val NAMED_ARGUMENT_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher.Companion[PropertyDescriptorImpl]
 
@@ -1263,7 +1265,7 @@ Inferred types:
 
 'CALLABLE_REFERENCE' @ [401:80] ==> enum entry CALLABLE_REFERENCE defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority[FakeCallableDescriptorForObject]
 
-'addTailAndNameSimilarity' @ [402:22] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'addTailAndNameSimilarity' @ [402:22] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'matchedExpectedInfos' @ [402:47] ==> val matchedExpectedInfos: List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.addCallableReferenceLookupElements.toLookupElement[LocalVariableDescriptor]
 
@@ -1308,8 +1310,6 @@ Inferred types:
 
 'modality' @ [414:32] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [414:44] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [414:53] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 '!' @ [414:65] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
@@ -1335,6 +1335,8 @@ Inferred types:
     <C : MutableCollection<in R>> -> MutableCollection<LookupElement>
 
 'this' @ [417:43] ==> <this> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.addCallableReferenceLookupElements[ReceiverParameterDescriptorImpl]
+
+'toLookupElement' @ [417:51] ==> local final fun toLookupElement(descriptor: CallableDescriptor): LookupElement? defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.addCallableReferenceLookupElements[SimpleFunctionDescriptorImpl]
 
 '?:' @ [424:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtBinaryExpressionWithTypeRHS?, right: KtBinaryExpressionWithTypeRHS): KtBinaryExpressionWithTypeRHS[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1411,7 +1413,7 @@ Inferred types:
 
 'lookupElement' @ [438:23] ==> val lookupElement: LookupElement defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.buildForAsTypePosition[LocalVariableDescriptor]
 
-'addTailAndNameSimilarity' @ [438:37] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'addTailAndNameSimilarity' @ [438:37] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'infos' @ [438:62] ==> val infos: List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.buildForAsTypePosition[LocalVariableDescriptor]
 

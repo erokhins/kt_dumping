@@ -2,11 +2,11 @@
 
 'java' @ [27:47] ==> public val <T> KClass<out RuntimeSourceElementFactory.RuntimeSourceElement>.java: Class<out RuntimeSourceElementFactory.RuntimeSourceElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> RuntimeSourceElement
+    <T> -> Captured(out RuntimeSourceElement)
 
 'name' @ [27:52] ==> public final val <T : (Any..Any?)> Class<out RuntimeSourceElementFactory.RuntimeSourceElement>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> RuntimeSourceElement
+    <T : (Any..Any?)> -> Captured(out RuntimeSourceElement)
 
 'javaElement' @ [27:66] ==> public open val javaElement: ReflectJavaElement defined in org.jetbrains.kotlin.load.java.components.RuntimeSourceElementFactory.RuntimeSourceElement[PropertyDescriptorImpl]
 

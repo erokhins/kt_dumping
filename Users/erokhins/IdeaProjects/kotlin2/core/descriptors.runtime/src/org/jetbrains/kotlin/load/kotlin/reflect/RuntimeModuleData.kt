@@ -42,8 +42,6 @@
 
 'storageManager' @ [62:83] ==> val storageManager: LockBasedStorageManager defined in org.jetbrains.kotlin.load.kotlin.reflect.RuntimeModuleData.Companion.create[LocalVariableDescriptor]
 
-'Jsr305State' @ [62:99] ==> public companion object defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
-
 'IGNORE' @ [62:111] ==> enum entry IGNORE defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
 
 'JavaResolverComponents' @ [63:45] ==> public constructor JavaResolverComponents(storageManager: StorageManager, finder: JavaClassFinder, kotlinClassFinder: KotlinClassFinder, deserializedDescriptorResolver: DeserializedDescriptorResolver, externalAnnotationResolver: ExternalAnnotationResolver, signaturePropagator: SignaturePropagator, errorReporter: ErrorReporter, javaResolverCache: JavaResolverCache, javaPropertyInitializerEvaluator: JavaPropertyInitializerEvaluator, samConversionResolver: SamConversionResolver, sourceElementFactory: JavaSourceElementFactory, moduleClassResolver: ModuleClassResolver, packageMapper: PackagePartProvider, supertypeLoopChecker: SupertypeLoopChecker, lookupTracker: LookupTracker, module: ModuleDescriptor, reflectionTypes: ReflectionTypes, annotationTypeQualifierResolver: AnnotationTypeQualifierResolver, signatureEnhancement: SignatureEnhancement) defined in org.jetbrains.kotlin.load.java.lazy.JavaResolverComponents[DeserializedClassConstructorDescriptor]

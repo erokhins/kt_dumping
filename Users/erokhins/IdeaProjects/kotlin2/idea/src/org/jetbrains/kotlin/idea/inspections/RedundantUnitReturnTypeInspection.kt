@@ -64,7 +64,7 @@
 
 'candidateDescriptor' @ [48:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'returnType' @ [48:70] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 

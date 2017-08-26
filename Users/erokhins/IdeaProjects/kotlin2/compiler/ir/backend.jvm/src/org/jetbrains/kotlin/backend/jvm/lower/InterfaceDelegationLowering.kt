@@ -67,8 +67,6 @@ Inferred types:
 
 'descriptor' @ [60:49] ==> value-parameter descriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.lower.InterfaceDelegationLowering.generateInterfaceMethods[ValueParameterDescriptorImpl]
 
-'InterfaceLowering' @ [61:29] ==> public companion object defined in org.jetbrains.kotlin.backend.jvm.lower.InterfaceLowering[FakeCallableDescriptorForObject]
-
 'createDefaultImplFunDescriptor' @ [61:47] ==> public final fun createDefaultImplFunDescriptor(defaultImplsDescriptor: DefaultImplsClassDescriptorImpl, descriptor: FunctionDescriptor, interfaceDescriptor: ClassDescriptor, typeMapper: KotlinTypeMapper): SimpleFunctionDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.lower.InterfaceLowering.Companion[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [61:78] ==> value-parameter descriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.lower.InterfaceDelegationLowering.generateInterfaceMethods[ValueParameterDescriptorImpl]

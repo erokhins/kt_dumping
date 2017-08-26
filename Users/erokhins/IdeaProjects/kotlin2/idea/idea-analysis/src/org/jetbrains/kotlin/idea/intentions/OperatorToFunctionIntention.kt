@@ -216,15 +216,13 @@ Inferred types:
 
 'resultingDescriptor' @ [84:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [85:17] ==> val descriptor: CallableDescriptor? defined in org.jetbrains.kotlin.idea.intentions.OperatorToFunctionIntention.Companion.isApplicableCall[LocalVariableDescriptor]
 
 'descriptor' @ [85:53] ==> val descriptor: CallableDescriptor? defined in org.jetbrains.kotlin.idea.intentions.OperatorToFunctionIntention.Companion.isApplicableCall[LocalVariableDescriptor]
 
 'getName' @ [85:64] ==> @NotNull public abstract fun getName(): Name defined in org.jetbrains.kotlin.descriptors.CallableDescriptor[JavaMethodDescriptor]
-
-'OperatorNameConventions' @ [85:77] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'INVOKE' @ [85:101] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -237,8 +235,6 @@ Inferred types:
 'calleeExpression' @ [87:29] ==> public final val KtCallExpression.calleeExpression: KtExpression?[MyPropertyDescriptor]
 
 'text' @ [87:47] ==> public final val KtExpression.text: (String..String?)[MyPropertyDescriptor]
-
-'OperatorNameConventions' @ [87:55] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'INVOKE' @ [87:79] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -277,31 +273,21 @@ Inferred types:
 
 'PLUS' @ [96:26] ==> public final val PLUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'OperatorNameConventions' @ [96:34] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'UNARY_PLUS' @ [96:58] ==> @field:JvmField public final val UNARY_PLUS: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'MINUS' @ [97:26] ==> public final val MINUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'OperatorNameConventions' @ [97:35] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'UNARY_MINUS' @ [97:59] ==> @field:JvmField public final val UNARY_MINUS: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'PLUSPLUS' @ [98:26] ==> public final val PLUSPLUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'OperatorNameConventions' @ [98:38] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INC' @ [98:62] ==> @field:JvmField public final val INC: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'MINUSMINUS' @ [99:26] ==> public final val MINUSMINUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'OperatorNameConventions' @ [99:40] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'DEC' @ [99:64] ==> @field:JvmField public final val DEC: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'EXCL' @ [100:26] ==> public final val EXCL: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'OperatorNameConventions' @ [100:34] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'NOT' @ [100:58] ==> @field:JvmField public final val NOT: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -343,13 +329,9 @@ Inferred types:
 
 'PLUSPLUS' @ [111:26] ==> public final val PLUSPLUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'OperatorNameConventions' @ [111:38] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INC' @ [111:62] ==> @field:JvmField public final val INC: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'MINUSMINUS' @ [112:26] ==> public final val MINUSMINUS: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'OperatorNameConventions' @ [112:40] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'DEC' @ [112:64] ==> @field:JvmField public final val DEC: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -415,7 +397,7 @@ Inferred types:
 
 'candidateDescriptor' @ [135:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'name' @ [135:72] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 
@@ -515,8 +497,6 @@ Inferred types:
 'languageVersionSettings' @ [152:48] ==> public val KtElement.languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project in file Platform.kt[PropertyDescriptorImpl]
 
 'supportsFeature' @ [152:72] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [152:88] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'OperatorRem' @ [152:104] ==> enum entry OperatorRem defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

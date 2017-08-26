@@ -10,15 +10,15 @@
 
 'toPattern' @ [49:131] ==> public final fun toPattern(): Pattern defined in kotlin.text.Regex[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [76:38] ==> public fun <T> lazy(initializer: () -> OffsetToSourceMapping): Lazy<OffsetToSourceMapping> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [76:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> OffsetToSourceMapping
+    <T> -> T
 
 'offsetToSourceMappingProvider' @ [76:43] ==> value-parameter offsetToSourceMappingProvider: () -> OffsetToSourceMapping defined in org.jetbrains.kotlin.js.inline.FunctionReader.ModuleInfo.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [79:37] ==> public fun <T> lazy(initializer: () -> (HashMultimap<(String..String?), (FunctionReader.ModuleInfo..FunctionReader.ModuleInfo?)>..HashMultimap<(String..String?), (FunctionReader.ModuleInfo..FunctionReader.ModuleInfo?)>?)): Lazy<(HashMultimap<(String..String?), (FunctionReader.ModuleInfo..FunctionReader.ModuleInfo?)>..HashMultimap<(String..String?), (FunctionReader.ModuleInfo..FunctionReader.ModuleInfo?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [79:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (com.google.common.collect.HashMultimap<(kotlin.String..kotlin.String?), (org.jetbrains.kotlin.js.inline.FunctionReader.ModuleInfo..org.jetbrains.kotlin.js.inline.FunctionReader.ModuleInfo?)>..com.google.common.collect.HashMultimap<(kotlin.String..kotlin.String?), (org.jetbrains.kotlin.js.inline.FunctionReader.ModuleInfo..org.jetbrains.kotlin.js.inline.FunctionReader.ModuleInfo?)>?)
+    <T> -> T
 
 'create' @ [80:35] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> create(): (HashMultimap<(String..String?), (FunctionReader.ModuleInfo..FunctionReader.ModuleInfo?)>..HashMultimap<(String..String?), (FunctionReader.ModuleInfo..FunctionReader.ModuleInfo?)>?) defined in com.google.common.collect.HashMultimap[JavaMethodDescriptor]
 Inferred types:
@@ -37,6 +37,8 @@ Inferred types:
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
     <R> -> File
+
+'File' @ [82:67] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'component1' @ [82:77] ==> public final operator fun component1(): String defined in org.jetbrains.kotlin.utils.JsLibrary[DeserializedSimpleFunctionDescriptor]
 
@@ -412,7 +414,7 @@ Inferred types:
 
 'kotlinObject' @ [206:67] ==> @NotNull public open fun kotlinObject(): JsNameRef defined in org.jetbrains.kotlin.js.translate.context.Namer[JavaMethodDescriptor]
 
-'replaceExternalNames' @ [207:9] ==> private fun replaceExternalNames(function: JsFunction, externalReplacements: Map<String, JsExpression>): Unit defined in org.jetbrains.kotlin.js.inline[SimpleFunctionDescriptorImpl]
+'replaceExternalNames' @ [207:9] ==> private fun replaceExternalNames(function: JsFunction, externalReplacements: Map<String, JsExpression>): Unit defined in org.jetbrains.kotlin.js.inline in file FunctionReader.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [207:30] ==> val function: JsFunction defined in org.jetbrains.kotlin.js.inline.FunctionReader.readFunctionFromSource[LocalVariableDescriptor]
 
@@ -529,7 +531,7 @@ Inferred types:
 
 'accept' @ [245:13] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsFunction..JsFunction?)): (JsFunction..JsFunction?) defined in org.jetbrains.kotlin.js.inline.markInlineArguments.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsFunction
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsFunction..org.jetbrains.kotlin.js.backend.ast.JsFunction?)
 
 'this' @ [245:20] ==> <this> defined in org.jetbrains.kotlin.js.inline.markInlineArguments[ReceiverParameterDescriptorImpl]
 
@@ -575,7 +577,7 @@ Inferred types:
 
 'replaceMe' @ [258:21] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpression..JsExpression?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpression
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'it' @ [258:31] ==> value-parameter it: JsExpression defined in org.jetbrains.kotlin.js.inline.replaceExternalNames.<no name provided>.endVisit.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -583,7 +585,7 @@ Inferred types:
 
 'accept' @ [263:13] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsFunction..JsFunction?)): (JsFunction..JsFunction?) defined in org.jetbrains.kotlin.js.inline.replaceExternalNames.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsFunction
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsFunction..org.jetbrains.kotlin.js.backend.ast.JsFunction?)
 
 'function' @ [263:20] ==> value-parameter function: JsFunction defined in org.jetbrains.kotlin.js.inline.replaceExternalNames[ValueParameterDescriptorImpl]
 

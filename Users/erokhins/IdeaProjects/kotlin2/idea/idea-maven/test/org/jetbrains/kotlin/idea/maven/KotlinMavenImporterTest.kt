@@ -143,8 +143,6 @@ Inferred types:
 
 'assertEquals' @ [459:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'LanguageFeature' @ [459:33] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [459:55] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'coroutineSupport' @ [459:64] ==> public final var coroutineSupport: LanguageFeature.State defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -275,8 +273,6 @@ Inferred types:
 
 'assertEquals' @ [585:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'LanguageFeature' @ [585:33] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [585:55] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'coroutineSupport' @ [585:64] ==> public final var coroutineSupport: LanguageFeature.State defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -381,8 +377,6 @@ Inferred types:
 
 'assertEquals' @ [660:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'LanguageFeature' @ [660:33] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [660:55] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'coroutineSupport' @ [660:64] ==> public final var coroutineSupport: LanguageFeature.State defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -442,8 +436,6 @@ Inferred types:
 
 'assertEquals' @ [721:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'LanguageFeature' @ [721:33] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [721:55] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'coroutineSupport' @ [721:64] ==> public final var coroutineSupport: LanguageFeature.State defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -468,8 +460,6 @@ Inferred types:
 
 'Jvm' @ [771:48] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [771:52] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [771:62] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'facetSettings' @ [771:72] ==> private final val facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[PropertyDescriptorImpl]
@@ -489,8 +479,6 @@ Inferred types:
 'TargetPlatformKind' @ [819:29] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [819:48] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [819:52] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [819:62] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -512,8 +500,6 @@ Inferred types:
 
 'Jvm' @ [867:48] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [867:52] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [867:62] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'facetSettings' @ [867:72] ==> private final val facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[PropertyDescriptorImpl]
@@ -529,8 +515,6 @@ Inferred types:
 'assertImporterStatePresent' @ [913:9] ==> private final fun assertImporterStatePresent(): Unit defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [915:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [915:29] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [915:48] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -548,8 +532,6 @@ Inferred types:
 
 'assertEquals' @ [963:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'TargetPlatformKind' @ [963:29] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'JavaScript' @ [963:48] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'facetSettings' @ [963:60] ==> private final val facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[PropertyDescriptorImpl]
@@ -566,8 +548,6 @@ Inferred types:
 
 'assertEquals' @ [1011:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'TargetPlatformKind' @ [1011:29] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'JavaScript' @ [1011:48] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'facetSettings' @ [1011:60] ==> private final val facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[PropertyDescriptorImpl]
@@ -583,8 +563,6 @@ Inferred types:
 'assertImporterStatePresent' @ [1062:9] ==> private final fun assertImporterStatePresent(): Unit defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [1064:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [1064:29] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [1064:48] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -659,8 +637,6 @@ Inferred types:
 
 'assertEquals' @ [1111:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'TargetPlatformKind' @ [1111:29] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'Common' @ [1111:48] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'facetSettings' @ [1111:56] ==> private final val facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[PropertyDescriptorImpl]
@@ -677,8 +653,6 @@ Inferred types:
 
 'assertEquals' @ [1153:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'TargetPlatformKind' @ [1153:29] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'Common' @ [1153:48] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'facetSettings' @ [1153:56] ==> private final val facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[PropertyDescriptorImpl]
@@ -694,8 +668,6 @@ Inferred types:
 'assertImporterStatePresent' @ [1193:9] ==> private final fun assertImporterStatePresent(): Unit defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [1195:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [1195:29] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [1195:48] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -743,8 +715,6 @@ Inferred types:
 
 'Jvm' @ [1247:48] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [1247:52] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [1247:62] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'facetSettings' @ [1247:72] ==> private final val facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[PropertyDescriptorImpl]
@@ -761,8 +731,6 @@ Inferred types:
 
 'assertEquals' @ [1295:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'TargetPlatformKind' @ [1295:29] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'JavaScript' @ [1295:48] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'facetSettings' @ [1295:60] ==> private final val facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[PropertyDescriptorImpl]
@@ -778,8 +746,6 @@ Inferred types:
 'assertImporterStatePresent' @ [1341:9] ==> private final fun assertImporterStatePresent(): Unit defined in org.jetbrains.kotlin.idea.maven.KotlinMavenImporterTest[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [1343:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [1343:29] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [1343:48] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -1096,7 +1062,7 @@ Inferred types:
 
 'getComponent' @ [1791:88] ==> public abstract fun <T : (Any..Any?)> getComponent(@NotNull p0: Class<(KotlinImporterComponent..KotlinImporterComponent?)>): (KotlinImporterComponent..KotlinImporterComponent?) defined in com.intellij.openapi.module.Module[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinImporterComponent
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.maven.KotlinImporterComponent..org.jetbrains.kotlin.idea.maven.KotlinImporterComponent?)
 
 'KotlinImporterComponent' @ [1791:101] ==> public constructor KotlinImporterComponent() defined in org.jetbrains.kotlin.idea.maven.KotlinImporterComponent[DeserializedClassConstructorDescriptor]
 
@@ -1104,7 +1070,9 @@ Inferred types:
 Inferred types:
     <T> -> KotlinImporterComponent
 
-'KotlinFacet' @ [1794:53] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacet[FakeCallableDescriptorForObject]
+'!!' @ [1794:53] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KotlinFacet?): KotlinFacet[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KotlinFacet
 
 'get' @ [1794:65] ==> public final fun get(module: Module): KotlinFacet? defined in org.jetbrains.kotlin.idea.facet.KotlinFacet.Companion[DeserializedSimpleFunctionDescriptor]
 

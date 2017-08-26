@@ -26,8 +26,6 @@ Inferred types:
 
 'index' @ [43:17] ==> value-parameter index: Int defined in org.jetbrains.kotlin.backend.jvm.descriptors.createValueParameter[ValueParameterDescriptorImpl]
 
-'Annotations' @ [44:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [44:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'identifier' @ [45:22] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]

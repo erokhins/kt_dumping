@@ -39,7 +39,7 @@ Inferred types:
 
 'right' @ [33:25] ==> public final val KtBinaryExpression.right: KtExpression?[MyPropertyDescriptor]
 
-'isZero' @ [33:31] ==> public fun KtElement?.isZero(): Boolean defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'isZero' @ [33:31] ==> public fun KtElement?.isZero(): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [33:43] ==> value-parameter element: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceSizeCheckWithIsNotEmptyIntention.getTargetExpression[ValueParameterDescriptorImpl]
 
@@ -49,7 +49,7 @@ Inferred types:
 
 'left' @ [34:25] ==> public final val KtBinaryExpression.left: KtExpression?[MyPropertyDescriptor]
 
-'isZero' @ [34:30] ==> public fun KtElement?.isZero(): Boolean defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'isZero' @ [34:30] ==> public fun KtElement?.isZero(): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [34:42] ==> value-parameter element: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceSizeCheckWithIsNotEmptyIntention.getTargetExpression[ValueParameterDescriptorImpl]
 
@@ -65,7 +65,7 @@ Inferred types:
 
 'right' @ [37:40] ==> public final val KtBinaryExpression.right: KtExpression?[MyPropertyDescriptor]
 
-'isZero' @ [37:46] ==> public fun KtElement?.isZero(): Boolean defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'isZero' @ [37:46] ==> public fun KtElement?.isZero(): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [37:56] ==> value-parameter element: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceSizeCheckWithIsNotEmptyIntention.getTargetExpression[ValueParameterDescriptorImpl]
 
@@ -81,7 +81,7 @@ Inferred types:
 
 'left' @ [38:40] ==> public final val KtBinaryExpression.left: KtExpression?[MyPropertyDescriptor]
 
-'isZero' @ [38:45] ==> public fun KtElement?.isZero(): Boolean defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'isZero' @ [38:45] ==> public fun KtElement?.isZero(): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [38:55] ==> value-parameter element: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceSizeCheckWithIsNotEmptyIntention.getTargetExpression[ValueParameterDescriptorImpl]
 
@@ -97,7 +97,7 @@ Inferred types:
 
 'right' @ [39:42] ==> public final val KtBinaryExpression.right: KtExpression?[MyPropertyDescriptor]
 
-'isOne' @ [39:48] ==> public fun KtElement?.isOne(): Boolean defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'isOne' @ [39:48] ==> public fun KtElement?.isOne(): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [39:57] ==> value-parameter element: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceSizeCheckWithIsNotEmptyIntention.getTargetExpression[ValueParameterDescriptorImpl]
 
@@ -113,7 +113,7 @@ Inferred types:
 
 'left' @ [40:42] ==> public final val KtBinaryExpression.left: KtExpression?[MyPropertyDescriptor]
 
-'isOne' @ [40:47] ==> public fun KtElement?.isOne(): Boolean defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'isOne' @ [40:47] ==> public fun KtElement?.isOne(): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [40:56] ==> value-parameter element: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceSizeCheckWithIsNotEmptyIntention.getTargetExpression[ValueParameterDescriptorImpl]
 

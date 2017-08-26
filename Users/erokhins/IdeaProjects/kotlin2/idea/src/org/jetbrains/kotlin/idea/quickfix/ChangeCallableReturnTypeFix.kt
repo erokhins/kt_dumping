@@ -48,7 +48,7 @@ Inferred types:
 
 'getParentOfType' @ [65:57] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtLambdaExpression..KtLambdaExpression?)>): KtLambdaExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtLambdaExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtLambdaExpression..org.jetbrains.kotlin.psi.KtLambdaExpression?)
 
 'element' @ [65:73] ==> value-parameter element: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.<init>[ValueParameterDescriptorImpl]
 
@@ -322,8 +322,6 @@ Inferred types:
 
 'newTypeRef' @ [156:55] ==> var newTypeRef: KtTypeReference defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.invoke[LocalVariableDescriptor]
 
-'ShortenReferences' @ [157:17] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [157:35] ==> @field:JvmField public final val DEFAULT: ShortenReferences defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Companion[DeserializedPropertyDescriptor]
 
 'process' @ [157:43] ==> @JvmOverloads public final fun process(element: KtElement, elementFilter: (PsiElement) -> ShortenReferences.FilterResult = ...): KtElement defined in org.jetbrains.kotlin.idea.core.ShortenReferences[DeserializedSimpleFunctionDescriptor]
@@ -350,8 +348,8 @@ Inferred types:
 
 'get' @ [169:40] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..ReadOnlySlice<(KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?), p1: (KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?)): ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtDestructuringDeclarationEntry
-    <V : (Any..Any?)> -> ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtDestructuringDeclarationEntry..org.jetbrains.kotlin.psi.KtDestructuringDeclarationEntry?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>?)
 
 'COMPONENT_RESOLVED_CALL' @ [169:59] ==> public final val COMPONENT_RESOLVED_CALL: (WritableSlice<(KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..WritableSlice<(KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -363,7 +361,7 @@ Inferred types:
 
 'resolvedCall' @ [171:69] ==> val resolvedCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ComponentFunctionReturnTypeMismatchFactory.createAction[LocalVariableDescriptor]
 
-'candidateDescriptor' @ [171:82] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.candidateDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'candidateDescriptor' @ [171:82] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.candidateDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -391,7 +389,7 @@ Inferred types:
 
 'getParentElementOfType' @ [180:43] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtExpression..KtExpression?)>..Class<(KtExpression..KtExpression?)>?)): KtExpression? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'diagnostic' @ [180:66] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.HasNextFunctionTypeMismatchFactory.createAction[ValueParameterDescriptorImpl]
 
@@ -415,7 +413,7 @@ Inferred types:
 
 'resolvedCall' @ [184:37] ==> val resolvedCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.HasNextFunctionTypeMismatchFactory.createAction[LocalVariableDescriptor]
 
-'candidateDescriptor' @ [184:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.candidateDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'candidateDescriptor' @ [184:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.candidateDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -423,7 +421,7 @@ Inferred types:
 
 'descriptorToDeclaration' @ [185:59] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
-'hasNextDescriptor' @ [185:83] ==> val hasNextDescriptor: (FunctionDescriptor..FunctionDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.HasNextFunctionTypeMismatchFactory.createAction[LocalVariableDescriptor]
+'hasNextDescriptor' @ [185:83] ==> val hasNextDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.HasNextFunctionTypeMismatchFactory.createAction[LocalVariableDescriptor]
 
 'ChangeCallableReturnTypeFix' @ [186:20] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
@@ -431,7 +429,7 @@ Inferred types:
 
 'hasNextFunction' @ [186:58] ==> val hasNextFunction: KtFunction defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.HasNextFunctionTypeMismatchFactory.createAction[LocalVariableDescriptor]
 
-'hasNextDescriptor' @ [186:75] ==> val hasNextDescriptor: (FunctionDescriptor..FunctionDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.HasNextFunctionTypeMismatchFactory.createAction[LocalVariableDescriptor]
+'hasNextDescriptor' @ [186:75] ==> val hasNextDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.HasNextFunctionTypeMismatchFactory.createAction[LocalVariableDescriptor]
 
 'builtIns' @ [186:93] ==> public val DeclarationDescriptor.builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
@@ -445,7 +443,7 @@ Inferred types:
 
 'getParentElementOfType' @ [192:43] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtBinaryExpression..KtBinaryExpression?)>..Class<(KtBinaryExpression..KtBinaryExpression?)>?)): KtBinaryExpression? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtBinaryExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtBinaryExpression..org.jetbrains.kotlin.psi.KtBinaryExpression?)
 
 'diagnostic' @ [192:66] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.CompareToTypeMismatchFactory.createAction[ValueParameterDescriptorImpl]
 
@@ -473,7 +471,7 @@ Inferred types:
 
 'candidateDescriptor' @ [195:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'DescriptorToSourceUtils' @ [196:29] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
@@ -501,7 +499,7 @@ Inferred types:
 
 'getParentElementOfType' @ [203:41] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtFunction..KtFunction?)>..Class<(KtFunction..KtFunction?)>?)): KtFunction? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtFunction
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFunction..org.jetbrains.kotlin.psi.KtFunction?)
 
 'diagnostic' @ [203:64] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ReturnTypeMismatchOnOverrideFactory.doCreateActions[ValueParameterDescriptorImpl]
 
@@ -536,8 +534,6 @@ Inferred types:
 'actions' @ [211:17] ==> val actions: LinkedList<IntentionAction> defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ReturnTypeMismatchOnOverrideFactory.doCreateActions[LocalVariableDescriptor]
 
 'add' @ [211:25] ==> public open fun add(element: IntentionAction): Boolean defined in java.util.LinkedList[JavaMethodDescriptor]
-
-'ChangeCallableReturnTypeFix' @ [211:29] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
 'OnType' @ [211:57] ==> public constructor OnType(element: KtFunction, type: KotlinType) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.OnType[ClassConstructorDescriptorImpl]
 
@@ -595,8 +591,6 @@ Inferred types:
 
 'add' @ [227:29] ==> public open fun add(element: IntentionAction): Boolean defined in java.util.LinkedList[JavaMethodDescriptor]
 
-'ChangeCallableReturnTypeFix' @ [227:33] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
-
 'ForOverridden' @ [227:61] ==> public constructor ForOverridden(element: KtFunction, type: KotlinType) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ForOverridden[ClassConstructorDescriptorImpl]
 
 'overriddenFunction' @ [227:75] ==> val overriddenFunction: PsiElement? defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ReturnTypeMismatchOnOverrideFactory.doCreateActions[LocalVariableDescriptor]
@@ -613,7 +607,7 @@ Inferred types:
 
 'getParentElementOfType' @ [237:41] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtFunction..KtFunction?)>..Class<(KtFunction..KtFunction?)>?)): KtFunction? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtFunction
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFunction..org.jetbrains.kotlin.psi.KtFunction?)
 
 'diagnostic' @ [237:64] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ChangingReturnTypeToUnitFactory.createAction[ValueParameterDescriptorImpl]
 
@@ -641,7 +635,7 @@ Inferred types:
 
 'getParentElementOfType' @ [244:41] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtFunction..KtFunction?)>..Class<(KtFunction..KtFunction?)>?)): KtFunction? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtFunction
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFunction..org.jetbrains.kotlin.psi.KtFunction?)
 
 'diagnostic' @ [244:64] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.ChangingReturnTypeToNothingFactory.createAction[ValueParameterDescriptorImpl]
 
@@ -667,7 +661,7 @@ Inferred types:
 
 'diagnostic' @ [251:78] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.Companion.getDestructuringDeclarationEntryThatTypeMismatchComponentFunction[ValueParameterDescriptorImpl]
 
-'a' @ [251:90] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: (Name..Name?)[MyPropertyDescriptor]
+'a' @ [251:90] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: Name[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
@@ -678,7 +672,7 @@ Inferred types:
 
 'getComponentIndex' @ [252:62] ==> public final fun getComponentIndex(componentName: String): Int defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[DeserializedSimpleFunctionDescriptor]
 
-'componentName' @ [252:80] ==> val componentName: (Name..Name?) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.Companion.getDestructuringDeclarationEntryThatTypeMismatchComponentFunction[LocalVariableDescriptor]
+'componentName' @ [252:80] ==> val componentName: Name defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.Companion.getDestructuringDeclarationEntryThatTypeMismatchComponentFunction[LocalVariableDescriptor]
 
 'asString' @ [252:94] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
@@ -688,7 +682,7 @@ Inferred types:
 
 'getParentElementOfType' @ [253:49] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtDestructuringDeclaration..KtDestructuringDeclaration?)>..Class<(KtDestructuringDeclaration..KtDestructuringDeclaration?)>?)): KtDestructuringDeclaration? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtDestructuringDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDestructuringDeclaration..org.jetbrains.kotlin.psi.KtDestructuringDeclaration?)
 
 'diagnostic' @ [253:72] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix.Companion.getDestructuringDeclarationEntryThatTypeMismatchComponentFunction[ValueParameterDescriptorImpl]
 

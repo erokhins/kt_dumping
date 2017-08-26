@@ -24,7 +24,7 @@
 Inferred types:
     <T : IrDeclaration> -> IrAnonymousInitializer
 
-'createBodyGenerator' @ [33:37] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [33:37] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'irAnonymousInitializer' @ [33:57] ==> value-parameter irAnonymousInitializer: IrAnonymousInitializer defined in org.jetbrains.kotlin.psi2ir.generators.AnonymousInitializerGenerator.generateAnonymousInitializerDeclaration.<anonymous>[ValueParameterDescriptorImpl]
 

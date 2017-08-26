@@ -160,8 +160,6 @@ Inferred types:
 
 'ReplaceGetOrSetIntention' @ [95:42] ==> public constructor ReplaceGetOrSetIntention() defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceGetOrSetIntention[ClassConstructorDescriptorImpl]
 
-'ReplaceGetOrSetInspection' @ [95:90] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceGetOrSetInspection[FakeCallableDescriptorForObject]
-
 'additionalChecker' @ [95:116] ==> public final val additionalChecker: (KtDotQualifiedExpression) -> Boolean defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceGetOrSetInspection.Companion[PropertyDescriptorImpl]
 
 'registerIntentionBasedProcessing' @ [96:9] ==> private final inline fun <reified TElement : KtElement, TIntention : SelfTargetingRangeIntention<KtNamedFunction>> registerIntentionBasedProcessing(intention: AddOperatorModifierIntention, noinline additionalChecker: (KtNamedFunction) -> Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.j2k.J2KPostProcessingRegistrar[SimpleFunctionDescriptorImpl]
@@ -700,8 +698,8 @@ Inferred types:
 
 'get' @ [314:37] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), p1: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [314:56] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

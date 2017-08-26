@@ -6,7 +6,7 @@ Inferred types:
 
 'findElementOfClassAtOffset' @ [34:34] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<(KtSimpleNameExpression..KtSimpleNameExpression?)>, p3: Boolean): KtSimpleNameExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtSimpleNameExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtSimpleNameExpression..org.jetbrains.kotlin.psi.KtSimpleNameExpression?)
 
 'file' @ [35:17] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameDynamicMemberHandler.isAvailable[ValueParameterDescriptorImpl]
 

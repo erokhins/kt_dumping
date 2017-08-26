@@ -75,9 +75,9 @@ Inferred types:
 
 'storageManager' @ [48:67] ==> private final val storageManager: StorageManager defined in org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager.LockProtectedContext[PropertyDescriptorImpl]
 
-'compute' @ [48:82] ==> public abstract fun <T> compute(computable: () -> Collection<K>): Collection<K> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
+'compute' @ [48:82] ==> public abstract fun <T> compute(computable: () -> Collection<(K..K?)>): Collection<(K..K?)> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Collection<K>
+    <T> -> Collection<(K..K?)>
 
 'context' @ [48:92] ==> private final val context: BindingContext defined in org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager.LockProtectedContext[PropertyDescriptorImpl]
 
@@ -106,9 +106,9 @@ Inferred types:
 
 'storageManager' @ [55:76] ==> private final val storageManager: StorageManager defined in org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager.LockProtectedContext[PropertyDescriptorImpl]
 
-'compute' @ [55:91] ==> public abstract fun <T> compute(computable: () -> ImmutableMap<K, V>): ImmutableMap<K, V> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
+'compute' @ [55:91] ==> public abstract fun <T> compute(computable: () -> ImmutableMap<(K..K?), (V..V?)>): ImmutableMap<(K..K?), (V..V?)> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ImmutableMap<K, V>
+    <T> -> ImmutableMap<(K..K?), (V..V?)>
 
 'context' @ [55:101] ==> private final val context: BindingContext defined in org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager.LockProtectedContext[PropertyDescriptorImpl]
 
@@ -209,9 +209,9 @@ Inferred types:
 
 'storageManager' @ [79:82] ==> private final val storageManager: StorageManager defined in org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager.LockProtectedTrace[PropertyDescriptorImpl]
 
-'compute' @ [79:97] ==> public abstract fun <T> compute(computable: () -> (MutableCollection<K>..Collection<K>)): (MutableCollection<K>..Collection<K>) defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
+'compute' @ [79:97] ==> public abstract fun <T> compute(computable: () -> (MutableCollection<(K..K?)>..Collection<(K..K?)>)): (MutableCollection<(K..K?)>..Collection<(K..K?)>) defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (kotlin.collections.MutableCollection<K>..kotlin.collections.Collection<K>)
+    <T> -> (kotlin.collections.MutableCollection<(K..K?)>..kotlin.collections.Collection<(K..K?)>)
 
 'trace' @ [79:107] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.storage.LockBasedLazyResolveStorageManager.LockProtectedTrace[PropertyDescriptorImpl]
 

@@ -12,19 +12,19 @@
 
 'findChildByType' @ [30:17] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtCollectionLiteralExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'LBRACKET' @ [30:42] ==> public final val LBRACKET: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
 'findChildByType' @ [33:17] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtCollectionLiteralExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'RBRACKET' @ [33:42] ==> public final val RBRACKET: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
 'getChildrenOfTypeAsList' @ [36:28] ==> @NotNull public open fun <T : (PsiElement..PsiElement?)> getChildrenOfTypeAsList(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtExpression..KtExpression?)>): (MutableList<(KtExpression..KtExpression?)>..List<(KtExpression..KtExpression?)>) defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'this' @ [36:52] ==> <this> defined in org.jetbrains.kotlin.psi.KtCollectionLiteralExpression[LazyClassReceiverParameterDescriptor]
 

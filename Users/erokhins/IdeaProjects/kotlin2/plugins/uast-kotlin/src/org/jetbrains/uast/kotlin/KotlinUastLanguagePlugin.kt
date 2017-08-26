@@ -1,6 +1,6 @@
-'lz' @ [52:31] ==> internal fun <T> lz(initializer: () -> UastLanguagePlugin): Lazy<UastLanguagePlugin> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [52:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UastLanguagePlugin
+    <T> -> T
 
 'UastLanguagePlugin' @ [52:36] ==> public companion object defined in org.jetbrains.uast.UastLanguagePlugin[FakeCallableDescriptorForObject]
 
@@ -28,11 +28,9 @@ Inferred types:
 
 'parent' @ [62:44] ==> value-parameter parent: UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertElement[ValueParameterDescriptorImpl]
 
-'toCallback' @ [62:51] ==> internal fun UElement?.toCallback(): (() -> UElement?)? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'toCallback' @ [62:51] ==> internal fun UElement?.toCallback(): (() -> UElement?)? defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[SimpleFunctionDescriptorImpl]
 
 'requiredType' @ [62:65] ==> value-parameter requiredType: Class<out UElement>? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertElement[ValueParameterDescriptorImpl]
-
-'KotlinConverter' @ [63:19] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
 'convertPsiElement' @ [63:35] ==> internal final fun convertPsiElement(element: PsiElement?, parentCallback: (() -> UElement?)?, requiredType: Class<out UElement>?): UElement? defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 
@@ -40,7 +38,7 @@ Inferred types:
 
 'parent' @ [63:62] ==> value-parameter parent: UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertElement[ValueParameterDescriptorImpl]
 
-'toCallback' @ [63:69] ==> internal fun UElement?.toCallback(): (() -> UElement?)? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'toCallback' @ [63:69] ==> internal fun UElement?.toCallback(): (() -> UElement?)? defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[SimpleFunctionDescriptorImpl]
 
 'requiredType' @ [63:83] ==> value-parameter requiredType: Class<out UElement>? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertElement[ValueParameterDescriptorImpl]
 
@@ -64,7 +62,9 @@ Inferred types:
 
 'parent' @ [71:34] ==> public final val PsiElement.parent: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'KotlinConverter' @ [72:35] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
+'?:' @ [72:35] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'unwrapElements' @ [72:51] ==> internal final tailrec fun unwrapElements(element: PsiElement?): PsiElement? defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 
@@ -120,8 +120,6 @@ Inferred types:
 
 'requiredType' @ [81:60] ==> value-parameter requiredType: Class<out UElement>? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertElementWithParent[ValueParameterDescriptorImpl]
 
-'KotlinConverter' @ [82:19] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
-
 'convertPsiElement' @ [82:35] ==> internal final fun convertPsiElement(element: PsiElement?, parentCallback: (() -> UElement?)?, requiredType: Class<out UElement>?): UElement? defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 
 'element' @ [82:53] ==> value-parameter element: PsiElement defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertElementWithParent[ValueParameterDescriptorImpl]
@@ -144,7 +142,7 @@ Inferred types:
 
 'resultingDescriptor' @ [92:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resultingDescriptor' @ [93:13] ==> val resultingDescriptor: CallableDescriptor defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.getMethodCallExpression[LocalVariableDescriptor]
 
@@ -204,7 +202,7 @@ Inferred types:
 
 'resultingDescriptor' @ [110:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resultingDescriptor' @ [111:13] ==> val resultingDescriptor: CallableDescriptor defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.getConstructorCallExpression[LocalVariableDescriptor]
 
@@ -222,7 +220,9 @@ Inferred types:
 
 'fqName' @ [112:106] ==> value-parameter fqName: String defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.getConstructorCallExpression[ValueParameterDescriptorImpl]
 
-'KotlinConverter' @ [116:22] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
+'?:' @ [116:22] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'unwrapElements' @ [116:38] ==> internal final tailrec fun unwrapElements(element: PsiElement?): PsiElement? defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 
@@ -272,7 +272,7 @@ Inferred types:
 
 'getUserData' @ [130:38] ==> @Nullable public abstract fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(WeakReference<UElement>..WeakReference<UElement>?)>): WeakReference<UElement>? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> WeakReference<UElement>
+    <T : (Any..Any?)> -> (java.lang.ref.WeakReference<org.jetbrains.uast.UElement>..java.lang.ref.WeakReference<org.jetbrains.uast.UElement>?)
 
 'KOTLIN_CACHED_UELEMENT_KEY' @ [130:50] ==> internal val KOTLIN_CACHED_UELEMENT_KEY: Key<(WeakReference<UElement>..WeakReference<UElement>?)> defined in org.jetbrains.uast.kotlin in file kotlinInternalUastUtils.kt[PropertyDescriptorImpl]
 
@@ -285,10 +285,10 @@ Inferred types:
 
 'get' @ [131:17] ==> public open fun get(): UElement? defined in java.lang.ref.WeakReference[JavaMethodDescriptor]
 
-'let' @ [131:24] ==> @InlineOnly public inline fun <T, R> UElement.let(block: (UElement) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [131:24] ==> @InlineOnly public inline fun <T, R> UElement.let(block: (UElement) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> UElement
-    <R> -> Nothing?
+    <R> -> Nothing
 
 'it' @ [131:37] ==> value-parameter it: UElement defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -362,57 +362,69 @@ Inferred types:
 Inferred types:
     <reified ActualT : UElement> -> UMethod
 
-'build' @ [144:49] ==> local final fun <P : PsiElement> build(ctor: (KtLightMethod, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
+'build' @ [144:49] ==> local final fun <P : PsiElement> build(ctor: (psi: KtLightMethod, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtLightMethod
+    <P : PsiElement> -> [@kotlin.ParameterName] KtLightMethod
 
 'KotlinUMethod' @ [144:55] ==> public companion object defined in org.jetbrains.uast.kotlin.declarations.KotlinUMethod[FakeCallableDescriptorForObject]
 
 'Companion' @ [144:69] ==> public companion object defined in org.jetbrains.uast.kotlin.declarations.KotlinUMethod[FakeCallableDescriptorForObject]
 
+'create' @ [144:80] ==> public final fun create(psi: KtLightMethod, containingElement: UElement?): KotlinUMethod defined in org.jetbrains.uast.kotlin.declarations.KotlinUMethod.Companion[SimpleFunctionDescriptorImpl]
+
 'el' @ [145:36] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.el(f: () -> UElement?): UElement? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UClass
 
-'build' @ [145:47] ==> local final fun <P : PsiElement> build(ctor: (KtLightClass, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
+'build' @ [145:47] ==> local final fun <P : PsiElement> build(ctor: (psi: KtLightClass, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtLightClass
+    <P : PsiElement> -> [@kotlin.ParameterName] KtLightClass
 
 'KotlinUClass' @ [145:53] ==> public companion object defined in org.jetbrains.uast.kotlin.KotlinUClass[FakeCallableDescriptorForObject]
 
 'Companion' @ [145:66] ==> public companion object defined in org.jetbrains.uast.kotlin.KotlinUClass[FakeCallableDescriptorForObject]
 
+'create' @ [145:77] ==> public final fun create(psi: KtLightClass, containingElement: UElement?): UClass defined in org.jetbrains.uast.kotlin.KotlinUClass.Companion[SimpleFunctionDescriptorImpl]
+
 'el' @ [147:60] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.el(f: () -> UElement?): UElement? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UEnumConstant
 
-'build' @ [147:78] ==> local final fun <P : PsiElement> build(ctor: (PsiEnumConstant, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
+'build' @ [147:78] ==> local final fun <P : PsiElement> build(ctor: (psi: PsiEnumConstant, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> PsiEnumConstant
+    <P : PsiElement> -> [@kotlin.ParameterName] PsiEnumConstant
+
+'KotlinUEnumConstant' @ [147:86] ==> public constructor KotlinUEnumConstant(psi: PsiEnumConstant, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUEnumConstant[ClassConstructorDescriptorImpl]
 
 'el' @ [148:36] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.el(f: () -> UElement?): UElement? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UField
 
-'build' @ [148:47] ==> local final fun <P : PsiElement> build(ctor: (PsiField, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
+'build' @ [148:47] ==> local final fun <P : PsiElement> build(ctor: (psi: PsiField, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> PsiField
+    <P : PsiElement> -> [@kotlin.ParameterName] PsiField
+
+'KotlinUField' @ [148:55] ==> public constructor KotlinUField(psi: PsiField, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUField[ClassConstructorDescriptorImpl]
 
 'el' @ [149:67] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.el(f: () -> UElement?): UElement? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UParameter
 
-'build' @ [149:82] ==> local final fun <P : PsiElement> build(ctor: (PsiParameter, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
+'build' @ [149:82] ==> local final fun <P : PsiElement> build(ctor: (psi: PsiParameter, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> PsiParameter
+    <P : PsiElement> -> [@kotlin.ParameterName] PsiParameter
+
+'KotlinUParameter' @ [149:90] ==> public constructor KotlinUParameter(psi: PsiParameter, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUParameter[ClassConstructorDescriptorImpl]
 
 'el' @ [150:45] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.el(f: () -> UElement?): UElement? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UVariable
 
-'build' @ [150:59] ==> local final fun <P : PsiElement> build(ctor: (PsiVariable, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
+'build' @ [150:59] ==> local final fun <P : PsiElement> build(ctor: (psi: PsiVariable, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> PsiVariable
+    <P : PsiElement> -> [@kotlin.ParameterName] PsiVariable
+
+'KotlinUVariable' @ [150:67] ==> public constructor KotlinUVariable(psi: PsiVariable, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUVariable[ClassConstructorDescriptorImpl]
 
 'el' @ [152:39] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.el(f: () -> UElement?): UElement? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -447,7 +459,9 @@ Inferred types:
 Inferred types:
     <reified ActualT : UElement> -> UMethod
 
-'LightClassUtil' @ [159:39] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
+'?:' @ [159:39] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiMethod?, right: PsiMethod): PsiMethod[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiMethod
 
 'getLightClassMethod' @ [159:54] ==> public final fun getLightClassMethod(function: KtFunction): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -479,8 +493,6 @@ Inferred types:
 Inferred types:
     <reified T : UElement> -> UMethod
 
-'LightClassUtil' @ [165:29] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
-
 'getLightClassAccessorMethod' @ [165:44] ==> public final fun getLightClassAccessorMethod(accessor: KtPropertyAccessor): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
 'original' @ [165:72] ==> val original: (PsiElement..PsiElement?) defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[LocalVariableDescriptor]
@@ -504,8 +516,6 @@ Inferred types:
 'convertOpt' @ [169:32] ==> public inline fun <reified T : UElement> UastLanguagePlugin.convertOpt(element: PsiElement?, parent: UElement?): UField? defined in org.jetbrains.uast[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : UElement> -> UField
-
-'LightClassUtil' @ [170:29] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
 
 'getLightClassBackingField' @ [170:44] ==> public final fun getLightClassBackingField(declaration: KtDeclaration): PsiField? defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -549,9 +559,11 @@ Inferred types:
 Inferred types:
     <reified ActualT : UElement> -> UAnnotation
 
-'build' @ [176:57] ==> local final fun <P : PsiElement> build(ctor: (KtAnnotationEntry, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
+'build' @ [176:57] ==> local final fun <P : PsiElement> build(ctor: (psi: KtAnnotationEntry, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertDeclaration[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtAnnotationEntry
+    <P : PsiElement> -> [@kotlin.ParameterName] KtAnnotationEntry
+
+'KotlinUAnnotation' @ [176:65] ==> public constructor KotlinUAnnotation(psi: KtAnnotationEntry, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUAnnotation[ClassConstructorDescriptorImpl]
 
 'when (element) {
             is KotlinUSimpleReferenceExpression.KotlinAccessorCallExpression -> element.setterValue != null
@@ -742,8 +754,6 @@ Inferred types:
 
 'KotlinUParameter' @ [227:25] ==> public constructor KotlinUParameter(psi: PsiParameter, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUParameter[ClassConstructorDescriptorImpl]
 
-'UastKotlinPsiParameter' @ [227:42] ==> public companion object defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiParameter[FakeCallableDescriptorForObject]
-
 'create' @ [227:65] ==> public final fun create(parameter: KtParameter, parent: PsiElement, containingElement: UElement, index: Int): PsiParameter defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiParameter.Companion[SimpleFunctionDescriptorImpl]
 
 'p' @ [227:72] ==> value-parameter p: (KtParameter..KtParameter?) defined in org.jetbrains.uast.kotlin.KotlinConverter.convertPsiElement.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -768,15 +778,17 @@ Inferred types:
 
 'Companion' @ [231:79] ==> public companion object defined in org.jetbrains.uast.kotlin.KotlinUExpressionList[FakeCallableDescriptorForObject]
 
+'createClassBody' @ [231:90] ==> public final fun createClassBody(psi: PsiElement?, uastParent: UElement?): KotlinUExpressionList defined in org.jetbrains.uast.kotlin.KotlinUExpressionList.Companion[SimpleFunctionDescriptorImpl]
+
 'el' @ [232:33] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.el(f: () -> UElement?): UElement? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UCatchClause
 
-'build' @ [232:50] ==> local final fun <P : PsiElement> build(ctor: (KtCatchClause, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertPsiElement[SimpleFunctionDescriptorImpl]
+'build' @ [232:50] ==> local final fun <P : PsiElement> build(ctor: (psi: KtCatchClause, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertPsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtCatchClause
+    <P : PsiElement> -> [@kotlin.ParameterName] KtCatchClause
 
-'KotlinConverter' @ [233:32] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
+'KotlinUCatchClause' @ [232:58] ==> public constructor KotlinUCatchClause(psi: KtCatchClause, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUCatchClause[ClassConstructorDescriptorImpl]
 
 'convertExpression' @ [233:48] ==> internal final fun convertExpression(expression: KtExpression, parentCallback: (() -> UElement?)?, requiredType: Class<out UElement>? = ...): UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 
@@ -785,8 +797,6 @@ Inferred types:
 'parentCallback' @ [233:75] ==> value-parameter parentCallback: (() -> UElement?)? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertPsiElement[ValueParameterDescriptorImpl]
 
 'requiredType' @ [233:91] ==> value-parameter requiredType: Class<out UElement>? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertPsiElement[ValueParameterDescriptorImpl]
-
-'KotlinConverter' @ [234:36] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
 'convertExpression' @ [234:52] ==> internal final fun convertExpression(expression: KtExpression, parentCallback: (() -> UElement?)?, requiredType: Class<out UElement>? = ...): UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 
@@ -836,8 +846,6 @@ Inferred types:
 
 'expression' @ [240:23] ==> val expression: PsiElement? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertPsiElement.<anonymous>[LocalVariableDescriptor]
 
-'KotlinConverter' @ [241:40] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
-
 'convertExpression' @ [241:56] ==> internal final fun convertExpression(expression: KtExpression, parentCallback: (() -> UElement?)?, requiredType: Class<out UElement>? = ...): UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 
 'expression' @ [241:74] ==> val expression: PsiElement? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertPsiElement.<anonymous>[LocalVariableDescriptor]
@@ -859,6 +867,8 @@ Inferred types:
 'build' @ [245:103] ==> local final fun <P : PsiElement> build(ctor: (PsiElement, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertPsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
     <P : PsiElement> -> PsiElement
+
+'KotlinStringULiteralExpression' @ [245:111] ==> public constructor KotlinStringULiteralExpression(psi: PsiElement, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinStringULiteralExpression[ClassConstructorDescriptorImpl]
 
 'element' @ [246:41] ==> value-parameter element: PsiElement? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertPsiElement[ValueParameterDescriptorImpl]
 
@@ -906,6 +916,8 @@ Inferred types:
 'build' @ [250:37] ==> local final fun <P : PsiElement> build(ctor: (PsiElement, UElement?) -> UElement): () -> UElement? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertPsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
     <P : PsiElement> -> PsiElement
+
+'UIdentifier' @ [250:45] ==> public constructor UIdentifier(psi: PsiElement?, uastParent: UElement?) defined in org.jetbrains.uast.UIdentifier[DeserializedClassConstructorDescriptor]
 
 'with' @ [262:16] ==> @InlineOnly public inline fun <T, R> with(receiver: Class<out UElement>?, block: Class<out UElement>?.() -> UExpression?): UExpression? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1104,9 +1116,11 @@ Inferred types:
 Inferred types:
     <reified ActualT : UElement> -> UDeclarationsExpression
 
-'build' @ [292:71] ==> local final fun <P : PsiElement> build(ctor: (KtVariableDeclaration, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [292:71] ==> local final fun <P : PsiElement> build(ctor: (psi: KtVariableDeclaration, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtVariableDeclaration
+    <P : PsiElement> -> [@kotlin.ParameterName] KtVariableDeclaration
+
+'convertVariablesDeclaration' @ [292:79] ==> private fun convertVariablesDeclaration(psi: KtVariableDeclaration, parent: UElement?): UDeclarationsExpression defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[SimpleFunctionDescriptorImpl]
 
 'when {
                     expression.entries.isEmpty() -> {
@@ -1204,8 +1218,6 @@ Inferred types:
 
 'KotlinULocalVariable' @ [310:42] ==> public constructor KotlinULocalVariable(psi: PsiLocalVariable, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinULocalVariable[ClassConstructorDescriptorImpl]
 
-'UastKotlinPsiVariable' @ [310:63] ==> public companion object defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable[FakeCallableDescriptorForObject]
-
 'create' @ [310:85] ==> public final fun create(declaration: KtDestructuringDeclaration, containingElement: UElement): PsiLocalVariable defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable.Companion[SimpleFunctionDescriptorImpl]
 
 'expression' @ [310:92] ==> value-parameter expression: KtExpression defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[ValueParameterDescriptorImpl]
@@ -1245,8 +1257,6 @@ Inferred types:
 
 'KotlinULocalVariable' @ [315:25] ==> public constructor KotlinULocalVariable(psi: PsiLocalVariable, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinULocalVariable[ClassConstructorDescriptorImpl]
 
-'UastKotlinPsiVariable' @ [315:46] ==> public companion object defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable[FakeCallableDescriptorForObject]
-
 'create' @ [315:68] ==> public final fun create(declaration: KtVariableDeclaration, parent: PsiElement?, containingElement: UElement, initializer: KtExpression? = ...): PsiLocalVariable defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable.Companion[SimpleFunctionDescriptorImpl]
 
 'entry' @ [315:75] ==> value-parameter entry: (KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?) defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -1275,57 +1285,71 @@ Inferred types:
 Inferred types:
     <reified ActualT : UElement> -> ULabeledExpression
 
-'build' @ [320:64] ==> local final fun <P : PsiElement> build(ctor: (KtLabeledExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [320:64] ==> local final fun <P : PsiElement> build(ctor: (psi: KtLabeledExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtLabeledExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtLabeledExpression
+
+'KotlinULabeledExpression' @ [320:72] ==> public constructor KotlinULabeledExpression(psi: KtLabeledExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinULabeledExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [321:44] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UClassLiteralExpression
 
-'build' @ [321:74] ==> local final fun <P : PsiElement> build(ctor: (KtClassLiteralExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [321:74] ==> local final fun <P : PsiElement> build(ctor: (psi: KtClassLiteralExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtClassLiteralExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtClassLiteralExpression
+
+'KotlinUClassLiteralExpression' @ [321:82] ==> public constructor KotlinUClassLiteralExpression(psi: KtClassLiteralExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUClassLiteralExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [322:45] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UObjectLiteralExpression
 
-'build' @ [322:76] ==> local final fun <P : PsiElement> build(ctor: (KtObjectLiteralExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [322:76] ==> local final fun <P : PsiElement> build(ctor: (psi: KtObjectLiteralExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtObjectLiteralExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtObjectLiteralExpression
+
+'KotlinUObjectLiteralExpression' @ [322:84] ==> public constructor KotlinUObjectLiteralExpression(psi: KtObjectLiteralExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUObjectLiteralExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [323:44] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UQualifiedReferenceExpression
 
-'build' @ [323:80] ==> local final fun <P : PsiElement> build(ctor: (KtDotQualifiedExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [323:80] ==> local final fun <P : PsiElement> build(ctor: (psi: KtDotQualifiedExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtDotQualifiedExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtDotQualifiedExpression
+
+'KotlinUQualifiedReferenceExpression' @ [323:88] ==> public constructor KotlinUQualifiedReferenceExpression(psi: KtDotQualifiedExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUQualifiedReferenceExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [324:45] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UQualifiedReferenceExpression
 
-'build' @ [324:81] ==> local final fun <P : PsiElement> build(ctor: (KtSafeQualifiedExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [324:81] ==> local final fun <P : PsiElement> build(ctor: (psi: KtSafeQualifiedExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtSafeQualifiedExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtSafeQualifiedExpression
+
+'KotlinUSafeQualifiedExpression' @ [324:89] ==> public constructor KotlinUSafeQualifiedExpression(psi: KtSafeQualifiedExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUSafeQualifiedExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [325:42] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> USimpleNameReferenceExpression
 
-'build' @ [325:79] ==> local final fun <P : PsiElement> build(ctor: (KtSimpleNameExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [325:79] ==> local final fun <P : PsiElement> build(ctor: (psi: KtSimpleNameExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtSimpleNameExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtSimpleNameExpression
+
+'KotlinUSimpleReferenceExpression' @ [325:87] ==> public constructor KotlinUSimpleReferenceExpression(psi: KtSimpleNameExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUSimpleReferenceExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [326:36] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UCallExpression
 
-'build' @ [326:58] ==> local final fun <P : PsiElement> build(ctor: (KtCallExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [326:58] ==> local final fun <P : PsiElement> build(ctor: (psi: KtCallExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtCallExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtCallExpression
+
+'KotlinUFunctionCallExpression' @ [326:66] ==> public constructor KotlinUFunctionCallExpression(psi: KtCallExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[ClassConstructorDescriptorImpl]
 
 'if (expression.operationToken == KtTokens.ELVIS) {
                     expr<UExpressionList>(build(::createElvisExpression))
@@ -1344,193 +1368,241 @@ Inferred types:
 Inferred types:
     <reified ActualT : UElement> -> UExpressionList
 
-'build' @ [329:43] ==> local final fun <P : PsiElement> build(ctor: (KtBinaryExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [329:43] ==> local final fun <P : PsiElement> build(ctor: (elvisExpression: KtBinaryExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtBinaryExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtBinaryExpression
+
+'createElvisExpression' @ [329:51] ==> public fun createElvisExpression(elvisExpression: KtBinaryExpression, containingElement: UElement?): UExpression defined in org.jetbrains.uast.kotlin.expressions in file ElvisExpression.kt[SimpleFunctionDescriptorImpl]
 
 'expr' @ [331:22] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UBinaryExpression
 
-'build' @ [331:46] ==> local final fun <P : PsiElement> build(ctor: (KtBinaryExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [331:46] ==> local final fun <P : PsiElement> build(ctor: (psi: KtBinaryExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtBinaryExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtBinaryExpression
+
+'KotlinUBinaryExpression' @ [331:54] ==> public constructor KotlinUBinaryExpression(psi: KtBinaryExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUBinaryExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [333:45] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UParenthesizedExpression
 
-'build' @ [333:76] ==> local final fun <P : PsiElement> build(ctor: (KtParenthesizedExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [333:76] ==> local final fun <P : PsiElement> build(ctor: (psi: KtParenthesizedExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtParenthesizedExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtParenthesizedExpression
+
+'KotlinUParenthesizedExpression' @ [333:84] ==> public constructor KotlinUParenthesizedExpression(psi: KtParenthesizedExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUParenthesizedExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [334:38] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UPrefixExpression
 
-'build' @ [334:62] ==> local final fun <P : PsiElement> build(ctor: (KtPrefixExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [334:62] ==> local final fun <P : PsiElement> build(ctor: (psi: KtPrefixExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtPrefixExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtPrefixExpression
+
+'KotlinUPrefixExpression' @ [334:70] ==> public constructor KotlinUPrefixExpression(psi: KtPrefixExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUPrefixExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [335:39] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UPostfixExpression
 
-'build' @ [335:64] ==> local final fun <P : PsiElement> build(ctor: (KtPostfixExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [335:64] ==> local final fun <P : PsiElement> build(ctor: (psi: KtPostfixExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtPostfixExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtPostfixExpression
+
+'KotlinUPostfixExpression' @ [335:72] ==> public constructor KotlinUPostfixExpression(psi: KtPostfixExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUPostfixExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [336:36] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UThisExpression
 
-'build' @ [336:58] ==> local final fun <P : PsiElement> build(ctor: (KtThisExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [336:58] ==> local final fun <P : PsiElement> build(ctor: (psi: KtThisExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtThisExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtThisExpression
+
+'KotlinUThisExpression' @ [336:66] ==> public constructor KotlinUThisExpression(psi: KtThisExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUThisExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [337:37] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> USuperExpression
 
-'build' @ [337:60] ==> local final fun <P : PsiElement> build(ctor: (KtSuperExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [337:60] ==> local final fun <P : PsiElement> build(ctor: (psi: KtSuperExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtSuperExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtSuperExpression
+
+'KotlinUSuperExpression' @ [337:68] ==> public constructor KotlinUSuperExpression(psi: KtSuperExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUSuperExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [338:49] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UCallableReferenceExpression
 
-'build' @ [338:84] ==> local final fun <P : PsiElement> build(ctor: (KtCallableReferenceExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [338:84] ==> local final fun <P : PsiElement> build(ctor: (psi: KtCallableReferenceExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtCallableReferenceExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtCallableReferenceExpression
+
+'KotlinUCallableReferenceExpression' @ [338:92] ==> public constructor KotlinUCallableReferenceExpression(psi: KtCallableReferenceExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUCallableReferenceExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [339:34] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UBinaryExpressionWithType
 
-'build' @ [339:66] ==> local final fun <P : PsiElement> build(ctor: (KtIsExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [339:66] ==> local final fun <P : PsiElement> build(ctor: (psi: KtIsExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtIsExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtIsExpression
+
+'KotlinUTypeCheckExpression' @ [339:74] ==> public constructor KotlinUTypeCheckExpression(psi: KtIsExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUTypeCheckExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [340:34] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UIfExpression
 
-'build' @ [340:54] ==> local final fun <P : PsiElement> build(ctor: (KtIfExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [340:54] ==> local final fun <P : PsiElement> build(ctor: (psi: KtIfExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtIfExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtIfExpression
+
+'KotlinUIfExpression' @ [340:62] ==> public constructor KotlinUIfExpression(psi: KtIfExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUIfExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [341:37] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UWhileExpression
 
-'build' @ [341:60] ==> local final fun <P : PsiElement> build(ctor: (KtWhileExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [341:60] ==> local final fun <P : PsiElement> build(ctor: (psi: KtWhileExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtWhileExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtWhileExpression
+
+'KotlinUWhileExpression' @ [341:68] ==> public constructor KotlinUWhileExpression(psi: KtWhileExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUWhileExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [342:39] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UDoWhileExpression
 
-'build' @ [342:64] ==> local final fun <P : PsiElement> build(ctor: (KtDoWhileExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [342:64] ==> local final fun <P : PsiElement> build(ctor: (psi: KtDoWhileExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtDoWhileExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtDoWhileExpression
+
+'KotlinUDoWhileExpression' @ [342:72] ==> public constructor KotlinUDoWhileExpression(psi: KtDoWhileExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUDoWhileExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [343:35] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UForEachExpression
 
-'build' @ [343:60] ==> local final fun <P : PsiElement> build(ctor: (KtForExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [343:60] ==> local final fun <P : PsiElement> build(ctor: (psi: KtForExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtForExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtForExpression
+
+'KotlinUForEachExpression' @ [343:68] ==> public constructor KotlinUForEachExpression(psi: KtForExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUForEachExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [344:36] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> USwitchExpression
 
-'build' @ [344:60] ==> local final fun <P : PsiElement> build(ctor: (KtWhenExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [344:60] ==> local final fun <P : PsiElement> build(ctor: (psi: KtWhenExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtWhenExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtWhenExpression
+
+'KotlinUSwitchExpression' @ [344:68] ==> public constructor KotlinUSwitchExpression(psi: KtWhenExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUSwitchExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [345:37] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UBreakExpression
 
-'build' @ [345:60] ==> local final fun <P : PsiElement> build(ctor: (KtBreakExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [345:60] ==> local final fun <P : PsiElement> build(ctor: (psi: KtBreakExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtBreakExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtBreakExpression
+
+'KotlinUBreakExpression' @ [345:68] ==> public constructor KotlinUBreakExpression(psi: KtBreakExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.expressions.KotlinUBreakExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [346:40] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UContinueExpression
 
-'build' @ [346:66] ==> local final fun <P : PsiElement> build(ctor: (KtContinueExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [346:66] ==> local final fun <P : PsiElement> build(ctor: (psi: KtContinueExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtContinueExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtContinueExpression
+
+'KotlinUContinueExpression' @ [346:74] ==> public constructor KotlinUContinueExpression(psi: KtContinueExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.expressions.KotlinUContinueExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [347:38] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UReturnExpression
 
-'build' @ [347:62] ==> local final fun <P : PsiElement> build(ctor: (KtReturnExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [347:62] ==> local final fun <P : PsiElement> build(ctor: (psi: KtReturnExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtReturnExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtReturnExpression
+
+'KotlinUReturnExpression' @ [347:70] ==> public constructor KotlinUReturnExpression(psi: KtReturnExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUReturnExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [348:37] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UThrowExpression
 
-'build' @ [348:60] ==> local final fun <P : PsiElement> build(ctor: (KtThrowExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [348:60] ==> local final fun <P : PsiElement> build(ctor: (psi: KtThrowExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtThrowExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtThrowExpression
+
+'KotlinUThrowExpression' @ [348:68] ==> public constructor KotlinUThrowExpression(psi: KtThrowExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUThrowExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [349:37] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UBlockExpression
 
-'build' @ [349:60] ==> local final fun <P : PsiElement> build(ctor: (KtBlockExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [349:60] ==> local final fun <P : PsiElement> build(ctor: (psi: KtBlockExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtBlockExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtBlockExpression
+
+'KotlinUBlockExpression' @ [349:68] ==> public constructor KotlinUBlockExpression(psi: KtBlockExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUBlockExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [350:40] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> ULiteralExpression
 
-'build' @ [350:65] ==> local final fun <P : PsiElement> build(ctor: (KtConstantExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [350:65] ==> local final fun <P : PsiElement> build(ctor: (psi: KtConstantExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtConstantExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtConstantExpression
+
+'KotlinULiteralExpression' @ [350:73] ==> public constructor KotlinULiteralExpression(psi: KtConstantExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinULiteralExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [351:35] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UTryExpression
 
-'build' @ [351:56] ==> local final fun <P : PsiElement> build(ctor: (KtTryExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [351:56] ==> local final fun <P : PsiElement> build(ctor: (psi: KtTryExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtTryExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtTryExpression
+
+'KotlinUTryExpression' @ [351:64] ==> public constructor KotlinUTryExpression(psi: KtTryExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUTryExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [352:43] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UArrayAccessExpression
 
-'build' @ [352:72] ==> local final fun <P : PsiElement> build(ctor: (KtArrayAccessExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [352:72] ==> local final fun <P : PsiElement> build(ctor: (psi: KtArrayAccessExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtArrayAccessExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtArrayAccessExpression
+
+'KotlinUArrayAccessExpression' @ [352:80] ==> public constructor KotlinUArrayAccessExpression(psi: KtArrayAccessExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUArrayAccessExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [353:38] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> ULambdaExpression
 
-'build' @ [353:62] ==> local final fun <P : PsiElement> build(ctor: (KtLambdaExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [353:62] ==> local final fun <P : PsiElement> build(ctor: (psi: KtLambdaExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtLambdaExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtLambdaExpression
+
+'KotlinULambdaExpression' @ [353:70] ==> public constructor KotlinULambdaExpression(psi: KtLambdaExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinULambdaExpression[ClassConstructorDescriptorImpl]
 
 'expr' @ [354:49] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UBinaryExpressionWithType
 
-'build' @ [354:81] ==> local final fun <P : PsiElement> build(ctor: (KtBinaryExpressionWithTypeRHS, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [354:81] ==> local final fun <P : PsiElement> build(ctor: (psi: KtBinaryExpressionWithTypeRHS, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtBinaryExpressionWithTypeRHS
+    <P : PsiElement> -> [@kotlin.ParameterName] KtBinaryExpressionWithTypeRHS
+
+'KotlinUBinaryExpressionWithType' @ [354:89] ==> public constructor KotlinUBinaryExpressionWithType(psi: KtBinaryExpressionWithTypeRHS, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUBinaryExpressionWithType[ClassConstructorDescriptorImpl]
 
 'expr' @ [355:35] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1567,8 +1639,6 @@ Inferred types:
 Inferred types:
     <T> -> UClass
 
-'KotlinUClass' @ [359:47] ==> public companion object defined in org.jetbrains.uast.kotlin.KotlinUClass[FakeCallableDescriptorForObject]
-
 'create' @ [359:60] ==> public final fun create(psi: KtLightClass, containingElement: UElement?): UClass defined in org.jetbrains.uast.kotlin.KotlinUClass.Companion[SimpleFunctionDescriptorImpl]
 
 'lightClass' @ [359:67] ==> value-parameter lightClass: KtLightClass defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -1596,25 +1666,31 @@ Inferred types:
 Inferred types:
     <reified ActualT : UElement> -> ULambdaExpression
 
-'build' @ [364:41] ==> local final fun <P : PsiElement> build(ctor: (KtFunction, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [364:41] ==> local final fun <P : PsiElement> build(ctor: (function: KtFunction, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtFunction
+    <P : PsiElement> -> [@kotlin.ParameterName] KtFunction
+
+'createLocalFunctionLambdaExpression' @ [364:49] ==> public fun createLocalFunctionLambdaExpression(function: KtFunction, parent: UElement?): ULambdaExpression defined in org.jetbrains.uast.kotlin.expressions in file LocalFunction.kt[SimpleFunctionDescriptorImpl]
 
 'expr' @ [367:17] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UDeclarationsExpression
 
-'build' @ [367:47] ==> local final fun <P : PsiElement> build(ctor: (KtFunction, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [367:47] ==> local final fun <P : PsiElement> build(ctor: (function: KtFunction, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtFunction
+    <P : PsiElement> -> [@kotlin.ParameterName] KtFunction
+
+'createLocalFunctionDeclaration' @ [367:55] ==> public fun createLocalFunctionDeclaration(function: KtFunction, parent: UElement?): UDeclarationsExpression defined in org.jetbrains.uast.kotlin.expressions in file LocalFunction.kt[SimpleFunctionDescriptorImpl]
 
 'expr' @ [370:21] ==> internal inline fun <reified ActualT : UElement> Class<out UElement>?.expr(f: () -> UExpression?): UExpression? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified ActualT : UElement> -> UExpression
 
-'build' @ [370:39] ==> local final fun <P : PsiElement> build(ctor: (KtExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
+'build' @ [370:39] ==> local final fun <P : PsiElement> build(ctor: (psi: KtExpression, UElement?) -> UExpression): () -> UExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : PsiElement> -> KtExpression
+    <P : PsiElement> -> [@kotlin.ParameterName] KtExpression
+
+'UnknownKotlinExpression' @ [370:47] ==> public constructor UnknownKotlinExpression(psi: KtExpression, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.UnknownKotlinExpression[ClassConstructorDescriptorImpl]
 
 'expression' @ [375:16] ==> value-parameter expression: KtExpression? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertOrEmpty[ValueParameterDescriptorImpl]
 
@@ -1629,7 +1705,7 @@ Inferred types:
 
 'parent' @ [375:56] ==> value-parameter parent: UElement? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertOrEmpty[ValueParameterDescriptorImpl]
 
-'toCallback' @ [375:63] ==> internal fun UElement?.toCallback(): (() -> UElement?)? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'toCallback' @ [375:63] ==> internal fun UElement?.toCallback(): (() -> UElement?)? defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[SimpleFunctionDescriptorImpl]
 
 'UastEmptyExpression' @ [375:88] ==> public object UastEmptyExpression : UExpression defined in org.jetbrains.uast[FakeCallableDescriptorForObject]
 
@@ -1645,7 +1721,7 @@ Inferred types:
 
 'parent' @ [379:70] ==> value-parameter parent: UElement? defined in org.jetbrains.uast.kotlin.KotlinConverter.convertOrNull[ValueParameterDescriptorImpl]
 
-'toCallback' @ [379:77] ==> internal fun UElement?.toCallback(): (() -> UElement?)? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'toCallback' @ [379:77] ==> internal fun UElement?.toCallback(): (() -> UElement?)? defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[SimpleFunctionDescriptorImpl]
 
 'createAnalyzableProperty' @ [383:13] ==> internal final fun KtPsiFactory.createAnalyzableProperty(text: String, context: PsiElement): KtProperty defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 
@@ -1697,7 +1773,7 @@ Inferred types:
 
 'getChildOfType' @ [396:25] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getChildOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtExpression..KtExpression?)>): KtExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'this' @ [396:40] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinConverter.getExpression[ReceiverParameterDescriptorImpl]
 
@@ -1710,8 +1786,6 @@ Inferred types:
 'psi' @ [403:36] ==> public abstract val psi: PsiElement? defined in org.jetbrains.uast.UElement[DeserializedPropertyDescriptor]
 
 'KotlinUAnnotatedLocalVariable' @ [404:20] ==> public constructor KotlinUAnnotatedLocalVariable(psi: PsiLocalVariable, uastParent: UElement?, computeAnnotations: (parent: UElement) -> List<UAnnotation>) defined in org.jetbrains.uast.kotlin.KotlinUAnnotatedLocalVariable[ClassConstructorDescriptorImpl]
-
-'UastKotlinPsiVariable' @ [405:13] ==> public companion object defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable[FakeCallableDescriptorForObject]
 
 'create' @ [405:35] ==> public final fun create(declaration: KtVariableDeclaration, parent: PsiElement?, containingElement: UElement, initializer: KtExpression? = ...): PsiLocalVariable defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable.Companion[SimpleFunctionDescriptorImpl]
 

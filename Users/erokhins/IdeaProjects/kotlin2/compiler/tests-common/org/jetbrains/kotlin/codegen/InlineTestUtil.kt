@@ -458,7 +458,7 @@ Inferred types:
 
 'create' @ [204:42] ==> @Nullable public open fun <T : (FileBasedKotlinClass..FileBasedKotlinClass?)> create(@NotNull p0: ByteArray, @NotNull p1: ((ClassId..ClassId?), (Int..Int?), (KotlinClassHeader..KotlinClassHeader?), (FileBasedKotlinClass.InnerClassesInfo..FileBasedKotlinClass.InnerClassesInfo?)) -> (<no name provided>..<no name provided>?)): <no name provided>? defined in org.jetbrains.kotlin.load.kotlin.FileBasedKotlinClass[JavaMethodDescriptor]
 Inferred types:
-    <T : (FileBasedKotlinClass..FileBasedKotlinClass?)> -> <no name provided>
+    <T : (FileBasedKotlinClass..FileBasedKotlinClass?)> -> (org.jetbrains.kotlin.codegen.InlineTestUtil.loadBinaryClass.<anonymous>.<no name provided>..org.jetbrains.kotlin.codegen.InlineTestUtil.loadBinaryClass.<anonymous>.<no name provided>?)
 
 'file' @ [204:49] ==> value-parameter file: OutputFile defined in org.jetbrains.kotlin.codegen.InlineTestUtil.loadBinaryClass[ValueParameterDescriptorImpl]
 

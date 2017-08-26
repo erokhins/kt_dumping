@@ -43,11 +43,7 @@ Inferred types:
 
 'getContributedDescriptors' @ [77:22] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [77:48] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CALLABLES' @ [77:69] ==> @field:JvmField public final val CALLABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'MemberScope' @ [77:80] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'ALL_NAME_FILTER' @ [77:92] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 
@@ -596,8 +592,8 @@ Inferred types:
 
 'get' @ [249:55] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [249:74] ==> public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -758,8 +754,6 @@ Inferred types:
 
 'member' @ [302:55] ==> value-parameter member: CallableMemberDescriptor defined in org.jetbrains.kotlin.codegen.MultifileClassCodegenImpl.generateDelegateToCompiledMember[ValueParameterDescriptorImpl]
 
-'OwnerKind' @ [302:63] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
 'PACKAGE' @ [302:73] ==> enum entry PACKAGE defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [302:110] ==> public final val DEFAULT: (DefaultParameterValueLoader..DefaultParameterValueLoader?) defined in org.jetbrains.kotlin.codegen.DefaultParameterValueLoader[JavaPropertyDescriptor]
@@ -818,7 +812,7 @@ Inferred types:
 
 'METADATA_MULTIFILE_PARTS_INHERIT_FLAG' @ [325:78] ==> public const final val METADATA_MULTIFILE_PARTS_INHERIT_FLAG: Int defined in org.jetbrains.kotlin.load.java.JvmAnnotationNames[JavaPropertyDescriptor]
 
-'writeKotlinMetadata' @ [327:9] ==> public fun writeKotlinMetadata(cb: ClassBuilder, state: GenerationState, kind: KotlinClassHeader.Kind, extraFlags: Int, action: (AnnotationVisitor) -> Unit): Unit defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'writeKotlinMetadata' @ [327:9] ==> public fun writeKotlinMetadata(cb: ClassBuilder, state: GenerationState, kind: KotlinClassHeader.Kind, extraFlags: Int, action: (AnnotationVisitor) -> Unit): Unit defined in org.jetbrains.kotlin.codegen in file writeAnnotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'classBuilder' @ [327:29] ==> private final val classBuilder: ClassBuilderOnDemand defined in org.jetbrains.kotlin.codegen.MultifileClassCodegenImpl[PropertyDescriptorImpl]
 
@@ -896,8 +890,8 @@ Inferred types:
 
 'get' @ [357:47] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>..ReadOnlySlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>?), p1: (KtFile..KtFile?)): PackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtFile
-    <V : (Any..Any?)> -> PackageFragmentDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor?)
 
 'FILE_TO_PACKAGE_FRAGMENT' @ [357:66] ==> public final val FILE_TO_PACKAGE_FRAGMENT: (WritableSlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>..WritableSlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

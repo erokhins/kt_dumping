@@ -325,7 +325,7 @@ Inferred types:
 
 'java' @ [134:96] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'input' @ [140:20] ==> value-parameter input: DataInput defined in org.jetbrains.kotlin.incremental.storage.ConstantsMapExternalizer.read[ValueParameterDescriptorImpl]
 
@@ -366,9 +366,9 @@ Inferred types:
                 Kind.LONG -> input.readLong()
                 Kind.DOUBLE -> input.readDouble()
                 Kind.STRING -> IOUtil.readString(input)!!
-            }' @ [147:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}, entry1: {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}, entry2: {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}, entry3: {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}, entry4: {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}): {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}[SimpleFunctionDescriptorImpl]
+            }' @ [147:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any, entry2: Any, entry3: Any, entry4: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
 
 'kind' @ [147:36] ==> val kind: ConstantsMapExternalizer.Kind defined in org.jetbrains.kotlin.incremental.storage.ConstantsMapExternalizer.read.<anonymous>[LocalVariableDescriptor]
 
@@ -506,7 +506,7 @@ Inferred types:
 
 'HashSet' @ [214:102] ==> public constructor HashSet<E : (Any..Any?)>() defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <E : (Any..Any?)> -> String
 
 'CollectionExternalizer<Int>' @ [216:36] ==> public constructor CollectionExternalizer<T>(elementExternalizer: DataExternalizer<Int>, newCollection: () -> MutableCollection<Int>) defined in org.jetbrains.kotlin.incremental.storage.CollectionExternalizer[ClassConstructorDescriptorImpl]
 Inferred types:

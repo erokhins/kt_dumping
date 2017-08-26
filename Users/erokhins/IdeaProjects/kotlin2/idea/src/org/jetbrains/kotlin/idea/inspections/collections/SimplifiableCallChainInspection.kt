@@ -58,7 +58,7 @@ Inferred types:
 
 'resultingDescriptor' @ [53:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'fqNameOrNull' @ [53:63] ==> public fun CallableDescriptor.fqNameOrNull(): FqName? defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -72,7 +72,7 @@ Inferred types:
 
 'extensionReceiver' @ [56:63] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'type' @ [56:82] ==> public final val ReceiverValue.type: KotlinType[MyPropertyDescriptor]
 
@@ -116,7 +116,7 @@ Inferred types:
 
 'resultingDescriptor' @ [65:72] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'secondResultingDescriptor' @ [66:25] ==> val secondResultingDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.inspections.collections.SimplifiableCallChainInspection.buildVisitor.<no name provided>.visitQualifiedExpression[LocalVariableDescriptor]
 
@@ -132,7 +132,7 @@ Inferred types:
 
 'valueArguments' @ [67:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'any' @ [67:59] ==> public inline fun <K, V> Map<out (ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>.any(predicate: (Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -153,7 +153,7 @@ Inferred types:
 
 'type' @ [68:35] ==> public final val ValueParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'isFunctionOfAnyKind' @ [68:40] ==> public fun KotlinType.isFunctionOfAnyKind(): Boolean defined in org.jetbrains.kotlin.idea.inspections.collections[SimpleFunctionDescriptorImpl]
+'isFunctionOfAnyKind' @ [68:40] ==> public fun KotlinType.isFunctionOfAnyKind(): Boolean defined in org.jetbrains.kotlin.idea.inspections.collections in file FunctionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedArgument' @ [69:25] ==> val resolvedArgument: (ResolvedValueArgument..ResolvedValueArgument?) defined in org.jetbrains.kotlin.idea.inspections.collections.SimplifiableCallChainInspection.buildVisitor.<no name provided>.visitQualifiedExpression.<anonymous>[LocalVariableDescriptor]
 
@@ -167,7 +167,7 @@ Inferred types:
 
 'firstResolvedCall' @ [74:30] ==> val firstResolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.inspections.collections.SimplifiableCallChainInspection.buildVisitor.<no name provided>.visitQualifiedExpression[LocalVariableDescriptor]
 
-'hasLastFunctionalParameterWithResult' @ [74:48] ==> public fun ResolvedCall<*>.hasLastFunctionalParameterWithResult(context: BindingContext, predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.inspections.collections[SimpleFunctionDescriptorImpl]
+'hasLastFunctionalParameterWithResult' @ [74:48] ==> public fun ResolvedCall<*>.hasLastFunctionalParameterWithResult(context: BindingContext, predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.inspections.collections in file FunctionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [74:85] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.inspections.collections.SimplifiableCallChainInspection.buildVisitor.<no name provided>.visitQualifiedExpression[LocalVariableDescriptor]
 

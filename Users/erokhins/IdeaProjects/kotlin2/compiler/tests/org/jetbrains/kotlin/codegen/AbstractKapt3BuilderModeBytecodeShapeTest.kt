@@ -24,8 +24,6 @@
 
 'txtFile' @ [35:44] ==> val txtFile: File defined in org.jetbrains.kotlin.codegen.AbstractKapt3BuilderModeBytecodeShapeTest.doMultiFileTest[LocalVariableDescriptor]
 
-'BytecodeListingTextCollectingVisitor' @ [35:53] ==> public companion object defined in org.jetbrains.kotlin.codegen.BytecodeListingTextCollectingVisitor[FakeCallableDescriptorForObject]
-
 'getText' @ [35:90] ==> @JvmOverloads public final fun getText(factory: ClassFileFactory, filter: BytecodeListingTextCollectingVisitor.Filter = ..., replaceHash: Boolean = ..., withSignatures: Boolean = ...): String defined in org.jetbrains.kotlin.codegen.BytecodeListingTextCollectingVisitor.Companion[DeserializedSimpleFunctionDescriptor]
 
 'classFileFactory' @ [35:98] ==> protected/*protected and package*/ final var classFileFactory: (ClassFileFactory..ClassFileFactory?) defined in org.jetbrains.kotlin.codegen.AbstractKapt3BuilderModeBytecodeShapeTest[JavaPropertyDescriptor]

@@ -1188,7 +1188,7 @@ Inferred types:
 
 'original' @ [341:21] ==> value-parameter original: T defined in org.jetbrains.kotlin.ir.util.DeepCopyIrTreeWithSymbols.transformValueArguments[ValueParameterDescriptorImpl]
 
-'getValueArgument' @ [341:30] ==> public fun IrMemberAccessExpression.getValueArgument(valueParameterDescriptor: ValueParameterDescriptor): IrExpression? defined in org.jetbrains.kotlin.ir.expressions[SimpleFunctionDescriptorImpl]
+'getValueArgument' @ [341:30] ==> public fun IrMemberAccessExpression.getValueArgument(valueParameterDescriptor: ValueParameterDescriptor): IrExpression? defined in org.jetbrains.kotlin.ir.expressions in file IrMemberAccessExpression.kt[SimpleFunctionDescriptorImpl]
 
 'valueParameter' @ [341:47] ==> value-parameter valueParameter: ValueParameterDescriptor defined in org.jetbrains.kotlin.ir.util.DeepCopyIrTreeWithSymbols.transformValueArguments.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1664,7 +1664,7 @@ Inferred types:
 
 'irLoop' @ [459:69] ==> value-parameter irLoop: IrLoop defined in org.jetbrains.kotlin.ir.util.DeepCopyIrTreeWithSymbols.getNonTransformedLoop[ValueParameterDescriptorImpl]
 
-'render' @ [459:76] ==> public fun IrElement.render(): String defined in org.jetbrains.kotlin.ir.util[SimpleFunctionDescriptorImpl]
+'render' @ [459:76] ==> public fun IrElement.render(): String defined in org.jetbrains.kotlin.ir.util in file RenderIrElement.kt[SimpleFunctionDescriptorImpl]
 
 'IrWhileLoopImpl' @ [462:13] ==> public constructor IrWhileLoopImpl(startOffset: Int, endOffset: Int, type: KotlinType, origin: IrStatementOrigin?) defined in org.jetbrains.kotlin.ir.expressions.impl.IrWhileLoopImpl[ClassConstructorDescriptorImpl]
 

@@ -207,7 +207,7 @@ Inferred types:
 
 'AtomicInteger' @ [102:26] ==> public constructor AtomicInteger(p0: Int) defined in java.util.concurrent.atomic.AtomicInteger[JavaClassConstructorDescriptor]
 
-'buildTestSuite' @ [104:17] ==> public fun buildTestSuite(create: (MethodNode, Class<*>, InterpreterResult?) -> TestCase): TestSuite defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'buildTestSuite' @ [104:17] ==> public fun buildTestSuite(create: (MethodNode, Class<*>, InterpreterResult?) -> TestCase): TestSuite defined in org.jetbrains.eval4j.test in file suiteBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'remainingTests' @ [106:9] ==> var remainingTests: AtomicInteger defined in org.jetbrains.eval4j.jdi.test.suite[LocalVariableDescriptor]
 
@@ -215,7 +215,7 @@ Inferred types:
 
 'TestCase' @ [107:18] ==> public constructor TestCase(p0: (String..String?)) defined in junit.framework.TestCase[JavaClassConstructorDescriptor]
 
-'getTestName' @ [107:27] ==> public fun getTestName(methodName: String): String defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'getTestName' @ [107:27] ==> public fun getTestName(methodName: String): String defined in org.jetbrains.eval4j.test in file util.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [107:39] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.eval4j.jdi.test.suite.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -269,7 +269,7 @@ Inferred types:
 
 'name' @ [115:97] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'listOf' @ [115:128] ==> @InlineOnly public inline fun <T> listOf(): List<Value> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

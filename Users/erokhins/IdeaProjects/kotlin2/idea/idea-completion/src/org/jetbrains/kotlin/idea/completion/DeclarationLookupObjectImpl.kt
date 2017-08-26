@@ -37,6 +37,8 @@ Inferred types:
     <T> -> String
     <R> -> FqName
 
+'FqName' @ [45:65] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
+
 'super' @ [48:31] ==> <this> defined in org.jetbrains.kotlin.idea.completion.DeclarationLookupObjectImpl[LazyClassReceiverParameterDescriptor]
 
 'toString' @ [48:37] ==> public open fun toString(): String defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
@@ -74,13 +76,13 @@ Inferred types:
 
 'java' @ [59:42] ==> public val <T> KClass<out DeclarationLookupObjectImpl>.java: Class<out DeclarationLookupObjectImpl> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DeclarationLookupObjectImpl
+    <T> -> Captured(out DeclarationLookupObjectImpl)
 
 'other' @ [59:50] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.idea.completion.DeclarationLookupObjectImpl.equals[ValueParameterDescriptorImpl]
 
 'java' @ [59:63] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'other' @ [60:28] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.idea.completion.DeclarationLookupObjectImpl.equals[ValueParameterDescriptorImpl]
 

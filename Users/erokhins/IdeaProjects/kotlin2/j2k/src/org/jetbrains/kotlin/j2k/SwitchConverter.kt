@@ -165,6 +165,8 @@ Inferred types:
 
 'result' @ [59:27] ==> val result: ArrayList<WhenEntry> defined in org.jetbrains.kotlin.j2k.SwitchConverter.switchBodyToWhenEntries[LocalVariableDescriptor]
 
+'add' @ [59:35] ==> public open fun add(element: WhenEntry): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
+
 'result' @ [60:16] ==> val result: ArrayList<WhenEntry> defined in org.jetbrains.kotlin.j2k.SwitchConverter.switchBodyToWhenEntries[LocalVariableDescriptor]
 
 'ArrayList' @ [64:21] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
@@ -391,8 +393,6 @@ Inferred types:
 'single' @ [122:24] ==> public fun <T> List<Statement>.single(): Statement defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Statement
-
-'Block' @ [124:13] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Block[FakeCallableDescriptorForObject]
 
 'of' @ [124:19] ==> public final fun of(statements: List<Statement>): Block defined in org.jetbrains.kotlin.j2k.ast.Block.Companion[SimpleFunctionDescriptorImpl]
 

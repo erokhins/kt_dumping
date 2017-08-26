@@ -24,10 +24,10 @@ Inferred types:
 Inferred types:
     <T : (PsiElement..PsiElement?)> -> T
 
-'ifEmpty' @ [32:93] ==> public inline fun <T, C : Collection<(T..T?)>> MutableSet<out (T..T?)>.ifEmpty(body: () -> MutableSet<out (T..T?)>): MutableSet<out (T..T?)> defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
+'ifEmpty' @ [32:93] ==> public inline fun <T, C : Collection<(T..T?)>> (MutableSet<out (T..T?)>..Set<(T..T?)>?).ifEmpty(body: () -> (MutableSet<out (T..T?)>..Set<(T..T?)>?)): (MutableSet<out (T..T?)>..Set<(T..T?)>?) defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (T..T?)
-    <C : Collection<T>> -> MutableSet<out (T..T?)>
+    <C : Collection<T>> -> (kotlin.collections.MutableSet<out (T..T?)>..kotlin.collections.Set<(T..T?)>?)
 
 'buildString' @ [33:13] ==> @InlineOnly public inline fun buildString(builderAction: StringBuilder /* = StringBuilder */.() -> Unit): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -35,13 +35,13 @@ Inferred types:
 
 'message' @ [34:42] ==> public open fun message(@NotNull @PropertyKey p0: String, @NotNull vararg p1: (Any..Any?)): (String..String?) defined in com.intellij.refactoring.RefactoringBundle[JavaMethodDescriptor]
 
-'dependencies' @ [34:104] ==> val dependencies: MutableSet<out (T..T?)> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinInterfaceDependencyMemberInfoModel.<init>.<anonymous>[LocalVariableDescriptor]
+'dependencies' @ [34:104] ==> val dependencies: (MutableSet<out (T..T?)>..Set<(T..T?)>?) defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinInterfaceDependencyMemberInfoModel.<init>.<anonymous>[LocalVariableDescriptor]
 
 'size' @ [34:117] ==> public abstract val size: Int defined in kotlin.collections.MutableSet[DeserializedPropertyDescriptor]
 
 'append' @ [35:17] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'dependencies' @ [36:17] ==> val dependencies: MutableSet<out (T..T?)> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinInterfaceDependencyMemberInfoModel.<init>.<anonymous>[LocalVariableDescriptor]
+'dependencies' @ [36:17] ==> val dependencies: (MutableSet<out (T..T?)>..Set<(T..T?)>?) defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinInterfaceDependencyMemberInfoModel.<init>.<anonymous>[LocalVariableDescriptor]
 
 'joinTo' @ [36:30] ==> public fun <T, A : Appendable /* = Appendable */> Iterable<(T..T?)>.joinTo(buffer: StringBuilder /* = StringBuilder */, separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: (((T..T?)) -> CharSequence)? = ...): StringBuilder /* = StringBuilder */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

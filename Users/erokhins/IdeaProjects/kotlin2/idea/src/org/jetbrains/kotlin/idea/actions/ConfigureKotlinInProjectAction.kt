@@ -4,7 +4,7 @@
 
 'project' @ [35:25] ==> public final val AnActionEvent.project: Project?[MyPropertyDescriptor]
 
-'getConfigurableModules' @ [37:23] ==> public fun getConfigurableModules(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getConfigurableModules' @ [37:23] ==> public fun getConfigurableModules(project: Project): List<ModuleSourceRootGroup> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [37:46] ==> val project: Project defined in org.jetbrains.kotlin.idea.actions.ConfigureKotlinInProjectAction.actionPerformed[LocalVariableDescriptor]
 
@@ -13,6 +13,8 @@
 'all' @ [38:21] ==> public inline fun <T> Iterable<ModuleSourceRootGroup>.all(predicate: (ModuleSourceRootGroup) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ModuleSourceRootGroup
+
+'isModuleConfigured' @ [38:27] ==> public fun isModuleConfigured(moduleSourceRootGroup: ModuleSourceRootGroup): Boolean defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'showInfoMessage' @ [39:22] ==> public open fun showInfoMessage(p0: (String..String?), @NotNull @Nls p1: String): Unit defined in com.intellij.openapi.ui.Messages[JavaMethodDescriptor]
 
@@ -89,7 +91,7 @@ Inferred types:
 
 'ConfigureKotlinInProjectAction' @ [56:41] ==> public constructor ConfigureKotlinInProjectAction() defined in org.jetbrains.kotlin.idea.actions.ConfigureKotlinInProjectAction[ClassConstructorDescriptorImpl]
 
-'getAbleToRunConfigurators' @ [57:65] ==> public fun getAbleToRunConfigurators(project: Project): Collection<KotlinProjectConfigurator> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getAbleToRunConfigurators' @ [57:65] ==> public fun getAbleToRunConfigurators(project: Project): Collection<KotlinProjectConfigurator> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [57:91] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.actions.ConfigureKotlinJsInProjectAction.getApplicableConfigurators[ValueParameterDescriptorImpl]
 
@@ -115,13 +117,15 @@ Inferred types:
 
 'project' @ [63:64] ==> val project: Project? defined in org.jetbrains.kotlin.idea.actions.ConfigureKotlinJsInProjectAction.update[LocalVariableDescriptor]
 
-'allModules' @ [63:72] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'allModules' @ [63:72] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'all' @ [63:85] ==> public inline fun <T> Iterable<(Module..Module?)>.all(predicate: ((Module..Module?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.intellij.openapi.module.Module..com.intellij.openapi.module.Module?)
 
 'KotlinPluginUtil' @ [63:89] ==> public constructor KotlinPluginUtil() defined in org.jetbrains.kotlin.idea.KotlinPluginUtil[JavaClassConstructorDescriptor]
+
+'isAndroidGradleModule' @ [63:107] ==> public open fun isAndroidGradleModule(@NotNull module: Module): Boolean defined in org.jetbrains.kotlin.idea.KotlinPluginUtil[JavaMethodDescriptor]
 
 'e' @ [64:13] ==> value-parameter e: AnActionEvent defined in org.jetbrains.kotlin.idea.actions.ConfigureKotlinJsInProjectAction.update[ValueParameterDescriptorImpl]
 
@@ -131,7 +135,7 @@ Inferred types:
 
 'ConfigureKotlinInProjectAction' @ [69:43] ==> public constructor ConfigureKotlinInProjectAction() defined in org.jetbrains.kotlin.idea.actions.ConfigureKotlinInProjectAction[ClassConstructorDescriptorImpl]
 
-'getAbleToRunConfigurators' @ [70:65] ==> public fun getAbleToRunConfigurators(project: Project): Collection<KotlinProjectConfigurator> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getAbleToRunConfigurators' @ [70:65] ==> public fun getAbleToRunConfigurators(project: Project): Collection<KotlinProjectConfigurator> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [70:91] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.actions.ConfigureKotlinJavaInProjectAction.getApplicableConfigurators[ValueParameterDescriptorImpl]
 

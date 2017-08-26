@@ -200,8 +200,6 @@ Inferred types:
 
 'getProject' @ [112:39] ==> protected/*protected and package*/ open fun getProject(): (Project..Project?) defined in org.jetbrains.kotlin.ant.KotlinCompilerAdapter[JavaMethodDescriptor]
 
-'KotlinAntTaskUtil' @ [112:53] ==> internal object KotlinAntTaskUtil defined in org.jetbrains.kotlin.ant in file KotlinAntTaskUtil.kt[FakeCallableDescriptorForObject]
-
 'runtimeJar' @ [112:71] ==> public final val runtimeJar: File defined in org.jetbrains.kotlin.ant.KotlinAntTaskUtil[PropertyDescriptorImpl]
 
 'absolutePath' @ [112:82] ==> public final val File.absolutePath: (String..String?)[MyPropertyDescriptor]
@@ -217,8 +215,6 @@ Inferred types:
 'Path' @ [116:34] ==> public constructor Path(p0: (Project..Project?), p1: (String..String?)) defined in org.apache.tools.ant.types.Path[JavaClassConstructorDescriptor]
 
 'getProject' @ [116:39] ==> protected/*protected and package*/ open fun getProject(): (Project..Project?) defined in org.jetbrains.kotlin.ant.KotlinCompilerAdapter[JavaMethodDescriptor]
-
-'KotlinAntTaskUtil' @ [116:53] ==> internal object KotlinAntTaskUtil defined in org.jetbrains.kotlin.ant in file KotlinAntTaskUtil.kt[FakeCallableDescriptorForObject]
 
 'reflectJar' @ [116:71] ==> public final val reflectJar: File defined in org.jetbrains.kotlin.ant.KotlinAntTaskUtil[PropertyDescriptorImpl]
 
@@ -252,7 +248,7 @@ Inferred types:
 
 'asList' @ [132:48] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'files' @ [135:20] ==> value-parameter files: Array<File> defined in org.jetbrains.kotlin.ant.KotlinCompilerAdapter.Companion.filterOutKotlinSources[ValueParameterDescriptorImpl]
 

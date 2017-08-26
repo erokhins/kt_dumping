@@ -49,8 +49,6 @@ Inferred types:
 
 'UNullConstant' @ [30:17] ==> public object UNullConstant : UAbstractConstant defined in org.jetbrains.uast.values[FakeCallableDescriptorForObject]
 
-'UValue' @ [30:34] ==> public companion object defined in org.jetbrains.uast.values.UValue[FakeCallableDescriptorForObject]
-
 'UNREACHABLE' @ [30:41] ==> public final val UNREACHABLE: UValue defined in org.jetbrains.uast.values.UValue.Companion[DeserializedPropertyDescriptor]
 
 'operandValue' @ [31:33] ==> value-parameter operandValue: UValue defined in org.jetbrains.uast.kotlin.evaluation.KotlinEvaluatorExtension.evaluatePostfix[ValueParameterDescriptorImpl]

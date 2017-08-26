@@ -4,9 +4,9 @@ Inferred types:
 
 'declaration' @ [45:101] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.idea.quickfix.MakeOverriddenMemberOpenFix.<init>[ValueParameterDescriptorImpl]
 
-'CachedValue' @ [47:49] ==> public fun <T> CachedValue(project: Project, trackValue: Boolean = ..., provider: () -> CachedValueProvider.Result<MakeOverriddenMemberOpenFix.Companion.QuickFixInfo>): CachedValue<(MakeOverriddenMemberOpenFix.Companion.QuickFixInfo..MakeOverriddenMemberOpenFix.Companion.QuickFixInfo?)> defined in org.jetbrains.kotlin.idea.core.util[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [47:49] ==> public operator fun <T> CachedValue<(T..T?)>.getValue(o: Any, property: KProperty<*>): (T..T?) defined in org.jetbrains.kotlin.idea.core.util[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> QuickFixInfo
+    <T> -> (T..T?)
 
 'declaration' @ [47:61] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.idea.quickfix.MakeOverriddenMemberOpenFix.<init>[ValueParameterDescriptorImpl]
 

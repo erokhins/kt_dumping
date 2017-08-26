@@ -181,13 +181,13 @@ Inferred types:
 
 'cast' @ [103:33] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull p1: (MutableCollection<out (DiagnosticFactory<out (DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>..DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>..DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>?)>?)>..Collection<(DiagnosticFactory<out (DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>..DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>..DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>?)>?)>)): DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> DiagnosticWithParameters1<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.resolve.jvm.diagnostics.ConflictingJvmDeclarationsData..org.jetbrains.kotlin.resolve.jvm.diagnostics.ConflictingJvmDeclarationsData?)>
+    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters1<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.resolve.jvm.diagnostics.ConflictingJvmDeclarationsData..org.jetbrains.kotlin.resolve.jvm.diagnostics.ConflictingJvmDeclarationsData?)>..org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters1<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.resolve.jvm.diagnostics.ConflictingJvmDeclarationsData..org.jetbrains.kotlin.resolve.jvm.diagnostics.ConflictingJvmDeclarationsData?)>?)
 
 'this' @ [103:38] ==> <this> defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement.data[ReceiverParameterDescriptorImpl]
 
 'jvmDiagnosticFactories' @ [103:44] ==> val jvmDiagnosticFactories: Set<(DiagnosticFactory1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>..DiagnosticFactory1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>?)> defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement[LocalVariableDescriptor]
 
-'a' @ [103:68] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>.a: (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)[MyPropertyDescriptor]
+'a' @ [103:68] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?)>.a: ConflictingJvmDeclarationsData[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.jvm.diagnostics.ConflictingJvmDeclarationsData..org.jetbrains.kotlin.resolve.jvm.diagnostics.ConflictingJvmDeclarationsData?)
@@ -231,7 +231,7 @@ Inferred types:
 
 'it' @ [112:13] ==> value-parameter it: Diagnostic defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement.<anonymous>[ValueParameterDescriptorImpl]
 
-'data' @ [112:16] ==> local final fun Diagnostic.data(): (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?) defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement[SimpleFunctionDescriptorImpl]
+'data' @ [112:16] ==> local final fun Diagnostic.data(): ConflictingJvmDeclarationsData defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement[SimpleFunctionDescriptorImpl]
 
 'signature' @ [112:23] ==> public final val signature: RawSignature defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.ConflictingJvmDeclarationsData[DeserializedPropertyDescriptor]
 
@@ -319,13 +319,13 @@ Inferred types:
 
 'other' @ [129:44] ==> value-parameter other: Diagnostic defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'data' @ [129:50] ==> local final fun Diagnostic.data(): (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?) defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement[SimpleFunctionDescriptorImpl]
+'data' @ [129:50] ==> local final fun Diagnostic.data(): ConflictingJvmDeclarationsData defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement[SimpleFunctionDescriptorImpl]
 
 'higherThan' @ [129:57] ==> private infix fun ConflictingJvmDeclarationsData.higherThan(other: ConflictingJvmDeclarationsData): Boolean defined in org.jetbrains.kotlin.asJava in file duplicateJvmSignatureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'me' @ [129:68] ==> value-parameter me: Diagnostic defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'data' @ [129:71] ==> local final fun Diagnostic.data(): (ConflictingJvmDeclarationsData..ConflictingJvmDeclarationsData?) defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement[SimpleFunctionDescriptorImpl]
+'data' @ [129:71] ==> local final fun Diagnostic.data(): ConflictingJvmDeclarationsData defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement[SimpleFunctionDescriptorImpl]
 
 'filtered' @ [137:16] ==> val filtered: ArrayList<Diagnostic> /* = ArrayList<Diagnostic> */ defined in org.jetbrains.kotlin.asJava.FilteredJvmDiagnostics.forElement[LocalVariableDescriptor]
 

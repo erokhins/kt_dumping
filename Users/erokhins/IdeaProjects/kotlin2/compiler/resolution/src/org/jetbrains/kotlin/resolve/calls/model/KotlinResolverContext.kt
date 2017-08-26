@@ -243,6 +243,8 @@ Inferred types:
 
 'candidate' @ [123:36] ==> val candidate: KotlinResolutionCandidate defined in org.jetbrains.kotlin.resolve.calls.model.SimpleCandidateFactory.createCandidate[LocalVariableDescriptor]
 
+'addDiagnostic' @ [123:47] ==> public open fun addDiagnostic(diagnostic: KotlinCallDiagnostic): Unit defined in org.jetbrains.kotlin.resolve.calls.model.KotlinResolutionCandidate[SimpleFunctionDescriptorImpl]
+
 'callComponents' @ [125:13] ==> public final val callComponents: KotlinCallComponents defined in org.jetbrains.kotlin.resolve.calls.model.SimpleCandidateFactory[PropertyDescriptorImpl]
 
 'statelessCallbacks' @ [125:28] ==> public final val statelessCallbacks: KotlinResolutionStatelessCallbacks defined in org.jetbrains.kotlin.resolve.calls.model.KotlinCallComponents[PropertyDescriptorImpl]

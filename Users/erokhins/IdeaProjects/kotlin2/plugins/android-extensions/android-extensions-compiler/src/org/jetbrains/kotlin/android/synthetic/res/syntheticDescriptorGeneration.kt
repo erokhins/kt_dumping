@@ -2,13 +2,9 @@
 
 'packageFragmentDescriptor' @ [41:13] ==> value-parameter packageFragmentDescriptor: PackageFragmentDescriptor defined in org.jetbrains.kotlin.android.synthetic.res.genClearCacheFunction[ValueParameterDescriptorImpl]
 
-'Annotations' @ [43:13] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [43:25] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'identifier' @ [44:18] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
-
-'AndroidConst' @ [44:29] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'CLEAR_FUNCTION_NAME' @ [44:42] ==> public final val CLEAR_FUNCTION_NAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
@@ -38,8 +34,6 @@ Inferred types:
 
 'unitType' @ [49:71] ==> val unitType: SimpleType defined in org.jetbrains.kotlin.android.synthetic.res.genClearCacheFunction[LocalVariableDescriptor]
 
-'Modality' @ [49:81] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [49:90] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [49:110] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -56,6 +50,8 @@ Inferred types:
 Inferred types:
     <T> -> PsiElement
     <R> -> XmlSourceElement
+
+'XmlSourceElement' @ [59:63] ==> public constructor XmlSourceElement(psi: PsiElement) defined in org.jetbrains.kotlin.android.synthetic.res.XmlSourceElement[ClassConstructorDescriptorImpl]
 
 'NO_SOURCE' @ [59:98] ==> public final val NO_SOURCE: (SourceElement..SourceElement?) defined in org.jetbrains.kotlin.descriptors.SourceElement[JavaPropertyDescriptor]
 
@@ -94,11 +90,7 @@ Inferred types:
 
 'defaultType' @ [66:13] ==> val defaultType: SimpleType defined in org.jetbrains.kotlin.android.synthetic.res.genPropertyForWidget.<anonymous>[LocalVariableDescriptor]
 
-'KotlinTypeFactory' @ [69:13] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
-
 'simpleNotNullType' @ [69:31] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [70:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [70:33] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -114,6 +106,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
     <R> -> StarProjectionImpl
+
+'StarProjectionImpl' @ [70:98] ==> public constructor StarProjectionImpl(typeParameter: TypeParameterDescriptor) defined in org.jetbrains.kotlin.types.StarProjectionImpl[DeserializedClassConstructorDescriptor]
 
 'context' @ [72:10] ==> value-parameter context: SyntheticElementResolveContext defined in org.jetbrains.kotlin.android.synthetic.res.genPropertyForWidget[ValueParameterDescriptorImpl]
 
@@ -146,6 +140,8 @@ Inferred types:
     <T> -> PsiElement
     <R> -> XmlSourceElement
 
+'XmlSourceElement' @ [83:55] ==> public constructor XmlSourceElement(psi: PsiElement) defined in org.jetbrains.kotlin.android.synthetic.res.XmlSourceElement[ClassConstructorDescriptorImpl]
+
 'NO_SOURCE' @ [83:90] ==> public final val NO_SOURCE: (SourceElement..SourceElement?) defined in org.jetbrains.kotlin.descriptors.SourceElement[JavaPropertyDescriptor]
 
 'genProperty' @ [84:12] ==> private fun genProperty(resource: AndroidResource, receiverType: KotlinType, type: SimpleType, containingDeclaration: AndroidSyntheticPackageFragmentDescriptor, sourceElement: SourceElement, errorType: String?): PropertyDescriptor defined in org.jetbrains.kotlin.android.synthetic.res in file syntheticDescriptorGeneration.kt[SimpleFunctionDescriptorImpl]
@@ -164,11 +160,7 @@ Inferred types:
 
 'containingDeclaration' @ [96:13] ==> value-parameter containingDeclaration: AndroidSyntheticPackageFragmentDescriptor defined in org.jetbrains.kotlin.android.synthetic.res.genProperty[ValueParameterDescriptorImpl]
 
-'Annotations' @ [98:13] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [98:25] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [99:13] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [99:22] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -220,11 +212,7 @@ Inferred types:
 
 'property' @ [126:13] ==> val property: <no name provided> defined in org.jetbrains.kotlin.android.synthetic.res.genProperty[LocalVariableDescriptor]
 
-'Annotations' @ [127:13] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [127:25] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [128:13] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [128:22] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -255,8 +243,6 @@ Inferred types:
 'asString' @ [147:80] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.FqNameUnsafe[JavaMethodDescriptor]
 
 'viewClassFqName' @ [148:16] ==> val viewClassFqName: String defined in org.jetbrains.kotlin.android.synthetic.res.<get-shouldBeCached>[LocalVariableDescriptor]
-
-'AndroidConst' @ [148:35] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'VIEWSTUB_FQNAME' @ [148:48] ==> public final val VIEWSTUB_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 

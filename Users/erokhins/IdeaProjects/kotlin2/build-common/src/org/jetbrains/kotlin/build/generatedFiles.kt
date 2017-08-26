@@ -22,8 +22,6 @@ Inferred types:
 
 'extension' @ [40:34] ==> public val File.extension: String defined in kotlin.io[DeserializedPropertyDescriptor]
 
-'ModuleMapping' @ [40:47] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping[FakeCallableDescriptorForObject]
-
 'MAPPING_FILE_EXT' @ [40:61] ==> @field:JvmField public final val MAPPING_FILE_EXT: String defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping.Companion[DeserializedPropertyDescriptor]
 
 'parentFile' @ [40:81] ==> public final val File.parentFile: (File..File?)[MyPropertyDescriptor]

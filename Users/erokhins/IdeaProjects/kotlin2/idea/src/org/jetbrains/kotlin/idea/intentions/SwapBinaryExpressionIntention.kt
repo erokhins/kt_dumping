@@ -183,13 +183,13 @@ Inferred types:
 
 'left' @ [76:59] ==> public final val KtBinaryExpression.left: KtExpression?[MyPropertyDescriptor]
 
-'PsiPrecedences' @ [76:65] ==> public object PsiPrecedences defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'getPrecedence' @ [76:80] ==> public final fun getPrecedence(expression: KtExpression): Int defined in org.jetbrains.kotlin.idea.util.PsiPrecedences[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [76:94] ==> value-parameter element: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.SwapBinaryExpressionIntention.leftSubject[ValueParameterDescriptorImpl]
 
 'KtBinaryExpression' @ [76:104] ==> public constructor KtBinaryExpression(@NotNull p0: ASTNode) defined in org.jetbrains.kotlin.psi.KtBinaryExpression[JavaClassConstructorDescriptor]
+
+'getRight' @ [76:124] ==> @IfNotParsed @Nullable public open fun getRight(): KtExpression? defined in org.jetbrains.kotlin.psi.KtBinaryExpression[JavaMethodDescriptor]
 
 'firstDescendantOfTighterPrecedence' @ [80:16] ==> private final fun firstDescendantOfTighterPrecedence(expression: KtExpression?, precedence: Int, getChild: KtBinaryExpression.() -> KtExpression?): KtExpression? defined in org.jetbrains.kotlin.idea.intentions.SwapBinaryExpressionIntention[SimpleFunctionDescriptorImpl]
 
@@ -197,13 +197,13 @@ Inferred types:
 
 'right' @ [80:59] ==> public final val KtBinaryExpression.right: KtExpression?[MyPropertyDescriptor]
 
-'PsiPrecedences' @ [80:66] ==> public object PsiPrecedences defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'getPrecedence' @ [80:81] ==> public final fun getPrecedence(expression: KtExpression): Int defined in org.jetbrains.kotlin.idea.util.PsiPrecedences[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [80:95] ==> value-parameter element: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.SwapBinaryExpressionIntention.rightSubject[ValueParameterDescriptorImpl]
 
 'KtBinaryExpression' @ [80:105] ==> public constructor KtBinaryExpression(@NotNull p0: ASTNode) defined in org.jetbrains.kotlin.psi.KtBinaryExpression[JavaClassConstructorDescriptor]
+
+'getLeft' @ [80:125] ==> @IfNotParsed @Nullable public open fun getLeft(): KtExpression? defined in org.jetbrains.kotlin.psi.KtBinaryExpression[JavaMethodDescriptor]
 
 'expression' @ [84:13] ==> value-parameter expression: KtExpression? defined in org.jetbrains.kotlin.idea.intentions.SwapBinaryExpressionIntention.firstDescendantOfTighterPrecedence[ValueParameterDescriptorImpl]
 

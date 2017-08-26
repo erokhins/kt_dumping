@@ -70,7 +70,7 @@ Inferred types:
 Inferred types:
     <T> -> Pair<KtFile, Int>?
 
-'getOriginalPositionOfInlinedLine' @ [82:46] ==> internal fun getOriginalPositionOfInlinedLine(location: Location, project: Project): Pair<KtFile, Int>? defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'getOriginalPositionOfInlinedLine' @ [82:46] ==> internal fun getOriginalPositionOfInlinedLine(location: Location, project: Project): Pair<KtFile, Int>? defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'location' @ [82:79] ==> value-parameter location: Location defined in org.jetbrains.kotlin.idea.debugger.ktLocationInfo[ValueParameterDescriptorImpl]
 
@@ -126,7 +126,7 @@ Inferred types:
 
 'signature' @ [103:28] ==> public abstract fun signature(): (String..String?) defined in com.sun.jdi.Method[JavaMethodDescriptor]
 
-'findAndReadClassFile' @ [105:21] ==> private fun findAndReadClassFile(fqName: FqName, fileName: String, project: Project, searchScope: GlobalSearchScope, fileFilter: (VirtualFile) -> Boolean): BytecodeDebugInfo? defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'findAndReadClassFile' @ [105:21] ==> private fun findAndReadClassFile(fqName: FqName, fileName: String, project: Project, searchScope: GlobalSearchScope, fileFilter: (VirtualFile) -> Boolean): BytecodeDebugInfo? defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [105:42] ==> val fqName: FqName defined in org.jetbrains.kotlin.idea.debugger.getLastLineNumberForLocation[LocalVariableDescriptor]
 
@@ -195,7 +195,7 @@ Inferred types:
 
 'bytes' @ [115:38] ==> val bytes: ByteArray defined in org.jetbrains.kotlin.idea.debugger.WeakBytecodeDebugInfoStorage.create[LocalVariableDescriptor]
 
-'readLineNumberTableMapping' @ [116:33] ==> private fun readLineNumberTableMapping(bytes: ByteArray): Map<BytecodeMethodKey, Map<String, Set<Int>>> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'readLineNumberTableMapping' @ [116:33] ==> private fun readLineNumberTableMapping(bytes: ByteArray): Map<BytecodeMethodKey, Map<String, Set<Int>>> defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'bytes' @ [116:60] ==> val bytes: ByteArray defined in org.jetbrains.kotlin.idea.debugger.WeakBytecodeDebugInfoStorage.create[LocalVariableDescriptor]
 
@@ -205,10 +205,10 @@ Inferred types:
 
 'lineNumberMapping' @ [118:44] ==> val lineNumberMapping: Map<BytecodeMethodKey, Map<String, Set<Int>>> defined in org.jetbrains.kotlin.idea.debugger.WeakBytecodeDebugInfoStorage.create[LocalVariableDescriptor]
 
-'createConcurrentWeakKeyWeakValueMap' @ [121:30] ==> @NotNull @Contract public open fun <K : (Any..Any?), V : (Any..Any?)> createConcurrentWeakKeyWeakValueMap(): ConcurrentMap<(BinaryCacheKey..BinaryCacheKey?), (BytecodeDebugInfo..BytecodeDebugInfo?)> defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
+'createConcurrentWeakKeyWeakValueMap' @ [121:30] ==> @NotNull @Contract public open fun <K : (Any..Any?), V : (Any..Any?)> createConcurrentWeakKeyWeakValueMap(): ConcurrentMap<(BinaryCacheKey..BinaryCacheKey?), BytecodeDebugInfo?> defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> BinaryCacheKey
-    <V : (Any..Any?)> -> (org.jetbrains.kotlin.idea.debugger.BytecodeDebugInfo..org.jetbrains.kotlin.idea.debugger.BytecodeDebugInfo?)
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.idea.debugger.BinaryCacheKey..org.jetbrains.kotlin.idea.debugger.BinaryCacheKey?)
+    <V : (Any..Any?)> -> BytecodeDebugInfo?
 
 'jvmName' @ [134:28] ==> value-parameter jvmName: JvmClassName defined in org.jetbrains.kotlin.idea.debugger.readClassFileImpl[ValueParameterDescriptorImpl]
 
@@ -368,6 +368,8 @@ Inferred types:
 Inferred types:
     <T> -> File
 
+'exists' @ [179:56] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
+
 'File' @ [181:27] ==> public constructor File(p0: (File..File?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'outDirFile' @ [181:32] ==> val outDirFile: File defined in org.jetbrains.kotlin.idea.debugger.findClassFileByPath[LocalVariableDescriptor]
@@ -501,7 +503,7 @@ Inferred types:
 
 'project' @ [229:50] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.debugger.getOriginalPositionOfInlinedLine[ValueParameterDescriptorImpl]
 
-'findAndReadClassFile' @ [231:21] ==> private fun findAndReadClassFile(fqName: FqName, fileName: String, project: Project, searchScope: GlobalSearchScope, fileFilter: (VirtualFile) -> Boolean): BytecodeDebugInfo? defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'findAndReadClassFile' @ [231:21] ==> private fun findAndReadClassFile(fqName: FqName, fileName: String, project: Project, searchScope: GlobalSearchScope, fileFilter: (VirtualFile) -> Boolean): BytecodeDebugInfo? defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [231:42] ==> val fqName: FqName defined in org.jetbrains.kotlin.idea.debugger.getOriginalPositionOfInlinedLine[LocalVariableDescriptor]
 
@@ -523,7 +525,7 @@ Inferred types:
 
 'smapData' @ [233:30] ==> public final val smapData: SmapData? defined in org.jetbrains.kotlin.idea.debugger.BytecodeDebugInfo[PropertyDescriptorImpl]
 
-'mapStacktraceLineToSource' @ [235:12] ==> public fun mapStacktraceLineToSource(smapData: SmapData, line: Int, project: Project, lineKind: SourceLineKind, searchScope: GlobalSearchScope): Pair<KtFile, Int>? defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'mapStacktraceLineToSource' @ [235:12] ==> public fun mapStacktraceLineToSource(smapData: SmapData, line: Int, project: Project, lineKind: SourceLineKind, searchScope: GlobalSearchScope): Pair<KtFile, Int>? defined in org.jetbrains.kotlin.idea.debugger in file smapUtil.kt[SimpleFunctionDescriptorImpl]
 
 'smapData' @ [235:38] ==> val smapData: SmapData defined in org.jetbrains.kotlin.idea.debugger.getOriginalPositionOfInlinedLine[LocalVariableDescriptor]
 
@@ -545,7 +547,9 @@ Inferred types:
 
 'internalName' @ [242:52] ==> val internalName: String defined in org.jetbrains.kotlin.idea.debugger.findAndReadClassFile[LocalVariableDescriptor]
 
-'DebuggerUtils' @ [244:16] ==> public object DebuggerUtils defined in org.jetbrains.kotlin.idea.debugger in file DebuggerUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [244:16] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtFile?, right: KtFile): KtFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtFile
 
 'findSourceFileForClassIncludeLibrarySources' @ [244:30] ==> public final fun findSourceFileForClassIncludeLibrarySources(project: Project, scope: GlobalSearchScope, className: JvmClassName, fileName: String): KtFile? defined in org.jetbrains.kotlin.idea.debugger.DebuggerUtils[SimpleFunctionDescriptorImpl]
 
@@ -657,7 +661,7 @@ Inferred types:
 Inferred types:
     <T> -> Location
 
-'inlinedLinesNumbers' @ [271:17] ==> private fun inlinedLinesNumbers(inlineLineNumber: Int, inlineFileName: String, destinationTypeFqName: FqName, destinationFileName: String, project: Project, sourceSearchScope: GlobalSearchScope): List<Int> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'inlinedLinesNumbers' @ [271:17] ==> private fun inlinedLinesNumbers(inlineLineNumber: Int, inlineFileName: String, destinationTypeFqName: FqName, destinationFileName: String, project: Project, sourceSearchScope: GlobalSearchScope): List<Int> defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'line' @ [271:37] ==> val line: Int defined in org.jetbrains.kotlin.idea.debugger.getLocationsOfInlinedLine[LocalVariableDescriptor]
 
@@ -772,7 +776,9 @@ Inferred types:
 
 'internalName' @ [300:52] ==> val internalName: String defined in org.jetbrains.kotlin.idea.debugger.inlinedLinesNumbers[LocalVariableDescriptor]
 
-'DebuggerUtils' @ [302:16] ==> public object DebuggerUtils defined in org.jetbrains.kotlin.idea.debugger in file DebuggerUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [302:16] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtFile?, right: KtFile): KtFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtFile
 
 'findSourceFileForClassIncludeLibrarySources' @ [302:30] ==> public final fun findSourceFileForClassIncludeLibrarySources(project: Project, scope: GlobalSearchScope, className: JvmClassName, fileName: String): KtFile? defined in org.jetbrains.kotlin.idea.debugger.DebuggerUtils[SimpleFunctionDescriptorImpl]
 

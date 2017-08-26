@@ -28,7 +28,7 @@
 
 'descriptor' @ [41:46] ==> value-parameter descriptor: ClassDescriptor defined in org.jetbrains.kotlin.ir.declarations.impl.IrClassImpl.<init>[ValueParameterDescriptorImpl]
 
-'addAll' @ [42:9] ==> public fun IrClass.addAll(members: List<IrDeclaration>): Unit defined in org.jetbrains.kotlin.ir.declarations[SimpleFunctionDescriptorImpl]
+'addAll' @ [42:9] ==> public fun IrClass.addAll(members: List<IrDeclaration>): Unit defined in org.jetbrains.kotlin.ir.declarations in file IrClass.kt[SimpleFunctionDescriptorImpl]
 
 'members' @ [42:16] ==> value-parameter members: List<IrDeclaration> defined in org.jetbrains.kotlin.ir.declarations.impl.IrClassImpl.<init>[ValueParameterDescriptorImpl]
 
@@ -48,7 +48,7 @@ Inferred types:
 
 'SmartList' @ [55:65] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> IrTypeParameter
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.ir.declarations.IrTypeParameter..org.jetbrains.kotlin.ir.declarations.IrTypeParameter?)
 
 'visitor' @ [58:13] ==> value-parameter visitor: IrElementVisitor<R, D> defined in org.jetbrains.kotlin.ir.declarations.impl.IrClassImpl.accept[ValueParameterDescriptorImpl]
 

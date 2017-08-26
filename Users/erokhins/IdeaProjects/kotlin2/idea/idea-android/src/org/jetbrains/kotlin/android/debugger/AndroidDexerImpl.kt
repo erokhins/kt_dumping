@@ -4,7 +4,7 @@
 
 'createCachedValue' @ [32:76] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(Any..Any?)>?, p1: Boolean): CachedValue<(Any..Any?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'doGetAndroidDexFile' @ [33:26] ==> private final fun doGetAndroidDexFile(): File? defined in org.jetbrains.kotlin.android.debugger.AndroidDexerImpl[SimpleFunctionDescriptorImpl]
 
@@ -57,11 +57,11 @@ Inferred types:
 
 'java' @ [38:107] ==> public val <T> KClass<out AndroidDexerImpl>.java: Class<out AndroidDexerImpl> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AndroidDexerImpl
+    <T> -> Captured(out AndroidDexerImpl)
 
 'classLoader' @ [38:112] ==> public final val <T : (Any..Any?)> Class<out AndroidDexerImpl>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AndroidDexerImpl
+    <T : (Any..Any?)> -> Captured(out AndroidDexerImpl)
 
 'defineClass' @ [40:21] ==> protected/*protected and package*/ final fun defineClass(p0: (String..String?), p1: (ByteArray..ByteArray?), p2: Int, p3: Int, p4: (ProtectionDomain..ProtectionDomain?)): (Class<*>..Class<*>?) defined in org.jetbrains.kotlin.android.debugger.AndroidDexerImpl.cachedDexWrapper.<anonymous>.<anonymous>.<no name provided>[JavaMethodDescriptor]
 
@@ -99,13 +99,13 @@ Inferred types:
 
 'dexWrapper' @ [52:25] ==> val dexWrapper: (Any..Any?) defined in org.jetbrains.kotlin.android.debugger.AndroidDexerImpl.dex[LocalVariableDescriptor]
 
-'java' @ [52:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [52:43] ==> public val <T> KClass<out (Any..Any?)>.java: Class<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out (kotlin.Any..kotlin.Any?))
 
-'methods' @ [52:48] ==> public final val <T : (Any..Any?)> Class<out Any>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
+'methods' @ [52:48] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out (kotlin.Any..kotlin.Any?))
 
 'firstOrNull' @ [52:56] ==> public inline fun <T> Array<out (Method..Method?)>.firstOrNull(predicate: ((Method..Method?)) -> Boolean): Method? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

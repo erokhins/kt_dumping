@@ -12,11 +12,11 @@
 
 'java' @ [42:35] ==> public val <T> KClass<out DescriptorRendererOptionsImpl>.java: Class<out DescriptorRendererOptionsImpl> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DescriptorRendererOptionsImpl
+    <T> -> Captured(out DescriptorRendererOptionsImpl)
 
 'declaredFields' @ [42:40] ==> public final val <T : (Any..Any?)> Class<out DescriptorRendererOptionsImpl>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DescriptorRendererOptionsImpl
+    <T : (Any..Any?)> -> Captured(out DescriptorRendererOptionsImpl)
 
 'field' @ [43:17] ==> val field: (Field..Field?) defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl.copy[LocalVariableDescriptor]
 
@@ -46,7 +46,7 @@ Inferred types:
 
 'startsWith' @ [46:32] ==> public fun String.startsWith(prefix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [47:25] ==> val property: ObservableProperty<out Any?> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl.copy[LocalVariableDescriptor]
+'property' @ [47:25] ==> val property: ObservableProperty<*> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl.copy[LocalVariableDescriptor]
 
 'getValue' @ [47:34] ==> public open fun getValue(thisRef: Any?, property: KProperty<*>): Any? defined in kotlin.properties.ObservableProperty[DeserializedSimpleFunctionDescriptor]
 
@@ -86,7 +86,7 @@ Inferred types:
 
 'Delegates' @ [58:16] ==> public object Delegates defined in kotlin.properties[FakeCallableDescriptorForObject]
 
-'vetoable' @ [58:26] ==> public final inline fun <T> vetoable(initialValue: T, crossinline onChange: (property: KProperty<*>, T, T) -> Boolean): ReadWriteProperty<Any?, T> defined in kotlin.properties.Delegates[DeserializedSimpleFunctionDescriptor]
+'vetoable' @ [58:26] ==> public final inline fun <T> vetoable(initialValue: T, crossinline onChange: (property: KProperty<*>, oldValue: T, newValue: T) -> Boolean): ReadWriteProperty<Any?, T> defined in kotlin.properties.Delegates[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> T
 
@@ -105,79 +105,43 @@ Inferred types:
 
 'IllegalStateException' @ [60:23] ==> public constructor IllegalStateException(p0: (String..String?)) defined in java.lang.IllegalStateException[JavaClassConstructorDescriptor]
 
-'property' @ [68:64] ==> private final fun <T> property(initialValue: ClassifierNamePolicy.SOURCE_CODE_QUALIFIED): ReadWriteProperty<DescriptorRendererOptionsImpl, ClassifierNamePolicy.SOURCE_CODE_QUALIFIED> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> ClassifierNamePolicy
+'getValue' @ [68:64] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
 'SOURCE_CODE_QUALIFIED' @ [68:94] ==> public object SOURCE_CODE_QUALIFIED : ClassifierNamePolicy defined in org.jetbrains.kotlin.renderer.ClassifierNamePolicy[FakeCallableDescriptorForObject]
 
-'property' @ [69:35] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [69:35] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [70:47] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [70:47] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [71:64] ==> private final fun <T> property(initialValue: Set<DescriptorRendererModifier>): ReadWriteProperty<DescriptorRendererOptionsImpl, Set<DescriptorRendererModifier>> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Set<DescriptorRendererModifier>
-
-'DescriptorRendererModifier' @ [71:73] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
+'getValue' @ [71:64] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
 'DEFAULTS' @ [71:100] ==> @JvmField public final val DEFAULTS: Set<DescriptorRendererModifier> defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier.Companion[PropertyDescriptorImpl]
 
-'property' @ [72:35] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [72:35] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [73:49] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [73:49] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [74:31] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [74:31] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [75:49] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [75:49] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [76:29] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [76:29] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [77:36] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [77:36] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [78:39] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [78:39] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [79:44] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [79:44] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [80:41] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [80:41] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [81:51] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [81:51] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [82:45] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [82:45] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [83:43] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [83:43] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [84:39] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [84:39] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
 'property' @ [85:36] ==> private final fun <T> property(initialValue: (KotlinType) -> KotlinType): ReadWriteProperty<DescriptorRendererOptionsImpl, (KotlinType) -> KotlinType> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -189,91 +153,53 @@ Inferred types:
 Inferred types:
     <T> -> Function1<ValueParameterDescriptor, String>?
 
-'property' @ [87:52] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [87:52] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [88:45] ==> private final fun <T> property(initialValue: OverrideRenderingPolicy): ReadWriteProperty<DescriptorRendererOptionsImpl, OverrideRenderingPolicy> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> OverrideRenderingPolicy
+'getValue' @ [88:45] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
 'RENDER_OPEN' @ [88:78] ==> enum entry RENDER_OPEN defined in org.jetbrains.kotlin.renderer.OverrideRenderingPolicy[FakeCallableDescriptorForObject]
 
-'property' @ [89:87] ==> private final fun <T> property(initialValue: DescriptorRenderer.ValueParametersHandler.DEFAULT): ReadWriteProperty<DescriptorRendererOptionsImpl, DescriptorRenderer.ValueParametersHandler.DEFAULT> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> ValueParametersHandler
-
-'DescriptorRenderer' @ [89:96] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
+'getValue' @ [89:87] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
 'DEFAULT' @ [89:138] ==> public object DEFAULT : DescriptorRenderer.ValueParametersHandler defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.ValueParametersHandler[FakeCallableDescriptorForObject]
 
-'property' @ [90:32] ==> private final fun <T> property(initialValue: RenderingFormat): ReadWriteProperty<DescriptorRendererOptionsImpl, RenderingFormat> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> RenderingFormat
+'getValue' @ [90:32] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
 'PLAIN' @ [90:57] ==> enum entry PLAIN defined in org.jetbrains.kotlin.renderer.RenderingFormat[FakeCallableDescriptorForObject]
 
-'property' @ [91:50] ==> private final fun <T> property(initialValue: ParameterNameRenderingPolicy): ReadWriteProperty<DescriptorRendererOptionsImpl, ParameterNameRenderingPolicy> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> ParameterNameRenderingPolicy
+'getValue' @ [91:50] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
 'ALL' @ [91:88] ==> enum entry ALL defined in org.jetbrains.kotlin.renderer.ParameterNameRenderingPolicy[FakeCallableDescriptorForObject]
 
-'property' @ [92:39] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [92:39] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [93:47] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [93:47] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [94:37] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [94:37] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [95:54] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [95:54] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [97:47] ==> private final fun <T> property(initialValue: Set<FqName>): ReadWriteProperty<DescriptorRendererOptionsImpl, Set<FqName>> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Set<FqName>
+'getValue' @ [97:47] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
 'emptySet' @ [97:56] ==> public fun <T> emptySet(): Set<FqName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FqName
 
-'property' @ [99:51] ==> private final fun <T> property(initialValue: Set<FqName>): ReadWriteProperty<DescriptorRendererOptionsImpl, Set<FqName>> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Set<FqName>
-
-'ExcludedTypeAnnotations' @ [99:60] ==> public object ExcludedTypeAnnotations defined in org.jetbrains.kotlin.renderer in file DescriptorRenderer.kt[FakeCallableDescriptorForObject]
+'getValue' @ [99:51] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
 'internalAnnotationsForResolve' @ [99:84] ==> public final val internalAnnotationsForResolve: Set<FqName> defined in org.jetbrains.kotlin.renderer.ExcludedTypeAnnotations[PropertyDescriptorImpl]
 
-'property' @ [101:56] ==> private final fun <T> property(initialValue: AnnotationArgumentsRenderingPolicy): ReadWriteProperty<DescriptorRendererOptionsImpl, AnnotationArgumentsRenderingPolicy> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> AnnotationArgumentsRenderingPolicy
+'getValue' @ [101:56] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
 'NO_ARGUMENTS' @ [101:100] ==> enum entry NO_ARGUMENTS defined in org.jetbrains.kotlin.renderer.AnnotationArgumentsRenderingPolicy[FakeCallableDescriptorForObject]
 
-'property' @ [103:43] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [103:43] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [105:46] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [105:46] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [107:54] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [107:54] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [109:57] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [109:57] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [111:62] ==> private final fun <T> property(initialValue: Boolean): ReadWriteProperty<DescriptorRendererOptionsImpl, Boolean> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [111:62] ==> public abstract operator fun getValue(thisRef: DescriptorRendererOptionsImpl, property: KProperty<*>): T defined in kotlin.properties.ReadWriteProperty[DeserializedSimpleFunctionDescriptor]
 

@@ -1,4 +1,6 @@
-'IDEKotlinBinaryClassCache' @ [45:33] ==> public object IDEKotlinBinaryClassCache defined in org.jetbrains.kotlin.idea.caches in file IDEKotlinBinaryClassCache.kt[FakeCallableDescriptorForObject]
+'?:' @ [45:33] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: IDEKotlinBinaryClassCache.KotlinBinaryHeaderData?, right: IDEKotlinBinaryClassCache.KotlinBinaryHeaderData): IDEKotlinBinaryClassCache.KotlinBinaryHeaderData[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinBinaryHeaderData
 
 'getKotlinBinaryClassHeaderData' @ [45:59] ==> public final fun getKotlinBinaryClassHeaderData(file: VirtualFile, fileContent: ByteArray? = ...): IDEKotlinBinaryClassCache.KotlinBinaryHeaderData? defined in org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache[SimpleFunctionDescriptorImpl]
 
@@ -275,8 +277,6 @@ Inferred types:
 'classId' @ [143:70] ==> public abstract val classId: ClassId defined in org.jetbrains.kotlin.load.kotlin.KotlinJvmBinaryClass[DeserializedPropertyDescriptor]
 
 'ClassDataWithSource' @ [147:16] ==> public constructor ClassDataWithSource(classData: ClassData, sourceElement: SourceElement) defined in org.jetbrains.kotlin.serialization.ClassDataWithSource[DeserializedClassConstructorDescriptor]
-
-'JvmProtoBufUtil' @ [147:36] ==> public object JvmProtoBufUtil defined in org.jetbrains.kotlin.serialization.jvm[FakeCallableDescriptorForObject]
 
 'readClassDataFrom' @ [147:52] ==> @JvmStatic public final fun readClassDataFrom(data: Array<String>, strings: Array<String>): ClassData defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil[DeserializedSimpleFunctionDescriptor]
 

@@ -65,6 +65,8 @@ Inferred types:
     <T> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
     <R> -> UsageInfo
 
+'UsageInfo' @ [60:29] ==> public constructor UsageInfo(@NotNull p0: PsiReference) defined in com.intellij.usageView.UsageInfo[JavaClassConstructorDescriptor]
+
 'toTypedArray' @ [60:40] ==> public inline fun <reified T> Collection<UsageInfo>.toTypedArray(): Array<UsageInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T> -> UsageInfo
@@ -82,7 +84,7 @@ Inferred types:
 
 'replacementStrategy' @ [65:9] ==> private final val replacementStrategy: UsageReplacementStrategy defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineCallableProcessor[PropertyDescriptorImpl]
 
-'replaceUsages' @ [65:29] ==> public fun UsageReplacementStrategy.replaceUsages(usages: Collection<KtSimpleNameExpression>, targetPsiElement: PsiElement, project: Project, commandName: String, postAction: () -> Unit = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'replaceUsages' @ [65:29] ==> public fun UsageReplacementStrategy.replaceUsages(usages: Collection<KtSimpleNameExpression>, targetPsiElement: PsiElement, project: Project, commandName: String, postAction: () -> Unit = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner in file UsageReplacementStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'simpleNameUsages' @ [66:17] ==> val simpleNameUsages: List<KtSimpleNameExpression> defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineCallableProcessor.performRefactoring[LocalVariableDescriptor]
 

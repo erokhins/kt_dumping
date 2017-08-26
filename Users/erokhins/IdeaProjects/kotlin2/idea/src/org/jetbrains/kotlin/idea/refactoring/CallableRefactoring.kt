@@ -1,8 +1,8 @@
 'getInstance' @ [57:30] ==> @NotNull public open fun getInstance(@NotNull p0: raw (Class<(Any..Any?)>..Class<*>)): Logger defined in com.intellij.openapi.diagnostic.Logger[JavaMethodDescriptor]
 
-'CallableRefactoring' @ [57:42] ==> public constructor CallableRefactoring<out T : CallableDescriptor>(project: Project, callableDescriptor: CallableDescriptor, commandName: String) defined in org.jetbrains.kotlin.idea.refactoring.CallableRefactoring[ClassConstructorDescriptorImpl]
+'CallableRefactoring' @ [57:42] ==> public constructor CallableRefactoring<out T : CallableDescriptor>(project: Project, callableDescriptor: ???, commandName: String) defined in org.jetbrains.kotlin.idea.refactoring.CallableRefactoring[ClassConstructorDescriptorImpl]
 Inferred types:
-    <out T : CallableDescriptor> -> CallableDescriptor
+    <out T : CallableDescriptor> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@321c8b28
 
 'java' @ [57:69] ==> public val <T> KClass<CallableRefactoring<*>>.java: Class<CallableRefactoring<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -90,8 +90,6 @@ Inferred types:
 'asString' @ [86:43] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
 'message' @ [88:36] ==> @NotNull public open fun message(@NonNls @PropertyKey p0: (String..String?), vararg p1: (Any..Any?)): String defined in org.jetbrains.kotlin.idea.KotlinBundle[JavaMethodDescriptor]
-
-'DescriptorRenderer' @ [89:44] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
 
 'COMPACT' @ [89:63] ==> @field:JvmField public final val COMPACT: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
@@ -290,6 +288,10 @@ Inferred types:
     <T> -> CallableMemberDescriptor
     <R> -> Collection<CallableMemberDescriptor>
 
+'getDeepestSuperDeclarations' @ [152:98] ==> public fun <D : CallableMemberDescriptor> CallableMemberDescriptor.getDeepestSuperDeclarations(): Collection<CallableMemberDescriptor> defined in org.jetbrains.kotlin.idea.core[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <D : CallableMemberDescriptor> -> CallableMemberDescriptor
+
 'listOf' @ [153:20] ==> public fun <T> listOf(element: T): List<T> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> T
@@ -410,10 +412,10 @@ Inferred types:
 
 'baseCallables' @ [186:28] ==> val baseCallables: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.getAffectedCallables[LocalVariableDescriptor]
 
-'flatMapTo' @ [186:42] ==> public inline fun <T, R, C : MutableCollection<in (PsiElement..PsiElement?)>> Iterable<PsiElement>.flatMapTo(destination: HashSet<PsiElement>, transform: (PsiElement) -> Iterable<(PsiElement..PsiElement?)>): HashSet<PsiElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMapTo' @ [186:42] ==> public inline fun <T, R, C : MutableCollection<in PsiElement>> Iterable<PsiElement>.flatMapTo(destination: HashSet<PsiElement>, transform: (PsiElement) -> Iterable<PsiElement>): HashSet<PsiElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiElement
-    <R> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <R> -> PsiElement
     <C : MutableCollection<in R>> -> HashSet<PsiElement>
 
 'HashSet' @ [186:52] ==> public constructor HashSet<E : (Any..Any?)>() defined in java.util.HashSet[JavaClassConstructorDescriptor]
@@ -428,19 +430,19 @@ Inferred types:
                 val overrides = OverridingMethodsSearch.search(psiMethod).findAll()
                 overrides.map { method -> method.namedUnwrappedElement ?: method}
             }
-        }' @ [187:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Collection<PsiElement>, elseBranch: Collection<PsiElement>): Collection<PsiElement>[SimpleFunctionDescriptorImpl]
+        }' @ [187:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Iterable<PsiElement>, elseBranch: Iterable<PsiElement>): Iterable<PsiElement>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Collection<PsiElement>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Iterable<PsiElement>
 
 'callable' @ [187:13] ==> value-parameter callable: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.getAffectedCallables.<anonymous>[ValueParameterDescriptorImpl]
 
 'callable' @ [187:42] ==> value-parameter callable: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.getAffectedCallables.<anonymous>[ValueParameterDescriptorImpl]
 
-'isHeaderOrHeaderClassMember' @ [187:51] ==> internal fun KtDeclaration.isHeaderOrHeaderClassMember(): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'isHeaderOrHeaderClassMember' @ [187:51] ==> internal fun KtDeclaration.isHeaderOrHeaderClassMember(): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers in file DeclaredHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'callable' @ [188:13] ==> value-parameter callable: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.getAffectedCallables.<anonymous>[ValueParameterDescriptorImpl]
 
-'headerImplementations' @ [188:22] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerImplementations' @ [188:22] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'callable' @ [191:13] ==> value-parameter callable: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.getAffectedCallables.<anonymous>[ValueParameterDescriptorImpl]
 

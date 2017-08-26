@@ -67,7 +67,7 @@ Inferred types:
 
 'type' @ [51:45] ==> public final val TransientReceiver.type: KotlinType[MyPropertyDescriptor]
 
-'generateDelegatedValue' @ [52:14] ==> public inline fun generateDelegatedValue(type: KotlinType, crossinline generateValue: () -> IntermediateValue): ExpressionValue defined in org.jetbrains.kotlin.psi2ir.intermediate[SimpleFunctionDescriptorImpl]
+'generateDelegatedValue' @ [52:14] ==> public inline fun generateDelegatedValue(type: KotlinType, crossinline generateValue: () -> IntermediateValue): ExpressionValue defined in org.jetbrains.kotlin.psi2ir.intermediate in file OnceExpressionValue.kt[SimpleFunctionDescriptorImpl]
 
 'receiver' @ [52:37] ==> value-parameter receiver: ReceiverValue defined in org.jetbrains.kotlin.psi2ir.generators.generateReceiver[ValueParameterDescriptorImpl]
 
@@ -226,11 +226,11 @@ Inferred types:
 
 'java' @ [75:55] ==> public val <T> KClass<out ReceiverValue>.java: Class<out ReceiverValue> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ReceiverValue
+    <T> -> Captured(out ReceiverValue)
 
 'simpleName' @ [75:60] ==> public final val <T : (Any..Any?)> Class<out ReceiverValue>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ReceiverValue
+    <T : (Any..Any?)> -> Captured(out ReceiverValue)
 
 'if (receiverExpression is IrExpressionWithCopy)
                 RematerializableValue(receiverExpression)
@@ -382,7 +382,7 @@ Inferred types:
 
 'dispatchReceiver' @ [120:34] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'fieldDescriptor' @ [120:54] ==> value-parameter fieldDescriptor: SyntheticFieldDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.generateBackingFieldReceiver[ValueParameterDescriptorImpl]
 
@@ -556,7 +556,7 @@ Inferred types:
 
 'defaultType' @ [173:39] ==> public final val ClassDescriptor.defaultType: SimpleType[MyPropertyDescriptor]
 
-'generateExpressionValue' @ [174:12] ==> public inline fun generateExpressionValue(type: KotlinType, crossinline generate: () -> IrExpression): ExpressionValue defined in org.jetbrains.kotlin.psi2ir.intermediate[SimpleFunctionDescriptorImpl]
+'generateExpressionValue' @ [174:12] ==> public inline fun generateExpressionValue(type: KotlinType, crossinline generate: () -> IrExpression): ExpressionValue defined in org.jetbrains.kotlin.psi2ir.intermediate in file OnceExpressionValue.kt[SimpleFunctionDescriptorImpl]
 
 'objectType' @ [174:36] ==> val objectType: SimpleType defined in org.jetbrains.kotlin.psi2ir.generators.generateReceiverForCalleeImportedFromObject[LocalVariableDescriptor]
 
@@ -586,12 +586,10 @@ Inferred types:
 
 'arguments' @ [185:44] ==> public final val VarargValueArgument.arguments: (MutableList<(ValueArgument..ValueArgument?)>..List<(ValueArgument..ValueArgument?)>)[MyPropertyDescriptor]
 
-'fold' @ [185:54] ==> public inline fun <T, R> Iterable<(ValueArgument..ValueArgument?)>.fold(initial: Int, operation: (Int, (ValueArgument..ValueArgument?)) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [185:54] ==> public inline fun <T, R> Iterable<(ValueArgument..ValueArgument?)>.fold(initial: Int, operation: (acc: Int, (ValueArgument..ValueArgument?)) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.ValueArgument..org.jetbrains.kotlin.psi.ValueArgument?)
     <R> -> Int
-
-'Int' @ [185:59] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [185:63] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
@@ -609,12 +607,10 @@ Inferred types:
 
 'arguments' @ [188:42] ==> public final val VarargValueArgument.arguments: (MutableList<(ValueArgument..ValueArgument?)>..List<(ValueArgument..ValueArgument?)>)[MyPropertyDescriptor]
 
-'fold' @ [188:52] ==> public inline fun <T, R> Iterable<(ValueArgument..ValueArgument?)>.fold(initial: Int, operation: (Int, (ValueArgument..ValueArgument?)) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [188:52] ==> public inline fun <T, R> Iterable<(ValueArgument..ValueArgument?)>.fold(initial: Int, operation: (acc: Int, (ValueArgument..ValueArgument?)) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.ValueArgument..org.jetbrains.kotlin.psi.ValueArgument?)
     <R> -> Int
-
-'Int' @ [188:57] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MIN_VALUE' @ [188:61] ==> public const final val MIN_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
@@ -737,11 +733,11 @@ Inferred types:
 
 'java' @ [222:72] ==> public val <T> KClass<out ResolvedValueArgument>.java: Class<out ResolvedValueArgument> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ResolvedValueArgument
+    <T> -> Captured(out ResolvedValueArgument)
 
 'simpleName' @ [222:77] ==> public final val <T : (Any..Any?)> Class<out ResolvedValueArgument>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ResolvedValueArgument
+    <T : (Any..Any?)> -> Captured(out ResolvedValueArgument)
 
 'getSuperCallExpression' @ [226:31] ==> public fun getSuperCallExpression(call: Call): KtSuperExpression? defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -749,7 +745,7 @@ Inferred types:
 
 'call' @ [226:67] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'getOrFail' @ [227:12] ==> public fun <K, V : Any> Generator.getOrFail(slice: ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>, key: (KtReferenceExpression..KtReferenceExpression?)): (DeclarationDescriptor..DeclarationDescriptor?) defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -786,7 +782,7 @@ Inferred types:
 
 'resultingDescriptor' @ [241:40] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'extensionInvoke' @ [242:26] ==> val extensionInvoke: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.psi2ir.generators.pregenerateExtensionInvokeCall[LocalVariableDescriptor]
 
@@ -864,7 +860,7 @@ Inferred types:
 
 'call' @ [257:38] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [257:43] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -883,7 +879,7 @@ Inferred types:
 
 'dispatchReceiver' @ [262:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'AssertionError' @ [263:38] ==> public constructor AssertionError(p0: (Any..Any?)) defined in java.lang.AssertionError[JavaClassConstructorDescriptor]
 
@@ -902,7 +898,7 @@ Inferred types:
 
 'extensionReceiver' @ [268:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'AssertionError' @ [269:39] ==> public constructor AssertionError(p0: (Any..Any?)) defined in java.lang.AssertionError[JavaClassConstructorDescriptor]
 
@@ -928,7 +924,7 @@ Inferred types:
 
 'call' @ [274:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'isSafeCall' @ [274:35] ==> public fun Call.isSafeCall(): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -966,7 +962,7 @@ Inferred types:
 
 'valueArgumentsByIndex' @ [281:18] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArgumentsByIndex: (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>?..List<(ResolvedValueArgument..ResolvedValueArgument?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'forEachIndexed' @ [281:42] ==> public inline fun <T> Iterable<(ResolvedValueArgument..ResolvedValueArgument?)>.forEachIndexed(action: (index: Int, (ResolvedValueArgument..ResolvedValueArgument?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -996,7 +992,7 @@ Inferred types:
 
 'resultingDescriptor' @ [290:18] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callee' @ [291:9] ==> val callee: SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.isExtensionInvokeCall[LocalVariableDescriptor]
 
@@ -1018,7 +1014,7 @@ Inferred types:
 
 'extensionReceiver' @ [294:12] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolvedCall' @ [298:9] ==> value-parameter resolvedCall: ResolvedCall<*>? defined in org.jetbrains.kotlin.psi2ir.generators.getTypeArguments[ValueParameterDescriptorImpl]
 
@@ -1026,7 +1022,7 @@ Inferred types:
 
 'resultingDescriptor' @ [300:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'descriptor' @ [301:9] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.psi2ir.generators.getTypeArguments[LocalVariableDescriptor]
 
@@ -1038,13 +1034,13 @@ Inferred types:
 
 'typeArguments' @ [303:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolvedCall' @ [307:5] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.psi2ir.generators.pregenerateValueArguments[ValueParameterDescriptorImpl]
 
 'valueArgumentsByIndex' @ [307:18] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArgumentsByIndex: (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>?..List<(ResolvedValueArgument..ResolvedValueArgument?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'forEachIndexed' @ [307:42] ==> public inline fun <T> Iterable<(ResolvedValueArgument..ResolvedValueArgument?)>.forEachIndexed(action: (index: Int, (ResolvedValueArgument..ResolvedValueArgument?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1080,7 +1076,7 @@ Inferred types:
 
 'resultingDescriptor' @ [314:80] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'call' @ [316:5] ==> val call: CallBuilder defined in org.jetbrains.kotlin.psi2ir.generators.pregenerateCallReceivers[LocalVariableDescriptor]
 
@@ -1092,7 +1088,7 @@ Inferred types:
 
 'call' @ [316:59] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [316:64] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -1100,25 +1096,25 @@ Inferred types:
 
 'resultingDescriptor' @ [317:59] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolvedCall' @ [318:46] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.psi2ir.generators.pregenerateCallReceivers[ValueParameterDescriptorImpl]
 
 'dispatchReceiver' @ [318:59] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolvedCall' @ [319:46] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.psi2ir.generators.pregenerateCallReceivers[ValueParameterDescriptorImpl]
 
 'extensionReceiver' @ [319:59] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolvedCall' @ [320:55] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.psi2ir.generators.pregenerateCallReceivers[ValueParameterDescriptorImpl]
 
 'call' @ [320:68] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'isSafeCall' @ [320:73] ==> public fun Call.isSafeCall(): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 

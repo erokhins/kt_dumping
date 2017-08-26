@@ -2,8 +2,6 @@
 
 '+' @ [71:48] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'ModuleMapping' @ [71:54] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping[FakeCallableDescriptorForObject]
-
 'MAPPING_FILE_EXT' @ [71:68] ==> @field:JvmField public final val MAPPING_FILE_EXT: String defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping.Companion[DeserializedPropertyDescriptor]
 
 'File' @ [74:27] ==> public constructor File(p0: (File..File?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
@@ -168,9 +166,9 @@ Inferred types:
 Inferred types:
     <T> -> IncrementalCacheImpl<Target>
 
-'lazy' @ [94:30] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> File): Lazy<File> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [94:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> File
+    <T> -> T
 
 'NONE' @ [94:56] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -182,9 +180,9 @@ Inferred types:
 
 'target' @ [94:145] ==> value-parameter target: Target defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [96:76] ==> public fun <T> lazy(initializer: () -> ArrayList<IncrementalCacheImpl<Target>> /* = ArrayList<IncrementalCacheImpl<Target>> */): Lazy<ArrayList<IncrementalCacheImpl<Target>> /* = ArrayList<IncrementalCacheImpl<Target>> */> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [96:76] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ArrayList<IncrementalCacheImpl<Target>>
+    <T> -> T
 
 'arrayListOf' @ [97:22] ==> public fun <T> arrayListOf(vararg elements: IncrementalCacheImpl<Target>): ArrayList<IncrementalCacheImpl<Target>> /* = ArrayList<IncrementalCacheImpl<Target>> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -512,8 +510,6 @@ Inferred types:
 
 'info' @ [184:60] ==> val info: ChangeInfo.SignatureChanged defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.saveFileToCache[LocalVariableDescriptor]
 
-'CompilationResult' @ [186:22] ==> public companion object defined in org.jetbrains.kotlin.incremental.CompilationResult[FakeCallableDescriptorForObject]
-
 'NO_CHANGES' @ [186:40] ==> public final val NO_CHANGES: CompilationResult defined in org.jetbrains.kotlin.incremental.CompilationResult.Companion[PropertyDescriptorImpl]
 
 'protoMap' @ [187:17] ==> private final val protoMap: IncrementalCacheImpl<Target>.ProtoMap defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl[PropertyDescriptorImpl]
@@ -636,8 +632,6 @@ Inferred types:
 
 'kotlinClass' @ [211:44] ==> val kotlinClass: LocalFileKotlinClass defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.saveFileToCache[LocalVariableDescriptor]
 
-'CompilationResult' @ [213:21] ==> public companion object defined in org.jetbrains.kotlin.incremental.CompilationResult[FakeCallableDescriptorForObject]
-
 'NO_CHANGES' @ [213:39] ==> public final val NO_CHANGES: CompilationResult defined in org.jetbrains.kotlin.incremental.CompilationResult.Companion[PropertyDescriptorImpl]
 
 'changesInfo' @ [216:9] ==> val changesInfo: CompilationResult defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.saveFileToCache[LocalVariableDescriptor]
@@ -649,8 +643,6 @@ Inferred types:
 'changesInfo' @ [217:16] ==> val changesInfo: CompilationResult defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.saveFileToCache[LocalVariableDescriptor]
 
 'this' @ [221:13] ==> <this> defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.logIfSomethingChanged[ReceiverParameterDescriptorImpl]
-
-'CompilationResult' @ [221:21] ==> public companion object defined in org.jetbrains.kotlin.incremental.CompilationResult[FakeCallableDescriptorForObject]
 
 'NO_CHANGES' @ [221:39] ==> public final val NO_CHANGES: CompilationResult defined in org.jetbrains.kotlin.incremental.CompilationResult.Companion[PropertyDescriptorImpl]
 
@@ -679,7 +671,7 @@ Inferred types:
 
 'isPrivate' @ [228:60] ==> internal val MessageLite.isPrivate: Boolean defined in org.jetbrains.kotlin.incremental in file protoDifferenceUtils.kt[PropertyDescriptorImpl]
 
-'names' @ [228:72] ==> internal fun List<MessageLite>.names(nameResolver: NameResolver): List<String> defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'names' @ [228:72] ==> internal fun List<MessageLite>.names(nameResolver: NameResolver): List<String> defined in org.jetbrains.kotlin.incremental in file protoDifferenceUtils.kt[SimpleFunctionDescriptorImpl]
 
 'nameResolver' @ [228:78] ==> value-parameter nameResolver: NameResolver defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.computeChanges.getNonPrivateNames[ValueParameterDescriptorImpl]
 
@@ -774,6 +766,10 @@ Inferred types:
 
 'nameResolver' @ [240:45] ==> public final val nameResolver: NameResolver defined in org.jetbrains.kotlin.serialization.PackageData[DeserializedPropertyDescriptor]
 
+'getFunctionList' @ [241:51] ==> public open fun getFunctionList(): (MutableList<(ProtoBuf.Function..ProtoBuf.Function?)>..List<(ProtoBuf.Function..ProtoBuf.Function?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
+
+'getPropertyList' @ [242:51] ==> public open fun getPropertyList(): (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
+
 'listOf' @ [245:17] ==> public fun <T> listOf(element: ChangeInfo): List<ChangeInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ChangeInfo
@@ -848,6 +844,12 @@ Inferred types:
 
 'nameResolver' @ [256:47] ==> public final val nameResolver: NameResolver defined in org.jetbrains.kotlin.serialization.ClassData[DeserializedPropertyDescriptor]
 
+'getConstructorList' @ [257:53] ==> public open fun getConstructorList(): (MutableList<(ProtoBuf.Constructor..ProtoBuf.Constructor?)>..List<(ProtoBuf.Constructor..ProtoBuf.Constructor?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
+
+'getFunctionList' @ [258:53] ==> public open fun getFunctionList(): (MutableList<(ProtoBuf.Function..ProtoBuf.Function?)>..List<(ProtoBuf.Function..ProtoBuf.Function?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
+
+'getPropertyList' @ [259:53] ==> public open fun getPropertyList(): (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
+
 'classData' @ [260:33] ==> val classData: ClassData defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.computeChanges[LocalVariableDescriptor]
 
 'classProto' @ [260:43] ==> public final val classProto: ProtoBuf.Class defined in org.jetbrains.kotlin.serialization.ClassData[DeserializedPropertyDescriptor]
@@ -918,6 +920,8 @@ Inferred types:
 
 'JvmClassName' @ [277:38] ==> private constructor JvmClassName(@NotNull p0: String) defined in org.jetbrains.kotlin.resolve.jvm.JvmClassName[JavaClassConstructorDescriptor]
 
+'byInternalName' @ [277:52] ==> @NotNull public open fun byInternalName(@NotNull p0: String): JvmClassName defined in org.jetbrains.kotlin.resolve.jvm.JvmClassName[JavaMethodDescriptor]
+
 'toList' @ [278:34] ==> public fun <T> Iterable<JvmClassName>.toList(): List<JvmClassName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JvmClassName
@@ -932,6 +936,8 @@ Inferred types:
 'computeChanges' @ [280:46] ==> private final fun computeChanges(className: JvmClassName, createChangeInfo: (FqName, Collection<String>) -> ChangeInfo): List<ChangeInfo> defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl[SimpleFunctionDescriptorImpl]
 
 'it' @ [280:61] ==> value-parameter it: JvmClassName defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.clearCacheForRemovedClasses.<anonymous>[ValueParameterDescriptorImpl]
+
+'Removed' @ [280:67] ==> public constructor Removed(fqName: FqName, names: Collection<String>) defined in org.jetbrains.kotlin.incremental.ChangeInfo.Removed[ClassConstructorDescriptorImpl]
 
 'asSequence' @ [280:78] ==> public fun <T> Iterable<ChangeInfo>.asSequence(): Sequence<ChangeInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1307,6 +1313,8 @@ Inferred types:
 
 'className' @ [395:46] ==> value-parameter className: JvmClassName defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.ProtoMap.put[ValueParameterDescriptorImpl]
 
+'MembersChanged' @ [395:59] ==> public constructor MembersChanged(fqName: FqName, names: Collection<String>) defined in org.jetbrains.kotlin.incremental.ChangeInfo.MembersChanged[ClassConstructorDescriptorImpl]
+
 'asSequence' @ [395:75] ==> public fun <T> Iterable<ChangeInfo>.asSequence(): Sequence<ChangeInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ChangeInfo
@@ -1657,6 +1665,8 @@ Inferred types:
 
 'Any' @ [489:31] ==> public constructor Any() defined in kotlin.Any[DeserializedClassConstructorDescriptor]
 
+'toString' @ [489:36] ==> public open fun toString(): String defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
+
 'BasicStringMap<Boolean>' @ [492:61] ==> public constructor BasicStringMap<V>(storageFile: File, valueExternalizer: DataExternalizer<Boolean>) defined in org.jetbrains.kotlin.incremental.storage.BasicStringMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <V> -> Boolean
@@ -1843,6 +1853,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [564:51] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'storage' @ [567:13] ==> protected final val storage: LazyStorage<String, String> defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.ClassFqNameToSourceMap[PropertyDescriptorImpl]
 
 'remove' @ [567:21] ==> public final fun remove(key: String): Unit defined in org.jetbrains.kotlin.incremental.storage.LazyStorage[SimpleFunctionDescriptorImpl]
@@ -1890,6 +1902,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [580:62] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'storage' @ [583:13] ==> protected final val storage: LazyStorage<String, Collection<String>> defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl.InternalNameToSourcesMap[PropertyDescriptorImpl]
 
@@ -2421,7 +2435,7 @@ Inferred types:
 
 'THashSet' @ [724:100] ==> public constructor THashSet<E : (Any..Any?)>(p0: (TObjectHashingStrategy<(String..String?)>..TObjectHashingStrategy<(String..String?)>?)) defined in gnu.trove.THashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'PATH_HASHING_STRATEGY' @ [724:118] ==> public final val PATH_HASHING_STRATEGY: (TObjectHashingStrategy<(String..String?)>..TObjectHashingStrategy<(String..String?)>?) defined in com.intellij.openapi.util.io.FileUtil[JavaPropertyDescriptor]
 
@@ -2451,11 +2465,11 @@ Inferred types:
 
 'java' @ [739:28] ==> public val <T> KClass<out ChangeInfo>.java: Class<out ChangeInfo> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ChangeInfo
+    <T> -> Captured(out ChangeInfo)
 
 'simpleName' @ [739:33] ==> public final val <T : (Any..Any?)> Class<out ChangeInfo>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ChangeInfo
+    <T : (Any..Any?)> -> Captured(out ChangeInfo)
 
 'toStringProperties' @ [739:50] ==> protected open fun toStringProperties(): String defined in org.jetbrains.kotlin.incremental.ChangeInfo[SimpleFunctionDescriptorImpl]
 
@@ -2577,4 +2591,6 @@ Inferred types:
     <T> -> T
 
 'Any' @ [783:53] ==> public constructor Any() defined in kotlin.Any[DeserializedClassConstructorDescriptor]
+
+'toString' @ [783:58] ==> public open fun toString(): String defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
 

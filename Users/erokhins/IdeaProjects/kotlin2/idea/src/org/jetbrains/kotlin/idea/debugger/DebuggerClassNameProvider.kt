@@ -46,7 +46,7 @@ Inferred types:
 
 'getNonStrictParentOfType' @ [71:48] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getNonStrictParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (PsiElement..PsiElement?)>..Class<out (PsiElement..PsiElement?)>?)): PsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiElement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'element' @ [71:73] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.Companion.getRelevantElement[ValueParameterDescriptorImpl]
 
@@ -58,10 +58,10 @@ Inferred types:
 
 'scopes' @ [75:83] ==> value-parameter scopes: List<GlobalSearchScope> defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.<init>[ValueParameterDescriptorImpl]
 
-'with' @ [80:80] ==> @InlineOnly public inline fun <T, R> with(receiver: DebugProcess, block: DebugProcess.() -> List<ReferenceType>): List<ReferenceType> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [80:80] ==> @InlineOnly public inline fun <T, R> with(receiver: DebugProcess, block: DebugProcess.() -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DebugProcess
-    <R> -> List<ReferenceType>
+    <R> -> Nothing
 
 'debugProcess' @ [80:86] ==> private final val debugProcess: DebugProcess defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider[PropertyDescriptorImpl]
 
@@ -89,7 +89,7 @@ Inferred types:
     <T> -> (com.sun.jdi.ReferenceType..com.sun.jdi.ReferenceType?)
     <R> -> ReferenceType
 
-'findTargetClasses' @ [85:45] ==> private fun DebugProcess.findTargetClasses(outerClass: ReferenceType, lineAt: Int): List<ReferenceType> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'findTargetClasses' @ [85:45] ==> private fun DebugProcess.findTargetClasses(outerClass: ReferenceType, lineAt: Int): List<ReferenceType> defined in org.jetbrains.kotlin.idea.debugger in file DebuggerClassNameProvider.kt[SimpleFunctionDescriptorImpl]
 
 'referenceType' @ [85:63] ==> value-parameter referenceType: (ReferenceType..ReferenceType?) defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getClassesForPosition.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -133,6 +133,8 @@ Inferred types:
 Inferred types:
     <U> -> SourcePosition
     <V> -> List<KtFunction>
+
+'getLambdasAtLineIfAny' @ [102:46] ==> public fun getLambdasAtLineIfAny(sourcePosition: SourcePosition): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.breakpoints in file breakpointTypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [103:13] ==> val result: MutableSet<String> defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.doGetClassesForPosition[LocalVariableDescriptor]
 
@@ -286,9 +288,7 @@ Inferred types:
 
 'element' @ [118:107] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[ValueParameterDescriptorImpl]
 
-'toJdiName' @ [118:118] ==> private fun String.toJdiName(): String defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
-
-'ComputedClassNames' @ [119:17] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames[FakeCallableDescriptorForObject]
+'toJdiName' @ [118:118] ==> private fun String.toJdiName(): String defined in org.jetbrains.kotlin.idea.debugger in file DebuggerClassNameProvider.kt[SimpleFunctionDescriptorImpl]
 
 'Cached' @ [119:36] ==> public final fun Cached(className: String): KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames.Companion[SimpleFunctionDescriptorImpl]
 
@@ -403,8 +403,6 @@ Inferred types:
 
 'DEFAULT_IMPLS_SUFFIX' @ [136:71] ==> public const final val DEFAULT_IMPLS_SUFFIX: String defined in org.jetbrains.kotlin.load.java.JvmAbi[JavaPropertyDescriptor]
 
-'ComputedClassNames' @ [138:37] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [138:56] ==> public final val EMPTY: KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames.Companion[PropertyDescriptorImpl]
 
 'getNameForNonLocalClass' @ [141:33] ==> private final fun getNameForNonLocalClass(nonLocalClassOrObject: KtClassOrObject): String? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider[SimpleFunctionDescriptorImpl]
@@ -421,8 +419,6 @@ Inferred types:
 'Cached' @ [141:87] ==> public final fun Cached(className: String): KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames.Companion[SimpleFunctionDescriptorImpl]
 
 'it' @ [141:94] ==> value-parameter it: String defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
-
-'ComputedClassNames' @ [141:103] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [141:122] ==> public final val EMPTY: KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames.Companion[PropertyDescriptorImpl]
 
@@ -509,13 +505,13 @@ Inferred types:
 
 'enclosingElementForLocal' @ [155:54] ==> val enclosingElementForLocal: KtElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
 
-'runReadAction' @ [158:53] ==> public fun <T> runReadAction(action: () -> {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?): {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
+'runReadAction' @ [158:53] ==> public fun <T> runReadAction(action: () -> PsiElement?): PsiElement? defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?
+    <T> -> PsiElement?
 
-'getParentOfType' @ [159:41] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out ({PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}..{PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?)>..Class<out ({PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}..{PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?)>?)): {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'getParentOfType' @ [159:41] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (PsiElement..PsiElement?)>..Class<out (PsiElement..PsiElement?)>?)): PsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'element' @ [159:57] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[ValueParameterDescriptorImpl]
 
@@ -543,21 +539,21 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> ComputedClassNames
 
-'containingClassOrFile' @ [162:29] ==> val containingClassOrFile: {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
+'containingClassOrFile' @ [162:29] ==> val containingClassOrFile: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
 
-'containingClassOrFile' @ [162:77] ==> val containingClassOrFile: {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
+'containingClassOrFile' @ [162:77] ==> val containingClassOrFile: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
 
 'isCompanionInReadAction' @ [162:99] ==> private final val KtObjectDeclaration.isCompanionInReadAction: Boolean defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider[PropertyDescriptorImpl]
 
 'getOuterClassNamesForElement' @ [164:30] ==> @PublishedApi @Suppress internal final tailrec fun getOuterClassNamesForElement(element: PsiElement?): KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider[SimpleFunctionDescriptorImpl]
 
-'containingClassOrFile' @ [164:59] ==> val containingClassOrFile: {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
+'containingClassOrFile' @ [164:59] ==> val containingClassOrFile: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
 
 'relevantParentInReadAction' @ [164:81] ==> private final val PsiElement.relevantParentInReadAction: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider[PropertyDescriptorImpl]
 
 'getOuterClassNamesForElement' @ [165:37] ==> @PublishedApi @Suppress internal final tailrec fun getOuterClassNamesForElement(element: PsiElement?): KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider[SimpleFunctionDescriptorImpl]
 
-'containingClassOrFile' @ [165:66] ==> val containingClassOrFile: {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
+'containingClassOrFile' @ [165:66] ==> val containingClassOrFile: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
 
 'distinct' @ [165:90] ==> public final fun distinct(): KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames[SimpleFunctionDescriptorImpl]
 
@@ -570,11 +566,11 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> ComputedClassNames
 
-'containingClassOrFile' @ [167:34] ==> val containingClassOrFile: {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
+'containingClassOrFile' @ [167:34] ==> val containingClassOrFile: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
 
 'getOuterClassNamesForElement' @ [168:29] ==> @PublishedApi @Suppress internal final tailrec fun getOuterClassNamesForElement(element: PsiElement?): KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider[SimpleFunctionDescriptorImpl]
 
-'containingClassOrFile' @ [168:58] ==> val containingClassOrFile: {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
+'containingClassOrFile' @ [168:58] ==> val containingClassOrFile: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
 
 'getOuterClassNamesForElement' @ [171:29] ==> @PublishedApi @Suppress internal final tailrec fun getOuterClassNamesForElement(element: PsiElement?): KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider[SimpleFunctionDescriptorImpl]
 
@@ -674,8 +670,6 @@ Inferred types:
 
 'classNamesOfContainingDeclaration' @ [192:21] ==> val classNamesOfContainingDeclaration: KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
 
-'ComputedClassNames' @ [192:57] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames[FakeCallableDescriptorForObject]
-
 'Cached' @ [192:76] ==> public final fun Cached(className: String): KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames.Companion[SimpleFunctionDescriptorImpl]
 
 'asmTypeForAnonymousClass' @ [193:29] ==> @NotNull public open fun asmTypeForAnonymousClass(@NotNull p0: BindingContext, @NotNull p1: KtElement): Type defined in org.jetbrains.kotlin.codegen.binding.CodegenBinding[JavaMethodDescriptor]
@@ -688,7 +682,7 @@ Inferred types:
 
 'internalName' @ [193:90] ==> public final val Type.internalName: (String..String?)[MyPropertyDescriptor]
 
-'toJdiName' @ [193:103] ==> private fun String.toJdiName(): String defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'toJdiName' @ [193:103] ==> private fun String.toJdiName(): String defined in org.jetbrains.kotlin.idea.debugger in file DebuggerClassNameProvider.kt[SimpleFunctionDescriptorImpl]
 
 'classNamesOfContainingDeclaration' @ [196:21] ==> val classNamesOfContainingDeclaration: KotlinDebuggerCaches.ComputedClassNames defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.getOuterClassNamesForElement[LocalVariableDescriptor]
 
@@ -772,7 +766,7 @@ Inferred types:
 
 'internalName' @ [220:82] ==> public final val Type.internalName: (String..String?)[MyPropertyDescriptor]
 
-'toJdiName' @ [220:95] ==> private fun String.toJdiName(): String defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'toJdiName' @ [220:95] ==> private fun String.toJdiName(): String defined in org.jetbrains.kotlin.idea.debugger in file DebuggerClassNameProvider.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [223:21] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -928,7 +922,7 @@ Inferred types:
 
 'targetClasses' @ [294:13] ==> val targetClasses: ArrayList<ReferenceType> defined in org.jetbrains.kotlin.idea.debugger.findTargetClasses[LocalVariableDescriptor]
 
-'findTargetClasses' @ [294:30] ==> private fun DebugProcess.findTargetClasses(outerClass: ReferenceType, lineAt: Int): List<ReferenceType> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'findTargetClasses' @ [294:30] ==> private fun DebugProcess.findTargetClasses(outerClass: ReferenceType, lineAt: Int): List<ReferenceType> defined in org.jetbrains.kotlin.idea.debugger in file DebuggerClassNameProvider.kt[SimpleFunctionDescriptorImpl]
 
 'nested' @ [294:48] ==> val nested: (ReferenceType..ReferenceType?) defined in org.jetbrains.kotlin.idea.debugger.findTargetClasses[LocalVariableDescriptor]
 

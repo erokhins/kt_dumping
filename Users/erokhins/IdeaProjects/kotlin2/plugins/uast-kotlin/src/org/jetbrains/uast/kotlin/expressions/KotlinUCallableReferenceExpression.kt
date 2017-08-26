@@ -14,9 +14,9 @@
 
 'this' @ [34:76] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUCallableReferenceExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [37:35] ==> internal fun <T> lz(initializer: () -> PsiType?): Lazy<PsiType?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [37:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiType?
+    <T> -> T
 
 'psi' @ [38:22] ==> public open val psi: KtCallableReferenceExpression defined in org.jetbrains.uast.kotlin.KotlinUCallableReferenceExpression[PropertyDescriptorImpl]
 

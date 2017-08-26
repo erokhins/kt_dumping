@@ -44,8 +44,6 @@
 
 'project' @ [48:56] ==> public final val PsiJavaFile.project: Project[MyPropertyDescriptor]
 
-'ConverterSettings' @ [48:65] ==> public companion object defined in org.jetbrains.kotlin.j2k.ConverterSettings[FakeCallableDescriptorForObject]
-
 'defaultSettings' @ [48:83] ==> public final val defaultSettings: ConverterSettings defined in org.jetbrains.kotlin.j2k.ConverterSettings.Companion[PropertyDescriptorImpl]
 
 'EmptyJavaToKotlinServices' @ [48:100] ==> public object EmptyJavaToKotlinServices : JavaToKotlinConverterServices defined in org.jetbrains.kotlin.j2k in file JavaToKotlinConverterServices.kt[FakeCallableDescriptorForObject]

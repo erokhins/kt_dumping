@@ -30,7 +30,7 @@ Inferred types:
 
 'assertInstanceOf' @ [24:30] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), p1: (Class<(UAnnotation..UAnnotation?)>..Class<(UAnnotation..UAnnotation?)>?)): (UAnnotation..UAnnotation?) defined in org.jetbrains.kotlin.test.testFramework.KtUsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UAnnotation
+    <T : (Any..Any?)> -> (org.jetbrains.uast.UAnnotation..org.jetbrains.uast.UAnnotation?)
 
 'annotation' @ [24:47] ==> val annotation: UAnnotation defined in org.jetbrains.uast.test.kotlin.KotlinUastApiTest.testAnnotationParameters.<anonymous>[LocalVariableDescriptor]
 
@@ -44,7 +44,7 @@ Inferred types:
 
 'assertInstanceOf' @ [25:30] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), p1: (Class<(UNamedExpression..UNamedExpression?)>..Class<(UNamedExpression..UNamedExpression?)>?)): (UNamedExpression..UNamedExpression?) defined in org.jetbrains.kotlin.test.testFramework.KtUsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UNamedExpression
+    <T : (Any..Any?)> -> (org.jetbrains.uast.UNamedExpression..org.jetbrains.uast.UNamedExpression?)
 
 'toAttribute' @ [25:47] ==> val toAttribute: UExpression defined in org.jetbrains.uast.test.kotlin.KotlinUastApiTest.testAnnotationParameters.<anonymous>[LocalVariableDescriptor]
 
@@ -56,7 +56,7 @@ Inferred types:
 
 'assertInstanceOf' @ [26:30] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), p1: (Class<(UNamedExpression..UNamedExpression?)>..Class<(UNamedExpression..UNamedExpression?)>?)): (UNamedExpression..UNamedExpression?) defined in org.jetbrains.kotlin.test.testFramework.KtUsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UNamedExpression
+    <T : (Any..Any?)> -> (org.jetbrains.uast.UNamedExpression..org.jetbrains.uast.UNamedExpression?)
 
 'toAttribute' @ [26:47] ==> val toAttribute: UExpression defined in org.jetbrains.uast.test.kotlin.KotlinUastApiTest.testAnnotationParameters.<anonymous>[LocalVariableDescriptor]
 

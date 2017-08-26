@@ -22,9 +22,9 @@
 
 'syntheticFiles' @ [58:17] ==> val syntheticFiles: Collection<KtFile> defined in org.jetbrains.kotlin.idea.caches.resolve.JsAnalyzerFacade.createResolverForModule[LocalVariableDescriptor]
 
-'if (moduleInfo.isLibrary) GlobalSearchScope.EMPTY_SCOPE else moduleContentScope' @ [59:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: GlobalSearchScope, elseBranch: GlobalSearchScope): GlobalSearchScope[SimpleFunctionDescriptorImpl]
+'if (moduleInfo.isLibrary) GlobalSearchScope.EMPTY_SCOPE else moduleContentScope' @ [59:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (GlobalSearchScope..GlobalSearchScope?), elseBranch: (GlobalSearchScope..GlobalSearchScope?)): (GlobalSearchScope..GlobalSearchScope?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> GlobalSearchScope
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.intellij.psi.search.GlobalSearchScope..com.intellij.psi.search.GlobalSearchScope?)
 
 'moduleInfo' @ [59:21] ==> value-parameter moduleInfo: M defined in org.jetbrains.kotlin.idea.caches.resolve.JsAnalyzerFacade.createResolverForModule[ValueParameterDescriptorImpl]
 

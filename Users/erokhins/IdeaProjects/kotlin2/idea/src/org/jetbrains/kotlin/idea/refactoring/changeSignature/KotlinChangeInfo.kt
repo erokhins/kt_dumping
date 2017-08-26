@@ -116,9 +116,9 @@ Inferred types:
 
 'defaultValue' @ [92:106] ==> public final val KtParameter.defaultValue: KtExpression?[MyPropertyDescriptor]
 
-'lazy' @ [94:62] ==> public fun <T> lazy(initializer: () -> HashMap<String, Int>): Lazy<HashMap<String, Int>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [94:62] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> HashMap<String, Int>
+    <T> -> T
 
 'HashMap' @ [95:19] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
@@ -153,9 +153,9 @@ Inferred types:
 
 'map' @ [100:9] ==> val map: HashMap<String, Int> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeInfo.oldNameToParameterIndex.<anonymous>[LocalVariableDescriptor]
 
-'lazy' @ [103:62] ==> public fun <T> lazy(initializer: () -> Boolean): Lazy<Boolean> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [103:62] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Boolean
+    <T> -> T
 
 'getNonReceiverParameters' @ [104:35] ==> public final fun getNonReceiverParameters(): List<KotlinParameterInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeInfo[SimpleFunctionDescriptorImpl]
 
@@ -467,6 +467,8 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
 
+'add' @ [218:109] ==> local final fun add(element: PsiElement): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeInfo.<set-primaryPropagationTargets>[SimpleFunctionDescriptorImpl]
+
 'propagationTargetUsageInfos' @ [221:13] ==> public final var propagationTargetUsageInfos: List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeInfo[PropertyDescriptorImpl]
 
 'result' @ [221:43] ==> val result: LinkedHashSet<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeInfo.<set-primaryPropagationTargets>[LocalVariableDescriptor]
@@ -695,8 +697,6 @@ Inferred types:
 'inheritedCallableDescriptor' @ [278:16] ==> value-parameter inheritedCallableDescriptor: CallableDescriptor? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeInfo.isRefactoringTarget[ValueParameterDescriptorImpl]
 
 'method' @ [279:19] ==> public final val KotlinChangeInfo.method: PsiElement[MyPropertyDescriptor]
-
-'DescriptorToSourceUtils' @ [279:29] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
 'descriptorToDeclaration' @ [279:53] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 

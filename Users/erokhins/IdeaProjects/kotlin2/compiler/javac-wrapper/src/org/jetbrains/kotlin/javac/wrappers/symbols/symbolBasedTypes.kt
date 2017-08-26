@@ -97,7 +97,7 @@ Inferred types:
 
 'typeMirror' @ [50:51] ==> public final val typeMirror: T defined in org.jetbrains.kotlin.javac.wrappers.symbols.SymbolBasedType[PropertyDescriptorImpl]
 
-'findAnnotation' @ [50:62] ==> internal fun AnnotatedConstruct.findAnnotation(fqName: FqName, javac: JavacWrapper): SymbolBasedAnnotation? defined in org.jetbrains.kotlin.javac.wrappers.symbols[SimpleFunctionDescriptorImpl]
+'findAnnotation' @ [50:62] ==> internal fun AnnotatedConstruct.findAnnotation(fqName: FqName, javac: JavacWrapper): SymbolBasedAnnotation? defined in org.jetbrains.kotlin.javac.wrappers.symbols in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [50:77] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.javac.wrappers.symbols.SymbolBasedType.findAnnotation[ValueParameterDescriptorImpl]
 

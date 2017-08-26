@@ -133,9 +133,7 @@ Inferred types:
 
 'putUserData' @ [68:27] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElementBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'SmartCompletionInBasicWeigher' @ [68:39] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'NAMED_ARGUMENT_KEY' @ [68:69] ==> public final val NAMED_ARGUMENT_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.SmartCompletionInBasicWeigher.Companion[PropertyDescriptorImpl]
 

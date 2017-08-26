@@ -10,7 +10,7 @@
 
 'addExtension' @ [29:19] ==> public final fun <Type : (Any..Any?)> addExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: (ProtoBuf.Annotation..ProtoBuf.Annotation?)): (ProtoBuf.Class.Builder..ProtoBuf.Class.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'protocol' @ [29:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase[PropertyDescriptorImpl]
 
@@ -26,7 +26,7 @@ Inferred types:
 
 'setExtension' @ [34:15] ==> public final fun <Type : (Any..Any?)> setExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?), p1: (Int..Int?)): (ProtoBuf.Package.Builder..ProtoBuf.Package.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'protocol' @ [34:28] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase[PropertyDescriptorImpl]
 
@@ -46,7 +46,7 @@ Inferred types:
 
 'addExtension' @ [39:19] ==> public final fun <Type : (Any..Any?)> addExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: (ProtoBuf.Annotation..ProtoBuf.Annotation?)): (ProtoBuf.Constructor.Builder..ProtoBuf.Constructor.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'protocol' @ [39:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase[PropertyDescriptorImpl]
 
@@ -66,7 +66,7 @@ Inferred types:
 
 'addExtension' @ [45:19] ==> public final fun <Type : (Any..Any?)> addExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: (ProtoBuf.Annotation..ProtoBuf.Annotation?)): (ProtoBuf.Function.Builder..ProtoBuf.Function.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'protocol' @ [45:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase[PropertyDescriptorImpl]
 
@@ -86,7 +86,7 @@ Inferred types:
 
 'addExtension' @ [51:19] ==> public final fun <Type : (Any..Any?)> addExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: (ProtoBuf.Annotation..ProtoBuf.Annotation?)): (ProtoBuf.Property.Builder..ProtoBuf.Property.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'protocol' @ [51:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase[PropertyDescriptorImpl]
 
@@ -102,13 +102,13 @@ Inferred types:
 
 'compileTimeInitializer' @ [53:46] ==> public final val PropertyDescriptor.compileTimeInitializer: ConstantValue<*>?[MyPropertyDescriptor]
 
-'constantInitializer' @ [54:13] ==> val constantInitializer: ConstantValue<Any?> defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase.serializeProperty[LocalVariableDescriptor]
+'constantInitializer' @ [54:13] ==> val constantInitializer: ConstantValue<*> defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase.serializeProperty[LocalVariableDescriptor]
 
 'proto' @ [55:13] ==> value-parameter proto: ProtoBuf.Property.Builder defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase.serializeProperty[ValueParameterDescriptorImpl]
 
 'setExtension' @ [55:19] ==> public final fun <Type : (Any..Any?)> setExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?), p1: (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)): (ProtoBuf.Property.Builder..ProtoBuf.Property.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Value
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value?)
 
 'protocol' @ [55:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase[PropertyDescriptorImpl]
 
@@ -118,7 +118,7 @@ Inferred types:
 
 'valueProto' @ [55:80] ==> public final fun valueProto(constant: ConstantValue<*>): ProtoBuf.Annotation.Argument.Value.Builder defined in org.jetbrains.kotlin.serialization.AnnotationSerializer[SimpleFunctionDescriptorImpl]
 
-'constantInitializer' @ [55:91] ==> val constantInitializer: ConstantValue<Any?> defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase.serializeProperty[LocalVariableDescriptor]
+'constantInitializer' @ [55:91] ==> val constantInitializer: ConstantValue<*> defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase.serializeProperty[LocalVariableDescriptor]
 
 'build' @ [55:112] ==> public open fun build(): (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value.Builder[JavaMethodDescriptor]
 
@@ -130,7 +130,7 @@ Inferred types:
 
 'addExtension' @ [61:19] ==> public final fun <Type : (Any..Any?)> addExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: (ProtoBuf.Annotation..ProtoBuf.Annotation?)): (ProtoBuf.EnumEntry.Builder..ProtoBuf.EnumEntry.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.EnumEntry.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'protocol' @ [61:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase[PropertyDescriptorImpl]
 
@@ -150,7 +150,7 @@ Inferred types:
 
 'addExtension' @ [67:19] ==> public final fun <Type : (Any..Any?)> addExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: (ProtoBuf.Annotation..ProtoBuf.Annotation?)): (ProtoBuf.ValueParameter.Builder..ProtoBuf.ValueParameter.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.ValueParameter.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'protocol' @ [67:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase[PropertyDescriptorImpl]
 
@@ -170,7 +170,7 @@ Inferred types:
 
 'addExtension' @ [73:19] ==> public final fun <Type : (Any..Any?)> addExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: (ProtoBuf.Annotation..ProtoBuf.Annotation?)): (ProtoBuf.Type.Builder..ProtoBuf.Type.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'protocol' @ [73:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase[PropertyDescriptorImpl]
 
@@ -190,7 +190,7 @@ Inferred types:
 
 'addExtension' @ [79:19] ==> public final fun <Type : (Any..Any?)> addExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: (ProtoBuf.Annotation..ProtoBuf.Annotation?)): (ProtoBuf.TypeParameter.Builder..ProtoBuf.TypeParameter.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'protocol' @ [79:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.KotlinSerializerExtensionBase[PropertyDescriptorImpl]
 

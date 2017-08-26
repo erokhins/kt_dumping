@@ -617,7 +617,7 @@ Inferred types:
 
 'context' @ [224:9] ==> var context: TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.generateSecondaryConstructor[LocalVariableDescriptor]
 
-'translateAndAliasParameters' @ [224:17] ==> public fun TranslationContext.translateAndAliasParameters(descriptor: FunctionDescriptor, targetList: MutableList<JsParameter>): TranslationContext defined in org.jetbrains.kotlin.js.translate.expression[SimpleFunctionDescriptorImpl]
+'translateAndAliasParameters' @ [224:17] ==> public fun TranslationContext.translateAndAliasParameters(descriptor: FunctionDescriptor, targetList: MutableList<JsParameter>): TranslationContext defined in org.jetbrains.kotlin.js.translate.expression in file FunctionTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'constructorDescriptor' @ [224:45] ==> val constructorDescriptor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.generateSecondaryConstructor[LocalVariableDescriptor]
 
@@ -771,7 +771,7 @@ Inferred types:
 
 'resolvedCall' @ [256:42] ==> val resolvedCall: ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>? defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.generateSecondaryConstructor[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [256:56] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>.resultingDescriptor: (ConstructorDescriptor..ConstructorDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [256:56] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>.resultingDescriptor: ConstructorDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)
 
@@ -842,7 +842,7 @@ Inferred types:
 
 'resolvedCall' @ [269:49] ==> val resolvedCall: ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>? defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.generateSecondaryConstructor[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [269:62] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>.resultingDescriptor: (ConstructorDescriptor..ConstructorDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [269:62] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>.resultingDescriptor: ConstructorDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)
 
@@ -858,11 +858,11 @@ Inferred types:
 
 'resolvedCall' @ [271:76] ==> val resolvedCall: ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>? defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.generateSecondaryConstructor[LocalVariableDescriptor]
 
-'toInvocationWith' @ [271:90] ==> public fun JsExpression.toInvocationWith(leadingExtraArgs: List<JsExpression>, parameterCount: Int, thisExpr: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils[SimpleFunctionDescriptorImpl]
+'toInvocationWith' @ [271:90] ==> public fun JsExpression.toInvocationWith(leadingExtraArgs: List<JsExpression>, parameterCount: Int, thisExpr: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils in file astUtils.kt[SimpleFunctionDescriptorImpl]
 
 'leadingArgs' @ [272:29] ==> val leadingArgs: MutableList<JsExpression> defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.generateSecondaryConstructor[LocalVariableDescriptor]
 
-'delegationConstructor' @ [272:42] ==> val delegationConstructor: (ConstructorDescriptor..ConstructorDescriptor?) defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.generateSecondaryConstructor.<anonymous>[LocalVariableDescriptor]
+'delegationConstructor' @ [272:42] ==> val delegationConstructor: ConstructorDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.generateSecondaryConstructor.<anonymous>[LocalVariableDescriptor]
 
 'valueParameters' @ [272:64] ==> public final val ConstructorDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -1121,7 +1121,7 @@ Inferred types:
 
 'resolvedCall' @ [332:49] ==> val resolvedCall: ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>? defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.emitConstructors.<anonymous>[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [332:62] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>.resultingDescriptor: (ConstructorDescriptor..ConstructorDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [332:62] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>.resultingDescriptor: ConstructorDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)
 
@@ -1147,7 +1147,7 @@ Inferred types:
 
 'topologicalOrder' @ [341:38] ==> public final fun <N : (Any..Any?)> topologicalOrder(@NotNull p0: (MutableIterable<(ClassTranslator.ConstructorInfo..ClassTranslator.ConstructorInfo?)>..Iterable<(ClassTranslator.ConstructorInfo..ClassTranslator.ConstructorInfo?)>), @NotNull p1: ((ClassTranslator.ConstructorInfo..ClassTranslator.ConstructorInfo?)) -> (MutableIterable<(ClassTranslator.ConstructorInfo..ClassTranslator.ConstructorInfo?)>..Iterable<(ClassTranslator.ConstructorInfo..ClassTranslator.ConstructorInfo?)>)): (MutableList<(ClassTranslator.ConstructorInfo..ClassTranslator.ConstructorInfo?)>..List<(ClassTranslator.ConstructorInfo..ClassTranslator.ConstructorInfo?)>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> ConstructorInfo
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.ConstructorInfo..org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.ConstructorInfo?)
 
 'allConstructors' @ [341:55] ==> private final val allConstructors: Sequence<ClassTranslator.ConstructorInfo> defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator[PropertyDescriptorImpl]
 
@@ -1219,7 +1219,7 @@ Inferred types:
 
 'getParentOfType' @ [354:51] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(ClassDescriptor..ClassDescriptor?)>, p2: Boolean): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> ClassDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'descriptor' @ [354:67] ==> val descriptor: MemberDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.emitConstructors[LocalVariableDescriptor]
 
@@ -1546,7 +1546,7 @@ Inferred types:
 
 'JsObjectLiteral' @ [439:31] ==> public constructor JsObjectLiteral(p0: Boolean) defined in org.jetbrains.kotlin.js.backend.ast.JsObjectLiteral[JavaClassConstructorDescriptor]
 
-'translateAccessors' @ [440:17] ==> public fun translateAccessors(descriptor: VariableDescriptorWithAccessors, result: MutableList<JsPropertyInitializer>, context: TranslationContext): Unit defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'translateAccessors' @ [440:17] ==> public fun translateAccessors(descriptor: VariableDescriptorWithAccessors, result: MutableList<JsPropertyInitializer>, context: TranslationContext): Unit defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [440:36] ==> val descriptor: PropertyDescriptor? defined in org.jetbrains.kotlin.js.translate.declaration.ClassTranslator.translatePropertiesAsConstructorParameters[LocalVariableDescriptor]
 

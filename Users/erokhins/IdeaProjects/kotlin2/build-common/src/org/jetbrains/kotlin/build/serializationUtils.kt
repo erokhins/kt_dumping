@@ -58,6 +58,8 @@ Inferred types:
 
 'String' @ [42:21] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isNotBlank' @ [42:29] ==> @InlineOnly public inline fun CharSequence.isNotBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'associate' @ [43:14] ==> public inline fun <T, K, V> Iterable<String>.associate(transform: (String) -> Pair<String, String>): Map<String, String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -132,9 +134,9 @@ Inferred types:
             Boolean::class -> argumentString.toBoolean()
             String::class -> argumentString
             else -> throw IllegalStateException("Unexpected property type: ${param.type}")
-        }' @ [60:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {Comparable<{Boolean & String & Int}> & java.io.Serializable}, entry1: {Comparable<{Boolean & String & Int}> & java.io.Serializable}, entry2: {Comparable<{Boolean & String & Int}> & java.io.Serializable}, entry3: {Comparable<{Boolean & String & Int}> & java.io.Serializable}): {Comparable<{Boolean & String & Int}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
+        }' @ [60:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any, entry2: Any, entry3: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {Comparable<{Boolean & String & Int}> & java.io.Serializable}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
 
 'param' @ [60:36] ==> val param: KParameter defined in org.jetbrains.kotlin.build.deserializeFromPlainText[LocalVariableDescriptor]
 

@@ -6,15 +6,13 @@
 
 'conflictChecker' @ [43:63] ==> value-parameter conflictChecker: (KotlinExtractSuperDialogBase) -> Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.<init>[ValueParameterDescriptorImpl]
 
-'KotlinExtractInterfaceHandler' @ [43:86] ==> public object KotlinExtractInterfaceHandler : KotlinExtractSuperHandlerBase defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass in file KotlinExtractInterfaceHandler.kt[FakeCallableDescriptorForObject]
-
 'REFACTORING_NAME' @ [43:116] ==> public final val REFACTORING_NAME: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.KotlinExtractInterfaceHandler[PropertyDescriptorImpl]
 
 'refactoring' @ [43:134] ==> value-parameter refactoring: (ExtractSuperInfo) -> Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.<init>[ValueParameterDescriptorImpl]
 
 'init' @ [49:9] ==> protected open fun init(): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog[SimpleFunctionDescriptorImpl]
 
-'extractClassMembers' @ [53:38] ==> public fun extractClassMembers(aClass: KtClassOrObject, collectSuperTypeEntries: Boolean = ..., filter: ((KtNamedDeclaration) -> Boolean)? = ...): List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo[SimpleFunctionDescriptorImpl]
+'extractClassMembers' @ [53:38] ==> public fun extractClassMembers(aClass: KtClassOrObject, collectSuperTypeEntries: Boolean = ..., filter: ((KtNamedDeclaration) -> Boolean)? = ...): List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo in file KotlinMemberInfoStorage.kt[SimpleFunctionDescriptorImpl]
 
 'originalClass' @ [53:58] ==> protected final val originalClass: KtClassOrObject defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog[PropertyDescriptorImpl]
 
@@ -50,7 +48,7 @@ Inferred types:
 
 'extractableMemberInfos' @ [60:17] ==> val extractableMemberInfos: List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.createMemberInfoModel[LocalVariableDescriptor]
 
-'getInterfaceContainmentVerifier' @ [61:17] ==> public fun getInterfaceContainmentVerifier(getMemberInfos: () -> List<KotlinMemberInfo>): (KtNamedDeclaration) -> Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'getInterfaceContainmentVerifier' @ [61:17] ==> public fun getInterfaceContainmentVerifier(getMemberInfos: () -> List<KotlinMemberInfo>): (KtNamedDeclaration) -> Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpUtils.kt[SimpleFunctionDescriptorImpl]
 
 'selectedMembers' @ [61:51] ==> public final val selectedMembers: List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog[PropertyDescriptorImpl]
 
@@ -112,13 +110,13 @@ Inferred types:
 
 'member' @ [77:21] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.createMemberInfoModel.<no name provided>.isAbstractEnabled[LocalVariableDescriptor]
 
-'isAbstractInInterface' @ [77:28] ==> public fun KtNamedDeclaration.isAbstractInInterface(originalClass: KtClassOrObject): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'isAbstractInInterface' @ [77:28] ==> public fun KtNamedDeclaration.isAbstractInInterface(originalClass: KtClassOrObject): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpUtils.kt[SimpleFunctionDescriptorImpl]
 
 'originalClass' @ [77:50] ==> protected final val originalClass: KtClassOrObject defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog[PropertyDescriptorImpl]
 
 'member' @ [78:21] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.createMemberInfoModel.<no name provided>.isAbstractEnabled[LocalVariableDescriptor]
 
-'isConstructorDeclaredProperty' @ [78:28] ==> public fun KtNamedDeclaration.isConstructorDeclaredProperty(): Boolean defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'isConstructorDeclaredProperty' @ [78:28] ==> public fun KtNamedDeclaration.isConstructorDeclaredProperty(): Boolean defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [79:24] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.createMemberInfoModel.<no name provided>.isAbstractEnabled[LocalVariableDescriptor]
 
@@ -128,7 +126,7 @@ Inferred types:
 
 'member' @ [79:79] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.createMemberInfoModel.<no name provided>.isAbstractEnabled[LocalVariableDescriptor]
 
-'mustBeAbstractInInterface' @ [79:86] ==> public fun KtProperty.mustBeAbstractInInterface(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'mustBeAbstractInInterface' @ [79:86] ==> public fun KtProperty.mustBeAbstractInInterface(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpUtils.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [79:118] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.createMemberInfoModel.<no name provided>.isAbstractEnabled[LocalVariableDescriptor]
 
@@ -140,13 +138,13 @@ Inferred types:
 
 'member' @ [84:48] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.createMemberInfoModel.<no name provided>.isAbstractWhenDisabled[LocalVariableDescriptor]
 
-'isAbstractInInterface' @ [84:55] ==> public fun KtNamedDeclaration.isAbstractInInterface(originalClass: KtClassOrObject): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'isAbstractInInterface' @ [84:55] ==> public fun KtNamedDeclaration.isAbstractInInterface(originalClass: KtClassOrObject): Boolean defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpUtils.kt[SimpleFunctionDescriptorImpl]
 
 'originalClass' @ [84:77] ==> protected final val originalClass: KtClassOrObject defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog[PropertyDescriptorImpl]
 
 'member' @ [84:95] ==> val member: (KtNamedDeclaration..KtNamedDeclaration?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.createMemberInfoModel.<no name provided>.isAbstractWhenDisabled[LocalVariableDescriptor]
 
-'isConstructorDeclaredProperty' @ [84:102] ==> public fun KtNamedDeclaration.isConstructorDeclaredProperty(): Boolean defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'isConstructorDeclaredProperty' @ [84:102] ==> public fun KtNamedDeclaration.isConstructorDeclaredProperty(): Boolean defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'super' @ [88:30] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractInterfaceDialog.createMemberInfoModel.<no name provided>[LazyClassReceiverParameterDescriptor]
 

@@ -1,8 +1,8 @@
 'psi' @ [16:31] ==> value-parameter psi: PsiVariable defined in org.jetbrains.uast.kotlin.expressions.KotlinLocalFunctionUVariable.<init>[ValueParameterDescriptorImpl]
 
-'lz' @ [17:51] ==> internal fun <T> lz(initializer: () -> ULambdaExpression): Lazy<ULambdaExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [17:51] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ULambdaExpression
+    <T> -> T
 
 'createLocalFunctionLambdaExpression' @ [18:9] ==> public fun createLocalFunctionLambdaExpression(function: KtFunction, parent: UElement?): ULambdaExpression defined in org.jetbrains.uast.kotlin.expressions in file LocalFunction.kt[SimpleFunctionDescriptorImpl]
 
@@ -28,9 +28,9 @@ Inferred types:
 
 'KotlinAbstractUExpression' @ [32:4] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [36:26] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [36:26] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [36:31] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -42,9 +42,9 @@ Inferred types:
 
 'this' @ [36:82] ==> <this> defined in org.jetbrains.uast.kotlin.expressions.KotlinLocalFunctionULambdaExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [38:37] ==> internal fun <T> lz(initializer: () -> List<KotlinUParameter>): Lazy<List<KotlinUParameter>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [38:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KotlinUParameter>
+    <T> -> T
 
 'psi' @ [39:9] ==> public open val psi: KtFunction defined in org.jetbrains.uast.kotlin.expressions.KotlinLocalFunctionULambdaExpression[PropertyDescriptorImpl]
 
@@ -56,8 +56,6 @@ Inferred types:
     <R> -> KotlinUParameter
 
 'KotlinUParameter' @ [40:13] ==> public constructor KotlinUParameter(psi: PsiParameter, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUParameter[ClassConstructorDescriptorImpl]
-
-'UastKotlinPsiParameter' @ [40:30] ==> public companion object defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiParameter[FakeCallableDescriptorForObject]
 
 'create' @ [40:53] ==> public final fun create(parameter: KtParameter, parent: PsiElement, containingElement: UElement, index: Int): PsiParameter defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiParameter.Companion[SimpleFunctionDescriptorImpl]
 
@@ -78,6 +76,8 @@ Inferred types:
     <T> -> KotlinUParameter
 
 'KotlinUParameter' @ [46:29] ==> public constructor KotlinUParameter(psi: PsiParameter, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUParameter[ClassConstructorDescriptorImpl]
+
+'asRenderString' @ [46:47] ==> public open fun asRenderString(): String defined in org.jetbrains.uast.kotlin.KotlinUParameter[DeserializedSimpleFunctionDescriptor]
 
 '?:' @ [47:27] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:

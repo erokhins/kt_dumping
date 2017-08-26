@@ -4,17 +4,17 @@
 
 'FqName' @ [28:26] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
-'lazy' @ [30:37] ==> public fun <T> lazy(initializer: () -> ByteArray): Lazy<ByteArray> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [30:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ByteArray
+    <T> -> T
 
 'java' @ [31:35] ==> public val <T> KClass<out <no name provided>>.java: Class<out <no name provided>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> Captured(out <no name provided>)
 
 'classLoader' @ [31:40] ==> public final val <T : (Any..Any?)> Class<out <no name provided>>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> <no name provided>
+    <T : (Any..Any?)> -> Captured(out <no name provided>)
 
 'getResourceAsStream' @ [31:52] ==> public open fun getResourceAsStream(p0: (String..String?)): (InputStream..InputStream?) defined in java.lang.ClassLoader[JavaMethodDescriptor]
 

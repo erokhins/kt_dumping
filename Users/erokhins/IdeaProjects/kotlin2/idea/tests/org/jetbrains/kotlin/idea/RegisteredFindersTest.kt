@@ -36,11 +36,11 @@ Inferred types:
 
 'java' @ [35:42] ==> public val <T> KClass<out PsiElementFinder>.java: Class<out PsiElementFinder> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElementFinder
+    <T> -> Captured(out PsiElementFinder)
 
 'simpleName' @ [35:47] ==> public final val <T : (Any..Any?)> Class<out PsiElementFinder>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElementFinder
+    <T : (Any..Any?)> -> Captured(out PsiElementFinder)
 
 'expectedFindersNames' @ [36:31] ==> val expectedFindersNames: MutableSet<String> defined in org.jetbrains.kotlin.idea.RegisteredFindersTest.testKnownNonClasspathFinder[LocalVariableDescriptor]
 

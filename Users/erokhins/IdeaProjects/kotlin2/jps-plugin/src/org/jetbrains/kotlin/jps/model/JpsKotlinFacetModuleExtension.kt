@@ -24,9 +24,7 @@ Inferred types:
 
 'getChild' @ [43:23] ==> public abstract fun <T : (JpsElement..JpsElement?)> getChild(@NotNull p0: JpsElementChildRole<(JpsKotlinFacetModuleExtension..JpsKotlinFacetModuleExtension?)>): (JpsKotlinFacetModuleExtension..JpsKotlinFacetModuleExtension?) defined in org.jetbrains.jps.model.JpsElementContainer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JpsElement..JpsElement?)> -> JpsKotlinFacetModuleExtension
-
-'JpsKotlinFacetModuleExtension' @ [43:32] ==> public companion object defined in org.jetbrains.kotlin.jps.model.JpsKotlinFacetModuleExtension[FakeCallableDescriptorForObject]
+    <T : (JpsElement..JpsElement?)> -> (org.jetbrains.kotlin.jps.model.JpsKotlinFacetModuleExtension..org.jetbrains.kotlin.jps.model.JpsKotlinFacetModuleExtension?)
 
 'KIND' @ [43:62] ==> public final val KIND: (JpsElementChildRoleBase<(JpsKotlinFacetModuleExtension..JpsKotlinFacetModuleExtension?)>..JpsElementChildRoleBase<(JpsKotlinFacetModuleExtension..JpsKotlinFacetModuleExtension?)>?) defined in org.jetbrains.kotlin.jps.model.JpsKotlinFacetModuleExtension.Companion[PropertyDescriptorImpl]
 

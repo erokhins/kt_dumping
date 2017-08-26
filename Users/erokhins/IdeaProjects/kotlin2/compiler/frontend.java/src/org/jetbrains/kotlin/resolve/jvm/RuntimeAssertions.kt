@@ -117,10 +117,8 @@ Inferred types:
 
 'record' @ [96:21] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(KtExpression..KtExpression?), (RuntimeAssertionInfo..RuntimeAssertionInfo?)>..WritableSlice<(KtExpression..KtExpression?), (RuntimeAssertionInfo..RuntimeAssertionInfo?)>?), p1: (KtExpression..KtExpression?), p2: (RuntimeAssertionInfo..RuntimeAssertionInfo?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> RuntimeAssertionInfo
-
-'JvmBindingContextSlices' @ [96:28] ==> public object JvmBindingContextSlices defined in org.jetbrains.kotlin.resolve.jvm in file JvmBindingContextSlices.kt[FakeCallableDescriptorForObject]
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.jvm.RuntimeAssertionInfo..org.jetbrains.kotlin.resolve.jvm.RuntimeAssertionInfo?)
 
 'RUNTIME_ASSERTION_INFO' @ [96:52] ==> @JvmField public final val RUNTIME_ASSERTION_INFO: WritableSlice<KtExpression, RuntimeAssertionInfo> defined in org.jetbrains.kotlin.resolve.jvm.JvmBindingContextSlices[PropertyDescriptorImpl]
 

@@ -25,8 +25,6 @@ Inferred types:
 
 'mutableDiagnostics' @ [45:54] ==> private final val mutableDiagnostics: MutableDiagnosticsWithSuppression? defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace[PropertyDescriptorImpl]
 
-'Diagnostics' @ [45:76] ==> public companion object defined in org.jetbrains.kotlin.resolve.diagnostics.Diagnostics[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [45:88] ==> public final val EMPTY: Diagnostics defined in org.jetbrains.kotlin.resolve.diagnostics.Diagnostics.Companion[PropertyDescriptorImpl]
 
 'this@DelegatingBindingTrace' @ [48:20] ==> <this> defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace[LazyClassReceiverParameterDescriptor]
@@ -69,15 +67,15 @@ Inferred types:
 
 'copyOf' @ [65:33] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> copyOf(p0: (MutableMap<out (K..K?), out (V..V?)>..Map<out (K..K?), (V..V?)>?)): (ImmutableMap<(K..K?), (V..V?)>..ImmutableMap<(K..K?), (V..V?)>?) defined in com.google.common.collect.ImmutableMap[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'parentContext' @ [65:40] ==> private final val parentContext: BindingContext defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace[PropertyDescriptorImpl]
 
 'getSliceContents' @ [65:54] ==> @TestOnly @NotNull public abstract fun <K : (Any..Any?), V : (Any..Any?)> getSliceContents(@NotNull slice: ReadOnlySlice<(K..K?), (V..V?)>): ImmutableMap<(K..K?), (V..V?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [65:71] ==> value-parameter slice: ReadOnlySlice<K, V> defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace.MyBindingContext.getSliceContents[ValueParameterDescriptorImpl]
 
@@ -85,8 +83,8 @@ Inferred types:
 
 'getSliceContents' @ [65:84] ==> @NotNull @Override public open fun <K : (Any..Any?), V : (Any..Any?)> getSliceContents(@NotNull slice: ReadOnlySlice<(K..K?), (V..V?)>): ImmutableMap<(K..K?), (V..V?)> defined in org.jetbrains.kotlin.util.slicedMap.SlicedMapImpl[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [65:101] ==> value-parameter slice: ReadOnlySlice<K, V> defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace.MyBindingContext.getSliceContents[ValueParameterDescriptorImpl]
 
@@ -146,8 +144,8 @@ Inferred types:
 
 'put' @ [92:13] ==> @Override public open fun <K : (Any..Any?), V : (Any..Any?)> put(slice: (WritableSlice<(K..K?), (V..V?)>..WritableSlice<(K..K?), (V..V?)>?), key: (K..K?), value: (V..V?)): Unit defined in org.jetbrains.kotlin.util.slicedMap.SlicedMapImpl[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [92:17] ==> value-parameter slice: WritableSlice<K, V> defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace.record[ValueParameterDescriptorImpl]
 
@@ -168,8 +166,8 @@ Inferred types:
 
 'get' @ [100:25] ==> @Override public open fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(K..K?), (V..V?)>..ReadOnlySlice<(K..K?), (V..V?)>?), key: (K..K?)): (V..V?) defined in org.jetbrains.kotlin.util.slicedMap.SlicedMapImpl[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [100:29] ==> value-parameter slice: ReadOnlySlice<K, V> defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace.get[ValueParameterDescriptorImpl]
 
@@ -193,8 +191,6 @@ Inferred types:
 
 'value' @ [103:17] ==> val value: (V..V?) defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace.get[LocalVariableDescriptor]
 
-'SetSlice' @ [103:26] ==> public companion object defined in org.jetbrains.kotlin.util.slicedMap.SetSlice[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [103:35] ==> @JvmField public final val DEFAULT: Boolean defined in org.jetbrains.kotlin.util.slicedMap.SetSlice.Companion[PropertyDescriptorImpl]
 
 'value' @ [103:51] ==> val value: (V..V?) defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace.get[LocalVariableDescriptor]
@@ -207,8 +203,8 @@ Inferred types:
 
 'get' @ [109:30] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(K..K?), (V..V?)>..ReadOnlySlice<(K..K?), (V..V?)>?), key: (K..K?)): V? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [109:34] ==> value-parameter slice: ReadOnlySlice<K, V> defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace.get[ValueParameterDescriptorImpl]
 
@@ -218,8 +214,8 @@ Inferred types:
 
 'getKeys' @ [113:24] ==> @Override @SuppressWarnings public open fun <K : (Any..Any?), V : (Any..Any?)> getKeys(slice: (WritableSlice<(K..K?), (V..V?)>..WritableSlice<(K..K?), (V..V?)>?)): (MutableCollection<(K..K?)>..Collection<(K..K?)>?) defined in org.jetbrains.kotlin.util.slicedMap.SlicedMapImpl[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [113:32] ==> value-parameter slice: WritableSlice<K, V> defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace.getKeys[ValueParameterDescriptorImpl]
 
@@ -227,8 +223,8 @@ Inferred types:
 
 'getKeys' @ [114:40] ==> @NotNull @ReadOnly public abstract fun <K : (Any..Any?), V : (Any..Any?)> getKeys(slice: (WritableSlice<(K..K?), (V..V?)>..WritableSlice<(K..K?), (V..V?)>?)): Collection<(K..K?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [114:48] ==> value-parameter slice: WritableSlice<K, V> defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace.getKeys[ValueParameterDescriptorImpl]
 

@@ -22,16 +22,16 @@
 
 'pushDownData' @ [57:28] ==> value-parameter pushDownData: PushDownData<MemberInfo, PsiMember> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.JavaToKotlinPushDownDelegate.checkTargetClassConflicts[ValueParameterDescriptorImpl]
 
-'membersToMove' @ [57:41] ==> public final val <MemberInfo : (MemberInfoBase<(PsiMember..PsiMember?)>..MemberInfoBase<(PsiMember..PsiMember?)>?), Member : (PsiElement..PsiElement?)> PushDownData<MemberInfo, PsiMember>.membersToMove: (MutableList<(MemberInfo..MemberInfo?)>..List<(MemberInfo..MemberInfo?)>?)[MyPropertyDescriptor]
+'membersToMove' @ [57:41] ==> public final val <MemberInfo : (MemberInfoBase<(PsiMember..PsiMember?)>..MemberInfoBase<(PsiMember..PsiMember?)>?), Member : (PsiElement..PsiElement?)> PushDownData<MemberInfo, (PsiMember..PsiMember?)>.membersToMove: (MutableList<(MemberInfo..MemberInfo?)>..List<(MemberInfo..MemberInfo?)>?)[MyPropertyDescriptor]
 Inferred types:
     <MemberInfo : (MemberInfoBase<(Member..Member?)>..MemberInfoBase<(Member..Member?)>?)> -> MemberInfo
-    <Member : (PsiElement..PsiElement?)> -> PsiMember
+    <Member : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiMember..com.intellij.psi.PsiMember?)
 
 'memberInfo' @ [58:26] ==> val memberInfo: (MemberInfo..MemberInfo?) defined in org.jetbrains.kotlin.idea.refactoring.pushDown.JavaToKotlinPushDownDelegate.checkTargetClassConflicts[LocalVariableDescriptor]
 
 'member' @ [58:37] ==> public final val MemberInfo.member: (PsiMember..PsiMember?)[MyPropertyDescriptor]
 
-'checkExternalUsages' @ [59:13] ==> internal fun checkExternalUsages(conflicts: MultiMap<PsiElement, String>, member: PsiElement, targetClassDescriptor: ClassDescriptor, resolutionFacade: ResolutionFacade): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown[SimpleFunctionDescriptorImpl]
+'checkExternalUsages' @ [59:13] ==> internal fun checkExternalUsages(conflicts: MultiMap<PsiElement, String>, member: PsiElement, targetClassDescriptor: ClassDescriptor, resolutionFacade: ResolutionFacade): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown in file pushDownConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [59:33] ==> value-parameter conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.JavaToKotlinPushDownDelegate.checkTargetClassConflicts[ValueParameterDescriptorImpl]
 
@@ -45,10 +45,10 @@ Inferred types:
 
 'pushDownData' @ [64:26] ==> value-parameter pushDownData: PushDownData<MemberInfo, PsiMember> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.JavaToKotlinPushDownDelegate.pushDownToClass[ValueParameterDescriptorImpl]
 
-'sourceClass' @ [64:39] ==> public final var <MemberInfo : (MemberInfoBase<(PsiMember..PsiMember?)>..MemberInfoBase<(PsiMember..PsiMember?)>?), Member : (PsiElement..PsiElement?)> PushDownData<MemberInfo, PsiMember>.sourceClass: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'sourceClass' @ [64:39] ==> public final var <MemberInfo : (MemberInfoBase<(PsiMember..PsiMember?)>..MemberInfoBase<(PsiMember..PsiMember?)>?), Member : (PsiElement..PsiElement?)> PushDownData<MemberInfo, (PsiMember..PsiMember?)>.sourceClass: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 Inferred types:
     <MemberInfo : (MemberInfoBase<(Member..Member?)>..MemberInfoBase<(Member..Member?)>?)> -> MemberInfo
-    <Member : (PsiElement..PsiElement?)> -> PsiMember
+    <Member : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiMember..com.intellij.psi.PsiMember?)
 
 'targetClass' @ [65:24] ==> value-parameter targetClass: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.pushDown.JavaToKotlinPushDownDelegate.pushDownToClass[ValueParameterDescriptorImpl]
 
@@ -86,10 +86,10 @@ Inferred types:
 
 'pushDownData' @ [72:37] ==> value-parameter pushDownData: PushDownData<MemberInfo, PsiMember> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.JavaToKotlinPushDownDelegate.pushDownToClass[ValueParameterDescriptorImpl]
 
-'membersToMove' @ [72:50] ==> public final val <MemberInfo : (MemberInfoBase<(PsiMember..PsiMember?)>..MemberInfoBase<(PsiMember..PsiMember?)>?), Member : (PsiElement..PsiElement?)> PushDownData<MemberInfo, PsiMember>.membersToMove: (MutableList<(MemberInfo..MemberInfo?)>..List<(MemberInfo..MemberInfo?)>?)[MyPropertyDescriptor]
+'membersToMove' @ [72:50] ==> public final val <MemberInfo : (MemberInfoBase<(PsiMember..PsiMember?)>..MemberInfoBase<(PsiMember..PsiMember?)>?), Member : (PsiElement..PsiElement?)> PushDownData<MemberInfo, (PsiMember..PsiMember?)>.membersToMove: (MutableList<(MemberInfo..MemberInfo?)>..List<(MemberInfo..MemberInfo?)>?)[MyPropertyDescriptor]
 Inferred types:
     <MemberInfo : (MemberInfoBase<(Member..Member?)>..MemberInfoBase<(Member..Member?)>?)> -> MemberInfo
-    <Member : (PsiElement..PsiElement?)> -> PsiMember
+    <Member : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiMember..com.intellij.psi.PsiMember?)
 
 'memberInfo' @ [73:26] ==> val memberInfo: (MemberInfo..MemberInfo?) defined in org.jetbrains.kotlin.idea.refactoring.pushDown.JavaToKotlinPushDownDelegate.pushDownToClass[LocalVariableDescriptor]
 

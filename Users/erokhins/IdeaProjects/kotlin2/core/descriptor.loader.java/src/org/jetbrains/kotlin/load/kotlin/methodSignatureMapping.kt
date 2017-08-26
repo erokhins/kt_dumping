@@ -24,7 +24,7 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
 
-'appendErasedType' @ [38:17] ==> private fun StringBuilder /* = StringBuilder */.appendErasedType(type: KotlinType): Unit defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'appendErasedType' @ [38:17] ==> private fun StringBuilder /* = StringBuilder */.appendErasedType(type: KotlinType): Unit defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [38:34] ==> value-parameter it: (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.load.kotlin.computeJvmDescriptor.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -49,7 +49,7 @@ Inferred types:
 
 'append' @ [45:21] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'appendErasedType' @ [48:21] ==> private fun StringBuilder /* = StringBuilder */.appendErasedType(type: KotlinType): Unit defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'appendErasedType' @ [48:21] ==> private fun StringBuilder /* = StringBuilder */.appendErasedType(type: KotlinType): Unit defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'returnType' @ [48:38] ==> public final val FunctionDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -63,7 +63,7 @@ Inferred types:
 
 'f' @ [56:40] ==> value-parameter f: FunctionDescriptor defined in org.jetbrains.kotlin.load.kotlin.forceSingleValueParameterBoxing[ValueParameterDescriptorImpl]
 
-'isFromJavaOrBuiltins' @ [56:42] ==> public fun CallableMemberDescriptor.isFromJavaOrBuiltins(): Boolean defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'isFromJavaOrBuiltins' @ [56:42] ==> public fun CallableMemberDescriptor.isFromJavaOrBuiltins(): Boolean defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'f' @ [56:68] ==> value-parameter f: FunctionDescriptor defined in org.jetbrains.kotlin.load.kotlin.forceSingleValueParameterBoxing[ValueParameterDescriptorImpl]
 
@@ -85,13 +85,15 @@ Inferred types:
 
 'type' @ [57:46] ==> public final val ValueParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'mapToJvmType' @ [57:51] ==> internal fun KotlinType.mapToJvmType(): JvmType defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'mapToJvmType' @ [57:51] ==> internal fun KotlinType.mapToJvmType(): JvmType defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'jvmPrimitiveType' @ [57:90] ==> public final val jvmPrimitiveType: JvmPrimitiveType? defined in org.jetbrains.kotlin.load.kotlin.JvmType.Primitive[PropertyDescriptorImpl]
 
 'INT' @ [57:127] ==> enum entry INT defined in org.jetbrains.kotlin.resolve.jvm.JvmPrimitiveType[FakeCallableDescriptorForObject]
 
-'BuiltinMethodsWithSpecialGenericSignature' @ [60:13] ==> public object BuiltinMethodsWithSpecialGenericSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[FakeCallableDescriptorForObject]
+'?:' @ [60:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: FunctionDescriptor?, right: FunctionDescriptor): FunctionDescriptor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> FunctionDescriptor
 
 'getOverriddenBuiltinFunctionWithErasedValueParametersInJava' @ [60:55] ==> @JvmStatic public final fun getOverriddenBuiltinFunctionWithErasedValueParametersInJava(functionDescriptor: FunctionDescriptor): FunctionDescriptor? defined in org.jetbrains.kotlin.load.java.BuiltinMethodsWithSpecialGenericSignature[SimpleFunctionDescriptorImpl]
 
@@ -109,7 +111,7 @@ Inferred types:
 
 'type' @ [63:80] ==> public final val ValueParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'mapToJvmType' @ [63:85] ==> internal fun KotlinType.mapToJvmType(): JvmType defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'mapToJvmType' @ [63:85] ==> internal fun KotlinType.mapToJvmType(): JvmType defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'overridden' @ [64:12] ==> val overridden: FunctionDescriptor defined in org.jetbrains.kotlin.load.kotlin.forceSingleValueParameterBoxing[LocalVariableDescriptor]
 
@@ -151,7 +153,7 @@ Inferred types:
 
 'original' @ [77:14] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
-'computeJvmDescriptor' @ [77:68] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [77:68] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'JavaToKotlinClassMap' @ [83:9] ==> public object JavaToKotlinClassMap : PlatformToKotlinClassMap defined in org.jetbrains.kotlin.platform in file JavaToKotlinClassMap.kt[FakeCallableDescriptorForObject]
 
@@ -178,7 +180,9 @@ Inferred types:
 
 'byClassId' @ [92:29] ==> @NotNull public open fun byClassId(@NotNull classId: ClassId): JvmClassName defined in org.jetbrains.kotlin.resolve.jvm.JvmClassName[JavaMethodDescriptor]
 
-'JavaToKotlinClassMap' @ [92:39] ==> public object JavaToKotlinClassMap : PlatformToKotlinClassMap defined in org.jetbrains.kotlin.platform in file JavaToKotlinClassMap.kt[FakeCallableDescriptorForObject]
+'?:' @ [92:39] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ClassId?, right: ClassId): ClassId[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ClassId
 
 'mapKotlinToJava' @ [92:60] ==> public final fun mapKotlinToJava(kotlinFqName: FqNameUnsafe): ClassId? defined in org.jetbrains.kotlin.platform.JavaToKotlinClassMap[SimpleFunctionDescriptorImpl]
 
@@ -194,7 +198,7 @@ Inferred types:
 
 'type' @ [96:12] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.load.kotlin.appendErasedType[ValueParameterDescriptorImpl]
 
-'mapToJvmType' @ [96:17] ==> internal fun KotlinType.mapToJvmType(): JvmType defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'mapToJvmType' @ [96:17] ==> internal fun KotlinType.mapToJvmType(): JvmType defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'mapType' @ [100:9] ==> public fun <T : Any> mapType(kotlinType: KotlinType, factory: JvmTypeFactory<JvmType>, mode: TypeMappingMode, typeMappingConfiguration: TypeMappingConfiguration<JvmType>, descriptorTypeWriter: JvmDescriptorTypeWriter<JvmType>?, writeGenericType: (KotlinType, JvmType, TypeMappingMode) -> Unit = ...): JvmType defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -203,8 +207,6 @@ Inferred types:
 'this' @ [100:17] ==> <this> defined in org.jetbrains.kotlin.load.kotlin.mapToJvmType[ReceiverParameterDescriptorImpl]
 
 'JvmTypeFactoryImpl' @ [100:23] ==> private object JvmTypeFactoryImpl : JvmTypeFactory<JvmType> defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[FakeCallableDescriptorForObject]
-
-'TypeMappingMode' @ [100:43] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [100:59] ==> @JvmField public final val DEFAULT: TypeMappingMode defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode.Companion[PropertyDescriptorImpl]
 

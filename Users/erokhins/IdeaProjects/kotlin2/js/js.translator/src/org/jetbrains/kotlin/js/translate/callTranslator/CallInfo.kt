@@ -24,7 +24,7 @@
 
 'callInfo' @ [59:37] ==> value-parameter callInfo: CallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator.FunctionCallInfo.<init>[ValueParameterDescriptorImpl]
 
-'createCallInfo' @ [74:12] ==> private fun TranslationContext.createCallInfo(resolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): CallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'createCallInfo' @ [74:12] ==> private fun TranslationContext.createCallInfo(resolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): CallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallInfo.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [74:27] ==> value-parameter resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.js.translate.callTranslator.getCallInfo[ValueParameterDescriptorImpl]
 
@@ -106,7 +106,7 @@ Inferred types:
 
 'argsBlock' @ [97:42] ==> val argsBlock: JsBlock defined in org.jetbrains.kotlin.js.translate.callTranslator.getCallInfo[LocalVariableDescriptor]
 
-'createCallInfo' @ [98:20] ==> private fun TranslationContext.createCallInfo(resolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): CallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'createCallInfo' @ [98:20] ==> private fun TranslationContext.createCallInfo(resolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): CallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallInfo.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [98:35] ==> value-parameter resolvedCall: ResolvedCall<out FunctionDescriptor> defined in org.jetbrains.kotlin.js.translate.callTranslator.getCallInfo[ValueParameterDescriptorImpl]
 
@@ -147,13 +147,13 @@ Inferred types:
 
 'explicitReceiverKind' @ [114:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [120:29] ==> value-parameter resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.js.translate.callTranslator.createCallInfo[ValueParameterDescriptorImpl]
 
 'dispatchReceiver' @ [120:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'when (receiverKind) {
             DISPATCH_RECEIVER, BOTH_RECEIVERS -> explicitReceivers.extensionOrDispatchReceiver
@@ -180,7 +180,7 @@ Inferred types:
 
 'extensionReceiver' @ [128:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'when (receiverKind) {
             EXTENSION_RECEIVER -> explicitReceivers.extensionOrDispatchReceiver
@@ -216,7 +216,7 @@ Inferred types:
 
 'call' @ [140:22] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'isSafeCall' @ [140:27] ==> public fun Call.isSafeCall(): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -237,7 +237,7 @@ Inferred types:
 
 'explicitReceiverKind' @ [141:28] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'BOTH_RECEIVERS' @ [142:13] ==> enum entry BOTH_RECEIVERS defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 
@@ -281,7 +281,7 @@ Inferred types:
 
 'resultingDescriptor' @ [154:38] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'containingDeclaration' @ [154:58] ==> public final val CallableDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
@@ -305,13 +305,13 @@ Inferred types:
 
 'dispatchReceiver' @ [160:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [161:37] ==> value-parameter resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.js.translate.callTranslator.createCallInfo[ValueParameterDescriptorImpl]
 
 'candidateDescriptor' @ [161:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'dispatchReceiverParameter' @ [161:70] ==> public final val CallableDescriptor.dispatchReceiverParameter: ReceiverParameterDescriptor?[MyPropertyDescriptor]
 
@@ -325,13 +325,13 @@ Inferred types:
 
 'extensionReceiver' @ [164:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [165:38] ==> value-parameter resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.js.translate.callTranslator.createCallInfo[ValueParameterDescriptorImpl]
 
 'candidateDescriptor' @ [165:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'extensionReceiverParameter' @ [165:71] ==> public final val CallableDescriptor.extensionReceiverParameter: ReceiverParameterDescriptor?[MyPropertyDescriptor]
 

@@ -23,7 +23,7 @@ Inferred types:
 
 'element' @ [34:17] ==> public final val element: ExecutableElement defined in org.jetbrains.kotlin.javac.wrappers.symbols.SymbolBasedConstructor[PropertyDescriptorImpl]
 
-'valueParameters' @ [34:25] ==> internal fun ExecutableElement.valueParameters(javac: JavacWrapper): List<JavaValueParameter> defined in org.jetbrains.kotlin.javac.wrappers.symbols[SimpleFunctionDescriptorImpl]
+'valueParameters' @ [34:25] ==> internal fun ExecutableElement.valueParameters(javac: JavacWrapper): List<JavaValueParameter> defined in org.jetbrains.kotlin.javac.wrappers.symbols in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'javac' @ [34:41] ==> public final val javac: JavacWrapper defined in org.jetbrains.kotlin.javac.wrappers.symbols.SymbolBasedConstructor[PropertyDescriptorImpl]
 

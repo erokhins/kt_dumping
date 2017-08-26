@@ -241,8 +241,6 @@ Inferred types:
 
 'modality' @ [90:50] ==> public final val MemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [90:62] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [90:71] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'if (descriptor is FunctionDescriptor) {
@@ -333,6 +331,8 @@ Inferred types:
 'partition' @ [117:57] ==> public inline fun <T> Iterable<DeclarationDescriptor>.partition(predicate: (DeclarationDescriptor) -> Boolean): Pair<List<DeclarationDescriptor>, List<DeclarationDescriptor>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DeclarationDescriptor
+
+'isEnumEntry' @ [117:69] ==> public open fun isEnumEntry(@NotNull p0: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
 'component1' @ [119:19] ==> public final operator fun component1(): Int defined in kotlin.collections.IndexedValue[DeserializedSimpleFunctionDescriptor]
 

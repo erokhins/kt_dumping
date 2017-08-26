@@ -99,7 +99,7 @@ Inferred types:
 
 'builder' @ [65:31] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.Class.baseClassSignatureWithParams[ValueParameterDescriptorImpl]
 
-'append' @ [65:39] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [65:39] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'baseClassParams' @ [65:46] ==> public final val baseClassParams: List<DeferredElement<Expression>>? defined in org.jetbrains.kotlin.j2k.ast.Class[PropertyDescriptorImpl]
 
@@ -143,8 +143,6 @@ Inferred types:
 'annotations' @ [81:17] ==> value-parameter annotations: Annotations defined in org.jetbrains.kotlin.j2k.ast.Object.<init>[ValueParameterDescriptorImpl]
 
 'modifiers' @ [81:30] ==> value-parameter modifiers: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Object.<init>[ValueParameterDescriptorImpl]
-
-'TypeParameterList' @ [81:41] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.TypeParameterList[FakeCallableDescriptorForObject]
 
 'Empty' @ [81:59] ==> public final val Empty: TypeParameterList defined in org.jetbrains.kotlin.j2k.ast.TypeParameterList.Companion[PropertyDescriptorImpl]
 

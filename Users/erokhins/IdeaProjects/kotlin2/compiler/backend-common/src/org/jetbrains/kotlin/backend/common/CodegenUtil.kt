@@ -14,7 +14,7 @@ Inferred types:
 
 'resultingDescriptor' @ [38:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callResultingDescriptor' @ [40:13] ==> val callResultingDescriptor: ValueParameterDescriptor defined in org.jetbrains.kotlin.backend.common.CodegenUtil.getDelegatePropertyIfAny[LocalVariableDescriptor]
 
@@ -32,8 +32,8 @@ Inferred types:
 
 'get' @ [43:39] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>..ReadOnlySlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>?), p1: (ValueParameterDescriptor..ValueParameterDescriptor?)): PropertyDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ValueParameterDescriptor
-    <V : (Any..Any?)> -> PropertyDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'VALUE_PARAMETER_AS_PROPERTY' @ [43:58] ==> public final val VALUE_PARAMETER_AS_PROPERTY: (WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>..WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -53,8 +53,8 @@ Inferred types:
 
 'get' @ [53:32] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), p1: (PropertyDescriptor..PropertyDescriptor?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'BACKING_FIELD_REQUIRED' @ [53:51] ==> public final val BACKING_FIELD_REQUIRED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -189,15 +189,15 @@ Inferred types:
 
 'inheritedAccessor' @ [94:25] ==> val inheritedAccessor: (PropertyAccessorDescriptor..PropertyAccessorDescriptor?) defined in org.jetbrains.kotlin.backend.common.CodegenUtil.copyFunctions[LocalVariableDescriptor]
 
-'java' @ [94:50] ==> public val <T> KClass<out PropertyAccessorDescriptor>.java: Class<out PropertyAccessorDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [94:50] ==> public val <T> KClass<out (PropertyAccessorDescriptor..PropertyAccessorDescriptor?)>.java: Class<out (PropertyAccessorDescriptor..PropertyAccessorDescriptor?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PropertyAccessorDescriptor
+    <T> -> Captured(out (org.jetbrains.kotlin.descriptors.PropertyAccessorDescriptor..org.jetbrains.kotlin.descriptors.PropertyAccessorDescriptor?))
 
 'traitAccessor' @ [94:58] ==> val traitAccessor: (PropertyAccessorDescriptor..PropertyAccessorDescriptor?) defined in org.jetbrains.kotlin.backend.common.CodegenUtil.copyFunctions[LocalVariableDescriptor]
 
-'java' @ [94:79] ==> public val <T> KClass<out PropertyAccessorDescriptor>.java: Class<out PropertyAccessorDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [94:79] ==> public val <T> KClass<out (PropertyAccessorDescriptor..PropertyAccessorDescriptor?)>.java: Class<out (PropertyAccessorDescriptor..PropertyAccessorDescriptor?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PropertyAccessorDescriptor
+    <T> -> Captured(out (org.jetbrains.kotlin.descriptors.PropertyAccessorDescriptor..org.jetbrains.kotlin.descriptors.PropertyAccessorDescriptor?))
 
 'result' @ [95:25] ==> val result: LinkedHashMap<FunctionDescriptor, FunctionDescriptor> /* = LinkedHashMap<FunctionDescriptor, FunctionDescriptor> */ defined in org.jetbrains.kotlin.backend.common.CodegenUtil.copyFunctions[LocalVariableDescriptor]
 
@@ -215,8 +215,8 @@ Inferred types:
 
 'get' @ [105:40] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), p1: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [105:59] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -318,8 +318,6 @@ Inferred types:
 'function' @ [140:25] ==> value-parameter function: SimpleFunctionDescriptor defined in org.jetbrains.kotlin.backend.common.CodegenUtil.getMemberToGenerate.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [140:34] ==> public final val SimpleFunctionDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [140:46] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [140:55] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

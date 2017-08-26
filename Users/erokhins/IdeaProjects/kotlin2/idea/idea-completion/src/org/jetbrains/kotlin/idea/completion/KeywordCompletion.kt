@@ -751,9 +751,9 @@ Inferred types:
                         }
 
                         is KtFile -> return buildFilterWithReducedContext("", parent, position)
-                    }' @ [270:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Unit, entry1: Unit): Unit[SimpleFunctionDescriptorImpl]
+                    }' @ [270:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Nothing, entry1: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Unit
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Nothing
 
 'scope' @ [270:27] ==> val scope: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.completion.KeywordCompletion.buildFilter[LocalVariableDescriptor]
 
@@ -1180,8 +1180,6 @@ Inferred types:
 
 'ownerDeclaration' @ [367:46] ==> val ownerDeclaration: KtDeclaration? defined in org.jetbrains.kotlin.idea.completion.KeywordCompletion.buildFilterByText.isKeywordCorrectlyApplied[LocalVariableDescriptor]
 
-'KotlinTarget' @ [368:33] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
 'FILE' @ [368:46] ==> enum entry FILE defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'when {
@@ -1197,15 +1195,11 @@ Inferred types:
 
 'isInterface' @ [372:50] ==> public final fun isInterface(): Boolean defined in org.jetbrains.kotlin.psi.KtClass[DeserializedSimpleFunctionDescriptor]
 
-'KotlinTarget' @ [372:67] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
 'INTERFACE' @ [372:80] ==> enum entry INTERFACE defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'ownerDeclaration' @ [373:33] ==> val ownerDeclaration: KtDeclaration? defined in org.jetbrains.kotlin.idea.completion.KeywordCompletion.buildFilterByText.isKeywordCorrectlyApplied[LocalVariableDescriptor]
 
 'isEnum' @ [373:50] ==> public final fun isEnum(): Boolean defined in org.jetbrains.kotlin.psi.KtClass[DeserializedSimpleFunctionDescriptor]
-
-'KotlinTarget' @ [373:62] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'ENUM_CLASS' @ [373:75] ==> enum entry ENUM_CLASS defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -1213,11 +1207,7 @@ Inferred types:
 
 'isAnnotation' @ [374:50] ==> public final fun isAnnotation(): Boolean defined in org.jetbrains.kotlin.psi.KtClass[DeserializedSimpleFunctionDescriptor]
 
-'KotlinTarget' @ [374:68] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
 'ANNOTATION_CLASS' @ [374:81] ==> enum entry ANNOTATION_CLASS defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
-'KotlinTarget' @ [375:41] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'CLASS_ONLY' @ [375:54] ==> enum entry CLASS_ONLY defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -1229,11 +1219,7 @@ Inferred types:
 
 'isObjectLiteral' @ [379:72] ==> public final fun isObjectLiteral(): Boolean defined in org.jetbrains.kotlin.psi.KtObjectDeclaration[DeserializedSimpleFunctionDescriptor]
 
-'KotlinTarget' @ [379:91] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
 'OBJECT_LITERAL' @ [379:104] ==> enum entry OBJECT_LITERAL defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
-'KotlinTarget' @ [379:124] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'OBJECT' @ [379:137] ==> enum entry OBJECT defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -1338,8 +1324,6 @@ Inferred types:
 
 'languageVersionSettings' @ [420:89] ==> public val Module.languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[DeserializedPropertyDescriptor]
 
-'LanguageVersionSettingsImpl' @ [421:42] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [421:70] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 
 'when (keyword) {
@@ -1355,21 +1339,15 @@ Inferred types:
 
 'TYPE_ALIAS_KEYWORD' @ [423:22] ==> public final val TYPE_ALIAS_KEYWORD: (KtKeywordToken..KtKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'LanguageFeature' @ [423:44] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'TypeAliases' @ [423:60] ==> enum entry TypeAliases defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'HEADER_KEYWORD' @ [424:22] ==> public final val HEADER_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
 'IMPL_KEYWORD' @ [424:47] ==> public final val IMPL_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'LanguageFeature' @ [424:63] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'MultiPlatformProjects' @ [424:79] ==> enum entry MultiPlatformProjects defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'SUSPEND_KEYWORD' @ [425:22] ==> public final val SUSPEND_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
-
-'LanguageFeature' @ [425:41] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'Coroutines' @ [425:57] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

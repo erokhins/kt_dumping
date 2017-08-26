@@ -8,8 +8,6 @@ Inferred types:
 
 'searchScope' @ [63:28] ==> public final val DebugProcess.searchScope: GlobalSearchScope[MyPropertyDescriptor]
 
-'KotlinSourceFilterScope' @ [64:13] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope[FakeCallableDescriptorForObject]
-
 'librarySources' @ [64:37] ==> @JvmStatic public final fun librarySources(delegate: GlobalSearchScope, project: Project): GlobalSearchScope defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope.Companion[DeserializedSimpleFunctionDescriptor]
 
 'allScope' @ [64:70] ==> @NotNull public open fun allScope(@NotNull p0: Project): GlobalSearchScope defined in com.intellij.psi.search.GlobalSearchScope[JavaMethodDescriptor]
@@ -134,13 +132,13 @@ Inferred types:
 
 'myDebugProcess' @ [123:58] ==> private final val myDebugProcess: DebugProcess defined in org.jetbrains.kotlin.idea.debugger.KotlinPositionManager[PropertyDescriptorImpl]
 
-'isDexDebug' @ [123:73] ==> public fun DebugProcess.isDexDebug(): Boolean defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'isDexDebug' @ [123:73] ==> public fun DebugProcess.isDexDebug(): Boolean defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'component1' @ [124:18] ==> public final operator fun component1(): Int defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
 'component2' @ [124:24] ==> public final operator fun component2(): KtFile? defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'ktLocationInfo' @ [124:34] ==> public fun ktLocationInfo(location: Location, isDexDebug: Boolean, project: Project, preferInlined: Boolean = ..., locationFile: KtFile? = ...): Pair<Int, KtFile?> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'ktLocationInfo' @ [124:34] ==> public fun ktLocationInfo(location: Location, isDexDebug: Boolean, project: Project, preferInlined: Boolean = ..., locationFile: KtFile? = ...): Pair<Int, KtFile?> defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'location' @ [124:49] ==> value-parameter location: Location? defined in org.jetbrains.kotlin.idea.debugger.KotlinPositionManager.getSourcePosition[ValueParameterDescriptorImpl]
 
@@ -265,7 +263,7 @@ Inferred types:
 
 'end' @ [157:30] ==> val end: Int? defined in org.jetbrains.kotlin.idea.debugger.KotlinPositionManager.getLambdaOrFunIfInside[LocalVariableDescriptor]
 
-'getLambdasAtLineIfAny' @ [159:35] ==> public fun getLambdasAtLineIfAny(file: KtFile, line: Int): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.breakpoints[SimpleFunctionDescriptorImpl]
+'getLambdasAtLineIfAny' @ [159:35] ==> public fun getLambdasAtLineIfAny(file: KtFile, line: Int): List<KtFunction> defined in org.jetbrains.kotlin.idea.debugger.breakpoints in file breakpointTypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [159:57] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.debugger.KotlinPositionManager.getLambdaOrFunIfInside[ValueParameterDescriptorImpl]
 
@@ -496,13 +494,13 @@ Inferred types:
 
 'myDebugProcess' @ [255:17] ==> private final val myDebugProcess: DebugProcess defined in org.jetbrains.kotlin.idea.debugger.KotlinPositionManager[PropertyDescriptorImpl]
 
-'isDexDebug' @ [255:32] ==> public fun DebugProcess.isDexDebug(): Boolean defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'isDexDebug' @ [255:32] ==> public fun DebugProcess.isDexDebug(): Boolean defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'runReadAction' @ [256:39] ==> public fun <T> runReadAction(action: () -> List<Location>): List<Location> defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> List<Location>
 
-'getLocationsOfInlinedLine' @ [256:55] ==> internal fun getLocationsOfInlinedLine(type: ReferenceType, position: SourcePosition, sourceSearchScope: GlobalSearchScope): List<Location> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'getLocationsOfInlinedLine' @ [256:55] ==> internal fun getLocationsOfInlinedLine(type: ReferenceType, position: SourcePosition, sourceSearchScope: GlobalSearchScope): List<Location> defined in org.jetbrains.kotlin.idea.debugger in file NoStrataPositionManagerHelper.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [256:81] ==> value-parameter type: ReferenceType defined in org.jetbrains.kotlin.idea.debugger.KotlinPositionManager.locationsOfLine[ValueParameterDescriptorImpl]
 

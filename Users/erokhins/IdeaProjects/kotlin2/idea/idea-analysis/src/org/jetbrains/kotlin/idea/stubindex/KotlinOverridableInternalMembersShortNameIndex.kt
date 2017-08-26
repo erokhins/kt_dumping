@@ -6,8 +6,8 @@ Inferred types:
 
 'getElements' @ [29:26] ==> public open fun <Key : (Any..Any?), Psi : (PsiElement..PsiElement?)> getElements(@NotNull p0: StubIndexKey<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)>, @NotNull p1: String, @NotNull p2: Project, @Nullable p3: GlobalSearchScope?, @NotNull p4: Class<(KtCallableDeclaration..KtCallableDeclaration?)>): (MutableCollection<(KtCallableDeclaration..KtCallableDeclaration?)>..Collection<(KtCallableDeclaration..KtCallableDeclaration?)>?) defined in com.intellij.psi.stubs.StubIndex[JavaMethodDescriptor]
 Inferred types:
-    <Key : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtCallableDeclaration
+    <Key : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallableDeclaration..org.jetbrains.kotlin.psi.KtCallableDeclaration?)
 
 'KEY' @ [29:38] ==> private final val KEY: StubIndexKey<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex.Companion[PropertyDescriptorImpl]
 
@@ -27,8 +27,8 @@ Inferred types:
 
 'createIndexKey' @ [37:43] ==> @NotNull public open fun <K : (Any..Any?), Psi : (PsiElement..PsiElement?)> createIndexKey(@NotNull indexClass: Class<out (StubIndexExtension<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)>..StubIndexExtension<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)>?)>): StubIndexKey<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinIndexUtil[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtCallableDeclaration
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallableDeclaration..org.jetbrains.kotlin.psi.KtCallableDeclaration?)
 
 'KotlinOverridableInternalMembersShortNameIndex' @ [37:58] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex[FakeCallableDescriptorForObject]
 

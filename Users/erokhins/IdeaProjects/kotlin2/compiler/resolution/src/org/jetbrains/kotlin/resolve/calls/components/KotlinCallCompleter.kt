@@ -278,6 +278,8 @@ Inferred types:
 
 'diagnosticsHolder' @ [108:46] ==> value-parameter diagnosticsHolder: KotlinDiagnosticsHolder defined in org.jetbrains.kotlin.resolve.calls.components.KotlinCallCompleter.runCompletion[ValueParameterDescriptorImpl]
 
+'addDiagnostic' @ [108:65] ==> public abstract fun addDiagnostic(diagnostic: KotlinCallDiagnostic): Unit defined in org.jetbrains.kotlin.resolve.calls.model.KotlinDiagnosticsHolder[SimpleFunctionDescriptorImpl]
+
 'resolvedCall' @ [114:39] ==> public final val resolvedCall: MutableResolvedCallAtom defined in org.jetbrains.kotlin.resolve.calls.model.KotlinResolutionCandidate[PropertyDescriptorImpl]
 
 'candidateDescriptor' @ [114:52] ==> public open val candidateDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.calls.model.MutableResolvedCallAtom[PropertyDescriptorImpl]

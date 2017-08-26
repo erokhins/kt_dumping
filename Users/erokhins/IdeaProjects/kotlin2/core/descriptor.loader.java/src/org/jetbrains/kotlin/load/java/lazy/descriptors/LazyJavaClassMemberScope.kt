@@ -56,9 +56,9 @@ Inferred types:
 
 'storageManager' @ [80:35] ==> public final val storageManager: StorageManager defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaResolverContext[PropertyDescriptorImpl]
 
-'createLazyValue' @ [80:50] ==> public abstract fun <T : Any> createLazyValue(computable: () -> List<ClassConstructorDescriptor>): NotNullLazyValue<List<ClassConstructorDescriptor>> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
+'createLazyValue' @ [80:50] ==> public abstract fun <T : Any> createLazyValue(computable: () -> List<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>): NotNullLazyValue<List<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>> defined in org.jetbrains.kotlin.storage.StorageManager[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : Any> -> List<ClassConstructorDescriptor>
+    <T : Any> -> List<(org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor..org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor?)>
 
 'jClass' @ [81:28] ==> private final val jClass: JavaClass defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[PropertyDescriptorImpl]
 
@@ -90,18 +90,18 @@ Inferred types:
 
 'signatureEnhancement' @ [88:22] ==> public final val signatureEnhancement: SignatureEnhancement defined in org.jetbrains.kotlin.load.java.lazy.JavaResolverComponents[PropertyDescriptorImpl]
 
-'enhanceSignatures' @ [88:43] ==> public final fun <D : CallableMemberDescriptor> enhanceSignatures(c: LazyJavaResolverContext, platformSignatures: Collection<ClassConstructorDescriptor>): Collection<ClassConstructorDescriptor> defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement[SimpleFunctionDescriptorImpl]
+'enhanceSignatures' @ [88:43] ==> public final fun <D : CallableMemberDescriptor> enhanceSignatures(c: LazyJavaResolverContext, platformSignatures: Collection<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>): Collection<(ClassConstructorDescriptor..ClassConstructorDescriptor?)> defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableMemberDescriptor> -> ClassConstructorDescriptor
+    <D : CallableMemberDescriptor> -> (org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor..org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor?)
 
 'c' @ [89:17] ==> value-parameter c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.<init>[ValueParameterDescriptorImpl]
 
 'result' @ [90:17] ==> val result: ArrayList<JavaClassConstructorDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.constructors.<anonymous>[LocalVariableDescriptor]
 
-'ifEmpty' @ [90:24] ==> public inline fun <T, C : Collection<ClassConstructorDescriptor>> List<ClassConstructorDescriptor>.ifEmpty(body: () -> List<ClassConstructorDescriptor>): List<ClassConstructorDescriptor> defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
+'ifEmpty' @ [90:24] ==> public inline fun <T, C : Collection<ClassConstructorDescriptor>> List<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>.ifEmpty(body: () -> List<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>): List<(ClassConstructorDescriptor..ClassConstructorDescriptor?)> defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ClassConstructorDescriptor
-    <C : Collection<T>> -> List<ClassConstructorDescriptor>
+    <C : Collection<T>> -> List<(org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor..org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor?)>
 
 'listOfNotNull' @ [90:34] ==> public fun <T : Any> listOfNotNull(element: ClassConstructorDescriptor?): List<ClassConstructorDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -109,9 +109,9 @@ Inferred types:
 
 'createDefaultConstructor' @ [90:48] ==> private final fun createDefaultConstructor(): ClassConstructorDescriptor? defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[SimpleFunctionDescriptorImpl]
 
-'toList' @ [91:11] ==> public fun <T> Iterable<ClassConstructorDescriptor>.toList(): List<ClassConstructorDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toList' @ [91:11] ==> public fun <T> Iterable<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>.toList(): List<(ClassConstructorDescriptor..ClassConstructorDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ClassConstructorDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor..org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor?)
 
 'jClass' @ [95:13] ==> private final val jClass: JavaClass defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[PropertyDescriptorImpl]
 
@@ -121,7 +121,7 @@ Inferred types:
 
 'this' @ [96:50] ==> <this> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.isVisibleAsFunction[ReceiverParameterDescriptorImpl]
 
-'getPropertyNamesCandidatesByAccessorName' @ [100:13] ==> public fun getPropertyNamesCandidatesByAccessorName(name: Name): List<Name> defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'getPropertyNamesCandidatesByAccessorName' @ [100:13] ==> public fun getPropertyNamesCandidatesByAccessorName(name: Name): List<Name> defined in org.jetbrains.kotlin.load.java in file propertiesConventionUtil.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [100:54] ==> value-parameter function: SimpleFunctionDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.isVisibleAsFunctionInCurrentClass[ValueParameterDescriptorImpl]
 
@@ -562,15 +562,15 @@ Inferred types:
 
 'resolveOverridesForNonStaticMembers' @ [256:44] ==> @NotNull public open fun <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> resolveOverridesForNonStaticMembers(@NotNull name: Name, @NotNull membersFromSupertypes: (MutableCollection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..Collection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>), @NotNull membersFromCurrent: (MutableCollection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..Collection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>), @NotNull classDescriptor: ClassDescriptor, @NotNull errorReporter: ErrorReporter): (MutableCollection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..Collection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>) defined in org.jetbrains.kotlin.load.java.components.DescriptorResolverUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> SimpleFunctionDescriptor
+    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'name' @ [257:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.computeNonDeclaredFunctions[ValueParameterDescriptorImpl]
 
 'functionsFromSupertypes' @ [257:23] ==> val functionsFromSupertypes: Set<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.computeNonDeclaredFunctions[LocalVariableDescriptor]
 
-'emptyList' @ [257:48] ==> public fun <T> emptyList(): List<SimpleFunctionDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyList' @ [257:48] ==> public fun <T> emptyList(): List<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SimpleFunctionDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'ownerDescriptor' @ [257:61] ==> protected open val ownerDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[PropertyDescriptorImpl]
 
@@ -588,6 +588,8 @@ Inferred types:
 
 'this' @ [262:17] ==> <this> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[LazyClassReceiverParameterDescriptor]
 
+'searchMethodsByNameWithoutBuiltinMagic' @ [262:23] ==> private final fun searchMethodsByNameWithoutBuiltinMagic(name: Name): Collection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[SimpleFunctionDescriptorImpl]
+
 'addOverriddenBuiltinMethods' @ [265:9] ==> private final fun addOverriddenBuiltinMethods(name: Name, alreadyDeclaredFunctions: Collection<SimpleFunctionDescriptor>, candidatesForOverride: Collection<SimpleFunctionDescriptor>, result: MutableCollection<SimpleFunctionDescriptor>, functions: (Name) -> Collection<SimpleFunctionDescriptor>): Unit defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[SimpleFunctionDescriptorImpl]
 
 'name' @ [266:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.computeNonDeclaredFunctions[ValueParameterDescriptorImpl]
@@ -599,6 +601,8 @@ Inferred types:
 'specialBuiltinsFromSuperTypes' @ [266:61] ==> val specialBuiltinsFromSuperTypes: SmartSet<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.computeNonDeclaredFunctions[LocalVariableDescriptor]
 
 'this' @ [267:17] ==> <this> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[LazyClassReceiverParameterDescriptor]
+
+'searchMethodsInSupertypesWithoutBuiltinMagic' @ [267:23] ==> private final fun searchMethodsInSupertypesWithoutBuiltinMagic(name: Name): Collection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[SimpleFunctionDescriptorImpl]
 
 'functionsFromSupertypes' @ [270:17] ==> val functionsFromSupertypes: Set<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.computeNonDeclaredFunctions[LocalVariableDescriptor]
 
@@ -622,7 +626,7 @@ Inferred types:
 
 'resolveOverridesForNonStaticMembers' @ [282:35] ==> @NotNull public open fun <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> resolveOverridesForNonStaticMembers(@NotNull name: Name, @NotNull membersFromSupertypes: (MutableCollection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..Collection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>), @NotNull membersFromCurrent: (MutableCollection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..Collection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>), @NotNull classDescriptor: ClassDescriptor, @NotNull errorReporter: ErrorReporter): (MutableCollection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..Collection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>) defined in org.jetbrains.kotlin.load.java.components.DescriptorResolverUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> SimpleFunctionDescriptor
+    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'name' @ [283:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.addFunctionFromSupertypes[ValueParameterDescriptorImpl]
 
@@ -675,10 +679,10 @@ Inferred types:
 
 'additionalOverrides' @ [292:21] ==> val additionalOverrides: (MutableCollection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..Collection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>) defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.addFunctionFromSupertypes[LocalVariableDescriptor]
 
-'map' @ [292:41] ==> public inline fun <T, R> Iterable<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>.map(transform: ((SimpleFunctionDescriptor..SimpleFunctionDescriptor?)) -> SimpleFunctionDescriptor): List<SimpleFunctionDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [292:41] ==> public inline fun <T, R> Iterable<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>.map(transform: ((SimpleFunctionDescriptor..SimpleFunctionDescriptor?)) -> (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)): List<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
-    <R> -> SimpleFunctionDescriptor
+    <R> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'resolvedOverride' @ [294:49] ==> value-parameter resolvedOverride: (SimpleFunctionDescriptor..SimpleFunctionDescriptor?) defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.addFunctionFromSupertypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -740,7 +744,9 @@ Inferred types:
 
 'candidatesForOverride' @ [324:28] ==> value-parameter candidatesForOverride: Collection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.addOverriddenBuiltinMethods[ValueParameterDescriptorImpl]
 
-'BuiltinMethodsWithSpecialGenericSignature' @ [326:21] ==> public object BuiltinMethodsWithSpecialGenericSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[FakeCallableDescriptorForObject]
+'?:' @ [326:21] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: FunctionDescriptor?, right: FunctionDescriptor): FunctionDescriptor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> FunctionDescriptor
 
 'getOverriddenBuiltinFunctionWithErasedValueParametersInJava' @ [326:63] ==> @JvmStatic public final fun getOverriddenBuiltinFunctionWithErasedValueParametersInJava(functionDescriptor: FunctionDescriptor): FunctionDescriptor? defined in org.jetbrains.kotlin.load.java.BuiltinMethodsWithSpecialGenericSignature[SimpleFunctionDescriptorImpl]
 
@@ -839,7 +845,7 @@ Inferred types:
 
 'setValueParameters' @ [362:17] ==> @NotNull public abstract fun setValueParameters(@NotNull p0: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)): FunctionDescriptor.CopyBuilder<out (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)> defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor.CopyBuilder[JavaMethodDescriptor]
 
-'copyValueParameters' @ [362:36] ==> public fun copyValueParameters(newValueParametersTypes: Collection<KotlinType>, oldValueParameters: Collection<ValueParameterDescriptor>, newOwner: CallableDescriptor): List<ValueParameterDescriptor> defined in org.jetbrains.kotlin.load.java.descriptors[SimpleFunctionDescriptorImpl]
+'copyValueParameters' @ [362:36] ==> public fun copyValueParameters(newValueParametersTypes: Collection<KotlinType>, oldValueParameters: Collection<ValueParameterDescriptor>, newOwner: CallableDescriptor): List<ValueParameterDescriptor> defined in org.jetbrains.kotlin.load.java.descriptors in file util.kt[SimpleFunctionDescriptorImpl]
 
 'overridden' @ [362:56] ==> value-parameter overridden: FunctionDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.createOverrideForBuiltinFunctionWithErasedParameterIfNeeded[ValueParameterDescriptorImpl]
 
@@ -942,7 +948,7 @@ Inferred types:
 
 'resolveOverridesForNonStaticMembers' @ [391:23] ==> @NotNull public open fun <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> resolveOverridesForNonStaticMembers(@NotNull name: Name, @NotNull membersFromSupertypes: (MutableCollection<(PropertyDescriptor..PropertyDescriptor?)>..Collection<(PropertyDescriptor..PropertyDescriptor?)>), @NotNull membersFromCurrent: (MutableCollection<(PropertyDescriptor..PropertyDescriptor?)>..Collection<(PropertyDescriptor..PropertyDescriptor?)>), @NotNull classDescriptor: ClassDescriptor, @NotNull errorReporter: ErrorReporter): (MutableCollection<(PropertyDescriptor..PropertyDescriptor?)>..Collection<(PropertyDescriptor..PropertyDescriptor?)>) defined in org.jetbrains.kotlin.load.java.components.DescriptorResolverUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> PropertyDescriptor
+    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'name' @ [392:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.computeNonDeclaredProperties[ValueParameterDescriptorImpl]
 
@@ -994,8 +1000,6 @@ Inferred types:
 
 'method' @ [411:62] ==> val method: JavaMethod defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.computeAnnotationProperties[LocalVariableDescriptor]
 
-'Modality' @ [411:81] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [411:90] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'c' @ [417:27] ==> protected final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[PropertyDescriptorImpl]
@@ -1034,8 +1038,6 @@ Inferred types:
 
 'propertyDescriptor' @ [425:60] ==> val propertyDescriptor: JavaPropertyDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.createPropertyDescriptorWithDefaultGetter[LocalVariableDescriptor]
 
-'Annotations' @ [425:80] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [425:92] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'propertyDescriptor' @ [426:9] ==> val propertyDescriptor: JavaPropertyDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.createPropertyDescriptorWithDefaultGetter[LocalVariableDescriptor]
@@ -1052,7 +1054,7 @@ Inferred types:
 
 'c' @ [428:71] ==> protected final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[PropertyDescriptorImpl]
 
-'childForMethod' @ [428:73] ==> public fun LazyJavaResolverContext.childForMethod(containingDeclaration: DeclarationDescriptor, typeParameterOwner: JavaTypeParameterListOwner, typeParametersIndexOffset: Int = ...): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy[SimpleFunctionDescriptorImpl]
+'childForMethod' @ [428:73] ==> public fun LazyJavaResolverContext.childForMethod(containingDeclaration: DeclarationDescriptor, typeParameterOwner: JavaTypeParameterListOwner, typeParametersIndexOffset: Int = ...): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy in file context.kt[SimpleFunctionDescriptorImpl]
 
 'propertyDescriptor' @ [428:88] ==> val propertyDescriptor: JavaPropertyDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.createPropertyDescriptorWithDefaultGetter[LocalVariableDescriptor]
 
@@ -1143,8 +1145,6 @@ Inferred types:
 'create' @ [453:57] ==> @NotNull public open fun create(@NotNull containingDeclaration: DeclarationDescriptor, @NotNull annotations: Annotations, @NotNull modality: Modality, @NotNull visibility: Visibility, isVar: Boolean, @NotNull name: Name, @NotNull source: SourceElement, isStaticFinal: Boolean): JavaPropertyDescriptor defined in org.jetbrains.kotlin.load.java.descriptors.JavaPropertyDescriptor[JavaMethodDescriptor]
 
 'ownerDescriptor' @ [454:17] ==> protected open val ownerDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[PropertyDescriptorImpl]
-
-'Annotations' @ [454:34] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [454:46] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -1325,13 +1325,13 @@ Inferred types:
 
 'errors' @ [495:66] ==> public final val SignaturePropagator.PropagatedSignature.errors: (MutableList<(String..String?)>..List<(String..String?)>)[MyPropertyDescriptor]
 
-'computeJvmDescriptor' @ [502:16] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [502:16] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'builtinWithErasedParameters' @ [503:24] ==> value-parameter builtinWithErasedParameters: FunctionDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.hasSameJvmDescriptorButDoesNotOverride[ValueParameterDescriptorImpl]
 
 'original' @ [503:52] ==> public final val FunctionDescriptor.original: FunctionDescriptor[MyPropertyDescriptor]
 
-'computeJvmDescriptor' @ [503:61] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [503:61] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [504:19] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -1363,7 +1363,7 @@ Inferred types:
 
 'c' @ [515:17] ==> protected final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[PropertyDescriptorImpl]
 
-'childForMethod' @ [515:19] ==> public fun LazyJavaResolverContext.childForMethod(containingDeclaration: DeclarationDescriptor, typeParameterOwner: JavaTypeParameterListOwner, typeParametersIndexOffset: Int = ...): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy[SimpleFunctionDescriptorImpl]
+'childForMethod' @ [515:19] ==> public fun LazyJavaResolverContext.childForMethod(containingDeclaration: DeclarationDescriptor, typeParameterOwner: JavaTypeParameterListOwner, typeParametersIndexOffset: Int = ...): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy in file context.kt[SimpleFunctionDescriptorImpl]
 
 'constructorDescriptor' @ [515:34] ==> val constructorDescriptor: JavaClassConstructorDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.resolveConstructor[LocalVariableDescriptor]
 
@@ -1472,8 +1472,6 @@ Inferred types:
 
 'classDescriptor' @ [539:17] ==> val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.createDefaultConstructor[LocalVariableDescriptor]
 
-'Annotations' @ [539:34] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [539:46] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'c' @ [539:77] ==> protected final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope[PropertyDescriptorImpl]
@@ -1565,7 +1563,7 @@ Inferred types:
 
 'size' @ [562:66] ==> public abstract val size: Int defined in kotlin.collections.Collection[DeserializedPropertyDescriptor]
 
-'toAttributes' @ [564:37] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [564:37] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'component1' @ [566:14] ==> public final operator fun component1(): List<JavaMethod> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
@@ -1722,8 +1720,6 @@ Inferred types:
 'constructor' @ [600:17] ==> value-parameter constructor: ConstructorDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.addAnnotationValueParameter[ValueParameterDescriptorImpl]
 
 'index' @ [602:17] ==> value-parameter index: Int defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.addAnnotationValueParameter[ValueParameterDescriptorImpl]
-
-'Annotations' @ [603:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [603:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -1983,7 +1979,7 @@ Inferred types:
 
 'LinkedHashSet' @ [669:22] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (Name..Name?)>..Collection<(Name..Name?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Name
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
 
 'invoke' @ [669:36] ==> public abstract fun invoke(): DeclaredMemberIndex defined in org.jetbrains.kotlin.storage.NotNullLazyValue[FunctionInvokeDescriptor]
 
@@ -1995,13 +1991,13 @@ Inferred types:
 
 'supertypes' @ [670:48] ==> public final val TypeConstructor.supertypes: Collection<(KotlinType..KotlinType?)>[MyPropertyDescriptor]
 
-'flatMapTo' @ [670:59] ==> public inline fun <T, R, C : MutableCollection<in Name>> Iterable<(KotlinType..KotlinType?)>.flatMapTo(destination: LinkedHashSet<Name>, transform: ((KotlinType..KotlinType?)) -> Iterable<Name>): LinkedHashSet<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMapTo' @ [670:59] ==> public inline fun <T, R, C : MutableCollection<in Name>> Iterable<(KotlinType..KotlinType?)>.flatMapTo(destination: LinkedHashSet<(Name..Name?)>, transform: ((KotlinType..KotlinType?)) -> Iterable<Name>): LinkedHashSet<(Name..Name?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
     <R> -> Name
-    <C : MutableCollection<in R>> -> LinkedHashSet<Name>
+    <C : MutableCollection<in R>> -> LinkedHashSet<(org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)>
 
-'result' @ [670:69] ==> val result: LinkedHashSet<Name> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.computePropertyNames[LocalVariableDescriptor]
+'result' @ [670:69] ==> val result: LinkedHashSet<(Name..Name?)> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.computePropertyNames[LocalVariableDescriptor]
 
 'supertype' @ [671:13] ==> value-parameter supertype: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassMemberScope.computePropertyNames.<anonymous>[ValueParameterDescriptorImpl]
 

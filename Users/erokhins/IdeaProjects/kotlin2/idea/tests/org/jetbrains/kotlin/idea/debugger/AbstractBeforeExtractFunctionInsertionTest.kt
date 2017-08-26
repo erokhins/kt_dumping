@@ -10,7 +10,9 @@
 
 'offset' @ [39:78] ==> public final val CaretModel.offset: Int[MyPropertyDescriptor]
 
-'KotlinCodeFragmentFactory' @ [40:25] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory[FakeCallableDescriptorForObject]
+'?:' @ [40:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'getContextElement' @ [40:51] ==> public final fun getContextElement(elementAt: PsiElement?): PsiElement? defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -72,7 +74,7 @@ Inferred types:
 
 'executeOnPooledThread' @ [49:66] ==> @NotNull public abstract fun <T : (Any..Any?)> executeOnPooledThread(@NotNull p0: Callable<(List<KtExpression>..List<KtExpression>?)>): Future<(List<KtExpression>..List<KtExpression>?)> defined in com.intellij.openapi.application.Application[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<KtExpression>
+    <T : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.psi.KtExpression>..kotlin.collections.List<org.jetbrains.kotlin.psi.KtExpression>?)
 
 'Callable' @ [49:88] ==> @FunctionalInterface public fun <V : (Any..Any?)> Callable(function: () -> (List<KtExpression>..List<KtExpression>?)): Callable<List<KtExpression>> defined in java.util.concurrent[SimpleFunctionDescriptorImpl]
 Inferred types:

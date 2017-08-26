@@ -314,7 +314,7 @@ Inferred types:
 
 'ifAny' @ [193:16] ==> public open fun <N : (Any..Any?)> ifAny(@NotNull p0: (MutableCollection<(ValueParameterDescriptor..ValueParameterDescriptor?)>..Collection<(ValueParameterDescriptor..ValueParameterDescriptor?)>), @NotNull p1: DFS.Neighbors<(ValueParameterDescriptor..ValueParameterDescriptor?)>, @NotNull p2: ((ValueParameterDescriptor..ValueParameterDescriptor?)) -> (Boolean..Boolean?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.utils.DFS[JavaMethodDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> ValueParameterDescriptor
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
 
 'listOf' @ [194:13] ==> public fun <T> listOf(element: ValueParameterDescriptor): List<ValueParameterDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -335,9 +335,13 @@ Inferred types:
     <T> -> ValueParameterDescriptor
     <R> -> ValueParameterDescriptor
 
+'getOriginal' @ [196:77] ==> public abstract fun getOriginal(): ValueParameterDescriptor defined in org.jetbrains.kotlin.descriptors.ValueParameterDescriptor[SimpleFunctionDescriptorImpl]
+
+'declaresDefaultValue' @ [198:39] ==> public abstract fun declaresDefaultValue(): Boolean defined in org.jetbrains.kotlin.descriptors.ValueParameterDescriptor[SimpleFunctionDescriptorImpl]
+
 'ifAny' @ [202:81] ==> public final fun <N : (Any..Any?)> ifAny(@NotNull p0: (MutableCollection<(FunctionDescriptor..FunctionDescriptor?)>..Collection<(FunctionDescriptor..FunctionDescriptor?)>), @NotNull p1: ((FunctionDescriptor..FunctionDescriptor?)) -> (MutableIterable<(FunctionDescriptor..FunctionDescriptor?)>..Iterable<(FunctionDescriptor..FunctionDescriptor?)>), @NotNull p2: ((FunctionDescriptor..FunctionDescriptor?)) -> (Boolean..Boolean?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> FunctionDescriptor
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'listOf' @ [203:9] ==> public fun <T> listOf(element: FunctionDescriptor): List<FunctionDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -360,7 +364,7 @@ Inferred types:
 
 'it' @ [205:11] ==> value-parameter it: (FunctionDescriptor..FunctionDescriptor?) defined in org.jetbrains.kotlin.resolve.descriptorUtil.hasOrInheritsParametersWithDefaultValue.<anonymous>[ValueParameterDescriptorImpl]
 
-'hasOwnParametersWithDefaultValue' @ [205:14] ==> public fun FunctionDescriptor.hasOwnParametersWithDefaultValue(): Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil[SimpleFunctionDescriptorImpl]
+'hasOwnParametersWithDefaultValue' @ [205:14] ==> public fun FunctionDescriptor.hasOwnParametersWithDefaultValue(): Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[SimpleFunctionDescriptorImpl]
 
 'original' @ [208:61] ==> public final val FunctionDescriptor.original: FunctionDescriptor[MyPropertyDescriptor]
 
@@ -452,10 +456,10 @@ Inferred types:
 
 'toSafe' @ [233:85] ==> @NotNull public open fun toSafe(): FqName defined in org.jetbrains.kotlin.name.FqNameUnsafe[JavaMethodDescriptor]
 
-'dfs' @ [240:16] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull p0: (MutableCollection<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>), @NotNull p1: ((CallableMemberDescriptor..CallableMemberDescriptor?)) -> (MutableIterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Iterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>), @NotNull p2: DFS.NodeHandler<(CallableMemberDescriptor..CallableMemberDescriptor?), (CallableMemberDescriptor..CallableMemberDescriptor?)>): (CallableMemberDescriptor..CallableMemberDescriptor?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
+'dfs' @ [240:16] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull p0: (MutableCollection<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>), @NotNull p1: ((CallableMemberDescriptor..CallableMemberDescriptor?)) -> (MutableIterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Iterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>), @NotNull p2: DFS.NodeHandler<(CallableMemberDescriptor..CallableMemberDescriptor?), CallableMemberDescriptor?>): CallableMemberDescriptor? defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> CallableMemberDescriptor
-    <R : (Any..Any?)> -> CallableMemberDescriptor
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
+    <R : (Any..Any?)> -> CallableMemberDescriptor?
 
 'listOf' @ [240:20] ==> public fun <T> listOf(element: CallableMemberDescriptor): List<CallableMemberDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -544,7 +548,7 @@ Inferred types:
 
 'it' @ [263:73] ==> value-parameter it: (CallableMemberDescriptor..CallableMemberDescriptor?) defined in org.jetbrains.kotlin.resolve.descriptorUtil.overriddenTreeAsSequence.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'overriddenTreeAsSequence' @ [263:76] ==> public fun CallableMemberDescriptor.overriddenTreeAsSequence(useOriginal: Boolean): Sequence<CallableMemberDescriptor> defined in org.jetbrains.kotlin.resolve.descriptorUtil[SimpleFunctionDescriptorImpl]
+'overriddenTreeAsSequence' @ [263:76] ==> public fun CallableMemberDescriptor.overriddenTreeAsSequence(useOriginal: Boolean): Sequence<CallableMemberDescriptor> defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[SimpleFunctionDescriptorImpl]
 
 'useOriginal' @ [263:101] ==> value-parameter useOriginal: Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil.overriddenTreeAsSequence[ValueParameterDescriptorImpl]
 
@@ -625,11 +629,11 @@ Inferred types:
 
 'scopeOwner' @ [308:21] ==> value-parameter scopeOwner: ClassDescriptor defined in org.jetbrains.kotlin.resolve.descriptorUtil.findImplicitOuterClassArguments[ValueParameterDescriptorImpl]
 
-'classesFromInnerToOuter' @ [308:32] ==> private fun ClassDescriptor.classesFromInnerToOuter(): Sequence<ClassDescriptor> defined in org.jetbrains.kotlin.resolve.descriptorUtil[SimpleFunctionDescriptorImpl]
+'classesFromInnerToOuter' @ [308:32] ==> private fun ClassDescriptor.classesFromInnerToOuter(): Sequence<ClassDescriptor> defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[SimpleFunctionDescriptorImpl]
 
 'current' @ [309:27] ==> val current: ClassDescriptor defined in org.jetbrains.kotlin.resolve.descriptorUtil.findImplicitOuterClassArguments[LocalVariableDescriptor]
 
-'getAllSuperClassesTypesIncludeItself' @ [309:35] ==> private fun ClassDescriptor.getAllSuperClassesTypesIncludeItself(): List<KotlinType> defined in org.jetbrains.kotlin.resolve.descriptorUtil[SimpleFunctionDescriptorImpl]
+'getAllSuperClassesTypesIncludeItself' @ [309:35] ==> private fun ClassDescriptor.getAllSuperClassesTypesIncludeItself(): List<KotlinType> defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[SimpleFunctionDescriptorImpl]
 
 'supertype' @ [310:35] ==> val supertype: KotlinType defined in org.jetbrains.kotlin.resolve.descriptorUtil.findImplicitOuterClassArguments[LocalVariableDescriptor]
 
@@ -718,7 +722,7 @@ Inferred types:
 
 'stringType' @ [340:35] ==> public final val KotlinBuiltIns.stringType: SimpleType[MyPropertyDescriptor]
 
-'makeNullable' @ [340:46] ==> public fun KotlinType.makeNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'makeNullable' @ [340:46] ==> public fun KotlinType.makeNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 '==' @ [341:12] ==> @Override public open fun equals(other: Any?): Boolean defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
@@ -749,6 +753,8 @@ Inferred types:
     <T : Any> -> ClassDescriptor
 
 'getSuperClassNotAny' @ [350:26] ==> public fun ClassDescriptor.getSuperClassNotAny(): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[SimpleFunctionDescriptorImpl]
+
+'getSuperClassNotAny' @ [350:66] ==> public fun ClassDescriptor.getSuperClassNotAny(): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[SimpleFunctionDescriptorImpl]
 
 'toCollection' @ [350:87] ==> public fun <T, C : MutableCollection<in ClassDescriptor>> Sequence<ClassDescriptor>.toCollection(destination: SmartList<ClassDescriptor>): SmartList<ClassDescriptor> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -822,8 +828,6 @@ Inferred types:
 
 'modality' @ [371:21] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [371:33] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'SEALED' @ [371:42] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'emptyList' @ [371:57] ==> public fun <T> emptyList(): List<ClassDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -837,8 +841,6 @@ Inferred types:
 'scope' @ [376:28] ==> value-parameter scope: MemberScope defined in org.jetbrains.kotlin.resolve.descriptorUtil.computeSealedSubclasses.collectSubclasses[ValueParameterDescriptorImpl]
 
 'getContributedDescriptors' @ [376:34] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[SimpleFunctionDescriptorImpl]
-
-'DescriptorKindFilter' @ [376:60] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'CLASSIFIERS' @ [376:81] ==> @JvmField public final val CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 

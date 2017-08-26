@@ -564,6 +564,8 @@ Inferred types:
 
 'Char' @ [175:24] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
 
+'isWhitespace' @ [175:30] ==> public fun Char.isWhitespace(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'this' @ [179:16] ==> <this> defined in org.jetbrains.kotlin.idea.completion.handlers.indentLinesAfterFirst[ReceiverParameterDescriptorImpl]
 
 'buildString' @ [180:12] ==> @InlineOnly public inline fun buildString(builderAction: StringBuilder /* = StringBuilder */.() -> Unit): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]

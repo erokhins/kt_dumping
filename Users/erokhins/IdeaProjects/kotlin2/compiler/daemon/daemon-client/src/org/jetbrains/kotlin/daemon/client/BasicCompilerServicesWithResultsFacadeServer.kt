@@ -4,17 +4,13 @@
 
 'port' @ [34:25] ==> value-parameter port: Int = ... defined in org.jetbrains.kotlin.daemon.client.BasicCompilerServicesWithResultsFacadeServer.<init>[ValueParameterDescriptorImpl]
 
-'LoopbackNetworkInterface' @ [34:31] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common[FakeCallableDescriptorForObject]
-
 'clientLoopbackSocketFactory' @ [34:56] ==> public final val clientLoopbackSocketFactory: LoopbackNetworkInterface.ClientLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[DeserializedPropertyDescriptor]
-
-'LoopbackNetworkInterface' @ [34:85] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common[FakeCallableDescriptorForObject]
 
 'serverLoopbackSocketFactory' @ [34:110] ==> public final val serverLoopbackSocketFactory: LoopbackNetworkInterface.ServerLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[DeserializedPropertyDescriptor]
 
 'messageCollector' @ [37:9] ==> public final val messageCollector: MessageCollector defined in org.jetbrains.kotlin.daemon.client.BasicCompilerServicesWithResultsFacadeServer[PropertyDescriptorImpl]
 
-'reportFromDaemon' @ [37:26] ==> public fun MessageCollector.reportFromDaemon(outputsCollector: ((File, List<File>) -> Unit)?, category: Int, severity: Int, message: String?, attachment: Serializable?): Unit defined in org.jetbrains.kotlin.daemon.client[SimpleFunctionDescriptorImpl]
+'reportFromDaemon' @ [37:26] ==> public fun MessageCollector.reportFromDaemon(outputsCollector: ((File, List<File>) -> Unit)?, category: Int, severity: Int, message: String?, attachment: Serializable?): Unit defined in org.jetbrains.kotlin.daemon.client in file BasicCompilerServicesWithResultsFacadeServer.kt[SimpleFunctionDescriptorImpl]
 
 'outputsCollector' @ [37:43] ==> public final val outputsCollector: ((File, List<File>) -> Unit)? defined in org.jetbrains.kotlin.daemon.client.BasicCompilerServicesWithResultsFacadeServer[PropertyDescriptorImpl]
 

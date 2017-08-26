@@ -62,7 +62,7 @@ Inferred types:
 
 'diagnostic' @ [52:57] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.UnsupportedYieldFix.Companion.createAction[ValueParameterDescriptorImpl]
 
-'a' @ [52:69] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (String..String?)>.a: (String..String?)[MyPropertyDescriptor]
+'a' @ [52:69] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (String..String?)>.a: String[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (kotlin.String..kotlin.String?)
@@ -80,7 +80,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Unit
 
-'message' @ [53:17] ==> val message: (String..String?) defined in org.jetbrains.kotlin.idea.quickfix.UnsupportedYieldFix.Companion.createAction[LocalVariableDescriptor]
+'message' @ [53:17] ==> val message: String defined in org.jetbrains.kotlin.idea.quickfix.UnsupportedYieldFix.Companion.createAction[LocalVariableDescriptor]
 
 'MESSAGE_FOR_YIELD_BEFORE_LAMBDA' @ [53:28] ==> public val MESSAGE_FOR_YIELD_BEFORE_LAMBDA: String defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 

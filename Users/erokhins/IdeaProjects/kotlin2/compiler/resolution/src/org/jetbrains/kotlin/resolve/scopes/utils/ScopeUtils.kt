@@ -208,7 +208,7 @@ Inferred types:
 
 'location' @ [87:72] ==> value-parameter location: LookupLocation defined in org.jetbrains.kotlin.resolve.scopes.utils.collectFunctions[ValueParameterDescriptorImpl]
 
-'processForMeAndParent' @ [90:5] ==> public inline fun HierarchicalScope.processForMeAndParent(process: (HierarchicalScope) -> Unit): Unit defined in org.jetbrains.kotlin.resolve.scopes.utils[SimpleFunctionDescriptorImpl]
+'processForMeAndParent' @ [90:5] ==> public inline fun HierarchicalScope.processForMeAndParent(process: (HierarchicalScope) -> Unit): Unit defined in org.jetbrains.kotlin.resolve.scopes.utils in file ScopeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [91:9] ==> value-parameter it: HierarchicalScope defined in org.jetbrains.kotlin.resolve.scopes.utils.findVariable.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -231,7 +231,7 @@ Inferred types:
 
 'it' @ [91:89] ==> value-parameter it: VariableDescriptor defined in org.jetbrains.kotlin.resolve.scopes.utils.findVariable.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'processForMeAndParent' @ [97:5] ==> public inline fun HierarchicalScope.processForMeAndParent(process: (HierarchicalScope) -> Unit): Unit defined in org.jetbrains.kotlin.resolve.scopes.utils[SimpleFunctionDescriptorImpl]
+'processForMeAndParent' @ [97:5] ==> public inline fun HierarchicalScope.processForMeAndParent(process: (HierarchicalScope) -> Unit): Unit defined in org.jetbrains.kotlin.resolve.scopes.utils in file ScopeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [98:9] ==> value-parameter it: HierarchicalScope defined in org.jetbrains.kotlin.resolve.scopes.utils.findFunction.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -320,11 +320,11 @@ Inferred types:
 
 'java' @ [123:46] ==> public val <T> KClass<out MemberScopeToImportingScopeAdapter>.java: Class<out MemberScopeToImportingScopeAdapter> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> MemberScopeToImportingScopeAdapter
+    <T> -> Captured(out MemberScopeToImportingScopeAdapter)
 
 'simpleName' @ [123:51] ==> public final val <T : (Any..Any?)> Class<out MemberScopeToImportingScopeAdapter>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MemberScopeToImportingScopeAdapter
+    <T : (Any..Any?)> -> Captured(out MemberScopeToImportingScopeAdapter)
 
 'memberScope' @ [123:68] ==> public final val memberScope: MemberScope defined in org.jetbrains.kotlin.resolve.scopes.utils.MemberScopeToImportingScopeAdapter[PropertyDescriptorImpl]
 
@@ -336,11 +336,11 @@ Inferred types:
 
 'java' @ [126:31] ==> public val <T> KClass<out MemberScopeToImportingScopeAdapter>.java: Class<out MemberScopeToImportingScopeAdapter> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> MemberScopeToImportingScopeAdapter
+    <T> -> Captured(out MemberScopeToImportingScopeAdapter)
 
 'simpleName' @ [126:36] ==> public final val <T : (Any..Any?)> Class<out MemberScopeToImportingScopeAdapter>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MemberScopeToImportingScopeAdapter
+    <T : (Any..Any?)> -> Captured(out MemberScopeToImportingScopeAdapter)
 
 'p' @ [127:9] ==> value-parameter p: Printer defined in org.jetbrains.kotlin.resolve.scopes.utils.MemberScopeToImportingScopeAdapter.printStructure[ValueParameterDescriptorImpl]
 
@@ -374,7 +374,7 @@ Inferred types:
 
 'parent' @ [140:37] ==> public abstract val parent: HierarchicalScope? defined in org.jetbrains.kotlin.resolve.scopes.HierarchicalScope[PropertyDescriptorImpl]
 
-'processForMeAndParent' @ [148:5] ==> public inline fun HierarchicalScope.processForMeAndParent(process: (HierarchicalScope) -> Unit): Unit defined in org.jetbrains.kotlin.resolve.scopes.utils[SimpleFunctionDescriptorImpl]
+'processForMeAndParent' @ [148:5] ==> public inline fun HierarchicalScope.processForMeAndParent(process: (HierarchicalScope) -> Unit): Unit defined in org.jetbrains.kotlin.resolve.scopes.utils in file ScopeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [149:23] ==> public abstract operator fun invoke(p1: HierarchicalScope): T? defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -388,7 +388,7 @@ Inferred types:
 
 'SmartList' @ [152:26] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> T
+    <E : (Any..Any?)> -> (T..T?)
 
 'result' @ [154:13] ==> var result: MutableList<T>? defined in org.jetbrains.kotlin.resolve.scopes.utils.collectFromMeAndParent[LocalVariableDescriptor]
 
@@ -402,7 +402,7 @@ Inferred types:
 Inferred types:
     <T> -> T
 
-'processForMeAndParent' @ [164:5] ==> public inline fun HierarchicalScope.processForMeAndParent(process: (HierarchicalScope) -> Unit): Unit defined in org.jetbrains.kotlin.resolve.scopes.utils[SimpleFunctionDescriptorImpl]
+'processForMeAndParent' @ [164:5] ==> public inline fun HierarchicalScope.processForMeAndParent(process: (HierarchicalScope) -> Unit): Unit defined in org.jetbrains.kotlin.resolve.scopes.utils in file ScopeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [164:29] ==> var result: Collection<T>? defined in org.jetbrains.kotlin.resolve.scopes.utils.collectAllFromMeAndParent[LocalVariableDescriptor]
 
@@ -422,7 +422,7 @@ Inferred types:
 Inferred types:
     <T> -> T
 
-'processForMeAndParent' @ [169:5] ==> public inline fun HierarchicalScope.processForMeAndParent(process: (HierarchicalScope) -> Unit): Unit defined in org.jetbrains.kotlin.resolve.scopes.utils[SimpleFunctionDescriptorImpl]
+'processForMeAndParent' @ [169:5] ==> public inline fun HierarchicalScope.processForMeAndParent(process: (HierarchicalScope) -> Unit): Unit defined in org.jetbrains.kotlin.resolve.scopes.utils in file ScopeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [169:29] ==> public abstract operator fun invoke(p1: HierarchicalScope): T? defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -479,7 +479,7 @@ Inferred types:
 
 'parent' @ [185:43] ==> public abstract val parent: HierarchicalScope? defined in org.jetbrains.kotlin.resolve.scopes.HierarchicalScope[PropertyDescriptorImpl]
 
-'chainImportingScopes' @ [186:29] ==> public fun chainImportingScopes(scopes: List<ImportingScope>, tail: ImportingScope? = ...): ImportingScope? defined in org.jetbrains.kotlin.resolve.scopes.utils[SimpleFunctionDescriptorImpl]
+'chainImportingScopes' @ [186:29] ==> public fun chainImportingScopes(scopes: List<ImportingScope>, tail: ImportingScope? = ...): ImportingScope? defined in org.jetbrains.kotlin.resolve.scopes.utils in file ScopeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'importScopes' @ [186:50] ==> value-parameter importScopes: List<ImportingScope> defined in org.jetbrains.kotlin.resolve.scopes.utils.addImportingScopes[ValueParameterDescriptorImpl]
 
@@ -489,7 +489,7 @@ Inferred types:
 
 'newFirstImporting' @ [187:35] ==> val newFirstImporting: ImportingScope? defined in org.jetbrains.kotlin.resolve.scopes.utils.addImportingScopes[LocalVariableDescriptor]
 
-'addImportingScopes' @ [191:11] ==> public fun LexicalScope.addImportingScopes(importScopes: List<ImportingScope>): LexicalScope defined in org.jetbrains.kotlin.resolve.scopes.utils[SimpleFunctionDescriptorImpl]
+'addImportingScopes' @ [191:11] ==> public fun LexicalScope.addImportingScopes(importScopes: List<ImportingScope>): LexicalScope defined in org.jetbrains.kotlin.resolve.scopes.utils in file ScopeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [191:30] ==> public fun <T> listOf(element: ImportingScope): List<ImportingScope> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -539,9 +539,9 @@ Inferred types:
 
 'delegate' @ [218:16] ==> public final val delegate: LexicalScope defined in org.jetbrains.kotlin.resolve.scopes.utils.LexicalScopeWrapper[PropertyDescriptorImpl]
 
-'lazy' @ [223:47] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> HierarchicalScope): Lazy<HierarchicalScope> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [223:47] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> HierarchicalScope
+    <T> -> T
 
 'NONE' @ [223:73] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -582,7 +582,7 @@ Inferred types:
 Inferred types:
     <T> -> ImportingScope
 
-'fold' @ [240:14] ==> public inline fun <T, R> Iterable<ImportingScope>.fold(initial: ImportingScope?, operation: (ImportingScope?, ImportingScope) -> ImportingScope?): ImportingScope? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [240:14] ==> public inline fun <T, R> Iterable<ImportingScope>.fold(initial: ImportingScope?, operation: (acc: ImportingScope?, ImportingScope) -> ImportingScope?): ImportingScope? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ImportingScope
     <R> -> ImportingScope?

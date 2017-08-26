@@ -78,7 +78,7 @@ Inferred types:
 
 'query' @ [84:20] ==> value-parameter query: Query<PsiReference> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.Function.applyQueryFilters[ValueParameterDescriptorImpl]
 
-'applyFilter' @ [85:18] ==> public fun Query<PsiReference>.applyFilter(flag: Boolean, condition: (PsiReference) -> Boolean): Query<PsiReference> defined in org.jetbrains.kotlin.idea.findUsages.handlers[SimpleFunctionDescriptorImpl]
+'applyFilter' @ [85:18] ==> public fun Query<PsiReference>.applyFilter(flag: Boolean, condition: (PsiReference) -> Boolean): Query<PsiReference> defined in org.jetbrains.kotlin.idea.findUsages.handlers in file KotlinFindMemberUsagesHandler.kt[SimpleFunctionDescriptorImpl]
 
 'kotlinOptions' @ [85:30] ==> val kotlinOptions: KotlinFunctionFindUsagesOptions defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.Function.applyQueryFilters[LocalVariableDescriptor]
 
@@ -138,11 +138,11 @@ Inferred types:
 
 'EmptyQuery' @ [101:24] ==> public constructor EmptyQuery<R : (Any..Any?)>() defined in com.intellij.util.EmptyQuery[JavaClassConstructorDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> PsiReference
+    <R : (Any..Any?)> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
 
 'query' @ [104:26] ==> value-parameter query: Query<PsiReference> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.Property.applyQueryFilters[ValueParameterDescriptorImpl]
 
-'applyFilter' @ [105:22] ==> public fun Query<PsiReference>.applyFilter(flag: Boolean, condition: (PsiReference) -> Boolean): Query<PsiReference> defined in org.jetbrains.kotlin.idea.findUsages.handlers[SimpleFunctionDescriptorImpl]
+'applyFilter' @ [105:22] ==> public fun Query<PsiReference>.applyFilter(flag: Boolean, condition: (PsiReference) -> Boolean): Query<PsiReference> defined in org.jetbrains.kotlin.idea.findUsages.handlers in file KotlinFindMemberUsagesHandler.kt[SimpleFunctionDescriptorImpl]
 
 'kotlinOptions' @ [105:34] ==> val kotlinOptions: KotlinPropertyFindUsagesOptions defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.Property.applyQueryFilters[LocalVariableDescriptor]
 
@@ -170,7 +170,7 @@ Inferred types:
 
 'FilteredQuery' @ [110:24] ==> public constructor FilteredQuery<T : (Any..Any?)>(@NotNull p0: Query<(PsiReference..PsiReference?)>, @NotNull p1: ((PsiReference..PsiReference?)) -> Boolean) defined in com.intellij.util.FilteredQuery[SamAdapterClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiReference
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
 
 'result' @ [110:38] ==> val result: Query<PsiReference> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.Property.applyQueryFilters[LocalVariableDescriptor]
 
@@ -240,7 +240,7 @@ Inferred types:
 
 'UniqueProcessor' @ [139:52] ==> public constructor UniqueProcessor<T : (Any..Any?)>(@NotNull p0: Processor<(UsageInfo..UsageInfo?)>) defined in com.intellij.util.CommonProcessors.UniqueProcessor[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UsageInfo
+    <T : (Any..Any?)> -> (com.intellij.usageView.UsageInfo..com.intellij.usageView.UsageInfo?)
 
 'processor' @ [139:68] ==> public final val processor: Processor<UsageInfo> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.MySearcher[PropertyDescriptorImpl]
 
@@ -376,7 +376,7 @@ Inferred types:
 
 'processUsage' @ [167:49] ==> internal final fun processUsage(processor: Processor<UsageInfo>, element: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindUsagesHandler.Companion[SimpleFunctionDescriptorImpl]
 
-'uniqueProcessor' @ [167:62] ==> val uniqueProcessor: CommonProcessors.UniqueProcessor<UsageInfo> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.MySearcher.buildTaskList[LocalVariableDescriptor]
+'uniqueProcessor' @ [167:62] ==> val uniqueProcessor: CommonProcessors.UniqueProcessor<(UsageInfo..UsageInfo?)> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.MySearcher.buildTaskList[LocalVariableDescriptor]
 
 'element' @ [167:79] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.MySearcher.buildTaskList.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -483,9 +483,9 @@ Inferred types:
 
 'searchScope' @ [196:56] ==> value-parameter searchScope: SearchScope defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.findReferencesToHighlight[ValueParameterDescriptorImpl]
 
-'emptyList' @ [196:72] ==> public fun <T> emptyList(): List<PsiReference> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyList' @ [196:72] ==> public fun <T> emptyList(): List<(PsiReference..PsiReference?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiReference
+    <T> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
 
 'super' @ [200:13] ==> <this> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler[LazyClassReceiverParameterDescriptor]
 
@@ -532,7 +532,7 @@ Inferred types:
 
 'FilteredQuery' @ [219:22] ==> public constructor FilteredQuery<T : (Any..Any?)>(@NotNull p0: Query<(PsiReference..PsiReference?)>, @NotNull p1: ((PsiReference..PsiReference?)) -> Boolean) defined in com.intellij.util.FilteredQuery[SamAdapterClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiReference
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?)
 
 'this' @ [219:36] ==> <this> defined in org.jetbrains.kotlin.idea.findUsages.handlers.applyFilter[ReceiverParameterDescriptorImpl]
 

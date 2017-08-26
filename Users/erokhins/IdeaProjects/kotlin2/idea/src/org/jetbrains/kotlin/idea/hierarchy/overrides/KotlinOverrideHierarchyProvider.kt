@@ -39,7 +39,7 @@ Inferred types:
 
 'it' @ [46:55] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.idea.hierarchy.overrides.KotlinOverrideHierarchyProvider.getOverrideHierarchyElement.<anonymous>[ValueParameterDescriptorImpl]
 
-'isOverrideHierarchyElement' @ [46:58] ==> public fun PsiElement.isOverrideHierarchyElement(): Boolean defined in org.jetbrains.kotlin.idea.hierarchy.overrides[SimpleFunctionDescriptorImpl]
+'isOverrideHierarchyElement' @ [46:58] ==> public fun PsiElement.isOverrideHierarchyElement(): Boolean defined in org.jetbrains.kotlin.idea.hierarchy.overrides in file KotlinOverrideHierarchyProvider.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [49:47] ==> <this> defined in org.jetbrains.kotlin.idea.hierarchy.overrides.isOverrideHierarchyElement[ReceiverParameterDescriptorImpl]
 

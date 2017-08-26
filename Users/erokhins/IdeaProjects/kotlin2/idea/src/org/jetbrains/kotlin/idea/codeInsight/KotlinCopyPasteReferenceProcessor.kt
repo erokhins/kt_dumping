@@ -30,7 +30,9 @@ Inferred types:
 
 'NO' @ [81:91] ==> public const final val NO: Int defined in com.intellij.codeInsight.CodeInsightSettings[JavaPropertyDescriptor]
 
-'KotlinReferenceData' @ [83:30] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
+'?:' @ [83:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: DataFlavor?, right: DataFlavor): DataFlavor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> DataFlavor
 
 'dataFlavor' @ [83:50] ==> public final val dataFlavor: DataFlavor? defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Companion[PropertyDescriptorImpl]
 
@@ -232,7 +234,7 @@ Inferred types:
 
 'getNonStrictParentOfType' @ [154:25] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getNonStrictParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtElement..KtElement?)>..Class<out (KtElement..KtElement?)>?)): KtElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtElement
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'element' @ [154:50] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.codeInsight.KotlinCopyPasteReferenceProcessor.addReferenceDataInsideElement[ValueParameterDescriptorImpl]
 
@@ -248,7 +250,7 @@ Inferred types:
 
 'java' @ [156:78] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'IGNORE_REFERENCES_INSIDE' @ [156:99] ==> private final val IGNORE_REFERENCES_INSIDE: Array<Class<out KtElement>> defined in org.jetbrains.kotlin.idea.codeInsight.KotlinCopyPasteReferenceProcessor[PropertyDescriptorImpl]
 
@@ -323,7 +325,9 @@ Inferred types:
 
 'importableFqName' @ [172:41] ==> public val DeclarationDescriptor.importableFqName: FqName? defined in org.jetbrains.kotlin.idea.imports[DeserializedPropertyDescriptor]
 
-'KotlinReferenceData' @ [174:28] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
+'?:' @ [174:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinReferenceData.Kind?, right: KotlinReferenceData.Kind): KotlinReferenceData.Kind[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Kind
 
 'fromDescriptor' @ [174:53] ==> public final fun fromDescriptor(descriptor: DeclarationDescriptor): KotlinReferenceData.Kind? defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind.Companion[SimpleFunctionDescriptorImpl]
 
@@ -607,8 +611,6 @@ Inferred types:
 
 'kind' @ [264:21] ==> public final val kind: KotlinReferenceData.Kind defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[PropertyDescriptorImpl]
 
-'KotlinReferenceData' @ [264:29] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
-
 'EXTENSION_FUNCTION' @ [264:54] ==> enum entry EXTENSION_FUNCTION defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind[FakeCallableDescriptorForObject]
 
 'fileResolutionScope' @ [265:17] ==> value-parameter fileResolutionScope: LexicalScope defined in org.jetbrains.kotlin.idea.codeInsight.KotlinCopyPasteReferenceProcessor.createReferenceToRestoreData[ValueParameterDescriptorImpl]
@@ -628,8 +630,6 @@ Inferred types:
 'refData' @ [269:18] ==> value-parameter refData: KotlinReferenceData defined in org.jetbrains.kotlin.idea.codeInsight.KotlinCopyPasteReferenceProcessor.createReferenceToRestoreData[ValueParameterDescriptorImpl]
 
 'kind' @ [269:26] ==> public final val kind: KotlinReferenceData.Kind defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[PropertyDescriptorImpl]
-
-'KotlinReferenceData' @ [269:34] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
 
 'EXTENSION_PROPERTY' @ [269:59] ==> enum entry EXTENSION_PROPERTY defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind[FakeCallableDescriptorForObject]
 
@@ -797,7 +797,7 @@ Inferred types:
 
 'smartPointerManager' @ [317:35] ==> val smartPointerManager: (SmartPointerManager..SmartPointerManager?) defined in org.jetbrains.kotlin.idea.codeInsight.KotlinCopyPasteReferenceProcessor.restoreReferences[LocalVariableDescriptor]
 
-'createSmartPsiElementPointer' @ [317:55] ==> @NotNull public abstract fun <E : (PsiElement..PsiElement?)> createSmartPsiElementPointer(@NotNull p0: (KtSimpleNameExpression..KtSimpleNameExpression?), p1: (PsiFile..PsiFile?)): SmartPsiElementPointer<(KtSimpleNameExpression..KtSimpleNameExpression?)> defined in com.intellij.psi.SmartPointerManager[JavaMethodDescriptor]
+'createSmartPsiElementPointer' @ [317:55] ==> @NotNull public abstract fun <E : (PsiElement..PsiElement?)> createSmartPsiElementPointer(@NotNull p0: KtSimpleNameExpression, p1: (PsiFile..PsiFile?)): SmartPsiElementPointer<(KtSimpleNameExpression..KtSimpleNameExpression?)> defined in com.intellij.psi.SmartPointerManager[JavaMethodDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtSimpleNameExpression..org.jetbrains.kotlin.psi.KtSimpleNameExpression?)
 
@@ -887,13 +887,9 @@ Inferred types:
 
 'this' @ [341:15] ==> <this> defined in org.jetbrains.kotlin.idea.codeInsight.KotlinCopyPasteReferenceProcessor.isExtension[ReceiverParameterDescriptorImpl]
 
-'KotlinReferenceData' @ [341:23] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
-
 'EXTENSION_FUNCTION' @ [341:48] ==> enum entry EXTENSION_FUNCTION defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind[FakeCallableDescriptorForObject]
 
 'this' @ [341:70] ==> <this> defined in org.jetbrains.kotlin.idea.codeInsight.KotlinCopyPasteReferenceProcessor.isExtension[ReceiverParameterDescriptorImpl]
-
-'KotlinReferenceData' @ [341:78] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
 
 'EXTENSION_PROPERTY' @ [341:103] ==> enum entry EXTENSION_PROPERTY defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind[FakeCallableDescriptorForObject]
 
@@ -913,7 +909,7 @@ Inferred types:
 
 'getParentOfType' @ [346:29] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(PackageFragmentDescriptor..PackageFragmentDescriptor?)>): PackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> PackageFragmentDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor?)
 
 'it' @ [346:45] ==> value-parameter it: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.codeInsight.KotlinCopyPasteReferenceProcessor.findImportableDescriptors.<anonymous>[ValueParameterDescriptorImpl]
 

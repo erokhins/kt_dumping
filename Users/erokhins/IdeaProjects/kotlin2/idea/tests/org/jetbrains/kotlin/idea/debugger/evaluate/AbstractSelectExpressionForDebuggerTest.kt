@@ -57,8 +57,6 @@ Inferred types:
 
 'selectedExpression' @ [49:32] ==> val selectedExpression: KtExpression? defined in org.jetbrains.kotlin.idea.debugger.evaluate.AbstractSelectExpressionForDebuggerTest.doTest[LocalVariableDescriptor]
 
-'KotlinEditorTextProvider' @ [50:13] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.KotlinEditorTextProvider[FakeCallableDescriptorForObject]
-
 'getElementInfo' @ [50:38] ==> public final fun <T> getElementInfo(expr: KtExpression, f: (PsiElement) -> (String..String?)): (String..String?) defined in org.jetbrains.kotlin.idea.debugger.KotlinEditorTextProvider.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)

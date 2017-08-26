@@ -27,12 +27,16 @@ Inferred types:
 
 'Name' @ [37:63] ==> private constructor Name(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.name.Name[JavaClassConstructorDescriptor]
 
+'isValidIdentifier' @ [37:69] ==> public open fun isValidIdentifier(@NotNull p0: String): Boolean defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
+
 'let' @ [37:89] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> Name): Name defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> Name
 
 'Name' @ [37:93] ==> private constructor Name(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.name.Name[JavaClassConstructorDescriptor]
+
+'identifier' @ [37:99] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
 'psi' @ [40:16] ==> public final val JavaClassImpl.psi: PsiClass[MyPropertyDescriptor]
 
@@ -46,6 +50,8 @@ Inferred types:
 Inferred types:
     <T> -> PsiClass
     <R> -> JavaClassImpl
+
+'JavaClassImpl' @ [40:72] ==> public constructor JavaClassImpl(psiClass: PsiClass) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassImpl[ClassConstructorDescriptorImpl]
 
 'psi' @ [45:33] ==> public final val JavaClassImpl.psi: PsiClass[MyPropertyDescriptor]
 
@@ -93,13 +99,13 @@ Inferred types:
 
 'outer' @ [64:63] ==> val outer: PsiClass? defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassImpl.<get-outerClass>[LocalVariableDescriptor]
 
-'typeParameters' @ [68:17] ==> internal fun typeParameters(typeParameters: Array<PsiTypeParameter>): List<JavaTypeParameter> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
+'typeParameters' @ [68:17] ==> internal fun typeParameters(typeParameters: Array<PsiTypeParameter>): List<JavaTypeParameter> defined in org.jetbrains.kotlin.load.java.structure.impl in file JavaElementCollectionFromPsiArrayUtil.kt[SimpleFunctionDescriptorImpl]
 
 'psi' @ [68:32] ==> public final val JavaClassImpl.psi: PsiClass[MyPropertyDescriptor]
 
 'typeParameters' @ [68:36] ==> public final val PsiClass.typeParameters: (Array<(PsiTypeParameter..PsiTypeParameter?)>..Array<out (PsiTypeParameter..PsiTypeParameter?)>)[MyPropertyDescriptor]
 
-'classifierTypes' @ [71:17] ==> internal fun classifierTypes(classTypes: Array<PsiClassType>): Collection<JavaClassifierType> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
+'classifierTypes' @ [71:17] ==> internal fun classifierTypes(classTypes: Array<PsiClassType>): Collection<JavaClassifierType> defined in org.jetbrains.kotlin.load.java.structure.impl in file JavaElementCollectionFromPsiArrayUtil.kt[SimpleFunctionDescriptorImpl]
 
 'psi' @ [71:33] ==> public final val JavaClassImpl.psi: PsiClass[MyPropertyDescriptor]
 
@@ -107,7 +113,7 @@ Inferred types:
 
 'assertNotLightClass' @ [75:13] ==> private final fun assertNotLightClass(): Unit defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassImpl[SimpleFunctionDescriptorImpl]
 
-'methods' @ [78:20] ==> internal fun methods(methods: Collection<PsiMethod>): Collection<JavaMethod> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
+'methods' @ [78:20] ==> internal fun methods(methods: Collection<PsiMethod>): Collection<JavaMethod> defined in org.jetbrains.kotlin.load.java.structure.impl in file JavaElementCollectionFromPsiArrayUtil.kt[SimpleFunctionDescriptorImpl]
 
 'psi' @ [78:28] ==> public final val JavaClassImpl.psi: PsiClass[MyPropertyDescriptor]
 
@@ -133,7 +139,7 @@ Inferred types:
 
 'assertNotLightClass' @ [83:13] ==> private final fun assertNotLightClass(): Unit defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassImpl[SimpleFunctionDescriptorImpl]
 
-'fields' @ [84:20] ==> internal fun fields(fields: Collection<PsiField>): Collection<JavaField> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
+'fields' @ [84:20] ==> internal fun fields(fields: Collection<PsiField>): Collection<JavaField> defined in org.jetbrains.kotlin.load.java.structure.impl in file JavaElementCollectionFromPsiArrayUtil.kt[SimpleFunctionDescriptorImpl]
 
 'psi' @ [84:27] ==> public final val JavaClassImpl.psi: PsiClass[MyPropertyDescriptor]
 
@@ -155,7 +161,7 @@ Inferred types:
 
 'assertNotLightClass' @ [93:13] ==> private final fun assertNotLightClass(): Unit defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassImpl[SimpleFunctionDescriptorImpl]
 
-'constructors' @ [96:20] ==> internal fun constructors(methods: Collection<PsiMethod>): Collection<JavaConstructor> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
+'constructors' @ [96:20] ==> internal fun constructors(methods: Collection<PsiMethod>): Collection<JavaConstructor> defined in org.jetbrains.kotlin.load.java.structure.impl in file JavaElementCollectionFromPsiArrayUtil.kt[SimpleFunctionDescriptorImpl]
 
 'psi' @ [96:33] ==> public final val JavaClassImpl.psi: PsiClass[MyPropertyDescriptor]
 
@@ -217,7 +223,7 @@ Inferred types:
 
 'java' @ [125:102] ==> public val <T> KClass<out PsiClass>.java: Class<out PsiClass> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiClass
+    <T> -> Captured(out PsiClass)
 
 'psiClass' @ [125:126] ==> val psiClass: PsiClass defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassImpl.assertNotLightClass[LocalVariableDescriptor]
 

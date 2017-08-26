@@ -537,8 +537,6 @@ Inferred types:
 
 'it' @ [185:111] ==> value-parameter it: Document defined in org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestIntention.applyTo.<no name provided>.invoke.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'JavaToKotlinAction' @ [188:33] ==> public companion object defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction[FakeCallableDescriptorForObject]
-
 'convertFiles' @ [188:52] ==> public final fun convertFiles(javaFiles: List<PsiJavaFile>, project: Project, enableExternalCodeProcessing: Boolean = ...): List<KtFile> defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction.Companion[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [188:65] ==> public fun <T> listOf(element: PsiJavaFile): List<PsiJavaFile> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]

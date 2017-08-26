@@ -11,17 +11,13 @@ Inferred types:
 
 'toLowerCase' @ [22:56] ==> @InlineOnly public inline fun String.toLowerCase(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'in' @ [24:5] ==> public operator fun <@OnlyInputTypes T> Iterable<String?>.contains(element: String?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <@OnlyInputTypes T> -> String?
+'in' @ [24:5] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
 'listOf' @ [24:8] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
-'in' @ [25:5] ==> public operator fun <@OnlyInputTypes T> Iterable<String?>.contains(element: String?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <@OnlyInputTypes T> -> String?
+'in' @ [25:5] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
 'listOf' @ [25:8] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

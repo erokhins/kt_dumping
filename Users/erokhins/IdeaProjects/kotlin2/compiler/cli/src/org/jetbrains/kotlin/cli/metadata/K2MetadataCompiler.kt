@@ -8,7 +8,7 @@ Inferred types:
 
 'getNotNull' @ [54:39] ==> @NotNull public open fun <T : (Any..Any?)> getNotNull(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>): MessageCollector defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [54:71] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -28,7 +28,7 @@ Inferred types:
 
 'configuration' @ [60:13] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.cli.metadata.K2MetadataCompiler.doExecute[ValueParameterDescriptorImpl]
 
-'addJvmClasspathRoots' @ [60:27] ==> public fun CompilerConfiguration.addJvmClasspathRoots(files: List<File>): Unit defined in org.jetbrains.kotlin.cli.jvm.config[SimpleFunctionDescriptorImpl]
+'addJvmClasspathRoots' @ [60:27] ==> public fun CompilerConfiguration.addJvmClasspathRoots(files: List<File>): Unit defined in org.jetbrains.kotlin.cli.jvm.config in file JvmContentRoots.kt[SimpleFunctionDescriptorImpl]
 
 'arguments' @ [60:48] ==> value-parameter arguments: K2MetadataCompilerArguments defined in org.jetbrains.kotlin.cli.metadata.K2MetadataCompiler.doExecute[ValueParameterDescriptorImpl]
 
@@ -43,13 +43,13 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [60:106] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'configuration' @ [63:9] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.cli.metadata.K2MetadataCompiler.doExecute[ValueParameterDescriptorImpl]
 
 'put' @ [63:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [63:27] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [63:51] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -75,7 +75,7 @@ Inferred types:
 
 'put' @ [71:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(File..File?)>, @NotNull p1: File): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'METADATA_DESTINATION_DIRECTORY' @ [71:52] ==> public final val METADATA_DESTINATION_DIRECTORY: (CompilerConfigurationKey<(File..File?)>..CompilerConfigurationKey<(File..File?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 

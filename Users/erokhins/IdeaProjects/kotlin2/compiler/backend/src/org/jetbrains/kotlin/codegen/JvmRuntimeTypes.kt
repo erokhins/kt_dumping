@@ -28,17 +28,17 @@ Inferred types:
 
 'klass' @ [44:67] ==> private final fun klass(name: String): Lazy<ClassDescriptor> defined in org.jetbrains.kotlin.codegen.JvmRuntimeTypes[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [45:39] ==> public fun <T> lazy(initializer: () -> ClassDescriptor): Lazy<ClassDescriptor> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [45:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ClassDescriptor
+    <T> -> T
 
 'createClass' @ [45:46] ==> private final fun createClass(packageFragment: PackageFragmentDescriptor, name: String, classKind: ClassKind = ...): ClassDescriptor defined in org.jetbrains.kotlin.codegen.JvmRuntimeTypes[SimpleFunctionDescriptorImpl]
 
 'kotlinCoroutinesJvmInternalPackage' @ [45:58] ==> private final val kotlinCoroutinesJvmInternalPackage: MutablePackageFragmentDescriptor defined in org.jetbrains.kotlin.codegen.JvmRuntimeTypes[PropertyDescriptorImpl]
 
-'lazy' @ [47:62] ==> public fun <T> lazy(initializer: () -> List<ClassDescriptor>): Lazy<List<ClassDescriptor>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [47:62] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<ClassDescriptor>
+    <T> -> T
 
 '..' @ [48:10] ==> public final operator fun rangeTo(other: Int): IntRange defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
@@ -53,9 +53,9 @@ Inferred types:
 
 'i' @ [48:84] ==> value-parameter i: Int defined in org.jetbrains.kotlin.codegen.JvmRuntimeTypes.propertyReferences.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'lazy' @ [51:69] ==> public fun <T> lazy(initializer: () -> List<ClassDescriptor>): Lazy<List<ClassDescriptor>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [51:69] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<ClassDescriptor>
+    <T> -> T
 
 '..' @ [52:10] ==> public final operator fun rangeTo(other: Int): IntRange defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
@@ -131,8 +131,6 @@ Inferred types:
 
 'builtIns' @ [77:28] ==> public val DeclarationDescriptor.builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
-'Annotations' @ [78:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [78:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'actualFunctionDescriptor' @ [79:17] ==> val actualFunctionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.JvmRuntimeTypes.getSupertypesForClosure[LocalVariableDescriptor]
@@ -192,8 +190,6 @@ Inferred types:
 'descriptor' @ [99:17] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.JvmRuntimeTypes.getSupertypesForFunctionReference[ValueParameterDescriptorImpl]
 
 'builtIns' @ [99:28] ==> public val DeclarationDescriptor.builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
-
-'Annotations' @ [100:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [100:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

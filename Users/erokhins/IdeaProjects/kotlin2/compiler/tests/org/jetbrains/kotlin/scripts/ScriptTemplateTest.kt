@@ -8,7 +8,7 @@
 
 'aClass' @ [65:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithParam[LocalVariableDescriptor]
 
-'captureOut' @ [66:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [66:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [67:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithParam[LocalVariableDescriptor]
 
@@ -18,7 +18,7 @@
 
 'newInstance' @ [67:51] ==> @CallerSensitive public open fun newInstance(vararg p0: (Any..Any?)): (Any..Any?) defined in java.lang.reflect.Constructor[JavaMethodDescriptor]
 
-'assertEqualsTrimmed' @ [69:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [69:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [69:29] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -36,7 +36,7 @@
 
 'aClass' @ [75:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithClassParameter[LocalVariableDescriptor]
 
-'captureOut' @ [76:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [76:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [77:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithClassParameter[LocalVariableDescriptor]
 
@@ -52,7 +52,7 @@ Inferred types:
 
 'TestParamClass' @ [77:77] ==> public constructor TestParamClass(@Suppress memberNum: Int) defined in org.jetbrains.kotlin.scripts.TestParamClass[ClassConstructorDescriptorImpl]
 
-'assertEqualsTrimmed' @ [79:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [79:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [79:29] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -70,7 +70,7 @@ Inferred types:
 
 'aClass' @ [85:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithBaseClassWithParam[LocalVariableDescriptor]
 
-'captureOut' @ [86:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [86:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [87:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithBaseClassWithParam[LocalVariableDescriptor]
 
@@ -82,7 +82,7 @@ Inferred types:
 
 'newInstance' @ [87:65] ==> @CallerSensitive public open fun newInstance(vararg p0: (Any..Any?)): (Any..Any?) defined in java.lang.reflect.Constructor[JavaMethodDescriptor]
 
-'assertEqualsTrimmed' @ [89:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [89:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [89:29] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -106,7 +106,7 @@ Inferred types:
 
 'aClass' @ [97:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithDependsAnn[LocalVariableDescriptor]
 
-'captureOut' @ [98:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [98:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [99:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithDependsAnn[LocalVariableDescriptor]
 
@@ -116,7 +116,7 @@ Inferred types:
 
 'newInstance' @ [99:51] ==> @CallerSensitive public open fun newInstance(vararg p0: (Any..Any?)): (Any..Any?) defined in java.lang.reflect.Constructor[JavaMethodDescriptor]
 
-'assertEqualsTrimmed' @ [101:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [101:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [101:29] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -152,7 +152,7 @@ Inferred types:
 
 'aClass' @ [116:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithDependsAnn2[LocalVariableDescriptor]
 
-'captureOut' @ [117:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [117:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [118:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithDependsAnn2[LocalVariableDescriptor]
 
@@ -162,7 +162,7 @@ Inferred types:
 
 'newInstance' @ [118:51] ==> @CallerSensitive public open fun newInstance(vararg p0: (Any..Any?)): (Any..Any?) defined in java.lang.reflect.Constructor[JavaMethodDescriptor]
 
-'assertEqualsTrimmed' @ [120:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [120:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [120:29] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -180,7 +180,7 @@ Inferred types:
 
 'aClass' @ [126:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithoutParams[LocalVariableDescriptor]
 
-'captureOut' @ [127:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [127:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [128:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithoutParams[LocalVariableDescriptor]
 
@@ -190,7 +190,7 @@ Inferred types:
 
 'newInstance' @ [128:51] ==> @CallerSensitive public open fun newInstance(vararg p0: (Any..Any?)): (Any..Any?) defined in java.lang.reflect.Constructor[JavaMethodDescriptor]
 
-'assertEqualsTrimmed' @ [130:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [130:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'out' @ [130:35] ==> val out: String defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithoutParams[LocalVariableDescriptor]
 
@@ -204,7 +204,7 @@ Inferred types:
 
 'aClass' @ [136:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithOverriddenParam[LocalVariableDescriptor]
 
-'captureOut' @ [137:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [137:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [138:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithOverriddenParam[LocalVariableDescriptor]
 
@@ -214,7 +214,7 @@ Inferred types:
 
 'newInstance' @ [138:51] ==> @CallerSensitive public open fun newInstance(vararg p0: (Any..Any?)): (Any..Any?) defined in java.lang.reflect.Constructor[JavaMethodDescriptor]
 
-'assertEqualsTrimmed' @ [140:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [140:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'out' @ [140:35] ==> val out: String defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithOverriddenParam[LocalVariableDescriptor]
 
@@ -228,15 +228,15 @@ Inferred types:
 
 'aClass' @ [146:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithArrayParam[LocalVariableDescriptor]
 
-'captureOut' @ [147:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [147:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [148:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithArrayParam[LocalVariableDescriptor]
 
 'getConstructor' @ [148:22] ==> @CallerSensitive public open fun getConstructor(vararg p0: (Class<*>..Class<*>?)): (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?) defined in java.lang.Class[JavaMethodDescriptor]
 
-'Array' @ [148:37] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [148:37] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@7cf0303a
 
 'java' @ [148:58] ==> public val <T> KClass<Array<String>>.java: Class<Array<String>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -253,7 +253,7 @@ Inferred types:
     <T> -> String
     <R> -> Unit
 
-'assertEqualsTrimmed' @ [150:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [150:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [150:48] ==> value-parameter it: String defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithArrayParam.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -267,7 +267,7 @@ Inferred types:
 
 'aClass' @ [157:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithNullableParam[LocalVariableDescriptor]
 
-'captureOut' @ [158:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [158:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [159:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithNullableParam[LocalVariableDescriptor]
 
@@ -286,7 +286,7 @@ Inferred types:
     <T> -> String
     <R> -> Unit
 
-'assertEqualsTrimmed' @ [161:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [161:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [161:50] ==> value-parameter it: String defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithNullableParam.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -300,23 +300,23 @@ Inferred types:
 
 'aClass' @ [168:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptVarianceParams[LocalVariableDescriptor]
 
-'captureOut' @ [169:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [169:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [170:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptVarianceParams[LocalVariableDescriptor]
 
 'getConstructor' @ [170:22] ==> @CallerSensitive public open fun getConstructor(vararg p0: (Class<*>..Class<*>?)): (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?) defined in java.lang.Class[JavaMethodDescriptor]
 
-'Array' @ [170:37] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [170:37] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@2f23aa35
 
 'java' @ [170:61] ==> public val <T> KClass<Array<in Number>>.java: Class<Array<in Number>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> Array<in Number>
 
-'Array' @ [170:67] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [170:67] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@da3023c
 
 'java' @ [170:92] ==> public val <T> KClass<Array<out Number>>.java: Class<Array<out Number>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -337,7 +337,7 @@ Inferred types:
     <T> -> String
     <R> -> Unit
 
-'assertEqualsTrimmed' @ [172:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [172:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [172:46] ==> value-parameter it: String defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptVarianceParams.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -351,15 +351,15 @@ Inferred types:
 
 'aClass' @ [179:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithNullableProjection[LocalVariableDescriptor]
 
-'captureOut' @ [180:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [180:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [181:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithNullableProjection[LocalVariableDescriptor]
 
 'getConstructor' @ [181:22] ==> @CallerSensitive public open fun getConstructor(vararg p0: (Class<*>..Class<*>?)): (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?) defined in java.lang.Class[JavaMethodDescriptor]
 
-'Array' @ [181:37] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [181:37] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@25cb79cc
 
 'java' @ [181:58] ==> public val <T> KClass<Array<String>>.java: Class<Array<String>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -376,7 +376,7 @@ Inferred types:
     <T> -> String
     <R> -> Unit
 
-'assertEqualsTrimmed' @ [183:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [183:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [183:45] ==> value-parameter it: String defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithNullableProjection.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -390,15 +390,15 @@ Inferred types:
 
 'aClass' @ [190:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithArray2DParam[LocalVariableDescriptor]
 
-'captureOut' @ [191:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [191:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [192:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithArray2DParam[LocalVariableDescriptor]
 
 'getConstructor' @ [192:22] ==> @CallerSensitive public open fun getConstructor(vararg p0: (Class<*>..Class<*>?)): (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?) defined in java.lang.Class[JavaMethodDescriptor]
 
-'Array' @ [192:37] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [192:37] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@58c7ecaf
 
 'java' @ [192:68] ==> public val <T> KClass<Array<Array<in String>>>.java: Class<Array<Array<in String>>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -423,7 +423,7 @@ Inferred types:
     <T> -> String
     <R> -> Unit
 
-'assertEqualsTrimmed' @ [194:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [194:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [194:56] ==> value-parameter it: String defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithArray2DParam.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -437,15 +437,15 @@ Inferred types:
 
 'aClass' @ [201:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithStandardTemplate[LocalVariableDescriptor]
 
-'captureOut' @ [202:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [202:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [203:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithStandardTemplate[LocalVariableDescriptor]
 
 'getConstructor' @ [203:22] ==> @CallerSensitive public open fun getConstructor(vararg p0: (Class<*>..Class<*>?)): (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?) defined in java.lang.Class[JavaMethodDescriptor]
 
-'Array' @ [203:37] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [203:37] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6a879780
 
 'java' @ [203:58] ==> public val <T> KClass<Array<String>>.java: Class<Array<String>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -462,7 +462,7 @@ Inferred types:
     <T> -> String
     <R> -> Unit
 
-'assertEqualsTrimmed' @ [205:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [205:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [205:33] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -480,7 +480,7 @@ Inferred types:
 
 'aClass' @ [212:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithPackage[LocalVariableDescriptor]
 
-'captureOut' @ [213:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [213:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [214:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithPackage[LocalVariableDescriptor]
 
@@ -495,7 +495,7 @@ Inferred types:
     <T> -> String
     <R> -> Unit
 
-'assertEqualsTrimmed' @ [216:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [216:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [216:33] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -513,7 +513,7 @@ Inferred types:
 
 'aClass' @ [223:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithScriptDefinition[LocalVariableDescriptor]
 
-'captureOut' @ [224:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [224:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [225:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithScriptDefinition[LocalVariableDescriptor]
 
@@ -528,7 +528,7 @@ Inferred types:
     <T> -> String
     <R> -> Unit
 
-'assertEqualsTrimmed' @ [227:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [227:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [227:33] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -546,7 +546,7 @@ Inferred types:
 
 'aClass' @ [234:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testScriptWithParamConversion[LocalVariableDescriptor]
 
-'captureOut' @ [235:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [235:9] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'tryConstructClassFromStringArgs' @ [236:26] ==> public fun tryConstructClassFromStringArgs(clazz: Class<*>, args: List<String>): Any? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
@@ -565,7 +565,7 @@ Inferred types:
     <T> -> String
     <R> -> Unit
 
-'assertEqualsTrimmed' @ [239:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [239:13] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [239:33] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -617,7 +617,7 @@ Inferred types:
 
 'aClass' @ [257:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testAsyncResolver[LocalVariableDescriptor]
 
-'captureOut' @ [258:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [258:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'aClass' @ [259:13] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTemplateTest.testAsyncResolver[LocalVariableDescriptor]
 
@@ -627,7 +627,7 @@ Inferred types:
 
 'newInstance' @ [259:51] ==> @CallerSensitive public open fun newInstance(vararg p0: (Any..Any?)): (Any..Any?) defined in java.lang.reflect.Constructor[JavaMethodDescriptor]
 
-'assertEqualsTrimmed' @ [261:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [261:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [261:29] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -791,7 +791,7 @@ Inferred types:
 
 'put' @ [353:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>, @NotNull p1: MessageCollector): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [353:52] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -807,7 +807,7 @@ Inferred types:
 
 'add' @ [355:27] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>, @NotNull p1: KotlinScriptDefinition): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinScriptDefinition
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)
 
 'SCRIPT_DEFINITIONS' @ [355:52] ==> public final val SCRIPT_DEFINITIONS: (CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>..CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -817,7 +817,7 @@ Inferred types:
 
 'put' @ [356:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'RETAIN_OUTPUT_IN_MEMORY' @ [356:52] ==> public final val RETAIN_OUTPUT_IN_MEMORY: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -841,11 +841,11 @@ Inferred types:
 
 'java' @ [361:91] ==> public val <T> KClass<out ScriptTemplateTest>.java: Class<out ScriptTemplateTest> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ScriptTemplateTest
+    <T> -> Captured(out ScriptTemplateTest)
 
 'classLoader' @ [361:96] ==> public final val <T : (Any..Any?)> Class<out ScriptTemplateTest>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScriptTemplateTest
+    <T : (Any..Any?)> -> Captured(out ScriptTemplateTest)
 
 'takeUnless' @ [361:108] ==> @InlineOnly @SinceKotlin public inline fun <T> (ClassLoader..ClassLoader?).takeUnless(predicate: ((ClassLoader..ClassLoader?)) -> Boolean): ClassLoader? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -889,7 +889,7 @@ Inferred types:
 
 'ScriptDependencies' @ [386:16] ==> public constructor ScriptDependencies(javaHome: File? = ..., classpath: List<File> = ..., imports: List<String> = ..., sources: List<File> = ..., scripts: List<File> = ...) defined in kotlin.script.experimental.dependencies.ScriptDependencies[DeserializedClassConstructorDescriptor]
 
-'classpathFromClassloader' @ [387:25] ==> private fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'classpathFromClassloader' @ [387:25] ==> private fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.scripts in file ScriptTemplateTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [388:23] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -918,6 +918,8 @@ Inferred types:
     <T> -> (java.net.URL..java.net.URL?)
     <R : Any> -> File
 
+'toFile' @ [395:35] ==> internal fun URL.toFile(): File? defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
+
 'filter' @ [396:19] ==> public inline fun <T> Iterable<File>.filter(predicate: (File) -> Boolean): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
@@ -940,9 +942,9 @@ Inferred types:
 
 'TestKotlinScriptDummyDependenciesResolver' @ [400:51] ==> public constructor TestKotlinScriptDummyDependenciesResolver() defined in org.jetbrains.kotlin.scripts.TestKotlinScriptDummyDependenciesResolver[ClassConstructorDescriptorImpl]
 
-'lazy' @ [402:32] ==> public fun <T> lazy(initializer: () -> KotlinPaths): Lazy<KotlinPaths> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [402:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinPaths
+    <T> -> T
 
 'PathUtil' @ [402:39] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
@@ -1084,11 +1086,11 @@ Inferred types:
 
 'java' @ [419:81] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out Annotation)
 
 'ScriptDependencies' @ [422:16] ==> public constructor ScriptDependencies(javaHome: File? = ..., classpath: List<File> = ..., imports: List<String> = ..., sources: List<File> = ..., scripts: List<File> = ...) defined in kotlin.script.experimental.dependencies.ScriptDependencies[DeserializedClassConstructorDescriptor]
 
-'classpathFromClassloader' @ [423:25] ==> private fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'classpathFromClassloader' @ [423:25] ==> private fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.scripts in file ScriptTemplateTest.kt[SimpleFunctionDescriptorImpl]
 
 'cp' @ [423:54] ==> val cp: List<File> defined in org.jetbrains.kotlin.scripts.TestKotlinScriptDependenciesResolver.resolve[LocalVariableDescriptor]
 
@@ -1215,7 +1217,7 @@ Inferred types:
 
 'ScriptDependencies' @ [476:16] ==> public constructor ScriptDependencies(javaHome: File? = ..., classpath: List<File> = ..., imports: List<String> = ..., sources: List<File> = ..., scripts: List<File> = ...) defined in kotlin.script.experimental.dependencies.ScriptDependencies[DeserializedClassConstructorDescriptor]
 
-'classpathFromClassloader' @ [477:29] ==> private fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'classpathFromClassloader' @ [477:29] ==> private fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.scripts in file ScriptTemplateTest.kt[SimpleFunctionDescriptorImpl]
 
 'annotationFqNames' @ [478:27] ==> private val annotationFqNames: List<String> defined in org.jetbrains.kotlin.scripts in file ScriptTemplateTest.kt[PropertyDescriptorImpl]
 
@@ -1251,7 +1253,7 @@ Inferred types:
 
 'script' @ [505:33] ==> value-parameter script: ScriptContents defined in org.jetbrains.kotlin.scripts.TestAcceptedAnnotationsLegacyResolver.resolve[ValueParameterDescriptorImpl]
 
-'classpathFromClassloader' @ [508:25] ==> private fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'classpathFromClassloader' @ [508:25] ==> private fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.scripts in file ScriptTemplateTest.kt[SimpleFunctionDescriptorImpl]
 
 'annotationFqNames' @ [511:25] ==> private val annotationFqNames: List<String> defined in org.jetbrains.kotlin.scripts in file ScriptTemplateTest.kt[PropertyDescriptorImpl]
 

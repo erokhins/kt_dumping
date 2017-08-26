@@ -32,19 +32,19 @@
 
 'elements' @ [56:33] ==> value-parameter elements: MutableCollection<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.move.moveClassesOrPackages.KotlinAwareDelegatingMoveDestination.analyzeModuleConflicts[ValueParameterDescriptorImpl]
 
-'flatMapTo' @ [56:42] ==> public inline fun <T, R, C : MutableCollection<in (PsiDirectory..PsiDirectory?)>> Iterable<PsiElement>.flatMapTo(destination: LinkedHashSet<PsiDirectory> /* = LinkedHashSet<PsiDirectory> */, transform: (PsiElement) -> Iterable<(PsiDirectory..PsiDirectory?)>): LinkedHashSet<PsiDirectory> /* = LinkedHashSet<PsiDirectory> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMapTo' @ [56:42] ==> public inline fun <T, R, C : MutableCollection<in PsiDirectory>> Iterable<PsiElement>.flatMapTo(destination: LinkedHashSet<PsiDirectory> /* = LinkedHashSet<PsiDirectory> */, transform: (PsiElement) -> Iterable<PsiDirectory>): LinkedHashSet<PsiDirectory> /* = LinkedHashSet<PsiDirectory> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiElement
-    <R> -> (com.intellij.psi.PsiDirectory..com.intellij.psi.PsiDirectory?)
+    <R> -> PsiDirectory
     <C : MutableCollection<in R>> -> LinkedHashSet<PsiDirectory>
 
 'LinkedHashSet' @ [56:52] ==> public final fun <E> <init>(): LinkedHashSet<PsiDirectory> /* = LinkedHashSet<PsiDirectory> */ defined in kotlin.collections.LinkedHashSet[TypeAliasConstructorDescriptorImpl]
 Inferred types:
     <E> -> PsiDirectory
 
-'?:' @ [57:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<(PsiDirectory..PsiDirectory?)>?, right: List<(PsiDirectory..PsiDirectory?)>): List<(PsiDirectory..PsiDirectory?)>[SimpleFunctionDescriptorImpl]
+'?:' @ [57:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Iterable<PsiDirectory>?, right: Iterable<PsiDirectory>): Iterable<PsiDirectory>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<(com.intellij.psi.PsiDirectory..com.intellij.psi.PsiDirectory?)>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Iterable<PsiDirectory>
 
 'it' @ [57:14] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move.moveClassesOrPackages.KotlinAwareDelegatingMoveDestination.analyzeModuleConflicts.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -64,19 +64,19 @@ Inferred types:
 
 'elements' @ [60:30] ==> value-parameter elements: MutableCollection<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.move.moveClassesOrPackages.KotlinAwareDelegatingMoveDestination.analyzeModuleConflicts[ValueParameterDescriptorImpl]
 
-'flatMapTo' @ [60:39] ==> public inline fun <T, R, C : MutableCollection<in (KtFile..KtFile?)>> Iterable<PsiElement>.flatMapTo(destination: LinkedHashSet<KtFile> /* = LinkedHashSet<KtFile> */, transform: (PsiElement) -> Iterable<(KtFile..KtFile?)>): LinkedHashSet<KtFile> /* = LinkedHashSet<KtFile> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMapTo' @ [60:39] ==> public inline fun <T, R, C : MutableCollection<in KtFile>> Iterable<PsiElement>.flatMapTo(destination: LinkedHashSet<KtFile> /* = LinkedHashSet<KtFile> */, transform: (PsiElement) -> Iterable<KtFile>): LinkedHashSet<KtFile> /* = LinkedHashSet<KtFile> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiElement
-    <R> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
+    <R> -> KtFile
     <C : MutableCollection<in R>> -> LinkedHashSet<KtFile>
 
 'LinkedHashSet' @ [60:49] ==> public final fun <E> <init>(): LinkedHashSet<KtFile> /* = LinkedHashSet<KtFile> */ defined in kotlin.collections.LinkedHashSet[TypeAliasConstructorDescriptorImpl]
 Inferred types:
     <E> -> KtFile
 
-'if (it is PsiPackage) packagesIndex[it.qualifiedName, project, projectScope] else emptyList()' @ [61:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Collection<(KtFile..KtFile?)>, elseBranch: Collection<(KtFile..KtFile?)>): Collection<(KtFile..KtFile?)>[SimpleFunctionDescriptorImpl]
+'if (it is PsiPackage) packagesIndex[it.qualifiedName, project, projectScope] else emptyList()' @ [61:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Iterable<KtFile>, elseBranch: Iterable<KtFile>): Iterable<KtFile>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Collection<(org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Iterable<KtFile>
 
 'it' @ [61:17] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move.moveClassesOrPackages.KotlinAwareDelegatingMoveDestination.analyzeModuleConflicts.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -226,7 +226,7 @@ Inferred types:
 Inferred types:
     <T> -> KtFile
 
-'analyzeConflictsInFile' @ [94:13] ==> public fun analyzeConflictsInFile(file: KtFile, usages: Collection<UsageInfo>, moveTarget: KotlinMoveTarget, allElementsToMove: Collection<PsiElement>, conflicts: MultiMap<PsiElement, String>, onUsageUpdate: (List<UsageInfo>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations[SimpleFunctionDescriptorImpl]
+'analyzeConflictsInFile' @ [94:13] ==> public fun analyzeConflictsInFile(file: KtFile, usages: Collection<UsageInfo>, moveTarget: KotlinMoveTarget, allElementsToMove: Collection<PsiElement>, conflicts: MultiMap<PsiElement, String>, onUsageUpdate: (List<UsageInfo>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations in file moveConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [94:36] ==> value-parameter it: KtFile defined in org.jetbrains.kotlin.idea.refactoring.move.moveClassesOrPackages.KotlinAwareDelegatingMoveDestination.analyzeModuleConflicts.<anonymous>[ValueParameterDescriptorImpl]
 

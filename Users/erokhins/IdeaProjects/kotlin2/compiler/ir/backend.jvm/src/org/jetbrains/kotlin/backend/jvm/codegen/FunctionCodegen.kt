@@ -28,13 +28,9 @@
 
 'descriptor' @ [55:73] ==> public final val descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen[PropertyDescriptorImpl]
 
-'OwnerKind' @ [55:85] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
 'IMPLEMENTATION' @ [55:95] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'isStaticMethod' @ [56:24] ==> public open fun isStaticMethod(p0: (OwnerKind..OwnerKind?), p1: (CallableMemberDescriptor..CallableMemberDescriptor?)): Boolean defined in org.jetbrains.kotlin.codegen.AsmUtil[JavaMethodDescriptor]
-
-'OwnerKind' @ [56:39] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'getMemberOwnerKind' @ [56:49] ==> public final fun getMemberOwnerKind(descriptor: DeclarationDescriptor): OwnerKind defined in org.jetbrains.kotlin.codegen.OwnerKind.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -63,8 +59,6 @@
 'getMethodAsmFlags' @ [61:29] ==> public open fun getMethodAsmFlags(p0: (FunctionDescriptor..FunctionDescriptor?), p1: (OwnerKind..OwnerKind?), p2: (GenerationState..GenerationState?)): Int defined in org.jetbrains.kotlin.codegen.AsmUtil[JavaMethodDescriptor]
 
 'descriptor' @ [61:47] ==> public final val descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen[PropertyDescriptorImpl]
-
-'OwnerKind' @ [61:59] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'IMPLEMENTATION' @ [61:69] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 

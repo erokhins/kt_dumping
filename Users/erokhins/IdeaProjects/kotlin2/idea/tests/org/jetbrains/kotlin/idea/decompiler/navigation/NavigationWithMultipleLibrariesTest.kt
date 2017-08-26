@@ -132,7 +132,7 @@ Inferred types:
 
 'moduleA' @ [100:9] ==> val moduleA: Module defined in org.jetbrains.kotlin.idea.decompiler.navigation.AbstractNavigationToSourceOrDecompiledTest.doTest[LocalVariableDescriptor]
 
-'addDependency' @ [100:17] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [100:17] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'createProjectLib' @ [100:31] ==> public abstract fun createProjectLib(libraryName: String, withSources: Boolean): Library defined in org.jetbrains.kotlin.idea.decompiler.navigation.AbstractNavigationToSourceOrDecompiledTest[SimpleFunctionDescriptorImpl]
 
@@ -140,7 +140,7 @@ Inferred types:
 
 'moduleB' @ [101:9] ==> val moduleB: Module defined in org.jetbrains.kotlin.idea.decompiler.navigation.AbstractNavigationToSourceOrDecompiledTest.doTest[LocalVariableDescriptor]
 
-'addDependency' @ [101:17] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [101:17] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'createProjectLib' @ [101:31] ==> public abstract fun createProjectLib(libraryName: String, withSources: Boolean): Library defined in org.jetbrains.kotlin.idea.decompiler.navigation.AbstractNavigationToSourceOrDecompiledTest[SimpleFunctionDescriptorImpl]
 
@@ -188,7 +188,7 @@ Inferred types:
 
 'moduleA' @ [126:9] ==> val moduleA: Module defined in org.jetbrains.kotlin.idea.decompiler.navigation.NavigationToSingleJarInMultipleLibrariesTest.testNavigatingToLibrarySharingSameJarOnlyOneHasSourcesAttached[LocalVariableDescriptor]
 
-'addDependency' @ [126:17] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [126:17] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'projectLibrary' @ [126:31] ==> public fun PlatformTestCase.projectLibrary(libraryName: String = ..., classesRoot: VirtualFile? = ..., sourcesRoot: VirtualFile? = ..., kind: PersistentLibraryKind<*>? = ...): Library defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
@@ -196,7 +196,7 @@ Inferred types:
 
 'moduleB' @ [127:9] ==> val moduleB: Module defined in org.jetbrains.kotlin.idea.decompiler.navigation.NavigationToSingleJarInMultipleLibrariesTest.testNavigatingToLibrarySharingSameJarOnlyOneHasSourcesAttached[LocalVariableDescriptor]
 
-'addDependency' @ [127:17] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [127:17] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'projectLibrary' @ [127:31] ==> public fun PlatformTestCase.projectLibrary(libraryName: String = ..., classesRoot: VirtualFile? = ..., sourcesRoot: VirtualFile? = ..., kind: PersistentLibraryKind<*>? = ...): Library defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
@@ -208,7 +208,7 @@ Inferred types:
 
 'moduleC' @ [128:9] ==> val moduleC: Module defined in org.jetbrains.kotlin.idea.decompiler.navigation.NavigationToSingleJarInMultipleLibrariesTest.testNavigatingToLibrarySharingSameJarOnlyOneHasSourcesAttached[LocalVariableDescriptor]
 
-'addDependency' @ [128:17] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'addDependency' @ [128:17] ==> public fun Module.addDependency(library: Library, dependencyScope: DependencyScope = ..., exported: Boolean = ...): Unit defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'projectLibrary' @ [128:31] ==> public fun PlatformTestCase.projectLibrary(libraryName: String = ..., classesRoot: VirtualFile? = ..., sourcesRoot: VirtualFile? = ..., kind: PersistentLibraryKind<*>? = ...): Library defined in org.jetbrains.kotlin.test.util in file ProjectStructureUtils.kt[SimpleFunctionDescriptorImpl]
 

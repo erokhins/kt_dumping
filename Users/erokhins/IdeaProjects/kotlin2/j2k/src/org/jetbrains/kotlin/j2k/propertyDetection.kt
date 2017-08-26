@@ -237,8 +237,6 @@ Inferred types:
 
 'field' @ [145:38] ==> val field: (PsiField..PsiField?) defined in org.jetbrains.kotlin.j2k.PropertyDetector.detectProperties[LocalVariableDescriptor]
 
-'PropertyInfo' @ [145:47] ==> public companion object defined in org.jetbrains.kotlin.j2k.PropertyInfo[FakeCallableDescriptorForObject]
-
 'fromFieldWithNoAccessors' @ [145:60] ==> public final fun fromFieldWithNoAccessors(field: PsiField, converter: Converter): PropertyInfo defined in org.jetbrains.kotlin.j2k.PropertyInfo.Companion[SimpleFunctionDescriptorImpl]
 
 'field' @ [145:85] ==> val field: (PsiField..PsiField?) defined in org.jetbrains.kotlin.j2k.PropertyDetector.detectProperties[LocalVariableDescriptor]
@@ -434,7 +432,7 @@ Inferred types:
 
 'referenceSearcher' @ [194:38] ==> public final val referenceSearcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.Converter[PropertyDescriptorImpl]
 
-'findVariableUsages' @ [194:56] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findVariableUsages' @ [194:56] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'field' @ [194:75] ==> var field: PsiField? defined in org.jetbrains.kotlin.j2k.PropertyDetector.detectPropertyCandidates[LocalVariableDescriptor]
 
@@ -474,7 +472,7 @@ Inferred types:
 
 'referenceSearcher' @ [200:38] ==> public final val referenceSearcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.Converter[PropertyDescriptorImpl]
 
-'findVariableUsages' @ [200:56] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findVariableUsages' @ [200:56] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'field' @ [200:75] ==> var field: PsiField? defined in org.jetbrains.kotlin.j2k.PropertyDetector.detectPropertyCandidates[LocalVariableDescriptor]
 
@@ -641,8 +639,6 @@ Inferred types:
 'propertyAccess' @ [229:68] ==> val propertyAccess: Modifier? defined in org.jetbrains.kotlin.j2k.PropertyDetector.detectPropertyCandidates[LocalVariableDescriptor]
 
 'PropertyInfo' @ [231:32] ==> public constructor PropertyInfo(identifier: Identifier, isVar: Boolean, psiType: PsiType, field: PsiField?, getMethod: PsiMethod?, setMethod: PsiMethod?, isGetMethodBodyFieldAccess: Boolean, isSetMethodBodyFieldAccess: Boolean, modifiers: Modifiers, specialSetterAccess: Modifier?, superInfo: SuperInfo?) defined in org.jetbrains.kotlin.j2k.PropertyInfo[ClassConstructorDescriptorImpl]
-
-'Identifier' @ [231:45] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [231:56] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1096,8 +1092,6 @@ Inferred types:
 
 'it' @ [369:70] ==> value-parameter it: PsiField defined in org.jetbrains.kotlin.j2k.PropertyDetector.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
 
-'Modifiers' @ [369:86] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
-
 'Empty' @ [369:96] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
 'getMethod' @ [370:31] ==> value-parameter getMethod: PsiMethod? defined in org.jetbrains.kotlin.j2k.PropertyDetector.convertModifiers[ValueParameterDescriptorImpl]
@@ -1115,8 +1109,6 @@ Inferred types:
 
 'isOpenClass' @ [370:79] ==> private final val isOpenClass: Boolean defined in org.jetbrains.kotlin.j2k.PropertyDetector[PropertyDescriptorImpl]
 
-'Modifiers' @ [370:97] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
-
 'Empty' @ [370:107] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
 'setMethod' @ [371:31] ==> value-parameter setMethod: PsiMethod? defined in org.jetbrains.kotlin.j2k.PropertyDetector.convertModifiers[ValueParameterDescriptorImpl]
@@ -1133,8 +1125,6 @@ Inferred types:
 'it' @ [371:75] ==> value-parameter it: PsiMethod defined in org.jetbrains.kotlin.j2k.PropertyDetector.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
 
 'isOpenClass' @ [371:79] ==> private final val isOpenClass: Boolean defined in org.jetbrains.kotlin.j2k.PropertyDetector[PropertyDescriptorImpl]
-
-'Modifiers' @ [371:97] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
 
 'Empty' @ [371:107] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 
@@ -1252,8 +1242,6 @@ Inferred types:
 'PrototypeInfo' @ [397:24] ==> public constructor PrototypeInfo(element: PsiElement, commentsAndSpacesInheritance: CommentsAndSpacesInheritance) defined in org.jetbrains.kotlin.j2k.ast.PrototypeInfo[ClassConstructorDescriptorImpl]
 
 'it' @ [397:38] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.j2k.PropertyDetector.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
-
-'CommentsAndSpacesInheritance' @ [397:42] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [397:71] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -1462,7 +1450,9 @@ Inferred types:
 
 'name' @ [453:37] ==> val name: String defined in org.jetbrains.kotlin.j2k.PropertyDetector.propertyNameByGetMethod[LocalVariableDescriptor]
 
-'SyntheticJavaPropertyDescriptor' @ [454:28] ==> public companion object defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor[FakeCallableDescriptorForObject]
+'?:' @ [454:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String): String[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> String
 
 'propertyNameByGetMethodName' @ [454:60] ==> public final fun propertyNameByGetMethodName(methodName: Name): Name? defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor.Companion[DeserializedSimpleFunctionDescriptor]
 

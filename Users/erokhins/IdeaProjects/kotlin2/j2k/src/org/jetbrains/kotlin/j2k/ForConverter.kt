@@ -180,11 +180,9 @@ Inferred types:
 
 'builder' @ [67:33] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ForConverter.execute.<no name provided>.convertStatement.<no name provided>.generateCode[ValueParameterDescriptorImpl]
 
-'append' @ [67:41] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [67:41] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'statements' @ [67:48] ==> val statements: List<Statement> defined in org.jetbrains.kotlin.j2k.ForConverter.execute.<no name provided>.convertStatement[LocalVariableDescriptor]
-
-'Block' @ [72:25] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Block[FakeCallableDescriptorForObject]
 
 'of' @ [72:31] ==> public final fun of(statements: List<Statement>): Block defined in org.jetbrains.kotlin.j2k.ast.Block.Companion[SimpleFunctionDescriptorImpl]
 
@@ -284,8 +282,6 @@ Inferred types:
 
 'updateConverted' @ [87:88] ==> val updateConverted: Statement defined in org.jetbrains.kotlin.j2k.ForConverter.execute[LocalVariableDescriptor]
 
-'Block' @ [88:21] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Block[FakeCallableDescriptorForObject]
-
 'of' @ [88:27] ==> public final fun of(statements: List<Statement>): Block defined in org.jetbrains.kotlin.j2k.ast.Block.Companion[SimpleFunctionDescriptorImpl]
 
 'statements' @ [88:30] ==> val statements: List<Statement> defined in org.jetbrains.kotlin.j2k.ForConverter.execute[LocalVariableDescriptor]
@@ -339,8 +335,6 @@ Inferred types:
 'body' @ [96:77] ==> val body: PsiStatement? defined in org.jetbrains.kotlin.j2k.ForConverter.execute[LocalVariableDescriptor]
 
 'updateConverted' @ [96:84] ==> val updateConverted: Statement defined in org.jetbrains.kotlin.j2k.ForConverter.execute[LocalVariableDescriptor]
-
-'Block' @ [97:17] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Block[FakeCallableDescriptorForObject]
 
 'of' @ [97:23] ==> public final fun of(statements: List<Statement>): Block defined in org.jetbrains.kotlin.j2k.ast.Block.Companion[SimpleFunctionDescriptorImpl]
 
@@ -460,7 +454,7 @@ Inferred types:
 
 'builder' @ [134:17] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ForConverter.WhileWithInitializationPseudoStatement.generateCode[ValueParameterDescriptorImpl]
 
-'append' @ [134:25] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [134:25] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'statements' @ [134:32] ==> private final val statements: List<Statement> defined in org.jetbrains.kotlin.j2k.ForConverter.WhileWithInitializationPseudoStatement[PropertyDescriptorImpl]
 
@@ -680,8 +674,6 @@ Inferred types:
 'specifyLocalVariableTypeByDefault' @ [182:53] ==> public final var specifyLocalVariableTypeByDefault: Boolean defined in org.jetbrains.kotlin.j2k.ConverterSettings[PropertyDescriptorImpl]
 
 'PrimitiveType' @ [183:25] ==> public constructor PrimitiveType(name: Identifier) defined in org.jetbrains.kotlin.j2k.ast.PrimitiveType[ClassConstructorDescriptorImpl]
-
-'Identifier' @ [183:39] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [183:50] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
@@ -942,8 +934,6 @@ Inferred types:
 
 'qualifier' @ [244:87] ==> val qualifier: PsiExpression? defined in org.jetbrains.kotlin.j2k.ForConverter.indicesIterationRange[LocalVariableDescriptor]
 
-'Identifier' @ [244:99] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'withNoPrototype' @ [244:110] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
 'collectionSize' @ [250:18] ==> val collectionSize: PsiExpression defined in org.jetbrains.kotlin.j2k.ForConverter.indicesIterationRange[LocalVariableDescriptor]
@@ -972,8 +962,6 @@ Inferred types:
 
 'qualifier' @ [254:79] ==> val qualifier: PsiExpression? defined in org.jetbrains.kotlin.j2k.ForConverter.indicesIterationRange[LocalVariableDescriptor]
 
-'Identifier' @ [254:91] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'withNoPrototype' @ [254:102] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
 'indices' @ [258:13] ==> var indices: Expression? defined in org.jetbrains.kotlin.j2k.ForConverter.indicesIterationRange[LocalVariableDescriptor]
@@ -986,8 +974,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Expression?
 
 'reversed' @ [260:20] ==> value-parameter reversed: Boolean defined in org.jetbrains.kotlin.j2k.ForConverter.indicesIterationRange[ValueParameterDescriptorImpl]
-
-'MethodCallExpression' @ [261:13] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[FakeCallableDescriptorForObject]
 
 'buildNonNull' @ [261:34] ==> public final fun buildNonNull(receiver: Expression?, methodName: String, argumentList: ArgumentList = ..., typeArguments: List<Type> = ..., dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 

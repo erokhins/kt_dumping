@@ -15,7 +15,7 @@ Inferred types:
 
 'addPrevious' @ [35:30] ==> public open fun <R : (JsStatement..JsStatement?)> addPrevious(p0: (MutableList<(JsVars..JsVars?)>..List<(JsVars..JsVars?)>?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsStatement..JsStatement?)> -> JsVars
+    <R : (JsStatement..JsStatement?)> -> (org.jetbrains.kotlin.js.backend.ast.JsVars..org.jetbrains.kotlin.js.backend.ast.JsVars?)
 
 'declarations' @ [35:42] ==> private final val declarations: ArrayList<JsVars> defined in org.jetbrains.kotlin.js.inline.context.NamingContext[PropertyDescriptorImpl]
 

@@ -8,7 +8,7 @@
 
 'aClass' @ [42:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTest.testStandardScriptWithParams[LocalVariableDescriptor]
 
-'captureOut' @ [43:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [43:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'tryConstructClassFromStringArgs' @ [44:25] ==> public fun tryConstructClassFromStringArgs(clazz: Class<*>, args: List<String>): Any? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
@@ -22,7 +22,7 @@ Inferred types:
 
 'anObj' @ [45:34] ==> val anObj: Any? defined in org.jetbrains.kotlin.scripts.ScriptTest.testStandardScriptWithParams.<anonymous>[LocalVariableDescriptor]
 
-'assertEqualsTrimmed' @ [47:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [47:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [47:29] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -38,7 +38,7 @@ Inferred types:
 
 'aClass' @ [52:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTest.testStandardScriptWithoutParams[LocalVariableDescriptor]
 
-'captureOut' @ [53:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [53:19] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'tryConstructClassFromStringArgs' @ [54:25] ==> public fun tryConstructClassFromStringArgs(clazz: Class<*>, args: List<String>): Any? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
@@ -52,7 +52,7 @@ Inferred types:
 
 'anObj' @ [55:34] ==> val anObj: Any? defined in org.jetbrains.kotlin.scripts.ScriptTest.testStandardScriptWithoutParams.<anonymous>[LocalVariableDescriptor]
 
-'assertEqualsTrimmed' @ [57:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [57:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [57:29] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -80,7 +80,7 @@ Inferred types:
 
 'aClass' @ [64:30] ==> val aClass: Class<*>? defined in org.jetbrains.kotlin.scripts.ScriptTest.testStandardScriptWithSaving[LocalVariableDescriptor]
 
-'captureOut' @ [65:20] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [65:20] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'tryConstructClassFromStringArgs' @ [66:25] ==> public fun tryConstructClassFromStringArgs(clazz: Class<*>, args: List<String>): Any? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
@@ -94,7 +94,7 @@ Inferred types:
 
 'anObj' @ [67:34] ==> val anObj: Any? defined in org.jetbrains.kotlin.scripts.ScriptTest.testStandardScriptWithSaving.<anonymous>[LocalVariableDescriptor]
 
-'assertEqualsTrimmed' @ [69:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [69:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [69:29] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -118,7 +118,7 @@ Inferred types:
 
 'classLoader' @ [70:89] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'savedClassLoader' @ [71:27] ==> val savedClassLoader: URLClassLoader defined in org.jetbrains.kotlin.scripts.ScriptTest.testStandardScriptWithSaving[LocalVariableDescriptor]
 
@@ -128,13 +128,13 @@ Inferred types:
 
 'name' @ [71:61] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'assertNotNull' @ [72:16] ==> public open fun assertNotNull(p0: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
 'aClassSaved' @ [72:30] ==> val aClassSaved: (Class<*>..Class<*>?) defined in org.jetbrains.kotlin.scripts.ScriptTest.testStandardScriptWithSaving[LocalVariableDescriptor]
 
-'captureOut' @ [73:20] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [73:20] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'tryConstructClassFromStringArgs' @ [74:30] ==> public fun tryConstructClassFromStringArgs(clazz: Class<*>, args: List<String>): Any? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
@@ -148,7 +148,7 @@ Inferred types:
 
 'anObjSaved' @ [75:34] ==> val anObjSaved: Any? defined in org.jetbrains.kotlin.scripts.ScriptTest.testStandardScriptWithSaving.<anonymous>[LocalVariableDescriptor]
 
-'assertEqualsTrimmed' @ [77:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'assertEqualsTrimmed' @ [77:9] ==> internal fun assertEqualsTrimmed(expected: String, actual: String): Unit defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NUM_4_LINE' @ [77:29] ==> internal const val NUM_4_LINE: String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[PropertyDescriptorImpl]
 
@@ -162,11 +162,11 @@ Inferred types:
 
 'assertEquals' @ [82:9] ==> public open fun assertEquals(p0: (String..String?), p1: (String..String?)): Unit defined in org.jetbrains.kotlin.test.testFramework.KtUsefulTestCase[JavaMethodDescriptor]
 
-'captureOut' @ [82:28] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'captureOut' @ [82:28] ==> internal fun captureOut(body: () -> Unit): String defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'tryConstructClassFromStringArgs' @ [83:13] ==> public fun tryConstructClassFromStringArgs(clazz: Class<*>, args: List<String>): Any? defined in org.jetbrains.kotlin.script[DeserializedSimpleFunctionDescriptor]
 
-'scriptClass' @ [83:45] ==> val scriptClass: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.scripts.ScriptTest.testUseCompilerInternals[LocalVariableDescriptor]
+'scriptClass' @ [83:45] ==> val scriptClass: Class<*> defined in org.jetbrains.kotlin.scripts.ScriptTest.testUseCompilerInternals[LocalVariableDescriptor]
 
 'emptyList' @ [83:58] ==> public fun <T> emptyList(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -178,8 +178,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> MessageCollector
 
 'suppressOutput' @ [95:21] ==> value-parameter suppressOutput: Boolean = ... defined in org.jetbrains.kotlin.scripts.ScriptTest.compileScript[ValueParameterDescriptorImpl]
-
-'MessageCollector' @ [95:37] ==> public companion object defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector[FakeCallableDescriptorForObject]
 
 'NONE' @ [95:54] ==> public final val NONE: MessageCollector defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector.Companion[DeserializedPropertyDescriptor]
 
@@ -201,7 +199,7 @@ Inferred types:
 
 'put' @ [101:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>, @NotNull p1: MessageCollector): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [101:52] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -217,7 +215,7 @@ Inferred types:
 
 'add' @ [103:27] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>, @NotNull p1: KotlinScriptDefinition): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinScriptDefinition
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)
 
 'SCRIPT_DEFINITIONS' @ [103:52] ==> public final val SCRIPT_DEFINITIONS: (CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>..CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -227,7 +225,7 @@ Inferred types:
 
 'put' @ [104:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'RETAIN_OUTPUT_IN_MEMORY' @ [104:52] ==> public final val RETAIN_OUTPUT_IN_MEMORY: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -237,7 +235,7 @@ Inferred types:
 
 'put' @ [106:31] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(File..File?)>, @NotNull p1: File): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'OUTPUT_DIRECTORY' @ [106:56] ==> public final val OUTPUT_DIRECTORY: (CompilerConfigurationKey<(File..File?)>..CompilerConfigurationKey<(File..File?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -263,11 +261,11 @@ Inferred types:
 
 'java' @ [112:91] ==> public val <T> KClass<out ScriptTest>.java: Class<out ScriptTest> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ScriptTest
+    <T> -> Captured(out ScriptTest)
 
 'classLoader' @ [112:96] ==> public final val <T : (Any..Any?)> Class<out ScriptTest>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScriptTest
+    <T : (Any..Any?)> -> Captured(out ScriptTest)
 
 'takeUnless' @ [112:108] ==> @InlineOnly @SinceKotlin public inline fun <T> (ClassLoader..ClassLoader?).takeUnless(predicate: ((ClassLoader..ClassLoader?)) -> Boolean): ClassLoader? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:

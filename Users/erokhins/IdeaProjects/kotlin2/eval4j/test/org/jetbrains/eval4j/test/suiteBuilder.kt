@@ -47,7 +47,7 @@ Inferred types:
 
 'exceptions' @ [43:81] ==> value-parameter exceptions: Array<out String>? defined in org.jetbrains.eval4j.test.buildTestSuite.<anonymous>.<no name provided>.visitMethod[ValueParameterDescriptorImpl]
 
-'buildTestCase' @ [45:40] ==> private fun buildTestCase(ownerClass: Class<TestData>, methodNode: MethodNode, create: (MethodNode, Class<out Any?>, InterpreterResult?) -> TestCase): TestCase? defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'buildTestCase' @ [45:40] ==> private fun buildTestCase(ownerClass: Class<TestData>, methodNode: MethodNode, create: (MethodNode, Class<out Any?>, InterpreterResult?) -> TestCase): TestCase? defined in org.jetbrains.eval4j.test in file suiteBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'ownerClass' @ [45:54] ==> val ownerClass: Class<TestData> defined in org.jetbrains.eval4j.test.buildTestSuite[LocalVariableDescriptor]
 
@@ -218,7 +218,7 @@ Inferred types:
 
 'java' @ [83:95] ==> public val <T> KClass<out Throwable>.java: Class<out Throwable> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Throwable
+    <T> -> Captured(out Throwable)
 
 'FROM_EVALUATOR' @ [83:148] ==> enum entry FROM_EVALUATOR defined in org.jetbrains.eval4j.ExceptionThrown.ExceptionKind[FakeCallableDescriptorForObject]
 

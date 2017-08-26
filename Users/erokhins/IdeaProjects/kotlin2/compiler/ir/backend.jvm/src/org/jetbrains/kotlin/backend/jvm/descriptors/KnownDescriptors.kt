@@ -12,15 +12,13 @@
 
 'modality' @ [45:16] ==> private final val modality: Modality defined in org.jetbrains.kotlin.backend.jvm.descriptors.KnownClassDescriptor[PropertyDescriptorImpl]
 
-'Modality' @ [45:28] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'SEALED' @ [45:37] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'this' @ [45:98] ==> <this> defined in org.jetbrains.kotlin.backend.jvm.descriptors.KnownClassDescriptor[LazyClassReceiverParameterDescriptor]
 
 'java' @ [45:110] ==> public val <T> KClass<out KnownClassDescriptor>.java: Class<out KnownClassDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KnownClassDescriptor
+    <T> -> Captured(out KnownClassDescriptor)
 
 'LazyClassReceiverParameterDescriptor' @ [53:43] ==> public constructor LazyClassReceiverParameterDescriptor(@NotNull p0: ClassDescriptor) defined in org.jetbrains.kotlin.descriptors.impl.LazyClassReceiverParameterDescriptor[JavaClassConstructorDescriptor]
 
@@ -170,8 +168,6 @@ Inferred types:
 'createWithDefaultBound' @ [109:53] ==> @NotNull public open fun createWithDefaultBound(@NotNull p0: DeclarationDescriptor, @NotNull p1: Annotations, p2: Boolean, @NotNull p3: Variance, @NotNull p4: Name, p5: Int): TypeParameterDescriptor defined in org.jetbrains.kotlin.descriptors.impl.TypeParameterDescriptorImpl[JavaMethodDescriptor]
 
 'classDescriptor' @ [110:33] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.descriptors.KnownClassDescriptor.Companion.createClassWithTypeParameters.<anonymous>[ValueParameterDescriptorImpl]
-
-'Annotations' @ [110:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [110:62] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

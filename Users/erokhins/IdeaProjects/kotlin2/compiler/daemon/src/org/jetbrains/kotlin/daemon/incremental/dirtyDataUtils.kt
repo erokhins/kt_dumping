@@ -5,6 +5,8 @@ Inferred types:
     <T> -> String
     <R> -> FqName
 
+'FqName' @ [25:57] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
+
 'dirtyLookupSymbols' @ [26:30] ==> public final val dirtyLookupSymbols: List<String> defined in org.jetbrains.kotlin.daemon.common.SimpleDirtyData[DeserializedPropertyDescriptor]
 
 'map' @ [26:49] ==> public inline fun <T, R> Iterable<String>.map(transform: (String) -> LookupSymbol): List<LookupSymbol> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -36,6 +38,8 @@ Inferred types:
 Inferred types:
     <T> -> FqName
     <R> -> String
+
+'asString' @ [33:82] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.FqName[JavaMethodDescriptor]
 
 'dirtyLookupSymbols' @ [34:49] ==> public final val dirtyLookupSymbols: Collection<LookupSymbol> defined in org.jetbrains.kotlin.incremental.DirtyData[DeserializedPropertyDescriptor]
 

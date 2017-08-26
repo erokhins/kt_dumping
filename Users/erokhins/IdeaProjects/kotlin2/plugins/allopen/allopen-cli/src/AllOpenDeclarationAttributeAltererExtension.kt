@@ -8,8 +8,6 @@ Inferred types:
 
 'currentModality' @ [47:13] ==> value-parameter currentModality: Modality defined in org.jetbrains.kotlin.allopen.AbstractAllOpenDeclarationAttributeAltererExtension.refineDeclarationModality[ValueParameterDescriptorImpl]
 
-'Modality' @ [47:32] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [47:41] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'declaration' @ [51:26] ==> value-parameter declaration: DeclarationDescriptor? defined in org.jetbrains.kotlin.allopen.AbstractAllOpenDeclarationAttributeAltererExtension.refineDeclarationModality[ValueParameterDescriptorImpl]
@@ -39,11 +37,7 @@ Inferred types:
 
 'FINAL_KEYWORD' @ [53:86] ==> public final val FINAL_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'Modality' @ [54:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [54:26] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
-'Modality' @ [56:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [56:26] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

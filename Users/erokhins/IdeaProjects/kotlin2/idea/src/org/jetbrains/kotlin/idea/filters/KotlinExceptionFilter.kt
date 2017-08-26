@@ -268,7 +268,7 @@ Inferred types:
 
 'component2' @ [116:38] ==> public final operator fun component2(): Int defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'mapStacktraceLineToSource' @ [117:17] ==> public fun mapStacktraceLineToSource(smapData: SmapData, line: Int, project: Project, lineKind: SourceLineKind, searchScope: GlobalSearchScope): Pair<KtFile, Int>? defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'mapStacktraceLineToSource' @ [117:17] ==> public fun mapStacktraceLineToSource(smapData: SmapData, line: Int, project: Project, lineKind: SourceLineKind, searchScope: GlobalSearchScope): Pair<KtFile, Int>? defined in org.jetbrains.kotlin.idea.debugger in file smapUtil.kt[SimpleFunctionDescriptorImpl]
 
 'smapData' @ [117:43] ==> val smapData: SmapData defined in org.jetbrains.kotlin.idea.filters.KotlinExceptionFilter.createHyperlinks[LocalVariableDescriptor]
 
@@ -292,7 +292,7 @@ Inferred types:
 
 'inlineFunctionBodyLine' @ [121:17] ==> val inlineFunctionBodyLine: Int defined in org.jetbrains.kotlin.idea.filters.KotlinExceptionFilter.createHyperlinks[LocalVariableDescriptor]
 
-'mapStacktraceLineToSource' @ [123:33] ==> public fun mapStacktraceLineToSource(smapData: SmapData, line: Int, project: Project, lineKind: SourceLineKind, searchScope: GlobalSearchScope): Pair<KtFile, Int>? defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'mapStacktraceLineToSource' @ [123:33] ==> public fun mapStacktraceLineToSource(smapData: SmapData, line: Int, project: Project, lineKind: SourceLineKind, searchScope: GlobalSearchScope): Pair<KtFile, Int>? defined in org.jetbrains.kotlin.idea.debugger in file smapUtil.kt[SimpleFunctionDescriptorImpl]
 
 'smapData' @ [123:59] ==> val smapData: SmapData defined in org.jetbrains.kotlin.idea.filters.KotlinExceptionFilter.createHyperlinks[LocalVariableDescriptor]
 

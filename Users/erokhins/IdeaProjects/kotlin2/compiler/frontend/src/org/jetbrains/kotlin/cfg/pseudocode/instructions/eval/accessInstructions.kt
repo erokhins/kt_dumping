@@ -44,7 +44,7 @@ Inferred types:
 
 'resultingDescriptor' @ [46:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'InstructionWithNext' @ [55:5] ==> public constructor InstructionWithNext(element: KtElement, blockScope: BlockScope) defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.InstructionWithNext[ClassConstructorDescriptorImpl]
 
@@ -140,7 +140,7 @@ Inferred types:
 
 'resultingDescriptor' @ [90:57] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'name' @ [92:12] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 

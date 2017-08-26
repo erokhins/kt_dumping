@@ -96,7 +96,11 @@ Inferred types:
 
 'TypeMismatchDiagnostic' @ [61:71] ==> public constructor TypeMismatchDiagnostic(callArgument: KotlinCallArgument, expectedType: KotlinType, actualType: KotlinType) defined in org.jetbrains.kotlin.resolve.calls.TypeMismatchDiagnostic[ClassConstructorDescriptorImpl]
 
+'expectedType' @ [61:95] ==> public final val expectedType: KotlinType defined in org.jetbrains.kotlin.resolve.calls.TypeMismatchDiagnostic[PropertyDescriptorImpl]
+
 'TypeMismatchDiagnostic' @ [61:109] ==> public constructor TypeMismatchDiagnostic(callArgument: KotlinCallArgument, expectedType: KotlinType, actualType: KotlinType) defined in org.jetbrains.kotlin.resolve.calls.TypeMismatchDiagnostic[ClassConstructorDescriptorImpl]
+
+'actualType' @ [61:133] ==> public final val actualType: KotlinType defined in org.jetbrains.kotlin.resolve.calls.TypeMismatchDiagnostic[PropertyDescriptorImpl]
 
 'diagnostic' @ [67:31] ==> value-parameter diagnostic: KotlinCallDiagnostic defined in org.jetbrains.kotlin.resolve.calls.CallDiagnosticToDiagnostic.toDiagnostic[ValueParameterDescriptorImpl]
 

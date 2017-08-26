@@ -20,7 +20,7 @@ Inferred types:
 
 'refElement' @ [57:52] ==> value-parameter refElement: PsiElement defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCallerTreeStructure.Companion.processReference[ValueParameterDescriptorImpl]
 
-'getCallHierarchyElement' @ [58:33] ==> public fun getCallHierarchyElement(element: PsiElement): KtElement? defined in org.jetbrains.kotlin.idea.hierarchy.calls[SimpleFunctionDescriptorImpl]
+'getCallHierarchyElement' @ [58:33] ==> public fun getCallHierarchyElement(element: PsiElement): KtElement? defined in org.jetbrains.kotlin.idea.hierarchy.calls in file callHierarchyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'refElement' @ [58:57] ==> value-parameter refElement: PsiElement defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCallerTreeStructure.Companion.processReference[ValueParameterDescriptorImpl]
 
@@ -48,7 +48,7 @@ Inferred types:
 
 'callerElement' @ [66:21] ==> var callerElement: PsiElement? defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCallerTreeStructure.Companion.processReference[LocalVariableDescriptor]
 
-'getCallHierarchyElement' @ [66:37] ==> public fun getCallHierarchyElement(element: PsiElement): KtElement? defined in org.jetbrains.kotlin.idea.hierarchy.calls[SimpleFunctionDescriptorImpl]
+'getCallHierarchyElement' @ [66:37] ==> public fun getCallHierarchyElement(element: PsiElement): KtElement? defined in org.jetbrains.kotlin.idea.hierarchy.calls in file callHierarchyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'callerElement' @ [66:61] ==> var callerElement: PsiElement? defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCallerTreeStructure.Companion.processReference[LocalVariableDescriptor]
 
@@ -56,7 +56,7 @@ Inferred types:
 
 'callerElement' @ [69:17] ==> var callerElement: PsiElement? defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCallerTreeStructure.Companion.processReference[LocalVariableDescriptor]
 
-'getOrCreateNodeDescriptor' @ [71:13] ==> internal fun getOrCreateNodeDescriptor(parent: HierarchyNodeDescriptor, originalElement: PsiElement, reference: PsiReference?, navigateToReference: Boolean, elementToDescriptorMap: MutableMap<PsiElement, NodeDescriptor<*>>, isJavaMap: Boolean): HierarchyNodeDescriptor? defined in org.jetbrains.kotlin.idea.hierarchy.calls[SimpleFunctionDescriptorImpl]
+'getOrCreateNodeDescriptor' @ [71:13] ==> internal fun getOrCreateNodeDescriptor(parent: HierarchyNodeDescriptor, originalElement: PsiElement, reference: PsiReference?, navigateToReference: Boolean, elementToDescriptorMap: MutableMap<PsiElement, NodeDescriptor<*>>, isJavaMap: Boolean): HierarchyNodeDescriptor? defined in org.jetbrains.kotlin.idea.hierarchy.calls in file callHierarchyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'nodeDescriptor' @ [71:39] ==> value-parameter nodeDescriptor: HierarchyNodeDescriptor defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCallerTreeStructure.Companion.processReference[ValueParameterDescriptorImpl]
 
@@ -200,7 +200,7 @@ Inferred types:
 
 'elementToSearch' @ [112:9] ==> val elementToSearch: KtDeclaration defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCallerTreeStructure.buildChildren[LocalVariableDescriptor]
 
-'processAllUsages' @ [112:25] ==> public fun KtDeclaration.processAllUsages(options: FindUsagesOptions, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.findUsages[SimpleFunctionDescriptorImpl]
+'processAllUsages' @ [112:25] ==> public fun KtDeclaration.processAllUsages(options: FindUsagesOptions, processor: (UsageInfo) -> Unit): Unit defined in org.jetbrains.kotlin.idea.findUsages in file findUsageUtils.kt[SimpleFunctionDescriptorImpl]
 
 'findOptions' @ [112:42] ==> val findOptions: JavaFindUsagesOptions defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCallerTreeStructure.buildChildren[LocalVariableDescriptor]
 
@@ -274,7 +274,9 @@ Inferred types:
     <T> -> CallableMemberDescriptor
     <R> -> Any
 
-'DescriptorToSourceUtilsIde' @ [125:35] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
+'?:' @ [125:35] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'getAnyDeclaration' @ [125:62] ==> public final fun getAnyDeclaration(project: Project, descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 

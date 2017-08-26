@@ -6,9 +6,9 @@
 
 'name' @ [35:79] ==> public final val name: String defined in org.jetbrains.kotlin.compiler.plugin.CliOption[DeserializedPropertyDescriptor]
 
-'cachedValue' @ [38:73] ==> private final fun <T> cachedValue(project: Project, result: () -> CachedValueProvider.Result<WeakHashMap<Module, List<String>>>): CachedValue<WeakHashMap<Module, List<String>>> defined in org.jetbrains.kotlin.noarg.ide.IdeNoArgDeclarationChecker[SimpleFunctionDescriptorImpl]
+'cachedValue' @ [38:73] ==> private final fun <T> cachedValue(project: Project, result: () -> CachedValueProvider.Result<(WeakHashMap<Module, List<String>>..WeakHashMap<Module, List<String>>?)>): CachedValue<(WeakHashMap<Module, List<String>>..WeakHashMap<Module, List<String>>?)> defined in org.jetbrains.kotlin.noarg.ide.IdeNoArgDeclarationChecker[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> WeakHashMap<Module, List<String>>
+    <T> -> (java.util.WeakHashMap<com.intellij.openapi.module.Module, kotlin.collections.List<kotlin.String>>..java.util.WeakHashMap<com.intellij.openapi.module.Module, kotlin.collections.List<kotlin.String>>?)
 
 'project' @ [38:85] ==> public final val project: Project defined in org.jetbrains.kotlin.noarg.ide.IdeNoArgDeclarationChecker[PropertyDescriptorImpl]
 
@@ -68,7 +68,7 @@ Inferred types:
 
 'createCachedValue' @ [50:56] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(T..T?)>?, p1: Boolean): CachedValue<(T..T?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'result' @ [50:74] ==> value-parameter result: () -> CachedValueProvider.Result<T> defined in org.jetbrains.kotlin.noarg.ide.IdeNoArgDeclarationChecker.cachedValue[ValueParameterDescriptorImpl]
 

@@ -26,9 +26,9 @@
 
 'show' @ [48:15] ==> public open fun show(): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction.ui.KotlinExtractFunctionDialog[JavaMethodDescriptor]
 
-'?:' @ [58:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<PsiElement>?, right: List<PsiElement>): List<PsiElement>[SimpleFunctionDescriptorImpl]
+'?:' @ [58:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<(PsiElement..PsiElement?)>?, right: List<(PsiElement..PsiElement?)>): List<(PsiElement..PsiElement?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<PsiElement>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>
 
 'elements' @ [58:33] ==> value-parameter elements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction.ExtractKotlinFunctionHandler.doInvoke[ValueParameterDescriptorImpl]
 
@@ -44,7 +44,7 @@ Inferred types:
 
 'file' @ [59:45] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction.ExtractKotlinFunctionHandler.doInvoke[ValueParameterDescriptorImpl]
 
-'adjustedElements' @ [59:51] ==> val adjustedElements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction.ExtractKotlinFunctionHandler.doInvoke[LocalVariableDescriptor]
+'adjustedElements' @ [59:51] ==> val adjustedElements: List<(PsiElement..PsiElement?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction.ExtractKotlinFunctionHandler.doInvoke[LocalVariableDescriptor]
 
 'toRange' @ [59:68] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching[DeserializedSimpleFunctionDescriptor]
 
@@ -60,7 +60,7 @@ Inferred types:
 
 'extractionData' @ [60:46] ==> val extractionData: ExtractionData defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction.ExtractKotlinFunctionHandler.doInvoke[LocalVariableDescriptor]
 
-'processDuplicates' @ [61:13] ==> public fun processDuplicates(duplicateReplacers: Map<KotlinPsiRange, () -> Unit>, project: Project, editor: Editor, scopeDescription: String = ..., usageDescription: String = ...): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'processDuplicates' @ [61:13] ==> public fun processDuplicates(duplicateReplacers: Map<KotlinPsiRange, () -> Unit>, project: Project, editor: Editor, scopeDescription: String = ..., usageDescription: String = ...): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file duplicateUtil.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [61:31] ==> value-parameter it: ExtractionResult defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction.ExtractKotlinFunctionHandler.doInvoke.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -72,7 +72,7 @@ Inferred types:
 
 'editor' @ [61:68] ==> value-parameter editor: Editor defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction.ExtractKotlinFunctionHandler.doInvoke[ValueParameterDescriptorImpl]
 
-'selectElementsWithTargetSibling' @ [66:9] ==> public fun selectElementsWithTargetSibling(operationName: String, editor: Editor, file: KtFile, title: String, elementKinds: Collection<CodeInsightUtils.ElementKind>, getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement>, continuation: (elements: List<PsiElement>, targetSibling: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce[SimpleFunctionDescriptorImpl]
+'selectElementsWithTargetSibling' @ [66:9] ==> public fun selectElementsWithTargetSibling(operationName: String, editor: Editor, file: KtFile, title: String, elementKinds: Collection<CodeInsightUtils.ElementKind>, getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement>, continuation: (elements: List<PsiElement>, targetSibling: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'EXTRACT_FUNCTION' @ [67:17] ==> public val EXTRACT_FUNCTION: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction in file ExtractKotlinFunctionHandler.kt[PropertyDescriptorImpl]
 
@@ -88,7 +88,7 @@ Inferred types:
 
 'parent' @ [72:39] ==> value-parameter parent: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction.ExtractKotlinFunctionHandler.selectElements.<anonymous>[ValueParameterDescriptorImpl]
 
-'getExtractionContainers' @ [72:46] ==> public fun PsiElement.getExtractionContainers(strict: Boolean = ..., includeAll: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getExtractionContainers' @ [72:46] ==> public fun PsiElement.getExtractionContainers(strict: Boolean = ..., includeAll: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'elements' @ [72:70] ==> value-parameter elements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractFunction.ExtractKotlinFunctionHandler.selectElements.<anonymous>[ValueParameterDescriptorImpl]
 

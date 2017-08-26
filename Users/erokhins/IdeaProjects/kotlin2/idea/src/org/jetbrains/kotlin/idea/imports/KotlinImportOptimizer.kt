@@ -1,6 +1,6 @@
 'file' @ [47:45] ==> value-parameter file: PsiFile? defined in org.jetbrains.kotlin.idea.imports.KotlinImportOptimizer.supports[ValueParameterDescriptorImpl]
 
-'Runnable' @ [49:48] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [49:48] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'OptimizeProcess' @ [50:9] ==> public constructor OptimizeProcess(file: KtFile) defined in org.jetbrains.kotlin.idea.imports.KotlinImportOptimizer.OptimizeProcess[ClassConstructorDescriptorImpl]
 

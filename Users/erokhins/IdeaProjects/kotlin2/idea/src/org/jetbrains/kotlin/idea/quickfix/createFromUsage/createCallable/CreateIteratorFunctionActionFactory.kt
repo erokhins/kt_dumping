@@ -4,7 +4,7 @@ Inferred types:
 
 'getParentElementOfType' @ [37:29] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtForExpression..KtForExpression?)>..Class<(KtForExpression..KtForExpression?)>?)): KtForExpression? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtForExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtForExpression..org.jetbrains.kotlin.psi.KtForExpression?)
 
 'diagnostic' @ [37:52] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateIteratorFunctionActionFactory.getElementOfInterest[ValueParameterDescriptorImpl]
 
@@ -22,9 +22,9 @@ Inferred types:
 
 'loopRange' @ [42:36] ==> public final val KtForExpression.loopRange: KtExpression?[MyPropertyDescriptor]
 
-'?:' @ [43:43] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: {ASTDelegatePsiElement & KtDeclaration & KtValVarKeywordOwner}?, right: {ASTDelegatePsiElement & KtDeclaration & KtValVarKeywordOwner}): {ASTDelegatePsiElement & KtDeclaration & KtValVarKeywordOwner}[SimpleFunctionDescriptorImpl]
+'?:' @ [43:43] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> {ASTDelegatePsiElement & KtDeclaration & KtValVarKeywordOwner}
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'element' @ [43:44] ==> value-parameter element: KtForExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateIteratorFunctionActionFactory.createCallableInfo[ValueParameterDescriptorImpl]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'variableExpr' @ [49:43] ==> val variableExpr: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateIteratorFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
-'guessTypes' @ [49:56] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [49:56] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [49:67] ==> val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateIteratorFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
@@ -74,7 +74,7 @@ Inferred types:
 
 'singletonList' @ [53:50] ==> public open fun <T : (Any..Any?)> singletonList(p0: (TypeProjectionImpl..TypeProjectionImpl?)): (MutableList<(TypeProjectionImpl..TypeProjectionImpl?)>..List<(TypeProjectionImpl..TypeProjectionImpl?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeProjectionImpl
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.TypeProjectionImpl..org.jetbrains.kotlin.types.TypeProjectionImpl?)
 
 'returnJetTypeParameterType' @ [53:64] ==> val returnJetTypeParameterType: TypeProjectionImpl defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateIteratorFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
@@ -107,8 +107,6 @@ Inferred types:
 'OUT_VARIANCE' @ [59:62] ==> enum entry OUT_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
 'FunctionInfo' @ [60:16] ==> public constructor FunctionInfo(name: String, receiverTypeInfo: TypeInfo, returnTypeInfo: TypeInfo, possibleContainers: List<KtElement> = ..., parameterInfos: List<ParameterInfo> = ..., typeParameterInfos: List<TypeInfo> = ..., isOperator: Boolean = ..., isInfix: Boolean = ..., isAbstract: Boolean = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.FunctionInfo[ClassConstructorDescriptorImpl]
-
-'OperatorNameConventions' @ [60:29] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'ITERATOR' @ [60:53] ==> @field:JvmField public final val ITERATOR: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 

@@ -48,13 +48,13 @@
 
 'navigationElement' @ [51:86] ==> val navigationElement: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.resolve.AbstractReferenceToCompiledKotlinResolveInJavaTest.checkResolvedTo[LocalVariableDescriptor]
 
-'java' @ [51:111] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [51:111] ==> public val <T> KClass<out (PsiElement..PsiElement?)>.java: Class<out (PsiElement..PsiElement?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
 
-'simpleName' @ [51:116] ==> public final val <T : (Any..Any?)> Class<out PsiElement>.simpleName: (String..String?)[MyPropertyDescriptor]
+'simpleName' @ [51:116] ==> public final val <T : (Any..Any?)> Class<out (PsiElement..PsiElement?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
 
 'navigationElement' @ [51:130] ==> val navigationElement: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.resolve.AbstractReferenceToCompiledKotlinResolveInJavaTest.checkResolvedTo[LocalVariableDescriptor]
 
@@ -62,13 +62,13 @@ Inferred types:
 
 'navigationElement' @ [52:86] ==> val navigationElement: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.resolve.AbstractReferenceToCompiledKotlinResolveInJavaTest.checkResolvedTo[LocalVariableDescriptor]
 
-'java' @ [52:111] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [52:111] ==> public val <T> KClass<out (PsiElement..PsiElement?)>.java: Class<out (PsiElement..PsiElement?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
 
-'simpleName' @ [52:116] ==> public final val <T : (Any..Any?)> Class<out PsiElement>.simpleName: (String..String?)[MyPropertyDescriptor]
+'simpleName' @ [52:116] ==> public final val <T : (Any..Any?)> Class<out (PsiElement..PsiElement?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
 
 'navigationElement' @ [52:130] ==> val navigationElement: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.resolve.AbstractReferenceToCompiledKotlinResolveInJavaTest.checkResolvedTo[LocalVariableDescriptor]
 

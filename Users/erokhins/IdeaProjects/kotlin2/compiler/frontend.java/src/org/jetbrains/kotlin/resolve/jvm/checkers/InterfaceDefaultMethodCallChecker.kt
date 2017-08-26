@@ -1,14 +1,12 @@
 'jvmTarget' @ [36:31] ==> public final val jvmTarget: JvmTarget defined in org.jetbrains.kotlin.resolve.jvm.checkers.InterfaceDefaultMethodCallChecker[PropertyDescriptorImpl]
 
-'JvmTarget' @ [36:44] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_8' @ [36:54] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'resolvedCall' @ [38:26] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.resolve.jvm.checkers.InterfaceDefaultMethodCallChecker.check[ValueParameterDescriptorImpl]
 
 'resultingDescriptor' @ [38:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 '!' @ [40:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -44,7 +42,7 @@ Inferred types:
 
 'call' @ [47:49] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 '!' @ [49:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -74,7 +72,7 @@ Inferred types:
 
 'getParentOfType' @ [55:46] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(ClassifierDescriptor..ClassifierDescriptor?)>): ClassifierDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> ClassifierDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ClassifierDescriptor..org.jetbrains.kotlin.descriptors.ClassifierDescriptor?)
 
 'context' @ [55:62] ==> value-parameter context: CallCheckerContext defined in org.jetbrains.kotlin.resolve.jvm.checkers.InterfaceDefaultMethodCallChecker.check[ValueParameterDescriptorImpl]
 

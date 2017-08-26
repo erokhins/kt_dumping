@@ -10,7 +10,7 @@
 
 'replaceMe' @ [25:13] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpression..JsExpression?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpression
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'replacement' @ [25:23] ==> val replacement: JsExpression defined in org.jetbrains.kotlin.js.inline.util.rewriters.NameReplacingVisitor.endVisit[LocalVariableDescriptor]
 
@@ -44,7 +44,7 @@ Inferred types:
 
 'replaceMe' @ [32:17] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsNode..JsNode?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsNode
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'replacementVar' @ [32:27] ==> val replacementVar: JsVars.JsVar defined in org.jetbrains.kotlin.js.inline.util.rewriters.NameReplacingVisitor.endVisit[LocalVariableDescriptor]
 
@@ -76,7 +76,7 @@ Inferred types:
 
 'replaceMe' @ [40:17] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsLabel..JsLabel?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsLabel
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsLabel..org.jetbrains.kotlin.js.backend.ast.JsLabel?)
 
 'replacementLabel' @ [40:27] ==> val replacementLabel: JsLabel defined in org.jetbrains.kotlin.js.inline.util.rewriters.NameReplacingVisitor.endVisit[LocalVariableDescriptor]
 

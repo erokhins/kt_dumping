@@ -10,9 +10,9 @@
 
 'NULL' @ [31:81] ==> public final val NULL: (KtNodeType..KtNodeType?) defined in org.jetbrains.kotlin.KtNodeTypes[JavaPropertyDescriptor]
 
-'lz' @ [33:27] ==> internal fun <T> lz(initializer: () -> Any?): Lazy<Any?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [33:27] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> T
 
 'evaluate' @ [33:32] ==> public open fun evaluate(): Any? defined in org.jetbrains.uast.kotlin.KotlinULiteralExpression[DeserializedSimpleFunctionDescriptor]
 

@@ -277,7 +277,7 @@ Inferred types:
 
 'java' @ [90:55] ==> public val <T> KClass<out IReplStageState<T1>>.java: Class<out IReplStageState<T1>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IReplStageState<T1>
+    <T> -> Captured(out IReplStageState<T1>)
 
 'state1' @ [90:64] ==> public final val state1: IReplStageState<T1> defined in org.jetbrains.kotlin.cli.common.repl.AggregatedReplStageState[PropertyDescriptorImpl]
 
@@ -289,7 +289,7 @@ Inferred types:
 
 'java' @ [91:55] ==> public val <T> KClass<out IReplStageState<T2>>.java: Class<out IReplStageState<T2>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IReplStageState<T2>
+    <T> -> Captured(out IReplStageState<T2>)
 
 'state2' @ [91:64] ==> public final val state2: IReplStageState<T2> defined in org.jetbrains.kotlin.cli.common.repl.AggregatedReplStageState[PropertyDescriptorImpl]
 

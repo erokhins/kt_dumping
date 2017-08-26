@@ -44,7 +44,7 @@
 
 'addSourceRoot' @ [46:16] ==> @NotNull public abstract fun <P : (JpsElement..JpsElement?)> addSourceRoot(@NotNull p0: String, @NotNull p1: JpsModuleSourceRootType<(JavaSourceRootProperties..JavaSourceRootProperties?)>): JpsModuleSourceRoot defined in org.jetbrains.jps.model.module.JpsModule[JavaMethodDescriptor]
 Inferred types:
-    <P : (JpsElement..JpsElement?)> -> JavaSourceRootProperties
+    <P : (JpsElement..JpsElement?)> -> (org.jetbrains.jps.model.java.JavaSourceRootProperties..org.jetbrains.jps.model.java.JavaSourceRootProperties?)
 
 'newSourceRoot' @ [46:30] ==> val newSourceRoot: String defined in org.jetbrains.kotlin.jps.build.IncrementalProjectPathCaseChangedTest.performAdditionalModifications[LocalVariableDescriptor]
 

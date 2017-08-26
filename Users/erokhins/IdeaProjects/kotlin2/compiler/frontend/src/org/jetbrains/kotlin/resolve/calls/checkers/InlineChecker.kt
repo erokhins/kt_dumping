@@ -53,7 +53,7 @@ Inferred types:
 
 'call' @ [61:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'calleeExpression' @ [61:44] ==> public final val Call.calleeExpression: KtExpression?[MyPropertyDescriptor]
 
@@ -65,15 +65,13 @@ Inferred types:
 
 'supportsFeature' @ [62:69] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [62:85] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'InlineDefaultFunctionalParameters' @ [62:101] ==> enum entry InlineDefaultFunctionalParameters defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'resolvedCall' @ [65:32] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.resolve.calls.checkers.InlineChecker.check[ValueParameterDescriptorImpl]
 
 'resultingDescriptor' @ [65:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'checkCallWithReceiver' @ [66:9] ==> private final fun checkCallWithReceiver(context: CallCheckerContext, targetDescriptor: CallableDescriptor, receiver: ReceiverValue?, expression: KtExpression?): Unit defined in org.jetbrains.kotlin.resolve.calls.checkers.InlineChecker[SimpleFunctionDescriptorImpl]
 
@@ -85,7 +83,7 @@ Inferred types:
 
 'dispatchReceiver' @ [66:71] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'expression' @ [66:89] ==> val expression: KtExpression defined in org.jetbrains.kotlin.resolve.calls.checkers.InlineChecker.check[LocalVariableDescriptor]
 
@@ -99,7 +97,7 @@ Inferred types:
 
 'extensionReceiver' @ [67:71] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'expression' @ [67:90] ==> val expression: KtExpression defined in org.jetbrains.kotlin.resolve.calls.checkers.InlineChecker.check[LocalVariableDescriptor]
 
@@ -164,7 +162,7 @@ Inferred types:
 
 'valueArguments' @ [76:55] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'value' @ [77:17] ==> val value: (ResolvedValueArgument..ResolvedValueArgument?) defined in org.jetbrains.kotlin.resolve.calls.checkers.InlineChecker.check[LocalVariableDescriptor]
 
@@ -485,7 +483,7 @@ Inferred types:
 
 'expression' @ [190:24] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.resolve.calls.checkers.InlineChecker.getCalleeDescriptor[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [190:35] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [190:35] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [190:51] ==> value-parameter context: CallCheckerContext defined in org.jetbrains.kotlin.resolve.calls.checkers.InlineChecker.getCalleeDescriptor[ValueParameterDescriptorImpl]
 
@@ -509,7 +507,7 @@ Inferred types:
 
 'resultingDescriptor' @ [194:26] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'isInvokeOrInlineExtension' @ [203:29] ==> private final fun isInvokeOrInlineExtension(descriptor: CallableDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.calls.checkers.InlineChecker[SimpleFunctionDescriptorImpl]
 
@@ -583,8 +581,6 @@ Inferred types:
 'descriptor' @ [228:24] ==> value-parameter descriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.calls.checkers.InlineChecker.isInvokeOrInlineExtension[ValueParameterDescriptorImpl]
 
 'getName' @ [228:35] ==> @NotNull public abstract fun getName(): Name defined in org.jetbrains.kotlin.descriptors.CallableDescriptor[JavaMethodDescriptor]
-
-'OperatorNameConventions' @ [228:48] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'INVOKE' @ [228:72] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -746,7 +742,7 @@ Inferred types:
 
 'getParentOfType' @ [282:38] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(DeclarationDescriptorWithVisibility..DeclarationDescriptorWithVisibility?)>): DeclarationDescriptorWithVisibility? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> DeclarationDescriptorWithVisibility
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptorWithVisibility..org.jetbrains.kotlin.descriptors.DeclarationDescriptorWithVisibility?)
 
 'parent' @ [282:54] ==> var parent: DeclarationDescriptorWithVisibility? defined in org.jetbrains.kotlin.resolve.calls.checkers.InlineChecker.isDefinedInInlineFunction[LocalVariableDescriptor]
 

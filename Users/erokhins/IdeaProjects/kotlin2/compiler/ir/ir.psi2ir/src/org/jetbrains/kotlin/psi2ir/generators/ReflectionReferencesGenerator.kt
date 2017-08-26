@@ -97,7 +97,7 @@ Inferred types:
 
 'typeClass' @ [49:74] ==> val typeClass: ClassifierDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.ReflectionReferencesGenerator.generateClassLiteral[LocalVariableDescriptor]
 
-'getResolvedCall' @ [54:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [54:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'ktCallableReference' @ [54:44] ==> value-parameter ktCallableReference: KtCallableReferenceExpression defined in org.jetbrains.kotlin.psi2ir.generators.ReflectionReferencesGenerator.generateCallableReference[ValueParameterDescriptorImpl]
 
@@ -107,7 +107,7 @@ Inferred types:
 
 'resultingDescriptor' @ [56:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resultingDescriptor' @ [57:44] ==> val resultingDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.ReflectionReferencesGenerator.generateCallableReference[LocalVariableDescriptor]
 
@@ -137,13 +137,13 @@ Inferred types:
 
 'dispatchReceiver' @ [66:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [66:48] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.psi2ir.generators.ReflectionReferencesGenerator.generateCallableReference[LocalVariableDescriptor]
 
 'extensionReceiver' @ [66:61] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'call' @ [68:11] ==> public abstract fun call(withDispatchAndExtensionReceivers: (IntermediateValue?, IntermediateValue?) -> IrExpression): IrExpression defined in org.jetbrains.kotlin.psi2ir.intermediate.CallReceiver[SimpleFunctionDescriptorImpl]
 

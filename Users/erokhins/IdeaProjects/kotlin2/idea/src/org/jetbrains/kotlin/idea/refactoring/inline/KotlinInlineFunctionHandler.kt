@@ -152,7 +152,7 @@ Inferred types:
 
 'resultingDescriptor' @ [93:55] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [94:16] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineFunctionHandler.includesCallOf[ValueParameterDescriptorImpl]
 
@@ -176,5 +176,5 @@ Inferred types:
 
 'resultingDescriptor' @ [95:78] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 

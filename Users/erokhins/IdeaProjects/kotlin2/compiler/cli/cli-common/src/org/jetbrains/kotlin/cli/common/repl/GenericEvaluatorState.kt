@@ -12,7 +12,7 @@ Inferred types:
 
 'get' @ [29:105] ==> public final fun get(): Int defined in java.util.concurrent.atomic.AtomicInteger[JavaMethodDescriptor]
 
-'makeReplClassLoader' @ [31:43] ==> internal fun makeReplClassLoader(baseClassloader: ClassLoader?, baseClasspath: Iterable<File>): ReplClassLoader defined in org.jetbrains.kotlin.cli.common.repl[SimpleFunctionDescriptorImpl]
+'makeReplClassLoader' @ [31:43] ==> internal fun makeReplClassLoader(baseClassloader: ClassLoader?, baseClasspath: Iterable<File>): ReplClassLoader defined in org.jetbrains.kotlin.cli.common.repl in file GenericEvaluatorState.kt[SimpleFunctionDescriptorImpl]
 
 'baseClassloader' @ [31:63] ==> value-parameter baseClassloader: ClassLoader? defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluatorState.<init>[ValueParameterDescriptorImpl]
 
@@ -32,11 +32,11 @@ Inferred types:
 
 'classLoader' @ [34:31] ==> public final val classLoader: ClassLoader defined in org.jetbrains.kotlin.cli.common.repl.EvalClassWithInstanceAndLoader[PropertyDescriptorImpl]
 
-'listAllUrlsAsFiles' @ [34:44] ==> internal fun ClassLoader.listAllUrlsAsFiles(): List<File> defined in org.jetbrains.kotlin.cli.common.repl[SimpleFunctionDescriptorImpl]
+'listAllUrlsAsFiles' @ [34:44] ==> internal fun ClassLoader.listAllUrlsAsFiles(): List<File> defined in org.jetbrains.kotlin.cli.common.repl in file replUtil.kt[SimpleFunctionDescriptorImpl]
 
 'topClassLoader' @ [35:12] ==> public final val topClassLoader: ReplClassLoader defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluatorState[PropertyDescriptorImpl]
 
-'listAllUrlsAsFiles' @ [35:27] ==> internal fun ClassLoader.listAllUrlsAsFiles(): List<File> defined in org.jetbrains.kotlin.cli.common.repl[SimpleFunctionDescriptorImpl]
+'listAllUrlsAsFiles' @ [35:27] ==> internal fun ClassLoader.listAllUrlsAsFiles(): List<File> defined in org.jetbrains.kotlin.cli.common.repl in file replUtil.kt[SimpleFunctionDescriptorImpl]
 
 'ReplClassLoader' @ [40:9] ==> public constructor ReplClassLoader(@NotNull parent: ClassLoader) defined in org.jetbrains.kotlin.cli.common.repl.ReplClassLoader[JavaClassConstructorDescriptor]
 

@@ -39,7 +39,7 @@ Inferred types:
 
 'addAll' @ [50:24] ==> public abstract fun addAll(elements: Collection<JsName>): Boolean defined in kotlin.collections.MutableSet[DeserializedSimpleFunctionDescriptor]
 
-'collectDefinedNames' @ [50:31] ==> public fun collectDefinedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectDefinedNames' @ [50:31] ==> public fun collectDefinedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'root' @ [50:51] ==> private final val root: JsBlock defined in org.jetbrains.kotlin.js.inline.clean.TemporaryAssignmentElimination[PropertyDescriptorImpl]
 
@@ -123,7 +123,7 @@ Inferred types:
 
 'target' @ [78:26] ==> val target: (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryAssignmentElimination.analyze.<no name provided>.visitExpressionStatement[LocalVariableDescriptor]
 
-'canHaveSideEffect' @ [78:33] ==> public fun JsExpression.canHaveSideEffect(localVars: Set<JsName>): Boolean defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'canHaveSideEffect' @ [78:33] ==> public fun JsExpression.canHaveSideEffect(localVars: Set<JsName>): Boolean defined in org.jetbrains.kotlin.js.inline.util in file sideEffectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'namesToProcess' @ [78:51] ==> private final val namesToProcess: MutableSet<JsName> defined in org.jetbrains.kotlin.js.inline.clean.TemporaryAssignmentElimination[PropertyDescriptorImpl]
 
@@ -234,7 +234,7 @@ Inferred types:
 
 'x' @ [118:17] ==> value-parameter x: JsFunction defined in org.jetbrains.kotlin.js.inline.clean.TemporaryAssignmentElimination.analyze.<no name provided>.visitFunction[ValueParameterDescriptorImpl]
 
-'collectFreeVariables' @ [118:19] ==> public fun JsFunction.collectFreeVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectFreeVariables' @ [118:19] ==> public fun JsFunction.collectFreeVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'forEach' @ [118:42] ==> @HidesMembers public inline fun <T> Iterable<JsName>.forEach(action: (JsName) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -683,7 +683,7 @@ Inferred types:
 
 'replaceMe' @ [213:29] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsStatement..JsStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsStatement
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'replacement' @ [213:39] ==> val replacement: JsStatement defined in org.jetbrains.kotlin.js.inline.clean.TemporaryAssignmentElimination.process.<no name provided>.visit[LocalVariableDescriptor]
 
@@ -739,7 +739,7 @@ Inferred types:
 
 'accept' @ [240:11] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsBlock..JsBlock?)): (JsBlock..JsBlock?) defined in org.jetbrains.kotlin.js.inline.clean.TemporaryAssignmentElimination.process.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsBlock
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsBlock..org.jetbrains.kotlin.js.backend.ast.JsBlock?)
 
 'root' @ [240:18] ==> private final val root: JsBlock defined in org.jetbrains.kotlin.js.inline.clean.TemporaryAssignmentElimination[PropertyDescriptorImpl]
 

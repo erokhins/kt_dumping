@@ -8,13 +8,9 @@ Inferred types:
 
 'addJvmClasspathRoots' @ [53:9] ==> public fun CompilerConfiguration.addJvmClasspathRoots(files: List<File>): Unit defined in org.jetbrains.kotlin.cli.jvm.config[DeserializedSimpleFunctionDescriptor]
 
-'PathUtil' @ [53:30] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'getJdkClassesRootsFromCurrentJre' @ [53:39] ==> @JvmStatic public final fun getJdkClassesRootsFromCurrentJre(): List<File> defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedSimpleFunctionDescriptor]
 
 'addJvmClasspathRoots' @ [54:9] ==> public fun CompilerConfiguration.addJvmClasspathRoots(files: List<File>): Unit defined in org.jetbrains.kotlin.cli.jvm.config[DeserializedSimpleFunctionDescriptor]
-
-'PathUtil' @ [54:30] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'kotlinPathsForCompiler' @ [54:39] ==> @JvmStatic public final val kotlinPathsForCompiler: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
@@ -45,9 +41,7 @@ Inferred types:
 
 'put' @ [56:9] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [56:13] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [56:37] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -55,11 +49,7 @@ Inferred types:
 
 'LanguageVersionSettingsImpl' @ [57:35] ==> @JvmOverloads public constructor LanguageVersionSettingsImpl(languageVersion: LanguageVersion, apiVersion: ApiVersion, analysisFlags: Map<AnalysisFlag<*>, Any?> = ..., specificFeatures: Map<LanguageFeature, LanguageFeature.State> = ...) defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[DeserializedClassConstructorDescriptor]
 
-'LanguageVersion' @ [58:17] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'LATEST_STABLE' @ [58:33] ==> @field:JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[DeserializedPropertyDescriptor]
-
-'ApiVersion' @ [58:48] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [58:59] ==> @field:JvmField public final val LATEST_STABLE: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -95,11 +85,11 @@ Inferred types:
 
 'java' @ [63:115] ==> public val <T> KClass<out KotlinJvmReplService>.java: Class<out KotlinJvmReplService> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinJvmReplService
+    <T> -> Captured(out KotlinJvmReplService)
 
 'classLoader' @ [63:120] ==> public final val <T : (Any..Any?)> Class<out KotlinJvmReplService>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinJvmReplService
+    <T : (Any..Any?)> -> Captured(out KotlinJvmReplService)
 
 'classloader' @ [66:23] ==> val classloader: URLClassLoader defined in org.jetbrains.kotlin.daemon.KotlinJvmReplService.makeScriptDefinition[LocalVariableDescriptor]
 
@@ -113,7 +103,7 @@ Inferred types:
 
 'kotlin' @ [67:71] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'emptyMap' @ [67:91] ==> public fun <K, V> emptyMap(): Map<String, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -174,9 +164,9 @@ Inferred types:
 
 'templateClassName' @ [81:69] ==> value-parameter templateClassName: String defined in org.jetbrains.kotlin.daemon.KotlinJvmReplService.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [83:48] ==> public fun <T> lazy(initializer: () -> GenericReplCompiler?): Lazy<GenericReplCompiler?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [83:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> GenericReplCompiler?
+    <T> -> T
 
 'if (scriptDef == null) null
         else GenericReplCompiler(disposable, scriptDef, configuration, messageCollector)' @ [84:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: GenericReplCompiler?, elseBranch: GenericReplCompiler?): GenericReplCompiler?[SimpleFunctionDescriptorImpl]
@@ -206,9 +196,9 @@ Inferred types:
 
 'Deprecated' @ [92:5] ==> public constructor Deprecated(message: String, replaceWith: ReplaceWith = ..., level: DeprecationLevel = ...) defined in kotlin.Deprecated[DeserializedClassConstructorDescriptor]
 
-'lazy' @ [93:70] ==> public fun <T> lazy(initializer: () -> RemoteReplStateFacadeServer): Lazy<RemoteReplStateFacadeServer> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [93:70] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> RemoteReplStateFacadeServer
+    <T> -> T
 
 'createRemoteState' @ [93:77] ==> public final fun createRemoteState(port: Int = ...): RemoteReplStateFacadeServer defined in org.jetbrains.kotlin.daemon.KotlinJvmReplService[SimpleFunctionDescriptorImpl]
 
@@ -232,8 +222,6 @@ Inferred types:
 
 'codeLine' @ [101:47] ==> value-parameter codeLine: ReplCodeLine defined in org.jetbrains.kotlin.daemon.KotlinJvmReplService.check[ValueParameterDescriptorImpl]
 
-'ReplCheckResult' @ [101:60] ==> public companion object defined in org.jetbrains.kotlin.cli.common.repl.ReplCheckResult[FakeCallableDescriptorForObject]
-
 'Error' @ [101:76] ==> public constructor Error(message: String, location: CompilerMessageLocation? = ...) defined in org.jetbrains.kotlin.cli.common.repl.ReplCheckResult.Error[DeserializedClassConstructorDescriptor]
 
 'operationsTracer' @ [104:13] ==> @Deprecated protected final val operationsTracer: RemoteOperationsTracer? defined in org.jetbrains.kotlin.daemon.KotlinJvmReplService[PropertyDescriptorImpl]
@@ -251,8 +239,6 @@ Inferred types:
 'state' @ [111:42] ==> value-parameter state: IReplStageState<*> defined in org.jetbrains.kotlin.daemon.KotlinJvmReplService.compile[ValueParameterDescriptorImpl]
 
 'codeLine' @ [111:49] ==> value-parameter codeLine: ReplCodeLine defined in org.jetbrains.kotlin.daemon.KotlinJvmReplService.compile[ValueParameterDescriptorImpl]
-
-'ReplCompileResult' @ [111:62] ==> public companion object defined in org.jetbrains.kotlin.cli.common.repl.ReplCompileResult[FakeCallableDescriptorForObject]
 
 'Error' @ [111:80] ==> public constructor Error(message: String, location: CompilerMessageLocation? = ...) defined in org.jetbrains.kotlin.cli.common.repl.ReplCompileResult.Error[DeserializedClassConstructorDescriptor]
 
@@ -288,7 +274,7 @@ Inferred types:
 Inferred types:
     <T> -> RemoteReplStateFacadeServer
 
-'getValidId' @ [125:18] ==> internal inline fun getValidId(counter: AtomicInteger, check: (Int) -> Boolean): Int defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'getValidId' @ [125:18] ==> internal inline fun getValidId(counter: AtomicInteger, check: (Int) -> Boolean): Int defined in org.jetbrains.kotlin.daemon in file KotlinRemoteReplService.kt[SimpleFunctionDescriptorImpl]
 
 'stateIdCounter' @ [125:29] ==> protected final val stateIdCounter: AtomicInteger defined in org.jetbrains.kotlin.daemon.KotlinJvmReplService[PropertyDescriptorImpl]
 
@@ -369,8 +355,6 @@ Inferred types:
 'it' @ [133:49] ==> value-parameter it: RemoteReplStateFacadeServer defined in org.jetbrains.kotlin.daemon.KotlinJvmReplService.withValidReplState.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'state' @ [133:52] ==> public final val state: GenericReplCompilerState defined in org.jetbrains.kotlin.daemon.RemoteReplStateFacadeServer[PropertyDescriptorImpl]
-
-'CompileService' @ [135:12] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'Error' @ [135:38] ==> public constructor Error(message: String) defined in org.jetbrains.kotlin.daemon.common.CompileService.CallResult.Error[DeserializedClassConstructorDescriptor]
 

@@ -66,7 +66,7 @@ Inferred types:
 
 'name' @ [65:33] ==> public final var <D : PsiField> KtLightFieldImpl<out PsiField>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : PsiField> -> PsiField
+    <D : PsiField> -> Captured(*)
 
 'this' @ [66:14] ==> <this> defined in org.jetbrains.kotlin.asJava.elements.KtLightFieldImpl[LazyClassReceiverParameterDescriptor]
 
@@ -78,7 +78,7 @@ Inferred types:
 
 'containingClass' @ [66:44] ==> public final val <D : PsiField> KtLightFieldImpl<out PsiField>.containingClass: KtLightClass[MyPropertyDescriptor]
 Inferred types:
-    <D : PsiField> -> PsiField
+    <D : PsiField> -> Captured(*)
 
 '*' @ [68:31] ==> public final operator fun times(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
@@ -126,9 +126,9 @@ Inferred types:
 
 'dummyDelegate' @ [82:85] ==> value-parameter dummyDelegate: PsiField? defined in org.jetbrains.kotlin.asJava.elements.KtLightFieldImpl.KtLightEnumConstant.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [83:42] ==> public fun <T> lazyPub(initializer: () -> KtLightClassForEnumEntry?): Lazy<KtLightClassForEnumEntry?> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [83:42] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtLightClassForEnumEntry?
+    <T> -> T
 
 'lightMemberOrigin' @ [84:36] ==> public open val lightMemberOrigin: LightMemberOrigin? defined in org.jetbrains.kotlin.asJava.elements.KtLightFieldImpl.KtLightEnumConstant[PropertyDescriptorImpl]
 

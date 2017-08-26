@@ -276,7 +276,9 @@ Inferred types:
 
 'module' @ [127:69] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.quickfix.EnableUnsupportedFeatureFix.InModule.updateMavenLanguageVersion[ValueParameterDescriptorImpl]
 
-'PomFile' @ [128:27] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'?:' @ [128:27] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PomFile?, right: PomFile): PomFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PomFile
 
 'forFileOrNull' @ [128:35] ==> public final fun forFileOrNull(xmlFile: XmlFile): PomFile? defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
@@ -423,7 +425,7 @@ Inferred types:
 
 'diagnostic' @ [174:86] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.EnableUnsupportedFeatureFix.Companion.createAction[ValueParameterDescriptorImpl]
 
-'a' @ [174:98] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>..Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>?)>.a: (Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>..Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>?)[MyPropertyDescriptor]
+'a' @ [174:98] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>..Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>?)>.a: Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (kotlin.Pair<(org.jetbrains.kotlin.config.LanguageFeature..org.jetbrains.kotlin.config.LanguageFeature?), (org.jetbrains.kotlin.config.LanguageVersionSettings..org.jetbrains.kotlin.config.LanguageVersionSettings?)>..kotlin.Pair<(org.jetbrains.kotlin.config.LanguageFeature..org.jetbrains.kotlin.config.LanguageFeature?), (org.jetbrains.kotlin.config.LanguageVersionSettings..org.jetbrains.kotlin.config.LanguageVersionSettings?)>?)
@@ -518,7 +520,7 @@ Inferred types:
 
 'project' @ [195:38] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.checkUpdateRuntime[ValueParameterDescriptorImpl]
 
-'allModules' @ [195:46] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'allModules' @ [195:46] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'filter' @ [195:59] ==> public inline fun <T> Iterable<(Module..Module?)>.filter(predicate: ((Module..Module?)) -> Boolean): List<(Module..Module?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -555,7 +557,7 @@ Inferred types:
 
 '!' @ [202:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'askUpdateRuntime' @ [202:14] ==> public fun askUpdateRuntime(project: Project, requiredVersion: ApiVersion, librariesToUpdate: List<Library>): Boolean defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'askUpdateRuntime' @ [202:14] ==> public fun askUpdateRuntime(project: Project, requiredVersion: ApiVersion, librariesToUpdate: List<Library>): Boolean defined in org.jetbrains.kotlin.idea.quickfix in file EnableUnsupportedFeatureFix.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [202:31] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.checkUpdateRuntime[ValueParameterDescriptorImpl]
 
@@ -568,7 +570,7 @@ Inferred types:
     <T> -> (com.intellij.openapi.module.Module..com.intellij.openapi.module.Module?)
     <R : Any> -> Library
 
-'findKotlinRuntimeLibrary' @ [203:71] ==> public fun findKotlinRuntimeLibrary(module: Module, predicate: (Library) -> Boolean = ...): Library? defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'findKotlinRuntimeLibrary' @ [203:71] ==> public fun findKotlinRuntimeLibrary(module: Module, predicate: (Library) -> Boolean = ...): Library? defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [203:96] ==> value-parameter it: (Module..Module?) defined in org.jetbrains.kotlin.idea.quickfix.checkUpdateRuntime.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -592,17 +594,17 @@ Inferred types:
 
 'OK' @ [215:28] ==> public const final val OK: Int defined in com.intellij.openapi.ui.Messages[JavaPropertyDescriptor]
 
-'updateLibraries' @ [218:5] ==> public fun updateLibraries(project: Project, libraries: Collection<Library>): Unit defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'updateLibraries' @ [218:5] ==> public fun updateLibraries(project: Project, libraries: Collection<Library>): Unit defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [218:21] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.askUpdateRuntime[ValueParameterDescriptorImpl]
 
 'librariesToUpdate' @ [218:30] ==> value-parameter librariesToUpdate: List<Library> defined in org.jetbrains.kotlin.idea.quickfix.askUpdateRuntime[ValueParameterDescriptorImpl]
 
-'findKotlinRuntimeLibrary' @ [223:19] ==> public fun findKotlinRuntimeLibrary(module: Module, predicate: (Library) -> Boolean = ...): Library? defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'findKotlinRuntimeLibrary' @ [223:19] ==> public fun findKotlinRuntimeLibrary(module: Module, predicate: (Library) -> Boolean = ...): Library? defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [223:44] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.quickfix.askUpdateRuntime[ValueParameterDescriptorImpl]
 
-'askUpdateRuntime' @ [224:12] ==> public fun askUpdateRuntime(project: Project, requiredVersion: ApiVersion, librariesToUpdate: List<Library>): Boolean defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'askUpdateRuntime' @ [224:12] ==> public fun askUpdateRuntime(project: Project, requiredVersion: ApiVersion, librariesToUpdate: List<Library>): Boolean defined in org.jetbrains.kotlin.idea.quickfix in file EnableUnsupportedFeatureFix.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [224:29] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.quickfix.askUpdateRuntime[ValueParameterDescriptorImpl]
 

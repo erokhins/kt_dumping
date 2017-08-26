@@ -76,9 +76,9 @@ Inferred types:
 
 'checkConstructedExpandedType' @ [102:9] ==> private final fun CallCandidateResolutionContext<*>.checkConstructedExpandedType(): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 
-'checkAndReport' @ [105:75] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.checkAndReport(checker: Nothing.() -> ResolutionStatus): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'checkAndReport' @ [105:75] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.checkAndReport(checker: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.() -> ResolutionStatus): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'if (call.typeArguments.isEmpty()
             && !candidateDescriptor.typeParameters.isEmpty()
@@ -110,19 +110,19 @@ Inferred types:
 
 'knownTypeParametersSubstitutor' @ [108:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.knownTypeParametersSubstitutor: TypeSubstitutor?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'genericCandidateResolver' @ [110:13] ==> private final val genericCandidateResolver: GenericCandidateResolver defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[PropertyDescriptorImpl]
 
 'inferTypeArguments' @ [110:38] ==> public final fun <D : CallableDescriptor> inferTypeArguments(context: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>): ResolutionStatus defined in org.jetbrains.kotlin.resolve.calls.GenericCandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'this' @ [110:57] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkValueArguments.<anonymous>[ReceiverParameterDescriptorImpl]
 
 'checkAllValueArguments' @ [113:13] ==> public final fun <D : CallableDescriptor> checkAllValueArguments(context: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>, resolveFunctionArgumentBodies: ResolveArgumentsMode): CandidateResolver.ValueArgumentsCheckingResult defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'this' @ [113:36] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkValueArguments.<anonymous>[ReceiverParameterDescriptorImpl]
 
@@ -130,9 +130,9 @@ Inferred types:
 
 'status' @ [113:68] ==> public final val status: ResolutionStatus defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.ValueArgumentsCheckingResult[PropertyDescriptorImpl]
 
-'check' @ [117:76] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.check(checker: Nothing.() -> Unit): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'check' @ [117:76] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.check(checker: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.() -> Unit): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'call' @ [118:31] ==> @NotNull public final val call: Call defined in org.jetbrains.kotlin.resolve.calls.context.CallCandidateResolutionContext[JavaPropertyDescriptor]
 
@@ -177,7 +177,7 @@ Inferred types:
 
 'knownTypeParametersSubstitutor' @ [119:27] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.knownTypeParametersSubstitutor: TypeSubstitutor?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'candidateCall' @ [120:13] ==> @NotNull public final val candidateCall: MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.context.CallCandidateResolutionContext[JavaPropertyDescriptor]
 
@@ -187,7 +187,7 @@ Inferred types:
 
 'knownTypeParametersSubstitutor' @ [120:65] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.knownTypeParametersSubstitutor: TypeSubstitutor?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'ktTypeArguments' @ [122:18] ==> val ktTypeArguments: List<(KtTypeProjection..KtTypeProjection?)> defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.processTypeArguments.<anonymous>[LocalVariableDescriptor]
 
@@ -216,8 +216,8 @@ Inferred types:
 
 'get' @ [127:81] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), key: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [127:100] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -327,7 +327,7 @@ Inferred types:
 
 'mapValueArgumentsToParameters' @ [155:78] ==> public open fun <D : (CallableDescriptor..CallableDescriptor?)> mapValueArgumentsToParameters(@NotNull call: Call, @NotNull tracing: TracingStrategy, @NotNull candidateCall: MutableResolvedCall<(D..D?)>): (ValueArgumentsToParametersMapper.Status..ValueArgumentsToParametersMapper.Status?) defined in org.jetbrains.kotlin.resolve.calls.ValueArgumentsToParametersMapper[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'call' @ [156:25] ==> @NotNull public final val call: Call defined in org.jetbrains.kotlin.resolve.calls.context.CallCandidateResolutionContext[JavaPropertyDescriptor]
 
@@ -363,7 +363,7 @@ Inferred types:
 
 'candidateCall' @ [166:29] ==> @NotNull public final val candidateCall: MutableResolvedCall<(D..D?)> defined in org.jetbrains.kotlin.resolve.calls.context.CallCandidateResolutionContext[JavaPropertyDescriptor]
 
-'candidateDescriptor' @ [166:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<(D..D?)>.candidateDescriptor: (D..D?)[MyPropertyDescriptor]
+'candidateDescriptor' @ [166:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<(D..D?)>.candidateDescriptor: D[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
@@ -386,8 +386,8 @@ Inferred types:
 
 'get' @ [168:54] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?), key: (KtExpression..KtExpression?)): DoubleColonLHS? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> DoubleColonLHS
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.DoubleColonLHS..org.jetbrains.kotlin.types.expressions.DoubleColonLHS?)
 
 'DOUBLE_COLON_LHS' @ [168:73] ==> public final val DOUBLE_COLON_LHS: (WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -411,7 +411,7 @@ Inferred types:
 
 'candidateCall' @ [173:77] ==> @NotNull public final val candidateCall: MutableResolvedCall<(D..D?)> defined in org.jetbrains.kotlin.resolve.calls.context.CallCandidateResolutionContext[JavaPropertyDescriptor]
 
-'candidateDescriptor' @ [173:91] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<(D..D?)>.candidateDescriptor: (D..D?)[MyPropertyDescriptor]
+'candidateDescriptor' @ [173:91] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<(D..D?)>.candidateDescriptor: D[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
@@ -423,7 +423,7 @@ Inferred types:
 
 'OTHER_ERROR' @ [174:49] ==> enum entry OTHER_ERROR defined in org.jetbrains.kotlin.resolve.calls.results.ResolutionStatus[FakeCallableDescriptorForObject]
 
-'makeConstantSubstitutor' @ [185:34] ==> public fun makeConstantSubstitutor(typeParameterDescriptors: Collection<TypeParameterDescriptor>, type: KotlinType): TypeSubstitutor defined in org.jetbrains.kotlin.resolve.calls[SimpleFunctionDescriptorImpl]
+'makeConstantSubstitutor' @ [185:34] ==> public fun makeConstantSubstitutor(typeParameterDescriptors: Collection<TypeParameterDescriptor>, type: KotlinType): TypeSubstitutor defined in org.jetbrains.kotlin.resolve.calls in file GenericCandidateResolver.kt[SimpleFunctionDescriptorImpl]
 
 'candidateTypeParameters' @ [185:58] ==> value-parameter candidateTypeParameters: List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.canBeSubtype[ValueParameterDescriptorImpl]
 
@@ -445,9 +445,9 @@ Inferred types:
 
 'superType' @ [187:77] ==> value-parameter superType: KotlinType defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.canBeSubtype[ValueParameterDescriptorImpl]
 
-'checkAndReport' @ [190:86] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.checkAndReport(checker: Nothing.() -> ResolutionStatus): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'checkAndReport' @ [190:86] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.checkAndReport(checker: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.() -> ResolutionStatus): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'checkVisibilityWithDispatchReceiver' @ [191:9] ==> private final fun CallCandidateResolutionContext<*>.checkVisibilityWithDispatchReceiver(receiverArgument: ReceiverValue?, smartCastType: KotlinType?): ResolutionStatus defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 
@@ -516,15 +516,15 @@ Inferred types:
 
 'ownerDescriptor' @ [219:40] ==> public abstract val ownerDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.LexicalScope[DeserializedPropertyDescriptor]
 
-'checkAndReport' @ [222:78] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.checkAndReport(checker: Nothing.() -> ResolutionStatus): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'checkAndReport' @ [222:78] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.checkAndReport(checker: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.() -> ResolutionStatus): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'candidateCall' @ [223:33] ==> @NotNull public final val candidateCall: MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.context.CallCandidateResolutionContext[JavaPropertyDescriptor]
 
 'candidateDescriptor' @ [223:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'extensionReceiverParameter' @ [223:67] ==> public final val CallableDescriptor.extensionReceiverParameter: ReceiverParameterDescriptor?[MyPropertyDescriptor]
 
@@ -532,7 +532,7 @@ Inferred types:
 
 'extensionReceiver' @ [224:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'if (receiverParameter != null && receiverArgument == null) {
             tracing.missingReceiver(candidateCall.trace, receiverParameter)
@@ -565,7 +565,7 @@ Inferred types:
 
 'trace' @ [226:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.trace: DelegatingBindingTrace[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'receiverParameter' @ [226:58] ==> val receiverParameter: ReceiverParameterDescriptor? defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkExtensionReceiver.<anonymous>[LocalVariableDescriptor]
 
@@ -598,7 +598,7 @@ Inferred types:
 
 'trace' @ [230:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.trace: DelegatingBindingTrace[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'if (call.calleeExpression is KtSimpleNameExpression) {
                 RECEIVER_PRESENCE_ERROR
@@ -619,9 +619,9 @@ Inferred types:
 
 'SUCCESS' @ [239:13] ==> enum entry SUCCESS defined in org.jetbrains.kotlin.resolve.calls.results.ResolutionStatus[FakeCallableDescriptorForObject]
 
-'checkAndReport' @ [243:77] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.checkAndReport(checker: Nothing.() -> ResolutionStatus): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'checkAndReport' @ [243:77] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.checkAndReport(checker: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.() -> ResolutionStatus): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'candidateDescriptor' @ [244:35] ==> private final val CallCandidateResolutionContext<*>.candidateDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[PropertyDescriptorImpl]
 
@@ -629,7 +629,7 @@ Inferred types:
 
 'dispatchReceiver' @ [245:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'dispatchReceiver' @ [246:13] ==> val dispatchReceiver: ReceiverValue? defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkDispatchReceiver.<anonymous>[LocalVariableDescriptor]
 
@@ -680,7 +680,7 @@ Inferred types:
 
 'explicitReceiverKind' @ [257:97] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'OTHER_ERROR' @ [258:39] ==> enum entry OTHER_ERROR defined in org.jetbrains.kotlin.resolve.calls.results.ResolutionStatus[FakeCallableDescriptorForObject]
 
@@ -694,7 +694,7 @@ Inferred types:
 
 'resultingDescriptor' @ [262:61] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'dispatchReceiverParameter' @ [262:81] ==> public final val CallableDescriptor.dispatchReceiverParameter: ReceiverParameterDescriptor?[MyPropertyDescriptor]
 
@@ -740,7 +740,7 @@ Inferred types:
 
 'candidateDescriptor' @ [280:69] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'candidateThis' @ [281:13] ==> val candidateThis: ClassDescriptor? defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkOuterClassMemberIsAccessible[LocalVariableDescriptor]
 
@@ -768,9 +768,9 @@ Inferred types:
 
 'candidateThis' @ [283:118] ==> val candidateThis: ClassDescriptor? defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkOuterClassMemberIsAccessible[LocalVariableDescriptor]
 
-'check' @ [286:77] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.check(checker: Nothing.() -> Unit): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'check' @ [286:77] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.check(checker: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.() -> Unit): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'candidateDescriptor' @ [287:26] ==> private final val CallCandidateResolutionContext<*>.candidateDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[PropertyDescriptorImpl]
 
@@ -778,7 +778,7 @@ Inferred types:
 
 'call' @ [288:40] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'calleeExpression' @ [288:45] ==> public final val Call.calleeExpression: KtExpression?[MyPropertyDescriptor]
 
@@ -794,8 +794,6 @@ Inferred types:
 
 'modality' @ [294:21] ==> val modality: Modality defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkAbstractAndSuper.<anonymous>[LocalVariableDescriptor]
 
-'Modality' @ [294:33] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [294:42] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'tracing' @ [295:21] ==> @NotNull public final val tracing: TracingStrategy defined in org.jetbrains.kotlin.resolve.calls.context.CallCandidateResolutionContext[JavaPropertyDescriptor]
@@ -810,7 +808,7 @@ Inferred types:
 
 'dispatchReceiver' @ [300:68] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'superDispatchReceiver' @ [301:13] ==> val superDispatchReceiver: KtSuperExpression? defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkAbstractAndSuper.<anonymous>[LocalVariableDescriptor]
 
@@ -819,8 +817,6 @@ Inferred types:
 'descriptor' @ [302:51] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkAbstractAndSuper.<anonymous>[LocalVariableDescriptor]
 
 'modality' @ [302:62] ==> public final val MemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [302:74] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [302:83] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -842,7 +838,7 @@ Inferred types:
 
 'extensionReceiver' @ [310:69] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'superExtensionReceiver' @ [311:13] ==> val superExtensionReceiver: KtSuperExpression? defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkAbstractAndSuper.<anonymous>[LocalVariableDescriptor]
 
@@ -866,9 +862,9 @@ Inferred types:
 
 'OTHER_ERROR' @ [313:37] ==> enum entry OTHER_ERROR defined in org.jetbrains.kotlin.resolve.calls.results.ResolutionStatus[FakeCallableDescriptorForObject]
 
-'check' @ [317:84] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.check(checker: Nothing.() -> Unit): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'check' @ [317:84] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.check(checker: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.() -> Unit): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'candidateDescriptor' @ [318:26] ==> private final val CallCandidateResolutionContext<*>.candidateDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[PropertyDescriptorImpl]
 
@@ -1320,9 +1316,9 @@ Inferred types:
 
 'NULLABLE_ARGUMENT_TYPE_MISMATCH' @ [428:34] ==> enum entry NULLABLE_ARGUMENT_TYPE_MISMATCH defined in org.jetbrains.kotlin.resolve.calls.results.ResolutionStatus[FakeCallableDescriptorForObject]
 
-'check' @ [431:84] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.check(checker: Nothing.() -> Unit): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'check' @ [431:84] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.check(checker: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.() -> Unit): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'candidateDescriptor' @ [432:33] ==> private final val CallCandidateResolutionContext<*>.candidateDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[PropertyDescriptorImpl]
 
@@ -1346,7 +1342,7 @@ Inferred types:
 
 'extensionReceiver' @ [438:69] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'checkReceiverTypeError' @ [440:9] ==> private final fun CallCandidateResolutionContext<*>.checkReceiverTypeError(receiverParameterDescriptor: ReceiverParameterDescriptor?, receiverArgument: ReceiverValue?): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 
@@ -1356,11 +1352,11 @@ Inferred types:
 
 'dispatchReceiver' @ [440:64] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
-'checkAndReport' @ [446:9] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.checkAndReport(checker: Nothing.() -> ResolutionStatus): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'checkAndReport' @ [446:9] ==> private final inline fun <D : CallableDescriptor> CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.checkAndReport(checker: CallCandidateResolutionContext<out (CallableDescriptor..CallableDescriptor?)>.() -> ResolutionStatus): Unit defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'receiverParameterDescriptor' @ [447:13] ==> value-parameter receiverParameterDescriptor: ReceiverParameterDescriptor? defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkReceiverTypeError[ValueParameterDescriptorImpl]
 
@@ -1412,15 +1408,15 @@ Inferred types:
 
 'context' @ [467:45] ==> value-parameter context: CallCandidateResolutionContext<D> defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkReceivers[ValueParameterDescriptorImpl]
 
-'checkReceiver' @ [467:53] ==> private final fun <D : CallableDescriptor> CallCandidateResolutionContext<D>.checkReceiver(candidateCall: MutableResolvedCall<D>, receiverParameter: ReceiverParameterDescriptor?, receiverArgument: ReceiverValue?, isExplicitReceiver: Boolean, implicitInvokeCheck: Boolean, isDispatchReceiver: Boolean): ResolutionStatus defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'checkReceiver' @ [467:53] ==> private final fun <D : CallableDescriptor> CallCandidateResolutionContext<(D..D?)>.checkReceiver(candidateCall: MutableResolvedCall<(D..D?)>, receiverParameter: ReceiverParameterDescriptor?, receiverArgument: ReceiverValue?, isExplicitReceiver: Boolean, implicitInvokeCheck: Boolean, isDispatchReceiver: Boolean): ResolutionStatus defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> D
+    <D : CallableDescriptor> -> (D..D?)
 
 'candidateCall' @ [468:17] ==> val candidateCall: MutableResolvedCall<(D..D?)> defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkReceivers[LocalVariableDescriptor]
 
 'candidateCall' @ [469:17] ==> val candidateCall: MutableResolvedCall<(D..D?)> defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkReceivers[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [469:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<(D..D?)>.resultingDescriptor: (D..D?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [469:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<(D..D?)>.resultingDescriptor: D[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
@@ -1448,15 +1444,15 @@ Inferred types:
 
 'context' @ [475:45] ==> value-parameter context: CallCandidateResolutionContext<D> defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkReceivers[ValueParameterDescriptorImpl]
 
-'checkReceiver' @ [475:53] ==> private final fun <D : CallableDescriptor> CallCandidateResolutionContext<D>.checkReceiver(candidateCall: MutableResolvedCall<D>, receiverParameter: ReceiverParameterDescriptor?, receiverArgument: ReceiverValue?, isExplicitReceiver: Boolean, implicitInvokeCheck: Boolean, isDispatchReceiver: Boolean): ResolutionStatus defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
+'checkReceiver' @ [475:53] ==> private final fun <D : CallableDescriptor> CallCandidateResolutionContext<(D..D?)>.checkReceiver(candidateCall: MutableResolvedCall<(D..D?)>, receiverParameter: ReceiverParameterDescriptor?, receiverArgument: ReceiverValue?, isExplicitReceiver: Boolean, implicitInvokeCheck: Boolean, isDispatchReceiver: Boolean): ResolutionStatus defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> D
+    <D : CallableDescriptor> -> (D..D?)
 
 'candidateCall' @ [476:17] ==> val candidateCall: MutableResolvedCall<(D..D?)> defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkReceivers[LocalVariableDescriptor]
 
 'candidateCall' @ [477:17] ==> val candidateCall: MutableResolvedCall<(D..D?)> defined in org.jetbrains.kotlin.resolve.calls.CandidateResolver.checkReceivers[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [477:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<(D..D?)>.resultingDescriptor: (D..D?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [477:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<(D..D?)>.resultingDescriptor: D[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
@@ -1783,7 +1779,7 @@ Inferred types:
 
 'record' @ [550:41] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>..WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>?), key: (KtExpression..KtExpression?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'SMARTCAST_NULL' @ [550:63] ==> public final val SMARTCAST_NULL: (WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>..WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2215,5 +2211,5 @@ Inferred types:
 
 'candidateDescriptor' @ [724:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 

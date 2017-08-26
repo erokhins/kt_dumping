@@ -97,7 +97,7 @@ Inferred types:
 
 'noneOf' @ [55:30] ==> public open fun <E : (Enum<(AnnotationsChangeTracker.Recompile..AnnotationsChangeTracker.Recompile?)>..Enum<(AnnotationsChangeTracker.Recompile..AnnotationsChangeTracker.Recompile?)>?)> noneOf(p0: (Class<(AnnotationsChangeTracker.Recompile..AnnotationsChangeTracker.Recompile?)>..Class<(AnnotationsChangeTracker.Recompile..AnnotationsChangeTracker.Recompile?)>?)): (EnumSet<(AnnotationsChangeTracker.Recompile..AnnotationsChangeTracker.Recompile?)>..EnumSet<(AnnotationsChangeTracker.Recompile..AnnotationsChangeTracker.Recompile?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> Recompile
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.jps.builders.java.dependencyView.AnnotationsChangeTracker.Recompile..org.jetbrains.jps.builders.java.dependencyView.AnnotationsChangeTracker.Recompile?)
 
 'Recompile' @ [55:37] ==> private constructor Recompile() defined in org.jetbrains.jps.builders.java.dependencyView.AnnotationsChangeTracker.Recompile[JavaClassConstructorDescriptor]
 

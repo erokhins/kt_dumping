@@ -24,7 +24,7 @@
 
 'getService' @ [40:37] ==> @Nullable public open fun <T : (Any..Any?)> getService(@NotNull p0: Module, @NotNull p1: Class<(AndroidLayoutXmlFileManager..AndroidLayoutXmlFileManager?)>): AndroidLayoutXmlFileManager? defined in com.intellij.openapi.module.ModuleServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AndroidLayoutXmlFileManager
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager..org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager?)
 
 'module' @ [40:48] ==> val module: Module defined in org.jetbrains.kotlin.android.synthetic.idea.res.IDEAndroidPackageFragmentProviderExtension.getLayoutXmlFileManager[LocalVariableDescriptor]
 

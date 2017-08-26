@@ -42,9 +42,9 @@ Inferred types:
 
 '_moduleData' @ [51:17] ==> @Volatile private final var _moduleData: CachedValue<AndroidModuleData>? defined in org.jetbrains.kotlin.android.synthetic.idea.res.IDEAndroidLayoutXmlFileManager[PropertyDescriptorImpl]
 
-'cachedValue' @ [51:31] ==> public fun <T> cachedValue(project: Project, result: () -> CachedValueProvider.Result<AndroidModuleData>): CachedValue<AndroidModuleData> defined in org.jetbrains.kotlin.android.synthetic.res[DeserializedSimpleFunctionDescriptor]
+'cachedValue' @ [51:31] ==> public fun <T> cachedValue(project: Project, result: () -> CachedValueProvider.Result<(AndroidModuleData..AndroidModuleData?)>): CachedValue<(AndroidModuleData..AndroidModuleData?)> defined in org.jetbrains.kotlin.android.synthetic.res[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> AndroidModuleData
+    <T> -> (org.jetbrains.kotlin.android.synthetic.res.AndroidModuleData..org.jetbrains.kotlin.android.synthetic.res.AndroidModuleData?)
 
 'project' @ [51:43] ==> public final val project: Project defined in org.jetbrains.kotlin.android.synthetic.idea.res.IDEAndroidLayoutXmlFileManager[DeserializedPropertyDescriptor]
 
@@ -68,15 +68,13 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> AndroidModuleData
 
-'AndroidModuleData' @ [58:38] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.res.AndroidModuleData[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [58:56] ==> public final val EMPTY: AndroidModuleData defined in org.jetbrains.kotlin.android.synthetic.res.AndroidModuleData.Companion[DeserializedPropertyDescriptor]
 
 'project' @ [62:16] ==> public final val project: Project defined in org.jetbrains.kotlin.android.synthetic.idea.res.IDEAndroidLayoutXmlFileManager[DeserializedPropertyDescriptor]
 
 'getExtensions' @ [62:24] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>): (Array<(PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>..Array<out (PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>) defined in com.intellij.openapi.project.Project[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiTreeChangePreprocessor
+    <T : (Any..Any?)> -> (com.intellij.psi.impl.PsiTreeChangePreprocessor..com.intellij.psi.impl.PsiTreeChangePreprocessor?)
 
 'EP_NAME' @ [62:64] ==> public final val EP_NAME: (ExtensionPointName<(PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>..ExtensionPointName<(PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>?) defined in com.intellij.psi.impl.PsiTreeChangePreprocessor[JavaPropertyDescriptor]
 
@@ -234,10 +232,10 @@ Inferred types:
 
 'variantData' @ [101:24] ==> val variantData: AndroidVariantData defined in org.jetbrains.kotlin.android.synthetic.idea.res.IDEAndroidLayoutXmlFileManager.propertyToXmlAttributes[LocalVariableDescriptor]
 
-'let' @ [101:44] ==> @InlineOnly public inline fun <T, R> List<PsiElement>.let(block: (List<PsiElement>) -> Unit?): Unit? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [101:44] ==> @InlineOnly public inline fun <T, R> List<PsiElement>.let(block: (List<PsiElement>) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> List<PsiElement>
-    <R> -> Unit?
+    <R> -> Nothing
 
 'it' @ [101:57] ==> value-parameter it: List<PsiElement> defined in org.jetbrains.kotlin.android.synthetic.idea.res.IDEAndroidLayoutXmlFileManager.propertyToXmlAttributes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -313,7 +311,7 @@ Inferred types:
 
 'java' @ [123:52] ==> public val <T> KClass<out AndroidFacet>.java: Class<out AndroidFacet> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AndroidFacet
+    <T> -> Captured(out AndroidFacet)
 
 'getMethod' @ [123:57] ==> @CallerSensitive public open fun getMethod(p0: (String..String?), vararg p1: (Class<*>..Class<*>?)): (Method..Method?) defined in java.lang.Class[JavaMethodDescriptor]
 

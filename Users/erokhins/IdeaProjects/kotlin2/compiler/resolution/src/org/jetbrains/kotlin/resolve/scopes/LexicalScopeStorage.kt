@@ -4,7 +4,7 @@
 
 'SmartList' @ [43:74] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> DeclarationDescriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'variableOrClassDescriptorByName' @ [48:83] ==> protected final fun variableOrClassDescriptorByName(name: Name, descriptorLimit: Int = ...): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.scopes.LexicalScopeStorage[SimpleFunctionDescriptorImpl]
 

@@ -24,7 +24,7 @@ Inferred types:
 
 'getService' @ [37:36] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Class<(KotlinRefactoringSettings..KotlinRefactoringSettings?)>): (KotlinRefactoringSettings..KotlinRefactoringSettings?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinRefactoringSettings
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.KotlinRefactoringSettings..org.jetbrains.kotlin.idea.refactoring.KotlinRefactoringSettings?)
 
 'KotlinRefactoringSettings' @ [37:47] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.KotlinRefactoringSettings[FakeCallableDescriptorForObject]
 

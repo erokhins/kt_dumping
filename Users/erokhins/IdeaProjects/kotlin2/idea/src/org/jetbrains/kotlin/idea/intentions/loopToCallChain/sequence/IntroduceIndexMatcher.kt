@@ -65,7 +65,7 @@ Inferred types:
 
 'variable' @ [68:39] ==> val variable: KtProperty defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.IntroduceIndexMatcher.checkIndexCandidate[LocalVariableDescriptor]
 
-'countUsages' @ [68:48] ==> public fun KtCallableDeclaration.countUsages(inElements: Collection<KtElement>): Int defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'countUsages' @ [68:48] ==> public fun KtCallableDeclaration.countUsages(inElements: Collection<KtElement>): Int defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [68:60] ==> value-parameter state: MatchingState defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.IntroduceIndexMatcher.checkIndexCandidate[ValueParameterDescriptorImpl]
 
@@ -272,7 +272,7 @@ Inferred types:
 
 'resultingDescriptor' @ [118:95] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'descriptor' @ [118:118] ==> value-parameter descriptor: VariableDescriptor defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.IntroduceIndexMatcher.isReadOfVariable[ValueParameterDescriptorImpl]
 

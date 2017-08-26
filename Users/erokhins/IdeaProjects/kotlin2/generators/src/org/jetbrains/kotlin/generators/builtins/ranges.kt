@@ -23,7 +23,7 @@ Inferred types:
 
 'CHAR' @ [34:17] ==> enum entry CHAR defined in org.jetbrains.kotlin.generators.builtins.ProgressionKind[FakeCallableDescriptorForObject]
 
-'areEqualNumbers' @ [38:38] ==> public fun areEqualNumbers(v: String): String defined in org.jetbrains.kotlin.generators.builtins[SimpleFunctionDescriptorImpl]
+'areEqualNumbers' @ [38:38] ==> public fun areEqualNumbers(v: String): String defined in org.jetbrains.kotlin.generators.builtins in file common.kt[SimpleFunctionDescriptorImpl]
 
 'v' @ [38:54] ==> value-parameter v: String defined in org.jetbrains.kotlin.generators.builtins.ranges.GenerateRanges.generateBody.compare[ValueParameterDescriptorImpl]
 
@@ -52,9 +52,9 @@ Inferred types:
 
 '+' @ [45:25] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'hashLong' @ [46:57] ==> public fun hashLong(v: String): String defined in org.jetbrains.kotlin.generators.builtins[SimpleFunctionDescriptorImpl]
+'hashLong' @ [46:57] ==> public fun hashLong(v: String): String defined in org.jetbrains.kotlin.generators.builtins in file common.kt[SimpleFunctionDescriptorImpl]
 
-'hashLong' @ [46:80] ==> public fun hashLong(v: String): String defined in org.jetbrains.kotlin.generators.builtins[SimpleFunctionDescriptorImpl]
+'hashLong' @ [46:80] ==> public fun hashLong(v: String): String defined in org.jetbrains.kotlin.generators.builtins in file common.kt[SimpleFunctionDescriptorImpl]
 
 'out' @ [51:13] ==> public final val out: PrintWriter defined in org.jetbrains.kotlin.generators.builtins.ranges.GenerateRanges[PropertyDescriptorImpl]
 

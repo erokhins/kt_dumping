@@ -197,11 +197,11 @@ Inferred types:
 
 'java' @ [80:31] ==> public val <T> KClass<out JvmPackageScope>.java: Class<out JvmPackageScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> JvmPackageScope
+    <T> -> Captured(out JvmPackageScope)
 
 'simpleName' @ [80:36] ==> public final val <T : (Any..Any?)> Class<out JvmPackageScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JvmPackageScope
+    <T : (Any..Any?)> -> Captured(out JvmPackageScope)
 
 'p' @ [81:9] ==> value-parameter p: Printer defined in org.jetbrains.kotlin.load.java.lazy.descriptors.JvmPackageScope.printScopeStructure[ValueParameterDescriptorImpl]
 

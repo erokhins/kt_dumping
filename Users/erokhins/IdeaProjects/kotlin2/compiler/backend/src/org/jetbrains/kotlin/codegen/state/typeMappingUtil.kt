@@ -175,18 +175,18 @@ Inferred types:
 
 'suppressWildcardsMode' @ [97:67] ==> private fun DeclarationDescriptor.suppressWildcardsMode(): Boolean? defined in org.jetbrains.kotlin.codegen.state in file typeMappingUtil.kt[SimpleFunctionDescriptorImpl]
 
-'let' @ [97:93] ==> @InlineOnly public inline fun <T, R> Boolean.let(block: (Boolean) -> TypeMappingMode): TypeMappingMode defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [97:93] ==> @InlineOnly public inline fun <T, R> Boolean.let(block: (Boolean) -> TypeMappingMode?): TypeMappingMode? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Boolean
-    <R> -> TypeMappingMode
+    <R> -> TypeMappingMode?
 
 'if (outerType.arguments.isNotEmpty())
                 TypeMappingMode.createWithConstantDeclarationSiteWildcardsMode(
                         skipDeclarationSiteWildcards = it, isForAnnotationParameter = isForAnnotationParameter)
             else
-                TypeMappingMode.DEFAULT' @ [98:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: TypeMappingMode, elseBranch: TypeMappingMode): TypeMappingMode[SimpleFunctionDescriptorImpl]
+                TypeMappingMode.DEFAULT' @ [98:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: TypeMappingMode?, elseBranch: TypeMappingMode?): TypeMappingMode?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> TypeMappingMode
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> TypeMappingMode?
 
 'outerType' @ [98:17] ==> value-parameter outerType: KotlinType defined in org.jetbrains.kotlin.codegen.state.extractTypeMappingModeFromAnnotation[ValueParameterDescriptorImpl]
 
@@ -196,15 +196,11 @@ Inferred types:
 Inferred types:
     <T> -> TypeProjection
 
-'TypeMappingMode' @ [99:17] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode[FakeCallableDescriptorForObject]
-
 'createWithConstantDeclarationSiteWildcardsMode' @ [99:33] ==> @JvmStatic public final fun createWithConstantDeclarationSiteWildcardsMode(skipDeclarationSiteWildcards: Boolean, isForAnnotationParameter: Boolean, fallbackMode: TypeMappingMode? = ...): TypeMappingMode defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode.Companion[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [100:56] ==> value-parameter it: Boolean defined in org.jetbrains.kotlin.codegen.state.extractTypeMappingModeFromAnnotation.<anonymous>[ValueParameterDescriptorImpl]
 
 'isForAnnotationParameter' @ [100:87] ==> value-parameter isForAnnotationParameter: Boolean defined in org.jetbrains.kotlin.codegen.state.extractTypeMappingModeFromAnnotation[ValueParameterDescriptorImpl]
-
-'TypeMappingMode' @ [102:17] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [102:33] ==> @field:JvmField public final val DEFAULT: TypeMappingMode defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode.Companion[DeserializedPropertyDescriptor]
 

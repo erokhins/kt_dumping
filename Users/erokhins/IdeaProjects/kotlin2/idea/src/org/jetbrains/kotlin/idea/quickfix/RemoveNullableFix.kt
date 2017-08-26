@@ -64,12 +64,12 @@ Inferred types:
 
 'diagnostic' @ [58:78] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.RemoveNullableFix.LATEINIT_FACTORY.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [58:90] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (String..String?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [58:90] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (String..String?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'lateinitElement' @ [59:28] ==> val lateinitElement: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.quickfix.RemoveNullableFix.LATEINIT_FACTORY.createAction[LocalVariableDescriptor]
+'lateinitElement' @ [59:28] ==> val lateinitElement: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.RemoveNullableFix.LATEINIT_FACTORY.createAction[LocalVariableDescriptor]
 
 'getStrictParentOfType' @ [59:44] ==> public inline fun <reified T : PsiElement> PsiElement.getStrictParentOfType(): KtProperty? defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:

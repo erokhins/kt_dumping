@@ -100,7 +100,7 @@ Inferred types:
 
 'parents' @ [48:12] ==> val parents: Sequence<URLClassLoader> defined in org.jetbrains.kotlin.cli.common.repl.listAllUrlsAsFiles[LocalVariableDescriptor]
 
-'fold' @ [48:20] ==> public inline fun <T, R> Sequence<URLClassLoader>.fold(initial: List<File>, operation: (List<File>, URLClassLoader) -> List<File>): List<File> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'fold' @ [48:20] ==> public inline fun <T, R> Sequence<URLClassLoader>.fold(initial: List<File>, operation: (acc: List<File>, URLClassLoader) -> List<File>): List<File> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> URLClassLoader
     <R> -> List<File>
@@ -111,7 +111,7 @@ Inferred types:
 
 'loader' @ [49:9] ==> value-parameter loader: URLClassLoader defined in org.jetbrains.kotlin.cli.common.repl.listAllUrlsAsFiles.<anonymous>[ValueParameterDescriptorImpl]
 
-'listLocalUrlsAsFiles' @ [49:16] ==> internal fun URLClassLoader.listLocalUrlsAsFiles(): List<File> defined in org.jetbrains.kotlin.cli.common.repl[SimpleFunctionDescriptorImpl]
+'listLocalUrlsAsFiles' @ [49:16] ==> internal fun URLClassLoader.listLocalUrlsAsFiles(): List<File> defined in org.jetbrains.kotlin.cli.common.repl in file replUtil.kt[SimpleFunctionDescriptorImpl]
 
 'accum' @ [49:41] ==> value-parameter accum: List<File> defined in org.jetbrains.kotlin.cli.common.repl.listAllUrlsAsFiles.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -138,6 +138,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [54:79] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'this' @ [58:9] ==> <this> defined in org.jetbrains.kotlin.cli.common.repl.ensureNotEmpty[ReceiverParameterDescriptorImpl]
 

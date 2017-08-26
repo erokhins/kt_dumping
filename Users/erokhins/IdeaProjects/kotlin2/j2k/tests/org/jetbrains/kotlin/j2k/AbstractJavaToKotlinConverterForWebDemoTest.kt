@@ -48,13 +48,13 @@
 
 'registerExtensionPoint' @ [73:44] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>, @NotNull p2: Class<out (PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiTreeChangePreprocessor
+    <T : (Any..Any?)> -> (com.intellij.psi.impl.PsiTreeChangePreprocessor..com.intellij.psi.impl.PsiTreeChangePreprocessor?)
 
 'projectArea' @ [73:67] ==> val projectArea: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.setUpJavaCoreEnvironment.<no name provided>.preregisterServices[LocalVariableDescriptor]
 
 'EP_NAME' @ [73:106] ==> public final val EP_NAME: (ExtensionPointName<(PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>..ExtensionPointName<(PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>?) defined in com.intellij.psi.impl.PsiTreeChangePreprocessor[JavaPropertyDescriptor]
 
-'PsiTreeChangePreprocessor' @ [73:115] ==> public fun PsiTreeChangePreprocessor(function: (PsiTreeChangeEventImpl) -> Unit): PsiTreeChangePreprocessor defined in com.intellij.psi.impl[SimpleFunctionDescriptorImpl]
+'PsiTreeChangePreprocessor' @ [73:115] ==> public fun PsiTreeChangePreprocessor(function: (PsiTreeChangeEventImpl) -> Unit): PsiTreeChangePreprocessor defined in com.intellij.psi.impl[SamConstructorDescriptorImpl]
 
 'java' @ [73:148] ==> public val <T> KClass<PsiTreeChangePreprocessor>.java: Class<PsiTreeChangePreprocessor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -62,7 +62,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [74:44] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>, @NotNull p2: Class<out (PsiElementFinder..PsiElementFinder?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElementFinder
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElementFinder..com.intellij.psi.PsiElementFinder?)
 
 'projectArea' @ [74:67] ==> val projectArea: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.setUpJavaCoreEnvironment.<no name provided>.preregisterServices[LocalVariableDescriptor]
 
@@ -80,7 +80,7 @@ Inferred types:
 
 'registerService' @ [78:37] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(NullableNotNullManager..NullableNotNullManager?)>, @NotNull p1: NullableNotNullManager): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> NullableNotNullManager
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.NullableNotNullManager..com.intellij.codeInsight.NullableNotNullManager?)
 
 'NullableNotNullManager' @ [78:53] ==> public constructor NullableNotNullManager(p0: (Project..Project?)) defined in com.intellij.codeInsight.NullableNotNullManager[JavaClassConstructorDescriptor]
 
@@ -112,7 +112,7 @@ Inferred types:
 
 'registerService' @ [85:44] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(JavaClassSupers..JavaClassSupers?)>, @NotNull p1: Class<out (JavaClassSupers..JavaClassSupers?)>): Unit defined in com.intellij.mock.MockApplication[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaClassSupers
+    <T : (Any..Any?)> -> (com.intellij.psi.util.JavaClassSupers..com.intellij.psi.util.JavaClassSupers?)
 
 'JavaClassSupers' @ [85:60] ==> public constructor JavaClassSupers() defined in com.intellij.psi.util.JavaClassSupers[JavaClassConstructorDescriptor]
 
@@ -154,7 +154,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [98:36] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: String, @NotNull p2: Class<out (FileTypeExtensionPoint<*>..FileTypeExtensionPoint<*>?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FileTypeExtensionPoint<*>
+    <T : (Any..Any?)> -> (com.intellij.openapi.fileTypes.FileTypeExtensionPoint<*>..com.intellij.openapi.fileTypes.FileTypeExtensionPoint<*>?)
 
 'area' @ [98:59] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.registerExtensionPoints[ValueParameterDescriptorImpl]
 
@@ -162,7 +162,7 @@ Inferred types:
 
 'FileTypeExtensionPoint' @ [98:97] ==> public constructor FileTypeExtensionPoint<T : (Any..Any?)>() defined in com.intellij.openapi.fileTypes.FileTypeExtensionPoint[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@1b732ee
 
 'java' @ [98:127] ==> public val <T> KClass<FileTypeExtensionPoint<*>>.java: Class<FileTypeExtensionPoint<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -170,7 +170,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [99:36] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(FileContextProvider..FileContextProvider?)>, @NotNull p2: Class<out (FileContextProvider..FileContextProvider?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FileContextProvider
+    <T : (Any..Any?)> -> (com.intellij.psi.FileContextProvider..com.intellij.psi.FileContextProvider?)
 
 'area' @ [99:59] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.registerExtensionPoints[ValueParameterDescriptorImpl]
 
@@ -184,13 +184,13 @@ Inferred types:
 
 'registerExtensionPoint' @ [101:36] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(MetaDataContributor..MetaDataContributor?)>, @NotNull p2: Class<out (MetaDataContributor..MetaDataContributor?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MetaDataContributor
+    <T : (Any..Any?)> -> (com.intellij.psi.meta.MetaDataContributor..com.intellij.psi.meta.MetaDataContributor?)
 
 'area' @ [101:59] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.registerExtensionPoints[ValueParameterDescriptorImpl]
 
 'EP_NAME' @ [101:85] ==> public final val EP_NAME: (ExtensionPointName<(MetaDataContributor..MetaDataContributor?)>..ExtensionPointName<(MetaDataContributor..MetaDataContributor?)>?) defined in com.intellij.psi.meta.MetaDataContributor[JavaPropertyDescriptor]
 
-'MetaDataContributor' @ [101:94] ==> public fun MetaDataContributor(function: ((MetaDataRegistrar..MetaDataRegistrar?)) -> Unit): MetaDataContributor defined in com.intellij.psi.meta[SimpleFunctionDescriptorImpl]
+'MetaDataContributor' @ [101:94] ==> public fun MetaDataContributor(function: ((MetaDataRegistrar..MetaDataRegistrar?)) -> Unit): MetaDataContributor defined in com.intellij.psi.meta[SamConstructorDescriptorImpl]
 
 'java' @ [101:121] ==> public val <T> KClass<MetaDataContributor>.java: Class<MetaDataContributor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -198,7 +198,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [102:36] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(PsiAugmentProvider..PsiAugmentProvider?)>, @NotNull p2: Class<out (PsiAugmentProvider..PsiAugmentProvider?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiAugmentProvider
+    <T : (Any..Any?)> -> (com.intellij.psi.augment.PsiAugmentProvider..com.intellij.psi.augment.PsiAugmentProvider?)
 
 'area' @ [102:59] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.registerExtensionPoints[ValueParameterDescriptorImpl]
 
@@ -212,7 +212,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [103:36] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(JavaMainMethodProvider..JavaMainMethodProvider?)>, @NotNull p2: Class<out (JavaMainMethodProvider..JavaMainMethodProvider?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaMainMethodProvider
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.runner.JavaMainMethodProvider..com.intellij.codeInsight.runner.JavaMainMethodProvider?)
 
 'area' @ [103:59] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.registerExtensionPoints[ValueParameterDescriptorImpl]
 
@@ -224,13 +224,13 @@ Inferred types:
 
 'registerExtensionPoint' @ [105:36] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(ContainerProvider..ContainerProvider?)>, @NotNull p2: Class<out (ContainerProvider..ContainerProvider?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContainerProvider
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.ContainerProvider..com.intellij.codeInsight.ContainerProvider?)
 
 'area' @ [105:59] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.registerExtensionPoints[ValueParameterDescriptorImpl]
 
 'EP_NAME' @ [105:83] ==> public final val EP_NAME: (ExtensionPointName<(ContainerProvider..ContainerProvider?)>..ExtensionPointName<(ContainerProvider..ContainerProvider?)>?) defined in com.intellij.codeInsight.ContainerProvider[JavaPropertyDescriptor]
 
-'ContainerProvider' @ [105:92] ==> public fun ContainerProvider(function: (PsiElement) -> PsiElement?): ContainerProvider defined in com.intellij.codeInsight[SimpleFunctionDescriptorImpl]
+'ContainerProvider' @ [105:92] ==> public fun ContainerProvider(function: (PsiElement) -> PsiElement?): ContainerProvider defined in com.intellij.codeInsight[SamConstructorDescriptorImpl]
 
 'java' @ [105:117] ==> public val <T> KClass<ContainerProvider>.java: Class<ContainerProvider> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -238,7 +238,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [106:36] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(ClsCustomNavigationPolicy..ClsCustomNavigationPolicy?)>, @NotNull p2: Class<out (ClsCustomNavigationPolicy..ClsCustomNavigationPolicy?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClsCustomNavigationPolicy
+    <T : (Any..Any?)> -> (com.intellij.psi.impl.compiled.ClsCustomNavigationPolicy..com.intellij.psi.impl.compiled.ClsCustomNavigationPolicy?)
 
 'area' @ [106:59] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.registerExtensionPoints[ValueParameterDescriptorImpl]
 
@@ -250,13 +250,13 @@ Inferred types:
 
 'registerExtensionPoint' @ [107:36] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(ClassFileDecompilers.Decompiler..ClassFileDecompilers.Decompiler?)>, @NotNull p2: Class<out (ClassFileDecompilers.Decompiler..ClassFileDecompilers.Decompiler?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Decompiler
+    <T : (Any..Any?)> -> (com.intellij.psi.compiled.ClassFileDecompilers.Decompiler..com.intellij.psi.compiled.ClassFileDecompilers.Decompiler?)
 
 'area' @ [107:59] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.registerExtensionPoints[ValueParameterDescriptorImpl]
 
 'EP_NAME' @ [107:86] ==> public final val EP_NAME: (ExtensionPointName<(ClassFileDecompilers.Decompiler..ClassFileDecompilers.Decompiler?)>..ExtensionPointName<(ClassFileDecompilers.Decompiler..ClassFileDecompilers.Decompiler?)>?) defined in com.intellij.psi.compiled.ClassFileDecompilers[JavaPropertyDescriptor]
 
-'Decompiler' @ [107:116] ==> public final fun Decompiler(function: (VirtualFile) -> Boolean): ClassFileDecompilers.Decompiler defined in com.intellij.psi.compiled.ClassFileDecompilers[SimpleFunctionDescriptorImpl]
+'Decompiler' @ [107:116] ==> public final fun Decompiler(function: (VirtualFile) -> Boolean): ClassFileDecompilers.Decompiler defined in com.intellij.psi.compiled.ClassFileDecompilers[SamConstructorDescriptorImpl]
 
 'java' @ [107:134] ==> public val <T> KClass<ClassFileDecompilers.Decompiler>.java: Class<ClassFileDecompilers.Decompiler> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -264,7 +264,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [109:36] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(TypeAnnotationModifier..TypeAnnotationModifier?)>, @NotNull p2: Class<out (TypeAnnotationModifier..TypeAnnotationModifier?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeAnnotationModifier
+    <T : (Any..Any?)> -> (com.intellij.psi.augment.TypeAnnotationModifier..com.intellij.psi.augment.TypeAnnotationModifier?)
 
 'area' @ [109:59] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.registerExtensionPoints[ValueParameterDescriptorImpl]
 
@@ -278,7 +278,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [110:36] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(MetaLanguage..MetaLanguage?)>, @NotNull p2: Class<out (MetaLanguage..MetaLanguage?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MetaLanguage
+    <T : (Any..Any?)> -> (com.intellij.lang.MetaLanguage..com.intellij.lang.MetaLanguage?)
 
 'area' @ [110:59] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.j2k.AbstractJavaToKotlinConverterForWebDemoTest.registerExtensionPoints[ValueParameterDescriptorImpl]
 

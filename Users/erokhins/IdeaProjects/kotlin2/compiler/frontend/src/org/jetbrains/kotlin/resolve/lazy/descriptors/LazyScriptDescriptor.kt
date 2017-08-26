@@ -14,8 +14,8 @@
 
 'record' @ [50:30] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(PsiElement..PsiElement?), (ScriptDescriptor..ScriptDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ScriptDescriptor..ScriptDescriptor?)>?), key: (PsiElement..PsiElement?), value: (ScriptDescriptor..ScriptDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ScriptDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ScriptDescriptor..org.jetbrains.kotlin.descriptors.ScriptDescriptor?)
 
 'SCRIPT' @ [50:52] ==> public final val SCRIPT: (WritableSlice<(PsiElement..PsiElement?), (ScriptDescriptor..ScriptDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ScriptDescriptor..ScriptDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -41,9 +41,9 @@ Inferred types:
 
 'priority' @ [59:34] ==> private final val priority: Int defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyScriptDescriptor[PropertyDescriptorImpl]
 
-'lazy' @ [62:16] ==> public fun <T> lazy(initializer: () -> KotlinScriptDefinition): Lazy<KotlinScriptDefinition> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [62:16] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinScriptDefinition
+    <T> -> T
 
 'scriptInfo' @ [63:28] ==> internal final val scriptInfo: KtScriptInfo defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyScriptDescriptor[PropertyDescriptorImpl]
 
@@ -91,7 +91,9 @@ Inferred types:
 Inferred types:
     <T> -> KotlinType
 
-'ScriptHelper' @ [83:47] ==> public companion object defined in org.jetbrains.kotlin.script.ScriptHelper[FakeCallableDescriptorForObject]
+'!!' @ [83:47] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: ScriptHelper?): ScriptHelper[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> ScriptHelper
 
 'getInstance' @ [83:60] ==> public final fun getInstance(): ScriptHelper? defined in org.jetbrains.kotlin.script.ScriptHelper.Companion[SimpleFunctionDescriptorImpl]
 

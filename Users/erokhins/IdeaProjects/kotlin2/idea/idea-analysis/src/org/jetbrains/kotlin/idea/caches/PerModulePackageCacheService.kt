@@ -8,7 +8,7 @@
 
 'subscribe' @ [52:20] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(BulkFileListener..BulkFileListener?)>, @NotNull p1: BulkFileListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> BulkFileListener
+    <L : (Any..Any?)> -> (com.intellij.openapi.vfs.newvfs.BulkFileListener..com.intellij.openapi.vfs.newvfs.BulkFileListener?)
 
 'VFS_CHANGES' @ [52:49] ==> public final val VFS_CHANGES: (Topic<(BulkFileListener..BulkFileListener?)>..Topic<(BulkFileListener..BulkFileListener?)>?) defined in com.intellij.openapi.vfs.VirtualFileManager[JavaPropertyDescriptor]
 
@@ -396,9 +396,7 @@ Inferred types:
 
 'getUserData' @ [158:37] ==> @Nullable public abstract fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>..ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>?)>): ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>? defined in com.intellij.openapi.module.Module[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>
-
-'PerModulePackageCacheService' @ [158:49] ==> public companion object defined in org.jetbrains.kotlin.idea.caches.PerModulePackageCacheService[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (java.util.concurrent.ConcurrentMap<org.jetbrains.kotlin.analyzer.ModuleInfo, com.intellij.openapi.util.Ref<java.util.concurrent.ConcurrentMap<org.jetbrains.kotlin.name.FqName, kotlin.Boolean>>>..java.util.concurrent.ConcurrentMap<org.jetbrains.kotlin.analyzer.ModuleInfo, com.intellij.openapi.util.Ref<java.util.concurrent.ConcurrentMap<org.jetbrains.kotlin.name.FqName, kotlin.Boolean>>>?)
 
 'PER_MODULE_PACKAGE_CACHE' @ [158:78] ==> private final val PER_MODULE_PACKAGE_CACHE: Key<(ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>..ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>?)> defined in org.jetbrains.kotlin.idea.caches.PerModulePackageCacheService.Companion[PropertyDescriptorImpl]
 
@@ -420,9 +418,7 @@ Inferred types:
 
 'putUserData' @ [160:37] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>..ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>?)>, @Nullable p1: ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>?): Unit defined in com.intellij.openapi.module.Module[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>
-
-'PerModulePackageCacheService' @ [160:49] ==> public companion object defined in org.jetbrains.kotlin.idea.caches.PerModulePackageCacheService[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (java.util.concurrent.ConcurrentMap<org.jetbrains.kotlin.analyzer.ModuleInfo, com.intellij.openapi.util.Ref<java.util.concurrent.ConcurrentMap<org.jetbrains.kotlin.name.FqName, kotlin.Boolean>>>..java.util.concurrent.ConcurrentMap<org.jetbrains.kotlin.analyzer.ModuleInfo, com.intellij.openapi.util.Ref<java.util.concurrent.ConcurrentMap<org.jetbrains.kotlin.name.FqName, kotlin.Boolean>>>?)
 
 'PER_MODULE_PACKAGE_CACHE' @ [160:78] ==> private final val PER_MODULE_PACKAGE_CACHE: Key<(ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>..ConcurrentMap<ModuleInfo, Ref<ConcurrentMap<FqName, Boolean>>>?)> defined in org.jetbrains.kotlin.idea.caches.PerModulePackageCacheService.Companion[PropertyDescriptorImpl]
 

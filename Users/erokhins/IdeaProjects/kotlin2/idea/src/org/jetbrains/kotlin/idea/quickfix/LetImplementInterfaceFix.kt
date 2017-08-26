@@ -38,6 +38,8 @@ Inferred types:
 
 'KotlinType' @ [54:72] ==> private constructor KotlinType() defined in org.jetbrains.kotlin.types.KotlinType[DeserializedClassConstructorDescriptor]
 
+'constructor' @ [54:84] ==> public abstract val constructor: TypeConstructor defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
+
 'makeNotNullable' @ [58:49] ==> @NotNull public open fun makeNotNullable(@NotNull p0: KotlinType): KotlinType defined in org.jetbrains.kotlin.types.TypeUtils[JavaMethodDescriptor]
 
 'expectedType' @ [58:65] ==> value-parameter expectedType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.LetImplementInterfaceFix.<init>[ValueParameterDescriptorImpl]

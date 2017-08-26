@@ -7,7 +7,7 @@ Inferred types:
 
 'accept' @ [34:17] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsNode..JsNode?)): (JsNode..JsNode?) defined in org.jetbrains.kotlin.js.inline.clean.UnusedInstanceCollector[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsNode
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'root' @ [34:24] ==> value-parameter root: JsNode defined in org.jetbrains.kotlin.js.inline.clean.removeUnusedLocalFunctionDeclarations[ValueParameterDescriptorImpl]
 
@@ -27,7 +27,7 @@ Inferred types:
 
 'accept' @ [40:7] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsNode..JsNode?)): (JsNode..JsNode?) defined in org.jetbrains.kotlin.js.inline.clean.NodeRemover[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsNode
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'root' @ [40:14] ==> value-parameter root: JsNode defined in org.jetbrains.kotlin.js.inline.clean.removeUnusedLocalFunctionDeclarations[ValueParameterDescriptorImpl]
 
@@ -76,7 +76,7 @@ Inferred types:
 
 'currentStatement' @ [55:46] ==> val currentStatement: JsStatement? defined in org.jetbrains.kotlin.js.inline.clean.UnusedInstanceCollector.visit[LocalVariableDescriptor]
 
-'collectUsedNames' @ [57:26] ==> public fun collectUsedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectUsedNames' @ [57:26] ==> public fun collectUsedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'x' @ [57:43] ==> value-parameter x: JsVars.JsVar defined in org.jetbrains.kotlin.js.inline.clean.UnusedInstanceCollector.visit[ValueParameterDescriptorImpl]
 

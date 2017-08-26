@@ -382,6 +382,8 @@ Inferred types:
 Inferred types:
     <T> -> PsiElement
 
+'delete' @ [154:38] ==> public abstract fun delete(): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
+
 'expression' @ [158:13] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.intentions.IfToWhenIntention.addOrBranches[ValueParameterDescriptorImpl]
 
 'expression' @ [158:49] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.intentions.IfToWhenIntention.addOrBranches[ValueParameterDescriptorImpl]

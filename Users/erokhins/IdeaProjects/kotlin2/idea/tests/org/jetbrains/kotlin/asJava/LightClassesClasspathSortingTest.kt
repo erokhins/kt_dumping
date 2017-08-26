@@ -83,7 +83,7 @@ Inferred types:
 
 'java' @ [59:171] ==> public val <T> KClass<out PsiClass>.java: Class<out PsiClass> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiClass
+    <T> -> Captured(out PsiClass)
 
 'assert' @ [60:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -95,7 +95,7 @@ Inferred types:
 
 'java' @ [60:134] ==> public val <T> KClass<out PsiClass>.java: Class<out PsiClass> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiClass
+    <T> -> Captured(out PsiClass)
 
 'JdkAndMockLibraryProjectDescriptor' @ [64:13] ==> public constructor JdkAndMockLibraryProjectDescriptor(sourcesPath: (String..String?), withSources: Boolean) defined in org.jetbrains.kotlin.idea.test.JdkAndMockLibraryProjectDescriptor[JavaClassConstructorDescriptor]
 

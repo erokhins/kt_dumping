@@ -5,8 +5,8 @@ Inferred types:
 
 'ANDCombinedMemberInfoModel' @ [34:9] ==> public constructor ANDCombinedMemberInfoModel<T : (PsiElement..PsiElement?), M : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)>(p0: (MemberInfoModel<(T..T?), (M..M?)>..MemberInfoModel<(T..T?), (M..M?)>?), p1: (MemberInfoModel<(T..T?), (M..M?)>..MemberInfoModel<(T..T?), (M..M?)>?)) defined in com.intellij.refactoring.classMembers.ANDCombinedMemberInfoModel[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
-    <M : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)> -> M
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
+    <M : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)> -> (M..M?)
 
 'KotlinUsesDependencyMemberInfoModel<T, M>' @ [35:26] ==> public constructor KotlinUsesDependencyMemberInfoModel<T : KtNamedDeclaration, M : MemberInfoBase<T>>(klass: KtClassOrObject, superClass: PsiNamedElement?, recursive: Boolean) defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinUsesDependencyMemberInfoModel[ClassConstructorDescriptorImpl]
 Inferred types:

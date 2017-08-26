@@ -6,7 +6,7 @@
 
 'java' @ [63:54] ==> public val <T> KClass<out KotlinCodeFragmentFactory>.java: Class<out KotlinCodeFragmentFactory> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinCodeFragmentFactory
+    <T> -> Captured(out KotlinCodeFragmentFactory)
 
 'getWrappedContextElement' @ [66:30] ==> private final fun getWrappedContextElement(project: Project, context: PsiElement?): PsiElement? defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory[SimpleFunctionDescriptorImpl]
 
@@ -87,9 +87,7 @@ Inferred types:
 
 'putCopyableUserData' @ [89:22] ==> public open fun <T : (Any..Any?)> putCopyableUserData(@NotNull p0: Key<((KtExpression) -> KotlinType?..((KtExpression) -> KotlinType?)?)>, p1: ((KtExpression) -> KotlinType?)?): Unit defined in org.jetbrains.kotlin.psi.KtCodeFragment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<KtExpression, KotlinType?>
-
-'KtCodeFragment' @ [89:42] ==> public companion object defined in org.jetbrains.kotlin.psi.KtCodeFragment[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> ((org.jetbrains.kotlin.psi.KtExpression) -> org.jetbrains.kotlin.types.KotlinType?..((org.jetbrains.kotlin.psi.KtExpression) -> org.jetbrains.kotlin.types.KotlinType?)?)
 
 'RUNTIME_TYPE_EVALUATOR' @ [89:57] ==> public final val RUNTIME_TYPE_EVALUATOR: Key<(KtExpression) -> KotlinType?> defined in org.jetbrains.kotlin.psi.KtCodeFragment.Companion[DeserializedPropertyDescriptor]
 
@@ -195,9 +193,7 @@ Inferred types:
 
 'putCopyableUserData' @ [120:26] ==> public open fun <T : (Any..Any?)> putCopyableUserData(@NotNull p0: Key<(() -> KtElement..(() -> KtElement)?)>, p1: (() -> KtElement)?): Unit defined in org.jetbrains.kotlin.psi.KtCodeFragment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function0<KtElement>
-
-'KtCodeFragment' @ [120:46] ==> public companion object defined in org.jetbrains.kotlin.psi.KtCodeFragment[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (() -> org.jetbrains.kotlin.psi.KtElement..(() -> org.jetbrains.kotlin.psi.KtElement)?)
 
 'FAKE_CONTEXT_FOR_JAVA_FILE' @ [120:61] ==> public final val FAKE_CONTEXT_FOR_JAVA_FILE: Key<() -> KtElement> defined in org.jetbrains.kotlin.psi.KtCodeFragment.Companion[DeserializedPropertyDescriptor]
 
@@ -384,7 +380,7 @@ Inferred types:
 
 'getCopyableUserData' @ [165:41] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(DebuggerContextImpl..DebuggerContextImpl?)>..Key<(DebuggerContextImpl..DebuggerContextImpl?)>?)): DebuggerContextImpl? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DebuggerContextImpl
+    <T : (Any..Any?)> -> (com.intellij.debugger.impl.DebuggerContextImpl..com.intellij.debugger.impl.DebuggerContextImpl?)
 
 'DEBUG_CONTEXT_FOR_TESTS' @ [165:61] ==> @TestOnly public final val DEBUG_CONTEXT_FOR_TESTS: Key<DebuggerContextImpl> defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion[PropertyDescriptorImpl]
 
@@ -471,8 +467,6 @@ Inferred types:
 
 'split' @ [198:28] ==> public fun CharSequence.split(vararg delimiters: String, ignoreCase: Boolean = ..., limit: Int = ...): List<String> defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'KtCodeFragment' @ [198:34] ==> public companion object defined in org.jetbrains.kotlin.psi.KtCodeFragment[FakeCallableDescriptorForObject]
-
 'IMPORT_SEPARATOR' @ [198:49] ==> public final val IMPORT_SEPARATOR: String defined in org.jetbrains.kotlin.psi.KtCodeFragment.Companion[DeserializedPropertyDescriptor]
 
 'mapNotNull' @ [199:22] ==> public inline fun <T, R : Any> Iterable<String>.mapNotNull(transform: (String) -> String?): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -487,8 +481,6 @@ Inferred types:
 'joinToString' @ [200:22] ==> public fun <T> Iterable<String>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: ((String) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
-
-'KtCodeFragment' @ [200:35] ==> public companion object defined in org.jetbrains.kotlin.psi.KtCodeFragment[FakeCallableDescriptorForObject]
 
 'IMPORT_SEPARATOR' @ [200:50] ==> public final val IMPORT_SEPARATOR: String defined in org.jetbrains.kotlin.psi.KtCodeFragment.Companion[DeserializedPropertyDescriptor]
 
@@ -692,7 +684,7 @@ Inferred types:
 
 'create' @ [288:79] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(DebuggerContextImpl..DebuggerContextImpl?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DebuggerContextImpl
+    <T : (Any..Any?)> -> (com.intellij.debugger.impl.DebuggerContextImpl..com.intellij.debugger.impl.DebuggerContextImpl?)
 
 'elementAt' @ [291:17] ==> value-parameter elementAt: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion.getContextElement[ValueParameterDescriptorImpl]
 
@@ -774,7 +766,7 @@ Inferred types:
 
 'findElementOfClassAtOffset' @ [314:25] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<(KtExpression..KtExpression?)>, p3: Boolean): KtExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'containingFile' @ [314:52] ==> val containingFile: (PsiFile..PsiFile?) defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion.getContextElement[LocalVariableDescriptor]
 
@@ -793,7 +785,7 @@ Inferred types:
 
 'getTopmostElementAtOffset' @ [316:53] ==> @Nullable public open fun <T : (Any..Any?)> getTopmostElementAtOffset(@NotNull element: PsiElement, offset: Int, @NotNull klass: Class<(KtExpression..KtExpression?)>): KtExpression? defined in org.jetbrains.kotlin.idea.codeInsight.CodeInsightUtils[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'it' @ [316:79] ==> value-parameter it: KtElement defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion.getContextElement.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1068,7 +1060,7 @@ Inferred types:
 
 'getCopyableUserData' @ [381:70] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(DebuggerContextImpl..DebuggerContextImpl?)>..Key<(DebuggerContextImpl..DebuggerContextImpl?)>?)): DebuggerContextImpl? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DebuggerContextImpl
+    <T : (Any..Any?)> -> (com.intellij.debugger.impl.DebuggerContextImpl..com.intellij.debugger.impl.DebuggerContextImpl?)
 
 'DEBUG_CONTEXT_FOR_TESTS' @ [381:90] ==> @TestOnly public final val DEBUG_CONTEXT_FOR_TESTS: Key<DebuggerContextImpl> defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion[PropertyDescriptorImpl]
 
@@ -1084,8 +1076,8 @@ Inferred types:
 
 'allMarkers' @ [383:113] ==> public final val <V : (XValue..XValue?), M : (Any..Any?)> XValueMarkers<out (XValue..XValue?), out (Any..Any?)>.allMarkers: (MutableMap<out (Any..Any?), (ValueMarkup..ValueMarkup?)>..Map<out (Any..Any?), (ValueMarkup..ValueMarkup?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <V : (XValue..XValue?)> -> (com.intellij.xdebugger.frame.XValue..com.intellij.xdebugger.frame.XValue?)
-    <M : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <V : (XValue..XValue?)> -> Captured(*)
+    <M : (Any..Any?)> -> Captured(*)
 
 'markupMap' @ [385:13] ==> val markupMap: Map<*, ValueMarkup>? defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.wrapContextIfNeeded[LocalVariableDescriptor]
 
@@ -1228,7 +1220,7 @@ Inferred types:
 
 'putUserData' @ [422:30] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Value..Value?)>, @Nullable p1: Value?): Unit defined in org.jetbrains.kotlin.psi.KtProperty[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Value
+    <T : (Any..Any?)> -> (com.sun.jdi.Value..com.sun.jdi.Value?)
 
 'LABEL_VARIABLE_VALUE_KEY' @ [422:42] ==> public final val LABEL_VARIABLE_VALUE_KEY: Key<Value> defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion[PropertyDescriptorImpl]
 

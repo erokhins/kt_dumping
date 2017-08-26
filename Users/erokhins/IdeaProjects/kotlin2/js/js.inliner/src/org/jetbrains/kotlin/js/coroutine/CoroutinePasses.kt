@@ -238,9 +238,9 @@ Inferred types:
 
 'ctx' @ [125:17] ==> value-parameter ctx: JsContext<in JsStatement> defined in org.jetbrains.kotlin.js.coroutine.replaceCoroutineFlowStatements.<no name provided>.endVisit[ValueParameterDescriptorImpl]
 
-'replaceMe' @ [125:21] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
+'replaceMe' @ [125:21] ==> public abstract fun <R : (JsStatement..JsStatement?)> replaceMe(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsStatement)..CapturedType(in JsStatement)?)> -> JsExpressionStatement
+    <R : (JsStatement..JsStatement?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'JsExpressionStatement' @ [125:31] ==> public constructor JsExpressionStatement(@NotNull p0: JsExpression) defined in org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement[JavaClassConstructorDescriptor]
 
@@ -286,9 +286,9 @@ Inferred types:
 
 'ctx' @ [134:17] ==> value-parameter ctx: JsContext<in JsStatement> defined in org.jetbrains.kotlin.js.coroutine.replaceCoroutineFlowStatements.<no name provided>.endVisit[ValueParameterDescriptorImpl]
 
-'replaceMe' @ [134:21] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
+'replaceMe' @ [134:21] ==> public abstract fun <R : (JsStatement..JsStatement?)> replaceMe(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsStatement)..CapturedType(in JsStatement)?)> -> JsExpressionStatement
+    <R : (JsStatement..JsStatement?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'JsExpressionStatement' @ [134:31] ==> public constructor JsExpressionStatement(@NotNull p0: JsExpression) defined in org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement[JavaClassConstructorDescriptor]
 
@@ -362,9 +362,9 @@ Inferred types:
 
 'ctx' @ [144:21] ==> value-parameter ctx: JsContext<in JsStatement> defined in org.jetbrains.kotlin.js.coroutine.replaceCoroutineFlowStatements.<no name provided>.endVisit[ValueParameterDescriptorImpl]
 
-'replaceMe' @ [144:25] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
+'replaceMe' @ [144:25] ==> public abstract fun <R : (JsStatement..JsStatement?)> replaceMe(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsStatement)..CapturedType(in JsStatement)?)> -> JsExpressionStatement
+    <R : (JsStatement..JsStatement?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'JsExpressionStatement' @ [144:35] ==> public constructor JsExpressionStatement(@NotNull p0: JsExpression) defined in org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement[JavaClassConstructorDescriptor]
 
@@ -400,7 +400,7 @@ Inferred types:
 
 'accept' @ [154:46] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsBlock..JsBlock?)): (JsBlock..JsBlock?) defined in org.jetbrains.kotlin.js.coroutine.replaceCoroutineFlowStatements.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsBlock
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsBlock..org.jetbrains.kotlin.js.backend.ast.JsBlock?)
 
 'it' @ [154:53] ==> value-parameter it: CoroutineBlock defined in org.jetbrains.kotlin.js.coroutine.replaceCoroutineFlowStatements.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -421,7 +421,7 @@ Inferred types:
 
 'block' @ [166:29] ==> value-parameter block: CoroutineBlock defined in org.jetbrains.kotlin.js.coroutine.buildGraph.visitBlock[ValueParameterDescriptorImpl]
 
-'collectFinallyPaths' @ [166:35] ==> private fun CoroutineBlock.collectFinallyPaths(): List<List<CoroutineBlock>> defined in org.jetbrains.kotlin.js.coroutine[SimpleFunctionDescriptorImpl]
+'collectFinallyPaths' @ [166:35] ==> private fun CoroutineBlock.collectFinallyPaths(): List<List<CoroutineBlock>> defined in org.jetbrains.kotlin.js.coroutine in file CoroutinePasses.kt[SimpleFunctionDescriptorImpl]
 
 'component1' @ [167:19] ==> public final operator fun component1(): CoroutineBlock defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
@@ -486,7 +486,7 @@ Inferred types:
 
 'block' @ [177:23] ==> value-parameter block: CoroutineBlock defined in org.jetbrains.kotlin.js.coroutine.buildGraph.visitBlock[ValueParameterDescriptorImpl]
 
-'collectTargetBlocks' @ [177:29] ==> private fun CoroutineBlock.collectTargetBlocks(): Set<CoroutineBlock> defined in org.jetbrains.kotlin.js.coroutine[SimpleFunctionDescriptorImpl]
+'collectTargetBlocks' @ [177:29] ==> private fun CoroutineBlock.collectTargetBlocks(): Set<CoroutineBlock> defined in org.jetbrains.kotlin.js.coroutine in file CoroutinePasses.kt[SimpleFunctionDescriptorImpl]
 
 'block' @ [178:13] ==> value-parameter block: CoroutineBlock defined in org.jetbrains.kotlin.js.coroutine.buildGraph.visitBlock[ValueParameterDescriptorImpl]
 
@@ -503,6 +503,8 @@ Inferred types:
 'forEach' @ [181:20] ==> @HidesMembers public inline fun <T> Iterable<CoroutineBlock>.forEach(action: (CoroutineBlock) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> CoroutineBlock
+
+'visitBlock' @ [181:30] ==> local final fun visitBlock(block: CoroutineBlock): Unit defined in org.jetbrains.kotlin.js.coroutine.buildGraph[SimpleFunctionDescriptorImpl]
 
 'visitBlock' @ [184:5] ==> local final fun visitBlock(block: CoroutineBlock): Unit defined in org.jetbrains.kotlin.js.coroutine.buildGraph[SimpleFunctionDescriptorImpl]
 
@@ -571,7 +573,7 @@ Inferred types:
 
 'replaceMe' @ [212:17] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsNameRef..JsNameRef?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsNode)..CapturedType(in JsNode)?)> -> JsNameRef
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNameRef..org.jetbrains.kotlin.js.backend.ast.JsNameRef?)
 
 'JsNameRef' @ [212:27] ==> public constructor JsNameRef(@NotNull p0: JsName, p1: (JsExpression..JsExpression?)) defined in org.jetbrains.kotlin.js.backend.ast.JsNameRef[JavaClassConstructorDescriptor]
 
@@ -611,7 +613,7 @@ Inferred types:
 
 'replaceMe' @ [220:25] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsThisRef..JsThisRef?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsNode)..CapturedType(in JsNode)?)> -> JsThisRef
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsThisRef..org.jetbrains.kotlin.js.backend.ast.JsThisRef?)
 
 'JsThisRef' @ [220:35] ==> public constructor JsThisRef() defined in org.jetbrains.kotlin.js.backend.ast.JsThisRef[JavaClassConstructorDescriptor]
 
@@ -623,7 +625,7 @@ Inferred types:
 
 'replaceMe' @ [224:25] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsNameRef..JsNameRef?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsNode)..CapturedType(in JsNode)?)> -> JsNameRef
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNameRef..org.jetbrains.kotlin.js.backend.ast.JsNameRef?)
 
 'JsNameRef' @ [224:35] ==> public constructor JsNameRef(@NotNull p0: JsName, p1: (JsExpression..JsExpression?)) defined in org.jetbrains.kotlin.js.backend.ast.JsNameRef[JavaClassConstructorDescriptor]
 
@@ -657,7 +659,7 @@ Inferred types:
 
 'replaceMe' @ [231:25] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsNameRef..JsNameRef?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsNode)..CapturedType(in JsNode)?)> -> JsNameRef
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNameRef..org.jetbrains.kotlin.js.backend.ast.JsNameRef?)
 
 'JsNameRef' @ [231:35] ==> public constructor JsNameRef(@NotNull p0: JsName, p1: (JsExpression..JsExpression?)) defined in org.jetbrains.kotlin.js.backend.ast.JsNameRef[JavaClassConstructorDescriptor]
 
@@ -689,7 +691,7 @@ Inferred types:
 
 'accept' @ [239:13] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsBlock..JsBlock?)): (JsBlock..JsBlock?) defined in org.jetbrains.kotlin.js.coroutine.replaceSpecialReferences.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsBlock
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsBlock..org.jetbrains.kotlin.js.backend.ast.JsBlock?)
 
 'this' @ [239:20] ==> <this> defined in org.jetbrains.kotlin.js.coroutine.replaceSpecialReferences[ReceiverParameterDescriptorImpl]
 
@@ -701,7 +703,7 @@ Inferred types:
 
 'x' @ [249:28] ==> value-parameter x: JsFunction defined in org.jetbrains.kotlin.js.coroutine.replaceLocalVariables.<no name provided>.endVisit[ValueParameterDescriptorImpl]
 
-'collectFreeVariables' @ [249:30] ==> public fun JsFunction.collectFreeVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectFreeVariables' @ [249:30] ==> public fun JsFunction.collectFreeVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'intersect' @ [249:53] ==> public infix fun <T> Iterable<JsName>.intersect(other: Iterable<JsName>): Set<JsName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -811,7 +813,7 @@ Inferred types:
 
 'replaceMe' @ [260:21] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsInvocation..JsInvocation?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsNode)..CapturedType(in JsNode)?)> -> JsInvocation
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsInvocation..org.jetbrains.kotlin.js.backend.ast.JsInvocation?)
 
 'wrapperInvocation' @ [260:31] ==> val wrapperInvocation: JsInvocation defined in org.jetbrains.kotlin.js.coroutine.replaceLocalVariables.<no name provided>.endVisit[LocalVariableDescriptor]
 
@@ -837,7 +839,7 @@ Inferred types:
 
 'replaceMe' @ [267:21] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpression..JsExpression?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsNode)..CapturedType(in JsNode)?)> -> JsExpression
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'JsNameRef' @ [267:31] ==> public constructor JsNameRef(@NotNull p0: JsName, p1: (JsExpression..JsExpression?)) defined in org.jetbrains.kotlin.js.backend.ast.JsNameRef[JavaClassConstructorDescriptor]
 
@@ -912,9 +914,9 @@ Inferred types:
 
 'ctx' @ [284:17] ==> value-parameter ctx: JsContext<in JsStatement> defined in org.jetbrains.kotlin.js.coroutine.replaceLocalVariables.<no name provided>.endVisit[ValueParameterDescriptorImpl]
 
-'replaceMe' @ [284:21] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
+'replaceMe' @ [284:21] ==> public abstract fun <R : (JsStatement..JsStatement?)> replaceMe(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsStatement)..CapturedType(in JsStatement)?)> -> JsExpressionStatement
+    <R : (JsStatement..JsStatement?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'JsExpressionStatement' @ [284:31] ==> public constructor JsExpressionStatement(@NotNull p0: JsExpression) defined in org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement[JavaClassConstructorDescriptor]
 
@@ -930,7 +932,7 @@ Inferred types:
 
 'accept' @ [291:13] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsBlock..JsBlock?)): (JsBlock..JsBlock?) defined in org.jetbrains.kotlin.js.coroutine.replaceLocalVariables.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsBlock
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsBlock..org.jetbrains.kotlin.js.backend.ast.JsBlock?)
 
 'this' @ [291:20] ==> <this> defined in org.jetbrains.kotlin.js.coroutine.replaceLocalVariables[ReceiverParameterDescriptorImpl]
 

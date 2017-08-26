@@ -2,7 +2,7 @@
 
 'expression' @ [34:13] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.inspections.ReplaceRangeToWithUntilInspection.visitRangeToExpression[ValueParameterDescriptorImpl]
 
-'getArguments' @ [34:24] ==> internal fun KtExpression.getArguments(): Pair<KtExpression?, KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'getArguments' @ [34:24] ==> internal fun KtExpression.getArguments(): Pair<KtExpression?, KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions in file ReplaceUntilWithRangeToIntention.kt[SimpleFunctionDescriptorImpl]
 
 'second' @ [34:40] ==> public final val second: KtExpression? defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
@@ -26,7 +26,7 @@
 
 'element' @ [52:24] ==> val element: KtExpression defined in org.jetbrains.kotlin.idea.inspections.ReplaceRangeToWithUntilInspection.ReplaceWithUntilQuickFix.applyFix[LocalVariableDescriptor]
 
-'getArguments' @ [52:32] ==> internal fun KtExpression.getArguments(): Pair<KtExpression?, KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'getArguments' @ [52:32] ==> internal fun KtExpression.getArguments(): Pair<KtExpression?, KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions in file ReplaceUntilWithRangeToIntention.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [53:13] ==> val element: KtExpression defined in org.jetbrains.kotlin.idea.inspections.ReplaceRangeToWithUntilInspection.ReplaceWithUntilQuickFix.applyFix[LocalVariableDescriptor]
 
@@ -42,9 +42,9 @@
 
 'first' @ [55:26] ==> public final val first: KtExpression? defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
-'?:' @ [56:21] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtExpression?, right: KtExpression): KtExpression[SimpleFunctionDescriptorImpl]
+'?:' @ [56:21] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Any?, right: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtExpression
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Any
 
 'args' @ [56:22] ==> val args: Pair<KtExpression?, KtExpression?> defined in org.jetbrains.kotlin.idea.inspections.ReplaceRangeToWithUntilInspection.ReplaceWithUntilQuickFix.applyFix[LocalVariableDescriptor]
 

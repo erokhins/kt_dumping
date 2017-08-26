@@ -48,7 +48,9 @@ Inferred types:
 
 'containingDeclaration' @ [93:62] ==> public final val FunctionDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'DescriptorToSourceUtilsIde' @ [94:29] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
+'?:' @ [94:29] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'getAnyDeclaration' @ [94:56] ==> public final fun getAnyDeclaration(project: Project, descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 
@@ -266,8 +268,8 @@ Inferred types:
 
 'dfs' @ [151:24] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull p0: (MutableCollection<(FunctionDescriptor..FunctionDescriptor?)>..Collection<(FunctionDescriptor..FunctionDescriptor?)>), @NotNull p1: ((FunctionDescriptor..FunctionDescriptor?)) -> (MutableIterable<(FunctionDescriptor..FunctionDescriptor?)>..Iterable<(FunctionDescriptor..FunctionDescriptor?)>), @NotNull p2: DFS.NodeHandler<(FunctionDescriptor..FunctionDescriptor?), (ArrayList<FunctionDescriptor>..ArrayList<FunctionDescriptor>?)>): (ArrayList<FunctionDescriptor>..ArrayList<FunctionDescriptor>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> FunctionDescriptor
-    <R : (Any..Any?)> -> ArrayList<FunctionDescriptor>
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
+    <R : (Any..Any?)> -> (java.util.ArrayList<org.jetbrains.kotlin.descriptors.FunctionDescriptor>..java.util.ArrayList<org.jetbrains.kotlin.descriptors.FunctionDescriptor>?)
 
 'listOf' @ [152:21] ==> public fun <T> listOf(element: FunctionDescriptor): List<FunctionDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -391,7 +393,7 @@ Inferred types:
 
 'diagnostic' @ [185:47] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeSuspendInHierarchyFix.Companion.doCreateActions[ValueParameterDescriptorImpl]
 
-'a' @ [185:59] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<(DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>.a: (MutableCollection<(DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)[MyPropertyDescriptor]
+'a' @ [185:59] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<(DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>.a: (MutableCollection<(DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>)[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (kotlin.collections.MutableCollection<(org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>?)

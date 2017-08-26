@@ -26,7 +26,7 @@
 
 'SmartList' @ [39:59] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> IrVarargElement
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.ir.expressions.IrVarargElement..org.jetbrains.kotlin.ir.expressions.IrVarargElement?)
 
 'elements' @ [42:9] ==> public open val elements: MutableList<IrVarargElement> defined in org.jetbrains.kotlin.ir.expressions.impl.IrVarargImpl[PropertyDescriptorImpl]
 

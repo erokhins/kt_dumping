@@ -2,19 +2,11 @@
 Inferred types:
     <reified @PureReifiable T> -> FqName
 
-'NATIVE' @ [31:42] ==> enum entry NATIVE defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
 'fqName' @ [31:49] ==> public final val fqName: FqName defined in org.jetbrains.kotlin.js.PredefinedAnnotation[PropertyDescriptorImpl]
-
-'NATIVE_INVOKE' @ [31:57] ==> enum entry NATIVE_INVOKE defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'fqName' @ [31:71] ==> public final val fqName: FqName defined in org.jetbrains.kotlin.js.PredefinedAnnotation[PropertyDescriptorImpl]
 
-'NATIVE_GETTER' @ [31:79] ==> enum entry NATIVE_GETTER defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
 'fqName' @ [31:93] ==> public final val fqName: FqName defined in org.jetbrains.kotlin.js.PredefinedAnnotation[PropertyDescriptorImpl]
-
-'NATIVE_SETTER' @ [31:101] ==> enum entry NATIVE_SETTER defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'fqName' @ [31:115] ==> public final val fqName: FqName defined in org.jetbrains.kotlin.js.PredefinedAnnotation[PropertyDescriptorImpl]
 

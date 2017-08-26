@@ -351,7 +351,7 @@ Inferred types:
 
 'instantiateTools' @ [164:44] ==> @NotNull public open fun <T : (InspectionProfileEntry..InspectionProfileEntry?)> instantiateTools(@NotNull p0: (MutableCollection<(Class<out (InspectionProfileEntry..InspectionProfileEntry?)>..Class<out (InspectionProfileEntry..InspectionProfileEntry?)>?)>..Collection<(Class<out (InspectionProfileEntry..InspectionProfileEntry?)>..Class<out (InspectionProfileEntry..InspectionProfileEntry?)>?)>)): (MutableList<(InspectionProfileEntry..InspectionProfileEntry?)>..List<(InspectionProfileEntry..InspectionProfileEntry?)>) defined in com.intellij.testFramework.InspectionTestUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (InspectionProfileEntry..InspectionProfileEntry?)> -> InspectionProfileEntry
+    <T : (InspectionProfileEntry..InspectionProfileEntry?)> -> (com.intellij.codeInspection.InspectionProfileEntry..com.intellij.codeInspection.InspectionProfileEntry?)
 
 'listOf' @ [165:21] ==> public fun <T> listOf(element: Class<out InspectionProfileEntry>): List<Class<out InspectionProfileEntry>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -460,9 +460,9 @@ Inferred types:
 
 'className' @ [181:80] ==> val className: String defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixTest.checkForUnexpectedActions[LocalVariableDescriptor]
 
-'HashSet' @ [183:36] ==> public final fun <E> <init>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)): HashSet<String> /* = HashSet<String> */ defined in kotlin.collections.HashSet[TypeAliasConstructorDescriptorImpl]
+'HashSet' @ [183:36] ==> public final fun <E> <init>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)): HashSet<(String..String?)> /* = HashSet<(String..String?)> */ defined in kotlin.collections.HashSet[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> String
+    <E> -> (kotlin.String..kotlin.String?)
 
 'findLinesWithPrefixesRemoved' @ [183:66] ==> @NotNull public open fun findLinesWithPrefixesRemoved(p0: (String..String?), vararg p1: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>) defined in org.jetbrains.kotlin.test.InTextDirectivesUtils[JavaMethodDescriptor]
 
@@ -486,9 +486,9 @@ Inferred types:
 Inferred types:
     <T : Any> -> (com.intellij.codeInsight.intention.IntentionAction..com.intellij.codeInsight.intention.IntentionAction?)
 
-'validActions' @ [185:93] ==> val validActions: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixTest.checkForUnexpectedActions[LocalVariableDescriptor]
+'validActions' @ [185:93] ==> val validActions: HashSet<(String..String?)> /* = HashSet<(String..String?)> */ defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixTest.checkForUnexpectedActions[LocalVariableDescriptor]
 
-'contains' @ [185:106] ==> public open fun contains(element: String): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'contains' @ [185:106] ==> public open fun contains(element: (String..String?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'action' @ [185:115] ==> value-parameter action: (IntentionAction..IntentionAction?) defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixTest.checkForUnexpectedActions.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -537,9 +537,9 @@ Inferred types:
 
 '!' @ [193:70] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'validActions' @ [193:71] ==> val validActions: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixTest.checkForUnexpectedActions[LocalVariableDescriptor]
+'validActions' @ [193:71] ==> val validActions: HashSet<(String..String?)> /* = HashSet<(String..String?)> */ defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixTest.checkForUnexpectedActions[LocalVariableDescriptor]
 
-'contains' @ [193:84] ==> public open fun contains(element: String): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'contains' @ [193:84] ==> public open fun contains(element: (String..String?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'action' @ [193:93] ==> val action: (IntentionAction..IntentionAction?) defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixTest.checkForUnexpectedActions[LocalVariableDescriptor]
 
@@ -554,8 +554,6 @@ Inferred types:
 'javaClass' @ [194:77] ==> public val <T : Any> (IntentionAction..IntentionAction?).javaClass: Class<(IntentionAction..IntentionAction?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> (com.intellij.codeInsight.intention.IntentionAction..com.intellij.codeInsight.intention.IntentionAction?)
-
-'DirectiveBasedActionUtils' @ [200:17] ==> public object DirectiveBasedActionUtils defined in org.jetbrains.kotlin.idea.test in file DirectiveBasedActionUtils.kt[FakeCallableDescriptorForObject]
 
 'checkAvailableActionsAreExpected' @ [200:43] ==> public final fun checkAvailableActionsAreExpected(file: PsiFile, availableActions: Collection<IntentionAction>): Unit defined in org.jetbrains.kotlin.idea.test.DirectiveBasedActionUtils[SimpleFunctionDescriptorImpl]
 

@@ -230,7 +230,7 @@ Inferred types:
 
 'dummyTargetClass' @ [94:23] ==> val dummyTargetClass: PsiClass defined in org.jetbrains.kotlin.idea.refactoring.pullUp.JavaToKotlinPullUpHelperFactory.createDummyTargetClass[LocalVariableDescriptor]
 
-'fold' @ [95:18] ==> public inline fun <T, R> Iterable<PsiClass>.fold(initial: (PsiElement..PsiElement?), operation: ((PsiElement..PsiElement?), PsiClass) -> (PsiElement..PsiElement?)): (PsiElement..PsiElement?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [95:18] ==> public inline fun <T, R> Iterable<PsiClass>.fold(initial: (PsiElement..PsiElement?), operation: (acc: (PsiElement..PsiElement?), PsiClass) -> (PsiElement..PsiElement?)): (PsiElement..PsiElement?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiClass
     <R> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
@@ -244,6 +244,8 @@ Inferred types:
 'first' @ [95:53] ==> public fun <T> List<PsiClass>.first(): PsiClass defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiClass
+
+'add' @ [95:75] ==> public abstract fun add(@NotNull p0: PsiElement): (PsiElement..PsiElement?) defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 
 'data' @ [99:13] ==> value-parameter data: PullUpData defined in org.jetbrains.kotlin.idea.refactoring.pullUp.JavaToKotlinPullUpHelperFactory.createPullUpHelper[ValueParameterDescriptorImpl]
 
@@ -259,12 +261,12 @@ Inferred types:
 
 'data' @ [101:40] ==> value-parameter data: PullUpData defined in org.jetbrains.kotlin.idea.refactoring.pullUp.JavaToKotlinPullUpHelperFactory.createPullUpHelper[ValueParameterDescriptorImpl]
 
-'let' @ [101:47] ==> @InlineOnly public inline fun <T, R> PullUpHelper<out (MemberInfoBase<out (PsiMember..PsiMember?)>..MemberInfoBase<out (PsiMember..PsiMember?)>?)>.let(block: (PullUpHelper<out (MemberInfoBase<out (PsiMember..PsiMember?)>..MemberInfoBase<out (PsiMember..PsiMember?)>?)>) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [101:47] ==> @InlineOnly public inline fun <T, R> PullUpHelper<*>.let(block: (PullUpHelper<*>) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PullUpHelper<out (com.intellij.refactoring.classMembers.MemberInfoBase<out (com.intellij.psi.PsiMember..com.intellij.psi.PsiMember?)>..com.intellij.refactoring.classMembers.MemberInfoBase<out (com.intellij.psi.PsiMember..com.intellij.psi.PsiMember?)>?)>
+    <T> -> PullUpHelper<*>
     <R> -> Nothing
 
-'it' @ [101:60] ==> value-parameter it: PullUpHelper<out (MemberInfoBase<out (PsiMember..PsiMember?)>..MemberInfoBase<out (PsiMember..PsiMember?)>?)> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.JavaToKotlinPullUpHelperFactory.createPullUpHelper.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [101:60] ==> value-parameter it: PullUpHelper<*> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.JavaToKotlinPullUpHelperFactory.createPullUpHelper.<anonymous>[ValueParameterDescriptorImpl]
 
 '?:' @ [103:16] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PullUpHelper<*>?, right: PullUpHelper<*>): PullUpHelper<*>[SimpleFunctionDescriptorImpl]
 Inferred types:

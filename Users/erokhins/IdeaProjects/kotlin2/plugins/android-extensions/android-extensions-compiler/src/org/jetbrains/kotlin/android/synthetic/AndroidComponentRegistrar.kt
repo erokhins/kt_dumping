@@ -58,8 +58,6 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'AndroidConfigurationKeys' @ [78:56] ==> public object AndroidConfigurationKeys defined in org.jetbrains.kotlin.android.synthetic in file AndroidComponentRegistrar.kt[FakeCallableDescriptorForObject]
-
 'VARIANT' @ [78:81] ==> public final val VARIANT: CompilerConfigurationKey<(List<String>..List<String>?)> defined in org.jetbrains.kotlin.android.synthetic.AndroidConfigurationKeys[PropertyDescriptorImpl]
 
 'value' @ [78:90] ==> value-parameter value: String defined in org.jetbrains.kotlin.android.synthetic.AndroidCommandLineProcessor.processOption[ValueParameterDescriptorImpl]
@@ -70,9 +68,7 @@ Inferred types:
 
 'put' @ [79:45] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AndroidConfigurationKeys' @ [79:49] ==> public object AndroidConfigurationKeys defined in org.jetbrains.kotlin.android.synthetic in file AndroidComponentRegistrar.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'PACKAGE' @ [79:74] ==> public final val PACKAGE: CompilerConfigurationKey<(String..String?)> defined in org.jetbrains.kotlin.android.synthetic.AndroidConfigurationKeys[PropertyDescriptorImpl]
 
@@ -84,9 +80,7 @@ Inferred types:
 
 'put' @ [80:50] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AndroidConfigurationKeys' @ [80:54] ==> public object AndroidConfigurationKeys defined in org.jetbrains.kotlin.android.synthetic in file AndroidComponentRegistrar.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'EXPERIMENTAL' @ [80:79] ==> public final val EXPERIMENTAL: CompilerConfigurationKey<(String..String?)> defined in org.jetbrains.kotlin.android.synthetic.AndroidConfigurationKeys[PropertyDescriptorImpl]
 
@@ -98,9 +92,7 @@ Inferred types:
 
 'put' @ [81:56] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AndroidConfigurationKeys' @ [81:60] ==> public object AndroidConfigurationKeys defined in org.jetbrains.kotlin.android.synthetic in file AndroidComponentRegistrar.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DEFAULT_CACHE_IMPL' @ [81:85] ==> public final val DEFAULT_CACHE_IMPL: CompilerConfigurationKey<(String..String?)> defined in org.jetbrains.kotlin.android.synthetic.AndroidConfigurationKeys[PropertyDescriptorImpl]
 
@@ -146,15 +138,9 @@ Inferred types:
 
 's' @ [95:83] ==> value-parameter s: String? defined in org.jetbrains.kotlin.android.synthetic.AndroidComponentRegistrar.Companion.parseCacheImplementationType[ValueParameterDescriptorImpl]
 
-'CacheImplementation' @ [96:30] ==> public companion object defined in kotlinx.android.extensions.CacheImplementation[FakeCallableDescriptorForObject]
-
 'SPARSE_ARRAY' @ [96:50] ==> enum entry SPARSE_ARRAY defined in kotlinx.android.extensions.CacheImplementation[FakeCallableDescriptorForObject]
 
-'CacheImplementation' @ [97:23] ==> public companion object defined in kotlinx.android.extensions.CacheImplementation[FakeCallableDescriptorForObject]
-
 'NO_CACHE' @ [97:43] ==> enum entry NO_CACHE defined in kotlinx.android.extensions.CacheImplementation[FakeCallableDescriptorForObject]
-
-'CacheImplementation' @ [98:21] ==> public companion object defined in kotlinx.android.extensions.CacheImplementation[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [98:41] ==> public final val DEFAULT: CacheImplementation defined in kotlinx.android.extensions.CacheImplementation.Companion[DeserializedPropertyDescriptor]
 
@@ -162,9 +148,7 @@ Inferred types:
 
 'get' @ [103:48] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AndroidConfigurationKeys' @ [103:52] ==> public object AndroidConfigurationKeys defined in org.jetbrains.kotlin.android.synthetic in file AndroidComponentRegistrar.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'PACKAGE' @ [103:77] ==> public final val PACKAGE: CompilerConfigurationKey<(String..String?)> defined in org.jetbrains.kotlin.android.synthetic.AndroidConfigurationKeys[PropertyDescriptorImpl]
 
@@ -172,9 +156,7 @@ Inferred types:
 
 'get' @ [104:38] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(List<String>..List<String>?)>): List<String>? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
-
-'AndroidConfigurationKeys' @ [104:42] ==> public object AndroidConfigurationKeys defined in org.jetbrains.kotlin.android.synthetic in file AndroidComponentRegistrar.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'VARIANT' @ [104:67] ==> public final val VARIANT: CompilerConfigurationKey<(List<String>..List<String>?)> defined in org.jetbrains.kotlin.android.synthetic.AndroidConfigurationKeys[PropertyDescriptorImpl]
 
@@ -195,9 +177,7 @@ Inferred types:
 
 'get' @ [105:44] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AndroidConfigurationKeys' @ [105:48] ==> public object AndroidConfigurationKeys defined in org.jetbrains.kotlin.android.synthetic in file AndroidComponentRegistrar.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'EXPERIMENTAL' @ [105:73] ==> public final val EXPERIMENTAL: CompilerConfigurationKey<(String..String?)> defined in org.jetbrains.kotlin.android.synthetic.AndroidConfigurationKeys[PropertyDescriptorImpl]
 
@@ -207,9 +187,7 @@ Inferred types:
 
 'get' @ [106:74] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AndroidConfigurationKeys' @ [106:78] ==> public object AndroidConfigurationKeys defined in org.jetbrains.kotlin.android.synthetic in file AndroidComponentRegistrar.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DEFAULT_CACHE_IMPL' @ [106:103] ==> public final val DEFAULT_CACHE_IMPL: CompilerConfigurationKey<(String..String?)> defined in org.jetbrains.kotlin.android.synthetic.AndroidConfigurationKeys[PropertyDescriptorImpl]
 
@@ -243,7 +221,7 @@ Inferred types:
 
 'registerService' @ [114:21] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(AndroidLayoutXmlFileManager..AndroidLayoutXmlFileManager?)>, @NotNull p1: AndroidLayoutXmlFileManager): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AndroidLayoutXmlFileManager
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager..org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager?)
 
 'AndroidLayoutXmlFileManager' @ [114:37] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager[FakeCallableDescriptorForObject]
 

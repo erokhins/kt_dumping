@@ -30,9 +30,9 @@
 
 'findConstructorFromParcel' @ [64:12] ==> private fun KtClass.findConstructorFromParcel(): KtConstructor<*>? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
-'findWriteToParcel' @ [65:12] ==> private fun KtClass.findWriteToParcel(): KtDeclaration? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'findWriteToParcel' @ [65:12] ==> private fun KtClass.findWriteToParcel(): KtDeclaration? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
-'findDescribeContents' @ [66:12] ==> private fun KtClass.findDescribeContents(): KtDeclaration? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'findDescribeContents' @ [66:12] ==> private fun KtClass.findDescribeContents(): KtDeclaration? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'canRemoveParcelable' @ [68:44] ==> public fun KtClass.canRemoveParcelable(): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -46,21 +46,21 @@ Inferred types:
 
 'typeReference' @ [71:48] ==> public final val KtSuperTypeListEntry.typeReference: KtTypeReference?[MyPropertyDescriptor]
 
-'isParcelableReference' @ [71:63] ==> private fun KtTypeReference.isParcelableReference(): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'isParcelableReference' @ [71:63] ==> private fun KtTypeReference.isParcelableReference(): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'findCreator' @ [72:12] ==> private fun KtClass.findCreator(): KtObjectDeclaration? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'findConstructorFromParcel' @ [73:12] ==> private fun KtClass.findConstructorFromParcel(): KtConstructor<*>? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
-'findWriteToParcel' @ [74:12] ==> private fun KtClass.findWriteToParcel(): KtDeclaration? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'findWriteToParcel' @ [74:12] ==> private fun KtClass.findWriteToParcel(): KtDeclaration? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
-'findDescribeContents' @ [75:12] ==> private fun KtClass.findDescribeContents(): KtDeclaration? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'findDescribeContents' @ [75:12] ==> private fun KtClass.findDescribeContents(): KtDeclaration? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'KtPsiFactory' @ [78:19] ==> @JvmOverloads public fun KtPsiFactory(elementForProject: PsiElement, markGenerated: Boolean = ...): KtPsiFactory defined in org.jetbrains.kotlin.psi[DeserializedSimpleFunctionDescriptor]
 
 'this' @ [78:32] ==> <this> defined in org.jetbrains.kotlin.android.implementParcelable[ReceiverParameterDescriptorImpl]
 
-'superExtendsParcelable' @ [79:34] ==> private fun KtClass.superExtendsParcelable(): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'superExtendsParcelable' @ [79:34] ==> private fun KtClass.superExtendsParcelable(): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'findOrCreateParcelableSupertype' @ [81:5] ==> private fun KtClass.findOrCreateParcelableSupertype(factory: KtPsiFactory): KtSuperTypeListEntry? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -102,7 +102,7 @@ Inferred types:
 
 'project' @ [92:39] ==> public final val KtClass.project: Project[MyPropertyDescriptor]
 
-'save' @ [93:5] ==> private fun KtClass.save(): Unit? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'save' @ [93:5] ==> private fun KtClass.save(): Unit? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'findParcelableSupertype' @ [97:5] ==> private fun KtClass.findParcelableSupertype(): KtSuperTypeListEntry? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -114,7 +114,7 @@ Inferred types:
 
 'typeReference' @ [97:44] ==> public final val KtSuperTypeListEntry.typeReference: KtTypeReference?[MyPropertyDescriptor]
 
-'isParcelableReference' @ [97:59] ==> private fun KtTypeReference.isParcelableReference(): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'isParcelableReference' @ [97:59] ==> private fun KtTypeReference.isParcelableReference(): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [97:95] ==> @InlineOnly public inline fun <T, R> KtSuperTypeListEntry.let(block: (KtSuperTypeListEntry) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -127,24 +127,24 @@ Inferred types:
 
 'findConstructorFromParcel' @ [101:5] ==> private fun KtClass.findConstructorFromParcel(): KtConstructor<*>? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
-'let' @ [101:34] ==> @InlineOnly public inline fun <T, R> KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>.let(block: (KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [101:34] ==> @InlineOnly public inline fun <T, R> KtConstructor<*>.let(block: (KtConstructor<*>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>
+    <T> -> KtConstructor<*>
     <R> -> Unit
 
-'it' @ [102:13] ==> value-parameter it: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>> defined in org.jetbrains.kotlin.android.removeParcelableImplementation.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [102:13] ==> value-parameter it: KtConstructor<*> defined in org.jetbrains.kotlin.android.removeParcelableImplementation.<anonymous>[ValueParameterDescriptorImpl]
 
 'tryDeleteInitBlock' @ [103:13] ==> private fun KtClass.tryDeleteInitBlock(): Unit defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
-'it' @ [105:9] ==> value-parameter it: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>> defined in org.jetbrains.kotlin.android.removeParcelableImplementation.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [105:9] ==> value-parameter it: KtConstructor<*> defined in org.jetbrains.kotlin.android.removeParcelableImplementation.<anonymous>[ValueParameterDescriptorImpl]
 
 'delete' @ [105:12] ==> public open fun delete(): Unit defined in org.jetbrains.kotlin.psi.KtConstructor[JavaMethodDescriptor]
 
-'findWriteToParcel' @ [108:5] ==> private fun KtClass.findWriteToParcel(): KtDeclaration? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'findWriteToParcel' @ [108:5] ==> private fun KtClass.findWriteToParcel(): KtDeclaration? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'delete' @ [108:26] ==> public abstract fun delete(): Unit defined in org.jetbrains.kotlin.psi.KtDeclaration[JavaMethodDescriptor]
 
-'findDescribeContents' @ [109:5] ==> private fun KtClass.findDescribeContents(): KtDeclaration? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'findDescribeContents' @ [109:5] ==> private fun KtClass.findDescribeContents(): KtDeclaration? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'delete' @ [109:29] ==> public abstract fun delete(): Unit defined in org.jetbrains.kotlin.psi.KtDeclaration[JavaMethodDescriptor]
 
@@ -152,7 +152,7 @@ Inferred types:
 
 'delete' @ [110:20] ==> public open fun delete(): Unit defined in org.jetbrains.kotlin.psi.KtObjectDeclaration[DeserializedSimpleFunctionDescriptor]
 
-'save' @ [111:5] ==> private fun KtClass.save(): Unit? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'save' @ [111:5] ==> private fun KtClass.save(): Unit? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'removeParcelableImplementation' @ [115:5] ==> public fun KtClass.removeParcelableImplementation(): Unit defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -172,7 +172,7 @@ Inferred types:
 
 'getSuperTypeList' @ [121:72] ==> public final fun getSuperTypeList(): KtSuperTypeList? defined in org.jetbrains.kotlin.psi.KtClass[DeserializedSimpleFunctionDescriptor]
 
-'findParcelable' @ [121:92] ==> private fun KtSuperTypeList.findParcelable(): KtSuperTypeListEntry? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'findParcelable' @ [121:92] ==> private fun KtSuperTypeList.findParcelable(): KtSuperTypeListEntry? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'entries' @ [123:48] ==> public final val KtSuperTypeList.entries: (MutableList<(KtSuperTypeListEntry..KtSuperTypeListEntry?)>..List<(KtSuperTypeListEntry..KtSuperTypeListEntry?)>?)[MyPropertyDescriptor]
 
@@ -184,7 +184,7 @@ Inferred types:
 
 'typeReference' @ [123:67] ==> public final val KtSuperTypeListEntry.typeReference: KtTypeReference?[MyPropertyDescriptor]
 
-'isParcelableSuccessorReference' @ [123:82] ==> private fun KtTypeReference.isParcelableSuccessorReference(): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'isParcelableSuccessorReference' @ [123:82] ==> private fun KtTypeReference.isParcelableSuccessorReference(): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'analyze' @ [126:9] ==> @JvmOverloads public fun KtElement.analyze(bodyResolveMode: BodyResolveMode = ...): BindingContext defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
@@ -284,7 +284,7 @@ Inferred types:
 
 'type' @ [159:46] ==> public final val ParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'fqNameEquals' @ [159:52] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameEquals' @ [159:52] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'CLASS_PARCEL' @ [159:65] ==> public const final val CLASS_PARCEL: String defined in com.android.SdkConstants[JavaPropertyDescriptor]
 
@@ -550,7 +550,7 @@ Inferred types:
 
 '!' @ [225:58] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'isTransient' @ [225:59] ==> private fun KtProperty.isTransient(): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'isTransient' @ [225:59] ==> private fun KtProperty.isTransient(): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'getter' @ [225:76] ==> public final val KtProperty.getter: KtPropertyAccessor?[MyPropertyDescriptor]
 
@@ -574,14 +574,14 @@ Inferred types:
 
 'get' @ [230:54] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), p1: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [230:73] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
 'typeReference' @ [230:79] ==> public final val KtAnnotationEntry.typeReference: KtTypeReference?[MyPropertyDescriptor]
 
-'fqNameEquals' @ [230:95] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameEquals' @ [230:95] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [233:9] ==> <this> defined in org.jetbrains.kotlin.android.isCallToSuperWriteToParcel[ReceiverParameterDescriptorImpl]
 
@@ -620,7 +620,7 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
-'isCallToSuperWriteToParcel' @ [239:80] ==> private fun KtExpression.isCallToSuperWriteToParcel(): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'isCallToSuperWriteToParcel' @ [239:80] ==> private fun KtExpression.isCallToSuperWriteToParcel(): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'statements' @ [242:13] ==> public final val KtBlockExpression.statements: List<(KtExpression..KtExpression?)>[MyPropertyDescriptor]
 
@@ -652,7 +652,7 @@ Inferred types:
 
 'type' @ [252:37] ==> val type: KotlinType defined in org.jetbrains.kotlin.android.formatReadFromParcel[LocalVariableDescriptor]
 
-'getName' @ [252:42] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'getName' @ [252:42] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [256:9] ==> val type: KotlinType defined in org.jetbrains.kotlin.android.formatReadFromParcel[LocalVariableDescriptor]
 
@@ -670,7 +670,7 @@ Inferred types:
 
 'type' @ [257:78] ==> val type: KotlinType defined in org.jetbrains.kotlin.android.formatReadFromParcel[LocalVariableDescriptor]
 
-'getName' @ [257:83] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'getName' @ [257:83] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'isPrimitiveType' @ [260:24] ==> public open fun isPrimitiveType(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 
@@ -707,7 +707,7 @@ Inferred types:
 
 'type' @ [265:40] ==> val type: KotlinType defined in org.jetbrains.kotlin.android.formatReadFromParcel[LocalVariableDescriptor]
 
-'getName' @ [265:45] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'getName' @ [265:45] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'when {
         KotlinBuiltIns.isCharSequenceOrNullableCharSequence(type) -> "$parcelName.readString()"
@@ -755,7 +755,7 @@ Inferred types:
 
 'type' @ [272:95] ==> public final val TypeProjection.type: KotlinType[MyPropertyDescriptor]
 
-'getName' @ [272:100] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'getName' @ [272:100] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [273:9] ==> val type: KotlinType defined in org.jetbrains.kotlin.android.formatReadFromParcel[LocalVariableDescriptor]
 
@@ -773,7 +773,7 @@ Inferred types:
 
 'type' @ [273:98] ==> public final val TypeProjection.type: KotlinType[MyPropertyDescriptor]
 
-'getName' @ [273:103] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'getName' @ [273:103] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [274:9] ==> val type: KotlinType defined in org.jetbrains.kotlin.android.formatReadFromParcel[LocalVariableDescriptor]
 
@@ -849,7 +849,7 @@ Inferred types:
 
 'type' @ [291:36] ==> val type: KotlinType defined in org.jetbrains.kotlin.android.formatWriteToParcel[LocalVariableDescriptor]
 
-'getName' @ [291:41] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'getName' @ [291:41] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [291:53] ==> public final val PropertyDescriptor.name: Name[MyPropertyDescriptor]
 
@@ -923,7 +923,7 @@ Inferred types:
 
 'type' @ [308:41] ==> val type: KotlinType defined in org.jetbrains.kotlin.android.formatWriteToParcel[LocalVariableDescriptor]
 
-'getName' @ [308:46] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'getName' @ [308:46] ==> private fun KotlinType.getName(): Name? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [308:58] ==> public final val PropertyDescriptor.name: Name[MyPropertyDescriptor]
 
@@ -1124,12 +1124,12 @@ Inferred types:
 
 'findConstructorFromParcel' @ [352:5] ==> private fun KtClass.findConstructorFromParcel(): KtConstructor<*>? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
-'let' @ [352:34] ==> @InlineOnly public inline fun <T, R> KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>.let(block: (KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [352:34] ==> @InlineOnly public inline fun <T, R> KtConstructor<*>.let(block: (KtConstructor<*>) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>
+    <T> -> KtConstructor<*>
     <R> -> Nothing
 
-'it' @ [353:16] ==> value-parameter it: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>> defined in org.jetbrains.kotlin.android.findOrCreateConstructor.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [353:16] ==> value-parameter it: KtConstructor<*> defined in org.jetbrains.kotlin.android.findOrCreateConstructor.<anonymous>[ValueParameterDescriptorImpl]
 
 'createPrimaryConstructorIfAbsent' @ [356:5] ==> public fun KtClass.createPrimaryConstructorIfAbsent(): KtPrimaryConstructor defined in org.jetbrains.kotlin.psi[DeserializedSimpleFunctionDescriptor]
 
@@ -1137,9 +1137,9 @@ Inferred types:
 
 'factory' @ [357:39] ==> value-parameter factory: KtPsiFactory defined in org.jetbrains.kotlin.android.findOrCreateConstructor[ValueParameterDescriptorImpl]
 
-'apply' @ [357:48] ==> @InlineOnly public inline fun <T> KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>.apply(block: KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>.() -> Unit): KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [357:48] ==> @InlineOnly public inline fun <T> KtConstructor<*>.apply(block: KtConstructor<*>.() -> Unit): KtConstructor<*> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out KtConstructor<out Any?>>>>>>
+    <T> -> KtConstructor<*>
 
 'addToShorteningWaitSet' @ [358:9] ==> public fun KtElement.addToShorteningWaitSet(options: ShortenReferences.Options = ...): Unit defined in org.jetbrains.kotlin.idea.codeInsight.shorten[DeserializedSimpleFunctionDescriptor]
 
@@ -1308,9 +1308,9 @@ Inferred types:
 
 'typeReference' @ [393:57] ==> public final var KtParameter.typeReference: KtTypeReference?[MyPropertyDescriptor]
 
-'fqNameEquals' @ [393:72] ==> private fun KtTypeReference.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameEquals' @ [393:72] ==> private fun KtTypeReference.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
-'findWriteToParcel' @ [397:5] ==> private fun KtClass.findWriteToParcel(): KtDeclaration? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'findWriteToParcel' @ [397:5] ==> private fun KtClass.findWriteToParcel(): KtDeclaration? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [397:26] ==> @InlineOnly public inline fun <T, R> KtDeclaration.let(block: (KtDeclaration) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1367,7 +1367,7 @@ Inferred types:
 
 'isEmpty' @ [412:75] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'findDescribeContents' @ [415:5] ==> private fun KtClass.findDescribeContents(): KtDeclaration? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'findDescribeContents' @ [415:5] ==> private fun KtClass.findDescribeContents(): KtDeclaration? defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [415:29] ==> @InlineOnly public inline fun <T, R> KtDeclaration.let(block: (KtDeclaration) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1439,11 +1439,11 @@ Inferred types:
 
 'typeReference' @ [433:56] ==> public final var KtParameter.typeReference: KtTypeReference?[MyPropertyDescriptor]
 
-'fqNameEquals' @ [433:71] ==> private fun KtTypeReference.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameEquals' @ [433:71] ==> private fun KtTypeReference.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'CLASS_PARCEL' @ [433:84] ==> public const final val CLASS_PARCEL: String defined in com.android.SdkConstants[JavaPropertyDescriptor]
 
-'fqNameEquals' @ [435:55] ==> private fun KtTypeReference.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameEquals' @ [435:55] ==> private fun KtTypeReference.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'CLASS_PARCELABLE' @ [435:68] ==> public const final val CLASS_PARCELABLE: String defined in com.android.SdkConstants[JavaPropertyDescriptor]
 
@@ -1455,7 +1455,7 @@ Inferred types:
 
 'this' @ [438:63] ==> <this> defined in org.jetbrains.kotlin.android.fqNameEquals[ReceiverParameterDescriptorImpl]
 
-'fqNameEquals' @ [438:70] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameEquals' @ [438:70] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [438:83] ==> value-parameter fqName: String defined in org.jetbrains.kotlin.android.fqNameEquals[ValueParameterDescriptorImpl]
 
@@ -1481,7 +1481,7 @@ Inferred types:
 
 'strict' @ [444:114] ==> value-parameter strict: Boolean = ... defined in org.jetbrains.kotlin.android.isSubclassOfParcelable[ValueParameterDescriptorImpl]
 
-'fqNameEquals' @ [446:47] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameEquals' @ [446:47] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'isArray' @ [449:24] ==> public open fun isArray(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 
@@ -1567,9 +1567,9 @@ Inferred types:
 
 'isIBinder' @ [464:86] ==> private fun KotlinType.isIBinder(): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
-'fqNameEquals' @ [466:58] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameEquals' @ [466:58] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
-'fqNameEquals' @ [468:46] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameEquals' @ [468:46] ==> private fun KotlinType.fqNameEquals(fqName: String): Boolean defined in org.jetbrains.kotlin.android in file ParcelableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'parent' @ [470:66] ==> public final val KtDeclaration.parent: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 

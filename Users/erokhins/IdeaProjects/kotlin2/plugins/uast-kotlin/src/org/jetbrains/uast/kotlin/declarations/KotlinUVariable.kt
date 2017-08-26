@@ -58,9 +58,9 @@ Inferred types:
 
 'UastEmptyExpression' @ [53:103] ==> public object UastEmptyExpression : UExpression defined in org.jetbrains.uast[FakeCallableDescriptorForObject]
 
-'lz' @ [56:45] ==> internal fun <T> lz(initializer: () -> UExpression?): Lazy<UExpression?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [56:45] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression?
+    <T> -> T
 
 'psi' @ [57:19] ==> public abstract val psi: PsiVariable defined in org.jetbrains.uast.kotlin.AbstractKotlinUVariable[DeserializedPropertyDescriptor]
 
@@ -111,9 +111,9 @@ Inferred types:
 
 'kotlinOrigin' @ [69:41] ==> val kotlinOrigin: KtElement? defined in org.jetbrains.uast.kotlin.AbstractKotlinUVariable.getNameIdentifier[LocalVariableDescriptor]
 
-'lz' @ [72:52] ==> internal fun <T> lz(initializer: () -> List<JavaUAnnotation>): Lazy<List<JavaUAnnotation>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [72:52] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<JavaUAnnotation>
+    <T> -> T
 
 'psi' @ [72:57] ==> public abstract val psi: PsiVariable defined in org.jetbrains.uast.kotlin.AbstractKotlinUVariable[DeserializedPropertyDescriptor]
 
@@ -130,9 +130,9 @@ Inferred types:
 
 'this' @ [72:99] ==> <this> defined in org.jetbrains.uast.kotlin.AbstractKotlinUVariable[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [74:35] ==> internal fun <T> lz(initializer: () -> UTypeReferenceExpression?): Lazy<UTypeReferenceExpression?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [74:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UTypeReferenceExpression?
+    <T> -> T
 
 'getLanguagePlugin' @ [74:40] ==> public tailrec fun UElement.getLanguagePlugin(): UastLanguagePlugin defined in org.jetbrains.uast[DeserializedSimpleFunctionDescriptor]
 
@@ -177,9 +177,9 @@ Inferred types:
 
 'psi' @ [88:55] ==> value-parameter psi: PsiVariable defined in org.jetbrains.uast.kotlin.KotlinUVariable.<init>[ValueParameterDescriptorImpl]
 
-'lz' @ [90:33] ==> internal fun <T> lz(initializer: () -> List<JavaUAnnotation>): Lazy<List<JavaUAnnotation>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [90:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<JavaUAnnotation>
+    <T> -> T
 
 'psi' @ [90:38] ==> value-parameter psi: PsiVariable defined in org.jetbrains.uast.kotlin.KotlinUVariable.<init>[ValueParameterDescriptorImpl]
 
@@ -196,9 +196,9 @@ Inferred types:
 
 'this' @ [90:80] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUVariable[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [92:35] ==> internal fun <T> lz(initializer: () -> UTypeReferenceExpression?): Lazy<UTypeReferenceExpression?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [92:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UTypeReferenceExpression?
+    <T> -> T
 
 'getLanguagePlugin' @ [92:40] ==> public tailrec fun UElement.getLanguagePlugin(): UastLanguagePlugin defined in org.jetbrains.uast[DeserializedSimpleFunctionDescriptor]
 
@@ -387,9 +387,9 @@ Inferred types:
 
 'uastParent' @ [195:31] ==> value-parameter uastParent: UElement? defined in org.jetbrains.uast.kotlin.KotlinUAnnotatedLocalVariable.<init>[ValueParameterDescriptorImpl]
 
-'lz' @ [197:52] ==> internal fun <T> lz(initializer: () -> List<UAnnotation>): Lazy<List<UAnnotation>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [197:52] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UAnnotation>
+    <T> -> T
 
 'invoke' @ [197:57] ==> public abstract operator fun invoke(parent: @ParameterName UElement): List<UAnnotation> defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -399,9 +399,9 @@ Inferred types:
 
 'psi' @ [203:66] ==> value-parameter psi: PsiEnumConstant defined in org.jetbrains.uast.kotlin.KotlinUEnumConstant.<init>[ValueParameterDescriptorImpl]
 
-'lz' @ [204:48] ==> internal fun <T> lz(initializer: () -> UClass?): Lazy<UClass?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [204:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UClass?
+    <T> -> T
 
 'getLanguagePlugin' @ [204:53] ==> public tailrec fun UElement.getLanguagePlugin(): UastLanguagePlugin defined in org.jetbrains.uast[DeserializedSimpleFunctionDescriptor]
 
@@ -456,9 +456,9 @@ Inferred types:
 
 'size' @ [235:48] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
-'lz' @ [237:36] ==> internal fun <T> lz(initializer: () -> List<UExpression>): Lazy<List<UExpression>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [237:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UExpression>
+    <T> -> T
 
 'psi' @ [238:9] ==> value-parameter psi: PsiEnumConstant defined in org.jetbrains.uast.kotlin.KotlinUEnumConstant.<init>[ValueParameterDescriptorImpl]
 

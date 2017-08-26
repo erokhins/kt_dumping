@@ -12,7 +12,7 @@ Inferred types:
 
 'subscribe' @ [53:49] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(ModuleRootListener..ModuleRootListener?)>, @NotNull p1: ModuleRootListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> ModuleRootListener
+    <L : (Any..Any?)> -> (com.intellij.openapi.roots.ModuleRootListener..com.intellij.openapi.roots.ModuleRootListener?)
 
 'PROJECT_ROOTS' @ [53:73] ==> public final val PROJECT_ROOTS: (Topic<(ModuleRootListener..ModuleRootListener?)>..Topic<(ModuleRootListener..ModuleRootListener?)>?) defined in com.intellij.ProjectTopics[JavaPropertyDescriptor]
 
@@ -162,7 +162,7 @@ Inferred types:
 
 'setText' @ [111:17] ==> public open fun setText(p0: (String..String?)): Unit defined in com.intellij.ui.EditorNotificationPanel[JavaMethodDescriptor]
 
-'getAbleToRunConfigurators' @ [112:37] ==> public fun getAbleToRunConfigurators(module: Module): Collection<KotlinProjectConfigurator> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getAbleToRunConfigurators' @ [112:37] ==> public fun getAbleToRunConfigurators(module: Module): Collection<KotlinProjectConfigurator> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [112:63] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.configuration.KotlinSetupEnvironmentNotificationProvider.Companion.createKotlinNotConfiguredPanel[ValueParameterDescriptorImpl]
 
@@ -176,7 +176,7 @@ Inferred types:
 
 'isEmpty' @ [113:36] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'createComponentActionLabel' @ [114:21] ==> public fun EditorNotificationPanel.createComponentActionLabel(labelText: String, callback: (HyperlinkLabel) -> Unit): Unit defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'createComponentActionLabel' @ [114:21] ==> public fun EditorNotificationPanel.createComponentActionLabel(labelText: String, callback: (HyperlinkLabel) -> Unit): Unit defined in org.jetbrains.kotlin.idea.versions in file UnsupportedAbiVersionNotificationPanelProvider.kt[SimpleFunctionDescriptorImpl]
 
 'configurators' @ [115:50] ==> val configurators: List<KotlinProjectConfigurator> defined in org.jetbrains.kotlin.idea.configuration.KotlinSetupEnvironmentNotificationProvider.Companion.createKotlinNotConfiguredPanel.<anonymous>[LocalVariableDescriptor]
 

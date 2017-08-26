@@ -18,7 +18,7 @@ Inferred types:
 
 'java' @ [47:56] ==> public val <T> KClass<out CompileService.CallResult.Good<R>>.java: Class<out CompileService.CallResult.Good<R>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Good<R>
+    <T> -> Captured(out Good<R>)
 
 'hashCode' @ [47:61] ==> public open fun hashCode(): Int defined in java.lang.Class[DeserializedSimpleFunctionDescriptor]
 
@@ -38,7 +38,7 @@ Inferred types:
 
 'java' @ [52:56] ==> public val <T> KClass<out CompileService.CallResult.Ok>.java: Class<out CompileService.CallResult.Ok> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Ok
+    <T> -> Captured(out Ok)
 
 'hashCode' @ [52:61] ==> public open fun hashCode(): Int defined in java.lang.Class[DeserializedSimpleFunctionDescriptor]
 
@@ -54,7 +54,7 @@ Inferred types:
 
 'java' @ [57:56] ==> public val <T> KClass<out CompileService.CallResult.Dying>.java: Class<out CompileService.CallResult.Dying> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Dying
+    <T> -> Captured(out Dying)
 
 'hashCode' @ [57:61] ==> public open fun hashCode(): Int defined in java.lang.Class[DeserializedSimpleFunctionDescriptor]
 
@@ -80,7 +80,7 @@ Inferred types:
 
 'java' @ [62:56] ==> public val <T> KClass<out CompileService.CallResult.Error>.java: Class<out CompileService.CallResult.Error> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Error
+    <T> -> Captured(out Error)
 
 'hashCode' @ [62:61] ==> public open fun hashCode(): Int defined in java.lang.Class[DeserializedSimpleFunctionDescriptor]
 

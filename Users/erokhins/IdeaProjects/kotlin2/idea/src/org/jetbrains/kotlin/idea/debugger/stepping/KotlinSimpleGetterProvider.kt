@@ -2,7 +2,7 @@
 
 'getParentOfType' @ [31:36] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtPropertyAccessor..KtPropertyAccessor?)>): KtPropertyAccessor? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtPropertyAccessor
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtPropertyAccessor..org.jetbrains.kotlin.psi.KtPropertyAccessor?)
 
 'element' @ [31:52] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSimpleGetterProvider.isInsideSimpleGetter[ValueParameterDescriptorImpl]
 
@@ -59,7 +59,7 @@ Inferred types:
 
 'getParentOfType' @ [46:36] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtProperty..KtProperty?)>): KtProperty? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtProperty
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'element' @ [46:52] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSimpleGetterProvider.isInsideSimpleGetter[ValueParameterDescriptorImpl]
 

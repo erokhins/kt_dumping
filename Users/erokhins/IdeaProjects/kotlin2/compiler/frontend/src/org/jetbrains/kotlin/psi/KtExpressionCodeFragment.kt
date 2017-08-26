@@ -14,7 +14,7 @@
 
 'findChildByClass' @ [31:40] ==> @Nullable public open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtExpression..KtExpression?)>..Class<(KtExpression..KtExpression?)>?)): KtExpression? defined in org.jetbrains.kotlin.psi.KtExpressionCodeFragment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'java' @ [31:77] ==> public val <T> KClass<KtExpression>.java: Class<KtExpression> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

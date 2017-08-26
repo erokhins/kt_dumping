@@ -16,7 +16,7 @@
 
 'staticScope' @ [34:49] ==> public final val ClassDescriptor.staticScope: MemberScope[MyPropertyDescriptor]
 
-'findFirstFunction' @ [34:61] ==> public inline fun MemberScope.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir[SimpleFunctionDescriptorImpl]
+'findFirstFunction' @ [34:61] ==> public inline fun MemberScope.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [35:13] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.EnumClassMembersGenerator.generateValues.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -88,7 +88,7 @@ Inferred types:
 
 'staticScope' @ [53:50] ==> public final val ClassDescriptor.staticScope: MemberScope[MyPropertyDescriptor]
 
-'findFirstFunction' @ [53:62] ==> public inline fun MemberScope.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir[SimpleFunctionDescriptorImpl]
+'findFirstFunction' @ [53:62] ==> public inline fun MemberScope.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [54:13] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.EnumClassMembersGenerator.generateValueOf.<anonymous>[ValueParameterDescriptorImpl]
 

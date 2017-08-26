@@ -180,7 +180,7 @@ Inferred types:
 
 'value' @ [93:22] ==> value-parameter value: IrExpression defined in org.jetbrains.kotlin.ir.builders.irReturn[ValueParameterDescriptorImpl]
 
-'irReturn' @ [96:9] ==> public fun IrBuilderWithScope.irReturn(value: IrExpression): IrReturnImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irReturn' @ [96:9] ==> public fun IrBuilderWithScope.irReturn(value: IrExpression): IrReturnImpl defined in org.jetbrains.kotlin.ir.builders in file ExpressionHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'IrConstImpl' @ [96:18] ==> public constructor IrConstImpl<T>(startOffset: Int, endOffset: Int, type: KotlinType, kind: IrConstKind<Boolean>, value: Boolean) defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -198,7 +198,7 @@ Inferred types:
 
 'Boolean' @ [96:96] ==> public object Boolean : IrConstKind<Boolean> defined in org.jetbrains.kotlin.ir.expressions.IrConstKind[FakeCallableDescriptorForObject]
 
-'irReturn' @ [99:9] ==> public fun IrBuilderWithScope.irReturn(value: IrExpression): IrReturnImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irReturn' @ [99:9] ==> public fun IrBuilderWithScope.irReturn(value: IrExpression): IrReturnImpl defined in org.jetbrains.kotlin.ir.builders in file ExpressionHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'IrConstImpl' @ [99:18] ==> public constructor IrConstImpl<T>(startOffset: Int, endOffset: Int, type: KotlinType, kind: IrConstKind<Boolean>, value: Boolean) defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -230,11 +230,11 @@ Inferred types:
 
 'elsePart' @ [102:77] ==> value-parameter elsePart: IrExpression defined in org.jetbrains.kotlin.ir.builders.irIfThenElse[ValueParameterDescriptorImpl]
 
-'irIfThenElse' @ [105:9] ==> public fun IrBuilderWithScope.irIfThenElse(type: KotlinType, condition: IrExpression, thenPart: IrExpression, elsePart: IrExpression): IrIfThenElseImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irIfThenElse' @ [105:9] ==> public fun IrBuilderWithScope.irIfThenElse(type: KotlinType, condition: IrExpression, thenPart: IrExpression, elsePart: IrExpression): IrIfThenElseImpl defined in org.jetbrains.kotlin.ir.builders in file ExpressionHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [105:22] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.ir.builders.irIfNull[ValueParameterDescriptorImpl]
 
-'irEqualsNull' @ [105:28] ==> public fun IrBuilderWithScope.irEqualsNull(argument: IrExpression): IrExpression defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irEqualsNull' @ [105:28] ==> public fun IrBuilderWithScope.irEqualsNull(argument: IrExpression): IrExpression defined in org.jetbrains.kotlin.ir.builders in file ExpressionHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'subject' @ [105:41] ==> value-parameter subject: IrExpression defined in org.jetbrains.kotlin.ir.builders.irIfNull[ValueParameterDescriptorImpl]
 
@@ -270,7 +270,7 @@ Inferred types:
 
 'condition' @ [111:77] ==> value-parameter condition: IrExpression defined in org.jetbrains.kotlin.ir.builders.irIfThenReturnTrue[ValueParameterDescriptorImpl]
 
-'irReturnTrue' @ [111:88] ==> public fun IrBuilderWithScope.irReturnTrue(): IrReturnImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irReturnTrue' @ [111:88] ==> public fun IrBuilderWithScope.irReturnTrue(): IrReturnImpl defined in org.jetbrains.kotlin.ir.builders in file ExpressionHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'IrIfThenElseImpl' @ [114:9] ==> public constructor IrIfThenElseImpl(startOffset: Int, endOffset: Int, type: KotlinType, condition: IrExpression, thenBranch: IrExpression, elseBranch: IrExpression? = ..., origin: IrStatementOrigin? = ...) defined in org.jetbrains.kotlin.ir.expressions.impl.IrIfThenElseImpl[ClassConstructorDescriptorImpl]
 
@@ -286,7 +286,7 @@ Inferred types:
 
 'condition' @ [114:77] ==> value-parameter condition: IrExpression defined in org.jetbrains.kotlin.ir.builders.irIfThenReturnFalse[ValueParameterDescriptorImpl]
 
-'irReturnFalse' @ [114:88] ==> public fun IrBuilderWithScope.irReturnFalse(): IrReturnImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irReturnFalse' @ [114:88] ==> public fun IrBuilderWithScope.irReturnFalse(): IrReturnImpl defined in org.jetbrains.kotlin.ir.builders in file ExpressionHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'IrGetValueImpl' @ [117:9] ==> public constructor IrGetValueImpl(startOffset: Int, endOffset: Int, symbol: IrValueSymbol, origin: IrStatementOrigin? = ...) defined in org.jetbrains.kotlin.ir.expressions.impl.IrGetValueImpl[ClassConstructorDescriptorImpl]
 
@@ -350,7 +350,7 @@ Inferred types:
 
 'argument' @ [130:22] ==> value-parameter argument: IrExpression defined in org.jetbrains.kotlin.ir.builders.irEqualsNull[ValueParameterDescriptorImpl]
 
-'irNull' @ [130:32] ==> public fun IrBuilderWithScope.irNull(): IrConstImpl<Nothing?> defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irNull' @ [130:32] ==> public fun IrBuilderWithScope.irNull(): IrConstImpl<Nothing?> defined in org.jetbrains.kotlin.ir.builders in file ExpressionHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'primitiveOp1' @ [133:9] ==> public fun primitiveOp1(startOffset: Int, endOffset: Int, primitiveOpSymbol: IrSimpleFunctionSymbol, origin: IrStatementOrigin, argument: IrExpression): IrExpression defined in org.jetbrains.kotlin.ir.builders in file Primitives.kt[SimpleFunctionDescriptorImpl]
 

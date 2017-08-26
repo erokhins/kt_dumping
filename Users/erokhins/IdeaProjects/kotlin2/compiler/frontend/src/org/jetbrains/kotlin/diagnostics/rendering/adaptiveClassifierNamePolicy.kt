@@ -93,7 +93,7 @@ Inferred types:
 
 'java' @ [49:71] ==> public val <T> KClass<out ClassifierDescriptor>.java: Class<out ClassifierDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ClassifierDescriptor
+    <T> -> Captured(out ClassifierDescriptor)
 
 'classifier' @ [54:16] ==> value-parameter classifier: ClassifierDescriptor defined in org.jetbrains.kotlin.diagnostics.rendering.AdaptiveClassifierNamePolicy.hasUniqueName[ValueParameterDescriptorImpl]
 
@@ -131,7 +131,7 @@ Inferred types:
 Inferred types:
     <out T> -> ClassifierNamePolicy
 
-'collectClassifiersFqNames' @ [71:17] ==> private fun collectClassifiersFqNames(objectsToRender: Collection<Any?>): Set<FqNameUnsafe> defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'collectClassifiersFqNames' @ [71:17] ==> private fun collectClassifiersFqNames(objectsToRender: Collection<Any?>): Set<FqNameUnsafe> defined in org.jetbrains.kotlin.diagnostics.rendering in file adaptiveClassifierNamePolicy.kt[SimpleFunctionDescriptorImpl]
 
 'objectsToRender' @ [71:43] ==> value-parameter objectsToRender: Collection<Any?> defined in org.jetbrains.kotlin.diagnostics.rendering.ADAPTIVE_CLASSIFIER_POLICY_KEY.<no name provided>.compute[ValueParameterDescriptorImpl]
 
@@ -177,7 +177,7 @@ Inferred types:
 Inferred types:
     <T> -> LinkedHashSet<FqNameUnsafe>
 
-'collectMentionedClassifiersFqNames' @ [77:5] ==> private fun collectMentionedClassifiersFqNames(contextObjects: Collection<Any?>, result: MutableSet<FqNameUnsafe>): Unit defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'collectMentionedClassifiersFqNames' @ [77:5] ==> private fun collectMentionedClassifiersFqNames(contextObjects: Collection<Any?>, result: MutableSet<FqNameUnsafe>): Unit defined in org.jetbrains.kotlin.diagnostics.rendering in file adaptiveClassifierNamePolicy.kt[SimpleFunctionDescriptorImpl]
 
 'objectsToRender' @ [77:40] ==> value-parameter objectsToRender: Collection<Any?> defined in org.jetbrains.kotlin.diagnostics.rendering.collectClassifiersFqNames[ValueParameterDescriptorImpl]
 
@@ -234,7 +234,7 @@ Inferred types:
 Inferred types:
     <T> -> Collection<*>
 
-'collectMentionedClassifiersFqNames' @ [95:9] ==> private fun collectMentionedClassifiersFqNames(contextObjects: Collection<Any?>, result: MutableSet<FqNameUnsafe>): Unit defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'collectMentionedClassifiersFqNames' @ [95:9] ==> private fun collectMentionedClassifiersFqNames(contextObjects: Collection<Any?>, result: MutableSet<FqNameUnsafe>): Unit defined in org.jetbrains.kotlin.diagnostics.rendering in file adaptiveClassifierNamePolicy.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [95:44] ==> value-parameter it: Collection<*> defined in org.jetbrains.kotlin.diagnostics.rendering.collectMentionedClassifiersFqNames.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -268,7 +268,7 @@ Inferred types:
 Inferred types:
     <T> -> TypeParameterDescriptor
 
-'collectMentionedClassifiersFqNames' @ [101:9] ==> private fun collectMentionedClassifiersFqNames(contextObjects: Collection<Any?>, result: MutableSet<FqNameUnsafe>): Unit defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'collectMentionedClassifiersFqNames' @ [101:9] ==> private fun collectMentionedClassifiersFqNames(contextObjects: Collection<Any?>, result: MutableSet<FqNameUnsafe>): Unit defined in org.jetbrains.kotlin.diagnostics.rendering in file adaptiveClassifierNamePolicy.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [101:44] ==> value-parameter it: TypeParameterDescriptor defined in org.jetbrains.kotlin.diagnostics.rendering.collectMentionedClassifiersFqNames.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -286,7 +286,7 @@ Inferred types:
 Inferred types:
     <T> -> CallableDescriptor
 
-'collectMentionedClassifiersFqNames' @ [104:9] ==> private fun collectMentionedClassifiersFqNames(contextObjects: Collection<Any?>, result: MutableSet<FqNameUnsafe>): Unit defined in org.jetbrains.kotlin.diagnostics.rendering[SimpleFunctionDescriptorImpl]
+'collectMentionedClassifiersFqNames' @ [104:9] ==> private fun collectMentionedClassifiersFqNames(contextObjects: Collection<Any?>, result: MutableSet<FqNameUnsafe>): Unit defined in org.jetbrains.kotlin.diagnostics.rendering in file adaptiveClassifierNamePolicy.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [104:44] ==> public fun <T> listOf(vararg elements: Any?): List<Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

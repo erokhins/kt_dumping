@@ -84,11 +84,11 @@ Inferred types:
 
 'add' @ [82:28] ==> public open fun add(element: T): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
-'current' @ [82:32] ==> val current: {Any & T} defined in org.jetbrains.kotlin.idea.search.declarationsSearch.HierarchyTraverser.forEach[LocalVariableDescriptor]
+'current' @ [82:32] ==> val current: T defined in org.jetbrains.kotlin.idea.search.declarationsSearch.HierarchyTraverser.forEach[LocalVariableDescriptor]
 
 'nextElements' @ [84:26] ==> public abstract fun nextElements(current: T): Iterable<T> defined in org.jetbrains.kotlin.idea.search.declarationsSearch.HierarchyTraverser[SimpleFunctionDescriptorImpl]
 
-'current' @ [84:39] ==> val current: {Any & T} defined in org.jetbrains.kotlin.idea.search.declarationsSearch.HierarchyTraverser.forEach[LocalVariableDescriptor]
+'current' @ [84:39] ==> val current: T defined in org.jetbrains.kotlin.idea.search.declarationsSearch.HierarchyTraverser.forEach[LocalVariableDescriptor]
 
 'checkCanceled' @ [85:43] ==> public open fun checkCanceled(): Unit defined in com.intellij.openapi.progress.ProgressIndicatorProvider[JavaMethodDescriptor]
 

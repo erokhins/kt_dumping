@@ -1,6 +1,6 @@
 'getService' @ [30:35] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(NotPropertiesService..NotPropertiesService?)>): (NotPropertiesService..NotPropertiesService?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> NotPropertiesService
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.core.NotPropertiesService..org.jetbrains.kotlin.idea.core.NotPropertiesService?)
 
 'project' @ [30:46] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.core.NotPropertiesService.Companion.getInstance[ValueParameterDescriptorImpl]
 

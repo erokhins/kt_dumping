@@ -12,8 +12,6 @@
 
 'newVisitor' @ [37:42] ==> @NotNull public open fun newVisitor(@NotNull origin: JvmDeclarationOrigin, @NotNull asmType: Type, @NotNull sourceFile: PsiFile): ClassBuilder defined in org.jetbrains.kotlin.codegen.ClassFileFactory[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [38:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [38:38] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'getObjectType' @ [39:22] ==> public open fun getObjectType(p0: (String..String?)): (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaMethodDescriptor]
@@ -121,8 +119,6 @@ Inferred types:
 
 'newField' @ [74:34] ==> @NotNull public abstract fun newField(@NotNull origin: JvmDeclarationOrigin, access: Int, @NotNull name: String, @NotNull desc: String, @Nullable signature: String?, @Nullable value: Any?): FieldVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [74:43] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [74:64] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'access' @ [74:75] ==> value-parameter access: Int defined in org.jetbrains.kotlin.codegen.inline.WhenMappingTransformer.doTransform.<no name provided>.visitField[ValueParameterDescriptorImpl]
@@ -204,8 +200,6 @@ Inferred types:
 'classBuilder' @ [97:22] ==> val classBuilder: ClassBuilder defined in org.jetbrains.kotlin.codegen.inline.WhenMappingTransformer.doTransform[LocalVariableDescriptor]
 
 'newMethod' @ [97:35] ==> @NotNull public abstract fun newMethod(@NotNull origin: JvmDeclarationOrigin, access: Int, @NotNull name: String, @NotNull desc: String, @Nullable signature: String?, @Nullable exceptions: (Array<(String..String?)>?..Array<out (String..String?)>?)): MethodVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
-
-'JvmDeclarationOrigin' @ [98:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
 
 'NO_ORIGIN' @ [98:38] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 

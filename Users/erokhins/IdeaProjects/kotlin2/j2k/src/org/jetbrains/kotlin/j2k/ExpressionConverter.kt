@@ -106,7 +106,7 @@ Inferred types:
 
 'result' @ [87:9] ==> private final var result: Expression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter[PropertyDescriptorImpl]
 
-'createArrayInitializerExpression' @ [87:18] ==> public fun createArrayInitializerExpression(arrayType: ArrayType, initializers: List<Expression>, needExplicitType: Boolean = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'createArrayInitializerExpression' @ [87:18] ==> public fun createArrayInitializerExpression(arrayType: ArrayType, initializers: List<Expression>, needExplicitType: Boolean = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast in file Expressions.kt[SimpleFunctionDescriptorImpl]
 
 'expressionType' @ [87:51] ==> val expressionType: Type defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitArrayInitializerExpression[LocalVariableDescriptor]
 
@@ -219,8 +219,6 @@ Inferred types:
 Inferred types:
     <TElement : Element> -> BinaryExpression
 
-'Operator' @ [106:97] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Operator[FakeCallableDescriptorForObject]
-
 'EQ' @ [106:106] ==> public final val EQ: Operator defined in org.jetbrains.kotlin.j2k.ast.Operator.Companion[PropertyDescriptorImpl]
 
 'AssignmentExpression' @ [109:13] ==> public constructor AssignmentExpression(left: Expression, right: Expression, op: Operator) defined in org.jetbrains.kotlin.j2k.ast.AssignmentExpression[ClassConstructorDescriptorImpl]
@@ -325,8 +323,6 @@ Inferred types:
 'buildNonNull' @ [134:43] ==> public final fun buildNonNull(receiver: Expression?, methodName: String, argumentList: ArgumentList = ..., typeArguments: List<Type> = ..., dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
 'leftConverted' @ [134:56] ==> val leftConverted: Expression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitBinaryExpression[LocalVariableDescriptor]
-
-'ArgumentList' @ [134:79] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.ArgumentList[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [134:92] ==> public final fun withNoPrototype(vararg arguments: Expression): ArgumentList defined in org.jetbrains.kotlin.j2k.ast.ArgumentList.Companion[SimpleFunctionDescriptorImpl]
 
@@ -578,11 +574,11 @@ Inferred types:
 
 'left' @ [199:13] ==> value-parameter left: PsiExpression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.canKeepEqEq[ValueParameterDescriptorImpl]
 
-'isNullLiteral' @ [199:18] ==> public fun PsiExpression.isNullLiteral(): Boolean defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'isNullLiteral' @ [199:18] ==> public fun PsiExpression.isNullLiteral(): Boolean defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'right' @ [199:38] ==> value-parameter right: PsiExpression? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.canKeepEqEq[ValueParameterDescriptorImpl]
 
-'isNullLiteral' @ [199:45] ==> public fun PsiExpression.isNullLiteral(): Boolean defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'isNullLiteral' @ [199:45] ==> public fun PsiExpression.isNullLiteral(): Boolean defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'left' @ [200:20] ==> value-parameter left: PsiExpression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.canKeepEqEq[ValueParameterDescriptorImpl]
 
@@ -746,8 +742,6 @@ Inferred types:
 Inferred types:
     <TElement : Element> -> Identifier
 
-'Identifier' @ [246:89] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'withNoPrototype' @ [246:100] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
 'if (primitiveType != null) {
@@ -772,8 +766,6 @@ Inferred types:
 'assignNoPrototype' @ [255:67] ==> public fun <TElement : Element> ClassLiteralExpression.assignNoPrototype(): ClassLiteralExpression defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
 Inferred types:
     <TElement : Element> -> ClassLiteralExpression
-
-'Identifier' @ [255:88] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [255:99] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
@@ -874,7 +866,7 @@ Inferred types:
 
 'expression' @ [282:13] ==> value-parameter expression: PsiLiteralExpression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitLiteralExpression[ValueParameterDescriptorImpl]
 
-'isNullLiteral' @ [282:24] ==> public fun PsiExpression.isNullLiteral(): Boolean defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'isNullLiteral' @ [282:24] ==> public fun PsiExpression.isNullLiteral(): Boolean defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [283:13] ==> private final var result: Expression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter[PropertyDescriptorImpl]
 
@@ -1081,8 +1073,6 @@ Inferred types:
 
 'length' @ [336:44] ==> public open val length: Int defined in kotlin.String[DeserializedPropertyDescriptor]
 
-'String' @ [337:25] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
-
 'format' @ [337:32] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'leadingBackslashes' @ [337:52] ==> val leadingBackslashes: String defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitLiteralExpression.<anonymous>[LocalVariableDescriptor]
@@ -1145,7 +1135,7 @@ Inferred types:
 
 'target' @ [357:83] ==> val target: PsiElement? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodCallExpression[LocalVariableDescriptor]
 
-'isNullable' @ [357:91] ==> public fun Nullability.isNullable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'isNullable' @ [357:91] ==> public fun Nullability.isNullable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast in file Types.kt[SimpleFunctionDescriptorImpl]
 
 'codeConverter' @ [357:102] ==> private final val codeConverter: CodeConverter defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter[PropertyDescriptorImpl]
 
@@ -1418,8 +1408,6 @@ Inferred types:
 
 'argument' @ [394:79] ==> val argument: Expression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodCallExpression[LocalVariableDescriptor]
 
-'Operator' @ [394:89] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Operator[FakeCallableDescriptorForObject]
-
 'EQ' @ [394:98] ==> public final val EQ: Operator defined in org.jetbrains.kotlin.j2k.ast.Operator.Companion[PropertyDescriptorImpl]
 
 'isTopLevel' @ [400:38] ==> val isTopLevel: Boolean defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodCallExpression[LocalVariableDescriptor]
@@ -1459,8 +1447,6 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiExpression..com.intellij.psi.PsiExpression?)
 
-'MethodCallExpression' @ [403:25] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[FakeCallableDescriptorForObject]
-
 'build' @ [403:46] ==> public final fun build(receiver: Expression?, methodName: String, argumentList: ArgumentList, typeArguments: List<Type>, isNullable: Boolean, dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
 'qualifier' @ [403:52] ==> val qualifier: Expression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodCallExpression[LocalVariableDescriptor]
@@ -1478,8 +1464,6 @@ Inferred types:
 'isNullable' @ [407:52] ==> val isNullable: Boolean defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodCallExpression[LocalVariableDescriptor]
 
 'dot' @ [408:52] ==> val dot: PsiElement? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodCallExpression[LocalVariableDescriptor]
-
-'MethodCallExpression' @ [411:25] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[FakeCallableDescriptorForObject]
 
 'build' @ [411:46] ==> public final fun build(receiver: Expression?, methodName: String, argumentList: ArgumentList, typeArguments: List<Type>, isNullable: Boolean, dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1501,7 +1485,7 @@ Inferred types:
 
 'resolve' @ [420:96] ==> @Nullable public abstract fun resolve(): PsiElement? defined in com.intellij.psi.PsiReferenceExpression[JavaMethodDescriptor]
 
-'isFacadeClassFromLibrary' @ [421:25] ==> public fun isFacadeClassFromLibrary(element: PsiElement?): Boolean defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'isFacadeClassFromLibrary' @ [421:25] ==> public fun isFacadeClassFromLibrary(element: PsiElement?): Boolean defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedQualifier' @ [421:50] ==> val resolvedQualifier: PsiElement? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodCallExpression[LocalVariableDescriptor]
 
@@ -1540,8 +1524,6 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiExpression..com.intellij.psi.PsiExpression?)
 
-'MethodCallExpression' @ [424:29] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[FakeCallableDescriptorForObject]
-
 'build' @ [424:50] ==> public final fun build(receiver: Expression?, methodName: String, argumentList: ArgumentList, typeArguments: List<Type>, isNullable: Boolean, dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
 'qualifier' @ [424:56] ==> val qualifier: Expression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodCallExpression[LocalVariableDescriptor]
@@ -1559,8 +1541,6 @@ Inferred types:
 'isNullable' @ [428:56] ==> val isNullable: Boolean defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodCallExpression[LocalVariableDescriptor]
 
 'dot' @ [429:56] ==> val dot: PsiElement? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodCallExpression[LocalVariableDescriptor]
-
-'MethodCallExpression' @ [432:29] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[FakeCallableDescriptorForObject]
 
 'build' @ [432:50] ==> public final fun build(receiver: Expression?, methodName: String, argumentList: ArgumentList, typeArguments: List<Type>, isNullable: Boolean, dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
@@ -2092,8 +2072,6 @@ Inferred types:
 
 'TILDE' @ [550:45] ==> public final val TILDE: (IElementType..IElementType?) defined in com.intellij.psi.JavaTokenType[JavaPropertyDescriptor]
 
-'MethodCallExpression' @ [551:13] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[FakeCallableDescriptorForObject]
-
 'buildNonNull' @ [551:34] ==> public final fun buildNonNull(receiver: Expression?, methodName: String, argumentList: ArgumentList = ..., typeArguments: List<Type> = ..., dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
 'operand' @ [551:47] ==> val operand: Expression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitPrefixExpression[LocalVariableDescriptor]
@@ -2165,8 +2143,6 @@ Inferred types:
 
 'ThisExpression' @ [564:22] ==> public constructor ThisExpression(identifier: Identifier) defined in org.jetbrains.kotlin.j2k.ast.ThisExpression[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [564:37] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'Empty' @ [564:48] ==> public final val Empty: Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[PropertyDescriptorImpl]
 
 'expression' @ [567:13] ==> value-parameter expression: PsiReferenceExpression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitReferenceExpression[ValueParameterDescriptorImpl]
@@ -2177,18 +2153,16 @@ Inferred types:
 
 'SuperExpression' @ [568:22] ==> public constructor SuperExpression(identifier: Identifier) defined in org.jetbrains.kotlin.j2k.ast.SuperExpression[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [568:38] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'Empty' @ [568:49] ==> public final val Empty: Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[PropertyDescriptorImpl]
 
 'expression' @ [572:29] ==> value-parameter expression: PsiReferenceExpression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitReferenceExpression[ValueParameterDescriptorImpl]
 
 'referenceName' @ [572:40] ==> public final val PsiReferenceExpression.referenceName: String?[MyPropertyDescriptor]
 
-'run' @ [572:57] ==> @InlineOnly public inline fun <T, R> DefaultExpressionConverter.run(block: DefaultExpressionConverter.() -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'run' @ [572:57] ==> @InlineOnly public inline fun <T, R> DefaultExpressionConverter.run(block: DefaultExpressionConverter.() -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DefaultExpressionConverter
-    <R> -> String
+    <R> -> Nothing
 
 'result' @ [573:13] ==> private final var result: Expression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter[PropertyDescriptorImpl]
 
@@ -2456,7 +2430,7 @@ Inferred types:
 
 'target' @ [626:47] ==> value-parameter target: PsiVariable defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.isNullable[ValueParameterDescriptorImpl]
 
-'isNullable' @ [626:55] ==> public fun Nullability.isNullable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'isNullable' @ [626:55] ==> public fun Nullability.isNullable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast in file Types.kt[SimpleFunctionDescriptorImpl]
 
 'codeConverter' @ [626:66] ==> private final val codeConverter: CodeConverter defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter[PropertyDescriptorImpl]
 
@@ -2568,8 +2542,6 @@ Inferred types:
 
 'psiQualifier' @ [653:95] ==> val psiQualifier: PsiJavaCodeReferenceElement? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitSuperExpression[LocalVariableDescriptor]
 
-'Identifier' @ [653:114] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'Empty' @ [653:125] ==> public final val Empty: Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[PropertyDescriptorImpl]
 
 'expression' @ [657:28] ==> value-parameter expression: PsiThisExpression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitThisExpression[ValueParameterDescriptorImpl]
@@ -2599,8 +2571,6 @@ Inferred types:
     <TElement : Element> -> Identifier
 
 'psiQualifier' @ [659:94] ==> val psiQualifier: PsiJavaCodeReferenceElement? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitThisExpression[LocalVariableDescriptor]
-
-'Identifier' @ [659:113] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'Empty' @ [659:124] ==> public final val Empty: Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[PropertyDescriptorImpl]
 
@@ -2651,8 +2621,6 @@ Inferred types:
 'operandType' @ [669:22] ==> val operandType: PsiType? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitTypeCastExpression[LocalVariableDescriptor]
 
 'typeConversion' @ [669:57] ==> val typeConversion: String? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitTypeCastExpression[LocalVariableDescriptor]
-
-'MethodCallExpression' @ [670:13] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[FakeCallableDescriptorForObject]
 
 'buildNonNull' @ [670:34] ==> public final fun buildNonNull(receiver: Expression?, methodName: String, argumentList: ArgumentList = ..., typeArguments: List<Type> = ..., dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
@@ -2849,8 +2817,6 @@ Inferred types:
 
 'it' @ [713:82] ==> value-parameter it: (PsiExpression..PsiExpression?) defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitPolyadicExpression.<anonymous>[ValueParameterDescriptorImpl]
 
-'CommentsAndSpacesInheritance' @ [713:86] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'LINE_BREAKS' @ [713:115] ==> public final val LINE_BREAKS: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
 'expression' @ [715:25] ==> value-parameter expression: PsiPolyadicExpression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitPolyadicExpression[ValueParameterDescriptorImpl]
@@ -2884,8 +2850,6 @@ Inferred types:
     <TElement : Element> -> Operator
 
 'it' @ [716:96] ==> value-parameter it: PsiJavaToken defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitPolyadicExpression.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
-
-'CommentsAndSpacesInheritance' @ [716:100] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'LINE_BREAKS' @ [716:129] ==> public final val LINE_BREAKS: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -3077,13 +3041,9 @@ Inferred types:
 
 'convertedArguments' @ [754:29] ==> val convertedArguments: List<Expression> defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.convertArguments[LocalVariableDescriptor]
 
-'LPar' @ [754:49] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.LPar[FakeCallableDescriptorForObject]
-
 'withPrototype' @ [754:54] ==> public final fun withPrototype(element: PsiElement?): LPar defined in org.jetbrains.kotlin.j2k.ast.LPar.Companion[SimpleFunctionDescriptorImpl]
 
 'lPar' @ [754:68] ==> val lPar: PsiElement? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.convertArguments[LocalVariableDescriptor]
-
-'RPar' @ [754:75] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.RPar[FakeCallableDescriptorForObject]
 
 'withPrototype' @ [754:80] ==> public final fun withPrototype(element: PsiElement?): RPar defined in org.jetbrains.kotlin.j2k.ast.RPar.Companion[SimpleFunctionDescriptorImpl]
 
@@ -3214,8 +3174,6 @@ Inferred types:
 
 'convertedParameters' @ [769:43] ==> val convertedParameters: ParameterList defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitLambdaExpression[LocalVariableDescriptor]
 
-'Block' @ [769:64] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Block[FakeCallableDescriptorForObject]
-
 'of' @ [769:70] ==> public final fun of(statement: Statement): Block defined in org.jetbrains.kotlin.j2k.ast.Block.Companion[SimpleFunctionDescriptorImpl]
 
 'convertedBody' @ [769:73] ==> val convertedBody: Expression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitLambdaExpression[LocalVariableDescriptor]
@@ -3286,8 +3244,6 @@ Inferred types:
 'ReturnStatement' @ [789:36] ==> public constructor ReturnStatement(expression: Expression, label: Identifier? = ...) defined in org.jetbrains.kotlin.j2k.ast.ReturnStatement[ClassConstructorDescriptorImpl]
 
 'expressionForReturn' @ [789:52] ==> val expressionForReturn: Expression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitLambdaExpression.<no name provided>.convertStatement[LocalVariableDescriptor]
-
-'Identifier' @ [789:73] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [789:84] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
@@ -3683,9 +3639,9 @@ Inferred types:
                 }
                 else {
                     parameters.map { LambdaParameter(it.first, it.second).assignNoPrototype() }
-                }' @ [881:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<Parameter>, elseBranch: List<Parameter>): List<Parameter>[SimpleFunctionDescriptorImpl]
+                }' @ [881:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<LambdaParameter>, elseBranch: List<LambdaParameter>): List<LambdaParameter>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<Parameter>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<LambdaParameter>
 
 'parameters' @ [881:21] ==> val parameters: List<Pair<Identifier, Type?>> defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodReferenceExpression[LocalVariableDescriptor]
 
@@ -3695,9 +3651,9 @@ Inferred types:
 
 'isKotlinFunctionType' @ [881:46] ==> val isKotlinFunctionType: Boolean defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodReferenceExpression[LocalVariableDescriptor]
 
-'emptyList' @ [883:21] ==> public fun <T> emptyList(): List<Parameter> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyList' @ [883:21] ==> public fun <T> emptyList(): List<LambdaParameter> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Parameter
+    <T> -> LambdaParameter
 
 'parameters' @ [886:21] ==> val parameters: List<Pair<Identifier, Type?>> defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodReferenceExpression[LocalVariableDescriptor]
 
@@ -3727,8 +3683,6 @@ Inferred types:
 'LambdaExpression' @ [891:32] ==> public constructor LambdaExpression(parameterList: ParameterList?, block: Block) defined in org.jetbrains.kotlin.j2k.ast.LambdaExpression[ClassConstructorDescriptorImpl]
 
 'lambdaParameterList' @ [891:49] ==> val lambdaParameterList: ParameterList defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodReferenceExpression[LocalVariableDescriptor]
-
-'Block' @ [891:70] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Block[FakeCallableDescriptorForObject]
 
 'of' @ [891:76] ==> public final fun of(statement: Statement): Block defined in org.jetbrains.kotlin.j2k.ast.Block.Companion[SimpleFunctionDescriptorImpl]
 
@@ -3770,28 +3724,21 @@ Inferred types:
 
 'functionalType' @ [897:79] ==> val functionalType: PsiType? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodReferenceExpression[LocalVariableDescriptor]
 
-'MethodCallExpression' @ [898:13] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression[FakeCallableDescriptorForObject]
-
 'buildNonNull' @ [898:34] ==> public final fun buildNonNull(receiver: Expression?, methodName: String, argumentList: ArgumentList = ..., typeArguments: List<Type> = ..., dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
 'convertedFunctionalType' @ [900:21] ==> val convertedFunctionalType: Type defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodReferenceExpression[LocalVariableDescriptor]
 
 'canonicalCode' @ [900:45] ==> public fun Element.canonicalCode(): String defined in org.jetbrains.kotlin.j2k.ast in file Element.kt[SimpleFunctionDescriptorImpl]
 
-'ArgumentList' @ [901:21] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.ArgumentList[FakeCallableDescriptorForObject]
-
 'withNoPrototype' @ [901:34] ==> public final fun withNoPrototype(vararg arguments: Expression): ArgumentList defined in org.jetbrains.kotlin.j2k.ast.ArgumentList.Companion[SimpleFunctionDescriptorImpl]
 
 'lambdaExpression' @ [901:50] ==> val lambdaExpression: LambdaExpression defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.visitMethodReferenceExpression[LocalVariableDescriptor]
 
-'UserDataProperty' @ [906:67] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Expression>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> PsiExpression
-    <T : Any> -> Expression
+'getValue' @ [906:67] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [906:88] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Expression..Expression?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Expression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.j2k.ast.Expression..org.jetbrains.kotlin.j2k.ast.Expression?)
 
 'functionalType' @ [908:60] ==> value-parameter functionalType: PsiType? defined in org.jetbrains.kotlin.j2k.DefaultExpressionConverter.isFunctionType[ValueParameterDescriptorImpl]
 

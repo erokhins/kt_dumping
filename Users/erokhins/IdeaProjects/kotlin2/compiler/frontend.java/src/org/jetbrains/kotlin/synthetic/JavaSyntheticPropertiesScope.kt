@@ -150,8 +150,6 @@ Inferred types:
 
 'descriptor' @ [99:28] ==> value-parameter descriptor: PropertyDescriptor? defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.syntheticPropertyInClassNotCached.result[ValueParameterDescriptorImpl]
 
-'SyntheticPropertyHolder' @ [99:48] ==> public companion object defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.SyntheticPropertyHolder[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [99:72] ==> public final val EMPTY: JavaSyntheticPropertiesScope.SyntheticPropertyHolder defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.SyntheticPropertyHolder.Companion[PropertyDescriptorImpl]
 
 'SyntheticPropertyHolder' @ [99:83] ==> public constructor SyntheticPropertyHolder(descriptor: PropertyDescriptor?, lookedNames: List<Name>) defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.SyntheticPropertyHolder[ClassConstructorDescriptorImpl]
@@ -350,7 +348,7 @@ Inferred types:
 
 'visibility' @ [144:30] ==> public final val FunctionDescriptor.visibility: Visibility[MyPropertyDescriptor]
 
-'isVisibleOutside' @ [144:41] ==> public fun Visibility.isVisibleOutside(): Boolean defined in org.jetbrains.kotlin.synthetic[SimpleFunctionDescriptorImpl]
+'isVisibleOutside' @ [144:41] ==> public fun Visibility.isVisibleOutside(): Boolean defined in org.jetbrains.kotlin.synthetic in file syntheticExtensionsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'getMethod' @ [148:28] ==> value-parameter getMethod: FunctionDescriptor defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.isGoodSetMethod[ValueParameterDescriptorImpl]
 
@@ -420,7 +418,7 @@ Inferred types:
 
 'visibility' @ [160:30] ==> public final val FunctionDescriptor.visibility: Visibility[MyPropertyDescriptor]
 
-'isVisibleOutside' @ [160:41] ==> public fun Visibility.isVisibleOutside(): Boolean defined in org.jetbrains.kotlin.synthetic[SimpleFunctionDescriptorImpl]
+'isVisibleOutside' @ [160:41] ==> public fun Visibility.isVisibleOutside(): Boolean defined in org.jetbrains.kotlin.synthetic in file syntheticExtensionsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'overriddenDescriptors' @ [164:28] ==> public final var FunctionDescriptor.overriddenDescriptors: (MutableCollection<out (FunctionDescriptor..FunctionDescriptor?)>..Collection<(FunctionDescriptor..FunctionDescriptor?)>)[MyPropertyDescriptor]
 
@@ -646,13 +644,13 @@ Inferred types:
 
 'getContributedDescriptors' @ [228:68] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [228:94] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS' @ [228:115] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'descriptor' @ [229:21] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.collectSyntheticProperties[LocalVariableDescriptor]
 
-'SyntheticJavaPropertyDescriptor' @ [230:40] ==> public companion object defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor[FakeCallableDescriptorForObject]
+'?:' @ [230:40] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Name?, right: Name): Name[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Name
 
 'propertyNameByGetMethodName' @ [230:72] ==> public final fun propertyNameByGetMethodName(methodName: Name): Name? defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor.Companion[SimpleFunctionDescriptorImpl]
 
@@ -863,11 +861,7 @@ Inferred types:
 
 'ownerClass' @ [312:91] ==> value-parameter ownerClass: ClassDescriptor defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.MyPropertyDescriptor.Companion.create[ValueParameterDescriptorImpl]
 
-'Annotations' @ [314:55] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [314:67] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [315:55] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [315:64] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -911,8 +905,6 @@ Inferred types:
 
 'classTypeParams' @ [326:86] ==> val classTypeParams: List<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.MyPropertyDescriptor.Companion.create[LocalVariableDescriptor]
 
-'TypeSubstitution' @ [326:103] ==> public companion object defined in org.jetbrains.kotlin.types.TypeSubstitution[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [326:120] ==> @field:JvmField public final val EMPTY: TypeSubstitution defined in org.jetbrains.kotlin.types.TypeSubstitution.Companion[DeserializedPropertyDescriptor]
 
 'descriptor' @ [326:127] ==> val descriptor: JavaSyntheticPropertiesScope.MyPropertyDescriptor defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.MyPropertyDescriptor.Companion.create[LocalVariableDescriptor]
@@ -955,8 +947,6 @@ Inferred types:
 
 'annotations' @ [333:69] ==> public abstract val annotations: Annotations defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor[DeserializedPropertyDescriptor]
 
-'Modality' @ [334:59] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [334:68] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'visibility' @ [335:59] ==> val visibility: Visibility defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.MyPropertyDescriptor.Companion.create[LocalVariableDescriptor]
@@ -998,8 +988,6 @@ Inferred types:
 'setMethod' @ [346:50] ==> value-parameter setMethod: FunctionDescriptor? defined in org.jetbrains.kotlin.synthetic.JavaSyntheticPropertiesScope.MyPropertyDescriptor.Companion.create[ValueParameterDescriptorImpl]
 
 'annotations' @ [346:60] ==> public abstract val annotations: Annotations defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor[DeserializedPropertyDescriptor]
-
-'Modality' @ [347:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [347:59] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

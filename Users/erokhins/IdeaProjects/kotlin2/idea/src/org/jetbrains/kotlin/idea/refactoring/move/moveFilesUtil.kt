@@ -157,7 +157,9 @@ Inferred types:
 
 'moveCallback' @ [87:25] ==> value-parameter moveCallback: MoveCallback? defined in org.jetbrains.kotlin.idea.refactoring.move.invokeMoveFilesOrDirectoriesRefactoring[ValueParameterDescriptorImpl]
 
-'Runnable' @ [88:25] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [88:25] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
+
+'closeDialog' @ [88:36] ==> local final fun closeDialog(): Unit defined in org.jetbrains.kotlin.idea.refactoring.move.invokeMoveFilesOrDirectoriesRefactoring[SimpleFunctionDescriptorImpl]
 
 'processor' @ [90:17] ==> val processor: KotlinAwareMoveFilesOrDirectoriesProcessor defined in org.jetbrains.kotlin.idea.refactoring.move.invokeMoveFilesOrDirectoriesRefactoring.<anonymous>[LocalVariableDescriptor]
 
@@ -207,7 +209,7 @@ Inferred types:
 
 'elements' @ [114:104] ==> value-parameter elements: Array<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories[ValueParameterDescriptorImpl]
 
-'invokeMoveFilesOrDirectoriesRefactoring' @ [117:9] ==> public fun invokeMoveFilesOrDirectoriesRefactoring(moveDialog: KotlinAwareMoveFilesOrDirectoriesDialog?, project: Project, elements: Array<out PsiElement>, initialTargetDirectory: PsiDirectory?, moveCallback: MoveCallback?): Unit defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'invokeMoveFilesOrDirectoriesRefactoring' @ [117:9] ==> public fun invokeMoveFilesOrDirectoriesRefactoring(moveDialog: KotlinAwareMoveFilesOrDirectoriesDialog?, project: Project, elements: Array<out PsiElement>, initialTargetDirectory: PsiDirectory?, moveCallback: MoveCallback?): Unit defined in org.jetbrains.kotlin.idea.refactoring.move in file moveFilesUtil.kt[SimpleFunctionDescriptorImpl]
 
 'moveDialog' @ [117:49] ==> value-parameter moveDialog: KotlinAwareMoveFilesOrDirectoriesDialog? defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories.doRun[ValueParameterDescriptorImpl]
 
@@ -233,6 +235,8 @@ Inferred types:
 'KotlinAwareMoveFilesOrDirectoriesDialog' @ [125:10] ==> public constructor KotlinAwareMoveFilesOrDirectoriesDialog(project: Project, callback: (KotlinAwareMoveFilesOrDirectoriesDialog?) -> Unit) defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.KotlinAwareMoveFilesOrDirectoriesDialog[ClassConstructorDescriptorImpl]
 
 'project' @ [125:50] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories[ValueParameterDescriptorImpl]
+
+'doRun' @ [125:61] ==> local final fun doRun(moveDialog: KotlinAwareMoveFilesOrDirectoriesDialog?): Unit defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories[SimpleFunctionDescriptorImpl]
 
 'setData' @ [126:9] ==> public final fun setData(psiElements: Array<out PsiElement>, initialTargetDirectory: PsiDirectory?, helpID: String): Unit defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.KotlinAwareMoveFilesOrDirectoriesDialog[SimpleFunctionDescriptorImpl]
 

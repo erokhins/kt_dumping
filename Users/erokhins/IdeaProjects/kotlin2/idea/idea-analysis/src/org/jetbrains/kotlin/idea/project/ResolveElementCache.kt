@@ -58,7 +58,7 @@ Inferred types:
 
 'createCachedValue' @ [77:131] ==> @NotNull public abstract fun <T : (Any..Any?)> createCachedValue(@NotNull p0: CachedValueProvider<(MutableMap<KtElement, ResolveElementCache.CachedFullResolve>..MutableMap<KtElement, ResolveElementCache.CachedFullResolve>?)>, p1: Boolean): CachedValue<(MutableMap<KtElement, ResolveElementCache.CachedFullResolve>..MutableMap<KtElement, ResolveElementCache.CachedFullResolve>?)> defined in com.intellij.psi.util.CachedValuesManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MutableMap<KtElement, CachedFullResolve>
+    <T : (Any..Any?)> -> (kotlin.collections.MutableMap<org.jetbrains.kotlin.psi.KtElement, org.jetbrains.kotlin.idea.project.ResolveElementCache.CachedFullResolve>..kotlin.collections.MutableMap<org.jetbrains.kotlin.psi.KtElement, org.jetbrains.kotlin.idea.project.ResolveElementCache.CachedFullResolve>?)
 
 'CachedValueProvider' @ [78:13] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(MutableMap<KtElement, ResolveElementCache.CachedFullResolve>..MutableMap<KtElement, ResolveElementCache.CachedFullResolve>?)>?): CachedValueProvider<MutableMap<KtElement, ResolveElementCache.CachedFullResolve>> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -66,7 +66,7 @@ Inferred types:
 
 'create' @ [79:44] ==> public open fun <T : (Any..Any?)> create(@Nullable p0: MutableMap<KtElement, ResolveElementCache.CachedFullResolve>?, @NotNull vararg p1: (Any..Any?)): (CachedValueProvider.Result<(MutableMap<KtElement, ResolveElementCache.CachedFullResolve>..MutableMap<KtElement, ResolveElementCache.CachedFullResolve>?)>..CachedValueProvider.Result<(MutableMap<KtElement, ResolveElementCache.CachedFullResolve>..MutableMap<KtElement, ResolveElementCache.CachedFullResolve>?)>?) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MutableMap<KtElement, CachedFullResolve>
+    <T : (Any..Any?)> -> (kotlin.collections.MutableMap<org.jetbrains.kotlin.psi.KtElement, org.jetbrains.kotlin.idea.project.ResolveElementCache.CachedFullResolve>..kotlin.collections.MutableMap<org.jetbrains.kotlin.psi.KtElement, org.jetbrains.kotlin.idea.project.ResolveElementCache.CachedFullResolve>?)
 
 'createConcurrentSoftValueMap' @ [79:65] ==> @NotNull @Contract public open fun <K : (Any..Any?), V : (Any..Any?)> createConcurrentSoftValueMap(): ConcurrentMap<(KtElement..KtElement?), (ResolveElementCache.CachedFullResolve..ResolveElementCache.CachedFullResolve?)> defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
@@ -118,7 +118,7 @@ Inferred types:
 
 'createCachedValue' @ [100:53] ==> @NotNull public abstract fun <T : (Any..Any?)> createCachedValue(@NotNull p0: CachedValueProvider<(MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>..MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>?)>, p1: Boolean): CachedValue<(MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>..MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>?)> defined in com.intellij.psi.util.CachedValuesManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MutableMap<KtExpression, CachedPartialResolve>
+    <T : (Any..Any?)> -> (kotlin.collections.MutableMap<org.jetbrains.kotlin.psi.KtExpression, org.jetbrains.kotlin.idea.project.ResolveElementCache.CachedPartialResolve>..kotlin.collections.MutableMap<org.jetbrains.kotlin.psi.KtExpression, org.jetbrains.kotlin.idea.project.ResolveElementCache.CachedPartialResolve>?)
 
 'CachedValueProvider' @ [101:21] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>..MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>?)>?): CachedValueProvider<MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -126,7 +126,7 @@ Inferred types:
 
 'create' @ [102:52] ==> public open fun <T : (Any..Any?)> create(@Nullable p0: MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>?, @NotNull vararg p1: (Any..Any?)): (CachedValueProvider.Result<(MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>..MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>?)>..CachedValueProvider.Result<(MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>..MutableMap<KtExpression, ResolveElementCache.CachedPartialResolve>?)>?) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MutableMap<KtExpression, CachedPartialResolve>
+    <T : (Any..Any?)> -> (kotlin.collections.MutableMap<org.jetbrains.kotlin.psi.KtExpression, org.jetbrains.kotlin.idea.project.ResolveElementCache.CachedPartialResolve>..kotlin.collections.MutableMap<org.jetbrains.kotlin.psi.KtExpression, org.jetbrains.kotlin.idea.project.ResolveElementCache.CachedPartialResolve>?)
 
 'createConcurrentSoftValueMap' @ [102:73] ==> @NotNull @Contract public open fun <K : (Any..Any?), V : (Any..Any?)> createConcurrentSoftValueMap(): ConcurrentMap<(KtExpression..KtExpression?), (ResolveElementCache.CachedPartialResolve..ResolveElementCache.CachedPartialResolve?)> defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
@@ -166,8 +166,6 @@ Inferred types:
 'ktClass' @ [120:70] ==> value-parameter ktClass: KtClass defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.resolvePrimaryConstructorParametersDefaultValues[ValueParameterDescriptorImpl]
 
 'containingKtFile' @ [120:78] ==> public final val KtClass.containingKtFile: KtFile[MyPropertyDescriptor]
-
-'BindingTraceFilter' @ [120:96] ==> public companion object defined in org.jetbrains.kotlin.resolve.BindingTraceFilter[FakeCallableDescriptorForObject]
 
 'NO_DIAGNOSTICS' @ [120:115] ==> public final val NO_DIAGNOSTICS: BindingTraceFilter defined in org.jetbrains.kotlin.resolve.BindingTraceFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -398,8 +396,6 @@ Inferred types:
 'bodyResolveMode' @ [165:122] ==> value-parameter bodyResolveMode: BodyResolveMode defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.getElementsAdditionalResolve[ValueParameterDescriptorImpl]
 
 'statementFilter' @ [167:21] ==> val statementFilter: StatementFilter defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.getElementsAdditionalResolve[LocalVariableDescriptor]
-
-'StatementFilter' @ [167:40] ==> public companion object defined in org.jetbrains.kotlin.resolve.StatementFilter[FakeCallableDescriptorForObject]
 
 'NONE' @ [167:56] ==> @field:JvmField public final val NONE: StatementFilter defined in org.jetbrains.kotlin.resolve.StatementFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -1121,8 +1117,8 @@ Inferred types:
 
 'record' @ [365:27] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (KtReferenceExpression..KtReferenceExpression?), p2: (DeclarationDescriptor..DeclarationDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [365:49] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1368,15 +1364,11 @@ Inferred types:
 
 'file' @ [451:70] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.delegationSpecifierAdditionalResolve[ValueParameterDescriptorImpl]
 
-'StatementFilter' @ [451:76] ==> public companion object defined in org.jetbrains.kotlin.resolve.StatementFilter[FakeCallableDescriptorForObject]
-
 'NONE' @ [451:92] ==> @field:JvmField public final val NONE: StatementFilter defined in org.jetbrains.kotlin.resolve.StatementFilter.Companion[DeserializedPropertyDescriptor]
 
 'bodyResolver' @ [452:9] ==> val bodyResolver: BodyResolver defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.delegationSpecifierAdditionalResolve[LocalVariableDescriptor]
 
 'resolveSuperTypeEntryList' @ [452:22] ==> public open fun resolveSuperTypeEntryList(@NotNull p0: DataFlowInfo, @NotNull p1: KtClassOrObject, @NotNull p2: ClassDescriptor, @Nullable p3: ConstructorDescriptor?, @NotNull p4: LexicalScope, @NotNull p5: LexicalScope): Unit defined in org.jetbrains.kotlin.resolve.BodyResolver[JavaMethodDescriptor]
-
-'DataFlowInfo' @ [452:48] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [452:61] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 
@@ -1524,8 +1516,6 @@ Inferred types:
 
 'resolveFunctionBody' @ [500:22] ==> public open fun resolveFunctionBody(@NotNull p0: DataFlowInfo, @NotNull p1: BindingTrace, @NotNull p2: KtDeclarationWithBody, @NotNull p3: FunctionDescriptor, @NotNull p4: LexicalScope): Unit defined in org.jetbrains.kotlin.resolve.BodyResolver[JavaMethodDescriptor]
 
-'DataFlowInfo' @ [500:42] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [500:55] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 
 'trace' @ [500:62] ==> val trace: BindingTrace defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.functionAdditionalResolve[LocalVariableDescriptor]
@@ -1581,8 +1571,6 @@ Inferred types:
 'bodyResolver' @ [517:9] ==> val bodyResolver: BodyResolver defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.secondaryConstructorAdditionalResolve[LocalVariableDescriptor]
 
 'resolveSecondaryConstructorBody' @ [517:22] ==> public open fun resolveSecondaryConstructorBody(@NotNull p0: DataFlowInfo, @NotNull p1: BindingTrace, @NotNull p2: KtSecondaryConstructor, @NotNull p3: ClassConstructorDescriptor, @NotNull p4: LexicalScope): Unit defined in org.jetbrains.kotlin.resolve.BodyResolver[JavaMethodDescriptor]
-
-'DataFlowInfo' @ [517:54] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [517:67] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 
@@ -1654,15 +1642,11 @@ Inferred types:
 
 'file' @ [536:74] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.constructorAdditionalResolve[ValueParameterDescriptorImpl]
 
-'StatementFilter' @ [536:80] ==> public companion object defined in org.jetbrains.kotlin.resolve.StatementFilter[FakeCallableDescriptorForObject]
-
 'NONE' @ [536:96] ==> @field:JvmField public final val NONE: StatementFilter defined in org.jetbrains.kotlin.resolve.StatementFilter.Companion[DeserializedPropertyDescriptor]
 
 'bodyResolver' @ [537:13] ==> val bodyResolver: BodyResolver defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.constructorAdditionalResolve[LocalVariableDescriptor]
 
 'resolveConstructorParameterDefaultValues' @ [537:26] ==> public open fun resolveConstructorParameterDefaultValues(@NotNull p0: DataFlowInfo, @NotNull p1: BindingTrace, @NotNull p2: KtPrimaryConstructor, @NotNull p3: ConstructorDescriptor, @NotNull p4: LexicalScope): Unit defined in org.jetbrains.kotlin.resolve.BodyResolver[JavaMethodDescriptor]
-
-'DataFlowInfo' @ [537:67] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [537:80] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 
@@ -1732,8 +1716,6 @@ Inferred types:
 
 'resolveAnonymousInitializer' @ [562:22] ==> public open fun resolveAnonymousInitializer(@NotNull p0: DataFlowInfo, @NotNull p1: KtAnonymousInitializer, @NotNull p2: ClassDescriptorWithResolutionScopes): Unit defined in org.jetbrains.kotlin.resolve.BodyResolver[JavaMethodDescriptor]
 
-'DataFlowInfo' @ [562:50] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [562:63] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 
 'anonymousInitializer' @ [562:70] ==> value-parameter anonymousInitializer: KtAnonymousInitializer defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.initializerAdditionalResolve[ValueParameterDescriptorImpl]
@@ -1762,10 +1744,10 @@ Inferred types:
 
 'entry' @ [571:70] ==> value-parameter entry: KtAnnotationEntry defined in org.jetbrains.kotlin.idea.project.ResolveElementCache.forceResolveAnnotationsInside.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [571:78] ==> @InlineOnly public inline fun <T, R> AnnotationDescriptor.let(block: (AnnotationDescriptor) -> AnnotationDescriptor): AnnotationDescriptor defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [571:78] ==> @InlineOnly public inline fun <T, R> AnnotationDescriptor.let(block: (AnnotationDescriptor) -> (AnnotationDescriptor..AnnotationDescriptor?)): (AnnotationDescriptor..AnnotationDescriptor?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AnnotationDescriptor
-    <R> -> AnnotationDescriptor
+    <R> -> (org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor..org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor?)
 
 'forceResolveAllContents' @ [572:34] ==> public open fun <T : (Any..Any?)> forceResolveAllContents(@NotNull p0: AnnotationDescriptor): (AnnotationDescriptor..AnnotationDescriptor?) defined in org.jetbrains.kotlin.resolve.lazy.ForceResolveUtil[JavaMethodDescriptor]
 Inferred types:

@@ -1,7 +1,7 @@
 'newConcurrentMap' @ [27:71] ==> @NotNull @Contract public open fun <K : (Any..Any?), V : (Any..Any?)> newConcurrentMap(): ConcurrentMap<(String..String?), (FileAttribute..FileAttribute?)> defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> FileAttribute
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (com.intellij.openapi.vfs.newvfs.FileAttribute..com.intellij.openapi.vfs.newvfs.FileAttribute?)
 
 'attributes' @ [30:9] ==> public final val attributes: MutableMap<String, FileAttribute> defined in org.jetbrains.kotlin.idea.caches.FileAttributeServiceImpl[PropertyDescriptorImpl]
 

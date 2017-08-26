@@ -12,15 +12,13 @@ Inferred types:
 
 'calleeName' @ [38:21] ==> public val KtQualifiedExpression.calleeName: String? defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[PropertyDescriptorImpl]
 
-'OperatorNameConventions' @ [38:35] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'CONTAINS' @ [38:59] ==> @field:JvmField public final val CONTAINS: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'asString' @ [38:68] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
 'element' @ [40:28] ==> value-parameter element: KtDotQualifiedExpression defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceContainsIntention.applicabilityRange[ValueParameterDescriptorImpl]
 
-'toResolvedCall' @ [40:36] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'toResolvedCall' @ [40:36] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'PARTIAL' @ [40:67] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
@@ -34,7 +32,7 @@ Inferred types:
 
 'call' @ [42:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueArguments' @ [42:42] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
@@ -58,7 +56,7 @@ Inferred types:
 
 'resultingDescriptor' @ [45:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'target' @ [46:26] ==> val target: CallableDescriptor defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceContainsIntention.applicabilityRange[LocalVariableDescriptor]
 
@@ -221,5 +219,5 @@ Inferred types:
 
 'resultingDescriptor' @ [94:29] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 

@@ -56,7 +56,7 @@ Inferred types:
 
 'containingDeclaration' @ [41:40] ==> public final val CallableDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'getTypeSubstitution' @ [42:24] ==> public fun getTypeSubstitution(baseType: KotlinType, derivedType: KotlinType): LinkedHashMap<TypeConstructor, TypeProjection>? defined in org.jetbrains.kotlin.types.substitutions[SimpleFunctionDescriptorImpl]
+'getTypeSubstitution' @ [42:24] ==> public fun getTypeSubstitution(baseType: KotlinType, derivedType: KotlinType): LinkedHashMap<TypeConstructor, TypeProjection>? defined in org.jetbrains.kotlin.types.substitutions in file substitutionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'baseClass' @ [42:44] ==> val baseClass: ClassDescriptor defined in org.jetbrains.kotlin.types.substitutions.getCallableSubstitution[LocalVariableDescriptor]
 
@@ -97,7 +97,7 @@ Inferred types:
 
 'substitution' @ [48:12] ==> val substitution: LinkedHashMap<TypeConstructor, TypeProjection> defined in org.jetbrains.kotlin.types.substitutions.getCallableSubstitution[LocalVariableDescriptor]
 
-'getCallableSubstitution' @ [55:12] ==> public fun getCallableSubstitution(baseCallable: CallableDescriptor, derivedCallable: CallableDescriptor): MutableMap<TypeConstructor, TypeProjection>? defined in org.jetbrains.kotlin.types.substitutions[SimpleFunctionDescriptorImpl]
+'getCallableSubstitution' @ [55:12] ==> public fun getCallableSubstitution(baseCallable: CallableDescriptor, derivedCallable: CallableDescriptor): MutableMap<TypeConstructor, TypeProjection>? defined in org.jetbrains.kotlin.types.substitutions in file substitutionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'baseCallable' @ [55:36] ==> value-parameter baseCallable: CallableDescriptor defined in org.jetbrains.kotlin.types.substitutions.getCallableSubstitutor[ValueParameterDescriptorImpl]
 
@@ -112,7 +112,7 @@ Inferred types:
 
 'it' @ [55:97] ==> value-parameter it: MutableMap<TypeConstructor, TypeProjection> defined in org.jetbrains.kotlin.types.substitutions.getCallableSubstitutor.<anonymous>[ValueParameterDescriptorImpl]
 
-'getTypeSubstitution' @ [59:12] ==> public fun getTypeSubstitution(baseType: KotlinType, derivedType: KotlinType): LinkedHashMap<TypeConstructor, TypeProjection>? defined in org.jetbrains.kotlin.types.substitutions[SimpleFunctionDescriptorImpl]
+'getTypeSubstitution' @ [59:12] ==> public fun getTypeSubstitution(baseType: KotlinType, derivedType: KotlinType): LinkedHashMap<TypeConstructor, TypeProjection>? defined in org.jetbrains.kotlin.types.substitutions in file substitutionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'baseType' @ [59:32] ==> value-parameter baseType: KotlinType defined in org.jetbrains.kotlin.types.substitutions.getTypeSubstitutor[ValueParameterDescriptorImpl]
 

@@ -2,13 +2,9 @@
 
 'psiElement' @ [43:35] ==> value-parameter psiElement: PsiElement defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.<init>[ValueParameterDescriptorImpl]
 
-'DescriptorMemberChooserObject' @ [43:47] ==> public companion object defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject[FakeCallableDescriptorForObject]
-
 'getText' @ [43:77] ==> public final fun getText(descriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.Companion[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [43:85] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.<init>[ValueParameterDescriptorImpl]
-
-'DescriptorMemberChooserObject' @ [43:98] ==> public companion object defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject[FakeCallableDescriptorForObject]
 
 'getIcon' @ [43:128] ==> public final fun getIcon(declaration: PsiElement?, descriptor: DeclarationDescriptor): Icon? defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.Companion[SimpleFunctionDescriptorImpl]
 
@@ -30,19 +26,19 @@
         }
         else { // java or compiled
             (psiElement as PsiMember).containingClass
-        }' @ [48:27] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {NavigatablePsiElement & PsiNamedElement}?, elseBranch: {NavigatablePsiElement & PsiNamedElement}?): {NavigatablePsiElement & PsiNamedElement}?[SimpleFunctionDescriptorImpl]
+        }' @ [48:27] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiElement?, elseBranch: PsiElement?): PsiElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {NavigatablePsiElement & PsiNamedElement}?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> PsiElement?
 
 'psiElement' @ [48:31] ==> public final val DescriptorMemberChooserObject.psiElement: PsiElement[MyPropertyDescriptor]
 
-'?:' @ [49:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: {PsiNamedElement & KtAnnotated}?, right: {PsiNamedElement & KtAnnotated}?): {PsiNamedElement & KtAnnotated}?[SimpleFunctionDescriptorImpl]
+'?:' @ [49:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement?): PsiElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> {PsiNamedElement & KtAnnotated}?
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement?
 
 'getStubOrPsiParentOfType' @ [49:25] ==> @Nullable @Contract public open fun <E : (PsiElement..PsiElement?)> getStubOrPsiParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtNamedDeclaration..KtNamedDeclaration?)>): KtNamedDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
 
 'psiElement' @ [49:50] ==> public final val DescriptorMemberChooserObject.psiElement: PsiElement[MyPropertyDescriptor]
 
@@ -52,7 +48,7 @@ Inferred types:
 
 'getStubOrPsiParentOfType' @ [50:32] ==> @Nullable @Contract public open fun <E : (PsiElement..PsiElement?)> getStubOrPsiParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtFile..KtFile?)>): KtFile? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> KtFile
+    <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
 
 'psiElement' @ [50:57] ==> public final val DescriptorMemberChooserObject.psiElement: PsiElement[MyPropertyDescriptor]
 
@@ -77,19 +73,19 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> MemberChooserObject
 
-'declaration' @ [56:22] ==> val declaration: {NavigatablePsiElement & PsiNamedElement} defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.getParentNodeDelegate[LocalVariableDescriptor]
+'declaration' @ [56:22] ==> val declaration: PsiElement defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.getParentNodeDelegate[LocalVariableDescriptor]
 
 'PsiElementMemberChooserObject' @ [57:26] ==> public constructor PsiElementMemberChooserObject(@NotNull p0: PsiElement, p1: (String..String?)) defined in com.intellij.codeInsight.generation.PsiElementMemberChooserObject[JavaClassConstructorDescriptor]
 
-'declaration' @ [57:56] ==> val declaration: {NavigatablePsiElement & PsiNamedElement} defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.getParentNodeDelegate[LocalVariableDescriptor]
+'declaration' @ [57:56] ==> val declaration: PsiElement defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.getParentNodeDelegate[LocalVariableDescriptor]
 
-'declaration' @ [57:69] ==> val declaration: {NavigatablePsiElement & PsiNamedElement} defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.getParentNodeDelegate[LocalVariableDescriptor]
+'declaration' @ [57:69] ==> val declaration: PsiElement defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.getParentNodeDelegate[LocalVariableDescriptor]
 
 'name' @ [57:81] ==> public final var KtFile.name: String[MyPropertyDescriptor]
 
 'DescriptorMemberChooserObject' @ [58:21] ==> public constructor DescriptorMemberChooserObject(psiElement: PsiElement, descriptor: DeclarationDescriptor) defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject[ClassConstructorDescriptorImpl]
 
-'declaration' @ [58:51] ==> val declaration: {NavigatablePsiElement & PsiNamedElement} defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.getParentNodeDelegate[LocalVariableDescriptor]
+'declaration' @ [58:51] ==> val declaration: PsiElement defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.getParentNodeDelegate[LocalVariableDescriptor]
 
 'parent' @ [58:64] ==> val parent: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.core.util.DescriptorMemberChooserObject.getParentNodeDelegate[LocalVariableDescriptor]
 

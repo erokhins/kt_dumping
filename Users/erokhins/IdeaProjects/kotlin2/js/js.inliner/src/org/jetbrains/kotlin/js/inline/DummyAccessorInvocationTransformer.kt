@@ -18,7 +18,7 @@
 
 'replaceMe' @ [31:17] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsInvocation..JsInvocation?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsNode)..CapturedType(in JsNode)?)> -> JsInvocation
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsInvocation..org.jetbrains.kotlin.js.backend.ast.JsInvocation?)
 
 'dummy' @ [31:27] ==> val dummy: JsInvocation? defined in org.jetbrains.kotlin.js.inline.DummyAccessorInvocationTransformer.endVisit[LocalVariableDescriptor]
 
@@ -40,7 +40,7 @@ Inferred types:
 
 'replaceMe' @ [39:17] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsInvocation..JsInvocation?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsNode)..CapturedType(in JsNode)?)> -> JsInvocation
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsInvocation..org.jetbrains.kotlin.js.backend.ast.JsInvocation?)
 
 'dummy' @ [39:27] ==> val dummy: JsInvocation? defined in org.jetbrains.kotlin.js.inline.DummyAccessorInvocationTransformer.endVisit[LocalVariableDescriptor]
 

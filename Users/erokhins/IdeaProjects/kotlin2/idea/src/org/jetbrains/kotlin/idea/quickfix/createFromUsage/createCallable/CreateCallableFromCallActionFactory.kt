@@ -10,9 +10,9 @@ Inferred types:
 
 '!=' @ [68:13] ==> public open fun equals(other: Any?): Boolean defined in org.jetbrains.kotlin.psi.KtElementImplStub[DeserializedSimpleFunctionDescriptor]
 
-'getParentOfType' @ [68:25] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>..StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>?)>>..StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>..StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>?)>>?)>..KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>..StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>?)>>..StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>..StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>?)>>?)>?)>..Class<out (KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>..StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>?)>>..StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>..StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>?)>>?)>..KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>..StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>?)>>..StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>..StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>?)>>?)>?)>?)): KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>..StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>?)>>..StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>..StubElement<out KtElementImplStub<out (StubElement<*>..StubElement<*>?)>>?)>>?)>? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'getParentOfType' @ [68:25] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<*>>..StubElement<out KtElementImplStub<*>>?)>>..StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<*>>..StubElement<out KtElementImplStub<*>>?)>>?)>..KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<*>>..StubElement<out KtElementImplStub<*>>?)>>..StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<*>>..StubElement<out KtElementImplStub<*>>?)>>?)>?)>..Class<out (KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<*>>..StubElement<out KtElementImplStub<*>>?)>>..StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<*>>..StubElement<out KtElementImplStub<*>>?)>>?)>..KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<*>>..StubElement<out KtElementImplStub<*>>?)>>..StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<*>>..StubElement<out KtElementImplStub<*>>?)>>?)>?)>?)): KtElementImplStub<out (StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<*>>..StubElement<out KtElementImplStub<*>>?)>>..StubElement<out KtElementImplStub<out (StubElement<out KtElementImplStub<*>>..StubElement<out KtElementImplStub<*>>?)>>?)>? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>>..com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>>?)>>..com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>>..com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>>?)>>?)>
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<*>>..com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<*>>?)>>..com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<*>>..com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<*>>?)>>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<*>>..com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<*>>?)>>..com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<*>>..com.intellij.psi.stubs.StubElement<out org.jetbrains.kotlin.psi.KtElementImplStub<*>>?)>>?)>?)
 
 'diagElement' @ [69:17] ==> val diagElement: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.getExpressionOfInterest[LocalVariableDescriptor]
 
@@ -49,9 +49,9 @@ Inferred types:
 
 'factory' @ [73:33] ==> public final val Diagnostic.factory: DiagnosticFactory<*>[MyPropertyDescriptor]
 
-'in' @ [74:13] ==> public operator fun <@OnlyInputTypes T> Iterable<(DiagnosticFactory<out Diagnostic>..DiagnosticFactory<out Diagnostic>?)>.contains(element: (DiagnosticFactory<out Diagnostic>..DiagnosticFactory<out Diagnostic>?)): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [74:13] ==> public operator fun <@OnlyInputTypes T> Iterable<(DiagnosticFactory<*>..DiagnosticFactory<*>?)>.contains(element: (DiagnosticFactory<*>..DiagnosticFactory<*>?)): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory<out org.jetbrains.kotlin.diagnostics.Diagnostic>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory<out org.jetbrains.kotlin.diagnostics.Diagnostic>?)
+    <@OnlyInputTypes T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>?)
 
 'UNRESOLVED_REFERENCE_DIAGNOSTICS' @ [74:23] ==> public final val UNRESOLVED_REFERENCE_DIAGNOSTICS: (ImmutableSet<out (DiagnosticFactory<*>..DiagnosticFactory<*>?)>..ImmutableSet<out (DiagnosticFactory<*>..DiagnosticFactory<*>?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
@@ -161,9 +161,9 @@ Inferred types:
                     }
                     if (containers.isNotEmpty()) containers else return null
                 }
-                else Collections.emptyList()' @ [105:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<KtElement>..List<KtElement>?), elseBranch: (List<KtElement>..List<KtElement>?)): (List<KtElement>..List<KtElement>?)[SimpleFunctionDescriptorImpl]
+                else Collections.emptyList()' @ [105:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<KtElement>, elseBranch: List<KtElement>): List<KtElement>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.List<org.jetbrains.kotlin.psi.KtElement>..kotlin.collections.List<org.jetbrains.kotlin.psi.KtElement>?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<KtElement>
 
 'receiverType' @ [105:21] ==> val receiverType: TypeInfo defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.createCallableInfo[LocalVariableDescriptor]
 
@@ -176,7 +176,7 @@ Inferred types:
 
 'getQualifiedExpressionForSelectorOrThis' @ [106:51] ==> public fun KtExpression.getQualifiedExpressionForSelectorOrThis(): KtExpression defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedSimpleFunctionDescriptor]
 
-'getExtractionContainers' @ [106:93] ==> public fun PsiElement.getExtractionContainers(strict: Boolean = ..., includeAll: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getExtractionContainers' @ [106:93] ==> public fun PsiElement.getExtractionContainers(strict: Boolean = ..., includeAll: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'if (element is KtCallExpression) this else filter { it is KtClassBody || it is KtFile }' @ [107:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<KtElement>, elseBranch: List<KtElement>): List<KtElement>[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -208,7 +208,7 @@ Inferred types:
 
 'emptyList' @ [111:34] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KtElement..KtElement?)>..List<(KtElement..KtElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtElement
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'doCreateCallableInfo' @ [113:16] ==> protected abstract fun doCreateCallableInfo(expression: E, analysisResult: AnalysisResult, name: String, receiverType: TypeInfo, possibleContainers: List<KtElement>): CallableInfo? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory[SimpleFunctionDescriptorImpl]
 
@@ -222,7 +222,7 @@ Inferred types:
 
 'receiverType' @ [113:94] ==> val receiverType: TypeInfo defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.createCallableInfo[LocalVariableDescriptor]
 
-'possibleContainers' @ [113:108] ==> val possibleContainers: (List<KtElement>..List<KtElement>?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.createCallableInfo[LocalVariableDescriptor]
+'possibleContainers' @ [113:108] ==> val possibleContainers: List<KtElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.createCallableInfo[LocalVariableDescriptor]
 
 'when (receiver) {
             null -> TypeInfo.Empty
@@ -506,11 +506,11 @@ Inferred types:
 
 'fullCallExpr' @ [191:42] ==> val fullCallExpr: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Property.doCreateCallableInfo[LocalVariableDescriptor]
 
-'getExpressionForTypeGuess' @ [191:55] ==> public fun KtExpression.getExpressionForTypeGuess(): KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getExpressionForTypeGuess' @ [191:55] ==> public fun KtExpression.getExpressionForTypeGuess(): KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'expressionForTypeGuess' @ [192:31] ==> val expressionForTypeGuess: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Property.doCreateCallableInfo[LocalVariableDescriptor]
 
-'guessTypes' @ [192:54] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [192:54] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'analysisResult' @ [192:65] ==> value-parameter analysisResult: AnalysisResult defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Property.doCreateCallableInfo[ValueParameterDescriptorImpl]
 
@@ -680,11 +680,11 @@ Inferred types:
 
 'expression' @ [256:30] ==> value-parameter expression: KtCallExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Function.doCreateCallableInfo[ValueParameterDescriptorImpl]
 
-'getParameterInfos' @ [256:41] ==> public fun KtCallExpression.getParameterInfos(): List<ParameterInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getParameterInfos' @ [256:41] ==> public fun KtCallExpression.getParameterInfos(): List<ParameterInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [257:34] ==> value-parameter expression: KtCallExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Function.doCreateCallableInfo[ValueParameterDescriptorImpl]
 
-'getTypeInfoForTypeArguments' @ [257:45] ==> public fun KtCallElement.getTypeInfoForTypeArguments(): List<TypeInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getTypeInfoForTypeArguments' @ [257:45] ==> public fun KtCallElement.getTypeInfoForTypeArguments(): List<TypeInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [258:38] ==> value-parameter expression: KtCallExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Function.doCreateCallableInfo[ValueParameterDescriptorImpl]
 
@@ -692,7 +692,7 @@ Inferred types:
 
 'fullCallExpression' @ [259:32] ==> val fullCallExpression: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Function.doCreateCallableInfo[LocalVariableDescriptor]
 
-'guessTypes' @ [259:51] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [259:51] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'analysisResult' @ [259:62] ==> value-parameter analysisResult: AnalysisResult defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Function.doCreateCallableInfo[ValueParameterDescriptorImpl]
 
@@ -891,7 +891,7 @@ Inferred types:
 
 'expression' @ [322:30] ==> value-parameter expression: KtCallExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Constructor.doCreateCallableInfo[ValueParameterDescriptorImpl]
 
-'getParameterInfos' @ [322:41] ==> public fun KtCallExpression.getParameterInfos(): List<ParameterInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getParameterInfos' @ [322:41] ==> public fun KtCallExpression.getParameterInfos(): List<ParameterInfo> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'SecondaryConstructorInfo' @ [324:20] ==> public constructor SecondaryConstructorInfo(parameterInfos: List<ParameterInfo>, targetClass: PsiElement) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.SecondaryConstructorInfo[ClassConstructorDescriptorImpl]
 

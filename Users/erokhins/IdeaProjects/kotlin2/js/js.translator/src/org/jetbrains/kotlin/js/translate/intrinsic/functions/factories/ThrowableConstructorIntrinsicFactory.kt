@@ -20,7 +20,7 @@
 
 'resultingDescriptor' @ [42:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'arguments' @ [43:35] ==> value-parameter arguments: List<JsExpression> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ThrowableConstructorIntrinsicFactory.Intrinsic.apply[ValueParameterDescriptorImpl]
 

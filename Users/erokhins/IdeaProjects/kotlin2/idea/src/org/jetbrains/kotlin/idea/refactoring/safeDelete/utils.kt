@@ -113,7 +113,7 @@ Inferred types:
 
 'declarationScope' @ [79:28] ==> public final val PsiParameter.declarationScope: PsiElement[MyPropertyDescriptor]
 
-'collectParametersHierarchy' @ [81:30] ==> private fun collectParametersHierarchy(method: PsiMethod, parameter: PsiParameter): Set<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.safeDelete[SimpleFunctionDescriptorImpl]
+'collectParametersHierarchy' @ [81:30] ==> private fun collectParametersHierarchy(method: PsiMethod, parameter: PsiParameter): Set<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.safeDelete in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [81:57] ==> val method: PsiMethod defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.checkParametersInMethodHierarchy[LocalVariableDescriptor]
 
@@ -189,7 +189,7 @@ Inferred types:
 
 'currentMethod' @ [99:20] ==> val currentMethod: (PsiMethod..PsiMethod?) defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.collectParametersHierarchy[LocalVariableDescriptor]
 
-'addParameter' @ [100:9] ==> private fun addParameter(method: PsiMethod, result: MutableSet<PsiElement>, parameter: PsiParameter): Unit defined in org.jetbrains.kotlin.idea.refactoring.safeDelete[SimpleFunctionDescriptorImpl]
+'addParameter' @ [100:9] ==> private fun addParameter(method: PsiMethod, result: MutableSet<PsiElement>, parameter: PsiParameter): Unit defined in org.jetbrains.kotlin.idea.refactoring.safeDelete in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'currentMethod' @ [100:22] ==> val currentMethod: (PsiMethod..PsiMethod?) defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.collectParametersHierarchy[LocalVariableDescriptor]
 

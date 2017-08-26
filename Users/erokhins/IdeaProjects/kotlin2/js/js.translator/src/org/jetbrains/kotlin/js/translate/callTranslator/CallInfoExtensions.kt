@@ -2,7 +2,7 @@
 
 'resultingDescriptor' @ [39:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'original' @ [39:55] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
@@ -26,7 +26,7 @@ Inferred types:
 
 'dispatchReceiver' @ [46:41] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'dispatchReceiver' @ [47:12] ==> val dispatchReceiver: ReceiverValue? defined in org.jetbrains.kotlin.js.translate.callTranslator.isSuperInvocation[LocalVariableDescriptor]
 
@@ -38,7 +38,7 @@ Inferred types:
 
 'resultingDescriptor' @ [52:40] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'containingDeclaration' @ [52:60] ==> public final val CallableDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 

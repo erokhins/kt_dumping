@@ -8,13 +8,13 @@
 
 'of' @ [47:49] ==> public open fun <E : (Enum<(JavaRoot.RootType..JavaRoot.RootType?)>..Enum<(JavaRoot.RootType..JavaRoot.RootType?)>?)> of(p0: (JavaRoot.RootType..JavaRoot.RootType?)): (EnumSet<(JavaRoot.RootType..JavaRoot.RootType?)>..EnumSet<(JavaRoot.RootType..JavaRoot.RootType?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> RootType
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType..org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType?)
 
 'BINARY' @ [47:61] ==> enum entry BINARY defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType[FakeCallableDescriptorForObject]
 
 'of' @ [48:54] ==> public open fun <E : (Enum<(JavaRoot.RootType..JavaRoot.RootType?)>..Enum<(JavaRoot.RootType..JavaRoot.RootType?)>?)> of(p0: (JavaRoot.RootType..JavaRoot.RootType?), p1: (JavaRoot.RootType..JavaRoot.RootType?)): (EnumSet<(JavaRoot.RootType..JavaRoot.RootType?)>..EnumSet<(JavaRoot.RootType..JavaRoot.RootType?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> RootType
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType..org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType?)
 
 'BINARY' @ [48:66] ==> enum entry BINARY defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType[FakeCallableDescriptorForObject]
 

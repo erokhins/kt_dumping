@@ -555,7 +555,7 @@ Inferred types:
 
 'isOneLine' @ [126:47] ==> public final val <T : (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)> LiteralTextEscaper<out (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)>.isOneLine: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)> -> (com.intellij.psi.PsiLanguageInjectionHost..com.intellij.psi.PsiLanguageInjectionHost?)
+    <T : (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)> -> Captured(out (com.intellij.psi.PsiLanguageInjectionHost..com.intellij.psi.PsiLanguageInjectionHost?))
 
 'assertFalse' @ [130:9] ==> public open fun assertFalse(p0: Boolean): Unit defined in org.jetbrains.kotlin.test.KotlinTestWithEnvironment[JavaMethodDescriptor]
 
@@ -563,7 +563,7 @@ Inferred types:
 
 'isOneLine' @ [130:48] ==> public final val <T : (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)> LiteralTextEscaper<out (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)>.isOneLine: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)> -> (com.intellij.psi.PsiLanguageInjectionHost..com.intellij.psi.PsiLanguageInjectionHost?)
+    <T : (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)> -> Captured(out (com.intellij.psi.PsiLanguageInjectionHost..com.intellij.psi.PsiLanguageInjectionHost?))
 
 'with' @ [134:9] ==> @InlineOnly public inline fun <T, R> with(receiver: KtStringTemplateExpression, block: KtStringTemplateExpression.() -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -613,7 +613,7 @@ Inferred types:
 
 'relevantTextRange' @ [147:48] ==> public final val <T : (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)> LiteralTextEscaper<out (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)>.relevantTextRange: TextRange[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)> -> (com.intellij.psi.PsiLanguageInjectionHost..com.intellij.psi.PsiLanguageInjectionHost?)
+    <T : (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)> -> Captured(out (com.intellij.psi.PsiLanguageInjectionHost..com.intellij.psi.PsiLanguageInjectionHost?))
 
 'assertTrue' @ [149:13] ==> public open fun assertTrue(p0: Boolean): Unit defined in org.jetbrains.kotlin.test.KotlinTestWithEnvironment[JavaMethodDescriptor]
 
@@ -639,8 +639,8 @@ Inferred types:
 
 'HashMap' @ [152:35] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (Int..Int?), out (Int..Int?)>..Map<out (Int..Int?), (Int..Int?)>?)) defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Int
-    <V : (Any..Any?)> -> Int
+    <K : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
+    <V : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'targetToSourceOffsets' @ [152:43] ==> value-parameter targetToSourceOffsets: Map<Int, Int> defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[ValueParameterDescriptorImpl]
 
@@ -654,13 +654,13 @@ Inferred types:
 
 'beforeStart' @ [154:17] ==> val beforeStart: Int defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
 
-'extendedOffsets' @ [155:17] ==> val extendedOffsets: HashMap<Int, Int> defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
+'extendedOffsets' @ [155:17] ==> val extendedOffsets: HashMap<(Int..Int?), (Int..Int?)> defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
 
 'beforeStart' @ [155:33] ==> val beforeStart: Int defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
 
 '-' @ [155:48] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'extendedOffsets' @ [157:13] ==> val extendedOffsets: HashMap<Int, Int> defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
+'extendedOffsets' @ [157:13] ==> val extendedOffsets: HashMap<(Int..Int?), (Int..Int?)> defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
 
 'targetToSourceOffsets' @ [157:29] ==> value-parameter targetToSourceOffsets: Map<Int, Int> defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[ValueParameterDescriptorImpl]
 
@@ -672,29 +672,29 @@ Inferred types:
 
 '-' @ [157:71] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'component1' @ [158:19] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<Int, Int>.component1(): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'component1' @ [158:19] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<(Int..Int?), (Int..Int?)>.component1(): (Int..Int?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> Int
-    <V> -> Int
+    <K> -> (kotlin.Int..kotlin.Int?)
+    <V> -> (kotlin.Int..kotlin.Int?)
 
-'component2' @ [158:27] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<Int, Int>.component2(): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'component2' @ [158:27] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<(Int..Int?), (Int..Int?)>.component2(): (Int..Int?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> Int
-    <V> -> Int
+    <K> -> (kotlin.Int..kotlin.Int?)
+    <V> -> (kotlin.Int..kotlin.Int?)
 
-'extendedOffsets' @ [158:38] ==> val extendedOffsets: HashMap<Int, Int> defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
+'extendedOffsets' @ [158:38] ==> val extendedOffsets: HashMap<(Int..Int?), (Int..Int?)> defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
 
 'assertEquals' @ [159:17] ==> public open fun assertEquals(p0: (String..String?), p1: Int, p2: Int): Unit defined in org.jetbrains.kotlin.test.KotlinTestWithEnvironment[JavaMethodDescriptor]
 
-'target' @ [159:56] ==> val target: Int defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
+'target' @ [159:56] ==> val target: (Int..Int?) defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
 
-'source' @ [159:65] ==> val source: Int defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
+'source' @ [159:65] ==> val source: (Int..Int?) defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
 
 'escaper' @ [159:73] ==> val escaper: LiteralTextEscaper<out (PsiLanguageInjectionHost..PsiLanguageInjectionHost?)> defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
 
 'getOffsetInHost' @ [159:81] ==> public abstract fun getOffsetInHost(p0: Int, @NotNull p1: TextRange): Int defined in com.intellij.psi.LiteralTextEscaper[JavaMethodDescriptor]
 
-'target' @ [159:97] ==> val target: Int defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
+'target' @ [159:97] ==> val target: (Int..Int?) defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
 
 'range' @ [159:105] ==> val range: TextRange defined in org.jetbrains.kotlin.psi.injection.StringInjectionHostTest.checkInjection[LocalVariableDescriptor]
 

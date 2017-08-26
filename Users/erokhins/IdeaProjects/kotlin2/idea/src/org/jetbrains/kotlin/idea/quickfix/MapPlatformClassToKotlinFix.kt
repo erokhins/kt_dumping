@@ -351,7 +351,7 @@ Inferred types:
 
 'diagnostic' @ [161:79] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.MapPlatformClassToKotlinFix.Companion.extractFixData[ValueParameterDescriptorImpl]
 
-'a' @ [161:91] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtElement..KtElement?), (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>?)>.a: (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>?)[MyPropertyDescriptor]
+'a' @ [161:91] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtElement..KtElement?), (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>?)>.a: (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>)[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
     <A : (Any..Any?)> -> (kotlin.collections.MutableCollection<(org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)>?)
@@ -360,7 +360,7 @@ Inferred types:
 
 'platformClass' @ [162:25] ==> val platformClass: ClassDescriptor defined in org.jetbrains.kotlin.idea.quickfix.MapPlatformClassToKotlinFix.Companion.extractFixData[LocalVariableDescriptor]
 
-'possibleClasses' @ [162:40] ==> val possibleClasses: (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.idea.quickfix.MapPlatformClassToKotlinFix.Companion.extractFixData[LocalVariableDescriptor]
+'possibleClasses' @ [162:40] ==> val possibleClasses: (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>) defined in org.jetbrains.kotlin.idea.quickfix.MapPlatformClassToKotlinFix.Companion.extractFixData[LocalVariableDescriptor]
 
 'MapPlatformClassToKotlinFix' @ [166:20] ==> public constructor MapPlatformClassToKotlinFix(element: KtReferenceExpression, platformClass: ClassDescriptor, possibleClasses: Collection<ClassDescriptor>) defined in org.jetbrains.kotlin.idea.quickfix.MapPlatformClassToKotlinFix[ClassConstructorDescriptorImpl]
 

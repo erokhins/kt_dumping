@@ -8,8 +8,6 @@ Inferred types:
 
 'getFilesWithCallables' @ [34:31] ==> @JvmStatic public final fun getFilesWithCallables(files: Collection<KtFile>): List<KtFile> defined in org.jetbrains.kotlin.load.kotlin.PackagePartClassUtils[DeserializedSimpleFunctionDescriptor]
 
-'KotlinFileFacadeFqNameIndex' @ [35:17] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [35:45] ==> @JvmField public final val INSTANCE: KotlinFileFacadeFqNameIndex defined in org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex.Companion[PropertyDescriptorImpl]
 
 'get' @ [35:54] ==> public open fun get(key: String, project: Project, scope: GlobalSearchScope): (MutableCollection<(KtFile..KtFile?)>..Collection<(KtFile..KtFile?)>?) defined in org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex[SimpleFunctionDescriptorImpl]

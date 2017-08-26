@@ -11,7 +11,7 @@ Inferred types:
 
 'java' @ [30:42] ==> public val <T> KClass<out T>.java: Class<out T> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> T
+    <T> -> Captured(out T)
 
 'newInstance' @ [30:47] ==> @CallerSensitive public open fun newInstance(): (T..T?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -90,15 +90,15 @@ Inferred types:
 
 'to' @ [56:26] ==> value-parameter to: To defined in org.jetbrains.kotlin.cli.common.arguments.copyProperties[ValueParameterDescriptorImpl]
 
-'memberProperties' @ [56:36] ==> @SinceKotlin public val <T : Any> KClass<out To>.memberProperties: Collection<KProperty1<out To, *>> defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
+'memberProperties' @ [56:36] ==> @SinceKotlin public val <T : Any> KClass<out To>.memberProperties: Collection<KProperty1<out To, Any?>> defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> To
+    <T : Any> -> Captured(out To)
 
-'firstOrNull' @ [56:53] ==> public inline fun <T> Iterable<KProperty1<out To, *>>.firstOrNull(predicate: (KProperty1<out To, *>) -> Boolean): KProperty1<out To, *>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'firstOrNull' @ [56:53] ==> public inline fun <T> Iterable<KProperty1<out To, Any?>>.firstOrNull(predicate: (KProperty1<out To, Any?>) -> Boolean): KProperty1<out To, Any?>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KProperty1<out To, *>
+    <T> -> KProperty1<out To, Any?>
 
-'it' @ [56:67] ==> value-parameter it: KProperty1<out To, *> defined in org.jetbrains.kotlin.cli.common.arguments.copyProperties.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [56:67] ==> value-parameter it: KProperty1<out To, Any?> defined in org.jetbrains.kotlin.cli.common.arguments.copyProperties.<anonymous>[ValueParameterDescriptorImpl]
 
 'name' @ [56:70] ==> public abstract val name: String defined in kotlin.reflect.KProperty1[DeserializedPropertyDescriptor]
 
@@ -158,9 +158,9 @@ Inferred types:
         }
 
         else -> this
-    }' @ [66:12] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any, entry2: Any, entry3: Any, entry4: Any, entry5: Any, entry6: Any, entry7: Any, entry8: Any, entry9: Any, entry10: Any, entry11: Any): Any[SimpleFunctionDescriptorImpl]
+    }' @ [66:12] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Any..Any?), entry1: (Any..Any?), entry2: (Any..Any?), entry3: (Any..Any?), entry4: (Any..Any?), entry5: (Any..Any?), entry6: (Any..Any?), entry7: (Any..Any?), entry8: (Any..Any?), entry9: (Any..Any?), entry10: (Any..Any?), entry11: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.Any..kotlin.Any?)
 
 'this' @ [66:18] ==> <this> defined in org.jetbrains.kotlin.cli.common.arguments.copyValueIfNeeded[ReceiverParameterDescriptorImpl]
 
@@ -218,11 +218,11 @@ Inferred types:
 
 'java' @ [76:72] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'componentType' @ [76:77] ==> public final val <T : (Any..Any?)> Class<out Any>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'size' @ [76:92] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
@@ -258,7 +258,7 @@ Inferred types:
 
 'java' @ [81:81] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'newInstance' @ [81:86] ==> @CallerSensitive public open fun newInstance(): (Any..Any?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -270,7 +270,7 @@ Inferred types:
 
 'java' @ [83:45] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'newInstance' @ [83:50] ==> @CallerSensitive public open fun newInstance(): (Any..Any?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -306,7 +306,7 @@ Inferred types:
 
 'ArrayList' @ [94:22] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (KProperty1<T, *>..KProperty1<T, *>?)>..Collection<(KProperty1<T, *>..KProperty1<T, *>?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> KProperty1<T, *>
+    <E : (Any..Any?)> -> (kotlin.reflect.KProperty1<T, *>..kotlin.reflect.KProperty1<T, *>?)
 
 'kClass' @ [94:32] ==> value-parameter kClass: KClass<T> defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties[ValueParameterDescriptorImpl]
 
@@ -316,9 +316,9 @@ Inferred types:
 
 'inheritedOnly' @ [95:9] ==> value-parameter inheritedOnly: Boolean defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties[ValueParameterDescriptorImpl]
 
-'properties' @ [96:9] ==> val properties: ArrayList<KProperty1<T, *>> defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties[LocalVariableDescriptor]
+'properties' @ [96:9] ==> val properties: ArrayList<(KProperty1<T, *>..KProperty1<T, *>?)> defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties[LocalVariableDescriptor]
 
-'removeAll' @ [96:20] ==> public open fun removeAll(elements: Collection<KProperty1<T, *>>): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
+'removeAll' @ [96:20] ==> public open fun removeAll(elements: Collection<(KProperty1<T, *>..KProperty1<T, *>?)>): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
 'kClass' @ [96:30] ==> value-parameter kClass: KClass<T> defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties[ValueParameterDescriptorImpl]
 
@@ -326,19 +326,19 @@ Inferred types:
 Inferred types:
     <T : Any> -> T
 
-'properties' @ [98:12] ==> val properties: ArrayList<KProperty1<T, *>> defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties[LocalVariableDescriptor]
+'properties' @ [98:12] ==> val properties: ArrayList<(KProperty1<T, *>..KProperty1<T, *>?)> defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties[LocalVariableDescriptor]
 
-'filter' @ [98:23] ==> public inline fun <T> Iterable<KProperty1<T, *>>.filter(predicate: (KProperty1<T, *>) -> Boolean): List<KProperty1<T, *>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'filter' @ [98:23] ==> public inline fun <T> Iterable<(KProperty1<T, *>..KProperty1<T, *>?)>.filter(predicate: ((KProperty1<T, *>..KProperty1<T, *>?)) -> Boolean): List<(KProperty1<T, *>..KProperty1<T, *>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KProperty1<T, *>
+    <T> -> (kotlin.reflect.KProperty1<T, *>..kotlin.reflect.KProperty1<T, *>?)
 
-'it' @ [99:9] ==> value-parameter it: KProperty1<T, *> defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [99:9] ==> value-parameter it: (KProperty1<T, *>..KProperty1<T, *>?) defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties.<anonymous>[ValueParameterDescriptorImpl]
 
 'visibility' @ [99:12] ==> @SinceKotlin public abstract val visibility: KVisibility? defined in kotlin.reflect.KProperty1[DeserializedPropertyDescriptor]
 
 'PUBLIC' @ [99:38] ==> enum entry PUBLIC defined in kotlin.reflect.KVisibility[FakeCallableDescriptorForObject]
 
-'it' @ [99:48] ==> value-parameter it: KProperty1<T, *> defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [99:48] ==> value-parameter it: (KProperty1<T, *>..KProperty1<T, *>?) defined in org.jetbrains.kotlin.cli.common.arguments.collectProperties.<anonymous>[ValueParameterDescriptorImpl]
 
 'findAnnotation' @ [99:51] ==> @SinceKotlin public inline fun <reified T : Annotation> KAnnotatedElement.findAnnotation(): Transient? defined in kotlin.reflect.full[DeserializedSimpleFunctionDescriptor]
 Inferred types:

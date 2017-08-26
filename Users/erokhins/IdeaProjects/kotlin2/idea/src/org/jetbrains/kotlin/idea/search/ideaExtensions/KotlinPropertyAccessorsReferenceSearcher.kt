@@ -63,7 +63,9 @@ Inferred types:
 
 'DO_NOTHING' @ [60:110] ==> public object DO_NOTHING : LookupTracker defined in org.jetbrains.kotlin.incremental.components.LookupTracker[FakeCallableDescriptorForObject]
 
-'SyntheticJavaPropertyDescriptor' @ [61:24] ==> public companion object defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor[FakeCallableDescriptorForObject]
+'?:' @ [61:24] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: SyntheticJavaPropertyDescriptor?, right: SyntheticJavaPropertyDescriptor): SyntheticJavaPropertyDescriptor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> SyntheticJavaPropertyDescriptor
 
 'findByGetterOrSetter' @ [61:56] ==> public final fun findByGetterOrSetter(getterOrSetter: FunctionDescriptor, syntheticScope: SyntheticScope): SyntheticJavaPropertyDescriptor? defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor.Companion[DeserializedSimpleFunctionDescriptor]
 

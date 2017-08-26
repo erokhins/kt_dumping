@@ -42,7 +42,7 @@ Inferred types:
 
 'candidateDescriptor' @ [54:72] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'original' @ [54:92] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 

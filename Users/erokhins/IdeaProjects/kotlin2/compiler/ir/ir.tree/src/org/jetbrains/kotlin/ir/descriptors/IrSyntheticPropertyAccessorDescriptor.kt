@@ -2,11 +2,7 @@
 
 'correspondingProperty' @ [45:9] ==> value-parameter correspondingProperty: PropertyDescriptor defined in org.jetbrains.kotlin.ir.descriptors.IrSyntheticPropertyGetterDescriptorImpl.<init>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [46:9] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [46:21] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [47:9] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [47:18] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -30,11 +26,7 @@
 
 'correspondingProperty' @ [65:9] ==> value-parameter correspondingProperty: PropertyDescriptor defined in org.jetbrains.kotlin.ir.descriptors.IrSyntheticPropertySetterDescriptorImpl.<init>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [66:9] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [66:21] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [67:9] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [67:18] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

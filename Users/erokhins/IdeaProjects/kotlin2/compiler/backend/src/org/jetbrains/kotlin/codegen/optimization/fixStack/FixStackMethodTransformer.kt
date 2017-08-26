@@ -286,7 +286,7 @@ Inferred types:
 
 'add' @ [110:25] ==> public abstract fun add(element: () -> Unit): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'replaceMarkerWithPops' @ [110:31] ==> public fun replaceMarkerWithPops(methodNode: MethodNode, node: AbstractInsnNode, expectedStackSize: Int, stackContent: List<BasicValue>): Unit defined in org.jetbrains.kotlin.codegen.optimization.fixStack[SimpleFunctionDescriptorImpl]
+'replaceMarkerWithPops' @ [110:31] ==> public fun replaceMarkerWithPops(methodNode: MethodNode, node: AbstractInsnNode, expectedStackSize: Int, stackContent: List<BasicValue>): Unit defined in org.jetbrains.kotlin.codegen.optimization.fixStack in file StackTransformationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [110:53] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack.FixStackMethodTransformer.transformBreakContinueGotos[ValueParameterDescriptorImpl]
 

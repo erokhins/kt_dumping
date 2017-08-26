@@ -4,7 +4,7 @@ Inferred types:
 
 'getService' @ [42:60] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(LibraryDependenciesCache..LibraryDependenciesCache?)>): (LibraryDependenciesCache..LibraryDependenciesCache?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LibraryDependenciesCache
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCache..org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCache?)
 
 'project' @ [42:71] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCache.Companion.getInstance[ValueParameterDescriptorImpl]
 
@@ -14,15 +14,15 @@ Inferred types:
 Inferred types:
     <T> -> LibraryDependenciesCache
 
-'CachedValue' @ [50:18] ==> public fun <T> CachedValue(project: Project, trackValue: Boolean = ..., provider: () -> CachedValueProvider.Result<ConcurrentMap<Library, LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */>>): CachedValue<(ConcurrentMap<Library, LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */>..ConcurrentMap<Library, LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */>?)> defined in org.jetbrains.kotlin.idea.core.util[SimpleFunctionDescriptorImpl]
+'getValue' @ [50:18] ==> public operator fun <T> CachedValue<(T..T?)>.getValue(o: Any, property: KProperty<*>): (T..T?) defined in org.jetbrains.kotlin.idea.core.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> ConcurrentMap<Library, Pair<List<Library>, List<Sdk>>>
+    <T> -> (T..T?)
 
 'project' @ [50:30] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCacheImpl[PropertyDescriptorImpl]
 
-'Result' @ [51:29] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: ConcurrentMap<Library, LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */>?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
+'Result' @ [51:29] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: ConcurrentMap<(Library..Library?), (LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */..LibrariesAndSdks? /* = Pair<List<Library>, List<Sdk>>? */)>?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ConcurrentMap<Library, Pair<List<Library>, List<Sdk>>>
+    <T : (Any..Any?)> -> ConcurrentMap<(com.intellij.openapi.roots.libraries.Library..com.intellij.openapi.roots.libraries.Library?), (org.jetbrains.kotlin.idea.caches.resolve.LibrariesAndSdks /* = kotlin.Pair<kotlin.collections.List<com.intellij.openapi.roots.libraries.Library>, kotlin.collections.List<com.intellij.openapi.projectRoots.Sdk>> */..org.jetbrains.kotlin.idea.caches.resolve.LibrariesAndSdks? /* = kotlin.Pair<kotlin.collections.List<com.intellij.openapi.roots.libraries.Library>, kotlin.collections.List<com.intellij.openapi.projectRoots.Sdk>>? */)>
 
 'createConcurrentWeakMap' @ [51:50] ==> @NotNull @Contract public open fun <K : (Any..Any?), V : (Any..Any?)> createConcurrentWeakMap(): ConcurrentMap<(Library..Library?), (LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */..LibrariesAndSdks? /* = Pair<List<Library>, List<Sdk>>? */)> defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
@@ -33,12 +33,12 @@ Inferred types:
 
 'project' @ [52:67] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCacheImpl[PropertyDescriptorImpl]
 
-'cache' @ [56:13] ==> public final val cache: (ConcurrentMap<Library, LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */>..ConcurrentMap<Library, LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */>?) defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCacheImpl[PropertyDescriptorImpl]
+'cache' @ [56:13] ==> public final val cache: (ConcurrentMap<(Library..Library?), (LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */..LibrariesAndSdks? /* = Pair<List<Library>, List<Sdk>>? */)>..ConcurrentMap<(Library..Library?), (LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */..LibrariesAndSdks? /* = Pair<List<Library>, List<Sdk>>? */)>?) defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCacheImpl[PropertyDescriptorImpl]
 
-'getOrPut' @ [56:19] ==> public inline fun <K, V> ConcurrentMap<Library, LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */>.getOrPut(key: Library, defaultValue: () -> LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */): LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'getOrPut' @ [56:19] ==> public inline fun <K, V> ConcurrentMap<(Library..Library?), (LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */..LibrariesAndSdks? /* = Pair<List<Library>, List<Sdk>>? */)>.getOrPut(key: (Library..Library?), defaultValue: () -> (LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */..LibrariesAndSdks? /* = Pair<List<Library>, List<Sdk>>? */)): (LibrariesAndSdks /* = Pair<List<Library>, List<Sdk>> */..LibrariesAndSdks? /* = Pair<List<Library>, List<Sdk>>? */) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> Library
-    <V> -> Pair<List<Library>, List<Sdk>>
+    <K> -> (com.intellij.openapi.roots.libraries.Library..com.intellij.openapi.roots.libraries.Library?)
+    <V> -> (org.jetbrains.kotlin.idea.caches.resolve.LibrariesAndSdks /* = kotlin.Pair<kotlin.collections.List<com.intellij.openapi.roots.libraries.Library>, kotlin.collections.List<com.intellij.openapi.projectRoots.Sdk>> */..org.jetbrains.kotlin.idea.caches.resolve.LibrariesAndSdks? /* = kotlin.Pair<kotlin.collections.List<com.intellij.openapi.roots.libraries.Library>, kotlin.collections.List<com.intellij.openapi.projectRoots.Sdk>>? */)
 
 'library' @ [56:28] ==> value-parameter library: Library defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCacheImpl.getLibrariesAndSdksUsedWith[ValueParameterDescriptorImpl]
 
@@ -116,7 +116,7 @@ Inferred types:
 
 'process' @ [80:102] ==> public abstract fun <R : (Any..Any?)> process(@NotNull p0: RootPolicy<(Unit..Unit?)>, p1: (Unit..Unit?)): (Unit..Unit?) defined in com.intellij.openapi.roots.OrderEnumerator[JavaMethodDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> Unit
+    <R : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'RootPolicy<Unit>' @ [80:119] ==> public constructor RootPolicy<R : (Any..Any?)>() defined in com.intellij.openapi.roots.RootPolicy[JavaClassConstructorDescriptor]
 Inferred types:
@@ -197,7 +197,7 @@ Inferred types:
 
 'getCachedValue' @ [109:56] ==> public final fun <T : (Any..Any?), D : (UserDataHolder..UserDataHolder?)> getCachedValue(@NotNull p0: Project, @NotNull p1: () -> CachedValueProvider.Result<(LibraryDependenciesCacheImpl.LibraryUsageIndex..LibraryDependenciesCacheImpl.LibraryUsageIndex?)>?): (LibraryDependenciesCacheImpl.LibraryUsageIndex..LibraryDependenciesCacheImpl.LibraryUsageIndex?) defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LibraryUsageIndex
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCacheImpl.LibraryUsageIndex..org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCacheImpl.LibraryUsageIndex?)
     <D : (UserDataHolder..UserDataHolder?)> -> Project
 
 'project' @ [109:71] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryDependenciesCacheImpl[PropertyDescriptorImpl]
@@ -214,8 +214,8 @@ Inferred types:
 
 'createSet' @ [115:74] ==> @NotNull public open fun <K : (Any..Any?), V : (Any..Any?)> createSet(): MultiMap<(Library..Library?), (Module..Module?)> defined in com.intellij.util.containers.MultiMap[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Library
-    <V : (Any..Any?)> -> Module
+    <K : (Any..Any?)> -> (com.intellij.openapi.roots.libraries.Library..com.intellij.openapi.roots.libraries.Library?)
+    <V : (Any..Any?)> -> (com.intellij.openapi.module.Module..com.intellij.openapi.module.Module?)
 
 'iterator' @ [118:28] ==> public final operator fun iterator(): Iterator<(Module..Module?)> defined in kotlin.Array[DeserializedSimpleFunctionDescriptor]
 

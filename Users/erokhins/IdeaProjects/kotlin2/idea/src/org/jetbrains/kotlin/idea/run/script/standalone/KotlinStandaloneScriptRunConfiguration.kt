@@ -101,7 +101,7 @@ Inferred types:
 
 'appendEditors' @ [107:60] ==> public open fun <V : (RunConfigurationBase..RunConfigurationBase?)> appendEditors(@NotNull p0: RunConfigurationBase, @NotNull p1: SettingsEditorGroup<(KotlinStandaloneScriptRunConfiguration..KotlinStandaloneScriptRunConfiguration?)>): Unit defined in com.intellij.execution.JavaRunConfigurationExtensionManager[JavaMethodDescriptor]
 Inferred types:
-    <V : (RunConfigurationBase..RunConfigurationBase?)> -> KotlinStandaloneScriptRunConfiguration
+    <V : (RunConfigurationBase..RunConfigurationBase?)> -> (org.jetbrains.kotlin.idea.run.script.standalone.KotlinStandaloneScriptRunConfiguration..org.jetbrains.kotlin.idea.run.script.standalone.KotlinStandaloneScriptRunConfiguration?)
 
 'this' @ [107:74] ==> <this> defined in org.jetbrains.kotlin.idea.run.script.standalone.KotlinStandaloneScriptRunConfiguration[LazyClassReceiverParameterDescriptor]
 
@@ -302,8 +302,6 @@ Inferred types:
 'classPath' @ [194:16] ==> public final val JavaParameters.classPath: (PathsList..PathsList?)[MyPropertyDescriptor]
 
 'add' @ [194:26] ==> public open fun add(p0: (File..File?)): Unit defined in com.intellij.util.PathsList[JavaMethodDescriptor]
-
-'PathUtil' @ [194:30] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'kotlinPathsForIdeaPlugin' @ [194:39] ==> @JvmStatic public final val kotlinPathsForIdeaPlugin: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 

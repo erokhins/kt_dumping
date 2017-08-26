@@ -104,7 +104,7 @@ Inferred types:
 
 'insn' @ [61:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
-'isBoxing' @ [61:18] ==> public fun AbstractInsnNode.isBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isBoxing' @ [61:18] ==> public fun AbstractInsnNode.isBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'createNewBoxing' @ [62:17] ==> protected open fun createNewBoxing(insn: AbstractInsnNode, type: Type, progressionIterator: ProgressionIteratorBasicValue?): BasicValue defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter[SimpleFunctionDescriptorImpl]
 
@@ -116,7 +116,7 @@ Inferred types:
 
 'insn' @ [64:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
-'isUnboxing' @ [64:18] ==> public fun AbstractInsnNode.isUnboxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isUnboxing' @ [64:18] ==> public fun AbstractInsnNode.isUnboxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'firstArg' @ [64:34] ==> val firstArg: BasicValue defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[LocalVariableDescriptor]
 
@@ -134,7 +134,7 @@ Inferred types:
 
 'insn' @ [68:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
-'isIteratorMethodCallOfProgression' @ [68:18] ==> public fun AbstractInsnNode.isIteratorMethodCallOfProgression(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isIteratorMethodCallOfProgression' @ [68:18] ==> public fun AbstractInsnNode.isIteratorMethodCallOfProgression(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'values' @ [68:52] ==> value-parameter values: List<BasicValue> defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
@@ -146,7 +146,7 @@ Inferred types:
 
 'insn' @ [70:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
-'isNextMethodCallOfProgressionIterator' @ [70:18] ==> public fun AbstractInsnNode.isNextMethodCallOfProgressionIterator(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isNextMethodCallOfProgressionIterator' @ [70:18] ==> public fun AbstractInsnNode.isNextMethodCallOfProgressionIterator(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'values' @ [70:56] ==> value-parameter values: List<BasicValue> defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
@@ -168,11 +168,11 @@ Inferred types:
 
 'insn' @ [75:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
-'isAreEqualIntrinsicForSameTypedBoxedValues' @ [75:18] ==> public fun AbstractInsnNode.isAreEqualIntrinsicForSameTypedBoxedValues(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isAreEqualIntrinsicForSameTypedBoxedValues' @ [75:18] ==> public fun AbstractInsnNode.isAreEqualIntrinsicForSameTypedBoxedValues(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'values' @ [75:61] ==> value-parameter values: List<BasicValue> defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
-'canValuesBeUnboxedForAreEqual' @ [75:72] ==> public fun canValuesBeUnboxedForAreEqual(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'canValuesBeUnboxedForAreEqual' @ [75:72] ==> public fun canValuesBeUnboxedForAreEqual(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'values' @ [75:102] ==> value-parameter values: List<BasicValue> defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
@@ -188,7 +188,7 @@ Inferred types:
 
 'insn' @ [79:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
-'isJavaLangComparableCompareToForSameTypedBoxedValues' @ [79:18] ==> public fun AbstractInsnNode.isJavaLangComparableCompareToForSameTypedBoxedValues(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isJavaLangComparableCompareToForSameTypedBoxedValues' @ [79:18] ==> public fun AbstractInsnNode.isJavaLangComparableCompareToForSameTypedBoxedValues(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'values' @ [79:71] ==> value-parameter values: List<BasicValue> defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
@@ -251,7 +251,7 @@ Inferred types:
 
 'type' @ [109:19] ==> public final val BasicValue.type: (Type..Type?)[MyPropertyDescriptor]
 
-'isProgressionClass' @ [109:35] ==> public fun isProgressionClass(type: Type): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isProgressionClass' @ [109:35] ==> public fun isProgressionClass(type: Type): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [109:54] ==> value-parameter value: BasicValue defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.isExactValue[ValueParameterDescriptorImpl]
 
@@ -281,17 +281,11 @@ Inferred types:
 
 'v' @ [113:17] ==> value-parameter v: BasicValue defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.merge[ValueParameterDescriptorImpl]
 
-'StrictBasicValue' @ [113:22] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue[FakeCallableDescriptorForObject]
-
 'UNINITIALIZED_VALUE' @ [113:39] ==> @JvmField public final val UNINITIALIZED_VALUE: StrictBasicValue defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue.Companion[PropertyDescriptorImpl]
 
 'w' @ [113:62] ==> value-parameter w: BasicValue defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxingInterpreter.merge[ValueParameterDescriptorImpl]
 
-'StrictBasicValue' @ [113:67] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue[FakeCallableDescriptorForObject]
-
 'UNINITIALIZED_VALUE' @ [113:84] ==> @JvmField public final val UNINITIALIZED_VALUE: StrictBasicValue defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue.Companion[PropertyDescriptorImpl]
-
-'StrictBasicValue' @ [114:21] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue[FakeCallableDescriptorForObject]
 
 'UNINITIALIZED_VALUE' @ [114:38] ==> @JvmField public final val UNINITIALIZED_VALUE: StrictBasicValue defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue.Companion[PropertyDescriptorImpl]
 
@@ -358,7 +352,7 @@ Inferred types:
 
 'of' @ [143:22] ==> @SafeVarargs public open fun <E : (Any..Any?)> of(p0: (String..String?), p1: (String..String?), p2: (String..String?), p3: (String..String?), p4: (String..String?), p5: (String..String?), vararg p6: (String..String?)): (ImmutableSet<(String..String?)>..ImmutableSet<(String..String?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'getMethodDescriptor' @ [145:38] ==> public open fun getMethodDescriptor(p0: (Type..Type?), vararg p1: (Type..Type?)): (String..String?) defined in org.jetbrains.org.objectweb.asm.Type[JavaMethodDescriptor]
 
@@ -372,27 +366,27 @@ Inferred types:
 
 'JAVA_CLASS_TYPE' @ [146:90] ==> public final val JAVA_CLASS_TYPE: (Type..Type?) defined in org.jetbrains.kotlin.resolve.jvm.AsmTypes[JavaPropertyDescriptor]
 
-'isPrimitiveUnboxing' @ [149:9] ==> public fun AbstractInsnNode.isPrimitiveUnboxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPrimitiveUnboxing' @ [149:9] ==> public fun AbstractInsnNode.isPrimitiveUnboxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
-'isJavaLangClassUnboxing' @ [149:34] ==> public fun AbstractInsnNode.isJavaLangClassUnboxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isJavaLangClassUnboxing' @ [149:34] ==> public fun AbstractInsnNode.isJavaLangClassUnboxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
-'isPrimitiveBoxing' @ [152:9] ==> public fun AbstractInsnNode.isPrimitiveBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPrimitiveBoxing' @ [152:9] ==> public fun AbstractInsnNode.isPrimitiveBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
-'isJavaLangClassBoxing' @ [152:32] ==> public fun AbstractInsnNode.isJavaLangClassBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isJavaLangClassBoxing' @ [152:32] ==> public fun AbstractInsnNode.isJavaLangClassBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
-'isMethodInsnWith' @ [155:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isMethodInsnWith' @ [155:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'INVOKEVIRTUAL' @ [155:34] ==> public const final val INVOKEVIRTUAL: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'isWrapperClassNameOrNumber' @ [156:13] ==> private fun isWrapperClassNameOrNumber(internalClassName: String): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isWrapperClassNameOrNumber' @ [156:13] ==> private fun isWrapperClassNameOrNumber(internalClassName: String): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'owner' @ [156:40] ==> public final var owner: (String..String?) defined in org.jetbrains.org.objectweb.asm.tree.MethodInsnNode[JavaPropertyDescriptor]
 
-'isUnboxingMethodName' @ [156:50] ==> private fun isUnboxingMethodName(name: String): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isUnboxingMethodName' @ [156:50] ==> private fun isUnboxingMethodName(name: String): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [156:71] ==> public final var name: (String..String?) defined in org.jetbrains.org.objectweb.asm.tree.MethodInsnNode[JavaPropertyDescriptor]
 
-'isMethodInsnWith' @ [160:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isMethodInsnWith' @ [160:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'INVOKESTATIC' @ [160:34] ==> public const final val INVOKESTATIC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -416,7 +410,7 @@ Inferred types:
 
 'invoke' @ [167:65] ==> public abstract operator fun MethodInsnNode.invoke(): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'isWrapperClassName' @ [170:9] ==> private fun isWrapperClassName(internalClassName: String): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isWrapperClassName' @ [170:9] ==> private fun isWrapperClassName(internalClassName: String): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'internalClassName' @ [170:28] ==> value-parameter internalClassName: String defined in org.jetbrains.kotlin.codegen.optimization.boxing.isWrapperClassNameOrNumber[ValueParameterDescriptorImpl]
 
@@ -432,7 +426,7 @@ Inferred types:
 
 'isWrapperClassName' @ [173:26] ==> public open fun isWrapperClassName(@NotNull p0: FqName): Boolean defined in org.jetbrains.kotlin.resolve.jvm.JvmPrimitiveType[JavaMethodDescriptor]
 
-'buildFqNameByInternal' @ [173:45] ==> private fun buildFqNameByInternal(internalClassName: String): FqName defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'buildFqNameByInternal' @ [173:45] ==> private fun buildFqNameByInternal(internalClassName: String): FqName defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'internalClassName' @ [173:67] ==> value-parameter internalClassName: String defined in org.jetbrains.kotlin.codegen.optimization.boxing.isWrapperClassName[ValueParameterDescriptorImpl]
 
@@ -450,11 +444,11 @@ Inferred types:
 
 'name' @ [180:40] ==> value-parameter name: String defined in org.jetbrains.kotlin.codegen.optimization.boxing.isUnboxingMethodName[ValueParameterDescriptorImpl]
 
-'isMethodInsnWith' @ [183:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isMethodInsnWith' @ [183:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'INVOKESTATIC' @ [183:34] ==> public const final val INVOKESTATIC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'isWrapperClassName' @ [184:13] ==> private fun isWrapperClassName(internalClassName: String): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isWrapperClassName' @ [184:13] ==> private fun isWrapperClassName(internalClassName: String): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'owner' @ [184:32] ==> public final var owner: (String..String?) defined in org.jetbrains.org.objectweb.asm.tree.MethodInsnNode[JavaPropertyDescriptor]
 
@@ -476,7 +470,7 @@ Inferred types:
 
 'ownerType' @ [191:74] ==> val ownerType: (Type..Type?) defined in org.jetbrains.kotlin.codegen.optimization.boxing.isBoxingMethodDescriptor[LocalVariableDescriptor]
 
-'isMethodInsnWith' @ [195:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isMethodInsnWith' @ [195:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'INVOKESTATIC' @ [195:34] ==> public const final val INVOKESTATIC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -496,13 +490,13 @@ Inferred types:
 Inferred types:
     <T> -> BasicValue
 
-'isMethodInsnWith' @ [203:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isMethodInsnWith' @ [203:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'INVOKEINTERFACE' @ [203:34] ==> public const final val INVOKEINTERFACE: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
 'name' @ [204:13] ==> public final var name: (String..String?) defined in org.jetbrains.org.objectweb.asm.tree.MethodInsnNode[JavaPropertyDescriptor]
 
-'isMethodInsnWith' @ [208:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isMethodInsnWith' @ [208:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'INVOKEINTERFACE' @ [208:34] ==> public const final val INVOKEINTERFACE: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -516,23 +510,23 @@ Inferred types:
 
 'firstArgType' @ [210:13] ==> val firstArgType: Type? defined in org.jetbrains.kotlin.codegen.optimization.boxing.isIteratorMethodCallOfProgression.<anonymous>[LocalVariableDescriptor]
 
-'isProgressionClass' @ [211:13] ==> public fun isProgressionClass(type: Type): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isProgressionClass' @ [211:13] ==> public fun isProgressionClass(type: Type): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'firstArgType' @ [211:32] ==> val firstArgType: Type? defined in org.jetbrains.kotlin.codegen.optimization.boxing.isIteratorMethodCallOfProgression.<anonymous>[LocalVariableDescriptor]
 
 'name' @ [212:13] ==> public final var name: (String..String?) defined in org.jetbrains.org.objectweb.asm.tree.MethodInsnNode[JavaPropertyDescriptor]
 
-'isRangeOrProgression' @ [216:9] ==> public fun isRangeOrProgression(className: FqName): Boolean defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'isRangeOrProgression' @ [216:9] ==> public fun isRangeOrProgression(className: FqName): Boolean defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
-'buildFqNameByInternal' @ [216:30] ==> private fun buildFqNameByInternal(internalClassName: String): FqName defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'buildFqNameByInternal' @ [216:30] ==> private fun buildFqNameByInternal(internalClassName: String): FqName defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [216:52] ==> value-parameter type: Type defined in org.jetbrains.kotlin.codegen.optimization.boxing.isProgressionClass[ValueParameterDescriptorImpl]
 
 'internalName' @ [216:57] ==> public final val Type.internalName: (String..String?)[MyPropertyDescriptor]
 
-'isAreEqualIntrinsic' @ [219:9] ==> public fun AbstractInsnNode.isAreEqualIntrinsic(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isAreEqualIntrinsic' @ [219:9] ==> public fun AbstractInsnNode.isAreEqualIntrinsic(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
-'areSameTypedBoxedValues' @ [219:34] ==> public fun areSameTypedBoxedValues(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'areSameTypedBoxedValues' @ [219:34] ==> public fun areSameTypedBoxedValues(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'values' @ [219:58] ==> value-parameter values: List<BasicValue> defined in org.jetbrains.kotlin.codegen.optimization.boxing.isAreEqualIntrinsicForSameTypedBoxedValues[ValueParameterDescriptorImpl]
 
@@ -566,7 +560,7 @@ Inferred types:
 
 'unboxedType' @ [226:55] ==> public final val unboxedType: Type defined in org.jetbrains.kotlin.codegen.optimization.boxing.BoxedValueDescriptor[PropertyDescriptorImpl]
 
-'isMethodInsnWith' @ [230:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isMethodInsnWith' @ [230:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'INVOKESTATIC' @ [230:34] ==> public const final val INVOKESTATIC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -600,13 +594,13 @@ Inferred types:
 
 'FLOAT_TYPE' @ [239:68] ==> public final val FLOAT_TYPE: (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
 
-'isJavaLangComparableCompareTo' @ [243:9] ==> public fun AbstractInsnNode.isJavaLangComparableCompareTo(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isJavaLangComparableCompareTo' @ [243:9] ==> public fun AbstractInsnNode.isJavaLangComparableCompareTo(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
-'areSameTypedBoxedValues' @ [243:44] ==> public fun areSameTypedBoxedValues(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'areSameTypedBoxedValues' @ [243:44] ==> public fun areSameTypedBoxedValues(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'values' @ [243:68] ==> value-parameter values: List<BasicValue> defined in org.jetbrains.kotlin.codegen.optimization.boxing.isJavaLangComparableCompareToForSameTypedBoxedValues[ValueParameterDescriptorImpl]
 
-'isMethodInsnWith' @ [246:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isMethodInsnWith' @ [246:9] ==> public inline fun AbstractInsnNode.isMethodInsnWith(opcode: Int, condition: MethodInsnNode.() -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'INVOKEINTERFACE' @ [246:34] ==> public const final val INVOKEINTERFACE: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 

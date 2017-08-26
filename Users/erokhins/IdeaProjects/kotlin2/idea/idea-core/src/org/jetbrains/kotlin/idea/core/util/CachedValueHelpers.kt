@@ -8,7 +8,7 @@ Inferred types:
 
 'createCachedValue' @ [28:49] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(T..T?)>?, p1: Boolean): CachedValue<(T..T?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'provider' @ [28:67] ==> value-parameter provider: () -> CachedValueProvider.Result<T> defined in org.jetbrains.kotlin.idea.core.util.CachedValue[ValueParameterDescriptorImpl]
 

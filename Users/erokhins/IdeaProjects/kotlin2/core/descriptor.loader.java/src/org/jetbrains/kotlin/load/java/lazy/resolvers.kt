@@ -28,7 +28,7 @@ Inferred types:
 
 'c' @ [45:45] ==> private final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaTypeParameterResolver[PropertyDescriptorImpl]
 
-'child' @ [45:47] ==> public fun LazyJavaResolverContext.child(typeParameterResolver: TypeParameterResolver): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy[SimpleFunctionDescriptorImpl]
+'child' @ [45:47] ==> public fun LazyJavaResolverContext.child(typeParameterResolver: TypeParameterResolver): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy in file context.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [45:53] ==> <this> defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaTypeParameterResolver[LazyClassReceiverParameterDescriptor]
 

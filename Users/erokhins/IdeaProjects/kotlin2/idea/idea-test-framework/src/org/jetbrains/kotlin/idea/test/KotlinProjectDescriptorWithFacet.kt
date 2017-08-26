@@ -1,6 +1,6 @@
 'KotlinLightProjectDescriptor' @ [31:80] ==> protected/*protected and package*/ constructor KotlinLightProjectDescriptor() defined in org.jetbrains.kotlin.idea.test.KotlinLightProjectDescriptor[JavaClassConstructorDescriptor]
 
-'configureKotlinFacet' @ [33:9] ==> public fun configureKotlinFacet(module: Module, configureCallback: KotlinFacetConfiguration.() -> Unit = ...): KotlinFacet defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'configureKotlinFacet' @ [33:9] ==> public fun configureKotlinFacet(module: Module, configureCallback: KotlinFacetConfiguration.() -> Unit = ...): KotlinFacet defined in org.jetbrains.kotlin.idea.test in file KotlinProjectDescriptorWithFacet.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [33:30] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.test.KotlinProjectDescriptorWithFacet.configureModule[ValueParameterDescriptorImpl]
 
@@ -11,8 +11,6 @@
 'languageVersion' @ [34:38] ==> public final val languageVersion: LanguageVersion defined in org.jetbrains.kotlin.idea.test.KotlinProjectDescriptorWithFacet[PropertyDescriptorImpl]
 
 'KotlinProjectDescriptorWithFacet' @ [39:25] ==> public constructor KotlinProjectDescriptorWithFacet(languageVersion: LanguageVersion) defined in org.jetbrains.kotlin.idea.test.KotlinProjectDescriptorWithFacet[ClassConstructorDescriptorImpl]
-
-'LanguageVersion' @ [39:58] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_0' @ [39:74] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
@@ -48,10 +46,8 @@
 
 'createFacet' @ [50:30] ==> @NotNull public abstract fun <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?), C : (FacetConfiguration..FacetConfiguration?)> createFacet(@NotNull p0: FacetType<(KotlinFacet..KotlinFacet?), (KotlinFacetConfiguration..KotlinFacetConfiguration?)>, @NotNull p1: String, @NotNull p2: KotlinFacetConfiguration, @Nullable p3: raw (Facet<(FacetConfiguration..FacetConfiguration?)>?..Facet<*>?)): KotlinFacet defined in com.intellij.facet.FacetManager[JavaMethodDescriptor]
 Inferred types:
-    <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> KotlinFacet
-    <C : (FacetConfiguration..FacetConfiguration?)> -> KotlinFacetConfiguration
-
-'KotlinFacetType' @ [50:42] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType[FakeCallableDescriptorForObject]
+    <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> (org.jetbrains.kotlin.idea.facet.KotlinFacet..org.jetbrains.kotlin.idea.facet.KotlinFacet?)
+    <C : (FacetConfiguration..FacetConfiguration?)> -> (org.jetbrains.kotlin.idea.facet.KotlinFacetConfiguration..org.jetbrains.kotlin.idea.facet.KotlinFacetConfiguration?)
 
 'INSTANCE' @ [50:58] ==> public final val INSTANCE: KotlinFacetType defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[DeserializedPropertyDescriptor]
 

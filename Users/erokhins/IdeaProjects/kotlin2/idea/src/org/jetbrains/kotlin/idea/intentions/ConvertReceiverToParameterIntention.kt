@@ -18,7 +18,7 @@ Inferred types:
 
 'originalDescriptor' @ [48:24] ==> value-parameter originalDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.intentions.ConvertReceiverToParameterIntention.configureChangeSignature.<no name provided>.configure[ValueParameterDescriptorImpl]
 
-'modify' @ [48:43] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'modify' @ [48:43] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [49:21] ==> value-parameter it: KotlinMutableMethodDescriptor defined in org.jetbrains.kotlin.idea.intentions.ConvertReceiverToParameterIntention.configureChangeSignature.<no name provided>.configure.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -116,7 +116,7 @@ Inferred types:
 
 'isUnitTestMode' @ [68:68] ==> public final val Application.isUnitTestMode: Boolean[MyPropertyDescriptor]
 
-'suggestReceiverNames' @ [69:33] ==> public fun suggestReceiverNames(project: Project, descriptor: CallableDescriptor): List<String> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'suggestReceiverNames' @ [69:33] ==> public fun suggestReceiverNames(project: Project, descriptor: CallableDescriptor): List<String> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file changeSignatureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [69:54] ==> val project: Project defined in org.jetbrains.kotlin.idea.intentions.ConvertReceiverToParameterIntention.applyTo[LocalVariableDescriptor]
 

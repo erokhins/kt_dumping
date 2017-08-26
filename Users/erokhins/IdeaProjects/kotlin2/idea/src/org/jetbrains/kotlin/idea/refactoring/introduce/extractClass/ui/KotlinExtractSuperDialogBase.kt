@@ -179,7 +179,7 @@ Inferred types:
 
 'createNorthPanel' @ [135:22] ==> protected/*protected and package*/ open fun createNorthPanel(): JComponent? defined in com.intellij.refactoring.extractSuperclass.JavaExtractSuperBaseDialog[JavaMethodDescriptor]
 
-'apply' @ [135:41] ==> @InlineOnly public inline fun <T> JComponent?.apply(block: JComponent?.() -> Unit): JComponent? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [135:41] ==> @InlineOnly public inline fun <T> JComponent?.apply(block: (JComponent?).() -> Unit): JComponent? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JComponent?
 
@@ -215,7 +215,7 @@ Inferred types:
 
 'MemberInfoChange' @ [145:31] ==> public constructor MemberInfoChange<T : (PsiElement..PsiElement?), U : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)>(p0: (MutableCollection<(KotlinMemberInfo..KotlinMemberInfo?)>..Collection<(KotlinMemberInfo..KotlinMemberInfo?)>?)) defined in com.intellij.refactoring.classMembers.MemberInfoChange[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
     <U : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)> -> (org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo..org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo?)
 
 'memberInfos' @ [145:48] ==> public final val memberInfos: List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractSuperDialogBase.MemberInfoModelBase[PropertyDescriptorImpl]
@@ -324,9 +324,9 @@ Inferred types:
 
 'selectedMembers' @ [189:17] ==> public final val selectedMembers: List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractSuperDialogBase[PropertyDescriptorImpl]
 
-'if (targetParent is PsiDirectory) targetDirectory else targetParent' @ [190:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiElement, elseBranch: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+'if (targetParent is PsiDirectory) targetDirectory else targetParent' @ [190:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (PsiElement..PsiElement?), elseBranch: (PsiElement..PsiElement?)): (PsiElement..PsiElement?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> PsiElement
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'targetParent' @ [190:21] ==> protected final val targetParent: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractClass.ui.KotlinExtractSuperDialogBase[PropertyDescriptorImpl]
 

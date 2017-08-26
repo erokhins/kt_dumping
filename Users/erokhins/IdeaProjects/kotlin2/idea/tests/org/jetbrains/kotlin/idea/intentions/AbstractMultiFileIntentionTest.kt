@@ -89,7 +89,7 @@ Inferred types:
 
 'java' @ [67:79] ==> public val <T> KClass<out IntentionAction>.java: Class<out IntentionAction> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IntentionAction
+    <T> -> Captured(out IntentionAction)
 
 'isApplicableExpected' @ [67:100] ==> val isApplicableExpected: Boolean defined in org.jetbrains.kotlin.idea.intentions.AbstractMultiFileIntentionTest.doTest[LocalVariableDescriptor]
 

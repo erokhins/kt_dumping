@@ -6,13 +6,9 @@ Inferred types:
 
 'coroutineSupport' @ [52:21] ==> protected final val coroutineSupport: LanguageFeature.State defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix[PropertyDescriptorImpl]
 
-'LanguageFeature' @ [52:41] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [52:63] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'coroutineSupport' @ [52:74] ==> protected final val coroutineSupport: LanguageFeature.State defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix[PropertyDescriptorImpl]
-
-'LanguageFeature' @ [52:94] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_WARNING' @ [52:116] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -75,13 +71,9 @@ Inferred types:
 
 'module' @ [72:67] ==> val module: Module defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.InModule.invoke[LocalVariableDescriptor]
 
-'KotlinWithGradleConfigurator' @ [73:21] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator[FakeCallableDescriptorForObject]
-
 'changeCoroutineConfiguration' @ [73:50] ==> public final fun changeCoroutineConfiguration(module: Module, coroutineOption: String): PsiElement? defined in org.jetbrains.kotlin.idea.configuration.KotlinWithGradleConfigurator.Companion[SimpleFunctionDescriptorImpl]
 
 'module' @ [74:25] ==> val module: Module defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.InModule.invoke[LocalVariableDescriptor]
-
-'CoroutineSupport' @ [74:33] ==> public object CoroutineSupport defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
 
 'getCompilerArgument' @ [74:50] ==> public final fun getCompilerArgument(state: LanguageFeature.State): String defined in org.jetbrains.kotlin.config.CoroutineSupport[DeserializedSimpleFunctionDescriptor]
 
@@ -90,8 +82,6 @@ Inferred types:
 'changeMavenCoroutineConfiguration' @ [77:21] ==> private final fun changeMavenCoroutineConfiguration(module: Module, value: String): PsiElement? defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.InModule[SimpleFunctionDescriptorImpl]
 
 'module' @ [77:55] ==> val module: Module defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.InModule.invoke[LocalVariableDescriptor]
-
-'CoroutineSupport' @ [77:63] ==> public object CoroutineSupport defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
 
 'getCompilerArgument' @ [77:80] ==> public final fun getCompilerArgument(state: LanguageFeature.State): String defined in org.jetbrains.kotlin.config.CoroutineSupport[DeserializedSimpleFunctionDescriptor]
 
@@ -124,8 +114,6 @@ Inferred types:
 'askUpdateRuntime' @ [85:43] ==> public fun askUpdateRuntime(module: Module, requiredVersion: ApiVersion): Boolean defined in org.jetbrains.kotlin.idea.quickfix in file EnableUnsupportedFeatureFix.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [85:60] ==> val module: Module defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.InModule.invoke[LocalVariableDescriptor]
-
-'LanguageFeature' @ [85:68] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'sinceApiVersion' @ [85:95] ==> public final val sinceApiVersion: ApiVersion defined in org.jetbrains.kotlin.config.LanguageFeature[DeserializedPropertyDescriptor]
 
@@ -171,7 +159,9 @@ Inferred types:
 
 'module' @ [99:69] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.InModule.changeMavenCoroutineConfiguration[ValueParameterDescriptorImpl]
 
-'PomFile' @ [100:27] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'?:' @ [100:27] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PomFile?, right: PomFile): PomFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PomFile
 
 'forFileOrNull' @ [100:35] ==> public final fun forFileOrNull(xmlFile: XmlFile): PomFile? defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
@@ -215,8 +205,6 @@ Inferred types:
 
 'project' @ [120:41] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.InProject.invoke[ValueParameterDescriptorImpl]
 
-'LanguageFeature' @ [120:50] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'sinceApiVersion' @ [120:77] ==> public final val sinceApiVersion: ApiVersion defined in org.jetbrains.kotlin.config.LanguageFeature[DeserializedPropertyDescriptor]
 
 'KotlinCommonCompilerArgumentsHolder' @ [123:13] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder[FakeCallableDescriptorForObject]
@@ -243,15 +231,11 @@ Inferred types:
 
 'ENABLED' @ [125:43] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
-'CommonCompilerArguments' @ [125:54] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
-
 'ENABLE' @ [125:78] ==> public const final val ENABLE: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
 
 'LanguageFeature' @ [126:21] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_WARNING' @ [126:43] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
-
-'CommonCompilerArguments' @ [126:67] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
 
 'WARN' @ [126:91] ==> public const final val WARN: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
 
@@ -262,8 +246,6 @@ Inferred types:
 'LanguageFeature' @ [127:63] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'DISABLED' @ [127:85] ==> enum entry DISABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
-
-'CommonCompilerArguments' @ [127:97] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
 
 'ERROR' @ [127:121] ==> public const final val ERROR: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
 
@@ -329,14 +311,12 @@ Inferred types:
 
 'diagnostic' @ [149:64] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.Companion.doCreateActions[ValueParameterDescriptorImpl]
 
-'a' @ [149:76] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>..Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>?)>.a: (Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>..Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>?)[MyPropertyDescriptor]
+'a' @ [149:76] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>..Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>?)>.a: Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (kotlin.Pair<(org.jetbrains.kotlin.config.LanguageFeature..org.jetbrains.kotlin.config.LanguageFeature?), (org.jetbrains.kotlin.config.LanguageVersionSettings..org.jetbrains.kotlin.config.LanguageVersionSettings?)>..kotlin.Pair<(org.jetbrains.kotlin.config.LanguageFeature..org.jetbrains.kotlin.config.LanguageFeature?), (org.jetbrains.kotlin.config.LanguageVersionSettings..org.jetbrains.kotlin.config.LanguageVersionSettings?)>?)
 
 'first' @ [149:78] ==> public final val first: (LanguageFeature..LanguageFeature?) defined in kotlin.Pair[DeserializedPropertyDescriptor]
-
-'LanguageFeature' @ [149:87] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'Coroutines' @ [149:103] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -348,11 +328,7 @@ Inferred types:
 Inferred types:
     <T> -> State
 
-'LanguageFeature' @ [150:28] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED_WITH_WARNING' @ [150:50] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
-
-'LanguageFeature' @ [150:72] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED' @ [150:94] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -366,14 +342,12 @@ Inferred types:
 
 'diagnostic' @ [153:66] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.Companion.doCreateActions[ValueParameterDescriptorImpl]
 
-'a' @ [153:78] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>..Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>?)>.a: (Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>..Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>?)[MyPropertyDescriptor]
+'a' @ [153:78] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>..Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>?)>.a: Pair<(LanguageFeature..LanguageFeature?), (LanguageVersionSettings..LanguageVersionSettings?)>[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (kotlin.Pair<(org.jetbrains.kotlin.config.LanguageFeature..org.jetbrains.kotlin.config.LanguageFeature?), (org.jetbrains.kotlin.config.LanguageVersionSettings..org.jetbrains.kotlin.config.LanguageVersionSettings?)>..kotlin.Pair<(org.jetbrains.kotlin.config.LanguageFeature..org.jetbrains.kotlin.config.LanguageFeature?), (org.jetbrains.kotlin.config.LanguageVersionSettings..org.jetbrains.kotlin.config.LanguageVersionSettings?)>?)
 
 'first' @ [153:80] ==> public final val first: (LanguageFeature..LanguageFeature?) defined in kotlin.Pair[DeserializedPropertyDescriptor]
-
-'LanguageFeature' @ [153:89] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'Coroutines' @ [153:105] ==> enum entry Coroutines defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -385,11 +359,7 @@ Inferred types:
 Inferred types:
     <T> -> State
 
-'LanguageFeature' @ [154:28] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [154:50] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
-
-'LanguageFeature' @ [154:59] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_ERROR' @ [154:81] ==> enum entry ENABLED_WITH_ERROR defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -444,6 +414,10 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Function2<PsiElement, State, ChangeCoroutineSupportFix>
 
 'configureInProject' @ [164:25] ==> val configureInProject: Boolean defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.Companion.doCreateActions[LocalVariableDescriptor]
+
+'InProject' @ [164:47] ==> public constructor InProject(element: PsiElement, coroutineSupport: LanguageFeature.State) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.InProject[ClassConstructorDescriptorImpl]
+
+'InModule' @ [164:64] ==> public constructor InModule(element: PsiElement, coroutineSupport: LanguageFeature.State) defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.InModule[ClassConstructorDescriptorImpl]
 
 'newCoroutineSupports' @ [165:20] ==> val newCoroutineSupports: List<LanguageFeature.State> defined in org.jetbrains.kotlin.idea.quickfix.ChangeCoroutineSupportFix.Companion.doCreateActions[LocalVariableDescriptor]
 

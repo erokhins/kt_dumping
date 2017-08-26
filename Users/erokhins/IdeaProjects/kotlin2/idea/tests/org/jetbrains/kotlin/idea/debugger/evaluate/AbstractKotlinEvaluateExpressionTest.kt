@@ -555,9 +555,9 @@ Inferred types:
 
 'node' @ [286:17] ==> value-parameter node: TreeNode defined in org.jetbrains.kotlin.idea.debugger.evaluate.AbstractKotlinEvaluateExpressionTest.Printer.printNode[ValueParameterDescriptorImpl]
 
-'?:' @ [286:43] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: NodeDescriptorImpl?, right: NodeDescriptorImpl): NodeDescriptorImpl[SimpleFunctionDescriptorImpl]
+'?:' @ [286:43] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: NodeDescriptorImpl?, right: NodeDescriptorImpl?): NodeDescriptorImpl?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> NodeDescriptorImpl
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> NodeDescriptorImpl?
 
 'node' @ [286:44] ==> value-parameter node: TreeNode defined in org.jetbrains.kotlin.idea.debugger.evaluate.AbstractKotlinEvaluateExpressionTest.Printer.printNode[ValueParameterDescriptorImpl]
 
@@ -770,7 +770,7 @@ Inferred types:
 
 'getUserData' @ [332:50] ==> @Nullable public abstract fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(MutableSet<(String..String?)>..Set<(String..String?)>?)>): (MutableSet<(String..String?)>?..Set<(String..String?)>?) defined in com.intellij.psi.PsiExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.collections.MutableSet<(kotlin.String..kotlin.String?)>..kotlin.collections.Set<(kotlin.String..kotlin.String?)>)
+    <T : (Any..Any?)> -> (kotlin.collections.MutableSet<(kotlin.String..kotlin.String?)>..kotlin.collections.Set<(kotlin.String..kotlin.String?)>?)
 
 'ADDITIONAL_IMPORTS_KEY' @ [332:89] ==> public final val ADDITIONAL_IMPORTS_KEY: (Key<(MutableSet<(String..String?)>..Set<(String..String?)>?)>..Key<(MutableSet<(String..String?)>..Set<(String..String?)>?)>?) defined in com.intellij.debugger.ui.impl.watch.DebuggerTreeNodeExpression[JavaPropertyDescriptor]
 
@@ -1039,7 +1039,7 @@ Inferred types:
 
 'emptyList' @ [421:136] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(File..File?)>..List<(File..File?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'findLinesWithPrefixesRemoved' @ [425:28] ==> @NotNull public open fun findLinesWithPrefixesRemoved(p0: (String..String?), vararg p1: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>) defined in org.jetbrains.kotlin.test.InTextDirectivesUtils[JavaMethodDescriptor]
 
@@ -1159,9 +1159,7 @@ Inferred types:
 
 'putCopyableUserData' @ [456:28] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(DebuggerContextImpl..DebuggerContextImpl?)>..Key<(DebuggerContextImpl..DebuggerContextImpl?)>?), @Nullable p1: DebuggerContextImpl?): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DebuggerContextImpl
-
-'KotlinCodeFragmentFactory' @ [456:48] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (com.intellij.debugger.impl.DebuggerContextImpl..com.intellij.debugger.impl.DebuggerContextImpl?)
 
 'DEBUG_CONTEXT_FOR_TESTS' @ [456:74] ==> public final val DEBUG_CONTEXT_FOR_TESTS: Key<DebuggerContextImpl> defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinCodeFragmentFactory.Companion[DeserializedPropertyDescriptor]
 

@@ -24,7 +24,7 @@ Inferred types:
 
 'a' @ [41:54] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<out (PsiElement..PsiElement?), A>.a: A[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
 
 'arrayOf' @ [42:16] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: Any): Array<Any> defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -39,7 +39,7 @@ Inferred types:
 
 'a' @ [42:51] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<out (PsiElement..PsiElement?), A>.a: A[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
 
 'rendererForA' @ [42:54] ==> private final val rendererForA: DiagnosticParameterRenderer<A>? defined in org.jetbrains.kotlin.diagnostics.rendering.DiagnosticWithParameters1Renderer[PropertyDescriptorImpl]
@@ -60,7 +60,7 @@ Inferred types:
 
 'a' @ [53:54] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<out (PsiElement..PsiElement?), A, B>.a: A[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
     <B : (Any..Any?)> -> B
 
@@ -68,7 +68,7 @@ Inferred types:
 
 'b' @ [53:68] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<out (PsiElement..PsiElement?), A, B>.b: B[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
     <B : (Any..Any?)> -> B
 
@@ -84,7 +84,7 @@ Inferred types:
 
 'a' @ [55:44] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<out (PsiElement..PsiElement?), A, B>.a: A[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
     <B : (Any..Any?)> -> B
 
@@ -100,7 +100,7 @@ Inferred types:
 
 'b' @ [56:44] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<out (PsiElement..PsiElement?), A, B>.b: B[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
     <B : (Any..Any?)> -> B
 
@@ -122,7 +122,7 @@ Inferred types:
 
 'a' @ [69:54] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), A, B, C>.a: A[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
     <B : (Any..Any?)> -> B
     <C : (Any..Any?)> -> C
@@ -131,7 +131,7 @@ Inferred types:
 
 'b' @ [69:68] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), A, B, C>.b: B[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
     <B : (Any..Any?)> -> B
     <C : (Any..Any?)> -> C
@@ -140,7 +140,7 @@ Inferred types:
 
 'c' @ [69:82] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), A, B, C>.c: C[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
     <B : (Any..Any?)> -> B
     <C : (Any..Any?)> -> C
@@ -157,7 +157,7 @@ Inferred types:
 
 'a' @ [71:44] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), A, B, C>.a: A[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
     <B : (Any..Any?)> -> B
     <C : (Any..Any?)> -> C
@@ -174,7 +174,7 @@ Inferred types:
 
 'b' @ [72:44] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), A, B, C>.b: B[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
     <B : (Any..Any?)> -> B
     <C : (Any..Any?)> -> C
@@ -191,7 +191,7 @@ Inferred types:
 
 'c' @ [73:44] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), A, B, C>.c: C[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
     <B : (Any..Any?)> -> B
     <C : (Any..Any?)> -> C
@@ -214,6 +214,6 @@ Inferred types:
 
 'a' @ [84:43] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<out (PsiElement..PsiElement?), A>.a: A[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
     <A : (Any..Any?)> -> A
 

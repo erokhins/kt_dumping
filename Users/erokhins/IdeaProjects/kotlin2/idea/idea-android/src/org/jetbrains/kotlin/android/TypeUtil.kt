@@ -8,7 +8,7 @@
 
 'strict' @ [26:14] ==> value-parameter strict: Boolean = ... defined in org.jetbrains.kotlin.android.isSubclassOf[ValueParameterDescriptorImpl]
 
-'fqNameSafe' @ [26:24] ==> internal fun KotlinType.fqNameSafe(): FqName? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameSafe' @ [26:24] ==> internal fun KotlinType.fqNameSafe(): FqName? defined in org.jetbrains.kotlin.android in file TypeUtil.kt[SimpleFunctionDescriptorImpl]
 
 'asString' @ [26:38] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.FqName[JavaMethodDescriptor]
 
@@ -24,7 +24,7 @@ Inferred types:
 
 'it' @ [27:9] ==> value-parameter it: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.android.isSubclassOf.<anonymous>[ValueParameterDescriptorImpl]
 
-'fqNameSafe' @ [27:12] ==> internal fun KotlinType.fqNameSafe(): FqName? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'fqNameSafe' @ [27:12] ==> internal fun KotlinType.fqNameSafe(): FqName? defined in org.jetbrains.kotlin.android in file TypeUtil.kt[SimpleFunctionDescriptorImpl]
 
 'asString' @ [27:26] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.FqName[JavaMethodDescriptor]
 

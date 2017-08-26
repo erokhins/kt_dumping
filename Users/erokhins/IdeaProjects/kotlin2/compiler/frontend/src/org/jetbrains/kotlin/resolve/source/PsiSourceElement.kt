@@ -7,6 +7,8 @@ Inferred types:
     <T> -> PsiFile
     <R> -> PsiSourceFile
 
+'PsiSourceFile' @ [27:79] ==> public constructor PsiSourceFile(psiFile: PsiFile) defined in org.jetbrains.kotlin.resolve.source.PsiSourceFile[ClassConstructorDescriptorImpl]
+
 'NO_SOURCE_FILE' @ [27:108] ==> public final val NO_SOURCE_FILE: (SourceFile..SourceFile?) defined in org.jetbrains.kotlin.descriptors.SourceFile[JavaPropertyDescriptor]
 
 'other' @ [31:49] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.resolve.source.PsiSourceFile.equals[ValueParameterDescriptorImpl]

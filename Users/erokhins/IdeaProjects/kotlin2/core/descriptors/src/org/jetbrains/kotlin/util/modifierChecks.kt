@@ -108,7 +108,9 @@ Inferred types:
 
 'valueParameters' @ [108:50] ==> public final val FunctionDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
-'ReflectionTypes' @ [109:16] ==> public companion object defined in org.jetbrains.kotlin.builtins.ReflectionTypes[FakeCallableDescriptorForObject]
+'?:' @ [109:16] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Boolean?, right: Boolean): Boolean[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Boolean
 
 'createKPropertyStarType' @ [109:32] ==> public final fun createKPropertyStarType(module: ModuleDescriptor): KotlinType? defined in org.jetbrains.kotlin.builtins.ReflectionTypes.Companion[SimpleFunctionDescriptorImpl]
 
@@ -122,7 +124,7 @@ Inferred types:
 
 'type' @ [109:109] ==> public final val ValueParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'makeNotNullable' @ [109:114] ==> public fun KotlinType.makeNotNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'makeNotNullable' @ [109:114] ==> public fun KotlinType.makeNotNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [114:46] ==> public final val name: String defined in org.jetbrains.kotlin.util.ReturnsCheck[PropertyDescriptorImpl]
 

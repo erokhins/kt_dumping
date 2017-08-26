@@ -47,8 +47,6 @@ Inferred types:
 
 'rBrace' @ [45:36] ==> val rBrace: PsiElement? defined in org.jetbrains.kotlin.idea.intentions.InvertIfConditionIntention.applyTo[LocalVariableDescriptor]
 
-'PsiChildRange' @ [47:13] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
-
 'singleElement' @ [47:27] ==> public final fun singleElement(element: PsiElement): PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [47:41] ==> value-parameter element: KtIfExpression defined in org.jetbrains.kotlin.idea.intentions.InvertIfConditionIntention.applyTo[ValueParameterDescriptorImpl]

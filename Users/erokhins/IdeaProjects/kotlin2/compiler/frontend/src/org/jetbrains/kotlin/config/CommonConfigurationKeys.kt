@@ -30,21 +30,15 @@ Inferred types:
 
 'get' @ [39:13] ==> @NotNull public open operator fun <T : (Any..Any?)> get(@NotNull key: CompilerConfigurationKey<(LanguageVersionSettings..LanguageVersionSettings?)>, @NotNull defaultValue: LanguageVersionSettings): LanguageVersionSettings defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LanguageVersionSettings
-
-'CommonConfigurationKeys' @ [39:17] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config in file CommonConfigurationKeys.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.LanguageVersionSettings..org.jetbrains.kotlin.config.LanguageVersionSettings?)
 
 'LANGUAGE_VERSION_SETTINGS' @ [39:41] ==> @JvmField public final val LANGUAGE_VERSION_SETTINGS: CompilerConfigurationKey<LanguageVersionSettings> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[PropertyDescriptorImpl]
-
-'LanguageVersionSettingsImpl' @ [39:68] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [39:96] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 
 'put' @ [40:18] ==> public open fun <T : (Any..Any?)> put(@NotNull key: CompilerConfigurationKey<(LanguageVersionSettings..LanguageVersionSettings?)>, @NotNull value: LanguageVersionSettings): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LanguageVersionSettings
-
-'CommonConfigurationKeys' @ [40:22] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config in file CommonConfigurationKeys.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.LanguageVersionSettings..org.jetbrains.kotlin.config.LanguageVersionSettings?)
 
 'LANGUAGE_VERSION_SETTINGS' @ [40:46] ==> @JvmField public final val LANGUAGE_VERSION_SETTINGS: CompilerConfigurationKey<LanguageVersionSettings> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[PropertyDescriptorImpl]
 

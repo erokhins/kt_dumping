@@ -58,7 +58,7 @@ Inferred types:
 
 'calleeName' @ [52:73] ==> val calleeName: Name defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveUnqualifiedSuperFromExpressionContext[LocalVariableDescriptor]
 
-'resolveSupertypesForMethodOfAny' @ [53:25] ==> private fun resolveSupertypesForMethodOfAny(supertypes: Collection<KotlinType>, calleeName: Name, anyType: KotlinType): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper[SimpleFunctionDescriptorImpl]
+'resolveSupertypesForMethodOfAny' @ [53:25] ==> private fun resolveSupertypesForMethodOfAny(supertypes: Collection<KotlinType>, calleeName: Name, anyType: KotlinType): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[SimpleFunctionDescriptorImpl]
 
 'supertypes' @ [53:57] ==> value-parameter supertypes: Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveUnqualifiedSuperFromExpressionContext[ValueParameterDescriptorImpl]
 
@@ -66,13 +66,13 @@ Inferred types:
 
 'anyType' @ [53:81] ==> value-parameter anyType: KotlinType defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveUnqualifiedSuperFromExpressionContext[ValueParameterDescriptorImpl]
 
-'resolveSupertypesByCalleeName' @ [56:25] ==> private fun resolveSupertypesByCalleeName(supertypes: Collection<KotlinType>, calleeName: Name): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper[SimpleFunctionDescriptorImpl]
+'resolveSupertypesByCalleeName' @ [56:25] ==> private fun resolveSupertypesByCalleeName(supertypes: Collection<KotlinType>, calleeName: Name): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[SimpleFunctionDescriptorImpl]
 
 'supertypes' @ [56:55] ==> value-parameter supertypes: Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveUnqualifiedSuperFromExpressionContext[ValueParameterDescriptorImpl]
 
 'calleeName' @ [56:67] ==> val calleeName: Name defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveUnqualifiedSuperFromExpressionContext[LocalVariableDescriptor]
 
-'resolveSupertypesByPropertyName' @ [63:24] ==> private fun resolveSupertypesByPropertyName(supertypes: Collection<KotlinType>, propertyName: Name): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper[SimpleFunctionDescriptorImpl]
+'resolveSupertypesByPropertyName' @ [63:24] ==> private fun resolveSupertypesByPropertyName(supertypes: Collection<KotlinType>, propertyName: Name): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[SimpleFunctionDescriptorImpl]
 
 'supertypes' @ [63:56] ==> value-parameter supertypes: Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveUnqualifiedSuperFromExpressionContext[ValueParameterDescriptorImpl]
 
@@ -183,11 +183,11 @@ Inferred types:
 
 'INTERFACE' @ [99:63] ==> enum entry INTERFACE defined in org.jetbrains.kotlin.descriptors.ClassKind[FakeCallableDescriptorForObject]
 
-'resolveSupertypesByMembers' @ [102:37] ==> private inline fun resolveSupertypesByMembers(supertypes: Collection<KotlinType>, allowNonConcreteMembers: Boolean, getMembers: (KotlinType) -> Collection<MemberDescriptor>): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper[SimpleFunctionDescriptorImpl]
+'resolveSupertypesByMembers' @ [102:37] ==> private inline fun resolveSupertypesByMembers(supertypes: Collection<KotlinType>, allowNonConcreteMembers: Boolean, getMembers: (KotlinType) -> Collection<MemberDescriptor>): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[SimpleFunctionDescriptorImpl]
 
 'supertypes' @ [102:64] ==> value-parameter supertypes: Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveSupertypesForMethodOfAny[ValueParameterDescriptorImpl]
 
-'getFunctionMembers' @ [103:9] ==> private fun getFunctionMembers(type: KotlinType, name: Name, location: LookupLocation): Collection<MemberDescriptor> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper[SimpleFunctionDescriptorImpl]
+'getFunctionMembers' @ [103:9] ==> private fun getFunctionMembers(type: KotlinType, name: Name, location: LookupLocation): Collection<MemberDescriptor> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [103:28] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveSupertypesForMethodOfAny.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -216,11 +216,11 @@ Inferred types:
 
 'anyType' @ [108:16] ==> value-parameter anyType: KotlinType defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveSupertypesForMethodOfAny[ValueParameterDescriptorImpl]
 
-'resolveSupertypesByMembers' @ [112:9] ==> private inline fun resolveSupertypesByMembers(supertypes: Collection<KotlinType>, allowNonConcreteMembers: Boolean, getMembers: (KotlinType) -> Collection<MemberDescriptor>): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper[SimpleFunctionDescriptorImpl]
+'resolveSupertypesByMembers' @ [112:9] ==> private inline fun resolveSupertypesByMembers(supertypes: Collection<KotlinType>, allowNonConcreteMembers: Boolean, getMembers: (KotlinType) -> Collection<MemberDescriptor>): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[SimpleFunctionDescriptorImpl]
 
 'supertypes' @ [112:36] ==> value-parameter supertypes: Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveSupertypesByCalleeName[ValueParameterDescriptorImpl]
 
-'getFunctionMembers' @ [113:13] ==> private fun getFunctionMembers(type: KotlinType, name: Name, location: LookupLocation): Collection<MemberDescriptor> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper[SimpleFunctionDescriptorImpl]
+'getFunctionMembers' @ [113:13] ==> private fun getFunctionMembers(type: KotlinType, name: Name, location: LookupLocation): Collection<MemberDescriptor> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [113:32] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveSupertypesByCalleeName.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -228,7 +228,7 @@ Inferred types:
 
 'LOOKUP_LOCATION' @ [113:48] ==> private val LOOKUP_LOCATION: NoLookupLocation defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[PropertyDescriptorImpl]
 
-'getPropertyMembers' @ [114:13] ==> private fun getPropertyMembers(type: KotlinType, name: Name, location: LookupLocation): Collection<MemberDescriptor> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper[SimpleFunctionDescriptorImpl]
+'getPropertyMembers' @ [114:13] ==> private fun getPropertyMembers(type: KotlinType, name: Name, location: LookupLocation): Collection<MemberDescriptor> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [114:32] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveSupertypesByCalleeName.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -236,11 +236,11 @@ Inferred types:
 
 'LOOKUP_LOCATION' @ [114:48] ==> private val LOOKUP_LOCATION: NoLookupLocation defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[PropertyDescriptorImpl]
 
-'resolveSupertypesByMembers' @ [118:9] ==> private inline fun resolveSupertypesByMembers(supertypes: Collection<KotlinType>, allowNonConcreteMembers: Boolean, getMembers: (KotlinType) -> Collection<MemberDescriptor>): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper[SimpleFunctionDescriptorImpl]
+'resolveSupertypesByMembers' @ [118:9] ==> private inline fun resolveSupertypesByMembers(supertypes: Collection<KotlinType>, allowNonConcreteMembers: Boolean, getMembers: (KotlinType) -> Collection<MemberDescriptor>): Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[SimpleFunctionDescriptorImpl]
 
 'supertypes' @ [118:36] ==> value-parameter supertypes: Collection<KotlinType> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveSupertypesByPropertyName[ValueParameterDescriptorImpl]
 
-'getPropertyMembers' @ [119:13] ==> private fun getPropertyMembers(type: KotlinType, name: Name, location: LookupLocation): Collection<MemberDescriptor> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper[SimpleFunctionDescriptorImpl]
+'getPropertyMembers' @ [119:13] ==> private fun getPropertyMembers(type: KotlinType, name: Name, location: LookupLocation): Collection<MemberDescriptor> defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper in file unqualifiedSuper.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [119:32] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.resolveSupertypesByPropertyName.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -366,9 +366,9 @@ Inferred types:
 
 'location' @ [160:56] ==> value-parameter location: LookupLocation defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.getPropertyMembers[ValueParameterDescriptorImpl]
 
-'filterIsInstanceTo' @ [160:66] ==> public inline fun <reified R, C : MutableCollection<in MemberDescriptor>> Iterable<*>.filterIsInstanceTo(destination: SmartList<MemberDescriptor>): SmartList<MemberDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'filterIsInstanceTo' @ [160:66] ==> public inline fun <reified R, C : MutableCollection<in (MemberDescriptor..MemberDescriptor?)>> Iterable<*>.filterIsInstanceTo(destination: SmartList<MemberDescriptor>): SmartList<MemberDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified R> -> MemberDescriptor
+    <reified R> -> (org.jetbrains.kotlin.descriptors.MemberDescriptor..org.jetbrains.kotlin.descriptors.MemberDescriptor?)
     <C : MutableCollection<in R>> -> SmartList<MemberDescriptor>
 
 'SmartList' @ [160:85] ==> public constructor SmartList<E : (Any..Any?)>() defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
@@ -378,8 +378,6 @@ Inferred types:
 'memberDescriptor' @ [166:9] ==> value-parameter memberDescriptor: MemberDescriptor defined in org.jetbrains.kotlin.types.expressions.unqualifiedSuper.isConcreteMember[ValueParameterDescriptorImpl]
 
 'modality' @ [166:26] ==> public final val MemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [166:38] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [166:47] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

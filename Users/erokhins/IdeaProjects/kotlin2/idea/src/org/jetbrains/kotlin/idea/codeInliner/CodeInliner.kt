@@ -14,7 +14,7 @@
 
 'resultingDescriptor' @ [65:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'nameExpression' @ [66:20] ==> private final val nameExpression: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner[PropertyDescriptorImpl]
 
@@ -135,13 +135,13 @@ Inferred types:
 
 'extensionReceiver' @ [93:74] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [93:97] ==> private final val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner[PropertyDescriptorImpl]
 
 'dispatchReceiver' @ [93:110] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'receiverValue' @ [94:17] ==> val receiverValue: ReceiverValue? defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.doInline[LocalVariableDescriptor]
 
@@ -264,7 +264,7 @@ Inferred types:
 
 'codeToInline' @ [127:21] ==> private final val codeToInline: MutableCodeToInline defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner[PropertyDescriptorImpl]
 
-'introduceValue' @ [127:34] ==> internal fun MutableCodeToInline.introduceValue(value: KtExpression, valueType: KotlinType?, usages: Collection<KtExpression>, expressionToBeReplaced: KtExpression, nameSuggestion: String? = ..., safeCall: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'introduceValue' @ [127:34] ==> internal fun MutableCodeToInline.introduceValue(value: KtExpression, valueType: KotlinType?, usages: Collection<KtExpression>, expressionToBeReplaced: KtExpression, nameSuggestion: String? = ..., safeCall: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner in file introduceValue.kt[SimpleFunctionDescriptorImpl]
 
 'receiver' @ [127:49] ==> var receiver: KtExpression? defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.doInline[LocalVariableDescriptor]
 
@@ -296,7 +296,7 @@ Inferred types:
 
 'codeToInline' @ [133:17] ==> private final val codeToInline: MutableCodeToInline defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner[PropertyDescriptorImpl]
 
-'introduceValue' @ [133:30] ==> internal fun MutableCodeToInline.introduceValue(value: KtExpression, valueType: KotlinType?, usages: Collection<KtExpression>, expressionToBeReplaced: KtExpression, nameSuggestion: String? = ..., safeCall: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'introduceValue' @ [133:30] ==> internal fun MutableCodeToInline.introduceValue(value: KtExpression, valueType: KotlinType?, usages: Collection<KtExpression>, expressionToBeReplaced: KtExpression, nameSuggestion: String? = ..., safeCall: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner in file introduceValue.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [133:45] ==> val value: KtExpression defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.doInline[LocalVariableDescriptor]
 
@@ -397,7 +397,7 @@ Inferred types:
 
 'it' @ [159:52] ==> value-parameter it: String defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.renameDuplicates.<anonymous>[ValueParameterDescriptorImpl]
 
-'nameHasConflictsInScope' @ [159:55] ==> public fun String.nameHasConflictsInScope(lexicalScope: LexicalScope): Boolean defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'nameHasConflictsInScope' @ [159:55] ==> public fun String.nameHasConflictsInScope(lexicalScope: LexicalScope): Boolean defined in org.jetbrains.kotlin.idea.codeInliner in file introduceValue.kt[SimpleFunctionDescriptorImpl]
 
 'lexicalScope' @ [159:79] ==> value-parameter lexicalScope: LexicalScope defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.renameDuplicates[ValueParameterDescriptorImpl]
 
@@ -411,7 +411,7 @@ Inferred types:
 
 'oldName' @ [162:36] ==> val oldName: String? defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.renameDuplicates[LocalVariableDescriptor]
 
-'nameHasConflictsInScope' @ [162:44] ==> public fun String.nameHasConflictsInScope(lexicalScope: LexicalScope): Boolean defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'nameHasConflictsInScope' @ [162:44] ==> public fun String.nameHasConflictsInScope(lexicalScope: LexicalScope): Boolean defined in org.jetbrains.kotlin.idea.codeInliner in file introduceValue.kt[SimpleFunctionDescriptorImpl]
 
 'lexicalScope' @ [162:68] ==> value-parameter lexicalScope: LexicalScope defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.renameDuplicates[ValueParameterDescriptorImpl]
 
@@ -476,8 +476,6 @@ Inferred types:
     <reified T : PsiElement> -> KtExpression
 
 'it' @ [181:17] ==> value-parameter it: KtExpression defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.processValueParameterUsages.<anonymous>[ValueParameterDescriptorImpl]
-
-'CodeToInline' @ [181:20] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline[FakeCallableDescriptorForObject]
 
 'PARAMETER_USAGE_KEY' @ [181:33] ==> public final val PARAMETER_USAGE_KEY: Key<Name> defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline.Companion[PropertyDescriptorImpl]
 
@@ -555,7 +553,7 @@ Inferred types:
 
 'resultingDescriptor' @ [210:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'original' @ [210:63] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
@@ -565,7 +563,7 @@ Inferred types:
 
 'call' @ [212:40] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [212:45] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -609,8 +607,6 @@ Inferred types:
 
 'it' @ [220:17] ==> value-parameter it: KtExpression defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.processTypeParameterUsages.<anonymous>[ValueParameterDescriptorImpl]
 
-'CodeToInline' @ [220:20] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline[FakeCallableDescriptorForObject]
-
 'TYPE_PARAMETER_USAGE_KEY' @ [220:33] ==> public final val TYPE_PARAMETER_USAGE_KEY: Key<Name> defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline.Companion[PropertyDescriptorImpl]
 
 'parameterName' @ [220:62] ==> val parameterName: Name defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.processTypeParameterUsages[LocalVariableDescriptor]
@@ -619,7 +615,7 @@ Inferred types:
 
 'typeArguments' @ [223:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'typeParameter' @ [223:51] ==> val typeParameter: (TypeParameterDescriptor..TypeParameterDescriptor?) defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.processTypeParameterUsages[LocalVariableDescriptor]
 
@@ -654,8 +650,6 @@ Inferred types:
 'psiFactory' @ [229:17] ==> private final val psiFactory: KtPsiFactory defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner[PropertyDescriptorImpl]
 
 'createType' @ [229:28] ==> public final fun createType(type: String): KtTypeReference defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
-
-'IdeDescriptorRenderers' @ [229:39] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [229:62] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -852,7 +846,7 @@ Inferred types:
 
 'codeToInline' @ [273:13] ==> private final val codeToInline: MutableCodeToInline defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner[PropertyDescriptorImpl]
 
-'introduceValue' @ [273:26] ==> internal fun MutableCodeToInline.introduceValue(value: KtExpression, valueType: KotlinType?, usages: Collection<KtExpression>, expressionToBeReplaced: KtExpression, nameSuggestion: String? = ..., safeCall: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'introduceValue' @ [273:26] ==> internal fun MutableCodeToInline.introduceValue(value: KtExpression, valueType: KotlinType?, usages: Collection<KtExpression>, expressionToBeReplaced: KtExpression, nameSuggestion: String? = ..., safeCall: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner in file introduceValue.kt[SimpleFunctionDescriptorImpl]
 
 'receiver' @ [273:41] ==> value-parameter receiver: KtExpression defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.wrapCodeForSafeCall[ValueParameterDescriptorImpl]
 
@@ -1152,7 +1146,7 @@ Inferred types:
 
 'valueArguments' @ [343:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'parameter' @ [343:60] ==> value-parameter parameter: ValueParameterDescriptor defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.argumentForParameter[ValueParameterDescriptorImpl]
 
@@ -1253,7 +1247,9 @@ Inferred types:
 
 'component2' @ [356:36] ==> public final operator fun component2(): Map<ValueParameterDescriptor, Collection<KtExpression>> defined in org.jetbrains.kotlin.idea.core.OptionalParametersHelper.DefaultValue[DeserializedSimpleFunctionDescriptor]
 
-'OptionalParametersHelper' @ [356:55] ==> public object OptionalParametersHelper defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
+'?:' @ [356:55] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: OptionalParametersHelper.DefaultValue?, right: OptionalParametersHelper.DefaultValue): OptionalParametersHelper.DefaultValue[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> DefaultValue
 
 'defaultParameterValue' @ [356:80] ==> public final fun defaultParameterValue(parameter: ValueParameterDescriptor, project: Project): OptionalParametersHelper.DefaultValue? defined in org.jetbrains.kotlin.idea.core.OptionalParametersHelper[DeserializedSimpleFunctionDescriptor]
 
@@ -1285,8 +1281,6 @@ Inferred types:
 Inferred types:
     <T : Any> -> Name
 
-'CodeToInline' @ [359:45] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline[FakeCallableDescriptorForObject]
-
 'PARAMETER_USAGE_KEY' @ [359:58] ==> public final val PARAMETER_USAGE_KEY: Key<Name> defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline.Companion[PropertyDescriptorImpl]
 
 'param' @ [359:79] ==> val param: ValueParameterDescriptor defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.argumentForParameter[LocalVariableDescriptor]
@@ -1310,8 +1304,6 @@ Inferred types:
 'clear' @ [365:73] ==> private final fun <T : Any> KtElement.clear(key: Key<Name>): Unit defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : Any> -> Name
-
-'CodeToInline' @ [365:79] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline[FakeCallableDescriptorForObject]
 
 'PARAMETER_USAGE_KEY' @ [365:92] ==> public final val PARAMETER_USAGE_KEY: Key<Name> defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline.Companion[PropertyDescriptorImpl]
 
@@ -1505,8 +1497,6 @@ Inferred types:
 
 'USER_CODE_KEY' @ [421:25] ==> private final val USER_CODE_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner[PropertyDescriptorImpl]
 
-'ShortenReferences' @ [422:17] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences[FakeCallableDescriptorForObject]
-
 'SKIP' @ [422:48] ==> enum entry SKIP defined in org.jetbrains.kotlin.idea.core.ShortenReferences.FilterResult[FakeCallableDescriptorForObject]
 
 'element' @ [425:37] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.postProcessInsertedCode.<anonymous>[ValueParameterDescriptorImpl]
@@ -1526,11 +1516,7 @@ Inferred types:
 
 'USER_CODE_KEY' @ [426:58] ==> private final val USER_CODE_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner[PropertyDescriptorImpl]
 
-'ShortenReferences' @ [427:21] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences[FakeCallableDescriptorForObject]
-
 'GO_INSIDE' @ [427:52] ==> enum entry GO_INSIDE defined in org.jetbrains.kotlin.idea.core.ShortenReferences.FilterResult[FakeCallableDescriptorForObject]
-
-'ShortenReferences' @ [429:21] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences[FakeCallableDescriptorForObject]
 
 'PROCESS' @ [429:52] ==> enum entry PROCESS defined in org.jetbrains.kotlin.idea.core.ShortenReferences.FilterResult[FakeCallableDescriptorForObject]
 
@@ -1579,8 +1565,6 @@ Inferred types:
 Inferred types:
     <T : Any> -> Name
 
-'CodeToInline' @ [441:26] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline[FakeCallableDescriptorForObject]
-
 'PARAMETER_USAGE_KEY' @ [441:39] ==> public final val PARAMETER_USAGE_KEY: Key<Name> defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline.Companion[PropertyDescriptorImpl]
 
 'it' @ [442:17] ==> value-parameter it: KtExpression defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.postProcessInsertedCode.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -1588,8 +1572,6 @@ Inferred types:
 'clear' @ [442:20] ==> private final fun <T : Any> KtElement.clear(key: Key<Name>): Unit defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : Any> -> Name
-
-'CodeToInline' @ [442:26] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline[FakeCallableDescriptorForObject]
 
 'TYPE_PARAMETER_USAGE_KEY' @ [442:39] ==> public final val TYPE_PARAMETER_USAGE_KEY: Key<Name> defined in org.jetbrains.kotlin.idea.codeInliner.CodeToInline.Companion[PropertyDescriptorImpl]
 
@@ -1805,13 +1787,13 @@ Inferred types:
 
 'addAll' @ [499:29] ==> public open fun addAll(elements: Collection<ValueArgument>): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'OptionalParametersHelper' @ [499:36] ==> public object OptionalParametersHelper defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
-
 'detectArgumentsToDropForDefaults' @ [499:61] ==> public final fun detectArgumentsToDropForDefaults(resolvedCall: ResolvedCall<out CallableDescriptor>, project: Project, canDrop: (ValueArgument) -> Boolean = ...): Collection<ValueArgument> defined in org.jetbrains.kotlin.idea.core.OptionalParametersHelper[DeserializedSimpleFunctionDescriptor]
 
 'resolvedCall' @ [499:94] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.dropArgumentsForDefaultValues.<anonymous>[LocalVariableDescriptor]
 
 'project' @ [499:108] ==> val project: Project defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.dropArgumentsForDefaultValues[LocalVariableDescriptor]
+
+'canDropArgument' @ [499:119] ==> local final fun canDropArgument(argument: ValueArgument): Boolean defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.dropArgumentsForDefaultValues[SimpleFunctionDescriptorImpl]
 
 'argumentsToDrop' @ [502:26] ==> val argumentsToDrop: ArrayList<ValueArgument> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.dropArgumentsForDefaultValues[LocalVariableDescriptor]
 
@@ -1902,8 +1884,6 @@ Inferred types:
 
 '+' @ [526:21] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'IdeDescriptorRenderers' @ [526:41] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE' @ [526:64] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderType' @ [526:76] ==> public abstract fun renderType(type: KotlinType): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -1980,7 +1960,7 @@ Inferred types:
 
 'call' @ [545:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [545:56] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -2143,7 +2123,7 @@ Inferred types:
 
 'resultingDescriptor' @ [589:62] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueParameters' @ [589:82] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -2169,25 +2149,25 @@ Inferred types:
 
 'getCopyableUserData' @ [597:69] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(T..T?)>..Key<(T..T?)>?)): T? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [597:89] ==> value-parameter key: Key<T> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.get[ValueParameterDescriptorImpl]
 
 'getCopyableUserData' @ [598:68] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?)): Unit? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'key' @ [598:88] ==> value-parameter key: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.get[ValueParameterDescriptorImpl]
 
 'putCopyableUserData' @ [599:57] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(T..T?)>..Key<(T..T?)>?), @Nullable p1: T?): Unit defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [599:77] ==> value-parameter key: Key<T> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.clear[ValueParameterDescriptorImpl]
 
 'putCopyableUserData' @ [600:65] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(T..T?)>..Key<(T..T?)>?), @Nullable p1: T?): Unit defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [600:85] ==> value-parameter key: Key<T> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.put[ValueParameterDescriptorImpl]
 
@@ -2195,7 +2175,7 @@ Inferred types:
 
 'putCopyableUserData' @ [601:50] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?), @Nullable p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'key' @ [601:70] ==> value-parameter key: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.mark[ValueParameterDescriptorImpl]
 
@@ -2203,7 +2183,7 @@ Inferred types:
 
 'putCopyableUserData' @ [604:9] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Unit..Unit?)>..Key<(Unit..Unit?)>?), @Nullable p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'key' @ [604:29] ==> value-parameter key: Key<Unit> defined in org.jetbrains.kotlin.idea.codeInliner.CodeInliner.marked[ValueParameterDescriptorImpl]
 

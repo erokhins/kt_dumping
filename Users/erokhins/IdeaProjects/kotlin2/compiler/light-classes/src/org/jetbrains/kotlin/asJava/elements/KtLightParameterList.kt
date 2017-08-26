@@ -8,9 +8,9 @@
 
 'valueParameterList' @ [34:55] ==> public final val KtFunction.valueParameterList: KtParameterList?[MyPropertyDescriptor]
 
-'lazyPub' @ [36:53] ==> public fun <T> lazyPub(initializer: () -> Array<PsiParameter>): Lazy<Array<PsiParameter>> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [36:53] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Array<PsiParameter>
+    <T> -> T
 
 'invoke' @ [36:63] ==> public abstract operator fun invoke(): List<PsiParameter> defined in kotlin.Function0[FunctionInvokeDescriptor]
 

@@ -47,6 +47,8 @@ Inferred types:
 
 'chunk' @ [55:86] ==> private final val chunk: ModuleChunk defined in org.jetbrains.kotlin.jps.build.FSOperationsHelper[PropertyDescriptorImpl]
 
+'shouldMark' @ [55:95] ==> local final fun shouldMark(file: File): Boolean defined in org.jetbrains.kotlin.jps.build.FSOperationsHelper.markChunk[SimpleFunctionDescriptorImpl]
+
 'markDirty' @ [58:26] ==> public final fun markDirty(p0: (CompileContext..CompileContext?), p1: (CompilationRound..CompilationRound?), p2: (ModuleChunk..ModuleChunk?), @Nullable p3: (((File..File?)) -> Boolean)?): Unit defined in org.jetbrains.jps.incremental.FSOperations[SamAdapterFunctionDescriptor]
 
 'compileContext' @ [58:36] ==> private final val compileContext: CompileContext defined in org.jetbrains.kotlin.jps.build.FSOperationsHelper[PropertyDescriptorImpl]
@@ -54,6 +56,8 @@ Inferred types:
 'NEXT' @ [58:69] ==> enum entry NEXT defined in org.jetbrains.jps.incremental.fs.CompilationRound[FakeCallableDescriptorForObject]
 
 'chunk' @ [58:75] ==> private final val chunk: ModuleChunk defined in org.jetbrains.kotlin.jps.build.FSOperationsHelper[PropertyDescriptorImpl]
+
+'shouldMark' @ [58:84] ==> local final fun shouldMark(file: File): Boolean defined in org.jetbrains.kotlin.jps.build.FSOperationsHelper.markChunk[SimpleFunctionDescriptorImpl]
 
 'markFilesImpl' @ [63:9] ==> private final inline fun markFilesImpl(files: Iterable<File>, shouldMark: (File) -> Boolean): Unit defined in org.jetbrains.kotlin.jps.build.FSOperationsHelper[SimpleFunctionDescriptorImpl]
 
@@ -176,9 +180,9 @@ Inferred types:
 
 'context' @ [99:125] ==> private final val context: CompileContext defined in org.jetbrains.kotlin.jps.build.FSOperationsHelper.ModulesBasedFileFilter[PropertyDescriptorImpl]
 
-'intersects' @ [100:34] ==> @Contract public open fun <T : (Any..Any?)> intersects(@NotNull p0: (MutableCollection<out (BuildTarget<*>..BuildTarget<*>?)>..Collection<(BuildTarget<*>..BuildTarget<*>?)>), @NotNull p1: (MutableCollection<out (BuildTarget<*>..BuildTarget<*>?)>..Collection<(BuildTarget<*>..BuildTarget<*>?)>)): Boolean defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
+'intersects' @ [100:34] ==> @Contract public open fun <T : (Any..Any?)> intersects(@NotNull p0: (MutableCollection<out (BuildTarget<out (BuildRootDescriptor..BuildRootDescriptor?)>..BuildTarget<out (BuildRootDescriptor..BuildRootDescriptor?)>?)>..Collection<(BuildTarget<out (BuildRootDescriptor..BuildRootDescriptor?)>..BuildTarget<out (BuildRootDescriptor..BuildRootDescriptor?)>?)>), @NotNull p1: (MutableCollection<out (BuildTarget<out (BuildRootDescriptor..BuildRootDescriptor?)>..BuildTarget<out (BuildRootDescriptor..BuildRootDescriptor?)>?)>..Collection<(BuildTarget<out (BuildRootDescriptor..BuildRootDescriptor?)>..BuildTarget<out (BuildRootDescriptor..BuildRootDescriptor?)>?)>)): Boolean defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> BuildTarget<*>
+    <T : (Any..Any?)> -> (org.jetbrains.jps.builders.BuildTarget<out (org.jetbrains.jps.builders.BuildRootDescriptor..org.jetbrains.jps.builders.BuildRootDescriptor?)>..org.jetbrains.jps.builders.BuildTarget<out (org.jetbrains.jps.builders.BuildRootDescriptor..org.jetbrains.jps.builders.BuildRootDescriptor?)>?)
 
 'targetOfFileWithDependencies' @ [100:45] ==> val targetOfFileWithDependencies: Set<BuildTarget<*>> defined in org.jetbrains.kotlin.jps.build.FSOperationsHelper.ModulesBasedFileFilter.accept[LocalVariableDescriptor]
 

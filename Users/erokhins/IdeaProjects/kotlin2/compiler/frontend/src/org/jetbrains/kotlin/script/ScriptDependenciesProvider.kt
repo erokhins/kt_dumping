@@ -6,7 +6,7 @@
 
 'getService' @ [31:32] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(ScriptDependenciesProvider..ScriptDependenciesProvider?)>): (ScriptDependenciesProvider..ScriptDependenciesProvider?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScriptDependenciesProvider
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.ScriptDependenciesProvider..org.jetbrains.kotlin.script.ScriptDependenciesProvider?)
 
 'project' @ [31:43] ==> value-parameter project: Project defined in org.jetbrains.kotlin.script.ScriptDependenciesProvider.Companion.getInstance[ValueParameterDescriptorImpl]
 

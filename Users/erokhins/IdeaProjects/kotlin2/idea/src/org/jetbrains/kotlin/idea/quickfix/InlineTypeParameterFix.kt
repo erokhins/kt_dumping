@@ -85,8 +85,6 @@ Inferred types:
 
 'delete' @ [46:27] ==> public open fun delete(): Unit defined in org.jetbrains.kotlin.psi.KtTypeParameterList[JavaMethodDescriptor]
 
-'EditCommaSeparatedListHelper' @ [49:13] ==> public object EditCommaSeparatedListHelper defined in org.jetbrains.kotlin.psi[FakeCallableDescriptorForObject]
-
 'removeItem' @ [49:42] ==> public final fun <TItem : KtElement> removeItem(item: KtTypeParameter): Unit defined in org.jetbrains.kotlin.psi.EditCommaSeparatedListHelper[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <TItem : KtElement> -> KtTypeParameter
@@ -105,7 +103,7 @@ Inferred types:
 
 'diagnostic' @ [58:114] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.InlineTypeParameterFix.Factory.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [58:126] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>.psiElement: (KtTypeReference..KtTypeReference?)[MyPropertyDescriptor]
+'psiElement' @ [58:126] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>.psiElement: KtTypeReference[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)

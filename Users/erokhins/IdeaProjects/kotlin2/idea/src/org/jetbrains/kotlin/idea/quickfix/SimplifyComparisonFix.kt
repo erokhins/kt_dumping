@@ -64,9 +64,9 @@ Inferred types:
 
 'b' @ [52:78] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<out (PsiElement..PsiElement?), out (Any..Any?), out (Any..Any?)>.b: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <A : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <B : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
+    <A : (Any..Any?)> -> Captured(*)
+    <B : (Any..Any?)> -> Captured(*)
 
 'SimplifyComparisonFix' @ [53:20] ==> public constructor SimplifyComparisonFix(element: KtExpression, value: Boolean) defined in org.jetbrains.kotlin.idea.quickfix.SimplifyComparisonFix[ClassConstructorDescriptorImpl]
 

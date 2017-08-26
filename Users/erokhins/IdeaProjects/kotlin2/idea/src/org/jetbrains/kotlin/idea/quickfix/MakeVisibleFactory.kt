@@ -18,8 +18,8 @@ Inferred types:
 
 'get' @ [42:35] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>..ReadOnlySlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>?), p1: (KtFile..KtFile?)): PackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtFile
-    <V : (Any..Any?)> -> PackageFragmentDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor?)
 
 'FILE_TO_PACKAGE_FRAGMENT' @ [42:54] ==> public final val FILE_TO_PACKAGE_FRAGMENT: (WritableSlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>..WritableSlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -41,11 +41,11 @@ Inferred types:
 
 'diagnostic' @ [46:39] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.MakeVisibleFactory.doCreateActions[ValueParameterDescriptorImpl]
 
-'c' @ [46:51] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), out (Any..Any?), (DeclarationDescriptor..DeclarationDescriptor?)>.c: (DeclarationDescriptor..DeclarationDescriptor?)[MyPropertyDescriptor]
+'c' @ [46:51] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?), out (Any..Any?), (DeclarationDescriptor..DeclarationDescriptor?)>.c: DeclarationDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
-    <B : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <B : (Any..Any?)> -> Captured(out (kotlin.Any..kotlin.Any?))
     <C : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'emptyList' @ [46:103] ==> public fun <T> emptyList(): List<IntentionAction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]

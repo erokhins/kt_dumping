@@ -36,7 +36,7 @@ Inferred types:
 
 'casted' @ [41:39] ==> val casted: SimpleDiagnostic<(KtConstantExpression..KtConstantExpression?)> defined in org.jetbrains.kotlin.idea.quickfix.WrongLongSuffixFix.Factory.createAction[LocalVariableDescriptor]
 
-'psiElement' @ [41:46] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtConstantExpression..KtConstantExpression?)>.psiElement: (KtConstantExpression..KtConstantExpression?)[MyPropertyDescriptor]
+'psiElement' @ [41:46] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtConstantExpression..KtConstantExpression?)>.psiElement: KtConstantExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtConstantExpression..org.jetbrains.kotlin.psi.KtConstantExpression?)
 

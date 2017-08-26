@@ -26,7 +26,7 @@ Inferred types:
 
 'getInstance' @ [48:38] ==> @NotNull public open fun <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> getInstance(p0: (Class<out (PatternConfigurationProducer..PatternConfigurationProducer?)>..Class<out (PatternConfigurationProducer..PatternConfigurationProducer?)>?)): PatternConfigurationProducer defined in com.intellij.execution.actions.RunConfigurationProducer[JavaMethodDescriptor]
 Inferred types:
-    <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> -> PatternConfigurationProducer
+    <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> -> (com.intellij.execution.junit.PatternConfigurationProducer..com.intellij.execution.junit.PatternConfigurationProducer?)
 
 'PatternConfigurationProducer' @ [48:50] ==> public constructor PatternConfigurationProducer() defined in com.intellij.execution.junit.PatternConfigurationProducer[JavaClassConstructorDescriptor]
 
@@ -42,7 +42,7 @@ Inferred types:
 
 'location' @ [52:28] ==> public final val ConfigurationContext.location: raw (Location<(PsiElement..PsiElement?)>?..Location<*>?)[MyPropertyDescriptor]
 
-'psiElement' @ [52:38] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [52:38] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
@@ -116,7 +116,7 @@ Inferred types:
 
 'configurationModule' @ [72:88] ==> public final val <ConfigurationModule : (RunConfigurationModule..RunConfigurationModule?)> ModuleBasedConfiguration<out (RunConfigurationModule..RunConfigurationModule?)>.configurationModule: (RunConfigurationModule..RunConfigurationModule?)[MyPropertyDescriptor]
 Inferred types:
-    <ConfigurationModule : (RunConfigurationModule..RunConfigurationModule?)> -> (com.intellij.execution.configurations.RunConfigurationModule..com.intellij.execution.configurations.RunConfigurationModule?)
+    <ConfigurationModule : (RunConfigurationModule..RunConfigurationModule?)> -> Captured(*)
 
 'module' @ [72:108] ==> public final var RunConfigurationModule.module: Module?[MyPropertyDescriptor]
 
@@ -154,7 +154,7 @@ Inferred types:
 
 'location' @ [83:20] ==> val location: (Location<(PsiElement..PsiElement?)>..Location<*>) defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
 
-'psiElement' @ [83:29] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [83:29] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
@@ -164,13 +164,13 @@ Inferred types:
 
 'isInProjectOrLibSource' @ [85:31] ==> @JvmStatic public final fun isInProjectOrLibSource(element: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.util.ProjectRootsUtil[DeserializedSimpleFunctionDescriptor]
 
-'leaf' @ [85:54] ==> val leaf: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
+'leaf' @ [85:54] ==> val leaf: PsiElement defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
 
-'leaf' @ [89:13] ==> val leaf: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
+'leaf' @ [89:13] ==> val leaf: PsiElement defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
 
 'containingFile' @ [89:18] ==> public final val PsiElement.containingFile: (PsiFile..PsiFile?)[MyPropertyDescriptor]
 
-'leaf' @ [93:22] ==> val leaf: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
+'leaf' @ [93:22] ==> val leaf: PsiElement defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
 
 'containingFile' @ [93:27] ==> public final val PsiElement.containingFile: (PsiFile..PsiFile?)[MyPropertyDescriptor]
 
@@ -184,7 +184,7 @@ Inferred types:
 
 'getTestMethodLocation' @ [99:30] ==> public final fun getTestMethodLocation(leaf: PsiElement): Location<PsiMethod>? defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.Companion[SimpleFunctionDescriptorImpl]
 
-'leaf' @ [99:52] ==> val leaf: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
+'leaf' @ [99:52] ==> val leaf: PsiElement defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
 
 'methodLocation' @ [100:13] ==> val methodLocation: Location<PsiMethod>? defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
 
@@ -216,7 +216,7 @@ Inferred types:
 
 'getTestClass' @ [108:25] ==> public final fun getTestClass(leaf: PsiElement): PsiClass? defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.Companion[SimpleFunctionDescriptorImpl]
 
-'leaf' @ [108:38] ==> val leaf: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
+'leaf' @ [108:38] ==> val leaf: PsiElement defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
 
 'testClass' @ [109:13] ==> val testClass: PsiClass? defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.setupConfigurationFromContext[LocalVariableDescriptor]
 
@@ -329,7 +329,7 @@ Inferred types:
 
 'getParentOfType' @ [152:37] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtTypeParameterListOwner..KtTypeParameterListOwner?)>..Class<out (KtTypeParameterListOwner..KtTypeParameterListOwner?)>?)): KtTypeParameterListOwner? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtTypeParameterListOwner
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeParameterListOwner..org.jetbrains.kotlin.psi.KtTypeParameterListOwner?)
 
 'function' @ [152:53] ==> val function: KtNamedFunction defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.Companion.getTestMethodLocation[LocalVariableDescriptor]
 
@@ -363,7 +363,7 @@ Inferred types:
 
 'fromPsiElement' @ [157:50] ==> public open fun <T : (PsiElement..PsiElement?)> fromPsiElement(p0: (PsiMethod..PsiMethod?)): (Location<(PsiMethod..PsiMethod?)>..Location<(PsiMethod..PsiMethod?)>?) defined in com.intellij.execution.PsiLocation[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiMethod
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
 
 'method' @ [157:65] ==> val method: PsiMethod defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.Companion.getTestMethodLocation[LocalVariableDescriptor]
 

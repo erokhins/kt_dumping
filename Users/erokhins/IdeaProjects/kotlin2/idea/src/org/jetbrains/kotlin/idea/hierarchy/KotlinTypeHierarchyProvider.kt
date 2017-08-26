@@ -30,8 +30,6 @@ Inferred types:
 
 'target' @ [46:28] ==> val target: PsiElement? defined in org.jetbrains.kotlin.idea.hierarchy.KotlinTypeHierarchyProvider.getTargetByReference[LocalVariableDescriptor]
 
-'SourceNavigationHelper' @ [47:35] ==> public object SourceNavigationHelper defined in org.jetbrains.kotlin.idea.decompiler.navigation[FakeCallableDescriptorForObject]
-
 'getOriginalPsiClassOrCreateLightClass' @ [47:58] ==> public final fun getOriginalPsiClassOrCreateLightClass(classOrObject: KtClassOrObject): PsiClass? defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper[DeserializedSimpleFunctionDescriptor]
 
 'target' @ [47:96] ==> val target: PsiElement? defined in org.jetbrains.kotlin.idea.hierarchy.KotlinTypeHierarchyProvider.getTargetByReference[LocalVariableDescriptor]
@@ -79,8 +77,6 @@ Inferred types:
 'singleOrNull' @ [54:120] ==> public fun <T> Iterable<(KtClassOrObject..KtClassOrObject?)>.singleOrNull(): KtClassOrObject? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.KtClassOrObject..org.jetbrains.kotlin.psi.KtClassOrObject?)
-
-'SourceNavigationHelper' @ [56:17] ==> public object SourceNavigationHelper defined in org.jetbrains.kotlin.idea.decompiler.navigation[FakeCallableDescriptorForObject]
 
 'getOriginalPsiClassOrCreateLightClass' @ [56:40] ==> public final fun getOriginalPsiClassOrCreateLightClass(classOrObject: KtClassOrObject): PsiClass? defined in org.jetbrains.kotlin.idea.decompiler.navigation.SourceNavigationHelper[DeserializedSimpleFunctionDescriptor]
 

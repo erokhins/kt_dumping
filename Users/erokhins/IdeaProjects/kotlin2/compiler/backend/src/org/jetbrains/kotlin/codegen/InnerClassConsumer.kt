@@ -28,8 +28,6 @@ Inferred types:
 
 'DEFAULT_IMPLS_CLASS_NAME' @ [39:60] ==> public const final val DEFAULT_IMPLS_CLASS_NAME: String defined in org.jetbrains.kotlin.load.java.JvmAbi[JavaPropertyDescriptor]
 
-'Modality' @ [40:25] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [40:34] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'CLASS' @ [40:51] ==> enum entry CLASS defined in org.jetbrains.kotlin.descriptors.ClassKind[FakeCallableDescriptorForObject]
@@ -43,8 +41,6 @@ Inferred types:
 'classDescriptorImpl' @ [43:17] ==> val classDescriptorImpl: ClassDescriptorImpl defined in org.jetbrains.kotlin.codegen.InnerClassConsumer.Companion.classForInnerClassRecord[LocalVariableDescriptor]
 
 'initialize' @ [43:37] ==> public final fun initialize(@NotNull p0: MemberScope, @NotNull p1: (MutableSet<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>..Set<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>), @Nullable p2: ClassConstructorDescriptor?): Unit defined in org.jetbrains.kotlin.descriptors.impl.ClassDescriptorImpl[JavaMethodDescriptor]
-
-'MemberScope' @ [43:48] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'Empty' @ [43:60] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 

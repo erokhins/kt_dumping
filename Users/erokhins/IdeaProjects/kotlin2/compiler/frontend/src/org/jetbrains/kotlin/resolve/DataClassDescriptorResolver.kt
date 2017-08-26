@@ -64,8 +64,6 @@
 
 'classDescriptor' @ [70:17] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver.doCreateFunctionFromAny[ValueParameterDescriptorImpl]
 
-'Annotations' @ [70:34] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [70:46] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'name' @ [70:53] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver.doCreateFunctionFromAny[ValueParameterDescriptorImpl]
@@ -137,8 +135,6 @@ Inferred types:
 
 'returnType' @ [81:33] ==> public final val SimpleFunctionDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
-'Modality' @ [82:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'OPEN' @ [82:26] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [83:30] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -148,8 +144,6 @@ Inferred types:
 'create' @ [96:63] ==> @NotNull public open fun create(@NotNull p0: DeclarationDescriptor, @NotNull p1: Annotations, @NotNull p2: Name, @NotNull p3: CallableMemberDescriptor.Kind, @NotNull p4: SourceElement): SimpleFunctionDescriptorImpl defined in org.jetbrains.kotlin.descriptors.impl.SimpleFunctionDescriptorImpl[JavaMethodDescriptor]
 
 'classDescriptor' @ [97:17] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver.createComponentFunctionDescriptor[ValueParameterDescriptorImpl]
-
-'Annotations' @ [98:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [98:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -183,8 +177,6 @@ Inferred types:
 
 'type' @ [109:26] ==> public final val PropertyDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'Modality' @ [110:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [110:26] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'property' @ [111:17] ==> value-parameter property: PropertyDescriptor defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver.createComponentFunctionDescriptor[ValueParameterDescriptorImpl]
@@ -199,8 +191,8 @@ Inferred types:
 
 'record' @ [115:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>..WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>?), key: (ValueParameterDescriptor..ValueParameterDescriptor?), value: (FunctionDescriptor..FunctionDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ValueParameterDescriptor
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'DATA_CLASS_COMPONENT_FUNCTION' @ [115:37] ==> public final val DATA_CLASS_COMPONENT_FUNCTION: (WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>..WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -213,8 +205,6 @@ Inferred types:
 'create' @ [124:63] ==> @NotNull public open fun create(@NotNull p0: DeclarationDescriptor, @NotNull p1: Annotations, @NotNull p2: Name, @NotNull p3: CallableMemberDescriptor.Kind, @NotNull p4: SourceElement): SimpleFunctionDescriptorImpl defined in org.jetbrains.kotlin.descriptors.impl.SimpleFunctionDescriptorImpl[JavaMethodDescriptor]
 
 'classDescriptor' @ [125:17] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver.createCopyFunctionDescriptor[ValueParameterDescriptorImpl]
-
-'Annotations' @ [126:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [126:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -238,8 +228,8 @@ Inferred types:
 
 'get' @ [135:59] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>..ReadOnlySlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>?), key: (ValueParameterDescriptor..ValueParameterDescriptor?)): PropertyDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ValueParameterDescriptor
-    <V : (Any..Any?)> -> PropertyDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'VALUE_PARAMETER_AS_PROPERTY' @ [135:78] ==> public final val VALUE_PARAMETER_AS_PROPERTY: (WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>..WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -297,8 +287,8 @@ Inferred types:
 
 'record' @ [144:23] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>..WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>?), key: (ValueParameterDescriptor..ValueParameterDescriptor?), value: (PropertyDescriptor..PropertyDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ValueParameterDescriptor
-    <V : (Any..Any?)> -> PropertyDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'VALUE_PARAMETER_AS_PROPERTY' @ [144:45] ==> public final val VALUE_PARAMETER_AS_PROPERTY: (WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>..WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -324,8 +314,6 @@ Inferred types:
 
 'defaultType' @ [153:33] ==> public final val ClassDescriptor.defaultType: SimpleType[MyPropertyDescriptor]
 
-'Modality' @ [154:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [154:26] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [155:30] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -334,8 +322,8 @@ Inferred types:
 
 'record' @ [158:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(ClassDescriptor..ClassDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>?), key: (ClassDescriptor..ClassDescriptor?), value: (FunctionDescriptor..FunctionDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassDescriptor
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'DATA_CLASS_COPY_FUNCTION' @ [158:37] ==> public final val DATA_CLASS_COPY_FUNCTION: (WritableSlice<(ClassDescriptor..ClassDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

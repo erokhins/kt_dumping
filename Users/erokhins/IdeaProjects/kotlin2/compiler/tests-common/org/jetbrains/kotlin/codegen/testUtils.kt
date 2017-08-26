@@ -38,10 +38,10 @@ Inferred types:
 
 'this' @ [57:13] ==> <this> defined in org.jetbrains.kotlin.codegen.extractUrls[ReceiverParameterDescriptorImpl]
 
-'let' @ [57:39] ==> @InlineOnly public inline fun <T, R> URLClassLoader.let(block: (URLClassLoader) -> List<URL>): List<URL> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [57:39] ==> @InlineOnly public inline fun <T, R> URLClassLoader.let(block: (URLClassLoader) -> List<(URL..URL?)>): List<(URL..URL?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> URLClassLoader
-    <R> -> List<URL>
+    <R> -> List<(java.net.URL..java.net.URL?)>
 
 'it' @ [58:9] ==> value-parameter it: URLClassLoader defined in org.jetbrains.kotlin.codegen.extractUrls.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -55,7 +55,7 @@ Inferred types:
 
 'parent' @ [58:31] ==> public final val URLClassLoader.parent: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 
-'extractUrls' @ [58:38] ==> public fun ClassLoader?.extractUrls(): List<URL> defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'extractUrls' @ [58:38] ==> public fun ClassLoader?.extractUrls(): List<URL> defined in org.jetbrains.kotlin.codegen in file testUtils.kt[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [59:10] ==> public fun <T> emptyList(): List<URL> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

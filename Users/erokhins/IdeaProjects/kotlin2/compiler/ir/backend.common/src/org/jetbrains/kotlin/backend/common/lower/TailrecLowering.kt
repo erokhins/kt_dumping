@@ -4,7 +4,7 @@
 
 'irFunction' @ [40:42] ==> value-parameter irFunction: IrFunction defined in org.jetbrains.kotlin.backend.common.lower.TailrecLowering.lower[ValueParameterDescriptorImpl]
 
-'collectTailRecursionCalls' @ [45:30] ==> public fun collectTailRecursionCalls(irFunction: IrFunction): Set<IrCall> defined in org.jetbrains.kotlin.backend.common[SimpleFunctionDescriptorImpl]
+'collectTailRecursionCalls' @ [45:30] ==> public fun collectTailRecursionCalls(irFunction: IrFunction): Set<IrCall> defined in org.jetbrains.kotlin.backend.common in file TailRecursionCallsCollector.kt[SimpleFunctionDescriptorImpl]
 
 'irFunction' @ [45:56] ==> value-parameter irFunction: IrFunction defined in org.jetbrains.kotlin.backend.common.lower.lowerTailRecursionCalls[ValueParameterDescriptorImpl]
 
@@ -18,7 +18,7 @@
 
 'context' @ [51:19] ==> value-parameter context: BackendContext defined in org.jetbrains.kotlin.backend.common.lower.lowerTailRecursionCalls[ValueParameterDescriptorImpl]
 
-'createIrBuilder' @ [51:27] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createIrBuilder' @ [51:27] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'irFunction' @ [51:43] ==> value-parameter irFunction: IrFunction defined in org.jetbrains.kotlin.backend.common.lower.lowerTailRecursionCalls[ValueParameterDescriptorImpl]
 
@@ -68,7 +68,7 @@ Inferred types:
 
 '+' @ [62:9] ==> public final fun IrStatement.unaryPlus(): Unit defined in org.jetbrains.kotlin.ir.builders.IrBlockBodyBuilder[DeserializedSimpleFunctionDescriptor]
 
-'irWhile' @ [62:10] ==> public fun IrBuilderWithScope.irWhile(origin: IrStatementOrigin? = ...): IrWhileLoopImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irWhile' @ [62:10] ==> public fun IrBuilderWithScope.irWhile(origin: IrStatementOrigin? = ...): IrWhileLoopImpl defined in org.jetbrains.kotlin.ir.builders in file IrBuilders.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [62:20] ==> @InlineOnly public inline fun <T> IrWhileLoopImpl.apply(block: IrWhileLoopImpl.() -> Unit): IrWhileLoopImpl defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -78,7 +78,7 @@ Inferred types:
 
 'condition' @ [64:13] ==> public open lateinit var condition: IrExpression defined in org.jetbrains.kotlin.ir.expressions.impl.IrWhileLoopImpl[DeserializedPropertyDescriptor]
 
-'irTrue' @ [64:25] ==> public fun IrBuilderWithScope.irTrue(): IrConstImpl<Boolean> defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irTrue' @ [64:25] ==> public fun IrBuilderWithScope.irTrue(): IrConstImpl<Boolean> defined in org.jetbrains.kotlin.ir.builders in file IrBuilders.kt[SimpleFunctionDescriptorImpl]
 
 'body' @ [66:13] ==> public open var body: IrExpression? defined in org.jetbrains.kotlin.ir.expressions.impl.IrWhileLoopImpl[DeserializedPropertyDescriptor]
 
@@ -156,7 +156,7 @@ Inferred types:
 
 '+' @ [80:17] ==> public final fun IrStatement.unaryPlus(): Unit defined in org.jetbrains.kotlin.ir.builders.IrBlockBuilder[DeserializedSimpleFunctionDescriptor]
 
-'irBreak' @ [80:18] ==> public fun IrBuilderWithScope.irBreak(loop: IrLoop): IrBreakImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irBreak' @ [80:18] ==> public fun IrBuilderWithScope.irBreak(loop: IrLoop): IrBreakImpl defined in org.jetbrains.kotlin.ir.builders in file IrBuilders.kt[SimpleFunctionDescriptorImpl]
 
 'loop' @ [80:26] ==> val loop: IrWhileLoopImpl defined in org.jetbrains.kotlin.backend.common.lower.lowerTailRecursionCalls.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -218,13 +218,13 @@ Inferred types:
 
 'this' @ [112:70] ==> <this> defined in org.jetbrains.kotlin.backend.common.lower.BodyTransformer.genTailCall[ReceiverParameterDescriptorImpl]
 
-'irBlock' @ [112:75] ==> public inline fun IrGeneratorWithScope.irBlock(expression: IrExpression, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irBlock' @ [112:75] ==> public inline fun IrGeneratorWithScope.irBlock(expression: IrExpression, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [112:83] ==> value-parameter expression: IrCall defined in org.jetbrains.kotlin.backend.common.lower.BodyTransformer.genTailCall[ValueParameterDescriptorImpl]
 
 'expression' @ [114:35] ==> value-parameter expression: IrCall defined in org.jetbrains.kotlin.backend.common.lower.BodyTransformer.genTailCall[ValueParameterDescriptorImpl]
 
-'getArgumentsWithSymbols' @ [114:46] ==> public fun IrFunctionAccessExpression.getArgumentsWithSymbols(): List<Pair<IrValueParameterSymbol, IrExpression>> defined in org.jetbrains.kotlin.ir.util[SimpleFunctionDescriptorImpl]
+'getArgumentsWithSymbols' @ [114:46] ==> public fun IrFunctionAccessExpression.getArgumentsWithSymbols(): List<Pair<IrValueParameterSymbol, IrExpression>> defined in org.jetbrains.kotlin.ir.util in file IrUtils.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [114:72] ==> public inline fun <T, R> Iterable<Pair<IrValueParameterSymbol, IrExpression>>.map(transform: (Pair<IrValueParameterSymbol, IrExpression>) -> Pair<IrValueParameterSymbol, IrExpression>): List<Pair<IrValueParameterSymbol, IrExpression>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -362,7 +362,7 @@ Inferred types:
 
 '+' @ [154:9] ==> public final fun IrStatement.unaryPlus(): Unit defined in org.jetbrains.kotlin.ir.builders.IrBlockBuilder[DeserializedSimpleFunctionDescriptor]
 
-'irContinue' @ [154:10] ==> public fun IrBuilderWithScope.irContinue(loop: IrLoop): IrContinueImpl defined in org.jetbrains.kotlin.ir.builders[SimpleFunctionDescriptorImpl]
+'irContinue' @ [154:10] ==> public fun IrBuilderWithScope.irContinue(loop: IrLoop): IrContinueImpl defined in org.jetbrains.kotlin.ir.builders in file IrBuilders.kt[SimpleFunctionDescriptorImpl]
 
 'loop' @ [154:21] ==> public final val loop: IrLoop defined in org.jetbrains.kotlin.backend.common.lower.BodyTransformer[PropertyDescriptorImpl]
 

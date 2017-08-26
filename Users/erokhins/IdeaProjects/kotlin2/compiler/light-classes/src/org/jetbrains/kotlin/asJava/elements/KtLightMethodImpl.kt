@@ -10,9 +10,9 @@ Inferred types:
 
 'dummyDelegate' @ [43:91] ==> value-parameter dummyDelegate: PsiMethod? = ... defined in org.jetbrains.kotlin.asJava.elements.KtLightMethodImpl.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [44:35] ==> public fun <T> lazyPub(initializer: () -> ClsTypeElementImpl?): Lazy<ClsTypeElementImpl?> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [44:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ClsTypeElementImpl?
+    <T> -> T
 
 'clsDelegate' @ [45:35] ==> public open val clsDelegate: PsiMethod defined in org.jetbrains.kotlin.asJava.elements.KtLightMethodImpl[PropertyDescriptorImpl]
 
@@ -39,9 +39,9 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> Boolean
 
-'lazyPub' @ [51:49] ==> public fun <T> lazyPub(initializer: () -> KtLightParameterList): Lazy<KtLightParameterList> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [51:49] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtLightParameterList
+    <T> -> T
 
 'KtLightParameterList' @ [52:9] ==> public constructor KtLightParameterList(parent: KtLightMethod, parametersCount: Int, computeParameters: () -> List<PsiParameter>) defined in org.jetbrains.kotlin.asJava.elements.KtLightParameterList[ClassConstructorDescriptorImpl]
 
@@ -78,9 +78,9 @@ Inferred types:
 
 'this@KtLightMethodImpl' @ [53:124] ==> <this> defined in org.jetbrains.kotlin.asJava.elements.KtLightMethodImpl[LazyClassReceiverParameterDescriptor]
 
-'lazyPub' @ [57:70] ==> public fun <T> lazyPub(initializer: () -> CachedValue<PsiTypeParameterList>): Lazy<CachedValue<PsiTypeParameterList>> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [57:70] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CachedValue<PsiTypeParameterList>
+    <T> -> T
 
 'getManager' @ [58:48] ==> public open fun getManager(@NotNull p0: Project): (CachedValuesManager..CachedValuesManager?) defined in com.intellij.psi.util.CachedValuesManager[JavaMethodDescriptor]
 
@@ -129,8 +129,6 @@ Inferred types:
 
 'manager' @ [64:65] ==> public final val KtLightMethodImpl.manager: (PsiManager..PsiManager?)[MyPropertyDescriptor]
 
-'LightClassUtil' @ [67:29] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
-
 'buildLightTypeParameterList' @ [67:44] ==> public final fun buildLightTypeParameterList(owner: PsiTypeParameterListOwner, declaration: KtDeclaration): PsiTypeParameterList defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
 'this@KtLightMethodImpl' @ [67:72] ==> <this> defined in org.jetbrains.kotlin.asJava.elements.KtLightMethodImpl[LazyClassReceiverParameterDescriptor]
@@ -143,7 +141,7 @@ Inferred types:
 
 'create' @ [73:48] ==> public open fun <T : (Any..Any?)> create(@Nullable p0: PsiTypeParameterList?, @NotNull vararg p1: (Any..Any?)): (CachedValueProvider.Result<(PsiTypeParameterList..PsiTypeParameterList?)>..CachedValueProvider.Result<(PsiTypeParameterList..PsiTypeParameterList?)>?) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiTypeParameterList
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiTypeParameterList..com.intellij.psi.PsiTypeParameterList?)
 
 'list' @ [73:55] ==> val list: PsiTypeParameterList? defined in org.jetbrains.kotlin.asJava.elements.KtLightMethodImpl.typeParamsList.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -548,7 +546,7 @@ Inferred types:
 
 'getParentOfType' @ [237:44] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtClassOrObject..KtClassOrObject?)>): KtClassOrObject? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClassOrObject
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassOrObject..org.jetbrains.kotlin.psi.KtClassOrObject?)
 
 'methodOrigin' @ [237:60] ==> val methodOrigin: KtDeclaration? defined in org.jetbrains.kotlin.asJava.elements.isTraitFakeOverride[LocalVariableDescriptor]
 

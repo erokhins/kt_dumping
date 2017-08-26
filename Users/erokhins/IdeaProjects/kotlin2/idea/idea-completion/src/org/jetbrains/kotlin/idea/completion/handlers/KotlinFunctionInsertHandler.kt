@@ -144,7 +144,7 @@
 
 'chars' @ [96:107] ==> val chars: CharSequence defined in org.jetbrains.kotlin.idea.completion.handlers.KotlinFunctionInsertHandler.Normal.addArguments[LocalVariableDescriptor]
 
-'isCharAt' @ [96:113] ==> public fun CharSequence.isCharAt(offset: Int, c: Char): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers[SimpleFunctionDescriptorImpl]
+'isCharAt' @ [96:113] ==> public fun CharSequence.isCharAt(offset: Int, c: Char): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers in file handlerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'offset' @ [96:122] ==> var offset: Int defined in org.jetbrains.kotlin.idea.completion.handlers.KotlinFunctionInsertHandler.Normal.addArguments[LocalVariableDescriptor]
 
@@ -518,7 +518,7 @@ Inferred types:
 
 'getCustomSettings' @ [193:65] ==> public open fun <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> getCustomSettings(@NotNull p0: Class<(KotlinCodeStyleSettings..KotlinCodeStyleSettings?)>): (KotlinCodeStyleSettings..KotlinCodeStyleSettings?) defined in com.intellij.psi.codeStyle.CodeStyleSettings[JavaMethodDescriptor]
 Inferred types:
-    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> KotlinCodeStyleSettings
+    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> (org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings..org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings?)
 
 'KotlinCodeStyleSettings' @ [193:83] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 

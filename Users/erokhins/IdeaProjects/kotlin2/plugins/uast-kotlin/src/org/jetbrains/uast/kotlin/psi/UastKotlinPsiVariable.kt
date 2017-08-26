@@ -8,9 +8,9 @@
 
 'INSTANCE' @ [30:62] ==> @NotNull public final val INSTANCE: KotlinLanguage defined in org.jetbrains.kotlin.idea.KotlinLanguage[JavaPropertyDescriptor]
 
-'lz' @ [32:51] ==> internal fun <T> lz(initializer: () -> LightTypeElement): Lazy<LightTypeElement> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [32:51] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LightTypeElement
+    <T> -> T
 
 'LightTypeElement' @ [33:9] ==> public constructor LightTypeElement(p0: (PsiManager..PsiManager?), p1: (PsiType..PsiType?)) defined in com.intellij.psi.impl.light.LightTypeElement[JavaClassConstructorDescriptor]
 
@@ -18,9 +18,9 @@ Inferred types:
 
 'type' @ [33:35] ==> value-parameter type: PsiType defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable.<init>[ValueParameterDescriptorImpl]
 
-'lz' @ [36:51] ==> internal fun <T> lz(initializer: () -> KotlinUastPsiExpression?): Lazy<KotlinUastPsiExpression?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [36:51] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinUastPsiExpression?
+    <T> -> T
 
 'ktInitializer' @ [37:9] ==> public final val ktInitializer: KtExpression? defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable[PropertyDescriptorImpl]
 
@@ -59,13 +59,13 @@ Inferred types:
 
 'java' @ [54:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [54:51] ==> <this> defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable[LazyClassReceiverParameterDescriptor]
 
 'java' @ [54:63] ==> public val <T> KClass<out UastKotlinPsiVariable>.java: Class<out UastKotlinPsiVariable> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> UastKotlinPsiVariable
+    <T> -> Captured(out UastKotlinPsiVariable)
 
 'ktElement' @ [55:16] ==> public final val ktElement: KtElement defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable[PropertyDescriptorImpl]
 

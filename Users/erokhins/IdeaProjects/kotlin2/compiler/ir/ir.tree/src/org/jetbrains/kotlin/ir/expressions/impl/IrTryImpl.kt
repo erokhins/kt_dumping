@@ -36,7 +36,7 @@
 
 'SmartList' @ [43:50] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> IrCatch
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.ir.expressions.IrCatch..org.jetbrains.kotlin.ir.expressions.IrCatch?)
 
 'visitor' @ [48:16] ==> value-parameter visitor: IrElementVisitor<R, D> defined in org.jetbrains.kotlin.ir.expressions.impl.IrTryImpl.accept[ValueParameterDescriptorImpl]
 

@@ -54,8 +54,6 @@
 
 'scope' @ [58:77] ==> val scope: GlobalSearchScope defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetMethodsByNameIfNotMoreThanLimits[LocalVariableDescriptor]
 
-'Int' @ [58:84] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [58:88] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'myFixture' @ [62:9] ==> protected/*protected and package*/ final var myFixture: (JavaCodeInsightTestFixture..JavaCodeInsightTestFixture?) defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest[JavaPropertyDescriptor]
@@ -90,8 +88,6 @@
 
 'scope' @ [66:76] ==> val scope: GlobalSearchScope defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetFieldsByNameIfNotMoreThanLimits[LocalVariableDescriptor]
 
-'Int' @ [66:83] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [66:87] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'myFixture' @ [70:9] ==> protected/*protected and package*/ final var myFixture: (JavaCodeInsightTestFixture..JavaCodeInsightTestFixture?) defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest[JavaPropertyDescriptor]
@@ -108,13 +104,13 @@ Inferred types:
 
 'assertContainsElements' @ [72:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allFieldNameList' @ [72:32] ==> val allFieldNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllFields[LocalVariableDescriptor]
 
 'assertContainsElements' @ [73:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allFieldNameList' @ [73:32] ==> val allFieldNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllFields[LocalVariableDescriptor]
 
@@ -132,43 +128,43 @@ Inferred types:
 
 'assertContainsElements' @ [79:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allMethodNameList' @ [79:32] ==> val allMethodNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllMethods[LocalVariableDescriptor]
 
 'assertContainsElements' @ [80:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allMethodNameList' @ [80:32] ==> val allMethodNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllMethods[LocalVariableDescriptor]
 
 'assertContainsElements' @ [81:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allMethodNameList' @ [81:32] ==> val allMethodNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllMethods[LocalVariableDescriptor]
 
 'assertContainsElements' @ [82:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allMethodNameList' @ [82:32] ==> val allMethodNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllMethods[LocalVariableDescriptor]
 
 'assertContainsElements' @ [83:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allMethodNameList' @ [83:32] ==> val allMethodNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllMethods[LocalVariableDescriptor]
 
 'assertContainsElements' @ [84:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allMethodNameList' @ [84:32] ==> val allMethodNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllMethods[LocalVariableDescriptor]
 
 'assertContainsElements' @ [85:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allMethodNameList' @ [85:32] ==> val allMethodNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllMethods[LocalVariableDescriptor]
 
@@ -186,13 +182,13 @@ Inferred types:
 
 'assertContainsElements' @ [91:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allClassNameList' @ [91:32] ==> val allClassNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllClasses[LocalVariableDescriptor]
 
 'assertContainsElements' @ [92:9] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'allClassNameList' @ [92:32] ==> val allClassNameList: List<(String..String?)> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCacheTest.testGetAllClasses[LocalVariableDescriptor]
 

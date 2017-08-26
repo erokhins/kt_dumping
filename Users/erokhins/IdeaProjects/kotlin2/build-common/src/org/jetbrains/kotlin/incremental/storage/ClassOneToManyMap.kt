@@ -35,6 +35,8 @@ Inferred types:
     <T> -> String
     <R> -> FqName
 
+'FqName' @ [33:44] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
+
 'setOf' @ [33:55] ==> @InlineOnly public inline fun <T> setOf(): Set<FqName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FqName
@@ -59,6 +61,8 @@ Inferred types:
 Inferred types:
     <T> -> FqName
     <R> -> String
+
+'asString' @ [41:54] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.FqName[JavaMethodDescriptor]
 
 'storage' @ [45:9] ==> protected final val storage: LazyStorage<String, Collection<String>> defined in org.jetbrains.kotlin.incremental.storage.ClassOneToManyMap[PropertyDescriptorImpl]
 

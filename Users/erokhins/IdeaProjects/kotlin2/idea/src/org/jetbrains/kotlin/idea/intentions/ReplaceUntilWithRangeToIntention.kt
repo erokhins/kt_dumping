@@ -4,7 +4,7 @@
 
 'resultingDescriptor' @ [25:81] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'when (this) {
     is KtBinaryExpression -> this.left to this.right
@@ -54,7 +54,7 @@ Inferred types:
 
 'element' @ [36:22] ==> value-parameter element: KtExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceUntilWithRangeToIntention.isApplicableTo[ValueParameterDescriptorImpl]
 
-'getCallableDescriptor' @ [36:30] ==> internal fun KtExpression.getCallableDescriptor(): CallableDescriptor? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'getCallableDescriptor' @ [36:30] ==> internal fun KtExpression.getCallableDescriptor(): CallableDescriptor? defined in org.jetbrains.kotlin.idea.intentions in file ReplaceUntilWithRangeToIntention.kt[SimpleFunctionDescriptorImpl]
 
 'fqNameUnsafe' @ [36:55] ==> public val DeclarationDescriptor.fqNameUnsafe: FqNameUnsafe defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
@@ -64,7 +64,7 @@ Inferred types:
 
 'element' @ [41:20] ==> value-parameter element: KtExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceUntilWithRangeToIntention.applyTo[ValueParameterDescriptorImpl]
 
-'getArguments' @ [41:28] ==> internal fun KtExpression.getArguments(): Pair<KtExpression?, KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'getArguments' @ [41:28] ==> internal fun KtExpression.getArguments(): Pair<KtExpression?, KtExpression?>? defined in org.jetbrains.kotlin.idea.intentions in file ReplaceUntilWithRangeToIntention.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [42:9] ==> value-parameter element: KtExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceUntilWithRangeToIntention.applyTo[ValueParameterDescriptorImpl]
 

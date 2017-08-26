@@ -146,8 +146,6 @@ Inferred types:
 
 'newField' @ [85:34] ==> @NotNull public abstract fun newField(@NotNull origin: JvmDeclarationOrigin, access: Int, @NotNull name: String, @NotNull desc: String, @Nullable signature: String?, @Nullable value: Any?): FieldVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [85:43] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [85:64] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'access' @ [85:75] ==> value-parameter access: Int defined in org.jetbrains.kotlin.codegen.inline.AnonymousObjectTransformer.doTransform.<no name provided>.visitField[ValueParameterDescriptorImpl]
@@ -217,11 +215,7 @@ Inferred types:
 
 'isEmpty' @ [98:66] ==> @InlineOnly public inline fun CharSequence.isEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'SourceMapper' @ [99:17] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.SourceMapper[FakeCallableDescriptorForObject]
-
 'createFromSmap' @ [99:30] ==> public final fun createFromSmap(smap: SMAP): SourceMapper defined in org.jetbrains.kotlin.codegen.inline.SourceMapper.Companion[SimpleFunctionDescriptorImpl]
-
-'SMAPParser' @ [99:45] ==> public object SMAPParser defined in org.jetbrains.kotlin.codegen.inline in file SMAPParser.kt[FakeCallableDescriptorForObject]
 
 'parse' @ [99:56] ==> @JvmStatic public final fun parse(mappingInfo: String): SMAP defined in org.jetbrains.kotlin.codegen.inline.SMAPParser[SimpleFunctionDescriptorImpl]
 
@@ -685,13 +679,13 @@ Inferred types:
 
 'newBodyStartLabel' @ [251:39] ==> val newBodyStartLabel: Label defined in org.jetbrains.kotlin.codegen.inline.AnonymousObjectTransformer.generateConstructorAndFields[LocalVariableDescriptor]
 
-'getNewFieldsToGenerate' @ [253:36] ==> public fun getNewFieldsToGenerate(params: List<CapturedParamInfo>): List<NewJavaField> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'getNewFieldsToGenerate' @ [253:36] ==> public fun getNewFieldsToGenerate(params: List<CapturedParamInfo>): List<NewJavaField> defined in org.jetbrains.kotlin.codegen.inline in file transformationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'allCapturedBuilder' @ [253:59] ==> value-parameter allCapturedBuilder: ParametersBuilder defined in org.jetbrains.kotlin.codegen.inline.AnonymousObjectTransformer.generateConstructorAndFields[ValueParameterDescriptorImpl]
 
 'listCaptured' @ [253:78] ==> public final fun listCaptured(): List<CapturedParamInfo> defined in org.jetbrains.kotlin.codegen.inline.ParametersBuilder[SimpleFunctionDescriptorImpl]
 
-'transformToFieldInfo' @ [254:36] ==> public fun transformToFieldInfo(lambdaType: Type, newFields: List<NewJavaField>): List<FieldInfo> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'transformToFieldInfo' @ [254:36] ==> public fun transformToFieldInfo(lambdaType: Type, newFields: List<NewJavaField>): List<FieldInfo> defined in org.jetbrains.kotlin.codegen.inline in file transformationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'getObjectType' @ [254:62] ==> public open fun getObjectType(p0: (String..String?)): (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaMethodDescriptor]
 
@@ -835,9 +829,9 @@ Inferred types:
 
 'genClosureFields' @ [302:17] ==> public open fun genClosureFields(allFields: (MutableList<(Pair<(String..String?), (Type..Type?)>..Pair<(String..String?), (Type..Type?)>?)>..List<(Pair<(String..String?), (Type..Type?)>..Pair<(String..String?), (Type..Type?)>?)>?), builder: (ClassBuilder..ClassBuilder?)): Unit defined in org.jetbrains.kotlin.codegen.AsmUtil[JavaMethodDescriptor]
 
-'toNameTypePair' @ [303:17] ==> public fun toNameTypePair(fields: List<NewJavaField>): List<Pair<String, Type>> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'toNameTypePair' @ [303:17] ==> public fun toNameTypePair(fields: List<NewJavaField>): List<Pair<String, Type>> defined in org.jetbrains.kotlin.codegen.inline in file transformationUtils.kt[SimpleFunctionDescriptorImpl]
 
-'filterSkipped' @ [303:32] ==> public fun filterSkipped(fields: List<NewJavaField>): List<NewJavaField> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'filterSkipped' @ [303:32] ==> public fun filterSkipped(fields: List<NewJavaField>): List<NewJavaField> defined in org.jetbrains.kotlin.codegen.inline in file transformationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'newFieldsWithSkipped' @ [303:46] ==> val newFieldsWithSkipped: List<NewJavaField> defined in org.jetbrains.kotlin.codegen.inline.AnonymousObjectTransformer.generateConstructorAndFields[LocalVariableDescriptor]
 
@@ -943,7 +937,7 @@ Inferred types:
 
 'constructor' @ [344:9] ==> value-parameter constructor: MethodNode defined in org.jetbrains.kotlin.codegen.inline.AnonymousObjectTransformer.extractParametersMappingAndPatchConstructor[ValueParameterDescriptorImpl]
 
-'findCapturedFieldAssignmentInstructions' @ [344:21] ==> public fun MethodNode.findCapturedFieldAssignmentInstructions(): Sequence<FieldInsnNode> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'findCapturedFieldAssignmentInstructions' @ [344:21] ==> public fun MethodNode.findCapturedFieldAssignmentInstructions(): Sequence<FieldInsnNode> defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'forEach' @ [345:17] ==> public inline fun <T> Sequence<FieldInsnNode>.forEach(action: (FieldInsnNode) -> Unit): Unit defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1060,7 +1054,7 @@ Inferred types:
 
 'constructor' @ [369:9] ==> value-parameter constructor: MethodNode defined in org.jetbrains.kotlin.codegen.inline.AnonymousObjectTransformer.extractParametersMappingAndPatchConstructor[ValueParameterDescriptorImpl]
 
-'remove' @ [369:21] ==> public fun MethodNode.remove(instructions: Collection<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'remove' @ [369:21] ==> public fun MethodNode.remove(instructions: Collection<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'toDelete' @ [369:28] ==> val toDelete: ArrayList<AbstractInsnNode> /* = ArrayList<AbstractInsnNode> */ defined in org.jetbrains.kotlin.codegen.inline.AnonymousObjectTransformer.extractParametersMappingAndPatchConstructor[LocalVariableDescriptor]
 

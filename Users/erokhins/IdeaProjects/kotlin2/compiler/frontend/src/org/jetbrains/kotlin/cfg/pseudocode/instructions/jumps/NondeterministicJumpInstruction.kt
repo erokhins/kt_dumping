@@ -9,9 +9,9 @@ Inferred types:
     <K> -> Label
     <V> -> Instruction
 
-'ArrayList' @ [38:37] ==> public final fun <E> <init>(p0: (MutableCollection<out (Label..Label?)>..Collection<(Label..Label?)>?)): ArrayList<Label> /* = ArrayList<Label> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
+'ArrayList' @ [38:37] ==> public final fun <E> <init>(p0: (MutableCollection<out (Label..Label?)>..Collection<(Label..Label?)>?)): ArrayList<(Label..Label?)> /* = ArrayList<(Label..Label?)> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> Label
+    <E> -> (org.jetbrains.kotlin.cfg.Label..org.jetbrains.kotlin.cfg.Label?)
 
 'targetLabels' @ [38:47] ==> value-parameter targetLabels: List<Label> defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.jumps.NondeterministicJumpInstruction.<init>[ValueParameterDescriptorImpl]
 
@@ -33,21 +33,21 @@ Inferred types:
 
 'value' @ [49:36] ==> value-parameter value: Instruction defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.jumps.NondeterministicJumpInstruction.<set-next>[ValueParameterDescriptorImpl]
 
-'ArrayList' @ [54:38] ==> public final fun <E> <init>(p0: (MutableCollection<out (Instruction..Instruction?)>..Collection<(Instruction..Instruction?)>?)): ArrayList<Instruction> /* = ArrayList<Instruction> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
+'ArrayList' @ [54:38] ==> public final fun <E> <init>(p0: (MutableCollection<out (Instruction..Instruction?)>..Collection<(Instruction..Instruction?)>?)): ArrayList<(Instruction..Instruction?)> /* = ArrayList<(Instruction..Instruction?)> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> Instruction
+    <E> -> (org.jetbrains.kotlin.cfg.pseudocode.instructions.Instruction..org.jetbrains.kotlin.cfg.pseudocode.instructions.Instruction?)
 
 'resolvedTargets' @ [54:48] ==> private final val resolvedTargets: Map<Label, Instruction> defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.jumps.NondeterministicJumpInstruction[PropertyDescriptorImpl]
 
 'values' @ [54:64] ==> public abstract val values: Collection<Instruction> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 
-'targetInstructions' @ [55:13] ==> val targetInstructions: ArrayList<Instruction> /* = ArrayList<Instruction> */ defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.jumps.NondeterministicJumpInstruction.<get-nextInstructions>[LocalVariableDescriptor]
+'targetInstructions' @ [55:13] ==> val targetInstructions: ArrayList<(Instruction..Instruction?)> /* = ArrayList<(Instruction..Instruction?)> */ defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.jumps.NondeterministicJumpInstruction.<get-nextInstructions>[LocalVariableDescriptor]
 
-'add' @ [55:32] ==> public open fun add(element: Instruction): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
+'add' @ [55:32] ==> public open fun add(element: (Instruction..Instruction?)): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
 'next' @ [55:36] ==> public final var next: Instruction defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.jumps.NondeterministicJumpInstruction[PropertyDescriptorImpl]
 
-'targetInstructions' @ [56:20] ==> val targetInstructions: ArrayList<Instruction> /* = ArrayList<Instruction> */ defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.jumps.NondeterministicJumpInstruction.<get-nextInstructions>[LocalVariableDescriptor]
+'targetInstructions' @ [56:20] ==> val targetInstructions: ArrayList<(Instruction..Instruction?)> /* = ArrayList<(Instruction..Instruction?)> */ defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.jumps.NondeterministicJumpInstruction.<get-nextInstructions>[LocalVariableDescriptor]
 
 'listOfNotNull' @ [60:17] ==> public fun <T : Any> listOfNotNull(element: PseudoValue?): List<PseudoValue> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

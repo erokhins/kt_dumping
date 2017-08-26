@@ -1,6 +1,6 @@
-'if (results.isSingleResult) results.resultingCall else null' @ [72:28] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: MutableResolvedCall<D>?, elseBranch: MutableResolvedCall<D>?): MutableResolvedCall<D>?[SimpleFunctionDescriptorImpl]
+'if (results.isSingleResult) results.resultingCall else null' @ [72:28] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: MutableResolvedCall<(D..D?)>?, elseBranch: MutableResolvedCall<(D..D?)>?): MutableResolvedCall<(D..D?)>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> MutableResolvedCall<D>?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> MutableResolvedCall<(D..D?)>?
 
 'results' @ [72:32] ==> value-parameter results: OverloadResolutionResultsImpl<D> defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[ValueParameterDescriptorImpl]
 
@@ -28,11 +28,11 @@ Inferred types:
 
 'trace' @ [77:71] ==> @NotNull public final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.context.BasicCallResolutionContext[JavaPropertyDescriptor]
 
-'completeResolvedCallAndArguments' @ [79:13] ==> private final fun <D : CallableDescriptor> completeResolvedCallAndArguments(resolvedCall: MutableResolvedCall<D>?, results: OverloadResolutionResultsImpl<D>, context: BasicCallResolutionContext, tracing: TracingStrategy): Unit defined in org.jetbrains.kotlin.resolve.calls.CallCompleter[SimpleFunctionDescriptorImpl]
+'completeResolvedCallAndArguments' @ [79:13] ==> private final fun <D : CallableDescriptor> completeResolvedCallAndArguments(resolvedCall: MutableResolvedCall<(D..D?)>?, results: OverloadResolutionResultsImpl<(D..D?)>, context: BasicCallResolutionContext, tracing: TracingStrategy): Unit defined in org.jetbrains.kotlin.resolve.calls.CallCompleter[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> D
+    <D : CallableDescriptor> -> (D..D?)
 
-'resolvedCall' @ [79:46] ==> val resolvedCall: MutableResolvedCall<D>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
+'resolvedCall' @ [79:46] ==> val resolvedCall: MutableResolvedCall<(D..D?)>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
 'results' @ [79:60] ==> value-parameter results: OverloadResolutionResultsImpl<D> defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[ValueParameterDescriptorImpl]
 
@@ -56,7 +56,7 @@ Inferred types:
 
 'commit' @ [83:28] ==> public open fun commit(): Unit defined in org.jetbrains.kotlin.resolve.TemporaryBindingTrace[JavaMethodDescriptor]
 
-'resolvedCall' @ [86:13] ==> val resolvedCall: MutableResolvedCall<D>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
+'resolvedCall' @ [86:13] ==> val resolvedCall: MutableResolvedCall<(D..D?)>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
 'context' @ [86:37] ==> value-parameter context: BasicCallResolutionContext defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[ValueParameterDescriptorImpl]
 
@@ -71,9 +71,9 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtExpression?
 
-'resolvedCall' @ [87:40] ==> val resolvedCall: MutableResolvedCall<D>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
+'resolvedCall' @ [87:40] ==> val resolvedCall: MutableResolvedCall<(D..D?)>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
-'resolvedCall' @ [88:17] ==> val resolvedCall: MutableResolvedCall<D>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
+'resolvedCall' @ [88:17] ==> val resolvedCall: MutableResolvedCall<(D..D?)>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
 'variableCall' @ [88:30] ==> public abstract val variableCall: ResolvedCall<VariableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.model.VariableAsFunctionResolvedCall[PropertyDescriptorImpl]
 
@@ -83,11 +83,11 @@ Inferred types:
 
 'calleeExpression' @ [88:48] ==> public final val Call.calleeExpression: KtExpression?[MyPropertyDescriptor]
 
-'resolvedCall' @ [90:17] ==> val resolvedCall: MutableResolvedCall<D>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
+'resolvedCall' @ [90:17] ==> val resolvedCall: MutableResolvedCall<(D..D?)>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
-'call' @ [90:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<D>.call: Call[MyPropertyDescriptor]
+'call' @ [90:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<(D..D?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'calleeExpression' @ [90:35] ==> public final val Call.calleeExpression: KtExpression?[MyPropertyDescriptor]
 
@@ -106,11 +106,11 @@ Inferred types:
 
 'calleeExpression' @ [92:86] ==> val calleeExpression: KtExpression? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
-'resolvedCall' @ [93:26] ==> val resolvedCall: MutableResolvedCall<D>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
+'resolvedCall' @ [93:26] ==> val resolvedCall: MutableResolvedCall<(D..D?)>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
-'call' @ [93:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<D>.call: Call[MyPropertyDescriptor]
+'call' @ [93:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<(D..D?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'callElement' @ [93:44] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -126,19 +126,19 @@ Inferred types:
 
 'check' @ [97:29] ==> public abstract fun check(resolvedCall: ResolvedCall<*>, reportOn: PsiElement, context: CallCheckerContext): Unit defined in org.jetbrains.kotlin.resolve.calls.checkers.CallChecker[SimpleFunctionDescriptorImpl]
 
-'resolvedCall' @ [97:35] ==> val resolvedCall: MutableResolvedCall<D>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
+'resolvedCall' @ [97:35] ==> val resolvedCall: MutableResolvedCall<(D..D?)>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
 'reportOn' @ [97:49] ==> val reportOn: KtElement defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
 'callCheckerContext' @ [97:59] ==> val callCheckerContext: CallCheckerContext defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
-'resolvedCall' @ [99:21] ==> val resolvedCall: MutableResolvedCall<D>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
+'resolvedCall' @ [99:21] ==> val resolvedCall: MutableResolvedCall<(D..D?)>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
 'callChecker' @ [100:21] ==> val callChecker: CallChecker defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
 'check' @ [100:33] ==> public abstract fun check(resolvedCall: ResolvedCall<*>, reportOn: PsiElement, context: CallCheckerContext): Unit defined in org.jetbrains.kotlin.resolve.calls.checkers.CallChecker[SimpleFunctionDescriptorImpl]
 
-'resolvedCall' @ [100:39] ==> val resolvedCall: MutableResolvedCall<D>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
+'resolvedCall' @ [100:39] ==> val resolvedCall: MutableResolvedCall<(D..D?)>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCall[LocalVariableDescriptor]
 
 'variableCall' @ [100:52] ==> public abstract val variableCall: ResolvedCall<VariableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.model.VariableAsFunctionResolvedCall[PropertyDescriptorImpl]
 
@@ -177,9 +177,9 @@ Inferred types:
         }
         else {
             results.resultingCalls
-        }' @ [116:27] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (MutableCollection<out (ResolvedCall<D>..ResolvedCall<D>?)>..Collection<(ResolvedCall<D>..ResolvedCall<D>?)>), elseBranch: (MutableCollection<out (ResolvedCall<D>..ResolvedCall<D>?)>..Collection<(ResolvedCall<D>..ResolvedCall<D>?)>)): (MutableCollection<out (ResolvedCall<D>..ResolvedCall<D>?)>..Collection<(ResolvedCall<D>..ResolvedCall<D>?)>)[SimpleFunctionDescriptorImpl]
+        }' @ [116:27] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (MutableCollection<out (ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>..Collection<(ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>), elseBranch: (MutableCollection<out (ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>..Collection<(ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>)): (MutableCollection<out (ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>..Collection<(ResolvedCall<(D..D?)>..ResolvedCall<(D..D?)>?)>)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<D>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<D>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<D>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<D>?)>)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(D..D?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(D..D?)>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(D..D?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(D..D?)>?)>)
 
 'context' @ [116:31] ==> value-parameter context: BasicCallResolutionContext defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeAllCandidates[ValueParameterDescriptorImpl]
 
@@ -418,8 +418,6 @@ Inferred types:
 
 'expectedReturnType' @ [182:70] ==> val expectedReturnType: KotlinType defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeConstraintSystem[LocalVariableDescriptor]
 
-'EXPECTED_TYPE_POSITION' @ [182:90] ==> enum entry EXPECTED_TYPE_POSITION defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[FakeCallableDescriptorForObject]
-
 'position' @ [182:113] ==> public final fun position(): ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[SimpleFunctionDescriptorImpl]
 
 'builder' @ [183:21] ==> value-parameter builder: ConstraintSystem.Builder defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeConstraintSystem.<anonymous>[ValueParameterDescriptorImpl]
@@ -507,8 +505,6 @@ Inferred types:
 
 'unitType' @ [206:79] ==> public final val KotlinBuiltIns.unitType: SimpleType[MyPropertyDescriptor]
 
-'EXPECTED_TYPE_POSITION' @ [206:89] ==> enum entry EXPECTED_TYPE_POSITION defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[FakeCallableDescriptorForObject]
-
 'position' @ [206:112] ==> public final fun position(): ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[SimpleFunctionDescriptorImpl]
 
 'builder' @ [207:34] ==> value-parameter builder: ConstraintSystem.Builder defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeConstraintSystem.<anonymous>[ValueParameterDescriptorImpl]
@@ -586,8 +582,6 @@ Inferred types:
 
 'type' @ [218:83] ==> public final val TypeProjection.type: KotlinType[MyPropertyDescriptor]
 
-'VALUE_PARAMETER_POSITION' @ [218:89] ==> enum entry VALUE_PARAMETER_POSITION defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[FakeCallableDescriptorForObject]
-
 'position' @ [218:114] ==> public final fun position(index: Int): ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[SimpleFunctionDescriptorImpl]
 
 'parameter' @ [218:123] ==> val parameter: (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeConstraintSystem.<anonymous>.<anonymous>[LocalVariableDescriptor]
@@ -624,7 +618,7 @@ Inferred types:
 
 'createForCallBeingAnalyzed' @ [237:70] ==> @NotNull public open fun <D : (CallableDescriptor..CallableDescriptor?)> createForCallBeingAnalyzed(@NotNull candidateCall: MutableResolvedCall<(D..D?)>, @NotNull context: BasicCallResolutionContext, @NotNull tracing: TracingStrategy): CallCandidateResolutionContext<(D..D?)> defined in org.jetbrains.kotlin.resolve.calls.context.CallCandidateResolutionContext[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> D
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (D..D?)
 
 'this' @ [237:97] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.updateResolutionStatusFromConstraintSystem[ReceiverParameterDescriptorImpl]
 
@@ -891,13 +885,13 @@ Inferred types:
 
 'isSingleResult' @ [306:40] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResultsImpl<out (CallableDescriptor..CallableDescriptor?)>.isSingleResult: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'results' @ [307:32] ==> val results: OverloadResolutionResultsImpl<*>? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeOneArgument[LocalVariableDescriptor]
 
 'resultingCall' @ [307:40] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResultsImpl<out (CallableDescriptor..CallableDescriptor?)>.resultingCall: MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'updatedType' @ [308:13] ==> var updatedType: KotlinType? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeOneArgument[LocalVariableDescriptor]
 
@@ -914,13 +908,13 @@ Inferred types:
 
 'resolvedCall' @ [309:17] ==> val resolvedCall: MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeOneArgument[LocalVariableDescriptor]
 
-'makeNullableTypeIfSafeReceiver' @ [309:30] ==> public fun ResolvedCall<*>.makeNullableTypeIfSafeReceiver(type: KotlinType?, context: CallResolutionContext<*>): KotlinType? defined in org.jetbrains.kotlin.resolve.calls.resolvedCallUtil[SimpleFunctionDescriptorImpl]
+'makeNullableTypeIfSafeReceiver' @ [309:30] ==> public fun ResolvedCall<*>.makeNullableTypeIfSafeReceiver(type: KotlinType?, context: CallResolutionContext<*>): KotlinType? defined in org.jetbrains.kotlin.resolve.calls.resolvedCallUtil in file resolvedCallUtil.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [309:61] ==> val resolvedCall: MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeOneArgument[LocalVariableDescriptor]
 
 'resultingDescriptor' @ [309:74] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'returnType' @ [309:95] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -1060,7 +1054,7 @@ Inferred types:
 
 'completeCall' @ [348:16] ==> public final fun <D : CallableDescriptor> completeCall(context: BasicCallResolutionContext, results: OverloadResolutionResultsImpl<out (CallableDescriptor..CallableDescriptor?)>, tracing: TracingStrategy): OverloadResolutionResultsImpl<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.CallCompleter[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'contextForArgument' @ [348:29] ==> val contextForArgument: BasicCallResolutionContext defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.completeCallForArgument[LocalVariableDescriptor]
 
@@ -1096,7 +1090,7 @@ Inferred types:
 
 'statementFilter' @ [367:24] ==> value-parameter statementFilter: StatementFilter defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.updateRecordedTypeForArgument[ValueParameterDescriptorImpl]
 
-'getLastStatementInABlock' @ [367:40] ==> public fun StatementFilter.getLastStatementInABlock(block: KtBlockExpression): KtExpression? defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'getLastStatementInABlock' @ [367:40] ==> public fun StatementFilter.getLastStatementInABlock(block: KtBlockExpression): KtExpression? defined in org.jetbrains.kotlin.resolve in file StatementFilter.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [367:65] ==> value-parameter expression: KtExpression? defined in org.jetbrains.kotlin.resolve.calls.CallCompleter.updateRecordedTypeForArgument.deparenthesizeOrGetSelector[ValueParameterDescriptorImpl]
 

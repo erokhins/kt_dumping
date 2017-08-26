@@ -79,6 +79,8 @@ Inferred types:
 
 'Companion' @ [66:119] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
+'parse' @ [66:130] ==> public final fun parse(versionString: String): ApiVersion? defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedSimpleFunctionDescriptor]
+
 'loadAnnotationValue' @ [68:22] ==> local final fun DeclarationDescriptor.loadAnnotationValue(): ApiVersion? defined in org.jetbrains.kotlin.resolve.getOwnSinceKotlinVersion[SimpleFunctionDescriptorImpl]
 
 'this' @ [69:22] ==> <this> defined in org.jetbrains.kotlin.resolve.getOwnSinceKotlinVersion[ReceiverParameterDescriptorImpl]

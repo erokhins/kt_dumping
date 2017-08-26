@@ -18,8 +18,6 @@ Inferred types:
 
 'toLong' @ [38:57] ==> public open fun toLong(): Long defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
 
-'Byte' @ [38:67] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [38:72] ==> public const final val MAX_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
 'toLong' @ [38:82] ==> public open fun toLong(): Long defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
@@ -38,8 +36,6 @@ Inferred types:
 'MIN_VALUE' @ [39:49] ==> public const final val MIN_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
 'toLong' @ [39:59] ==> public open fun toLong(): Long defined in kotlin.Short[DeserializedSimpleFunctionDescriptor]
-
-'Short' @ [39:69] ==> public companion object defined in kotlin.Short[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [39:75] ==> public const final val MAX_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
@@ -60,8 +56,6 @@ Inferred types:
 
 'toLong' @ [40:55] ==> public open fun toLong(): Long defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'Int' @ [40:65] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [40:69] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'toLong' @ [40:79] ==> public open fun toLong(): Long defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
@@ -78,8 +72,6 @@ Inferred types:
 'Long' @ [41:42] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
 'MIN_VALUE' @ [41:47] ==> public const final val MIN_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
-
-'Long' @ [41:58] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [41:63] ==> public const final val MAX_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 
@@ -115,8 +107,6 @@ Inferred types:
 'languageVersionSettings' @ [51:45] ==> public val KtElement.languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[DeserializedPropertyDescriptor]
 
 'supportsFeature' @ [51:69] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [51:85] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'InlineConstVals' @ [51:101] ==> enum entry InlineConstVals defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -259,8 +249,6 @@ Inferred types:
 'MIN_VALUE' @ [88:32] ==> public const final val MIN_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 
 'toDouble' @ [88:42] ==> public open fun toDouble(): Double defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
-
-'Long' @ [88:54] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [88:59] ==> public const final val MAX_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 

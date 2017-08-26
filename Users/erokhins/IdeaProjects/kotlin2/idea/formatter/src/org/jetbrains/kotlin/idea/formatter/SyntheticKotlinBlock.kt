@@ -132,11 +132,11 @@ Inferred types:
 
 'java' @ [81:28] ==> public val <T> KClass<out SyntheticKotlinBlock>.java: Class<out SyntheticKotlinBlock> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> SyntheticKotlinBlock
+    <T> -> Captured(out SyntheticKotlinBlock)
 
 'name' @ [81:33] ==> public final val <T : (Any..Any?)> Class<out SyntheticKotlinBlock>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SyntheticKotlinBlock
+    <T : (Any..Any?)> -> Captured(out SyntheticKotlinBlock)
 
 'textRange' @ [81:47] ==> val textRange: TextRange defined in org.jetbrains.kotlin.idea.formatter.SyntheticKotlinBlock.toString[LocalVariableDescriptor]
 

@@ -58,7 +58,7 @@
 
 'getData' @ [49:22] ==> @Nullable public open fun <T : (Any..Any?)> getData(@NotNull p0: DataKey<(PsiFile..PsiFile?)>): PsiFile? defined in com.intellij.openapi.actionSystem.AnActionEvent[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiFile
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiFile..com.intellij.psi.PsiFile?)
 
 'PSI_FILE' @ [49:45] ==> public final val PSI_FILE: (DataKey<(PsiFile..PsiFile?)>..DataKey<(PsiFile..PsiFile?)>?) defined in com.intellij.openapi.actionSystem.CommonDataKeys[JavaPropertyDescriptor]
 

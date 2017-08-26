@@ -40,8 +40,6 @@
 
 'DEFAULT_KOTLIN_JS_STDLIB_NAME' @ [61:46] ==> private final val DEFAULT_KOTLIN_JS_STDLIB_NAME: String defined in org.jetbrains.kotlin.idea.test.ConfigLibraryUtil[PropertyDescriptorImpl]
 
-'PathUtil' @ [62:46] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'kotlinPathsForDistDirectory' @ [62:55] ==> @JvmStatic public final val kotlinPathsForDistDirectory: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'jsStdLibJarPath' @ [62:83] ==> public final val KotlinPaths.jsStdLibJarPath: File[MyPropertyDescriptor]
@@ -56,8 +54,6 @@
 
 'DEFAULT_JAVA_RUNTIME_LIB_NAME' @ [67:46] ==> private final val DEFAULT_JAVA_RUNTIME_LIB_NAME: String defined in org.jetbrains.kotlin.idea.test.ConfigLibraryUtil[PropertyDescriptorImpl]
 
-'PathUtil' @ [67:77] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'kotlinPathsForDistDirectory' @ [67:86] ==> @JvmStatic public final val kotlinPathsForDistDirectory: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'stdlibPath' @ [67:114] ==> public final val KotlinPaths.stdlibPath: File[MyPropertyDescriptor]
@@ -69,8 +65,6 @@
 'getKotlinRuntimeLibEditor' @ [68:20] ==> private final fun getKotlinRuntimeLibEditor(libName: String, library: File): NewLibraryEditor defined in org.jetbrains.kotlin.idea.test.ConfigLibraryUtil[SimpleFunctionDescriptorImpl]
 
 'DEFAULT_KOTLIN_TEST_LIB_NAME' @ [68:46] ==> private final val DEFAULT_KOTLIN_TEST_LIB_NAME: String defined in org.jetbrains.kotlin.idea.test.ConfigLibraryUtil[PropertyDescriptorImpl]
-
-'PathUtil' @ [68:76] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'kotlinPathsForDistDirectory' @ [68:85] ==> @JvmStatic public final val kotlinPathsForDistDirectory: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 

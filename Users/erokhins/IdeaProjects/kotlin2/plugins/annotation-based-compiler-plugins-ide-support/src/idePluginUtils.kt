@@ -63,8 +63,6 @@ Inferred types:
 
 'compilerArguments' @ [46:41] ==> public final var compilerArguments: CommonCompilerArguments? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
 
-'CommonCompilerArguments' @ [46:62] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
-
 'DummyImpl' @ [46:86] ==> public constructor DummyImpl() defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.DummyImpl[DeserializedClassConstructorDescriptor]
 
 'setup' @ [49:29] ==> value-parameter setup: AnnotationBasedCompilerPluginSetup? defined in org.jetbrains.kotlin.annotation.plugin.ide.modifyCompilerArgumentsForPlugin[ValueParameterDescriptorImpl]

@@ -74,8 +74,6 @@ Inferred types:
 
 'file' @ [56:32] ==> val file: KtFile defined in org.jetbrains.kotlin.psi.patternMatching.AbstractPsiUnifierTest.doTest[LocalVariableDescriptor]
 
-'KotlinPsiUnifier' @ [56:38] ==> public companion object defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [56:55] ==> public final val DEFAULT: KotlinPsiUnifier defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Companion[DeserializedPropertyDescriptor]
 
 'map' @ [57:26] ==> public inline fun <T, R> Iterable<UnificationResult.Matched>.map(transform: (UnificationResult.Matched) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]

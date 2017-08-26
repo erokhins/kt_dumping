@@ -59,7 +59,7 @@ Inferred types:
 
 'java' @ [61:53] ==> public val <T> KClass<out IReplStageState<T>>.java: Class<out IReplStageState<T>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IReplStageState<T>
+    <T> -> Captured(out IReplStageState<T>)
 
 'this' @ [61:60] ==> <this> defined in org.jetbrains.kotlin.cli.common.repl.IReplStageState[LazyClassReceiverParameterDescriptor]
 

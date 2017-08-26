@@ -80,7 +80,7 @@ Inferred types:
 
 'putUserData' @ [85:21] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'UNRESOLVED_KEY' @ [85:33] ==> private final val UNRESOLVED_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.highlighter.KotlinPsiChecker.Companion[PropertyDescriptorImpl]
 
@@ -144,7 +144,7 @@ Inferred types:
 
 'bindingContext' @ [100:53] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.highlighter.KotlinPsiChecker.Companion.getAfterAnalysisVisitor[ValueParameterDescriptorImpl]
 
-'createQuickFixes' @ [104:17] ==> private fun createQuickFixes(similarDiagnostics: Collection<Diagnostic>): MultiMap<Diagnostic, IntentionAction> defined in org.jetbrains.kotlin.idea.highlighter[SimpleFunctionDescriptorImpl]
+'createQuickFixes' @ [104:17] ==> private fun createQuickFixes(similarDiagnostics: Collection<Diagnostic>): MultiMap<Diagnostic, IntentionAction> defined in org.jetbrains.kotlin.idea.highlighter in file KotlinPsiChecker.kt[SimpleFunctionDescriptorImpl]
 
 'listOfNotNull' @ [104:34] ==> public fun <T : Any> listOfNotNull(element: Diagnostic?): List<Diagnostic> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -162,7 +162,7 @@ Inferred types:
 
 'getUserData' @ [108:73] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Unit..Unit?)>): Unit? defined in org.jetbrains.kotlin.psi.KtNameReferenceExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'UNRESOLVED_KEY' @ [108:85] ==> private final val UNRESOLVED_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.highlighter.KotlinPsiChecker.Companion[PropertyDescriptorImpl]
 
@@ -253,8 +253,6 @@ Inferred types:
 
 'diagnostic' @ [132:27] ==> val diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.highlighter.createQuickFixes[LocalVariableDescriptor]
 
-'QuickFixes' @ [132:39] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.QuickFixes[FakeCallableDescriptorForObject]
-
 'getInstance' @ [132:50] ==> public final fun getInstance(): QuickFixes defined in org.jetbrains.kotlin.idea.quickfix.QuickFixes.Companion[SimpleFunctionDescriptorImpl]
 
 'getActions' @ [132:64] ==> public final fun getActions(diagnosticFactory: DiagnosticFactory<*>): Collection<IntentionAction> defined in org.jetbrains.kotlin.idea.quickfix.QuickFixes[SimpleFunctionDescriptorImpl]
@@ -277,9 +275,9 @@ Inferred types:
 
 'it' @ [135:70] ==> value-parameter it: (IntentionAction..IntentionAction?) defined in org.jetbrains.kotlin.idea.highlighter.createQuickFixes.<anonymous>[ValueParameterDescriptorImpl]
 
-'java' @ [135:80] ==> public val <T> KClass<out IntentionAction>.java: Class<out IntentionAction> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [135:80] ==> public val <T> KClass<out (IntentionAction..IntentionAction?)>.java: Class<out (IntentionAction..IntentionAction?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IntentionAction
+    <T> -> Captured(out (com.intellij.codeInsight.intention.IntentionAction..com.intellij.codeInsight.intention.IntentionAction?))
 
 'actions' @ [137:12] ==> val actions: MultiMap<Diagnostic, IntentionAction> defined in org.jetbrains.kotlin.idea.highlighter.createQuickFixes[LocalVariableDescriptor]
 
@@ -293,7 +291,7 @@ Inferred types:
 
 'synchronizedSet' @ [143:54] ==> public open fun <T : (Any..Any?)> synchronizedSet(p0: (MutableSet<(Class<*>..Class<*>?)>..Set<(Class<*>..Class<*>?)>?)): (MutableSet<(Class<*>..Class<*>?)>..Set<(Class<*>..Class<*>?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Class<*>
+    <T : (Any..Any?)> -> (java.lang.Class<*>..java.lang.Class<*>?)
 
 'HashSet' @ [143:70] ==> public constructor HashSet<E : (Any..Any?)>() defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
@@ -311,7 +309,7 @@ Inferred types:
 
 'declaredFields' @ [148:37] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'checkType' @ [149:13] ==> private final fun checkType(type: Type, field: Field): Unit defined in org.jetbrains.kotlin.idea.highlighter.NoDeclarationDescriptorsChecker[SimpleFunctionDescriptorImpl]
 
@@ -323,18 +321,18 @@ Inferred types:
 
 'quickFixClass' @ [152:9] ==> value-parameter quickFixClass: Class<*> defined in org.jetbrains.kotlin.idea.highlighter.NoDeclarationDescriptorsChecker.check[ValueParameterDescriptorImpl]
 
-'superclass' @ [152:23] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [152:23] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'let' @ [152:35] ==> @InlineOnly public inline fun <T, R> Class<out (Any..Any?)>.let(block: (Class<out (Any..Any?)>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [152:35] ==> @InlineOnly public inline fun <T, R> Class<out Any?>.let(block: (Class<out Any?>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <T> -> Class<out Any?>
     <R> -> Unit
 
 'check' @ [152:41] ==> public final fun check(quickFixClass: Class<*>): Unit defined in org.jetbrains.kotlin.idea.highlighter.NoDeclarationDescriptorsChecker[SimpleFunctionDescriptorImpl]
 
-'it' @ [152:47] ==> value-parameter it: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.idea.highlighter.NoDeclarationDescriptorsChecker.check.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [152:47] ==> value-parameter it: Class<out Any?> defined in org.jetbrains.kotlin.idea.highlighter.NoDeclarationDescriptorsChecker.check.<anonymous>[ValueParameterDescriptorImpl]
 
 'when (type) {
             is Class<*> -> {
@@ -395,7 +393,7 @@ Inferred types:
 
 'name' @ [159:70] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'field' @ [159:93] ==> value-parameter field: Field defined in org.jetbrains.kotlin.idea.highlighter.NoDeclarationDescriptorsChecker.checkType[ValueParameterDescriptorImpl]
 
@@ -405,7 +403,7 @@ Inferred types:
 
 'simpleName' @ [159:123] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'java' @ [164:44] ==> public val <T> KClass<IntentionAction>.java: Class<IntentionAction> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -467,23 +465,23 @@ Inferred types:
 
 'diagnostics' @ [187:9] ==> value-parameter diagnostics: Collection<Diagnostic> defined in org.jetbrains.kotlin.idea.highlighter.ElementAnnotator.registerDiagnosticsAnnotations[ValueParameterDescriptorImpl]
 
-'groupBy' @ [187:21] ==> public inline fun <T, K> Iterable<Diagnostic>.groupBy(keySelector: (Diagnostic) -> DiagnosticFactory<out (Diagnostic..Diagnostic?)>): Map<DiagnosticFactory<out (Diagnostic..Diagnostic?)>, List<Diagnostic>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'groupBy' @ [187:21] ==> public inline fun <T, K> Iterable<Diagnostic>.groupBy(keySelector: (Diagnostic) -> DiagnosticFactory<*>): Map<DiagnosticFactory<*>, List<Diagnostic>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Diagnostic
-    <K> -> DiagnosticFactory<out (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)>
+    <K> -> DiagnosticFactory<*>
 
 'it' @ [187:31] ==> value-parameter it: Diagnostic defined in org.jetbrains.kotlin.idea.highlighter.ElementAnnotator.registerDiagnosticsAnnotations.<anonymous>[ValueParameterDescriptorImpl]
 
 'factory' @ [187:34] ==> public final val Diagnostic.factory: DiagnosticFactory<*>[MyPropertyDescriptor]
 
-'forEach' @ [187:44] ==> @HidesMembers public inline fun <K, V> Map<out DiagnosticFactory<out (Diagnostic..Diagnostic?)>, List<Diagnostic>>.forEach(action: (Map.Entry<DiagnosticFactory<out (Diagnostic..Diagnostic?)>, List<Diagnostic>>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [187:44] ==> @HidesMembers public inline fun <K, V> Map<out DiagnosticFactory<*>, List<Diagnostic>>.forEach(action: (Map.Entry<DiagnosticFactory<*>, List<Diagnostic>>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> DiagnosticFactory<out (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)>
+    <K> -> DiagnosticFactory<*>
     <V> -> List<Diagnostic>
 
 'registerDiagnosticAnnotations' @ [187:63] ==> private final fun registerDiagnosticAnnotations(diagnostics: List<Diagnostic>): Unit defined in org.jetbrains.kotlin.idea.highlighter.ElementAnnotator[SimpleFunctionDescriptorImpl]
 
-'group' @ [187:93] ==> value-parameter group: Map.Entry<DiagnosticFactory<out (Diagnostic..Diagnostic?)>, List<Diagnostic>> defined in org.jetbrains.kotlin.idea.highlighter.ElementAnnotator.registerDiagnosticsAnnotations.<anonymous>[ValueParameterDescriptorImpl]
+'group' @ [187:93] ==> value-parameter group: Map.Entry<DiagnosticFactory<*>, List<Diagnostic>> defined in org.jetbrains.kotlin.idea.highlighter.ElementAnnotator.registerDiagnosticsAnnotations.<anonymous>[ValueParameterDescriptorImpl]
 
 'value' @ [187:99] ==> public abstract val value: List<Diagnostic> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
@@ -602,7 +600,7 @@ Inferred types:
 
 'severity' @ [203:74] ==> public final val <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.severity: Severity[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'ERROR' @ [204:22] ==> enum entry ERROR defined in org.jetbrains.kotlin.diagnostics.Severity[FakeCallableDescriptorForObject]
 
@@ -639,9 +637,9 @@ Inferred types:
 
 'factory' @ [205:23] ==> val factory: DiagnosticFactory<*> defined in org.jetbrains.kotlin.idea.highlighter.ElementAnnotator.registerDiagnosticAnnotations[LocalVariableDescriptor]
 
-'in' @ [206:21] ==> public operator fun <@OnlyInputTypes T> Iterable<(DiagnosticFactory<out Diagnostic>..DiagnosticFactory<out Diagnostic>?)>.contains(element: (DiagnosticFactory<out Diagnostic>..DiagnosticFactory<out Diagnostic>?)): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [206:21] ==> public operator fun <@OnlyInputTypes T> Iterable<(DiagnosticFactory<*>..DiagnosticFactory<*>?)>.contains(element: (DiagnosticFactory<*>..DiagnosticFactory<*>?)): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory<out org.jetbrains.kotlin.diagnostics.Diagnostic>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory<out org.jetbrains.kotlin.diagnostics.Diagnostic>?)
+    <@OnlyInputTypes T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>?)
 
 'UNRESOLVED_REFERENCE_DIAGNOSTICS' @ [206:31] ==> public final val UNRESOLVED_REFERENCE_DIAGNOSTICS: (ImmutableSet<out (DiagnosticFactory<*>..DiagnosticFactory<*>?)>..ImmutableSet<out (DiagnosticFactory<*>..DiagnosticFactory<*>?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
@@ -774,9 +772,9 @@ Inferred types:
 
 'factory' @ [246:47] ==> val factory: DiagnosticFactory<*> defined in org.jetbrains.kotlin.idea.highlighter.ElementAnnotator.registerDiagnosticAnnotations[LocalVariableDescriptor]
 
-'in' @ [247:29] ==> public operator fun <@OnlyInputTypes T> Iterable<(DiagnosticFactory<out Diagnostic>..DiagnosticFactory<out Diagnostic>?)>.contains(element: (DiagnosticFactory<out Diagnostic>..DiagnosticFactory<out Diagnostic>?)): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [247:29] ==> public operator fun <@OnlyInputTypes T> Iterable<(DiagnosticFactory<*>..DiagnosticFactory<*>?)>.contains(element: (DiagnosticFactory<*>..DiagnosticFactory<*>?)): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory<out org.jetbrains.kotlin.diagnostics.Diagnostic>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory<out org.jetbrains.kotlin.diagnostics.Diagnostic>?)
+    <@OnlyInputTypes T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>?)
 
 'UNUSED_ELEMENT_DIAGNOSTICS' @ [247:39] ==> public final val UNUSED_ELEMENT_DIAGNOSTICS: (ImmutableSet<out (DiagnosticFactory<*>..DiagnosticFactory<*>?)>..ImmutableSet<out (DiagnosticFactory<*>..DiagnosticFactory<*>?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
@@ -800,7 +798,7 @@ Inferred types:
 
 'presentationInfo' @ [256:39] ==> val presentationInfo: AnnotationPresentationInfo defined in org.jetbrains.kotlin.idea.highlighter.ElementAnnotator.registerDiagnosticAnnotations[LocalVariableDescriptor]
 
-'createQuickFixes' @ [261:13] ==> private fun createQuickFixes(similarDiagnostics: Collection<Diagnostic>): MultiMap<Diagnostic, IntentionAction> defined in org.jetbrains.kotlin.idea.highlighter[SimpleFunctionDescriptorImpl]
+'createQuickFixes' @ [261:13] ==> private fun createQuickFixes(similarDiagnostics: Collection<Diagnostic>): MultiMap<Diagnostic, IntentionAction> defined in org.jetbrains.kotlin.idea.highlighter in file KotlinPsiChecker.kt[SimpleFunctionDescriptorImpl]
 
 'diagnostics' @ [261:30] ==> value-parameter diagnostics: List<Diagnostic> defined in org.jetbrains.kotlin.idea.highlighter.ElementAnnotator.setUpAnnotations[ValueParameterDescriptorImpl]
 
@@ -883,7 +881,7 @@ Inferred types:
 
 'name' @ [283:88] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'getInstance' @ [291:26] ==> @NotNull public open fun getInstance(@NotNull p0: raw (Class<(Any..Any?)>..Class<*>)): Logger defined in com.intellij.openapi.diagnostic.Logger[JavaMethodDescriptor]
 
@@ -1013,7 +1011,7 @@ Inferred types:
 
 'name' @ [334:50] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'message' @ [335:13] ==> var message: String defined in org.jetbrains.kotlin.idea.highlighter.AnnotationPresentationInfo.getMessage[LocalVariableDescriptor]
 
@@ -1074,7 +1072,7 @@ Inferred types:
 
 'name' @ [351:43] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'message' @ [351:51] ==> val message: String defined in org.jetbrains.kotlin.idea.highlighter.AnnotationPresentationInfo.getDefaultMessage[LocalVariableDescriptor]
 

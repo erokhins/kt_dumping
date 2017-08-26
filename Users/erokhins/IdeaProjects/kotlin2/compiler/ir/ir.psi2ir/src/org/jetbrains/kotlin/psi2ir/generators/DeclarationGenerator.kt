@@ -179,7 +179,7 @@ Inferred types:
 
 'typeParameterDescriptor' @ [84:107] ==> value-parameter typeParameterDescriptor: TypeParameterDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.DeclarationGenerator.generateTypeParameterDeclarations.<anonymous>[ValueParameterDescriptorImpl]
 
-'createBodyGenerator' @ [89:13] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [89:13] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'scopeOwnerSymbol' @ [89:33] ==> value-parameter scopeOwnerSymbol: IrSymbol defined in org.jetbrains.kotlin.psi2ir.generators.DeclarationGenerator.generateInitializerBody[ValueParameterDescriptorImpl]
 

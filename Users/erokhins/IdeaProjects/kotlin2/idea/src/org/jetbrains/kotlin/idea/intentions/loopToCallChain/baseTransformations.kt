@@ -103,6 +103,8 @@ Inferred types:
 
 'suggestNameByName' @ [71:50] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
+'isUniqueName' @ [71:78] ==> local final fun isUniqueName(name: String): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.AssignToVariableResultTransformation.generateExpressionToReplaceLoopAndCheckErrors[SimpleFunctionDescriptorImpl]
+
 'initializationStatement' @ [73:24] ==> val initializationStatement: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.AssignToVariableResultTransformation.generateExpressionToReplaceLoopAndCheckErrors[LocalVariableDescriptor]
 
 'copied' @ [73:48] ==> public fun <T : PsiElement> KtVariableDeclaration.copied(): KtVariableDeclaration defined in org.jetbrains.kotlin.idea.core[DeserializedSimpleFunctionDescriptor]

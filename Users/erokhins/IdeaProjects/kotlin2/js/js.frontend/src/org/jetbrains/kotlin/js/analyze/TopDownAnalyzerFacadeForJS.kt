@@ -14,8 +14,6 @@
 
 'moduleId' @ [43:73] ==> public final val JsConfig.moduleId: String[MyPropertyDescriptor]
 
-'JsPlatform' @ [43:87] ==> public object JsPlatform : TargetPlatform defined in org.jetbrains.kotlin.js.resolve in file JsPlatform.kt[FakeCallableDescriptorForObject]
-
 'builtIns' @ [43:98] ==> public final val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.js.resolve.JsPlatform[PropertyDescriptorImpl]
 
 'config' @ [47:29] ==> value-parameter config: JsConfig defined in org.jetbrains.kotlin.js.analyze.TopDownAnalyzerFacadeForJS.analyzeFiles[ValueParameterDescriptorImpl]
@@ -24,9 +22,7 @@
 
 'get' @ [47:50] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(LookupTracker..LookupTracker?)>): LookupTracker? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LookupTracker
-
-'CommonConfigurationKeys' @ [47:54] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.incremental.components.LookupTracker..org.jetbrains.kotlin.incremental.components.LookupTracker?)
 
 'LOOKUP_TRACKER' @ [47:78] ==> @field:JvmField public final val LOOKUP_TRACKER: CompilerConfigurationKey<(LookupTracker..LookupTracker?)> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -36,9 +32,7 @@ Inferred types:
 
 'put' @ [48:30] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(LookupTracker..LookupTracker?)>, @NotNull p1: LookupTracker): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LookupTracker
-
-'CommonConfigurationKeys' @ [48:34] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.incremental.components.LookupTracker..org.jetbrains.kotlin.incremental.components.LookupTracker?)
 
 'LOOKUP_TRACKER' @ [48:58] ==> @field:JvmField public final val LOOKUP_TRACKER: CompilerConfigurationKey<(LookupTracker..LookupTracker?)> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -75,8 +69,6 @@ Inferred types:
 Inferred types:
     <T> -> ModuleDescriptorImpl
 
-'JsPlatform' @ [52:24] ==> public object JsPlatform : TargetPlatform defined in org.jetbrains.kotlin.js.resolve in file JsPlatform.kt[FakeCallableDescriptorForObject]
-
 'builtIns' @ [52:35] ==> public final val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.js.resolve.JsPlatform[PropertyDescriptorImpl]
 
 'builtInsModule' @ [52:44] ==> public final var KotlinBuiltIns.builtInsModule: ModuleDescriptorImpl[MyPropertyDescriptor]
@@ -111,9 +103,7 @@ Inferred types:
 
 'put' @ [55:51] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(LookupTracker..LookupTracker?)>, @NotNull p1: LookupTracker): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LookupTracker
-
-'CommonConfigurationKeys' @ [55:55] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.incremental.components.LookupTracker..org.jetbrains.kotlin.incremental.components.LookupTracker?)
 
 'LOOKUP_TRACKER' @ [55:79] ==> @field:JvmField public final val LOOKUP_TRACKER: CompilerConfigurationKey<(LookupTracker..LookupTracker?)> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -125,8 +115,8 @@ Inferred types:
 
 'record' @ [58:15] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(ModuleDescriptor..ModuleDescriptor?), (ModuleKind..ModuleKind?)>..WritableSlice<(ModuleDescriptor..ModuleDescriptor?), (ModuleKind..ModuleKind?)>?), p1: (ModuleDescriptor..ModuleDescriptor?), p2: (ModuleKind..ModuleKind?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTraceContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ModuleDescriptor
-    <V : (Any..Any?)> -> ModuleKind
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ModuleDescriptor..org.jetbrains.kotlin.descriptors.ModuleDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.js.ModuleKind..org.jetbrains.kotlin.serialization.js.ModuleKind?)
 
 'MODULE_KIND' @ [58:22] ==> @JvmField public val MODULE_KIND: BasicWritableSlice<ModuleDescriptor, ModuleKind> defined in org.jetbrains.kotlin.js.resolve in file bindingContextSlicesJs.kt[PropertyDescriptorImpl]
 
@@ -156,9 +146,7 @@ Inferred types:
 
 'get' @ [69:50] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(LookupTracker..LookupTracker?)>): LookupTracker? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LookupTracker
-
-'CommonConfigurationKeys' @ [69:54] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.incremental.components.LookupTracker..org.jetbrains.kotlin.incremental.components.LookupTracker?)
 
 'LOOKUP_TRACKER' @ [69:78] ==> @field:JvmField public final val LOOKUP_TRACKER: CompilerConfigurationKey<(LookupTracker..LookupTracker?)> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 

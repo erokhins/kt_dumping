@@ -4,19 +4,17 @@ Inferred types:
 
 'ReplaceGetOrSetIntention' @ [45:9] ==> public constructor ReplaceGetOrSetIntention() defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceGetOrSetIntention[ClassConstructorDescriptorImpl]
 
-'ReplaceGetOrSetInspection' @ [45:42] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceGetOrSetInspection[FakeCallableDescriptorForObject]
-
 'additionalChecker' @ [45:68] ==> public final val additionalChecker: (KtDotQualifiedExpression) -> Boolean defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceGetOrSetInspection.Companion[PropertyDescriptorImpl]
 
 'expression' @ [50:14] ==> value-parameter expression: KtDotQualifiedExpression defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceGetOrSetInspection.Companion.additionalChecker.<anonymous>[ValueParameterDescriptorImpl]
 
-'toResolvedCall' @ [50:25] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'toResolvedCall' @ [50:25] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'PARTIAL' @ [50:56] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
 'resultingDescriptor' @ [50:67] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'isExplicitOperator' @ [50:110] ==> private fun FunctionDescriptor.isExplicitOperator(): Boolean defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls in file ReplaceGetOrSetIntention.kt[SimpleFunctionDescriptorImpl]
 
@@ -59,11 +57,7 @@ Inferred types:
 Inferred types:
     <T> -> Name
 
-'OperatorNameConventions' @ [67:39] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'GET' @ [67:63] ==> @field:JvmField public final val GET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
-
-'OperatorNameConventions' @ [67:68] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'SET' @ [67:92] ==> @field:JvmField public final val SET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -93,7 +87,7 @@ Inferred types:
 
 'resultingDescriptor' @ [75:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 '!' @ [76:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -139,8 +133,6 @@ Inferred types:
 
 'name' @ [86:20] ==> public final val FunctionDescriptor.name: Name[MyPropertyDescriptor]
 
-'OperatorNameConventions' @ [86:28] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'SET' @ [86:52] ==> @field:JvmField public final val SET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'element' @ [86:59] ==> value-parameter element: KtDotQualifiedExpression defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceGetOrSetIntention.applicabilityRange[ValueParameterDescriptorImpl]
@@ -165,17 +157,15 @@ Inferred types:
 
 'element' @ [94:21] ==> value-parameter element: KtDotQualifiedExpression defined in org.jetbrains.kotlin.idea.intentions.conventionNameCalls.ReplaceGetOrSetIntention.applyTo[ValueParameterDescriptorImpl]
 
-'toResolvedCall' @ [94:29] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'toResolvedCall' @ [94:29] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'PARTIAL' @ [94:60] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
 'resultingDescriptor' @ [94:71] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'name' @ [94:91] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
-
-'OperatorNameConventions' @ [94:99] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'SET' @ [94:123] ==> @field:JvmField public final val SET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 

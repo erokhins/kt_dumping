@@ -756,8 +756,6 @@ Inferred types:
 
 'copy' @ [276:78] ==> public final fun copy(inTempFile: Boolean = ..., target: ExtractionTarget = ..., dummyName: String? = ..., allowExpressionBody: Boolean = ..., delayInitialOccurrenceReplacement: Boolean = ...): ExtractionGeneratorOptions defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorOptions[SimpleFunctionDescriptorImpl]
 
-'ExtractionTarget' @ [277:46] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
-
 'FAKE_LAMBDALIKE_FUNCTION' @ [277:63] ==> enum entry FAKE_LAMBDALIKE_FUNCTION defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
 'with' @ [280:29] ==> @InlineOnly public inline fun <T, R> with(receiver: ExtractionResult, block: ExtractionResult.() -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -826,7 +824,7 @@ Inferred types:
 
 'newReplacer' @ [289:33] ==> var newReplacer: IntroduceParameterDescriptor.(KotlinPsiRange) -> Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterDialog.performRefactoring.<no name provided>.performRefactoring[LocalVariableDescriptor]
 
-'processDuplicates' @ [291:33] ==> public fun processDuplicates(duplicateReplacers: Map<KotlinPsiRange, () -> Unit>, project: Project, editor: Editor, scopeDescription: String = ..., usageDescription: String = ...): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'processDuplicates' @ [291:33] ==> public fun processDuplicates(duplicateReplacers: Map<KotlinPsiRange, () -> Unit>, project: Project, editor: Editor, scopeDescription: String = ..., usageDescription: String = ...): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file duplicateUtil.kt[SimpleFunctionDescriptorImpl]
 
 'duplicateReplacers' @ [291:51] ==> public final val duplicateReplacers: Map<KotlinPsiRange, () -> Unit> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionResult[PropertyDescriptorImpl]
 
@@ -848,10 +846,10 @@ Inferred types:
 
 'isSelected' @ [299:75] ==> public final var JCheckBox.isSelected: Boolean[MyPropertyDescriptor]
 
-'with' @ [300:56] ==> @InlineOnly public inline fun <T, R> with(receiver: IntroduceParameterDescriptor, block: IntroduceParameterDescriptor.() -> List<KotlinPsiRange>): List<KotlinPsiRange> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [300:56] ==> @InlineOnly public inline fun <T, R> with(receiver: IntroduceParameterDescriptor, block: IntroduceParameterDescriptor.() -> (List<KotlinPsiRange>..List<KotlinPsiRange>?)): (List<KotlinPsiRange>..List<KotlinPsiRange>?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> IntroduceParameterDescriptor
-    <R> -> List<KotlinPsiRange>
+    <R> -> (kotlin.collections.List<org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange>..kotlin.collections.List<org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange>?)
 
 'descriptor' @ [300:61] ==> public final val descriptor: IntroduceParameterDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterDialog[PropertyDescriptorImpl]
 
@@ -860,9 +858,9 @@ Inferred types:
                                     }
                                     else {
                                         Collections.singletonList(originalOccurrence)
-                                    }' @ [301:37] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<KotlinPsiRange>, elseBranch: List<KotlinPsiRange>): List<KotlinPsiRange>[SimpleFunctionDescriptorImpl]
+                                    }' @ [301:37] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<KotlinPsiRange>..List<KotlinPsiRange>?), elseBranch: (List<KotlinPsiRange>..List<KotlinPsiRange>?)): (List<KotlinPsiRange>..List<KotlinPsiRange>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<KotlinPsiRange>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.List<org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange>..kotlin.collections.List<org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange>?)
 
 'replaceAllCheckBox' @ [301:41] ==> private final var replaceAllCheckBox: JCheckBox? defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterDialog[PropertyDescriptorImpl]
 
@@ -872,7 +870,7 @@ Inferred types:
 
 'singletonList' @ [305:53] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KotlinPsiRange..KotlinPsiRange?)): (MutableList<(KotlinPsiRange..KotlinPsiRange?)>..List<(KotlinPsiRange..KotlinPsiRange?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinPsiRange
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange..org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange?)
 
 'originalOccurrence' @ [305:67] ==> public final val originalOccurrence: KotlinPsiRange defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.IntroduceParameterDescriptor[PropertyDescriptorImpl]
 
@@ -917,7 +915,7 @@ Inferred types:
 
 'introduceParameter' @ [313:25] ==> val introduceParameter: () -> Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterDialog.performRefactoring.<no name provided>.performRefactoring[LocalVariableDescriptor]
 
-'runRefactoringWithPostprocessing' @ [313:44] ==> public fun (() -> Any).runRefactoringWithPostprocessing(project: Project, targetRefactoringId: String, finishAction: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'runRefactoringWithPostprocessing' @ [313:44] ==> public fun (() -> Any).runRefactoringWithPostprocessing(project: Project, targetRefactoringId: String, finishAction: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'myProject' @ [313:77] ==> @NotNull protected/*protected and package*/ final val myProject: Project defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterDialog.performRefactoring.<no name provided>[JavaPropertyDescriptor]
 

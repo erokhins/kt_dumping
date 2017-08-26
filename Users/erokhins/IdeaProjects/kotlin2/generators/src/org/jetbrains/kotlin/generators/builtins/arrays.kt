@@ -22,8 +22,6 @@ Inferred types:
 
 'kind' @ [30:36] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.arrays.GenerateArrays.generateBody[LocalVariableDescriptor]
 
-'PrimitiveType' @ [30:44] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'BOOLEAN' @ [30:58] ==> enum entry BOOLEAN defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'out' @ [31:13] ==> public final val out: PrintWriter defined in org.jetbrains.kotlin.generators.builtins.arrays.GenerateArrays[PropertyDescriptorImpl]

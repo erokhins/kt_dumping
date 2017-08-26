@@ -131,7 +131,9 @@ Inferred types:
 
 'isDisposed' @ [87:43] ==> public final val Module.isDisposed: Boolean[MyPropertyDescriptor]
 
-'AndroidLayoutXmlFileManager' @ [88:39] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager[FakeCallableDescriptorForObject]
+'?:' @ [88:39] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: AndroidLayoutXmlFileManager?, right: AndroidLayoutXmlFileManager): AndroidLayoutXmlFileManager[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> AndroidLayoutXmlFileManager
 
 'getInstance' @ [88:67] ==> public final fun getInstance(module: Module): AndroidLayoutXmlFileManager? defined in org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -189,7 +191,7 @@ Inferred types:
 
 'variants' @ [112:27] ==> public final val variants: List<AndroidVariant> defined in org.jetbrains.kotlin.android.synthetic.res.AndroidModule[DeserializedPropertyDescriptor]
 
-'fold' @ [112:36] ==> public inline fun <T, R> Iterable<AndroidVariant>.fold(initial: ArrayList<VirtualFile> /* = ArrayList<VirtualFile> */, operation: (ArrayList<VirtualFile> /* = ArrayList<VirtualFile> */, AndroidVariant) -> ArrayList<VirtualFile> /* = ArrayList<VirtualFile> */): ArrayList<VirtualFile> /* = ArrayList<VirtualFile> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [112:36] ==> public inline fun <T, R> Iterable<AndroidVariant>.fold(initial: ArrayList<VirtualFile> /* = ArrayList<VirtualFile> */, operation: (acc: ArrayList<VirtualFile> /* = ArrayList<VirtualFile> */, AndroidVariant) -> ArrayList<VirtualFile> /* = ArrayList<VirtualFile> */): ArrayList<VirtualFile> /* = ArrayList<VirtualFile> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AndroidVariant
     <R> -> ArrayList<VirtualFile>

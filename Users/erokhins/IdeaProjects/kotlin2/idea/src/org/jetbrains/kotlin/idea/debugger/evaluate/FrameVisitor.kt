@@ -71,13 +71,13 @@ Inferred types:
 
 'thisValue' @ [54:32] ==> val thisValue: Value? defined in org.jetbrains.kotlin.idea.debugger.evaluate.FrameVisitor.findValue[LocalVariableDescriptor]
 
-'isInsideInlineFunctionBody' @ [58:25] ==> public fun isInsideInlineFunctionBody(visibleVariables: List<LocalVariableProxyImpl>): Boolean defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'isInsideInlineFunctionBody' @ [58:25] ==> public fun isInsideInlineFunctionBody(visibleVariables: List<LocalVariableProxyImpl>): Boolean defined in org.jetbrains.kotlin.idea.debugger in file debuggerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'frame' @ [58:52] ==> private final val frame: StackFrameProxyImpl? defined in org.jetbrains.kotlin.idea.debugger.evaluate.FrameVisitor[PropertyDescriptorImpl]
 
 'visibleVariables' @ [58:58] ==> @NotNull public open fun visibleVariables(): (MutableList<(LocalVariableProxyImpl..LocalVariableProxyImpl?)>..List<(LocalVariableProxyImpl..LocalVariableProxyImpl?)>) defined in com.intellij.debugger.jdi.StackFrameProxyImpl[JavaMethodDescriptor]
 
-'numberOfInlinedFunctions' @ [59:38] ==> public fun numberOfInlinedFunctions(visibleVariables: List<LocalVariableProxyImpl>): Int defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'numberOfInlinedFunctions' @ [59:38] ==> public fun numberOfInlinedFunctions(visibleVariables: List<LocalVariableProxyImpl>): Int defined in org.jetbrains.kotlin.idea.debugger in file debuggerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'frame' @ [59:63] ==> private final val frame: StackFrameProxyImpl? defined in org.jetbrains.kotlin.idea.debugger.evaluate.FrameVisitor[PropertyDescriptorImpl]
 
@@ -173,13 +173,13 @@ Inferred types:
 
 'message' @ [97:84] ==> value-parameter message: String defined in org.jetbrains.kotlin.idea.debugger.evaluate.FrameVisitor.fail[ValueParameterDescriptorImpl]
 
-'isInsideInlineFunctionBody' @ [101:13] ==> public fun isInsideInlineFunctionBody(visibleVariables: List<LocalVariableProxyImpl>): Boolean defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'isInsideInlineFunctionBody' @ [101:13] ==> public fun isInsideInlineFunctionBody(visibleVariables: List<LocalVariableProxyImpl>): Boolean defined in org.jetbrains.kotlin.idea.debugger in file debuggerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'frame' @ [101:40] ==> private final val frame: StackFrameProxyImpl? defined in org.jetbrains.kotlin.idea.debugger.evaluate.FrameVisitor[PropertyDescriptorImpl]
 
 'visibleVariables' @ [101:48] ==> @NotNull public open fun visibleVariables(): (MutableList<(LocalVariableProxyImpl..LocalVariableProxyImpl?)>..List<(LocalVariableProxyImpl..LocalVariableProxyImpl?)>) defined in com.intellij.debugger.jdi.StackFrameProxyImpl[JavaMethodDescriptor]
 
-'numberOfInlinedFunctions' @ [102:26] ==> public fun numberOfInlinedFunctions(visibleVariables: List<LocalVariableProxyImpl>): Int defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'numberOfInlinedFunctions' @ [102:26] ==> public fun numberOfInlinedFunctions(visibleVariables: List<LocalVariableProxyImpl>): Int defined in org.jetbrains.kotlin.idea.debugger in file debuggerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'frame' @ [102:51] ==> private final val frame: StackFrameProxyImpl? defined in org.jetbrains.kotlin.idea.debugger.evaluate.FrameVisitor[PropertyDescriptorImpl]
 

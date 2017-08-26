@@ -2,9 +2,9 @@
 
 'manager' @ [23:73] ==> value-parameter manager: PsiManager defined in org.jetbrains.kotlin.asJava.classes.KtLazyLightClass.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [26:43] ==> public fun <T> lazyPub(initializer: () -> PsiClass): Lazy<PsiClass> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [26:43] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiClass
+    <T> -> T
 
 'lightClassData' @ [26:53] ==> public abstract val lightClassData: LightClassData defined in org.jetbrains.kotlin.asJava.classes.KtLazyLightClass[PropertyDescriptorImpl]
 

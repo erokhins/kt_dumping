@@ -71,8 +71,6 @@ Inferred types:
 
 'end' @ [91:18] ==> val end: Label defined in org.jetbrains.kotlin.codegen.generateIsCheck[LocalVariableDescriptor]
 
-'TypeIntrinsics' @ [95:9] ==> public object TypeIntrinsics defined in org.jetbrains.kotlin.codegen.intrinsics in file TypeIntrinsics.kt[FakeCallableDescriptorForObject]
-
 'instanceOf' @ [95:24] ==> @JvmStatic public final fun instanceOf(v: InstructionAdapter, jetType: KotlinType, boxedAsmType: Type): Unit defined in org.jetbrains.kotlin.codegen.intrinsics.TypeIntrinsics[SimpleFunctionDescriptorImpl]
 
 'v' @ [95:35] ==> value-parameter v: InstructionAdapter defined in org.jetbrains.kotlin.codegen.generateIsCheck[ValueParameterDescriptorImpl]
@@ -182,8 +180,6 @@ Inferred types:
 
 '+' @ [133:57] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorRenderer' @ [133:99] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'FQ_NAMES_IN_TYPES' @ [133:118] ==> @field:JvmField public final val FQ_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
 'renderType' @ [133:136] ==> public abstract fun renderType(type: KotlinType): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -215,8 +211,8 @@ Inferred types:
 
 'get' @ [142:43] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [142:62] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -254,8 +250,8 @@ Inferred types:
 
 'get' @ [154:55] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?), p1: (PsiElement..PsiElement?)): VariableDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VARIABLE' @ [154:74] ==> public final val VARIABLE: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -306,8 +302,6 @@ Inferred types:
 
 'descriptor' @ [177:42] ==> value-parameter descriptor: ClassDescriptor? defined in org.jetbrains.kotlin.codegen.sortTopLevelClassesAndPrepareContextForSealedClasses.prepareContextIfNeeded[ValueParameterDescriptorImpl]
 
-'OwnerKind' @ [177:56] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
 'IMPLEMENTATION' @ [177:66] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'state' @ [177:82] ==> value-parameter state: GenerationState defined in org.jetbrains.kotlin.codegen.sortTopLevelClassesAndPrepareContextForSealedClasses[ValueParameterDescriptorImpl]
@@ -338,8 +332,8 @@ Inferred types:
 
 'get' @ [185:57] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [185:76] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -372,8 +366,8 @@ Inferred types:
 
 'get' @ [193:47] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [193:66] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -407,9 +401,9 @@ Inferred types:
 
 'classOrObject' @ [199:43] ==> val classOrObject: KtClassOrObject defined in org.jetbrains.kotlin.codegen.sortTopLevelClassesAndPrepareContextForSealedClasses[LocalVariableDescriptor]
 
-'topologicalOrder' @ [204:33] ==> public final fun <N : (Any..Any?)> topologicalOrder(@NotNull p0: (MutableIterable<(ClassDescriptor..ClassDescriptor?)>..Iterable<(ClassDescriptor..ClassDescriptor?)>), @NotNull p1: ((ClassDescriptor..ClassDescriptor?)) -> (MutableIterable<(ClassDescriptor..ClassDescriptor?)>..Iterable<(ClassDescriptor..ClassDescriptor?)>)): (MutableList<(ClassDescriptor..ClassDescriptor?)>..List<(ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
+'topologicalOrder' @ [204:33] ==> public final fun <N : (Any..Any?)> topologicalOrder(@NotNull p0: (MutableIterable<ClassDescriptor?>..Iterable<ClassDescriptor?>), @NotNull p1: (ClassDescriptor?) -> (MutableIterable<ClassDescriptor?>..Iterable<ClassDescriptor?>)): (MutableList<ClassDescriptor?>..List<ClassDescriptor?>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> ClassDescriptor
+    <N : (Any..Any?)> -> ClassDescriptor?
 
 'descriptorToPsi' @ [204:50] ==> val descriptorToPsi: LinkedHashMap<ClassDescriptor, KtClassOrObject> defined in org.jetbrains.kotlin.codegen.sortTopLevelClassesAndPrepareContextForSealedClasses[LocalVariableDescriptor]
 
@@ -446,11 +440,11 @@ Inferred types:
 
 'keys' @ [205:135] ==> public open val keys: MutableSet<ClassDescriptor> defined in java.util.LinkedHashMap[JavaPropertyDescriptor]
 
-'sortedDescriptors' @ [207:5] ==> val sortedDescriptors: (MutableList<(ClassDescriptor..ClassDescriptor?)>..List<(ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.codegen.sortTopLevelClassesAndPrepareContextForSealedClasses[LocalVariableDescriptor]
+'sortedDescriptors' @ [207:5] ==> val sortedDescriptors: (MutableList<ClassDescriptor?>..List<ClassDescriptor?>?) defined in org.jetbrains.kotlin.codegen.sortTopLevelClassesAndPrepareContextForSealedClasses[LocalVariableDescriptor]
 
-'mapTo' @ [207:23] ==> public inline fun <T, R, C : MutableCollection<in KtClassOrObject>> Iterable<(ClassDescriptor..ClassDescriptor?)>.mapTo(destination: ArrayList<KtClassOrObject>, transform: ((ClassDescriptor..ClassDescriptor?)) -> KtClassOrObject): ArrayList<KtClassOrObject> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapTo' @ [207:23] ==> public inline fun <T, R, C : MutableCollection<in KtClassOrObject>> Iterable<ClassDescriptor?>.mapTo(destination: ArrayList<KtClassOrObject>, transform: (ClassDescriptor?) -> KtClassOrObject): ArrayList<KtClassOrObject> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <T> -> ClassDescriptor?
     <R> -> KtClassOrObject
     <C : MutableCollection<in R>> -> ArrayList<KtClassOrObject>
 
@@ -458,7 +452,7 @@ Inferred types:
 
 'descriptorToPsi' @ [207:39] ==> val descriptorToPsi: LinkedHashMap<ClassDescriptor, KtClassOrObject> defined in org.jetbrains.kotlin.codegen.sortTopLevelClassesAndPrepareContextForSealedClasses[LocalVariableDescriptor]
 
-'it' @ [207:55] ==> value-parameter it: (ClassDescriptor..ClassDescriptor?) defined in org.jetbrains.kotlin.codegen.sortTopLevelClassesAndPrepareContextForSealedClasses.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [207:55] ==> value-parameter it: ClassDescriptor? defined in org.jetbrains.kotlin.codegen.sortTopLevelClassesAndPrepareContextForSealedClasses.<anonymous>[ValueParameterDescriptorImpl]
 
 'result' @ [208:12] ==> val result: ArrayList<KtClassOrObject> defined in org.jetbrains.kotlin.codegen.sortTopLevelClassesAndPrepareContextForSealedClasses[LocalVariableDescriptor]
 
@@ -583,11 +577,9 @@ Inferred types:
 
 'it' @ [247:89] ==> value-parameter it: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.reportTarget6InheritanceErrorIfNeeded.<anonymous>[ValueParameterDescriptorImpl]
 
-'RenderingContext' @ [247:94] ==> public companion object defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext[FakeCallableDescriptorForObject]
-
 'Empty' @ [247:111] ==> public object Empty : RenderingContext defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext[FakeCallableDescriptorForObject]
 
-'isJvmStaticIn' @ [256:9] ==> private fun CallableDescriptor.isJvmStaticIn(predicate: (DeclarationDescriptor) -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'isJvmStaticIn' @ [256:9] ==> private fun CallableDescriptor.isJvmStaticIn(predicate: (DeclarationDescriptor) -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'isNonCompanionObject' @ [257:29] ==> public open fun isNonCompanionObject(@NotNull p0: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
@@ -597,7 +589,7 @@ Inferred types:
 
 'it' @ [260:48] ==> value-parameter it: DeclarationDescriptor defined in org.jetbrains.kotlin.codegen.isJvmStaticInObjectOrClass.<anonymous>[ValueParameterDescriptorImpl]
 
-'isJvmStaticIn' @ [264:9] ==> private fun CallableDescriptor.isJvmStaticIn(predicate: (DeclarationDescriptor) -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'isJvmStaticIn' @ [264:9] ==> private fun CallableDescriptor.isJvmStaticIn(predicate: (DeclarationDescriptor) -> Boolean): Boolean defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'isCompanionObject' @ [264:41] ==> public open fun isCompanionObject(@Nullable p0: DeclarationDescriptor?): Boolean defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
@@ -652,7 +644,7 @@ Inferred types:
 
 'expression' @ [282:18] ==> value-parameter expression: KtExpression? defined in org.jetbrains.kotlin.codegen.calcTypeForIEEE754ArithmeticIfNeeded[ValueParameterDescriptorImpl]
 
-'kotlinType' @ [282:29] ==> public fun KtExpression?.kotlinType(bindingContext: BindingContext): KotlinType? defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'kotlinType' @ [282:29] ==> public fun KtExpression?.kotlinType(bindingContext: BindingContext): KotlinType? defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [282:40] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.codegen.calcTypeForIEEE754ArithmeticIfNeeded[ValueParameterDescriptorImpl]
 
@@ -749,11 +741,11 @@ Inferred types:
 
 'this' @ [306:9] ==> <this> defined in org.jetbrains.kotlin.codegen.asmType[ReceiverParameterDescriptorImpl]
 
-'kotlinType' @ [306:14] ==> public fun KtExpression?.kotlinType(bindingContext: BindingContext): KotlinType? defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'kotlinType' @ [306:14] ==> public fun KtExpression?.kotlinType(bindingContext: BindingContext): KotlinType? defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [306:25] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.codegen.asmType[ValueParameterDescriptorImpl]
 
-'asmType' @ [306:42] ==> public fun KotlinType.asmType(typeMapper: KotlinTypeMapper): Type defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'asmType' @ [306:42] ==> public fun KotlinType.asmType(typeMapper: KotlinTypeMapper): Type defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'typeMapper' @ [306:50] ==> value-parameter typeMapper: KotlinTypeMapper defined in org.jetbrains.kotlin.codegen.asmType[ValueParameterDescriptorImpl]
 
@@ -767,6 +759,8 @@ Inferred types:
     <R> -> KotlinType?
 
 'bindingContext' @ [308:74] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.codegen.kotlinType[ValueParameterDescriptorImpl]
+
+'getType' @ [308:90] ==> @Nullable public abstract fun getType(@NotNull p0: KtExpression): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 
 'mutableListOf' @ [310:69] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableListOf(): MutableList<Pair<Int, Type>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -906,7 +900,7 @@ Inferred types:
 
 'getObjectType' @ [351:48] ==> public open fun getObjectType(p0: (String..String?)): (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaMethodDescriptor]
 
-'topLevelClassInternalName' @ [351:62] ==> public fun FqName.topLevelClassInternalName(): String defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'topLevelClassInternalName' @ [351:62] ==> public fun FqName.topLevelClassInternalName(): String defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'codegen' @ [354:40] ==> value-parameter codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.initializeVariablesForDestructuredLambdaParameters[ValueParameterDescriptorImpl]
 
@@ -924,7 +918,7 @@ Inferred types:
 
 'destructuringVariables' @ [362:43] ==> public final val destructuringVariables: List<VariableDescriptor> defined in org.jetbrains.kotlin.descriptors.impl.ValueParameterDescriptorImpl.WithDestructuringDeclaration[DeserializedPropertyDescriptor]
 
-'filterOutDescriptorsWithSpecialNames' @ [362:66] ==> public fun Collection<VariableDescriptor>.filterOutDescriptorsWithSpecialNames(): List<VariableDescriptor> defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'filterOutDescriptorsWithSpecialNames' @ [362:66] ==> public fun Collection<VariableDescriptor>.filterOutDescriptorsWithSpecialNames(): List<VariableDescriptor> defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'codegen' @ [363:13] ==> value-parameter codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.initializeVariablesForDestructuredLambdaParameters[ValueParameterDescriptorImpl]
 
@@ -1006,7 +1000,7 @@ Inferred types:
 
 'frameMap' @ [393:5] ==> value-parameter frameMap: FrameMap defined in org.jetbrains.kotlin.codegen.generateNewInstanceDupAndPlaceBeforeStackTop[ValueParameterDescriptorImpl]
 
-'useTmpVar' @ [393:14] ==> public inline fun FrameMap.useTmpVar(type: Type, block: (index: Int) -> Unit): Unit defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'useTmpVar' @ [393:14] ==> public inline fun FrameMap.useTmpVar(type: Type, block: (index: Int) -> Unit): Unit defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'topStackType' @ [393:24] ==> value-parameter topStackType: Type defined in org.jetbrains.kotlin.codegen.generateNewInstanceDupAndPlaceBeforeStackTop[ValueParameterDescriptorImpl]
 
@@ -1089,13 +1083,13 @@ Inferred types:
 
 'extensionReceiver' @ [419:41] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'rangeCall' @ [419:62] ==> value-parameter rangeCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.codegen.generateCallReceiver[ValueParameterDescriptorImpl]
 
 'dispatchReceiver' @ [419:72] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'gen' @ [422:9] ==> public open fun gen(expr: (KtElement..KtElement?)): (StackValue..StackValue?) defined in org.jetbrains.kotlin.codegen.ExpressionCodegen[JavaMethodDescriptor]
 

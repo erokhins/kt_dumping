@@ -26,7 +26,7 @@ Inferred types:
 
 'project' @ [41:13] ==> val project: Project defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.AbstractMultiModuleSafeDeleteTest.SafeDeleteAction.runRefactoring[LocalVariableDescriptor]
 
-'ALLOW_LIFTING_IMPL_PARAMETER_TO_HEADER' @ [41:21] ==> internal final var Project.ALLOW_LIFTING_IMPL_PARAMETER_TO_HEADER: Boolean defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.Companion[PropertyImportedFromObject]
+'ALLOW_LIFTING_IMPL_PARAMETER_TO_HEADER' @ [41:21] ==> internal final var Project.ALLOW_LIFTING_IMPL_PARAMETER_TO_HEADER: (Boolean..Boolean?) defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinSafeDeleteProcessor.Companion[PropertyImportedFromObject]
 
 'config' @ [41:62] ==> value-parameter config: JsonObject defined in org.jetbrains.kotlin.idea.refactoring.safeDelete.AbstractMultiModuleSafeDeleteTest.SafeDeleteAction.runRefactoring[ValueParameterDescriptorImpl]
 

@@ -169,7 +169,7 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
-'MoveDeclarationsTransferableData' @ [76:44] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsTransferableData[FakeCallableDescriptorForObject]
+'in' @ [76:44] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'STUB_RENDERER' @ [76:77] ==> public final val STUB_RENDERER: DescriptorRenderer defined in org.jetbrains.kotlin.idea.refactoring.cutPaste.MoveDeclarationsTransferableData.Companion[PropertyDescriptorImpl]
 

@@ -6,7 +6,7 @@ Inferred types:
 
 'changeInfo' @ [30:13] ==> value-parameter changeInfo: KotlinChangeInfo defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinCallerUsage.processUsage[ValueParameterDescriptorImpl]
 
-'getAffectedCallables' @ [30:24] ==> public fun KotlinChangeInfo.getAffectedCallables(): Collection<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'getAffectedCallables' @ [30:24] ==> public fun KotlinChangeInfo.getAffectedCallables(): Collection<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeInfo.kt[SimpleFunctionDescriptorImpl]
 
 'any' @ [30:47] ==> public inline fun <T> Iterable<UsageInfo>.any(predicate: (UsageInfo) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -18,7 +18,7 @@ Inferred types:
 
 'element' @ [30:98] ==> public final val <T : PsiElement> KotlinCallableDefinitionUsage<out PsiElement>.element: PsiElement?[MyPropertyDescriptor]
 Inferred types:
-    <T : PsiElement> -> PsiElement
+    <T : PsiElement> -> Captured(*)
 
 'element' @ [30:109] ==> value-parameter element: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinCallerUsage.processUsage[ValueParameterDescriptorImpl]
 
@@ -143,7 +143,7 @@ Inferred types:
 
 'element' @ [58:50] ==> value-parameter element: KtCallElement defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinCallerCallUsage.processUsage[ValueParameterDescriptorImpl]
 
-'isInsideOfCallerBody' @ [58:58] ==> public fun KtElement.isInsideOfCallerBody(allUsages: Array<out UsageInfo>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'isInsideOfCallerBody' @ [58:58] ==> public fun KtElement.isInsideOfCallerBody(allUsages: Array<out UsageInfo>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file changeSignatureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'allUsages' @ [58:79] ==> value-parameter allUsages: Array<out UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinCallerCallUsage.processUsage[ValueParameterDescriptorImpl]
 

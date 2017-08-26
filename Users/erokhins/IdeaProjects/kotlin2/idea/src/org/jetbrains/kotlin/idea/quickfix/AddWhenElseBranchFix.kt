@@ -38,7 +38,7 @@ Inferred types:
 
 'error' @ [41:52] ==> @InlineOnly public inline fun error(message: Any): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'forcePsiPostprocessAndRestoreElement' @ [42:53] ==> public open fun <T : (PsiElement..PsiElement?)> forcePsiPostprocessAndRestoreElement(@NotNull p0: (PsiElement..PsiElement?)): (PsiElement..PsiElement?) defined in com.intellij.codeInsight.CodeInsightUtilCore[JavaMethodDescriptor]
+'forcePsiPostprocessAndRestoreElement' @ [42:53] ==> public open fun <T : (PsiElement..PsiElement?)> forcePsiPostprocessAndRestoreElement(@NotNull p0: PsiElement): (PsiElement..PsiElement?) defined in com.intellij.codeInsight.CodeInsightUtilCore[JavaMethodDescriptor]
 Inferred types:
     <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
@@ -82,4 +82,6 @@ Inferred types:
 Inferred types:
     <T> -> KtWhenExpression
     <R> -> AddWhenElseBranchFix
+
+'AddWhenElseBranchFix' @ [48:94] ==> public constructor AddWhenElseBranchFix(element: KtWhenExpression) defined in org.jetbrains.kotlin.idea.quickfix.AddWhenElseBranchFix[ClassConstructorDescriptorImpl]
 

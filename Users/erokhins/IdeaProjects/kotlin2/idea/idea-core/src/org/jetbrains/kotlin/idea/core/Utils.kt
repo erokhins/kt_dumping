@@ -284,7 +284,7 @@ Inferred types:
 
 'it' @ [135:42] ==> value-parameter it: (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.idea.core.resolveCandidates.<anonymous>[ValueParameterDescriptorImpl]
 
-'resultingDescriptor' @ [135:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [135:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -338,7 +338,7 @@ Inferred types:
 
 'it' @ [144:75] ==> value-parameter it: (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.idea.core.resolveCandidates.<anonymous>[ValueParameterDescriptorImpl]
 
-'resultingDescriptor' @ [144:78] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [144:78] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 

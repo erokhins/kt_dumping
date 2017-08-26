@@ -21,8 +21,6 @@ Inferred types:
 
 'it' @ [35:72] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.core.overrideImplement.ImplementMembersHandler.collectMembersToGenerate.<anonymous>[ValueParameterDescriptorImpl]
 
-'OverrideMemberChooserObject' @ [35:76] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [35:113] ==> public object EMPTY : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 
 'message' @ [42:43] ==> @NotNull public open fun message(@NonNls @PropertyKey key: (String..String?), vararg params: (Any..Any?)): String defined in org.jetbrains.kotlin.idea.KotlinBundle[JavaMethodDescriptor]
@@ -87,8 +85,6 @@ Inferred types:
 'it' @ [60:68] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.core.overrideImplement.ImplementAsConstructorParameter.collectMembersToGenerate.<anonymous>[ValueParameterDescriptorImpl]
 
 'it' @ [60:72] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.core.overrideImplement.ImplementAsConstructorParameter.collectMembersToGenerate.<anonymous>[ValueParameterDescriptorImpl]
-
-'OverrideMemberChooserObject' @ [60:76] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [60:113] ==> public object EMPTY : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 

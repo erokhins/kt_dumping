@@ -8,9 +8,9 @@ Inferred types:
 
 'exactResultLazyValue' @ [46:57] ==> private final val exactResultLazyValue: Lazy<LightClassBuilderResult> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder[PropertyDescriptorImpl]
 
-'lazyPub' @ [48:38] ==> public fun <T> lazyPub(initializer: () -> LightClassBuilderResult?): Lazy<LightClassBuilderResult?> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [48:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LightClassBuilderResult?
+    <T> -> T
 
 'dummyContextProvider' @ [49:9] ==> value-parameter dummyContextProvider: DummyLightClassContextProvider /* = (() -> LightClassConstructionContext?)? */ defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder.<init>[ValueParameterDescriptorImpl]
 
@@ -84,17 +84,17 @@ Inferred types:
 
 'dummyContextProvider' @ [75:65] ==> value-parameter dummyContextProvider: DummyLightClassContextProvider /* = (() -> LightClassConstructionContext?)? */ defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder.ForFacade.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [80:47] ==> public fun <T> lazyPub(initializer: () -> PsiClass): Lazy<PsiClass> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [80:47] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiClass
+    <T> -> T
 
 'invoke' @ [80:57] ==> public abstract operator fun invoke(p1: LightClassBuilderResult): PsiClass defined in kotlin.Function1[FunctionInvokeDescriptor]
 
 'exactResult' @ [80:70] ==> private final val exactResult: LightClassBuilderResult defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder[PropertyDescriptorImpl]
 
-'lazyPub' @ [82:49] ==> public fun <T> lazyPub(initializer: () -> PsiClass?): Lazy<PsiClass?> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [82:49] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiClass?
+    <T> -> T
 
 'inexactResult' @ [82:59] ==> private final val inexactResult: LightClassBuilderResult? defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder[PropertyDescriptorImpl]
 
@@ -124,7 +124,9 @@ Inferred types:
     <T> -> (com.intellij.psi.PsiField..com.intellij.psi.PsiField?)
     <R> -> KtLightField
 
-'KtLightFieldImpl' @ [88:35] ==> public companion object Factory defined in org.jetbrains.kotlin.asJava.elements.KtLightFieldImpl[FakeCallableDescriptorForObject]
+'!!' @ [88:35] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: LightMemberOriginForDeclaration?): LightMemberOriginForDeclaration[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> LightMemberOriginForDeclaration
 
 'getOrigin' @ [88:52] ==> public final fun getOrigin(field: PsiField): LightMemberOriginForDeclaration? defined in org.jetbrains.kotlin.asJava.elements.KtLightFieldImpl.Factory[DeserializedSimpleFunctionDescriptor]
 
@@ -150,9 +152,9 @@ Inferred types:
 
 'fieldName' @ [92:49] ==> val fieldName: String defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder.LazyLightClassData.getOwnFields.<anonymous>[LocalVariableDescriptor]
 
-'assertMatches' @ [92:67] ==> private final fun <T : PsiMember> PsiField?.assertMatches(dummyMember: PsiField, containingClass: KtLightClass): PsiField defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder[SimpleFunctionDescriptorImpl]
+'assertMatches' @ [92:67] ==> private final fun <T : PsiMember> PsiField?.assertMatches(dummyMember: (PsiField..PsiField?), containingClass: KtLightClass): (PsiField..PsiField?) defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : PsiMember> -> PsiField
+    <T : PsiMember> -> (com.intellij.psi.PsiField..com.intellij.psi.PsiField?)
 
 'dummyField' @ [92:81] ==> value-parameter dummyField: (PsiField..PsiField?) defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder.LazyLightClassData.getOwnFields.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -229,9 +231,9 @@ Inferred types:
 
 'exactDelegateMethod' @ [115:21] ==> val exactDelegateMethod: PsiMethod? defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder.LazyLightClassData.getOwnMethods.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'assertMatches' @ [115:41] ==> private final fun <T : PsiMember> PsiMethod?.assertMatches(dummyMember: PsiMethod, containingClass: KtLightClass): PsiMethod defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder[SimpleFunctionDescriptorImpl]
+'assertMatches' @ [115:41] ==> private final fun <T : PsiMember> PsiMethod?.assertMatches(dummyMember: (PsiMethod..PsiMethod?), containingClass: KtLightClass): (PsiMethod..PsiMethod?) defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : PsiMember> -> PsiMethod
+    <T : PsiMember> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
 
 'dummyMethod' @ [115:55] ==> value-parameter dummyMethod: (PsiMethod..PsiMethod?) defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder.LazyLightClassData.getOwnMethods.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -255,9 +257,9 @@ Inferred types:
 
 'parametersCount' @ [124:74] ==> public final val PsiParameterList.parametersCount: Int[MyPropertyDescriptor]
 
-'?:' @ [125:17] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Int?, right: Int): Int[SimpleFunctionDescriptorImpl]
+'?:' @ [125:17] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Any?, right: Any?): Any?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Int
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Any?
 
 'dummyMember' @ [125:18] ==> value-parameter dummyMember: T defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LazyLightClassDataHolder.assertMatches[ValueParameterDescriptorImpl]
 
@@ -327,11 +329,11 @@ Inferred types:
 
 'java' @ [151:28] ==> public val <T> KClass<out PsiMember>.java: Class<out PsiMember> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiMember
+    <T> -> Captured(out PsiMember)
 
 'simpleName' @ [151:33] ==> public final val <T : (Any..Any?)> Class<out PsiMember>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiMember
+    <T : (Any..Any?)> -> Captured(out PsiMember)
 
 'this' @ [151:47] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.debugName[ReceiverParameterDescriptorImpl]
 
@@ -351,12 +353,9 @@ Inferred types:
 
 'parametersCount' @ [151:128] ==> public final val PsiParameterList.parametersCount: Int[MyPropertyDescriptor]
 
-'NotNullableUserDataProperty' @ [153:61] ==> public constructor NotNullableUserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> KtClassOrObject
-    <T : Any> -> Boolean
+'getValue' @ [153:61] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [153:93] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 

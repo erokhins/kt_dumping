@@ -119,8 +119,8 @@ Inferred types:
 
 'get' @ [88:30] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtBlockExpression..KtBlockExpression?), (NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)>..ReadOnlySlice<(KtBlockExpression..KtBlockExpression?), (NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)>?), key: (KtBlockExpression..KtBlockExpression?)): NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtBlockExpression
-    <V : (Any..Any?)> -> AdditionalBlockInfo
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtBlockExpression..org.jetbrains.kotlin.psi.KtBlockExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.tower.NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..org.jetbrains.kotlin.resolve.calls.tower.NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)
 
 'NEW_INFERENCE_BLOCK_INFO' @ [88:49] ==> public final val NEW_INFERENCE_BLOCK_INFO: (WritableSlice<(KtBlockExpression..KtBlockExpression?), (NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)>..WritableSlice<(KtBlockExpression..KtBlockExpression?), (NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -136,8 +136,8 @@ Inferred types:
 
 'record' @ [93:11] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtBlockExpression..KtBlockExpression?), (NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)>..WritableSlice<(KtBlockExpression..KtBlockExpression?), (NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)>?), key: (KtBlockExpression..KtBlockExpression?), value: (NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtBlockExpression
-    <V : (Any..Any?)> -> AdditionalBlockInfo
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtBlockExpression..org.jetbrains.kotlin.psi.KtBlockExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.tower.NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..org.jetbrains.kotlin.resolve.calls.tower.NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)
 
 'NEW_INFERENCE_BLOCK_INFO' @ [93:33] ==> public final val NEW_INFERENCE_BLOCK_INFO: (WritableSlice<(KtBlockExpression..KtBlockExpression?), (NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)>..WritableSlice<(KtBlockExpression..KtBlockExpression?), (NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo..NewInferenceLastBlockExpressionHelper.AdditionalBlockInfo?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

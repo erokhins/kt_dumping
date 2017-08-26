@@ -1,8 +1,8 @@
 'KotlinAbstractUExpression' @ [33:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [34:41] ==> internal fun <T> lz(initializer: () -> UClass): Lazy<UClass> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [34:41] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UClass
+    <T> -> T
 
 'psi' @ [35:41] ==> public open val psi: KtObjectLiteralExpression defined in org.jetbrains.uast.kotlin.KotlinUObjectLiteralExpression[PropertyDescriptorImpl]
 
@@ -73,9 +73,9 @@ Inferred types:
 
 'toPsiType' @ [48:62] ==> internal fun KtClassOrObject.toPsiType(): PsiType defined in org.jetbrains.uast.kotlin in file kotlinInternalUastUtils.kt[SimpleFunctionDescriptorImpl]
 
-'lz' @ [50:46] ==> internal fun <T> lz(initializer: () -> KtSuperTypeCallEntry?): Lazy<KtSuperTypeCallEntry?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [50:46] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtSuperTypeCallEntry?
+    <T> -> T
 
 'psi' @ [51:9] ==> public open val psi: KtObjectLiteralExpression defined in org.jetbrains.uast.kotlin.KotlinUObjectLiteralExpression[PropertyDescriptorImpl]
 
@@ -89,9 +89,9 @@ Inferred types:
 
 'it' @ [51:66] ==> value-parameter it: KtSuperTypeListEntry defined in org.jetbrains.uast.kotlin.KotlinUObjectLiteralExpression.superClassConstructorCall.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'lz' @ [54:59] ==> internal fun <T> lz(initializer: () -> KotlinUObjectLiteralExpression.ObjectLiteralClassReference?): Lazy<KotlinUObjectLiteralExpression.ObjectLiteralClassReference?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [54:59] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ObjectLiteralClassReference?
+    <T> -> T
 
 'superClassConstructorCall' @ [54:64] ==> private final val superClassConstructorCall: KtSuperTypeCallEntry? defined in org.jetbrains.uast.kotlin.KotlinUObjectLiteralExpression[PropertyDescriptorImpl]
 
@@ -112,9 +112,9 @@ Inferred types:
 
 'size' @ [57:60] ==> public abstract val size: Int defined in kotlin.collections.MutableList[DeserializedPropertyDescriptor]
 
-'lz' @ [59:36] ==> internal fun <T> lz(initializer: () -> List<UExpression>): Lazy<List<UExpression>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [59:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UExpression>
+    <T> -> T
 
 'superClassConstructorCall' @ [60:19] ==> private final val superClassConstructorCall: KtSuperTypeCallEntry? defined in org.jetbrains.uast.kotlin.KotlinUObjectLiteralExpression[PropertyDescriptorImpl]
 
@@ -147,9 +147,9 @@ Inferred types:
 
 'size' @ [65:59] ==> public abstract val size: Int defined in kotlin.collections.MutableList[DeserializedPropertyDescriptor]
 
-'lz' @ [67:35] ==> internal fun <T> lz(initializer: () -> List<PsiType>): Lazy<List<PsiType>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [67:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<PsiType>
+    <T> -> T
 
 'superClassConstructorCall' @ [68:19] ==> private final val superClassConstructorCall: KtSuperTypeCallEntry? defined in org.jetbrains.uast.kotlin.KotlinUObjectLiteralExpression[PropertyDescriptorImpl]
 
@@ -200,9 +200,9 @@ Inferred types:
 
 'name' @ [87:25] ==> public final val KtSuperTypeCallEntry.name: String?[MyPropertyDescriptor]
 
-'lz' @ [91:23] ==> internal fun <T> lz(initializer: () -> Logger): Lazy<Logger> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [91:23] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Logger
+    <T> -> T
 
 'getInstance' @ [91:35] ==> @NotNull public open fun getInstance(@NotNull p0: raw (Class<(Any..Any?)>..Class<*>)): Logger defined in com.intellij.openapi.diagnostic.Logger[JavaMethodDescriptor]
 

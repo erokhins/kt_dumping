@@ -117,8 +117,8 @@ Inferred types:
 
 'dfs' @ [88:17] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull p0: (MutableCollection<(BridgeTest.Fun..BridgeTest.Fun?)>..Collection<(BridgeTest.Fun..BridgeTest.Fun?)>), @NotNull p1: ((BridgeTest.Fun..BridgeTest.Fun?)) -> (MutableIterable<(BridgeTest.Fun..BridgeTest.Fun?)>..Iterable<(BridgeTest.Fun..BridgeTest.Fun?)>), @NotNull p2: DFS.NodeHandler<(BridgeTest.Fun..BridgeTest.Fun?), (LinkedList<(BridgeTest.Fun..BridgeTest.Fun?)>..LinkedList<(BridgeTest.Fun..BridgeTest.Fun?)>?)>): (LinkedList<(BridgeTest.Fun..BridgeTest.Fun?)>..LinkedList<(BridgeTest.Fun..BridgeTest.Fun?)>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> Fun
-    <R : (Any..Any?)> -> LinkedList<(org.jetbrains.kotlin.codegen.BridgeTest.Fun..org.jetbrains.kotlin.codegen.BridgeTest.Fun?)>
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.codegen.BridgeTest.Fun..org.jetbrains.kotlin.codegen.BridgeTest.Fun?)
+    <R : (Any..Any?)> -> (java.util.LinkedList<(org.jetbrains.kotlin.codegen.BridgeTest.Fun..org.jetbrains.kotlin.codegen.BridgeTest.Fun?)>..java.util.LinkedList<(org.jetbrains.kotlin.codegen.BridgeTest.Fun..org.jetbrains.kotlin.codegen.BridgeTest.Fun?)>?)
 
 'listOf' @ [88:21] ==> public fun <T> listOf(element: BridgeTest.Fun): List<BridgeTest.Fun> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -134,19 +134,19 @@ Inferred types:
 
 'HashSet' @ [89:26] ==> public constructor HashSet<E : (Any..Any?)>(p0: (MutableCollection<out (BridgeTest.Fun..BridgeTest.Fun?)>..Collection<(BridgeTest.Fun..BridgeTest.Fun?)>?)) defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Fun
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.codegen.BridgeTest.Fun..org.jetbrains.kotlin.codegen.BridgeTest.Fun?)
 
 'handler' @ [89:34] ==> val handler: <no name provided> defined in org.jetbrains.kotlin.codegen.BridgeTest.graph.findAllReachableDeclarations[LocalVariableDescriptor]
 
 'result' @ [89:42] ==> @NotNull public open fun result(): LinkedList<(BridgeTest.Fun..BridgeTest.Fun?)> defined in org.jetbrains.kotlin.codegen.BridgeTest.graph.findAllReachableDeclarations.<no name provided>[JavaMethodDescriptor]
 
-'result' @ [90:13] ==> val result: HashSet<BridgeTest.Fun> defined in org.jetbrains.kotlin.codegen.BridgeTest.graph.findAllReachableDeclarations[LocalVariableDescriptor]
+'result' @ [90:13] ==> val result: HashSet<(BridgeTest.Fun..BridgeTest.Fun?)> defined in org.jetbrains.kotlin.codegen.BridgeTest.graph.findAllReachableDeclarations[LocalVariableDescriptor]
 
-'remove' @ [90:20] ==> public open fun remove(element: BridgeTest.Fun): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'remove' @ [90:20] ==> public open fun remove(element: (BridgeTest.Fun..BridgeTest.Fun?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'from' @ [90:27] ==> value-parameter from: BridgeTest.Fun defined in org.jetbrains.kotlin.codegen.BridgeTest.graph.findAllReachableDeclarations[ValueParameterDescriptorImpl]
 
-'result' @ [91:20] ==> val result: HashSet<BridgeTest.Fun> defined in org.jetbrains.kotlin.codegen.BridgeTest.graph.findAllReachableDeclarations[LocalVariableDescriptor]
+'result' @ [91:20] ==> val result: HashSet<(BridgeTest.Fun..BridgeTest.Fun?)> defined in org.jetbrains.kotlin.codegen.BridgeTest.graph.findAllReachableDeclarations[LocalVariableDescriptor]
 
 'edges' @ [94:24] ==> value-parameter vararg edges: Pair<BridgeTest.Fun, BridgeTest.Fun> defined in org.jetbrains.kotlin.codegen.BridgeTest.graph[ValueParameterDescriptorImpl]
 
@@ -286,6 +286,8 @@ Inferred types:
     <Signature> -> Meth
 
 'function' @ [130:45] ==> value-parameter function: BridgeTest.Fun defined in org.jetbrains.kotlin.codegen.BridgeTest.doTest[ValueParameterDescriptorImpl]
+
+'Meth' @ [130:57] ==> public constructor Meth(function: BridgeTest.Fun) defined in org.jetbrains.kotlin.codegen.BridgeTest.Meth[ClassConstructorDescriptorImpl]
 
 'assert' @ [131:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 

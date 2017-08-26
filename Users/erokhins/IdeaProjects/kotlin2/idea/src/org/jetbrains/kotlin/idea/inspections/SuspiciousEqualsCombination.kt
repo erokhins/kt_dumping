@@ -92,6 +92,8 @@ Inferred types:
 
 'eqEqOperands' @ [44:64] ==> public final val eqEqOperands: MutableList<KtExpression> defined in org.jetbrains.kotlin.idea.inspections.ComparisonOperands[PropertyDescriptorImpl]
 
+'add' @ [44:78] ==> public abstract fun add(element: KtExpression): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
+
 'right' @ [45:18] ==> public final val KtBinaryExpression.right: KtExpression?[MyPropertyDescriptor]
 
 'let' @ [45:56] ==> @InlineOnly public inline fun <T, R> KtNameReferenceExpression.let(block: (KtNameReferenceExpression) -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -102,6 +104,8 @@ Inferred types:
 'pair' @ [45:60] ==> value-parameter pair: ComparisonOperands = ... defined in org.jetbrains.kotlin.idea.inspections.SuspiciousEqualsCombination.parseBinary[ValueParameterDescriptorImpl]
 
 'eqEqOperands' @ [45:65] ==> public final val eqEqOperands: MutableList<KtExpression> defined in org.jetbrains.kotlin.idea.inspections.ComparisonOperands[PropertyDescriptorImpl]
+
+'add' @ [45:79] ==> public abstract fun add(element: KtExpression): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
 'EQEQEQ' @ [47:22] ==> public final val EQEQEQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
@@ -118,6 +122,8 @@ Inferred types:
 
 'eqEqEqOperands' @ [48:64] ==> public final val eqEqEqOperands: MutableList<KtExpression> defined in org.jetbrains.kotlin.idea.inspections.ComparisonOperands[PropertyDescriptorImpl]
 
+'add' @ [48:80] ==> public abstract fun add(element: KtExpression): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
+
 'right' @ [49:18] ==> public final val KtBinaryExpression.right: KtExpression?[MyPropertyDescriptor]
 
 'let' @ [49:56] ==> @InlineOnly public inline fun <T, R> KtNameReferenceExpression.let(block: (KtNameReferenceExpression) -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -128,6 +134,8 @@ Inferred types:
 'pair' @ [49:60] ==> value-parameter pair: ComparisonOperands = ... defined in org.jetbrains.kotlin.idea.inspections.SuspiciousEqualsCombination.parseBinary[ValueParameterDescriptorImpl]
 
 'eqEqEqOperands' @ [49:65] ==> public final val eqEqEqOperands: MutableList<KtExpression> defined in org.jetbrains.kotlin.idea.inspections.ComparisonOperands[PropertyDescriptorImpl]
+
+'add' @ [49:81] ==> public abstract fun add(element: KtExpression): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
 'ANDAND' @ [51:22] ==> public final val ANDAND: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 

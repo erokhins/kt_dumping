@@ -158,7 +158,7 @@ Inferred types:
 
 'document' @ [65:29] ==> public final val InsertionContext.document: Document[MyPropertyDescriptor]
 
-'isTextAt' @ [65:38] ==> public fun Document.isTextAt(offset: Int, text: String): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers[SimpleFunctionDescriptorImpl]
+'isTextAt' @ [65:38] ==> public fun Document.isTextAt(offset: Int, text: String): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers in file handlerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [65:47] ==> value-parameter context: InsertionContext defined in org.jetbrains.kotlin.idea.completion.handlers.KotlinCallableInsertHandler.addImport[ValueParameterDescriptorImpl]
 

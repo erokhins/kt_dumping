@@ -170,7 +170,7 @@ Inferred types:
 
 'getService' @ [97:37] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(KotlinUastBindingContextProviderService..KotlinUastBindingContextProviderService?)>): (KotlinUastBindingContextProviderService..KotlinUastBindingContextProviderService?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinUastBindingContextProviderService
+    <T : (Any..Any?)> -> (org.jetbrains.uast.kotlin.KotlinUastBindingContextProviderService..org.jetbrains.uast.kotlin.KotlinUastBindingContextProviderService?)
 
 'project' @ [97:48] ==> val project: Project defined in org.jetbrains.uast.kotlin.toPsiType[LocalVariableDescriptor]
 
@@ -194,11 +194,7 @@ Inferred types:
 
 'boxed' @ [101:31] ==> value-parameter boxed: Boolean defined in org.jetbrains.uast.kotlin.toPsiType[ValueParameterDescriptorImpl]
 
-'TypeMappingMode' @ [101:38] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode[FakeCallableDescriptorForObject]
-
 'GENERIC_ARGUMENT' @ [101:54] ==> @field:JvmField public final val GENERIC_ARGUMENT: TypeMappingMode defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode.Companion[DeserializedPropertyDescriptor]
-
-'TypeMappingMode' @ [101:76] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [101:92] ==> @field:JvmField public final val DEFAULT: TypeMappingMode defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode.Companion[DeserializedPropertyDescriptor]
 
@@ -405,7 +401,7 @@ Inferred types:
 
 'resultingDescriptor' @ [161:22] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [164:12] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.uast.kotlin.resolveCallToDeclaration[LocalVariableDescriptor]
 
@@ -443,7 +439,7 @@ Inferred types:
 
 'getService' @ [177:27] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(KotlinUastBindingContextProviderService..KotlinUastBindingContextProviderService?)>): (KotlinUastBindingContextProviderService..KotlinUastBindingContextProviderService?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinUastBindingContextProviderService
+    <T : (Any..Any?)> -> (org.jetbrains.uast.kotlin.KotlinUastBindingContextProviderService..org.jetbrains.uast.kotlin.KotlinUastBindingContextProviderService?)
 
 'project' @ [177:38] ==> public final val KtElement.project: Project[MyPropertyDescriptor]
 

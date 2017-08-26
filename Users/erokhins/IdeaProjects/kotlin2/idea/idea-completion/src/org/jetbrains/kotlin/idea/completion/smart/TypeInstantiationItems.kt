@@ -40,7 +40,7 @@ Inferred types:
 
 'expectedInfosGrouped' @ [81:31] ==> val expectedInfosGrouped: LinkedHashMap<FuzzyType, MutableList<ExpectedInfo>> defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.addTo[LocalVariableDescriptor]
 
-'mergeTails' @ [82:24] ==> public fun mergeTails(tails: Collection<Tail?>): Tail? defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'mergeTails' @ [82:24] ==> public fun mergeTails(tails: Collection<Tail?>): Tail? defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'infos' @ [82:35] ==> val infos: MutableList<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.addTo[LocalVariableDescriptor]
 
@@ -243,7 +243,9 @@ Inferred types:
 
 'tail' @ [119:128] ==> value-parameter tail: Tail? defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.addTo[ValueParameterDescriptorImpl]
 
-'DescriptorToSourceUtilsIde' @ [128:28] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
+'?:' @ [128:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'getAnyDeclaration' @ [128:55] ==> public final fun getAnyDeclaration(project: Project, descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 
@@ -333,8 +335,6 @@ Inferred types:
 'classDescriptor' @ [154:26] ==> value-parameter classDescriptor: ClassDescriptor? defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.createTypeInstantiationItem[ValueParameterDescriptorImpl]
 
 'modality' @ [154:43] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [154:55] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [154:64] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -554,8 +554,6 @@ Inferred types:
 
 'allTypeArgsKnown' @ [179:29] ==> val allTypeArgsKnown: Boolean defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.createTypeInstantiationItem[LocalVariableDescriptor]
 
-'IdeDescriptorRenderers' @ [180:17] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE_SHORT_NAMES_IN_TYPES' @ [180:40] ==> @field:JvmField public final val SOURCE_CODE_SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderTypeArguments' @ [180:73] ==> public abstract fun renderTypeArguments(typeArguments: List<TypeProjection>): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -618,8 +616,6 @@ Inferred types:
 'allTypeArgsKnown' @ [196:32] ==> val allTypeArgsKnown: Boolean defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.createTypeInstantiationItem[LocalVariableDescriptor]
 
 'text1' @ [197:21] ==> val text1: String defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.createTypeInstantiationItem.<anonymous>[LocalVariableDescriptor]
-
-'IdeDescriptorRenderers' @ [197:29] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [197:52] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -736,7 +732,7 @@ Inferred types:
 
 'lookupElement' @ [216:29] ==> var lookupElement: LookupElement defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.createTypeInstantiationItem[LocalVariableDescriptor]
 
-'suppressAutoInsertion' @ [216:43] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'suppressAutoInsertion' @ [216:43] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lookupElement' @ [217:13] ==> var lookupElement: LookupElement defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.createTypeInstantiationItem[LocalVariableDescriptor]
 
@@ -786,8 +782,6 @@ Inferred types:
 'substitutor' @ [227:73] ==> val substitutor: TypeSubstitutor defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.createTypeInstantiationItem[LocalVariableDescriptor]
 
 'constructor' @ [227:89] ==> val constructor: ConstructorDescriptor defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.createTypeInstantiationItem[LocalVariableDescriptor]
-
-'BasicLookupElementFactory' @ [228:21] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory[FakeCallableDescriptorForObject]
 
 'SHORT_NAMES_RENDERER' @ [228:47] ==> public final val SHORT_NAMES_RENDERER: DescriptorRenderer defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory.Companion[PropertyDescriptorImpl]
 
@@ -900,9 +894,7 @@ Inferred types:
 
 'putUserData' @ [257:31] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'KotlinCompletionCharFilter' @ [257:43] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'ACCEPT_OPENING_BRACE' @ [257:70] ==> public final val ACCEPT_OPENING_BRACE: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter.Companion[PropertyDescriptorImpl]
 
@@ -1073,8 +1065,6 @@ Inferred types:
 
 'resolutionFacade' @ [315:68] ==> public final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems[PropertyDescriptorImpl]
 
-'DescriptorKindFilter' @ [315:86] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS' @ [315:107] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'classifier' @ [315:120] ==> value-parameter classifier: ClassifierDescriptorWithTypeParameters defined in org.jetbrains.kotlin.idea.completion.smart.TypeInstantiationItems.addSamConstructorItem[ValueParameterDescriptorImpl]
@@ -1126,8 +1116,6 @@ Inferred types:
 'KotlinTypeFactory' @ [333:36] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
 
 'simpleNotNullType' @ [333:54] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [333:72] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [333:84] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

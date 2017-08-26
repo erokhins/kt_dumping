@@ -4,19 +4,13 @@
 
 'Argument' @ [24:5] ==> public constructor Argument(value: String, shortName: String = ..., deprecatedName: String = ..., delimiter: String = ..., valueDescription: String = ..., description: String) defined in org.jetbrains.kotlin.cli.common.arguments.Argument[ClassConstructorDescriptorImpl]
 
-'FreezableVar' @ [29:37] ==> public constructor FreezableVar<T>(value: Nothing?) defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[ClassConstructorDescriptorImpl]
-Inferred types:
-    <T> -> String?
+'getValue' @ [29:37] ==> public open fun getValue(thisRef: Any, property: KProperty<*>): T defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[SimpleFunctionDescriptorImpl]
 
 'Argument' @ [31:5] ==> public constructor Argument(value: String, shortName: String = ..., deprecatedName: String = ..., delimiter: String = ..., valueDescription: String = ..., description: String) defined in org.jetbrains.kotlin.cli.common.arguments.Argument[ClassConstructorDescriptorImpl]
 
-'FreezableVar' @ [36:47] ==> public constructor FreezableVar<T>(value: Nothing?) defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[ClassConstructorDescriptorImpl]
-Inferred types:
-    <T> -> Array<String>?
+'getValue' @ [36:47] ==> public open fun getValue(thisRef: Any, property: KProperty<*>): T defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[SimpleFunctionDescriptorImpl]
 
 'Argument' @ [38:5] ==> public constructor Argument(value: String, shortName: String = ..., deprecatedName: String = ..., delimiter: String = ..., valueDescription: String = ..., description: String) defined in org.jetbrains.kotlin.cli.common.arguments.Argument[ClassConstructorDescriptorImpl]
 
-'FreezableVar' @ [42:43] ==> public constructor FreezableVar<T>(value: Boolean) defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[ClassConstructorDescriptorImpl]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [42:43] ==> public open fun getValue(thisRef: Any, property: KProperty<*>): T defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[SimpleFunctionDescriptorImpl]
 

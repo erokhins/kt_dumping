@@ -279,8 +279,8 @@ Inferred types:
 
 'get' @ [140:55] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?), key: (PsiElement..PsiElement?)): SimpleFunctionDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> SimpleFunctionDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'FUNCTION' @ [140:74] ==> public final val FUNCTION: (WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -486,8 +486,6 @@ Inferred types:
 
 'WithoutArgumentsCheck' @ [185:108] ==> public constructor WithoutArgumentsCheck(@NotNull dataFlowInfo: DataFlowInfo) defined in org.jetbrains.kotlin.resolve.calls.model.MutableDataFlowInfoForArguments.WithoutArgumentsCheck[JavaClassConstructorDescriptor]
 
-'DataFlowInfo' @ [185:130] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [185:143] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[PropertyDescriptorImpl]
 
 'resolvedCall' @ [186:9] ==> val resolvedCall: ResolvedCallImpl<CallableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower.ResolvedAtomCompleter.completeCallableReference[LocalVariableDescriptor]
@@ -508,7 +506,7 @@ Inferred types:
 
 'bindReference' @ [189:17] ==> public abstract fun <D : (CallableDescriptor..CallableDescriptor?)> bindReference(@NotNull trace: BindingTrace, @NotNull resolvedCall: ResolvedCall<(CallableDescriptor..CallableDescriptor?)>): Unit defined in org.jetbrains.kotlin.resolve.calls.tasks.TracingStrategy[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
 
 'trace' @ [189:31] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.tower.ResolvedAtomCompleter[PropertyDescriptorImpl]
 
@@ -518,7 +516,7 @@ Inferred types:
 
 'bindResolvedCall' @ [190:17] ==> public abstract fun <D : (CallableDescriptor..CallableDescriptor?)> bindResolvedCall(@NotNull trace: BindingTrace, @NotNull resolvedCall: ResolvedCall<(CallableDescriptor..CallableDescriptor?)>): Unit defined in org.jetbrains.kotlin.resolve.calls.tasks.TracingStrategy[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
 
 'trace' @ [190:34] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.tower.ResolvedAtomCompleter[PropertyDescriptorImpl]
 
@@ -575,7 +573,7 @@ Inferred types:
 
 'record' @ [202:15] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>..WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>?), key: (KtExpression..KtExpression?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'PROCESSED' @ [202:37] ==> public final val PROCESSED: (WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>..WritableSlice<(KtExpression..KtExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -624,15 +622,15 @@ Inferred types:
 
 'context' @ [213:29] ==> val context: ResolutionContext<*> defined in org.jetbrains.kotlin.resolve.calls.tower.ResolvedAtomCompleter.completeCollectionLiteralCalls[LocalVariableDescriptor]
 
-'replaceBindingTrace' @ [214:18] ==> @NotNull public open fun replaceBindingTrace(@NotNull trace: BindingTrace): (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
+'replaceBindingTrace' @ [214:18] ==> @NotNull public open fun replaceBindingTrace(@NotNull trace: BindingTrace): (ResolutionContext<*>..ResolutionContext<*>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
 
 'trace' @ [214:38] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.tower.ResolvedAtomCompleter[PropertyDescriptorImpl]
 
-'replaceExpectedType' @ [215:18] ==> @NotNull public open fun replaceExpectedType(@Nullable newExpectedType: KotlinType?): (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
+'replaceExpectedType' @ [215:18] ==> @NotNull public open fun replaceExpectedType(@Nullable newExpectedType: KotlinType?): (ResolutionContext<*>..ResolutionContext<*>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
 
 'expectedType' @ [215:38] ==> val expectedType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.tower.ResolvedAtomCompleter.completeCollectionLiteralCalls[LocalVariableDescriptor]
 
-'replaceContextDependency' @ [216:18] ==> @NotNull public open fun replaceContextDependency(@NotNull newContextDependency: ContextDependency): (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
+'replaceContextDependency' @ [216:18] ==> @NotNull public open fun replaceContextDependency(@NotNull newContextDependency: ContextDependency): (ResolutionContext<*>..ResolutionContext<*>?) defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaMethodDescriptor]
 
 'INDEPENDENT' @ [216:61] ==> enum entry INDEPENDENT defined in org.jetbrains.kotlin.resolve.calls.context.ContextDependency[FakeCallableDescriptorForObject]
 
@@ -644,5 +642,5 @@ Inferred types:
 
 'collectionLiteralExpression' @ [218:62] ==> public final val collectionLiteralExpression: KtCollectionLiteralExpression defined in org.jetbrains.kotlin.resolve.calls.tower.CollectionLiteralKotlinCallArgumentImpl[PropertyDescriptorImpl]
 
-'actualContext' @ [218:91] ==> val actualContext: (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>..ResolutionContext<out (ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>..ResolutionContext<out (ResolutionContext<out Any?>..ResolutionContext<out Any?>?)>?)>?)>?)>?) defined in org.jetbrains.kotlin.resolve.calls.tower.ResolvedAtomCompleter.completeCollectionLiteralCalls[LocalVariableDescriptor]
+'actualContext' @ [218:91] ==> val actualContext: (ResolutionContext<*>..ResolutionContext<*>?) defined in org.jetbrains.kotlin.resolve.calls.tower.ResolvedAtomCompleter.completeCollectionLiteralCalls[LocalVariableDescriptor]
 

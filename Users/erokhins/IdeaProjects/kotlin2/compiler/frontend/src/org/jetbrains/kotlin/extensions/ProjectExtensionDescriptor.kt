@@ -1,6 +1,6 @@
 'create' @ [25:72] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): ExtensionPointName<(T..T?)> defined in com.intellij.openapi.extensions.ExtensionPointName[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'name' @ [25:79] ==> value-parameter name: String defined in org.jetbrains.kotlin.extensions.ProjectExtensionDescriptor.<init>[ValueParameterDescriptorImpl]
 
@@ -30,7 +30,7 @@ Inferred types:
 
 'getExtensionPoint' @ [36:37] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensionPoint(@NotNull p0: ExtensionPointName<(T..T?)>): ExtensionPoint<(T..T?)> defined in com.intellij.openapi.extensions.ExtensionsArea[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'extensionPointName' @ [36:55] ==> public final val extensionPointName: ExtensionPointName<T> defined in org.jetbrains.kotlin.extensions.ProjectExtensionDescriptor[PropertyDescriptorImpl]
 
@@ -62,7 +62,7 @@ Inferred types:
 
 'getExtensionPoint' @ [43:28] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensionPoint(@NotNull p0: ExtensionPointName<(T..T?)>): ExtensionPoint<(T..T?)> defined in com.intellij.openapi.extensions.ExtensionsArea[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'extensionPointName' @ [43:46] ==> public final val extensionPointName: ExtensionPointName<T> defined in org.jetbrains.kotlin.extensions.ProjectExtensionDescriptor[PropertyDescriptorImpl]
 

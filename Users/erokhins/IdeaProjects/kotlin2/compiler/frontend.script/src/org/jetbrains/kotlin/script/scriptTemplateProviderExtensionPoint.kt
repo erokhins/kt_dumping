@@ -12,7 +12,7 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> ScriptTemplatesProvider
 
-'makeScriptDefsFromTemplatesProviders' @ [66:9] ==> public fun makeScriptDefsFromTemplatesProviders(providers: Iterable<ScriptTemplatesProvider>, errorsHandler: (ScriptTemplatesProvider, Throwable) -> Unit = ...): List<KotlinScriptDefinition> defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
+'makeScriptDefsFromTemplatesProviders' @ [66:9] ==> public fun makeScriptDefsFromTemplatesProviders(providers: Iterable<ScriptTemplatesProvider>, errorsHandler: (ScriptTemplatesProvider, Throwable) -> Unit = ...): List<KotlinScriptDefinition> defined in org.jetbrains.kotlin.script in file scriptTemplateProviderExtensionPoint.kt[SimpleFunctionDescriptorImpl]
 
 'getArea' @ [66:57] ==> @NotNull public open fun getArea(@Nullable p0: AreaInstance?): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
@@ -20,9 +20,7 @@ Inferred types:
 
 'getExtensionPoint' @ [66:74] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensionPoint(@NotNull p0: ExtensionPointName<(ScriptTemplatesProvider..ScriptTemplatesProvider?)>): ExtensionPoint<(ScriptTemplatesProvider..ScriptTemplatesProvider?)> defined in com.intellij.openapi.extensions.ExtensionsArea[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScriptTemplatesProvider
-
-'ScriptTemplatesProvider' @ [66:92] ==> public companion object defined in org.jetbrains.kotlin.script.ScriptTemplatesProvider[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.ScriptTemplatesProvider..org.jetbrains.kotlin.script.ScriptTemplatesProvider?)
 
 'EP_NAME' @ [66:116] ==> public final val EP_NAME: ExtensionPointName<ScriptTemplatesProvider> defined in org.jetbrains.kotlin.script.ScriptTemplatesProvider.Companion[PropertyDescriptorImpl]
 
@@ -68,7 +66,7 @@ Inferred types:
 
 'kotlin' @ [76:42] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'provider' @ [76:50] ==> value-parameter provider: ScriptTemplatesProvider defined in org.jetbrains.kotlin.script.makeScriptDefsFromTemplatesProviders.<anonymous>[ValueParameterDescriptorImpl]
 

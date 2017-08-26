@@ -155,7 +155,7 @@ Inferred types:
 
 'getParentElementOfType' @ [102:58] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(T..T?)>..Class<(T..T?)>?)): T? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> T
+    <T : (PsiElement..PsiElement?)> -> (T..T?)
 
 'diagnostic' @ [102:81] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.Companion.createFactory.<no name provided>.createAction[ValueParameterDescriptorImpl]
 
@@ -251,17 +251,17 @@ Inferred types:
 
 'diagnostic' @ [138:75] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.AddLateinitFactory.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [138:87] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtProperty..KtProperty?)>.psiElement: (KtProperty..KtProperty?)[MyPropertyDescriptor]
+'psiElement' @ [138:87] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtProperty..KtProperty?)>.psiElement: KtProperty[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 '!' @ [139:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'property' @ [139:18] ==> val property: (KtProperty..KtProperty?) defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.AddLateinitFactory.createAction[LocalVariableDescriptor]
+'property' @ [139:18] ==> val property: KtProperty defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.AddLateinitFactory.createAction[LocalVariableDescriptor]
 
 'isVar' @ [139:27] ==> public final val KtProperty.isVar: Boolean[MyPropertyDescriptor]
 
-'property' @ [141:27] ==> val property: (KtProperty..KtProperty?) defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.AddLateinitFactory.createAction[LocalVariableDescriptor]
+'property' @ [141:27] ==> val property: KtProperty defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.AddLateinitFactory.createAction[LocalVariableDescriptor]
 
 'analyze' @ [141:36] ==> @JvmOverloads public fun KtElement.analyze(bodyResolveMode: BodyResolveMode = ...): BindingContext defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
@@ -269,7 +269,7 @@ Inferred types:
 
 'DECLARATION_TO_DESCRIPTOR' @ [142:53] ==> public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
-'property' @ [142:80] ==> val property: (KtProperty..KtProperty?) defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.AddLateinitFactory.createAction[LocalVariableDescriptor]
+'property' @ [142:80] ==> val property: KtProperty defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.AddLateinitFactory.createAction[LocalVariableDescriptor]
 
 '?:' @ [143:24] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinType?, right: KotlinType): KotlinType[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -289,7 +289,7 @@ Inferred types:
 
 'AddModifierFix' @ [148:20] ==> public constructor AddModifierFix(element: KtModifierListOwner, modifier: KtModifierKeywordToken) defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[ClassConstructorDescriptorImpl]
 
-'property' @ [148:35] ==> val property: (KtProperty..KtProperty?) defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.AddLateinitFactory.createAction[LocalVariableDescriptor]
+'property' @ [148:35] ==> val property: KtProperty defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.AddLateinitFactory.createAction[LocalVariableDescriptor]
 
 'LATEINIT_KEYWORD' @ [148:54] ==> public final val LATEINIT_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 

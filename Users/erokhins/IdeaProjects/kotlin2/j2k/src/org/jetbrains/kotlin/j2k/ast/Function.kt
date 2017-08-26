@@ -44,7 +44,7 @@
 
 'modifiers' @ [52:25] ==> var modifiers: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Function.presentationModifiers[LocalVariableDescriptor]
 
-'filter' @ [52:35] ==> public fun Modifiers.filter(predicate: (Modifier) -> Boolean): Modifiers defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'filter' @ [52:35] ==> public fun Modifiers.filter(predicate: (Modifier) -> Boolean): Modifiers defined in org.jetbrains.kotlin.j2k.ast in file Modifier.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [52:44] ==> value-parameter it: Modifier defined in org.jetbrains.kotlin.j2k.ast.Function.presentationModifiers.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -102,15 +102,9 @@
 
 'Function' @ [84:28] ==> public constructor Function(name: Identifier, annotations: Annotations, modifiers: Modifiers, returnType: Type, typeParameterList: TypeParameterList, parameterList: ParameterList, body: DeferredElement<Block>?, isInInterface: Boolean) defined in org.jetbrains.kotlin.j2k.ast.Function[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [84:37] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'Empty' @ [84:48] ==> public final val Empty: Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[PropertyDescriptorImpl]
 
-'Annotations' @ [84:55] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Annotations[FakeCallableDescriptorForObject]
-
 'Empty' @ [84:67] ==> public final val Empty: Annotations defined in org.jetbrains.kotlin.j2k.ast.Annotations.Companion[PropertyDescriptorImpl]
-
-'Modifiers' @ [84:74] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Modifiers[FakeCallableDescriptorForObject]
 
 'Empty' @ [84:84] ==> public final val Empty: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Modifiers.Companion[PropertyDescriptorImpl]
 

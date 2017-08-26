@@ -10,7 +10,7 @@
 
 'orderEntries' @ [71:33] ==> @NotNull public abstract fun orderEntries(): OrderEnumerator defined in com.intellij.openapi.roots.ModifiableRootModel[JavaMethodDescriptor]
 
-'findLibrary' @ [71:48] ==> public fun OrderEnumerator.findLibrary(predicate: (Library) -> Boolean): Library? defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'findLibrary' @ [71:48] ==> public fun OrderEnumerator.findLibrary(predicate: (Library) -> Boolean): Library? defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'getInstance' @ [72:73] ==> public open fun getInstance(): (LibraryPresentationManager..LibraryPresentationManager?) defined in com.intellij.openapi.roots.ui.configuration.libraries.LibraryPresentationManager[JavaMethodDescriptor]
 
@@ -36,7 +36,7 @@ Inferred types:
 
 'modifiableModel' @ [78:29] ==> public final val Library.modifiableModel: Library.ModifiableModel[MyPropertyDescriptor]
 
-'createConfigureKotlinNotificationCollector' @ [80:29] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'createConfigureKotlinNotificationCollector' @ [80:29] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration in file NotificationMessageCollector.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [80:72] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.framework.CustomLibraryDescriptorWithDeferredConfig.finishLibConfiguration[ValueParameterDescriptorImpl]
 
@@ -498,7 +498,7 @@ Inferred types:
 
 'NewLibraryConfiguration' @ [213:25] ==> protected/*protected and package*/ constructor NewLibraryConfiguration<P : raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)>(@NotNull p0: String, @Nullable p1: LibraryType<(DummyLibraryProperties..DummyLibraryProperties?)>?, @Nullable p2: DummyLibraryProperties?) defined in com.intellij.openapi.roots.libraries.NewLibraryConfiguration[JavaClassConstructorDescriptor]
 Inferred types:
-    <P : raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)> -> DummyLibraryProperties
+    <P : raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)> -> (com.intellij.openapi.roots.libraries.DummyLibraryProperties..com.intellij.openapi.roots.libraries.DummyLibraryProperties?)
 
 'libraryName' @ [213:49] ==> private final val libraryName: String defined in org.jetbrains.kotlin.idea.framework.CustomLibraryDescriptorWithDeferredConfig[PropertyDescriptorImpl]
 

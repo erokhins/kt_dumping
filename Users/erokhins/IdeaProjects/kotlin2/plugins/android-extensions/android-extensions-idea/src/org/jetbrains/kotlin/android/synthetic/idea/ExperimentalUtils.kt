@@ -1,6 +1,8 @@
 'ANDROID_COMPILER_PLUGIN_ID' @ [33:49] ==> public final val ANDROID_COMPILER_PLUGIN_ID: String defined in org.jetbrains.kotlin.android.synthetic.AndroidCommandLineProcessor.Companion[PropertyImportedFromObject]
 
-'KotlinFacet' @ [36:23] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacet[FakeCallableDescriptorForObject]
+'?:' @ [36:23] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinFacet?, right: KotlinFacet): KotlinFacet[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinFacet
 
 'get' @ [36:35] ==> public final fun get(module: Module): KotlinFacet? defined in org.jetbrains.kotlin.idea.facet.KotlinFacet.Companion[DeserializedSimpleFunctionDescriptor]
 

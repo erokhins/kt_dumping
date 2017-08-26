@@ -42,7 +42,7 @@ Inferred types:
 
 'nullability' @ [49:40] ==> value-parameter nullability: Nullability defined in org.jetbrains.kotlin.j2k.ast.MayBeNullableType.<init>[ValueParameterDescriptorImpl]
 
-'isNullable' @ [49:52] ==> public fun Nullability.isNullable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'isNullable' @ [49:52] ==> public fun Nullability.isNullable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast in file Types.kt[SimpleFunctionDescriptorImpl]
 
 'settings' @ [49:63] ==> public final val settings: ConverterSettings defined in org.jetbrains.kotlin.j2k.ast.MayBeNullableType[PropertyDescriptorImpl]
 

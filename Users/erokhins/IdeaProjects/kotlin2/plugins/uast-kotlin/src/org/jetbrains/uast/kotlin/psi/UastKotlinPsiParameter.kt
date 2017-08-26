@@ -78,13 +78,13 @@ Inferred types:
 
 'java' @ [49:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [49:51] ==> <this> defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiParameter[LazyClassReceiverParameterDescriptor]
 
 'java' @ [49:63] ==> public val <T> KClass<out UastKotlinPsiParameter>.java: Class<out UastKotlinPsiParameter> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> UastKotlinPsiParameter
+    <T> -> Captured(out UastKotlinPsiParameter)
 
 'ktParameter' @ [50:16] ==> public final val ktParameter: KtParameter defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiParameter[PropertyDescriptorImpl]
 

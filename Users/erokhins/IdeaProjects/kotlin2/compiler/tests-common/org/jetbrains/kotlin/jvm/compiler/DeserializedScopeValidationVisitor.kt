@@ -44,7 +44,7 @@ Inferred types:
 
 'member' @ [42:97] ==> value-parameter member: DeclarationDescriptor defined in org.jetbrains.kotlin.jvm.compiler.validateDeserializedScope.<anonymous>[ValueParameterDescriptorImpl]
 
-'checkSorted' @ [44:9] ==> private fun checkSorted(descriptors: Collection<DeclarationDescriptor>, declaration: DeclarationDescriptor): Unit defined in org.jetbrains.kotlin.jvm.compiler[SimpleFunctionDescriptorImpl]
+'checkSorted' @ [44:9] ==> private fun checkSorted(descriptors: Collection<DeclarationDescriptor>, declaration: DeclarationDescriptor): Unit defined in org.jetbrains.kotlin.jvm.compiler in file DeserializedScopeValidationVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'relevantDescriptors' @ [44:21] ==> val relevantDescriptors: List<DeclarationDescriptor> defined in org.jetbrains.kotlin.jvm.compiler.validateDeserializedScope[LocalVariableDescriptor]
 
@@ -60,7 +60,7 @@ Inferred types:
 
 'assertOrderedEquals' @ [50:22] ==> public open fun <T : (Any..Any?)> assertOrderedEquals(erroMsg: (String..String?), actual: (MutableIterable<(DeclarationDescriptor..DeclarationDescriptor?)>..Iterable<(DeclarationDescriptor..DeclarationDescriptor?)>?), expected: (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)): Unit defined in org.jetbrains.kotlin.test.testFramework.KtUsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DeclarationDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'declaration' @ [51:26] ==> value-parameter declaration: DeclarationDescriptor defined in org.jetbrains.kotlin.jvm.compiler.checkSorted[ValueParameterDescriptorImpl]
 

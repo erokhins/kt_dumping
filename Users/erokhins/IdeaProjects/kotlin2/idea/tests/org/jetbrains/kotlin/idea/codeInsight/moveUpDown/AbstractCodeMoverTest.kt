@@ -26,7 +26,7 @@ Inferred types:
 
 'getExtensions' @ [52:37] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(StatementUpDownMover..StatementUpDownMover?)>): (Array<(StatementUpDownMover..StatementUpDownMover?)>..Array<out (StatementUpDownMover..StatementUpDownMover?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> StatementUpDownMover
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.editorActions.moveUpDown.StatementUpDownMover..com.intellij.codeInsight.editorActions.moveUpDown.StatementUpDownMover?)
 
 'STATEMENT_UP_DOWN_MOVER_EP' @ [52:72] ==> public final val STATEMENT_UP_DOWN_MOVER_EP: (ExtensionPointName<(StatementUpDownMover..StatementUpDownMover?)>..ExtensionPointName<(StatementUpDownMover..StatementUpDownMover?)>?) defined in com.intellij.codeInsight.editorActions.moveUpDown.StatementUpDownMover[JavaPropertyDescriptor]
 
@@ -58,17 +58,17 @@ Inferred types:
 
 'name' @ [58:64] ==> public final val <T : (Any..Any?)> Class<out StatementUpDownMover>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> StatementUpDownMover
+    <T : (Any..Any?)> -> Captured(out StatementUpDownMover)
 
 'actualMover' @ [58:70] ==> val actualMover: StatementUpDownMover defined in org.jetbrains.kotlin.idea.codeInsight.moveUpDown.AbstractMoveStatementTest.doTest.<anonymous>[LocalVariableDescriptor]
 
 'java' @ [58:89] ==> public val <T> KClass<out StatementUpDownMover>.java: Class<out StatementUpDownMover> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> StatementUpDownMover
+    <T> -> Captured(out StatementUpDownMover)
 
 'name' @ [58:94] ==> public final val <T : (Any..Any?)> Class<out StatementUpDownMover>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> StatementUpDownMover
+    <T : (Any..Any?)> -> Captured(out StatementUpDownMover)
 
 'assertEquals' @ [59:13] ==> public open fun assertEquals(p0: (String..String?), p1: Boolean, p2: Boolean): Unit defined in com.intellij.testFramework.LightCodeInsightTestCase[JavaMethodDescriptor]
 
@@ -92,11 +92,11 @@ Inferred types:
 
 'getApplication' @ [73:28] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 
-'isScriptDependenciesUpdaterDisabled' @ [73:45] ==> public var Application.isScriptDependenciesUpdaterDisabled: Boolean defined in org.jetbrains.kotlin.idea.core.script[DeserializedPropertyDescriptor]
+'isScriptDependenciesUpdaterDisabled' @ [73:45] ==> public var Application.isScriptDependenciesUpdaterDisabled: (Boolean..Boolean?) defined in org.jetbrains.kotlin.idea.core.script[DeserializedPropertyDescriptor]
 
 'getApplication' @ [77:28] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 
-'isScriptDependenciesUpdaterDisabled' @ [77:45] ==> public var Application.isScriptDependenciesUpdaterDisabled: Boolean defined in org.jetbrains.kotlin.idea.core.script[DeserializedPropertyDescriptor]
+'isScriptDependenciesUpdaterDisabled' @ [77:45] ==> public var Application.isScriptDependenciesUpdaterDisabled: (Boolean..Boolean?) defined in org.jetbrains.kotlin.idea.core.script[DeserializedPropertyDescriptor]
 
 'super' @ [78:9] ==> <this> defined in org.jetbrains.kotlin.idea.codeInsight.moveUpDown.AbstractCodeMoverTest[LazyClassReceiverParameterDescriptor]
 

@@ -68,7 +68,7 @@ Inferred types:
 
 'name' @ [61:135] ==> public final val name: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.AnalysisResult.ErrorMessage[DeserializedPropertyDescriptor]
 
-'mergeAttachments' @ [62:21] ==> public fun mergeAttachments(vararg attachments: Attachment?): Attachment defined in org.jetbrains.kotlin.idea.util.attachment[SimpleFunctionDescriptorImpl]
+'mergeAttachments' @ [62:21] ==> public fun mergeAttachments(vararg attachments: Attachment?): Attachment defined in org.jetbrains.kotlin.idea.util.attachment in file attachmentUtils.kt[SimpleFunctionDescriptorImpl]
 
 'attachments' @ [62:39] ==> val attachments: Array<Attachment?> defined in org.jetbrains.kotlin.idea.debugger.evaluate.getFunctionForExtractedFragment.getErrorMessageForExtractFunctionResult[LocalVariableDescriptor]
 
@@ -153,7 +153,7 @@ Inferred types:
 
 'getContextContainingFile' @ [83:41] ==> public final fun getContextContainingFile(): KtFile? defined in org.jetbrains.kotlin.psi.KtCodeFragment[DeserializedSimpleFunctionDescriptor]
 
-'addDebugExpressionIntoTmpFileForExtractFunction' @ [85:35] ==> public fun addDebugExpressionIntoTmpFileForExtractFunction(originalFile: KtFile, codeFragment: KtCodeFragment, line: Int): List<KtExpression> defined in org.jetbrains.kotlin.idea.debugger.evaluate[SimpleFunctionDescriptorImpl]
+'addDebugExpressionIntoTmpFileForExtractFunction' @ [85:35] ==> public fun addDebugExpressionIntoTmpFileForExtractFunction(originalFile: KtFile, codeFragment: KtCodeFragment, line: Int): List<KtExpression> defined in org.jetbrains.kotlin.idea.debugger.evaluate in file extractFunctionForDebuggerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'originalFile' @ [85:83] ==> val originalFile: KtFile defined in org.jetbrains.kotlin.idea.debugger.evaluate.getFunctionForExtractedFragment.generateFunction[LocalVariableDescriptor]
 
@@ -326,7 +326,7 @@ Inferred types:
 
 'tmpFile' @ [129:58] ==> val tmpFile: KtFile defined in org.jetbrains.kotlin.idea.debugger.evaluate.addDebugExpressionIntoTmpFileForExtractFunction[LocalVariableDescriptor]
 
-'addDebugExpressionBeforeContextElement' @ [131:36] ==> private fun addDebugExpressionBeforeContextElement(codeFragment: KtCodeFragment, contextElement: PsiElement): List<KtExpression> defined in org.jetbrains.kotlin.idea.debugger.evaluate[SimpleFunctionDescriptorImpl]
+'addDebugExpressionBeforeContextElement' @ [131:36] ==> private fun addDebugExpressionBeforeContextElement(codeFragment: KtCodeFragment, contextElement: PsiElement): List<KtExpression> defined in org.jetbrains.kotlin.idea.debugger.evaluate in file extractFunctionForDebuggerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'codeFragment' @ [131:75] ==> value-parameter codeFragment: KtCodeFragment defined in org.jetbrains.kotlin.idea.debugger.evaluate.addDebugExpressionIntoTmpFileForExtractFunction[ValueParameterDescriptorImpl]
 
@@ -352,14 +352,11 @@ Inferred types:
 
 'contentElementsInTmpFile' @ [137:12] ==> val contentElementsInTmpFile: List<KtExpression> defined in org.jetbrains.kotlin.idea.debugger.evaluate.addDebugExpressionIntoTmpFileForExtractFunction[LocalVariableDescriptor]
 
-'NotNullableCopyableUserDataProperty' @ [140:55] ==> public constructor NotNullableCopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> PsiElement
-    <T : Any> -> Boolean
+'getValue' @ [140:55] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [140:95] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'getOriginalContext' @ [143:5] ==> public final fun getOriginalContext(): KtElement? defined in org.jetbrains.kotlin.psi.KtCodeFragment[DeserializedSimpleFunctionDescriptor]
 
@@ -379,14 +376,11 @@ Inferred types:
 
 'IS_CONTEXT_ELEMENT' @ [151:43] ==> private var PsiElement.IS_CONTEXT_ELEMENT: Boolean defined in org.jetbrains.kotlin.idea.debugger.evaluate in file extractFunctionForDebuggerUtil.kt[PropertyDescriptorImpl]
 
-'CopyableUserDataProperty' @ [154:57] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<PsiElement>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> PsiElement
-    <T : Any> -> PsiElement
+'getValue' @ [154:57] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [154:86] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(PsiElement..PsiElement?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'runInReadActionWithWriteActionPriorityWithPCE' @ [157:26] ==> public fun <T : Any> runInReadActionWithWriteActionPriorityWithPCE(f: () -> BindingContext): BindingContext defined in org.jetbrains.kotlin.idea[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -408,8 +402,8 @@ Inferred types:
 
 'get' @ [161:40] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>..ReadOnlySlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>?), p1: (KtExpression..KtExpression?)): ExplicitSmartCasts? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> ExplicitSmartCasts
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts..org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts?)
 
 'SMARTCAST' @ [161:44] ==> public final val SMARTCAST: (WritableSlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>..WritableSlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -684,6 +678,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <R> -> KtExpression
+
+'insertExpression' @ [246:70] ==> local final fun insertExpression(expr: KtElement?): List<KtExpression> defined in org.jetbrains.kotlin.idea.debugger.evaluate.addDebugExpressionBeforeContextElement[SimpleFunctionDescriptorImpl]
 
 'parent' @ [248:42] ==> val parent: PsiElement defined in org.jetbrains.kotlin.idea.debugger.evaluate.addDebugExpressionBeforeContextElement[LocalVariableDescriptor]
 

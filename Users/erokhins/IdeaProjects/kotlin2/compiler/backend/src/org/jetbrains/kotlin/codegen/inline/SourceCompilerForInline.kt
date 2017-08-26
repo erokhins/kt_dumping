@@ -16,17 +16,17 @@ Inferred types:
 
 'callElement' @ [100:56] ==> public open val callElement: KtElement defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline[PropertyDescriptorImpl]
 
-'lazy' @ [103:37] ==> public fun <T> lazy(initializer: () -> (String..String?)): Lazy<(String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [103:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (kotlin.String..kotlin.String?)
+    <T> -> T
 
 'callElement' @ [104:9] ==> public open val callElement: KtElement defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline[PropertyDescriptorImpl]
 
 'text' @ [104:21] ==> public final val KtElement.text: (String..String?)[MyPropertyDescriptor]
 
-'lazy' @ [107:34] ==> public fun <T> lazy(initializer: () -> (PsiFile..PsiFile?)): Lazy<(PsiFile..PsiFile?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [107:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (com.intellij.psi.PsiFile..com.intellij.psi.PsiFile?)
+    <T> -> T
 
 'callElement' @ [108:9] ==> public open val callElement: KtElement defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline[PropertyDescriptorImpl]
 
@@ -36,7 +36,7 @@ Inferred types:
 
 'contextKind' @ [112:26] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.contextKind: OwnerKind[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 
 'codegen' @ [116:27] ==> private final val codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline[PropertyDescriptorImpl]
 
@@ -104,7 +104,7 @@ Inferred types:
 
 'className' @ [129:35] ==> public final val <T : (KtPureElement..KtPureElement?)> MemberCodegen<out (KtPureElement..KtPureElement?)>.className: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (KtPureElement..KtPureElement?)> -> (org.jetbrains.kotlin.psi.KtPureElement..org.jetbrains.kotlin.psi.KtPureElement?)
+    <T : (KtPureElement..KtPureElement?)> -> Captured(*)
 
 'signature' @ [129:46] ==> val signature: JvmMethodSignature defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline.<get-inlineCallSiteInfo>[LocalVariableDescriptor]
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'orCreateSourceMapper' @ [134:39] ==> public final val <T : (KtPureElement..KtPureElement?)> MemberCodegen<out (KtPureElement..KtPureElement?)>.orCreateSourceMapper: DefaultSourceMapper[MyPropertyDescriptor]
 Inferred types:
-    <T : (KtPureElement..KtPureElement?)> -> (org.jetbrains.kotlin.psi.KtPureElement..org.jetbrains.kotlin.psi.KtPureElement?)
+    <T : (KtPureElement..KtPureElement?)> -> Captured(*)
 
 'lambdaInfo' @ [139:38] ==> value-parameter lambdaInfo: ExpressionLambda defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline.generateLambdaBody[ValueParameterDescriptorImpl]
 
@@ -152,8 +152,6 @@ Inferred types:
 'classDescriptor' @ [142:72] ==> public final val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.codegen.inline.ExpressionLambda[PropertyDescriptorImpl]
 
 'codegen' @ [142:89] ==> private final val codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline[PropertyDescriptorImpl]
-
-'OwnerKind' @ [142:98] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'IMPLEMENTATION' @ [142:108] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
@@ -230,7 +228,7 @@ Inferred types:
 
 'className' @ [168:43] ==> public final val <T : (KtPureElement..KtPureElement?)> MemberCodegen<out (KtPureElement..KtPureElement?)>.className: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (KtPureElement..KtPureElement?)> -> (org.jetbrains.kotlin.psi.KtPureElement..org.jetbrains.kotlin.psi.KtPureElement?)
+    <T : (KtPureElement..KtPureElement?)> -> Captured(*)
 
 'state' @ [170:21] ==> public open val state: GenerationState defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline[PropertyDescriptorImpl]
 
@@ -365,8 +363,6 @@ Inferred types:
 
 'propertyReferenceInfo' @ [185:43] ==> public final val propertyReferenceInfo: PropertyReferenceInfo? defined in org.jetbrains.kotlin.codegen.inline.ExpressionLambda[PropertyDescriptorImpl]
 
-'PropertyReferenceCodegen' @ [186:21] ==> public companion object defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen[FakeCallableDescriptorForObject]
-
 'PropertyReferenceGenerationStrategy' @ [186:46] ==> public constructor PropertyReferenceGenerationStrategy(isGetter: Boolean, originalFunctionDesc: FunctionDescriptor, target: VariableDescriptor, asmType: Type, receiverType: Type?, expression: KtElement, state: GenerationState, isInliningStrategy: Boolean) defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen.PropertyReferenceGenerationStrategy[ClassConstructorDescriptorImpl]
 
 'info' @ [187:35] ==> val info: PropertyReferenceInfo? defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline.generateMethodBody[LocalVariableDescriptor]
@@ -455,7 +451,9 @@ Inferred types:
 
 'containingFile' @ [219:42] ==> public final val KtExpression.containingFile: (PsiFile..PsiFile?)[MyPropertyDescriptor]
 
-'CodegenUtil' @ [220:9] ==> public object CodegenUtil defined in org.jetbrains.kotlin.backend.common[FakeCallableDescriptorForObject]
+'?:' @ [220:9] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Int?, right: Int): Int[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Int
 
 'getLineNumberForElement' @ [220:21] ==> @JvmStatic public final fun getLineNumberForElement(statement: PsiElement, markEndOffset: Boolean): Int? defined in org.jetbrains.kotlin.backend.common.CodegenUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -493,7 +491,7 @@ Inferred types:
 
 'inlineNameGenerator' @ [248:29] ==> public final val <T : (KtPureElement..KtPureElement?)> MemberCodegen<out (KtPureElement..KtPureElement?)>.inlineNameGenerator: NameGenerator[MyPropertyDescriptor]
 Inferred types:
-    <T : (KtPureElement..KtPureElement?)> -> (org.jetbrains.kotlin.psi.KtPureElement..org.jetbrains.kotlin.psi.KtPureElement?)
+    <T : (KtPureElement..KtPureElement?)> -> Captured(*)
 
 'className' @ [253:20] ==> private final val className: String defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline.FakeMemberCodegen[PropertyDescriptorImpl]
 
@@ -554,7 +552,7 @@ Inferred types:
 
 'contextKind' @ [281:71] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.contextKind: OwnerKind[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 
 'state' @ [281:84] ==> public open val state: GenerationState defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline[PropertyDescriptorImpl]
 
@@ -582,7 +580,7 @@ Inferred types:
 
 'parentContext' @ [288:37] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.parentContext: raw (CodegenContext<(DeclarationDescriptor..DeclarationDescriptor?)>?..CodegenContext<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 
 'error' @ [288:54] ==> @InlineOnly public inline fun error(message: Any): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -991,8 +989,6 @@ Inferred types:
 
 'getDeclarationLabels' @ [405:30] ==> public final fun getDeclarationLabels(lambdaOrFun: PsiElement?, descriptor: DeclarationDescriptor): Set<String> defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.Companion[SimpleFunctionDescriptorImpl]
 
-'DescriptorToSourceUtils' @ [405:51] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
-
 'descriptorToDeclaration' @ [405:75] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
 'descriptor' @ [405:99] ==> val descriptor: CallableMemberDescriptor defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline.getContextLabels[LocalVariableDescriptor]
@@ -1121,11 +1117,7 @@ Inferred types:
 
 'innerDescriptor' @ [441:76] ==> value-parameter innerDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline.Companion.getContext[ValueParameterDescriptorImpl]
 
-'OwnerKind' @ [442:33] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
 'DEFAULT_IMPLS' @ [442:43] ==> enum entry DEFAULT_IMPLS defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
-'OwnerKind' @ [443:34] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'IMPLEMENTATION' @ [443:44] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
@@ -1135,15 +1127,11 @@ Inferred types:
 Inferred types:
     <T : Any> -> ClassDescriptor
 
-'InnerClassConsumer' @ [446:29] ==> public companion object defined in org.jetbrains.kotlin.codegen.InnerClassConsumer[FakeCallableDescriptorForObject]
-
 'classForInnerClassRecord' @ [446:48] ==> public final fun classForInnerClassRecord(descriptor: ClassDescriptor, defaultImpls: Boolean): ClassDescriptor? defined in org.jetbrains.kotlin.codegen.InnerClassConsumer.Companion[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [446:73] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline.Companion.getContext[ValueParameterDescriptorImpl]
 
 'kind' @ [446:85] ==> val kind: OwnerKind defined in org.jetbrains.kotlin.codegen.inline.PsiSourceCompilerForInline.Companion.getContext[LocalVariableDescriptor]
-
-'OwnerKind' @ [446:93] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'DEFAULT_IMPLS' @ [446:103] ==> enum entry DEFAULT_IMPLS defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 

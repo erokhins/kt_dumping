@@ -37,8 +37,6 @@ Inferred types:
 
 'function' @ [81:57] ==> value-parameter function: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.<init>[ValueParameterDescriptorImpl]
 
-'FictitiousArrayConstructor' @ [82:17] ==> public companion object Factory defined in org.jetbrains.kotlin.codegen.inline.FictitiousArrayConstructor[FakeCallableDescriptorForObject]
-
 'create' @ [82:44] ==> @JvmStatic public final fun create(arrayConstructor: ConstructorDescriptor): FictitiousArrayConstructor defined in org.jetbrains.kotlin.codegen.inline.FictitiousArrayConstructor.Factory[SimpleFunctionDescriptorImpl]
 
 'function' @ [82:51] ==> value-parameter function: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.<init>[ValueParameterDescriptorImpl]
@@ -150,8 +148,6 @@ Inferred types:
 
 'name' @ [128:70] ==> public final val FunctionDescriptor.name: Name[MyPropertyDescriptor]
 
-'DescriptorRenderer' @ [129:17] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'DEBUG_TEXT' @ [129:36] ==> @field:JvmField public final val DEBUG_TEXT: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
 'render' @ [129:47] ==> public abstract fun render(declarationDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -192,7 +188,7 @@ Inferred types:
 
 'call' @ [139:73] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [139:78] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -314,7 +310,7 @@ Inferred types:
 
 'callDefault' @ [187:13] ==> value-parameter callDefault: Boolean defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.inlineCall[ValueParameterDescriptorImpl]
 
-'expandMaskConditionsAndUpdateVariableNodes' @ [188:34] ==> public fun expandMaskConditionsAndUpdateVariableNodes(node: MethodNode, maskStartIndex: Int, masks: List<Int>, methodHandlerIndex: Int, defaultLambdas: Map<Int, ValueParameterDescriptor>): List<DefaultLambda> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'expandMaskConditionsAndUpdateVariableNodes' @ [188:34] ==> public fun expandMaskConditionsAndUpdateVariableNodes(node: MethodNode, maskStartIndex: Int, masks: List<Int>, methodHandlerIndex: Int, defaultLambdas: Map<Int, ValueParameterDescriptor>): List<DefaultLambda> defined in org.jetbrains.kotlin.codegen.inline in file defaultMethodUtil.kt[SimpleFunctionDescriptorImpl]
 
 'node' @ [189:21] ==> val node: MethodNode defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.inlineCall[LocalVariableDescriptor]
 
@@ -324,7 +320,7 @@ Inferred types:
 
 'methodHandleInDefaultMethodIndex' @ [189:55] ==> protected final var methodHandleInDefaultMethodIndex: Int defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen[PropertyDescriptorImpl]
 
-'extractDefaultLambdaOffsetAndDescriptor' @ [190:21] ==> public fun extractDefaultLambdaOffsetAndDescriptor(jvmSignature: JvmMethodSignature, functionDescriptor: FunctionDescriptor): Map<Int, ValueParameterDescriptor> defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'extractDefaultLambdaOffsetAndDescriptor' @ [190:21] ==> public fun extractDefaultLambdaOffsetAndDescriptor(jvmSignature: JvmMethodSignature, functionDescriptor: FunctionDescriptor): Map<Int, ValueParameterDescriptor> defined in org.jetbrains.kotlin.codegen.inline in file defaultMethodUtil.kt[SimpleFunctionDescriptorImpl]
 
 'jvmSignature' @ [190:61] ==> protected final val jvmSignature: JvmMethodGenericSignature defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen[PropertyDescriptorImpl]
 
@@ -498,7 +494,7 @@ Inferred types:
 
 'adapter' @ [231:50] ==> val adapter: MethodNode defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.inlineCall[LocalVariableDescriptor]
 
-'LabelOwner' @ [231:59] ==> public fun LabelOwner(function: (name: String) -> Boolean): LabelOwner defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'LabelOwner' @ [231:59] ==> public fun LabelOwner(function: (name: String) -> Boolean): LabelOwner defined in org.jetbrains.kotlin.codegen.inline in file LabelOwner.java[SamConstructorDescriptorImpl]
 
 'labels' @ [231:72] ==> val labels: Set<String> defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.inlineCall[LocalVariableDescriptor]
 
@@ -1022,7 +1018,7 @@ Inferred types:
 
 'typeArguments' @ [402:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'createSpecialEnumMethodBody' @ [404:28] ==> internal fun createSpecialEnumMethodBody(codegen: BaseExpressionCodegen, name: String, type: KotlinType, typeMapper: KotlinTypeMapper): MethodNode defined in org.jetbrains.kotlin.codegen.inline in file inlineCodegenUtils.kt[SimpleFunctionDescriptorImpl]
 
@@ -1052,8 +1048,6 @@ Inferred types:
 
 'node' @ [410:42] ==> val node: MethodNode defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.Companion.createInlineMethodNode[LocalVariableDescriptor]
 
-'SMAPParser' @ [410:48] ==> public object SMAPParser defined in org.jetbrains.kotlin.codegen.inline in file SMAPParser.kt[FakeCallableDescriptorForObject]
-
 'parseOrCreateDefault' @ [410:59] ==> @JvmStatic public final fun parseOrCreateDefault(mappingInfo: String?, source: String?, path: String, methodStartLine: Int, methodEndLine: Int): SMAP defined in org.jetbrains.kotlin.codegen.inline.SMAPParser[SimpleFunctionDescriptorImpl]
 
 '-' @ [410:100] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
@@ -1062,7 +1056,7 @@ Inferred types:
 
 'functionDescriptor' @ [412:22] ==> value-parameter functionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.Companion.createInlineMethodNode[ValueParameterDescriptorImpl]
 
-'isBuiltInSuspendCoroutineOrReturnInJvm' @ [412:41] ==> public fun FunctionDescriptor.isBuiltInSuspendCoroutineOrReturnInJvm(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'isBuiltInSuspendCoroutineOrReturnInJvm' @ [412:41] ==> public fun FunctionDescriptor.isBuiltInSuspendCoroutineOrReturnInJvm(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'SMAPAndMethodNode' @ [413:24] ==> public constructor SMAPAndMethodNode(node: MethodNode, classSMAP: SMAP) defined in org.jetbrains.kotlin.codegen.inline.SMAPAndMethodNode[ClassConstructorDescriptorImpl]
 
@@ -1073,8 +1067,6 @@ Inferred types:
 'state' @ [415:53] ==> value-parameter state: GenerationState defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.Companion.createInlineMethodNode[ValueParameterDescriptorImpl]
 
 'typeMapper' @ [415:59] ==> public final val typeMapper: KotlinTypeMapper defined in org.jetbrains.kotlin.codegen.state.GenerationState[PropertyDescriptorImpl]
-
-'SMAPParser' @ [417:25] ==> public object SMAPParser defined in org.jetbrains.kotlin.codegen.inline in file SMAPParser.kt[FakeCallableDescriptorForObject]
 
 'parseOrCreateDefault' @ [417:36] ==> @JvmStatic public final fun parseOrCreateDefault(mappingInfo: String?, source: String?, path: String, methodStartLine: Int, methodEndLine: Int): SMAP defined in org.jetbrains.kotlin.codegen.inline.SMAPParser[SimpleFunctionDescriptorImpl]
 
@@ -1229,6 +1221,8 @@ Inferred types:
     <T> -> MethodNode
 
 'methodNode' @ [451:20] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.Companion.cloneMethodNode[ValueParameterDescriptorImpl]
+
+'accept' @ [451:32] ==> public open fun accept(p0: (MethodVisitor..MethodVisitor?)): Unit defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaMethodDescriptor]
 
 'isBuiltInArrayIntrinsic' @ [459:17] ==> private final fun isBuiltInArrayIntrinsic(callableDescriptor: CallableMemberDescriptor): Boolean defined in org.jetbrains.kotlin.codegen.inline.InlineCodegen.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1651,8 +1645,8 @@ Inferred types:
 
 'get' @ [622:48] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?), p1: (KtExpression..KtExpression?)): DoubleColonLHS? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> DoubleColonLHS
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.DoubleColonLHS..org.jetbrains.kotlin.types.expressions.DoubleColonLHS?)
 
 'DOUBLE_COLON_LHS' @ [622:67] ==> public final val DOUBLE_COLON_LHS: (WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1728,7 +1722,7 @@ Inferred types:
 
 'type' @ [649:106] ==> @NotNull public final val type: Type defined in org.jetbrains.kotlin.codegen.StackValue[JavaPropertyDescriptor]
 
-'boxReceiverForBoundReference' @ [649:111] ==> public fun Type.boxReceiverForBoundReference(): Type defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'boxReceiverForBoundReference' @ [649:111] ==> public fun Type.boxReceiverForBoundReference(): Type defined in org.jetbrains.kotlin.codegen.inline in file LambdaInfo.kt[SimpleFunctionDescriptorImpl]
 
 'codegen' @ [653:25] ==> protected final val codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.inline.PsiInlineCodegen[PropertyDescriptorImpl]
 

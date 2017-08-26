@@ -125,7 +125,7 @@ Inferred types:
 
 'makeRef' @ [52:50] ==> @NotNull public open fun makeRef(): JsNameRef defined in org.jetbrains.kotlin.js.backend.ast.JsName[JavaMethodDescriptor]
 
-'collectDefinedNames' @ [63:18] ==> public fun collectDefinedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectDefinedNames' @ [63:18] ==> public fun collectDefinedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [63:38] ==> value-parameter function: JsFunction defined in org.jetbrains.kotlin.js.inline.util.renameLocalNames[ValueParameterDescriptorImpl]
 
@@ -169,7 +169,7 @@ Inferred types:
 
 'accept' @ [76:20] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsNode..JsNode?)): (JsNode..JsNode?) defined in org.jetbrains.kotlin.js.inline.util.rewriters.LabelNameRefreshingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsNode
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'node' @ [76:27] ==> value-parameter node: JsNode defined in org.jetbrains.kotlin.js.inline.util.refreshLabelNames[ValueParameterDescriptorImpl]
 

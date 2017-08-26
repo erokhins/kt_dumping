@@ -8,7 +8,7 @@
 
 'SmartList' @ [29:52] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> IrBranch
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.ir.expressions.IrBranch..org.jetbrains.kotlin.ir.expressions.IrBranch?)
 
 'this' @ [37:9] ==> public constructor IrIfThenElseImpl(startOffset: Int, endOffset: Int, type: KotlinType, origin: IrStatementOrigin? = ...) defined in org.jetbrains.kotlin.ir.expressions.impl.IrIfThenElseImpl[ClassConstructorDescriptorImpl]
 
@@ -39,8 +39,6 @@ Inferred types:
 'branches' @ [40:13] ==> public open val branches: MutableList<IrBranch> defined in org.jetbrains.kotlin.ir.expressions.impl.IrIfThenElseImpl[PropertyDescriptorImpl]
 
 'add' @ [40:22] ==> public abstract fun add(element: IrBranch): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
-
-'IrBranchImpl' @ [40:26] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrBranchImpl[FakeCallableDescriptorForObject]
 
 'elseBranch' @ [40:39] ==> public final fun elseBranch(result: IrExpression): IrElseBranchImpl defined in org.jetbrains.kotlin.ir.expressions.impl.IrBranchImpl.Companion[SimpleFunctionDescriptorImpl]
 

@@ -16,11 +16,11 @@ Inferred types:
 
 'asList' @ [36:45] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (KtDeclaration..KtDeclaration?)): (MutableList<(KtDeclaration..KtDeclaration?)>..List<(KtDeclaration..KtDeclaration?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtDeclaration
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
 'getStubOrPsiChildren' @ [36:53] ==> @NotNull public open fun <Psi : (PsiElement..PsiElement?)> getStubOrPsiChildren(@NotNull p0: TokenSet, @NotNull p1: ArrayFactory<(KtDeclaration..KtDeclaration?)>): (Array<(KtDeclaration..KtDeclaration?)>..Array<out (KtDeclaration..KtDeclaration?)>) defined in org.jetbrains.kotlin.psi.KtClassBody[JavaMethodDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> KtDeclaration
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
 'DECLARATION_TYPES' @ [36:74] ==> public final val DECLARATION_TYPES: (TokenSet..TokenSet?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -42,22 +42,22 @@ Inferred types:
 
 'getStubOrPsiChildrenAsList' @ [44:17] ==> @NotNull protected/*protected and package*/ open fun <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?), StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> getStubOrPsiChildrenAsList(@NotNull elementType: KtStubElementType<(KotlinPlaceHolderStub<(KtSecondaryConstructor..KtSecondaryConstructor?)>..KotlinPlaceHolderStub<(KtSecondaryConstructor..KtSecondaryConstructor?)>?), (KtSecondaryConstructor..KtSecondaryConstructor?)>): (MutableList<(KtSecondaryConstructor..KtSecondaryConstructor?)>..List<(KtSecondaryConstructor..KtSecondaryConstructor?)>) defined in org.jetbrains.kotlin.psi.KtClassBody[JavaMethodDescriptor]
 Inferred types:
-    <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?)> -> KtSecondaryConstructor
-    <StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> KotlinPlaceHolderStub<(org.jetbrains.kotlin.psi.KtSecondaryConstructor..org.jetbrains.kotlin.psi.KtSecondaryConstructor?)>
+    <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?)> -> (org.jetbrains.kotlin.psi.KtSecondaryConstructor..org.jetbrains.kotlin.psi.KtSecondaryConstructor?)
+    <StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> (org.jetbrains.kotlin.psi.stubs.KotlinPlaceHolderStub<(org.jetbrains.kotlin.psi.KtSecondaryConstructor..org.jetbrains.kotlin.psi.KtSecondaryConstructor?)>..org.jetbrains.kotlin.psi.stubs.KotlinPlaceHolderStub<(org.jetbrains.kotlin.psi.KtSecondaryConstructor..org.jetbrains.kotlin.psi.KtSecondaryConstructor?)>?)
 
 'SECONDARY_CONSTRUCTOR' @ [44:63] ==> public final val SECONDARY_CONSTRUCTOR: (KtPlaceHolderStubElementType<(KtSecondaryConstructor..KtSecondaryConstructor?)>..KtPlaceHolderStubElementType<(KtSecondaryConstructor..KtSecondaryConstructor?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'getStubOrPsiChildrenAsList' @ [47:17] ==> @NotNull protected/*protected and package*/ open fun <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?), StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> getStubOrPsiChildrenAsList(@NotNull elementType: KtStubElementType<(KotlinPropertyStub..KotlinPropertyStub?), (KtProperty..KtProperty?)>): (MutableList<(KtProperty..KtProperty?)>..List<(KtProperty..KtProperty?)>) defined in org.jetbrains.kotlin.psi.KtClassBody[JavaMethodDescriptor]
 Inferred types:
-    <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?)> -> KtProperty
-    <StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> KotlinPropertyStub
+    <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
+    <StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> (org.jetbrains.kotlin.psi.stubs.KotlinPropertyStub..org.jetbrains.kotlin.psi.stubs.KotlinPropertyStub?)
 
 'PROPERTY' @ [47:63] ==> public final val PROPERTY: (KtPropertyElementType..KtPropertyElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
 'getStubOrPsiChildrenAsList' @ [50:17] ==> @NotNull protected/*protected and package*/ open fun <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?), StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> getStubOrPsiChildrenAsList(@NotNull elementType: KtStubElementType<(KotlinObjectStub..KotlinObjectStub?), (KtObjectDeclaration..KtObjectDeclaration?)>): (MutableList<(KtObjectDeclaration..KtObjectDeclaration?)>..List<(KtObjectDeclaration..KtObjectDeclaration?)>) defined in org.jetbrains.kotlin.psi.KtClassBody[JavaMethodDescriptor]
 Inferred types:
-    <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?)> -> KtObjectDeclaration
-    <StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> KotlinObjectStub
+    <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?)> -> (org.jetbrains.kotlin.psi.KtObjectDeclaration..org.jetbrains.kotlin.psi.KtObjectDeclaration?)
+    <StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> (org.jetbrains.kotlin.psi.stubs.KotlinObjectStub..org.jetbrains.kotlin.psi.stubs.KotlinObjectStub?)
 
 'OBJECT_DECLARATION' @ [50:63] ==> public final val OBJECT_DECLARATION: (KtObjectElementType..KtObjectElementType?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -99,8 +99,8 @@ Inferred types:
 
 'getStubOrPsiChildrenAsList' @ [62:17] ==> @NotNull protected/*protected and package*/ open fun <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?), StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> getStubOrPsiChildrenAsList(@NotNull elementType: KtStubElementType<(KotlinModifierListStub..KotlinModifierListStub?), (KtDeclarationModifierList..KtDeclarationModifierList?)>): (MutableList<(KtDeclarationModifierList..KtDeclarationModifierList?)>..List<(KtDeclarationModifierList..KtDeclarationModifierList?)>) defined in org.jetbrains.kotlin.psi.KtClassBody[JavaMethodDescriptor]
 Inferred types:
-    <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?)> -> KtDeclarationModifierList
-    <StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> KotlinModifierListStub
+    <PsiT : (KtElementImplStub<*>..KtElementImplStub<*>?)> -> (org.jetbrains.kotlin.psi.KtDeclarationModifierList..org.jetbrains.kotlin.psi.KtDeclarationModifierList?)
+    <StubT : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> (org.jetbrains.kotlin.psi.stubs.KotlinModifierListStub..org.jetbrains.kotlin.psi.stubs.KotlinModifierListStub?)
 
 'MODIFIER_LIST' @ [62:44] ==> public final val MODIFIER_LIST: (KtModifierListElementType<(KtDeclarationModifierList..KtDeclarationModifierList?)>..KtModifierListElementType<(KtDeclarationModifierList..KtDeclarationModifierList?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 

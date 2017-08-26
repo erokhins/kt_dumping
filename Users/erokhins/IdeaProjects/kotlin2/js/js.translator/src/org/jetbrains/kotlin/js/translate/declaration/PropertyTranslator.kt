@@ -4,8 +4,6 @@
 
 'modality' @ [58:24] ==> public final val PropertyDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [58:36] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [58:45] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'isSimpleFinalProperty' @ [58:75] ==> public open fun isSimpleFinalProperty(@NotNull propertyDescriptor: PropertyDescriptor): Boolean defined in org.jetbrains.kotlin.js.translate.utils.JsDescriptorUtils[JavaMethodDescriptor]
@@ -24,7 +22,7 @@
 
 'result' @ [60:68] ==> value-parameter result: MutableList<JsPropertyInitializer> defined in org.jetbrains.kotlin.js.translate.declaration.translateAccessors[ValueParameterDescriptorImpl]
 
-'translateAccessors' @ [68:5] ==> public fun translateAccessors(descriptor: VariableDescriptorWithAccessors, declaration: KtProperty?, result: MutableList<JsPropertyInitializer>, context: TranslationContext): Unit defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'translateAccessors' @ [68:5] ==> public fun translateAccessors(descriptor: VariableDescriptorWithAccessors, declaration: KtProperty?, result: MutableList<JsPropertyInitializer>, context: TranslationContext): Unit defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [68:24] ==> value-parameter descriptor: VariableDescriptorWithAccessors defined in org.jetbrains.kotlin.js.translate.declaration.translateAccessors[ValueParameterDescriptorImpl]
 
@@ -122,7 +120,7 @@ Inferred types:
 
 'function' @ [107:62] ==> value-parameter function: JsFunction defined in org.jetbrains.kotlin.js.translate.declaration.DefaultPropertyTranslator.generateDelegatedGetterFunction[ValueParameterDescriptorImpl]
 
-'contextWithPropertyMetadataCreationIntrinsified' @ [108:18] ==> public fun TranslationContext.contextWithPropertyMetadataCreationIntrinsified(delegatedCall: ResolvedCall<FunctionDescriptor>, property: VariableDescriptorWithAccessors, host: JsExpression): TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'contextWithPropertyMetadataCreationIntrinsified' @ [108:18] ==> public fun TranslationContext.contextWithPropertyMetadataCreationIntrinsified(delegatedCall: ResolvedCall<FunctionDescriptor>, property: VariableDescriptorWithAccessors, host: JsExpression): TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'delegatedCall' @ [108:66] ==> value-parameter delegatedCall: ResolvedCall<FunctionDescriptor> defined in org.jetbrains.kotlin.js.translate.declaration.DefaultPropertyTranslator.generateDelegatedGetterFunction[ValueParameterDescriptorImpl]
 
@@ -239,7 +237,7 @@ Inferred types:
 
 'function' @ [128:66] ==> value-parameter function: JsFunction defined in org.jetbrains.kotlin.js.translate.declaration.DefaultPropertyTranslator.generateDefaultSetterFunction[ValueParameterDescriptorImpl]
 
-'contextWithPropertyMetadataCreationIntrinsified' @ [129:22] ==> public fun TranslationContext.contextWithPropertyMetadataCreationIntrinsified(delegatedCall: ResolvedCall<FunctionDescriptor>, property: VariableDescriptorWithAccessors, host: JsExpression): TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'contextWithPropertyMetadataCreationIntrinsified' @ [129:22] ==> public fun TranslationContext.contextWithPropertyMetadataCreationIntrinsified(delegatedCall: ResolvedCall<FunctionDescriptor>, property: VariableDescriptorWithAccessors, host: JsExpression): TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'delegatedCall' @ [129:70] ==> val delegatedCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.js.translate.declaration.DefaultPropertyTranslator.generateDefaultSetterFunction[LocalVariableDescriptor]
 
@@ -407,15 +405,13 @@ Inferred types:
 
 'this' @ [172:28] ==> <this> defined in org.jetbrains.kotlin.js.translate.declaration.translateDelegateOrInitializerExpression[ReceiverParameterDescriptorImpl]
 
-'contextWithPropertyMetadataCreationIntrinsified' @ [172:33] ==> public fun TranslationContext.contextWithPropertyMetadataCreationIntrinsified(delegatedCall: ResolvedCall<FunctionDescriptor>, property: VariableDescriptorWithAccessors, host: JsExpression): TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'contextWithPropertyMetadataCreationIntrinsified' @ [172:33] ==> public fun TranslationContext.contextWithPropertyMetadataCreationIntrinsified(delegatedCall: ResolvedCall<FunctionDescriptor>, property: VariableDescriptorWithAccessors, host: JsExpression): TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'provideDelegateCall' @ [172:81] ==> val provideDelegateCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.js.translate.declaration.translateDelegateOrInitializerExpression[LocalVariableDescriptor]
 
 'propertyDescriptor' @ [172:102] ==> val propertyDescriptor: VariableDescriptorWithAccessors defined in org.jetbrains.kotlin.js.translate.declaration.translateDelegateOrInitializerExpression[LocalVariableDescriptor]
 
 'JsThisRef' @ [172:122] ==> public constructor JsThisRef() defined in org.jetbrains.kotlin.js.backend.ast.JsThisRef[JavaClassConstructorDescriptor]
-
-'CallTranslator' @ [173:9] ==> public object CallTranslator defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[FakeCallableDescriptorForObject]
 
 'translate' @ [173:24] ==> @JvmOverloads @JvmStatic public final fun translate(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, extensionOrDispatchReceiver: JsExpression? = ...): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator[SimpleFunctionDescriptorImpl]
 
@@ -502,7 +498,7 @@ Inferred types:
 
 'result' @ [208:9] ==> value-parameter result: MutableList<JsPropertyInitializer> defined in org.jetbrains.kotlin.js.translate.declaration.PropertyTranslator.translate[ValueParameterDescriptorImpl]
 
-'addGetterAndSetter' @ [208:16] ==> public fun MutableList<JsPropertyInitializer>.addGetterAndSetter(descriptor: VariableDescriptorWithAccessors, generateGetter: () -> JsPropertyInitializer, generateSetter: () -> JsPropertyInitializer): Unit defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'addGetterAndSetter' @ [208:16] ==> public fun MutableList<JsPropertyInitializer>.addGetterAndSetter(descriptor: VariableDescriptorWithAccessors, generateGetter: () -> JsPropertyInitializer, generateSetter: () -> JsPropertyInitializer): Unit defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [208:35] ==> public final val descriptor: VariableDescriptorWithAccessors defined in org.jetbrains.kotlin.js.translate.declaration.PropertyTranslator[PropertyDescriptorImpl]
 
@@ -516,7 +512,7 @@ Inferred types:
 
 'declaration' @ [212:17] ==> public final val declaration: KtProperty? defined in org.jetbrains.kotlin.js.translate.declaration.PropertyTranslator[PropertyDescriptorImpl]
 
-'hasCustomGetter' @ [212:30] ==> public fun KtProperty.hasCustomGetter(): Boolean defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'hasCustomGetter' @ [212:30] ==> public fun KtProperty.hasCustomGetter(): Boolean defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'translateCustomAccessor' @ [212:58] ==> private final fun translateCustomAccessor(expression: KtPropertyAccessor): JsPropertyInitializer defined in org.jetbrains.kotlin.js.translate.declaration.PropertyTranslator[SimpleFunctionDescriptorImpl]
 
@@ -530,7 +526,7 @@ Inferred types:
 
 'declaration' @ [215:17] ==> public final val declaration: KtProperty? defined in org.jetbrains.kotlin.js.translate.declaration.PropertyTranslator[PropertyDescriptorImpl]
 
-'hasCustomSetter' @ [215:30] ==> public fun KtProperty.hasCustomSetter(): Boolean defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'hasCustomSetter' @ [215:30] ==> public fun KtProperty.hasCustomSetter(): Boolean defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'translateCustomAccessor' @ [215:58] ==> private final fun translateCustomAccessor(expression: KtPropertyAccessor): JsPropertyInitializer defined in org.jetbrains.kotlin.js.translate.declaration.PropertyTranslator[SimpleFunctionDescriptorImpl]
 
@@ -680,7 +676,7 @@ Inferred types:
 
 'context' @ [250:9] ==> @NotNull protected/*protected and package*/ open fun context(): TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration.PropertyTranslator[JavaMethodDescriptor]
 
-'translateAndAliasParameters' @ [250:19] ==> public fun TranslationContext.translateAndAliasParameters(descriptor: FunctionDescriptor, targetList: MutableList<JsParameter>): TranslationContext defined in org.jetbrains.kotlin.js.translate.expression[SimpleFunctionDescriptorImpl]
+'translateAndAliasParameters' @ [250:19] ==> public fun TranslationContext.translateAndAliasParameters(descriptor: FunctionDescriptor, targetList: MutableList<JsParameter>): TranslationContext defined in org.jetbrains.kotlin.js.translate.expression in file FunctionTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [250:47] ==> val descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.PropertyTranslator.translateCustomAccessor[LocalVariableDescriptor]
 
@@ -749,7 +745,7 @@ Inferred types:
 
 'java' @ [268:107] ==> public val <T> KClass<out VariableAccessorDescriptor>.java: Class<out VariableAccessorDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> VariableAccessorDescriptor
+    <T> -> Captured(out VariableAccessorDescriptor)
 
 'accessorDescriptor' @ [271:20] ==> value-parameter accessorDescriptor: VariableAccessorDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.PropertyTranslator.accessorDescription[ValueParameterDescriptorImpl]
 

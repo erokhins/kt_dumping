@@ -10,7 +10,7 @@
 
 'createCachedValue' @ [45:65] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(WeakHashMap<Module, List<String>>..WeakHashMap<Module, List<String>>?)>?, p1: Boolean): CachedValue<(WeakHashMap<Module, List<String>>..WeakHashMap<Module, List<String>>?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> WeakHashMap<Module, List<String>>
+    <T : (Any..Any?)> -> (java.util.WeakHashMap<com.intellij.openapi.module.Module, kotlin.collections.List<kotlin.String>>..java.util.WeakHashMap<com.intellij.openapi.module.Module, kotlin.collections.List<kotlin.String>>?)
 
 'create' @ [46:16] ==> public open fun <T : (Any..Any?)> create(@Nullable p0: WeakHashMap<Module, List<String>>?, @NotNull vararg p1: (Any..Any?)): (CachedValueProvider.Result<(WeakHashMap<Module, List<String>>..WeakHashMap<Module, List<String>>?)>..CachedValueProvider.Result<(WeakHashMap<Module, List<String>>..WeakHashMap<Module, List<String>>?)>?) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaMethodDescriptor]
 Inferred types:
@@ -53,8 +53,6 @@ Inferred types:
 'getCapability' @ [61:43] ==> public abstract fun <T> getCapability(capability: ModuleDescriptor.Capability<ModuleInfo>): ModuleInfo? defined in org.jetbrains.kotlin.descriptors.ModuleDescriptor[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ModuleInfo
-
-'ModuleInfo' @ [61:57] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
 
 'Capability' @ [61:68] ==> public final val Capability: ModuleDescriptor.Capability<ModuleInfo> defined in org.jetbrains.kotlin.analyzer.ModuleInfo.Companion[DeserializedPropertyDescriptor]
 

@@ -4,7 +4,7 @@
 
 'JComboBox' @ [44:35] ==> public constructor JComboBox<E : (Any..Any?)>(p0: (Array<(Visibility..Visibility?)>..Array<out (Visibility..Visibility?)>?)) defined in javax.swing.JComboBox[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Visibility
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.Visibility..org.jetbrains.kotlin.descriptors.Visibility?)
 
 'arrayOf' @ [45:13] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: Visibility): Array<Visibility> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -105,11 +105,11 @@ Inferred types:
 
 'isLocal' @ [76:53] ==> public final val KtProperty.isLocal: Boolean[MyPropertyDescriptor]
 
-'visibilityCombo' @ [77:17] ==> private final val visibilityCombo: JComboBox<Visibility> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangePropertySignatureDialog[PropertyDescriptorImpl]
+'visibilityCombo' @ [77:17] ==> private final val visibilityCombo: JComboBox<(Visibility..Visibility?)> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangePropertySignatureDialog[PropertyDescriptorImpl]
 
-'selectedItem' @ [77:33] ==> public final var <E : (Any..Any?)> JComboBox<Visibility>.selectedItem: (Any..Any?)[MyPropertyDescriptor]
+'selectedItem' @ [77:33] ==> public final var <E : (Any..Any?)> JComboBox<(Visibility..Visibility?)>.selectedItem: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Visibility
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.Visibility..org.jetbrains.kotlin.descriptors.Visibility?)
 
 'methodDescriptor' @ [77:48] ==> private final val methodDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangePropertySignatureDialog[PropertyDescriptorImpl]
 
@@ -117,7 +117,7 @@ Inferred types:
 
 'addLabeledComponent' @ [78:17] ==> public open fun addLabeledComponent(@NotNull p0: String, @NotNull p1: JComponent): (FormBuilder..FormBuilder?) defined in com.intellij.util.ui.FormBuilder[JavaMethodDescriptor]
 
-'visibilityCombo' @ [78:54] ==> private final val visibilityCombo: JComboBox<Visibility> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangePropertySignatureDialog[PropertyDescriptorImpl]
+'visibilityCombo' @ [78:54] ==> private final val visibilityCombo: JComboBox<(Visibility..Visibility?)> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangePropertySignatureDialog[PropertyDescriptorImpl]
 
 'addLabeledComponent' @ [81:13] ==> public open fun addLabeledComponent(@NotNull p0: String, @NotNull p1: JComponent): (FormBuilder..FormBuilder?) defined in com.intellij.util.ui.FormBuilder[JavaMethodDescriptor]
 
@@ -387,11 +387,11 @@ Inferred types:
 
 'text' @ [149:86] ==> public final var EditorTextField.text: (String..String?)[MyPropertyDescriptor]
 
-'visibilityCombo' @ [150:43] ==> private final val visibilityCombo: JComboBox<Visibility> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangePropertySignatureDialog[PropertyDescriptorImpl]
+'visibilityCombo' @ [150:43] ==> private final val visibilityCombo: JComboBox<(Visibility..Visibility?)> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinChangePropertySignatureDialog[PropertyDescriptorImpl]
 
-'selectedItem' @ [150:59] ==> public final var <E : (Any..Any?)> JComboBox<Visibility>.selectedItem: (Any..Any?)[MyPropertyDescriptor]
+'selectedItem' @ [150:59] ==> public final var <E : (Any..Any?)> JComboBox<(Visibility..Visibility?)>.selectedItem: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Visibility
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.Visibility..org.jetbrains.kotlin.descriptors.Visibility?)
 
 'emptyList' @ [151:43] ==> public fun <T> emptyList(): List<KotlinParameterInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

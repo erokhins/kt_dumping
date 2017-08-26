@@ -12,7 +12,7 @@
 
 'type' @ [56:89] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.hasUnknownFunctionParameter[ValueParameterDescriptorImpl]
 
-'getParameterArgumentsOfCallableType' @ [57:12] ==> private fun getParameterArgumentsOfCallableType(type: KotlinType): List<TypeProjection> defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil[SimpleFunctionDescriptorImpl]
+'getParameterArgumentsOfCallableType' @ [57:12] ==> private fun getParameterArgumentsOfCallableType(type: KotlinType): List<TypeProjection> defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil in file CallResolverUtil.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [57:48] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.hasUnknownFunctionParameter[ValueParameterDescriptorImpl]
 
@@ -52,7 +52,7 @@ Inferred types:
 
 'containsErrorType' @ [64:23] ==> public open fun containsErrorType(@Nullable p0: KotlinType?): Boolean defined in org.jetbrains.kotlin.types.ErrorUtils[JavaMethodDescriptor]
 
-'getReturnTypeForCallable' @ [64:41] ==> public fun getReturnTypeForCallable(type: KotlinType): KotlinType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil[SimpleFunctionDescriptorImpl]
+'getReturnTypeForCallable' @ [64:41] ==> public fun getReturnTypeForCallable(type: KotlinType): KotlinType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil in file CallResolverUtil.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [64:66] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.hasUnknownReturnType[ValueParameterDescriptorImpl]
 
@@ -78,7 +78,7 @@ Inferred types:
 
 'addAll' @ [70:18] ==> public open fun addAll(elements: Collection<(TypeProjection..TypeProjection?)>): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'getParameterArgumentsOfCallableType' @ [70:25] ==> private fun getParameterArgumentsOfCallableType(type: KotlinType): List<TypeProjection> defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil[SimpleFunctionDescriptorImpl]
+'getParameterArgumentsOfCallableType' @ [70:25] ==> private fun getParameterArgumentsOfCallableType(type: KotlinType): List<TypeProjection> defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil in file CallResolverUtil.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [70:61] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.replaceReturnTypeForCallable[ValueParameterDescriptorImpl]
 
@@ -92,7 +92,7 @@ Inferred types:
 
 'given' @ [71:61] ==> value-parameter given: KotlinType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.replaceReturnTypeForCallable[ValueParameterDescriptorImpl]
 
-'replaceTypeArguments' @ [72:12] ==> private fun replaceTypeArguments(type: KotlinType, newArguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil[SimpleFunctionDescriptorImpl]
+'replaceTypeArguments' @ [72:12] ==> private fun replaceTypeArguments(type: KotlinType, newArguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil in file CallResolverUtil.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [72:33] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.replaceReturnTypeForCallable[ValueParameterDescriptorImpl]
 
@@ -148,7 +148,7 @@ Inferred types:
 
 'constraintSystem' @ [88:31] ==> value-parameter constraintSystem: ConstraintSystem defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.hasReturnTypeDependentOnUninferredParams[ValueParameterDescriptorImpl]
 
-'getNestedTypeVariables' @ [88:48] ==> public fun ConstraintSystem.getNestedTypeVariables(type: KotlinType): List<TypeVariable> defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'getNestedTypeVariables' @ [88:48] ==> public fun ConstraintSystem.getNestedTypeVariables(type: KotlinType): List<TypeVariable> defined in org.jetbrains.kotlin.resolve.calls.inference in file constraintSystemUtils.kt[SimpleFunctionDescriptorImpl]
 
 'returnType' @ [88:71] ==> val returnType: KotlinType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.hasReturnTypeDependentOnUninferredParams[LocalVariableDescriptor]
 
@@ -317,6 +317,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
+'isOrOverridesSynthesized' @ [132:55] ==> public fun isOrOverridesSynthesized(descriptor: CallableMemberDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil in file CallResolverUtil.kt[SimpleFunctionDescriptorImpl]
+
 'call' @ [138:23] ==> value-parameter call: Call defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.isBinaryRemOperator[ValueParameterDescriptorImpl]
 
 'callElement' @ [138:28] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
@@ -474,9 +476,9 @@ Inferred types:
 
 'create' @ [208:33] ==> @NotNull public open fun create(@NotNull p0: KotlinType): TypeSubstitutor defined in org.jetbrains.kotlin.types.TypeSubstitutor[JavaMethodDescriptor]
 
-'?:' @ [209:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: UnwrappedType?, right: UnwrappedType): UnwrappedType[SimpleFunctionDescriptorImpl]
+'?:' @ [209:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinType?, right: KotlinType): KotlinType[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> UnwrappedType
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinType
 
 'unwrappedType' @ [209:26] ==> val unwrappedType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.createResolutionCandidatesForConstructors[LocalVariableDescriptor]
 
@@ -509,6 +511,8 @@ Inferred types:
 Inferred types:
     <T> -> TypeAliasConstructorDescriptor
     <R : Any> -> TypeAliasConstructorDescriptor
+
+'withDispatchReceiver' @ [219:102] ==> public abstract val withDispatchReceiver: TypeAliasConstructorDescriptor? defined in org.jetbrains.kotlin.descriptors.impl.TypeAliasConstructorDescriptor[DeserializedPropertyDescriptor]
 
 'classWithConstructors' @ [219:127] ==> val classWithConstructors: ClassDescriptor defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.createResolutionCandidatesForConstructors[LocalVariableDescriptor]
 
@@ -623,14 +627,14 @@ Inferred types:
 
 'syntheticConstructors' @ [244:28] ==> val syntheticConstructors: List<ConstructorDescriptor> defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.createResolutionCandidatesForConstructors[LocalVariableDescriptor]
 
-'map' @ [244:51] ==> public inline fun <T, R> Iterable<(ConstructorDescriptor..ConstructorDescriptor?)>.map(transform: ((ConstructorDescriptor..ConstructorDescriptor?)) -> (ResolutionCandidate<ConstructorDescriptor>..ResolutionCandidate<ConstructorDescriptor>?)): List<(ResolutionCandidate<ConstructorDescriptor>..ResolutionCandidate<ConstructorDescriptor>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [244:51] ==> public inline fun <T, R> Iterable<(ConstructorDescriptor..ConstructorDescriptor?)>.map(transform: ((ConstructorDescriptor..ConstructorDescriptor?)) -> (ResolutionCandidate<(ConstructorDescriptor..ConstructorDescriptor?)>..ResolutionCandidate<(ConstructorDescriptor..ConstructorDescriptor?)>?)): List<(ResolutionCandidate<(ConstructorDescriptor..ConstructorDescriptor?)>..ResolutionCandidate<(ConstructorDescriptor..ConstructorDescriptor?)>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)
-    <R> -> (org.jetbrains.kotlin.resolve.calls.tasks.ResolutionCandidate<org.jetbrains.kotlin.descriptors.ConstructorDescriptor>..org.jetbrains.kotlin.resolve.calls.tasks.ResolutionCandidate<org.jetbrains.kotlin.descriptors.ConstructorDescriptor>?)
+    <R> -> (org.jetbrains.kotlin.resolve.calls.tasks.ResolutionCandidate<(org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)>..org.jetbrains.kotlin.resolve.calls.tasks.ResolutionCandidate<(org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)>?)
 
 'create' @ [245:29] ==> public open fun <D : (CallableDescriptor..CallableDescriptor?)> create(@NotNull call: Call, @NotNull descriptor: ConstructorDescriptor, @Nullable dispatchReceiver: ReceiverValue?, @NotNull explicitReceiverKind: ExplicitReceiverKind, @Nullable knownTypeParametersResultingSubstitutor: TypeSubstitutor?): (ResolutionCandidate<(ConstructorDescriptor..ConstructorDescriptor?)>..ResolutionCandidate<(ConstructorDescriptor..ConstructorDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.calls.tasks.ResolutionCandidate[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> ConstructorDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)
 
 'call' @ [245:36] ==> value-parameter call: Call defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.createResolutionCandidatesForConstructors[ValueParameterDescriptorImpl]
 
@@ -650,7 +654,7 @@ Inferred types:
 
 'this' @ [252:57] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.getCorrespondingParameterForFunctionArgument[ReceiverParameterDescriptorImpl]
 
-'getResolvedCall' @ [252:64] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [252:64] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [252:80] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil.getCorrespondingParameterForFunctionArgument[ValueParameterDescriptorImpl]
 
@@ -658,7 +662,7 @@ Inferred types:
 
 'call' @ [254:26] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'getValueArgumentForExpression' @ [254:31] ==> public fun Call.getValueArgumentForExpression(expression: KtExpression): ValueArgument? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 

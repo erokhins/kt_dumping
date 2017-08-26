@@ -122,8 +122,6 @@ Inferred types:
 
 'acceptsKinds' @ [82:50] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [82:63] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'VARIABLES_MASK' @ [82:84] ==> public final val VARIABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'invoke' @ [82:103] ==> public abstract operator fun invoke(p1: Name): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
@@ -152,9 +150,9 @@ Inferred types:
 
 'java' @ [87:35] ==> public val <T> KClass<out AndroidSyntheticPackageFragmentDescriptor.AndroidExtensionPropertiesScope>.java: Class<out AndroidSyntheticPackageFragmentDescriptor.AndroidExtensionPropertiesScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AndroidExtensionPropertiesScope
+    <T> -> Captured(out AndroidExtensionPropertiesScope)
 
 'simpleName' @ [87:40] ==> public final val <T : (Any..Any?)> Class<out AndroidSyntheticPackageFragmentDescriptor.AndroidExtensionPropertiesScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AndroidExtensionPropertiesScope
+    <T : (Any..Any?)> -> Captured(out AndroidExtensionPropertiesScope)
 

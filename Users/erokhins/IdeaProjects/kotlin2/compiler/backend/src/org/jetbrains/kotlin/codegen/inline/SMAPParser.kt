@@ -79,11 +79,7 @@ Inferred types:
 
 'indexOf' @ [45:44] ==> public fun CharSequence.indexOf(string: String, startIndex: Int = ..., ignoreCase: Boolean = ...): Int defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'SMAP' @ [45:52] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.SMAP[FakeCallableDescriptorForObject]
-
 'FILE_SECTION' @ [45:57] ==> public const final val FILE_SECTION: String defined in org.jetbrains.kotlin.codegen.inline.SMAP.Companion[PropertyDescriptorImpl]
-
-'SMAP' @ [45:73] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.SMAP[FakeCallableDescriptorForObject]
 
 'FILE_SECTION' @ [45:78] ==> public const final val FILE_SECTION: String defined in org.jetbrains.kotlin.codegen.inline.SMAP.Companion[PropertyDescriptorImpl]
 
@@ -92,8 +88,6 @@ Inferred types:
 'mappingInfo' @ [46:33] ==> value-parameter mappingInfo: String defined in org.jetbrains.kotlin.codegen.inline.SMAPParser.parse[ValueParameterDescriptorImpl]
 
 'indexOf' @ [46:45] ==> public fun CharSequence.indexOf(string: String, startIndex: Int = ..., ignoreCase: Boolean = ...): Int defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'SMAP' @ [46:53] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.SMAP[FakeCallableDescriptorForObject]
 
 'LINE_SECTION' @ [46:58] ==> public const final val LINE_SECTION: String defined in org.jetbrains.kotlin.codegen.inline.SMAP.Companion[PropertyDescriptorImpl]
 
@@ -165,8 +159,6 @@ Inferred types:
 
 'lineSectionAnchor' @ [62:43] ==> val lineSectionAnchor: Int defined in org.jetbrains.kotlin.codegen.inline.SMAPParser.parse[LocalVariableDescriptor]
 
-'SMAP' @ [62:63] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.SMAP[FakeCallableDescriptorForObject]
-
 'LINE_SECTION' @ [62:68] ==> public const final val LINE_SECTION: String defined in org.jetbrains.kotlin.codegen.inline.SMAP.Companion[PropertyDescriptorImpl]
 
 'length' @ [62:81] ==> public open val length: Int defined in kotlin.String[DeserializedPropertyDescriptor]
@@ -174,8 +166,6 @@ Inferred types:
 'mappingInfo' @ [62:89] ==> value-parameter mappingInfo: String defined in org.jetbrains.kotlin.codegen.inline.SMAPParser.parse[ValueParameterDescriptorImpl]
 
 'indexOf' @ [62:101] ==> public fun CharSequence.indexOf(string: String, startIndex: Int = ..., ignoreCase: Boolean = ...): Int defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'SMAP' @ [62:109] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.SMAP[FakeCallableDescriptorForObject]
 
 'END' @ [62:114] ==> public const final val END: String defined in org.jetbrains.kotlin.codegen.inline.SMAP.Companion[PropertyDescriptorImpl]
 

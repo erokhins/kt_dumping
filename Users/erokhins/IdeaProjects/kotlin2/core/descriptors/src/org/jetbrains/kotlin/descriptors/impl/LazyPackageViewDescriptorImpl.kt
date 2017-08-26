@@ -1,7 +1,5 @@
 'DeclarationDescriptorImpl' @ [34:5] ==> public constructor DeclarationDescriptorImpl(@NotNull annotations: Annotations, @NotNull name: Name) defined in org.jetbrains.kotlin.descriptors.impl.DeclarationDescriptorImpl[JavaClassConstructorDescriptor]
 
-'Annotations' @ [34:31] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [34:43] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
 'fqName' @ [34:50] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.descriptors.impl.LazyPackageViewDescriptorImpl.<init>[ValueParameterDescriptorImpl]
@@ -44,8 +42,6 @@ Inferred types:
 'fragments' @ [41:13] ==> public open val fragments: List<PackageFragmentDescriptor> defined in org.jetbrains.kotlin.descriptors.impl.LazyPackageViewDescriptorImpl[PropertyDescriptorImpl]
 
 'isEmpty' @ [41:23] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
-
-'MemberScope' @ [42:13] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'Empty' @ [42:25] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 

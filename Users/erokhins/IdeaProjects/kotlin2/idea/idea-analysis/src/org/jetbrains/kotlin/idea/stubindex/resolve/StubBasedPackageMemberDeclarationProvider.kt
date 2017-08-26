@@ -31,8 +31,6 @@ Inferred types:
 
 'acceptsKinds' @ [48:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [48:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CLASSIFIERS_MASK' @ [48:58] ==> public final val CLASSIFIERS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'addFromIndex' @ [49:13] ==> local final fun addFromIndex(index: StringStubIndexExtension<out KtNamedDeclaration>): Unit defined in org.jetbrains.kotlin.idea.stubindex.resolve.StubBasedPackageMemberDeclarationProvider.getDeclarations[SimpleFunctionDescriptorImpl]
@@ -41,15 +39,11 @@ Inferred types:
 
 'addFromIndex' @ [50:13] ==> local final fun addFromIndex(index: StringStubIndexExtension<out KtNamedDeclaration>): Unit defined in org.jetbrains.kotlin.idea.stubindex.resolve.StubBasedPackageMemberDeclarationProvider.getDeclarations[SimpleFunctionDescriptorImpl]
 
-'KotlinTopLevelTypeAliasByPackageIndex' @ [50:26] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasByPackageIndex[FakeCallableDescriptorForObject]
-
 'getInstance' @ [50:64] ==> @JvmStatic public final fun getInstance(): KotlinTopLevelTypeAliasByPackageIndex defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasByPackageIndex.Companion[SimpleFunctionDescriptorImpl]
 
 'kindFilter' @ [53:13] ==> value-parameter kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.stubindex.resolve.StubBasedPackageMemberDeclarationProvider.getDeclarations[ValueParameterDescriptorImpl]
 
 'acceptsKinds' @ [53:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [53:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'FUNCTIONS_MASK' @ [53:58] ==> public final val FUNCTIONS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -60,8 +54,6 @@ Inferred types:
 'kindFilter' @ [57:13] ==> value-parameter kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.stubindex.resolve.StubBasedPackageMemberDeclarationProvider.getDeclarations[ValueParameterDescriptorImpl]
 
 'acceptsKinds' @ [57:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [57:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES_MASK' @ [57:58] ==> public final val VARIABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -124,6 +116,8 @@ Inferred types:
     <C : MutableCollection<in R>> -> ArrayList<KtClassLikeInfo>
 
 'result' @ [71:28] ==> val result: ArrayList<KtClassLikeInfo> defined in org.jetbrains.kotlin.idea.stubindex.resolve.StubBasedPackageMemberDeclarationProvider.getClassOrObjectDeclarations[LocalVariableDescriptor]
+
+'KtScriptInfo' @ [71:38] ==> public constructor KtScriptInfo(script: KtScript) defined in org.jetbrains.kotlin.resolve.lazy.data.KtScriptInfo[DeserializedClassConstructorDescriptor]
 
 'result' @ [73:16] ==> val result: ArrayList<KtClassLikeInfo> defined in org.jetbrains.kotlin.idea.stubindex.resolve.StubBasedPackageMemberDeclarationProvider.getClassOrObjectDeclarations[LocalVariableDescriptor]
 

@@ -61,11 +61,11 @@ Inferred types:
 
 'java' @ [54:46] ==> public val <T> KClass<out JvmPackagePartSource>.java: Class<out JvmPackagePartSource> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> JvmPackagePartSource
+    <T> -> Captured(out JvmPackagePartSource)
 
 'simpleName' @ [54:51] ==> public final val <T : (Any..Any?)> Class<out JvmPackagePartSource>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JvmPackagePartSource
+    <T : (Any..Any?)> -> Captured(out JvmPackagePartSource)
 
 'className' @ [54:65] ==> public final val className: JvmClassName defined in org.jetbrains.kotlin.load.kotlin.JvmPackagePartSource[PropertyDescriptorImpl]
 

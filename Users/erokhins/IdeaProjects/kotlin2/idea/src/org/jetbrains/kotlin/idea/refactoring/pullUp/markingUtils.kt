@@ -1,29 +1,20 @@
-'CopyableUserDataProperty' @ [44:45] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<FqName>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtElement
-    <T : Any> -> FqName
+'getValue' @ [44:45] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [44:74] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(FqName..FqName?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FqName
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
 
-'CopyableUserDataProperty' @ [45:58] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<Boolean>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtElement
-    <T : Any> -> Boolean
+'getValue' @ [45:58] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [45:87] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
-'CopyableUserDataProperty' @ [46:71] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<(TypeSubstitutor) -> String?>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtElement
-    <T : Any> -> Function1<TypeSubstitutor, String?>
+'getValue' @ [46:71] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [46:100] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<((TypeSubstitutor) -> String?..((TypeSubstitutor) -> String?)?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<TypeSubstitutor, String?>
+    <T : (Any..Any?)> -> ((org.jetbrains.kotlin.types.TypeSubstitutor) -> kotlin.String?..((org.jetbrains.kotlin.types.TypeSubstitutor) -> kotlin.String?)?)
 
 'ArrayList' @ [53:28] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -53,7 +44,7 @@ Inferred types:
 
 'resultingDescriptor' @ [61:73] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 '!=' @ [62:25] ==> public final fun equals(other: Any?): Boolean defined in org.jetbrains.kotlin.descriptors.CallableMemberDescriptor.Kind[DeserializedSimpleFunctionDescriptor]
 
@@ -107,13 +98,13 @@ Inferred types:
 
 'extensionReceiver' @ [76:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [77:39] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.markElements.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
 'dispatchReceiver' @ [77:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'receiver' @ [80:40] ==> val receiver: ReceiverValue defined in org.jetbrains.kotlin.idea.refactoring.pullUp.markElements.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 

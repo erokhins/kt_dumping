@@ -32,7 +32,7 @@ Inferred types:
 
 'result' @ [29:62] ==> value-parameter result: String defined in org.jetbrains.kotlin.test.util.trimTrailingWhitespacesAndAddNewlineAtEOF.<anonymous>[ValueParameterDescriptorImpl]
 
-'findElementsByCommentPrefix' @ [33:9] ==> public fun PsiFile.findElementsByCommentPrefix(prefix: String): Map<PsiElement, String> defined in org.jetbrains.kotlin.test.util[SimpleFunctionDescriptorImpl]
+'findElementsByCommentPrefix' @ [33:9] ==> public fun PsiFile.findElementsByCommentPrefix(prefix: String): Map<PsiElement, String> defined in org.jetbrains.kotlin.test.util in file jetTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'commentText' @ [33:37] ==> value-parameter commentText: String defined in org.jetbrains.kotlin.test.util.findElementByCommentPrefix[ValueParameterDescriptorImpl]
 

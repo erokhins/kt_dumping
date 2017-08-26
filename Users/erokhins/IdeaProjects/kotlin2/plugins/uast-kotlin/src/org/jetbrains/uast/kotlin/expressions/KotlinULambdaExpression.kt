@@ -2,9 +2,9 @@
 
 'getFunctionalInterfaceType' @ [32:17] ==> internal fun KotlinULambdaExpression.getFunctionalInterfaceType(): PsiType? defined in org.jetbrains.uast.kotlin in file kotlinInternalUastUtils.kt[SimpleFunctionDescriptorImpl]
 
-'lz' @ [34:26] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [34:26] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [34:31] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -16,9 +16,9 @@ Inferred types:
 
 'this' @ [34:82] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinULambdaExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [36:37] ==> internal fun <T> lz(initializer: () -> List<KotlinUParameter>): Lazy<List<KotlinUParameter>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [36:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KotlinUParameter>
+    <T> -> T
 
 'psi' @ [37:9] ==> public open val psi: KtLambdaExpression defined in org.jetbrains.uast.kotlin.KotlinULambdaExpression[PropertyDescriptorImpl]
 
@@ -30,8 +30,6 @@ Inferred types:
     <R> -> KotlinUParameter
 
 'KotlinUParameter' @ [38:13] ==> public constructor KotlinUParameter(psi: PsiParameter, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUParameter[ClassConstructorDescriptorImpl]
-
-'UastKotlinPsiParameter' @ [38:30] ==> public companion object defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiParameter[FakeCallableDescriptorForObject]
 
 'create' @ [38:53] ==> public final fun create(parameter: KtParameter, parent: PsiElement, containingElement: UElement, index: Int): PsiParameter defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiParameter.Companion[SimpleFunctionDescriptorImpl]
 

@@ -59,7 +59,7 @@ Inferred types:
 
 'insn' @ [40:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.newOperation[ValueParameterDescriptorImpl]
 
-'isUnitInstance' @ [40:18] ==> public fun AbstractInsnNode.isUnitInstance(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isUnitInstance' @ [40:18] ==> public fun AbstractInsnNode.isUnitInstance(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file PopBackwardPropagationTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'NotNullBasicValue' @ [41:17] ==> public constructor NotNullBasicValue(type: Type?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NotNullBasicValue[ClassConstructorDescriptorImpl]
 
@@ -160,7 +160,7 @@ Inferred types:
 
 'insn' @ [69:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
-'isBoxing' @ [69:18] ==> public fun AbstractInsnNode.isBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isBoxing' @ [69:18] ==> public fun AbstractInsnNode.isBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'NotNullBasicValue' @ [70:17] ==> public constructor NotNullBasicValue(type: Type?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NotNullBasicValue[ClassConstructorDescriptorImpl]
 
@@ -168,7 +168,7 @@ Inferred types:
 
 'insn' @ [71:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
-'isIteratorMethodCallOfProgression' @ [71:18] ==> public fun AbstractInsnNode.isIteratorMethodCallOfProgression(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isIteratorMethodCallOfProgression' @ [71:18] ==> public fun AbstractInsnNode.isIteratorMethodCallOfProgression(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'values' @ [71:52] ==> value-parameter values: List<BasicValue> defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
@@ -180,7 +180,7 @@ Inferred types:
 
 'insn' @ [73:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
-'isNextMethodCallOfProgressionIterator' @ [73:18] ==> public fun AbstractInsnNode.isNextMethodCallOfProgressionIterator(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isNextMethodCallOfProgressionIterator' @ [73:18] ==> public fun AbstractInsnNode.isNextMethodCallOfProgressionIterator(values: List<BasicValue>): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'values' @ [73:56] ==> value-parameter values: List<BasicValue> defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.naryOperation[ValueParameterDescriptorImpl]
 
@@ -219,8 +219,6 @@ Inferred types:
 
 'w' @ [84:40] ==> value-parameter w: BasicValue defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.merge[ValueParameterDescriptorImpl]
 
-'StrictBasicValue' @ [85:21] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue[FakeCallableDescriptorForObject]
-
 'REFERENCE_VALUE' @ [85:38] ==> @JvmField public final val REFERENCE_VALUE: StrictBasicValue defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue.Companion[PropertyDescriptorImpl]
 
 'v' @ [86:17] ==> value-parameter v: BasicValue defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.merge[ValueParameterDescriptorImpl]
@@ -237,15 +235,11 @@ Inferred types:
 
 'w' @ [88:55] ==> value-parameter w: BasicValue defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.merge[ValueParameterDescriptorImpl]
 
-'NotNullBasicValue' @ [89:21] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NotNullBasicValue[FakeCallableDescriptorForObject]
-
 'NOT_NULL_REFERENCE_VALUE' @ [89:39] ==> public final val NOT_NULL_REFERENCE_VALUE: NotNullBasicValue defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NotNullBasicValue.Companion[PropertyDescriptorImpl]
 
 'w' @ [90:17] ==> value-parameter w: BasicValue defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.merge[ValueParameterDescriptorImpl]
 
 'v' @ [90:55] ==> value-parameter v: BasicValue defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.merge[ValueParameterDescriptorImpl]
-
-'NotNullBasicValue' @ [91:21] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NotNullBasicValue[FakeCallableDescriptorForObject]
 
 'NOT_NULL_REFERENCE_VALUE' @ [91:39] ==> public final val NOT_NULL_REFERENCE_VALUE: NotNullBasicValue defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NotNullBasicValue.Companion[PropertyDescriptorImpl]
 
@@ -280,8 +274,6 @@ Inferred types:
 'type' @ [99:29] ==> public final val StrictBasicValue.type: (Type..Type?)[MyPropertyDescriptor]
 
 'v' @ [99:35] ==> value-parameter v: StrictBasicValue defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NullabilityInterpreter.mergeNotNullValuesOfSameKind[ValueParameterDescriptorImpl]
-
-'NotNullBasicValue' @ [99:42] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NotNullBasicValue[FakeCallableDescriptorForObject]
 
 'NOT_NULL_REFERENCE_VALUE' @ [99:60] ==> public final val NOT_NULL_REFERENCE_VALUE: NotNullBasicValue defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NotNullBasicValue.Companion[PropertyDescriptorImpl]
 

@@ -86,7 +86,7 @@ Inferred types:
 
 'javaHome' @ [97:43] ==> public open val javaHome: String? defined in org.jetbrains.kotlin.script.KotlinScriptExternalDependencies[PropertyDescriptorImpl]
 
-'chainCompare' @ [98:22] ==> private inline fun Int.chainCompare(compFn: () -> Int): Int defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
+'chainCompare' @ [98:22] ==> private inline fun Int.chainCompare(compFn: () -> Int): Int defined in org.jetbrains.kotlin.script in file scriptTemplate.kt[SimpleFunctionDescriptorImpl]
 
 'compareIterables' @ [98:37] ==> private fun <T : Comparable<File>> compareIterables(a: Iterable<File>, b: Iterable<File>): Int defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -98,7 +98,7 @@ Inferred types:
 
 'classpath' @ [98:71] ==> public open val classpath: Iterable<File> defined in org.jetbrains.kotlin.script.KotlinScriptExternalDependencies[PropertyDescriptorImpl]
 
-'chainCompare' @ [99:22] ==> private inline fun Int.chainCompare(compFn: () -> Int): Int defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
+'chainCompare' @ [99:22] ==> private inline fun Int.chainCompare(compFn: () -> Int): Int defined in org.jetbrains.kotlin.script in file scriptTemplate.kt[SimpleFunctionDescriptorImpl]
 
 'compareIterables' @ [99:37] ==> private fun <T : Comparable<String>> compareIterables(a: Iterable<String>, b: Iterable<String>): Int defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -110,7 +110,7 @@ Inferred types:
 
 'imports' @ [99:69] ==> public open val imports: Iterable<String> defined in org.jetbrains.kotlin.script.KotlinScriptExternalDependencies[PropertyDescriptorImpl]
 
-'chainCompare' @ [100:22] ==> private inline fun Int.chainCompare(compFn: () -> Int): Int defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
+'chainCompare' @ [100:22] ==> private inline fun Int.chainCompare(compFn: () -> Int): Int defined in org.jetbrains.kotlin.script in file scriptTemplate.kt[SimpleFunctionDescriptorImpl]
 
 'compareIterables' @ [100:37] ==> private fun <T : Comparable<File>> compareIterables(a: Iterable<File>, b: Iterable<File>): Int defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -122,7 +122,7 @@ Inferred types:
 
 'sources' @ [100:69] ==> public open val sources: Iterable<File> defined in org.jetbrains.kotlin.script.KotlinScriptExternalDependencies[PropertyDescriptorImpl]
 
-'chainCompare' @ [101:22] ==> private inline fun Int.chainCompare(compFn: () -> Int): Int defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
+'chainCompare' @ [101:22] ==> private inline fun Int.chainCompare(compFn: () -> Int): Int defined in org.jetbrains.kotlin.script in file scriptTemplate.kt[SimpleFunctionDescriptorImpl]
 
 'compareIterables' @ [101:37] ==> private fun <T : Comparable<File>> compareIterables(a: Iterable<File>, b: Iterable<File>): Int defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
 Inferred types:

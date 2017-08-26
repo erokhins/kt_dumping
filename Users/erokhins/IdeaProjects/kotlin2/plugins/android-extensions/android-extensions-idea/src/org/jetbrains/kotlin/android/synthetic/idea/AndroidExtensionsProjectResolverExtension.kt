@@ -1,25 +1,16 @@
-'NotNullableUserDataProperty' @ [42:12] ==> public constructor NotNullableUserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> DataNode<ModuleData>
-    <T : Any> -> Boolean
+'getValue' @ [42:12] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [42:44] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> Boolean
 
-'NotNullableUserDataProperty' @ [45:12] ==> public constructor NotNullableUserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> DataNode<ModuleData>
-    <T : Any> -> Boolean
+'getValue' @ [45:12] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [45:44] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> Boolean
 
-'NotNullableUserDataProperty' @ [50:12] ==> public constructor NotNullableUserDataProperty<in R : UserDataHolder, T : Any>(key: Key<String>, defaultValue: String) defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> DataNode<ModuleData>
-    <T : Any> -> String
+'getValue' @ [50:12] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [50:44] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(String..String?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
@@ -53,7 +44,7 @@ Inferred types:
 
 'getExtraProject' @ [71:50] ==> @Nullable public abstract fun <T : (Any..Any?)> getExtraProject(@Nullable p0: IdeaModule?, p1: (Class<(AndroidExtensionsGradleModel..AndroidExtensionsGradleModel?)>..Class<(AndroidExtensionsGradleModel..AndroidExtensionsGradleModel?)>?)): AndroidExtensionsGradleModel? defined in org.jetbrains.plugins.gradle.service.project.ProjectResolverContext[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AndroidExtensionsGradleModel
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionsGradleModel..org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionsGradleModel?)
 
 'gradleModule' @ [71:66] ==> value-parameter gradleModule: IdeaModule defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionsProjectResolverExtension.populateModuleExtraModels[ValueParameterDescriptorImpl]
 
@@ -134,11 +125,11 @@ Inferred types:
 
 'java' @ [95:51] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'methods' @ [95:56] ==> public final val <T : (Any..Any?)> Class<out Any>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'firstOrNull' @ [96:22] ==> public inline fun <T> Array<out (Method..Method?)>.firstOrNull(predicate: ((Method..Method?)) -> Boolean): Method? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -169,11 +160,11 @@ Inferred types:
 
 'java' @ [103:63] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'methods' @ [103:68] ==> public final val <T : (Any..Any?)> Class<out Any>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'firstOrNull' @ [103:76] ==> public inline fun <T> Array<out (Method..Method?)>.firstOrNull(predicate: ((Method..Method?)) -> Boolean): Method? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -201,11 +192,11 @@ Inferred types:
 
 'java' @ [109:53] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'methods' @ [109:58] ==> public final val <T : (Any..Any?)> Class<out Any>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'firstOrNull' @ [109:66] ==> public inline fun <T> Array<out (Method..Method?)>.firstOrNull(predicate: ((Method..Method?)) -> Boolean): Method? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -239,13 +230,13 @@ Inferred types:
 
 'Suppress' @ [119:1] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'?:' @ [122:22] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: DataNode<ModuleData>?, right: DataNode<ModuleData>): DataNode<ModuleData>[SimpleFunctionDescriptorImpl]
+'?:' @ [122:22] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: DataNode<(ModuleData..ModuleData?)>?, right: DataNode<(ModuleData..ModuleData?)>): DataNode<(ModuleData..ModuleData?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> DataNode<ModuleData>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> DataNode<(com.intellij.openapi.externalSystem.model.project.ModuleData..com.intellij.openapi.externalSystem.model.project.ModuleData?)>
 
 'findParent' @ [122:44] ==> @Nullable public open fun <T : (Any..Any?)> findParent(@NotNull p0: DataNode<*>, @NotNull p1: Key<(ModuleData..ModuleData?)>): DataNode<(ModuleData..ModuleData?)>? defined in com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleData
+    <T : (Any..Any?)> -> (com.intellij.openapi.externalSystem.model.project.ModuleData..com.intellij.openapi.externalSystem.model.project.ModuleData?)
 
 'sourceSetNode' @ [122:55] ==> value-parameter sourceSetNode: DataNode<GradleSourceSetData> defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionsGradleImportHandler.importBySourceSet[ValueParameterDescriptorImpl]
 
@@ -255,7 +246,7 @@ Inferred types:
 
 'facet' @ [123:24] ==> value-parameter facet: KotlinFacet defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionsGradleImportHandler.importBySourceSet[ValueParameterDescriptorImpl]
 
-'module' @ [123:31] ==> val module: DataNode<ModuleData> defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionsGradleImportHandler.importBySourceSet[LocalVariableDescriptor]
+'module' @ [123:31] ==> val module: DataNode<(ModuleData..ModuleData?)> defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionsGradleImportHandler.importBySourceSet[LocalVariableDescriptor]
 
 'facet' @ [127:29] ==> value-parameter facet: KotlinFacet defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionsGradleImportHandler.importByModule[ValueParameterDescriptorImpl]
 
@@ -266,8 +257,6 @@ Inferred types:
 'facetSettings' @ [128:31] ==> val facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidExtensionsGradleImportHandler.importByModule[LocalVariableDescriptor]
 
 'compilerArguments' @ [128:45] ==> public final var compilerArguments: CommonCompilerArguments? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
-
-'CommonCompilerArguments' @ [128:66] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
 
 'DummyImpl' @ [128:90] ==> public constructor DummyImpl() defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.DummyImpl[DeserializedClassConstructorDescriptor]
 

@@ -43,7 +43,7 @@ Inferred types:
 
 'getSuperClassOrAny' @ [47:35] ==> public fun ClassDescriptor.getSuperClassOrAny(): ClassDescriptor defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedSimpleFunctionDescriptor]
 
-'findDeclaredFunction' @ [47:56] ==> public tailrec fun ClassDescriptor.findDeclaredFunction(name: String, checkSuperClasses: Boolean, filter: (FunctionDescriptor) -> Boolean): FunctionDescriptor? defined in org.jetbrains.kotlin.idea.actions.generate[SimpleFunctionDescriptorImpl]
+'findDeclaredFunction' @ [47:56] ==> public tailrec fun ClassDescriptor.findDeclaredFunction(name: String, checkSuperClasses: Boolean, filter: (FunctionDescriptor) -> Boolean): FunctionDescriptor? defined in org.jetbrains.kotlin.idea.actions.generate in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [47:77] ==> value-parameter name: String defined in org.jetbrains.kotlin.idea.actions.generate.findDeclaredFunction[ValueParameterDescriptorImpl]
 
@@ -188,8 +188,6 @@ Inferred types:
 'descriptor' @ [84:30] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.actions.generate.generateFunctionSkeleton[ValueParameterDescriptorImpl]
 
 'descriptor' @ [84:42] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.actions.generate.generateFunctionSkeleton[ValueParameterDescriptorImpl]
-
-'OverrideMemberChooserObject' @ [84:54] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [84:91] ==> public object EMPTY : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 

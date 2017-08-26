@@ -12,7 +12,7 @@
 
 'resultingDescriptor' @ [45:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (descriptor is PropertyDescriptor && TranslationUtils.shouldAccessViaFunctions(descriptor)) {
             val methodRef = context.getNameForDescriptor(getAccessDescriptorIfNeeded())
@@ -62,7 +62,7 @@ Inferred types:
 
 'resultingDescriptor' @ [56:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (descriptor is PropertyDescriptor && TranslationUtils.shouldAccessViaFunctions(descriptor)) {
             val methodRef = ReferenceTranslator.translateAsValueReference(getAccessDescriptorIfNeeded(), context)
@@ -144,7 +144,7 @@ Inferred types:
 
 'resultingDescriptor' @ [79:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [80:13] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.js.translate.callTranslator.DefaultVariableAccessCase.noReceivers[LocalVariableDescriptor]
 
@@ -225,7 +225,7 @@ Inferred types:
 
 'resultingDescriptor' @ [101:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (isGetAccess()) localVariableDescriptor?.getter else localVariableDescriptor?.setter' @ [102:34] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: LocalVariableAccessorDescriptor?, elseBranch: LocalVariableAccessorDescriptor?): LocalVariableAccessorDescriptor?[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -260,7 +260,7 @@ Inferred types:
 
 'context' @ [105:35] ==> public open val context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.VariableAccessInfo[PropertyDescriptorImpl]
 
-'contextWithPropertyMetadataCreationIntrinsified' @ [105:43] ==> public fun TranslationContext.contextWithPropertyMetadataCreationIntrinsified(delegatedCall: ResolvedCall<FunctionDescriptor>, property: VariableDescriptorWithAccessors, host: JsExpression): TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'contextWithPropertyMetadataCreationIntrinsified' @ [105:43] ==> public fun TranslationContext.contextWithPropertyMetadataCreationIntrinsified(delegatedCall: ResolvedCall<FunctionDescriptor>, property: VariableDescriptorWithAccessors, host: JsExpression): TranslationContext defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'delegatedCall' @ [106:21] ==> val delegatedCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.js.translate.callTranslator.DefaultVariableAccessCase.noReceivers[LocalVariableDescriptor]
 
@@ -339,7 +339,7 @@ Inferred types:
 
 'resultingDescriptor' @ [123:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (descriptor is PropertyDescriptor && TranslationUtils.shouldAccessViaFunctions(descriptor)) {
             val callExpr = pureFqn(context.getNameForDescriptor(getAccessDescriptorIfNeeded()), dispatchReceiver!!)
@@ -415,9 +415,9 @@ Inferred types:
 
 'typeArguments' @ [139:49] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
-'buildReifiedTypeArgs' @ [139:63] ==> public fun Map<TypeParameterDescriptor, KotlinType>.buildReifiedTypeArgs(context: TranslationContext): List<JsExpression> defined in org.jetbrains.kotlin.js.translate.reference[SimpleFunctionDescriptorImpl]
+'buildReifiedTypeArgs' @ [139:63] ==> public fun Map<TypeParameterDescriptor, KotlinType>.buildReifiedTypeArgs(context: TranslationContext): List<JsExpression> defined in org.jetbrains.kotlin.js.translate.reference in file CallArgumentTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [139:84] ==> public open val context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.VariableAccessInfo[PropertyDescriptorImpl]
 
@@ -480,7 +480,7 @@ Inferred types:
 
 'singletonList' @ [161:25] ==> public open fun <T : (Any..Any?)> singletonList(p0: (JsExpression..JsExpression?)): (MutableList<(JsExpression..JsExpression?)>..List<(JsExpression..JsExpression?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JsExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'value' @ [161:39] ==> public final val value: JsExpression? defined in org.jetbrains.kotlin.js.translate.callTranslator.VariableAccessInfo[PropertyDescriptorImpl]
 
@@ -518,7 +518,7 @@ Inferred types:
 
 'resultingDescriptor' @ [177:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (descriptor is PropertyDescriptor && TranslationUtils.shouldAccessViaFunctions(descriptor)) {
             val accessor = getAccessDescriptorIfNeeded()
@@ -672,21 +672,15 @@ Inferred types:
 
 'isSuperInvocation' @ [203:9] ==> public fun CallInfo.isSuperInvocation(): Boolean defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallInfoExtensions.kt[SimpleFunctionDescriptorImpl]
 
-'SuperPropertyAccessCase' @ [204:13] ==> public object SuperPropertyAccessCase : VariableAccessCase defined in org.jetbrains.kotlin.js.translate.callTranslator in file VariableCallCases.kt[FakeCallableDescriptorForObject]
-
 'translate' @ [204:37] ==> public final fun translate(callInfo: VariableAccessInfo): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator.SuperPropertyAccessCase[SimpleFunctionDescriptorImpl]
 
 'this' @ [204:47] ==> <this> defined in org.jetbrains.kotlin.js.translate.callTranslator.translateVariableAccess[ReceiverParameterDescriptorImpl]
 
 'isNative' @ [205:9] ==> public fun CallInfo.isNative(): Boolean defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallInfoExtensions.kt[SimpleFunctionDescriptorImpl]
 
-'NativeVariableAccessCase' @ [206:13] ==> public object NativeVariableAccessCase : VariableAccessCase defined in org.jetbrains.kotlin.js.translate.callTranslator in file VariableCallCases.kt[FakeCallableDescriptorForObject]
-
 'translate' @ [206:38] ==> public final fun translate(callInfo: VariableAccessInfo): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator.NativeVariableAccessCase[SimpleFunctionDescriptorImpl]
 
 'this' @ [206:48] ==> <this> defined in org.jetbrains.kotlin.js.translate.callTranslator.translateVariableAccess[ReceiverParameterDescriptorImpl]
-
-'DefaultVariableAccessCase' @ [208:13] ==> public object DefaultVariableAccessCase : VariableAccessCase defined in org.jetbrains.kotlin.js.translate.callTranslator in file VariableCallCases.kt[FakeCallableDescriptorForObject]
 
 'translate' @ [208:39] ==> public final fun translate(callInfo: VariableAccessInfo): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator.DefaultVariableAccessCase[SimpleFunctionDescriptorImpl]
 

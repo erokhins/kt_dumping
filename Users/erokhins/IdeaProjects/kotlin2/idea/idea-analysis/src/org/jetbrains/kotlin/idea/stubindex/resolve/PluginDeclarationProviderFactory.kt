@@ -76,8 +76,6 @@ Inferred types:
 
 'moduleInfo' @ [59:81] ==> private final val moduleInfo: ModuleInfo defined in org.jetbrains.kotlin.idea.stubindex.resolve.PluginDeclarationProviderFactory[PropertyDescriptorImpl]
 
-'PackageIndexUtil' @ [61:13] ==> public object PackageIndexUtil defined in org.jetbrains.kotlin.idea.stubindex in file PackageIndexUtil.kt[FakeCallableDescriptorForObject]
-
 'packageExists' @ [61:30] ==> @JvmStatic public final fun packageExists(packageFqName: FqName, searchScope: GlobalSearchScope, project: Project): Boolean defined in org.jetbrains.kotlin.idea.stubindex.PackageIndexUtil[SimpleFunctionDescriptorImpl]
 
 'name' @ [61:44] ==> value-parameter name: FqName defined in org.jetbrains.kotlin.idea.stubindex.resolve.PluginDeclarationProviderFactory.packageExists[ValueParameterDescriptorImpl]

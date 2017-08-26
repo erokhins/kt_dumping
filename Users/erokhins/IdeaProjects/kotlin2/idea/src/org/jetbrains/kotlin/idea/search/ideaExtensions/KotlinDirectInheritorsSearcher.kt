@@ -51,16 +51,16 @@ Inferred types:
 
 'scope' @ [50:47] ==> val scope: GlobalSearchScope defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinDirectInheritorsSearcher.processQuery[LocalVariableDescriptor]
 
-'asSequence' @ [50:54] ==> public fun <T> Iterable<KtTypeAlias>.asSequence(): Sequence<KtTypeAlias> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'asSequence' @ [50:54] ==> public fun <T> Iterable<(KtTypeAlias..KtTypeAlias?)>.asSequence(): Sequence<(KtTypeAlias..KtTypeAlias?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtTypeAlias
+    <T> -> (org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)
 
-'map' @ [51:22] ==> public fun <T, R> Sequence<KtTypeAlias>.map(transform: (KtTypeAlias) -> String?): Sequence<String?> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'map' @ [51:22] ==> public fun <T, R> Sequence<(KtTypeAlias..KtTypeAlias?)>.map(transform: ((KtTypeAlias..KtTypeAlias?)) -> String?): Sequence<String?> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtTypeAlias
+    <T> -> (org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)
     <R> -> String?
 
-'it' @ [51:28] ==> value-parameter it: KtTypeAlias defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinDirectInheritorsSearcher.processQuery.searchForTypeAliasesRecursively.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [51:28] ==> value-parameter it: (KtTypeAlias..KtTypeAlias?) defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinDirectInheritorsSearcher.processQuery.searchForTypeAliasesRecursively.<anonymous>[ValueParameterDescriptorImpl]
 
 'name' @ [51:31] ==> public final val KtTypeAlias.name: String?[MyPropertyDescriptor]
 
@@ -89,6 +89,8 @@ Inferred types:
 'forEach' @ [55:22] ==> public inline fun <T> Sequence<String>.forEach(action: (String) -> Unit): Unit defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
+
+'searchForTypeAliasesRecursively' @ [55:32] ==> local final fun searchForTypeAliasesRecursively(typeName: String): Unit defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinDirectInheritorsSearcher.processQuery[SimpleFunctionDescriptorImpl]
 
 'searchForTypeAliasesRecursively' @ [58:9] ==> local final fun searchForTypeAliasesRecursively(typeName: String): Unit defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinDirectInheritorsSearcher.processQuery[SimpleFunctionDescriptorImpl]
 

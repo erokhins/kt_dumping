@@ -22,7 +22,7 @@ Inferred types:
 
 'java' @ [88:54] ==> public val <T> KClass<out IDELightClassContexts>.java: Class<out IDELightClassContexts> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IDELightClassContexts
+    <T> -> Captured(out IDELightClassContexts)
 
 'classOrObject' @ [91:32] ==> value-parameter classOrObject: KtClassOrObject defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.IDELightClassContexts.contextForNonLocalClassOrObject[ValueParameterDescriptorImpl]
 
@@ -72,8 +72,8 @@ Inferred types:
 
 'get' @ [101:46] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [101:65] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -117,8 +117,8 @@ Inferred types:
 
 'get' @ [112:41] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [112:60] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -314,25 +314,17 @@ Inferred types:
 
 'name' @ [164:16] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.IDELightClassContexts.isGeneratedForDataClass[ValueParameterDescriptorImpl]
 
-'DataClassDescriptorResolver' @ [164:24] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
-
 'EQUALS_METHOD_NAME' @ [164:52] ==> public final val EQUALS_METHOD_NAME: Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[DeserializedPropertyDescriptor]
 
 'name' @ [166:16] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.IDELightClassContexts.isGeneratedForDataClass[ValueParameterDescriptorImpl]
-
-'DataClassDescriptorResolver' @ [166:24] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
 'COPY_METHOD_NAME' @ [166:52] ==> public final val COPY_METHOD_NAME: Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[DeserializedPropertyDescriptor]
 
 'name' @ [167:16] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.IDELightClassContexts.isGeneratedForDataClass[ValueParameterDescriptorImpl]
 
-'DataClassDescriptorResolver' @ [167:24] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
-
 'HASH_CODE_METHOD_NAME' @ [167:52] ==> public final val HASH_CODE_METHOD_NAME: Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[DeserializedPropertyDescriptor]
 
 'name' @ [168:16] ==> value-parameter name: Name defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.IDELightClassContexts.isGeneratedForDataClass[ValueParameterDescriptorImpl]
-
-'DataClassDescriptorResolver' @ [168:24] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
 'TO_STRING_METHOD_NAME' @ [168:52] ==> public final val TO_STRING_METHOD_NAME: Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[DeserializedPropertyDescriptor]
 
@@ -387,10 +379,8 @@ Inferred types:
 
 'processElements' @ [186:33] ==> public final fun <Key : (Any..Any?), Psi : (PsiElement..PsiElement?)> processElements(@NotNull p0: StubIndexKey<(String..String?), (KtCallableDeclaration..KtCallableDeclaration?)>, @NotNull p1: String, @NotNull p2: Project, @Nullable p3: GlobalSearchScope?, p4: (Class<(KtCallableDeclaration..KtCallableDeclaration?)>..Class<(KtCallableDeclaration..KtCallableDeclaration?)>?), @NotNull p5: ((KtCallableDeclaration..KtCallableDeclaration?)) -> Boolean): Boolean defined in com.intellij.psi.stubs.StubIndex[MyFunctionDescriptor]
 Inferred types:
-    <Key : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtCallableDeclaration
-
-'KotlinOverridableInternalMembersShortNameIndex' @ [187:17] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex[FakeCallableDescriptorForObject]
+    <Key : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallableDeclaration..org.jetbrains.kotlin.psi.KtCallableDeclaration?)
 
 'Instance' @ [187:64] ==> @JvmField public final val Instance: KotlinOverridableInternalMembersShortNameIndex defined in org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex.Companion[PropertyDescriptorImpl]
 
@@ -642,8 +632,6 @@ Inferred types:
 
 'jvmTarget' @ [260:21] ==> val jvmTarget: JvmTarget? defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.IDELightClassContexts.setupAdHocResolve.<anonymous>[LocalVariableDescriptor]
 
-'JvmTarget' @ [260:34] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [260:44] ==> @field:JvmField public final val DEFAULT: JvmTarget defined in org.jetbrains.kotlin.config.JvmTarget.Companion[DeserializedPropertyDescriptor]
 
 'trace' @ [260:53] ==> val trace: BindingTraceContext defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.IDELightClassContexts.setupAdHocResolve[LocalVariableDescriptor]
@@ -661,8 +649,6 @@ Inferred types:
     <reified T : Any> -> FileScopeProviderImpl
 
 'useInstance' @ [266:13] ==> public fun StorageComponentContainer.useInstance(instance: Any): Unit defined in org.jetbrains.kotlin.container[DeserializedSimpleFunctionDescriptor]
-
-'IDELanguageSettingsProvider' @ [266:25] ==> public object IDELanguageSettingsProvider : LanguageSettingsProvider defined in org.jetbrains.kotlin.idea.compiler in file IDELanguageSettingsProvider.kt[FakeCallableDescriptorForObject]
 
 'getLanguageVersionSettings' @ [266:53] ==> public open fun getLanguageVersionSettings(moduleInfo: ModuleInfo, project: Project): LanguageVersionSettings defined in org.jetbrains.kotlin.idea.compiler.IDELanguageSettingsProvider[SimpleFunctionDescriptorImpl]
 
@@ -906,8 +892,6 @@ Inferred types:
 'annotationEntry' @ [339:74] ==> value-parameter annotationEntry: KtAnnotationEntry defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.IDELightClassContexts.AdHocAnnotationResolver.resolveAnnotationCall[ValueParameterDescriptorImpl]
 
 'NO_EXPECTED_TYPE' @ [339:102] ==> @NotNull public final val NO_EXPECTED_TYPE: SimpleType defined in org.jetbrains.kotlin.types.TypeUtils[JavaPropertyDescriptor]
-
-'DataFlowInfoFactory' @ [340:29] ==> public object DataFlowInfoFactory defined in org.jetbrains.kotlin.resolve.calls.smartcasts[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [340:49] ==> @field:JvmField public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfoFactory[DeserializedPropertyDescriptor]
 

@@ -12,8 +12,6 @@
 
 'NotNullBasicValue' @ [32:40] ==> public constructor NotNullBasicValue(type: Type?) defined in org.jetbrains.kotlin.codegen.optimization.nullCheck.NotNullBasicValue[ClassConstructorDescriptorImpl]
 
-'StrictBasicValue' @ [32:58] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue[FakeCallableDescriptorForObject]
-
 'REFERENCE_VALUE' @ [32:75] ==> @JvmField public final val REFERENCE_VALUE: StrictBasicValue defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue.Companion[PropertyDescriptorImpl]
 
 'type' @ [32:91] ==> public final val StrictBasicValue.type: (Type..Type?)[MyPropertyDescriptor]

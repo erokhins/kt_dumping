@@ -56,7 +56,7 @@
 
 'CONST_KEYWORD' @ [54:86] ==> public final val CONST_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'nonApplicable' @ [54:109] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers[SimpleFunctionDescriptorImpl]
+'nonApplicable' @ [54:109] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers in file ConstModifierChecker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [57:37] ==> value-parameter descriptor: VariableDescriptor defined in org.jetbrains.kotlin.resolve.checkers.ConstModifierChecker.checkCanBeConst[ValueParameterDescriptorImpl]
 
@@ -76,7 +76,7 @@
 
 'constModifierPsiElement' @ [59:64] ==> value-parameter constModifierPsiElement: PsiElement defined in org.jetbrains.kotlin.resolve.checkers.ConstModifierChecker.checkCanBeConst[ValueParameterDescriptorImpl]
 
-'nonApplicable' @ [59:89] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers[SimpleFunctionDescriptorImpl]
+'nonApplicable' @ [59:89] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers in file ConstModifierChecker.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [62:13] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.resolve.checkers.ConstModifierChecker.checkCanBeConst[ValueParameterDescriptorImpl]
 
@@ -96,7 +96,7 @@
 
 'delegate' @ [65:66] ==> public final val KtProperty.delegate: KtPropertyDelegate?[MyPropertyDescriptor]
 
-'nonApplicable' @ [65:78] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers[SimpleFunctionDescriptorImpl]
+'nonApplicable' @ [65:78] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers in file ConstModifierChecker.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [68:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -114,7 +114,7 @@
 
 'getter' @ [69:64] ==> public final val KtProperty.getter: KtPropertyAccessor?[MyPropertyDescriptor]
 
-'nonApplicable' @ [69:74] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers[SimpleFunctionDescriptorImpl]
+'nonApplicable' @ [69:74] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers in file ConstModifierChecker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [72:13] ==> value-parameter descriptor: VariableDescriptor defined in org.jetbrains.kotlin.resolve.checkers.ConstModifierChecker.checkCanBeConst[ValueParameterDescriptorImpl]
 
@@ -142,7 +142,7 @@
 
 'type' @ [76:98] ==> public final val PropertyDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'nonApplicable' @ [76:104] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers[SimpleFunctionDescriptorImpl]
+'nonApplicable' @ [76:104] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers in file ConstModifierChecker.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [79:13] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.resolve.checkers.ConstModifierChecker.checkCanBeConst[ValueParameterDescriptorImpl]
 
@@ -154,7 +154,7 @@
 
 'constModifierPsiElement' @ [80:60] ==> value-parameter constModifierPsiElement: PsiElement defined in org.jetbrains.kotlin.resolve.checkers.ConstModifierChecker.checkCanBeConst[ValueParameterDescriptorImpl]
 
-'nonApplicable' @ [80:85] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers[SimpleFunctionDescriptorImpl]
+'nonApplicable' @ [80:85] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers in file ConstModifierChecker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [83:13] ==> value-parameter descriptor: VariableDescriptor defined in org.jetbrains.kotlin.resolve.checkers.ConstModifierChecker.checkCanBeConst[ValueParameterDescriptorImpl]
 
@@ -168,7 +168,7 @@
 
 'initializer' @ [84:79] ==> public final var KtProperty.initializer: KtExpression?[MyPropertyDescriptor]
 
-'nonApplicable' @ [84:94] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers[SimpleFunctionDescriptorImpl]
+'nonApplicable' @ [84:94] ==> private fun Diagnostic.nonApplicable(): ConstApplicability.NonApplicable defined in org.jetbrains.kotlin.resolve.checkers in file ConstModifierChecker.kt[SimpleFunctionDescriptorImpl]
 
 'Applicable' @ [87:35] ==> public object Applicable : ConstApplicability defined in org.jetbrains.kotlin.resolve.checkers.ConstApplicability[FakeCallableDescriptorForObject]
 

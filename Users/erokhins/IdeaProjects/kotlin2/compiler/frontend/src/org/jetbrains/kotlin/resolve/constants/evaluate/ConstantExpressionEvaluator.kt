@@ -61,7 +61,7 @@ Inferred types:
 
 'valueArguments' @ [83:70] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'entries' @ [83:85] ==> public abstract val entries: MutableSet<MutableMap.MutableEntry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>> defined in kotlin.collections.MutableMap[DeserializedPropertyDescriptor]
 
@@ -270,8 +270,8 @@ Inferred types:
 
 'get' @ [143:63] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?), key: (KtExpression..KtExpression?)): DoubleColonLHS? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> DoubleColonLHS
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.DoubleColonLHS..org.jetbrains.kotlin.types.expressions.DoubleColonLHS?)
 
 'DOUBLE_COLON_LHS' @ [143:82] ==> public final val DOUBLE_COLON_LHS: (WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -382,7 +382,7 @@ Inferred types:
 
 'expression' @ [176:28] ==> value-parameter expression: KtCallExpression defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.getArgumentExpressionsForArrayCall[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [176:39] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [176:39] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [176:55] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.getArgumentExpressionsForArrayCall[ValueParameterDescriptorImpl]
 
@@ -412,7 +412,7 @@ Inferred types:
 
 'resultingDescriptor' @ [192:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'returnType' @ [192:59] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -440,7 +440,7 @@ Inferred types:
 
 'valueArguments' @ [196:57] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolvedValueArgument' @ [197:35] ==> val resolvedValueArgument: (ResolvedValueArgument..ResolvedValueArgument?) defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.getArgumentExpressionsForArrayLikeCall[LocalVariableDescriptor]
 
@@ -513,8 +513,6 @@ Inferred types:
 
 'argumentExpression' @ [223:47] ==> val argumentExpression: KtExpression defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.resolveAnnotationValueArguments[LocalVariableDescriptor]
 
-'StatementFilter' @ [223:67] ==> public companion object defined in org.jetbrains.kotlin.resolve.StatementFilter[FakeCallableDescriptorForObject]
-
 'NONE' @ [223:83] ==> @JvmField public final val NONE: StatementFilter defined in org.jetbrains.kotlin.resolve.StatementFilter.Companion[PropertyDescriptorImpl]
 
 'trace' @ [223:89] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.resolveAnnotationValueArguments[ValueParameterDescriptorImpl]
@@ -559,11 +557,11 @@ Inferred types:
 
 '!' @ [241:20] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'constant' @ [241:21] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.evaluateExpression[LocalVariableDescriptor]
+'constant' @ [241:21] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.evaluateExpression[LocalVariableDescriptor]
 
 'isError' @ [241:30] ==> public open val isError: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
-'constant' @ [241:39] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.evaluateExpression[LocalVariableDescriptor]
+'constant' @ [241:39] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.evaluateExpression[LocalVariableDescriptor]
 
 'evaluateExpression' @ [249:16] ==> public final fun evaluateExpression(expression: KtExpression, trace: BindingTrace, expectedType: KotlinType? = ...): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[SimpleFunctionDescriptorImpl]
 
@@ -591,11 +589,11 @@ Inferred types:
 
 '!' @ [256:24] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'constant' @ [256:25] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion.getConstant[LocalVariableDescriptor]
+'constant' @ [256:25] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion.getConstant[LocalVariableDescriptor]
 
 'isError' @ [256:34] ==> public open val isError: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
-'constant' @ [256:43] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion.getConstant[LocalVariableDescriptor]
+'constant' @ [256:43] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion.getConstant[LocalVariableDescriptor]
 
 'JvmStatic' @ [259:9] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
@@ -603,8 +601,8 @@ Inferred types:
 
 'get' @ [261:35] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtExpression..KtExpression?), (CompileTimeConstant<*>..CompileTimeConstant<*>?)>..ReadOnlySlice<(KtExpression..KtExpression?), (CompileTimeConstant<*>..CompileTimeConstant<*>?)>?), key: (KtExpression..KtExpression?)): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> CompileTimeConstant<*>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.constants.CompileTimeConstant<*>..org.jetbrains.kotlin.resolve.constants.CompileTimeConstant<*>?)
 
 'COMPILE_TIME_VALUE' @ [261:54] ==> public final val COMPILE_TIME_VALUE: (WritableSlice<(KtExpression..KtExpression?), (CompileTimeConstant<*>..CompileTimeConstant<*>?)>..WritableSlice<(KtExpression..KtExpression?), (CompileTimeConstant<*>..CompileTimeConstant<*>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -614,15 +612,9 @@ Inferred types:
 Inferred types:
     <T> -> Name
 
-'OperatorNameConventions' @ [267:16] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'DIV' @ [267:40] ==> @field:JvmField public final val DIV: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
-'OperatorNameConventions' @ [267:45] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'REM' @ [267:69] ==> @field:JvmField public final val REM: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
-
-'OperatorNameConventions' @ [267:74] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'MOD' @ [267:98] ==> @field:JvmField public final val MOD: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -632,6 +624,8 @@ Inferred types:
     <R> -> String
 
 'Name' @ [268:22] ==> private constructor Name(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.name.Name[JavaClassConstructorDescriptor]
+
+'asString' @ [268:28] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
 'toSet' @ [269:18] ==> public fun <T> Iterable<String>.toSet(): Set<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -679,8 +673,8 @@ Inferred types:
 
 'record' @ [286:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (CompileTimeConstant<*>..CompileTimeConstant<*>?)>..WritableSlice<(KtExpression..KtExpression?), (CompileTimeConstant<*>..CompileTimeConstant<*>?)>?), key: (KtExpression..KtExpression?), value: (CompileTimeConstant<*>..CompileTimeConstant<*>?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> CompileTimeConstant<*>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.constants.CompileTimeConstant<*>..org.jetbrains.kotlin.resolve.constants.CompileTimeConstant<*>?)
 
 'COMPILE_TIME_VALUE' @ [286:41] ==> public final val COMPILE_TIME_VALUE: (WritableSlice<(KtExpression..KtExpression?), (CompileTimeConstant<*>..CompileTimeConstant<*>?)>..WritableSlice<(KtExpression..KtExpression?), (CompileTimeConstant<*>..CompileTimeConstant<*>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -760,14 +754,14 @@ Inferred types:
 
 'stringType' @ [312:78] ==> public final val KotlinBuiltIns.stringType: SimpleType[MyPropertyDescriptor]
 
-'let' @ [312:91] ==> @InlineOnly public inline fun <T, R> CompileTimeConstant<Any?>.let(block: (CompileTimeConstant<Any?>) -> TypedCompileTimeConstant<String>?): TypedCompileTimeConstant<String>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [312:91] ==> @InlineOnly public inline fun <T, R> CompileTimeConstant<*>.let(block: (CompileTimeConstant<*>) -> TypedCompileTimeConstant<String>?): TypedCompileTimeConstant<String>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompileTimeConstant<Any?>
+    <T> -> CompileTimeConstant<*>
     <R> -> TypedCompileTimeConstant<String>?
 
 'createStringConstant' @ [313:17] ==> private final fun createStringConstant(compileTimeConstant: CompileTimeConstant<*>): TypedCompileTimeConstant<String>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.stringExpressionEvaluator.<no name provided>[SimpleFunctionDescriptorImpl]
 
-'it' @ [313:38] ==> value-parameter it: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.stringExpressionEvaluator.<no name provided>.visitStringTemplateEntryWithExpression.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [313:38] ==> value-parameter it: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.stringExpressionEvaluator.<no name provided>.visitStringTemplateEntryWithExpression.<anonymous>[ValueParameterDescriptorImpl]
 
 'factory' @ [317:109] ==> private final val factory: ConstantValueFactory defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor[PropertyDescriptorImpl]
 
@@ -926,7 +920,7 @@ Inferred types:
 
 'INTEGER_CONSTANT' @ [353:63] ==> public final val INTEGER_CONSTANT: (KtNodeType..KtNodeType?) defined in org.jetbrains.kotlin.KtNodeTypes[JavaPropertyDescriptor]
 
-'hasLongSuffix' @ [353:83] ==> private fun hasLongSuffix(text: String): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate[SimpleFunctionDescriptorImpl]
+'hasLongSuffix' @ [353:83] ==> private fun hasLongSuffix(text: String): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate in file ConstantExpressionEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'text' @ [353:97] ==> val text: String defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitConstantExpression[LocalVariableDescriptor]
 
@@ -1064,7 +1058,9 @@ Inferred types:
 
 'usesNonConstantVariableAsConstant' @ [400:57] ==> var usesNonConstantVariableAsConstant: Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitStringTemplateExpression[LocalVariableDescriptor]
 
-'ConstantExpressionEvaluator' @ [407:16] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [407:16] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Boolean?, right: Boolean): Boolean[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Boolean
 
 'getConstant' @ [407:44] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1124,11 +1120,11 @@ Inferred types:
 
 'java' @ [420:125] ==> public val <T> KClass<out CompileTimeConstant<*>>.java: Class<out CompileTimeConstant<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> CompileTimeConstant<*>
+    <T> -> Captured(out CompileTimeConstant<*>)
 
 'canonicalName' @ [420:130] ==> public final val <T : (Any..Any?)> Class<out CompileTimeConstant<*>>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CompileTimeConstant<*>
+    <T : (Any..Any?)> -> Captured(out CompileTimeConstant<*>)
 
 '!' @ [423:21] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -1211,13 +1207,13 @@ Inferred types:
 
 'booleanType' @ [441:59] ==> val booleanType: SimpleType defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
 
-'leftConstant' @ [443:29] ==> val leftConstant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
+'leftConstant' @ [443:29] ==> val leftConstant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
 
 'getValue' @ [443:42] ==> public open fun getValue(expectedType: KotlinType): Any? defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedSimpleFunctionDescriptor]
 
 'booleanType' @ [443:51] ==> val booleanType: SimpleType defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
 
-'rightConstant' @ [444:30] ==> val rightConstant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
+'rightConstant' @ [444:30] ==> val rightConstant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
 
 'getValue' @ [444:44] ==> public open fun getValue(expectedType: KotlinType): Any? defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedSimpleFunctionDescriptor]
 
@@ -1261,19 +1257,19 @@ Inferred types:
 
 'Parameters' @ [454:41] ==> public constructor Parameters(canBeUsedInAnnotation: Boolean, isPure: Boolean, usesVariableAsConstant: Boolean, usesNonConstValAsConstant: Boolean) defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant.Parameters[DeserializedClassConstructorDescriptor]
 
-'leftConstant' @ [457:54] ==> val leftConstant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
+'leftConstant' @ [457:54] ==> val leftConstant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
 
 'usesVariableAsConstant' @ [457:67] ==> public open val usesVariableAsConstant: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
-'rightConstant' @ [457:93] ==> val rightConstant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
+'rightConstant' @ [457:93] ==> val rightConstant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
 
 'usesVariableAsConstant' @ [457:107] ==> public open val usesVariableAsConstant: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
-'leftConstant' @ [458:57] ==> val leftConstant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
+'leftConstant' @ [458:57] ==> val leftConstant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
 
 'usesNonConstValAsConstant' @ [458:70] ==> public open val usesNonConstValAsConstant: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
-'rightConstant' @ [458:99] ==> val rightConstant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
+'rightConstant' @ [458:99] ==> val rightConstant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitBinaryExpression[LocalVariableDescriptor]
 
 'usesNonConstValAsConstant' @ [458:113] ==> public open val usesNonConstValAsConstant: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
@@ -1301,7 +1297,7 @@ Inferred types:
 
 'callExpression' @ [473:28] ==> value-parameter callExpression: KtExpression defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateCall[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [473:43] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [473:43] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [473:59] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor[PropertyDescriptorImpl]
 
@@ -1315,13 +1311,13 @@ Inferred types:
 
 'resultingDescriptor' @ [474:63] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [476:39] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateCall[LocalVariableDescriptor]
 
 'resultingDescriptor' @ [476:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'name' @ [476:72] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 
@@ -1341,7 +1337,7 @@ Inferred types:
 
 'valueArguments' @ [483:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'entries' @ [483:61] ==> public abstract val entries: MutableSet<MutableMap.MutableEntry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>> defined in kotlin.collections.MutableMap[DeserializedPropertyDescriptor]
 
@@ -1507,7 +1503,7 @@ Inferred types:
 
 'getParentOfType' @ [509:66] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtExpression..KtExpression?)>): KtExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'receiverExpression' @ [509:82] ==> value-parameter receiverExpression: KtExpression defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateCall[ValueParameterDescriptorImpl]
 
@@ -1525,13 +1521,13 @@ Inferred types:
 
 'parentExpression' @ [510:57] ==> val parentExpression: KtExpression defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateCall[LocalVariableDescriptor]
 
-'isIntegerType' @ [512:22] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate[SimpleFunctionDescriptorImpl]
+'isIntegerType' @ [512:22] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate in file ConstantExpressionEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'argumentForReceiver' @ [512:36] ==> val argumentForReceiver: ConstantExpressionEvaluatorVisitor.OperationArgument defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateCall[LocalVariableDescriptor]
 
 'value' @ [512:56] ==> public final val value: Any defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.OperationArgument[PropertyDescriptorImpl]
 
-'isIntegerType' @ [512:66] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate[SimpleFunctionDescriptorImpl]
+'isIntegerType' @ [512:66] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate in file ConstantExpressionEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'argumentForParameter' @ [512:80] ==> val argumentForParameter: ConstantExpressionEvaluatorVisitor.OperationArgument defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateCall[LocalVariableDescriptor]
 
@@ -1544,8 +1540,6 @@ Inferred types:
 'languageVersionSettings' @ [513:50] ==> internal final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[PropertyDescriptorImpl]
 
 'supportsFeature' @ [513:74] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [513:90] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'DivisionByZeroInConstantExpressions' @ [513:106] ==> enum entry DivisionByZeroInConstantExpressions defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -1683,7 +1677,9 @@ Inferred types:
 
 'parameters' @ [529:58] ==> val parameters: CompileTimeConstant.Parameters defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateCall[LocalVariableDescriptor]
 
-'ConstantExpressionEvaluator' @ [537:68] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [537:68] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Boolean?, right: Boolean): Boolean[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Boolean
 
 'getConstant' @ [537:96] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1695,7 +1691,9 @@ Inferred types:
 
 'usesVariableAsConstant' @ [537:143] ==> public open val usesVariableAsConstant: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
-'ConstantExpressionEvaluator' @ [539:15] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [539:15] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Boolean?, right: Boolean): Boolean[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Boolean
 
 'getConstant' @ [539:43] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1707,7 +1705,9 @@ Inferred types:
 
 'usesNonConstValAsConstant' @ [539:90] ==> public open val usesNonConstValAsConstant: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
-'ConstantExpressionEvaluator' @ [541:67] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [541:67] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Boolean?, right: Boolean): Boolean[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Boolean
 
 'getConstant' @ [541:95] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1719,7 +1719,9 @@ Inferred types:
 
 'canBeUsedInAnnotations' @ [541:142] ==> public open val canBeUsedInAnnotations: Boolean defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedPropertyDescriptor]
 
-'ConstantExpressionEvaluator' @ [543:60] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [543:60] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Boolean?, right: Boolean): Boolean[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Boolean
 
 'getConstant' @ [543:88] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1763,7 +1765,7 @@ Inferred types:
 
 'assert' @ [553:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'isIntegerType' @ [553:16] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate[SimpleFunctionDescriptorImpl]
+'isIntegerType' @ [553:16] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate in file ConstantExpressionEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'receiver' @ [553:30] ==> value-parameter receiver: ConstantExpressionEvaluatorVisitor.OperationArgument defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateUnaryAndCheck[ValueParameterDescriptorImpl]
 
@@ -1839,13 +1841,13 @@ Inferred types:
 
 'assert' @ [575:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'isIntegerType' @ [575:17] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate[SimpleFunctionDescriptorImpl]
+'isIntegerType' @ [575:17] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate in file ConstantExpressionEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'receiver' @ [575:31] ==> value-parameter receiver: ConstantExpressionEvaluatorVisitor.OperationArgument defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateBinaryAndCheck[ValueParameterDescriptorImpl]
 
 'value' @ [575:40] ==> public final val value: Any defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.OperationArgument[PropertyDescriptorImpl]
 
-'isIntegerType' @ [575:50] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate[SimpleFunctionDescriptorImpl]
+'isIntegerType' @ [575:50] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate in file ConstantExpressionEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'parameter' @ [575:64] ==> value-parameter parameter: ConstantExpressionEvaluatorVisitor.OperationArgument defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateBinaryAndCheck[ValueParameterDescriptorImpl]
 
@@ -1868,8 +1870,6 @@ Inferred types:
 
 'name' @ [579:34] ==> value-parameter name: String defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateBinaryAndCheck[ValueParameterDescriptorImpl]
 
-'OperatorNameConventions' @ [579:42] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'MOD' @ [579:66] ==> @field:JvmField public final val MOD: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'asString' @ [579:70] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
@@ -1879,8 +1879,6 @@ Inferred types:
 'receiver' @ [580:32] ==> value-parameter receiver: ConstantExpressionEvaluatorVisitor.OperationArgument defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateBinaryAndCheck[ValueParameterDescriptorImpl]
 
 'parameter' @ [580:42] ==> value-parameter parameter: ConstantExpressionEvaluatorVisitor.OperationArgument defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.evaluateBinaryAndCheck[ValueParameterDescriptorImpl]
-
-'OperatorNameConventions' @ [580:53] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'REM' @ [580:77] ==> @field:JvmField public final val REM: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -1961,7 +1959,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Boolean
 
-'isIntegerType' @ [603:13] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate[SimpleFunctionDescriptorImpl]
+'isIntegerType' @ [603:13] ==> public fun isIntegerType(value: Any?): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate in file ConstantExpressionEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [603:27] ==> value-parameter value: Any? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.isZero[ValueParameterDescriptorImpl]
 
@@ -2001,8 +1999,8 @@ Inferred types:
 
 'get' @ [616:51] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [616:70] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2026,7 +2024,7 @@ Inferred types:
 
 'expression' @ [621:28] ==> value-parameter expression: KtSimpleNameExpression defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitSimpleNameExpression[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [621:39] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [621:39] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [621:55] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor[PropertyDescriptorImpl]
 
@@ -2038,7 +2036,7 @@ Inferred types:
 
 'resultingDescriptor' @ [623:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callableDescriptor' @ [624:17] ==> val callableDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitSimpleNameExpression[LocalVariableDescriptor]
 
@@ -2048,8 +2046,6 @@ Inferred types:
 
 'modality' @ [626:84] ==> public final val PropertyDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [626:96] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [626:105] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'callableDescriptor' @ [628:43] ==> val callableDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitSimpleNameExpression[LocalVariableDescriptor]
@@ -2058,7 +2054,7 @@ Inferred types:
 
 'createConstant' @ [630:24] ==> private final fun createConstant(value: Any?, expectedType: KotlinType?, parameters: CompileTimeConstant.Parameters): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor[SimpleFunctionDescriptorImpl]
 
-'variableInitializer' @ [631:25] ==> val variableInitializer: ConstantValue<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitSimpleNameExpression[LocalVariableDescriptor]
+'variableInitializer' @ [631:25] ==> val variableInitializer: ConstantValue<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitSimpleNameExpression[LocalVariableDescriptor]
 
 'value' @ [631:45] ==> public open val value: Any? defined in org.jetbrains.kotlin.resolve.constants.ConstantValue[DeserializedPropertyDescriptor]
 
@@ -2156,7 +2152,7 @@ Inferred types:
 
 'expression' @ [689:20] ==> value-parameter expression: KtCallExpression defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.visitCallExpression[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [689:31] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [689:31] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [689:47] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor[PropertyDescriptorImpl]
 
@@ -2166,7 +2162,7 @@ Inferred types:
 
 'resultingDescriptor' @ [691:40] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'isArrayFunctionCall' @ [694:38] ==> public open fun isArrayFunctionCall(@NotNull resolvedCall: ResolvedCall<*>): Boolean defined in org.jetbrains.kotlin.resolve.CompileTimeConstantUtils[JavaMethodDescriptor]
 
@@ -2214,7 +2210,7 @@ Inferred types:
 
 'resultingDescriptor' @ [717:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'returnType' @ [717:51] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -2230,7 +2226,7 @@ Inferred types:
 
 'valueArguments' @ [720:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'values' @ [720:45] ==> public abstract val values: MutableCollection<(ResolvedValueArgument..ResolvedValueArgument?)> defined in kotlin.collections.MutableMap[DeserializedPropertyDescriptor]
 
@@ -2482,11 +2478,11 @@ Inferred types:
 
 'parameterType' @ [793:101] ==> value-parameter parameterType: KotlinType defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createOperationArgument[ValueParameterDescriptorImpl]
 
-'compileTimeConstant' @ [794:13] ==> val compileTimeConstant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createOperationArgument[LocalVariableDescriptor]
+'compileTimeConstant' @ [794:13] ==> val compileTimeConstant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createOperationArgument[LocalVariableDescriptor]
 
 '!' @ [794:64] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'compileTimeConstant' @ [794:65] ==> val compileTimeConstant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createOperationArgument[LocalVariableDescriptor]
+'compileTimeConstant' @ [794:65] ==> val compileTimeConstant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createOperationArgument[LocalVariableDescriptor]
 
 'type' @ [794:85] ==> public final val type: KotlinType defined in org.jetbrains.kotlin.resolve.constants.TypedCompileTimeConstant[DeserializedPropertyDescriptor]
 
@@ -2494,7 +2490,7 @@ Inferred types:
 
 'parameterType' @ [794:102] ==> value-parameter parameterType: KotlinType defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createOperationArgument[ValueParameterDescriptorImpl]
 
-'compileTimeConstant' @ [795:32] ==> val compileTimeConstant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createOperationArgument[LocalVariableDescriptor]
+'compileTimeConstant' @ [795:32] ==> val compileTimeConstant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createOperationArgument[LocalVariableDescriptor]
 
 'getValue' @ [795:52] ==> public open fun getValue(expectedType: KotlinType): Any? defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedSimpleFunctionDescriptor]
 
@@ -2613,9 +2609,9 @@ Inferred types:
 'when (value) {
             value.toInt().toLong() -> factory.createIntValue(value.toInt())
             else -> factory.createLongValue(value)
-        }' @ [835:16] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: IntegerValueConstant<{Number & Comparable<{Long & Int}>}>, entry1: IntegerValueConstant<{Number & Comparable<{Long & Int}>}>): IntegerValueConstant<{Number & Comparable<{Long & Int}>}>[SimpleFunctionDescriptorImpl]
+        }' @ [835:16] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: IntegerValueConstant<Any>, entry1: IntegerValueConstant<Any>): IntegerValueConstant<Any>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> IntegerValueConstant<{Number & Comparable<{Long & Int}>}>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> IntegerValueConstant<Any>
 
 'value' @ [835:22] ==> value-parameter value: Long defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createIntegerCompileTimeConstant[ValueParameterDescriptorImpl]
 
@@ -2639,9 +2635,9 @@ Inferred types:
 
 'value' @ [837:45] ==> value-parameter value: Long defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createIntegerCompileTimeConstant[ValueParameterDescriptorImpl]
 
-'wrap' @ [838:11] ==> private final fun <T> ConstantValue<{Number & Comparable<{Long & Int}>}>.wrap(parameters: CompileTimeConstant.Parameters): TypedCompileTimeConstant<{Number & Comparable<{Long & Int}>}> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor[SimpleFunctionDescriptorImpl]
+'wrap' @ [838:11] ==> private final fun <T> ConstantValue<Any>.wrap(parameters: CompileTimeConstant.Parameters): TypedCompileTimeConstant<Any> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> {Number & Comparable<{Long & Int}>}
+    <T> -> Any
 
 'parameters' @ [838:16] ==> value-parameter parameters: CompileTimeConstant.Parameters defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createIntegerCompileTimeConstant[ValueParameterDescriptorImpl]
 
@@ -2707,7 +2703,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> String
 
-'hasLongSuffix' @ [866:50] ==> private fun hasLongSuffix(text: String): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate[SimpleFunctionDescriptorImpl]
+'hasLongSuffix' @ [866:50] ==> private fun hasLongSuffix(text: String): Boolean defined in org.jetbrains.kotlin.resolve.constants.evaluate in file ConstantExpressionEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'text' @ [866:64] ==> value-parameter text: String defined in org.jetbrains.kotlin.resolve.constants.evaluate.parseLong[ValueParameterDescriptorImpl]
 
@@ -2856,8 +2852,6 @@ Inferred types:
 
 'getReferencedNameAsName' @ [925:43] ==> public abstract fun getReferencedNameAsName(): Name defined in org.jetbrains.kotlin.psi.KtSimpleNameExpression[SimpleFunctionDescriptorImpl]
 
-'OperatorNameConventions' @ [925:72] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'EQUALS' @ [925:96] ==> @field:JvmField public final val EQUALS: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'result' @ [926:17] ==> value-parameter result: Any? defined in org.jetbrains.kotlin.resolve.constants.evaluate.createCompileTimeConstantForEquals[ValueParameterDescriptorImpl]
@@ -2942,8 +2936,6 @@ Inferred types:
 
 'getReferencedNameAsName' @ [945:43] ==> public abstract fun getReferencedNameAsName(): Name defined in org.jetbrains.kotlin.psi.KtSimpleNameExpression[SimpleFunctionDescriptorImpl]
 
-'OperatorNameConventions' @ [945:72] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'COMPARE_TO' @ [945:96] ==> @field:JvmField public final val COMPARE_TO: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'factory' @ [946:24] ==> value-parameter factory: ConstantValueFactory defined in org.jetbrains.kotlin.resolve.constants.evaluate.createCompileTimeConstantForCompareTo[ValueParameterDescriptorImpl]
@@ -2978,7 +2970,7 @@ Inferred types:
 
 'explicitReceiverKind' @ [957:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'DISPATCH_RECEIVER' @ [958:30] ==> enum entry DISPATCH_RECEIVER defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 
@@ -2986,7 +2978,7 @@ Inferred types:
 
 'dispatchReceiver' @ [958:64] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'type' @ [958:83] ==> public final val ReceiverValue.type: KotlinType[MyPropertyDescriptor]
 
@@ -2996,7 +2988,7 @@ Inferred types:
 
 'extensionReceiver' @ [959:65] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'type' @ [959:85] ==> public final val ReceiverValue.type: KotlinType[MyPropertyDescriptor]
 

@@ -2,7 +2,7 @@
 
 'project' @ [31:41] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.ModuleSourceRootMap.<init>[ValueParameterDescriptorImpl]
 
-'allModules' @ [31:49] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'allModules' @ [31:49] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'allModulesByExternalPath' @ [34:9] ==> private final val allModulesByExternalPath: Map<String, List<Module>> defined in org.jetbrains.kotlin.idea.configuration.ModuleSourceRootMap[PropertyDescriptorImpl]
 
@@ -51,7 +51,7 @@ Inferred types:
 
 'modules' @ [40:21] ==> val modules: List<Module> defined in org.jetbrains.kotlin.idea.configuration.ModuleSourceRootMap.<init>.<anonymous>[LocalVariableDescriptor]
 
-'reduce' @ [40:29] ==> public inline fun <S, T : Module> Iterable<Module>.reduce(operation: (Module, Module) -> Module): Module defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [40:29] ==> public inline fun <S, T : Module> Iterable<Module>.reduce(operation: (acc: Module, Module) -> Module): Module defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> Module
     <T : S> -> Module
@@ -60,7 +60,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Module
 
-'isSourceRootPrefix' @ [41:29] ==> private fun isSourceRootPrefix(externalId: String, previousModuleExternalId: String): Boolean defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'isSourceRootPrefix' @ [41:29] ==> private fun isSourceRootPrefix(externalId: String, previousModuleExternalId: String): Boolean defined in org.jetbrains.kotlin.idea.configuration in file ModuleSourceRootMap.kt[SimpleFunctionDescriptorImpl]
 
 'm2' @ [41:48] ==> value-parameter m2: Module defined in org.jetbrains.kotlin.idea.configuration.ModuleSourceRootMap.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 

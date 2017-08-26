@@ -272,9 +272,11 @@ Inferred types:
 
 'propertyContainer' @ [120:9] ==> val propertyContainer: KtElement defined in org.jetbrains.kotlin.idea.intentions.JoinDeclarationAndAssignmentIntention.findAssignment[LocalVariableDescriptor]
 
-'forEachDescendantOfType' @ [120:27] ==> public inline fun <reified T : PsiElement> PsiElement.forEachDescendantOfType(noinline action: (KtBinaryExpression) -> Unit): Unit defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedSimpleFunctionDescriptor]
+'forEachDescendantOfType' @ [120:27] ==> public inline fun <reified T : PsiElement> PsiElement.forEachDescendantOfType(noinline action: (binaryExpr: KtBinaryExpression) -> Unit): Unit defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified T : PsiElement> -> KtBinaryExpression
+    <reified T : PsiElement> -> [@kotlin.ParameterName] KtBinaryExpression
+
+'process' @ [120:53] ==> local final fun process(binaryExpr: KtBinaryExpression): Unit defined in org.jetbrains.kotlin.idea.intentions.JoinDeclarationAndAssignmentIntention.findAssignment[SimpleFunctionDescriptorImpl]
 
 'when {
                 this == null -> return true
@@ -360,7 +362,7 @@ Inferred types:
 
 'candidateDescriptor' @ [141:81] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'propertyDescriptor' @ [142:13] ==> val propertyDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.intentions.JoinDeclarationAndAssignmentIntention.findAssignment[LocalVariableDescriptor]
 
@@ -404,7 +406,7 @@ Inferred types:
 
 'child' @ [155:13] ==> value-parameter child: PsiElement defined in org.jetbrains.kotlin.idea.intentions.JoinDeclarationAndAssignmentIntention.hasNoLocalDependencies.<anonymous>[ValueParameterDescriptorImpl]
 
-'resolveAllReferences' @ [155:19] ==> private fun PsiElement.resolveAllReferences(): Sequence<PsiElement?> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resolveAllReferences' @ [155:19] ==> private fun PsiElement.resolveAllReferences(): Sequence<PsiElement?> defined in org.jetbrains.kotlin.idea.intentions in file JoinDeclarationAndAssignmentIntention.kt[SimpleFunctionDescriptorImpl]
 
 'any' @ [155:42] ==> public inline fun <T> Sequence<PsiElement?>.any(predicate: (PsiElement?) -> Boolean): Boolean defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:

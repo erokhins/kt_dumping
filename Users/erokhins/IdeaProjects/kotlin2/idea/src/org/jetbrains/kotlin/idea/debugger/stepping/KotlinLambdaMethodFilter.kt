@@ -155,8 +155,6 @@ Inferred types:
 
 'name' @ [82:16] ==> value-parameter name: String? defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinLambdaMethodFilter.isLambdaName[ValueParameterDescriptorImpl]
 
-'OperatorNameConventions' @ [82:24] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INVOKE' @ [82:48] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'asString' @ [82:55] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]

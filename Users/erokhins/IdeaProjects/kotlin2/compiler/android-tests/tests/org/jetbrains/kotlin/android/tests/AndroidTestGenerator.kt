@@ -6,7 +6,7 @@ Inferred types:
 
 'compile' @ [32:37] ==> public open fun compile(p0: (String..String?)): (Pattern..Pattern?) defined in java.util.regex.Pattern[JavaMethodDescriptor]
 
-'createTestFiles' @ [35:21] ==> private fun createTestFiles(file: File, expectedText: String): List<CodegenTestCase.TestFile> defined in org.jetbrains.kotlin.android.tests[SimpleFunctionDescriptorImpl]
+'createTestFiles' @ [35:21] ==> private fun createTestFiles(file: File, expectedText: String): List<CodegenTestCase.TestFile> defined in org.jetbrains.kotlin.android.tests in file AndroidTestGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [35:37] ==> value-parameter file: File defined in org.jetbrains.kotlin.android.tests.genFiles[ValueParameterDescriptorImpl]
 
@@ -91,7 +91,7 @@ Inferred types:
 
 'fileName' @ [49:17] ==> val fileName: (String..String?) defined in org.jetbrains.kotlin.android.tests.genFiles.<anonymous>[LocalVariableDescriptor]
 
-'changePackage' @ [50:17] ==> private fun changePackage(newPackagePrefix: String, text: String, oldPackage: Ref<FqName>): String defined in org.jetbrains.kotlin.android.tests[SimpleFunctionDescriptorImpl]
+'changePackage' @ [50:17] ==> private fun changePackage(newPackagePrefix: String, text: String, oldPackage: Ref<FqName>): String defined in org.jetbrains.kotlin.android.tests in file AndroidTestGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'newPackagePrefix' @ [50:31] ==> val newPackagePrefix: String defined in org.jetbrains.kotlin.android.tests.genFiles[LocalVariableDescriptor]
 
@@ -133,7 +133,7 @@ Inferred types:
 
 'resultFiles' @ [59:24] ==> val resultFiles: List<TestClassInfo> defined in org.jetbrains.kotlin.android.tests.genFiles[LocalVariableDescriptor]
 
-'fold' @ [59:36] ==> public inline fun <T, R> Iterable<TestClassInfo>.fold(initial: String, operation: (String, TestClassInfo) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [59:36] ==> public inline fun <T, R> Iterable<TestClassInfo>.fold(initial: String, operation: (acc: String, TestClassInfo) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TestClassInfo
     <R> -> String
@@ -166,7 +166,7 @@ Inferred types:
 
 'resultFiles' @ [67:24] ==> val resultFiles: List<TestClassInfo> defined in org.jetbrains.kotlin.android.tests.genFiles[LocalVariableDescriptor]
 
-'fold' @ [67:36] ==> public inline fun <T, R> Iterable<TestClassInfo>.fold(initial: String, operation: (String, TestClassInfo) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [67:36] ==> public inline fun <T, R> Iterable<TestClassInfo>.fold(initial: String, operation: (acc: String, TestClassInfo) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TestClassInfo
     <R> -> String
@@ -253,8 +253,8 @@ Inferred types:
 
 'createTestFiles' @ [87:33] ==> @NotNull public open fun <M : (Any..Any?), F : (Any..Any?)> createTestFiles(@Nullable p0: String?, p1: (String..String?), p2: (KotlinTestUtils.TestFileFactory<(Void..Void?), (CodegenTestCase.TestFile..CodegenTestCase.TestFile?)>..KotlinTestUtils.TestFileFactory<(Void..Void?), (CodegenTestCase.TestFile..CodegenTestCase.TestFile?)>?)): (MutableList<(CodegenTestCase.TestFile..CodegenTestCase.TestFile?)>..List<(CodegenTestCase.TestFile..CodegenTestCase.TestFile?)>) defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 Inferred types:
-    <M : (Any..Any?)> -> Void
-    <F : (Any..Any?)> -> TestFile
+    <M : (Any..Any?)> -> (java.lang.Void..java.lang.Void?)
+    <F : (Any..Any?)> -> (org.jetbrains.kotlin.codegen.CodegenTestCase.TestFile..org.jetbrains.kotlin.codegen.CodegenTestCase.TestFile?)
 
 'file' @ [87:49] ==> value-parameter file: File defined in org.jetbrains.kotlin.android.tests.createTestFiles[ValueParameterDescriptorImpl]
 

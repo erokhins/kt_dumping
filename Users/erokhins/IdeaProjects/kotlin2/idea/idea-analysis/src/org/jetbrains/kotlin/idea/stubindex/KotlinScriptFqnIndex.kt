@@ -6,8 +6,8 @@ Inferred types:
 
 'getElements' @ [29:26] ==> public open fun <Key : (Any..Any?), Psi : (PsiElement..PsiElement?)> getElements(@NotNull p0: StubIndexKey<(String..String?), (KtScript..KtScript?)>, @NotNull p1: String, @NotNull p2: Project, @Nullable p3: GlobalSearchScope?, @NotNull p4: Class<(KtScript..KtScript?)>): (MutableCollection<(KtScript..KtScript?)>..Collection<(KtScript..KtScript?)>?) defined in com.intellij.psi.stubs.StubIndex[JavaMethodDescriptor]
 Inferred types:
-    <Key : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtScript
+    <Key : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtScript..org.jetbrains.kotlin.psi.KtScript?)
 
 'KEY' @ [29:38] ==> private final val KEY: StubIndexKey<(String..String?), (KtScript..KtScript?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinScriptFqnIndex.Companion[PropertyDescriptorImpl]
 
@@ -23,8 +23,8 @@ Inferred types:
 
 'createIndexKey' @ [33:43] ==> @NotNull public open fun <K : (Any..Any?), Psi : (PsiElement..PsiElement?)> createIndexKey(@NotNull indexClass: Class<out (StubIndexExtension<(String..String?), (KtScript..KtScript?)>..StubIndexExtension<(String..String?), (KtScript..KtScript?)>?)>): StubIndexKey<(String..String?), (KtScript..KtScript?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinIndexUtil[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtScript
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtScript..org.jetbrains.kotlin.psi.KtScript?)
 
 'KotlinScriptFqnIndex' @ [33:58] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinScriptFqnIndex[FakeCallableDescriptorForObject]
 

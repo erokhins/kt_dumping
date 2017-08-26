@@ -106,7 +106,7 @@ Inferred types:
 
 'descriptors' @ [70:36] ==> val descriptors: (MutableCollection<(DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.DeclarationResolver.reportRedeclarationsWithClassifiers[LocalVariableDescriptor]
 
-'reportOnDeclaration' @ [71:21] ==> public inline fun reportOnDeclaration(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'reportOnDeclaration' @ [71:21] ==> public inline fun reportOnDeclaration(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics in file diagnosticUtils.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [71:41] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.DeclarationResolver[PropertyDescriptorImpl]
 

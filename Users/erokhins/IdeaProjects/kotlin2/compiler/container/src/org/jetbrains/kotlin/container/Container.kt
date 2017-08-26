@@ -4,9 +4,9 @@
 
 'UnsupportedOperationException' @ [37:42] ==> public final fun <init>(): UnsupportedOperationException /* = UnsupportedOperationException */ defined in kotlin.UnsupportedOperationException[TypeAliasConstructorDescriptorImpl]
 
-'lazy' @ [42:52] ==> public fun <T> lazy(initializer: () -> ComponentResolveContext): Lazy<ComponentResolveContext> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [42:52] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ComponentResolveContext
+    <T> -> T
 
 'parent' @ [43:29] ==> value-parameter parent: StorageComponentContainer? = ... defined in org.jetbrains.kotlin.container.StorageComponentContainer.<init>[ValueParameterDescriptorImpl]
 
@@ -95,9 +95,9 @@ Inferred types:
 
 'rawType' @ [76:13] ==> val rawType: (Type..Type?) defined in org.jetbrains.kotlin.container.StorageComponentContainer.resolveIterable[LocalVariableDescriptor]
 
-'Iterable' @ [76:24] ==> @InlineOnly public inline fun <T> Iterable(crossinline iterator: () -> Iterator<Nothing>): Iterable<Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'Iterable' @ [76:24] ==> @InlineOnly public inline fun <T> Iterable(crossinline iterator: () -> Iterator<???>): Iterable<???> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Nothing
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@585942da
 
 'java' @ [76:40] ==> public val <T> KClass<Iterable<*>>.java: Class<Iterable<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

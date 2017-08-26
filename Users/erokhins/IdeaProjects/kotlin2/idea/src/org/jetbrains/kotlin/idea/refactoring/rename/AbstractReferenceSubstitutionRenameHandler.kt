@@ -86,7 +86,7 @@ Inferred types:
 
 'dataContext' @ [65:50] ==> value-parameter dataContext: DataContext defined in org.jetbrains.kotlin.idea.refactoring.rename.AbstractReferenceSubstitutionRenameHandler.invoke[ValueParameterDescriptorImpl]
 
-'DataContext' @ [66:31] ==> public fun DataContext(function: ((String..String?)) -> Any?): DataContext defined in com.intellij.openapi.actionSystem[SimpleFunctionDescriptorImpl]
+'DataContext' @ [66:31] ==> public fun DataContext(function: ((String..String?)) -> Any?): DataContext defined in com.intellij.openapi.actionSystem[SamConstructorDescriptorImpl]
 
 'PSI_ELEMENT' @ [67:32] ==> public final val PSI_ELEMENT: (DataKey<(PsiElement..PsiElement?)>..DataKey<(PsiElement..PsiElement?)>?) defined in com.intellij.openapi.actionSystem.CommonDataKeys[JavaPropertyDescriptor]
 

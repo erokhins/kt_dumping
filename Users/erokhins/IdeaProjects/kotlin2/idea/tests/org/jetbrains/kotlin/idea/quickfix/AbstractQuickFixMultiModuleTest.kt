@@ -333,8 +333,6 @@ Inferred types:
 
 'infos' @ [130:47] ==> val infos: (MutableList<(HighlightInfo..HighlightInfo?)>..List<(HighlightInfo..HighlightInfo?)>) defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixMultiModuleTest.doAction[LocalVariableDescriptor]
 
-'DirectiveBasedActionUtils' @ [133:17] ==> public object DirectiveBasedActionUtils defined in org.jetbrains.kotlin.idea.test in file DirectiveBasedActionUtils.kt[FakeCallableDescriptorForObject]
-
 'checkAvailableActionsAreExpected' @ [133:43] ==> public final fun checkAvailableActionsAreExpected(file: PsiFile, availableActions: Collection<IntentionAction>): Unit defined in org.jetbrains.kotlin.idea.test.DirectiveBasedActionUtils[SimpleFunctionDescriptorImpl]
 
 'file' @ [133:76] ==> public final val AbstractQuickFixMultiModuleTest.file: (PsiFile..PsiFile?)[MyPropertyDescriptor]

@@ -4,9 +4,9 @@
 
 'mavenSearchUrl' @ [35:29] ==> private final fun mavenSearchUrl(group: String, artifactId: String? = ..., version: String? = ..., packaging: String? = ..., rowsLimit: Int = ...): String defined in org.jetbrains.kotlin.idea.maven.KotlinMavenArchetypesProvider[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [36:34] ==> public fun <T> lazy(initializer: () -> String?): Lazy<String?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [36:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String?
+    <T> -> T
 
 'versionPrefix' @ [36:41] ==> private final fun versionPrefix(version: String): String? defined in org.jetbrains.kotlin.idea.maven.KotlinMavenArchetypesProvider[SimpleFunctionDescriptorImpl]
 
@@ -14,13 +14,11 @@ Inferred types:
 
 'predefinedInternalMode' @ [39:17] ==> public final val predefinedInternalMode: Boolean? defined in org.jetbrains.kotlin.idea.maven.KotlinMavenArchetypesProvider[PropertyDescriptorImpl]
 
-'KotlinInternalMode' @ [39:43] ==> public companion object Instance defined in org.jetbrains.kotlin.idea.actions.internal.KotlinInternalMode[FakeCallableDescriptorForObject]
-
 'enabled' @ [39:62] ==> public final var enabled: Boolean defined in org.jetbrains.kotlin.idea.actions.internal.KotlinInternalMode.Instance[DeserializedPropertyDescriptor]
 
-'lazy' @ [41:39] ==> public fun <T> lazy(initializer: () -> List<MavenArchetype>): Lazy<List<MavenArchetype>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [41:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<MavenArchetype>
+    <T> -> T
 
 'loadVersions' @ [43:13] ==> private final fun loadVersions(): List<MavenArchetype> defined in org.jetbrains.kotlin.idea.maven.KotlinMavenArchetypesProvider[SimpleFunctionDescriptorImpl]
 

@@ -76,9 +76,9 @@ Inferred types:
 
 'directOrder' @ [48:56] ==> value-parameter directOrder: Boolean defined in org.jetbrains.kotlin.codegen.inline.CoveringTryCatchNodeProcessor.processInstruction[ValueParameterDescriptorImpl]
 
-'Comparator' @ [55:20] ==> @FunctionalInterface public fun <T : (Any..Any?)> Comparator(function: ((TryCatchBlockNodeInfo..TryCatchBlockNodeInfo?), (TryCatchBlockNodeInfo..TryCatchBlockNodeInfo?)) -> Int): Comparator<TryCatchBlockNodeInfo> defined in java.util[SimpleFunctionDescriptorImpl]
+'Comparator' @ [55:20] ==> @FunctionalInterface public fun <T : (Any..Any?)> Comparator(function: ((TryCatchBlockNodeInfo..TryCatchBlockNodeInfo?), (TryCatchBlockNodeInfo..TryCatchBlockNodeInfo?)) -> Int): Comparator<(TryCatchBlockNodeInfo..TryCatchBlockNodeInfo?)> defined in java.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> TryCatchBlockNodeInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.codegen.inline.TryCatchBlockNodeInfo..org.jetbrains.kotlin.codegen.inline.TryCatchBlockNodeInfo?)
 
 'instructionIndex' @ [56:26] ==> public abstract fun instructionIndex(inst: AbstractInsnNode): Int defined in org.jetbrains.kotlin.codegen.inline.CoveringTryCatchNodeProcessor[SimpleFunctionDescriptorImpl]
 
@@ -138,11 +138,11 @@ Inferred types:
 
 'sort' @ [67:21] ==> public open fun <T : (Any..Any?)> sort(p0: (MutableList<(TryCatchBlockNodeInfo..TryCatchBlockNodeInfo?)>..List<(TryCatchBlockNodeInfo..TryCatchBlockNodeInfo?)>?), p1: (Comparator<in (TryCatchBlockNodeInfo..TryCatchBlockNodeInfo?)>..Comparator<in (TryCatchBlockNodeInfo..TryCatchBlockNodeInfo?)>?)): Unit defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TryCatchBlockNodeInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.codegen.inline.TryCatchBlockNodeInfo..org.jetbrains.kotlin.codegen.inline.TryCatchBlockNodeInfo?)
 
 'intervals' @ [67:26] ==> value-parameter intervals: List<TryCatchBlockNodeInfo> defined in org.jetbrains.kotlin.codegen.inline.CoveringTryCatchNodeProcessor.sortTryCatchBlocks[ValueParameterDescriptorImpl]
 
-'comp' @ [67:37] ==> val comp: Comparator<TryCatchBlockNodeInfo> defined in org.jetbrains.kotlin.codegen.inline.CoveringTryCatchNodeProcessor.sortTryCatchBlocks[LocalVariableDescriptor]
+'comp' @ [67:37] ==> val comp: Comparator<(TryCatchBlockNodeInfo..TryCatchBlockNodeInfo?)> defined in org.jetbrains.kotlin.codegen.inline.CoveringTryCatchNodeProcessor.sortTryCatchBlocks[LocalVariableDescriptor]
 
 'intervals' @ [68:16] ==> value-parameter intervals: List<TryCatchBlockNodeInfo> defined in org.jetbrains.kotlin.codegen.inline.CoveringTryCatchNodeProcessor.sortTryCatchBlocks[ValueParameterDescriptorImpl]
 

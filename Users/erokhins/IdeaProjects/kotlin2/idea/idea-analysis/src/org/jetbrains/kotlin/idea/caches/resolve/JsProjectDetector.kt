@@ -6,7 +6,7 @@
 
 'getCachedValue' @ [31:56] ==> public final fun <T : (Any..Any?), D : (UserDataHolder..UserDataHolder?)> getCachedValue(@NotNull p0: Project, @NotNull p1: () -> CachedValueProvider.Result<(Boolean..Boolean?)>?): (Boolean..Boolean?) defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
     <D : (UserDataHolder..UserDataHolder?)> -> Project
 
 'project' @ [31:71] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.JsProjectDetector.isJsProject[ValueParameterDescriptorImpl]

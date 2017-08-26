@@ -61,7 +61,7 @@ Inferred types:
 
 'searcher' @ [50:18] ==> value-parameter searcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.isVar[ValueParameterDescriptorImpl]
 
-'findVariableUsages' @ [50:27] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findVariableUsages' @ [50:27] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [50:46] ==> <this> defined in org.jetbrains.kotlin.j2k.isVar[ReceiverParameterDescriptorImpl]
 
@@ -143,7 +143,7 @@ Inferred types:
 
 'searcher' @ [69:30] ==> value-parameter searcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.hasWriteAccesses[ValueParameterDescriptorImpl]
 
-'findVariableUsages' @ [69:39] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findVariableUsages' @ [69:39] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [69:58] ==> <this> defined in org.jetbrains.kotlin.j2k.hasWriteAccesses[ReceiverParameterDescriptorImpl]
 
@@ -168,7 +168,7 @@ Inferred types:
 
 'searcher' @ [72:31] ==> value-parameter searcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.isInVariableInitializer[ValueParameterDescriptorImpl]
 
-'findVariableUsages' @ [72:40] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findVariableUsages' @ [72:40] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [72:59] ==> <this> defined in org.jetbrains.kotlin.j2k.isInVariableInitializer[ReceiverParameterDescriptorImpl]
 

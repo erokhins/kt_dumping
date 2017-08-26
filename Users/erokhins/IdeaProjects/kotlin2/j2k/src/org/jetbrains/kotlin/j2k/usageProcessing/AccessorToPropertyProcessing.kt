@@ -8,7 +8,7 @@
 
 'accessorMethod' @ [31:76] ==> public final val accessorMethod: PsiMethod defined in org.jetbrains.kotlin.j2k.usageProcessing.AccessorToPropertyProcessing[PropertyDescriptorImpl]
 
-'isNullable' @ [31:92] ==> public fun Nullability.isNullable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'isNullable' @ [31:92] ==> public fun Nullability.isNullable(settings: ConverterSettings): Boolean defined in org.jetbrains.kotlin.j2k.ast in file Types.kt[SimpleFunctionDescriptorImpl]
 
 'codeConverter' @ [31:103] ==> value-parameter codeConverter: CodeConverter defined in org.jetbrains.kotlin.j2k.usageProcessing.AccessorToPropertyProcessing.convertedCodeProcessor.<no name provided>.convertMethodUsage[ValueParameterDescriptorImpl]
 
@@ -104,8 +104,6 @@ Inferred types:
 'propertyAccess' @ [50:45] ==> val propertyAccess: Expression defined in org.jetbrains.kotlin.j2k.usageProcessing.AccessorToPropertyProcessing.convertedCodeProcessor.<no name provided>.convertMethodUsage[LocalVariableDescriptor]
 
 'argument' @ [50:61] ==> val argument: Expression defined in org.jetbrains.kotlin.j2k.usageProcessing.AccessorToPropertyProcessing.convertedCodeProcessor.<no name provided>.convertMethodUsage[LocalVariableDescriptor]
-
-'Operator' @ [50:71] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Operator[FakeCallableDescriptorForObject]
 
 'EQ' @ [50:80] ==> public final val EQ: Operator defined in org.jetbrains.kotlin.j2k.ast.Operator.Companion[PropertyDescriptorImpl]
 

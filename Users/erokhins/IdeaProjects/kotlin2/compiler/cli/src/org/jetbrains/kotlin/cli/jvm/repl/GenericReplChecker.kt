@@ -11,7 +11,7 @@ Inferred types:
 
 'add' @ [53:13] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>, @NotNull p1: KotlinScriptDefinition): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinScriptDefinition
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)
 
 'SCRIPT_DEFINITIONS' @ [53:38] ==> public final val SCRIPT_DEFINITIONS: (CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>..CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -27,19 +27,19 @@ Inferred types:
 
 'put' @ [55:13] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'RETAIN_OUTPUT_IN_MEMORY' @ [55:38] ==> public final val RETAIN_OUTPUT_IN_MEMORY: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
 'get' @ [57:17] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(JvmTarget..JvmTarget?)>): JvmTarget? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JvmTarget
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.JvmTarget..org.jetbrains.kotlin.config.JvmTarget?)
 
 'JVM_TARGET' @ [57:42] ==> public final val JVM_TARGET: (CompilerConfigurationKey<(JvmTarget..JvmTarget?)>..CompilerConfigurationKey<(JvmTarget..JvmTarget?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
 'put' @ [58:17] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(JvmTarget..JvmTarget?)>, @NotNull p1: JvmTarget): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JvmTarget
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.JvmTarget..org.jetbrains.kotlin.config.JvmTarget?)
 
 'JVM_TARGET' @ [58:42] ==> public final val JVM_TARGET: (CompilerConfigurationKey<(JvmTarget..JvmTarget?)>..CompilerConfigurationKey<(JvmTarget..JvmTarget?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -68,11 +68,7 @@ Inferred types:
 
 'getJavaVersion' @ [60:28] ==> private fun getJavaVersion(): Int defined in org.jetbrains.kotlin.cli.jvm.repl in file GenericReplChecker.kt[SimpleFunctionDescriptorImpl]
 
-'JvmTarget' @ [60:57] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_8' @ [60:67] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [60:80] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [60:90] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -204,23 +200,17 @@ Inferred types:
 
 'isAllErrorsAtEof' @ [90:68] ==> public final val isAllErrorsAtEof: Boolean defined in org.jetbrains.kotlin.cli.common.messages.AnalyzerWithCompilerReport.SyntaxErrorReport[PropertyDescriptorImpl]
 
-'ReplCheckResult' @ [90:88] ==> public companion object defined in org.jetbrains.kotlin.cli.common.repl.ReplCheckResult[FakeCallableDescriptorForObject]
-
 'Incomplete' @ [90:104] ==> public constructor Incomplete() defined in org.jetbrains.kotlin.cli.common.repl.ReplCheckResult.Incomplete[DeserializedClassConstructorDescriptor]
 
 'syntaxErrorReport' @ [91:17] ==> val syntaxErrorReport: AnalyzerWithCompilerReport.SyntaxErrorReport defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplChecker.check.<anonymous>[LocalVariableDescriptor]
 
 'isHasErrors' @ [91:35] ==> public final val isHasErrors: Boolean defined in org.jetbrains.kotlin.cli.common.messages.AnalyzerWithCompilerReport.SyntaxErrorReport[PropertyDescriptorImpl]
 
-'ReplCheckResult' @ [91:50] ==> public companion object defined in org.jetbrains.kotlin.cli.common.repl.ReplCheckResult[FakeCallableDescriptorForObject]
-
 'Error' @ [91:66] ==> public constructor Error(message: String, location: CompilerMessageLocation? = ...) defined in org.jetbrains.kotlin.cli.common.repl.ReplCheckResult.Error[DeserializedClassConstructorDescriptor]
 
 'errorHolder' @ [91:72] ==> val errorHolder: ReplTerminalDiagnosticMessageHolder defined in org.jetbrains.kotlin.cli.jvm.repl.GenericReplChecker.check.<anonymous>[LocalVariableDescriptor]
 
 'renderedDiagnostics' @ [91:84] ==> public open val renderedDiagnostics: String defined in org.jetbrains.kotlin.cli.jvm.repl.messages.ReplTerminalDiagnosticMessageHolder[PropertyDescriptorImpl]
-
-'ReplCheckResult' @ [92:25] ==> public companion object defined in org.jetbrains.kotlin.cli.common.repl.ReplCheckResult[FakeCallableDescriptorForObject]
 
 'Ok' @ [92:41] ==> public constructor Ok() defined in org.jetbrains.kotlin.cli.common.repl.ReplCheckResult.Ok[DeserializedClassConstructorDescriptor]
 

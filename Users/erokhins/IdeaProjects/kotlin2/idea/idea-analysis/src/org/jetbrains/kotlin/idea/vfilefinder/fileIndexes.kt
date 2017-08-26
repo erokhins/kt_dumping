@@ -4,8 +4,8 @@ Inferred types:
 
 'create' @ [41:36] ==> @NotNull public open fun <K : (Any..Any?), V : (Any..Any?)> create(@NonNls @NotNull p0: String): ID<(FqName..FqName?), (Void..Void?)> defined in com.intellij.util.indexing.ID[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> FqName
-    <V : (Any..Any?)> -> Void
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
+    <V : (Any..Any?)> -> (java.lang.Void..java.lang.Void?)
 
 'classOfIndex' @ [41:43] ==> value-parameter classOfIndex: Class<T> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinFileIndexBase.<init>[ValueParameterDescriptorImpl]
 
@@ -60,9 +60,9 @@ Inferred types:
                     }
                     else {
                         emptyMap()
-                    }' @ [66:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (MutableMap<FqName, Void>..Map<FqName, Void>?), elseBranch: (MutableMap<FqName, Void>..Map<FqName, Void>?)): (MutableMap<FqName, Void>..Map<FqName, Void>?)[SimpleFunctionDescriptorImpl]
+                    }' @ [66:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (MutableMap<(FqName..FqName?), (Void..Void?)>..Map<(FqName..FqName?), (Void..Void?)>), elseBranch: (MutableMap<(FqName..FqName?), (Void..Void?)>..Map<(FqName..FqName?), (Void..Void?)>)): (MutableMap<(FqName..FqName?), (Void..Void?)>..Map<(FqName..FqName?), (Void..Void?)>)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.MutableMap<org.jetbrains.kotlin.name.FqName, java.lang.Void>..kotlin.collections.Map<org.jetbrains.kotlin.name.FqName, java.lang.Void>?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.MutableMap<(org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?), (java.lang.Void..java.lang.Void?)>..kotlin.collections.Map<(org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?), (java.lang.Void..java.lang.Void?)>)
 
 'fqName' @ [66:25] ==> val fqName: FqName? defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinFileIndexBase.indexer.<anonymous>[LocalVariableDescriptor]
 
@@ -73,10 +73,10 @@ Inferred types:
 
 'fqName' @ [67:64] ==> val fqName: FqName? defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinFileIndexBase.indexer.<anonymous>[LocalVariableDescriptor]
 
-'emptyMap' @ [70:25] ==> public fun <K, V> emptyMap(): Map<FqName, Void> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [70:25] ==> public fun <K, V> emptyMap(): Map<(FqName..FqName?), (Void..Void?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> FqName
-    <V> -> Void
+    <K> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
+    <V> -> (java.lang.Void..java.lang.Void?)
 
 'LOG' @ [74:21] ==> private final val LOG: Logger defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinFileIndexBase[PropertyDescriptorImpl]
 
@@ -101,8 +101,8 @@ Inferred types:
 
 'processValues' @ [81:39] ==> public final fun <K : (Any..Any?), V : (Any..Any?)> processValues(@NotNull p0: ID<(FqName..FqName?), (Void..Void?)>, @NotNull p1: FqName, @Nullable p2: VirtualFile?, @NotNull p3: (VirtualFile, (Void..Void?)) -> Boolean, @NotNull p4: GlobalSearchScope): Boolean defined in com.intellij.util.indexing.FileBasedIndex[MyFunctionDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> FqName
-    <V : (Any..Any?)> -> Void
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
+    <V : (Any..Any?)> -> (java.lang.Void..java.lang.Void?)
 
 'name' @ [81:53] ==> public final val <T> KotlinFileIndexBase<T>.name: ID<FqName, Void>[MyPropertyDescriptor]
 Inferred types:
@@ -124,7 +124,7 @@ Inferred types:
 
 'INDEXER' @ [85:33] ==> private final val INDEXER: DataIndexer<FqName, Void, FileContent> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex[PropertyDescriptorImpl]
 
-'InputFilter' @ [87:52] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SimpleFunctionDescriptorImpl]
+'InputFilter' @ [87:52] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SamConstructorDescriptorImpl]
 
 'file' @ [87:74] ==> value-parameter file: VirtualFile defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex.getInputFilter.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -180,7 +180,7 @@ Inferred types:
 
 'INDEXER' @ [101:33] ==> private final val INDEXER: DataIndexer<FqName, Void, FileContent> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinJavaScriptMetaFileIndex[PropertyDescriptorImpl]
 
-'InputFilter' @ [103:52] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SimpleFunctionDescriptorImpl]
+'InputFilter' @ [103:52] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SamConstructorDescriptorImpl]
 
 'file' @ [103:74] ==> value-parameter file: VirtualFile defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinJavaScriptMetaFileIndex.getInputFilter.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -229,7 +229,7 @@ Inferred types:
 
 'INDEXER' @ [119:33] ==> private final val INDEXER: DataIndexer<FqName, Void, FileContent> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndexBase[PropertyDescriptorImpl]
 
-'InputFilter' @ [121:52] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SimpleFunctionDescriptorImpl]
+'InputFilter' @ [121:52] ==> @FunctionalInterface public final fun InputFilter(function: (VirtualFile) -> Boolean): FileBasedIndex.InputFilter defined in com.intellij.util.indexing.FileBasedIndex[SamConstructorDescriptorImpl]
 
 'file' @ [121:74] ==> value-parameter file: VirtualFile defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndexBase.getInputFilter.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -265,8 +265,6 @@ Inferred types:
 'fileName' @ [128:74] ==> public final val FileContent.fileName: String[MyPropertyDescriptor]
 
 'endsWith' @ [128:83] ==> public fun String.endsWith(suffix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'MetadataPackageFragment' @ [128:92] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment[FakeCallableDescriptorForObject]
 
 'DOT_METADATA_FILE_EXTENSION' @ [128:116] ==> public final val DOT_METADATA_FILE_EXTENSION: String defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment.Companion[DeserializedPropertyDescriptor]
 
@@ -336,8 +334,6 @@ Inferred types:
 
 'substringBeforeLast' @ [135:81] ==> public fun String.substringBeforeLast(delimiter: String, missingDelimiterValue: String = ...): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'MetadataPackageFragment' @ [135:101] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment[FakeCallableDescriptorForObject]
-
 'DOT_METADATA_FILE_EXTENSION' @ [135:125] ==> public final val DOT_METADATA_FILE_EXTENSION: String defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment.Companion[DeserializedPropertyDescriptor]
 
 'KotlinMetadataFileIndexBase<KotlinMetadataFileIndex>' @ [141:34] ==> public constructor KotlinMetadataFileIndexBase<T>(classOfIndex: Class<KotlinMetadataFileIndex>, indexFunction: (ClassId) -> FqName) defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndexBase[ClassConstructorDescriptorImpl]
@@ -350,6 +346,8 @@ Inferred types:
 Inferred types:
     <T> -> KotlinMetadataFileIndex
 
+'asSingleFqName' @ [142:55] ==> @NotNull public open fun asSingleFqName(): FqName defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
+
 'KotlinMetadataFileIndexBase<KotlinMetadataFilePackageIndex>' @ [144:41] ==> public constructor KotlinMetadataFileIndexBase<T>(classOfIndex: Class<KotlinMetadataFilePackageIndex>, indexFunction: (ClassId) -> FqName) defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndexBase[ClassConstructorDescriptorImpl]
 Inferred types:
     <T> -> KotlinMetadataFilePackageIndex
@@ -359,4 +357,6 @@ Inferred types:
 'java' @ [145:47] ==> public val <T> KClass<KotlinMetadataFilePackageIndex>.java: Class<KotlinMetadataFilePackageIndex> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> KotlinMetadataFilePackageIndex
+
+'getPackageFqName' @ [145:62] ==> @NotNull public open fun getPackageFqName(): FqName defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
 

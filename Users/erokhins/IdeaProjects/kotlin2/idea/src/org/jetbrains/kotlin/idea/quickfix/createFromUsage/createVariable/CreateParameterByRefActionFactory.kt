@@ -8,7 +8,7 @@ Inferred types:
 
 'getParentElementOfType' @ [47:36] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtNameReferenceExpression..KtNameReferenceExpression?)>..Class<(KtNameReferenceExpression..KtNameReferenceExpression?)>?)): KtNameReferenceExpression? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNameReferenceExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNameReferenceExpression..org.jetbrains.kotlin.psi.KtNameReferenceExpression?)
 
 'diagnostic' @ [47:59] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.CreateParameterByRefActionFactory.getElementOfInterest[ValueParameterDescriptorImpl]
 
@@ -54,9 +54,9 @@ Inferred types:
 
 'element' @ [58:25] ==> value-parameter element: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.CreateParameterByRefActionFactory.extractFixData[ValueParameterDescriptorImpl]
 
-'getExpressionForTypeGuess' @ [58:33] ==> public fun KtExpression.getExpressionForTypeGuess(): KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getExpressionForTypeGuess' @ [58:33] ==> public fun KtExpression.getExpressionForTypeGuess(): KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
-'guessTypes' @ [58:61] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [58:61] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [58:72] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.CreateParameterByRefActionFactory.extractFixData[LocalVariableDescriptor]
 
@@ -316,19 +316,19 @@ Inferred types:
 
 'LinkedHashSet' @ [129:31] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (TypeParameterDescriptor..TypeParameterDescriptor?)>..Collection<(TypeParameterDescriptor..TypeParameterDescriptor?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> TypeParameterDescriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
-'getTypeParameters' @ [129:45] ==> public fun KotlinType.getTypeParameters(): Set<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getTypeParameters' @ [129:45] ==> public fun KotlinType.getTypeParameters(): Set<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
-'typeParametersToAdd' @ [130:5] ==> val typeParametersToAdd: LinkedHashSet<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd[LocalVariableDescriptor]
+'typeParametersToAdd' @ [130:5] ==> val typeParametersToAdd: LinkedHashSet<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd[LocalVariableDescriptor]
 
-'removeAll' @ [130:25] ==> public open fun removeAll(elements: Collection<TypeParameterDescriptor>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
+'removeAll' @ [130:25] ==> public open fun removeAll(elements: Collection<(TypeParameterDescriptor..TypeParameterDescriptor?)>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
 'functionDescriptor' @ [130:35] ==> value-parameter functionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd[ValueParameterDescriptorImpl]
 
 'typeParameters' @ [130:54] ==> public final val FunctionDescriptor.typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)>[MyPropertyDescriptor]
 
-'typeParametersToAdd' @ [131:9] ==> val typeParametersToAdd: LinkedHashSet<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd[LocalVariableDescriptor]
+'typeParametersToAdd' @ [131:9] ==> val typeParametersToAdd: LinkedHashSet<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd[LocalVariableDescriptor]
 
 'isEmpty' @ [131:29] ==> public open fun isEmpty(): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
@@ -371,21 +371,21 @@ Inferred types:
 
 'getResolutionFacade' @ [141:84] ==> public fun KtElement.getResolutionFacade(): ResolutionFacade defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
-'typeParametersToAdd' @ [145:12] ==> val typeParametersToAdd: LinkedHashSet<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd[LocalVariableDescriptor]
+'typeParametersToAdd' @ [145:12] ==> val typeParametersToAdd: LinkedHashSet<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd[LocalVariableDescriptor]
 
-'any' @ [145:32] ==> public inline fun <T> Iterable<TypeParameterDescriptor>.any(predicate: (TypeParameterDescriptor) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'any' @ [145:32] ==> public inline fun <T> Iterable<(TypeParameterDescriptor..TypeParameterDescriptor?)>.any(predicate: ((TypeParameterDescriptor..TypeParameterDescriptor?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TypeParameterDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
 'scope' @ [145:38] ==> val scope: LexicalScope defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd[LocalVariableDescriptor]
 
 'findClassifier' @ [145:44] ==> public fun HierarchicalScope.findClassifier(name: Name, location: LookupLocation): ClassifierDescriptor? defined in org.jetbrains.kotlin.resolve.scopes.utils[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [145:59] ==> value-parameter it: TypeParameterDescriptor defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [145:59] ==> value-parameter it: (TypeParameterDescriptor..TypeParameterDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd.<anonymous>[ValueParameterDescriptorImpl]
 
 'name' @ [145:62] ==> public final val TypeParameterDescriptor.name: Name[MyPropertyDescriptor]
 
 'FROM_IDE' @ [145:85] ==> enum entry FROM_IDE defined in org.jetbrains.kotlin.incremental.components.NoLookupLocation[FakeCallableDescriptorForObject]
 
-'it' @ [145:98] ==> value-parameter it: TypeParameterDescriptor defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [145:98] ==> value-parameter it: (TypeParameterDescriptor..TypeParameterDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createVariable.hasTypeParametersToAdd.<anonymous>[ValueParameterDescriptorImpl]
 

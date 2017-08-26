@@ -14,7 +14,7 @@
 
 'codegen' @ [36:21] ==> value-parameter codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.range.CharSequenceIndicesRangeValue.getBoundedValue[ValueParameterDescriptorImpl]
 
-'generateCallReceiver' @ [36:29] ==> public fun ExpressionCodegen.generateCallReceiver(rangeCall: ResolvedCall<out CallableDescriptor>): StackValue defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'generateCallReceiver' @ [36:29] ==> public fun ExpressionCodegen.generateCallReceiver(rangeCall: ResolvedCall<out CallableDescriptor>): StackValue defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeCall' @ [36:50] ==> protected final val rangeCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.codegen.range.CharSequenceIndicesRangeValue.getBoundedValue.<no name provided>[PropertyDescriptorImpl]
 

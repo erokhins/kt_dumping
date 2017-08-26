@@ -1,4 +1,6 @@
-'KotlinFacet' @ [42:74] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacet[FakeCallableDescriptorForObject]
+'!!' @ [42:74] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KotlinFacet?): KotlinFacet[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KotlinFacet
 
 'get' @ [42:86] ==> public final fun get(module: Module): KotlinFacet? defined in org.jetbrains.kotlin.idea.facet.KotlinFacet.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -10,9 +12,9 @@
 
 'settings' @ [42:129] ==> public final var settings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.facet.KotlinFacetConfiguration[DeserializedPropertyDescriptor]
 
-'facetSettings' @ [45:13] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle[SimpleFunctionDescriptorImpl]
+'facetSettings' @ [45:13] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[SimpleFunctionDescriptorImpl]
 
-'facetSettings' @ [48:13] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle[SimpleFunctionDescriptorImpl]
+'facetSettings' @ [48:13] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[SimpleFunctionDescriptorImpl]
 
 'GradleImportingTestCase' @ [50:31] ==> public constructor GradleImportingTestCase() defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleImportingTestCase[JavaClassConstructorDescriptor]
 
@@ -46,8 +48,6 @@ Inferred types:
 'TargetPlatformKind' @ [89:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [89:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [89:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_8' @ [89:66] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -89,8 +89,6 @@ Inferred types:
 'TargetPlatformKind' @ [97:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [97:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [97:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [97:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -149,8 +147,6 @@ Inferred types:
 
 'Jvm' @ [192:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [192:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_8' @ [192:66] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'targetPlatformKind' @ [192:76] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -192,8 +188,6 @@ Inferred types:
 
 'Jvm' @ [200:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [200:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [200:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'targetPlatformKind' @ [200:76] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -221,7 +215,7 @@ Inferred types:
     <T> -> KotlinFacetSettings
     <R> -> Unit
 
-'facetSettings' @ [258:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle[SimpleFunctionDescriptorImpl]
+'facetSettings' @ [258:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [259:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
@@ -240,8 +234,6 @@ Inferred types:
 'TargetPlatformKind' @ [261:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [261:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [261:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_8' @ [261:66] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -264,7 +256,7 @@ Inferred types:
     <T> -> KotlinFacetSettings
     <R> -> Unit
 
-'facetSettings' @ [266:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle[SimpleFunctionDescriptorImpl]
+'facetSettings' @ [266:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [267:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
@@ -283,8 +275,6 @@ Inferred types:
 'TargetPlatformKind' @ [269:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [269:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [269:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [269:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -315,7 +305,7 @@ Inferred types:
     <T> -> KotlinFacetSettings
     <R> -> Unit
 
-'facetSettings' @ [332:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle[SimpleFunctionDescriptorImpl]
+'facetSettings' @ [332:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [333:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
@@ -334,8 +324,6 @@ Inferred types:
 'TargetPlatformKind' @ [335:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [335:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [335:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_8' @ [335:66] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -358,7 +346,7 @@ Inferred types:
     <T> -> KotlinFacetSettings
     <R> -> Unit
 
-'facetSettings' @ [340:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle[SimpleFunctionDescriptorImpl]
+'facetSettings' @ [340:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [341:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
@@ -377,8 +365,6 @@ Inferred types:
 'TargetPlatformKind' @ [343:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [343:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [343:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [343:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -411,8 +397,6 @@ Inferred types:
 
 'assertEquals' @ [384:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'LanguageFeature' @ [384:33] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [384:55] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'coroutineSupport' @ [384:64] ==> public final var coroutineSupport: LanguageFeature.State defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -433,8 +417,6 @@ Inferred types:
 'facetSettings' @ [416:15] ==> internal val GradleImportingTestCase.facetSettings: KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[PropertyDescriptorImpl]
 
 'assertEquals' @ [417:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'LanguageFeature' @ [417:33] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED' @ [417:55] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -466,8 +448,6 @@ Inferred types:
 'versionString' @ [464:51] ==> public final val versionString: String defined in org.jetbrains.kotlin.config.LanguageVersion[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [465:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [465:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [465:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -514,8 +494,6 @@ Inferred types:
 'versionString' @ [476:51] ==> public final val versionString: String defined in org.jetbrains.kotlin.config.LanguageVersion[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [477:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [477:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [477:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -597,8 +575,6 @@ Inferred types:
 
 'assertEquals' @ [527:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'TargetPlatformKind' @ [527:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'JavaScript' @ [527:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'targetPlatformKind' @ [527:64] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -655,7 +631,7 @@ Inferred types:
     <T> -> KotlinFacetSettings
     <R> -> Unit
 
-'facetSettings' @ [590:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle[SimpleFunctionDescriptorImpl]
+'facetSettings' @ [590:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [591:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
@@ -670,8 +646,6 @@ Inferred types:
 'versionString' @ [592:51] ==> public final val versionString: String defined in org.jetbrains.kotlin.config.LanguageVersion[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [593:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [593:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [593:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -703,7 +677,7 @@ Inferred types:
     <T> -> KotlinFacetSettings
     <R> -> Unit
 
-'facetSettings' @ [602:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle[SimpleFunctionDescriptorImpl]
+'facetSettings' @ [602:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [603:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
@@ -718,8 +692,6 @@ Inferred types:
 'versionString' @ [604:51] ==> public final val versionString: String defined in org.jetbrains.kotlin.config.LanguageVersion[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [605:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [605:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [605:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -763,8 +735,6 @@ Inferred types:
 
 'assertEquals' @ [645:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'TargetPlatformKind' @ [645:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'JavaScript' @ [645:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'targetPlatformKind' @ [645:64] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -800,8 +770,6 @@ Inferred types:
 
 'Jvm' @ [675:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [675:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [675:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'targetPlatformKind' @ [675:76] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -832,8 +800,6 @@ Inferred types:
 'versionString' @ [710:51] ==> public final val versionString: String defined in org.jetbrains.kotlin.config.LanguageVersion[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [711:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [711:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [711:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -923,8 +889,6 @@ Inferred types:
 
 'assertEquals' @ [755:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'TargetPlatformKind' @ [755:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'Common' @ [755:52] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'targetPlatformKind' @ [755:60] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -966,7 +930,7 @@ Inferred types:
     <T> -> KotlinFacetSettings
     <R> -> Unit
 
-'facetSettings' @ [794:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle[SimpleFunctionDescriptorImpl]
+'facetSettings' @ [794:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [795:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
@@ -981,8 +945,6 @@ Inferred types:
 'versionString' @ [796:51] ==> public final val versionString: String defined in org.jetbrains.kotlin.config.LanguageVersion[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [797:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [797:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [797:52] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -1057,8 +1019,6 @@ Inferred types:
 
 'Jvm' @ [831:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [831:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [831:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'targetPlatformKind' @ [831:76] ==> public final val targetPlatformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[DeserializedPropertyDescriptor]
@@ -1089,8 +1049,6 @@ Inferred types:
 'versionString' @ [860:51] ==> public final val versionString: String defined in org.jetbrains.kotlin.config.LanguageVersion[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [861:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [861:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [861:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -1181,11 +1139,9 @@ Inferred types:
     <T> -> KotlinFacetSettings
     <R> -> Unit
 
-'facetSettings' @ [1060:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle[SimpleFunctionDescriptorImpl]
+'facetSettings' @ [1060:15] ==> internal fun GradleImportingTestCase.facetSettings(moduleName: String): KotlinFacetSettings defined in org.jetbrains.kotlin.idea.codeInsight.gradle in file GradleFacetImportTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [1061:20] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'TargetPlatformKind' @ [1061:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [1061:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -1237,8 +1193,6 @@ Inferred types:
 
 'assertNotNull' @ [1134:16] ==> public open fun assertNotNull(p0: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'KotlinFacet' @ [1134:30] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacet[FakeCallableDescriptorForObject]
-
 'get' @ [1134:42] ==> public final fun get(module: Module): KotlinFacet? defined in org.jetbrains.kotlin.idea.facet.KotlinFacet.Companion[DeserializedSimpleFunctionDescriptor]
 
 'getModule' @ [1134:46] ==> @Override protected/*protected and package*/ open fun getModule(name: (String..String?)): (Module..Module?) defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleFacetImportTest[JavaMethodDescriptor]
@@ -1255,15 +1209,11 @@ Inferred types:
 
 'assertNotNull' @ [1191:16] ==> public open fun assertNotNull(p0: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'KotlinFacet' @ [1191:30] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacet[FakeCallableDescriptorForObject]
-
 'get' @ [1191:42] ==> public final fun get(module: Module): KotlinFacet? defined in org.jetbrains.kotlin.idea.facet.KotlinFacet.Companion[DeserializedSimpleFunctionDescriptor]
 
 'getModule' @ [1191:46] ==> @Override protected/*protected and package*/ open fun getModule(name: (String..String?)): (Module..Module?) defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleFacetImportTest[JavaMethodDescriptor]
 
 'assertNotNull' @ [1192:16] ==> public open fun assertNotNull(p0: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'KotlinFacet' @ [1192:30] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacet[FakeCallableDescriptorForObject]
 
 'get' @ [1192:42] ==> public final fun get(module: Module): KotlinFacet? defined in org.jetbrains.kotlin.idea.facet.KotlinFacet.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -1271,15 +1221,11 @@ Inferred types:
 
 'assertNull' @ [1193:16] ==> public open fun assertNull(p0: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'KotlinFacet' @ [1193:27] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacet[FakeCallableDescriptorForObject]
-
 'get' @ [1193:39] ==> public final fun get(module: Module): KotlinFacet? defined in org.jetbrains.kotlin.idea.facet.KotlinFacet.Companion[DeserializedSimpleFunctionDescriptor]
 
 'getModule' @ [1193:43] ==> @Override protected/*protected and package*/ open fun getModule(name: (String..String?)): (Module..Module?) defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleFacetImportTest[JavaMethodDescriptor]
 
 'assertNull' @ [1194:16] ==> public open fun assertNull(p0: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'KotlinFacet' @ [1194:27] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacet[FakeCallableDescriptorForObject]
 
 'get' @ [1194:39] ==> public final fun get(module: Module): KotlinFacet? defined in org.jetbrains.kotlin.idea.facet.KotlinFacet.Companion[DeserializedSimpleFunctionDescriptor]
 

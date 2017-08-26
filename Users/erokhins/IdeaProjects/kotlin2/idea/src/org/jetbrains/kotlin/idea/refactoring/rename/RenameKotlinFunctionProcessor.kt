@@ -101,7 +101,7 @@ Inferred types:
 
 'resolveToDescriptor' @ [96:38] ==> public fun KtDeclaration.resolveToDescriptor(bodyResolveMode: BodyResolveMode = ...): DeclarationDescriptor defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
-'checkConflictsAndReplaceUsageInfos' @ [97:9] ==> public fun checkConflictsAndReplaceUsageInfos(element: PsiElement, allRenames: Map<out PsiElement?, String>, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkConflictsAndReplaceUsageInfos' @ [97:9] ==> public fun checkConflictsAndReplaceUsageInfos(element: PsiElement, allRenames: Map<out PsiElement?, String>, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameUtil.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [97:44] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinFunctionProcessor.findCollisions[ValueParameterDescriptorImpl]
 
@@ -109,7 +109,7 @@ Inferred types:
 
 'result' @ [97:65] ==> value-parameter result: MutableList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinFunctionProcessor.findCollisions[ValueParameterDescriptorImpl]
 
-'checkRedeclarations' @ [98:9] ==> internal fun checkRedeclarations(descriptor: DeclarationDescriptor, newName: String, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkRedeclarations' @ [98:9] ==> internal fun checkRedeclarations(descriptor: DeclarationDescriptor, newName: String, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [98:29] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinFunctionProcessor.findCollisions[LocalVariableDescriptor]
 
@@ -189,7 +189,7 @@ Inferred types:
 
 'editor' @ [122:86] ==> value-parameter editor: Editor? defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinFunctionProcessor.substituteElementToRename[ValueParameterDescriptorImpl]
 
-'checkSuperMethods' @ [125:38] ==> public fun checkSuperMethods(declaration: KtDeclaration, ignore: Collection<PsiElement>?, actionString: String): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkSuperMethods' @ [125:38] ==> public fun checkSuperMethods(declaration: KtDeclaration, ignore: Collection<PsiElement>?, actionString: String): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [125:56] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinFunctionProcessor.substituteElementToRename[ValueParameterDescriptorImpl]
 
@@ -308,11 +308,13 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
+'preprocessAndPass' @ [156:101] ==> local final fun preprocessAndPass(substitutedJavaElement: PsiElement): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinFunctionProcessor.substituteElementToRename[SimpleFunctionDescriptorImpl]
+
 'element' @ [159:35] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinFunctionProcessor.substituteElementToRename[ValueParameterDescriptorImpl]
 
 'unwrapped' @ [159:43] ==> public val PsiElement.unwrapped: PsiElement? defined in org.jetbrains.kotlin.asJava[DeserializedPropertyDescriptor]
 
-'checkSuperMethodsWithPopup' @ [160:17] ==> public fun checkSuperMethodsWithPopup(declaration: KtNamedDeclaration, deepestSuperMethods: List<PsiMethod>, actionString: String, editor: Editor, action: (List<PsiElement>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkSuperMethodsWithPopup' @ [160:17] ==> public fun checkSuperMethodsWithPopup(declaration: KtNamedDeclaration, deepestSuperMethods: List<PsiMethod>, actionString: String, editor: Editor, action: (List<PsiElement>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [160:44] ==> val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinFunctionProcessor.substituteElementToRename[LocalVariableDescriptor]
 
@@ -528,6 +530,8 @@ Inferred types:
 Inferred types:
     <T> -> KtNamedDeclaration
     <R> -> Unit
+
+'dropOverrideKeywordIfNecessary' @ [214:59] ==> public fun dropOverrideKeywordIfNecessary(element: KtNamedDeclaration): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'when (element) {
         is PsiMethod -> element

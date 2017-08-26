@@ -4,7 +4,7 @@
 
 'newSmartList' @ [44:81] ==> @NotNull @Contract public open fun <T : (Any..Any?)> newSmartList(): (MutableList<(JavaAnnotation..JavaAnnotation?)>..List<(JavaAnnotation..JavaAnnotation?)>) defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaAnnotation
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.structure.JavaAnnotation..org.jetbrains.kotlin.load.java.structure.JavaAnnotation?)
 
 'arrayListOf' @ [47:28] ==> @SinceKotlin @InlineOnly public inline fun <T> arrayListOf(): ArrayList<JavaMethod> /* = ArrayList<JavaMethod> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -22,8 +22,8 @@ Inferred types:
 
 'THashMap' @ [53:65] ==> public constructor THashMap<K : (Any..Any?), V : (Any..Any?)>() defined in gnu.trove.THashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Name
-    <V : (Any..Any?)> -> Int
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
+    <V : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'innerClassNameToAccess' @ [54:42] ==> private final val innerClassNameToAccess: MutableMap<Name, Int> defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaClass[PropertyDescriptorImpl]
 
@@ -79,13 +79,13 @@ Inferred types:
 
 'access' @ [80:13] ==> value-parameter access: Int defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaClass.visitMethod[ValueParameterDescriptorImpl]
 
-'isSet' @ [80:20] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles[SimpleFunctionDescriptorImpl]
+'isSet' @ [80:20] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles in file commonMixins.kt[SimpleFunctionDescriptorImpl]
 
 'ACC_SYNTHETIC' @ [80:34] ==> public const final val ACC_SYNTHETIC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
 'access' @ [80:52] ==> value-parameter access: Int defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaClass.visitMethod[ValueParameterDescriptorImpl]
 
-'isSet' @ [80:59] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles[SimpleFunctionDescriptorImpl]
+'isSet' @ [80:59] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles in file commonMixins.kt[SimpleFunctionDescriptorImpl]
 
 'ACC_BRIDGE' @ [80:73] ==> public const final val ACC_BRIDGE: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -163,7 +163,7 @@ Inferred types:
 
 'access' @ [100:13] ==> value-parameter access: Int defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaClass.visitInnerClass[ValueParameterDescriptorImpl]
 
-'isSet' @ [100:20] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles[SimpleFunctionDescriptorImpl]
+'isSet' @ [100:20] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles in file commonMixins.kt[SimpleFunctionDescriptorImpl]
 
 'ACC_SYNTHETIC' @ [100:34] ==> public const final val ACC_SYNTHETIC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -298,6 +298,8 @@ Inferred types:
 
 'context' @ [139:31] ==> private final val context: ClassifierResolutionContext defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaClass[PropertyDescriptorImpl]
 
+'addTypeParameters' @ [139:40] ==> internal final fun addTypeParameters(newTypeParameters: Collection<JavaTypeParameter>): Unit defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext[SimpleFunctionDescriptorImpl]
+
 'newSmartList' @ [141:40] ==> @NotNull @Contract public open fun <T : (Any..Any?)> newSmartList(): (MutableList<(JavaClassifierType..JavaClassifierType?)>..List<(JavaClassifierType..JavaClassifierType?)>) defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> JavaClassifierType
@@ -356,7 +358,7 @@ Inferred types:
 
 'access' @ [153:13] ==> value-parameter access: Int defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaClass.visitField[ValueParameterDescriptorImpl]
 
-'isSet' @ [153:20] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles[SimpleFunctionDescriptorImpl]
+'isSet' @ [153:20] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles in file commonMixins.kt[SimpleFunctionDescriptorImpl]
 
 'ACC_SYNTHETIC' @ [153:34] ==> public const final val ACC_SYNTHETIC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -390,7 +392,7 @@ Inferred types:
 
 'access' @ [159:69] ==> value-parameter access: Int defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaClass.visitField[ValueParameterDescriptorImpl]
 
-'isSet' @ [159:76] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles[SimpleFunctionDescriptorImpl]
+'isSet' @ [159:76] ==> internal fun Int.isSet(flag: Int): Boolean defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles in file commonMixins.kt[SimpleFunctionDescriptorImpl]
 
 'ACC_ENUM' @ [159:90] ==> public const final val ACC_ENUM: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
@@ -447,9 +449,9 @@ Inferred types:
             }
             PrimitiveType.CHAR -> value.toChar()
             else -> value
-        }' @ [175:16] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {Comparable<{Boolean & Char & Int}> & java.io.Serializable}, entry1: {Comparable<{Boolean & Char & Int}> & java.io.Serializable}, entry2: {Comparable<{Boolean & Char & Int}> & java.io.Serializable}): {Comparable<{Boolean & Char & Int}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
+        }' @ [175:16] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any, entry2: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {Comparable<{Boolean & Char & Int}> & java.io.Serializable}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
 
 'fieldType' @ [175:22] ==> value-parameter fieldType: JavaType defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaClass.processValue[ValueParameterDescriptorImpl]
 
@@ -461,9 +463,9 @@ Inferred types:
                     0 -> false
                     1 -> true
                     else -> value
-                }' @ [177:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {Comparable<{Boolean & Int}> & java.io.Serializable}, entry1: {Comparable<{Boolean & Int}> & java.io.Serializable}, entry2: {Comparable<{Boolean & Int}> & java.io.Serializable}): {Comparable<{Boolean & Int}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
+                }' @ [177:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any, entry2: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {Comparable<{Boolean & Int}> & java.io.Serializable}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
 
 'value' @ [177:23] ==> value-parameter value: Any? defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaClass.processValue[ValueParameterDescriptorImpl]
 

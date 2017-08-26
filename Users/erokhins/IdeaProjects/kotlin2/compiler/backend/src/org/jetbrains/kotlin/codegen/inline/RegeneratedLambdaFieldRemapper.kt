@@ -161,9 +161,9 @@ Inferred types:
 'if (field.isSkipped)
                     Type.getObjectType(parent!!.parent!!.newLambdaInternalName)
                 else
-                    field.getType()' @ [75:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Type, elseBranch: Type): Type[SimpleFunctionDescriptorImpl]
+                    field.getType()' @ [75:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Type..Type?), elseBranch: (Type..Type?)): (Type..Type?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Type
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)
 
 'field' @ [75:21] ==> val field: CapturedParamInfo defined in org.jetbrains.kotlin.codegen.inline.RegeneratedLambdaFieldRemapper.getFieldForInline[LocalVariableDescriptor]
 

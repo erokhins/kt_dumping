@@ -1,10 +1,6 @@
 'MavenId' @ [44:40] ==> public constructor MavenId(@Nullable p0: String?, @Nullable p1: String?, @Nullable p2: String?) defined in org.jetbrains.idea.maven.model.MavenId[JavaClassConstructorDescriptor]
 
-'KotlinMavenConfigurator' @ [44:48] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [44:72] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
-
-'KotlinMavenConfigurator' @ [44:82] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'MAVEN_PLUGIN_ID' @ [44:106] ==> public final val MAVEN_PLUGIN_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -384,7 +380,7 @@ Inferred types:
 
 'addPlugin' @ [129:45] ==> public final fun addPlugin(artifact: MavenId): MavenDomPlugin defined in org.jetbrains.kotlin.idea.maven.PomFile[SimpleFunctionDescriptorImpl]
 
-'kotlinPluginId' @ [129:55] ==> public fun kotlinPluginId(version: String?): MavenId defined in org.jetbrains.kotlin.idea.maven[SimpleFunctionDescriptorImpl]
+'kotlinPluginId' @ [129:55] ==> public fun kotlinPluginId(version: String?): MavenId defined in org.jetbrains.kotlin.idea.maven in file PomFile.kt[SimpleFunctionDescriptorImpl]
 
 'version' @ [129:70] ==> value-parameter version: String? defined in org.jetbrains.kotlin.idea.maven.PomFile.addKotlinPlugin[ValueParameterDescriptorImpl]
 
@@ -887,8 +883,6 @@ Inferred types:
 
 'javacPlugin' @ [229:26] ==> val javacPlugin: MavenDomPlugin defined in org.jetbrains.kotlin.idea.maven.PomFile.addJavacExecutions[LocalVariableDescriptor]
 
-'PomFile' @ [229:50] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'Compile' @ [229:72] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
 
 'listOf' @ [229:81] ==> public fun <T> listOf(element: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -902,8 +896,6 @@ Inferred types:
 'addExecution' @ [233:13] ==> public final fun addExecution(plugin: MavenDomPlugin, executionId: String, phase: String, goals: List<String>): MavenDomPluginExecution defined in org.jetbrains.kotlin.idea.maven.PomFile[SimpleFunctionDescriptorImpl]
 
 'javacPlugin' @ [233:26] ==> val javacPlugin: MavenDomPlugin defined in org.jetbrains.kotlin.idea.maven.PomFile.addJavacExecutions[LocalVariableDescriptor]
-
-'PomFile' @ [233:54] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'TestCompile' @ [233:76] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
 
@@ -969,8 +961,6 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'DefaultPhases' @ [245:107] ==> @Suppress public object DefaultPhases defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'None' @ [245:121] ==> public final val None: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
 
 'plugin' @ [251:16] ==> value-parameter plugin: MavenPlugin? defined in org.jetbrains.kotlin.idea.maven.PomFile.isExecutionEnabled[ValueParameterDescriptorImpl]
@@ -993,13 +983,13 @@ Inferred types:
 
 'execution' @ [252:13] ==> value-parameter execution: (MavenPlugin.Execution..MavenPlugin.Execution?) defined in org.jetbrains.kotlin.idea.maven.PomFile.isExecutionEnabled.<anonymous>[ValueParameterDescriptorImpl]
 
-'java' @ [252:30] ==> public val <T> KClass<out MavenPlugin.Execution>.java: Class<out MavenPlugin.Execution> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [252:30] ==> public val <T> KClass<out (MavenPlugin.Execution..MavenPlugin.Execution?)>.java: Class<out (MavenPlugin.Execution..MavenPlugin.Execution?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Execution
+    <T> -> Captured(out (org.jetbrains.idea.maven.model.MavenPlugin.Execution..org.jetbrains.idea.maven.model.MavenPlugin.Execution?))
 
-'methods' @ [252:35] ==> public final val <T : (Any..Any?)> Class<out MavenPlugin.Execution>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
+'methods' @ [252:35] ==> public final val <T : (Any..Any?)> Class<out (MavenPlugin.Execution..MavenPlugin.Execution?)>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Execution
+    <T : (Any..Any?)> -> Captured(out (org.jetbrains.idea.maven.model.MavenPlugin.Execution..org.jetbrains.idea.maven.model.MavenPlugin.Execution?))
 
 'filter' @ [252:43] ==> public inline fun <T> Array<out (Method..Method?)>.filter(predicate: ((Method..Method?)) -> Boolean): List<(Method..Method?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1027,8 +1017,6 @@ Inferred types:
 
 'execution' @ [252:123] ==> value-parameter execution: (MavenPlugin.Execution..MavenPlugin.Execution?) defined in org.jetbrains.kotlin.idea.maven.PomFile.isExecutionEnabled.<anonymous>[ValueParameterDescriptorImpl]
 
-'DefaultPhases' @ [252:137] ==> @Suppress public object DefaultPhases defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'None' @ [252:151] ==> public final val None: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
 
 'ensureBuild' @ [257:9] ==> public final fun ensureBuild(): XmlTag defined in org.jetbrains.kotlin.idea.maven.PomFile[SimpleFunctionDescriptorImpl]
@@ -1047,15 +1035,11 @@ Inferred types:
 
 'stringValue' @ [259:53] ==> public final var MavenDomGoal.stringValue: String?[MyPropertyDescriptor]
 
-'KotlinGoals' @ [259:68] ==> public object KotlinGoals defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'TestCompile' @ [259:80] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
 'it' @ [259:95] ==> value-parameter it: (MavenDomGoal..MavenDomGoal?) defined in org.jetbrains.kotlin.idea.maven.PomFile.executionSourceDirs.<anonymous>[ValueParameterDescriptorImpl]
 
 'stringValue' @ [259:98] ==> public final var MavenDomGoal.stringValue: String?[MyPropertyDescriptor]
-
-'KotlinGoals' @ [259:113] ==> public object KotlinGoals defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'TestJs' @ [259:125] ==> public final val TestJs: String defined in org.jetbrains.kotlin.idea.maven.PomFile.KotlinGoals[PropertyDescriptorImpl]
 
@@ -1654,8 +1638,6 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'KotlinMavenConfigurator' @ [376:79] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [376:103] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
 'artifactId' @ [377:59] ==> public final val MavenDomPlugin.artifactId: (GenericDomValue<(String..String?)>..GenericDomValue<(String..String?)>?)[MyPropertyDescriptor]
@@ -1663,8 +1645,6 @@ Inferred types:
 'stringValue' @ [377:70] ==> public final var <T : (Any..Any?)> GenericDomValue<(String..String?)>.stringValue: String?[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
-
-'KotlinMavenConfigurator' @ [377:85] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'MAVEN_PLUGIN_ID' @ [377:109] ==> public final val MAVEN_PLUGIN_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -2051,11 +2031,7 @@ Inferred types:
 
 'isTest' @ [509:17] ==> value-parameter isTest: Boolean defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion.getPhase[ValueParameterDescriptorImpl]
 
-'DefaultPhases' @ [509:27] ==> @Suppress public object DefaultPhases defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'ProcessTestSources' @ [509:41] ==> public final val ProcessTestSources: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
-
-'DefaultPhases' @ [510:25] ==> @Suppress public object DefaultPhases defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'ProcessSources' @ [510:39] ==> public final val ProcessSources: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
 
@@ -2068,11 +2044,7 @@ Inferred types:
 
 'isTest' @ [513:17] ==> value-parameter isTest: Boolean defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion.getPhase[ValueParameterDescriptorImpl]
 
-'DefaultPhases' @ [513:27] ==> @Suppress public object DefaultPhases defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
-
 'TestCompile' @ [513:41] ==> public final val TestCompile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
-
-'DefaultPhases' @ [514:25] ==> @Suppress public object DefaultPhases defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'Compile' @ [514:39] ==> public final val Compile: String defined in org.jetbrains.kotlin.idea.maven.PomFile.DefaultPhases[PropertyDescriptorImpl]
 
@@ -2099,6 +2071,8 @@ Inferred types:
 
 'String' @ [564:25] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isNotEmpty' @ [564:33] ==> @InlineOnly public inline fun CharSequence.isNotEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'toCollection' @ [565:18] ==> public fun <T, C : MutableCollection<in String>> Iterable<String>.toCollection(destination: LinkedHashSet<String>): LinkedHashSet<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -2118,11 +2092,7 @@ Inferred types:
 
 'MavenId' @ [572:35] ==> public constructor MavenId(@Nullable p0: String?, @Nullable p1: String?, @Nullable p2: String?) defined in org.jetbrains.idea.maven.model.MavenId[JavaClassConstructorDescriptor]
 
-'KotlinMavenConfigurator' @ [572:43] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [572:67] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
-
-'KotlinMavenConfigurator' @ [573:43] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'MAVEN_PLUGIN_ID' @ [573:67] ==> public final val MAVEN_PLUGIN_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -2224,11 +2194,7 @@ Inferred types:
 
 'MavenId' @ [609:35] ==> public constructor MavenId(@Nullable p0: String?, @Nullable p1: String?, @Nullable p2: String?) defined in org.jetbrains.idea.maven.model.MavenId[JavaClassConstructorDescriptor]
 
-'KotlinMavenConfigurator' @ [609:43] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [609:67] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
-
-'KotlinMavenConfigurator' @ [610:43] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'MAVEN_PLUGIN_ID' @ [610:67] ==> public final val MAVEN_PLUGIN_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 

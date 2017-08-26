@@ -1041,11 +1041,11 @@ Inferred types:
 
 'xBreakpoint' @ [373:45] ==> public final val <P : raw (JavaBreakpointProperties<(JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>..JavaBreakpointProperties<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?)> LineBreakpoint<out raw (JavaBreakpointProperties<(JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>..JavaBreakpointProperties<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?)>.xBreakpoint: (XBreakpoint<out (JavaBreakpointProperties<(JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>..JavaBreakpointProperties<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?)>..XBreakpoint<out (JavaBreakpointProperties<(JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>..JavaBreakpointProperties<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <P : raw (JavaBreakpointProperties<(JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>..JavaBreakpointProperties<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?)> -> raw (org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<(org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>?)>..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<out (org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>?)>?)
+    <P : raw (JavaBreakpointProperties<(JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>..JavaBreakpointProperties<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?)> -> Captured(*)
 
-'properties' @ [373:57] ==> public final val <P : raw (XBreakpointProperties<(Any..Any?)>..XBreakpointProperties<*>?)> XBreakpoint<out ({XBreakpointProperties<(kotlin.Any..kotlin.Any?)> & JavaBreakpointProperties<(org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>?)>}..JavaBreakpointProperties<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?)>.properties: ({XBreakpointProperties<(kotlin.Any..kotlin.Any?)> & JavaBreakpointProperties<(org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>?)>}..JavaBreakpointProperties<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?)[MyPropertyDescriptor]
+'properties' @ [373:57] ==> public final val <P : raw (XBreakpointProperties<(Any..Any?)>..XBreakpointProperties<*>?)> XBreakpoint<out (JavaBreakpointProperties<(JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>..JavaBreakpointProperties<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?)>.properties: (JavaBreakpointProperties<(JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>..JavaBreakpointProperties<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <P : raw (XBreakpointProperties<(Any..Any?)>..XBreakpointProperties<*>?)> -> ({XBreakpointProperties<(kotlin.Any..kotlin.Any?)> & JavaBreakpointProperties<(org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>?)>}..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<out (org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>?)>?)
+    <P : raw (XBreakpointProperties<(Any..Any?)>..XBreakpointProperties<*>?)> -> Captured(out (org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<(org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>?)>..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<out (org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>..org.jetbrains.java.debugger.breakpoints.properties.JavaBreakpointProperties<*>?)>?))
 
 'lambdaOrdinal' @ [375:17] ==> value-parameter lambdaOrdinal: Int? defined in org.jetbrains.kotlin.idea.debugger.KotlinDebuggerTestBase.createLineBreakpoint[ValueParameterDescriptorImpl]
 
@@ -1124,15 +1124,15 @@ Inferred types:
 
 'myProject' @ [400:62] ==> protected/*protected and package*/ final var myProject: (Project..Project?) defined in org.jetbrains.kotlin.idea.debugger.KotlinDebuggerTestBase[JavaPropertyDescriptor]
 
-'runWriteAction' @ [401:27] ==> public fun <T> runWriteAction(action: () -> XLineBreakpoint<XBreakpointProperties<*>>): XLineBreakpoint<XBreakpointProperties<*>> defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
+'runWriteAction' @ [401:27] ==> public fun <T> runWriteAction(action: () -> XLineBreakpoint<(XBreakpointProperties<*>..XBreakpointProperties<*>?)>): XLineBreakpoint<(XBreakpointProperties<*>..XBreakpointProperties<*>?)> defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> XLineBreakpoint<XBreakpointProperties<*>>
+    <T> -> XLineBreakpoint<(com.intellij.xdebugger.breakpoints.XBreakpointProperties<*>..com.intellij.xdebugger.breakpoints.XBreakpointProperties<*>?)>
 
 'breakpointManager' @ [402:13] ==> value-parameter breakpointManager: XBreakpointManager defined in org.jetbrains.kotlin.idea.debugger.KotlinDebuggerTestBase.createBreakpointOfType[ValueParameterDescriptorImpl]
 
 'addLineBreakpoint' @ [402:31] ==> @NotNull public abstract fun <T : raw (XBreakpointProperties<(Any..Any?)>..XBreakpointProperties<*>?)> addLineBreakpoint(p0: (XLineBreakpointType<(XBreakpointProperties<*>..XBreakpointProperties<*>?)>..XLineBreakpointType<(XBreakpointProperties<*>..XBreakpointProperties<*>?)>?), @NotNull p1: String, p2: Int, @Nullable p3: XBreakpointProperties<*>?): XLineBreakpoint<(XBreakpointProperties<*>..XBreakpointProperties<*>?)> defined in com.intellij.xdebugger.breakpoints.XBreakpointManager[JavaMethodDescriptor]
 Inferred types:
-    <T : raw (XBreakpointProperties<(Any..Any?)>..XBreakpointProperties<*>?)> -> XBreakpointProperties<*>
+    <T : raw (XBreakpointProperties<(Any..Any?)>..XBreakpointProperties<*>?)> -> (com.intellij.xdebugger.breakpoints.XBreakpointProperties<*>..com.intellij.xdebugger.breakpoints.XBreakpointProperties<*>?)
 
 'breakpointType' @ [403:21] ==> value-parameter breakpointType: XLineBreakpointType<XBreakpointProperties<*>> defined in org.jetbrains.kotlin.idea.debugger.KotlinDebuggerTestBase.createBreakpointOfType[ValueParameterDescriptorImpl]
 
@@ -1152,7 +1152,7 @@ Inferred types:
 
 'getJavaBreakpoint' @ [409:34] ==> @Nullable public open fun getJavaBreakpoint(@Nullable p0: raw (XBreakpoint<(XBreakpointProperties<*>..XBreakpointProperties<*>?)>?..XBreakpoint<out (XBreakpointProperties<*>..XBreakpointProperties<*>?)>?)): raw (Breakpoint<(JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?..Breakpoint<out (JavaBreakpointProperties<*>..JavaBreakpointProperties<*>?)>?) defined in com.intellij.debugger.ui.breakpoints.BreakpointManager[JavaMethodDescriptor]
 
-'xBreakpoint' @ [409:52] ==> val xBreakpoint: XLineBreakpoint<XBreakpointProperties<*>> defined in org.jetbrains.kotlin.idea.debugger.KotlinDebuggerTestBase.createBreakpointOfType[LocalVariableDescriptor]
+'xBreakpoint' @ [409:52] ==> val xBreakpoint: XLineBreakpoint<(XBreakpointProperties<*>..XBreakpointProperties<*>?)> defined in org.jetbrains.kotlin.idea.debugger.KotlinDebuggerTestBase.createBreakpointOfType[LocalVariableDescriptor]
 
 'Suppress' @ [412:5] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
@@ -1160,7 +1160,7 @@ Inferred types:
 
 'findBreakpointType' @ [414:44] ==> public abstract fun <T : raw (XBreakpointType<(XBreakpoint<*>..XBreakpoint<*>?), (XBreakpointProperties<*>..XBreakpointProperties<*>?)>..XBreakpointType<out (XBreakpoint<*>..XBreakpoint<*>?), out (XBreakpointProperties<*>..XBreakpointProperties<*>?)>?)> findBreakpointType(@NotNull p0: Class<(T..T?)>): (T..T?) defined in com.intellij.xdebugger.XDebuggerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : raw (XBreakpointType<(XBreakpoint<*>..XBreakpoint<*>?), (XBreakpointProperties<*>..XBreakpointProperties<*>?)>..XBreakpointType<out (XBreakpoint<*>..XBreakpoint<*>?), out (XBreakpointProperties<*>..XBreakpointProperties<*>?)>?)> -> T
+    <T : raw (XBreakpointType<(XBreakpoint<*>..XBreakpoint<*>?), (XBreakpointProperties<*>..XBreakpointProperties<*>?)>..XBreakpointType<out (XBreakpoint<*>..XBreakpoint<*>?), out (XBreakpointProperties<*>..XBreakpointProperties<*>?)>?)> -> (T..T?)
 
 'javaClass' @ [414:63] ==> value-parameter javaClass: Class<T> defined in org.jetbrains.kotlin.idea.debugger.KotlinDebuggerTestBase.findBreakpointType[ValueParameterDescriptorImpl]
 
@@ -1244,8 +1244,6 @@ Inferred types:
 
 'toString' @ [438:42] ==> @InlineOnly public inline fun ByteArray.toString(charset: Charset): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 
-'Charsets' @ [438:51] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
-
 'UTF_8' @ [438:60] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 
 'contains' @ [438:67] ==> public operator fun CharSequence.contains(other: CharSequence, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
@@ -1262,7 +1260,7 @@ Inferred types:
 
 'sourceFiles' @ [442:108] ==> val sourceFiles: List<(VirtualFile..VirtualFile?)> defined in org.jetbrains.kotlin.idea.debugger.KotlinDebuggerTestBase.createBreakpoint[LocalVariableDescriptor]
 
-'Runnable' @ [444:24] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [444:24] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 '!!' @ [445:33] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: PsiFile?): PsiFile[SimpleFunctionDescriptorImpl]
 Inferred types:

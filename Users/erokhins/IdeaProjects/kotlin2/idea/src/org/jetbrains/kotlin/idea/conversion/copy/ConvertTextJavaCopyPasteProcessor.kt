@@ -54,15 +54,11 @@ Inferred types:
 
 'isDataFlavorSupported' @ [76:29] ==> public abstract fun isDataFlavorSupported(p0: (DataFlavor..DataFlavor?)): Boolean defined in java.awt.datatransfer.Transferable[JavaMethodDescriptor]
 
-'CopiedKotlinCode' @ [76:51] ==> public companion object defined in org.jetbrains.kotlin.idea.conversion.copy.CopiedKotlinCode[FakeCallableDescriptorForObject]
-
 'DATA_FLAVOR' @ [76:68] ==> public final val DATA_FLAVOR: DataFlavor defined in org.jetbrains.kotlin.idea.conversion.copy.CopiedKotlinCode.Companion[PropertyDescriptorImpl]
 
 'content' @ [78:21] ==> value-parameter content: Transferable defined in org.jetbrains.kotlin.idea.conversion.copy.ConvertTextJavaCopyPasteProcessor.extractTransferableData[ValueParameterDescriptorImpl]
 
 'isDataFlavorSupported' @ [78:29] ==> public abstract fun isDataFlavorSupported(p0: (DataFlavor..DataFlavor?)): Boolean defined in java.awt.datatransfer.Transferable[JavaMethodDescriptor]
-
-'CopiedJavaCode' @ [78:51] ==> public companion object defined in org.jetbrains.kotlin.idea.conversion.copy.CopiedJavaCode[FakeCallableDescriptorForObject]
 
 'DATA_FLAVOR' @ [78:66] ==> public final val DATA_FLAVOR: DataFlavor defined in org.jetbrains.kotlin.idea.conversion.copy.CopiedJavaCode.Companion[PropertyDescriptorImpl]
 

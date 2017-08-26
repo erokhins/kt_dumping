@@ -24,7 +24,7 @@ Inferred types:
 
 'replaceMe' @ [30:17] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsBreak..JsBreak?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsBreak
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsBreak..org.jetbrains.kotlin.js.backend.ast.JsBreak?)
 
 'JsBreak' @ [30:27] ==> public constructor JsBreak(p0: (JsNameRef..JsNameRef?)) defined in org.jetbrains.kotlin.js.backend.ast.JsBreak[JavaClassConstructorDescriptor]
 

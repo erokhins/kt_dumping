@@ -297,7 +297,7 @@ Inferred types:
 
 'findChildrenOfType' @ [100:28] ==> @NotNull public open fun <T : (PsiElement..PsiElement?)> findChildrenOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<out (KtOperationReferenceExpression..KtOperationReferenceExpression?)>): (MutableCollection<(KtOperationReferenceExpression..KtOperationReferenceExpression?)>..Collection<(KtOperationReferenceExpression..KtOperationReferenceExpression?)>) defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtOperationReferenceExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtOperationReferenceExpression..org.jetbrains.kotlin.psi.KtOperationReferenceExpression?)
 
 'condition' @ [100:47] ==> val condition: KtExpression defined in org.jetbrains.kotlin.idea.intentions.SplitIfIntention.getFirstValidOperator[LocalVariableDescriptor]
 

@@ -20,7 +20,7 @@
 
 'callPosition' @ [53:29] ==> @NotNull public final val callPosition: CallPosition defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaPropertyDescriptor]
 
-'component1' @ [54:10] ==> public final operator fun component1(): ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
+'component1' @ [54:10] ==> public final operator fun component1(): ResolvedCall<*> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
 'component2' @ [54:24] ==> public final operator fun component2(): (CallableDescriptor) -> KotlinType? defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
@@ -41,15 +41,15 @@
                     (f as? PropertyDescriptor)?.setter?.valueParameters?.get(0)?.type
                 })
         is CallPosition.Unknown -> return false
-    }' @ [54:109] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Pair<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>, (CallableDescriptor) -> KotlinType?>, entry1: Pair<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>, (CallableDescriptor) -> KotlinType?>, entry2: Pair<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>, (CallableDescriptor) -> KotlinType?>, entry3: Pair<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>, (CallableDescriptor) -> KotlinType?>): Pair<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>, (CallableDescriptor) -> KotlinType?>[SimpleFunctionDescriptorImpl]
+    }' @ [54:109] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Pair<ResolvedCall<*>, (CallableDescriptor) -> KotlinType?>, entry1: Pair<ResolvedCall<*>, (CallableDescriptor) -> KotlinType?>, entry2: Pair<ResolvedCall<*>, (CallableDescriptor) -> KotlinType?>, entry3: Pair<ResolvedCall<*>, (CallableDescriptor) -> KotlinType?>): Pair<ResolvedCall<*>, (CallableDescriptor) -> KotlinType?>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Pair<ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>, Function1<CallableDescriptor, KotlinType?>>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Pair<ResolvedCall<*>, Function1<CallableDescriptor, KotlinType?>>
 
 'callPosition' @ [54:115] ==> val callPosition: CallPosition defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
 
-'Pair' @ [55:50] ==> public constructor Pair<out A, out B>(first: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>, second: (CallableDescriptor) -> KotlinType?) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [55:50] ==> public constructor Pair<out A, out B>(first: ResolvedCall<*>, second: (CallableDescriptor) -> KotlinType?) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out A> -> ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>
+    <out A> -> ResolvedCall<*>
     <out B> -> Function1<CallableDescriptor, KotlinType?>
 
 'callPosition' @ [56:17] ==> val callPosition: CallPosition defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
@@ -72,9 +72,9 @@ Inferred types:
 
 'valueArgument' @ [58:113] ==> public final val valueArgument: ValueArgument defined in org.jetbrains.kotlin.resolve.calls.context.CallPosition.ValueArgumentPosition[PropertyDescriptorImpl]
 
-'Pair' @ [60:54] ==> public constructor Pair<out A, out B>(first: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>, second: (CallableDescriptor) -> KotlinType?) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [60:54] ==> public constructor Pair<out A, out B>(first: ResolvedCall<*>, second: (CallableDescriptor) -> KotlinType?) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out A> -> ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>
+    <out A> -> ResolvedCall<*>
     <out B> -> Function1<CallableDescriptor, KotlinType?>
 
 'callPosition' @ [61:17] ==> val callPosition: CallPosition defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
@@ -96,7 +96,7 @@ Inferred types:
 
 'leftPart' @ [66:30] ==> public final val leftPart: KtExpression? defined in org.jetbrains.kotlin.resolve.calls.context.CallPosition.PropertyAssignment[PropertyDescriptorImpl]
 
-'getResolvedCall' @ [66:39] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [66:39] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [66:55] ==> @NotNull public final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaPropertyDescriptor]
 
@@ -112,29 +112,31 @@ Inferred types:
 
 'type' @ [68:82] ==> public final val ValueParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'resolvedCall' @ [73:24] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
+'resolvedCall' @ [73:24] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
 
 'smartCastDispatchReceiverType' @ [73:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.smartCastDispatchReceiverType: KotlinType?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
-'resolvedCall' @ [74:28] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
+'resolvedCall' @ [74:28] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
 
 'dispatchReceiver' @ [74:41] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'type' @ [74:75] ==> public final val ReceiverValue.type: KotlinType[MyPropertyDescriptor]
 
-'resolvedCall' @ [76:30] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
+'resolvedCall' @ [76:30] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
 
 'resultingDescriptor' @ [76:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'original' @ [76:63] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
-'TypeConstructorSubstitution' @ [79:13] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
+'?:' @ [79:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CallableDescriptor?, right: CallableDescriptor): CallableDescriptor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CallableDescriptor
 
 'create' @ [80:22] ==> @JvmStatic public final fun create(kotlinType: KotlinType): TypeSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -230,17 +232,17 @@ Inferred types:
 
 'leftPart' @ [89:70] ==> public final val leftPart: KtExpression? defined in org.jetbrains.kotlin.resolve.calls.context.CallPosition.PropertyAssignment[PropertyDescriptorImpl]
 
-'resolvedCall' @ [89:96] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
+'resolvedCall' @ [89:96] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
 
 'resultingDescriptor' @ [89:109] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
-'resolvedCall' @ [92:24] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
+'resolvedCall' @ [92:24] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
 
 'call' @ [92:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'if (resolvedCall is VariableAsFunctionResolvedCall)
                         resolvedCall.variableCall.call.calleeExpression
@@ -249,9 +251,9 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtExpression?
 
-'resolvedCall' @ [94:25] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
+'resolvedCall' @ [94:25] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
 
-'resolvedCall' @ [95:25] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
+'resolvedCall' @ [95:25] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.diagnostics.reportTypeMismatchDueToTypeProjection[LocalVariableDescriptor]
 
 'variableCall' @ [95:38] ==> public abstract val variableCall: ResolvedCall<VariableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.model.VariableAsFunctionResolvedCall[PropertyDescriptorImpl]
 
@@ -395,7 +397,9 @@ Inferred types:
 
 'psiElement' @ [149:27] ==> value-parameter psiElement: PsiElement defined in org.jetbrains.kotlin.diagnostics.reportOnDeclaration.<anonymous>[ValueParameterDescriptorImpl]
 
-'DescriptorToSourceUtils' @ [153:5] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve in file DescriptorToSourceUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [153:5] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Unit?, right: Unit): Unit[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Unit
 
 'descriptorToDeclaration' @ [153:29] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[SimpleFunctionDescriptorImpl]
 
@@ -418,7 +422,9 @@ Inferred types:
 
 'descriptor' @ [155:52] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.diagnostics.reportOnDeclarationOrFail[ValueParameterDescriptorImpl]
 
-'DescriptorToSourceUtils' @ [159:5] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve in file DescriptorToSourceUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [159:5] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Unit?, right: Unit): Unit[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Unit
 
 'descriptorToDeclaration' @ [159:29] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[SimpleFunctionDescriptorImpl]
 
@@ -478,7 +484,7 @@ Inferred types:
 
 'name' @ [169:85] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'renderer' @ [171:16] ==> val renderer: DiagnosticRenderer<D> defined in org.jetbrains.kotlin.diagnostics.reportFromPlugin[LocalVariableDescriptor]
 
@@ -516,7 +522,7 @@ Inferred types:
 
 'name' @ [174:99] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'text' @ [174:105] ==> val text: String defined in org.jetbrains.kotlin.diagnostics.reportFromPlugin[LocalVariableDescriptor]
 
@@ -538,7 +544,7 @@ Inferred types:
 
 'name' @ [175:103] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'text' @ [175:109] ==> val text: String defined in org.jetbrains.kotlin.diagnostics.reportFromPlugin[LocalVariableDescriptor]
 
@@ -560,7 +566,7 @@ Inferred types:
 
 'name' @ [176:97] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'text' @ [176:103] ==> val text: String defined in org.jetbrains.kotlin.diagnostics.reportFromPlugin[LocalVariableDescriptor]
 

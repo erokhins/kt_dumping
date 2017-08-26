@@ -8,7 +8,7 @@ Inferred types:
 
 'getService' @ [28:32] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(ScriptDependenciesModificationTracker..ScriptDependenciesModificationTracker?)>): (ScriptDependenciesModificationTracker..ScriptDependenciesModificationTracker?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScriptDependenciesModificationTracker
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.core.script.ScriptDependenciesModificationTracker..org.jetbrains.kotlin.idea.core.script.ScriptDependenciesModificationTracker?)
 
 'project' @ [28:43] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesModificationTracker.Companion.getInstance[ValueParameterDescriptorImpl]
 

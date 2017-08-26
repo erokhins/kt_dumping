@@ -150,7 +150,7 @@ Inferred types:
 
 'getUserData' @ [114:36] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(String..String?)>): String? defined in org.jetbrains.kotlin.psi.KtLiteralStringTemplateEntry[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'CREATE_XML_RESOURCE_PARAMETERS_NAME_KEY' @ [114:48] ==> public val CREATE_XML_RESOURCE_PARAMETERS_NAME_KEY: Key<String> defined in org.jetbrains.kotlin.android.intention in file CreateXmlResourceParameters.kt[PropertyDescriptorImpl]
 
@@ -601,8 +601,8 @@ Inferred types:
 
 'get' @ [235:52] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [235:71] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

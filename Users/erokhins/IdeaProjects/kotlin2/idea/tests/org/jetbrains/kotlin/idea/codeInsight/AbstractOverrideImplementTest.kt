@@ -182,7 +182,7 @@ Inferred types:
 
 'getParentOfType' @ [126:41] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtClassOrObject..KtClassOrObject?)>): KtClassOrObject? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClassOrObject
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassOrObject..org.jetbrains.kotlin.psi.KtClassOrObject?)
 
 'elementAtCaret' @ [126:57] ==> val elementAtCaret: PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.AbstractOverrideImplementTest.doOverrideImplement[LocalVariableDescriptor]
 
@@ -305,7 +305,7 @@ Inferred types:
 
 'getParentOfType' @ [152:41] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtClassOrObject..KtClassOrObject?)>): KtClassOrObject? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClassOrObject
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassOrObject..org.jetbrains.kotlin.psi.KtClassOrObject?)
 
 'elementAtCaret' @ [152:57] ==> val elementAtCaret: PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.AbstractOverrideImplementTest.doMultiOverrideImplement[LocalVariableDescriptor]
 
@@ -378,7 +378,7 @@ Inferred types:
 
 'SmartList' @ [165:100] ==> public constructor SmartList<E : (Any..Any?)>(p0: (PsiMethodMember..PsiMethodMember?)) defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> PsiMethodMember
+    <E : (Any..Any?)> -> (com.intellij.codeInsight.generation.PsiMethodMember..com.intellij.codeInsight.generation.PsiMethodMember?)
 
 'methodMember' @ [165:110] ==> val methodMember: PsiMethodMember defined in org.jetbrains.kotlin.idea.codeInsight.AbstractOverrideImplementTest.generateImplementation.<anonymous>[LocalVariableDescriptor]
 

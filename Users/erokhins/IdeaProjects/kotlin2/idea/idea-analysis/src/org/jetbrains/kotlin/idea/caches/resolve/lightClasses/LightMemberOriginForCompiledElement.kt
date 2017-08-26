@@ -18,9 +18,9 @@
 
 'psiField' @ [57:46] ==> public final val psiField: PsiField defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LightMemberOriginForCompiledField[PropertyDescriptorImpl]
 
-'lazyPub' @ [60:53] ==> public fun <T> lazyPub(initializer: () -> KtDeclaration?): Lazy<KtDeclaration?> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [60:53] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtDeclaration?
+    <T> -> T
 
 'MapPsiToAsmDesc' @ [61:20] ==> public object MapPsiToAsmDesc defined in org.jetbrains.kotlin.idea.caches.resolve in file MapPsiToAsmDesc.kt[FakeCallableDescriptorForObject]
 
@@ -66,9 +66,9 @@ Inferred types:
 
 'file' @ [74:82] ==> public final val file: KtClsFile defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.LightMemberOriginForCompiledMethod[PropertyDescriptorImpl]
 
-'lazyPub' @ [77:53] ==> public fun <T> lazyPub(initializer: () -> KtDeclaration?): Lazy<KtDeclaration?> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [77:53] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtDeclaration?
+    <T> -> T
 
 'MapPsiToAsmDesc' @ [78:20] ==> public object MapPsiToAsmDesc defined in org.jetbrains.kotlin.idea.caches.resolve in file MapPsiToAsmDesc.kt[FakeCallableDescriptorForObject]
 
@@ -96,7 +96,7 @@ Inferred types:
 
 'member' @ [85:29] ==> value-parameter member: PsiMember defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.findDeclarationInCompiledFile[ValueParameterDescriptorImpl]
 
-'relativeClassName' @ [85:36] ==> private fun PsiMember.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'relativeClassName' @ [85:36] ==> private fun PsiMember.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file LightMemberOriginForCompiledElement.kt[SimpleFunctionDescriptorImpl]
 
 'ClassNameAndSignature' @ [86:15] ==> public constructor ClassNameAndSignature(relativeClassName: List<Name>, memberSignature: MemberSignature) defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ClassNameAndSignature[ClassConstructorDescriptorImpl]
 
@@ -153,7 +153,7 @@ Inferred types:
 
 'relativeClassName' @ [95:13] ==> val relativeClassName: List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.findDeclarationInCompiledFile[LocalVariableDescriptor]
 
-'fold' @ [95:31] ==> public inline fun <T, R> Iterable<Name>.fold(initial: KtClassOrObject?, operation: (KtClassOrObject?, Name) -> KtClassOrObject?): KtClassOrObject? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [95:31] ==> public inline fun <T, R> Iterable<Name>.fold(initial: KtClassOrObject?, operation: (acc: KtClassOrObject?, Name) -> KtClassOrObject?): KtClassOrObject? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Name
     <R> -> KtClassOrObject?
@@ -321,7 +321,7 @@ Inferred types:
 
 'enumClass' @ [145:26] ==> val enumClass: ClassDescriptor defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ByJvmSignatureIndexer.indexDescriptor[LocalVariableDescriptor]
 
-'relativeClassName' @ [145:36] ==> private fun ClassDescriptor.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'relativeClassName' @ [145:36] ==> private fun ClassDescriptor.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file LightMemberOriginForCompiledElement.kt[SimpleFunctionDescriptorImpl]
 
 'signature' @ [145:57] ==> val signature: MemberSignature defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ByJvmSignatureIndexer.indexDescriptor[LocalVariableDescriptor]
 
@@ -341,7 +341,7 @@ Inferred types:
 
 'descriptor' @ [149:26] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ByJvmSignatureIndexer.indexDescriptor[ValueParameterDescriptorImpl]
 
-'relativeClassName' @ [149:37] ==> private fun ClassDescriptor.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'relativeClassName' @ [149:37] ==> private fun ClassDescriptor.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file LightMemberOriginForCompiledElement.kt[SimpleFunctionDescriptorImpl]
 
 'instanceFieldSignature' @ [149:58] ==> val instanceFieldSignature: MemberSignature defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ByJvmSignatureIndexer.indexDescriptor[LocalVariableDescriptor]
 
@@ -369,7 +369,7 @@ Inferred types:
 
 'containingDeclaration' @ [152:42] ==> public final val ClassDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'relativeClassName' @ [152:86] ==> private fun ClassDescriptor.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'relativeClassName' @ [152:86] ==> private fun ClassDescriptor.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file LightMemberOriginForCompiledElement.kt[SimpleFunctionDescriptorImpl]
 
 'orEmpty' @ [152:106] ==> @InlineOnly public inline fun <T> List<Name>?.orEmpty(): List<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -412,7 +412,7 @@ Inferred types:
 
 'containingDeclaration' @ [161:34] ==> public final val DeserializedSimpleFunctionDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'relativeClassName' @ [161:78] ==> private fun ClassDescriptor.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'relativeClassName' @ [161:78] ==> private fun ClassDescriptor.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file LightMemberOriginForCompiledElement.kt[SimpleFunctionDescriptorImpl]
 
 'orEmpty' @ [161:98] ==> @InlineOnly public inline fun <T> List<Name>?.orEmpty(): List<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -430,7 +430,7 @@ Inferred types:
 
 'containingDeclaration' @ [166:41] ==> public final val DeserializedPropertyDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'relativeClassName' @ [166:85] ==> private fun ClassDescriptor.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'relativeClassName' @ [166:85] ==> private fun ClassDescriptor.relativeClassName(): List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file LightMemberOriginForCompiledElement.kt[SimpleFunctionDescriptorImpl]
 
 'orEmpty' @ [166:105] ==> @InlineOnly public inline fun <T> List<Name>?.orEmpty(): List<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -440,7 +440,7 @@ Inferred types:
 
 'hasExtension' @ [167:23] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [167:48] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -448,7 +448,7 @@ Inferred types:
 
 'getExtension' @ [168:39] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [168:64] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -472,8 +472,6 @@ Inferred types:
 
 'className' @ [171:26] ==> val className: List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ByJvmSignatureIndexer.indexDescriptor[LocalVariableDescriptor]
 
-'MemberSignature' @ [171:37] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.MemberSignature[FakeCallableDescriptorForObject]
-
 'fromFieldNameAndDesc' @ [171:53] ==> @JvmStatic public final fun fromFieldNameAndDesc(name: String, desc: String): MemberSignature defined in org.jetbrains.kotlin.load.kotlin.MemberSignature.Companion[DeserializedSimpleFunctionDescriptor]
 
 'fieldSignature' @ [171:74] ==> val fieldSignature: JvmProtoBufUtil.PropertySignature? defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ByJvmSignatureIndexer.indexDescriptor[LocalVariableDescriptor]
@@ -492,8 +490,6 @@ Inferred types:
 
 'className' @ [174:26] ==> val className: List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ByJvmSignatureIndexer.indexDescriptor[LocalVariableDescriptor]
 
-'MemberSignature' @ [174:37] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.MemberSignature[FakeCallableDescriptorForObject]
-
 'fromMethod' @ [174:53] ==> @JvmStatic public final fun fromMethod(nameResolver: NameResolver, signature: JvmProtoBuf.JvmMethodSignature): MemberSignature defined in org.jetbrains.kotlin.load.kotlin.MemberSignature.Companion[DeserializedSimpleFunctionDescriptor]
 
 'descriptor' @ [174:64] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ByJvmSignatureIndexer.indexDescriptor[ValueParameterDescriptorImpl]
@@ -511,8 +507,6 @@ Inferred types:
 'save' @ [177:21] ==> local final fun save(id: List<Name>, signature: MemberSignature): Unit defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ByJvmSignatureIndexer.indexDescriptor[SimpleFunctionDescriptorImpl]
 
 'className' @ [177:26] ==> val className: List<Name> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ByJvmSignatureIndexer.indexDescriptor[LocalVariableDescriptor]
-
-'MemberSignature' @ [177:37] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.MemberSignature[FakeCallableDescriptorForObject]
 
 'fromMethod' @ [177:53] ==> @JvmStatic public final fun fromMethod(nameResolver: NameResolver, signature: JvmProtoBuf.JvmMethodSignature): MemberSignature defined in org.jetbrains.kotlin.load.kotlin.MemberSignature.Companion[DeserializedSimpleFunctionDescriptor]
 

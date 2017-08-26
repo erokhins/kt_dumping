@@ -30,9 +30,9 @@
 
 'text' @ [52:80] ==> public final val KtExpression.text: (String..String?)[MyPropertyDescriptor]
 
-'setOf' @ [54:27] ==> public fun <T> setOf(vararg elements: {Number & Comparable<{Long & Double & Float}>}): Set<{Number & Comparable<{Long & Double & Float}>}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'setOf' @ [54:27] ==> public fun <T> setOf(vararg elements: Any): Set<Any> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {Number & Comparable<{Long & Double & Float}>}
+    <T> -> Any
 
 'this' @ [57:9] ==> <this> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.isZeroConstant[ReceiverParameterDescriptorImpl]
 
@@ -46,7 +46,9 @@ Inferred types:
 
 'this' @ [59:39] ==> <this> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.isZeroConstant[ReceiverParameterDescriptorImpl]
 
-'ConstantExpressionEvaluator' @ [60:20] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [60:20] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CompileTimeConstant<*>?, right: CompileTimeConstant<*>): CompileTimeConstant<*>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CompileTimeConstant<*>
 
 'getConstant' @ [60:48] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -54,7 +56,7 @@ Inferred types:
 
 'bindingContext' @ [60:66] ==> val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.isZeroConstant[LocalVariableDescriptor]
 
-'constant' @ [61:12] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.isZeroConstant[LocalVariableDescriptor]
+'constant' @ [61:12] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.isZeroConstant[LocalVariableDescriptor]
 
 'getValue' @ [61:21] ==> public open fun getValue(expectedType: KotlinType): Any? defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedSimpleFunctionDescriptor]
 
@@ -90,7 +92,7 @@ Inferred types:
 
 'isPhysical' @ [73:22] ==> public final val KtElement.isPhysical: Boolean[MyPropertyDescriptor]
 
-'hasUsages' @ [74:12] ==> public fun KtCallableDeclaration.hasUsages(inElements: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'hasUsages' @ [74:12] ==> public fun KtCallableDeclaration.hasUsages(inElements: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [74:22] ==> public fun <T> listOf(element: KtElement): List<KtElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -304,13 +306,13 @@ Inferred types:
 
 'isWrite' @ [128:98] ==> public final val isWrite: Boolean defined in org.jetbrains.kotlin.idea.references.ReferenceAccess[DeserializedPropertyDescriptor]
 
-'countUsages' @ [133:12] ==> public fun KtCallableDeclaration.countUsages(inElements: Collection<KtElement>): Int defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'countUsages' @ [133:12] ==> public fun KtCallableDeclaration.countUsages(inElements: Collection<KtElement>): Int defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'elements1' @ [133:24] ==> value-parameter elements1: Collection<KtElement> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.hasDifferentSetsOfUsages[ValueParameterDescriptorImpl]
 
 'elements2' @ [133:36] ==> value-parameter elements2: Collection<KtElement> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.hasDifferentSetsOfUsages[ValueParameterDescriptorImpl]
 
-'countUsages' @ [133:50] ==> public fun KtCallableDeclaration.countUsages(inElements: Collection<KtElement>): Int defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'countUsages' @ [133:50] ==> public fun KtCallableDeclaration.countUsages(inElements: Collection<KtElement>): Int defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'elements2' @ [133:62] ==> value-parameter elements2: Collection<KtElement> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.hasDifferentSetsOfUsages[ValueParameterDescriptorImpl]
 
@@ -456,7 +458,7 @@ Inferred types:
 
 'resultingDescriptor' @ [195:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'functionDescriptor' @ [196:9] ==> val functionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.extractStaticFunctionCallArguments[LocalVariableDescriptor]
 
@@ -478,7 +480,7 @@ Inferred types:
 
 'valueArgumentsByIndex' @ [199:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArgumentsByIndex: (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>?..List<(ResolvedValueArgument..ResolvedValueArgument?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'map' @ [199:48] ==> public inline fun <T, R> Iterable<(ResolvedValueArgument..ResolvedValueArgument?)>.map(transform: ((ResolvedValueArgument..ResolvedValueArgument?)) -> KtExpression?): List<KtExpression?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -10,7 +10,7 @@ Inferred types:
 
 'getUserData' @ [30:25] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Int..Int?)>): Int? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'NAME_SIMILARITY_KEY' @ [30:37] ==> public val NAME_SIMILARITY_KEY: Key<Int> defined in org.jetbrains.kotlin.idea.completion.smart in file NameSimilarity.kt[PropertyDescriptorImpl]
 
@@ -76,11 +76,15 @@ Inferred types:
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
 
+'isNonNumber' @ [48:43] ==> local final fun isNonNumber(word: String): Boolean defined in org.jetbrains.kotlin.idea.completion.smart.calcNameSimilarity[SimpleFunctionDescriptorImpl]
+
 'words2' @ [49:27] ==> val words2: (MutableList<(String..String?)>..List<(String..String?)>) defined in org.jetbrains.kotlin.idea.completion.smart.calcNameSimilarity[LocalVariableDescriptor]
 
 'filter' @ [49:34] ==> public inline fun <T> Iterable<(String..String?)>.filter(predicate: ((String..String?)) -> Boolean): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
+
+'isNonNumber' @ [49:43] ==> local final fun isNonNumber(word: String): Boolean defined in org.jetbrains.kotlin.idea.completion.smart.calcNameSimilarity[SimpleFunctionDescriptorImpl]
 
 'min' @ [52:25] ==> public open fun min(p0: Int, p1: Int): Int defined in java.lang.Math[JavaMethodDescriptor]
 

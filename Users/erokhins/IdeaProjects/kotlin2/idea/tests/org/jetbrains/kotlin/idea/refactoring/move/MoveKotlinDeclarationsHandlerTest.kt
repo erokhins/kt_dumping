@@ -84,7 +84,7 @@ Inferred types:
 
 'document' @ [58:16] ==> val document: Document defined in org.jetbrains.kotlin.idea.refactoring.move.MoveKotlinDeclarationsHandlerTest.getElementsAtCarets[LocalVariableDescriptor]
 
-'extractMultipleMarkerOffsets' @ [58:25] ==> public fun Document.extractMultipleMarkerOffsets(project: Project, caretMarker: String = ...): List<Int> defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'extractMultipleMarkerOffsets' @ [58:25] ==> public fun Document.extractMultipleMarkerOffsets(project: Project, caretMarker: String = ...): List<Int> defined in org.jetbrains.kotlin.idea.test in file testUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [58:54] ==> public final val MoveKotlinDeclarationsHandlerTest.project: (Project..Project?)[MyPropertyDescriptor]
 
@@ -609,11 +609,11 @@ Inferred types:
 
 'canMove' @ [154:25] ==> public open fun canMove(elements: Array<out PsiElement>, targetContainer: PsiElement?): Boolean defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler[DeserializedSimpleFunctionDescriptor]
 
-'elements' @ [154:33] ==> val elements: List<{NavigatablePsiElement & PsiNamedElement}> defined in org.jetbrains.kotlin.idea.refactoring.move.MoveKotlinDeclarationsHandlerTest.testFileAndTopLevelDeclarations.<anonymous>[LocalVariableDescriptor]
+'elements' @ [154:33] ==> val elements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.move.MoveKotlinDeclarationsHandlerTest.testFileAndTopLevelDeclarations.<anonymous>[LocalVariableDescriptor]
 
-'toTypedArray' @ [154:42] ==> public inline fun <reified T> Collection<{NavigatablePsiElement & PsiNamedElement}>.toTypedArray(): Array<{NavigatablePsiElement & PsiNamedElement}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toTypedArray' @ [154:42] ==> public inline fun <reified T> Collection<PsiElement>.toTypedArray(): Array<PsiElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified T> -> {NavigatablePsiElement & PsiNamedElement}
+    <reified T> -> PsiElement
 
 'doTest' @ [157:31] ==> private final fun doTest(action: (rootDir: VirtualFile, handler: MoveKotlinDeclarationsHandler) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.move.MoveKotlinDeclarationsHandlerTest[SimpleFunctionDescriptorImpl]
 

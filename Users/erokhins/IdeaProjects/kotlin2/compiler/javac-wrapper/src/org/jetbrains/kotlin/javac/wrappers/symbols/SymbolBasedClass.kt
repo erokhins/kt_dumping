@@ -82,6 +82,8 @@ Inferred types:
 
 'this' @ [66:70] ==> <this> defined in org.jetbrains.kotlin.javac.wrappers.symbols.SymbolBasedClass.<get-supertypes>.<anonymous>[ReceiverParameterDescriptorImpl]
 
+'add' @ [66:76] ==> public abstract fun add(element: (TypeMirror..TypeMirror?)): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
+
 'mapTo' @ [68:18] ==> public inline fun <T, R, C : MutableCollection<in SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>>> Iterable<(TypeMirror..TypeMirror?)>.mapTo(destination: ArrayList<SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>> /* = ArrayList<SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>> */, transform: ((TypeMirror..TypeMirror?)) -> SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>): ArrayList<SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>> /* = ArrayList<SymbolBasedClassifierType<(TypeMirror..TypeMirror?)>> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (javax.lang.model.type.TypeMirror..javax.lang.model.type.TypeMirror?)
@@ -157,18 +159,20 @@ Inferred types:
     <T> -> SymbolBasedClass
     <K> -> Name
 
+'name' @ [79:41] ==> public abstract val name: Name defined in org.jetbrains.kotlin.load.java.structure.JavaClass[DeserializedPropertyDescriptor]
+
 'element' @ [82:17] ==> public final val element: TypeElement defined in org.jetbrains.kotlin.javac.wrappers.symbols.SymbolBasedClass[PropertyDescriptorImpl]
 
 'enclosingElement' @ [82:25] ==> public final val TypeElement.enclosingElement: (Element..Element?)[MyPropertyDescriptor]
 
-'let' @ [82:43] ==> @InlineOnly public inline fun <T, R> Element.let(block: (Element) -> SymbolBasedClass?): SymbolBasedClass? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [82:43] ==> @InlineOnly public inline fun <T, R> Element.let(block: (Element) -> JavaClass?): JavaClass? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Element
-    <R> -> SymbolBasedClass?
+    <R> -> JavaClass?
 
-'if (it.asType().kind != TypeKind.DECLARED) null else SymbolBasedClass(it as TypeElement, javac, file)' @ [83:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: SymbolBasedClass?, elseBranch: SymbolBasedClass?): SymbolBasedClass?[SimpleFunctionDescriptorImpl]
+'if (it.asType().kind != TypeKind.DECLARED) null else SymbolBasedClass(it as TypeElement, javac, file)' @ [83:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: JavaClass?, elseBranch: JavaClass?): JavaClass?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> SymbolBasedClass?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JavaClass?
 
 'it' @ [83:17] ==> value-parameter it: Element defined in org.jetbrains.kotlin.javac.wrappers.symbols.SymbolBasedClass.<get-outerClass>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -291,9 +295,9 @@ Inferred types:
 
 'keys' @ [114:30] ==> public abstract val keys: Set<Name> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 
-'lazy' @ [116:47] ==> public fun <T> lazy(initializer: () -> VirtualFile?): Lazy<VirtualFile?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [116:47] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> VirtualFile?
+    <T> -> T
 
 'file' @ [117:9] ==> public final val file: JavaFileObject? defined in org.jetbrains.kotlin.javac.wrappers.symbols.SymbolBasedClass[PropertyDescriptorImpl]
 

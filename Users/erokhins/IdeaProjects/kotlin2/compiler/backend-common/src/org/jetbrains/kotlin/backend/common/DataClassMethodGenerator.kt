@@ -1,7 +1,7 @@
 'getNotNull' @ [37:74] ==> @NotNull public open fun <K : (Any..Any?), V : (Any..Any?)> getNotNull(@NotNull p0: BindingContext, @NotNull p1: ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>, @NotNull p2: PsiElement): ClassDescriptor defined in org.jetbrains.kotlin.resolve.BindingContextUtils[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'bindingContext' @ [37:85] ==> private final val bindingContext: BindingContext defined in org.jetbrains.kotlin.backend.common.DataClassMethodGenerator[PropertyDescriptorImpl]
 
@@ -47,8 +47,8 @@ Inferred types:
 
 'get' @ [68:43] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>..ReadOnlySlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>?), p1: (ValueParameterDescriptor..ValueParameterDescriptor?)): FunctionDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ValueParameterDescriptor
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'DATA_CLASS_COMPONENT_FUNCTION' @ [68:62] ==> public final val DATA_CLASS_COMPONENT_FUNCTION: (WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>..WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -66,8 +66,8 @@ Inferred types:
 
 'get' @ [76:43] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(ClassDescriptor..ClassDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>..ReadOnlySlice<(ClassDescriptor..ClassDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>?), p1: (ClassDescriptor..ClassDescriptor?)): FunctionDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassDescriptor
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'DATA_CLASS_COPY_FUNCTION' @ [76:62] ==> public final val DATA_CLASS_COPY_FUNCTION: (WritableSlice<(ClassDescriptor..ClassDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -85,9 +85,13 @@ Inferred types:
 
 'KotlinBuiltIns' @ [82:44] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull p0: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
 
-'List' @ [82:70] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> Nothing): List<Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'isString' @ [82:60] ==> public open fun isString(@Nullable p0: KotlinType?): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
+
+'List' @ [82:70] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> ???): List<???> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Nothing
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@3d0413d9
+
+'isEmpty' @ [82:102] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
 'generateToStringMethod' @ [83:9] ==> protected abstract fun generateToStringMethod(function: FunctionDescriptor, properties: List<PropertyDescriptor>): Unit defined in org.jetbrains.kotlin.backend.common.DataClassMethodGenerator[SimpleFunctionDescriptorImpl]
 
@@ -101,9 +105,13 @@ Inferred types:
 
 'KotlinBuiltIns' @ [88:44] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull p0: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
 
-'List' @ [88:67] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> Nothing): List<Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'isInt' @ [88:60] ==> public open fun isInt(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
+
+'List' @ [88:67] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> ???): List<???> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Nothing
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@64a3c5cf
+
+'isEmpty' @ [88:99] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
 'generateHashCodeMethod' @ [89:9] ==> protected abstract fun generateHashCodeMethod(function: FunctionDescriptor, properties: List<PropertyDescriptor>): Unit defined in org.jetbrains.kotlin.backend.common.DataClassMethodGenerator[SimpleFunctionDescriptorImpl]
 
@@ -116,6 +124,8 @@ Inferred types:
 'classDescriptor' @ [93:44] ==> protected final val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.backend.common.DataClassMethodGenerator[PropertyDescriptorImpl]
 
 'KotlinBuiltIns' @ [94:44] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull p0: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
+
+'isBoolean' @ [94:60] ==> public open fun isBoolean(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 
 'parameters' @ [95:13] ==> value-parameter parameters: List<ValueParameterDescriptor> defined in org.jetbrains.kotlin.backend.common.DataClassMethodGenerator.generateDataClassEqualsIfNeeded.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -156,8 +166,8 @@ Inferred types:
 
 'get' @ [103:39] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>?), p1: (PsiElement..PsiElement?)): PropertyDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> PropertyDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'PRIMARY_CONSTRUCTOR_PARAMETER' @ [103:58] ==> public final val PRIMARY_CONSTRUCTOR_PARAMETER: (WritableSlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

@@ -74,11 +74,11 @@ Inferred types:
 
 'java' @ [52:31] ==> public val <T> KClass<out LexicalChainedScope>.java: Class<out LexicalChainedScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> LexicalChainedScope
+    <T> -> Captured(out LexicalChainedScope)
 
 'simpleName' @ [52:36] ==> public final val <T : (Any..Any?)> Class<out LexicalChainedScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LexicalChainedScope
+    <T : (Any..Any?)> -> Captured(out LexicalChainedScope)
 
 'kind' @ [52:54] ==> public open val kind: LexicalScopeKind defined in org.jetbrains.kotlin.resolve.scopes.LexicalChainedScope[PropertyDescriptorImpl]
 

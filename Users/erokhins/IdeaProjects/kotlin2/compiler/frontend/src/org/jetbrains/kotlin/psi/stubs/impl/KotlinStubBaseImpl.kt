@@ -10,11 +10,11 @@ Inferred types:
 
 'java' @ [36:41] ==> public val <T> KClass<out KotlinStubBaseImpl<T>>.java: Class<out KotlinStubBaseImpl<T>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinStubBaseImpl<T>
+    <T> -> Captured(out KotlinStubBaseImpl<T>)
 
 'interfaces' @ [36:46] ==> public final val <T : (Any..Any?)> Class<out KotlinStubBaseImpl<T>>.interfaces: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinStubBaseImpl<T>
+    <T : (Any..Any?)> -> Captured(out KotlinStubBaseImpl<T>)
 
 'single' @ [36:57] ==> public inline fun <T> Array<out (Class<*>..Class<*>?)>.single(predicate: ((Class<*>..Class<*>?)) -> Boolean): (Class<*>..Class<*>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -24,7 +24,7 @@ Inferred types:
 
 'name' @ [36:69] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'contains' @ [36:74] ==> public operator fun CharSequence.contains(other: CharSequence, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -85,7 +85,7 @@ Inferred types:
 
 'declaredMethods' @ [51:37] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredMethods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'filter' @ [51:53] ==> public inline fun <T> Array<out (Method..Method?)>.filter(predicate: ((Method..Method?)) -> Boolean): List<(Method..Method?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -103,7 +103,7 @@ Inferred types:
 
 'interfaces' @ [52:45] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.interfaces: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'baseInterface' @ [53:17] ==> val baseInterface: (Class<*>..Class<*>?) defined in org.jetbrains.kotlin.psi.stubs.impl.KotlinStubBaseImpl.collectProperties[LocalVariableDescriptor]
 

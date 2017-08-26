@@ -2,15 +2,9 @@
 Inferred types:
     <E : (JpsElement..JpsElement?)> -> JpsKotlinFacetModuleExtension
 
-'JpsKotlinFacetModuleExtension' @ [27:9] ==> public companion object defined in org.jetbrains.kotlin.jps.model.JpsKotlinFacetModuleExtension[FakeCallableDescriptorForObject]
-
 'KIND' @ [27:39] ==> public final val KIND: (JpsElementChildRoleBase<(JpsKotlinFacetModuleExtension..JpsKotlinFacetModuleExtension?)>..JpsElementChildRoleBase<(JpsKotlinFacetModuleExtension..JpsKotlinFacetModuleExtension?)>?) defined in org.jetbrains.kotlin.jps.model.JpsKotlinFacetModuleExtension.Companion[PropertyDescriptorImpl]
 
-'JpsKotlinFacetModuleExtension' @ [28:9] ==> public companion object defined in org.jetbrains.kotlin.jps.model.JpsKotlinFacetModuleExtension[FakeCallableDescriptorForObject]
-
 'FACET_TYPE_ID' @ [28:39] ==> public final val FACET_TYPE_ID: String defined in org.jetbrains.kotlin.jps.model.JpsKotlinFacetModuleExtension.Companion[PropertyDescriptorImpl]
-
-'JpsKotlinFacetModuleExtension' @ [29:9] ==> public companion object defined in org.jetbrains.kotlin.jps.model.JpsKotlinFacetModuleExtension[FakeCallableDescriptorForObject]
 
 'FACET_NAME' @ [29:39] ==> public final val FACET_NAME: String defined in org.jetbrains.kotlin.jps.model.JpsKotlinFacetModuleExtension.Companion[PropertyDescriptorImpl]
 

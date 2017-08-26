@@ -1,6 +1,6 @@
 '' @ [41:18] ==> private constructor HintType(desc: String, enabled: Boolean) defined in org.jetbrains.kotlin.idea.parameterInfo.HintType[ClassConstructorDescriptorImpl]
 
-'providePropertyTypeHint' @ [43:20] ==> public fun providePropertyTypeHint(elem: PsiElement): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'providePropertyTypeHint' @ [43:20] ==> public fun providePropertyTypeHint(elem: PsiElement): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo in file TypeHints.kt[SimpleFunctionDescriptorImpl]
 
 'elem' @ [43:44] ==> value-parameter elem: PsiElement defined in org.jetbrains.kotlin.idea.parameterInfo.HintType.PROPERTY_HINT.provideHints[ValueParameterDescriptorImpl]
 
@@ -8,7 +8,7 @@
 
 'elem' @ [46:86] ==> value-parameter elem: PsiElement defined in org.jetbrains.kotlin.idea.parameterInfo.HintType.PROPERTY_HINT.isApplicable[ValueParameterDescriptorImpl]
 
-'getReturnTypeReference' @ [46:91] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getReturnTypeReference' @ [46:91] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [46:127] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -18,7 +18,7 @@
 
 '' @ [49:24] ==> private constructor HintType(desc: String, enabled: Boolean) defined in org.jetbrains.kotlin.idea.parameterInfo.HintType[ClassConstructorDescriptorImpl]
 
-'providePropertyTypeHint' @ [51:20] ==> public fun providePropertyTypeHint(elem: PsiElement): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'providePropertyTypeHint' @ [51:20] ==> public fun providePropertyTypeHint(elem: PsiElement): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo in file TypeHints.kt[SimpleFunctionDescriptorImpl]
 
 'elem' @ [51:44] ==> value-parameter elem: PsiElement defined in org.jetbrains.kotlin.idea.parameterInfo.HintType.LOCAL_VARIABLE_HINT.provideHints[ValueParameterDescriptorImpl]
 
@@ -26,7 +26,7 @@
 
 'elem' @ [54:87] ==> value-parameter elem: PsiElement defined in org.jetbrains.kotlin.idea.parameterInfo.HintType.LOCAL_VARIABLE_HINT.isApplicable[ValueParameterDescriptorImpl]
 
-'getReturnTypeReference' @ [54:92] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getReturnTypeReference' @ [54:92] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'elem' @ [54:128] ==> value-parameter elem: PsiElement defined in org.jetbrains.kotlin.idea.parameterInfo.HintType.LOCAL_VARIABLE_HINT.isApplicable[ValueParameterDescriptorImpl]
 
@@ -57,12 +57,12 @@ Inferred types:
 
 'valueParameterList' @ [62:27] ==> public final val KtNamedFunction.valueParameterList: KtParameterList?[MyPropertyDescriptor]
 
-'let' @ [62:47] ==> @InlineOnly public inline fun <T, R> KtParameterList.let(block: (KtParameterList) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [62:47] ==> @InlineOnly public inline fun <T, R> KtParameterList.let(block: (KtParameterList) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtParameterList
-    <R> -> Nothing?
+    <R> -> Nothing
 
-'provideTypeHint' @ [63:28] ==> public fun provideTypeHint(element: KtCallableDeclaration, offset: Int): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'provideTypeHint' @ [63:28] ==> public fun provideTypeHint(element: KtCallableDeclaration, offset: Int): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo in file TypeHints.kt[SimpleFunctionDescriptorImpl]
 
 'namedFunc' @ [63:44] ==> value-parameter namedFunc: KtNamedFunction defined in org.jetbrains.kotlin.idea.parameterInfo.HintType.FUNCTION_HINT.provideHints.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -99,12 +99,12 @@ Inferred types:
 
 'nameIdentifier' @ [74:23] ==> public final val KtParameter.nameIdentifier: PsiElement?[MyPropertyDescriptor]
 
-'let' @ [74:39] ==> @InlineOnly public inline fun <T, R> PsiElement.let(block: (PsiElement) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [74:39] ==> @InlineOnly public inline fun <T, R> PsiElement.let(block: (PsiElement) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiElement
-    <R> -> Nothing?
+    <R> -> Nothing
 
-'provideTypeHint' @ [75:28] ==> public fun provideTypeHint(element: KtCallableDeclaration, offset: Int): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'provideTypeHint' @ [75:28] ==> public fun provideTypeHint(element: KtCallableDeclaration, offset: Int): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo in file TypeHints.kt[SimpleFunctionDescriptorImpl]
 
 'param' @ [75:44] ==> value-parameter param: KtParameter defined in org.jetbrains.kotlin.idea.parameterInfo.HintType.PARAMETER_TYPE_HINT.provideHints.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -137,7 +137,7 @@ Inferred types:
     <T> -> KtCallExpression
     <R> -> Nothing
 
-'provideArgumentNameHints' @ [86:24] ==> public fun provideArgumentNameHints(element: KtCallExpression): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'provideArgumentNameHints' @ [86:24] ==> public fun provideArgumentNameHints(element: KtCallExpression): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo in file ArgumentNameHints.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [86:49] ==> value-parameter it: KtCallExpression defined in org.jetbrains.kotlin.idea.parameterInfo.HintType.PARAMETER_HINT.provideHints.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -218,7 +218,9 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'HintType' @ [123:24] ==> public companion object defined in org.jetbrains.kotlin.idea.parameterInfo.HintType[FakeCallableDescriptorForObject]
+'?:' @ [123:24] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: HintType?, right: HintType): HintType[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> HintType
 
 'resolve' @ [123:33] ==> public final fun resolve(elem: PsiElement): HintType? defined in org.jetbrains.kotlin.idea.parameterInfo.HintType.Companion[SimpleFunctionDescriptorImpl]
 
@@ -254,7 +256,9 @@ Inferred types:
 
 'option' @ [126:50] ==> public final val option: Option defined in org.jetbrains.kotlin.idea.parameterInfo.HintType[PropertyDescriptorImpl]
 
-'HintType' @ [130:77] ==> public companion object defined in org.jetbrains.kotlin.idea.parameterInfo.HintType[FakeCallableDescriptorForObject]
+'?:' @ [130:77] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<InlayInfo>?, right: List<InlayInfo>): List<InlayInfo>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<InlayInfo>
 
 'resolveToEnabled' @ [130:86] ==> public final fun resolveToEnabled(elem: PsiElement?): HintType? defined in org.jetbrains.kotlin.idea.parameterInfo.HintType.Companion[SimpleFunctionDescriptorImpl]
 
@@ -315,7 +319,7 @@ Inferred types:
 
 'candidateDescriptor' @ [144:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCallee' @ [145:13] ==> val resolvedCallee: CallableDescriptor? defined in org.jetbrains.kotlin.idea.parameterInfo.KotlinInlayParameterHintsProvider.getMethodInfo[LocalVariableDescriptor]
 
@@ -346,7 +350,7 @@ Inferred types:
 
 'valueArguments' @ [150:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'mapNotNull' @ [151:22] ==> public inline fun <K, V, R : Any> Map<out (ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>.mapNotNull(transform: (Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>) -> Name?): List<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -390,6 +394,8 @@ Inferred types:
     <R> -> String
 
 'Name' @ [155:26] ==> private constructor Name(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.name.Name[JavaClassConstructorDescriptor]
+
+'asString' @ [155:32] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
 'MethodInfo' @ [156:29] ==> public constructor MethodInfo(fullyQualifiedName: String, paramNames: List<String>) defined in com.intellij.codeInsight.hints.HintInfo.MethodInfo[DeserializedClassConstructorDescriptor]
 

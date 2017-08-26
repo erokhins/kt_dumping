@@ -6,7 +6,7 @@
 
 'getInstance' @ [81:26] ==> @NotNull public open fun getInstance(@NotNull @NonNls p0: String): Logger defined in com.intellij.openapi.diagnostic.Logger[JavaMethodDescriptor]
 
-'ClassCondition' @ [87:21] ==> public fun ClassCondition(function: ((String..String?)) -> Boolean): ClassCondition defined in org.jetbrains.kotlin.preloading[SimpleFunctionDescriptorImpl]
+'ClassCondition' @ [87:21] ==> public fun ClassCondition(function: ((String..String?)) -> Boolean): ClassCondition defined in org.jetbrains.kotlin.preloading[SamConstructorDescriptorImpl]
 
 'className' @ [88:17] ==> value-parameter className: (String..String?) defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion.<get-classesToLoadByParent>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -209,7 +209,9 @@ Inferred types:
 
 'exists' @ [155:27] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
-'JvmBuildMetaInfo' @ [159:29] ==> public companion object defined in org.jetbrains.kotlin.build.JvmBuildMetaInfo[FakeCallableDescriptorForObject]
+'?:' @ [159:29] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: JvmBuildMetaInfo?, right: JvmBuildMetaInfo): JvmBuildMetaInfo[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> JvmBuildMetaInfo
 
 'deserializeFromString' @ [159:46] ==> public final fun deserializeFromString(str: String): JvmBuildMetaInfo? defined in org.jetbrains.kotlin.build.JvmBuildMetaInfo.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -232,8 +234,6 @@ Inferred types:
 'languageVersionString' @ [166:96] ==> public final val languageVersionString: String defined in org.jetbrains.kotlin.build.JvmBuildMetaInfo[DeserializedPropertyDescriptor]
 
 'lastBuildLangVersion' @ [168:21] ==> val lastBuildLangVersion: LanguageVersion? defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.checkCachesVersions[LocalVariableDescriptor]
-
-'LanguageVersion' @ [168:45] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_0' @ [168:61] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
@@ -453,7 +453,7 @@ Inferred types:
 
 '!' @ [246:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'hasKotlinDirtyOrRemovedFiles' @ [246:14] ==> private fun hasKotlinDirtyOrRemovedFiles(dirtyFilesHolder: DirtyFilesHolder<JavaSourceRootDescriptor, ModuleBuildTarget>, chunk: ModuleChunk): Boolean defined in org.jetbrains.kotlin.jps.build[SimpleFunctionDescriptorImpl]
+'hasKotlinDirtyOrRemovedFiles' @ [246:14] ==> private fun hasKotlinDirtyOrRemovedFiles(dirtyFilesHolder: DirtyFilesHolder<JavaSourceRootDescriptor, ModuleBuildTarget>, chunk: ModuleChunk): Boolean defined in org.jetbrains.kotlin.jps.build in file KotlinBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'dirtyFilesHolder' @ [246:43] ==> value-parameter dirtyFilesHolder: DirtyFilesHolder<JavaSourceRootDescriptor, ModuleBuildTarget> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.doBuild[ValueParameterDescriptorImpl]
 
@@ -525,7 +525,7 @@ Inferred types:
 
 'project' @ [262:46] ==> val project: (JpsProject..JpsProject?) defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.doBuild[LocalVariableDescriptor]
 
-'getIncrementalCaches' @ [263:33] ==> private fun getIncrementalCaches(chunk: ModuleChunk, context: CompileContext): Map<ModuleBuildTarget, JpsIncrementalCacheImpl> defined in org.jetbrains.kotlin.jps.build[SimpleFunctionDescriptorImpl]
+'getIncrementalCaches' @ [263:33] ==> private fun getIncrementalCaches(chunk: ModuleChunk, context: CompileContext): Map<ModuleBuildTarget, JpsIncrementalCacheImpl> defined in org.jetbrains.kotlin.jps.build in file KotlinBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'chunk' @ [263:54] ==> value-parameter chunk: ModuleChunk defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.doBuild[ValueParameterDescriptorImpl]
 
@@ -555,7 +555,7 @@ Inferred types:
 
 'version' @ [268:13] ==> @Argument public final var version: Boolean defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[DeserializedPropertyDescriptor]
 
-'getAllCompiledFilesContainer' @ [271:32] ==> private fun getAllCompiledFilesContainer(context: CompileContext): MutableSet<File> defined in org.jetbrains.kotlin.jps.build[SimpleFunctionDescriptorImpl]
+'getAllCompiledFilesContainer' @ [271:32] ==> private fun getAllCompiledFilesContainer(context: CompileContext): MutableSet<File> defined in org.jetbrains.kotlin.jps.build in file KotlinBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [271:61] ==> value-parameter context: CompileContext defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.doBuild[ValueParameterDescriptorImpl]
 
@@ -765,7 +765,7 @@ Inferred types:
 
 'changesInfo' @ [331:9] ==> val changesInfo: CompilationResult defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.doBuild[LocalVariableDescriptor]
 
-'processChangesUsingLookups' @ [331:21] ==> private fun CompilationResult.processChangesUsingLookups(compiledFiles: Set<File>, dataManager: BuildDataManager, fsOperations: FSOperationsHelper, caches: Iterable<IncrementalCacheImpl<ModuleBuildTarget>>): Unit defined in org.jetbrains.kotlin.jps.build[SimpleFunctionDescriptorImpl]
+'processChangesUsingLookups' @ [331:21] ==> private fun CompilationResult.processChangesUsingLookups(compiledFiles: Set<File>, dataManager: BuildDataManager, fsOperations: FSOperationsHelper, caches: Iterable<IncrementalCacheImpl<ModuleBuildTarget>>): Unit defined in org.jetbrains.kotlin.jps.build in file KotlinBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'filesToCompile' @ [331:48] ==> val filesToCompile: MultiMap<(ModuleBuildTarget..ModuleBuildTarget?), (File..File?)> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.doBuild[LocalVariableDescriptor]
 
@@ -951,7 +951,7 @@ Inferred types:
 
 'getStorage' @ [370:33] ==> @NotNull public open fun <S : (StorageOwner..StorageOwner?)> getStorage(@NotNull p0: BuildTarget<*>, @NotNull p1: StorageProvider<(JpsLookupStorage..JpsLookupStorage?)>): JpsLookupStorage defined in org.jetbrains.jps.incremental.storage.BuildDataManager[JavaMethodDescriptor]
 Inferred types:
-    <S : (StorageOwner..StorageOwner?)> -> JpsLookupStorage
+    <S : (StorageOwner..StorageOwner?)> -> (org.jetbrains.kotlin.jps.incremental.JpsLookupStorage..org.jetbrains.kotlin.jps.incremental.JpsLookupStorage?)
 
 'KotlinDataContainerTarget' @ [370:44] ==> public object KotlinDataContainerTarget : BuildTarget<BuildRootDescriptor> defined in org.jetbrains.kotlin.jps.incremental in file KotlinDataContainerTargetType.kt[FakeCallableDescriptorForObject]
 
@@ -1027,7 +1027,7 @@ Inferred types:
 
 'getStorage' @ [395:33] ==> @NotNull public open fun <S : (StorageOwner..StorageOwner?)> getStorage(@NotNull p0: BuildTarget<*>, @NotNull p1: StorageProvider<(JpsLookupStorage..JpsLookupStorage?)>): JpsLookupStorage defined in org.jetbrains.jps.incremental.storage.BuildDataManager[JavaMethodDescriptor]
 Inferred types:
-    <S : (StorageOwner..StorageOwner?)> -> JpsLookupStorage
+    <S : (StorageOwner..StorageOwner?)> -> (org.jetbrains.kotlin.jps.incremental.JpsLookupStorage..org.jetbrains.kotlin.jps.incremental.JpsLookupStorage?)
 
 'KotlinDataContainerTarget' @ [395:44] ==> public object KotlinDataContainerTarget : BuildTarget<BuildRootDescriptor> defined in org.jetbrains.kotlin.jps.incremental in file KotlinDataContainerTargetType.kt[FakeCallableDescriptorForObject]
 
@@ -1184,7 +1184,9 @@ Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
     <R> -> File
 
-'cache' @ [440:17] ==> val cache: IncrementalCacheImpl<out Any?> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.doCompileModuleChunk[LocalVariableDescriptor]
+'File' @ [439:116] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
+'cache' @ [440:17] ==> val cache: IncrementalCacheImpl<*> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.doCompileModuleChunk[LocalVariableDescriptor]
 
 'markOutputClassesDirty' @ [440:23] ==> public final fun markOutputClassesDirty(removedAndCompiledSources: List<File>): Unit defined in org.jetbrains.kotlin.incremental.IncrementalCacheImpl[DeserializedSimpleFunctionDescriptor]
 
@@ -1214,7 +1216,7 @@ Inferred types:
 
 'load' @ [448:48] ==> public open fun <S : (Any..Any?)> load(p0: (Class<(KotlinJpsCompilerArgumentsProvider..KotlinJpsCompilerArgumentsProvider?)>..Class<(KotlinJpsCompilerArgumentsProvider..KotlinJpsCompilerArgumentsProvider?)>?)): (ServiceLoader<(KotlinJpsCompilerArgumentsProvider..KotlinJpsCompilerArgumentsProvider?)>..ServiceLoader<(KotlinJpsCompilerArgumentsProvider..KotlinJpsCompilerArgumentsProvider?)>?) defined in java.util.ServiceLoader[JavaMethodDescriptor]
 Inferred types:
-    <S : (Any..Any?)> -> KotlinJpsCompilerArgumentsProvider
+    <S : (Any..Any?)> -> (org.jetbrains.kotlin.jps.build.KotlinJpsCompilerArgumentsProvider..org.jetbrains.kotlin.jps.build.KotlinJpsCompilerArgumentsProvider?)
 
 'java' @ [448:95] ==> public val <T> KClass<KotlinJpsCompilerArgumentsProvider>.java: Class<KotlinJpsCompilerArgumentsProvider> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1262,13 +1264,13 @@ Inferred types:
 
 'argumentProvider' @ [456:41] ==> val argumentProvider: (KotlinJpsCompilerArgumentsProvider..KotlinJpsCompilerArgumentsProvider?) defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.doCompileModuleChunk[LocalVariableDescriptor]
 
-'java' @ [456:65] ==> public val <T> KClass<out KotlinJpsCompilerArgumentsProvider>.java: Class<out KotlinJpsCompilerArgumentsProvider> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [456:65] ==> public val <T> KClass<out (KotlinJpsCompilerArgumentsProvider..KotlinJpsCompilerArgumentsProvider?)>.java: Class<out (KotlinJpsCompilerArgumentsProvider..KotlinJpsCompilerArgumentsProvider?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinJpsCompilerArgumentsProvider
+    <T> -> Captured(out (org.jetbrains.kotlin.jps.build.KotlinJpsCompilerArgumentsProvider..org.jetbrains.kotlin.jps.build.KotlinJpsCompilerArgumentsProvider?))
 
-'simpleName' @ [456:70] ==> public final val <T : (Any..Any?)> Class<out KotlinJpsCompilerArgumentsProvider>.simpleName: (String..String?)[MyPropertyDescriptor]
+'simpleName' @ [456:70] ==> public final val <T : (Any..Any?)> Class<out (KotlinJpsCompilerArgumentsProvider..KotlinJpsCompilerArgumentsProvider?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinJpsCompilerArgumentsProvider
+    <T : (Any..Any?)> -> Captured(out (org.jetbrains.kotlin.jps.build.KotlinJpsCompilerArgumentsProvider..org.jetbrains.kotlin.jps.build.KotlinJpsCompilerArgumentsProvider?))
 
 'compileToJvm' @ [459:16] ==> private final fun compileToJvm(allCompiledFiles: MutableSet<File>, chunk: ModuleChunk, commonArguments: CommonCompilerArguments, context: CompileContext, dirtyFilesHolder: DirtyFilesHolder<JavaSourceRootDescriptor, ModuleBuildTarget>, environment: JpsCompilerEnvironment, filesToCompile: MultiMap<ModuleBuildTarget, File>): OutputItemsCollector? defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[SimpleFunctionDescriptorImpl]
 
@@ -1290,8 +1292,6 @@ Inferred types:
 Inferred types:
     <T> -> Builder
     <R> -> Services
-
-'Services' @ [468:37] ==> public companion object defined in org.jetbrains.kotlin.config.Services[FakeCallableDescriptorForObject]
 
 'Builder' @ [468:46] ==> public constructor Builder() defined in org.jetbrains.kotlin.config.Services.Builder[DeserializedClassConstructorDescriptor]
 
@@ -1409,6 +1409,8 @@ Inferred types:
 Inferred types:
     <T> -> File
 
+'exists' @ [508:53] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
+
 'jar' @ [509:13] ==> val jar: File? defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.computeKotlinPathsForJpsPlugin[LocalVariableDescriptor]
 
 'name' @ [509:18] ==> public final val File.name: (String..String?)[MyPropertyDescriptor]
@@ -1426,8 +1428,6 @@ Inferred types:
 'File' @ [511:43] ==> public constructor File(p0: (File..File?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'pluginHome' @ [511:48] ==> val pluginHome: (File..File?) defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.computeKotlinPathsForJpsPlugin[LocalVariableDescriptor]
-
-'PathUtil' @ [511:60] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'HOME_FOLDER_NAME' @ [511:69] ==> public const final val HOME_FOLDER_NAME: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
@@ -1594,7 +1594,7 @@ Inferred types:
 
 'getRemovedFiles' @ [566:30] ==> @NotNull public abstract fun getRemovedFiles(@NotNull p0: ModuleBuildTarget): (MutableCollection<(String..String?)>..Collection<(String..String?)>) defined in org.jetbrains.jps.builders.DirtyFilesHolder[JavaMethodDescriptor]
 
-'it' @ [566:46] ==> value-parameter it: ModuleBuildTarget defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [566:46] ==> value-parameter it: (ModuleBuildTarget..ModuleBuildTarget?) defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings.<anonymous>[ValueParameterDescriptorImpl]
 
 'mapTo' @ [566:50] ==> public inline fun <T, R, C : MutableCollection<in File>> Iterable<(String..String?)>.mapTo(destination: HashSet<File>, transform: ((String..String?)) -> File): HashSet<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1604,6 +1604,8 @@ Inferred types:
 
 'files' @ [566:56] ==> val files: HashSet<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings.<anonymous>[LocalVariableDescriptor]
 
+'File' @ [566:65] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'files' @ [567:13] ==> val files: HashSet<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings.<anonymous>[LocalVariableDescriptor]
 
 'addAll' @ [567:19] ==> public open fun addAll(elements: Collection<File>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
@@ -1612,7 +1614,7 @@ Inferred types:
 
 'get' @ [567:41] ==> @NotNull public open operator fun get(p0: (ModuleBuildTarget..ModuleBuildTarget?)): (MutableCollection<(File..File?)>..Collection<(File..File?)>) defined in com.intellij.util.containers.MultiMap[JavaMethodDescriptor]
 
-'it' @ [567:45] ==> value-parameter it: ModuleBuildTarget defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [567:45] ==> value-parameter it: (ModuleBuildTarget..ModuleBuildTarget?) defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings.<anonymous>[ValueParameterDescriptorImpl]
 
 'files' @ [568:13] ==> val files: HashSet<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings.<anonymous>[LocalVariableDescriptor]
 
@@ -1670,11 +1672,11 @@ Inferred types:
 
 'THashSet' @ [582:31] ==> public constructor THashSet<E : (Any..Any?)>(p0: (TObjectHashingStrategy<(File..File?)>..TObjectHashingStrategy<(File..File?)>?)) defined in gnu.trove.THashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> File
+    <E : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'FILE_HASHING_STRATEGY' @ [582:49] ==> public final val FILE_HASHING_STRATEGY: (TObjectHashingStrategy<(File..File?)>..TObjectHashingStrategy<(File..File?)>?) defined in com.intellij.openapi.util.io.FileUtil[JavaPropertyDescriptor]
 
-'sourceFiles' @ [583:13] ==> val sourceFiles: THashSet<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
+'sourceFiles' @ [583:13] ==> val sourceFiles: THashSet<(File..File?)> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
 
 'addAll' @ [583:25] ==> public open fun addAll(elements: Collection<(File..File?)>): Boolean defined in gnu.trove.THashSet[JavaMethodDescriptor]
 
@@ -1682,7 +1684,7 @@ Inferred types:
 
 'generatedClass' @ [583:50] ==> val generatedClass: GeneratedJvmClass<ModuleBuildTarget> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
 
-'sourceFiles' @ [584:13] ==> val sourceFiles: THashSet<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
+'sourceFiles' @ [584:13] ==> val sourceFiles: THashSet<(File..File?)> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
 
 'removeAll' @ [584:25] ==> public open fun removeAll(elements: Collection<(File..File?)>): Boolean defined in gnu.trove.THashSet[JavaMethodDescriptor]
 
@@ -1696,7 +1698,7 @@ Inferred types:
 Inferred types:
     <T> -> (java.io.File..java.io.File?)
 
-'sourceFiles' @ [585:13] ==> val sourceFiles: THashSet<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
+'sourceFiles' @ [585:13] ==> val sourceFiles: THashSet<(File..File?)> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
 
 'addAll' @ [585:25] ==> public open fun addAll(elements: Collection<(File..File?)>): Boolean defined in gnu.trove.THashSet[JavaMethodDescriptor]
 
@@ -1716,7 +1718,7 @@ Inferred types:
 
 'canonicalPath' @ [588:80] ==> public final val File.canonicalPath: (String..String?)[MyPropertyDescriptor]
 
-'sourceFiles' @ [589:21] ==> val sourceFiles: THashSet<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
+'sourceFiles' @ [589:21] ==> val sourceFiles: THashSet<(File..File?)> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
 
 'map' @ [589:33] ==> public inline fun <T, R> Iterable<(File..File?)>.map(transform: ((File..File?)) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1741,9 +1743,9 @@ Inferred types:
 
 'values' @ [594:42] ==> @NotNull public open fun values(): (MutableCollection<out (File..File?)>..Collection<(File..File?)>) defined in com.intellij.util.containers.MultiMap[JavaMethodDescriptor]
 
-'if (compilationErrors) listOf<File>() else allCompiled' @ [595:36] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Collection<File>, elseBranch: Collection<File>): Collection<File>[SimpleFunctionDescriptorImpl]
+'if (compilationErrors) listOf<File>() else allCompiled' @ [595:36] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Collection<File>..Collection<(File..File?)>), elseBranch: (Collection<File>..Collection<(File..File?)>)): (Collection<File>..Collection<(File..File?)>)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Collection<File>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.Collection<java.io.File>..kotlin.collections.Collection<(java.io.File..java.io.File?)>)
 
 'compilationErrors' @ [595:40] ==> value-parameter compilationErrors: Boolean defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[ValueParameterDescriptorImpl]
 
@@ -1763,7 +1765,7 @@ Inferred types:
 
 'context' @ [598:54] ==> value-parameter context: CompileContext defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[ValueParameterDescriptorImpl]
 
-'successfullyCompiled' @ [598:63] ==> val successfullyCompiled: Collection<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
+'successfullyCompiled' @ [598:63] ==> val successfullyCompiled: (Collection<File>..Collection<(File..File?)>) defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateJavaMappings[LocalVariableDescriptor]
 
 'generatedFiles' @ [602:31] ==> value-parameter generatedFiles: List<GeneratedFile<ModuleBuildTarget>> defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.registerOutputItems[ValueParameterDescriptorImpl]
 
@@ -1889,13 +1891,13 @@ Inferred types:
 
 'java' @ [649:151] ==> public val <T> KClass<out LookupTracker>.java: Class<out LookupTracker> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> LookupTracker
+    <T> -> Captured(out LookupTracker)
 
 'dataManager' @ [651:29] ==> value-parameter dataManager: BuildDataManager defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.updateLookupStorage[ValueParameterDescriptorImpl]
 
 'getStorage' @ [651:41] ==> @NotNull public open fun <S : (StorageOwner..StorageOwner?)> getStorage(@NotNull p0: BuildTarget<*>, @NotNull p1: StorageProvider<(JpsLookupStorage..JpsLookupStorage?)>): JpsLookupStorage defined in org.jetbrains.jps.incremental.storage.BuildDataManager[JavaMethodDescriptor]
 Inferred types:
-    <S : (StorageOwner..StorageOwner?)> -> JpsLookupStorage
+    <S : (StorageOwner..StorageOwner?)> -> (org.jetbrains.kotlin.jps.incremental.JpsLookupStorage..org.jetbrains.kotlin.jps.incremental.JpsLookupStorage?)
 
 'KotlinDataContainerTarget' @ [651:52] ==> public object KotlinDataContainerTarget : BuildTarget<BuildRootDescriptor> defined in org.jetbrains.kotlin.jps.incremental in file KotlinDataContainerTargetType.kt[FakeCallableDescriptorForObject]
 
@@ -2204,7 +2206,7 @@ Inferred types:
 
 'values' @ [737:48] ==> @NotNull public open fun values(): (MutableCollection<out (File..File?)>..Collection<(File..File?)>) defined in com.intellij.util.containers.MultiMap[JavaMethodDescriptor]
 
-'getProcessedTargetsWithRemovedFilesContainer' @ [739:43] ==> private fun getProcessedTargetsWithRemovedFilesContainer(context: CompileContext): MutableSet<ModuleBuildTarget> defined in org.jetbrains.kotlin.jps.build[SimpleFunctionDescriptorImpl]
+'getProcessedTargetsWithRemovedFilesContainer' @ [739:43] ==> private fun getProcessedTargetsWithRemovedFilesContainer(context: CompileContext): MutableSet<ModuleBuildTarget> defined in org.jetbrains.kotlin.jps.build in file KotlinBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [739:88] ==> value-parameter context: CompileContext defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.compileToJvm[ValueParameterDescriptorImpl]
 
@@ -2444,8 +2446,6 @@ Inferred types:
 
 'column' @ [795:96] ==> public final val column: Int defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageLocation[DeserializedPropertyDescriptor]
 
-'KotlinBuilder' @ [796:17] ==> public companion object defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[FakeCallableDescriptorForObject]
-
 'LOG' @ [796:31] ==> public final val LOG: Logger defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion[PropertyDescriptorImpl]
 
 'debug' @ [796:35] ==> public abstract fun debug(@NonNls p0: (String..String?)): Unit defined in com.intellij.openapi.diagnostic.Logger[JavaMethodDescriptor]
@@ -2512,7 +2512,7 @@ Inferred types:
 
 'getStorage' @ [832:37] ==> @NotNull public open fun <S : (StorageOwner..StorageOwner?)> getStorage(@NotNull p0: BuildTarget<*>, @NotNull p1: StorageProvider<(JpsLookupStorage..JpsLookupStorage?)>): JpsLookupStorage defined in org.jetbrains.jps.incremental.storage.BuildDataManager[JavaMethodDescriptor]
 Inferred types:
-    <S : (StorageOwner..StorageOwner?)> -> JpsLookupStorage
+    <S : (StorageOwner..StorageOwner?)> -> (org.jetbrains.kotlin.jps.incremental.JpsLookupStorage..org.jetbrains.kotlin.jps.incremental.JpsLookupStorage?)
 
 'KotlinDataContainerTarget' @ [832:48] ==> public object KotlinDataContainerTarget : BuildTarget<BuildRootDescriptor> defined in org.jetbrains.kotlin.jps.incremental in file KotlinDataContainerTargetType.kt[FakeCallableDescriptorForObject]
 
@@ -2597,7 +2597,7 @@ Inferred types:
 
 'testLookupTracker' @ [851:12] ==> val testLookupTracker: LookupTracker defined in org.jetbrains.kotlin.jps.build.getLookupTracker[LocalVariableDescriptor]
 
-'getDependentTargets' @ [855:28] ==> public fun getDependentTargets(compilingChunk: ModuleChunk, context: CompileContext): Set<ModuleBuildTarget> defined in org.jetbrains.kotlin.jps.build[SimpleFunctionDescriptorImpl]
+'getDependentTargets' @ [855:28] ==> public fun getDependentTargets(compilingChunk: ModuleChunk, context: CompileContext): Set<ModuleBuildTarget> defined in org.jetbrains.kotlin.jps.build in file KotlinBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'chunk' @ [855:48] ==> value-parameter chunk: ModuleChunk defined in org.jetbrains.kotlin.jps.build.getIncrementalCaches[ValueParameterDescriptorImpl]
 
@@ -2677,7 +2677,7 @@ Inferred types:
 
 'isTests' @ [878:78] ==> public final val ModuleBuildTarget.isTests: Boolean[MyPropertyDescriptor]
 
-'getDependenciesRecursively' @ [880:28] ==> private fun getDependenciesRecursively(module: JpsModule, kind: JpsJavaClasspathKind): Set<JpsModule> defined in org.jetbrains.kotlin.jps.build[SimpleFunctionDescriptorImpl]
+'getDependenciesRecursively' @ [880:28] ==> private fun getDependenciesRecursively(module: JpsModule, kind: JpsJavaClasspathKind): Set<JpsModule> defined in org.jetbrains.kotlin.jps.build in file KotlinBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'target' @ [880:55] ==> value-parameter target: BuildTarget<*> defined in org.jetbrains.kotlin.jps.build.getDependentTargets.dependsOnCompilingChunk[ValueParameterDescriptorImpl]
 
@@ -2687,7 +2687,7 @@ Inferred types:
 
 'intersects' @ [881:30] ==> @Contract public open fun <T : (Any..Any?)> intersects(@NotNull p0: (MutableCollection<out (JpsModule..JpsModule?)>..Collection<(JpsModule..JpsModule?)>), @NotNull p1: (MutableCollection<out (JpsModule..JpsModule?)>..Collection<(JpsModule..JpsModule?)>)): Boolean defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JpsModule
+    <T : (Any..Any?)> -> (org.jetbrains.jps.model.module.JpsModule..org.jetbrains.jps.model.module.JpsModule?)
 
 'dependencies' @ [881:41] ==> val dependencies: Set<JpsModule> defined in org.jetbrains.kotlin.jps.build.getDependentTargets.dependsOnCompilingChunk[LocalVariableDescriptor]
 
@@ -2735,6 +2735,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.jps.builders.BuildTarget<*>..org.jetbrains.jps.builders.BuildTarget<*>?)
 
+'dependsOnCompilingChunk' @ [894:43] ==> local final fun dependsOnCompilingChunk(target: BuildTarget<*>): Boolean defined in org.jetbrains.kotlin.jps.build.getDependentTargets[SimpleFunctionDescriptorImpl]
+
 'dependentTargets' @ [896:9] ==> val dependentTargets: HashSet<ModuleBuildTarget> defined in org.jetbrains.kotlin.jps.build.getDependentTargets[LocalVariableDescriptor]
 
 'addAll' @ [896:26] ==> public open fun addAll(elements: Collection<ModuleBuildTarget>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
@@ -2777,7 +2779,7 @@ Inferred types:
 
 'THashSet' @ [910:28] ==> public constructor THashSet<E : (Any..Any?)>(p0: (TObjectHashingStrategy<(File..File?)>..TObjectHashingStrategy<(File..File?)>?)) defined in gnu.trove.THashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> File
+    <E : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'FILE_HASHING_STRATEGY' @ [910:46] ==> public final val FILE_HASHING_STRATEGY: (TObjectHashingStrategy<(File..File?)>..TObjectHashingStrategy<(File..File?)>?) defined in com.intellij.openapi.util.io.FileUtil[JavaPropertyDescriptor]
 
@@ -2869,8 +2871,6 @@ Inferred types:
 'getTargetDataRoot' @ [939:36] ==> public abstract fun getTargetDataRoot(p0: (BuildTarget<*>..BuildTarget<*>?)): (File..File?) defined in org.jetbrains.jps.builders.storage.BuildDataPaths[JavaMethodDescriptor]
 
 'target' @ [939:54] ==> value-parameter target: ModuleBuildTarget defined in org.jetbrains.kotlin.jps.build.jvmBuildMetaInfoFile[ValueParameterDescriptorImpl]
-
-'KotlinBuilder' @ [939:63] ==> public companion object defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[FakeCallableDescriptorForObject]
 
 'JVM_BUILD_META_INFO_FILE_NAME' @ [939:77] ==> public const final val JVM_BUILD_META_INFO_FILE_NAME: String defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion[PropertyDescriptorImpl]
 

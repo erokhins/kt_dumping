@@ -8,8 +8,6 @@ Inferred types:
 
 'occurrencesToReplace' @ [62:9] ==> value-parameter occurrencesToReplace: Array<KtExpression> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinVariableInplaceIntroducer.<init>[ValueParameterDescriptorImpl]
 
-'KotlinIntroduceVariableHandler' @ [63:9] ==> public object KotlinIntroduceVariableHandler : RefactoringActionHandler defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable in file KotlinIntroduceVariableHandler.kt[FakeCallableDescriptorForObject]
-
 'INTRODUCE_VARIABLE' @ [63:40] ==> public final val INTRODUCE_VARIABLE: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler[PropertyDescriptorImpl]
 
 'project' @ [64:9] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinVariableInplaceIntroducer.<init>[ValueParameterDescriptorImpl]
@@ -174,7 +172,9 @@ Inferred types:
     <T> -> KtTypeReference
     <R> -> Unit
 
-'SpecifyTypeExplicitlyIntention' @ [119:30] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.SpecifyTypeExplicitlyIntention[FakeCallableDescriptorForObject]
+'?:' @ [119:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Expression?, right: Expression): Expression[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Expression
 
 'createTypeExpressionForTemplate' @ [119:61] ==> public final fun createTypeExpressionForTemplate(exprType: KotlinType, contextElement: KtElement): Expression? defined in org.jetbrains.kotlin.idea.intentions.SpecifyTypeExplicitlyIntention.Companion[SimpleFunctionDescriptorImpl]
 
@@ -205,6 +205,8 @@ Inferred types:
     <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'String' @ [128:70] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'quoteIfNeeded' @ [128:78] ==> public fun String.quoteIfNeeded(): String defined in org.jetbrains.kotlin.idea.core[DeserializedSimpleFunctionDescriptor]
 
 'myEditor' @ [130:9] ==> protected/*protected and package*/ final val myEditor: (Editor..Editor?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinVariableInplaceIntroducer[JavaPropertyDescriptor]
 
@@ -243,8 +245,6 @@ Inferred types:
 'templateState' @ [136:13] ==> val templateState: TemplateState? defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinVariableInplaceIntroducer.buildTemplateAndStart[LocalVariableDescriptor]
 
 'addTemplateStateListener' @ [136:27] ==> public open fun addTemplateStateListener(p0: (TemplateEditingListener..TemplateEditingListener?)): Unit defined in com.intellij.codeInsight.template.impl.TemplateState[JavaMethodDescriptor]
-
-'SpecifyTypeExplicitlyIntention' @ [136:52] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.SpecifyTypeExplicitlyIntention[FakeCallableDescriptorForObject]
 
 'createTypeReferencePostprocessor' @ [136:83] ==> public final fun createTypeReferencePostprocessor(declaration: KtCallableDeclaration): TemplateEditingAdapter defined in org.jetbrains.kotlin.idea.intentions.SpecifyTypeExplicitlyIntention.Companion[SimpleFunctionDescriptorImpl]
 

@@ -24,7 +24,7 @@ Inferred types:
 
 'element' @ [46:31] ==> public final val <E : (PsiElement..PsiElement?)> SmartPsiElementPointer<out (PsiElement..PsiElement?)>.element: PsiElement?[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
 
 'element' @ [47:27] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.editor.BatchTemplateRunner.getEditor[LocalVariableDescriptor]
 

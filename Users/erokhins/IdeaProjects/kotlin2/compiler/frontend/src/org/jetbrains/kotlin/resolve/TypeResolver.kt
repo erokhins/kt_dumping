@@ -77,8 +77,6 @@ Inferred types:
 
 'typeAliasExpansion' @ [96:86] ==> val typeAliasExpansion: TypeAliasExpansion defined in org.jetbrains.kotlin.resolve.TypeResolver.resolveExpandedTypeForTypeAlias[LocalVariableDescriptor]
 
-'Annotations' @ [96:106] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [96:118] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'expandedType' @ [97:16] ==> val expandedType: SimpleType defined in org.jetbrains.kotlin.resolve.TypeResolver.resolveExpandedTypeForTypeAlias[LocalVariableDescriptor]
@@ -107,8 +105,8 @@ Inferred types:
 
 'get' @ [106:49] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), key: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [106:68] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -144,8 +142,8 @@ Inferred types:
 
 'record' @ [113:21] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), key: (KtTypeReference..KtTypeReference?), value: (KotlinType..KotlinType?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'resolvedTypeSlice' @ [113:28] ==> val resolvedTypeSlice: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.TypeResolver.resolvePossiblyBareType[LocalVariableDescriptor]
 
@@ -213,8 +211,8 @@ Inferred types:
 
 'record' @ [125:21] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), key: (KtTypeReference..KtTypeReference?), value: (KotlinType..KotlinType?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'resolvedTypeSlice' @ [125:28] ==> val resolvedTypeSlice: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.TypeResolver.resolvePossiblyBareType[LocalVariableDescriptor]
 
@@ -228,8 +226,8 @@ Inferred types:
 
 'getStubOrPsiChildren' @ [131:13] ==> @NotNull public open fun <S : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?), Psi : (PsiElement..PsiElement?)> getStubOrPsiChildren(@NotNull p0: IStubElementType<(KotlinModifierListStub..KotlinModifierListStub?), out (KtDeclarationModifierList..KtDeclarationModifierList?)>, @NotNull p1: ArrayFactory<(KtDeclarationModifierList..KtDeclarationModifierList?)>): (Array<(KtDeclarationModifierList..KtDeclarationModifierList?)>..Array<out (KtDeclarationModifierList..KtDeclarationModifierList?)>) defined in org.jetbrains.kotlin.psi.KtElementImplStub[JavaMethodDescriptor]
 Inferred types:
-    <S : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> KotlinModifierListStub
-    <Psi : (PsiElement..PsiElement?)> -> KtDeclarationModifierList
+    <S : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> (org.jetbrains.kotlin.psi.stubs.KotlinModifierListStub..org.jetbrains.kotlin.psi.stubs.KotlinModifierListStub?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclarationModifierList..org.jetbrains.kotlin.psi.KtDeclarationModifierList?)
 
 'MODIFIER_LIST' @ [131:53] ==> public final val MODIFIER_LIST: (KtModifierListElementType<(KtDeclarationModifierList..KtDeclarationModifierList?)>..KtModifierListElementType<(KtDeclarationModifierList..KtDeclarationModifierList?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -475,8 +473,8 @@ Inferred types:
 
 'record' @ [210:25] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?), value: (DeclarationDescriptor..DeclarationDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [210:47] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -738,7 +736,7 @@ Inferred types:
 
 'java' @ [273:120] ==> public val <T> KClass<out ParameterOfFunctionTypeDescriptor>.java: Class<out ParameterOfFunctionTypeDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ParameterOfFunctionTypeDescriptor
+    <T> -> Captured(out ParameterOfFunctionTypeDescriptor)
 
 'visitor' @ [281:32] ==> value-parameter visitor: DeclarationDescriptorVisitor<R, D> defined in org.jetbrains.kotlin.resolve.TypeResolver.resolveTypeElement.<no name provided>.resolveParametersOfFunctionType.ParameterOfFunctionTypeDescriptor.accept[ValueParameterDescriptorImpl]
 
@@ -825,8 +823,8 @@ Inferred types:
 
 'record' @ [298:29] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>?), key: (KtParameter..KtParameter?), value: (VariableDescriptor..VariableDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtParameter
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VALUE_PARAMETER' @ [298:51] ==> public final val VALUE_PARAMETER: (WritableSlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1063,8 +1061,6 @@ Inferred types:
 
 'createErrorType' @ [368:24] ==> @NotNull public open fun createErrorType(@NotNull p0: String): SimpleType defined in org.jetbrains.kotlin.types.ErrorUtils[JavaMethodDescriptor]
 
-'KotlinTypeFactory' @ [370:13] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
-
 'simpleType' @ [370:31] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean, memberScope: MemberScope): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
 'annotations' @ [370:42] ==> value-parameter annotations: Annotations defined in org.jetbrains.kotlin.resolve.TypeResolver.resolveTypeForTypeParameter[ValueParameterDescriptorImpl]
@@ -1205,7 +1201,7 @@ Inferred types:
 
 'java' @ [407:76] ==> public val <T> KClass<out ClassifierDescriptor>.java: Class<out ClassifierDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ClassifierDescriptor
+    <T> -> Captured(out ClassifierDescriptor)
 
 'classDescriptor' @ [416:31] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.resolve.TypeResolver.resolveTypeForClass[ValueParameterDescriptorImpl]
 
@@ -1483,8 +1479,6 @@ Inferred types:
 'languageVersionSettings' @ [503:14] ==> private final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.TypeResolver[PropertyDescriptorImpl]
 
 'supportsFeature' @ [503:38] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [503:54] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'TypeAliases' @ [503:70] ==> enum entry TypeAliases defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

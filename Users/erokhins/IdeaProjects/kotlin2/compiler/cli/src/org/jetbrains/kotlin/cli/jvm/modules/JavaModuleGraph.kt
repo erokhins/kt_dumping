@@ -7,13 +7,15 @@ Inferred types:
 
 'finder' @ [25:87] ==> value-parameter finder: JavaModuleFinder defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.<init>[ValueParameterDescriptorImpl]
 
-'LinkedHashSet' @ [28:23] ==> public final fun <E> <init>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)): LinkedHashSet<String> /* = LinkedHashSet<String> */ defined in kotlin.collections.LinkedHashSet[TypeAliasConstructorDescriptorImpl]
+'findModule' @ [25:95] ==> public abstract fun findModule(name: String): JavaModule? defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleFinder[DeserializedSimpleFunctionDescriptor]
+
+'LinkedHashSet' @ [28:23] ==> public final fun <E> <init>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)): LinkedHashSet<(String..String?)> /* = LinkedHashSet<(String..String?)> */ defined in kotlin.collections.LinkedHashSet[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> String
+    <E> -> (kotlin.String..kotlin.String?)
 
 'moduleNames' @ [28:37] ==> value-parameter moduleNames: List<String> defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies[ValueParameterDescriptorImpl]
 
-'visited' @ [31:9] ==> val visited: LinkedHashSet<String> /* = LinkedHashSet<String> */ defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies[LocalVariableDescriptor]
+'visited' @ [31:9] ==> val visited: LinkedHashSet<(String..String?)> /* = LinkedHashSet<(String..String?)> */ defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies[LocalVariableDescriptor]
 
 '?:' @ [35:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: JavaModuleInfo?, right: JavaModuleInfo): JavaModuleInfo[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -35,9 +37,9 @@ Inferred types:
 
 'isTransitive' @ [37:21] ==> val isTransitive: Boolean defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies.dfs[LocalVariableDescriptor]
 
-'visited' @ [37:37] ==> val visited: LinkedHashSet<String> /* = LinkedHashSet<String> */ defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies[LocalVariableDescriptor]
+'visited' @ [37:37] ==> val visited: LinkedHashSet<(String..String?)> /* = LinkedHashSet<(String..String?)> */ defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies[LocalVariableDescriptor]
 
-'add' @ [37:45] ==> public open fun add(element: String): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
+'add' @ [37:45] ==> public open fun add(element: (String..String?)): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
 'dependencyModuleName' @ [37:49] ==> val dependencyModuleName: String defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies.dfs[LocalVariableDescriptor]
 
@@ -77,9 +79,9 @@ Inferred types:
 
 'requires' @ [50:70] ==> public final val requires: List<JavaModuleInfo.Requires> defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleInfo[DeserializedPropertyDescriptor]
 
-'visited' @ [51:29] ==> val visited: LinkedHashSet<String> /* = LinkedHashSet<String> */ defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies[LocalVariableDescriptor]
+'visited' @ [51:29] ==> val visited: LinkedHashSet<(String..String?)> /* = LinkedHashSet<(String..String?)> */ defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies[LocalVariableDescriptor]
 
-'add' @ [51:37] ==> public open fun add(element: String): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
+'add' @ [51:37] ==> public open fun add(element: (String..String?)): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
 'dependencyModuleName' @ [51:41] ==> val dependencyModuleName: String defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies[LocalVariableDescriptor]
 
@@ -97,7 +99,7 @@ Inferred types:
 Inferred types:
     <T : Any> -> JavaModule
 
-'visited' @ [60:16] ==> val visited: LinkedHashSet<String> /* = LinkedHashSet<String> */ defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies[LocalVariableDescriptor]
+'visited' @ [60:16] ==> val visited: LinkedHashSet<(String..String?)> /* = LinkedHashSet<(String..String?)> */ defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.getAllDependencies[LocalVariableDescriptor]
 
 'moduleName' @ [64:13] ==> value-parameter moduleName: String defined in org.jetbrains.kotlin.cli.jvm.modules.JavaModuleGraph.reads[ValueParameterDescriptorImpl]
 

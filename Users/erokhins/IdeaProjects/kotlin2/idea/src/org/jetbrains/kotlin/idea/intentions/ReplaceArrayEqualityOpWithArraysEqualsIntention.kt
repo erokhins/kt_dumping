@@ -105,7 +105,7 @@ Inferred types:
 
 'rightResolvedCall' @ [57:14] ==> val rightResolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.intentions.ReplaceArrayEqualityOpWithArraysEqualsIntention.isApplicableTo[LocalVariableDescriptor]
 
-'resolvedToArrayType' @ [57:32] ==> public fun ResolvedCall<out CallableDescriptor>.resolvedToArrayType(): Boolean defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resolvedToArrayType' @ [57:32] ==> public fun ResolvedCall<out CallableDescriptor>.resolvedToArrayType(): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'left' @ [58:32] ==> val left: KtExpression defined in org.jetbrains.kotlin.idea.intentions.ReplaceArrayEqualityOpWithArraysEqualsIntention.isApplicableTo[LocalVariableDescriptor]
 
@@ -117,5 +117,5 @@ Inferred types:
 
 'leftResolvedCall' @ [59:16] ==> val leftResolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.intentions.ReplaceArrayEqualityOpWithArraysEqualsIntention.isApplicableTo[LocalVariableDescriptor]
 
-'resolvedToArrayType' @ [59:33] ==> public fun ResolvedCall<out CallableDescriptor>.resolvedToArrayType(): Boolean defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resolvedToArrayType' @ [59:33] ==> public fun ResolvedCall<out CallableDescriptor>.resolvedToArrayType(): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 

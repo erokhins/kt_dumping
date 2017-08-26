@@ -28,7 +28,9 @@ Inferred types:
 Inferred types:
     <T> -> KtClass
 
-'LightClassGenerationSupport' @ [52:24] ==> public companion object defined in org.jetbrains.kotlin.asJava.LightClassGenerationSupport[FakeCallableDescriptorForObject]
+'!!' @ [52:24] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KtLightClass?): KtLightClass[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KtLightClass
 
 'getInstance' @ [52:52] ==> @JvmStatic public final fun getInstance(project: Project): LightClassGenerationSupport defined in org.jetbrains.kotlin.asJava.LightClassGenerationSupport.Companion[DeserializedSimpleFunctionDescriptor]
 

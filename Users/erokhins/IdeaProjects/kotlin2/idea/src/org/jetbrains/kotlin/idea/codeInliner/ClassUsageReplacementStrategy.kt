@@ -36,6 +36,8 @@ Inferred types:
     <T> -> CodeToInline
     <R> -> CallableUsageReplacementStrategy
 
+'CallableUsageReplacementStrategy' @ [36:80] ==> public constructor CallableUsageReplacementStrategy(replacement: CodeToInline) defined in org.jetbrains.kotlin.idea.codeInliner.CallableUsageReplacementStrategy[ClassConstructorDescriptorImpl]
+
 'usage' @ [39:13] ==> value-parameter usage: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.codeInliner.ClassUsageReplacementStrategy.createReplacer[ValueParameterDescriptorImpl]
 
 'constructorReplacementStrategy' @ [41:9] ==> private final val constructorReplacementStrategy: CallableUsageReplacementStrategy? defined in org.jetbrains.kotlin.idea.codeInliner.ClassUsageReplacementStrategy[PropertyDescriptorImpl]

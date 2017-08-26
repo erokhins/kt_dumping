@@ -139,7 +139,7 @@ Inferred types:
 
 'getParameterForArgument' @ [73:41] ==> public fun <D : CallableDescriptor> ResolvedCall<out CallableDescriptor>.getParameterForArgument(valueArgument: ValueArgument?): ValueParameterDescriptor? defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <D : CallableDescriptor> -> CallableDescriptor
+    <D : CallableDescriptor> -> Captured(out CallableDescriptor)
 
 'lambdaArgument' @ [73:65] ==> val lambdaArgument: KtLambdaArgument defined in org.jetbrains.kotlin.idea.intentions.ReplaceUnderscoreWithParameterNameIntention.lambdaParameterName[LocalVariableDescriptor]
 

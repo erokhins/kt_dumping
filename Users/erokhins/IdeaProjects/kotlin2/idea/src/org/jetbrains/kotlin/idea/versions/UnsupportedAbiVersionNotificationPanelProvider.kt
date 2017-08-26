@@ -12,7 +12,7 @@ Inferred types:
 
 'subscribe' @ [66:20] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(ModuleRootListener..ModuleRootListener?)>, @NotNull p1: ModuleRootListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> ModuleRootListener
+    <L : (Any..Any?)> -> (com.intellij.openapi.roots.ModuleRootListener..com.intellij.openapi.roots.ModuleRootListener?)
 
 'PROJECT_ROOTS' @ [66:44] ==> public final val PROJECT_ROOTS: (Topic<(ModuleRootListener..ModuleRootListener?)>..Topic<(ModuleRootListener..ModuleRootListener?)>?) defined in com.intellij.ProjectTopics[JavaPropertyDescriptor]
 
@@ -24,7 +24,7 @@ Inferred types:
 
 'subscribe' @ [71:20] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(DumbService.DumbModeListener..DumbService.DumbModeListener?)>, @NotNull p1: DumbService.DumbModeListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> DumbModeListener
+    <L : (Any..Any?)> -> (com.intellij.openapi.project.DumbService.DumbModeListener..com.intellij.openapi.project.DumbService.DumbModeListener?)
 
 'DUMB_MODE' @ [71:42] ==> public final val DUMB_MODE: (Topic<(DumbService.DumbModeListener..DumbService.DumbModeListener?)>..Topic<(DumbService.DumbModeListener..DumbService.DumbModeListener?)>?) defined in com.intellij.openapi.project.DumbService[JavaPropertyDescriptor]
 
@@ -43,7 +43,7 @@ Inferred types:
 
 'file' @ [83:55] ==> public final val file: VirtualFile defined in org.jetbrains.kotlin.idea.versions.BinaryVersionedFile[PropertyDescriptorImpl]
 
-'findAllUsedLibraries' @ [85:31] ==> public fun findAllUsedLibraries(project: Project): MultiMap<Library, Module> defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'findAllUsedLibraries' @ [85:31] ==> public fun findAllUsedLibraries(project: Project): MultiMap<Library, Module> defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [85:52] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider[PropertyDescriptorImpl]
 
@@ -282,7 +282,7 @@ Inferred types:
 
 'invokeLater' @ [122:53] ==> public final fun invokeLater(@NotNull p0: () -> Unit): Unit defined in com.intellij.openapi.application.Application[MyFunctionDescriptor]
 
-'updateLibraries' @ [123:21] ==> public fun updateLibraries(project: Project, libraries: Collection<Library>): Unit defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'updateLibraries' @ [123:21] ==> public fun updateLibraries(project: Project, libraries: Collection<Library>): Unit defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [123:37] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider[PropertyDescriptorImpl]
 
@@ -450,7 +450,7 @@ Inferred types:
 
 'answer' @ [170:9] ==> value-parameter answer: EditorNotificationPanel defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider.createShowPathsActionLabel[ValueParameterDescriptorImpl]
 
-'createComponentActionLabel' @ [170:16] ==> public fun EditorNotificationPanel.createComponentActionLabel(labelText: String, callback: (HyperlinkLabel) -> Unit): Unit defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'createComponentActionLabel' @ [170:16] ==> public fun EditorNotificationPanel.createComponentActionLabel(labelText: String, callback: (HyperlinkLabel) -> Unit): Unit defined in org.jetbrains.kotlin.idea.versions in file UnsupportedAbiVersionNotificationPanelProvider.kt[SimpleFunctionDescriptorImpl]
 
 'labelText' @ [170:43] ==> value-parameter labelText: String defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider.createShowPathsActionLabel[ValueParameterDescriptorImpl]
 
@@ -458,9 +458,9 @@ Inferred types:
 
 'project' @ [171:37] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider[PropertyDescriptorImpl]
 
-'tryRunReadActionInSmartMode' @ [171:46] ==> @Nullable public final fun <T : (Any..Any?)> tryRunReadActionInSmartMode(@NotNull p0: () -> (Any..Any?), @Nullable p1: String?): Any? defined in com.intellij.openapi.project.DumbService[MyFunctionDescriptor]
+'tryRunReadActionInSmartMode' @ [171:46] ==> @Nullable public final fun <T : (Any..Any?)> tryRunReadActionInSmartMode(@NotNull p0: () -> Nothing?, @Nullable p1: String?): Nothing? defined in com.intellij.openapi.project.DumbService[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Nothing?
 
 'collectBadRoots' @ [172:32] ==> public final fun collectBadRoots(module: Module): Collection<BinaryVersionedFile<BinaryVersion>> defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider.Companion[SimpleFunctionDescriptorImpl]
 
@@ -600,7 +600,7 @@ Inferred types:
 
 'getService' @ [233:36] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(SuppressNotificationState..SuppressNotificationState?)>): (SuppressNotificationState..SuppressNotificationState?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SuppressNotificationState
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.versions.SuppressNotificationState..org.jetbrains.kotlin.idea.versions.SuppressNotificationState?)
 
 'project' @ [233:47] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider[PropertyDescriptorImpl]
 
@@ -784,7 +784,7 @@ Inferred types:
 
 'successLink' @ [314:40] ==> val successLink: (HyperlinkLabel..HyperlinkLabel?) defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider.ErrorNotificationPanel.createProgressAction[LocalVariableDescriptor]
 
-'Runnable' @ [321:39] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [321:39] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'updateNotifications' @ [321:50] ==> private final fun updateNotifications(): Unit defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider[SimpleFunctionDescriptorImpl]
 
@@ -830,13 +830,13 @@ Inferred types:
 
 'JvmPlatform' @ [340:17] ==> public object JvmPlatform : TargetPlatform defined in org.jetbrains.kotlin.resolve.jvm.platform[FakeCallableDescriptorForObject]
 
-'getLibraryRootsWithAbiIncompatibleKotlinClasses' @ [340:32] ==> public fun getLibraryRootsWithAbiIncompatibleKotlinClasses(module: Module): Collection<BinaryVersionedFile<JvmMetadataVersion>> defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'getLibraryRootsWithAbiIncompatibleKotlinClasses' @ [340:32] ==> public fun getLibraryRootsWithAbiIncompatibleKotlinClasses(module: Module): Collection<BinaryVersionedFile<JvmMetadataVersion>> defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [340:80] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider.Companion.collectBadRoots[ValueParameterDescriptorImpl]
 
 'JsPlatform' @ [341:17] ==> public object JsPlatform : TargetPlatform defined in org.jetbrains.kotlin.js.resolve[FakeCallableDescriptorForObject]
 
-'getLibraryRootsWithAbiIncompatibleForKotlinJs' @ [341:31] ==> public fun getLibraryRootsWithAbiIncompatibleForKotlinJs(module: Module): Collection<BinaryVersionedFile<JsMetadataVersion>> defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'getLibraryRootsWithAbiIncompatibleForKotlinJs' @ [341:31] ==> public fun getLibraryRootsWithAbiIncompatibleForKotlinJs(module: Module): Collection<BinaryVersionedFile<JsMetadataVersion>> defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [341:77] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider.Companion.collectBadRoots[ValueParameterDescriptorImpl]
 
@@ -864,9 +864,9 @@ Inferred types:
 
 'create' @ [351:42] ==> @NotNull public open fun <T : (Any..Any?)> create(): Ref<(HyperlinkLabel..HyperlinkLabel?)> defined in com.intellij.openapi.util.Ref[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> HyperlinkLabel
+    <T : (Any..Any?)> -> (com.intellij.ui.HyperlinkLabel..com.intellij.ui.HyperlinkLabel?)
 
-'Runnable' @ [352:18] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [352:18] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'invoke' @ [353:9] ==> public abstract operator fun invoke(p1: HyperlinkLabel): Unit defined in kotlin.Function1[FunctionInvokeDescriptor]
 

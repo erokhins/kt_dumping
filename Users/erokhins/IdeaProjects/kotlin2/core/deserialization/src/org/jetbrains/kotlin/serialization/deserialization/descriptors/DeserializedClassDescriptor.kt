@@ -92,8 +92,6 @@ Inferred types:
 
 'this' @ [60:108] ==> <this> defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedClassDescriptor[LazyClassReceiverParameterDescriptor]
 
-'MemberScope' @ [60:119] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
-
 'Empty' @ [60:131] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'DeserializedClassTypeConstructor' @ [61:35] ==> public constructor DeserializedClassTypeConstructor() defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedClassDescriptor.DeserializedClassTypeConstructor[ClassConstructorDescriptorImpl]
@@ -204,8 +202,6 @@ Inferred types:
 'classProto' @ [80:44] ==> public final val classProto: ProtoBuf.Class defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedClassDescriptor[PropertyDescriptorImpl]
 
 'flags' @ [80:55] ==> public final val ProtoBuf.Class.flags: Int[MyPropertyDescriptor]
-
-'Annotations' @ [81:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [81:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -421,8 +417,6 @@ Inferred types:
 
 'modality' @ [151:13] ==> private final val modality: Modality defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedClassDescriptor[PropertyDescriptorImpl]
 
-'Modality' @ [151:25] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'SEALED' @ [151:34] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'emptyList' @ [151:49] ==> public fun <T> emptyList(): List<ClassDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -496,7 +490,7 @@ Inferred types:
 
 'classProto' @ [178:26] ==> public final val classProto: ProtoBuf.Class defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedClassDescriptor[PropertyDescriptorImpl]
 
-'supertypes' @ [178:37] ==> public fun ProtoBuf.Class.supertypes(typeTable: TypeTable): List<ProtoBuf.Type> defined in org.jetbrains.kotlin.serialization.deserialization[SimpleFunctionDescriptorImpl]
+'supertypes' @ [178:37] ==> public fun ProtoBuf.Class.supertypes(typeTable: TypeTable): List<ProtoBuf.Type> defined in org.jetbrains.kotlin.serialization.deserialization in file protoTypeTableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'c' @ [178:48] ==> public final val c: DeserializationContext defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedClassDescriptor[PropertyDescriptorImpl]
 
@@ -622,10 +616,12 @@ Inferred types:
 
 'nameResolver' @ [213:50] ==> public final val nameResolver: NameResolver defined in org.jetbrains.kotlin.serialization.deserialization.DeserializationContext[PropertyDescriptorImpl]
 
-'let' @ [213:73] ==> @InlineOnly public inline fun <T, R> List<Name>.let(block: (List<Name>) -> () -> Collection<Name>): () -> Collection<Name> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getName' @ [213:64] ==> @NotNull public abstract fun getName(index: Int): Name defined in org.jetbrains.kotlin.serialization.deserialization.NameResolver[JavaMethodDescriptor]
+
+'let' @ [213:73] ==> @InlineOnly public inline fun <T, R> List<Name>.let(block: (List<Name>) -> () -> List<Name>): () -> List<Name> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> List<Name>
-    <R> -> Function0<Collection<Name>>
+    <R> -> Function0<List<Name>>
 
 'it' @ [213:81] ==> value-parameter it: List<Name> defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedClassDescriptor.DeserializedClassMemberScope.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -641,11 +637,7 @@ Inferred types:
 
 'computeDescriptors' @ [218:13] ==> protected final fun computeDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean, location: LookupLocation): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedClassDescriptor.DeserializedClassMemberScope[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [218:32] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'ALL' @ [218:53] ==> @field:JvmField public final val ALL: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'MemberScope' @ [218:58] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'ALL_NAME_FILTER' @ [218:70] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 

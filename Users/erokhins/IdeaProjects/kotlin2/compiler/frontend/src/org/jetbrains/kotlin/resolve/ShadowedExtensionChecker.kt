@@ -249,8 +249,6 @@ Inferred types:
 
 'getContributedFunctions' @ [103:37] ==> public abstract fun getContributedFunctions(name: Name, location: LookupLocation): Collection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'OperatorNameConventions' @ [103:61] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INVOKE' @ [103:85] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'WHEN_CHECK_DECLARATION_CONFLICTS' @ [103:110] ==> enum entry WHEN_CHECK_DECLARATION_CONFLICTS defined in org.jetbrains.kotlin.incremental.components.NoLookupLocation[FakeCallableDescriptorForObject]

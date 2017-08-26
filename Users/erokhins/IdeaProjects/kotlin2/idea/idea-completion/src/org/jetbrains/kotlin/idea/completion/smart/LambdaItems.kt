@@ -12,7 +12,7 @@ Inferred types:
 
 'expectedInfos' @ [38:37] ==> value-parameter expectedInfos: Collection<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[ValueParameterDescriptorImpl]
 
-'filterFunctionExpected' @ [38:51] ==> public fun Collection<ExpectedInfo>.filterFunctionExpected(): List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'filterFunctionExpected' @ [38:51] ==> public fun Collection<ExpectedInfo>.filterFunctionExpected(): List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'functionExpectedInfos' @ [39:13] ==> val functionExpectedInfos: List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[LocalVariableDescriptor]
 
@@ -56,6 +56,8 @@ Inferred types:
     <T> -> KotlinType
     <R> -> Int
 
+'getValueParametersCountFromFunctionType' @ [46:55] ==> public fun getValueParametersCountFromFunctionType(type: KotlinType): Int defined in org.jetbrains.kotlin.resolve.calls.util[DeserializedSimpleFunctionDescriptor]
+
 'singleSignatureLength' @ [47:39] ==> val singleSignatureLength: Int? defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[LocalVariableDescriptor]
 
 'singleSignatureLength' @ [47:69] ==> val singleSignatureLength: Int? defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[LocalVariableDescriptor]
@@ -64,21 +66,19 @@ Inferred types:
 
 'create' @ [49:54] ==> @NotNull public open fun create(@NotNull p0: String): LookupElementBuilder defined in com.intellij.codeInsight.lookup.LookupElementBuilder[JavaMethodDescriptor]
 
-'LambdaSignatureTemplates' @ [49:61] ==> public object LambdaSignatureTemplates defined in org.jetbrains.kotlin.idea.completion in file LambdaSignatureTemplates.kt[FakeCallableDescriptorForObject]
-
 'DEFAULT_LAMBDA_PRESENTATION' @ [49:86] ==> public final val DEFAULT_LAMBDA_PRESENTATION: String defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates[PropertyDescriptorImpl]
 
 'withInsertHandler' @ [50:22] ==> @Contract public open fun withInsertHandler(@Nullable p0: InsertHandler<(LookupElement..LookupElement?)>?): (LookupElementBuilder..LookupElementBuilder?) defined in com.intellij.codeInsight.lookup.LookupElementBuilder[JavaMethodDescriptor]
 
 'ArtificialElementInsertHandler' @ [50:40] ==> public constructor ArtificialElementInsertHandler(textBeforeCaret: String, textAfterCaret: String, shortenRefs: Boolean) defined in org.jetbrains.kotlin.idea.completion.smart.ArtificialElementInsertHandler[ClassConstructorDescriptorImpl]
 
-'suppressAutoInsertion' @ [51:22] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'suppressAutoInsertion' @ [51:22] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'assignSmartCompletionPriority' @ [52:22] ==> public fun LookupElement.assignSmartCompletionPriority(priority: SmartCompletionItemPriority): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'LAMBDA_NO_PARAMS' @ [52:80] ==> enum entry LAMBDA_NO_PARAMS defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority[FakeCallableDescriptorForObject]
 
-'addTailAndNameSimilarity' @ [53:22] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'addTailAndNameSimilarity' @ [53:22] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'functionExpectedInfos' @ [53:47] ==> val functionExpectedInfos: List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[LocalVariableDescriptor]
 
@@ -136,8 +136,6 @@ Inferred types:
 
 'functionExpectedInfos' @ [62:29] ==> val functionExpectedInfos: List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[LocalVariableDescriptor]
 
-'LambdaSignatureTemplates' @ [63:29] ==> public object LambdaSignatureTemplates defined in org.jetbrains.kotlin.idea.completion in file LambdaSignatureTemplates.kt[FakeCallableDescriptorForObject]
-
 'NAMES_OR_TYPES' @ [63:76] ==> enum entry NAMES_OR_TYPES defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.SignaturePresentation[FakeCallableDescriptorForObject]
 
 'collection' @ [69:21] ==> value-parameter collection: MutableCollection<LookupElement> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[ValueParameterDescriptorImpl]
@@ -150,8 +148,6 @@ Inferred types:
 
 'functionExpectedInfos' @ [71:29] ==> val functionExpectedInfos: List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[LocalVariableDescriptor]
 
-'LambdaSignatureTemplates' @ [72:29] ==> public object LambdaSignatureTemplates defined in org.jetbrains.kotlin.idea.completion in file LambdaSignatureTemplates.kt[FakeCallableDescriptorForObject]
-
 'NAMES_AND_TYPES' @ [72:76] ==> enum entry NAMES_AND_TYPES defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.SignaturePresentation[FakeCallableDescriptorForObject]
 
 'collection' @ [75:21] ==> value-parameter collection: MutableCollection<LookupElement> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[ValueParameterDescriptorImpl]
@@ -163,8 +159,6 @@ Inferred types:
 'functionType' @ [76:29] ==> val functionType: KotlinType defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[LocalVariableDescriptor]
 
 'functionExpectedInfos' @ [77:29] ==> val functionExpectedInfos: List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.addToCollection[LocalVariableDescriptor]
-
-'LambdaSignatureTemplates' @ [78:29] ==> public object LambdaSignatureTemplates defined in org.jetbrains.kotlin.idea.completion in file LambdaSignatureTemplates.kt[FakeCallableDescriptorForObject]
 
 'NAMES' @ [78:76] ==> enum entry NAMES defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.SignaturePresentation[FakeCallableDescriptorForObject]
 
@@ -222,13 +216,13 @@ Inferred types:
 
 'explicitParameterTypes' @ [99:121] ==> value-parameter explicitParameterTypes: Boolean defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.createLookupElement[ValueParameterDescriptorImpl]
 
-'suppressAutoInsertion' @ [101:18] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'suppressAutoInsertion' @ [101:18] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'assignSmartCompletionPriority' @ [102:18] ==> public fun LookupElement.assignSmartCompletionPriority(priority: SmartCompletionItemPriority): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'LAMBDA' @ [102:76] ==> enum entry LAMBDA defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletionItemPriority[FakeCallableDescriptorForObject]
 
-'addTailAndNameSimilarity' @ [103:18] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'addTailAndNameSimilarity' @ [103:18] ==> public fun LookupElement.addTailAndNameSimilarity(matchedExpectedInfos: Collection<ExpectedInfo>, nameSimilarityExpectedInfos: Collection<ExpectedInfo> = ...): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'functionExpectedInfos' @ [103:43] ==> value-parameter functionExpectedInfos: List<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaItems.createLookupElement[ValueParameterDescriptorImpl]
 

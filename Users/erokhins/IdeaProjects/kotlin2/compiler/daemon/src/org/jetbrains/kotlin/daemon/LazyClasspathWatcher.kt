@@ -10,9 +10,9 @@
 
 'AtomicLong' @ [53:36] ==> public constructor AtomicLong(p0: Long) defined in java.util.concurrent.atomic.AtomicLong[JavaClassConstructorDescriptor]
 
-'lazy' @ [54:24] ==> public fun <T> lazy(initializer: () -> (Logger..Logger?)): Lazy<(Logger..Logger?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [54:24] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (java.util.logging.Logger..java.util.logging.Logger?)
+    <T> -> T
 
 'getLogger' @ [54:38] ==> @CallerSensitive public open fun getLogger(p0: (String..String?)): (Logger..Logger?) defined in java.util.logging.Logger[JavaMethodDescriptor]
 
@@ -31,6 +31,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [62:32] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'asSequence' @ [63:26] ==> public fun <T> Iterable<File>.asSequence(): Sequence<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
@@ -47,6 +49,8 @@ Inferred types:
 'filter' @ [64:46] ==> public fun <T> Sequence<File>.filter(predicate: (File) -> Boolean): Sequence<File> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
+
+'isClasspathFile' @ [64:55] ==> public fun isClasspathFile(file: File): Boolean defined in org.jetbrains.kotlin.daemon in file LazyClasspathWatcher.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [65:26] ==> public fun <T, R> Sequence<File>.map(transform: (File) -> LazyClasspathWatcher.FileId): Sequence<LazyClasspathWatcher.FileId> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:

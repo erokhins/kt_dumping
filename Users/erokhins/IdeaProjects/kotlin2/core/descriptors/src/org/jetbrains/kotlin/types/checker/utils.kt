@@ -88,8 +88,6 @@ Inferred types:
 
 'INVARIANT' @ [50:93] ==> enum entry INVARIANT defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
-'TypeConstructorSubstitution' @ [51:21] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
-
 'create' @ [51:49] ==> @JvmStatic public final fun create(kotlinType: KotlinType): TypeSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[SimpleFunctionDescriptorImpl]
 
 'currentType' @ [51:56] ==> val currentType: KotlinType defined in org.jetbrains.kotlin.types.checker.findCorrespondingSupertype[LocalVariableDescriptor]
@@ -104,9 +102,7 @@ Inferred types:
 
 'INVARIANT' @ [53:67] ==> enum entry INVARIANT defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
-'approximate' @ [54:30] ==> private fun KotlinType.approximate(): KotlinType defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
-
-'TypeConstructorSubstitution' @ [57:21] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
+'approximate' @ [54:30] ==> private fun KotlinType.approximate(): KotlinType defined in org.jetbrains.kotlin.types.checker in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'create' @ [57:49] ==> @JvmStatic public final fun create(kotlinType: KotlinType): TypeSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[SimpleFunctionDescriptorImpl]
 
@@ -154,11 +150,11 @@ Inferred types:
 
 'substitutedConstructor' @ [70:63] ==> val substitutedConstructor: TypeConstructor defined in org.jetbrains.kotlin.types.checker.findCorrespondingSupertype[LocalVariableDescriptor]
 
-'debugInfo' @ [70:86] ==> private fun TypeConstructor.debugInfo(): String defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
+'debugInfo' @ [70:86] ==> private fun TypeConstructor.debugInfo(): String defined in org.jetbrains.kotlin.types.checker in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'supertypeConstructor' @ [71:52] ==> val supertypeConstructor: TypeConstructor defined in org.jetbrains.kotlin.types.checker.findCorrespondingSupertype[LocalVariableDescriptor]
 
-'debugInfo' @ [71:73] ==> private fun TypeConstructor.debugInfo(): String defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
+'debugInfo' @ [71:73] ==> private fun TypeConstructor.debugInfo(): String defined in org.jetbrains.kotlin.types.checker in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'typeCheckingProcedureCallbacks' @ [72:38] ==> value-parameter typeCheckingProcedureCallbacks: TypeCheckingProcedureCallbacks = ... defined in org.jetbrains.kotlin.types.checker.findCorrespondingSupertype[ValueParameterDescriptorImpl]
 
@@ -188,7 +184,7 @@ Inferred types:
 
 'lastPathNode' @ [79:59] ==> val lastPathNode: (SubtypePathNode..SubtypePathNode?) defined in org.jetbrains.kotlin.types.checker.findCorrespondingSupertype[LocalVariableDescriptor]
 
-'approximateCapturedTypes' @ [86:40] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'approximateCapturedTypes' @ [86:40] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [86:65] ==> <this> defined in org.jetbrains.kotlin.types.checker.approximate[ReceiverParameterDescriptorImpl]
 
@@ -216,11 +212,11 @@ Inferred types:
 
 'java' @ [93:43] ==> public val <T> KClass<out TypeConstructor>.java: Class<out TypeConstructor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> TypeConstructor
+    <T> -> Captured(out TypeConstructor)
 
 'canonicalName' @ [93:48] ==> public final val <T : (Any..Any?)> Class<out TypeConstructor>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeConstructor
+    <T : (Any..Any?)> -> Captured(out TypeConstructor)
 
 'declarationDescriptor' @ [94:57] ==> public final val TypeConstructor.declarationDescriptor: ClassifierDescriptor?[MyPropertyDescriptor]
 
@@ -242,11 +238,11 @@ Inferred types:
 
 'java' @ [98:54] ==> public val <T> KClass<out DeclarationDescriptor>.java: Class<out DeclarationDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DeclarationDescriptor
+    <T> -> Captured(out DeclarationDescriptor)
 
 'canonicalName' @ [98:59] ==> public final val <T : (Any..Any?)> Class<out DeclarationDescriptor>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DeclarationDescriptor
+    <T : (Any..Any?)> -> Captured(out DeclarationDescriptor)
 
 'declarationDescriptor' @ [100:9] ==> var declarationDescriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.types.checker.debugInfo.<anonymous>[LocalVariableDescriptor]
 

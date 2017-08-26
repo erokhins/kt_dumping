@@ -18,13 +18,13 @@ Inferred types:
 
 'getMethod' @ [32:9] ==> public abstract val getMethod: FunctionDescriptor defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor[DeserializedPropertyDescriptor]
 
-'shouldNotConvertToProperty' @ [32:19] ==> public fun FunctionDescriptor.shouldNotConvertToProperty(notProperties: Set<FqNameUnsafe>): Boolean defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'shouldNotConvertToProperty' @ [32:19] ==> public fun FunctionDescriptor.shouldNotConvertToProperty(notProperties: Set<FqNameUnsafe>): Boolean defined in org.jetbrains.kotlin.idea.util in file NotPropertyList.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [32:46] ==> value-parameter set: Set<FqNameUnsafe> defined in org.jetbrains.kotlin.idea.util.suppressedByNotPropertyList[ValueParameterDescriptorImpl]
 
 'setMethod' @ [32:54] ==> public abstract val setMethod: FunctionDescriptor? defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor[DeserializedPropertyDescriptor]
 
-'shouldNotConvertToProperty' @ [32:65] ==> public fun FunctionDescriptor.shouldNotConvertToProperty(notProperties: Set<FqNameUnsafe>): Boolean defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'shouldNotConvertToProperty' @ [32:65] ==> public fun FunctionDescriptor.shouldNotConvertToProperty(notProperties: Set<FqNameUnsafe>): Boolean defined in org.jetbrains.kotlin.idea.util in file NotPropertyList.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [32:92] ==> value-parameter set: Set<FqNameUnsafe> defined in org.jetbrains.kotlin.idea.util.suppressedByNotPropertyList[ValueParameterDescriptorImpl]
 

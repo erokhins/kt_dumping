@@ -93,6 +93,8 @@ Inferred types:
 
 'this' @ [60:48] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleResolver[LazyClassReceiverParameterDescriptor]
 
+'findJavaModule' @ [60:54] ==> private final fun findJavaModule(file: VirtualFile): JavaModule? defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleResolver[SimpleFunctionDescriptorImpl]
+
 'this' @ [61:27] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleResolver[LazyClassReceiverParameterDescriptor]
 
 'findJavaModule' @ [61:32] ==> private final fun findJavaModule(file: VirtualFile): JavaModule? defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleResolver[SimpleFunctionDescriptorImpl]

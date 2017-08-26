@@ -127,7 +127,7 @@ Inferred types:
 
 'getParentOfType' @ [64:35] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(TList..TList?)>): TList? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> TList
+    <T : (PsiElement..PsiElement?)> -> (TList..TList?)
 
 'psiFile' @ [64:51] ==> val psiFile: PsiFile defined in org.jetbrains.kotlin.idea.intentions.AbstractChopListIntention.applyTo[LocalVariableDescriptor]
 

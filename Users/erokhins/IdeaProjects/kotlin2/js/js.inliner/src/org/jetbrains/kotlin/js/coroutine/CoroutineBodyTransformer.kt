@@ -53,13 +53,13 @@ Inferred types:
 
 'node' @ [50:42] ==> value-parameter node: JsNode defined in org.jetbrains.kotlin.js.coroutine.CoroutineBodyTransformer.preProcess[ValueParameterDescriptorImpl]
 
-'collectBreakContinueTargets' @ [50:47] ==> public fun JsNode.collectBreakContinueTargets(): Map<JsContinue, JsStatement> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectBreakContinueTargets' @ [50:47] ==> public fun JsNode.collectBreakContinueTargets(): Map<JsContinue, JsStatement> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'nodesToSplit' @ [51:9] ==> private final lateinit var nodesToSplit: Set<JsNode> defined in org.jetbrains.kotlin.js.coroutine.CoroutineBodyTransformer[PropertyDescriptorImpl]
 
 'node' @ [51:24] ==> value-parameter node: JsNode defined in org.jetbrains.kotlin.js.coroutine.CoroutineBodyTransformer.preProcess[ValueParameterDescriptorImpl]
 
-'collectNodesToSplit' @ [51:29] ==> public fun JsNode.collectNodesToSplit(breakContinueTargets: Map<JsContinue, JsStatement>): Set<JsNode> defined in org.jetbrains.kotlin.js.coroutine[SimpleFunctionDescriptorImpl]
+'collectNodesToSplit' @ [51:29] ==> public fun JsNode.collectNodesToSplit(breakContinueTargets: Map<JsContinue, JsStatement>): Set<JsNode> defined in org.jetbrains.kotlin.js.coroutine in file CoroutinePasses.kt[SimpleFunctionDescriptorImpl]
 
 'breakContinueTargetStatements' @ [51:49] ==> private final val breakContinueTargetStatements: MutableMap<JsContinue, JsStatement> defined in org.jetbrains.kotlin.js.coroutine.CoroutineBodyTransformer[PropertyDescriptorImpl]
 
@@ -71,13 +71,13 @@ Inferred types:
 
 'entryBlock' @ [56:21] ==> private final val entryBlock: CoroutineBlock defined in org.jetbrains.kotlin.js.coroutine.CoroutineBodyTransformer[PropertyDescriptorImpl]
 
-'buildGraph' @ [56:32] ==> public fun CoroutineBlock.buildGraph(globalCatchBlock: CoroutineBlock?): Map<CoroutineBlock, Set<CoroutineBlock>> defined in org.jetbrains.kotlin.js.coroutine[SimpleFunctionDescriptorImpl]
+'buildGraph' @ [56:32] ==> public fun CoroutineBlock.buildGraph(globalCatchBlock: CoroutineBlock?): Map<CoroutineBlock, Set<CoroutineBlock>> defined in org.jetbrains.kotlin.js.coroutine in file CoroutinePasses.kt[SimpleFunctionDescriptorImpl]
 
 'globalCatchBlock' @ [56:43] ==> private final val globalCatchBlock: CoroutineBlock defined in org.jetbrains.kotlin.js.coroutine.CoroutineBodyTransformer[PropertyDescriptorImpl]
 
 'topologicalOrder' @ [57:33] ==> public final fun <N : (Any..Any?)> topologicalOrder(@NotNull p0: (MutableIterable<(CoroutineBlock..CoroutineBlock?)>..Iterable<(CoroutineBlock..CoroutineBlock?)>), @NotNull p1: ((CoroutineBlock..CoroutineBlock?)) -> (MutableIterable<(CoroutineBlock..CoroutineBlock?)>..Iterable<(CoroutineBlock..CoroutineBlock?)>)): (MutableList<(CoroutineBlock..CoroutineBlock?)>..List<(CoroutineBlock..CoroutineBlock?)>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> CoroutineBlock
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.js.coroutine.CoroutineBlock..org.jetbrains.kotlin.js.coroutine.CoroutineBlock?)
 
 'listOf' @ [57:50] ==> public fun <T> listOf(element: CoroutineBlock): List<CoroutineBlock> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -95,7 +95,7 @@ Inferred types:
 
 'orderedBlocks' @ [58:9] ==> val orderedBlocks: (MutableList<(CoroutineBlock..CoroutineBlock?)>..List<(CoroutineBlock..CoroutineBlock?)>?) defined in org.jetbrains.kotlin.js.coroutine.CoroutineBodyTransformer.postProcess[LocalVariableDescriptor]
 
-'replaceCoroutineFlowStatements' @ [58:23] ==> public fun List<CoroutineBlock>.replaceCoroutineFlowStatements(context: CoroutineTransformationContext): Unit defined in org.jetbrains.kotlin.js.coroutine[SimpleFunctionDescriptorImpl]
+'replaceCoroutineFlowStatements' @ [58:23] ==> public fun List<CoroutineBlock>.replaceCoroutineFlowStatements(context: CoroutineTransformationContext): Unit defined in org.jetbrains.kotlin.js.coroutine in file CoroutinePasses.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [58:54] ==> private final val context: CoroutineTransformationContext defined in org.jetbrains.kotlin.js.coroutine.CoroutineBodyTransformer[PropertyDescriptorImpl]
 

@@ -1,30 +1,20 @@
 'Freezable' @ [22:26] ==> public constructor Freezable() defined in org.jetbrains.kotlin.cli.common.arguments.Freezable[DeserializedClassConstructorDescriptor]
 
-'FreezableVar' @ [23:40] ==> public constructor FreezableVar<T>(value: String) defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <T> -> String
+'getValue' @ [23:40] ==> public open fun getValue(thisRef: Any, property: KProperty<*>): T defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[DeserializedSimpleFunctionDescriptor]
 
 'DEFAULT_ADDITIONAL_ARGUMENTS' @ [23:53] ==> public final val DEFAULT_ADDITIONAL_ARGUMENTS: String defined in org.jetbrains.kotlin.config.CompilerSettings.Companion[PropertyDescriptorImpl]
 
-'FreezableVar' @ [24:36] ==> public constructor FreezableVar<T>(value: String) defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <T> -> String
+'getValue' @ [24:36] ==> public open fun getValue(thisRef: Any, property: KProperty<*>): T defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[DeserializedSimpleFunctionDescriptor]
 
-'FreezableVar' @ [25:45] ==> public constructor FreezableVar<T>(value: String) defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <T> -> String
+'getValue' @ [25:45] ==> public open fun getValue(thisRef: Any, property: KProperty<*>): T defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[DeserializedSimpleFunctionDescriptor]
 
-'FreezableVar' @ [26:40] ==> public constructor FreezableVar<T>(value: Boolean) defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <T> -> Boolean
+'getValue' @ [26:40] ==> public open fun getValue(thisRef: Any, property: KProperty<*>): T defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[DeserializedSimpleFunctionDescriptor]
 
-'FreezableVar' @ [27:53] ==> public constructor FreezableVar<T>(value: String) defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <T> -> String
+'getValue' @ [27:53] ==> public open fun getValue(thisRef: Any, property: KProperty<*>): T defined in org.jetbrains.kotlin.cli.common.arguments.Freezable.FreezableVar[DeserializedSimpleFunctionDescriptor]
 
 'DEFAULT_OUTPUT_DIRECTORY' @ [27:66] ==> private final val DEFAULT_OUTPUT_DIRECTORY: String defined in org.jetbrains.kotlin.config.CompilerSettings.Companion[PropertyDescriptorImpl]
 
-'splitArgumentString' @ [36:13] ==> public fun splitArgumentString(arguments: String): List<(String..String?)> defined in org.jetbrains.kotlin.config[SimpleFunctionDescriptorImpl]
+'splitArgumentString' @ [36:13] ==> public fun splitArgumentString(arguments: String): List<(String..String?)> defined in org.jetbrains.kotlin.config in file CompilerSettings.kt[SimpleFunctionDescriptorImpl]
 
 'additionalArguments' @ [36:33] ==> public final var additionalArguments: String defined in org.jetbrains.kotlin.config.CompilerSettings[PropertyDescriptorImpl]
 

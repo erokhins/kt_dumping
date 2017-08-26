@@ -242,8 +242,6 @@ Inferred types:
 
 'toSystemIndependentName' @ [204:26] ==> @NotNull public open fun toSystemIndependentName(@NotNull p0: String): String defined in com.intellij.openapi.util.io.FileUtil[JavaMethodDescriptor]
 
-'JpsJsModuleUtils' @ [204:50] ==> public object JpsJsModuleUtils defined in org.jetbrains.kotlin.jps.build[FakeCallableDescriptorForObject]
-
 'getOutputFile' @ [204:67] ==> @JvmStatic public final fun getOutputFile(outputDir: File, moduleName: String, isTests: Boolean): File defined in org.jetbrains.kotlin.jps.build.JpsJsModuleUtils[DeserializedSimpleFunctionDescriptor]
 
 'outputDir' @ [204:81] ==> val outputDir: File defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest.Companion.k2jsOutput[LocalVariableDescriptor]
@@ -257,8 +255,6 @@ Inferred types:
 'add' @ [205:22] ==> public open fun add(element: String): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
 'toSystemIndependentName' @ [205:26] ==> @NotNull public open fun toSystemIndependentName(@NotNull p0: String): String defined in com.intellij.openapi.util.io.FileUtil[JavaMethodDescriptor]
-
-'JpsJsModuleUtils' @ [205:50] ==> public object JpsJsModuleUtils defined in org.jetbrains.kotlin.jps.build[FakeCallableDescriptorForObject]
 
 'getOutputMetaFile' @ [205:67] ==> @JvmStatic public final fun getOutputMetaFile(outputDir: File, moduleName: String, isTests: Boolean): File defined in org.jetbrains.kotlin.jps.build.JpsJsModuleUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -1315,7 +1311,7 @@ Inferred types:
 
 'assertSameElements' @ [611:24] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'getMethodsOfClass' @ [611:43] ==> private final fun getMethodsOfClass(classFile: File): Set<String> defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1323,7 +1319,7 @@ Inferred types:
 
 'assertSameElements' @ [612:24] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'getMethodsOfClass' @ [612:43] ==> private final fun getMethodsOfClass(classFile: File): Set<String> defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1361,7 +1357,7 @@ Inferred types:
 
 'assertSameElements' @ [626:24] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'getMethodsOfClass' @ [626:43] ==> private final fun getMethodsOfClass(classFile: File): Set<String> defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1369,7 +1365,7 @@ Inferred types:
 
 'assertSameElements' @ [627:24] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'getMethodsOfClass' @ [627:43] ==> private final fun getMethodsOfClass(classFile: File): Set<String> defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1492,7 +1488,7 @@ Inferred types:
 
 'newArrayList' @ [668:92] ==> @SafeVarargs @CanIgnoreReturnValue @GwtCompatible public open fun <E : (Any..Any?)> newArrayList(vararg p0: (JpsModule..JpsModule?)): (ArrayList<(JpsModule..JpsModule?)>..ArrayList<(JpsModule..JpsModule?)>?) defined in com.google.common.collect.Lists[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> JpsModule
+    <E : (Any..Any?)> -> (org.jetbrains.jps.model.module.JpsModule..org.jetbrains.jps.model.module.JpsModule?)
 
 'findModule' @ [668:105] ==> private final fun findModule(name: String): JpsModule defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest[SimpleFunctionDescriptorImpl]
 
@@ -1524,7 +1520,7 @@ Inferred types:
 
 'newArrayList' @ [679:92] ==> @SafeVarargs @CanIgnoreReturnValue @GwtCompatible public open fun <E : (Any..Any?)> newArrayList(vararg p0: (JpsModule..JpsModule?)): (ArrayList<(JpsModule..JpsModule?)>..ArrayList<(JpsModule..JpsModule?)>?) defined in com.google.common.collect.Lists[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> JpsModule
+    <E : (Any..Any?)> -> (org.jetbrains.jps.model.module.JpsModule..org.jetbrains.jps.model.module.JpsModule?)
 
 'findModule' @ [679:105] ==> private final fun findModule(name: String): JpsModule defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest[SimpleFunctionDescriptorImpl]
 
@@ -1656,7 +1652,7 @@ Inferred types:
 
 'currentTimeMillis' @ [735:28] ==> public open fun currentTimeMillis(): Long defined in java.lang.System[JavaMethodDescriptor]
 
-'CanceledStatus' @ [736:30] ==> public fun CanceledStatus(function: () -> Boolean): CanceledStatus defined in org.jetbrains.jps.api[SimpleFunctionDescriptorImpl]
+'CanceledStatus' @ [736:30] ==> public fun CanceledStatus(function: () -> Boolean): CanceledStatus defined in org.jetbrains.jps.api[SamConstructorDescriptorImpl]
 
 '-' @ [736:49] ==> public final operator fun minus(other: Long): Long defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
@@ -1798,7 +1794,7 @@ Inferred types:
 
 'newArrayList' @ [787:55] ==> @SafeVarargs @CanIgnoreReturnValue @GwtCompatible public open fun <E : (Any..Any?)> newArrayList(vararg p0: (JpsModule..JpsModule?)): (ArrayList<(JpsModule..JpsModule?)>..ArrayList<(JpsModule..JpsModule?)>?) defined in com.google.common.collect.Lists[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> JpsModule
+    <E : (Any..Any?)> -> (org.jetbrains.jps.model.module.JpsModule..org.jetbrains.jps.model.module.JpsModule?)
 
 'findModule' @ [787:68] ==> private final fun findModule(name: String): JpsModule defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest[SimpleFunctionDescriptorImpl]
 
@@ -1877,7 +1873,7 @@ Inferred types:
 
 'render' @ [815:67] ==> @NotNull public open fun <A : (CommonToolArguments..CommonToolArguments?)> render(@NotNull p0: CLITool<(K2JVMCompilerArguments..K2JVMCompilerArguments?)>, @NotNull p1: K2JVMCompilerArguments): String defined in org.jetbrains.kotlin.cli.common.Usage[JavaMethodDescriptor]
 Inferred types:
-    <A : (CommonToolArguments..CommonToolArguments?)> -> K2JVMCompilerArguments
+    <A : (CommonToolArguments..CommonToolArguments?)> -> (org.jetbrains.kotlin.cli.common.arguments.K2JVMCompilerArguments..org.jetbrains.kotlin.cli.common.arguments.K2JVMCompilerArguments?)
 
 'K2JVMCompiler' @ [815:74] ==> public constructor K2JVMCompiler() defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler[DeserializedClassConstructorDescriptor]
 
@@ -2053,8 +2049,6 @@ Inferred types:
 
 'assertCompiled' @ [889:17] ==> public open fun assertCompiled(p0: (String..String?), vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest[JavaMethodDescriptor]
 
-'KotlinBuilder' @ [889:32] ==> public companion object defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[FakeCallableDescriptorForObject]
-
 'KOTLIN_BUILDER_NAME' @ [889:46] ==> @field:JvmField public final val KOTLIN_BUILDER_NAME: String defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion[DeserializedPropertyDescriptor]
 
 'touch' @ [891:17] ==> protected final fun touch(path: String): KotlinJpsBuildTest.Action defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest[SimpleFunctionDescriptorImpl]
@@ -2064,8 +2058,6 @@ Inferred types:
 'buildAllModules' @ [892:17] ==> protected/*protected and package*/ open fun buildAllModules(): (BuildResult..BuildResult?) defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest[JavaMethodDescriptor]
 
 'assertCompiled' @ [893:17] ==> public open fun assertCompiled(p0: (String..String?), vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest[JavaMethodDescriptor]
-
-'KotlinBuilder' @ [893:32] ==> public companion object defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[FakeCallableDescriptorForObject]
 
 'KOTLIN_BUILDER_NAME' @ [893:46] ==> @field:JvmField public final val KOTLIN_BUILDER_NAME: String defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion[DeserializedPropertyDescriptor]
 
@@ -2080,8 +2072,6 @@ Inferred types:
 'assertSuccessful' @ [897:35] ==> public open fun assertSuccessful(): Unit defined in org.jetbrains.jps.builders.BuildResult[JavaMethodDescriptor]
 
 'assertCompiled' @ [898:17] ==> public open fun assertCompiled(p0: (String..String?), vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest[JavaMethodDescriptor]
-
-'KotlinBuilder' @ [898:32] ==> public companion object defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[FakeCallableDescriptorForObject]
 
 'KOTLIN_BUILDER_NAME' @ [898:46] ==> @field:JvmField public final val KOTLIN_BUILDER_NAME: String defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion[DeserializedPropertyDescriptor]
 
@@ -2105,7 +2095,7 @@ Inferred types:
 
 'addSourceRoot' @ [910:17] ==> @NotNull public abstract fun <P : (JpsElement..JpsElement?)> addSourceRoot(@NotNull p0: String, @NotNull p1: JpsModuleSourceRootType<(JavaSourceRootProperties..JavaSourceRootProperties?)>): JpsModuleSourceRoot defined in org.jetbrains.jps.model.module.JpsModule[JavaMethodDescriptor]
 Inferred types:
-    <P : (JpsElement..JpsElement?)> -> JavaSourceRootProperties
+    <P : (JpsElement..JpsElement?)> -> (org.jetbrains.jps.model.java.JavaSourceRootProperties..org.jetbrains.jps.model.java.JavaSourceRootProperties?)
 
 'pathToUrl' @ [910:43] ==> public open fun pathToUrl(p0: (String..String?)): (String..String?) defined in org.jetbrains.jps.util.JpsPathUtil[JavaMethodDescriptor]
 
@@ -2238,9 +2228,9 @@ Inferred types:
 
 'global' @ [948:27] ==> public final val JpsModel.global: JpsGlobal[MyPropertyDescriptor]
 
-'addSdk' @ [948:34] ==> public abstract fun <P : (JpsElement..JpsElement?), SdkType : (JpsSdkType<(JpsDummyElement..JpsDummyElement?)>..JpsSdkType<(JpsDummyElement..JpsDummyElement?)>?)> addSdk(@NotNull p0: String, @Nullable p1: String?, @Nullable p2: String?, @NotNull p3: (JpsJavaSdkType..JpsJavaSdkType?)): (JpsTypedLibrary<(JpsSdk<(JpsDummyElement..JpsDummyElement?)>..JpsSdk<(JpsDummyElement..JpsDummyElement?)>?)>..JpsTypedLibrary<(JpsSdk<(JpsDummyElement..JpsDummyElement?)>..JpsSdk<(JpsDummyElement..JpsDummyElement?)>?)>?) where SdkType : (JpsElementTypeWithDefaultProperties<(JpsDummyElement..JpsDummyElement?)>..JpsElementTypeWithDefaultProperties<(JpsDummyElement..JpsDummyElement?)>?) defined in org.jetbrains.jps.model.JpsGlobal[JavaMethodDescriptor]
+'addSdk' @ [948:34] ==> public abstract fun <P : (JpsElement..JpsElement?), SdkType : (JpsSdkType<(JpsDummyElement..JpsDummyElement?)>..JpsSdkType<(JpsDummyElement..JpsDummyElement?)>?)> addSdk(@NotNull p0: String, @Nullable p1: String?, @Nullable p2: String?, @NotNull p3: JpsJavaSdkType): (JpsTypedLibrary<(JpsSdk<(JpsDummyElement..JpsDummyElement?)>..JpsSdk<(JpsDummyElement..JpsDummyElement?)>?)>..JpsTypedLibrary<(JpsSdk<(JpsDummyElement..JpsDummyElement?)>..JpsSdk<(JpsDummyElement..JpsDummyElement?)>?)>?) where SdkType : (JpsElementTypeWithDefaultProperties<(JpsDummyElement..JpsDummyElement?)>..JpsElementTypeWithDefaultProperties<(JpsDummyElement..JpsDummyElement?)>?) defined in org.jetbrains.jps.model.JpsGlobal[JavaMethodDescriptor]
 Inferred types:
-    <P : (JpsElement..JpsElement?)> -> JpsDummyElement
+    <P : (JpsElement..JpsElement?)> -> (org.jetbrains.jps.model.JpsDummyElement..org.jetbrains.jps.model.JpsDummyElement?)
     <SdkType : (JpsSdkType<(P..P?)>..JpsSdkType<(P..P?)>?) & (JpsElementTypeWithDefaultProperties<(P..P?)>..JpsElementTypeWithDefaultProperties<(P..P?)>?)> -> (org.jetbrains.jps.model.java.JpsJavaSdkType..org.jetbrains.jps.model.java.JpsJavaSdkType?)
 
 'JDK_NAME' @ [948:41] ==> private final val JDK_NAME: String defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest.Companion[PropertyDescriptorImpl]
@@ -2558,8 +2548,6 @@ Inferred types:
 'pathsToCompile' @ [1051:13] ==> value-parameter pathsToCompile: Array<String>? defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest.checkWhen[ValueParameterDescriptorImpl]
 
 'assertCompiled' @ [1052:13] ==> public open fun assertCompiled(p0: (String..String?), vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.jps.build.KotlinJpsBuildTest[JavaMethodDescriptor]
-
-'KotlinBuilder' @ [1052:28] ==> public companion object defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[FakeCallableDescriptorForObject]
 
 'KOTLIN_BUILDER_NAME' @ [1052:42] ==> @field:JvmField public final val KOTLIN_BUILDER_NAME: String defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion[DeserializedPropertyDescriptor]
 

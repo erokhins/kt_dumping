@@ -8,9 +8,9 @@
 
 'type' @ [31:34] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.psi2ir.intermediate.generateDelegatedValue[ValueParameterDescriptorImpl]
 
-'lazy' @ [32:33] ==> public fun <T> lazy(initializer: () -> IntermediateValue): Lazy<IntermediateValue> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [32:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> IntermediateValue
+    <T> -> T
 
 'invoke' @ [32:40] ==> public abstract operator fun invoke(): IntermediateValue defined in kotlin.Function0[FunctionInvokeDescriptor]
 

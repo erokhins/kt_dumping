@@ -331,8 +331,6 @@ Inferred types:
 
 'getStableNullability' @ [142:63] ==> public abstract fun getStableNullability(key: DataFlowValue): Nullability defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[DeserializedSimpleFunctionDescriptor]
 
-'DataFlowValueFactory' @ [143:37] ==> public object DataFlowValueFactory defined in org.jetbrains.kotlin.resolve.calls.smartcasts[FakeCallableDescriptorForObject]
-
 'createDataFlowValue' @ [143:58] ==> @JvmStatic public final fun createDataFlowValue(expression: KtExpression, type: KotlinType, bindingContext: BindingContext, containingDeclarationOrModule: DeclarationDescriptor): DataFlowValue defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory[DeserializedSimpleFunctionDescriptor]
 
 'psiElement' @ [143:78] ==> val psiElement: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.AddExclExclCallFix.getExpressionForIntroduceCall[LocalVariableDescriptor]
@@ -403,7 +401,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [170:28] ==> val diagnosticWithParameters: DiagnosticWithParameters3<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (String..String?), (String..String?)> defined in org.jetbrains.kotlin.idea.quickfix.SmartCastImpossibleExclExclFixFactory.createAction[LocalVariableDescriptor]
 
-'a' @ [170:53] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (String..String?), (String..String?)>.a: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'a' @ [170:53] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (String..String?), (String..String?)>.a: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -412,11 +410,11 @@ Inferred types:
 
 'isNullableType' @ [171:23] ==> public open fun isNullableType(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.types.TypeUtils[JavaMethodDescriptor]
 
-'expectedType' @ [171:38] ==> val expectedType: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.idea.quickfix.SmartCastImpossibleExclExclFixFactory.createAction[LocalVariableDescriptor]
+'expectedType' @ [171:38] ==> val expectedType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.SmartCastImpossibleExclExclFixFactory.createAction[LocalVariableDescriptor]
 
 'makeNullable' @ [172:46] ==> @NotNull public open fun makeNullable(@NotNull p0: KotlinType): KotlinType defined in org.jetbrains.kotlin.types.TypeUtils[JavaMethodDescriptor]
 
-'expectedType' @ [172:59] ==> val expectedType: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.idea.quickfix.SmartCastImpossibleExclExclFixFactory.createAction[LocalVariableDescriptor]
+'expectedType' @ [172:59] ==> val expectedType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.SmartCastImpossibleExclExclFixFactory.createAction[LocalVariableDescriptor]
 
 '!' @ [173:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -471,8 +469,6 @@ Inferred types:
 'memberScope' @ [193:29] ==> val memberScope: MemberScope defined in org.jetbrains.kotlin.idea.quickfix.MissingIteratorExclExclFixFactory.createAction.hasIteratorFunction[LocalVariableDescriptor]
 
 'getContributedFunctions' @ [193:41] ==> public abstract fun getContributedFunctions(name: Name, location: LookupLocation): Collection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
-
-'OperatorNameConventions' @ [193:65] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'ITERATOR' @ [193:89] ==> @field:JvmField public final val ITERATOR: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 

@@ -14,15 +14,15 @@ Inferred types:
 
 'klass' @ [46:13] ==> var klass: Class<out Any?> defined in org.jetbrains.kotlin.utils.isProcessCanceledException[LocalVariableDescriptor]
 
-'canonicalName' @ [46:19] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.canonicalName: (String..String?)[MyPropertyDescriptor]
+'canonicalName' @ [46:19] ==> public final val <T : (Any..Any?)> Class<out Any?>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out Any?)
 
 'klass' @ [47:9] ==> var klass: Class<out Any?> defined in org.jetbrains.kotlin.utils.isProcessCanceledException[LocalVariableDescriptor]
 
 'klass' @ [47:17] ==> var klass: Class<out Any?> defined in org.jetbrains.kotlin.utils.isProcessCanceledException[LocalVariableDescriptor]
 
-'superclass' @ [47:23] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [47:23] ==> public final val <T : (Any..Any?)> Class<out Any?>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out Any?)
 

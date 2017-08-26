@@ -22,7 +22,7 @@
 
 'descriptor' @ [54:26] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmFieldApplicabilityChecker.check[ValueParameterDescriptorImpl]
 
-'findJvmFieldAnnotation' @ [54:37] ==> public fun DeclarationDescriptor.findJvmFieldAnnotation(): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.jvm.annotations[SimpleFunctionDescriptorImpl]
+'findJvmFieldAnnotation' @ [54:37] ==> public fun DeclarationDescriptor.findJvmFieldAnnotation(): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.jvm.annotations in file annotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'when {
             descriptor !is PropertyDescriptor -> return
@@ -114,11 +114,13 @@ Inferred types:
 
 'declaration' @ [67:66] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmFieldApplicabilityChecker.check[ValueParameterDescriptorImpl]
 
-'isInsideJvmMultifileClassFile' @ [67:78] ==> public fun KtDeclaration.isInsideJvmMultifileClassFile(): Boolean defined in org.jetbrains.kotlin.fileClasses[SimpleFunctionDescriptorImpl]
+'isInsideJvmMultifileClassFile' @ [67:78] ==> public fun KtDeclaration.isInsideJvmMultifileClassFile(): Boolean defined in org.jetbrains.kotlin.fileClasses in file JvmFileClassUtil.kt[SimpleFunctionDescriptorImpl]
 
 'TOP_LEVEL_PROPERTY_OF_MULTIFILE_FACADE' @ [68:17] ==> enum entry TOP_LEVEL_PROPERTY_OF_MULTIFILE_FACADE defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmFieldApplicabilityChecker.Problem[FakeCallableDescriptorForObject]
 
-'DescriptorToSourceUtils' @ [72:31] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [72:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtAnnotationEntry?, right: KtAnnotationEntry): KtAnnotationEntry[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtAnnotationEntry
 
 'getSourceFromAnnotation' @ [72:55] ==> @JvmStatic public final fun getSourceFromAnnotation(descriptor: AnnotationDescriptor): KtAnnotationEntry? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -154,8 +156,8 @@ Inferred types:
 
 'get' @ [80:30] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), p1: (PropertyDescriptor..PropertyDescriptor?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'BACKING_FIELD_REQUIRED' @ [80:49] ==> public final val BACKING_FIELD_REQUIRED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

@@ -133,7 +133,7 @@ Inferred types:
 
 'closeAndDeleteProject' @ [83:53] ==> public open fun closeAndDeleteProject(): Unit defined in com.intellij.testFramework.LightPlatformTestCase[JavaMethodDescriptor]
 
-'doKotlinTearDown' @ [86:5] ==> public fun doKotlinTearDown(project: Project, runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'doKotlinTearDown' @ [86:5] ==> public fun doKotlinTearDown(project: Project, runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.test in file testUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [86:22] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.test.doKotlinTearDown[ValueParameterDescriptorImpl]
 
@@ -141,7 +141,7 @@ Inferred types:
 
 'run' @ [86:42] ==> public abstract fun run(): Unit defined in org.jetbrains.kotlin.idea.test.RunnableWithException[JavaMethodDescriptor]
 
-'unInvalidateBuiltinsAndStdLib' @ [90:5] ==> public fun unInvalidateBuiltinsAndStdLib(project: Project, runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'unInvalidateBuiltinsAndStdLib' @ [90:5] ==> public fun unInvalidateBuiltinsAndStdLib(project: Project, runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.test in file testUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [90:35] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.test.doKotlinTearDown[ValueParameterDescriptorImpl]
 
@@ -243,7 +243,7 @@ Inferred types:
 
 'incModificationCount' @ [122:53] ==> public open fun incModificationCount(): Unit defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker[JavaMethodDescriptor]
 
-'extractMultipleMarkerOffsets' @ [126:12] ==> public fun Document.extractMultipleMarkerOffsets(project: Project, caretMarker: String = ...): List<Int> defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'extractMultipleMarkerOffsets' @ [126:12] ==> public fun Document.extractMultipleMarkerOffsets(project: Project, caretMarker: String = ...): List<Int> defined in org.jetbrains.kotlin.idea.test in file testUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [126:41] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.test.extractMarkerOffset[ValueParameterDescriptorImpl]
 

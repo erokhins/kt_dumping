@@ -24,8 +24,6 @@
 
 'classDescriptor' @ [71:21] ==> protected final val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.codegen.coroutines.AbstractCoroutineCodegen[PropertyDescriptorImpl]
 
-'Annotations' @ [71:38] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [71:50] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'identifier' @ [71:62] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
@@ -80,8 +78,6 @@ Inferred types:
 
 'nullableAnyType' @ [82:32] ==> public final val KotlinBuiltIns.nullableAnyType: SimpleType[MyPropertyDescriptor]
 
-'Modality' @ [83:23] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [83:32] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [84:36] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -93,8 +89,6 @@ Inferred types:
 'this' @ [91:21] ==> <this> defined in org.jetbrains.kotlin.codegen.coroutines.AbstractCoroutineCodegen.createValueParameterForDoResume[ReceiverParameterDescriptorImpl]
 
 'index' @ [91:33] ==> value-parameter index: Int defined in org.jetbrains.kotlin.codegen.coroutines.AbstractCoroutineCodegen.createValueParameterForDoResume[ValueParameterDescriptorImpl]
-
-'Annotations' @ [91:40] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [91:52] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -173,7 +167,7 @@ Inferred types:
 
 'iv' @ [112:13] ==> val iv: InstructionAdapter defined in org.jetbrains.kotlin.codegen.coroutines.AbstractCoroutineCodegen.generateConstructor[LocalVariableDescriptor]
 
-'generateClosureFieldsInitializationFromParameters' @ [112:16] ==> public fun InstructionAdapter.generateClosureFieldsInitializationFromParameters(closure: CalculatedClosure, args: List<FieldInfo>): Pair<Int, Type>? defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'generateClosureFieldsInitializationFromParameters' @ [112:16] ==> public fun InstructionAdapter.generateClosureFieldsInitializationFromParameters(closure: CalculatedClosure, args: List<FieldInfo>): Pair<Int, Type>? defined in org.jetbrains.kotlin.codegen in file callableReferenceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'closure' @ [112:66] ==> protected/*protected and package*/ final val closure: (CalculatedClosure..CalculatedClosure?) defined in org.jetbrains.kotlin.codegen.coroutines.AbstractCoroutineCodegen[JavaPropertyDescriptor]
 
@@ -289,7 +283,7 @@ Inferred types:
 
 'module' @ [154:35] ==> public val DeclarationDescriptor.module: ModuleDescriptor defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
-'getContinuationOfTypeOrAny' @ [154:42] ==> public fun ModuleDescriptor.getContinuationOfTypeOrAny(kotlinType: KotlinType): SimpleType defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'getContinuationOfTypeOrAny' @ [154:42] ==> public fun ModuleDescriptor.getContinuationOfTypeOrAny(kotlinType: KotlinType): SimpleType defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'builtIns' @ [154:69] ==> private final val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForLambda[PropertyDescriptorImpl]
 
@@ -297,7 +291,7 @@ Inferred types:
 
 'putUserData' @ [157:13] ==> @NotNull public abstract fun <V : (Any..Any?)> putUserData(@NotNull p0: FunctionDescriptor.UserDataKey<(FunctionDescriptor..FunctionDescriptor?)>, p1: (FunctionDescriptor..FunctionDescriptor?)): FunctionDescriptor.CopyBuilder<out (FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor.CopyBuilder[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION' @ [157:25] ==> @JvmField public val INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION: FunctionDescriptor.UserDataKey<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[PropertyDescriptorImpl]
 
@@ -341,8 +335,6 @@ Inferred types:
 
 'generateMethod' @ [179:25] ==> public open fun generateMethod(@NotNull origin: JvmDeclarationOrigin, @NotNull descriptor: FunctionDescriptor, @NotNull strategy: FunctionGenerationStrategy): Unit defined in org.jetbrains.kotlin.codegen.FunctionCodegen[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [179:40] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [179:61] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'createCoroutineDescriptor' @ [179:72] ==> private final val createCoroutineDescriptor: (FunctionDescriptor..FunctionDescriptor?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForLambda[PropertyDescriptorImpl]
@@ -358,8 +350,6 @@ Inferred types:
 'functionCodegen' @ [187:9] ==> public final val functionCodegen: (FunctionCodegen..FunctionCodegen?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForLambda[JavaPropertyDescriptor]
 
 'generateMethod' @ [187:25] ==> public open fun generateMethod(@NotNull origin: JvmDeclarationOrigin, @NotNull descriptor: FunctionDescriptor, @NotNull strategy: FunctionGenerationStrategy): Unit defined in org.jetbrains.kotlin.codegen.FunctionCodegen[JavaMethodDescriptor]
-
-'JvmDeclarationOrigin' @ [187:40] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
 
 'NO_ORIGIN' @ [187:61] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
@@ -457,7 +447,7 @@ Inferred types:
 
 'parameterTypes' @ [208:9] ==> val parameterTypes: List<Type> defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForLambda.generateInvokeMethod[LocalVariableDescriptor]
 
-'withVariableIndices' @ [208:24] ==> public fun Collection<Type>.withVariableIndices(): List<Pair<Int, Type>> defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'withVariableIndices' @ [208:24] ==> public fun Collection<Type>.withVariableIndices(): List<Pair<Int, Type>> defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'forEach' @ [208:46] ==> @HidesMembers public inline fun <T> Iterable<Pair<Int, Type>>.forEach(action: (Pair<Int, Type>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -715,7 +705,7 @@ Inferred types:
 
 'mappedType' @ [285:31] ==> val mappedType: Type defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForLambda.initializeCoroutineParameters[LocalVariableDescriptor]
 
-'initializeVariablesForDestructuredLambdaParameters' @ [288:9] ==> public fun initializeVariablesForDestructuredLambdaParameters(codegen: ExpressionCodegen, valueParameters: List<ValueParameterDescriptor>): Unit defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'initializeVariablesForDestructuredLambdaParameters' @ [288:9] ==> public fun initializeVariablesForDestructuredLambdaParameters(codegen: ExpressionCodegen, valueParameters: List<ValueParameterDescriptor>): Unit defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [288:60] ==> <this> defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForLambda.initializeCoroutineParameters[ReceiverParameterDescriptorImpl]
 
@@ -731,6 +721,10 @@ Inferred types:
 Inferred types:
     <T> -> ReceiverParameterDescriptor?
     <R> -> List<ReceiverParameterDescriptor>
+
+'listOfNotNull' @ [292:80] ==> public fun <T : Any> listOfNotNull(element: ReceiverParameterDescriptor?): List<ReceiverParameterDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T : Any> -> ReceiverParameterDescriptor
 
 'originalSuspendFunctionDescriptor' @ [293:13] ==> private final val originalSuspendFunctionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForLambda[PropertyDescriptorImpl]
 
@@ -888,8 +882,6 @@ Inferred types:
 
 'newField' @ [375:11] ==> @NotNull public abstract fun newField(@NotNull origin: JvmDeclarationOrigin, access: Int, @NotNull name: String, @NotNull desc: String, @Nullable signature: String?, @Nullable value: Any?): FieldVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [376:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [376:38] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'or' @ [376:49] ==> public final infix fun or(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
@@ -907,8 +899,6 @@ Inferred types:
 'v' @ [379:9] ==> public final val v: (ClassBuilder..ClassBuilder?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForNamedFunction[JavaPropertyDescriptor]
 
 'newField' @ [379:11] ==> @NotNull public abstract fun newField(@NotNull origin: JvmDeclarationOrigin, access: Int, @NotNull name: String, @NotNull desc: String, @Nullable signature: String?, @Nullable value: Any?): FieldVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
-
-'JvmDeclarationOrigin' @ [380:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
 
 'NO_ORIGIN' @ [380:38] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
@@ -1029,6 +1019,8 @@ Inferred types:
 
 'typeMapper' @ [410:72] ==> public final val typeMapper: (KotlinTypeMapper..KotlinTypeMapper?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForNamedFunction[JavaPropertyDescriptor]
 
+'mapType' @ [410:84] ==> @NotNull public open fun mapType(@NotNull descriptor: ClassifierDescriptor): Type defined in org.jetbrains.kotlin.codegen.state.KotlinTypeMapper[JavaMethodDescriptor]
+
 'captureThisType' @ [411:29] ==> val captureThisType: Type? defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForNamedFunction.generateDoResume.<no name provided>.doGenerateBody[LocalVariableDescriptor]
 
 'field' @ [412:40] ==> @NotNull public open fun field(@NotNull type: Type, @NotNull owner: Type, @NotNull name: String, isStatic: Boolean, @NotNull receiver: StackValue): StackValue.Field defined in org.jetbrains.kotlin.codegen.StackValue[JavaMethodDescriptor]
@@ -1122,7 +1114,7 @@ Inferred types:
 
 'getAsmMethod' @ [434:55] ==> public final fun getAsmMethod(): Method defined in org.jetbrains.kotlin.codegen.CallableMethod[SimpleFunctionDescriptorImpl]
 
-'getImplForOpenMethod' @ [434:70] ==> public fun Method.getImplForOpenMethod(ownerInternalName: String): Method defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'getImplForOpenMethod' @ [434:70] ==> public fun Method.getImplForOpenMethod(ownerInternalName: String): Method defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'owner' @ [434:91] ==> val owner: (String..String?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForNamedFunction.generateDoResume.<no name provided>.doGenerateBody[LocalVariableDescriptor]
 
@@ -1161,8 +1153,6 @@ Inferred types:
 'v' @ [448:18] ==> public final val v: (ClassBuilder..ClassBuilder?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForNamedFunction[JavaPropertyDescriptor]
 
 'newMethod' @ [448:20] ==> @NotNull public abstract fun newMethod(@NotNull origin: JvmDeclarationOrigin, access: Int, @NotNull name: String, @NotNull desc: String, @Nullable signature: String?, @Nullable exceptions: (Array<(String..String?)>?..Array<out (String..String?)>?)): MethodVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
-
-'JvmDeclarationOrigin' @ [449:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
 
 'NO_ORIGIN' @ [449:38] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
@@ -1206,8 +1196,6 @@ Inferred types:
 
 'newMethod' @ [464:20] ==> @NotNull public abstract fun newMethod(@NotNull origin: JvmDeclarationOrigin, access: Int, @NotNull name: String, @NotNull desc: String, @Nullable signature: String?, @Nullable exceptions: (Array<(String..String?)>?..Array<out (String..String?)>?)): MethodVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [465:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [465:38] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'or' @ [466:17] ==> public final infix fun or(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
@@ -1250,7 +1238,7 @@ Inferred types:
 
 'visitEnd' @ [476:12] ==> public open fun visitEnd(): Unit defined in org.jetbrains.org.objectweb.asm.MethodVisitor[JavaMethodDescriptor]
 
-'writeKotlinMetadata' @ [480:9] ==> public fun writeKotlinMetadata(cb: ClassBuilder, state: GenerationState, kind: KotlinClassHeader.Kind, extraFlags: Int, action: (AnnotationVisitor) -> Unit): Unit defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'writeKotlinMetadata' @ [480:9] ==> public fun writeKotlinMetadata(cb: ClassBuilder, state: GenerationState, kind: KotlinClassHeader.Kind, extraFlags: Int, action: (AnnotationVisitor) -> Unit): Unit defined in org.jetbrains.kotlin.codegen in file writeAnnotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'v' @ [480:29] ==> public final val v: (ClassBuilder..ClassBuilder?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineCodegenForNamedFunction[JavaPropertyDescriptor]
 

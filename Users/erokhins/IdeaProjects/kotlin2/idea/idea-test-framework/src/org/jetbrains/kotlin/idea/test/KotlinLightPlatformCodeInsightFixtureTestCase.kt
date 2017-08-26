@@ -38,7 +38,7 @@
 
 'getHomeDirectory' @ [41:58] ==> @NotNull public open fun getHomeDirectory(): String defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 
-'doKotlinTearDown' @ [43:9] ==> public fun doKotlinTearDown(project: Project, runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'doKotlinTearDown' @ [43:9] ==> public fun doKotlinTearDown(project: Project, runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.test in file testUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [43:26] ==> protected/*protected and package*/ for synthetic extension final val KotlinLightPlatformCodeInsightFixtureTestCase.project: (Project..Project?)[MyPropertyDescriptor]
 

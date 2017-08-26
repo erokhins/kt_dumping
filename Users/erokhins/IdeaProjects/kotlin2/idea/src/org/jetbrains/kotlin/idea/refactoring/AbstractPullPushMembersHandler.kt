@@ -187,10 +187,10 @@ Inferred types:
 
 'elements' @ [99:16] ==> value-parameter elements: Array<out PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.AbstractPullPushMembersHandler.isEnabledOnElements[ValueParameterDescriptorImpl]
 
-'mapTo' @ [99:25] ==> public inline fun <T, R, C : MutableCollection<in KtClassOrObject>> Array<out PsiElement>.mapTo(destination: HashSet<PsiElement>, transform: (PsiElement) -> KtClassOrObject): HashSet<PsiElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapTo' @ [99:25] ==> public inline fun <T, R, C : MutableCollection<in PsiElement>> Array<out PsiElement>.mapTo(destination: HashSet<PsiElement>, transform: (PsiElement) -> PsiElement): HashSet<PsiElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiElement
-    <R> -> KtClassOrObject
+    <R> -> PsiElement
     <C : MutableCollection<in R>> -> HashSet<PsiElement>
 
 'HashSet' @ [99:31] ==> public constructor HashSet<E : (Any..Any?)>() defined in java.util.HashSet[JavaClassConstructorDescriptor]

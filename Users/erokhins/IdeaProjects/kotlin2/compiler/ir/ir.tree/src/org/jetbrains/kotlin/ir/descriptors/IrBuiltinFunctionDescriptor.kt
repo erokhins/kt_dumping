@@ -2,8 +2,6 @@
 
 'containingDeclaration' @ [34:42] ==> value-parameter containingDeclaration: DeclarationDescriptor defined in org.jetbrains.kotlin.ir.descriptors.IrBuiltinOperatorDescriptorBase.<init>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [34:65] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [34:77] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'name' @ [34:84] ==> value-parameter name: Name defined in org.jetbrains.kotlin.ir.descriptors.IrBuiltinOperatorDescriptorBase.<init>[ValueParameterDescriptorImpl]
@@ -67,8 +65,6 @@ Inferred types:
 'VariableDescriptorImpl' @ [93:5] ==> public constructor VariableDescriptorImpl(@NotNull p0: DeclarationDescriptor, @NotNull p1: Annotations, @NotNull p2: Name, @Nullable p3: KotlinType?, @NotNull p4: SourceElement) defined in org.jetbrains.kotlin.descriptors.impl.VariableDescriptorImpl[JavaClassConstructorDescriptor]
 
 'containingDeclaration' @ [93:28] ==> value-parameter containingDeclaration: CallableDescriptor defined in org.jetbrains.kotlin.ir.descriptors.IrBuiltinValueParameterDescriptorImpl.<init>[ValueParameterDescriptorImpl]
-
-'Annotations' @ [93:51] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [93:63] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

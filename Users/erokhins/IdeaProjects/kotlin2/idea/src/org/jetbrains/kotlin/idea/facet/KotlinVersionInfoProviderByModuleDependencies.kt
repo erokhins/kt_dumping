@@ -12,7 +12,11 @@ Inferred types:
 
 'JsLibraryStdDetectionUtil' @ [34:49] ==> public object JsLibraryStdDetectionUtil defined in org.jetbrains.kotlin.idea.framework[FakeCallableDescriptorForObject]
 
+'getJsLibraryStdVersion' @ [34:76] ==> public final fun getJsLibraryStdVersion(library: Library): String? defined in org.jetbrains.kotlin.idea.framework.JsLibraryStdDetectionUtil[DeserializedSimpleFunctionDescriptor]
+
 'JavaRuntimeDetectionUtil' @ [35:42] ==> public constructor JavaRuntimeDetectionUtil() defined in org.jetbrains.kotlin.idea.framework.JavaRuntimeDetectionUtil[JavaClassConstructorDescriptor]
+
+'getJavaRuntimeVersion' @ [35:68] ==> public open fun getJavaRuntimeVersion(@NotNull p0: Library): (String..String?) defined in org.jetbrains.kotlin.idea.framework.JavaRuntimeDetectionUtil[JavaMethodDescriptor]
 
 'emptyList' @ [36:52] ==> public fun <T> emptyList(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

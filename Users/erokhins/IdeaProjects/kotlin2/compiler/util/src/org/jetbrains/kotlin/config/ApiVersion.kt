@@ -1,7 +1,5 @@
 'this' @ [27:17] ==> <this> defined in org.jetbrains.kotlin.config.ApiVersion[LazyClassReceiverParameterDescriptor]
 
-'ApiVersion' @ [27:25] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
-
 'LATEST_STABLE' @ [27:36] ==> @JvmField public final val LATEST_STABLE: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[PropertyDescriptorImpl]
 
 'if (isStable) versionString else "$versionString (EXPERIMENTAL)"' @ [30:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
@@ -40,15 +38,11 @@ Inferred types:
 
 'createByLanguageVersion' @ [45:26] ==> @JvmStatic public final fun createByLanguageVersion(version: LanguageVersion): ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[SimpleFunctionDescriptorImpl]
 
-'LanguageVersion' @ [45:50] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_0' @ [45:66] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'JvmField' @ [47:9] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
 'createByLanguageVersion' @ [48:26] ==> @JvmStatic public final fun createByLanguageVersion(version: LanguageVersion): ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[SimpleFunctionDescriptorImpl]
-
-'LanguageVersion' @ [48:50] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_1' @ [48:66] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
@@ -56,15 +50,11 @@ Inferred types:
 
 'createByLanguageVersion' @ [51:26] ==> @JvmStatic public final fun createByLanguageVersion(version: LanguageVersion): ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[SimpleFunctionDescriptorImpl]
 
-'LanguageVersion' @ [51:50] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_2' @ [51:66] ==> enum entry KOTLIN_1_2 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'JvmField' @ [53:9] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
 'createByLanguageVersion' @ [54:41] ==> @JvmStatic public final fun createByLanguageVersion(version: LanguageVersion): ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[SimpleFunctionDescriptorImpl]
-
-'LanguageVersion' @ [54:65] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'LATEST_STABLE' @ [54:81] ==> @JvmField public final val LATEST_STABLE: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersion.Companion[PropertyDescriptorImpl]
 

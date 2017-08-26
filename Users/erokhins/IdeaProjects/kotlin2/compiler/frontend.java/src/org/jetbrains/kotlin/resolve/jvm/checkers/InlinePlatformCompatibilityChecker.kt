@@ -8,7 +8,7 @@
 
 'resultingDescriptor' @ [42:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 '!' @ [43:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -68,13 +68,9 @@ Inferred types:
 
 'reportOn' @ [65:21] ==> value-parameter reportOn: PsiElement defined in org.jetbrains.kotlin.resolve.jvm.checkers.InlinePlatformCompatibilityChecker.check[ValueParameterDescriptorImpl]
 
-'JvmTarget' @ [66:21] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'getDescription' @ [66:31] ==> public final fun getDescription(bytecodeVersion: Int): String defined in org.jetbrains.kotlin.config.JvmTarget.Companion[SimpleFunctionDescriptorImpl]
 
 'inliningBytecodeVersion' @ [66:46] ==> val inliningBytecodeVersion: Int defined in org.jetbrains.kotlin.resolve.jvm.checkers.InlinePlatformCompatibilityChecker.check[LocalVariableDescriptor]
-
-'JvmTarget' @ [67:21] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'getDescription' @ [67:31] ==> public final fun getDescription(bytecodeVersion: Int): String defined in org.jetbrains.kotlin.config.JvmTarget.Companion[SimpleFunctionDescriptorImpl]
 

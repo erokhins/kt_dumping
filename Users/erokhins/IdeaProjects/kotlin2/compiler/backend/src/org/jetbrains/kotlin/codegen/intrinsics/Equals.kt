@@ -1,6 +1,6 @@
 'IntrinsicMethod' @ [24:16] ==> public constructor IntrinsicMethod() defined in org.jetbrains.kotlin.codegen.intrinsics.IntrinsicMethod[JavaClassConstructorDescriptor]
 
-'createBinaryIntrinsicCallable' @ [26:13] ==> public fun createBinaryIntrinsicCallable(returnType: Type, valueParameterType: Type, thisType: Type? = ..., receiverType: Type? = ..., lambda: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics[SimpleFunctionDescriptorImpl]
+'createBinaryIntrinsicCallable' @ [26:13] ==> public fun createBinaryIntrinsicCallable(returnType: Type, valueParameterType: Type, thisType: Type? = ..., receiverType: Type? = ..., lambda: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics in file IntrinsicCallable.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [27:21] ==> value-parameter method: CallableMethod defined in org.jetbrains.kotlin.codegen.intrinsics.Equals.toCallable[ValueParameterDescriptorImpl]
 

@@ -8,7 +8,7 @@
 
 'SmartList' @ [34:65] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> IrTypeParameter
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.ir.declarations.IrTypeParameter..org.jetbrains.kotlin.ir.declarations.IrTypeParameter?)
 
 'ArrayList' @ [38:67] ==> public final fun <E> <init>(): ArrayList<IrValueParameter> /* = ArrayList<IrValueParameter> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
 Inferred types:

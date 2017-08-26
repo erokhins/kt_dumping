@@ -34,7 +34,7 @@ Inferred types:
 
 'substitutor' @ [49:43] ==> value-parameter substitutor: TypeSubstitutor defined in org.jetbrains.kotlin.resolve.FunctionImportedFromObject.substitute[ValueParameterDescriptorImpl]
 
-'asImportedFromObject' @ [49:57] ==> public fun FunctionDescriptor.asImportedFromObject(original: FunctionImportedFromObject? = ...): FunctionImportedFromObject defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'asImportedFromObject' @ [49:57] ==> public fun FunctionDescriptor.asImportedFromObject(original: FunctionImportedFromObject? = ...): FunctionImportedFromObject defined in org.jetbrains.kotlin.resolve in file importedFromObject.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [49:78] ==> <this> defined in org.jetbrains.kotlin.resolve.FunctionImportedFromObject[LazyClassReceiverParameterDescriptor]
 
@@ -46,11 +46,11 @@ Inferred types:
 
 'java' @ [57:91] ==> public val <T> KClass<out FunctionImportedFromObject>.java: Class<out FunctionImportedFromObject> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> FunctionImportedFromObject
+    <T> -> Captured(out FunctionImportedFromObject)
 
 'simpleName' @ [57:96] ==> public final val <T : (Any..Any?)> Class<out FunctionImportedFromObject>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FunctionImportedFromObject
+    <T : (Any..Any?)> -> Captured(out FunctionImportedFromObject)
 
 'this' @ [57:125] ==> <this> defined in org.jetbrains.kotlin.resolve.FunctionImportedFromObject[LazyClassReceiverParameterDescriptor]
 
@@ -70,7 +70,7 @@ Inferred types:
 
 'substitutor' @ [69:91] ==> value-parameter substitutor: TypeSubstitutor defined in org.jetbrains.kotlin.resolve.PropertyImportedFromObject.substitute[ValueParameterDescriptorImpl]
 
-'asImportedFromObject' @ [69:105] ==> public fun PropertyDescriptor.asImportedFromObject(original: PropertyImportedFromObject? = ...): PropertyImportedFromObject defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'asImportedFromObject' @ [69:105] ==> public fun PropertyDescriptor.asImportedFromObject(original: PropertyImportedFromObject? = ...): PropertyImportedFromObject defined in org.jetbrains.kotlin.resolve in file importedFromObject.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [69:126] ==> <this> defined in org.jetbrains.kotlin.resolve.PropertyImportedFromObject[LazyClassReceiverParameterDescriptor]
 
@@ -82,11 +82,11 @@ Inferred types:
 
 'java' @ [77:91] ==> public val <T> KClass<out PropertyImportedFromObject>.java: Class<out PropertyImportedFromObject> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PropertyImportedFromObject
+    <T> -> Captured(out PropertyImportedFromObject)
 
 'simpleName' @ [77:96] ==> public final val <T : (Any..Any?)> Class<out PropertyImportedFromObject>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PropertyImportedFromObject
+    <T : (Any..Any?)> -> Captured(out PropertyImportedFromObject)
 
 'this' @ [77:125] ==> <this> defined in org.jetbrains.kotlin.resolve.PropertyImportedFromObject[LazyClassReceiverParameterDescriptor]
 

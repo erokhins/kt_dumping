@@ -79,7 +79,7 @@ Inferred types:
 
 'visibility' @ [82:23] ==> public final val FunctionDescriptor.visibility: Visibility[MyPropertyDescriptor]
 
-'isVisibleOutside' @ [82:34] ==> public fun Visibility.isVisibleOutside(): Boolean defined in org.jetbrains.kotlin.synthetic[SimpleFunctionDescriptorImpl]
+'isVisibleOutside' @ [82:34] ==> public fun Visibility.isVisibleOutside(): Boolean defined in org.jetbrains.kotlin.synthetic in file syntheticExtensionsUtils.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [83:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -187,8 +187,6 @@ Inferred types:
 
 'substitute' @ [114:16] ==> @Nullable public abstract fun substitute(@NotNull substitutor: TypeSubstitutor): FunctionDescriptor? defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor[JavaMethodDescriptor]
 
-'TypeConstructorSubstitution' @ [115:17] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
-
 'create' @ [116:26] ==> @JvmStatic public final fun create(kotlinType: KotlinType): TypeSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[DeserializedSimpleFunctionDescriptor]
 
 'correspondingSupertype' @ [116:33] ==> val correspondingSupertype: KotlinType defined in org.jetbrains.kotlin.synthetic.SamAdapterFunctionsScope.substituteForReceiverType[LocalVariableDescriptor]
@@ -214,8 +212,6 @@ Inferred types:
 'memberScope' @ [124:18] ==> public abstract val memberScope: MemberScope defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 
 'getContributedDescriptors' @ [124:30] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [124:56] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'FUNCTIONS' @ [124:77] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -278,15 +274,11 @@ Inferred types:
 
 'getContributedDescriptors' @ [146:38] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter = ..., nameFilter: (Name) -> Boolean = ...): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.ResolutionScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [146:64] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS' @ [146:85] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'scope' @ [150:16] ==> value-parameter scope: ResolutionScope defined in org.jetbrains.kotlin.synthetic.SamAdapterFunctionsScope.getSyntheticConstructors[ValueParameterDescriptorImpl]
 
 'getContributedDescriptors' @ [150:22] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter = ..., nameFilter: (Name) -> Boolean = ...): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.ResolutionScope[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [150:48] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'CLASSIFIERS' @ [150:69] ==> @field:JvmField public final val CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -473,9 +465,9 @@ Inferred types:
 Inferred types:
     <T : Any> -> FunctionDescriptor
 
-'lazy' @ [228:112] ==> public fun <T> lazy(initializer: () -> Map<TypeParameterDescriptor, (TypeParameterDescriptor..TypeParameterDescriptor?)>): Lazy<Map<TypeParameterDescriptor, (TypeParameterDescriptor..TypeParameterDescriptor?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [228:112] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<TypeParameterDescriptor, (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)>
+    <T> -> T
 
 'baseDescriptorForSynthetic' @ [229:13] ==> public open var baseDescriptorForSynthetic: FunctionDescriptor defined in org.jetbrains.kotlin.synthetic.SamAdapterFunctionsScope.MyFunctionDescriptor[PropertyDescriptorImpl]
 
@@ -488,9 +480,9 @@ Inferred types:
 
 'typeParameters' @ [229:59] ==> public final val SamAdapterFunctionsScope.MyFunctionDescriptor.typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)>[MyPropertyDescriptor]
 
-'toMap' @ [229:75] ==> public fun <K, V> Iterable<Pair<TypeParameterDescriptor, (TypeParameterDescriptor..TypeParameterDescriptor?)>>.toMap(): Map<TypeParameterDescriptor, (TypeParameterDescriptor..TypeParameterDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toMap' @ [229:75] ==> public fun <K, V> Iterable<Pair<(TypeParameterDescriptor..TypeParameterDescriptor?), (TypeParameterDescriptor..TypeParameterDescriptor?)>>.toMap(): Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (TypeParameterDescriptor..TypeParameterDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> TypeParameterDescriptor
+    <K> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
     <V> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
 'MyFunctionDescriptor' @ [234:34] ==> public constructor MyFunctionDescriptor(containingDeclaration: DeclarationDescriptor, original: SimpleFunctionDescriptor?, annotations: Annotations, name: Name, kind: CallableMemberDescriptor.Kind, source: SourceElement) defined in org.jetbrains.kotlin.synthetic.SamAdapterFunctionsScope.MyFunctionDescriptor[ClassConstructorDescriptorImpl]
@@ -545,8 +537,6 @@ Inferred types:
 
 'sourceTypeParams' @ [246:86] ==> val sourceTypeParams: MutableList<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.synthetic.SamAdapterFunctionsScope.MyFunctionDescriptor.Companion.create[LocalVariableDescriptor]
 
-'TypeSubstitution' @ [246:104] ==> public companion object defined in org.jetbrains.kotlin.types.TypeSubstitution[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [246:121] ==> @field:JvmField public final val EMPTY: TypeSubstitution defined in org.jetbrains.kotlin.types.TypeSubstitution.Companion[DeserializedPropertyDescriptor]
 
 'descriptor' @ [246:128] ==> val descriptor: SamAdapterFunctionsScope.MyFunctionDescriptor defined in org.jetbrains.kotlin.synthetic.SamAdapterFunctionsScope.MyFunctionDescriptor.Companion.create[LocalVariableDescriptor]
@@ -590,8 +580,6 @@ Inferred types:
 'valueParameters' @ [254:97] ==> val valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>?) defined in org.jetbrains.kotlin.synthetic.SamAdapterFunctionsScope.MyFunctionDescriptor.Companion.create[LocalVariableDescriptor]
 
 'returnType' @ [254:114] ==> val returnType: KotlinType defined in org.jetbrains.kotlin.synthetic.SamAdapterFunctionsScope.MyFunctionDescriptor.Companion.create[LocalVariableDescriptor]
-
-'Modality' @ [255:39] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [255:48] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

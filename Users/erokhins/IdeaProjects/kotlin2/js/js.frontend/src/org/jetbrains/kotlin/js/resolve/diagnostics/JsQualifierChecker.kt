@@ -80,3 +80,5 @@ Inferred types:
 
 'Char' @ [45:86] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
 
+'isJavaIdentifierPart' @ [45:92] ==> @InlineOnly public inline fun Char.isJavaIdentifierPart(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+

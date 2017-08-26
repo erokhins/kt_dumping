@@ -6,8 +6,8 @@
 
 'get' @ [32:22] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(FqNameUnsafe..FqNameUnsafe?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(FqNameUnsafe..FqNameUnsafe?), (ClassDescriptor..ClassDescriptor?)>?), p1: (FqNameUnsafe..FqNameUnsafe?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> FqNameUnsafe
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.name.FqNameUnsafe..org.jetbrains.kotlin.name.FqNameUnsafe?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'FQNAME_TO_CLASS_DESCRIPTOR' @ [32:41] ==> public final val FQNAME_TO_CLASS_DESCRIPTOR: (WritableSlice<(FqNameUnsafe..FqNameUnsafe?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(FqNameUnsafe..FqNameUnsafe?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

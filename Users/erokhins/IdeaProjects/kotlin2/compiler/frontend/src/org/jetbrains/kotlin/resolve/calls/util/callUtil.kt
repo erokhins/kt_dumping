@@ -142,7 +142,7 @@ Inferred types:
 
 'argument' @ [80:28] ==> value-parameter argument: KtExpression? defined in org.jetbrains.kotlin.resolve.calls.callUtil.hasUnresolvedArguments.<no name provided>[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [80:37] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [80:37] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [80:53] ==> value-parameter context: ResolutionContext<C> defined in org.jetbrains.kotlin.resolve.calls.callUtil.hasUnresolvedArguments[ValueParameterDescriptorImpl]
 
@@ -176,11 +176,11 @@ Inferred types:
 
 'valueArguments' @ [88:66] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
-'filterArgsInParentheses' @ [88:81] ==> @Suppress private fun List<ValueArgument?>.filterArgsInParentheses(): List<ValueArgument> defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'filterArgsInParentheses' @ [88:81] ==> @Suppress private fun List<ValueArgument?>.filterArgsInParentheses(): List<ValueArgument> defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'valueArguments' @ [90:75] ==> public final val KtCallElement.valueArguments: (MutableList<out (ValueArgument..ValueArgument?)>..List<(ValueArgument..ValueArgument?)>)[MyPropertyDescriptor]
 
-'filterArgsInParentheses' @ [90:90] ==> @Suppress private fun List<ValueArgument?>.filterArgsInParentheses(): List<ValueArgument> defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'filterArgsInParentheses' @ [90:90] ==> @Suppress private fun List<ValueArgument?>.filterArgsInParentheses(): List<ValueArgument> defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'if (this is CallTransformer.CallForImplicitInvoke) {
             outerCall.getValueArgumentListOrElement()
@@ -422,7 +422,7 @@ Inferred types:
 
 'getParentOfType' @ [162:21] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtElement..KtElement?)>..Class<out (KtElement..KtElement?)>?)): KtElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtElement
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'this' @ [162:37] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.callUtil.getParentCall[ReceiverParameterDescriptorImpl]
 
@@ -430,7 +430,7 @@ Inferred types:
 
 'getNonStrictParentOfType' @ [164:21] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getNonStrictParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtElement..KtElement?)>..Class<out (KtElement..KtElement?)>?)): KtElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtElement
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'this' @ [164:46] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.callUtil.getParentCall[ReceiverParameterDescriptorImpl]
 
@@ -454,7 +454,7 @@ Inferred types:
 
 'context' @ [174:26] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.resolve.calls.callUtil.getResolvedCall[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [174:36] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [174:36] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [174:52] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.resolve.calls.callUtil.getResolvedCall[ValueParameterDescriptorImpl]
 
@@ -466,7 +466,7 @@ Inferred types:
 
 'strict' @ [178:41] ==> value-parameter strict: Boolean = ... defined in org.jetbrains.kotlin.resolve.calls.callUtil.getParentResolvedCall[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [178:50] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [178:50] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [178:66] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.resolve.calls.callUtil.getParentResolvedCall[ValueParameterDescriptorImpl]
 
@@ -482,7 +482,7 @@ Inferred types:
 
 'getTextWithLocation' @ [182:56] ==> public fun PsiElement.getTextWithLocation(): String defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
-'getResolvedCall' @ [186:12] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [186:12] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [186:28] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.resolve.calls.callUtil.getResolvedCallWithAssert[ValueParameterDescriptorImpl]
 
@@ -494,7 +494,7 @@ Inferred types:
 
 'getTextWithLocation' @ [186:73] ==> public fun PsiElement.getTextWithLocation(): String defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
-'getResolvedCall' @ [190:12] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [190:12] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [190:28] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.resolve.calls.callUtil.getResolvedCallWithAssert[ValueParameterDescriptorImpl]
 
@@ -508,7 +508,7 @@ Inferred types:
 
 'getTextWithLocation' @ [190:85] ==> public fun PsiElement.getTextWithLocation(): String defined in org.jetbrains.kotlin.psi.psiUtil in file psiUtils.kt[SimpleFunctionDescriptorImpl]
 
-'getResolvedCallWithAssert' @ [194:24] ==> public fun KtElement.getResolvedCallWithAssert(context: BindingContext): ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCallWithAssert' @ [194:24] ==> public fun KtElement.getResolvedCallWithAssert(context: BindingContext): ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [194:50] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.resolve.calls.callUtil.getFunctionResolvedCallWithAssert[ValueParameterDescriptorImpl]
 
@@ -518,7 +518,7 @@ Inferred types:
 
 'resultingDescriptor' @ [195:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'this' @ [196:97] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.callUtil.getFunctionResolvedCallWithAssert[ReceiverParameterDescriptorImpl]
 
@@ -528,7 +528,7 @@ Inferred types:
 
 'resolvedCall' @ [199:12] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.callUtil.getFunctionResolvedCallWithAssert[LocalVariableDescriptor]
 
-'getResolvedCallWithAssert' @ [203:24] ==> public fun KtElement.getResolvedCallWithAssert(context: BindingContext): ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCallWithAssert' @ [203:24] ==> public fun KtElement.getResolvedCallWithAssert(context: BindingContext): ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [203:50] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.resolve.calls.callUtil.getPropertyResolvedCallWithAssert[ValueParameterDescriptorImpl]
 
@@ -538,7 +538,7 @@ Inferred types:
 
 'resultingDescriptor' @ [204:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'this' @ [205:97] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.callUtil.getPropertyResolvedCallWithAssert[ReceiverParameterDescriptorImpl]
 
@@ -548,7 +548,7 @@ Inferred types:
 
 'resolvedCall' @ [208:12] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.callUtil.getPropertyResolvedCallWithAssert[LocalVariableDescriptor]
 
-'getResolvedCallWithAssert' @ [212:24] ==> public fun KtElement.getResolvedCallWithAssert(context: BindingContext): ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCallWithAssert' @ [212:24] ==> public fun KtElement.getResolvedCallWithAssert(context: BindingContext): ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [212:50] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.resolve.calls.callUtil.getVariableResolvedCallWithAssert[ValueParameterDescriptorImpl]
 
@@ -558,7 +558,7 @@ Inferred types:
 
 'resultingDescriptor' @ [213:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'this' @ [214:97] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.callUtil.getVariableResolvedCallWithAssert[ReceiverParameterDescriptorImpl]
 
@@ -580,7 +580,7 @@ Inferred types:
 
 'this' @ [223:24] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.callUtil.getType[ReceiverParameterDescriptorImpl]
 
-'getResolvedCall' @ [223:29] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [223:29] ==> public fun KtElement?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [223:45] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.resolve.calls.callUtil.getType[ValueParameterDescriptorImpl]
 

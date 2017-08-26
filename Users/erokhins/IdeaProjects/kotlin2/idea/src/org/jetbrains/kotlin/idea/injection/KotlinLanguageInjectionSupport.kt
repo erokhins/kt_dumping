@@ -38,7 +38,7 @@ Inferred types:
 
 'putUserData' @ [60:18] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Processor<(PsiLanguageInjectionHost..PsiLanguageInjectionHost?)>..Processor<(PsiLanguageInjectionHost..PsiLanguageInjectionHost?)>?)>, @Nullable p1: Processor<(PsiLanguageInjectionHost..PsiLanguageInjectionHost?)>?): Unit defined in com.intellij.psi.PsiLanguageInjectionHost[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Processor<(com.intellij.psi.PsiLanguageInjectionHost..com.intellij.psi.PsiLanguageInjectionHost?)>
+    <T : (Any..Any?)> -> (com.intellij.util.Processor<(com.intellij.psi.PsiLanguageInjectionHost..com.intellij.psi.PsiLanguageInjectionHost?)>..com.intellij.util.Processor<(com.intellij.psi.PsiLanguageInjectionHost..com.intellij.psi.PsiLanguageInjectionHost?)>?)
 
 'FIX_KEY' @ [60:51] ==> public final val FIX_KEY: (Key<(Processor<(PsiLanguageInjectionHost..PsiLanguageInjectionHost?)>..Processor<(PsiLanguageInjectionHost..PsiLanguageInjectionHost?)>?)>..Key<(Processor<(PsiLanguageInjectionHost..PsiLanguageInjectionHost?)>..Processor<(PsiLanguageInjectionHost..PsiLanguageInjectionHost?)>?)>?) defined in org.intellij.plugins.intelliLang.inject.InjectLanguageAction[JavaPropertyDescriptor]
 
@@ -240,7 +240,7 @@ Inferred types:
 
 'getParentOfType' @ [143:24] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtModifierListOwner..KtModifierListOwner?)>, p2: Boolean, @NotNull vararg p3: (Class<out (PsiElement..PsiElement?)>..Class<out (PsiElement..PsiElement?)>?)): KtModifierListOwner? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtModifierListOwner
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtModifierListOwner..org.jetbrains.kotlin.psi.KtModifierListOwner?)
 
 'host' @ [144:13] ==> value-parameter host: KtElement defined in org.jetbrains.kotlin.idea.injection.findElementToInjectWithAnnotation[ValueParameterDescriptorImpl]
 
@@ -268,7 +268,7 @@ Inferred types:
 
 'getParentOfType' @ [152:45] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtBlockExpression..KtBlockExpression?)>, p2: Boolean, @NotNull vararg p3: (Class<out (PsiElement..PsiElement?)>..Class<out (PsiElement..PsiElement?)>?)): KtBlockExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtBlockExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtBlockExpression..org.jetbrains.kotlin.psi.KtBlockExpression?)
 
 'host' @ [153:13] ==> value-parameter host: KtElement defined in org.jetbrains.kotlin.idea.injection.findElementToInjectWithComment[ValueParameterDescriptorImpl]
 
@@ -390,7 +390,7 @@ Inferred types:
 
 'statementStartOffset' @ [204:21] ==> val statementStartOffset: Int defined in org.jetbrains.kotlin.idea.injection.checkIsValidPlaceForInjectionWithLineComment[LocalVariableDescriptor]
 
-'prevWalker' @ [206:13] ==> private fun prevWalker(element: PsiElement, scope: PsiElement): Iterator<PsiElement?> defined in org.jetbrains.kotlin.idea.injection[SimpleFunctionDescriptorImpl]
+'prevWalker' @ [206:13] ==> private fun prevWalker(element: PsiElement, scope: PsiElement): Iterator<PsiElement?> defined in org.jetbrains.kotlin.idea.injection in file KotlinLanguageInjectionSupport.kt[SimpleFunctionDescriptorImpl]
 
 'host' @ [206:24] ==> value-parameter host: KtElement defined in org.jetbrains.kotlin.idea.injection.checkIsValidPlaceForInjectionWithLineComment[ValueParameterDescriptorImpl]
 

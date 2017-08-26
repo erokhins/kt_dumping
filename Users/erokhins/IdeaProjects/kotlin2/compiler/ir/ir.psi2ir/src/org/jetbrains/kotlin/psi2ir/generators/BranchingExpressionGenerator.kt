@@ -147,8 +147,6 @@ Inferred types:
 
 'add' @ [78:29] ==> public abstract fun add(element: IrBranch): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'IrBranchImpl' @ [78:33] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrBranchImpl[FakeCallableDescriptorForObject]
-
 'elseBranch' @ [78:46] ==> public final fun elseBranch(result: IrExpression): IrElseBranchImpl defined in org.jetbrains.kotlin.ir.expressions.impl.IrBranchImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [78:57] ==> value-parameter it: IrExpression defined in org.jetbrains.kotlin.psi2ir.generators.BranchingExpressionGenerator.createIrWhen.<anonymous>[ValueParameterDescriptorImpl]
@@ -245,8 +243,6 @@ Inferred types:
 'branches' @ [106:24] ==> public open val branches: MutableList<IrBranch> defined in org.jetbrains.kotlin.ir.expressions.impl.IrWhenImpl[DeserializedPropertyDescriptor]
 
 'add' @ [106:33] ==> public abstract fun add(element: IrBranch): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
-
-'IrBranchImpl' @ [106:37] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrBranchImpl[FakeCallableDescriptorForObject]
 
 'elseBranch' @ [106:50] ==> public final fun elseBranch(result: IrExpression): IrElseBranchImpl defined in org.jetbrains.kotlin.ir.expressions.impl.IrBranchImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -350,8 +346,8 @@ Inferred types:
 
 'get' @ [133:73] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..ReadOnlySlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?), p1: (KtWhenExpression..KtWhenExpression?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtWhenExpression
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtWhenExpression..org.jetbrains.kotlin.psi.KtWhenExpression?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'IMPLICIT_EXHAUSTIVE_WHEN' @ [133:92] ==> public final val IMPLICIT_EXHAUSTIVE_WHEN: (WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -365,8 +361,8 @@ Inferred types:
 
 'get' @ [134:73] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..ReadOnlySlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?), p1: (KtWhenExpression..KtWhenExpression?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtWhenExpression
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtWhenExpression..org.jetbrains.kotlin.psi.KtWhenExpression?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'EXHAUSTIVE_WHEN' @ [134:92] ==> public final val EXHAUSTIVE_WHEN: (WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -391,8 +387,6 @@ Inferred types:
 'branches' @ [138:24] ==> public abstract val branches: MutableList<IrBranch> defined in org.jetbrains.kotlin.ir.expressions.IrWhen[DeserializedPropertyDescriptor]
 
 'add' @ [138:33] ==> public abstract fun add(element: IrBranch): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
-
-'IrBranchImpl' @ [138:37] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrBranchImpl[FakeCallableDescriptorForObject]
 
 'elseBranch' @ [138:50] ==> public final fun elseBranch(result: IrExpression): IrElseBranchImpl defined in org.jetbrains.kotlin.ir.expressions.impl.IrBranchImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -627,7 +621,7 @@ Inferred types:
 
 'pregenerateCall' @ [190:41] ==> public fun StatementGenerator.pregenerateCall(resolvedCall: ResolvedCall<*>): CallBuilder defined in org.jetbrains.kotlin.psi2ir.generators in file ArgumentsGenerationUtils.kt[SimpleFunctionDescriptorImpl]
 
-'getResolvedCall' @ [190:57] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [190:57] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'ktCondition' @ [190:73] ==> value-parameter ktCondition: KtWhenConditionInRange defined in org.jetbrains.kotlin.psi2ir.generators.BranchingExpressionGenerator.generateInRangeCondition[ValueParameterDescriptorImpl]
 
@@ -653,7 +647,7 @@ Inferred types:
 
 'statementGenerator' @ [193:38] ==> public final val statementGenerator: StatementGenerator defined in org.jetbrains.kotlin.psi2ir.generators.BranchingExpressionGenerator[PropertyDescriptorImpl]
 
-'generateCall' @ [193:58] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [193:58] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'ktCondition' @ [193:71] ==> value-parameter ktCondition: KtWhenConditionInRange defined in org.jetbrains.kotlin.psi2ir.generators.BranchingExpressionGenerator.generateInRangeCondition[ValueParameterDescriptorImpl]
 

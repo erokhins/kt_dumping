@@ -44,15 +44,15 @@
 
 'stubTreeFromDecompiledText' @ [49:28] ==> val stubTreeFromDecompiledText: raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?) defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.AbstractClsStubBuilderTest.testClsStubsForFile[LocalVariableDescriptor]
 
-'serializeToString' @ [49:55] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'serializeToString' @ [49:55] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file AbstractClsStubBuilderTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [50:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
 'expectedText' @ [50:29] ==> val expectedText: String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.AbstractClsStubBuilderTest.testClsStubsForFile[LocalVariableDescriptor]
 
-'stubTreeFromCls' @ [50:43] ==> val stubTreeFromCls: PsiFileStub<out (PsiFile..PsiFile?)> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.AbstractClsStubBuilderTest.testClsStubsForFile[LocalVariableDescriptor]
+'stubTreeFromCls' @ [50:43] ==> val stubTreeFromCls: PsiFileStub<*> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.AbstractClsStubBuilderTest.testClsStubsForFile[LocalVariableDescriptor]
 
-'serializeToString' @ [50:59] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'serializeToString' @ [50:59] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file AbstractClsStubBuilderTest.kt[SimpleFunctionDescriptorImpl]
 
 'txtFile' @ [51:13] ==> value-parameter txtFile: File? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.AbstractClsStubBuilderTest.testClsStubsForFile[ValueParameterDescriptorImpl]
 

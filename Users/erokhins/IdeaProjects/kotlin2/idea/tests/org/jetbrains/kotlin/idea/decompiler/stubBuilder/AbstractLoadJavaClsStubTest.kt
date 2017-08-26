@@ -32,7 +32,7 @@
 
 'put' @ [52:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'USE_TYPE_TABLE' @ [52:52] ==> public final val USE_TYPE_TABLE: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -178,9 +178,9 @@ Inferred types:
 
 'stubsFromDeserializedDescriptors' @ [87:59] ==> val stubsFromDeserializedDescriptors: raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?) defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.AbstractLoadJavaClsStubTest.doTestCompiledKotlin[LocalVariableDescriptor]
 
-'serializeToString' @ [87:92] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'serializeToString' @ [87:92] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file AbstractClsStubBuilderTest.kt[SimpleFunctionDescriptorImpl]
 
 'stubTreeFromCls' @ [87:113] ==> val stubTreeFromCls: PsiFileStub<*>? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.AbstractLoadJavaClsStubTest.doTestCompiledKotlin[LocalVariableDescriptor]
 
-'serializeToString' @ [87:129] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'serializeToString' @ [87:129] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file AbstractClsStubBuilderTest.kt[SimpleFunctionDescriptorImpl]
 

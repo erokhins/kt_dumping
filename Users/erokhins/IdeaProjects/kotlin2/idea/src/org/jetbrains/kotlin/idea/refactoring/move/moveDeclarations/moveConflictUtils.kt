@@ -233,7 +233,7 @@ Inferred types:
 
 'visibility' @ [149:60] ==> val visibility: Visibility defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveConflictChecker.asPredicted[LocalVariableDescriptor]
 
-'SourceElement' @ [150:44] ==> public fun SourceElement(function: () -> SourceFile): SourceElement defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'SourceElement' @ [150:44] ==> public fun SourceElement(function: () -> SourceFile): SourceElement defined in org.jetbrains.kotlin.descriptors[SamConstructorDescriptorImpl]
 
 'getContainingSourceFile' @ [150:76] ==> @NotNull public open fun getContainingSourceFile(@NotNull p0: DeclarationDescriptor): SourceFile defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
@@ -247,7 +247,7 @@ Inferred types:
 
 'visibility' @ [155:60] ==> val visibility: Visibility defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveConflictChecker.asPredicted[LocalVariableDescriptor]
 
-'SourceElement' @ [156:44] ==> public fun SourceElement(function: () -> SourceFile): SourceElement defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'SourceElement' @ [156:44] ==> public fun SourceElement(function: () -> SourceFile): SourceElement defined in org.jetbrains.kotlin.descriptors[SamConstructorDescriptorImpl]
 
 'getContainingSourceFile' @ [156:76] ==> @NotNull public open fun getContainingSourceFile(@NotNull p0: DeclarationDescriptor): SourceFile defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
@@ -287,7 +287,7 @@ Inferred types:
 
 'getParentOfType' @ [174:29] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(PsiImportStatement..PsiImportStatement?)>, p2: Boolean): PsiImportStatement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiImportStatement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiImportStatement..com.intellij.psi.PsiImportStatement?)
 
 'element' @ [174:45] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveConflictChecker.analyzeModuleConflictsInUsages[LocalVariableDescriptor]
 
@@ -487,8 +487,8 @@ Inferred types:
 
 'putAllValues' @ [212:23] ==> public open fun <Kk : (PsiElement..PsiElement?), Vv : (String..String?)> putAllValues(@NotNull p0: MultiMap<(PsiElement..PsiElement?), (String..String?)>): Unit defined in com.intellij.util.containers.MultiMap[JavaMethodDescriptor]
 Inferred types:
-    <Kk : (PsiElement..PsiElement?)> -> PsiElement
-    <Vv : (String..String?)> -> String
+    <Kk : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <Vv : (String..String?)> -> (kotlin.String..kotlin.String?)
 
 'newConflicts' @ [212:36] ==> val newConflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveConflictChecker.checkModuleConflictsInUsages[LocalVariableDescriptor]
 
@@ -542,7 +542,7 @@ Inferred types:
 Inferred types:
     <reified R> -> JdkOrderEntry
 
-'fold' @ [238:18] ==> public inline fun <T, R> Iterable<JdkOrderEntry>.fold(initial: SearchScope, operation: (SearchScope, JdkOrderEntry) -> SearchScope): SearchScope defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [238:18] ==> public inline fun <T, R> Iterable<JdkOrderEntry>.fold(initial: SearchScope, operation: (acc: SearchScope, JdkOrderEntry) -> SearchScope): SearchScope defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JdkOrderEntry
     <R> -> SearchScope
@@ -603,9 +603,9 @@ Inferred types:
 
 'importableDescriptor' @ [255:86] ==> val importableDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveConflictChecker.checkModuleConflictsInDeclarations.isInScope[LocalVariableDescriptor]
 
-'lazy' @ [256:35] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [256:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'DESCRIPTOR_RENDERER_FOR_COMPARISON' @ [256:42] ==> private final val DESCRIPTOR_RENDERER_FOR_COMPARISON: DescriptorRenderer defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveConflictChecker.Companion[PropertyDescriptorImpl]
 
@@ -684,9 +684,9 @@ Inferred types:
 
 'targetDescriptor' @ [270:85] ==> value-parameter targetDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveConflictChecker.checkModuleConflictsInDeclarations.isInScope[ValueParameterDescriptorImpl]
 
-'?:' @ [272:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?, right: Collection<(DeclarationDescriptor..DeclarationDescriptor?)>): Collection<(DeclarationDescriptor..DeclarationDescriptor?)>[SimpleFunctionDescriptorImpl]
+'?:' @ [272:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Collection<DeclarationDescriptor>?, right: Collection<DeclarationDescriptor>): Collection<DeclarationDescriptor>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Collection<(org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Collection<DeclarationDescriptor>
 
 'it' @ [272:26] ==> value-parameter it: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveConflictChecker.checkModuleConflictsInDeclarations.isInScope.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -696,9 +696,9 @@ Inferred types:
 Inferred types:
     <T> -> DeclarationDescriptor
 
-'?:' @ [276:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<DeclarationDescriptor>?, right: List<DeclarationDescriptor>): List<DeclarationDescriptor>[SimpleFunctionDescriptorImpl]
+'?:' @ [276:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Collection<DeclarationDescriptor>?, right: Collection<DeclarationDescriptor>): Collection<DeclarationDescriptor>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<DeclarationDescriptor>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Collection<DeclarationDescriptor>
 
 'it' @ [276:26] ==> value-parameter it: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveConflictChecker.checkModuleConflictsInDeclarations.isInScope.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -782,7 +782,9 @@ Inferred types:
 
 'targetDescriptor' @ [294:46] ==> val targetDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveConflictChecker.checkModuleConflictsInDeclarations.<anonymous>[LocalVariableDescriptor]
 
-'DescriptorToSourceUtilsIde' @ [296:30] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
+'?:' @ [296:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'getAnyDeclaration' @ [296:57] ==> public final fun getAnyDeclaration(project: Project, descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 

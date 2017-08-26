@@ -30,7 +30,7 @@ Inferred types:
 
 'insn' @ [41:30] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.boxing.StackPeepholeOptimizationsTransformer.transformOnce[LocalVariableDescriptor]
 
-'findPreviousOrNull' @ [41:35] ==> public inline fun AbstractInsnNode.findPreviousOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'findPreviousOrNull' @ [41:35] ==> public inline fun AbstractInsnNode.findPreviousOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [41:56] ==> value-parameter it: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.StackPeepholeOptimizationsTransformer.transformOnce.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -178,7 +178,7 @@ Inferred types:
 
 'prevNonNop' @ [58:39] ==> val prevNonNop: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.StackPeepholeOptimizationsTransformer.transformOnce[LocalVariableDescriptor]
 
-'findPreviousOrNull' @ [58:50] ==> public inline fun AbstractInsnNode.findPreviousOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'findPreviousOrNull' @ [58:50] ==> public inline fun AbstractInsnNode.findPreviousOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [58:71] ==> value-parameter it: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.StackPeepholeOptimizationsTransformer.transformOnce.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -346,7 +346,7 @@ Inferred types:
 
 'prevNonNop' @ [89:43] ==> val prevNonNop: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.StackPeepholeOptimizationsTransformer.transformOnce[LocalVariableDescriptor]
 
-'findPreviousOrNull' @ [89:54] ==> public inline fun AbstractInsnNode.findPreviousOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'findPreviousOrNull' @ [89:54] ==> public inline fun AbstractInsnNode.findPreviousOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [89:75] ==> value-parameter it: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.StackPeepholeOptimizationsTransformer.transformOnce.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -454,7 +454,7 @@ Inferred types:
 
 'ALOAD' @ [122:31] ==> public const final val ALOAD: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'isUnitInstance' @ [123:13] ==> public fun AbstractInsnNode.isUnitInstance(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isUnitInstance' @ [123:13] ==> public fun AbstractInsnNode.isUnitInstance(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file PopBackwardPropagationTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'isPurePushOfSize2' @ [126:13] ==> private final fun AbstractInsnNode.isPurePushOfSize2(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing.StackPeepholeOptimizationsTransformer[SimpleFunctionDescriptorImpl]
 

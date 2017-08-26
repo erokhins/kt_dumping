@@ -8,7 +8,7 @@
 
 'dispatchReceiver' @ [33:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'codegen' @ [36:13] ==> protected final val codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.range.forLoop.ForInUntilConstantRangeLoopGenerator[PropertyDescriptorImpl]
 

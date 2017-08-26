@@ -6,8 +6,6 @@
 
 'operandType' @ [30:32] ==> value-parameter operandType: Type defined in org.jetbrains.kotlin.codegen.NumberLikeCompare.<init>[ValueParameterDescriptorImpl]
 
-'NumberCompare' @ [30:45] ==> public companion object defined in org.jetbrains.kotlin.codegen.NumberCompare[FakeCallableDescriptorForObject]
-
 'getNumberCompareOpcode' @ [30:59] ==> public final fun getNumberCompareOpcode(opToken: IElementType): Int defined in org.jetbrains.kotlin.codegen.NumberCompare.Companion[SimpleFunctionDescriptorImpl]
 
 'opToken' @ [30:82] ==> value-parameter opToken: IElementType defined in org.jetbrains.kotlin.codegen.NumberLikeCompare.<init>[ValueParameterDescriptorImpl]

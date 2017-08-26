@@ -75,9 +75,7 @@ Inferred types:
 
 'put' @ [71:31] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(List<String>..List<String>?)>, @NotNull p1: List<String>): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
-
-'AnnotationCollectorConfigurationKeys' @ [71:35] ==> public object AnnotationCollectorConfigurationKeys defined in org.jetbrains.kotlin.annotation in file AnnotationCollectorPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'ANNOTATION_FILTER_LIST' @ [71:72] ==> public final val ANNOTATION_FILTER_LIST: CompilerConfigurationKey<List<String>> defined in org.jetbrains.kotlin.annotation.AnnotationCollectorConfigurationKeys[PropertyDescriptorImpl]
 
@@ -89,9 +87,7 @@ Inferred types:
 
 'put' @ [73:53] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AnnotationCollectorConfigurationKeys' @ [73:57] ==> public object AnnotationCollectorConfigurationKeys defined in org.jetbrains.kotlin.annotation in file AnnotationCollectorPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'OUTPUT_FILENAME' @ [73:94] ==> public final val OUTPUT_FILENAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.annotation.AnnotationCollectorConfigurationKeys[PropertyDescriptorImpl]
 
@@ -103,9 +99,7 @@ Inferred types:
 
 'put' @ [74:48] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AnnotationCollectorConfigurationKeys' @ [74:52] ==> public object AnnotationCollectorConfigurationKeys defined in org.jetbrains.kotlin.annotation in file AnnotationCollectorPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'STUBS_PATH' @ [74:89] ==> public final val STUBS_PATH: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.annotation.AnnotationCollectorConfigurationKeys[PropertyDescriptorImpl]
 
@@ -117,9 +111,7 @@ Inferred types:
 
 'put' @ [75:59] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AnnotationCollectorConfigurationKeys' @ [75:63] ==> public object AnnotationCollectorConfigurationKeys defined in org.jetbrains.kotlin.annotation in file AnnotationCollectorPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'INHERITED' @ [75:100] ==> public final val INHERITED: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.annotation.AnnotationCollectorConfigurationKeys[PropertyDescriptorImpl]
 
@@ -137,9 +129,7 @@ Inferred types:
 
 'get' @ [83:68] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AnnotationCollectorConfigurationKeys' @ [83:72] ==> public object AnnotationCollectorConfigurationKeys defined in org.jetbrains.kotlin.annotation in file AnnotationCollectorPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'INHERITED' @ [83:109] ==> public final val INHERITED: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.annotation.AnnotationCollectorConfigurationKeys[PropertyDescriptorImpl]
 
@@ -147,9 +137,7 @@ Inferred types:
 
 'get' @ [85:50] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(List<String>..List<String>?)>): List<String>? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
-
-'AnnotationCollectorConfigurationKeys' @ [85:54] ==> public object AnnotationCollectorConfigurationKeys defined in org.jetbrains.kotlin.annotation in file AnnotationCollectorPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'ANNOTATION_FILTER_LIST' @ [85:91] ==> public final val ANNOTATION_FILTER_LIST: CompilerConfigurationKey<List<String>> defined in org.jetbrains.kotlin.annotation.AnnotationCollectorConfigurationKeys[PropertyDescriptorImpl]
 
@@ -157,9 +145,7 @@ Inferred types:
 
 'get' @ [86:44] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AnnotationCollectorConfigurationKeys' @ [86:48] ==> public object AnnotationCollectorConfigurationKeys defined in org.jetbrains.kotlin.annotation in file AnnotationCollectorPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'OUTPUT_FILENAME' @ [86:85] ==> public final val OUTPUT_FILENAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.annotation.AnnotationCollectorConfigurationKeys[PropertyDescriptorImpl]
 
@@ -185,9 +171,7 @@ Inferred types:
 
 'get' @ [92:35] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'AnnotationCollectorConfigurationKeys' @ [92:39] ==> public object AnnotationCollectorConfigurationKeys defined in org.jetbrains.kotlin.annotation in file AnnotationCollectorPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'STUBS_PATH' @ [92:76] ==> public final val STUBS_PATH: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.annotation.AnnotationCollectorConfigurationKeys[PropertyDescriptorImpl]
 
@@ -197,19 +181,15 @@ Inferred types:
 
 'get' @ [94:50] ==> @NotNull public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>, @NotNull p1: MessageCollector): MessageCollector defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [94:75] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
-
-'MessageCollector' @ [94:98] ==> public companion object defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector[FakeCallableDescriptorForObject]
 
 'NONE' @ [94:115] ==> public final val NONE: MessageCollector defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector.Companion[DeserializedPropertyDescriptor]
 
 'configuration' @ [95:37] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.annotation.AnnotationCollectorComponentRegistrar.registerProjectComponents[ValueParameterDescriptorImpl]
 
 'getBoolean' @ [95:51] ==> public open fun getBoolean(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>): Boolean defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
-
-'CommonConfigurationKeys' @ [95:62] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
 
 'REPORT_OUTPUT_FILES' @ [95:86] ==> @field:JvmField public final val REPORT_OUTPUT_FILES: CompilerConfigurationKey<Boolean> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 

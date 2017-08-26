@@ -99,7 +99,7 @@ Inferred types:
 
 'putUserData' @ [98:21] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'NOT_IMPORTED_KEY' @ [98:33] ==> public val NOT_IMPORTED_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'element' @ [100:28] ==> value-parameter element: LookupElement defined in org.jetbrains.kotlin.idea.completion.LookupElementsCollector.addElement[ValueParameterDescriptorImpl]
 
-'suppressAutoInsertion' @ [100:36] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'suppressAutoInsertion' @ [100:36] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'addElement' @ [103:17] ==> public final fun addElement(element: LookupElement, notImported: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.completion.LookupElementsCollector[SimpleFunctionDescriptorImpl]
 
@@ -171,8 +171,6 @@ Inferred types:
 
 'completionChar' @ [113:35] ==> public final val InsertionContext.completionChar: Char[MyPropertyDescriptor]
 
-'WithTailInsertHandler' @ [114:32] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.handlers.WithTailInsertHandler[FakeCallableDescriptorForObject]
-
 'COMMA' @ [114:54] ==> public final val COMMA: WithTailInsertHandler defined in org.jetbrains.kotlin.idea.completion.handlers.WithTailInsertHandler.Companion[PropertyDescriptorImpl]
 
 'postHandleInsert' @ [114:60] ==> public final fun postHandleInsert(context: InsertionContext, item: LookupElement): Unit defined in org.jetbrains.kotlin.idea.completion.handlers.WithTailInsertHandler[SimpleFunctionDescriptorImpl]
@@ -180,8 +178,6 @@ Inferred types:
 'context' @ [114:77] ==> value-parameter context: InsertionContext defined in org.jetbrains.kotlin.idea.completion.LookupElementsCollector.addElement.<no name provided>.handleInsert[ValueParameterDescriptorImpl]
 
 'delegate' @ [114:86] ==> public final val <no name provided>.delegate: (LookupElement..LookupElement?)[MyPropertyDescriptor]
-
-'WithTailInsertHandler' @ [116:32] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.handlers.WithTailInsertHandler[FakeCallableDescriptorForObject]
 
 'EQ' @ [116:54] ==> public final val EQ: WithTailInsertHandler defined in org.jetbrains.kotlin.idea.completion.handlers.WithTailInsertHandler.Companion[PropertyDescriptorImpl]
 
@@ -284,8 +280,6 @@ Inferred types:
 'getUserDataDeep' @ [152:40] ==> public tailrec fun <T : Any> LookupElement.getUserDataDeep(key: Key<String>): String? defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : Any> -> String
-
-'KotlinCompletionCharFilter' @ [152:56] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter[FakeCallableDescriptorForObject]
 
 'JUST_TYPING_PREFIX' @ [152:83] ==> public final val JUST_TYPING_PREFIX: Key<String> defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter.Companion[PropertyDescriptorImpl]
 

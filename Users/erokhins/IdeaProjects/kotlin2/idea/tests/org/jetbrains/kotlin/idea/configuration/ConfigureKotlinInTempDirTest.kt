@@ -64,8 +64,6 @@
 
 'assertEquals' @ [53:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'LanguageVersion' @ [53:29] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_0' @ [53:45] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'myProject' @ [53:57] ==> protected/*protected and package*/ final var myProject: (Project..Project?) defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinInTempDirTest[JavaPropertyDescriptor]
@@ -75,8 +73,6 @@
 'languageVersion' @ [53:100] ==> public abstract val languageVersion: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [54:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'LanguageVersion' @ [54:29] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_0' @ [54:45] ==> enum entry KOTLIN_1_0 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
@@ -106,8 +102,6 @@
 
 'assertEquals' @ [62:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
-'LanguageVersion' @ [62:29] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
-
 'KOTLIN_1_1' @ [62:45] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'myProject' @ [62:57] ==> protected/*protected and package*/ final var myProject: (Project..Project?) defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinInTempDirTest[JavaPropertyDescriptor]
@@ -117,8 +111,6 @@
 'languageVersion' @ [62:100] ==> public abstract val languageVersion: LanguageVersion defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedPropertyDescriptor]
 
 'assertEquals' @ [63:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
-
-'LanguageVersion' @ [63:29] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_1' @ [63:45] ==> enum entry KOTLIN_1_1 defined in org.jetbrains.kotlin.config.LanguageVersion[FakeCallableDescriptorForObject]
 

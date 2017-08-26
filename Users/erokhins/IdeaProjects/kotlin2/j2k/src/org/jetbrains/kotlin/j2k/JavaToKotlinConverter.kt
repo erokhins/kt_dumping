@@ -16,11 +16,11 @@
 
 'runReadAction' @ [69:85] ==> public abstract fun <T : (Any..Any?)> runReadAction(@NotNull p0: Computable<(JavaToKotlinConverter.Result..JavaToKotlinConverter.Result?)>): (JavaToKotlinConverter.Result..JavaToKotlinConverter.Result?) defined in com.intellij.openapi.application.Application[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Result
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.j2k.JavaToKotlinConverter.Result..org.jetbrains.kotlin.j2k.JavaToKotlinConverter.Result?)
 
-'Computable' @ [69:99] ==> public fun <T : (Any..Any?)> Computable(function: () -> (JavaToKotlinConverter.Result..JavaToKotlinConverter.Result?)): Computable<JavaToKotlinConverter.Result> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
+'Computable' @ [69:99] ==> public fun <T : (Any..Any?)> Computable(function: () -> (JavaToKotlinConverter.Result..JavaToKotlinConverter.Result?)): Computable<(JavaToKotlinConverter.Result..JavaToKotlinConverter.Result?)> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> Result
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.j2k.JavaToKotlinConverter.Result..org.jetbrains.kotlin.j2k.JavaToKotlinConverter.Result?)
 
 'elementsToKotlin' @ [70:13] ==> private final fun elementsToKotlin(inputElements: List<PsiElement>, processor: JavaToKotlinConverter.WithProgressProcessor): JavaToKotlinConverter.Result defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter[SimpleFunctionDescriptorImpl]
 
@@ -51,11 +51,11 @@ Inferred types:
 
 'runReadAction' @ [77:70] ==> public abstract fun <T : (Any..Any?)> runReadAction(@NotNull p0: Computable<(KtFile..KtFile?)>): (KtFile..KtFile?) defined in com.intellij.openapi.application.Application[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtFile
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
 
-'Computable' @ [77:84] ==> public fun <T : (Any..Any?)> Computable(function: () -> (KtFile..KtFile?)): Computable<KtFile> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
+'Computable' @ [77:84] ==> public fun <T : (Any..Any?)> Computable(function: () -> (KtFile..KtFile?)): Computable<(KtFile..KtFile?)> defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> KtFile
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
 
 'KtPsiFactory' @ [78:21] ==> @JvmOverloads public constructor KtPsiFactory(project: Project, markGenerated: Boolean = ...) defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedClassConstructorDescriptor]
 
@@ -123,8 +123,6 @@ Inferred types:
 
 'inputElements' @ [100:33] ==> value-parameter inputElements: List<PsiElement> defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter.elementsToKotlin[ValueParameterDescriptorImpl]
 
-'WithProgressProcessor' @ [100:48] ==> public companion object defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter.WithProgressProcessor[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [100:70] ==> public final val DEFAULT: JavaToKotlinConverter.WithProgressProcessor defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter.WithProgressProcessor.Companion[PropertyDescriptorImpl]
 
 'LinkedHashMap' @ [105:36] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
@@ -181,6 +179,8 @@ Inferred types:
 'settings' @ [115:48] ==> private final val settings: ConverterSettings defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter[PropertyDescriptorImpl]
 
 'services' @ [115:58] ==> private final val services: JavaToKotlinConverterServices defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter[PropertyDescriptorImpl]
+
+'inConversionScope' @ [115:70] ==> local final fun inConversionScope(element: PsiElement): Boolean defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter.elementsToKotlin[SimpleFunctionDescriptorImpl]
 
 'usageProcessingCollector' @ [115:89] ==> val usageProcessingCollector: (UsageProcessing) -> Unit defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter.elementsToKotlin[LocalVariableDescriptor]
 
@@ -244,6 +244,8 @@ Inferred types:
 
 'usageProcessings' @ [127:70] ==> val usageProcessings: LinkedHashMap<PsiElement, MutableCollection<UsageProcessing>> defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter.elementsToKotlin[LocalVariableDescriptor]
 
+'inConversionScope' @ [127:90] ==> local final fun inConversionScope(element: PsiElement): Boolean defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter.elementsToKotlin[SimpleFunctionDescriptorImpl]
+
 'Result' @ [129:20] ==> public constructor Result(results: List<JavaToKotlinConverter.ElementResult?>, externalCodeProcessing: JavaToKotlinConverter.ExternalCodeProcessing?) defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter.Result[ClassConstructorDescriptorImpl]
 
 'results' @ [129:27] ==> val results: List<JavaToKotlinConverter.ElementResult?> defined in org.jetbrains.kotlin.j2k.JavaToKotlinConverter.elementsToKotlin[LocalVariableDescriptor]
@@ -262,9 +264,9 @@ Inferred types:
 
 'saveCreationStacktraces' @ [138:25] ==> public final var saveCreationStacktraces: Boolean defined in org.jetbrains.kotlin.j2k.ast.Element.Companion[PropertyDescriptorImpl]
 
-'lazy' @ [149:27] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> Int): Lazy<Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [149:27] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Int
+    <T> -> T
 
 'NONE' @ [149:53] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -282,9 +284,9 @@ Inferred types:
 Inferred types:
     <T> -> PsiElement
 
-'lazy' @ [150:28] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> Int): Lazy<Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [150:28] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Int
+    <T> -> T
 
 'NONE' @ [150:54] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 

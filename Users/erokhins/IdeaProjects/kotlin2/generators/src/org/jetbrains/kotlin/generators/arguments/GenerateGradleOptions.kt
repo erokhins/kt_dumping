@@ -28,7 +28,7 @@ Inferred types:
 
 'commonInterfaceFqName' @ [46:36] ==> val commonInterfaceFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
-'generateInterface' @ [47:9] ==> private fun Printer.generateInterface(type: FqName, properties: List<KProperty1<*, *>>, parentType: FqName? = ...): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateInterface' @ [47:9] ==> private fun Printer.generateInterface(type: FqName, properties: List<KProperty1<*, *>>, parentType: FqName? = ...): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'commonInterfaceFqName' @ [47:27] ==> val commonInterfaceFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -38,7 +38,7 @@ Inferred types:
 
 'println' @ [51:5] ==> @InlineOnly public inline fun println(message: Any?): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
-'generateMarkdown' @ [52:5] ==> private fun generateMarkdown(properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateMarkdown' @ [52:5] ==> private fun generateMarkdown(properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'commonOptions' @ [52:22] ==> val commonOptions: List<KProperty1<CommonToolArguments, *>> defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'commonCompilerInterfaceFqName' @ [56:36] ==> val commonCompilerInterfaceFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
-'generateInterface' @ [57:9] ==> private fun Printer.generateInterface(type: FqName, properties: List<KProperty1<*, *>>, parentType: FqName? = ...): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateInterface' @ [57:9] ==> private fun Printer.generateInterface(type: FqName, properties: List<KProperty1<*, *>>, parentType: FqName? = ...): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'commonCompilerInterfaceFqName' @ [57:27] ==> val commonCompilerInterfaceFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -68,7 +68,7 @@ Inferred types:
 
 'println' @ [62:5] ==> @InlineOnly public inline fun println(message: Any?): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
-'generateMarkdown' @ [63:5] ==> private fun generateMarkdown(properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateMarkdown' @ [63:5] ==> private fun generateMarkdown(properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'commonCompilerOptions' @ [63:22] ==> val commonCompilerOptions: List<KProperty1<CommonCompilerArguments, *>> defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -86,7 +86,7 @@ Inferred types:
 
 'jvmInterfaceFqName' @ [68:36] ==> val jvmInterfaceFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
-'generateInterface' @ [69:9] ==> private fun Printer.generateInterface(type: FqName, properties: List<KProperty1<*, *>>, parentType: FqName? = ...): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateInterface' @ [69:9] ==> private fun Printer.generateInterface(type: FqName, properties: List<KProperty1<*, *>>, parentType: FqName? = ...): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'jvmInterfaceFqName' @ [69:27] ==> val jvmInterfaceFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -110,7 +110,7 @@ Inferred types:
 
 'jvmImplFqName' @ [77:36] ==> val jvmImplFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
-'generateImpl' @ [78:9] ==> private fun Printer.generateImpl(type: FqName, parentType: FqName, argsType: FqName, properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateImpl' @ [78:9] ==> private fun Printer.generateImpl(type: FqName, parentType: FqName, argsType: FqName, properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'jvmImplFqName' @ [78:22] ==> val jvmImplFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -126,7 +126,7 @@ Inferred types:
 
 'println' @ [84:5] ==> @InlineOnly public inline fun println(message: Any?): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
-'generateMarkdown' @ [85:5] ==> private fun generateMarkdown(properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateMarkdown' @ [85:5] ==> private fun generateMarkdown(properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'jvmOptions' @ [85:22] ==> val jvmOptions: List<KProperty1<K2JVMCompilerArguments, *>> defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -144,7 +144,7 @@ Inferred types:
 
 'jsInterfaceFqName' @ [90:36] ==> val jsInterfaceFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
-'generateInterface' @ [91:9] ==> private fun Printer.generateInterface(type: FqName, properties: List<KProperty1<*, *>>, parentType: FqName? = ...): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateInterface' @ [91:9] ==> private fun Printer.generateInterface(type: FqName, properties: List<KProperty1<*, *>>, parentType: FqName? = ...): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'jsInterfaceFqName' @ [91:27] ==> val jsInterfaceFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -168,7 +168,7 @@ Inferred types:
 
 'jsImplFqName' @ [98:36] ==> val jsImplFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
-'generateImpl' @ [99:9] ==> private fun Printer.generateImpl(type: FqName, parentType: FqName, argsType: FqName, properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateImpl' @ [99:9] ==> private fun Printer.generateImpl(type: FqName, parentType: FqName, argsType: FqName, properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'jsImplFqName' @ [99:22] ==> val jsImplFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -184,7 +184,7 @@ Inferred types:
 
 'println' @ [105:5] ==> @InlineOnly public inline fun println(message: Any?): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
-'generateMarkdown' @ [106:5] ==> private fun generateMarkdown(properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateMarkdown' @ [106:5] ==> private fun generateMarkdown(properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'jsOptions' @ [106:22] ==> val jsOptions: List<KProperty1<K2JSCompilerArguments, *>> defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -202,7 +202,7 @@ Inferred types:
 
 'jsDceInterfaceFqName' @ [111:36] ==> val jsDceInterfaceFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
-'generateInterface' @ [112:9] ==> private fun Printer.generateInterface(type: FqName, properties: List<KProperty1<*, *>>, parentType: FqName? = ...): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateInterface' @ [112:9] ==> private fun Printer.generateInterface(type: FqName, properties: List<KProperty1<*, *>>, parentType: FqName? = ...): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'jsDceInterfaceFqName' @ [112:27] ==> val jsDceInterfaceFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -226,7 +226,7 @@ Inferred types:
 
 'jsDceImplFqName' @ [119:36] ==> val jsDceImplFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
-'generateImpl' @ [120:9] ==> private fun Printer.generateImpl(type: FqName, parentType: FqName, argsType: FqName, properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateImpl' @ [120:9] ==> private fun Printer.generateImpl(type: FqName, parentType: FqName, argsType: FqName, properties: List<KProperty1<*, *>>): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'jsDceImplFqName' @ [120:22] ==> val jsDceImplFqName: FqName defined in org.jetbrains.kotlin.generators.arguments.generateKotlinGradleOptions[LocalVariableDescriptor]
 
@@ -273,7 +273,9 @@ Inferred types:
 
 'invoke' @ [135:21] ==> public abstract operator fun Printer.invoke(): Unit defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'generateKotlinGradleOptions' @ [139:5] ==> public fun generateKotlinGradleOptions(withPrinterToFile: (targetFile: File, Printer.() -> Unit) -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateKotlinGradleOptions' @ [139:5] ==> public fun generateKotlinGradleOptions(withPrinterToFile: (targetFile: File, Printer.() -> Unit) -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
+
+'getPrinter' @ [139:35] ==> local final fun getPrinter(file: File, fn: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments.main[SimpleFunctionDescriptorImpl]
 
 'declaredMemberProperties' @ [143:18] ==> @SinceKotlin public val <T : Any> KClass<T>.declaredMemberProperties: Collection<KProperty1<T, *>> defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
 Inferred types:
@@ -319,7 +321,7 @@ Inferred types:
 
 'it' @ [151:44] ==> value-parameter it: FqName defined in org.jetbrains.kotlin.generators.arguments.generateInterface.<anonymous>[ValueParameterDescriptorImpl]
 
-'generateDeclaration' @ [152:5] ==> private fun Printer.generateDeclaration(modifiers: String, type: FqName, afterType: String? = ..., generateBody: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateDeclaration' @ [152:5] ==> private fun Printer.generateDeclaration(modifiers: String, type: FqName, afterType: String? = ..., generateBody: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [152:38] ==> value-parameter type: FqName defined in org.jetbrains.kotlin.generators.arguments.generateInterface[ValueParameterDescriptorImpl]
 
@@ -337,7 +339,7 @@ Inferred types:
 
 'property' @ [156:41] ==> val property: KProperty1<*, *> defined in org.jetbrains.kotlin.generators.arguments.generateInterface.<anonymous>[LocalVariableDescriptor]
 
-'generateDeclaration' @ [167:5] ==> private fun Printer.generateDeclaration(modifiers: String, type: FqName, afterType: String? = ..., generateBody: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'generateDeclaration' @ [167:5] ==> private fun Printer.generateDeclaration(modifiers: String, type: FqName, afterType: String? = ..., generateBody: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [167:52] ==> value-parameter type: FqName defined in org.jetbrains.kotlin.generators.arguments.generateImpl[ValueParameterDescriptorImpl]
 
@@ -369,7 +371,7 @@ Inferred types:
 
 'property' @ [175:41] ==> val property: KProperty1<*, *> defined in org.jetbrains.kotlin.generators.arguments.generateImpl.<anonymous>[LocalVariableDescriptor]
 
-'withIndent' @ [176:13] ==> private inline fun Printer.withIndent(fn: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'withIndent' @ [176:13] ==> private inline fun Printer.withIndent(fn: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'println' @ [177:17] ==> @NotNull public open fun println(vararg p0: (Any..Any?)): Printer defined in org.jetbrains.kotlin.utils.Printer[JavaMethodDescriptor]
 
@@ -389,7 +391,7 @@ Inferred types:
 
 'argsType' @ [183:59] ==> value-parameter argsType: FqName defined in org.jetbrains.kotlin.generators.arguments.generateImpl[ValueParameterDescriptorImpl]
 
-'withIndent' @ [184:9] ==> private inline fun Printer.withIndent(fn: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'withIndent' @ [184:9] ==> private inline fun Printer.withIndent(fn: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'properties' @ [185:30] ==> value-parameter properties: List<KProperty1<*, *>> defined in org.jetbrains.kotlin.generators.arguments.generateImpl[ValueParameterDescriptorImpl]
 
@@ -413,7 +415,7 @@ Inferred types:
 
 'argsType' @ [194:28] ==> value-parameter argsType: FqName defined in org.jetbrains.kotlin.generators.arguments.generateImpl[ValueParameterDescriptorImpl]
 
-'withIndent' @ [195:5] ==> private inline fun Printer.withIndent(fn: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'withIndent' @ [195:5] ==> private inline fun Printer.withIndent(fn: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'properties' @ [196:26] ==> value-parameter properties: List<KProperty1<*, *>> defined in org.jetbrains.kotlin.generators.arguments.generateImpl[ValueParameterDescriptorImpl]
 
@@ -470,7 +472,7 @@ Inferred types:
 
 'println' @ [217:5] ==> @NotNull public open fun println(vararg p0: (Any..Any?)): Printer defined in org.jetbrains.kotlin.utils.Printer[JavaMethodDescriptor]
 
-'withIndent' @ [218:5] ==> private inline fun Printer.withIndent(fn: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments[SimpleFunctionDescriptorImpl]
+'withIndent' @ [218:5] ==> private inline fun Printer.withIndent(fn: Printer.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.arguments in file GenerateGradleOptions.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [219:9] ==> public abstract operator fun Printer.invoke(): Unit defined in kotlin.Function1[FunctionInvokeDescriptor]
 

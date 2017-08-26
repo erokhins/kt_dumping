@@ -154,9 +154,9 @@ Inferred types:
 
 'startOffset' @ [73:45] ==> public val PsiElement.startOffset: Int defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 
-'findElementOfClassAtOffset' @ [74:28] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<out (TElement..TElement?)>, p3: Boolean): TElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'findElementOfClassAtOffset' @ [74:28] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<out TElement>, p3: Boolean): TElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> TElement
+    <T : (PsiElement..PsiElement?)> -> Captured(out TElement)
 
 'originalFile' @ [74:55] ==> public final val originalFile: KtFile defined in org.jetbrains.kotlin.idea.completion.ToFromOriginalFileMapper[PropertyDescriptorImpl]
 
@@ -166,7 +166,7 @@ Inferred types:
 
 'java' @ [74:92] ==> public val <T> KClass<out TElement>.java: Class<out TElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> TElement
+    <T> -> Captured(out TElement)
 
 'element' @ [78:13] ==> value-parameter element: TElement defined in org.jetbrains.kotlin.idea.completion.ToFromOriginalFileMapper.toSyntheticFile[ValueParameterDescriptorImpl]
 
@@ -182,9 +182,9 @@ Inferred types:
 
 'startOffset' @ [79:46] ==> public val PsiElement.startOffset: Int defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 
-'findElementOfClassAtOffset' @ [80:28] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<out (TElement..TElement?)>, p3: Boolean): TElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'findElementOfClassAtOffset' @ [80:28] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<out TElement>, p3: Boolean): TElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> TElement
+    <T : (PsiElement..PsiElement?)> -> Captured(out TElement)
 
 'syntheticFile' @ [80:55] ==> public final val syntheticFile: KtFile defined in org.jetbrains.kotlin.idea.completion.ToFromOriginalFileMapper[PropertyDescriptorImpl]
 
@@ -194,5 +194,5 @@ Inferred types:
 
 'java' @ [80:93] ==> public val <T> KClass<out TElement>.java: Class<out TElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> TElement
+    <T> -> Captured(out TElement)
 

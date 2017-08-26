@@ -42,7 +42,7 @@
 
 'analyze' @ [55:49] ==> @NotNull public open fun <V : (Value..Value?)> analyze(@NotNull internalClassName: String, @NotNull node: MethodNode, @NotNull interpreter: Interpreter<(BasicValue..BasicValue?)>): (Array<(Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>..Array<out (Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>) defined in org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer[JavaMethodDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)
 
 'node' @ [55:65] ==> value-parameter node: MethodNode defined in org.jetbrains.kotlin.codegen.optimization.common.analyzeLiveness[ValueParameterDescriptorImpl]
 
@@ -64,7 +64,7 @@ Inferred types:
 
 'insn' @ [58:96] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.common.analyzeLiveness.<no name provided>.def[ValueParameterDescriptorImpl]
 
-'useVar' @ [60:17] ==> private fun useVar(frame: VariableLivenessFrame, insn: AbstractInsnNode, node: MethodNode, typeAnnotatedFrame: Frame<BasicValue>?): Unit defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'useVar' @ [60:17] ==> private fun useVar(frame: VariableLivenessFrame, insn: AbstractInsnNode, node: MethodNode, typeAnnotatedFrame: Frame<BasicValue>?): Unit defined in org.jetbrains.kotlin.codegen.optimization.common in file variableLiveness.kt[SimpleFunctionDescriptorImpl]
 
 'frame' @ [60:24] ==> value-parameter frame: VariableLivenessFrame defined in org.jetbrains.kotlin.codegen.optimization.common.analyzeLiveness.<no name provided>.use[ValueParameterDescriptorImpl]
 

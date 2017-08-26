@@ -8,7 +8,9 @@
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> DaemonMessageReporter
 
-'ReportCategory' @ [30:13] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
+'in' @ [30:13] ==> public operator fun <@OnlyInputTypes T> Array<out Int>.contains(element: Int): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <@OnlyInputTypes T> -> Int
 
 'code' @ [30:43] ==> public final val code: Int defined in org.jetbrains.kotlin.daemon.common.ReportCategory[DeserializedPropertyDescriptor]
 
@@ -16,7 +18,9 @@ Inferred types:
 
 'reportCategories' @ [30:70] ==> public final val reportCategories: Array<Int> defined in org.jetbrains.kotlin.daemon.common.CompilationOptions[DeserializedPropertyDescriptor]
 
-'ReportSeverity' @ [31:30] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
+'!!' @ [31:30] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: ReportSeverity?): ReportSeverity[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> ReportSeverity
 
 'fromCode' @ [31:45] ==> public final fun fromCode(code: Int): ReportSeverity? defined in org.jetbrains.kotlin.daemon.common.ReportSeverity.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -51,8 +55,6 @@ Inferred types:
 'servicesFacade' @ [50:13] ==> private final val servicesFacade: CompilerServicesFacadeBase defined in org.jetbrains.kotlin.daemon.report.DaemonMessageReporterImpl[PropertyDescriptorImpl]
 
 'report' @ [50:28] ==> public abstract fun report(category: Int, severity: Int, message: String?, attachment: Serializable?): Unit defined in org.jetbrains.kotlin.daemon.common.CompilerServicesFacadeBase[DeserializedSimpleFunctionDescriptor]
-
-'ReportCategory' @ [50:35] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
 
 'code' @ [50:65] ==> public final val code: Int defined in org.jetbrains.kotlin.daemon.common.ReportCategory[DeserializedPropertyDescriptor]
 

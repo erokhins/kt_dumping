@@ -1,8 +1,8 @@
 'KotlinAbstractUExpression' @ [27:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [28:32] ==> internal fun <T> lz(initializer: () -> UExpression?): Lazy<UExpression?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [28:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression?
+    <T> -> T
 
 'KotlinConverter' @ [28:37] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -14,15 +14,13 @@ Inferred types:
 
 'this' @ [28:90] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUSwitchExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [30:43] ==> internal fun <T> lz(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [30:43] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
 'KotlinUExpressionList' @ [31:18] ==> public constructor KotlinUExpressionList(psi: PsiElement?, kind: UastSpecialExpressionKind, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUExpressionList[ClassConstructorDescriptorImpl]
 
 'psi' @ [31:40] ==> public open val psi: KtWhenExpression defined in org.jetbrains.uast.kotlin.KotlinUSwitchExpression[PropertyDescriptorImpl]
-
-'KotlinSpecialExpressionKinds' @ [31:45] ==> public object KotlinSpecialExpressionKinds defined in org.jetbrains.uast.kotlin.kinds in file KotlinSpecialExpressionKinds.kt[FakeCallableDescriptorForObject]
 
 'WHEN' @ [31:74] ==> @JvmField public final val WHEN: UastSpecialExpressionKind defined in org.jetbrains.uast.kotlin.kinds.KotlinSpecialExpressionKinds[PropertyDescriptorImpl]
 
@@ -96,9 +94,9 @@ Inferred types:
 
 'KotlinAbstractUExpression' @ [52:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [53:32] ==> internal fun <T> lz(initializer: () -> List<UExpression>): Lazy<List<UExpression>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [53:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UExpression>
+    <T> -> T
 
 'psi' @ [54:9] ==> public open val psi: KtWhenEntry defined in org.jetbrains.uast.kotlin.KotlinUSwitchEntry[PropertyDescriptorImpl]
 
@@ -166,11 +164,7 @@ Inferred types:
 
 'isNegated' @ [58:24] ==> public final val KtWhenConditionInRange.isNegated: Boolean[MyPropertyDescriptor]
 
-'KotlinBinaryOperators' @ [58:37] ==> public object KotlinBinaryOperators defined in org.jetbrains.uast.kotlin in file KotlinBinaryOperators.kt[FakeCallableDescriptorForObject]
-
 'NOT_IN' @ [58:59] ==> @JvmField public final val NOT_IN: UastBinaryOperator defined in org.jetbrains.uast.kotlin.KotlinBinaryOperators[PropertyDescriptorImpl]
-
-'KotlinBinaryOperators' @ [59:29] ==> public object KotlinBinaryOperators defined in org.jetbrains.uast.kotlin in file KotlinBinaryOperators.kt[FakeCallableDescriptorForObject]
 
 'IN' @ [59:51] ==> @JvmField public final val IN: UastBinaryOperator defined in org.jetbrains.uast.kotlin.KotlinBinaryOperators[PropertyDescriptorImpl]
 
@@ -215,11 +209,7 @@ Inferred types:
 
 'isNegated' @ [66:24] ==> public final val KtWhenConditionIsPattern.isNegated: Boolean[MyPropertyDescriptor]
 
-'KotlinBinaryExpressionWithTypeKinds' @ [66:37] ==> public object KotlinBinaryExpressionWithTypeKinds defined in org.jetbrains.uast.kotlin in file KotlinBinaryExpressionWithTypeKinds.kt[FakeCallableDescriptorForObject]
-
 'NEGATED_INSTANCE_CHECK' @ [66:73] ==> @JvmField public final val NEGATED_INSTANCE_CHECK: UastBinaryExpressionWithTypeKind.InstanceCheck defined in org.jetbrains.uast.kotlin.KotlinBinaryExpressionWithTypeKinds[PropertyDescriptorImpl]
-
-'UastBinaryExpressionWithTypeKind' @ [67:29] ==> public companion object defined in org.jetbrains.uast.UastBinaryExpressionWithTypeKind[FakeCallableDescriptorForObject]
 
 'INSTANCE_CHECK' @ [67:62] ==> @field:JvmField public final val INSTANCE_CHECK: UastBinaryExpressionWithTypeKind.InstanceCheck defined in org.jetbrains.uast.UastBinaryExpressionWithTypeKind.Companion[DeserializedPropertyDescriptor]
 
@@ -248,8 +238,6 @@ Inferred types:
 
 'this' @ [71:86] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUSwitchEntry.caseValues.<anonymous>.<anonymous>.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'KotlinConverter' @ [74:49] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
-
 'convertOrEmpty' @ [74:65] ==> internal final fun convertOrEmpty(expression: KtExpression?, parent: UElement?): UExpression defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 
 'it' @ [74:80] ==> value-parameter it: (KtWhenCondition..KtWhenCondition?) defined in org.jetbrains.uast.kotlin.KotlinUSwitchEntry.caseValues.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -260,15 +248,13 @@ Inferred types:
 
 'UastEmptyExpression' @ [75:21] ==> public object UastEmptyExpression : UExpression defined in org.jetbrains.uast[FakeCallableDescriptorForObject]
 
-'lz' @ [79:43] ==> internal fun <T> lz(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [79:43] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
 'KotlinUExpressionList' @ [80:18] ==> public constructor KotlinUExpressionList(psi: PsiElement?, kind: UastSpecialExpressionKind, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinUExpressionList[ClassConstructorDescriptorImpl]
 
 'psi' @ [80:40] ==> public open val psi: KtWhenEntry defined in org.jetbrains.uast.kotlin.KotlinUSwitchEntry[PropertyDescriptorImpl]
-
-'KotlinSpecialExpressionKinds' @ [80:45] ==> public object KotlinSpecialExpressionKinds defined in org.jetbrains.uast.kotlin.kinds in file KotlinSpecialExpressionKinds.kt[FakeCallableDescriptorForObject]
 
 'WHEN_ENTRY' @ [80:74] ==> @JvmField public final val WHEN_ENTRY: UastSpecialExpressionKind defined in org.jetbrains.uast.kotlin.kinds.KotlinSpecialExpressionKinds[PropertyDescriptorImpl]
 
@@ -333,8 +319,6 @@ Inferred types:
 'listOf' @ [90:25] ==> public fun <T> listOf(element: UExpression): List<UExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> UExpression
-
-'KotlinConverter' @ [90:32] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
 'convertOrEmpty' @ [90:48] ==> internal final fun convertOrEmpty(expression: KtExpression?, parent: UElement?): UExpression defined in org.jetbrains.uast.kotlin.KotlinConverter[SimpleFunctionDescriptorImpl]
 

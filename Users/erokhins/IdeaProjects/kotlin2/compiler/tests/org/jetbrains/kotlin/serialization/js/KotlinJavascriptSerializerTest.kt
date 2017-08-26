@@ -28,17 +28,15 @@ Inferred types:
 
 'put' @ [53:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>, @NotNull p1: MessageCollector): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [53:48] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
-
-'MessageCollector' @ [53:71] ==> public companion object defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector[FakeCallableDescriptorForObject]
 
 'NONE' @ [53:88] ==> public final val NONE: MessageCollector defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector.Companion[DeserializedPropertyDescriptor]
 
 'configuration' @ [54:9] ==> val configuration: CompilerConfiguration defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializerTest.doTest[LocalVariableDescriptor]
 
-'put' @ [54:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableList<(String..String?)>..List<(String..String?)>?)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
+'put' @ [54:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableList<(String..String?)>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> (kotlin.collections.MutableList<(kotlin.String..kotlin.String?)>..kotlin.collections.List<(kotlin.String..kotlin.String?)>?)
 
@@ -141,8 +139,6 @@ Inferred types:
 
 'metaFile' @ [81:34] ==> value-parameter metaFile: File defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializerTest.serialize[ValueParameterDescriptorImpl]
 
-'KotlinJavascriptSerializationUtil' @ [81:44] ==> public object KotlinJavascriptSerializationUtil defined in org.jetbrains.kotlin.serialization.js[FakeCallableDescriptorForObject]
-
 'metadataAsString' @ [81:78] ==> public final fun metadataAsString(bindingContext: BindingContext, jsDescriptor: JsModuleDescriptor<ModuleDescriptor>): String defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil[DeserializedSimpleFunctionDescriptor]
 
 'analysisResult' @ [81:95] ==> val analysisResult: JsAnalysisResult defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializerTest.serialize[LocalVariableDescriptor]
@@ -158,8 +154,6 @@ Inferred types:
 'createEmptyModule' @ [89:38] ==> @NotNull public open fun createEmptyModule(@NotNull p0: String, @NotNull p1: KotlinBuiltIns): ModuleDescriptorImpl defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 
 'TEST_MODULE_NAME' @ [89:76] ==> public final var TEST_MODULE_NAME: (String..String?) defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaPropertyDescriptor]
-
-'JsPlatform' @ [89:97] ==> public object JsPlatform : TargetPlatform defined in org.jetbrains.kotlin.js.resolve[FakeCallableDescriptorForObject]
 
 'builtIns' @ [89:108] ==> public final val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.js.resolve.JsPlatform[DeserializedPropertyDescriptor]
 

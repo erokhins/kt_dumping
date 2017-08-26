@@ -79,8 +79,6 @@ Inferred types:
 
 'root' @ [76:44] ==> val root: VirtualFile defined in org.jetbrains.kotlin.cli.jvm.compiler.ClasspathRootsResolver.convertClasspathRoots[LocalVariableDescriptor]
 
-'JavaRoot' @ [76:50] ==> public companion object RootTypes defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot[FakeCallableDescriptorForObject]
-
 'SOURCE' @ [76:68] ==> enum entry SOURCE defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType[FakeCallableDescriptorForObject]
 
 'contentRoot' @ [76:76] ==> val contentRoot: ContentRoot defined in org.jetbrains.kotlin.cli.jvm.compiler.ClasspathRootsResolver.convertClasspathRoots[LocalVariableDescriptor]
@@ -122,8 +120,6 @@ Inferred types:
 'JavaRoot' @ [85:31] ==> public constructor JavaRoot(file: VirtualFile, type: JavaRoot.RootType, prefixFqName: FqName? = ...) defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot[ClassConstructorDescriptorImpl]
 
 'root' @ [85:40] ==> val root: VirtualFile defined in org.jetbrains.kotlin.cli.jvm.compiler.ClasspathRootsResolver.convertClasspathRoots[LocalVariableDescriptor]
-
-'JavaRoot' @ [85:46] ==> public companion object RootTypes defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot[FakeCallableDescriptorForObject]
 
 'BINARY' @ [85:64] ==> enum entry BINARY defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType[FakeCallableDescriptorForObject]
 
@@ -201,8 +197,6 @@ Inferred types:
 
 'Explicit' @ [112:27] ==> public constructor Explicit(moduleInfo: JavaModuleInfo, moduleRoot: VirtualFile, moduleInfoFile: VirtualFile, isBinary: Boolean) defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModule.Explicit[DeserializedClassConstructorDescriptor]
 
-'JavaModuleInfo' @ [112:36] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleInfo[FakeCallableDescriptorForObject]
-
 'create' @ [112:51] ==> public final fun create(psiJavaModule: PsiJavaModule): JavaModuleInfo defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleInfo.Companion[DeserializedSimpleFunctionDescriptor]
 
 'psiJavaModule' @ [112:58] ==> val psiJavaModule: PsiJavaModule defined in org.jetbrains.kotlin.cli.jvm.compiler.ClasspathRootsResolver.modularSourceRoot[LocalVariableDescriptor]
@@ -219,9 +213,9 @@ Inferred types:
 
 'JAR_PROTOCOL' @ [116:69] ==> public const final val JAR_PROTOCOL: String defined in com.intellij.openapi.vfs.StandardFileSystems[JavaPropertyDescriptor]
 
-'lazy' @ [117:38] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> Attributes?): Lazy<Attributes?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [117:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Attributes?
+    <T> -> T
 
 'NONE' @ [117:43] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -261,7 +255,9 @@ Inferred types:
 
 'moduleInfoFile' @ [125:13] ==> val moduleInfoFile: VirtualFile? defined in org.jetbrains.kotlin.cli.jvm.compiler.ClasspathRootsResolver.modularBinaryRoot[LocalVariableDescriptor]
 
-'JavaModuleInfo' @ [126:30] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleInfo[FakeCallableDescriptorForObject]
+'?:' @ [126:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: JavaModuleInfo?, right: JavaModuleInfo): JavaModuleInfo[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> JavaModuleInfo
 
 'read' @ [126:45] ==> public final fun read(file: VirtualFile): JavaModuleInfo? defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleInfo.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -305,9 +301,9 @@ Inferred types:
 
 'ERROR' @ [139:24] ==> enum entry ERROR defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageSeverity[FakeCallableDescriptorForObject]
 
-'?:' @ [139:82] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: VirtualFile?, right: VirtualFile): VirtualFile[SimpleFunctionDescriptorImpl]
+'?:' @ [139:82] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: VirtualFile?, right: VirtualFile?): VirtualFile?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> VirtualFile
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> VirtualFile?
 
 'getVirtualFileForJar' @ [139:94] ==> @Nullable public open fun getVirtualFileForJar(@Nullable p0: VirtualFile?): VirtualFile? defined in com.intellij.openapi.vfs.VfsUtilCore[JavaMethodDescriptor]
 
@@ -336,6 +332,8 @@ Inferred types:
     <T> -> InputStream
     <R> -> Manifest
 
+'Manifest' @ [151:46] ==> public constructor Manifest(p0: (InputStream..InputStream?)) defined in java.util.jar.Manifest[JavaClassConstructorDescriptor]
+
 'mainAttributes' @ [151:57] ==> public final val Manifest.mainAttributes: (Attributes..Attributes?)[MyPropertyDescriptor]
 
 'modules' @ [159:29] ==> value-parameter modules: List<JavaModule> defined in org.jetbrains.kotlin.cli.jvm.compiler.ClasspathRootsResolver.addModularRoots[ValueParameterDescriptorImpl]
@@ -347,6 +345,8 @@ Inferred types:
 'filterNot' @ [159:77] ==> public inline fun <T> Iterable<JavaModule.Explicit>.filterNot(predicate: (JavaModule.Explicit) -> Boolean): List<JavaModule.Explicit> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Explicit
+
+'isBinary' @ [159:99] ==> public abstract val isBinary: Boolean defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModule[DeserializedPropertyDescriptor]
 
 'sourceModules' @ [160:13] ==> val sourceModules: List<JavaModule.Explicit> defined in org.jetbrains.kotlin.cli.jvm.compiler.ClasspathRootsResolver.addModularRoots[LocalVariableDescriptor]
 
@@ -505,6 +505,8 @@ Inferred types:
     <T> -> JavaModule
     <R> -> String
 
+'name' @ [190:64] ==> public abstract val name: String defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModule[DeserializedPropertyDescriptor]
+
 'computeDefaultRootModules' @ [191:21] ==> private final fun computeDefaultRootModules(): List<String> defined in org.jetbrains.kotlin.cli.jvm.compiler.ClasspathRootsResolver[SimpleFunctionDescriptorImpl]
 
 'additionalModules' @ [191:51] ==> private final val additionalModules: List<String> defined in org.jetbrains.kotlin.cli.jvm.compiler.ClasspathRootsResolver[PropertyDescriptorImpl]
@@ -589,11 +591,7 @@ Inferred types:
 
 'isBinary' @ [216:36] ==> public abstract val isBinary: Boolean defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModule[DeserializedPropertyDescriptor]
 
-'JavaRoot' @ [216:46] ==> public companion object RootTypes defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot[FakeCallableDescriptorForObject]
-
 'BINARY' @ [216:64] ==> enum entry BINARY defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType[FakeCallableDescriptorForObject]
-
-'JavaRoot' @ [216:76] ==> public companion object RootTypes defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot[FakeCallableDescriptorForObject]
 
 'SOURCE' @ [216:94] ==> enum entry SOURCE defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType[FakeCallableDescriptorForObject]
 
@@ -609,6 +607,8 @@ Inferred types:
 Inferred types:
     <T> -> Explicit
     <K> -> String
+
+'name' @ [226:84] ==> public abstract val name: String defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModule[DeserializedPropertyDescriptor]
 
 'in' @ [227:28] ==> @InlineOnly public operator inline fun <@OnlyInputTypes K, V> Map<out String, JavaModule.Explicit>.contains(key: String): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -728,8 +728,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CompilerMessageLocation?
 
 'file' @ [262:21] ==> value-parameter file: VirtualFile? = ... defined in org.jetbrains.kotlin.cli.jvm.compiler.ClasspathRootsResolver.report[ValueParameterDescriptorImpl]
-
-'CompilerMessageLocation' @ [262:45] ==> public companion object defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageLocation[FakeCallableDescriptorForObject]
 
 'create' @ [262:69] ==> @JvmStatic public final fun create(path: String?): CompilerMessageLocation? defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageLocation.Companion[DeserializedSimpleFunctionDescriptor]
 

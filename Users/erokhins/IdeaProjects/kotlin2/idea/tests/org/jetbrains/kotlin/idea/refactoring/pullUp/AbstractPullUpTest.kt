@@ -56,8 +56,6 @@ Inferred types:
 
 'it' @ [52:21] ==> value-parameter it: (String..String?) defined in org.jetbrains.kotlin.idea.refactoring.pullUp.AbstractPullUpTest.doKotlinTest.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'KotlinPullUpHandler' @ [52:27] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHandler[FakeCallableDescriptorForObject]
-
 'PULL_UP_TEST_HELPER_KEY' @ [52:47] ==> public final val PULL_UP_TEST_HELPER_KEY: String defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHandler.Companion[DeserializedPropertyDescriptor]
 
 'helper' @ [52:72] ==> val helper: <no name provided> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.AbstractPullUpTest.doKotlinTest.<anonymous>[LocalVariableDescriptor]
@@ -82,7 +80,7 @@ Inferred types:
 
 'getParentOfType' @ [61:43] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(PsiClass..PsiClass?)>): PsiClass? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiClass
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
 
 'elementAt' @ [61:59] ==> val elementAt: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.pullUp.AbstractPullUpTest.doJavaTest.<anonymous>[LocalVariableDescriptor]
 

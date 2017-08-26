@@ -1,13 +1,10 @@
 'CopyHandlerDelegateBase' @ [61:39] ==> public constructor CopyHandlerDelegateBase() defined in com.intellij.refactoring.copy.CopyHandlerDelegateBase[JavaClassConstructorDescriptor]
 
-'UserDataProperty' @ [64:41] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<String>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> Project
-    <T : Any> -> String
+'getValue' @ [64:41] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [64:62] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(String..String?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'parentsWithSelf' @ [67:37] ==> public val PsiElement.parentsWithSelf: Sequence<PsiElement> defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 
@@ -41,14 +38,14 @@ Inferred types:
 Inferred types:
     <reified R> -> KtNamedDeclaration
 
-'ifEmpty' @ [69:100] ==> public inline fun <T, C : Collection<{PsiNamedElement & KtAnnotated}>> List<{PsiNamedElement & KtAnnotated}>.ifEmpty(body: () -> List<{PsiNamedElement & KtAnnotated}>): List<{PsiNamedElement & KtAnnotated}> defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
+'ifEmpty' @ [69:100] ==> public inline fun <T, C : Collection<PsiElement>> List<KtElement>.ifEmpty(body: () -> List<KtElement>): List<KtElement> defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {PsiNamedElement & KtAnnotated}
-    <C : Collection<T>> -> List<{PsiNamedElement & KtAnnotated}>
+    <T> -> PsiElement
+    <C : Collection<T>> -> List<KtElement>
 
-'listOf' @ [69:110] ==> public fun <T> listOf(element: KtFile): List<KtFile> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [69:110] ==> public fun <T> listOf(element: ???): List<???> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtFile
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@78ffb375
 
 'declarationOrFile' @ [69:117] ==> val declarationOrFile: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.Companion.getElementsToCopy[LocalVariableDescriptor]
 
@@ -62,9 +59,9 @@ Inferred types:
 Inferred types:
     <T> -> KtElement
 
-'lazy' @ [76:37] ==> public fun <T> lazy(initializer: () -> CopyFilesOrDirectoriesHandler): Lazy<CopyFilesOrDirectoriesHandler> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [76:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CopyFilesOrDirectoriesHandler
+    <T> -> T
 
 'CopyFilesOrDirectoriesHandler' @ [76:44] ==> public constructor CopyFilesOrDirectoriesHandler() defined in com.intellij.refactoring.copy.CopyFilesOrDirectoriesHandler[JavaClassConstructorDescriptor]
 
@@ -198,17 +195,17 @@ Inferred types:
 
 'SKIP' @ [121:36] ==> enum entry SKIP defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.ExistingFilePolicy[FakeCallableDescriptorForObject]
 
-'runWriteAction' @ [124:16] ==> public fun <T> runWriteAction(action: () -> KtFile): KtFile defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
+'runWriteAction' @ [124:16] ==> public fun <T> runWriteAction(action: () -> KtFile?): KtFile? defined in org.jetbrains.kotlin.idea.util.application[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtFile
+    <T> -> KtFile?
 
 'if (existingFile != null && existingFile.isValid) {
                 existingFile as KtFile
             } else {
                 createKotlinFile(targetFileName, targetDirectory)
-            }' @ [125:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtFile, elseBranch: KtFile): KtFile[SimpleFunctionDescriptorImpl]
+            }' @ [125:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtFile?, elseBranch: KtFile?): KtFile?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtFile
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtFile?
 
 'existingFile' @ [125:17] ==> val existingFile: PsiFile? defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.getOrCreateTargetFile[LocalVariableDescriptor]
 
@@ -397,7 +394,7 @@ Inferred types:
 
 'initialTargetDirectory' @ [191:65] ==> val initialTargetDirectory: PsiDirectory defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy[LocalVariableDescriptor]
 
-'toDirectoryWrapper' @ [191:88] ==> public fun PsiDirectory.toDirectoryWrapper(): AutocreatingPsiDirectoryWrapper.ByPsiDirectory defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'toDirectoryWrapper' @ [191:88] ==> public fun PsiDirectory.toDirectoryWrapper(): AutocreatingPsiDirectoryWrapper.ByPsiDirectory defined in org.jetbrains.kotlin.idea.refactoring.move in file AutocreatingPsiDirectoryWrapper.kt[SimpleFunctionDescriptorImpl]
 
 'initialTargetDirectory' @ [192:46] ==> val initialTargetDirectory: PsiDirectory defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy[LocalVariableDescriptor]
 
@@ -504,7 +501,7 @@ Inferred types:
 
 'targetDirectory' @ [204:43] ==> public final var targetDirectory: MoveDestination? defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationDialog[PropertyDescriptorImpl]
 
-'toDirectoryWrapper' @ [204:60] ==> public fun MoveDestination.toDirectoryWrapper(): AutocreatingPsiDirectoryWrapper.ByMoveDestination defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'toDirectoryWrapper' @ [204:60] ==> public fun MoveDestination.toDirectoryWrapper(): AutocreatingPsiDirectoryWrapper.ByMoveDestination defined in org.jetbrains.kotlin.idea.refactoring.move in file AutocreatingPsiDirectoryWrapper.kt[SimpleFunctionDescriptorImpl]
 
 'targetSourceRoot' @ [205:17] ==> var targetSourceRoot: VirtualFile? defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy[LocalVariableDescriptor]
 
@@ -548,7 +545,7 @@ Inferred types:
 
 'targetDirectory' @ [212:43] ==> public final val CopyFilesOrDirectoriesDialog.targetDirectory: (PsiDirectory..PsiDirectory?)[MyPropertyDescriptor]
 
-'toDirectoryWrapper' @ [212:60] ==> public fun PsiDirectory.toDirectoryWrapper(): AutocreatingPsiDirectoryWrapper.ByPsiDirectory defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'toDirectoryWrapper' @ [212:60] ==> public fun PsiDirectory.toDirectoryWrapper(): AutocreatingPsiDirectoryWrapper.ByPsiDirectory defined in org.jetbrains.kotlin.idea.refactoring.move in file AutocreatingPsiDirectoryWrapper.kt[SimpleFunctionDescriptorImpl]
 
 'targetSourceRoot' @ [213:17] ==> var targetSourceRoot: VirtualFile? defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy[LocalVariableDescriptor]
 
@@ -613,7 +610,7 @@ Inferred types:
 
 'elementToCopy' @ [229:17] ==> value-parameter elementToCopy: KtElement defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'getInternalReferencesToUpdateOnPackageNameChange' @ [229:31] ==> public fun KtElement.getInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'getInternalReferencesToUpdateOnPackageNameChange' @ [229:31] ==> public fun KtElement.getInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'changeInfo' @ [229:80] ==> val changeInfo: ContainerChangeInfo defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy.<anonymous>[LocalVariableDescriptor]
 
@@ -635,7 +632,7 @@ Inferred types:
 
 'referencedElement' @ [231:76] ==> val referencedElement: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'markInternalUsages' @ [235:9] ==> internal fun markInternalUsages(usages: Collection<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'markInternalUsages' @ [235:9] ==> internal fun markInternalUsages(usages: Collection<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'internalUsages' @ [235:28] ==> val internalUsages: LinkedHashSet<UsageInfo> /* = LinkedHashSet<UsageInfo> */ defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy[LocalVariableDescriptor]
 
@@ -784,13 +781,13 @@ Inferred types:
 
 'restoredInternalUsages' @ [262:33] ==> val restoredInternalUsages: ArrayList<UsageInfo> /* = ArrayList<UsageInfo> */ defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy.doRefactor[LocalVariableDescriptor]
 
-'restoreInternalUsages' @ [262:59] ==> internal fun restoreInternalUsages(scope: KtElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>, forcedRestore: Boolean = ...): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'restoreInternalUsages' @ [262:59] ==> internal fun restoreInternalUsages(scope: KtElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>, forcedRestore: Boolean = ...): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'newElement' @ [262:81] ==> val newElement: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy.doRefactor.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'oldToNewElementsMapping' @ [262:106] ==> val oldToNewElementsMapping: HashMap<PsiElement, PsiElement> /* = HashMap<PsiElement, PsiElement> */ defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy.doRefactor.<anonymous>[LocalVariableDescriptor]
 
-'postProcessMoveUsages' @ [263:33] ==> public fun postProcessMoveUsages(usages: Collection<UsageInfo>, oldToNewElementsMapping: Map<PsiElement, PsiElement> = ..., shorteningMode: KtSimpleNameReference.ShorteningMode = ...): List<NonCodeUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'postProcessMoveUsages' @ [263:33] ==> public fun postProcessMoveUsages(usages: Collection<UsageInfo>, oldToNewElementsMapping: Map<PsiElement, PsiElement> = ..., shorteningMode: KtSimpleNameReference.ShorteningMode = ...): List<NonCodeUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'restoredInternalUsages' @ [263:55] ==> val restoredInternalUsages: ArrayList<UsageInfo> /* = ArrayList<UsageInfo> */ defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy.doRefactor[LocalVariableDescriptor]
 
@@ -857,7 +854,7 @@ Inferred types:
 
 'openFilesInEditor' @ [281:38] ==> public open fun <T : (PsiElement..PsiElement?)> openFilesInEditor(@NotNull p0: (Array<(KtFile..KtFile?)>..Array<out (KtFile..KtFile?)>)): Unit defined in com.intellij.ide.util.EditorHelper[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtFile
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
 
 'arrayOf' @ [281:56] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: KtFile): Array<KtFile> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -877,7 +874,7 @@ Inferred types:
 
 'getErrorIcon' @ [285:119] ==> @NotNull public open fun getErrorIcon(): Icon defined in com.intellij.openapi.ui.Messages[JavaMethodDescriptor]
 
-'cleanUpInternalUsages' @ [288:21] ==> internal fun cleanUpInternalUsages(usages: Collection<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'cleanUpInternalUsages' @ [288:21] ==> internal fun cleanUpInternalUsages(usages: Collection<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'internalUsages' @ [288:43] ==> val internalUsages: LinkedHashSet<UsageInfo> /* = LinkedHashSet<UsageInfo> */ defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy[LocalVariableDescriptor]
 
@@ -932,7 +929,9 @@ Inferred types:
 
 'project' @ [309:9] ==> val project: Project defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy[LocalVariableDescriptor]
 
-'checkConflictsInteractively' @ [309:17] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [309:17] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [309:45] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy[LocalVariableDescriptor]
+
+'doRefactor' @ [309:69] ==> local final fun doRefactor(): Unit defined in org.jetbrains.kotlin.idea.refactoring.copy.CopyKotlinDeclarationsHandler.doCopy[SimpleFunctionDescriptorImpl]
 

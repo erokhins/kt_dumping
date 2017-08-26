@@ -14,7 +14,7 @@
 
 'expression' @ [43:30] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.idea.inspections.AbstractPrimitiveRangeToInspection.buildVisitor.<no name provided>.visitExpression[ValueParameterDescriptorImpl]
 
-'getCallableDescriptor' @ [43:41] ==> internal fun KtExpression.getCallableDescriptor(): CallableDescriptor? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'getCallableDescriptor' @ [43:41] ==> internal fun KtExpression.getCallableDescriptor(): CallableDescriptor? defined in org.jetbrains.kotlin.idea.intentions in file ReplaceUntilWithRangeToIntention.kt[SimpleFunctionDescriptorImpl]
 
 'fqNameUnsafe' @ [43:66] ==> public val DeclarationDescriptor.fqNameUnsafe: FqNameUnsafe defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
@@ -44,7 +44,9 @@
 
 'PARTIAL' @ [57:61] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
-'ConstantExpressionEvaluator' @ [59:28] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [59:28] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CompileTimeConstant<*>?, right: CompileTimeConstant<*>): CompileTimeConstant<*>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CompileTimeConstant<*>
 
 'getConstant' @ [59:56] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -52,7 +54,7 @@
 
 'c' @ [59:74] ==> val c: BindingContext defined in org.jetbrains.kotlin.idea.inspections.AbstractPrimitiveRangeToInspection.Companion.constantValueOrNull[LocalVariableDescriptor]
 
-'constant' @ [61:20] ==> val constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.idea.inspections.AbstractPrimitiveRangeToInspection.Companion.constantValueOrNull[LocalVariableDescriptor]
+'constant' @ [61:20] ==> val constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.idea.inspections.AbstractPrimitiveRangeToInspection.Companion.constantValueOrNull[LocalVariableDescriptor]
 
 'toConstantValue' @ [61:29] ==> public abstract fun toConstantValue(expectedType: KotlinType): ConstantValue<Any?> defined in org.jetbrains.kotlin.resolve.constants.CompileTimeConstant[DeserializedSimpleFunctionDescriptor]
 

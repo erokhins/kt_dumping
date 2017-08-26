@@ -1,4 +1,6 @@
-'ReportCategory' @ [30:40] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
+'in' @ [30:40] ==> public operator fun <@OnlyInputTypes T> Array<out Int>.contains(element: Int): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <@OnlyInputTypes T> -> Int
 
 'code' @ [30:66] ==> public final val code: Int defined in org.jetbrains.kotlin.daemon.common.ReportCategory[DeserializedPropertyDescriptor]
 
@@ -9,8 +11,6 @@
 'compilationOptions' @ [31:29] ==> value-parameter compilationOptions: CompilationOptions defined in org.jetbrains.kotlin.daemon.report.RemoteICReporter.<init>[ValueParameterDescriptorImpl]
 
 'reportSeverity' @ [31:48] ==> public final val reportSeverity: Int defined in org.jetbrains.kotlin.daemon.common.CompilationOptions[DeserializedPropertyDescriptor]
-
-'ReportSeverity' @ [31:66] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'code' @ [31:87] ==> public final val code: Int defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[DeserializedPropertyDescriptor]
 
@@ -32,11 +32,7 @@ Inferred types:
 
 'report' @ [36:28] ==> public fun CompilerServicesFacadeBase.report(category: ReportCategory, severity: ReportSeverity, message: String? = ..., attachment: Serializable? = ...): Unit defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
 
-'ReportCategory' @ [36:35] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
 'IC_MESSAGE' @ [36:50] ==> enum entry IC_MESSAGE defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
-'ReportSeverity' @ [36:62] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'DEBUG' @ [36:77] ==> enum entry DEBUG defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 

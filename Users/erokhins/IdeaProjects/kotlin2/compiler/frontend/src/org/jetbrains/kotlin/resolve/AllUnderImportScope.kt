@@ -115,8 +115,6 @@ Inferred types:
 
 'withoutKinds' @ [64:47] ==> public final fun withoutKinds(kinds: Int): DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [64:60] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'PACKAGES_MASK' @ [64:81] ==> public final val PACKAGES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'scopes' @ [65:16] ==> private final val scopes: List<ResolutionScope> defined in org.jetbrains.kotlin.resolve.AllUnderImportScope[PropertyDescriptorImpl]
@@ -221,9 +219,9 @@ Inferred types:
 
 'java' @ [86:31] ==> public val <T> KClass<out AllUnderImportScope>.java: Class<out AllUnderImportScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AllUnderImportScope
+    <T> -> Captured(out AllUnderImportScope)
 
 'simpleName' @ [86:36] ==> public final val <T : (Any..Any?)> Class<out AllUnderImportScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AllUnderImportScope
+    <T : (Any..Any?)> -> Captured(out AllUnderImportScope)
 

@@ -120,7 +120,7 @@ Inferred types:
 
 'diagnostic' @ [88:55] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedValueFix.Companion.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [88:67] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtBinaryExpression..KtBinaryExpression?), (KtElement..KtElement?), (DeclarationDescriptor..DeclarationDescriptor?)>.psiElement: (KtBinaryExpression..KtBinaryExpression?)[MyPropertyDescriptor]
+'psiElement' @ [88:67] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtBinaryExpression..KtBinaryExpression?), (KtElement..KtElement?), (DeclarationDescriptor..DeclarationDescriptor?)>.psiElement: KtBinaryExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtBinaryExpression..org.jetbrains.kotlin.psi.KtBinaryExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
@@ -130,13 +130,13 @@ Inferred types:
 
 'isAssignment' @ [89:28] ==> public open fun isAssignment(@NotNull p0: PsiElement): Boolean defined in org.jetbrains.kotlin.psi.KtPsiUtil[JavaMethodDescriptor]
 
-'expression' @ [89:41] ==> val expression: (KtBinaryExpression..KtBinaryExpression?) defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedValueFix.Companion.createAction[LocalVariableDescriptor]
+'expression' @ [89:41] ==> val expression: KtBinaryExpression defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedValueFix.Companion.createAction[LocalVariableDescriptor]
 
-'expression' @ [90:17] ==> val expression: (KtBinaryExpression..KtBinaryExpression?) defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedValueFix.Companion.createAction[LocalVariableDescriptor]
+'expression' @ [90:17] ==> val expression: KtBinaryExpression defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedValueFix.Companion.createAction[LocalVariableDescriptor]
 
 'left' @ [90:28] ==> public final val KtBinaryExpression.left: KtExpression?[MyPropertyDescriptor]
 
 'RemoveUnusedValueFix' @ [91:20] ==> public constructor RemoveUnusedValueFix(expression: KtBinaryExpression) defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedValueFix[ClassConstructorDescriptorImpl]
 
-'expression' @ [91:41] ==> val expression: (KtBinaryExpression..KtBinaryExpression?) defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedValueFix.Companion.createAction[LocalVariableDescriptor]
+'expression' @ [91:41] ==> val expression: KtBinaryExpression defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedValueFix.Companion.createAction[LocalVariableDescriptor]
 

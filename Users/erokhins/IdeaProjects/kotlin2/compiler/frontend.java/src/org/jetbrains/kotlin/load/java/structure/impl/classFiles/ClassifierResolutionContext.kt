@@ -8,8 +8,8 @@
 
 'THashMap' @ [46:28] ==> public constructor THashMap<K : (Any..Any?), V : (Any..Any?)>() defined in gnu.trove.THashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> InnerClassInfo
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext.InnerClassInfo..org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext.InnerClassInfo?)
 
 'innerClasses' @ [49:9] ==> private final var innerClasses: MutableMap<String, ClassifierResolutionContext.InnerClassInfo>? defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext[PropertyDescriptorImpl]
 
@@ -33,8 +33,8 @@ Inferred types:
 
 'THashMap' @ [55:30] ==> public constructor THashMap<K : (Any..Any?), V : (Any..Any?)>() defined in gnu.trove.THashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> JavaTypeParameter
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.structure.JavaTypeParameter..org.jetbrains.kotlin.load.java.structure.JavaTypeParameter?)
 
 'newTypeParameters' @ [58:9] ==> value-parameter newTypeParameters: Collection<JavaTypeParameter> defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext.addTypeParameters[ValueParameterDescriptorImpl]
 
@@ -80,17 +80,27 @@ Inferred types:
 
 'typeParameters' @ [65:57] ==> private final var typeParameters: MutableMap<String, JavaTypeParameter>? defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext[PropertyDescriptorImpl]
 
-'let' @ [65:73] ==> @InlineOnly public inline fun <T, R> MutableMap<String, JavaTypeParameter>.let(block: (MutableMap<String, JavaTypeParameter>) -> THashMap<String, JavaTypeParameter>): THashMap<String, JavaTypeParameter> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [65:73] ==> @InlineOnly public inline fun <T, R> MutableMap<String, JavaTypeParameter>.let(block: (MutableMap<String, JavaTypeParameter>) -> THashMap<(String..String?), (JavaTypeParameter..JavaTypeParameter?)>): THashMap<(String..String?), (JavaTypeParameter..JavaTypeParameter?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> MutableMap<String, JavaTypeParameter>
-    <R> -> THashMap<String, JavaTypeParameter>
+    <R> -> THashMap<(kotlin.String..kotlin.String?), (org.jetbrains.kotlin.load.java.structure.JavaTypeParameter..org.jetbrains.kotlin.load.java.structure.JavaTypeParameter?)>
+
+'THashMap' @ [65:79] ==> public constructor THashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<(String..String?), (JavaTypeParameter..JavaTypeParameter?)>..Map<(String..String?), (JavaTypeParameter..JavaTypeParameter?)>?)) defined in gnu.trove.THashMap[JavaClassConstructorDescriptor]
+Inferred types:
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.structure.JavaTypeParameter..org.jetbrains.kotlin.load.java.structure.JavaTypeParameter?)
 
 'innerClasses' @ [65:90] ==> private final var innerClasses: MutableMap<String, ClassifierResolutionContext.InnerClassInfo>? defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext[PropertyDescriptorImpl]
 
-'let' @ [65:104] ==> @InlineOnly public inline fun <T, R> MutableMap<String, ClassifierResolutionContext.InnerClassInfo>.let(block: (MutableMap<String, ClassifierResolutionContext.InnerClassInfo>) -> THashMap<String, ClassifierResolutionContext.InnerClassInfo>): THashMap<String, ClassifierResolutionContext.InnerClassInfo> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [65:104] ==> @InlineOnly public inline fun <T, R> MutableMap<String, ClassifierResolutionContext.InnerClassInfo>.let(block: (MutableMap<String, ClassifierResolutionContext.InnerClassInfo>) -> THashMap<(String..String?), (ClassifierResolutionContext.InnerClassInfo..ClassifierResolutionContext.InnerClassInfo?)>): THashMap<(String..String?), (ClassifierResolutionContext.InnerClassInfo..ClassifierResolutionContext.InnerClassInfo?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> MutableMap<String, InnerClassInfo>
-    <R> -> THashMap<String, InnerClassInfo>
+    <R> -> THashMap<(kotlin.String..kotlin.String?), (org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext.InnerClassInfo..org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext.InnerClassInfo?)>
+
+'THashMap' @ [65:110] ==> public constructor THashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<(String..String?), (ClassifierResolutionContext.InnerClassInfo..ClassifierResolutionContext.InnerClassInfo?)>..Map<(String..String?), (ClassifierResolutionContext.InnerClassInfo..ClassifierResolutionContext.InnerClassInfo?)>?)) defined in gnu.trove.THashMap[JavaClassConstructorDescriptor]
+Inferred types:
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext.InnerClassInfo..org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext.InnerClassInfo?)
 
 'in' @ [69:13] ==> public operator fun CharSequence.contains(char: Char, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -114,7 +124,7 @@ Inferred types:
 
 'nestedParts' @ [75:20] ==> val nestedParts: List<String> defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.ClassifierResolutionContext.mapInternalNameToClassId[LocalVariableDescriptor]
 
-'fold' @ [75:32] ==> public inline fun <T, R> Iterable<String>.fold(initial: ClassId, operation: (ClassId, String) -> ClassId): ClassId defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [75:32] ==> public inline fun <T, R> Iterable<String>.fold(initial: ClassId, operation: (acc: ClassId, String) -> ClassId): ClassId defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> ClassId

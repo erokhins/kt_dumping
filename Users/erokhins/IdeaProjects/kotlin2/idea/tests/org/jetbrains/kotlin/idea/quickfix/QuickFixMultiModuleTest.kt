@@ -13,8 +13,6 @@ Inferred types:
 
 'Jvm' @ [27:101] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [27:105] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [27:115] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'module' @ [30:22] ==> protected final fun module(name: String, jdk: TestJdkKind, hasTestRoot: Boolean): Module defined in org.jetbrains.kotlin.idea.quickfix.QuickFixMultiModuleTest[SimpleFunctionDescriptorImpl]
@@ -26,8 +24,6 @@ Inferred types:
 'header' @ [31:9] ==> val header: Module defined in org.jetbrains.kotlin.idea.quickfix.QuickFixMultiModuleTest.doMultiPlatformTest[LocalVariableDescriptor]
 
 'createFacet' @ [31:16] ==> public fun Module.createFacet(platformKind: TargetPlatformKind<*>? = ...): Unit defined in org.jetbrains.kotlin.idea.stubs in file AbstractMultiModuleTest.kt[SimpleFunctionDescriptorImpl]
-
-'TargetPlatformKind' @ [31:28] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [31:47] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -80,16 +76,12 @@ Inferred types:
 
 'Jvm' @ [44:74] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [44:78] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [44:88] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'to' @ [44:98] ==> public infix fun <A, B> String.to(that: TargetPlatformKind.JavaScript): Pair<String, TargetPlatformKind.JavaScript> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> JavaScript
-
-'TargetPlatformKind' @ [44:106] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [44:125] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -101,8 +93,6 @@ Inferred types:
 Inferred types:
     <A> -> String
     <B> -> JavaScript
-
-'TargetPlatformKind' @ [49:45] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [49:64] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -118,8 +108,6 @@ Inferred types:
 Inferred types:
     <A> -> String
     <B> -> JavaScript
-
-'TargetPlatformKind' @ [59:45] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [59:64] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -163,8 +151,6 @@ Inferred types:
 Inferred types:
     <A> -> String
     <B> -> JavaScript
-
-'TargetPlatformKind' @ [104:45] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [104:64] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 

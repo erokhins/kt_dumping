@@ -44,7 +44,7 @@ Inferred types:
 
 'getPsiElementAt' @ [88:50] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getPsiElementAt(p0: (Project..Project?), p1: (Class<(KtProperty..KtProperty?)>..Class<(KtProperty..KtProperty?)>?), p2: (SourcePosition..SourcePosition?)): KtProperty? defined in com.intellij.debugger.impl.PositionUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtProperty
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'project' @ [88:66] ==> public final val KotlinFieldBreakpoint.project: Project[MyPropertyDescriptor]
 
@@ -60,7 +60,7 @@ Inferred types:
 
 'getPsiElementAt' @ [92:52] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getPsiElementAt(p0: (Project..Project?), p1: (Class<(KtParameter..KtParameter?)>..Class<(KtParameter..KtParameter?)>?), p2: (SourcePosition..SourcePosition?)): KtParameter? defined in com.intellij.debugger.impl.PositionUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtParameter
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
 
 'project' @ [92:68] ==> public final val KotlinFieldBreakpoint.project: Project[MyPropertyDescriptor]
 
@@ -125,7 +125,7 @@ Inferred types:
 
 'getParentOfType' @ [108:61] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtClassOrObject..KtClassOrObject?)>): KtClassOrObject? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClassOrObject
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassOrObject..org.jetbrains.kotlin.psi.KtClassOrObject?)
 
 'property' @ [108:77] ==> val property: KtCallableDeclaration? defined in org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinFieldBreakpoint.reload[LocalVariableDescriptor]
 
@@ -437,8 +437,8 @@ Inferred types:
 
 'get' @ [193:45] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [193:64] ==> public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -452,8 +452,8 @@ Inferred types:
 
 'get' @ [195:45] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>..ReadOnlySlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>?), p1: (ValueParameterDescriptor..ValueParameterDescriptor?)): PropertyDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ValueParameterDescriptor
-    <V : (Any..Any?)> -> PropertyDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'VALUE_PARAMETER_AS_PROPERTY' @ [195:64] ==> public final val VALUE_PARAMETER_AS_PROPERTY: (WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>..WritableSlice<(ValueParameterDescriptor..ValueParameterDescriptor?), (PropertyDescriptor..PropertyDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -488,8 +488,8 @@ Inferred types:
 
 'get' @ [199:36] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), p1: (PropertyDescriptor..PropertyDescriptor?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'BACKING_FIELD_REQUIRED' @ [199:55] ==> public final val BACKING_FIELD_REQUIRED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -639,9 +639,9 @@ Inferred types:
 
 'eventRequest' @ [241:17] ==> val eventRequest: (EventRequest..EventRequest?) defined in org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinFieldBreakpoint.findRequest[LocalVariableDescriptor]
 
-'java' @ [241:37] ==> public val <T> KClass<out EventRequest>.java: Class<out EventRequest> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [241:37] ==> public val <T> KClass<out (EventRequest..EventRequest?)>.java: Class<out (EventRequest..EventRequest?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> EventRequest
+    <T> -> Captured(out (com.sun.jdi.request.EventRequest..com.sun.jdi.request.EventRequest?))
 
 'requestClass' @ [241:45] ==> value-parameter requestClass: Class<T> defined in org.jetbrains.kotlin.idea.debugger.breakpoints.KotlinFieldBreakpoint.findRequest[ValueParameterDescriptorImpl]
 

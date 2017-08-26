@@ -16,13 +16,13 @@ Inferred types:
 
 'toString' @ [35:43] ==> public open fun toString(): String defined in com.sun.tools.javac.util.Name[JavaMethodDescriptor]
 
-'lazy' @ [37:61] ==> public fun <T> lazy(initializer: () -> List<TreeBasedAnnotation>): Lazy<List<TreeBasedAnnotation>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [37:61] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<TreeBasedAnnotation>
+    <T> -> T
 
 'tree' @ [38:9] ==> value-parameter tree: JCTree.JCTypeParameter defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedTypeParameter.<init>[ValueParameterDescriptorImpl]
 
-'annotations' @ [38:14] ==> internal fun JCTree.annotations(): Collection<JCTree.JCAnnotation> defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'annotations' @ [38:14] ==> internal fun JCTree.annotations(): Collection<JCTree.JCAnnotation> defined in org.jetbrains.kotlin.javac.wrappers.trees in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [38:28] ==> public inline fun <T, R> Iterable<JCTree.JCAnnotation>.map(transform: (JCTree.JCAnnotation) -> TreeBasedAnnotation): List<TreeBasedAnnotation> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

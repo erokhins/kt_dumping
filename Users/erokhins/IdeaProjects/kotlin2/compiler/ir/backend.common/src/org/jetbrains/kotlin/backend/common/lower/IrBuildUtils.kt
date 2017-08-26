@@ -1,12 +1,12 @@
-'lazy' @ [48:19] ==> public fun <T> lazy(initializer: () -> S): Lazy<S> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [48:19] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> S
+    <T> -> T
 
 'buildSymbol' @ [48:26] ==> protected abstract fun buildSymbol(): S defined in org.jetbrains.kotlin.backend.common.lower.SymbolWithIrBuilder[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [50:28] ==> public fun <T> lazy(initializer: () -> D): Lazy<D> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [50:28] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> D
+    <T> -> T
 
 'buildIr' @ [50:35] ==> protected abstract fun buildIr(): D defined in org.jetbrains.kotlin.backend.common.lower.SymbolWithIrBuilder[SimpleFunctionDescriptorImpl]
 
@@ -35,11 +35,7 @@ Inferred types:
 
 'descriptor' @ [72:63] ==> public abstract val descriptor: PropertyDescriptor defined in org.jetbrains.kotlin.ir.symbols.IrFieldSymbol[DeserializedPropertyDescriptor]
 
-'Annotations' @ [73:51] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [73:63] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [74:51] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [74:60] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -81,7 +77,7 @@ Inferred types:
 
 'body' @ [100:9] ==> public final var body: IrBody? defined in org.jetbrains.kotlin.ir.declarations.impl.IrFunctionImpl[DeserializedPropertyDescriptor]
 
-'createIrBuilder' @ [100:16] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createIrBuilder' @ [100:16] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [100:32] ==> <this> defined in org.jetbrains.kotlin.backend.common.lower.createPropertyGetterBuilder.<no name provided>.buildIr.<anonymous>[ReceiverParameterDescriptorImpl]
 
@@ -97,7 +93,7 @@ Inferred types:
 
 'irReturn' @ [101:14] ==> public fun IrBuilderWithScope.irReturn(value: IrExpression): IrReturnImpl defined in org.jetbrains.kotlin.ir.builders[DeserializedSimpleFunctionDescriptor]
 
-'irGetField' @ [101:23] ==> public fun IrBuilderWithScope.irGetField(receiver: IrExpression, symbol: IrFieldSymbol): IrGetFieldImpl defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irGetField' @ [101:23] ==> public fun IrBuilderWithScope.irGetField(receiver: IrExpression, symbol: IrFieldSymbol): IrGetFieldImpl defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'irGet' @ [101:34] ==> public fun IrBuilderWithScope.irGet(variable: IrValueSymbol): IrGetValueImpl defined in org.jetbrains.kotlin.ir.builders[DeserializedSimpleFunctionDescriptor]
 
@@ -122,11 +118,7 @@ Inferred types:
 
 'descriptor' @ [112:63] ==> public abstract val descriptor: PropertyDescriptor defined in org.jetbrains.kotlin.ir.symbols.IrFieldSymbol[DeserializedPropertyDescriptor]
 
-'Annotations' @ [113:51] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [113:63] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [114:51] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [114:60] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -151,8 +143,6 @@ Inferred types:
 'ValueParameterDescriptorImpl' @ [130:40] ==> public constructor ValueParameterDescriptorImpl(containingDeclaration: CallableDescriptor, original: ValueParameterDescriptor?, index: Int, annotations: Annotations, name: Name, outType: KotlinType, declaresDefaultValue: Boolean, isCrossinline: Boolean, isNoinline: Boolean, varargElementType: KotlinType?, source: SourceElement) defined in org.jetbrains.kotlin.descriptors.impl.ValueParameterDescriptorImpl[DeserializedClassConstructorDescriptor]
 
 'this' @ [131:45] ==> <this> defined in org.jetbrains.kotlin.backend.common.lower.createPropertySetterBuilder.<no name provided>.doInitialize.<anonymous>[ReceiverParameterDescriptorImpl]
-
-'Annotations' @ [134:45] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [134:57] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -184,7 +174,7 @@ Inferred types:
 
 'body' @ [156:9] ==> public final var body: IrBody? defined in org.jetbrains.kotlin.ir.declarations.impl.IrFunctionImpl[DeserializedPropertyDescriptor]
 
-'createIrBuilder' @ [156:16] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createIrBuilder' @ [156:16] ==> public fun BackendContext.createIrBuilder(symbol: IrSymbol, startOffset: Int = ..., endOffset: Int = ...): DeclarationIrBuilder defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [156:32] ==> <this> defined in org.jetbrains.kotlin.backend.common.lower.createPropertySetterBuilder.<no name provided>.buildIr.<anonymous>[ReceiverParameterDescriptorImpl]
 
@@ -198,7 +188,7 @@ Inferred types:
 
 '+' @ [157:13] ==> public final fun IrStatement.unaryPlus(): Unit defined in org.jetbrains.kotlin.ir.builders.IrBlockBodyBuilder[DeserializedSimpleFunctionDescriptor]
 
-'irSetField' @ [157:14] ==> public fun IrBuilderWithScope.irSetField(receiver: IrExpression, symbol: IrFieldSymbol, value: IrExpression): IrSetFieldImpl defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'irSetField' @ [157:14] ==> public fun IrBuilderWithScope.irSetField(receiver: IrExpression, symbol: IrFieldSymbol, value: IrExpression): IrSetFieldImpl defined in org.jetbrains.kotlin.backend.common.lower in file LowerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'irGet' @ [157:25] ==> public fun IrBuilderWithScope.irGet(variable: IrValueSymbol): IrGetValueImpl defined in org.jetbrains.kotlin.ir.builders[DeserializedSimpleFunctionDescriptor]
 
@@ -233,11 +223,7 @@ Inferred types:
 
 'owner' @ [171:51] ==> value-parameter owner: ClassDescriptor defined in org.jetbrains.kotlin.backend.common.lower.createPropertyWithBackingFieldBuilder[ValueParameterDescriptorImpl]
 
-'Annotations' @ [172:51] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [172:63] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
-
-'Modality' @ [173:51] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [173:60] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -257,7 +243,7 @@ Inferred types:
 
 'getterBuilder' @ [190:9] ==> private final lateinit var getterBuilder: SymbolWithIrBuilder<IrSimpleFunctionSymbol, IrSimpleFunction> defined in org.jetbrains.kotlin.backend.common.lower.createPropertyWithBackingFieldBuilder.<no name provided>[PropertyDescriptorImpl]
 
-'createPropertyGetterBuilder' @ [190:25] ==> public fun BackendContext.createPropertyGetterBuilder(startOffset: Int, endOffset: Int, origin: IrDeclarationOrigin, fieldSymbol: IrFieldSymbol, type: KotlinType): SymbolWithIrBuilder<IrSimpleFunctionSymbol, IrSimpleFunction> defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createPropertyGetterBuilder' @ [190:25] ==> public fun BackendContext.createPropertyGetterBuilder(startOffset: Int, endOffset: Int, origin: IrDeclarationOrigin, fieldSymbol: IrFieldSymbol, type: KotlinType): SymbolWithIrBuilder<IrSimpleFunctionSymbol, IrSimpleFunction> defined in org.jetbrains.kotlin.backend.common.lower in file IrBuildUtils.kt[SimpleFunctionDescriptorImpl]
 
 'startOffset' @ [190:53] ==> value-parameter startOffset: Int defined in org.jetbrains.kotlin.backend.common.lower.createPropertyWithBackingFieldBuilder[ValueParameterDescriptorImpl]
 
@@ -279,7 +265,7 @@ Inferred types:
 
 'setterBuilder' @ [192:13] ==> private final var setterBuilder: SymbolWithIrBuilder<IrSimpleFunctionSymbol, IrSimpleFunction>? defined in org.jetbrains.kotlin.backend.common.lower.createPropertyWithBackingFieldBuilder.<no name provided>[PropertyDescriptorImpl]
 
-'createPropertySetterBuilder' @ [192:29] ==> private fun BackendContext.createPropertySetterBuilder(startOffset: Int, endOffset: Int, origin: IrDeclarationOrigin, fieldSymbol: IrFieldSymbol, type: KotlinType): <no name provided> defined in org.jetbrains.kotlin.backend.common.lower[SimpleFunctionDescriptorImpl]
+'createPropertySetterBuilder' @ [192:29] ==> private fun BackendContext.createPropertySetterBuilder(startOffset: Int, endOffset: Int, origin: IrDeclarationOrigin, fieldSymbol: IrFieldSymbol, type: KotlinType): <no name provided> defined in org.jetbrains.kotlin.backend.common.lower in file IrBuildUtils.kt[SimpleFunctionDescriptorImpl]
 
 'startOffset' @ [192:57] ==> value-parameter startOffset: Int defined in org.jetbrains.kotlin.backend.common.lower.createPropertyWithBackingFieldBuilder[ValueParameterDescriptorImpl]
 

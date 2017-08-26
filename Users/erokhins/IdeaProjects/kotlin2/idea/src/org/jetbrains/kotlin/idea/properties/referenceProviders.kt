@@ -88,7 +88,7 @@ Inferred types:
 
 'resultingDescriptor' @ [77:33] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 '==' @ [79:9] ==> public open fun equals(other: Any?): Boolean defined in org.jetbrains.kotlin.psi.KtExpression[DeserializedSimpleFunctionDescriptor]
 
@@ -96,7 +96,7 @@ Inferred types:
 
 'extensionReceiver' @ [79:23] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'expression' @ [79:66] ==> public abstract val expression: KtExpression defined in org.jetbrains.kotlin.resolve.scopes.receivers.ExpressionReceiver[DeserializedPropertyDescriptor]
 
@@ -114,8 +114,6 @@ Inferred types:
 
 'returnTypeAnnotations' @ [82:48] ==> val returnTypeAnnotations: Annotations defined in org.jetbrains.kotlin.idea.properties.getBundleNameByContext[LocalVariableDescriptor]
 
-'AnnotationUseSiteTarget' @ [82:71] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'RECEIVER' @ [82:95] ==> enum entry RECEIVER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'PROPERTY_KEY' @ [82:105] ==> private val PROPERTY_KEY: FqName defined in org.jetbrains.kotlin.idea.properties in file referenceProviders.kt[PropertyDescriptorImpl]
@@ -126,7 +124,7 @@ Inferred types:
 
 'valueArguments' @ [86:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'entries' @ [86:40] ==> public abstract val entries: MutableSet<MutableMap.MutableEntry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>> defined in kotlin.collections.MutableMap[DeserializedPropertyDescriptor]
 
@@ -168,7 +166,7 @@ Inferred types:
 
 'resultingDescriptor' @ [94:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'containingDeclaration' @ [94:84] ==> public final val ClassConstructorDescriptor.containingDeclaration: ClassDescriptor[MyPropertyDescriptor]
 
@@ -233,7 +231,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ValueParameterDescriptor
 
-'resolvedCall' @ [104:35] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.idea.properties.isBundleName[LocalVariableDescriptor]
+'resolvedCall' @ [104:35] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.properties.isBundleName[LocalVariableDescriptor]
 
 'getArgumentMapping' @ [104:48] ==> @NotNull public abstract fun getArgumentMapping(@NotNull p0: ValueArgument): ArgumentMapping defined in org.jetbrains.kotlin.resolve.calls.model.ResolvedCall[JavaMethodDescriptor]
 
@@ -299,11 +297,11 @@ Inferred types:
 
 'getPropertyKeyResolvedCall' @ [115:46] ==> private fun KtAnnotationEntry.getPropertyKeyResolvedCall(): ResolvedCall<*>? defined in org.jetbrains.kotlin.idea.properties in file referenceProviders.kt[SimpleFunctionDescriptorImpl]
 
-'resolvedCall' @ [116:37] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.idea.properties.isBundleName.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'resolvedCall' @ [116:37] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.properties.isBundleName.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'resultingDescriptor' @ [116:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueParameters' @ [116:70] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -317,11 +315,11 @@ Inferred types:
 
 'PROPERTY_KEY_RESOURCE_BUNDLE' @ [116:112] ==> private val PROPERTY_KEY_RESOURCE_BUNDLE: Name defined in org.jetbrains.kotlin.idea.properties in file referenceProviders.kt[PropertyDescriptorImpl]
 
-'resolvedCall' @ [118:41] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.idea.properties.isBundleName.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'resolvedCall' @ [118:41] ==> val resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.properties.isBundleName.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'valueArguments' @ [118:54] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'parameter' @ [118:69] ==> val parameter: ValueParameterDescriptor defined in org.jetbrains.kotlin.idea.properties.isBundleName.<anonymous>.<anonymous>[LocalVariableDescriptor]
 

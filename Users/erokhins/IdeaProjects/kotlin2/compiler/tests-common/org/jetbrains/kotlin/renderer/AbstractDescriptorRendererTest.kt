@@ -56,13 +56,9 @@ Inferred types:
 
 'JvmPlatform' @ [64:17] ==> public object JvmPlatform : TargetPlatform defined in org.jetbrains.kotlin.resolve.jvm.platform[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [65:17] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [65:27] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'targetEnvironment' @ [66:17] ==> protected open val targetEnvironment: TargetEnvironment defined in org.jetbrains.kotlin.renderer.AbstractDescriptorRendererTest[PropertyDescriptorImpl]
-
-'LanguageVersionSettingsImpl' @ [67:17] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [67:45] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 

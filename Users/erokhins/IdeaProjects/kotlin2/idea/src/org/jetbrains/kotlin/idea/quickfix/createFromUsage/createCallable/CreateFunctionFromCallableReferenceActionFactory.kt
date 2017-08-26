@@ -30,7 +30,7 @@ Inferred types:
 
 'element' @ [46:16] ==> value-parameter element: KtCallableReferenceExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateFunctionFromCallableReferenceActionFactory.extractFixData[ValueParameterDescriptorImpl]
 
-'guessTypes' @ [47:18] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [47:18] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [47:29] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateFunctionFromCallableReferenceActionFactory.extractFixData[LocalVariableDescriptor]
 
@@ -44,7 +44,7 @@ Inferred types:
 
 'element' @ [48:28] ==> value-parameter element: KtCallableReferenceExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateFunctionFromCallableReferenceActionFactory.extractFixData[ValueParameterDescriptorImpl]
 
-'guessTypes' @ [48:36] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [48:36] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [48:47] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateFunctionFromCallableReferenceActionFactory.extractFixData[LocalVariableDescriptor]
 
@@ -57,6 +57,8 @@ Inferred types:
     <T> -> KotlinType
 
 'KotlinType' @ [49:25] ==> private constructor KotlinType() defined in org.jetbrains.kotlin.types.KotlinType[DeserializedClassConstructorDescriptor]
+
+'isFunctionType' @ [49:37] ==> public val KotlinType.isFunctionType: Boolean defined in org.jetbrains.kotlin.builtins[DeserializedPropertyDescriptor]
 
 'mapNotNull' @ [50:18] ==> public inline fun <T, R : Any> Iterable<KotlinType>.mapNotNull(transform: (KotlinType) -> FunctionInfo?): List<FunctionInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -75,8 +77,8 @@ Inferred types:
 
 'get' @ [53:50] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..ReadOnlySlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?), p1: (KtExpression..KtExpression?)): DoubleColonLHS? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> DoubleColonLHS
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.expressions.DoubleColonLHS..org.jetbrains.kotlin.types.expressions.DoubleColonLHS?)
 
 'DOUBLE_COLON_LHS' @ [53:69] ==> public final val DOUBLE_COLON_LHS: (WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>..WritableSlice<(KtExpression..KtExpression?), (DoubleColonLHS..DoubleColonLHS?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -109,7 +111,7 @@ Inferred types:
 
 'element' @ [56:38] ==> value-parameter element: KtCallableReferenceExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateFunctionFromCallableReferenceActionFactory.extractFixData[ValueParameterDescriptorImpl]
 
-'getExtractionContainers' @ [56:46] ==> public fun PsiElement.getExtractionContainers(strict: Boolean = ..., includeAll: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getExtractionContainers' @ [56:46] ==> public fun PsiElement.getExtractionContainers(strict: Boolean = ..., includeAll: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'ifEmpty' @ [56:89] ==> public inline fun <T, C : Collection<KtElement>> List<KtElement>.ifEmpty(body: () -> List<KtElement>): List<KtElement> defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -46,6 +46,8 @@ Inferred types:
 
 'environment' @ [50:81] ==> value-parameter environment: KotlinCoreEnvironment defined in org.jetbrains.kotlin.codegen.GenerationUtils.compileFiles[ValueParameterDescriptorImpl]
 
+'createPackagePartProvider' @ [50:94] ==> public final fun createPackagePartProvider(scope: GlobalSearchScope): JvmPackagePartProvider defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[DeserializedSimpleFunctionDescriptor]
+
 'JvmStatic' @ [52:5] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
 'JvmResolveUtil' @ [59:30] ==> public object JvmResolveUtil defined in org.jetbrains.kotlin.resolve.lazy in file JvmResolveUtil.kt[FakeCallableDescriptorForObject]

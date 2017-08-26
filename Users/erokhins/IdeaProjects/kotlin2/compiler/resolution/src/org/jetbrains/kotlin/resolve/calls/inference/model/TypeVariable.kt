@@ -20,8 +20,6 @@ Inferred types:
 
 'simpleType' @ [49:53] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean, memberScope: MemberScope): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [50:13] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [50:25] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'freshTypeConstructor' @ [50:32] ==> public final val freshTypeConstructor: TypeConstructor defined in org.jetbrains.kotlin.resolve.calls.inference.model.NewTypeVariable[PropertyDescriptorImpl]

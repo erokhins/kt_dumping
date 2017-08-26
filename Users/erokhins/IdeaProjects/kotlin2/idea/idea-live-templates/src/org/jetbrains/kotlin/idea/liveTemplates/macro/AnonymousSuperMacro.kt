@@ -97,7 +97,7 @@ Inferred types:
 
 'getParentOfType' @ [70:38] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtExpression..KtExpression?)>): KtExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'psiFile' @ [70:54] ==> val psiFile: KtFile defined in org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousSuperMacro.getSupertypes[LocalVariableDescriptor]
 
@@ -135,8 +135,6 @@ Inferred types:
 
 'collectDescriptorsFiltered' @ [76:18] ==> public fun HierarchicalScope.collectDescriptorsFiltered(kindFilter: DescriptorKindFilter = ..., nameFilter: (Name) -> Boolean = ..., changeNamesForAliased: Boolean = ...): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.utils[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [76:45] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'NON_SINGLETON_CLASSIFIERS' @ [76:66] ==> @field:JvmField public final val NON_SINGLETON_CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'filter' @ [77:18] ==> public inline fun <T> Iterable<DeclarationDescriptor>.filter(predicate: (DeclarationDescriptor) -> Boolean): List<DeclarationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -149,15 +147,11 @@ Inferred types:
 
 'modality' @ [78:31] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [78:43] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'OPEN' @ [78:52] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'it' @ [78:60] ==> value-parameter it: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousSuperMacro.getSupertypes.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [78:63] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [78:75] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [78:84] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

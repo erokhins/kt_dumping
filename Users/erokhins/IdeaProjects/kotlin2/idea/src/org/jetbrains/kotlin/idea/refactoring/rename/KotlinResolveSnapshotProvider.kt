@@ -89,7 +89,7 @@ Inferred types:
 
 'element' @ [63:46] ==> public final val <E : (PsiElement..PsiElement?)> SmartPsiElementPointer<out (PsiElement..PsiElement?)>.element: PsiElement?[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
 
 'refExpr' @ [64:21] ==> val refExpr: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.rename.KotlinResolveSnapshotProvider.createSnapshot.<no name provided>.apply[LocalVariableDescriptor]
 

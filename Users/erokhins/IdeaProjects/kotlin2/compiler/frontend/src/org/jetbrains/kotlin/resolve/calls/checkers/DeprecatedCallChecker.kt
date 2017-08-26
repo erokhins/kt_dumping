@@ -4,7 +4,7 @@
 
 'resultingDescriptor' @ [39:28] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'context' @ [39:49] ==> value-parameter context: CallCheckerContext defined in org.jetbrains.kotlin.resolve.calls.checkers.DeprecatedCallChecker.check[ValueParameterDescriptorImpl]
 
@@ -20,7 +20,7 @@ Inferred types:
 
 'targetDescriptor' @ [48:28] ==> value-parameter targetDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.calls.checkers.DeprecatedCallChecker.check[ValueParameterDescriptorImpl]
 
-'getDeprecations' @ [48:45] ==> public fun DeclarationDescriptor.getDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'getDeprecations' @ [48:45] ==> public fun DeclarationDescriptor.getDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve in file deprecationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [48:61] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.calls.checkers.DeprecatedCallChecker.check[ValueParameterDescriptorImpl]
 
@@ -36,7 +36,7 @@ Inferred types:
 
 'correspondingProperty' @ [52:46] ==> public final val PropertySetterDescriptor.correspondingProperty: PropertyDescriptor[MyPropertyDescriptor]
 
-'getDeprecations' @ [52:68] ==> public fun DeclarationDescriptor.getDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'getDeprecations' @ [52:68] ==> public fun DeclarationDescriptor.getDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve in file deprecationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [52:84] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.calls.checkers.DeprecatedCallChecker.check[ValueParameterDescriptorImpl]
 
@@ -160,7 +160,7 @@ Inferred types:
 
 'getParentOfType' @ [83:43] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtUnaryExpression..KtUnaryExpression?)>): KtUnaryExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtUnaryExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtUnaryExpression..org.jetbrains.kotlin.psi.KtUnaryExpression?)
 
 'expression' @ [83:59] ==> value-parameter expression: PsiElement defined in org.jetbrains.kotlin.resolve.calls.checkers.DeprecatedCallChecker.shouldCheckPropertyGetter[ValueParameterDescriptorImpl]
 
@@ -180,7 +180,7 @@ Inferred types:
 
 'getParentOfType' @ [87:46] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtCallableReferenceExpression..KtCallableReferenceExpression?)>): KtCallableReferenceExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtCallableReferenceExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallableReferenceExpression..org.jetbrains.kotlin.psi.KtCallableReferenceExpression?)
 
 'expression' @ [87:62] ==> value-parameter expression: PsiElement defined in org.jetbrains.kotlin.resolve.calls.checkers.DeprecatedCallChecker.shouldCheckPropertyGetter[ValueParameterDescriptorImpl]
 

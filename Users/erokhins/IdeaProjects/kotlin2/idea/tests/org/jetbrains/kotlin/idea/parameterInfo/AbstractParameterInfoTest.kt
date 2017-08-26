@@ -6,7 +6,7 @@
 
 'java' @ [38:61] ==> public val <T> KClass<out AbstractParameterInfoTest>.java: Class<out AbstractParameterInfoTest> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AbstractParameterInfoTest
+    <T> -> Captured(out AbstractParameterInfoTest)
 
 'root' @ [39:13] ==> val root: (String..String?) defined in org.jetbrains.kotlin.idea.parameterInfo.AbstractParameterInfoTest.getProjectDescriptor[LocalVariableDescriptor]
 

@@ -6,8 +6,8 @@ Inferred types:
 
 'getElements' @ [30:23] ==> public open fun <Key : (Any..Any?), Psi : (PsiElement..PsiElement?)> getElements(@NotNull p0: StubIndexKey<(String..String?), (KtFile..KtFile?)>, @NotNull p1: String, @NotNull p2: Project, @Nullable p3: GlobalSearchScope?, @NotNull p4: Class<(KtFile..KtFile?)>): (MutableCollection<(KtFile..KtFile?)>..Collection<(KtFile..KtFile?)>?) defined in com.intellij.psi.stubs.StubIndex[JavaMethodDescriptor]
 Inferred types:
-    <Key : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtFile
+    <Key : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
 
 'KEY' @ [30:35] ==> private final val KEY: StubIndexKey<(String..String?), (KtFile..KtFile?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeClassByPackageIndex.Companion[PropertyDescriptorImpl]
 
@@ -25,8 +25,8 @@ Inferred types:
 
 'createIndexKey' @ [33:43] ==> @NotNull public open fun <K : (Any..Any?), Psi : (PsiElement..PsiElement?)> createIndexKey(@NotNull indexClass: Class<out (StubIndexExtension<(String..String?), (KtFile..KtFile?)>..StubIndexExtension<(String..String?), (KtFile..KtFile?)>?)>): StubIndexKey<(String..String?), (KtFile..KtFile?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinIndexUtil[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtFile
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
 
 'KotlinFileFacadeClassByPackageIndex' @ [33:58] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeClassByPackageIndex[FakeCallableDescriptorForObject]
 

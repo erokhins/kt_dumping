@@ -118,11 +118,11 @@ Inferred types:
 
 'java' @ [75:21] ==> public val <T> KClass<out JavacBasedClassFinder>.java: Class<out JavacBasedClassFinder> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> JavacBasedClassFinder
+    <T> -> Captured(out JavacBasedClassFinder)
 
-'superclass' @ [75:26] ==> public final val <T : (Any..Any?)> Class<out JavacBasedClassFinder>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [75:26] ==> public final val <T : (Any..Any?)> Class<out JavacBasedClassFinder>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavacBasedClassFinder
+    <T : (Any..Any?)> -> Captured(out JavacBasedClassFinder)
 
 'getDeclaredField' @ [75:37] ==> @CallerSensitive public open fun getDeclaredField(p0: (String..String?)): (Field..Field?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -153,7 +153,7 @@ Inferred types:
 
 'java' @ [81:38] ==> public val <T> KClass<out JavacBasedClassFinder>.java: Class<out JavacBasedClassFinder> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> JavacBasedClassFinder
+    <T> -> Captured(out JavacBasedClassFinder)
 
 'getDeclaredField' @ [81:43] ==> @CallerSensitive public open fun getDeclaredField(p0: (String..String?)): (Field..Field?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -167,8 +167,6 @@ Inferred types:
 
 'this' @ [83:24] ==> <this> defined in org.jetbrains.kotlin.jvm.compiler.KotlinJavacBasedClassFinderTest.createClassFinder.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'JavacWrapper' @ [83:30] ==> public companion object defined in org.jetbrains.kotlin.javac.JavacWrapper[FakeCallableDescriptorForObject]
-
 'getInstance' @ [83:43] ==> public final fun getInstance(project: Project): JavacWrapper defined in org.jetbrains.kotlin.javac.JavacWrapper.Companion[DeserializedSimpleFunctionDescriptor]
 
 'project' @ [83:55] ==> value-parameter project: Project defined in org.jetbrains.kotlin.jvm.compiler.KotlinJavacBasedClassFinderTest.createClassFinder[ValueParameterDescriptorImpl]
@@ -177,11 +175,11 @@ Inferred types:
 
 'java' @ [85:48] ==> public val <T> KClass<out JavacBasedClassFinder>.java: Class<out JavacBasedClassFinder> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> JavacBasedClassFinder
+    <T> -> Captured(out JavacBasedClassFinder)
 
-'superclass' @ [85:53] ==> public final val <T : (Any..Any?)> Class<out JavacBasedClassFinder>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [85:53] ==> public final val <T : (Any..Any?)> Class<out JavacBasedClassFinder>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavacBasedClassFinder
+    <T : (Any..Any?)> -> Captured(out JavacBasedClassFinder)
 
 'getDeclaredField' @ [85:64] ==> @CallerSensitive public open fun getDeclaredField(p0: (String..String?)): (Field..Field?) defined in java.lang.Class[JavaMethodDescriptor]
 

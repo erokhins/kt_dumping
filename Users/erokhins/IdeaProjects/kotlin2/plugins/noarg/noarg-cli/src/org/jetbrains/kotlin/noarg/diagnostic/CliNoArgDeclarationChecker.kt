@@ -22,7 +22,7 @@
 
 'putUserData' @ [53:21] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Boolean..Boolean?)>, @Nullable p1: Boolean?): Unit defined in org.jetbrains.kotlin.psi.KtDeclaration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'NO_ARG_CLASS_KEY' @ [53:33] ==> public val NO_ARG_CLASS_KEY: Key<Boolean> defined in org.jetbrains.kotlin.noarg in file NoArgClassKey.kt[PropertyDescriptorImpl]
 

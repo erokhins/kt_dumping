@@ -82,9 +82,9 @@ Inferred types:
                 }
                 else {
                     fail("Unknown message: $message")
-                }' @ [47:22] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
+                }' @ [47:22] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Nothing, elseBranch: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Nothing
 
 'message' @ [47:26] ==> val message: MessageHeader defined in org.jetbrains.kotlin.test.clientserver.TestProxy.runTest.<anonymous>[LocalVariableDescriptor]
 

@@ -40,14 +40,16 @@ Inferred types:
 
 'klass' @ [46:17] ==> value-parameter klass: Class<*> defined in org.jetbrains.kotlin.code.ReflectionCodeSanityTest.collectClassesWithSupers.addClassToCheck[ValueParameterDescriptorImpl]
 
-'superclass' @ [46:23] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [46:23] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'let' @ [46:35] ==> @InlineOnly public inline fun <T, R> Class<out (Any..Any?)>.let(block: (Class<out (Any..Any?)>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [46:35] ==> @InlineOnly public inline fun <T, R> Class<out Any?>.let(block: (Class<out Any?>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <T> -> Class<out Any?>
     <R> -> Unit
+
+'addClassToCheck' @ [46:41] ==> local final fun addClassToCheck(klass: Class<*>): Unit defined in org.jetbrains.kotlin.code.ReflectionCodeSanityTest.collectClassesWithSupers[SimpleFunctionDescriptorImpl]
 
 'names' @ [50:22] ==> value-parameter vararg names: String defined in org.jetbrains.kotlin.code.ReflectionCodeSanityTest.collectClassesWithSupers[ValueParameterDescriptorImpl]
 
@@ -73,7 +75,7 @@ Inferred types:
 
 'declaredFields' @ [65:36] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'filter' @ [65:51] ==> public inline fun <T> Array<out (Field..Field?)>.filter(predicate: ((Field..Field?)) -> Boolean): List<(Field..Field?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -139,28 +141,28 @@ Inferred types:
 
 'className' @ [89:35] ==> val className: String defined in org.jetbrains.kotlin.code.ReflectionCodeSanityTest.testMaxAllowedFields[LocalVariableDescriptor]
 
-'generateSequence' @ [90:26] ==> @LowPriorityInOverloadResolution public fun <T : Any> generateSequence(seed: Class<out (Any..Any?)>?, nextFunction: (Class<out (Any..Any?)>) -> Class<out (Any..Any?)>?): Sequence<Class<out (Any..Any?)>> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'generateSequence' @ [90:26] ==> @LowPriorityInOverloadResolution public fun <T : Any> generateSequence(seed: Class<out Any?>?, nextFunction: (Class<out Any?>) -> Class<out Any?>?): Sequence<Class<out Any?>> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : Any> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <T : Any> -> Class<out Any?>
 
 'klass' @ [90:43] ==> val klass: Class<*> defined in org.jetbrains.kotlin.code.ReflectionCodeSanityTest.testMaxAllowedFields[LocalVariableDescriptor]
 
-'it' @ [90:52] ==> value-parameter it: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.code.ReflectionCodeSanityTest.testMaxAllowedFields.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [90:52] ==> value-parameter it: Class<*> defined in org.jetbrains.kotlin.code.ReflectionCodeSanityTest.testMaxAllowedFields.<anonymous>[ValueParameterDescriptorImpl]
 
-'superclass' @ [90:55] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [90:55] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'flatMap' @ [91:22] ==> public fun <T, R> Sequence<Class<out (Any..Any?)>>.flatMap(transform: (Class<out (Any..Any?)>) -> Sequence<(Field..Field?)>): Sequence<(Field..Field?)> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [91:22] ==> public fun <T, R> Sequence<Class<out Any?>>.flatMap(transform: (Class<out Any?>) -> Sequence<(Field..Field?)>): Sequence<(Field..Field?)> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <T> -> Class<out Any?>
     <R> -> (java.lang.reflect.Field..java.lang.reflect.Field?)
 
-'it' @ [91:32] ==> value-parameter it: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.code.ReflectionCodeSanityTest.testMaxAllowedFields.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [91:32] ==> value-parameter it: Class<out Any?> defined in org.jetbrains.kotlin.code.ReflectionCodeSanityTest.testMaxAllowedFields.<anonymous>[ValueParameterDescriptorImpl]
 
-'declaredFields' @ [91:35] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
+'declaredFields' @ [91:35] ==> public final val <T : (Any..Any?)> Class<out Any?>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out Any?)
 
 'asSequence' @ [91:50] ==> public fun <T> Array<out (Field..Field?)>.asSequence(): Sequence<(Field..Field?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -237,7 +239,7 @@ Inferred types:
 
 'simpleName' @ [103:110] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'fields' @ [104:22] ==> val fields: Collection<Field> defined in org.jetbrains.kotlin.code.ReflectionCodeSanityTest.testMaxAllowedFields.<anonymous>[LocalVariableDescriptor]
 

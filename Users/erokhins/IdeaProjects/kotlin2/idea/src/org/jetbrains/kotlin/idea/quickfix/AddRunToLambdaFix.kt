@@ -40,7 +40,7 @@ Inferred types:
 
 'casted' @ [41:45] ==> val casted: SimpleDiagnostic<(KtLambdaExpression..KtLambdaExpression?)> defined in org.jetbrains.kotlin.idea.quickfix.AddRunToLambdaFix.Factory.doCreateActions[LocalVariableDescriptor]
 
-'psiElement' @ [41:52] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtLambdaExpression..KtLambdaExpression?)>.psiElement: (KtLambdaExpression..KtLambdaExpression?)[MyPropertyDescriptor]
+'psiElement' @ [41:52] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtLambdaExpression..KtLambdaExpression?)>.psiElement: KtLambdaExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtLambdaExpression..org.jetbrains.kotlin.psi.KtLambdaExpression?)
 

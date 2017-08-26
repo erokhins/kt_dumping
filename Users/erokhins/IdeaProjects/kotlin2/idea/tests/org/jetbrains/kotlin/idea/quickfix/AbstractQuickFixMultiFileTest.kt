@@ -75,7 +75,7 @@ Inferred types:
 
 'getExtensions' @ [79:100] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(LocalInspectionEP..LocalInspectionEP?)>): (Array<(LocalInspectionEP..LocalInspectionEP?)>..Array<out (LocalInspectionEP..LocalInspectionEP?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LocalInspectionEP
+    <T : (Any..Any?)> -> (com.intellij.codeInspection.LocalInspectionEP..com.intellij.codeInspection.LocalInspectionEP?)
 
 'LOCAL_INSPECTION' @ [79:132] ==> public final val LOCAL_INSPECTION: (ExtensionPointName<(LocalInspectionEP..LocalInspectionEP?)>..ExtensionPointName<(LocalInspectionEP..LocalInspectionEP?)>?) defined in com.intellij.codeInspection.LocalInspectionEP[JavaPropertyDescriptor]
 
@@ -89,7 +89,7 @@ Inferred types:
 
 'getExtensions' @ [80:95] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(InspectionEP..InspectionEP?)>): (Array<(InspectionEP..InspectionEP?)>..Array<out (InspectionEP..InspectionEP?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> InspectionEP
+    <T : (Any..Any?)> -> (com.intellij.codeInspection.InspectionEP..com.intellij.codeInspection.InspectionEP?)
 
 'GLOBAL_INSPECTION' @ [80:122] ==> public final val GLOBAL_INSPECTION: (ExtensionPointName<(InspectionEP..InspectionEP?)>..ExtensionPointName<(InspectionEP..InspectionEP?)>?) defined in com.intellij.codeInspection.InspectionEP[JavaPropertyDescriptor]
 
@@ -99,7 +99,7 @@ Inferred types:
 
 'name' @ [84:23] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'ep' @ [84:31] ==> val ep: (InspectionEP..InspectionEP?) defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixMultiFileTest.enableInspectionTools[LocalVariableDescriptor]
 
@@ -251,8 +251,8 @@ Inferred types:
 
 'createTestFiles' @ [135:40] ==> @NotNull public open fun <M : (Any..Any?), F : (Any..Any?)> createTestFiles(@Nullable p0: String?, p1: (String..String?), p2: (KotlinTestUtils.TestFileFactory<(Void..Void?), (AbstractQuickFixMultiFileTest.TestFile..AbstractQuickFixMultiFileTest.TestFile?)>..KotlinTestUtils.TestFileFactory<(Void..Void?), (AbstractQuickFixMultiFileTest.TestFile..AbstractQuickFixMultiFileTest.TestFile?)>?)): (MutableList<(AbstractQuickFixMultiFileTest.TestFile..AbstractQuickFixMultiFileTest.TestFile?)>..List<(AbstractQuickFixMultiFileTest.TestFile..AbstractQuickFixMultiFileTest.TestFile?)>) defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 Inferred types:
-    <M : (Any..Any?)> -> Void
-    <F : (Any..Any?)> -> TestFile
+    <M : (Any..Any?)> -> (java.lang.Void..java.lang.Void?)
+    <F : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixMultiFileTest.TestFile..org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixMultiFileTest.TestFile?)
 
 'multifileText' @ [137:17] ==> val multifileText: String defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixMultiFileTest.doMultiFileTest[LocalVariableDescriptor]
 
@@ -851,8 +851,6 @@ Inferred types:
 'join' @ [298:42] ==> @Contract public open fun join(@NotNull p0: (MutableIterable<*>..Iterable<*>), @NotNull @NonNls p1: String): (String..String?) defined in com.intellij.openapi.util.text.StringUtil[JavaMethodDescriptor]
 
 'infos' @ [298:47] ==> val infos: (MutableList<(HighlightInfo..HighlightInfo?)>..List<(HighlightInfo..HighlightInfo?)>) defined in org.jetbrains.kotlin.idea.quickfix.AbstractQuickFixMultiFileTest.doAction[LocalVariableDescriptor]
-
-'DirectiveBasedActionUtils' @ [301:17] ==> public object DirectiveBasedActionUtils defined in org.jetbrains.kotlin.idea.test in file DirectiveBasedActionUtils.kt[FakeCallableDescriptorForObject]
 
 'checkAvailableActionsAreExpected' @ [301:43] ==> public final fun checkAvailableActionsAreExpected(file: PsiFile, availableActions: Collection<IntentionAction>): Unit defined in org.jetbrains.kotlin.idea.test.DirectiveBasedActionUtils[SimpleFunctionDescriptorImpl]
 

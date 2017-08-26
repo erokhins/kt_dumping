@@ -78,16 +78,16 @@ Inferred types:
 
 'diagnostic' @ [61:55] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion.ReassignmentActionFactory.createAction[ValueParameterDescriptorImpl]
 
-'a' @ [61:67] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<out (PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>.a: (DeclarationDescriptor..DeclarationDescriptor?)[MyPropertyDescriptor]
+'a' @ [61:67] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<out (PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>.a: DeclarationDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DescriptorToSourceUtils' @ [62:35] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
 'descriptorToDeclaration' @ [62:59] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
-'propertyDescriptor' @ [62:83] ==> val propertyDescriptor: (DeclarationDescriptor..DeclarationDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion.ReassignmentActionFactory.createAction[LocalVariableDescriptor]
+'propertyDescriptor' @ [62:83] ==> val propertyDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion.ReassignmentActionFactory.createAction[LocalVariableDescriptor]
 
 'ChangeVariableMutabilityFix' @ [63:24] ==> public constructor ChangeVariableMutabilityFix(element: KtValVarKeywordOwner, makeVar: Boolean) defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix[ClassConstructorDescriptorImpl]
 
@@ -142,12 +142,12 @@ Inferred types:
 
 'diagnostic' @ [92:82] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion.LATEINIT_VAL_FACTORY.<no name provided>.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [92:94] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (String..String?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [92:94] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (String..String?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'lateinitElement' @ [93:32] ==> val lateinitElement: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion.LATEINIT_VAL_FACTORY.<no name provided>.createAction[LocalVariableDescriptor]
+'lateinitElement' @ [93:32] ==> val lateinitElement: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion.LATEINIT_VAL_FACTORY.<no name provided>.createAction[LocalVariableDescriptor]
 
 'getStrictParentOfType' @ [93:48] ==> public inline fun <reified T : PsiElement> PsiElement.getStrictParentOfType(): KtProperty? defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:

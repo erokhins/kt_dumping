@@ -4,8 +4,6 @@
 
 'project' @ [37:42] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.stubindex.resolve.PluginDeclarationProviderFactoryService.create[ValueParameterDescriptorImpl]
 
-'KotlinSourceFilterScope' @ [37:51] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope[FakeCallableDescriptorForObject]
-
 'sources' @ [37:75] ==> @JvmStatic public final fun sources(delegate: GlobalSearchScope, project: Project): GlobalSearchScope defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope.Companion[SimpleFunctionDescriptorImpl]
 
 'filesScope' @ [37:83] ==> value-parameter filesScope: GlobalSearchScope defined in org.jetbrains.kotlin.idea.stubindex.resolve.PluginDeclarationProviderFactoryService.create[ValueParameterDescriptorImpl]

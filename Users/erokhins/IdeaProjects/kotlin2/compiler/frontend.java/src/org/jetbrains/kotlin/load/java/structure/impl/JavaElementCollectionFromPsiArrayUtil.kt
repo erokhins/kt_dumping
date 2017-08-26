@@ -69,12 +69,16 @@ Inferred types:
     <Psi> -> PsiClass
     <Java> -> JavaClassImpl
 
+'JavaClassImpl' @ [41:27] ==> public constructor JavaClassImpl(psiClass: PsiClass) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassImpl[ClassConstructorDescriptorImpl]
+
 'classes' @ [44:9] ==> value-parameter classes: Collection<PsiClass> defined in org.jetbrains.kotlin.load.java.structure.impl.classes[ValueParameterDescriptorImpl]
 
 'convert' @ [44:17] ==> private fun <Psi, Java> Collection<PsiClass>.convert(factory: (PsiClass) -> JavaClassImpl): List<JavaClassImpl> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
 Inferred types:
     <Psi> -> PsiClass
     <Java> -> JavaClassImpl
+
+'JavaClassImpl' @ [44:27] ==> public constructor JavaClassImpl(psiClass: PsiClass) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassImpl[ClassConstructorDescriptorImpl]
 
 'packages' @ [47:9] ==> value-parameter packages: Array<PsiPackage> defined in org.jetbrains.kotlin.load.java.structure.impl.packages[ValueParameterDescriptorImpl]
 
@@ -96,12 +100,16 @@ Inferred types:
     <Psi> -> PsiMethod
     <Java> -> JavaMethodImpl
 
+'JavaMethodImpl' @ [50:27] ==> public constructor JavaMethodImpl(@NotNull psiMethod: PsiMethod) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaMethodImpl[JavaClassConstructorDescriptor]
+
 'methods' @ [53:9] ==> value-parameter methods: Collection<PsiMethod> defined in org.jetbrains.kotlin.load.java.structure.impl.constructors[ValueParameterDescriptorImpl]
 
 'convert' @ [53:17] ==> private fun <Psi, Java> Collection<PsiMethod>.convert(factory: (PsiMethod) -> JavaConstructorImpl): List<JavaConstructorImpl> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
 Inferred types:
     <Psi> -> PsiMethod
     <Java> -> JavaConstructorImpl
+
+'JavaConstructorImpl' @ [53:27] ==> public constructor JavaConstructorImpl(@NotNull psiMethod: PsiMethod) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaConstructorImpl[JavaClassConstructorDescriptor]
 
 'fields' @ [56:9] ==> value-parameter fields: Collection<PsiField> defined in org.jetbrains.kotlin.load.java.structure.impl.fields[ValueParameterDescriptorImpl]
 
@@ -110,12 +118,16 @@ Inferred types:
     <Psi> -> PsiField
     <Java> -> JavaFieldImpl
 
+'JavaFieldImpl' @ [56:26] ==> public constructor JavaFieldImpl(@NotNull psiField: PsiField) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaFieldImpl[JavaClassConstructorDescriptor]
+
 'parameters' @ [59:9] ==> value-parameter parameters: Array<PsiParameter> defined in org.jetbrains.kotlin.load.java.structure.impl.valueParameters[ValueParameterDescriptorImpl]
 
 'convert' @ [59:20] ==> private inline fun <Psi, Java> Array<PsiParameter>.convert(factory: (PsiParameter) -> JavaValueParameterImpl): List<JavaValueParameterImpl> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
 Inferred types:
     <Psi> -> PsiParameter
     <Java> -> JavaValueParameterImpl
+
+'JavaValueParameterImpl' @ [59:30] ==> public constructor JavaValueParameterImpl(@NotNull psiParameter: PsiParameter) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaValueParameterImpl[JavaClassConstructorDescriptor]
 
 'typeParameters' @ [62:9] ==> value-parameter typeParameters: Array<PsiTypeParameter> defined in org.jetbrains.kotlin.load.java.structure.impl.typeParameters[ValueParameterDescriptorImpl]
 
@@ -124,6 +136,8 @@ Inferred types:
     <Psi> -> PsiTypeParameter
     <Java> -> JavaTypeParameterImpl
 
+'JavaTypeParameterImpl' @ [62:34] ==> public constructor JavaTypeParameterImpl(@NotNull psiTypeParameter: PsiTypeParameter) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaTypeParameterImpl[JavaClassConstructorDescriptor]
+
 'classTypes' @ [65:9] ==> value-parameter classTypes: Array<PsiClassType> defined in org.jetbrains.kotlin.load.java.structure.impl.classifierTypes[ValueParameterDescriptorImpl]
 
 'convert' @ [65:20] ==> private inline fun <Psi, Java> Array<PsiClassType>.convert(factory: (PsiClassType) -> JavaClassifierTypeImpl): List<JavaClassifierTypeImpl> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
@@ -131,12 +145,16 @@ Inferred types:
     <Psi> -> PsiClassType
     <Java> -> JavaClassifierTypeImpl
 
+'JavaClassifierTypeImpl' @ [65:30] ==> public constructor JavaClassifierTypeImpl(@NotNull psiClassType: PsiClassType) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassifierTypeImpl[JavaClassConstructorDescriptor]
+
 'annotations' @ [68:9] ==> value-parameter annotations: Array<out PsiAnnotation> defined in org.jetbrains.kotlin.load.java.structure.impl.annotations[ValueParameterDescriptorImpl]
 
-'convert' @ [68:21] ==> private inline fun <Psi, Java> Array<out PsiAnnotation>.convert(factory: (Nothing) -> JavaAnnotationImpl): List<JavaAnnotationImpl> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
+'convert' @ [68:21] ==> private inline fun <Psi, Java> Array<out PsiAnnotation>.convert(factory: Function1<*, JavaAnnotationImpl>): List<JavaAnnotationImpl> defined in org.jetbrains.kotlin.load.java.structure.impl[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <Psi> -> PsiAnnotation
+    <Psi> -> Captured(out PsiAnnotation)
     <Java> -> JavaAnnotationImpl
+
+'JavaAnnotationImpl' @ [68:31] ==> public constructor JavaAnnotationImpl(@NotNull psiAnnotation: PsiAnnotation) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaAnnotationImpl[JavaClassConstructorDescriptor]
 
 'nameValuePairs' @ [71:9] ==> value-parameter nameValuePairs: Array<PsiNameValuePair> defined in org.jetbrains.kotlin.load.java.structure.impl.namedAnnotationArguments[ValueParameterDescriptorImpl]
 
@@ -155,6 +173,8 @@ Inferred types:
     <R> -> Name
 
 'Name' @ [72:38] ==> private constructor Name(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.name.Name[JavaClassConstructorDescriptor]
+
+'identifier' @ [72:44] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
 'psi' @ [73:25] ==> value-parameter psi: PsiNameValuePair defined in org.jetbrains.kotlin.load.java.structure.impl.namedAnnotationArguments.<anonymous>[ValueParameterDescriptorImpl]
 

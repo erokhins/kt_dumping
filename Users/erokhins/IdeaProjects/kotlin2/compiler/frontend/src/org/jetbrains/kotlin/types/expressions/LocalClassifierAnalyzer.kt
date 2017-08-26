@@ -62,8 +62,6 @@
 
 'languageVersionSettings' @ [101:25] ==> private final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.types.expressions.LocalClassifierAnalyzer[PropertyDescriptorImpl]
 
-'SyntheticResolveExtension' @ [102:25] ==> public companion object : ProjectExtensionDescriptor<SyntheticResolveExtension> defined in org.jetbrains.kotlin.resolve.extensions.SyntheticResolveExtension[FakeCallableDescriptorForObject]
-
 'getInstance' @ [102:51] ==> public final fun getInstance(project: Project): SyntheticResolveExtension defined in org.jetbrains.kotlin.resolve.extensions.SyntheticResolveExtension.Companion[SimpleFunctionDescriptorImpl]
 
 'project' @ [102:63] ==> val project: Project defined in org.jetbrains.kotlin.types.expressions.LocalClassifierAnalyzer.processClassOrObject[LocalVariableDescriptor]

@@ -2,7 +2,7 @@
 
 'readAttributes' @ [34:63] ==> public open fun <A : (BasicFileAttributes..BasicFileAttributes?)> readAttributes(p0: (Path..Path?), p1: (Class<(BasicFileAttributes..BasicFileAttributes?)>..Class<(BasicFileAttributes..BasicFileAttributes?)>?), vararg p2: (LinkOption..LinkOption?)): (BasicFileAttributes..BasicFileAttributes?) defined in java.nio.file.Files[JavaMethodDescriptor]
 Inferred types:
-    <A : (BasicFileAttributes..BasicFileAttributes?)> -> BasicFileAttributes
+    <A : (BasicFileAttributes..BasicFileAttributes?)> -> (java.nio.file.attribute.BasicFileAttributes..java.nio.file.attribute.BasicFileAttributes?)
 
 'path' @ [34:78] ==> private final val path: Path defined in org.jetbrains.kotlin.cli.jvm.modules.CoreJrtVirtualFile[PropertyDescriptorImpl]
 
@@ -59,9 +59,13 @@ Inferred types:
     <T : Closeable?> -> (java.nio.file.DirectoryStream<(java.nio.file.Path..java.nio.file.Path?)>..java.nio.file.DirectoryStream<(java.nio.file.Path..java.nio.file.Path?)>?)
     <R> -> List<Path>
 
-'Iterable' @ [57:48] ==> @InlineOnly public inline fun <T> Iterable(crossinline iterator: () -> Iterator<Nothing>): Iterable<Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'Iterable' @ [57:48] ==> @InlineOnly public inline fun <T> Iterable(crossinline iterator: () -> Iterator<???>): Iterable<???> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Nothing
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@7125e0a6
+
+'toList' @ [57:64] ==> public fun <T> Iterable<Path>.toList(): List<Path> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> Path
 
 'emptyList' @ [60:13] ==> public fun <T> emptyList(): List<Path> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

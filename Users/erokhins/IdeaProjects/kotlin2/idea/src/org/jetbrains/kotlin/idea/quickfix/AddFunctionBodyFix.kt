@@ -57,3 +57,5 @@ Inferred types:
     <T> -> KtFunction
     <R> -> AddFunctionBodyFix
 
+'AddFunctionBodyFix' @ [46:88] ==> public constructor AddFunctionBodyFix(element: KtFunction) defined in org.jetbrains.kotlin.idea.quickfix.AddFunctionBodyFix[ClassConstructorDescriptorImpl]
+

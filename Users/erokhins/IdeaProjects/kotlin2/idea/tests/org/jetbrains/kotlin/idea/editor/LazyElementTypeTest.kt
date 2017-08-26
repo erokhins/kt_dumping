@@ -40,7 +40,7 @@
 
 'findChildOfType' @ [44:50] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> findChildOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtLambdaExpression..KtLambdaExpression?)>): KtLambdaExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtLambdaExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtLambdaExpression..org.jetbrains.kotlin.psi.KtLambdaExpression?)
 
 'file' @ [44:66] ==> val file: (PsiFile..PsiFile?) defined in org.jetbrains.kotlin.idea.editor.LazyElementTypeTest.doTest[LocalVariableDescriptor]
 
@@ -72,7 +72,7 @@ Inferred types:
 
 'findChildOfType' @ [49:49] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> findChildOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtLambdaExpression..KtLambdaExpression?)>): KtLambdaExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtLambdaExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtLambdaExpression..org.jetbrains.kotlin.psi.KtLambdaExpression?)
 
 'file' @ [49:65] ==> val file: (PsiFile..PsiFile?) defined in org.jetbrains.kotlin.idea.editor.LazyElementTypeTest.doTest[LocalVariableDescriptor]
 

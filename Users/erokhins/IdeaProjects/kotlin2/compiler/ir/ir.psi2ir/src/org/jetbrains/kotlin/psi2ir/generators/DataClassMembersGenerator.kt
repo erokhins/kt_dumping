@@ -158,7 +158,9 @@ Inferred types:
 
 'irFunction' @ [97:26] ==> value-parameter irFunction: IrFunction defined in org.jetbrains.kotlin.psi2ir.generators.DataClassMembersGenerator.MyDataClassMethodGenerator.buildMember.<anonymous>[ValueParameterDescriptorImpl]
 
-'DescriptorToSourceUtils' @ [103:31] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [103:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'descriptorToDeclaration' @ [103:55] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -361,7 +363,7 @@ Inferred types:
 
 'intClass' @ [152:17] ==> private final val intClass: ClassDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.DataClassMembersGenerator.MyDataClassMethodGenerator[PropertyDescriptorImpl]
 
-'findFirstFunction' @ [152:26] ==> public inline fun ClassDescriptor.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir[SimpleFunctionDescriptorImpl]
+'findFirstFunction' @ [152:26] ==> public inline fun ClassDescriptor.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 'DEFAULT' @ [152:73] ==> public final val DEFAULT: (KotlinTypeChecker..KotlinTypeChecker?) defined in org.jetbrains.kotlin.types.checker.KotlinTypeChecker[JavaPropertyDescriptor]
 
@@ -390,7 +392,7 @@ Inferred types:
 
 'intClass' @ [156:17] ==> private final val intClass: ClassDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.DataClassMembersGenerator.MyDataClassMethodGenerator[PropertyDescriptorImpl]
 
-'findFirstFunction' @ [156:26] ==> public inline fun ClassDescriptor.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir[SimpleFunctionDescriptorImpl]
+'findFirstFunction' @ [156:26] ==> public inline fun ClassDescriptor.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 'DEFAULT' @ [156:72] ==> public final val DEFAULT: (KotlinTypeChecker..KotlinTypeChecker?) defined in org.jetbrains.kotlin.types.checker.KotlinTypeChecker[JavaPropertyDescriptor]
 
@@ -465,7 +467,7 @@ Inferred types:
 
 'typeConstructorDescriptor' @ [168:70] ==> val typeConstructorDescriptor: ClassifierDescriptor? defined in org.jetbrains.kotlin.psi2ir.generators.DataClassMembersGenerator.MyDataClassMethodGenerator.getHashCodeFunction[LocalVariableDescriptor]
 
-'findFirstFunction' @ [168:96] ==> public inline fun ClassDescriptor.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir[SimpleFunctionDescriptorImpl]
+'findFirstFunction' @ [168:96] ==> public inline fun ClassDescriptor.findFirstFunction(name: String, predicate: (CallableMemberDescriptor) -> Boolean): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.psi2ir in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [168:128] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.DataClassMembersGenerator.MyDataClassMethodGenerator.getHashCodeFunction.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -575,7 +577,7 @@ Inferred types:
 
 'type' @ [199:26] ==> public final val PropertyDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'containsNull' @ [199:31] ==> public fun KotlinType.containsNull(): Boolean defined in org.jetbrains.kotlin.psi2ir[SimpleFunctionDescriptorImpl]
+'containsNull' @ [199:31] ==> public fun KotlinType.containsNull(): Boolean defined in org.jetbrains.kotlin.psi2ir in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 'irLetS' @ [200:21] ==> public inline fun IrBuilderWithScope.irLetS(value: IrExpression, origin: IrStatementOrigin? = ..., nameHint: String? = ..., body: (IrValueSymbol) -> IrExpression): IrExpression defined in org.jetbrains.kotlin.ir.builders[DeserializedSimpleFunctionDescriptor]
 

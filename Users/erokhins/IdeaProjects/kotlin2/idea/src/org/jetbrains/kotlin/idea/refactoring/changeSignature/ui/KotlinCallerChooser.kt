@@ -77,9 +77,9 @@ Inferred types:
 
 'resolveToDescriptor' @ [82:39] ==> public fun KtDeclaration.resolveToDescriptor(bodyResolveMode: BodyResolveMode = ...): DeclarationDescriptor defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
-'?:' @ [83:27] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ClassConstructorDescriptor?, right: ClassConstructorDescriptor): ClassConstructorDescriptor[SimpleFunctionDescriptorImpl]
+'?:' @ [83:27] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: FunctionDescriptor?, right: FunctionDescriptor): FunctionDescriptor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ClassConstructorDescriptor
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> FunctionDescriptor
 
 'myMethod' @ [83:28] ==> protected/*protected and package*/ final val myMethod: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.ui.KotlinMethodNode[JavaPropertyDescriptor]
 

@@ -31,19 +31,23 @@ Inferred types:
 
 'String' @ [53:30] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'trim' @ [53:38] ==> @InlineOnly public inline fun String.trim(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'filter' @ [53:44] ==> public inline fun <T> Iterable<String>.filter(predicate: (String) -> Boolean): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
 'String' @ [53:51] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isNotBlank' @ [53:59] ==> @InlineOnly public inline fun CharSequence.isNotBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'assertEquals' @ [56:16] ==> public open fun assertEquals(p0: (Any..Any?), p1: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
 'expected' @ [56:29] ==> value-parameter expected: String defined in org.jetbrains.kotlin.scripts.assertEqualsTrimmed[ValueParameterDescriptorImpl]
 
-'linesSplitTrim' @ [56:38] ==> private fun String.linesSplitTrim(): List<String> defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'linesSplitTrim' @ [56:38] ==> private fun String.linesSplitTrim(): List<String> defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 
 'actual' @ [56:56] ==> value-parameter actual: String defined in org.jetbrains.kotlin.scripts.assertEqualsTrimmed[ValueParameterDescriptorImpl]
 
-'linesSplitTrim' @ [56:63] ==> private fun String.linesSplitTrim(): List<String> defined in org.jetbrains.kotlin.scripts[SimpleFunctionDescriptorImpl]
+'linesSplitTrim' @ [56:63] ==> private fun String.linesSplitTrim(): List<String> defined in org.jetbrains.kotlin.scripts in file scriptTestsUtil.kt[SimpleFunctionDescriptorImpl]
 

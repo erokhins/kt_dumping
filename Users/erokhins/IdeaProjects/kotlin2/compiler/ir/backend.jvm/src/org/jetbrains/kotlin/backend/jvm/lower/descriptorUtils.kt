@@ -137,8 +137,6 @@ Inferred types:
 
 'returnType' @ [56:30] ==> public final val FunctionDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
-'Modality' @ [56:42] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [56:51] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [56:71] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -148,8 +146,6 @@ Inferred types:
 'this' @ [61:46] ==> <this> defined in org.jetbrains.kotlin.backend.jvm.lower.isClInit[ReceiverParameterDescriptorImpl]
 
 'name' @ [61:51] ==> public final val FunctionDescriptor.name: Name[MyPropertyDescriptor]
-
-'InitializersLowering' @ [61:59] ==> public companion object defined in org.jetbrains.kotlin.backend.jvm.lower.InitializersLowering[FakeCallableDescriptorForObject]
 
 'clinitName' @ [61:80] ==> public final val clinitName: Name defined in org.jetbrains.kotlin.backend.jvm.lower.InitializersLowering.Companion[PropertyDescriptorImpl]
 

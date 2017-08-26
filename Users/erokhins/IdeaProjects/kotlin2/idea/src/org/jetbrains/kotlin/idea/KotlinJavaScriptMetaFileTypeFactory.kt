@@ -6,7 +6,5 @@
 
 'KotlinJavaScriptMetaFileType' @ [25:26] ==> public object KotlinJavaScriptMetaFileType : FileType defined in org.jetbrains.kotlin.idea.decompiler.js[FakeCallableDescriptorForObject]
 
-'KotlinJavaScriptMetaFileType' @ [25:56] ==> public object KotlinJavaScriptMetaFileType : FileType defined in org.jetbrains.kotlin.idea.decompiler.js[FakeCallableDescriptorForObject]
-
 'defaultExtension' @ [25:85] ==> public final val KotlinJavaScriptMetaFileType.defaultExtension: String[MyPropertyDescriptor]
 

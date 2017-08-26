@@ -86,7 +86,7 @@ Inferred types:
 
 'text' @ [70:60] ==> value-parameter text: String defined in org.jetbrains.kotlin.console.ReplOutputHandler.handleReplMessage[ValueParameterDescriptorImpl]
 
-'logError' @ [73:13] ==> public fun logError(cl: Class<*>, message: String): Unit defined in org.jetbrains.kotlin.console.actions[SimpleFunctionDescriptorImpl]
+'logError' @ [73:13] ==> public fun logError(cl: Class<*>, message: String): Unit defined in org.jetbrains.kotlin.console.actions in file RunExecuteActions.kt[SimpleFunctionDescriptorImpl]
 
 'ReplOutputHandler' @ [73:22] ==> public constructor ReplOutputHandler(runner: KotlinConsoleRunner, process: Process, commandLine: String) defined in org.jetbrains.kotlin.console.ReplOutputHandler[ClassConstructorDescriptorImpl]
 
@@ -204,7 +204,7 @@ Inferred types:
 
 'it' @ [92:119] ==> value-parameter it: String defined in org.jetbrains.kotlin.console.ReplOutputHandler.handleReplMessage.<anonymous>[ValueParameterDescriptorImpl]
 
-'logError' @ [93:21] ==> public fun logError(cl: Class<*>, message: String): Unit defined in org.jetbrains.kotlin.console.actions[SimpleFunctionDescriptorImpl]
+'logError' @ [93:21] ==> public fun logError(cl: Class<*>, message: String): Unit defined in org.jetbrains.kotlin.console.actions in file RunExecuteActions.kt[SimpleFunctionDescriptorImpl]
 
 'ReplOutputHandler' @ [93:30] ==> public constructor ReplOutputHandler(runner: KotlinConsoleRunner, process: Process, commandLine: String) defined in org.jetbrains.kotlin.console.ReplOutputHandler[ClassConstructorDescriptorImpl]
 
@@ -269,8 +269,6 @@ Inferred types:
 'strToSource' @ [114:57] ==> private final fun strToSource(s: String, encoding: Charset = ...): InputSource defined in org.jetbrains.kotlin.console.ReplOutputHandler[SimpleFunctionDescriptorImpl]
 
 'runtimeErrorsReport' @ [114:69] ==> value-parameter runtimeErrorsReport: String defined in org.jetbrains.kotlin.console.ReplOutputHandler.createCompilerMessages[ValueParameterDescriptorImpl]
-
-'Charsets' @ [114:90] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
 
 'UTF_16' @ [114:99] ==> @field:JvmField public final val UTF_16: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 

@@ -226,9 +226,9 @@ Inferred types:
 
 'withIconFromLookupObject' @ [115:24] ==> private final fun LookupElement.withIconFromLookupObject(): LookupElement defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [124:32] ==> public fun <T> lazy(initializer: () -> PsiElement?): Lazy<PsiElement?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [124:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiElement?
+    <T> -> T
 
 'DescriptorToSourceUtilsIde' @ [124:39] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
 
@@ -311,9 +311,9 @@ Inferred types:
 
 'descriptor' @ [147:69] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory.createLookupElementUnwrappedDescriptor[ValueParameterDescriptorImpl]
 
-'lazy' @ [148:48] ==> public fun <T> lazy(initializer: () -> PsiElement?): Lazy<PsiElement?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [148:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiElement?
+    <T> -> T
 
 'DescriptorToSourceUtilsIde' @ [148:55] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
 
@@ -343,9 +343,9 @@ Inferred types:
 
 'descriptor' @ [155:69] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory.createLookupElementUnwrappedDescriptor[ValueParameterDescriptorImpl]
 
-'lazy' @ [156:48] ==> public fun <T> lazy(initializer: () -> PsiElement?): Lazy<PsiElement?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [156:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiElement?
+    <T> -> T
 
 'DescriptorToSourceUtilsIde' @ [156:55] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
 
@@ -375,9 +375,9 @@ Inferred types:
 
 'descriptor' @ [163:69] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory.createLookupElementUnwrappedDescriptor[ValueParameterDescriptorImpl]
 
-'lazy' @ [164:48] ==> public fun <T> lazy(initializer: () -> PsiElement?): Lazy<PsiElement?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [164:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiElement?
+    <T> -> T
 
 'DescriptorToSourceUtils' @ [164:55] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
@@ -677,8 +677,6 @@ Inferred types:
 
 'withTypeText' @ [223:39] ==> @Contract public open fun withTypeText(@Nullable p0: String?, p1: Boolean): (LookupElementBuilder..LookupElementBuilder?) defined in com.intellij.codeInsight.lookup.LookupElementBuilder[JavaMethodDescriptor]
 
-'DescriptorRenderer' @ [223:52] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'SHORT_NAMES_IN_TYPES' @ [223:71] ==> @field:JvmField public final val SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
 'renderType' @ [223:92] ==> public abstract fun renderType(type: KotlinType): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -767,9 +765,7 @@ Inferred types:
 
 'putUserData' @ [251:21] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElementBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'KotlinCompletionCharFilter' @ [251:33] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'ACCEPT_OPENING_BRACE' @ [251:60] ==> public final val ACCEPT_OPENING_BRACE: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter.Companion[PropertyDescriptorImpl]
 

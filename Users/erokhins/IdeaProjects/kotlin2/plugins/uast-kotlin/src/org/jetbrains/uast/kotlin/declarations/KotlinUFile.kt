@@ -19,9 +19,9 @@ Inferred types:
 
 'this' @ [34:67] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUFile[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [36:39] ==> internal fun <T> lz(initializer: () -> ArrayList<UComment>): Lazy<ArrayList<UComment>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [36:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ArrayList<UComment>
+    <T> -> T
 
 'ArrayList' @ [37:24] ==> public constructor ArrayList<E : (Any..Any?)>(p0: Int) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -43,9 +43,9 @@ Inferred types:
 
 'comments' @ [43:9] ==> val comments: ArrayList<UComment> defined in org.jetbrains.uast.kotlin.KotlinUFile.allCommentsInFile.<anonymous>[LocalVariableDescriptor]
 
-'lz' @ [46:29] ==> internal fun <T> lz(initializer: () -> List<KotlinUImportStatement>): Lazy<List<KotlinUImportStatement>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [46:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KotlinUImportStatement>
+    <T> -> T
 
 'psi' @ [46:34] ==> public open val psi: KtFile defined in org.jetbrains.uast.kotlin.KotlinUFile[PropertyDescriptorImpl]
 
@@ -62,9 +62,9 @@ Inferred types:
 
 'this' @ [46:88] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUFile[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [48:29] ==> internal fun <T> lz(initializer: () -> MutableList<UClass>): Lazy<MutableList<UClass>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [48:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MutableList<UClass>
+    <T> -> T
 
 'languagePlugin' @ [49:35] ==> public open val languagePlugin: UastLanguagePlugin defined in org.jetbrains.uast.kotlin.KotlinUFile[PropertyDescriptorImpl]
 

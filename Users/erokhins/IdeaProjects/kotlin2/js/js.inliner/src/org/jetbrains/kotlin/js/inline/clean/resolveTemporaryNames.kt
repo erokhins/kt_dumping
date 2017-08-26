@@ -1,4 +1,4 @@
-'resolveNames' @ [23:21] ==> private fun JsNode.resolveNames(): Map<JsName, JsName> defined in org.jetbrains.kotlin.js.inline.clean[SimpleFunctionDescriptorImpl]
+'resolveNames' @ [23:21] ==> private fun JsNode.resolveNames(): Map<JsName, JsName> defined in org.jetbrains.kotlin.js.inline.clean in file resolveTemporaryNames.kt[SimpleFunctionDescriptorImpl]
 
 'accept' @ [24:5] ==> public abstract fun accept(p0: (JsVisitor..JsVisitor?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsNode[JavaMethodDescriptor]
 
@@ -180,13 +180,11 @@ Inferred types:
 
 'temporaryName' @ [66:26] ==> val temporaryName: JsName defined in org.jetbrains.kotlin.js.inline.clean.resolveNames.traverse[LocalVariableDescriptor]
 
-'JsDynamicScope' @ [66:43] ==> public object JsDynamicScope : JsScope defined in org.jetbrains.kotlin.js.backend.ast[FakeCallableDescriptorForObject]
-
 'declareName' @ [66:58] ==> @NotNull public open fun declareName(@NotNull p0: String): JsName defined in org.jetbrains.kotlin.js.backend.ast.JsDynamicScope[JavaMethodDescriptor]
 
 'resolvedName' @ [66:70] ==> var resolvedName: String defined in org.jetbrains.kotlin.js.inline.clean.resolveNames.traverse[LocalVariableDescriptor]
 
-'apply' @ [66:84] ==> @InlineOnly public inline fun <T> JsName.apply(block: JsName.() -> Unit): JsName defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [66:84] ==> @InlineOnly public inline fun <T> JsName.apply(block: (JsName).() -> Unit): JsName defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JsName
 
@@ -205,6 +203,8 @@ Inferred types:
 'forEach' @ [69:24] ==> @HidesMembers public inline fun <T> Iterable<Scope>.forEach(action: (Scope) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Scope
+
+'traverse' @ [69:34] ==> local final fun traverse(scope: Scope): Unit defined in org.jetbrains.kotlin.js.inline.clean.resolveNames[SimpleFunctionDescriptorImpl]
 
 'traverse' @ [72:5] ==> local final fun traverse(scope: Scope): Unit defined in org.jetbrains.kotlin.js.inline.clean.resolveNames[SimpleFunctionDescriptorImpl]
 
@@ -257,8 +257,6 @@ Inferred types:
 'x' @ [87:30] ==> value-parameter x: JsLabel defined in org.jetbrains.kotlin.js.inline.clean.resolveNames.<no name provided>.visitLabel[ValueParameterDescriptorImpl]
 
 'name' @ [87:32] ==> public final var JsLabel.name: (JsName..JsName?)[MyPropertyDescriptor]
-
-'JsDynamicScope' @ [87:40] ==> public object JsDynamicScope : JsScope defined in org.jetbrains.kotlin.js.backend.ast[FakeCallableDescriptorForObject]
 
 'declareName' @ [87:55] ==> @NotNull public open fun declareName(@NotNull p0: String): JsName defined in org.jetbrains.kotlin.js.backend.ast.JsDynamicScope[JavaMethodDescriptor]
 
@@ -457,8 +455,6 @@ Inferred types:
 'usedNames' @ [148:30] ==> public final val usedNames: MutableSet<JsName> defined in org.jetbrains.kotlin.js.inline.clean.Scope[PropertyDescriptorImpl]
 
 'name' @ [148:43] ==> val name: JsName? defined in org.jetbrains.kotlin.js.inline.clean.computeScopes.<no name provided>.visitNameRef[LocalVariableDescriptor]
-
-'JsDynamicScope' @ [148:51] ==> public object JsDynamicScope : JsScope defined in org.jetbrains.kotlin.js.backend.ast[FakeCallableDescriptorForObject]
 
 'declareName' @ [148:66] ==> @NotNull public open fun declareName(@NotNull p0: String): JsName defined in org.jetbrains.kotlin.js.backend.ast.JsDynamicScope[JavaMethodDescriptor]
 

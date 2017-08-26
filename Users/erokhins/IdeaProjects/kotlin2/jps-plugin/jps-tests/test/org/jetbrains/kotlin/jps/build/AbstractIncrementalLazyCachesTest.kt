@@ -216,6 +216,8 @@ Inferred types:
 Inferred types:
     <T> -> File
 
+'exists' @ [117:31] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
+
 'sortedBy' @ [118:18] ==> public inline fun <T, R : Comparable<String>> Iterable<File>.sortedBy(crossinline selector: (File) -> String?): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
@@ -274,8 +276,6 @@ Inferred types:
 'file' @ [130:32] ==> val file: File defined in org.jetbrains.kotlin.jps.build.AbstractIncrementalLazyCachesTest.kotlinCacheNames[LocalVariableDescriptor]
 
 'extension' @ [130:37] ==> public val File.extension: String defined in kotlin.io[DeserializedPropertyDescriptor]
-
-'BasicMapsOwner' @ [130:50] ==> public companion object defined in org.jetbrains.kotlin.incremental.storage.BasicMapsOwner[FakeCallableDescriptorForObject]
 
 'CACHE_EXTENSION' @ [130:65] ==> public final val CACHE_EXTENSION: String defined in org.jetbrains.kotlin.incremental.storage.BasicMapsOwner.Companion[DeserializedPropertyDescriptor]
 

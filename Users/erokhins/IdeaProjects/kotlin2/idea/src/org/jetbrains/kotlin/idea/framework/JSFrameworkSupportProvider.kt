@@ -20,11 +20,7 @@
 
 'rootModel' @ [54:25] ==> value-parameter rootModel: ModifiableRootModel defined in org.jetbrains.kotlin.idea.framework.JSFrameworkSupportProvider.createConfigurable.<no name provided>.addSupport[ValueParameterDescriptorImpl]
 
-'JavaRuntimeLibraryDescription' @ [55:25] ==> public companion object defined in org.jetbrains.kotlin.idea.framework.JavaRuntimeLibraryDescription[FakeCallableDescriptorForObject]
-
 'SUITABLE_LIBRARY_KINDS' @ [55:55] ==> public final val SUITABLE_LIBRARY_KINDS: Set<LibraryKind> defined in org.jetbrains.kotlin.idea.framework.JavaRuntimeLibraryDescription.Companion[PropertyDescriptorImpl]
-
-'JavaFrameworkType' @ [56:25] ==> public companion object defined in org.jetbrains.kotlin.idea.framework.JavaFrameworkType[FakeCallableDescriptorForObject]
 
 'instance' @ [56:43] ==> public final val instance: JavaFrameworkType defined in org.jetbrains.kotlin.idea.framework.JavaFrameworkType.Companion[PropertyDescriptorImpl]
 

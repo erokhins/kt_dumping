@@ -58,7 +58,7 @@ Inferred types:
 
 'getCustomSettings' @ [56:35] ==> public open fun <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> getCustomSettings(@NotNull p0: Class<(KotlinCodeStyleSettings..KotlinCodeStyleSettings?)>): (KotlinCodeStyleSettings..KotlinCodeStyleSettings?) defined in com.intellij.psi.codeStyle.CodeStyleSettings[JavaMethodDescriptor]
 Inferred types:
-    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> KotlinCodeStyleSettings
+    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> (org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings..org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings?)
 
 'KotlinCodeStyleSettings' @ [56:53] ==> public constructor KotlinCodeStyleSettings(container: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
@@ -72,7 +72,7 @@ Inferred types:
 
 'INSTANCE' @ [57:74] ==> @NotNull public final val INSTANCE: KotlinLanguage defined in org.jetbrains.kotlin.idea.KotlinLanguage[JavaPropertyDescriptor]
 
-'rules' @ [59:12] ==> public fun rules(commonCodeStyleSettings: CommonCodeStyleSettings, builderUtil: KotlinSpacingBuilderUtil, init: KotlinSpacingBuilder.() -> Unit): KotlinSpacingBuilder defined in org.jetbrains.kotlin.idea.formatter[SimpleFunctionDescriptorImpl]
+'rules' @ [59:12] ==> public fun rules(commonCodeStyleSettings: CommonCodeStyleSettings, builderUtil: KotlinSpacingBuilderUtil, init: KotlinSpacingBuilder.() -> Unit): KotlinSpacingBuilder defined in org.jetbrains.kotlin.idea.formatter in file KotlinSpacingBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'kotlinCommonSettings' @ [59:18] ==> val kotlinCommonSettings: CommonCodeStyleSettings defined in org.jetbrains.kotlin.idea.formatter.createSpacingBuilder[LocalVariableDescriptor]
 
@@ -138,8 +138,6 @@ Inferred types:
 
 'minSpaces' @ [75:68] ==> value-parameter minSpaces: Int defined in org.jetbrains.kotlin.idea.formatter.createSpacingBuilder.<anonymous>.<anonymous>.commentSpacing[ValueParameterDescriptorImpl]
 
-'Int' @ [75:79] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [75:83] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'settings' @ [75:94] ==> value-parameter settings: CodeStyleSettings defined in org.jetbrains.kotlin.idea.formatter.createSpacingBuilder[ValueParameterDescriptorImpl]
@@ -153,8 +151,6 @@ Inferred types:
 'createSpacing' @ [77:32] ==> public open fun createSpacing(p0: Int, p1: Int, p2: Int, p3: Boolean, p4: Int): (Spacing..Spacing?) defined in com.intellij.formatting.Spacing[JavaMethodDescriptor]
 
 'minSpaces' @ [77:46] ==> value-parameter minSpaces: Int defined in org.jetbrains.kotlin.idea.formatter.createSpacingBuilder.<anonymous>.<anonymous>.commentSpacing[ValueParameterDescriptorImpl]
-
-'Int' @ [77:57] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [77:61] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
@@ -919,8 +915,6 @@ Inferred types:
 
 'spacing' @ [217:77] ==> public open fun spacing(p0: Int, p1: Int, p2: Int, p3: Boolean, p4: Int): (SpacingBuilder..SpacingBuilder?) defined in com.intellij.formatting.SpacingBuilder.RuleBuilder[JavaMethodDescriptor]
 
-'Int' @ [217:88] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [217:92] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'commonCodeStyleSettings' @ [217:112] ==> public final val commonCodeStyleSettings: CommonCodeStyleSettings defined in org.jetbrains.kotlin.idea.formatter.KotlinSpacingBuilder[PropertyDescriptorImpl]
@@ -936,8 +930,6 @@ Inferred types:
 'LABELED_EXPRESSION' @ [218:59] ==> public final val LABELED_EXPRESSION: (KtNodeType..KtNodeType?) defined in org.jetbrains.kotlin.KtNodeTypes[JavaPropertyDescriptor]
 
 'spacing' @ [218:79] ==> public open fun spacing(p0: Int, p1: Int, p2: Int, p3: Boolean, p4: Int): (SpacingBuilder..SpacingBuilder?) defined in com.intellij.formatting.SpacingBuilder.RuleBuilder[JavaMethodDescriptor]
-
-'Int' @ [218:90] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [218:94] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
@@ -1415,7 +1407,7 @@ Inferred types:
 
 'FUNCTION_LITERAL' @ [295:120] ==> public final val FUNCTION_LITERAL: (KtNodeType..KtNodeType?) defined in org.jetbrains.kotlin.KtNodeTypes[JavaPropertyDescriptor]
 
-'beforeInside' @ [296:13] ==> public fun SpacingBuilder.beforeInside(element: IElementType, tokenSet: TokenSet, spacingFun: SpacingBuilder.RuleBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.formatter[SimpleFunctionDescriptorImpl]
+'beforeInside' @ [296:13] ==> public fun SpacingBuilder.beforeInside(element: IElementType, tokenSet: TokenSet, spacingFun: SpacingBuilder.RuleBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.formatter in file kotlinSpacingRules.kt[SimpleFunctionDescriptorImpl]
 
 'COLON' @ [296:26] ==> public final val COLON: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
@@ -1427,7 +1419,7 @@ Inferred types:
 
 'SPACE_BEFORE_TYPE_COLON' @ [296:79] ==> public final var SPACE_BEFORE_TYPE_COLON: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
 
-'afterInside' @ [297:13] ==> public fun SpacingBuilder.afterInside(element: IElementType, tokenSet: TokenSet, spacingFun: SpacingBuilder.RuleBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.formatter[SimpleFunctionDescriptorImpl]
+'afterInside' @ [297:13] ==> public fun SpacingBuilder.afterInside(element: IElementType, tokenSet: TokenSet, spacingFun: SpacingBuilder.RuleBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.formatter in file kotlinSpacingRules.kt[SimpleFunctionDescriptorImpl]
 
 'COLON' @ [297:25] ==> public final val COLON: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
@@ -1439,7 +1431,7 @@ Inferred types:
 
 'SPACE_AFTER_TYPE_COLON' @ [297:78] ==> public final var SPACE_AFTER_TYPE_COLON: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
 
-'afterInside' @ [299:13] ==> public fun SpacingBuilder.afterInside(element: IElementType, tokenSet: TokenSet, spacingFun: SpacingBuilder.RuleBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.formatter[SimpleFunctionDescriptorImpl]
+'afterInside' @ [299:13] ==> public fun SpacingBuilder.afterInside(element: IElementType, tokenSet: TokenSet, spacingFun: SpacingBuilder.RuleBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.formatter in file kotlinSpacingRules.kt[SimpleFunctionDescriptorImpl]
 
 'COLON' @ [299:25] ==> public final val COLON: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
@@ -2351,7 +2343,7 @@ Inferred types:
 
 'SPACE_AROUND_WHEN_ARROW' @ [519:68] ==> public final var SPACE_AROUND_WHEN_ARROW: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
 
-'beforeInside' @ [521:13] ==> public fun SpacingBuilder.beforeInside(element: IElementType, tokenSet: TokenSet, spacingFun: SpacingBuilder.RuleBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.formatter[SimpleFunctionDescriptorImpl]
+'beforeInside' @ [521:13] ==> public fun SpacingBuilder.beforeInside(element: IElementType, tokenSet: TokenSet, spacingFun: SpacingBuilder.RuleBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.idea.formatter in file kotlinSpacingRules.kt[SimpleFunctionDescriptorImpl]
 
 'COLON' @ [521:26] ==> public final val COLON: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 

@@ -6,14 +6,11 @@ Inferred types:
 Inferred types:
     <T> -> KtNamedFunction
 
-'UserDataProperty' @ [64:61] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<String>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> KtNamedFunction
-    <T : Any> -> String
+'getValue' @ [64:61] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [64:82] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(String..String?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'CallableRefactoring<FunctionDescriptor>' @ [70:9] ==> public constructor CallableRefactoring<out T : CallableDescriptor>(project: Project, callableDescriptor: FunctionDescriptor, commandName: String) defined in org.jetbrains.kotlin.idea.refactoring.CallableRefactoring[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -29,15 +26,17 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> KtElement
 
-'lazy' @ [73:40] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [73:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'callableDescriptor' @ [74:24] ==> @Suppress public final val callableDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionToPropertyIntention.Converter[PropertyDescriptorImpl]
 
 'name' @ [74:43] ==> public final val FunctionDescriptor.name: Name[MyPropertyDescriptor]
 
-'SyntheticJavaPropertyDescriptor' @ [75:14] ==> public companion object defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor[FakeCallableDescriptorForObject]
+'?:' @ [75:14] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Name?, right: Name): Name[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Name
 
 'propertyNameByGetMethodName' @ [75:46] ==> public final fun propertyNameByGetMethodName(methodName: Name): Name? defined in org.jetbrains.kotlin.synthetic.SyntheticJavaPropertyDescriptor.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -107,7 +106,7 @@ Inferred types:
 
 'originalFunction' @ [85:17] ==> value-parameter originalFunction: KtNamedFunction defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionToPropertyIntention.Converter.convertFunction[ValueParameterDescriptorImpl]
 
-'getReturnTypeReference' @ [85:34] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getReturnTypeReference' @ [85:34] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [85:60] ==> @InlineOnly public inline fun <T, R> KtTypeReference.let(block: (KtTypeReference) -> KtPsiFactory.CallableBuilder): KtPsiFactory.CallableBuilder defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -225,7 +224,7 @@ Inferred types:
 
 'asString' @ [108:72] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'getAffectedCallables' @ [109:29] ==> public fun getAffectedCallables(project: Project, descriptorsForChange: Collection<CallableDescriptor>): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getAffectedCallables' @ [109:29] ==> public fun getAffectedCallables(project: Project, descriptorsForChange: Collection<CallableDescriptor>): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring in file CallableRefactoring.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [109:50] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionToPropertyIntention.Converter[PropertyDescriptorImpl]
 
@@ -253,7 +252,7 @@ Inferred types:
 
 'callable' @ [116:38] ==> val callable: PsiElement defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionToPropertyIntention.Converter.performRefactoring[LocalVariableDescriptor]
 
-'reportDeclarationConflict' @ [117:21] ==> public fun reportDeclarationConflict(conflicts: MultiMap<PsiElement, String>, declaration: PsiElement, message: (renderedDeclaration: String) -> String): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'reportDeclarationConflict' @ [117:21] ==> public fun reportDeclarationConflict(conflicts: MultiMap<PsiElement, String>, declaration: PsiElement, message: (renderedDeclaration: String) -> String): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [117:47] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionToPropertyIntention.Converter.performRefactoring[LocalVariableDescriptor]
 
@@ -361,7 +360,7 @@ Inferred types:
     <T> -> PsiElement
     <R> -> Unit
 
-'reportDeclarationConflict' @ [135:37] ==> public fun reportDeclarationConflict(conflicts: MultiMap<PsiElement, String>, declaration: PsiElement, message: (renderedDeclaration: String) -> String): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'reportDeclarationConflict' @ [135:37] ==> public fun reportDeclarationConflict(conflicts: MultiMap<PsiElement, String>, declaration: PsiElement, message: (renderedDeclaration: String) -> String): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [135:63] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionToPropertyIntention.Converter.performRefactoring[LocalVariableDescriptor]
 
@@ -406,7 +405,7 @@ Inferred types:
     <T> -> PsiMethod
     <R> -> Unit
 
-'reportDeclarationConflict' @ [143:37] ==> public fun reportDeclarationConflict(conflicts: MultiMap<PsiElement, String>, declaration: PsiElement, message: (renderedDeclaration: String) -> String): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'reportDeclarationConflict' @ [143:37] ==> public fun reportDeclarationConflict(conflicts: MultiMap<PsiElement, String>, declaration: PsiElement, message: (renderedDeclaration: String) -> String): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [143:63] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionToPropertyIntention.Converter.performRefactoring[LocalVariableDescriptor]
 
@@ -557,7 +556,7 @@ Inferred types:
 
 'project' @ [179:13] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionToPropertyIntention.Converter[PropertyDescriptorImpl]
 
-'checkConflictsInteractively' @ [179:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [179:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [179:49] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionToPropertyIntention.Converter.performRefactoring[LocalVariableDescriptor]
 

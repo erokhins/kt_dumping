@@ -2,13 +2,13 @@
 
 'BaseInjection' @ [57:47] ==> public constructor BaseInjection(@NotNull p0: String) defined in org.intellij.plugins.intelliLang.inject.config.BaseInjection[JavaClassConstructorDescriptor]
 
-'lazy' @ [60:59] ==> public fun <T> lazy(initializer: () -> KotlinLanguageInjectionSupport?): Lazy<KotlinLanguageInjectionSupport?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [60:59] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinLanguageInjectionSupport?
+    <T> -> T
 
-'ArrayList' @ [61:9] ==> public final fun <E> <init>(p0: (MutableCollection<out (LanguageInjectionSupport..LanguageInjectionSupport?)>..Collection<(LanguageInjectionSupport..LanguageInjectionSupport?)>?)): ArrayList<LanguageInjectionSupport> /* = ArrayList<LanguageInjectionSupport> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
+'ArrayList' @ [61:9] ==> public final fun <E> <init>(p0: (MutableCollection<out (LanguageInjectionSupport..LanguageInjectionSupport?)>..Collection<(LanguageInjectionSupport..LanguageInjectionSupport?)>?)): ArrayList<(LanguageInjectionSupport..LanguageInjectionSupport?)> /* = ArrayList<(LanguageInjectionSupport..LanguageInjectionSupport?)> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> LanguageInjectionSupport
+    <E> -> (org.intellij.plugins.intelliLang.inject.LanguageInjectionSupport..org.intellij.plugins.intelliLang.inject.LanguageInjectionSupport?)
 
 'getActiveInjectionSupports' @ [61:33] ==> public open fun getActiveInjectionSupports(): (MutableCollection<(LanguageInjectionSupport..LanguageInjectionSupport?)>..Collection<(LanguageInjectionSupport..LanguageInjectionSupport?)>?) defined in org.intellij.plugins.intelliLang.inject.InjectorUtils[JavaMethodDescriptor]
 
@@ -26,10 +26,7 @@ Inferred types:
 Inferred types:
     <T> -> KotlinLanguageInjectionSupport
 
-'UserDataProperty' @ [65:103] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<KotlinLanguageInjector.KotlinCachedInjection>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> KtStringTemplateExpression
-    <T : Any> -> KotlinCachedInjection
+'getValue' @ [65:103] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [66:17] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(KotlinLanguageInjector.KotlinCachedInjection..KotlinLanguageInjector.KotlinCachedInjection?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
@@ -210,15 +207,15 @@ Inferred types:
 
 'putInjectedFileUserData' @ [107:27] ==> public open fun <T : (Any..Any?)> putInjectedFileUserData(p0: (MultiHostRegistrar..MultiHostRegistrar?), p1: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?), p2: (Boolean..Boolean?)): Unit defined in org.intellij.plugins.intelliLang.inject.InjectorUtils[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'registrar' @ [107:51] ==> value-parameter registrar: MultiHostRegistrar defined in org.jetbrains.kotlin.idea.injection.KotlinLanguageInjector.getLanguagesToInject[ValueParameterDescriptorImpl]
 
 'FRANKENSTEIN_INJECTION' @ [107:83] ==> public final val FRANKENSTEIN_INJECTION: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?) defined in com.intellij.psi.impl.source.tree.injected.InjectedLanguageUtil[JavaPropertyDescriptor]
 
-'if (parts.isUnparsable) java.lang.Boolean.TRUE else null' @ [108:51] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Boolean..Boolean?), elseBranch: (Boolean..Boolean?)): (Boolean..Boolean?)[SimpleFunctionDescriptorImpl]
+'if (parts.isUnparsable) java.lang.Boolean.TRUE else null' @ [108:51] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Boolean?, elseBranch: Boolean?): Boolean?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.Boolean..kotlin.Boolean?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Boolean?
 
 'parts' @ [108:55] ==> val parts: InjectionSplitResult defined in org.jetbrains.kotlin.idea.injection.KotlinLanguageInjector.getLanguagesToInject[LocalVariableDescriptor]
 
@@ -254,7 +251,7 @@ Inferred types:
 
 'putInjectedFileUserData' @ [124:27] ==> public open fun <T : (Any..Any?)> putInjectedFileUserData(p0: (MultiHostRegistrar..MultiHostRegistrar?), p1: (Key<(InjectedLanguage..InjectedLanguage?)>..Key<(InjectedLanguage..InjectedLanguage?)>?), p2: (InjectedLanguage..InjectedLanguage?)): Unit defined in org.intellij.plugins.intelliLang.inject.InjectorUtils[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> InjectedLanguage
+    <T : (Any..Any?)> -> (org.intellij.plugins.intelliLang.inject.InjectedLanguage..org.intellij.plugins.intelliLang.inject.InjectedLanguage?)
 
 'registrar' @ [124:51] ==> value-parameter registrar: MultiHostRegistrar defined in org.jetbrains.kotlin.idea.injection.KotlinLanguageInjector.computeBaseInjection[ValueParameterDescriptorImpl]
 
@@ -522,7 +519,7 @@ Inferred types:
 
 'getParentOfType' @ [224:42] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtCallExpression..KtCallExpression?)>): KtCallExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtCallExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallExpression..org.jetbrains.kotlin.psi.KtCallExpression?)
 
 'ktHost' @ [224:58] ==> val ktHost: KtElement defined in org.jetbrains.kotlin.idea.injection.KotlinLanguageInjector.injectWithCall[LocalVariableDescriptor]
 

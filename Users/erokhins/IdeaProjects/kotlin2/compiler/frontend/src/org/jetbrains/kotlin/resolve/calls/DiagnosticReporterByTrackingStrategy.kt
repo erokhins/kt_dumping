@@ -326,8 +326,8 @@ Inferred types:
 
 'record' @ [116:23] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?), value: (DeclarationDescriptor..DeclarationDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.calls.tower.TrackingBindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [116:45] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -484,8 +484,6 @@ Inferred types:
 
 'context' @ [141:121] ==> val context: BasicCallResolutionContext defined in org.jetbrains.kotlin.resolve.calls.DiagnosticReporterByTrackingStrategy.reportSmartCast[LocalVariableDescriptor]
 
-'SmartCastManager' @ [142:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.SmartCastManager[FakeCallableDescriptorForObject]
-
 'checkAndRecordPossibleCast' @ [142:34] ==> public final fun checkAndRecordPossibleCast(dataFlowValue: DataFlowValue, expectedType: KotlinType, expression: KtExpression?, c: ResolutionContext<*>, call: Call?, recordExpressionType: Boolean): SmartCastResult? defined in org.jetbrains.kotlin.resolve.calls.smartcasts.SmartCastManager.Companion[SimpleFunctionDescriptorImpl]
 
 'dataFlowValue' @ [143:25] ==> val dataFlowValue: DataFlowValue defined in org.jetbrains.kotlin.resolve.calls.DiagnosticReporterByTrackingStrategy.reportSmartCast[LocalVariableDescriptor]
@@ -518,8 +516,6 @@ Inferred types:
 
 'context' @ [149:93] ==> public final val context: BasicCallResolutionContext defined in org.jetbrains.kotlin.resolve.calls.DiagnosticReporterByTrackingStrategy[PropertyDescriptorImpl]
 
-'SmartCastManager' @ [150:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.SmartCastManager[FakeCallableDescriptorForObject]
-
 'checkAndRecordPossibleCast' @ [150:34] ==> public final fun checkAndRecordPossibleCast(dataFlowValue: DataFlowValue, expectedType: KotlinType, expression: KtExpression?, c: ResolutionContext<*>, call: Call?, recordExpressionType: Boolean): SmartCastResult? defined in org.jetbrains.kotlin.resolve.calls.smartcasts.SmartCastManager.Companion[SimpleFunctionDescriptorImpl]
 
 'dataFlowValue' @ [151:25] ==> val dataFlowValue: DataFlowValue defined in org.jetbrains.kotlin.resolve.calls.DiagnosticReporterByTrackingStrategy.reportSmartCast[LocalVariableDescriptor]
@@ -544,7 +540,7 @@ Inferred types:
 
 'psiCall' @ [156:75] ==> public abstract val psiCall: Call defined in org.jetbrains.kotlin.resolve.calls.tower.PSIKotlinCall[PropertyDescriptorImpl]
 
-'getResolvedCall' @ [156:84] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [156:84] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [156:100] ==> private final val trace: TrackingBindingTrace defined in org.jetbrains.kotlin.resolve.calls.DiagnosticReporterByTrackingStrategy[PropertyDescriptorImpl]
 
@@ -558,7 +554,7 @@ Inferred types:
 
 'extensionReceiver' @ [158:30] ==> public final val <D : CallableDescriptor> NewResolvedCallImpl<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : CallableDescriptor> -> CallableDescriptor
+    <D : CallableDescriptor> -> Captured(*)
 
 'expressionArgument' @ [158:51] ==> val expressionArgument: ExpressionKotlinCallArgument defined in org.jetbrains.kotlin.resolve.calls.DiagnosticReporterByTrackingStrategy.reportSmartCast[LocalVariableDescriptor]
 
@@ -578,7 +574,7 @@ Inferred types:
 
 'dispatchReceiver' @ [161:30] ==> public final val <D : CallableDescriptor> NewResolvedCallImpl<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : CallableDescriptor> -> CallableDescriptor
+    <D : CallableDescriptor> -> Captured(*)
 
 'expressionArgument' @ [161:50] ==> val expressionArgument: ExpressionKotlinCallArgument defined in org.jetbrains.kotlin.resolve.calls.DiagnosticReporterByTrackingStrategy.reportSmartCast[LocalVariableDescriptor]
 

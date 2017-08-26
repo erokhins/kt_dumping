@@ -2,11 +2,11 @@
 
 'java' @ [33:43] ==> public val <T> KClass<out BuiltInsLoaderImpl>.java: Class<out BuiltInsLoaderImpl> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> BuiltInsLoaderImpl
+    <T> -> Captured(out BuiltInsLoaderImpl)
 
 'classLoader' @ [33:48] ==> public final val <T : (Any..Any?)> Class<out BuiltInsLoaderImpl>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> BuiltInsLoaderImpl
+    <T : (Any..Any?)> -> Captured(out BuiltInsLoaderImpl)
 
 'createBuiltInPackageFragmentProvider' @ [42:16] ==> public final fun createBuiltInPackageFragmentProvider(storageManager: StorageManager, module: ModuleDescriptor, packageFqNames: Set<FqName>, classDescriptorFactories: Iterable<ClassDescriptorFactory>, platformDependentDeclarationFilter: PlatformDependentDeclarationFilter, additionalClassPartsProvider: AdditionalClassPartsProvider = ..., loadResource: (String) -> InputStream?): PackageFragmentProvider defined in org.jetbrains.kotlin.builtins.BuiltInsLoaderImpl[SimpleFunctionDescriptorImpl]
 

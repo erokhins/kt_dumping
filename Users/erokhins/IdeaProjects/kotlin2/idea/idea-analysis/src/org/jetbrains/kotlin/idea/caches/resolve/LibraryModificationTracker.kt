@@ -8,7 +8,7 @@ Inferred types:
 
 'getService' @ [41:60] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(LibraryModificationTracker..LibraryModificationTracker?)>): (LibraryModificationTracker..LibraryModificationTracker?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LibraryModificationTracker
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker..org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker?)
 
 'project' @ [41:71] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.LibraryModificationTracker.Companion.getInstance[ValueParameterDescriptorImpl]
 
@@ -28,7 +28,7 @@ Inferred types:
 
 'subscribe' @ [46:20] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(BulkFileListener..BulkFileListener?)>, @NotNull p1: BulkFileListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> BulkFileListener
+    <L : (Any..Any?)> -> (com.intellij.openapi.vfs.newvfs.BulkFileListener..com.intellij.openapi.vfs.newvfs.BulkFileListener?)
 
 'VFS_CHANGES' @ [46:49] ==> public final val VFS_CHANGES: (Topic<(BulkFileListener..BulkFileListener?)>..Topic<(BulkFileListener..BulkFileListener?)>?) defined in com.intellij.openapi.vfs.VirtualFileManager[JavaPropertyDescriptor]
 
@@ -39,6 +39,8 @@ Inferred types:
 'filter' @ [48:24] ==> public inline fun <T> Iterable<VFileEvent>.filter(predicate: (VFileEvent) -> Boolean): List<VFileEvent> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> VFileEvent
+
+'isRelevantEvent' @ [48:33] ==> private fun isRelevantEvent(vFileEvent: VFileEvent): Boolean defined in org.jetbrains.kotlin.idea.caches.resolve in file LibraryModificationTracker.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [48:50] ==> @InlineOnly public inline fun <T, R> List<VFileEvent>.let(block: (List<VFileEvent>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -89,7 +91,7 @@ Inferred types:
 
 'subscribe' @ [68:20] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(DumbService.DumbModeListener..DumbService.DumbModeListener?)>, @NotNull p1: DumbService.DumbModeListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> DumbModeListener
+    <L : (Any..Any?)> -> (com.intellij.openapi.project.DumbService.DumbModeListener..com.intellij.openapi.project.DumbService.DumbModeListener?)
 
 'DUMB_MODE' @ [68:42] ==> public final val DUMB_MODE: (Topic<(DumbService.DumbModeListener..DumbService.DumbModeListener?)>..Topic<(DumbService.DumbModeListener..DumbService.DumbModeListener?)>?) defined in com.intellij.openapi.project.DumbService[JavaPropertyDescriptor]
 
@@ -101,7 +103,7 @@ Inferred types:
 
 'subscribe' @ [78:20] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(FileTypeListener..FileTypeListener?)>, @NotNull p1: FileTypeListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> FileTypeListener
+    <L : (Any..Any?)> -> (com.intellij.openapi.fileTypes.FileTypeListener..com.intellij.openapi.fileTypes.FileTypeListener?)
 
 'TOPIC' @ [78:46] ==> @NotNull public final val TOPIC: Topic<(FileTypeListener..FileTypeListener?)> defined in com.intellij.openapi.fileTypes.FileTypeManager[JavaPropertyDescriptor]
 

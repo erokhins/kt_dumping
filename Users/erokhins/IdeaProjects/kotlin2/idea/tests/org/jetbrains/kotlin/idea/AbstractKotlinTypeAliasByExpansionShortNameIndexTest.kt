@@ -80,7 +80,7 @@ Inferred types:
 
 'index' @ [61:22] ==> val index: KotlinTypeAliasByExpansionShortNameIndex defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains[LocalVariableDescriptor]
 
-'get' @ [61:28] ==> public open fun get(key: String, project: Project, scope: GlobalSearchScope): (MutableCollection<KtTypeAlias>..Collection<KtTypeAlias>) defined in org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex[DeserializedSimpleFunctionDescriptor]
+'get' @ [61:28] ==> public open fun get(key: String, project: Project, scope: GlobalSearchScope): (MutableCollection<(KtTypeAlias..KtTypeAlias?)>..Collection<(KtTypeAlias..KtTypeAlias?)>) defined in org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex[DeserializedSimpleFunctionDescriptor]
 
 'key' @ [61:32] ==> val key: String defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains[LocalVariableDescriptor]
 
@@ -90,14 +90,14 @@ Inferred types:
 
 'value' @ [62:13] ==> val value: String defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains[LocalVariableDescriptor]
 
-'result' @ [62:23] ==> val result: (MutableCollection<KtTypeAlias>..Collection<KtTypeAlias>) defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains[LocalVariableDescriptor]
+'result' @ [62:23] ==> val result: (MutableCollection<(KtTypeAlias..KtTypeAlias?)>..Collection<(KtTypeAlias..KtTypeAlias?)>) defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains[LocalVariableDescriptor]
 
-'map' @ [62:30] ==> public inline fun <T, R> Iterable<KtTypeAlias>.map(transform: (KtTypeAlias) -> String?): List<String?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [62:30] ==> public inline fun <T, R> Iterable<(KtTypeAlias..KtTypeAlias?)>.map(transform: ((KtTypeAlias..KtTypeAlias?)) -> String?): List<String?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtTypeAlias
+    <T> -> (org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)
     <R> -> String?
 
-'it' @ [62:36] ==> value-parameter it: KtTypeAlias defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [62:36] ==> value-parameter it: (KtTypeAlias..KtTypeAlias?) defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains.<anonymous>[ValueParameterDescriptorImpl]
 
 'name' @ [62:39] ==> public final val KtTypeAlias.name: String?[MyPropertyDescriptor]
 
@@ -131,7 +131,7 @@ Inferred types:
 
 'index' @ [68:21] ==> val index: KotlinTypeAliasByExpansionShortNameIndex defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains[LocalVariableDescriptor]
 
-'get' @ [68:27] ==> public open fun get(key: String, project: Project, scope: GlobalSearchScope): (MutableCollection<KtTypeAlias>..Collection<KtTypeAlias>) defined in org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex[DeserializedSimpleFunctionDescriptor]
+'get' @ [68:27] ==> public open fun get(key: String, project: Project, scope: GlobalSearchScope): (MutableCollection<(KtTypeAlias..KtTypeAlias?)>..Collection<(KtTypeAlias..KtTypeAlias?)>) defined in org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [68:31] ==> value-parameter it: (String..String?) defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -139,13 +139,13 @@ Inferred types:
 
 'scope' @ [68:44] ==> private final lateinit var scope: GlobalSearchScope defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest[PropertyDescriptorImpl]
 
-'forEach' @ [68:51] ==> @HidesMembers public inline fun <T> Iterable<KtTypeAlias>.forEach(action: (KtTypeAlias) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [68:51] ==> @HidesMembers public inline fun <T> Iterable<(KtTypeAlias..KtTypeAlias?)>.forEach(action: ((KtTypeAlias..KtTypeAlias?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtTypeAlias
+    <T> -> (org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)
 
 'appendln' @ [69:25] ==> @InlineOnly public inline fun StringBuilder /* = StringBuilder */.appendln(value: String?): StringBuilder /* = StringBuilder */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [69:41] ==> value-parameter it: KtTypeAlias defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [69:41] ==> value-parameter it: (KtTypeAlias..KtTypeAlias?) defined in org.jetbrains.kotlin.idea.AbstractKotlinTypeAliasByExpansionShortNameIndexTest.assertIndexContains.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'name' @ [69:44] ==> public final val KtTypeAlias.name: String?[MyPropertyDescriptor]
 

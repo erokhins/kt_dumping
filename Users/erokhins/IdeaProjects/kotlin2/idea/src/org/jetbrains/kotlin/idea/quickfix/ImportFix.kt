@@ -100,7 +100,7 @@ Inferred types:
 
 'modificationCount' @ [130:113] ==> public final val PsiModificationTracker.modificationCount: Long[MyPropertyDescriptor]
 
-'createSingleImportAction' @ [133:16] ==> internal fun createSingleImportAction(project: Project, editor: Editor, element: KtElement, fqNames: Collection<FqName>): KotlinAddImportAction defined in org.jetbrains.kotlin.idea.actions[SimpleFunctionDescriptorImpl]
+'createSingleImportAction' @ [133:16] ==> internal fun createSingleImportAction(project: Project, editor: Editor, element: KtElement, fqNames: Collection<FqName>): KotlinAddImportAction defined in org.jetbrains.kotlin.idea.actions in file KotlinAddImportAction.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [133:41] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.createAction[ValueParameterDescriptorImpl]
 
@@ -140,7 +140,7 @@ Inferred types:
 Inferred types:
     <T> -> FqName
 
-'callTypeAndReceiver' @ [143:13] ==> val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.collectSuggestions[LocalVariableDescriptor]
+'callTypeAndReceiver' @ [143:13] ==> val callTypeAndReceiver: CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.collectSuggestions[LocalVariableDescriptor]
 
 'emptyList' @ [143:72] ==> public fun <T> emptyList(): List<FqName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -165,7 +165,7 @@ Inferred types:
 
 'it' @ [148:54] ==> value-parameter it: Name defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.collectSuggestions.<anonymous>[ValueParameterDescriptorImpl]
 
-'callTypeAndReceiver' @ [148:58] ==> val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.collectSuggestions[LocalVariableDescriptor]
+'callTypeAndReceiver' @ [148:58] ==> val callTypeAndReceiver: CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.collectSuggestions[LocalVariableDescriptor]
 
 'distinct' @ [149:18] ==> public fun <T> Iterable<DeclarationDescriptor>.distinct(): List<DeclarationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -251,6 +251,8 @@ Inferred types:
 'resolutionFacade' @ [176:49] ==> val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.collectSuggestionsForName[LocalVariableDescriptor]
 
 'searchScope' @ [176:67] ==> val searchScope: GlobalSearchScope defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.collectSuggestionsForName[LocalVariableDescriptor]
+
+'isVisible' @ [176:82] ==> local final fun isVisible(descriptor: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.collectSuggestionsForName[SimpleFunctionDescriptorImpl]
 
 'file' @ [176:100] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.collectSuggestionsForName[LocalVariableDescriptor]
 
@@ -366,7 +368,9 @@ Inferred types:
 Inferred types:
     <T> -> DeclarationDescriptor
 
-'DescriptorToSourceUtilsIde' @ [216:30] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
+'?:' @ [216:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiFile?, right: PsiFile): PsiFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiFile
 
 'getAnyDeclaration' @ [216:57] ==> public final fun getAnyDeclaration(project: Project, descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 
@@ -390,9 +394,9 @@ Inferred types:
 
 'KotlinSingleIntentionActionFactory' @ [221:30] ==> public constructor KotlinSingleIntentionActionFactory() defined in org.jetbrains.kotlin.idea.quickfix.KotlinSingleIntentionActionFactory[ClassConstructorDescriptorImpl]
 
-'lazy' @ [222:66] ==> public fun <T> lazy(initializer: () -> Collection<DiagnosticFactory<*>>): Lazy<Collection<DiagnosticFactory<*>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [222:66] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Collection<DiagnosticFactory<*>>
+    <T> -> T
 
 'QuickFixes' @ [222:73] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.QuickFixes[FakeCallableDescriptorForObject]
 
@@ -410,9 +414,9 @@ Inferred types:
 
 'diagnostic' @ [231:39] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase.Factory.createAction[ValueParameterDescriptorImpl]
 
-'apply' @ [231:52] ==> @InlineOnly public inline fun <T> ImportFixBase<out KtExpression>.apply(block: ImportFixBase<out KtExpression>.() -> Unit): ImportFixBase<out KtExpression> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [231:52] ==> @InlineOnly public inline fun <T> ImportFixBase<*>.apply(block: ImportFixBase<*>.() -> Unit): ImportFixBase<*> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ImportFixBase<out KtExpression>
+    <T> -> ImportFixBase<*>
 
 'computeSuggestions' @ [231:60] ==> public final fun computeSuggestions(): Unit defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase[SimpleFunctionDescriptorImpl]
 
@@ -463,11 +467,11 @@ Inferred types:
 
 'callTypeAndReceiver' @ [254:40] ==> value-parameter callTypeAndReceiver: CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.quickfix.OrdinaryImportFixBase.fillCandidates[ValueParameterDescriptorImpl]
 
-'toFilter' @ [254:60] ==> private fun CallTypeAndReceiver<*, *>.toFilter(): (DeclarationDescriptor) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'toFilter' @ [254:60] ==> private fun CallTypeAndReceiver<*, *>.toFilter(): (DeclarationDescriptor) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix in file ImportFix.kt[SimpleFunctionDescriptorImpl]
 
 'indicesHelper' @ [256:17] ==> value-parameter indicesHelper: KotlinIndicesHelper defined in org.jetbrains.kotlin.idea.quickfix.OrdinaryImportFixBase.fillCandidates[ValueParameterDescriptorImpl]
 
-'getClassesByName' @ [256:31] ==> private fun KotlinIndicesHelper.getClassesByName(expressionForPlatform: KtExpression, name: String): Collection<ClassDescriptor> defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'getClassesByName' @ [256:31] ==> private fun KotlinIndicesHelper.getClassesByName(expressionForPlatform: KtExpression, name: String): Collection<ClassDescriptor> defined in org.jetbrains.kotlin.idea.quickfix in file ImportFix.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [256:48] ==> val expression: T defined in org.jetbrains.kotlin.idea.quickfix.OrdinaryImportFixBase.fillCandidates[LocalVariableDescriptor]
 
@@ -544,10 +548,10 @@ Inferred types:
 
 'element' @ [270:45] ==> protected final val element: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.quickfix.ImportFix[PropertyDescriptorImpl]
 
-'let' @ [270:54] ==> @InlineOnly public inline fun <T, R> KtSimpleNameExpression.let(block: (KtSimpleNameExpression) -> CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>>): CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [270:54] ==> @InlineOnly public inline fun <T, R> KtSimpleNameExpression.let(block: (KtSimpleNameExpression) -> CallTypeAndReceiver<*, *>): CallTypeAndReceiver<*, *> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtSimpleNameExpression
-    <R> -> CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>>
+    <R> -> CallTypeAndReceiver<*, *>
 
 'CallTypeAndReceiver' @ [270:60] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
 
@@ -629,7 +633,7 @@ Inferred types:
 
 'callTypeAndReceiver' @ [299:32] ==> value-parameter callTypeAndReceiver: CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.quickfix.ImportFix.collectMemberCandidates[ValueParameterDescriptorImpl]
 
-'toFilter' @ [299:52] ==> private fun CallTypeAndReceiver<*, *>.toFilter(): (DeclarationDescriptor) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'toFilter' @ [299:52] ==> private fun CallTypeAndReceiver<*, *>.toFilter(): (DeclarationDescriptor) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix in file ImportFix.kt[SimpleFunctionDescriptorImpl]
 
 'indicesHelper' @ [301:9] ==> value-parameter indicesHelper: KotlinIndicesHelper defined in org.jetbrains.kotlin.idea.quickfix.ImportFix.collectMemberCandidates[ValueParameterDescriptorImpl]
 
@@ -673,8 +677,6 @@ Inferred types:
 'languageVersionSettings' @ [310:21] ==> public val KtElement.languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[DeserializedPropertyDescriptor]
 
 'supportsFeature' @ [310:45] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [310:61] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'DslMarkersSupport' @ [310:77] ==> enum entry DslMarkersSupport defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -866,6 +868,8 @@ Inferred types:
     <T> -> KtSimpleNameExpression
     <R> -> ImportFix
 
+'ImportFix' @ [368:75] ==> public constructor ImportFix(expression: KtSimpleNameExpression) defined in org.jetbrains.kotlin.idea.quickfix.ImportFix[ClassConstructorDescriptorImpl]
+
 'ImportFixBase<KtSimpleNameExpression>' @ [372:84] ==> protected constructor ImportFixBase<T : KtExpression>(expression: KtSimpleNameExpression, factory: ImportFixBase.Factory) defined in org.jetbrains.kotlin.idea.quickfix.ImportFixBase[ClassConstructorDescriptorImpl]
 Inferred types:
     <T : KtExpression> -> KtSimpleNameExpression
@@ -895,11 +899,11 @@ Inferred types:
 
 'callTypeAndReceiver' @ [380:32] ==> value-parameter callTypeAndReceiver: CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.quickfix.ImportConstructorReferenceFix.fillCandidates[ValueParameterDescriptorImpl]
 
-'toFilter' @ [380:52] ==> private fun CallTypeAndReceiver<*, *>.toFilter(): (DeclarationDescriptor) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'toFilter' @ [380:52] ==> private fun CallTypeAndReceiver<*, *>.toFilter(): (DeclarationDescriptor) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix in file ImportFix.kt[SimpleFunctionDescriptorImpl]
 
 'indicesHelper' @ [382:16] ==> value-parameter indicesHelper: KotlinIndicesHelper defined in org.jetbrains.kotlin.idea.quickfix.ImportConstructorReferenceFix.fillCandidates[ValueParameterDescriptorImpl]
 
-'getClassesByName' @ [382:30] ==> private fun KotlinIndicesHelper.getClassesByName(expressionForPlatform: KtExpression, name: String): Collection<ClassDescriptor> defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'getClassesByName' @ [382:30] ==> private fun KotlinIndicesHelper.getClassesByName(expressionForPlatform: KtExpression, name: String): Collection<ClassDescriptor> defined in org.jetbrains.kotlin.idea.quickfix in file ImportFix.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [382:47] ==> val expression: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.quickfix.ImportConstructorReferenceFix.fillCandidates[LocalVariableDescriptor]
 
@@ -940,7 +944,7 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor..org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor?)
 
-'createSingleImportActionForConstructor' @ [391:16] ==> internal fun createSingleImportActionForConstructor(project: Project, editor: Editor, element: KtElement, fqNames: Collection<FqName>): KotlinAddImportAction defined in org.jetbrains.kotlin.idea.actions[SimpleFunctionDescriptorImpl]
+'createSingleImportActionForConstructor' @ [391:16] ==> internal fun createSingleImportActionForConstructor(project: Project, editor: Editor, element: KtElement, fqNames: Collection<FqName>): KotlinAddImportAction defined in org.jetbrains.kotlin.idea.actions in file KotlinAddImportAction.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [391:55] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.ImportConstructorReferenceFix.createAction[ValueParameterDescriptorImpl]
 
@@ -971,6 +975,8 @@ Inferred types:
     <T> -> KtSimpleNameExpression
     <R> -> ImportConstructorReferenceFix
 
+'ImportConstructorReferenceFix' @ [398:75] ==> public constructor ImportConstructorReferenceFix(expression: KtSimpleNameExpression) defined in org.jetbrains.kotlin.idea.quickfix.ImportConstructorReferenceFix[ClassConstructorDescriptorImpl]
+
 'OrdinaryImportFixBase<KtExpression>' @ [402:60] ==> public constructor OrdinaryImportFixBase<T : KtExpression>(expression: KtExpression, factory: ImportFixBase.Factory) defined in org.jetbrains.kotlin.idea.quickfix.OrdinaryImportFixBase[ClassConstructorDescriptorImpl]
 Inferred types:
     <T : KtExpression> -> KtExpression
@@ -982,8 +988,6 @@ Inferred types:
 'listOf' @ [403:32] ==> public fun <T> listOf(element: Name): List<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Name
-
-'OperatorNameConventions' @ [403:39] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'INVOKE' @ [403:63] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -1010,6 +1014,8 @@ Inferred types:
 Inferred types:
     <T> -> KtExpression
     <R> -> InvokeImportFix
+
+'InvokeImportFix' @ [409:65] ==> public constructor InvokeImportFix(expression: KtExpression) defined in org.jetbrains.kotlin.idea.quickfix.InvokeImportFix[ClassConstructorDescriptorImpl]
 
 'OrdinaryImportFixBase<KtArrayAccessExpression>' @ [417:5] ==> public constructor OrdinaryImportFixBase<T : KtExpression>(expression: KtArrayAccessExpression, factory: ImportFixBase.Factory) defined in org.jetbrains.kotlin.idea.quickfix.OrdinaryImportFixBase[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -1058,13 +1064,9 @@ Inferred types:
 
 'NO_GET_METHOD' @ [426:24] ==> public final val NO_GET_METHOD: (DiagnosticFactory0<(KtArrayAccessExpression..KtArrayAccessExpression?)>..DiagnosticFactory0<(KtArrayAccessExpression..KtArrayAccessExpression?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
-'OperatorNameConventions' @ [426:41] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'GET' @ [426:65] ==> @field:JvmField public final val GET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'NO_SET_METHOD' @ [427:24] ==> public final val NO_SET_METHOD: (DiagnosticFactory0<(KtArrayAccessExpression..KtArrayAccessExpression?)>..DiagnosticFactory0<(KtArrayAccessExpression..KtArrayAccessExpression?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
-
-'OperatorNameConventions' @ [427:41] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'SET' @ [427:65] ==> @field:JvmField public final val SET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -1122,7 +1124,7 @@ Inferred types:
 
 'solveSeveralProblems' @ [455:13] ==> private final val solveSeveralProblems: Boolean defined in org.jetbrains.kotlin.idea.quickfix.DelegateAccessorsImportFix[PropertyDescriptorImpl]
 
-'createGroupedImportsAction' @ [456:20] ==> internal fun createGroupedImportsAction(project: Project, editor: Editor, element: KtElement, autoImportDescription: String, fqNames: Collection<FqName>): KotlinAddImportAction defined in org.jetbrains.kotlin.idea.actions[SimpleFunctionDescriptorImpl]
+'createGroupedImportsAction' @ [456:20] ==> internal fun createGroupedImportsAction(project: Project, editor: Editor, element: KtElement, autoImportDescription: String, fqNames: Collection<FqName>): KotlinAddImportAction defined in org.jetbrains.kotlin.idea.actions in file KotlinAddImportAction.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [456:47] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.DelegateAccessorsImportFix.createAction[ValueParameterDescriptorImpl]
 
@@ -1157,7 +1159,7 @@ Inferred types:
 
 'it' @ [465:92] ==> value-parameter it: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.DelegateAccessorsImportFix.MyFactory.importNames.<anonymous>[ValueParameterDescriptorImpl]
 
-'a' @ [465:96] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (String..String?), (KotlinType..KotlinType?)>.a: (String..String?)[MyPropertyDescriptor]
+'a' @ [465:96] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (String..String?), (KotlinType..KotlinType?)>.a: String[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (kotlin.String..kotlin.String?)
@@ -1170,21 +1172,15 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Name
 
-'missingMethodSignature' @ [466:21] ==> val missingMethodSignature: (String..String?) defined in org.jetbrains.kotlin.idea.quickfix.DelegateAccessorsImportFix.MyFactory.importNames.<anonymous>[LocalVariableDescriptor]
+'missingMethodSignature' @ [466:21] ==> val missingMethodSignature: String defined in org.jetbrains.kotlin.idea.quickfix.DelegateAccessorsImportFix.MyFactory.importNames.<anonymous>[LocalVariableDescriptor]
 
 'startsWith' @ [466:44] ==> public fun String.startsWith(prefix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'OperatorNameConventions' @ [466:55] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'GET_VALUE' @ [466:79] ==> @field:JvmField public final val GET_VALUE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'identifier' @ [466:89] ==> public final val Name.identifier: String[MyPropertyDescriptor]
 
-'OperatorNameConventions' @ [467:21] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'GET_VALUE' @ [467:45] ==> @field:JvmField public final val GET_VALUE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
-
-'OperatorNameConventions' @ [469:21] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'SET_VALUE' @ [469:45] ==> @field:JvmField public final val SET_VALUE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -1265,7 +1261,7 @@ Inferred types:
 
 'solveSeveralProblems' @ [496:13] ==> private final val solveSeveralProblems: Boolean defined in org.jetbrains.kotlin.idea.quickfix.ComponentsImportFix[PropertyDescriptorImpl]
 
-'createGroupedImportsAction' @ [497:20] ==> internal fun createGroupedImportsAction(project: Project, editor: Editor, element: KtElement, autoImportDescription: String, fqNames: Collection<FqName>): KotlinAddImportAction defined in org.jetbrains.kotlin.idea.actions[SimpleFunctionDescriptorImpl]
+'createGroupedImportsAction' @ [497:20] ==> internal fun createGroupedImportsAction(project: Project, editor: Editor, element: KtElement, autoImportDescription: String, fqNames: Collection<FqName>): KotlinAddImportAction defined in org.jetbrains.kotlin.idea.actions in file KotlinAddImportAction.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [497:47] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.ComponentsImportFix.createAction[ValueParameterDescriptorImpl]
 
@@ -1302,7 +1298,7 @@ Inferred types:
 
 'it' @ [505:90] ==> value-parameter it: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ComponentsImportFix.MyFactory.importNames.<anonymous>[ValueParameterDescriptorImpl]
 
-'a' @ [505:94] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)>.a: (Name..Name?)[MyPropertyDescriptor]
+'a' @ [505:94] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)>.a: Name[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
@@ -1376,10 +1372,10 @@ Inferred types:
 
 'element' @ [524:45] ==> protected final val element: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.quickfix.ImportForMismatchingArgumentsFix[PropertyDescriptorImpl]
 
-'let' @ [524:54] ==> @InlineOnly public inline fun <T, R> KtSimpleNameExpression.let(block: (KtSimpleNameExpression) -> CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>>): CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [524:54] ==> @InlineOnly public inline fun <T, R> KtSimpleNameExpression.let(block: (KtSimpleNameExpression) -> CallTypeAndReceiver<*, *>): CallTypeAndReceiver<*, *> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtSimpleNameExpression
-    <R> -> CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>>
+    <R> -> CallTypeAndReceiver<*, *>
 
 'CallTypeAndReceiver' @ [524:60] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
 
@@ -1535,7 +1531,7 @@ Inferred types:
 
 'callTypeAndReceiver' @ [561:18] ==> value-parameter callTypeAndReceiver: CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.quickfix.ImportForMismatchingArgumentsFix.fillCandidates[ValueParameterDescriptorImpl]
 
-'callType' @ [561:38] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [561:38] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'descriptorKindFilter' @ [561:47] ==> public final val descriptorKindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.util.CallType[DeserializedPropertyDescriptor]
 
@@ -1625,6 +1621,8 @@ Inferred types:
 Inferred types:
     <T> -> CallableDescriptor
 
+'processDescriptor' @ [586:28] ==> local final fun processDescriptor(descriptor: CallableDescriptor): Unit defined in org.jetbrains.kotlin.idea.quickfix.ImportForMismatchingArgumentsFix.fillCandidates[SimpleFunctionDescriptorImpl]
+
 '!' @ [588:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
 'isSelectorInQualified' @ [588:14] ==> public open fun isSelectorInQualified(@NotNull p0: KtSimpleNameExpression): Boolean defined in org.jetbrains.kotlin.psi.KtPsiUtil[JavaMethodDescriptor]
@@ -1640,6 +1638,8 @@ Inferred types:
 'forEach' @ [591:22] ==> @HidesMembers public inline fun <T> Iterable<CallableDescriptor>.forEach(action: (CallableDescriptor) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> CallableDescriptor
+
+'processDescriptor' @ [591:32] ==> local final fun processDescriptor(descriptor: CallableDescriptor): Unit defined in org.jetbrains.kotlin.idea.quickfix.ImportForMismatchingArgumentsFix.fillCandidates[SimpleFunctionDescriptorImpl]
 
 'result' @ [594:16] ==> val result: ArrayList<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.quickfix.ImportForMismatchingArgumentsFix.fillCandidates[LocalVariableDescriptor]
 
@@ -1673,13 +1673,13 @@ Inferred types:
 
 'diagnostic' @ [610:73] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ImportForMissingOperatorFactory.createImportAction[ValueParameterDescriptorImpl]
 
-'a' @ [610:85] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(PsiElement..PsiElement?), (FunctionDescriptor..FunctionDescriptor?), (String..String?)>.a: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'a' @ [610:85] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(PsiElement..PsiElement?), (FunctionDescriptor..FunctionDescriptor?), (String..String?)>.a: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
     <B : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'operatorDescriptor' @ [611:20] ==> val operatorDescriptor: (FunctionDescriptor..FunctionDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.ImportForMissingOperatorFactory.createImportAction[LocalVariableDescriptor]
+'operatorDescriptor' @ [611:20] ==> val operatorDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.quickfix.ImportForMissingOperatorFactory.createImportAction[LocalVariableDescriptor]
 
 'name' @ [611:39] ==> public final val FunctionDescriptor.name: Name[MyPropertyDescriptor]
 
@@ -1766,7 +1766,7 @@ Inferred types:
 
 'this' @ [637:91] ==> <this> defined in org.jetbrains.kotlin.idea.quickfix.toFilter[ReceiverParameterDescriptorImpl]
 
-'callType' @ [637:96] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [637:96] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'descriptorKindFilter' @ [637:105] ==> public final val descriptorKindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.util.CallType[DeserializedPropertyDescriptor]
 

@@ -18,17 +18,17 @@
 
 'LinkedHashSet' @ [39:18] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (T..T?)>..Collection<(T..T?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> T
+    <E : (Any..Any?)> -> (T..T?)
 
 'this' @ [39:32] ==> <this> defined in org.jetbrains.kotlin.util.collectionUtils.concat[ReceiverParameterDescriptorImpl]
 
-'result' @ [40:5] ==> val result: LinkedHashSet<T> defined in org.jetbrains.kotlin.util.collectionUtils.concat[LocalVariableDescriptor]
+'result' @ [40:5] ==> val result: LinkedHashSet<(T..T?)> defined in org.jetbrains.kotlin.util.collectionUtils.concat[LocalVariableDescriptor]
 
-'addAll' @ [40:12] ==> public open fun addAll(elements: Collection<T>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
+'addAll' @ [40:12] ==> public open fun addAll(elements: Collection<(T..T?)>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
 'collection' @ [40:19] ==> value-parameter collection: Collection<T> defined in org.jetbrains.kotlin.util.collectionUtils.concat[ValueParameterDescriptorImpl]
 
-'result' @ [41:12] ==> val result: LinkedHashSet<T> defined in org.jetbrains.kotlin.util.collectionUtils.concat[LocalVariableDescriptor]
+'result' @ [41:12] ==> val result: LinkedHashSet<(T..T?)> defined in org.jetbrains.kotlin.util.collectionUtils.concat[LocalVariableDescriptor]
 
 'if (c1 == null || c1.isEmpty())
         c2

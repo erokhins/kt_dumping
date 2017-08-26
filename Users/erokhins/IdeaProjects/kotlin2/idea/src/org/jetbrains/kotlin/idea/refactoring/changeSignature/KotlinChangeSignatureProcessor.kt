@@ -137,8 +137,8 @@ Inferred types:
 
 'putAllValues' @ [75:56] ==> public open fun <Kk : (PsiElement..PsiElement?), Vv : (String..String?)> putAllValues(@NotNull p0: MultiMap<(PsiElement..PsiElement?), (String..String?)>): Unit defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureProcessor.preprocessUsages.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <Kk : (PsiElement..PsiElement?)> -> PsiElement
-    <Vv : (String..String?)> -> String
+    <Kk : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <Vv : (String..String?)> -> (kotlin.String..kotlin.String?)
 
 'it' @ [75:69] ==> value-parameter it: (ChangeSignatureUsageProcessor..ChangeSignatureUsageProcessor?) defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureProcessor.preprocessUsages.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -214,7 +214,7 @@ Inferred types:
 
 'sort' @ [96:16] ==> public final fun <T : (Any..Any?)> sort(p0: (Array<(UsageInfo..UsageInfo?)>..Array<out (UsageInfo..UsageInfo?)>?), p1: (((UsageInfo..UsageInfo?), (UsageInfo..UsageInfo?)) -> Int..(((UsageInfo..UsageInfo?), (UsageInfo..UsageInfo?)) -> Int)?)): Unit defined in java.util.Arrays[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UsageInfo
+    <T : (Any..Any?)> -> (com.intellij.usageView.UsageInfo..com.intellij.usageView.UsageInfo?)
 
 'usageArray' @ [96:21] ==> val usageArray: Array<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureProcessor.preprocessUsages[LocalVariableDescriptor]
 

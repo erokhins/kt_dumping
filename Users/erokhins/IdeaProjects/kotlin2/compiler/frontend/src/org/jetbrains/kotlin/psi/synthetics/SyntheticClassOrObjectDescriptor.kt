@@ -112,15 +112,13 @@ Inferred types:
 
 'modality' @ [90:16] ==> private final val modality: Modality defined in org.jetbrains.kotlin.psi.synthetics.SyntheticClassOrObjectDescriptor[PropertyDescriptorImpl]
 
-'Modality' @ [90:28] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'SEALED' @ [90:37] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'this' @ [90:98] ==> <this> defined in org.jetbrains.kotlin.psi.synthetics.SyntheticClassOrObjectDescriptor[LazyClassReceiverParameterDescriptor]
 
 'java' @ [90:110] ==> public val <T> KClass<out SyntheticClassOrObjectDescriptor>.java: Class<out SyntheticClassOrObjectDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> SyntheticClassOrObjectDescriptor
+    <T> -> Captured(out SyntheticClassOrObjectDescriptor)
 
 'getAllDescriptors' @ [94:25] ==> @NotNull public open fun getAllDescriptors(@NotNull p0: MemberScope): (MutableCollection<(DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>) defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
@@ -276,8 +274,8 @@ Inferred types:
 
 'getNotNull' @ [163:42] ==> @NotNull public open fun <K : (Any..Any?), V : (Any..Any?)> getNotNull(@NotNull bindingContext: BindingContext, @NotNull slice: ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>, @NotNull key: PsiElement): ClassDescriptor defined in org.jetbrains.kotlin.resolve.BindingContextUtils[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'bindingContext' @ [163:53] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.psi.synthetics.findClassDescriptor[ValueParameterDescriptorImpl]
 

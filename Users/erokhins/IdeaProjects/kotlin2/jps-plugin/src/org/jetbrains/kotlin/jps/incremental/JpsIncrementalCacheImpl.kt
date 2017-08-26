@@ -46,7 +46,7 @@ Inferred types:
 
 'getStorage' @ [51:9] ==> @NotNull public open fun <S : (StorageOwner..StorageOwner?)> getStorage(@NotNull p0: BuildTarget<*>, @NotNull p1: StorageProvider<(JpsIncrementalCacheImpl..JpsIncrementalCacheImpl?)>): JpsIncrementalCacheImpl defined in org.jetbrains.jps.incremental.storage.BuildDataManager[JavaMethodDescriptor]
 Inferred types:
-    <S : (StorageOwner..StorageOwner?)> -> JpsIncrementalCacheImpl
+    <S : (StorageOwner..StorageOwner?)> -> (org.jetbrains.kotlin.jps.incremental.JpsIncrementalCacheImpl..org.jetbrains.kotlin.jps.incremental.JpsIncrementalCacheImpl?)
 
 'target' @ [51:20] ==> value-parameter target: ModuleBuildTarget defined in org.jetbrains.kotlin.jps.incremental.getKotlinCache[ValueParameterDescriptorImpl]
 

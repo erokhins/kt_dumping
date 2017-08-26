@@ -232,10 +232,10 @@ Inferred types:
 Inferred types:
     <T> -> Any?
 
-'mapNotNull' @ [87:27] ==> public inline fun <T, R : Any> Iterable<Any?>.mapNotNull(transform: (Any?) -> ConstantValue<Any?>?): List<ConstantValue<Any?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapNotNull' @ [87:27] ==> public inline fun <T, R : Any> Iterable<Any?>.mapNotNull(transform: (Any?) -> ConstantValue<*>?): List<ConstantValue<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Any?
-    <R : Any> -> ConstantValue<Any?>
+    <R : Any> -> ConstantValue<*>
 
 'createConstantValue' @ [87:40] ==> public final fun createConstantValue(value: Any?): ConstantValue<*>? defined in org.jetbrains.kotlin.resolve.constants.ConstantValueFactory[SimpleFunctionDescriptorImpl]
 

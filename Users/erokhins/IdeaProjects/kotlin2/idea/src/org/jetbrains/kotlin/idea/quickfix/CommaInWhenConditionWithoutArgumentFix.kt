@@ -27,6 +27,8 @@ Inferred types:
     <T> -> PsiElement
     <R> -> CommaInWhenConditionWithoutArgumentFix
 
+'CommaInWhenConditionWithoutArgumentFix' @ [41:61] ==> public constructor CommaInWhenConditionWithoutArgumentFix(element: PsiElement) defined in org.jetbrains.kotlin.idea.quickfix.CommaInWhenConditionWithoutArgumentFix[ClassConstructorDescriptorImpl]
+
 'whenExpression' @ [51:31] ==> value-parameter whenExpression: KtWhenExpression defined in org.jetbrains.kotlin.idea.quickfix.CommaInWhenConditionWithoutArgumentFix.Companion.replaceCommasWithOrsInWhenExpression[ValueParameterDescriptorImpl]
 
 'entries' @ [51:46] ==> public final val KtWhenExpression.entries: (MutableList<(KtWhenEntry..KtWhenEntry?)>..List<(KtWhenEntry..KtWhenEntry?)>)[MyPropertyDescriptor]
@@ -45,7 +47,7 @@ Inferred types:
 
 'whenEntry' @ [54:52] ==> val whenEntry: (KtWhenEntry..KtWhenEntry?) defined in org.jetbrains.kotlin.idea.quickfix.CommaInWhenConditionWithoutArgumentFix.Companion.replaceCommasWithOrsInWhenExpression[LocalVariableDescriptor]
 
-'combineWhenConditions' @ [54:63] ==> public fun KtPsiFactory.combineWhenConditions(conditions: Array<KtWhenCondition>, subject: KtExpression?): KtExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations[SimpleFunctionDescriptorImpl]
+'combineWhenConditions' @ [54:63] ==> public fun KtPsiFactory.combineWhenConditions(conditions: Array<KtWhenCondition>, subject: KtExpression?): KtExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file branchedTransformationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'conditionsData' @ [54:85] ==> val conditionsData: CommaInWhenConditionWithoutArgumentFix.Companion.WhenEntryConditionsData defined in org.jetbrains.kotlin.idea.quickfix.CommaInWhenConditionWithoutArgumentFix.Companion.replaceCommasWithOrsInWhenExpression[LocalVariableDescriptor]
 

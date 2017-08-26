@@ -21,7 +21,7 @@ Inferred types:
 
 'this' @ [57:33] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories.KotlinMoveDirectoryWithClassesHelper.getOrCreateMoveContextMap.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'invokeOnceOnCommandFinish' @ [58:13] ==> public fun invokeOnceOnCommandFinish(action: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'invokeOnceOnCommandFinish' @ [58:13] ==> public fun invokeOnceOnCommandFinish(action: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'fileToMoveContext' @ [58:41] ==> private final var fileToMoveContext: MutableMap<PsiFile, KotlinMoveDirectoryWithClassesHelper.MoveContext>? defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories.KotlinMoveDirectoryWithClassesHelper[PropertyDescriptorImpl]
 
@@ -79,7 +79,7 @@ Inferred types:
 
 'usageInfo' @ [84:17] ==> val usageInfo: UsageInfo defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories.KotlinMoveDirectoryWithClassesHelper.preprocessUsages[LocalVariableDescriptor]
 
-'analyzeConflictsInFile' @ [86:13] ==> public fun analyzeConflictsInFile(file: KtFile, usages: Collection<UsageInfo>, moveTarget: KotlinMoveTarget, allElementsToMove: Collection<PsiElement>, conflicts: MultiMap<PsiElement, String>, onUsageUpdate: (List<UsageInfo>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations[SimpleFunctionDescriptorImpl]
+'analyzeConflictsInFile' @ [86:13] ==> public fun analyzeConflictsInFile(file: KtFile, usages: Collection<UsageInfo>, moveTarget: KotlinMoveTarget, allElementsToMove: Collection<PsiElement>, conflicts: MultiMap<PsiElement, String>, onUsageUpdate: (List<UsageInfo>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations in file moveConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'usageInfo' @ [86:36] ==> val usageInfo: UsageInfo defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories.KotlinMoveDirectoryWithClassesHelper.preprocessUsages[LocalVariableDescriptor]
 

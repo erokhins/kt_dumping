@@ -8,15 +8,11 @@ Inferred types:
 
 'renderType' @ [40:46] ==> private final fun KotlinType.renderType(renderer: DescriptorRenderer): String defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix[SimpleFunctionDescriptorImpl]
 
-'IdeDescriptorRenderers' @ [40:57] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE_SHORT_NAMES_IN_TYPES' @ [40:80] ==> @field:JvmField public final val SOURCE_CODE_SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'type' @ [41:40] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix.<init>[ValueParameterDescriptorImpl]
 
 'renderType' @ [41:45] ==> private final fun KotlinType.renderType(renderer: DescriptorRenderer): String defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix[SimpleFunctionDescriptorImpl]
-
-'IdeDescriptorRenderers' @ [41:56] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [41:79] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -93,11 +89,11 @@ Inferred types:
 
 'casted' @ [62:27] ==> val casted: SimpleDiagnostic<(KtTypeReference..KtTypeReference?)> defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix.Factory.doCreateActions[LocalVariableDescriptor]
 
-'psiElement' @ [62:34] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtTypeReference..KtTypeReference?)>.psiElement: (KtTypeReference..KtTypeReference?)[MyPropertyDescriptor]
+'psiElement' @ [62:34] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtTypeReference..KtTypeReference?)>.psiElement: KtTypeReference[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
 
-'element' @ [64:24] ==> val element: (KtTypeReference..KtTypeReference?) defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix.Factory.doCreateActions[LocalVariableDescriptor]
+'element' @ [64:24] ==> val element: KtTypeReference defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix.Factory.doCreateActions[LocalVariableDescriptor]
 
 'analyze' @ [64:32] ==> @JvmOverloads public fun KtElement.analyze(bodyResolveMode: BodyResolveMode = ...): BindingContext defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
@@ -105,12 +101,12 @@ Inferred types:
 
 'get' @ [64:65] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), p1: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [64:84] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
-'element' @ [64:90] ==> val element: (KtTypeReference..KtTypeReference?) defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix.Factory.doCreateActions[LocalVariableDescriptor]
+'element' @ [64:90] ==> val element: KtTypeReference defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix.Factory.doCreateActions[LocalVariableDescriptor]
 
 'emptyList' @ [64:109] ==> public fun <T> emptyList(): List<IntentionAction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -132,7 +128,7 @@ Inferred types:
 
 'ConvertExtensionToFunctionTypeFix' @ [67:27] ==> public constructor ConvertExtensionToFunctionTypeFix(element: KtTypeReference, type: KotlinType) defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix[ClassConstructorDescriptorImpl]
 
-'element' @ [67:61] ==> val element: (KtTypeReference..KtTypeReference?) defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix.Factory.doCreateActions[LocalVariableDescriptor]
+'element' @ [67:61] ==> val element: KtTypeReference defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix.Factory.doCreateActions[LocalVariableDescriptor]
 
 'type' @ [67:70] ==> val type: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.ConvertExtensionToFunctionTypeFix.Factory.doCreateActions[LocalVariableDescriptor]
 

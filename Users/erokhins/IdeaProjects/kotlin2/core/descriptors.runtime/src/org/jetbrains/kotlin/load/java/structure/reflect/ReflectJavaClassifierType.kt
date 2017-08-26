@@ -38,7 +38,7 @@ Inferred types:
 
 'java' @ [35:87] ==> public val <T> KClass<out Type>.java: Class<out Type> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Type
+    <T> -> Captured(out Type)
 
 'type' @ [35:96] ==> val type: Type defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaClassifierType.classifier.<anonymous>[LocalVariableDescriptor]
 
@@ -79,6 +79,8 @@ Inferred types:
 'ReflectJavaType' @ [50:60] ==> public companion object Factory defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType[FakeCallableDescriptorForObject]
 
 'Factory' @ [50:76] ==> public companion object Factory defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType[FakeCallableDescriptorForObject]
+
+'create' @ [50:85] ==> public final fun create(type: Type): ReflectJavaType defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType.Factory[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [54:20] ==> public fun <T> emptyList(): List<JavaAnnotation> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -148,17 +148,17 @@ Inferred types:
 
 'keys' @ [84:9] ==> value-parameter keys: Iterable<T> defined in org.jetbrains.kotlin.cfg.pseudocode.expectedTypeFor[ValueParameterDescriptorImpl]
 
-'fold' @ [84:14] ==> public inline fun <T, R> Iterable<T>.fold(initial: (SmartFMap<T, TypePredicate>..SmartFMap<T, TypePredicate>?), operation: ((SmartFMap<T, TypePredicate>..SmartFMap<T, TypePredicate>?), T) -> (SmartFMap<T, TypePredicate>..SmartFMap<T, TypePredicate>?)): (SmartFMap<T, TypePredicate>..SmartFMap<T, TypePredicate>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [84:14] ==> public inline fun <T, R> Iterable<T>.fold(initial: (SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>..SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>?), operation: (acc: (SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>..SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>?), T) -> (SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>..SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>?)): (SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>..SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> T
-    <R> -> (com.intellij.util.SmartFMap<T, org.jetbrains.kotlin.cfg.pseudocode.TypePredicate>..com.intellij.util.SmartFMap<T, org.jetbrains.kotlin.cfg.pseudocode.TypePredicate>?)
+    <R> -> (com.intellij.util.SmartFMap<(T..T?), (org.jetbrains.kotlin.cfg.pseudocode.TypePredicate..org.jetbrains.kotlin.cfg.pseudocode.TypePredicate?)>..com.intellij.util.SmartFMap<(T..T?), (org.jetbrains.kotlin.cfg.pseudocode.TypePredicate..org.jetbrains.kotlin.cfg.pseudocode.TypePredicate?)>?)
 
 'emptyMap' @ [84:29] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> emptyMap(): (SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>..SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>?) defined in com.intellij.util.SmartFMap[JavaMethodDescriptor]
 Inferred types:
     <K : (Any..Any?)> -> T
     <V : (Any..Any?)> -> TypePredicate
 
-'map' @ [84:73] ==> value-parameter map: (SmartFMap<T, TypePredicate>..SmartFMap<T, TypePredicate>?) defined in org.jetbrains.kotlin.cfg.pseudocode.expectedTypeFor.<anonymous>[ValueParameterDescriptorImpl]
+'map' @ [84:73] ==> value-parameter map: (SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>..SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>?) defined in org.jetbrains.kotlin.cfg.pseudocode.expectedTypeFor.<anonymous>[ValueParameterDescriptorImpl]
 
 'plus' @ [84:77] ==> public open fun plus(@NotNull p0: T, p1: (TypePredicate..TypePredicate?)): (SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>..SmartFMap<(T..T?), (TypePredicate..TypePredicate?)>?) defined in com.intellij.util.SmartFMap[JavaMethodDescriptor]
 

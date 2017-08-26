@@ -14,7 +14,7 @@ Inferred types:
 
 'getStubOrPsiChild' @ [37:44] ==> @Nullable public open fun <Psi : (PsiElement..PsiElement?)> getStubOrPsiChild(@NotNull p0: IStubElementType<out raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?), (KtParameterList..KtParameterList?)>): KtParameterList? defined in org.jetbrains.kotlin.psi.KtConstructor[JavaMethodDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> KtParameterList
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtParameterList..org.jetbrains.kotlin.psi.KtParameterList?)
 
 'VALUE_PARAMETER_LIST' @ [37:81] ==> public final val VALUE_PARAMETER_LIST: (KtPlaceHolderStubElementType<(KtParameterList..KtParameterList?)>..KtPlaceHolderStubElementType<(KtParameterList..KtParameterList?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
@@ -82,7 +82,7 @@ Inferred types:
 
 'findChildByType' @ [83:53] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtConstructor[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'CONSTRUCTOR_KEYWORD' @ [83:78] ==> public final val CONSTRUCTOR_KEYWORD: (KtKeywordToken..KtKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 

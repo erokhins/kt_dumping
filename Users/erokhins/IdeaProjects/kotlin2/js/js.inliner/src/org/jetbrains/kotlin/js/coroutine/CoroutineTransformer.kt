@@ -17,9 +17,9 @@ Inferred types:
 
 'ctx' @ [28:57] ==> value-parameter ctx: JsContext<in JsStatement> defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformer.endVisit[ValueParameterDescriptorImpl]
 
-'addNext' @ [28:61] ==> public open fun <R : (JsNode..JsNode?)> addNext(p0: (JsStatement..JsStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
+'addNext' @ [28:61] ==> public open fun <R : (JsStatement..JsStatement?)> addNext(p0: (JsStatement..JsStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsStatement)..CapturedType(in JsStatement)?)> -> JsStatement
+    <R : (JsStatement..JsStatement?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'it' @ [28:69] ==> value-parameter it: JsStatement defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformer.endVisit.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -47,9 +47,9 @@ Inferred types:
 
 'ctx' @ [34:61] ==> value-parameter ctx: JsContext<in JsStatement> defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformer.endVisit[ValueParameterDescriptorImpl]
 
-'addNext' @ [34:65] ==> public open fun <R : (JsNode..JsNode?)> addNext(p0: (JsStatement..JsStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
+'addNext' @ [34:65] ==> public open fun <R : (JsStatement..JsStatement?)> addNext(p0: (JsStatement..JsStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsStatement)..CapturedType(in JsStatement)?)> -> JsStatement
+    <R : (JsStatement..JsStatement?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'it' @ [34:73] ==> value-parameter it: JsStatement defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformer.endVisit.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -96,8 +96,6 @@ Inferred types:
 'assignment' @ [43:30] ==> val assignment: Pair<(JsExpression..JsExpression?), (JsExpression..JsExpression?)>? defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformer.visit[LocalVariableDescriptor]
 
 'rhs' @ [44:28] ==> val rhs: (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformer.visit[LocalVariableDescriptor]
-
-'InlineMetadata' @ [44:50] ==> public companion object defined in org.jetbrains.kotlin.js.translate.expression.InlineMetadata[FakeCallableDescriptorForObject]
 
 'decompose' @ [44:65] ==> @JvmStatic public final fun decompose(expression: JsExpression?): InlineMetadata? defined in org.jetbrains.kotlin.js.translate.expression.InlineMetadata.Companion[SimpleFunctionDescriptorImpl]
 
@@ -172,8 +170,6 @@ Inferred types:
 'initExpression' @ [62:13] ==> val initExpression: (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformer.visit[LocalVariableDescriptor]
 
 'initExpression' @ [63:28] ==> val initExpression: (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformer.visit[LocalVariableDescriptor]
-
-'InlineMetadata' @ [63:61] ==> public companion object defined in org.jetbrains.kotlin.js.translate.expression.InlineMetadata[FakeCallableDescriptorForObject]
 
 'decompose' @ [63:76] ==> @JvmStatic public final fun decompose(expression: JsExpression?): InlineMetadata? defined in org.jetbrains.kotlin.js.translate.expression.InlineMetadata.Companion[SimpleFunctionDescriptorImpl]
 

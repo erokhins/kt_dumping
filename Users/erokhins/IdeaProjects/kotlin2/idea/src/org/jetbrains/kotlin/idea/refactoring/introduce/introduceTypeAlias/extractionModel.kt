@@ -1,11 +1,8 @@
-'CopyableUserDataProperty' @ [33:66] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<TypeReferenceInfo>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtTypeReference
-    <T : Any> -> TypeReferenceInfo
+'getValue' @ [33:66] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [33:95] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(TypeReferenceInfo..TypeReferenceInfo?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeReferenceInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.TypeReferenceInfo..org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.TypeReferenceInfo?)
 
 'originalTypeElement' @ [40:28] ==> public final val originalTypeElement: KtElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.IntroduceTypeAliasData[PropertyDescriptorImpl]
 

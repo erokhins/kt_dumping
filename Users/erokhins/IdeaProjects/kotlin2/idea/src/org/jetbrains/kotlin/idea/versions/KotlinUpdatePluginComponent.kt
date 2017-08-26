@@ -34,15 +34,11 @@
 
 'requestRebuild' @ [54:28] ==> public open fun requestRebuild(@NotNull p0: ID<*, *>): Unit defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
 
-'KotlinJvmMetadataVersionIndex' @ [54:43] ==> public object KotlinJvmMetadataVersionIndex : KotlinMetadataVersionIndexBase<KotlinJvmMetadataVersionIndex, JvmMetadataVersion> defined in org.jetbrains.kotlin.idea.versions in file KotlinJvmMetadataVersionIndex.kt[FakeCallableDescriptorForObject]
-
 'name' @ [54:73] ==> public final val KotlinJvmMetadataVersionIndex.name: ID<JvmMetadataVersion, Void>[MyPropertyDescriptor]
 
 'fileBasedIndex' @ [55:13] ==> val fileBasedIndex: (FileBasedIndex..FileBasedIndex?) defined in org.jetbrains.kotlin.idea.versions.KotlinUpdatePluginComponent.initComponent[LocalVariableDescriptor]
 
 'requestRebuild' @ [55:28] ==> public open fun requestRebuild(@NotNull p0: ID<*, *>): Unit defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
-
-'KotlinJsMetadataVersionIndex' @ [55:43] ==> public object KotlinJsMetadataVersionIndex : KotlinMetadataVersionIndexBase<KotlinJsMetadataVersionIndex, JsMetadataVersion> defined in org.jetbrains.kotlin.idea.versions in file KotlinJsMetadataVersionIndex.kt[FakeCallableDescriptorForObject]
 
 'name' @ [55:72] ==> public final val KotlinJsMetadataVersionIndex.name: ID<JsMetadataVersion, Void>[MyPropertyDescriptor]
 
@@ -50,15 +46,11 @@
 
 'requestRebuild' @ [56:28] ==> public open fun requestRebuild(@NotNull p0: ID<*, *>): Unit defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
 
-'KotlinClassFileIndex' @ [56:43] ==> public object KotlinClassFileIndex : KotlinFileIndexBase<KotlinClassFileIndex> defined in org.jetbrains.kotlin.idea.vfilefinder[FakeCallableDescriptorForObject]
-
 'KEY' @ [56:64] ==> public final val KEY: ID<FqName, Void> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex[DeserializedPropertyDescriptor]
 
 'fileBasedIndex' @ [57:13] ==> val fileBasedIndex: (FileBasedIndex..FileBasedIndex?) defined in org.jetbrains.kotlin.idea.versions.KotlinUpdatePluginComponent.initComponent[LocalVariableDescriptor]
 
 'requestRebuild' @ [57:28] ==> public open fun requestRebuild(@NotNull p0: ID<*, *>): Unit defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
-
-'KotlinJavaScriptMetaFileIndex' @ [57:43] ==> public object KotlinJavaScriptMetaFileIndex : KotlinFileIndexBase<KotlinJavaScriptMetaFileIndex> defined in org.jetbrains.kotlin.idea.vfilefinder[FakeCallableDescriptorForObject]
 
 'KEY' @ [57:73] ==> public final val KEY: ID<FqName, Void> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinJavaScriptMetaFileIndex[DeserializedPropertyDescriptor]
 
@@ -66,23 +58,17 @@
 
 'requestRebuild' @ [58:28] ==> public open fun requestRebuild(@NotNull p0: ID<*, *>): Unit defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
 
-'KotlinMetadataFileIndex' @ [58:43] ==> public object KotlinMetadataFileIndex : KotlinMetadataFileIndexBase<KotlinMetadataFileIndex> defined in org.jetbrains.kotlin.idea.vfilefinder[FakeCallableDescriptorForObject]
-
 'KEY' @ [58:67] ==> public final val KEY: ID<FqName, Void> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndex[DeserializedPropertyDescriptor]
 
 'fileBasedIndex' @ [59:13] ==> val fileBasedIndex: (FileBasedIndex..FileBasedIndex?) defined in org.jetbrains.kotlin.idea.versions.KotlinUpdatePluginComponent.initComponent[LocalVariableDescriptor]
 
 'requestRebuild' @ [59:28] ==> public open fun requestRebuild(@NotNull p0: ID<*, *>): Unit defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
 
-'KotlinMetadataFilePackageIndex' @ [59:43] ==> public object KotlinMetadataFilePackageIndex : KotlinMetadataFileIndexBase<KotlinMetadataFilePackageIndex> defined in org.jetbrains.kotlin.idea.vfilefinder[FakeCallableDescriptorForObject]
-
 'KEY' @ [59:74] ==> public final val KEY: ID<FqName, Void> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFilePackageIndex[DeserializedPropertyDescriptor]
 
 'fileBasedIndex' @ [60:13] ==> val fileBasedIndex: (FileBasedIndex..FileBasedIndex?) defined in org.jetbrains.kotlin.idea.versions.KotlinUpdatePluginComponent.initComponent[LocalVariableDescriptor]
 
 'requestRebuild' @ [60:28] ==> public open fun requestRebuild(@NotNull p0: ID<*, *>): Unit defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
-
-'KotlinModuleMappingIndex' @ [60:43] ==> public object KotlinModuleMappingIndex : FileBasedIndexExtension<String, PackageParts> defined in org.jetbrains.kotlin.idea.vfilefinder[FakeCallableDescriptorForObject]
 
 'KEY' @ [60:68] ==> public final val KEY: ID<String, PackageParts> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex[DeserializedPropertyDescriptor]
 

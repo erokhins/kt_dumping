@@ -2,7 +2,7 @@
 
 'KtPostfixTemplatePsiInfo' @ [32:9] ==> internal object KtPostfixTemplatePsiInfo : PostfixTemplatePsiInfo defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[FakeCallableDescriptorForObject]
 
-'createExpressionSelector' @ [32:35] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [32:35] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [32:62] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.idea.codeInsight.postfix.KtIfExpressionPostfixTemplate.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -14,7 +14,7 @@
 
 'KtPostfixTemplatePsiInfo' @ [39:9] ==> internal object KtPostfixTemplatePsiInfo : PostfixTemplatePsiInfo defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[FakeCallableDescriptorForObject]
 
-'createExpressionSelector' @ [39:35] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [39:35] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [39:62] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.idea.codeInsight.postfix.KtElseExpressionPostfixTemplate.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -32,9 +32,11 @@
 
 'KtPostfixTemplatePsiInfo' @ [47:9] ==> internal object KtPostfixTemplatePsiInfo : PostfixTemplatePsiInfo defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[FakeCallableDescriptorForObject]
 
-'createExpressionSelector' @ [47:35] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [47:35] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'TypeUtils' @ [47:76] ==> public constructor TypeUtils() defined in org.jetbrains.kotlin.types.TypeUtils[JavaClassConstructorDescriptor]
+
+'isNullableType' @ [47:87] ==> public open fun isNullableType(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.types.TypeUtils[JavaMethodDescriptor]
 
 'KotlinWithIfExpressionSurrounder' @ [49:36] ==> public constructor KotlinWithIfExpressionSurrounder(withElse: Boolean) defined in org.jetbrains.kotlin.idea.codeInsight.surroundWith.expression.KotlinWithIfExpressionSurrounder[ClassConstructorDescriptorImpl]
 
@@ -42,9 +44,11 @@
 
 'KtPostfixTemplatePsiInfo' @ [55:9] ==> internal object KtPostfixTemplatePsiInfo : PostfixTemplatePsiInfo defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[FakeCallableDescriptorForObject]
 
-'createExpressionSelector' @ [55:35] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [55:35] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'TypeUtils' @ [55:76] ==> public constructor TypeUtils() defined in org.jetbrains.kotlin.types.TypeUtils[JavaClassConstructorDescriptor]
+
+'isNullableType' @ [55:87] ==> public open fun isNullableType(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.types.TypeUtils[JavaMethodDescriptor]
 
 'KotlinWithIfExpressionSurrounder' @ [57:36] ==> public constructor KotlinWithIfExpressionSurrounder(withElse: Boolean) defined in org.jetbrains.kotlin.idea.codeInsight.surroundWith.expression.KotlinWithIfExpressionSurrounder[ClassConstructorDescriptorImpl]
 
@@ -52,7 +56,7 @@
 
 'KtPostfixTemplatePsiInfo' @ [63:9] ==> internal object KtPostfixTemplatePsiInfo : PostfixTemplatePsiInfo defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[FakeCallableDescriptorForObject]
 
-'createExpressionSelector' @ [63:35] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [63:35] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinWhenSurrounder' @ [65:36] ==> public constructor KotlinWhenSurrounder() defined in org.jetbrains.kotlin.idea.codeInsight.surroundWith.expression.KotlinWhenSurrounder[JavaClassConstructorDescriptor]
 
@@ -60,7 +64,7 @@
 
 'KtPostfixTemplatePsiInfo' @ [70:9] ==> internal object KtPostfixTemplatePsiInfo : PostfixTemplatePsiInfo defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[FakeCallableDescriptorForObject]
 
-'createExpressionSelector' @ [71:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [71:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinTryCatchSurrounder' @ [77:36] ==> public constructor KotlinTryCatchSurrounder() defined in org.jetbrains.kotlin.idea.codeInsight.surroundWith.statement.KotlinTryCatchSurrounder[JavaClassConstructorDescriptor]
 

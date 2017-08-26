@@ -111,11 +111,11 @@ Inferred types:
 
 'diagnostic' @ [80:65] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.android.quickfix.KotlinAndroidViewConstructorFix.Factory.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [80:77] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtSuperTypeEntry..KtSuperTypeEntry?)>.psiElement: (KtSuperTypeEntry..KtSuperTypeEntry?)[MyPropertyDescriptor]
+'psiElement' @ [80:77] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtSuperTypeEntry..KtSuperTypeEntry?)>.psiElement: KtSuperTypeEntry[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtSuperTypeEntry..org.jetbrains.kotlin.psi.KtSuperTypeEntry?)
 
-'superTypeEntry' @ [82:27] ==> val superTypeEntry: (KtSuperTypeEntry..KtSuperTypeEntry?) defined in org.jetbrains.kotlin.android.quickfix.KotlinAndroidViewConstructorFix.Factory.createAction[LocalVariableDescriptor]
+'superTypeEntry' @ [82:27] ==> val superTypeEntry: KtSuperTypeEntry defined in org.jetbrains.kotlin.android.quickfix.KotlinAndroidViewConstructorFix.Factory.createAction[LocalVariableDescriptor]
 
 'containingClass' @ [82:42] ==> public fun KtElement.containingClass(): KtClass? defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -123,11 +123,11 @@ Inferred types:
 
 'primaryConstructor' @ [83:25] ==> public final val KtClass.primaryConstructor: KtPrimaryConstructor?[MyPropertyDescriptor]
 
-'superTypeEntry' @ [85:27] ==> val superTypeEntry: (KtSuperTypeEntry..KtSuperTypeEntry?) defined in org.jetbrains.kotlin.android.quickfix.KotlinAndroidViewConstructorFix.Factory.createAction[LocalVariableDescriptor]
+'superTypeEntry' @ [85:27] ==> val superTypeEntry: KtSuperTypeEntry defined in org.jetbrains.kotlin.android.quickfix.KotlinAndroidViewConstructorFix.Factory.createAction[LocalVariableDescriptor]
 
 'analyze' @ [85:42] ==> @JvmOverloads public fun KtElement.analyze(bodyResolveMode: BodyResolveMode = ...): BindingContext defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
-'superTypeEntry' @ [86:24] ==> val superTypeEntry: (KtSuperTypeEntry..KtSuperTypeEntry?) defined in org.jetbrains.kotlin.android.quickfix.KotlinAndroidViewConstructorFix.Factory.createAction[LocalVariableDescriptor]
+'superTypeEntry' @ [86:24] ==> val superTypeEntry: KtSuperTypeEntry defined in org.jetbrains.kotlin.android.quickfix.KotlinAndroidViewConstructorFix.Factory.createAction[LocalVariableDescriptor]
 
 'typeReference' @ [86:39] ==> public final val KtSuperTypeEntry.typeReference: KtTypeReference?[MyPropertyDescriptor]
 
@@ -170,7 +170,7 @@ Inferred types:
 
 'KotlinAndroidViewConstructorFix' @ [93:20] ==> public constructor KotlinAndroidViewConstructorFix(element: KtSuperTypeEntry) defined in org.jetbrains.kotlin.android.quickfix.KotlinAndroidViewConstructorFix[ClassConstructorDescriptorImpl]
 
-'superTypeEntry' @ [93:52] ==> val superTypeEntry: (KtSuperTypeEntry..KtSuperTypeEntry?) defined in org.jetbrains.kotlin.android.quickfix.KotlinAndroidViewConstructorFix.Factory.createAction[LocalVariableDescriptor]
+'superTypeEntry' @ [93:52] ==> val superTypeEntry: KtSuperTypeEntry defined in org.jetbrains.kotlin.android.quickfix.KotlinAndroidViewConstructorFix.Factory.createAction[LocalVariableDescriptor]
 
 'constructor' @ [96:54] ==> public abstract val constructor: TypeConstructor defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 

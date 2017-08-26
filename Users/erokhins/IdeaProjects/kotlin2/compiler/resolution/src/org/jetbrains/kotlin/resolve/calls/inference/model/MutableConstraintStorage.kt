@@ -10,9 +10,9 @@ Inferred types:
 
 'simplifiedConstraints' @ [35:16] ==> private final var simplifiedConstraints: List<Constraint>? defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
 
-'ArrayList' @ [37:38] ==> public final fun <E> <init>(p0: (MutableCollection<out (Constraint..Constraint?)>..Collection<(Constraint..Constraint?)>?)): ArrayList<Constraint> /* = ArrayList<Constraint> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
+'ArrayList' @ [37:38] ==> public final fun <E> <init>(p0: (MutableCollection<out (Constraint..Constraint?)>..Collection<(Constraint..Constraint?)>?)): ArrayList<(Constraint..Constraint?)> /* = ArrayList<(Constraint..Constraint?)> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> Constraint
+    <E> -> (org.jetbrains.kotlin.resolve.calls.inference.model.Constraint..org.jetbrains.kotlin.resolve.calls.inference.model.Constraint?)
 
 'constraints' @ [37:48] ==> value-parameter constraints: Collection<Constraint> = ... defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.<init>[ValueParameterDescriptorImpl]
 
@@ -88,9 +88,9 @@ Inferred types:
 
 'constraint' @ [54:13] ==> value-parameter constraint: Constraint defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.addConstraint[ValueParameterDescriptorImpl]
 
-'mutableConstraints' @ [56:9] ==> private final val mutableConstraints: ArrayList<Constraint> /* = ArrayList<Constraint> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
+'mutableConstraints' @ [56:9] ==> private final val mutableConstraints: ArrayList<(Constraint..Constraint?)> /* = ArrayList<(Constraint..Constraint?)> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
 
-'add' @ [56:28] ==> public open fun add(element: Constraint): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
+'add' @ [56:28] ==> public open fun add(element: (Constraint..Constraint?)): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
 'actualConstraint' @ [56:32] ==> val actualConstraint: Constraint defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.addConstraint[LocalVariableDescriptor]
 
@@ -98,31 +98,31 @@ Inferred types:
 
 'actualConstraint' @ [58:16] ==> val actualConstraint: Constraint defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.addConstraint[LocalVariableDescriptor]
 
-'mutableConstraints' @ [64:9] ==> private final val mutableConstraints: ArrayList<Constraint> /* = ArrayList<Constraint> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
+'mutableConstraints' @ [64:9] ==> private final val mutableConstraints: ArrayList<(Constraint..Constraint?)> /* = ArrayList<(Constraint..Constraint?)> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
 
-'trimToSize' @ [64:28] ==> internal fun <E> MutableList<Constraint>.trimToSize(newSize: Int): Unit defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'trimToSize' @ [64:28] ==> internal fun <E> MutableList<(Constraint..Constraint?)>.trimToSize(newSize: Int): Unit defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <E> -> Constraint
+    <E> -> (org.jetbrains.kotlin.resolve.calls.inference.model.Constraint..org.jetbrains.kotlin.resolve.calls.inference.model.Constraint?)
 
-'mutableConstraints' @ [64:39] ==> private final val mutableConstraints: ArrayList<Constraint> /* = ArrayList<Constraint> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
+'mutableConstraints' @ [64:39] ==> private final val mutableConstraints: ArrayList<(Constraint..Constraint?)> /* = ArrayList<(Constraint..Constraint?)> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
 
-'indexOfLast' @ [64:58] ==> public inline fun <T> List<Constraint>.indexOfLast(predicate: (Constraint) -> Boolean): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'indexOfLast' @ [64:58] ==> public inline fun <T> List<(Constraint..Constraint?)>.indexOfLast(predicate: ((Constraint..Constraint?)) -> Boolean): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Constraint
+    <T> -> (org.jetbrains.kotlin.resolve.calls.inference.model.Constraint..org.jetbrains.kotlin.resolve.calls.inference.model.Constraint?)
 
 '!' @ [64:72] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
 'invoke' @ [64:73] ==> public abstract operator fun invoke(p1: Constraint): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'it' @ [64:86] ==> value-parameter it: Constraint defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.removeLastConstraints.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [64:86] ==> value-parameter it: (Constraint..Constraint?) defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.removeLastConstraints.<anonymous>[ValueParameterDescriptorImpl]
 
 'simplifiedConstraints' @ [65:9] ==> private final var simplifiedConstraints: List<Constraint>? defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
 
-'mutableConstraints' @ [70:9] ==> private final val mutableConstraints: ArrayList<Constraint> /* = ArrayList<Constraint> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
+'mutableConstraints' @ [70:9] ==> private final val mutableConstraints: ArrayList<(Constraint..Constraint?)> /* = ArrayList<(Constraint..Constraint?)> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
 
-'removeAll' @ [70:28] ==> public fun <T> MutableList<Constraint>.removeAll(predicate: (Constraint) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'removeAll' @ [70:28] ==> public fun <T> MutableList<(Constraint..Constraint?)>.removeAll(predicate: ((Constraint..Constraint?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Constraint
+    <T> -> (org.jetbrains.kotlin.resolve.calls.inference.model.Constraint..org.jetbrains.kotlin.resolve.calls.inference.model.Constraint?)
 
 'shouldRemove' @ [70:38] ==> value-parameter shouldRemove: (Constraint) -> Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.removeConstrains[ValueParameterDescriptorImpl]
 
@@ -152,38 +152,38 @@ Inferred types:
 
 'UPPER' @ [78:67] ==> enum entry UPPER defined in org.jetbrains.kotlin.resolve.calls.inference.model.ConstraintKind[FakeCallableDescriptorForObject]
 
-'mutableConstraints' @ [82:35] ==> private final val mutableConstraints: ArrayList<Constraint> /* = ArrayList<Constraint> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
+'mutableConstraints' @ [82:35] ==> private final val mutableConstraints: ArrayList<(Constraint..Constraint?)> /* = ArrayList<(Constraint..Constraint?)> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
 
-'filter' @ [83:18] ==> public inline fun <T> Iterable<Constraint>.filter(predicate: (Constraint) -> Boolean): List<Constraint> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'filter' @ [83:18] ==> public inline fun <T> Iterable<(Constraint..Constraint?)>.filter(predicate: ((Constraint..Constraint?)) -> Boolean): List<(Constraint..Constraint?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Constraint
+    <T> -> (org.jetbrains.kotlin.resolve.calls.inference.model.Constraint..org.jetbrains.kotlin.resolve.calls.inference.model.Constraint?)
 
-'it' @ [83:27] ==> value-parameter it: Constraint defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.simplifyConstraints.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [83:27] ==> value-parameter it: (Constraint..Constraint?) defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.simplifyConstraints.<anonymous>[ValueParameterDescriptorImpl]
 
 'kind' @ [83:30] ==> public final val kind: ConstraintKind defined in org.jetbrains.kotlin.resolve.calls.inference.model.Constraint[PropertyDescriptorImpl]
 
 'EQUALITY' @ [83:53] ==> enum entry EQUALITY defined in org.jetbrains.kotlin.resolve.calls.inference.model.ConstraintKind[FakeCallableDescriptorForObject]
 
-'groupBy' @ [84:18] ==> public inline fun <T, K> Iterable<Constraint>.groupBy(keySelector: (Constraint) -> Int): Map<Int, List<Constraint>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'groupBy' @ [84:18] ==> public inline fun <T, K> Iterable<(Constraint..Constraint?)>.groupBy(keySelector: ((Constraint..Constraint?)) -> Int): Map<Int, List<(Constraint..Constraint?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Constraint
+    <T> -> (org.jetbrains.kotlin.resolve.calls.inference.model.Constraint..org.jetbrains.kotlin.resolve.calls.inference.model.Constraint?)
     <K> -> Int
 
-'it' @ [84:28] ==> value-parameter it: Constraint defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.simplifyConstraints.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [84:28] ==> value-parameter it: (Constraint..Constraint?) defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.simplifyConstraints.<anonymous>[ValueParameterDescriptorImpl]
 
 'typeHashCode' @ [84:31] ==> public final val typeHashCode: Int defined in org.jetbrains.kotlin.resolve.calls.inference.model.Constraint[PropertyDescriptorImpl]
 
-'mutableConstraints' @ [85:16] ==> private final val mutableConstraints: ArrayList<Constraint> /* = ArrayList<Constraint> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
+'mutableConstraints' @ [85:16] ==> private final val mutableConstraints: ArrayList<(Constraint..Constraint?)> /* = ArrayList<(Constraint..Constraint?)> */ defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[PropertyDescriptorImpl]
 
-'filter' @ [85:35] ==> public inline fun <T> Iterable<Constraint>.filter(predicate: (Constraint) -> Boolean): List<Constraint> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'filter' @ [85:35] ==> public inline fun <T> Iterable<(Constraint..Constraint?)>.filter(predicate: ((Constraint..Constraint?)) -> Boolean): List<(Constraint..Constraint?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Constraint
+    <T> -> (org.jetbrains.kotlin.resolve.calls.inference.model.Constraint..org.jetbrains.kotlin.resolve.calls.inference.model.Constraint?)
 
 'isUsefulConstraint' @ [85:44] ==> private final fun isUsefulConstraint(constraint: Constraint, equalityConstraints: Map<Int, List<Constraint>>): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints[SimpleFunctionDescriptorImpl]
 
-'it' @ [85:63] ==> value-parameter it: Constraint defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.simplifyConstraints.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [85:63] ==> value-parameter it: (Constraint..Constraint?) defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.simplifyConstraints.<anonymous>[ValueParameterDescriptorImpl]
 
-'equalityConstraints' @ [85:67] ==> val equalityConstraints: Map<Int, List<Constraint>> defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.simplifyConstraints[LocalVariableDescriptor]
+'equalityConstraints' @ [85:67] ==> val equalityConstraints: Map<Int, List<(Constraint..Constraint?)>> defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.simplifyConstraints[LocalVariableDescriptor]
 
 'constraint' @ [89:13] ==> value-parameter constraint: Constraint defined in org.jetbrains.kotlin.resolve.calls.inference.model.MutableVariableWithConstraints.isUsefulConstraint[ValueParameterDescriptorImpl]
 

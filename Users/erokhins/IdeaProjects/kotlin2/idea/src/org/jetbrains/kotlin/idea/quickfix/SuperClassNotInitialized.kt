@@ -266,6 +266,8 @@ Inferred types:
 Inferred types:
     <T> -> Int
 
+'canRenderOnlyFirstParameters' @ [92:73] ==> local final fun canRenderOnlyFirstParameters(n: Int): Boolean defined in org.jetbrains.kotlin.idea.quickfix.SuperClassNotInitialized.doCreateActions[SimpleFunctionDescriptorImpl]
+
 'maxParams' @ [92:106] ==> val maxParams: Int defined in org.jetbrains.kotlin.idea.quickfix.SuperClassNotInitialized.doCreateActions[LocalVariableDescriptor]
 
 'component1' @ [95:27] ==> public final operator fun component1(): ClassConstructorDescriptor defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
@@ -333,8 +335,6 @@ Inferred types:
 'addIfNotNull' @ [99:31] ==> public fun <T : Any> MutableCollection<IntentionAction>.addIfNotNull(t: IntentionAction?): Unit defined in org.jetbrains.kotlin.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> IntentionAction
-
-'AddParametersFix' @ [99:44] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.SuperClassNotInitialized.AddParametersFix[FakeCallableDescriptorForObject]
 
 'create' @ [99:61] ==> public final fun create(element: KtSuperTypeEntry, classDeclaration: KtClass, superConstructor: ConstructorDescriptor, text: String): SuperClassNotInitialized.AddParametersFix? defined in org.jetbrains.kotlin.idea.quickfix.SuperClassNotInitialized.AddParametersFix.Companion[SimpleFunctionDescriptorImpl]
 
@@ -552,8 +552,6 @@ Inferred types:
 
 'nameRendered' @ [176:37] ==> val nameRendered: String defined in org.jetbrains.kotlin.idea.quickfix.SuperClassNotInitialized.AddParametersFix.Companion.create[LocalVariableDescriptor]
 
-'IdeDescriptorRenderers' @ [176:58] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE' @ [176:81] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderType' @ [176:93] ==> public abstract fun renderType(type: KotlinType): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -561,8 +559,6 @@ Inferred types:
 'varargElementType' @ [176:104] ==> val varargElementType: KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.SuperClassNotInitialized.AddParametersFix.Companion.create[LocalVariableDescriptor]
 
 'nameRendered' @ [178:25] ==> val nameRendered: String defined in org.jetbrains.kotlin.idea.quickfix.SuperClassNotInitialized.AddParametersFix.Companion.create[LocalVariableDescriptor]
-
-'IdeDescriptorRenderers' @ [178:46] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [178:69] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 

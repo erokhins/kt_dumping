@@ -8,7 +8,7 @@
 
 'builder' @ [29:9] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.ArgumentList.generateCode[ValueParameterDescriptorImpl]
 
-'append' @ [29:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [29:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'expressions' @ [29:24] ==> public final val expressions: List<Expression> defined in org.jetbrains.kotlin.j2k.ast.ArgumentList[PropertyDescriptorImpl]
 
@@ -22,11 +22,7 @@
 
 'arguments' @ [35:33] ==> value-parameter arguments: List<Expression> defined in org.jetbrains.kotlin.j2k.ast.ArgumentList.Companion.withNoPrototype[ValueParameterDescriptorImpl]
 
-'LPar' @ [35:44] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.LPar[FakeCallableDescriptorForObject]
-
 'withPrototype' @ [35:49] ==> public final fun withPrototype(element: PsiElement?): LPar defined in org.jetbrains.kotlin.j2k.ast.LPar.Companion[SimpleFunctionDescriptorImpl]
-
-'RPar' @ [35:70] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.RPar[FakeCallableDescriptorForObject]
 
 'withPrototype' @ [35:75] ==> public final fun withPrototype(element: PsiElement?): RPar defined in org.jetbrains.kotlin.j2k.ast.RPar.Companion[SimpleFunctionDescriptorImpl]
 

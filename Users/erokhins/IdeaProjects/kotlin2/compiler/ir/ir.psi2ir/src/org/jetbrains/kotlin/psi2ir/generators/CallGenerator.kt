@@ -188,7 +188,7 @@ Inferred types:
 
 'descriptor' @ [79:65] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.generateValueReference[ValueParameterDescriptorImpl]
 
-'getTypeArguments' @ [79:77] ==> public fun getTypeArguments(resolvedCall: ResolvedCall<*>?): Map<TypeParameterDescriptor, KotlinType>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getTypeArguments' @ [79:77] ==> public fun getTypeArguments(resolvedCall: ResolvedCall<*>?): Map<TypeParameterDescriptor, KotlinType>? defined in org.jetbrains.kotlin.psi2ir.generators in file ArgumentsGenerationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [79:94] ==> value-parameter resolvedCall: ResolvedCall<*>? defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.generateValueReference[ValueParameterDescriptorImpl]
 
@@ -202,11 +202,11 @@ Inferred types:
 
 'java' @ [81:91] ==> public val <T> KClass<out DeclarationDescriptor>.java: Class<out DeclarationDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DeclarationDescriptor
+    <T> -> Captured(out DeclarationDescriptor)
 
 'simpleName' @ [81:96] ==> public final val <T : (Any..Any?)> Class<out DeclarationDescriptor>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DeclarationDescriptor
+    <T : (Any..Any?)> -> Captured(out DeclarationDescriptor)
 
 'Suppress' @ [91:13] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
@@ -217,9 +217,9 @@ Inferred types:
                            typeArguments, origin ?: IrStatementOrigin.GET_LOCAL_PROPERTY)
             }
             else
-                IrGetValueImpl(startOffset, endOffset, context.symbolTable.referenceValue(descriptor), origin)' @ [92:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {IrDeclarationReference & IrExpressionBase}, elseBranch: {IrDeclarationReference & IrExpressionBase}): {IrDeclarationReference & IrExpressionBase}[SimpleFunctionDescriptorImpl]
+                IrGetValueImpl(startOffset, endOffset, context.symbolTable.referenceValue(descriptor), origin)' @ [92:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: IrExpression, elseBranch: IrExpression): IrExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {IrDeclarationReference & IrExpressionBase}
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> IrExpression
 
 'descriptor' @ [92:17] ==> value-parameter descriptor: VariableDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.generateGetVariable[ValueParameterDescriptorImpl]
 
@@ -313,7 +313,7 @@ Inferred types:
 
 'descriptor' @ [106:105] ==> val descriptor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.generateDelegatingConstructorCall.<anonymous>[LocalVariableDescriptor]
 
-'getTypeArguments' @ [106:117] ==> public fun getTypeArguments(resolvedCall: ResolvedCall<*>?): Map<TypeParameterDescriptor, KotlinType>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getTypeArguments' @ [106:117] ==> public fun getTypeArguments(resolvedCall: ResolvedCall<*>?): Map<TypeParameterDescriptor, KotlinType>? defined in org.jetbrains.kotlin.psi2ir.generators in file ArgumentsGenerationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [106:134] ==> value-parameter call: CallBuilder defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.generateDelegatingConstructorCall[ValueParameterDescriptorImpl]
 
@@ -500,7 +500,7 @@ Inferred types:
 
 'getterDescriptor' @ [142:25] ==> val getterDescriptor: PropertyGetterDescriptor? defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.generatePropertyGetterCall.<anonymous>[LocalVariableDescriptor]
 
-'getTypeArguments' @ [143:25] ==> public fun getTypeArguments(resolvedCall: ResolvedCall<*>?): Map<TypeParameterDescriptor, KotlinType>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getTypeArguments' @ [143:25] ==> public fun getTypeArguments(resolvedCall: ResolvedCall<*>?): Map<TypeParameterDescriptor, KotlinType>? defined in org.jetbrains.kotlin.psi2ir.generators in file ArgumentsGenerationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [143:42] ==> value-parameter call: CallBuilder defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.generatePropertyGetterCall[ValueParameterDescriptorImpl]
 
@@ -591,7 +591,7 @@ Inferred types:
 
 'functionDescriptor' @ [178:25] ==> value-parameter functionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.generateFunctionCall[ValueParameterDescriptorImpl]
 
-'getTypeArguments' @ [179:25] ==> public fun getTypeArguments(resolvedCall: ResolvedCall<*>?): Map<TypeParameterDescriptor, KotlinType>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getTypeArguments' @ [179:25] ==> public fun getTypeArguments(resolvedCall: ResolvedCall<*>?): Map<TypeParameterDescriptor, KotlinType>? defined in org.jetbrains.kotlin.psi2ir.generators in file ArgumentsGenerationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [179:42] ==> value-parameter call: CallBuilder defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.generateFunctionCall[ValueParameterDescriptorImpl]
 
@@ -644,7 +644,7 @@ Inferred types:
 
 'call' @ [190:17] ==> value-parameter call: CallBuilder defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.addParametersToCall[ValueParameterDescriptorImpl]
 
-'isValueArgumentReorderingRequired' @ [190:22] ==> public fun CallBuilder.isValueArgumentReorderingRequired(): Boolean defined in org.jetbrains.kotlin.psi2ir.intermediate[SimpleFunctionDescriptorImpl]
+'isValueArgumentReorderingRequired' @ [190:22] ==> public fun CallBuilder.isValueArgumentReorderingRequired(): Boolean defined in org.jetbrains.kotlin.psi2ir.intermediate in file CallBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'generateCallWithArgumentReordering' @ [191:17] ==> private final fun generateCallWithArgumentReordering(irCall: IrFunctionAccessExpression, startOffset: Int, endOffset: Int, call: CallBuilder, resultType: KotlinType): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator[SimpleFunctionDescriptorImpl]
 
@@ -660,7 +660,7 @@ Inferred types:
 
 'call' @ [194:38] ==> value-parameter call: CallBuilder defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator.addParametersToCall[ValueParameterDescriptorImpl]
 
-'getValueArgumentsInParameterOrder' @ [194:43] ==> public fun CallBuilder.getValueArgumentsInParameterOrder(): List<IrExpression?> defined in org.jetbrains.kotlin.psi2ir.intermediate[SimpleFunctionDescriptorImpl]
+'getValueArgumentsInParameterOrder' @ [194:43] ==> public fun CallBuilder.getValueArgumentsInParameterOrder(): List<IrExpression?> defined in org.jetbrains.kotlin.psi2ir.intermediate in file CallBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'component1' @ [195:23] ==> public final operator fun component1(): Int defined in kotlin.collections.IndexedValue[DeserializedSimpleFunctionDescriptor]
 
@@ -690,7 +690,7 @@ Inferred types:
 
 'valueArguments' @ [210:60] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'values' @ [210:75] ==> public abstract val values: MutableCollection<(ResolvedValueArgument..ResolvedValueArgument?)> defined in kotlin.collections.MutableMap[DeserializedPropertyDescriptor]
 
@@ -698,7 +698,7 @@ Inferred types:
 
 'resultingDescriptor' @ [211:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueParameters' @ [211:64] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -725,7 +725,7 @@ Inferred types:
 
 'valueArgumentsByIndex' @ [216:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArgumentsByIndex: (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>?..List<(ResolvedValueArgument..ResolvedValueArgument?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'withIndex' @ [216:77] ==> public fun <T> Iterable<(ResolvedValueArgument..ResolvedValueArgument?)>.withIndex(): Iterable<IndexedValue<(ResolvedValueArgument..ResolvedValueArgument?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -782,7 +782,7 @@ Inferred types:
 
 'valueArgumentsByIndex' @ [230:22] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArgumentsByIndex: (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>?..List<(ResolvedValueArgument..ResolvedValueArgument?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'forEachIndexed' @ [230:46] ==> public inline fun <T> Iterable<(ResolvedValueArgument..ResolvedValueArgument?)>.forEachIndexed(action: (index: Int, (ResolvedValueArgument..ResolvedValueArgument?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

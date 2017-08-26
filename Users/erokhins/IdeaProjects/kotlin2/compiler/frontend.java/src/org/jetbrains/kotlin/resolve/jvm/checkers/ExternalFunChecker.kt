@@ -66,8 +66,6 @@ Inferred types:
 
 'modality' @ [54:29] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [54:41] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [54:50] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'if (declaration is KtPropertyAccessor) {

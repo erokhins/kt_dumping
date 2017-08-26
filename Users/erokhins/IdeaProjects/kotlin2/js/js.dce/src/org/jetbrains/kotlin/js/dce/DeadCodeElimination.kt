@@ -83,7 +83,7 @@ Inferred types:
 
 'path' @ [57:24] ==> val path: List<String> defined in org.jetbrains.kotlin.js.dce.DeadCodeElimination.apply[LocalVariableDescriptor]
 
-'fold' @ [57:29] ==> public inline fun <T, R> Iterable<String>.fold(initial: Context.Node, operation: (Context.Node, String) -> Context.Node): Context.Node defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [57:29] ==> public inline fun <T, R> Iterable<String>.fold(initial: Context.Node, operation: (acc: Context.Node, String) -> Context.Node): Context.Node defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> Node
@@ -118,7 +118,7 @@ Inferred types:
 
 'accept' @ [62:45] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsNode..JsNode?)): (JsNode..JsNode?) defined in org.jetbrains.kotlin.js.dce.Eliminator[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsNode
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'root' @ [62:52] ==> value-parameter root: JsNode defined in org.jetbrains.kotlin.js.dce.DeadCodeElimination.apply[ValueParameterDescriptorImpl]
 

@@ -40,13 +40,13 @@ Inferred types:
 
 'locals' @ [84:34] ==> public final val <V : (Value..Value?)> Frame<out V>.locals: Int[MyPropertyDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> V
+    <V : (Value..Value?)> -> Captured(out V)
 
 'src' @ [84:42] ==> value-parameter src: Frame<out V> defined in org.jetbrains.kotlin.codegen.optimization.common.MethodAnalyzer.newFrame[ValueParameterDescriptorImpl]
 
 'maxStackSize' @ [84:46] ==> public final val <V : (Value..Value?)> Frame<out V>.maxStackSize: Int[MyPropertyDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> V
+    <V : (Value..Value?)> -> Captured(out V)
 
 'frame' @ [85:9] ==> val frame: Frame<V> defined in org.jetbrains.kotlin.codegen.optimization.common.MethodAnalyzer.newFrame[LocalVariableDescriptor]
 

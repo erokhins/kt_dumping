@@ -22,7 +22,7 @@
 
 'java' @ [33:105] ==> public val <T> KClass<out PsiFile>.java: Class<out PsiFile> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiFile
+    <T> -> Captured(out PsiFile)
 
 'AbstractDecompiledTextTest' @ [36:51] ==> public constructor AbstractDecompiledTextTest(baseDirectory: String, allowKotlinPackage: Boolean) defined in org.jetbrains.kotlin.idea.decompiler.textBuilder.AbstractDecompiledTextTest[ClassConstructorDescriptorImpl]
 

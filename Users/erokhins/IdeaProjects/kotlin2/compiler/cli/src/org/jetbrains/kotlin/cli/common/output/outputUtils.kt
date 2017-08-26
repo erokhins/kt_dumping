@@ -30,7 +30,7 @@
 
 'asByteArray' @ [32:43] ==> public abstract fun asByteArray(): ByteArray defined in org.jetbrains.kotlin.backend.common.output.OutputFile[DeserializedSimpleFunctionDescriptor]
 
-'writeAll' @ [37:5] ==> public fun OutputFileCollection.writeAll(outputDir: File, report: ((file: OutputFile, sources: List<File>, output: File) -> Unit)?): Unit defined in org.jetbrains.kotlin.cli.common.output.outputUtils[SimpleFunctionDescriptorImpl]
+'writeAll' @ [37:5] ==> public fun OutputFileCollection.writeAll(outputDir: File, report: ((file: OutputFile, sources: List<File>, output: File) -> Unit)?): Unit defined in org.jetbrains.kotlin.cli.common.output.outputUtils in file outputUtils.kt[SimpleFunctionDescriptorImpl]
 
 'outputDir' @ [37:14] ==> value-parameter outputDir: File defined in org.jetbrains.kotlin.cli.common.output.outputUtils.writeAllTo[ValueParameterDescriptorImpl]
 
@@ -49,7 +49,7 @@ Inferred types:
 
 'outputDir' @ [41:40] ==> value-parameter outputDir: File defined in org.jetbrains.kotlin.cli.common.output.outputUtils.writeAll[ValueParameterDescriptorImpl]
 
-'writeAll' @ [42:10] ==> public fun OutputFileCollection.writeAll(outputDir: File, report: ((file: OutputFile, sources: List<File>, output: File) -> Unit)?): Unit defined in org.jetbrains.kotlin.cli.common.output.outputUtils[SimpleFunctionDescriptorImpl]
+'writeAll' @ [42:10] ==> public fun OutputFileCollection.writeAll(outputDir: File, report: ((file: OutputFile, sources: List<File>, output: File) -> Unit)?): Unit defined in org.jetbrains.kotlin.cli.common.output.outputUtils in file outputUtils.kt[SimpleFunctionDescriptorImpl]
 
 'outputDir' @ [42:19] ==> value-parameter outputDir: File defined in org.jetbrains.kotlin.cli.common.output.outputUtils.writeAll[ValueParameterDescriptorImpl]
 

@@ -4,7 +4,7 @@ Inferred types:
 
 'getParentElementOfType' @ [33:29] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtForExpression..KtForExpression?)>..Class<(KtForExpression..KtForExpression?)>?)): KtForExpression? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtForExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtForExpression..org.jetbrains.kotlin.psi.KtForExpression?)
 
 'diagnostic' @ [33:52] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateNextFunctionActionFactory.getElementOfInterest[ValueParameterDescriptorImpl]
 
@@ -16,7 +16,7 @@ Inferred types:
 
 'cast' @ [37:58] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull vararg p1: (DiagnosticFactory<out (DiagnosticWithParameters1<(KtExpression..KtExpression?), (KotlinType..KotlinType?)>..DiagnosticWithParameters1<(KtExpression..KtExpression?), (KotlinType..KotlinType?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters1<(KtExpression..KtExpression?), (KotlinType..KotlinType?)>..DiagnosticWithParameters1<(KtExpression..KtExpression?), (KotlinType..KotlinType?)>?)>?)): DiagnosticWithParameters1<(KtExpression..KtExpression?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> DiagnosticWithParameters1<(org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?), (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)>
+    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters1<(org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?), (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)>..org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters1<(org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?), (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)>?)
 
 'diagnostic' @ [37:63] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateNextFunctionActionFactory.createCallableInfo[ValueParameterDescriptorImpl]
 
@@ -28,7 +28,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [38:34] ==> val diagnosticWithParameters: DiagnosticWithParameters1<(KtExpression..KtExpression?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateNextFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
-'a' @ [38:59] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtExpression..KtExpression?), (KotlinType..KotlinType?)>.a: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'a' @ [38:59] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtExpression..KtExpression?), (KotlinType..KotlinType?)>.a: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -45,13 +45,11 @@ Inferred types:
 
 'TypeInfo' @ [41:26] ==> public fun TypeInfo(expressionOfType: KtExpression, variance: Variance): TypeInfo defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableInfo.kt[SimpleFunctionDescriptorImpl]
 
-'variableExpr' @ [41:35] ==> val variableExpr: {ASTDelegatePsiElement & KtDeclaration & KtValVarKeywordOwner} defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateNextFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
+'variableExpr' @ [41:35] ==> val variableExpr: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateNextFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
 'OUT_VARIANCE' @ [41:74] ==> enum entry OUT_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
 'FunctionInfo' @ [42:16] ==> public constructor FunctionInfo(name: String, receiverTypeInfo: TypeInfo, returnTypeInfo: TypeInfo, possibleContainers: List<KtElement> = ..., parameterInfos: List<ParameterInfo> = ..., typeParameterInfos: List<TypeInfo> = ..., isOperator: Boolean = ..., isInfix: Boolean = ..., isAbstract: Boolean = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.FunctionInfo[ClassConstructorDescriptorImpl]
-
-'OperatorNameConventions' @ [42:29] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'NEXT' @ [42:53] ==> @field:JvmField public final val NEXT: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 

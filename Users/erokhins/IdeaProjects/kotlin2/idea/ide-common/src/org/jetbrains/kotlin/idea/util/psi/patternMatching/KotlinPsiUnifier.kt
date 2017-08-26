@@ -12,7 +12,7 @@
 
 'emptySet' @ [99:64] ==> public final fun <T : (Any..Any?)> emptySet(): (MutableSet<(UnifierParameter..UnifierParameter?)>..Set<(UnifierParameter..UnifierParameter?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UnifierParameter
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.util.psi.patternMatching.UnifierParameter..org.jetbrains.kotlin.idea.util.psi.patternMatching.UnifierParameter?)
 
 'KotlinPsiUnifier' @ [103:23] ==> public constructor KotlinPsiUnifier(parameters: Collection<UnifierParameter> = ..., allowWeakMatches: Boolean = ...) defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier[ClassConstructorDescriptorImpl]
 
@@ -243,7 +243,7 @@ Inferred types:
 
 'call' @ [173:32] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'calleeExpression' @ [173:37] ==> public final val Call.calleeExpression: KtExpression?[MyPropertyDescriptor]
 
@@ -253,7 +253,7 @@ Inferred types:
 
 'call' @ [174:32] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'calleeExpression' @ [174:37] ==> public final val Call.calleeExpression: KtExpression?[MyPropertyDescriptor]
 
@@ -306,7 +306,7 @@ Inferred types:
 
 'resultingDescriptor' @ [191:33] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueParameters' @ [191:54] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -319,19 +319,19 @@ Inferred types:
 
 'valueArguments' @ [191:81] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'it' @ [191:96] ==> value-parameter it: (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments.<anonymous>[ValueParameterDescriptorImpl]
 
-'emptyList' @ [191:117] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>..List<(ResolvedValueArgument..ResolvedValueArgument?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'emptyList' @ [191:117] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<ResolvedValueArgument?>..List<ResolvedValueArgument?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedValueArgument..org.jetbrains.kotlin.resolve.calls.model.ResolvedValueArgument?)
+    <T : (Any..Any?)> -> ResolvedValueArgument?
 
 'rc2' @ [192:29] ==> value-parameter rc2: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls[ValueParameterDescriptorImpl]
 
 'resultingDescriptor' @ [192:33] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueParameters' @ [192:54] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -344,19 +344,19 @@ Inferred types:
 
 'valueArguments' @ [192:81] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'it' @ [192:96] ==> value-parameter it: (ValueParameterDescriptor..ValueParameterDescriptor?) defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments.<anonymous>[ValueParameterDescriptorImpl]
 
-'emptyList' @ [192:117] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>..List<(ResolvedValueArgument..ResolvedValueArgument?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'emptyList' @ [192:117] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<ResolvedValueArgument?>..List<ResolvedValueArgument?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedValueArgument..org.jetbrains.kotlin.resolve.calls.model.ResolvedValueArgument?)
+    <T : (Any..Any?)> -> ResolvedValueArgument?
 
-'args1' @ [193:21] ==> val args1: (List<ResolvedValueArgument?>..List<ResolvedValueArgument?>?) defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
+'args1' @ [193:21] ==> val args1: List<ResolvedValueArgument?> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
 
 'size' @ [193:27] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'args2' @ [193:35] ==> val args2: (List<ResolvedValueArgument?>..List<ResolvedValueArgument?>?) defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
+'args2' @ [193:35] ==> val args2: List<ResolvedValueArgument?> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
 
 'size' @ [193:41] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
@@ -366,13 +366,13 @@ Inferred types:
 
 'call' @ [194:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueArguments' @ [194:30] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
 'size' @ [194:45] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'args1' @ [194:53] ==> val args1: (List<ResolvedValueArgument?>..List<ResolvedValueArgument?>?) defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
+'args1' @ [194:53] ==> val args1: List<ResolvedValueArgument?> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
 
 'size' @ [194:59] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
@@ -380,17 +380,17 @@ Inferred types:
 
 'call' @ [194:71] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueArguments' @ [194:76] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
 'size' @ [194:91] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'args2' @ [194:99] ==> val args2: (List<ResolvedValueArgument?>..List<ResolvedValueArgument?>?) defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
+'args2' @ [194:99] ==> val args2: List<ResolvedValueArgument?> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
 
 'size' @ [194:105] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'args1' @ [196:25] ==> val args1: (List<ResolvedValueArgument?>..List<ResolvedValueArgument?>?) defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
+'args1' @ [196:25] ==> val args1: List<ResolvedValueArgument?> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
 
 'asSequence' @ [196:31] ==> public fun <T> Iterable<ResolvedValueArgument?>.asSequence(): Sequence<ResolvedValueArgument?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -401,13 +401,13 @@ Inferred types:
     <T> -> ResolvedValueArgument?
     <R> -> ResolvedValueArgument?
 
-'args2' @ [196:48] ==> val args2: (List<ResolvedValueArgument?>..List<ResolvedValueArgument?>?) defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
+'args2' @ [196:48] ==> val args2: List<ResolvedValueArgument?> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkArguments[LocalVariableDescriptor]
 
 'asSequence' @ [196:54] ==> public fun <T> Iterable<ResolvedValueArgument?>.asSequence(): Sequence<ResolvedValueArgument?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ResolvedValueArgument?
 
-'fold' @ [196:69] ==> public inline fun <T, R> Sequence<Pair<ResolvedValueArgument?, ResolvedValueArgument?>>.fold(initial: UnificationResult.Status, operation: (UnificationResult.Status, Pair<ResolvedValueArgument?, ResolvedValueArgument?>) -> UnificationResult.Status): UnificationResult.Status defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'fold' @ [196:69] ==> public inline fun <T, R> Sequence<Pair<ResolvedValueArgument?, ResolvedValueArgument?>>.fold(initial: UnificationResult.Status, operation: (acc: UnificationResult.Status, Pair<ResolvedValueArgument?, ResolvedValueArgument?>) -> UnificationResult.Status): UnificationResult.Status defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<ResolvedValueArgument?, ResolvedValueArgument?>
     <R> -> Status
@@ -465,7 +465,7 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.ValueArgument..org.jetbrains.kotlin.psi.ValueArgument?)
 
-'fold' @ [201:96] ==> public inline fun <T, R> Sequence<Pair<(ValueArgument..ValueArgument?), (ValueArgument..ValueArgument?)>>.fold(initial: UnificationResult.Status, operation: (UnificationResult.Status, Pair<(ValueArgument..ValueArgument?), (ValueArgument..ValueArgument?)>) -> UnificationResult.Status): UnificationResult.Status defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'fold' @ [201:96] ==> public inline fun <T, R> Sequence<Pair<(ValueArgument..ValueArgument?), (ValueArgument..ValueArgument?)>>.fold(initial: UnificationResult.Status, operation: (acc: UnificationResult.Status, Pair<(ValueArgument..ValueArgument?), (ValueArgument..ValueArgument?)>) -> UnificationResult.Status): UnificationResult.Status defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<(org.jetbrains.kotlin.psi.ValueArgument..org.jetbrains.kotlin.psi.ValueArgument?), (org.jetbrains.kotlin.psi.ValueArgument..org.jetbrains.kotlin.psi.ValueArgument?)>
     <R> -> Status
@@ -507,7 +507,7 @@ Inferred types:
 
 'explicitReceiverKind' @ [210:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'EXTENSION_RECEIVER' @ [211:50] ==> enum entry EXTENSION_RECEIVER defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 
@@ -520,13 +520,13 @@ Inferred types:
 
 'extensionReceiver' @ [212:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'explicitCall' @ [213:42] ==> value-parameter explicitCall: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkImplicitReceiver[ValueParameterDescriptorImpl]
 
 'extensionReceiver' @ [213:55] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'DISPATCH_RECEIVER' @ [215:50] ==> enum entry DISPATCH_RECEIVER defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 
@@ -539,13 +539,13 @@ Inferred types:
 
 'dispatchReceiver' @ [216:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'explicitCall' @ [217:42] ==> value-parameter explicitCall: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls.checkImplicitReceiver[ValueParameterDescriptorImpl]
 
 'dispatchReceiver' @ [217:55] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'to' @ [220:33] ==> public infix fun <A, B> Nothing?.to(that: Nothing?): Pair<Nothing?, Nothing?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -572,7 +572,7 @@ Inferred types:
 
 'candidateDescriptor' @ [228:67] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'containingDeclaration' @ [228:88] ==> public final val CallableDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
@@ -595,13 +595,13 @@ Inferred types:
 
 'explicitReceiverKind' @ [234:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'rc2' @ [234:49] ==> value-parameter rc2: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls[ValueParameterDescriptorImpl]
 
 'explicitReceiverKind' @ [234:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'matchReceivers' @ [235:25] ==> private final fun matchReceivers(rv1: Receiver?, rv2: Receiver?): Boolean defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context[SimpleFunctionDescriptorImpl]
 
@@ -609,19 +609,19 @@ Inferred types:
 
 'extensionReceiver' @ [235:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'rc2' @ [235:63] ==> value-parameter rc2: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls[ValueParameterDescriptorImpl]
 
 'extensionReceiver' @ [235:67] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'rc1' @ [236:26] ==> value-parameter rc1: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls[ValueParameterDescriptorImpl]
 
 'explicitReceiverKind' @ [236:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'BOTH_RECEIVERS' @ [236:75] ==> enum entry BOTH_RECEIVERS defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 
@@ -631,19 +631,19 @@ Inferred types:
 
 'dispatchReceiver' @ [236:112] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'rc2' @ [236:130] ==> value-parameter rc2: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls[ValueParameterDescriptorImpl]
 
 'dispatchReceiver' @ [236:134] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'rc1' @ [239:21] ==> value-parameter rc1: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls[ValueParameterDescriptorImpl]
 
 'explicitReceiverKind' @ [239:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'NO_EXPLICIT_RECEIVER' @ [239:70] ==> enum entry NO_EXPLICIT_RECEIVER defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 
@@ -657,7 +657,7 @@ Inferred types:
 
 'explicitReceiverKind' @ [241:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'NO_EXPLICIT_RECEIVER' @ [241:70] ==> enum entry NO_EXPLICIT_RECEIVER defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 
@@ -671,7 +671,7 @@ Inferred types:
 
 'typeArguments' @ [248:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'toList' @ [248:51] ==> public fun <K, V> Map<out (TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>.toList(): List<Pair<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -682,7 +682,7 @@ Inferred types:
 
 'typeArguments' @ [249:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'toList' @ [249:51] ==> public fun <K, V> Map<out (TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>.toList(): List<Pair<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -773,13 +773,13 @@ Inferred types:
 
 'candidateDescriptor' @ [264:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'rc2' @ [264:60] ==> value-parameter rc2: ResolvedCall<*> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchResolvedCalls[ValueParameterDescriptorImpl]
 
 'candidateDescriptor' @ [264:64] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'UNMATCHED' @ [264:88] ==> enum entry UNMATCHED defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.UnificationResult.Status[FakeCallableDescriptorForObject]
 
@@ -793,7 +793,7 @@ Inferred types:
 
 'call' @ [266:21] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'isSafeCall' @ [266:26] ==> public fun Call.isSafeCall(): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -801,7 +801,7 @@ Inferred types:
 
 'call' @ [266:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'isSafeCall' @ [266:51] ==> public fun Call.isSafeCall(): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -902,7 +902,7 @@ Inferred types:
 
 'candidateDescriptor' @ [291:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'rc' @ [292:25] ==> val rc: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>? defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.getAdjustedResolvedCall[LocalVariableDescriptor]
 
@@ -1545,7 +1545,7 @@ Inferred types:
 
 'resultingDescriptor' @ [442:36] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'name' @ [442:57] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 
@@ -1974,7 +1974,7 @@ Inferred types:
 
 'typeParameters' @ [542:59] ==> public final val KtTypeParameterListOwner.typeParameters: (MutableList<(KtTypeParameter..KtTypeParameter?)>..List<(KtTypeParameter..KtTypeParameter?)>)[MyPropertyDescriptor]
 
-'toRange' @ [542:75] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching[SimpleFunctionDescriptorImpl]
+'toRange' @ [542:75] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching in file KotlinPsiRange.kt[SimpleFunctionDescriptorImpl]
 
 'Empty' @ [542:88] ==> public object Empty : KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange[FakeCallableDescriptorForObject]
 
@@ -1986,7 +1986,7 @@ Inferred types:
 
 'typeParameters' @ [543:59] ==> public final val KtTypeParameterListOwner.typeParameters: (MutableList<(KtTypeParameter..KtTypeParameter?)>..List<(KtTypeParameter..KtTypeParameter?)>)[MyPropertyDescriptor]
 
-'toRange' @ [543:75] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching[SimpleFunctionDescriptorImpl]
+'toRange' @ [543:75] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching in file KotlinPsiRange.kt[SimpleFunctionDescriptorImpl]
 
 'Empty' @ [543:88] ==> public object Empty : KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange[FakeCallableDescriptorForObject]
 
@@ -2347,13 +2347,13 @@ Inferred types:
 
 'orderSensitive' @ [640:45] ==> public final val orderSensitive: List<KtSuperTypeListEntry> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchClasses.OrderInfo[PropertyDescriptorImpl]
 
-'toRange' @ [640:60] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching[SimpleFunctionDescriptorImpl]
+'toRange' @ [640:60] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching in file KotlinPsiRange.kt[SimpleFunctionDescriptorImpl]
 
 'delegationInfo2' @ [640:71] ==> val delegationInfo2: OrderInfo<KtSuperTypeListEntry> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchClasses[LocalVariableDescriptor]
 
 'orderSensitive' @ [640:87] ==> public final val orderSensitive: List<KtSuperTypeListEntry> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchClasses.OrderInfo[PropertyDescriptorImpl]
 
-'toRange' @ [640:102] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching[SimpleFunctionDescriptorImpl]
+'toRange' @ [640:102] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching in file KotlinPsiRange.kt[SimpleFunctionDescriptorImpl]
 
 'status' @ [641:17] ==> val status: UnificationResult.Status defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchClasses[LocalVariableDescriptor]
 
@@ -2452,7 +2452,7 @@ Inferred types:
 
 'orderSensitive' @ [655:64] ==> public final val orderSensitive: List<KtDeclaration> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchClasses.OrderInfo[PropertyDescriptorImpl]
 
-'toRange' @ [655:80] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching[SimpleFunctionDescriptorImpl]
+'toRange' @ [655:80] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching in file KotlinPsiRange.kt[SimpleFunctionDescriptorImpl]
 
 'sortDeclarationsByElementType' @ [656:21] ==> local final fun sortDeclarationsByElementType(declarations: List<KtDeclaration>): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchClasses[SimpleFunctionDescriptorImpl]
 
@@ -2460,7 +2460,7 @@ Inferred types:
 
 'orderSensitive' @ [656:64] ==> public final val orderSensitive: List<KtDeclaration> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchClasses.OrderInfo[PropertyDescriptorImpl]
 
-'toRange' @ [656:80] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching[SimpleFunctionDescriptorImpl]
+'toRange' @ [656:80] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching in file KotlinPsiRange.kt[SimpleFunctionDescriptorImpl]
 
 'desc1' @ [664:17] ==> value-parameter desc1: TypeParameterDescriptor defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchTypeParameters[ValueParameterDescriptorImpl]
 
@@ -2520,13 +2520,13 @@ Inferred types:
 
 'java' @ [682:30] ==> public val <T> KClass<out KtDeclaration>.java: Class<out KtDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtDeclaration
+    <T> -> Captured(out KtDeclaration)
 
 'decl2' @ [682:38] ==> value-parameter decl2: KtDeclaration defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchDeclarations[ValueParameterDescriptorImpl]
 
 'java' @ [682:51] ==> public val <T> KClass<out KtDeclaration>.java: Class<out KtDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtDeclaration
+    <T> -> Captured(out KtDeclaration)
 
 'UNMATCHED' @ [682:64] ==> enum entry UNMATCHED defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.UnificationResult.Status[FakeCallableDescriptorForObject]
 
@@ -2566,13 +2566,13 @@ Inferred types:
 
 'java' @ [692:30] ==> public val <T> KClass<out DeclarationDescriptor>.java: Class<out DeclarationDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DeclarationDescriptor
+    <T> -> Captured(out DeclarationDescriptor)
 
 'desc2' @ [692:38] ==> value-parameter desc2: DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.matchDeclarations[ValueParameterDescriptorImpl]
 
 'java' @ [692:51] ==> public val <T> KClass<out DeclarationDescriptor>.java: Class<out DeclarationDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DeclarationDescriptor
+    <T> -> Captured(out DeclarationDescriptor)
 
 'UNMATCHED' @ [692:64] ==> enum entry UNMATCHED defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.UnificationResult.Status[FakeCallableDescriptorForObject]
 
@@ -3147,7 +3147,7 @@ Inferred types:
 
 'toIndex' @ [814:42] ==> val toIndex: Int defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Context.doUnifyStringTemplateFragments[LocalVariableDescriptor]
 
-'fold' @ [814:51] ==> public inline fun <T, R> Iterable<Int>.fold(initial: UnificationResult.Status, operation: (UnificationResult.Status, Int) -> UnificationResult.Status): UnificationResult.Status defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [814:51] ==> public inline fun <T, R> Iterable<Int>.fold(initial: UnificationResult.Status, operation: (acc: UnificationResult.Status, Int) -> UnificationResult.Status): UnificationResult.Status defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Int
     <R> -> Status
@@ -3272,7 +3272,7 @@ Inferred types:
 Inferred types:
     <T> -> PsiElement
 
-'fold' @ [837:84] ==> public inline fun <T, R> Sequence<Pair<PsiElement, PsiElement>>.fold(initial: UnificationResult.Status, operation: (UnificationResult.Status, Pair<PsiElement, PsiElement>) -> UnificationResult.Status): UnificationResult.Status defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'fold' @ [837:84] ==> public inline fun <T, R> Sequence<Pair<PsiElement, PsiElement>>.fold(initial: UnificationResult.Status, operation: (acc: UnificationResult.Status, Pair<PsiElement, PsiElement>) -> UnificationResult.Status): UnificationResult.Status defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<PsiElement, PsiElement>
     <R> -> Status
@@ -3312,7 +3312,7 @@ Inferred types:
 
 'psi' @ [843:51] ==> public final val ASTNode.psi: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'toRange' @ [843:57] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching[SimpleFunctionDescriptorImpl]
+'toRange' @ [843:57] ==> public fun List<PsiElement>.toRange(significantOnly: Boolean = ...): KotlinPsiRange defined in org.jetbrains.kotlin.idea.util.psi.patternMatching in file KotlinPsiRange.kt[SimpleFunctionDescriptorImpl]
 
 'when {
                 this is KtReturnExpression -> returnedExpression

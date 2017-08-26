@@ -66,8 +66,6 @@ Inferred types:
 
 'file' @ [82:22] ==> value-parameter file: VirtualFile defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesUpdater.getCurrentDependencies[ValueParameterDescriptorImpl]
 
-'ScriptDependencies' @ [82:31] ==> public companion object defined in kotlin.script.experimental.dependencies.ScriptDependencies[FakeCallableDescriptorForObject]
-
 'Empty' @ [82:50] ==> public final val Empty: ScriptDependencies defined in kotlin.script.experimental.dependencies.ScriptDependencies.Companion[DeserializedPropertyDescriptor]
 
 'ScriptDependenciesFileAttribute' @ [86:9] ==> public object ScriptDependenciesFileAttribute defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesFileAttribute.kt[FakeCallableDescriptorForObject]
@@ -355,7 +353,7 @@ Inferred types:
 
 'getService' @ [194:28] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(ScriptReportSink..ScriptReportSink?)>): (ScriptReportSink..ScriptReportSink?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScriptReportSink
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.ScriptReportSink..org.jetbrains.kotlin.script.ScriptReportSink?)
 
 'project' @ [194:39] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesUpdater[PropertyDescriptorImpl]
 
@@ -374,8 +372,6 @@ Inferred types:
 'result' @ [195:42] ==> value-parameter result: DependenciesResolver.ResolveResult defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesUpdater.processResult[ValueParameterDescriptorImpl]
 
 'dependencies' @ [195:49] ==> public abstract val dependencies: ScriptDependencies? defined in kotlin.script.experimental.dependencies.DependenciesResolver.ResolveResult[DeserializedPropertyDescriptor]
-
-'ScriptDependencies' @ [195:65] ==> public companion object defined in kotlin.script.experimental.dependencies.ScriptDependencies[FakeCallableDescriptorForObject]
 
 'Empty' @ [195:84] ==> public final val Empty: ScriptDependencies defined in kotlin.script.experimental.dependencies.ScriptDependencies.Companion[DeserializedPropertyDescriptor]
 
@@ -398,8 +394,6 @@ Inferred types:
 'scriptDef' @ [204:72] ==> value-parameter scriptDef: KotlinScriptDefinition defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesUpdater.updateSync[ValueParameterDescriptorImpl]
 
 'file' @ [204:83] ==> value-parameter file: VirtualFile defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesUpdater.updateSync[ValueParameterDescriptorImpl]
-
-'ScriptDependencies' @ [204:92] ==> public companion object defined in kotlin.script.experimental.dependencies.ScriptDependencies[FakeCallableDescriptorForObject]
 
 'Empty' @ [204:111] ==> public final val Empty: ScriptDependencies defined in kotlin.script.experimental.dependencies.ScriptDependencies.Companion[DeserializedPropertyDescriptor]
 
@@ -492,7 +486,7 @@ Inferred types:
 
 'subscribe' @ [239:38] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(BulkFileListener..BulkFileListener?)>, @NotNull p1: BulkFileListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> BulkFileListener
+    <L : (Any..Any?)> -> (com.intellij.openapi.vfs.newvfs.BulkFileListener..com.intellij.openapi.vfs.newvfs.BulkFileListener?)
 
 'VFS_CHANGES' @ [239:67] ==> public final val VFS_CHANGES: (Topic<(BulkFileListener..BulkFileListener?)>..Topic<(BulkFileListener..BulkFileListener?)>?) defined in com.intellij.openapi.vfs.VirtualFileManager[JavaPropertyDescriptor]
 
@@ -512,7 +506,7 @@ Inferred types:
 
 'application' @ [244:51] ==> public final val application: (Application..Application?) defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesUpdater.listenToVfsChanges.<no name provided>[PropertyDescriptorImpl]
 
-'isScriptDependenciesUpdaterDisabled' @ [244:63] ==> public var Application.isScriptDependenciesUpdaterDisabled: Boolean defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesUpdater.kt[PropertyDescriptorImpl]
+'isScriptDependenciesUpdaterDisabled' @ [244:63] ==> public var Application.isScriptDependenciesUpdaterDisabled: (Boolean..Boolean?) defined in org.jetbrains.kotlin.idea.core.script in file ScriptDependenciesUpdater.kt[PropertyDescriptorImpl]
 
 'updateCache' @ [248:21] ==> private final fun updateCache(files: Iterable<VirtualFile>): Boolean defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesUpdater[SimpleFunctionDescriptorImpl]
 
@@ -571,12 +565,9 @@ Inferred types:
 
 'current' @ [275:28] ==> private final var current: Long defined in org.jetbrains.kotlin.idea.core.script.TimeStamps[PropertyDescriptorImpl]
 
-'NotNullableUserDataProperty' @ [279:56] ==> public constructor NotNullableUserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> Application
-    <T : Any> -> Boolean
+'getValue' @ [279:56] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [279:88] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 

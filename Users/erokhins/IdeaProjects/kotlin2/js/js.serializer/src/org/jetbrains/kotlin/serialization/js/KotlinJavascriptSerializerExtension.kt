@@ -12,8 +12,6 @@
 
 'getStringIndex' @ [37:61] ==> public open fun getStringIndex(string: String): Int defined in org.jetbrains.kotlin.serialization.js.JavaScriptStringTable[DeserializedSimpleFunctionDescriptor]
 
-'DynamicTypeDeserializer' @ [37:76] ==> public object DynamicTypeDeserializer : FlexibleTypeDeserializer defined in org.jetbrains.kotlin.serialization.js in file DynamicTypeDeserializer.kt[FakeCallableDescriptorForObject]
-
 'id' @ [37:100] ==> public final val id: String defined in org.jetbrains.kotlin.serialization.js.DynamicTypeDeserializer[PropertyDescriptorImpl]
 
 'getFileId' @ [41:18] ==> private final fun getFileId(descriptor: DeclarationDescriptor): Int? defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializerExtension[SimpleFunctionDescriptorImpl]
@@ -26,7 +24,7 @@
 
 'setExtension' @ [43:19] ==> public final fun <Type : (Any..Any?)> setExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?), p1: (Int..Int?)): (ProtoBuf.Class.Builder..ProtoBuf.Class.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [43:43] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -50,7 +48,7 @@ Inferred types:
 
 'setExtension' @ [51:19] ==> public final fun <Type : (Any..Any?)> setExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?), p1: (Int..Int?)): (ProtoBuf.Property.Builder..ProtoBuf.Property.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'propertyContainingFileId' @ [51:43] ==> public final val propertyContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -74,7 +72,7 @@ Inferred types:
 
 'setExtension' @ [59:19] ==> public final fun <Type : (Any..Any?)> setExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?), p1: (Int..Int?)): (ProtoBuf.Function.Builder..ProtoBuf.Function.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'functionContainingFileId' @ [59:43] ==> public final val functionContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -176,8 +174,6 @@ Inferred types:
 'asString' @ [85:47] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.FqName[JavaMethodDescriptor]
 
 'replace' @ [85:58] ==> public fun String.replace(oldChar: Char, newChar: Char, ignoreCase: Boolean = ...): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'KotlinJavascriptSerializationUtil' @ [87:16] ==> public object KotlinJavascriptSerializationUtil defined in org.jetbrains.kotlin.serialization.js in file KotlinJavascriptSerializationUtil.kt[FakeCallableDescriptorForObject]
 
 'CLASS_METADATA_FILE_EXTENSION' @ [87:50] ==> public final val CLASS_METADATA_FILE_EXTENSION: String defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil[PropertyDescriptorImpl]
 

@@ -9,8 +9,8 @@ Inferred types:
 
 'get' @ [41:36] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?), p1: (KtAnnotationEntry..KtAnnotationEntry?)): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtAnnotationEntry
-    <V : (Any..Any?)> -> AnnotationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor..org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor?)
 
 'ANNOTATION' @ [41:55] ==> public final val ANNOTATION: (WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -91,11 +91,7 @@ Inferred types:
 Inferred types:
     <T> -> FqName
 
-'JvmFileClassUtil' @ [63:47] ==> public object JvmFileClassUtil defined in org.jetbrains.kotlin.fileClasses in file JvmFileClassUtil.kt[FakeCallableDescriptorForObject]
-
 'JVM_NAME' @ [63:64] ==> public final val JVM_NAME: FqName defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil[PropertyDescriptorImpl]
-
-'JvmFileClassUtil' @ [63:74] ==> public object JvmFileClassUtil defined in org.jetbrains.kotlin.fileClasses in file JvmFileClassUtil.kt[FakeCallableDescriptorForObject]
 
 'JVM_MULTIFILE_CLASS' @ [63:91] ==> public final val JVM_MULTIFILE_CLASS: FqName defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil[PropertyDescriptorImpl]
 
@@ -111,16 +107,14 @@ Inferred types:
 
 'getAnnotationUseSiteTarget' @ [68:38] ==> public final fun getAnnotationUseSiteTarget(): AnnotationUseSiteTarget defined in org.jetbrains.kotlin.psi.KtAnnotationUseSiteTarget[DeserializedSimpleFunctionDescriptor]
 
-'AnnotationUseSiteTarget' @ [68:70] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'FILE' @ [68:94] ==> enum entry FILE defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'trace' @ [69:30] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.jvm.checkers.FileClassAnnotationsChecker.checkEntries[ValueParameterDescriptorImpl]
 
 'get' @ [69:36] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?), p1: (KtAnnotationEntry..KtAnnotationEntry?)): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtAnnotationEntry
-    <V : (Any..Any?)> -> AnnotationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor..org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor?)
 
 'ANNOTATION' @ [69:55] ==> public final val ANNOTATION: (WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -143,8 +137,6 @@ Inferred types:
 'applicableTargets' @ [73:47] ==> val applicableTargets: Set<KotlinTarget>? defined in org.jetbrains.kotlin.resolve.jvm.checkers.FileClassAnnotationsChecker.checkEntries[LocalVariableDescriptor]
 
 'contains' @ [73:65] ==> public abstract fun contains(element: KotlinTarget): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
-
-'KotlinTarget' @ [73:74] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'FILE' @ [73:87] ==> enum entry FILE defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -176,8 +168,6 @@ Inferred types:
 'classId' @ [77:53] ==> public val ClassifierDescriptorWithTypeParameters.classId: ClassId? defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
 'asSingleFqName' @ [77:62] ==> @NotNull public open fun asSingleFqName(): FqName defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
-
-'JvmFileClassUtil' @ [77:82] ==> public object JvmFileClassUtil defined in org.jetbrains.kotlin.fileClasses in file JvmFileClassUtil.kt[FakeCallableDescriptorForObject]
 
 'JVM_MULTIFILE_CLASS' @ [77:99] ==> public final val JVM_MULTIFILE_CLASS: FqName defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil[PropertyDescriptorImpl]
 

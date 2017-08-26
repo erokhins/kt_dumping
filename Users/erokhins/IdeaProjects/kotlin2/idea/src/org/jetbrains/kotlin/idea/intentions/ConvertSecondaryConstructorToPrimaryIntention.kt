@@ -44,13 +44,13 @@ Inferred types:
 
 'resolvedDelegationCall' @ [52:36] ==> val resolvedDelegationCall: ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)> defined in org.jetbrains.kotlin.idea.intentions.ConvertSecondaryConstructorToPrimaryIntention.isReachableByDelegationFrom[LocalVariableDescriptor]
 
-'candidateDescriptor' @ [52:59] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>.candidateDescriptor: (ConstructorDescriptor..ConstructorDescriptor?)[MyPropertyDescriptor]
+'candidateDescriptor' @ [52:59] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(ConstructorDescriptor..ConstructorDescriptor?)>.candidateDescriptor: ConstructorDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ConstructorDescriptor..org.jetbrains.kotlin.descriptors.ConstructorDescriptor?)
 
 'isReachableByDelegationFrom' @ [53:16] ==> private final tailrec fun ConstructorDescriptor.isReachableByDelegationFrom(constructor: ConstructorDescriptor, context: BindingContext, visited: Set<ConstructorDescriptor> = ...): Boolean defined in org.jetbrains.kotlin.idea.intentions.ConvertSecondaryConstructorToPrimaryIntention[SimpleFunctionDescriptorImpl]
 
-'delegationDescriptor' @ [53:44] ==> val delegationDescriptor: (ConstructorDescriptor..ConstructorDescriptor?) defined in org.jetbrains.kotlin.idea.intentions.ConvertSecondaryConstructorToPrimaryIntention.isReachableByDelegationFrom[LocalVariableDescriptor]
+'delegationDescriptor' @ [53:44] ==> val delegationDescriptor: ConstructorDescriptor defined in org.jetbrains.kotlin.idea.intentions.ConvertSecondaryConstructorToPrimaryIntention.isReachableByDelegationFrom[LocalVariableDescriptor]
 
 'context' @ [53:66] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.intentions.ConvertSecondaryConstructorToPrimaryIntention.isReachableByDelegationFrom[ValueParameterDescriptorImpl]
 

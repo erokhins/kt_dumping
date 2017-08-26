@@ -12,14 +12,11 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> Boolean
 
-'NotNullableCopyableUserDataProperty' @ [83:55] ==> public constructor NotNullableCopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtExpression
-    <T : Any> -> Boolean
+'getValue' @ [83:55] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [83:95] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'KtPsiFactory' @ [98:34] ==> @JvmOverloads public fun KtPsiFactory(elementForProject: PsiElement, markGenerated: Boolean = ...): KtPsiFactory defined in org.jetbrains.kotlin.psi[DeserializedSimpleFunctionDescriptor]
 
@@ -282,8 +279,6 @@ Inferred types:
 'append' @ [157:25] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
 'append' @ [157:38] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
-
-'IdeDescriptorRenderers' @ [157:45] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [157:68] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -975,7 +970,7 @@ Inferred types:
 
 'putCopyableUserData' @ [291:24] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?), @Nullable p1: Boolean?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'EXPRESSION_KEY' @ [291:44] ==> private final val EXPRESSION_KEY: Key<(Boolean..Boolean?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler[PropertyDescriptorImpl]
 
@@ -987,7 +982,7 @@ Inferred types:
 
 'putCopyableUserData' @ [293:48] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?), @Nullable p1: Boolean?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'REPLACE_KEY' @ [293:68] ==> private final val REPLACE_KEY: Key<(Boolean..Boolean?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler[PropertyDescriptorImpl]
 
@@ -995,7 +990,7 @@ Inferred types:
 
 'putCopyableUserData' @ [295:26] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?), @Nullable p1: Boolean?): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'COMMON_PARENT_KEY' @ [295:46] ==> private final val COMMON_PARENT_KEY: Key<(Boolean..Boolean?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler[PropertyDescriptorImpl]
 
@@ -1019,13 +1014,13 @@ Inferred types:
 
 'newCommonContainer' @ [302:33] ==> val newCommonContainer: KtBlockExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.IntroduceVariableContext.runRefactoring[LocalVariableDescriptor]
 
-'findExpressionByCopyableDataAndClearIt' @ [302:52] ==> public fun PsiElement.findExpressionByCopyableDataAndClearIt(key: Key<Boolean>): KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce[SimpleFunctionDescriptorImpl]
+'findExpressionByCopyableDataAndClearIt' @ [302:52] ==> public fun PsiElement.findExpressionByCopyableDataAndClearIt(key: Key<Boolean>): KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'EXPRESSION_KEY' @ [302:91] ==> private final val EXPRESSION_KEY: Key<(Boolean..Boolean?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler[PropertyDescriptorImpl]
 
 'newCommonContainer' @ [303:35] ==> val newCommonContainer: KtBlockExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.IntroduceVariableContext.runRefactoring[LocalVariableDescriptor]
 
-'findElementByCopyableDataAndClearIt' @ [303:54] ==> public fun PsiElement.findElementByCopyableDataAndClearIt(key: Key<Boolean>): PsiElement defined in org.jetbrains.kotlin.idea.refactoring.introduce[SimpleFunctionDescriptorImpl]
+'findElementByCopyableDataAndClearIt' @ [303:54] ==> public fun PsiElement.findElementByCopyableDataAndClearIt(key: Key<Boolean>): PsiElement defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'COMMON_PARENT_KEY' @ [303:90] ==> private final val COMMON_PARENT_KEY: Key<(Boolean..Boolean?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler[PropertyDescriptorImpl]
 
@@ -1033,7 +1028,7 @@ Inferred types:
 
 'newCommonContainer' @ [304:51] ==> val newCommonContainer: KtBlockExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.IntroduceVariableContext.runRefactoring[LocalVariableDescriptor]
 
-'findExpressionsByCopyableDataAndClearIt' @ [304:70] ==> public fun PsiElement.findExpressionsByCopyableDataAndClearIt(key: Key<Boolean>): List<KtExpression> defined in org.jetbrains.kotlin.idea.refactoring.introduce[SimpleFunctionDescriptorImpl]
+'findExpressionsByCopyableDataAndClearIt' @ [304:70] ==> public fun PsiElement.findExpressionsByCopyableDataAndClearIt(key: Key<Boolean>): List<KtExpression> defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'REPLACE_KEY' @ [304:110] ==> private final val REPLACE_KEY: Key<(Boolean..Boolean?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler[PropertyDescriptorImpl]
 
@@ -1105,7 +1100,7 @@ Inferred types:
 
 'allReplaces' @ [318:27] ==> value-parameter allReplaces: List<KtExpression> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.calculateAnchor[ValueParameterDescriptorImpl]
 
-'fold' @ [318:39] ==> public inline fun <T, R> Iterable<KtExpression>.fold(initial: Int, operation: (Int, KtExpression) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [318:39] ==> public inline fun <T, R> Iterable<KtExpression>.fold(initial: Int, operation: (acc: Int, KtExpression) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtExpression
     <R> -> Int
@@ -1163,8 +1158,6 @@ Inferred types:
 'match' @ [328:18] ==> public open fun match(scope: PsiElement, unifier: KotlinPsiUnifier): List<UnificationResult.Matched> defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange[DeserializedSimpleFunctionDescriptor]
 
 'occurrenceContainer' @ [328:24] ==> value-parameter occurrenceContainer: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.findOccurrences[ValueParameterDescriptorImpl]
-
-'KotlinPsiUnifier' @ [328:45] ==> public companion object defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [328:62] ==> public final val DEFAULT: KotlinPsiUnifier defined in org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiUnifier.Companion[DeserializedPropertyDescriptor]
 
@@ -1414,7 +1407,7 @@ Inferred types:
 Inferred types:
     <T> -> FunctionDescriptor
 
-'chooseApplicableComponentFunctions' @ [399:16] ==> internal fun chooseApplicableComponentFunctions(contextExpression: KtExpression, editor: Editor?, type: KotlinType? = ..., receiverExpression: KtExpression? = ..., callback: (List<FunctionDescriptor>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable[SimpleFunctionDescriptorImpl]
+'chooseApplicableComponentFunctions' @ [399:16] ==> internal fun chooseApplicableComponentFunctions(contextExpression: KtExpression, editor: Editor?, type: KotlinType? = ..., receiverExpression: KtExpression? = ..., callback: (List<FunctionDescriptor>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable in file introduceVariableUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [399:51] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.chooseApplicableComponentFunctionsForVariableDeclaration[ReceiverParameterDescriptorImpl]
 
@@ -1616,9 +1609,9 @@ Inferred types:
 
 'message' @ [478:79] ==> @NotNull public open fun message(@NonNls @PropertyKey key: (String..String?), vararg params: (Any..Any?)): String defined in org.jetbrains.kotlin.idea.refactoring.KotlinRefactoringBundle[JavaMethodDescriptor]
 
-'getNonStrictParentOfType' @ [481:21] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getNonStrictParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out ({KtElement & ASTDelegatePsiElement}..{KtElement & ASTDelegatePsiElement}?)>..Class<out ({KtElement & ASTDelegatePsiElement}..{KtElement & ASTDelegatePsiElement}?)>?)): {KtElement & ASTDelegatePsiElement}? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'getNonStrictParentOfType' @ [481:21] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getNonStrictParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (NavigatablePsiElement..NavigatablePsiElement?)>..Class<out (NavigatablePsiElement..NavigatablePsiElement?)>?)): NavigatablePsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> {KtElement & ASTDelegatePsiElement}
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.NavigatablePsiElement..com.intellij.psi.NavigatablePsiElement?)
 
 'physicalExpression' @ [481:46] ==> val physicalExpression: KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.doRefactoring[LocalVariableDescriptor]
 
@@ -1646,9 +1639,9 @@ Inferred types:
 Inferred types:
     <T> -> KtAnnotationEntry
 
-'let' @ [486:78] ==> @InlineOnly public inline fun <T, R> {KtElement & Any & ASTDelegatePsiElement}.let(block: ({KtElement & Any & ASTDelegatePsiElement}) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [486:78] ==> @InlineOnly public inline fun <T, R> NavigatablePsiElement.let(block: (NavigatablePsiElement) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {KtElement & Any & ASTDelegatePsiElement}
+    <T> -> NavigatablePsiElement
     <R> -> Nothing
 
 'showErrorHint' @ [487:20] ==> private final fun showErrorHint(project: Project, editor: Editor?, message: String): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler[SimpleFunctionDescriptorImpl]
@@ -1725,8 +1718,8 @@ Inferred types:
 
 'get' @ [501:54] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..ReadOnlySlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?), p1: (KtExpression..KtExpression?)): Qualifier? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Qualifier
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier..org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier?)
 
 'QUALIFIER' @ [501:73] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1968,15 +1961,13 @@ Inferred types:
     <T> -> FunctionDescriptor
     <R> -> Set<String>
 
-'suggestNamesForComponent' @ [561:46] ==> internal fun suggestNamesForComponent(descriptor: FunctionDescriptor, project: Project, validator: (String) -> Boolean): Set<String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable[SimpleFunctionDescriptorImpl]
+'suggestNamesForComponent' @ [561:46] ==> internal fun suggestNamesForComponent(descriptor: FunctionDescriptor, project: Project, validator: (String) -> Boolean): Set<String> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable in file introduceVariableUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [561:71] ==> value-parameter it: FunctionDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.doRefactoring.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'project' @ [561:75] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.doRefactoring[ValueParameterDescriptorImpl]
 
 'collectingValidator' @ [561:84] ==> val collectingValidator: CollectingNameValidator defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.doRefactoring.<anonymous>.<anonymous>[LocalVariableDescriptor]
-
-'KotlinNameSuggester' @ [564:21] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
 
 'suggestNamesByExpressionAndType' @ [564:41] ==> public final fun suggestNamesByExpressionAndType(expression: KtExpression, type: KotlinType?, bindingContext: BindingContext?, validator: (String) -> Boolean, defaultName: String?): Collection<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
@@ -1994,6 +1985,10 @@ Inferred types:
 Inferred types:
     <T> -> Collection<String>
     <R> -> List<Collection<String>>
+
+'listOf' @ [568:88] ==> public fun <T> listOf(element: Collection<String>): List<Collection<String>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> Collection<String>
 
 'IntroduceVariableContext' @ [571:48] ==> public constructor IntroduceVariableContext(expression: KtExpression, nameSuggestions: List<Collection<String>>, allReplaces: List<KtExpression>, commonContainer: PsiElement, commonParent: PsiElement, replaceOccurrence: Boolean, noTypeInference: Boolean, expressionType: KotlinType?, componentFunctions: List<FunctionDescriptor>, bindingContext: BindingContext, resolutionFacade: ResolutionFacade) defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.IntroduceVariableContext[ClassConstructorDescriptorImpl]
 
@@ -2093,6 +2088,32 @@ Inferred types:
 
 'document' @ [595:108] ==> public final val Editor.document: Document[MyPropertyDescriptor]
 
+'when (property) {
+                        is KtProperty -> {
+                            KotlinVariableInplaceIntroducer(
+                                    property,
+                                    introduceVariableContext.reference,
+                                    introduceVariableContext.references.toTypedArray(),
+                                    suggestedNames.single(),
+                                    isVar,
+                                    /*todo*/ false,
+                                    expressionType,
+                                    noTypeInference,
+                                    project,
+                                    editor,
+                                    ::postProcess
+                            ).startInplaceIntroduceTemplate()
+                        }
+
+                        is KtDestructuringDeclaration -> {
+                            executeMultiDeclarationTemplate(project, editor, property, suggestedNames, ::postProcess)
+                        }
+
+                        else -> throw AssertionError("Unexpected declaration: ${property.getElementTextWithContext()}")
+                    }' @ [597:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any, entry2: Any): Any[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
+
 'property' @ [597:27] ==> val property: KtDeclaration defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.doRefactoring.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'KotlinVariableInplaceIntroducer' @ [599:29] ==> public constructor KotlinVariableInplaceIntroducer(addedVariable: KtProperty, originalExpression: KtExpression?, occurrencesToReplace: Array<KtExpression>, suggestedNames: Collection<String>, isVar: Boolean, doNotChangeVar: Boolean, expressionType: KotlinType?, noTypeInference: Boolean, project: Project, editor: Editor, postProcess: (KtDeclaration) -> Unit) defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinVariableInplaceIntroducer[ClassConstructorDescriptorImpl]
@@ -2127,6 +2148,8 @@ Inferred types:
 
 'editor' @ [609:37] ==> value-parameter editor: Editor? defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.doRefactoring[ValueParameterDescriptorImpl]
 
+'postProcess' @ [610:39] ==> local final fun postProcess(declaration: KtDeclaration): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.doRefactoring.<anonymous>[SimpleFunctionDescriptorImpl]
+
 'startInplaceIntroduceTemplate' @ [611:31] ==> public open fun startInplaceIntroduceTemplate(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinVariableInplaceIntroducer[JavaMethodDescriptor]
 
 'executeMultiDeclarationTemplate' @ [615:29] ==> private final fun executeMultiDeclarationTemplate(project: Project, editor: Editor, declaration: KtDestructuringDeclaration, suggestedNames: List<Collection<String>>, postProcess: (KtDeclaration) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler[SimpleFunctionDescriptorImpl]
@@ -2138,6 +2161,8 @@ Inferred types:
 'property' @ [615:78] ==> val property: KtDeclaration defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.doRefactoring.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'suggestedNames' @ [615:88] ==> val suggestedNames: List<Collection<String>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.doRefactoring.<anonymous>.<anonymous>[LocalVariableDescriptor]
+
+'postProcess' @ [615:106] ==> local final fun postProcess(declaration: KtDeclaration): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.doRefactoring.<anonymous>[SimpleFunctionDescriptorImpl]
 
 'AssertionError' @ [618:39] ==> public final fun <init>(p0: (Any..Any?)): AssertionError /* = AssertionError */ defined in kotlin.AssertionError[TypeAliasConstructorDescriptorImpl]
 
@@ -2321,13 +2346,13 @@ Inferred types:
 
 'SmartList' @ [675:26] ==> public constructor SmartList<E : (Any..Any?)>(p0: (KtElement..KtElement?)) defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> KtElement
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'firstContainer' @ [675:36] ==> val firstContainer: KtElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
 
 'SmartList' @ [676:36] ==> public constructor SmartList<E : (Any..Any?)>(p0: (KtElement..KtElement?)) defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> KtElement
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'firstOccurrenceContainer' @ [676:46] ==> val firstOccurrenceContainer: KtElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
 
@@ -2393,13 +2418,13 @@ Inferred types:
 
 'lambdasAndContainers' @ [691:9] ==> val lambdasAndContainers: ArrayList<Pair<KtExpression, KtElement>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
 
-'mapTo' @ [691:30] ==> public inline fun <T, R, C : MutableCollection<in KtElement>> Iterable<Pair<KtExpression, KtElement>>.mapTo(destination: SmartList<KtElement>, transform: (Pair<KtExpression, KtElement>) -> KtElement): SmartList<KtElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapTo' @ [691:30] ==> public inline fun <T, R, C : MutableCollection<in KtElement>> Iterable<Pair<KtExpression, KtElement>>.mapTo(destination: SmartList<(KtElement..KtElement?)>, transform: (Pair<KtExpression, KtElement>) -> KtElement): SmartList<(KtElement..KtElement?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<KtExpression, KtElement>
     <R> -> KtElement
-    <C : MutableCollection<in R>> -> SmartList<KtElement>
+    <C : MutableCollection<in R>> -> SmartList<(org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)>
 
-'containers' @ [691:36] ==> val containers: SmartList<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
+'containers' @ [691:36] ==> val containers: SmartList<(KtElement..KtElement?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
 
 'it' @ [691:50] ==> value-parameter it: Pair<KtExpression, KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -2407,13 +2432,13 @@ Inferred types:
 
 'lambdasAndContainers' @ [692:9] ==> val lambdasAndContainers: ArrayList<Pair<KtExpression, KtElement>> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
 
-'mapTo' @ [692:30] ==> public inline fun <T, R, C : MutableCollection<in KtElement?>> Iterable<Pair<KtExpression, KtElement>>.mapTo(destination: SmartList<KtElement>, transform: (Pair<KtExpression, KtElement>) -> KtElement?): SmartList<KtElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapTo' @ [692:30] ==> public inline fun <T, R, C : MutableCollection<in KtElement?>> Iterable<Pair<KtExpression, KtElement>>.mapTo(destination: SmartList<(KtElement..KtElement?)>, transform: (Pair<KtExpression, KtElement>) -> KtElement?): SmartList<(KtElement..KtElement?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<KtExpression, KtElement>
     <R> -> KtElement?
-    <C : MutableCollection<in R>> -> SmartList<KtElement>
+    <C : MutableCollection<in R>> -> SmartList<(org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)>
 
-'occurrenceContainers' @ [692:36] ==> val occurrenceContainers: SmartList<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
+'occurrenceContainers' @ [692:36] ==> val occurrenceContainers: SmartList<(KtElement..KtElement?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
 
 'it' @ [692:60] ==> value-parameter it: Pair<KtExpression, KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -2435,9 +2460,9 @@ Inferred types:
 
 'iterator' @ [694:54] ==> public abstract fun iterator(): Iterator<Pair<(KtElement..KtElement?), (KtElement..KtElement?)>> defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'containers' @ [694:55] ==> val containers: SmartList<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
+'containers' @ [694:55] ==> val containers: SmartList<(KtElement..KtElement?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
 
-'occurrenceContainers' @ [694:70] ==> val occurrenceContainers: SmartList<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
+'occurrenceContainers' @ [694:70] ==> val occurrenceContainers: SmartList<(KtElement..KtElement?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers[LocalVariableDescriptor]
 
 'occurrenceContainer' @ [695:21] ==> val occurrenceContainer: (KtElement..KtElement?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.getCandidateContainers.<anonymous>[LocalVariableDescriptor]
 
@@ -2609,7 +2634,7 @@ Inferred types:
 
 'file' @ [746:13] ==> value-parameter file: PsiFile defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.invoke[ValueParameterDescriptorImpl]
 
-'selectElement' @ [749:13] ==> @Throws public fun selectElement(editor: Editor, file: KtFile, elementKinds: Collection<CodeInsightUtils.ElementKind>, callback: (PsiElement?) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'selectElement' @ [749:13] ==> @Throws public fun selectElement(editor: Editor, file: KtFile, elementKinds: Collection<CodeInsightUtils.ElementKind>, callback: (PsiElement?) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file elementSelectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'editor' @ [749:27] ==> value-parameter editor: Editor defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.KotlinIntroduceVariableHandler.invoke[ValueParameterDescriptorImpl]
 

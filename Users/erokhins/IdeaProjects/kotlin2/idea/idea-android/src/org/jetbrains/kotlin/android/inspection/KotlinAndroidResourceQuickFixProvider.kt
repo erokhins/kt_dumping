@@ -38,7 +38,7 @@ Inferred types:
 
 'containingFile' @ [40:38] ==> public final val KtSimpleNameExpression.containingFile: (PsiFile..PsiFile?)[MyPropertyDescriptor]
 
-'getReferredResourceOrManifestField' @ [42:20] ==> internal fun getReferredResourceOrManifestField(facet: AndroidFacet, expression: KtSimpleNameExpression, localOnly: Boolean): AndroidResourceUtil.MyReferredResourceFieldInfo? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'getReferredResourceOrManifestField' @ [42:20] ==> internal fun getReferredResourceOrManifestField(facet: AndroidFacet, expression: KtSimpleNameExpression, localOnly: Boolean): AndroidResourceUtil.MyReferredResourceFieldInfo? defined in org.jetbrains.kotlin.android in file AndroidUtil.kt[SimpleFunctionDescriptorImpl]
 
 'facet' @ [42:55] ==> val facet: AndroidFacet defined in org.jetbrains.kotlin.android.inspection.KotlinAndroidResourceQuickFixProvider.registerFixes[LocalVariableDescriptor]
 

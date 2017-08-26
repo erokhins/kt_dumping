@@ -139,7 +139,7 @@ Inferred types:
 
 'java' @ [47:92] ==> public val <T> KClass<out PsiClass>.java: Class<out PsiClass> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiClass
+    <T> -> Captured(out PsiClass)
 
 'error' @ [51:17] ==> private final fun error(message: String): String defined in org.jetbrains.kotlin.idea.caches.resolve.MapPsiToAsmDesc[SimpleFunctionDescriptorImpl]
 
@@ -149,7 +149,7 @@ Inferred types:
 
 'java' @ [51:69] ==> public val <T> KClass<out PsiType>.java: Class<out PsiType> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiType
+    <T> -> Captured(out PsiType)
 
 'buildString' @ [54:49] ==> @InlineOnly public inline fun buildString(builderAction: StringBuilder /* = StringBuilder */.() -> Unit): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -264,5 +264,5 @@ Inferred types:
 
 'java' @ [84:54] ==> public val <T> KClass<out MapPsiToAsmDesc>.java: Class<out MapPsiToAsmDesc> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> MapPsiToAsmDesc
+    <T> -> Captured(out MapPsiToAsmDesc)
 

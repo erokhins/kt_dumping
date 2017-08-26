@@ -289,11 +289,15 @@ Inferred types:
 
 'KotlinCodeStyleSettings' @ [184:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
+'SPACE_AROUND_RANGE' @ [184:59] ==> public final var SPACE_AROUND_RANGE: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
+
 'SPACES_AROUND_OPERATORS' @ [186:64] ==> public const final val SPACES_AROUND_OPERATORS: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
 'showCustomOption' @ [188:17] ==> local final fun showCustomOption(field: KProperty<*>, title: String, groupName: String? = ...): Unit defined in org.jetbrains.kotlin.idea.formatter.KotlinLanguageCodeStyleSettingsProvider.customizeSettings[SimpleFunctionDescriptorImpl]
 
 'KotlinCodeStyleSettings' @ [188:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
+
+'SPACE_BEFORE_TYPE_COLON' @ [188:59] ==> public final var SPACE_BEFORE_TYPE_COLON: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
 
 'SPACES_OTHER' @ [190:64] ==> public const final val SPACES_OTHER: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
@@ -301,11 +305,15 @@ Inferred types:
 
 'KotlinCodeStyleSettings' @ [192:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
+'SPACE_AFTER_TYPE_COLON' @ [192:59] ==> public final var SPACE_AFTER_TYPE_COLON: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
+
 'SPACES_OTHER' @ [194:64] ==> public const final val SPACES_OTHER: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
 'showCustomOption' @ [196:17] ==> local final fun showCustomOption(field: KProperty<*>, title: String, groupName: String? = ...): Unit defined in org.jetbrains.kotlin.idea.formatter.KotlinLanguageCodeStyleSettingsProvider.customizeSettings[SimpleFunctionDescriptorImpl]
 
 'KotlinCodeStyleSettings' @ [196:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
+
+'SPACE_BEFORE_EXTEND_COLON' @ [196:59] ==> public final var SPACE_BEFORE_EXTEND_COLON: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
 
 'SPACES_OTHER' @ [198:64] ==> public const final val SPACES_OTHER: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
@@ -313,11 +321,15 @@ Inferred types:
 
 'KotlinCodeStyleSettings' @ [200:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
+'SPACE_AFTER_EXTEND_COLON' @ [200:59] ==> public final var SPACE_AFTER_EXTEND_COLON: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
+
 'SPACES_OTHER' @ [202:64] ==> public const final val SPACES_OTHER: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
 'showCustomOption' @ [204:17] ==> local final fun showCustomOption(field: KProperty<*>, title: String, groupName: String? = ...): Unit defined in org.jetbrains.kotlin.idea.formatter.KotlinLanguageCodeStyleSettingsProvider.customizeSettings[SimpleFunctionDescriptorImpl]
 
 'KotlinCodeStyleSettings' @ [204:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
+
+'INSERT_WHITESPACES_IN_SIMPLE_ONE_LINE_METHOD' @ [204:59] ==> public final var INSERT_WHITESPACES_IN_SIMPLE_ONE_LINE_METHOD: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
 
 'SPACES_OTHER' @ [206:64] ==> public const final val SPACES_OTHER: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
@@ -325,11 +337,15 @@ Inferred types:
 
 'KotlinCodeStyleSettings' @ [208:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
+'SPACE_AROUND_FUNCTION_TYPE_ARROW' @ [208:59] ==> public final var SPACE_AROUND_FUNCTION_TYPE_ARROW: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
+
 'SPACES_OTHER' @ [210:64] ==> public const final val SPACES_OTHER: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
 'showCustomOption' @ [212:17] ==> local final fun showCustomOption(field: KProperty<*>, title: String, groupName: String? = ...): Unit defined in org.jetbrains.kotlin.idea.formatter.KotlinLanguageCodeStyleSettingsProvider.customizeSettings[SimpleFunctionDescriptorImpl]
 
 'KotlinCodeStyleSettings' @ [212:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
+
+'SPACE_AROUND_WHEN_ARROW' @ [212:59] ==> public final var SPACE_AROUND_WHEN_ARROW: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
 
 'SPACES_OTHER' @ [214:64] ==> public const final val SPACES_OTHER: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
@@ -337,11 +353,15 @@ Inferred types:
 
 'KotlinCodeStyleSettings' @ [216:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
+'SPACE_BEFORE_LAMBDA_ARROW' @ [216:59] ==> public final var SPACE_BEFORE_LAMBDA_ARROW: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
+
 'SPACES_OTHER' @ [218:64] ==> public const final val SPACES_OTHER: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
 'showCustomOption' @ [220:17] ==> local final fun showCustomOption(field: KProperty<*>, title: String, groupName: String? = ...): Unit defined in org.jetbrains.kotlin.idea.formatter.KotlinLanguageCodeStyleSettingsProvider.customizeSettings[SimpleFunctionDescriptorImpl]
 
 'KotlinCodeStyleSettings' @ [220:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
+
+'SPACE_BEFORE_WHEN_PARENTHESES' @ [220:59] ==> public final var SPACE_BEFORE_WHEN_PARENTHESES: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
 
 'SPACES_BEFORE_PARENTHESES' @ [222:64] ==> public const final val SPACES_BEFORE_PARENTHESES: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
@@ -365,11 +385,15 @@ Inferred types:
 
 'KotlinCodeStyleSettings' @ [254:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
+'ALIGN_IN_COLUMNS_CASE_BRANCH' @ [254:59] ==> public final var ALIGN_IN_COLUMNS_CASE_BRANCH: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
+
 'WRAPPING_SWITCH_STATEMENT' @ [256:64] ==> public const final val WRAPPING_SWITCH_STATEMENT: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
 'showCustomOption' @ [258:17] ==> local final fun showCustomOption(field: KProperty<*>, title: String, groupName: String? = ...): Unit defined in org.jetbrains.kotlin.idea.formatter.KotlinLanguageCodeStyleSettingsProvider.customizeSettings[SimpleFunctionDescriptorImpl]
 
 'KotlinCodeStyleSettings' @ [258:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
+
+'LBRACE_ON_NEXT_LINE' @ [258:59] ==> public final var LBRACE_ON_NEXT_LINE: Boolean defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
 
 'WRAPPING_BRACES' @ [260:64] ==> public const final val WRAPPING_BRACES: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 
@@ -382,6 +406,8 @@ Inferred types:
 'showCustomOption' @ [269:17] ==> local final fun showCustomOption(field: KProperty<*>, title: String, groupName: String? = ...): Unit defined in org.jetbrains.kotlin.idea.formatter.KotlinLanguageCodeStyleSettingsProvider.customizeSettings[SimpleFunctionDescriptorImpl]
 
 'KotlinCodeStyleSettings' @ [269:34] ==> public constructor KotlinCodeStyleSettings(p0: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
+
+'BLANK_LINES_AROUND_BLOCK_WHEN_BRANCHES' @ [269:59] ==> public final var BLANK_LINES_AROUND_BLOCK_WHEN_BRANCHES: Int defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaPropertyDescriptor]
 
 'BLANK_LINES' @ [271:64] ==> public const final val BLANK_LINES: (String..String?) defined in com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable[JavaPropertyDescriptor]
 

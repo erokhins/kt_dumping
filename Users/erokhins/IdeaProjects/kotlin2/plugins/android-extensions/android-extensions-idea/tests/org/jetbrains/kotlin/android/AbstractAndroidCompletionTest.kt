@@ -73,7 +73,7 @@ Inferred types:
 
 'getTestName' @ [50:54] ==> @NotNull protected/*protected and package*/ open fun getTestName(p0: Boolean): String defined in org.jetbrains.kotlin.android.AbstractAndroidCompletionTest[JavaMethodDescriptor]
 
-'testCompletion' @ [51:9] ==> public fun testCompletion(fileText: String, platform: TargetPlatform?, complete: (CompletionType, Int) -> Array<LookupElement>?, defaultCompletionType: CompletionType = ..., defaultInvocationCount: Int = ..., additionalValidDirectives: Collection<String> = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'testCompletion' @ [51:9] ==> public fun testCompletion(fileText: String, platform: TargetPlatform?, complete: (CompletionType, Int) -> Array<LookupElement>?, defaultCompletionType: CompletionType = ..., defaultInvocationCount: Int = ..., additionalValidDirectives: Collection<String> = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test in file CompletionTestUtil.kt[SimpleFunctionDescriptorImpl]
 
 'fileText' @ [51:24] ==> val fileText: String defined in org.jetbrains.kotlin.android.AbstractAndroidCompletionTest.doTest[LocalVariableDescriptor]
 

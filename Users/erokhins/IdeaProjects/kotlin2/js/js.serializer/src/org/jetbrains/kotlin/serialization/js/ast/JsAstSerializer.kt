@@ -14,7 +14,7 @@ Inferred types:
 
 'ArrayDeque' @ [35:44] ==> public constructor ArrayDeque<E : (Any..Any?)>() defined in java.util.ArrayDeque[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'serialize' @ [38:9] ==> public final fun serialize(fragment: JsProgramFragment): JsAstProtoBuf.Chunk defined in org.jetbrains.kotlin.serialization.js.ast.JsAstSerializer[SimpleFunctionDescriptorImpl]
 

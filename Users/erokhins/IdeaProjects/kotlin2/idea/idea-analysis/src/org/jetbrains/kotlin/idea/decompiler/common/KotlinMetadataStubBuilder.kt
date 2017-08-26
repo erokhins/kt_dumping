@@ -64,7 +64,7 @@ Inferred types:
 
 'file' @ [44:15] ==> val file: FileWithMetadata defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataStubBuilder.buildFileStub[LocalVariableDescriptor]
 
-'createIncompatibleAbiVersionFileStub' @ [46:24] ==> public fun createIncompatibleAbiVersionFileStub(): KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createIncompatibleAbiVersionFileStub' @ [46:24] ==> public fun createIncompatibleAbiVersionFileStub(): KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [49:36] ==> val file: FileWithMetadata defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataStubBuilder.buildFileStub[LocalVariableDescriptor]
 
@@ -114,7 +114,7 @@ Inferred types:
 
 'packageFqName' @ [59:47] ==> val packageFqName: FqName defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataStubBuilder.buildFileStub[LocalVariableDescriptor]
 
-'createDeclarationsStubs' @ [60:17] ==> public fun createDeclarationsStubs(parentStub: StubElement<out PsiElement>, outerContext: ClsStubBuilderContext, protoContainer: ProtoContainer, packageProto: ProtoBuf.Package): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createDeclarationsStubs' @ [60:17] ==> public fun createDeclarationsStubs(parentStub: StubElement<out PsiElement>, outerContext: ClsStubBuilderContext, protoContainer: ProtoContainer, packageProto: ProtoBuf.Package): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file CallableClsStubBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'fileStub' @ [61:25] ==> val fileStub: KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataStubBuilder.buildFileStub[LocalVariableDescriptor]
 
@@ -138,7 +138,7 @@ Inferred types:
 
 'classesToDecompile' @ [65:41] ==> public open val classesToDecompile: List<ProtoBuf.Class> defined in org.jetbrains.kotlin.idea.decompiler.common.FileWithMetadata.Compatible[PropertyDescriptorImpl]
 
-'createClassStub' @ [66:21] ==> public fun createClassStub(parent: StubElement<out PsiElement>, classProto: ProtoBuf.Class, nameResolver: NameResolver, classId: ClassId, source: SourceElement?, context: ClsStubBuilderContext): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createClassStub' @ [66:21] ==> public fun createClassStub(parent: StubElement<out PsiElement>, classProto: ProtoBuf.Class, nameResolver: NameResolver, classId: ClassId, source: SourceElement?, context: ClsStubBuilderContext): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file ClassClsStubBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'fileStub' @ [67:29] ==> val fileStub: KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.common.KotlinMetadataStubBuilder.buildFileStub[LocalVariableDescriptor]
 

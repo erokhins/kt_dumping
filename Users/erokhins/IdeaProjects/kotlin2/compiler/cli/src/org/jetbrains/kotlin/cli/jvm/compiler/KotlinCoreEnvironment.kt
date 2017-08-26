@@ -19,7 +19,7 @@ Inferred types:
 
 'registerService' @ [125:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(CoreJavaFileManager..CoreJavaFileManager?)>, @NotNull p1: CoreJavaFileManager): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CoreJavaFileManager
+    <T : (Any..Any?)> -> (com.intellij.core.CoreJavaFileManager..com.intellij.core.CoreJavaFileManager?)
 
 'CoreJavaFileManager' @ [125:33] ==> public constructor CoreJavaFileManager(p0: (PsiManager..PsiManager?)) defined in com.intellij.core.CoreJavaFileManager[JavaClassConstructorDescriptor]
 
@@ -29,7 +29,7 @@ Inferred types:
 
 'getService' @ [125:81] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(JavaFileManager..JavaFileManager?)>): (JavaFileManager..JavaFileManager?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaFileManager
+    <T : (Any..Any?)> -> (com.intellij.psi.impl.file.impl.JavaFileManager..com.intellij.psi.impl.file.impl.JavaFileManager?)
 
 'this' @ [125:92] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.projectEnvironment.<no name provided>.registerJavaPsiFacade.<anonymous>[ReceiverParameterDescriptorImpl]
 
@@ -43,7 +43,7 @@ Inferred types:
 
 'registerService' @ [128:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(LightClassGenerationSupport..LightClassGenerationSupport?)>, @NotNull p1: LightClassGenerationSupport): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LightClassGenerationSupport
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.asJava.LightClassGenerationSupport..org.jetbrains.kotlin.asJava.LightClassGenerationSupport?)
 
 'LightClassGenerationSupport' @ [128:33] ==> public companion object defined in org.jetbrains.kotlin.asJava.LightClassGenerationSupport[FakeCallableDescriptorForObject]
 
@@ -55,7 +55,7 @@ Inferred types:
 
 'registerService' @ [129:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(CliLightClassGenerationSupport..CliLightClassGenerationSupport?)>, @NotNull p1: CliLightClassGenerationSupport): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CliLightClassGenerationSupport
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.jvm.compiler.CliLightClassGenerationSupport..org.jetbrains.kotlin.cli.jvm.compiler.CliLightClassGenerationSupport?)
 
 'CliLightClassGenerationSupport' @ [129:33] ==> public constructor CliLightClassGenerationSupport(project: Project) defined in org.jetbrains.kotlin.cli.jvm.compiler.CliLightClassGenerationSupport[ClassConstructorDescriptorImpl]
 
@@ -67,7 +67,7 @@ Inferred types:
 
 'registerService' @ [130:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(CodeAnalyzerInitializer..CodeAnalyzerInitializer?)>, @NotNull p1: CodeAnalyzerInitializer): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CodeAnalyzerInitializer
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.CodeAnalyzerInitializer..org.jetbrains.kotlin.resolve.CodeAnalyzerInitializer?)
 
 'CodeAnalyzerInitializer' @ [130:33] ==> public companion object defined in org.jetbrains.kotlin.resolve.CodeAnalyzerInitializer[FakeCallableDescriptorForObject]
 
@@ -79,7 +79,7 @@ Inferred types:
 
 'registerService' @ [132:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(ExternalAnnotationsManager..ExternalAnnotationsManager?)>, @NotNull p1: ExternalAnnotationsManager): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ExternalAnnotationsManager
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.ExternalAnnotationsManager..com.intellij.codeInsight.ExternalAnnotationsManager?)
 
 'ExternalAnnotationsManager' @ [132:33] ==> public constructor ExternalAnnotationsManager() defined in com.intellij.codeInsight.ExternalAnnotationsManager[JavaClassConstructorDescriptor]
 
@@ -91,7 +91,7 @@ Inferred types:
 
 'registerService' @ [133:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(InferredAnnotationsManager..InferredAnnotationsManager?)>, @NotNull p1: InferredAnnotationsManager): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> InferredAnnotationsManager
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.InferredAnnotationsManager..com.intellij.codeInsight.InferredAnnotationsManager?)
 
 'InferredAnnotationsManager' @ [133:33] ==> public constructor InferredAnnotationsManager() defined in com.intellij.codeInsight.InferredAnnotationsManager[JavaClassConstructorDescriptor]
 
@@ -109,7 +109,7 @@ Inferred types:
 
 'getExtensionPoint' @ [137:22] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensionPoint(@NotNull p0: ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>): ExtensionPoint<(PsiElementFinder..PsiElementFinder?)> defined in com.intellij.openapi.extensions.ExtensionsArea[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElementFinder
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElementFinder..com.intellij.psi.PsiElementFinder?)
 
 'EP_NAME' @ [137:57] ==> public final val EP_NAME: (ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>..ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>?) defined in com.intellij.psi.PsiElementFinder[JavaPropertyDescriptor]
 
@@ -125,7 +125,7 @@ Inferred types:
 
 'getExtensionPoint' @ [138:22] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensionPoint(@NotNull p0: ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>): ExtensionPoint<(PsiElementFinder..PsiElementFinder?)> defined in com.intellij.openapi.extensions.ExtensionsArea[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElementFinder
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElementFinder..com.intellij.psi.PsiElementFinder?)
 
 'EP_NAME' @ [138:57] ==> public final val EP_NAME: (ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>..ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>?) defined in com.intellij.psi.PsiElementFinder[JavaPropertyDescriptor]
 
@@ -137,7 +137,7 @@ Inferred types:
 
 'getService' @ [139:67] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(JavaFileManager..JavaFileManager?)>): (JavaFileManager..JavaFileManager?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaFileManager
+    <T : (Any..Any?)> -> (com.intellij.psi.impl.file.impl.JavaFileManager..com.intellij.psi.impl.file.impl.JavaFileManager?)
 
 'this' @ [139:78] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.projectEnvironment.<no name provided>.registerJavaPsiFacade.<anonymous>[ReceiverParameterDescriptorImpl]
 
@@ -221,9 +221,7 @@ Inferred types:
 
 'getList' @ [169:41] ==> @NotNull public open fun <T : (Any..Any?)> getList(@NotNull p0: CompilerConfigurationKey<(MutableList<(ComponentRegistrar..ComponentRegistrar?)>..List<(ComponentRegistrar..ComponentRegistrar?)>?)>): (MutableList<(ComponentRegistrar..ComponentRegistrar?)>..List<(ComponentRegistrar..ComponentRegistrar?)>) defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ComponentRegistrar
-
-'ComponentRegistrar' @ [169:49] ==> public companion object defined in org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar..org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar?)
 
 'PLUGIN_COMPONENT_REGISTRARS' @ [169:68] ==> public final val PLUGIN_COMPONENT_REGISTRARS: CompilerConfigurationKey<MutableList<ComponentRegistrar>> defined in org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar.Companion[DeserializedPropertyDescriptor]
 
@@ -239,7 +237,7 @@ Inferred types:
 
 'registerService' @ [173:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(DeclarationProviderFactoryService..DeclarationProviderFactoryService?)>, @NotNull p1: DeclarationProviderFactoryService): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DeclarationProviderFactoryService
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.lazy.declarations.DeclarationProviderFactoryService..org.jetbrains.kotlin.resolve.lazy.declarations.DeclarationProviderFactoryService?)
 
 'DeclarationProviderFactoryService' @ [173:33] ==> public companion object defined in org.jetbrains.kotlin.resolve.lazy.declarations.DeclarationProviderFactoryService[FakeCallableDescriptorForObject]
 
@@ -255,7 +253,7 @@ Inferred types:
 
 'registerService' @ [174:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(ModuleVisibilityManager..ModuleVisibilityManager?)>, @NotNull p1: ModuleVisibilityManager): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleVisibilityManager
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.ModuleVisibilityManager..org.jetbrains.kotlin.load.kotlin.ModuleVisibilityManager?)
 
 'java' @ [174:64] ==> public val <T> KClass<ModuleVisibilityManager>.java: Class<ModuleVisibilityManager> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -275,7 +273,7 @@ Inferred types:
 
 'get' @ [177:46] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>): MessageCollector? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [177:71] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -335,7 +333,7 @@ Inferred types:
 
 'getList' @ [188:35] ==> @NotNull public open fun <T : (Any..Any?)> getList(@NotNull p0: CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>): (MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>) defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinScriptDefinition
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)
 
 'SCRIPT_DEFINITIONS' @ [188:64] ==> public final val SCRIPT_DEFINITIONS: (CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>..CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -352,7 +350,7 @@ Inferred types:
 
 'configuration' @ [191:17] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.<init>[ValueParameterDescriptorImpl]
 
-'addJvmClasspathRoots' @ [191:31] ==> public fun CompilerConfiguration.addJvmClasspathRoots(files: List<File>): Unit defined in org.jetbrains.kotlin.cli.jvm.config[SimpleFunctionDescriptorImpl]
+'addJvmClasspathRoots' @ [191:31] ==> public fun CompilerConfiguration.addJvmClasspathRoots(files: List<File>): Unit defined in org.jetbrains.kotlin.cli.jvm.config in file JvmContentRoots.kt[SimpleFunctionDescriptorImpl]
 
 'sourceFiles' @ [192:25] ==> private final val sourceFiles: MutableList<KtFile> defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[PropertyDescriptorImpl]
 
@@ -362,6 +360,8 @@ Inferred types:
     <R : Any> -> ScriptDependencies
 
 'importsProvider' @ [192:48] ==> value-parameter importsProvider: ScriptDependenciesProvider defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+
+'getScriptDependencies' @ [192:65] ==> public open fun getScriptDependencies(file: PsiFile): ScriptDependencies? defined in org.jetbrains.kotlin.script.ScriptDependenciesProvider[DeserializedSimpleFunctionDescriptor]
 
 'flatMap' @ [193:34] ==> public inline fun <T, R> Iterable<ScriptDependencies>.flatMap(transform: (ScriptDependencies) -> Iterable<File>): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -385,7 +385,7 @@ Inferred types:
 
 'get' @ [198:37] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(File..File?)>): File? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> File
+    <T : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'JDK_HOME' @ [198:62] ==> public final val JDK_HOME: (CompilerConfigurationKey<(File..File?)>..CompilerConfigurationKey<(File..File?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -428,11 +428,13 @@ Inferred types:
 
 'getList' @ [206:31] ==> @NotNull public open fun <T : (Any..Any?)> getList(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>): (MutableList<(String..String?)>..List<(String..String?)>) defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'ADDITIONAL_JAVA_MODULES' @ [206:60] ==> public final val ADDITIONAL_JAVA_MODULES: (CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>..CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
 'this' @ [207:17] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[LazyClassReceiverParameterDescriptor]
+
+'contentRootToVirtualFile' @ [207:23] ==> private final fun contentRootToVirtualFile(root: JvmContentRoot): VirtualFile? defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[SimpleFunctionDescriptorImpl]
 
 'javaModuleFinder' @ [208:17] ==> val javaModuleFinder: CliJavaModuleFinder defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.<init>[LocalVariableDescriptor]
 
@@ -448,7 +450,7 @@ Inferred types:
 
 'getList' @ [212:76] ==> @NotNull public open fun <T : (Any..Any?)> getList(@NotNull p0: CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>): (MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>) defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContentRoot
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.ContentRoot..org.jetbrains.kotlin.config.ContentRoot?)
 
 'CONTENT_ROOTS' @ [212:105] ==> public final val CONTENT_ROOTS: (CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>..CompilerConfigurationKey<(MutableList<(ContentRoot..ContentRoot?)>..List<(ContentRoot..ContentRoot?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -492,8 +494,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> VirtualFile?
 
 'type' @ [219:67] ==> val type: JavaRoot.RootType defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.<init>.<anonymous>[LocalVariableDescriptor]
-
-'JavaRoot' @ [219:75] ==> public companion object RootTypes defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot[FakeCallableDescriptorForObject]
 
 'BINARY' @ [219:93] ==> enum entry BINARY defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType[FakeCallableDescriptorForObject]
 
@@ -541,7 +541,7 @@ Inferred types:
 
 'getService' @ [232:25] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(CoreJavaFileManager..CoreJavaFileManager?)>): (CoreJavaFileManager..CoreJavaFileManager?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CoreJavaFileManager
+    <T : (Any..Any?)> -> (com.intellij.core.CoreJavaFileManager..com.intellij.core.CoreJavaFileManager?)
 
 'project' @ [232:36] ==> val project: MockProject defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.<init>[LocalVariableDescriptor]
 
@@ -569,7 +569,7 @@ Inferred types:
 
 'registerService' @ [238:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(JavaModuleResolver..JavaModuleResolver?)>, @NotNull p1: JavaModuleResolver): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaModuleResolver
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleResolver..org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleResolver?)
 
 'JavaModuleResolver' @ [239:17] ==> public companion object SERVICE defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleResolver[FakeCallableDescriptorForObject]
 
@@ -601,7 +601,7 @@ Inferred types:
 
 'registerService' @ [244:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(MetadataFinderFactory..MetadataFinderFactory?)>, @NotNull p1: MetadataFinderFactory): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MetadataFinderFactory
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.MetadataFinderFactory..org.jetbrains.kotlin.load.kotlin.MetadataFinderFactory?)
 
 'java' @ [244:62] ==> public val <T> KClass<MetadataFinderFactory>.java: Class<MetadataFinderFactory> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -613,7 +613,7 @@ Inferred types:
 
 'registerService' @ [245:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(VirtualFileFinderFactory..VirtualFileFinderFactory?)>, @NotNull p1: VirtualFileFinderFactory): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> VirtualFileFinderFactory
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.VirtualFileFinderFactory..org.jetbrains.kotlin.load.kotlin.VirtualFileFinderFactory?)
 
 'VirtualFileFinderFactory' @ [245:33] ==> public companion object SERVICE defined in org.jetbrains.kotlin.load.kotlin.VirtualFileFinderFactory[FakeCallableDescriptorForObject]
 
@@ -627,7 +627,7 @@ Inferred types:
 
 'putUserData' @ [247:17] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<((List<File>) -> Unit..((List<File>) -> Unit)?)>, @Nullable p1: ((List<File>) -> Unit)?): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<List<File>, Unit>
+    <T : (Any..Any?)> -> ((kotlin.collections.List<java.io.File>) -> kotlin.Unit..((kotlin.collections.List<java.io.File>) -> kotlin.Unit)?)
 
 'APPEND_JAVA_SOURCE_ROOTS_HANDLER_KEY' @ [247:29] ==> public val APPEND_JAVA_SOURCE_ROOTS_HANDLER_KEY: Key<(List<File>) -> Unit> defined in org.jetbrains.kotlin.config[DeserializedPropertyDescriptor]
 
@@ -696,6 +696,8 @@ Inferred types:
     <R : Any> -> VirtualFile
 
 'this' @ [271:29] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[LazyClassReceiverParameterDescriptor]
+
+'findLocalFile' @ [271:35] ==> internal final fun findLocalFile(path: String): VirtualFile? defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[SimpleFunctionDescriptorImpl]
 
 'flatMap' @ [272:18] ==> public inline fun <T, R> Iterable<VirtualFile>.flatMap(transform: (VirtualFile) -> Iterable<VirtualFile>): List<VirtualFile> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -980,7 +982,7 @@ Inferred types:
 
 'getNotNull' @ [354:23] ==> @NotNull public open fun <T : (Any..Any?)> getNotNull(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>): MessageCollector defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [354:55] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1022,7 +1024,7 @@ Inferred types:
 
 'parentDisposable' @ [378:35] ==> value-parameter parentDisposable: Disposable defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.Companion.createForProduction[ValueParameterDescriptorImpl]
 
-'Disposable' @ [378:53] ==> public fun Disposable(function: () -> Unit): Disposable defined in com.intellij.openapi[SimpleFunctionDescriptorImpl]
+'Disposable' @ [378:53] ==> public fun Disposable(function: () -> Unit): Disposable defined in com.intellij.openapi[SamConstructorDescriptorImpl]
 
 'synchronized' @ [379:21] ==> @InlineOnly public inline fun <R> synchronized(lock: Any, block: () -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1120,7 +1122,7 @@ Inferred types:
 
 'parentDisposable' @ [424:35] ==> val parentDisposable: Disposable defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.Companion.getOrCreateApplicationEnvironmentForProduction.<anonymous>[LocalVariableDescriptor]
 
-'Disposable' @ [424:53] ==> public fun Disposable(function: () -> Unit): Disposable defined in com.intellij.openapi[SimpleFunctionDescriptorImpl]
+'Disposable' @ [424:53] ==> public fun Disposable(function: () -> Unit): Disposable defined in com.intellij.openapi[SamConstructorDescriptorImpl]
 
 'synchronized' @ [425:21] ==> @InlineOnly public inline fun <R> synchronized(lock: Any, block: () -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1182,7 +1184,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [462:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: String, @NotNull p2: Class<out (FileTypeExtensionPoint<*>..FileTypeExtensionPoint<*>?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FileTypeExtensionPoint<*>
+    <T : (Any..Any?)> -> (com.intellij.openapi.fileTypes.FileTypeExtensionPoint<*>..com.intellij.openapi.fileTypes.FileTypeExtensionPoint<*>?)
 
 'getRootArea' @ [462:74] ==> @NotNull public open fun getRootArea(): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
@@ -1190,7 +1192,7 @@ Inferred types:
 
 'FileTypeExtensionPoint' @ [462:121] ==> public constructor FileTypeExtensionPoint<T : (Any..Any?)>() defined in com.intellij.openapi.fileTypes.FileTypeExtensionPoint[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@4104e46e
 
 'java' @ [462:151] ==> public val <T> KClass<FileTypeExtensionPoint<*>>.java: Class<FileTypeExtensionPoint<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1198,7 +1200,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [463:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(FileContextProvider..FileContextProvider?)>, @NotNull p2: Class<out (FileContextProvider..FileContextProvider?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FileContextProvider
+    <T : (Any..Any?)> -> (com.intellij.psi.FileContextProvider..com.intellij.psi.FileContextProvider?)
 
 'getRootArea' @ [463:74] ==> @NotNull public open fun getRootArea(): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
@@ -1212,13 +1214,13 @@ Inferred types:
 
 'registerExtensionPoint' @ [465:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(MetaDataContributor..MetaDataContributor?)>, @NotNull p2: Class<out (MetaDataContributor..MetaDataContributor?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MetaDataContributor
+    <T : (Any..Any?)> -> (com.intellij.psi.meta.MetaDataContributor..com.intellij.psi.meta.MetaDataContributor?)
 
 'getRootArea' @ [465:74] ==> @NotNull public open fun getRootArea(): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
 'EP_NAME' @ [465:109] ==> public final val EP_NAME: (ExtensionPointName<(MetaDataContributor..MetaDataContributor?)>..ExtensionPointName<(MetaDataContributor..MetaDataContributor?)>?) defined in com.intellij.psi.meta.MetaDataContributor[JavaPropertyDescriptor]
 
-'MetaDataContributor' @ [465:118] ==> public fun MetaDataContributor(function: ((MetaDataRegistrar..MetaDataRegistrar?)) -> Unit): MetaDataContributor defined in com.intellij.psi.meta[SimpleFunctionDescriptorImpl]
+'MetaDataContributor' @ [465:118] ==> public fun MetaDataContributor(function: ((MetaDataRegistrar..MetaDataRegistrar?)) -> Unit): MetaDataContributor defined in com.intellij.psi.meta[SamConstructorDescriptorImpl]
 
 'java' @ [465:145] ==> public val <T> KClass<MetaDataContributor>.java: Class<MetaDataContributor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1226,7 +1228,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [466:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(PsiAugmentProvider..PsiAugmentProvider?)>, @NotNull p2: Class<out (PsiAugmentProvider..PsiAugmentProvider?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiAugmentProvider
+    <T : (Any..Any?)> -> (com.intellij.psi.augment.PsiAugmentProvider..com.intellij.psi.augment.PsiAugmentProvider?)
 
 'getRootArea' @ [466:74] ==> @NotNull public open fun getRootArea(): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
@@ -1240,7 +1242,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [467:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(JavaMainMethodProvider..JavaMainMethodProvider?)>, @NotNull p2: Class<out (JavaMainMethodProvider..JavaMainMethodProvider?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaMainMethodProvider
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.runner.JavaMainMethodProvider..com.intellij.codeInsight.runner.JavaMainMethodProvider?)
 
 'getRootArea' @ [467:74] ==> @NotNull public open fun getRootArea(): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
@@ -1252,13 +1254,13 @@ Inferred types:
 
 'registerExtensionPoint' @ [469:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(ContainerProvider..ContainerProvider?)>, @NotNull p2: Class<out (ContainerProvider..ContainerProvider?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContainerProvider
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.ContainerProvider..com.intellij.codeInsight.ContainerProvider?)
 
 'getRootArea' @ [469:74] ==> @NotNull public open fun getRootArea(): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
 'EP_NAME' @ [469:107] ==> public final val EP_NAME: (ExtensionPointName<(ContainerProvider..ContainerProvider?)>..ExtensionPointName<(ContainerProvider..ContainerProvider?)>?) defined in com.intellij.codeInsight.ContainerProvider[JavaPropertyDescriptor]
 
-'ContainerProvider' @ [469:116] ==> public fun ContainerProvider(function: (PsiElement) -> PsiElement?): ContainerProvider defined in com.intellij.codeInsight[SimpleFunctionDescriptorImpl]
+'ContainerProvider' @ [469:116] ==> public fun ContainerProvider(function: (PsiElement) -> PsiElement?): ContainerProvider defined in com.intellij.codeInsight[SamConstructorDescriptorImpl]
 
 'java' @ [469:141] ==> public val <T> KClass<ContainerProvider>.java: Class<ContainerProvider> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1266,7 +1268,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [470:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(ClsCustomNavigationPolicy..ClsCustomNavigationPolicy?)>, @NotNull p2: Class<out (ClsCustomNavigationPolicy..ClsCustomNavigationPolicy?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClsCustomNavigationPolicy
+    <T : (Any..Any?)> -> (com.intellij.psi.impl.compiled.ClsCustomNavigationPolicy..com.intellij.psi.impl.compiled.ClsCustomNavigationPolicy?)
 
 'getRootArea' @ [470:74] ==> @NotNull public open fun getRootArea(): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
@@ -1278,13 +1280,13 @@ Inferred types:
 
 'registerExtensionPoint' @ [471:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(ClassFileDecompilers.Decompiler..ClassFileDecompilers.Decompiler?)>, @NotNull p2: Class<out (ClassFileDecompilers.Decompiler..ClassFileDecompilers.Decompiler?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Decompiler
+    <T : (Any..Any?)> -> (com.intellij.psi.compiled.ClassFileDecompilers.Decompiler..com.intellij.psi.compiled.ClassFileDecompilers.Decompiler?)
 
 'getRootArea' @ [471:74] ==> @NotNull public open fun getRootArea(): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
 'EP_NAME' @ [471:110] ==> public final val EP_NAME: (ExtensionPointName<(ClassFileDecompilers.Decompiler..ClassFileDecompilers.Decompiler?)>..ExtensionPointName<(ClassFileDecompilers.Decompiler..ClassFileDecompilers.Decompiler?)>?) defined in com.intellij.psi.compiled.ClassFileDecompilers[JavaPropertyDescriptor]
 
-'Decompiler' @ [471:140] ==> public final fun Decompiler(function: (VirtualFile) -> Boolean): ClassFileDecompilers.Decompiler defined in com.intellij.psi.compiled.ClassFileDecompilers[SimpleFunctionDescriptorImpl]
+'Decompiler' @ [471:140] ==> public final fun Decompiler(function: (VirtualFile) -> Boolean): ClassFileDecompilers.Decompiler defined in com.intellij.psi.compiled.ClassFileDecompilers[SamConstructorDescriptorImpl]
 
 'java' @ [471:158] ==> public val <T> KClass<ClassFileDecompilers.Decompiler>.java: Class<ClassFileDecompilers.Decompiler> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1292,7 +1294,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [473:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(TypeAnnotationModifier..TypeAnnotationModifier?)>, @NotNull p2: Class<out (TypeAnnotationModifier..TypeAnnotationModifier?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeAnnotationModifier
+    <T : (Any..Any?)> -> (com.intellij.psi.augment.TypeAnnotationModifier..com.intellij.psi.augment.TypeAnnotationModifier?)
 
 'getRootArea' @ [473:74] ==> @NotNull public open fun getRootArea(): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
@@ -1306,7 +1308,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [474:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(MetaLanguage..MetaLanguage?)>, @NotNull p2: Class<out (MetaLanguage..MetaLanguage?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MetaLanguage
+    <T : (Any..Any?)> -> (com.intellij.lang.MetaLanguage..com.intellij.lang.MetaLanguage?)
 
 'getRootArea' @ [474:74] ==> @NotNull public open fun getRootArea(): ExtensionsArea defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 
@@ -1322,7 +1324,7 @@ Inferred types:
 
 'get' @ [479:35] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'INTELLIJ_PLUGIN_ROOT' @ [479:60] ==> public final val INTELLIJ_PLUGIN_ROOT: (CompilerConfigurationKey<(String..String?)>..CompilerConfigurationKey<(String..String?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1331,17 +1333,17 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [479:89] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'configuration' @ [480:24] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.Companion.registerApplicationExtensionPointsAndExtensionsFrom[ValueParameterDescriptorImpl]
 
 'get' @ [480:38] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(CompilerJarLocator..CompilerJarLocator?)>): CompilerJarLocator? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CompilerJarLocator
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.jvm.compiler.CompilerJarLocator..org.jetbrains.kotlin.cli.jvm.compiler.CompilerJarLocator?)
 
 'COMPILER_JAR_LOCATOR' @ [480:63] ==> @SuppressWarnings public final val COMPILER_JAR_LOCATOR: (CompilerConfigurationKey<(CompilerJarLocator..CompilerJarLocator?)>..CompilerConfigurationKey<(CompilerJarLocator..CompilerJarLocator?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
 'compilerJar' @ [480:86] ==> public final val CompilerJarLocator.compilerJar: File[MyPropertyDescriptor]
-
-'PathUtil' @ [481:24] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'pathUtilJar' @ [481:33] ==> public final val pathUtilJar: File defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
@@ -1420,8 +1422,6 @@ Inferred types:
 
 'INSTANCE' @ [508:49] ==> public final val INSTANCE: (KotlinFileType..KotlinFileType?) defined in org.jetbrains.kotlin.idea.KotlinFileType[JavaPropertyDescriptor]
 
-'KotlinParserDefinition' @ [508:59] ==> public companion object defined in org.jetbrains.kotlin.parsing.KotlinParserDefinition[FakeCallableDescriptorForObject]
-
 'STD_SCRIPT_SUFFIX' @ [508:82] ==> @field:JvmField public final val STD_SCRIPT_SUFFIX: String defined in org.jetbrains.kotlin.parsing.KotlinParserDefinition.Companion[DeserializedPropertyDescriptor]
 
 'registerParserDefinition' @ [509:17] ==> public open fun registerParserDefinition(@NotNull p0: ParserDefinition): Unit defined in com.intellij.core.JavaCoreApplicationEnvironment[JavaMethodDescriptor]
@@ -1432,7 +1432,7 @@ Inferred types:
 
 'registerService' @ [510:29] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(KotlinBinaryClassCache..KotlinBinaryClassCache?)>, @NotNull p1: KotlinBinaryClassCache): Unit defined in com.intellij.mock.MockApplication[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinBinaryClassCache
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.KotlinBinaryClassCache..org.jetbrains.kotlin.load.kotlin.KotlinBinaryClassCache?)
 
 'KotlinBinaryClassCache' @ [510:45] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.KotlinBinaryClassCache[FakeCallableDescriptorForObject]
 
@@ -1446,7 +1446,7 @@ Inferred types:
 
 'registerService' @ [511:29] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(JavaClassSupers..JavaClassSupers?)>, @NotNull p1: Class<out (JavaClassSupers..JavaClassSupers?)>): Unit defined in com.intellij.mock.MockApplication[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaClassSupers
+    <T : (Any..Any?)> -> (com.intellij.psi.util.JavaClassSupers..com.intellij.psi.util.JavaClassSupers?)
 
 'JavaClassSupers' @ [511:45] ==> public constructor JavaClassSupers() defined in com.intellij.psi.util.JavaClassSupers[JavaClassConstructorDescriptor]
 
@@ -1464,7 +1464,7 @@ Inferred types:
 
 'registerService' @ [512:29] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(TransactionGuard..TransactionGuard?)>, @NotNull p1: Class<out (TransactionGuard..TransactionGuard?)>): Unit defined in com.intellij.mock.MockApplication[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TransactionGuard
+    <T : (Any..Any?)> -> (com.intellij.openapi.application.TransactionGuard..com.intellij.openapi.application.TransactionGuard?)
 
 'TransactionGuard' @ [512:45] ==> public constructor TransactionGuard() defined in com.intellij.openapi.application.TransactionGuard[JavaClassConstructorDescriptor]
 
@@ -1480,13 +1480,13 @@ Inferred types:
 
 'registerExtensionPoint' @ [517:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>, @NotNull p2: Class<out (PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiTreeChangePreprocessor
+    <T : (Any..Any?)> -> (com.intellij.psi.impl.PsiTreeChangePreprocessor..com.intellij.psi.impl.PsiTreeChangePreprocessor?)
 
 'area' @ [517:63] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.Companion.registerProjectExtensionPoints[ValueParameterDescriptorImpl]
 
 'EP_NAME' @ [517:95] ==> public final val EP_NAME: (ExtensionPointName<(PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>..ExtensionPointName<(PsiTreeChangePreprocessor..PsiTreeChangePreprocessor?)>?) defined in com.intellij.psi.impl.PsiTreeChangePreprocessor[JavaPropertyDescriptor]
 
-'PsiTreeChangePreprocessor' @ [517:104] ==> public fun PsiTreeChangePreprocessor(function: (PsiTreeChangeEventImpl) -> Unit): PsiTreeChangePreprocessor defined in com.intellij.psi.impl[SimpleFunctionDescriptorImpl]
+'PsiTreeChangePreprocessor' @ [517:104] ==> public fun PsiTreeChangePreprocessor(function: (PsiTreeChangeEventImpl) -> Unit): PsiTreeChangePreprocessor defined in com.intellij.psi.impl[SamConstructorDescriptorImpl]
 
 'java' @ [517:137] ==> public val <T> KClass<PsiTreeChangePreprocessor>.java: Class<PsiTreeChangePreprocessor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1494,7 +1494,7 @@ Inferred types:
 
 'registerExtensionPoint' @ [518:40] ==> public open fun <T : (Any..Any?)> registerExtensionPoint(@NotNull p0: ExtensionsArea, @NotNull p1: ExtensionPointName<(PsiElementFinder..PsiElementFinder?)>, @NotNull p2: Class<out (PsiElementFinder..PsiElementFinder?)>): Unit defined in com.intellij.core.CoreApplicationEnvironment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElementFinder
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElementFinder..com.intellij.psi.PsiElementFinder?)
 
 'area' @ [518:63] ==> value-parameter area: ExtensionsArea defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.Companion.registerProjectExtensionPoints[ValueParameterDescriptorImpl]
 
@@ -1521,7 +1521,7 @@ Inferred types:
 
 'registerService' @ [526:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(KotlinScriptDefinitionProvider..KotlinScriptDefinitionProvider?)>, @NotNull p1: KotlinScriptDefinitionProvider): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinScriptDefinitionProvider
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider..org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider?)
 
 'KotlinScriptDefinitionProvider' @ [526:33] ==> public companion object defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider[FakeCallableDescriptorForObject]
 
@@ -1533,7 +1533,7 @@ Inferred types:
 
 'registerService' @ [527:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(ScriptDependenciesProvider..ScriptDependenciesProvider?)>, @NotNull p1: ScriptDependenciesProvider): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScriptDependenciesProvider
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.ScriptDependenciesProvider..org.jetbrains.kotlin.script.ScriptDependenciesProvider?)
 
 'ScriptDependenciesProvider' @ [527:33] ==> public companion object defined in org.jetbrains.kotlin.script.ScriptDependenciesProvider[FakeCallableDescriptorForObject]
 
@@ -1551,7 +1551,7 @@ Inferred types:
 
 'registerService' @ [528:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(KotlinJavaPsiFacade..KotlinJavaPsiFacade?)>, @NotNull p1: KotlinJavaPsiFacade): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinJavaPsiFacade
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.jvm.KotlinJavaPsiFacade..org.jetbrains.kotlin.resolve.jvm.KotlinJavaPsiFacade?)
 
 'KotlinJavaPsiFacade' @ [528:33] ==> public constructor KotlinJavaPsiFacade(@NotNull p0: Project) defined in org.jetbrains.kotlin.resolve.jvm.KotlinJavaPsiFacade[JavaClassConstructorDescriptor]
 
@@ -1565,7 +1565,7 @@ Inferred types:
 
 'registerService' @ [529:17] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(KtLightClassForFacade.FacadeStubCache..KtLightClassForFacade.FacadeStubCache?)>, @NotNull p1: KtLightClassForFacade.FacadeStubCache): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FacadeStubCache
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.FacadeStubCache..org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.FacadeStubCache?)
 
 'KtLightClassForFacade' @ [529:33] ==> public companion object Factory defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade[FakeCallableDescriptorForObject]
 
@@ -1575,8 +1575,6 @@ Inferred types:
 Inferred types:
     <T> -> FacadeStubCache
 
-'KtLightClassForFacade' @ [529:84] ==> public companion object Factory defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade[FakeCallableDescriptorForObject]
-
 'FacadeStubCache' @ [529:106] ==> public constructor FacadeStubCache(project: Project) defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.FacadeStubCache[DeserializedClassConstructorDescriptor]
 
 'this' @ [529:122] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment.Companion.registerProjectServices.<anonymous>[ReceiverParameterDescriptorImpl]
@@ -1585,7 +1583,7 @@ Inferred types:
 
 'registerService' @ [531:21] ==> public open fun <T : (Any..Any?)> registerService(@NotNull p0: Class<(ScriptReportSink..ScriptReportSink?)>, @NotNull p1: ScriptReportSink): Unit defined in com.intellij.mock.MockProject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScriptReportSink
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.ScriptReportSink..org.jetbrains.kotlin.script.ScriptReportSink?)
 
 'java' @ [531:61] ==> public val <T> KClass<ScriptReportSink>.java: Class<ScriptReportSink> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

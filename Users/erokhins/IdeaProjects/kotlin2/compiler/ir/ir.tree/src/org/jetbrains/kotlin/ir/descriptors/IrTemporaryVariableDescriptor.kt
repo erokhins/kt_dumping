@@ -2,8 +2,6 @@
 
 'containingDeclaration' @ [34:27] ==> value-parameter containingDeclaration: DeclarationDescriptor defined in org.jetbrains.kotlin.ir.descriptors.IrTemporaryVariableDescriptorImpl.<init>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [34:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [34:62] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'name' @ [34:69] ==> value-parameter name: Name defined in org.jetbrains.kotlin.ir.descriptors.IrTemporaryVariableDescriptorImpl.<init>[ValueParameterDescriptorImpl]

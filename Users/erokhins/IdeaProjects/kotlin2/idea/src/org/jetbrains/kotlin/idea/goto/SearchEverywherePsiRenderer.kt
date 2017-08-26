@@ -90,7 +90,7 @@ Inferred types:
 
 'width' @ [53:18] ==> public final val <E : (Any..Any?)> JList<out (Any..Any?)>.width: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> Captured(*)
 
 'text' @ [53:37] ==> var text: String defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
@@ -134,13 +134,13 @@ Inferred types:
 
 'font' @ [61:43] ==> public final var <E : (Any..Any?)> JList<out (Any..Any?)>.font: (Font..Font?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> Captured(*)
 
 'list' @ [62:24] ==> private final val list: JList<*> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer[PropertyDescriptorImpl]
 
 'width' @ [62:29] ==> public final val <E : (Any..Any?)> JList<out (Any..Any?)>.width: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> Captured(*)
 
 'fm' @ [62:37] ==> val fm: (FontMetrics..FontMetrics?) defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
@@ -176,25 +176,25 @@ Inferred types:
 
 'LinkedList' @ [67:21] ==> public constructor LinkedList<E : (Any..Any?)>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)) defined in java.util.LinkedList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'split' @ [67:43] ==> @NotNull @Contract public open fun split(@NotNull p0: String, @NotNull p1: String): (MutableList<(String..String?)>..List<(String..String?)>) defined in com.intellij.openapi.util.text.StringUtil[JavaMethodDescriptor]
 
 'text' @ [67:49] ==> var text: String defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
-'parts' @ [69:16] ==> val parts: LinkedList<String> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
+'parts' @ [69:16] ==> val parts: LinkedList<(String..String?)> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
 'size' @ [69:22] ==> public open val size: Int defined in java.util.LinkedList[JavaPropertyDescriptor]
 
 'index' @ [70:13] ==> var index: Int defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
-'parts' @ [70:21] ==> val parts: LinkedList<String> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
+'parts' @ [70:21] ==> val parts: LinkedList<(String..String?)> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
 'size' @ [70:27] ==> public open val size: Int defined in java.util.LinkedList[JavaPropertyDescriptor]
 
-'parts' @ [71:13] ==> val parts: LinkedList<String> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
+'parts' @ [71:13] ==> val parts: LinkedList<(String..String?)> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
-'removeAt' @ [71:19] ==> public open fun removeAt(p0: Int): String defined in java.util.LinkedList[JavaMethodDescriptor]
+'removeAt' @ [71:19] ==> public open fun removeAt(p0: Int): (String..String?) defined in java.util.LinkedList[JavaMethodDescriptor]
 
 'index' @ [71:28] ==> var index: Int defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
@@ -206,13 +206,13 @@ Inferred types:
 
 'join' @ [72:43] ==> @NotNull @Contract public open fun join(@NotNull p0: (MutableCollection<(String..String?)>..Collection<(String..String?)>), @NotNull p1: String): String defined in com.intellij.openapi.util.text.StringUtil[JavaMethodDescriptor]
 
-'parts' @ [72:48] ==> val parts: LinkedList<String> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
+'parts' @ [72:48] ==> val parts: LinkedList<(String..String?)> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
 'maxWidth' @ [72:71] ==> val maxWidth: Int defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
-'parts' @ [73:17] ==> val parts: LinkedList<String> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
+'parts' @ [73:17] ==> val parts: LinkedList<(String..String?)> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
-'add' @ [73:23] ==> public open fun add(index: Int, element: String): Unit defined in java.util.LinkedList[JavaMethodDescriptor]
+'add' @ [73:23] ==> public open fun add(index: Int, element: (String..String?)): Unit defined in java.util.LinkedList[JavaMethodDescriptor]
 
 'index' @ [73:27] ==> var index: Int defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
@@ -226,7 +226,7 @@ Inferred types:
 
 'join' @ [74:42] ==> @NotNull @Contract public open fun join(@NotNull p0: (MutableCollection<(String..String?)>..Collection<(String..String?)>), @NotNull p1: String): String defined in com.intellij.openapi.util.text.StringUtil[JavaMethodDescriptor]
 
-'parts' @ [74:47] ==> val parts: LinkedList<String> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
+'parts' @ [74:47] ==> val parts: LinkedList<(String..String?)> defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 
 'right' @ [74:61] ==> val right: String defined in org.jetbrains.kotlin.idea.goto.KotlinSearchEverywherePsiRenderer.getContainerText[LocalVariableDescriptor]
 

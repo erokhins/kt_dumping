@@ -110,7 +110,7 @@ Inferred types:
 
 'setAssertOnFileLoadingFilter' @ [79:17] ==> public open fun setAssertOnFileLoadingFilter(@NotNull p0: VirtualFileFilter, @NotNull p1: Disposable): Unit defined in com.intellij.psi.impl.PsiManagerImpl[JavaMethodDescriptor]
 
-'VirtualFileFilter' @ [79:46] ==> public fun VirtualFileFilter(function: ((VirtualFile..VirtualFile?)) -> Boolean): VirtualFileFilter defined in com.intellij.openapi.vfs[SimpleFunctionDescriptorImpl]
+'VirtualFileFilter' @ [79:46] ==> public fun VirtualFileFilter(function: ((VirtualFile..VirtualFile?)) -> Boolean): VirtualFileFilter defined in com.intellij.openapi.vfs[SamConstructorDescriptorImpl]
 
 'invoke' @ [79:74] ==> public abstract operator fun invoke(p1: VirtualFile): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
 

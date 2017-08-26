@@ -44,7 +44,7 @@
 Inferred types:
     <S> -> PackageFragmentProvider
 
-'createKotlinJavascriptPackageFragmentProvider' @ [67:30] ==> public fun createKotlinJavascriptPackageFragmentProvider(storageManager: StorageManager, module: ModuleDescriptor, header: JsProtoBuf.Header, packageFragmentProtos: List<ProtoBuf.PackageFragment>, configuration: DeserializationConfiguration, lookupTracker: LookupTracker): PackageFragmentProvider defined in org.jetbrains.kotlin.serialization.js[SimpleFunctionDescriptorImpl]
+'createKotlinJavascriptPackageFragmentProvider' @ [67:30] ==> public fun createKotlinJavascriptPackageFragmentProvider(storageManager: StorageManager, module: ModuleDescriptor, header: JsProtoBuf.Header, packageFragmentProtos: List<ProtoBuf.PackageFragment>, configuration: DeserializationConfiguration, lookupTracker: LookupTracker): PackageFragmentProvider defined in org.jetbrains.kotlin.serialization.js in file kotlinJavascriptPackageFragmentProvider.kt[SimpleFunctionDescriptorImpl]
 
 'storageManager' @ [68:17] ==> value-parameter storageManager: StorageManager defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil.readModuleFromProto[ValueParameterDescriptorImpl]
 
@@ -71,8 +71,6 @@ Inferred types:
 
 'it' @ [80:48] ==> value-parameter it: ByteArray defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil.readDescriptors.<anonymous>[ValueParameterDescriptorImpl]
 
-'JsSerializerProtocol' @ [80:52] ==> public object JsSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.js in file KotlinJavascriptSerializerExtension.kt[FakeCallableDescriptorForObject]
-
 'extensionRegistry' @ [80:73] ==> public final val extensionRegistry: ExtensionRegistryLite defined in org.jetbrains.kotlin.serialization.js.JsSerializerProtocol[DeserializedPropertyDescriptor]
 
 'parseFrom' @ [82:45] ==> public open fun parseFrom(input: (CodedInputStream..CodedInputStream?), extensionRegistry: (ExtensionRegistryLite..ExtensionRegistryLite?)): (JsProtoBuf.Header..JsProtoBuf.Header?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf.Header[JavaMethodDescriptor]
@@ -83,11 +81,9 @@ Inferred types:
 
 'header' @ [82:93] ==> public final val header: ByteArray defined in org.jetbrains.kotlin.serialization.js.PackagesWithHeaderMetadata[PropertyDescriptorImpl]
 
-'JsSerializerProtocol' @ [82:102] ==> public object JsSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.js in file KotlinJavascriptSerializerExtension.kt[FakeCallableDescriptorForObject]
-
 'extensionRegistry' @ [82:123] ==> public final val extensionRegistry: ExtensionRegistryLite defined in org.jetbrains.kotlin.serialization.js.JsSerializerProtocol[DeserializedPropertyDescriptor]
 
-'createKotlinJavascriptPackageFragmentProvider' @ [83:16] ==> public fun createKotlinJavascriptPackageFragmentProvider(storageManager: StorageManager, module: ModuleDescriptor, header: JsProtoBuf.Header, packageFragmentProtos: List<ProtoBuf.PackageFragment>, configuration: DeserializationConfiguration, lookupTracker: LookupTracker): PackageFragmentProvider defined in org.jetbrains.kotlin.serialization.js[SimpleFunctionDescriptorImpl]
+'createKotlinJavascriptPackageFragmentProvider' @ [83:16] ==> public fun createKotlinJavascriptPackageFragmentProvider(storageManager: StorageManager, module: ModuleDescriptor, header: JsProtoBuf.Header, packageFragmentProtos: List<ProtoBuf.PackageFragment>, configuration: DeserializationConfiguration, lookupTracker: LookupTracker): PackageFragmentProvider defined in org.jetbrains.kotlin.serialization.js in file kotlinJavascriptPackageFragmentProvider.kt[SimpleFunctionDescriptorImpl]
 
 'storageManager' @ [83:62] ==> value-parameter storageManager: StorageManager defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil.readDescriptors[ValueParameterDescriptorImpl]
 
@@ -330,7 +326,7 @@ Inferred types:
 
 'setExtension' @ [163:17] ==> public final fun <Type : (Any..Any?)> setExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.PackageFragment..ProtoBuf.PackageFragment?), (JsProtoBuf.Files..JsProtoBuf.Files?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.PackageFragment..ProtoBuf.PackageFragment?), (JsProtoBuf.Files..JsProtoBuf.Files?)>?), p1: (JsProtoBuf.Files..JsProtoBuf.Files?)): (ProtoBuf.PackageFragment.Builder..ProtoBuf.PackageFragment.Builder?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.PackageFragment.Builder[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Files
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.js.JsProtoBuf.Files..org.jetbrains.kotlin.serialization.js.JsProtoBuf.Files?)
 
 'packageFragmentFiles' @ [164:28] ==> public final val packageFragmentFiles: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.PackageFragment..ProtoBuf.PackageFragment?), (JsProtoBuf.Files..JsProtoBuf.Files?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.PackageFragment..ProtoBuf.PackageFragment?), (JsProtoBuf.Files..JsProtoBuf.Files?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -510,6 +506,8 @@ Inferred types:
 
 'this' @ [208:33] ==> <this> defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil.toContentMap.<anonymous>[ReceiverParameterDescriptorImpl]
 
+'writeInt' @ [208:39] ==> public final fun writeInt(p0: Int): Unit defined in java.io.DataOutputStream[JavaMethodDescriptor]
+
 'serializeHeader' @ [211:13] ==> public final fun serializeHeader(packageFqName: FqName?): JsProtoBuf.Header defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [211:29] ==> val fqName: FqName defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil.toContentMap[LocalVariableDescriptor]
@@ -525,8 +523,6 @@ Inferred types:
 'stream' @ [212:26] ==> val stream: ByteArrayOutputStream defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil.toContentMap[LocalVariableDescriptor]
 
 'contentMap' @ [214:13] ==> val contentMap: HashMap<String, ByteArray> /* = HashMap<String, ByteArray> */ defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil.toContentMap[LocalVariableDescriptor]
-
-'JsSerializerProtocol' @ [214:24] ==> public object JsSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.js in file KotlinJavascriptSerializerExtension.kt[FakeCallableDescriptorForObject]
 
 'getKjsmFilePath' @ [214:45] ==> public final fun getKjsmFilePath(packageFqName: FqName): String defined in org.jetbrains.kotlin.serialization.js.JsSerializerProtocol[SimpleFunctionDescriptorImpl]
 
@@ -604,11 +600,7 @@ Inferred types:
 
 'getContributedDescriptors' @ [249:52] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [249:78] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'PACKAGES' @ [249:99] ==> @field:JvmField public final val PACKAGES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'MemberScope' @ [249:109] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'ALL_NAME_FILTER' @ [249:121] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 
@@ -681,15 +673,11 @@ Inferred types:
 
 'stream' @ [267:50] ==> value-parameter stream: GZIPInputStream defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil.deserializeToLibraryParts.<anonymous>[ValueParameterDescriptorImpl]
 
-'JsSerializerProtocol' @ [267:58] ==> public object JsSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.js in file KotlinJavascriptSerializerExtension.kt[FakeCallableDescriptorForObject]
-
 'extensionRegistry' @ [267:79] ==> public final val extensionRegistry: ExtensionRegistryLite defined in org.jetbrains.kotlin.serialization.js.JsSerializerProtocol[DeserializedPropertyDescriptor]
 
 'parseFrom' @ [268:32] ==> public open fun parseFrom(input: (InputStream..InputStream?), extensionRegistry: (ExtensionRegistryLite..ExtensionRegistryLite?)): (JsProtoBuf.Library..JsProtoBuf.Library?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf.Library[JavaMethodDescriptor]
 
 'stream' @ [268:42] ==> value-parameter stream: GZIPInputStream defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptSerializationUtil.deserializeToLibraryParts.<anonymous>[ValueParameterDescriptorImpl]
-
-'JsSerializerProtocol' @ [268:50] ==> public object JsSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.serialization.js in file KotlinJavascriptSerializerExtension.kt[FakeCallableDescriptorForObject]
 
 'extensionRegistry' @ [268:71] ==> public final val extensionRegistry: ExtensionRegistryLite defined in org.jetbrains.kotlin.serialization.js.JsSerializerProtocol[DeserializedPropertyDescriptor]
 

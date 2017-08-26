@@ -10,7 +10,7 @@ Inferred types:
 
 'element' @ [35:26] ==> value-parameter element: KtDotQualifiedExpression defined in org.jetbrains.kotlin.idea.intentions.SwapStringEqualsIgnoreCaseIntention.applicabilityRange[ValueParameterDescriptorImpl]
 
-'getCallableDescriptor' @ [35:34] ==> internal fun KtExpression.getCallableDescriptor(): CallableDescriptor? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'getCallableDescriptor' @ [35:34] ==> internal fun KtExpression.getCallableDescriptor(): CallableDescriptor? defined in org.jetbrains.kotlin.idea.intentions in file ReplaceUntilWithRangeToIntention.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [37:30] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.intentions.SwapStringEqualsIgnoreCaseIntention.applicabilityRange[LocalVariableDescriptor]
 

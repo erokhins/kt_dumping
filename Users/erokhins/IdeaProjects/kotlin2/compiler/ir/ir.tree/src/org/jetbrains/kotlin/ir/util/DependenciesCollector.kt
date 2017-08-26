@@ -146,7 +146,7 @@ Inferred types:
 
 'getParentOfType' @ [71:57] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(PackageFragmentDescriptor..PackageFragmentDescriptor?)>): PackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> PackageFragmentDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor?)
 
 'descriptor' @ [71:73] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.ir.util.DependenciesCollector.addTopLevelDescriptor[ValueParameterDescriptorImpl]
 

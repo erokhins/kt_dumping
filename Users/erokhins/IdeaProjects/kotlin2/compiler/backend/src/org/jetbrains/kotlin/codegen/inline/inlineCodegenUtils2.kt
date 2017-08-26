@@ -6,7 +6,7 @@
 
 'parentContext' @ [31:53] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.parentContext: raw (CodegenContext<(DeclarationDescriptor..DeclarationDescriptor?)>?..CodegenContext<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 
 'parentContext' @ [32:12] ==> var parentContext: CodegenContext<*>? defined in org.jetbrains.kotlin.codegen.inline.initDefaultSourceMappingIfNeeded[LocalVariableDescriptor]
 
@@ -14,13 +14,13 @@ Inferred types:
 
 'isInlineMethodContext' @ [33:27] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.isInlineMethodContext: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 
 'codegen' @ [35:13] ==> value-parameter codegen: MemberCodegen<*> defined in org.jetbrains.kotlin.codegen.inline.initDefaultSourceMappingIfNeeded[ValueParameterDescriptorImpl]
 
 'orCreateSourceMapper' @ [35:21] ==> public final val <T : (KtPureElement..KtPureElement?)> MemberCodegen<out (KtPureElement..KtPureElement?)>.orCreateSourceMapper: DefaultSourceMapper[MyPropertyDescriptor]
 Inferred types:
-    <T : (KtPureElement..KtPureElement?)> -> (org.jetbrains.kotlin.psi.KtPureElement..org.jetbrains.kotlin.psi.KtPureElement?)
+    <T : (KtPureElement..KtPureElement?)> -> Captured(*)
 
 'parentContext' @ [38:9] ==> var parentContext: CodegenContext<*>? defined in org.jetbrains.kotlin.codegen.inline.initDefaultSourceMappingIfNeeded[LocalVariableDescriptor]
 
@@ -28,5 +28,5 @@ Inferred types:
 
 'parentContext' @ [38:39] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.parentContext: raw (CodegenContext<(DeclarationDescriptor..DeclarationDescriptor?)>?..CodegenContext<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 

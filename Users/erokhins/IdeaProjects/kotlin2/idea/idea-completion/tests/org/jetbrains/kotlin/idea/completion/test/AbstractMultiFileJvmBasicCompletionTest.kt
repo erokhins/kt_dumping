@@ -22,7 +22,7 @@
 
 'getTestRootDisposable' @ [27:110] ==> @NotNull public open fun getTestRootDisposable(): Disposable defined in org.jetbrains.kotlin.idea.completion.test.AbstractMultiFileJvmBasicCompletionTest[JavaMethodDescriptor]
 
-'testCompletion' @ [28:13] ==> public fun testCompletion(fileText: String, platform: TargetPlatform?, complete: (CompletionType, Int) -> Array<LookupElement>?, defaultCompletionType: CompletionType = ..., defaultInvocationCount: Int = ..., additionalValidDirectives: Collection<String> = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'testCompletion' @ [28:13] ==> public fun testCompletion(fileText: String, platform: TargetPlatform?, complete: (CompletionType, Int) -> Array<LookupElement>?, defaultCompletionType: CompletionType = ..., defaultInvocationCount: Int = ..., additionalValidDirectives: Collection<String> = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test in file CompletionTestUtil.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [28:28] ==> public final val AbstractMultiFileJvmBasicCompletionTest.file: (PsiFile..PsiFile?)[MyPropertyDescriptor]
 

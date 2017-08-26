@@ -212,6 +212,8 @@ Inferred types:
 
 'Char' @ [105:40] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
 
+'isWhitespace' @ [105:46] ==> public fun Char.isWhitespace(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'contains' @ [105:60] ==> public operator fun CharSequence.contains(char: Char, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'builder' @ [106:17] ==> private final val builder: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.j2k.CodeBuilder[PropertyDescriptorImpl]

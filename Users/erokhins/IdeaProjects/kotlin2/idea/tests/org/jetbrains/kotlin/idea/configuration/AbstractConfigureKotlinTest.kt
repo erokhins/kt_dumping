@@ -215,17 +215,17 @@ Inferred types:
 
 'project' @ [121:87] ==> public final val AbstractConfigureKotlinTest.project: (Project..Project?)[MyPropertyDescriptor]
 
-'lazy' @ [127:74] ==> public fun <T> lazy(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [127:74] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
 'KotlinJavaModuleConfigurator' @ [128:22] ==> internal constructor KotlinJavaModuleConfigurator() defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator[DeserializedClassConstructorDescriptor]
 
 'getPathRelativeToTemp' @ [129:74] ==> private final fun getPathRelativeToTemp(relativePath: String): String defined in org.jetbrains.kotlin.idea.configuration.AbstractConfigureKotlinTest.Companion[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [133:70] ==> public fun <T> lazy(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [133:70] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
 'KotlinJsModuleConfigurator' @ [134:22] ==> public constructor KotlinJsModuleConfigurator() defined in org.jetbrains.kotlin.idea.configuration.KotlinJsModuleConfigurator[DeserializedClassConstructorDescriptor]
 
@@ -353,8 +353,6 @@ Inferred types:
 
 'getTempDirectory' @ [184:59] ==> @NotNull public open fun getTempDirectory(): String defined in com.intellij.openapi.util.io.FileUtil[JavaMethodDescriptor]
 
-'PathUtil' @ [184:86] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'JS_LIB_JAR_NAME' @ [184:95] ==> public const final val JS_LIB_JAR_NAME: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'myFilesToDelete' @ [185:34] ==> protected/*protected static*/ final val myFilesToDelete: (MutableCollection<(File..File?)>..Collection<(File..File?)>?) defined in com.intellij.testFramework.PlatformTestCase[JavaPropertyDescriptor]
@@ -385,8 +383,6 @@ Inferred types:
 
 'assertFalse' @ [196:22] ==> public open fun assertFalse(p0: (String..String?), p1: Boolean): Unit defined in junit.framework.TestCase[JavaMethodDescriptor]
 
-'String' @ [197:21] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
-
 'format' @ [197:28] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'module' @ [197:86] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.configuration.AbstractConfigureKotlinTest.Companion.assertNotConfigured[ValueParameterDescriptorImpl]
@@ -404,8 +400,6 @@ Inferred types:
 'module' @ [198:47] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.configuration.AbstractConfigureKotlinTest.Companion.assertNotConfigured[ValueParameterDescriptorImpl]
 
 'assertTrue' @ [202:22] ==> public open fun assertTrue(p0: (String..String?), p1: Boolean): Unit defined in junit.framework.TestCase[JavaMethodDescriptor]
-
-'String' @ [202:33] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
 'format' @ [202:40] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 

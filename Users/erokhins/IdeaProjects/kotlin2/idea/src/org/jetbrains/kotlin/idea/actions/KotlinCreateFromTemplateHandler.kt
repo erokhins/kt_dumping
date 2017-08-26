@@ -30,6 +30,8 @@ Inferred types:
 
 'String' @ [32:52] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'quoteIfNeeded' @ [32:60] ==> public fun String.quoteIfNeeded(): String defined in org.jetbrains.kotlin.idea.core[DeserializedSimpleFunctionDescriptor]
+
 'props' @ [35:20] ==> value-parameter props: MutableMap<String, Any> defined in org.jetbrains.kotlin.idea.actions.KotlinCreateFromTemplateHandler.prepareProperties[ValueParameterDescriptorImpl]
 
 'ATTRIBUTE_NAME' @ [35:39] ==> public const final val ATTRIBUTE_NAME: String defined in com.intellij.ide.fileTemplates.FileTemplate[JavaPropertyDescriptor]

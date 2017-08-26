@@ -14,17 +14,13 @@
 
 'attributes' @ [35:29] ==> value-parameter attributes: Attributes defined in org.jetbrains.kotlin.android.synthetic.AndroidXmlHandler.startElement[ValueParameterDescriptorImpl]
 
-'toMap' @ [35:40] ==> private fun Attributes.toMap(): HashMap<String, String> defined in org.jetbrains.kotlin.android.synthetic[SimpleFunctionDescriptorImpl]
+'toMap' @ [35:40] ==> private fun Attributes.toMap(): HashMap<String, String> defined in org.jetbrains.kotlin.android.synthetic in file AndroidXmlHandler.kt[SimpleFunctionDescriptorImpl]
 
 'attributesMap' @ [36:27] ==> val attributesMap: HashMap<String, String> defined in org.jetbrains.kotlin.android.synthetic.AndroidXmlHandler.startElement[LocalVariableDescriptor]
-
-'AndroidConst' @ [36:41] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'ID_ATTRIBUTE_NO_NAMESPACE' @ [36:54] ==> public final val ID_ATTRIBUTE_NO_NAMESPACE: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
 'attributesMap' @ [37:26] ==> val attributesMap: HashMap<String, String> defined in org.jetbrains.kotlin.android.synthetic.AndroidXmlHandler.startElement[LocalVariableDescriptor]
-
-'AndroidConst' @ [37:40] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'CLASS_ATTRIBUTE_NO_NAMESPACE' @ [37:53] ==> public final val CLASS_ATTRIBUTE_NO_NAMESPACE: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 

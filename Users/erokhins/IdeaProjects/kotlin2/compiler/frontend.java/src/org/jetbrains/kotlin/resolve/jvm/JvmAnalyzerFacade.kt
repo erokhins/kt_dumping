@@ -22,9 +22,9 @@
 
 'syntheticFiles' @ [61:56] ==> val syntheticFiles: Collection<KtFile> defined in org.jetbrains.kotlin.resolve.jvm.JvmAnalyzerFacade.createResolverForModule[LocalVariableDescriptor]
 
-'if (moduleInfo.isLibrary) GlobalSearchScope.EMPTY_SCOPE else moduleContentScope' @ [62:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: GlobalSearchScope, elseBranch: GlobalSearchScope): GlobalSearchScope[SimpleFunctionDescriptorImpl]
+'if (moduleInfo.isLibrary) GlobalSearchScope.EMPTY_SCOPE else moduleContentScope' @ [62:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (GlobalSearchScope..GlobalSearchScope?), elseBranch: (GlobalSearchScope..GlobalSearchScope?)): (GlobalSearchScope..GlobalSearchScope?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> GlobalSearchScope
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.intellij.psi.search.GlobalSearchScope..com.intellij.psi.search.GlobalSearchScope?)
 
 'moduleInfo' @ [62:21] ==> value-parameter moduleInfo: M defined in org.jetbrains.kotlin.resolve.jvm.JvmAnalyzerFacade.createResolverForModule[ValueParameterDescriptorImpl]
 
@@ -96,8 +96,6 @@ Inferred types:
 
 'moduleInfo' @ [84:68] ==> value-parameter moduleInfo: M defined in org.jetbrains.kotlin.resolve.jvm.JvmAnalyzerFacade.createResolverForModule[ValueParameterDescriptorImpl]
 
-'JvmTarget' @ [84:97] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [84:107] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'languageSettingsProvider' @ [85:39] ==> value-parameter languageSettingsProvider: LanguageSettingsProvider defined in org.jetbrains.kotlin.resolve.jvm.JvmAnalyzerFacade.createResolverForModule[ValueParameterDescriptorImpl]
@@ -116,7 +114,7 @@ Inferred types:
 
 'createTrace' @ [87:66] ==> public abstract fun createTrace(): BindingTrace defined in org.jetbrains.kotlin.resolve.CodeAnalyzerInitializer[DeserializedSimpleFunctionDescriptor]
 
-'createContainerForLazyResolveWithJava' @ [89:25] ==> public fun createContainerForLazyResolveWithJava(moduleContext: ModuleContext, bindingTrace: BindingTrace, declarationProviderFactory: DeclarationProviderFactory, moduleContentScope: GlobalSearchScope, moduleClassResolver: ModuleClassResolver, targetEnvironment: TargetEnvironment, lookupTracker: LookupTracker, packagePartProvider: PackagePartProvider, jvmTarget: JvmTarget, languageVersionSettings: LanguageVersionSettings, useBuiltInsProvider: Boolean, configureJavaClassFinder: (StorageComponentContainer.() -> Unit)? = ...): StorageComponentContainer defined in org.jetbrains.kotlin.frontend.java.di[SimpleFunctionDescriptorImpl]
+'createContainerForLazyResolveWithJava' @ [89:25] ==> public fun createContainerForLazyResolveWithJava(moduleContext: ModuleContext, bindingTrace: BindingTrace, declarationProviderFactory: DeclarationProviderFactory, moduleContentScope: GlobalSearchScope, moduleClassResolver: ModuleClassResolver, targetEnvironment: TargetEnvironment, lookupTracker: LookupTracker, packagePartProvider: PackagePartProvider, jvmTarget: JvmTarget, languageVersionSettings: LanguageVersionSettings, useBuiltInsProvider: Boolean, configureJavaClassFinder: (StorageComponentContainer.() -> Unit)? = ...): StorageComponentContainer defined in org.jetbrains.kotlin.frontend.java.di in file injection.kt[SimpleFunctionDescriptorImpl]
 
 'moduleContext' @ [90:17] ==> value-parameter moduleContext: ModuleContext defined in org.jetbrains.kotlin.resolve.jvm.JvmAnalyzerFacade.createResolverForModule[ValueParameterDescriptorImpl]
 
@@ -163,8 +161,6 @@ Inferred types:
 'packageFragmentProvider' @ [108:40] ==> public final val packageFragmentProvider: LazyJavaPackageFragmentProvider defined in org.jetbrains.kotlin.resolve.jvm.JavaDescriptorResolver[DeserializedPropertyDescriptor]
 
 'providersForModule' @ [110:9] ==> val providersForModule: ArrayList<PackageFragmentProvider> /* = ArrayList<PackageFragmentProvider> */ defined in org.jetbrains.kotlin.resolve.jvm.JvmAnalyzerFacade.createResolverForModule[LocalVariableDescriptor]
-
-'PackageFragmentProviderExtension' @ [110:31] ==> public companion object : ProjectExtensionDescriptor<PackageFragmentProviderExtension> defined in org.jetbrains.kotlin.resolve.jvm.extensions.PackageFragmentProviderExtension[FakeCallableDescriptorForObject]
 
 'getInstances' @ [110:64] ==> public final fun getInstances(project: Project): List<PackageFragmentProviderExtension> defined in org.jetbrains.kotlin.resolve.jvm.extensions.PackageFragmentProviderExtension.Companion[DeserializedSimpleFunctionDescriptor]
 

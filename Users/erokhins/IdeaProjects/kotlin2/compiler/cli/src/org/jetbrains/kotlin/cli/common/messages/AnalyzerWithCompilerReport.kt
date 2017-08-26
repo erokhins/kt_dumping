@@ -6,10 +6,8 @@
 
 'getKeys' @ [46:38] ==> @NotNull @ReadOnly public abstract fun <K : (Any..Any?), V : (Any..Any?)> getKeys(p0: (WritableSlice<(ClassDescriptor..ClassDescriptor?), (List<String>..List<String>?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (List<String>..List<String>?)>?)): Collection<(ClassDescriptor..ClassDescriptor?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassDescriptor
-    <V : (Any..Any?)> -> List<String>
-
-'TraceBasedErrorReporter' @ [46:46] ==> public companion object defined in org.jetbrains.kotlin.load.java.components.TraceBasedErrorReporter[FakeCallableDescriptorForObject]
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'INCOMPLETE_HIERARCHY' @ [46:70] ==> @field:JvmField public final val INCOMPLETE_HIERARCHY: WritableSlice<ClassDescriptor, List<String>> defined in org.jetbrains.kotlin.load.java.components.TraceBasedErrorReporter.Companion[DeserializedPropertyDescriptor]
 
@@ -35,10 +33,8 @@ Inferred types:
 
 'get' @ [52:49] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(ClassDescriptor..ClassDescriptor?), (List<String>..List<String>?)>..ReadOnlySlice<(ClassDescriptor..ClassDescriptor?), (List<String>..List<String>?)>?), p1: (ClassDescriptor..ClassDescriptor?)): List<String>? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassDescriptor
-    <V : (Any..Any?)> -> List<String>
-
-'TraceBasedErrorReporter' @ [52:53] ==> public companion object defined in org.jetbrains.kotlin.load.java.components.TraceBasedErrorReporter[FakeCallableDescriptorForObject]
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'INCOMPLETE_HIERARCHY' @ [52:77] ==> @field:JvmField public final val INCOMPLETE_HIERARCHY: WritableSlice<ClassDescriptor, List<String>> defined in org.jetbrains.kotlin.load.java.components.TraceBasedErrorReporter.Companion[DeserializedPropertyDescriptor]
 
@@ -96,10 +92,8 @@ Inferred types:
 
 'getKeys' @ [62:40] ==> @NotNull @ReadOnly public abstract fun <K : (Any..Any?), V : (Any..Any?)> getKeys(p0: (WritableSlice<(DeclarationDescriptor..DeclarationDescriptor?), (List<String>..List<String>?)>..WritableSlice<(DeclarationDescriptor..DeclarationDescriptor?), (List<String>..List<String>?)>?)): Collection<(DeclarationDescriptor..DeclarationDescriptor?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> DeclarationDescriptor
-    <V : (Any..Any?)> -> List<String>
-
-'JvmBindingContextSlices' @ [62:48] ==> public object JvmBindingContextSlices defined in org.jetbrains.kotlin.resolve.jvm[FakeCallableDescriptorForObject]
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'LOAD_FROM_JAVA_SIGNATURE_ERRORS' @ [62:72] ==> @field:JvmField public final val LOAD_FROM_JAVA_SIGNATURE_ERRORS: WritableSlice<DeclarationDescriptor, List<String>> defined in org.jetbrains.kotlin.resolve.jvm.JvmBindingContextSlices[DeserializedPropertyDescriptor]
 
@@ -127,10 +121,8 @@ Inferred types:
 
 'get' @ [69:33] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(DeclarationDescriptor..DeclarationDescriptor?), (List<String>..List<String>?)>..ReadOnlySlice<(DeclarationDescriptor..DeclarationDescriptor?), (List<String>..List<String>?)>?), p1: (DeclarationDescriptor..DeclarationDescriptor?)): List<String>? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> DeclarationDescriptor
-    <V : (Any..Any?)> -> List<String>
-
-'JvmBindingContextSlices' @ [69:37] ==> public object JvmBindingContextSlices defined in org.jetbrains.kotlin.resolve.jvm[FakeCallableDescriptorForObject]
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'LOAD_FROM_JAVA_SIGNATURE_ERRORS' @ [69:61] ==> @field:JvmField public final val LOAD_FROM_JAVA_SIGNATURE_ERRORS: WritableSlice<DeclarationDescriptor, List<String>> defined in org.jetbrains.kotlin.resolve.jvm.JvmBindingContextSlices[DeserializedPropertyDescriptor]
 
@@ -413,9 +405,9 @@ Inferred types:
 
 'SYNTAX_ERROR_FACTORY' @ [185:47] ==> private final val SYNTAX_ERROR_FACTORY: (DiagnosticFactory0<(PsiErrorElement..PsiErrorElement?)>..DiagnosticFactory0<(PsiErrorElement..PsiErrorElement?)>?) defined in org.jetbrains.kotlin.cli.common.messages.AnalyzerWithCompilerReport.Companion[PropertyDescriptorImpl]
 
-'if (StringUtil.isEmpty(description)) "Syntax error" else description' @ [186:38] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
+'if (StringUtil.isEmpty(description)) "Syntax error" else description' @ [186:38] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (String..String?), elseBranch: (String..String?)): (String..String?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.String..kotlin.String?)
 
 'isEmpty' @ [186:53] ==> @Contract public open fun isEmpty(@Nullable p0: String?): Boolean defined in com.intellij.openapi.util.text.StringUtil[JavaMethodDescriptor]
 
@@ -466,10 +458,8 @@ Inferred types:
 
 'getKeys' @ [206:44] ==> @NotNull @ReadOnly public abstract fun <K : (Any..Any?), V : (Any..Any?)> getKeys(p0: (WritableSlice<(String..String?), (IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>..IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>?)>..WritableSlice<(String..String?), (IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>..IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>?)>?)): Collection<(String..String?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>
-
-'IncompatibleClassTrackerImpl' @ [206:52] ==> public companion object defined in org.jetbrains.kotlin.codegen.state.IncompatibleClassTrackerImpl[FakeCallableDescriptorForObject]
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.deserialization.IncompatibleVersionErrorData<org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion>..org.jetbrains.kotlin.serialization.deserialization.IncompatibleVersionErrorData<org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion>?)
 
 'BYTECODE_VERSION_ERRORS' @ [206:81] ==> @field:JvmField public final val BYTECODE_VERSION_ERRORS: WritableSlice<String, IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>> defined in org.jetbrains.kotlin.codegen.state.IncompatibleClassTrackerImpl.Companion[DeserializedPropertyDescriptor]
 
@@ -483,10 +473,8 @@ Inferred types:
 
 'get' @ [210:43] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(String..String?), (IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>..IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>?)>..ReadOnlySlice<(String..String?), (IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>..IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>?)>?), p1: (String..String?)): IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>
-
-'IncompatibleClassTrackerImpl' @ [210:47] ==> public companion object defined in org.jetbrains.kotlin.codegen.state.IncompatibleClassTrackerImpl[FakeCallableDescriptorForObject]
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.deserialization.IncompatibleVersionErrorData<org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion>..org.jetbrains.kotlin.serialization.deserialization.IncompatibleVersionErrorData<org.jetbrains.kotlin.load.java.JvmBytecodeBinaryVersion>?)
 
 'BYTECODE_VERSION_ERRORS' @ [210:76] ==> @field:JvmField public final val BYTECODE_VERSION_ERRORS: WritableSlice<String, IncompatibleVersionErrorData<JvmBytecodeBinaryVersion>> defined in org.jetbrains.kotlin.codegen.state.IncompatibleClassTrackerImpl.Companion[DeserializedPropertyDescriptor]
 
@@ -527,8 +515,6 @@ Inferred types:
 'data' @ [224:112] ==> value-parameter data: IncompatibleVersionErrorData<JvmBytecodeBinaryVersion> defined in org.jetbrains.kotlin.cli.common.messages.AnalyzerWithCompilerReport.Companion.reportIncompatibleBinaryVersion[ValueParameterDescriptorImpl]
 
 'expectedVersion' @ [224:117] ==> public final val expectedVersion: JvmBytecodeBinaryVersion defined in org.jetbrains.kotlin.serialization.deserialization.IncompatibleVersionErrorData[DeserializedPropertyDescriptor]
-
-'CompilerMessageLocation' @ [225:21] ==> public companion object defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageLocation[FakeCallableDescriptorForObject]
 
 'create' @ [225:45] ==> @JvmStatic public final fun create(path: String?): CompilerMessageLocation? defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageLocation.Companion[DeserializedSimpleFunctionDescriptor]
 

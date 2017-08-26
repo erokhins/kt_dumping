@@ -4,8 +4,6 @@
 
 'Jvm' @ [28:90] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [28:94] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [28:104] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'module' @ [29:22] ==> protected final fun module(name: String, jdk: TestJdkKind, hasTestRoot: Boolean): Module defined in org.jetbrains.kotlin.findUsages.FindUsagesMultiModuleTest[SimpleFunctionDescriptorImpl]
@@ -15,8 +13,6 @@
 'header' @ [30:9] ==> val header: Module defined in org.jetbrains.kotlin.findUsages.FindUsagesMultiModuleTest.doMultiPlatformTest[LocalVariableDescriptor]
 
 'createFacet' @ [30:16] ==> public fun Module.createFacet(platformKind: TargetPlatformKind<*>? = ...): Unit defined in org.jetbrains.kotlin.idea.stubs in file AbstractMultiModuleTest.kt[SimpleFunctionDescriptorImpl]
-
-'TargetPlatformKind' @ [30:28] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [30:47] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 

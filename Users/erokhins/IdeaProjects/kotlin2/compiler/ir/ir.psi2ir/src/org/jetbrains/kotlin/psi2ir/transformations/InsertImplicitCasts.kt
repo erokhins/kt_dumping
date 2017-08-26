@@ -478,13 +478,13 @@ Inferred types:
 
 'valueType' @ [178:50] ==> val valueType: KotlinType defined in org.jetbrains.kotlin.psi2ir.transformations.InsertImplicitCasts.cast[LocalVariableDescriptor]
 
-'containsNull' @ [178:60] ==> public fun KotlinType.containsNull(): Boolean defined in org.jetbrains.kotlin.psi2ir[SimpleFunctionDescriptorImpl]
+'containsNull' @ [178:60] ==> public fun KotlinType.containsNull(): Boolean defined in org.jetbrains.kotlin.psi2ir in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [178:78] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
 'expectedType' @ [178:79] ==> value-parameter expectedType: KotlinType? defined in org.jetbrains.kotlin.psi2ir.transformations.InsertImplicitCasts.cast[ValueParameterDescriptorImpl]
 
-'containsNull' @ [178:92] ==> public fun KotlinType.containsNull(): Boolean defined in org.jetbrains.kotlin.psi2ir[SimpleFunctionDescriptorImpl]
+'containsNull' @ [178:92] ==> public fun KotlinType.containsNull(): Boolean defined in org.jetbrains.kotlin.psi2ir in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 'valueType' @ [179:40] ==> val valueType: KotlinType defined in org.jetbrains.kotlin.psi2ir.transformations.InsertImplicitCasts.cast[LocalVariableDescriptor]
 

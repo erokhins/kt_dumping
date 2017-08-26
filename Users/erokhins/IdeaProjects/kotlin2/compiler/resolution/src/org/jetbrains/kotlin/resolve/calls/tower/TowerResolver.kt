@@ -414,10 +414,10 @@ Inferred types:
 
 'process' @ [169:100] ==> local final fun TowerData.process(): Collection<C>? defined in org.jetbrains.kotlin.resolve.calls.tower.TowerResolver.run[SimpleFunctionDescriptorImpl]
 
-'let' @ [169:111] ==> @InlineOnly public inline fun <T, R> Collection<C>.let(block: (Collection<C>) -> Unit?): Unit? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [169:111] ==> @InlineOnly public inline fun <T, R> Collection<C>.let(block: (Collection<C>) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Collection<C>
-    <R> -> Unit?
+    <R> -> Nothing
 
 'it' @ [169:124] ==> value-parameter it: Collection<C> defined in org.jetbrains.kotlin.resolve.calls.tower.TowerResolver.run.<anonymous>[ValueParameterDescriptorImpl]
 

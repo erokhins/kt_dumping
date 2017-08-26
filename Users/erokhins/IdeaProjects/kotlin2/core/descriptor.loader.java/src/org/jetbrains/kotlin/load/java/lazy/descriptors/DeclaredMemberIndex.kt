@@ -98,6 +98,8 @@ Inferred types:
 Inferred types:
     <T> -> Name
 
+'name' @ [55:131] ==> public abstract val name: Name defined in org.jetbrains.kotlin.load.java.structure.JavaMethod[PropertyDescriptorImpl]
+
 'fields' @ [57:60] ==> private final val fields: Map<Name, JavaField> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.ClassDeclaredMemberIndex[PropertyDescriptorImpl]
 
 'name' @ [57:67] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.java.lazy.descriptors.ClassDeclaredMemberIndex.findFieldByName[ValueParameterDescriptorImpl]
@@ -125,4 +127,6 @@ Inferred types:
 'mutableSetOf' @ [58:101] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Name
+
+'name' @ [58:128] ==> public abstract val name: Name defined in org.jetbrains.kotlin.load.java.structure.JavaField[PropertyDescriptorImpl]
 

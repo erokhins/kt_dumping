@@ -16,7 +16,7 @@
 
 'container' @ [40:70] ==> public final val container: StorageComponentContainer defined in org.jetbrains.kotlin.container.ComponentResolveContext[PropertyDescriptorImpl]
 
-'computeArguments' @ [47:25] ==> public fun computeArguments(argumentDescriptors: List<ValueDescriptor>): List<Any> defined in org.jetbrains.kotlin.container[SimpleFunctionDescriptorImpl]
+'computeArguments' @ [47:25] ==> public fun computeArguments(argumentDescriptors: List<ValueDescriptor>): List<Any> defined in org.jetbrains.kotlin.container in file Resolve.kt[SimpleFunctionDescriptorImpl]
 
 'argumentDescriptors' @ [47:42] ==> private final val argumentDescriptors: List<ValueDescriptor> defined in org.jetbrains.kotlin.container.MethodBinding[PropertyDescriptorImpl]
 
@@ -63,7 +63,7 @@ Inferred types:
 
 'candidate' @ [57:42] ==> val candidate: Constructor<*> defined in org.jetbrains.kotlin.container.bindToConstructor[LocalVariableDescriptor]
 
-'bindArguments' @ [57:52] ==> private fun Member.bindArguments(parameters: List<Type>, context: ValueResolveContext): List<ValueDescriptor> defined in org.jetbrains.kotlin.container[SimpleFunctionDescriptorImpl]
+'bindArguments' @ [57:52] ==> private fun Member.bindArguments(parameters: List<Type>, context: ValueResolveContext): List<ValueDescriptor> defined in org.jetbrains.kotlin.container in file Resolve.kt[SimpleFunctionDescriptorImpl]
 
 'constructorInfo' @ [57:66] ==> val constructorInfo: ConstructorInfo defined in org.jetbrains.kotlin.container.bindToConstructor[LocalVariableDescriptor]
 
@@ -75,7 +75,7 @@ Inferred types:
 
 'this' @ [61:26] ==> <this> defined in org.jetbrains.kotlin.container.bindToMethod[ReceiverParameterDescriptorImpl]
 
-'bindArguments' @ [61:32] ==> private fun Member.bindArguments(parameters: List<Type>, context: ValueResolveContext): List<ValueDescriptor> defined in org.jetbrains.kotlin.container[SimpleFunctionDescriptorImpl]
+'bindArguments' @ [61:32] ==> private fun Member.bindArguments(parameters: List<Type>, context: ValueResolveContext): List<ValueDescriptor> defined in org.jetbrains.kotlin.container in file Resolve.kt[SimpleFunctionDescriptorImpl]
 
 'genericParameterTypes' @ [61:46] ==> public final val Method.genericParameterTypes: (Array<(Type..Type?)>..Array<out (Type..Type?)>?)[MyPropertyDescriptor]
 

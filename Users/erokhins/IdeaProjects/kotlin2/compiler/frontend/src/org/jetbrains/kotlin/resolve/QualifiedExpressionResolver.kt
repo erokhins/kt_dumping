@@ -1320,7 +1320,7 @@ Inferred types:
 
 'QualifiedExpressionResolveResult' @ [442:30] ==> public constructor QualifiedExpressionResolveResult(classOrPackage: DeclarationDescriptor?, memberName: Name?) defined in org.jetbrains.kotlin.resolve.QualifiedExpressionResolver.QualifiedExpressionResolveResult[ClassConstructorDescriptorImpl]
 
-'unrollToLeftMostQualifiedExpression' @ [449:36] ==> public fun unrollToLeftMostQualifiedExpression(expression: KtQualifiedExpression): List<KtQualifiedExpression> defined in org.jetbrains.kotlin.resolve.calls[SimpleFunctionDescriptorImpl]
+'unrollToLeftMostQualifiedExpression' @ [449:36] ==> public fun unrollToLeftMostQualifiedExpression(expression: KtQualifiedExpression): List<KtQualifiedExpression> defined in org.jetbrains.kotlin.resolve.calls in file CallExpressionUnroller.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [449:72] ==> value-parameter expression: KtQualifiedExpression defined in org.jetbrains.kotlin.resolve.QualifiedExpressionResolver.resolveClassOrPackageInQualifiedExpression[ValueParameterDescriptorImpl]
 
@@ -1394,11 +1394,9 @@ Inferred types:
 
 'name' @ [465:83] ==> public final val name: Name defined in org.jetbrains.kotlin.resolve.QualifiedExpressionResolver.QualifierPart[PropertyDescriptorImpl]
 
-'QualifiedExpressionResolveResult' @ [466:21] ==> public companion object defined in org.jetbrains.kotlin.resolve.QualifiedExpressionResolver.QualifiedExpressionResolveResult[FakeCallableDescriptorForObject]
-
 'UNRESOLVED' @ [466:54] ==> public final val UNRESOLVED: QualifiedExpressionResolver.QualifiedExpressionResolveResult defined in org.jetbrains.kotlin.resolve.QualifiedExpressionResolver.QualifiedExpressionResolveResult.Companion[PropertyDescriptorImpl]
 
-'unrollToLeftMostQualifiedExpression' @ [475:36] ==> public fun unrollToLeftMostQualifiedExpression(expression: KtQualifiedExpression): List<KtQualifiedExpression> defined in org.jetbrains.kotlin.resolve.calls[SimpleFunctionDescriptorImpl]
+'unrollToLeftMostQualifiedExpression' @ [475:36] ==> public fun unrollToLeftMostQualifiedExpression(expression: KtQualifiedExpression): List<KtQualifiedExpression> defined in org.jetbrains.kotlin.resolve.calls in file CallExpressionUnroller.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [475:72] ==> value-parameter expression: KtQualifiedExpression defined in org.jetbrains.kotlin.resolve.QualifiedExpressionResolver.resolveQualifierInExpressionAndUnroll[ValueParameterDescriptorImpl]
 
@@ -1460,6 +1458,8 @@ Inferred types:
 Inferred types:
     <T> -> KtQualifiedExpression
     <R> -> CallExpressionElement
+
+'CallExpressionElement' @ [493:24] ==> internal constructor CallExpressionElement(qualified: KtQualifiedExpression) defined in org.jetbrains.kotlin.resolve.calls.CallExpressionElement[ClassConstructorDescriptorImpl]
 
 'qualifiedExpressions' @ [498:13] ==> value-parameter qualifiedExpressions: List<KtQualifiedExpression> defined in org.jetbrains.kotlin.resolve.QualifiedExpressionResolver.mapToQualifierParts[ValueParameterDescriptorImpl]
 
@@ -1637,7 +1637,7 @@ Inferred types:
 
 'path' @ [553:9] ==> value-parameter path: List<QualifiedExpressionResolver.QualifierPart> defined in org.jetbrains.kotlin.resolve.QualifiedExpressionResolver.recordPackageViews[ValueParameterDescriptorImpl]
 
-'foldRight' @ [553:14] ==> public inline fun <T, R> List<QualifiedExpressionResolver.QualifierPart>.foldRight(initial: PackageViewDescriptor, operation: (QualifiedExpressionResolver.QualifierPart, PackageViewDescriptor) -> PackageViewDescriptor): PackageViewDescriptor defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'foldRight' @ [553:14] ==> public inline fun <T, R> List<QualifiedExpressionResolver.QualifierPart>.foldRight(initial: PackageViewDescriptor, operation: (QualifiedExpressionResolver.QualifierPart, acc: PackageViewDescriptor) -> PackageViewDescriptor): PackageViewDescriptor defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> QualifierPart
     <R> -> PackageViewDescriptor
@@ -1768,10 +1768,10 @@ Inferred types:
 
 'trace' @ [577:21] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.QualifiedExpressionResolver.storeResult[ValueParameterDescriptorImpl]
 
-'record' @ [577:27] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (Collection<DeclarationDescriptor>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>..WritableSlice<(KtExpression..KtExpression?), (Collection<DeclarationDescriptor>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>?), key: (KtExpression..KtExpression?), value: (Collection<DeclarationDescriptor>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
+'record' @ [577:27] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>..WritableSlice<(KtExpression..KtExpression?), (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>?), key: (KtExpression..KtExpression?), value: (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> (kotlin.collections.Collection<org.jetbrains.kotlin.descriptors.DeclarationDescriptor>..kotlin.collections.Collection<(org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>)
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)>?)
 
 'AMBIGUOUS_REFERENCE_TARGET' @ [577:49] ==> public final val AMBIGUOUS_REFERENCE_TARGET: (WritableSlice<(KtExpression..KtExpression?), (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>..WritableSlice<(KtExpression..KtExpression?), (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1831,8 +1831,8 @@ Inferred types:
 
 'record' @ [602:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?), value: (DeclarationDescriptor..DeclarationDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [602:37] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1976,8 +1976,8 @@ Inferred types:
 
 'record' @ [635:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?), key: (KtExpression..KtExpression?), value: (Qualifier..Qualifier?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Qualifier
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier..org.jetbrains.kotlin.resolve.scopes.receivers.Qualifier?)
 
 'QUALIFIER' @ [635:37] ==> public final val QUALIFIER: (WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>..WritableSlice<(KtExpression..KtExpression?), (Qualifier..Qualifier?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

@@ -237,7 +237,7 @@ Inferred types:
 
 'java' @ [152:36] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'getMethod' @ [152:41] ==> @CallerSensitive public open fun getMethod(p0: (String..String?), vararg p1: (Class<*>..Class<*>?)): (Method..Method?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -247,9 +247,9 @@ Inferred types:
 
 'experimentalExtension' @ [159:13] ==> val experimentalExtension: (Any..Any?) defined in org.jetbrains.kotlin.gradle.KotlinGradleModelBuilder.getCoroutines[LocalVariableDescriptor]
 
-'java' @ [159:42] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [159:42] ==> public val <T> KClass<out (Any..Any?)>.java: Class<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out (kotlin.Any..kotlin.Any?))
 
 'getMethod' @ [159:47] ==> @CallerSensitive public open fun getMethod(p0: (String..String?), vararg p1: (Class<*>..Class<*>?)): (Method..Method?) defined in java.lang.Class[JavaMethodDescriptor]
 

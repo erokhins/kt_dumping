@@ -244,7 +244,7 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> TextRange
 
-'fold' @ [105:25] ==> public inline fun <T, R> Iterable<PsiElement>.fold(initial: TextRange?, operation: (TextRange?, PsiElement) -> TextRange?): TextRange? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [105:25] ==> public inline fun <T, R> Iterable<PsiElement>.fold(initial: TextRange?, operation: (acc: TextRange?, PsiElement) -> TextRange?): TextRange? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiElement
     <R> -> TextRange?

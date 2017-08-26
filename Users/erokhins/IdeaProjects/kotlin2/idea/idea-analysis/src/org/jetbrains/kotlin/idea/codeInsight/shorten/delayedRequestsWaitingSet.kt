@@ -1,20 +1,14 @@
-'UserDataProperty' @ [48:12] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<MutableSet<DelayedRefactoringRequest>>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> Project
-    <T : Any> -> MutableSet<DelayedRefactoringRequest>
+'getValue' @ [48:12] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [48:33] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(MutableSet<DelayedRefactoringRequest>..MutableSet<DelayedRefactoringRequest>?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MutableSet<DelayedRefactoringRequest>
+    <T : (Any..Any?)> -> (kotlin.collections.MutableSet<org.jetbrains.kotlin.idea.codeInsight.shorten.DelayedRefactoringRequest>..kotlin.collections.MutableSet<org.jetbrains.kotlin.idea.codeInsight.shorten.DelayedRefactoringRequest>?)
 
-'NotNullableUserDataProperty' @ [55:12] ==> public constructor NotNullableUserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> Project
-    <T : Any> -> Boolean
+'getValue' @ [55:12] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [55:44] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'ensureNoRefactoringRequestsBeforeRefactoring' @ [58:39] ==> public var Project.ensureNoRefactoringRequestsBeforeRefactoring: Boolean defined in org.jetbrains.kotlin.idea.codeInsight.shorten in file delayedRequestsWaitingSet.kt[PropertyDescriptorImpl]
 
@@ -70,7 +64,7 @@ Inferred types:
 
 'project' @ [82:5] ==> val project: Project defined in org.jetbrains.kotlin.idea.codeInsight.shorten.addToShorteningWaitSet[LocalVariableDescriptor]
 
-'getOrCreateRefactoringRequests' @ [82:13] ==> private fun Project.getOrCreateRefactoringRequests(): MutableSet<DelayedRefactoringRequest> defined in org.jetbrains.kotlin.idea.codeInsight.shorten[SimpleFunctionDescriptorImpl]
+'getOrCreateRefactoringRequests' @ [82:13] ==> private fun Project.getOrCreateRefactoringRequests(): MutableSet<DelayedRefactoringRequest> defined in org.jetbrains.kotlin.idea.codeInsight.shorten in file delayedRequestsWaitingSet.kt[SimpleFunctionDescriptorImpl]
 
 'add' @ [82:46] ==> public abstract fun add(element: DelayedRefactoringRequest): Boolean defined in kotlin.collections.MutableSet[DeserializedSimpleFunctionDescriptor]
 
@@ -94,7 +88,7 @@ Inferred types:
 
 'project' @ [87:10] ==> public final val KtFile.project: Project[MyPropertyDescriptor]
 
-'getOrCreateRefactoringRequests' @ [87:18] ==> private fun Project.getOrCreateRefactoringRequests(): MutableSet<DelayedRefactoringRequest> defined in org.jetbrains.kotlin.idea.codeInsight.shorten[SimpleFunctionDescriptorImpl]
+'getOrCreateRefactoringRequests' @ [87:18] ==> private fun Project.getOrCreateRefactoringRequests(): MutableSet<DelayedRefactoringRequest> defined in org.jetbrains.kotlin.idea.codeInsight.shorten in file delayedRequestsWaitingSet.kt[SimpleFunctionDescriptorImpl]
 
 'ImportRequest' @ [87:54] ==> public constructor ImportRequest(elementToImportPointer: SmartPsiElementPointer<PsiElement>, filePointer: SmartPsiElementPointer<KtFile>) defined in org.jetbrains.kotlin.idea.codeInsight.shorten.ImportRequest[ClassConstructorDescriptorImpl]
 
@@ -194,8 +188,6 @@ Inferred types:
 'elementToOptions' @ [106:29] ==> val elementToOptions: Map<KtElement, ShortenReferences.Options> defined in org.jetbrains.kotlin.idea.codeInsight.shorten.performDelayedRefactoringRequests.<anonymous>[LocalVariableDescriptor]
 
 'it' @ [106:46] ==> value-parameter it: KtElement defined in org.jetbrains.kotlin.idea.codeInsight.shorten.performDelayedRefactoringRequests.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
-
-'Options' @ [106:53] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Options[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [106:61] ==> public final val DEFAULT: ShortenReferences.Options defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Options.Companion[PropertyDescriptorImpl]
 
@@ -310,14 +302,11 @@ Inferred types:
 
 'delayedRefactoringRequests' @ [132:17] ==> private var Project.delayedRefactoringRequests: MutableSet<DelayedRefactoringRequest>? defined in org.jetbrains.kotlin.idea.codeInsight.shorten in file delayedRequestsWaitingSet.kt[PropertyDescriptorImpl]
 
-'CopyableUserDataProperty' @ [136:44] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<Boolean>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtElement
-    <T : Any> -> Boolean
+'getValue' @ [136:44] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [136:73] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'forEachDescendantOfType' @ [139:5] ==> public inline fun <reified T : PsiElement> PsiElement.forEachDescendantOfType(noinline action: (KtElement) -> Unit): Unit defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:

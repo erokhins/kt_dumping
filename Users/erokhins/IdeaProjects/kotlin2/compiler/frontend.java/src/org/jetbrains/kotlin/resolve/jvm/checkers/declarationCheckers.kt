@@ -155,7 +155,9 @@ Inferred types:
 
 'diagnosticHolder' @ [110:66] ==> value-parameter diagnosticHolder: DiagnosticSink defined in org.jetbrains.kotlin.resolve.jvm.checkers.JvmNameAnnotationChecker.check[ValueParameterDescriptorImpl]
 
-'DescriptorToSourceUtils' @ [117:31] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [117:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtAnnotationEntry?, right: KtAnnotationEntry): KtAnnotationEntry[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtAnnotationEntry
 
 'getSourceFromAnnotation' @ [117:55] ==> @JvmStatic public final fun getSourceFromAnnotation(descriptor: AnnotationDescriptor): KtAnnotationEntry? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -245,7 +247,9 @@ Inferred types:
 
 'isVar' @ [152:65] ==> public final val PropertyDescriptor.isVar: Boolean[MyPropertyDescriptor]
 
-'DescriptorToSourceUtils' @ [153:39] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [153:39] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtAnnotationEntry?, right: KtAnnotationEntry): KtAnnotationEntry[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtAnnotationEntry
 
 'getSourceFromAnnotation' @ [153:63] ==> @JvmStatic public final fun getSourceFromAnnotation(descriptor: AnnotationDescriptor): KtAnnotationEntry? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -267,7 +271,9 @@ Inferred types:
 
 'hasDelegate' @ [156:58] ==> public open fun hasDelegate(): Boolean defined in org.jetbrains.kotlin.psi.KtProperty[JavaMethodDescriptor]
 
-'DescriptorToSourceUtils' @ [157:39] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [157:39] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtAnnotationEntry?, right: KtAnnotationEntry): KtAnnotationEntry[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtAnnotationEntry
 
 'getSourceFromAnnotation' @ [157:63] ==> @JvmStatic public final fun getSourceFromAnnotation(descriptor: AnnotationDescriptor): KtAnnotationEntry? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -295,11 +301,11 @@ Inferred types:
 
 'modality' @ [172:94] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [172:106] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [172:115] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
-'DescriptorToSourceUtils' @ [173:35] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [173:35] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtAnnotationEntry?, right: KtAnnotationEntry): KtAnnotationEntry[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtAnnotationEntry
 
 'getSourceFromAnnotation' @ [173:59] ==> @JvmStatic public final fun getSourceFromAnnotation(descriptor: AnnotationDescriptor): KtAnnotationEntry? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -317,7 +323,7 @@ Inferred types:
 
 'descriptor' @ [186:9] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.jvm.checkers.OverloadsAnnotationChecker.check[ValueParameterDescriptorImpl]
 
-'findJvmOverloadsAnnotation' @ [186:20] ==> public fun DeclarationDescriptor.findJvmOverloadsAnnotation(): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.jvm.annotations[SimpleFunctionDescriptorImpl]
+'findJvmOverloadsAnnotation' @ [186:20] ==> public fun DeclarationDescriptor.findJvmOverloadsAnnotation(): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.jvm.annotations in file annotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [186:50] ==> @InlineOnly public inline fun <T, R> AnnotationDescriptor.let(block: (AnnotationDescriptor) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -400,8 +406,6 @@ Inferred types:
 'descriptor' @ [201:54] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.jvm.checkers.OverloadsAnnotationChecker.checkDeclaration[ValueParameterDescriptorImpl]
 
 'modality' @ [201:65] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [201:77] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [201:86] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -526,7 +530,9 @@ Inferred types:
 
 'it' @ [228:111] ==> value-parameter it: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.resolve.jvm.checkers.TypeParameterBoundIsNotArrayChecker.check.<anonymous>[ValueParameterDescriptorImpl]
 
-'DescriptorToSourceUtils' @ [229:31] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [229:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'descriptorToDeclaration' @ [229:55] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 

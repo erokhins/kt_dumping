@@ -81,7 +81,7 @@ Inferred types:
 
 'valueArguments' @ [59:38] ==> public final val KtAnnotationEntry.valueArguments: (MutableList<out (ValueArgument..ValueArgument?)>..List<(ValueArgument..ValueArgument?)>)[MyPropertyDescriptor]
 
-'splitToPositionalAndNamed' @ [59:53] ==> public fun List<ValueArgument>.splitToPositionalAndNamed(): PositionalAndNamedArguments defined in org.jetbrains.kotlin.preprocessor[SimpleFunctionDescriptorImpl]
+'splitToPositionalAndNamed' @ [59:53] ==> public fun List<ValueArgument>.splitToPositionalAndNamed(): PositionalAndNamedArguments defined in org.jetbrains.kotlin.preprocessor in file ValueArguments.kt[SimpleFunctionDescriptorImpl]
 
 'typeReference' @ [64:10] ==> public final val KtAnnotationEntry.typeReference: KtTypeReference?[MyPropertyDescriptor]
 

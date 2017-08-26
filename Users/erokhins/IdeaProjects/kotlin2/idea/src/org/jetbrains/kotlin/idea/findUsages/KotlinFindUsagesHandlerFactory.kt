@@ -60,9 +60,7 @@
 
 'getExtensionPoint' @ [70:52] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensionPoint(@NotNull p0: ExtensionPointName<(KotlinFindUsagesHandlerDecorator..KotlinFindUsagesHandlerDecorator?)>): ExtensionPoint<(KotlinFindUsagesHandlerDecorator..KotlinFindUsagesHandlerDecorator?)> defined in com.intellij.openapi.extensions.ExtensionsArea[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinFindUsagesHandlerDecorator
-
-'KotlinFindUsagesHandlerDecorator' @ [70:70] ==> public companion object defined in org.jetbrains.kotlin.plugin.findUsages.handlers.KotlinFindUsagesHandlerDecorator[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.plugin.findUsages.handlers.KotlinFindUsagesHandlerDecorator..org.jetbrains.kotlin.plugin.findUsages.handlers.KotlinFindUsagesHandlerDecorator?)
 
 'EP_NAME' @ [70:103] ==> public final val EP_NAME: ExtensionPointName<KotlinFindUsagesHandlerDecorator> defined in org.jetbrains.kotlin.plugin.findUsages.handlers.KotlinFindUsagesHandlerDecorator.Companion[PropertyDescriptorImpl]
 
@@ -70,7 +68,7 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> (org.jetbrains.kotlin.plugin.findUsages.handlers.KotlinFindUsagesHandlerDecorator..org.jetbrains.kotlin.plugin.findUsages.handlers.KotlinFindUsagesHandlerDecorator?)
 
-'fold' @ [70:123] ==> public inline fun <T, R> Array<out (KotlinFindUsagesHandlerDecorator..KotlinFindUsagesHandlerDecorator?)>.fold(initial: FindUsagesHandler, operation: (FindUsagesHandler, (KotlinFindUsagesHandlerDecorator..KotlinFindUsagesHandlerDecorator?)) -> FindUsagesHandler): FindUsagesHandler defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [70:123] ==> public inline fun <T, R> Array<out (KotlinFindUsagesHandlerDecorator..KotlinFindUsagesHandlerDecorator?)>.fold(initial: FindUsagesHandler, operation: (acc: FindUsagesHandler, (KotlinFindUsagesHandlerDecorator..KotlinFindUsagesHandlerDecorator?)) -> FindUsagesHandler): FindUsagesHandler defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.plugin.findUsages.handlers.KotlinFindUsagesHandlerDecorator..org.jetbrains.kotlin.plugin.findUsages.handlers.KotlinFindUsagesHandlerDecorator?)
     <R> -> FindUsagesHandler
@@ -153,7 +151,7 @@ Inferred types:
 
 'hasValOrVar' @ [82:33] ==> public open fun hasValOrVar(): Boolean defined in org.jetbrains.kotlin.psi.KtParameter[JavaMethodDescriptor]
 
-'checkSuperMethods' @ [83:52] ==> public fun checkSuperMethods(declaration: KtDeclaration, ignore: Collection<PsiElement>?, actionString: String): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkSuperMethods' @ [83:52] ==> public fun checkSuperMethods(declaration: KtDeclaration, ignore: Collection<PsiElement>?, actionString: String): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [83:70] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.findUsages.KotlinFindUsagesHandlerFactory.createFindUsagesHandlerNoDecoration[ValueParameterDescriptorImpl]
 
@@ -278,7 +276,7 @@ Inferred types:
 
 'this' @ [112:93] ==> <this> defined in org.jetbrains.kotlin.idea.findUsages.KotlinFindUsagesHandlerFactory[LazyClassReceiverParameterDescriptor]
 
-'checkSuperMethods' @ [115:44] ==> public fun checkSuperMethods(declaration: KtDeclaration, ignore: Collection<PsiElement>?, actionString: String): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkSuperMethods' @ [115:44] ==> public fun checkSuperMethods(declaration: KtDeclaration, ignore: Collection<PsiElement>?, actionString: String): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [115:62] ==> val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.findUsages.KotlinFindUsagesHandlerFactory.createFindUsagesHandlerNoDecoration[LocalVariableDescriptor]
 
@@ -342,8 +340,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> FindUsagesHandler
 
 'target' @ [133:21] ==> val target: PsiElement defined in org.jetbrains.kotlin.idea.findUsages.KotlinFindUsagesHandlerFactory.handlerForMultiple[LocalVariableDescriptor]
-
-'KotlinFindMemberUsagesHandler' @ [134:21] ==> public companion object defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler[FakeCallableDescriptorForObject]
 
 'getInstance' @ [134:51] ==> public final fun getInstance(declaration: KtNamedDeclaration, elementsToSearch: Collection<PsiElement> = ..., factory: KotlinFindUsagesHandlerFactory): KotlinFindMemberUsagesHandler<out KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.findUsages.handlers.KotlinFindMemberUsagesHandler.Companion[SimpleFunctionDescriptorImpl]
 

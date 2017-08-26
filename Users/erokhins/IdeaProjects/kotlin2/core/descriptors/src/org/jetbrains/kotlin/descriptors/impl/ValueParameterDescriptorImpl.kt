@@ -104,9 +104,9 @@ Inferred types:
 
 'source' @ [79:32] ==> value-parameter source: SourceElement defined in org.jetbrains.kotlin.descriptors.impl.ValueParameterDescriptorImpl.WithDestructuringDeclaration.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [83:39] ==> public fun <T> lazy(initializer: () -> List<VariableDescriptor>): Lazy<List<VariableDescriptor>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [83:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<VariableDescriptor>
+    <T> -> T
 
 'destructuringVariables' @ [83:44] ==> value-parameter destructuringVariables: () -> List<VariableDescriptor> defined in org.jetbrains.kotlin.descriptors.impl.ValueParameterDescriptorImpl.WithDestructuringDeclaration.<init>[ValueParameterDescriptorImpl]
 

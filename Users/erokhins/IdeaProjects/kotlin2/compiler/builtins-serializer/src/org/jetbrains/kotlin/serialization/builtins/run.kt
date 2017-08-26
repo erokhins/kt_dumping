@@ -21,6 +21,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [38:38] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'assert' @ [39:5] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
 'srcDirs' @ [39:12] ==> val srcDirs: List<File> defined in org.jetbrains.kotlin.serialization.builtins.main[LocalVariableDescriptor]
@@ -34,6 +36,8 @@ Inferred types:
 'filterNot' @ [41:27] ==> public inline fun <T> Iterable<File>.filterNot(predicate: (File) -> Boolean): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
+
+'exists' @ [41:43] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
 'assert' @ [42:5] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 

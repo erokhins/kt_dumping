@@ -16,7 +16,7 @@
 
 'getUserData' @ [48:40] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(List<ScriptReport>..List<ScriptReport>?)>): List<ScriptReport>? defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<ScriptReport>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.script.experimental.dependencies.ScriptReport>..kotlin.collections.List<kotlin.script.experimental.dependencies.ScriptReport>?)
 
 'Reports' @ [48:72] ==> public object Reports : Key<List<ScriptReport>> defined in org.jetbrains.kotlin.idea.core.script.IdeScriptReportSink[FakeCallableDescriptorForObject]
 

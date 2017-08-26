@@ -2,9 +2,9 @@
 
 'state' @ [37:45] ==> value-parameter state: GenerationState defined in org.jetbrains.kotlin.codegen.coroutines.SuspendFunctionGenerationStrategy.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [42:50] ==> public fun <T> lazy(initializer: () -> ClassBuilder): Lazy<ClassBuilder> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [42:50] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ClassBuilder
+    <T> -> T
 
 'state' @ [43:9] ==> value-parameter state: GenerationState defined in org.jetbrains.kotlin.codegen.coroutines.SuspendFunctionGenerationStrategy.<init>[ValueParameterDescriptorImpl]
 
@@ -70,6 +70,8 @@ Inferred types:
 
 'this' @ [58:82] ==> <this> defined in org.jetbrains.kotlin.codegen.coroutines.SuspendFunctionGenerationStrategy[LazyClassReceiverParameterDescriptor]
 
+'classBuilderForCoroutineState' @ [58:88] ==> private final val classBuilderForCoroutineState: ClassBuilder defined in org.jetbrains.kotlin.codegen.coroutines.SuspendFunctionGenerationStrategy[PropertyDescriptorImpl]
+
 'declaration' @ [60:27] ==> private final val declaration: KtFunction defined in org.jetbrains.kotlin.codegen.coroutines.SuspendFunctionGenerationStrategy[PropertyDescriptorImpl]
 
 'originalSuspendDescriptor' @ [61:40] ==> private final val originalSuspendDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.coroutines.SuspendFunctionGenerationStrategy[PropertyDescriptorImpl]
@@ -102,6 +104,8 @@ Inferred types:
 'state' @ [69:92] ==> protected/*protected and package*/ final val state: (GenerationState..GenerationState?) defined in org.jetbrains.kotlin.codegen.coroutines.SuspendFunctionGenerationStrategy[JavaPropertyDescriptor]
 
 'typeMapper' @ [69:98] ==> public final val typeMapper: KotlinTypeMapper defined in org.jetbrains.kotlin.codegen.state.GenerationState[PropertyDescriptorImpl]
+
+'mapClass' @ [69:110] ==> @NotNull public open fun mapClass(@NotNull classifier: ClassifierDescriptor): Type defined in org.jetbrains.kotlin.codegen.state.KotlinTypeMapper[JavaMethodDescriptor]
 
 'internalName' @ [69:121] ==> public final val Type.internalName: (String..String?)[MyPropertyDescriptor]
 

@@ -27,7 +27,7 @@ Inferred types:
 
 'this' @ [36:56] ==> <this> defined in org.jetbrains.kotlin.daemon.ifNotContainsSequence.Accumulator[LazyClassReceiverParameterDescriptor]
 
-'fold' @ [38:15] ==> public inline fun <T, R> Sequence<String>.fold(initial: Accumulator, operation: (Accumulator, String) -> Accumulator): Accumulator defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'fold' @ [38:15] ==> public inline fun <T, R> Sequence<String>.fold(initial: Accumulator, operation: (acc: Accumulator, String) -> Accumulator): Accumulator defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> Accumulator
@@ -107,7 +107,7 @@ Inferred types:
 
 'lastMatchedLineNo' @ [47:34] ==> public final var lastMatchedLineNo: Int defined in org.jetbrains.kotlin.daemon.ifNotContainsSequence.Accumulator[PropertyDescriptorImpl]
 
-'ifNotContainsSequence' @ [58:5] ==> public fun Sequence<String>.ifNotContainsSequence(patternsIter: Iterator<LinePattern>, body: (LinePattern, Int) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'ifNotContainsSequence' @ [58:5] ==> public fun Sequence<String>.ifNotContainsSequence(patternsIter: Iterator<LinePattern>, body: (LinePattern, Int) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file LogCheckUtil.kt[SimpleFunctionDescriptorImpl]
 
 'patterns' @ [58:27] ==> value-parameter patterns: List<LinePattern> defined in org.jetbrains.kotlin.daemon.ifNotContainsSequence[ValueParameterDescriptorImpl]
 
@@ -115,7 +115,7 @@ Inferred types:
 
 'body' @ [58:48] ==> value-parameter body: (LinePattern, Int) -> Unit defined in org.jetbrains.kotlin.daemon.ifNotContainsSequence[ValueParameterDescriptorImpl]
 
-'ifNotContainsSequence' @ [68:5] ==> public fun Sequence<String>.ifNotContainsSequence(patternsIter: Iterator<LinePattern>, body: (LinePattern, Int) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'ifNotContainsSequence' @ [68:5] ==> public fun Sequence<String>.ifNotContainsSequence(patternsIter: Iterator<LinePattern>, body: (LinePattern, Int) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file LogCheckUtil.kt[SimpleFunctionDescriptorImpl]
 
 'patterns' @ [68:27] ==> value-parameter vararg patterns: LinePattern defined in org.jetbrains.kotlin.daemon.ifNotContainsSequence[ValueParameterDescriptorImpl]
 

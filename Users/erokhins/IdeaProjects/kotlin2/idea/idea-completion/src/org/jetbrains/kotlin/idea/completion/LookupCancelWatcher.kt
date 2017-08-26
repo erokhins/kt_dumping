@@ -90,7 +90,7 @@ Inferred types:
 
 'getComponent' @ [69:74] ==> public abstract fun <T : (Any..Any?)> getComponent(@NotNull p0: Class<(LookupCancelWatcher..LookupCancelWatcher?)>): (LookupCancelWatcher..LookupCancelWatcher?) defined in com.intellij.openapi.project.Project[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LookupCancelWatcher
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.LookupCancelWatcher..org.jetbrains.kotlin.idea.completion.LookupCancelWatcher?)
 
 'LookupCancelWatcher' @ [69:87] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.LookupCancelWatcher[FakeCallableDescriptorForObject]
 
@@ -130,7 +130,7 @@ Inferred types:
 
 'getUserData' @ [82:50] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Int..Int?)>): Int? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'AUTO_POPUP_AT' @ [82:62] ==> public final val AUTO_POPUP_AT: Key<Int> defined in org.jetbrains.kotlin.idea.completion.LookupCancelWatcher.Companion[PropertyDescriptorImpl]
 

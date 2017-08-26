@@ -78,7 +78,7 @@ Inferred types:
 
 'targetContainer' @ [55:77] ==> value-parameter targetContainer: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories.KotlinMoveFilesOrDirectoriesHandler.doMove[ValueParameterDescriptorImpl]
 
-'moveFilesOrDirectories' @ [57:9] ==> public fun moveFilesOrDirectories(project: Project, elements: Array<PsiElement>, targetElement: PsiElement?, moveCallback: MoveCallback? = ...): Unit defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'moveFilesOrDirectories' @ [57:9] ==> public fun moveFilesOrDirectories(project: Project, elements: Array<PsiElement>, targetElement: PsiElement?, moveCallback: MoveCallback? = ...): Unit defined in org.jetbrains.kotlin.idea.refactoring.move in file moveFilesUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [58:17] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories.KotlinMoveFilesOrDirectoriesHandler.doMove[ValueParameterDescriptorImpl]
 
@@ -99,7 +99,7 @@ Inferred types:
     <T> -> MoveCallback
     <R> -> MoveCallback
 
-'MoveCallback' @ [61:33] ==> public fun MoveCallback(function: () -> Unit): MoveCallback defined in com.intellij.refactoring.move[SimpleFunctionDescriptorImpl]
+'MoveCallback' @ [61:33] ==> public fun MoveCallback(function: () -> Unit): MoveCallback defined in com.intellij.refactoring.move[SamConstructorDescriptorImpl]
 
 'it' @ [61:48] ==> value-parameter it: MoveCallback defined in org.jetbrains.kotlin.idea.refactoring.move.moveFilesOrDirectories.KotlinMoveFilesOrDirectoriesHandler.doMove.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -123,7 +123,7 @@ Inferred types:
 
 'getData' @ [67:72] ==> @Nullable public open fun <T : (Any..Any?)> getData(@NotNull p0: DataKey<(PsiElement..PsiElement?)>): PsiElement? defined in com.intellij.openapi.actionSystem.DataContext[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'TARGET_PSI_ELEMENT' @ [67:93] ==> public final val TARGET_PSI_ELEMENT: (DataKey<(PsiElement..PsiElement?)>..DataKey<(PsiElement..PsiElement?)>?) defined in com.intellij.openapi.actionSystem.LangDataKeys[JavaPropertyDescriptor]
 

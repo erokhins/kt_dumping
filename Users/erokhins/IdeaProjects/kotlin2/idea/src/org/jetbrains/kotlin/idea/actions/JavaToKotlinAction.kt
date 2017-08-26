@@ -14,9 +14,9 @@
 
 'nameWithoutExtension' @ [60:41] ==> public final val VirtualFile.nameWithoutExtension: String[MyPropertyDescriptor]
 
-'if (i > 0) i else ""' @ [60:65] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {Comparable<{String & Int}> & java.io.Serializable}, elseBranch: {Comparable<{String & Int}> & java.io.Serializable}): {Comparable<{String & Int}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
+'if (i > 0) i else ""' @ [60:65] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Any, elseBranch: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {Comparable<{String & Int}> & java.io.Serializable}
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Any
 
 'i' @ [60:69] ==> var i: Int defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction.Companion.uniqueKotlinFileName[LocalVariableDescriptor]
 
@@ -160,8 +160,6 @@ Inferred types:
 
 'project' @ [100:55] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction.Companion.convertFiles[ValueParameterDescriptorImpl]
 
-'ConverterSettings' @ [100:64] ==> public companion object defined in org.jetbrains.kotlin.j2k.ConverterSettings[FakeCallableDescriptorForObject]
-
 'defaultSettings' @ [100:82] ==> public final val defaultSettings: ConverterSettings defined in org.jetbrains.kotlin.j2k.ConverterSettings.Companion[DeserializedPropertyDescriptor]
 
 'IdeaJavaToKotlinServices' @ [100:99] ==> public object IdeaJavaToKotlinServices : JavaToKotlinConverterServices defined in org.jetbrains.kotlin.idea.j2k in file IdeaJavaToKotlinServices.kt[FakeCallableDescriptorForObject]
@@ -185,6 +183,8 @@ Inferred types:
 'getInstance' @ [105:34] ==> @NotNull public open fun getInstance(): ProgressManager defined in com.intellij.openapi.progress.ProgressManager[JavaMethodDescriptor]
 
 'runProcessWithProgressSynchronously' @ [105:48] ==> public final fun runProcessWithProgressSynchronously(@NotNull p0: () -> Unit, @NotNull @Nls p1: String, p2: Boolean, @Nullable p3: Project?): Boolean defined in com.intellij.openapi.progress.ProgressManager[MyFunctionDescriptor]
+
+'convert' @ [106:23] ==> local final fun convert(): Unit defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction.Companion.convertFiles[SimpleFunctionDescriptorImpl]
 
 'title' @ [107:21] ==> public final val title: String defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction.Companion[PropertyDescriptorImpl]
 
@@ -341,7 +341,7 @@ Inferred types:
 
 'findChildOfType' @ [151:73] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> findChildOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(PsiErrorElement..PsiErrorElement?)>): PsiErrorElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiErrorElement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiErrorElement..com.intellij.psi.PsiErrorElement?)
 
 'it' @ [151:89] ==> value-parameter it: PsiJavaFile defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction.actionPerformed.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -417,7 +417,7 @@ Inferred types:
 
 'getData' @ [178:30] ==> @Nullable public open fun <T : (Any..Any?)> getData(@NotNull p0: DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>): (Array<(VirtualFile..VirtualFile?)>?..Array<out (VirtualFile..VirtualFile?)>?) defined in com.intellij.openapi.actionSystem.AnActionEvent[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Array<(com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>..kotlin.Array<out (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>)
+    <T : (Any..Any?)> -> (kotlin.Array<(com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>..kotlin.Array<out (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>?)
 
 'VIRTUAL_FILE_ARRAY' @ [178:53] ==> public final val VIRTUAL_FILE_ARRAY: (DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>..DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>?) defined in com.intellij.openapi.actionSystem.CommonDataKeys[JavaPropertyDescriptor]
 
@@ -479,7 +479,7 @@ Inferred types:
 
 'getData' @ [192:30] ==> @Nullable public open fun <T : (Any..Any?)> getData(@NotNull p0: DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>): (Array<(VirtualFile..VirtualFile?)>?..Array<out (VirtualFile..VirtualFile?)>?) defined in com.intellij.openapi.actionSystem.AnActionEvent[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Array<(com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>..kotlin.Array<out (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>)
+    <T : (Any..Any?)> -> (kotlin.Array<(com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>..kotlin.Array<out (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)>?)
 
 'VIRTUAL_FILE_ARRAY' @ [192:53] ==> public final val VIRTUAL_FILE_ARRAY: (DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>..DataKey<(Array<(VirtualFile..VirtualFile?)>..Array<out (VirtualFile..VirtualFile?)>?)>?) defined in com.intellij.openapi.actionSystem.CommonDataKeys[JavaPropertyDescriptor]
 

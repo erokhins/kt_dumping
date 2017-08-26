@@ -41,7 +41,7 @@ Inferred types:
 
 'changed' @ [38:14] ==> var changed: Boolean defined in org.jetbrains.kotlin.types.checker.prepareArgumentTypeRegardingCaptureTypes[LocalVariableDescriptor]
 
-'intersectTypes' @ [39:16] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
+'intersectTypes' @ [39:16] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker in file IntersectionType.kt[SimpleFunctionDescriptorImpl]
 
 'preparedSuperTypes' @ [39:31] ==> val preparedSuperTypes: List<UnwrappedType> defined in org.jetbrains.kotlin.types.checker.prepareArgumentTypeRegardingCaptureTypes[LocalVariableDescriptor]
 
@@ -74,7 +74,7 @@ Inferred types:
     <T> -> List<UnwrappedType>
     <R> -> UnwrappedType
 
-'intersectTypes' @ [44:13] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
+'intersectTypes' @ [44:13] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker in file IntersectionType.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [44:28] ==> value-parameter it: List<UnwrappedType> defined in org.jetbrains.kotlin.types.checker.prepareArgumentTypeRegardingCaptureTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -149,7 +149,7 @@ Inferred types:
 
 'changed' @ [63:14] ==> var changed: Boolean defined in org.jetbrains.kotlin.types.checker.captureFromExpression[LocalVariableDescriptor]
 
-'intersectTypes' @ [64:16] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
+'intersectTypes' @ [64:16] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker in file IntersectionType.kt[SimpleFunctionDescriptorImpl]
 
 'capturedSupertypes' @ [64:31] ==> val capturedSupertypes: List<UnwrappedType> defined in org.jetbrains.kotlin.types.checker.captureFromExpression[LocalVariableDescriptor]
 
@@ -159,7 +159,7 @@ Inferred types:
 
 'isMarkedNullable' @ [64:80] ==> public abstract val isMarkedNullable: Boolean defined in org.jetbrains.kotlin.types.SimpleType[PropertyDescriptorImpl]
 
-'captureFromArguments' @ [66:12] ==> public fun captureFromArguments(type: SimpleType, status: CaptureStatus, acceptNewCapturedType: (argumentIndex: Int, NewCapturedType) -> Unit = ...): SimpleType? defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
+'captureFromArguments' @ [66:12] ==> public fun captureFromArguments(type: SimpleType, status: CaptureStatus, acceptNewCapturedType: (argumentIndex: Int, NewCapturedType) -> Unit = ...): SimpleType? defined in org.jetbrains.kotlin.types.checker in file NewCapturedType.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [66:33] ==> value-parameter type: SimpleType defined in org.jetbrains.kotlin.types.checker.captureFromExpression[ValueParameterDescriptorImpl]
 
@@ -318,8 +318,6 @@ Inferred types:
 'OUT_VARIANCE' @ [100:89] ==> enum entry OUT_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
 'upperBounds' @ [101:13] ==> var upperBounds: List<UnwrappedType> defined in org.jetbrains.kotlin.types.checker.captureFromArguments[LocalVariableDescriptor]
-
-'NewKotlinTypeChecker' @ [101:28] ==> public object NewKotlinTypeChecker : KotlinTypeChecker defined in org.jetbrains.kotlin.types.checker in file NewKotlinTypeChecker.kt[FakeCallableDescriptorForObject]
 
 'transformToNewType' @ [101:49] ==> public final fun transformToNewType(type: UnwrappedType): UnwrappedType defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker[SimpleFunctionDescriptorImpl]
 

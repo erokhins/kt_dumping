@@ -711,8 +711,6 @@ Inferred types:
 
 'typeAliasExpansion' @ [240:75] ==> val typeAliasExpansion: TypeAliasExpansion defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkTypeAliasExpansion[LocalVariableDescriptor]
 
-'Annotations' @ [240:95] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [240:107] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'modifiersChecker' @ [244:9] ==> private final val modifiersChecker: ModifiersChecker.ModifiersCheckingProcedure defined in org.jetbrains.kotlin.resolve.DeclarationsChecker[PropertyDescriptorImpl]
@@ -839,7 +837,7 @@ Inferred types:
 
 'declaration' @ [279:34] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkConstructorVisibility[ValueParameterDescriptorImpl]
 
-'visibilityModifier' @ [279:46] ==> public fun KtDeclaration.visibilityModifier(): PsiElement? defined in org.jetbrains.kotlin.psi.psiUtil[SimpleFunctionDescriptorImpl]
+'visibilityModifier' @ [279:46] ==> public fun KtDeclaration.visibilityModifier(): PsiElement? defined in org.jetbrains.kotlin.psi.psiUtil in file ktPsiUtil.kt[SimpleFunctionDescriptorImpl]
 
 'visibilityModifier' @ [280:13] ==> val visibilityModifier: PsiElement? defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkConstructorVisibility[LocalVariableDescriptor]
 
@@ -883,8 +881,6 @@ Inferred types:
 'classDescriptor' @ [285:22] ==> val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkConstructorVisibility[LocalVariableDescriptor]
 
 'modality' @ [285:38] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [285:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'SEALED' @ [285:59] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -961,8 +957,8 @@ Inferred types:
 
 'get' @ [306:72] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), key: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [306:76] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1092,6 +1088,8 @@ Inferred types:
 
 'KotlinType' @ [342:22] ==> private constructor KotlinType() defined in org.jetbrains.kotlin.types.KotlinType[DeserializedClassConstructorDescriptor]
 
+'constructor' @ [342:34] ==> public abstract val constructor: TypeConstructor defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
+
 'partition' @ [343:18] ==> public inline fun <T> Iterable<TypeConstructor>.partition(predicate: (TypeConstructor) -> Boolean): Pair<List<TypeConstructor>, List<TypeConstructor>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TypeConstructor
@@ -1155,9 +1153,9 @@ Inferred types:
             else {
                 // Otherwise report the diagnostic on the type parameter declaration
                 declaration
-            }' @ [346:28] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>?)>, elseBranch: KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>?)>): KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>?)>[SimpleFunctionDescriptorImpl]
+            }' @ [346:28] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>?)>?)>, elseBranch: KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>?)>?)>): KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>?)>?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>?)>?)>?)>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>?)>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>..org.jetbrains.kotlin.psi.KtModifierListOwnerStub<out (com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)>?)>?)>?)>?)>
 
 'boundsWhichAreTypeParameters' @ [346:32] ==> val boundsWhichAreTypeParameters: Set<TypeConstructor> defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkOnlyOneTypeParameterBound[LocalVariableDescriptor]
 
@@ -1207,8 +1205,8 @@ Inferred types:
 
 'get' @ [356:95] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..ReadOnlySlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?), key: (KtTypeReference..KtTypeReference?)): KotlinType? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeReference
-    <V : (Any..Any?)> -> KotlinType
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'TYPE' @ [356:99] ==> public final val TYPE: (WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..WritableSlice<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1248,7 +1246,7 @@ Inferred types:
 
 'on' @ [368:74] ==> @NotNull public open fun on(@NotNull element: KtElement): SimpleDiagnostic<(KtElement..KtElement?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory0[JavaMethodDescriptor]
 
-'reportOn' @ [368:77] ==> val reportOn: KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>..KtModifierListOwnerStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>?)> defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkOnlyOneTypeParameterBound[LocalVariableDescriptor]
+'reportOn' @ [368:77] ==> val reportOn: KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>..KtModifierListOwnerStub<out (StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>..StubElement<out (KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>..KtModifierListOwnerStub<out (StubElement<out (PsiElement..PsiElement?)>..StubElement<out (PsiElement..PsiElement?)>?)>?)>?)>?)>?)> defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkOnlyOneTypeParameterBound[LocalVariableDescriptor]
 
 'classifier' @ [373:13] ==> value-parameter classifier: ClassifierDescriptor defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkSupertypesForConsistency[ValueParameterDescriptorImpl]
 
@@ -1541,8 +1539,8 @@ Inferred types:
 
 'get' @ [442:19] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>?), key: (PsiElement..PsiElement?)): PropertyDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> PropertyDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'PRIMARY_CONSTRUCTOR_PARAMETER' @ [442:38] ==> public final val PRIMARY_CONSTRUCTOR_PARAMETER: (WritableSlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1647,8 +1645,8 @@ Inferred types:
 
 'get' @ [468:19] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtTypeParameter..KtTypeParameter?), (TypeParameterDescriptor..TypeParameterDescriptor?)>..ReadOnlySlice<(KtTypeParameter..KtTypeParameter?), (TypeParameterDescriptor..TypeParameterDescriptor?)>?), key: (KtTypeParameter..KtTypeParameter?)): TypeParameterDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeParameter
-    <V : (Any..Any?)> -> TypeParameterDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeParameter..org.jetbrains.kotlin.psi.KtTypeParameter?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
 'TYPE_PARAMETER' @ [468:23] ==> public final val TYPE_PARAMETER: (WritableSlice<(KtTypeParameter..KtTypeParameter?), (TypeParameterDescriptor..TypeParameterDescriptor?)>..WritableSlice<(KtTypeParameter..KtTypeParameter?), (TypeParameterDescriptor..TypeParameterDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1703,8 +1701,8 @@ Inferred types:
 
 'get' @ [480:49] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtTypeParameter..KtTypeParameter?), (TypeParameterDescriptor..TypeParameterDescriptor?)>..ReadOnlySlice<(KtTypeParameter..KtTypeParameter?), (TypeParameterDescriptor..TypeParameterDescriptor?)>?), key: (KtTypeParameter..KtTypeParameter?)): TypeParameterDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtTypeParameter
-    <V : (Any..Any?)> -> TypeParameterDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeParameter..org.jetbrains.kotlin.psi.KtTypeParameter?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
 'TYPE_PARAMETER' @ [480:53] ==> public final val TYPE_PARAMETER: (WritableSlice<(KtTypeParameter..KtTypeParameter?), (TypeParameterDescriptor..TypeParameterDescriptor?)>..WritableSlice<(KtTypeParameter..KtTypeParameter?), (TypeParameterDescriptor..TypeParameterDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2004,6 +2002,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
+'addAccessibleTypeParametersFromType' @ [561:69] ==> local final fun addAccessibleTypeParametersFromType(type: KotlinType?): Unit defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkPropertyTypeParametersAreUsedInReceiverType[SimpleFunctionDescriptorImpl]
+
 'addAccessibleTypeParametersFromType' @ [567:9] ==> local final fun addAccessibleTypeParametersFromType(type: KotlinType?): Unit defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkPropertyTypeParametersAreUsedInReceiverType[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [567:45] ==> value-parameter descriptor: PropertyDescriptor defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkPropertyTypeParametersAreUsedInReceiverType[ValueParameterDescriptorImpl]
@@ -2108,8 +2108,6 @@ Inferred types:
 
 'modality' @ [603:45] ==> public final val PropertyDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [603:57] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [603:66] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'isAbstract' @ [604:13] ==> val isAbstract: Boolean defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkPropertyLateInit[LocalVariableDescriptor]
@@ -2180,8 +2178,8 @@ Inferred types:
 
 'get' @ [625:52] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), key: (PropertyDescriptor..PropertyDescriptor?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'BACKING_FIELD_REQUIRED' @ [625:71] ==> public final val BACKING_FIELD_REQUIRED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2292,8 +2290,6 @@ Inferred types:
 
 'modality' @ [652:36] ==> public final val PropertyDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [652:48] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [652:57] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'trace' @ [653:17] ==> private final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.DeclarationsChecker[PropertyDescriptorImpl]
@@ -2309,8 +2305,6 @@ Inferred types:
 'propertyDescriptor' @ [657:13] ==> value-parameter propertyDescriptor: PropertyDescriptor defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.checkMemberProperty[ValueParameterDescriptorImpl]
 
 'modality' @ [657:32] ==> public final val PropertyDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [657:44] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [657:53] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -2408,8 +2402,6 @@ Inferred types:
 
 'modality' @ [676:32] ==> public final val PropertyDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [676:44] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [676:53] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 '!' @ [677:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
@@ -2464,8 +2456,8 @@ Inferred types:
 
 'get' @ [686:57] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), key: (PropertyDescriptor..PropertyDescriptor?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'BACKING_FIELD_REQUIRED' @ [686:76] ==> public final val BACKING_FIELD_REQUIRED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2656,8 +2648,8 @@ Inferred types:
 
 'get' @ [708:56] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..ReadOnlySlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?), key: (PropertyDescriptor..PropertyDescriptor?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PropertyDescriptor
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'IS_UNINITIALIZED' @ [708:75] ==> public final val IS_UNINITIALIZED: (WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>..WritableSlice<(PropertyDescriptor..PropertyDescriptor?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2790,8 +2782,6 @@ Inferred types:
 'languageVersionSettings' @ [721:57] ==> private final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.DeclarationsChecker[PropertyDescriptorImpl]
 
 'supportsFeature' @ [721:81] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [721:97] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ShortSyntaxForPropertyGetters' @ [721:113] ==> enum entry ShortSyntaxForPropertyGetters defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -3552,8 +3542,6 @@ Inferred types:
 
 'modality' @ [870:40] ==> public final val PropertyDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [870:52] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [870:61] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'reportVisibilityModifierDiagnostics' @ [871:21] ==> private final fun reportVisibilityModifierDiagnostics(tokens: Collection<PsiElement>, diagnostic: DiagnosticFactory0<PsiElement>): Unit defined in org.jetbrains.kotlin.resolve.DeclarationsChecker[SimpleFunctionDescriptorImpl]
@@ -3771,7 +3759,7 @@ Inferred types:
 
 'of' @ [941:56] ==> public open fun <E : (Any..Any?)> of(p0: (String..String?), p1: (String..String?), p2: (String..String?)): (ImmutableSet<(String..String?)>..ImmutableSet<(String..String?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 '!' @ [944:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -3788,8 +3776,6 @@ Inferred types:
 'member' @ [945:17] ==> value-parameter member: CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.DeclarationsChecker.Companion.isImplementingMethodOfAny[ValueParameterDescriptorImpl]
 
 'modality' @ [945:24] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [945:36] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [945:45] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

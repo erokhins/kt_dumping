@@ -49,7 +49,7 @@ Inferred types:
 
 'myEnvironment' @ [46:9] ==> protected/*protected and package*/ final var myEnvironment: (KotlinCoreEnvironment..KotlinCoreEnvironment?) defined in org.jetbrains.kotlin.android.synthetic.test.AbstractAndroidBoxTest[JavaPropertyDescriptor]
 
-'createTestEnvironment' @ [46:25] ==> public fun KtUsefulTestCase.createTestEnvironment(configuration: CompilerConfiguration, resDirectories: List<String>): KotlinCoreEnvironment defined in org.jetbrains.kotlin.android.synthetic.test[SimpleFunctionDescriptorImpl]
+'createTestEnvironment' @ [46:25] ==> public fun KtUsefulTestCase.createTestEnvironment(configuration: CompilerConfiguration, resDirectories: List<String>): KotlinCoreEnvironment defined in org.jetbrains.kotlin.android.synthetic.test in file CompilerTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'configuration' @ [46:47] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.android.synthetic.test.AbstractAndroidBoxTest.createEnvironmentForConfiguration[ValueParameterDescriptorImpl]
 
@@ -213,7 +213,7 @@ Inferred types:
 
 'sort' @ [100:21] ==> public open fun <T : (Comparable<(String..String?)>..Comparable<(String..String?)>?)> sort(p0: (MutableList<(String..String?)>..List<(String..String?)>?)): Unit defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Comparable<(T..T?)>..Comparable<(T..T?)>?)> -> String
+    <T : (Comparable<(T..T?)>..Comparable<(T..T?)>?)> -> (kotlin.String..kotlin.String?)
 
 'files' @ [100:26] ==> val files: MutableList<String> defined in org.jetbrains.kotlin.android.synthetic.test.AbstractAndroidBoxTest.doMultiFileTest[LocalVariableDescriptor]
 

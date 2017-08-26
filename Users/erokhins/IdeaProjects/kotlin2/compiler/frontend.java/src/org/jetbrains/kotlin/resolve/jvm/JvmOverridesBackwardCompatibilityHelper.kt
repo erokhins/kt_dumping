@@ -20,8 +20,6 @@ Inferred types:
 
 'modality' @ [40:34] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [40:46] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [40:55] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'visitedDescriptors' @ [42:13] ==> value-parameter visitedDescriptors: MutableSet<CallableMemberDescriptor> defined in org.jetbrains.kotlin.resolve.jvm.JvmOverridesBackwardCompatibilityHelper.isPlatformSpecificDescriptorThatCanBeImplicitlyOverridden[ValueParameterDescriptorImpl]

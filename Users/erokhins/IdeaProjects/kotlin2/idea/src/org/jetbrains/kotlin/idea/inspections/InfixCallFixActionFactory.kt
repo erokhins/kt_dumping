@@ -8,9 +8,9 @@ Inferred types:
 
 'a' @ [34:87] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<out (PsiElement..PsiElement?), out (Any..Any?), out (Any..Any?)>.a: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <A : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <B : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
+    <A : (Any..Any?)> -> Captured(*)
+    <B : (Any..Any?)> -> Captured(*)
 
 'DescriptorToSourceUtilsIde' @ [35:22] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
 

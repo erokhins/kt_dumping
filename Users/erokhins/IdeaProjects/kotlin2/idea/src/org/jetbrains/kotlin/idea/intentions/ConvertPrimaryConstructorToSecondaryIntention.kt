@@ -370,9 +370,9 @@ Inferred types:
 
 'text' @ [111:65] ==> val text: String? defined in org.jetbrains.kotlin.idea.intentions.ConvertPrimaryConstructorToSecondaryIntention.applyTo.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'?:' @ [118:29] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String): String[SimpleFunctionDescriptorImpl]
+'?:' @ [118:29] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CharSequence?, right: CharSequence): CharSequence[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CharSequence
 
 'it' @ [118:31] ==> value-parameter it: KtDeclaration defined in org.jetbrains.kotlin.idea.intentions.ConvertPrimaryConstructorToSecondaryIntention.applyTo.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -401,6 +401,8 @@ Inferred types:
     <T> -> String
 
 'String' @ [123:108] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'isNotEmpty' @ [123:116] ==> @InlineOnly public inline fun CharSequence.isNotEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'allInitializers' @ [124:25] ==> val allInitializers: List<String> defined in org.jetbrains.kotlin.idea.intentions.ConvertPrimaryConstructorToSecondaryIntention.applyTo.<anonymous>[LocalVariableDescriptor]
 

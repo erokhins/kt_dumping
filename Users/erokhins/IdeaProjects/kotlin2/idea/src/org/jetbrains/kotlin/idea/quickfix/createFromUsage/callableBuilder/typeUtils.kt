@@ -54,7 +54,7 @@ Inferred types:
 
 'it' @ [55:40] ==> value-parameter it: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.decomposeIntersection.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'decomposeIntersection' @ [55:43] ==> internal fun KotlinType.decomposeIntersection(): List<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'decomposeIntersection' @ [55:43] ==> internal fun KotlinType.decomposeIntersection(): List<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [58:12] ==> public fun <T> listOf(element: KotlinType): List<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -140,11 +140,7 @@ Inferred types:
 
 'fq' @ [84:24] ==> value-parameter fq: Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.renderSingle[ValueParameterDescriptorImpl]
 
-'IdeDescriptorRenderers' @ [84:28] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE' @ [84:51] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
-
-'IdeDescriptorRenderers' @ [84:68] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE_SHORT_NAMES_IN_TYPES' @ [84:91] ==> @field:JvmField public final val SOURCE_CODE_SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -154,7 +150,7 @@ Inferred types:
 
 'typeToRender' @ [85:32] ==> val typeToRender: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.renderSingle[LocalVariableDescriptor]
 
-'decomposeIntersection' @ [89:12] ==> internal fun KotlinType.decomposeIntersection(): List<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'decomposeIntersection' @ [89:12] ==> internal fun KotlinType.decomposeIntersection(): List<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [89:36] ==> public inline fun <T, R> Iterable<KotlinType>.map(transform: (KotlinType) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -163,17 +159,17 @@ Inferred types:
 
 'it' @ [89:42] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.render.<anonymous>[ValueParameterDescriptorImpl]
 
-'renderSingle' @ [89:45] ==> private fun KotlinType.renderSingle(typeParameterNameMap: Map<TypeParameterDescriptor, String>, fq: Boolean): String defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'renderSingle' @ [89:45] ==> private fun KotlinType.renderSingle(typeParameterNameMap: Map<TypeParameterDescriptor, String>, fq: Boolean): String defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameterNameMap' @ [89:58] ==> value-parameter typeParameterNameMap: Map<TypeParameterDescriptor, String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.render[ValueParameterDescriptorImpl]
 
 'fq' @ [89:80] ==> value-parameter fq: Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.render[ValueParameterDescriptorImpl]
 
-'render' @ [92:99] ==> private fun KotlinType.render(typeParameterNameMap: Map<TypeParameterDescriptor, String>, fq: Boolean): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'render' @ [92:99] ==> private fun KotlinType.render(typeParameterNameMap: Map<TypeParameterDescriptor, String>, fq: Boolean): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameterNameMap' @ [92:106] ==> value-parameter typeParameterNameMap: Map<TypeParameterDescriptor, String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.renderShort[ValueParameterDescriptorImpl]
 
-'render' @ [93:98] ==> private fun KotlinType.render(typeParameterNameMap: Map<TypeParameterDescriptor, String>, fq: Boolean): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'render' @ [93:98] ==> private fun KotlinType.render(typeParameterNameMap: Map<TypeParameterDescriptor, String>, fq: Boolean): List<String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameterNameMap' @ [93:105] ==> value-parameter typeParameterNameMap: Map<TypeParameterDescriptor, String> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.renderLong[ValueParameterDescriptorImpl]
 
@@ -322,8 +318,6 @@ Inferred types:
 'dataFlowInfo' @ [145:29] ==> val dataFlowInfo: DataFlowInfo defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[LocalVariableDescriptor]
 
 'getCollectedTypes' @ [145:42] ==> public abstract fun getCollectedTypes(key: DataFlowValue): Set<KotlinType> defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[DeserializedSimpleFunctionDescriptor]
-
-'DataFlowValueFactory' @ [145:60] ==> public object DataFlowValueFactory defined in org.jetbrains.kotlin.resolve.calls.smartcasts[FakeCallableDescriptorForObject]
 
 'createDataFlowValue' @ [145:81] ==> @JvmStatic public final fun createDataFlowValue(expression: KtExpression, type: KotlinType, bindingContext: BindingContext, containingDeclarationOrModule: DeclarationDescriptor): DataFlowValue defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory[DeserializedSimpleFunctionDescriptor]
 
@@ -524,7 +518,7 @@ Inferred types:
 
 'typeRef' @ [169:54] ==> val typeRef: KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[LocalVariableDescriptor]
 
-'guessType' @ [173:17] ==> private fun KtNamedDeclaration.guessType(context: BindingContext): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessType' @ [173:17] ==> private fun KtNamedDeclaration.guessType(context: BindingContext): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [173:27] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[ValueParameterDescriptorImpl]
 
@@ -555,7 +549,7 @@ Inferred types:
 
 'typeRef' @ [181:54] ==> val typeRef: KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[LocalVariableDescriptor]
 
-'guessType' @ [185:17] ==> private fun KtNamedDeclaration.guessType(context: BindingContext): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessType' @ [185:17] ==> private fun KtNamedDeclaration.guessType(context: BindingContext): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [185:27] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[ValueParameterDescriptorImpl]
 
@@ -594,7 +588,7 @@ Inferred types:
 
 'parent' @ [197:17] ==> val parent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[LocalVariableDescriptor]
 
-'guessType' @ [197:24] ==> private fun KtNamedDeclaration.guessType(context: BindingContext): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessType' @ [197:24] ==> private fun KtNamedDeclaration.guessType(context: BindingContext): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [197:34] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[ValueParameterDescriptorImpl]
 
@@ -716,7 +710,7 @@ Inferred types:
 
 'parent' @ [214:13] ==> val parent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[LocalVariableDescriptor]
 
-'guessTypes' @ [214:20] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [214:20] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [214:31] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[ValueParameterDescriptorImpl]
 
@@ -816,7 +810,7 @@ Inferred types:
 
 'functionalExpression' @ [232:31] ==> val functionalExpression: KtExpression? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[LocalVariableDescriptor]
 
-'guessTypes' @ [232:52] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'guessTypes' @ [232:52] ==> public fun KtExpression.guessTypes(context: BindingContext, module: ModuleDescriptor, pseudocode: Pseudocode? = ..., coerceUnusedToUnit: Boolean = ..., allowErrorTypes: Boolean = ...): Array<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [232:63] ==> value-parameter context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes[ValueParameterDescriptorImpl]
 
@@ -837,7 +831,7 @@ Inferred types:
 
 'it' @ [233:38] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.guessTypes.<anonymous>[ValueParameterDescriptorImpl]
 
-'getFunctionType' @ [233:41] ==> private fun KotlinType.getFunctionType(): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getFunctionType' @ [233:41] ==> private fun KotlinType.getFunctionType(): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'arguments' @ [233:60] ==> public abstract val arguments: List<TypeProjection> defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 
@@ -872,7 +866,7 @@ Inferred types:
 
 'builtIns' @ [237:62] ==> public abstract val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.descriptors.ModuleDescriptor[DeserializedPropertyDescriptor]
 
-'getRepresentativeTypes' @ [237:72] ==> private fun TypePredicate.getRepresentativeTypes(): Set<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getRepresentativeTypes' @ [237:72] ==> private fun TypePredicate.getRepresentativeTypes(): Set<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'toTypedArray' @ [237:97] ==> public inline fun <reified T> Collection<KotlinType>.toTypedArray(): Array<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1100,8 +1094,6 @@ Inferred types:
 
 'variance' @ [287:107] ==> public final val TypeParameterDescriptor.variance: Variance[MyPropertyDescriptor]
 
-'KotlinTypeFactory' @ [289:9] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
-
 'simpleType' @ [289:27] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean, memberScope: MemberScope): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
 'annotations' @ [289:38] ==> public abstract val annotations: Annotations defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
@@ -1204,13 +1196,13 @@ Inferred types:
 
 'singleton' @ [311:38] ==> public open fun <T : (Any..Any?)> singleton(p0: (KotlinType..KotlinType?)): (MutableSet<(KotlinType..KotlinType?)>..Set<(KotlinType..KotlinType?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'targetType' @ [311:48] ==> public final val targetType: KotlinType defined in org.jetbrains.kotlin.cfg.pseudocode.SingleType[DeserializedPropertyDescriptor]
 
 'singleton' @ [312:39] ==> public open fun <T : (Any..Any?)> singleton(p0: (KotlinType..KotlinType?)): (MutableSet<(KotlinType..KotlinType?)>..Set<(KotlinType..KotlinType?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'upperBound' @ [312:49] ==> public final val upperBound: KotlinType defined in org.jetbrains.kotlin.cfg.pseudocode.AllSubtypes[DeserializedPropertyDescriptor]
 
@@ -1223,9 +1215,7 @@ Inferred types:
 
 'isEmpty' @ [314:26] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'AllTypes' @ [314:37] ==> public object AllTypes : TypePredicate defined in org.jetbrains.kotlin.cfg.pseudocode[FakeCallableDescriptorForObject]
-
-'getRepresentativeTypes' @ [314:46] ==> private fun TypePredicate.getRepresentativeTypes(): Set<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getRepresentativeTypes' @ [314:46] ==> private fun TypePredicate.getRepresentativeTypes(): Set<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'typeSets' @ [315:18] ==> public final val typeSets: List<TypePredicate> defined in org.jetbrains.kotlin.cfg.pseudocode.ForAllTypes[DeserializedPropertyDescriptor]
 
@@ -1236,9 +1226,9 @@ Inferred types:
 
 'it' @ [315:33] ==> value-parameter it: TypePredicate defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.getRepresentativeTypes.<anonymous>[ValueParameterDescriptorImpl]
 
-'getRepresentativeTypes' @ [315:36] ==> private fun TypePredicate.getRepresentativeTypes(): Set<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getRepresentativeTypes' @ [315:36] ==> private fun TypePredicate.getRepresentativeTypes(): Set<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
-'reduce' @ [315:63] ==> public inline fun <S, T : Set<KotlinType>> Iterable<Set<KotlinType>>.reduce(operation: (Set<KotlinType>, Set<KotlinType>) -> Set<KotlinType>): Set<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [315:63] ==> public inline fun <S, T : Set<KotlinType>> Iterable<Set<KotlinType>>.reduce(operation: (acc: Set<KotlinType>, Set<KotlinType>) -> Set<KotlinType>): Set<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> Set<KotlinType>
     <T : S> -> Set<KotlinType>
@@ -1265,7 +1255,7 @@ Inferred types:
 
 'it' @ [317:77] ==> value-parameter it: TypePredicate defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.getRepresentativeTypes.<anonymous>[ValueParameterDescriptorImpl]
 
-'getRepresentativeTypes' @ [317:80] ==> private fun TypePredicate.getRepresentativeTypes(): Set<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getRepresentativeTypes' @ [317:80] ==> private fun TypePredicate.getRepresentativeTypes(): Set<KotlinType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file typeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'emptySet' @ [318:24] ==> public fun <T> emptySet(): Set<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

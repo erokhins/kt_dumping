@@ -119,8 +119,6 @@ Inferred types:
 
 'jetType' @ [66:17] ==> val jetType: SimpleType defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.transformArrayType[LocalVariableDescriptor]
 
-'KotlinTypeFactory' @ [67:18] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
-
 'flexibleType' @ [67:36] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
 'jetType' @ [67:49] ==> val jetType: SimpleType defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.transformArrayType[LocalVariableDescriptor]
@@ -133,9 +131,7 @@ Inferred types:
 
 'javaComponentType' @ [70:47] ==> val javaComponentType: JavaType defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.transformArrayType[LocalVariableDescriptor]
 
-'COMMON' @ [71:47] ==> enum entry COMMON defined in org.jetbrains.kotlin.load.java.components.TypeUsage[FakeCallableDescriptorForObject]
-
-'toAttributes' @ [71:54] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [71:54] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'attr' @ [71:67] ==> value-parameter attr: JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.transformArrayType[ValueParameterDescriptorImpl]
 
@@ -277,8 +273,6 @@ Inferred types:
 'lower' @ [101:25] ==> val lower: SimpleType defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.transformJavaClassifierType[LocalVariableDescriptor]
 
 'upper' @ [101:32] ==> val upper: SimpleType defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.transformJavaClassifierType[LocalVariableDescriptor]
-
-'KotlinTypeFactory' @ [104:13] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
 
 'flexibleType' @ [104:31] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
@@ -538,7 +532,9 @@ Inferred types:
 
 'isSuperWildcard' @ [180:41] ==> local final fun JavaType?.isSuperWildcard(): Boolean defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.argumentsMakeSenseOnlyForMutableContainer[SimpleFunctionDescriptorImpl]
 
-'JavaToKotlinClassMap' @ [181:44] ==> public object JavaToKotlinClassMap : PlatformToKotlinClassMap defined in org.jetbrains.kotlin.platform in file JavaToKotlinClassMap.kt[FakeCallableDescriptorForObject]
+'?:' @ [181:44] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Variance?, right: Variance): Variance[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Variance
 
 'convertReadOnlyToMutable' @ [181:65] ==> public final fun convertReadOnlyToMutable(readOnly: ClassDescriptor): ClassDescriptor defined in org.jetbrains.kotlin.platform.JavaToKotlinClassMap[SimpleFunctionDescriptorImpl]
 
@@ -599,7 +595,7 @@ Inferred types:
 
 'parameter' @ [218:29] ==> value-parameter parameter: (TypeParameterDescriptor..TypeParameterDescriptor?) defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.computeArguments.<anonymous>[ValueParameterDescriptorImpl]
 
-'getErasedUpperBound' @ [218:39] ==> internal fun TypeParameterDescriptor.getErasedUpperBound(potentiallyRecursiveTypeParameter: TypeParameterDescriptor? = ..., defaultValue: () -> KotlinType = ...): KotlinType defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'getErasedUpperBound' @ [218:39] ==> internal fun TypeParameterDescriptor.getErasedUpperBound(potentiallyRecursiveTypeParameter: TypeParameterDescriptor? = ..., defaultValue: () -> KotlinType = ...): KotlinType defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'attr' @ [218:59] ==> value-parameter attr: JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.computeArguments[ValueParameterDescriptorImpl]
 
@@ -711,9 +707,7 @@ Inferred types:
 
 'javaTypeArgument' @ [245:39] ==> val javaTypeArgument: JavaType defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.computeArguments.<anonymous>[LocalVariableDescriptor]
 
-'COMMON' @ [245:57] ==> enum entry COMMON defined in org.jetbrains.kotlin.load.java.components.TypeUsage[FakeCallableDescriptorForObject]
-
-'toAttributes' @ [245:64] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [245:64] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'parameter' @ [245:80] ==> val parameter: (TypeParameterDescriptor..TypeParameterDescriptor?) defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.computeArguments.<anonymous>[LocalVariableDescriptor]
 
@@ -790,9 +784,7 @@ Inferred types:
 
 'bound' @ [262:54] ==> val bound: JavaType? defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.transformToTypeProjection[LocalVariableDescriptor]
 
-'COMMON' @ [262:61] ==> enum entry COMMON defined in org.jetbrains.kotlin.load.java.components.TypeUsage[FakeCallableDescriptorForObject]
-
-'toAttributes' @ [262:68] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [262:68] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'projectionKind' @ [263:46] ==> val projectionKind: Variance defined in org.jetbrains.kotlin.load.java.lazy.types.JavaTypeResolver.transformToTypeProjection[LocalVariableDescriptor]
 

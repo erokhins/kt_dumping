@@ -39,8 +39,8 @@ Inferred types:
 
 'createTestFiles' @ [95:46] ==> @NotNull public open fun <M : (Any..Any?), F : (Any..Any?)> createTestFiles(p0: (String..String?), p1: (String..String?), p2: (KotlinTestUtils.TestFileFactory<(BasicBoxTest.TestModule..BasicBoxTest.TestModule?), (BasicBoxTest.TestFile..BasicBoxTest.TestFile?)>..KotlinTestUtils.TestFileFactory<(BasicBoxTest.TestModule..BasicBoxTest.TestModule?), (BasicBoxTest.TestFile..BasicBoxTest.TestFile?)>?), p3: Boolean): (MutableList<(BasicBoxTest.TestFile..BasicBoxTest.TestFile?)>..List<(BasicBoxTest.TestFile..BasicBoxTest.TestFile?)>) defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 Inferred types:
-    <M : (Any..Any?)> -> TestModule
-    <F : (Any..Any?)> -> TestFile
+    <M : (Any..Any?)> -> (org.jetbrains.kotlin.js.test.BasicBoxTest.TestModule..org.jetbrains.kotlin.js.test.BasicBoxTest.TestModule?)
+    <F : (Any..Any?)> -> (org.jetbrains.kotlin.js.test.BasicBoxTest.TestFile..org.jetbrains.kotlin.js.test.BasicBoxTest.TestFile?)
 
 'file' @ [95:62] ==> val file: File defined in org.jetbrains.kotlin.js.test.BasicBoxTest.doTest[LocalVariableDescriptor]
 
@@ -83,7 +83,7 @@ Inferred types:
 
 'topologicalOrder' @ [100:38] ==> public final fun <N : (Any..Any?)> topologicalOrder(@NotNull p0: (MutableIterable<(BasicBoxTest.TestModule..BasicBoxTest.TestModule?)>..Iterable<(BasicBoxTest.TestModule..BasicBoxTest.TestModule?)>), @NotNull p1: ((BasicBoxTest.TestModule..BasicBoxTest.TestModule?)) -> (MutableIterable<(BasicBoxTest.TestModule..BasicBoxTest.TestModule?)>..Iterable<(BasicBoxTest.TestModule..BasicBoxTest.TestModule?)>)): (MutableList<(BasicBoxTest.TestModule..BasicBoxTest.TestModule?)>..List<(BasicBoxTest.TestModule..BasicBoxTest.TestModule?)>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> TestModule
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.js.test.BasicBoxTest.TestModule..org.jetbrains.kotlin.js.test.BasicBoxTest.TestModule?)
 
 'modules' @ [100:55] ==> val modules: Map<String, BasicBoxTest.TestModule> defined in org.jetbrains.kotlin.js.test.BasicBoxTest.doTest.<anonymous>[LocalVariableDescriptor]
 
@@ -222,8 +222,6 @@ Inferred types:
 
 'COMMON_FILES_DIR' @ [117:42] ==> private final val COMMON_FILES_DIR: String defined in org.jetbrains.kotlin.js.test.BasicBoxTest.Companion[PropertyDescriptorImpl]
 
-'JavaScript' @ [117:60] ==> public object JavaScript defined in org.jetbrains.kotlin.js[FakeCallableDescriptorForObject]
-
 'EXTENSION' @ [117:71] ==> public const final val EXTENSION: String defined in org.jetbrains.kotlin.js.JavaScript[DeserializedPropertyDescriptor]
 
 'file' @ [118:35] ==> val file: File defined in org.jetbrains.kotlin.js.test.BasicBoxTest.doTest[LocalVariableDescriptor]
@@ -231,8 +229,6 @@ Inferred types:
 'parent' @ [118:40] ==> public final val File.parent: (String..String?)[MyPropertyDescriptor]
 
 'COMMON_FILES_NAME' @ [118:55] ==> private final val COMMON_FILES_NAME: String defined in org.jetbrains.kotlin.js.test.BasicBoxTest.Companion[PropertyDescriptorImpl]
-
-'JavaScript' @ [118:75] ==> public object JavaScript defined in org.jetbrains.kotlin.js[FakeCallableDescriptorForObject]
 
 'DOT_EXTENSION' @ [118:86] ==> public const final val DOT_EXTENSION: String defined in org.jetbrains.kotlin.js.JavaScript[DeserializedPropertyDescriptor]
 
@@ -266,8 +262,6 @@ Inferred types:
 'getFilesInDirectoryByExtension' @ [122:29] ==> @NotNull public open fun getFilesInDirectoryByExtension(@NotNull directory: String, extension: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>) defined in org.jetbrains.kotlin.js.test.utils.JsTestUtils[JavaMethodDescriptor]
 
 'baseDir' @ [122:60] ==> value-parameter baseDir: String defined in org.jetbrains.kotlin.js.test.BasicBoxTest.doTest.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
-
-'JavaScript' @ [122:75] ==> public object JavaScript defined in org.jetbrains.kotlin.js[FakeCallableDescriptorForObject]
 
 'EXTENSION' @ [122:86] ==> public const final val EXTENSION: String defined in org.jetbrains.kotlin.js.JavaScript[DeserializedPropertyDescriptor]
 
@@ -375,8 +369,6 @@ Inferred types:
 '+' @ [144:58] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
 'EXTENSION' @ [144:79] ==> public const final val EXTENSION: String defined in org.jetbrains.kotlin.idea.KotlinFileType[JavaPropertyDescriptor]
-
-'JavaScript' @ [144:92] ==> public object JavaScript defined in org.jetbrains.kotlin.js[FakeCallableDescriptorForObject]
 
 'DOT_EXTENSION' @ [144:103] ==> public const final val DOT_EXTENSION: String defined in org.jetbrains.kotlin.js.JavaScript[DeserializedPropertyDescriptor]
 
@@ -823,7 +815,7 @@ Inferred types:
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
 
-'fold' @ [256:18] ==> public inline fun <T, R> Iterable<(String..String?)>.fold(initial: File, operation: (File, (String..String?)) -> File): File defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [256:18] ==> public inline fun <T, R> Iterable<(String..String?)>.fold(initial: File, operation: (acc: File, (String..String?)) -> File): File defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
     <R> -> File
@@ -831,6 +823,8 @@ Inferred types:
 'File' @ [256:23] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'pathToOutputDir' @ [256:28] ==> private final val pathToOutputDir: String defined in org.jetbrains.kotlin.js.test.BasicBoxTest[PropertyDescriptorImpl]
+
+'File' @ [256:48] ==> public constructor File(p0: (File..File?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'if (this.name == TEST_MODULE) "" else "-$name"' @ [260:32] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -983,6 +977,8 @@ Inferred types:
     <R> -> SourceFile
 
 'TranslationUnit' @ [295:37] ==> private constructor TranslationUnit() defined in org.jetbrains.kotlin.js.facade.TranslationUnit[DeserializedClassConstructorDescriptor]
+
+'SourceFile' @ [295:54] ==> public constructor SourceFile(file: KtFile) defined in org.jetbrains.kotlin.js.facade.TranslationUnit.SourceFile[DeserializedClassConstructorDescriptor]
 
 'outputFile' @ [295:67] ==> val outputFile: File defined in org.jetbrains.kotlin.js.test.BasicBoxTest.generateJavaScriptFile[LocalVariableDescriptor]
 
@@ -1751,6 +1747,8 @@ Inferred types:
 
 'this' @ [472:87] ==> <this> defined in org.jetbrains.kotlin.js.test.BasicBoxTest[LazyClassReceiverParameterDescriptor]
 
+'createPsiFile' @ [472:93] ==> private final fun createPsiFile(fileName: String): KtFile defined in org.jetbrains.kotlin.js.test.BasicBoxTest[SimpleFunctionDescriptorImpl]
+
 'environment' @ [479:29] ==> public final val BasicBoxTest.environment: KotlinCoreEnvironment[MyPropertyDescriptor]
 
 'configuration' @ [479:41] ==> public final val configuration: CompilerConfiguration defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[DeserializedPropertyDescriptor]
@@ -1761,9 +1759,7 @@ Inferred types:
 
 'put' @ [481:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
-
-'CommonConfigurationKeys' @ [481:27] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'DISABLE_INLINE' @ [481:51] ==> @field:JvmField public final val DISABLE_INLINE: CompilerConfigurationKey<Boolean> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -1788,17 +1784,15 @@ Inferred types:
 
 'languageVersion' @ [484:49] ==> value-parameter languageVersion: LanguageVersion defined in org.jetbrains.kotlin.js.test.BasicBoxTest.createConfig.<anonymous>[ValueParameterDescriptorImpl]
 
-'LanguageVersionSettingsImpl' @ [484:66] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [484:94] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 
 'apiVersion' @ [484:102] ==> public open val apiVersion: ApiVersion defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[DeserializedPropertyDescriptor]
 
 'configuration' @ [487:9] ==> val configuration: (CompilerConfiguration..CompilerConfiguration?) defined in org.jetbrains.kotlin.js.test.BasicBoxTest.createConfig[LocalVariableDescriptor]
 
-'put' @ [487:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(List<String>..List<(String..String?)>?)>, @NotNull p1: (List<String>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
+'put' @ [487:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableList<(String..String?)>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<(kotlin.String..kotlin.String?)>)
+    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(kotlin.String..kotlin.String?)>..kotlin.collections.List<(kotlin.String..kotlin.String?)>?)
 
 'LIBRARIES' @ [487:47] ==> public final val LIBRARIES: (CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>..CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1814,9 +1808,9 @@ Inferred types:
 
 'configuration' @ [488:9] ==> val configuration: (CompilerConfiguration..CompilerConfiguration?) defined in org.jetbrains.kotlin.js.test.BasicBoxTest.createConfig[LocalVariableDescriptor]
 
-'put' @ [488:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(List<String>..List<(String..String?)>?)>, @NotNull p1: (List<String>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
+'put' @ [488:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableList<(String..String?)>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<(kotlin.String..kotlin.String?)>)
+    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(kotlin.String..kotlin.String?)>..kotlin.collections.List<(kotlin.String..kotlin.String?)>?)
 
 'FRIEND_PATHS' @ [488:47] ==> public final val FRIEND_PATHS: (CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>..CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1826,9 +1820,7 @@ Inferred types:
 
 'put' @ [490:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [490:27] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [490:51] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -1844,7 +1836,7 @@ Inferred types:
 
 'put' @ [491:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(ModuleKind..ModuleKind?)>, @NotNull p1: ModuleKind): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleKind
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.js.ModuleKind..org.jetbrains.kotlin.serialization.js.ModuleKind?)
 
 'MODULE_KIND' @ [491:47] ==> public final val MODULE_KIND: (CompilerConfigurationKey<(ModuleKind..ModuleKind?)>..CompilerConfigurationKey<(ModuleKind..ModuleKind?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1856,7 +1848,7 @@ Inferred types:
 
 'put' @ [492:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(EcmaVersion..EcmaVersion?)>, @NotNull p1: EcmaVersion): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> EcmaVersion
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.js.config.EcmaVersion..org.jetbrains.kotlin.js.config.EcmaVersion?)
 
 'TARGET' @ [492:47] ==> public final val TARGET: (CompilerConfigurationKey<(EcmaVersion..EcmaVersion?)>..CompilerConfigurationKey<(EcmaVersion..EcmaVersion?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1870,7 +1862,7 @@ Inferred types:
 
 'put' @ [495:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'META_INFO' @ [495:47] ==> public final val META_INFO: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1890,7 +1882,7 @@ Inferred types:
 
 'put' @ [499:31] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(IncrementalDataProvider..IncrementalDataProvider?)>, @NotNull p1: IncrementalDataProvider): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IncrementalDataProvider
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.incremental.js.IncrementalDataProvider..org.jetbrains.kotlin.incremental.js.IncrementalDataProvider?)
 
 'INCREMENTAL_DATA_PROVIDER' @ [499:55] ==> public final val INCREMENTAL_DATA_PROVIDER: (CompilerConfigurationKey<(IncrementalDataProvider..IncrementalDataProvider?)>..CompilerConfigurationKey<(IncrementalDataProvider..IncrementalDataProvider?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1919,7 +1911,7 @@ Inferred types:
 
 'put' @ [503:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(IncrementalResultsConsumer..IncrementalResultsConsumer?)>, @NotNull p1: IncrementalResultsConsumer): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IncrementalResultsConsumer
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.incremental.js.IncrementalResultsConsumer..org.jetbrains.kotlin.incremental.js.IncrementalResultsConsumer?)
 
 'INCREMENTAL_RESULTS_CONSUMER' @ [503:51] ==> public final val INCREMENTAL_RESULTS_CONSUMER: (CompilerConfigurationKey<(IncrementalResultsConsumer..IncrementalResultsConsumer?)>..CompilerConfigurationKey<(IncrementalResultsConsumer..IncrementalResultsConsumer?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1929,7 +1921,7 @@ Inferred types:
 
 'put' @ [505:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'SOURCE_MAP' @ [505:47] ==> public final val SOURCE_MAP: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1939,9 +1931,9 @@ Inferred types:
 
 'configuration' @ [506:9] ==> val configuration: (CompilerConfiguration..CompilerConfiguration?) defined in org.jetbrains.kotlin.js.test.BasicBoxTest.createConfig[LocalVariableDescriptor]
 
-'put' @ [506:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(List<String>..List<(String..String?)>?)>, @NotNull p1: (List<String>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
+'put' @ [506:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableList<(String..String?)>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<(kotlin.String..kotlin.String?)>)
+    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(kotlin.String..kotlin.String?)>..kotlin.collections.List<(kotlin.String..kotlin.String?)>?)
 
 'SOURCE_MAP_SOURCE_ROOTS' @ [506:47] ==> public final val SOURCE_MAP_SOURCE_ROOTS: (CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>..CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1951,7 +1943,7 @@ Inferred types:
 
 'put' @ [507:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(SourceMapSourceEmbedding..SourceMapSourceEmbedding?)>, @NotNull p1: SourceMapSourceEmbedding): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SourceMapSourceEmbedding
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.js.config.SourceMapSourceEmbedding..org.jetbrains.kotlin.js.config.SourceMapSourceEmbedding?)
 
 'SOURCE_MAP_EMBED_SOURCES' @ [507:47] ==> public final val SOURCE_MAP_EMBED_SOURCES: (CompilerConfigurationKey<(SourceMapSourceEmbedding..SourceMapSourceEmbedding?)>..CompilerConfigurationKey<(SourceMapSourceEmbedding..SourceMapSourceEmbedding?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -1965,7 +1957,7 @@ Inferred types:
 
 'put' @ [510:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'TYPED_ARRAYS_ENABLED' @ [510:51] ==> public final val TYPED_ARRAYS_ENABLED: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.js.config.JSConfigurationKeys[JavaPropertyDescriptor]
 
@@ -2134,7 +2126,7 @@ Inferred types:
 
 'engineForMinifier' @ [551:22] ==> private final val engineForMinifier: ScriptEngine defined in org.jetbrains.kotlin.js.test.BasicBoxTest.Companion[PropertyDescriptorImpl]
 
-'runAndRestoreContext' @ [551:40] ==> public fun ScriptEngine.runAndRestoreContext(f: ScriptEngine.() -> Any?): Any? defined in org.jetbrains.kotlin.js.test[SimpleFunctionDescriptorImpl]
+'runAndRestoreContext' @ [551:40] ==> public fun ScriptEngine.runAndRestoreContext(f: ScriptEngine.() -> Any?): Any? defined in org.jetbrains.kotlin.js.test in file NashornJsTestChecker.kt[SimpleFunctionDescriptorImpl]
 
 'runList' @ [552:13] ==> val runList: MutableList<String> defined in org.jetbrains.kotlin.js.test.BasicBoxTest.minifyAndRun[LocalVariableDescriptor]
 
@@ -2144,11 +2136,11 @@ Inferred types:
 
 'this' @ [552:29] ==> <this> defined in org.jetbrains.kotlin.js.test.BasicBoxTest.minifyAndRun.<anonymous>[ReceiverParameterDescriptorImpl]
 
+'loadFile' @ [552:35] ==> public fun ScriptEngine.loadFile(path: String): Unit defined in org.jetbrains.kotlin.js.test in file NashornJsTestChecker.kt[SimpleFunctionDescriptorImpl]
+
 'overrideAsserter' @ [553:13] ==> public fun ScriptEngine.overrideAsserter(): Unit defined in org.jetbrains.kotlin.js.test in file NashornJsTestChecker.kt[SimpleFunctionDescriptorImpl]
 
 'eval' @ [554:13] ==> public abstract fun eval(p0: (String..String?)): (Any..Any?) defined in javax.script.ScriptEngine[JavaMethodDescriptor]
-
-'NashornJsTestChecker' @ [554:18] ==> public object NashornJsTestChecker defined in org.jetbrains.kotlin.js.test in file NashornJsTestChecker.kt[FakeCallableDescriptorForObject]
 
 'SETUP_KOTLIN_OUTPUT' @ [554:39] ==> public final val SETUP_KOTLIN_OUTPUT: String defined in org.jetbrains.kotlin.js.test.NashornJsTestChecker[PropertyDescriptorImpl]
 
@@ -2279,8 +2271,6 @@ Inferred types:
 'writeText' @ [588:27] ==> public fun File.writeText(text: String, charset: Charset = ...): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
 'text' @ [588:37] ==> value-parameter text: String defined in org.jetbrains.kotlin.js.test.BasicBoxTest.TestFileFactoryImpl.createFile[ValueParameterDescriptorImpl]
-
-'Charsets' @ [588:43] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
 
 'UTF_8' @ [588:52] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 

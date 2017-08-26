@@ -237,13 +237,9 @@ Inferred types:
 
 'kind' @ [73:17] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
 
-'PrimitiveType' @ [73:25] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'FLOAT' @ [73:39] ==> enum entry FLOAT defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'kind' @ [73:48] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
-
-'PrimitiveType' @ [73:56] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'DOUBLE' @ [73:70] ==> enum entry DOUBLE defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
@@ -273,25 +269,17 @@ Inferred types:
 
 'kind' @ [102:17] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
 
-'PrimitiveType' @ [102:25] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'INT' @ [102:39] ==> enum entry INT defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'kind' @ [102:46] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
-
-'PrimitiveType' @ [102:54] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'LONG' @ [102:68] ==> enum entry LONG defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'kind' @ [102:76] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
 
-'PrimitiveType' @ [102:84] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'SHORT' @ [102:98] ==> enum entry SHORT defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'kind' @ [102:107] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
-
-'PrimitiveType' @ [102:115] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'BYTE' @ [102:129] ==> enum entry BYTE defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
@@ -341,13 +329,9 @@ Inferred types:
 
 'kind' @ [123:17] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
 
-'PrimitiveType' @ [123:25] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'INT' @ [123:39] ==> enum entry INT defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'kind' @ [123:46] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
-
-'PrimitiveType' @ [123:54] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'LONG' @ [123:68] ==> enum entry LONG defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
@@ -357,13 +341,9 @@ Inferred types:
 
 'kind' @ [126:17] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
 
-'PrimitiveType' @ [126:25] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'INT' @ [126:39] ==> enum entry INT defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'kind' @ [126:46] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
-
-'PrimitiveType' @ [126:54] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'LONG' @ [126:68] ==> enum entry LONG defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
@@ -377,13 +357,9 @@ Inferred types:
 
 'kind' @ [127:65] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
 
-'PrimitiveType' @ [127:73] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'BYTE' @ [127:87] ==> enum entry BYTE defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'kind' @ [127:95] ==> val kind: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateBody[LocalVariableDescriptor]
-
-'PrimitiveType' @ [127:103] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'SHORT' @ [127:117] ==> enum entry SHORT defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
@@ -558,8 +534,6 @@ Inferred types:
 
 'it' @ [185:28] ==> value-parameter it: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateRangeTo.<anonymous>[ValueParameterDescriptorImpl]
 
-'PrimitiveType' @ [185:34] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'CHAR' @ [185:48] ==> enum entry CHAR defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'it' @ [185:54] ==> value-parameter it: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateRangeTo.<anonymous>[ValueParameterDescriptorImpl]
@@ -568,19 +542,13 @@ Inferred types:
 
 'it' @ [185:82] ==> value-parameter it: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateRangeTo.<anonymous>[ValueParameterDescriptorImpl]
 
-'PrimitiveType' @ [185:86] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'INT' @ [185:100] ==> enum entry INT defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'returnType' @ [186:17] ==> val returnType: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateRangeTo[LocalVariableDescriptor]
 
-'PrimitiveType' @ [186:31] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'DOUBLE' @ [186:45] ==> enum entry DOUBLE defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'returnType' @ [186:55] ==> val returnType: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.generateRangeTo[LocalVariableDescriptor]
-
-'PrimitiveType' @ [186:69] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'FLOAT' @ [186:83] ==> enum entry FLOAT defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
@@ -627,15 +595,9 @@ Inferred types:
 Inferred types:
     <T> -> PrimitiveType
 
-'PrimitiveType' @ [197:49] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'SHORT' @ [197:63] ==> enum entry SHORT defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
-'PrimitiveType' @ [197:70] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'BYTE' @ [197:84] ==> enum entry BYTE defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
-'PrimitiveType' @ [197:90] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'CHAR' @ [197:104] ==> enum entry CHAR defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
@@ -797,15 +759,11 @@ Inferred types:
 
 'kind1' @ [234:17] ==> value-parameter kind1: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.getOperatorReturnType[ValueParameterDescriptorImpl]
 
-'PrimitiveType' @ [234:26] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
-
 'BOOLEAN' @ [234:40] ==> enum entry BOOLEAN defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'require' @ [235:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
 'kind2' @ [235:17] ==> value-parameter kind2: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.getOperatorReturnType[ValueParameterDescriptorImpl]
-
-'PrimitiveType' @ [235:26] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'BOOLEAN' @ [235:40] ==> enum entry BOOLEAN defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
@@ -816,8 +774,6 @@ Inferred types:
 'kind1' @ [236:56] ==> value-parameter kind1: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.getOperatorReturnType[ValueParameterDescriptorImpl]
 
 'kind2' @ [236:63] ==> value-parameter kind2: PrimitiveType defined in org.jetbrains.kotlin.generators.builtins.ranges.GeneratePrimitives.getOperatorReturnType[ValueParameterDescriptorImpl]
-
-'PrimitiveType' @ [236:71] ==> public companion object defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
 'INT' @ [236:85] ==> enum entry INT defined in org.jetbrains.kotlin.generators.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 

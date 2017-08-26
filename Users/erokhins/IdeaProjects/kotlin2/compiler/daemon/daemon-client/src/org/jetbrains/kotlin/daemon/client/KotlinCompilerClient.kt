@@ -19,20 +19,28 @@ Inferred types:
 
 'String' @ [55:23] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'trimQuotes' @ [55:31] ==> public fun String.trimQuotes(): String defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
+
 'takeUnless' @ [56:19] ==> @InlineOnly @SinceKotlin public inline fun <T> String.takeUnless(predicate: (String) -> Boolean): String? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
 'String' @ [56:30] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isBlank' @ [56:38] ==> public fun CharSequence.isBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'let' @ [57:19] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> File): File defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [57:25] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'takeIf' @ [58:19] ==> @InlineOnly @SinceKotlin public inline fun <T> File.takeIf(predicate: (File) -> Boolean): File? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
+
+'exists' @ [58:32] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
 'makeAutodeletingFlagFile' @ [59:20] ==> public fun makeAutodeletingFlagFile(keyword: String = ..., baseDir: File? = ...): File defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
 
@@ -103,8 +111,6 @@ Inferred types:
 'CompileServiceSession' @ [104:39] ==> public constructor CompileServiceSession(compileService: CompileService, sessionId: Int) defined in org.jetbrains.kotlin.daemon.client.CompileServiceSession[ClassConstructorDescriptorImpl]
 
 'this' @ [104:61] ==> <this> defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.connectAndLease.<anonymous>.leaseImpl[ReceiverParameterDescriptorImpl]
-
-'CompileService' @ [104:67] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'NO_SESSION' @ [104:82] ==> public final val NO_SESSION: Int defined in org.jetbrains.kotlin.daemon.common.CompileService.Companion[DeserializedPropertyDescriptor]
 
@@ -262,8 +268,6 @@ Inferred types:
 
 'outStrm' @ [154:130] ==> val outStrm: RemoteOutputStreamServer defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.compile[LocalVariableDescriptor]
 
-'CompileService' @ [154:139] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'PLAIN' @ [154:167] ==> enum entry PLAIN defined in org.jetbrains.kotlin.daemon.common.CompileService.OutputFormat[FakeCallableDescriptorForObject]
 
 'outStrm' @ [154:174] ==> val outStrm: RemoteOutputStreamServer defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.compile[LocalVariableDescriptor]
@@ -319,8 +323,6 @@ Inferred types:
 'compilerOut' @ [178:46] ==> value-parameter compilerOut: OutputStream defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.incrementalCompile[ValueParameterDescriptorImpl]
 
 'port' @ [178:59] ==> value-parameter port: Int = ... defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.incrementalCompile[ValueParameterDescriptorImpl]
-
-'CompileService' @ [179:21] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'XML' @ [179:49] ==> enum entry XML defined in org.jetbrains.kotlin.daemon.common.CompileService.OutputFormat[FakeCallableDescriptorForObject]
 
@@ -378,19 +380,11 @@ Inferred types:
 Inferred types:
     <reified @PureReifiable T> -> Int
 
-'ReportCategory' @ [202:33] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
 'code' @ [202:65] ==> public final val code: Int defined in org.jetbrains.kotlin.daemon.common.ReportCategory[DeserializedPropertyDescriptor]
-
-'ReportCategory' @ [202:71] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
 
 'code' @ [202:101] ==> public final val code: Int defined in org.jetbrains.kotlin.daemon.common.ReportCategory[DeserializedPropertyDescriptor]
 
-'ReportCategory' @ [202:107] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
 'code' @ [202:132] ==> public final val code: Int defined in org.jetbrains.kotlin.daemon.common.ReportCategory[DeserializedPropertyDescriptor]
-
-'ReportCategory' @ [202:138] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
 
 'code' @ [202:168] ==> public final val code: Int defined in org.jetbrains.kotlin.daemon.common.ReportCategory[DeserializedPropertyDescriptor]
 
@@ -418,6 +412,8 @@ Inferred types:
 'this' @ [215:43] ==> <this> defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.ClientOptions[LazyClassReceiverParameterDescriptor]
 
 'ClientOptions' @ [215:49] ==> public constructor ClientOptions(stop: Boolean = ...) defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.ClientOptions[ClassConstructorDescriptorImpl]
+
+'stop' @ [215:64] ==> public final var stop: Boolean defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.ClientOptions[PropertyDescriptorImpl]
 
 'getProperty' @ [219:16] ==> public open fun getProperty(p0: (String..String?)): (String..String?) defined in java.lang.System[JavaMethodDescriptor]
 
@@ -745,11 +741,7 @@ Inferred types:
 
 'remoteCompile' @ [279:38] ==> @Deprecated public abstract fun remoteCompile(sessionId: Int, targetPlatform: CompileService.TargetPlatform, args: Array<out String>, servicesFacade: CompilerCallbackServicesFacade, compilerOutputStream: RemoteOutputStream, outputFormat: CompileService.OutputFormat, serviceOutputStream: RemoteOutputStream, operationsTracer: RemoteOperationsTracer?): CompileService.CallResult<Int> defined in org.jetbrains.kotlin.daemon.common.CompileService[DeserializedSimpleFunctionDescriptor]
 
-'CompileService' @ [279:52] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'NO_SESSION' @ [279:67] ==> public final val NO_SESSION: Int defined in org.jetbrains.kotlin.daemon.common.CompileService.Companion[DeserializedPropertyDescriptor]
-
-'CompileService' @ [279:79] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [279:109] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
@@ -766,8 +758,6 @@ Inferred types:
 'servicesFacade' @ [279:152] ==> val servicesFacade: CompilerCallbackServicesFacadeServer defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.main[LocalVariableDescriptor]
 
 'outStrm' @ [279:168] ==> val outStrm: RemoteOutputStreamServer defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.main[LocalVariableDescriptor]
-
-'CompileService' @ [279:177] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'PLAIN' @ [279:205] ==> enum entry PLAIN defined in org.jetbrains.kotlin.daemon.common.CompileService.OutputFormat[FakeCallableDescriptorForObject]
 
@@ -1071,7 +1061,7 @@ Inferred types:
 
 'aliveWithMetadata' @ [359:27] ==> val aliveWithMetadata: List<DaemonWithMetadata> defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.tryFindSuitableDaemonOrNewOpts[LocalVariableDescriptor]
 
-'fold' @ [359:45] ==> public inline fun <T, R> Iterable<DaemonWithMetadata>.fold(initial: DaemonJVMOptions, operation: (DaemonJVMOptions, DaemonWithMetadata) -> DaemonJVMOptions): DaemonJVMOptions defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [359:45] ==> public inline fun <T, R> Iterable<DaemonWithMetadata>.fold(initial: DaemonJVMOptions, operation: (acc: DaemonJVMOptions, DaemonWithMetadata) -> DaemonJVMOptions): DaemonJVMOptions defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DaemonWithMetadata
     <R> -> DaemonJVMOptions
@@ -1336,7 +1326,7 @@ Inferred types:
 
 '!' @ [422:21] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'isProcessAlive' @ [422:22] ==> internal fun isProcessAlive(process: Process): Boolean defined in org.jetbrains.kotlin.daemon.client[SimpleFunctionDescriptorImpl]
+'isProcessAlive' @ [422:22] ==> internal fun isProcessAlive(process: Process): Boolean defined in org.jetbrains.kotlin.daemon.client in file KotlinCompilerClient.kt[SimpleFunctionDescriptorImpl]
 
 'daemon' @ [422:37] ==> val daemon: Process defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient.startDaemon[LocalVariableDescriptor]
 
@@ -1372,9 +1362,9 @@ Inferred types:
 
 'flush' @ [437:35] ==> public open fun flush(): Unit defined in java.io.PrintStream[JavaMethodDescriptor]
 
-'lazy' @ [451:34] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [451:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'source' @ [451:41] ==> value-parameter source: String? = ... defined in org.jetbrains.kotlin.daemon.client.report[ValueParameterDescriptorImpl]
 
@@ -1479,11 +1469,7 @@ Inferred types:
 
 'report' @ [463:46] ==> public fun CompilerServicesFacadeBase.report(category: ReportCategory, severity: ReportSeverity, message: String? = ..., attachment: Serializable? = ...): Unit defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
 
-'ReportCategory' @ [463:53] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
 'DAEMON_MESSAGE' @ [463:68] ==> enum entry DAEMON_MESSAGE defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
-'ReportSeverity' @ [463:84] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'DEBUG' @ [463:99] ==> enum entry DEBUG defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
@@ -1497,11 +1483,7 @@ Inferred types:
 
 'report' @ [464:45] ==> public fun CompilerServicesFacadeBase.report(category: ReportCategory, severity: ReportSeverity, message: String? = ..., attachment: Serializable? = ...): Unit defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
 
-'ReportCategory' @ [464:52] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
 'DAEMON_MESSAGE' @ [464:67] ==> enum entry DAEMON_MESSAGE defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
-'ReportSeverity' @ [464:83] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'INFO' @ [464:98] ==> enum entry INFO defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
@@ -1515,11 +1497,7 @@ Inferred types:
 
 'report' @ [465:50] ==> public fun CompilerServicesFacadeBase.report(category: ReportCategory, severity: ReportSeverity, message: String? = ..., attachment: Serializable? = ...): Unit defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
 
-'ReportCategory' @ [465:57] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
 'EXCEPTION' @ [465:72] ==> enum entry EXCEPTION defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
-'ReportSeverity' @ [465:83] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'ERROR' @ [465:98] ==> enum entry ERROR defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 

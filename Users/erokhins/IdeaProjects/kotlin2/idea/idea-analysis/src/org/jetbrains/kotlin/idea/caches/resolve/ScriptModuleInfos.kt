@@ -64,7 +64,7 @@ Inferred types:
 
 'this' @ [57:61] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.ScriptModuleInfo[LazyClassReceiverParameterDescriptor]
 
-'sdkDependencies' @ [58:13] ==> private fun sdkDependencies(scriptDependencies: ScriptDependencies?, project: Project): List<SdkInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'sdkDependencies' @ [58:13] ==> private fun sdkDependencies(scriptDependencies: ScriptDependencies?, project: Project): List<SdkInfo> defined in org.jetbrains.kotlin.idea.caches.resolve in file ScriptModuleInfos.kt[SimpleFunctionDescriptorImpl]
 
 'externalDependencies' @ [58:29] ==> public final val externalDependencies: ScriptDependencies? defined in org.jetbrains.kotlin.idea.caches.resolve.ScriptModuleInfo[PropertyDescriptorImpl]
 
@@ -91,7 +91,7 @@ Inferred types:
 
 'it' @ [63:86] ==> value-parameter it: Sdk defined in org.jetbrains.kotlin.idea.caches.resolve.sdkDependencies.<anonymous>[ValueParameterDescriptorImpl]
 
-'getAllProjectSdks' @ [66:19] ==> public fun getAllProjectSdks(): Collection<Sdk> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'getAllProjectSdks' @ [66:19] ==> public fun getAllProjectSdks(): Collection<Sdk> defined in org.jetbrains.kotlin.idea.caches.resolve in file ModuleDependencyMapper.kt[SimpleFunctionDescriptorImpl]
 
 'dependencies' @ [68:26] ==> value-parameter dependencies: ScriptDependencies? defined in org.jetbrains.kotlin.idea.caches.resolve.findJdk[ValueParameterDescriptorImpl]
 
@@ -131,7 +131,7 @@ Inferred types:
 
 'this' @ [79:43] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.ScriptDependenciesModuleInfo[LazyClassReceiverParameterDescriptor]
 
-'sdkDependencies' @ [79:51] ==> private fun sdkDependencies(scriptDependencies: ScriptDependencies?, project: Project): List<SdkInfo> defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'sdkDependencies' @ [79:51] ==> private fun sdkDependencies(scriptDependencies: ScriptDependencies?, project: Project): List<SdkInfo> defined in org.jetbrains.kotlin.idea.caches.resolve in file ScriptModuleInfos.kt[SimpleFunctionDescriptorImpl]
 
 'scriptModuleInfo' @ [79:67] ==> public final val scriptModuleInfo: ScriptModuleInfo? defined in org.jetbrains.kotlin.idea.caches.resolve.ScriptDependenciesModuleInfo[PropertyDescriptorImpl]
 
@@ -146,8 +146,6 @@ Inferred types:
 'KotlinSourceFilterScope' @ [86:20] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope[FakeCallableDescriptorForObject]
 
 'libraryClassFiles' @ [86:44] ==> @JvmStatic public final fun libraryClassFiles(delegate: GlobalSearchScope, project: Project): GlobalSearchScope defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope.Companion[SimpleFunctionDescriptorImpl]
-
-'ScriptDependenciesManager' @ [87:21] ==> public companion object defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager[FakeCallableDescriptorForObject]
 
 'getInstance' @ [87:47] ==> @JvmStatic public final fun getInstance(project: Project): ScriptDependenciesManager defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager.Companion[SimpleFunctionDescriptorImpl]
 
@@ -198,8 +196,6 @@ Inferred types:
 'KotlinSourceFilterScope' @ [113:53] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope[FakeCallableDescriptorForObject]
 
 'librarySources' @ [113:77] ==> @JvmStatic public final fun librarySources(delegate: GlobalSearchScope, project: Project): GlobalSearchScope defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope.Companion[SimpleFunctionDescriptorImpl]
-
-'ScriptDependenciesManager' @ [114:13] ==> public companion object defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager[FakeCallableDescriptorForObject]
 
 'getInstance' @ [114:39] ==> @JvmStatic public final fun getInstance(project: Project): ScriptDependenciesManager defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager.Companion[SimpleFunctionDescriptorImpl]
 

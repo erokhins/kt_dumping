@@ -20,8 +20,6 @@ Inferred types:
 Inferred types:
     <T> -> SuppressStringProvider
 
-'SuppressStringProvider' @ [58:81] ==> public companion object defined in org.jetbrains.kotlin.resolve.diagnostics.SuppressStringProvider[FakeCallableDescriptorForObject]
-
 'EP_NAME' @ [58:104] ==> public final val EP_NAME: ExtensionPointName<SuppressStringProvider> defined in org.jetbrains.kotlin.resolve.diagnostics.SuppressStringProvider.Companion[PropertyDescriptorImpl]
 
 'ExtensionProvider' @ [59:42] ==> public companion object defined in org.jetbrains.kotlin.util.ExtensionProvider[FakeCallableDescriptorForObject]
@@ -29,8 +27,6 @@ Inferred types:
 'create' @ [59:60] ==> @JvmStatic public final fun <T> create(epName: ExtensionPointName<DiagnosticSuppressor>): ExtensionProvider<DiagnosticSuppressor> defined in org.jetbrains.kotlin.util.ExtensionProvider.Companion[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> DiagnosticSuppressor
-
-'DiagnosticSuppressor' @ [59:67] ==> public companion object defined in org.jetbrains.kotlin.resolve.diagnostics.DiagnosticSuppressor[FakeCallableDescriptorForObject]
 
 'EP_NAME' @ [59:88] ==> public final val EP_NAME: ExtensionPointName<DiagnosticSuppressor> defined in org.jetbrains.kotlin.resolve.diagnostics.DiagnosticSuppressor.Companion[PropertyDescriptorImpl]
 
@@ -103,7 +99,7 @@ Inferred types:
 
 'getPsiOrStubParent' @ [88:42] ==> @Nullable public open fun <T : (KtElement..KtElement?)> getPsiOrStubParent(@NotNull element: PsiElement, @NotNull declarationClass: Class<(KtAnnotated..KtAnnotated?)>, strict: Boolean): KtAnnotated? defined in org.jetbrains.kotlin.psi.KtStubbedPsiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (KtElement..KtElement?)> -> KtAnnotated
+    <T : (KtElement..KtElement?)> -> (org.jetbrains.kotlin.psi.KtAnnotated..org.jetbrains.kotlin.psi.KtAnnotated?)
 
 'element' @ [88:61] ==> val element: PsiElement defined in org.jetbrains.kotlin.resolve.diagnostics.KotlinSuppressCache.isSuppressed[LocalVariableDescriptor]
 
@@ -167,7 +163,7 @@ Inferred types:
 
 'getPsiOrStubParent' @ [133:47] ==> @Nullable public open fun <T : (KtElement..KtElement?)> getPsiOrStubParent(@NotNull element: PsiElement, @NotNull declarationClass: Class<(KtAnnotated..KtAnnotated?)>, strict: Boolean): KtAnnotated? defined in org.jetbrains.kotlin.psi.KtStubbedPsiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (KtElement..KtElement?)> -> KtAnnotated
+    <T : (KtElement..KtElement?)> -> (org.jetbrains.kotlin.psi.KtAnnotated..org.jetbrains.kotlin.psi.KtAnnotated?)
 
 'suppressor' @ [133:66] ==> val suppressor: KotlinSuppressCache.Suppressor defined in org.jetbrains.kotlin.resolve.diagnostics.KotlinSuppressCache.isSuppressedByAnnotated[LocalVariableDescriptor]
 
@@ -335,7 +331,7 @@ Inferred types:
 
 'name' @ [190:39] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'toLowerCase' @ [190:44] ==> @InlineOnly public inline fun String.toLowerCase(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -379,7 +375,7 @@ Inferred types:
 
 'of' @ [220:71] ==> public open fun <E : (Any..Any?)> of(p0: (String..String?)): (ImmutableSet<(String..String?)>..ImmutableSet<(String..String?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'string' @ [220:74] ==> private final val string: String defined in org.jetbrains.kotlin.resolve.diagnostics.KotlinSuppressCache.SingularSuppressor[PropertyDescriptorImpl]
 
@@ -437,8 +433,8 @@ Inferred types:
 
 'get' @ [263:34] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [263:53] ==> @SuppressWarnings public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -476,8 +472,8 @@ Inferred types:
 
 'get' @ [269:62] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..ReadOnlySlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?), key: (KtAnnotationEntry..KtAnnotationEntry?)): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtAnnotationEntry
-    <V : (Any..Any?)> -> AnnotationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtAnnotationEntry..org.jetbrains.kotlin.psi.KtAnnotationEntry?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor..org.jetbrains.kotlin.descriptors.annotations.AnnotationDescriptor?)
 
 'ANNOTATION' @ [269:81] ==> public final val ANNOTATION: (WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>..WritableSlice<(KtAnnotationEntry..KtAnnotationEntry?), (AnnotationDescriptor..AnnotationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

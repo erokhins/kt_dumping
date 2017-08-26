@@ -1,6 +1,6 @@
-'lazy' @ [27:33] ==> public fun <T> lazy(initializer: () -> AnnotationSerializer): Lazy<AnnotationSerializer> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [27:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> AnnotationSerializer
+    <T> -> T
 
 'AnnotationSerializer' @ [27:40] ==> public constructor AnnotationSerializer(stringTable: StringTable) defined in org.jetbrains.kotlin.serialization.AnnotationSerializer[ClassConstructorDescriptorImpl]
 

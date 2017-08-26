@@ -165,6 +165,8 @@ Inferred types:
 Inferred types:
     <T> -> File
 
+'exists' @ [85:62] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
+
 'loadJrtFsJar' @ [88:17] ==> private final fun loadJrtFsJar(jdkHome: File): File? defined in org.jetbrains.kotlin.cli.jvm.modules.CoreJrtFileSystem.Companion[SimpleFunctionDescriptorImpl]
 
 'jdkHome' @ [88:30] ==> value-parameter jdkHome: File defined in org.jetbrains.kotlin.cli.jvm.modules.CoreJrtFileSystem.Companion.isModularJdk[ValueParameterDescriptorImpl]

@@ -8,7 +8,7 @@
 
 'extensionReceiver' @ [32:64] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'getExpectedReceiverType' @ [33:72] ==> @NotNull public open fun getExpectedReceiverType(@NotNull resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>): KotlinType defined in org.jetbrains.kotlin.codegen.ExpressionCodegen[JavaMethodDescriptor]
 

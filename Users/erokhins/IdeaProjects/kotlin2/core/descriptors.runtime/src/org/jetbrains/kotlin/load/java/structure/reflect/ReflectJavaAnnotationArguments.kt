@@ -12,7 +12,7 @@ Inferred types:
 
 'java' @ [28:30] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'isEnumClassOrSpecializedEnumEntryClass' @ [28:35] ==> public fun Class<*>.isEnumClassOrSpecializedEnumEntryClass(): Boolean defined in org.jetbrains.kotlin.load.java.structure.reflect in file reflectClassUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -81,17 +81,17 @@ Inferred types:
 
 'java' @ [55:34] ==> public val <T> KClass<out Enum<*>>.java: Class<out Enum<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Enum<*>
+    <T> -> Captured(out Enum<*>)
 
-'if (clazz.isEnum) clazz else clazz.enclosingClass' @ [56:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out Any>, elseBranch: Class<out Any>): Class<out Any>[SimpleFunctionDescriptorImpl]
+'if (clazz.isEnum) clazz else clazz.enclosingClass' @ [56:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?), elseBranch: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out Any>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.lang.Class<out (kotlin.Any..kotlin.Any?)>..java.lang.Class<out (kotlin.Any..kotlin.Any?)>?)
 
 'clazz' @ [56:29] ==> val clazz: Class<out Enum<*>> defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaEnumValueAnnotationArgument.resolve[LocalVariableDescriptor]
 
 'isEnum' @ [56:35] ==> public final val <T : (Any..Any?)> Class<out Enum<*>>.isEnum: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Enum<*>
+    <T : (Any..Any?)> -> Captured(out Enum<*>)
 
 'clazz' @ [56:43] ==> val clazz: Class<out Enum<*>> defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaEnumValueAnnotationArgument.resolve[LocalVariableDescriptor]
 
@@ -99,11 +99,11 @@ Inferred types:
 
 'enclosingClass' @ [56:60] ==> public final val <T : (Any..Any?)> Class<out Enum<*>>.enclosingClass: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Enum<*>
+    <T : (Any..Any?)> -> Captured(out Enum<*>)
 
 'ReflectJavaField' @ [57:16] ==> public constructor ReflectJavaField(member: Field) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaField[ClassConstructorDescriptorImpl]
 
-'enumClass' @ [57:33] ==> val enumClass: Class<out Any> defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaEnumValueAnnotationArgument.resolve[LocalVariableDescriptor]
+'enumClass' @ [57:33] ==> val enumClass: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaEnumValueAnnotationArgument.resolve[LocalVariableDescriptor]
 
 'getDeclaredField' @ [57:43] ==> public open fun getDeclaredField(p0: (String..String?)): (Field..Field?) defined in java.lang.Class[JavaMethodDescriptor]
 

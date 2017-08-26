@@ -122,9 +122,9 @@ Inferred types:
 'data' @ [63:17] ==> private final var data: Any? defined in org.jetbrains.kotlin.utils.SmartSet[PropertyDescriptorImpl]
 
 'if (size == ARRAY_THRESHOLD - 1) linkedSetOf(*arr).apply { add(element) }
-                else Arrays.copyOf(arr, size + 1).apply { set(size - 1, element) }' @ [63:24] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {kotlin.Cloneable & Serializable}, elseBranch: {kotlin.Cloneable & Serializable}): {kotlin.Cloneable & Serializable}[SimpleFunctionDescriptorImpl]
+                else Arrays.copyOf(arr, size + 1).apply { set(size - 1, element) }' @ [63:24] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Any..Any?), elseBranch: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {kotlin.Cloneable & Serializable}
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.Any..kotlin.Any?)
 
 'size' @ [63:28] ==> public open var size: Int defined in org.jetbrains.kotlin.utils.SmartSet[PropertyDescriptorImpl]
 
@@ -146,7 +146,7 @@ Inferred types:
 
 'copyOf' @ [64:29] ==> public open fun <T : (Any..Any?)> copyOf(p0: (Array<(T..T?)>..Array<out (T..T?)>?), p1: Int): (Array<(T..T?)>..Array<out (T..T?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'arr' @ [64:36] ==> val arr: Array<T> defined in org.jetbrains.kotlin.utils.SmartSet.add[LocalVariableDescriptor]
 

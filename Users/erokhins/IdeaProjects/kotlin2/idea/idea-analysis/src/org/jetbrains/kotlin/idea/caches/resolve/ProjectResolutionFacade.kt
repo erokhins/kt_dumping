@@ -8,7 +8,7 @@ Inferred types:
 
 'createCachedValue' @ [45:71] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(ModuleResolverProvider..ModuleResolverProvider?)>?, p1: Boolean): CachedValue<(ModuleResolverProvider..ModuleResolverProvider?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleResolverProvider
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.ModuleResolverProvider..org.jetbrains.kotlin.idea.caches.resolve.ModuleResolverProvider?)
 
 'computeModuleResolverProvider' @ [47:40] ==> private final fun computeModuleResolverProvider(): ModuleResolverProvider defined in org.jetbrains.kotlin.idea.caches.resolve.ProjectResolutionFacade[SimpleFunctionDescriptorImpl]
 
@@ -34,7 +34,7 @@ Inferred types:
 Inferred types:
     <M : ModuleInfo> -> IdeaModuleInfo
 
-'createModuleResolverProvider' @ [56:16] ==> public fun createModuleResolverProvider(debugName: String, project: Project, globalContext: GlobalContextImpl, analysisSettings: PlatformAnalysisSettings, syntheticFiles: Collection<KtFile>, delegateResolver: ResolverForProject<IdeaModuleInfo>, moduleFilter: (IdeaModuleInfo) -> Boolean, allModules: Collection<IdeaModuleInfo>?, providedBuiltIns: KotlinBuiltIns?, dependencies: Collection<Any>, invalidateOnOOCB: Boolean = ...): ModuleResolverProvider defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'createModuleResolverProvider' @ [56:16] ==> public fun createModuleResolverProvider(debugName: String, project: Project, globalContext: GlobalContextImpl, analysisSettings: PlatformAnalysisSettings, syntheticFiles: Collection<KtFile>, delegateResolver: ResolverForProject<IdeaModuleInfo>, moduleFilter: (IdeaModuleInfo) -> Boolean, allModules: Collection<IdeaModuleInfo>?, providedBuiltIns: KotlinBuiltIns?, dependencies: Collection<Any>, invalidateOnOOCB: Boolean = ...): ModuleResolverProvider defined in org.jetbrains.kotlin.idea.caches.resolve in file ModuleDependencyMapper.kt[SimpleFunctionDescriptorImpl]
 
 'resolverDebugName' @ [57:17] ==> private final val resolverDebugName: String defined in org.jetbrains.kotlin.idea.caches.resolve.ProjectResolutionFacade[PropertyDescriptorImpl]
 
@@ -112,7 +112,7 @@ Inferred types:
 
 'createCachedValue' @ [81:75] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(<no name provided>..<no name provided>?)>?, p1: Boolean): CachedValue<(<no name provided>..<no name provided>?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> <no name provided>
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.ProjectResolutionFacade.analysisResults.<anonymous>.<no name provided>..org.jetbrains.kotlin.idea.caches.resolve.ProjectResolutionFacade.analysisResults.<anonymous>.<no name provided>?)
 
 'moduleResolverProvider' @ [83:40] ==> private final val moduleResolverProvider: ModuleResolverProvider defined in org.jetbrains.kotlin.idea.caches.resolve.ProjectResolutionFacade[PropertyDescriptorImpl]
 
@@ -235,8 +235,6 @@ Inferred types:
 
 'withError' @ [107:20] ==> val withError: AnalysisResult? defined in org.jetbrains.kotlin.idea.caches.resolve.ProjectResolutionFacade.getAnalysisResultsForElements[LocalVariableDescriptor]
 
-'AnalysisResult' @ [108:13] ==> public companion object defined in org.jetbrains.kotlin.analyzer.AnalysisResult[FakeCallableDescriptorForObject]
-
 'error' @ [108:28] ==> @JvmStatic public final fun error(bindingContext: BindingContext, error: Throwable): AnalysisResult defined in org.jetbrains.kotlin.analyzer.AnalysisResult.Companion[DeserializedSimpleFunctionDescriptor]
 
 'bindingContext' @ [108:34] ==> val bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.caches.resolve.ProjectResolutionFacade.getAnalysisResultsForElements[LocalVariableDescriptor]
@@ -244,8 +242,6 @@ Inferred types:
 'withError' @ [108:50] ==> val withError: AnalysisResult? defined in org.jetbrains.kotlin.idea.caches.resolve.ProjectResolutionFacade.getAnalysisResultsForElements[LocalVariableDescriptor]
 
 'error' @ [108:60] ==> public final val error: Throwable defined in org.jetbrains.kotlin.analyzer.AnalysisResult[DeserializedPropertyDescriptor]
-
-'AnalysisResult' @ [111:13] ==> public companion object defined in org.jetbrains.kotlin.analyzer.AnalysisResult[FakeCallableDescriptorForObject]
 
 'success' @ [111:28] ==> @JvmStatic public final fun success(bindingContext: BindingContext, module: ModuleDescriptor): AnalysisResult defined in org.jetbrains.kotlin.analyzer.AnalysisResult.Companion[DeserializedSimpleFunctionDescriptor]
 

@@ -6,7 +6,7 @@
 
 'isScript' @ [52:58] ==> value-parameter isScript: Boolean defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createTopLevelClassStub[ValueParameterDescriptorImpl]
 
-'createClassStub' @ [53:5] ==> public fun createClassStub(parent: StubElement<out PsiElement>, classProto: ProtoBuf.Class, nameResolver: NameResolver, classId: ClassId, source: SourceElement?, context: ClsStubBuilderContext): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createClassStub' @ [53:5] ==> public fun createClassStub(parent: StubElement<out PsiElement>, classProto: ProtoBuf.Class, nameResolver: NameResolver, classId: ClassId, source: SourceElement?, context: ClsStubBuilderContext): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file ClassClsStubBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'fileStub' @ [53:21] ==> val fileStub: KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createTopLevelClassStub[LocalVariableDescriptor]
 
@@ -36,7 +36,7 @@
 
 'packageFqName' @ [63:29] ==> value-parameter packageFqName: FqName defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createPackageFacadeStub[ValueParameterDescriptorImpl]
 
-'createDeclarationsStubs' @ [64:5] ==> public fun createDeclarationsStubs(parentStub: StubElement<out PsiElement>, outerContext: ClsStubBuilderContext, protoContainer: ProtoContainer, packageProto: ProtoBuf.Package): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createDeclarationsStubs' @ [64:5] ==> public fun createDeclarationsStubs(parentStub: StubElement<out PsiElement>, outerContext: ClsStubBuilderContext, protoContainer: ProtoContainer, packageProto: ProtoBuf.Package): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file CallableClsStubBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'fileStub' @ [65:13] ==> val fileStub: KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createPackageFacadeStub[LocalVariableDescriptor]
 
@@ -94,7 +94,7 @@
 
 'facadeFqName' @ [78:118] ==> value-parameter facadeFqName: FqName defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createFileFacadeStub[ValueParameterDescriptorImpl]
 
-'createDeclarationsStubs' @ [80:5] ==> public fun createDeclarationsStubs(parentStub: StubElement<out PsiElement>, outerContext: ClsStubBuilderContext, protoContainer: ProtoContainer, packageProto: ProtoBuf.Package): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createDeclarationsStubs' @ [80:5] ==> public fun createDeclarationsStubs(parentStub: StubElement<out PsiElement>, outerContext: ClsStubBuilderContext, protoContainer: ProtoContainer, packageProto: ProtoBuf.Package): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file CallableClsStubBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'fileStub' @ [80:29] ==> val fileStub: KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createFileFacadeStub[LocalVariableDescriptor]
 
@@ -193,7 +193,7 @@ Inferred types:
 
 'partFile' @ [99:69] ==> val partFile: KotlinJvmBinaryClass defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createMultifileClassStub[LocalVariableDescriptor]
 
-'createDeclarationsStubs' @ [100:9] ==> public fun createDeclarationsStubs(parentStub: StubElement<out PsiElement>, outerContext: ClsStubBuilderContext, protoContainer: ProtoContainer, packageProto: ProtoBuf.Package): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createDeclarationsStubs' @ [100:9] ==> public fun createDeclarationsStubs(parentStub: StubElement<out PsiElement>, outerContext: ClsStubBuilderContext, protoContainer: ProtoContainer, packageProto: ProtoBuf.Package): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file CallableClsStubBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'fileStub' @ [100:33] ==> val fileStub: KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createMultifileClassStub[LocalVariableDescriptor]
 
@@ -233,7 +233,7 @@ Inferred types:
 
 'PACKAGE_DIRECTIVE' @ [114:107] ==> public final val PACKAGE_DIRECTIVE: (KtPlaceHolderStubElementType<(KtPackageDirective..KtPackageDirective?)>..KtPlaceHolderStubElementType<(KtPackageDirective..KtPackageDirective?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
-'createStubForPackageName' @ [115:5] ==> public fun createStubForPackageName(packageDirectiveStub: KotlinPlaceHolderStubImpl<KtPackageDirective>, packageFqName: FqName): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createStubForPackageName' @ [115:5] ==> public fun createStubForPackageName(packageDirectiveStub: KotlinPlaceHolderStubImpl<KtPackageDirective>, packageFqName: FqName): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'packageDirectiveStub' @ [115:30] ==> val packageDirectiveStub: KotlinPlaceHolderStubImpl<KtPackageDirective> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.setupFileStub[LocalVariableDescriptor]
 
@@ -289,7 +289,7 @@ Inferred types:
 
 'previous' @ [127:73] ==> public abstract fun previous(): (Name..Name?) defined in kotlin.collections.MutableListIterator[DeserializedSimpleFunctionDescriptor]
 
-'ref' @ [127:84] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [127:84] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'iterator' @ [131:35] ==> val iterator: MutableListIterator<(Name..Name?)> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createStubForPackageName[LocalVariableDescriptor]
 
@@ -313,7 +313,7 @@ Inferred types:
 
 'lastSegment' @ [134:65] ==> val lastSegment: (Name..Name?) defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createStubForPackageName.recCreateStubForPackageName[LocalVariableDescriptor]
 
-'ref' @ [134:77] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [134:77] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'recCreateStubForPackageName' @ [139:5] ==> local final fun recCreateStubForPackageName(current: StubElement<out PsiElement>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createStubForPackageName[SimpleFunctionDescriptorImpl]
 
@@ -382,7 +382,7 @@ Inferred types:
 
 'lastSegment' @ [161:61] ==> val lastSegment: (Name..Name?) defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createStubForTypeName.recCreateStubForType[LocalVariableDescriptor]
 
-'ref' @ [161:73] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [161:73] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [162:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -431,7 +431,7 @@ Inferred types:
 
 'additionalModifiers' @ [179:78] ==> value-parameter additionalModifiers: List<KtModifierKeywordToken> = ... defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createModifierListStubForDeclaration[ValueParameterDescriptorImpl]
 
-'createModifierListStub' @ [180:12] ==> public fun createModifierListStub(parent: StubElement<out PsiElement>, modifiers: Collection<KtModifierKeywordToken>): KotlinModifierListStubImpl? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createModifierListStub' @ [180:12] ==> public fun createModifierListStub(parent: StubElement<out PsiElement>, modifiers: Collection<KtModifierKeywordToken>): KotlinModifierListStubImpl? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'parent' @ [180:35] ==> value-parameter parent: StubElement<out PsiElement> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createModifierListStubForDeclaration[ValueParameterDescriptorImpl]
 
@@ -445,8 +445,6 @@ Inferred types:
 
 'parent' @ [191:13] ==> value-parameter parent: StubElement<out PsiElement> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createModifierListStub[ValueParameterDescriptorImpl]
 
-'ModifierMaskUtils' @ [192:13] ==> public object ModifierMaskUtils defined in org.jetbrains.kotlin.psi.stubs.impl[FakeCallableDescriptorForObject]
-
 'computeMask' @ [192:31] ==> @JvmStatic public final fun computeMask(hasModifier: (KtModifierKeywordToken) -> Boolean): Int defined in org.jetbrains.kotlin.psi.stubs.impl.ModifierMaskUtils[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [192:45] ==> value-parameter it: KtModifierKeywordToken defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createModifierListStub.<anonymous>[ValueParameterDescriptorImpl]
@@ -459,13 +457,11 @@ Inferred types:
 
 'parent' @ [199:13] ==> value-parameter parent: KotlinStubBaseImpl<*> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createEmptyModifierListStub[ValueParameterDescriptorImpl]
 
-'ModifierMaskUtils' @ [200:13] ==> public object ModifierMaskUtils defined in org.jetbrains.kotlin.psi.stubs.impl[FakeCallableDescriptorForObject]
-
 'computeMask' @ [200:31] ==> @JvmStatic public final fun computeMask(hasModifier: (KtModifierKeywordToken) -> Boolean): Int defined in org.jetbrains.kotlin.psi.stubs.impl.ModifierMaskUtils[DeserializedSimpleFunctionDescriptor]
 
 'MODIFIER_LIST' @ [201:32] ==> public final val MODIFIER_LIST: (KtModifierListElementType<(KtDeclarationModifierList..KtDeclarationModifierList?)>..KtModifierListElementType<(KtDeclarationModifierList..KtDeclarationModifierList?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
-'createTargetedAnnotationStubs' @ [206:12] ==> public fun createTargetedAnnotationStubs(annotationIds: List<ClassIdWithTarget>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createTargetedAnnotationStubs' @ [206:12] ==> public fun createTargetedAnnotationStubs(annotationIds: List<ClassIdWithTarget>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'annotationIds' @ [206:42] ==> value-parameter annotationIds: List<ClassId> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createAnnotationStubs[ValueParameterDescriptorImpl]
 
@@ -504,7 +500,7 @@ Inferred types:
 
 'shortClassName' @ [219:47] ==> public final val ClassId.shortClassName: Name[MyPropertyDescriptor]
 
-'ref' @ [219:62] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [219:62] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'target' @ [222:13] ==> val target: AnnotationUseSiteTarget? defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createTargetedAnnotationStubs.<anonymous>[LocalVariableDescriptor]
 
@@ -538,7 +534,7 @@ Inferred types:
 
 'TYPE_REFERENCE' @ [226:110] ==> public final val TYPE_REFERENCE: (KtPlaceHolderStubElementType<(KtTypeReference..KtTypeReference?)>..KtPlaceHolderStubElementType<(KtTypeReference..KtTypeReference?)>?) defined in org.jetbrains.kotlin.psi.stubs.elements.KtStubElementTypes[JavaPropertyDescriptor]
 
-'createStubForTypeName' @ [227:9] ==> public fun createStubForTypeName(typeClassId: ClassId, parent: StubElement<out PsiElement>, bindTypeArguments: (KotlinUserTypeStub, Int) -> Unit = ...): KotlinUserTypeStub defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createStubForTypeName' @ [227:9] ==> public fun createStubForTypeName(typeClassId: ClassId, parent: StubElement<out PsiElement>, bindTypeArguments: (KotlinUserTypeStub, Int) -> Unit = ...): KotlinUserTypeStub defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'annotationClassId' @ [227:31] ==> val annotationClassId: ClassId defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createTargetedAnnotationStubs.<anonymous>[LocalVariableDescriptor]
 

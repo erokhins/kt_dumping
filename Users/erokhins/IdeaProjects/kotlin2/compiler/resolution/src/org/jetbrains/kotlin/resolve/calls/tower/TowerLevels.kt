@@ -79,7 +79,7 @@ Inferred types:
 
 'findInvisibleMember' @ [68:34] ==> @Nullable public open fun findInvisibleMember(@Nullable p0: ReceiverValue?, @NotNull p1: DeclarationDescriptorWithVisibility, @NotNull p2: DeclarationDescriptor): DeclarationDescriptorWithVisibility? defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaMethodDescriptor]
 
-'getReceiverValueWithSmartCast' @ [69:29] ==> public fun getReceiverValueWithSmartCast(receiverArgument: ReceiverValue?, smartCastType: KotlinType?): ReceiverValue? defined in org.jetbrains.kotlin.resolve.calls.smartcasts[SimpleFunctionDescriptorImpl]
+'getReceiverValueWithSmartCast' @ [69:29] ==> public fun getReceiverValueWithSmartCast(receiverArgument: ReceiverValue?, smartCastType: KotlinType?): ReceiverValue? defined in org.jetbrains.kotlin.resolve.calls.smartcasts in file smartCastUtil.kt[SimpleFunctionDescriptorImpl]
 
 'dispatchReceiver' @ [69:59] ==> value-parameter dispatchReceiver: ReceiverValueWithSmartCastInfo? defined in org.jetbrains.kotlin.resolve.calls.tower.AbstractScopeTowerLevel.createCandidateDescriptor[ValueParameterDescriptorImpl]
 
@@ -239,7 +239,7 @@ Inferred types:
 
 'result' @ [114:34] ==> val result: ArrayList<CandidateWithBoundDispatchReceiver> defined in org.jetbrains.kotlin.resolve.calls.tower.MemberScopeTowerLevel.collectMembers[LocalVariableDescriptor]
 
-'selectMostSpecificInEachOverridableGroup' @ [114:41] ==> public fun <H : Any> Collection<CandidateWithBoundDispatchReceiver>.selectMostSpecificInEachOverridableGroup(descriptorByHandle: (CandidateWithBoundDispatchReceiver).() -> CallableDescriptor): Collection<CandidateWithBoundDispatchReceiver> defined in org.jetbrains.kotlin.resolve[DeserializedSimpleFunctionDescriptor]
+'selectMostSpecificInEachOverridableGroup' @ [114:41] ==> public fun <H : Any> Collection<CandidateWithBoundDispatchReceiver>.selectMostSpecificInEachOverridableGroup(descriptorByHandle: CandidateWithBoundDispatchReceiver.() -> CallableDescriptor): Collection<CandidateWithBoundDispatchReceiver> defined in org.jetbrains.kotlin.resolve[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <H : Any> -> CandidateWithBoundDispatchReceiver
 
@@ -253,7 +253,7 @@ Inferred types:
 
 'unstableCandidates' @ [117:31] ==> val unstableCandidates: ArrayList<CandidateWithBoundDispatchReceiver>? defined in org.jetbrains.kotlin.resolve.calls.tower.MemberScopeTowerLevel.collectMembers[LocalVariableDescriptor]
 
-'selectMostSpecificInEachOverridableGroup' @ [117:50] ==> public fun <H : Any> Collection<CandidateWithBoundDispatchReceiver>.selectMostSpecificInEachOverridableGroup(descriptorByHandle: (CandidateWithBoundDispatchReceiver).() -> CallableDescriptor): Collection<CandidateWithBoundDispatchReceiver> defined in org.jetbrains.kotlin.resolve[DeserializedSimpleFunctionDescriptor]
+'selectMostSpecificInEachOverridableGroup' @ [117:50] ==> public fun <H : Any> Collection<CandidateWithBoundDispatchReceiver>.selectMostSpecificInEachOverridableGroup(descriptorByHandle: CandidateWithBoundDispatchReceiver.() -> CallableDescriptor): Collection<CandidateWithBoundDispatchReceiver> defined in org.jetbrains.kotlin.resolve[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <H : Any> -> CandidateWithBoundDispatchReceiver
 
@@ -387,7 +387,7 @@ Inferred types:
 
 'it' @ [168:55] ==> value-parameter it: KotlinType? defined in org.jetbrains.kotlin.resolve.calls.tower.MemberScopeTowerLevel.getFunctions.<anonymous>[ValueParameterDescriptorImpl]
 
-'getInnerConstructors' @ [168:58] ==> private fun KotlinType?.getInnerConstructors(name: Name, location: LookupLocation): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'getInnerConstructors' @ [168:58] ==> private fun KotlinType?.getInnerConstructors(name: Name, location: LookupLocation): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower in file TowerLevels.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [168:79] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.calls.tower.MemberScopeTowerLevel.getFunctions[ValueParameterDescriptorImpl]
 
@@ -434,7 +434,7 @@ Inferred types:
 
 'staticScope' @ [180:105] ==> public abstract val staticScope: MemberScope defined in org.jetbrains.kotlin.resolve.scopes.receivers.QualifierReceiver[PropertyDescriptorImpl]
 
-'getContributedObjectVariables' @ [181:14] ==> private fun ResolutionScope.getContributedObjectVariables(name: Name, location: LookupLocation): Collection<VariableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'getContributedObjectVariables' @ [181:14] ==> private fun ResolutionScope.getContributedObjectVariables(name: Name, location: LookupLocation): Collection<VariableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower in file TowerLevels.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [181:44] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.calls.tower.QualifierScopeTowerLevel.getObjects[ValueParameterDescriptorImpl]
 
@@ -453,7 +453,7 @@ Inferred types:
 
 'staticScope' @ [185:107] ==> public abstract val staticScope: MemberScope defined in org.jetbrains.kotlin.resolve.scopes.receivers.QualifierReceiver[PropertyDescriptorImpl]
 
-'getContributedFunctionsAndConstructors' @ [186:14] ==> private fun ResolutionScope.getContributedFunctionsAndConstructors(name: Name, location: LookupLocation, syntheticScopes: SyntheticScopes, scope: ResolutionScope): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'getContributedFunctionsAndConstructors' @ [186:14] ==> private fun ResolutionScope.getContributedFunctionsAndConstructors(name: Name, location: LookupLocation, syntheticScopes: SyntheticScopes, scope: ResolutionScope): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower in file TowerLevels.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [186:53] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.calls.tower.QualifierScopeTowerLevel.getFunctions[ValueParameterDescriptorImpl]
 
@@ -505,7 +505,7 @@ Inferred types:
 
 'resolutionScope' @ [208:15] ==> private final val resolutionScope: ResolutionScope defined in org.jetbrains.kotlin.resolve.calls.tower.ScopeBasedTowerLevel[PropertyDescriptorImpl]
 
-'getContributedObjectVariables' @ [208:31] ==> private fun ResolutionScope.getContributedObjectVariables(name: Name, location: LookupLocation): Collection<VariableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'getContributedObjectVariables' @ [208:31] ==> private fun ResolutionScope.getContributedObjectVariables(name: Name, location: LookupLocation): Collection<VariableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower in file TowerLevels.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [208:61] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.calls.tower.ScopeBasedTowerLevel.getObjects[ValueParameterDescriptorImpl]
 
@@ -522,7 +522,7 @@ Inferred types:
 
 'resolutionScope' @ [213:15] ==> private final val resolutionScope: ResolutionScope defined in org.jetbrains.kotlin.resolve.calls.tower.ScopeBasedTowerLevel[PropertyDescriptorImpl]
 
-'getContributedFunctionsAndConstructors' @ [213:31] ==> private fun ResolutionScope.getContributedFunctionsAndConstructors(name: Name, location: LookupLocation, syntheticScopes: SyntheticScopes, scope: ResolutionScope): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'getContributedFunctionsAndConstructors' @ [213:31] ==> private fun ResolutionScope.getContributedFunctionsAndConstructors(name: Name, location: LookupLocation, syntheticScopes: SyntheticScopes, scope: ResolutionScope): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tower in file TowerLevels.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [213:70] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.calls.tower.ScopeBasedTowerLevel.getFunctions[ValueParameterDescriptorImpl]
 
@@ -604,6 +604,8 @@ Inferred types:
 
 'extensionReceiver' @ [254:35] ==> value-parameter extensionReceiver: ReceiverValueWithSmartCastInfo? defined in org.jetbrains.kotlin.resolve.calls.tower.HidesMembersTowerLevel.getVariables[ValueParameterDescriptorImpl]
 
+'collectVariables' @ [254:68] ==> public fun HierarchicalScope.collectVariables(name: Name, location: LookupLocation): Collection<VariableDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.utils in file ScopeUtils.kt[SimpleFunctionDescriptorImpl]
+
 'emptyList' @ [257:15] ==> public fun <T> emptyList(): List<CandidateWithBoundDispatchReceiver> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> CandidateWithBoundDispatchReceiver
@@ -613,6 +615,8 @@ Inferred types:
 'name' @ [260:29] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.calls.tower.HidesMembersTowerLevel.getFunctions[ValueParameterDescriptorImpl]
 
 'extensionReceiver' @ [260:35] ==> value-parameter extensionReceiver: ReceiverValueWithSmartCastInfo? defined in org.jetbrains.kotlin.resolve.calls.tower.HidesMembersTowerLevel.getFunctions[ValueParameterDescriptorImpl]
+
+'collectFunctions' @ [260:68] ==> public fun HierarchicalScope.collectFunctions(name: Name, location: LookupLocation): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.utils in file ScopeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'extensionReceiver' @ [267:13] ==> value-parameter extensionReceiver: ReceiverValueWithSmartCastInfo? defined in org.jetbrains.kotlin.resolve.calls.tower.HidesMembersTowerLevel.getCandidates[ValueParameterDescriptorImpl]
 

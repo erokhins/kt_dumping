@@ -59,7 +59,7 @@ Inferred types:
 
 'getParentOfType' @ [49:55] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtQualifiedExpression..KtQualifiedExpression?)>, p2: Boolean, @NotNull vararg p3: (Class<out (PsiElement..PsiElement?)>..Class<out (PsiElement..PsiElement?)>?)): KtQualifiedExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtQualifiedExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtQualifiedExpression..org.jetbrains.kotlin.psi.KtQualifiedExpression?)
 
 'element' @ [49:71] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.KotlinRainbowVisitor.visit[ValueParameterDescriptorImpl]
 

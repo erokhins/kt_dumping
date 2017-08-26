@@ -40,7 +40,7 @@
 
 'identifier' @ [76:60] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'topLevelClassInternalName' @ [76:95] ==> public fun FqName.topLevelClassInternalName(): String defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'topLevelClassInternalName' @ [76:95] ==> public fun FqName.topLevelClassInternalName(): String defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'JvmField' @ [82:1] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
@@ -70,13 +70,13 @@
 
 'variableCall' @ [107:25] ==> public abstract val variableCall: ResolvedCall<VariableDescriptor> defined in org.jetbrains.kotlin.resolve.calls.model.VariableAsFunctionResolvedCall[DeserializedPropertyDescriptor]
 
-'asMutableResolvedCall' @ [107:38] ==> private fun ResolvedCall<VariableDescriptor>.asMutableResolvedCall(bindingContext: BindingContext): MutableResolvedCall<VariableDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'asMutableResolvedCall' @ [107:38] ==> private fun ResolvedCall<VariableDescriptor>.asMutableResolvedCall(bindingContext: BindingContext): MutableResolvedCall<VariableDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [107:60] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.codegen.coroutines.replaceSuspensionFunctionWithRealDescriptor[ValueParameterDescriptorImpl]
 
 'candidateDescriptor' @ [111:20] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 '!' @ [112:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -88,7 +88,7 @@ Inferred types:
 
 'getUserData' @ [112:41] ==> @Nullable public abstract fun <V : (Any..Any?)> getUserData(p0: (FunctionDescriptor.UserDataKey<(FunctionDescriptor..FunctionDescriptor?)>..FunctionDescriptor.UserDataKey<(FunctionDescriptor..FunctionDescriptor?)>?)): FunctionDescriptor? defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION' @ [112:53] ==> @JvmField public val INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION: FunctionDescriptor.UserDataKey<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[PropertyDescriptorImpl]
 
@@ -135,21 +135,21 @@ Inferred types:
 
 'call' @ [125:13] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'newCandidateDescriptor' @ [126:13] ==> val newCandidateDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.coroutines.replaceSuspensionFunctionWithRealDescriptor[LocalVariableDescriptor]
 
 'dispatchReceiver' @ [127:13] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'extensionReceiver' @ [127:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'explicitReceiverKind' @ [127:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'DelegatingBindingTrace' @ [128:19] ==> public constructor DelegatingBindingTrace(parentContext: BindingContext, name: String, withParentDiagnostics: Boolean = ..., filter: BindingTraceFilter = ..., allowSliceRewrite: Boolean = ...) defined in org.jetbrains.kotlin.resolve.DelegatingBindingTrace[DeserializedClassConstructorDescriptor]
 
@@ -161,15 +161,13 @@ Inferred types:
 
 'WithoutArgumentsCheck' @ [129:68] ==> public constructor WithoutArgumentsCheck(@NotNull p0: DataFlowInfo) defined in org.jetbrains.kotlin.resolve.calls.model.MutableDataFlowInfoForArguments.WithoutArgumentsCheck[JavaClassConstructorDescriptor]
 
-'DataFlowInfo' @ [129:90] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [129:103] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 
 'this' @ [131:5] ==> <this> defined in org.jetbrains.kotlin.codegen.coroutines.replaceSuspensionFunctionWithRealDescriptor[ReceiverParameterDescriptorImpl]
 
 'valueArguments' @ [131:10] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'forEach' @ [131:25] ==> @HidesMembers public inline fun <K, V> Map<out (ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>.forEach(action: (Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -246,11 +244,11 @@ Inferred types:
 
 'typeArguments' @ [143:18] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'candidateDescriptor' @ [143:32] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'typeParameters' @ [143:52] ==> public final val CallableDescriptor.typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)>[MyPropertyDescriptor]
 
@@ -268,8 +266,6 @@ Inferred types:
 'newCall' @ [146:5] ==> val newCall: ResolvedCallImpl<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines.replaceSuspensionFunctionWithRealDescriptor[LocalVariableDescriptor]
 
 'setResultingSubstitutor' @ [146:13] ==> public open fun setResultingSubstitutor(@NotNull p0: TypeSubstitutor): Unit defined in org.jetbrains.kotlin.resolve.calls.model.ResolvedCallImpl[JavaMethodDescriptor]
-
-'TypeConstructorSubstitution' @ [147:13] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
 
 'createByParametersMap' @ [147:41] ==> @JvmStatic public final fun createByParametersMap(map: Map<TypeParameterDescriptor, TypeProjection>): TypeConstructorSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -297,7 +293,7 @@ Inferred types:
 
 'this' @ [155:39] ==> <this> defined in org.jetbrains.kotlin.codegen.coroutines.asMutableResolvedCall[ReceiverParameterDescriptorImpl]
 
-'asDummyOldResolvedCall' @ [155:88] ==> private fun NewResolvedCallImpl<VariableDescriptor>.asDummyOldResolvedCall(bindingContext: BindingContext): ResolvedCallImpl<VariableDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'asDummyOldResolvedCall' @ [155:88] ==> private fun NewResolvedCallImpl<VariableDescriptor>.asDummyOldResolvedCall(bindingContext: BindingContext): ResolvedCallImpl<VariableDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [155:111] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.codegen.coroutines.asMutableResolvedCall[ValueParameterDescriptorImpl]
 
@@ -337,13 +333,11 @@ Inferred types:
 
 'WithoutArgumentsCheck' @ [166:68] ==> public constructor WithoutArgumentsCheck(@NotNull p0: DataFlowInfo) defined in org.jetbrains.kotlin.resolve.calls.model.MutableDataFlowInfoForArguments.WithoutArgumentsCheck[JavaClassConstructorDescriptor]
 
-'DataFlowInfo' @ [166:90] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [166:103] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 
 'resultingDescriptor' @ [171:9] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'safeAs' @ [171:29] ==> public inline fun <reified T : Any> Any?.safeAs(): FunctionDescriptor? defined in org.jetbrains.kotlin.utils.addToStdlib[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -366,7 +360,7 @@ Inferred types:
 
 'it' @ [173:54] ==> value-parameter it: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.coroutines.isSuspendNoInlineCall.<anonymous>[ValueParameterDescriptorImpl]
 
-'isBuiltInSuspendCoroutineOrReturnInJvm' @ [173:57] ==> public fun FunctionDescriptor.isBuiltInSuspendCoroutineOrReturnInJvm(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'isBuiltInSuspendCoroutineOrReturnInJvm' @ [173:57] ==> public fun FunctionDescriptor.isBuiltInSuspendCoroutineOrReturnInJvm(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [177:9] ==> <this> defined in org.jetbrains.kotlin.codegen.coroutines.isSuspendFunctionNotSuspensionView[ReceiverParameterDescriptorImpl]
 
@@ -378,7 +372,7 @@ Inferred types:
 
 'getUserData' @ [178:35] ==> @Nullable public abstract fun <V : (Any..Any?)> getUserData(p0: (FunctionDescriptor.UserDataKey<(FunctionDescriptor..FunctionDescriptor?)>..FunctionDescriptor.UserDataKey<(FunctionDescriptor..FunctionDescriptor?)>?)): FunctionDescriptor? defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION' @ [178:47] ==> @JvmField public val INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION: FunctionDescriptor.UserDataKey<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[PropertyDescriptorImpl]
 
@@ -398,8 +392,8 @@ Inferred types:
 
 'get' @ [191:21] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(FunctionDescriptor..FunctionDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>..ReadOnlySlice<(FunctionDescriptor..FunctionDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>?), p1: (FunctionDescriptor..FunctionDescriptor?)): FunctionDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> FunctionDescriptor
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'SUSPEND_FUNCTION_TO_JVM_VIEW' @ [191:40] ==> public final val SUSPEND_FUNCTION_TO_JVM_VIEW: (WritableSlice<(FunctionDescriptor..FunctionDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>..WritableSlice<(FunctionDescriptor..FunctionDescriptor?), (FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.codegen.binding.CodegenBinding[JavaPropertyDescriptor]
 
@@ -421,8 +415,6 @@ Inferred types:
 'valueParameters' @ [194:38] ==> public final val FunctionDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
 'size' @ [194:54] ==> public abstract val size: Int defined in kotlin.collections.MutableList[DeserializedPropertyDescriptor]
-
-'Annotations' @ [194:60] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [194:72] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -455,7 +447,7 @@ Inferred types:
 
 'function' @ [199:17] ==> value-parameter function: D defined in org.jetbrains.kotlin.codegen.coroutines.getOrCreateJvmSuspendFunctionView[ValueParameterDescriptorImpl]
 
-'getContinuationParameterTypeOfSuspendFunction' @ [199:26] ==> private fun FunctionDescriptor.getContinuationParameterTypeOfSuspendFunction(): SimpleType defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'getContinuationParameterTypeOfSuspendFunction' @ [199:26] ==> private fun FunctionDescriptor.getContinuationParameterTypeOfSuspendFunction(): SimpleType defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'NO_SOURCE' @ [201:85] ==> public final val NO_SOURCE: (SourceElement..SourceElement?) defined in org.jetbrains.kotlin.descriptors.SourceElement[JavaPropertyDescriptor]
 
@@ -487,7 +479,7 @@ Inferred types:
 
 'putUserData' @ [209:9] ==> @NotNull public abstract fun <V : (Any..Any?)> putUserData(@NotNull p0: FunctionDescriptor.UserDataKey<(FunctionDescriptor..FunctionDescriptor?)>, p1: (FunctionDescriptor..FunctionDescriptor?)): FunctionDescriptor.CopyBuilder<out (FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor.CopyBuilder[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION' @ [209:21] ==> @JvmField public val INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION: FunctionDescriptor.UserDataKey<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[PropertyDescriptorImpl]
 
@@ -551,7 +543,7 @@ Inferred types:
 
 'module' @ [236:9] ==> public val DeclarationDescriptor.module: ModuleDescriptor defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
-'getContinuationOfTypeOrAny' @ [236:16] ==> public fun ModuleDescriptor.getContinuationOfTypeOrAny(kotlinType: KotlinType): SimpleType defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'getContinuationOfTypeOrAny' @ [236:16] ==> public fun ModuleDescriptor.getContinuationOfTypeOrAny(kotlinType: KotlinType): SimpleType defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'returnType' @ [236:43] ==> public final val FunctionDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -590,7 +582,7 @@ Inferred types:
 
 'getUserData' @ [248:9] ==> @Nullable public abstract fun <V : (Any..Any?)> getUserData(p0: (FunctionDescriptor.UserDataKey<(FunctionDescriptor..FunctionDescriptor?)>..FunctionDescriptor.UserDataKey<(FunctionDescriptor..FunctionDescriptor?)>?)): FunctionDescriptor? defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION' @ [248:21] ==> @JvmField public val INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION: FunctionDescriptor.UserDataKey<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[PropertyDescriptorImpl]
 
@@ -600,7 +592,7 @@ Inferred types:
 
 'functionDescriptor' @ [254:12] ==> value-parameter functionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.coroutines.createMethodNodeForSuspendCoroutineOrReturn[ValueParameterDescriptorImpl]
 
-'isBuiltInSuspendCoroutineOrReturnInJvm' @ [254:31] ==> public fun FunctionDescriptor.isBuiltInSuspendCoroutineOrReturnInJvm(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'isBuiltInSuspendCoroutineOrReturnInJvm' @ [254:31] ==> public fun FunctionDescriptor.isBuiltInSuspendCoroutineOrReturnInJvm(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'MethodNode' @ [259:13] ==> public constructor MethodNode(p0: Int, p1: Int, p2: (String..String?), p3: (String..String?), p4: (String..String?), p5: (Array<(String..String?)>..Array<out (String..String?)>?)) defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaClassConstructorDescriptor]
 
@@ -660,8 +652,6 @@ Inferred types:
 
 'internalName' @ [279:71] ==> public final val Type.internalName: (String..String?)[MyPropertyDescriptor]
 
-'OperatorNameConventions' @ [280:13] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INVOKE' @ [280:37] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'identifier' @ [280:44] ==> public final val Name.identifier: String[MyPropertyDescriptor]
@@ -692,7 +682,7 @@ Inferred types:
 
 'getUserData' @ [292:50] ==> @Nullable public abstract fun <V : (Any..Any?)> getUserData(p0: (FunctionDescriptor.UserDataKey<(FunctionDescriptor..FunctionDescriptor?)>..FunctionDescriptor.UserDataKey<(FunctionDescriptor..FunctionDescriptor?)>?)): FunctionDescriptor? defined in org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> FunctionDescriptor
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION' @ [292:62] ==> @JvmField public val INITIAL_DESCRIPTOR_FOR_SUSPEND_FUNCTION: FunctionDescriptor.UserDataKey<FunctionDescriptor> defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[PropertyDescriptorImpl]
 

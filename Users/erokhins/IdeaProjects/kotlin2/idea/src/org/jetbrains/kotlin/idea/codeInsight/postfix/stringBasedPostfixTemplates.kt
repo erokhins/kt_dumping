@@ -14,7 +14,9 @@
 
 'name' @ [50:9] ==> value-parameter name: String defined in org.jetbrains.kotlin.idea.codeInsight.postfix.KtForEachPostfixTemplate.<init>[ValueParameterDescriptorImpl]
 
-'createExpressionSelectorWithComplexFilter' @ [53:9] ==> internal fun createExpressionSelectorWithComplexFilter(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., predicate: ((KtExpression, BindingContext) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelectorWithComplexFilter' @ [53:9] ==> internal fun createExpressionSelectorWithComplexFilter(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., predicate: ((KtExpression, BindingContext) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
+
+'hasIterableType' @ [53:100] ==> private fun KtExpression.hasIterableType(bindingContext: BindingContext): Boolean defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file stringBasedPostfixTemplates.kt[SimpleFunctionDescriptorImpl]
 
 'MacroCallNode' @ [56:20] ==> public constructor MacroCallNode(@NotNull p0: Macro) defined in com.intellij.codeInsight.template.impl.MacroCallNode[JavaClassConstructorDescriptor]
 
@@ -58,25 +60,29 @@ Inferred types:
 
 'ConstantStringBasedPostfixTemplate' @ [69:43] ==> public constructor ConstantStringBasedPostfixTemplate(name: String, desc: String, template: String, selector: PostfixTemplateExpressionSelector) defined in org.jetbrains.kotlin.idea.codeInsight.postfix.ConstantStringBasedPostfixTemplate[ClassConstructorDescriptorImpl]
 
-'createExpressionSelector' @ [73:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [73:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinType' @ [73:73] ==> private constructor KotlinType() defined in org.jetbrains.kotlin.types.KotlinType[DeserializedClassConstructorDescriptor]
 
+'isBoolean' @ [73:85] ==> public fun KotlinType.isBoolean(): Boolean defined in org.jetbrains.kotlin.types.typeUtil[DeserializedSimpleFunctionDescriptor]
+
 'ConstantStringBasedPostfixTemplate' @ [76:50] ==> public constructor ConstantStringBasedPostfixTemplate(name: String, desc: String, template: String, selector: PostfixTemplateExpressionSelector) defined in org.jetbrains.kotlin.idea.codeInsight.postfix.ConstantStringBasedPostfixTemplate[ClassConstructorDescriptorImpl]
 
-'createExpressionSelector' @ [79:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [79:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'ConstantStringBasedPostfixTemplate' @ [82:41] ==> public constructor ConstantStringBasedPostfixTemplate(name: String, desc: String, template: String, selector: PostfixTemplateExpressionSelector) defined in org.jetbrains.kotlin.idea.codeInsight.postfix.ConstantStringBasedPostfixTemplate[ClassConstructorDescriptorImpl]
 
-'createExpressionSelector' @ [86:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [86:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'ConstantStringBasedPostfixTemplate' @ [89:43] ==> public constructor ConstantStringBasedPostfixTemplate(name: String, desc: String, template: String, selector: PostfixTemplateExpressionSelector) defined in org.jetbrains.kotlin.idea.codeInsight.postfix.ConstantStringBasedPostfixTemplate[ClassConstructorDescriptorImpl]
 
-'createExpressionSelector' @ [93:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [93:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'ConstantStringBasedPostfixTemplate' @ [96:42] ==> public constructor ConstantStringBasedPostfixTemplate(name: String, desc: String, template: String, selector: PostfixTemplateExpressionSelector) defined in org.jetbrains.kotlin.idea.codeInsight.postfix.ConstantStringBasedPostfixTemplate[ClassConstructorDescriptorImpl]
 
-'createExpressionSelector' @ [100:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix[SimpleFunctionDescriptorImpl]
+'createExpressionSelector' @ [100:9] ==> internal fun createExpressionSelector(checkCanBeUsedAsValue: Boolean = ..., statementsOnly: Boolean = ..., typePredicate: ((KotlinType) -> Boolean)? = ...): PostfixTemplateExpressionSelector defined in org.jetbrains.kotlin.idea.codeInsight.postfix in file KtPostfixTemplateProvider.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinType' @ [100:73] ==> private constructor KotlinType() defined in org.jetbrains.kotlin.types.KotlinType[DeserializedClassConstructorDescriptor]
+
+'isBoolean' @ [100:85] ==> public fun KotlinType.isBoolean(): Boolean defined in org.jetbrains.kotlin.types.typeUtil[DeserializedSimpleFunctionDescriptor]
 

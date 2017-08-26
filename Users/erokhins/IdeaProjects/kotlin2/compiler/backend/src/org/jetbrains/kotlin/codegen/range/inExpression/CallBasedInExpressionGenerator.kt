@@ -75,7 +75,7 @@ Inferred types:
 
 'call' @ [50:70] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [50:76] ==> private final val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.codegen.range.inExpression.CallBasedInExpressionGenerator[PropertyDescriptorImpl]
 

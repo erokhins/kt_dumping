@@ -1,6 +1,6 @@
-'lazy' @ [41:37] ==> public fun <T> lazy(initializer: () -> List<VariableDescriptor>): Lazy<List<VariableDescriptor>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [41:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<VariableDescriptor>
+    <T> -> T
 
 'collectVariables' @ [42:9] ==> private final fun collectVariables(): Collection<VariableDescriptor> defined in org.jetbrains.kotlin.idea.completion.RealContextVariablesProvider[SimpleFunctionDescriptorImpl]
 
@@ -25,8 +25,6 @@ Inferred types:
 'getReferenceVariants' @ [47:40] ==> public final fun getReferenceVariants(contextElement: PsiElement, callTypeAndReceiver: CallTypeAndReceiver<*, *>, kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean, filterOutJavaGettersAndSetters: Boolean = ..., filterOutShadowed: Boolean = ..., excludeNonInitializedVariable: Boolean = ..., useReceiverType: KotlinType? = ...): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.codeInsight.ReferenceVariantsHelper[DeserializedSimpleFunctionDescriptor]
 
 'contextElement' @ [47:61] ==> private final val contextElement: PsiElement defined in org.jetbrains.kotlin.idea.completion.RealContextVariablesProvider[PropertyDescriptorImpl]
-
-'CallTypeAndReceiver' @ [47:77] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [47:97] ==> public object DEFAULT : CallTypeAndReceiver<Nothing?, CallType.DEFAULT> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
 

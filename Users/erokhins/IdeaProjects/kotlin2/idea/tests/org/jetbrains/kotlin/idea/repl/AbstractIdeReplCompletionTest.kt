@@ -6,7 +6,9 @@
 
 'consoleRunner' @ [38:9] ==> private final var consoleRunner: KotlinConsoleRunner? defined in org.jetbrains.kotlin.idea.repl.AbstractIdeReplCompletionTest[PropertyDescriptorImpl]
 
-'KotlinConsoleKeeper' @ [38:25] ==> public companion object defined in org.jetbrains.kotlin.console.KotlinConsoleKeeper[FakeCallableDescriptorForObject]
+'!!' @ [38:25] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KotlinConsoleRunner?): KotlinConsoleRunner?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KotlinConsoleRunner?
 
 'getInstance' @ [38:45] ==> @JvmStatic public final fun getInstance(project: Project): (KotlinConsoleKeeper..KotlinConsoleKeeper?) defined in org.jetbrains.kotlin.console.KotlinConsoleKeeper.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -120,7 +122,7 @@ Inferred types:
 
 'getLineEndOffset' @ [65:76] ==> @Contract public abstract fun getLineEndOffset(p0: Int): Int defined in com.intellij.openapi.editor.Document[JavaMethodDescriptor]
 
-'testCompletion' @ [67:9] ==> public fun testCompletion(fileText: String, platform: TargetPlatform?, complete: (CompletionType, Int) -> Array<LookupElement>?, defaultCompletionType: CompletionType = ..., defaultInvocationCount: Int = ..., additionalValidDirectives: Collection<String> = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'testCompletion' @ [67:9] ==> public fun testCompletion(fileText: String, platform: TargetPlatform?, complete: (CompletionType, Int) -> Array<LookupElement>?, defaultCompletionType: CompletionType = ..., defaultInvocationCount: Int = ..., additionalValidDirectives: Collection<String> = ...): Unit defined in org.jetbrains.kotlin.idea.completion.test in file CompletionTestUtil.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [67:24] ==> val file: File defined in org.jetbrains.kotlin.idea.repl.AbstractIdeReplCompletionTest.doTest[LocalVariableDescriptor]
 

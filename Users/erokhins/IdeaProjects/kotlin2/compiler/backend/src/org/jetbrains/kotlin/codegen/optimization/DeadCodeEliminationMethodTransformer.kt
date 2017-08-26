@@ -8,7 +8,7 @@
 
 'analyze' @ [34:22] ==> @NotNull public open fun <V : (Value..Value?)> analyze(@NotNull internalClassName: String, @NotNull node: MethodNode, @NotNull interpreter: Interpreter<(BasicValue..BasicValue?)>): (Array<(Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>..Array<out (Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>) defined in org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer[JavaMethodDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)
 
 'internalClassName' @ [34:30] ==> value-parameter internalClassName: String defined in org.jetbrains.kotlin.codegen.optimization.DeadCodeEliminationMethodTransformer.transformWithResult[ValueParameterDescriptorImpl]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'methodNode' @ [49:9] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.optimization.DeadCodeEliminationMethodTransformer.removeDeadCodeByFrames[ValueParameterDescriptorImpl]
 
-'remove' @ [49:20] ==> public fun MethodNode.remove(instructions: Collection<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'remove' @ [49:20] ==> public fun MethodNode.remove(instructions: Collection<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'insnsToRemove' @ [49:27] ==> val insnsToRemove: ArrayList<AbstractInsnNode> /* = ArrayList<AbstractInsnNode> */ defined in org.jetbrains.kotlin.codegen.optimization.DeadCodeEliminationMethodTransformer.removeDeadCodeByFrames[LocalVariableDescriptor]
 

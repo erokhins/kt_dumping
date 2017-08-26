@@ -42,8 +42,6 @@ Inferred types:
 
 'findDependencies' @ [47:37] ==> @NotNull public open fun findDependencies(@Nullable p0: String?, @Nullable p1: String?): (MutableList<(MavenArtifact..MavenArtifact?)>..List<(MavenArtifact..MavenArtifact?)>) defined in org.jetbrains.idea.maven.project.MavenProject[JavaMethodDescriptor]
 
-'KotlinMavenConfigurator' @ [47:54] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [47:78] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
 'MAVEN_STDLIB_ID' @ [47:88] ==> public val MAVEN_STDLIB_ID: String defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[PropertyDescriptorImpl]
@@ -65,11 +63,7 @@ Inferred types:
 
 'findPlugin' @ [48:37] ==> @Nullable public open fun findPlugin(@Nullable p0: String?, @Nullable p1: String?): MavenPlugin? defined in org.jetbrains.idea.maven.project.MavenProject[JavaMethodDescriptor]
 
-'KotlinMavenConfigurator' @ [48:48] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [48:72] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
-
-'KotlinMavenConfigurator' @ [48:82] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
 
 'MAVEN_PLUGIN_ID' @ [48:106] ==> public final val MAVEN_PLUGIN_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -89,7 +83,9 @@ Inferred types:
 
 'pluginVersion' @ [50:97] ==> val pluginVersion: String? defined in org.jetbrains.kotlin.idea.maven.inspections.DifferentMavenStdlibVersionInspection.checkFileElement[LocalVariableDescriptor]
 
-'PomFile' @ [54:23] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'?:' @ [54:23] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PomFile?, right: PomFile): PomFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PomFile
 
 'forFileOrNull' @ [54:31] ==> public final fun forFileOrNull(xmlFile: XmlFile): PomFile? defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
@@ -182,8 +178,6 @@ Inferred types:
 
 'MavenId' @ [67:34] ==> public constructor MavenId(@Nullable p0: String?, @Nullable p1: String?, @Nullable p2: String?) defined in org.jetbrains.idea.maven.model.MavenId[JavaClassConstructorDescriptor]
 
-'KotlinMavenConfigurator' @ [67:42] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[FakeCallableDescriptorForObject]
-
 'GROUP_ID' @ [67:66] ==> public final val GROUP_ID: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.Companion[PropertyDescriptorImpl]
 
 'MAVEN_STDLIB_ID' @ [67:76] ==> public val MAVEN_STDLIB_ID: String defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[PropertyDescriptorImpl]
@@ -268,13 +262,15 @@ Inferred types:
     <T> -> String
     <R : Comparable<R>> -> MavenVersionComparable
 
+'MavenVersionComparable' @ [82:44] ==> public constructor MavenVersionComparable(p0: (String..String?)) defined in org.jetbrains.idea.maven.dom.MavenVersionComparable[JavaClassConstructorDescriptor]
+
 'bestVersion' @ [83:13] ==> val bestVersion: String defined in org.jetbrains.kotlin.idea.maven.inspections.DifferentMavenStdlibVersionInspection.createFixes[LocalVariableDescriptor]
 
 'versionElement' @ [83:28] ==> value-parameter versionElement: GenericDomValue<*> defined in org.jetbrains.kotlin.idea.maven.inspections.DifferentMavenStdlibVersionInspection.createFixes[ValueParameterDescriptorImpl]
 
 'stringValue' @ [83:43] ==> public final var <T : (Any..Any?)> GenericDomValue<out (Any..Any?)>.stringValue: String?[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'emptyList' @ [84:20] ==> public fun <T> emptyList(): List<DifferentMavenStdlibVersionInspection.SetVersionQuickFix> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -342,7 +338,7 @@ Inferred types:
 
 'value' @ [98:28] ==> public final var <T : (Any..Any?)> GenericDomValue<out (Any..Any?)>.value: Any?[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'newVersion' @ [98:36] ==> public final val newVersion: String defined in org.jetbrains.kotlin.idea.maven.inspections.DifferentMavenStdlibVersionInspection.SetVersionQuickFix[PropertyDescriptorImpl]
 

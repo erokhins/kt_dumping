@@ -2,8 +2,6 @@
 Inferred types:
     <C : (FacetConfiguration..FacetConfiguration?)> -> KotlinFacetConfiguration
 
-'KotlinFacetType' @ [27:37] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [27:53] ==> public final val INSTANCE: KotlinFacetType defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[PropertyDescriptorImpl]
 
 'module' @ [27:63] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.facet.KotlinFacet.<init>[ValueParameterDescriptorImpl]
@@ -23,8 +21,6 @@ Inferred types:
 'getFacetByType' @ [31:40] ==> @Nullable public abstract fun <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> getFacetByType(p0: (FacetTypeId<(KotlinFacet..KotlinFacet?)>..FacetTypeId<(KotlinFacet..KotlinFacet?)>?)): KotlinFacet? defined in com.intellij.facet.FacetManager[JavaMethodDescriptor]
 Inferred types:
     <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> KotlinFacet
-
-'KotlinFacetType' @ [31:68] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType[FakeCallableDescriptorForObject]
 
 'TYPE_ID' @ [31:84] ==> public final val TYPE_ID: FacetTypeId<KotlinFacet> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[PropertyDescriptorImpl]
 

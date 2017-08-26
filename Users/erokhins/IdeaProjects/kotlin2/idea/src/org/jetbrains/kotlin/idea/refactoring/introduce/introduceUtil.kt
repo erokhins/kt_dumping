@@ -57,9 +57,9 @@ Inferred types:
 
 'physicalElements' @ [59:36] ==> val physicalElements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.selectElementsWithTargetSibling.onSelectionComplete[LocalVariableDescriptor]
 
-'first' @ [59:53] ==> public fun <T> List<@ParameterName PsiElement>.first(): @ParameterName PsiElement defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'first' @ [59:53] ==> public fun <T> List<PsiElement>.first(): PsiElement defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> [@kotlin.ParameterName] PsiElement
+    <T> -> PsiElement
 
 'parent' @ [63:31] ==> val parent: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.selectElementsWithTargetSibling.onSelectionComplete[LocalVariableDescriptor]
 
@@ -85,7 +85,7 @@ Inferred types:
 
 'outermostParent' @ [69:32] ==> val outermostParent: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.introduce.selectElementsWithTargetSibling.onSelectionComplete[LocalVariableDescriptor]
 
-'selectElementsWithTargetParent' @ [72:5] ==> public fun selectElementsWithTargetParent(operationName: String, editor: Editor, file: KtFile, title: String, elementKinds: Collection<CodeInsightUtils.ElementKind>, getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement>, continuation: (elements: List<PsiElement>, targetParent: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce[SimpleFunctionDescriptorImpl]
+'selectElementsWithTargetParent' @ [72:5] ==> public fun selectElementsWithTargetParent(operationName: String, editor: Editor, file: KtFile, title: String, elementKinds: Collection<CodeInsightUtils.ElementKind>, getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement>, continuation: (elements: List<PsiElement>, targetParent: PsiElement) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'operationName' @ [72:36] ==> value-parameter operationName: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.selectElementsWithTargetSibling[ValueParameterDescriptorImpl]
 
@@ -98,6 +98,8 @@ Inferred types:
 'elementKinds' @ [72:72] ==> value-parameter elementKinds: Collection<CodeInsightUtils.ElementKind> defined in org.jetbrains.kotlin.idea.refactoring.introduce.selectElementsWithTargetSibling[ValueParameterDescriptorImpl]
 
 'getContainers' @ [72:86] ==> value-parameter getContainers: (elements: List<PsiElement>, commonParent: PsiElement) -> List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.selectElementsWithTargetSibling[ValueParameterDescriptorImpl]
+
+'onSelectionComplete' @ [72:103] ==> local final fun onSelectionComplete(elements: List<PsiElement>, targetContainer: PsiElement): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.selectElementsWithTargetSibling[SimpleFunctionDescriptorImpl]
 
 'showErrorHintByKey' @ [85:9] ==> public fun showErrorHintByKey(project: Project, editor: Editor, messageKey: String, title: String): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -241,7 +243,7 @@ Inferred types:
 
 'elements' @ [122:31] ==> val elements: List<(PsiElement..PsiElement?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.selectElementsWithTargetParent.selectMultipleElements[LocalVariableDescriptor]
 
-'selectElement' @ [126:9] ==> @Throws public fun selectElement(editor: Editor, file: KtFile, failOnEmptySuggestion: Boolean, elementKinds: Collection<CodeInsightUtils.ElementKind>, callback: (PsiElement?) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'selectElement' @ [126:9] ==> @Throws public fun selectElement(editor: Editor, file: KtFile, failOnEmptySuggestion: Boolean, elementKinds: Collection<CodeInsightUtils.ElementKind>, callback: (PsiElement?) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file elementSelectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'editor' @ [126:23] ==> value-parameter editor: Editor defined in org.jetbrains.kotlin.idea.refactoring.introduce.selectElementsWithTargetParent[ValueParameterDescriptorImpl]
 
@@ -351,7 +353,7 @@ Inferred types:
 
 'getCopyableUserData' @ [151:58] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?)): Boolean? defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'key' @ [151:78] ==> value-parameter key: Key<Boolean> defined in org.jetbrains.kotlin.idea.refactoring.introduce.findExpressionByCopyableDataAndClearIt[ValueParameterDescriptorImpl]
 
@@ -359,7 +361,7 @@ Inferred types:
 
 'putCopyableUserData' @ [152:12] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?), @Nullable p1: Boolean?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'key' @ [152:32] ==> value-parameter key: Key<Boolean> defined in org.jetbrains.kotlin.idea.refactoring.introduce.findExpressionByCopyableDataAndClearIt[ValueParameterDescriptorImpl]
 
@@ -373,7 +375,7 @@ Inferred types:
 
 'getCopyableUserData' @ [157:56] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?)): Boolean? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'key' @ [157:76] ==> value-parameter key: Key<Boolean> defined in org.jetbrains.kotlin.idea.refactoring.introduce.findElementByCopyableDataAndClearIt[ValueParameterDescriptorImpl]
 
@@ -381,7 +383,7 @@ Inferred types:
 
 'putCopyableUserData' @ [158:12] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?), @Nullable p1: Boolean?): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'key' @ [158:32] ==> value-parameter key: Key<Boolean> defined in org.jetbrains.kotlin.idea.refactoring.introduce.findElementByCopyableDataAndClearIt[ValueParameterDescriptorImpl]
 
@@ -395,7 +397,7 @@ Inferred types:
 
 'getCopyableUserData' @ [163:63] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?)): Boolean? defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'key' @ [163:83] ==> value-parameter key: Key<Boolean> defined in org.jetbrains.kotlin.idea.refactoring.introduce.findExpressionsByCopyableDataAndClearIt[ValueParameterDescriptorImpl]
 
@@ -409,7 +411,7 @@ Inferred types:
 
 'putCopyableUserData' @ [164:26] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Boolean..Boolean?)>..Key<(Boolean..Boolean?)>?), @Nullable p1: Boolean?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'key' @ [164:46] ==> value-parameter key: Key<Boolean> defined in org.jetbrains.kotlin.idea.refactoring.introduce.findExpressionsByCopyableDataAndClearIt[ValueParameterDescriptorImpl]
 

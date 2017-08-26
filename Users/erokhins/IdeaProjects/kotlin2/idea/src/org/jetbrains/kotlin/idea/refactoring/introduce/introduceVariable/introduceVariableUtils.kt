@@ -144,7 +144,7 @@ Inferred types:
 
 'resultingDescriptor' @ [70:64] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'takeWhile' @ [72:14] ==> public fun <T> Sequence<FunctionDescriptor?>.takeWhile(predicate: (FunctionDescriptor?) -> Boolean): Sequence<FunctionDescriptor?> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -160,7 +160,7 @@ Inferred types:
 Inferred types:
     <T> -> FunctionDescriptor?
 
-'getApplicableComponentFunctions' @ [83:21] ==> private fun getApplicableComponentFunctions(contextExpression: KtExpression, receiverType: KotlinType?, receiverExpression: KtExpression?): List<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable[SimpleFunctionDescriptorImpl]
+'getApplicableComponentFunctions' @ [83:21] ==> private fun getApplicableComponentFunctions(contextExpression: KtExpression, receiverType: KotlinType?, receiverExpression: KtExpression?): List<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable in file introduceVariableUtils.kt[SimpleFunctionDescriptorImpl]
 
 'contextExpression' @ [83:53] ==> value-parameter contextExpression: KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.chooseApplicableComponentFunctions[ValueParameterDescriptorImpl]
 
@@ -281,8 +281,6 @@ Inferred types:
 
 'addAll' @ [107:42] ==> public open fun addAll(elements: Collection<String>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
-'KotlinNameSuggester' @ [107:49] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
-
 'suggestNamesByType' @ [107:69] ==> public final fun suggestNamesByType(type: KotlinType, validator: (String) -> Boolean, defaultName: String? = ...): List<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [107:88] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.suggestNamesForComponent.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -290,8 +288,6 @@ Inferred types:
 'validator' @ [107:92] ==> value-parameter validator: (String) -> Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceVariable.suggestNamesForComponent[ValueParameterDescriptorImpl]
 
 'add' @ [109:9] ==> public open fun add(element: String): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
-
-'KotlinNameSuggester' @ [109:13] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
 
 'suggestNameByName' @ [109:33] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 

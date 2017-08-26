@@ -510,7 +510,7 @@ Inferred types:
 
 'sourceFile' @ [204:35] ==> val sourceFile: KtFile defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.findUsages[LocalVariableDescriptor]
 
-'getInternalReferencesToUpdateOnPackageNameChange' @ [204:46] ==> public fun KtElement.getInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'getInternalReferencesToUpdateOnPackageNameChange' @ [204:46] ==> public fun KtElement.getInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'changeInfo' @ [204:95] ==> val changeInfo: ContainerChangeInfo defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.findUsages[LocalVariableDescriptor]
 
@@ -538,7 +538,7 @@ Inferred types:
 
 'it' @ [209:39] ==> value-parameter it: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.findUsages.<anonymous>[ValueParameterDescriptorImpl]
 
-'getInternalReferencesToUpdateOnPackageNameChange' @ [209:42] ==> public fun KtElement.getInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'getInternalReferencesToUpdateOnPackageNameChange' @ [209:42] ==> public fun KtElement.getInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'packageNameInfo' @ [209:91] ==> val packageNameInfo: ContainerChangeInfo defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.findUsages.<anonymous>[LocalVariableDescriptor]
 
@@ -624,7 +624,7 @@ Inferred types:
 
 'java' @ [234:114] ==> public val <T> KClass<out KtNamedDeclaration>.java: Class<out KtNamedDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtNamedDeclaration
+    <T> -> Captured(out KtNamedDeclaration)
 
 'declaration' @ [234:123] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring.moveDeclaration[ValueParameterDescriptorImpl]
 
@@ -672,13 +672,13 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> UsageInfo
 
-'markInternalUsages' @ [244:9] ==> internal fun markInternalUsages(usages: Collection<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'markInternalUsages' @ [244:9] ==> internal fun markInternalUsages(usages: Collection<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'oldInternalUsages' @ [244:28] ==> val oldInternalUsages: List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
 
 'ArrayList' @ [246:31] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (UsageInfo..UsageInfo?)>..Collection<(UsageInfo..UsageInfo?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> UsageInfo
+    <E : (Any..Any?)> -> (com.intellij.usageView.UsageInfo..com.intellij.usageView.UsageInfo?)
 
 'externalUsages' @ [246:41] ==> val externalUsages: List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
 
@@ -818,21 +818,21 @@ Inferred types:
 
 'newInternalUsages' @ [280:39] ==> val newInternalUsages: ArrayList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
 
-'restoreInternalUsages' @ [280:60] ==> internal fun restoreInternalUsages(scope: KtElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>, forcedRestore: Boolean = ...): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'restoreInternalUsages' @ [280:60] ==> internal fun restoreInternalUsages(scope: KtElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>, forcedRestore: Boolean = ...): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [280:82] ==> value-parameter it: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring.<anonymous>[ValueParameterDescriptorImpl]
 
 'oldToNewElementsMapping' @ [280:86] ==> val oldToNewElementsMapping: THashMap<PsiElement, PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
 
-'usagesToProcess' @ [282:13] ==> val usagesToProcess: ArrayList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
+'usagesToProcess' @ [282:13] ==> val usagesToProcess: ArrayList<(UsageInfo..UsageInfo?)> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
 
 'newInternalUsages' @ [282:32] ==> val newInternalUsages: ArrayList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
 
 'nonCodeUsages' @ [284:13] ==> private final var nonCodeUsages: Array<NonCodeUsageInfo>? defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor[PropertyDescriptorImpl]
 
-'postProcessMoveUsages' @ [284:29] ==> public fun postProcessMoveUsages(usages: Collection<UsageInfo>, oldToNewElementsMapping: Map<PsiElement, PsiElement> = ..., shorteningMode: KtSimpleNameReference.ShorteningMode = ...): List<NonCodeUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'postProcessMoveUsages' @ [284:29] ==> public fun postProcessMoveUsages(usages: Collection<UsageInfo>, oldToNewElementsMapping: Map<PsiElement, PsiElement> = ..., shorteningMode: KtSimpleNameReference.ShorteningMode = ...): List<NonCodeUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
-'usagesToProcess' @ [284:51] ==> val usagesToProcess: ArrayList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
+'usagesToProcess' @ [284:51] ==> val usagesToProcess: ArrayList<(UsageInfo..UsageInfo?)> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
 
 'oldToNewElementsMapping' @ [284:68] ==> val oldToNewElementsMapping: THashMap<PsiElement, PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
 
@@ -848,7 +848,7 @@ Inferred types:
 
 'e' @ [288:68] ==> val e: IncorrectOperationException defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
 
-'cleanUpInternalUsages' @ [291:13] ==> internal fun cleanUpInternalUsages(usages: Collection<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'cleanUpInternalUsages' @ [291:13] ==> internal fun cleanUpInternalUsages(usages: Collection<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'newInternalUsages' @ [291:35] ==> val newInternalUsages: ArrayList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsProcessor.doPerformRefactoring[LocalVariableDescriptor]
 

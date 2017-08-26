@@ -17,7 +17,7 @@ Inferred types:
 
 'replaceMe' @ [30:17] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsNode..JsNode?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsNode
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'JsBreak' @ [30:27] ==> public constructor JsBreak(p0: (JsNameRef..JsNameRef?)) defined in org.jetbrains.kotlin.js.backend.ast.JsBreak[JavaClassConstructorDescriptor]
 
@@ -53,7 +53,7 @@ Inferred types:
 
 'replaceMe' @ [38:17] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsNode..JsNode?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsNode
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'JsContinue' @ [38:27] ==> public constructor JsContinue(@Nullable p0: JsNameRef?) defined in org.jetbrains.kotlin.js.backend.ast.JsContinue[JavaClassConstructorDescriptor]
 
@@ -148,7 +148,7 @@ Inferred types:
 
 'replaceMe' @ [55:13] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsLabel..JsLabel?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsLabel
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsLabel..org.jetbrains.kotlin.js.backend.ast.JsLabel?)
 
 'replacementLabel' @ [55:23] ==> val replacementLabel: JsLabel defined in org.jetbrains.kotlin.js.inline.util.rewriters.LabelNameRefreshingVisitor.endVisit[LocalVariableDescriptor]
 

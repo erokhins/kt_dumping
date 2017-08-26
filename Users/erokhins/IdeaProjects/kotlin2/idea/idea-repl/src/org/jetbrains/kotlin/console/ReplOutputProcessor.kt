@@ -97,11 +97,7 @@ Inferred types:
 
 'message' @ [72:21] ==> value-parameter message: String defined in org.jetbrains.kotlin.console.ReplOutputProcessor.printWarningMessage[ValueParameterDescriptorImpl]
 
-'ReplColors' @ [72:30] ==> public object ReplColors defined in org.jetbrains.kotlin.console in file ReplColors.kt[FakeCallableDescriptorForObject]
-
 'WARNING_INFO_CONTENT_TYPE' @ [72:41] ==> public final val WARNING_INFO_CONTENT_TYPE: ConsoleViewContentType defined in org.jetbrains.kotlin.console.ReplColors[PropertyDescriptorImpl]
-
-'ReplIcons' @ [72:68] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
 
 'BUILD_WARNING_INDICATOR' @ [72:78] ==> public final val BUILD_WARNING_INDICATOR: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 
@@ -159,8 +155,6 @@ Inferred types:
 
 'command' @ [92:65] ==> value-parameter command: String defined in org.jetbrains.kotlin.console.ReplOutputProcessor.printInitialPrompt[ValueParameterDescriptorImpl]
 
-'ReplColors' @ [92:74] ==> public object ReplColors defined in org.jetbrains.kotlin.console in file ReplColors.kt[FakeCallableDescriptorForObject]
-
 'INITIAL_PROMPT_CONTENT_TYPE' @ [92:85] ==> public final val INITIAL_PROMPT_CONTENT_TYPE: ConsoleViewContentType defined in org.jetbrains.kotlin.console.ReplColors[PropertyDescriptorImpl]
 
 'runWriteCommandAction' @ [94:54] ==> public final fun runWriteCommandAction(p0: (Project..Project?), @NotNull p1: () -> Unit): Unit defined in com.intellij.openapi.command.WriteCommandAction[SamAdapterFunctionDescriptor]
@@ -172,8 +166,6 @@ Inferred types:
 'help' @ [95:21] ==> value-parameter help: String defined in org.jetbrains.kotlin.console.ReplOutputProcessor.printHelp[ValueParameterDescriptorImpl]
 
 'SYSTEM_OUTPUT' @ [95:50] ==> public final val SYSTEM_OUTPUT: (ConsoleViewContentType..ConsoleViewContentType?) defined in com.intellij.execution.ui.ConsoleViewContentType[JavaPropertyDescriptor]
-
-'ReplIcons' @ [95:65] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
 
 'SYSTEM_HELP' @ [95:75] ==> public final val SYSTEM_HELP: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 
@@ -187,8 +179,6 @@ Inferred types:
 
 'command' @ [99:27] ==> value-parameter command: String defined in org.jetbrains.kotlin.console.ReplOutputProcessor.printUserOutput[ValueParameterDescriptorImpl]
 
-'ReplColors' @ [99:36] ==> public object ReplColors defined in org.jetbrains.kotlin.console in file ReplColors.kt[FakeCallableDescriptorForObject]
-
 'USER_OUTPUT_CONTENT_TYPE' @ [99:47] ==> public final val USER_OUTPUT_CONTENT_TYPE: ConsoleViewContentType defined in org.jetbrains.kotlin.console.ReplColors[PropertyDescriptorImpl]
 
 'runWriteCommandAction' @ [102:72] ==> public final fun runWriteCommandAction(p0: (Project..Project?), @NotNull p1: () -> Unit): Unit defined in com.intellij.openapi.command.WriteCommandAction[SamAdapterFunctionDescriptor]
@@ -200,8 +190,6 @@ Inferred types:
 'result' @ [103:21] ==> value-parameter result: String defined in org.jetbrains.kotlin.console.ReplOutputProcessor.printResultWithGutterIcon[ValueParameterDescriptorImpl]
 
 'NORMAL_OUTPUT' @ [103:52] ==> public final val NORMAL_OUTPUT: (ConsoleViewContentType..ConsoleViewContentType?) defined in com.intellij.execution.ui.ConsoleViewContentType[JavaPropertyDescriptor]
-
-'ReplIcons' @ [103:67] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
 
 'RESULT' @ [103:77] ==> public final val RESULT: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 
@@ -217,7 +205,7 @@ Inferred types:
 
 'lastUnprocessedEntry' @ [108:58] ==> public final fun lastUnprocessedEntry(): CommandHistory.Entry? defined in org.jetbrains.kotlin.console.CommandHistory[SimpleFunctionDescriptorImpl]
 
-'logError' @ [108:113] ==> public fun logError(cl: Class<*>, message: String): Unit defined in org.jetbrains.kotlin.console.actions[SimpleFunctionDescriptorImpl]
+'logError' @ [108:113] ==> public fun logError(cl: Class<*>, message: String): Unit defined in org.jetbrains.kotlin.console.actions in file RunExecuteActions.kt[SimpleFunctionDescriptorImpl]
 
 'ReplOutputProcessor' @ [109:17] ==> public constructor ReplOutputProcessor(runner: KotlinConsoleRunner) defined in org.jetbrains.kotlin.console.ReplOutputProcessor[ClassConstructorDescriptorImpl]
 
@@ -430,8 +418,6 @@ Inferred types:
 
 'ERROR_OUTPUT' @ [145:55] ==> public final val ERROR_OUTPUT: (ConsoleViewContentType..ConsoleViewContentType?) defined in com.intellij.execution.ui.ConsoleViewContentType[JavaPropertyDescriptor]
 
-'ReplIcons' @ [145:69] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
-
 'RUNTIME_EXCEPTION' @ [145:79] ==> public final val RUNTIME_EXCEPTION: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 
 'runWriteCommandAction' @ [148:83] ==> public final fun runWriteCommandAction(p0: (Project..Project?), @NotNull p1: () -> Unit): Unit defined in com.intellij.openapi.command.WriteCommandAction[SamAdapterFunctionDescriptor]
@@ -444,17 +430,15 @@ Inferred types:
 
 'ERROR_OUTPUT' @ [150:56] ==> public final val ERROR_OUTPUT: (ConsoleViewContentType..ConsoleViewContentType?) defined in com.intellij.execution.ui.ConsoleViewContentType[JavaPropertyDescriptor]
 
-'ReplIcons' @ [150:70] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
-
 'RUNTIME_EXCEPTION' @ [150:80] ==> public final val RUNTIME_EXCEPTION: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 
-'logError' @ [151:9] ==> public fun logError(cl: Class<*>, message: String): Unit defined in org.jetbrains.kotlin.console.actions[SimpleFunctionDescriptorImpl]
+'logError' @ [151:9] ==> public fun logError(cl: Class<*>, message: String): Unit defined in org.jetbrains.kotlin.console.actions in file RunExecuteActions.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [151:18] ==> <this> defined in org.jetbrains.kotlin.console.ReplOutputProcessor[LazyClassReceiverParameterDescriptor]
 
 'java' @ [151:30] ==> public val <T> KClass<out ReplOutputProcessor>.java: Class<out ReplOutputProcessor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ReplOutputProcessor
+    <T> -> Captured(out ReplOutputProcessor)
 
 'internalErrorText' @ [151:36] ==> value-parameter internalErrorText: String defined in org.jetbrains.kotlin.console.ReplOutputProcessor.printInternalErrorMessage[ValueParameterDescriptorImpl]
 

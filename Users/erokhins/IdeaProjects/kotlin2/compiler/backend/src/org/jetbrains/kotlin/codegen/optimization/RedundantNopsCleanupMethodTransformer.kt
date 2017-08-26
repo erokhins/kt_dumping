@@ -87,7 +87,7 @@ Inferred types:
 
 'insn' @ [70:38] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.RedundantNopsCleanupMethodTransformer.recordNopsRequiredForDebugger[LocalVariableDescriptor]
 
-'findNextOrNull' @ [70:43] ==> public inline fun AbstractInsnNode.findNextOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'findNextOrNull' @ [70:43] ==> public inline fun AbstractInsnNode.findNextOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [70:60] ==> value-parameter it: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.RedundantNopsCleanupMethodTransformer.recordNopsRequiredForDebugger.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -206,7 +206,7 @@ Inferred types:
 
 'start' @ [97:27] ==> public final var start: (LabelNode..LabelNode?) defined in org.jetbrains.org.objectweb.asm.tree.TryCatchBlockNode[JavaPropertyDescriptor]
 
-'findNextOrNull' @ [97:33] ==> public inline fun AbstractInsnNode.findNextOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'findNextOrNull' @ [97:33] ==> public inline fun AbstractInsnNode.findNextOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [97:50] ==> value-parameter it: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.RedundantNopsCleanupMethodTransformer.recordNopsRequiredForTryCatchBlocks.<anonymous>[ValueParameterDescriptorImpl]
 

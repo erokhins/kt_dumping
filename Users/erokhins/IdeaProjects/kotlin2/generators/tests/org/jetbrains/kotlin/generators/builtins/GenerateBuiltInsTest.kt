@@ -1,6 +1,6 @@
 'UsefulTestCase' @ [27:30] ==> public constructor UsefulTestCase() defined in com.intellij.testFramework.UsefulTestCase[JavaClassConstructorDescriptor]
 
-'generateBuiltIns' @ [29:9] ==> public fun generateBuiltIns(generate: (File, (PrintWriter) -> BuiltInsSourceGenerator) -> Unit): Unit defined in org.jetbrains.kotlin.generators.builtins.generateBuiltIns[SimpleFunctionDescriptorImpl]
+'generateBuiltIns' @ [29:9] ==> public fun generateBuiltIns(generate: (File, (PrintWriter) -> BuiltInsSourceGenerator) -> Unit): Unit defined in org.jetbrains.kotlin.generators.builtins.generateBuiltIns in file generateBuiltIns.kt[SimpleFunctionDescriptorImpl]
 
 'StringWriter' @ [30:22] ==> public constructor StringWriter() defined in java.io.StringWriter[JavaClassConstructorDescriptor]
 

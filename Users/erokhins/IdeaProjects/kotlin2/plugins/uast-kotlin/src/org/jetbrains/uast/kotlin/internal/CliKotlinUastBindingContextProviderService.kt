@@ -1,8 +1,6 @@
 'getExtensions' @ [20:17] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(AnalysisHandlerExtension..AnalysisHandlerExtension?)>): (Array<(AnalysisHandlerExtension..AnalysisHandlerExtension?)>..Array<out (AnalysisHandlerExtension..AnalysisHandlerExtension?)>) defined in com.intellij.openapi.project.Project[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AnalysisHandlerExtension
-
-'AnalysisHandlerExtension' @ [20:31] ==> public companion object : ProjectExtensionDescriptor<AnalysisHandlerExtension> defined in org.jetbrains.kotlin.resolve.jvm.extensions.AnalysisHandlerExtension[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.jvm.extensions.AnalysisHandlerExtension..org.jetbrains.kotlin.resolve.jvm.extensions.AnalysisHandlerExtension?)
 
 'extensionPointName' @ [20:56] ==> public final val extensionPointName: ExtensionPointName<AnalysisHandlerExtension> defined in org.jetbrains.kotlin.resolve.jvm.extensions.AnalysisHandlerExtension.Companion[DeserializedPropertyDescriptor]
 

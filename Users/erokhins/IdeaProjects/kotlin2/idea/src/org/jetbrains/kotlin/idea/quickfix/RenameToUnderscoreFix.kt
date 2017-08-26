@@ -90,8 +90,6 @@ Inferred types:
 
 'supportsFeature' @ [54:54] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [54:70] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'SingleUnderscoreForParameterName' @ [54:86] ==> enum entry SingleUnderscoreForParameterName defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'RenameToUnderscoreFix' @ [58:20] ==> public constructor RenameToUnderscoreFix(element: KtCallableDeclaration) defined in org.jetbrains.kotlin.idea.quickfix.RenameToUnderscoreFix[ClassConstructorDescriptorImpl]

@@ -4,12 +4,14 @@
 Inferred types:
     <T> -> File
 
+'isJavaFile' @ [44:22] ==> public fun File.isJavaFile(): Boolean defined in org.jetbrains.kotlin.incremental in file fileUtils.kt[SimpleFunctionDescriptorImpl]
+
 'mapNotNull' @ [44:34] ==> public inline fun <T, R : Any> Iterable<File>.mapNotNull(transform: (File) -> File?): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
     <R : Any> -> File
 
-'findSrcDirRoot' @ [44:47] ==> private fun findSrcDirRoot(file: File, roots: Iterable<File>): File? defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'findSrcDirRoot' @ [44:47] ==> private fun findSrcDirRoot(file: File, roots: Iterable<File>): File? defined in org.jetbrains.kotlin.incremental in file buildUtil.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [44:62] ==> value-parameter it: File defined in org.jetbrains.kotlin.incremental.javaSourceRoots.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -67,8 +69,6 @@ Inferred types:
 Inferred types:
     <T> -> Builder
     <R> -> Services
-
-'Services' @ [80:10] ==> public companion object defined in org.jetbrains.kotlin.config.Services[FakeCallableDescriptorForObject]
 
 'Builder' @ [80:19] ==> public constructor Builder() defined in org.jetbrains.kotlin.config.Services.Builder[DeserializedClassConstructorDescriptor]
 
@@ -255,7 +255,7 @@ Inferred types:
 
 'outputFile' @ [135:27] ==> public final val outputFile: File defined in org.jetbrains.kotlin.build.GeneratedFile[PropertyDescriptorImpl]
 
-'isModuleMappingFile' @ [135:38] ==> public fun File.isModuleMappingFile(): Boolean defined in org.jetbrains.kotlin.build[SimpleFunctionDescriptorImpl]
+'isModuleMappingFile' @ [135:38] ==> public fun File.isModuleMappingFile(): Boolean defined in org.jetbrains.kotlin.build in file generatedFiles.kt[SimpleFunctionDescriptorImpl]
 
 'changesInfo' @ [135:63] ==> var changesInfo: CompilationResult defined in org.jetbrains.kotlin.incremental.updateIncrementalCaches[LocalVariableDescriptor]
 
@@ -301,7 +301,7 @@ Inferred types:
 
 'java' @ [154:147] ==> public val <T> KClass<out LookupTracker>.java: Class<out LookupTracker> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> LookupTracker
+    <T> -> Captured(out LookupTracker)
 
 'removeLookupsFrom' @ [156:5] ==> @Synchronized public final fun removeLookupsFrom(files: Sequence<File>): Unit defined in org.jetbrains.kotlin.incremental.LookupStorage[SimpleFunctionDescriptorImpl]
 
@@ -643,6 +643,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [236:61] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'filter' @ [236:67] ==> public inline fun <T> Iterable<File>.filter(predicate: (File) -> Boolean): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
@@ -735,7 +737,7 @@ Inferred types:
 
 'LinkedList' @ [272:17] ==> public constructor LinkedList<E : (Any..Any?)>(p0: (MutableCollection<out (FqName..FqName?)>..Collection<(FqName..FqName?)>?)) defined in java.util.LinkedList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> FqName
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
 
 'listOf' @ [272:28] ==> public fun <T> listOf(element: FqName): List<FqName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -747,13 +749,13 @@ Inferred types:
 Inferred types:
     <T> -> FqName
 
-'types' @ [275:12] ==> val types: LinkedList<FqName> defined in org.jetbrains.kotlin.incremental.withSubtypes[LocalVariableDescriptor]
+'types' @ [275:12] ==> val types: LinkedList<(FqName..FqName?)> defined in org.jetbrains.kotlin.incremental.withSubtypes[LocalVariableDescriptor]
 
-'isNotEmpty' @ [275:18] ==> @InlineOnly public inline fun <T> Collection<FqName>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'isNotEmpty' @ [275:18] ==> @InlineOnly public inline fun <T> Collection<(FqName..FqName?)>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> FqName
+    <T> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
 
-'types' @ [276:31] ==> val types: LinkedList<FqName> defined in org.jetbrains.kotlin.incremental.withSubtypes[LocalVariableDescriptor]
+'types' @ [276:31] ==> val types: LinkedList<(FqName..FqName?)> defined in org.jetbrains.kotlin.incremental.withSubtypes[LocalVariableDescriptor]
 
 'pollFirst' @ [276:37] ==> public open fun pollFirst(): (FqName..FqName?) defined in java.util.LinkedList[JavaMethodDescriptor]
 
@@ -786,7 +788,7 @@ Inferred types:
 Inferred types:
     <T> -> FqName
 
-'types' @ [281:26] ==> val types: LinkedList<FqName> defined in org.jetbrains.kotlin.incremental.withSubtypes[LocalVariableDescriptor]
+'types' @ [281:26] ==> val types: LinkedList<(FqName..FqName?)> defined in org.jetbrains.kotlin.incremental.withSubtypes[LocalVariableDescriptor]
 
 'addLast' @ [281:32] ==> public open fun addLast(p0: (FqName..FqName?)): Unit defined in java.util.LinkedList[JavaMethodDescriptor]
 

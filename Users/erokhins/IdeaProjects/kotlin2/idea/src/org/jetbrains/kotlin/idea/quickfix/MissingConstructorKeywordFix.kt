@@ -18,3 +18,5 @@ Inferred types:
 Inferred types:
     <reified T : PsiElement> -> KtPrimaryConstructor
 
+'MissingConstructorKeywordFix' @ [38:66] ==> public constructor MissingConstructorKeywordFix(element: KtPrimaryConstructor) defined in org.jetbrains.kotlin.idea.quickfix.MissingConstructorKeywordFix[ClassConstructorDescriptorImpl]
+

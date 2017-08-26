@@ -185,7 +185,7 @@ Inferred types:
 
 'call' @ [128:67] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'samConstructorCallArgumentMap' @ [128:73] ==> value-parameter samConstructorCallArgumentMap: Map<KtValueArgument, KtCallExpression> defined in org.jetbrains.kotlin.idea.inspections.RedundantSamConstructorInspection.Companion.canBeReplaced[ValueParameterDescriptorImpl]
 
@@ -231,7 +231,7 @@ Inferred types:
 
 'resolutionResults' @ [137:87] ==> val resolutionResults: OverloadResolutionResults<(FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.idea.inspections.RedundantSamConstructorInspection.Companion.canBeReplaced[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [137:105] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [137:105] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -243,7 +243,7 @@ Inferred types:
 
 'resultingDescriptor' @ [138:74] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'original' @ [138:94] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
@@ -372,7 +372,7 @@ Inferred types:
 
 'resultingDescriptor' @ [170:68] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'original' @ [170:89] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
@@ -420,7 +420,7 @@ Inferred types:
 
 'resultingDescriptor' @ [182:67] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'original' @ [182:87] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
@@ -504,7 +504,7 @@ Inferred types:
 
 'resultingDescriptor' @ [200:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'name' @ [200:62] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 

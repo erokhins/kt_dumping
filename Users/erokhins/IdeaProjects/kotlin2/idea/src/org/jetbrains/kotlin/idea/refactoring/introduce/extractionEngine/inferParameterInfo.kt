@@ -71,7 +71,7 @@ Inferred types:
 
 'extensionReceiver' @ [92:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'if (extensionReceiver == null || isSynthesizedInvoke(refInfo.resolveResult.descriptor)) {
             resolvedCall?.dispatchReceiver
@@ -96,7 +96,7 @@ Inferred types:
 
 'dispatchReceiver' @ [94:27] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'extensionReceiver' @ [97:13] ==> val extensionReceiver: ReceiverValue? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo[LocalVariableDescriptor]
 
@@ -110,7 +110,7 @@ Inferred types:
 
 'dispatchReceiver' @ [101:57] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'declarationDescriptor' @ [101:97] ==> public abstract val declarationDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.receivers.ImplicitReceiver[DeserializedPropertyDescriptor]
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'extensionReceiver' @ [104:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'isObject' @ [105:32] ==> public open fun isObject(@Nullable p0: DeclarationDescriptor?): Boolean defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
@@ -152,7 +152,7 @@ Inferred types:
 
 'shouldSkipPrimaryReceiver' @ [111:22] ==> public final val shouldSkipPrimaryReceiver: Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ResolvedReferenceInfo[PropertyDescriptorImpl]
 
-'extractReceiver' @ [112:13] ==> private fun ExtractionData.extractReceiver(receiverToExtract: ReceiverValue?, info: ParametersInfo, targetScope: LexicalScope, refInfo: ResolvedReferenceInfo, extractedDescriptorToParameter: HashMap<DeclarationDescriptor, MutableParameter>, pseudocode: Pseudocode, bindingContext: BindingContext, isMemberExtension: Boolean): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'extractReceiver' @ [112:13] ==> private fun ExtractionData.extractReceiver(receiverToExtract: ReceiverValue?, info: ParametersInfo, targetScope: LexicalScope, refInfo: ResolvedReferenceInfo, extractedDescriptorToParameter: HashMap<DeclarationDescriptor, MutableParameter>, pseudocode: Pseudocode, bindingContext: BindingContext, isMemberExtension: Boolean): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file inferParameterInfo.kt[SimpleFunctionDescriptorImpl]
 
 'receiverToExtract' @ [112:29] ==> val receiverToExtract: ReceiverValue? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo[LocalVariableDescriptor]
 
@@ -174,13 +174,13 @@ Inferred types:
 
 'twoReceivers' @ [115:38] ==> val twoReceivers: Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo[LocalVariableDescriptor]
 
-'extractReceiver' @ [116:13] ==> private fun ExtractionData.extractReceiver(receiverToExtract: ReceiverValue?, info: ParametersInfo, targetScope: LexicalScope, refInfo: ResolvedReferenceInfo, extractedDescriptorToParameter: HashMap<DeclarationDescriptor, MutableParameter>, pseudocode: Pseudocode, bindingContext: BindingContext, isMemberExtension: Boolean): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'extractReceiver' @ [116:13] ==> private fun ExtractionData.extractReceiver(receiverToExtract: ReceiverValue?, info: ParametersInfo, targetScope: LexicalScope, refInfo: ResolvedReferenceInfo, extractedDescriptorToParameter: HashMap<DeclarationDescriptor, MutableParameter>, pseudocode: Pseudocode, bindingContext: BindingContext, isMemberExtension: Boolean): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file inferParameterInfo.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [116:29] ==> val resolvedCall: ResolvedCall<*>? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo[LocalVariableDescriptor]
 
 'dispatchReceiver' @ [116:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'info' @ [116:62] ==> val info: ParametersInfo defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo[LocalVariableDescriptor]
 
@@ -232,7 +232,7 @@ Inferred types:
 
 'allowSpecialClassNames' @ [128:43] ==> public final val allowSpecialClassNames: Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionOptions[PropertyDescriptorImpl]
 
-'processTypeIfExtractable' @ [129:18] ==> internal fun KotlinType.processTypeIfExtractable(typeParameters: MutableSet<TypeParameter>, nonDenotableTypes: MutableSet<KotlinType>, options: ExtractionOptions, targetScope: LexicalScope?, processTypeArguments: Boolean = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'processTypeIfExtractable' @ [129:18] ==> internal fun KotlinType.processTypeIfExtractable(typeParameters: MutableSet<TypeParameter>, nonDenotableTypes: MutableSet<KotlinType>, options: ExtractionOptions, targetScope: LexicalScope?, processTypeArguments: Boolean = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'info' @ [129:43] ==> val info: ParametersInfo defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo[LocalVariableDescriptor]
 
@@ -283,8 +283,6 @@ Inferred types:
 
 'modifiedVarDescriptors' @ [135:56] ==> value-parameter modifiedVarDescriptors: Set<VariableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo[ValueParameterDescriptorImpl]
 
-'KotlinNameSuggester' @ [135:80] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
-
 'suggestNameByName' @ [135:100] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
 'name' @ [135:118] ==> public open val name: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.MutableParameter[PropertyDescriptorImpl]
@@ -315,13 +313,13 @@ Inferred types:
 
 'it' @ [140:68] ==> value-parameter it: TypeParameter defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo.<anonymous>[ValueParameterDescriptorImpl]
 
-'collectReferencedTypes' @ [140:71] ==> public fun TypeParameter.collectReferencedTypes(bindingContext: BindingContext): List<KotlinType> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'collectReferencedTypes' @ [140:71] ==> public fun TypeParameter.collectReferencedTypes(bindingContext: BindingContext): List<KotlinType> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [140:94] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo[ValueParameterDescriptorImpl]
 
 'typeToCheck' @ [141:9] ==> val typeToCheck: KotlinType defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo[LocalVariableDescriptor]
 
-'processTypeIfExtractable' @ [141:21] ==> internal fun KotlinType.processTypeIfExtractable(typeParameters: MutableSet<TypeParameter>, nonDenotableTypes: MutableSet<KotlinType>, options: ExtractionOptions, targetScope: LexicalScope?, processTypeArguments: Boolean = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'processTypeIfExtractable' @ [141:21] ==> internal fun KotlinType.processTypeIfExtractable(typeParameters: MutableSet<TypeParameter>, nonDenotableTypes: MutableSet<KotlinType>, options: ExtractionOptions, targetScope: LexicalScope?, processTypeArguments: Boolean = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'info' @ [141:46] ==> val info: ParametersInfo defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.inferParametersInfo[LocalVariableDescriptor]
 
@@ -572,7 +570,7 @@ Inferred types:
 
 'defaultType' @ [187:45] ==> public final val ClassifierDescriptor.defaultType: SimpleType[MyPropertyDescriptor]
 
-'processTypeIfExtractable' @ [187:57] ==> internal fun KotlinType.processTypeIfExtractable(typeParameters: MutableSet<TypeParameter>, nonDenotableTypes: MutableSet<KotlinType>, options: ExtractionOptions, targetScope: LexicalScope?, processTypeArguments: Boolean = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'processTypeIfExtractable' @ [187:57] ==> internal fun KotlinType.processTypeIfExtractable(typeParameters: MutableSet<TypeParameter>, nonDenotableTypes: MutableSet<KotlinType>, options: ExtractionOptions, targetScope: LexicalScope?, processTypeArguments: Boolean = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'info' @ [188:17] ==> value-parameter info: ParametersInfo defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.extractReceiver[ValueParameterDescriptorImpl]
 
@@ -751,9 +749,9 @@ Inferred types:
 
 'smartCast' @ [223:54] ==> public final val smartCast: KotlinType? defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ResolvedReferenceInfo[PropertyDescriptorImpl]
 
-'?:' @ [224:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtExpression?, right: KtExpression): KtExpression[SimpleFunctionDescriptorImpl]
+'?:' @ [224:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtExpression?, right: KtExpression?): KtExpression?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtExpression
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtExpression?
 
 'originalRef' @ [224:26] ==> val originalRef: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.extractReceiver[LocalVariableDescriptor]
 
@@ -1000,7 +998,7 @@ Inferred types:
 
 'call' @ [270:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [270:55] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -1178,8 +1176,6 @@ Inferred types:
 
 'builtIns' @ [309:28] ==> val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.suggestParameterType[LocalVariableDescriptor]
 
-'Annotations' @ [310:28] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [310:40] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'originalDescriptor' @ [311:28] ==> value-parameter originalDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.suggestParameterType[ValueParameterDescriptorImpl]
@@ -1287,15 +1283,13 @@ Inferred types:
 
 'call' @ [328:94] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callElement' @ [328:99] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
 'dataFlowInfo' @ [329:44] ==> val dataFlowInfo: DataFlowInfo defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.suggestParameterType[LocalVariableDescriptor]
 
 'getCollectedTypes' @ [329:57] ==> public abstract fun getCollectedTypes(key: DataFlowValue): Set<KotlinType> defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[DeserializedSimpleFunctionDescriptor]
-
-'DataFlowValueFactory' @ [329:75] ==> public object DataFlowValueFactory defined in org.jetbrains.kotlin.resolve.calls.smartcasts[FakeCallableDescriptorForObject]
 
 'createDataFlowValueForStableReceiver' @ [329:96] ==> @JvmStatic public final fun createDataFlowValueForStableReceiver(receiver: ReceiverValue): DataFlowValue defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory[DeserializedSimpleFunctionDescriptor]
 

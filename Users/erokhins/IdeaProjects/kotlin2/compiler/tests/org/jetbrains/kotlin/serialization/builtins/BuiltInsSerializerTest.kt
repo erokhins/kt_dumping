@@ -24,8 +24,6 @@ Inferred types:
 
 'createEmptyModule' @ [41:38] ==> @NotNull public open fun createEmptyModule(@NotNull p0: String, @NotNull p1: KotlinBuiltIns): ModuleDescriptorImpl defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 
-'DefaultBuiltIns' @ [41:68] ==> public companion object defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns[FakeCallableDescriptorForObject]
-
 'Instance' @ [41:84] ==> @JvmStatic public final val Instance: DefaultBuiltIns defined in org.jetbrains.kotlin.builtins.DefaultBuiltIns.Companion[DeserializedPropertyDescriptor]
 
 'BuiltInsLoaderImpl' @ [43:39] ==> public constructor BuiltInsLoaderImpl() defined in org.jetbrains.kotlin.builtins.BuiltInsLoaderImpl[DeserializedClassConstructorDescriptor]

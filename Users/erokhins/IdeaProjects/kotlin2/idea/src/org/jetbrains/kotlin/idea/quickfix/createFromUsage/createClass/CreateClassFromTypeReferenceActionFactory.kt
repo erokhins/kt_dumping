@@ -4,7 +4,7 @@ Inferred types:
 
 'getParentElementOfType' @ [35:29] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtUserType..KtUserType?)>..Class<(KtUserType..KtUserType?)>?)): KtUserType? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtUserType
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtUserType..org.jetbrains.kotlin.psi.KtUserType?)
 
 'diagnostic' @ [35:52] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromTypeReferenceActionFactory.getElementOfInterest[ValueParameterDescriptorImpl]
 
@@ -22,7 +22,7 @@ Inferred types:
 
 'emptyList' @ [40:80] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ClassKind..ClassKind?)>..List<(ClassKind..ClassKind?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClassKind
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind..org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind?)
 
 'typeRefParent' @ [42:33] ==> val typeRefParent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromTypeReferenceActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
@@ -85,7 +85,7 @@ Inferred types:
 
 'singletonList' @ [51:46] ==> public open fun <T : (Any..Any?)> singletonList(p0: (ClassKind..ClassKind?)): (MutableList<(ClassKind..ClassKind?)>..List<(ClassKind..ClassKind?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClassKind
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind..org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind?)
 
 'INTERFACE' @ [51:70] ==> enum entry INTERFACE defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind[FakeCallableDescriptorForObject]
 
@@ -177,7 +177,7 @@ Inferred types:
 
 'candidateDescriptor' @ [71:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'typeParameters' @ [71:72] ==> public final val CallableDescriptor.typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)>[MyPropertyDescriptor]
 
@@ -236,7 +236,7 @@ Inferred types:
 
 'it' @ [82:93] ==> value-parameter it: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromTypeReferenceActionFactory.extractFixData.<anonymous>[ValueParameterDescriptorImpl]
 
-'getTargetParentsByQualifier' @ [84:29] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTargetParentsByQualifier' @ [84:29] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [84:57] ==> value-parameter element: KtUserType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromTypeReferenceActionFactory.extractFixData[ValueParameterDescriptorImpl]
 

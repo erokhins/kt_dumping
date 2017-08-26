@@ -161,8 +161,6 @@ Inferred types:
 
 'simpleType' @ [102:48] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean, memberScope: MemberScope): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
-'Annotations' @ [102:59] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [102:71] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
 'typeConstructor' @ [102:78] ==> private final val typeConstructor: IntegerValueTypeConstructor defined in org.jetbrains.kotlin.resolve.constants.IntegerValueTypeConstant[PropertyDescriptorImpl]

@@ -92,8 +92,6 @@ Inferred types:
 
 'DataFlowValue' @ [91:51] ==> public constructor DataFlowValue(identifierInfo: IdentifierInfo, type: KotlinType, immanentNullability: Nullability = ...) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue[ClassConstructorDescriptorImpl]
 
-'IdentifierInfo' @ [91:65] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
-
 'NULL' @ [91:80] ==> public object NULL : IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
 'builtIns' @ [91:86] ==> value-parameter builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue.Companion.nullValue[ValueParameterDescriptorImpl]
@@ -105,8 +103,6 @@ Inferred types:
 'JvmField' @ [93:9] ==> public constructor JvmField() defined in kotlin.jvm.JvmField[DeserializedClassConstructorDescriptor]
 
 'DataFlowValue' @ [94:21] ==> public constructor DataFlowValue(identifierInfo: IdentifierInfo, type: KotlinType, immanentNullability: Nullability = ...) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue[ClassConstructorDescriptorImpl]
-
-'IdentifierInfo' @ [94:35] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 
 'ERROR' @ [94:50] ==> public object ERROR : IdentifierInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.IdentifierInfo[FakeCallableDescriptorForObject]
 

@@ -43,8 +43,6 @@ Inferred types:
 
 'modality' @ [45:30] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [45:42] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [45:51] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'makeAbstract' @ [45:63] ==> value-parameter makeAbstract: Boolean defined in org.jetbrains.kotlin.idea.refactoring.pushDown.moveCallableMemberToClass[ValueParameterDescriptorImpl]
@@ -106,8 +104,6 @@ Inferred types:
 
 'modality' @ [57:87] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [57:99] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [57:108] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'addModifier' @ [58:17] ==> public abstract fun addModifier(@NotNull p0: KtModifierKeywordToken): Unit defined in org.jetbrains.kotlin.psi.KtNamedDeclaration[JavaMethodDescriptor]
@@ -117,8 +113,6 @@ Inferred types:
 'memberDescriptor' @ [61:13] ==> value-parameter memberDescriptor: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.refactoring.pushDown.moveCallableMemberToClass[ValueParameterDescriptorImpl]
 
 'modality' @ [61:30] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [61:42] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [61:51] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

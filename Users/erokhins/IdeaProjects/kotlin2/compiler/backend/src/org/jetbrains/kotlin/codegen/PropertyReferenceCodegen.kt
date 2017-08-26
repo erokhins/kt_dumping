@@ -75,14 +75,14 @@ Inferred types:
 
 'get' @ [74:42] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(ClassDescriptor..ClassDescriptor?), (MutableClosure..MutableClosure?)>..ReadOnlySlice<(ClassDescriptor..ClassDescriptor?), (MutableClosure..MutableClosure?)>?), p1: (ClassDescriptor..ClassDescriptor?)): MutableClosure? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassDescriptor
-    <V : (Any..Any?)> -> MutableClosure
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.codegen.binding.MutableClosure..org.jetbrains.kotlin.codegen.binding.MutableClosure?)
 
 'CLOSURE' @ [74:61] ==> public final val CLOSURE: (WritableSlice<(ClassDescriptor..ClassDescriptor?), (MutableClosure..MutableClosure?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (MutableClosure..MutableClosure?)>?) defined in org.jetbrains.kotlin.codegen.binding.CodegenBinding[JavaPropertyDescriptor]
 
 'classDescriptor' @ [74:70] ==> private final val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen[PropertyDescriptorImpl]
 
-'apply' @ [74:89] ==> @InlineOnly public inline fun <T> MutableClosure.apply(block: MutableClosure.() -> Unit): MutableClosure defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [74:89] ==> @InlineOnly public inline fun <T> MutableClosure.apply(block: (MutableClosure).() -> Unit): MutableClosure defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> MutableClosure
 
@@ -270,7 +270,7 @@ Inferred types:
 
 'isForBoundCallableReference' @ [130:60] ==> public fun CalculatedClosure.isForBoundCallableReference(): Boolean defined in org.jetbrains.kotlin.codegen in file callableReferenceUtil.kt[SimpleFunctionDescriptorImpl]
 
-'generateClosureFieldsInitializationFromParameters' @ [131:40] ==> public fun InstructionAdapter.generateClosureFieldsInitializationFromParameters(closure: CalculatedClosure, args: List<FieldInfo>): Pair<Int, Type>? defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'generateClosureFieldsInitializationFromParameters' @ [131:40] ==> public fun InstructionAdapter.generateClosureFieldsInitializationFromParameters(closure: CalculatedClosure, args: List<FieldInfo>): Pair<Int, Type>? defined in org.jetbrains.kotlin.codegen in file callableReferenceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'closure' @ [131:90] ==> private final val closure: MutableClosure defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen[PropertyDescriptorImpl]
 
@@ -346,8 +346,6 @@ Inferred types:
 
 'generateMethod' @ [150:25] ==> public open fun generateMethod(@NotNull origin: JvmDeclarationOrigin, @NotNull descriptor: FunctionDescriptor, @NotNull strategy: FunctionGenerationStrategy): Unit defined in org.jetbrains.kotlin.codegen.FunctionCodegen[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [150:40] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [150:61] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'getImpl' @ [150:72] ==> val getImpl: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen.generateAccessors[LocalVariableDescriptor]
@@ -384,8 +382,6 @@ Inferred types:
 
 'getContributedFunctions' @ [153:80] ==> public abstract fun getContributedFunctions(name: Name, location: LookupLocation): Collection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'OperatorNameConventions' @ [153:104] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'SET' @ [153:128] ==> @field:JvmField public final val SET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'FROM_BACKEND' @ [153:150] ==> enum entry FROM_BACKEND defined in org.jetbrains.kotlin.incremental.components.NoLookupLocation[FakeCallableDescriptorForObject]
@@ -403,8 +399,6 @@ Inferred types:
 'functionCodegen' @ [155:9] ==> public final val functionCodegen: (FunctionCodegen..FunctionCodegen?) defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen[JavaPropertyDescriptor]
 
 'generateMethod' @ [155:25] ==> public open fun generateMethod(@NotNull origin: JvmDeclarationOrigin, @NotNull descriptor: FunctionDescriptor, @NotNull strategy: FunctionGenerationStrategy): Unit defined in org.jetbrains.kotlin.codegen.FunctionCodegen[JavaMethodDescriptor]
-
-'JvmDeclarationOrigin' @ [155:40] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
 
 'NO_ORIGIN' @ [155:61] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
@@ -426,7 +420,7 @@ Inferred types:
 
 'v' @ [161:9] ==> public final val v: (ClassBuilder..ClassBuilder?) defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen[JavaPropertyDescriptor]
 
-'generateMethod' @ [161:11] ==> public fun ClassBuilder.generateMethod(debugString: String, access: Int, method: Method, element: PsiElement?, origin: JvmDeclarationOrigin, state: GenerationState, generate: InstructionAdapter.() -> Unit): Unit defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'generateMethod' @ [161:11] ==> public fun ClassBuilder.generateMethod(debugString: String, access: Int, method: Method, element: PsiElement?, origin: JvmDeclarationOrigin, state: GenerationState, generate: InstructionAdapter.() -> Unit): Unit defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'debugString' @ [161:26] ==> value-parameter debugString: String defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen.generateMethod[ValueParameterDescriptorImpl]
 
@@ -435,8 +429,6 @@ Inferred types:
 'method' @ [161:47] ==> value-parameter method: Method defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen.generateMethod[ValueParameterDescriptorImpl]
 
 'element' @ [161:55] ==> protected/*protected and package*/ final val element: (KtElement..KtElement?) defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen[JavaPropertyDescriptor]
-
-'JvmDeclarationOrigin' @ [161:64] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
 
 'NO_ORIGIN' @ [161:85] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
@@ -558,8 +550,8 @@ Inferred types:
 
 'get' @ [199:52] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Type..Type?)>..ReadOnlySlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Type..Type?)>?), p1: (VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)): Type? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptorWithAccessors
-    <V : (Any..Any?)> -> Type
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors..org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors?)
+    <V : (Any..Any?)> -> (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)
 
 'DELEGATED_PROPERTY_METADATA_OWNER' @ [199:71] ==> public final val DELEGATED_PROPERTY_METADATA_OWNER: (WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Type..Type?)>..WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Type..Type?)>?) defined in org.jetbrains.kotlin.codegen.binding.CodegenBinding[JavaPropertyDescriptor]
 
@@ -571,8 +563,8 @@ Inferred types:
 
 'get' @ [200:67] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(Type..Type?), (MutableList<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)>..List<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)>?)>..ReadOnlySlice<(Type..Type?), (MutableList<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)>..List<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)>?)>?), p1: (Type..Type?)): (MutableList<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)>?..List<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Type
-    <V : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors..org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors?)>..kotlin.collections.List<(org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors..org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors?)>)
+    <K : (Any..Any?)> -> (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)
+    <V : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors..org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors?)>..kotlin.collections.List<(org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors..org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors?)>?)
 
 'DELEGATED_PROPERTIES' @ [200:86] ==> public final val DELEGATED_PROPERTIES: (WritableSlice<(Type..Type?), (MutableList<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)>..List<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)>?)>..WritableSlice<(Type..Type?), (MutableList<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)>..List<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)>?)>?) defined in org.jetbrains.kotlin.codegen.binding.CodegenBinding[JavaPropertyDescriptor]
 
@@ -623,8 +615,6 @@ Inferred types:
 'createDefaultGetter' @ [213:39] ==> @NotNull public open fun createDefaultGetter(@NotNull p0: PropertyDescriptor, @NotNull p1: Annotations): PropertyGetterDescriptorImpl defined in org.jetbrains.kotlin.resolve.DescriptorFactory[JavaMethodDescriptor]
 
 'callable' @ [213:59] ==> value-parameter callable: CallableDescriptor defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen.Companion.generateCallableReferenceSignature[ValueParameterDescriptorImpl]
-
-'Annotations' @ [213:91] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [213:103] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -770,8 +760,6 @@ Inferred types:
 
 'classDescriptor' @ [243:50] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen.Companion.createFakeOpenDescriptor[ValueParameterDescriptorImpl]
 
-'Modality' @ [243:67] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'OPEN' @ [243:76] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'getFunction' @ [243:82] ==> value-parameter getFunction: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.PropertyReferenceCodegen.Companion.createFakeOpenDescriptor[ValueParameterDescriptorImpl]
@@ -797,8 +785,6 @@ Inferred types:
 'memberScope' @ [248:129] ==> public abstract val memberScope: MemberScope defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 
 'getContributedFunctions' @ [248:141] ==> public abstract fun getContributedFunctions(name: Name, location: LookupLocation): Collection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
-
-'OperatorNameConventions' @ [248:165] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'GET' @ [248:189] ==> @field:JvmField public final val GET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 

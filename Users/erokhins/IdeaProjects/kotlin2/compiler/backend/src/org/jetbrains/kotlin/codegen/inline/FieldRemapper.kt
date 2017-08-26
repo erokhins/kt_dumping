@@ -88,7 +88,7 @@ Inferred types:
 
 'node' @ [74:13] ==> value-parameter node: MethodNode defined in org.jetbrains.kotlin.codegen.inline.FieldRemapper.foldFieldAccessChainIfNeeded[ValueParameterDescriptorImpl]
 
-'remove' @ [74:18] ==> public fun MethodNode.remove(instructions: Sequence<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'remove' @ [74:18] ==> public fun MethodNode.remove(instructions: Sequence<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'InsnSequence' @ [74:25] ==> public constructor InsnSequence(from: AbstractInsnNode, to: AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.common.InsnSequence[ClassConstructorDescriptorImpl]
 

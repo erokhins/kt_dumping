@@ -6,9 +6,9 @@ Inferred types:
 Inferred types:
     <T> -> KtTypeReference
 
-'lazy' @ [60:35] ==> public fun <T> lazy(initializer: () -> FunctionDescriptor): Lazy<FunctionDescriptor> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [60:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> FunctionDescriptor
+    <T> -> T
 
 'function' @ [60:42] ==> public final val function: KtFunction defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeReceiverToParameterIntention.ConversionData[PropertyDescriptorImpl]
 
@@ -262,7 +262,7 @@ Inferred types:
 
 'text' @ [116:97] ==> public final var ConvertFunctionTypeReceiverToParameterIntention.text: String[MyPropertyDescriptor]
 
-'getAffectedCallables' @ [118:29] ==> public fun getAffectedCallables(project: Project, descriptorsForChange: Collection<CallableDescriptor>): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getAffectedCallables' @ [118:29] ==> public fun getAffectedCallables(project: Project, descriptorsForChange: Collection<CallableDescriptor>): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring in file CallableRefactoring.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [118:50] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeReceiverToParameterIntention.Converter[PropertyDescriptorImpl]
 
@@ -363,7 +363,7 @@ Inferred types:
 
 'project' @ [149:13] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeReceiverToParameterIntention.Converter[PropertyDescriptorImpl]
 
-'checkConflictsInteractively' @ [149:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [149:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [149:49] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeReceiverToParameterIntention.Converter.performRefactoring[LocalVariableDescriptor]
 
@@ -403,7 +403,7 @@ Inferred types:
 
 'element' @ [159:35] ==> public final val <T : KtReferenceExpression> KtSimpleReference<out KtReferenceExpression>.element: (KtReferenceExpression..KtReferenceExpression?)[MyPropertyDescriptor]
 Inferred types:
-    <T : KtReferenceExpression> -> KtReferenceExpression
+    <T : KtReferenceExpression> -> Captured(*)
 
 'getParentOfTypeAndBranch' @ [159:43] ==> public inline fun <reified T : PsiElement> PsiElement.getParentOfTypeAndBranch(strict: Boolean = ..., noinline branch: KtCallElement.() -> PsiElement?): KtCallElement? defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:

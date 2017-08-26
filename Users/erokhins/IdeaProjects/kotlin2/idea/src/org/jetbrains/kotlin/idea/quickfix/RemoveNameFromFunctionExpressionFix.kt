@@ -18,6 +18,8 @@ Inferred types:
 Inferred types:
     <reified T : PsiElement> -> KtNamedFunction
 
+'RemoveNameFromFunctionExpressionFix' @ [39:66] ==> public constructor RemoveNameFromFunctionExpressionFix(element: KtNamedFunction) defined in org.jetbrains.kotlin.idea.quickfix.RemoveNameFromFunctionExpressionFix[ClassConstructorDescriptorImpl]
+
 'function' @ [43:24] ==> value-parameter function: KtNamedFunction defined in org.jetbrains.kotlin.idea.quickfix.RemoveNameFromFunctionExpressionFix.Companion.removeNameFromFunction[ValueParameterDescriptorImpl]
 
 'nameAsName' @ [43:33] ==> public final val KtNamedFunction.nameAsName: Name?[MyPropertyDescriptor]
@@ -46,8 +48,8 @@ Inferred types:
 
 'get' @ [47:56] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (PsiElement..PsiElement?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (PsiElement..PsiElement?)>?), p1: (KtReferenceExpression..KtReferenceExpression?)): PsiElement? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> PsiElement
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'LABEL_TARGET' @ [47:75] ==> public final val LABEL_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (PsiElement..PsiElement?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (PsiElement..PsiElement?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

@@ -61,11 +61,11 @@ Inferred types:
 
 'resolvedCallsAt' @ [39:27] ==> value-parameter resolvedCallsAt: List<Pair<Int, ResolvedCall<*>?>> defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput[ValueParameterDescriptorImpl]
 
-'groupBy' @ [39:43] ==> public inline fun <T, K, V> Iterable<Pair<Int, ResolvedCall<*>?>>.groupBy(keySelector: (Pair<Int, ResolvedCall<*>?>) -> Int, valueTransform: (Pair<Int, ResolvedCall<*>?>) -> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?): Map<Int, List<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'groupBy' @ [39:43] ==> public inline fun <T, K, V> Iterable<Pair<Int, ResolvedCall<*>?>>.groupBy(keySelector: (Pair<Int, ResolvedCall<*>?>) -> Int, valueTransform: (Pair<Int, ResolvedCall<*>?>) -> ResolvedCall<*>?): Map<Int, List<ResolvedCall<*>?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<Int, ResolvedCall<*>?>
     <K> -> Int
-    <V> -> ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?
+    <V> -> ResolvedCall<*>?
 
 'component1' @ [39:55] ==> public final operator fun component1(): Int defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
@@ -91,13 +91,13 @@ Inferred types:
 
 'line' @ [43:26] ==> value-parameter line: String defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'callsByLine' @ [44:17] ==> val callsByLine: Map<Int, List<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?>> defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput[LocalVariableDescriptor]
+'callsByLine' @ [44:17] ==> val callsByLine: Map<Int, List<ResolvedCall<*>?>> defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput[LocalVariableDescriptor]
 
 'lineIndex' @ [44:29] ==> value-parameter lineIndex: Int defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [44:41] ==> @InlineOnly public inline fun <T, R> List<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?>.let(block: (List<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [44:41] ==> @InlineOnly public inline fun <T, R> List<ResolvedCall<*>?>.let(block: (List<ResolvedCall<*>?>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?>
+    <T> -> List<ResolvedCall<*>?>
     <R> -> Unit
 
 'line' @ [45:34] ==> value-parameter line: String defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -106,36 +106,38 @@ Inferred types:
 
 'Char' @ [45:49] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
 
-'calls' @ [46:21] ==> value-parameter calls: List<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?> defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'isWhitespace' @ [45:55] ==> public fun Char.isWhitespace(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'forEach' @ [46:27] ==> @HidesMembers public inline fun <T> Iterable<ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?>.forEach(action: (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'calls' @ [46:21] ==> value-parameter calls: List<ResolvedCall<*>?> defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+
+'forEach' @ [46:27] ==> @HidesMembers public inline fun <T> Iterable<ResolvedCall<*>?>.forEach(action: (ResolvedCall<*>?) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?
+    <T> -> ResolvedCall<*>?
 
 'appendln' @ [47:25] ==> @InlineOnly public inline fun StringBuilder /* = StringBuilder */.appendln(value: String?): StringBuilder /* = StringBuilder */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'indent' @ [47:36] ==> val indent: String defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'resolvedCall' @ [47:47] ==> value-parameter resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>? defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'resolvedCall' @ [47:47] ==> value-parameter resolvedCall: ResolvedCall<*>? defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'status' @ [47:61] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.status: ResolutionStatus[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'appendln' @ [48:25] ==> @InlineOnly public inline fun StringBuilder /* = StringBuilder */.appendln(value: String?): StringBuilder /* = StringBuilder */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'indent' @ [48:36] ==> val indent: String defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'resolvedCall' @ [48:60] ==> value-parameter resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>? defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'resolvedCall' @ [48:60] ==> value-parameter resolvedCall: ResolvedCall<*>? defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'run' @ [48:74] ==> @InlineOnly public inline fun <T, R> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.run(block: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.() -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'run' @ [48:74] ==> @InlineOnly public inline fun <T, R> ResolvedCall<*>.run(block: ResolvedCall<*>.() -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>
+    <T> -> ResolvedCall<*>
     <R> -> String
 
 'resultingDescriptor' @ [48:80] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'original' @ [48:102] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
@@ -145,16 +147,16 @@ Inferred types:
 
 'indent' @ [49:36] ==> val indent: String defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'resolvedCall' @ [49:60] ==> value-parameter resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>? defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'resolvedCall' @ [49:60] ==> value-parameter resolvedCall: ResolvedCall<*>? defined in org.jetbrains.kotlin.resolve.calls.AbstractEnhancedSignaturesResolvedCallsTest.renderOutput.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'run' @ [49:74] ==> @InlineOnly public inline fun <T, R> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.run(block: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.() -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'run' @ [49:74] ==> @InlineOnly public inline fun <T, R> ResolvedCall<*>.run(block: ResolvedCall<*>.() -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>
+    <T> -> ResolvedCall<*>
     <R> -> String
 
 'resultingDescriptor' @ [49:80] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'getText' @ [49:102] ==> internal fun DeclarationDescriptor.getText(): String defined in org.jetbrains.kotlin.resolve.calls in file AbstractResolvedCallsTest.kt[SimpleFunctionDescriptorImpl]
 

@@ -60,7 +60,7 @@ Inferred types:
 
 'copyOfRange' @ [66:48] ==> public open fun <T : (Any..Any?)> copyOfRange(p0: (Array<(IElementType..IElementType?)>..Array<out (IElementType..IElementType?)>?), p1: Int, p2: Int): (Array<(IElementType..IElementType?)>..Array<out (IElementType..IElementType?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IElementType
+    <T : (Any..Any?)> -> (com.intellij.psi.tree.IElementType..com.intellij.psi.tree.IElementType?)
 
 'types' @ [66:60] ==> val types: (Array<(IElementType..IElementType?)>..Array<out (IElementType..IElementType?)>) defined in org.jetbrains.kotlin.idea.formatter.NodeIndentStrategy.PositionStrategy.within[LocalVariableDescriptor]
 
@@ -237,7 +237,7 @@ Inferred types:
 
 'addAll' @ [145:25] ==> @SafeVarargs public open fun <T : (Any..Any?)> addAll(p0: (MutableCollection<in (IElementType..IElementType?)>..MutableCollection<in (IElementType..IElementType?)>?), vararg p1: (IElementType..IElementType?)): Boolean defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IElementType
+    <T : (Any..Any?)> -> (com.intellij.psi.tree.IElementType..com.intellij.psi.tree.IElementType?)
 
 'resultCollection' @ [145:32] ==> value-parameter resultCollection: MutableList<IElementType> defined in org.jetbrains.kotlin.idea.formatter.NodeIndentStrategy.PositionStrategy.fillTypes[ValueParameterDescriptorImpl]
 

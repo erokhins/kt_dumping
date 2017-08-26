@@ -76,7 +76,7 @@ Inferred types:
 
 'expression' @ [54:30] ==> value-parameter expression: KtProperty defined in org.jetbrains.kotlin.js.translate.declaration.AbstractDeclarationVisitor.visitProperty[ValueParameterDescriptorImpl]
 
-'hasCustomGetter' @ [54:41] ==> public fun KtProperty.hasCustomGetter(): Boolean defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'hasCustomGetter' @ [54:41] ==> public fun KtProperty.hasCustomGetter(): Boolean defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'translateFunction' @ [55:13] ==> private final fun translateFunction(descriptor: FunctionDescriptor, expression: KtDeclarationWithBody, context: TranslationContext): JsExpression defined in org.jetbrains.kotlin.js.translate.declaration.AbstractDeclarationVisitor[SimpleFunctionDescriptorImpl]
 
@@ -150,7 +150,7 @@ Inferred types:
 
 'expression' @ [66:17] ==> value-parameter expression: KtProperty defined in org.jetbrains.kotlin.js.translate.declaration.AbstractDeclarationVisitor.visitProperty[ValueParameterDescriptorImpl]
 
-'hasCustomSetter' @ [66:28] ==> public fun KtProperty.hasCustomSetter(): Boolean defined in org.jetbrains.kotlin.js.translate.declaration[SimpleFunctionDescriptorImpl]
+'hasCustomSetter' @ [66:28] ==> public fun KtProperty.hasCustomSetter(): Boolean defined in org.jetbrains.kotlin.js.translate.declaration in file PropertyTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'translateFunction' @ [67:17] ==> private final fun translateFunction(descriptor: FunctionDescriptor, expression: KtDeclarationWithBody, context: TranslationContext): JsExpression defined in org.jetbrains.kotlin.js.translate.declaration.AbstractDeclarationVisitor[SimpleFunctionDescriptorImpl]
 
@@ -261,8 +261,6 @@ Inferred types:
 
 'modality' @ [91:41] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [91:53] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [91:62] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'translateFunction' @ [91:72] ==> private final fun translateFunction(descriptor: FunctionDescriptor, expression: KtDeclarationWithBody, context: TranslationContext): JsExpression defined in org.jetbrains.kotlin.js.translate.declaration.AbstractDeclarationVisitor[SimpleFunctionDescriptorImpl]
@@ -301,7 +299,7 @@ Inferred types:
 
 'descriptor' @ [104:51] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.AbstractDeclarationVisitor.translateFunction[ValueParameterDescriptorImpl]
 
-'translateAndAliasParameters' @ [104:63] ==> public fun TranslationContext.translateAndAliasParameters(descriptor: FunctionDescriptor, targetList: MutableList<JsParameter>): TranslationContext defined in org.jetbrains.kotlin.js.translate.expression[SimpleFunctionDescriptorImpl]
+'translateAndAliasParameters' @ [104:63] ==> public fun TranslationContext.translateAndAliasParameters(descriptor: FunctionDescriptor, targetList: MutableList<JsParameter>): TranslationContext defined in org.jetbrains.kotlin.js.translate.expression in file FunctionTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [104:91] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.declaration.AbstractDeclarationVisitor.translateFunction[ValueParameterDescriptorImpl]
 

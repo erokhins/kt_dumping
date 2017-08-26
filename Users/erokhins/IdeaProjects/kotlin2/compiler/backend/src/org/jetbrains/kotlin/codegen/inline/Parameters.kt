@@ -19,9 +19,9 @@ Inferred types:
 
 'capturedParametersSizeOnStack' @ [30:35] ==> public final val capturedParametersSizeOnStack: Int defined in org.jetbrains.kotlin.codegen.inline.Parameters[PropertyDescriptorImpl]
 
-'lazy' @ [32:42] ==> public fun <T> lazy(initializer: () -> Int): Lazy<Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [32:42] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Int
+    <T> -> T
 
 'captured' @ [33:9] ==> public final val captured: List<CapturedParamInfo> defined in org.jetbrains.kotlin.codegen.inline.Parameters[PropertyDescriptorImpl]
 
@@ -35,9 +35,9 @@ Inferred types:
 
 'size' @ [33:34] ==> public final val Type.size: Int[MyPropertyDescriptor]
 
-'lazy' @ [36:21] ==> public fun <T> lazy(initializer: () -> List<CapturedParamInfo>): Lazy<List<CapturedParamInfo>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [36:21] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<CapturedParamInfo>
+    <T> -> T
 
 'parameters' @ [37:9] ==> public final val parameters: List<ParameterInfo> defined in org.jetbrains.kotlin.codegen.inline.Parameters[PropertyDescriptorImpl]
 
@@ -135,4 +135,6 @@ Inferred types:
 Inferred types:
     <T> -> CapturedParamInfo
     <R> -> Type
+
+'getType' @ [73:49] ==> @NotNull public open fun getType(): Type defined in org.jetbrains.kotlin.codegen.inline.CapturedParamInfo[JavaMethodDescriptor]
 

@@ -22,8 +22,6 @@ Inferred types:
 
 'find' @ [41:30] ==> local final fun find(fqName: String): ClassDescriptor? defined in org.jetbrains.kotlin.android.synthetic.descriptors.LazySyntheticElementResolveContext.createResolveContext[SimpleFunctionDescriptorImpl]
 
-'AndroidConst' @ [41:35] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
-
 'VIEW_FQNAME' @ [41:48] ==> public final val VIEW_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
 'SyntheticElementResolveContext' @ [41:71] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.descriptors.SyntheticElementResolveContext[FakeCallableDescriptorForObject]
@@ -31,8 +29,6 @@ Inferred types:
 'ERROR_CONTEXT' @ [41:102] ==> public final val ERROR_CONTEXT: SyntheticElementResolveContext defined in org.jetbrains.kotlin.android.synthetic.descriptors.SyntheticElementResolveContext.Companion[PropertyDescriptorImpl]
 
 'find' @ [42:34] ==> local final fun find(fqName: String): ClassDescriptor? defined in org.jetbrains.kotlin.android.synthetic.descriptors.LazySyntheticElementResolveContext.createResolveContext[SimpleFunctionDescriptorImpl]
-
-'AndroidConst' @ [42:39] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'ACTIVITY_FQNAME' @ [42:52] ==> public final val ACTIVITY_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
@@ -42,13 +38,9 @@ Inferred types:
 
 'find' @ [43:34] ==> local final fun find(fqName: String): ClassDescriptor? defined in org.jetbrains.kotlin.android.synthetic.descriptors.LazySyntheticElementResolveContext.createResolveContext[SimpleFunctionDescriptorImpl]
 
-'AndroidConst' @ [43:39] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
-
 'FRAGMENT_FQNAME' @ [43:52] ==> public final val FRAGMENT_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
 'find' @ [44:32] ==> local final fun find(fqName: String): ClassDescriptor? defined in org.jetbrains.kotlin.android.synthetic.descriptors.LazySyntheticElementResolveContext.createResolveContext[SimpleFunctionDescriptorImpl]
-
-'AndroidConst' @ [44:37] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'DIALOG_FQNAME' @ [44:50] ==> public final val DIALOG_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
@@ -58,13 +50,9 @@ Inferred types:
 
 'find' @ [45:41] ==> local final fun find(fqName: String): ClassDescriptor? defined in org.jetbrains.kotlin.android.synthetic.descriptors.LazySyntheticElementResolveContext.createResolveContext[SimpleFunctionDescriptorImpl]
 
-'AndroidConst' @ [45:46] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
-
 'SUPPORT_FRAGMENT_ACTIVITY_FQNAME' @ [45:59] ==> public final val SUPPORT_FRAGMENT_ACTIVITY_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
 'find' @ [46:41] ==> local final fun find(fqName: String): ClassDescriptor? defined in org.jetbrains.kotlin.android.synthetic.descriptors.LazySyntheticElementResolveContext.createResolveContext[SimpleFunctionDescriptorImpl]
-
-'AndroidConst' @ [46:46] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'SUPPORT_FRAGMENT_FQNAME' @ [46:59] ==> public final val SUPPORT_FRAGMENT_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
@@ -118,9 +106,9 @@ Inferred types:
 
 'errorType' @ [71:92] ==> private final fun errorType(): SimpleType defined in org.jetbrains.kotlin.android.synthetic.descriptors.SyntheticElementResolveContext.Companion[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [74:36] ==> public fun <T> lazy(initializer: () -> ArrayList<WidgetReceiver>): Lazy<ArrayList<WidgetReceiver>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [74:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ArrayList<WidgetReceiver>
+    <T> -> T
 
 'ArrayList' @ [75:25] ==> public constructor ArrayList<E : (Any..Any?)>(p0: Int) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -166,9 +154,9 @@ Inferred types:
 
 'receivers' @ [80:9] ==> val receivers: ArrayList<WidgetReceiver> defined in org.jetbrains.kotlin.android.synthetic.descriptors.SyntheticElementResolveContext.widgetReceivers.<anonymous>[LocalVariableDescriptor]
 
-'lazy' @ [83:48] ==> public fun <T> lazy(initializer: () -> MutableList<WidgetReceiver>): Lazy<MutableList<WidgetReceiver>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [83:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MutableList<WidgetReceiver>
+    <T> -> T
 
 'widgetReceivers' @ [84:25] ==> private final val widgetReceivers: ArrayList<WidgetReceiver> defined in org.jetbrains.kotlin.android.synthetic.descriptors.SyntheticElementResolveContext[PropertyDescriptorImpl]
 
@@ -191,9 +179,9 @@ Inferred types:
 
 'receivers' @ [86:9] ==> val receivers: MutableList<WidgetReceiver> defined in org.jetbrains.kotlin.android.synthetic.descriptors.SyntheticElementResolveContext.experimentalWidgetReceivers.<anonymous>[LocalVariableDescriptor]
 
-'lazy' @ [89:62] ==> public fun <T> lazy(initializer: () -> List<Pair<SimpleType, SimpleType>>): Lazy<List<Pair<SimpleType, SimpleType>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [89:62] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<Pair<SimpleType, SimpleType>>
+    <T> -> T
 
 'if (fragment == null) {
             emptyList<Pair<SimpleType, SimpleType>>()

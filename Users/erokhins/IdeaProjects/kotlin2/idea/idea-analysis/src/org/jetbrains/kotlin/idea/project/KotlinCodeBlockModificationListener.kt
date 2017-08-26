@@ -119,11 +119,11 @@ Inferred types:
 
 'subscribe' @ [100:30] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(PsiModificationTracker.Listener..PsiModificationTracker.Listener?)>, @NotNull p1: PsiModificationTracker.Listener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> Listener
+    <L : (Any..Any?)> -> (com.intellij.psi.util.PsiModificationTracker.Listener..com.intellij.psi.util.PsiModificationTracker.Listener?)
 
 'TOPIC' @ [100:63] ==> public final val TOPIC: (Topic<(PsiModificationTracker.Listener..PsiModificationTracker.Listener?)>..Topic<(PsiModificationTracker.Listener..PsiModificationTracker.Listener?)>?) defined in com.intellij.psi.util.PsiModificationTracker[JavaPropertyDescriptor]
 
-'Listener' @ [100:93] ==> public final fun Listener(function: () -> Unit): PsiModificationTracker.Listener defined in com.intellij.psi.util.PsiModificationTracker[SimpleFunctionDescriptorImpl]
+'Listener' @ [100:93] ==> public final fun Listener(function: () -> Unit): PsiModificationTracker.Listener defined in com.intellij.psi.util.PsiModificationTracker[SamConstructorDescriptorImpl]
 
 'modificationTrackerImpl' @ [101:31] ==> private final val modificationTrackerImpl: PsiModificationTrackerImpl defined in org.jetbrains.kotlin.idea.project.KotlinCodeBlockModificationListener[PropertyDescriptorImpl]
 
@@ -172,7 +172,7 @@ Inferred types:
 
 'getUserData' @ [118:25] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Boolean..Boolean?)>): Boolean? defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'KOTLIN_CONSOLE_KEY' @ [118:37] ==> public val KOTLIN_CONSOLE_KEY: Key<(Boolean..Boolean?)> defined in org.jetbrains.kotlin.idea.project in file KotlinCodeBlockModificationListener.kt[PropertyDescriptorImpl]
 
@@ -180,7 +180,7 @@ Inferred types:
 
 'getUserData' @ [122:30] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Long..Long?)>): Long? defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Long
+    <T : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'FILE_OUT_OF_BLOCK_MODIFICATION_COUNT' @ [122:42] ==> private val FILE_OUT_OF_BLOCK_MODIFICATION_COUNT: Key<Long> defined in org.jetbrains.kotlin.idea.project in file KotlinCodeBlockModificationListener.kt[PropertyDescriptorImpl]
 
@@ -188,7 +188,7 @@ Inferred types:
 
 'putUserData' @ [123:18] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Long..Long?)>, @Nullable p1: Long?): Unit defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Long
+    <T : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'FILE_OUT_OF_BLOCK_MODIFICATION_COUNT' @ [123:30] ==> private val FILE_OUT_OF_BLOCK_MODIFICATION_COUNT: Key<Long> defined in org.jetbrains.kotlin.idea.project in file KotlinCodeBlockModificationListener.kt[PropertyDescriptorImpl]
 
@@ -374,7 +374,7 @@ Inferred types:
 
 'getComponent' @ [171:53] ==> public abstract fun <T : (Any..Any?)> getComponent(@NotNull p0: Class<(KotlinCodeBlockModificationListener..KotlinCodeBlockModificationListener?)>): (KotlinCodeBlockModificationListener..KotlinCodeBlockModificationListener?) defined in com.intellij.openapi.project.Project[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinCodeBlockModificationListener
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.project.KotlinCodeBlockModificationListener..org.jetbrains.kotlin.idea.project.KotlinCodeBlockModificationListener?)
 
 'KotlinCodeBlockModificationListener' @ [171:66] ==> public companion object defined in org.jetbrains.kotlin.idea.project.KotlinCodeBlockModificationListener[FakeCallableDescriptorForObject]
 
@@ -388,7 +388,7 @@ Inferred types:
 
 'getUserData' @ [178:13] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Long..Long?)>): Long? defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Long
+    <T : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'FILE_OUT_OF_BLOCK_MODIFICATION_COUNT' @ [178:25] ==> private val FILE_OUT_OF_BLOCK_MODIFICATION_COUNT: Key<Long> defined in org.jetbrains.kotlin.idea.project in file KotlinCodeBlockModificationListener.kt[PropertyDescriptorImpl]
 
@@ -406,19 +406,19 @@ Inferred types:
 
 'project' @ [182:92] ==> public final val Module.project: Project[MyPropertyDescriptor]
 
-'lazy' @ [183:33] ==> public fun <T> lazy(initializer: () -> HashSet<Module> /* = HashSet<Module> */): Lazy<HashSet<Module> /* = HashSet<Module> */> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [183:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> HashSet<Module>
+    <T> -> T
 
 'module' @ [184:9] ==> public final val module: Module defined in org.jetbrains.kotlin.idea.project.KotlinModuleModificationTracker[PropertyDescriptorImpl]
 
-'cached' @ [184:16] ==> public fun <T> Module.cached(provider: CachedValueProvider<HashSet<Module> /* = HashSet<Module> */>): HashSet<Module> /* = HashSet<Module> */ defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'cached' @ [184:16] ==> public fun <T> Module.cached(provider: CachedValueProvider<(HashSet<Module> /* = HashSet<Module> */..HashSet<Module>? /* = HashSet<Module>? */)>): (HashSet<Module> /* = HashSet<Module> */..HashSet<Module>? /* = HashSet<Module>? */) defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> HashSet<Module>
+    <T> -> (kotlin.collections.HashSet<com.intellij.openapi.module.Module> /* = java.util.HashSet<com.intellij.openapi.module.Module> */..kotlin.collections.HashSet<com.intellij.openapi.module.Module>? /* = java.util.HashSet<com.intellij.openapi.module.Module>? */)
 
-'CachedValueProvider' @ [184:23] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(HashSet<Module> /* = HashSet<Module> */..HashSet<Module>? /* = HashSet<Module>? */)>?): CachedValueProvider<HashSet<Module> /* = HashSet<Module> */> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
+'CachedValueProvider' @ [184:23] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(HashSet<Module> /* = HashSet<Module> */..HashSet<Module>? /* = HashSet<Module>? */)>?): CachedValueProvider<(HashSet<Module> /* = HashSet<Module> */..HashSet<Module>? /* = HashSet<Module>? */)> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> HashSet<Module>
+    <T : (Any..Any?)> -> (kotlin.collections.HashSet<com.intellij.openapi.module.Module> /* = java.util.HashSet<com.intellij.openapi.module.Module> */..kotlin.collections.HashSet<com.intellij.openapi.module.Module>? /* = java.util.HashSet<com.intellij.openapi.module.Module>? */)
 
 'create' @ [185:40] ==> public open fun <T : (Any..Any?)> create(@Nullable p0: HashSet<Module>? /* = HashSet<Module>? */, @NotNull vararg p1: (Any..Any?)): (CachedValueProvider.Result<(HashSet<Module> /* = HashSet<Module> */..HashSet<Module>? /* = HashSet<Module>? */)>..CachedValueProvider.Result<(HashSet<Module> /* = HashSet<Module> */..HashSet<Module>? /* = HashSet<Module>? */)>?) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaMethodDescriptor]
 Inferred types:
@@ -444,7 +444,7 @@ Inferred types:
 
 'CollectProcessor' @ [188:50] ==> public constructor CollectProcessor<T : (Any..Any?)>(@NotNull p0: (MutableCollection<(Module..Module?)>..Collection<(Module..Module?)>)) defined in com.intellij.util.CommonProcessors.CollectProcessor[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Module
+    <T : (Any..Any?)> -> (com.intellij.openapi.module.Module..com.intellij.openapi.module.Module?)
 
 'this' @ [188:67] ==> <this> defined in org.jetbrains.kotlin.idea.project.KotlinModuleModificationTracker.dependencies.<anonymous>.<anonymous>.<anonymous>[ReceiverParameterDescriptorImpl]
 
@@ -476,7 +476,7 @@ Inferred types:
 
 'selfCount' @ [201:28] ==> val selfCount: Long defined in org.jetbrains.kotlin.idea.project.KotlinModuleModificationTracker.getModificationCount[LocalVariableDescriptor]
 
-'dependencies' @ [202:32] ==> private final val dependencies: HashSet<Module> /* = HashSet<Module> */ defined in org.jetbrains.kotlin.idea.project.KotlinModuleModificationTracker[PropertyDescriptorImpl]
+'dependencies' @ [202:32] ==> private final val dependencies: (HashSet<Module> /* = HashSet<Module> */..HashSet<Module>? /* = HashSet<Module>? */) defined in org.jetbrains.kotlin.idea.project.KotlinModuleModificationTracker[PropertyDescriptorImpl]
 
 'kotlinModCountListener' @ [203:32] ==> private final val kotlinModCountListener: (KotlinCodeBlockModificationListener..KotlinCodeBlockModificationListener?) defined in org.jetbrains.kotlin.idea.project.KotlinModuleModificationTracker[PropertyDescriptorImpl]
 

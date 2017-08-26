@@ -8,7 +8,9 @@ Inferred types:
 
 'overloads' @ [38:26] ==> value-parameter overloads: Collection<DeclarationDescriptorNonRoot> defined in org.jetbrains.kotlin.resolve.jvm.JvmOverloadFilter.filterPackageMemberOverloads[ValueParameterDescriptorImpl]
 
-'DescriptorToSourceUtils' @ [39:24] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [39:24] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtFile?, right: KtFile): KtFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtFile
 
 'getContainingFile' @ [39:48] ==> @JvmStatic public final fun getContainingFile(declarationDescriptor: DeclarationDescriptor): KtFile? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -23,8 +25,6 @@ Inferred types:
 'sourceClassesFQNs' @ [41:13] ==> val sourceClassesFQNs: HashSet<FqName> defined in org.jetbrains.kotlin.resolve.jvm.JvmOverloadFilter.filterPackageMemberOverloads[LocalVariableDescriptor]
 
 'add' @ [41:31] ==> public open fun add(element: FqName): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
-
-'NoResolveFileClassesProvider' @ [41:35] ==> public object NoResolveFileClassesProvider : JvmFileClassesProvider defined in org.jetbrains.kotlin.fileClasses in file NoResolveFileClassesProvider.kt[FakeCallableDescriptorForObject]
 
 'getFileClassFqName' @ [41:64] ==> public fun JvmFileClassesProvider.getFileClassFqName(file: KtFile): FqName defined in org.jetbrains.kotlin.fileClasses in file JvmFileClassesProvider.kt[SimpleFunctionDescriptorImpl]
 
@@ -48,7 +48,9 @@ Inferred types:
 
 'containingDeclaration' @ [50:107] ==> val containingDeclaration: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.jvm.JvmOverloadFilter.filterPackageMemberOverloads[LocalVariableDescriptor]
 
-'JvmFileClassUtil' @ [53:33] ==> public object JvmFileClassUtil defined in org.jetbrains.kotlin.fileClasses in file JvmFileClassUtil.kt[FakeCallableDescriptorForObject]
+'?:' @ [53:33] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Name?, right: Name): Name[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Name
 
 'getImplClassName' @ [53:50] ==> @JvmStatic public final fun getImplClassName(deserializedMemberDescriptor: DeserializedMemberDescriptor): Name? defined in org.jetbrains.kotlin.fileClasses.JvmFileClassUtil[SimpleFunctionDescriptorImpl]
 

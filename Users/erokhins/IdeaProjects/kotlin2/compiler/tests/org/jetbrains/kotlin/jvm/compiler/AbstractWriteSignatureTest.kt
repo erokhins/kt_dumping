@@ -304,6 +304,8 @@ Inferred types:
 
 'SignatureExpectation' @ [155:82] ==> public constructor SignatureExpectation(header: String, name: String, expectedJvmSignature: String?, expectedGenericSignature: String) defined in org.jetbrains.kotlin.jvm.compiler.AbstractWriteSignatureTest.SignatureExpectation[ClassConstructorDescriptorImpl]
 
+'check' @ [155:104] ==> public final fun check(): Unit defined in org.jetbrains.kotlin.jvm.compiler.AbstractWriteSignatureTest.SignatureExpectation[SimpleFunctionDescriptorImpl]
+
 'FileInputStream' @ [159:36] ==> public constructor FileInputStream(p0: (File..File?)) defined in java.io.FileInputStream[JavaClassConstructorDescriptor]
 
 'classFile' @ [159:52] ==> value-parameter classFile: File defined in org.jetbrains.kotlin.jvm.compiler.AbstractWriteSignatureTest.ClassExpectationsSuite.processClassFile[ValueParameterDescriptorImpl]

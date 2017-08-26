@@ -60,7 +60,7 @@ Inferred types:
 
 'element' @ [74:19] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
-'collectInheritedClassMarker' @ [76:21] ==> private fun collectInheritedClassMarker(element: KtClass, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'collectInheritedClassMarker' @ [76:21] ==> private fun collectInheritedClassMarker(element: KtClass, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers in file KotlinLineMarkerProvider.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [76:49] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
@@ -72,7 +72,7 @@ Inferred types:
 
 'element' @ [79:35] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
-'collectSuperDeclarationMarkers' @ [80:21] ==> private fun collectSuperDeclarationMarkers(declaration: KtDeclaration, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'collectSuperDeclarationMarkers' @ [80:21] ==> private fun collectSuperDeclarationMarkers(declaration: KtDeclaration, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers in file KotlinLineMarkerProvider.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [80:52] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
@@ -84,7 +84,7 @@ Inferred types:
 
 'element' @ [83:36] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
-'collectSuperDeclarationMarkers' @ [84:21] ==> private fun collectSuperDeclarationMarkers(declaration: KtDeclaration, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'collectSuperDeclarationMarkers' @ [84:21] ==> private fun collectSuperDeclarationMarkers(declaration: KtDeclaration, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers in file KotlinLineMarkerProvider.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [84:52] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
@@ -100,19 +100,19 @@ Inferred types:
 
 'element' @ [88:40] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
-'collectSuperDeclarationMarkers' @ [89:25] ==> private fun collectSuperDeclarationMarkers(declaration: KtDeclaration, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'collectSuperDeclarationMarkers' @ [89:25] ==> private fun collectSuperDeclarationMarkers(declaration: KtDeclaration, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers in file KotlinLineMarkerProvider.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [89:56] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
 'result' @ [89:65] ==> value-parameter result: MutableCollection<LineMarkerInfo<*>> defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[ValueParameterDescriptorImpl]
 
-'collectOverriddenFunctions' @ [95:9] ==> private fun collectOverriddenFunctions(functions: Collection<KtNamedFunction>, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'collectOverriddenFunctions' @ [95:9] ==> private fun collectOverriddenFunctions(functions: Collection<KtNamedFunction>, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers in file KotlinLineMarkerProvider.kt[SimpleFunctionDescriptorImpl]
 
 'functions' @ [95:36] ==> val functions: HashSet<KtNamedFunction> defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
 'result' @ [95:47] ==> value-parameter result: MutableCollection<LineMarkerInfo<*>> defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[ValueParameterDescriptorImpl]
 
-'collectOverriddenPropertyAccessors' @ [96:9] ==> private fun collectOverriddenPropertyAccessors(properties: Collection<KtNamedDeclaration>, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'collectOverriddenPropertyAccessors' @ [96:9] ==> private fun collectOverriddenPropertyAccessors(properties: Collection<KtNamedDeclaration>, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers in file KotlinLineMarkerProvider.kt[SimpleFunctionDescriptorImpl]
 
 'properties' @ [96:44] ==> val properties: HashSet<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
@@ -137,7 +137,7 @@ Inferred types:
 
 'HEADER_KEYWORD' @ [101:46] ==> public final val HEADER_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'collectImplementationMarkers' @ [102:17] ==> private fun collectImplementationMarkers(declaration: KtNamedDeclaration, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'collectImplementationMarkers' @ [102:17] ==> private fun collectImplementationMarkers(declaration: KtNamedDeclaration, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers in file KotlinLineMarkerProvider.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [102:46] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
@@ -149,7 +149,7 @@ Inferred types:
 
 'IMPL_KEYWORD' @ [104:51] ==> public final val IMPL_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'collectHeaderMarkers' @ [105:17] ==> private fun collectHeaderMarkers(declaration: KtNamedDeclaration, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'collectHeaderMarkers' @ [105:17] ==> private fun collectHeaderMarkers(declaration: KtNamedDeclaration, result: MutableCollection<LineMarkerInfo<*>>): Unit defined in org.jetbrains.kotlin.idea.highlighter.markers in file KotlinLineMarkerProvider.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [105:38] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.KotlinLineMarkerProvider.collectSlowLineMarkers[LocalVariableDescriptor]
 
@@ -223,6 +223,8 @@ Inferred types:
 Inferred types:
     <T> -> PsiMethod
     <R> -> String?
+
+'getOverriddenMethodTooltip' @ [143:35] ==> public fun getOverriddenMethodTooltip(method: PsiMethod): String? defined in org.jetbrains.kotlin.idea.highlighter.markers in file OverridenFunctionMarker.kt[SimpleFunctionDescriptorImpl]
 
 'LineMarkerNavigator' @ [144:18] ==> public constructor LineMarkerNavigator() defined in com.intellij.codeInsight.daemon.impl.LineMarkerNavigator[JavaClassConstructorDescriptor]
 
@@ -361,8 +363,6 @@ Inferred types:
 
 'modality' @ [204:23] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [204:35] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [204:44] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'overriddenMembers' @ [204:56] ==> value-parameter overriddenMembers: Collection<CallableMemberDescriptor> defined in org.jetbrains.kotlin.idea.highlighter.markers.isImplementsAndNotOverrides[ValueParameterDescriptorImpl]
@@ -374,8 +374,6 @@ Inferred types:
 'it' @ [204:80] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.isImplementsAndNotOverrides.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [204:83] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [204:95] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [204:104] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -405,7 +403,7 @@ Inferred types:
 
 'isEmpty' @ [213:50] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.Collection[DeserializedSimpleFunctionDescriptor]
 
-'isImplementsAndNotOverrides' @ [215:22] ==> private fun isImplementsAndNotOverrides(descriptor: CallableMemberDescriptor, overriddenMembers: Collection<CallableMemberDescriptor>): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'isImplementsAndNotOverrides' @ [215:22] ==> private fun isImplementsAndNotOverrides(descriptor: CallableMemberDescriptor, overriddenMembers: Collection<CallableMemberDescriptor>): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers in file KotlinLineMarkerProvider.kt[SimpleFunctionDescriptorImpl]
 
 'resolveWithParents' @ [215:50] ==> val resolveWithParents: ResolveWithParentsResult defined in org.jetbrains.kotlin.idea.highlighter.markers.collectSuperDeclarationMarkers[LocalVariableDescriptor]
 
@@ -431,7 +429,7 @@ Inferred types:
 
 'LineMarkerInfo' @ [222:16] ==> public constructor LineMarkerInfo<T : (PsiElement..PsiElement?)>(@NotNull p0: KtDeclaration, @NotNull p1: TextRange, p2: (Icon..Icon?), p3: Int, @Nullable p4: Function<in (KtDeclaration..KtDeclaration?), (String..String?)>?, @Nullable p5: GutterIconNavigationHandler<(KtDeclaration..KtDeclaration?)>?, @NotNull p6: GutterIconRenderer.Alignment) defined in com.intellij.codeInsight.daemon.LineMarkerInfo[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
 'declaration' @ [223:13] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.idea.highlighter.markers.collectSuperDeclarationMarkers[ValueParameterDescriptorImpl]
 
@@ -487,7 +485,7 @@ Inferred types:
 
 'LineMarkerInfo' @ [244:16] ==> public constructor LineMarkerInfo<T : (PsiElement..PsiElement?)>(@NotNull p0: PsiElement, @NotNull p1: TextRange, p2: (Icon..Icon?), p3: Int, @Nullable p4: Function<in (PsiElement..PsiElement?), (String..String?)>?, @Nullable p5: GutterIconNavigationHandler<(PsiElement..PsiElement?)>?, @NotNull p6: GutterIconRenderer.Alignment) defined in com.intellij.codeInsight.daemon.LineMarkerInfo[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiElement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'anchor' @ [245:13] ==> val anchor: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.collectInheritedClassMarker[LocalVariableDescriptor]
 
@@ -550,7 +548,7 @@ Inferred types:
 
 'property' @ [264:39] ==> val property: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.highlighter.markers.collectOverriddenPropertyAccessors[LocalVariableDescriptor]
 
-'collectContainingClasses' @ [268:19] ==> public fun collectContainingClasses(methods: Collection<PsiMethod>): Set<PsiClass> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'collectContainingClasses' @ [268:19] ==> public fun collectContainingClasses(methods: Collection<PsiMethod>): Set<PsiClass> defined in org.jetbrains.kotlin.idea.highlighter.markers in file JavaPsiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'mappingToJava' @ [268:44] ==> val mappingToJava: HashMap<PsiElement, KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers.collectOverriddenPropertyAccessors[LocalVariableDescriptor]
 
@@ -586,7 +584,7 @@ Inferred types:
 
 'LineMarkerInfo' @ [275:20] ==> public constructor LineMarkerInfo<T : (PsiElement..PsiElement?)>(@NotNull p0: PsiElement, @NotNull p1: TextRange, p2: (Icon..Icon?), p3: Int, @Nullable p4: Function<in (PsiElement..PsiElement?), (String..String?)>?, @Nullable p5: GutterIconNavigationHandler<(PsiElement..PsiElement?)>?, @NotNull p6: GutterIconRenderer.Alignment) defined in com.intellij.codeInsight.daemon.LineMarkerInfo[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiElement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'anchor' @ [276:17] ==> val anchor: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.collectOverriddenPropertyAccessors[LocalVariableDescriptor]
 
@@ -638,7 +636,7 @@ Inferred types:
 
 'it' @ [293:72] ==> value-parameter it: ModuleDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.collectImplementationMarkers.<anonymous>[ValueParameterDescriptorImpl]
 
-'hasImplementationsOf' @ [293:75] ==> public fun ModuleDescriptor.hasImplementationsOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'hasImplementationsOf' @ [293:75] ==> public fun ModuleDescriptor.hasImplementationsOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [293:96] ==> val descriptor: MemberDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.collectImplementationMarkers[LocalVariableDescriptor]
 
@@ -654,7 +652,7 @@ Inferred types:
 
 'LineMarkerInfo' @ [297:16] ==> public constructor LineMarkerInfo<T : (PsiElement..PsiElement?)>(@NotNull p0: PsiElement, @NotNull p1: TextRange, p2: (Icon..Icon?), p3: Int, @Nullable p4: Function<in (PsiElement..PsiElement?), (String..String?)>?, @Nullable p5: GutterIconNavigationHandler<(PsiElement..PsiElement?)>?, @NotNull p6: GutterIconRenderer.Alignment) defined in com.intellij.codeInsight.daemon.LineMarkerInfo[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiElement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'anchor' @ [298:13] ==> val anchor: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.collectImplementationMarkers[LocalVariableDescriptor]
 
@@ -694,7 +692,7 @@ Inferred types:
 
 'commonModuleDescriptor' @ [314:10] ==> val commonModuleDescriptor: ModuleDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.collectHeaderMarkers[LocalVariableDescriptor]
 
-'hasDeclarationOf' @ [314:33] ==> public fun ModuleDescriptor.hasDeclarationOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'hasDeclarationOf' @ [314:33] ==> public fun ModuleDescriptor.hasDeclarationOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers in file DeclaredHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [314:50] ==> val descriptor: MemberDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.collectHeaderMarkers[LocalVariableDescriptor]
 
@@ -710,7 +708,7 @@ Inferred types:
 
 'LineMarkerInfo' @ [318:16] ==> public constructor LineMarkerInfo<T : (PsiElement..PsiElement?)>(@NotNull p0: PsiElement, @NotNull p1: TextRange, p2: (Icon..Icon?), p3: Int, @Nullable p4: Function<in (PsiElement..PsiElement?), (String..String?)>?, @Nullable p5: GutterIconNavigationHandler<(PsiElement..PsiElement?)>?, @NotNull p6: GutterIconRenderer.Alignment) defined in com.intellij.codeInsight.daemon.LineMarkerInfo[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiElement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'anchor' @ [319:13] ==> val anchor: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.collectHeaderMarkers[LocalVariableDescriptor]
 
@@ -767,7 +765,7 @@ Inferred types:
 
 'function' @ [337:41] ==> val function: KtNamedFunction defined in org.jetbrains.kotlin.idea.highlighter.markers.collectOverriddenFunctions[LocalVariableDescriptor]
 
-'collectContainingClasses' @ [341:19] ==> public fun collectContainingClasses(methods: Collection<PsiMethod>): Set<PsiClass> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'collectContainingClasses' @ [341:19] ==> public fun collectContainingClasses(methods: Collection<PsiMethod>): Set<PsiClass> defined in org.jetbrains.kotlin.idea.highlighter.markers in file JavaPsiUtils.kt[SimpleFunctionDescriptorImpl]
 
 'mappingToJava' @ [341:44] ==> val mappingToJava: HashMap<PsiElement, KtNamedFunction> defined in org.jetbrains.kotlin.idea.highlighter.markers.collectOverriddenFunctions[LocalVariableDescriptor]
 
@@ -799,7 +797,7 @@ Inferred types:
 
 'LineMarkerInfo' @ [348:20] ==> public constructor LineMarkerInfo<T : (PsiElement..PsiElement?)>(@NotNull p0: PsiElement, @NotNull p1: TextRange, p2: (Icon..Icon?), p3: Int, @Nullable p4: Function<in (PsiElement..PsiElement?), (String..String?)>?, @Nullable p5: GutterIconNavigationHandler<(PsiElement..PsiElement?)>?, @NotNull p6: GutterIconRenderer.Alignment) defined in com.intellij.codeInsight.daemon.LineMarkerInfo[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiElement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'anchor' @ [349:17] ==> val anchor: PsiElement defined in org.jetbrains.kotlin.idea.highlighter.markers.collectOverriddenFunctions[LocalVariableDescriptor]
 

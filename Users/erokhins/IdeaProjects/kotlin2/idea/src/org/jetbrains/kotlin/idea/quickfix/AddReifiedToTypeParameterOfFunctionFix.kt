@@ -53,7 +53,7 @@ Inferred types:
 
 'element' @ [63:28] ==> val element: DiagnosticWithParameters1<(PsiElement..PsiElement?), (TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.idea.quickfix.AddReifiedToTypeParameterOfFunctionFix.Factory.createAction[LocalVariableDescriptor]
 
-'psiElement' @ [63:36] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (TypeParameterDescriptor..TypeParameterDescriptor?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [63:36] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (TypeParameterDescriptor..TypeParameterDescriptor?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
@@ -72,7 +72,7 @@ Inferred types:
 
 'element' @ [64:74] ==> val element: DiagnosticWithParameters1<(PsiElement..PsiElement?), (TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.idea.quickfix.AddReifiedToTypeParameterOfFunctionFix.Factory.createAction[LocalVariableDescriptor]
 
-'a' @ [64:82] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (TypeParameterDescriptor..TypeParameterDescriptor?)>.a: (TypeParameterDescriptor..TypeParameterDescriptor?)[MyPropertyDescriptor]
+'a' @ [64:82] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (TypeParameterDescriptor..TypeParameterDescriptor?)>.a: TypeParameterDescriptor[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)

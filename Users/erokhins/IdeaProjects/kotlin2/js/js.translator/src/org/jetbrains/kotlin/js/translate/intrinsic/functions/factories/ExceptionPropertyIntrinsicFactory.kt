@@ -24,7 +24,7 @@
 
 'resultingDescriptor' @ [44:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callInfo' @ [45:17] ==> value-parameter callInfo: CallInfo defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ExceptionPropertyIntrinsicFactory.Intrinsic.apply[ValueParameterDescriptorImpl]
 
@@ -32,7 +32,7 @@ Inferred types:
 
 'call' @ [45:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'explicitReceiver' @ [45:44] ==> public final val Call.explicitReceiver: Receiver?[MyPropertyDescriptor]
 
@@ -57,8 +57,6 @@ Inferred types:
 'unsubstitutedMemberScope' @ [50:66] ==> public final val ClassDescriptor.unsubstitutedMemberScope: MemberScope[MyPropertyDescriptor]
 
 'getContributedDescriptors' @ [51:22] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [51:48] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'CALLABLES' @ [51:69] ==> @field:JvmField public final val CALLABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 

@@ -87,8 +87,6 @@ Inferred types:
 
 'annotations' @ [63:58] ==> public open val annotations: Annotations defined in org.jetbrains.kotlin.descriptors.impl.LocalVariableDescriptor[JavaPropertyDescriptor]
 
-'Modality' @ [63:71] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [63:80] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'descriptor' @ [63:87] ==> value-parameter descriptor: LocalVariableDescriptor defined in org.jetbrains.kotlin.codegen.createFreeFakeLocalPropertyDescriptor[ValueParameterDescriptorImpl]

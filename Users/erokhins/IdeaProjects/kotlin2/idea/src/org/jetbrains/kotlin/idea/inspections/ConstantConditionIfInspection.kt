@@ -30,7 +30,7 @@ Inferred types:
 
 'expression' @ [50:21] ==> value-parameter expression: KtIfExpression defined in org.jetbrains.kotlin.idea.inspections.ConstantConditionIfInspection.buildVisitor.<no name provided>.visitIfExpression[ValueParameterDescriptorImpl]
 
-'branch' @ [50:32] ==> private fun KtIfExpression.branch(thenBranch: Boolean): KtExpression? defined in org.jetbrains.kotlin.idea.inspections[SimpleFunctionDescriptorImpl]
+'branch' @ [50:32] ==> private fun KtIfExpression.branch(thenBranch: Boolean): KtExpression? defined in org.jetbrains.kotlin.idea.inspections in file ConstantConditionIfInspection.kt[SimpleFunctionDescriptorImpl]
 
 'constantValue' @ [50:39] ==> val constantValue: Boolean defined in org.jetbrains.kotlin.idea.inspections.ConstantConditionIfInspection.buildVisitor.<no name provided>.visitIfExpression[LocalVariableDescriptor]
 
@@ -84,7 +84,7 @@ Inferred types:
 
 'ifExpression' @ [76:26] ==> val ifExpression: KtIfExpression defined in org.jetbrains.kotlin.idea.inspections.ConstantConditionIfInspection.SimplifyFix.applyFix[LocalVariableDescriptor]
 
-'branch' @ [76:39] ==> private fun KtIfExpression.branch(thenBranch: Boolean): KtExpression? defined in org.jetbrains.kotlin.idea.inspections[SimpleFunctionDescriptorImpl]
+'branch' @ [76:39] ==> private fun KtIfExpression.branch(thenBranch: Boolean): KtExpression? defined in org.jetbrains.kotlin.idea.inspections in file ConstantConditionIfInspection.kt[SimpleFunctionDescriptorImpl]
 
 'conditionValue' @ [76:46] ==> private final val conditionValue: Boolean defined in org.jetbrains.kotlin.idea.inspections.ConstantConditionIfInspection.SimplifyFix[PropertyDescriptorImpl]
 

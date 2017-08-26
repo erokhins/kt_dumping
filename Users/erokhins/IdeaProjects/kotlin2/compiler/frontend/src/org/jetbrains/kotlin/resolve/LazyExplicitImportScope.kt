@@ -54,6 +54,8 @@ Inferred types:
 
 'MemberScope' @ [51:59] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
+'getContributedFunctions' @ [51:72] ==> public abstract fun getContributedFunctions(name: Name, location: LookupLocation): Collection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
+
 'name' @ [55:13] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.LazyExplicitImportScope.getContributedVariables[ValueParameterDescriptorImpl]
 
 'aliasName' @ [55:21] ==> private final val aliasName: Name defined in org.jetbrains.kotlin.resolve.LazyExplicitImportScope[PropertyDescriptorImpl]
@@ -69,6 +71,8 @@ Inferred types:
 'location' @ [57:49] ==> value-parameter location: LookupLocation defined in org.jetbrains.kotlin.resolve.LazyExplicitImportScope.getContributedVariables[ValueParameterDescriptorImpl]
 
 'MemberScope' @ [57:59] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
+
+'getContributedVariables' @ [57:72] ==> public abstract fun getContributedVariables(name: Name, location: LookupLocation): Collection<PropertyDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
 'SmartList' @ [65:27] ==> public constructor SmartList<E : (Any..Any?)>() defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -190,11 +194,11 @@ Inferred types:
 
 'java' @ [105:31] ==> public val <T> KClass<out LazyExplicitImportScope>.java: Class<out LazyExplicitImportScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> LazyExplicitImportScope
+    <T> -> Captured(out LazyExplicitImportScope)
 
 'simpleName' @ [105:36] ==> public final val <T : (Any..Any?)> Class<out LazyExplicitImportScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LazyExplicitImportScope
+    <T : (Any..Any?)> -> Captured(out LazyExplicitImportScope)
 
 'aliasName' @ [105:54] ==> private final val aliasName: Name defined in org.jetbrains.kotlin.resolve.LazyExplicitImportScope[PropertyDescriptorImpl]
 
@@ -320,9 +324,9 @@ Inferred types:
 
 'this' @ [142:95] ==> <this> defined in org.jetbrains.kotlin.resolve.LazyExplicitImportScope.asImportedFromObjectIfPossible[ReceiverParameterDescriptorImpl]
 
-'asImportedFromObject' @ [143:34] ==> public fun PropertyDescriptor.asImportedFromObject(original: PropertyImportedFromObject? = ...): PropertyImportedFromObject defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'asImportedFromObject' @ [143:34] ==> public fun PropertyDescriptor.asImportedFromObject(original: PropertyImportedFromObject? = ...): PropertyImportedFromObject defined in org.jetbrains.kotlin.resolve in file importedFromObject.kt[SimpleFunctionDescriptorImpl]
 
-'asImportedFromObject' @ [144:34] ==> public fun FunctionDescriptor.asImportedFromObject(original: FunctionImportedFromObject? = ...): FunctionImportedFromObject defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'asImportedFromObject' @ [144:34] ==> public fun FunctionDescriptor.asImportedFromObject(original: FunctionImportedFromObject? = ...): FunctionImportedFromObject defined in org.jetbrains.kotlin.resolve in file importedFromObject.kt[SimpleFunctionDescriptorImpl]
 
 'filter' @ [149:13] ==> public inline fun <T> Iterable<D>.filter(predicate: (D) -> Boolean): List<D> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -131,6 +131,8 @@ Inferred types:
 
 'Name' @ [77:49] ==> private constructor Name(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.name.Name[JavaClassConstructorDescriptor]
 
+'identifier' @ [77:55] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
+
 'JavaAnnotationArgumentImpl' @ [83:5] ==> public constructor JavaAnnotationArgumentImpl(name: Name?) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaAnnotationArgumentImpl[ClassConstructorDescriptorImpl]
 
 'name' @ [83:32] ==> value-parameter name: Name? defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassObjectAnnotationArgumentImpl.<init>[ValueParameterDescriptorImpl]

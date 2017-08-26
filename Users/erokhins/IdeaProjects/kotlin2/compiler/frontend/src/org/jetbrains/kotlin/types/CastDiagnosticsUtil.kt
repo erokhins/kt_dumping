@@ -311,10 +311,12 @@ Inferred types:
 
 'variableConstructors' @ [170:96] ==> val variableConstructors: Set<TypeConstructor> defined in org.jetbrains.kotlin.types.CastDiagnosticsUtil.findStaticallyKnownSubtype[LocalVariableDescriptor]
 
+'contains' @ [170:118] ==> public abstract fun contains(element: TypeConstructor): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
+
 'newHashMap' @ [172:18] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> newHashMap(p0: (MutableMap<out (TypeConstructor..TypeConstructor?), out (TypeProjection..TypeProjection?)>..Map<out (TypeConstructor..TypeConstructor?), (TypeProjection..TypeProjection?)>?)): (HashMap<(TypeConstructor..TypeConstructor?), (TypeProjection..TypeProjection?)>..HashMap<(TypeConstructor..TypeConstructor?), (TypeProjection..TypeProjection?)>?) defined in com.google.common.collect.Maps[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> TypeConstructor
-    <V : (Any..Any?)> -> TypeProjection
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.types.TypeConstructor..org.jetbrains.kotlin.types.TypeConstructor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.types.TypeProjection..org.jetbrains.kotlin.types.TypeProjection?)
 
 'solution' @ [172:29] ==> val solution: TypeUnifier.UnificationResult defined in org.jetbrains.kotlin.types.CastDiagnosticsUtil.findStaticallyKnownSubtype[LocalVariableDescriptor]
 

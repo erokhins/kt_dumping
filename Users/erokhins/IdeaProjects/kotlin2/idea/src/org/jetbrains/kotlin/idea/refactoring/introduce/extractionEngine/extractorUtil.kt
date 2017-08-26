@@ -51,11 +51,7 @@ Inferred types:
 
 'FAKE_LAMBDALIKE_FUNCTION' @ [64:53] ==> enum entry FAKE_LAMBDALIKE_FUNCTION defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
-'CallableBuilder' @ [64:81] ==> public companion object defined in org.jetbrains.kotlin.psi.KtPsiFactory.CallableBuilder[FakeCallableDescriptorForObject]
-
 'FUNCTION' @ [64:104] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.psi.KtPsiFactory.CallableBuilder.Target[FakeCallableDescriptorForObject]
-
-'CallableBuilder' @ [65:17] ==> public companion object defined in org.jetbrains.kotlin.psi.KtPsiFactory.CallableBuilder[FakeCallableDescriptorForObject]
 
 'READ_ONLY_PROPERTY' @ [65:40] ==> enum entry READ_ONLY_PROPERTY defined in org.jetbrains.kotlin.psi.KtPsiFactory.CallableBuilder.Target[FakeCallableDescriptorForObject]
 
@@ -280,8 +276,6 @@ Inferred types:
 
 'extractionTarget' @ [101:43] ==> val extractionTarget: ExtractionTarget defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.buildSignature[LocalVariableDescriptor]
 
-'ExtractionTarget' @ [101:63] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY_WITH_INITIALIZER' @ [101:80] ==> enum entry PROPERTY_WITH_INITIALIZER defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
 'noReturnType' @ [102:17] ==> public final fun noReturnType(): KtPsiFactory.CallableBuilder defined in org.jetbrains.kotlin.psi.KtPsiFactory.CallableBuilder[DeserializedSimpleFunctionDescriptor]
@@ -481,8 +475,8 @@ Inferred types:
 
 'HashMap' @ [161:27] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (KtElement..KtElement?), out (KtElement..KtElement?)>..Map<out (KtElement..KtElement?), (KtElement..KtElement?)>?)) defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtElement
-    <V : (Any..Any?)> -> KtElement
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'match' @ [161:35] ==> value-parameter match: UnificationResult.WeaklyMatched defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch[ValueParameterDescriptorImpl]
 
@@ -516,7 +510,7 @@ Inferred types:
 Inferred types:
     <T> -> Pair<KtExpression, KtExpression>
 
-'weakMatches' @ [166:90] ==> val weakMatches: HashMap<KtElement, KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch[LocalVariableDescriptor]
+'weakMatches' @ [166:90] ==> val weakMatches: HashMap<(KtElement..KtElement?), (KtElement..KtElement?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch[LocalVariableDescriptor]
 
 'it' @ [166:102] ==> value-parameter it: Pair<KtExpression, KtExpression> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch.matchValues.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -532,11 +526,11 @@ Inferred types:
 
 'newValue' @ [167:52] ==> value-parameter newValue: OutputValue defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch.matchValues[ValueParameterDescriptorImpl]
 
-'weakMatches' @ [168:17] ==> val weakMatches: HashMap<KtElement, KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch[LocalVariableDescriptor]
+'weakMatches' @ [168:17] ==> val weakMatches: HashMap<(KtElement..KtElement?), (KtElement..KtElement?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch[LocalVariableDescriptor]
 
-'keys' @ [168:29] ==> public open val keys: MutableSet<KtElement> defined in java.util.HashMap[JavaPropertyDescriptor]
+'keys' @ [168:29] ==> public open val keys: MutableSet<(KtElement..KtElement?)> defined in java.util.HashMap[JavaPropertyDescriptor]
 
-'removeAll' @ [168:34] ==> public abstract fun removeAll(elements: Collection<KtElement>): Boolean defined in kotlin.collections.MutableSet[DeserializedSimpleFunctionDescriptor]
+'removeAll' @ [168:34] ==> public abstract fun removeAll(elements: Collection<(KtElement..KtElement?)>): Boolean defined in kotlin.collections.MutableSet[DeserializedSimpleFunctionDescriptor]
 
 'currentValue' @ [168:44] ==> value-parameter currentValue: OutputValue defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch.matchValues[ValueParameterDescriptorImpl]
 
@@ -601,7 +595,7 @@ Inferred types:
 
 'valueCount' @ [185:43] ==> val valueCount: Int defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch[LocalVariableDescriptor]
 
-'weakMatches' @ [185:57] ==> val weakMatches: HashMap<KtElement, KtElement> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch[LocalVariableDescriptor]
+'weakMatches' @ [185:57] ==> val weakMatches: HashMap<(KtElement..KtElement?), (KtElement..KtElement?)> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.findDuplicates.processWeakMatch[LocalVariableDescriptor]
 
 'isEmpty' @ [185:69] ==> public open fun isEmpty(): Boolean defined in java.util.HashMap[JavaMethodDescriptor]
 
@@ -706,7 +700,7 @@ Inferred types:
 
 'emptyList' @ [209:71] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(DuplicateInfo..DuplicateInfo?)>..List<(DuplicateInfo..DuplicateInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DuplicateInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.DuplicateInfo..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.DuplicateInfo?)
 
 'extractionData' @ [210:29] ==> public final val extractionData: ExtractionData defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractableCodeDescriptor[PropertyDescriptorImpl]
 
@@ -868,15 +862,11 @@ Inferred types:
 
 'operationExpression' @ [245:43] ==> val operationExpression: KtOperationExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.makeCall.insertCall[LocalVariableDescriptor]
 
-'OperatorToFunctionIntention' @ [246:41] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.OperatorToFunctionIntention[FakeCallableDescriptorForObject]
-
 'convert' @ [246:69] ==> public final fun convert(element: KtExpression): Pair<KtExpression, KtSimpleNameExpression> defined in org.jetbrains.kotlin.idea.intentions.OperatorToFunctionIntention.Companion[DeserializedSimpleFunctionDescriptor]
 
 'operationExpression' @ [246:77] ==> val operationExpression: KtOperationExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.makeCall.insertCall[LocalVariableDescriptor]
 
 'second' @ [246:98] ==> public final val second: KtSimpleNameExpression defined in kotlin.Pair[DeserializedPropertyDescriptor]
-
-'InfixCallToOrdinaryIntention' @ [248:21] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.InfixCallToOrdinaryIntention[FakeCallableDescriptorForObject]
 
 'convert' @ [248:50] ==> public final fun convert(element: KtBinaryExpression): KtExpression defined in org.jetbrains.kotlin.idea.intentions.InfixCallToOrdinaryIntention.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1419,7 +1409,7 @@ Inferred types:
 
 'singletonList' @ [347:29] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KtExpression..KtExpression?)): (MutableList<(KtExpression..KtExpression?)>..List<(KtExpression..KtExpression?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'psiFactory' @ [347:43] ==> val psiFactory: KtPsiFactory defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.makeCall[LocalVariableDescriptor]
 
@@ -1429,7 +1419,7 @@ Inferred types:
 
 'singletonList' @ [351:29] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KtExpression..KtExpression?)): (MutableList<(KtExpression..KtExpression?)>..List<(KtExpression..KtExpression?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'psiFactory' @ [352:25] ==> val psiFactory: KtPsiFactory defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.makeCall[LocalVariableDescriptor]
 
@@ -1453,9 +1443,9 @@ Inferred types:
                             newLine,
                             psiFactory.createExpression(outputValue.elementToInsertAfterCall.text!!)
                     )
-                }' @ [356:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: List<PsiElement>, entry1: List<PsiElement>, entry2: List<PsiElement>): List<PsiElement>[SimpleFunctionDescriptorImpl]
+                }' @ [356:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (List<(PsiElement..PsiElement?)>..List<(PsiElement..PsiElement?)>?), entry1: (List<(PsiElement..PsiElement?)>..List<(PsiElement..PsiElement?)>?), entry2: (List<(PsiElement..PsiElement?)>..List<(PsiElement..PsiElement?)>?)): (List<(PsiElement..PsiElement?)>..List<(PsiElement..PsiElement?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> List<PsiElement>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.collections.List<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..kotlin.collections.List<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)
 
 'outputValue' @ [357:21] ==> value-parameter outputValue: OutputValue defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.makeCall.wrapCall[ValueParameterDescriptorImpl]
 
@@ -1463,7 +1453,7 @@ Inferred types:
 
 'singletonList' @ [357:81] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KtExpression..KtExpression?)): (MutableList<(KtExpression..KtExpression?)>..List<(KtExpression..KtExpression?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'psiFactory' @ [357:95] ==> val psiFactory: KtPsiFactory defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.makeCall[LocalVariableDescriptor]
 
@@ -1477,7 +1467,7 @@ Inferred types:
 
 'singletonList' @ [358:60] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KtExpression..KtExpression?)): (MutableList<(KtExpression..KtExpression?)>..List<(KtExpression..KtExpression?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'psiFactory' @ [359:29] ==> val psiFactory: KtPsiFactory defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.makeCall[LocalVariableDescriptor]
 
@@ -1531,7 +1521,7 @@ Inferred types:
 
 'emptyList' @ [372:29] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(PsiElement..PsiElement?)>..List<(PsiElement..PsiElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'IllegalArgumentException' @ [375:27] ==> public final fun <init>(p0: (String..String?)): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.IllegalArgumentException[TypeAliasConstructorDescriptorImpl]
 
@@ -1643,23 +1633,17 @@ Inferred types:
 
 'delete' @ [402:16] ==> public abstract fun delete(): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 
-'NotNullableCopyableUserDataProperty' @ [407:12] ==> public constructor NotNullableCopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtExpression
-    <T : Any> -> Boolean
+'getValue' @ [407:12] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [407:52] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
-'NotNullableCopyableUserDataProperty' @ [410:12] ==> public constructor NotNullableCopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtReturnExpression
-    <T : Any> -> Boolean
+'getValue' @ [410:12] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [410:52] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'KtPsiFactory' @ [415:22] ==> @JvmOverloads public fun KtPsiFactory(elementForProject: PsiElement, markGenerated: Boolean = ...): KtPsiFactory defined in org.jetbrains.kotlin.psi[DeserializedSimpleFunctionDescriptor]
 
@@ -1864,7 +1848,7 @@ Inferred types:
 
 'declaration' @ [458:20] ==> value-parameter declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.generateDeclaration.adjustDeclarationBody[ValueParameterDescriptorImpl]
 
-'getGeneratedBody' @ [458:32] ==> internal fun KtNamedDeclaration.getGeneratedBody(): KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'getGeneratedBody' @ [458:32] ==> internal fun KtNamedDeclaration.getGeneratedBody(): KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractableAnalysisUtil.kt[SimpleFunctionDescriptorImpl]
 
 'body' @ [460:10] ==> val body: KtExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.generateDeclaration.adjustDeclarationBody[LocalVariableDescriptor]
 
@@ -2027,7 +2011,7 @@ Inferred types:
 
 'originalRef' @ [497:52] ==> val originalRef: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.generateDeclaration.adjustDeclarationBody.<anonymous>[LocalVariableDescriptor]
 
-'fold' @ [498:22] ==> public inline fun <T, R> Iterable<(Replacement..Replacement?)>.fold(initial: KtElement, operation: (KtElement, (Replacement..Replacement?)) -> KtElement): KtElement defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [498:22] ==> public inline fun <T, R> Iterable<(Replacement..Replacement?)>.fold(initial: KtElement, operation: (acc: KtElement, (Replacement..Replacement?)) -> KtElement): KtElement defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.Replacement..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.Replacement?)
     <R> -> KtElement
@@ -2049,8 +2033,6 @@ Inferred types:
 'generatorOptions' @ [502:13] ==> public final val generatorOptions: ExtractionGeneratorOptions defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorConfiguration[PropertyDescriptorImpl]
 
 'target' @ [502:30] ==> public final val target: ExtractionTarget defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorOptions[PropertyDescriptorImpl]
-
-'ExtractionTarget' @ [502:40] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
 'PROPERTY_WITH_INITIALIZER' @ [502:57] ==> enum entry PROPERTY_WITH_INITIALIZER defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
@@ -2443,9 +2425,9 @@ Inferred types:
 
 'anchor' @ [575:62] ==> value-parameter anchor: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.generateDeclaration.insertDeclaration[ValueParameterDescriptorImpl]
 
-'if (generatorOptions.inTempFile) Collections.emptyList() else descriptor.duplicates' @ [582:22] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<DuplicateInfo>..List<DuplicateInfo>?), elseBranch: (List<DuplicateInfo>..List<DuplicateInfo>?)): (List<DuplicateInfo>..List<DuplicateInfo>?)[SimpleFunctionDescriptorImpl]
+'if (generatorOptions.inTempFile) Collections.emptyList() else descriptor.duplicates' @ [582:22] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<DuplicateInfo>, elseBranch: List<DuplicateInfo>): List<DuplicateInfo>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.List<org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.DuplicateInfo>..kotlin.collections.List<org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.DuplicateInfo>?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<DuplicateInfo>
 
 'generatorOptions' @ [582:26] ==> public final val generatorOptions: ExtractionGeneratorOptions defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorConfiguration[PropertyDescriptorImpl]
 
@@ -2453,7 +2435,7 @@ Inferred types:
 
 'emptyList' @ [582:67] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(DuplicateInfo..DuplicateInfo?)>..List<(DuplicateInfo..DuplicateInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DuplicateInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.DuplicateInfo..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.DuplicateInfo?)
 
 'descriptor' @ [582:84] ==> public final val descriptor: ExtractableCodeDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorConfiguration[PropertyDescriptorImpl]
 
@@ -2472,7 +2454,7 @@ Inferred types:
 
 'parent' @ [585:42] ==> public final val PsiElement.parent: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'duplicates' @ [587:32] ==> val duplicates: (List<DuplicateInfo>..List<DuplicateInfo>?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.generateDeclaration[LocalVariableDescriptor]
+'duplicates' @ [587:32] ==> val duplicates: List<DuplicateInfo> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.generateDeclaration[LocalVariableDescriptor]
 
 'mapTo' @ [587:43] ==> public inline fun <T, R, C : MutableCollection<in PsiElement>> Iterable<DuplicateInfo>.mapTo(destination: ArrayList<PsiElement>, transform: (DuplicateInfo) -> PsiElement): ArrayList<PsiElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -2574,8 +2556,6 @@ Inferred types:
 'generatorOptions' @ [604:57] ==> public final val generatorOptions: ExtractionGeneratorOptions defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorConfiguration[PropertyDescriptorImpl]
 
 'target' @ [604:74] ==> public final val target: ExtractionTarget defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorOptions[PropertyDescriptorImpl]
-
-'ExtractionTarget' @ [604:84] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
 'FAKE_LAMBDALIKE_FUNCTION' @ [604:101] ==> enum entry FAKE_LAMBDALIKE_FUNCTION defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
@@ -2680,8 +2660,8 @@ Inferred types:
 
 'emptyMap' @ [620:93] ==> public final fun <K : (Any..Any?), V : (Any..Any?)> emptyMap(): (MutableMap<(KotlinPsiRange..KotlinPsiRange?), (() -> Unit..(() -> Unit)?)>..Map<(KotlinPsiRange..KotlinPsiRange?), (() -> Unit..(() -> Unit)?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KotlinPsiRange
-    <V : (Any..Any?)> -> Function0<Unit>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange..org.jetbrains.kotlin.idea.util.psi.patternMatching.KotlinPsiRange?)
+    <V : (Any..Any?)> -> (() -> kotlin.Unit..(() -> kotlin.Unit)?)
 
 'descriptor' @ [623:25] ==> public final val descriptor: ExtractableCodeDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorConfiguration[PropertyDescriptorImpl]
 
@@ -2696,7 +2676,7 @@ Inferred types:
 
 'argumentText' @ [623:56] ==> public abstract val argumentText: String defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.Parameter[PropertyDescriptorImpl]
 
-'makeCall' @ [624:9] ==> private fun makeCall(extractableDescriptor: ExtractableCodeDescriptor, declaration: KtNamedDeclaration, controlFlow: ControlFlow, rangeToReplace: KotlinPsiRange, arguments: List<String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'makeCall' @ [624:9] ==> private fun makeCall(extractableDescriptor: ExtractableCodeDescriptor, declaration: KtNamedDeclaration, controlFlow: ControlFlow, rangeToReplace: KotlinPsiRange, arguments: List<String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractorUtil.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [624:18] ==> public final val descriptor: ExtractableCodeDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorConfiguration[PropertyDescriptorImpl]
 
@@ -2775,7 +2755,7 @@ Inferred types:
     <K> -> KotlinPsiRange
     <V> -> Function0<Unit>
 
-'duplicates' @ [639:16] ==> val duplicates: (List<DuplicateInfo>..List<DuplicateInfo>?) defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.generateDeclaration[LocalVariableDescriptor]
+'duplicates' @ [639:16] ==> val duplicates: List<DuplicateInfo> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.generateDeclaration[LocalVariableDescriptor]
 
 'map' @ [639:27] ==> public inline fun <T, R> Iterable<DuplicateInfo>.map(transform: (DuplicateInfo) -> Pair<KotlinPsiRange, () -> Unit>): List<Pair<KotlinPsiRange, () -> Unit>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -2786,7 +2766,7 @@ Inferred types:
 
 'range' @ [639:36] ==> public final val range: KotlinPsiRange defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.DuplicateInfo[PropertyDescriptorImpl]
 
-'makeCall' @ [639:47] ==> private fun makeCall(extractableDescriptor: ExtractableCodeDescriptor, declaration: KtNamedDeclaration, controlFlow: ControlFlow, rangeToReplace: KotlinPsiRange, arguments: List<String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'makeCall' @ [639:47] ==> private fun makeCall(extractableDescriptor: ExtractableCodeDescriptor, declaration: KtNamedDeclaration, controlFlow: ControlFlow, rangeToReplace: KotlinPsiRange, arguments: List<String>): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractorUtil.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [639:56] ==> public final val descriptor: ExtractableCodeDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorConfiguration[PropertyDescriptorImpl]
 

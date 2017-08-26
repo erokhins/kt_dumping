@@ -6,7 +6,7 @@
 
 'returnType' @ [27:71] ==> public open val returnType: Type defined in org.jetbrains.kotlin.codegen.CallableMethod[PropertyDescriptorImpl]
 
-'createUnaryIntrinsicCallable' @ [28:16] ==> public fun createUnaryIntrinsicCallable(callable: CallableMethod, newReturnType: Type? = ..., needPrimitiveCheck: Boolean = ..., newThisType: Type? = ..., invoke: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics[SimpleFunctionDescriptorImpl]
+'createUnaryIntrinsicCallable' @ [28:16] ==> public fun createUnaryIntrinsicCallable(callable: CallableMethod, newReturnType: Type? = ..., needPrimitiveCheck: Boolean = ..., newThisType: Type? = ..., invoke: IntrinsicCallable.(v: InstructionAdapter) -> Unit): IntrinsicCallable defined in org.jetbrains.kotlin.codegen.intrinsics in file IntrinsicCallable.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [28:45] ==> value-parameter method: CallableMethod defined in org.jetbrains.kotlin.codegen.intrinsics.Inv.toCallable[ValueParameterDescriptorImpl]
 

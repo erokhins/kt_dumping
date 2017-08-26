@@ -282,8 +282,6 @@ Inferred types:
 
 'packageFragment' @ [106:21] ==> private final val packageFragment: IrBuiltinsPackageFragmentDescriptorImpl defined in org.jetbrains.kotlin.ir.descriptors.IrBuiltIns[PropertyDescriptorImpl]
 
-'Annotations' @ [107:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [107:33] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'identifier' @ [108:26] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
@@ -300,8 +298,6 @@ Inferred types:
 
 'this' @ [113:25] ==> <this> defined in org.jetbrains.kotlin.ir.descriptors.IrBuiltIns.createEnumValueOfFun.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'Annotations' @ [113:31] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [113:43] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'INVARIANT' @ [113:65] ==> enum entry INVARIANT defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
@@ -311,8 +307,6 @@ Inferred types:
 'ValueParameterDescriptorImpl' @ [116:42] ==> public constructor ValueParameterDescriptorImpl(containingDeclaration: CallableDescriptor, original: ValueParameterDescriptor?, index: Int, annotations: Annotations, name: Name, outType: KotlinType, declaresDefaultValue: Boolean, isCrossinline: Boolean, isNoinline: Boolean, varargElementType: KotlinType?, source: SourceElement) defined in org.jetbrains.kotlin.descriptors.impl.ValueParameterDescriptorImpl[DeserializedClassConstructorDescriptor]
 
 'this' @ [117:25] ==> <this> defined in org.jetbrains.kotlin.ir.descriptors.IrBuiltIns.createEnumValueOfFun.<anonymous>[ReceiverParameterDescriptorImpl]
-
-'Annotations' @ [117:40] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [117:52] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -327,8 +321,6 @@ Inferred types:
 'KotlinTypeFactory' @ [121:34] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
 
 'simpleType' @ [121:52] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [121:63] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [121:75] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -355,8 +347,6 @@ Inferred types:
 'valueParameterName' @ [123:71] ==> val valueParameterName: ValueParameterDescriptorImpl defined in org.jetbrains.kotlin.ir.descriptors.IrBuiltIns.createEnumValueOfFun.<anonymous>[LocalVariableDescriptor]
 
 'returnType' @ [123:92] ==> val returnType: SimpleType defined in org.jetbrains.kotlin.ir.descriptors.IrBuiltIns.createEnumValueOfFun.<anonymous>[LocalVariableDescriptor]
-
-'Modality' @ [123:104] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [123:113] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

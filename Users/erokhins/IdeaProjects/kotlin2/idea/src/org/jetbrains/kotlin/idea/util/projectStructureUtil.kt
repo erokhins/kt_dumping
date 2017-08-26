@@ -12,7 +12,7 @@ Inferred types:
 
 'this' @ [32:98] ==> <this> defined in org.jetbrains.kotlin.idea.util.projectStructure.findLibrary[ReceiverParameterDescriptorImpl]
 
-'findLibrary' @ [32:104] ==> public fun OrderEnumerator.findLibrary(predicate: (Library) -> Boolean): Library? defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'findLibrary' @ [32:104] ==> public fun OrderEnumerator.findLibrary(predicate: (Library) -> Boolean): Library? defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [32:116] ==> value-parameter predicate: (Library) -> Boolean defined in org.jetbrains.kotlin.idea.util.projectStructure.findLibrary[ValueParameterDescriptorImpl]
 

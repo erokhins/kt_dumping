@@ -6,7 +6,7 @@
 
 'deserialize' @ [31:38] ==> @NotNull public open fun <T : (Any..Any?)> deserialize(@NotNull p0: Element, @NotNull p1: Class<(K2JSCompilerArguments..K2JSCompilerArguments?)>): K2JSCompilerArguments defined in com.intellij.util.xmlb.XmlSerializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> K2JSCompilerArguments
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.arguments.K2JSCompilerArguments..org.jetbrains.kotlin.cli.common.arguments.K2JSCompilerArguments?)
 
 'componentTag' @ [31:50] ==> value-parameter componentTag: Element defined in org.jetbrains.kotlin.jps.model.Kotlin2JsCompilerArgumentsSerializer.loadExtension[ValueParameterDescriptorImpl]
 

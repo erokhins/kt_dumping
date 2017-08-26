@@ -40,7 +40,7 @@ Inferred types:
 
 'resultingDescriptor' @ [57:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'descriptor' @ [58:31] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.resolve.calls.checkers.AbstractReflectionApiCallChecker.check[LocalVariableDescriptor]
 
@@ -79,8 +79,6 @@ Inferred types:
 'ANY_MEMBER_NAMES' @ [68:35] ==> private val ANY_MEMBER_NAMES: Set<String> defined in org.jetbrains.kotlin.resolve.calls.checkers in file AbstractReflectionApiCallChecker.kt[PropertyDescriptorImpl]
 
 'name' @ [69:13] ==> val name: Name defined in org.jetbrains.kotlin.resolve.calls.checkers.AbstractReflectionApiCallChecker.isAllowedReflectionApi[LocalVariableDescriptor]
-
-'OperatorNameConventions' @ [69:21] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'INVOKE' @ [69:45] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 

@@ -14,8 +14,6 @@
 
 'classDescriptor' @ [52:21] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.android.parcel.ParcelableResolveExtension.Companion.createMethod[ValueParameterDescriptorImpl]
 
-'Annotations' @ [54:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [54:33] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'identifier' @ [55:26] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
@@ -69,8 +67,6 @@ Inferred types:
 
 'returnType' @ [66:21] ==> value-parameter returnType: KotlinType defined in org.jetbrains.kotlin.android.parcel.ParcelableResolveExtension.Companion.createMethod[ValueParameterDescriptorImpl]
 
-'Modality' @ [66:33] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [66:42] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [66:62] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -82,8 +78,6 @@ Inferred types:
 'this' @ [73:21] ==> <this> defined in org.jetbrains.kotlin.android.parcel.ParcelableResolveExtension.Companion.makeValueParameter[ReceiverParameterDescriptorImpl]
 
 'index' @ [73:33] ==> value-parameter index: Int defined in org.jetbrains.kotlin.android.parcel.ParcelableResolveExtension.Companion.makeValueParameter[ValueParameterDescriptorImpl]
-
-'Annotations' @ [73:40] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [73:52] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -133,8 +127,6 @@ Inferred types:
 
 'asString' @ [92:18] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'DESCRIBE_CONTENTS' @ [92:32] ==> enum entry DESCRIBE_CONTENTS defined in org.jetbrains.kotlin.android.parcel.ParcelableSyntheticComponent.ComponentKind[FakeCallableDescriptorForObject]
-
 'methodName' @ [92:50] ==> public final val methodName: String defined in org.jetbrains.kotlin.android.parcel.ParcelableSyntheticComponent.ComponentKind[PropertyDescriptorImpl]
 
 'clazz' @ [93:20] ==> value-parameter clazz: ClassDescriptor defined in org.jetbrains.kotlin.android.parcel.ParcelableResolveExtension.generateSyntheticMethods[ValueParameterDescriptorImpl]
@@ -170,8 +162,6 @@ Inferred types:
 'name' @ [98:20] ==> value-parameter name: Name defined in org.jetbrains.kotlin.android.parcel.ParcelableResolveExtension.generateSyntheticMethods[ValueParameterDescriptorImpl]
 
 'asString' @ [98:25] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
-
-'WRITE_TO_PARCEL' @ [98:39] ==> enum entry WRITE_TO_PARCEL defined in org.jetbrains.kotlin.android.parcel.ParcelableSyntheticComponent.ComponentKind[FakeCallableDescriptorForObject]
 
 'methodName' @ [98:55] ==> public final val methodName: String defined in org.jetbrains.kotlin.android.parcel.ParcelableSyntheticComponent.ComponentKind[PropertyDescriptorImpl]
 
@@ -260,7 +250,7 @@ Inferred types:
 
 'type' @ [119:34] ==> public final val ValueParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'isParcel' @ [119:39] ==> private fun KotlinType.isParcel(): Boolean defined in org.jetbrains.kotlin.android.parcel[SimpleFunctionDescriptorImpl]
+'isParcel' @ [119:39] ==> private fun KotlinType.isParcel(): Boolean defined in org.jetbrains.kotlin.android.parcel in file ParcelableResolveExtension.kt[SimpleFunctionDescriptorImpl]
 
 'isInt' @ [120:30] ==> public open fun isInt(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 

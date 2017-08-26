@@ -237,8 +237,6 @@ Inferred types:
 
 'modality' @ [139:83] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [139:95] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [139:104] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'functionDescriptor' @ [140:34] ==> value-parameter functionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.quickfix.AddFunctionToSupertypeFix.Companion.createFunctionData[ValueParameterDescriptorImpl]
@@ -315,8 +313,6 @@ Inferred types:
 'classDescriptor' @ [156:85] ==> val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.idea.quickfix.AddFunctionToSupertypeFix.Companion.createFunctionData[LocalVariableDescriptor]
 
 'FunctionData' @ [157:20] ==> public constructor FunctionData(signaturePreview: String, sourceCode: String, targetClass: KtClass) defined in org.jetbrains.kotlin.idea.quickfix.AddFunctionToSupertypeFix.FunctionData[ClassConstructorDescriptorImpl]
-
-'IdeDescriptorRenderers' @ [158:21] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE_SHORT_NAMES_IN_TYPES' @ [158:44] ==> @field:JvmField public final val SOURCE_CODE_SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -448,8 +444,6 @@ Inferred types:
 'kind' @ [193:47] ==> public final val ClassDescriptor.kind: ClassKind[MyPropertyDescriptor]
 
 'INTERFACE' @ [193:65] ==> enum entry INTERFACE defined in org.jetbrains.kotlin.descriptors.ClassKind[FakeCallableDescriptorForObject]
-
-'Modality' @ [193:76] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [193:85] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

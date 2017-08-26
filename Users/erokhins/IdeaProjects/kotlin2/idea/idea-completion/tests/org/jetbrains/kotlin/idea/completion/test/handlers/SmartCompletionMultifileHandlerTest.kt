@@ -82,6 +82,8 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.codeInsight.lookup.LookupElement..com.intellij.codeInsight.lookup.LookupElement?)
 
+'isMatching' @ [59:42] ==> local final fun isMatching(lookupElement: LookupElement): Boolean defined in org.jetbrains.kotlin.idea.completion.test.handlers.SmartCompletionMultifileHandlerTest.doTest[SimpleFunctionDescriptorImpl]
+
 'when (items.size) {
                 0 -> fail("No matching items found")
                 1 -> selectItem(myItems[0])

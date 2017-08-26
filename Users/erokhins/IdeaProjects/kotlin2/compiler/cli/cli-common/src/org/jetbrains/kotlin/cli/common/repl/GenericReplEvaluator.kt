@@ -213,7 +213,7 @@ Inferred types:
 
 'java' @ [76:83] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'historyActor' @ [78:30] ==> val historyActor: HistoryActionsForNoRepeat defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluator.eval.<anonymous>[LocalVariableDescriptor]
 
@@ -237,9 +237,9 @@ Inferred types:
 Inferred types:
     <reified @PureReifiable T> -> Class<*>
 
-'Array' @ [80:89] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [80:89] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@69fc9b4b
 
 'java' @ [80:107] ==> public val <T> KClass<Array<Any>>.java: Class<Array<Any>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -351,7 +351,7 @@ Inferred types:
 
 'kotlin' @ [90:106] ==> public val <T : Any> Class<out Any>.kotlin: KClass<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> Captured(out Any)
 
 'classLoader' @ [90:120] ==> val classLoader: ClassLoader defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluator.eval.<anonymous>[LocalVariableDescriptor]
 
@@ -396,7 +396,7 @@ Inferred types:
 
 'name' @ [99:135] ==> public final val <T : (Any..Any?)> Class<out Any>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'e' @ [99:151] ==> val e: InvocationTargetException defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluator.eval.<anonymous>[LocalVariableDescriptor]
 
@@ -416,7 +416,7 @@ Inferred types:
 
 'name' @ [103:135] ==> public final val <T : (Any..Any?)> Class<out Any>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'e' @ [103:151] ==> val e: Throwable defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluator.eval.<anonymous>[LocalVariableDescriptor]
 
@@ -442,7 +442,7 @@ Inferred types:
 
 'kotlin' @ [109:100] ==> public val <T : Any> Class<out Any>.kotlin: KClass<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> Captured(out Any)
 
 'scriptInstance' @ [109:108] ==> val scriptInstance: (Any..Any?) defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluator.eval.<anonymous>[LocalVariableDescriptor]
 
@@ -477,8 +477,6 @@ Inferred types:
 
 'hasResult' @ [114:38] ==> public final val hasResult: Boolean defined in org.jetbrains.kotlin.cli.common.repl.ReplCompileResult.CompiledClasses[PropertyDescriptorImpl]
 
-'ReplEvalResult' @ [114:49] ==> public companion object defined in org.jetbrains.kotlin.cli.common.repl.ReplEvalResult[FakeCallableDescriptorForObject]
-
 'ValueResult' @ [114:64] ==> public constructor ValueResult(value: Any?, type: String?) defined in org.jetbrains.kotlin.cli.common.repl.ReplEvalResult.ValueResult[ClassConstructorDescriptorImpl]
 
 'resultValue' @ [114:76] ==> val resultValue: Any? defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluator.eval.<anonymous>[LocalVariableDescriptor]
@@ -486,8 +484,6 @@ Inferred types:
 'compileResult' @ [114:89] ==> value-parameter compileResult: ReplCompileResult.CompiledClasses defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluator.eval[ValueParameterDescriptorImpl]
 
 'type' @ [114:103] ==> public final val type: String? defined in org.jetbrains.kotlin.cli.common.repl.ReplCompileResult.CompiledClasses[PropertyDescriptorImpl]
-
-'ReplEvalResult' @ [115:18] ==> public companion object defined in org.jetbrains.kotlin.cli.common.repl.ReplEvalResult[FakeCallableDescriptorForObject]
 
 'UnitResult' @ [115:33] ==> public constructor UnitResult() defined in org.jetbrains.kotlin.cli.common.repl.ReplEvalResult.UnitResult[ClassConstructorDescriptorImpl]
 
@@ -548,7 +544,7 @@ Inferred types:
 
 'compileResult' @ [137:167] ==> value-parameter compileResult: ReplCompileResult.CompiledClasses defined in org.jetbrains.kotlin.cli.common.repl.HistoryActionsForNoRepeat.processClasses[ValueParameterDescriptorImpl]
 
-'makeReplClassLoader' @ [143:27] ==> internal fun makeReplClassLoader(baseClassloader: ClassLoader?, baseClasspath: Iterable<File>): ReplClassLoader defined in org.jetbrains.kotlin.cli.common.repl[SimpleFunctionDescriptorImpl]
+'makeReplClassLoader' @ [143:27] ==> internal fun makeReplClassLoader(baseClassloader: ClassLoader?, baseClasspath: Iterable<File>): ReplClassLoader defined in org.jetbrains.kotlin.cli.common.repl in file GenericEvaluatorState.kt[SimpleFunctionDescriptorImpl]
 
 'effectiveHistory' @ [143:47] ==> value-parameter effectiveHistory: List<EvalClassWithInstanceAndLoader> defined in org.jetbrains.kotlin.cli.common.repl.HistoryActionsForNoRepeat.prependClassLoaderWithNewClasses[ValueParameterDescriptorImpl]
 
@@ -665,10 +661,10 @@ Inferred types:
 
 't' @ [160:113] ==> val t: Throwable defined in org.jetbrains.kotlin.cli.common.repl.HistoryActionsForNoRepeat.prependClassLoaderWithNewClasses[LocalVariableDescriptor]
 
-'Pair' @ [162:16] ==> public constructor Pair<out A, out B>(first: ReplClassLoader, second: Class<out (Any..Any?)>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [162:16] ==> public constructor Pair<out A, out B>(first: ReplClassLoader, second: (Class<*>..Class<*>?)) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> ReplClassLoader
-    <out B> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <out B> -> (java.lang.Class<*>..java.lang.Class<*>?)
 
 'classLoader' @ [162:21] ==> val classLoader: ReplClassLoader defined in org.jetbrains.kotlin.cli.common.repl.HistoryActionsForNoRepeat.prependClassLoaderWithNewClasses[LocalVariableDescriptor]
 
@@ -740,7 +736,7 @@ Inferred types:
 
 'java' @ [185:68] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'HistoryActionsForNoRepeat' @ [188:151] ==> public constructor HistoryActionsForNoRepeat(state: GenericReplEvaluatorState) defined in org.jetbrains.kotlin.cli.common.repl.HistoryActionsForNoRepeat[ClassConstructorDescriptorImpl]
 
@@ -863,5 +859,5 @@ Inferred types:
 
 'java' @ [210:70] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 

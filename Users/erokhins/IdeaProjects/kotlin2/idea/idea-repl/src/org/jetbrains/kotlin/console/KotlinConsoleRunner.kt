@@ -24,7 +24,9 @@ Inferred types:
 
 'virtualFile' @ [92:76] ==> public final val LanguageConsoleView.virtualFile: VirtualFile[MyPropertyDescriptor]
 
-'KotlinScriptDefinitionProvider' @ [93:9] ==> public companion object defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider[FakeCallableDescriptorForObject]
+'!!' @ [93:9] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KotlinScriptDefinitionProvider?): KotlinScriptDefinitionProvider[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KotlinScriptDefinitionProvider
 
 'getInstance' @ [93:40] ==> @JvmStatic public final fun getInstance(project: Project): KotlinScriptDefinitionProvider? defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -59,13 +61,9 @@ Inferred types:
 
 'changeConsoleEditorIndicator' @ [109:17] ==> public final fun changeConsoleEditorIndicator(newIconWithTooltip: IconWithTooltip): Unit defined in org.jetbrains.kotlin.console.KotlinConsoleRunner[SimpleFunctionDescriptorImpl]
 
-'ReplIcons' @ [109:46] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
-
 'EDITOR_READLINE_INDICATOR' @ [109:56] ==> public final val EDITOR_READLINE_INDICATOR: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 
 'changeConsoleEditorIndicator' @ [111:17] ==> public final fun changeConsoleEditorIndicator(newIconWithTooltip: IconWithTooltip): Unit defined in org.jetbrains.kotlin.console.KotlinConsoleRunner[SimpleFunctionDescriptorImpl]
-
-'ReplIcons' @ [111:46] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
 
 'EDITOR_INDICATOR' @ [111:56] ==> public final val EDITOR_INDICATOR: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 
@@ -145,7 +143,7 @@ Inferred types:
 
 'putUserData' @ [140:33] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Boolean..Boolean?)>, @Nullable p1: Boolean?): Unit defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'KOTLIN_CONSOLE_KEY' @ [140:45] ==> public val KOTLIN_CONSOLE_KEY: Key<(Boolean..Boolean?)> defined in org.jetbrains.kotlin.idea.project[DeserializedPropertyDescriptor]
 
@@ -205,7 +203,9 @@ Inferred types:
 
 'component' @ [153:103] ==> public final val EditorEx.component: JComponent[MyPropertyDescriptor]
 
-'KotlinScriptDefinitionProvider' @ [155:9] ==> public companion object defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider[FakeCallableDescriptorForObject]
+'!!' @ [155:9] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KotlinScriptDefinitionProvider?): KotlinScriptDefinitionProvider[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KotlinScriptDefinitionProvider
 
 'getInstance' @ [155:40] ==> @JvmStatic public final fun getInstance(project: Project): KotlinScriptDefinitionProvider? defined in org.jetbrains.kotlin.script.KotlinScriptDefinitionProvider.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -435,11 +435,7 @@ Inferred types:
 
 'historyEditor' @ [233:31] ==> val historyEditor: EditorEx defined in org.jetbrains.kotlin.console.KotlinConsoleRunner.setupGutters[LocalVariableDescriptor]
 
-'ReplColors' @ [233:46] ==> public object ReplColors defined in org.jetbrains.kotlin.console in file ReplColors.kt[FakeCallableDescriptorForObject]
-
 'HISTORY_GUTTER_COLOR' @ [233:57] ==> public final val HISTORY_GUTTER_COLOR: JBColor defined in org.jetbrains.kotlin.console.ReplColors[PropertyDescriptorImpl]
-
-'ReplIcons' @ [233:79] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
 
 'HISTORY_INDICATOR' @ [233:89] ==> public final val HISTORY_INDICATOR: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 
@@ -449,11 +445,7 @@ Inferred types:
 
 'consoleEditor' @ [234:58] ==> val consoleEditor: EditorEx defined in org.jetbrains.kotlin.console.KotlinConsoleRunner.setupGutters[LocalVariableDescriptor]
 
-'ReplColors' @ [234:73] ==> public object ReplColors defined in org.jetbrains.kotlin.console in file ReplColors.kt[FakeCallableDescriptorForObject]
-
 'EDITOR_GUTTER_COLOR' @ [234:84] ==> public final val EDITOR_GUTTER_COLOR: JBColor defined in org.jetbrains.kotlin.console.ReplColors[PropertyDescriptorImpl]
-
-'ReplIcons' @ [234:105] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
 
 'EDITOR_INDICATOR' @ [234:115] ==> public final val EDITOR_INDICATOR: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 
@@ -505,7 +497,7 @@ Inferred types:
 
 'indicatorHighlighter' @ [250:16] ==> val indicatorHighlighter: RangeHighlighter defined in org.jetbrains.kotlin.console.KotlinConsoleRunner.addGutterIndicator[LocalVariableDescriptor]
 
-'apply' @ [250:37] ==> @InlineOnly public inline fun <T> RangeHighlighter.apply(block: RangeHighlighter.() -> Unit): RangeHighlighter defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [250:37] ==> @InlineOnly public inline fun <T> RangeHighlighter.apply(block: (RangeHighlighter).() -> Unit): RangeHighlighter defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> RangeHighlighter
 

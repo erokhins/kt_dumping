@@ -14,7 +14,7 @@
 
 'create' @ [37:41] ==> @Nullable public open fun <T : (FileBasedKotlinClass..FileBasedKotlinClass?)> create(@NotNull p0: ByteArray, @NotNull p1: ((ClassId..ClassId?), (Int..Int?), (KotlinClassHeader..KotlinClassHeader?), (FileBasedKotlinClass.InnerClassesInfo..FileBasedKotlinClass.InnerClassesInfo?)) -> (LocalFileKotlinClass..LocalFileKotlinClass?)): LocalFileKotlinClass? defined in org.jetbrains.kotlin.load.kotlin.FileBasedKotlinClass[JavaMethodDescriptor]
 Inferred types:
-    <T : (FileBasedKotlinClass..FileBasedKotlinClass?)> -> LocalFileKotlinClass
+    <T : (FileBasedKotlinClass..FileBasedKotlinClass?)> -> (org.jetbrains.kotlin.incremental.LocalFileKotlinClass..org.jetbrains.kotlin.incremental.LocalFileKotlinClass?)
 
 'fileContents' @ [37:48] ==> val fileContents: ByteArray defined in org.jetbrains.kotlin.incremental.LocalFileKotlinClass.Companion.create[LocalVariableDescriptor]
 
@@ -32,9 +32,9 @@ Inferred types:
 
 'innerClasses' @ [39:96] ==> value-parameter innerClasses: (FileBasedKotlinClass.InnerClassesInfo..FileBasedKotlinClass.InnerClassesInfo?) defined in org.jetbrains.kotlin.incremental.LocalFileKotlinClass.Companion.create.<anonymous>[ValueParameterDescriptorImpl]
 
-'lazy' @ [44:36] ==> public fun <T> lazy(initializer: () -> JvmClassName): Lazy<JvmClassName> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [44:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JvmClassName
+    <T> -> T
 
 'byClassId' @ [44:56] ==> @NotNull public open fun byClassId(@NotNull p0: ClassId): JvmClassName defined in org.jetbrains.kotlin.resolve.jvm.JvmClassName[JavaMethodDescriptor]
 
@@ -62,7 +62,7 @@ Inferred types:
 
 'java' @ [53:54] ==> public val <T> KClass<out LocalFileKotlinClass>.java: Class<out LocalFileKotlinClass> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> LocalFileKotlinClass
+    <T> -> Captured(out LocalFileKotlinClass)
 
 'file' @ [53:62] ==> private final val file: File defined in org.jetbrains.kotlin.incremental.LocalFileKotlinClass[PropertyDescriptorImpl]
 

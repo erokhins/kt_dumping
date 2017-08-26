@@ -19,11 +19,7 @@ Inferred types:
 
 'computeDescriptorsFromDeclaredElements' @ [55:9] ==> protected final fun computeDescriptorsFromDeclaredElements(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean, location: LookupLocation): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [55:48] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'ALL' @ [55:69] ==> @field:JvmField public final val ALL: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'MemberScope' @ [55:74] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'ALL_NAME_FILTER' @ [55:86] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 
@@ -41,17 +37,17 @@ Inferred types:
 
 'LinkedHashSet' @ [63:22] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> DeclarationDescriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'invoke' @ [63:36] ==> public abstract fun invoke(): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.storage.NotNullLazyValue[FunctionInvokeDescriptor]
 
-'result' @ [64:9] ==> val result: LinkedHashSet<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.getContributedDescriptors[LocalVariableDescriptor]
+'result' @ [64:9] ==> val result: LinkedHashSet<(DeclarationDescriptor..DeclarationDescriptor?)> defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.getContributedDescriptors[LocalVariableDescriptor]
 
-'addAll' @ [64:16] ==> public open fun addAll(elements: Collection<DeclarationDescriptor>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
+'addAll' @ [64:16] ==> public open fun addAll(elements: Collection<(DeclarationDescriptor..DeclarationDescriptor?)>): Boolean defined in java.util.LinkedHashSet[JavaMethodDescriptor]
 
 'invoke' @ [64:23] ==> public abstract fun invoke(): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.storage.NotNullLazyValue[FunctionInvokeDescriptor]
 
-'result' @ [65:16] ==> val result: LinkedHashSet<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.getContributedDescriptors[LocalVariableDescriptor]
+'result' @ [65:16] ==> val result: LinkedHashSet<(DeclarationDescriptor..DeclarationDescriptor?)> defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.getContributedDescriptors[LocalVariableDescriptor]
 
 'ArrayList' @ [69:22] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -156,7 +152,7 @@ Inferred types:
 
 'ArrayList' @ [104:79] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (D..D?)>..Collection<(D..D?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> D
+    <E : (Any..Any?)> -> (D..D?)
 
 'result' @ [104:89] ==> value-parameter result: MutableCollection<D> defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateFakeOverrides[ValueParameterDescriptorImpl]
 
@@ -180,7 +176,7 @@ Inferred types:
 
 'simpleName' @ [106:174] ==> public final val <T : (Any..Any?)> Class<out D>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> D
+    <T : (Any..Any?)> -> Captured(out D)
 
 'Suppress' @ [107:17] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
@@ -190,7 +186,7 @@ Inferred types:
 
 'fakeOverride' @ [108:28] ==> value-parameter fakeOverride: CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateFakeOverrides.<no name provided>.addFakeOverride[ValueParameterDescriptorImpl]
 
-'reportOnDeclarationOrFail' @ [112:17] ==> public inline fun reportOnDeclarationOrFail(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'reportOnDeclarationOrFail' @ [112:17] ==> public inline fun reportOnDeclarationOrFail(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics in file diagnosticUtils.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [112:43] ==> protected final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope[PropertyDescriptorImpl]
 
@@ -438,8 +434,6 @@ Inferred types:
 
 'name' @ [175:21] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateDataClassMethods[ValueParameterDescriptorImpl]
 
-'DataClassDescriptorResolver' @ [175:29] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve in file DataClassDescriptorResolver.kt[FakeCallableDescriptorForObject]
-
 'createComponentName' @ [175:57] ==> public final fun createComponentName(index: Int): Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[SimpleFunctionDescriptorImpl]
 
 'componentIndex' @ [175:77] ==> var componentIndex: Int defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateDataClassMethods[LocalVariableDescriptor]
@@ -447,8 +441,6 @@ Inferred types:
 'result' @ [176:21] ==> value-parameter result: MutableCollection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateDataClassMethods[ValueParameterDescriptorImpl]
 
 'add' @ [176:28] ==> public abstract fun add(element: SimpleFunctionDescriptor): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
-
-'DataClassDescriptorResolver' @ [176:32] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve in file DataClassDescriptorResolver.kt[FakeCallableDescriptorForObject]
 
 'createComponentFunctionDescriptor' @ [176:60] ==> public final fun createComponentFunctionDescriptor(parameterIndex: Int, property: PropertyDescriptor, parameter: ValueParameterDescriptor, classDescriptor: ClassDescriptor, trace: BindingTrace): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[SimpleFunctionDescriptorImpl]
 
@@ -463,8 +455,6 @@ Inferred types:
 'trace' @ [177:82] ==> protected final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope[PropertyDescriptorImpl]
 
 'name' @ [184:13] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateDataClassMethods[ValueParameterDescriptorImpl]
-
-'DataClassDescriptorResolver' @ [184:21] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve in file DataClassDescriptorResolver.kt[FakeCallableDescriptorForObject]
 
 'COPY_METHOD_NAME' @ [184:49] ==> public final val COPY_METHOD_NAME: Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[PropertyDescriptorImpl]
 
@@ -484,8 +474,6 @@ Inferred types:
 
 'add' @ [190:20] ==> public abstract fun add(element: SimpleFunctionDescriptor): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
-'DataClassDescriptorResolver' @ [190:24] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve in file DataClassDescriptorResolver.kt[FakeCallableDescriptorForObject]
-
 'createCopyFunctionDescriptor' @ [190:52] ==> public final fun createCopyFunctionDescriptor(constructorParameters: Collection<ValueParameterDescriptor>, classDescriptor: ClassDescriptor, trace: BindingTrace): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[SimpleFunctionDescriptorImpl]
 
 'constructor' @ [190:81] ==> val constructor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateDataClassMethods[LocalVariableDescriptor]
@@ -501,8 +489,6 @@ Inferred types:
 'languageVersionSettings' @ [193:15] ==> public abstract val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.lazy.LazyClassContext[PropertyDescriptorImpl]
 
 'supportsFeature' @ [193:39] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [193:55] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'DataClassInheritance' @ [193:71] ==> enum entry DataClassInheritance defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -528,13 +514,9 @@ Inferred types:
 
 'modality' @ [197:72] ==> public final val SimpleFunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [197:84] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [197:93] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'name' @ [200:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateDataClassMethods[ValueParameterDescriptorImpl]
-
-'DataClassDescriptorResolver' @ [200:25] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve in file DataClassDescriptorResolver.kt[FakeCallableDescriptorForObject]
 
 'EQUALS_METHOD_NAME' @ [200:53] ==> public final val EQUALS_METHOD_NAME: Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[PropertyDescriptorImpl]
 
@@ -562,15 +544,11 @@ Inferred types:
 
 'add' @ [204:24] ==> public abstract fun add(element: SimpleFunctionDescriptor): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
-'DataClassDescriptorResolver' @ [204:28] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve in file DataClassDescriptorResolver.kt[FakeCallableDescriptorForObject]
-
 'createEqualsFunctionDescriptor' @ [204:56] ==> public final fun createEqualsFunctionDescriptor(classDescriptor: ClassDescriptor): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[SimpleFunctionDescriptorImpl]
 
 'thisDescriptor' @ [204:87] ==> protected final val thisDescriptor: ClassDescriptorWithResolutionScopes defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope[PropertyDescriptorImpl]
 
 'name' @ [207:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateDataClassMethods[ValueParameterDescriptorImpl]
-
-'DataClassDescriptorResolver' @ [207:25] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve in file DataClassDescriptorResolver.kt[FakeCallableDescriptorForObject]
 
 'HASH_CODE_METHOD_NAME' @ [207:53] ==> public final val HASH_CODE_METHOD_NAME: Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[PropertyDescriptorImpl]
 
@@ -586,15 +564,11 @@ Inferred types:
 
 'add' @ [208:24] ==> public abstract fun add(element: SimpleFunctionDescriptor): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
-'DataClassDescriptorResolver' @ [208:28] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve in file DataClassDescriptorResolver.kt[FakeCallableDescriptorForObject]
-
 'createHashCodeFunctionDescriptor' @ [208:56] ==> public final fun createHashCodeFunctionDescriptor(classDescriptor: ClassDescriptor): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[SimpleFunctionDescriptorImpl]
 
 'thisDescriptor' @ [208:89] ==> protected final val thisDescriptor: ClassDescriptorWithResolutionScopes defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope[PropertyDescriptorImpl]
 
 'name' @ [211:17] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateDataClassMethods[ValueParameterDescriptorImpl]
-
-'DataClassDescriptorResolver' @ [211:25] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve in file DataClassDescriptorResolver.kt[FakeCallableDescriptorForObject]
 
 'TO_STRING_METHOD_NAME' @ [211:53] ==> public final val TO_STRING_METHOD_NAME: Name defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[PropertyDescriptorImpl]
 
@@ -609,8 +583,6 @@ Inferred types:
 'result' @ [212:17] ==> value-parameter result: MutableCollection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.generateDataClassMethods[ValueParameterDescriptorImpl]
 
 'add' @ [212:24] ==> public abstract fun add(element: SimpleFunctionDescriptor): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
-
-'DataClassDescriptorResolver' @ [212:28] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve in file DataClassDescriptorResolver.kt[FakeCallableDescriptorForObject]
 
 'createToStringFunctionDescriptor' @ [212:56] ==> public final fun createToStringFunctionDescriptor(classDescriptor: ClassDescriptor): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[SimpleFunctionDescriptorImpl]
 
@@ -726,8 +698,6 @@ Inferred types:
 'resolveUnknownVisibilityForMember' @ [246:32] ==> public open fun resolveUnknownVisibilityForMember(@NotNull p0: CallableMemberDescriptor, @Nullable p1: (((CallableMemberDescriptor..CallableMemberDescriptor?)) -> (Unit..Unit?))?): Unit defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
 
 'descriptor' @ [246:66] ==> val descriptor: CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyClassMemberScope.resolveUnknownVisibilitiesForMembers[LocalVariableDescriptor]
-
-'OverrideResolver' @ [246:78] ==> public companion object defined in org.jetbrains.kotlin.resolve.OverrideResolver[FakeCallableDescriptorForObject]
 
 'createCannotInferVisibilityReporter' @ [246:95] ==> public final fun createCannotInferVisibilityReporter(trace: BindingTrace): (CallableMemberDescriptor) -> Unit defined in org.jetbrains.kotlin.resolve.OverrideResolver.Companion[SimpleFunctionDescriptorImpl]
 

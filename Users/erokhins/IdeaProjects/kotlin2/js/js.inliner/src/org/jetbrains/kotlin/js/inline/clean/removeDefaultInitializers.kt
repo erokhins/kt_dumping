@@ -1,10 +1,10 @@
-'getDefaultParamsNames' @ [33:20] ==> private fun getDefaultParamsNames(args: List<JsExpression>, params: List<JsParameter>, initialized: Boolean): Set<JsName> defined in org.jetbrains.kotlin.js.inline.clean[SimpleFunctionDescriptorImpl]
+'getDefaultParamsNames' @ [33:20] ==> private fun getDefaultParamsNames(args: List<JsExpression>, params: List<JsParameter>, initialized: Boolean): Set<JsName> defined in org.jetbrains.kotlin.js.inline.clean in file removeDefaultInitializers.kt[SimpleFunctionDescriptorImpl]
 
 'arguments' @ [33:42] ==> value-parameter arguments: List<JsExpression> defined in org.jetbrains.kotlin.js.inline.clean.removeDefaultInitializers[ValueParameterDescriptorImpl]
 
 'parameters' @ [33:53] ==> value-parameter parameters: List<JsParameter> defined in org.jetbrains.kotlin.js.inline.clean.removeDefaultInitializers[ValueParameterDescriptorImpl]
 
-'getDefaultParamsNames' @ [34:20] ==> private fun getDefaultParamsNames(args: List<JsExpression>, params: List<JsParameter>, initialized: Boolean): Set<JsName> defined in org.jetbrains.kotlin.js.inline.clean[SimpleFunctionDescriptorImpl]
+'getDefaultParamsNames' @ [34:20] ==> private fun getDefaultParamsNames(args: List<JsExpression>, params: List<JsParameter>, initialized: Boolean): Set<JsName> defined in org.jetbrains.kotlin.js.inline.clean in file removeDefaultInitializers.kt[SimpleFunctionDescriptorImpl]
 
 'arguments' @ [34:42] ==> value-parameter arguments: List<JsExpression> defined in org.jetbrains.kotlin.js.inline.clean.removeDefaultInitializers[ValueParameterDescriptorImpl]
 
@@ -16,10 +16,10 @@
 
 'statements' @ [37:25] ==> val statements: (MutableList<(JsStatement..JsStatement?)>..List<(JsStatement..JsStatement?)>) defined in org.jetbrains.kotlin.js.inline.clean.removeDefaultInitializers[LocalVariableDescriptor]
 
-'flatMap' @ [37:36] ==> public inline fun <T, R> Iterable<(JsStatement..JsStatement?)>.flatMap(transform: ((JsStatement..JsStatement?)) -> Iterable<(JsStatement..JsStatement?)>): List<(JsStatement..JsStatement?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [37:36] ==> public inline fun <T, R> Iterable<(JsStatement..JsStatement?)>.flatMap(transform: ((JsStatement..JsStatement?)) -> Iterable<JsStatement>): List<JsStatement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
-    <R> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
+    <R> -> JsStatement
 
 'getNameFromInitializer' @ [38:20] ==> private fun getNameFromInitializer(statement: JsStatement): JsName? defined in org.jetbrains.kotlin.js.inline.clean in file removeDefaultInitializers.kt[SimpleFunctionDescriptorImpl]
 
@@ -95,7 +95,7 @@ Inferred types:
 
 'addAll' @ [57:16] ==> public abstract fun addAll(elements: Collection<(JsStatement..JsStatement?)>): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'newStatements' @ [57:23] ==> val newStatements: List<(JsStatement..JsStatement?)> defined in org.jetbrains.kotlin.js.inline.clean.removeDefaultInitializers[LocalVariableDescriptor]
+'newStatements' @ [57:23] ==> val newStatements: List<JsStatement> defined in org.jetbrains.kotlin.js.inline.clean.removeDefaultInitializers[LocalVariableDescriptor]
 
 'node' @ [61:5] ==> value-parameter node: JsNode defined in org.jetbrains.kotlin.js.inline.clean.markAssignmentAsStaticRef[ValueParameterDescriptorImpl]
 

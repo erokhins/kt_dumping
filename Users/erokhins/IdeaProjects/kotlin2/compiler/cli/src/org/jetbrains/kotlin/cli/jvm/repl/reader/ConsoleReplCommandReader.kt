@@ -34,8 +34,6 @@ Inferred types:
 
 'next' @ [38:26] ==> value-parameter next: ReplFromTerminal.WhatNextAfterOneLine defined in org.jetbrains.kotlin.cli.jvm.repl.reader.ConsoleReplCommandReader.readLine[ValueParameterDescriptorImpl]
 
-'ReplFromTerminal' @ [38:34] ==> public companion object defined in org.jetbrains.kotlin.cli.jvm.repl.ReplFromTerminal[FakeCallableDescriptorForObject]
-
 'INCOMPLETE' @ [38:72] ==> enum entry INCOMPLETE defined in org.jetbrains.kotlin.cli.jvm.repl.ReplFromTerminal.WhatNextAfterOneLine[FakeCallableDescriptorForObject]
 
 'lineReader' @ [40:20] ==> private final val lineReader: (LineReader..LineReader?) defined in org.jetbrains.kotlin.cli.jvm.repl.reader.ConsoleReplCommandReader[PropertyDescriptorImpl]

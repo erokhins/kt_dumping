@@ -6,9 +6,9 @@
 
 'buildSubstitutor' @ [32:93] ==> public final fun buildSubstitutor(): TypeSubstitutor defined in org.jetbrains.kotlin.types.TypeSubstitution[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [36:36] ==> public fun <T> lazy(initializer: () -> Collection<DeclarationDescriptor>): Lazy<Collection<DeclarationDescriptor>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [36:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Collection<DeclarationDescriptor>
+    <T> -> T
 
 'substitute' @ [36:43] ==> private final fun <D : DeclarationDescriptor> substitute(descriptors: Collection<DeclarationDescriptor>): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.SubstitutingScope[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -48,9 +48,9 @@ Inferred types:
                     "but $descriptor substitution fails"
                 }
                 else -> error("Unknown descriptor in scope: $descriptor")
-            }' @ [46:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: DeclarationDescriptorNonRoot, entry1: DeclarationDescriptorNonRoot): DeclarationDescriptorNonRoot[SimpleFunctionDescriptorImpl]
+            }' @ [46:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: DeclarationDescriptor, entry1: DeclarationDescriptor): DeclarationDescriptor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> DeclarationDescriptorNonRoot
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> DeclarationDescriptor
 
 'descriptor' @ [46:19] ==> value-parameter descriptor: D defined in org.jetbrains.kotlin.resolve.scopes.SubstitutingScope.substitute[ValueParameterDescriptorImpl]
 
@@ -173,11 +173,11 @@ Inferred types:
 
 'java' @ [86:31] ==> public val <T> KClass<out SubstitutingScope>.java: Class<out SubstitutingScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> SubstitutingScope
+    <T> -> Captured(out SubstitutingScope)
 
 'simpleName' @ [86:36] ==> public final val <T : (Any..Any?)> Class<out SubstitutingScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SubstitutingScope
+    <T : (Any..Any?)> -> Captured(out SubstitutingScope)
 
 'p' @ [87:9] ==> value-parameter p: Printer defined in org.jetbrains.kotlin.resolve.scopes.SubstitutingScope.printScopeStructure[ValueParameterDescriptorImpl]
 

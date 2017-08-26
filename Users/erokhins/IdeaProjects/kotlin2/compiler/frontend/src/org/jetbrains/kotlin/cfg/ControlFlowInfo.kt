@@ -1,7 +1,7 @@
 'empty' @ [27:83] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> empty(): (HashMap<(VariableDescriptor..VariableDescriptor?), (D..D?)>..HashMap<(VariableDescriptor..VariableDescriptor?), (D..D?)>?) defined in javaslang.collection.HashMap[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptor
-    <V : (Any..Any?)> -> D
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
+    <V : (Any..Any?)> -> (D..D?)
 
 'map' @ [28:44] ==> value-parameter map: ImmutableMap<VariableDescriptor, D> /* = Map<VariableDescriptor, D> */ = ... defined in org.jetbrains.kotlin.cfg.ControlFlowInfo.<init>[ValueParameterDescriptorImpl]
 
@@ -77,8 +77,8 @@ Inferred types:
 
 'empty' @ [58:110] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> empty(): (HashMap<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>..HashMap<(VariableDescriptor..VariableDescriptor?), (VariableControlFlowState..VariableControlFlowState?)>?) defined in javaslang.collection.HashMap[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptor
-    <V : (Any..Any?)> -> VariableControlFlowState
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.VariableControlFlowState..org.jetbrains.kotlin.cfg.VariableControlFlowState?)
 
 'ControlFlowInfo<InitControlFlowInfo, VariableControlFlowState>' @ [59:9] ==> internal constructor ControlFlowInfo<S : ControlFlowInfo<InitControlFlowInfo, VariableControlFlowState>, D>(map: ImmutableMap<VariableDescriptor, VariableControlFlowState> /* = Map<VariableDescriptor, VariableControlFlowState> */ = ...) defined in org.jetbrains.kotlin.cfg.ControlFlowInfo[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -122,8 +122,8 @@ Inferred types:
 
 'empty' @ [76:101] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> empty(): (HashMap<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>..HashMap<(VariableDescriptor..VariableDescriptor?), (VariableUseState..VariableUseState?)>?) defined in javaslang.collection.HashMap[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptor
-    <V : (Any..Any?)> -> VariableUseState
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.VariableUseState..org.jetbrains.kotlin.cfg.VariableUseState?)
 
 'ControlFlowInfo<UseControlFlowInfo, VariableUseState>' @ [77:9] ==> internal constructor ControlFlowInfo<S : ControlFlowInfo<UseControlFlowInfo, VariableUseState>, D>(map: ImmutableMap<VariableDescriptor, VariableUseState> /* = Map<VariableDescriptor, VariableUseState> */ = ...) defined in org.jetbrains.kotlin.cfg.ControlFlowInfo[ClassConstructorDescriptorImpl]
 Inferred types:

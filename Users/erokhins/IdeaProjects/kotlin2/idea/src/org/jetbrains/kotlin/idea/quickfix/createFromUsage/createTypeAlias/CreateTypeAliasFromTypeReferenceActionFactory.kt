@@ -27,11 +27,11 @@ Inferred types:
 
 'supportsFeature' @ [40:46] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [40:62] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'TypeAliases' @ [40:78] ==> enum entry TypeAliases defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
-'CreateClassFromTypeReferenceActionFactory' @ [42:25] ==> public object CreateClassFromTypeReferenceActionFactory : CreateClassFromUsageFactory<KtUserType> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file CreateClassFromTypeReferenceActionFactory.kt[FakeCallableDescriptorForObject]
+'?:' @ [42:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ClassInfo?, right: ClassInfo): ClassInfo[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ClassInfo
 
 'extractFixData' @ [42:67] ==> public open fun extractFixData(element: KtUserType, diagnostic: Diagnostic): ClassInfo? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromTypeReferenceActionFactory[SimpleFunctionDescriptorImpl]
 
@@ -51,7 +51,7 @@ Inferred types:
 
 'it' @ [43:95] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createTypeAlias.CreateTypeAliasFromTypeReferenceActionFactory.extractFixData.<anonymous>[ValueParameterDescriptorImpl]
 
-'getTypeConstraintInfo' @ [45:28] ==> public fun getTypeConstraintInfo(element: KtTypeElement): TypeConstraintInfo? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTypeConstraintInfo' @ [45:28] ==> public fun getTypeConstraintInfo(element: KtTypeElement): TypeConstraintInfo? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [45:50] ==> value-parameter element: KtUserType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createTypeAlias.CreateTypeAliasFromTypeReferenceActionFactory.extractFixData[ValueParameterDescriptorImpl]
 

@@ -79,15 +79,15 @@ Inferred types:
 
 'content' @ [58:32] ==> public final val Element.content: (MutableList<(Content..Content?)>..List<(Content..Content?)>?)[MyPropertyDescriptor]
 
-'mapTo' @ [59:19] ==> public inline fun <T, R, C : MutableCollection<in (String..String?)>> Iterable<(Content..Content?)>.mapTo(destination: MutableList<(String..String?)>, transform: ((Content..Content?)) -> (String..String?)): MutableList<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapTo' @ [59:19] ==> public inline fun <T, R, C : MutableCollection<in (String..String?)>> Iterable<(Content..Content?)>.mapTo(destination: MutableList<String>, transform: ((Content..Content?)) -> (String..String?)): MutableList<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jdom.Content..org.jdom.Content?)
     <R> -> (kotlin.String..kotlin.String?)
-    <C : MutableCollection<in R>> -> MutableList<(kotlin.String..kotlin.String?)>
+    <C : MutableCollection<in R>> -> MutableList<String>
 
-'mutableListOf' @ [59:25] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableListOf(): MutableList<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mutableListOf' @ [59:25] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableListOf(): MutableList<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (kotlin.String..kotlin.String?)
+    <T> -> String
 
 'it' @ [59:45] ==> value-parameter it: (Content..Content?) defined in org.jetbrains.kotlin.annotation.plugin.ide.AbstractMavenImportHandler.getPluginSetup.<anonymous>[ValueParameterDescriptorImpl]
 

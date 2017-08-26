@@ -96,11 +96,7 @@ Inferred types:
 
 'final' @ [72:30] ==> value-parameter final: Boolean = ... defined in org.jetbrains.kotlin.backend.common.ir.createOverriddenDescriptor[ValueParameterDescriptorImpl]
 
-'Modality' @ [72:37] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [72:46] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
-'Modality' @ [72:57] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [72:66] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -123,8 +119,6 @@ Inferred types:
 'createSynthesized' @ [81:64] ==> @NotNull public open fun createSynthesized(@NotNull p0: ClassDescriptor, @NotNull p1: Annotations, p2: Boolean, @NotNull p3: SourceElement): ClassConstructorDescriptorImpl defined in org.jetbrains.kotlin.descriptors.impl.ClassConstructorDescriptorImpl[JavaMethodDescriptor]
 
 'this' @ [82:43] ==> <this> defined in org.jetbrains.kotlin.backend.common.ir.createSimpleDelegatingConstructorDescriptor[ReceiverParameterDescriptorImpl]
-
-'Annotations' @ [83:43] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [83:55] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

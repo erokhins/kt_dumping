@@ -98,7 +98,7 @@
 
 'project' @ [84:48] ==> val project: Project? defined in org.jetbrains.kotlin.idea.codeInsight.surroundWith.expression.KotlinRuntimeTypeCastSurrounder.SurroundWithCastWorker.typeCalculationFinished[LocalVariableDescriptor]
 
-'Runnable' @ [84:57] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [84:57] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'WriteCommandAction<Any>' @ [85:30] ==> protected/*protected and package*/ constructor WriteCommandAction<T : (Any..Any?)>(@Nullable p0: Project?, @Nullable p1: String?, vararg p2: (PsiFile..PsiFile?)) defined in com.intellij.openapi.command.WriteCommandAction[JavaClassConstructorDescriptor]
 Inferred types:

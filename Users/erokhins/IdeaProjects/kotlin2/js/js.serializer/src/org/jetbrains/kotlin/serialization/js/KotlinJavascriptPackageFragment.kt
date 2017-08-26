@@ -28,7 +28,7 @@ Inferred types:
 
 'getExtension' @ [48:20] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.PackageFragment..ProtoBuf.PackageFragment?), (JsProtoBuf.Files..JsProtoBuf.Files?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.PackageFragment..ProtoBuf.PackageFragment?), (JsProtoBuf.Files..JsProtoBuf.Files?)>?)): (JsProtoBuf.Files..JsProtoBuf.Files?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.PackageFragment[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Files
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.js.JsProtoBuf.Files..org.jetbrains.kotlin.serialization.js.JsProtoBuf.Files?)
 
 'packageFragmentFiles' @ [48:44] ==> public final val packageFragmentFiles: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.PackageFragment..ProtoBuf.PackageFragment?), (JsProtoBuf.Files..JsProtoBuf.Files?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.PackageFragment..ProtoBuf.PackageFragment?), (JsProtoBuf.Files..JsProtoBuf.Files?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -91,7 +91,7 @@ Inferred types:
 
 'getParentOfType' @ [58:29] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(PackageFragmentDescriptor..PackageFragmentDescriptor?)>): PackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> PackageFragmentDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor?)
 
 'descriptor' @ [58:45] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.serialization.js.KotlinJavascriptPackageFragment.getContainingFileAnnotations[ValueParameterDescriptorImpl]
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'getExtension' @ [62:69] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [62:93] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -134,7 +134,7 @@ Inferred types:
 
 'getExtension' @ [63:73] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'functionContainingFileId' @ [63:97] ==> public final val functionContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -144,7 +144,7 @@ Inferred types:
 
 'getExtension' @ [64:67] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'propertyContainingFileId' @ [64:91] ==> public final val propertyContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 

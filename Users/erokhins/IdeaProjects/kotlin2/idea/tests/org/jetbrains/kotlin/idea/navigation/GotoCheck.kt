@@ -118,7 +118,7 @@ Inferred types:
 
 'assertContainsElements' @ [55:28] ==> public open fun <T : (Any..Any?)> assertContainsElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull p1: (MutableCollection<(String..String?)>..Collection<(String..String?)>)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'renderedSymbols' @ [55:51] ==> val renderedSymbols: List<String> defined in org.jetbrains.kotlin.idea.navigation.GotoCheck.checkGotoDirectives[LocalVariableDescriptor]
 
@@ -126,7 +126,7 @@ Inferred types:
 
 'assertOrderedEquals' @ [58:28] ==> public open fun <T : (Any..Any?)> assertOrderedEquals(@NotNull p0: (MutableIterable<(String..String?)>..Iterable<(String..String?)>), @NotNull p1: (MutableCollection<out (String..String?)>..Collection<(String..String?)>)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'renderedSymbols' @ [58:48] ==> val renderedSymbols: List<String> defined in org.jetbrains.kotlin.idea.navigation.GotoCheck.checkGotoDirectives[LocalVariableDescriptor]
 

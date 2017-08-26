@@ -78,59 +78,59 @@ Inferred types:
 
 'a' @ [59:64] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<out (PsiElement..PsiElement?), out (Any..Any?)>.a: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <A : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
+    <A : (Any..Any?)> -> Captured(*)
 
-'listOf' @ [60:58] ==> public fun <T> listOf(vararg elements: Any): List<Any> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [60:58] ==> public fun <T> listOf(vararg elements: (Any..Any?)): List<(Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> (kotlin.Any..kotlin.Any?)
 
 'd' @ [60:65] ==> value-parameter d: Diagnostic defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext.Companion.fromDiagnostic[ValueParameterDescriptorImpl]
 
 'a' @ [60:67] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<out (PsiElement..PsiElement?), out (Any..Any?), out (Any..Any?)>.a: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <A : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <B : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
+    <A : (Any..Any?)> -> Captured(*)
+    <B : (Any..Any?)> -> Captured(*)
 
 'd' @ [60:70] ==> value-parameter d: Diagnostic defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext.Companion.fromDiagnostic[ValueParameterDescriptorImpl]
 
 'b' @ [60:72] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<out (PsiElement..PsiElement?), out (Any..Any?), out (Any..Any?)>.b: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <A : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <B : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
+    <A : (Any..Any?)> -> Captured(*)
+    <B : (Any..Any?)> -> Captured(*)
 
-'listOf' @ [61:61] ==> public fun <T> listOf(vararg elements: Any): List<Any> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [61:61] ==> public fun <T> listOf(vararg elements: (Any..Any?)): List<(Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> (kotlin.Any..kotlin.Any?)
 
 'd' @ [61:68] ==> value-parameter d: Diagnostic defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext.Companion.fromDiagnostic[ValueParameterDescriptorImpl]
 
 'a' @ [61:70] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), out (Any..Any?), out (Any..Any?), out (Any..Any?)>.a: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <A : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <B : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <C : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
+    <A : (Any..Any?)> -> Captured(*)
+    <B : (Any..Any?)> -> Captured(*)
+    <C : (Any..Any?)> -> Captured(*)
 
 'd' @ [61:73] ==> value-parameter d: Diagnostic defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext.Companion.fromDiagnostic[ValueParameterDescriptorImpl]
 
 'b' @ [61:75] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), out (Any..Any?), out (Any..Any?), out (Any..Any?)>.b: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <A : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <B : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <C : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
+    <A : (Any..Any?)> -> Captured(*)
+    <B : (Any..Any?)> -> Captured(*)
+    <C : (Any..Any?)> -> Captured(*)
 
 'd' @ [61:78] ==> value-parameter d: Diagnostic defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext.Companion.fromDiagnostic[ValueParameterDescriptorImpl]
 
 'c' @ [61:80] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), out (Any..Any?), out (Any..Any?), out (Any..Any?)>.c: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <A : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <B : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <C : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
+    <A : (Any..Any?)> -> Captured(*)
+    <B : (Any..Any?)> -> Captured(*)
+    <C : (Any..Any?)> -> Captured(*)
 
 'error' @ [62:49] ==> @InlineOnly public inline fun error(message: Any): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -138,7 +138,7 @@ Inferred types:
 
 'java' @ [62:90] ==> public val <T> KClass<out Diagnostic>.java: Class<out Diagnostic> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Diagnostic
+    <T> -> Captured(out Diagnostic)
 
 'listOf' @ [63:25] ==> @InlineOnly public inline fun <T> listOf(): List<(Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

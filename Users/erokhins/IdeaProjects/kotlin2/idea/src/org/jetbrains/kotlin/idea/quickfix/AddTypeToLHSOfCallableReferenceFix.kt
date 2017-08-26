@@ -20,7 +20,7 @@ Inferred types:
 
 'PARTIAL' @ [40:102] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
-'with' @ [41:24] ==> @InlineOnly public inline fun <T, R> with(receiver: ResolvedCall<out CallableDescriptor>, block: ResolvedCall<out CallableDescriptor>.() -> ReceiverValue): ReceiverValue defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [41:24] ==> @InlineOnly public inline fun <T, R> with(receiver: ResolvedCall<out CallableDescriptor>, block: (ResolvedCall<out CallableDescriptor>).() -> ReceiverValue): ReceiverValue defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ResolvedCall<out CallableDescriptor>
     <R> -> ReceiverValue
@@ -29,19 +29,17 @@ Inferred types:
 
 'dispatchReceiver' @ [42:13] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'extensionReceiver' @ [42:33] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'KtPsiFactory' @ [44:26] ==> @JvmOverloads public constructor KtPsiFactory(project: Project, markGenerated: Boolean = ...) defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedClassConstructorDescriptor]
 
 'project' @ [44:39] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.quickfix.AddTypeToLHSOfCallableReferenceFix.invoke[ValueParameterDescriptorImpl]
 
 'createExpression' @ [44:48] ==> public final fun createExpression(text: String): KtExpression defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
-
-'IdeDescriptorRenderers' @ [44:65] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [44:88] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 

@@ -40,7 +40,9 @@
 
 'component2' @ [53:34] ==> public final operator fun component2(): ReplaceWith defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.Data[SimpleFunctionDescriptorImpl]
 
-'DeprecatedSymbolUsageFixBase' @ [53:49] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase[FakeCallableDescriptorForObject]
+'?:' @ [53:49] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: DeprecatedSymbolUsageFixBase.Companion.Data?, right: DeprecatedSymbolUsageFixBase.Companion.Data): DeprecatedSymbolUsageFixBase.Companion.Data[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Data
 
 'extractDataFromDiagnostic' @ [53:78] ==> public final fun extractDataFromDiagnostic(deprecatedDiagnostic: Diagnostic): DeprecatedSymbolUsageFixBase.Companion.Data? defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion[SimpleFunctionDescriptorImpl]
 

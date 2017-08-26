@@ -10,8 +10,6 @@ Inferred types:
 
 'values' @ [31:67] ==> public abstract val values: Collection<Name> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 
-'CollectionLiteralResolver' @ [32:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.CollectionLiteralResolver[FakeCallableDescriptorForObject]
-
 'ARRAY_OF_FUNCTION' @ [32:43] ==> public final val ARRAY_OF_FUNCTION: Name defined in org.jetbrains.kotlin.resolve.CollectionLiteralResolver.Companion[DeserializedPropertyDescriptor]
 
 'element' @ [35:51] ==> public final val KtCollectionLiteralReference.element: (KtCollectionLiteralExpression..KtCollectionLiteralExpression?)[MyPropertyDescriptor]
@@ -30,7 +28,7 @@ Inferred types:
 
 'resolvedCall' @ [39:30] ==> val resolvedCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.idea.references.KtCollectionLiteralReference.getTargetDescriptors[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [39:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [39:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 

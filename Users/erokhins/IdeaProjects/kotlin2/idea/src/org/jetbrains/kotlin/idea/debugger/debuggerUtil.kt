@@ -28,7 +28,7 @@ Inferred types:
 
 'location' @ [51:28] ==> value-parameter location: Location defined in org.jetbrains.kotlin.idea.debugger.isInsideInlineArgument[ValueParameterDescriptorImpl]
 
-'visibleVariables' @ [51:37] ==> private fun Location.visibleVariables(debugProcess: DebugProcessImpl): List<LocalVariable> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'visibleVariables' @ [51:37] ==> private fun Location.visibleVariables(debugProcess: DebugProcessImpl): List<LocalVariable> defined in org.jetbrains.kotlin.idea.debugger in file debuggerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'debugProcess' @ [51:54] ==> value-parameter debugProcess: DebugProcessImpl defined in org.jetbrains.kotlin.idea.debugger.isInsideInlineArgument[ValueParameterDescriptorImpl]
 
@@ -248,7 +248,7 @@ Inferred types:
 
 'ArrayList' @ [138:25] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (LocalVariable..LocalVariable?)>..Collection<(LocalVariable..LocalVariable?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> LocalVariable
+    <E : (Any..Any?)> -> (com.sun.jdi.LocalVariable..com.sun.jdi.LocalVariable?)
 
 'visibleVariables' @ [138:35] ==> private final var visibleVariables: Map<String, LocalVariable>? defined in org.jetbrains.kotlin.idea.debugger.MockStackFrame[PropertyDescriptorImpl]
 
@@ -256,11 +256,11 @@ Inferred types:
 
 'sort' @ [139:21] ==> public open fun <T : (Comparable<(LocalVariable..LocalVariable?)>..Comparable<(LocalVariable..LocalVariable?)>?)> sort(p0: (MutableList<(LocalVariable..LocalVariable?)>..List<(LocalVariable..LocalVariable?)>?)): Unit defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Comparable<(T..T?)>..Comparable<(T..T?)>?)> -> LocalVariable
+    <T : (Comparable<(T..T?)>..Comparable<(T..T?)>?)> -> (com.sun.jdi.LocalVariable..com.sun.jdi.LocalVariable?)
 
-'mapAsList' @ [139:26] ==> val mapAsList: ArrayList<LocalVariable> defined in org.jetbrains.kotlin.idea.debugger.MockStackFrame.visibleVariables[LocalVariableDescriptor]
+'mapAsList' @ [139:26] ==> val mapAsList: ArrayList<(LocalVariable..LocalVariable?)> defined in org.jetbrains.kotlin.idea.debugger.MockStackFrame.visibleVariables[LocalVariableDescriptor]
 
-'mapAsList' @ [140:16] ==> val mapAsList: ArrayList<LocalVariable> defined in org.jetbrains.kotlin.idea.debugger.MockStackFrame.visibleVariables[LocalVariableDescriptor]
+'mapAsList' @ [140:16] ==> val mapAsList: ArrayList<(LocalVariable..LocalVariable?)> defined in org.jetbrains.kotlin.idea.debugger.MockStackFrame.visibleVariables[LocalVariableDescriptor]
 
 'createVisibleVariables' @ [144:9] ==> private final fun createVisibleVariables(): Unit defined in org.jetbrains.kotlin.idea.debugger.MockStackFrame[SimpleFunctionDescriptorImpl]
 

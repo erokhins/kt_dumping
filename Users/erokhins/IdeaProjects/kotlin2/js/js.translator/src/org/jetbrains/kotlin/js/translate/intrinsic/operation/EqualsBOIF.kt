@@ -2,7 +2,7 @@
 
 'of' @ [50:49] ==> public open fun <E : (Enum<(PrimitiveType..PrimitiveType?)>..Enum<(PrimitiveType..PrimitiveType?)>?)> of(p0: (PrimitiveType..PrimitiveType?), p1: (PrimitiveType..PrimitiveType?), p2: (PrimitiveType..PrimitiveType?)): (EnumSet<(PrimitiveType..PrimitiveType?)>..EnumSet<(PrimitiveType..PrimitiveType?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> PrimitiveType
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.builtins.PrimitiveType..org.jetbrains.kotlin.builtins.PrimitiveType?)
 
 'BYTE' @ [50:66] ==> enum entry BYTE defined in org.jetbrains.kotlin.builtins.PrimitiveType[FakeCallableDescriptorForObject]
 
@@ -151,7 +151,7 @@ Inferred types:
 
 'dispatchReceiver' @ [72:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (this != null) type.isDynamic() else false' @ [73:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Boolean, elseBranch: Boolean): Boolean[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -279,9 +279,9 @@ Inferred types:
 
 'dataFlow' @ [112:84] ==> val dataFlow: DataFlowValue defined in org.jetbrains.kotlin.js.translate.intrinsic.operation.EqualsBOIF.EqualsIntrinsic.getRefinedType[LocalVariableDescriptor]
 
-'find' @ [112:94] ==> @InlineOnly public inline fun <T> Iterable<@ParameterName KotlinType>.find(predicate: (p0: KotlinType) -> Boolean): @ParameterName KotlinType? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'find' @ [112:94] ==> @InlineOnly public inline fun <T> Iterable<KotlinType>.find(predicate: (KotlinType) -> Boolean): KotlinType? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> [@kotlin.ParameterName] KotlinType
+    <T> -> KotlinType
 
 'isPrimitiveFn' @ [112:99] ==> val isPrimitiveFn: KFunction1<@ParameterName KotlinType, Boolean> defined in org.jetbrains.kotlin.js.translate.intrinsic.operation.EqualsBOIF.EqualsIntrinsic.getRefinedType[LocalVariableDescriptor]
 

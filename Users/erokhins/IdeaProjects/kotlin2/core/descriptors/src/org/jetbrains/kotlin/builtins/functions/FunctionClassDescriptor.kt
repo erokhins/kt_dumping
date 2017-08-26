@@ -68,8 +68,6 @@ Inferred types:
 
 'this@FunctionClassDescriptor' @ [73:21] ==> <this> defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor[LazyClassReceiverParameterDescriptor]
 
-'Annotations' @ [73:51] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [73:63] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
 'variance' @ [73:77] ==> value-parameter variance: Variance defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.<init>.typeParameter[ValueParameterDescriptorImpl]
@@ -198,11 +196,7 @@ Inferred types:
 
 'add' @ [127:24] ==> public open fun add(element: KotlinType): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'KotlinTypeFactory' @ [127:28] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
-
 'simpleNotNullType' @ [127:46] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
-
-'Annotations' @ [127:64] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [127:76] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
@@ -222,8 +216,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Any
 
 'functionKind' @ [131:17] ==> public final val functionKind: FunctionClassDescriptor.Kind defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor[PropertyDescriptorImpl]
-
-'Kind' @ [131:33] ==> public companion object defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.Kind[FakeCallableDescriptorForObject]
 
 'SuspendFunction' @ [131:38] ==> enum entry SuspendFunction defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.Kind[FakeCallableDescriptorForObject]
 
@@ -248,8 +240,6 @@ Inferred types:
 'classNamePrefix' @ [137:73] ==> public final val classNamePrefix: String defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.Kind[PropertyDescriptorImpl]
 
 'functionKind' @ [141:17] ==> public final val functionKind: FunctionClassDescriptor.Kind defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor[PropertyDescriptorImpl]
-
-'Kind' @ [141:33] ==> public companion object defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.Kind[FakeCallableDescriptorForObject]
 
 'KFunction' @ [141:38] ==> enum entry KFunction defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.Kind[FakeCallableDescriptorForObject]
 
@@ -276,8 +266,6 @@ Inferred types:
 'add' @ [145:17] ==> local final fun add(packageFragment: PackageFragmentDescriptor, name: Name): Unit defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.FunctionTypeConstructor.computeSupertypes[SimpleFunctionDescriptorImpl]
 
 'kotlinPackageFragment' @ [145:21] ==> val kotlinPackageFragment: BuiltInsPackageFragment defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.FunctionTypeConstructor.computeSupertypes[LocalVariableDescriptor]
-
-'Kind' @ [145:44] ==> public companion object defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.Kind[FakeCallableDescriptorForObject]
 
 'numberedClassName' @ [145:58] ==> public final fun numberedClassName(arity: Int): Name defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.Kind[SimpleFunctionDescriptorImpl]
 

@@ -46,8 +46,6 @@ Inferred types:
 
 'modality' @ [72:24] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [72:36] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [72:45] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'invoke' @ [73:13] ==> public abstract operator fun invoke(p1: DeclarationDescriptor): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
@@ -116,7 +114,7 @@ Inferred types:
 
 'filterOutOverridden' @ [120:35] ==> @NotNull public open fun <D : (CallableDescriptor..CallableDescriptor?)> filterOutOverridden(@NotNull p0: (MutableSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Set<(CallableMemberDescriptor..CallableMemberDescriptor?)>)): (MutableSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Set<(CallableMemberDescriptor..CallableMemberDescriptor?)>) defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableMemberDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
 'overridden' @ [120:55] ==> val overridden: (MutableSet<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Set<(CallableMemberDescriptor..CallableMemberDescriptor?)>) defined in org.jetbrains.kotlin.backend.common.bridges.findImplementationFromInterface[LocalVariableDescriptor]
 
@@ -129,8 +127,6 @@ Inferred types:
 'it' @ [122:41] ==> value-parameter it: (CallableMemberDescriptor..CallableMemberDescriptor?) defined in org.jetbrains.kotlin.backend.common.bridges.findImplementationFromInterface.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [122:44] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [122:56] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [122:65] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -154,15 +150,13 @@ Inferred types:
 
 'modality' @ [139:20] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [139:32] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [139:41] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'overridden' @ [140:10] ==> value-parameter overridden: (CallableMemberDescriptor..CallableMemberDescriptor?) defined in org.jetbrains.kotlin.backend.common.bridges.firstSuperMethodFromKotlin.<anonymous>[ValueParameterDescriptorImpl]
 
 'implementation' @ [140:24] ==> value-parameter implementation: CallableMemberDescriptor defined in org.jetbrains.kotlin.backend.common.bridges.firstSuperMethodFromKotlin[ValueParameterDescriptorImpl]
 
-'overrides' @ [140:57] ==> public open fun <D : (CallableDescriptor..CallableDescriptor?)> overrides(@NotNull p0: (CallableMemberDescriptor..CallableMemberDescriptor?), @NotNull p1: (CallableMemberDescriptor..CallableMemberDescriptor?)): Boolean defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
+'overrides' @ [140:57] ==> public open fun <D : (CallableDescriptor..CallableDescriptor?)> overrides(@NotNull p0: CallableMemberDescriptor, @NotNull p1: CallableMemberDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 

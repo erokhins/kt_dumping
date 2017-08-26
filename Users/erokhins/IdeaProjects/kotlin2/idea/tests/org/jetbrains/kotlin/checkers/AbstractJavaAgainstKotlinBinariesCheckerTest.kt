@@ -46,8 +46,6 @@
 
 'ktFileText' @ [46:80] ==> val ktFileText: String defined in org.jetbrains.kotlin.checkers.AbstractJavaAgainstKotlinBinariesCheckerTest.doTest[LocalVariableDescriptor]
 
-'AstAccessControl' @ [46:92] ==> public object AstAccessControl defined in org.jetbrains.kotlin.idea.test in file AstAccessControl.kt[FakeCallableDescriptorForObject]
-
 'ALLOW_AST_ACCESS_DIRECTIVE' @ [46:109] ==> public final val ALLOW_AST_ACCESS_DIRECTIVE: String defined in org.jetbrains.kotlin.idea.test.AstAccessControl[PropertyDescriptorImpl]
 
 'allowAstForCompiledFile' @ [48:13] ==> val allowAstForCompiledFile: Boolean defined in org.jetbrains.kotlin.checkers.AbstractJavaAgainstKotlinBinariesCheckerTest.doTest[LocalVariableDescriptor]

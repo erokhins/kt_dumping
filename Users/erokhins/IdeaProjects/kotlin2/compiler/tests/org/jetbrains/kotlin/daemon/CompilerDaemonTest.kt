@@ -20,9 +20,9 @@ Inferred types:
 
 'getCompilerLib' @ [56:72] ==> public open fun getCompilerLib(): (File..File?) defined in org.jetbrains.kotlin.integration.KotlinIntegrationTestBase[JavaMethodDescriptor]
 
-'lazy' @ [57:23] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> CompilerId): Lazy<CompilerId> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [57:23] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompilerId
+    <T> -> T
 
 'NONE' @ [57:49] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -68,11 +68,7 @@ Inferred types:
 
 'daemon' @ [64:49] ==> val daemon: CompileService? defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.compileOnDaemon[LocalVariableDescriptor]
 
-'CompileService' @ [64:59] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'NO_SESSION' @ [64:74] ==> public final val NO_SESSION: Int defined in org.jetbrains.kotlin.daemon.common.CompileService.Companion[DeserializedPropertyDescriptor]
-
-'CompileService' @ [64:86] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [64:116] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
@@ -85,8 +81,6 @@ Inferred types:
 'strm' @ [65:92] ==> val strm: ByteArrayOutputStream defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.compileOnDaemon[LocalVariableDescriptor]
 
 'WITHOUT_PATHS' @ [65:115] ==> public final val WITHOUT_PATHS: (MessageRenderer..MessageRenderer?) defined in org.jetbrains.kotlin.cli.common.messages.MessageRenderer[JavaPropertyDescriptor]
-
-'ReportSeverity' @ [66:66] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'DEBUG' @ [66:81] ==> enum entry DEBUG defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
@@ -244,7 +238,7 @@ Inferred types:
 
 'xmx' @ [99:39] ==> value-parameter xmx: Int = ... defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.makeTestDaemonJvmOptions[ValueParameterDescriptorImpl]
 
-'withFlagFile' @ [105:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [105:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [105:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -252,7 +246,7 @@ Inferred types:
 
 'getTestName' @ [106:55] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
-'withLogFile' @ [108:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [108:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [109:40] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -296,7 +290,7 @@ Inferred types:
 
 'logFile' @ [122:21] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testHelloApp.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [122:29] ==> internal fun File.assertLogContainsSequence(vararg patterns: LinePattern): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [122:29] ==> internal fun File.assertLogContainsSequence(vararg patterns: LinePattern): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'LinePattern' @ [123:29] ==> public fun LinePattern(regex: String, matchCheck: (MatchResult) -> Boolean = ...): LinePattern defined in org.jetbrains.kotlin.daemon[DeserializedSimpleFunctionDescriptor]
 
@@ -524,7 +518,7 @@ Inferred types:
 
 'backupOptions' @ [181:68] ==> val backupOptions: (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonOptionsParsing[LocalVariableDescriptor]
 
-'withFlagFile' @ [186:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [186:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [186:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -542,9 +536,9 @@ Inferred types:
 
 'getCompilerLib' @ [189:88] ==> public open fun getCompilerLib(): (File..File?) defined in org.jetbrains.kotlin.integration.KotlinIntegrationTestBase[JavaMethodDescriptor]
 
-'withLogFile' @ [191:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [191:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
-'withLogFile' @ [192:17] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [192:17] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [193:45] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -600,7 +594,7 @@ Inferred types:
 
 'logFile1' @ [202:21] ==> value-parameter logFile1: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonInstancesSimple.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [202:30] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [202:30] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [203:21] ==> public open fun assertEquals(p0: (String..String?), p1: Long, p2: Long): Unit defined in org.jetbrains.kotlin.integration.KotlinIntegrationTestBase[JavaMethodDescriptor]
 
@@ -648,7 +642,7 @@ Inferred types:
 
 'logFile2' @ [209:21] ==> value-parameter logFile2: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonInstancesSimple.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [209:30] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [209:30] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinCompilerClient' @ [211:21] ==> public object KotlinCompilerClient defined in org.jetbrains.kotlin.daemon.client[FakeCallableDescriptorForObject]
 
@@ -670,13 +664,13 @@ Inferred types:
 
 'logFile1' @ [216:21] ==> value-parameter logFile1: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonInstancesSimple.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [216:30] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [216:30] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'logFile2' @ [217:21] ==> value-parameter logFile2: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonInstancesSimple.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [217:30] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [217:30] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
-'withFlagFile' @ [224:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [224:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [224:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -718,7 +712,7 @@ Inferred types:
 
 'assertHasMessage' @ [236:30] ==> public fun TestMessageCollector.assertHasMessage(msg: String, desiredSeverity: CompilerMessageSeverity? = ...): Unit defined in org.jetbrains.kotlin.daemon in file CompilerApiTest.kt[SimpleFunctionDescriptorImpl]
 
-'withFlagFile' @ [242:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [242:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [242:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -768,7 +762,7 @@ Inferred types:
 
 'assertHasMessage' @ [257:30] ==> public fun TestMessageCollector.assertHasMessage(msg: String, desiredSeverity: CompilerMessageSeverity? = ...): Unit defined in org.jetbrains.kotlin.daemon in file CompilerApiTest.kt[SimpleFunctionDescriptorImpl]
 
-'withFlagFile' @ [262:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [262:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [262:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -782,7 +776,7 @@ Inferred types:
 
 'absolutePath' @ [263:156] ==> public final val File.absolutePath: (String..String?)[MyPropertyDescriptor]
 
-'withLogFile' @ [265:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [265:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [266:40] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -820,7 +814,7 @@ Inferred types:
 
 'logFile' @ [274:25] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonAutoshutdownOnUnused.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'isLogContainsSequence' @ [274:33] ==> internal fun File.isLogContainsSequence(vararg patterns: String): Boolean defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'isLogContainsSequence' @ [274:33] ==> internal fun File.isLogContainsSequence(vararg patterns: String): Boolean defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'sleep' @ [275:28] ==> public open fun sleep(p0: Long): Unit defined in java.lang.Thread[JavaMethodDescriptor]
 
@@ -828,9 +822,9 @@ Inferred types:
 
 'logFile' @ [279:17] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonAutoshutdownOnUnused.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [279:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [279:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
-'withFlagFile' @ [286:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [286:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [286:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -844,7 +838,7 @@ Inferred types:
 
 'absolutePath' @ [287:154] ==> public final val File.absolutePath: (String..String?)[MyPropertyDescriptor]
 
-'withLogFile' @ [289:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [289:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [290:40] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -892,17 +886,13 @@ Inferred types:
 
 'daemon' @ [297:57] ==> val daemon: CompileService? defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonAutoshutdownOnIdle.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'CompileService' @ [297:67] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'NO_SESSION' @ [297:82] ==> public final val NO_SESSION: Int defined in org.jetbrains.kotlin.daemon.common.CompileService.Companion[DeserializedPropertyDescriptor]
-
-'CompileService' @ [297:94] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [297:124] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
-'arrayOf' @ [298:57] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: String): Array<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [298:57] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: (String..String?)): Array<(String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> String
+    <reified @PureReifiable T> -> (kotlin.String..kotlin.String?)
 
 'File' @ [298:85] ==> public constructor File(p0: (String..String?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
@@ -920,8 +910,6 @@ Inferred types:
 
 'WITHOUT_PATHS' @ [299:117] ==> public final val WITHOUT_PATHS: (MessageRenderer..MessageRenderer?) defined in org.jetbrains.kotlin.cli.common.messages.MessageRenderer[JavaPropertyDescriptor]
 
-'ReportSeverity' @ [300:74] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
-
 'DEBUG' @ [300:89] ==> enum entry DEBUG defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'assertEquals' @ [301:17] ==> public open fun assertEquals(p0: (String..String?), p1: Int, p2: Int): Unit defined in org.jetbrains.kotlin.integration.KotlinIntegrationTestBase[JavaMethodDescriptor]
@@ -932,13 +920,13 @@ Inferred types:
 
 'logFile' @ [303:17] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonAutoshutdownOnIdle.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [303:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [303:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 '..' @ [306:34] ==> public final operator fun rangeTo(other: Int): IntRange defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
 'logFile' @ [307:25] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonAutoshutdownOnIdle.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'isLogContainsSequence' @ [307:33] ==> internal fun File.isLogContainsSequence(vararg patterns: String): Boolean defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'isLogContainsSequence' @ [307:33] ==> internal fun File.isLogContainsSequence(vararg patterns: String): Boolean defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'sleep' @ [308:28] ==> public open fun sleep(p0: Long): Unit defined in java.lang.Thread[JavaMethodDescriptor]
 
@@ -946,9 +934,9 @@ Inferred types:
 
 'logFile' @ [311:17] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonAutoshutdownOnIdle.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [311:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [311:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
-'withFlagFile' @ [318:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [318:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [318:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -962,7 +950,7 @@ Inferred types:
 
 'absolutePath' @ [319:196] ==> public final val File.absolutePath: (String..String?)[MyPropertyDescriptor]
 
-'withLogFile' @ [321:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [321:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [322:40] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -1027,15 +1015,13 @@ Inferred types:
 
 'logFile' @ [335:17] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonGracefulShutdown.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [335:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [335:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'daemon' @ [337:27] ==> val daemon: CompileService? defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonGracefulShutdown.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'leaseCompileSession' @ [337:35] ==> public abstract fun leaseCompileSession(aliveFlagPath: String?): CompileService.CallResult<Int> defined in org.jetbrains.kotlin.daemon.common.CompileService[DeserializedSimpleFunctionDescriptor]
 
 'assertEquals' @ [339:17] ==> public open fun assertEquals(p0: (String..String?), p1: (Any..Any?), p2: (Any..Any?)): Unit defined in org.jetbrains.kotlin.integration.KotlinIntegrationTestBase[JavaMethodDescriptor]
-
-'CompileService' @ [339:47] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'Dying' @ [339:73] ==> public constructor Dying() defined in org.jetbrains.kotlin.daemon.common.CompileService.CallResult.Dying[DeserializedClassConstructorDescriptor]
 
@@ -1053,7 +1039,7 @@ Inferred types:
 
 'logFile' @ [345:17] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonGracefulShutdown.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [345:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [345:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'DaemonOptions' @ [352:29] ==> public constructor DaemonOptions(runFilesPath: String = ..., autoshutdownMemoryThreshold: Long = ..., autoshutdownIdleSeconds: Int = ..., autoshutdownUnusedSeconds: Int = ..., shutdownDelayMilliseconds: Long = ..., forceShutdownTimeoutMilliseconds: Long = ..., verbose: Boolean = ..., reportPerf: Boolean = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[DeserializedClassConstructorDescriptor]
 
@@ -1073,7 +1059,7 @@ Inferred types:
 
 'getTestName' @ [354:42] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
-'withLogFile' @ [356:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [356:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [357:40] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -1115,7 +1101,7 @@ Inferred types:
 
 'logFile' @ [367:17] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonExitsOnClientFlagDeletedWithActiveSessions.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [367:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [367:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'sessionFlag' @ [372:13] ==> val sessionFlag: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonExitsOnClientFlagDeletedWithActiveSessions[LocalVariableDescriptor]
 
@@ -1143,7 +1129,7 @@ Inferred types:
 
 'getTestName' @ [380:42] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
-'withLogFile' @ [382:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [382:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [383:40] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -1191,7 +1177,7 @@ Inferred types:
 
 'logFile' @ [396:17] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonExitsOnClientFlagDeletedWithAllSessionsReleased.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [396:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [396:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'sessionFlag' @ [401:13] ==> val sessionFlag: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonExitsOnClientFlagDeletedWithAllSessionsReleased[LocalVariableDescriptor]
 
@@ -1341,11 +1327,9 @@ Inferred types:
 
 'PARALLEL_THREADS_TO_COMPILE' @ [458:20] ==> private final val PARALLEL_THREADS_TO_COMPILE: Int defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[PropertyDescriptorImpl]
 
-'LoopbackNetworkInterface' @ [458:51] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common[FakeCallableDescriptorForObject]
-
 'SERVER_SOCKET_BACKLOG_SIZE' @ [458:76] ==> public final val SERVER_SOCKET_BACKLOG_SIZE: Int defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[DeserializedPropertyDescriptor]
 
-'withFlagFile' @ [460:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [460:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [460:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -1353,7 +1337,7 @@ Inferred types:
 
 'getTestName' @ [461:55] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
-'withLogFile' @ [463:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [463:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [464:40] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -1421,17 +1405,13 @@ Inferred types:
 
 'daemon' @ [478:37] ==> val daemon: CompileService? defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testParallelCompilationOnDaemon.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'CompileService' @ [479:37] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'NO_SESSION' @ [479:52] ==> public final val NO_SESSION: Int defined in org.jetbrains.kotlin.daemon.common.CompileService.Companion[DeserializedPropertyDescriptor]
-
-'CompileService' @ [480:37] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [480:67] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
-'arrayOf' @ [481:37] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: String): Array<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [481:37] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: (String..String?)): Array<(String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> String
+    <reified @PureReifiable T> -> (kotlin.String..kotlin.String?)
 
 'File' @ [481:65] ==> public constructor File(p0: (String..String?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
@@ -1557,11 +1537,11 @@ Inferred types:
 
 'threadNo' @ [515:73] ==> value-parameter threadNo: Int defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testParallelDaemonStart.connectThread[ValueParameterDescriptorImpl]
 
-'withFlagFile' @ [517:17] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [517:17] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [517:30] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
-'withLogFile' @ [518:21] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [518:21] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'logFiles' @ [519:25] ==> val logFiles: Array<File?> defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testParallelDaemonStart[LocalVariableDescriptor]
 
@@ -1633,13 +1613,11 @@ Inferred types:
 
 'sessionId' @ [530:55] ==> public final val sessionId: Int defined in org.jetbrains.kotlin.daemon.client.CompileServiceSession[DeserializedPropertyDescriptor]
 
-'CompileService' @ [531:33] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'JVM' @ [531:63] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
-'arrayOf' @ [532:33] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: String): Array<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [532:33] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: (String..String?)): Array<(String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> String
+    <reified @PureReifiable T> -> (kotlin.String..kotlin.String?)
 
 'File' @ [532:41] ==> public constructor File(p0: (String..String?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
@@ -1972,7 +1950,7 @@ Inferred types:
 
 'resultsSuccess' @ [594:60] ==> val resultsSuccess: Boolean defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testParallelDaemonStart[LocalVariableDescriptor]
 
-'withFlagFile' @ [599:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [599:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [599:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -2034,7 +2012,7 @@ Inferred types:
 
 'exception' @ [623:27] ==> val exception: Exception? /* = Exception? */ defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonConnectionProblems.<anonymous>[LocalVariableDescriptor]
 
-'withFlagFile' @ [628:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [628:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [628:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -2042,7 +2020,7 @@ Inferred types:
 
 'getTestName' @ [629:55] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
-'withLogFile' @ [631:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [631:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [632:40] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -2112,17 +2090,13 @@ Inferred types:
 
 'remoteCompile' @ [652:37] ==> @Deprecated public abstract fun remoteCompile(sessionId: Int, targetPlatform: CompileService.TargetPlatform, args: Array<out String>, servicesFacade: CompilerCallbackServicesFacade, compilerOutputStream: RemoteOutputStream, outputFormat: CompileService.OutputFormat, serviceOutputStream: RemoteOutputStream, operationsTracer: RemoteOperationsTracer?): CompileService.CallResult<Int> defined in org.jetbrains.kotlin.daemon.common.CompileService[DeserializedSimpleFunctionDescriptor]
 
-'CompileService' @ [652:51] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'NO_SESSION' @ [652:66] ==> public final val NO_SESSION: Int defined in org.jetbrains.kotlin.daemon.common.CompileService.Companion[DeserializedPropertyDescriptor]
-
-'CompileService' @ [653:51] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [653:81] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
-'arrayOf' @ [654:51] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: String): Array<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [654:51] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: (String..String?)): Array<(String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> String
+    <reified @PureReifiable T> -> (kotlin.String..kotlin.String?)
 
 'file' @ [654:79] ==> val file: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonCallbackConnectionProblems.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -2137,8 +2111,6 @@ Inferred types:
 'strm' @ [656:76] ==> val strm: ByteArrayOutputStream defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonCallbackConnectionProblems.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'SOCKET_ANY_FREE_PORT' @ [656:82] ==> public val SOCKET_ANY_FREE_PORT: Int defined in org.jetbrains.kotlin.daemon.common[DeserializedPropertyDescriptor]
-
-'CompileService' @ [657:51] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'XML' @ [657:79] ==> enum entry XML defined in org.jetbrains.kotlin.daemon.common.CompileService.OutputFormat[FakeCallableDescriptorForObject]
 
@@ -2168,15 +2140,13 @@ Inferred types:
 
 'logFile' @ [665:17] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonCallbackConnectionProblems.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [665:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [665:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'withDaemon' @ [672:9] ==> internal final fun withDaemon(body: (CompileService) -> Unit): Unit defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
 'KotlinRemoteReplCompilerClient' @ [673:24] ==> public constructor KotlinRemoteReplCompilerClient(compileService: CompileService, clientAliveFlagFile: File?, targetPlatform: CompileService.TargetPlatform, args: Array<out String>, messageCollector: MessageCollector, templateClasspath: List<File>, templateClassName: String, port: Int = ...) defined in org.jetbrains.kotlin.daemon.client.KotlinRemoteReplCompilerClient[DeserializedClassConstructorDescriptor]
 
 'daemon' @ [673:55] ==> value-parameter daemon: CompileService defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonReplLocalEvalNoParams.<anonymous>[ValueParameterDescriptorImpl]
-
-'CompileService' @ [673:69] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [673:99] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
@@ -2186,7 +2156,7 @@ Inferred types:
 
 'TestMessageCollector' @ [675:55] ==> public constructor TestMessageCollector() defined in org.jetbrains.kotlin.daemon.TestMessageCollector[ClassConstructorDescriptorImpl]
 
-'classpathFromClassloader' @ [676:55] ==> internal fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'classpathFromClassloader' @ [676:55] ==> internal fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'ScriptWithNoParam' @ [677:55] ==> public constructor ScriptWithNoParam() defined in org.jetbrains.kotlin.daemon.ScriptWithNoParam[ClassConstructorDescriptorImpl]
 
@@ -2218,8 +2188,6 @@ Inferred types:
 
 'daemon' @ [688:55] ==> value-parameter daemon: CompileService defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonReplLocalEvalStandardTemplate.<anonymous>[ValueParameterDescriptorImpl]
 
-'CompileService' @ [688:69] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'JVM' @ [688:99] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
 'emptyArray' @ [688:104] ==> public inline fun <reified @PureReifiable T> emptyArray(): Array<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -2228,7 +2196,7 @@ Inferred types:
 
 'TestMessageCollector' @ [689:55] ==> public constructor TestMessageCollector() defined in org.jetbrains.kotlin.daemon.TestMessageCollector[ClassConstructorDescriptorImpl]
 
-'classpathFromClassloader' @ [690:55] ==> internal fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'classpathFromClassloader' @ [690:55] ==> internal fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'GenericReplEvaluator' @ [693:34] ==> public constructor GenericReplEvaluator(baseClasspath: Iterable<File>, baseClassloader: ClassLoader? = ..., fallbackScriptArgs: ScriptArgsWithTypes? = ..., repeatingMode: ReplRepeatingMode = ...) defined in org.jetbrains.kotlin.cli.common.repl.GenericReplEvaluator[DeserializedClassConstructorDescriptor]
 
@@ -2254,9 +2222,9 @@ Inferred types:
 Inferred types:
     <reified @PureReifiable T> -> KClass<Array<String>>
 
-'Array' @ [694:114] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [694:114] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@74a11596
 
 'doReplTestWithLocalEval' @ [696:13] ==> private final fun doReplTestWithLocalEval(replCompiler: KotlinRemoteReplCompilerClient, localEvaluator: ReplEvaluator): Unit defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -2364,7 +2332,7 @@ Inferred types:
 
 'value' @ [726:43] ==> public final val value: Any? defined in org.jetbrains.kotlin.cli.common.repl.ReplEvalResult.ValueResult[DeserializedPropertyDescriptor]
 
-'withFlagFile' @ [730:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [730:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [730:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -2378,7 +2346,7 @@ Inferred types:
 
 'absolutePath' @ [731:185] ==> public final val File.absolutePath: (String..String?)[MyPropertyDescriptor]
 
-'withLogFile' @ [733:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [733:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [734:40] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -2408,8 +2376,6 @@ Inferred types:
 
 'daemon' @ [739:67] ==> val daemon: CompileService? defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonReplAutoshutdownOnIdle.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'CompileService' @ [739:83] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'JVM' @ [739:113] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
 'emptyArray' @ [740:67] ==> public inline fun <reified @PureReifiable T> emptyArray(): Array<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -2418,7 +2384,7 @@ Inferred types:
 
 'TestMessageCollector' @ [741:67] ==> public constructor TestMessageCollector() defined in org.jetbrains.kotlin.daemon.TestMessageCollector[ClassConstructorDescriptorImpl]
 
-'classpathFromClassloader' @ [742:67] ==> internal fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'classpathFromClassloader' @ [742:67] ==> internal fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'ScriptWithNoParam' @ [743:67] ==> public constructor ScriptWithNoParam() defined in org.jetbrains.kotlin.daemon.ScriptWithNoParam[ClassConstructorDescriptorImpl]
 
@@ -2456,7 +2422,7 @@ Inferred types:
 
 'logFile' @ [758:25] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonReplAutoshutdownOnIdle.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'isLogContainsSequence' @ [758:33] ==> internal fun File.isLogContainsSequence(vararg patterns: String): Boolean defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'isLogContainsSequence' @ [758:33] ==> internal fun File.isLogContainsSequence(vararg patterns: String): Boolean defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'sleep' @ [759:28] ==> public open fun sleep(p0: Long): Unit defined in java.lang.Thread[JavaMethodDescriptor]
 
@@ -2468,9 +2434,9 @@ Inferred types:
 
 'logFile' @ [764:17] ==> value-parameter logFile: File defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest.testDaemonReplAutoshutdownOnIdle.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [764:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [764:25] ==> internal fun File.assertLogContainsSequence(vararg patterns: String): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
-'withFlagFile' @ [771:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [771:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'getTestName' @ [771:22] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
@@ -2478,7 +2444,7 @@ Inferred types:
 
 'getTestName' @ [772:55] ==> protected/*protected and package*/ open fun getTestName(p0: Boolean): (String..String?) defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[JavaMethodDescriptor]
 
-'withLogFile' @ [773:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'withLogFile' @ [773:13] ==> internal inline fun withLogFile(prefix: String, suffix: String = ..., printLogOnException: Boolean = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDaemonJvmOptions' @ [774:40] ==> public final fun makeTestDaemonJvmOptions(logFile: File? = ..., xmx: Int = ..., args: Iterable<String> = ...): DaemonJVMOptions defined in org.jetbrains.kotlin.daemon.CompilerDaemonTest[SimpleFunctionDescriptorImpl]
 
@@ -2577,7 +2543,7 @@ Inferred types:
 
 'body' @ [811:81] ==> value-parameter body: (LinePattern, Int) -> Unit defined in org.jetbrains.kotlin.daemon.ifLogNotContainsSequence[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [815:72] ==> internal fun File.assertLogContainsSequence(patterns: Iterable<LinePattern>): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [815:72] ==> internal fun File.assertLogContainsSequence(patterns: Iterable<LinePattern>): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'patterns' @ [815:98] ==> value-parameter vararg patterns: String defined in org.jetbrains.kotlin.daemon.assertLogContainsSequence[ValueParameterDescriptorImpl]
 
@@ -2590,7 +2556,7 @@ Inferred types:
 
 'it' @ [815:125] ==> value-parameter it: String defined in org.jetbrains.kotlin.daemon.assertLogContainsSequence.<anonymous>[ValueParameterDescriptorImpl]
 
-'assertLogContainsSequence' @ [817:77] ==> internal fun File.assertLogContainsSequence(patterns: Iterable<LinePattern>): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'assertLogContainsSequence' @ [817:77] ==> internal fun File.assertLogContainsSequence(patterns: Iterable<LinePattern>): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'patterns' @ [817:103] ==> value-parameter vararg patterns: LinePattern defined in org.jetbrains.kotlin.daemon.assertLogContainsSequence[ValueParameterDescriptorImpl]
 
@@ -2640,7 +2606,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'ifLogNotContainsSequence' @ [829:5] ==> internal fun File.ifLogNotContainsSequence(vararg patterns: String, body: (LinePattern, Int) -> Unit): Unit defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'ifLogNotContainsSequence' @ [829:5] ==> internal fun File.ifLogNotContainsSequence(vararg patterns: String, body: (LinePattern, Int) -> Unit): Unit defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'patterns' @ [829:31] ==> value-parameter vararg patterns: String defined in org.jetbrains.kotlin.daemon.isLogContainsSequence[ValueParameterDescriptorImpl]
 
@@ -2720,8 +2686,6 @@ Inferred types:
 
 'current' @ [871:20] ==> public final val current: OSKind defined in org.jetbrains.kotlin.daemon.common.OSKind.Companion[DeserializedPropertyDescriptor]
 
-'OSKind' @ [871:31] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.OSKind[FakeCallableDescriptorForObject]
-
 'Windows' @ [871:38] ==> enum entry Windows defined in org.jetbrains.kotlin.daemon.common.OSKind[FakeCallableDescriptorForObject]
 
 'absolutePath' @ [871:47] ==> public final val File.absolutePath: (String..String?)[MyPropertyDescriptor]
@@ -2732,7 +2696,7 @@ Inferred types:
 
 'ScriptDependencies' @ [877:16] ==> public constructor ScriptDependencies(javaHome: File? = ..., classpath: List<File> = ..., imports: List<String> = ..., sources: List<File> = ..., scripts: List<File> = ...) defined in kotlin.script.experimental.dependencies.ScriptDependencies[DeserializedClassConstructorDescriptor]
 
-'classpathFromClassloader' @ [878:25] ==> internal fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'classpathFromClassloader' @ [878:25] ==> internal fun classpathFromClassloader(): List<File> defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [879:23] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -2764,6 +2728,8 @@ Inferred types:
 Inferred types:
     <T> -> (java.net.URL..java.net.URL?)
     <R : Any> -> File
+
+'toFile' @ [889:35] ==> internal fun URL.toFile(): File? defined in org.jetbrains.kotlin.daemon in file CompilerDaemonTest.kt[SimpleFunctionDescriptorImpl]
 
 'filter' @ [890:19] ==> public inline fun <T> Iterable<File>.filter(predicate: (File) -> Boolean): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

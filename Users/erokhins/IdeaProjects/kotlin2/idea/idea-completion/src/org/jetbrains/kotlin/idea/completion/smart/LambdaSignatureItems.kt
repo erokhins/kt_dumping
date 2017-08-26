@@ -91,8 +91,6 @@ Inferred types:
 
 'functionType' @ [57:52] ==> val functionType: KotlinType defined in org.jetbrains.kotlin.idea.completion.smart.LambdaSignatureItems.addToCollection[LocalVariableDescriptor]
 
-'LambdaSignatureTemplates' @ [57:66] ==> public object LambdaSignatureTemplates defined in org.jetbrains.kotlin.idea.completion in file LambdaSignatureTemplates.kt[FakeCallableDescriptorForObject]
-
 'NAMES_OR_TYPES' @ [57:113] ==> enum entry NAMES_OR_TYPES defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.SignaturePresentation[FakeCallableDescriptorForObject]
 
 'collection' @ [60:17] ==> value-parameter collection: MutableCollection<LookupElement> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaSignatureItems.addToCollection[ValueParameterDescriptorImpl]
@@ -103,8 +101,6 @@ Inferred types:
 
 'functionType' @ [60:52] ==> val functionType: KotlinType defined in org.jetbrains.kotlin.idea.completion.smart.LambdaSignatureItems.addToCollection[LocalVariableDescriptor]
 
-'LambdaSignatureTemplates' @ [60:66] ==> public object LambdaSignatureTemplates defined in org.jetbrains.kotlin.idea.completion in file LambdaSignatureTemplates.kt[FakeCallableDescriptorForObject]
-
 'NAMES' @ [60:113] ==> enum entry NAMES defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.SignaturePresentation[FakeCallableDescriptorForObject]
 
 'collection' @ [61:17] ==> value-parameter collection: MutableCollection<LookupElement> defined in org.jetbrains.kotlin.idea.completion.smart.LambdaSignatureItems.addToCollection[ValueParameterDescriptorImpl]
@@ -114,8 +110,6 @@ Inferred types:
 'createLookupElement' @ [61:32] ==> private final fun createLookupElement(functionType: KotlinType, signaturePresentation: LambdaSignatureTemplates.SignaturePresentation, explicitParameterTypes: Boolean): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart.LambdaSignatureItems[SimpleFunctionDescriptorImpl]
 
 'functionType' @ [61:52] ==> val functionType: KotlinType defined in org.jetbrains.kotlin.idea.completion.smart.LambdaSignatureItems.addToCollection[LocalVariableDescriptor]
-
-'LambdaSignatureTemplates' @ [61:66] ==> public object LambdaSignatureTemplates defined in org.jetbrains.kotlin.idea.completion in file LambdaSignatureTemplates.kt[FakeCallableDescriptorForObject]
 
 'NAMES_AND_TYPES' @ [61:113] ==> enum entry NAMES_AND_TYPES defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.SignaturePresentation[FakeCallableDescriptorForObject]
 
@@ -184,7 +178,7 @@ Inferred types:
 
 'explicitParameterTypes' @ [81:151] ==> value-parameter explicitParameterTypes: Boolean defined in org.jetbrains.kotlin.idea.completion.smart.LambdaSignatureItems.createLookupElement[ValueParameterDescriptorImpl]
 
-'suppressAutoInsertion' @ [83:18] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'suppressAutoInsertion' @ [83:18] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'assignSmartCompletionPriority' @ [84:18] ==> public fun LookupElement.assignSmartCompletionPriority(priority: SmartCompletionItemPriority): LookupElement defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 

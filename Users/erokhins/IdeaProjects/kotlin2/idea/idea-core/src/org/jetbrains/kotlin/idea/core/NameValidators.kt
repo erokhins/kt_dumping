@@ -2,31 +2,31 @@
 
 'emptySet' @ [45:57] ==> public final fun <T : (Any..Any?)> emptySet(): (MutableSet<(String..String?)>..Set<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'HashSet' @ [48:33] ==> public constructor HashSet<E : (Any..Any?)>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)) defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'existingNames' @ [48:41] ==> value-parameter existingNames: Collection<String> = ... defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator.<init>[ValueParameterDescriptorImpl]
 
 'name' @ [51:13] ==> value-parameter name: String defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator.invoke[ValueParameterDescriptorImpl]
 
-'existingNames' @ [51:22] ==> private final val existingNames: HashSet<String> defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator[PropertyDescriptorImpl]
+'existingNames' @ [51:22] ==> private final val existingNames: HashSet<(String..String?)> defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator[PropertyDescriptorImpl]
 
 'invoke' @ [51:39] ==> public abstract operator fun invoke(p1: String): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
 
 'name' @ [51:46] ==> value-parameter name: String defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator.invoke[ValueParameterDescriptorImpl]
 
-'existingNames' @ [52:13] ==> private final val existingNames: HashSet<String> defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator[PropertyDescriptorImpl]
+'existingNames' @ [52:13] ==> private final val existingNames: HashSet<(String..String?)> defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator[PropertyDescriptorImpl]
 
-'add' @ [52:27] ==> public open fun add(element: String): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'add' @ [52:27] ==> public open fun add(element: (String..String?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'name' @ [52:31] ==> value-parameter name: String defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator.invoke[ValueParameterDescriptorImpl]
 
-'existingNames' @ [59:9] ==> private final val existingNames: HashSet<String> defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator[PropertyDescriptorImpl]
+'existingNames' @ [59:9] ==> private final val existingNames: HashSet<(String..String?)> defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator[PropertyDescriptorImpl]
 
-'add' @ [59:23] ==> public open fun add(element: String): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'add' @ [59:23] ==> public open fun add(element: (String..String?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'name' @ [59:27] ==> value-parameter name: String defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator.addName[ValueParameterDescriptorImpl]
 

@@ -34,6 +34,8 @@
 Inferred types:
     <T> -> PsiElement
 
+'isCallHierarchyElement' @ [39:90] ==> public fun isCallHierarchyElement(e: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.hierarchy.calls in file callHierarchyUtils.kt[SimpleFunctionDescriptorImpl]
+
 'when (this) {
         is KotlinCallHierarchyNodeDescriptor -> incrementUsageCount()
         is CallHierarchyNodeDescriptor -> incrementUsageCount()

@@ -24,21 +24,21 @@ Inferred types:
 
 'containingElement' @ [37:50] ==> value-parameter containingElement: UElement? defined in org.jetbrains.uast.kotlin.expressions.createNotEqWithNullExpression[ValueParameterDescriptorImpl]
 
-'lz' @ [38:54] ==> internal fun <T> lz(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [38:54] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
-'createVariableReferenceExpression' @ [38:59] ==> private fun createVariableReferenceExpression(variable: UVariable, containingElement: UElement?): <no name provided> defined in org.jetbrains.uast.kotlin.expressions[SimpleFunctionDescriptorImpl]
+'createVariableReferenceExpression' @ [38:59] ==> private fun createVariableReferenceExpression(variable: UVariable, containingElement: UElement?): <no name provided> defined in org.jetbrains.uast.kotlin.expressions in file ElvisExpression.kt[SimpleFunctionDescriptorImpl]
 
 'variable' @ [38:93] ==> value-parameter variable: UVariable defined in org.jetbrains.uast.kotlin.expressions.createNotEqWithNullExpression[ValueParameterDescriptorImpl]
 
 'this' @ [38:103] ==> <this> defined in org.jetbrains.uast.kotlin.expressions.createNotEqWithNullExpression.<no name provided>[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [39:55] ==> internal fun <T> lz(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [39:55] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
-'createNullLiteralExpression' @ [39:60] ==> private fun createNullLiteralExpression(containingElement: UElement?): <no name provided> defined in org.jetbrains.uast.kotlin.expressions[SimpleFunctionDescriptorImpl]
+'createNullLiteralExpression' @ [39:60] ==> private fun createNullLiteralExpression(containingElement: UElement?): <no name provided> defined in org.jetbrains.uast.kotlin.expressions in file ElvisExpression.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [39:88] ==> <this> defined in org.jetbrains.uast.kotlin.expressions.createNotEqWithNullExpression.<no name provided>[LazyClassReceiverParameterDescriptor]
 
@@ -59,8 +59,6 @@ Inferred types:
 'containingElement' @ [52:53] ==> value-parameter containingElement: UElement? defined in org.jetbrains.uast.kotlin.expressions.createElvisExpressions[ValueParameterDescriptorImpl]
 
 'KotlinULocalVariable' @ [53:24] ==> public constructor KotlinULocalVariable(psi: PsiLocalVariable, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinULocalVariable[ClassConstructorDescriptorImpl]
-
-'UastKotlinPsiVariable' @ [53:45] ==> public companion object defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable[FakeCallableDescriptorForObject]
 
 'create' @ [53:67] ==> public final fun create(initializer: KtExpression, containingElement: UElement, parent: PsiElement): PsiLocalVariable defined in org.jetbrains.uast.kotlin.psi.UastKotlinPsiVariable.Companion[SimpleFunctionDescriptorImpl]
 
@@ -84,29 +82,29 @@ Inferred types:
 
 'containingElement' @ [58:46] ==> value-parameter containingElement: UElement? defined in org.jetbrains.uast.kotlin.expressions.createElvisExpressions[ValueParameterDescriptorImpl]
 
-'lz' @ [59:48] ==> internal fun <T> lz(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [59:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
-'createNotEqWithNullExpression' @ [59:53] ==> private fun createNotEqWithNullExpression(variable: UVariable, containingElement: UElement?): <no name provided> defined in org.jetbrains.uast.kotlin.expressions[SimpleFunctionDescriptorImpl]
+'createNotEqWithNullExpression' @ [59:53] ==> private fun createNotEqWithNullExpression(variable: UVariable, containingElement: UElement?): <no name provided> defined in org.jetbrains.uast.kotlin.expressions in file ElvisExpression.kt[SimpleFunctionDescriptorImpl]
 
 'tempVariable' @ [59:83] ==> val tempVariable: KotlinULocalVariable defined in org.jetbrains.uast.kotlin.expressions.createElvisExpressions[LocalVariableDescriptor]
 
 'this' @ [59:97] ==> <this> defined in org.jetbrains.uast.kotlin.expressions.createElvisExpressions.<no name provided>[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [60:54] ==> internal fun <T> lz(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [60:54] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
-'createVariableReferenceExpression' @ [60:59] ==> private fun createVariableReferenceExpression(variable: UVariable, containingElement: UElement?): <no name provided> defined in org.jetbrains.uast.kotlin.expressions[SimpleFunctionDescriptorImpl]
+'createVariableReferenceExpression' @ [60:59] ==> private fun createVariableReferenceExpression(variable: UVariable, containingElement: UElement?): <no name provided> defined in org.jetbrains.uast.kotlin.expressions in file ElvisExpression.kt[SimpleFunctionDescriptorImpl]
 
 'tempVariable' @ [60:93] ==> val tempVariable: KotlinULocalVariable defined in org.jetbrains.uast.kotlin.expressions.createElvisExpressions[LocalVariableDescriptor]
 
 'this' @ [60:107] ==> <this> defined in org.jetbrains.uast.kotlin.expressions.createElvisExpressions.<no name provided>[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [61:54] ==> internal fun <T> lz(initializer: () -> UExpression?): Lazy<UExpression?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [61:54] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression?
+    <T> -> T
 
 'KotlinConverter' @ [61:59] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -116,7 +114,7 @@ Inferred types:
 
 'this' @ [61:100] ==> <this> defined in org.jetbrains.uast.kotlin.expressions.createElvisExpressions.<no name provided>[LazyClassReceiverParameterDescriptor]
 
-'toCallback' @ [61:105] ==> internal fun UElement?.toCallback(): (() -> UElement?)? defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'toCallback' @ [61:105] ==> internal fun UElement?.toCallback(): (() -> UElement?)? defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [63:55] ==> public fun <T> emptyList(): List<UAnnotation> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -162,11 +160,11 @@ Inferred types:
 Inferred types:
     <T> -> UAnnotation
 
-'lz' @ [80:56] ==> internal fun <T> lz(initializer: () -> List<UExpression>): Lazy<List<UExpression>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [80:56] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UExpression>
+    <T> -> T
 
-'createElvisExpressions' @ [81:13] ==> private fun createElvisExpressions(left: KtExpression, right: KtExpression, containingElement: UElement?, psiParent: PsiElement): List<UExpression> defined in org.jetbrains.uast.kotlin.expressions[SimpleFunctionDescriptorImpl]
+'createElvisExpressions' @ [81:13] ==> private fun createElvisExpressions(left: KtExpression, right: KtExpression, containingElement: UElement?, psiParent: PsiElement): List<UExpression> defined in org.jetbrains.uast.kotlin.expressions in file ElvisExpression.kt[SimpleFunctionDescriptorImpl]
 
 'left' @ [81:36] ==> val left: KtExpression defined in org.jetbrains.uast.kotlin.expressions.createElvisExpression[LocalVariableDescriptor]
 

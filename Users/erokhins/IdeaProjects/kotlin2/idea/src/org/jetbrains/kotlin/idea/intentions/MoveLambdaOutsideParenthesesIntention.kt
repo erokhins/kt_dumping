@@ -67,11 +67,11 @@ Inferred types:
 
 'callee' @ [45:92] ==> val callee: KtExpression? defined in org.jetbrains.kotlin.idea.intentions.MoveLambdaOutsideParenthesesIntention.Companion.canMove[LocalVariableDescriptor]
 
-'listOf' @ [46:34] ==> @InlineOnly public inline fun <T> listOf(): List<(DeclarationDescriptor..DeclarationDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [46:34] ==> @InlineOnly public inline fun <T> listOf(): List<DeclarationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T> -> DeclarationDescriptor
 
-'targets' @ [47:34] ==> val targets: (Collection<DeclarationDescriptor>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>) defined in org.jetbrains.kotlin.idea.intentions.MoveLambdaOutsideParenthesesIntention.Companion.canMove[LocalVariableDescriptor]
+'targets' @ [47:34] ==> val targets: Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.idea.intentions.MoveLambdaOutsideParenthesesIntention.Companion.canMove[LocalVariableDescriptor]
 
 'filterIsInstance' @ [47:42] ==> public inline fun <reified R> Iterable<*>.filterIsInstance(): List<FunctionDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

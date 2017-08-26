@@ -60,7 +60,7 @@ Inferred types:
 
 'getService' @ [75:35] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Class<(StubIndexService..StubIndexService?)>): (StubIndexService..StubIndexService?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> StubIndexService
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.stubs.elements.StubIndexService..org.jetbrains.kotlin.psi.stubs.elements.StubIndexService?)
 
 'StubIndexService' @ [75:46] ==> public companion object defined in org.jetbrains.kotlin.psi.stubs.elements.StubIndexService[FakeCallableDescriptorForObject]
 

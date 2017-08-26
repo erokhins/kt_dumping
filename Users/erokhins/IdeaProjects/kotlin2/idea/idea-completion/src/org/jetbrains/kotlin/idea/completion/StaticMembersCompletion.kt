@@ -44,12 +44,16 @@ Inferred types:
 
 'itemPriority' @ [57:42] ==> value-parameter itemPriority: ItemPriority defined in org.jetbrains.kotlin.idea.completion.StaticMembersCompletion.decoratedLookupElementFactory[ValueParameterDescriptorImpl]
 
-'suppressAutoInsertion' @ [58:27] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'suppressAutoInsertion' @ [58:27] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [59:26] ==> @InlineOnly public inline fun <T, R> LookupElement?.let(block: (LookupElement?) -> List<LookupElement>): List<LookupElement> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> LookupElement?
     <R> -> List<LookupElement>
+
+'listOfNotNull' @ [59:32] ==> public fun <T : Any> listOfNotNull(element: LookupElement?): List<LookupElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T : Any> -> LookupElement
 
 'file' @ [69:26] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.completion.StaticMembersCompletion.membersFromImports[ValueParameterDescriptorImpl]
 
@@ -109,7 +113,7 @@ Inferred types:
 
 'prefixMatcher' @ [82:26] ==> private final val prefixMatcher: PrefixMatcher defined in org.jetbrains.kotlin.idea.completion.StaticMembersCompletion[PropertyDescriptorImpl]
 
-'asNameFilter' @ [82:40] ==> public fun PrefixMatcher.asNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'asNameFilter' @ [82:40] ==> public fun PrefixMatcher.asNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'containers' @ [83:27] ==> val containers: Set<ClassDescriptor> defined in org.jetbrains.kotlin.idea.completion.StaticMembersCompletion.membersFromImports[LocalVariableDescriptor]
 

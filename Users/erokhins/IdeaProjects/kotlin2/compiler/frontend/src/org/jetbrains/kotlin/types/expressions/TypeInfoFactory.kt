@@ -18,8 +18,6 @@
 
 'type' @ [33:72] ==> value-parameter type: KotlinType? defined in org.jetbrains.kotlin.types.expressions.typeInfoFactory.createTypeInfo[ValueParameterDescriptorImpl]
 
-'DataFlowInfo' @ [33:78] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [33:91] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[PropertyDescriptorImpl]
 
 'createTypeInfo' @ [35:88] ==> public fun createTypeInfo(type: KotlinType?, dataFlowInfo: DataFlowInfo): KotlinTypeInfo defined in org.jetbrains.kotlin.types.expressions.typeInfoFactory in file TypeInfoFactory.kt[SimpleFunctionDescriptorImpl]

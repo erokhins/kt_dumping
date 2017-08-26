@@ -174,7 +174,11 @@ Inferred types:
 
 'javaBaseClass' @ [82:42] ==> value-parameter javaBaseClass: PsiClass defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.getOrCreateWrapper[ValueParameterDescriptorImpl]
 
+'mutableWrapper' @ [82:57] ==> private var PsiClass.mutableWrapper: KtLightMutabilityPlatformWrapper? defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file platformWrappers.kt[PropertyDescriptorImpl]
+
 'javaBaseClass' @ [82:77] ==> value-parameter javaBaseClass: PsiClass defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.getOrCreateWrapper[ValueParameterDescriptorImpl]
+
+'readOnlyWrapper' @ [82:92] ==> private var PsiClass.readOnlyWrapper: KtLightMutabilityPlatformWrapper? defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file platformWrappers.kt[PropertyDescriptorImpl]
 
 'userDataStorage' @ [83:12] ==> val userDataStorage: KMutableProperty0<KtLightMutabilityPlatformWrapper?> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.getOrCreateWrapper[LocalVariableDescriptor]
 
@@ -198,23 +202,17 @@ Inferred types:
 
 'it' @ [83:137] ==> value-parameter it: KtLightMutabilityPlatformWrapper defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.getOrCreateWrapper.<anonymous>[ValueParameterDescriptorImpl]
 
-'UserDataProperty' @ [86:76] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<KtLightMutabilityPlatformWrapper>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> PsiClass
-    <T : Any> -> KtLightMutabilityPlatformWrapper
+'getValue' @ [86:76] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [86:97] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(KtLightMutabilityPlatformWrapper..KtLightMutabilityPlatformWrapper?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtLightMutabilityPlatformWrapper
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtLightMutabilityPlatformWrapper..org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtLightMutabilityPlatformWrapper?)
 
-'UserDataProperty' @ [87:75] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<KtLightMutabilityPlatformWrapper>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> PsiClass
-    <T : Any> -> KtLightMutabilityPlatformWrapper
+'getValue' @ [87:75] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [87:96] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(KtLightMutabilityPlatformWrapper..KtLightMutabilityPlatformWrapper?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtLightMutabilityPlatformWrapper
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtLightMutabilityPlatformWrapper..org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtLightMutabilityPlatformWrapper?)
 
 'KtAbstractContainerWrapper' @ [93:5] ==> public constructor KtAbstractContainerWrapper(fqName: FqName, superInterface: PsiClass) defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtAbstractContainerWrapper[ClassConstructorDescriptorImpl]
 
@@ -222,9 +220,9 @@ Inferred types:
 
 'javaBaseClass' @ [93:55] ==> value-parameter javaBaseClass: PsiClass defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtLightMutabilityPlatformWrapper.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [94:29] ==> public fun <T> lazyPub(initializer: () -> List<PsiMethod>): Lazy<List<PsiMethod>> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [94:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<PsiMethod>
+    <T> -> T
 
 'calcMethods' @ [94:39] ==> private final fun calcMethods(): List<PsiMethod> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtLightMutabilityPlatformWrapper[SimpleFunctionDescriptorImpl]
 
@@ -394,7 +392,7 @@ Inferred types:
 Inferred types:
     <T> -> PsiTypeParameter
 
-'asType' @ [143:71] ==> private fun PsiTypeParameter.asType(): PsiImmediateClassType defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'asType' @ [143:71] ==> private fun PsiTypeParameter.asType(): PsiImmediateClassType defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file platformWrappers.kt[SimpleFunctionDescriptorImpl]
 
 'baseMethod' @ [146:16] ==> value-parameter baseMethod: PsiMethod defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtLightMutabilityPlatformWrapper.createRemoveAt[ValueParameterDescriptorImpl]
 
@@ -436,11 +434,11 @@ Inferred types:
 
 'typeParameters' @ [174:17] ==> public final val KtLightMutabilityPlatformWrapper.typeParameters: Array<PsiTypeParameter>[MyPropertyDescriptor]
 
-'asType' @ [174:35] ==> private fun PsiTypeParameter.asType(): PsiImmediateClassType defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'asType' @ [174:35] ==> private fun PsiTypeParameter.asType(): PsiImmediateClassType defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file platformWrappers.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameters' @ [175:17] ==> public final val KtLightMutabilityPlatformWrapper.typeParameters: Array<PsiTypeParameter>[MyPropertyDescriptor]
 
-'asType' @ [175:35] ==> private fun PsiTypeParameter.asType(): PsiImmediateClassType defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'asType' @ [175:35] ==> private fun PsiTypeParameter.asType(): PsiImmediateClassType defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file platformWrappers.kt[SimpleFunctionDescriptorImpl]
 
 'when (method.name) {
             "get" -> MethodSignature(
@@ -839,9 +837,9 @@ Inferred types:
 
 'isVarArgs' @ [300:43] ==> public final val PsiMethod.isVarArgs: Boolean[MyPropertyDescriptor]
 
-'lazyPub' @ [302:31] ==> public fun <T> lazyPub(initializer: () -> LightIdentifier): Lazy<LightIdentifier> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [302:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LightIdentifier
+    <T> -> T
 
 'LightIdentifier' @ [302:41] ==> public constructor LightIdentifier(p0: (PsiManager..PsiManager?), p1: (String..String?)) defined in com.intellij.psi.impl.light.LightIdentifier[JavaClassConstructorDescriptor]
 
@@ -938,11 +936,11 @@ Inferred types:
     <V> -> PsiTypeParameter
     <R> -> PsiImmediateClassType
 
-'it' @ [329:9] ==> value-parameter it: Map.Entry<(PsiTypeParameter..PsiTypeParameter?), PsiTypeParameter> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtAbstractContainerWrapper.substitutor.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [329:9] ==> value-parameter it: Map.Entry<PsiTypeParameter, PsiTypeParameter> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtAbstractContainerWrapper.substitutor.<anonymous>[ValueParameterDescriptorImpl]
 
 'value' @ [329:12] ==> public abstract val value: PsiTypeParameter defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'asType' @ [329:18] ==> private fun PsiTypeParameter.asType(): PsiImmediateClassType defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses[SimpleFunctionDescriptorImpl]
+'asType' @ [329:18] ==> private fun PsiTypeParameter.asType(): PsiImmediateClassType defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses in file platformWrappers.kt[SimpleFunctionDescriptorImpl]
 
 'arrayOf' @ [332:32] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: PsiClass): Array<PsiClass> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -968,9 +966,9 @@ Inferred types:
 
 'ABSTRACT' @ [338:104] ==> public const final val ABSTRACT: String defined in com.intellij.psi.PsiModifier[JavaPropertyDescriptor]
 
-'lazyPub' @ [340:39] ==> public fun <T> lazyPub(initializer: () -> LightTypeParameterListBuilder): Lazy<LightTypeParameterListBuilder> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [340:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LightTypeParameterListBuilder
+    <T> -> T
 
 'LightTypeParameterListBuilder' @ [341:9] ==> public constructor LightTypeParameterListBuilder(p0: (PsiManager..PsiManager?), p1: (Language..Language?)) defined in com.intellij.psi.impl.light.LightTypeParameterListBuilder[JavaClassConstructorDescriptor]
 
@@ -996,9 +994,9 @@ Inferred types:
 
 '_typeParameterList' @ [346:43] ==> private final val _typeParameterList: LightTypeParameterListBuilder defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtAbstractContainerWrapper[PropertyDescriptorImpl]
 
-'lazyPub' @ [348:31] ==> public fun <T> lazyPub(initializer: () -> LightIdentifier): Lazy<LightIdentifier> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [348:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LightIdentifier
+    <T> -> T
 
 'LightIdentifier' @ [348:41] ==> public constructor LightIdentifier(p0: (PsiManager..PsiManager?), p1: (String..String?)) defined in com.intellij.psi.impl.light.LightIdentifier[JavaClassConstructorDescriptor]
 
@@ -1014,9 +1012,9 @@ Inferred types:
 
 'asString' @ [351:49] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'lazyPub' @ [353:36] ==> public fun <T> lazyPub(initializer: () -> LightReferenceListBuilder): Lazy<LightReferenceListBuilder> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [353:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LightReferenceListBuilder
+    <T> -> T
 
 'LightReferenceListBuilder' @ [354:9] ==> public constructor LightReferenceListBuilder(p0: (PsiManager..PsiManager?), p1: (PsiReferenceList.Role..PsiReferenceList.Role?)) defined in com.intellij.psi.impl.light.LightReferenceListBuilder[JavaClassConstructorDescriptor]
 
@@ -1142,9 +1140,9 @@ Inferred types:
 
 'this' @ [402:87] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.KtAbstractContainerWrapper[LazyClassReceiverParameterDescriptor]
 
-'lazyPub' @ [406:34] ==> public fun <T> lazyPub(initializer: () -> LightModifierList): Lazy<LightModifierList> defined in org.jetbrains.kotlin.asJava.classes[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [406:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LightModifierList
+    <T> -> T
 
 'LightModifierList' @ [406:44] ==> public constructor LightModifierList(p0: (PsiManager..PsiManager?), p1: (Language..Language?), vararg p2: (String..String?)) defined in com.intellij.psi.impl.light.LightModifierList[JavaClassConstructorDescriptor]
 

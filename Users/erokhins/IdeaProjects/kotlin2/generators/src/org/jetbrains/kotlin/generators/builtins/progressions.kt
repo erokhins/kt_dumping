@@ -8,11 +8,11 @@
 
 't' @ [29:30] ==> val t: String defined in org.jetbrains.kotlin.generators.builtins.progressions.GenerateProgressions.generateDiscreteBody[LocalVariableDescriptor]
 
-'progressionIncrementType' @ [31:29] ==> public fun progressionIncrementType(kind: ProgressionKind): String defined in org.jetbrains.kotlin.generators.builtins[SimpleFunctionDescriptorImpl]
+'progressionIncrementType' @ [31:29] ==> public fun progressionIncrementType(kind: ProgressionKind): String defined in org.jetbrains.kotlin.generators.builtins in file common.kt[SimpleFunctionDescriptorImpl]
 
 'kind' @ [31:54] ==> value-parameter kind: ProgressionKind defined in org.jetbrains.kotlin.generators.builtins.progressions.GenerateProgressions.generateDiscreteBody[ValueParameterDescriptorImpl]
 
-'areEqualNumbers' @ [32:34] ==> public fun areEqualNumbers(v: String): String defined in org.jetbrains.kotlin.generators.builtins[SimpleFunctionDescriptorImpl]
+'areEqualNumbers' @ [32:34] ==> public fun areEqualNumbers(v: String): String defined in org.jetbrains.kotlin.generators.builtins in file common.kt[SimpleFunctionDescriptorImpl]
 
 'v' @ [32:50] ==> value-parameter v: String defined in org.jetbrains.kotlin.generators.builtins.progressions.GenerateProgressions.generateDiscreteBody.compare[ValueParameterDescriptorImpl]
 
@@ -51,11 +51,11 @@ Inferred types:
 
 'LONG' @ [45:13] ==> enum entry LONG defined in org.jetbrains.kotlin.generators.builtins.ProgressionKind[FakeCallableDescriptorForObject]
 
-'hashLong' @ [46:63] ==> public fun hashLong(v: String): String defined in org.jetbrains.kotlin.generators.builtins[SimpleFunctionDescriptorImpl]
+'hashLong' @ [46:63] ==> public fun hashLong(v: String): String defined in org.jetbrains.kotlin.generators.builtins in file common.kt[SimpleFunctionDescriptorImpl]
 
-'hashLong' @ [46:86] ==> public fun hashLong(v: String): String defined in org.jetbrains.kotlin.generators.builtins[SimpleFunctionDescriptorImpl]
+'hashLong' @ [46:86] ==> public fun hashLong(v: String): String defined in org.jetbrains.kotlin.generators.builtins in file common.kt[SimpleFunctionDescriptorImpl]
 
-'hashLong' @ [46:109] ==> public fun hashLong(v: String): String defined in org.jetbrains.kotlin.generators.builtins[SimpleFunctionDescriptorImpl]
+'hashLong' @ [46:109] ==> public fun hashLong(v: String): String defined in org.jetbrains.kotlin.generators.builtins in file common.kt[SimpleFunctionDescriptorImpl]
 
 'IllegalArgumentException' @ [47:27] ==> public final fun <init>(): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.IllegalArgumentException[TypeAliasConstructorDescriptorImpl]
 

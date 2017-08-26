@@ -18,8 +18,6 @@
 
 'name' @ [35:81] ==> public final val ProtoBuf.TypeParameter.name: Int[MyPropertyDescriptor]
 
-'Deserialization' @ [36:9] ==> public object Deserialization defined in org.jetbrains.kotlin.serialization.deserialization in file protoEnumMapping.kt[FakeCallableDescriptorForObject]
-
 'variance' @ [36:25] ==> @JvmStatic public final fun variance(variance: ProtoBuf.TypeParameter.Variance): Variance defined in org.jetbrains.kotlin.serialization.deserialization.Deserialization[SimpleFunctionDescriptorImpl]
 
 'proto' @ [36:34] ==> value-parameter proto: ProtoBuf.TypeParameter defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedTypeParameterDescriptor.<init>[ValueParameterDescriptorImpl]
@@ -62,7 +60,7 @@ Inferred types:
 
 'proto' @ [43:27] ==> private final val proto: ProtoBuf.TypeParameter defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedTypeParameterDescriptor[PropertyDescriptorImpl]
 
-'upperBounds' @ [43:33] ==> public fun ProtoBuf.TypeParameter.upperBounds(typeTable: TypeTable): List<ProtoBuf.Type> defined in org.jetbrains.kotlin.serialization.deserialization[SimpleFunctionDescriptorImpl]
+'upperBounds' @ [43:33] ==> public fun ProtoBuf.TypeParameter.upperBounds(typeTable: TypeTable): List<ProtoBuf.Type> defined in org.jetbrains.kotlin.serialization.deserialization in file protoTypeTableUtil.kt[SimpleFunctionDescriptorImpl]
 
 'c' @ [43:45] ==> private final val c: DeserializationContext defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedTypeParameterDescriptor[PropertyDescriptorImpl]
 
@@ -96,8 +94,6 @@ Inferred types:
 'type' @ [48:32] ==> public final fun type(proto: ProtoBuf.Type, additionalAnnotations: Annotations = ...): KotlinType defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer[SimpleFunctionDescriptorImpl]
 
 'it' @ [48:37] ==> value-parameter it: ProtoBuf.Type defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedTypeParameterDescriptor.resolveUpperBounds.<anonymous>[ValueParameterDescriptorImpl]
-
-'Annotations' @ [48:41] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [48:53] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

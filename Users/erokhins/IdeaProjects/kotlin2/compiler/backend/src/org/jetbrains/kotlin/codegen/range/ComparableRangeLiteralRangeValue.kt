@@ -20,7 +20,7 @@
 
 'resultingDescriptor' @ [38:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'InContinuousRangeOfComparableExpressionGenerator' @ [44:9] ==> public constructor InContinuousRangeOfComparableExpressionGenerator(operatorReference: KtSimpleNameExpression, boundedValue: BoundedValue) defined in org.jetbrains.kotlin.codegen.range.inExpression.InContinuousRangeOfComparableExpressionGenerator[ClassConstructorDescriptorImpl]
 

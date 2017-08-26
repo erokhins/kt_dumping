@@ -88,6 +88,8 @@ Inferred types:
     <T> -> Deprecation
     <R> -> DeprecationLevelValue
 
+'deprecationLevel' @ [87:90] ==> public abstract val deprecationLevel: DeprecationLevelValue defined in org.jetbrains.kotlin.resolve.Deprecation[PropertyDescriptorImpl]
+
 'min' @ [87:108] ==> public fun <T : Comparable<DeprecationLevelValue>> Iterable<DeprecationLevelValue>.min(): DeprecationLevelValue? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Comparable<T>> -> DeprecationLevelValue
@@ -246,7 +248,7 @@ Inferred types:
 
 'this' @ [150:24] ==> <this> defined in org.jetbrains.kotlin.resolve.getDeprecations[ReceiverParameterDescriptorImpl]
 
-'getOwnDeprecations' @ [150:29] ==> private fun DeclarationDescriptor.getOwnDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'getOwnDeprecations' @ [150:29] ==> private fun DeclarationDescriptor.getOwnDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve in file deprecationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [150:48] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.getDeprecations[ValueParameterDescriptorImpl]
 
@@ -301,7 +303,7 @@ Inferred types:
 
 'addAll' @ [166:34] ==> public open fun addAll(elements: Collection<(Deprecation..Deprecation?)>): Boolean defined in org.jetbrains.kotlin.utils.SmartList[JavaMethodDescriptor]
 
-'getDeprecations' @ [166:41] ==> public fun DeclarationDescriptor.getDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'getDeprecations' @ [166:41] ==> public fun DeclarationDescriptor.getDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve in file deprecationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [166:57] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.deprecationsByConstituentTypes[ValueParameterDescriptorImpl]
 
@@ -325,7 +327,7 @@ Inferred types:
 
 'node' @ [182:40] ==> value-parameter node: CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.deprecationByOverridden.traverse[ValueParameterDescriptorImpl]
 
-'getOwnDeprecations' @ [182:45] ==> private fun DeclarationDescriptor.getOwnDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'getOwnDeprecations' @ [182:45] ==> private fun DeclarationDescriptor.getOwnDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve in file deprecationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [182:64] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.deprecationByOverridden[ValueParameterDescriptorImpl]
 
@@ -373,6 +375,8 @@ Inferred types:
 'forEach' @ [193:39] ==> @HidesMembers public inline fun <T> Iterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>.forEach(action: ((CallableMemberDescriptor..CallableMemberDescriptor?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
+
+'traverse' @ [193:49] ==> local final fun traverse(node: CallableMemberDescriptor): Unit defined in org.jetbrains.kotlin.resolve.deprecationByOverridden[SimpleFunctionDescriptorImpl]
 
 'traverse' @ [198:5] ==> local final fun traverse(node: CallableMemberDescriptor): Unit defined in org.jetbrains.kotlin.resolve.deprecationByOverridden[SimpleFunctionDescriptorImpl]
 
@@ -483,8 +487,6 @@ Inferred types:
 
 'sinceKotlinInfo' @ [233:52] ==> val sinceKotlinInfo: SinceKotlinInfo? defined in org.jetbrains.kotlin.resolve.getOwnDeprecations.addDeprecationIfPresent[LocalVariableDescriptor]
 
-'ApiVersion' @ [234:17] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
-
 'createByLanguageVersion' @ [234:28] ==> @JvmStatic public final fun createByLanguageVersion(version: LanguageVersion): ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedSimpleFunctionDescriptor]
 
 'languageVersionSettings' @ [234:52] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.getOwnDeprecations[ValueParameterDescriptorImpl]
@@ -503,7 +505,9 @@ Inferred types:
 
 'useSiteTarget' @ [241:13] ==> value-parameter useSiteTarget: AnnotationUseSiteTarget? defined in org.jetbrains.kotlin.resolve.getOwnDeprecations.addUseSiteTargetedDeprecationIfPresent[ValueParameterDescriptorImpl]
 
-'Annotations' @ [242:30] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
+'?:' @ [242:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: AnnotationDescriptor?, right: AnnotationDescriptor?): AnnotationDescriptor?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> AnnotationDescriptor?
 
 'findUseSiteTargetedAnnotation' @ [242:42] ==> public final fun findUseSiteTargetedAnnotation(annotations: Annotations, target: AnnotationUseSiteTarget, fqName: FqName): AnnotationDescriptor? defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -516,8 +520,6 @@ Inferred types:
 'FQ_NAMES' @ [242:135] ==> public final val FQ_NAMES: (KotlinBuiltIns.FqNames..KotlinBuiltIns.FqNames?) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaPropertyDescriptor]
 
 'deprecated' @ [242:144] ==> public final val deprecated: (FqName..FqName?) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns.FqNames[JavaPropertyDescriptor]
-
-'Annotations' @ [243:33] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'findUseSiteTargetedAnnotation' @ [243:45] ==> public final fun findUseSiteTargetedAnnotation(annotations: Annotations, target: AnnotationUseSiteTarget, fqName: FqName): AnnotationDescriptor? defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -549,8 +551,6 @@ Inferred types:
 
 'this' @ [251:44] ==> <this> defined in org.jetbrains.kotlin.resolve.getOwnDeprecations[ReceiverParameterDescriptorImpl]
 
-'AnnotationUseSiteTarget' @ [251:50] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'getAssociatedUseSiteTarget' @ [251:74] ==> public final fun getAssociatedUseSiteTarget(descriptor: DeclarationDescriptor): AnnotationUseSiteTarget? defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget.Companion[DeserializedSimpleFunctionDescriptor]
 
 'this' @ [251:101] ==> <this> defined in org.jetbrains.kotlin.resolve.getOwnDeprecations[ReceiverParameterDescriptorImpl]
@@ -581,7 +581,7 @@ Inferred types:
 
 'expandedType' @ [255:13] ==> public abstract val expandedType: SimpleType defined in org.jetbrains.kotlin.descriptors.TypeAliasDescriptor[DeserializedPropertyDescriptor]
 
-'deprecationsByConstituentTypes' @ [255:26] ==> private fun KotlinType.deprecationsByConstituentTypes(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'deprecationsByConstituentTypes' @ [255:26] ==> private fun KotlinType.deprecationsByConstituentTypes(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve in file deprecationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [255:57] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.getOwnDeprecations[ValueParameterDescriptorImpl]
 
@@ -595,7 +595,7 @@ Inferred types:
 
 'it' @ [255:98] ==> value-parameter it: Deprecation defined in org.jetbrains.kotlin.resolve.getOwnDeprecations.<anonymous>[ValueParameterDescriptorImpl]
 
-'wrapInTypeAliasExpansion' @ [255:101] ==> private fun Deprecation.wrapInTypeAliasExpansion(typeAliasDescriptor: TypeAliasDescriptor): Deprecation defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'wrapInTypeAliasExpansion' @ [255:101] ==> private fun Deprecation.wrapInTypeAliasExpansion(typeAliasDescriptor: TypeAliasDescriptor): Deprecation defined in org.jetbrains.kotlin.resolve in file deprecationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [255:126] ==> <this> defined in org.jetbrains.kotlin.resolve.getOwnDeprecations[ReceiverParameterDescriptorImpl]
 
@@ -605,7 +605,7 @@ Inferred types:
 
 'typeAliasDescriptor' @ [258:27] ==> public abstract val typeAliasDescriptor: TypeAliasDescriptor defined in org.jetbrains.kotlin.descriptors.impl.DescriptorDerivedFromTypeAlias[DeserializedPropertyDescriptor]
 
-'getOwnDeprecations' @ [258:47] ==> private fun DeclarationDescriptor.getOwnDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'getOwnDeprecations' @ [258:47] ==> private fun DeclarationDescriptor.getOwnDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve in file deprecationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [258:66] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.getOwnDeprecations[ValueParameterDescriptorImpl]
 
@@ -627,11 +627,7 @@ Inferred types:
 
 'this' @ [268:25] ==> <this> defined in org.jetbrains.kotlin.resolve.getOwnDeprecations[ReceiverParameterDescriptorImpl]
 
-'AnnotationUseSiteTarget' @ [268:59] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY_GETTER' @ [268:83] ==> enum entry PROPERTY_GETTER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
-'AnnotationUseSiteTarget' @ [268:104] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'PROPERTY_SETTER' @ [268:128] ==> enum entry PROPERTY_SETTER defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
@@ -799,7 +795,7 @@ Inferred types:
 
 'message' @ [303:61] ==> public abstract val message: String? defined in org.jetbrains.kotlin.resolve.Deprecation[PropertyDescriptorImpl]
 
-'getDeprecations' @ [314:9] ==> public fun DeclarationDescriptor.getDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'getDeprecations' @ [314:9] ==> public fun DeclarationDescriptor.getDeprecations(languageVersionSettings: LanguageVersionSettings): List<Deprecation> defined in org.jetbrains.kotlin.resolve in file deprecationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [314:25] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.isDeprecatedHidden[ValueParameterDescriptorImpl]
 
@@ -827,7 +823,7 @@ Inferred types:
 
 '!' @ [323:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'checkSinceKotlinVersionAccessibility' @ [323:10] ==> internal fun DeclarationDescriptor.checkSinceKotlinVersionAccessibility(languageVersionSettings: LanguageVersionSettings, actionIfInaccessible: ((ApiVersion) -> Unit)? = ...): Boolean defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'checkSinceKotlinVersionAccessibility' @ [323:10] ==> internal fun DeclarationDescriptor.checkSinceKotlinVersionAccessibility(languageVersionSettings: LanguageVersionSettings, actionIfInaccessible: ((ApiVersion) -> Unit)? = ...): Boolean defined in org.jetbrains.kotlin.resolve in file sinceKotlinUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [323:47] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.isHiddenInResolution[ValueParameterDescriptorImpl]
 

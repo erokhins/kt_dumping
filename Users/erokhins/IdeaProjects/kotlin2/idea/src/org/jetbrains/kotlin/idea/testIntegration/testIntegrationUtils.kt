@@ -8,7 +8,7 @@ Inferred types:
 
 'getExtensions' @ [28:33] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(TestFramework..TestFramework?)>): (Array<(TestFramework..TestFramework?)>..Array<out (TestFramework..TestFramework?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TestFramework
+    <T : (Any..Any?)> -> (com.intellij.testIntegration.TestFramework..com.intellij.testIntegration.TestFramework?)
 
 'EXTENSION_NAME' @ [28:61] ==> public final val EXTENSION_NAME: (ExtensionPointName<(TestFramework..TestFramework?)>..ExtensionPointName<(TestFramework..TestFramework?)>?) defined in com.intellij.testIntegration.TestFramework[JavaPropertyDescriptor]
 

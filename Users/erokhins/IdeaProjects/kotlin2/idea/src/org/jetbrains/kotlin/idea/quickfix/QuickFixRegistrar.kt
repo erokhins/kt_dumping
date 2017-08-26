@@ -162,8 +162,6 @@ Inferred types:
 
 'registerFactory' @ [97:29] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'RemoveModifierFix' @ [97:45] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix[FakeCallableDescriptorForObject]
-
 'createRemoveModifierFromListOwnerFactory' @ [97:63] ==> public final fun createRemoveModifierFromListOwnerFactory(modifier: KtModifierKeywordToken, isRedundant: Boolean = ...): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
 'OVERRIDE_KEYWORD' @ [97:104] ==> public final val OVERRIDE_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
@@ -175,8 +173,6 @@ Inferred types:
 'VIRTUAL_MEMBER_HIDDEN' @ [100:9] ==> public final val VIRTUAL_MEMBER_HIDDEN: (DiagnosticFactory3<(KtNamedDeclaration..KtNamedDeclaration?), (CallableMemberDescriptor..CallableMemberDescriptor?), (CallableMemberDescriptor..CallableMemberDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?)>..DiagnosticFactory3<(KtNamedDeclaration..KtNamedDeclaration?), (CallableMemberDescriptor..CallableMemberDescriptor?), (CallableMemberDescriptor..CallableMemberDescriptor?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [100:31] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'AddModifierFix' @ [100:47] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
 
 'createFactory' @ [100:62] ==> public final fun createFactory(modifier: KtModifierKeywordToken): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
@@ -234,8 +230,6 @@ Inferred types:
 
 'registerFactory' @ [114:37] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'RemoveModifierFix' @ [114:53] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix[FakeCallableDescriptorForObject]
-
 'createRemoveModifierFromListOwnerFactory' @ [114:71] ==> public final fun createRemoveModifierFromListOwnerFactory(modifier: KtModifierKeywordToken, isRedundant: Boolean = ...): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
 'OPEN_KEYWORD' @ [114:112] ==> public final val OPEN_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
@@ -243,8 +237,6 @@ Inferred types:
 'UNNECESSARY_LATEINIT' @ [115:9] ==> public final val UNNECESSARY_LATEINIT: (DiagnosticFactory0<(KtProperty..KtProperty?)>..DiagnosticFactory0<(KtProperty..KtProperty?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [115:30] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'RemoveModifierFix' @ [115:46] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix[FakeCallableDescriptorForObject]
 
 'createRemoveModifierFromListOwnerFactory' @ [115:64] ==> public final fun createRemoveModifierFromListOwnerFactory(modifier: KtModifierKeywordToken, isRedundant: Boolean = ...): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
@@ -254,23 +246,17 @@ Inferred types:
 
 'registerFactory' @ [117:30] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'RemoveModifierFix' @ [117:46] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix[FakeCallableDescriptorForObject]
-
 'createRemoveProjectionFactory' @ [117:64] ==> public final fun createRemoveProjectionFactory(isRedundant: Boolean): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
 'INCOMPATIBLE_MODIFIERS' @ [118:9] ==> public final val INCOMPATIBLE_MODIFIERS: (DiagnosticFactory2<(PsiElement..PsiElement?), (KtModifierKeywordToken..KtModifierKeywordToken?), (KtModifierKeywordToken..KtModifierKeywordToken?)>..DiagnosticFactory2<(PsiElement..PsiElement?), (KtModifierKeywordToken..KtModifierKeywordToken?), (KtModifierKeywordToken..KtModifierKeywordToken?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [118:32] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'RemoveModifierFix' @ [118:48] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix[FakeCallableDescriptorForObject]
-
 'createRemoveModifierFactory' @ [118:66] ==> public final fun createRemoveModifierFactory(isRedundant: Boolean = ...): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
 'VARIANCE_ON_TYPE_PARAMETER_NOT_ALLOWED' @ [119:9] ==> public final val VARIANCE_ON_TYPE_PARAMETER_NOT_ALLOWED: (DiagnosticFactory0<(KtTypeParameter..KtTypeParameter?)>..DiagnosticFactory0<(KtTypeParameter..KtTypeParameter?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [119:48] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'RemoveModifierFix' @ [119:64] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix[FakeCallableDescriptorForObject]
 
 'createRemoveVarianceFactory' @ [119:82] ==> public final fun createRemoveVarianceFactory(): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
@@ -283,8 +269,6 @@ Inferred types:
 'NON_FINAL_MEMBER_IN_FINAL_CLASS' @ [122:9] ==> public final val NON_FINAL_MEMBER_IN_FINAL_CLASS: (DiagnosticFactory0<(KtNamedDeclaration..KtNamedDeclaration?)>..DiagnosticFactory0<(KtNamedDeclaration..KtNamedDeclaration?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [122:41] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'AddModifierFix' @ [122:57] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
 
 'createFactory' @ [122:72] ==> public final fun <T : KtModifierListOwner> createFactory(modifier: KtModifierKeywordToken, modifierOwnerClass: Class<KtClass>): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.Companion[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -329,8 +313,6 @@ Inferred types:
 'PRIVATE_SETTER_FOR_OPEN_PROPERTY' @ [130:9] ==> public final val PRIVATE_SETTER_FOR_OPEN_PROPERTY: (DiagnosticFactory0<(PsiElement..PsiElement?)>..DiagnosticFactory0<(PsiElement..PsiElement?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [130:42] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'AddModifierFix' @ [130:58] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
 
 'createFactory' @ [130:73] ==> public final fun <T : KtModifierListOwner> createFactory(modifier: KtModifierKeywordToken, modifierOwnerClass: Class<KtProperty>): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.Companion[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -395,8 +377,6 @@ Inferred types:
 'DEPRECATED_BINARY_MOD' @ [141:9] ==> public final val DEPRECATED_BINARY_MOD: (DiagnosticFactory2<(PsiElement..PsiElement?), (FunctionDescriptor..FunctionDescriptor?), (String..String?)>..DiagnosticFactory2<(PsiElement..PsiElement?), (FunctionDescriptor..FunctionDescriptor?), (String..String?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [141:31] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'RenameModToRemFix' @ [141:47] ==> public companion object Factory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RenameModToRemFix[FakeCallableDescriptorForObject]
 
 'Factory' @ [141:65] ==> public companion object Factory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RenameModToRemFix[FakeCallableDescriptorForObject]
 
@@ -624,15 +604,11 @@ Inferred types:
 
 'registerFactory' @ [195:25] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'ChangeVariableMutabilityFix' @ [195:41] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix[FakeCallableDescriptorForObject]
-
 'VAL_WITH_SETTER_FACTORY' @ [195:69] ==> public final val VAL_WITH_SETTER_FACTORY: KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion[PropertyDescriptorImpl]
 
 'VAL_REASSIGNMENT' @ [196:9] ==> public final val VAL_REASSIGNMENT: (DiagnosticFactory1<(KtExpression..KtExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..DiagnosticFactory1<(KtExpression..KtExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [196:26] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'ChangeVariableMutabilityFix' @ [196:42] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix[FakeCallableDescriptorForObject]
 
 'VAL_REASSIGNMENT_FACTORY' @ [196:70] ==> public final val VAL_REASSIGNMENT_FACTORY: ChangeVariableMutabilityFix.Companion.ReassignmentActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion[PropertyDescriptorImpl]
 
@@ -646,15 +622,11 @@ Inferred types:
 
 'registerFactory' @ [198:37] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'ChangeVariableMutabilityFix' @ [198:53] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix[FakeCallableDescriptorForObject]
-
 'CAPTURED_VAL_INITIALIZATION_FACTORY' @ [198:81] ==> public final val CAPTURED_VAL_INITIALIZATION_FACTORY: ChangeVariableMutabilityFix.Companion.ReassignmentActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion[PropertyDescriptorImpl]
 
 'CAPTURED_MEMBER_VAL_INITIALIZATION' @ [199:9] ==> public final val CAPTURED_MEMBER_VAL_INITIALIZATION: (DiagnosticFactory1<(KtExpression..KtExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..DiagnosticFactory1<(KtExpression..KtExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [199:44] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'ChangeVariableMutabilityFix' @ [199:60] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix[FakeCallableDescriptorForObject]
 
 'CAPTURED_MEMBER_VAL_INITIALIZATION_FACTORY' @ [199:88] ==> public final val CAPTURED_MEMBER_VAL_INITIALIZATION_FACTORY: ChangeVariableMutabilityFix.Companion.ReassignmentActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion[PropertyDescriptorImpl]
 
@@ -662,15 +634,11 @@ Inferred types:
 
 'registerFactory' @ [200:31] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'ChangeVariableMutabilityFix' @ [200:47] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix[FakeCallableDescriptorForObject]
-
 'VAR_OVERRIDDEN_BY_VAL_FACTORY' @ [200:75] ==> public final val VAR_OVERRIDDEN_BY_VAL_FACTORY: KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion[PropertyDescriptorImpl]
 
 'VAR_ANNOTATION_PARAMETER' @ [201:9] ==> public final val VAR_ANNOTATION_PARAMETER: (DiagnosticFactory0<(KtParameter..KtParameter?)>..DiagnosticFactory0<(KtParameter..KtParameter?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [201:34] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'ChangeVariableMutabilityFix' @ [201:50] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix[FakeCallableDescriptorForObject]
 
 'VAR_ANNOTATION_PARAMETER_FACTORY' @ [201:78] ==> public final val VAR_ANNOTATION_PARAMETER_FACTORY: KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion[PropertyDescriptorImpl]
 
@@ -708,15 +676,11 @@ Inferred types:
 
 'registerFactory' @ [209:25] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'RenameToUnderscoreFix' @ [209:41] ==> public companion object Factory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RenameToUnderscoreFix[FakeCallableDescriptorForObject]
-
 'Factory' @ [209:63] ==> public companion object Factory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RenameToUnderscoreFix[FakeCallableDescriptorForObject]
 
 'UNUSED_DESTRUCTURED_PARAMETER_ENTRY' @ [211:9] ==> public final val UNUSED_DESTRUCTURED_PARAMETER_ENTRY: (DiagnosticFactory1<(KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?), (VariableDescriptor..VariableDescriptor?)>..DiagnosticFactory1<(KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [211:45] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'RenameToUnderscoreFix' @ [211:61] ==> public companion object Factory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RenameToUnderscoreFix[FakeCallableDescriptorForObject]
 
 'Factory' @ [211:83] ==> public companion object Factory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RenameToUnderscoreFix[FakeCallableDescriptorForObject]
 
@@ -766,15 +730,11 @@ Inferred types:
 
 'registerFactory' @ [222:30] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'SurroundWithNullCheckFix' @ [222:46] ==> public companion object : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.SurroundWithNullCheckFix[FakeCallableDescriptorForObject]
-
 'IteratorOnNullableFactory' @ [222:71] ==> public object IteratorOnNullableFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.SurroundWithNullCheckFix[FakeCallableDescriptorForObject]
 
 'TYPE_MISMATCH' @ [223:9] ==> public final val TYPE_MISMATCH: (DiagnosticFactory2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>..DiagnosticFactory2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [223:23] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'SurroundWithNullCheckFix' @ [223:39] ==> public companion object : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.SurroundWithNullCheckFix[FakeCallableDescriptorForObject]
 
 'TypeMismatchFactory' @ [223:64] ==> public object TypeMismatchFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.SurroundWithNullCheckFix[FakeCallableDescriptorForObject]
 
@@ -962,8 +922,6 @@ Inferred types:
 
 'registerFactory' @ [262:45] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'AddModifierFix' @ [262:61] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
-
 'createFactory' @ [262:76] ==> public final fun <T : KtModifierListOwner> createFactory(modifier: KtModifierKeywordToken, modifierOwnerClass: Class<KtClass>): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.Companion[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : KtModifierListOwner> -> KtClass
@@ -978,15 +936,11 @@ Inferred types:
 
 'registerFactory' @ [264:25] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'AddModifierFix' @ [264:41] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
-
 'MakeClassOpenFactory' @ [264:56] ==> public object MakeClassOpenFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
 
 'FINAL_UPPER_BOUND' @ [265:9] ==> public final val FINAL_UPPER_BOUND: (DiagnosticFactory1<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>..DiagnosticFactory1<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [265:27] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'AddModifierFix' @ [265:43] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
 
 'MakeClassOpenFactory' @ [265:58] ==> public object MakeClassOpenFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
 
@@ -1006,8 +960,6 @@ Inferred types:
 
 'registerFactory' @ [271:34] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'AddModifierFix' @ [271:50] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
-
 'createFactory' @ [271:65] ==> public final fun createFactory(modifier: KtModifierKeywordToken): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
 'INNER_KEYWORD' @ [271:79] ==> public final val INNER_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
@@ -1016,23 +968,17 @@ Inferred types:
 
 'registerFactory' @ [273:32] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'RemoveModifierFix' @ [273:48] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix[FakeCallableDescriptorForObject]
-
 'createRemoveProjectionFactory' @ [273:66] ==> public final fun createRemoveProjectionFactory(isRedundant: Boolean): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
 'PROJECTION_ON_NON_CLASS_TYPE_ARGUMENT' @ [274:9] ==> public final val PROJECTION_ON_NON_CLASS_TYPE_ARGUMENT: (DiagnosticFactory0<(KtTypeProjection..KtTypeProjection?)>..DiagnosticFactory0<(KtTypeProjection..KtTypeProjection?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [274:47] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'RemoveModifierFix' @ [274:63] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix[FakeCallableDescriptorForObject]
-
 'createRemoveProjectionFactory' @ [274:81] ==> public final fun createRemoveProjectionFactory(isRedundant: Boolean): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
 'PROJECTION_IN_IMMEDIATE_ARGUMENT_TO_SUPERTYPE' @ [275:9] ==> public final val PROJECTION_IN_IMMEDIATE_ARGUMENT_TO_SUPERTYPE: (DiagnosticFactory0<(KtTypeProjection..KtTypeProjection?)>..DiagnosticFactory0<(KtTypeProjection..KtTypeProjection?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [275:55] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'RemoveModifierFix' @ [275:71] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix[FakeCallableDescriptorForObject]
 
 'createRemoveProjectionFactory' @ [275:89] ==> public final fun createRemoveProjectionFactory(isRedundant: Boolean): KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RemoveModifierFix.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1088,15 +1034,11 @@ Inferred types:
 
 'registerFactory' @ [288:42] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'ChangeCallableReturnTypeFix' @ [288:58] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
-
 'ReturnTypeMismatchOnOverrideFactory' @ [288:86] ==> public object ReturnTypeMismatchOnOverrideFactory : KotlinIntentionActionsFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
 'COMPONENT_FUNCTION_RETURN_TYPE_MISMATCH' @ [289:9] ==> public final val COMPONENT_FUNCTION_RETURN_TYPE_MISMATCH: (DiagnosticFactory3<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>..DiagnosticFactory3<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [289:49] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'ChangeCallableReturnTypeFix' @ [289:65] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
 'ComponentFunctionReturnTypeMismatchFactory' @ [289:93] ==> public object ComponentFunctionReturnTypeMismatchFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
@@ -1104,23 +1046,17 @@ Inferred types:
 
 'registerFactory' @ [290:41] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'ChangeCallableReturnTypeFix' @ [290:57] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
-
 'HasNextFunctionTypeMismatchFactory' @ [290:85] ==> public object HasNextFunctionTypeMismatchFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
 'COMPARE_TO_TYPE_MISMATCH' @ [291:9] ==> public final val COMPARE_TO_TYPE_MISMATCH: (DiagnosticFactory1<(KtSimpleNameExpression..KtSimpleNameExpression?), (KotlinType..KotlinType?)>..DiagnosticFactory1<(KtSimpleNameExpression..KtSimpleNameExpression?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [291:34] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'ChangeCallableReturnTypeFix' @ [291:50] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
-
 'CompareToTypeMismatchFactory' @ [291:78] ==> public object CompareToTypeMismatchFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
 'IMPLICIT_NOTHING_RETURN_TYPE' @ [292:9] ==> public final val IMPLICIT_NOTHING_RETURN_TYPE: (DiagnosticFactory0<(PsiElement..PsiElement?)>..DiagnosticFactory0<(PsiElement..PsiElement?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [292:38] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'ChangeCallableReturnTypeFix' @ [292:54] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
 'ChangingReturnTypeToNothingFactory' @ [292:82] ==> public object ChangingReturnTypeToNothingFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeCallableReturnTypeFix[FakeCallableDescriptorForObject]
 
@@ -1145,8 +1081,6 @@ Inferred types:
 'UNUSED_ANONYMOUS_PARAMETER' @ [297:9] ==> public final val UNUSED_ANONYMOUS_PARAMETER: (DiagnosticFactory1<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>..DiagnosticFactory1<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [297:36] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'RenameToUnderscoreFix' @ [297:52] ==> public companion object Factory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RenameToUnderscoreFix[FakeCallableDescriptorForObject]
 
 'Factory' @ [297:74] ==> public companion object Factory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.RenameToUnderscoreFix[FakeCallableDescriptorForObject]
 
@@ -1250,15 +1184,11 @@ Inferred types:
 
 'registerFactory' @ [319:45] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'CreateCallableFromCallActionFactory' @ [319:62] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory[FakeCallableDescriptorForObject]
-
 'INSTANCES' @ [319:98] ==> public final val INSTANCES: Array<CreateCallableFromCallActionFactory<out KtReferenceExpression>> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Companion[PropertyDescriptorImpl]
 
 'UNRESOLVED_REFERENCE' @ [320:9] ==> public final val UNRESOLVED_REFERENCE: (DiagnosticFactory1<(KtReferenceExpression..KtReferenceExpression?), (KtReferenceExpression..KtReferenceExpression?)>..DiagnosticFactory1<(KtReferenceExpression..KtReferenceExpression?), (KtReferenceExpression..KtReferenceExpression?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [320:30] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'CreateCallableFromCallActionFactory' @ [320:47] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory[FakeCallableDescriptorForObject]
 
 'INSTANCES' @ [320:83] ==> public final val INSTANCES: Array<CreateCallableFromCallActionFactory<out KtReferenceExpression>> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Companion[PropertyDescriptorImpl]
 
@@ -1272,15 +1202,11 @@ Inferred types:
 
 'registerFactory' @ [322:32] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'CreateCallableFromCallActionFactory' @ [322:49] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory[FakeCallableDescriptorForObject]
-
 'INSTANCES' @ [322:85] ==> public final val INSTANCES: Array<CreateCallableFromCallActionFactory<out KtReferenceExpression>> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Companion[PropertyDescriptorImpl]
 
 'TOO_MANY_ARGUMENTS' @ [323:9] ==> public final val TOO_MANY_ARGUMENTS: (DiagnosticFactory1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)>..DiagnosticFactory1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [323:28] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'CreateCallableFromCallActionFactory' @ [323:45] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory[FakeCallableDescriptorForObject]
 
 'INSTANCES' @ [323:81] ==> public final val INSTANCES: Array<CreateCallableFromCallActionFactory<out KtReferenceExpression>> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Companion[PropertyDescriptorImpl]
 
@@ -1288,23 +1214,17 @@ Inferred types:
 
 'registerFactory' @ [324:43] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'CreateCallableFromCallActionFactory' @ [324:60] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory[FakeCallableDescriptorForObject]
-
 'INSTANCES' @ [324:96] ==> public final val INSTANCES: Array<CreateCallableFromCallActionFactory<out KtReferenceExpression>> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Companion[PropertyDescriptorImpl]
 
 'NONE_APPLICABLE' @ [325:9] ==> public final val NONE_APPLICABLE: (DiagnosticFactory1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [325:25] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'CreateCallableFromCallActionFactory' @ [325:42] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory[FakeCallableDescriptorForObject]
-
 'INSTANCES' @ [325:78] ==> public final val INSTANCES: Array<CreateCallableFromCallActionFactory<out KtReferenceExpression>> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Companion[PropertyDescriptorImpl]
 
 'TYPE_MISMATCH' @ [326:9] ==> public final val TYPE_MISMATCH: (DiagnosticFactory2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>..DiagnosticFactory2<(KtExpression..KtExpression?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [326:23] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'CreateCallableFromCallActionFactory' @ [326:40] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory[FakeCallableDescriptorForObject]
 
 'FUNCTIONS' @ [326:76] ==> public final val FUNCTIONS: Array<CreateCallableFromCallActionFactory<KtCallExpression>> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateCallableFromCallActionFactory.Companion[PropertyDescriptorImpl]
 
@@ -1666,15 +1586,11 @@ Inferred types:
 
 'registerFactory' @ [410:30] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'AddGenericUpperBoundFix' @ [410:46] ==> public companion object Factory : KotlinIntentionActionsFactory defined in org.jetbrains.kotlin.idea.quickfix.AddGenericUpperBoundFix[FakeCallableDescriptorForObject]
-
 'Factory' @ [410:70] ==> public companion object Factory : KotlinIntentionActionsFactory defined in org.jetbrains.kotlin.idea.quickfix.AddGenericUpperBoundFix[FakeCallableDescriptorForObject]
 
 'TYPE_INFERENCE_UPPER_BOUND_VIOLATED' @ [411:9] ==> public final val TYPE_INFERENCE_UPPER_BOUND_VIOLATED: (DiagnosticFactory1<(PsiElement..PsiElement?), (InferenceErrorData..InferenceErrorData?)>..DiagnosticFactory1<(PsiElement..PsiElement?), (InferenceErrorData..InferenceErrorData?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [411:45] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'AddGenericUpperBoundFix' @ [411:61] ==> public companion object Factory : KotlinIntentionActionsFactory defined in org.jetbrains.kotlin.idea.quickfix.AddGenericUpperBoundFix[FakeCallableDescriptorForObject]
 
 'Factory' @ [411:85] ==> public companion object Factory : KotlinIntentionActionsFactory defined in org.jetbrains.kotlin.idea.quickfix.AddGenericUpperBoundFix[FakeCallableDescriptorForObject]
 
@@ -1770,23 +1686,17 @@ Inferred types:
 
 'registerFactory' @ [438:43] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'AddValVarToConstructorParameterAction' @ [438:59] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.AddValVarToConstructorParameterAction[FakeCallableDescriptorForObject]
-
 'QuickFixFactory' @ [438:97] ==> public object QuickFixFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.intentions.AddValVarToConstructorParameterAction[FakeCallableDescriptorForObject]
 
 'NON_LOCAL_RETURN_NOT_ALLOWED' @ [440:9] ==> public final val NON_LOCAL_RETURN_NOT_ALLOWED: (DiagnosticFactory1<(KtElement..KtElement?), (KtElement..KtElement?)>..DiagnosticFactory1<(KtElement..KtElement?), (KtElement..KtElement?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [440:38] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'AddInlineModifierFix' @ [440:54] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddInlineModifierFix[FakeCallableDescriptorForObject]
-
 'CrossInlineFactory' @ [440:75] ==> public object CrossInlineFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddInlineModifierFix[FakeCallableDescriptorForObject]
 
 'USAGE_IS_NOT_INLINABLE' @ [441:9] ==> public final val USAGE_IS_NOT_INLINABLE: (DiagnosticFactory2<(KtElement..KtElement?), (KtExpression..KtExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..DiagnosticFactory2<(KtElement..KtElement?), (KtExpression..KtExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [441:32] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'AddInlineModifierFix' @ [441:48] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddInlineModifierFix[FakeCallableDescriptorForObject]
 
 'NoInlineFactory' @ [441:69] ==> public object NoInlineFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddInlineModifierFix[FakeCallableDescriptorForObject]
 
@@ -1884,8 +1794,6 @@ Inferred types:
 
 'registerFactory' @ [470:40] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'ChangeVariableMutabilityFix' @ [470:56] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix[FakeCallableDescriptorForObject]
-
 'LATEINIT_VAL_FACTORY' @ [470:84] ==> public final val LATEINIT_VAL_FACTORY: KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.ChangeVariableMutabilityFix.Companion[PropertyDescriptorImpl]
 
 'INAPPLICABLE_LATEINIT_MODIFIER' @ [471:9] ==> public final val INAPPLICABLE_LATEINIT_MODIFIER: (DiagnosticFactory1<(PsiElement..PsiElement?), (String..String?)>..DiagnosticFactory1<(PsiElement..PsiElement?), (String..String?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
@@ -1952,23 +1860,17 @@ Inferred types:
 
 'registerFactory' @ [486:50] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'AddInlineModifierFix' @ [486:66] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddInlineModifierFix[FakeCallableDescriptorForObject]
-
 'SuspendFactory' @ [486:87] ==> public object SuspendFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddInlineModifierFix[FakeCallableDescriptorForObject]
 
 'UNRESOLVED_REFERENCE' @ [488:9] ==> public final val UNRESOLVED_REFERENCE: (DiagnosticFactory1<(KtReferenceExpression..KtReferenceExpression?), (KtReferenceExpression..KtReferenceExpression?)>..DiagnosticFactory1<(KtReferenceExpression..KtReferenceExpression?), (KtReferenceExpression..KtReferenceExpression?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [488:30] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
 
-'AddSuspendModifierFix' @ [488:46] ==> public companion object : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddSuspendModifierFix[FakeCallableDescriptorForObject]
-
 'UnresolvedReferenceFactory' @ [488:68] ==> public object UnresolvedReferenceFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddSuspendModifierFix[FakeCallableDescriptorForObject]
 
 'UNRESOLVED_REFERENCE_WRONG_RECEIVER' @ [489:9] ==> public final val UNRESOLVED_REFERENCE_WRONG_RECEIVER: (DiagnosticFactory1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [489:45] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'AddSuspendModifierFix' @ [489:61] ==> public companion object : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddSuspendModifierFix[FakeCallableDescriptorForObject]
 
 'UnresolvedReferenceFactory' @ [489:83] ==> public object UnresolvedReferenceFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddSuspendModifierFix[FakeCallableDescriptorForObject]
 
@@ -2029,8 +1931,6 @@ Inferred types:
 'MUST_BE_INITIALIZED_OR_BE_ABSTRACT' @ [506:9] ==> public final val MUST_BE_INITIALIZED_OR_BE_ABSTRACT: (DiagnosticFactory0<(KtProperty..KtProperty?)>..DiagnosticFactory0<(KtProperty..KtProperty?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
 'registerFactory' @ [506:44] ==> local final fun DiagnosticFactory<*>.registerFactory(vararg factory: KotlinIntentionActionsFactory): Unit defined in org.jetbrains.kotlin.idea.quickfix.QuickFixRegistrar.registerQuickFixes[SimpleFunctionDescriptorImpl]
-
-'AddModifierFix' @ [506:60] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
 
 'AddLateinitFactory' @ [506:75] ==> public object AddLateinitFactory : KotlinSingleIntentionActionFactory defined in org.jetbrains.kotlin.idea.quickfix.AddModifierFix[FakeCallableDescriptorForObject]
 

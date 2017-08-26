@@ -22,15 +22,13 @@ Inferred types:
 
 'put' @ [43:13] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [43:17] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [43:41] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
 'TEST_MODULE_NAME' @ [43:70] ==> public final var TEST_MODULE_NAME: (String..String?) defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaPropertyDescriptor]
 
-'put' @ [44:13] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableList<(String..String?)>..List<(String..String?)>?)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
+'put' @ [44:13] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableList<(String..String?)>..List<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> (kotlin.collections.MutableList<(kotlin.String..kotlin.String?)>..kotlin.collections.List<(kotlin.String..kotlin.String?)>?)
 
@@ -161,8 +159,6 @@ Inferred types:
 'moduleName' @ [94:50] ==> value-parameter moduleName: String defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTestWithJsStdLib.createModule[ValueParameterDescriptorImpl]
 
 'storageManager' @ [94:65] ==> value-parameter storageManager: StorageManager defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTestWithJsStdLib.createModule[ValueParameterDescriptorImpl]
-
-'JsPlatform' @ [94:81] ==> public object JsPlatform : TargetPlatform defined in org.jetbrains.kotlin.js.resolve[FakeCallableDescriptorForObject]
 
 'builtIns' @ [94:92] ==> public final val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.js.resolve.JsPlatform[DeserializedPropertyDescriptor]
 

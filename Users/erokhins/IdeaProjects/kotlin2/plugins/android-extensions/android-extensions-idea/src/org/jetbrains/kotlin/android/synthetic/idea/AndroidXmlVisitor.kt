@@ -30,11 +30,7 @@
 
 'getAttribute' @ [46:32] ==> @Nullable public abstract fun getAttribute(@NonNls p0: (String..String?), @NonNls p1: (String..String?)): XmlAttribute? defined in com.intellij.psi.xml.XmlTag[JavaMethodDescriptor]
 
-'AndroidConst' @ [46:45] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic[FakeCallableDescriptorForObject]
-
 'ID_ATTRIBUTE_NO_NAMESPACE' @ [46:58] ==> public final val ID_ATTRIBUTE_NO_NAMESPACE: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[DeserializedPropertyDescriptor]
-
-'AndroidConst' @ [46:85] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic[FakeCallableDescriptorForObject]
 
 'ANDROID_NAMESPACE' @ [46:98] ==> public final val ANDROID_NAMESPACE: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[DeserializedPropertyDescriptor]
 
@@ -49,8 +45,6 @@
 'tag' @ [50:31] ==> value-parameter tag: XmlTag? defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidXmlVisitor.visitXmlTag[ValueParameterDescriptorImpl]
 
 'getAttribute' @ [50:35] ==> @Nullable public abstract fun getAttribute(@NonNls p0: (String..String?)): XmlAttribute? defined in com.intellij.psi.xml.XmlTag[JavaMethodDescriptor]
-
-'AndroidConst' @ [50:48] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic[FakeCallableDescriptorForObject]
 
 'CLASS_ATTRIBUTE_NO_NAMESPACE' @ [50:61] ==> public final val CLASS_ATTRIBUTE_NO_NAMESPACE: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[DeserializedPropertyDescriptor]
 

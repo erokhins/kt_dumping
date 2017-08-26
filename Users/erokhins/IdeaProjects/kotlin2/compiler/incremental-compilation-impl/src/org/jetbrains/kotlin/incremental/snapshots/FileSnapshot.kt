@@ -16,13 +16,13 @@
 
 'java' @ [33:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [33:51] ==> <this> defined in org.jetbrains.kotlin.incremental.snapshots.FileSnapshot[LazyClassReceiverParameterDescriptor]
 
 'java' @ [33:63] ==> public val <T> KClass<out FileSnapshot>.java: Class<out FileSnapshot> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> FileSnapshot
+    <T> -> Captured(out FileSnapshot)
 
 'other' @ [35:9] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.incremental.snapshots.FileSnapshot.equals[ValueParameterDescriptorImpl]
 

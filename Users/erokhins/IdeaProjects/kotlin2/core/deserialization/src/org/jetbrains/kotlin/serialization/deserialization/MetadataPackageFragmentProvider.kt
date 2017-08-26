@@ -80,13 +80,15 @@ Inferred types:
 
 'module' @ [76:57] ==> value-parameter module: ModuleDescriptor defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment.<init>[ValueParameterDescriptorImpl]
 
-'ClassDataFinder' @ [77:36] ==> public fun ClassDataFinder(function: (classId: ClassId) -> ClassDataWithSource?): ClassDataFinder defined in org.jetbrains.kotlin.serialization.deserialization[SimpleFunctionDescriptorImpl]
+'ClassDataFinder' @ [77:36] ==> public fun ClassDataFinder(function: (classId: ClassId) -> ClassDataWithSource?): ClassDataFinder defined in org.jetbrains.kotlin.serialization.deserialization in file ClassDataFinder.java[SamConstructorDescriptorImpl]
 
 'generateSequence' @ [78:31] ==> @LowPriorityInOverloadResolution public fun <T : Any> generateSequence(seed: ClassId?, nextFunction: (ClassId) -> ClassId?): Sequence<ClassId> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> ClassId
 
 'classId' @ [78:48] ==> value-parameter classId: ClassId defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment.classDataFinder.<anonymous>[ValueParameterDescriptorImpl]
+
+'getOuterClassId' @ [78:66] ==> @Nullable public open fun getOuterClassId(): ClassId? defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
 
 'last' @ [78:83] ==> public fun <T> Sequence<ClassId>.last(): ClassId defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -250,8 +252,6 @@ Inferred types:
 'parseFrom' @ [131:48] ==> public open fun parseFrom(input: (InputStream..InputStream?), extensionRegistry: (ExtensionRegistryLite..ExtensionRegistryLite?)): (ProtoBuf.PackageFragment..ProtoBuf.PackageFragment?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.PackageFragment[JavaMethodDescriptor]
 
 'stream' @ [131:58] ==> value-parameter stream: InputStream defined in org.jetbrains.kotlin.serialization.deserialization.MetadataPackageFragment.readProto[ValueParameterDescriptorImpl]
-
-'BuiltInSerializerProtocol' @ [131:66] ==> public object BuiltInSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.builtins in file BuiltInSerializerProtocol.kt[FakeCallableDescriptorForObject]
 
 'extensionRegistry' @ [131:92] ==> public final val extensionRegistry: ExtensionRegistryLite defined in org.jetbrains.kotlin.builtins.BuiltInSerializerProtocol[PropertyDescriptorImpl]
 

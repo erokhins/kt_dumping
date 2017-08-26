@@ -84,7 +84,7 @@ Inferred types:
 
 'changeInfo' @ [119:41] ==> value-parameter changeInfo: KotlinChangeInfo defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findAllMethodUsages[ValueParameterDescriptorImpl]
 
-'getAffectedCallables' @ [119:52] ==> public fun KotlinChangeInfo.getAffectedCallables(): Collection<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'getAffectedCallables' @ [119:52] ==> public fun KotlinChangeInfo.getAffectedCallables(): Collection<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeInfo.kt[SimpleFunctionDescriptorImpl]
 
 'when (functionUsageInfo) {
                 is KotlinCallableDefinitionUsage<*> -> findOneMethodUsages(functionUsageInfo, changeInfo, result)
@@ -296,7 +296,7 @@ Inferred types:
 
 'explicitReceiverKind' @ [169:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'NO_EXPLICIT_RECEIVER' @ [169:87] ==> enum entry NO_EXPLICIT_RECEIVER defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 
@@ -304,7 +304,7 @@ Inferred types:
 
 'resultingDescriptor' @ [171:64] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resultingDescriptor' @ [172:29] ==> val resultingDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findCallerUsages.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
@@ -320,7 +320,7 @@ Inferred types:
 
 'call' @ [178:56] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [178:61] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -328,7 +328,7 @@ Inferred types:
 
 'extensionReceiver' @ [180:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'receiver' @ [181:29] ==> var receiver: ReceiverValue? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findCallerUsages.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
@@ -338,7 +338,7 @@ Inferred types:
 
 'dispatchReceiver' @ [182:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (receiver is ImplicitReceiver) {
                             result.add(KotlinImplicitThisUsage(callElement, receiver.declarationDescriptor))
@@ -462,7 +462,7 @@ Inferred types:
 
 'element' @ [227:45] ==> public final val <T : PsiElement> KotlinCallableDefinitionUsage<out PsiElement>.element: PsiElement?[MyPropertyDescriptor]
 Inferred types:
-    <T : PsiElement> -> PsiElement
+    <T : PsiElement> -> Captured(*)
 
 'findReferences' @ [229:27] ==> private final fun findReferences(functionPsi: PsiElement): Set<PsiReference> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor[SimpleFunctionDescriptorImpl]
 
@@ -1085,7 +1085,7 @@ Inferred types:
 
 'resultingDescriptor' @ [378:64] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resultingDescriptor' @ [379:29] ==> val resultingDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findOriginalReceiversUsages.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
@@ -1099,13 +1099,13 @@ Inferred types:
 
 'extensionReceiver' @ [384:58] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [384:79] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findOriginalReceiversUsages.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
 'dispatchReceiver' @ [384:92] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'receiverValue' @ [385:29] ==> val receiverValue: ReceiverValue? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findOriginalReceiversUsages.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
@@ -1115,7 +1115,7 @@ Inferred types:
 
 'call' @ [386:62] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [386:67] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -1203,8 +1203,8 @@ Inferred types:
 
 'get' @ [421:46] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?), p1: (PsiElement..PsiElement?)): SimpleFunctionDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> SimpleFunctionDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'FUNCTION' @ [421:65] ==> public final val FUNCTION: (WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1653,8 +1653,6 @@ Inferred types:
 
 '+' @ [546:54] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorRenderer' @ [546:85] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
-
 'SHORT_NAMES_IN_TYPES' @ [546:104] ==> @field:JvmField public final val SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
 'render' @ [546:125] ==> public abstract fun render(declarationDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -1726,7 +1724,9 @@ Inferred types:
 
 'parameterName' @ [562:104] ==> val parameterName: String defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findConflicts[LocalVariableDescriptor]
 
-'DescriptorToSourceUtils' @ [563:51] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [563:51] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'descriptorToDeclaration' @ [563:75] ==> @JvmStatic public final fun descriptorToDeclaration(descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -1973,8 +1973,8 @@ Inferred types:
 
 'get' @ [639:49] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (MutableCollection<out (PsiElement..PsiElement?)>..Collection<(PsiElement..PsiElement?)>?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (MutableCollection<out (PsiElement..PsiElement?)>..Collection<(PsiElement..PsiElement?)>?)>?), p1: (KtReferenceExpression..KtReferenceExpression?)): (MutableCollection<out (PsiElement..PsiElement?)>?..Collection<(PsiElement..PsiElement?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> (kotlin.collections.MutableCollection<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..kotlin.collections.Collection<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>)
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (kotlin.collections.MutableCollection<out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..kotlin.collections.Collection<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>?)
 
 'AMBIGUOUS_LABEL_TARGET' @ [639:68] ==> public final val AMBIGUOUS_LABEL_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (MutableCollection<out (PsiElement..PsiElement?)>..Collection<(PsiElement..PsiElement?)>?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (MutableCollection<out (PsiElement..PsiElement?)>..Collection<(PsiElement..PsiElement?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1998,8 +1998,8 @@ Inferred types:
 
 'get' @ [646:41] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [646:60] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -2145,7 +2145,7 @@ Inferred types:
 
 'resolvedCall' @ [708:21] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findReceiverIntroducingConflicts.<anonymous>[LocalVariableDescriptor]
 
-'noReceivers' @ [708:34] ==> internal fun ResolvedCall<*>.noReceivers(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'noReceivers' @ [708:34] ==> internal fun ResolvedCall<*>.noReceivers(): Boolean defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'noReceiverRefs' @ [709:21] ==> val noReceiverRefs: ArrayList<KtSimpleNameExpression> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findReceiverIntroducingConflicts[LocalVariableDescriptor]
 
@@ -2237,13 +2237,13 @@ Inferred types:
 
 'extensionReceiver' @ [727:64] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'newResolvedCall' @ [727:93] ==> val newResolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findReceiverIntroducingConflicts[LocalVariableDescriptor]
 
 'dispatchReceiver' @ [727:109] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'originalRef' @ [728:38] ==> val originalRef: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.findReceiverIntroducingConflicts[LocalVariableDescriptor]
 
@@ -2253,7 +2253,7 @@ Inferred types:
 
 'candidateDescriptor' @ [728:85] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'DescriptorToSourceUtilsIde' @ [729:39] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
 
@@ -2307,7 +2307,7 @@ Inferred types:
 
 'getParentOfType' @ [749:39] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtCallElement..KtCallElement?)>): KtCallElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtCallElement
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallElement..org.jetbrains.kotlin.psi.KtCallElement?)
 
 'originalUsageInfo' @ [749:55] ==> value-parameter originalUsageInfo: UsageInfo defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.createReplacementUsage[ValueParameterDescriptorImpl]
 
@@ -2333,7 +2333,7 @@ Inferred types:
 
 'refTarget' @ [751:98] ==> val refTarget: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.createReplacementUsage[LocalVariableDescriptor]
 
-'isCaller' @ [751:108] ==> public fun PsiElement.isCaller(allUsages: Array<out UsageInfo>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'isCaller' @ [751:108] ==> public fun PsiElement.isCaller(allUsages: Array<out UsageInfo>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file changeSignatureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'allUsages' @ [751:117] ==> value-parameter allUsages: Array<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.createReplacementUsage[ValueParameterDescriptorImpl]
 
@@ -2679,7 +2679,7 @@ Inferred types:
 
 'getJavaOrKotlinMemberDescriptor' @ [860:52] ==> @JvmOverloads public fun PsiMember.getJavaOrKotlinMemberDescriptor(resolutionFacade: ResolutionFacade? = ...): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
-'createDeepCopy' @ [860:87] ==> public fun DeclarationDescriptor.createDeepCopy(): DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'createDeepCopy' @ [860:87] ==> public fun DeclarationDescriptor.createDeepCopy(): DeclarationDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file changeSignatureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'descriptorWrapper' @ [862:13] ==> val descriptorWrapper: KotlinChangeSignatureUsageProcessor.OriginalJavaMethodDescriptorWrapper? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.processUsage[LocalVariableDescriptor]
 
@@ -2791,7 +2791,7 @@ Inferred types:
 
 'getParentOfType' @ [902:38] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtSimpleNameExpression..KtSimpleNameExpression?)>, p2: Boolean): KtSimpleNameExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtSimpleNameExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtSimpleNameExpression..org.jetbrains.kotlin.psi.KtSimpleNameExpression?)
 
 'usageInfo' @ [902:54] ==> value-parameter usageInfo: UsageInfo defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureUsageProcessor.processUsage[ValueParameterDescriptorImpl]
 

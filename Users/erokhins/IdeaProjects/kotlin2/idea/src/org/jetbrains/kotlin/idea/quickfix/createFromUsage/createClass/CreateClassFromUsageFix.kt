@@ -28,15 +28,15 @@ Inferred types:
 
 'emptyList' @ [64:57] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeInfo..TypeInfo?)>..List<(TypeInfo..TypeInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.TypeInfo?)
 
 'emptyList' @ [65:63] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ParameterInfo..ParameterInfo?)>..List<(ParameterInfo..ParameterInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ParameterInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterInfo..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.ParameterInfo?)
 
-'lazy' @ [67:30] ==> public fun <T> lazy(initializer: () -> List<PsiElement>): Lazy<List<PsiElement>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [67:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<PsiElement>
+    <T> -> T
 
 'targetParents' @ [68:9] ==> private final val targetParents: List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassInfo[PropertyDescriptorImpl]
 
@@ -360,7 +360,7 @@ Inferred types:
 
 'singletonList' @ [160:37] ==> public open fun <T : (Any..Any?)> singletonList(p0: (PrimaryConstructorInfo..PrimaryConstructorInfo?)): (MutableList<(PrimaryConstructorInfo..PrimaryConstructorInfo?)>..List<(PrimaryConstructorInfo..PrimaryConstructorInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PrimaryConstructorInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.PrimaryConstructorInfo..org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.PrimaryConstructorInfo?)
 
 'constructorInfo' @ [160:51] ==> val constructorInfo: PrimaryConstructorInfo defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromUsageFix.doInvoke.<anonymous>.<anonymous>[LocalVariableDescriptor]
 

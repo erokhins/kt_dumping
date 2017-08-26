@@ -2,7 +2,7 @@
 
 'returnType' @ [32:44] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
-'toFuzzyType' @ [32:56] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'toFuzzyType' @ [32:56] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util in file FuzzyType.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameters' @ [32:68] ==> public final val CallableDescriptor.typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)>[MyPropertyDescriptor]
 
@@ -10,7 +10,7 @@
 
 'type' @ [33:83] ==> public final val ReceiverParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'toFuzzyType' @ [33:89] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'toFuzzyType' @ [33:89] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util in file FuzzyType.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameters' @ [33:101] ==> public final val CallableDescriptor.typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)>[MyPropertyDescriptor]
 
@@ -18,7 +18,7 @@
 
 'makeNotNullable' @ [35:40] ==> public fun KotlinType.makeNotNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil[DeserializedSimpleFunctionDescriptor]
 
-'toFuzzyType' @ [35:58] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'toFuzzyType' @ [35:58] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util in file FuzzyType.kt[SimpleFunctionDescriptorImpl]
 
 'freeParameters' @ [35:70] ==> public final val freeParameters: Set<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.util.FuzzyType[PropertyDescriptorImpl]
 
@@ -26,7 +26,7 @@
 
 'makeNullable' @ [36:37] ==> public fun KotlinType.makeNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil[DeserializedSimpleFunctionDescriptor]
 
-'toFuzzyType' @ [36:52] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'toFuzzyType' @ [36:52] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util in file FuzzyType.kt[SimpleFunctionDescriptorImpl]
 
 'freeParameters' @ [36:64] ==> public final val freeParameters: Set<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.util.FuzzyType[PropertyDescriptorImpl]
 
@@ -334,7 +334,7 @@ Inferred types:
 
 'otherType' @ [120:32] ==> value-parameter otherType: KotlinType defined in org.jetbrains.kotlin.idea.util.FuzzyType.checkIsSubtypeOf[ValueParameterDescriptorImpl]
 
-'toFuzzyType' @ [120:42] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'toFuzzyType' @ [120:42] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util in file FuzzyType.kt[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [120:54] ==> public fun <T> emptyList(): List<TypeParameterDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -344,7 +344,7 @@ Inferred types:
 
 'otherType' @ [123:34] ==> value-parameter otherType: KotlinType defined in org.jetbrains.kotlin.idea.util.FuzzyType.checkIsSuperTypeOf[ValueParameterDescriptorImpl]
 
-'toFuzzyType' @ [123:44] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'toFuzzyType' @ [123:44] ==> public fun KotlinType.toFuzzyType(freeParameters: Collection<TypeParameterDescriptor>): FuzzyType defined in org.jetbrains.kotlin.idea.util in file FuzzyType.kt[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [123:56] ==> public fun <T> emptyList(): List<TypeParameterDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -647,7 +647,7 @@ Inferred types:
 
 'substitution' @ [201:14] ==> public final val TypeSubstitutor.substitution: TypeSubstitution[MyPropertyDescriptor]
 
-'hasConflictWith' @ [201:27] ==> public fun TypeSubstitution.hasConflictWith(other: TypeSubstitution, freeParameters: Collection<TypeParameterDescriptor>): Boolean defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'hasConflictWith' @ [201:27] ==> public fun TypeSubstitution.hasConflictWith(other: TypeSubstitution, freeParameters: Collection<TypeParameterDescriptor>): Boolean defined in org.jetbrains.kotlin.idea.util in file FuzzyType.kt[SimpleFunctionDescriptorImpl]
 
 'other' @ [201:43] ==> value-parameter other: TypeSubstitutor defined in org.jetbrains.kotlin.idea.util.combineIfNoConflicts[ValueParameterDescriptorImpl]
 

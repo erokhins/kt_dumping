@@ -141,7 +141,7 @@ Inferred types:
 
 'returnType' @ [87:45] ==> val returnType: FuzzyType defined in org.jetbrains.kotlin.idea.completion.smart.StaticMembers.addToCollection.processMember[LocalVariableDescriptor]
 
-'matchExpectedInfo' @ [87:56] ==> public fun FuzzyType.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart[SimpleFunctionDescriptorImpl]
+'matchExpectedInfo' @ [87:56] ==> public fun FuzzyType.matchExpectedInfo(expectedInfo: ExpectedInfo): ExpectedInfoMatch defined in org.jetbrains.kotlin.idea.completion.smart in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'expectedInfo' @ [87:74] ==> value-parameter expectedInfo: ExpectedInfo defined in org.jetbrains.kotlin.idea.completion.smart.StaticMembers.addToCollection.processMember.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -202,6 +202,8 @@ Inferred types:
 Inferred types:
     <T> -> DeclarationDescriptor
 
+'processMember' @ [99:75] ==> local final fun processMember(descriptor: DeclarationDescriptor): Unit defined in org.jetbrains.kotlin.idea.completion.smart.StaticMembers.addToCollection[SimpleFunctionDescriptorImpl]
+
 'classDescriptor' @ [101:31] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.idea.completion.smart.StaticMembers.addToCollection[ValueParameterDescriptorImpl]
 
 'companionObjectDescriptor' @ [101:47] ==> public final val ClassDescriptor.companionObjectDescriptor: ClassDescriptor?[MyPropertyDescriptor]
@@ -229,6 +231,8 @@ Inferred types:
 'forEach' @ [105:22] ==> @HidesMembers public inline fun <T> Iterable<DeclarationDescriptor>.forEach(action: (DeclarationDescriptor) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DeclarationDescriptor
+
+'processMember' @ [105:32] ==> local final fun processMember(descriptor: DeclarationDescriptor): Unit defined in org.jetbrains.kotlin.idea.completion.smart.StaticMembers.addToCollection[SimpleFunctionDescriptorImpl]
 
 'classDescriptor' @ [108:23] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.idea.completion.smart.StaticMembers.addToCollection[ValueParameterDescriptorImpl]
 
@@ -275,6 +279,8 @@ Inferred types:
 'forEach' @ [115:17] ==> @HidesMembers public inline fun <T> Iterable<DeclarationDescriptor>.forEach(action: (DeclarationDescriptor) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DeclarationDescriptor
+
+'processMember' @ [115:27] ==> local final fun processMember(descriptor: DeclarationDescriptor): Unit defined in org.jetbrains.kotlin.idea.completion.smart.StaticMembers.addToCollection[SimpleFunctionDescriptorImpl]
 
 'lookupElementFactory' @ [119:16] ==> private final val lookupElementFactory: LookupElementFactory defined in org.jetbrains.kotlin.idea.completion.smart.StaticMembers[PropertyDescriptorImpl]
 

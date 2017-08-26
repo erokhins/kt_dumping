@@ -511,6 +511,8 @@ Inferred types:
 
 'sb' @ [193:28] ==> val sb: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.jps.build.AbstractLookupTrackerTest.doTest[LocalVariableDescriptor]
 
+'indentln' @ [193:32] ==> local final fun StringBuilder /* = StringBuilder */.indentln(string: String): Unit defined in org.jetbrains.kotlin.jps.build.AbstractLookupTrackerTest.doTest[SimpleFunctionDescriptorImpl]
+
 'sb' @ [195:13] ==> val sb: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.jps.build.AbstractLookupTrackerTest.doTest[LocalVariableDescriptor]
 
 'appendln' @ [195:16] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
@@ -521,10 +523,10 @@ Inferred types:
 
 'HashMap' @ [199:37] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?), K1 : (File..File?), V1 : (File..File?)>(p0: (MutableMap<out (File..File?), out (File..File?)>..Map<out (File..File?), (File..File?)>?)) defined in com.intellij.util.containers.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> File
-    <V : (Any..Any?)> -> File
-    <K1 : (K..K?)> -> File
-    <V1 : (V..V?)> -> File
+    <K : (Any..Any?)> -> (java.io.File..java.io.File?)
+    <V : (Any..Any?)> -> (java.io.File..java.io.File?)
+    <K1 : (K..K?)> -> (java.io.File..java.io.File?)
+    <V1 : (V..V?)> -> (java.io.File..java.io.File?)
 
 'copyTestSources' @ [199:45] ==> public fun copyTestSources(testDataDir: File, sourceDestinationDir: File, filePrefix: String): Map<File, File> defined in org.jetbrains.kotlin.incremental.testingUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -579,7 +581,7 @@ Inferred types:
     <K> -> File
     <V> -> List<LookupInfo>
 
-'workToOriginalFileMap' @ [207:45] ==> val workToOriginalFileMap: HashMap<File, File> defined in org.jetbrains.kotlin.jps.build.AbstractLookupTrackerTest.doTest[LocalVariableDescriptor]
+'workToOriginalFileMap' @ [207:45] ==> val workToOriginalFileMap: HashMap<(File..File?), (File..File?)> defined in org.jetbrains.kotlin.jps.build.AbstractLookupTrackerTest.doTest[LocalVariableDescriptor]
 
 'it' @ [207:67] ==> value-parameter it: File defined in org.jetbrains.kotlin.jps.build.AbstractLookupTrackerTest.doTest.originalFilesToLookups.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -639,7 +641,7 @@ Inferred types:
 
 'workingDir' @ [215:77] ==> protected final var workingDir: File defined in org.jetbrains.kotlin.jps.build.AbstractLookupTrackerTest[DeserializedPropertyDescriptor]
 
-'workToOriginalFileMap' @ [215:89] ==> val workToOriginalFileMap: HashMap<File, File> defined in org.jetbrains.kotlin.jps.build.AbstractLookupTrackerTest.doTest[LocalVariableDescriptor]
+'workToOriginalFileMap' @ [215:89] ==> val workToOriginalFileMap: HashMap<(File..File?), (File..File?)> defined in org.jetbrains.kotlin.jps.build.AbstractLookupTrackerTest.doTest[LocalVariableDescriptor]
 
 'make' @ [216:13] ==> private final fun make(filesToCompile: Iterable<File>, incrementalData: AbstractLookupTrackerTest.IncrementalData): AbstractLookupTrackerTest.CompilerOutput defined in org.jetbrains.kotlin.jps.build.AbstractLookupTrackerTest[SimpleFunctionDescriptorImpl]
 

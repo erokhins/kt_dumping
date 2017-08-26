@@ -1,10 +1,10 @@
-'getImplicitReceiversWithInstanceToExpression' @ [32:11] ==> public fun LexicalScope.getImplicitReceiversWithInstanceToExpression(): Map<ReceiverParameterDescriptor, ReceiverExpressionFactory?> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'getImplicitReceiversWithInstanceToExpression' @ [32:11] ==> public fun LexicalScope.getImplicitReceiversWithInstanceToExpression(): Map<ReceiverParameterDescriptor, ReceiverExpressionFactory?> defined in org.jetbrains.kotlin.idea.util in file implicitReceiversUtils.kt[SimpleFunctionDescriptorImpl]
 
 'keys' @ [32:58] ==> public abstract val keys: Set<ReceiverParameterDescriptor> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 
 'LinkedHashSet' @ [40:21] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (ReceiverParameterDescriptor..ReceiverParameterDescriptor?)>..Collection<(ReceiverParameterDescriptor..ReceiverParameterDescriptor?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ReceiverParameterDescriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ReceiverParameterDescriptor..org.jetbrains.kotlin.descriptors.ReceiverParameterDescriptor?)
 
 'getImplicitReceiversHierarchy' @ [40:35] ==> public fun LexicalScope.getImplicitReceiversHierarchy(): List<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.utils[DeserializedSimpleFunctionDescriptor]
 
@@ -59,15 +59,15 @@ Inferred types:
 
 'component1' @ [57:11] ==> public final operator fun component1(): Int defined in kotlin.collections.IndexedValue[DeserializedSimpleFunctionDescriptor]
 
-'component2' @ [57:18] ==> public final operator fun component2(): ReceiverParameterDescriptor defined in kotlin.collections.IndexedValue[DeserializedSimpleFunctionDescriptor]
+'component2' @ [57:18] ==> public final operator fun component2(): (ReceiverParameterDescriptor..ReceiverParameterDescriptor?) defined in kotlin.collections.IndexedValue[DeserializedSimpleFunctionDescriptor]
 
-'receivers' @ [57:31] ==> val receivers: LinkedHashSet<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
+'receivers' @ [57:31] ==> val receivers: LinkedHashSet<(ReceiverParameterDescriptor..ReceiverParameterDescriptor?)> defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
 
-'withIndex' @ [57:41] ==> public fun <T> Iterable<ReceiverParameterDescriptor>.withIndex(): Iterable<IndexedValue<ReceiverParameterDescriptor>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'withIndex' @ [57:41] ==> public fun <T> Iterable<(ReceiverParameterDescriptor..ReceiverParameterDescriptor?)>.withIndex(): Iterable<IndexedValue<(ReceiverParameterDescriptor..ReceiverParameterDescriptor?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ReceiverParameterDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.ReceiverParameterDescriptor..org.jetbrains.kotlin.descriptors.ReceiverParameterDescriptor?)
 
-'receiver' @ [58:21] ==> val receiver: ReceiverParameterDescriptor defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
+'receiver' @ [58:21] ==> val receiver: (ReceiverParameterDescriptor..ReceiverParameterDescriptor?) defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
 
 'containingDeclaration' @ [58:30] ==> public final val ReceiverParameterDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
@@ -77,7 +77,7 @@ Inferred types:
 
 'put' @ [60:20] ==> public open fun put(key: ReceiverParameterDescriptor, value: ReceiverExpressionFactory?): ReceiverExpressionFactory? defined in java.util.LinkedHashMap[JavaMethodDescriptor]
 
-'receiver' @ [60:24] ==> val receiver: ReceiverParameterDescriptor defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
+'receiver' @ [60:24] ==> val receiver: (ReceiverParameterDescriptor..ReceiverParameterDescriptor?) defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
 
 'component1' @ [63:14] ==> public final operator fun component1(): String? defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
@@ -105,7 +105,7 @@ Inferred types:
 
 'thisQualifierName' @ [64:33] ==> private fun thisQualifierName(receiver: ReceiverParameterDescriptor): Name? defined in org.jetbrains.kotlin.idea.util in file implicitReceiversUtils.kt[SimpleFunctionDescriptorImpl]
 
-'receiver' @ [64:51] ==> val receiver: ReceiverParameterDescriptor defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
+'receiver' @ [64:51] ==> val receiver: (ReceiverParameterDescriptor..ReceiverParameterDescriptor?) defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
 
 'let' @ [64:62] ==> @InlineOnly public inline fun <T, R> Name.let(block: (Name) -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -190,7 +190,7 @@ Inferred types:
 
 'put' @ [84:16] ==> public open fun put(key: ReceiverParameterDescriptor, value: ReceiverExpressionFactory?): ReceiverExpressionFactory? defined in java.util.LinkedHashMap[JavaMethodDescriptor]
 
-'receiver' @ [84:20] ==> val receiver: ReceiverParameterDescriptor defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
+'receiver' @ [84:20] ==> val receiver: (ReceiverParameterDescriptor..ReceiverParameterDescriptor?) defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
 
 'factory' @ [84:30] ==> val factory: <no name provided>? defined in org.jetbrains.kotlin.idea.util.getImplicitReceiversWithInstanceToExpression[LocalVariableDescriptor]
 
@@ -220,7 +220,7 @@ Inferred types:
 
 'functionLiteral' @ [95:12] ==> val functionLiteral: KtFunctionLiteral? defined in org.jetbrains.kotlin.idea.util.thisQualifierName[LocalVariableDescriptor]
 
-'findLabelAndCall' @ [95:29] ==> public fun KtFunctionLiteral.findLabelAndCall(): Pair<Name?, KtCallExpression?> defined in org.jetbrains.kotlin.idea.util[SimpleFunctionDescriptorImpl]
+'findLabelAndCall' @ [95:29] ==> public fun KtFunctionLiteral.findLabelAndCall(): Pair<Name?, KtCallExpression?> defined in org.jetbrains.kotlin.idea.util in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'first' @ [95:49] ==> public final val first: Name? defined in kotlin.Pair[DeserializedPropertyDescriptor]
 

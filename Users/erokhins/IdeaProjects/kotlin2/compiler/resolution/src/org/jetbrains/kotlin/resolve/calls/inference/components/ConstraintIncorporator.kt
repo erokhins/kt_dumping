@@ -134,7 +134,7 @@ Inferred types:
 
 'ArrayList' @ [85:36] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (Constraint..Constraint?)>..Collection<(Constraint..Constraint?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Constraint
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.inference.model.Constraint..org.jetbrains.kotlin.resolve.calls.inference.model.Constraint?)
 
 'c' @ [85:46] ==> value-parameter c: ConstraintIncorporator.Context defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintIncorporator.otherInsideMyConstraint[ValueParameterDescriptorImpl]
 
@@ -142,7 +142,7 @@ Inferred types:
 
 'otherTypeVariable' @ [85:74] ==> val otherTypeVariable: NewTypeVariable defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintIncorporator.otherInsideMyConstraint[LocalVariableDescriptor]
 
-'otherConstraints' @ [86:37] ==> val otherConstraints: ArrayList<Constraint> defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintIncorporator.otherInsideMyConstraint[LocalVariableDescriptor]
+'otherConstraints' @ [86:37] ==> val otherConstraints: ArrayList<(Constraint..Constraint?)> defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintIncorporator.otherInsideMyConstraint[LocalVariableDescriptor]
 
 'generateNewConstraint' @ [87:17] ==> private final fun generateNewConstraint(c: ConstraintIncorporator.Context, targetVariable: NewTypeVariable, baseConstraint: Constraint, otherVariable: NewTypeVariable, otherConstraint: Constraint): Unit defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintIncorporator[SimpleFunctionDescriptorImpl]
 
@@ -154,7 +154,7 @@ Inferred types:
 
 'otherTypeVariable' @ [87:68] ==> val otherTypeVariable: NewTypeVariable defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintIncorporator.otherInsideMyConstraint[LocalVariableDescriptor]
 
-'otherConstraint' @ [87:87] ==> val otherConstraint: Constraint defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintIncorporator.otherInsideMyConstraint[LocalVariableDescriptor]
+'otherConstraint' @ [87:87] ==> val otherConstraint: (Constraint..Constraint?) defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintIncorporator.otherInsideMyConstraint[LocalVariableDescriptor]
 
 'c' @ [94:44] ==> value-parameter c: ConstraintIncorporator.Context defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintIncorporator.insideOtherConstraint[ValueParameterDescriptorImpl]
 

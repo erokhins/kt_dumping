@@ -52,14 +52,14 @@ Inferred types:
 
 'psiCall' @ [76:78] ==> public open val psiCall: Call defined in org.jetbrains.kotlin.resolve.calls.tower.PSIKotlinCallImpl[PropertyDescriptorImpl]
 
-'let' @ [76:87] ==> @InlineOnly public inline fun <T, R> (Call..Call?).let(block: ((Call..Call?)) -> (Call..Call?)): (Call..Call?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [76:87] ==> @InlineOnly public inline fun <T, R> (Call..Call?).let(block: ((Call..Call?)) -> Call): Call defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
-    <R> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
+    <R> -> Call
 
-'if (explicitReceiver == null) CallTransformer.stripReceiver(it) else it' @ [77:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Call..Call?), elseBranch: (Call..Call?)): (Call..Call?)[SimpleFunctionDescriptorImpl]
+'if (explicitReceiver == null) CallTransformer.stripReceiver(it) else it' @ [77:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Call, elseBranch: Call): Call[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Call
 
 'explicitReceiver' @ [77:13] ==> public open val explicitReceiver: ReceiverKotlinCallArgument? defined in org.jetbrains.kotlin.resolve.calls.tower.PSIKotlinCallForVariable[PropertyDescriptorImpl]
 

@@ -24,7 +24,7 @@
 
 'asList' @ [50:24] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (Instruction..Instruction?)): (MutableList<(Instruction..Instruction?)>..List<(Instruction..Instruction?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Instruction
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.pseudocode.instructions.Instruction..org.jetbrains.kotlin.cfg.pseudocode.instructions.Instruction?)
 
 'nextOnFalse' @ [50:31] ==> public final var nextOnFalse: Instruction defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.jumps.ConditionalJumpInstruction[PropertyDescriptorImpl]
 

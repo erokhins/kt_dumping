@@ -35,6 +35,8 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> TypeParameterInfo
 
+'TypeParameterInfo' @ [35:58] ==> public constructor TypeParameterInfo(originalParameter: TypeParameter) defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.ui.IntroduceTypeAliasParameterTablePanel.TypeParameterInfo[ClassConstructorDescriptorImpl]
+
 'super' @ [36:9] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceTypeAlias.ui.IntroduceTypeAliasParameterTablePanel[LazyClassReceiverParameterDescriptor]
 
 'init' @ [36:15] ==> public final fun init(): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce.ui.AbstractParameterTablePanel[SimpleFunctionDescriptorImpl]

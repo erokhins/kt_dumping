@@ -339,8 +339,6 @@ Inferred types:
 
 'descriptor' @ [150:61] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.backend.jvm.lower.BridgeLowering.generateBridges[ValueParameterDescriptorImpl]
 
-'OwnerKind' @ [150:73] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
 'IMPLEMENTATION' @ [150:83] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'state' @ [150:99] ==> public final val state: GenerationState defined in org.jetbrains.kotlin.backend.jvm.lower.BridgeLowering[PropertyDescriptorImpl]
@@ -413,8 +411,6 @@ Inferred types:
 
 'containingClass' @ [176:55] ==> val containingClass: ClassDescriptor defined in org.jetbrains.kotlin.backend.jvm.lower.BridgeLowering.createBridge[LocalVariableDescriptor]
 
-'Annotations' @ [176:78] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [176:90] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'newName' @ [176:97] ==> val newName: Name defined in org.jetbrains.kotlin.backend.jvm.lower.BridgeLowering.createBridge[LocalVariableDescriptor]
@@ -469,8 +465,6 @@ Inferred types:
 'descriptorForBridge' @ [182:17] ==> val descriptorForBridge: FunctionDescriptor defined in org.jetbrains.kotlin.backend.jvm.lower.BridgeLowering.createBridge[LocalVariableDescriptor]
 
 'returnType' @ [182:37] ==> public final val FunctionDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
-
-'Modality' @ [182:49] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [182:58] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

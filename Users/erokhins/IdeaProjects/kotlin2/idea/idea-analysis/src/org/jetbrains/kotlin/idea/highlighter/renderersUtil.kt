@@ -98,7 +98,7 @@ Inferred types:
 
 'hasTypeMismatchErrorOnParameter' @ [66:26] ==> public fun <D : CallableDescriptor> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.hasTypeMismatchErrorOnParameter(parameter: ValueParameterDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'parameter' @ [66:58] ==> value-parameter parameter: ValueParameterDescriptor defined in org.jetbrains.kotlin.idea.highlighter.renderersUtil.renderResolvedCall.renderParameter[ValueParameterDescriptorImpl]
 
@@ -112,7 +112,7 @@ Inferred types:
 
 'typeArguments' @ [73:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'parametersToArgumentsMap' @ [75:32] ==> val parametersToArgumentsMap: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>) defined in org.jetbrains.kotlin.idea.highlighter.renderersUtil.renderResolvedCall.appendTypeParametersSubstitution[LocalVariableDescriptor]
 
@@ -130,7 +130,7 @@ Inferred types:
 
 'candidateDescriptor' @ [80:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'typeParameters' @ [80:63] ==> public final val CallableDescriptor.typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)>[MyPropertyDescriptor]
 
@@ -143,6 +143,8 @@ Inferred types:
 'partition' @ [81:82] ==> public inline fun <T> Iterable<(TypeParameterDescriptor..TypeParameterDescriptor?)>.partition(predicate: ((TypeParameterDescriptor..TypeParameterDescriptor?)) -> Boolean): Pair<List<(TypeParameterDescriptor..TypeParameterDescriptor?)>, List<(TypeParameterDescriptor..TypeParameterDescriptor?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
+
+'isInferred' @ [81:117] ==> local final fun TypeParameterDescriptor.isInferred(): Boolean defined in org.jetbrains.kotlin.idea.highlighter.renderersUtil.renderResolvedCall.appendTypeParametersSubstitution[SimpleFunctionDescriptorImpl]
 
 'append' @ [83:9] ==> local final fun append(any: Any): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.idea.highlighter.renderersUtil.renderResolvedCall[SimpleFunctionDescriptorImpl]
 
@@ -182,7 +184,7 @@ Inferred types:
 
 'typeArguments' @ [92:59] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 '!' @ [93:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -216,7 +218,7 @@ Inferred types:
 
 'resultingDescriptor' @ [100:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resultingDescriptor' @ [101:29] ==> val resultingDescriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.highlighter.renderersUtil.renderResolvedCall[LocalVariableDescriptor]
 
@@ -262,6 +264,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
 
+'renderParameter' @ [106:75] ==> local final fun renderParameter(parameter: ValueParameterDescriptor): String defined in org.jetbrains.kotlin.idea.highlighter.renderersUtil.renderResolvedCall[SimpleFunctionDescriptorImpl]
+
 'append' @ [107:5] ==> local final fun append(any: Any): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.idea.highlighter.renderersUtil.renderResolvedCall[SimpleFunctionDescriptorImpl]
 
 'if (resolvedCall.hasUnmappedArguments()) renderError(")") else ")"' @ [107:12] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
@@ -272,7 +276,7 @@ Inferred types:
 
 'hasUnmappedArguments' @ [107:29] ==> public fun <D : CallableDescriptor> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.hasUnmappedArguments(): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <D : CallableDescriptor> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : CallableDescriptor> -> Captured(*)
 
 'renderError' @ [107:53] ==> public fun renderError(o: Any): String defined in org.jetbrains.kotlin.idea.highlighter.renderersUtil in file renderersUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -297,7 +301,7 @@ Inferred types:
 
 'candidateDescriptor' @ [109:23] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'typeParameters' @ [109:43] ==> public final val CallableDescriptor.typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)>[MyPropertyDescriptor]
 
@@ -319,9 +323,7 @@ Inferred types:
 
 'candidateDescriptor' @ [113:55] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
-
-'RenderingContext' @ [113:76] ==> public companion object defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext[FakeCallableDescriptorForObject]
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'of' @ [113:93] ==> @JvmStatic public final fun of(vararg objectsToRender: Any?): RenderingContext defined in org.jetbrains.kotlin.diagnostics.rendering.RenderingContext.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -329,7 +331,7 @@ Inferred types:
 
 'candidateDescriptor' @ [113:109] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'append' @ [116:9] ==> local final fun append(any: Any): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.idea.highlighter.renderersUtil.renderResolvedCall[SimpleFunctionDescriptorImpl]
 

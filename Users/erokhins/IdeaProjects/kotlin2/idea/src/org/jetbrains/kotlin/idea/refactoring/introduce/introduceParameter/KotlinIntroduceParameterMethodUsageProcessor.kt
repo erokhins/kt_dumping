@@ -45,7 +45,7 @@ Inferred types:
 
 'singletonList' @ [61:102] ==> public open fun <T : (Any..Any?)> singletonList(p0: (FunctionDescriptor..FunctionDescriptor?)): (MutableList<(FunctionDescriptor..FunctionDescriptor?)>..List<(FunctionDescriptor..FunctionDescriptor?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FunctionDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'psiMethodDescriptor' @ [61:116] ==> val psiMethodDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.refactoring.introduce.introduceParameter.KotlinIntroduceParameterMethodUsageProcessor.createChangeInfo[LocalVariableDescriptor]
 
@@ -77,7 +77,7 @@ Inferred types:
 
 'parameterInitializer' @ [67:41] ==> public final val IntroduceParameterData.parameterInitializer: raw (IntroduceParameterData.ExpressionWrapper<(PsiElement..PsiElement?)>..IntroduceParameterData.ExpressionWrapper<*>?)[MyPropertyDescriptor]
 
-'expression' @ [67:62] ==> public final val <RealExpression : (PsiElement..PsiElement?)> IntroduceParameterData.ExpressionWrapper<(PsiElement..PsiElement?)>.expression: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'expression' @ [67:62] ==> public final val <RealExpression : (PsiElement..PsiElement?)> IntroduceParameterData.ExpressionWrapper<(PsiElement..PsiElement?)>.expression: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <RealExpression : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 

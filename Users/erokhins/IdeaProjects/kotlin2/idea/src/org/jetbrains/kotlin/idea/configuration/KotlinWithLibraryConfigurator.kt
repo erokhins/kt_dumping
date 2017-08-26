@@ -47,7 +47,7 @@ Inferred types:
 
 'isUnitTestMode' @ [72:77] ==> public final val Application.isUnitTestMode: Boolean[MyPropertyDescriptor]
 
-'getCanBeConfiguredModules' @ [73:13] ==> public fun getCanBeConfiguredModules(project: Project, configurator: KotlinProjectConfigurator): List<Module> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getCanBeConfiguredModules' @ [73:13] ==> public fun getCanBeConfiguredModules(project: Project, configurator: KotlinProjectConfigurator): List<Module> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [73:39] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.configure[ValueParameterDescriptorImpl]
 
@@ -55,7 +55,7 @@ Inferred types:
 
 'asList' @ [75:20] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (Module..Module?)): (MutableList<(Module..Module?)>..List<(Module..Module?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Module
+    <T : (Any..Any?)> -> (com.intellij.openapi.module.Module..com.intellij.openapi.module.Module?)
 
 'getInstance' @ [75:42] ==> public open fun getInstance(@NotNull p0: Project): (ModuleManager..ModuleManager?) defined in com.intellij.openapi.module.ModuleManager[JavaMethodDescriptor]
 
@@ -133,7 +133,7 @@ Inferred types:
 
 'copyIntoPath' @ [97:42] ==> public final val CreateLibraryDialogWithModules.copyIntoPath: String?[MyPropertyDescriptor]
 
-'createConfigureKotlinNotificationCollector' @ [100:25] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'createConfigureKotlinNotificationCollector' @ [100:25] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration in file NotificationMessageCollector.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [100:68] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.configure[ValueParameterDescriptorImpl]
 
@@ -163,7 +163,7 @@ Inferred types:
 
 'project' @ [112:56] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.configureSilently[ValueParameterDescriptorImpl]
 
-'createConfigureKotlinNotificationCollector' @ [113:25] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'createConfigureKotlinNotificationCollector' @ [113:25] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration in file NotificationMessageCollector.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [113:68] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.configureSilently[ValueParameterDescriptorImpl]
 
@@ -331,8 +331,6 @@ Inferred types:
 
 'jarState' @ [172:27] ==> value-parameter jarState: KotlinWithLibraryConfigurator.FileState defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.configureLibraryJar[ValueParameterDescriptorImpl]
 
-'KotlinWithLibraryConfigurator' @ [172:39] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator[FakeCallableDescriptorForObject]
-
 'DO_NOT_COPY' @ [172:79] ==> enum entry DO_NOT_COPY defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.FileState[FakeCallableDescriptorForObject]
 
 'libraryJarDescriptor' @ [173:13] ==> value-parameter libraryJarDescriptor: LibraryJarDescriptor defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.configureLibraryJar[ValueParameterDescriptorImpl]
@@ -348,8 +346,6 @@ Inferred types:
 'jarName' @ [175:55] ==> public final val jarName: String defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[PropertyDescriptorImpl]
 
 'jarState' @ [177:13] ==> value-parameter jarState: KotlinWithLibraryConfigurator.FileState defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.configureLibraryJar[ValueParameterDescriptorImpl]
-
-'KotlinWithLibraryConfigurator' @ [177:25] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator[FakeCallableDescriptorForObject]
 
 'COPY' @ [177:65] ==> enum entry COPY defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.FileState[FakeCallableDescriptorForObject]
 
@@ -437,6 +433,8 @@ Inferred types:
 
 'this' @ [200:100] ==> <this> defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator[LazyClassReceiverParameterDescriptor]
 
+'isKotlinLibrary' @ [200:106] ==> private final fun isKotlinLibrary(library: Library): Boolean defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator[SimpleFunctionDescriptorImpl]
+
 'getInstance' @ [201:39] ==> public open fun getInstance(): (LibraryTablesRegistrar..LibraryTablesRegistrar?) defined in com.intellij.openapi.roots.libraries.LibraryTablesRegistrar[JavaMethodDescriptor]
 
 'libraryTable' @ [201:53] ==> public final val LibraryTablesRegistrar.libraryTable: LibraryTable[MyPropertyDescriptor]
@@ -448,6 +446,8 @@ Inferred types:
     <T> -> (com.intellij.openapi.roots.libraries.Library..com.intellij.openapi.roots.libraries.Library?)
 
 'this' @ [201:88] ==> <this> defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator[LazyClassReceiverParameterDescriptor]
+
+'isKotlinLibrary' @ [201:94] ==> private final fun isKotlinLibrary(library: Library): Boolean defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator[SimpleFunctionDescriptorImpl]
 
 'Contract' @ [204:5] ==> public constructor Contract(value: String = ..., pure: Boolean = ...) defined in org.jetbrains.annotations.Contract[JavaClassConstructorDescriptor]
 
@@ -628,11 +628,13 @@ Inferred types:
 
 'size' @ [260:74] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
-'findKotlinRuntimeLibrary' @ [266:16] ==> public fun findKotlinRuntimeLibrary(module: Module, predicate: (Library) -> Boolean = ...): Library? defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'findKotlinRuntimeLibrary' @ [266:16] ==> public fun findKotlinRuntimeLibrary(module: Module, predicate: (Library) -> Boolean = ...): Library? defined in org.jetbrains.kotlin.idea.versions in file OutdatedKotlinRuntimeChecker.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [266:41] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.getKotlinLibrary[ValueParameterDescriptorImpl]
 
 'this' @ [266:49] ==> <this> defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator[LazyClassReceiverParameterDescriptor]
+
+'isKotlinLibrary' @ [266:55] ==> private final fun isKotlinLibrary(library: Library): Boolean defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator[SimpleFunctionDescriptorImpl]
 
 'library' @ [269:53] ==> value-parameter library: Library defined in org.jetbrains.kotlin.idea.configuration.KotlinWithLibraryConfigurator.isKotlinLibrary[ValueParameterDescriptorImpl]
 

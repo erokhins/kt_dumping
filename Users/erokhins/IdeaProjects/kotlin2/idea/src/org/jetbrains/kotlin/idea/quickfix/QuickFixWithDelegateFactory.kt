@@ -62,11 +62,11 @@
 
 'java' @ [60:92] ==> public val <T> KClass<out IntentionAction>.java: Class<out IntentionAction> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IntentionAction
+    <T> -> Captured(out IntentionAction)
 
 'name' @ [60:97] ==> public final val <T : (Any..Any?)> Class<out IntentionAction>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IntentionAction
+    <T : (Any..Any?)> -> Captured(out IntentionAction)
 
 'action' @ [63:9] ==> val action: IntentionAction defined in org.jetbrains.kotlin.idea.quickfix.QuickFixWithDelegateFactory.invoke[LocalVariableDescriptor]
 

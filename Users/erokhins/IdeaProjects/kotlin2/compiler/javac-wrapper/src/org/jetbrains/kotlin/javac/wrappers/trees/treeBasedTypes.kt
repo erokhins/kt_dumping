@@ -246,9 +246,9 @@ Inferred types:
                         is JCTree.JCClassDecl -> it.typarams
                         is JCTree.JCMethodDecl -> it.typarams
                         else -> emptyList<JCTree.JCTypeParameter>()
-                    }' @ [121:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (List<JCTree.JCTypeParameter>..List<JCTree.JCTypeParameter>?), entry1: (List<JCTree.JCTypeParameter>..List<JCTree.JCTypeParameter>?), entry2: (List<JCTree.JCTypeParameter>..List<JCTree.JCTypeParameter>?)): (List<JCTree.JCTypeParameter>..List<JCTree.JCTypeParameter>?)[SimpleFunctionDescriptorImpl]
+                    }' @ [121:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?), entry1: (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?), entry2: (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?)): (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.collections.List<com.sun.tools.javac.tree.JCTree.JCTypeParameter>..kotlin.collections.List<com.sun.tools.javac.tree.JCTree.JCTypeParameter>?)
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.collections.List<(com.sun.tools.javac.tree.JCTree.JCTypeParameter..com.sun.tools.javac.tree.JCTree.JCTypeParameter?)>..kotlin.collections.List<(com.sun.tools.javac.tree.JCTree.JCTypeParameter..com.sun.tools.javac.tree.JCTree.JCTypeParameter?)>?)
 
 'it' @ [121:27] ==> value-parameter it: (Tree..Tree?) defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClassifierType.<get-typeParameter>.<anonymous>[ValueParameterDescriptorImpl]
 

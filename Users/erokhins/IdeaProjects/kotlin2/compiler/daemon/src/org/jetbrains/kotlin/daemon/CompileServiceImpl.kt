@@ -20,9 +20,9 @@ Inferred types:
 
 'invoke' @ [95:41] ==> public abstract operator fun invoke(): Unit defined in kotlin.Function0[FunctionInvokeDescriptor]
 
-'lazy' @ [110:24] ==> public fun <T> lazy(initializer: () -> (Logger..Logger?)): Lazy<(Logger..Logger?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [110:24] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (java.util.logging.Logger..java.util.logging.Logger?)
+    <T> -> T
 
 'getLogger' @ [110:38] ==> @CallerSensitive public open fun getLogger(p0: (String..String?)): (Logger..Logger?) defined in java.util.logging.Logger[JavaMethodDescriptor]
 
@@ -79,13 +79,11 @@ Inferred types:
 Inferred types:
     <T> -> Int
 
-'getValidId' @ [143:25] ==> internal inline fun getValidId(counter: AtomicInteger, check: (Int) -> Boolean): Int defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'getValidId' @ [143:25] ==> internal inline fun getValidId(counter: AtomicInteger, check: (Int) -> Boolean): Int defined in org.jetbrains.kotlin.daemon in file KotlinRemoteReplService.kt[SimpleFunctionDescriptorImpl]
 
 'sessionsIdCounter' @ [143:36] ==> private final val sessionsIdCounter: AtomicInteger defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.SessionsContainer[PropertyDescriptorImpl]
 
 'it' @ [144:17] ==> value-parameter it: Int defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.SessionsContainer.leaseSession.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
-
-'CompileService' @ [144:23] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'NO_SESSION' @ [144:38] ==> public final val NO_SESSION: Int defined in org.jetbrains.kotlin.daemon.common.CompileService.Companion[DeserializedPropertyDescriptor]
 
@@ -321,7 +319,7 @@ Inferred types:
 
 'Volatile' @ [222:5] ==> public constructor Volatile() defined in kotlin.jvm.Volatile[DeserializedClassConstructorDescriptor]
 
-'nowSeconds' @ [222:46] ==> public fun nowSeconds(): Long defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'nowSeconds' @ [222:46] ==> public fun nowSeconds(): Long defined in org.jetbrains.kotlin.daemon in file CompileServiceImpl.kt[SimpleFunctionDescriptorImpl]
 
 'if (rwlock.isWriteLocked || rwlock.readLockCount - rwlock.readHoldCount > 0) nowSeconds() else _lastUsedSeconds' @ [223:39] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Long, elseBranch: Long): Long[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -339,7 +337,7 @@ Inferred types:
 
 'readHoldCount' @ [223:97] ==> public final val ReentrantReadWriteLock.readHoldCount: Int[MyPropertyDescriptor]
 
-'nowSeconds' @ [223:116] ==> public fun nowSeconds(): Long defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'nowSeconds' @ [223:116] ==> public fun nowSeconds(): Long defined in org.jetbrains.kotlin.daemon in file CompileServiceImpl.kt[SimpleFunctionDescriptorImpl]
 
 '_lastUsedSeconds' @ [223:134] ==> @Volatile private final var _lastUsedSeconds: Long defined in org.jetbrains.kotlin.daemon.CompileServiceImpl[PropertyDescriptorImpl]
 
@@ -906,8 +904,6 @@ Inferred types:
 
 'argumentParseError' @ [373:68] ==> val argumentParseError: String? defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.compile.<anonymous>[LocalVariableDescriptor]
 
-'CompileService' @ [374:13] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'Good' @ [374:39] ==> public constructor Good<out R>(result: Int) defined in org.jetbrains.kotlin.daemon.common.CompileService.CallResult.Good[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out R> -> Int
@@ -1006,8 +1002,6 @@ Inferred types:
 
 'messageCollector' @ [389:35] ==> val messageCollector: CompileServicesFacadeMessageCollector defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.compile.<anonymous>[LocalVariableDescriptor]
 
-'Services' @ [389:53] ==> public companion object defined in org.jetbrains.kotlin.config.Services[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [389:62] ==> @field:JvmField public final val EMPTY: Services defined in org.jetbrains.kotlin.config.Services.Companion[DeserializedPropertyDescriptor]
 
 'k2PlatformArgs' @ [389:69] ==> val k2PlatformArgs: (CommonCompilerArguments..CommonCompilerArguments?) defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.compile.<anonymous>[LocalVariableDescriptor]
@@ -1015,8 +1009,6 @@ Inferred types:
 'INCREMENTAL_COMPILER' @ [392:26] ==> enum entry INCREMENTAL_COMPILER defined in org.jetbrains.kotlin.daemon.common.CompilerMode[FakeCallableDescriptorForObject]
 
 'targetPlatform' @ [393:21] ==> val targetPlatform: CompileService.TargetPlatform defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.compile.<anonymous>[LocalVariableDescriptor]
-
-'CompileService' @ [393:39] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [393:69] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
@@ -1089,6 +1081,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [424:53] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'assert' @ [425:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
 'moduleFile' @ [425:16] ==> val moduleFile: File? defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.execIncrementalCompiler[LocalVariableDescriptor]
@@ -1131,8 +1125,6 @@ Inferred types:
 'daemonMessageReporter' @ [434:17] ==> value-parameter daemonMessageReporter: DaemonMessageReporter defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.execIncrementalCompiler[ValueParameterDescriptorImpl]
 
 'report' @ [434:39] ==> public abstract fun report(severity: ReportSeverity, message: String): Unit defined in org.jetbrains.kotlin.daemon.report.DaemonMessageReporter[SimpleFunctionDescriptorImpl]
-
-'ReportSeverity' @ [434:46] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'ERROR' @ [434:61] ==> enum entry ERROR defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
@@ -1195,6 +1187,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [443:87] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'k2jvmArgs' @ [444:9] ==> value-parameter k2jvmArgs: K2JVMCompilerArguments defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.execIncrementalCompiler[ValueParameterDescriptorImpl]
 
 'friendPaths' @ [444:19] ==> public final var friendPaths: Array<String>? defined in org.jetbrains.kotlin.cli.common.arguments.K2JVMCompilerArguments[DeserializedPropertyDescriptor]
@@ -1207,6 +1201,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.modules.Module..org.jetbrains.kotlin.modules.Module?)
     <R> -> String
+
+'getFriendPaths' @ [444:70] ==> public abstract fun getFriendPaths(): List<String> defined in org.jetbrains.kotlin.modules.Module[DeserializedSimpleFunctionDescriptor]
 
 'toTypedArray' @ [444:86] ==> public inline fun <reified T> Collection<String>.toTypedArray(): Array<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1314,11 +1310,7 @@ Inferred types:
 
 'targetPlatform' @ [479:13] ==> value-parameter targetPlatform: CompileService.TargetPlatform defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.leaseReplSession[ValueParameterDescriptorImpl]
 
-'CompileService' @ [479:31] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'JVM' @ [479:61] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
-
-'CompileService' @ [480:13] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'Error' @ [480:39] ==> public constructor Error(message: String) defined in org.jetbrains.kotlin.daemon.common.CompileService.CallResult.Error[DeserializedClassConstructorDescriptor]
 
@@ -1371,8 +1363,6 @@ Inferred types:
 'repl' @ [487:93] ==> val repl: KotlinJvmReplService defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.leaseReplSession.<anonymous>[LocalVariableDescriptor]
 
 'disposable' @ [487:99] ==> val disposable: Disposable defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.leaseReplSession.<anonymous>[LocalVariableDescriptor]
-
-'CompileService' @ [489:13] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'Good' @ [489:39] ==> public constructor Good<out R>(result: Int) defined in org.jetbrains.kotlin.daemon.common.CompileService.CallResult.Good[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -1430,9 +1420,9 @@ Inferred types:
 
 'history' @ [506:70] ==> value-parameter history: List<ReplCodeLine>? defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.remoteReplLineCompile[ValueParameterDescriptorImpl]
 
-'ifAlive' @ [515:13] ==> private final inline fun <R> ifAlive(minAliveness: CompileServiceImpl.Aliveness = ..., body: () -> CompileService.CallResult<ReplEvalResult>): CompileService.CallResult<ReplEvalResult> defined in org.jetbrains.kotlin.daemon.CompileServiceImpl[SimpleFunctionDescriptorImpl]
+'ifAlive' @ [515:13] ==> private final inline fun <R> ifAlive(minAliveness: CompileServiceImpl.Aliveness = ..., body: () -> CompileService.CallResult<Nothing>): CompileService.CallResult<Nothing> defined in org.jetbrains.kotlin.daemon.CompileServiceImpl[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <R> -> ReplEvalResult
+    <R> -> Nothing
 
 'Alive' @ [515:46] ==> enum entry Alive defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.Aliveness[FakeCallableDescriptorForObject]
 
@@ -1464,11 +1454,7 @@ Inferred types:
 
 'targetPlatform' @ [526:32] ==> public final val targetPlatform: CompileService.TargetPlatform defined in org.jetbrains.kotlin.daemon.common.CompilationOptions[DeserializedPropertyDescriptor]
 
-'CompileService' @ [526:50] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'JVM' @ [526:80] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
-
-'CompileService' @ [527:13] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'Error' @ [527:39] ==> public constructor Error(message: String) defined in org.jetbrains.kotlin.daemon.common.CompileService.CallResult.Error[DeserializedClassConstructorDescriptor]
 
@@ -1509,8 +1495,6 @@ Inferred types:
 'repl' @ [533:93] ==> val repl: KotlinJvmReplService defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.leaseReplSession.<anonymous>[LocalVariableDescriptor]
 
 'disposable' @ [533:99] ==> val disposable: Disposable defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.leaseReplSession.<anonymous>[LocalVariableDescriptor]
-
-'CompileService' @ [535:13] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'Good' @ [535:39] ==> public constructor Good<out R>(result: Int) defined in org.jetbrains.kotlin.daemon.common.CompileService.CallResult.Good[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -1598,11 +1582,7 @@ Inferred types:
 
 'port' @ [590:59] ==> public final val port: Int defined in org.jetbrains.kotlin.daemon.CompileServiceImpl[PropertyDescriptorImpl]
 
-'LoopbackNetworkInterface' @ [590:65] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common[FakeCallableDescriptorForObject]
-
 'clientLoopbackSocketFactory' @ [590:90] ==> public final val clientLoopbackSocketFactory: LoopbackNetworkInterface.ClientLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[DeserializedPropertyDescriptor]
-
-'LoopbackNetworkInterface' @ [590:119] ==> public object LoopbackNetworkInterface defined in org.jetbrains.kotlin.daemon.common[FakeCallableDescriptorForObject]
 
 'serverLoopbackSocketFactory' @ [590:144] ==> public final val serverLoopbackSocketFactory: LoopbackNetworkInterface.ServerLoopbackSocketFactory defined in org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface[DeserializedPropertyDescriptor]
 
@@ -1786,7 +1766,7 @@ Inferred types:
 
 'get' @ [645:117] ==> public final fun get(): Int defined in java.util.concurrent.atomic.AtomicInteger[JavaMethodDescriptor]
 
-'nowSeconds' @ [645:131] ==> public fun nowSeconds(): Long defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'nowSeconds' @ [645:131] ==> public fun nowSeconds(): Long defined in org.jetbrains.kotlin.daemon in file CompileServiceImpl.kt[SimpleFunctionDescriptorImpl]
 
 'lastUsedSeconds' @ [645:146] ==> public final val lastUsedSeconds: Long defined in org.jetbrains.kotlin.daemon.CompileServiceImpl[PropertyDescriptorImpl]
 
@@ -1810,7 +1790,7 @@ Inferred types:
 
 'COMPILE_DAEMON_TIMEOUT_INFINITE_S' @ [649:58] ==> public val COMPILE_DAEMON_TIMEOUT_INFINITE_S: Int defined in org.jetbrains.kotlin.daemon.common[DeserializedPropertyDescriptor]
 
-'nowSeconds' @ [649:95] ==> public fun nowSeconds(): Long defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'nowSeconds' @ [649:95] ==> public fun nowSeconds(): Long defined in org.jetbrains.kotlin.daemon in file CompileServiceImpl.kt[SimpleFunctionDescriptorImpl]
 
 'lastUsedSeconds' @ [649:110] ==> public final val lastUsedSeconds: Long defined in org.jetbrains.kotlin.daemon.CompileServiceImpl[PropertyDescriptorImpl]
 
@@ -2766,8 +2746,6 @@ Inferred types:
 
 'report' @ [879:43] ==> public abstract fun report(severity: ReportSeverity, message: String): Unit defined in org.jetbrains.kotlin.daemon.report.DaemonMessageReporter[SimpleFunctionDescriptorImpl]
 
-'ReportSeverity' @ [879:50] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
-
 'INFO' @ [879:65] ==> enum entry INFO defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'it' @ [879:71] ==> value-parameter it: String defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.checkedCompile.<anonymous>[ValueParameterDescriptorImpl]
@@ -2818,8 +2796,6 @@ Inferred types:
 'daemonMessageReporter' @ [886:25] ==> value-parameter daemonMessageReporter: DaemonMessageReporter defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.checkedCompile[ValueParameterDescriptorImpl]
 
 'report' @ [886:47] ==> public abstract fun report(severity: ReportSeverity, message: String): Unit defined in org.jetbrains.kotlin.daemon.report.DaemonMessageReporter[SimpleFunctionDescriptorImpl]
-
-'ReportSeverity' @ [886:54] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'INFO' @ [886:69] ==> enum entry INFO defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
@@ -2967,8 +2943,6 @@ Inferred types:
 
 'toAlivenessName' @ [931:112] ==> private final fun Int.toAlivenessName(): String defined in org.jetbrains.kotlin.daemon.CompileServiceImpl[SimpleFunctionDescriptorImpl]
 
-'CompileService' @ [932:17] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'Dying' @ [932:43] ==> public constructor Dying() defined in org.jetbrains.kotlin.daemon.common.CompileService.CallResult.Dying[DeserializedClassConstructorDescriptor]
 
 'invoke' @ [936:21] ==> public abstract operator fun invoke(): CompileService.CallResult<R> defined in kotlin.Function0[FunctionInvokeDescriptor]
@@ -2996,8 +2970,6 @@ Inferred types:
 
 'sessionId' @ [950:21] ==> value-parameter sessionId: Int defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.withValidClientOrSessionProxy[ValueParameterDescriptorImpl]
 
-'CompileService' @ [950:34] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'NO_SESSION' @ [950:49] ==> public final val NO_SESSION: Int defined in org.jetbrains.kotlin.daemon.common.CompileService.Companion[DeserializedPropertyDescriptor]
 
 'state' @ [951:22] ==> private final val state: <no name provided> defined in org.jetbrains.kotlin.daemon.CompileServiceImpl[PropertyDescriptorImpl]
@@ -3022,7 +2994,7 @@ Inferred types:
 
 '_lastUsedSeconds' @ [957:13] ==> @Volatile private final var _lastUsedSeconds: Long defined in org.jetbrains.kotlin.daemon.CompileServiceImpl[PropertyDescriptorImpl]
 
-'nowSeconds' @ [957:32] ==> public fun nowSeconds(): Long defined in org.jetbrains.kotlin.daemon[SimpleFunctionDescriptorImpl]
+'nowSeconds' @ [957:32] ==> public fun nowSeconds(): Long defined in org.jetbrains.kotlin.daemon in file CompileServiceImpl.kt[SimpleFunctionDescriptorImpl]
 
 'withValidClientOrSessionProxy' @ [962:13] ==> private final inline fun <R> withValidClientOrSessionProxy(sessionId: Int, body: (CompileServiceImpl.ClientOrSessionProxy<Any>?) -> CompileService.CallResult<R>): CompileService.CallResult<R> defined in org.jetbrains.kotlin.daemon.CompileServiceImpl[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -3053,8 +3025,6 @@ Inferred types:
 
 'invoke' @ [964:55] ==> public abstract operator fun KotlinJvmReplService.invoke(): R defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'CompileService' @ [965:22] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'Error' @ [965:48] ==> public constructor Error(message: String) defined in org.jetbrains.kotlin.daemon.common.CompileService.CallResult.Error[DeserializedClassConstructorDescriptor]
 
 'sessionId' @ [965:75] ==> value-parameter sessionId: Int defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.withValidRepl[ValueParameterDescriptorImpl]
@@ -3076,8 +3046,6 @@ Inferred types:
 'data' @ [971:27] ==> public final val data: Any? defined in org.jetbrains.kotlin.daemon.CompileServiceImpl.ClientOrSessionProxy[PropertyDescriptorImpl]
 
 'invoke' @ [971:60] ==> public abstract operator fun KotlinJvmReplService.invoke(): CompileService.CallResult<R> defined in kotlin.Function1[FunctionInvokeDescriptor]
-
-'CompileService' @ [971:70] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'Error' @ [971:96] ==> public constructor Error(message: String) defined in org.jetbrains.kotlin.daemon.common.CompileService.CallResult.Error[DeserializedClassConstructorDescriptor]
 

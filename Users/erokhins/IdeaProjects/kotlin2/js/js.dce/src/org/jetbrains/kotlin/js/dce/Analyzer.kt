@@ -280,7 +280,7 @@ Inferred types:
 
 'context' @ [92:21] ==> private final val context: Context defined in org.jetbrains.kotlin.js.dce.Analyzer[PropertyDescriptorImpl]
 
-'isObjectDefineProperty' @ [92:29] ==> public fun Context.isObjectDefineProperty(function: JsExpression): Boolean defined in org.jetbrains.kotlin.js.dce[SimpleFunctionDescriptorImpl]
+'isObjectDefineProperty' @ [92:29] ==> public fun Context.isObjectDefineProperty(function: JsExpression): Boolean defined in org.jetbrains.kotlin.js.dce in file util.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [92:52] ==> val function: JsExpression defined in org.jetbrains.kotlin.js.dce.Analyzer.visitExpressionStatement[LocalVariableDescriptor]
 
@@ -417,7 +417,7 @@ Inferred types:
 
 'context' @ [126:17] ==> private final val context: Context defined in org.jetbrains.kotlin.js.dce.Analyzer[PropertyDescriptorImpl]
 
-'isObjectGetOwnPropertyDescriptor' @ [126:25] ==> public fun Context.isObjectGetOwnPropertyDescriptor(function: JsExpression): Boolean defined in org.jetbrains.kotlin.js.dce[SimpleFunctionDescriptorImpl]
+'isObjectGetOwnPropertyDescriptor' @ [126:25] ==> public fun Context.isObjectGetOwnPropertyDescriptor(function: JsExpression): Boolean defined in org.jetbrains.kotlin.js.dce in file util.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [126:58] ==> val function: JsExpression defined in org.jetbrains.kotlin.js.dce.Analyzer.handleObjectDefineProperty[LocalVariableDescriptor]
 

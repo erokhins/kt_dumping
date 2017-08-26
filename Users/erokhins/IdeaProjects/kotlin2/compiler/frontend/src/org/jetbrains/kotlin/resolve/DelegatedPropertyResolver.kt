@@ -136,8 +136,8 @@ Inferred types:
 
 'get' @ [106:64] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..ReadOnlySlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?), key: (VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)): ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptorWithAccessors
-    <V : (Any..Any?)> -> ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors..org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>?)
 
 'PROVIDE_DELEGATE_RESOLVED_CALL' @ [106:68] ==> public final val PROVIDE_DELEGATE_RESOLVED_CALL: (WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -147,7 +147,7 @@ Inferred types:
 
 'provideDelegateResolvedCall' @ [108:20] ==> val provideDelegateResolvedCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.resolve.DelegatedPropertyResolver.getResolvedDelegateType[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [108:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [108:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -205,8 +205,8 @@ Inferred types:
 
 'get' @ [126:49] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..ReadOnlySlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?), key: (VariableAccessorDescriptor..VariableAccessorDescriptor?)): ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableAccessorDescriptor
-    <V : (Any..Any?)> -> ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor..org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>?)
 
 'DELEGATED_PROPERTY_RESOLVED_CALL' @ [126:53] ==> public final val DELEGATED_PROPERTY_RESOLVED_CALL: (WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -222,7 +222,7 @@ Inferred types:
 
 'resolvedCall' @ [127:42] ==> val resolvedCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.resolve.DelegatedPropertyResolver.getGetValueMethodReturnType[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [127:55] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [127:55] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -231,8 +231,6 @@ Inferred types:
 'languageVersionSettings' @ [131:17] ==> private final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.DelegatedPropertyResolver[PropertyDescriptorImpl]
 
 'supportsFeature' @ [131:41] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [131:57] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'OperatorProvideDelegate' @ [131:73] ==> enum entry OperatorProvideDelegate defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -274,8 +272,8 @@ Inferred types:
 
 'get' @ [146:45] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>..ReadOnlySlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>?), key: (VariableAccessorDescriptor..VariableAccessorDescriptor?)): Call? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableAccessorDescriptor
-    <V : (Any..Any?)> -> Call
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor..org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
 
 'DELEGATED_PROPERTY_CALL' @ [146:49] ==> public final val DELEGATED_PROPERTY_CALL: (WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>..WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -369,8 +367,8 @@ Inferred types:
 
 'get' @ [182:34] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>..ReadOnlySlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>?), key: (VariableAccessorDescriptor..VariableAccessorDescriptor?)): Call? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableAccessorDescriptor
-    <V : (Any..Any?)> -> Call
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor..org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
 
 'DELEGATED_PROPERTY_CALL' @ [182:38] ==> public final val DELEGATED_PROPERTY_CALL: (WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>..WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -406,8 +404,8 @@ Inferred types:
 
 'get' @ [190:45] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>..ReadOnlySlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>?), key: (VariableAccessorDescriptor..VariableAccessorDescriptor?)): Call? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableAccessorDescriptor
-    <V : (Any..Any?)> -> Call
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor..org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
 
 'DELEGATED_PROPERTY_CALL' @ [190:49] ==> public final val DELEGATED_PROPERTY_CALL: (WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>..WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -479,8 +477,8 @@ Inferred types:
 
 'record' @ [210:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?), key: (VariableAccessorDescriptor..VariableAccessorDescriptor?), value: (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableAccessorDescriptor
-    <V : (Any..Any?)> -> ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor..org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>?)
 
 'DELEGATED_PROPERTY_RESOLVED_CALL' @ [210:22] ==> public final val DELEGATED_PROPERTY_RESOLVED_CALL: (WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -584,8 +582,8 @@ Inferred types:
 
 'get' @ [255:34] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>..ReadOnlySlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>?), key: (VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)): Call? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptorWithAccessors
-    <V : (Any..Any?)> -> Call
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors..org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
 
 'PROVIDE_DELEGATE_CALL' @ [255:53] ==> public final val PROVIDE_DELEGATE_CALL: (WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>..WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -623,8 +621,8 @@ Inferred types:
 
 'get' @ [262:63] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>..ReadOnlySlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>?), key: (VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?)): Call? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptorWithAccessors
-    <V : (Any..Any?)> -> Call
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors..org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
 
 'PROVIDE_DELEGATE_CALL' @ [262:82] ==> public final val PROVIDE_DELEGATE_CALL: (WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>..WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -676,8 +674,8 @@ Inferred types:
 
 'record' @ [283:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?), key: (VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), value: (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptorWithAccessors
-    <V : (Any..Any?)> -> ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors..org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>?)
 
 'PROVIDE_DELEGATE_RESOLVED_CALL' @ [283:22] ==> public final val PROVIDE_DELEGATE_RESOLVED_CALL: (WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -820,8 +818,8 @@ Inferred types:
 
 'record' @ [322:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), key: (KtReferenceExpression..KtReferenceExpression?), value: (DeclarationDescriptor..DeclarationDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [322:26] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -835,11 +833,7 @@ Inferred types:
 
 'isGet' @ [325:32] ==> value-parameter isGet: Boolean defined in org.jetbrains.kotlin.resolve.DelegatedPropertyResolver.getGetSetValueMethod[ValueParameterDescriptorImpl]
 
-'OperatorNameConventions' @ [325:39] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'GET_VALUE' @ [325:63] ==> @field:JvmField public final val GET_VALUE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
-
-'OperatorNameConventions' @ [325:78] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'SET_VALUE' @ [325:102] ==> @field:JvmField public final val SET_VALUE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -873,8 +867,8 @@ Inferred types:
 
 'record' @ [330:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>..WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>?), key: (VariableAccessorDescriptor..VariableAccessorDescriptor?), value: (Call..Call?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableAccessorDescriptor
-    <V : (Any..Any?)> -> Call
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor..org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
 
 'DELEGATED_PROPERTY_CALL' @ [330:37] ==> public final val DELEGATED_PROPERTY_CALL: (WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>..WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (Call..Call?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -983,8 +977,8 @@ Inferred types:
 
 'record' @ [366:27] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (Call..Call?)>..WritableSlice<(KtExpression..KtExpression?), (Call..Call?)>?), key: (KtExpression..KtExpression?), value: (Call..Call?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> Call
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
 
 'DELEGATE_EXPRESSION_TO_PROVIDE_DELEGATE_CALL' @ [366:49] ==> public final val DELEGATE_EXPRESSION_TO_PROVIDE_DELEGATE_CALL: (WritableSlice<(KtExpression..KtExpression?), (Call..Call?)>..WritableSlice<(KtExpression..KtExpression?), (Call..Call?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -998,8 +992,8 @@ Inferred types:
 
 'record' @ [368:23] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>..WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>?), key: (VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), value: (Call..Call?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptorWithAccessors
-    <V : (Any..Any?)> -> Call
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors..org.jetbrains.kotlin.descriptors.VariableDescriptorWithAccessors?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
 
 'PROVIDE_DELEGATE_CALL' @ [368:45] ==> public final val PROVIDE_DELEGATE_CALL: (WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>..WritableSlice<(VariableDescriptorWithAccessors..VariableDescriptorWithAccessors?), (Call..Call?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1143,7 +1137,7 @@ Inferred types:
 
 'candidateDescriptor' @ [424:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'returnType' @ [424:63] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -1155,7 +1149,7 @@ Inferred types:
 
 'call' @ [426:98] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'toHandle' @ [426:103] ==> public fun Call.toHandle(): CallHandle defined in org.jetbrains.kotlin.resolve.calls.inference in file TypeVariable.kt[SimpleFunctionDescriptorImpl]
 
@@ -1167,7 +1161,7 @@ Inferred types:
 
 'call' @ [427:124] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'create' @ [429:73] ==> @NotNull public open fun create(@NotNull trace: BindingTrace, debugName: (String..String?)): TemporaryBindingTrace defined in org.jetbrains.kotlin.resolve.TemporaryBindingTrace[JavaMethodDescriptor]
 
@@ -1236,8 +1230,6 @@ Inferred types:
 'returnTypeInSystem' @ [443:63] ==> val returnTypeInSystem: KotlinType? defined in org.jetbrains.kotlin.resolve.DelegatedPropertyResolver.ConstraintSystemCompleterImpl.completeConstraintSystem[LocalVariableDescriptor]
 
 'expectedType' @ [443:83] ==> public final val expectedType: KotlinType defined in org.jetbrains.kotlin.resolve.DelegatedPropertyResolver.ConstraintSystemCompleterImpl[PropertyDescriptorImpl]
-
-'FROM_COMPLETER' @ [443:97] ==> enum entry FROM_COMPLETER defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[FakeCallableDescriptorForObject]
 
 'position' @ [443:112] ==> public final fun position(): ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[SimpleFunctionDescriptorImpl]
 
@@ -1316,8 +1308,6 @@ Inferred types:
 'expectedType' @ [466:63] ==> public final val expectedType: KotlinType defined in org.jetbrains.kotlin.resolve.DelegatedPropertyResolver.ConstraintSystemCompleterImpl[PropertyDescriptorImpl]
 
 'substitutedThisParameterType' @ [466:77] ==> val substitutedThisParameterType: KotlinType? defined in org.jetbrains.kotlin.resolve.DelegatedPropertyResolver.ConstraintSystemCompleterImpl.completeConstraintSystem[LocalVariableDescriptor]
-
-'FROM_COMPLETER' @ [466:107] ==> enum entry FROM_COMPLETER defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[FakeCallableDescriptorForObject]
 
 'position' @ [466:122] ==> public final fun position(): ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[SimpleFunctionDescriptorImpl]
 
@@ -1461,8 +1451,6 @@ Inferred types:
 
 'INVARIANT' @ [520:93] ==> enum entry INVARIANT defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
-'FROM_COMPLETER' @ [521:21] ==> enum entry FROM_COMPLETER defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[FakeCallableDescriptorForObject]
-
 'position' @ [521:36] ==> public final fun position(): ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[SimpleFunctionDescriptorImpl]
 
 '!' @ [532:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
@@ -1504,8 +1492,6 @@ Inferred types:
 'NO_EXPECTED_TYPE' @ [540:80] ==> @NotNull public final val NO_EXPECTED_TYPE: SimpleType defined in org.jetbrains.kotlin.types.TypeUtils[JavaPropertyDescriptor]
 
 'DEPENDENT' @ [540:116] ==> enum entry DEPENDENT defined in org.jetbrains.kotlin.resolve.calls.context.ContextDependency[FakeCallableDescriptorForObject]
-
-'StatementFilter' @ [540:127] ==> public companion object defined in org.jetbrains.kotlin.resolve.StatementFilter[FakeCallableDescriptorForObject]
 
 'NONE' @ [540:143] ==> @JvmField public final val NONE: StatementFilter defined in org.jetbrains.kotlin.resolve.StatementFilter.Companion[PropertyDescriptorImpl]
 
@@ -1611,7 +1597,7 @@ Inferred types:
 
 'call' @ [570:37] ==> val call: Call? defined in org.jetbrains.kotlin.resolve.DelegatedPropertyResolver.ConstraintSystemCompleterImpl.resolveViaNewInference[LocalVariableDescriptor]
 
-'getResolvedCall' @ [570:42] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [570:42] ==> public fun Call?.getResolvedCall(context: BindingContext): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
 'traceToResolveConventionMethods' @ [570:58] ==> val traceToResolveConventionMethods: TemporaryBindingTrace defined in org.jetbrains.kotlin.resolve.DelegatedPropertyResolver.ConstraintSystemCompleterImpl.resolveViaNewInference[LocalVariableDescriptor]
 
@@ -1619,7 +1605,7 @@ Inferred types:
 
 'resultingDescriptor' @ [570:107] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'returnType' @ [570:128] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 

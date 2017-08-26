@@ -211,8 +211,8 @@ Inferred types:
 
 'get' @ [215:24] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(Call..Call?), (CallResolutionResult..CallResolutionResult?)>..ReadOnlySlice<(Call..Call?), (CallResolutionResult..CallResolutionResult?)>?), key: (Call..Call?)): CallResolutionResult? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Call
-    <V : (Any..Any?)> -> CallResolutionResult
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.CallResolutionResult..org.jetbrains.kotlin.resolve.calls.model.CallResolutionResult?)
 
 'ONLY_RESOLVED_CALL' @ [215:43] ==> public final val ONLY_RESOLVED_CALL: (WritableSlice<(Call..Call?), (CallResolutionResult..CallResolutionResult?)>..WritableSlice<(Call..Call?), (CallResolutionResult..CallResolutionResult?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -239,8 +239,6 @@ Inferred types:
 'typeInfoForArgument' @ [225:13] ==> value-parameter typeInfoForArgument: KotlinTypeInfo defined in org.jetbrains.kotlin.resolve.calls.tower.createSimplePSICallArgument[ValueParameterDescriptorImpl]
 
 'dataFlowInfo' @ [225:33] ==> public final val dataFlowInfo: DataFlowInfo defined in org.jetbrains.kotlin.types.expressions.KotlinTypeInfo[PropertyDescriptorImpl]
-
-'ExpressionReceiver' @ [226:13] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.receivers.ExpressionReceiver[FakeCallableDescriptorForObject]
 
 'create' @ [226:32] ==> public final fun create(expression: KtExpression, type: KotlinType, bindingContext: BindingContext): ExpressionReceiver defined in org.jetbrains.kotlin.resolve.scopes.receivers.ExpressionReceiver.Companion[SimpleFunctionDescriptorImpl]
 

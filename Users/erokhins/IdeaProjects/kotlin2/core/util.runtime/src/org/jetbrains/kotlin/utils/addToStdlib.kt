@@ -126,11 +126,11 @@ Inferred types:
 
 'java' @ [83:36] ==> public val <T> KClass<out () -> T>.java: Class<out () -> T> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Function0<T>
+    <T> -> Captured(out Function0<T>)
 
 'declaredFields' @ [83:41] ==> public final val <T : (Any..Any?)> Class<out () -> T>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function0<T>
+    <T : (Any..Any?)> -> Captured(out Function0<T>)
 
 'filter' @ [83:56] ==> public inline fun <T> Array<out (Field..Field?)>.filter(predicate: ((Field..Field?)) -> Boolean): List<(Field..Field?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

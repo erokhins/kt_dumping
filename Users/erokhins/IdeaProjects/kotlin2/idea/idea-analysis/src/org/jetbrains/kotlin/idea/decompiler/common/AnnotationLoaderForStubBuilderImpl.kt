@@ -4,7 +4,7 @@
 
 'getExtension' @ [35:31] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>?)): (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> List<Annotation>
+    <Type : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>..kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>?)
 
 'protocol' @ [35:44] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.idea.decompiler.common.AnnotationLoaderForStubBuilderImpl[PropertyDescriptorImpl]
 
@@ -34,9 +34,9 @@ Inferred types:
             is ProtoBuf.Function -> proto.getExtension(protocol.functionAnnotation)
             is ProtoBuf.Property -> proto.getExtension(protocol.propertyAnnotation)
             else -> error("Unknown message: $proto")
-        }' @ [42:27] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: List<ProtoBuf.Annotation>, entry1: List<ProtoBuf.Annotation>, entry2: List<ProtoBuf.Annotation>, entry3: List<ProtoBuf.Annotation>): List<ProtoBuf.Annotation>[SimpleFunctionDescriptorImpl]
+        }' @ [42:27] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?), entry1: (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?), entry2: (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?), entry3: (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)): (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> List<Annotation>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>..kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>?)
 
 'proto' @ [42:33] ==> value-parameter proto: MessageLite defined in org.jetbrains.kotlin.idea.decompiler.common.AnnotationLoaderForStubBuilderImpl.loadCallableAnnotations[ValueParameterDescriptorImpl]
 
@@ -44,7 +44,7 @@ Inferred types:
 
 'getExtension' @ [43:46] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>?)): (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> List<Annotation>
+    <Type : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>..kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>?)
 
 'protocol' @ [43:59] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.idea.decompiler.common.AnnotationLoaderForStubBuilderImpl[PropertyDescriptorImpl]
 
@@ -54,7 +54,7 @@ Inferred types:
 
 'getExtension' @ [44:43] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>?)): (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> List<Annotation>
+    <Type : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>..kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>?)
 
 'protocol' @ [44:56] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.idea.decompiler.common.AnnotationLoaderForStubBuilderImpl[PropertyDescriptorImpl]
 
@@ -64,7 +64,7 @@ Inferred types:
 
 'getExtension' @ [45:43] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>?)): (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> List<Annotation>
+    <Type : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>..kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>?)
 
 'protocol' @ [45:56] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.idea.decompiler.common.AnnotationLoaderForStubBuilderImpl[PropertyDescriptorImpl]
 
@@ -101,7 +101,7 @@ Inferred types:
 
 'getExtension' @ [54:19] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>?)): (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.EnumEntry[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> List<Annotation>
+    <Type : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>..kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>?)
 
 'protocol' @ [54:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.idea.decompiler.common.AnnotationLoaderForStubBuilderImpl[PropertyDescriptorImpl]
 
@@ -130,7 +130,7 @@ Inferred types:
 
 'getExtension' @ [63:19] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>?)): (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.ValueParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> List<Annotation>
+    <Type : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>..kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>?)
 
 'protocol' @ [63:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.idea.decompiler.common.AnnotationLoaderForStubBuilderImpl[PropertyDescriptorImpl]
 
@@ -163,7 +163,7 @@ Inferred types:
 
 'getExtension' @ [75:19] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>?)): (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> List<Annotation>
+    <Type : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>..kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>?)
 
 'protocol' @ [75:32] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.idea.decompiler.common.AnnotationLoaderForStubBuilderImpl[PropertyDescriptorImpl]
 
@@ -190,7 +190,7 @@ Inferred types:
 
 'getExtension' @ [78:15] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?)>?)): (List<ProtoBuf.Annotation>..List<ProtoBuf.Annotation>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> List<Annotation>
+    <Type : (Any..Any?)> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>..kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Annotation>?)
 
 'protocol' @ [78:28] ==> private final val protocol: SerializerExtensionProtocol defined in org.jetbrains.kotlin.idea.decompiler.common.AnnotationLoaderForStubBuilderImpl[PropertyDescriptorImpl]
 

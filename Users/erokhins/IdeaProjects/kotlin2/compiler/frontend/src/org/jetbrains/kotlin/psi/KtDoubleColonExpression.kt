@@ -16,6 +16,8 @@ Inferred types:
 
 'firstChildNode' @ [29:51] ==> public final val ASTNode.firstChildNode: (ASTNode..ASTNode?)[MyPropertyDescriptor]
 
+'getTreeNext' @ [29:76] ==> public abstract fun getTreeNext(): (ASTNode..ASTNode?) defined in com.intellij.lang.ASTNode[JavaMethodDescriptor]
+
 'when (element.elementType) {
                     KtTokens.QUEST -> return true
                     KtTokens.COLONCOLON -> return false
@@ -37,7 +39,7 @@ Inferred types:
 
 'findChildByType' @ [39:17] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): PsiElement? defined in org.jetbrains.kotlin.psi.KtDoubleColonExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'COLONCOLON' @ [39:42] ==> public final val COLONCOLON: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 

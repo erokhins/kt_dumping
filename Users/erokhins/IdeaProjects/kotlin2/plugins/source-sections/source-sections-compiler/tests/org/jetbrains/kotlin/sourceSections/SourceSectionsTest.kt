@@ -8,9 +8,9 @@ Inferred types:
 
 'getHomeDirectory' @ [52:50] ==> @NotNull public open fun getHomeDirectory(): String defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 
-'lazy' @ [55:45] ==> public fun <T> lazy(initializer: () -> KotlinPaths): Lazy<KotlinPaths> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [55:45] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinPaths
+    <T> -> T
 
 'PathUtil' @ [56:21] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
@@ -54,9 +54,9 @@ Inferred types:
 
 'libPath' @ [63:52] ==> public final val KotlinPaths.libPath: File[MyPropertyDescriptor]
 
-'lazy' @ [64:23] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> CompilerId): Lazy<CompilerId> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [64:23] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompilerId
+    <T> -> T
 
 'NONE' @ [64:49] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -100,7 +100,7 @@ Inferred types:
 
 'add' @ [74:23] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>, @NotNull p1: KotlinScriptDefinition): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinScriptDefinition
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)
 
 'SCRIPT_DEFINITIONS' @ [74:48] ==> public final val SCRIPT_DEFINITIONS: (CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>..CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -112,9 +112,7 @@ Inferred types:
 
 'addAll' @ [76:27] ==> public open fun <T : (Any..Any?)> addAll(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>, @NotNull p1: (MutableCollection<(String..String?)>..Collection<(String..String?)>)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'SourceSectionsConfigurationKeys' @ [76:34] ==> public object SourceSectionsConfigurationKeys defined in org.jetbrains.kotlin.sourceSections[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'SECTIONS_OPTION' @ [76:66] ==> public final val SECTIONS_OPTION: CompilerConfigurationKey<List<String>> defined in org.jetbrains.kotlin.sourceSections.SourceSectionsConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -124,9 +122,7 @@ Inferred types:
 
 'add' @ [77:27] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(ComponentRegistrar..ComponentRegistrar?)>..List<(ComponentRegistrar..ComponentRegistrar?)>?)>, @NotNull p1: ComponentRegistrar): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ComponentRegistrar
-
-'ComponentRegistrar' @ [77:31] ==> public companion object defined in org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar..org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar?)
 
 'PLUGIN_COMPONENT_REGISTRARS' @ [77:50] ==> public final val PLUGIN_COMPONENT_REGISTRARS: CompilerConfigurationKey<MutableList<ComponentRegistrar>> defined in org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar.Companion[DeserializedPropertyDescriptor]
 
@@ -225,6 +221,8 @@ Inferred types:
     <R> -> String
 
 'String' @ [99:22] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'trimEnd' @ [99:30] ==> @InlineOnly public inline fun String.trimEnd(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'toList' @ [100:18] ==> public fun <T> Sequence<String>.toList(): List<String> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -679,7 +677,7 @@ Inferred types:
 
 'getTestFiles' @ [194:30] ==> private final fun getTestFiles(expectedExt: String): List<SourceSectionsTest.SourceToExpectedResults> defined in org.jetbrains.kotlin.sourceSections.SourceSectionsTest[SimpleFunctionDescriptorImpl]
 
-'withFlagFile' @ [196:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.sourceSections[SimpleFunctionDescriptorImpl]
+'withFlagFile' @ [196:9] ==> internal inline fun withFlagFile(prefix: String, suffix: String? = ..., body: (File) -> Unit): Unit defined in org.jetbrains.kotlin.sourceSections in file SourceSectionsTest.kt[SimpleFunctionDescriptorImpl]
 
 'DaemonOptions' @ [198:33] ==> public constructor DaemonOptions(runFilesPath: String = ..., autoshutdownMemoryThreshold: Long = ..., autoshutdownIdleSeconds: Int = ..., autoshutdownUnusedSeconds: Int = ..., shutdownDelayMilliseconds: Long = ..., forceShutdownTimeoutMilliseconds: Long = ..., verbose: Boolean = ..., reportPerf: Boolean = ...) defined in org.jetbrains.kotlin.daemon.common.DaemonOptions[DeserializedClassConstructorDescriptor]
 
@@ -787,8 +785,6 @@ Inferred types:
 
 'sessionId' @ [217:115] ==> public final val sessionId: Int defined in org.jetbrains.kotlin.daemon.client.CompileServiceSession[DeserializedPropertyDescriptor]
 
-'CompileService' @ [217:126] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'JVM' @ [217:156] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
 'args' @ [218:61] ==> val args: Array<(String..String?)> defined in org.jetbrains.kotlin.sourceSections.SourceSectionsTest.testSourceSectionCompileOnDaemon.<anonymous>.<anonymous>[LocalVariableDescriptor]
@@ -804,8 +800,6 @@ Inferred types:
 'srcFiles' @ [219:121] ==> value-parameter srcFiles: List<File> defined in org.jetbrains.kotlin.sourceSections.SourceSectionsTest.testSourceSectionCompileOnDaemon.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'outFile' @ [219:131] ==> value-parameter outFile: File defined in org.jetbrains.kotlin.sourceSections.SourceSectionsTest.testSourceSectionCompileOnDaemon.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
-
-'ReportSeverity' @ [220:78] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'DEBUG' @ [220:93] ==> enum entry DEBUG defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
@@ -929,6 +923,8 @@ Inferred types:
 
 'String' @ [248:22] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'trimEnd' @ [248:30] ==> @InlineOnly public inline fun String.trimEnd(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'dropLastWhile' @ [249:18] ==> public inline fun <T> List<String>.dropLastWhile(predicate: (String) -> Boolean): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -951,7 +947,7 @@ Inferred types:
 
 'name' @ [253:79] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'expected' @ [253:87] ==> val expected: List<String> defined in org.jetbrains.kotlin.sourceSections.SourceSectionsTest.verifyScriptOutput[LocalVariableDescriptor]
 

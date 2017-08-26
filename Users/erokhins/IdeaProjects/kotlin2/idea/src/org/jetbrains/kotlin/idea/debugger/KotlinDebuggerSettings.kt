@@ -22,7 +22,7 @@ Inferred types:
 
 'getDebuggerSettings' @ [39:49] ==> public abstract fun <T : (XDebuggerSettings<*>..XDebuggerSettings<*>?)> getDebuggerSettings(p0: (Class<(KotlinDebuggerSettings..KotlinDebuggerSettings?)>..Class<(KotlinDebuggerSettings..KotlinDebuggerSettings?)>?)): (KotlinDebuggerSettings..KotlinDebuggerSettings?) defined in com.intellij.xdebugger.XDebuggerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (XDebuggerSettings<*>..XDebuggerSettings<*>?)> -> KotlinDebuggerSettings
+    <T : (XDebuggerSettings<*>..XDebuggerSettings<*>?)> -> (org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings..org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings?)
 
 'KotlinDebuggerSettings' @ [39:69] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings[FakeCallableDescriptorForObject]
 
@@ -52,14 +52,14 @@ Inferred types:
 
 'STEPPING' @ [45:38] ==> enum entry STEPPING defined in com.intellij.xdebugger.settings.DebuggerSettingsCategory[FakeCallableDescriptorForObject]
 
-'listOf' @ [46:17] ==> public fun <T> listOf(element: (SimpleConfigurable<KotlinSteppingConfigurableUi, KotlinDebuggerSettings>..SimpleConfigurable<KotlinSteppingConfigurableUi, KotlinDebuggerSettings>?)): List<(SimpleConfigurable<KotlinSteppingConfigurableUi, KotlinDebuggerSettings>..SimpleConfigurable<KotlinSteppingConfigurableUi, KotlinDebuggerSettings>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [46:17] ==> public fun <T> listOf(element: (SimpleConfigurable<(KotlinSteppingConfigurableUi..KotlinSteppingConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>..SimpleConfigurable<(KotlinSteppingConfigurableUi..KotlinSteppingConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>?)): List<(SimpleConfigurable<(KotlinSteppingConfigurableUi..KotlinSteppingConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>..SimpleConfigurable<(KotlinSteppingConfigurableUi..KotlinSteppingConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (com.intellij.openapi.options.SimpleConfigurable<org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingConfigurableUi, org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings>..com.intellij.openapi.options.SimpleConfigurable<org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingConfigurableUi, org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings>?)
+    <T> -> (com.intellij.openapi.options.SimpleConfigurable<(org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingConfigurableUi..org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingConfigurableUi?), (org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings..org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings?)>..com.intellij.openapi.options.SimpleConfigurable<(org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingConfigurableUi..org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingConfigurableUi?), (org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings..org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings?)>?)
 
 'create' @ [46:43] ==> public open fun <UI : (ConfigurableUi<(KotlinDebuggerSettings..KotlinDebuggerSettings?)>..ConfigurableUi<(KotlinDebuggerSettings..KotlinDebuggerSettings?)>?), S : (Any..Any?)> create(@NotNull p0: String, @NotNull p1: String, @NotNull p2: Class<(KotlinSteppingConfigurableUi..KotlinSteppingConfigurableUi?)>, @NotNull p3: Getter<(KotlinDebuggerSettings..KotlinDebuggerSettings?)>): (SimpleConfigurable<(KotlinSteppingConfigurableUi..KotlinSteppingConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>..SimpleConfigurable<(KotlinSteppingConfigurableUi..KotlinSteppingConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>?) defined in com.intellij.openapi.options.SimpleConfigurable[JavaMethodDescriptor]
 Inferred types:
-    <UI : (ConfigurableUi<(S..S?)>..ConfigurableUi<(S..S?)>?)> -> KotlinSteppingConfigurableUi
-    <S : (Any..Any?)> -> KotlinDebuggerSettings
+    <UI : (ConfigurableUi<(S..S?)>..ConfigurableUi<(S..S?)>?)> -> (org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingConfigurableUi..org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingConfigurableUi?)
+    <S : (Any..Any?)> -> (org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings..org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings?)
 
 'KotlinSteppingConfigurableUi' @ [49:25] ==> public constructor KotlinSteppingConfigurableUi() defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSteppingConfigurableUi[JavaClassConstructorDescriptor]
 
@@ -71,14 +71,14 @@ Inferred types:
 
 'DATA_VIEWS' @ [51:38] ==> enum entry DATA_VIEWS defined in com.intellij.xdebugger.settings.DebuggerSettingsCategory[FakeCallableDescriptorForObject]
 
-'listOf' @ [52:17] ==> public fun <T> listOf(element: (SimpleConfigurable<KotlinDelegatedPropertyRendererConfigurableUi, KotlinDebuggerSettings>..SimpleConfigurable<KotlinDelegatedPropertyRendererConfigurableUi, KotlinDebuggerSettings>?)): List<(SimpleConfigurable<KotlinDelegatedPropertyRendererConfigurableUi, KotlinDebuggerSettings>..SimpleConfigurable<KotlinDelegatedPropertyRendererConfigurableUi, KotlinDebuggerSettings>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [52:17] ==> public fun <T> listOf(element: (SimpleConfigurable<(KotlinDelegatedPropertyRendererConfigurableUi..KotlinDelegatedPropertyRendererConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>..SimpleConfigurable<(KotlinDelegatedPropertyRendererConfigurableUi..KotlinDelegatedPropertyRendererConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>?)): List<(SimpleConfigurable<(KotlinDelegatedPropertyRendererConfigurableUi..KotlinDelegatedPropertyRendererConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>..SimpleConfigurable<(KotlinDelegatedPropertyRendererConfigurableUi..KotlinDelegatedPropertyRendererConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (com.intellij.openapi.options.SimpleConfigurable<org.jetbrains.kotlin.idea.debugger.KotlinDelegatedPropertyRendererConfigurableUi, org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings>..com.intellij.openapi.options.SimpleConfigurable<org.jetbrains.kotlin.idea.debugger.KotlinDelegatedPropertyRendererConfigurableUi, org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings>?)
+    <T> -> (com.intellij.openapi.options.SimpleConfigurable<(org.jetbrains.kotlin.idea.debugger.KotlinDelegatedPropertyRendererConfigurableUi..org.jetbrains.kotlin.idea.debugger.KotlinDelegatedPropertyRendererConfigurableUi?), (org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings..org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings?)>..com.intellij.openapi.options.SimpleConfigurable<(org.jetbrains.kotlin.idea.debugger.KotlinDelegatedPropertyRendererConfigurableUi..org.jetbrains.kotlin.idea.debugger.KotlinDelegatedPropertyRendererConfigurableUi?), (org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings..org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings?)>?)
 
 'create' @ [52:43] ==> public open fun <UI : (ConfigurableUi<(KotlinDebuggerSettings..KotlinDebuggerSettings?)>..ConfigurableUi<(KotlinDebuggerSettings..KotlinDebuggerSettings?)>?), S : (Any..Any?)> create(@NotNull p0: String, @NotNull p1: String, @NotNull p2: Class<(KotlinDelegatedPropertyRendererConfigurableUi..KotlinDelegatedPropertyRendererConfigurableUi?)>, @NotNull p3: Getter<(KotlinDebuggerSettings..KotlinDebuggerSettings?)>): (SimpleConfigurable<(KotlinDelegatedPropertyRendererConfigurableUi..KotlinDelegatedPropertyRendererConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>..SimpleConfigurable<(KotlinDelegatedPropertyRendererConfigurableUi..KotlinDelegatedPropertyRendererConfigurableUi?), (KotlinDebuggerSettings..KotlinDebuggerSettings?)>?) defined in com.intellij.openapi.options.SimpleConfigurable[JavaMethodDescriptor]
 Inferred types:
-    <UI : (ConfigurableUi<(S..S?)>..ConfigurableUi<(S..S?)>?)> -> KotlinDelegatedPropertyRendererConfigurableUi
-    <S : (Any..Any?)> -> KotlinDebuggerSettings
+    <UI : (ConfigurableUi<(S..S?)>..ConfigurableUi<(S..S?)>?)> -> (org.jetbrains.kotlin.idea.debugger.KotlinDelegatedPropertyRendererConfigurableUi..org.jetbrains.kotlin.idea.debugger.KotlinDelegatedPropertyRendererConfigurableUi?)
+    <S : (Any..Any?)> -> (org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings..org.jetbrains.kotlin.idea.debugger.KotlinDebuggerSettings?)
 
 'KotlinDelegatedPropertyRendererConfigurableUi' @ [55:25] ==> public constructor KotlinDelegatedPropertyRendererConfigurableUi() defined in org.jetbrains.kotlin.idea.debugger.KotlinDelegatedPropertyRendererConfigurableUi[JavaClassConstructorDescriptor]
 

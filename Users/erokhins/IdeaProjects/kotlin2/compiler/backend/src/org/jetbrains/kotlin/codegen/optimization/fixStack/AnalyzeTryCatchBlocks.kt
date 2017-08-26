@@ -41,7 +41,7 @@ Inferred types:
     <K> -> AbstractInsnNode
     <V> -> AbstractInsnNode
 
-'collectDecompiledTryDescriptors' @ [46:43] ==> private fun collectDecompiledTryDescriptors(methodNode: MethodNode): Map<LabelNode, DecompiledTryDescriptor> defined in org.jetbrains.kotlin.codegen.optimization.fixStack[SimpleFunctionDescriptorImpl]
+'collectDecompiledTryDescriptors' @ [46:43] ==> private fun collectDecompiledTryDescriptors(methodNode: MethodNode): Map<LabelNode, DecompiledTryDescriptor> defined in org.jetbrains.kotlin.codegen.optimization.fixStack in file AnalyzeTryCatchBlocks.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [46:75] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack.insertTryCatchBlocksMarkers[ValueParameterDescriptorImpl]
 
@@ -50,7 +50,7 @@ Inferred types:
     <K> -> LabelNode
     <V> -> LabelNode
 
-'insertSaveRestoreStackMarkers' @ [49:41] ==> private fun insertSaveRestoreStackMarkers(decompiledTryDescriptorForStart: Map<LabelNode, DecompiledTryDescriptor>, methodNode: MethodNode, newTryStartLabels: MutableMap<LabelNode, LabelNode>): Map<AbstractInsnNode, AbstractInsnNode> defined in org.jetbrains.kotlin.codegen.optimization.fixStack[SimpleFunctionDescriptorImpl]
+'insertSaveRestoreStackMarkers' @ [49:41] ==> private fun insertSaveRestoreStackMarkers(decompiledTryDescriptorForStart: Map<LabelNode, DecompiledTryDescriptor>, methodNode: MethodNode, newTryStartLabels: MutableMap<LabelNode, LabelNode>): Map<AbstractInsnNode, AbstractInsnNode> defined in org.jetbrains.kotlin.codegen.optimization.fixStack in file AnalyzeTryCatchBlocks.kt[SimpleFunctionDescriptorImpl]
 
 'decompiledTryDescriptorForStart' @ [49:71] ==> val decompiledTryDescriptorForStart: Map<LabelNode, DecompiledTryDescriptor> defined in org.jetbrains.kotlin.codegen.optimization.fixStack.insertTryCatchBlocksMarkers[LocalVariableDescriptor]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'newTryStartLabels' @ [49:116] ==> val newTryStartLabels: HashMap<LabelNode, LabelNode> /* = HashMap<LabelNode, LabelNode> */ defined in org.jetbrains.kotlin.codegen.optimization.fixStack.insertTryCatchBlocksMarkers[LocalVariableDescriptor]
 
-'transformTryCatchBlocks' @ [51:5] ==> private fun transformTryCatchBlocks(methodNode: MethodNode, newTryStartLabels: HashMap<LabelNode, LabelNode>): Unit defined in org.jetbrains.kotlin.codegen.optimization.fixStack[SimpleFunctionDescriptorImpl]
+'transformTryCatchBlocks' @ [51:5] ==> private fun transformTryCatchBlocks(methodNode: MethodNode, newTryStartLabels: HashMap<LabelNode, LabelNode>): Unit defined in org.jetbrains.kotlin.codegen.optimization.fixStack in file AnalyzeTryCatchBlocks.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [51:29] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack.insertTryCatchBlocksMarkers[ValueParameterDescriptorImpl]
 
@@ -166,7 +166,7 @@ Inferred types:
 
 'tryStartLabel' @ [80:31] ==> public final val tryStartLabel: LabelNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack.DecompiledTryDescriptor[PropertyDescriptorImpl]
 
-'findNextOrNull' @ [80:45] ==> public inline fun AbstractInsnNode.findNextOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'findNextOrNull' @ [80:45] ==> public inline fun AbstractInsnNode.findNextOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [80:62] ==> value-parameter it: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack.insertSaveRestoreStackMarkers.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -270,7 +270,7 @@ Inferred types:
 
 'handlerStartLabel' @ [104:37] ==> val handlerStartLabel: LabelNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack.insertSaveRestoreStackMarkers.<anonymous>[LocalVariableDescriptor]
 
-'findNextOrNull' @ [104:55] ==> public inline fun AbstractInsnNode.findNextOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'findNextOrNull' @ [104:55] ==> public inline fun AbstractInsnNode.findNextOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [104:72] ==> value-parameter it: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack.insertSaveRestoreStackMarkers.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -326,17 +326,15 @@ Inferred types:
 
 'tryCatchBlocks' @ [122:38] ==> public final var tryCatchBlocks: (MutableList<(TryCatchBlockNode..TryCatchBlockNode?)>..List<(TryCatchBlockNode..TryCatchBlockNode?)>?) defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaPropertyDescriptor]
 
-'mapNotNullTo' @ [122:53] ==> public inline fun <T, R : Any, C : MutableCollection<in LabelNode>> Iterable<(TryCatchBlockNode..TryCatchBlockNode?)>.mapNotNullTo(destination: SmartSet<LabelNode>, transform: ((TryCatchBlockNode..TryCatchBlockNode?)) -> LabelNode?): SmartSet<LabelNode> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapNotNullTo' @ [122:53] ==> public inline fun <T, R : Any, C : MutableCollection<in LabelNode>> Iterable<(TryCatchBlockNode..TryCatchBlockNode?)>.mapNotNullTo(destination: SmartSet<(LabelNode..LabelNode?)>, transform: ((TryCatchBlockNode..TryCatchBlockNode?)) -> LabelNode?): SmartSet<(LabelNode..LabelNode?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.org.objectweb.asm.tree.TryCatchBlockNode..org.jetbrains.org.objectweb.asm.tree.TryCatchBlockNode?)
     <R : Any> -> LabelNode
-    <C : MutableCollection<in R>> -> SmartSet<LabelNode>
+    <C : MutableCollection<in R>> -> SmartSet<(org.jetbrains.org.objectweb.asm.tree.LabelNode..org.jetbrains.org.objectweb.asm.tree.LabelNode?)>
 
-'SmartSet' @ [122:66] ==> public companion object defined in org.jetbrains.kotlin.utils.SmartSet[FakeCallableDescriptorForObject]
-
-'create' @ [122:75] ==> @JvmStatic public final fun <T> create(): SmartSet<LabelNode> defined in org.jetbrains.kotlin.utils.SmartSet.Companion[DeserializedSimpleFunctionDescriptor]
+'create' @ [122:75] ==> @JvmStatic public final fun <T> create(): SmartSet<(LabelNode..LabelNode?)> defined in org.jetbrains.kotlin.utils.SmartSet.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LabelNode
+    <T> -> (org.jetbrains.org.objectweb.asm.tree.LabelNode..org.jetbrains.org.objectweb.asm.tree.LabelNode?)
 
 'if (it.isDefaultHandlerNode()) it.handler else null' @ [123:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: LabelNode?, elseBranch: LabelNode?): LabelNode?[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -437,7 +435,7 @@ Inferred types:
 
 'handler' @ [146:21] ==> public final var handler: (LabelNode..LabelNode?) defined in org.jetbrains.org.objectweb.asm.tree.TryCatchBlockNode[JavaPropertyDescriptor]
 
-'defaultHandlers' @ [146:33] ==> val defaultHandlers: SmartSet<LabelNode> defined in org.jetbrains.kotlin.codegen.optimization.fixStack.collectDecompiledTryDescriptors[LocalVariableDescriptor]
+'defaultHandlers' @ [146:33] ==> val defaultHandlers: SmartSet<(LabelNode..LabelNode?)> defined in org.jetbrains.kotlin.codegen.optimization.fixStack.collectDecompiledTryDescriptors[LocalVariableDescriptor]
 
 'handlerStartLabels' @ [147:17] ==> public final val handlerStartLabels: HashSet<LabelNode> /* = HashSet<LabelNode> */ defined in org.jetbrains.kotlin.codegen.optimization.fixStack.DecompiledTryDescriptor[PropertyDescriptorImpl]
 

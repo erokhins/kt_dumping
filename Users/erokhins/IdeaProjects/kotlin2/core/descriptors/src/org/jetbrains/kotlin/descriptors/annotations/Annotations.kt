@@ -162,6 +162,8 @@ Inferred types:
 
 'this' @ [96:47] ==> <this> defined in org.jetbrains.kotlin.descriptors.annotations.FilteredAnnotations[LazyClassReceiverParameterDescriptor]
 
+'shouldBeReturned' @ [96:53] ==> private final fun shouldBeReturned(annotation: AnnotationDescriptor): Boolean defined in org.jetbrains.kotlin.descriptors.annotations.FilteredAnnotations[SimpleFunctionDescriptorImpl]
+
 'iterator' @ [96:71] ==> public abstract fun iterator(): Iterator<AnnotationDescriptor> defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
 'delegate' @ [98:30] ==> private final val delegate: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.FilteredAnnotations[PropertyDescriptorImpl]
@@ -171,6 +173,8 @@ Inferred types:
     <T> -> AnnotationDescriptor
 
 'this' @ [98:43] ==> <this> defined in org.jetbrains.kotlin.descriptors.annotations.FilteredAnnotations[LazyClassReceiverParameterDescriptor]
+
+'shouldBeReturned' @ [98:49] ==> private final fun shouldBeReturned(annotation: AnnotationDescriptor): Boolean defined in org.jetbrains.kotlin.descriptors.annotations.FilteredAnnotations[SimpleFunctionDescriptorImpl]
 
 'annotation' @ [101:13] ==> value-parameter annotation: AnnotationDescriptor defined in org.jetbrains.kotlin.descriptors.annotations.FilteredAnnotations.shouldBeReturned[ValueParameterDescriptorImpl]
 

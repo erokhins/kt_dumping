@@ -57,8 +57,6 @@ Inferred types:
 
 'this' @ [54:21] ==> <this> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggestionProvider.getSuggestedNames.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'KotlinNameSuggester' @ [54:29] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core in file KotlinNameSuggester.kt[FakeCallableDescriptorForObject]
-
 'getCamelNames' @ [54:49] ==> public final fun getCamelNames(name: String, validator: (String) -> Boolean, startLowerCase: Boolean): List<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[SimpleFunctionDescriptorImpl]
 
 'name' @ [54:63] ==> val name: String? defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggestionProvider.getSuggestedNames.<anonymous>[LocalVariableDescriptor]
@@ -96,8 +94,6 @@ Inferred types:
 'type' @ [59:87] ==> val type: KotlinType? defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggestionProvider.getSuggestedNames.<anonymous>[LocalVariableDescriptor]
 
 'this' @ [60:21] ==> <this> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggestionProvider.getSuggestedNames.<anonymous>[ReceiverParameterDescriptorImpl]
-
-'KotlinNameSuggester' @ [60:29] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core in file KotlinNameSuggester.kt[FakeCallableDescriptorForObject]
 
 'suggestNamesByType' @ [60:49] ==> public final fun suggestNamesByType(type: KotlinType, validator: (String) -> Boolean, defaultName: String? = ...): List<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[SimpleFunctionDescriptorImpl]
 

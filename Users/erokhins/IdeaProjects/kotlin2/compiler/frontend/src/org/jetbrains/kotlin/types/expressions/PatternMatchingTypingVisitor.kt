@@ -78,8 +78,8 @@
 
 'record' @ [57:27] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (DataFlowInfo..DataFlowInfo?)>..WritableSlice<(KtExpression..KtExpression?), (DataFlowInfo..DataFlowInfo?)>?), key: (KtExpression..KtExpression?), value: (DataFlowInfo..DataFlowInfo?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> DataFlowInfo
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo..org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo?)
 
 'DATAFLOW_INFO_AFTER_CONDITION' @ [57:49] ==> public final val DATAFLOW_INFO_AFTER_CONDITION: (WritableSlice<(KtExpression..KtExpression?), (DataFlowInfo..DataFlowInfo?)>..WritableSlice<(KtExpression..KtExpression?), (DataFlowInfo..DataFlowInfo?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -274,8 +274,6 @@ Inferred types:
 
 'contextAfterSubject' @ [101:71] ==> val contextAfterSubject: ExpressionTypingContext defined in org.jetbrains.kotlin.types.expressions.PatternMatchingTypingVisitor.visitWhenExpression[LocalVariableDescriptor]
 
-'DataFlowValue' @ [102:14] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue[FakeCallableDescriptorForObject]
-
 'nullValue' @ [102:28] ==> @JvmStatic public final fun nullValue(builtIns: KotlinBuiltIns): DataFlowValue defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue.Companion[SimpleFunctionDescriptorImpl]
 
 'components' @ [102:38] ==> protected/*protected and package*/ final val components: (ExpressionTypingComponents..ExpressionTypingComponents?) defined in org.jetbrains.kotlin.types.expressions.PatternMatchingTypingVisitor[JavaPropertyDescriptor]
@@ -410,7 +408,7 @@ Inferred types:
 
 'record' @ [127:19] ==> public abstract fun <K : (Any..Any?)> record(slice: (WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?), key: (KtWhenExpression..KtWhenExpression?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtWhenExpression
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtWhenExpression..org.jetbrains.kotlin.psi.KtWhenExpression?)
 
 'IMPLICIT_EXHAUSTIVE_WHEN' @ [127:41] ==> public final val IMPLICIT_EXHAUSTIVE_WHEN: (WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -512,7 +510,7 @@ Inferred types:
 
 'nCopies' @ [156:29] ==> public open fun <T : (Any..Any?)> nCopies(p0: Int, p1: (Boolean..Boolean?)): (MutableList<(Boolean..Boolean?)>..List<(Boolean..Boolean?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'wrappedArgumentExpressions' @ [156:37] ==> val wrappedArgumentExpressions: List<KtExpression> defined in org.jetbrains.kotlin.types.expressions.PatternMatchingTypingVisitor.inferTypeForWhenExpression[LocalVariableDescriptor]
 
@@ -524,7 +522,7 @@ Inferred types:
 
 'resolvedCall' @ [159:16] ==> val resolvedCall: (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.types.expressions.PatternMatchingTypingVisitor.inferTypeForWhenExpression[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [159:29] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [159:29] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -790,8 +788,6 @@ Inferred types:
 'possibleCastClass' @ [250:67] ==> val possibleCastClass: ClassDescriptor defined in org.jetbrains.kotlin.types.expressions.PatternMatchingTypingVisitor.checkSmartCastsInSubjectIfRequired[LocalVariableDescriptor]
 
 'modality' @ [250:85] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [250:97] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'SEALED' @ [250:106] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -1203,11 +1199,11 @@ Inferred types:
 
 'java' @ [376:74] ==> public val <T> KClass<out <no name provided>>.java: Class<out <no name provided>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> Captured(out <no name provided>)
 
 'canonicalName' @ [376:79] ==> public final val <T : (Any..Any?)> Class<out <no name provided>>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> <no name provided>
+    <T : (Any..Any?)> -> Captured(out <no name provided>)
 
 'newDataFlowInfo' @ [379:16] ==> var newDataFlowInfo: PatternMatchingTypingVisitor.ConditionalDataFlowInfo defined in org.jetbrains.kotlin.types.expressions.PatternMatchingTypingVisitor.checkWhenCondition[LocalVariableDescriptor]
 

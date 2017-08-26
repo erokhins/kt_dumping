@@ -40,10 +40,10 @@ Inferred types:
 
 'HashMap' @ [59:41] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?), K1 : (KtNamedDeclaration..KtNamedDeclaration?), V1 : (KotlinMemberInfo..KotlinMemberInfo?)>(p0: (MutableMap<out (KtNamedDeclaration..KtNamedDeclaration?), out (KotlinMemberInfo..KotlinMemberInfo?)>..Map<out (KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>?)) defined in com.intellij.util.containers.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtNamedDeclaration
-    <V : (Any..Any?)> -> KotlinMemberInfo
-    <K1 : (K..K?)> -> KtNamedDeclaration
-    <V1 : (V..V?)> -> KotlinMemberInfo
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo..org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo?)
+    <K1 : (K..K?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
+    <V1 : (V..V?)> -> (org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo..org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo?)
 
 'properties' @ [59:49] ==> value-parameter properties: List<KtNamedDeclaration> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard.BuilderImpl.<init>[ValueParameterDescriptorImpl]
 
@@ -122,7 +122,7 @@ Inferred types:
 
 'memberInfos' @ [79:41] ==> private final val memberInfos: List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard.BuilderImpl[PropertyDescriptorImpl]
 
-'membersToHashCode' @ [81:46] ==> private final val membersToHashCode: HashMap<KtNamedDeclaration, KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard.BuilderImpl[PropertyDescriptorImpl]
+'membersToHashCode' @ [81:46] ==> private final val membersToHashCode: HashMap<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard.BuilderImpl[PropertyDescriptorImpl]
 
 'HashMap' @ [83:45] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in com.intellij.util.containers.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
@@ -146,7 +146,7 @@ Inferred types:
     <T> -> KotlinMemberInfo
     <R> -> KotlinMemberInfo?
 
-'membersToHashCode' @ [92:74] ==> private final val membersToHashCode: HashMap<KtNamedDeclaration, KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard.BuilderImpl[PropertyDescriptorImpl]
+'membersToHashCode' @ [92:74] ==> private final val membersToHashCode: HashMap<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard.BuilderImpl[PropertyDescriptorImpl]
 
 'it' @ [92:92] ==> value-parameter it: KotlinMemberInfo defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard.BuilderImpl.updateHashCodeMemberInfos.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -222,14 +222,14 @@ Inferred types:
 
 'it' @ [123:56] ==> value-parameter it: AbstractMemberSelectionPanel<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard.doOKAction.<anonymous>[ValueParameterDescriptorImpl]
 
-'table' @ [123:59] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionPanel<KtNamedDeclaration, (KotlinMemberInfo..KotlinMemberInfo?)>.table: (AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>..AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
+'table' @ [123:59] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionPanel<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>.table: (AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>..AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
     <M : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)> -> (org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo..org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo?)
 
-'selectedMemberInfos' @ [123:65] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionTable<KtNamedDeclaration, (KotlinMemberInfo..KotlinMemberInfo?)>.selectedMemberInfos: (MutableCollection<(KotlinMemberInfo..KotlinMemberInfo?)>..Collection<(KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
+'selectedMemberInfos' @ [123:65] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>.selectedMemberInfos: (MutableCollection<(KotlinMemberInfo..KotlinMemberInfo?)>..Collection<(KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
     <M : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)> -> (org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo..org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo?)
 
 'super' @ [124:9] ==> <this> defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard[LazyClassReceiverParameterDescriptor]
@@ -238,14 +238,14 @@ Inferred types:
 
 'myEqualsPanel' @ [127:36] ==> protected/*protected and package*/ final val myEqualsPanel: (AbstractMemberSelectionPanel<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>..AbstractMemberSelectionPanel<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>?) defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard[JavaPropertyDescriptor]
 
-'table' @ [127:51] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionPanel<KtNamedDeclaration, (KotlinMemberInfo..KotlinMemberInfo?)>.table: (AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>..AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
+'table' @ [127:51] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionPanel<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>.table: (AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>..AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
     <M : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)> -> (org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo..org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo?)
 
-'selectedMemberInfos' @ [127:58] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionTable<KtNamedDeclaration, (KotlinMemberInfo..KotlinMemberInfo?)>.selectedMemberInfos: (MutableCollection<(KotlinMemberInfo..KotlinMemberInfo?)>..Collection<(KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
+'selectedMemberInfos' @ [127:58] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>.selectedMemberInfos: (MutableCollection<(KotlinMemberInfo..KotlinMemberInfo?)>..Collection<(KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
     <M : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)> -> (org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo..org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo?)
 
 'map' @ [127:79] ==> public inline fun <T, R> Iterable<(KotlinMemberInfo..KotlinMemberInfo?)>.map(transform: ((KotlinMemberInfo..KotlinMemberInfo?)) -> (KtNamedDeclaration..KtNamedDeclaration?)): List<(KtNamedDeclaration..KtNamedDeclaration?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -263,14 +263,14 @@ Inferred types:
 
 'myHashCodePanel' @ [129:38] ==> protected/*protected and package*/ final val myHashCodePanel: (AbstractMemberSelectionPanel<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>..AbstractMemberSelectionPanel<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>?) defined in org.jetbrains.kotlin.idea.actions.generate.KotlinGenerateEqualsWizard[JavaPropertyDescriptor]
 
-'table' @ [129:55] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionPanel<KtNamedDeclaration, (KotlinMemberInfo..KotlinMemberInfo?)>.table: (AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>..AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
+'table' @ [129:55] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionPanel<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>.table: (AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>..AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
     <M : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)> -> (org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo..org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo?)
 
-'selectedMemberInfos' @ [129:62] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionTable<KtNamedDeclaration, (KotlinMemberInfo..KotlinMemberInfo?)>.selectedMemberInfos: (MutableCollection<(KotlinMemberInfo..KotlinMemberInfo?)>..Collection<(KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
+'selectedMemberInfos' @ [129:62] ==> public final val <T : (PsiElement..PsiElement?), M : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)> AbstractMemberSelectionTable<(KtNamedDeclaration..KtNamedDeclaration?), (KotlinMemberInfo..KotlinMemberInfo?)>.selectedMemberInfos: (MutableCollection<(KotlinMemberInfo..KotlinMemberInfo?)>..Collection<(KotlinMemberInfo..KotlinMemberInfo?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
     <M : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)> -> (org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo..org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo?)
 
 'map' @ [129:83] ==> public inline fun <T, R> Iterable<(KotlinMemberInfo..KotlinMemberInfo?)>.map(transform: ((KotlinMemberInfo..KotlinMemberInfo?)) -> (KtNamedDeclaration..KtNamedDeclaration?)): List<(KtNamedDeclaration..KtNamedDeclaration?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]

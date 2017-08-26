@@ -28,7 +28,7 @@ Inferred types:
 
 'getEmptyQuery' @ [60:49] ==> public open fun <T : (Any..Any?)> getEmptyQuery(): (Query<(PsiMethod..PsiMethod?)>..Query<(PsiMethod..PsiMethod?)>?) defined in com.intellij.util.EmptyQuery[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiMethod
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
 
 'psiMethods' @ [62:12] ==> val psiMethods: List<PsiMethod> defined in org.jetbrains.kotlin.idea.search.declarationsSearch.searchOverriders[LocalVariableDescriptor]
 
@@ -47,14 +47,14 @@ Inferred types:
 
 'psiMethod' @ [63:77] ==> value-parameter psiMethod: PsiMethod defined in org.jetbrains.kotlin.idea.search.declarationsSearch.searchOverriders.<anonymous>[ValueParameterDescriptorImpl]
 
-'reduce' @ [64:14] ==> public inline fun <S, T : Query<PsiMethod>> Iterable<Query<PsiMethod>>.reduce(operation: (Query<PsiMethod>, Query<PsiMethod>) -> Query<PsiMethod>): Query<PsiMethod> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [64:14] ==> public inline fun <S, T : Query<(PsiMethod..PsiMethod?)>> Iterable<Query<PsiMethod>>.reduce(operation: (acc: Query<(PsiMethod..PsiMethod?)>, Query<PsiMethod>) -> Query<(PsiMethod..PsiMethod?)>): Query<(PsiMethod..PsiMethod?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <S> -> Query<PsiMethod>
+    <S> -> Query<(com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)>
     <T : S> -> Query<PsiMethod>
 
 'MergeQuery' @ [64:41] ==> public constructor MergeQuery<T : (Any..Any?)>(@NotNull p0: Query<out (PsiMethod..PsiMethod?)>, @NotNull p1: Query<out (PsiMethod..PsiMethod?)>) defined in com.intellij.util.MergeQuery[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiMethod
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
 
 'query1' @ [64:52] ==> value-parameter query1: Query<PsiMethod> defined in org.jetbrains.kotlin.idea.search.declarationsSearch.searchOverriders.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -103,7 +103,7 @@ Inferred types:
 
 'emptyList' @ [78:50] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(PsiMethod..PsiMethod?)>..List<(PsiMethod..PsiMethod?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiMethod
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
 
 'LinkedHashMap' @ [80:29] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
 Inferred types:
@@ -263,7 +263,7 @@ Inferred types:
 
 'restrictToKotlinSources' @ [129:43] ==> public fun SearchScope.restrictToKotlinSources(): SearchScope defined in org.jetbrains.kotlin.idea.search in file searchUtil.kt[SimpleFunctionDescriptorImpl]
 
-'searchInheritors' @ [129:76] ==> public fun HierarchySearchRequest<*>.searchInheritors(): Query<PsiClass> defined in org.jetbrains.kotlin.idea.search.declarationsSearch[SimpleFunctionDescriptorImpl]
+'searchInheritors' @ [129:76] ==> public fun HierarchySearchRequest<*>.searchInheritors(): Query<PsiClass> defined in org.jetbrains.kotlin.idea.search.declarationsSearch in file classInheritorsSearch.kt[SimpleFunctionDescriptorImpl]
 
 'forEach' @ [129:95] ==> @HidesMembers public inline fun <T> Iterable<(PsiClass..PsiClass?)>.forEach(action: ((PsiClass..PsiClass?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -367,7 +367,7 @@ Inferred types:
 
 'containingClassOrObject' @ [150:44] ==> public val KtDeclaration.containingClassOrObject: KtClassOrObject? defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
 
-'forEachKotlinOverride' @ [151:5] ==> private fun forEachKotlinOverride(ktClass: KtClass, members: List<KtNamedDeclaration>, scope: SearchScope, processor: (superMember: PsiElement, overridingMember: PsiElement) -> Boolean): Unit defined in org.jetbrains.kotlin.idea.search.declarationsSearch[SimpleFunctionDescriptorImpl]
+'forEachKotlinOverride' @ [151:5] ==> private fun forEachKotlinOverride(ktClass: KtClass, members: List<KtNamedDeclaration>, scope: SearchScope, processor: (superMember: PsiElement, overridingMember: PsiElement) -> Boolean): Unit defined in org.jetbrains.kotlin.idea.search.declarationsSearch in file overridersSearch.kt[SimpleFunctionDescriptorImpl]
 
 'ktClass' @ [151:27] ==> val ktClass: KtClass defined in org.jetbrains.kotlin.idea.search.declarationsSearch.forEachOverridingMethod[LocalVariableDescriptor]
 
@@ -453,7 +453,7 @@ Inferred types:
 
 'hasValOrVar' @ [164:68] ==> public open fun hasValOrVar(): Boolean defined in org.jetbrains.kotlin.psi.KtParameter[JavaMethodDescriptor]
 
-'forEachKotlinOverride' @ [165:5] ==> private fun forEachKotlinOverride(ktClass: KtClass, members: List<KtNamedDeclaration>, scope: SearchScope, processor: (superMember: PsiElement, overridingMember: PsiElement) -> Boolean): Unit defined in org.jetbrains.kotlin.idea.search.declarationsSearch[SimpleFunctionDescriptorImpl]
+'forEachKotlinOverride' @ [165:5] ==> private fun forEachKotlinOverride(ktClass: KtClass, members: List<KtNamedDeclaration>, scope: SearchScope, processor: (superMember: PsiElement, overridingMember: PsiElement) -> Boolean): Unit defined in org.jetbrains.kotlin.idea.search.declarationsSearch in file overridersSearch.kt[SimpleFunctionDescriptorImpl]
 
 'ktClass' @ [165:27] ==> val ktClass: KtClass defined in org.jetbrains.kotlin.idea.search.declarationsSearch.forEachDeclaredMemberOverride[LocalVariableDescriptor]
 

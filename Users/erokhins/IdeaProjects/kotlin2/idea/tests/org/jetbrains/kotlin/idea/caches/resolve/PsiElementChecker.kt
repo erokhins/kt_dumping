@@ -187,13 +187,13 @@ Inferred types:
 
 'java' @ [91:63] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'this' @ [91:71] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.PsiElementChecker.checkPsiElement.<anonymous>[ReceiverParameterDescriptorImpl]
 
 'java' @ [91:83] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'assertTrue' @ [106:24] ==> public open fun assertTrue(p0: Boolean): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
@@ -207,7 +207,7 @@ Inferred types:
 
 'putCopyableUserData' @ [110:17] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(Int..Int?)>..Key<(Int..Int?)>?), @Nullable p1: Int?): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'TEST_DATA_KEY' @ [110:37] ==> public final val TEST_DATA_KEY: Key<(Int..Int?)> defined in org.jetbrains.kotlin.idea.caches.resolve.PsiElementChecker[PropertyDescriptorImpl]
 
@@ -215,7 +215,7 @@ Inferred types:
 
 'getCopyableUserData' @ [112:35] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(Int..Int?)>..Key<(Int..Int?)>?)): Int? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'TEST_DATA_KEY' @ [112:55] ==> public final val TEST_DATA_KEY: Key<(Int..Int?)> defined in org.jetbrains.kotlin.idea.caches.resolve.PsiElementChecker[PropertyDescriptorImpl]
 
@@ -243,7 +243,7 @@ Inferred types:
 
 'java' @ [126:73] ==> public val <T> KClass<out PsiElement>.java: Class<out PsiElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiElement
+    <T> -> Captured(out PsiElement)
 
 'this' @ [126:81] ==> <this> defined in org.jetbrains.kotlin.idea.caches.resolve.PsiElementChecker.checkPsiElement.<anonymous>[ReceiverParameterDescriptorImpl]
 

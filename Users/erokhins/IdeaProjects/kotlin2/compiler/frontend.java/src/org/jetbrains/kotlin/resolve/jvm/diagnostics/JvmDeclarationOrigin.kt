@@ -17,8 +17,6 @@ Inferred types:
 
 'descriptor' @ [59:32] ==> value-parameter descriptor: DeclarationDescriptor? = ... defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.OtherOrigin[ValueParameterDescriptorImpl]
 
-'JvmDeclarationOrigin' @ [60:13] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [60:34] ==> @JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[PropertyDescriptorImpl]
 
 'JvmDeclarationOrigin' @ [62:13] ==> public constructor JvmDeclarationOrigin(originKind: JvmDeclarationOriginKind, element: PsiElement?, descriptor: DeclarationDescriptor?) defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[ClassConstructorDescriptorImpl]
@@ -31,7 +29,7 @@ Inferred types:
 
 'JvmOverloads' @ [64:1] ==> public constructor JvmOverloads() defined in kotlin.jvm.JvmOverloads[DeserializedClassConstructorDescriptor]
 
-'OtherOrigin' @ [66:9] ==> @JvmOverloads public fun OtherOrigin(element: PsiElement?, descriptor: DeclarationDescriptor? = ...): JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics[SimpleFunctionDescriptorImpl]
+'OtherOrigin' @ [66:9] ==> @JvmOverloads public fun OtherOrigin(element: PsiElement?, descriptor: DeclarationDescriptor? = ...): JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics in file JvmDeclarationOrigin.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [66:21] ==> value-parameter element: KtPureElement? defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.OtherOriginFromPure[ValueParameterDescriptorImpl]
 

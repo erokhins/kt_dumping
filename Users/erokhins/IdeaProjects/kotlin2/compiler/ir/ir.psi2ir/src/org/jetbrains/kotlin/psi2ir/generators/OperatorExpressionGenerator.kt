@@ -27,9 +27,9 @@ Inferred types:
 
 'ktOperator' @ [46:72] ==> val ktOperator: IElementType defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generatePrefixExpression[LocalVariableDescriptor]
 
-'in' @ [47:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin?>.contains(element: IrStatementOrigin?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [47:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin>.contains(element: IrStatementOrigin): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> IrStatementOrigin?
+    <@OnlyInputTypes T> -> IrStatementOrigin
 
 'INCREMENT_DECREMENT_OPERATORS' @ [47:16] ==> public val INCREMENT_DECREMENT_OPERATORS: Set<IrStatementOriginImpl> defined in org.jetbrains.kotlin.psi2ir.generators in file OperatorConventions.kt[PropertyDescriptorImpl]
 
@@ -43,9 +43,9 @@ Inferred types:
 
 'irOperator' @ [47:134] ==> val irOperator: IrStatementOrigin? defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generatePrefixExpression[LocalVariableDescriptor]
 
-'in' @ [48:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin?>.contains(element: IrStatementOrigin?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [48:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin>.contains(element: IrStatementOrigin): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> IrStatementOrigin?
+    <@OnlyInputTypes T> -> IrStatementOrigin
 
 'OPERATORS_DESUGARED_TO_CALLS' @ [48:16] ==> public val OPERATORS_DESUGARED_TO_CALLS: Set<IrStatementOriginImpl> defined in org.jetbrains.kotlin.psi2ir.generators in file OperatorConventions.kt[PropertyDescriptorImpl]
 
@@ -88,9 +88,9 @@ Inferred types:
 
 'ktOperator' @ [58:73] ==> val ktOperator: IElementType defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generatePostfixExpression[LocalVariableDescriptor]
 
-'in' @ [59:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin?>.contains(element: IrStatementOrigin?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [59:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin>.contains(element: IrStatementOrigin): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> IrStatementOrigin?
+    <@OnlyInputTypes T> -> IrStatementOrigin
 
 'INCREMENT_DECREMENT_OPERATORS' @ [59:16] ==> public val INCREMENT_DECREMENT_OPERATORS: Set<IrStatementOriginImpl> defined in org.jetbrains.kotlin.psi2ir.generators in file OperatorConventions.kt[PropertyDescriptorImpl]
 
@@ -291,9 +291,9 @@ Inferred types:
 
 'expression' @ [102:96] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryExpression[ValueParameterDescriptorImpl]
 
-'in' @ [103:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin?>.contains(element: IrStatementOrigin?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [103:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin>.contains(element: IrStatementOrigin): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> IrStatementOrigin?
+    <@OnlyInputTypes T> -> IrStatementOrigin
 
 'AUGMENTED_ASSIGNMENTS' @ [103:16] ==> public val AUGMENTED_ASSIGNMENTS: Set<IrStatementOriginImpl> defined in org.jetbrains.kotlin.psi2ir.generators in file OperatorConventions.kt[PropertyDescriptorImpl]
 
@@ -313,9 +313,9 @@ Inferred types:
 
 'expression' @ [104:54] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryExpression[ValueParameterDescriptorImpl]
 
-'in' @ [105:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin?>.contains(element: IrStatementOrigin?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [105:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin>.contains(element: IrStatementOrigin): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> IrStatementOrigin?
+    <@OnlyInputTypes T> -> IrStatementOrigin
 
 'OPERATORS_DESUGARED_TO_CALLS' @ [105:16] ==> public val OPERATORS_DESUGARED_TO_CALLS: Set<IrStatementOriginImpl> defined in org.jetbrains.kotlin.psi2ir.generators in file OperatorConventions.kt[PropertyDescriptorImpl]
 
@@ -325,9 +325,9 @@ Inferred types:
 
 'irOperator' @ [105:89] ==> val irOperator: IrStatementOrigin? defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryExpression[LocalVariableDescriptor]
 
-'in' @ [106:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin?>.contains(element: IrStatementOrigin?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [106:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin>.contains(element: IrStatementOrigin): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> IrStatementOrigin?
+    <@OnlyInputTypes T> -> IrStatementOrigin
 
 'COMPARISON_OPERATORS' @ [106:16] ==> public val COMPARISON_OPERATORS: Set<IrStatementOriginImpl> defined in org.jetbrains.kotlin.psi2ir.generators in file OperatorConventions.kt[PropertyDescriptorImpl]
 
@@ -337,9 +337,9 @@ Inferred types:
 
 'irOperator' @ [106:79] ==> val irOperator: IrStatementOrigin? defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryExpression[LocalVariableDescriptor]
 
-'in' @ [107:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin?>.contains(element: IrStatementOrigin?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [107:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin>.contains(element: IrStatementOrigin): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> IrStatementOrigin?
+    <@OnlyInputTypes T> -> IrStatementOrigin
 
 'EQUALITY_OPERATORS' @ [107:16] ==> public val EQUALITY_OPERATORS: Set<IrStatementOriginImpl> defined in org.jetbrains.kotlin.psi2ir.generators in file OperatorConventions.kt[PropertyDescriptorImpl]
 
@@ -349,9 +349,9 @@ Inferred types:
 
 'irOperator' @ [107:75] ==> val irOperator: IrStatementOrigin? defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryExpression[LocalVariableDescriptor]
 
-'in' @ [108:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin?>.contains(element: IrStatementOrigin?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [108:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin>.contains(element: IrStatementOrigin): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> IrStatementOrigin?
+    <@OnlyInputTypes T> -> IrStatementOrigin
 
 'IDENTITY_OPERATORS' @ [108:16] ==> public val IDENTITY_OPERATORS: Set<IrStatementOriginImpl> defined in org.jetbrains.kotlin.psi2ir.generators in file OperatorConventions.kt[PropertyDescriptorImpl]
 
@@ -361,9 +361,9 @@ Inferred types:
 
 'irOperator' @ [108:75] ==> val irOperator: IrStatementOrigin? defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryExpression[LocalVariableDescriptor]
 
-'in' @ [109:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin?>.contains(element: IrStatementOrigin?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [109:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin>.contains(element: IrStatementOrigin): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> IrStatementOrigin?
+    <@OnlyInputTypes T> -> IrStatementOrigin
 
 'IN_OPERATORS' @ [109:16] ==> public val IN_OPERATORS: Set<IrStatementOriginImpl> defined in org.jetbrains.kotlin.psi2ir.generators in file OperatorConventions.kt[PropertyDescriptorImpl]
 
@@ -373,9 +373,9 @@ Inferred types:
 
 'irOperator' @ [109:63] ==> val irOperator: IrStatementOrigin? defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryExpression[LocalVariableDescriptor]
 
-'in' @ [110:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin?>.contains(element: IrStatementOrigin?): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [110:13] ==> public operator fun <@OnlyInputTypes T> Iterable<IrStatementOrigin>.contains(element: IrStatementOrigin): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> IrStatementOrigin?
+    <@OnlyInputTypes T> -> IrStatementOrigin
 
 'BINARY_BOOLEAN_OPERATORS' @ [110:16] ==> public val BINARY_BOOLEAN_OPERATORS: Set<IrStatementOriginImpl> defined in org.jetbrains.kotlin.psi2ir.generators in file OperatorConventions.kt[PropertyDescriptorImpl]
 
@@ -393,7 +393,7 @@ Inferred types:
 
 'toString' @ [111:66] ==> public open fun toString(): String defined in com.intellij.psi.tree.IElementType[JavaMethodDescriptor]
 
-'getResolvedCall' @ [116:35] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [116:35] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [116:51] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateElvis[ValueParameterDescriptorImpl]
 
@@ -401,7 +401,7 @@ Inferred types:
 
 'resultingDescriptor' @ [117:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'returnType' @ [117:66] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -421,7 +421,7 @@ Inferred types:
 
 'right' @ [119:76] ==> public final val KtBinaryExpression.right: KtExpression?[MyPropertyDescriptor]
 
-'irBlock' @ [121:16] ==> public inline fun GeneratorWithScope.irBlock(ktElement: KtElement?, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'irBlock' @ [121:16] ==> public inline fun GeneratorWithScope.irBlock(ktElement: KtElement?, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [121:24] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateElvis[ValueParameterDescriptorImpl]
 
@@ -524,7 +524,7 @@ Inferred types:
 
 'irOperator' @ [136:75] ==> value-parameter irOperator: IrStatementOrigin defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryBooleanOperator[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [141:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [141:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [141:44] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateInOperator[ValueParameterDescriptorImpl]
 
@@ -532,7 +532,7 @@ Inferred types:
 
 'statementGenerator' @ [143:44] ==> public final val statementGenerator: StatementGenerator defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator[PropertyDescriptorImpl]
 
-'generateCall' @ [143:64] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [143:64] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [143:77] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateInOperator[ValueParameterDescriptorImpl]
 
@@ -755,7 +755,7 @@ Inferred types:
 
 'irOperator' @ [197:69] ==> value-parameter irOperator: IrStatementOrigin defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateEqualityOperator[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [203:29] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [203:29] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [203:45] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateComparisonOperator[ValueParameterDescriptorImpl]
 
@@ -763,7 +763,7 @@ Inferred types:
 
 'statementGenerator' @ [205:45] ==> public final val statementGenerator: StatementGenerator defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator[PropertyDescriptorImpl]
 
-'generateCall' @ [205:65] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [205:65] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [205:78] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateComparisonOperator[ValueParameterDescriptorImpl]
 
@@ -859,7 +859,7 @@ Inferred types:
 
 'makeNotNullable' @ [223:42] ==> public fun KotlinType.makeNotNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil[DeserializedSimpleFunctionDescriptor]
 
-'irBlock' @ [225:16] ==> public inline fun GeneratorWithScope.irBlock(ktElement: KtElement?, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'irBlock' @ [225:16] ==> public inline fun GeneratorWithScope.irBlock(ktElement: KtElement?, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'ktOperator' @ [225:24] ==> val ktOperator: KtSimpleNameExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateExclExclOperator[LocalVariableDescriptor]
 
@@ -895,7 +895,7 @@ Inferred types:
 
 'symbol' @ [227:96] ==> public abstract val symbol: IrVariableSymbol defined in org.jetbrains.kotlin.ir.declarations.IrVariable[DeserializedPropertyDescriptor]
 
-'getResolvedCall' @ [232:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [232:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [232:44] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryOperatorAsCall[ValueParameterDescriptorImpl]
 
@@ -903,7 +903,7 @@ Inferred types:
 
 'statementGenerator' @ [233:30] ==> public final val statementGenerator: StatementGenerator defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator[PropertyDescriptorImpl]
 
-'generateCall' @ [233:50] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [233:50] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [233:63] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryOperatorAsCall[ValueParameterDescriptorImpl]
 
@@ -915,7 +915,7 @@ Inferred types:
 
 'origin' @ [233:125] ==> value-parameter origin: IrStatementOrigin? defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generateBinaryOperatorAsCall[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [237:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [237:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [237:44] ==> value-parameter expression: KtPrefixExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generatePrefixOperatorAsCall[ValueParameterDescriptorImpl]
 
@@ -933,16 +933,16 @@ Inferred types:
 
 'bindingContext' @ [240:73] ==> public final val bindingContext: BindingContext defined in org.jetbrains.kotlin.psi2ir.generators.GeneratorContext[PropertyDescriptorImpl]
 
-'let' @ [240:90] ==> @InlineOnly public inline fun <T, R> CompileTimeConstant<Any?>.let(block: (CompileTimeConstant<Any?>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [240:90] ==> @InlineOnly public inline fun <T, R> CompileTimeConstant<*>.let(block: (CompileTimeConstant<*>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompileTimeConstant<Any?>
+    <T> -> CompileTimeConstant<*>
     <R> -> Unit
 
 'resolvedCall' @ [241:36] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generatePrefixOperatorAsCall[LocalVariableDescriptor]
 
 'dispatchReceiver' @ [241:49] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'type' @ [241:67] ==> public final val ReceiverValue.type: KotlinType[MyPropertyDescriptor]
 
@@ -958,13 +958,13 @@ Inferred types:
 
 'expression' @ [243:74] ==> value-parameter expression: KtPrefixExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generatePrefixOperatorAsCall[ValueParameterDescriptorImpl]
 
-'constant' @ [243:86] ==> value-parameter constant: CompileTimeConstant<Any?> defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generatePrefixOperatorAsCall.<anonymous>[ValueParameterDescriptorImpl]
+'constant' @ [243:86] ==> value-parameter constant: CompileTimeConstant<*> defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generatePrefixOperatorAsCall.<anonymous>[ValueParameterDescriptorImpl]
 
 'CallGenerator' @ [248:16] ==> public constructor CallGenerator(statementGenerator: StatementGenerator) defined in org.jetbrains.kotlin.psi2ir.generators.CallGenerator[ClassConstructorDescriptorImpl]
 
 'statementGenerator' @ [248:30] ==> public final val statementGenerator: StatementGenerator defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator[PropertyDescriptorImpl]
 
-'generateCall' @ [248:50] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [248:50] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [248:63] ==> value-parameter expression: KtPrefixExpression defined in org.jetbrains.kotlin.psi2ir.generators.OperatorExpressionGenerator.generatePrefixOperatorAsCall[ValueParameterDescriptorImpl]
 

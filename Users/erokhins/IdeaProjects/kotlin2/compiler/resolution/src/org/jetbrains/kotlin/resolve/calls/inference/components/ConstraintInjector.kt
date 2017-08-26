@@ -189,7 +189,7 @@ Inferred types:
 
 'initialType' @ [85:95] ==> value-parameter initialType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintInjector.updateAllowedTypeDepth[ValueParameterDescriptorImpl]
 
-'typeDepth' @ [85:107] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'typeDepth' @ [85:107] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types in file TypeApproximator.kt[SimpleFunctionDescriptorImpl]
 
 'assert' @ [89:9] ==> @InlineOnly public inline fun assert(value: Boolean): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -253,7 +253,7 @@ Inferred types:
 
 'type' @ [108:62] ==> value-parameter type: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintInjector.isAllowedType[ValueParameterDescriptorImpl]
 
-'typeDepth' @ [108:67] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'typeDepth' @ [108:67] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types in file TypeApproximator.kt[SimpleFunctionDescriptorImpl]
 
 'maxTypeDepthFromInitialConstraints' @ [108:82] ==> public abstract var maxTypeDepthFromInitialConstraints: Int defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintInjector.Context[PropertyDescriptorImpl]
 
@@ -366,6 +366,8 @@ Inferred types:
 'contains' @ [148:22] ==> public fun KotlinType.contains(predicate: (UnwrappedType) -> Boolean): Boolean defined in org.jetbrains.kotlin.types.typeUtil[DeserializedSimpleFunctionDescriptor]
 
 'this' @ [148:31] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintInjector.TypeCheckerContext[LazyClassReceiverParameterDescriptor]
+
+'isCapturedTypeFromSubtyping' @ [148:37] ==> private final fun isCapturedTypeFromSubtyping(type: UnwrappedType): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintInjector.TypeCheckerContext[SimpleFunctionDescriptorImpl]
 
 'kind' @ [150:21] ==> value-parameter kind: ConstraintKind defined in org.jetbrains.kotlin.resolve.calls.inference.components.ConstraintInjector.TypeCheckerContext.addConstraint[ValueParameterDescriptorImpl]
 

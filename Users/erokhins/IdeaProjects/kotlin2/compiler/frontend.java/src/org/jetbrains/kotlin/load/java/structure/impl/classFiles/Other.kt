@@ -1,6 +1,6 @@
 'newSmartList' @ [34:81] ==> @NotNull @Contract public open fun <T : (Any..Any?)> newSmartList(): (MutableList<(JavaAnnotation..JavaAnnotation?)>..List<(JavaAnnotation..JavaAnnotation?)>) defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaAnnotation
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.structure.JavaAnnotation..org.jetbrains.kotlin.load.java.structure.JavaAnnotation?)
 
 'buildLazyValueForMap' @ [35:41] ==> public fun JavaAnnotationOwner.buildLazyValueForMap(): Lazy<Map<FqName?, JavaAnnotation>> defined in org.jetbrains.kotlin.load.java.structure[DeserializedSimpleFunctionDescriptor]
 
@@ -12,7 +12,7 @@ Inferred types:
 
 'newSmartList' @ [57:81] ==> @NotNull @Contract public open fun <T : (Any..Any?)> newSmartList(): (MutableList<(JavaAnnotation..JavaAnnotation?)>..List<(JavaAnnotation..JavaAnnotation?)>) defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaAnnotation
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.java.structure.JavaAnnotation..org.jetbrains.kotlin.load.java.structure.JavaAnnotation?)
 
 'buildLazyValueForMap' @ [58:41] ==> public fun JavaAnnotationOwner.buildLazyValueForMap(): Lazy<Map<FqName?, JavaAnnotation>> defined in org.jetbrains.kotlin.load.java.structure[DeserializedSimpleFunctionDescriptor]
 

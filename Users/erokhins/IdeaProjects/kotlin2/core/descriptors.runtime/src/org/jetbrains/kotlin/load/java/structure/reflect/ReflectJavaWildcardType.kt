@@ -32,8 +32,6 @@ Inferred types:
 
 'size' @ [31:29] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
-'ReflectJavaType' @ [31:42] ==> public companion object Factory defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType[FakeCallableDescriptorForObject]
-
 'create' @ [31:58] ==> public final fun create(type: Type): ReflectJavaType defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType.Factory[SimpleFunctionDescriptorImpl]
 
 'lowerBounds' @ [31:65] ==> val lowerBounds: (Array<(Type..Type?)>..Array<out (Type..Type?)>?) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaWildcardType.<get-bound>[LocalVariableDescriptor]
@@ -68,8 +66,6 @@ Inferred types:
 'java' @ [32:96] ==> public val <T> KClass<Any>.java: Class<Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> Any
-
-'ReflectJavaType' @ [32:102] ==> public companion object Factory defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType[FakeCallableDescriptorForObject]
 
 'create' @ [32:118] ==> public final fun create(type: Type): ReflectJavaType defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType.Factory[SimpleFunctionDescriptorImpl]
 

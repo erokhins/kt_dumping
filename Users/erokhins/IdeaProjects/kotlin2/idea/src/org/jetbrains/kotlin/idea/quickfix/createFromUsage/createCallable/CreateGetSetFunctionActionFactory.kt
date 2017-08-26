@@ -38,7 +38,7 @@ Inferred types:
 
 'diagnostic' @ [30:74] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateGetSetFunctionActionFactory.getElementOfInterest[ValueParameterDescriptorImpl]
 
-'psiElement' @ [30:86] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtArrayAccessExpression..KtArrayAccessExpression?)>.psiElement: (KtArrayAccessExpression..KtArrayAccessExpression?)[MyPropertyDescriptor]
+'psiElement' @ [30:86] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtArrayAccessExpression..KtArrayAccessExpression?)>.psiElement: KtArrayAccessExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtArrayAccessExpression..org.jetbrains.kotlin.psi.KtArrayAccessExpression?)
 
@@ -58,13 +58,13 @@ Inferred types:
 
 'diagnostic' @ [31:75] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateGetSetFunctionActionFactory.getElementOfInterest[ValueParameterDescriptorImpl]
 
-'psiElement' @ [31:87] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtArrayAccessExpression..KtArrayAccessExpression?)>.psiElement: (KtArrayAccessExpression..KtArrayAccessExpression?)[MyPropertyDescriptor]
+'psiElement' @ [31:87] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtArrayAccessExpression..KtArrayAccessExpression?)>.psiElement: KtArrayAccessExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtArrayAccessExpression..org.jetbrains.kotlin.psi.KtArrayAccessExpression?)
 
-'in' @ [32:13] ==> public operator fun <@OnlyInputTypes T> Iterable<(DiagnosticFactory<out Diagnostic>..DiagnosticFactory<out Diagnostic>?)>.contains(element: (DiagnosticFactory<out Diagnostic>..DiagnosticFactory<out Diagnostic>?)): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'in' @ [32:13] ==> public operator fun <@OnlyInputTypes T> Iterable<(DiagnosticFactory<*>..DiagnosticFactory<*>?)>.contains(element: (DiagnosticFactory<*>..DiagnosticFactory<*>?)): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <@OnlyInputTypes T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory<out org.jetbrains.kotlin.diagnostics.Diagnostic>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory<out org.jetbrains.kotlin.diagnostics.Diagnostic>?)
+    <@OnlyInputTypes T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory<*>?)
 
 'TYPE_MISMATCH_ERRORS' @ [32:23] ==> public final val TYPE_MISMATCH_ERRORS: (ImmutableSet<out (DiagnosticFactory<*>..DiagnosticFactory<*>?)>..ImmutableSet<out (DiagnosticFactory<*>..DiagnosticFactory<*>?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
@@ -116,5 +116,5 @@ Inferred types:
 
 'name' @ [42:97] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 

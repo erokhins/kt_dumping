@@ -47,7 +47,7 @@ Inferred types:
 
 'LineMarkerInfo' @ [63:16] ==> public constructor LineMarkerInfo<T : (PsiElement..PsiElement?)>(@NotNull p0: PsiElement, @NotNull p1: TextRange, p2: (Icon..Icon?), p3: Int, @Nullable p4: Function<in (PsiElement..PsiElement?), (String..String?)>?, @Nullable p5: GutterIconNavigationHandler<(PsiElement..PsiElement?)>?, @NotNull p6: GutterIconRenderer.Alignment) defined in com.intellij.codeInsight.daemon.LineMarkerInfo[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiElement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'nameIdentifier' @ [64:21] ==> val nameIdentifier: PsiElement defined in org.jetbrains.kotlin.android.KotlinAndroidLineMarkerProvider.getLineMarkerInfo[LocalVariableDescriptor]
 
@@ -59,14 +59,14 @@ Inferred types:
 
 'LINE_MARKERS' @ [67:26] ==> public const final val LINE_MARKERS: Int defined in com.intellij.codeHighlighting.Pass[JavaPropertyDescriptor]
 
-'Function' @ [68:21] ==> public fun <Param : (Any..Any?), Result : (Any..Any?)> Function(function: ((PsiElement..PsiElement?)) -> (String..String?)): Function<PsiElement, (String..String?)> defined in com.intellij.util[SimpleFunctionDescriptorImpl]
+'Function' @ [68:21] ==> public fun <Param : (Any..Any?), Result : (Any..Any?)> Function(function: ((PsiElement..PsiElement?)) -> (String..String?)): Function<(PsiElement..PsiElement?), (String..String?)> defined in com.intellij.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <Param : (Any..Any?)> -> PsiElement
+    <Param : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <Result : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'GutterIconNavigationHandler' @ [69:21] ==> public fun <T : (PsiElement..PsiElement?)> GutterIconNavigationHandler(function: ((MouseEvent..MouseEvent?), (PsiElement..PsiElement?)) -> Unit): GutterIconNavigationHandler<PsiElement> defined in com.intellij.codeInsight.daemon[SimpleFunctionDescriptorImpl]
+'GutterIconNavigationHandler' @ [69:21] ==> public fun <T : (PsiElement..PsiElement?)> GutterIconNavigationHandler(function: ((MouseEvent..MouseEvent?), (PsiElement..PsiElement?)) -> Unit): GutterIconNavigationHandler<(PsiElement..PsiElement?)> defined in com.intellij.codeInsight.daemon[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiElement
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'getRelatedItemsPopup' @ [71:34] ==> @NotNull public open fun getRelatedItemsPopup(p0: (MutableList<out (GotoRelatedItem..GotoRelatedItem?)>..List<(GotoRelatedItem..GotoRelatedItem?)>?), p1: (String..String?)): JBPopup defined in com.intellij.codeInsight.navigation.NavigationUtil[JavaMethodDescriptor]
 
@@ -160,7 +160,7 @@ Inferred types:
 
 'it' @ [107:54] ==> value-parameter it: PsiFile defined in org.jetbrains.kotlin.android.KotlinAndroidLineMarkerProvider.collectGoToRelatedLayoutItems.<anonymous>[ValueParameterDescriptorImpl]
 
-'findComponentDeclarationInManifest' @ [111:13] ==> internal fun KtClass.findComponentDeclarationInManifest(manifest: Manifest): AndroidAttributeValue<PsiClass>? defined in org.jetbrains.kotlin.android[SimpleFunctionDescriptorImpl]
+'findComponentDeclarationInManifest' @ [111:13] ==> internal fun KtClass.findComponentDeclarationInManifest(manifest: Manifest): AndroidAttributeValue<PsiClass>? defined in org.jetbrains.kotlin.android in file AndroidUtil.kt[SimpleFunctionDescriptorImpl]
 
 'manifest' @ [111:48] ==> value-parameter manifest: Manifest defined in org.jetbrains.kotlin.android.KotlinAndroidLineMarkerProvider.collectGoToRelatedManifestItems[ValueParameterDescriptorImpl]
 

@@ -308,8 +308,6 @@ Inferred types:
 
 'nullable' @ [102:82] ==> public final val ProtoBuf.Type.nullable: Boolean[MyPropertyDescriptor]
 
-'KotlinTypeFactory' @ [105:13] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
-
 'simpleType' @ [105:31] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
 'annotations' @ [105:42] ==> val annotations: DeserializedAnnotationsWithPossibleTargets defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.simpleType[LocalVariableDescriptor]
@@ -382,6 +380,8 @@ Inferred types:
     <T : Any> -> ClassId
 
 'classId' @ [116:54] ==> val classId: ClassId defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.typeConstructor.notFoundClass[LocalVariableDescriptor]
+
+'getOuterClassId' @ [116:72] ==> @Nullable public open fun getOuterClassId(): ClassId? defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
 
 'count' @ [116:89] ==> public fun <T> Sequence<ClassId>.count(): Int defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -579,6 +579,8 @@ Inferred types:
     <T> -> SimpleType
     <R> -> SimpleType?
 
+'transformRuntimeFunctionTypeToSuspendFunction' @ [148:66] ==> public fun transformRuntimeFunctionTypeToSuspendFunction(funType: KotlinType): SimpleType? defined in org.jetbrains.kotlin.builtins[DeserializedSimpleFunctionDescriptor]
+
 'arguments' @ [152:29] ==> value-parameter arguments: List<TypeProjection> defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.createSuspendFunctionType[ValueParameterDescriptorImpl]
 
 'size' @ [152:39] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
@@ -593,8 +595,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> SimpleType?
 
 'arity' @ [153:21] ==> val arity: Int defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.createSuspendFunctionType[LocalVariableDescriptor]
-
-'KotlinTypeFactory' @ [154:21] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
 
 'simpleType' @ [154:39] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 

@@ -14,7 +14,7 @@ Inferred types:
 
 'putCopyableUserData' @ [39:17] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<((KtElement) -> Unit..((KtElement) -> Unit)?)>..Key<((KtElement) -> Unit..((KtElement) -> Unit)?)>?), @Nullable p1: ((KtElement) -> Unit)?): Unit defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<KtElement, Unit>
+    <T : (Any..Any?)> -> ((org.jetbrains.kotlin.psi.KtElement) -> kotlin.Unit..((org.jetbrains.kotlin.psi.KtElement) -> kotlin.Unit)?)
 
 'POST_INSERTION_ACTION' @ [39:37] ==> private val POST_INSERTION_ACTION: Key<(KtElement) -> Unit> defined in org.jetbrains.kotlin.idea.codeInliner in file MutableCodeToInline.kt[PropertyDescriptorImpl]
 
@@ -32,7 +32,7 @@ Inferred types:
 
 'getCopyableUserData' @ [45:33] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<((KtElement) -> Unit..((KtElement) -> Unit)?)>..Key<((KtElement) -> Unit..((KtElement) -> Unit)?)>?)): ((KtElement) -> Unit)? defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<KtElement, Unit>
+    <T : (Any..Any?)> -> ((org.jetbrains.kotlin.psi.KtElement) -> kotlin.Unit..((org.jetbrains.kotlin.psi.KtElement) -> kotlin.Unit)?)
 
 'POST_INSERTION_ACTION' @ [45:53] ==> private val POST_INSERTION_ACTION: Key<(KtElement) -> Unit> defined in org.jetbrains.kotlin.idea.codeInliner in file MutableCodeToInline.kt[PropertyDescriptorImpl]
 
@@ -42,7 +42,7 @@ Inferred types:
 
 'putCopyableUserData' @ [47:24] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<((KtElement) -> Unit..((KtElement) -> Unit)?)>..Key<((KtElement) -> Unit..((KtElement) -> Unit)?)>?), @Nullable p1: ((KtElement) -> Unit)?): Unit defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<KtElement, Unit>
+    <T : (Any..Any?)> -> ((org.jetbrains.kotlin.psi.KtElement) -> kotlin.Unit..((org.jetbrains.kotlin.psi.KtElement) -> kotlin.Unit)?)
 
 'POST_INSERTION_ACTION' @ [47:44] ==> private val POST_INSERTION_ACTION: Key<(KtElement) -> Unit> defined in org.jetbrains.kotlin.idea.codeInliner in file MutableCodeToInline.kt[PropertyDescriptorImpl]
 

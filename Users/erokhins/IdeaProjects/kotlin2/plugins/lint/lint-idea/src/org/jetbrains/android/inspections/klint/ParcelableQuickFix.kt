@@ -14,7 +14,7 @@
 
 'getParentOfType' @ [37:69] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtClass..KtClass?)>, p2: Boolean): KtClass? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClass
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'this' @ [37:85] ==> <this> defined in org.jetbrains.android.inspections.klint.ParcelableQuickFix.getTargetClass[ReceiverParameterDescriptorImpl]
 

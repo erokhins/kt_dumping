@@ -6,7 +6,7 @@
 Inferred types:
     <reified @PureReifiable T> -> SuppressIntentionAction
 
-'createSuppressWarningActions' @ [31:16] ==> public fun createSuppressWarningActions(element: PsiElement, severity: Severity, suppressionKey: String): List<SuppressIntentionAction> defined in org.jetbrains.kotlin.idea.highlighter[SimpleFunctionDescriptorImpl]
+'createSuppressWarningActions' @ [31:16] ==> public fun createSuppressWarningActions(element: PsiElement, severity: Severity, suppressionKey: String): List<SuppressIntentionAction> defined in org.jetbrains.kotlin.idea.highlighter in file KotlinSuppressableWarningProblemGroup.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [31:45] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.idea.inspections.AbstractKotlinInspection.getSuppressActions[ValueParameterDescriptorImpl]
 

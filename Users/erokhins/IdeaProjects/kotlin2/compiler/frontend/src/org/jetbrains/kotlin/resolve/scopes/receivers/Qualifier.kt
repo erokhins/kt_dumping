@@ -144,11 +144,11 @@ Inferred types:
 
 'java' @ [114:35] ==> public val <T> KClass<out TypeAliasQualifier.EnumEntriesScope>.java: Class<out TypeAliasQualifier.EnumEntriesScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> EnumEntriesScope
+    <T> -> Captured(out EnumEntriesScope)
 
 'simpleName' @ [114:40] ==> public final val <T : (Any..Any?)> Class<out TypeAliasQualifier.EnumEntriesScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> EnumEntriesScope
+    <T : (Any..Any?)> -> Captured(out EnumEntriesScope)
 
 'p' @ [115:13] ==> value-parameter p: Printer defined in org.jetbrains.kotlin.resolve.scopes.receivers.TypeAliasQualifier.EnumEntriesScope.printScopeStructure[ValueParameterDescriptorImpl]
 

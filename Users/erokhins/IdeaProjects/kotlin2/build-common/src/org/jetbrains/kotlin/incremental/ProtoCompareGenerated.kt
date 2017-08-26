@@ -102,7 +102,7 @@ Inferred types:
 
 'hasExtension' @ [55:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [55:42] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -110,7 +110,7 @@ Inferred types:
 
 'hasExtension' @ [55:68] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [55:93] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -118,7 +118,7 @@ Inferred types:
 
 'hasExtension' @ [56:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [56:42] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -130,7 +130,7 @@ Inferred types:
 
 'getExtension' @ [57:40] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [57:65] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -138,7 +138,7 @@ Inferred types:
 
 'getExtension' @ [57:89] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [57:114] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -157,7 +157,7 @@ Inferred types:
 
 'getExtensionCount' @ [60:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [60:47] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -165,7 +165,7 @@ Inferred types:
 
 'getExtensionCount' @ [60:76] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [60:106] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -175,7 +175,7 @@ Inferred types:
 
 'getExtensionCount' @ [64:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [64:59] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -187,7 +187,7 @@ Inferred types:
 
 'getExtension' @ [65:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [65:63] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -197,7 +197,7 @@ Inferred types:
 
 'getExtension' @ [65:93] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [65:118] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -207,7 +207,7 @@ Inferred types:
 
 'hasExtension' @ [69:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [69:41] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -215,7 +215,7 @@ Inferred types:
 
 'hasExtension' @ [69:63] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [69:87] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -223,7 +223,7 @@ Inferred types:
 
 'hasExtension' @ [70:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [70:41] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -231,7 +231,7 @@ Inferred types:
 
 'getExtension' @ [71:21] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [71:45] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -239,13 +239,13 @@ Inferred types:
 
 'getExtension' @ [71:67] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [71:91] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
 'noneOf' @ [88:30] ==> public open fun <E : (Enum<(ProtoCompareGenerated.ProtoBufPackageKind..ProtoCompareGenerated.ProtoBufPackageKind?)>..Enum<(ProtoCompareGenerated.ProtoBufPackageKind..ProtoCompareGenerated.ProtoBufPackageKind?)>?)> noneOf(p0: (Class<(ProtoCompareGenerated.ProtoBufPackageKind..ProtoCompareGenerated.ProtoBufPackageKind?)>..Class<(ProtoCompareGenerated.ProtoBufPackageKind..ProtoCompareGenerated.ProtoBufPackageKind?)>?)): (EnumSet<(ProtoCompareGenerated.ProtoBufPackageKind..ProtoCompareGenerated.ProtoBufPackageKind?)>..EnumSet<(ProtoCompareGenerated.ProtoBufPackageKind..ProtoCompareGenerated.ProtoBufPackageKind?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> ProtoBufPackageKind
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufPackageKind..org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufPackageKind?)
 
 'ProtoBufPackageKind' @ [88:37] ==> private constructor ProtoBufPackageKind() defined in org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufPackageKind[ClassConstructorDescriptorImpl]
 
@@ -371,7 +371,7 @@ Inferred types:
 
 'hasExtension' @ [106:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [106:42] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -379,7 +379,7 @@ Inferred types:
 
 'hasExtension' @ [106:68] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [106:93] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -393,7 +393,7 @@ Inferred types:
 
 'hasExtension' @ [107:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [107:42] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -405,7 +405,7 @@ Inferred types:
 
 'getExtension' @ [108:40] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [108:65] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -413,7 +413,7 @@ Inferred types:
 
 'getExtension' @ [108:89] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [108:114] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -438,7 +438,7 @@ Inferred types:
 
 'getExtensionCount' @ [111:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [111:47] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -446,7 +446,7 @@ Inferred types:
 
 'getExtensionCount' @ [111:76] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [111:106] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -462,7 +462,7 @@ Inferred types:
 
 'getExtensionCount' @ [115:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [115:59] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -474,7 +474,7 @@ Inferred types:
 
 'getExtension' @ [116:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [116:63] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -484,7 +484,7 @@ Inferred types:
 
 'getExtension' @ [116:93] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [116:118] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -500,7 +500,7 @@ Inferred types:
 
 'hasExtension' @ [120:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [120:41] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -508,7 +508,7 @@ Inferred types:
 
 'hasExtension' @ [120:63] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [120:87] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -522,7 +522,7 @@ Inferred types:
 
 'hasExtension' @ [121:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [121:41] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -530,7 +530,7 @@ Inferred types:
 
 'getExtension' @ [122:21] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [122:45] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -538,7 +538,7 @@ Inferred types:
 
 'getExtension' @ [122:67] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [122:91] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -758,7 +758,7 @@ Inferred types:
 
 'hasExtension' @ [176:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [176:42] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -766,7 +766,7 @@ Inferred types:
 
 'hasExtension' @ [176:66] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [176:91] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -774,7 +774,7 @@ Inferred types:
 
 'hasExtension' @ [177:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [177:42] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -786,7 +786,7 @@ Inferred types:
 
 'getExtension' @ [178:40] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [178:65] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -794,7 +794,7 @@ Inferred types:
 
 'getExtension' @ [178:87] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [178:112] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -813,7 +813,7 @@ Inferred types:
 
 'getExtensionCount' @ [181:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [181:47] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -821,7 +821,7 @@ Inferred types:
 
 'getExtensionCount' @ [181:74] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [181:104] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -831,7 +831,7 @@ Inferred types:
 
 'getExtensionCount' @ [185:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [185:59] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -843,7 +843,7 @@ Inferred types:
 
 'getExtension' @ [186:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [186:63] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -853,7 +853,7 @@ Inferred types:
 
 'getExtension' @ [186:91] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [186:116] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -874,7 +874,7 @@ Inferred types:
 
 'getExtensionCount' @ [190:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [190:46] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -882,7 +882,7 @@ Inferred types:
 
 'getExtensionCount' @ [190:70] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [190:99] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -892,7 +892,7 @@ Inferred types:
 
 'getExtensionCount' @ [194:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [194:58] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -904,7 +904,7 @@ Inferred types:
 
 'getExtension' @ [195:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [195:62] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -914,7 +914,7 @@ Inferred types:
 
 'getExtension' @ [195:87] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [195:111] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -924,7 +924,7 @@ Inferred types:
 
 'hasExtension' @ [199:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [199:41] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -932,7 +932,7 @@ Inferred types:
 
 'hasExtension' @ [199:71] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [199:95] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -940,7 +940,7 @@ Inferred types:
 
 'hasExtension' @ [200:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [200:41] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -948,7 +948,7 @@ Inferred types:
 
 'getExtension' @ [201:21] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [201:45] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -956,13 +956,13 @@ Inferred types:
 
 'getExtension' @ [201:75] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [201:99] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
 'noneOf' @ [230:30] ==> public open fun <E : (Enum<(ProtoCompareGenerated.ProtoBufClassKind..ProtoCompareGenerated.ProtoBufClassKind?)>..Enum<(ProtoCompareGenerated.ProtoBufClassKind..ProtoCompareGenerated.ProtoBufClassKind?)>?)> noneOf(p0: (Class<(ProtoCompareGenerated.ProtoBufClassKind..ProtoCompareGenerated.ProtoBufClassKind?)>..Class<(ProtoCompareGenerated.ProtoBufClassKind..ProtoCompareGenerated.ProtoBufClassKind?)>?)): (EnumSet<(ProtoCompareGenerated.ProtoBufClassKind..ProtoCompareGenerated.ProtoBufClassKind?)>..EnumSet<(ProtoCompareGenerated.ProtoBufClassKind..ProtoCompareGenerated.ProtoBufClassKind?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> ProtoBufClassKind
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufClassKind..org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufClassKind?)
 
 'ProtoBufClassKind' @ [230:37] ==> private constructor ProtoBufClassKind() defined in org.jetbrains.kotlin.incremental.ProtoCompareGenerated.ProtoBufClassKind[ClassConstructorDescriptorImpl]
 
@@ -1304,7 +1304,7 @@ Inferred types:
 
 'hasExtension' @ [279:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [279:42] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1312,7 +1312,7 @@ Inferred types:
 
 'hasExtension' @ [279:66] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [279:91] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1326,7 +1326,7 @@ Inferred types:
 
 'hasExtension' @ [280:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [280:42] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1338,7 +1338,7 @@ Inferred types:
 
 'getExtension' @ [281:40] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [281:65] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1346,7 +1346,7 @@ Inferred types:
 
 'getExtension' @ [281:87] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [281:112] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1371,7 +1371,7 @@ Inferred types:
 
 'getExtensionCount' @ [284:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [284:47] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1379,7 +1379,7 @@ Inferred types:
 
 'getExtensionCount' @ [284:74] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [284:104] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1395,7 +1395,7 @@ Inferred types:
 
 'getExtensionCount' @ [288:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [288:59] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1407,7 +1407,7 @@ Inferred types:
 
 'getExtension' @ [289:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [289:63] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1417,7 +1417,7 @@ Inferred types:
 
 'getExtension' @ [289:91] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [289:116] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1444,7 +1444,7 @@ Inferred types:
 
 'getExtensionCount' @ [293:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [293:46] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1452,7 +1452,7 @@ Inferred types:
 
 'getExtensionCount' @ [293:70] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [293:99] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1468,7 +1468,7 @@ Inferred types:
 
 'getExtensionCount' @ [297:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [297:58] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1480,7 +1480,7 @@ Inferred types:
 
 'getExtension' @ [298:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [298:62] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1490,7 +1490,7 @@ Inferred types:
 
 'getExtension' @ [298:87] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [298:111] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1506,7 +1506,7 @@ Inferred types:
 
 'hasExtension' @ [302:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [302:41] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1514,7 +1514,7 @@ Inferred types:
 
 'hasExtension' @ [302:71] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [302:95] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1528,7 +1528,7 @@ Inferred types:
 
 'hasExtension' @ [303:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [303:41] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1536,7 +1536,7 @@ Inferred types:
 
 'getExtension' @ [304:21] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [304:45] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1544,7 +1544,7 @@ Inferred types:
 
 'getExtension' @ [304:75] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [304:99] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1760,7 +1760,7 @@ Inferred types:
 
 'hasExtension' @ [357:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'methodSignature' @ [357:42] ==> public final val methodSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1768,7 +1768,7 @@ Inferred types:
 
 'hasExtension' @ [357:66] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'methodSignature' @ [357:91] ==> public final val methodSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1776,7 +1776,7 @@ Inferred types:
 
 'hasExtension' @ [358:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'methodSignature' @ [358:42] ==> public final val methodSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1788,7 +1788,7 @@ Inferred types:
 
 'getExtension' @ [359:34] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'methodSignature' @ [359:59] ==> public final val methodSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1796,7 +1796,7 @@ Inferred types:
 
 'getExtension' @ [359:81] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'methodSignature' @ [359:106] ==> public final val methodSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -1815,7 +1815,7 @@ Inferred types:
 
 'getExtensionCount' @ [362:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'functionAnnotation' @ [362:46] ==> public final val functionAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1823,7 +1823,7 @@ Inferred types:
 
 'getExtensionCount' @ [362:73] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'functionAnnotation' @ [362:102] ==> public final val functionAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1833,7 +1833,7 @@ Inferred types:
 
 'getExtensionCount' @ [366:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'functionAnnotation' @ [366:58] ==> public final val functionAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1845,7 +1845,7 @@ Inferred types:
 
 'getExtension' @ [367:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'functionAnnotation' @ [367:62] ==> public final val functionAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1855,7 +1855,7 @@ Inferred types:
 
 'getExtension' @ [367:90] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'functionAnnotation' @ [367:114] ==> public final val functionAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1865,7 +1865,7 @@ Inferred types:
 
 'hasExtension' @ [371:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'functionContainingFileId' @ [371:41] ==> public final val functionContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1873,7 +1873,7 @@ Inferred types:
 
 'hasExtension' @ [371:74] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'functionContainingFileId' @ [371:98] ==> public final val functionContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1881,7 +1881,7 @@ Inferred types:
 
 'hasExtension' @ [372:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'functionContainingFileId' @ [372:41] ==> public final val functionContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1889,7 +1889,7 @@ Inferred types:
 
 'getExtension' @ [373:21] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'functionContainingFileId' @ [373:45] ==> public final val functionContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -1897,7 +1897,7 @@ Inferred types:
 
 'getExtension' @ [373:78] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'functionContainingFileId' @ [373:102] ==> public final val functionContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2137,7 +2137,7 @@ Inferred types:
 
 'hasExtension' @ [434:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [434:42] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -2145,7 +2145,7 @@ Inferred types:
 
 'hasExtension' @ [434:68] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [434:93] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -2153,7 +2153,7 @@ Inferred types:
 
 'hasExtension' @ [435:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [435:42] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -2165,7 +2165,7 @@ Inferred types:
 
 'getExtension' @ [436:34] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [436:59] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -2173,7 +2173,7 @@ Inferred types:
 
 'getExtension' @ [436:83] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [436:108] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -2192,7 +2192,7 @@ Inferred types:
 
 'getExtensionCount' @ [439:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'propertyAnnotation' @ [439:46] ==> public final val propertyAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2200,7 +2200,7 @@ Inferred types:
 
 'getExtensionCount' @ [439:73] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'propertyAnnotation' @ [439:102] ==> public final val propertyAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2210,7 +2210,7 @@ Inferred types:
 
 'getExtensionCount' @ [443:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'propertyAnnotation' @ [443:58] ==> public final val propertyAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2222,7 +2222,7 @@ Inferred types:
 
 'getExtension' @ [444:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'propertyAnnotation' @ [444:62] ==> public final val propertyAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2232,7 +2232,7 @@ Inferred types:
 
 'getExtension' @ [444:90] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'propertyAnnotation' @ [444:114] ==> public final val propertyAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2242,7 +2242,7 @@ Inferred types:
 
 'hasExtension' @ [448:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Value
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value?)
 
 'compileTimeValue' @ [448:41] ==> public final val compileTimeValue: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2250,7 +2250,7 @@ Inferred types:
 
 'hasExtension' @ [448:66] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Value
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value?)
 
 'compileTimeValue' @ [448:90] ==> public final val compileTimeValue: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2258,7 +2258,7 @@ Inferred types:
 
 'hasExtension' @ [449:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Value
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value?)
 
 'compileTimeValue' @ [449:41] ==> public final val compileTimeValue: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2270,7 +2270,7 @@ Inferred types:
 
 'getExtension' @ [450:34] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?)): (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Value
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value?)
 
 'compileTimeValue' @ [450:58] ==> public final val compileTimeValue: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2278,7 +2278,7 @@ Inferred types:
 
 'getExtension' @ [450:81] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?)): (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Value
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value?)
 
 'compileTimeValue' @ [450:105] ==> public final val compileTimeValue: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2286,7 +2286,7 @@ Inferred types:
 
 'hasExtension' @ [453:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'propertyContainingFileId' @ [453:41] ==> public final val propertyContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2294,7 +2294,7 @@ Inferred types:
 
 'hasExtension' @ [453:74] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'propertyContainingFileId' @ [453:98] ==> public final val propertyContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2302,7 +2302,7 @@ Inferred types:
 
 'hasExtension' @ [454:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'propertyContainingFileId' @ [454:41] ==> public final val propertyContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2310,7 +2310,7 @@ Inferred types:
 
 'getExtension' @ [455:21] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'propertyContainingFileId' @ [455:45] ==> public final val propertyContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2318,7 +2318,7 @@ Inferred types:
 
 'getExtension' @ [455:78] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'propertyContainingFileId' @ [455:102] ==> public final val propertyContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2605,7 +2605,7 @@ Inferred types:
 
 'getExtensionCount' @ [537:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [537:47] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -2613,7 +2613,7 @@ Inferred types:
 
 'getExtensionCount' @ [537:79] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [537:109] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -2623,7 +2623,7 @@ Inferred types:
 
 'getExtensionCount' @ [541:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [541:59] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -2635,7 +2635,7 @@ Inferred types:
 
 'getExtension' @ [542:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [542:63] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -2645,7 +2645,7 @@ Inferred types:
 
 'getExtension' @ [542:96] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [542:121] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -2666,7 +2666,7 @@ Inferred types:
 
 'getExtensionCount' @ [546:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [546:46] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2674,7 +2674,7 @@ Inferred types:
 
 'getExtensionCount' @ [546:78] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [546:107] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2684,7 +2684,7 @@ Inferred types:
 
 'getExtensionCount' @ [550:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [550:58] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2696,7 +2696,7 @@ Inferred types:
 
 'getExtension' @ [551:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [551:62] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -2706,7 +2706,7 @@ Inferred types:
 
 'getExtension' @ [551:95] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [551:119] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3023,7 +3023,7 @@ Inferred types:
 
 'getExtensionCount' @ [626:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [626:47] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3031,7 +3031,7 @@ Inferred types:
 
 'getExtensionCount' @ [626:70] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [626:100] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3041,7 +3041,7 @@ Inferred types:
 
 'getExtensionCount' @ [630:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [630:59] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3053,7 +3053,7 @@ Inferred types:
 
 'getExtension' @ [631:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [631:63] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3063,7 +3063,7 @@ Inferred types:
 
 'getExtension' @ [631:87] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [631:112] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3073,7 +3073,7 @@ Inferred types:
 
 'hasExtension' @ [635:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'isRaw' @ [635:42] ==> public final val isRaw: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3081,7 +3081,7 @@ Inferred types:
 
 'hasExtension' @ [635:56] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'isRaw' @ [635:81] ==> public final val isRaw: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3089,7 +3089,7 @@ Inferred types:
 
 'hasExtension' @ [636:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'isRaw' @ [636:42] ==> public final val isRaw: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3097,7 +3097,7 @@ Inferred types:
 
 'getExtension' @ [637:21] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'isRaw' @ [637:46] ==> public final val isRaw: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3105,7 +3105,7 @@ Inferred types:
 
 'getExtension' @ [637:60] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'isRaw' @ [637:85] ==> public final val isRaw: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3124,7 +3124,7 @@ Inferred types:
 
 'getExtensionCount' @ [640:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [640:46] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3132,7 +3132,7 @@ Inferred types:
 
 'getExtensionCount' @ [640:69] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [640:98] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3142,7 +3142,7 @@ Inferred types:
 
 'getExtensionCount' @ [644:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [644:58] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3154,7 +3154,7 @@ Inferred types:
 
 'getExtension' @ [645:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [645:62] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3164,7 +3164,7 @@ Inferred types:
 
 'getExtension' @ [645:86] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [645:110] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3222,7 +3222,7 @@ Inferred types:
 
 'hasExtension' @ [665:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'constructorSignature' @ [665:42] ==> public final val constructorSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3230,7 +3230,7 @@ Inferred types:
 
 'hasExtension' @ [665:71] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'constructorSignature' @ [665:96] ==> public final val constructorSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3238,7 +3238,7 @@ Inferred types:
 
 'hasExtension' @ [666:17] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'constructorSignature' @ [666:42] ==> public final val constructorSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3250,7 +3250,7 @@ Inferred types:
 
 'getExtension' @ [667:34] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'constructorSignature' @ [667:59] ==> public final val constructorSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3258,7 +3258,7 @@ Inferred types:
 
 'getExtension' @ [667:86] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'constructorSignature' @ [667:111] ==> public final val constructorSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -3277,7 +3277,7 @@ Inferred types:
 
 'getExtensionCount' @ [670:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'constructorAnnotation' @ [670:46] ==> public final val constructorAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3285,7 +3285,7 @@ Inferred types:
 
 'getExtensionCount' @ [670:76] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'constructorAnnotation' @ [670:105] ==> public final val constructorAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3295,7 +3295,7 @@ Inferred types:
 
 'getExtensionCount' @ [674:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'constructorAnnotation' @ [674:58] ==> public final val constructorAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3307,7 +3307,7 @@ Inferred types:
 
 'getExtension' @ [675:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'constructorAnnotation' @ [675:62] ==> public final val constructorAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3317,7 +3317,7 @@ Inferred types:
 
 'getExtension' @ [675:93] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'constructorAnnotation' @ [675:117] ==> public final val constructorAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3362,7 +3362,7 @@ Inferred types:
 
 'getExtensionCount' @ [688:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.EnumEntry[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'enumEntryAnnotation' @ [688:46] ==> public final val enumEntryAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3370,7 +3370,7 @@ Inferred types:
 
 'getExtensionCount' @ [688:74] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.EnumEntry[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'enumEntryAnnotation' @ [688:103] ==> public final val enumEntryAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3380,7 +3380,7 @@ Inferred types:
 
 'getExtensionCount' @ [692:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.EnumEntry[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'enumEntryAnnotation' @ [692:58] ==> public final val enumEntryAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3392,7 +3392,7 @@ Inferred types:
 
 'getExtension' @ [693:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.EnumEntry[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'enumEntryAnnotation' @ [693:62] ==> public final val enumEntryAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3402,7 +3402,7 @@ Inferred types:
 
 'getExtension' @ [693:91] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.EnumEntry[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'enumEntryAnnotation' @ [693:115] ==> public final val enumEntryAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3563,7 +3563,7 @@ Inferred types:
 
 'getExtensionCount' @ [736:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.ValueParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'parameterAnnotation' @ [736:46] ==> public final val parameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3571,7 +3571,7 @@ Inferred types:
 
 'getExtensionCount' @ [736:74] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.ValueParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'parameterAnnotation' @ [736:103] ==> public final val parameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3581,7 +3581,7 @@ Inferred types:
 
 'getExtensionCount' @ [740:29] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.ValueParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'parameterAnnotation' @ [740:58] ==> public final val parameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3593,7 +3593,7 @@ Inferred types:
 
 'getExtension' @ [741:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.ValueParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'parameterAnnotation' @ [741:62] ==> public final val parameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -3603,7 +3603,7 @@ Inferred types:
 
 'getExtension' @ [741:91] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.ValueParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'parameterAnnotation' @ [741:115] ==> public final val parameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -5069,7 +5069,7 @@ Inferred types:
 
 'i' @ [1197:48] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1197:51] ==> public fun ProtoBuf.Function.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1197:51] ==> public fun ProtoBuf.Function.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1197:60] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5089,7 +5089,7 @@ Inferred types:
 
 'i' @ [1201:48] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1201:51] ==> public fun ProtoBuf.Property.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1201:51] ==> public fun ProtoBuf.Property.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1201:60] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5109,7 +5109,7 @@ Inferred types:
 
 'i' @ [1205:49] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1205:52] ==> public fun ProtoBuf.TypeAlias.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1205:52] ==> public fun ProtoBuf.TypeAlias.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1205:61] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5125,7 +5125,7 @@ Inferred types:
 
 'typeTable' @ [1209:36] ==> public final val ProtoBuf.Package.typeTable: (ProtoBuf.TypeTable..ProtoBuf.TypeTable?)[MyPropertyDescriptor]
 
-'hashCode' @ [1209:46] ==> public fun ProtoBuf.TypeTable.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1209:46] ==> public fun ProtoBuf.TypeTable.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1209:55] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5141,7 +5141,7 @@ Inferred types:
 
 'sinceKotlinInfoTable' @ [1213:36] ==> public final val ProtoBuf.Package.sinceKotlinInfoTable: (ProtoBuf.SinceKotlinInfoTable..ProtoBuf.SinceKotlinInfoTable?)[MyPropertyDescriptor]
 
-'hashCode' @ [1213:57] ==> public fun ProtoBuf.SinceKotlinInfoTable.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1213:57] ==> public fun ProtoBuf.SinceKotlinInfoTable.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1213:66] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5149,7 +5149,7 @@ Inferred types:
 
 'hasExtension' @ [1216:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [1216:34] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -5163,7 +5163,7 @@ Inferred types:
 
 'getExtension' @ [1217:50] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [1217:75] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -5171,7 +5171,7 @@ Inferred types:
 
 'getExtensionCount' @ [1220:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [1220:47] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -5183,13 +5183,13 @@ Inferred types:
 
 'getExtension' @ [1221:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [1221:61] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1221:83] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1221:86] ==> public fun ProtoBuf.Property.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1221:86] ==> public fun ProtoBuf.Property.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1221:95] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5197,7 +5197,7 @@ Inferred types:
 
 'hasExtension' @ [1224:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [1224:33] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -5209,7 +5209,7 @@ Inferred types:
 
 'getExtension' @ [1225:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageFqName' @ [1225:60] ==> public final val packageFqName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -5261,7 +5261,7 @@ Inferred types:
 
 'i' @ [1245:53] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1245:56] ==> public fun ProtoBuf.TypeParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1245:56] ==> public fun ProtoBuf.TypeParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1245:65] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5281,7 +5281,7 @@ Inferred types:
 
 'i' @ [1249:49] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1249:52] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1249:52] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1249:61] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5331,7 +5331,7 @@ Inferred types:
 
 'i' @ [1261:51] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1261:54] ==> public fun ProtoBuf.Constructor.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1261:54] ==> public fun ProtoBuf.Constructor.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1261:63] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5351,7 +5351,7 @@ Inferred types:
 
 'i' @ [1265:48] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1265:51] ==> public fun ProtoBuf.Function.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1265:51] ==> public fun ProtoBuf.Function.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1265:60] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5371,7 +5371,7 @@ Inferred types:
 
 'i' @ [1269:48] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1269:51] ==> public fun ProtoBuf.Property.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1269:51] ==> public fun ProtoBuf.Property.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1269:60] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5391,7 +5391,7 @@ Inferred types:
 
 'i' @ [1273:49] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1273:52] ==> public fun ProtoBuf.TypeAlias.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1273:52] ==> public fun ProtoBuf.TypeAlias.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1273:61] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5411,7 +5411,7 @@ Inferred types:
 
 'i' @ [1277:49] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1277:52] ==> public fun ProtoBuf.EnumEntry.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1277:52] ==> public fun ProtoBuf.EnumEntry.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1277:61] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5443,7 +5443,7 @@ Inferred types:
 
 'typeTable' @ [1285:36] ==> public final val ProtoBuf.Class.typeTable: (ProtoBuf.TypeTable..ProtoBuf.TypeTable?)[MyPropertyDescriptor]
 
-'hashCode' @ [1285:46] ==> public fun ProtoBuf.TypeTable.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1285:46] ==> public fun ProtoBuf.TypeTable.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1285:55] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5469,7 +5469,7 @@ Inferred types:
 
 'sinceKotlinInfoTable' @ [1293:36] ==> public final val ProtoBuf.Class.sinceKotlinInfoTable: (ProtoBuf.SinceKotlinInfoTable..ProtoBuf.SinceKotlinInfoTable?)[MyPropertyDescriptor]
 
-'hashCode' @ [1293:57] ==> public fun ProtoBuf.SinceKotlinInfoTable.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1293:57] ==> public fun ProtoBuf.SinceKotlinInfoTable.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1293:66] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5477,7 +5477,7 @@ Inferred types:
 
 'hasExtension' @ [1296:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [1296:34] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -5491,7 +5491,7 @@ Inferred types:
 
 'getExtension' @ [1297:50] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classModuleName' @ [1297:75] ==> public final val classModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -5499,7 +5499,7 @@ Inferred types:
 
 'getExtensionCount' @ [1300:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [1300:47] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -5511,13 +5511,13 @@ Inferred types:
 
 'getExtension' @ [1301:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'classLocalVariable' @ [1301:61] ==> public final val classLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1301:81] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1301:84] ==> public fun ProtoBuf.Property.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1301:84] ==> public fun ProtoBuf.Property.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1301:93] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5527,7 +5527,7 @@ Inferred types:
 
 'getExtensionCount' @ [1304:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [1304:46] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -5539,13 +5539,13 @@ Inferred types:
 
 'getExtension' @ [1305:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'classAnnotation' @ [1305:60] ==> public final val classAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1305:77] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1305:80] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1305:80] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1305:89] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5553,7 +5553,7 @@ Inferred types:
 
 'hasExtension' @ [1308:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [1308:33] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -5565,7 +5565,7 @@ Inferred types:
 
 'getExtension' @ [1309:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Class[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'classContainingFileId' @ [1309:60] ==> public final val classContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Class..ProtoBuf.Class?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -5611,7 +5611,7 @@ Inferred types:
 
 'returnType' @ [1329:36] ==> public final val ProtoBuf.Function.returnType: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1329:47] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1329:47] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1329:56] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5641,7 +5641,7 @@ Inferred types:
 
 'i' @ [1337:53] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1337:56] ==> public fun ProtoBuf.TypeParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1337:56] ==> public fun ProtoBuf.TypeParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1337:65] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5657,7 +5657,7 @@ Inferred types:
 
 'receiverType' @ [1341:36] ==> public final val ProtoBuf.Function.receiverType: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1341:49] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1341:49] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1341:58] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5687,7 +5687,7 @@ Inferred types:
 
 'i' @ [1349:54] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1349:57] ==> public fun ProtoBuf.ValueParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1349:57] ==> public fun ProtoBuf.ValueParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1349:66] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5703,7 +5703,7 @@ Inferred types:
 
 'typeTable' @ [1353:36] ==> public final val ProtoBuf.Function.typeTable: (ProtoBuf.TypeTable..ProtoBuf.TypeTable?)[MyPropertyDescriptor]
 
-'hashCode' @ [1353:46] ==> public fun ProtoBuf.TypeTable.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1353:46] ==> public fun ProtoBuf.TypeTable.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1353:55] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5721,7 +5721,7 @@ Inferred types:
 
 'hasExtension' @ [1360:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'methodSignature' @ [1360:34] ==> public final val methodSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -5733,11 +5733,11 @@ Inferred types:
 
 'getExtension' @ [1361:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'methodSignature' @ [1361:61] ==> public final val methodSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
-'hashCode' @ [1361:78] ==> public fun JvmProtoBuf.JvmMethodSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1361:78] ==> public fun JvmProtoBuf.JvmMethodSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1361:87] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5747,7 +5747,7 @@ Inferred types:
 
 'getExtensionCount' @ [1364:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'functionAnnotation' @ [1364:46] ==> public final val functionAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -5759,13 +5759,13 @@ Inferred types:
 
 'getExtension' @ [1365:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'functionAnnotation' @ [1365:60] ==> public final val functionAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1365:80] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1365:83] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1365:83] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1365:92] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5773,7 +5773,7 @@ Inferred types:
 
 'hasExtension' @ [1368:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'functionContainingFileId' @ [1368:33] ==> public final val functionContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -5785,7 +5785,7 @@ Inferred types:
 
 'getExtension' @ [1369:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'functionContainingFileId' @ [1369:60] ==> public final val functionContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -5831,7 +5831,7 @@ Inferred types:
 
 'returnType' @ [1389:36] ==> public final val ProtoBuf.Property.returnType: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1389:47] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1389:47] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1389:56] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5861,7 +5861,7 @@ Inferred types:
 
 'i' @ [1397:53] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1397:56] ==> public fun ProtoBuf.TypeParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1397:56] ==> public fun ProtoBuf.TypeParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1397:65] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5877,7 +5877,7 @@ Inferred types:
 
 'receiverType' @ [1401:36] ==> public final val ProtoBuf.Property.receiverType: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1401:49] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1401:49] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1401:58] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5903,7 +5903,7 @@ Inferred types:
 
 'setterValueParameter' @ [1409:36] ==> public final val ProtoBuf.Property.setterValueParameter: (ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?)[MyPropertyDescriptor]
 
-'hashCode' @ [1409:57] ==> public fun ProtoBuf.ValueParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1409:57] ==> public fun ProtoBuf.ValueParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1409:66] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5941,7 +5941,7 @@ Inferred types:
 
 'hasExtension' @ [1424:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [1424:34] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -5953,11 +5953,11 @@ Inferred types:
 
 'getExtension' @ [1425:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [1425:61] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
-'hashCode' @ [1425:80] ==> public fun JvmProtoBuf.JvmPropertySignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1425:80] ==> public fun JvmProtoBuf.JvmPropertySignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1425:89] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5967,7 +5967,7 @@ Inferred types:
 
 'getExtensionCount' @ [1428:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'propertyAnnotation' @ [1428:46] ==> public final val propertyAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -5979,13 +5979,13 @@ Inferred types:
 
 'getExtension' @ [1429:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'propertyAnnotation' @ [1429:60] ==> public final val propertyAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1429:80] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1429:83] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1429:83] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1429:92] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -5993,7 +5993,7 @@ Inferred types:
 
 'hasExtension' @ [1432:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Value
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value?)
 
 'compileTimeValue' @ [1432:33] ==> public final val compileTimeValue: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -6005,11 +6005,11 @@ Inferred types:
 
 'getExtension' @ [1433:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?)): (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Value
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation.Argument.Value?)
 
 'compileTimeValue' @ [1433:60] ==> public final val compileTimeValue: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
-'hashCode' @ [1433:78] ==> public fun ProtoBuf.Annotation.Argument.Value.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1433:78] ==> public fun ProtoBuf.Annotation.Argument.Value.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1433:87] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6017,7 +6017,7 @@ Inferred types:
 
 'hasExtension' @ [1436:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'propertyContainingFileId' @ [1436:33] ==> public final val propertyContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -6029,7 +6029,7 @@ Inferred types:
 
 'getExtension' @ [1437:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'propertyContainingFileId' @ [1437:60] ==> public final val propertyContainingFileId: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -6069,7 +6069,7 @@ Inferred types:
 
 'i' @ [1453:53] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1453:56] ==> public fun ProtoBuf.TypeParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1453:56] ==> public fun ProtoBuf.TypeParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1453:65] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6085,7 +6085,7 @@ Inferred types:
 
 'underlyingType' @ [1457:36] ==> public final val ProtoBuf.TypeAlias.underlyingType: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1457:51] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1457:51] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1457:60] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6111,7 +6111,7 @@ Inferred types:
 
 'expandedType' @ [1465:36] ==> public final val ProtoBuf.TypeAlias.expandedType: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1465:49] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1465:49] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1465:58] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6141,7 +6141,7 @@ Inferred types:
 
 'i' @ [1473:50] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1473:53] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1473:53] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1473:62] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6173,7 +6173,7 @@ Inferred types:
 
 'i' @ [1487:44] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1487:47] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1487:47] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1487:56] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6205,7 +6205,7 @@ Inferred types:
 
 'i' @ [1501:44] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1501:47] ==> public fun ProtoBuf.SinceKotlinInfo.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1501:47] ==> public fun ProtoBuf.SinceKotlinInfo.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1501:56] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6269,7 +6269,7 @@ Inferred types:
 
 'i' @ [1523:50] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1523:53] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1523:53] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1523:62] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6293,7 +6293,7 @@ Inferred types:
 
 'getExtensionCount' @ [1530:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [1530:47] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -6305,13 +6305,13 @@ Inferred types:
 
 'getExtension' @ [1531:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [1531:61] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1531:86] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1531:89] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1531:89] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1531:98] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6321,7 +6321,7 @@ Inferred types:
 
 'getExtensionCount' @ [1534:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [1534:46] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -6333,13 +6333,13 @@ Inferred types:
 
 'getExtension' @ [1535:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeParameterAnnotation' @ [1535:60] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1535:85] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1535:88] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1535:88] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1535:97] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6361,7 +6361,7 @@ Inferred types:
 
 'i' @ [1545:48] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1545:51] ==> public fun ProtoBuf.Type.Argument.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1545:51] ==> public fun ProtoBuf.Type.Argument.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1545:60] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6401,7 +6401,7 @@ Inferred types:
 
 'flexibleUpperBound' @ [1557:36] ==> public final val ProtoBuf.Type.flexibleUpperBound: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1557:55] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1557:55] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1557:64] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6473,7 +6473,7 @@ Inferred types:
 
 'outerType' @ [1581:36] ==> public final val ProtoBuf.Type.outerType: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1581:46] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1581:46] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1581:55] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6499,7 +6499,7 @@ Inferred types:
 
 'abbreviatedType' @ [1589:36] ==> public final val ProtoBuf.Type.abbreviatedType: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1589:52] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1589:52] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1589:61] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6529,7 +6529,7 @@ Inferred types:
 
 'getExtensionCount' @ [1600:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [1600:47] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -6541,13 +6541,13 @@ Inferred types:
 
 'getExtension' @ [1601:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [1601:61] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1601:77] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1601:80] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1601:80] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1601:89] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6555,7 +6555,7 @@ Inferred types:
 
 'hasExtension' @ [1604:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'isRaw' @ [1604:34] ==> public final val isRaw: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -6567,7 +6567,7 @@ Inferred types:
 
 'getExtension' @ [1605:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'isRaw' @ [1605:61] ==> public final val isRaw: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -6577,7 +6577,7 @@ Inferred types:
 
 'getExtensionCount' @ [1608:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [1608:46] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -6589,13 +6589,13 @@ Inferred types:
 
 'getExtension' @ [1609:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'typeAnnotation' @ [1609:60] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1609:76] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1609:79] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1609:79] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1609:88] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6627,7 +6627,7 @@ Inferred types:
 
 'i' @ [1623:54] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1623:57] ==> public fun ProtoBuf.ValueParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1623:57] ==> public fun ProtoBuf.ValueParameter.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1623:66] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6645,7 +6645,7 @@ Inferred types:
 
 'hasExtension' @ [1630:9] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'constructorSignature' @ [1630:34] ==> public final val constructorSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -6657,11 +6657,11 @@ Inferred types:
 
 'getExtension' @ [1631:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'constructorSignature' @ [1631:61] ==> public final val constructorSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
-'hashCode' @ [1631:83] ==> public fun JvmProtoBuf.JvmMethodSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1631:83] ==> public fun JvmProtoBuf.JvmMethodSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1631:92] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6671,7 +6671,7 @@ Inferred types:
 
 'getExtensionCount' @ [1634:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'constructorAnnotation' @ [1634:46] ==> public final val constructorAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -6683,13 +6683,13 @@ Inferred types:
 
 'getExtension' @ [1635:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'constructorAnnotation' @ [1635:60] ==> public final val constructorAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1635:83] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1635:86] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1635:86] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1635:95] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6713,7 +6713,7 @@ Inferred types:
 
 'getExtensionCount' @ [1648:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.EnumEntry[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'enumEntryAnnotation' @ [1648:46] ==> public final val enumEntryAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -6725,13 +6725,13 @@ Inferred types:
 
 'getExtension' @ [1649:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.EnumEntry[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'enumEntryAnnotation' @ [1649:60] ==> public final val enumEntryAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.EnumEntry..ProtoBuf.EnumEntry?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1649:81] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1649:84] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1649:84] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1649:93] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6763,7 +6763,7 @@ Inferred types:
 
 'i' @ [1661:48] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1661:51] ==> public fun ProtoBuf.Annotation.Argument.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1661:51] ==> public fun ProtoBuf.Annotation.Argument.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1661:60] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6801,7 +6801,7 @@ Inferred types:
 
 'type' @ [1677:36] ==> public final val ProtoBuf.ValueParameter.type: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1677:41] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1677:41] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1677:50] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6827,7 +6827,7 @@ Inferred types:
 
 'varargElementType' @ [1685:36] ==> public final val ProtoBuf.ValueParameter.varargElementType: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1685:54] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1685:54] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1685:63] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6847,7 +6847,7 @@ Inferred types:
 
 'getExtensionCount' @ [1692:17] ==> public final fun <Type : (Any..Any?)> getExtensionCount(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): Int defined in org.jetbrains.kotlin.serialization.ProtoBuf.ValueParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'parameterAnnotation' @ [1692:46] ==> public final val parameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
@@ -6859,13 +6859,13 @@ Inferred types:
 
 'getExtension' @ [1693:36] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?), p1: Int): (ProtoBuf.Annotation..ProtoBuf.Annotation?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.ValueParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Annotation
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)
 
 'parameterAnnotation' @ [1693:60] ==> public final val parameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.ValueParameter..ProtoBuf.ValueParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.js.JsProtoBuf[JavaPropertyDescriptor]
 
 'i' @ [1693:81] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1693:84] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1693:84] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1693:93] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6909,7 +6909,7 @@ Inferred types:
 
 'field' @ [1717:36] ==> public final val JvmProtoBuf.JvmPropertySignature.field: (JvmProtoBuf.JvmFieldSignature..JvmProtoBuf.JvmFieldSignature?)[MyPropertyDescriptor]
 
-'hashCode' @ [1717:42] ==> public fun JvmProtoBuf.JvmFieldSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1717:42] ==> public fun JvmProtoBuf.JvmFieldSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1717:51] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6925,7 +6925,7 @@ Inferred types:
 
 'syntheticMethod' @ [1721:36] ==> public final val JvmProtoBuf.JvmPropertySignature.syntheticMethod: (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)[MyPropertyDescriptor]
 
-'hashCode' @ [1721:52] ==> public fun JvmProtoBuf.JvmMethodSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1721:52] ==> public fun JvmProtoBuf.JvmMethodSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1721:61] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6941,7 +6941,7 @@ Inferred types:
 
 'getter' @ [1725:36] ==> public final val JvmProtoBuf.JvmPropertySignature.getter: (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)[MyPropertyDescriptor]
 
-'hashCode' @ [1725:43] ==> public fun JvmProtoBuf.JvmMethodSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1725:43] ==> public fun JvmProtoBuf.JvmMethodSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1725:52] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -6957,7 +6957,7 @@ Inferred types:
 
 'setter' @ [1729:36] ==> public final val JvmProtoBuf.JvmPropertySignature.setter: (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)[MyPropertyDescriptor]
 
-'hashCode' @ [1729:43] ==> public fun JvmProtoBuf.JvmMethodSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1729:43] ==> public fun JvmProtoBuf.JvmMethodSignature.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1729:52] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -7059,7 +7059,7 @@ Inferred types:
 
 'annotation' @ [1767:36] ==> public final val ProtoBuf.Annotation.Argument.Value.annotation: (ProtoBuf.Annotation..ProtoBuf.Annotation?)[MyPropertyDescriptor]
 
-'hashCode' @ [1767:47] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1767:47] ==> public fun ProtoBuf.Annotation.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1767:56] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -7079,7 +7079,7 @@ Inferred types:
 
 'i' @ [1771:52] ==> val i: Int defined in org.jetbrains.kotlin.incremental.hashCode[LocalVariableDescriptor]
 
-'hashCode' @ [1771:55] ==> public fun ProtoBuf.Annotation.Argument.Value.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1771:55] ==> public fun ProtoBuf.Annotation.Argument.Value.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1771:64] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -7165,7 +7165,7 @@ Inferred types:
 
 'type' @ [1811:36] ==> public final val ProtoBuf.Type.Argument.type: (ProtoBuf.Type..ProtoBuf.Type?)[MyPropertyDescriptor]
 
-'hashCode' @ [1811:41] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1811:41] ==> public fun ProtoBuf.Type.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1811:50] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 
@@ -7201,7 +7201,7 @@ Inferred types:
 
 'value' @ [1826:32] ==> public final val ProtoBuf.Annotation.Argument.value: (ProtoBuf.Annotation.Argument.Value..ProtoBuf.Annotation.Argument.Value?)[MyPropertyDescriptor]
 
-'hashCode' @ [1826:38] ==> public fun ProtoBuf.Annotation.Argument.Value.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'hashCode' @ [1826:38] ==> public fun ProtoBuf.Annotation.Argument.Value.hashCode(stringIndexes: (Int) -> Int, fqNameIndexes: (Int) -> Int): Int defined in org.jetbrains.kotlin.incremental in file ProtoCompareGenerated.kt[SimpleFunctionDescriptorImpl]
 
 'stringIndexes' @ [1826:47] ==> value-parameter stringIndexes: (Int) -> Int defined in org.jetbrains.kotlin.incremental.hashCode[ValueParameterDescriptorImpl]
 

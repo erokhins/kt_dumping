@@ -186,17 +186,21 @@ Inferred types:
 'path' @ [112:38] ==> public final val File.path: (String..String?)[MyPropertyDescriptor]
 
 'if (useJava9) KotlinTestUtils::compileJavaFilesExternallyWithJava9
-                    else KotlinTestUtils::compileJavaFiles' @ [116:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KFunction2<(MutableCollection<(File..File?)>..Collection<(File..File?)>), (MutableList<(String..String?)>..List<(String..String?)>), Boolean>, elseBranch: KFunction2<(MutableCollection<(File..File?)>..Collection<(File..File?)>), (MutableList<(String..String?)>..List<(String..String?)>), Boolean>): KFunction2<(MutableCollection<(File..File?)>..Collection<(File..File?)>), (MutableList<(String..String?)>..List<(String..String?)>), Boolean>[SimpleFunctionDescriptorImpl]
+                    else KotlinTestUtils::compileJavaFiles' @ [116:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KFunction2<(@ParameterName MutableCollection<(File..File?)>..@ParameterName Collection<(File..File?)>), (@ParameterName MutableList<(String..String?)>..@ParameterName List<(String..String?)>), Boolean>, elseBranch: KFunction2<(@ParameterName MutableCollection<(File..File?)>..@ParameterName Collection<(File..File?)>), (@ParameterName MutableList<(String..String?)>..@ParameterName List<(String..String?)>), Boolean>): KFunction2<(@ParameterName MutableCollection<(File..File?)>..@ParameterName Collection<(File..File?)>), (@ParameterName MutableList<(String..String?)>..@ParameterName List<(String..String?)>), Boolean>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KFunction2<(kotlin.collections.MutableCollection<(java.io.File..java.io.File?)>..kotlin.collections.Collection<(java.io.File..java.io.File?)>), (kotlin.collections.MutableList<(kotlin.String..kotlin.String?)>..kotlin.collections.List<(kotlin.String..kotlin.String?)>), Boolean>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KFunction2<(@kotlin.ParameterName kotlin.collections.MutableCollection<(java.io.File..java.io.File?)>..@kotlin.ParameterName kotlin.collections.Collection<(java.io.File..java.io.File?)>), (@kotlin.ParameterName kotlin.collections.MutableList<(kotlin.String..kotlin.String?)>..@kotlin.ParameterName kotlin.collections.List<(kotlin.String..kotlin.String?)>), Boolean>
 
 'useJava9' @ [116:25] ==> value-parameter useJava9: Boolean = ... defined in org.jetbrains.kotlin.test.MockLibraryUtil.compileLibraryToJar[ValueParameterDescriptorImpl]
 
 'KotlinTestUtils' @ [116:35] ==> private constructor KotlinTestUtils() defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaClassConstructorDescriptor]
 
+'compileJavaFilesExternallyWithJava9' @ [116:52] ==> public open fun compileJavaFilesExternallyWithJava9(@NotNull files: (MutableCollection<(File..File?)>..Collection<(File..File?)>), @NotNull options: (MutableList<(String..String?)>..List<(String..String?)>)): Boolean defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
+
 'KotlinTestUtils' @ [117:26] ==> private constructor KotlinTestUtils() defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaClassConstructorDescriptor]
 
-'invoke' @ [119:27] ==> public abstract fun invoke(p1: (MutableCollection<(File..File?)>..Collection<(File..File?)>), p2: (MutableList<(String..String?)>..List<(String..String?)>)): Boolean defined in kotlin.reflect.KFunction2[FunctionInvokeDescriptor]
+'compileJavaFiles' @ [117:43] ==> public open fun compileJavaFiles(@NotNull files: (MutableCollection<(File..File?)>..Collection<(File..File?)>), options: (MutableList<(String..String?)>..List<(String..String?)>?)): Boolean defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
+
+'invoke' @ [119:27] ==> public abstract fun invoke(files: (@ParameterName MutableCollection<(File..File?)>..@ParameterName Collection<(File..File?)>), options: (@ParameterName MutableList<(String..String?)>..@ParameterName List<(String..String?)>)): Boolean defined in kotlin.reflect.KFunction2[FunctionInvokeDescriptor]
 
 'javaFiles' @ [119:35] ==> val javaFiles: (MutableList<(File..File?)>..List<(File..File?)>) defined in org.jetbrains.kotlin.test.MockLibraryUtil.compileLibraryToJar[LocalVariableDescriptor]
 
@@ -329,9 +333,9 @@ Inferred types:
 Inferred types:
     <T> -> PrintStream
 
-'Array' @ [164:83] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [164:83] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@7ad17acd
 
 'java' @ [164:104] ==> public val <T> KClass<Array<String>>.java: Class<Array<String>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -419,9 +423,9 @@ Inferred types:
 
 'runJsCompiler' @ [193:9] ==> private final fun runJsCompiler(args: List<String>): Unit defined in org.jetbrains.kotlin.test.MockLibraryUtil[SimpleFunctionDescriptorImpl]
 
-'listOf' @ [193:23] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [193:23] ==> public fun <T> listOf(vararg elements: (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> (kotlin.String..kotlin.String?)
 
 'outputFile' @ [193:55] ==> value-parameter outputFile: File defined in org.jetbrains.kotlin.test.MockLibraryUtil.compileKotlin2JS[ValueParameterDescriptorImpl]
 
@@ -477,11 +481,11 @@ Inferred types:
 
 'java' @ [211:52] ==> public val <T> KClass<out CLICompiler<*>>.java: Class<out CLICompiler<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> CLICompiler<*>
+    <T> -> Captured(out CLICompiler<*>)
 
 'name' @ [211:57] ==> public final val <T : (Any..Any?)> Class<out CLICompiler<*>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CLICompiler<*>
+    <T : (Any..Any?)> -> Captured(out CLICompiler<*>)
 
 'Synchronized' @ [214:5] ==> public constructor Synchronized() defined in kotlin.jvm.Synchronized[DeserializedClassConstructorDescriptor]
 
@@ -490,8 +494,6 @@ Inferred types:
 'listOf' @ [217:17] ==> public fun <T> listOf(element: File): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
-
-'PathUtil' @ [217:24] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'kotlinPathsForDistDirectory' @ [217:33] ==> @JvmStatic public final val kotlinPathsForDistDirectory: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 

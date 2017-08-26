@@ -56,6 +56,8 @@ Inferred types:
 
 'this' @ [43:35] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.index.SingleJavaFileRootsIndex[LazyClassReceiverParameterDescriptor]
 
+'getClassIdsForRootAt' @ [43:41] ==> private final fun getClassIdsForRootAt(index: Int): List<ClassId> defined in org.jetbrains.kotlin.cli.jvm.index.SingleJavaFileRootsIndex[SimpleFunctionDescriptorImpl]
+
 'filter' @ [43:63] ==> public inline fun <T> Iterable<ClassId>.filter(predicate: (ClassId) -> Boolean): List<ClassId> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ClassId

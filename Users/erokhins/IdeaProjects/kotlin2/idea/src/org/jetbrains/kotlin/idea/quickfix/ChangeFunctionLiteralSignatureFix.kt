@@ -14,7 +14,7 @@
 
 'originalDescriptor' @ [49:32] ==> value-parameter originalDescriptor: KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralSignatureFix.invoke.<no name provided>.configure[ValueParameterDescriptorImpl]
 
-'modify' @ [49:51] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'modify' @ [49:51] ==> public fun KotlinMethodDescriptor.modify(action: (KotlinMutableMethodDescriptor) -> Unit): KotlinMethodDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file KotlinChangeSignature.kt[SimpleFunctionDescriptorImpl]
 
 'CollectingNameValidator' @ [50:45] ==> @JvmOverloads public constructor CollectingNameValidator(existingNames: Collection<String> = ..., filter: (String) -> Boolean = ...) defined in org.jetbrains.kotlin.idea.core.CollectingNameValidator[DeserializedClassConstructorDescriptor]
 
@@ -65,7 +65,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [71:20] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtFunction..KtFunction?), (Int..Int?), (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>?)> defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralSignatureFix.Companion.getElementOfInterest[LocalVariableDescriptor]
 
-'psiElement' @ [71:45] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtFunction..KtFunction?), (Int..Int?), (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>?)>.psiElement: (KtFunction..KtFunction?)[MyPropertyDescriptor]
+'psiElement' @ [71:45] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtFunction..KtFunction?), (Int..Int?), (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>?)>.psiElement: KtFunction[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFunction..org.jetbrains.kotlin.psi.KtFunction?)
     <A : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
@@ -81,7 +81,7 @@ Inferred types:
 
 'diagnostic' @ [76:82] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralSignatureFix.Companion.extractFixData[ValueParameterDescriptorImpl]
 
-'b' @ [76:94] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtFunction..KtFunction?), (Int..Int?), (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>?)>.b: (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>?)[MyPropertyDescriptor]
+'b' @ [76:94] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtFunction..KtFunction?), (Int..Int?), (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>?)>.b: (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtFunction..org.jetbrains.kotlin.psi.KtFunction?)
     <A : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
@@ -91,7 +91,7 @@ Inferred types:
 
 'descriptor' @ [77:25] ==> val descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralSignatureFix.Companion.extractFixData[LocalVariableDescriptor]
 
-'parameterTypes' @ [77:37] ==> val parameterTypes: (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>?) defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralSignatureFix.Companion.extractFixData[LocalVariableDescriptor]
+'parameterTypes' @ [77:37] ==> val parameterTypes: (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>) defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralSignatureFix.Companion.extractFixData[LocalVariableDescriptor]
 
 'ChangeFunctionLiteralSignatureFix' @ [81:19] ==> private constructor ChangeFunctionLiteralSignatureFix(functionLiteral: KtFunctionLiteral, functionDescriptor: FunctionDescriptor, parameterTypes: List<KotlinType>) defined in org.jetbrains.kotlin.idea.quickfix.ChangeFunctionLiteralSignatureFix[ClassConstructorDescriptorImpl]
 

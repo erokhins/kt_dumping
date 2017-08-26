@@ -1,8 +1,8 @@
 'OutputStream' @ [40:33] ==> public constructor OutputStream() defined in java.io.OutputStream[JavaClassConstructorDescriptor]
 
-'lazy' @ [42:16] ==> public fun <T> lazy(initializer: () -> (Logger..Logger?)): Lazy<(Logger..Logger?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [42:16] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (java.util.logging.Logger..java.util.logging.Logger?)
+    <T> -> T
 
 'getLogger' @ [42:30] ==> @CallerSensitive public open fun getLogger(p0: (String..String?)): (Logger..Logger?) defined in java.util.logging.Logger[JavaMethodDescriptor]
 
@@ -126,9 +126,9 @@ Inferred types:
 
 'byteInputStream' @ [74:58] ==> @InlineOnly public inline fun String.byteInputStream(charset: Charset = ...): ByteArrayInputStream defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [77:16] ==> public fun <T> lazy(initializer: () -> (Logger..Logger?)): Lazy<(Logger..Logger?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [77:16] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (java.util.logging.Logger..java.util.logging.Logger?)
+    <T> -> T
 
 'getLogger' @ [77:30] ==> @CallerSensitive public open fun getLogger(p0: (String..String?)): (Logger..Logger?) defined in java.util.logging.Logger[JavaMethodDescriptor]
 
@@ -263,21 +263,21 @@ Inferred types:
 
 'COMPILE_DAEMON_PORTS_RANGE_END' @ [129:131] ==> public val COMPILE_DAEMON_PORTS_RANGE_END: Int defined in org.jetbrains.kotlin.daemon.common[DeserializedPropertyDescriptor]
 
-'lazy' @ [132:36] ==> public fun <T> lazy(initializer: () -> K2JVMCompiler): Lazy<K2JVMCompiler> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [132:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> K2JVMCompiler
+    <T> -> T
 
 'K2JVMCompiler' @ [132:43] ==> public constructor K2JVMCompiler() defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler[DeserializedClassConstructorDescriptor]
 
-'lazy' @ [133:35] ==> public fun <T> lazy(initializer: () -> K2JSCompiler): Lazy<K2JSCompiler> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [133:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> K2JSCompiler
+    <T> -> T
 
 'K2JSCompiler' @ [133:42] ==> public constructor K2JSCompiler() defined in org.jetbrains.kotlin.cli.js.K2JSCompiler[JavaClassConstructorDescriptor]
 
-'lazy' @ [134:41] ==> public fun <T> lazy(initializer: () -> K2MetadataCompiler): Lazy<K2MetadataCompiler> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [134:41] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> K2MetadataCompiler
+    <T> -> T
 
 'K2MetadataCompiler' @ [134:48] ==> public constructor K2MetadataCompiler() defined in org.jetbrains.kotlin.cli.metadata.K2MetadataCompiler[DeserializedClassConstructorDescriptor]
 

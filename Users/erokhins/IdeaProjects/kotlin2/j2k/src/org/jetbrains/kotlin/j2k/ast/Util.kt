@@ -87,8 +87,6 @@ Inferred types:
 
 'isMultiAssignment' @ [36:36] ==> public final fun isMultiAssignment(): Boolean defined in org.jetbrains.kotlin.j2k.ast.AssignmentExpression[SimpleFunctionDescriptorImpl]
 
-'Block' @ [36:57] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Block[FakeCallableDescriptorForObject]
-
 'of' @ [36:63] ==> public final fun of(statement: Statement): Block defined in org.jetbrains.kotlin.j2k.ast.Block.Companion[SimpleFunctionDescriptorImpl]
 
 'this' @ [36:66] ==> <this> defined in org.jetbrains.kotlin.j2k.ast.wrapToBlockIfRequired[ReceiverParameterDescriptorImpl]

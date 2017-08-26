@@ -30,7 +30,7 @@
 Inferred types:
     <E : (Any..Any?)> -> UsageInfo
 
-'checkRedeclarations' @ [51:9] ==> internal fun checkRedeclarations(descriptor: DeclarationDescriptor, newName: String, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkRedeclarations' @ [51:9] ==> internal fun checkRedeclarations(descriptor: DeclarationDescriptor, newName: String, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [51:29] ==> val descriptor: VariableDescriptor defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinParameterProcessor.findCollisions[LocalVariableDescriptor]
 
@@ -38,7 +38,7 @@ Inferred types:
 
 'collisions' @ [51:50] ==> val collisions: SmartList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinParameterProcessor.findCollisions[LocalVariableDescriptor]
 
-'checkOriginalUsagesRetargeting' @ [52:9] ==> internal fun checkOriginalUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkOriginalUsagesRetargeting' @ [52:9] ==> internal fun checkOriginalUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [52:40] ==> val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinParameterProcessor.findCollisions[LocalVariableDescriptor]
 
@@ -48,7 +48,7 @@ Inferred types:
 
 'collisions' @ [52:70] ==> val collisions: SmartList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinParameterProcessor.findCollisions[LocalVariableDescriptor]
 
-'checkNewNameUsagesRetargeting' @ [53:9] ==> internal fun checkNewNameUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkNewNameUsagesRetargeting' @ [53:9] ==> internal fun checkNewNameUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [53:39] ==> val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinParameterProcessor.findCollisions[LocalVariableDescriptor]
 

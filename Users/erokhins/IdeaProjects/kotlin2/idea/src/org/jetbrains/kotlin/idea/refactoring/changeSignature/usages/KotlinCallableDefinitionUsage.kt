@@ -14,9 +14,9 @@ Inferred types:
 
 'isInherited' @ [59:87] ==> public final val isInherited: Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinCallableDefinitionUsage[PropertyDescriptorImpl]
 
-'lazy' @ [61:59] ==> public fun <T> lazy(initializer: () -> CallableDescriptor?): Lazy<CallableDescriptor?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [61:59] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CallableDescriptor?
+    <T> -> T
 
 'declaration' @ [62:23] ==> public final val declaration: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinCallableDefinitionUsage[PropertyDescriptorImpl]
 
@@ -45,9 +45,9 @@ Inferred types:
 
 'getJavaMethodDescriptor' @ [66:37] ==> @JvmOverloads public fun PsiMethod.getJavaMethodDescriptor(resolutionFacade: ResolutionFacade? = ...): FunctionDescriptor? defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [71:46] ==> public fun <T> lazy(initializer: () -> TypeSubstitutor?): Lazy<TypeSubstitutor?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [71:46] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TypeSubstitutor?
+    <T> -> T
 
 '!' @ [72:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -243,8 +243,6 @@ Inferred types:
 
 'addToShorteningWaitSet' @ [126:27] ==> public fun KtElement.addToShorteningWaitSet(options: ShortenReferences.Options = ...): Unit defined in org.jetbrains.kotlin.idea.codeInsight.shorten[DeserializedSimpleFunctionDescriptor]
 
-'Options' @ [126:50] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Options[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [126:58] ==> public final val DEFAULT: ShortenReferences.Options defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Options.Companion[DeserializedPropertyDescriptor]
 
 'element' @ [129:13] ==> value-parameter element: T defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinCallableDefinitionUsage.processUsage[ValueParameterDescriptorImpl]
@@ -280,8 +278,6 @@ Inferred types:
 'newReceiverTypeRef' @ [133:13] ==> val newReceiverTypeRef: KtTypeReference? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinCallableDefinitionUsage.processUsage[LocalVariableDescriptor]
 
 'addToShorteningWaitSet' @ [133:33] ==> public fun KtElement.addToShorteningWaitSet(options: ShortenReferences.Options = ...): Unit defined in org.jetbrains.kotlin.idea.codeInsight.shorten[DeserializedSimpleFunctionDescriptor]
-
-'ShortenReferences' @ [133:56] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [133:82] ==> public final val DEFAULT: ShortenReferences.Options defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Options.Companion[DeserializedPropertyDescriptor]
 
@@ -362,8 +358,6 @@ Inferred types:
 'returnTypeText' @ [158:75] ==> val returnTypeText: String defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinCallableDefinitionUsage.changeReturnTypeIfNeeded[LocalVariableDescriptor]
 
 'addToShorteningWaitSet' @ [158:94] ==> public fun KtElement.addToShorteningWaitSet(options: ShortenReferences.Options = ...): Unit defined in org.jetbrains.kotlin.idea.codeInsight.shorten[DeserializedSimpleFunctionDescriptor]
-
-'Options' @ [158:117] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Options[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [158:125] ==> public final val DEFAULT: ShortenReferences.Options defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Options.Companion[DeserializedPropertyDescriptor]
 
@@ -604,8 +598,6 @@ Inferred types:
 'newParameterList' @ [219:9] ==> var newParameterList: KtParameterList? defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinCallableDefinitionUsage.processParameterListWithStructuralChanges[LocalVariableDescriptor]
 
 'addToShorteningWaitSet' @ [219:26] ==> public fun KtElement.addToShorteningWaitSet(options: ShortenReferences.Options = ...): Unit defined in org.jetbrains.kotlin.idea.codeInsight.shorten[DeserializedSimpleFunctionDescriptor]
-
-'Options' @ [219:49] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Options[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [219:57] ==> public final val DEFAULT: ShortenReferences.Options defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Options.Companion[DeserializedPropertyDescriptor]
 

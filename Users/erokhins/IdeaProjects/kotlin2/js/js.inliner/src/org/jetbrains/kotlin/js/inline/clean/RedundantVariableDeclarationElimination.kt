@@ -36,11 +36,11 @@ Inferred types:
 
 'x' @ [48:27] ==> value-parameter x: JsFunction defined in org.jetbrains.kotlin.js.inline.clean.RedundantVariableDeclarationElimination.analyze.<no name provided>.visit[ValueParameterDescriptorImpl]
 
-'collectFreeVariables' @ [48:29] ==> public fun JsFunction.collectFreeVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectFreeVariables' @ [48:29] ==> public fun JsFunction.collectFreeVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'accept' @ [51:11] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.inline.clean.RedundantVariableDeclarationElimination.analyze.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'root' @ [51:18] ==> private final val root: JsStatement defined in org.jetbrains.kotlin.js.inline.clean.RedundantVariableDeclarationElimination[PropertyDescriptorImpl]
 
@@ -90,7 +90,7 @@ Inferred types:
 
 'accept' @ [69:11] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.inline.clean.RedundantVariableDeclarationElimination.perform.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'root' @ [69:18] ==> private final val root: JsStatement defined in org.jetbrains.kotlin.js.inline.clean.RedundantVariableDeclarationElimination[PropertyDescriptorImpl]
 

@@ -12,8 +12,6 @@ Inferred types:
 
 'Storage' @ [26:27] ==> public constructor Storage(value: String = ..., file: String = ..., deprecated: Boolean = ..., roamingType: RoamingType = ..., storageClass: KClass<out (StateStorage..StateStorage?)> = ..., stateSplitter: KClass<out (StateSplitter..StateSplitter?)> = ..., scheme: StorageScheme = ..., id: String = ..., exclusive: Boolean = ...) defined in com.intellij.openapi.components.Storage[JavaClassConstructorDescriptor]
 
-'BaseKotlinCompilerSettings' @ [26:42] ==> public companion object defined in org.jetbrains.kotlin.idea.compiler.configuration.BaseKotlinCompilerSettings[FakeCallableDescriptorForObject]
-
 'KOTLIN_COMPILER_SETTINGS_PATH' @ [26:69] ==> public const final val KOTLIN_COMPILER_SETTINGS_PATH: String defined in org.jetbrains.kotlin.idea.compiler.configuration.BaseKotlinCompilerSettings.Companion[PropertyDescriptorImpl]
 
 'DIRECTORY_BASED' @ [26:123] ==> enum entry DIRECTORY_BASED defined in com.intellij.openapi.components.StorageScheme[FakeCallableDescriptorForObject]
@@ -30,7 +28,7 @@ Inferred types:
 
 'getService' @ [33:60] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(KotlinCompilerSettings..KotlinCompilerSettings?)>): (KotlinCompilerSettings..KotlinCompilerSettings?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinCompilerSettings
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.compiler.configuration.KotlinCompilerSettings..org.jetbrains.kotlin.idea.compiler.configuration.KotlinCompilerSettings?)
 
 'project' @ [33:71] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.compiler.configuration.KotlinCompilerSettings.Companion.getInstance[ValueParameterDescriptorImpl]
 

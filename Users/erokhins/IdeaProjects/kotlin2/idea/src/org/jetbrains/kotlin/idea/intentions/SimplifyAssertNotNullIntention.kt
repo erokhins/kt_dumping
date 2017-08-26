@@ -90,7 +90,7 @@ Inferred types:
 
 'resultingDescriptor' @ [62:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'function' @ [63:13] ==> val function: FunctionDescriptor defined in org.jetbrains.kotlin.idea.intentions.SimplifyAssertNotNullIntention.isApplicableTo[LocalVariableDescriptor]
 
@@ -191,8 +191,6 @@ Inferred types:
 'result' @ [90:40] ==> val result: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.intentions.SimplifyAssertNotNullIntention.applyTo[LocalVariableDescriptor]
 
 'right' @ [90:70] ==> public final val KtBinaryExpression.right: KtExpression?[MyPropertyDescriptor]
-
-'ShortenReferences' @ [91:13] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [91:31] ==> @field:JvmField public final val DEFAULT: ShortenReferences defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Companion[DeserializedPropertyDescriptor]
 

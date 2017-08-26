@@ -2,8 +2,6 @@
 
 'report' @ [32:99] ==> public abstract fun report(severity: CompilerMessageSeverity, message: String, location: CompilerMessageLocation? = ...): Unit defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector[DeserializedSimpleFunctionDescriptor]
 
-'AnalyzerWithCompilerReport' @ [33:13] ==> public companion object defined in org.jetbrains.kotlin.cli.common.messages.AnalyzerWithCompilerReport[FakeCallableDescriptorForObject]
-
 'convertSeverity' @ [33:40] ==> public final fun convertSeverity(severity: Severity): CompilerMessageSeverity defined in org.jetbrains.kotlin.cli.common.messages.AnalyzerWithCompilerReport.Companion[SimpleFunctionDescriptorImpl]
 
 'diagnostic' @ [33:56] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.cli.common.messages.MessageCollectorBasedReporter.report[ValueParameterDescriptorImpl]

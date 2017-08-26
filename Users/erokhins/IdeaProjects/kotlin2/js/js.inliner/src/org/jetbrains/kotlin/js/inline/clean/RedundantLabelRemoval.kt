@@ -59,7 +59,7 @@ Inferred types:
 
 'accept' @ [43:11] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.inline.clean.RedundantLabelRemoval.analyze.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'root' @ [43:18] ==> private final val root: JsStatement defined in org.jetbrains.kotlin.js.inline.clean.RedundantLabelRemoval[PropertyDescriptorImpl]
 
@@ -95,7 +95,7 @@ Inferred types:
 
 'replaceMe' @ [53:29] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsStatement..JsStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsStatement
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'x' @ [53:39] ==> value-parameter x: JsLabel defined in org.jetbrains.kotlin.js.inline.clean.RedundantLabelRemoval.perform.<no name provided>.endVisit[ValueParameterDescriptorImpl]
 
@@ -111,7 +111,7 @@ Inferred types:
 
 'accept' @ [61:11] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.inline.clean.RedundantLabelRemoval.perform.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'root' @ [61:18] ==> private final val root: JsStatement defined in org.jetbrains.kotlin.js.inline.clean.RedundantLabelRemoval[PropertyDescriptorImpl]
 
@@ -156,9 +156,9 @@ Inferred types:
             }
             else {
                 statement
-            }' @ [66:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {SourceInfoAwareJsNode & JsStatement}, elseBranch: {SourceInfoAwareJsNode & JsStatement}): {SourceInfoAwareJsNode & JsStatement}[SimpleFunctionDescriptorImpl]
+            }' @ [66:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: JsStatement, elseBranch: JsStatement): JsStatement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {SourceInfoAwareJsNode & JsStatement}
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JsStatement
 
 'name' @ [66:17] ==> value-parameter name: JsName defined in org.jetbrains.kotlin.js.inline.clean.RedundantLabelRemoval.perform[ValueParameterDescriptorImpl]
 

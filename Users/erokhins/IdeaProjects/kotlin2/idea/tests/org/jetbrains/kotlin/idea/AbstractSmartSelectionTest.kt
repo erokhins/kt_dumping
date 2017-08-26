@@ -30,3 +30,5 @@
 Inferred types:
     <T> -> KtElement
 
+'getExpressionShortText' @ [32:96] ==> public fun getExpressionShortText(element: KtElement): String defined in org.jetbrains.kotlin.idea.refactoring[DeserializedSimpleFunctionDescriptor]
+

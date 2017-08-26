@@ -117,7 +117,7 @@ Inferred types:
 
 'ArrayList' @ [90:16] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (AbstractTreeNode<Any>..AbstractTreeNode<Any>?)>..Collection<(AbstractTreeNode<Any>..AbstractTreeNode<Any>?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> AbstractTreeNode<Any>
+    <E : (Any..Any?)> -> (com.intellij.ide.util.treeView.AbstractTreeNode<kotlin.Any>..com.intellij.ide.util.treeView.AbstractTreeNode<kotlin.Any>?)
 
 'children' @ [90:26] ==> value-parameter children: Collection<AbstractTreeNode<Any>> defined in org.jetbrains.kotlin.idea.projectView.KotlinSelectInProjectViewProvider.modify[ValueParameterDescriptorImpl]
 

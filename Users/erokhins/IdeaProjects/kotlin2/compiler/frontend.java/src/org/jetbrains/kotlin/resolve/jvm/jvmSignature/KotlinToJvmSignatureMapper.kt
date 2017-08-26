@@ -1,10 +1,10 @@
 'subFunction' @ [27:9] ==> value-parameter subFunction: Method defined in org.jetbrains.kotlin.resolve.jvm.jvmSignature.erasedSignaturesEqualIgnoringReturnTypes[ValueParameterDescriptorImpl]
 
-'parametersDescriptor' @ [27:21] ==> private fun Method.parametersDescriptor(): String defined in org.jetbrains.kotlin.resolve.jvm.jvmSignature[SimpleFunctionDescriptorImpl]
+'parametersDescriptor' @ [27:21] ==> private fun Method.parametersDescriptor(): String defined in org.jetbrains.kotlin.resolve.jvm.jvmSignature in file KotlinToJvmSignatureMapper.kt[SimpleFunctionDescriptorImpl]
 
 'superFunction' @ [27:47] ==> value-parameter superFunction: Method defined in org.jetbrains.kotlin.resolve.jvm.jvmSignature.erasedSignaturesEqualIgnoringReturnTypes[ValueParameterDescriptorImpl]
 
-'parametersDescriptor' @ [27:61] ==> private fun Method.parametersDescriptor(): String defined in org.jetbrains.kotlin.resolve.jvm.jvmSignature[SimpleFunctionDescriptorImpl]
+'parametersDescriptor' @ [27:61] ==> private fun Method.parametersDescriptor(): String defined in org.jetbrains.kotlin.resolve.jvm.jvmSignature in file KotlinToJvmSignatureMapper.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [29:45] ==> public final val Method.descriptor: (String..String?)[MyPropertyDescriptor]
 

@@ -26,7 +26,7 @@
 
 'this' @ [69:5] ==> <this> defined in org.jetbrains.kotlin.backend.common.runOnFilePostfix[ReceiverParameterDescriptorImpl]
 
-'asClassLoweringPass' @ [69:10] ==> public fun DeclarationContainerLoweringPass.asClassLoweringPass(): ClassLoweringPass defined in org.jetbrains.kotlin.backend.common[SimpleFunctionDescriptorImpl]
+'asClassLoweringPass' @ [69:10] ==> public fun DeclarationContainerLoweringPass.asClassLoweringPass(): ClassLoweringPass defined in org.jetbrains.kotlin.backend.common in file Lower.kt[SimpleFunctionDescriptorImpl]
 
 'runOnFilePostfix' @ [69:32] ==> public fun ClassLoweringPass.runOnFilePostfix(irFile: IrFile): Unit defined in org.jetbrains.kotlin.backend.common in file Lower.kt[SimpleFunctionDescriptorImpl]
 

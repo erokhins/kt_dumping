@@ -56,7 +56,7 @@ Inferred types:
 
 'file' @ [55:30] ==> public final val file: KtFile defined in org.jetbrains.kotlin.idea.refactoring.move.changePackage.KotlinChangePackageRefactoring[PropertyDescriptorImpl]
 
-'getInternalReferencesToUpdateOnPackageNameChange' @ [55:35] ==> public fun KtElement.getInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'getInternalReferencesToUpdateOnPackageNameChange' @ [55:35] ==> public fun KtElement.getInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo): List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'changeInfo' @ [55:84] ==> val changeInfo: ContainerChangeInfo defined in org.jetbrains.kotlin.idea.refactoring.move.changePackage.KotlinChangePackageRefactoring.run[LocalVariableDescriptor]
 
@@ -76,7 +76,7 @@ Inferred types:
 
 'quoteIfNeeded' @ [58:49] ==> public fun FqName.quoteIfNeeded(): FqName defined in org.jetbrains.kotlin.idea.core[DeserializedSimpleFunctionDescriptor]
 
-'postProcessMoveUsages' @ [59:13] ==> public fun postProcessMoveUsages(usages: Collection<UsageInfo>, oldToNewElementsMapping: Map<PsiElement, PsiElement> = ..., shorteningMode: KtSimpleNameReference.ShorteningMode = ...): List<NonCodeUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'postProcessMoveUsages' @ [59:13] ==> public fun postProcessMoveUsages(usages: Collection<UsageInfo>, oldToNewElementsMapping: Map<PsiElement, PsiElement> = ..., shorteningMode: KtSimpleNameReference.ShorteningMode = ...): List<NonCodeUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'internalUsages' @ [59:35] ==> val internalUsages: List<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move.changePackage.KotlinChangePackageRefactoring.run[LocalVariableDescriptor]
 

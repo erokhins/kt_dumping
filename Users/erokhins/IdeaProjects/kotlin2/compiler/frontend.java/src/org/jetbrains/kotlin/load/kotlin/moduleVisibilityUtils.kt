@@ -2,7 +2,7 @@
 
 'getService' @ [42:32] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(ModuleVisibilityManager..ModuleVisibilityManager?)>): (ModuleVisibilityManager..ModuleVisibilityManager?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleVisibilityManager
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.ModuleVisibilityManager..org.jetbrains.kotlin.load.kotlin.ModuleVisibilityManager?)
 
 'project' @ [42:43] ==> value-parameter project: Project defined in org.jetbrains.kotlin.load.kotlin.ModuleVisibilityManager.SERVICE.getInstance[ValueParameterDescriptorImpl]
 
@@ -14,7 +14,7 @@ Inferred types:
 
 'getParentOfType' @ [49:43] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(PackageFragmentDescriptor..PackageFragmentDescriptor?)>, p2: Boolean): PackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> PackageFragmentDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor?)
 
 'descriptor' @ [49:59] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.load.kotlin.isContainedByCompiledPartOfOurModule[ValueParameterDescriptorImpl]
 
@@ -113,6 +113,8 @@ Inferred types:
     <R> -> File
 
 'VfsUtilCore' @ [72:93] ==> public constructor VfsUtilCore() defined in com.intellij.openapi.vfs.VfsUtilCore[JavaClassConstructorDescriptor]
+
+'virtualToIoFile' @ [72:106] ==> @NotNull public open fun virtualToIoFile(@NotNull p0: VirtualFile): File defined in com.intellij.openapi.vfs.VfsUtilCore[JavaMethodDescriptor]
 
 'ioFile' @ [75:16] ==> val ioFile: File? defined in org.jetbrains.kotlin.load.kotlin.isContainedByCompiledPartOfOurModule[LocalVariableDescriptor]
 

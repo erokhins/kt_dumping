@@ -14,7 +14,7 @@
 
 'stubTreeFromDecompiledText' @ [37:28] ==> val stubTreeFromDecompiledText: raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?) defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.AbstractBuiltInDecompilerTest.doTest[LocalVariableDescriptor]
 
-'serializeToString' @ [37:55] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'serializeToString' @ [37:55] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file AbstractClsStubBuilderTest.kt[SimpleFunctionDescriptorImpl]
 
 'assertEquals' @ [38:16] ==> public open fun assertEquals(p0: (String..String?), p1: (Any..Any?), p2: (Any..Any?)): Unit defined in org.junit.Assert[JavaMethodDescriptor]
 
@@ -24,7 +24,7 @@
 
 'stubTreeFromDecompiler' @ [38:87] ==> val stubTreeFromDecompiler: PsiFileStub<*> defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.AbstractBuiltInDecompilerTest.doTest[LocalVariableDescriptor]
 
-'serializeToString' @ [38:110] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'serializeToString' @ [38:110] ==> public fun StubElement<out PsiElement>.serializeToString(): String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file AbstractClsStubBuilderTest.kt[SimpleFunctionDescriptorImpl]
 
 'expectedText' @ [39:16] ==> val expectedText: String defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.AbstractBuiltInDecompilerTest.doTest[LocalVariableDescriptor]
 
@@ -49,8 +49,6 @@ Inferred types:
 'it' @ [50:72] ==> value-parameter it: (VirtualFile..VirtualFile?) defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.BuiltInDecompilerTest.configureAndBuildFileStub.<anonymous>[ValueParameterDescriptorImpl]
 
 'extension' @ [50:75] ==> public final val VirtualFile.extension: String?[MyPropertyDescriptor]
-
-'BuiltInSerializerProtocol' @ [50:88] ==> public object BuiltInSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.builtins[FakeCallableDescriptorForObject]
 
 'BUILTINS_FILE_EXTENSION' @ [50:114] ==> public final val BUILTINS_FILE_EXTENSION: String defined in org.jetbrains.kotlin.builtins.BuiltInSerializerProtocol[DeserializedPropertyDescriptor]
 
@@ -85,8 +83,6 @@ Inferred types:
 'configureByFile' @ [65:19] ==> public abstract fun configureByFile(@NotNull p0: String): (PsiFile..PsiFile?) defined in com.intellij.testFramework.fixtures.JavaCodeInsightTestFixture[JavaMethodDescriptor]
 
 'testDataPath' @ [65:35] ==> protected for synthetic extension final val BuiltInDecompilerForWrongAbiVersionTest.testDataPath: String[MyPropertyDescriptor]
-
-'BuiltInSerializerProtocol' @ [65:50] ==> public object BuiltInSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.builtins[FakeCallableDescriptorForObject]
 
 'getBuiltInsFilePath' @ [65:76] ==> public final fun getBuiltInsFilePath(fqName: FqName): String defined in org.jetbrains.kotlin.builtins.BuiltInSerializerProtocol[DeserializedSimpleFunctionDescriptor]
 
@@ -123,8 +119,6 @@ Inferred types:
 'text' @ [73:32] ==> public final val PsiFile.text: (String..String?)[MyPropertyDescriptor]
 
 'replace' @ [73:37] ==> public fun String.replace(oldValue: String, newValue: String, ignoreCase: Boolean = ...): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'BuiltInsBinaryVersion' @ [73:45] ==> public companion object defined in org.jetbrains.kotlin.builtins.BuiltInsBinaryVersion[FakeCallableDescriptorForObject]
 
 'INSTANCE' @ [73:67] ==> @field:JvmField public final val INSTANCE: BuiltInsBinaryVersion defined in org.jetbrains.kotlin.builtins.BuiltInsBinaryVersion.Companion[DeserializedPropertyDescriptor]
 

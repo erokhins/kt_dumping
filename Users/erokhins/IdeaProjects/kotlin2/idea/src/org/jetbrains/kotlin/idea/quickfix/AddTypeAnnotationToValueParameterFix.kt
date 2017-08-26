@@ -105,15 +105,15 @@ Inferred types:
 
 'diagnostic' @ [63:79] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.AddTypeAnnotationToValueParameterFix.Factory.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [63:91] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtParameter..KtParameter?)>.psiElement: (KtParameter..KtParameter?)[MyPropertyDescriptor]
+'psiElement' @ [63:91] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtParameter..KtParameter?)>.psiElement: KtParameter[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
 
-'element' @ [64:17] ==> val element: (KtParameter..KtParameter?) defined in org.jetbrains.kotlin.idea.quickfix.AddTypeAnnotationToValueParameterFix.Factory.createAction[LocalVariableDescriptor]
+'element' @ [64:17] ==> val element: KtParameter defined in org.jetbrains.kotlin.idea.quickfix.AddTypeAnnotationToValueParameterFix.Factory.createAction[LocalVariableDescriptor]
 
 'defaultValue' @ [64:25] ==> public final val KtParameter.defaultValue: KtExpression?[MyPropertyDescriptor]
 
 'AddTypeAnnotationToValueParameterFix' @ [65:20] ==> public constructor AddTypeAnnotationToValueParameterFix(element: KtParameter) defined in org.jetbrains.kotlin.idea.quickfix.AddTypeAnnotationToValueParameterFix[ClassConstructorDescriptorImpl]
 
-'element' @ [65:57] ==> val element: (KtParameter..KtParameter?) defined in org.jetbrains.kotlin.idea.quickfix.AddTypeAnnotationToValueParameterFix.Factory.createAction[LocalVariableDescriptor]
+'element' @ [65:57] ==> val element: KtParameter defined in org.jetbrains.kotlin.idea.quickfix.AddTypeAnnotationToValueParameterFix.Factory.createAction[LocalVariableDescriptor]
 

@@ -32,7 +32,7 @@ Inferred types:
 
 'callTypeAndReceiver' @ [46:26] ==> val callTypeAndReceiver: CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.completion.FromUnresolvedNamesCompletion.addNameSuggestions.<anonymous>[LocalVariableDescriptor]
 
-'callType' @ [46:46] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [46:46] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'descriptorKindFilter' @ [46:55] ==> public final val descriptorKindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.idea.util.CallType[DeserializedPropertyDescriptor]
 
@@ -123,7 +123,7 @@ Inferred types:
 
 'name' @ [72:61] ==> val name: String defined in org.jetbrains.kotlin.idea.completion.FromUnresolvedNamesCompletion.addNameSuggestions[LocalVariableDescriptor]
 
-'suppressAutoInsertion' @ [73:22] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'suppressAutoInsertion' @ [73:22] ==> public fun LookupElement.suppressAutoInsertion(): LookupElement defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'assignPriority' @ [74:22] ==> public fun LookupElement.assignPriority(priority: ItemPriority): LookupElement defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
@@ -133,9 +133,7 @@ Inferred types:
 
 'putUserData' @ [75:27] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'KotlinCompletionCharFilter' @ [75:39] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'SUPPRESS_ITEM_SELECTION_BY_CHARS_ON_TYPING' @ [75:66] ==> public final val SUPPRESS_ITEM_SELECTION_BY_CHARS_ON_TYPING: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter.Companion[PropertyDescriptorImpl]
 

@@ -43,13 +43,13 @@ Inferred types:
 
 'shortClassName' @ [43:33] ==> public final val ClassId.shortClassName: Name[MyPropertyDescriptor]
 
-'ref' @ [43:48] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [43:48] ==> public fun Name.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'classId' @ [43:55] ==> val classId: ClassId defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createTypeAliasStub[LocalVariableDescriptor]
 
 'asSingleFqName' @ [43:63] ==> @NotNull public open fun asSingleFqName(): FqName defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
 
-'ref' @ [43:80] ==> public fun FqName.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'ref' @ [43:80] ==> public fun FqName.ref(): StringRef defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [44:30] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -57,7 +57,7 @@ Inferred types:
 
 'isNestedClass' @ [44:39] ==> public final val ClassId.isNestedClass: Boolean[MyPropertyDescriptor]
 
-'createModifierListStubForDeclaration' @ [46:24] ==> public fun createModifierListStubForDeclaration(parent: StubElement<out PsiElement>, flags: Int, flagsToTranslate: List<FlagsToModifiers> = ..., additionalModifiers: List<KtModifierKeywordToken> = ...): KotlinModifierListStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createModifierListStubForDeclaration' @ [46:24] ==> public fun createModifierListStubForDeclaration(parent: StubElement<out PsiElement>, flags: Int, flagsToTranslate: List<FlagsToModifiers> = ..., additionalModifiers: List<KtModifierKeywordToken> = ...): KotlinModifierListStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'typeAlias' @ [46:61] ==> val typeAlias: KotlinTypeAliasStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createTypeAliasStub[LocalVariableDescriptor]
 
@@ -103,7 +103,7 @@ Inferred types:
 
 'flags' @ [54:50] ==> public final val ProtoBuf.TypeAlias.flags: Int[MyPropertyDescriptor]
 
-'createAnnotationStubs' @ [55:9] ==> public fun createAnnotationStubs(annotationIds: List<ClassId>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createAnnotationStubs' @ [55:9] ==> public fun createAnnotationStubs(annotationIds: List<ClassId>, parent: KotlinStubBaseImpl<*>): Unit defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'typeAliasProto' @ [55:31] ==> value-parameter typeAliasProto: ProtoBuf.TypeAlias defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder.createTypeAliasStub[ValueParameterDescriptorImpl]
 

@@ -159,8 +159,6 @@ Inferred types:
 
 'ConstraintContext' @ [97:27] ==> public constructor ConstraintContext(position: ConstraintPosition, derivedFrom: Set<TypeVariable>? = ..., initial: Boolean = ..., initialReduction: Boolean = ...) defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintContext[DeserializedClassConstructorDescriptor]
 
-'SPECIAL' @ [97:45] ==> enum entry SPECIAL defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[FakeCallableDescriptorForObject]
-
 'position' @ [97:53] ==> public final fun position(): ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[DeserializedSimpleFunctionDescriptor]
 
 'when (constraint.kind) {
@@ -210,8 +208,6 @@ Inferred types:
 'builder' @ [101:43] ==> val builder: ConstraintSystemBuilderImpl defined in org.jetbrains.kotlin.resolve.constraintSystem.AbstractConstraintSystemTest.doTest[LocalVariableDescriptor]
 
 'addConstraint' @ [101:51] ==> public final fun addConstraint(constraintKind: ConstraintSystemBuilderImpl.ConstraintKind, subType: KotlinType?, superType: KotlinType?, constraintContext: ConstraintContext): Unit defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl[DeserializedSimpleFunctionDescriptor]
-
-'ConstraintSystemBuilderImpl' @ [102:25] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl[FakeCallableDescriptorForObject]
 
 'EQUAL' @ [102:68] ==> enum entry EQUAL defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl.ConstraintKind[FakeCallableDescriptorForObject]
 

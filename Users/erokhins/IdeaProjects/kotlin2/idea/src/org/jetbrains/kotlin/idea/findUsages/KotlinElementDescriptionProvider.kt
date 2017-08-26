@@ -90,9 +90,9 @@ Inferred types:
 
 'internalSegments' @ [65:48] ==> val internalSegments: List<String> defined in org.jetbrains.kotlin.idea.findUsages.KotlinElementDescriptionProvider.fqName[LocalVariableDescriptor]
 
-'joinToString' @ [65:66] ==> public fun <T> Iterable<(Comparable<{Name & String}>..Comparable<{Name & String}>?)>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: (((Comparable<{Name & String}>..Comparable<{Name & String}>?)) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'joinToString' @ [65:66] ==> public fun <T> Iterable<(Comparable<*>..Comparable<*>?)>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: (((Comparable<*>..Comparable<*>?)) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (kotlin.Comparable<{Name & String}>..kotlin.Comparable<{Name & String}>?)
+    <T> -> (kotlin.Comparable<*>..kotlin.Comparable<*>?)
 
 'accept' @ [69:16] ==> public open fun <R, D> accept(visitor: KtVisitor<String, Unit>, data: Unit): String defined in org.jetbrains.kotlin.psi.KtTypeReference[DeserializedSimpleFunctionDescriptor]
 Inferred types:

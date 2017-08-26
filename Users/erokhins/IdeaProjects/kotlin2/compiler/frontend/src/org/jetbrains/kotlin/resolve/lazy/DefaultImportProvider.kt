@@ -46,6 +46,8 @@ Inferred types:
 
 'dependencyModule' @ [49:45] ==> value-parameter dependencyModule: ModuleDescriptor defined in org.jetbrains.kotlin.resolve.lazy.DefaultImportProvider.excludedImports.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
+'getPackage' @ [49:63] ==> public abstract fun getPackage(fqName: FqName): PackageViewDescriptor defined in org.jetbrains.kotlin.descriptors.ModuleDescriptor[DeserializedSimpleFunctionDescriptor]
+
 'flatMap' @ [49:75] ==> public inline fun <T, R> Iterable<PackageViewDescriptor>.flatMap(transform: (PackageViewDescriptor) -> Iterable<TypeAliasDescriptor>): List<TypeAliasDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PackageViewDescriptor
@@ -56,8 +58,6 @@ Inferred types:
 'memberScope' @ [50:28] ==> public abstract val memberScope: MemberScope defined in org.jetbrains.kotlin.descriptors.PackageViewDescriptor[DeserializedPropertyDescriptor]
 
 'getContributedDescriptors' @ [50:40] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [50:66] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'TYPE_ALIASES' @ [50:87] ==> @field:JvmField public final val TYPE_ALIASES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -71,7 +71,7 @@ Inferred types:
 
 'it' @ [53:27] ==> value-parameter it: TypeAliasDescriptor defined in org.jetbrains.kotlin.resolve.lazy.DefaultImportProvider.excludedImports.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'checkSinceKotlinVersionAccessibility' @ [53:30] ==> internal fun DeclarationDescriptor.checkSinceKotlinVersionAccessibility(languageVersionSettings: LanguageVersionSettings, actionIfInaccessible: ((ApiVersion) -> Unit)? = ...): Boolean defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'checkSinceKotlinVersionAccessibility' @ [53:30] ==> internal fun DeclarationDescriptor.checkSinceKotlinVersionAccessibility(languageVersionSettings: LanguageVersionSettings, actionIfInaccessible: ((ApiVersion) -> Unit)? = ...): Boolean defined in org.jetbrains.kotlin.resolve in file sinceKotlinUtil.kt[SimpleFunctionDescriptorImpl]
 
 'languageVersionSettings' @ [53:67] ==> private final val languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.lazy.DefaultImportProvider[PropertyDescriptorImpl]
 
@@ -132,6 +132,8 @@ Inferred types:
     <T> -> FqName
 
 'it' @ [65:72] ==> value-parameter it: FqName defined in org.jetbrains.kotlin.resolve.lazy.DefaultImportProvider.excludedImports.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+
+'isChildOf' @ [65:76] ==> public fun FqName.isChildOf(packageName: FqName): Boolean defined in org.jetbrains.kotlin.name[DeserializedSimpleFunctionDescriptor]
 
 'nonKotlinAliasedTypeFqNames' @ [67:9] ==> val nonKotlinAliasedTypeFqNames: List<FqName> defined in org.jetbrains.kotlin.resolve.lazy.DefaultImportProvider.excludedImports.<anonymous>[LocalVariableDescriptor]
 

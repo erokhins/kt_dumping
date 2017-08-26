@@ -26,8 +26,6 @@ Inferred types:
 
 'it' @ [37:21] ==> value-parameter it: (String..String?) defined in org.jetbrains.kotlin.idea.refactoring.pushDown.AbstractPushDownTest.doKotlinTest.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'KotlinPushDownHandler' @ [37:27] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownHandler[FakeCallableDescriptorForObject]
-
 'PUSH_DOWN_TEST_HELPER_KEY' @ [37:49] ==> public final val PUSH_DOWN_TEST_HELPER_KEY: String defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownHandler.Companion[DeserializedPropertyDescriptor]
 
 'helper' @ [37:76] ==> val helper: <no name provided> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.AbstractPushDownTest.doKotlinTest.<anonymous>[LocalVariableDescriptor]
@@ -52,7 +50,7 @@ Inferred types:
 
 'getParentOfType' @ [45:43] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(PsiClass..PsiClass?)>): PsiClass? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiClass
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
 
 'elementAt' @ [45:59] ==> val elementAt: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.pushDown.AbstractPushDownTest.doJavaTest.<anonymous>[LocalVariableDescriptor]
 
@@ -76,8 +74,8 @@ Inferred types:
 
 'PushDownProcessor' @ [49:13] ==> public constructor PushDownProcessor<MemberInfo : (MemberInfoBase<(PsiMember..PsiMember?)>..MemberInfoBase<(PsiMember..PsiMember?)>?), Member : (PsiElement..PsiElement?), Klass : (PsiElement..PsiElement?)>(@NotNull p0: PsiClass, @NotNull p1: (MutableList<(MemberInfo..MemberInfo?)>..List<(MemberInfo..MemberInfo?)>), @NotNull p2: raw (DocCommentPolicy<(PsiComment..PsiComment?)>..DocCommentPolicy<*>)) defined in com.intellij.refactoring.memberPushDown.PushDownProcessor[JavaClassConstructorDescriptor]
 Inferred types:
-    <MemberInfo : (MemberInfoBase<(Member..Member?)>..MemberInfoBase<(Member..Member?)>?)> -> MemberInfo
-    <Member : (PsiElement..PsiElement?)> -> PsiMember
+    <MemberInfo : (MemberInfoBase<(Member..Member?)>..MemberInfoBase<(Member..Member?)>?)> -> (com.intellij.refactoring.util.classMembers.MemberInfo..com.intellij.refactoring.util.classMembers.MemberInfo?)
+    <Member : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiMember..com.intellij.psi.PsiMember?)
     <Klass : (PsiElement..PsiElement?)> -> PsiClass
 
 'sourceClass' @ [49:31] ==> val sourceClass: PsiClass defined in org.jetbrains.kotlin.idea.refactoring.pushDown.AbstractPushDownTest.doJavaTest.<anonymous>[LocalVariableDescriptor]

@@ -17,15 +17,11 @@ Inferred types:
 
 'getJavaQualifiedName' @ [35:31] ==> private final fun getJavaQualifiedName(method: PsiMethod?): String? defined in org.jetbrains.kotlin.idea.actions.KotlinQualifiedNameProvider[SimpleFunctionDescriptorImpl]
 
-'LightClassUtil' @ [35:52] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
-
 'getLightClassMethod' @ [35:67] ==> public final fun getLightClassMethod(function: KtFunction): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [35:87] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.idea.actions.KotlinQualifiedNameProvider.getQualifiedName[ValueParameterDescriptorImpl]
 
 'getJavaQualifiedName' @ [36:26] ==> private final fun getJavaQualifiedName(method: PsiMethod?): String? defined in org.jetbrains.kotlin.idea.actions.KotlinQualifiedNameProvider[SimpleFunctionDescriptorImpl]
-
-'LightClassUtil' @ [36:47] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
 
 'getLightClassPropertyMethods' @ [36:62] ==> public final fun getLightClassPropertyMethods(property: KtProperty): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 

@@ -294,15 +294,11 @@ Inferred types:
 Inferred types:
     <T> -> AbstractProcessor
 
-'JavaKaptContextTest' @ [126:68] ==> public companion object defined in org.jetbrains.kotlin.kapt3.test.JavaKaptContextTest[FakeCallableDescriptorForObject]
-
 'simpleProcessor' @ [126:88] ==> public final fun simpleProcessor(): AbstractProcessor defined in org.jetbrains.kotlin.kapt3.test.JavaKaptContextTest.Companion[SimpleFunctionDescriptorImpl]
 
 'PathUtil' @ [127:67] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'getJdkClassesRootsFromCurrentJre' @ [127:76] ==> @JvmStatic public final fun getJdkClassesRootsFromCurrentJre(): List<File> defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedSimpleFunctionDescriptor]
-
-'PathUtil' @ [127:113] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'kotlinPathsForIdeaPlugin' @ [127:122] ==> @JvmStatic public final val kotlinPathsForIdeaPlugin: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 

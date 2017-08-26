@@ -47,11 +47,11 @@ Inferred types:
 
 'java' @ [49:46] ==> public val <T> KClass<out BasicMap<K, V>>.java: Class<out BasicMap<K, V>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> BasicMap<K, V>
+    <T> -> Captured(out BasicMap<K, V>)
 
 'simpleName' @ [49:51] ==> public final val <T : (Any..Any?)> Class<out BasicMap<K, V>>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> BasicMap<K, V>
+    <T : (Any..Any?)> -> Captured(out BasicMap<K, V>)
 
 'pushIndent' @ [50:17] ==> @NotNull public open fun pushIndent(): Printer defined in org.jetbrains.kotlin.utils.Printer[JavaMethodDescriptor]
 

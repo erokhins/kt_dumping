@@ -92,9 +92,9 @@ Inferred types:
 
 'annotationVisitor' @ [88:20] ==> val annotationVisitor: AnnotationVisitor defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryJavaAnnotation.Companion.addAnnotation[LocalVariableDescriptor]
 
-'lazy' @ [92:47] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> ClassifierResolutionContext.Result): Lazy<ClassifierResolutionContext.Result> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [92:47] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Result
+    <T> -> T
 
 'NONE' @ [92:73] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -295,12 +295,16 @@ Inferred types:
 
 'Name' @ [153:45] ==> private constructor Name(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.name.Name[JavaClassConstructorDescriptor]
 
+'isValidIdentifier' @ [153:51] ==> public open fun isValidIdentifier(@NotNull p0: String): Boolean defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
+
 'let' @ [153:71] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> Name): Name defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> Name
 
 'Name' @ [153:75] ==> private constructor Name(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.name.Name[JavaClassConstructorDescriptor]
+
+'identifier' @ [153:81] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
 'PlainJavaAnnotationArgument' @ [159:5] ==> public constructor PlainJavaAnnotationArgument(name: String?) defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.PlainJavaAnnotationArgument[ClassConstructorDescriptorImpl]
 

@@ -127,6 +127,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [68:66] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'value' @ [70:61] ==> value-parameter value: Collection<String> defined in org.jetbrains.kotlin.incremental.GradleIncrementalCacheImpl.SourceToOutputFilesMap.dumpValue[ValueParameterDescriptorImpl]
 
 'dumpCollection' @ [70:67] ==> public fun <T : Comparable<String>> Collection<String>.dumpCollection(): String defined in org.jetbrains.kotlin.incremental[DeserializedSimpleFunctionDescriptor]

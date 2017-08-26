@@ -2,7 +2,7 @@
 
 'psi' @ [28:55] ==> public final val <Psi : (PsiElement..PsiElement?)> JavaElementImpl<out (PsiElement..PsiElement?)>.psi: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <Psi : (PsiElement..PsiElement?)> -> Captured(*)
 
 'JavaSourceElementImpl' @ [32:72] ==> public constructor JavaSourceElementImpl(javaElement: JavaElement) defined in org.jetbrains.kotlin.load.java.components.JavaSourceElementImpl[ClassConstructorDescriptorImpl]
 

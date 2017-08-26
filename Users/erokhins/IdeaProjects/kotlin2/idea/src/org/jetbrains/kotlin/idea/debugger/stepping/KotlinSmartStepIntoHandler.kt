@@ -135,7 +135,7 @@ Inferred types:
 
 'valueArguments' @ [84:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'component1' @ [85:27] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>.component1(): (ValueParameterDescriptor..ValueParameterDescriptor?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -167,7 +167,7 @@ Inferred types:
 
 'resultingDescriptor' @ [87:68] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'KotlinLambdaSmartStepTarget' @ [88:41] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinLambdaSmartStepTarget[FakeCallableDescriptorForObject]
 
@@ -317,7 +317,7 @@ Inferred types:
 
 'resultingDescriptor' @ [150:59] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'propertyDescriptor' @ [151:25] ==> val propertyDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSmartStepIntoHandler.findSmartStepTargets.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
@@ -394,7 +394,7 @@ Inferred types:
 
 'delegatedResolvedCall' @ [163:73] ==> val delegatedResolvedCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSmartStepIntoHandler.findSmartStepTargets.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [163:95] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [163:95] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -404,11 +404,9 @@ Inferred types:
 
 'name' @ [164:67] ==> public final val PropertyDescriptor.name: Name[MyPropertyDescriptor]
 
-'KotlinMethodSmartStepTarget' @ [164:77] ==> public companion object defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinMethodSmartStepTarget[FakeCallableDescriptorForObject]
-
 'calcLabel' @ [164:105] ==> public final fun calcLabel(descriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinMethodSmartStepTarget.Companion[SimpleFunctionDescriptorImpl]
 
-'delegatedPropertyGetterDescriptor' @ [164:115] ==> val delegatedPropertyGetterDescriptor: (FunctionDescriptor..FunctionDescriptor?) defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSmartStepIntoHandler.findSmartStepTargets.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
+'delegatedPropertyGetterDescriptor' @ [164:115] ==> val delegatedPropertyGetterDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSmartStepIntoHandler.findSmartStepTargets.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
 'result' @ [165:33] ==> val result: OrderedSet<SmartStepTarget> defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSmartStepIntoHandler.findSmartStepTargets[LocalVariableDescriptor]
 
@@ -416,7 +414,7 @@ Inferred types:
 
 'KotlinMethodSmartStepTarget' @ [165:44] ==> public constructor KotlinMethodSmartStepTarget(descriptor: CallableMemberDescriptor, label: String, highlightElement: PsiElement, lines: Range<Int>) defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinMethodSmartStepTarget[ClassConstructorDescriptorImpl]
 
-'delegatedPropertyGetterDescriptor' @ [165:72] ==> val delegatedPropertyGetterDescriptor: (FunctionDescriptor..FunctionDescriptor?) defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSmartStepIntoHandler.findSmartStepTargets.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
+'delegatedPropertyGetterDescriptor' @ [165:72] ==> val delegatedPropertyGetterDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSmartStepIntoHandler.findSmartStepTargets.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
 'label' @ [165:107] ==> val label: String defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSmartStepIntoHandler.findSmartStepTargets.<no name provided>.visitSimpleNameExpression[LocalVariableDescriptor]
 
@@ -440,7 +438,7 @@ Inferred types:
 
 'resultingDescriptor' @ [176:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [177:21] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSmartStepIntoHandler.findSmartStepTargets.<no name provided>.recordFunction[LocalVariableDescriptor]
 
@@ -642,8 +640,6 @@ Inferred types:
 'stepTarget' @ [219:46] ==> value-parameter stepTarget: SmartStepTarget? defined in org.jetbrains.kotlin.idea.debugger.stepping.KotlinSmartStepIntoHandler.createMethodFilter[ValueParameterDescriptorImpl]
 
 'IntrinsicMethods' @ [224:27] ==> public constructor IntrinsicMethods(p0: (JvmTarget..JvmTarget?)) defined in org.jetbrains.kotlin.codegen.intrinsics.IntrinsicMethods[JavaClassConstructorDescriptor]
-
-'JvmTarget' @ [224:44] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [224:54] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 

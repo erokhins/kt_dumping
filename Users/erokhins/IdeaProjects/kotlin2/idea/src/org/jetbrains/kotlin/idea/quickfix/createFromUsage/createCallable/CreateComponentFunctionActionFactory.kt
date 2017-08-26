@@ -4,7 +4,7 @@ Inferred types:
 
 'getParentElementOfType' @ [33:22] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtDestructuringDeclaration..KtDestructuringDeclaration?)>..Class<(KtDestructuringDeclaration..KtDestructuringDeclaration?)>?)): KtDestructuringDeclaration? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtDestructuringDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDestructuringDeclaration..org.jetbrains.kotlin.psi.KtDestructuringDeclaration?)
 
 'diagnostic' @ [33:45] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.getElementOfInterest[ValueParameterDescriptorImpl]
 
@@ -23,7 +23,7 @@ Inferred types:
 
 'getParentElementOfType' @ [34:29] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getParentElementOfType(p0: (Diagnostic..Diagnostic?), p1: (Class<(KtForExpression..KtForExpression?)>..Class<(KtForExpression..KtForExpression?)>?)): KtForExpression? defined in org.jetbrains.kotlin.idea.core.quickfix.QuickFixUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtForExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtForExpression..org.jetbrains.kotlin.psi.KtForExpression?)
 
 'diagnostic' @ [34:52] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.getElementOfInterest[ValueParameterDescriptorImpl]
 
@@ -43,7 +43,7 @@ Inferred types:
 
 'diagnosticWithParameters' @ [40:20] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
-'a' @ [40:45] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)>.a: (Name..Name?)[MyPropertyDescriptor]
+'a' @ [40:45] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)>.a: Name[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
@@ -55,25 +55,25 @@ Inferred types:
 
 'isComponentLike' @ [41:42] ==> public final fun isComponentLike(name: Name): Boolean defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[DeserializedSimpleFunctionDescriptor]
 
-'name' @ [41:58] ==> val name: (Name..Name?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
+'name' @ [41:58] ==> val name: Name defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
 'DataClassDescriptorResolver' @ [43:31] ==> public object DataClassDescriptorResolver defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
 'getComponentIndex' @ [43:59] ==> public final fun getComponentIndex(componentName: String): Int defined in org.jetbrains.kotlin.resolve.DataClassDescriptorResolver[DeserializedSimpleFunctionDescriptor]
 
-'name' @ [43:77] ==> val name: (Name..Name?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
+'name' @ [43:77] ==> val name: Name defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
 'asString' @ [43:82] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
 'diagnosticWithParameters' @ [45:26] ==> val diagnosticWithParameters: DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
-'b' @ [45:51] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)>.b: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'b' @ [45:51] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), (Name..Name?), (KotlinType..KotlinType?)>.b: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.name.Name..org.jetbrains.kotlin.name.Name?)
     <B : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
-'targetType' @ [46:37] ==> val targetType: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
+'targetType' @ [46:37] ==> val targetType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
 'constructor' @ [46:48] ==> public abstract val constructor: TypeConstructor defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 
@@ -87,7 +87,7 @@ Inferred types:
 
 'TypeInfo' @ [49:29] ==> public fun TypeInfo(theType: KotlinType, variance: Variance): TypeInfo defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableInfo.kt[SimpleFunctionDescriptorImpl]
 
-'targetType' @ [49:38] ==> val targetType: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
+'targetType' @ [49:38] ==> val targetType: KotlinType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
 'IN_VARIANCE' @ [49:59] ==> enum entry IN_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
@@ -107,7 +107,7 @@ Inferred types:
 
 'FunctionInfo' @ [55:16] ==> public constructor FunctionInfo(name: String, receiverTypeInfo: TypeInfo, returnTypeInfo: TypeInfo, possibleContainers: List<KtElement> = ..., parameterInfos: List<ParameterInfo> = ..., typeParameterInfos: List<TypeInfo> = ..., isOperator: Boolean = ..., isInfix: Boolean = ..., isAbstract: Boolean = ...) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder.FunctionInfo[ClassConstructorDescriptorImpl]
 
-'name' @ [55:29] ==> val name: (Name..Name?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
+'name' @ [55:29] ==> val name: Name defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createCallable.CreateComponentFunctionActionFactory.createCallableInfo[LocalVariableDescriptor]
 
 'identifier' @ [55:34] ==> public final val Name.identifier: String[MyPropertyDescriptor]
 

@@ -1,6 +1,6 @@
 'root' @ [28:29] ==> private final val root: JsFunction defined in org.jetbrains.kotlin.js.inline.clean.RedundantStatementElimination[PropertyDescriptorImpl]
 
-'collectLocalVariables' @ [28:34] ==> public fun JsFunction.collectLocalVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectLocalVariables' @ [28:34] ==> public fun JsFunction.collectLocalVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'process' @ [32:9] ==> private final fun process(): Unit defined in org.jetbrains.kotlin.js.inline.clean.RedundantStatementElimination[SimpleFunctionDescriptorImpl]
 
@@ -48,7 +48,7 @@
 
 'addPrevious' @ [43:29] ==> public open fun <R : (JsNode..JsNode?)> addPrevious(p0: (MutableList<(JsExpressionStatement..JsExpressionStatement?)>..List<(JsExpressionStatement..JsExpressionStatement?)>?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpressionStatement
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'replacement' @ [43:41] ==> val replacement: List<JsExpression> defined in org.jetbrains.kotlin.js.inline.clean.RedundantStatementElimination.process.<no name provided>.visit[LocalVariableDescriptor]
 
@@ -126,7 +126,7 @@ Inferred types:
 
 'replaceMe' @ [59:25] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpression..JsExpression?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpression
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'replacement' @ [59:35] ==> val replacement: (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.clean.RedundantStatementElimination.process.<no name provided>.visit[LocalVariableDescriptor]
 
@@ -140,7 +140,7 @@ Inferred types:
 
 'accept' @ [63:11] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsBlock..JsBlock?)): (JsBlock..JsBlock?) defined in org.jetbrains.kotlin.js.inline.clean.RedundantStatementElimination.process.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsBlock
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsBlock..org.jetbrains.kotlin.js.backend.ast.JsBlock?)
 
 'root' @ [63:18] ==> private final val root: JsFunction defined in org.jetbrains.kotlin.js.inline.clean.RedundantStatementElimination[PropertyDescriptorImpl]
 

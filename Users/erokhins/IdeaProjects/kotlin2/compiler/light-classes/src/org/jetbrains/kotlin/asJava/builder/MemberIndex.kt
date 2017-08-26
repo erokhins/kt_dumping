@@ -8,13 +8,11 @@ Inferred types:
 
 'stub' @ [32:49] ==> public final val <Stub : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> StubBasedPsiElement<out raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>.stub: (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <Stub : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> raw (com.intellij.psi.stubs.StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<*>?)
+    <Stub : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> Captured(*)
 
 'getUserData' @ [32:75] ==> @Nullable public abstract fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(MemberIndex..MemberIndex?)>): MemberIndex? defined in com.intellij.openapi.util.UserDataHolder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MemberIndex
-
-'MemberIndex' @ [32:87] ==> public companion object defined in org.jetbrains.kotlin.asJava.builder.MemberIndex[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.asJava.builder.MemberIndex..org.jetbrains.kotlin.asJava.builder.MemberIndex?)
 
 'KEY' @ [32:99] ==> @JvmField public final val KEY: Key<(MemberIndex..MemberIndex?)> defined in org.jetbrains.kotlin.asJava.builder.MemberIndex.Companion[PropertyDescriptorImpl]
 

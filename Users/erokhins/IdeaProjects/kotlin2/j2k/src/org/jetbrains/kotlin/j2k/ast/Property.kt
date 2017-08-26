@@ -28,7 +28,7 @@
 
 'modifiers' @ [44:25] ==> var modifiers: Modifiers defined in org.jetbrains.kotlin.j2k.ast.Property.presentationModifiers[LocalVariableDescriptor]
 
-'filter' @ [44:35] ==> public fun Modifiers.filter(predicate: (Modifier) -> Boolean): Modifiers defined in org.jetbrains.kotlin.j2k.ast[SimpleFunctionDescriptorImpl]
+'filter' @ [44:35] ==> public fun Modifiers.filter(predicate: (Modifier) -> Boolean): Modifiers defined in org.jetbrains.kotlin.j2k.ast in file Modifier.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [44:44] ==> value-parameter it: Modifier defined in org.jetbrains.kotlin.j2k.ast.Property.presentationModifiers.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -77,8 +77,6 @@ Inferred types:
 'getDefaultInitializer' @ [62:32] ==> public fun getDefaultInitializer(property: Property): Expression? defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [62:54] ==> <this> defined in org.jetbrains.kotlin.j2k.ast.Property[LazyClassReceiverParameterDescriptor]
-
-'Element' @ [62:63] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Element[FakeCallableDescriptorForObject]
 
 'Empty' @ [62:71] ==> public object Empty : Element defined in org.jetbrains.kotlin.j2k.ast.Element[FakeCallableDescriptorForObject]
 

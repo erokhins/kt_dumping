@@ -4,8 +4,6 @@
 
 'File' @ [9:18] ==> public constructor File(p0: (File..File?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
-'AbstractKotlinUastTest' @ [9:23] ==> protected companion object defined in org.jetbrains.uast.test.kotlin.AbstractKotlinUastTest[FakeCallableDescriptorForObject]
-
 'TEST_KOTLIN_MODEL_DIR' @ [9:46] ==> public final val TEST_KOTLIN_MODEL_DIR: File defined in org.jetbrains.uast.test.kotlin.AbstractKotlinUastTest.Companion[PropertyDescriptorImpl]
 
 'testName' @ [9:69] ==> value-parameter testName: String defined in org.jetbrains.uast.test.kotlin.AbstractKotlinValuesTest.getTestFile[ValueParameterDescriptorImpl]

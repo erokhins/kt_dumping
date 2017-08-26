@@ -8,7 +8,7 @@
 
 'FqName' @ [32:48] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
-'findJvmSyntheticAnnotation' @ [34:57] ==> public fun DeclarationDescriptor.findJvmSyntheticAnnotation(): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.annotations[SimpleFunctionDescriptorImpl]
+'findJvmSyntheticAnnotation' @ [34:57] ==> public fun DeclarationDescriptor.findJvmSyntheticAnnotation(): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.annotations in file AnnotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'getAnnotationByFqName' @ [37:25] ==> @Nullable public open fun getAnnotationByFqName(@NotNull p0: Annotations, @NotNull p1: FqName): AnnotationDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
@@ -30,11 +30,11 @@
 
 'parameterName' @ [45:46] ==> value-parameter parameterName: String defined in org.jetbrains.kotlin.resolve.annotations.argumentValue[ValueParameterDescriptorImpl]
 
-'takeUnless' @ [45:62] ==> @InlineOnly @SinceKotlin public inline fun <T> ConstantValue<Any?>?.takeUnless(predicate: (ConstantValue<Any?>?) -> Boolean): ConstantValue<Any?>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'takeUnless' @ [45:62] ==> @InlineOnly @SinceKotlin public inline fun <T> ConstantValue<*>?.takeUnless(predicate: (ConstantValue<*>?) -> Boolean): ConstantValue<*>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ConstantValue<Any?>?
+    <T> -> ConstantValue<*>?
 
-'it' @ [45:75] ==> value-parameter it: ConstantValue<Any?>? defined in org.jetbrains.kotlin.resolve.annotations.argumentValue.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [45:75] ==> value-parameter it: ConstantValue<*>? defined in org.jetbrains.kotlin.resolve.annotations.argumentValue.<anonymous>[ValueParameterDescriptorImpl]
 
 'value' @ [45:95] ==> public open val value: Any? defined in org.jetbrains.kotlin.resolve.constants.ConstantValue[DeserializedPropertyDescriptor]
 

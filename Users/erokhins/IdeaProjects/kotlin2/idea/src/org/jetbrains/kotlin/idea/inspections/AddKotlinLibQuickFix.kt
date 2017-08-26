@@ -16,8 +16,6 @@ Inferred types:
 
 'MavenExternalLibraryDescriptor' @ [56:57] ==> public constructor MavenExternalLibraryDescriptor(groupId: String, artifactId: String, version: String) defined in org.jetbrains.kotlin.idea.inspections.AddKotlinLibQuickFix.MavenExternalLibraryDescriptor[ClassConstructorDescriptorImpl]
 
-'AddKotlinLibQuickFix' @ [57:88] ==> public companion object defined in org.jetbrains.kotlin.idea.inspections.AddKotlinLibQuickFix[FakeCallableDescriptorForObject]
-
 'getKotlinStdlibVersion' @ [57:109] ==> public final fun getKotlinStdlibVersion(module: Module): String defined in org.jetbrains.kotlin.idea.inspections.AddKotlinLibQuickFix.Companion[SimpleFunctionDescriptorImpl]
 
 'module' @ [57:132] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.inspections.AddReflectionQuickFix.getLibraryDescriptor[ValueParameterDescriptorImpl]
@@ -29,6 +27,8 @@ Inferred types:
 'createIntentionForFirstParentOfType' @ [60:72] ==> public inline fun <reified T : PsiElement> Diagnostic.createIntentionForFirstParentOfType(factory: (KtElement) -> KotlinQuickFixAction<KtElement>?): KotlinQuickFixAction<KtElement>? defined in org.jetbrains.kotlin.idea.quickfix.quickfixUtil[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified T : PsiElement> -> KtElement
+
+'AddReflectionQuickFix' @ [60:110] ==> public constructor AddReflectionQuickFix(element: KtElement) defined in org.jetbrains.kotlin.idea.inspections.AddReflectionQuickFix[ClassConstructorDescriptorImpl]
 
 'AddKotlinLibQuickFix' @ [65:11] ==> public constructor AddKotlinLibQuickFix(element: KtElement, libraryJarDescriptors: List<LibraryJarDescriptor>) defined in org.jetbrains.kotlin.idea.inspections.AddKotlinLibQuickFix[ClassConstructorDescriptorImpl]
 
@@ -47,8 +47,6 @@ Inferred types:
 'text' @ [68:36] ==> public final val AddTestLibQuickFix.text: String[MyPropertyDescriptor]
 
 'MavenExternalLibraryDescriptor' @ [70:57] ==> public constructor MavenExternalLibraryDescriptor(groupId: String, artifactId: String, version: String) defined in org.jetbrains.kotlin.idea.inspections.AddKotlinLibQuickFix.MavenExternalLibraryDescriptor[ClassConstructorDescriptorImpl]
-
-'AddKotlinLibQuickFix' @ [71:88] ==> public companion object defined in org.jetbrains.kotlin.idea.inspections.AddKotlinLibQuickFix[FakeCallableDescriptorForObject]
 
 'getKotlinStdlibVersion' @ [71:109] ==> public final fun getKotlinStdlibVersion(module: Module): String defined in org.jetbrains.kotlin.idea.inspections.AddKotlinLibQuickFix.Companion[SimpleFunctionDescriptorImpl]
 
@@ -70,7 +68,7 @@ Inferred types:
 
 'getParentOfType' @ [81:29] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtImportDirective..KtImportDirective?)>): KtImportDirective? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtImportDirective
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtImportDirective..org.jetbrains.kotlin.psi.KtImportDirective?)
 
 'diagnostic' @ [81:45] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.inspections.AddTestLibQuickFix.Companion.createAction[ValueParameterDescriptorImpl]
 
@@ -82,7 +80,7 @@ Inferred types:
 
 'unresolvedReference' @ [83:34] ==> val unresolvedReference: DiagnosticWithParameters1<(KtReferenceExpression..KtReferenceExpression?), (KtReferenceExpression..KtReferenceExpression?)> defined in org.jetbrains.kotlin.idea.inspections.AddTestLibQuickFix.Companion.createAction[LocalVariableDescriptor]
 
-'a' @ [83:54] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtReferenceExpression..KtReferenceExpression?), (KtReferenceExpression..KtReferenceExpression?)>.a: (KtReferenceExpression..KtReferenceExpression?)[MyPropertyDescriptor]
+'a' @ [83:54] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtReferenceExpression..KtReferenceExpression?), (KtReferenceExpression..KtReferenceExpression?)>.a: KtReferenceExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
@@ -152,6 +150,8 @@ Inferred types:
 'createIntentionForFirstParentOfType' @ [106:39] ==> public inline fun <reified T : PsiElement> Diagnostic.createIntentionForFirstParentOfType(factory: (KtElement) -> KotlinQuickFixAction<KtElement>?): KotlinQuickFixAction<KtElement>? defined in org.jetbrains.kotlin.idea.quickfix.quickfixUtil[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified T : PsiElement> -> KtElement
+
+'AddTestLibQuickFix' @ [106:77] ==> public constructor AddTestLibQuickFix(element: KtElement) defined in org.jetbrains.kotlin.idea.inspections.AddTestLibQuickFix[ClassConstructorDescriptorImpl]
 
 'KotlinQuickFixAction<KtElement>' @ [117:94] ==> public constructor KotlinQuickFixAction<out T : PsiElement>(element: KtElement) defined in org.jetbrains.kotlin.idea.quickfix.KotlinQuickFixAction[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -245,11 +245,11 @@ Inferred types:
 
 'instance' @ [144:57] ==> public final val instance: KotlinJavaModuleConfigurator defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator.Companion[PropertyDescriptorImpl]
 
-'createConfigureKotlinNotificationCollector' @ [146:25] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'createConfigureKotlinNotificationCollector' @ [146:25] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration in file NotificationMessageCollector.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [146:68] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.inspections.AddKotlinLibQuickFix.invoke[ValueParameterDescriptorImpl]
 
-'findAllUsedLibraries' @ [148:25] ==> public fun findAllUsedLibraries(project: Project): MultiMap<Library, Module> defined in org.jetbrains.kotlin.idea.versions[SimpleFunctionDescriptorImpl]
+'findAllUsedLibraries' @ [148:25] ==> public fun findAllUsedLibraries(project: Project): MultiMap<Library, Module> defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [148:46] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.inspections.AddKotlinLibQuickFix.invoke[ValueParameterDescriptorImpl]
 

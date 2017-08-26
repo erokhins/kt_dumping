@@ -324,7 +324,7 @@ Inferred types:
 
 'getService' @ [202:50] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(CoreJavaFileManager..CoreJavaFileManager?)>): (CoreJavaFileManager..CoreJavaFileManager?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CoreJavaFileManager
+    <T : (Any..Any?)> -> (com.intellij.core.CoreJavaFileManager..com.intellij.core.CoreJavaFileManager?)
 
 'project' @ [202:61] ==> public final val KotlinCliJavaFileManagerTest.project: Project[MyPropertyDescriptor]
 
@@ -359,8 +359,6 @@ Inferred types:
 'JavaRoot' @ [206:49] ==> public constructor JavaRoot(file: VirtualFile, type: JavaRoot.RootType, prefixFqName: FqName? = ...) defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot[DeserializedClassConstructorDescriptor]
 
 'root' @ [206:58] ==> val root: VirtualFile defined in org.jetbrains.kotlin.cli.jvm.KotlinCliJavaFileManagerTest.configureManager[LocalVariableDescriptor]
-
-'JavaRoot' @ [206:64] ==> public companion object RootTypes defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot[FakeCallableDescriptorForObject]
 
 'SOURCE' @ [206:82] ==> enum entry SOURCE defined in org.jetbrains.kotlin.cli.jvm.index.JavaRoot.RootType[FakeCallableDescriptorForObject]
 

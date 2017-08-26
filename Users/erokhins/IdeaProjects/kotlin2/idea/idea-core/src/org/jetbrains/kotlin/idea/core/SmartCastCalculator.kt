@@ -93,8 +93,6 @@ Inferred types:
 
 'dataFlowInfo' @ [80:13] ==> value-parameter dataFlowInfo: DataFlowInfo defined in org.jetbrains.kotlin.idea.core.SmartCastCalculator.processDataFlowInfo[ValueParameterDescriptorImpl]
 
-'DataFlowInfo' @ [80:29] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [80:42] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[DeserializedPropertyDescriptor]
 
 'emptyMap' @ [80:56] ==> public fun <K, V> emptyMap(): Map<Any, SmartCastCalculator.SmartCastInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]

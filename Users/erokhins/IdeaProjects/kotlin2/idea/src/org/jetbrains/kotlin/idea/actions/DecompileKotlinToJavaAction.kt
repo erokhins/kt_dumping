@@ -22,7 +22,7 @@
 
 'getData' @ [42:22] ==> @Nullable public open fun <T : (Any..Any?)> getData(@NotNull p0: DataKey<(PsiFile..PsiFile?)>): PsiFile? defined in com.intellij.openapi.actionSystem.AnActionEvent[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiFile
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiFile..com.intellij.psi.PsiFile?)
 
 'PSI_FILE' @ [42:45] ==> public final val PSI_FILE: (DataKey<(PsiFile..PsiFile?)>..DataKey<(PsiFile..PsiFile?)>?) defined in com.intellij.openapi.actionSystem.CommonDataKeys[JavaPropertyDescriptor]
 
@@ -30,7 +30,7 @@ Inferred types:
 
 'file' @ [43:14] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.actions.DecompileKotlinToJavaAction.getBinaryKotlinFile[LocalVariableDescriptor]
 
-'canBeDecompiledToJava' @ [43:19] ==> public fun KtFile.canBeDecompiledToJava(): Boolean defined in org.jetbrains.kotlin.idea.actions[SimpleFunctionDescriptorImpl]
+'canBeDecompiledToJava' @ [43:19] ==> public fun KtFile.canBeDecompiledToJava(): Boolean defined in org.jetbrains.kotlin.idea.actions in file DecompileKotlinToJavaAction.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [45:16] ==> val file: KtFile defined in org.jetbrains.kotlin.idea.actions.DecompileKotlinToJavaAction.getBinaryKotlinFile[LocalVariableDescriptor]
 
@@ -48,7 +48,7 @@ Inferred types:
 
 'psiFile' @ [55:36] ==> value-parameter psiFile: PsiFile defined in org.jetbrains.kotlin.idea.actions.DecompileKotlinToJavaActionProvider.getActions[ValueParameterDescriptorImpl]
 
-'canBeDecompiledToJava' @ [55:44] ==> public fun KtFile.canBeDecompiledToJava(): Boolean defined in org.jetbrains.kotlin.idea.actions[SimpleFunctionDescriptorImpl]
+'canBeDecompiledToJava' @ [55:44] ==> public fun KtFile.canBeDecompiledToJava(): Boolean defined in org.jetbrains.kotlin.idea.actions in file DecompileKotlinToJavaAction.kt[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [55:76] ==> public fun <T> emptyList(): List<AttachSourcesProvider.AttachSourcesAction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

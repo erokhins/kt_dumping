@@ -24,8 +24,6 @@ Inferred types:
 
 'useInstance' @ [60:5] ==> public fun StorageComponentContainer.useInstance(instance: Any): Unit defined in org.jetbrains.kotlin.container[DeserializedSimpleFunctionDescriptor]
 
-'VirtualFileFinderFactory' @ [60:17] ==> public companion object SERVICE defined in org.jetbrains.kotlin.load.kotlin.VirtualFileFinderFactory[FakeCallableDescriptorForObject]
-
 'getInstance' @ [60:42] ==> public final fun getInstance(project: Project): VirtualFileFinderFactory defined in org.jetbrains.kotlin.load.kotlin.VirtualFileFinderFactory.SERVICE[SimpleFunctionDescriptorImpl]
 
 'project' @ [60:54] ==> value-parameter project: Project defined in org.jetbrains.kotlin.frontend.java.di.configureJavaTopDownAnalysis[ValueParameterDescriptorImpl]
@@ -137,8 +135,6 @@ Inferred types:
 Inferred types:
     <T> -> Jsr305State
 
-'AnalysisFlag' @ [104:49] ==> public companion object Flags defined in org.jetbrains.kotlin.config.AnalysisFlag[FakeCallableDescriptorForObject]
-
 'jsr305GlobalState' @ [104:62] ==> @JvmStatic public final val jsr305GlobalState: AnalysisFlag<Jsr305State> defined in org.jetbrains.kotlin.config.AnalysisFlag.Flags[DeserializedPropertyDescriptor]
 
 'useBuiltInsProvider' @ [106:9] ==> value-parameter useBuiltInsProvider: Boolean defined in org.jetbrains.kotlin.frontend.java.di.createContainerForLazyResolveWithJava[ValueParameterDescriptorImpl]
@@ -179,7 +175,7 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> KotlinCodeAnalyzer
 
-'createContainerForLazyResolveWithJava' @ [128:24] ==> public fun createContainerForLazyResolveWithJava(moduleContext: ModuleContext, bindingTrace: BindingTrace, declarationProviderFactory: DeclarationProviderFactory, moduleContentScope: GlobalSearchScope, moduleClassResolver: ModuleClassResolver, targetEnvironment: TargetEnvironment, lookupTracker: LookupTracker, packagePartProvider: PackagePartProvider, jvmTarget: JvmTarget, languageVersionSettings: LanguageVersionSettings, useBuiltInsProvider: Boolean, configureJavaClassFinder: (StorageComponentContainer.() -> Unit)? = ...): StorageComponentContainer defined in org.jetbrains.kotlin.frontend.java.di[SimpleFunctionDescriptorImpl]
+'createContainerForLazyResolveWithJava' @ [128:24] ==> public fun createContainerForLazyResolveWithJava(moduleContext: ModuleContext, bindingTrace: BindingTrace, declarationProviderFactory: DeclarationProviderFactory, moduleContentScope: GlobalSearchScope, moduleClassResolver: ModuleClassResolver, targetEnvironment: TargetEnvironment, lookupTracker: LookupTracker, packagePartProvider: PackagePartProvider, jvmTarget: JvmTarget, languageVersionSettings: LanguageVersionSettings, useBuiltInsProvider: Boolean, configureJavaClassFinder: (StorageComponentContainer.() -> Unit)? = ...): StorageComponentContainer defined in org.jetbrains.kotlin.frontend.java.di in file injection.kt[SimpleFunctionDescriptorImpl]
 
 'moduleContext' @ [129:9] ==> value-parameter moduleContext: ModuleContext defined in org.jetbrains.kotlin.frontend.java.di.createContainerForTopDownAnalyzerForJvm[ValueParameterDescriptorImpl]
 
@@ -224,8 +220,6 @@ Inferred types:
 'languageVersionSettings' @ [140:24] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.frontend.java.di.initialize[ValueParameterDescriptorImpl]
 
 'supportsFeature' @ [140:48] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [140:64] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'AdditionalBuiltInsMembers' @ [140:80] ==> enum entry AdditionalBuiltInsMembers defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

@@ -4,8 +4,6 @@
 
 'STUB_VERSION' @ [42:58] ==> public const final val STUB_VERSION: Int defined in com.intellij.psi.impl.compiled.ClassFileStubBuilder[JavaPropertyDescriptor]
 
-'KotlinStubVersions' @ [42:73] ==> public object KotlinStubVersions defined in org.jetbrains.kotlin.psi.stubs[FakeCallableDescriptorForObject]
-
 'CLASSFILE_STUB_VERSION' @ [42:92] ==> public const final val CLASSFILE_STUB_VERSION: Int defined in org.jetbrains.kotlin.psi.stubs.KotlinStubVersions[DeserializedPropertyDescriptor]
 
 'content' @ [45:20] ==> value-parameter content: FileContent defined in org.jetbrains.kotlin.idea.decompiler.classFile.KotlinClsStubBuilder.buildFileStub[ValueParameterDescriptorImpl]
@@ -28,7 +26,9 @@
 
 'content' @ [51:46] ==> public final val FileContent.content: ByteArray[MyPropertyDescriptor]
 
-'IDEKotlinBinaryClassCache' @ [55:27] ==> public object IDEKotlinBinaryClassCache defined in org.jetbrains.kotlin.idea.caches in file IDEKotlinBinaryClassCache.kt[FakeCallableDescriptorForObject]
+'?:' @ [55:27] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KotlinJvmBinaryClass?, right: KotlinJvmBinaryClass): KotlinJvmBinaryClass[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KotlinJvmBinaryClass
 
 'getKotlinBinaryClass' @ [55:53] ==> public final fun getKotlinBinaryClass(file: VirtualFile, fileContent: ByteArray? = ...): KotlinJvmBinaryClass? defined in org.jetbrains.kotlin.idea.caches.IDEKotlinBinaryClassCache[SimpleFunctionDescriptorImpl]
 
@@ -60,7 +60,7 @@
 
 'isCompatible' @ [59:37] ==> public open fun isCompatible(): Boolean defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion[DeserializedSimpleFunctionDescriptor]
 
-'createIncompatibleAbiVersionFileStub' @ [60:20] ==> public fun createIncompatibleAbiVersionFileStub(): KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createIncompatibleAbiVersionFileStub' @ [60:20] ==> public fun createIncompatibleAbiVersionFileStub(): KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'createStubBuilderComponents' @ [63:26] ==> private final fun createStubBuilderComponents(file: VirtualFile, packageFqName: FqName, fileContent: ByteArray): ClsStubBuilderComponents defined in org.jetbrains.kotlin.idea.decompiler.classFile.KotlinClsStubBuilder[SimpleFunctionDescriptorImpl]
 
@@ -76,7 +76,7 @@
 
 'MULTIFILE_CLASS' @ [64:51] ==> enum entry MULTIFILE_CLASS defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
 
-'findMultifileClassParts' @ [65:29] ==> public fun findMultifileClassParts(file: VirtualFile, classId: ClassId, header: KotlinClassHeader): List<KotlinJvmBinaryClass> defined in org.jetbrains.kotlin.idea.decompiler.classFile[SimpleFunctionDescriptorImpl]
+'findMultifileClassParts' @ [65:29] ==> public fun findMultifileClassParts(file: VirtualFile, classId: ClassId, header: KotlinClassHeader): List<KotlinJvmBinaryClass> defined in org.jetbrains.kotlin.idea.decompiler.classFile in file ClassFileDecompilerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [65:53] ==> value-parameter file: VirtualFile defined in org.jetbrains.kotlin.idea.decompiler.classFile.KotlinClsStubBuilder.doBuildFileStub[ValueParameterDescriptorImpl]
 
@@ -84,7 +84,7 @@
 
 'header' @ [65:68] ==> val header: KotlinClassHeader defined in org.jetbrains.kotlin.idea.decompiler.classFile.KotlinClsStubBuilder.doBuildFileStub[LocalVariableDescriptor]
 
-'createMultifileClassStub' @ [66:20] ==> public fun createMultifileClassStub(header: KotlinClassHeader, partFiles: List<KotlinJvmBinaryClass>, facadeFqName: FqName, components: ClsStubBuilderComponents): KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder[SimpleFunctionDescriptorImpl]
+'createMultifileClassStub' @ [66:20] ==> public fun createMultifileClassStub(header: KotlinClassHeader, partFiles: List<KotlinJvmBinaryClass>, facadeFqName: FqName, components: ClsStubBuilderComponents): KotlinFileStubImpl defined in org.jetbrains.kotlin.idea.decompiler.stubBuilder in file clsStubBuilding.kt[SimpleFunctionDescriptorImpl]
 
 'header' @ [66:45] ==> val header: KotlinClassHeader defined in org.jetbrains.kotlin.idea.decompiler.classFile.KotlinClsStubBuilder.doBuildFileStub[LocalVariableDescriptor]
 

@@ -36,7 +36,7 @@ Inferred types:
 
 'putUserData' @ [37:32] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(String..String?)>, @Nullable p1: String?): Unit defined in com.intellij.openapi.compiler.CompileScope[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'HISTORY_LABEL_KEY' @ [37:44] ==> public val HISTORY_LABEL_KEY: Key<(String..String?)> defined in org.jetbrains.kotlin.idea.internal.makeBackup in file MakeBackupCompileTask.kt[PropertyDescriptorImpl]
 

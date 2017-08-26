@@ -115,7 +115,7 @@ Inferred types:
 
 'factory' @ [55:37] ==> val factory: KtPsiFactory defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.intentions.WhenToIfIntention.applyTo[LocalVariableDescriptor]
 
-'combineWhenConditions' @ [55:45] ==> public fun KtPsiFactory.combineWhenConditions(conditions: Array<KtWhenCondition>, subject: KtExpression?): KtExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations[SimpleFunctionDescriptorImpl]
+'combineWhenConditions' @ [55:45] ==> public fun KtPsiFactory.combineWhenConditions(conditions: Array<KtWhenCondition>, subject: KtExpression?): KtExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file branchedTransformationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'entry' @ [55:67] ==> val entry: (KtWhenEntry..KtWhenEntry?) defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.intentions.WhenToIfIntention.applyTo.<anonymous>[LocalVariableDescriptor]
 

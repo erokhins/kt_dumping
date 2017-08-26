@@ -4,7 +4,7 @@
 
 'emptyList' @ [32:29] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(Instruction..Instruction?)>..List<(Instruction..Instruction?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Instruction
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.pseudocode.instructions.Instruction..org.jetbrains.kotlin.cfg.pseudocode.instructions.Instruction?)
 
 'visitor' @ [35:9] ==> value-parameter visitor: InstructionVisitor defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.special.SubroutineSinkInstruction.accept[ValueParameterDescriptorImpl]
 

@@ -131,13 +131,13 @@ Inferred types:
 
 'java' @ [66:25] ==> public val <T> KClass<out BinaryVersion>.java: Class<out BinaryVersion> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> BinaryVersion
+    <T> -> Captured(out BinaryVersion)
 
 'other' @ [66:33] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.serialization.deserialization.BinaryVersion.equals[ValueParameterDescriptorImpl]
 
 'java' @ [66:46] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'major' @ [67:13] ==> public final val major: Int defined in org.jetbrains.kotlin.serialization.deserialization.BinaryVersion[PropertyDescriptorImpl]
 

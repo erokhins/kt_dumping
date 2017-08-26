@@ -101,7 +101,7 @@ Inferred types:
 
 'declaration' @ [81:56] ==> val declaration: PsiElement? defined in org.jetbrains.kotlin.idea.editor.KotlinSmartEnterHandler.getStatementAtCaret[LocalVariableDescriptor]
 
-'isInLambdaExpression' @ [81:68] ==> private fun KtParameter.isInLambdaExpression(): Boolean defined in org.jetbrains.kotlin.idea.editor[SimpleFunctionDescriptorImpl]
+'isInLambdaExpression' @ [81:68] ==> private fun KtParameter.isInLambdaExpression(): Boolean defined in org.jetbrains.kotlin.idea.editor in file KotlinSmartEnterHandler.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [82:25] ==> val declaration: PsiElement? defined in org.jetbrains.kotlin.idea.editor.KotlinSmartEnterHandler.getStatementAtCaret[LocalVariableDescriptor]
 
@@ -277,7 +277,7 @@ Inferred types:
 
 'then' @ [135:33] ==> public final val KtIfExpression.then: KtExpression?[MyPropertyDescriptor]
 
-'isWithCaret' @ [135:38] ==> public fun PsiElement?.isWithCaret(caret: Int): Boolean defined in org.jetbrains.kotlin.idea.editor.fixers[SimpleFunctionDescriptorImpl]
+'isWithCaret' @ [135:38] ==> public fun PsiElement?.isWithCaret(caret: Int): Boolean defined in org.jetbrains.kotlin.idea.editor.fixers in file fixersUtil.kt[SimpleFunctionDescriptorImpl]
 
 'caret' @ [135:50] ==> value-parameter caret: Int defined in org.jetbrains.kotlin.idea.editor.KotlinSmartEnterHandler.KotlinPlainEnterProcessor.getControlStatementBlock[ValueParameterDescriptorImpl]
 
@@ -289,7 +289,7 @@ Inferred types:
 
 '`else`' @ [136:33] ==> public final val KtIfExpression.`else`: KtExpression?[MyPropertyDescriptor]
 
-'isWithCaret' @ [136:40] ==> public fun PsiElement?.isWithCaret(caret: Int): Boolean defined in org.jetbrains.kotlin.idea.editor.fixers[SimpleFunctionDescriptorImpl]
+'isWithCaret' @ [136:40] ==> public fun PsiElement?.isWithCaret(caret: Int): Boolean defined in org.jetbrains.kotlin.idea.editor.fixers in file fixersUtil.kt[SimpleFunctionDescriptorImpl]
 
 'caret' @ [136:52] ==> value-parameter caret: Int defined in org.jetbrains.kotlin.idea.editor.KotlinSmartEnterHandler.KotlinPlainEnterProcessor.getControlStatementBlock[ValueParameterDescriptorImpl]
 

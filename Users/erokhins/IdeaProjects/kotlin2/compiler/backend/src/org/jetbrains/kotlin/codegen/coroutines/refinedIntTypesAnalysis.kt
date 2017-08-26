@@ -4,7 +4,7 @@
 
 'analyze' @ [39:41] ==> @NotNull public open fun <V : (Value..Value?)> analyze(@NotNull internalClassName: String, @NotNull node: MethodNode, @NotNull interpreter: Interpreter<(BasicValue..BasicValue?)>): (Array<(Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>..Array<out (Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>) defined in org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer[JavaMethodDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)
 
 'thisName' @ [39:49] ==> value-parameter thisName: String defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis[ValueParameterDescriptorImpl]
 
@@ -14,7 +14,7 @@ Inferred types:
 
 'analyze' @ [40:47] ==> @NotNull public open fun <V : (Value..Value?)> analyze(@NotNull internalClassName: String, @NotNull node: MethodNode, @NotNull interpreter: Interpreter<(SourceValue..SourceValue?)>): (Array<(Frame<(SourceValue..SourceValue?)>..Frame<(SourceValue..SourceValue?)>?)>..Array<out (Frame<(SourceValue..SourceValue?)>..Frame<(SourceValue..SourceValue?)>?)>) defined in org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer[JavaMethodDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> SourceValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.SourceValue..org.jetbrains.org.objectweb.asm.tree.analysis.SourceValue?)
 
 'thisName' @ [40:55] ==> value-parameter thisName: String defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis[ValueParameterDescriptorImpl]
 
@@ -248,7 +248,7 @@ Inferred types:
 
 'insn' @ [99:13] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.saveExpectedTypeForVarStore[ValueParameterDescriptorImpl]
 
-'isIntStore' @ [99:18] ==> private fun AbstractInsnNode.isIntStore(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'isIntStore' @ [99:18] ==> private fun AbstractInsnNode.isIntStore(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file refinedIntTypesAnalysis.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [100:29] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.saveExpectedTypeForVarStore[ValueParameterDescriptorImpl]
 
@@ -269,6 +269,8 @@ Inferred types:
     <T> -> AbstractInsnNode
 
 'AbstractInsnNode' @ [103:79] ==> protected/*protected and package*/ constructor AbstractInsnNode(p0: Int) defined in org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode[JavaClassConstructorDescriptor]
+
+'isMeaningful' @ [103:97] ==> public val AbstractInsnNode.isMeaningful: Boolean defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[PropertyDescriptorImpl]
 
 'methodNode' @ [106:21] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis[ValueParameterDescriptorImpl]
 
@@ -354,7 +356,7 @@ Inferred types:
 
 'insn' @ [130:17] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<no name provided>.def[ValueParameterDescriptorImpl]
 
-'isIntStore' @ [130:22] ==> private fun AbstractInsnNode.isIntStore(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'isIntStore' @ [130:22] ==> private fun AbstractInsnNode.isIntStore(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file refinedIntTypesAnalysis.kt[SimpleFunctionDescriptorImpl]
 
 'frame' @ [131:17] ==> value-parameter frame: VarExpectedTypeFrame defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<no name provided>.def[ValueParameterDescriptorImpl]
 
@@ -381,13 +383,15 @@ Inferred types:
     <T> -> SourceValue
     <R> -> (org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode..org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode?)
 
+'insns' @ [138:42] ==> public final val insns: (MutableSet<(AbstractInsnNode..AbstractInsnNode?)>..Set<(AbstractInsnNode..AbstractInsnNode?)>?) defined in org.jetbrains.org.objectweb.asm.tree.analysis.SourceValue[JavaPropertyDescriptor]
+
 'forEach' @ [138:49] ==> @HidesMembers public inline fun <T> Iterable<(AbstractInsnNode..AbstractInsnNode?)>.forEach(action: ((AbstractInsnNode..AbstractInsnNode?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode..org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode?)
 
 'insn' @ [140:21] ==> value-parameter insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<no name provided>.use.<anonymous>[ValueParameterDescriptorImpl]
 
-'isIntLoad' @ [140:26] ==> private fun AbstractInsnNode.isIntLoad(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'isIntLoad' @ [140:26] ==> private fun AbstractInsnNode.isIntLoad(): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file refinedIntTypesAnalysis.kt[SimpleFunctionDescriptorImpl]
 
 'frame' @ [141:21] ==> value-parameter frame: VarExpectedTypeFrame defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<no name provided>.use[ValueParameterDescriptorImpl]
 
@@ -399,9 +403,9 @@ Inferred types:
 
 'expectedType' @ [141:75] ==> val expectedType: Type defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<no name provided>.use[LocalVariableDescriptor]
 
-'Array' @ [147:12] ==> public constructor Array<T>(size: Int, init: (Int) -> Frame<BasicValue>?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [147:12] ==> public constructor Array<T>(size: Int, init: (Int) -> Frame<(BasicValue..BasicValue?)>?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Frame<BasicValue>?
+    <T> -> Frame<(org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)>?
 
 'basicFrames' @ [147:18] ==> val basicFrames: (Array<(Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>..Array<out (Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>) defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis[LocalVariableDescriptor]
 
@@ -409,7 +413,7 @@ Inferred types:
 
 'Frame' @ [149:23] ==> public constructor Frame<V : (Value..Value?)>(p0: (Frame<out (BasicValue..BasicValue?)>..Frame<out (BasicValue..BasicValue?)>?)) defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaClassConstructorDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)
 
 'basicFrames' @ [149:29] ==> val basicFrames: (Array<(Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>..Array<out (Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>) defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis[LocalVariableDescriptor]
 
@@ -439,7 +443,7 @@ Inferred types:
 
 'assert' @ [152:13] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'current' @ [152:20] ==> val current: Frame<BasicValue> defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<anonymous>[LocalVariableDescriptor]
+'current' @ [152:20] ==> val current: Frame<(BasicValue..BasicValue?)> defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<anonymous>[LocalVariableDescriptor]
 
 'getLocal' @ [152:28] ==> public open fun getLocal(p0: Int): (BasicValue..BasicValue?) defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaMethodDescriptor]
 
@@ -453,7 +457,7 @@ Inferred types:
 
 'ALL_INT_SORTS' @ [152:62] ==> private val ALL_INT_SORTS: Set<Int> defined in org.jetbrains.kotlin.codegen.coroutines in file refinedIntTypesAnalysis.kt[PropertyDescriptorImpl]
 
-'current' @ [153:43] ==> val current: Frame<BasicValue> defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<anonymous>[LocalVariableDescriptor]
+'current' @ [153:43] ==> val current: Frame<(BasicValue..BasicValue?)> defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<anonymous>[LocalVariableDescriptor]
 
 'getLocal' @ [153:51] ==> public open fun getLocal(p0: Int): (BasicValue..BasicValue?) defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaMethodDescriptor]
 
@@ -463,7 +467,7 @@ Inferred types:
 
 'type' @ [153:71] ==> public final val BasicValue.type: (Type..Type?)[MyPropertyDescriptor]
 
-'current' @ [156:13] ==> val current: Frame<BasicValue> defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<anonymous>[LocalVariableDescriptor]
+'current' @ [156:13] ==> val current: Frame<(BasicValue..BasicValue?)> defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<anonymous>[LocalVariableDescriptor]
 
 'setLocal' @ [156:21] ==> public open fun setLocal(p0: Int, p1: (BasicValue..BasicValue?)): Unit defined in org.jetbrains.org.objectweb.asm.tree.analysis.Frame[JavaMethodDescriptor]
 
@@ -477,7 +481,7 @@ Inferred types:
 
 'value' @ [156:60] ==> public final val value: Type? defined in kotlin.collections.IndexedValue[DeserializedPropertyDescriptor]
 
-'current' @ [159:9] ==> val current: Frame<BasicValue> defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<anonymous>[LocalVariableDescriptor]
+'current' @ [159:9] ==> val current: Frame<(BasicValue..BasicValue?)> defined in org.jetbrains.kotlin.codegen.coroutines.performRefinedTypeAnalysis.<anonymous>[LocalVariableDescriptor]
 
 'opcode' @ [163:44] ==> public final val AbstractInsnNode.opcode: Int[MyPropertyDescriptor]
 
@@ -563,7 +567,7 @@ Inferred types:
 
 'it' @ [187:33] ==> value-parameter it: (LocalVariableNode..LocalVariableNode?) defined in org.jetbrains.kotlin.codegen.coroutines.findContainingVariableFromTable.<anonymous>[ValueParameterDescriptorImpl]
 
-'rangeContainsInsn' @ [187:36] ==> private fun LocalVariableNode.rangeContainsInsn(insnIndex: Int, insnList: InsnList): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'rangeContainsInsn' @ [187:36] ==> private fun LocalVariableNode.rangeContainsInsn(insnIndex: Int, insnList: InsnList): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file refinedIntTypesAnalysis.kt[SimpleFunctionDescriptorImpl]
 
 'insnIndex' @ [187:54] ==> val insnIndex: Int defined in org.jetbrains.kotlin.codegen.coroutines.findContainingVariableFromTable[LocalVariableDescriptor]
 
@@ -661,13 +665,13 @@ Inferred types:
 
 'java' @ [219:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [219:51] ==> <this> defined in org.jetbrains.kotlin.codegen.coroutines.VarExpectedTypeFrame[LazyClassReceiverParameterDescriptor]
 
 'java' @ [219:63] ==> public val <T> KClass<out VarExpectedTypeFrame>.java: Class<out VarExpectedTypeFrame> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> VarExpectedTypeFrame
+    <T> -> Captured(out VarExpectedTypeFrame)
 
 'other' @ [221:9] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.codegen.coroutines.VarExpectedTypeFrame.equals[ValueParameterDescriptorImpl]
 

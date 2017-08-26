@@ -30,11 +30,11 @@ Inferred types:
 
 'java' @ [57:63] ==> public val <T> KClass<out KotlinPushDownDialog>.java: Class<out KotlinPushDownDialog> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinPushDownDialog
+    <T> -> Captured(out KotlinPushDownDialog)
 
 'name' @ [57:68] ==> public final val <T : (Any..Any?)> Class<out KotlinPushDownDialog>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinPushDownDialog
+    <T : (Any..Any?)> -> Captured(out KotlinPushDownDialog)
 
 'GridBagConstraints' @ [60:29] ==> public constructor GridBagConstraints() defined in java.awt.GridBagConstraints[JavaClassConstructorDescriptor]
 
@@ -173,7 +173,7 @@ Inferred types:
 
 'MemberInfoChange' @ [99:45] ==> public constructor MemberInfoChange<T : (PsiElement..PsiElement?), U : (MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>..MemberInfoBase<(KtNamedDeclaration..KtNamedDeclaration?)>?)>(p0: (MutableCollection<(KotlinMemberInfo..KotlinMemberInfo?)>..Collection<(KotlinMemberInfo..KotlinMemberInfo?)>?)) defined in com.intellij.refactoring.classMembers.MemberInfoChange[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
     <U : (MemberInfoBase<(T..T?)>..MemberInfoBase<(T..T?)>?)> -> (org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo..org.jetbrains.kotlin.idea.refactoring.memberInfo.KotlinMemberInfo?)
 
 'memberInfos' @ [99:62] ==> private final val memberInfos: List<KotlinMemberInfo> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownDialog[PropertyDescriptorImpl]

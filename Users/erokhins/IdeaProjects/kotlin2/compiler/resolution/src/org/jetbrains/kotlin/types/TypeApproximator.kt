@@ -84,7 +84,7 @@ Inferred types:
 
 'type' @ [93:50] ==> value-parameter type: UnwrappedType defined in org.jetbrains.kotlin.types.TypeApproximator.approximateToSuperType[ValueParameterDescriptorImpl]
 
-'typeDepth' @ [93:55] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'typeDepth' @ [93:55] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types in file TypeApproximator.kt[SimpleFunctionDescriptorImpl]
 
 'approximateToSubType' @ [97:13] ==> private final fun approximateToSubType(type: UnwrappedType, conf: TypeApproximatorConfiguration, depth: Int): UnwrappedType? defined in org.jetbrains.kotlin.types.TypeApproximator[SimpleFunctionDescriptorImpl]
 
@@ -96,13 +96,11 @@ Inferred types:
 
 'type' @ [97:48] ==> value-parameter type: UnwrappedType defined in org.jetbrains.kotlin.types.TypeApproximator.approximateToSubType[ValueParameterDescriptorImpl]
 
-'typeDepth' @ [97:53] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'typeDepth' @ [97:53] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types in file TypeApproximator.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [100:13] ==> value-parameter type: UnwrappedType defined in org.jetbrains.kotlin.types.TypeApproximator.approximateToSuperType[ValueParameterDescriptorImpl]
 
 'approximateTo' @ [101:16] ==> private final fun approximateTo(type: UnwrappedType, conf: TypeApproximatorConfiguration, bound: FlexibleType.() -> SimpleType, approximateTo: (SimpleType, TypeApproximatorConfiguration, depth: Int) -> UnwrappedType?, depth: Int): UnwrappedType? defined in org.jetbrains.kotlin.types.TypeApproximator[SimpleFunctionDescriptorImpl]
-
-'NewKotlinTypeChecker' @ [101:30] ==> public object NewKotlinTypeChecker : KotlinTypeChecker defined in org.jetbrains.kotlin.types.checker[FakeCallableDescriptorForObject]
 
 'transformToNewType' @ [101:51] ==> public final fun transformToNewType(type: UnwrappedType): UnwrappedType defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker[DeserializedSimpleFunctionDescriptor]
 
@@ -112,6 +110,8 @@ Inferred types:
 
 'FlexibleType' @ [101:83] ==> public constructor FlexibleType(lowerBound: SimpleType, upperBound: SimpleType) defined in org.jetbrains.kotlin.types.FlexibleType[DeserializedClassConstructorDescriptor]
 
+'upperBound' @ [101:97] ==> public final val upperBound: SimpleType defined in org.jetbrains.kotlin.types.FlexibleType[DeserializedPropertyDescriptor]
+
 'referenceApproximateToSuperType' @ [102:30] ==> private final val referenceApproximateToSuperType: KFunction3<@ParameterName SimpleType, @ParameterName TypeApproximatorConfiguration, @ParameterName Int, UnwrappedType?> defined in org.jetbrains.kotlin.types.TypeApproximator[PropertyDescriptorImpl]
 
 'depth' @ [102:63] ==> value-parameter depth: Int defined in org.jetbrains.kotlin.types.TypeApproximator.approximateToSuperType[ValueParameterDescriptorImpl]
@@ -120,8 +120,6 @@ Inferred types:
 
 'approximateTo' @ [107:16] ==> private final fun approximateTo(type: UnwrappedType, conf: TypeApproximatorConfiguration, bound: FlexibleType.() -> SimpleType, approximateTo: (SimpleType, TypeApproximatorConfiguration, depth: Int) -> UnwrappedType?, depth: Int): UnwrappedType? defined in org.jetbrains.kotlin.types.TypeApproximator[SimpleFunctionDescriptorImpl]
 
-'NewKotlinTypeChecker' @ [107:30] ==> public object NewKotlinTypeChecker : KotlinTypeChecker defined in org.jetbrains.kotlin.types.checker[FakeCallableDescriptorForObject]
-
 'transformToNewType' @ [107:51] ==> public final fun transformToNewType(type: UnwrappedType): UnwrappedType defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker[DeserializedSimpleFunctionDescriptor]
 
 'type' @ [107:70] ==> value-parameter type: UnwrappedType defined in org.jetbrains.kotlin.types.TypeApproximator.approximateToSubType[ValueParameterDescriptorImpl]
@@ -129,6 +127,8 @@ Inferred types:
 'conf' @ [107:77] ==> value-parameter conf: TypeApproximatorConfiguration defined in org.jetbrains.kotlin.types.TypeApproximator.approximateToSubType[ValueParameterDescriptorImpl]
 
 'FlexibleType' @ [107:83] ==> public constructor FlexibleType(lowerBound: SimpleType, upperBound: SimpleType) defined in org.jetbrains.kotlin.types.FlexibleType[DeserializedClassConstructorDescriptor]
+
+'lowerBound' @ [107:97] ==> public final val lowerBound: SimpleType defined in org.jetbrains.kotlin.types.FlexibleType[DeserializedPropertyDescriptor]
 
 'referenceApproximateToSubType' @ [108:30] ==> private final val referenceApproximateToSubType: KFunction3<@ParameterName SimpleType, @ParameterName TypeApproximatorConfiguration, @ParameterName Int, UnwrappedType?> defined in org.jetbrains.kotlin.types.TypeApproximator[PropertyDescriptorImpl]
 
@@ -236,11 +236,11 @@ Inferred types:
 
 'java' @ [130:73] ==> public val <T> KClass<out UnwrappedType>.java: Class<out UnwrappedType> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> UnwrappedType
+    <T> -> Captured(out UnwrappedType)
 
 'canonicalName' @ [130:78] ==> public final val <T : (Any..Any?)> Class<out UnwrappedType>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UnwrappedType
+    <T : (Any..Any?)> -> Captured(out UnwrappedType)
 
 'type' @ [130:102] ==> value-parameter type: UnwrappedType defined in org.jetbrains.kotlin.types.TypeApproximator.approximateTo[ValueParameterDescriptorImpl]
 
@@ -356,11 +356,11 @@ Inferred types:
 
 'java' @ [168:98] ==> public val <T> KClass<out TypeConstructor>.java: Class<out TypeConstructor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> TypeConstructor
+    <T> -> Captured(out TypeConstructor)
 
 'canonicalName' @ [168:103] ==> public final val <T : (Any..Any?)> Class<out TypeConstructor>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeConstructor
+    <T : (Any..Any?)> -> Captured(out TypeConstructor)
 
 'assert' @ [170:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -478,8 +478,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> UnwrappedType
 
 'toSuper' @ [193:40] ==> value-parameter toSuper: Boolean defined in org.jetbrains.kotlin.types.TypeApproximator.approximateIntersectionType[ValueParameterDescriptorImpl]
-
-'NewCommonSuperTypeCalculator' @ [193:49] ==> public object NewCommonSuperTypeCalculator defined in org.jetbrains.kotlin.resolve.calls in file NewCommonSuperTypeCalculator.kt[FakeCallableDescriptorForObject]
 
 'commonSuperType' @ [193:78] ==> public final fun commonSuperType(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.NewCommonSuperTypeCalculator[SimpleFunctionDescriptorImpl]
 
@@ -687,11 +685,11 @@ Inferred types:
 
 'java' @ [250:43] ==> public val <T> KClass<out SimpleType>.java: Class<out SimpleType> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> SimpleType
+    <T> -> Captured(out SimpleType)
 
 'canonicalName' @ [250:48] ==> public final val <T : (Any..Any?)> Class<out SimpleType>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SimpleType
+    <T : (Any..Any?)> -> Captured(out SimpleType)
 
 'type' @ [250:83] ==> value-parameter type: SimpleType defined in org.jetbrains.kotlin.types.TypeApproximator.approximateTo[ValueParameterDescriptorImpl]
 
@@ -1255,7 +1253,7 @@ Inferred types:
 
 'unwrap' @ [396:49] ==> public abstract fun unwrap(): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinType[DeserializedSimpleFunctionDescriptor]
 
-'typeDepth' @ [396:58] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'typeDepth' @ [396:58] ==> internal fun UnwrappedType.typeDepth(): Int defined in org.jetbrains.kotlin.types in file TypeApproximator.kt[SimpleFunctionDescriptorImpl]
 
 'max' @ [397:7] ==> public fun <T : Comparable<Int>> Sequence<Int>.max(): Int? defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -406,9 +406,9 @@ Inferred types:
 
 'calleeText' @ [144:78] ==> val calleeText: (String..String?) defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeParameterToReceiverIntention.LambdaInfo.process[LocalVariableDescriptor]
 
-'emptyList' @ [144:95] ==> public fun <T> emptyList(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyList' @ [144:95] ==> public fun <T> emptyList(): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> (kotlin.String..kotlin.String?)
 
 'originalParameterTypes' @ [146:46] ==> val originalParameterTypes: List<KotlinType> defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeParameterToReceiverIntention.LambdaInfo.process[LocalVariableDescriptor]
 
@@ -426,8 +426,6 @@ Inferred types:
 'data' @ [147:26] ==> value-parameter data: ConvertFunctionTypeParameterToReceiverIntention.ConversionData defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeParameterToReceiverIntention.LambdaInfo.process[ValueParameterDescriptorImpl]
 
 'typeParameterIndex' @ [147:31] ==> public final val typeParameterIndex: Int defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeParameterToReceiverIntention.ConversionData[PropertyDescriptorImpl]
-
-'KotlinNameSuggester' @ [147:51] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
 
 'suggestNamesByType' @ [147:71] ==> public final fun suggestNamesByType(type: KotlinType, validator: (String) -> Boolean, defaultName: String? = ...): List<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
@@ -536,7 +534,7 @@ Inferred types:
 
 'text' @ [177:97] ==> public final var ConvertFunctionTypeParameterToReceiverIntention.text: String[MyPropertyDescriptor]
 
-'getAffectedCallables' @ [179:29] ==> public fun getAffectedCallables(project: Project, descriptorsForChange: Collection<CallableDescriptor>): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getAffectedCallables' @ [179:29] ==> public fun getAffectedCallables(project: Project, descriptorsForChange: Collection<CallableDescriptor>): List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring in file CallableRefactoring.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [179:50] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeParameterToReceiverIntention.Converter[PropertyDescriptorImpl]
 
@@ -677,7 +675,7 @@ Inferred types:
 
 'project' @ [221:13] ==> public final val project: Project defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeParameterToReceiverIntention.Converter[PropertyDescriptorImpl]
 
-'checkConflictsInteractively' @ [221:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [221:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [221:49] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeParameterToReceiverIntention.Converter.performRefactoring[LocalVariableDescriptor]
 
@@ -952,9 +950,9 @@ Inferred types:
 
 'typeParameterIndex' @ [322:47] ==> public final val typeParameterIndex: Int defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeParameterToReceiverIntention.ConversionData[PropertyDescriptorImpl]
 
-'lazy' @ [323:35] ==> public fun <T> lazy(initializer: () -> FunctionDescriptor): Lazy<FunctionDescriptor> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [323:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> FunctionDescriptor
+    <T> -> T
 
 'function' @ [323:42] ==> public final val function: KtFunction defined in org.jetbrains.kotlin.idea.intentions.ConvertFunctionTypeParameterToReceiverIntention.ConversionData[PropertyDescriptorImpl]
 

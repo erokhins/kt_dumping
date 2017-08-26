@@ -15,25 +15,25 @@ Inferred types:
 
 'coroutineMetadata' @ [30:29] ==> public var JsFunction.coroutineMetadata: CoroutineMetadata? defined in org.jetbrains.kotlin.js.backend.ast.metadata[DeserializedPropertyDescriptor]
 
-'lazy' @ [31:32] ==> public fun <T> lazy(initializer: () -> JsName): Lazy<JsName> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [31:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JsName
+    <T> -> T
 
 'scope' @ [31:39] ==> private final val scope: JsScope defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformationContext[PropertyDescriptorImpl]
 
 'declareName' @ [31:45] ==> @NotNull public open fun declareName(@NotNull p0: String): JsName defined in org.jetbrains.kotlin.js.backend.ast.JsScope[JavaMethodDescriptor]
 
-'lazy' @ [32:33] ==> public fun <T> lazy(initializer: () -> JsName): Lazy<JsName> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [32:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JsName
+    <T> -> T
 
 'scope' @ [32:40] ==> private final val scope: JsScope defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformationContext[PropertyDescriptorImpl]
 
 'declareName' @ [32:46] ==> @NotNull public open fun declareName(@NotNull p0: String): JsName defined in org.jetbrains.kotlin.js.backend.ast.JsScope[JavaMethodDescriptor]
 
-'lazy' @ [33:30] ==> public fun <T> lazy(initializer: () -> JsName): Lazy<JsName> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [33:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JsName
+    <T> -> T
 
 'scope' @ [33:37] ==> private final val scope: JsScope defined in org.jetbrains.kotlin.js.coroutine.CoroutineTransformationContext[PropertyDescriptorImpl]
 

@@ -119,11 +119,7 @@ Inferred types:
 
 'signature' @ [68:30] ==> value-parameter signature: CallableMemberDescriptor defined in org.jetbrains.kotlin.util.findCallableMemberBySignature[ValueParameterDescriptorImpl]
 
-'DescriptorKindFilter' @ [68:63] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS' @ [68:84] ==> @field:JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'DescriptorKindFilter' @ [68:99] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES' @ [68:120] ==> @field:JvmField public final val VARIABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 

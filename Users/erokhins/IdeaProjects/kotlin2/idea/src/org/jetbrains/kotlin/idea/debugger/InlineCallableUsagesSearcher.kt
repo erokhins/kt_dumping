@@ -78,7 +78,7 @@ Inferred types:
 
 'name' @ [54:63] ==> public final val KtDeclaration.name: String?[MyPropertyDescriptor]
 
-'Runnable' @ [56:24] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [56:24] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'search' @ [57:34] ==> @NotNull public open fun search(@NotNull p0: PsiElement, @NotNull p1: SearchScope): Query<(PsiReference..PsiReference?)> defined in com.intellij.psi.search.searches.ReferencesSearch[JavaMethodDescriptor]
 
@@ -110,6 +110,8 @@ Inferred types:
 Inferred types:
     <T> -> KtElement
     <R> -> PsiElement?
+
+'getRelevantElement' @ [59:71] ==> internal final fun getRelevantElement(element: PsiElement): PsiElement? defined in org.jetbrains.kotlin.idea.debugger.DebuggerClassNameProvider.Companion[FunctionImportedFromObject]
 
 'usage' @ [60:29] ==> val usage: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.InlineCallableUsagesSearcher.findInlinedCalls.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -234,8 +236,8 @@ Inferred types:
 
 'get' @ [97:41] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [97:60] ==> public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

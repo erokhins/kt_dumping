@@ -31,7 +31,7 @@ Inferred types:
 
 'qualifiedName' @ [39:94] ==> public final val <T : (PsiClass..PsiClass?)> PsiClassStub<out (PsiClass..PsiClass?)>.qualifiedName: String?[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiClass..PsiClass?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
+    <T : (PsiClass..PsiClass?)> -> Captured(*)
 
 'actualFqNames' @ [40:17] ==> val actualFqNames: ArrayList<String> defined in org.jetbrains.kotlin.idea.completion.test.LightClassComputationControl.testWithControl[LocalVariableDescriptor]
 

@@ -89,11 +89,7 @@ Inferred types:
 
 'getImportableDescriptor' @ [71:41] ==> public fun DeclarationDescriptor.getImportableDescriptor(): DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedSimpleFunctionDescriptor]
 
-'KotlinReferenceData' @ [73:25] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
-
 'CLASS' @ [73:50] ==> enum entry CLASS defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind[FakeCallableDescriptorForObject]
-
-'KotlinReferenceData' @ [76:25] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
 
 'PACKAGE' @ [76:50] ==> enum entry PACKAGE defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind[FakeCallableDescriptorForObject]
 
@@ -105,11 +101,7 @@ Inferred types:
 
 'isExtension' @ [79:40] ==> public val DeclarationDescriptor.isExtension: Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
-'KotlinReferenceData' @ [79:53] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
-
 'EXTENSION_FUNCTION' @ [79:78] ==> enum entry EXTENSION_FUNCTION defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind[FakeCallableDescriptorForObject]
-
-'KotlinReferenceData' @ [79:102] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
 
 'NON_EXTENSION_CALLABLE' @ [79:127] ==> enum entry NON_EXTENSION_CALLABLE defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind[FakeCallableDescriptorForObject]
 
@@ -121,11 +113,7 @@ Inferred types:
 
 'isExtension' @ [82:40] ==> public val DeclarationDescriptor.isExtension: Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
-'KotlinReferenceData' @ [82:53] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
-
 'EXTENSION_PROPERTY' @ [82:78] ==> enum entry EXTENSION_PROPERTY defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind[FakeCallableDescriptorForObject]
-
-'KotlinReferenceData' @ [82:102] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
 
 'NON_EXTENSION_CALLABLE' @ [82:127] ==> enum entry NON_EXTENSION_CALLABLE defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData.Kind[FakeCallableDescriptorForObject]
 
@@ -135,9 +123,9 @@ Inferred types:
 
 'RuntimeException' @ [96:19] ==> public final fun <init>(): RuntimeException /* = RuntimeException */ defined in kotlin.RuntimeException[TypeAliasConstructorDescriptorImpl]
 
-'lazy' @ [101:40] ==> public fun <T> lazy(initializer: () -> DataFlavor?): Lazy<DataFlavor?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [101:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> DataFlavor?
+    <T> -> T
 
 'KotlinReferenceData' @ [103:33] ==> public companion object defined in org.jetbrains.kotlin.idea.codeInsight.KotlinReferenceData[FakeCallableDescriptorForObject]
 

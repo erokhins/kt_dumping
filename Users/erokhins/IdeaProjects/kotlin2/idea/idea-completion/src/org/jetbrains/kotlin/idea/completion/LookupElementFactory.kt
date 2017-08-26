@@ -20,9 +20,9 @@ Inferred types:
 
 'insertHandlerProvider' @ [82:46] ==> public final val insertHandlerProvider: InsertHandlerProvider defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory[PropertyDescriptorImpl]
 
-'lazy' @ [84:60] ==> public fun <T> lazy(initializer: () -> Set<FunctionDescriptor>): Lazy<Set<FunctionDescriptor>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [84:60] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Set<FunctionDescriptor>
+    <T> -> T
 
 'inDescriptor' @ [85:9] ==> private final val inDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.completion.LookupElementFactory[PropertyDescriptorImpl]
 
@@ -145,8 +145,6 @@ Inferred types:
 'descriptor' @ [111:102] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.completion.LookupElementFactory.createStandardLookupElementsForDescriptor[ValueParameterDescriptorImpl]
 
 'name' @ [111:113] ==> public final val FunctionDescriptor.name: Name[MyPropertyDescriptor]
-
-'OperatorNameConventions' @ [111:121] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'GET' @ [111:145] ==> @field:JvmField public final val GET: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -384,17 +382,11 @@ Inferred types:
 
 'explicitLambdaParameters' @ [174:38] ==> value-parameter explicitLambdaParameters: Boolean defined in org.jetbrains.kotlin.idea.completion.LookupElementFactory.createFunctionCallElementWithLambda[ValueParameterDescriptorImpl]
 
-'LambdaSignatureTemplates' @ [175:13] ==> public object LambdaSignatureTemplates defined in org.jetbrains.kotlin.idea.completion in file LambdaSignatureTemplates.kt[FakeCallableDescriptorForObject]
-
 'lambdaPresentation' @ [175:38] ==> public final fun lambdaPresentation(lambdaType: KotlinType, presentationKind: LambdaSignatureTemplates.SignaturePresentation): String defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates[SimpleFunctionDescriptorImpl]
 
 'parameterType' @ [175:57] ==> value-parameter parameterType: KotlinType defined in org.jetbrains.kotlin.idea.completion.LookupElementFactory.createFunctionCallElementWithLambda[ValueParameterDescriptorImpl]
 
-'LambdaSignatureTemplates' @ [175:72] ==> public object LambdaSignatureTemplates defined in org.jetbrains.kotlin.idea.completion in file LambdaSignatureTemplates.kt[FakeCallableDescriptorForObject]
-
 'NAMES_OR_TYPES' @ [175:119] ==> enum entry NAMES_OR_TYPES defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.SignaturePresentation[FakeCallableDescriptorForObject]
-
-'LambdaSignatureTemplates' @ [177:13] ==> public object LambdaSignatureTemplates defined in org.jetbrains.kotlin.idea.completion in file LambdaSignatureTemplates.kt[FakeCallableDescriptorForObject]
 
 'DEFAULT_LAMBDA_PRESENTATION' @ [177:38] ==> public final val DEFAULT_LAMBDA_PRESENTATION: String defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates[PropertyDescriptorImpl]
 
@@ -562,9 +554,7 @@ Inferred types:
 
 'putUserData' @ [220:23] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
-
-'KotlinCompletionCharFilter' @ [220:35] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'SUPPRESS_ITEM_SELECTION_BY_CHARS_ON_TYPING' @ [220:62] ==> public final val SUPPRESS_ITEM_SELECTION_BY_CHARS_ON_TYPING: Key<Unit> defined in org.jetbrains.kotlin.idea.completion.KotlinCompletionCharFilter.Companion[PropertyDescriptorImpl]
 
@@ -690,7 +680,7 @@ Inferred types:
 
 'putUserData' @ [267:25] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(CallableWeight..CallableWeight?)>, @Nullable p1: CallableWeight?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CallableWeight
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.CallableWeight..org.jetbrains.kotlin.idea.completion.CallableWeight?)
 
 'CALLABLE_WEIGHT_KEY' @ [267:37] ==> public val CALLABLE_WEIGHT_KEY: Key<CallableWeight> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -919,8 +909,6 @@ Inferred types:
 
 'receiverTypes' @ [340:50] ==> value-parameter receiverTypes: Collection<ReceiverType> defined in org.jetbrains.kotlin.idea.completion.LookupElementFactory.callableWeightBasic[ValueParameterDescriptorImpl]
 
-'CallableWeight' @ [340:65] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.CallableWeight[FakeCallableDescriptorForObject]
-
 'receiverCastRequired' @ [340:80] ==> public final val receiverCastRequired: CallableWeight defined in org.jetbrains.kotlin.idea.completion.CallableWeight.Companion[PropertyDescriptorImpl]
 
 'let' @ [340:103] ==> @InlineOnly public inline fun <T, R> CallableWeight.let(block: (CallableWeight) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -941,11 +929,7 @@ Inferred types:
 
 'containingDeclaration' @ [342:33] ==> public final val CallableDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'CallableWeight' @ [343:70] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.CallableWeight[FakeCallableDescriptorForObject]
-
 'globalOrStatic' @ [343:85] ==> public final val globalOrStatic: CallableWeight defined in org.jetbrains.kotlin.idea.completion.CallableWeight.Companion[PropertyDescriptorImpl]
-
-'CallableWeight' @ [344:21] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.CallableWeight[FakeCallableDescriptorForObject]
 
 'local' @ [344:36] ==> public final val local: CallableWeight defined in org.jetbrains.kotlin.idea.completion.CallableWeight.Companion[PropertyDescriptorImpl]
 

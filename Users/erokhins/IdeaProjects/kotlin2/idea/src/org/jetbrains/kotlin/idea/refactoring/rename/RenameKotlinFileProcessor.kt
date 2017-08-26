@@ -68,8 +68,6 @@ Inferred types:
 
 'facadeClass' @ [52:28] ==> val facadeClass: PsiClass? defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinFileProcessor.prepareRenaming[LocalVariableDescriptor]
 
-'PackagePartClassUtils' @ [52:43] ==> public object PackagePartClassUtils defined in org.jetbrains.kotlin.load.kotlin[FakeCallableDescriptorForObject]
-
 'getFilePartShortName' @ [52:65] ==> @JvmStatic public final fun getFilePartShortName(fileName: String): String defined in org.jetbrains.kotlin.load.kotlin.PackagePartClassUtils[DeserializedSimpleFunctionDescriptor]
 
 'newName' @ [52:86] ==> value-parameter newName: String defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinFileProcessor.prepareRenaming[ValueParameterDescriptorImpl]

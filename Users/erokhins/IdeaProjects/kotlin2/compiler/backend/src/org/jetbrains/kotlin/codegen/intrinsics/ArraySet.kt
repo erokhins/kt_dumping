@@ -10,9 +10,9 @@
 
 'VOID_TYPE' @ [29:22] ==> public final val VOID_TYPE: (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
 
-'listOf' @ [30:17] ==> public fun <T> listOf(vararg elements: Type): List<Type> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [30:17] ==> public fun <T> listOf(vararg elements: (Type..Type?)): List<(Type..Type?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Type
+    <T> -> (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)
 
 'INT_TYPE' @ [30:29] ==> public final val INT_TYPE: (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
 

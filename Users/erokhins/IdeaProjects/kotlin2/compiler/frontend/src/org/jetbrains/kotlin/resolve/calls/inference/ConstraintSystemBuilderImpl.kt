@@ -112,8 +112,6 @@ Inferred types:
 Inferred types:
     <T> -> TypeParameterDescriptor
 
-'TypeSubstitution' @ [89:46] ==> public companion object defined in org.jetbrains.kotlin.types.TypeSubstitution[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [89:63] ==> @field:JvmField public final val EMPTY: TypeSubstitution defined in org.jetbrains.kotlin.types.TypeSubstitution.Companion[DeserializedPropertyDescriptor]
 
 'typeParameters' @ [89:70] ==> value-parameter typeParameters: Collection<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl.registerTypeVariables[ValueParameterDescriptorImpl]
@@ -203,8 +201,6 @@ Inferred types:
 
 'ConstraintContext' @ [104:31] ==> public constructor ConstraintContext(position: ConstraintPosition, derivedFrom: Set<TypeVariable>? = ..., initial: Boolean = ..., initialReduction: Boolean = ...) defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintContext[ClassConstructorDescriptorImpl]
 
-'TYPE_BOUND_POSITION' @ [104:49] ==> enum entry TYPE_BOUND_POSITION defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[FakeCallableDescriptorForObject]
-
 'position' @ [104:69] ==> public final fun position(index: Int): ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.constraintPosition.ConstraintPositionKind[SimpleFunctionDescriptorImpl]
 
 'typeVariable' @ [104:78] ==> val typeVariable: TypeVariable defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl.registerTypeVariables[LocalVariableDescriptor]
@@ -228,8 +224,6 @@ Inferred types:
 'call' @ [109:33] ==> value-parameter call: CallHandle defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl.registerTypeVariables[ValueParameterDescriptorImpl]
 
 'create' @ [109:55] ==> @NotNull public open fun create(@NotNull p0: TypeSubstitution): TypeSubstitutor defined in org.jetbrains.kotlin.types.TypeSubstitutor[JavaMethodDescriptor]
-
-'TypeConstructorSubstitution' @ [109:62] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
 
 'createByParametersMap' @ [109:90] ==> @JvmStatic public final fun createByParametersMap(map: Map<TypeParameterDescriptor, TypeProjection>): TypeConstructorSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -283,7 +277,7 @@ Inferred types:
 
 'type' @ [119:13] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl.getNestedTypeVariables[ValueParameterDescriptorImpl]
 
-'getNestedTypeParameters' @ [119:18] ==> internal fun KotlinType.getNestedTypeParameters(): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'getNestedTypeParameters' @ [119:18] ==> internal fun KotlinType.getNestedTypeParameters(): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.resolve.calls.inference in file constraintSystemUtils.kt[SimpleFunctionDescriptorImpl]
 
 'mapNotNull' @ [119:44] ==> public inline fun <T, R : Any> Iterable<TypeParameterDescriptor>.mapNotNull(transform: (TypeParameterDescriptor) -> TypeVariable?): List<TypeVariable> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -392,7 +386,7 @@ Inferred types:
 
 'add' @ [170:24] ==> public open fun add(element: ConstraintError): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'newTypeInferenceOrParameterConstraintError' @ [170:28] ==> public fun newTypeInferenceOrParameterConstraintError(constraintPosition: ConstraintPosition): ConstraintError defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'newTypeInferenceOrParameterConstraintError' @ [170:28] ==> public fun newTypeInferenceOrParameterConstraintError(constraintPosition: ConstraintPosition): ConstraintError defined in org.jetbrains.kotlin.resolve.calls.inference in file ConstraintError.kt[SimpleFunctionDescriptorImpl]
 
 'constraintPosition' @ [170:71] ==> val constraintPosition: ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl.addConstraint[LocalVariableDescriptor]
 
@@ -558,7 +552,7 @@ Inferred types:
 
 'bound' @ [226:79] ==> public final val bound: TypeBounds.BoundKind defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl.ConstraintKind[PropertyDescriptorImpl]
 
-'reverse' @ [226:85] ==> public fun TypeBounds.BoundKind.reverse(): TypeBounds.BoundKind defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'reverse' @ [226:85] ==> public fun TypeBounds.BoundKind.reverse(): TypeBounds.BoundKind defined in org.jetbrains.kotlin.resolve.calls.inference in file TypeBounds.kt[SimpleFunctionDescriptorImpl]
 
 'constraintContext' @ [226:96] ==> value-parameter constraintContext: ConstraintContext defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl.doAddConstraint[ValueParameterDescriptorImpl]
 
@@ -615,7 +609,7 @@ Inferred types:
 
 'add' @ [237:33] ==> public open fun add(element: ConstraintError): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'newTypeInferenceOrParameterConstraintError' @ [237:37] ==> public fun newTypeInferenceOrParameterConstraintError(constraintPosition: ConstraintPosition): ConstraintError defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'newTypeInferenceOrParameterConstraintError' @ [237:37] ==> public fun newTypeInferenceOrParameterConstraintError(constraintPosition: ConstraintPosition): ConstraintError defined in org.jetbrains.kotlin.resolve.calls.inference in file ConstraintError.kt[SimpleFunctionDescriptorImpl]
 
 'constraintPosition' @ [237:80] ==> val constraintPosition: ConstraintPosition defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl.doAddConstraint[LocalVariableDescriptor]
 
@@ -1226,9 +1220,9 @@ Inferred types:
     }
     else {
         functionPlaceholderTypeConstructor.argumentTypes
-    }' @ [440:28] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<KotlinType>, elseBranch: List<KotlinType>): List<KotlinType>[SimpleFunctionDescriptorImpl]
+    }' @ [440:28] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<(KotlinType..KotlinType?)>, elseBranch: List<(KotlinType..KotlinType?)>): List<(KotlinType..KotlinType?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<KotlinType>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<(org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)>
 
 '!' @ [440:32] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -1292,13 +1286,11 @@ Inferred types:
 
 'builtIns' @ [453:51] ==> public val KotlinType.builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.types.typeUtil[DeserializedPropertyDescriptor]
 
-'Annotations' @ [453:61] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [453:73] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'receiverType' @ [453:80] ==> val receiverType: SimpleType? defined in org.jetbrains.kotlin.resolve.calls.inference.createTypeForFunctionPlaceholder[LocalVariableDescriptor]
 
-'newArgumentTypes' @ [453:94] ==> val newArgumentTypes: List<KotlinType> defined in org.jetbrains.kotlin.resolve.calls.inference.createTypeForFunctionPlaceholder[LocalVariableDescriptor]
+'newArgumentTypes' @ [453:94] ==> val newArgumentTypes: List<(KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.resolve.calls.inference.createTypeForFunctionPlaceholder[LocalVariableDescriptor]
 
 'DONT_CARE' @ [453:118] ==> public final val DONT_CARE: (SimpleType..SimpleType?) defined in org.jetbrains.kotlin.types.TypeUtils[JavaPropertyDescriptor]
 

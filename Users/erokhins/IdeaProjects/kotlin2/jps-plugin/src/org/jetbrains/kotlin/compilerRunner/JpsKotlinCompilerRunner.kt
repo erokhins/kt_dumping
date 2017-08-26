@@ -4,8 +4,6 @@ Inferred types:
 
 'JpsKotlinLogger' @ [38:38] ==> public constructor JpsKotlinLogger(log: Logger) defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinLogger[ClassConstructorDescriptorImpl]
 
-'KotlinBuilder' @ [38:54] ==> public companion object defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[FakeCallableDescriptorForObject]
-
 'LOG' @ [38:68] ==> public final val LOG: Logger defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion[PropertyDescriptorImpl]
 
 'compilerSettings' @ [43:19] ==> private final var compilerSettings: CompilerSettings? defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner[PropertyDescriptorImpl]
@@ -32,10 +30,10 @@ Inferred types:
 
 '_jpsCompileServiceSession' @ [63:20] ==> @Volatile private final var _jpsCompileServiceSession: CompileServiceSession? defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.Companion[PropertyDescriptorImpl]
 
-'mergeBeans' @ [74:25] ==> public fun <From : Any, To : CommonCompilerArguments> mergeBeans(from: CommonCompilerArguments, to: K2JVMCompilerArguments): K2JVMCompilerArguments defined in org.jetbrains.kotlin.cli.common.arguments[DeserializedSimpleFunctionDescriptor]
+'mergeBeans' @ [74:25] ==> public fun <From : Any, To : (CommonCompilerArguments..CommonCompilerArguments?)> mergeBeans(from: (CommonCompilerArguments..CommonCompilerArguments?), to: (K2JVMCompilerArguments..K2JVMCompilerArguments?)): (K2JVMCompilerArguments..K2JVMCompilerArguments?) defined in org.jetbrains.kotlin.cli.common.arguments[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <From : Any> -> CommonCompilerArguments
-    <To : From> -> K2JVMCompilerArguments
+    <From : Any> -> (org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments..org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments?)
+    <To : From> -> (org.jetbrains.kotlin.cli.common.arguments.K2JVMCompilerArguments..org.jetbrains.kotlin.cli.common.arguments.K2JVMCompilerArguments?)
 
 'commonArguments' @ [74:36] ==> value-parameter commonArguments: CommonCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JvmCompiler[ValueParameterDescriptorImpl]
 
@@ -49,7 +47,7 @@ Inferred types:
 
 'moduleFile' @ [75:29] ==> value-parameter moduleFile: File defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JvmCompiler[ValueParameterDescriptorImpl]
 
-'arguments' @ [75:41] ==> val arguments: K2JVMCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JvmCompiler[LocalVariableDescriptor]
+'arguments' @ [75:41] ==> val arguments: (K2JVMCompilerArguments..K2JVMCompilerArguments?) defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JvmCompiler[LocalVariableDescriptor]
 
 'withCompilerSettings' @ [76:9] ==> private final inline fun withCompilerSettings(settings: CompilerSettings, fn: () -> Unit): Unit defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner[SimpleFunctionDescriptorImpl]
 
@@ -59,7 +57,7 @@ Inferred types:
 
 'K2JVM_COMPILER' @ [77:25] ==> protected final val K2JVM_COMPILER: String defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner[DeserializedPropertyDescriptor]
 
-'arguments' @ [77:41] ==> val arguments: K2JVMCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JvmCompiler[LocalVariableDescriptor]
+'arguments' @ [77:41] ==> val arguments: (K2JVMCompilerArguments..K2JVMCompilerArguments?) defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JvmCompiler[LocalVariableDescriptor]
 
 'environment' @ [77:52] ==> value-parameter environment: JpsCompilerEnvironment defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JvmCompiler[ValueParameterDescriptorImpl]
 
@@ -83,10 +81,10 @@ Inferred types:
 
 'k2jsArguments' @ [93:87] ==> value-parameter k2jsArguments: K2JSCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[ValueParameterDescriptorImpl]
 
-'mergeBeans' @ [95:25] ==> public fun <From : Any, To : CommonCompilerArguments> mergeBeans(from: CommonCompilerArguments, to: K2JSCompilerArguments): K2JSCompilerArguments defined in org.jetbrains.kotlin.cli.common.arguments[DeserializedSimpleFunctionDescriptor]
+'mergeBeans' @ [95:25] ==> public fun <From : Any, To : (CommonCompilerArguments..CommonCompilerArguments?)> mergeBeans(from: (CommonCompilerArguments..CommonCompilerArguments?), to: (K2JSCompilerArguments..K2JSCompilerArguments?)): (K2JSCompilerArguments..K2JSCompilerArguments?) defined in org.jetbrains.kotlin.cli.common.arguments[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <From : Any> -> CommonCompilerArguments
-    <To : From> -> K2JSCompilerArguments
+    <From : Any> -> (org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments..org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments?)
+    <To : From> -> (org.jetbrains.kotlin.cli.common.arguments.K2JSCompilerArguments..org.jetbrains.kotlin.cli.common.arguments.K2JSCompilerArguments?)
 
 'commonArguments' @ [95:36] ==> value-parameter commonArguments: CommonCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[ValueParameterDescriptorImpl]
 
@@ -104,7 +102,7 @@ Inferred types:
 
 'convertArgumentsToStringList' @ [96:62] ==> @NotNull public open fun convertArgumentsToStringList(@NotNull p0: CommonToolArguments): (MutableList<(String..String?)>..List<(String..String?)>) defined in org.jetbrains.kotlin.compilerRunner.ArgumentUtils[JavaMethodDescriptor]
 
-'arguments' @ [96:91] ==> val arguments: K2JSCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
+'arguments' @ [96:91] ==> val arguments: (K2JSCompilerArguments..K2JSCompilerArguments?) defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
 
 'setupK2JsArguments' @ [98:9] ==> private final fun setupK2JsArguments(_outputFile: File, sourceFiles: Collection<File>, _libraries: List<String>, _friendModules: List<String>, settings: K2JSCompilerArguments): Unit defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner[SimpleFunctionDescriptorImpl]
 
@@ -116,13 +114,13 @@ Inferred types:
 
 'friendModules' @ [98:64] ==> value-parameter friendModules: List<String> defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[ValueParameterDescriptorImpl]
 
-'arguments' @ [98:79] ==> val arguments: K2JSCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
+'arguments' @ [98:79] ==> val arguments: (K2JSCompilerArguments..K2JSCompilerArguments?) defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
 
-'arguments' @ [99:13] ==> val arguments: K2JSCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
+'arguments' @ [99:13] ==> val arguments: (K2JSCompilerArguments..K2JSCompilerArguments?) defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
 
 'sourceMap' @ [99:23] ==> @GradleOption @Argument public final var sourceMap: Boolean defined in org.jetbrains.kotlin.cli.common.arguments.K2JSCompilerArguments[DeserializedPropertyDescriptor]
 
-'arguments' @ [100:13] ==> val arguments: K2JSCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
+'arguments' @ [100:13] ==> val arguments: (K2JSCompilerArguments..K2JSCompilerArguments?) defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
 
 'sourceMapSourceRoots' @ [100:23] ==> @Argument public final var sourceMapSourceRoots: String? defined in org.jetbrains.kotlin.cli.common.arguments.K2JSCompilerArguments[DeserializedPropertyDescriptor]
 
@@ -146,7 +144,7 @@ Inferred types:
 
 'convertArgumentsToStringList' @ [103:65] ==> @NotNull public open fun convertArgumentsToStringList(@NotNull p0: CommonToolArguments): (MutableList<(String..String?)>..List<(String..String?)>) defined in org.jetbrains.kotlin.compilerRunner.ArgumentUtils[JavaMethodDescriptor]
 
-'arguments' @ [103:94] ==> val arguments: K2JSCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
+'arguments' @ [103:94] ==> val arguments: (K2JSCompilerArguments..K2JSCompilerArguments?) defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
 
 'withCompilerSettings' @ [105:9] ==> private final inline fun withCompilerSettings(settings: CompilerSettings, fn: () -> Unit): Unit defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner[SimpleFunctionDescriptorImpl]
 
@@ -156,7 +154,7 @@ Inferred types:
 
 'K2JS_COMPILER' @ [106:25] ==> protected final val K2JS_COMPILER: String defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner[DeserializedPropertyDescriptor]
 
-'arguments' @ [106:40] ==> val arguments: K2JSCompilerArguments defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
+'arguments' @ [106:40] ==> val arguments: (K2JSCompilerArguments..K2JSCompilerArguments?) defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[LocalVariableDescriptor]
 
 'environment' @ [106:51] ==> value-parameter environment: JpsCompilerEnvironment defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.runK2JsCompiler[ValueParameterDescriptorImpl]
 
@@ -223,19 +221,13 @@ Inferred types:
 
 'K2JVM_COMPILER' @ [132:13] ==> protected final val K2JVM_COMPILER: String defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner[DeserializedPropertyDescriptor]
 
-'CompileService' @ [132:31] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'JVM' @ [132:61] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
 'K2JS_COMPILER' @ [133:13] ==> protected final val K2JS_COMPILER: String defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner[DeserializedPropertyDescriptor]
 
-'CompileService' @ [133:30] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'JS' @ [133:60] ==> enum entry JS defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
 'K2METADATA_COMPILER' @ [134:13] ==> protected final val K2METADATA_COMPILER: String defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner[DeserializedPropertyDescriptor]
-
-'CompileService' @ [134:36] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'METADATA' @ [134:66] ==> enum entry METADATA defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
@@ -348,15 +340,9 @@ Inferred types:
 Inferred types:
     <reified @PureReifiable T> -> ReportCategory
 
-'ReportCategory' @ [162:25] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
 'COMPILER_MESSAGE' @ [162:40] ==> enum entry COMPILER_MESSAGE defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
 
-'ReportCategory' @ [162:58] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
 'EXCEPTION' @ [162:73] ==> enum entry EXCEPTION defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
-
-'ReportCategory' @ [165:17] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportCategory[FakeCallableDescriptorForObject]
 
 'values' @ [165:32] ==> public final fun values(): Array<ReportCategory> defined in org.jetbrains.kotlin.daemon.common.ReportCategory[SimpleFunctionDescriptorImpl]
 
@@ -388,11 +374,7 @@ Inferred types:
 
 'verbose' @ [173:18] ==> value-parameter verbose: Boolean defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.reportSeverity[ValueParameterDescriptorImpl]
 
-'ReportSeverity' @ [174:17] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
-
 'code' @ [174:37] ==> public final val code: Int defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[DeserializedPropertyDescriptor]
-
-'ReportSeverity' @ [177:17] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'code' @ [177:38] ==> public final val code: Int defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[DeserializedPropertyDescriptor]
 
@@ -545,11 +527,11 @@ Inferred types:
 
 'java' @ [229:48] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'name' @ [229:53] ==> public final val <T : (Any..Any?)> Class<out Any>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'rc' @ [229:61] ==> value-parameter rc: Any? defined in org.jetbrains.kotlin.compilerRunner.JpsKotlinCompilerRunner.getReturnCodeFromObject[ValueParameterDescriptorImpl]
 

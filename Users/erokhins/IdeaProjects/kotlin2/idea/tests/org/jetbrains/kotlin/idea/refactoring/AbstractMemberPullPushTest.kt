@@ -111,6 +111,8 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiFile..com.intellij.psi.PsiFile?)
 
+'markMembersInfo' @ [68:44] ==> internal fun markMembersInfo(file: PsiFile): Unit defined in org.jetbrains.kotlin.idea.refactoring in file AbstractMemberPullPushTest.kt[SimpleFunctionDescriptorImpl]
+
 'invoke' @ [70:13] ==> public abstract operator fun invoke(mainFile: @ParameterName PsiFile): Unit defined in kotlin.Function1[FunctionInvokeDescriptor]
 
 'file' @ [70:20] ==> val file: (PsiFile..PsiFile?) defined in org.jetbrains.kotlin.idea.refactoring.AbstractMemberPullPushTest.doTest[LocalVariableDescriptor]
@@ -237,14 +239,11 @@ Inferred types:
 
 'asBoolean' @ [100:69] ==> public final val JsonElement.asBoolean: Boolean[MyPropertyDescriptor]
 
-'NotNullableUserDataProperty' @ [106:53] ==> public constructor NotNullableUserDataProperty<in R : UserDataHolder, T : Any>(key: Key<ElementInfo>, defaultValue: ElementInfo) defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> PsiElement
-    <T : Any> -> ElementInfo
+'getValue' @ [106:53] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [106:85] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(ElementInfo..ElementInfo?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ElementInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.ElementInfo..org.jetbrains.kotlin.idea.refactoring.ElementInfo?)
 
 'ElementInfo' @ [106:109] ==> public constructor ElementInfo(checked: Boolean, toAbstract: Boolean) defined in org.jetbrains.kotlin.idea.refactoring.ElementInfo[ClassConstructorDescriptorImpl]
 
@@ -258,7 +257,7 @@ Inferred types:
 
 'member' @ [110:28] ==> public final val <T : (PsiElement..PsiElement?)> MemberInfoBase<out (PsiElement..PsiElement?)>.member: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'let' @ [110:35] ==> @InlineOnly public inline fun <T, R> (PsiElement..PsiElement?).let(block: ((PsiElement..PsiElement?)) -> (PsiElement..PsiElement?)): (PsiElement..PsiElement?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -285,7 +284,7 @@ Inferred types:
 
 'isChecked' @ [112:12] ==> public final var <T : (PsiElement..PsiElement?)> MemberInfoBase<out (PsiElement..PsiElement?)>.isChecked: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'info' @ [112:24] ==> val info: ElementInfo defined in org.jetbrains.kotlin.idea.refactoring.chooseMembers.<anonymous>[LocalVariableDescriptor]
 
@@ -295,7 +294,7 @@ Inferred types:
 
 'isToAbstract' @ [113:12] ==> public final var <T : (PsiElement..PsiElement?)> MemberInfoBase<out (PsiElement..PsiElement?)>.isToAbstract: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'info' @ [113:27] ==> val info: ElementInfo defined in org.jetbrains.kotlin.idea.refactoring.chooseMembers.<anonymous>[LocalVariableDescriptor]
 
@@ -311,5 +310,5 @@ Inferred types:
 
 'isChecked' @ [115:32] ==> public final var <T : (PsiElement..PsiElement?)> MemberInfoBase<out (PsiElement..PsiElement?)>.isChecked: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 

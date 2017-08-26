@@ -12,11 +12,11 @@
 
 'java' @ [33:46] ==> public val <T> KClass<out KotlinJvmBinarySourceElement>.java: Class<out KotlinJvmBinarySourceElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinJvmBinarySourceElement
+    <T> -> Captured(out KotlinJvmBinarySourceElement)
 
 'simpleName' @ [33:51] ==> public final val <T : (Any..Any?)> Class<out KotlinJvmBinarySourceElement>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinJvmBinarySourceElement
+    <T : (Any..Any?)> -> Captured(out KotlinJvmBinarySourceElement)
 
 'binaryClass' @ [33:65] ==> public final val binaryClass: KotlinJvmBinaryClass defined in org.jetbrains.kotlin.load.kotlin.KotlinJvmBinarySourceElement[PropertyDescriptorImpl]
 

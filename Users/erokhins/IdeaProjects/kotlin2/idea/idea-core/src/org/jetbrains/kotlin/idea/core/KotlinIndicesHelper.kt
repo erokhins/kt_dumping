@@ -346,7 +346,7 @@ Inferred types:
 
 'checkCanceled' @ [157:37] ==> public open fun checkCanceled(): Unit defined in com.intellij.openapi.progress.ProgressManager[JavaMethodDescriptor]
 
-'KotlinTopLevelExtensionsByReceiverTypeIndex' @ [158:21] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex[FakeCallableDescriptorForObject]
+'in' @ [158:21] ==> public open fun contains(element: String): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'receiverTypeNameFromKey' @ [158:65] ==> public final fun receiverTypeNameFromKey(key: String): String defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex.Companion[SimpleFunctionDescriptorImpl]
 
@@ -355,8 +355,6 @@ Inferred types:
 'receiverTypeNames' @ [158:96] ==> val receiverTypeNames: HashSet<String> defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.getCallableTopLevelExtensions[LocalVariableDescriptor]
 
 'invoke' @ [159:24] ==> public abstract operator fun invoke(p1: String): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
-
-'KotlinTopLevelExtensionsByReceiverTypeIndex' @ [159:35] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex[FakeCallableDescriptorForObject]
 
 'callableNameFromKey' @ [159:79] ==> public final fun callableNameFromKey(key: String): String defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex.Companion[SimpleFunctionDescriptorImpl]
 
@@ -389,7 +387,7 @@ Inferred types:
 
 'callTypeAndReceiver' @ [163:86] ==> value-parameter callTypeAndReceiver: CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.getCallableTopLevelExtensions[ValueParameterDescriptorImpl]
 
-'callType' @ [163:106] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [163:106] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'ArrayList' @ [165:37] ==> public constructor ArrayList<E : (Any..Any?)>(p0: Int) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -454,16 +452,16 @@ Inferred types:
 
 'scope' @ [186:38] ==> private final val scope: GlobalSearchScope defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper[PropertyDescriptorImpl]
 
-'asSequence' @ [186:45] ==> public fun <T> Iterable<KtTypeAlias>.asSequence(): Sequence<KtTypeAlias> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'asSequence' @ [186:45] ==> public fun <T> Iterable<(KtTypeAlias..KtTypeAlias?)>.asSequence(): Sequence<(KtTypeAlias..KtTypeAlias?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtTypeAlias
+    <T> -> (org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)
 
-'map' @ [187:22] ==> public fun <T, R> Sequence<KtTypeAlias>.map(transform: (KtTypeAlias) -> TypeAliasDescriptor?): Sequence<TypeAliasDescriptor?> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'map' @ [187:22] ==> public fun <T, R> Sequence<(KtTypeAlias..KtTypeAlias?)>.map(transform: ((KtTypeAlias..KtTypeAlias?)) -> TypeAliasDescriptor?): Sequence<TypeAliasDescriptor?> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtTypeAlias
+    <T> -> (org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)
     <R> -> TypeAliasDescriptor?
 
-'it' @ [187:28] ==> value-parameter it: KtTypeAlias defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.resolveTypeAliasesUsingIndex.searchRecursively.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [187:28] ==> value-parameter it: (KtTypeAlias..KtTypeAlias?) defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.resolveTypeAliasesUsingIndex.searchRecursively.<anonymous>[ValueParameterDescriptorImpl]
 
 'resolveToDescriptorIfAny' @ [187:31] ==> public fun KtDeclaration.resolveToDescriptorIfAny(bodyResolveMode: BodyResolveMode = ...): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.caches.resolve[DeserializedSimpleFunctionDescriptor]
 
@@ -515,6 +513,8 @@ Inferred types:
 'forEach' @ [193:22] ==> public inline fun <T> Sequence<String>.forEach(action: (String) -> Unit): Unit defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
+
+'searchRecursively' @ [193:32] ==> local final fun searchRecursively(typeName: String): Unit defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.resolveTypeAliasesUsingIndex[SimpleFunctionDescriptorImpl]
 
 'searchRecursively' @ [196:9] ==> local final fun searchRecursively(typeName: String): Unit defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.resolveTypeAliasesUsingIndex[SimpleFunctionDescriptorImpl]
 
@@ -617,6 +617,8 @@ Inferred types:
 Inferred types:
     <T> -> CallableDescriptor
 
+'processDescriptor' @ [225:88] ==> local final fun processDescriptor(descriptor: CallableDescriptor): Unit defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.findSuitableExtensions[SimpleFunctionDescriptorImpl]
+
 'result' @ [227:16] ==> val result: LinkedHashSet<CallableDescriptor> defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.findSuitableExtensions[LocalVariableDescriptor]
 
 'getInstance' @ [231:35] ==> public open fun getInstance(p0: (Project..Project?)): (PsiShortNamesCache..PsiShortNamesCache?) defined in com.intellij.psi.search.PsiShortNamesCache[JavaMethodDescriptor]
@@ -648,7 +650,7 @@ Inferred types:
 
 'it' @ [233:31] ==> value-parameter it: (PsiClass..PsiClass?) defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.getJvmClassesByName.<anonymous>[ValueParameterDescriptorImpl]
 
-'resolveToDescriptor' @ [233:34] ==> public fun PsiClass.resolveToDescriptor(resolutionFacade: ResolutionFacade, declarationTranslator: (KtClassOrObject) -> KtClassOrObject? = ...): ClassDescriptor? defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'resolveToDescriptor' @ [233:34] ==> public fun PsiClass.resolveToDescriptor(resolutionFacade: ResolutionFacade, declarationTranslator: (KtClassOrObject) -> KtClassOrObject? = ...): ClassDescriptor? defined in org.jetbrains.kotlin.idea.caches.resolve in file JavaResolveExtension.kt[SimpleFunctionDescriptorImpl]
 
 'resolutionFacade' @ [233:54] ==> private final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper[PropertyDescriptorImpl]
 
@@ -749,9 +751,9 @@ Inferred types:
 
 'descriptor' @ [260:23] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.processJvmCallablesByName[LocalVariableDescriptor]
 
-'lazy' @ [270:72] ==> public fun <T> lazy(initializer: () -> List<PsiShortNamesCache>?): Lazy<List<PsiShortNamesCache>?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [270:72] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<PsiShortNamesCache>?
+    <T> -> T
 
 'getInstance' @ [271:50] ==> public open fun getInstance(p0: (Project..Project?)): (PsiShortNamesCache..PsiShortNamesCache?) defined in com.intellij.psi.search.PsiShortNamesCache[JavaMethodDescriptor]
 
@@ -767,7 +769,7 @@ Inferred types:
 
 'declaredFields' @ [280:38] ==> public final val <T : (Any..Any?)> Class<out PsiShortNamesCache>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiShortNamesCache
+    <T : (Any..Any?)> -> Captured(out PsiShortNamesCache)
 
 'first' @ [280:53] ==> public inline fun <T> Array<out (Field..Field?)>.first(predicate: ((Field..Field?)) -> Boolean): (Field..Field?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -799,7 +801,7 @@ Inferred types:
 
 'isArray' @ [282:40] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'it' @ [282:51] ==> value-parameter it: (Field..Field?) defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.filteredShortNamesCaches.<anonymous>.getMyCachesField.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -807,7 +809,7 @@ Inferred types:
 
 'componentType' @ [282:59] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'PsiShortNamesCache' @ [282:76] ==> public constructor PsiShortNamesCache() defined in com.intellij.psi.search.PsiShortNamesCache[JavaClassConstructorDescriptor]
 
@@ -821,7 +823,7 @@ Inferred types:
 
 'java' @ [287:77] ==> public val <T> KClass<out PsiShortNamesCache>.java: Class<out PsiShortNamesCache> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiShortNamesCache
+    <T> -> Captured(out PsiShortNamesCache)
 
 'myCachesField' @ [288:44] ==> val myCachesField: Field defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.filteredShortNamesCaches.<anonymous>[LocalVariableDescriptor]
 
@@ -849,31 +851,31 @@ Inferred types:
 
 'java' @ [294:38] ==> public val <T> KClass<out PsiShortNamesCache>.java: Class<out PsiShortNamesCache> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiShortNamesCache
+    <T> -> Captured(out PsiShortNamesCache)
 
 'name' @ [294:43] ==> public final val <T : (Any..Any?)> Class<out PsiShortNamesCache>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiShortNamesCache
+    <T : (Any..Any?)> -> Captured(out PsiShortNamesCache)
 
 'it' @ [295:28] ==> value-parameter it: PsiShortNamesCache defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.filteredShortNamesCaches.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'java' @ [295:38] ==> public val <T> KClass<out PsiShortNamesCache>.java: Class<out PsiShortNamesCache> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiShortNamesCache
+    <T> -> Captured(out PsiShortNamesCache)
 
 'name' @ [295:43] ==> public final val <T : (Any..Any?)> Class<out PsiShortNamesCache>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiShortNamesCache
+    <T : (Any..Any?)> -> Captured(out PsiShortNamesCache)
 
 'it' @ [296:28] ==> value-parameter it: PsiShortNamesCache defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.filteredShortNamesCaches.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'java' @ [296:38] ==> public val <T> KClass<out PsiShortNamesCache>.java: Class<out PsiShortNamesCache> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiShortNamesCache
+    <T> -> Captured(out PsiShortNamesCache)
 
 'name' @ [296:43] ==> public final val <T : (Any..Any?)> Class<out PsiShortNamesCache>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiShortNamesCache
+    <T : (Any..Any?)> -> Captured(out PsiShortNamesCache)
 
 'myCachesField' @ [300:21] ==> val myCachesField: Field defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.filteredShortNamesCaches.<anonymous>[LocalVariableDescriptor]
 
@@ -926,10 +928,10 @@ Inferred types:
 Inferred types:
     <T> -> PsiShortNamesCache
 
-'flatMap' @ [317:36] ==> public fun <T, R> Sequence<PsiShortNamesCache>.flatMap(transform: (PsiShortNamesCache) -> Sequence<{PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}>): Sequence<{PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [317:36] ==> public fun <T, R> Sequence<PsiShortNamesCache>.flatMap(transform: (PsiShortNamesCache) -> Sequence<Any>): Sequence<Any> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiShortNamesCache
-    <R> -> {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}
+    <R> -> Any
 
 'cache' @ [318:13] ==> value-parameter cache: PsiShortNamesCache defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.getCallablesByName.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1267,8 +1269,6 @@ Inferred types:
 
 'and' @ [415:43] ==> public final infix fun and(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [415:47] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS_MASK' @ [415:68] ==> public final val FUNCTIONS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'processIndex' @ [416:13] ==> local final fun processIndex(index: StringStubIndexExtension<out KtNamedDeclaration>): Unit defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.processObjectMembers[SimpleFunctionDescriptorImpl]
@@ -1280,8 +1280,6 @@ Inferred types:
 'kindMask' @ [418:34] ==> public final val kindMask: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[DeserializedPropertyDescriptor]
 
 'and' @ [418:43] ==> public final infix fun and(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
-
-'DescriptorKindFilter' @ [418:47] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES_MASK' @ [418:68] ==> public final val VARIABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
@@ -1427,14 +1425,14 @@ Inferred types:
 
 'original' @ [449:97] ==> public final val FunctionDescriptor.original: FunctionDescriptor[MyPropertyDescriptor]
 
-'let' @ [450:31] ==> @InlineOnly public inline fun <T, R> SamAdapterDescriptor<out (FunctionDescriptor..FunctionDescriptor?)>.let(block: (SamAdapterDescriptor<out (FunctionDescriptor..FunctionDescriptor?)>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [450:31] ==> @InlineOnly public inline fun <T, R> SamAdapterDescriptor<*>.let(block: (SamAdapterDescriptor<*>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SamAdapterDescriptor<out (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>
+    <T> -> SamAdapterDescriptor<*>
     <R> -> Unit
 
 'invoke' @ [450:37] ==> public abstract operator fun invoke(p1: DeclarationDescriptor): Unit defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'it' @ [450:47] ==> value-parameter it: SamAdapterDescriptor<out (FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.processJavaStaticMembers.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [450:47] ==> value-parameter it: SamAdapterDescriptor<*> defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.processJavaStaticMembers.<anonymous>[ValueParameterDescriptorImpl]
 
 'hashSetOf' @ [455:29] ==> @SinceKotlin @InlineOnly public inline fun <T> hashSetOf(): HashSet<String> /* = HashSet<String> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

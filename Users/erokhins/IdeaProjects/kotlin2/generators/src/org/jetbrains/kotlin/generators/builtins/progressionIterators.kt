@@ -2,7 +2,7 @@
 
 'capitalized' @ [25:18] ==> public final val capitalized: String defined in org.jetbrains.kotlin.generators.builtins.ProgressionKind[PropertyDescriptorImpl]
 
-'progressionIncrementType' @ [27:25] ==> public fun progressionIncrementType(kind: ProgressionKind): String defined in org.jetbrains.kotlin.generators.builtins[SimpleFunctionDescriptorImpl]
+'progressionIncrementType' @ [27:25] ==> public fun progressionIncrementType(kind: ProgressionKind): String defined in org.jetbrains.kotlin.generators.builtins in file common.kt[SimpleFunctionDescriptorImpl]
 
 'kind' @ [27:50] ==> value-parameter kind: ProgressionKind defined in org.jetbrains.kotlin.generators.builtins.progressionIterators.integerProgressionIterator[ValueParameterDescriptorImpl]
 

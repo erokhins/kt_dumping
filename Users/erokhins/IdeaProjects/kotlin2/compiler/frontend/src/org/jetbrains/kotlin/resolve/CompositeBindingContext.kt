@@ -29,11 +29,11 @@ Inferred types:
 
 'LinkedHashSet' @ [40:32] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (BindingContext..BindingContext?)>..Collection<(BindingContext..BindingContext?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> BindingContext
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.BindingContext..org.jetbrains.kotlin.resolve.BindingContext?)
 
 'delegates' @ [40:46] ==> value-parameter delegates: List<BindingContext> defined in org.jetbrains.kotlin.resolve.CompositeBindingContext.Companion.create[ValueParameterDescriptorImpl]
 
-'delegatesSet' @ [41:17] ==> val delegatesSet: LinkedHashSet<BindingContext> defined in org.jetbrains.kotlin.resolve.CompositeBindingContext.Companion.create[LocalVariableDescriptor]
+'delegatesSet' @ [41:17] ==> val delegatesSet: LinkedHashSet<(BindingContext..BindingContext?)> defined in org.jetbrains.kotlin.resolve.CompositeBindingContext.Companion.create[LocalVariableDescriptor]
 
 'size' @ [41:30] ==> public open val size: Int defined in java.util.LinkedHashSet[JavaPropertyDescriptor]
 
@@ -45,7 +45,7 @@ Inferred types:
 
 'CompositeBindingContext' @ [42:20] ==> private constructor CompositeBindingContext(delegates: LinkedHashSet<BindingContext>) defined in org.jetbrains.kotlin.resolve.CompositeBindingContext[ClassConstructorDescriptorImpl]
 
-'delegatesSet' @ [42:44] ==> val delegatesSet: LinkedHashSet<BindingContext> defined in org.jetbrains.kotlin.resolve.CompositeBindingContext.Companion.create[LocalVariableDescriptor]
+'delegatesSet' @ [42:44] ==> val delegatesSet: LinkedHashSet<(BindingContext..BindingContext?)> defined in org.jetbrains.kotlin.resolve.CompositeBindingContext.Companion.create[LocalVariableDescriptor]
 
 'delegates' @ [47:16] ==> private final val delegates: LinkedHashSet<BindingContext> defined in org.jetbrains.kotlin.resolve.CompositeBindingContext[PropertyDescriptorImpl]
 
@@ -72,17 +72,17 @@ Inferred types:
 
 'delegates' @ [51:16] ==> private final val delegates: LinkedHashSet<BindingContext> defined in org.jetbrains.kotlin.resolve.CompositeBindingContext[PropertyDescriptorImpl]
 
-'flatMap' @ [51:26] ==> public inline fun <T, R> Iterable<BindingContext>.flatMap(transform: (BindingContext) -> Iterable<K>): List<K> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [51:26] ==> public inline fun <T, R> Iterable<BindingContext>.flatMap(transform: (BindingContext) -> Iterable<(K..K?)>): List<(K..K?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> BindingContext
-    <R> -> K
+    <R> -> (K..K?)
 
 'it' @ [51:36] ==> value-parameter it: BindingContext defined in org.jetbrains.kotlin.resolve.CompositeBindingContext.getKeys.<anonymous>[ValueParameterDescriptorImpl]
 
 'getKeys' @ [51:39] ==> @NotNull @ReadOnly public abstract fun <K : (Any..Any?), V : (Any..Any?)> getKeys(slice: (WritableSlice<(K..K?), (V..V?)>..WritableSlice<(K..K?), (V..V?)>?)): Collection<(K..K?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [51:47] ==> value-parameter slice: WritableSlice<K, V>? defined in org.jetbrains.kotlin.resolve.CompositeBindingContext.getKeys[ValueParameterDescriptorImpl]
 
@@ -105,8 +105,8 @@ Inferred types:
 
 'getSliceContents' @ [57:43] ==> @TestOnly @NotNull public abstract fun <K : (Any..Any?), V : (Any..Any?)> getSliceContents(@NotNull slice: ReadOnlySlice<(K..K?), (V..V?)>): ImmutableMap<(K..K?), (V..V?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [57:60] ==> value-parameter slice: ReadOnlySlice<K, V> defined in org.jetbrains.kotlin.resolve.CompositeBindingContext.getSliceContents[ValueParameterDescriptorImpl]
 
@@ -136,7 +136,7 @@ Inferred types:
 
 'delegates' @ [74:20] ==> private final val delegates: List<Diagnostics> defined in org.jetbrains.kotlin.resolve.CompositeBindingContext.CompositeDiagnostics[PropertyDescriptorImpl]
 
-'fold' @ [74:30] ==> public inline fun <T, R> Iterable<Diagnostics>.fold(initial: Sequence<Diagnostic>, operation: (Sequence<Diagnostic>, Diagnostics) -> Sequence<Diagnostic>): Sequence<Diagnostic> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [74:30] ==> public inline fun <T, R> Iterable<Diagnostics>.fold(initial: Sequence<Diagnostic>, operation: (acc: Sequence<Diagnostic>, Diagnostics) -> Sequence<Diagnostic>): Sequence<Diagnostic> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Diagnostics
     <R> -> Sequence<Diagnostic>
@@ -155,11 +155,11 @@ Inferred types:
 
 'iterator' @ [74:96] ==> public abstract operator fun iterator(): Iterator<Diagnostic> defined in kotlin.sequences.Sequence[DeserializedSimpleFunctionDescriptor]
 
-'ModificationTracker' @ [77:44] ==> public fun ModificationTracker(function: () -> Long): ModificationTracker defined in com.intellij.openapi.util[SimpleFunctionDescriptorImpl]
+'ModificationTracker' @ [77:44] ==> public fun ModificationTracker(function: () -> Long): ModificationTracker defined in com.intellij.openapi.util[SamConstructorDescriptorImpl]
 
 'delegates' @ [78:13] ==> private final val delegates: List<Diagnostics> defined in org.jetbrains.kotlin.resolve.CompositeBindingContext.CompositeDiagnostics[PropertyDescriptorImpl]
 
-'fold' @ [78:23] ==> public inline fun <T, R> Iterable<Diagnostics>.fold(initial: Long, operation: (Long, Diagnostics) -> Long): Long defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [78:23] ==> public inline fun <T, R> Iterable<Diagnostics>.fold(initial: Long, operation: (acc: Long, Diagnostics) -> Long): Long defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Diagnostics
     <R> -> Long

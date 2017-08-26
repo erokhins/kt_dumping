@@ -82,9 +82,9 @@ Inferred types:
 'if (otherClass is ClassDescriptor)
                             otherFunctions + otherClass.constructors
                         else
-                            otherFunctions' @ [48:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Collection<FunctionDescriptor>, elseBranch: Collection<FunctionDescriptor>): Collection<FunctionDescriptor>[SimpleFunctionDescriptorImpl]
+                            otherFunctions' @ [48:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Collection<(FunctionDescriptor..FunctionDescriptor?)>, elseBranch: Collection<(FunctionDescriptor..FunctionDescriptor?)>): Collection<(FunctionDescriptor..FunctionDescriptor?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Collection<FunctionDescriptor>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Collection<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>
 
 'otherClass' @ [48:29] ==> val otherClass: ClassifierDescriptor? defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[LocalVariableDescriptor]
 
@@ -96,7 +96,7 @@ Inferred types:
 
 'otherFunctions' @ [51:29] ==> val otherFunctions: Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[LocalVariableDescriptor]
 
-'potentiallyConflictingOverloads' @ [53:46] ==> val potentiallyConflictingOverloads: Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[LocalVariableDescriptor]
+'potentiallyConflictingOverloads' @ [53:46] ==> val potentiallyConflictingOverloads: Collection<(FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[LocalVariableDescriptor]
 
 '!' @ [54:25] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -104,7 +104,7 @@ Inferred types:
 
 'isOverloadable' @ [54:42] ==> public final fun isOverloadable(a: DeclarationDescriptor, b: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.OverloadChecker[SimpleFunctionDescriptorImpl]
 
-'overloadedDescriptor' @ [54:57] ==> val overloadedDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[LocalVariableDescriptor]
+'overloadedDescriptor' @ [54:57] ==> val overloadedDescriptor: (FunctionDescriptor..FunctionDescriptor?) defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[LocalVariableDescriptor]
 
 'newDescriptor' @ [54:79] ==> value-parameter newDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[ValueParameterDescriptorImpl]
 
@@ -112,7 +112,7 @@ Inferred types:
 
 'newDescriptor' @ [55:52] ==> value-parameter newDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[ValueParameterDescriptorImpl]
 
-'overloadedDescriptor' @ [55:67] ==> val overloadedDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[LocalVariableDescriptor]
+'overloadedDescriptor' @ [55:67] ==> val overloadedDescriptor: (FunctionDescriptor..FunctionDescriptor?) defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[LocalVariableDescriptor]
 
 'IllegalStateException' @ [60:27] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
 
@@ -120,11 +120,11 @@ Inferred types:
 
 'java' @ [60:104] ==> public val <T> KClass<out DeclarationDescriptor>.java: Class<out DeclarationDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DeclarationDescriptor
+    <T> -> Captured(out DeclarationDescriptor)
 
 'name' @ [60:109] ==> public final val <T : (Any..Any?)> Class<out DeclarationDescriptor>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DeclarationDescriptor
+    <T : (Any..Any?)> -> Captured(out DeclarationDescriptor)
 
 'newDescriptor' @ [60:129] ==> value-parameter newDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.AbstractLocalRedeclarationChecker.checkBeforeAddingToScope[ValueParameterDescriptorImpl]
 
@@ -133,8 +133,6 @@ Inferred types:
 'overloadChecker' @ [68:111] ==> value-parameter overloadChecker: OverloadChecker defined in org.jetbrains.kotlin.resolve.scopes.ThrowingLocalRedeclarationChecker.<init>[ValueParameterDescriptorImpl]
 
 'IllegalStateException' @ [70:15] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
-
-'String' @ [70:37] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
 'format' @ [70:44] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -151,8 +149,6 @@ Inferred types:
 'second' @ [72:86] ==> value-parameter second: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.ThrowingLocalRedeclarationChecker.handleRedeclaration[ValueParameterDescriptorImpl]
 
 'IllegalStateException' @ [76:15] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
-
-'String' @ [76:37] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
 'format' @ [76:44] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -172,7 +168,7 @@ Inferred types:
 
 'overloadChecker' @ [82:137] ==> value-parameter overloadChecker: OverloadChecker defined in org.jetbrains.kotlin.resolve.scopes.TraceBasedLocalRedeclarationChecker.<init>[ValueParameterDescriptorImpl]
 
-'reportOnDeclarationOrFail' @ [84:9] ==> public inline fun reportOnDeclarationOrFail(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'reportOnDeclarationOrFail' @ [84:9] ==> public inline fun reportOnDeclarationOrFail(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics in file diagnosticUtils.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [84:35] ==> public final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.scopes.TraceBasedLocalRedeclarationChecker[PropertyDescriptorImpl]
 
@@ -192,7 +188,7 @@ Inferred types:
 
 'second' @ [84:93] ==> value-parameter second: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.TraceBasedLocalRedeclarationChecker.handleRedeclaration[ValueParameterDescriptorImpl]
 
-'reportOnDeclarationOrFail' @ [85:9] ==> public inline fun reportOnDeclarationOrFail(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'reportOnDeclarationOrFail' @ [85:9] ==> public inline fun reportOnDeclarationOrFail(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics in file diagnosticUtils.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [85:35] ==> public final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.scopes.TraceBasedLocalRedeclarationChecker[PropertyDescriptorImpl]
 
@@ -212,7 +208,7 @@ Inferred types:
 
 'second' @ [85:94] ==> value-parameter second: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.scopes.TraceBasedLocalRedeclarationChecker.handleRedeclaration[ValueParameterDescriptorImpl]
 
-'reportOnDeclarationOrFail' @ [89:9] ==> public inline fun reportOnDeclarationOrFail(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'reportOnDeclarationOrFail' @ [89:9] ==> public inline fun reportOnDeclarationOrFail(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics in file diagnosticUtils.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [89:35] ==> public final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.scopes.TraceBasedLocalRedeclarationChecker[PropertyDescriptorImpl]
 
@@ -232,7 +228,7 @@ Inferred types:
 
 'second' @ [89:101] ==> value-parameter second: CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.scopes.TraceBasedLocalRedeclarationChecker.handleConflictingOverloads[ValueParameterDescriptorImpl]
 
-'reportOnDeclarationOrFail' @ [90:9] ==> public inline fun reportOnDeclarationOrFail(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'reportOnDeclarationOrFail' @ [90:9] ==> public inline fun reportOnDeclarationOrFail(trace: BindingTrace, descriptor: DeclarationDescriptor, what: (PsiElement) -> Diagnostic): Unit defined in org.jetbrains.kotlin.diagnostics in file diagnosticUtils.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [90:35] ==> public final val trace: BindingTrace defined in org.jetbrains.kotlin.resolve.scopes.TraceBasedLocalRedeclarationChecker[PropertyDescriptorImpl]
 

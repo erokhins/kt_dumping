@@ -185,7 +185,7 @@ Inferred types:
 
 'diagnostic' @ [93:116] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.intentions.AddValVarToConstructorParameterAction.QuickFixFactory.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [93:128] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtParameter..KtParameter?)>.psiElement: (KtParameter..KtParameter?)[MyPropertyDescriptor]
+'psiElement' @ [93:128] ==> public final val <E : (PsiElement..PsiElement?)> SimpleDiagnostic<(KtParameter..KtParameter?)>.psiElement: KtParameter[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
 

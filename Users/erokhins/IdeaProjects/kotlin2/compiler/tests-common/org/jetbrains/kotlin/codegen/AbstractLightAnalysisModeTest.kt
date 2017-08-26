@@ -73,6 +73,10 @@ Inferred types:
     <T> -> File
     <R> -> List<File>
 
+'listOf' @ [67:104] ==> public fun <T> listOf(element: File): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> File
+
 'orEmpty' @ [67:112] ==> @InlineOnly public inline fun <T> List<File>?.orEmpty(): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
@@ -147,8 +151,8 @@ Inferred types:
 
 'getSliceContents' @ [86:18] ==> @NotNull public abstract fun <K : (Any..Any?), V : (Any..Any?)> getSliceContents(@NotNull p0: ReadOnlySlice<(ClassDescriptor..ClassDescriptor?), (Type..Type?)>): ImmutableMap<(ClassDescriptor..ClassDescriptor?), (Type..Type?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassDescriptor
-    <V : (Any..Any?)> -> Type
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)
 
 'ASM_TYPE' @ [86:50] ==> public final val ASM_TYPE: (WritableSlice<(ClassDescriptor..ClassDescriptor?), (Type..Type?)>..WritableSlice<(ClassDescriptor..ClassDescriptor?), (Type..Type?)>?) defined in org.jetbrains.kotlin.codegen.binding.CodegenBinding[JavaPropertyDescriptor]
 

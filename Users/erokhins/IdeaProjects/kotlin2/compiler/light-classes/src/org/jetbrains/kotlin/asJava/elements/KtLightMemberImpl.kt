@@ -2,15 +2,15 @@
 
 'containingClass' @ [40:24] ==> value-parameter containingClass: KtLightClass defined in org.jetbrains.kotlin.asJava.elements.KtLightMemberImpl.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [41:33] ==> public fun <T> lazyPub(initializer: () -> D): Lazy<D> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [41:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> D
+    <T> -> T
 
 'computeRealDelegate' @ [41:41] ==> value-parameter computeRealDelegate: () -> D defined in org.jetbrains.kotlin.asJava.elements.KtLightMemberImpl.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [42:36] ==> public fun <T> lazyPub(initializer: () -> KtLightIdentifier): Lazy<KtLightIdentifier> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [42:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtLightIdentifier
+    <T> -> T
 
 'KtLightIdentifier' @ [42:46] ==> public constructor KtLightIdentifier(lightOwner: PsiNameIdentifierOwner, ktDeclaration: KtNamedDeclaration?) defined in org.jetbrains.kotlin.asJava.elements.KtLightIdentifier[ClassConstructorDescriptorImpl]
 
@@ -18,9 +18,9 @@ Inferred types:
 
 'kotlinOrigin' @ [42:70] ==> public open val kotlinOrigin: KtDeclaration? defined in org.jetbrains.kotlin.asJava.elements.KtLightMemberImpl[PropertyDescriptorImpl]
 
-'lazyPub' @ [44:34] ==> public fun <T> lazyPub(initializer: () -> PsiModifierList): Lazy<PsiModifierList> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [44:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiModifierList
+    <T> -> T
 
 'if (lightMemberOrigin is LightMemberOriginForDeclaration)
             KtLightMemberModifierList(this, dummyDelegate?.modifierList)
@@ -54,11 +54,11 @@ Inferred types:
 
 'java' @ [54:54] ==> public val <T> KClass<out KtLightMemberImpl<D>>.java: Class<out KtLightMemberImpl<D>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtLightMemberImpl<D>
+    <T> -> Captured(out KtLightMemberImpl<D>)
 
 'simpleName' @ [54:59] ==> public final val <T : (Any..Any?)> Class<out KtLightMemberImpl<D>>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtLightMemberImpl<D>
+    <T : (Any..Any?)> -> Captured(out KtLightMemberImpl<D>)
 
 'name' @ [54:72] ==> public final var <out D : PsiMember> KtLightMemberImpl<D>.name: String[MyPropertyDescriptor]
 Inferred types:
@@ -110,7 +110,7 @@ Inferred types:
 
 'stub' @ [80:30] ==> public final val <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> ClsRepositoryPsiElement<out raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>.stub: (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> raw (com.intellij.psi.stubs.StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>..com.intellij.psi.stubs.StubElement<*>?)
+    <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> Captured(*)
 
 'stubElement' @ [82:12] ==> val stubElement: UserDataHolder defined in org.jetbrains.kotlin.asJava.elements.getMemberOrigin[LocalVariableDescriptor]
 
@@ -182,7 +182,7 @@ Inferred types:
 Inferred types:
     <out D : PsiMember> -> PsiMember
 
-'isPossiblyAffectedByAllOpen' @ [94:101] ==> public fun KtLightClassForSourceDeclaration.isPossiblyAffectedByAllOpen(): Boolean defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'isPossiblyAffectedByAllOpen' @ [94:101] ==> public fun KtLightClassForSourceDeclaration.isPossiblyAffectedByAllOpen(): Boolean defined in org.jetbrains.kotlin.asJava.classes in file KtLightClassForSourceDeclaration.kt[SimpleFunctionDescriptorImpl]
 
 'clsDelegate' @ [95:13] ==> public open val clsDelegate: PsiModifierList defined in org.jetbrains.kotlin.asJava.elements.KtLightMemberModifierList[PropertyDescriptorImpl]
 

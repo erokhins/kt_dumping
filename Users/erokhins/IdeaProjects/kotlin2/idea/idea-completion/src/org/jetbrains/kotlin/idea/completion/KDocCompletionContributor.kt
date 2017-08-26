@@ -26,7 +26,7 @@ Inferred types:
 
 'or' @ [54:41] ==> @SafeVarargs @NotNull public open fun <E : (Any..Any?)> or(@NotNull vararg p0: (ElementPattern<out (PsiElement..PsiElement?)>..ElementPattern<out (PsiElement..PsiElement?)>?)): ElementPattern<(PsiElement..PsiElement?)> defined in com.intellij.patterns.StandardPatterns[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> PsiElement
+    <E : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'psiElement' @ [54:44] ==> public open fun psiElement(p0: (IElementType..IElementType?)): (PsiElementPattern.Capture<(PsiElement..PsiElement?)>..PsiElementPattern.Capture<(PsiElement..PsiElement?)>?) defined in com.intellij.patterns.PlatformPatterns[JavaMethodDescriptor]
 
@@ -56,8 +56,6 @@ Inferred types:
 
 'parameters' @ [64:35] ==> value-parameter parameters: CompletionParameters defined in org.jetbrains.kotlin.idea.completion.KDocNameCompletionProvider.addCompletions[ValueParameterDescriptorImpl]
 
-'ToFromOriginalFileMapper' @ [64:47] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.ToFromOriginalFileMapper[FakeCallableDescriptorForObject]
-
 'create' @ [64:72] ==> public final fun create(parameters: CompletionParameters): ToFromOriginalFileMapper defined in org.jetbrains.kotlin.idea.completion.ToFromOriginalFileMapper.Companion[SimpleFunctionDescriptorImpl]
 
 'parameters' @ [64:79] ==> value-parameter parameters: CompletionParameters defined in org.jetbrains.kotlin.idea.completion.KDocNameCompletionProvider.addCompletions[ValueParameterDescriptorImpl]
@@ -68,7 +66,7 @@ Inferred types:
 
 'CompletionSession' @ [72:5] ==> public constructor CompletionSession(configuration: CompletionSessionConfiguration, parameters: CompletionParameters, toFromOriginalFileMapper: ToFromOriginalFileMapper, resultSet: CompletionResultSet) defined in org.jetbrains.kotlin.idea.completion.CompletionSession[ClassConstructorDescriptorImpl]
 
-'CompletionSessionConfiguration' @ [72:23] ==> public fun CompletionSessionConfiguration(parameters: CompletionParameters): CompletionSessionConfiguration defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'CompletionSessionConfiguration' @ [72:23] ==> public fun CompletionSessionConfiguration(parameters: CompletionParameters): CompletionSessionConfiguration defined in org.jetbrains.kotlin.idea.completion in file CompletionSession.kt[SimpleFunctionDescriptorImpl]
 
 'parameters' @ [72:54] ==> value-parameter parameters: CompletionParameters defined in org.jetbrains.kotlin.idea.completion.KDocNameCompletionSession.<init>[ValueParameterDescriptorImpl]
 
@@ -122,8 +120,6 @@ Inferred types:
 'getTagIfSubject' @ [82:22] ==> public final fun getTagIfSubject(): KDocTag? defined in org.jetbrains.kotlin.kdoc.psi.impl.KDocLink[DeserializedSimpleFunctionDescriptor]
 
 'knownTag' @ [82:41] ==> public final val knownTag: KDocKnownTag? defined in org.jetbrains.kotlin.kdoc.psi.impl.KDocTag[DeserializedPropertyDescriptor]
-
-'KDocKnownTag' @ [82:53] ==> public companion object defined in org.jetbrains.kotlin.kdoc.parser.KDocKnownTag[FakeCallableDescriptorForObject]
 
 'PARAM' @ [82:66] ==> enum entry PARAM defined in org.jetbrains.kotlin.kdoc.parser.KDocKnownTag[FakeCallableDescriptorForObject]
 
@@ -208,7 +204,7 @@ Inferred types:
 
 'descriptorNameFilter' @ [106:26] ==> protected final val descriptorNameFilter: (String) -> Boolean defined in org.jetbrains.kotlin.idea.completion.KDocNameCompletionSession[PropertyDescriptorImpl]
 
-'toNameFilter' @ [106:47] ==> public fun ((String) -> Boolean).toNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'toNameFilter' @ [106:47] ==> public fun ((String) -> Boolean).toNameFilter(): (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'if (qualifiedLink.isNotEmpty()) {
             val parentDescriptors = resolveKDocLink(bindingContext, resolutionFacade, declarationDescriptor, kDocLink.getTagIfSubject(), qualifiedLink)
@@ -267,8 +263,6 @@ Inferred types:
 
 'collectDescriptorsFiltered' @ [116:33] ==> public fun HierarchicalScope.collectDescriptorsFiltered(kindFilter: DescriptorKindFilter = ..., nameFilter: (Name) -> Boolean = ..., changeNamesForAliased: Boolean = ...): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.utils[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [116:60] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'ALL' @ [116:81] ==> @field:JvmField public final val ALL: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'nameFilter' @ [116:86] ==> val nameFilter: (Name) -> Boolean defined in org.jetbrains.kotlin.idea.completion.KDocNameCompletionSession.collectDescriptorsForLinkCompletion[LocalVariableDescriptor]
@@ -323,7 +317,7 @@ Inferred types:
 
 'javaIdentifierPart' @ [138:46] ==> public open fun javaIdentifierPart(): (CharPattern..CharPattern?) defined in com.intellij.patterns.CharPattern[JavaMethodDescriptor]
 
-'singleCharPattern' @ [138:70] ==> public fun singleCharPattern(char: Char): CharPattern defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'singleCharPattern' @ [138:70] ==> public fun singleCharPattern(char: Char): CharPattern defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'or' @ [139:17] ==> public infix fun <T> ElementPattern<(Char..Char?)>.or(rhs: ElementPattern<(Char..Char?)>): ElementPattern<(Char..Char?)> defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -333,7 +327,7 @@ Inferred types:
 
 'javaIdentifierStart' @ [139:46] ==> public open fun javaIdentifierStart(): (CharPattern..CharPattern?) defined in com.intellij.patterns.CharPattern[JavaMethodDescriptor]
 
-'singleCharPattern' @ [139:71] ==> public fun singleCharPattern(char: Char): CharPattern defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'singleCharPattern' @ [139:71] ==> public fun singleCharPattern(char: Char): CharPattern defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'prefix' @ [141:13] ==> val prefix: (String..String?) defined in org.jetbrains.kotlin.idea.completion.KDocTagCompletionProvider.addCompletions[LocalVariableDescriptor]
 

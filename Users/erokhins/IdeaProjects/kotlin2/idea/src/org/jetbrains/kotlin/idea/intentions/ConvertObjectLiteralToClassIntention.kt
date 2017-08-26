@@ -57,8 +57,6 @@ Inferred types:
 
 'objectLiteralType' @ [56:29] ==> val objectLiteralType: KotlinType? defined in org.jetbrains.kotlin.idea.intentions.ConvertObjectLiteralToClassIntention.doApply[LocalVariableDescriptor]
 
-'KotlinNameSuggester' @ [57:13] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
-
 'suggestNamesByType' @ [57:33] ==> public final fun suggestNamesByType(type: KotlinType, validator: (String) -> Boolean, defaultName: String? = ...): List<String> defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
 'objectLiteralType' @ [57:52] ==> val objectLiteralType: KotlinType? defined in org.jetbrains.kotlin.idea.intentions.ConvertObjectLiteralToClassIntention.doApply[LocalVariableDescriptor]
@@ -68,8 +66,6 @@ Inferred types:
 'first' @ [57:87] ==> public fun <T> List<String>.first(): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
-
-'KotlinNameSuggester' @ [60:13] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
 
 'suggestNameByName' @ [60:33] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 
@@ -171,8 +167,6 @@ Inferred types:
 
 'descriptor' @ [88:70] ==> val descriptor: ExtractableCodeDescriptor defined in org.jetbrains.kotlin.idea.intentions.ConvertObjectLiteralToClassIntention.doApply.<anonymous>.<no name provided>.configureAndRun[LocalVariableDescriptor]
 
-'ExtractionGeneratorOptions' @ [88:82] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorOptions[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [88:109] ==> @JvmField public final val DEFAULT: ExtractionGeneratorOptions defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionGeneratorOptions.Companion[PropertyDescriptorImpl]
 
 'onFinish' @ [89:37] ==> value-parameter onFinish: (ExtractionResult) -> Unit defined in org.jetbrains.kotlin.idea.intentions.ConvertObjectLiteralToClassIntention.doApply.<anonymous>.<no name provided>.configureAndRun[ValueParameterDescriptorImpl]
@@ -270,7 +264,7 @@ Inferred types:
 
 'element' @ [116:26] ==> value-parameter element: KtObjectLiteralExpression defined in org.jetbrains.kotlin.idea.intentions.ConvertObjectLiteralToClassIntention.applyTo[ValueParameterDescriptorImpl]
 
-'getExtractionContainers' @ [116:34] ==> public fun PsiElement.getExtractionContainers(strict: Boolean = ..., includeAll: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getExtractionContainers' @ [116:34] ==> public fun PsiElement.getExtractionContainers(strict: Boolean = ..., includeAll: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'getApplication' @ [118:32] ==> public open fun getApplication(): (Application..Application?) defined in com.intellij.openapi.application.ApplicationManager[JavaMethodDescriptor]
 

@@ -10,7 +10,7 @@ Inferred types:
 
 'getArgumentExpression' @ [34:42] ==> @IfNotParsed @Nullable public open fun getArgumentExpression(): KtExpression? defined in org.jetbrains.kotlin.psi.KtValueArgument[JavaMethodDescriptor]
 
-'isUnclearExpression' @ [34:67] ==> private fun KtExpression.isUnclearExpression(): Boolean defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'isUnclearExpression' @ [34:67] ==> private fun KtExpression.isUnclearExpression(): Boolean defined in org.jetbrains.kotlin.idea.parameterInfo in file ArgumentNameHints.kt[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [34:107] ==> public fun <T> emptyList(): List<InlayInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -40,7 +40,7 @@ Inferred types:
 
 'resolvedCall' @ [38:9] ==> val resolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.parameterInfo.provideArgumentNameHints[LocalVariableDescriptor]
 
-'getParameterInfoForCallCandidate' @ [39:16] ==> private fun getParameterInfoForCallCandidate(resolvedCall: ResolvedCall<out CallableDescriptor>): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'getParameterInfoForCallCandidate' @ [39:16] ==> private fun getParameterInfoForCallCandidate(resolvedCall: ResolvedCall<out CallableDescriptor>): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo in file ArgumentNameHints.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [39:49] ==> val resolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.parameterInfo.provideArgumentNameHints[LocalVariableDescriptor]
 
@@ -73,7 +73,7 @@ Inferred types:
     <T> -> ResolvedCall<FunctionDescriptor>
     <R> -> Nothing
 
-'getParameterInfoForCallCandidate' @ [43:45] ==> private fun getParameterInfoForCallCandidate(resolvedCall: ResolvedCall<out CallableDescriptor>): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'getParameterInfoForCallCandidate' @ [43:45] ==> private fun getParameterInfoForCallCandidate(resolvedCall: ResolvedCall<out CallableDescriptor>): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo in file ArgumentNameHints.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [43:78] ==> value-parameter it: ResolvedCall<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.parameterInfo.provideArgumentNameHints.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -84,11 +84,11 @@ Inferred types:
     <T> -> ResolvedCall<FunctionDescriptor>
     <R> -> List<InlayInfo>
 
-'getParameterInfoForCallCandidate' @ [44:29] ==> private fun getParameterInfoForCallCandidate(resolvedCall: ResolvedCall<out CallableDescriptor>): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'getParameterInfoForCallCandidate' @ [44:29] ==> private fun getParameterInfoForCallCandidate(resolvedCall: ResolvedCall<out CallableDescriptor>): List<InlayInfo> defined in org.jetbrains.kotlin.idea.parameterInfo in file ArgumentNameHints.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [44:62] ==> value-parameter it: ResolvedCall<FunctionDescriptor> defined in org.jetbrains.kotlin.idea.parameterInfo.provideArgumentNameHints.<anonymous>[ValueParameterDescriptorImpl]
 
-'reduce' @ [44:68] ==> public inline fun <S, T : List<InlayInfo>> Iterable<List<InlayInfo>>.reduce(operation: (List<InlayInfo>, List<InlayInfo>) -> List<InlayInfo>): List<InlayInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [44:68] ==> public inline fun <S, T : List<InlayInfo>> Iterable<List<InlayInfo>>.reduce(operation: (acc: List<InlayInfo>, List<InlayInfo>) -> List<InlayInfo>): List<InlayInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> List<InlayInfo>
     <T : S> -> List<InlayInfo>
@@ -123,7 +123,7 @@ Inferred types:
 
 'valueArguments' @ [55:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'mapNotNull' @ [55:40] ==> public inline fun <K, V, R : Any> Map<out (ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>.mapNotNull(transform: (Map.Entry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>) -> InlayInfo?): List<InlayInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -179,7 +179,7 @@ Inferred types:
 
 'argExp' @ [58:69] ==> value-parameter argExp: KtExpression defined in org.jetbrains.kotlin.idea.parameterInfo.getParameterInfoForCallCandidate.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'isUnclearExpression' @ [58:76] ==> private fun KtExpression.isUnclearExpression(): Boolean defined in org.jetbrains.kotlin.idea.parameterInfo[SimpleFunctionDescriptorImpl]
+'isUnclearExpression' @ [58:76] ==> private fun KtExpression.isUnclearExpression(): Boolean defined in org.jetbrains.kotlin.idea.parameterInfo in file ArgumentNameHints.kt[SimpleFunctionDescriptorImpl]
 
 'if (valueParam.varargElementType != null) "..." else ""' @ [59:34] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:

@@ -198,8 +198,6 @@ Inferred types:
 
 'getKPropertyType' @ [108:40] ==> public final fun getKPropertyType(annotations: Annotations, receiverTypes: List<KotlinType>, returnType: KotlinType, mutable: Boolean): SimpleType defined in org.jetbrains.kotlin.builtins.ReflectionTypes[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [108:57] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [108:69] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'receivers' @ [108:76] ==> val receivers: List<ReceiverParameterDescriptor> defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.getKPropertyTypeForDelegatedProperty[LocalVariableDescriptor]
@@ -296,7 +294,7 @@ Inferred types:
 
 'irDelegateInitializer' @ [140:53] ==> val irDelegateInitializer: IrExpressionBody defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.generateInitializerBodyForPropertyDelegate[LocalVariableDescriptor]
 
-'createBodyGenerator' @ [142:34] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [142:34] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'scopeOwner' @ [142:54] ==> value-parameter scopeOwner: IrSymbol defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.generateInitializerBodyForPropertyDelegate[ValueParameterDescriptorImpl]
 
@@ -385,7 +383,7 @@ Inferred types:
     <T> -> ClassDescriptor
     <R> -> ExpressionValue
 
-'generateExpressionValue' @ [161:17] ==> public inline fun generateExpressionValue(type: KotlinType, crossinline generate: () -> IrExpression): ExpressionValue defined in org.jetbrains.kotlin.psi2ir.intermediate[SimpleFunctionDescriptorImpl]
+'generateExpressionValue' @ [161:17] ==> public inline fun generateExpressionValue(type: KotlinType, crossinline generate: () -> IrExpression): ExpressionValue defined in org.jetbrains.kotlin.psi2ir.intermediate in file OnceExpressionValue.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [161:41] ==> value-parameter it: ClassDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.createThisValueForDelegate.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -441,7 +439,7 @@ Inferred types:
 
 'referencedDescriptor' @ [188:38] ==> value-parameter referencedDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.createCallableReference[ValueParameterDescriptorImpl]
 
-'createBodyGenerator' @ [189:21] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [189:21] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'scopeOwner' @ [189:41] ==> value-parameter scopeOwner: IrSymbol defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.createCallableReference[ValueParameterDescriptorImpl]
 
@@ -449,7 +447,7 @@ Inferred types:
 
 'ReflectionReferencesGenerator' @ [199:13] ==> public constructor ReflectionReferencesGenerator(statementGenerator: StatementGenerator) defined in org.jetbrains.kotlin.psi2ir.generators.ReflectionReferencesGenerator[ClassConstructorDescriptorImpl]
 
-'createBodyGenerator' @ [199:43] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [199:43] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'scopeOwner' @ [199:63] ==> value-parameter scopeOwner: IrSymbol defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.createLocalDelegatedPropertyReference[ValueParameterDescriptorImpl]
 
@@ -679,7 +677,7 @@ Inferred types:
 
 'provideDelegateResolvedCall' @ [281:13] ==> val provideDelegateResolvedCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.getDelegatedPropertyDelegateType[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [281:41] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [281:41] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -695,7 +693,7 @@ Inferred types:
 
 'expression' @ [293:47] ==> public final val KtPropertyDelegate.expression: KtExpression?[MyPropertyDescriptor]
 
-'createBodyGenerator' @ [294:37] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [294:37] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'scopeOwner' @ [294:57] ==> value-parameter scopeOwner: IrSymbol defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.generateInitializerForLocalDelegatedPropertyDelegate[ValueParameterDescriptorImpl]
 
@@ -716,7 +714,7 @@ Inferred types:
 
 'irDelegateInitializer' @ [297:50] ==> val irDelegateInitializer: IrExpression defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.generateInitializerForLocalDelegatedPropertyDelegate[LocalVariableDescriptor]
 
-'createBodyGenerator' @ [299:34] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [299:34] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'scopeOwner' @ [299:54] ==> value-parameter scopeOwner: IrSymbol defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.generateInitializerForLocalDelegatedPropertyDelegate[ValueParameterDescriptorImpl]
 
@@ -834,8 +832,6 @@ Inferred types:
 
 'getKPropertyType' @ [336:37] ==> public final fun getKPropertyType(annotations: Annotations, receiverTypes: List<KotlinType>, returnType: KotlinType, mutable: Boolean): SimpleType defined in org.jetbrains.kotlin.builtins.ReflectionTypes[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [336:54] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [336:66] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'emptyList' @ [336:73] ==> public fun <T> emptyList(): List<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -863,13 +859,13 @@ Inferred types:
     <T> -> BodyGenerator
     <R> -> IrBlockBody
 
-'createBodyGenerator' @ [352:18] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [352:18] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'irGetter' @ [352:38] ==> value-parameter irGetter: IrFunction defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.generateDelegatedPropertyGetterBody[ValueParameterDescriptorImpl]
 
 'symbol' @ [352:47] ==> public abstract val symbol: IrFunctionSymbol defined in org.jetbrains.kotlin.ir.declarations.IrFunction[DeserializedPropertyDescriptor]
 
-'irBlockBody' @ [353:17] ==> public inline fun GeneratorWithScope.irBlockBody(ktElement: KtElement?, body: IrBlockBodyBuilder.() -> Unit): IrBlockBody defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'irBlockBody' @ [353:17] ==> public inline fun GeneratorWithScope.irBlockBody(ktElement: KtElement?, body: IrBlockBodyBuilder.() -> Unit): IrBlockBody defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'ktDelegate' @ [353:29] ==> value-parameter ktDelegate: KtPropertyDelegate defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.generateDelegatedPropertyGetterBody[ValueParameterDescriptorImpl]
 
@@ -927,13 +923,13 @@ Inferred types:
     <T> -> BodyGenerator
     <R> -> IrBlockBody
 
-'createBodyGenerator' @ [369:22] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'createBodyGenerator' @ [369:22] ==> public fun Generator.createBodyGenerator(scopeOwnerSymbol: IrSymbol): BodyGenerator defined in org.jetbrains.kotlin.psi2ir.generators in file DeclarationGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'irSetter' @ [369:42] ==> value-parameter irSetter: IrFunction defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.generateDelegatedPropertySetterBody[ValueParameterDescriptorImpl]
 
 'symbol' @ [369:51] ==> public abstract val symbol: IrFunctionSymbol defined in org.jetbrains.kotlin.ir.declarations.IrFunction[DeserializedPropertyDescriptor]
 
-'irBlockBody' @ [370:9] ==> public inline fun GeneratorWithScope.irBlockBody(ktElement: KtElement?, body: IrBlockBodyBuilder.() -> Unit): IrBlockBody defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'irBlockBody' @ [370:9] ==> public inline fun GeneratorWithScope.irBlockBody(ktElement: KtElement?, body: IrBlockBodyBuilder.() -> Unit): IrBlockBody defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'ktDelegate' @ [370:21] ==> value-parameter ktDelegate: KtPropertyDelegate defined in org.jetbrains.kotlin.psi2ir.generators.DelegatedPropertyGenerator.generateDelegatedPropertySetterBody[ValueParameterDescriptorImpl]
 

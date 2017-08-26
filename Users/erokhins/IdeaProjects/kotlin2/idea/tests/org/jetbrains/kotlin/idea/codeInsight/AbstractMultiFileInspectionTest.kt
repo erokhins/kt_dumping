@@ -56,7 +56,7 @@ Inferred types:
 
 'mockJdk' @ [49:110] ==> @NotNull public open fun mockJdk(): Sdk defined in org.jetbrains.kotlin.idea.test.PluginTestCaseBase[JavaMethodDescriptor]
 
-'runInspection' @ [54:24] ==> public fun runInspection(inspectionClass: Class<*>, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections[SimpleFunctionDescriptorImpl]
+'runInspection' @ [54:24] ==> public fun runInspection(inspectionClass: Class<*>, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections in file InspectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'forName' @ [54:44] ==> @CallerSensitive public open fun forName(p0: (String..String?)): (Class<*>..Class<*>?) defined in java.lang.Class[JavaMethodDescriptor]
 

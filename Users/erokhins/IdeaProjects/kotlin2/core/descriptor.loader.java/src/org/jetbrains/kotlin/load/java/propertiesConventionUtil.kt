@@ -124,7 +124,7 @@ Inferred types:
 
 'nameAsString' @ [58:29] ==> val nameAsString: String defined in org.jetbrains.kotlin.load.java.getPropertyNamesCandidatesByAccessorName[LocalVariableDescriptor]
 
-'propertyNamesBySetMethodName' @ [59:16] ==> public fun propertyNamesBySetMethodName(methodName: Name): List<Name> defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'propertyNamesBySetMethodName' @ [59:16] ==> public fun propertyNamesBySetMethodName(methodName: Name): List<Name> defined in org.jetbrains.kotlin.load.java in file propertiesConventionUtil.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [59:45] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.java.getPropertyNamesCandidatesByAccessorName[ValueParameterDescriptorImpl]
 

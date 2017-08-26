@@ -60,15 +60,15 @@ Inferred types:
 
 'fields' @ [44:76] ==> value-parameter fields: List<NewJavaField> defined in org.jetbrains.kotlin.codegen.inline.toNameTypePair[ValueParameterDescriptorImpl]
 
-'map' @ [44:83] ==> public inline fun <T, R> Iterable<NewJavaField>.map(transform: (NewJavaField) -> Pair<String, Type>): List<Pair<String, Type>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [44:83] ==> public inline fun <T, R> Iterable<NewJavaField>.map(transform: (NewJavaField) -> Pair<(String..String?), (Type..Type?)>): List<Pair<(String..String?), (Type..Type?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> NewJavaField
-    <R> -> Pair<String, Type>
+    <R> -> Pair<(kotlin.String..kotlin.String?), (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)>
 
 'Pair' @ [44:89] ==> public constructor Pair<A : (Any..Any?), B : (Any..Any?)>(p0: (String..String?), p1: (Type..Type?)) defined in com.intellij.openapi.util.Pair[JavaClassConstructorDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> String
-    <B : (Any..Any?)> -> Type
+    <A : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <B : (Any..Any?)> -> (org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)
 
 'it' @ [44:94] ==> value-parameter it: NewJavaField defined in org.jetbrains.kotlin.codegen.inline.toNameTypePair.<anonymous>[ValueParameterDescriptorImpl]
 

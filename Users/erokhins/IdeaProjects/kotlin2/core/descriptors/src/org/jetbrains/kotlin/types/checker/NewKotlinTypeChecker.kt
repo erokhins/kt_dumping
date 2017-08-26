@@ -402,7 +402,7 @@ Inferred types:
 
 'it' @ [130:66] ==> value-parameter it: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker.transformToNewType.<anonymous>[ValueParameterDescriptorImpl]
 
-'makeNullable' @ [130:69] ==> public fun KotlinType.makeNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'makeNullable' @ [130:69] ==> public fun KotlinType.makeNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'IntersectionTypeConstructor' @ [131:38] ==> public constructor IntersectionTypeConstructor(typesToIntersect: (MutableCollection<(KotlinType..KotlinType?)>..Collection<(KotlinType..KotlinType?)>?)) defined in org.jetbrains.kotlin.types.IntersectionTypeConstructor[JavaClassConstructorDescriptor]
 
@@ -482,8 +482,6 @@ Inferred types:
 'type' @ [145:70] ==> value-parameter type: UnwrappedType defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker.transformToNewType[ValueParameterDescriptorImpl]
 
 'upperBound' @ [145:75] ==> public final val upperBound: SimpleType defined in org.jetbrains.kotlin.types.FlexibleType[PropertyDescriptorImpl]
-
-'KotlinTypeFactory' @ [146:25] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
 
 'flexibleType' @ [146:43] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
@@ -611,6 +609,8 @@ Inferred types:
 'type' @ [180:22] ==> value-parameter type: SimpleType defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker.hasNothingSupertype[ValueParameterDescriptorImpl]
 
 'KotlinBuiltIns' @ [180:28] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull storageManager: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
+
+'isNothingOrNullableNothing' @ [180:44] ==> public open fun isNothingOrNullableNothing(@NotNull type: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 
 'if (it.isClassType) {
                 SupertypesPolicy.None
@@ -830,7 +830,7 @@ Inferred types:
 
 'superType' @ [220:87] ==> value-parameter superType: SimpleType defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker.isSubtypeOfForSingleClassifierType[ValueParameterDescriptorImpl]
 
-'intersectTypes' @ [224:21] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
+'intersectTypes' @ [224:21] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker in file IntersectionType.kt[SimpleFunctionDescriptorImpl]
 
 'allProjections' @ [224:36] ==> val allProjections: List<UnwrappedType> defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker.isSubtypeOfForSingleClassifierType.<anonymous>[LocalVariableDescriptor]
 
@@ -917,7 +917,7 @@ Inferred types:
 
 'baseType' @ [272:22] ==> value-parameter baseType: SimpleType defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker.collectAllSupertypesWithGivenTypeConstructor[ValueParameterDescriptorImpl]
 
-'captureFromArguments' @ [273:27] ==> public fun captureFromArguments(type: SimpleType, status: CaptureStatus, acceptNewCapturedType: (argumentIndex: Int, NewCapturedType) -> Unit = ...): SimpleType? defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
+'captureFromArguments' @ [273:27] ==> public fun captureFromArguments(type: SimpleType, status: CaptureStatus, acceptNewCapturedType: (argumentIndex: Int, NewCapturedType) -> Unit = ...): SimpleType? defined in org.jetbrains.kotlin.types.checker in file NewCapturedType.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [273:48] ==> value-parameter it: SimpleType defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker.collectAllSupertypesWithGivenTypeConstructor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -958,7 +958,7 @@ Inferred types:
 
 'SmartList' @ [278:34] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> SimpleType
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.types.SimpleType..org.jetbrains.kotlin.types.SimpleType?)
 
 'result' @ [280:21] ==> var result: MutableList<SimpleType>? defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker.collectAllSupertypesWithGivenTypeConstructor[LocalVariableDescriptor]
 
@@ -977,8 +977,6 @@ Inferred types:
 'LowerIfFlexible' @ [285:38] ==> public object LowerIfFlexible : TypeCheckerContext.SupertypesPolicy defined in org.jetbrains.kotlin.types.checker.TypeCheckerContext.SupertypesPolicy[FakeCallableDescriptorForObject]
 
 'LowerIfFlexibleWithCustomSubstitutor' @ [288:38] ==> public constructor LowerIfFlexibleWithCustomSubstitutor(substitutor: TypeSubstitutor) defined in org.jetbrains.kotlin.types.checker.TypeCheckerContext.SupertypesPolicy.LowerIfFlexibleWithCustomSubstitutor[ClassConstructorDescriptorImpl]
-
-'TypeConstructorSubstitution' @ [288:75] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
 
 'create' @ [288:103] ==> @JvmStatic public final fun create(kotlinType: KotlinType): TypeSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[SimpleFunctionDescriptorImpl]
 

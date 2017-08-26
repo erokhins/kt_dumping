@@ -140,39 +140,39 @@ Inferred types:
 
 'cast' @ [94:48] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull vararg p1: (DiagnosticFactory<out (DiagnosticWithParameters1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)>..DiagnosticWithParameters1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)>..DiagnosticWithParameters1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)>?)>?)): DiagnosticWithParameters1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> DiagnosticWithParameters1<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>
+    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters1<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>..org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters1<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?)
 
 'diagnostic' @ [94:53] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[ValueParameterDescriptorImpl]
 
 'PROTECTED_CALL_FROM_PUBLIC_INLINE' @ [94:72] ==> public final val PROTECTED_CALL_FROM_PUBLIC_INLINE: (DiagnosticFactory1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)>..DiagnosticFactory1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
-'a' @ [94:107] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)>.a: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
+'a' @ [94:107] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (CallableDescriptor..CallableDescriptor?)>.a: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
 
-'let' @ [94:109] ==> @InlineOnly public inline fun <T, R> (CallableDescriptor..CallableDescriptor?).let(block: ((CallableDescriptor..CallableDescriptor?)) -> (CallableDescriptor..CallableDescriptor?)): (CallableDescriptor..CallableDescriptor?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [94:109] ==> @InlineOnly public inline fun <T, R> CallableDescriptor.let(block: (CallableDescriptor) -> CallableDescriptor): CallableDescriptor defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
-    <R> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <T> -> CallableDescriptor
+    <R> -> CallableDescriptor
 
-'if (it is CallableMemberDescriptor) DescriptorUtils.getDirectMember(it) else it' @ [95:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (CallableDescriptor..CallableDescriptor?), elseBranch: (CallableDescriptor..CallableDescriptor?)): (CallableDescriptor..CallableDescriptor?)[SimpleFunctionDescriptorImpl]
+'if (it is CallableMemberDescriptor) DescriptorUtils.getDirectMember(it) else it' @ [95:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: CallableDescriptor, elseBranch: CallableDescriptor): CallableDescriptor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CallableDescriptor
 
-'it' @ [95:21] ==> value-parameter it: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [95:21] ==> value-parameter it: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction.<anonymous>[ValueParameterDescriptorImpl]
 
 'getDirectMember' @ [95:69] ==> @NotNull public open fun getDirectMember(@NotNull p0: CallableMemberDescriptor): CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
-'it' @ [95:85] ==> value-parameter it: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [95:85] ==> value-parameter it: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction.<anonymous>[ValueParameterDescriptorImpl]
 
-'it' @ [95:94] ==> value-parameter it: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [95:94] ==> value-parameter it: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction.<anonymous>[ValueParameterDescriptorImpl]
 
-'descriptor' @ [97:30] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
+'descriptor' @ [97:30] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
 
-'descriptor' @ [98:25] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
+'descriptor' @ [98:25] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
 
-'descriptor' @ [98:61] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
+'descriptor' @ [98:61] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
 
 'isVar' @ [98:72] ==> public final val PropertyDescriptor.isVar: Boolean[MyPropertyDescriptor]
 
@@ -180,9 +180,9 @@ Inferred types:
 
 'render' @ [100:47] ==> public abstract fun render(declarationDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
 
-'descriptor' @ [100:54] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
+'descriptor' @ [100:54] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
 
-'descriptor' @ [101:32] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
+'descriptor' @ [101:32] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
 
 'name' @ [101:43] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 
@@ -219,7 +219,7 @@ Inferred types:
 
 'newNameQuoted' @ [107:82] ==> public final val String.newNameQuoted: String defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion[PropertyDescriptorImpl]
 
-'descriptor' @ [109:36] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
+'descriptor' @ [109:36] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
 
 'valueParameters' @ [109:47] ==> public final val CallableDescriptor.valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>)[MyPropertyDescriptor]
 
@@ -241,7 +241,7 @@ Inferred types:
 
 'getJetTypeFqName' @ [109:105] ==> public fun KotlinType.getJetTypeFqName(printTypeArguments: Boolean): String defined in org.jetbrains.kotlin.js.descriptorUtils[DeserializedSimpleFunctionDescriptor]
 
-'descriptor' @ [110:35] ==> val descriptor: (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
+'descriptor' @ [110:35] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.ReplaceProtectedToPublishedApiCallFix.Companion.createAction[LocalVariableDescriptor]
 
 'containingDeclaration' @ [110:46] ==> public final val CallableDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 

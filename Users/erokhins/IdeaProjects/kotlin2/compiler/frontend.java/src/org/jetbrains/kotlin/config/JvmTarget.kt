@@ -2,9 +2,9 @@
 
 '' @ [23:12] ==> private constructor JvmTarget(description: String) defined in org.jetbrains.kotlin.config.JvmTarget[ClassConstructorDescriptorImpl]
 
-'lazy' @ [26:33] ==> public fun <T> lazy(initializer: () -> Int): Lazy<Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [26:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Int
+    <T> -> T
 
 'when (this) {
             JVM_1_6 -> Opcodes.V1_6

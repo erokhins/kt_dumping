@@ -26,7 +26,7 @@
 
 'valueArgumentsByIndex' @ [38:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArgumentsByIndex: (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>?..List<(ResolvedValueArgument..ResolvedValueArgument?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'run' @ [38:62] ==> @InlineOnly public inline fun <T, R> (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>..List<(ResolvedValueArgument..ResolvedValueArgument?)>).run(block: ((MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>..List<(ResolvedValueArgument..ResolvedValueArgument?)>)).() -> KtExpression?): KtExpression? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -73,8 +73,6 @@ Inferred types:
 'value' @ [43:39] ==> public open val value: Int defined in org.jetbrains.kotlin.resolve.constants.IntValue[DeserializedPropertyDescriptor]
 
 'untilValue' @ [47:13] ==> val untilValue: Int defined in org.jetbrains.kotlin.codegen.range.PrimitiveNumberRangeLiteralRangeValue.getConstRangeForInRangeLiteralGenerator[LocalVariableDescriptor]
-
-'Int' @ [47:27] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MIN_VALUE' @ [47:31] ==> public const final val MIN_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 

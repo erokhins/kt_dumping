@@ -76,8 +76,6 @@ Inferred types:
 
 'includeScriptDependencies' @ [65:46] ==> value-parameter includeScriptDependencies: Boolean defined in org.jetbrains.kotlin.idea.util.ProjectRootsUtil.isInContent[ValueParameterDescriptorImpl]
 
-'ScriptDependenciesManager' @ [65:73] ==> public companion object defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager[FakeCallableDescriptorForObject]
-
 'getInstance' @ [65:99] ==> @JvmStatic public final fun getInstance(project: Project): ScriptDependenciesManager defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager.Companion[SimpleFunctionDescriptorImpl]
 
 'project' @ [65:111] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.util.ProjectRootsUtil.isInContent[ValueParameterDescriptorImpl]
@@ -141,8 +139,6 @@ Inferred types:
 'isJsProjectRef' @ [80:31] ==> value-parameter isJsProjectRef: Ref<Boolean?>? = ... defined in org.jetbrains.kotlin.idea.util.ProjectRootsUtil.isInContent[ValueParameterDescriptorImpl]
 
 'get' @ [80:47] ==> public final fun get(): Boolean? defined in com.intellij.openapi.util.Ref[JavaMethodDescriptor]
-
-'JsProjectDetector' @ [80:56] ==> public object JsProjectDetector defined in org.jetbrains.kotlin.idea.caches.resolve in file JsProjectDetector.kt[FakeCallableDescriptorForObject]
 
 'isJsProject' @ [80:74] ==> @JvmStatic public final fun isJsProject(project: Project): Boolean defined in org.jetbrains.kotlin.idea.caches.resolve.JsProjectDetector[SimpleFunctionDescriptorImpl]
 

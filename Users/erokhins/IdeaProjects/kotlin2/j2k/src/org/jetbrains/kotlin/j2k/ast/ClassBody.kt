@@ -53,7 +53,7 @@ Inferred types:
 
 'builder' @ [42:13] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.ClassBody.appendTo[ValueParameterDescriptorImpl]
 
-'append' @ [42:21] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [42:21] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'membersFiltered' @ [42:28] ==> val membersFiltered: List<Member> defined in org.jetbrains.kotlin.j2k.ast.ClassBody.appendTo[LocalVariableDescriptor]
 
@@ -78,7 +78,7 @@ Inferred types:
 
 'builder' @ [47:13] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.ClassBody.appendTo[ValueParameterDescriptorImpl]
 
-'append' @ [47:21] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [47:21] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'constants' @ [47:28] ==> val constants: List<Member> defined in org.jetbrains.kotlin.j2k.ast.ClassBody.appendTo[LocalVariableDescriptor]
 
@@ -100,7 +100,7 @@ Inferred types:
 
 'builder' @ [53:13] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.ClassBody.appendTo[ValueParameterDescriptorImpl]
 
-'append' @ [53:21] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [53:21] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'otherMembers' @ [53:28] ==> val otherMembers: List<Member> defined in org.jetbrains.kotlin.j2k.ast.ClassBody.appendTo[LocalVariableDescriptor]
 
@@ -137,7 +137,7 @@ Inferred types:
 
 'builder' @ [64:9] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.ClassBody.appendCompanionObject[ValueParameterDescriptorImpl]
 
-'append' @ [64:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [64:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'companionObjectMembers' @ [64:24] ==> public final val companionObjectMembers: List<Member> defined in org.jetbrains.kotlin.j2k.ast.ClassBody[PropertyDescriptorImpl]
 

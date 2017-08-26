@@ -4,8 +4,8 @@
 
 'get' @ [48:28] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [48:47] ==> public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -45,8 +45,8 @@ Inferred types:
 
 'get' @ [61:28] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>?), p1: (PsiElement..PsiElement?)): PropertyDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> PropertyDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'PRIMARY_CONSTRUCTOR_PARAMETER' @ [61:47] ==> public final val PRIMARY_CONSTRUCTOR_PARAMETER: (WritableSlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (PropertyDescriptor..PropertyDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -153,8 +153,8 @@ Inferred types:
 
 'get' @ [102:31] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [102:50] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -178,14 +178,14 @@ Inferred types:
 
 'get' @ [109:35] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [109:54] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
 'callee' @ [109:72] ==> val callee: KtExpression? defined in org.jetbrains.kotlin.idea.search.usagesSearch.getConstructorCallDescriptor[LocalVariableDescriptor]
 
-'buildProcessDelegationCallConstructorUsagesTask' @ [117:16] ==> public fun PsiElement.buildProcessDelegationCallConstructorUsagesTask(scope: SearchScope, process: (KtCallElement) -> Boolean): () -> Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch[SimpleFunctionDescriptorImpl]
+'buildProcessDelegationCallConstructorUsagesTask' @ [117:16] ==> public fun PsiElement.buildProcessDelegationCallConstructorUsagesTask(scope: SearchScope, process: (KtCallElement) -> Boolean): () -> Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'scope' @ [117:64] ==> value-parameter scope: SearchScope defined in org.jetbrains.kotlin.idea.search.usagesSearch.processDelegationCallConstructorUsages[ValueParameterDescriptorImpl]
 
@@ -197,13 +197,13 @@ Inferred types:
 
 'assertReadAccessAllowed' @ [123:41] ==> public abstract fun assertReadAccessAllowed(): Unit defined in com.intellij.openapi.application.Application[JavaMethodDescriptor]
 
-'buildProcessDelegationCallKotlinConstructorUsagesTask' @ [124:17] ==> private fun PsiElement.buildProcessDelegationCallKotlinConstructorUsagesTask(scope: SearchScope, process: (KtCallElement) -> Boolean): () -> Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch[SimpleFunctionDescriptorImpl]
+'buildProcessDelegationCallKotlinConstructorUsagesTask' @ [124:17] ==> private fun PsiElement.buildProcessDelegationCallKotlinConstructorUsagesTask(scope: SearchScope, process: (KtCallElement) -> Boolean): () -> Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'scope' @ [124:71] ==> value-parameter scope: SearchScope defined in org.jetbrains.kotlin.idea.search.usagesSearch.buildProcessDelegationCallConstructorUsagesTask[ValueParameterDescriptorImpl]
 
 'process' @ [124:78] ==> value-parameter process: (KtCallElement) -> Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch.buildProcessDelegationCallConstructorUsagesTask[ValueParameterDescriptorImpl]
 
-'buildProcessDelegationCallJavaConstructorUsagesTask' @ [125:17] ==> private fun PsiElement.buildProcessDelegationCallJavaConstructorUsagesTask(scope: SearchScope, process: (KtCallElement) -> Boolean): () -> Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch[SimpleFunctionDescriptorImpl]
+'buildProcessDelegationCallJavaConstructorUsagesTask' @ [125:17] ==> private fun PsiElement.buildProcessDelegationCallJavaConstructorUsagesTask(scope: SearchScope, process: (KtCallElement) -> Boolean): () -> Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'scope' @ [125:69] ==> value-parameter scope: SearchScope defined in org.jetbrains.kotlin.idea.search.usagesSearch.buildProcessDelegationCallConstructorUsagesTask[ValueParameterDescriptorImpl]
 
@@ -247,7 +247,7 @@ Inferred types:
 
 '!' @ [142:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'processClassDelegationCallsToSpecifiedConstructor' @ [142:10] ==> private fun processClassDelegationCallsToSpecifiedConstructor(klass: KtClass, constructor: DeclarationDescriptor, process: (KtCallElement) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch[SimpleFunctionDescriptorImpl]
+'processClassDelegationCallsToSpecifiedConstructor' @ [142:10] ==> private fun processClassDelegationCallsToSpecifiedConstructor(klass: KtClass, constructor: DeclarationDescriptor, process: (KtCallElement) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [142:60] ==> val klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.search.usagesSearch.buildProcessDelegationCallKotlinConstructorUsagesTask[LocalVariableDescriptor]
 
@@ -255,7 +255,7 @@ Inferred types:
 
 'process' @ [142:79] ==> value-parameter process: (KtCallElement) -> Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch.buildProcessDelegationCallKotlinConstructorUsagesTask[ValueParameterDescriptorImpl]
 
-'processInheritorsDelegatingCallToSpecifiedConstructor' @ [145:14] ==> private fun processInheritorsDelegatingCallToSpecifiedConstructor(klass: PsiElement, scope: SearchScope, descriptor: ConstructorDescriptor, process: (KtCallElement) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch[SimpleFunctionDescriptorImpl]
+'processInheritorsDelegatingCallToSpecifiedConstructor' @ [145:14] ==> private fun processInheritorsDelegatingCallToSpecifiedConstructor(klass: PsiElement, scope: SearchScope, descriptor: ConstructorDescriptor, process: (KtCallElement) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [145:68] ==> val klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.search.usagesSearch.buildProcessDelegationCallKotlinConstructorUsagesTask[LocalVariableDescriptor]
 
@@ -283,7 +283,7 @@ Inferred types:
 
 'getJavaMethodDescriptor' @ [154:22] ==> @JvmOverloads public fun PsiMethod.getJavaMethodDescriptor(resolutionFacade: ResolutionFacade? = ...): FunctionDescriptor? defined in org.jetbrains.kotlin.idea.caches.resolve in file JavaResolveExtension.kt[SimpleFunctionDescriptorImpl]
 
-'processInheritorsDelegatingCallToSpecifiedConstructor' @ [155:14] ==> private fun processInheritorsDelegatingCallToSpecifiedConstructor(klass: PsiElement, scope: SearchScope, descriptor: ConstructorDescriptor, process: (KtCallElement) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch[SimpleFunctionDescriptorImpl]
+'processInheritorsDelegatingCallToSpecifiedConstructor' @ [155:14] ==> private fun processInheritorsDelegatingCallToSpecifiedConstructor(klass: PsiElement, scope: SearchScope, descriptor: ConstructorDescriptor, process: (KtCallElement) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'klass' @ [155:68] ==> val klass: PsiClass defined in org.jetbrains.kotlin.idea.search.usagesSearch.buildProcessDelegationCallJavaConstructorUsagesTask[LocalVariableDescriptor]
 
@@ -301,7 +301,7 @@ Inferred types:
 
 'scope' @ [165:42] ==> value-parameter scope: SearchScope defined in org.jetbrains.kotlin.idea.search.usagesSearch.processInheritorsDelegatingCallToSpecifiedConstructor[ValueParameterDescriptorImpl]
 
-'searchInheritors' @ [165:56] ==> public fun HierarchySearchRequest<*>.searchInheritors(): Query<PsiClass> defined in org.jetbrains.kotlin.idea.search.declarationsSearch[SimpleFunctionDescriptorImpl]
+'searchInheritors' @ [165:56] ==> public fun HierarchySearchRequest<*>.searchInheritors(): Query<PsiClass> defined in org.jetbrains.kotlin.idea.search.declarationsSearch in file classInheritorsSearch.kt[SimpleFunctionDescriptorImpl]
 
 'all' @ [165:75] ==> public inline fun <T> Iterable<(PsiClass..PsiClass?)>.all(predicate: ((PsiClass..PsiClass?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -332,7 +332,7 @@ Inferred types:
 
 'unwrapped' @ [168:17] ==> val unwrapped: PsiElement? defined in org.jetbrains.kotlin.idea.search.usagesSearch.processInheritorsDelegatingCallToSpecifiedConstructor.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'processClassDelegationCallsToSpecifiedConstructor' @ [169:17] ==> private fun processClassDelegationCallsToSpecifiedConstructor(klass: KtClass, constructor: DeclarationDescriptor, process: (KtCallElement) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch[SimpleFunctionDescriptorImpl]
+'processClassDelegationCallsToSpecifiedConstructor' @ [169:17] ==> private fun processClassDelegationCallsToSpecifiedConstructor(klass: KtClass, constructor: DeclarationDescriptor, process: (KtCallElement) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'unwrapped' @ [169:67] ==> val unwrapped: PsiElement? defined in org.jetbrains.kotlin.idea.search.usagesSearch.processInheritorsDelegatingCallToSpecifiedConstructor.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -402,7 +402,7 @@ Inferred types:
 
 'descriptor' @ [200:34] ==> public val KtDeclaration.descriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[PropertyDescriptorImpl]
 
-'checkUsageVsOriginalDescriptor' @ [201:12] ==> public fun PsiReference.checkUsageVsOriginalDescriptor(targetDescriptor: DeclarationDescriptor, declarationToDescriptor: (KtDeclaration) -> DeclarationDescriptor? = ..., checker: (usageDescriptor: DeclarationDescriptor, targetDescriptor: DeclarationDescriptor) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch[SimpleFunctionDescriptorImpl]
+'checkUsageVsOriginalDescriptor' @ [201:12] ==> public fun PsiReference.checkUsageVsOriginalDescriptor(targetDescriptor: DeclarationDescriptor, declarationToDescriptor: (KtDeclaration) -> DeclarationDescriptor? = ..., checker: (usageDescriptor: DeclarationDescriptor, targetDescriptor: DeclarationDescriptor) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [201:43] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.search.usagesSearch.isExtensionOfDeclarationClassUsage[LocalVariableDescriptor]
 
@@ -461,7 +461,7 @@ Inferred types:
 
 'descriptor' @ [222:34] ==> public val KtDeclaration.descriptor: DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[PropertyDescriptorImpl]
 
-'checkUsageVsOriginalDescriptor' @ [223:12] ==> public fun PsiReference.checkUsageVsOriginalDescriptor(targetDescriptor: DeclarationDescriptor, declarationToDescriptor: (KtDeclaration) -> DeclarationDescriptor? = ..., checker: (usageDescriptor: DeclarationDescriptor, targetDescriptor: DeclarationDescriptor) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch[SimpleFunctionDescriptorImpl]
+'checkUsageVsOriginalDescriptor' @ [223:12] ==> public fun PsiReference.checkUsageVsOriginalDescriptor(targetDescriptor: DeclarationDescriptor, declarationToDescriptor: (KtDeclaration) -> DeclarationDescriptor? = ..., checker: (usageDescriptor: DeclarationDescriptor, targetDescriptor: DeclarationDescriptor) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.search.usagesSearch in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [223:43] ==> val descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.search.usagesSearch.isUsageInContainingDeclaration[LocalVariableDescriptor]
 

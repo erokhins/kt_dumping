@@ -2,9 +2,9 @@
 
 'factory' @ [44:37] ==> value-parameter factory: ScriptEngineFactory defined in org.jetbrains.kotlin.jsr223.KotlinJsr223JvmScriptEngine4Idea.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [46:27] ==> public fun <T> lazy(initializer: () -> CompileService): Lazy<CompileService> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [46:27] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompileService
+    <T> -> T
 
 'PathUtil' @ [47:20] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
@@ -32,7 +32,9 @@ Inferred types:
 Inferred types:
     <T> -> DaemonReportMessage
 
-'KotlinCompilerClient' @ [55:9] ==> public object KotlinCompilerClient defined in org.jetbrains.kotlin.daemon.client[FakeCallableDescriptorForObject]
+'?:' @ [55:9] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CompileService?, right: CompileService): CompileService[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CompileService
 
 'connectToCompileService' @ [55:30] ==> public final fun connectToCompileService(compilerId: CompilerId, daemonJVMOptions: DaemonJVMOptions, daemonOptions: DaemonOptions, reportingTargets: DaemonReportingTargets, autostart: Boolean = ..., checkId: Boolean = ...): CompileService? defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient[DeserializedSimpleFunctionDescriptor]
 
@@ -68,9 +70,9 @@ Inferred types:
 
 'MyMessageCollector' @ [59:36] ==> public constructor MyMessageCollector() defined in org.jetbrains.kotlin.jsr223.KotlinJsr223JvmScriptEngine4Idea.MyMessageCollector[ClassConstructorDescriptorImpl]
 
-'lazy' @ [61:48] ==> public fun <T> lazy(initializer: () -> KotlinRemoteReplCompilerClient): Lazy<KotlinRemoteReplCompilerClient> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [61:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinRemoteReplCompilerClient
+    <T> -> T
 
 'daemon' @ [62:9] ==> private final val daemon: CompileService defined in org.jetbrains.kotlin.jsr223.KotlinJsr223JvmScriptEngine4Idea[PropertyDescriptorImpl]
 
@@ -84,8 +86,6 @@ Inferred types:
 'it' @ [63:44] ==> value-parameter it: CompileService defined in org.jetbrains.kotlin.jsr223.KotlinJsr223JvmScriptEngine4Idea.replCompiler.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'makeAutodeletingFlagFile' @ [64:44] ==> public fun makeAutodeletingFlagFile(keyword: String = ..., baseDir: File? = ...): File defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
-
-'CompileService' @ [65:44] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [65:74] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
@@ -105,9 +105,9 @@ Inferred types:
 
 'scriptArgsTypes' @ [74:41] ==> private final val scriptArgsTypes: Array<out KClass<out Any>>? defined in org.jetbrains.kotlin.jsr223.KotlinJsr223JvmScriptEngine4Idea[PropertyDescriptorImpl]
 
-'lazy' @ [76:54] ==> public fun <T> lazy(initializer: () -> GenericReplCompilingEvaluator): Lazy<GenericReplCompilingEvaluator> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [76:54] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> GenericReplCompilingEvaluator
+    <T> -> T
 
 'GenericReplCompilingEvaluator' @ [76:61] ==> public constructor GenericReplCompilingEvaluator(compiler: ReplCompiler, baseClasspath: Iterable<File>, baseClassloader: ClassLoader? = ..., fallbackScriptArgs: ScriptArgsWithTypes? = ..., repeatingMode: ReplRepeatingMode = ...) defined in org.jetbrains.kotlin.cli.common.repl.GenericReplCompilingEvaluator[DeserializedClassConstructorDescriptor]
 

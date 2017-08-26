@@ -643,13 +643,9 @@ Inferred types:
 
 'defaultValueConverted' @ [194:45] ==> val defaultValueConverted: DeferredElement<Expression>? defined in org.jetbrains.kotlin.j2k.convertParameterList.<anonymous>[LocalVariableDescriptor]
 
-'LPar' @ [196:13] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.LPar[FakeCallableDescriptorForObject]
-
 'withPrototype' @ [196:18] ==> public final fun withPrototype(element: PsiElement?): LPar defined in org.jetbrains.kotlin.j2k.ast.LPar.Companion[SimpleFunctionDescriptorImpl]
 
 'lParen' @ [196:32] ==> val lParen: PsiElement? defined in org.jetbrains.kotlin.j2k.convertParameterList[LocalVariableDescriptor]
-
-'RPar' @ [197:13] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.RPar[FakeCallableDescriptorForObject]
 
 'withPrototype' @ [197:18] ==> public final fun withPrototype(element: PsiElement?): RPar defined in org.jetbrains.kotlin.j2k.ast.RPar.Companion[SimpleFunctionDescriptorImpl]
 

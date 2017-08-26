@@ -1,30 +1,12 @@
-'MetadataProperty' @ [23:48] ==> public constructor MetadataProperty<in T : HasMetadata, R>(default: Nothing?) defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in T : HasMetadata> -> JsDebugger
-    <R> -> CoroutineBlock?
+'getValue' @ [23:48] ==> public final operator fun getValue(thisRef: T, desc: KProperty<*>): R defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedSimpleFunctionDescriptor]
 
-'MetadataProperty' @ [24:57] ==> public constructor MetadataProperty<in T : HasMetadata, R>(default: Nothing?) defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in T : HasMetadata> -> JsDebugger
-    <R> -> CoroutineBlock?
+'getValue' @ [24:57] ==> public final operator fun getValue(thisRef: T, desc: KProperty<*>): R defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedSimpleFunctionDescriptor]
 
-'MetadataProperty' @ [25:54] ==> public constructor MetadataProperty<in T : HasMetadata, R>(default: Nothing?) defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in T : HasMetadata> -> JsDebugger
-    <R> -> List<CoroutineBlock>?
+'getValue' @ [25:54] ==> public final operator fun getValue(thisRef: T, desc: KProperty<*>): R defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedSimpleFunctionDescriptor]
 
-'MetadataProperty' @ [27:42] ==> public constructor MetadataProperty<in T : HasMetadata, R>(default: Boolean) defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in T : HasMetadata> -> JsExpressionStatement
-    <R> -> Boolean
+'getValue' @ [27:42] ==> public final operator fun getValue(thisRef: T, desc: KProperty<*>): R defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedSimpleFunctionDescriptor]
 
-'MetadataProperty' @ [28:51] ==> public constructor MetadataProperty<in T : HasMetadata, R>(default: Boolean) defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in T : HasMetadata> -> JsExpressionStatement
-    <R> -> Boolean
+'getValue' @ [28:51] ==> public final operator fun getValue(thisRef: T, desc: KProperty<*>): R defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedSimpleFunctionDescriptor]
 
-'MetadataProperty' @ [29:42] ==> public constructor MetadataProperty<in T : HasMetadata, R>(default: Boolean) defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in T : HasMetadata> -> JsExpressionStatement
-    <R> -> Boolean
+'getValue' @ [29:42] ==> public final operator fun getValue(thisRef: T, desc: KProperty<*>): R defined in org.jetbrains.kotlin.js.backend.ast.metadata.MetadataProperty[DeserializedSimpleFunctionDescriptor]
 

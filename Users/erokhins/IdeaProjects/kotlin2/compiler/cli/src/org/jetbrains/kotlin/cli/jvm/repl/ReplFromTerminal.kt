@@ -4,11 +4,11 @@
 
 'submit' @ [40:96] ==> public abstract fun <T : (Any..Any?)> submit(p0: (Callable<(ReplInterpreter..ReplInterpreter?)>..Callable<(ReplInterpreter..ReplInterpreter?)>?)): (Future<(ReplInterpreter..ReplInterpreter?)>..Future<(ReplInterpreter..ReplInterpreter?)>?) defined in java.util.concurrent.ExecutorService[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ReplInterpreter
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.jvm.repl.ReplInterpreter..org.jetbrains.kotlin.cli.jvm.repl.ReplInterpreter?)
 
-'Callable' @ [40:103] ==> @FunctionalInterface public fun <V : (Any..Any?)> Callable(function: () -> (ReplInterpreter..ReplInterpreter?)): Callable<ReplInterpreter> defined in java.util.concurrent[SimpleFunctionDescriptorImpl]
+'Callable' @ [40:103] ==> @FunctionalInterface public fun <V : (Any..Any?)> Callable(function: () -> (ReplInterpreter..ReplInterpreter?)): Callable<(ReplInterpreter..ReplInterpreter?)> defined in java.util.concurrent[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <V : (Any..Any?)> -> ReplInterpreter
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.cli.jvm.repl.ReplInterpreter..org.jetbrains.kotlin.cli.jvm.repl.ReplInterpreter?)
 
 'ReplInterpreter' @ [41:9] ==> public constructor ReplInterpreter(disposable: Disposable, configuration: CompilerConfiguration, replConfiguration: ReplConfiguration) defined in org.jetbrains.kotlin.cli.jvm.repl.ReplInterpreter[ClassConstructorDescriptorImpl]
 
@@ -26,7 +26,7 @@ Inferred types:
 
 'getNotNull' @ [47:76] ==> @NotNull public open fun <T : (Any..Any?)> getNotNull(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>): MessageCollector defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [47:108] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -92,7 +92,7 @@ Inferred types:
 
 'line' @ [91:9] ==> var line: String defined in org.jetbrains.kotlin.cli.jvm.repl.ReplFromTerminal.one[LocalVariableDescriptor]
 
-'unescapeLineBreaks' @ [91:16] ==> public fun unescapeLineBreaks(s: String): String defined in org.jetbrains.kotlin.cli.jvm.repl.messages[SimpleFunctionDescriptorImpl]
+'unescapeLineBreaks' @ [91:16] ==> public fun unescapeLineBreaks(s: String): String defined in org.jetbrains.kotlin.cli.jvm.repl.messages in file UnescapeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'line' @ [91:35] ==> var line: String defined in org.jetbrains.kotlin.cli.jvm.repl.ReplFromTerminal.one[LocalVariableDescriptor]
 
@@ -348,7 +348,7 @@ Inferred types:
 
 'asList' @ [155:27] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'command' @ [155:35] ==> value-parameter command: String defined in org.jetbrains.kotlin.cli.jvm.repl.ReplFromTerminal.Companion.splitCommand[ValueParameterDescriptorImpl]
 
@@ -361,6 +361,8 @@ Inferred types:
     <T> -> String
 
 'String' @ [155:78] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'isEmpty' @ [155:86] ==> @InlineOnly public inline fun CharSequence.isEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'toTypedArray' @ [155:95] ==> public inline fun <reified T> Collection<String>.toTypedArray(): Array<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

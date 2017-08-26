@@ -210,8 +210,8 @@ Inferred types:
 
 'record' @ [130:23] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>..WritableSlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>?), key: (KtExpression..KtExpression?), value: (ExplicitSmartCasts..ExplicitSmartCasts?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> ExplicitSmartCasts
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts..org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts?)
 
 'SMARTCAST' @ [130:30] ==> public final val SMARTCAST: (WritableSlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>..WritableSlice<(KtExpression..KtExpression?), (ExplicitSmartCasts..ExplicitSmartCasts?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -403,8 +403,8 @@ Inferred types:
 
 'record' @ [180:37] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(KtExpression..KtExpression?), (ImplicitSmartCasts..ImplicitSmartCasts?)>..WritableSlice<(KtExpression..KtExpression?), (ImplicitSmartCasts..ImplicitSmartCasts?)>?), key: (KtExpression..KtExpression?), value: (ImplicitSmartCasts..ImplicitSmartCasts?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> ImplicitSmartCasts
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.ImplicitSmartCasts..org.jetbrains.kotlin.resolve.calls.smartcasts.ImplicitSmartCasts?)
 
 'IMPLICIT_RECEIVER_SMARTCAST' @ [180:44] ==> public final val IMPLICIT_RECEIVER_SMARTCAST: (WritableSlice<(KtExpression..KtExpression?), (ImplicitSmartCasts..ImplicitSmartCasts?)>..WritableSlice<(KtExpression..KtExpression?), (ImplicitSmartCasts..ImplicitSmartCasts?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

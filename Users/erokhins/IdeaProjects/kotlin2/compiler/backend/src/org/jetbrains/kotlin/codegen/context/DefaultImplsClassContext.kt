@@ -34,13 +34,13 @@ Inferred types:
 
 'calleeDescriptor' @ [38:57] ==> public final val <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> AccessorForCallableDescriptor<out (CallableMemberDescriptor..CallableMemberDescriptor?)>.calleeDescriptor: (CallableMemberDescriptor..CallableMemberDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
+    <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> Captured(*)
 
 'it' @ [38:75] ==> value-parameter it: (AccessorForCallableDescriptor<*>..AccessorForCallableDescriptor<*>?) defined in org.jetbrains.kotlin.codegen.context.DefaultImplsClassContext.getAccessors.<anonymous>[ValueParameterDescriptorImpl]
 
 'superCallTarget' @ [38:78] ==> public final val <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> AccessorForCallableDescriptor<out (CallableMemberDescriptor..CallableMemberDescriptor?)>.superCallTarget: ClassDescriptor?[MyPropertyDescriptor]
 Inferred types:
-    <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
+    <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> Captured(*)
 
 'interfaceContext' @ [39:24] ==> private final val interfaceContext: ClassContext defined in org.jetbrains.kotlin.codegen.context.DefaultImplsClassContext[PropertyDescriptorImpl]
 
@@ -66,13 +66,13 @@ Inferred types:
 
 'calleeDescriptor' @ [39:90] ==> public final val <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> AccessorForCallableDescriptor<out (CallableMemberDescriptor..CallableMemberDescriptor?)>.calleeDescriptor: (CallableMemberDescriptor..CallableMemberDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
+    <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> Captured(*)
 
 'it' @ [39:108] ==> value-parameter it: (AccessorForCallableDescriptor<*>..AccessorForCallableDescriptor<*>?) defined in org.jetbrains.kotlin.codegen.context.DefaultImplsClassContext.getAccessors.<anonymous>[ValueParameterDescriptorImpl]
 
 'superCallTarget' @ [39:111] ==> public final val <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> AccessorForCallableDescriptor<out (CallableMemberDescriptor..CallableMemberDescriptor?)>.superCallTarget: ClassDescriptor?[MyPropertyDescriptor]
 Inferred types:
-    <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
+    <T : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> Captured(*)
 
 'apply' @ [39:130] ==> @InlineOnly public inline fun <T> LinkedHashMap<Pair<(CallableMemberDescriptor..CallableMemberDescriptor?), ClassDescriptor?>, (AccessorForCallableDescriptor<*>..AccessorForCallableDescriptor<*>?)> /* = LinkedHashMap<Pair<(CallableMemberDescriptor..CallableMemberDescriptor?), ClassDescriptor?>, (AccessorForCallableDescriptor<*>..AccessorForCallableDescriptor<*>?)> */.apply(block: LinkedHashMap<Pair<(CallableMemberDescriptor..CallableMemberDescriptor?), ClassDescriptor?>, (AccessorForCallableDescriptor<*>..AccessorForCallableDescriptor<*>?)> /* = LinkedHashMap<Pair<(CallableMemberDescriptor..CallableMemberDescriptor?), ClassDescriptor?>, (AccessorForCallableDescriptor<*>..AccessorForCallableDescriptor<*>?)> */.() -> Unit): LinkedHashMap<Pair<(CallableMemberDescriptor..CallableMemberDescriptor?), ClassDescriptor?>, (AccessorForCallableDescriptor<*>..AccessorForCallableDescriptor<*>?)> /* = LinkedHashMap<Pair<(CallableMemberDescriptor..CallableMemberDescriptor?), ClassDescriptor?>, (AccessorForCallableDescriptor<*>..AccessorForCallableDescriptor<*>?)> */ defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:

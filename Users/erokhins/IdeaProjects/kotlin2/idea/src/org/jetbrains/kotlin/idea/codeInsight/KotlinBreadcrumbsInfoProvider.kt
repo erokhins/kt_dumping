@@ -662,7 +662,7 @@ Inferred types:
 
 'parent' @ [269:30] ==> public final val KtContainerNode.parent: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'isElseIf' @ [269:56] ==> internal fun KtExpression.isElseIf(): Boolean defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations[SimpleFunctionDescriptorImpl]
+'isElseIf' @ [269:56] ==> internal fun KtExpression.isElseIf(): Boolean defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file IfThenUtils.kt[SimpleFunctionDescriptorImpl]
 
 'ellipsis' @ [269:73] ==> public final val ellipsis: String defined in org.jetbrains.kotlin.idea.codeInsight.KotlinBreadcrumbsInfoProvider.Companion[PropertyDescriptorImpl]
 
@@ -700,11 +700,9 @@ Inferred types:
 
 'ifExpression' @ [282:30] ==> val ifExpression: KtIfExpression defined in org.jetbrains.kotlin.idea.codeInsight.KotlinBreadcrumbsInfoProvider.ElseHandler.elementInfo[LocalVariableDescriptor]
 
-'isElseIf' @ [282:43] ==> internal fun KtExpression.isElseIf(): Boolean defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations[SimpleFunctionDescriptorImpl]
+'isElseIf' @ [282:43] ==> internal fun KtExpression.isElseIf(): Boolean defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file IfThenUtils.kt[SimpleFunctionDescriptorImpl]
 
 'then' @ [282:57] ==> val then: KtContainerNode? defined in org.jetbrains.kotlin.idea.codeInsight.KotlinBreadcrumbsInfoProvider.ElseHandler.elementInfo[LocalVariableDescriptor]
-
-'IfThenHandler' @ [282:81] ==> private object IfThenHandler : KotlinBreadcrumbsInfoProvider.ConstructWithExpressionHandler<KtContainerNode> defined in org.jetbrains.kotlin.idea.codeInsight.KotlinBreadcrumbsInfoProvider[FakeCallableDescriptorForObject]
 
 'elementInfo' @ [282:95] ==> public open fun elementInfo(element: KtContainerNode): String defined in org.jetbrains.kotlin.idea.codeInsight.KotlinBreadcrumbsInfoProvider.IfThenHandler[SimpleFunctionDescriptorImpl]
 
@@ -723,8 +721,6 @@ Inferred types:
 'thenNode' @ [288:41] ==> private final val KtIfExpression.thenNode: KtContainerNode? defined in org.jetbrains.kotlin.idea.codeInsight.KotlinBreadcrumbsInfoProvider.ElseHandler[PropertyDescriptorImpl]
 
 '+' @ [289:20] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
-
-'IfThenHandler' @ [289:35] ==> private object IfThenHandler : KotlinBreadcrumbsInfoProvider.ConstructWithExpressionHandler<KtContainerNode> defined in org.jetbrains.kotlin.idea.codeInsight.KotlinBreadcrumbsInfoProvider[FakeCallableDescriptorForObject]
 
 'elementTooltip' @ [289:49] ==> public open fun elementTooltip(element: KtContainerNode): String defined in org.jetbrains.kotlin.idea.codeInsight.KotlinBreadcrumbsInfoProvider.IfThenHandler[SimpleFunctionDescriptorImpl]
 
@@ -1098,7 +1094,7 @@ Inferred types:
 
 'java' @ [417:54] ==> public val <T> KClass<out KtElement>.java: Class<out KtElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtElement
+    <T> -> Captured(out KtElement)
 
 'isInstance' @ [417:59] ==> public open fun isInstance(p0: (Any..Any?)): Boolean defined in java.lang.Class[JavaMethodDescriptor]
 

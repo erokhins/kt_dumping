@@ -10,10 +10,10 @@ Inferred types:
 
 'invoke' @ [36:21] ==> public abstract operator fun invoke(): String defined in kotlin.Function0[FunctionInvokeDescriptor]
 
-'let' @ [36:35] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> T): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [36:35] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
-    <R> -> T
+    <R> -> Nothing
 
 'LOG' @ [37:17] ==> private final val LOG: Logger defined in org.jetbrains.kotlin.cli.jvm.JvmRuntimeVersionsConsistencyChecker[PropertyDescriptorImpl]
 
@@ -433,8 +433,6 @@ Inferred types:
 
 'version' @ [202:17] ==> public final val version: MavenComparableVersion defined in org.jetbrains.kotlin.cli.jvm.JvmRuntimeVersionsConsistencyChecker.KotlinLibraryFile[PropertyDescriptorImpl]
 
-'ApiVersion' @ [202:27] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
-
 'LATEST_STABLE' @ [202:38] ==> @field:JvmField public final val LATEST_STABLE: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedPropertyDescriptor]
 
 'version' @ [202:52] ==> public final val version: MavenComparableVersion defined in org.jetbrains.kotlin.config.ApiVersion[DeserializedPropertyDescriptor]
@@ -625,8 +623,6 @@ Inferred types:
 
 'message' @ [267:26] ==> value-parameter message: String defined in org.jetbrains.kotlin.cli.jvm.JvmRuntimeVersionsConsistencyChecker.issue[ValueParameterDescriptorImpl]
 
-'CompilerMessageLocation' @ [267:35] ==> public companion object defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageLocation[FakeCallableDescriptorForObject]
-
 'create' @ [267:59] ==> @JvmStatic public final fun create(path: String?): CompilerMessageLocation? defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageLocation.Companion[DeserializedSimpleFunctionDescriptor]
 
 'file' @ [267:66] ==> value-parameter file: VirtualFile? defined in org.jetbrains.kotlin.cli.jvm.JvmRuntimeVersionsConsistencyChecker.issue[ValueParameterDescriptorImpl]
@@ -637,6 +633,8 @@ Inferred types:
     <R> -> File
 
 'VfsUtilCore' @ [267:76] ==> public constructor VfsUtilCore() defined in com.intellij.openapi.vfs.VfsUtilCore[JavaClassConstructorDescriptor]
+
+'virtualToIoFile' @ [267:89] ==> @NotNull public open fun virtualToIoFile(@NotNull p0: VirtualFile): File defined in com.intellij.openapi.vfs.VfsUtilCore[JavaMethodDescriptor]
 
 'path' @ [267:107] ==> public final val File.path: (String..String?)[MyPropertyDescriptor]
 
@@ -731,8 +729,6 @@ Inferred types:
 'KotlinLibraryFile' @ [292:49] ==> public constructor KotlinLibraryFile(file: VirtualFile, version: MavenComparableVersion) defined in org.jetbrains.kotlin.cli.jvm.JvmRuntimeVersionsConsistencyChecker.KotlinLibraryFile[ClassConstructorDescriptorImpl]
 
 'jarFile' @ [292:67] ==> val jarFile: VirtualFile defined in org.jetbrains.kotlin.cli.jvm.JvmRuntimeVersionsConsistencyChecker.collectRuntimeJarsInfo[LocalVariableDescriptor]
-
-'ApiVersion' @ [292:76] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
 'KOTLIN_1_0' @ [292:87] ==> @field:JvmField public final val KOTLIN_1_0: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedPropertyDescriptor]
 
@@ -883,7 +879,7 @@ Inferred types:
 
 'ApiVersion' @ [343:70] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
 
-'ApiVersion' @ [343:93] ==> public companion object defined in org.jetbrains.kotlin.config.ApiVersion[FakeCallableDescriptorForObject]
+'parse' @ [343:83] ==> public final fun parse(versionString: String): ApiVersion? defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedSimpleFunctionDescriptor]
 
 'KOTLIN_1_0' @ [343:104] ==> @field:JvmField public final val KOTLIN_1_0: ApiVersion defined in org.jetbrains.kotlin.config.ApiVersion.Companion[DeserializedPropertyDescriptor]
 

@@ -19,5 +19,7 @@ Inferred types:
     <T> -> String
     <R> -> FqName
 
+'FqName' @ [38:54] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
+
 'isTopLevel' @ [40:42] ==> private final val isTopLevel: Boolean defined in org.jetbrains.kotlin.psi.stubs.impl.KotlinTypeAliasStubImpl[PropertyDescriptorImpl]
 

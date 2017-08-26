@@ -9,21 +9,21 @@ Inferred types:
 
 'java' @ [36:33] ==> public val <T> KClass<out IrElement>.java: Class<out IrElement> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IrElement
+    <T> -> Captured(out IrElement)
 
 'simpleName' @ [36:38] ==> public final val <T : (Any..Any?)> Class<out IrElement>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IrElement
+    <T : (Any..Any?)> -> Captured(out IrElement)
 
 'declaration' @ [39:18] ==> value-parameter declaration: IrDeclaration defined in org.jetbrains.kotlin.ir.util.RenderIrElementVisitor.visitDeclaration[ValueParameterDescriptorImpl]
 
 'java' @ [39:37] ==> public val <T> KClass<out IrDeclaration>.java: Class<out IrDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IrDeclaration
+    <T> -> Captured(out IrDeclaration)
 
 'simpleName' @ [39:42] ==> public final val <T : (Any..Any?)> Class<out IrDeclaration>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IrDeclaration
+    <T : (Any..Any?)> -> Captured(out IrDeclaration)
 
 'declaration' @ [39:56] ==> value-parameter declaration: IrDeclaration defined in org.jetbrains.kotlin.ir.util.RenderIrElementVisitor.visitDeclaration[ValueParameterDescriptorImpl]
 
@@ -159,11 +159,11 @@ Inferred types:
 
 'java' @ [96:36] ==> public val <T> KClass<out IrExpression>.java: Class<out IrExpression> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IrExpression
+    <T> -> Captured(out IrExpression)
 
 'simpleName' @ [96:41] ==> public final val <T : (Any..Any?)> Class<out IrExpression>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IrExpression
+    <T : (Any..Any?)> -> Captured(out IrExpression)
 
 'expression' @ [96:60] ==> value-parameter expression: IrExpression defined in org.jetbrains.kotlin.ir.util.RenderIrElementVisitor.visitExpression[ValueParameterDescriptorImpl]
 
@@ -643,11 +643,11 @@ Inferred types:
 
 'java' @ [226:57] ==> public val <T> KClass<out DeclarationDescriptor>.java: Class<out DeclarationDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DeclarationDescriptor
+    <T> -> Captured(out DeclarationDescriptor)
 
 'simpleName' @ [226:62] ==> public final val <T : (Any..Any?)> Class<out DeclarationDescriptor>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DeclarationDescriptor
+    <T : (Any..Any?)> -> Captured(out DeclarationDescriptor)
 
 'declaration' @ [226:76] ==> value-parameter declaration: IrErrorDeclaration defined in org.jetbrains.kotlin.ir.util.RenderIrElementVisitor.visitErrorDeclaration[ValueParameterDescriptorImpl]
 

@@ -1,24 +1,16 @@
 '' @ [22:9] ==> private constructor BodyResolveMode(bindingTraceFilter: BindingTraceFilter) defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[ClassConstructorDescriptorImpl]
 
-'BindingTraceFilter' @ [22:10] ==> public companion object defined in org.jetbrains.kotlin.resolve.BindingTraceFilter[FakeCallableDescriptorForObject]
-
 'ACCEPT_ALL' @ [22:29] ==> public final val ACCEPT_ALL: BindingTraceFilter defined in org.jetbrains.kotlin.resolve.BindingTraceFilter.Companion[DeserializedPropertyDescriptor]
 
 '' @ [23:27] ==> private constructor BodyResolveMode(bindingTraceFilter: BindingTraceFilter) defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[ClassConstructorDescriptorImpl]
-
-'BindingTraceFilter' @ [23:28] ==> public companion object defined in org.jetbrains.kotlin.resolve.BindingTraceFilter[FakeCallableDescriptorForObject]
 
 'NO_DIAGNOSTICS' @ [23:47] ==> public final val NO_DIAGNOSTICS: BindingTraceFilter defined in org.jetbrains.kotlin.resolve.BindingTraceFilter.Companion[DeserializedPropertyDescriptor]
 
 '' @ [24:29] ==> private constructor BodyResolveMode(bindingTraceFilter: BindingTraceFilter) defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[ClassConstructorDescriptorImpl]
 
-'BindingTraceFilter' @ [24:30] ==> public companion object defined in org.jetbrains.kotlin.resolve.BindingTraceFilter[FakeCallableDescriptorForObject]
-
 'ACCEPT_ALL' @ [24:49] ==> public final val ACCEPT_ALL: BindingTraceFilter defined in org.jetbrains.kotlin.resolve.BindingTraceFilter.Companion[DeserializedPropertyDescriptor]
 
 '' @ [25:12] ==> private constructor BodyResolveMode(bindingTraceFilter: BindingTraceFilter) defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[ClassConstructorDescriptorImpl]
-
-'BindingTraceFilter' @ [25:13] ==> public companion object defined in org.jetbrains.kotlin.resolve.BindingTraceFilter[FakeCallableDescriptorForObject]
 
 'NO_DIAGNOSTICS' @ [25:32] ==> public final val NO_DIAGNOSTICS: BindingTraceFilter defined in org.jetbrains.kotlin.resolve.BindingTraceFilter.Companion[DeserializedPropertyDescriptor]
 

@@ -20,7 +20,7 @@ Inferred types:
 
 'getTopmostParentOfType' @ [38:37] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getTopmostParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtBinaryExpression..KtBinaryExpression?)>): KtBinaryExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtBinaryExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtBinaryExpression..org.jetbrains.kotlin.psi.KtBinaryExpression?)
 
 'element' @ [38:60] ==> value-parameter element: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.SimplifyBooleanWithConstantsIntention.isApplicableTo[ValueParameterDescriptorImpl]
 
@@ -114,7 +114,7 @@ Inferred types:
 
 'getTopmostParentOfType' @ [59:37] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getTopmostParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtBinaryExpression..KtBinaryExpression?)>): KtBinaryExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtBinaryExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtBinaryExpression..org.jetbrains.kotlin.psi.KtBinaryExpression?)
 
 'element' @ [59:60] ==> value-parameter element: KtBinaryExpression defined in org.jetbrains.kotlin.idea.intentions.SimplifyBooleanWithConstantsIntention.applyTo[ValueParameterDescriptorImpl]
 
@@ -410,10 +410,10 @@ Inferred types:
 
 'otherOperand' @ [128:52] ==> value-parameter otherOperand: KtExpression defined in org.jetbrains.kotlin.idea.intentions.SimplifyBooleanWithConstantsIntention.toSimplifiedBooleanBinaryExpressionWithConstantOperand[ValueParameterDescriptorImpl]
 
-'let' @ [128:66] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [128:66] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtExpression
-    <R> -> Unit
+    <R> -> Nothing
 
 'if (constantOperand == (operation == EQEQ)) it
                 else factory.createExpressionByPattern("!$0", it)' @ [129:24] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtExpression, elseBranch: KtExpression): KtExpression[SimpleFunctionDescriptorImpl]

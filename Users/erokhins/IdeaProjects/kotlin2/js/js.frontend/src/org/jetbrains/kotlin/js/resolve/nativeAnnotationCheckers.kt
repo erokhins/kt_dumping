@@ -70,8 +70,6 @@
 
 'AbstractNativeAnnotationsChecker' @ [65:38] ==> public constructor AbstractNativeAnnotationsChecker(requiredAnnotation: PredefinedAnnotation) defined in org.jetbrains.kotlin.js.resolve.AbstractNativeAnnotationsChecker[ClassConstructorDescriptorImpl]
 
-'PredefinedAnnotation' @ [65:71] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
 'NATIVE_INVOKE' @ [65:92] ==> enum entry NATIVE_INVOKE defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'AbstractNativeAnnotationsChecker' @ [71:5] ==> public constructor AbstractNativeAnnotationsChecker(requiredAnnotation: PredefinedAnnotation) defined in org.jetbrains.kotlin.js.resolve.AbstractNativeAnnotationsChecker[ClassConstructorDescriptorImpl]
@@ -174,8 +172,6 @@ Inferred types:
 
 'AbstractNativeIndexerChecker' @ [97:38] ==> public constructor AbstractNativeIndexerChecker(requiredAnnotation: PredefinedAnnotation, indexerKind: String, requiredParametersCount: Int) defined in org.jetbrains.kotlin.js.resolve.AbstractNativeIndexerChecker[ClassConstructorDescriptorImpl]
 
-'PredefinedAnnotation' @ [97:67] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
 'NATIVE_GETTER' @ [97:88] ==> enum entry NATIVE_GETTER defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'super' @ [99:9] ==> <this> defined in org.jetbrains.kotlin.js.resolve.NativeGetterChecker[LazyClassReceiverParameterDescriptor]
@@ -211,8 +207,6 @@ Inferred types:
 'declaration' @ [103:94] ==> value-parameter declaration: KtNamedFunction defined in org.jetbrains.kotlin.js.resolve.NativeGetterChecker.additionalCheck[ValueParameterDescriptorImpl]
 
 'AbstractNativeIndexerChecker' @ [108:38] ==> public constructor AbstractNativeIndexerChecker(requiredAnnotation: PredefinedAnnotation, indexerKind: String, requiredParametersCount: Int) defined in org.jetbrains.kotlin.js.resolve.AbstractNativeIndexerChecker[ClassConstructorDescriptorImpl]
-
-'PredefinedAnnotation' @ [108:67] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'NATIVE_SETTER' @ [108:88] ==> enum entry NATIVE_SETTER defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 

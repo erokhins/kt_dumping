@@ -1,6 +1,6 @@
 'candidateDescriptor' @ [33:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'original' @ [33:50] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
@@ -25,7 +25,7 @@ Inferred types:
 
 'valueArguments' @ [38:53] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'entries' @ [38:68] ==> public abstract val entries: MutableSet<MutableMap.MutableEntry<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>> defined in kotlin.collections.MutableMap[DeserializedPropertyDescriptor]
 
@@ -80,7 +80,7 @@ Inferred types:
 
 'call' @ [51:72] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueArguments' @ [51:77] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
@@ -93,17 +93,25 @@ Inferred types:
 
 'it' @ [51:127] ==> value-parameter it: (ValueArgument..ValueArgument?) defined in org.jetbrains.kotlin.resolve.calls.results.createFlatSignature.<anonymous>[ValueParameterDescriptorImpl]
 
-'OverloadingConflictResolver' @ [57:5] ==> public constructor OverloadingConflictResolver<C : Any>(builtIns: KotlinBuiltIns, specificityComparator: TypeSpecificityComparator, getResultingDescriptor: (MutableResolvedCall<*>) -> CallableDescriptor, createEmptyConstraintSystem: () -> SimpleConstraintSystem, createFlatSignature: (MutableResolvedCall<*>) -> FlatSignature<MutableResolvedCall<*>>, getVariableCandidates: (MutableResolvedCall<*>) -> MutableResolvedCall<*>?, isFromSources: (CallableDescriptor) -> Boolean) defined in org.jetbrains.kotlin.resolve.calls.results.OverloadingConflictResolver[DeserializedClassConstructorDescriptor]
+'OverloadingConflictResolver' @ [57:5] ==> public constructor OverloadingConflictResolver<C : Any>(builtIns: KotlinBuiltIns, specificityComparator: TypeSpecificityComparator, getResultingDescriptor: (MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>) -> CallableDescriptor, createEmptyConstraintSystem: () -> SimpleConstraintSystem, createFlatSignature: (MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>) -> FlatSignature<MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>>, getVariableCandidates: (MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>) -> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?, isFromSources: (CallableDescriptor) -> Boolean) defined in org.jetbrains.kotlin.resolve.calls.results.OverloadingConflictResolver[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <C : Any> -> MutableResolvedCall<*>
+    <C : Any> -> MutableResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>
 
 'builtIns' @ [58:9] ==> value-parameter builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.calls.results.createOverloadingConflictResolver[ValueParameterDescriptorImpl]
 
 'specificityComparator' @ [59:9] ==> value-parameter specificityComparator: TypeSpecificityComparator defined in org.jetbrains.kotlin.resolve.calls.results.createOverloadingConflictResolver[ValueParameterDescriptorImpl]
 
+'getResultingDescriptor' @ [60:33] ==> @NotNull public abstract fun getResultingDescriptor(): (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.resolve.calls.model.MutableResolvedCall[JavaMethodDescriptor]
+
 'ConstraintSystemBuilderImpl' @ [61:9] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl[FakeCallableDescriptorForObject]
 
 'Companion' @ [61:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl[FakeCallableDescriptorForObject]
+
+'forSpecificity' @ [61:48] ==> public final fun forSpecificity(): SimpleConstraintSystem defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilderImpl.Companion[SimpleFunctionDescriptorImpl]
+
+'createFlatSignature' @ [62:33] ==> public fun <RC : ResolvedCall<*>> MutableResolvedCall<*>.createFlatSignature(): FlatSignature<MutableResolvedCall<*>> defined in org.jetbrains.kotlin.resolve.calls.results[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <RC : ResolvedCall<*>> -> MutableResolvedCall<*>
 
 'it' @ [63:12] ==> value-parameter it: MutableResolvedCall<*> defined in org.jetbrains.kotlin.resolve.calls.results.createOverloadingConflictResolver.<anonymous>[ValueParameterDescriptorImpl]
 

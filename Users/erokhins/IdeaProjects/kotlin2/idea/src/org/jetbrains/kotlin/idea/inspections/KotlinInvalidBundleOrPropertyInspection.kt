@@ -94,7 +94,7 @@ Inferred types:
 
 'valueArgumentsByIndex' @ [73:54] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArgumentsByIndex: (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>?..List<(ResolvedValueArgument..ResolvedValueArgument?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedArguments' @ [74:40] ==> val resolvedArguments: (MutableList<(ResolvedValueArgument..ResolvedValueArgument?)>..List<(ResolvedValueArgument..ResolvedValueArgument?)>) defined in org.jetbrains.kotlin.idea.inspections.KotlinInvalidBundleOrPropertyInspection.buildVisitor.<no name provided>.processPropertyReference[LocalVariableDescriptor]
 
@@ -116,7 +116,7 @@ Inferred types:
 
 'resultingDescriptor' @ [77:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callable' @ [78:21] ==> val callable: CallableDescriptor defined in org.jetbrains.kotlin.idea.inspections.KotlinInvalidBundleOrPropertyInspection.buildVisitor.<no name provided>.processPropertyReference[LocalVariableDescriptor]
 

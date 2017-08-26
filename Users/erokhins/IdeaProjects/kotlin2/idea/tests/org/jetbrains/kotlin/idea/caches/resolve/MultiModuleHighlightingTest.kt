@@ -329,8 +329,6 @@ Inferred types:
 
 'module1ModCount' @ [154:26] ==> val module1ModCount: Long defined in org.jetbrains.kotlin.idea.caches.resolve.MultiModuleHighlightingTest.testRecomputeResolversOnChange.<anonymous>[LocalVariableDescriptor]
 
-'KotlinCodeBlockModificationListener' @ [154:43] ==> public companion object defined in org.jetbrains.kotlin.idea.project.KotlinCodeBlockModificationListener[FakeCallableDescriptorForObject]
-
 'getInstance' @ [154:79] ==> public final fun getInstance(project: Project): (KotlinCodeBlockModificationListener..KotlinCodeBlockModificationListener?) defined in org.jetbrains.kotlin.idea.project.KotlinCodeBlockModificationListener.Companion[DeserializedSimpleFunctionDescriptor]
 
 'myProject' @ [154:91] ==> protected/*protected and package*/ final var myProject: (Project..Project?) defined in org.jetbrains.kotlin.idea.caches.resolve.MultiModuleHighlightingTest[JavaPropertyDescriptor]
@@ -565,14 +563,10 @@ Inferred types:
 
 'addFacet' @ [219:56] ==> @NotNull public abstract fun <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?), C : (FacetConfiguration..FacetConfiguration?)> addFacet(@NotNull p0: FacetType<(KotlinFacet..KotlinFacet?), (KotlinFacetConfiguration..KotlinFacetConfiguration?)>, @NotNull p1: String, @Nullable p2: raw (Facet<(FacetConfiguration..FacetConfiguration?)>?..Facet<*>?)): KotlinFacet defined in com.intellij.facet.FacetManager[JavaMethodDescriptor]
 Inferred types:
-    <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> KotlinFacet
-    <C : (FacetConfiguration..FacetConfiguration?)> -> KotlinFacetConfiguration
-
-'KotlinFacetType' @ [219:65] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType[FakeCallableDescriptorForObject]
+    <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> (org.jetbrains.kotlin.idea.facet.KotlinFacet..org.jetbrains.kotlin.idea.facet.KotlinFacet?)
+    <C : (FacetConfiguration..FacetConfiguration?)> -> (org.jetbrains.kotlin.idea.facet.KotlinFacetConfiguration..org.jetbrains.kotlin.idea.facet.KotlinFacetConfiguration?)
 
 'INSTANCE' @ [219:81] ==> public final val INSTANCE: KotlinFacetType defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[DeserializedPropertyDescriptor]
-
-'KotlinFacetType' @ [219:91] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType[FakeCallableDescriptorForObject]
 
 'NAME' @ [219:107] ==> public final val NAME: String defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[DeserializedPropertyDescriptor]
 
@@ -608,8 +602,6 @@ Inferred types:
 
 'Jvm' @ [235:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [235:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [235:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'doMultiPlatformTest' @ [239:13] ==> protected final fun doMultiPlatformTest(vararg platforms: TargetPlatformKind<*>, withStdlibCommon: Boolean, configureModule: (Module, TargetPlatformKind<*>) -> Unit, jdk: TestJdkKind): Unit defined in org.jetbrains.kotlin.idea.caches.resolve.MultiModuleHighlightingTest.MultiPlatform[SimpleFunctionDescriptorImpl]
@@ -617,8 +609,6 @@ Inferred types:
 'TargetPlatformKind' @ [239:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [239:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [239:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [239:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -628,11 +618,7 @@ Inferred types:
 
 'Jvm' @ [243:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [243:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [243:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
-'TargetPlatformKind' @ [243:76] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [243:95] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -642,8 +628,6 @@ Inferred types:
 
 'Jvm' @ [247:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [247:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [247:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'doMultiPlatformTest' @ [251:13] ==> protected final fun doMultiPlatformTest(vararg platforms: TargetPlatformKind<*>, withStdlibCommon: Boolean, configureModule: (Module, TargetPlatformKind<*>) -> Unit, jdk: TestJdkKind): Unit defined in org.jetbrains.kotlin.idea.caches.resolve.MultiModuleHighlightingTest.MultiPlatform[SimpleFunctionDescriptorImpl]
@@ -651,8 +635,6 @@ Inferred types:
 'TargetPlatformKind' @ [251:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [251:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [251:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [251:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -662,8 +644,6 @@ Inferred types:
 
 'Jvm' @ [255:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [255:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [255:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'doMultiPlatformTest' @ [259:13] ==> protected final fun doMultiPlatformTest(vararg platforms: TargetPlatformKind<*>, withStdlibCommon: Boolean, configureModule: (Module, TargetPlatformKind<*>) -> Unit, jdk: TestJdkKind): Unit defined in org.jetbrains.kotlin.idea.caches.resolve.MultiModuleHighlightingTest.MultiPlatform[SimpleFunctionDescriptorImpl]
@@ -671,8 +651,6 @@ Inferred types:
 'TargetPlatformKind' @ [259:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [259:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [259:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [259:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -682,8 +660,6 @@ Inferred types:
 
 'Jvm' @ [263:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [263:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [263:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'doMultiPlatformTest' @ [267:13] ==> protected final fun doMultiPlatformTest(vararg platforms: TargetPlatformKind<*>, withStdlibCommon: Boolean, configureModule: (Module, TargetPlatformKind<*>) -> Unit, jdk: TestJdkKind): Unit defined in org.jetbrains.kotlin.idea.caches.resolve.MultiModuleHighlightingTest.MultiPlatform[SimpleFunctionDescriptorImpl]
@@ -692,19 +668,13 @@ Inferred types:
 
 'Jvm' @ [267:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [267:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_8' @ [267:66] ==> enum entry JVM_1_8 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
-'TargetPlatformKind' @ [267:76] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [267:95] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'FULL_JDK' @ [268:64] ==> enum entry FULL_JDK defined in org.jetbrains.kotlin.test.TestJdkKind[FakeCallableDescriptorForObject]
 
 'platform' @ [269:21] ==> value-parameter platform: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.caches.resolve.MultiModuleHighlightingTest.MultiPlatform.testUseCorrectBuiltInsForCommonModule.<anonymous>[ValueParameterDescriptorImpl]
-
-'TargetPlatformKind' @ [269:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JavaScript' @ [269:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -728,8 +698,6 @@ Inferred types:
 
 'Jvm' @ [277:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [277:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [277:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'doMultiPlatformTest' @ [281:13] ==> protected final fun doMultiPlatformTest(vararg platforms: TargetPlatformKind<*>, withStdlibCommon: Boolean, configureModule: (Module, TargetPlatformKind<*>) -> Unit, jdk: TestJdkKind): Unit defined in org.jetbrains.kotlin.idea.caches.resolve.MultiModuleHighlightingTest.MultiPlatform[SimpleFunctionDescriptorImpl]
@@ -737,8 +705,6 @@ Inferred types:
 'TargetPlatformKind' @ [281:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Jvm' @ [281:52] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
-
-'JvmTarget' @ [281:56] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [281:66] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 

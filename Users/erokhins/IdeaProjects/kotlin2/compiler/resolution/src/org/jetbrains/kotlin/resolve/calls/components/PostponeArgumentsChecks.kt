@@ -92,8 +92,6 @@ Inferred types:
 
 'builtIns' @ [58:55] ==> public abstract val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.calls.inference.ConstraintSystemBuilder[PropertyDescriptorImpl]
 
-'Annotations' @ [58:65] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [58:77] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'resolvedArgument' @ [58:84] ==> val resolvedArgument: ResolvedLambdaAtom defined in org.jetbrains.kotlin.resolve.calls.components.preprocessLambdaArgument[LocalVariableDescriptor]
@@ -243,7 +241,7 @@ Inferred types:
 
 'isBuiltinFunctionalType' @ [93:47] ==> public val KotlinType.isBuiltinFunctionalType: Boolean defined in org.jetbrains.kotlin.builtins[DeserializedPropertyDescriptor]
 
-'extractLambdaParameters' @ [94:22] ==> private fun extractLambdaParameters(expectedType: UnwrappedType, argument: LambdaKotlinCallArgument): List<UnwrappedType> defined in org.jetbrains.kotlin.resolve.calls.components[SimpleFunctionDescriptorImpl]
+'extractLambdaParameters' @ [94:22] ==> private fun extractLambdaParameters(expectedType: UnwrappedType, argument: LambdaKotlinCallArgument): List<UnwrappedType> defined in org.jetbrains.kotlin.resolve.calls.components in file PostponeArgumentsChecks.kt[SimpleFunctionDescriptorImpl]
 
 'expectedType' @ [94:46] ==> value-parameter expectedType: UnwrappedType? defined in org.jetbrains.kotlin.resolve.calls.components.extractLambdaInfoFromFunctionalType[ValueParameterDescriptorImpl]
 

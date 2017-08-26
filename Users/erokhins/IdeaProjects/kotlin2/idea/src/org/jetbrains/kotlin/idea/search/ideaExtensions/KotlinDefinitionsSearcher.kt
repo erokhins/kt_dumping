@@ -159,7 +159,7 @@ Inferred types:
 
 'process' @ [97:34] ==> public open fun <T : (Any..Any?)> process(@NotNull p0: (MutableIterable<(PsiElement..PsiElement?)>..Iterable<(PsiElement..PsiElement?)>), @NotNull p1: Processor<(PsiElement..PsiElement?)>): Boolean defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'search' @ [97:64] ==> @NotNull public open fun search(@NotNull p0: PsiClass, p1: Boolean): Query<(PsiClass..PsiClass?)> defined in com.intellij.psi.search.searches.ClassInheritorsSearch[JavaMethodDescriptor]
 
@@ -197,7 +197,7 @@ Inferred types:
 
 'process' @ [106:34] ==> public open fun <T : (Any..Any?)> process(@NotNull p0: (MutableIterable<(PsiClass..PsiClass?)>..Iterable<(PsiClass..PsiClass?)>), @NotNull p1: Processor<(PsiClass..PsiClass?)>): Boolean defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiClass
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
 
 'search' @ [106:64] ==> @NotNull public open fun search(@NotNull p0: PsiClass, @NotNull p1: SearchScope, p2: Boolean): Query<(PsiClass..PsiClass?)> defined in com.intellij.psi.search.searches.ClassInheritorsSearch[JavaMethodDescriptor]
 

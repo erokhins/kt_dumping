@@ -109,7 +109,7 @@ Inferred types:
 
 'values' @ [65:30] ==> public open val values: MutableCollection<LocalVariablesManager.AllocatedHandle> defined in java.util.HashMap[JavaPropertyDescriptor]
 
-'fold' @ [65:37] ==> public inline fun <T, R> Iterable<LocalVariablesManager.AllocatedHandle>.fold(initial: Int, operation: (Int, LocalVariablesManager.AllocatedHandle) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [65:37] ==> public inline fun <T, R> Iterable<LocalVariablesManager.AllocatedHandle>.fold(initial: Int, operation: (acc: Int, LocalVariablesManager.AllocatedHandle) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AllocatedHandle
     <R> -> Int

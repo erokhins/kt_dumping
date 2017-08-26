@@ -60,7 +60,7 @@ Inferred types:
 
 'charsSequence' @ [70:63] ==> public final val Document.charsSequence: CharSequence[MyPropertyDescriptor]
 
-'isCharAt' @ [70:77] ==> public fun CharSequence.isCharAt(offset: Int, c: Char): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers[SimpleFunctionDescriptorImpl]
+'isCharAt' @ [70:77] ==> public fun CharSequence.isCharAt(offset: Int, c: Char): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers in file handlerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'startOffset' @ [70:86] ==> val startOffset: Int defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.insertTemplate.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -184,6 +184,8 @@ Inferred types:
 Inferred types:
     <T> -> KotlinType
 
+'parameterPresentation' @ [112:84] ==> local final fun parameterPresentation(parameterType: KotlinType): String defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.signaturePresentation[SimpleFunctionDescriptorImpl]
+
 'getInstance' @ [116:28] ==> public open fun getInstance(@NotNull p0: Project): (PsiDocumentManager..PsiDocumentManager?) defined in com.intellij.psi.PsiDocumentManager[JavaMethodDescriptor]
 
 'file' @ [116:40] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.explicitParameterTypesRequired[ValueParameterDescriptorImpl]
@@ -198,7 +200,7 @@ Inferred types:
 
 'findElementOfClassAtRange' @ [117:38] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtRange(@NotNull p0: PsiFile, p1: Int, p2: Int, @NotNull p3: Class<(KtExpression..KtExpression?)>): KtExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
 'file' @ [117:64] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.idea.completion.LambdaSignatureTemplates.explicitParameterTypesRequired[ValueParameterDescriptorImpl]
 
@@ -255,6 +257,8 @@ Inferred types:
 
 'KotlinType' @ [125:25] ==> private constructor KotlinType() defined in org.jetbrains.kotlin.types.KotlinType[DeserializedClassConstructorDescriptor]
 
+'isFunctionType' @ [125:37] ==> public val KotlinType.isFunctionType: Boolean defined in org.jetbrains.kotlin.builtins[DeserializedPropertyDescriptor]
+
 'toSet' @ [126:18] ==> public fun <T> Iterable<KotlinType>.toSet(): Set<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KotlinType
@@ -294,8 +298,6 @@ Inferred types:
 'withOptions' @ [136:68] ==> public final fun withOptions(changeOptions: DescriptorRendererOptions.() -> Unit): DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
 
 'modifiers' @ [137:9] ==> public abstract var modifiers: Set<DescriptorRendererModifier> defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptions[DeserializedPropertyDescriptor]
-
-'DescriptorRendererModifier' @ [137:22] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
 'ANNOTATIONS' @ [137:49] ==> enum entry ANNOTATIONS defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
@@ -461,4 +463,6 @@ Inferred types:
 Inferred types:
     <T> -> TypeProjection
     <R> -> KotlinType
+
+'getType' @ [200:90] ==> @NotNull public abstract fun getType(): KotlinType defined in org.jetbrains.kotlin.types.TypeProjection[JavaMethodDescriptor]
 

@@ -379,7 +379,7 @@ Inferred types:
 
 'psi' @ [149:35] ==> public final val <Psi : (PsiElement..PsiElement?)> JavaElementImpl<out (PsiElement..PsiElement?)>.psi: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <Psi : (PsiElement..PsiElement?)> -> Captured(*)
 
 'isEquivalentTo' @ [149:39] ==> @Contract public abstract fun isEquivalentTo(p0: (PsiElement..PsiElement?)): Boolean defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 
@@ -387,5 +387,5 @@ Inferred types:
 
 'psi' @ [149:66] ==> public final val <Psi : (PsiElement..PsiElement?)> JavaElementImpl<out (PsiElement..PsiElement?)>.psi: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 Inferred types:
-    <Psi : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <Psi : (PsiElement..PsiElement?)> -> Captured(*)
 

@@ -50,7 +50,7 @@ Inferred types:
 
 'testDataPath' @ [64:29] ==> value-parameter testDataPath: String defined in org.jetbrains.kotlin.idea.caches.resolve.AbstractIdeLightClassTest.doTest[ValueParameterDescriptorImpl]
 
-'testLightClass' @ [65:9] ==> private fun testLightClass(expected: File, testData: File, normalize: (String) -> String, findLightClass: (String) -> PsiClass?): Unit defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'testLightClass' @ [65:9] ==> private fun testLightClass(expected: File, testData: File, normalize: (String) -> String, findLightClass: (String) -> PsiClass?): Unit defined in org.jetbrains.kotlin.idea.caches.resolve in file AbstractIdeLightClassTest.kt[SimpleFunctionDescriptorImpl]
 
 'replaceExtension' @ [65:40] ==> @NotNull public open fun replaceExtension(@NotNull p0: File, @Nullable p1: String?): File defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 
@@ -128,7 +128,9 @@ Inferred types:
 
 'substringBefore' @ [79:60] ==> public fun String.substringBefore(delimiter: String, missingDelimiterValue: String = ...): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'LightClassLazinessChecker' @ [80:13] ==> public object LightClassLazinessChecker defined in org.jetbrains.kotlin.idea.caches.resolve in file AbstractIdeLightClassTest.kt[FakeCallableDescriptorForObject]
+'?:' @ [80:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: LightClassLazinessChecker.Mode?, right: LightClassLazinessChecker.Mode): LightClassLazinessChecker.Mode[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Mode
 
 'values' @ [80:44] ==> public final fun values(): Array<LightClassLazinessChecker.Mode> defined in org.jetbrains.kotlin.idea.caches.resolve.LightClassLazinessChecker.Mode[SimpleFunctionDescriptorImpl]
 
@@ -141,8 +143,6 @@ Inferred types:
 'name' @ [80:70] ==> public final val name: String defined in org.jetbrains.kotlin.idea.caches.resolve.LightClassLazinessChecker.Mode[DeserializedPropertyDescriptor]
 
 'argument' @ [80:78] ==> val argument: String defined in org.jetbrains.kotlin.idea.caches.resolve.AbstractIdeLightClassTest.lazinessModeByFileText.<anonymous>[LocalVariableDescriptor]
-
-'LightClassLazinessChecker' @ [80:92] ==> public object LightClassLazinessChecker defined in org.jetbrains.kotlin.idea.caches.resolve in file AbstractIdeLightClassTest.kt[FakeCallableDescriptorForObject]
 
 'AllChecks' @ [80:123] ==> enum entry AllChecks defined in org.jetbrains.kotlin.idea.caches.resolve.LightClassLazinessChecker.Mode[FakeCallableDescriptorForObject]
 
@@ -166,7 +166,7 @@ Inferred types:
 
 'java' @ [94:68] ==> public val <T> KClass<out AbstractIdeCompiledLightClassTest>.java: Class<out AbstractIdeCompiledLightClassTest> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AbstractIdeCompiledLightClassTest
+    <T> -> Captured(out AbstractIdeCompiledLightClassTest)
 
 'getTestName' @ [94:77] ==> @NotNull protected/*protected and package*/ open fun getTestName(p0: Boolean): String defined in org.jetbrains.kotlin.idea.caches.resolve.AbstractIdeCompiledLightClassTest[JavaMethodDescriptor]
 
@@ -233,7 +233,7 @@ Inferred types:
 
 'testDataFile' @ [109:75] ==> val testDataFile: File defined in org.jetbrains.kotlin.idea.caches.resolve.AbstractIdeCompiledLightClassTest.doTest[LocalVariableDescriptor]
 
-'testLightClass' @ [110:9] ==> private fun testLightClass(expected: File, testData: File, normalize: (String) -> String, findLightClass: (String) -> PsiClass?): Unit defined in org.jetbrains.kotlin.idea.caches.resolve[SimpleFunctionDescriptorImpl]
+'testLightClass' @ [110:9] ==> private fun testLightClass(expected: File, testData: File, normalize: (String) -> String, findLightClass: (String) -> PsiClass?): Unit defined in org.jetbrains.kotlin.idea.caches.resolve in file AbstractIdeLightClassTest.kt[SimpleFunctionDescriptorImpl]
 
 'expectedFile' @ [110:24] ==> val expectedFile: File defined in org.jetbrains.kotlin.idea.caches.resolve.AbstractIdeCompiledLightClassTest.doTest[LocalVariableDescriptor]
 
@@ -312,7 +312,7 @@ Inferred types:
 
 'findChildrenOfType' @ [139:24] ==> @NotNull public open fun <T : (PsiElement..PsiElement?)> findChildrenOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<out (KtClassOrObject..KtClassOrObject?)>): (MutableCollection<(KtClassOrObject..KtClassOrObject?)>..Collection<(KtClassOrObject..KtClassOrObject?)>) defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClassOrObject
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassOrObject..org.jetbrains.kotlin.psi.KtClassOrObject?)
 
 'ktFile' @ [139:43] ==> value-parameter ktFile: KtFile? defined in org.jetbrains.kotlin.idea.caches.resolve.findClass[ValueParameterDescriptorImpl]
 
@@ -640,6 +640,8 @@ Inferred types:
     <T> -> LazinessInfo
 
 'LazinessInfo' @ [241:34] ==> public constructor LazinessInfo(lightClass: KtLightClass, lazinessMode: LightClassLazinessChecker.Mode) defined in org.jetbrains.kotlin.idea.caches.resolve.LightClassLazinessChecker.LazinessInfo[ClassConstructorDescriptorImpl]
+
+'checkConsistency' @ [241:48] ==> public final fun checkConsistency(): Unit defined in org.jetbrains.kotlin.idea.caches.resolve.LightClassLazinessChecker.LazinessInfo[SimpleFunctionDescriptorImpl]
 
 'modifierListOwner' @ [246:13] ==> value-parameter modifierListOwner: KtLightElement<*, PsiModifierListOwner> defined in org.jetbrains.kotlin.idea.caches.resolve.LightClassLazinessChecker.checkAnnotationConsistency[ValueParameterDescriptorImpl]
 

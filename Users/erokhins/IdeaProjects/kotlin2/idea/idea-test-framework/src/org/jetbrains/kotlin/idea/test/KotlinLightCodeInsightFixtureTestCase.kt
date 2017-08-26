@@ -36,7 +36,7 @@ Inferred types:
 
 'getComponent' @ [63:17] ==> public abstract fun <T : (Any..Any?)> getComponent(@NotNull p0: Class<(EditorTracker..EditorTracker?)>): (EditorTracker..EditorTracker?) defined in com.intellij.openapi.project.Project[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> EditorTracker
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.daemon.impl.EditorTracker..com.intellij.codeInsight.daemon.impl.EditorTracker?)
 
 'EditorTracker' @ [63:30] ==> public constructor EditorTracker(p0: (Project..Project?), p1: (WindowManager..WindowManager?), p2: (EditorFactory..EditorFactory?)) defined in com.intellij.codeInsight.daemon.impl.EditorTracker[JavaClassConstructorDescriptor]
 
@@ -90,7 +90,7 @@ Inferred types:
 
 'getHomeDirectory' @ [82:58] ==> @NotNull public open fun getHomeDirectory(): String defined in org.jetbrains.kotlin.test.KotlinTestUtils[JavaMethodDescriptor]
 
-'doKotlinTearDown' @ [84:9] ==> public fun doKotlinTearDown(project: Project, runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.test[SimpleFunctionDescriptorImpl]
+'doKotlinTearDown' @ [84:9] ==> public fun doKotlinTearDown(project: Project, runnable: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.test in file testUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [84:26] ==> public final val KotlinLightCodeInsightFixtureTestCase.project: Project[MyPropertyDescriptor]
 
@@ -311,7 +311,7 @@ Inferred types:
 
 'java' @ [147:63] ==> public val <T> KClass<out KotlinLightCodeInsightFixtureTestCase>.java: Class<out KotlinLightCodeInsightFixtureTestCase> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinLightCodeInsightFixtureTestCase
+    <T> -> Captured(out KotlinLightCodeInsightFixtureTestCase)
 
 'this' @ [147:69] ==> <this> defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCase[LazyClassReceiverParameterDescriptor]
 

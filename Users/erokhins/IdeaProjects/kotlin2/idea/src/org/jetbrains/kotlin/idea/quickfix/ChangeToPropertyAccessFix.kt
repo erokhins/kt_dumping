@@ -40,7 +40,7 @@ Inferred types:
 
 'calleeExpression' @ [45:47] ==> public final val KtCallExpression.calleeExpression: KtExpression?[MyPropertyDescriptor]
 
-'getCallableDescriptor' @ [45:65] ==> internal fun KtExpression.getCallableDescriptor(): CallableDescriptor? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'getCallableDescriptor' @ [45:65] ==> internal fun KtExpression.getCallableDescriptor(): CallableDescriptor? defined in org.jetbrains.kotlin.idea.intentions in file ReplaceUntilWithRangeToIntention.kt[SimpleFunctionDescriptorImpl]
 
 'ChangeToPropertyAccessFix' @ [46:24] ==> public constructor ChangeToPropertyAccessFix(element: KtCallExpression, isObjectCall: Boolean) defined in org.jetbrains.kotlin.idea.quickfix.ChangeToPropertyAccessFix[ClassConstructorDescriptorImpl]
 

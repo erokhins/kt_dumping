@@ -36,7 +36,7 @@ Inferred types:
 
 'getParameters' @ [50:26] ==> private final fun getParameters(): List<JsParameter> defined in org.jetbrains.kotlin.js.inline.FunctionInlineMutator[SimpleFunctionDescriptorImpl]
 
-'removeDefaultInitializers' @ [52:9] ==> public fun removeDefaultInitializers(arguments: List<JsExpression>, parameters: List<JsParameter>, body: JsBlock): Unit defined in org.jetbrains.kotlin.js.inline.clean[SimpleFunctionDescriptorImpl]
+'removeDefaultInitializers' @ [52:9] ==> public fun removeDefaultInitializers(arguments: List<JsExpression>, parameters: List<JsParameter>, body: JsBlock): Unit defined in org.jetbrains.kotlin.js.inline.clean in file removeDefaultInitializers.kt[SimpleFunctionDescriptorImpl]
 
 'arguments' @ [52:35] ==> val arguments: List<JsExpression> defined in org.jetbrains.kotlin.js.inline.FunctionInlineMutator.process[LocalVariableDescriptor]
 
@@ -44,7 +44,7 @@ Inferred types:
 
 'body' @ [52:58] ==> private final val body: JsBlock defined in org.jetbrains.kotlin.js.inline.FunctionInlineMutator[PropertyDescriptorImpl]
 
-'aliasArgumentsIfNeeded' @ [53:9] ==> public fun aliasArgumentsIfNeeded(context: NamingContext, arguments: List<JsExpression>, parameters: List<JsParameter>, source: Any?): Unit defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'aliasArgumentsIfNeeded' @ [53:9] ==> public fun aliasArgumentsIfNeeded(context: NamingContext, arguments: List<JsExpression>, parameters: List<JsParameter>, source: Any?): Unit defined in org.jetbrains.kotlin.js.inline.util in file namingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'namingContext' @ [53:32] ==> private final val namingContext: NamingContext defined in org.jetbrains.kotlin.js.inline.FunctionInlineMutator[PropertyDescriptorImpl]
 
@@ -197,7 +197,7 @@ Inferred types:
 
 'parameters' @ [91:32] ==> public final val JsFunction.parameters: (MutableList<(JsParameter..JsParameter?)>..List<(JsParameter..JsParameter?)>)[MyPropertyDescriptor]
 
-'aliasArgumentsIfNeeded' @ [92:9] ==> public fun aliasArgumentsIfNeeded(context: NamingContext, arguments: List<JsExpression>, parameters: List<JsParameter>, source: Any?): Unit defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'aliasArgumentsIfNeeded' @ [92:9] ==> public fun aliasArgumentsIfNeeded(context: NamingContext, arguments: List<JsExpression>, parameters: List<JsParameter>, source: Any?): Unit defined in org.jetbrains.kotlin.js.inline.util in file namingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'namingContext' @ [92:32] ==> val namingContext: NamingContext defined in org.jetbrains.kotlin.js.inline.FunctionInlineMutator.applyCapturedArgs[LocalVariableDescriptor]
 
@@ -299,7 +299,7 @@ Inferred types:
 
 'accept' @ [116:17] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsBlock..JsBlock?)): (JsBlock..JsBlock?) defined in org.jetbrains.kotlin.js.inline.util.rewriters.ReturnReplacingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsBlock
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsBlock..org.jetbrains.kotlin.js.backend.ast.JsBlock?)
 
 'body' @ [116:24] ==> private final val body: JsBlock defined in org.jetbrains.kotlin.js.inline.FunctionInlineMutator[PropertyDescriptorImpl]
 

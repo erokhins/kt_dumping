@@ -34,7 +34,7 @@
 
 'configuration' @ [38:9] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.codegen.AbstractDumpDeclarationsTest.updateConfiguration[ValueParameterDescriptorImpl]
 
-'put' @ [38:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: (String..String?)): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
+'put' @ [38:23] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 

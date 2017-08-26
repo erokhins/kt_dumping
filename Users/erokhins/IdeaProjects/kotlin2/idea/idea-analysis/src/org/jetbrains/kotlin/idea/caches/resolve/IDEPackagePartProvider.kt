@@ -9,6 +9,8 @@ Inferred types:
 
 'PackageParts' @ [27:52] ==> public constructor PackageParts(packageFqName: String) defined in org.jetbrains.kotlin.load.kotlin.PackageParts[DeserializedClassConstructorDescriptor]
 
+'parts' @ [27:66] ==> public final val parts: Set<String> defined in org.jetbrains.kotlin.load.kotlin.PackageParts[DeserializedPropertyDescriptor]
+
 'distinct' @ [27:73] ==> public fun <T> Iterable<String>.distinct(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -24,6 +26,8 @@ Inferred types:
 
 'PackageParts' @ [30:52] ==> public constructor PackageParts(packageFqName: String) defined in org.jetbrains.kotlin.load.kotlin.PackageParts[DeserializedClassConstructorDescriptor]
 
+'metadataParts' @ [30:66] ==> public final val metadataParts: Set<String> defined in org.jetbrains.kotlin.load.kotlin.PackageParts[DeserializedPropertyDescriptor]
+
 'distinct' @ [30:81] ==> public fun <T> Iterable<String>.distinct(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -32,10 +36,8 @@ Inferred types:
 
 'getValues' @ [33:42] ==> @NotNull public abstract fun <K : (Any..Any?), V : (Any..Any?)> getValues(@NotNull p0: ID<(String..String?), (PackageParts..PackageParts?)>, @NotNull p1: String, @NotNull p2: GlobalSearchScope): (MutableList<(PackageParts..PackageParts?)>..List<(PackageParts..PackageParts?)>) defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> PackageParts
-
-'KotlinModuleMappingIndex' @ [33:52] ==> public object KotlinModuleMappingIndex : FileBasedIndexExtension<String, PackageParts> defined in org.jetbrains.kotlin.idea.vfilefinder in file KotlinModuleMappingIndex.kt[FakeCallableDescriptorForObject]
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.PackageParts..org.jetbrains.kotlin.load.kotlin.PackageParts?)
 
 'KEY' @ [33:77] ==> public final val KEY: ID<String, PackageParts> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex[PropertyDescriptorImpl]
 

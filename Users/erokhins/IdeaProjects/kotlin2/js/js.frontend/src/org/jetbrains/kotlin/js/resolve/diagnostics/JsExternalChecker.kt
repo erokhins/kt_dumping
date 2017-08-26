@@ -768,8 +768,6 @@ Inferred types:
 
 'descriptor' @ [205:47] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.js.resolve.diagnostics.JsExternalChecker.isDirectlyExternal[ValueParameterDescriptorImpl]
 
-'PredefinedAnnotation' @ [205:59] ==> public companion object defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
-
 'NATIVE' @ [205:80] ==> enum entry NATIVE defined in org.jetbrains.kotlin.js.PredefinedAnnotation[FakeCallableDescriptorForObject]
 
 'descriptor' @ [209:13] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.js.resolve.diagnostics.JsExternalChecker.isPrivateMemberOfExternalClass[ValueParameterDescriptorImpl]
@@ -801,8 +799,6 @@ Inferred types:
 'containingDeclaration' @ [213:48] ==> val containingDeclaration: ClassDescriptor defined in org.jetbrains.kotlin.js.resolve.diagnostics.JsExternalChecker.isPrivateMemberOfExternalClass[LocalVariableDescriptor]
 
 'modality' @ [217:13] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [217:25] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [217:34] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -867,7 +863,7 @@ Inferred types:
 
 'resultingDescriptor' @ [236:59] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [237:25] ==> val descriptor: PropertyDescriptor defined in org.jetbrains.kotlin.js.resolve.diagnostics.JsExternalChecker.isDefinedExternallyExpression[LocalVariableDescriptor]
 

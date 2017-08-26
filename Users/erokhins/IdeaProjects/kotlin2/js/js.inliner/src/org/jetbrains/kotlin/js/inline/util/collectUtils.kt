@@ -1,4 +1,4 @@
-'collectReferencedNames' @ [26:9] ==> private fun collectReferencedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectReferencedNames' @ [26:9] ==> private fun collectReferencedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'scope' @ [26:32] ==> value-parameter scope: JsNode defined in org.jetbrains.kotlin.js.inline.util.collectFunctionReferencesInside[ValueParameterDescriptorImpl]
 
@@ -96,7 +96,7 @@ Inferred types:
 
 'x' @ [79:27] ==> value-parameter x: JsFunction defined in org.jetbrains.kotlin.js.inline.util.collectUsedNames.<no name provided>.visitFunction[ValueParameterDescriptorImpl]
 
-'collectFreeVariables' @ [79:29] ==> public fun JsFunction.collectFreeVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectFreeVariables' @ [79:29] ==> public fun JsFunction.collectFreeVariables(): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'accept' @ [81:7] ==> public open fun <T : JsNode?> accept(node: JsNode): Unit defined in org.jetbrains.kotlin.js.inline.util.collectUsedNames.<no name provided>[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -160,11 +160,11 @@ Inferred types:
 
 'names' @ [114:12] ==> val names: MutableSet<JsName> defined in org.jetbrains.kotlin.js.inline.util.collectDefinedNames[LocalVariableDescriptor]
 
-'collectUsedNames' @ [117:41] ==> public fun collectUsedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectUsedNames' @ [117:41] ==> public fun collectUsedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'body' @ [117:58] ==> public final var JsFunction.body: JsBlock[MyPropertyDescriptor]
 
-'collectDefinedNames' @ [117:66] ==> public fun collectDefinedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectDefinedNames' @ [117:66] ==> public fun collectDefinedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'body' @ [117:86] ==> public final var JsFunction.body: JsBlock[MyPropertyDescriptor]
 
@@ -179,7 +179,7 @@ Inferred types:
 
 'name' @ [117:114] ==> public final var JsParameter.name: JsName[MyPropertyDescriptor]
 
-'collectDefinedNames' @ [119:42] ==> public fun collectDefinedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectDefinedNames' @ [119:42] ==> public fun collectDefinedNames(scope: JsNode): Set<JsName> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'body' @ [119:62] ==> public final var JsFunction.body: JsBlock[MyPropertyDescriptor]
 
@@ -194,7 +194,7 @@ Inferred types:
 
 'name' @ [119:90] ==> public final var JsParameter.name: JsName[MyPropertyDescriptor]
 
-'collectNamedFunctionsAndMetadata' @ [121:44] ==> public fun collectNamedFunctionsAndMetadata(scope: JsNode): Map<JsName, Pair<JsFunction, JsExpression>> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectNamedFunctionsAndMetadata' @ [121:44] ==> public fun collectNamedFunctionsAndMetadata(scope: JsNode): Map<JsName, Pair<JsFunction, JsExpression>> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'scope' @ [121:77] ==> value-parameter scope: JsNode defined in org.jetbrains.kotlin.js.inline.util.collectNamedFunctions[ValueParameterDescriptorImpl]
 
@@ -210,7 +210,7 @@ Inferred types:
 
 'first' @ [121:105] ==> public final val first: JsFunction defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
-'collectNamedFunctionsAndMetadata' @ [123:54] ==> public fun collectNamedFunctionsAndMetadata(scope: JsNode): Map<JsName, Pair<JsFunction, JsExpression>> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectNamedFunctionsAndMetadata' @ [123:54] ==> public fun collectNamedFunctionsAndMetadata(scope: JsNode): Map<JsName, Pair<JsFunction, JsExpression>> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'scope' @ [123:87] ==> value-parameter scope: JsNode defined in org.jetbrains.kotlin.js.inline.util.collectNamedFunctionsOrMetadata[ValueParameterDescriptorImpl]
 
@@ -235,7 +235,7 @@ Inferred types:
 
 'result' @ [128:9] ==> val result: MutableMap<JsName, JsFunction> defined in org.jetbrains.kotlin.js.inline.util.collectNamedFunctions[LocalVariableDescriptor]
 
-'collectNamedFunctions' @ [128:19] ==> public fun collectNamedFunctions(scope: JsNode): Map<JsName, JsFunction> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectNamedFunctions' @ [128:19] ==> public fun collectNamedFunctions(scope: JsNode): Map<JsName, JsFunction> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'fragment' @ [128:41] ==> val fragment: JsProgramFragment defined in org.jetbrains.kotlin.js.inline.util.collectNamedFunctions[LocalVariableDescriptor]
 
@@ -243,7 +243,7 @@ Inferred types:
 
 'result' @ [129:9] ==> val result: MutableMap<JsName, JsFunction> defined in org.jetbrains.kotlin.js.inline.util.collectNamedFunctions[LocalVariableDescriptor]
 
-'collectNamedFunctions' @ [129:19] ==> public fun collectNamedFunctions(scope: JsNode): Map<JsName, JsFunction> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectNamedFunctions' @ [129:19] ==> public fun collectNamedFunctions(scope: JsNode): Map<JsName, JsFunction> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'fragment' @ [129:41] ==> val fragment: JsProgramFragment defined in org.jetbrains.kotlin.js.inline.util.collectNamedFunctions[LocalVariableDescriptor]
 
@@ -380,8 +380,6 @@ Inferred types:
 
 'expression' @ [174:30] ==> value-parameter expression: JsExpression defined in org.jetbrains.kotlin.js.inline.util.collectNamedFunctionsAndMetadata.<no name provided>.extractFunction[ValueParameterDescriptorImpl]
 
-'InlineMetadata' @ [175:21] ==> public companion object defined in org.jetbrains.kotlin.js.translate.expression.InlineMetadata[FakeCallableDescriptorForObject]
-
 'decompose' @ [175:36] ==> @JvmStatic public final fun decompose(expression: JsExpression?): InlineMetadata? defined in org.jetbrains.kotlin.js.translate.expression.InlineMetadata.Companion[SimpleFunctionDescriptorImpl]
 
 'expression' @ [175:46] ==> value-parameter expression: JsExpression defined in org.jetbrains.kotlin.js.inline.util.collectNamedFunctionsAndMetadata.<no name provided>.extractFunction[ValueParameterDescriptorImpl]
@@ -441,7 +439,7 @@ Inferred types:
 
 'result' @ [200:9] ==> val result: MutableMap<String, JsFunction> defined in org.jetbrains.kotlin.js.inline.util.collectAccessors[LocalVariableDescriptor]
 
-'collectAccessors' @ [200:19] ==> public fun collectAccessors(scope: JsNode): Map<String, JsFunction> defined in org.jetbrains.kotlin.js.inline.util[SimpleFunctionDescriptorImpl]
+'collectAccessors' @ [200:19] ==> public fun collectAccessors(scope: JsNode): Map<String, JsFunction> defined in org.jetbrains.kotlin.js.inline.util in file collectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'fragment' @ [200:36] ==> val fragment: JsProgramFragment defined in org.jetbrains.kotlin.js.inline.util.collectAccessors[LocalVariableDescriptor]
 

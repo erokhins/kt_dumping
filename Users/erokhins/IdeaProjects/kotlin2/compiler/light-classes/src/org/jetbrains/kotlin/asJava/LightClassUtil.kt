@@ -8,7 +8,7 @@
 
 'psi' @ [37:25] ==> public final val <T : (PsiClass..PsiClass?)> PsiClassStub<out (PsiClass..PsiClass?)>.psi: (PsiClass..PsiClass?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiClass..PsiClass?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
+    <T : (PsiClass..PsiClass?)> -> Captured(*)
 
 'stub' @ [40:13] ==> value-parameter stub: StubElement<*> defined in org.jetbrains.kotlin.asJava.LightClassUtil.findClass[ValueParameterDescriptorImpl]
 
@@ -18,7 +18,7 @@ Inferred types:
 
 'childrenStubs' @ [41:32] ==> public final val <T : (PsiElement..PsiElement?)> StubElement<out (PsiElement..PsiElement?)>.childrenStubs: (MutableList<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>..List<raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)>)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'findClass' @ [42:30] ==> public final fun findClass(stub: StubElement<*>, predicate: (PsiClassStub<*>) -> Boolean): PsiClass? defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
@@ -160,7 +160,7 @@ Inferred types:
 
 'getParentOfType' @ [89:51] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtClass..KtClass?)>): KtClass? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClass
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'origin' @ [89:67] ==> val origin: KtClassOrObject? defined in org.jetbrains.kotlin.asJava.LightClassUtil.getLightClassBackingField[LocalVariableDescriptor]
 
@@ -402,7 +402,7 @@ Inferred types:
 
 'getParentOfType' @ [188:28] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtCallableDeclaration..KtCallableDeclaration?)>..Class<out (KtCallableDeclaration..KtCallableDeclaration?)>?)): KtCallableDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtCallableDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallableDeclaration..org.jetbrains.kotlin.psi.KtCallableDeclaration?)
 
 'declaration' @ [188:44] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.asJava.LightClassUtil.canGenerateLightClass[ValueParameterDescriptorImpl]
 
@@ -630,13 +630,9 @@ Inferred types:
 
 'this' @ [261:18] ==> <this> defined in org.jetbrains.kotlin.asJava.getAccessorLightMethods[ReceiverParameterDescriptorImpl]
 
-'LightClassUtil' @ [262:26] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
-
 'getLightClassPropertyMethods' @ [262:41] ==> public final fun getLightClassPropertyMethods(property: KtProperty): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
 'this' @ [262:70] ==> <this> defined in org.jetbrains.kotlin.asJava.getAccessorLightMethods[ReceiverParameterDescriptorImpl]
-
-'LightClassUtil' @ [263:27] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
 
 'getLightClassPropertyMethods' @ [263:42] ==> public final fun getLightClassPropertyMethods(parameter: KtParameter): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 

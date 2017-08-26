@@ -48,8 +48,6 @@ Inferred types:
 
 'modality' @ [62:24] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [62:36] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [62:45] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 '!' @ [64:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
@@ -143,7 +141,7 @@ Inferred types:
 
 'dispatchReceiver' @ [87:20] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'isImplicitClassFor' @ [87:37] ==> local final fun ReceiverValue?.isImplicitClassFor(descriptor: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.idea.intentions.ObjectLiteralToLambdaIntention.applicabilityRange[SimpleFunctionDescriptorImpl]
 
@@ -153,7 +151,7 @@ Inferred types:
 
 'extensionReceiver' @ [88:20] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'isImplicitClassFor' @ [88:38] ==> local final fun ReceiverValue?.isImplicitClassFor(descriptor: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.idea.intentions.ObjectLiteralToLambdaIntention.applicabilityRange[SimpleFunctionDescriptorImpl]
 
@@ -204,8 +202,6 @@ Inferred types:
 'buildExpression' @ [105:37] ==> public fun KtPsiFactory.buildExpression(build: BuilderByPattern<KtExpression>.() -> Unit): KtExpression defined in org.jetbrains.kotlin.psi[DeserializedSimpleFunctionDescriptor]
 
 'appendFixedText' @ [106:13] ==> public final fun appendFixedText(text: String): BuilderByPattern<KtExpression> defined in org.jetbrains.kotlin.psi.BuilderByPattern[DeserializedSimpleFunctionDescriptor]
-
-'IdeDescriptorRenderers' @ [106:29] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [106:52] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
@@ -423,8 +419,6 @@ Inferred types:
 'callee' @ [160:98] ==> val callee: KtNameReferenceExpression defined in org.jetbrains.kotlin.idea.intentions.ObjectLiteralToLambdaIntention.applyTo[LocalVariableDescriptor]
 
 'endOffset' @ [160:105] ==> public val PsiElement.endOffset: Int defined in org.jetbrains.kotlin.psi.psiUtil[DeserializedPropertyDescriptor]
-
-'ShortenReferences' @ [161:13] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [161:31] ==> @field:JvmField public final val DEFAULT: ShortenReferences defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Companion[DeserializedPropertyDescriptor]
 

@@ -28,9 +28,9 @@ Inferred types:
 
 'project' @ [68:92] ==> val project: (Project..Project?) defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinRuntimeTypeEvaluator.evaluate[LocalVariableDescriptor]
 
-'EvaluatingComputable' @ [68:101] ==> public fun <T : (Any..Any?)> EvaluatingComputable(function: () -> (ExpressionEvaluator..ExpressionEvaluator?)): EvaluatingComputable<ExpressionEvaluator> defined in com.intellij.debugger[SimpleFunctionDescriptorImpl]
+'EvaluatingComputable' @ [68:101] ==> public fun <T : (Any..Any?)> EvaluatingComputable(function: () -> (ExpressionEvaluator..ExpressionEvaluator?)): EvaluatingComputable<(ExpressionEvaluator..ExpressionEvaluator?)> defined in com.intellij.debugger[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> ExpressionEvaluator
+    <T : (Any..Any?)> -> (com.intellij.debugger.engine.evaluation.expression.ExpressionEvaluator..com.intellij.debugger.engine.evaluation.expression.ExpressionEvaluator?)
 
 'KtPsiFactory' @ [69:36] ==> @JvmOverloads public constructor KtPsiFactory(project: Project, markGenerated: Boolean = ...) defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedClassConstructorDescriptor]
 

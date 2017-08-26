@@ -160,7 +160,7 @@ Inferred types:
 
 'getParentOfType' @ [110:31] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(ClassDescriptor..ClassDescriptor?)>, p2: Boolean): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> ClassDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'containingDescriptor' @ [110:47] ==> public final val containingDescriptor: MemberDescriptor defined in org.jetbrains.kotlin.js.translate.context.UsageTracker[PropertyDescriptorImpl]
 
@@ -202,7 +202,7 @@ Inferred types:
 
 'getParentOfType' @ [155:35] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(ClassDescriptor..ClassDescriptor?)>, p2: Boolean): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> ClassDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'containingDescriptor' @ [155:51] ==> public final val containingDescriptor: MemberDescriptor defined in org.jetbrains.kotlin.js.translate.context.UsageTracker[PropertyDescriptorImpl]
 
@@ -257,7 +257,7 @@ Inferred types:
 
 'suggestedName' @ [174:45] ==> val suggestedName: String defined in org.jetbrains.kotlin.js.translate.context.UsageTracker.getJsNameForCapturedDescriptor[LocalVariableDescriptor]
 
-'apply' @ [174:60] ==> @InlineOnly public inline fun <T> JsName.apply(block: JsName.() -> Unit): JsName defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [174:60] ==> @InlineOnly public inline fun <T> JsName.apply(block: (JsName).() -> Unit): JsName defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JsName
 
@@ -329,7 +329,7 @@ Inferred types:
 
 'java' @ [203:70] ==> public val <T> KClass<out DeclarationDescriptor>.java: Class<out DeclarationDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DeclarationDescriptor
+    <T> -> Captured(out DeclarationDescriptor)
 
 'this' @ [204:32] ==> <this> defined in org.jetbrains.kotlin.js.translate.context.getNameForCapturedReceiver[ReceiverParameterDescriptorImpl]
 

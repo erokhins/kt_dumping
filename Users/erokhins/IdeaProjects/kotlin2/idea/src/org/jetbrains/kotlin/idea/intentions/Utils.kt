@@ -44,7 +44,7 @@ Inferred types:
 
 'resultingDescriptor' @ [61:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'fqNameUnsafe' @ [61:45] ==> public val DeclarationDescriptor.fqNameUnsafe: FqNameUnsafe defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
@@ -235,7 +235,7 @@ Inferred types:
 
 'expression' @ [124:60] ==> public final val KtWhenEntry.expression: KtExpression?[MyPropertyDescriptor]
 
-'resultingWhens' @ [124:72] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resultingWhens' @ [124:72] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [124:92] ==> @InlineOnly public inline fun <T> listOf(): List<KtWhenExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -251,7 +251,7 @@ Inferred types:
 
 'then' @ [125:27] ==> public final val KtIfExpression.then: KtExpression?[MyPropertyDescriptor]
 
-'resultingWhens' @ [125:33] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resultingWhens' @ [125:33] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [125:53] ==> @InlineOnly public inline fun <T> listOf(): List<KtWhenExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -259,7 +259,7 @@ Inferred types:
 
 '`else`' @ [125:66] ==> public final val KtIfExpression.`else`: KtExpression?[MyPropertyDescriptor]
 
-'resultingWhens' @ [125:74] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resultingWhens' @ [125:74] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [125:94] ==> @InlineOnly public inline fun <T> listOf(): List<KtWhenExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -271,7 +271,7 @@ Inferred types:
 
 'left' @ [126:31] ==> public final val KtBinaryExpression.left: KtExpression?[MyPropertyDescriptor]
 
-'resultingWhens' @ [126:37] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resultingWhens' @ [126:37] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [126:57] ==> @InlineOnly public inline fun <T> listOf(): List<KtWhenExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -279,7 +279,7 @@ Inferred types:
 
 'right' @ [126:70] ==> public final val KtBinaryExpression.right: KtExpression?[MyPropertyDescriptor]
 
-'resultingWhens' @ [126:77] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resultingWhens' @ [126:77] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [126:97] ==> @InlineOnly public inline fun <T> listOf(): List<KtWhenExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -289,7 +289,7 @@ Inferred types:
 
 'baseExpression' @ [127:34] ==> public final val KtUnaryExpression.baseExpression: KtExpression?[MyPropertyDescriptor]
 
-'resultingWhens' @ [127:50] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resultingWhens' @ [127:50] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [127:70] ==> @InlineOnly public inline fun <T> listOf(): List<KtWhenExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -301,7 +301,7 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
 
-'resultingWhens' @ [128:54] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resultingWhens' @ [128:54] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [128:74] ==> @InlineOnly public inline fun <T> listOf(): List<KtWhenExpression> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -640,7 +640,7 @@ Inferred types:
 
 'isFlexibleRecursive' @ [207:60] ==> internal fun KotlinType.isFlexibleRecursive(): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
-'ifBranchesOrThis' @ [210:58] ==> private fun KtExpression.ifBranchesOrThis(): List<KtExpression?> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'ifBranchesOrThis' @ [210:58] ==> private fun KtExpression.ifBranchesOrThis(): List<KtExpression?> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [213:9] ==> <this> defined in org.jetbrains.kotlin.idea.intentions.ifBranchesOrThis[ReceiverParameterDescriptorImpl]
 
@@ -658,15 +658,15 @@ Inferred types:
 
 '`else`' @ [214:27] ==> public final val KtIfExpression.`else`: KtExpression?[MyPropertyDescriptor]
 
-'ifBranchesOrThis' @ [214:35] ==> private fun KtExpression.ifBranchesOrThis(): List<KtExpression?> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'ifBranchesOrThis' @ [214:35] ==> private fun KtExpression.ifBranchesOrThis(): List<KtExpression?> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'orEmpty' @ [214:54] ==> @InlineOnly public inline fun <T> List<KtExpression?>?.orEmpty(): List<KtExpression?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtExpression?
 
-'resultingDescriptor' @ [218:9] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
+'resultingDescriptor' @ [218:9] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<???>.resultingDescriptor: ???[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@1e4a13b8
 
 'returnType' @ [218:29] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -699,7 +699,7 @@ Inferred types:
 
 'resultingDescriptor' @ [227:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'returnType' @ [227:71] ==> public final val CallableDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
 
@@ -740,7 +740,7 @@ Inferred types:
 
 'receiverExpression' @ [235:19] ==> public open val receiverExpression: KtExpression defined in org.jetbrains.kotlin.psi.KtDotQualifiedExpression[DeserializedPropertyDescriptor]
 
-'isExpressionOfTypeOrSubtype' @ [235:38] ==> private fun KtExpression.isExpressionOfTypeOrSubtype(predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'isExpressionOfTypeOrSubtype' @ [235:38] ==> private fun KtExpression.isExpressionOfTypeOrSubtype(predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'isArray' @ [236:28] ==> public open fun isArray(@NotNull p0: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 
@@ -760,9 +760,11 @@ Inferred types:
 
 'receiverExpression' @ [241:21] ==> public open val receiverExpression: KtExpression defined in org.jetbrains.kotlin.psi.KtDotQualifiedExpression[DeserializedPropertyDescriptor]
 
-'isExpressionOfTypeOrSubtype' @ [241:40] ==> private fun KtExpression.isExpressionOfTypeOrSubtype(predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'isExpressionOfTypeOrSubtype' @ [241:40] ==> private fun KtExpression.isExpressionOfTypeOrSubtype(predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinBuiltIns' @ [241:68] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull p0: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
+
+'isCharSequenceOrNullableCharSequence' @ [241:84] ==> public open fun isCharSequenceOrNullableCharSequence(@Nullable p0: KotlinType?): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 
 '?:' @ [248:9] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtExpression?, right: KtExpression): KtExpression[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -854,10 +856,10 @@ Inferred types:
 
 'selectorExpression' @ [274:17] ==> public open val selectorExpression: KtExpression? defined in org.jetbrains.kotlin.psi.KtDotQualifiedExpression[DeserializedPropertyDescriptor]
 
-'let' @ [274:37] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> KtExpression?): KtExpression? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [274:37] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtExpression
-    <R> -> KtExpression?
+    <R> -> Nothing
 
 'this' @ [274:50] ==> <this> defined in org.jetbrains.kotlin.idea.intentions.deleteFirstReceiver[ReceiverParameterDescriptorImpl]
 
@@ -871,11 +873,7 @@ Inferred types:
 Inferred types:
     <T> -> Name
 
-'CollectionLiteralResolver' @ [279:38] ==> public companion object defined in org.jetbrains.kotlin.resolve.CollectionLiteralResolver[FakeCallableDescriptorForObject]
-
 'ARRAY_OF_FUNCTION' @ [279:64] ==> public final val ARRAY_OF_FUNCTION: Name defined in org.jetbrains.kotlin.resolve.CollectionLiteralResolver.Companion[DeserializedPropertyDescriptor]
-
-'CollectionLiteralResolver' @ [280:32] ==> public companion object defined in org.jetbrains.kotlin.resolve.CollectionLiteralResolver[FakeCallableDescriptorForObject]
 
 'PRIMITIVE_TYPE_TO_ARRAY' @ [280:58] ==> public final val PRIMITIVE_TYPE_TO_ARRAY: Map<PrimitiveType, Name> defined in org.jetbrains.kotlin.resolve.CollectionLiteralResolver.Companion[DeserializedPropertyDescriptor]
 
@@ -895,7 +893,7 @@ Inferred types:
 
 'candidateDescriptor' @ [285:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'descriptor' @ [286:12] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.intentions.isArrayOfMethod[LocalVariableDescriptor]
 

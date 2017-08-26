@@ -139,7 +139,7 @@ Inferred types:
 
 'original' @ [69:18] ==> public final var original: Context.Node defined in org.jetbrains.kotlin.js.dce.Context.Node[PropertyDescriptorImpl]
 
-'extractRootsImpl' @ [69:27] ==> private fun Context.Node.extractRootsImpl(target: MutableSet<Context.Node>, visited: MutableSet<Context.Node>): Unit defined in org.jetbrains.kotlin.js.dce[SimpleFunctionDescriptorImpl]
+'extractRootsImpl' @ [69:27] ==> private fun Context.Node.extractRootsImpl(target: MutableSet<Context.Node>, visited: MutableSet<Context.Node>): Unit defined in org.jetbrains.kotlin.js.dce in file util.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [69:44] ==> val result: MutableSet<Context.Node> defined in org.jetbrains.kotlin.js.dce.extractRoots[LocalVariableDescriptor]
 
@@ -178,7 +178,7 @@ Inferred types:
 
 'parent' @ [80:19] ==> public final val parent: Context.Node defined in org.jetbrains.kotlin.js.dce.Context.Qualifier[PropertyDescriptorImpl]
 
-'extractRootsImpl' @ [80:26] ==> private fun Context.Node.extractRootsImpl(target: MutableSet<Context.Node>, visited: MutableSet<Context.Node>): Unit defined in org.jetbrains.kotlin.js.dce[SimpleFunctionDescriptorImpl]
+'extractRootsImpl' @ [80:26] ==> private fun Context.Node.extractRootsImpl(target: MutableSet<Context.Node>, visited: MutableSet<Context.Node>): Unit defined in org.jetbrains.kotlin.js.dce in file util.kt[SimpleFunctionDescriptorImpl]
 
 'target' @ [80:43] ==> value-parameter target: MutableSet<Context.Node> defined in org.jetbrains.kotlin.js.dce.extractRootsImpl[ValueParameterDescriptorImpl]
 

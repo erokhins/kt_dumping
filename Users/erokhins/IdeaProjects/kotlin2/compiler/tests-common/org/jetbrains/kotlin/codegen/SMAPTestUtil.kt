@@ -83,8 +83,6 @@ Inferred types:
 
 'content' @ [60:54] ==> val content: String defined in org.jetbrains.kotlin.codegen.SMAPTestUtil.extractSmapFromTestDataFile[LocalVariableDescriptor]
 
-'SMAPAndFile' @ [60:73] ==> public companion object defined in org.jetbrains.kotlin.codegen.SMAPTestUtil.SMAPAndFile[FakeCallableDescriptorForObject]
-
 'getPath' @ [60:85] ==> public final fun getPath(canonicalPath: String): String defined in org.jetbrains.kotlin.codegen.SMAPTestUtil.SMAPAndFile.Companion[SimpleFunctionDescriptorImpl]
 
 'file' @ [60:93] ==> value-parameter file: CodegenTestCase.TestFile defined in org.jetbrains.kotlin.codegen.SMAPTestUtil.extractSmapFromTestDataFile[ValueParameterDescriptorImpl]

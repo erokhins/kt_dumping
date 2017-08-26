@@ -2,9 +2,9 @@
 
 'parent' @ [41:28] ==> value-parameter parent: PsiElement defined in org.jetbrains.kotlin.asJava.elements.KtLightAbstractAnnotation.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [42:33] ==> public fun <T> lazyPub(initializer: () -> PsiAnnotation): Lazy<PsiAnnotation> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [42:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiAnnotation
+    <T> -> T
 
 'computeDelegate' @ [42:41] ==> value-parameter computeDelegate: () -> PsiAnnotation defined in org.jetbrains.kotlin.asJava.elements.KtLightAbstractAnnotation.<init>[ValueParameterDescriptorImpl]
 
@@ -36,9 +36,9 @@ Inferred types:
 
 'delegate' @ [70:49] ==> value-parameter delegate: D defined in org.jetbrains.kotlin.asJava.elements.KtLightAnnotationForSourceEntry.LightElementValue.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [71:48] ==> public fun <T> lazyPub(initializer: () -> PsiElement?): Lazy<PsiElement?> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [71:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiElement?
+    <T> -> T
 
 'valueOrigin' @ [71:56] ==> value-parameter valueOrigin: AnnotationValueOrigin /* = () -> PsiElement? */ defined in org.jetbrains.kotlin.asJava.elements.KtLightAnnotationForSourceEntry.LightElementValue.<init>[ValueParameterDescriptorImpl]
 
@@ -155,13 +155,13 @@ Inferred types:
 
 'callHolder' @ [106:28] ==> value-parameter callHolder: KtCallElement defined in org.jetbrains.kotlin.asJava.elements.KtLightAnnotationForSourceEntry.getMemberValueAsCallArgument[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [106:39] ==> private fun KtElement.getResolvedCall(): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.asJava.elements[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [106:39] ==> private fun KtElement.getResolvedCall(): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.asJava.elements in file lightAnnotations.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [107:37] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.asJava.elements.KtLightAnnotationForSourceEntry.getMemberValueAsCallArgument[LocalVariableDescriptor]
 
 'resultingDescriptor' @ [107:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'memberValue' @ [109:17] ==> value-parameter memberValue: PsiElement defined in org.jetbrains.kotlin.asJava.elements.KtLightAnnotationForSourceEntry.getMemberValueAsCallArgument[ValueParameterDescriptorImpl]
 
@@ -199,7 +199,7 @@ Inferred types:
 
 'valueArguments' @ [114:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'parameter' @ [114:60] ==> val parameter: ValueParameterDescriptor defined in org.jetbrains.kotlin.asJava.elements.KtLightAnnotationForSourceEntry.getMemberValueAsCallArgument[LocalVariableDescriptor]
 
@@ -406,9 +406,9 @@ Inferred types:
 
 'valueOrigin' @ [178:77] ==> value-parameter valueOrigin: AnnotationValueOrigin /* = () -> PsiElement? */ defined in org.jetbrains.kotlin.asJava.elements.KtLightAnnotationForSourceEntry.LightArrayInitializerValue.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [179:38] ==> public fun <T> lazyPub(initializer: () -> Array<PsiAnnotationMemberValue>): Lazy<Array<PsiAnnotationMemberValue>> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [179:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Array<PsiAnnotationMemberValue>
+    <T> -> T
 
 'delegate' @ [180:13] ==> value-parameter delegate: PsiArrayInitializerMemberValue defined in org.jetbrains.kotlin.asJava.elements.KtLightAnnotationForSourceEntry.LightArrayInitializerValue.<init>[ValueParameterDescriptorImpl]
 
@@ -599,13 +599,13 @@ Inferred types:
 
 'java' @ [225:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [225:51] ==> <this> defined in org.jetbrains.kotlin.asJava.elements.KtLightAnnotationForSourceEntry[LazyClassReceiverParameterDescriptor]
 
 'java' @ [225:63] ==> public val <T> KClass<out KtLightAnnotationForSourceEntry>.java: Class<out KtLightAnnotationForSourceEntry> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtLightAnnotationForSourceEntry
+    <T> -> Captured(out KtLightAnnotationForSourceEntry)
 
 'kotlinOrigin' @ [226:16] ==> public open val kotlinOrigin: KtCallElement defined in org.jetbrains.kotlin.asJava.elements.KtLightAnnotationForSourceEntry[PropertyDescriptorImpl]
 
@@ -689,7 +689,7 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiAnnotation..com.intellij.psi.PsiAnnotation?)
 
-'isNullabilityAnnotation' @ [267:9] ==> internal fun isNullabilityAnnotation(qualifiedName: String?): Boolean defined in org.jetbrains.kotlin.asJava.elements[SimpleFunctionDescriptorImpl]
+'isNullabilityAnnotation' @ [267:9] ==> internal fun isNullabilityAnnotation(qualifiedName: String?): Boolean defined in org.jetbrains.kotlin.asJava.elements in file lightAnnotations.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [267:33] ==> value-parameter it: (PsiAnnotation..PsiAnnotation?) defined in org.jetbrains.kotlin.asJava.elements.KtLightNullabilityAnnotation.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -701,7 +701,7 @@ Inferred types:
 
 '!' @ [271:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'isNullabilityAnnotation' @ [271:14] ==> internal fun isNullabilityAnnotation(qualifiedName: String?): Boolean defined in org.jetbrains.kotlin.asJava.elements[SimpleFunctionDescriptorImpl]
+'isNullabilityAnnotation' @ [271:14] ==> internal fun isNullabilityAnnotation(qualifiedName: String?): Boolean defined in org.jetbrains.kotlin.asJava.elements in file lightAnnotations.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [271:38] ==> value-parameter fqName: String defined in org.jetbrains.kotlin.asJava.elements.KtLightNullabilityAnnotation.fqNameMatches[ValueParameterDescriptorImpl]
 
@@ -765,11 +765,11 @@ Inferred types:
 
 'this' @ [295:54] ==> <this> defined in org.jetbrains.kotlin.asJava.elements.asKtCall[ReceiverParameterDescriptorImpl]
 
-'getResolvedCall' @ [295:75] ==> private fun KtElement.getResolvedCall(): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.asJava.elements[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [295:75] ==> private fun KtElement.getResolvedCall(): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.asJava.elements in file lightAnnotations.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [295:94] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [295:100] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 

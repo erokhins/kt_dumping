@@ -195,7 +195,7 @@ Inferred types:
 
 'candidateDescriptor' @ [91:26] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'name' @ [91:46] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 
@@ -205,13 +205,13 @@ Inferred types:
 
 'extensionReceiver' @ [92:26] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [93:24] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.intentions.ConvertTryFinallyToUseCallIntention.applicabilityRange[LocalVariableDescriptor]
 
 'dispatchReceiver' @ [93:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'receiver' @ [94:13] ==> val receiver: ReceiverValue defined in org.jetbrains.kotlin.idea.intentions.ConvertTryFinallyToUseCallIntention.applicabilityRange[LocalVariableDescriptor]
 

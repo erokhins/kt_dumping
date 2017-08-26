@@ -1,6 +1,6 @@
 'psiElement' @ [28:50] ==> public open fun <T : (PsiElement..PsiElement?)> psiElement(p0: (Class<(KtNamedDeclaration..KtNamedDeclaration?)>..Class<(KtNamedDeclaration..KtNamedDeclaration?)>?)): (PsiElementPattern.Capture<(KtNamedDeclaration..KtNamedDeclaration?)>..PsiElementPattern.Capture<(KtNamedDeclaration..KtNamedDeclaration?)>?) defined in com.intellij.patterns.PlatformPatterns[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtNamedDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtNamedDeclaration..org.jetbrains.kotlin.psi.KtNamedDeclaration?)
 
 'java' @ [28:87] ==> public val <T> KClass<KtNamedDeclaration>.java: Class<KtNamedDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

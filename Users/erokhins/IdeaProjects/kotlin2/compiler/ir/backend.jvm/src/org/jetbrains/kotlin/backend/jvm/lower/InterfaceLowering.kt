@@ -62,8 +62,6 @@ Inferred types:
 
 'modality' @ [59:28] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [59:40] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [59:49] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'createDefaultImplFunDescriptor' @ [60:46] ==> public final fun createDefaultImplFunDescriptor(defaultImplsDescriptor: DefaultImplsClassDescriptorImpl, descriptor: FunctionDescriptor, interfaceDescriptor: ClassDescriptor, typeMapper: KotlinTypeMapper): SimpleFunctionDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.lower.InterfaceLowering.Companion[SimpleFunctionDescriptorImpl]
@@ -288,8 +286,6 @@ Inferred types:
 
 'oldExtensionReceiver' @ [115:41] ==> val oldExtensionReceiver: ReceiverParameterDescriptor? defined in org.jetbrains.kotlin.backend.jvm.lower.InterfaceLowering.Companion.createDefaultImplFunDescriptor[LocalVariableDescriptor]
 
-'ValueParameterDescriptorImpl' @ [116:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.impl.ValueParameterDescriptorImpl[FakeCallableDescriptorForObject]
-
 'createWithDestructuringDeclarations' @ [116:50] ==> @JvmStatic public final fun createWithDestructuringDeclarations(containingDeclaration: CallableDescriptor, original: ValueParameterDescriptor?, index: Int, annotations: Annotations, name: Name, outType: KotlinType, declaresDefaultValue: Boolean, isCrossinline: Boolean, isNoinline: Boolean, varargElementType: KotlinType?, source: SourceElement, destructuringVariables: (() -> List<VariableDescriptor>)?): ValueParameterDescriptorImpl defined in org.jetbrains.kotlin.descriptors.impl.ValueParameterDescriptorImpl.Companion[DeserializedSimpleFunctionDescriptor]
 
 'newFunction' @ [117:29] ==> val newFunction: SimpleFunctionDescriptorImpl defined in org.jetbrains.kotlin.backend.jvm.lower.InterfaceLowering.Companion.createDefaultImplFunDescriptor[LocalVariableDescriptor]
@@ -360,8 +356,6 @@ Inferred types:
 'descriptor' @ [126:38] ==> value-parameter descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.backend.jvm.lower.InterfaceLowering.Companion.createDefaultImplFunDescriptor[ValueParameterDescriptorImpl]
 
 'returnType' @ [126:49] ==> public final val FunctionDescriptor.returnType: KotlinType?[MyPropertyDescriptor]
-
-'Modality' @ [126:61] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [126:70] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

@@ -50,7 +50,7 @@ Inferred types:
 
 'accept' @ [33:7] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsNode..JsNode?)): (JsNode..JsNode?) defined in org.jetbrains.kotlin.js.inline.clean.NodeRemover[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsNode
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'root' @ [33:14] ==> value-parameter root: JsNode defined in org.jetbrains.kotlin.js.inline.clean.removeUnusedImports[ValueParameterDescriptorImpl]
 

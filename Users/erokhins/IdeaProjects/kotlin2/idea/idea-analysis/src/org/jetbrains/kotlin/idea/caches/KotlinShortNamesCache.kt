@@ -10,8 +10,6 @@
 
 'addAll' @ [53:20] ==> public abstract fun addAll(elements: Collection<(String..String?)>): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
-'KotlinFileFacadeShortNameIndex' @ [53:27] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeShortNameIndex[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [53:58] ==> @JvmField public final val INSTANCE: KotlinFileFacadeShortNameIndex defined in org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeShortNameIndex.Companion[PropertyDescriptorImpl]
 
 'getAllKeys' @ [53:67] ==> public open fun getAllKeys(p0: (Project..Project?)): (MutableCollection<(String..String?)>..Collection<(String..String?)>?) defined in org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeShortNameIndex[JavaMethodDescriptor]
@@ -406,7 +404,7 @@ Inferred types:
 
 'process' @ [146:29] ==> public open fun <T : (Any..Any?)> process(@NotNull p0: (Array<(PsiMethod..PsiMethod?)>..Array<out (PsiMethod..PsiMethod?)>), @NotNull p1: Processor<in (PsiMethod..PsiMethod?)>): Boolean defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiMethod
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
 
 'getMethodsByName' @ [146:37] ==> public open fun getMethodsByName(name: String, scope: GlobalSearchScope): Array<PsiMethod> defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCache[SimpleFunctionDescriptorImpl]
 
@@ -436,6 +434,8 @@ Inferred types:
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
     <R> -> String
+
+'getAccessorNamesCandidatesByPropertyName' @ [154:28] ==> public fun getAccessorNamesCandidatesByPropertyName(name: String): List<String> defined in org.jetbrains.kotlin.asJava[DeserializedSimpleFunctionDescriptor]
 
 'functionNames' @ [156:17] ==> val functionNames: (MutableCollection<(String..String?)>..Collection<(String..String?)>?) defined in org.jetbrains.kotlin.idea.caches.KotlinShortNamesCache.getAllMethodNames[LocalVariableDescriptor]
 

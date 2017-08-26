@@ -1,6 +1,6 @@
 'newSetFromMap' @ [23:24] ==> public open fun <E : (Any..Any?)> newSetFromMap(p0: (MutableMap<(T..T?), (Boolean..Boolean?)>..Map<(T..T?), (Boolean..Boolean?)>?)): (MutableSet<(T..T?)>..Set<(T..T?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> T
+    <E : (Any..Any?)> -> (T..T?)
 
 'IdentityHashMap' @ [23:38] ==> public constructor IdentityHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.IdentityHashMap[JavaClassConstructorDescriptor]
 Inferred types:

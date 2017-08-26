@@ -88,7 +88,7 @@ Inferred types:
 
 'ArrayList' @ [96:33] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (File..File?)>..Collection<(File..File?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> File
+    <E : (Any..Any?)> -> (java.io.File..java.io.File?)
 
 'if (IncrementalCompilation.isEnabled())
                         sourceFiles.get(target)
@@ -109,7 +109,7 @@ Inferred types:
 
 'target' @ [100:75] ==> val target: (ModuleBuildTarget..ModuleBuildTarget?) defined in org.jetbrains.kotlin.jps.build.KotlinBuilderModuleScriptGenerator.generateModuleDescription[LocalVariableDescriptor]
 
-'moduleSources' @ [102:17] ==> val moduleSources: ArrayList<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilderModuleScriptGenerator.generateModuleDescription[LocalVariableDescriptor]
+'moduleSources' @ [102:17] ==> val moduleSources: ArrayList<(File..File?)> defined in org.jetbrains.kotlin.jps.build.KotlinBuilderModuleScriptGenerator.generateModuleDescription[LocalVariableDescriptor]
 
 'size' @ [102:31] ==> public open val size: Int defined in java.util.ArrayList[JavaPropertyDescriptor]
 
@@ -125,9 +125,7 @@ Inferred types:
 
 'logCompiledFiles' @ [106:28] ==> public abstract fun logCompiledFiles(p0: (MutableCollection<(File..File?)>..Collection<(File..File?)>?), p1: (String..String?), p2: (String..String?)): Unit defined in org.jetbrains.jps.builders.logging.ProjectBuilderLogger[JavaMethodDescriptor]
 
-'moduleSources' @ [106:45] ==> val moduleSources: ArrayList<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilderModuleScriptGenerator.generateModuleDescription[LocalVariableDescriptor]
-
-'KotlinBuilder' @ [106:60] ==> public companion object defined in org.jetbrains.kotlin.jps.build.KotlinBuilder[FakeCallableDescriptorForObject]
+'moduleSources' @ [106:45] ==> val moduleSources: ArrayList<(File..File?)> defined in org.jetbrains.kotlin.jps.build.KotlinBuilderModuleScriptGenerator.generateModuleDescription[LocalVariableDescriptor]
 
 'KOTLIN_BUILDER_NAME' @ [106:74] ==> @JvmField public final val KOTLIN_BUILDER_NAME: String defined in org.jetbrains.kotlin.jps.build.KotlinBuilder.Companion[PropertyDescriptorImpl]
 
@@ -155,7 +153,7 @@ Inferred types:
 
 'absolutePath' @ [115:31] ==> public final val File.absolutePath: (String..String?)[MyPropertyDescriptor]
 
-'moduleSources' @ [116:21] ==> val moduleSources: ArrayList<File> defined in org.jetbrains.kotlin.jps.build.KotlinBuilderModuleScriptGenerator.generateModuleDescription[LocalVariableDescriptor]
+'moduleSources' @ [116:21] ==> val moduleSources: ArrayList<(File..File?)> defined in org.jetbrains.kotlin.jps.build.KotlinBuilderModuleScriptGenerator.generateModuleDescription[LocalVariableDescriptor]
 
 'findSourceRoots' @ [117:21] ==> private final fun findSourceRoots(context: CompileContext, target: ModuleBuildTarget): List<JvmSourceRoot> defined in org.jetbrains.kotlin.jps.build.KotlinBuilderModuleScriptGenerator[SimpleFunctionDescriptorImpl]
 
@@ -343,7 +341,7 @@ Inferred types:
 
 'getTargetRoots' @ [182:62] ==> @NotNull public abstract fun <R : (BuildRootDescriptor..BuildRootDescriptor?)> getTargetRoots(@NotNull p0: BuildTarget<(JavaSourceRootDescriptor..JavaSourceRootDescriptor?)>, @Nullable p1: CompileContext?): (MutableList<(JavaSourceRootDescriptor..JavaSourceRootDescriptor?)>..List<(JavaSourceRootDescriptor..JavaSourceRootDescriptor?)>) defined in org.jetbrains.jps.builders.BuildRootIndex[JavaMethodDescriptor]
 Inferred types:
-    <R : (BuildRootDescriptor..BuildRootDescriptor?)> -> JavaSourceRootDescriptor
+    <R : (BuildRootDescriptor..BuildRootDescriptor?)> -> (org.jetbrains.jps.builders.java.JavaSourceRootDescriptor..org.jetbrains.jps.builders.java.JavaSourceRootDescriptor?)
 
 'target' @ [182:77] ==> value-parameter target: ModuleBuildTarget defined in org.jetbrains.kotlin.jps.build.KotlinBuilderModuleScriptGenerator.findSourceRoots[ValueParameterDescriptorImpl]
 

@@ -140,7 +140,7 @@ Inferred types:
 Inferred types:
     <T> -> QuickFixWithDelegateFactory
 
-'getPossibleTypeParameterContainers' @ [86:16] ==> public fun getPossibleTypeParameterContainers(startFrom: PsiElement): List<KtTypeParameterListOwner> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createTypeParameter[SimpleFunctionDescriptorImpl]
+'getPossibleTypeParameterContainers' @ [86:16] ==> public fun getPossibleTypeParameterContainers(startFrom: PsiElement): List<KtTypeParameterListOwner> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createTypeParameter in file CreateTypeParameterByUnresolvedRefActionFactory.kt[SimpleFunctionDescriptorImpl]
 
 'ktUserType' @ [86:51] ==> val ktUserType: KtUserType defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createTypeParameter.CreateTypeParameterByUnresolvedRefActionFactory.createFixes[LocalVariableDescriptor]
 
@@ -191,8 +191,6 @@ Inferred types:
 
 'containingDescriptor' @ [100:37] ==> value-parameter containingDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createTypeParameter.createFakeTypeParameterDescriptor[ValueParameterDescriptorImpl]
 
-'Annotations' @ [100:59] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [100:71] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'INVARIANT' @ [100:94] ==> enum entry INVARIANT defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
@@ -210,6 +208,8 @@ Inferred types:
 'firstOrNull' @ [104:36] ==> public inline fun <T> Sequence<PsiElement>.firstOrNull(predicate: (PsiElement) -> Boolean): PsiElement? defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiElement
+
+'isObjectOrNonInnerClass' @ [104:50] ==> public fun isObjectOrNonInnerClass(e: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce in file introduceUtil.kt[SimpleFunctionDescriptorImpl]
 
 'parent' @ [104:76] ==> public final val PsiElement.parent: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 

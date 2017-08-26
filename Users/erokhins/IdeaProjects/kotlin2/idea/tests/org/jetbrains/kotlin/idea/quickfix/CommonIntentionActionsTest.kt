@@ -112,8 +112,6 @@ Inferred types:
 
 'createAddCallableMemberActions' @ [95:50] ==> public open fun createAddCallableMemberActions(info: MethodInsertionInfo): List<IntentionAction> defined in com.intellij.codeInsight.intention.JvmCommonIntentionActionsFactory[DeserializedSimpleFunctionDescriptor]
 
-'MethodInsertionInfo' @ [95:81] ==> public companion object defined in com.intellij.codeInsight.intention.MethodInsertionInfo[FakeCallableDescriptorForObject]
-
 'simpleMethodInfo' @ [95:101] ==> @JvmStatic public final fun simpleMethodInfo(containingClass: UClass, methodName: String, @PsiModifier.ModifierConstant modifier: String, returnType: PsiType, parameters: List<UParameter>): MethodInsertionInfo.Method defined in com.intellij.codeInsight.intention.MethodInsertionInfo.Companion[DeserializedSimpleFunctionDescriptor]
 
 'atCaret' @ [96:17] ==> @Suppress private final fun <T : UElement> atCaret(myFixture: CodeInsightTestFixture): UClass defined in org.jetbrains.kotlin.idea.quickfix.CommonIntentionActionsTest[SimpleFunctionDescriptorImpl]
@@ -157,8 +155,6 @@ Inferred types:
 'codeModifications' @ [114:32] ==> private final val codeModifications: JvmCommonIntentionActionsFactory defined in org.jetbrains.kotlin.idea.quickfix.CommonIntentionActionsTest[PropertyDescriptorImpl]
 
 'createAddCallableMemberActions' @ [114:50] ==> public open fun createAddCallableMemberActions(info: MethodInsertionInfo): List<IntentionAction> defined in com.intellij.codeInsight.intention.JvmCommonIntentionActionsFactory[DeserializedSimpleFunctionDescriptor]
-
-'MethodInsertionInfo' @ [114:81] ==> public companion object defined in com.intellij.codeInsight.intention.MethodInsertionInfo[FakeCallableDescriptorForObject]
 
 'simpleMethodInfo' @ [114:101] ==> @JvmStatic public final fun simpleMethodInfo(containingClass: UClass, methodName: String, @PsiModifier.ModifierConstant modifier: String, returnType: PsiType, parameters: List<UParameter>): MethodInsertionInfo.Method defined in com.intellij.codeInsight.intention.MethodInsertionInfo.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -204,8 +200,6 @@ Inferred types:
 
 'createAddCallableMemberActions' @ [132:50] ==> public open fun createAddCallableMemberActions(info: MethodInsertionInfo): List<IntentionAction> defined in com.intellij.codeInsight.intention.JvmCommonIntentionActionsFactory[DeserializedSimpleFunctionDescriptor]
 
-'MethodInsertionInfo' @ [132:81] ==> public companion object defined in com.intellij.codeInsight.intention.MethodInsertionInfo[FakeCallableDescriptorForObject]
-
 'constructorInfo' @ [132:101] ==> @JvmStatic public final fun constructorInfo(containingClass: UClass, parameters: List<UParameter>): MethodInsertionInfo.Constructor defined in com.intellij.codeInsight.intention.MethodInsertionInfo.Companion[DeserializedSimpleFunctionDescriptor]
 
 'atCaret' @ [133:17] ==> @Suppress private final fun <T : UElement> atCaret(myFixture: CodeInsightTestFixture): UClass defined in org.jetbrains.kotlin.idea.quickfix.CommonIntentionActionsTest[SimpleFunctionDescriptorImpl]
@@ -243,8 +237,6 @@ Inferred types:
 'codeModifications' @ [146:32] ==> private final val codeModifications: JvmCommonIntentionActionsFactory defined in org.jetbrains.kotlin.idea.quickfix.CommonIntentionActionsTest[PropertyDescriptorImpl]
 
 'createAddCallableMemberActions' @ [146:50] ==> public open fun createAddCallableMemberActions(info: MethodInsertionInfo): List<IntentionAction> defined in com.intellij.codeInsight.intention.JvmCommonIntentionActionsFactory[DeserializedSimpleFunctionDescriptor]
-
-'MethodInsertionInfo' @ [146:81] ==> public companion object defined in com.intellij.codeInsight.intention.MethodInsertionInfo[FakeCallableDescriptorForObject]
 
 'constructorInfo' @ [146:101] ==> @JvmStatic public final fun constructorInfo(containingClass: UClass, parameters: List<UParameter>): MethodInsertionInfo.Constructor defined in com.intellij.codeInsight.intention.MethodInsertionInfo.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -284,8 +276,6 @@ Inferred types:
 
 'createAddCallableMemberActions' @ [163:50] ==> public open fun createAddCallableMemberActions(info: MethodInsertionInfo): List<IntentionAction> defined in com.intellij.codeInsight.intention.JvmCommonIntentionActionsFactory[DeserializedSimpleFunctionDescriptor]
 
-'MethodInsertionInfo' @ [163:81] ==> public companion object defined in com.intellij.codeInsight.intention.MethodInsertionInfo[FakeCallableDescriptorForObject]
-
 'constructorInfo' @ [163:101] ==> @JvmStatic public final fun constructorInfo(containingClass: UClass, parameters: List<UParameter>): MethodInsertionInfo.Constructor defined in com.intellij.codeInsight.intention.MethodInsertionInfo.Companion[DeserializedSimpleFunctionDescriptor]
 
 'atCaret' @ [164:17] ==> @Suppress private final fun <T : UElement> atCaret(myFixture: CodeInsightTestFixture): UClass defined in org.jetbrains.kotlin.idea.quickfix.CommonIntentionActionsTest[SimpleFunctionDescriptorImpl]
@@ -323,8 +313,6 @@ Inferred types:
 'codeModifications' @ [177:32] ==> private final val codeModifications: JvmCommonIntentionActionsFactory defined in org.jetbrains.kotlin.idea.quickfix.CommonIntentionActionsTest[PropertyDescriptorImpl]
 
 'createAddCallableMemberActions' @ [177:50] ==> public open fun createAddCallableMemberActions(info: MethodInsertionInfo): List<IntentionAction> defined in com.intellij.codeInsight.intention.JvmCommonIntentionActionsFactory[DeserializedSimpleFunctionDescriptor]
-
-'MethodInsertionInfo' @ [177:81] ==> public companion object defined in com.intellij.codeInsight.intention.MethodInsertionInfo[FakeCallableDescriptorForObject]
 
 'constructorInfo' @ [177:101] ==> @JvmStatic public final fun constructorInfo(containingClass: UClass, parameters: List<UParameter>): MethodInsertionInfo.Constructor defined in com.intellij.codeInsight.intention.MethodInsertionInfo.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -566,7 +554,9 @@ Inferred types:
 
 'text' @ [256:104] ==> public final val IntentionAction.text: String[MyPropertyDescriptor]
 
-'JvmCommonIntentionActionsFactory' @ [259:17] ==> public companion object : LanguageExtension<JvmCommonIntentionActionsFactory> defined in com.intellij.codeInsight.intention.JvmCommonIntentionActionsFactory[FakeCallableDescriptorForObject]
+'!!' @ [259:17] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: JvmCommonIntentionActionsFactory?): JvmCommonIntentionActionsFactory[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> JvmCommonIntentionActionsFactory
 
 'forLanguage' @ [259:50] ==> @JvmStatic public open fun forLanguage(l: Language): JvmCommonIntentionActionsFactory? defined in com.intellij.codeInsight.intention.JvmCommonIntentionActionsFactory.Companion[DeserializedSimpleFunctionDescriptor]
 

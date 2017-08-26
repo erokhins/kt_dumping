@@ -67,7 +67,7 @@ Inferred types:
 
 'LinkedHashSet' @ [68:99] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (C..C?)>..Collection<(C..C?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> C
+    <E : (Any..Any?)> -> (C..C?)
 
 'candidates' @ [68:113] ==> value-parameter candidates: Collection<C> defined in org.jetbrains.kotlin.resolve.calls.results.OverloadingConflictResolver.chooseMaximallySpecificCandidates[ValueParameterDescriptorImpl]
 
@@ -79,7 +79,7 @@ Inferred types:
 
 'filterOverrides' @ [75:42] ==> @NotNull public open fun <D : (Any..Any?)> filterOverrides(@NotNull p0: (MutableSet<(C..C?)>..Set<(C..C?)>), @NotNull p1: ((C..C?), (C..C?)) -> (Pair<(CallableDescriptor..CallableDescriptor?), (CallableDescriptor..CallableDescriptor?)>..Pair<(CallableDescriptor..CallableDescriptor?), (CallableDescriptor..CallableDescriptor?)>?)): (MutableSet<(C..C?)>..Set<(C..C?)>) defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
 Inferred types:
-    <D : (Any..Any?)> -> C
+    <D : (Any..Any?)> -> (C..C?)
 
 'noEquivalentCalls' @ [75:58] ==> val noEquivalentCalls: Set<C> defined in org.jetbrains.kotlin.resolve.calls.results.OverloadingConflictResolver.chooseMaximallySpecificCandidates[LocalVariableDescriptor]
 
@@ -180,14 +180,14 @@ Inferred types:
 
 'candidates' @ [116:36] ==> value-parameter candidates: Collection<C> defined in org.jetbrains.kotlin.resolve.calls.results.OverloadingConflictResolver.filterOutEquivalentCalls[ValueParameterDescriptorImpl]
 
-'sortedBy' @ [116:47] ==> public inline fun <T, R : Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>> Iterable<C>.sortedBy(crossinline selector: (C) -> {Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}?): List<C> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'sortedBy' @ [116:47] ==> public inline fun <T, R : Comparable<Int>> Iterable<C>.sortedBy(crossinline selector: (C) -> Int?): List<C> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> C
-    <R : Comparable<R>> -> {Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}
+    <R : Comparable<R>> -> Int
 
-'if (isFromSources(it.resultingDescriptor)) 0 else 1' @ [116:58] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}, elseBranch: {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}): {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}[SimpleFunctionDescriptorImpl]
+'if (isFromSources(it.resultingDescriptor)) 0 else 1' @ [116:58] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Int, elseBranch: Int): Int[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Int
 
 'invoke' @ [116:62] ==> public abstract operator fun invoke(p1: CallableDescriptor): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -881,7 +881,7 @@ Inferred types:
 
 'THashSet' @ [365:13] ==> public constructor THashSet<E : (Any..Any?)>(p0: Int, p1: (TObjectHashingStrategy<(C..C?)>..TObjectHashingStrategy<(C..C?)>?)) defined in gnu.trove.THashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> C
+    <E : (Any..Any?)> -> (C..C?)
 
 'candidates' @ [365:22] ==> value-parameter candidates: Collection<C> defined in org.jetbrains.kotlin.resolve.calls.results.OverloadingConflictResolver.uniquifyCandidatesSet[ValueParameterDescriptorImpl]
 
@@ -889,9 +889,9 @@ Inferred types:
 
 'resolvedCallHashingStrategy' @ [365:39] ==> private final val resolvedCallHashingStrategy: <no name provided><C> defined in org.jetbrains.kotlin.resolve.calls.results.OverloadingConflictResolver[PropertyDescriptorImpl]
 
-'apply' @ [365:68] ==> @InlineOnly public inline fun <T> THashSet<C>.apply(block: THashSet<C>.() -> Unit): THashSet<C> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [365:68] ==> @InlineOnly public inline fun <T> THashSet<(C..C?)>.apply(block: THashSet<(C..C?)>.() -> Unit): THashSet<(C..C?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> THashSet<C>
+    <T> -> THashSet<(C..C?)>
 
 'addAll' @ [365:76] ==> public open fun addAll(elements: Collection<(C..C?)>): Boolean defined in gnu.trove.THashSet[JavaMethodDescriptor]
 
@@ -899,7 +899,7 @@ Inferred types:
 
 'THashSet' @ [368:13] ==> public constructor THashSet<E : (Any..Any?)>(p0: Int, p1: (TObjectHashingStrategy<(C..C?)>..TObjectHashingStrategy<(C..C?)>?)) defined in gnu.trove.THashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> C
+    <E : (Any..Any?)> -> (C..C?)
 
 'expectedSize' @ [368:22] ==> value-parameter expectedSize: Int defined in org.jetbrains.kotlin.resolve.calls.results.OverloadingConflictResolver.newResolvedCallSet[ValueParameterDescriptorImpl]
 

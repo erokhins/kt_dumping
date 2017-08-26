@@ -24,7 +24,7 @@ Inferred types:
 
 'emptyList' @ [37:65] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(Instruction..Instruction?)>..List<(Instruction..Instruction?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Instruction
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.pseudocode.instructions.Instruction..org.jetbrains.kotlin.cfg.pseudocode.instructions.Instruction?)
 
 'updateCopyInfo' @ [39:31] ==> protected final fun updateCopyInfo(instruction: InstructionImpl): Instruction defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.InstructionImpl[SimpleFunctionDescriptorImpl]
 
@@ -82,5 +82,5 @@ Inferred types:
 
 'emptyList' @ [63:63] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(PseudoValue..PseudoValue?)>..List<(PseudoValue..PseudoValue?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PseudoValue
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.pseudocode.PseudoValue..org.jetbrains.kotlin.cfg.pseudocode.PseudoValue?)
 

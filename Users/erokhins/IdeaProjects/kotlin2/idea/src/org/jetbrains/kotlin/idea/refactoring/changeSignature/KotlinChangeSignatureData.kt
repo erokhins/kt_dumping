@@ -67,8 +67,6 @@ Inferred types:
 
 'text' @ [59:74] ==> public final val KtTypeReference.text: (String..String?)[MyPropertyDescriptor]
 
-'IdeDescriptorRenderers' @ [60:48] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE_SHORT_NAMES_IN_TYPES' @ [60:71] ==> @field:JvmField public final val SOURCE_CODE_SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderType' @ [60:104] ==> public abstract fun renderType(type: KotlinType): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -111,7 +109,7 @@ Inferred types:
 
 'type' @ [73:71] ==> public final val ReceiverParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'suggestReceiverNames' @ [74:28] ==> public fun suggestReceiverNames(project: Project, descriptor: CallableDescriptor): List<String> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'suggestReceiverNames' @ [74:28] ==> public fun suggestReceiverNames(project: Project, descriptor: CallableDescriptor): List<String> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file changeSignatureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'baseDeclaration' @ [74:49] ==> public open val baseDeclaration: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureData[PropertyDescriptorImpl]
 
@@ -133,8 +131,6 @@ Inferred types:
 
 'text' @ [75:100] ==> public final val KtTypeReference.text: (String..String?)[MyPropertyDescriptor]
 
-'IdeDescriptorRenderers' @ [76:35] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE_SHORT_NAMES_IN_TYPES' @ [76:58] ==> @field:JvmField public final val SOURCE_CODE_SHORT_NAMES_IN_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderType' @ [76:91] ==> public abstract fun renderType(type: KotlinType): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -155,9 +151,9 @@ Inferred types:
 
 'this' @ [83:17] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureData[LazyClassReceiverParameterDescriptor]
 
-'lazy' @ [85:93] ==> public fun <T> lazy(initializer: () -> List<KotlinCallableDefinitionUsage<PsiElement>>): Lazy<List<KotlinCallableDefinitionUsage<PsiElement>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [85:93] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KotlinCallableDefinitionUsage<PsiElement>>
+    <T> -> T
 
 'descriptorsForSignatureChange' @ [86:9] ==> private final val descriptorsForSignatureChange: Collection<CallableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureData[PropertyDescriptorImpl]
 
@@ -192,9 +188,9 @@ Inferred types:
 
 'it' @ [89:58] ==> value-parameter it: CallableDescriptor defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureData.primaryCallables.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'lazy' @ [93:88] ==> public fun <T> lazy(initializer: () -> KotlinCallableDefinitionUsage<PsiElement>): Lazy<KotlinCallableDefinitionUsage<PsiElement>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [93:88] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinCallableDefinitionUsage<PsiElement>
+    <T> -> T
 
 'primaryCallables' @ [94:9] ==> public open val primaryCallables: Collection<KotlinCallableDefinitionUsage<PsiElement>> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureData[PropertyDescriptorImpl]
 
@@ -208,9 +204,9 @@ Inferred types:
 
 'baseDeclaration' @ [94:52] ==> public open val baseDeclaration: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureData[PropertyDescriptorImpl]
 
-'lazy' @ [97:62] ==> public fun <T> lazy(initializer: () -> List<UsageInfo>): Lazy<List<UsageInfo>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [97:62] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UsageInfo>
+    <T> -> T
 
 'primaryCallables' @ [98:9] ==> public open val primaryCallables: Collection<KotlinCallableDefinitionUsage<PsiElement>> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureData[PropertyDescriptorImpl]
 
@@ -236,11 +232,11 @@ Inferred types:
 
 'primaryDeclaration' @ [101:17] ==> val primaryDeclaration: KtDeclaration defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureData.affectedCallables.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'isHeaderOrHeaderClassMember' @ [101:36] ==> internal fun KtDeclaration.isHeaderOrHeaderClassMember(): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'isHeaderOrHeaderClassMember' @ [101:36] ==> internal fun KtDeclaration.isHeaderOrHeaderClassMember(): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers in file DeclaredHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'primaryDeclaration' @ [102:34] ==> val primaryDeclaration: KtDeclaration defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureData.affectedCallables.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'headerImplementations' @ [102:53] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerImplementations' @ [102:53] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'mapNotNull' @ [102:77] ==> public inline fun <T, R : Any> Iterable<KtDeclaration>.mapNotNull(transform: (KtDeclaration) -> KotlinCallableDefinitionUsage<PsiElement>?): List<KotlinCallableDefinitionUsage<PsiElement>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -311,9 +307,9 @@ Inferred types:
                                 val overridingDescriptor = overridingDeclaration.resolveToDescriptor() as CallableDescriptor
                                 KotlinCallableDefinitionUsage<PsiElement>(overridingDeclaration, overridingDescriptor, primaryFunction, null)
                             }
-                            else OverriderUsageInfo(overridingMethod, baseMethod, true, true, true)' @ [119:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: UsageInfo, elseBranch: UsageInfo): UsageInfo[SimpleFunctionDescriptorImpl]
+                            else OverriderUsageInfo(overridingMethod, baseMethod, true, true, true)' @ [119:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: UsageInfo?, elseBranch: UsageInfo?): UsageInfo?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> UsageInfo
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> UsageInfo?
 
 'overridingMethod' @ [119:33] ==> value-parameter overridingMethod: (PsiMethod..PsiMethod?) defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.KotlinChangeSignatureData.affectedCallables.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 

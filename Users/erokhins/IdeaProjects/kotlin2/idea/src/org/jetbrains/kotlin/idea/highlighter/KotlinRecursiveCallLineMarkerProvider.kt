@@ -150,7 +150,7 @@ Inferred types:
 
 'candidateDescriptor' @ [96:26] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'original' @ [96:46] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 
@@ -194,7 +194,7 @@ Inferred types:
 
 'dispatchReceiver' @ [110:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'LineMarkerInfo<KtElement>' @ [115:15] ==> public constructor LineMarkerInfo<T : (PsiElement..PsiElement?)>(@NotNull p0: KtElement, @NotNull p1: TextRange, p2: (Icon..Icon?), p3: Int, @Nullable p4: (((KtElement..KtElement?)) -> (String..String?))?, @Nullable p5: (((MouseEvent..MouseEvent?), (KtElement..KtElement?)) -> Unit)?, @NotNull p6: GutterIconRenderer.Alignment) defined in com.intellij.codeInsight.daemon.LineMarkerInfo[SamAdapterClassConstructorDescriptor]
 Inferred types:

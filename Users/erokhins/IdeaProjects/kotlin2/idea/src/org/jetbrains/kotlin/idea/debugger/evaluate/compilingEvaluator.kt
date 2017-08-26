@@ -1,4 +1,4 @@
-'loadClasses' @ [27:16] ==> public fun loadClasses(evaluationContext: EvaluationContextImpl, classes: Collection<ClassToLoad>): ClassLoaderHandler? defined in org.jetbrains.kotlin.idea.debugger.evaluate.compilingEvaluator[SimpleFunctionDescriptorImpl]
+'loadClasses' @ [27:16] ==> public fun loadClasses(evaluationContext: EvaluationContextImpl, classes: Collection<ClassToLoad>): ClassLoaderHandler? defined in org.jetbrains.kotlin.idea.debugger.evaluate.compilingEvaluator in file compilingEvaluator.kt[SimpleFunctionDescriptorImpl]
 
 'evaluationContext' @ [27:28] ==> value-parameter evaluationContext: EvaluationContextImpl defined in org.jetbrains.kotlin.idea.debugger.evaluate.compilingEvaluator.loadClassesSafely[ValueParameterDescriptorImpl]
 

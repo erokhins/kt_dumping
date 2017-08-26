@@ -2,7 +2,7 @@
 
 'getService' @ [82:35] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(LightClassGenerationSupport..LightClassGenerationSupport?)>): (LightClassGenerationSupport..LightClassGenerationSupport?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LightClassGenerationSupport
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.asJava.LightClassGenerationSupport..org.jetbrains.kotlin.asJava.LightClassGenerationSupport?)
 
 'project' @ [82:46] ==> value-parameter project: Project defined in org.jetbrains.kotlin.asJava.LightClassGenerationSupport.Companion.getInstance[ValueParameterDescriptorImpl]
 

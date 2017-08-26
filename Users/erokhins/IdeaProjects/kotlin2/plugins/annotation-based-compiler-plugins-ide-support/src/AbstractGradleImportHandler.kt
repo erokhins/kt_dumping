@@ -46,7 +46,7 @@ Inferred types:
 
 'data' @ [60:27] ==> public final val <T : (Any..Any?)> DataNode<out (Any..Any?)>.data: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'data' @ [61:13] ==> val data: TaskData defined in org.jetbrains.kotlin.annotation.plugin.ide.AbstractGradleImportHandler.getPluginSetupByModule.<anonymous>[LocalVariableDescriptor]
 
@@ -56,7 +56,7 @@ Inferred types:
 
 'data' @ [62:12] ==> public final val <T : (Any..Any?)> DataNode<out (Any..Any?)>.data: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'dataStorageTaskData' @ [64:42] ==> val dataStorageTaskData: TaskData defined in org.jetbrains.kotlin.annotation.plugin.ide.AbstractGradleImportHandler.getPluginSetupByModule[LocalVariableDescriptor]
 
@@ -117,7 +117,7 @@ Inferred types:
 
 'findParent' @ [78:35] ==> @Nullable public open fun <T : (Any..Any?)> findParent(@NotNull p0: DataNode<*>, @NotNull p1: Key<(ModuleData..ModuleData?)>): DataNode<(ModuleData..ModuleData?)>? defined in com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleData
+    <T : (Any..Any?)> -> (com.intellij.openapi.externalSystem.model.project.ModuleData..com.intellij.openapi.externalSystem.model.project.ModuleData?)
 
 'sourceSetNode' @ [78:46] ==> value-parameter sourceSetNode: DataNode<GradleSourceSetData> defined in org.jetbrains.kotlin.annotation.plugin.ide.AbstractGradleImportHandler.getPluginSetupBySourceSet[ValueParameterDescriptorImpl]
 

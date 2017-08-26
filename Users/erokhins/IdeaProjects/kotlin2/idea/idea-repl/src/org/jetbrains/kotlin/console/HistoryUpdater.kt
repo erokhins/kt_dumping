@@ -1,6 +1,6 @@
-'lazy' @ [28:53] ==> public fun <T> lazy(initializer: () -> LanguageConsoleImpl): Lazy<LanguageConsoleImpl> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [28:53] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LanguageConsoleImpl
+    <T> -> T
 
 'runner' @ [28:60] ==> private final val runner: KotlinConsoleRunner defined in org.jetbrains.kotlin.console.HistoryUpdater[PropertyDescriptorImpl]
 
@@ -66,11 +66,7 @@ Inferred types:
 
 'isReadLineMode' @ [42:44] ==> public final var isReadLineMode: Boolean defined in org.jetbrains.kotlin.console.KotlinConsoleRunner[PropertyDescriptorImpl]
 
-'ReplIcons' @ [42:60] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
-
 'READLINE_MARKER' @ [42:70] ==> public final val READLINE_MARKER: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
-
-'ReplIcons' @ [42:91] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
 
 'COMMAND_MARKER' @ [42:101] ==> public final val COMMAND_MARKER: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 
@@ -184,8 +180,6 @@ Inferred types:
 'addGutterIndicator' @ [71:24] ==> public final fun addGutterIndicator(editor: EditorEx, iconWithTooltip: IconWithTooltip): RangeHighlighter defined in org.jetbrains.kotlin.console.KotlinConsoleRunner[SimpleFunctionDescriptorImpl]
 
 'historyEditor' @ [71:43] ==> value-parameter historyEditor: EditorEx defined in org.jetbrains.kotlin.console.HistoryUpdater.addLineBreakIfNeeded[ValueParameterDescriptorImpl]
-
-'ReplIcons' @ [71:58] ==> public object ReplIcons defined in org.jetbrains.kotlin.console.gutter in file ReplIcons.kt[FakeCallableDescriptorForObject]
 
 'HISTORY_INDICATOR' @ [71:68] ==> public final val HISTORY_INDICATOR: IconWithTooltip defined in org.jetbrains.kotlin.console.gutter.ReplIcons[PropertyDescriptorImpl]
 

@@ -91,8 +91,6 @@ Inferred types:
 
 'appendChildRange' @ [55:21] ==> public final fun appendChildRange(range: PsiChildRange): BuilderByPattern<KtDestructuringDeclaration> defined in org.jetbrains.kotlin.psi.BuilderByPattern[DeserializedSimpleFunctionDescriptor]
 
-'PsiChildRange' @ [55:38] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
-
 'singleElement' @ [55:52] ==> public final fun singleElement(element: PsiElement): PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[DeserializedSimpleFunctionDescriptor]
 
 'currentEntries' @ [55:66] ==> val currentEntries: (MutableList<(KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?)>..List<(KtDestructuringDeclarationEntry..KtDestructuringDeclarationEntry?)>) defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinComponentUsageInDestructuring.processUsage[LocalVariableDescriptor]
@@ -100,8 +98,6 @@ Inferred types:
 'oldIndex' @ [55:81] ==> val oldIndex: Int defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.usages.KotlinComponentUsageInDestructuring.processUsage.<anonymous>[LocalVariableDescriptor]
 
 'appendFixedText' @ [58:21] ==> public final fun appendFixedText(text: String): BuilderByPattern<KtDestructuringDeclaration> defined in org.jetbrains.kotlin.psi.BuilderByPattern[DeserializedSimpleFunctionDescriptor]
-
-'KotlinNameSuggester' @ [58:37] ==> public object KotlinNameSuggester defined in org.jetbrains.kotlin.idea.core[FakeCallableDescriptorForObject]
 
 'suggestNameByName' @ [58:57] ==> public final fun suggestNameByName(name: String, validator: (String) -> Boolean): String defined in org.jetbrains.kotlin.idea.core.KotlinNameSuggester[DeserializedSimpleFunctionDescriptor]
 

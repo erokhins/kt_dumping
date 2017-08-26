@@ -169,11 +169,11 @@ Inferred types:
 
 'initialSelectedChannel' @ [85:9] ==> private final val initialSelectedChannel: Int defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog[PropertyDescriptorImpl]
 
-'EAP_1_2' @ [85:34] ==> enum entry EAP_1_2 defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog.EAPChannels[FakeCallableDescriptorForObject]
+'?:' @ [85:34] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Int?, right: Int?): Int?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Int?
 
 'indexIfAvailable' @ [85:42] ==> local final fun ConfigurePluginUpdatesDialog.EAPChannels.indexIfAvailable(): Int? defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog.<init>[SimpleFunctionDescriptorImpl]
-
-'EAP_1_1' @ [86:34] ==> enum entry EAP_1_1 defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog.EAPChannels[FakeCallableDescriptorForObject]
 
 'indexIfAvailable' @ [86:42] ==> local final fun ConfigurePluginUpdatesDialog.EAPChannels.indexIfAvailable(): Int? defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog.<init>[SimpleFunctionDescriptorImpl]
 
@@ -248,8 +248,6 @@ Inferred types:
 
 'add' @ [107:38] ==> public abstract fun add(element: (String..String?)): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'EAP_1_1' @ [107:42] ==> enum entry EAP_1_1 defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog.EAPChannels[FakeCallableDescriptorForObject]
-
 'url' @ [107:50] ==> public final val url: String defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog.EAPChannels[PropertyDescriptorImpl]
 
 'EAP_1_2' @ [108:13] ==> enum entry EAP_1_2 defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog.EAPChannels[FakeCallableDescriptorForObject]
@@ -259,8 +257,6 @@ Inferred types:
 'hosts' @ [108:32] ==> val hosts: (MutableList<(String..String?)>..List<(String..String?)>) defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog.saveSelectedChannel[LocalVariableDescriptor]
 
 'add' @ [108:38] ==> public abstract fun add(element: (String..String?)): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
-
-'EAP_1_2' @ [108:42] ==> enum entry EAP_1_2 defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog.EAPChannels[FakeCallableDescriptorForObject]
 
 'url' @ [108:50] ==> public final val url: String defined in org.jetbrains.kotlin.idea.actions.ConfigurePluginUpdatesDialog.EAPChannels[PropertyDescriptorImpl]
 

@@ -1,6 +1,6 @@
 'scope' @ [30:26] ==> value-parameter scope: JsScope defined in org.jetbrains.kotlin.js.parser.parse[ValueParameterDescriptorImpl]
 
-'parse' @ [31:16] ==> private inline fun parse(code: String, startPosition: CodePosition, offset: Int, reporter: ErrorReporter, insideFunction: Boolean, parseAction: Parser.(TokenStream) -> Any): Node defined in org.jetbrains.kotlin.js.parser[SimpleFunctionDescriptorImpl]
+'parse' @ [31:16] ==> private inline fun parse(code: String, startPosition: CodePosition, offset: Int, reporter: ErrorReporter, insideFunction: Boolean, parseAction: Parser.(TokenStream) -> Any): Node defined in org.jetbrains.kotlin.js.parser in file parserUtils.kt[SimpleFunctionDescriptorImpl]
 
 'code' @ [31:22] ==> value-parameter code: String defined in org.jetbrains.kotlin.js.parser.parse[ValueParameterDescriptorImpl]
 
@@ -11,6 +11,8 @@
 'insideFunction' @ [31:61] ==> val insideFunction: Boolean defined in org.jetbrains.kotlin.js.parser.parse[LocalVariableDescriptor]
 
 'Parser' @ [31:77] ==> public constructor Parser(nf: (IRFactory..IRFactory?), insideFunction: Boolean) defined in com.google.gwt.dev.js.rhino.Parser[JavaClassConstructorDescriptor]
+
+'parse' @ [31:85] ==> public open fun parse(ts: (TokenStream..TokenStream?)): (Node..Node?) defined in com.google.gwt.dev.js.rhino.Parser[JavaMethodDescriptor]
 
 'node' @ [32:12] ==> val node: Node defined in org.jetbrains.kotlin.js.parser.parse[LocalVariableDescriptor]
 
@@ -26,7 +28,7 @@ Inferred types:
 
 'it' @ [33:23] ==> value-parameter it: Node defined in org.jetbrains.kotlin.js.parser.parse.<anonymous>[ValueParameterDescriptorImpl]
 
-'parse' @ [38:9] ==> private inline fun parse(code: String, startPosition: CodePosition, offset: Int, reporter: ErrorReporter, insideFunction: Boolean, parseAction: Parser.(TokenStream) -> Any): Node defined in org.jetbrains.kotlin.js.parser[SimpleFunctionDescriptorImpl]
+'parse' @ [38:9] ==> private inline fun parse(code: String, startPosition: CodePosition, offset: Int, reporter: ErrorReporter, insideFunction: Boolean, parseAction: Parser.(TokenStream) -> Any): Node defined in org.jetbrains.kotlin.js.parser in file parserUtils.kt[SimpleFunctionDescriptorImpl]
 
 'code' @ [38:15] ==> value-parameter code: String defined in org.jetbrains.kotlin.js.parser.parseFunction[ValueParameterDescriptorImpl]
 
@@ -53,6 +55,8 @@ Inferred types:
 'fileName' @ [41:26] ==> value-parameter fileName: String defined in org.jetbrains.kotlin.js.parser.parseFunction[ValueParameterDescriptorImpl]
 
 'JsAstMapper' @ [41:36] ==> public constructor JsAstMapper(@NotNull scope: JsScope, @NotNull fileName: String) defined in com.google.gwt.dev.js.JsAstMapper[JavaClassConstructorDescriptor]
+
+'mapFunction' @ [41:49] ==> public open fun mapFunction(fnNode: (Node..Node?)): (JsFunction..JsFunction?) defined in com.google.gwt.dev.js.JsAstMapper[JavaMethodDescriptor]
 
 'when (arg) {
             is ParserEvents.OnFunctionParsingStart -> {

@@ -14,7 +14,7 @@ Inferred types:
 
 'accept' @ [26:81] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (T..T?)): (T..T?) defined in org.jetbrains.kotlin.js.inline.util.rewriters.NameReplacingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> T
+    <T : (JsNode..JsNode?)> -> (T..T?)
 
 'node' @ [26:88] ==> value-parameter node: T defined in org.jetbrains.kotlin.js.inline.util.replaceNames[ValueParameterDescriptorImpl]
 
@@ -24,7 +24,7 @@ Inferred types:
 
 'accept' @ [30:39] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (T..T?)): (T..T?) defined in org.jetbrains.kotlin.js.inline.util.rewriters.ThisReplacingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> T
+    <T : (JsNode..JsNode?)> -> (T..T?)
 
 'node' @ [30:46] ==> value-parameter node: T defined in org.jetbrains.kotlin.js.inline.util.replaceThisReference[ValueParameterDescriptorImpl]
 

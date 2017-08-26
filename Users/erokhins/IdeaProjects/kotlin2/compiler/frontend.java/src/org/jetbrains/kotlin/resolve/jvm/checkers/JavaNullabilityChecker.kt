@@ -6,8 +6,6 @@
 
 'expectedType' @ [46:19] ==> @NotNull public final val expectedType: KotlinType defined in org.jetbrains.kotlin.resolve.calls.context.ResolutionContext[JavaPropertyDescriptor]
 
-'DataFlowValueFactory' @ [47:17] ==> public object DataFlowValueFactory defined in org.jetbrains.kotlin.resolve.calls.smartcasts[FakeCallableDescriptorForObject]
-
 'createDataFlowValue' @ [47:38] ==> @JvmStatic public final fun createDataFlowValue(expression: KtExpression, type: KotlinType, resolutionContext: ResolutionContext<*>): DataFlowValue defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory[DeserializedSimpleFunctionDescriptor]
 
 'expression' @ [47:58] ==> value-parameter expression: KtExpression defined in org.jetbrains.kotlin.resolve.jvm.checkers.JavaNullabilityChecker.checkType[ValueParameterDescriptorImpl]
@@ -151,7 +149,9 @@ Inferred types:
 
 'canBeNull' @ [62:103] ==> public open fun canBeNull(): Boolean defined in org.jetbrains.kotlin.resolve.calls.smartcasts.Nullability[JavaMethodDescriptor]
 
-'WhenChecker' @ [66:51] ==> public object WhenChecker defined in org.jetbrains.kotlin.cfg[FakeCallableDescriptorForObject]
+'?:' @ [66:51] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ClassDescriptor?, right: ClassDescriptor): ClassDescriptor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ClassDescriptor
 
 'getClassDescriptorOfTypeIfEnum' @ [66:63] ==> @JvmStatic public final fun getClassDescriptorOfTypeIfEnum(type: KotlinType?): ClassDescriptor? defined in org.jetbrains.kotlin.cfg.WhenChecker[DeserializedSimpleFunctionDescriptor]
 
@@ -220,8 +220,6 @@ Inferred types:
 'doIfNotNull' @ [79:21] ==> private final fun <T : Any> doIfNotNull(dataFlowValue: DataFlowValue, c: ResolutionContext<*>, body: () -> Unit): Unit? defined in org.jetbrains.kotlin.resolve.jvm.checkers.JavaNullabilityChecker[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : Any> -> Unit
-
-'DataFlowValueFactory' @ [80:29] ==> public object DataFlowValueFactory defined in org.jetbrains.kotlin.resolve.calls.smartcasts[FakeCallableDescriptorForObject]
 
 'createDataFlowValue' @ [80:50] ==> @JvmStatic public final fun createDataFlowValue(expression: KtExpression, type: KotlinType, resolutionContext: ResolutionContext<*>): DataFlowValue defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValueFactory[DeserializedSimpleFunctionDescriptor]
 

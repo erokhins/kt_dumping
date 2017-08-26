@@ -79,7 +79,7 @@ Inferred types:
 
 'it' @ [59:112] ==> value-parameter it: Module defined in org.jetbrains.kotlin.idea.inspections.gradle.getResolvedKotlinGradleVersion.<anonymous>[ValueParameterDescriptorImpl]
 
-'findGradleProjectStructure' @ [62:32] ==> public fun findGradleProjectStructure(module: Module): DataNode<ProjectData>? defined in org.jetbrains.kotlin.idea.inspections.gradle[SimpleFunctionDescriptorImpl]
+'findGradleProjectStructure' @ [62:32] ==> public fun findGradleProjectStructure(module: Module): DataNode<ProjectData>? defined in org.jetbrains.kotlin.idea.inspections.gradle in file KotlinGradleInspectionVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'module' @ [62:59] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.inspections.gradle.getResolvedKotlinGradleVersion[ValueParameterDescriptorImpl]
 
@@ -215,7 +215,7 @@ Inferred types:
 
 'findAll' @ [106:39] ==> @NotNull public open fun <T : (Any..Any?)> findAll(@NotNull p0: DataNode<*>, @NotNull p1: Key<(T..T?)>): (MutableCollection<(DataNode<(T..T?)>..DataNode<(T..T?)>?)>..Collection<(DataNode<(T..T?)>..DataNode<(T..T?)>?)>) defined in com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'this' @ [106:47] ==> <this> defined in org.jetbrains.kotlin.idea.inspections.gradle.findAll[ReceiverParameterDescriptorImpl]
 
@@ -232,7 +232,7 @@ Inferred types:
 
 'getData' @ [108:23] ==> @Nullable public open fun <T : (Any..Any?)> getData(@NotNull p0: Key<(T..T?)>): T? defined in com.intellij.openapi.externalSystem.model.DataNode[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [108:31] ==> value-parameter key: Key<T> defined in org.jetbrains.kotlin.idea.inspections.gradle.findAll[ValueParameterDescriptorImpl]
 
@@ -259,7 +259,7 @@ Inferred types:
     <T> -> Module
     <R> -> DataNode<ProjectData>?
 
-'findGradleProjectStructure' @ [114:81] ==> public fun findGradleProjectStructure(module: Module): DataNode<ProjectData>? defined in org.jetbrains.kotlin.idea.inspections.gradle[SimpleFunctionDescriptorImpl]
+'findGradleProjectStructure' @ [114:81] ==> public fun findGradleProjectStructure(module: Module): DataNode<ProjectData>? defined in org.jetbrains.kotlin.idea.inspections.gradle in file KotlinGradleInspectionVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [114:108] ==> value-parameter it: Module defined in org.jetbrains.kotlin.idea.inspections.gradle.findGradleProjectStructure.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -55,7 +55,7 @@ Inferred types:
 
 'generateTestDataForReservedWords' @ [43:5] ==> public fun generateTestDataForReservedWords(): Unit defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[SimpleFunctionDescriptorImpl]
 
-'generate' @ [49:5] ==> public fun generate(testDataDirPath: String, f: TestDataBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'generate' @ [49:5] ==> public fun generate(testDataDirPath: String, f: TestDataBuilder.() -> Unit): Unit defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[SimpleFunctionDescriptorImpl]
 
 'TEST_DATA_DIR_FOR_RESERVED_WORDS' @ [49:14] ==> public val TEST_DATA_DIR_FOR_RESERVED_WORDS: String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[PropertyDescriptorImpl]
 
@@ -83,7 +83,7 @@ Inferred types:
 
 'KEYWORD_MARKER' @ [64:39] ==> public val KEYWORD_MARKER: String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[PropertyDescriptorImpl]
 
-'testNotRenamed' @ [64:68] ==> public fun testNotRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testNotRenamed' @ [64:68] ==> public fun testNotRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[SimpleFunctionDescriptorImpl]
 
 'KEYWORD_MARKER' @ [64:85] ==> public val KEYWORD_MARKER: String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[PropertyDescriptorImpl]
 
@@ -181,7 +181,7 @@ Inferred types:
 
 'KEYWORD_MARKER' @ [209:6] ==> public val KEYWORD_MARKER: String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[PropertyDescriptorImpl]
 
-'testNotRenamed' @ [213:7] ==> public fun testNotRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testNotRenamed' @ [213:7] ==> public fun testNotRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[SimpleFunctionDescriptorImpl]
 
 'KEYWORD_MARKER' @ [213:28] ==> public val KEYWORD_MARKER: String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[PropertyDescriptorImpl]
 
@@ -394,7 +394,7 @@ Inferred types:
 
 'cases' @ [291:32] ==> public final val cases: List<Case> defined in org.jetbrains.kotlin.generators.tests.Suite[PropertyDescriptorImpl]
 
-'nextKeywordPortion' @ [295:33] ==> public fun nextKeywordPortion(): List<String> defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'nextKeywordPortion' @ [295:33] ==> public fun nextKeywordPortion(): List<String> defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[SimpleFunctionDescriptorImpl]
 
 'case' @ [297:25] ==> val case: Case defined in org.jetbrains.kotlin.generators.tests.TestDataBuilder.generate[LocalVariableDescriptor]
 
@@ -595,15 +595,15 @@ Inferred types:
 
 'reference' @ [359:101] ==> value-parameter reference: String = ... defined in org.jetbrains.kotlin.generators.tests.testNotRenamed[ValueParameterDescriptorImpl]
 
-'testRenamed' @ [361:25] ==> public fun testRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testRenamed' @ [361:25] ==> public fun testRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[SimpleFunctionDescriptorImpl]
 
-'testRenamed' @ [362:24] ==> public fun testRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testRenamed' @ [362:24] ==> public fun testRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[SimpleFunctionDescriptorImpl]
 
 'KEYWORD_MARKER' @ [362:38] ==> public val KEYWORD_MARKER: String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[PropertyDescriptorImpl]
 
-'testNotRenamed' @ [364:28] ==> public fun testNotRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testNotRenamed' @ [364:28] ==> public fun testNotRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[SimpleFunctionDescriptorImpl]
 
-'testNotRenamed' @ [365:27] ==> public fun testNotRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests[SimpleFunctionDescriptorImpl]
+'testNotRenamed' @ [365:27] ==> public fun testNotRenamed(reference: String = ...): String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[SimpleFunctionDescriptorImpl]
 
 'KEYWORD_MARKER' @ [365:44] ==> public val KEYWORD_MARKER: String defined in org.jetbrains.kotlin.generators.tests in file generateTestDataForReservedWords.kt[PropertyDescriptorImpl]
 

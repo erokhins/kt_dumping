@@ -2,9 +2,9 @@
 
 'isAllUnder' @ [34:21] ==> public final val KtImportDirective.isAllUnder: Boolean[MyPropertyDescriptor]
 
-'lz' @ [36:30] ==> internal fun <T> lz(initializer: () -> KotlinUImportStatement.ImportReference?): Lazy<KotlinUImportStatement.ImportReference?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [36:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ImportReference?
+    <T> -> T
 
 'psi' @ [37:9] ==> public open val psi: KtImportDirective defined in org.jetbrains.uast.kotlin.KotlinUImportStatement[PropertyDescriptorImpl]
 

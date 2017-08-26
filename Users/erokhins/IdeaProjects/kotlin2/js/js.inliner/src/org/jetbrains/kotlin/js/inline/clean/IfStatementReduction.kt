@@ -2,7 +2,7 @@
 
 'accept' @ [27:17] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.backend.ast.JsVisitorWithContextImpl[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'root' @ [27:24] ==> private final val root: JsStatement defined in org.jetbrains.kotlin.js.inline.clean.IfStatementReduction[PropertyDescriptorImpl]
 
@@ -155,13 +155,13 @@ Inferred types:
 
 'replaceMe' @ [51:33] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpressionStatement..JsExpressionStatement?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpressionStatement
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'replacement' @ [51:43] ==> val replacement: JsExpressionStatement defined in org.jetbrains.kotlin.js.inline.clean.IfStatementReduction.visitor.<no name provided>.visit[LocalVariableDescriptor]
 
 'accept' @ [52:29] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpressionStatement..JsExpressionStatement?)): (JsExpressionStatement..JsExpressionStatement?) defined in org.jetbrains.kotlin.js.inline.clean.IfStatementReduction.visitor.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpressionStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement..org.jetbrains.kotlin.js.backend.ast.JsExpressionStatement?)
 
 'replacement' @ [52:36] ==> val replacement: JsExpressionStatement defined in org.jetbrains.kotlin.js.inline.clean.IfStatementReduction.visitor.<no name provided>.visit[LocalVariableDescriptor]
 
@@ -277,13 +277,13 @@ Inferred types:
 
 'replaceMe' @ [68:33] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsVars..JsVars?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsVars
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsVars..org.jetbrains.kotlin.js.backend.ast.JsVars?)
 
 'replacement' @ [68:43] ==> val replacement: JsVars defined in org.jetbrains.kotlin.js.inline.clean.IfStatementReduction.visitor.<no name provided>.visit[LocalVariableDescriptor]
 
 'accept' @ [69:29] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsVars..JsVars?)): (JsVars..JsVars?) defined in org.jetbrains.kotlin.js.inline.clean.IfStatementReduction.visitor.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsVars
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsVars..org.jetbrains.kotlin.js.backend.ast.JsVars?)
 
 'replacement' @ [69:36] ==> val replacement: JsVars defined in org.jetbrains.kotlin.js.inline.clean.IfStatementReduction.visitor.<no name provided>.visit[LocalVariableDescriptor]
 
@@ -321,7 +321,7 @@ Inferred types:
 
 'accept' @ [81:25] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsReturn..JsReturn?)): (JsReturn..JsReturn?) defined in org.jetbrains.kotlin.js.inline.clean.IfStatementReduction.visitor.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsReturn
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsReturn..org.jetbrains.kotlin.js.backend.ast.JsReturn?)
 
 'replacement' @ [81:32] ==> val replacement: JsReturn defined in org.jetbrains.kotlin.js.inline.clean.IfStatementReduction.visitor.<no name provided>.visit[LocalVariableDescriptor]
 
@@ -329,7 +329,7 @@ Inferred types:
 
 'replaceMe' @ [82:29] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsReturn..JsReturn?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsReturn
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsReturn..org.jetbrains.kotlin.js.backend.ast.JsReturn?)
 
 'replacement' @ [82:39] ==> val replacement: JsReturn defined in org.jetbrains.kotlin.js.inline.clean.IfStatementReduction.visitor.<no name provided>.visit[LocalVariableDescriptor]
 

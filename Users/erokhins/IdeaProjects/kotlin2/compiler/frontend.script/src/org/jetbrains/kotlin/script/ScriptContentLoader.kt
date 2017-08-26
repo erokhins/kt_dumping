@@ -14,11 +14,11 @@
 
 'java' @ [38:53] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'classLoader' @ [38:58] ==> public final val <T : (Any..Any?)> Class<out Any>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'getAnnotationEntries' @ [40:16] ==> private final fun getAnnotationEntries(file: VirtualFile, project: Project): Iterable<KtAnnotationEntry> defined in org.jetbrains.kotlin.script.ScriptContentLoader[SimpleFunctionDescriptorImpl]
 
@@ -65,7 +65,7 @@ Inferred types:
     <T> -> KClass<out Annotation>
     <R> -> Annotation
 
-'constructAnnotation' @ [45:30] ==> internal fun constructAnnotation(psi: KtAnnotationEntry, targetClass: KClass<out Annotation>): Annotation defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
+'constructAnnotation' @ [45:30] ==> internal fun constructAnnotation(psi: KtAnnotationEntry, targetClass: KClass<out Annotation>): Annotation defined in org.jetbrains.kotlin.script in file scriptAnnotationsPreprocessing.kt[SimpleFunctionDescriptorImpl]
 
 'psiAnn' @ [45:50] ==> value-parameter psiAnn: KtAnnotationEntry defined in org.jetbrains.kotlin.script.ScriptContentLoader.loadAnnotations.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -79,7 +79,7 @@ Inferred types:
 
 'kotlin' @ [45:98] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 '?:' @ [50:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiFile?, right: PsiFile): PsiFile[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -123,15 +123,15 @@ Inferred types:
 
 'path' @ [57:52] ==> public final val VirtualFile.path: String[MyPropertyDescriptor]
 
-'lazy' @ [58:59] ==> public fun <T> lazy(initializer: () -> Iterable<Annotation>): Lazy<Iterable<Annotation>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [58:59] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Iterable<Annotation>
+    <T> -> T
 
 'invoke' @ [58:66] ==> public abstract operator fun invoke(): Iterable<Annotation> defined in kotlin.Function0[FunctionInvokeDescriptor]
 
-'lazy' @ [59:45] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [59:45] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'virtualFile' @ [59:52] ==> value-parameter virtualFile: VirtualFile defined in org.jetbrains.kotlin.script.ScriptContentLoader.BasicScriptContents.<init>[ValueParameterDescriptorImpl]
 
@@ -173,7 +173,7 @@ Inferred types:
 
 'getService' @ [77:24] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(ScriptReportSink..ScriptReportSink?)>): (ScriptReportSink..ScriptReportSink?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScriptReportSink
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.ScriptReportSink..org.jetbrains.kotlin.script.ScriptReportSink?)
 
 'project' @ [77:35] ==> private final val project: Project defined in org.jetbrains.kotlin.script.ScriptContentLoader[PropertyDescriptorImpl]
 

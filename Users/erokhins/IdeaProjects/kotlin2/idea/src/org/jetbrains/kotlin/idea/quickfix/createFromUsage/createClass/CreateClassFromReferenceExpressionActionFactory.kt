@@ -18,18 +18,18 @@ Inferred types:
 
 'parent' @ [40:24] ==> public final val KtSimpleNameExpression.parent: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'let' @ [40:31] ==> @InlineOnly public inline fun <T, R> (PsiElement..PsiElement?).let(block: ((PsiElement..PsiElement?)) -> KtExpression): KtExpression defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [40:31] ==> @InlineOnly public inline fun <T, R> (PsiElement..PsiElement?).let(block: ((PsiElement..PsiElement?)) -> KtExpression?): KtExpression? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
-    <R> -> KtExpression
+    <R> -> KtExpression?
 
 'when {
                 it is KtCallExpression && it.calleeExpression == element -> return null
                 it is KtQualifiedExpression && it.selectorExpression == element -> it
                 else -> element
-            }' @ [41:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: KtExpression, entry1: KtExpression, entry2: KtExpression): KtExpression[SimpleFunctionDescriptorImpl]
+            }' @ [41:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: KtExpression?, entry1: KtExpression?, entry2: KtExpression?): KtExpression?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> KtExpression
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> KtExpression?
 
 'it' @ [42:17] ==> value-parameter it: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getFullCallExpression.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -101,7 +101,7 @@ Inferred types:
 
 'emptyList' @ [64:81] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ClassKind..ClassKind?)>..List<(ClassKind..ClassKind?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClassKind
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind..org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind?)
 
 'element' @ [66:24] ==> value-parameter element: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getPossibleClassKinds[ValueParameterDescriptorImpl]
 
@@ -134,7 +134,7 @@ Inferred types:
 
 'it' @ [69:104] ==> value-parameter it: KtReferenceExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getPossibleClassKinds.<anonymous>[ValueParameterDescriptorImpl]
 
-'getTargetParentsByQualifier' @ [71:33] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTargetParentsByQualifier' @ [71:33] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [71:61] ==> value-parameter element: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getPossibleClassKinds[ValueParameterDescriptorImpl]
 
@@ -243,7 +243,7 @@ Inferred types:
 
 'emptyList' @ [95:75] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ClassKind..ClassKind?)>..List<(ClassKind..ClassKind?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClassKind
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind..org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind?)
 
 'element' @ [97:20] ==> value-parameter element: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getPossibleClassKinds[ValueParameterDescriptorImpl]
 
@@ -253,9 +253,9 @@ Inferred types:
 
 'emptyList' @ [97:67] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ClassKind..ClassKind?)>..List<(ClassKind..ClassKind?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClassKind
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind..org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind?)
 
-'getTargetParentsByCall' @ [98:29] ==> internal fun getTargetParentsByCall(call: Call, context: BindingContext): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTargetParentsByCall' @ [98:29] ==> internal fun getTargetParentsByCall(call: Call, context: BindingContext): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [98:52] ==> val call: Call defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
@@ -270,17 +270,17 @@ Inferred types:
 Inferred types:
     <T> -> ClassKind
 
-'isInnerClassExpected' @ [99:13] ==> internal fun isInnerClassExpected(call: Call): Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'isInnerClassExpected' @ [99:13] ==> internal fun isInnerClassExpected(call: Call): Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [99:34] ==> val call: Call defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
 'emptyList' @ [99:60] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ClassKind..ClassKind?)>..List<(ClassKind..ClassKind?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClassKind
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind..org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind?)
 
 'asList' @ [101:31] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (ClassKind..ClassKind?)): (MutableList<(ClassKind..ClassKind?)>..List<(ClassKind..ClassKind?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClassKind
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind..org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind?)
 
 'OBJECT' @ [101:48] ==> enum entry OBJECT defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.ClassKind[FakeCallableDescriptorForObject]
 
@@ -288,7 +288,7 @@ Inferred types:
 
 'fullCallExpr' @ [103:28] ==> val fullCallExpr: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
-'guessTypeForClass' @ [103:41] ==> internal fun KtExpression.guessTypeForClass(context: BindingContext, moduleDescriptor: ModuleDescriptor): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'guessTypeForClass' @ [103:41] ==> internal fun KtExpression.guessTypeForClass(context: BindingContext, moduleDescriptor: ModuleDescriptor): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [103:59] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
@@ -308,7 +308,7 @@ Inferred types:
 
 'expectedType' @ [107:18] ==> val expectedType: KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
-'getClassKindFilter' @ [107:42] ==> internal fun getClassKindFilter(expectedType: KotlinType, containingDeclaration: PsiElement): (ClassKind) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getClassKindFilter' @ [107:42] ==> internal fun getClassKindFilter(expectedType: KotlinType, containingDeclaration: PsiElement): (ClassKind) -> Boolean defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'expectedType' @ [107:61] ==> val expectedType: KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.getPossibleClassKinds[LocalVariableDescriptor]
 
@@ -377,7 +377,7 @@ Inferred types:
 
 'it' @ [125:104] ==> value-parameter it: KtReferenceExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.extractFixData.<anonymous>[ValueParameterDescriptorImpl]
 
-'getTargetParentsByQualifier' @ [127:33] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTargetParentsByQualifier' @ [127:33] ==> internal fun getTargetParentsByQualifier(element: KtElement, isQualified: Boolean, qualifierDescriptor: DeclarationDescriptor?): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [127:61] ==> value-parameter element: KtSimpleNameExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.extractFixData[ValueParameterDescriptorImpl]
 
@@ -404,7 +404,7 @@ Inferred types:
 
 'context' @ [137:36] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.extractFixData[LocalVariableDescriptor]
 
-'getTargetParentsByCall' @ [138:29] ==> internal fun getTargetParentsByCall(call: Call, context: BindingContext): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'getTargetParentsByCall' @ [138:29] ==> internal fun getTargetParentsByCall(call: Call, context: BindingContext): List<PsiElement> defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [138:52] ==> val call: Call defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.extractFixData[LocalVariableDescriptor]
 
@@ -417,7 +417,7 @@ Inferred types:
 
 'fullCallExpr' @ [140:32] ==> val fullCallExpr: KtExpression defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.extractFixData[LocalVariableDescriptor]
 
-'guessTypeForClass' @ [140:45] ==> internal fun KtExpression.guessTypeForClass(context: BindingContext, moduleDescriptor: ModuleDescriptor): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass[SimpleFunctionDescriptorImpl]
+'guessTypeForClass' @ [140:45] ==> internal fun KtExpression.guessTypeForClass(context: BindingContext, moduleDescriptor: ModuleDescriptor): KotlinType? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass in file createClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [140:63] ==> val context: BindingContext defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromReferenceExpressionActionFactory.extractFixData[LocalVariableDescriptor]
 

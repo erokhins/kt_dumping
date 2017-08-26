@@ -44,7 +44,7 @@ Inferred types:
 
 'THashSet' @ [45:94] ==> public constructor THashSet<E : (Any..Any?)>(p0: (TObjectHashingStrategy<(String..String?)>..TObjectHashingStrategy<(String..String?)>?)) defined in gnu.trove.THashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'PATH_HASHING_STRATEGY' @ [45:112] ==> public final val PATH_HASHING_STRATEGY: (TObjectHashingStrategy<(String..String?)>..TObjectHashingStrategy<(String..String?)>?) defined in com.intellij.openapi.util.io.FileUtil[JavaPropertyDescriptor]
 

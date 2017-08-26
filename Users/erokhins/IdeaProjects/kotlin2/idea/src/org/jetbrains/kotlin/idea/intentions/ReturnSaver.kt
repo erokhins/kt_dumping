@@ -30,7 +30,7 @@ Inferred types:
 
 'putCopyableUserData' @ [39:20] ==> public open fun <T : (Any..Any?)> putCopyableUserData(@NotNull p0: Key<(Unit..Unit?)>, p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtReturnExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'RETURN_KEY' @ [39:40] ==> public final val RETURN_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.ReturnSaver[PropertyDescriptorImpl]
 
@@ -50,7 +50,7 @@ Inferred types:
 
 'putCopyableUserData' @ [46:63] ==> public open fun <T : (Any..Any?)> putCopyableUserData(@NotNull p0: Key<(Unit..Unit?)>, p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtReturnExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'RETURN_KEY' @ [46:83] ==> public final val RETURN_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.ReturnSaver[PropertyDescriptorImpl]
 
@@ -74,7 +74,7 @@ Inferred types:
 
 'getCopyableUserData' @ [56:90] ==> public open fun <T : (Any..Any?)> getCopyableUserData(@NotNull p0: Key<(Unit..Unit?)>): Unit? defined in org.jetbrains.kotlin.psi.KtReturnExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'RETURN_KEY' @ [56:110] ==> public final val RETURN_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.ReturnSaver[PropertyDescriptorImpl]
 

@@ -22,8 +22,8 @@ Inferred types:
 
 'findExtension' @ [54:40] ==> @NotNull public open fun <T : (Any..Any?), U : (LibraryType<*>..LibraryType<*>?)> findExtension(@NotNull p0: ExtensionPointName<(LibraryType<*>..LibraryType<*>?)>, @NotNull p1: Class<(JSLibraryType..JSLibraryType?)>): JSLibraryType defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LibraryType<*>
-    <U : (T..T?)> -> JSLibraryType
+    <T : (Any..Any?)> -> (com.intellij.openapi.roots.libraries.LibraryType<*>..com.intellij.openapi.roots.libraries.LibraryType<*>?)
+    <U : (T..T?)> -> (org.jetbrains.kotlin.idea.framework.JSLibraryType..org.jetbrains.kotlin.idea.framework.JSLibraryType?)
 
 'EP_NAME' @ [54:54] ==> public final val EP_NAME: (ExtensionPointName<(LibraryType<*>..LibraryType<*>?)>..ExtensionPointName<(LibraryType<*>..LibraryType<*>?)>?) defined in com.intellij.openapi.roots.libraries.LibraryType[JavaPropertyDescriptor]
 
@@ -43,7 +43,7 @@ Inferred types:
 
 'it' @ [60:39] ==> value-parameter it: (VirtualFile..VirtualFile?) defined in org.jetbrains.kotlin.idea.framework.JSLibraryType.RootsComponentDescriptor.createAttachFilesChooserDescriptor.<anonymous>[ValueParameterDescriptorImpl]
 
-'isAcceptedForJsLibrary' @ [60:46] ==> private fun isAcceptedForJsLibrary(extension: String?): Boolean defined in org.jetbrains.kotlin.idea.framework[SimpleFunctionDescriptorImpl]
+'isAcceptedForJsLibrary' @ [60:46] ==> private fun isAcceptedForJsLibrary(extension: String?): Boolean defined in org.jetbrains.kotlin.idea.framework in file JSLibraryType.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [60:69] ==> value-parameter it: (VirtualFile..VirtualFile?) defined in org.jetbrains.kotlin.idea.framework.JSLibraryType.RootsComponentDescriptor.createAttachFilesChooserDescriptor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -104,7 +104,7 @@ Inferred types:
 
 'INSTANCE' @ [80:99] ==> public final val INSTANCE: (PlainTextFileType..PlainTextFileType?) defined in com.intellij.openapi.fileTypes.PlainTextFileType[JavaPropertyDescriptor]
 
-'isAcceptedForJsLibrary' @ [81:65] ==> private fun isAcceptedForJsLibrary(extension: String?): Boolean defined in org.jetbrains.kotlin.idea.framework[SimpleFunctionDescriptorImpl]
+'isAcceptedForJsLibrary' @ [81:65] ==> private fun isAcceptedForJsLibrary(extension: String?): Boolean defined in org.jetbrains.kotlin.idea.framework in file JSLibraryType.kt[SimpleFunctionDescriptorImpl]
 
 'virtualFile' @ [81:88] ==> value-parameter virtualFile: VirtualFile defined in org.jetbrains.kotlin.idea.framework.JSLibraryType.JSRootFilter.isFileAccepted[ValueParameterDescriptorImpl]
 

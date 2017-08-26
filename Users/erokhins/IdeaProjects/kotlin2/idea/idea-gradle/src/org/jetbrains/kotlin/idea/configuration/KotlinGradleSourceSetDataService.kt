@@ -29,21 +29,21 @@ Inferred types:
 
 'sourceSetData' @ [70:58] ==> val sourceSetData: GradleSourceSetData defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleSourceSetDataService.postProcess[LocalVariableDescriptor]
 
-'?:' @ [72:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: DataNode<ModuleData>?, right: DataNode<ModuleData>): DataNode<ModuleData>[SimpleFunctionDescriptorImpl]
+'?:' @ [72:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: DataNode<(ModuleData..ModuleData?)>?, right: DataNode<(ModuleData..ModuleData?)>): DataNode<(ModuleData..ModuleData?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> DataNode<ModuleData>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> DataNode<(com.intellij.openapi.externalSystem.model.project.ModuleData..com.intellij.openapi.externalSystem.model.project.ModuleData?)>
 
 'findParent' @ [72:52] ==> @Nullable public open fun <T : (Any..Any?)> findParent(@NotNull p0: DataNode<*>, @NotNull p1: Key<(ModuleData..ModuleData?)>): DataNode<(ModuleData..ModuleData?)>? defined in com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleData
+    <T : (Any..Any?)> -> (com.intellij.openapi.externalSystem.model.project.ModuleData..com.intellij.openapi.externalSystem.model.project.ModuleData?)
 
 'sourceSetNode' @ [72:63] ==> val sourceSetNode: DataNode<GradleSourceSetData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleSourceSetDataService.postProcess[LocalVariableDescriptor]
 
 'MODULE' @ [72:90] ==> @NotNull public final val MODULE: Key<(ModuleData..ModuleData?)> defined in com.intellij.openapi.externalSystem.model.ProjectKeys[JavaPropertyDescriptor]
 
-'configureFacetByGradleModule' @ [73:31] ==> private fun configureFacetByGradleModule(moduleNode: DataNode<ModuleData>, sourceSetNode: DataNode<GradleSourceSetData>?, ideModule: Module, modelsProvider: IdeModifiableModelsProvider): KotlinFacet? defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'configureFacetByGradleModule' @ [73:31] ==> private fun configureFacetByGradleModule(moduleNode: DataNode<ModuleData>, sourceSetNode: DataNode<GradleSourceSetData>?, ideModule: Module, modelsProvider: IdeModifiableModelsProvider): KotlinFacet? defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleSourceSetDataService.kt[SimpleFunctionDescriptorImpl]
 
-'moduleNode' @ [73:60] ==> val moduleNode: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleSourceSetDataService.postProcess[LocalVariableDescriptor]
+'moduleNode' @ [73:60] ==> val moduleNode: DataNode<(ModuleData..ModuleData?)> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleSourceSetDataService.postProcess[LocalVariableDescriptor]
 
 'sourceSetNode' @ [73:72] ==> val sourceSetNode: DataNode<GradleSourceSetData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleSourceSetDataService.postProcess[LocalVariableDescriptor]
 
@@ -80,7 +80,7 @@ Inferred types:
 
 'getChildren' @ [90:39] ==> @NotNull public open fun <T : (Any..Any?)> getChildren(@NotNull p0: DataNode<*>, @NotNull p1: Key<(GradleSourceSetData..GradleSourceSetData?)>): (MutableCollection<(DataNode<(GradleSourceSetData..GradleSourceSetData?)>..DataNode<(GradleSourceSetData..GradleSourceSetData?)>?)>..Collection<(DataNode<(GradleSourceSetData..GradleSourceSetData?)>..DataNode<(GradleSourceSetData..GradleSourceSetData?)>?)>) defined in com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> GradleSourceSetData
+    <T : (Any..Any?)> -> (org.jetbrains.plugins.gradle.model.data.GradleSourceSetData..org.jetbrains.plugins.gradle.model.data.GradleSourceSetData?)
 
 'moduleNode' @ [90:51] ==> val moduleNode: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectDataService.postProcess[LocalVariableDescriptor]
 
@@ -102,7 +102,7 @@ Inferred types:
 
 'moduleData' @ [93:58] ==> val moduleData: ModuleData defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectDataService.postProcess[LocalVariableDescriptor]
 
-'configureFacetByGradleModule' @ [94:31] ==> private fun configureFacetByGradleModule(moduleNode: DataNode<ModuleData>, sourceSetNode: DataNode<GradleSourceSetData>?, ideModule: Module, modelsProvider: IdeModifiableModelsProvider): KotlinFacet? defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'configureFacetByGradleModule' @ [94:31] ==> private fun configureFacetByGradleModule(moduleNode: DataNode<ModuleData>, sourceSetNode: DataNode<GradleSourceSetData>?, ideModule: Module, modelsProvider: IdeModifiableModelsProvider): KotlinFacet? defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleSourceSetDataService.kt[SimpleFunctionDescriptorImpl]
 
 'moduleNode' @ [94:60] ==> val moduleNode: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectDataService.postProcess[LocalVariableDescriptor]
 
@@ -163,7 +163,7 @@ Inferred types:
 
 'data' @ [111:68] ==> public final val <T : (Any..Any?)> DataNode<out (Any..Any?)>.data: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'moduleDataNodes' @ [112:13] ==> val moduleDataNodes: List<DataNode<ModuleData>> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleLibraryDataService.postProcess[LocalVariableDescriptor]
 
@@ -171,15 +171,15 @@ Inferred types:
 Inferred types:
     <T> -> DataNode<ModuleData>
 
-'detectPlatformByPlugin' @ [112:35] ==> public fun detectPlatformByPlugin(moduleNode: DataNode<ModuleData>): TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'detectPlatformByPlugin' @ [112:35] ==> public fun detectPlatformByPlugin(moduleNode: DataNode<ModuleData>): TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleSourceSetDataService.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [112:58] ==> value-parameter it: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleLibraryDataService.postProcess.<anonymous>[ValueParameterDescriptorImpl]
 
-'takeIf' @ [112:63] ==> @InlineOnly @SinceKotlin public inline fun <T> TargetPlatformKind<TargetPlatformVersion>.takeIf(predicate: (TargetPlatformKind<TargetPlatformVersion>) -> Boolean): TargetPlatformKind<TargetPlatformVersion>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'takeIf' @ [112:63] ==> @InlineOnly @SinceKotlin public inline fun <T> TargetPlatformKind<*>.takeIf(predicate: (TargetPlatformKind<*>) -> Boolean): TargetPlatformKind<*>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TargetPlatformKind<TargetPlatformVersion>
+    <T> -> TargetPlatformKind<*>
 
-'it' @ [112:72] ==> value-parameter it: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleLibraryDataService.postProcess.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [112:72] ==> value-parameter it: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleLibraryDataService.postProcess.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'toImport' @ [113:37] ==> value-parameter toImport: MutableCollection<DataNode<LibraryData>> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleLibraryDataService.postProcess[ValueParameterDescriptorImpl]
 
@@ -207,16 +207,16 @@ Inferred types:
 
 'CLASSES' @ [117:74] ==> public final val CLASSES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
 
-'let' @ [117:85] ==> @InlineOnly public inline fun <T, R> PersistentLibraryKind<out raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)>.let(block: (PersistentLibraryKind<out raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [117:85] ==> @InlineOnly public inline fun <T, R> PersistentLibraryKind<*>.let(block: (PersistentLibraryKind<*>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PersistentLibraryKind<out raw (com.intellij.openapi.roots.libraries.LibraryProperties<(kotlin.Any..kotlin.Any?)>..com.intellij.openapi.roots.libraries.LibraryProperties<*>?)>
+    <T> -> PersistentLibraryKind<*>
     <R> -> Unit
 
 'modifiableModel' @ [117:91] ==> val modifiableModel: LibraryEx.ModifiableModelEx defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleLibraryDataService.postProcess[LocalVariableDescriptor]
 
 'kind' @ [117:107] ==> public final var LibraryEx.ModifiableModelEx.kind: (PersistentLibraryKind<*>..PersistentLibraryKind<*>?)[MyPropertyDescriptor]
 
-'it' @ [117:114] ==> value-parameter it: PersistentLibraryKind<out raw (LibraryProperties<(Any..Any?)>..LibraryProperties<*>?)> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleLibraryDataService.postProcess.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [117:114] ==> value-parameter it: PersistentLibraryKind<*> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleLibraryDataService.postProcess.<anonymous>[ValueParameterDescriptorImpl]
 
 'projectDataNode' @ [126:12] ==> value-parameter projectDataNode: DataNode<ProjectData> defined in org.jetbrains.kotlin.idea.configuration.findOwnerModule[ValueParameterDescriptorImpl]
 
@@ -232,7 +232,7 @@ Inferred types:
 
 'data' @ [127:22] ==> public final val <T : (Any..Any?)> DataNode<out (Any..Any?)>.data: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'dataNode' @ [128:13] ==> value-parameter dataNode: (DataNode<*>..DataNode<*>?) defined in org.jetbrains.kotlin.idea.configuration.findOwnerModule.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -244,7 +244,7 @@ Inferred types:
 
 'children' @ [129:43] ==> public final val <T : (Any..Any?)> DataNode<out (Any..Any?)>.children: (MutableCollection<(DataNode<*>..DataNode<*>?)>..Collection<(DataNode<*>..DataNode<*>?)>)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'filter' @ [129:52] ==> public inline fun <T> Iterable<(DataNode<*>..DataNode<*>?)>.filter(predicate: ((DataNode<*>..DataNode<*>?)) -> Boolean): List<(DataNode<*>..DataNode<*>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -254,7 +254,7 @@ Inferred types:
 
 'data' @ [129:64] ==> public final val <T : (Any..Any?)> DataNode<out (Any..Any?)>.data: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'sourceSetDataNodes' @ [130:9] ==> val sourceSetDataNodes: List<(DataNode<*>..DataNode<*>?)> defined in org.jetbrains.kotlin.idea.configuration.findOwnerModule.<anonymous>[LocalVariableDescriptor]
 
@@ -270,7 +270,7 @@ Inferred types:
 
 'children' @ [135:9] ==> public final val <T : (Any..Any?)> DataNode<out (Any..Any?)>.children: (MutableCollection<(DataNode<*>..DataNode<*>?)>..Collection<(DataNode<*>..DataNode<*>?)>)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'any' @ [135:18] ==> public inline fun <T> Iterable<(DataNode<*>..DataNode<*>?)>.any(predicate: ((DataNode<*>..DataNode<*>?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -282,7 +282,7 @@ Inferred types:
 
 'data' @ [136:17] ==> public final val <T : (Any..Any?)> DataNode<out (Any..Any?)>.data: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'target' @ [136:50] ==> public final val LibraryDependencyData.target: LibraryData[MyPropertyDescriptor]
 
@@ -305,15 +305,9 @@ Inferred types:
 
 'Jvm' @ [141:53] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [141:57] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'JVM_1_6' @ [141:67] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
-'TargetPlatformKind' @ [142:33] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'JavaScript' @ [142:52] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
-'TargetPlatformKind' @ [143:37] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [143:56] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -327,7 +321,7 @@ Inferred types:
 
 'moduleNode' @ [149:71] ==> value-parameter moduleNode: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.detectPlatformByLibrary[ValueParameterDescriptorImpl]
 
-'getResolvedKotlinStdlibVersionByModuleData' @ [149:82] ==> internal fun DataNode<*>.getResolvedKotlinStdlibVersionByModuleData(libraryIds: List<String>): String? defined in org.jetbrains.kotlin.idea.inspections.gradle[SimpleFunctionDescriptorImpl]
+'getResolvedKotlinStdlibVersionByModuleData' @ [149:82] ==> internal fun DataNode<*>.getResolvedKotlinStdlibVersionByModuleData(libraryIds: List<String>): String? defined in org.jetbrains.kotlin.idea.inspections.gradle in file DifferentStdlibGradleVersionInspection.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [149:125] ==> public fun <T> listOf(element: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -337,34 +331,32 @@ Inferred types:
 
 'key' @ [149:135] ==> public abstract val key: String defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'map' @ [149:151] ==> public inline fun <T, R> Iterable<Map.Entry<String, TargetPlatformKind<*>>>.map(transform: (Map.Entry<String, TargetPlatformKind<*>>) -> TargetPlatformKind<TargetPlatformVersion>): List<TargetPlatformKind<TargetPlatformVersion>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [149:151] ==> public inline fun <T, R> Iterable<Map.Entry<String, TargetPlatformKind<*>>>.map(transform: (Map.Entry<String, TargetPlatformKind<*>>) -> TargetPlatformKind<*>): List<TargetPlatformKind<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Entry<String, TargetPlatformKind<*>>
-    <R> -> TargetPlatformKind<TargetPlatformVersion>
+    <R> -> TargetPlatformKind<*>
 
 'it' @ [149:157] ==> value-parameter it: Map.Entry<String, TargetPlatformKind<*>> defined in org.jetbrains.kotlin.idea.configuration.detectPlatformByLibrary.<anonymous>[ValueParameterDescriptorImpl]
 
 'value' @ [149:160] ==> public abstract val value: TargetPlatformKind<*> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'distinct' @ [149:168] ==> public fun <T> Iterable<TargetPlatformKind<TargetPlatformVersion>>.distinct(): List<TargetPlatformKind<TargetPlatformVersion>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'distinct' @ [149:168] ==> public fun <T> Iterable<TargetPlatformKind<*>>.distinct(): List<TargetPlatformKind<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TargetPlatformKind<TargetPlatformVersion>
+    <T> -> TargetPlatformKind<*>
 
-'detectedPlatforms' @ [150:12] ==> val detectedPlatforms: List<TargetPlatformKind<TargetPlatformVersion>> defined in org.jetbrains.kotlin.idea.configuration.detectPlatformByLibrary[LocalVariableDescriptor]
+'detectedPlatforms' @ [150:12] ==> val detectedPlatforms: List<TargetPlatformKind<*>> defined in org.jetbrains.kotlin.idea.configuration.detectPlatformByLibrary[LocalVariableDescriptor]
 
-'singleOrNull' @ [150:30] ==> public fun <T> List<TargetPlatformKind<TargetPlatformVersion>>.singleOrNull(): TargetPlatformKind<TargetPlatformVersion>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'singleOrNull' @ [150:30] ==> public fun <T> List<TargetPlatformKind<*>>.singleOrNull(): TargetPlatformKind<*>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TargetPlatformKind<TargetPlatformVersion>
+    <T> -> TargetPlatformKind<*>
 
-'detectedPlatforms' @ [150:48] ==> val detectedPlatforms: List<TargetPlatformKind<TargetPlatformVersion>> defined in org.jetbrains.kotlin.idea.configuration.detectPlatformByLibrary[LocalVariableDescriptor]
+'detectedPlatforms' @ [150:48] ==> val detectedPlatforms: List<TargetPlatformKind<*>> defined in org.jetbrains.kotlin.idea.configuration.detectPlatformByLibrary[LocalVariableDescriptor]
 
-'firstOrNull' @ [150:66] ==> public inline fun <T> Iterable<TargetPlatformKind<TargetPlatformVersion>>.firstOrNull(predicate: (TargetPlatformKind<TargetPlatformVersion>) -> Boolean): TargetPlatformKind<TargetPlatformVersion>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'firstOrNull' @ [150:66] ==> public inline fun <T> Iterable<TargetPlatformKind<*>>.firstOrNull(predicate: (TargetPlatformKind<*>) -> Boolean): TargetPlatformKind<*>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TargetPlatformKind<TargetPlatformVersion>
+    <T> -> TargetPlatformKind<*>
 
-'it' @ [150:80] ==> value-parameter it: TargetPlatformKind<TargetPlatformVersion> defined in org.jetbrains.kotlin.idea.configuration.detectPlatformByLibrary.<anonymous>[ValueParameterDescriptorImpl]
-
-'TargetPlatformKind' @ [150:86] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
+'it' @ [150:80] ==> value-parameter it: TargetPlatformKind<*> defined in org.jetbrains.kotlin.idea.configuration.detectPlatformByLibrary.<anonymous>[ValueParameterDescriptorImpl]
 
 'Common' @ [150:105] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -372,13 +364,13 @@ Inferred types:
 
 'moduleNode' @ [159:10] ==> value-parameter moduleNode: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[ValueParameterDescriptorImpl]
 
-'isResolved' @ [159:21] ==> public var DataNode<ModuleData>.isResolved: Boolean defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleProjectResolverExtension.kt[PropertyDescriptorImpl]
+'isResolved' @ [159:21] ==> public var DataNode<ModuleData>.isResolved: (Boolean..Boolean?) defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleProjectResolverExtension.kt[PropertyDescriptorImpl]
 
 '!' @ [161:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
 'moduleNode' @ [161:10] ==> value-parameter moduleNode: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[ValueParameterDescriptorImpl]
 
-'hasKotlinPlugin' @ [161:21] ==> public var DataNode<ModuleData>.hasKotlinPlugin: Boolean defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleProjectResolverExtension.kt[PropertyDescriptorImpl]
+'hasKotlinPlugin' @ [161:21] ==> public var DataNode<ModuleData>.hasKotlinPlugin: (Boolean..Boolean?) defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleProjectResolverExtension.kt[PropertyDescriptorImpl]
 
 'modelsProvider' @ [162:26] ==> value-parameter modelsProvider: IdeModifiableModelsProvider defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[ValueParameterDescriptorImpl]
 
@@ -390,9 +382,7 @@ Inferred types:
 
 'getFacetByType' @ [163:32] ==> @Nullable public abstract fun <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> getFacetByType(p0: (FacetTypeId<(KotlinFacet..KotlinFacet?)>..FacetTypeId<(KotlinFacet..KotlinFacet?)>?)): KotlinFacet? defined in com.intellij.facet.ModifiableFacetModel[JavaMethodDescriptor]
 Inferred types:
-    <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> KotlinFacet
-
-'KotlinFacetType' @ [163:47] ==> public companion object defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType[FakeCallableDescriptorForObject]
+    <F : raw (Facet<(FacetConfiguration..FacetConfiguration?)>..Facet<*>?)> -> (org.jetbrains.kotlin.idea.facet.KotlinFacet..org.jetbrains.kotlin.idea.facet.KotlinFacet?)
 
 'TYPE_ID' @ [163:63] ==> public final val TYPE_ID: FacetTypeId<KotlinFacet> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[PropertyDescriptorImpl]
 
@@ -423,11 +413,13 @@ Inferred types:
     <T> -> BuildScriptClasspathData
     <R> -> String?
 
-'detectPlatformByPlugin' @ [172:24] ==> public fun detectPlatformByPlugin(moduleNode: DataNode<ModuleData>): TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'findKotlinPluginVersion' @ [170:103] ==> internal fun findKotlinPluginVersion(classpathData: BuildScriptClasspathData): String? defined in org.jetbrains.kotlin.idea.inspections.gradle in file KotlinGradleInspectionVisitor.kt[SimpleFunctionDescriptorImpl]
+
+'detectPlatformByPlugin' @ [172:24] ==> public fun detectPlatformByPlugin(moduleNode: DataNode<ModuleData>): TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleSourceSetDataService.kt[SimpleFunctionDescriptorImpl]
 
 'moduleNode' @ [172:47] ==> value-parameter moduleNode: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[ValueParameterDescriptorImpl]
 
-'detectPlatformByLibrary' @ [172:62] ==> private fun detectPlatformByLibrary(moduleNode: DataNode<ModuleData>): TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'detectPlatformByLibrary' @ [172:62] ==> private fun detectPlatformByLibrary(moduleNode: DataNode<ModuleData>): TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleSourceSetDataService.kt[SimpleFunctionDescriptorImpl]
 
 'moduleNode' @ [172:86] ==> value-parameter moduleNode: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[ValueParameterDescriptorImpl]
 
@@ -459,7 +451,7 @@ Inferred types:
 
 'coroutinesProperty' @ [178:49] ==> val coroutinesProperty: LanguageFeature.State defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[LocalVariableDescriptor]
 
-'platformKind' @ [178:69] ==> val platformKind: TargetPlatformKind<TargetPlatformVersion>? defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[LocalVariableDescriptor]
+'platformKind' @ [178:69] ==> val platformKind: TargetPlatformKind<*>? defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[LocalVariableDescriptor]
 
 'modelsProvider' @ [178:83] ==> value-parameter modelsProvider: IdeModifiableModelsProvider defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[ValueParameterDescriptorImpl]
 
@@ -521,7 +513,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'parseCompilerArgumentsToFacet' @ [188:13] ==> public fun parseCompilerArgumentsToFacet(arguments: List<String>, defaultArguments: List<String>, kotlinFacet: KotlinFacet, modelsProvider: IdeModifiableModelsProvider): Unit defined in org.jetbrains.kotlin.idea.facet[SimpleFunctionDescriptorImpl]
+'parseCompilerArgumentsToFacet' @ [188:13] ==> public fun parseCompilerArgumentsToFacet(arguments: List<String>, defaultArguments: List<String>, kotlinFacet: KotlinFacet, modelsProvider: IdeModifiableModelsProvider): Unit defined in org.jetbrains.kotlin.idea.facet in file facetUtils.kt[SimpleFunctionDescriptorImpl]
 
 'currentCompilerArguments' @ [188:43] ==> val currentCompilerArguments: List<String> defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[LocalVariableDescriptor]
 
@@ -531,7 +523,7 @@ Inferred types:
 
 'modelsProvider' @ [188:108] ==> value-parameter modelsProvider: IdeModifiableModelsProvider defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[ValueParameterDescriptorImpl]
 
-'adjustClasspath' @ [190:9] ==> private fun adjustClasspath(kotlinFacet: KotlinFacet, dependencyClasspath: List<String>): Unit defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'adjustClasspath' @ [190:9] ==> private fun adjustClasspath(kotlinFacet: KotlinFacet, dependencyClasspath: List<String>): Unit defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleSourceSetDataService.kt[SimpleFunctionDescriptorImpl]
 
 'kotlinFacet' @ [190:25] ==> val kotlinFacet: KotlinFacet defined in org.jetbrains.kotlin.idea.configuration.configureFacetByGradleModule[LocalVariableDescriptor]
 
@@ -631,8 +623,6 @@ Inferred types:
 'CoroutineSupport' @ [215:12] ==> public object CoroutineSupport defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
 
 'getCompilerArgument' @ [215:29] ==> public final fun getCompilerArgument(state: LanguageFeature.State): String defined in org.jetbrains.kotlin.config.CoroutineSupport[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [215:49] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'defaultState' @ [215:76] ==> public final val defaultState: LanguageFeature.State defined in org.jetbrains.kotlin.config.LanguageFeature[DeserializedPropertyDescriptor]
 

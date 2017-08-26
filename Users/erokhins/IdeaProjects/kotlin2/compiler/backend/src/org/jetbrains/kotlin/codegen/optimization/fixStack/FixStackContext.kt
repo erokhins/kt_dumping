@@ -10,7 +10,7 @@ Inferred types:
 Inferred types:
     <T> -> AbstractInsnNode
 
-'insertTryCatchBlocksMarkers' @ [37:43] ==> internal fun insertTryCatchBlocksMarkers(methodNode: MethodNode): Map<AbstractInsnNode, AbstractInsnNode> defined in org.jetbrains.kotlin.codegen.optimization.fixStack[SimpleFunctionDescriptorImpl]
+'insertTryCatchBlocksMarkers' @ [37:43] ==> internal fun insertTryCatchBlocksMarkers(methodNode: MethodNode): Map<AbstractInsnNode, AbstractInsnNode> defined in org.jetbrains.kotlin.codegen.optimization.fixStack in file AnalyzeTryCatchBlocks.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [37:71] ==> public final val methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.optimization.fixStack.FixStackContext[PropertyDescriptorImpl]
 
@@ -56,7 +56,7 @@ Inferred types:
 
 'SmartList' @ [46:63] ==> public constructor SmartList<E : (Any..Any?)>() defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> AbstractInsnNode
+    <E : (Any..Any?)> -> (org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode..org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode?)
 
 'add' @ [46:77] ==> public abstract fun add(element: AbstractInsnNode): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 

@@ -50,7 +50,9 @@ Inferred types:
 
 'BROKEN' @ [72:89] ==> enum entry BROKEN defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinStatus[FakeCallableDescriptorForObject]
 
-'PomFile' @ [73:19] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'?:' @ [73:19] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PomFile?, right: PomFile): PomFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PomFile
 
 'forFileOrNull' @ [73:27] ==> public final fun forFileOrNull(xmlFile: XmlFile): PomFile? defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
@@ -78,7 +80,7 @@ Inferred types:
 
 'BROKEN' @ [80:101] ==> enum entry BROKEN defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinStatus[FakeCallableDescriptorForObject]
 
-'kotlinPluginId' @ [82:30] ==> public fun kotlinPluginId(version: String?): MavenId defined in org.jetbrains.kotlin.idea.maven[SimpleFunctionDescriptorImpl]
+'kotlinPluginId' @ [82:30] ==> public fun kotlinPluginId(version: String?): MavenId defined in org.jetbrains.kotlin.idea.maven in file PomFile.kt[SimpleFunctionDescriptorImpl]
 
 'mavenProject' @ [83:28] ==> val mavenProject: MavenProject defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.checkKotlinPlugin[LocalVariableDescriptor]
 
@@ -122,6 +124,8 @@ Inferred types:
 
 'this' @ [86:56] ==> <this> defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[LazyClassReceiverParameterDescriptor]
 
+'isRelevantGoal' @ [86:62] ==> protected abstract fun isRelevantGoal(goalName: String): Boolean defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator[SimpleFunctionDescriptorImpl]
+
 'CONFIGURED' @ [87:42] ==> enum entry CONFIGURED defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinStatus[FakeCallableDescriptorForObject]
 
 'CAN_BE_CONFIGURED' @ [90:38] ==> enum entry CAN_BE_CONFIGURED defined in org.jetbrains.kotlin.idea.configuration.ConfigureKotlinStatus[FakeCallableDescriptorForObject]
@@ -130,7 +134,7 @@ Inferred types:
 
 'findPlugin' @ [94:26] ==> public final fun findPlugin(groupArtifact: MavenId): MavenDomPlugin? defined in org.jetbrains.kotlin.idea.maven.PomFile[SimpleFunctionDescriptorImpl]
 
-'kotlinPluginId' @ [94:37] ==> public fun kotlinPluginId(version: String?): MavenId defined in org.jetbrains.kotlin.idea.maven[SimpleFunctionDescriptorImpl]
+'kotlinPluginId' @ [94:37] ==> public fun kotlinPluginId(version: String?): MavenId defined in org.jetbrains.kotlin.idea.maven in file PomFile.kt[SimpleFunctionDescriptorImpl]
 
 'plugin' @ [96:16] ==> val plugin: MavenDomPlugin defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.hasKotlinPlugin[LocalVariableDescriptor]
 
@@ -182,11 +186,11 @@ Inferred types:
 
 'project' @ [107:50] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.configure[ValueParameterDescriptorImpl]
 
-'createConfigureKotlinNotificationCollector' @ [108:29] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'createConfigureKotlinNotificationCollector' @ [108:29] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration in file NotificationMessageCollector.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [108:72] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.configure[ValueParameterDescriptorImpl]
 
-'excludeMavenChildrenModules' @ [109:28] ==> public fun excludeMavenChildrenModules(project: Project, selectedModules: List<Module>): List<Module> defined in org.jetbrains.kotlin.idea.maven[SimpleFunctionDescriptorImpl]
+'excludeMavenChildrenModules' @ [109:28] ==> public fun excludeMavenChildrenModules(project: Project, selectedModules: List<Module>): List<Module> defined in org.jetbrains.kotlin.idea.maven in file MavenModulesRelationship.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [109:56] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.configure[ValueParameterDescriptorImpl]
 
@@ -276,7 +280,9 @@ Inferred types:
 
 'project' @ [140:37] ==> public final val Module.project: Project[MyPropertyDescriptor]
 
-'PomFile' @ [144:19] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
+'?:' @ [144:19] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PomFile?, right: PomFile): PomFile[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PomFile
 
 'forFileOrNull' @ [144:27] ==> public final fun forFileOrNull(xmlFile: XmlFile): PomFile? defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 
@@ -405,8 +411,6 @@ Inferred types:
 'kotlinPlugin' @ [183:44] ==> value-parameter kotlinPlugin: MavenDomPlugin defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.createExecution[ValueParameterDescriptorImpl]
 
 'executionId' @ [183:58] ==> value-parameter executionId: String defined in org.jetbrains.kotlin.idea.maven.configuration.KotlinMavenConfigurator.createExecution[ValueParameterDescriptorImpl]
-
-'PomFile' @ [183:71] ==> public companion object defined in org.jetbrains.kotlin.idea.maven.PomFile[FakeCallableDescriptorForObject]
 
 'getPhase' @ [183:79] ==> @Deprecated public final fun getPhase(hasJavaFiles: Boolean, isTest: Boolean): String defined in org.jetbrains.kotlin.idea.maven.PomFile.Companion[SimpleFunctionDescriptorImpl]
 

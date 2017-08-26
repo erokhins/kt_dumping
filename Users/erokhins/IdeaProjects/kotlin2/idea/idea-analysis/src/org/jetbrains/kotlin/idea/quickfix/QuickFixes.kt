@@ -10,9 +10,7 @@ Inferred types:
 
 'getExtensions' @ [32:20] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(QuickFixContributor..QuickFixContributor?)>): (Array<(QuickFixContributor..QuickFixContributor?)>..Array<out (QuickFixContributor..QuickFixContributor?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> QuickFixContributor
-
-'QuickFixContributor' @ [32:34] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.QuickFixContributor[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.QuickFixContributor..org.jetbrains.kotlin.idea.quickfix.QuickFixContributor?)
 
 'EP_NAME' @ [32:54] ==> public final val EP_NAME: ExtensionPointName<QuickFixContributor> defined in org.jetbrains.kotlin.idea.quickfix.QuickFixContributor.Companion[PropertyDescriptorImpl]
 
@@ -80,7 +78,7 @@ Inferred types:
 
 'getService' @ [56:56] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Class<(QuickFixes..QuickFixes?)>): (QuickFixes..QuickFixes?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> QuickFixes
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.QuickFixes..org.jetbrains.kotlin.idea.quickfix.QuickFixes?)
 
 'QuickFixes' @ [56:67] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.QuickFixes[FakeCallableDescriptorForObject]
 
@@ -90,5 +88,5 @@ Inferred types:
 
 'create' @ [62:83] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): ExtensionPointName<(QuickFixContributor..QuickFixContributor?)> defined in com.intellij.openapi.extensions.ExtensionPointName[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> QuickFixContributor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.quickfix.QuickFixContributor..org.jetbrains.kotlin.idea.quickfix.QuickFixContributor?)
 

@@ -216,8 +216,6 @@ Inferred types:
 
 'modality' @ [106:28] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [106:40] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [106:49] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'isDefaultInJdk' @ [106:61] ==> private final fun isDefaultInJdk(method: FunctionDescriptor): Boolean defined in org.jetbrains.kotlin.codegen.CollectionStubMethodGenerator[SimpleFunctionDescriptorImpl]
@@ -437,8 +435,6 @@ Inferred types:
 
 'modality' @ [193:16] ==> public final val FunctionDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [193:28] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [193:37] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'method' @ [194:9] ==> value-parameter method: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.CollectionStubMethodGenerator.isDefaultInJdk[ValueParameterDescriptorImpl]
@@ -551,6 +547,8 @@ Inferred types:
 
 'KotlinType' @ [221:99] ==> private constructor KotlinType() defined in org.jetbrains.kotlin.types.KotlinType[DeserializedClassConstructorDescriptor]
 
+'constructor' @ [221:111] ==> public abstract val constructor: TypeConstructor defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
+
 'collectionClasses' @ [223:41] ==> val collectionClasses: List<CollectionStubMethodGenerator.CollectionClassPair> defined in org.jetbrains.kotlin.codegen.CollectionStubMethodGenerator.findRelevantSuperCollectionClasses[LocalVariableDescriptor]
 
 'filter' @ [223:59] ==> public inline fun <T> Iterable<CollectionStubMethodGenerator.CollectionClassPair>.filter(predicate: (CollectionStubMethodGenerator.CollectionClassPair) -> Boolean): List<CollectionStubMethodGenerator.CollectionClassPair> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -601,6 +599,8 @@ Inferred types:
     <R> -> TypeConstructor
 
 'KotlinType' @ [230:42] ==> private constructor KotlinType() defined in org.jetbrains.kotlin.types.KotlinType[DeserializedClassConstructorDescriptor]
+
+'constructor' @ [230:54] ==> public abstract val constructor: TypeConstructor defined in org.jetbrains.kotlin.types.KotlinType[DeserializedPropertyDescriptor]
 
 'ourSuperCollectionClasses' @ [232:16] ==> val ourSuperCollectionClasses: List<CollectionStubMethodGenerator.CollectionClassPair> defined in org.jetbrains.kotlin.codegen.CollectionStubMethodGenerator.findRelevantSuperCollectionClasses[LocalVariableDescriptor]
 
@@ -885,8 +885,6 @@ Inferred types:
 
 'typeParameters' @ [318:56] ==> val typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.codegen.CollectionStubMethodGenerator.createSyntheticSubclass[LocalVariableDescriptor]
 
-'TypeSubstitution' @ [318:72] ==> public companion object defined in org.jetbrains.kotlin.types.TypeSubstitution[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [318:89] ==> @field:JvmField public final val EMPTY: TypeSubstitution defined in org.jetbrains.kotlin.types.TypeSubstitution.Companion[DeserializedPropertyDescriptor]
 
 'child' @ [318:96] ==> val child: MutableClassDescriptor defined in org.jetbrains.kotlin.codegen.CollectionStubMethodGenerator.createSyntheticSubclass[LocalVariableDescriptor]
@@ -930,8 +928,6 @@ Inferred types:
 
 'simpleNotNullType' @ [329:34] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [329:52] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [329:64] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'classDescriptor' @ [329:71] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.codegen.CollectionStubMethodGenerator.newType[ValueParameterDescriptorImpl]
@@ -943,8 +939,6 @@ Inferred types:
 'mapSignatureWithGeneric' @ [332:88] ==> @NotNull public open fun mapSignatureWithGeneric(@NotNull f: FunctionDescriptor, @NotNull kind: OwnerKind): JvmMethodGenericSignature defined in org.jetbrains.kotlin.codegen.state.KotlinTypeMapper[JavaMethodDescriptor]
 
 'this' @ [332:112] ==> <this> defined in org.jetbrains.kotlin.codegen.CollectionStubMethodGenerator.signature[ReceiverParameterDescriptorImpl]
-
-'OwnerKind' @ [332:118] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'IMPLEMENTATION' @ [332:128] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 

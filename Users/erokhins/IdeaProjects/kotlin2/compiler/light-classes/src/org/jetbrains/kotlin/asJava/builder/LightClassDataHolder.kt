@@ -71,6 +71,8 @@ Inferred types:
     <T> -> PsiClass
     <R> -> LightClassDataImpl
 
+'LightClassDataImpl' @ [89:107] ==> public constructor LightClassDataImpl(clsDelegate: PsiClass) defined in org.jetbrains.kotlin.asJava.builder.LightClassDataImpl[ClassConstructorDescriptorImpl]
+
 'findClass' @ [93:5] ==> public final fun findClass(stub: StubElement<*>, predicate: (PsiClassStub<*>) -> Boolean): PsiClass? defined in org.jetbrains.kotlin.asJava.LightClassUtil[FunctionImportedFromObject]
 
 'this' @ [93:15] ==> <this> defined in org.jetbrains.kotlin.asJava.builder.findDelegate[ReceiverParameterDescriptorImpl]
@@ -126,7 +128,7 @@ Inferred types:
 
 'qualifiedName' @ [111:38] ==> public final val <T : (PsiClass..PsiClass?)> PsiClassStub<out (PsiClass..PsiClass?)>.qualifiedName: String?[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiClass..PsiClass?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
+    <T : (PsiClass..PsiClass?)> -> Captured(*)
 
 'IllegalStateException' @ [112:16] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
 
@@ -154,7 +156,7 @@ Inferred types:
 
 'qualifiedName' @ [119:23] ==> public final val <T : (PsiClass..PsiClass?)> PsiClassStub<out (PsiClass..PsiClass?)>.qualifiedName: String?[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiClass..PsiClass?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
+    <T : (PsiClass..PsiClass?)> -> Captured(*)
 
 'names' @ [122:12] ==> val names: MutableList<String> defined in org.jetbrains.kotlin.asJava.builder.collectClassNames[LocalVariableDescriptor]
 

@@ -104,8 +104,6 @@ Inferred types:
 
 'unsubstitutedMemberScope' @ [93:68] ==> public final val ClassDescriptor.unsubstitutedMemberScope: MemberScope[MyPropertyDescriptor]
 
-'MemberScope' @ [93:96] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
-
 'Empty' @ [93:108] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'this@AbstractTypeAliasDescriptor' @ [97:17] ==> <this> defined in org.jetbrains.kotlin.descriptors.impl.AbstractTypeAliasDescriptor[LazyClassReceiverParameterDescriptor]

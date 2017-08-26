@@ -26,7 +26,5 @@
 
 'toString' @ [37:69] ==> public open fun toString(): String defined in org.jetbrains.kotlin.serialization.deserialization.BinaryVersion[DeserializedSimpleFunctionDescriptor]
 
-'DecompiledTextIndex' @ [38:13] ==> public companion object defined in org.jetbrains.kotlin.idea.decompiler.textBuilder.DecompiledTextIndex[FakeCallableDescriptorForObject]
-
 'Empty' @ [38:33] ==> public final val Empty: DecompiledTextIndex defined in org.jetbrains.kotlin.idea.decompiler.textBuilder.DecompiledTextIndex.Companion[PropertyDescriptorImpl]
 

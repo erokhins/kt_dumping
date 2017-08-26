@@ -59,8 +59,8 @@ Inferred types:
 
 'getSliceContents' @ [55:44] ==> @NotNull public abstract fun <K : (Any..Any?), V : (Any..Any?)> getSliceContents(@NotNull p0: ReadOnlySlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>): ImmutableMap<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> SimpleFunctionDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'FUNCTION' @ [55:76] ==> public final val FUNCTION: (WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -474,7 +474,7 @@ Inferred types:
 
 'it' @ [152:31] ==> value-parameter it: List<Int> defined in org.jetbrains.kotlin.resolve.typeApproximation.CapturedTypeApproximationTest.getTestTypesForOneTypeVariable.<anonymous>[ValueParameterDescriptorImpl]
 
-'fold' @ [152:34] ==> public inline fun <T, R> Iterable<Int>.fold(initial: String, operation: (String, Int) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [152:34] ==> public inline fun <T, R> Iterable<Int>.fold(initial: String, operation: (acc: String, Int) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Int
     <R> -> String

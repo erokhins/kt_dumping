@@ -58,7 +58,7 @@ Inferred types:
 
 'csBuilder' @ [64:17] ==> value-parameter csBuilder: ConstraintSystemBuilder defined in org.jetbrains.kotlin.resolve.calls.components.checkExpressionArgument[ValueParameterDescriptorImpl]
 
-'addSubtypeConstraintIfCompatible' @ [64:27] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'addSubtypeConstraintIfCompatible' @ [64:27] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference in file ConstraintSystemBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'unstableType' @ [64:60] ==> value-parameter unstableType: UnwrappedType? defined in org.jetbrains.kotlin.resolve.calls.components.checkExpressionArgument.unstableSmartCastOrSubtypeError[ValueParameterDescriptorImpl]
 
@@ -108,7 +108,7 @@ Inferred types:
 
 'csBuilder' @ [75:14] ==> value-parameter csBuilder: ConstraintSystemBuilder defined in org.jetbrains.kotlin.resolve.calls.components.checkExpressionArgument[ValueParameterDescriptorImpl]
 
-'addSubtypeConstraintIfCompatible' @ [75:24] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'addSubtypeConstraintIfCompatible' @ [75:24] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference in file ConstraintSystemBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'argumentType' @ [75:57] ==> val argumentType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components.checkExpressionArgument[LocalVariableDescriptor]
 
@@ -138,7 +138,7 @@ Inferred types:
 
 'csBuilder' @ [82:10] ==> value-parameter csBuilder: ConstraintSystemBuilder defined in org.jetbrains.kotlin.resolve.calls.components.checkExpressionArgument[ValueParameterDescriptorImpl]
 
-'addSubtypeConstraintIfCompatible' @ [82:20] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'addSubtypeConstraintIfCompatible' @ [82:20] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference in file ConstraintSystemBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'argumentType' @ [82:53] ==> val argumentType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components.checkExpressionArgument[LocalVariableDescriptor]
 
@@ -190,7 +190,7 @@ Inferred types:
 
 'csBuilder' @ [89:37] ==> value-parameter csBuilder: ConstraintSystemBuilder defined in org.jetbrains.kotlin.resolve.calls.components.checkExpressionArgument[ValueParameterDescriptorImpl]
 
-'addSubtypeConstraintIfCompatible' @ [89:47] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'addSubtypeConstraintIfCompatible' @ [89:47] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference in file ConstraintSystemBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'unstableType' @ [89:80] ==> val unstableType: UnwrappedType? defined in org.jetbrains.kotlin.resolve.calls.components.checkExpressionArgument[LocalVariableDescriptor]
 
@@ -219,7 +219,7 @@ Inferred types:
 
 'csBuilder' @ [92:18] ==> value-parameter csBuilder: ConstraintSystemBuilder defined in org.jetbrains.kotlin.resolve.calls.components.checkExpressionArgument[ValueParameterDescriptorImpl]
 
-'addSubtypeConstraintIfCompatible' @ [92:28] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'addSubtypeConstraintIfCompatible' @ [92:28] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference in file ConstraintSystemBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'argumentType' @ [92:61] ==> val argumentType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components.checkExpressionArgument[LocalVariableDescriptor]
 
@@ -361,7 +361,7 @@ Inferred types:
 
 'csBuilder' @ [157:24] ==> value-parameter csBuilder: ConstraintSystemBuilder defined in org.jetbrains.kotlin.resolve.calls.components.checkSubCallArgument[ValueParameterDescriptorImpl]
 
-'addSubtypeConstraintIfCompatible' @ [157:34] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'addSubtypeConstraintIfCompatible' @ [157:34] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference in file ConstraintSystemBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'currentReturnType' @ [157:67] ==> val currentReturnType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components.checkSubCallArgument[LocalVariableDescriptor]
 
@@ -371,7 +371,7 @@ Inferred types:
 
 'csBuilder' @ [158:9] ==> value-parameter csBuilder: ConstraintSystemBuilder defined in org.jetbrains.kotlin.resolve.calls.components.checkSubCallArgument[ValueParameterDescriptorImpl]
 
-'addSubtypeConstraintIfCompatible' @ [158:19] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference[SimpleFunctionDescriptorImpl]
+'addSubtypeConstraintIfCompatible' @ [158:19] ==> public fun ConstraintSystemBuilder.addSubtypeConstraintIfCompatible(lowerType: UnwrappedType, upperType: UnwrappedType, position: ConstraintPosition): Boolean defined in org.jetbrains.kotlin.resolve.calls.inference in file ConstraintSystemBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'currentReturnType' @ [158:52] ==> val currentReturnType: UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components.checkSubCallArgument[LocalVariableDescriptor]
 

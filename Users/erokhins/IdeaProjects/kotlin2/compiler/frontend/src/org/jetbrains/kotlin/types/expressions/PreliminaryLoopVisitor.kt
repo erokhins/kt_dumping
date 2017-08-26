@@ -22,8 +22,6 @@ Inferred types:
 
 'kind' @ [42:23] ==> public final val kind: DataFlowValue.Kind defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue[PropertyDescriptorImpl]
 
-'DataFlowValue' @ [42:31] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue[FakeCallableDescriptorForObject]
-
 'STABLE_VARIABLE' @ [42:50] ==> enum entry STABLE_VARIABLE defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue.Kind[FakeCallableDescriptorForObject]
 
 'identifierInfo' @ [42:69] ==> val identifierInfo: IdentifierInfo defined in org.jetbrains.kotlin.types.expressions.PreliminaryLoopVisitor.clearDataFlowInfoForAssignedLocalVariables[LocalVariableDescriptor]

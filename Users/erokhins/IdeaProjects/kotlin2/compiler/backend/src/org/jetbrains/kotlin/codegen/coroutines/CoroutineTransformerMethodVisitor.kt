@@ -12,9 +12,9 @@
 
 'exceptions' @ [62:74] ==> value-parameter exceptions: Array<out String>? defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [64:64] ==> public fun <T> lazy(initializer: () -> ClassBuilder): Lazy<ClassBuilder> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [64:64] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ClassBuilder
+    <T> -> T
 
 'obtainClassBuilderForCoroutineState' @ [64:69] ==> value-parameter obtainClassBuilderForCoroutineState: () -> ClassBuilder defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.<init>[ValueParameterDescriptorImpl]
 
@@ -62,7 +62,7 @@ Inferred types:
 
 'isForNamedFunction' @ [78:13] ==> private final val isForNamedFunction: Boolean defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor[PropertyDescriptorImpl]
 
-'allSuspensionPointsAreTailCalls' @ [79:17] ==> private fun allSuspensionPointsAreTailCalls(thisName: String, methodNode: MethodNode, suspensionPoints: List<SuspensionPoint>): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'allSuspensionPointsAreTailCalls' @ [79:17] ==> private fun allSuspensionPointsAreTailCalls(thisName: String, methodNode: MethodNode, suspensionPoints: List<SuspensionPoint>): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'containingClassInternalName' @ [79:49] ==> private final val containingClassInternalName: String defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor[PropertyDescriptorImpl]
 
@@ -169,7 +169,9 @@ Inferred types:
 
 'LabelNode' @ [115:36] ==> public constructor LabelNode() defined in org.jetbrains.org.objectweb.asm.tree.LabelNode[JavaClassConstructorDescriptor]
 
-'CodegenUtil' @ [116:30] ==> public object CodegenUtil defined in org.jetbrains.kotlin.backend.common[FakeCallableDescriptorForObject]
+'?:' @ [116:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Int?, right: Int): Int[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Int
 
 'getLineNumberForElement' @ [116:42] ==> @JvmStatic public final fun getLineNumberForElement(statement: PsiElement, markEndOffset: Boolean): Int? defined in org.jetbrains.kotlin.backend.common.CodegenUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -179,9 +181,9 @@ Inferred types:
 
 'actualCoroutineStart' @ [119:26] ==> val actualCoroutineStart: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.performTransformations[LocalVariableDescriptor]
 
-'insnListOf' @ [120:26] ==> public fun insnListOf(vararg insns: AbstractInsnNode): InsnList defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'insnListOf' @ [120:26] ==> public fun insnListOf(vararg insns: AbstractInsnNode): InsnList defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
-'withInstructionAdapter' @ [121:35] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [121:35] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'loadCoroutineSuspendedMarker' @ [121:60] ==> public fun InstructionAdapter.loadCoroutineSuspendedMarker(): Unit defined in org.jetbrains.kotlin.codegen.coroutines in file coroutineCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -231,7 +233,7 @@ Inferred types:
 
 'startLabel' @ [137:20] ==> val startLabel: LabelNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.performTransformations.<anonymous>[LocalVariableDescriptor]
 
-'withInstructionAdapter' @ [137:32] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [137:32] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'generateResumeWithExceptionCheck' @ [137:57] ==> private fun InstructionAdapter.generateResumeWithExceptionCheck(exceptionIndex: Int): Unit defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
@@ -247,7 +249,7 @@ Inferred types:
 
 'last' @ [140:20] ==> public final val InsnList.last: (AbstractInsnNode..AbstractInsnNode?)[MyPropertyDescriptor]
 
-'withInstructionAdapter' @ [140:26] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [140:26] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'genThrow' @ [141:25] ==> public open fun genThrow(@NotNull v: InstructionAdapter, @NotNull exception: String, @Nullable message: String?): Unit defined in org.jetbrains.kotlin.codegen.AsmUtil[JavaMethodDescriptor]
 
@@ -397,7 +399,7 @@ Inferred types:
 
 'thisName' @ [197:83] ==> public final val ClassBuilder.thisName: String[MyPropertyDescriptor]
 
-'getLastParameterIndex' @ [198:41] ==> private fun getLastParameterIndex(desc: String, access: Int): Int defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'getLastParameterIndex' @ [198:41] ==> private fun getLastParameterIndex(desc: String, access: Int): Int defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [198:63] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.prepareMethodNodePreludeForNamedFunction[ValueParameterDescriptorImpl]
 
@@ -411,7 +413,7 @@ Inferred types:
 
 'instructions' @ [199:20] ==> public final var instructions: (InsnList..InsnList?) defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaPropertyDescriptor]
 
-'asSequence' @ [199:33] ==> public fun InsnList.asSequence(): InsnSequence defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'asSequence' @ [199:33] ==> public fun InsnList.asSequence(): InsnSequence defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'filterIsInstance' @ [199:46] ==> public inline fun <reified R> Sequence<*>.filterIsInstance(): Sequence<VarInsnNode> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -447,7 +449,7 @@ Inferred types:
 
 'insert' @ [205:33] ==> public open fun insert(p0: (InsnList..InsnList?)): Unit defined in org.jetbrains.org.objectweb.asm.tree.InsnList[JavaMethodDescriptor]
 
-'withInstructionAdapter' @ [205:40] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [205:40] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'Label' @ [206:39] ==> public constructor Label() defined in org.jetbrains.org.objectweb.asm.Label[JavaClassConstructorDescriptor]
 
@@ -563,7 +565,7 @@ Inferred types:
 
 'dup' @ [267:13] ==> public open fun dup(): Unit defined in org.jetbrains.org.objectweb.asm.commons.InstructionAdapter[JavaMethodDescriptor]
 
-'getParameterTypesIndicesForCoroutineConstructor' @ [270:21] ==> private fun getParameterTypesIndicesForCoroutineConstructor(desc: String, containingFunctionAccess: Int, needDispatchReceiver: Boolean, thisName: String): Collection<Pair<Type, Int>> defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'getParameterTypesIndicesForCoroutineConstructor' @ [270:21] ==> private fun getParameterTypesIndicesForCoroutineConstructor(desc: String, containingFunctionAccess: Int, needDispatchReceiver: Boolean, thisName: String): Collection<Pair<Type, Int>> defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [271:29] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.prepareMethodNodePreludeForNamedFunction[ValueParameterDescriptorImpl]
 
@@ -601,7 +603,7 @@ Inferred types:
 
 'VOID_TYPE' @ [283:34] ==> public final val VOID_TYPE: (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
 
-'getParameterTypesForCoroutineConstructor' @ [284:30] ==> private fun getParameterTypesForCoroutineConstructor(desc: String, hasDispatchReceiver: Boolean, thisName: String): Array<Type> defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'getParameterTypesForCoroutineConstructor' @ [284:30] ==> private fun getParameterTypesForCoroutineConstructor(desc: String, hasDispatchReceiver: Boolean, thisName: String): Array<Type> defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [285:37] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.prepareMethodNodePreludeForNamedFunction[ValueParameterDescriptorImpl]
 
@@ -759,7 +761,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Boolean
 
-'isBeforeSuspendMarker' @ [328:17] ==> internal fun isBeforeSuspendMarker(insn: AbstractInsnNode): Boolean defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'isBeforeSuspendMarker' @ [328:17] ==> internal fun isBeforeSuspendMarker(insn: AbstractInsnNode): Boolean defined in org.jetbrains.kotlin.codegen.inline in file inlineCodegenUtils.kt[SimpleFunctionDescriptorImpl]
 
 'methodInsn' @ [328:39] ==> val methodInsn: MethodInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.collectSuspensionPoints[LocalVariableDescriptor]
 
@@ -771,7 +773,7 @@ Inferred types:
 
 'previous' @ [329:69] ==> public final val MethodInsnNode.previous: (AbstractInsnNode..AbstractInsnNode?)[MyPropertyDescriptor]
 
-'isAfterSuspendMarker' @ [332:17] ==> internal fun isAfterSuspendMarker(insn: AbstractInsnNode): Boolean defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'isAfterSuspendMarker' @ [332:17] ==> internal fun isAfterSuspendMarker(insn: AbstractInsnNode): Boolean defined in org.jetbrains.kotlin.codegen.inline in file inlineCodegenUtils.kt[SimpleFunctionDescriptorImpl]
 
 'methodInsn' @ [332:38] ==> val methodInsn: MethodInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.collectSuspensionPoints[LocalVariableDescriptor]
 
@@ -817,7 +819,7 @@ Inferred types:
 
 'instructions' @ [352:39] ==> public final var instructions: (InsnList..InsnList?) defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaPropertyDescriptor]
 
-'performRefinedTypeAnalysis' @ [353:22] ==> internal fun performRefinedTypeAnalysis(methodNode: MethodNode, thisName: String): Array<out Frame<out BasicValue>?> defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'performRefinedTypeAnalysis' @ [353:22] ==> internal fun performRefinedTypeAnalysis(methodNode: MethodNode, thisName: String): Array<out Frame<out BasicValue>?> defined in org.jetbrains.kotlin.codegen.coroutines in file refinedIntTypesAnalysis.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [353:49] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables[ValueParameterDescriptorImpl]
 
@@ -838,7 +840,7 @@ Inferred types:
     <K> -> Type
     <V> -> Int
 
-'analyzeLiveness' @ [359:30] ==> public fun analyzeLiveness(node: MethodNode): List<VariableLivenessFrame> defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'analyzeLiveness' @ [359:30] ==> public fun analyzeLiveness(node: MethodNode): List<VariableLivenessFrame> defined in org.jetbrains.kotlin.codegen.optimization.common in file variableLiveness.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [359:46] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables[ValueParameterDescriptorImpl]
 
@@ -862,7 +864,7 @@ Inferred types:
 
 'stackSize' @ [364:71] ==> public final val <V : (Value..Value?)> Frame<out BasicValue>.stackSize: Int[MyPropertyDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> Captured(out BasicValue)
 
 'frames' @ [368:25] ==> val frames: Array<out Frame<out BasicValue>?> defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables[LocalVariableDescriptor]
 
@@ -878,7 +880,7 @@ Inferred types:
 
 'locals' @ [369:37] ==> public final val <V : (Value..Value?)> Frame<out BasicValue>.locals: Int[MyPropertyDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> Captured(out BasicValue)
 
 'mutableMapOf' @ [370:35] ==> @SinceKotlin @InlineOnly public inline fun <K, V> mutableMapOf(): MutableMap<Type, Int> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -945,8 +947,6 @@ Inferred types:
 
 'value' @ [398:34] ==> val value: (BasicValue..BasicValue?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables.<anonymous>[LocalVariableDescriptor]
 
-'StrictBasicValue' @ [398:43] ==> public companion object defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue[FakeCallableDescriptorForObject]
-
 'UNINITIALIZED_VALUE' @ [398:60] ==> @JvmField public final val UNINITIALIZED_VALUE: StrictBasicValue defined in org.jetbrains.kotlin.codegen.optimization.common.StrictBasicValue.Companion[PropertyDescriptorImpl]
 
 'livenessFrame' @ [398:83] ==> val livenessFrame: VariableLivenessFrame defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables[LocalVariableDescriptor]
@@ -984,7 +984,7 @@ Inferred types:
 
 'tryCatchBlockEndLabelAfterSuspensionCall' @ [405:47] ==> private final val SuspensionPoint.tryCatchBlockEndLabelAfterSuspensionCall: LabelNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor[PropertyDescriptorImpl]
 
-'withInstructionAdapter' @ [405:89] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [405:89] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'aconst' @ [406:33] ==> public open fun aconst(p0: (Any..Any?)): Unit defined in org.jetbrains.org.objectweb.asm.commons.InstructionAdapter[JavaMethodDescriptor]
 
@@ -1000,7 +1000,7 @@ Inferred types:
 
 'type' @ [415:38] ==> val type: (Type..Type?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables[LocalVariableDescriptor]
 
-'normalize' @ [415:43] ==> private fun Type.normalize(): (Type..Type?) defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'normalize' @ [415:43] ==> private fun Type.normalize(): (Type..Type?) defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'varsCountByType' @ [417:35] ==> val varsCountByType: MutableMap<Type, Int> defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables[LocalVariableDescriptor]
 
@@ -1016,7 +1016,7 @@ Inferred types:
 
 'normalizedType' @ [420:33] ==> val normalizedType: (Type..Type?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables[LocalVariableDescriptor]
 
-'fieldNameForVar' @ [420:48] ==> private fun Type.fieldNameForVar(index: Int): String defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'fieldNameForVar' @ [420:48] ==> private fun Type.fieldNameForVar(index: Int): String defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'indexBySort' @ [420:64] ==> val indexBySort: Int defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables[LocalVariableDescriptor]
 
@@ -1037,7 +1037,7 @@ Inferred types:
 
 'suspensionCallBegin' @ [425:49] ==> public final val suspensionCallBegin: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.SuspensionPoint[PropertyDescriptorImpl]
 
-'withInstructionAdapter' @ [425:70] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [425:70] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'load' @ [426:29] ==> public open fun load(p0: Int, p1: (Type..Type?)): Unit defined in org.jetbrains.org.objectweb.asm.commons.InstructionAdapter[JavaMethodDescriptor]
 
@@ -1077,7 +1077,7 @@ Inferred types:
 
 'tryCatchBlockEndLabelAfterSuspensionCall' @ [433:43] ==> private final val SuspensionPoint.tryCatchBlockEndLabelAfterSuspensionCall: LabelNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor[PropertyDescriptorImpl]
 
-'withInstructionAdapter' @ [433:85] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [433:85] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'load' @ [434:29] ==> public open fun load(p0: Int, p1: (Type..Type?)): Unit defined in org.jetbrains.org.objectweb.asm.commons.InstructionAdapter[JavaMethodDescriptor]
 
@@ -1142,6 +1142,8 @@ Inferred types:
 Inferred types:
     <T> -> Function0<Unit>
 
+'invoke' @ [448:51] ==> public abstract operator fun invoke(): Unit defined in kotlin.Function0[FunctionInvokeDescriptor]
+
 'maxVarsCountByType' @ [450:9] ==> val maxVarsCountByType: MutableMap<Type, Int> defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables[LocalVariableDescriptor]
 
 'forEach' @ [450:28] ==> @HidesMembers public inline fun <K, V> Map<out Type, Int>.forEach(action: (Map.Entry<Type, Int>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -1169,15 +1171,13 @@ Inferred types:
 
 'newField' @ [453:47] ==> @NotNull public abstract fun newField(@NotNull origin: JvmDeclarationOrigin, access: Int, @NotNull name: String, @NotNull desc: String, @Nullable signature: String?, @Nullable value: Any?): FieldVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [454:25] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [454:46] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'NO_FLAG_PACKAGE_PRIVATE' @ [454:65] ==> public const final val NO_FLAG_PACKAGE_PRIVATE: Int defined in org.jetbrains.kotlin.codegen.AsmUtil[JavaPropertyDescriptor]
 
 'type' @ [455:25] ==> val type: Type defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables.<anonymous>[LocalVariableDescriptor]
 
-'fieldNameForVar' @ [455:30] ==> private fun Type.fieldNameForVar(index: Int): String defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'fieldNameForVar' @ [455:30] ==> private fun Type.fieldNameForVar(index: Int): String defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [455:46] ==> val index: Int defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.spillVariables.<anonymous>[LocalVariableDescriptor]
 
@@ -1199,9 +1199,9 @@ Inferred types:
 
 'next' @ [467:38] ==> public final val AbstractInsnNode.next: (AbstractInsnNode..AbstractInsnNode?)[MyPropertyDescriptor]
 
-'java' @ [467:50] ==> public val <T> KClass<out AbstractInsnNode>.java: Class<out AbstractInsnNode> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [467:50] ==> public val <T> KClass<out (AbstractInsnNode..AbstractInsnNode?)>.java: Class<out (AbstractInsnNode..AbstractInsnNode?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AbstractInsnNode
+    <T> -> Captured(out (org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode..org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode?))
 
 'suspensionCallEnd' @ [467:58] ==> public final val suspensionCallEnd: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.SuspensionPoint[PropertyDescriptorImpl]
 
@@ -1217,7 +1217,9 @@ Inferred types:
 
 'LabelNode' @ [480:50] ==> public constructor LabelNode() defined in org.jetbrains.org.objectweb.asm.tree.LabelNode[JavaClassConstructorDescriptor]
 
-'CodegenUtil' @ [481:40] ==> public object CodegenUtil defined in org.jetbrains.kotlin.backend.common[FakeCallableDescriptorForObject]
+'?:' @ [481:40] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Int?, right: Int): Int[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Int
 
 'getLineNumberForElement' @ [481:52] ==> @JvmStatic public final fun getLineNumberForElement(statement: PsiElement, markEndOffset: Boolean): Int? defined in org.jetbrains.kotlin.backend.common.CodegenUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -1227,7 +1229,7 @@ Inferred types:
 
 'suspensionCallEnd' @ [482:45] ==> public final val suspensionCallEnd: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.SuspensionPoint[PropertyDescriptorImpl]
 
-'findNextOrNull' @ [482:63] ==> public inline fun AbstractInsnNode.findNextOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'findNextOrNull' @ [482:63] ==> public inline fun AbstractInsnNode.findNextOrNull(predicate: (AbstractInsnNode) -> Boolean): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [482:80] ==> value-parameter it: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.transformCallAndReturnContinuationLabel.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1246,7 +1248,7 @@ Inferred types:
 
 'suspensionCallBegin' @ [485:37] ==> public final val suspensionCallBegin: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.coroutines.SuspensionPoint[PropertyDescriptorImpl]
 
-'insnListOf' @ [486:26] ==> public fun insnListOf(vararg insns: AbstractInsnNode): InsnList defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'insnListOf' @ [486:26] ==> public fun insnListOf(vararg insns: AbstractInsnNode): InsnList defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'VarInsnNode' @ [487:34] ==> public constructor VarInsnNode(p0: Int, p1: Int) defined in org.jetbrains.org.objectweb.asm.tree.VarInsnNode[JavaClassConstructorDescriptor]
 
@@ -1254,7 +1256,7 @@ Inferred types:
 
 'continuationIndex' @ [487:61] ==> private final var continuationIndex: Int defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor[PropertyDescriptorImpl]
 
-'withInstructionAdapter' @ [488:35] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [488:35] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'iconst' @ [488:60] ==> public open fun iconst(p0: Int): Unit defined in org.jetbrains.org.objectweb.asm.commons.InstructionAdapter[JavaMethodDescriptor]
 
@@ -1270,7 +1272,7 @@ Inferred types:
 
 'tryCatchBlockEndLabelAfterSuspensionCall' @ [493:31] ==> private final val SuspensionPoint.tryCatchBlockEndLabelAfterSuspensionCall: LabelNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor[PropertyDescriptorImpl]
 
-'withInstructionAdapter' @ [493:73] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [493:73] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'dup' @ [494:17] ==> public open fun dup(): Unit defined in org.jetbrains.org.objectweb.asm.commons.InstructionAdapter[JavaMethodDescriptor]
 
@@ -1348,7 +1350,7 @@ Inferred types:
 
 'possibleTryCatchBlockStart' @ [520:20] ==> val possibleTryCatchBlockStart: LabelNode defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.transformCallAndReturnContinuationLabel.<anonymous>[LocalVariableDescriptor]
 
-'withInstructionAdapter' @ [520:48] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'withInstructionAdapter' @ [520:48] ==> public inline fun withInstructionAdapter(block: InstructionAdapter.() -> Unit): InsnList defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'generateResumeWithExceptionCheck' @ [521:17] ==> private fun InstructionAdapter.generateResumeWithExceptionCheck(exceptionIndex: Int): Unit defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
@@ -1450,10 +1452,10 @@ Inferred types:
 
 'tryCatchBlocks' @ [573:28] ==> public final var tryCatchBlocks: (MutableList<(TryCatchBlockNode..TryCatchBlockNode?)>..List<(TryCatchBlockNode..TryCatchBlockNode?)>?) defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaPropertyDescriptor]
 
-'flatMap' @ [573:43] ==> public inline fun <T, R> Iterable<(TryCatchBlockNode..TryCatchBlockNode?)>.flatMap(transform: ((TryCatchBlockNode..TryCatchBlockNode?)) -> Iterable<(TryCatchBlockNode..TryCatchBlockNode?)>): List<(TryCatchBlockNode..TryCatchBlockNode?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [573:43] ==> public inline fun <T, R> Iterable<(TryCatchBlockNode..TryCatchBlockNode?)>.flatMap(transform: ((TryCatchBlockNode..TryCatchBlockNode?)) -> Iterable<TryCatchBlockNode>): List<TryCatchBlockNode> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.org.objectweb.asm.tree.TryCatchBlockNode..org.jetbrains.org.objectweb.asm.tree.TryCatchBlockNode?)
-    <R> -> (org.jetbrains.org.objectweb.asm.tree.TryCatchBlockNode..org.jetbrains.org.objectweb.asm.tree.TryCatchBlockNode?)
+    <R> -> TryCatchBlockNode
 
 'instructions' @ [575:29] ==> val instructions: (InsnList..InsnList?) defined in org.jetbrains.kotlin.codegen.coroutines.CoroutineTransformerMethodVisitor.splitTryCatchBlocksContainingSuspensionPoint[LocalVariableDescriptor]
 
@@ -1683,7 +1685,7 @@ Inferred types:
 
 '!' @ [651:78] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'isStatic' @ [651:79] ==> private fun isStatic(access: Int): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'isStatic' @ [651:79] ==> private fun isStatic(access: Int): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'access' @ [651:88] ==> value-parameter access: Int defined in org.jetbrains.kotlin.codegen.coroutines.getLastParameterIndex[ValueParameterDescriptorImpl]
 
@@ -1740,13 +1742,13 @@ Inferred types:
 
 'thisName' @ [667:36] ==> value-parameter thisName: String defined in org.jetbrains.kotlin.codegen.coroutines.getParameterTypesIndicesForCoroutineConstructor[ValueParameterDescriptorImpl]
 
-'getAllParameterTypes' @ [670:17] ==> private fun getAllParameterTypes(desc: String, hasDispatchReceiver: Boolean, thisName: String): Array<Type> defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'getAllParameterTypes' @ [670:17] ==> private fun getAllParameterTypes(desc: String, hasDispatchReceiver: Boolean, thisName: String): Array<Type> defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [670:38] ==> value-parameter desc: String defined in org.jetbrains.kotlin.codegen.coroutines.getParameterTypesIndicesForCoroutineConstructor[ValueParameterDescriptorImpl]
 
 '!' @ [670:44] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'isStatic' @ [670:45] ==> private fun isStatic(access: Int): Boolean defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'isStatic' @ [670:45] ==> private fun isStatic(access: Int): Boolean defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'containingFunctionAccess' @ [670:54] ==> value-parameter containingFunctionAccess: Int defined in org.jetbrains.kotlin.codegen.coroutines.getParameterTypesIndicesForCoroutineConstructor[ValueParameterDescriptorImpl]
 
@@ -1762,6 +1764,8 @@ Inferred types:
     <R> -> Int
 
 'Type' @ [670:107] ==> private constructor Type(p0: Int, p1: (CharArray..CharArray?), p2: Int, p3: Int) defined in org.jetbrains.org.objectweb.asm.Type[JavaClassConstructorDescriptor]
+
+'getSize' @ [670:113] ==> public open fun getSize(): Int defined in org.jetbrains.org.objectweb.asm.Type[JavaMethodDescriptor]
 
 'sum' @ [670:122] ==> @JvmName public fun Iterable<Int>.sum(): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 
@@ -1795,13 +1799,13 @@ Inferred types:
 
 'desc' @ [677:31] ==> value-parameter desc: String defined in org.jetbrains.kotlin.codegen.coroutines.getAllParameterTypes[ValueParameterDescriptorImpl]
 
-'findSafelyReachableReturns' @ [684:34] ==> private fun findSafelyReachableReturns(methodNode: MethodNode): Array<Set<Int>?> defined in org.jetbrains.kotlin.codegen.coroutines[SimpleFunctionDescriptorImpl]
+'findSafelyReachableReturns' @ [684:34] ==> private fun findSafelyReachableReturns(methodNode: MethodNode): Array<Set<Int>?> defined in org.jetbrains.kotlin.codegen.coroutines in file CoroutineTransformerMethodVisitor.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [684:61] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.kotlin.codegen.coroutines.allSuspensionPointsAreTailCalls[ValueParameterDescriptorImpl]
 
 'analyze' @ [685:42] ==> @NotNull public open fun <V : (Value..Value?)> analyze(@NotNull internalClassName: String, @NotNull node: MethodNode, @NotNull interpreter: Interpreter<(SourceValue..SourceValue?)>): (Array<(Frame<(SourceValue..SourceValue?)>..Frame<(SourceValue..SourceValue?)>?)>..Array<out (Frame<(SourceValue..SourceValue?)>..Frame<(SourceValue..SourceValue?)>?)>) defined in org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer[JavaMethodDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> SourceValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.SourceValue..org.jetbrains.org.objectweb.asm.tree.analysis.SourceValue?)
 
 'thisName' @ [685:50] ==> value-parameter thisName: String defined in org.jetbrains.kotlin.codegen.coroutines.allSuspensionPointsAreTailCalls[ValueParameterDescriptorImpl]
 
@@ -1869,6 +1873,8 @@ Inferred types:
     <R> -> Int
 
 'instructions' @ [698:29] ==> val instructions: (InsnList..InsnList?) defined in org.jetbrains.kotlin.codegen.coroutines.allSuspensionPointsAreTailCalls[LocalVariableDescriptor]
+
+'indexOf' @ [698:43] ==> public open fun indexOf(p0: (AbstractInsnNode..AbstractInsnNode?)): Int defined in org.jetbrains.org.objectweb.asm.tree.InsnList[JavaMethodDescriptor]
 
 'beginIndex' @ [698:55] ==> val beginIndex: Int defined in org.jetbrains.kotlin.codegen.coroutines.allSuspensionPointsAreTailCalls.<anonymous>[LocalVariableDescriptor]
 
@@ -1983,7 +1989,9 @@ Inferred types:
 
 'reachableReturnsIndices' @ [744:34] ==> val reachableReturnsIndices: Array<Set<Int>?> defined in org.jetbrains.kotlin.codegen.coroutines.findSafelyReachableReturns[LocalVariableDescriptor]
 
-'fold' @ [745:30] ==> public inline fun <T, R> Iterable<Set<Int>?>.fold(initial: Set<Int>?, operation: (Set<Int>?, Set<Int>?) -> Set<Int>?): Set<Int>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'get' @ [744:59] ==> public final operator fun get(index: Int): Set<Int>? defined in kotlin.Array[DeserializedSimpleFunctionDescriptor]
+
+'fold' @ [745:30] ==> public inline fun <T, R> Iterable<Set<Int>?>.fold(initial: Set<Int>?, operation: (acc: Set<Int>?, Set<Int>?) -> Set<Int>?): Set<Int>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Set<Int>?
     <R> -> Set<Int>?
@@ -2061,6 +2069,8 @@ Inferred types:
 
 'insns' @ [763:52] ==> val insns: (InsnList..InsnList?) defined in org.jetbrains.kotlin.codegen.coroutines.isInvisibleInDebugVarInsn[LocalVariableDescriptor]
 
+'indexOf' @ [763:59] ==> public open fun indexOf(p0: (AbstractInsnNode..AbstractInsnNode?)): Int defined in org.jetbrains.org.objectweb.asm.tree.InsnList[JavaMethodDescriptor]
+
 'it' @ [763:69] ==> value-parameter it: (LocalVariableNode..LocalVariableNode?) defined in org.jetbrains.kotlin.codegen.coroutines.isInvisibleInDebugVarInsn.<anonymous>[ValueParameterDescriptorImpl]
 
 'end' @ [763:72] ==> public final var end: (LabelNode..LabelNode?) defined in org.jetbrains.org.objectweb.asm.tree.LocalVariableNode[JavaPropertyDescriptor]
@@ -2071,6 +2081,8 @@ Inferred types:
     <R> -> Int
 
 'insns' @ [763:80] ==> val insns: (InsnList..InsnList?) defined in org.jetbrains.kotlin.codegen.coroutines.isInvisibleInDebugVarInsn[LocalVariableDescriptor]
+
+'indexOf' @ [763:87] ==> public open fun indexOf(p0: (AbstractInsnNode..AbstractInsnNode?)): Int defined in org.jetbrains.org.objectweb.asm.tree.InsnList[JavaMethodDescriptor]
 
 '+' @ [768:10] ==> public operator fun <T> Iterable<Int>.plus(element: Int): List<Int> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

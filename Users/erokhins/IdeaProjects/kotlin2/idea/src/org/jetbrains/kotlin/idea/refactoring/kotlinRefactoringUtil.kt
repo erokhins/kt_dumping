@@ -39,6 +39,8 @@ Inferred types:
     <T> -> String
     <R> -> FqName
 
+'FqName' @ [123:44] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
+
 'ROOT' @ [123:62] ==> public final val ROOT: (FqName..FqName?) defined in org.jetbrains.kotlin.name.FqName[JavaPropertyDescriptor]
 
 'getInstance' @ [124:31] ==> public open fun getInstance(p0: (Project..Project?)): (PsiFileFactory..PsiFileFactory?) defined in com.intellij.psi.PsiFileFactory[JavaMethodDescriptor]
@@ -145,13 +147,13 @@ Inferred types:
 
 'this' @ [146:18] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.getUsageContext[ReceiverParameterDescriptorImpl]
 
-'?:' @ [147:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: NavigatablePsiElement?, right: (NavigatablePsiElement..NavigatablePsiElement?)): (NavigatablePsiElement..NavigatablePsiElement?)[SimpleFunctionDescriptorImpl]
+'?:' @ [147:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> (com.intellij.psi.NavigatablePsiElement..com.intellij.psi.NavigatablePsiElement?)
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'getParentOfType' @ [147:37] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtDeclaration..KtDeclaration?)>..Class<out (KtDeclaration..KtDeclaration?)>?)): KtDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
 'this' @ [148:17] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.getUsageContext[ReceiverParameterDescriptorImpl]
 
@@ -332,7 +334,7 @@ Inferred types:
 
 'includeAll' @ [207:9] ==> value-parameter includeAll: Boolean = ... defined in org.jetbrains.kotlin.idea.refactoring.getExtractionContainers[ValueParameterDescriptorImpl]
 
-'getAllExtractionContainers' @ [207:28] ==> public fun PsiElement.getAllExtractionContainers(strict: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getAllExtractionContainers' @ [207:28] ==> public fun PsiElement.getAllExtractionContainers(strict: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'strict' @ [207:55] ==> value-parameter strict: Boolean = ... defined in org.jetbrains.kotlin.idea.refactoring.getExtractionContainers[ValueParameterDescriptorImpl]
 
@@ -380,11 +382,11 @@ Inferred types:
 
 'singletonList' @ [214:34] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KtFile..KtFile?)): (MutableList<(KtFile..KtFile?)>..List<(KtFile..KtFile?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtFile
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
 
 'enclosingDeclaration' @ [214:48] ==> val enclosingDeclaration: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.getExtractionContainers[LocalVariableDescriptor]
 
-'getAllExtractionContainers' @ [215:27] ==> public fun PsiElement.getAllExtractionContainers(strict: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'getAllExtractionContainers' @ [215:27] ==> public fun PsiElement.getAllExtractionContainers(strict: Boolean = ...): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'strict' @ [215:54] ==> value-parameter strict: Boolean = ... defined in org.jetbrains.kotlin.idea.refactoring.getExtractionContainers[ValueParameterDescriptorImpl]
 
@@ -410,21 +412,21 @@ Inferred types:
 
 'body' @ [219:67] ==> public abstract val body: KtExpression? defined in org.jetbrains.kotlin.psi.KtAnonymousInitializer[DeserializedPropertyDescriptor]
 
-'if (targetContainer is KtBlockExpression) Collections.singletonList(targetContainer) else Collections.emptyList()' @ [222:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (MutableList<out KtElement>..List<KtElement>?), elseBranch: (MutableList<out KtElement>..List<KtElement>?)): (MutableList<out KtElement>..List<KtElement>?)[SimpleFunctionDescriptorImpl]
+'if (targetContainer is KtBlockExpression) Collections.singletonList(targetContainer) else Collections.emptyList()' @ [222:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (MutableList<out (KtElement..KtElement?)>..List<(KtElement..KtElement?)>?), elseBranch: (MutableList<out (KtElement..KtElement?)>..List<(KtElement..KtElement?)>?)): (MutableList<out (KtElement..KtElement?)>..List<(KtElement..KtElement?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.MutableList<out org.jetbrains.kotlin.psi.KtElement>..kotlin.collections.List<org.jetbrains.kotlin.psi.KtElement>?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.MutableList<out (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)>..kotlin.collections.List<(org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)>?)
 
 'targetContainer' @ [222:17] ==> val targetContainer: KtExpression? defined in org.jetbrains.kotlin.idea.refactoring.getExtractionContainers[LocalVariableDescriptor]
 
 'singletonList' @ [222:67] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KtBlockExpression..KtBlockExpression?)): (MutableList<(KtBlockExpression..KtBlockExpression?)>..List<(KtBlockExpression..KtBlockExpression?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtBlockExpression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtBlockExpression..org.jetbrains.kotlin.psi.KtBlockExpression?)
 
 'targetContainer' @ [222:81] ==> val targetContainer: KtExpression? defined in org.jetbrains.kotlin.idea.refactoring.getExtractionContainers[LocalVariableDescriptor]
 
 'emptyList' @ [222:115] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(KtElement..KtElement?)>..List<(KtElement..KtElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtElement
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 '!' @ [231:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -501,7 +503,7 @@ Inferred types:
 
 'JBList' @ [265:16] ==> public constructor JBList<E : (Any..Any?)>(@NotNull p0: (MutableCollection<(E..E?)>..Collection<(E..E?)>)) defined in com.intellij.ui.components.JBList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> E
+    <E : (Any..Any?)> -> (E..E?)
 
 'elements' @ [265:23] ==> value-parameter elements: List<T> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[ValueParameterDescriptorImpl]
 
@@ -512,15 +514,15 @@ Inferred types:
 
 'toPsi' @ [265:36] ==> value-parameter toPsi: (T) -> E defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[ValueParameterDescriptorImpl]
 
-'list' @ [266:5] ==> val list: JBList<E> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
+'list' @ [266:5] ==> val list: JBList<(E..E?)> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
 
-'cellRenderer' @ [266:10] ==> public final var <E : (Any..Any?)> JBList<E>.cellRenderer: (ListCellRenderer<in (E..E?)>..ListCellRenderer<in (E..E?)>?)[MyPropertyDescriptor]
+'cellRenderer' @ [266:10] ==> public final var <E : (Any..Any?)> JBList<(E..E?)>.cellRenderer: (ListCellRenderer<in (E..E?)>..ListCellRenderer<in (E..E?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> E
+    <E : (Any..Any?)> -> (E..E?)
 
 'renderer' @ [266:25] ==> value-parameter renderer: PsiElementListCellRenderer<E> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[ValueParameterDescriptorImpl]
 
-'list' @ [267:5] ==> val list: JBList<E> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
+'list' @ [267:5] ==> val list: JBList<(E..E?)> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
 
 'addListSelectionListener' @ [267:10] ==> public final fun addListSelectionListener(p0: (((ListSelectionEvent..ListSelectionEvent?)) -> Unit..(((ListSelectionEvent..ListSelectionEvent?)) -> Unit)?)): Unit defined in com.intellij.ui.components.JBList[MyFunctionDescriptor]
 
@@ -528,11 +530,11 @@ Inferred types:
 
 'dropHighlight' @ [268:22] ==> public final fun dropHighlight(): Unit defined in org.jetbrains.kotlin.idea.refactoring.SelectionAwareScopeHighlighter[SimpleFunctionDescriptorImpl]
 
-'list' @ [269:21] ==> val list: JBList<E> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
+'list' @ [269:21] ==> val list: JBList<(E..E?)> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
 
-'selectedIndex' @ [269:26] ==> public final var <E : (Any..Any?)> JBList<E>.selectedIndex: Int[MyPropertyDescriptor]
+'selectedIndex' @ [269:26] ==> public final var <E : (Any..Any?)> JBList<(E..E?)>.selectedIndex: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> E
+    <E : (Any..Any?)> -> (E..E?)
 
 'index' @ [270:13] ==> val index: Int defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup.<anonymous>[LocalVariableDescriptor]
 
@@ -540,11 +542,11 @@ Inferred types:
 
 'highlight' @ [271:26] ==> public final fun highlight(wholeAffected: PsiElement): Unit defined in org.jetbrains.kotlin.idea.refactoring.SelectionAwareScopeHighlighter[SimpleFunctionDescriptorImpl]
 
-'list' @ [271:36] ==> val list: JBList<E> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
+'list' @ [271:36] ==> val list: JBList<(E..E?)> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
 
-'model' @ [271:41] ==> public final var <E : (Any..Any?)> JBList<E>.model: (ListModel<(E..E?)>..ListModel<(E..E?)>?)[MyPropertyDescriptor]
+'model' @ [271:41] ==> public final var <E : (Any..Any?)> JBList<(E..E?)>.model: (ListModel<(E..E?)>..ListModel<(E..E?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> E
+    <E : (Any..Any?)> -> (E..E?)
 
 'getElementAt' @ [271:49] ==> public abstract fun getElementAt(p0: Int): (E..E?) defined in javax.swing.ListModel[JavaMethodDescriptor]
 
@@ -557,7 +559,7 @@ Inferred types:
 
 'PopupChooserBuilder' @ [275:17] ==> public constructor PopupChooserBuilder(@NotNull p0: raw (JList<(Any..Any?)>..JList<*>)) defined in com.intellij.openapi.ui.popup.PopupChooserBuilder[JavaClassConstructorDescriptor]
 
-'list' @ [275:37] ==> val list: JBList<E> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
+'list' @ [275:37] ==> val list: JBList<(E..E?)> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
 
 'title' @ [276:9] ==> value-parameter title: String? defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[ValueParameterDescriptorImpl]
 
@@ -578,11 +580,11 @@ Inferred types:
 
 'setItemChoosenCallback' @ [278:9] ==> @NotNull public final fun setItemChoosenCallback(@NotNull p0: () -> Unit): PopupChooserBuilder defined in com.intellij.openapi.ui.popup.PopupChooserBuilder[MyFunctionDescriptor]
 
-'list' @ [279:25] ==> val list: JBList<E> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
+'list' @ [279:25] ==> val list: JBList<(E..E?)> defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup[LocalVariableDescriptor]
 
-'selectedIndex' @ [279:30] ==> public final var <E : (Any..Any?)> JBList<E>.selectedIndex: Int[MyPropertyDescriptor]
+'selectedIndex' @ [279:30] ==> public final var <E : (Any..Any?)> JBList<(E..E?)>.selectedIndex: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> E
+    <E : (Any..Any?)> -> (E..E?)
 
 'index' @ [280:17] ==> val index: Int defined in org.jetbrains.kotlin.idea.refactoring.getPsiElementPopup.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -671,7 +673,7 @@ Inferred types:
 
 'singletonList' @ [316:66] ==> public open fun <T : (Any..Any?)> singletonList(p0: (TextRange..TextRange?)): (MutableList<(TextRange..TextRange?)>..List<(TextRange..TextRange?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TextRange
+    <T : (Any..Any?)> -> (com.intellij.openapi.util.TextRange..com.intellij.openapi.util.TextRange?)
 
 'selectedRange' @ [316:80] ==> val selectedRange: TextRange defined in org.jetbrains.kotlin.idea.refactoring.SelectionAwareScopeHighlighter.highlight[LocalVariableDescriptor]
 
@@ -979,9 +981,9 @@ Inferred types:
 
 'this' @ [412:34] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.chooseContainerElement.<no name provided>.getRepresentativeElement[ReceiverParameterDescriptorImpl]
 
-'?:' @ [413:49] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtExpression?, right: KtExpression): KtExpression[SimpleFunctionDescriptorImpl]
+'?:' @ [413:49] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtExpression
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'parent' @ [413:50] ==> public final val KtBlockExpression.parent: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
@@ -1118,8 +1120,6 @@ Inferred types:
 
 'this' @ [466:9] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.canRefactor[ReceiverParameterDescriptorImpl]
 
-'ProjectRootsUtil' @ [467:13] ==> public object ProjectRootsUtil defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'isInProjectSource' @ [467:30] ==> @JvmStatic public final fun isInProjectSource(element: PsiElement): Boolean defined in org.jetbrains.kotlin.idea.util.ProjectRootsUtil[DeserializedSimpleFunctionDescriptor]
 
 'this' @ [467:48] ==> <this> defined in org.jetbrains.kotlin.idea.refactoring.canRefactor[ReceiverParameterDescriptorImpl]
@@ -1221,16 +1221,16 @@ Inferred types:
 
 'referencedTypes' @ [501:65] ==> public final val PsiReferenceList.referencedTypes: (Array<(PsiClassType..PsiClassType?)>..Array<out (PsiClassType..PsiClassType?)>)[MyPropertyDescriptor]
 
-'synchronizeList' @ [503:29] ==> public final fun <Parent : (PsiElement..PsiElement?), Child : (PsiElement..PsiElement?)> synchronizeList(p0: (PsiTypeParameterList..PsiTypeParameterList?), p1: (MutableList<(PsiTypeParameter..PsiTypeParameter?)>..List<(PsiTypeParameter..PsiTypeParameter?)>?), p2: (((PsiTypeParameterList..PsiTypeParameterList?)) -> (MutableList<(PsiTypeParameter..PsiTypeParameter?)>..List<(PsiTypeParameter..PsiTypeParameter?)>?)..(((PsiTypeParameterList..PsiTypeParameterList?)) -> (MutableList<(PsiTypeParameter..PsiTypeParameter?)>..List<(PsiTypeParameter..PsiTypeParameter?)>?))?), p3: (BooleanArray..BooleanArray?)): Unit defined in com.intellij.refactoring.changeSignature.ChangeSignatureUtil[SamAdapterFunctionDescriptor]
+'synchronizeList' @ [503:29] ==> public final fun <Parent : (PsiElement..PsiElement?), Child : (PsiElement..PsiElement?)> synchronizeList(p0: PsiTypeParameterList?, p1: (MutableList<(PsiTypeParameter..PsiTypeParameter?)>..List<(PsiTypeParameter..PsiTypeParameter?)>?), p2: ((PsiTypeParameterList?) -> (MutableList<(PsiTypeParameter..PsiTypeParameter?)>..List<(PsiTypeParameter..PsiTypeParameter?)>?)..((PsiTypeParameterList?) -> (MutableList<(PsiTypeParameter..PsiTypeParameter?)>..List<(PsiTypeParameter..PsiTypeParameter?)>?))?), p3: (BooleanArray..BooleanArray?)): Unit defined in com.intellij.refactoring.changeSignature.ChangeSignatureUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <Parent : (PsiElement..PsiElement?)> -> PsiTypeParameterList
-    <Child : (PsiElement..PsiElement?)> -> PsiTypeParameter
+    <Parent : (PsiElement..PsiElement?)> -> PsiTypeParameterList?
+    <Child : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiTypeParameter..com.intellij.psi.PsiTypeParameter?)
 
 'targetTypeParamList' @ [504:17] ==> val targetTypeParamList: PsiTypeParameterList? defined in org.jetbrains.kotlin.idea.refactoring.copyTypeParameters[LocalVariableDescriptor]
 
 'newTypeParams' @ [505:17] ==> val newTypeParams: List<PsiTypeParameter> defined in org.jetbrains.kotlin.idea.refactoring.copyTypeParameters[LocalVariableDescriptor]
 
-'it' @ [506:19] ==> value-parameter it: (PsiTypeParameterList..PsiTypeParameterList?) defined in org.jetbrains.kotlin.idea.refactoring.copyTypeParameters.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [506:19] ==> value-parameter it: PsiTypeParameterList? defined in org.jetbrains.kotlin.idea.refactoring.copyTypeParameters.<anonymous>[ValueParameterDescriptorImpl]
 
 'typeParameters' @ [506:24] ==> public final val PsiTypeParameterList.typeParameters: (Array<(PsiTypeParameter..PsiTypeParameter?)>..Array<out (PsiTypeParameter..PsiTypeParameter?)>)[MyPropertyDescriptor]
 
@@ -1244,7 +1244,9 @@ Inferred types:
 
 'size' @ [507:44] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'LightClassUtil' @ [513:20] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
+'?:' @ [513:20] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiMethod?, right: PsiMethod): PsiMethod[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiMethod
 
 'getLightClassMethod' @ [513:35] ==> public final fun getLightClassMethod(function: KtFunction): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -1388,8 +1390,8 @@ Inferred types:
 
 'synchronizeList' @ [543:25] ==> public final fun <Parent : (PsiElement..PsiElement?), Child : (PsiElement..PsiElement?)> synchronizeList(p0: (PsiParameterList..PsiParameterList?), p1: (MutableList<(PsiParameter..PsiParameter?)>..List<(PsiParameter..PsiParameter?)>?), p2: (((PsiParameterList..PsiParameterList?)) -> (MutableList<(PsiParameter..PsiParameter?)>..List<(PsiParameter..PsiParameter?)>?)..(((PsiParameterList..PsiParameterList?)) -> (MutableList<(PsiParameter..PsiParameter?)>..List<(PsiParameter..PsiParameter?)>?))?), p3: (BooleanArray..BooleanArray?)): Unit defined in com.intellij.refactoring.changeSignature.ChangeSignatureUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <Parent : (PsiElement..PsiElement?)> -> PsiParameterList
-    <Child : (PsiElement..PsiElement?)> -> PsiParameter
+    <Parent : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiParameterList..com.intellij.psi.PsiParameterList?)
+    <Child : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiParameter..com.intellij.psi.PsiParameter?)
 
 'targetParamList' @ [544:13] ==> val targetParamList: PsiParameterList defined in org.jetbrains.kotlin.idea.refactoring.createJavaMethod[LocalVariableDescriptor]
 
@@ -1696,7 +1698,7 @@ Inferred types:
 
 'factory' @ [607:30] ==> val factory: (PsiElementFactory..PsiElementFactory?) defined in org.jetbrains.kotlin.idea.refactoring.createJavaClass[LocalVariableDescriptor]
 
-'createReferenceListWithRole' @ [607:38] ==> public fun PsiElementFactory.createReferenceListWithRole(references: Array<PsiJavaCodeReferenceElement>, role: PsiReferenceList.Role): PsiReferenceList? defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'createReferenceListWithRole' @ [607:38] ==> public fun PsiElementFactory.createReferenceListWithRole(references: Array<PsiJavaCodeReferenceElement>, role: PsiReferenceList.Role): PsiReferenceList? defined in org.jetbrains.kotlin.idea.refactoring in file javaElementFactoryUtils.kt[SimpleFunctionDescriptorImpl]
 
 'template' @ [608:17] ==> val template: KtLightClass defined in org.jetbrains.kotlin.idea.refactoring.createJavaClass[LocalVariableDescriptor]
 
@@ -1725,7 +1727,7 @@ Inferred types:
 
 'factory' @ [614:27] ==> val factory: (PsiElementFactory..PsiElementFactory?) defined in org.jetbrains.kotlin.idea.refactoring.createJavaClass[LocalVariableDescriptor]
 
-'createReferenceListWithRole' @ [614:35] ==> public fun PsiElementFactory.createReferenceListWithRole(references: Array<PsiJavaCodeReferenceElement>, role: PsiReferenceList.Role): PsiReferenceList? defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'createReferenceListWithRole' @ [614:35] ==> public fun PsiElementFactory.createReferenceListWithRole(references: Array<PsiJavaCodeReferenceElement>, role: PsiReferenceList.Role): PsiReferenceList? defined in org.jetbrains.kotlin.idea.refactoring in file javaElementFactoryUtils.kt[SimpleFunctionDescriptorImpl]
 
 'template' @ [615:17] ==> val template: KtLightClass defined in org.jetbrains.kotlin.idea.refactoring.createJavaClass[LocalVariableDescriptor]
 
@@ -1754,7 +1756,7 @@ Inferred types:
 
 'factory' @ [620:30] ==> val factory: (PsiElementFactory..PsiElementFactory?) defined in org.jetbrains.kotlin.idea.refactoring.createJavaClass[LocalVariableDescriptor]
 
-'createReferenceListWithRole' @ [620:38] ==> public fun PsiElementFactory.createReferenceListWithRole(references: Array<PsiJavaCodeReferenceElement>, role: PsiReferenceList.Role): PsiReferenceList? defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'createReferenceListWithRole' @ [620:38] ==> public fun PsiElementFactory.createReferenceListWithRole(references: Array<PsiJavaCodeReferenceElement>, role: PsiReferenceList.Role): PsiReferenceList? defined in org.jetbrains.kotlin.idea.refactoring in file javaElementFactoryUtils.kt[SimpleFunctionDescriptorImpl]
 
 'template' @ [621:17] ==> val template: KtLightClass defined in org.jetbrains.kotlin.idea.refactoring.createJavaClass[LocalVariableDescriptor]
 
@@ -1860,8 +1862,6 @@ Inferred types:
 
 'project' @ [647:46] ==> public final val PsiElement.project: Project[MyPropertyDescriptor]
 
-'ConverterSettings' @ [648:46] ==> public companion object defined in org.jetbrains.kotlin.j2k.ConverterSettings[FakeCallableDescriptorForObject]
-
 'defaultSettings' @ [648:74] ==> public final val defaultSettings: ConverterSettings defined in org.jetbrains.kotlin.j2k.ConverterSettings.Companion[DeserializedPropertyDescriptor]
 
 'IdeaJavaToKotlinServices' @ [649:46] ==> public object IdeaJavaToKotlinServices : JavaToKotlinConverterServices defined in org.jetbrains.kotlin.idea.j2k in file IdeaJavaToKotlinServices.kt[FakeCallableDescriptorForObject]
@@ -1916,7 +1916,7 @@ Inferred types:
 
 'subscribe' @ [669:16] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(RefactoringEventListener..RefactoringEventListener?)>, @NotNull p1: RefactoringEventListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> RefactoringEventListener
+    <L : (Any..Any?)> -> (com.intellij.refactoring.listeners.RefactoringEventListener..com.intellij.refactoring.listeners.RefactoringEventListener?)
 
 'REFACTORING_EVENT_TOPIC' @ [669:51] ==> public final val REFACTORING_EVENT_TOPIC: (Topic<(RefactoringEventListener..RefactoringEventListener?)>..Topic<(RefactoringEventListener..RefactoringEventListener?)>?) defined in com.intellij.refactoring.listeners.RefactoringEventListener[JavaPropertyDescriptor]
 
@@ -2260,13 +2260,13 @@ Inferred types:
 
 'typeArguments' @ [797:32] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'call' @ [798:25] ==> val call: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.getQualifiedTypeArgumentList[LocalVariableDescriptor]
 
 'candidateDescriptor' @ [798:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'typeParameters' @ [798:50] ==> public final val CallableDescriptor.typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)>[MyPropertyDescriptor]
 
@@ -2461,7 +2461,7 @@ Inferred types:
 
 'element' @ [852:37] ==> val element: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.checkSuperMethods.getClassDescriptions.<anonymous>[LocalVariableDescriptor]
 
-'formatClassDescriptor' @ [853:70] ==> public fun formatClassDescriptor(classDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'formatClassDescriptor' @ [853:70] ==> public fun formatClassDescriptor(classDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.idea.refactoring in file renderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [853:92] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.refactoring.checkSuperMethods.getClassDescriptions.<anonymous>[LocalVariableDescriptor]
 
@@ -2494,8 +2494,6 @@ Inferred types:
 'overriddenElementsToDescriptor' @ [868:59] ==> value-parameter overriddenElementsToDescriptor: Map<PsiElement, CallableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.checkSuperMethods.askUserForMethodsToSearch[ValueParameterDescriptorImpl]
 
 'message' @ [870:36] ==> @NotNull public open fun message(@NonNls @PropertyKey p0: (String..String?), vararg p1: (Any..Any?)): String defined in org.jetbrains.kotlin.idea.KotlinBundle[JavaMethodDescriptor]
-
-'DescriptorRenderer' @ [872:17] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
 
 'COMPACT_WITH_SHORT_TYPES' @ [872:36] ==> @field:JvmField public final val COMPACT_WITH_SHORT_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
@@ -2588,7 +2586,9 @@ Inferred types:
 
 'declarationDescriptor' @ [894:78] ==> val declarationDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.idea.refactoring.checkSuperMethods[LocalVariableDescriptor]
 
-'DescriptorToSourceUtilsIde' @ [895:37] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
+'?:' @ [895:37] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'getAnyDeclaration' @ [895:64] ==> public final fun getAnyDeclaration(project: Project, descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 
@@ -2811,9 +2811,9 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> String
 
-'if (value == renameBase) deepestSuperMethods + declaration else listOf(declaration)' @ [957:38] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<{NavigatablePsiElement & PsiNameIdentifierOwner}>, elseBranch: List<{NavigatablePsiElement & PsiNameIdentifierOwner}>): List<{NavigatablePsiElement & PsiNameIdentifierOwner}>[SimpleFunctionDescriptorImpl]
+'if (value == renameBase) deepestSuperMethods + declaration else listOf(declaration)' @ [957:38] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<PsiElement>, elseBranch: List<PsiElement>): List<PsiElement>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<{NavigatablePsiElement & PsiNameIdentifierOwner}>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<PsiElement>
 
 'value' @ [957:42] ==> val value: String defined in org.jetbrains.kotlin.idea.refactoring.checkSuperMethodsWithPopup.<anonymous>[LocalVariableDescriptor]
 
@@ -2831,7 +2831,7 @@ Inferred types:
 
 'invoke' @ [958:17] ==> public abstract operator fun invoke(p1: List<PsiElement>): Unit defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'chosenElements' @ [958:24] ==> val chosenElements: List<{NavigatablePsiElement & PsiNameIdentifierOwner}> defined in org.jetbrains.kotlin.idea.refactoring.checkSuperMethodsWithPopup.<anonymous>[LocalVariableDescriptor]
+'chosenElements' @ [958:24] ==> val chosenElements: List<PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.checkSuperMethodsWithPopup.<anonymous>[LocalVariableDescriptor]
 
 'createPopup' @ [960:14] ==> @NotNull public open fun createPopup(): JBPopup defined in com.intellij.openapi.ui.popup.PopupChooserBuilder[JavaMethodDescriptor]
 
@@ -2861,7 +2861,7 @@ Inferred types:
 
 'header' @ [971:27] ==> val header: KtDeclaration defined in org.jetbrains.kotlin.idea.refactoring.withHeaderImplementations[LocalVariableDescriptor]
 
-'headerImplementations' @ [971:34] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerImplementations' @ [971:34] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [972:12] ==> public fun <T> listOf(element: KtDeclaration): List<KtDeclaration> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

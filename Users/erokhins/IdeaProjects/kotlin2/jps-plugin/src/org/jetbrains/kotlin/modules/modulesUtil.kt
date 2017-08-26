@@ -20,5 +20,5 @@
 
 'typeId' @ [32:56] ==> public final val <T : (BuildTarget<*>..BuildTarget<*>?)> BuildTargetType<out (BuildTarget<*>..BuildTarget<*>?)>.typeId: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (BuildTarget<*>..BuildTarget<*>?)> -> (org.jetbrains.jps.builders.BuildTarget<*>..org.jetbrains.jps.builders.BuildTarget<*>?)
+    <T : (BuildTarget<*>..BuildTarget<*>?)> -> Captured(*)
 

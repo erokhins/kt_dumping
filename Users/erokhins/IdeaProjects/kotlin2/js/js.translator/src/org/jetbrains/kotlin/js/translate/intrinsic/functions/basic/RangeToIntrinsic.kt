@@ -28,8 +28,6 @@
 
 'getContributedDescriptors' @ [34:61] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [34:87] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CLASSIFIERS' @ [34:108] ==> @field:JvmField public final val CLASSIFIERS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
 'it' @ [35:13] ==> value-parameter it: Name defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.basic.RangeToIntrinsic.apply.<anonymous>[ValueParameterDescriptorImpl]

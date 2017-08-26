@@ -6,7 +6,7 @@
 
 'this' @ [36:21] ==> <this> defined in org.jetbrains.kotlin.jsr223.KotlinJsr223StandardScriptEngineFactory4Idea[LazyClassReceiverParameterDescriptor]
 
-'scriptCompilationClasspathFromContext' @ [37:21] ==> private fun scriptCompilationClasspathFromContext(classLoader: ClassLoader): List<File> defined in org.jetbrains.kotlin.jsr223[SimpleFunctionDescriptorImpl]
+'scriptCompilationClasspathFromContext' @ [37:21] ==> private fun scriptCompilationClasspathFromContext(classLoader: ClassLoader): List<File> defined in org.jetbrains.kotlin.jsr223 in file KotlinJsr223StandardScriptEngineFactory4Idea.kt[SimpleFunctionDescriptorImpl]
 
 'currentThread' @ [37:66] ==> public open fun currentThread(): (Thread..Thread?) defined in java.lang.Thread[JavaMethodDescriptor]
 
@@ -83,17 +83,19 @@ Inferred types:
     <T> -> (java.net.URL..java.net.URL?)
     <R : Any> -> File
 
+'toFile' @ [56:119] ==> private fun URL.toFile(): File? defined in org.jetbrains.kotlin.jsr223 in file KotlinJsr223StandardScriptEngineFactory4Idea.kt[SimpleFunctionDescriptorImpl]
+
 'emptyList' @ [56:130] ==> public fun <T> emptyList(): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
 
-'lazy' @ [58:40] ==> public fun <T> lazy(initializer: () -> File): Lazy<File> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [58:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> File
+    <T> -> T
 
-'?:' @ [60:5] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: File?, right: File): File[SimpleFunctionDescriptorImpl]
+'?:' @ [60:5] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: File?, right: File?): File?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> File
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> File?
 
 'getProperty' @ [60:12] ==> public open fun getProperty(p0: (String..String?)): (String..String?) defined in java.lang.System[JavaMethodDescriptor]
 
@@ -102,11 +104,13 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [60:54] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'takeIf' @ [60:61] ==> @InlineOnly @SinceKotlin public inline fun <T> File.takeIf(predicate: (File) -> Boolean): File? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
 
-'PathUtil' @ [61:8] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
+'exists' @ [60:74] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
 'kotlinPathsForIdeaPlugin' @ [61:17] ==> @JvmStatic public final val kotlinPathsForIdeaPlugin: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
@@ -129,7 +133,9 @@ Inferred types:
     <T> -> String
     <R> -> File
 
-'classpathFromClassloader' @ [67:14] ==> public fun classpathFromClassloader(classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.jsr223[SimpleFunctionDescriptorImpl]
+'File' @ [66:91] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
+'classpathFromClassloader' @ [67:14] ==> public fun classpathFromClassloader(classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.jsr223 in file KotlinJsr223StandardScriptEngineFactory4Idea.kt[SimpleFunctionDescriptorImpl]
 
 'classLoader' @ [67:39] ==> value-parameter classLoader: ClassLoader defined in org.jetbrains.kotlin.jsr223.scriptCompilationClasspathFromContext[ValueParameterDescriptorImpl]
 
@@ -172,9 +178,11 @@ Inferred types:
 Inferred types:
     <T> -> File
 
-'lazy' @ [76:39] ==> public fun <T> lazy(initializer: () -> File?): Lazy<File?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'exists' @ [73:40] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
+
+'getValue' @ [76:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> File?
+    <T> -> T
 
 '?:' @ [77:5] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: File?, right: File?): File?[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -187,9 +195,13 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [77:58] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'takeIf' @ [77:65] ==> @InlineOnly @SinceKotlin public inline fun <T> File.takeIf(predicate: (File) -> Boolean): File? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
+
+'exists' @ [77:78] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
 'File' @ [78:8] ==> public constructor File(p0: (File..File?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
@@ -203,9 +215,11 @@ Inferred types:
 Inferred types:
     <T> -> File
 
-'lazy' @ [81:46] ==> public fun <T> lazy(initializer: () -> File?): Lazy<File?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'exists' @ [78:80] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
+
+'getValue' @ [81:46] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> File?
+    <T> -> T
 
 '?:' @ [82:5] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: File?, right: File?): File?[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -218,9 +232,13 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [82:60] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'takeIf' @ [82:67] ==> @InlineOnly @SinceKotlin public inline fun <T> File.takeIf(predicate: (File) -> Boolean): File? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
+
+'exists' @ [82:80] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
 'File' @ [83:8] ==> public constructor File(p0: (File..File?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
@@ -234,9 +252,11 @@ Inferred types:
 Inferred types:
     <T> -> File
 
-'lazy' @ [86:41] ==> public fun <T> lazy(initializer: () -> List<File?>): Lazy<List<File?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'exists' @ [83:88] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
+
+'getValue' @ [86:41] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<File?>
+    <T> -> T
 
 'listOf' @ [86:48] ==> public fun <T> listOf(vararg elements: File?): List<File?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

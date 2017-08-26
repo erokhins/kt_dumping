@@ -18,7 +18,7 @@ Inferred types:
 
 'templateExpression' @ [36:13] ==> value-parameter templateExpression: KtStringTemplateExpression defined in org.jetbrains.kotlin.idea.intentions.RemoveSingleExpressionStringTemplateInspection.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'singleExpressionOrNull' @ [36:32] ==> private fun KtStringTemplateExpression.singleExpressionOrNull(): KtExpression? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'singleExpressionOrNull' @ [36:32] ==> private fun KtStringTemplateExpression.singleExpressionOrNull(): KtExpression? defined in org.jetbrains.kotlin.idea.intentions in file RemoveSingleExpressionStringTemplateIntention.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [36:58] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -47,11 +47,11 @@ Inferred types:
 
 'element' @ [49:13] ==> value-parameter element: KtStringTemplateExpression defined in org.jetbrains.kotlin.idea.intentions.RemoveSingleExpressionStringTemplateIntention.isApplicableTo[ValueParameterDescriptorImpl]
 
-'singleExpressionOrNull' @ [49:21] ==> private fun KtStringTemplateExpression.singleExpressionOrNull(): KtExpression? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'singleExpressionOrNull' @ [49:21] ==> private fun KtStringTemplateExpression.singleExpressionOrNull(): KtExpression? defined in org.jetbrains.kotlin.idea.intentions in file RemoveSingleExpressionStringTemplateIntention.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [52:26] ==> value-parameter element: KtStringTemplateExpression defined in org.jetbrains.kotlin.idea.intentions.RemoveSingleExpressionStringTemplateIntention.applyTo[ValueParameterDescriptorImpl]
 
-'singleExpressionOrNull' @ [52:34] ==> private fun KtStringTemplateExpression.singleExpressionOrNull(): KtExpression? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'singleExpressionOrNull' @ [52:34] ==> private fun KtStringTemplateExpression.singleExpressionOrNull(): KtExpression? defined in org.jetbrains.kotlin.idea.intentions in file RemoveSingleExpressionStringTemplateIntention.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [53:20] ==> val expression: KtExpression defined in org.jetbrains.kotlin.idea.intentions.RemoveSingleExpressionStringTemplateIntention.applyTo[LocalVariableDescriptor]
 

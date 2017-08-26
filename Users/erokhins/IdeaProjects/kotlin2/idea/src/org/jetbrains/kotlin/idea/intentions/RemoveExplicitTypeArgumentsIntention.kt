@@ -68,7 +68,7 @@ Inferred types:
 
 'putCopyableUserData' @ [65:28] ==> public open fun <T : (Any..Any?)> putCopyableUserData(@NotNull p0: Key<(Unit..Unit?)>, p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtCallExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'key' @ [65:48] ==> val key: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.RemoveExplicitTypeArgumentsIntention.Companion.isApplicableTo[LocalVariableDescriptor]
 
@@ -84,7 +84,7 @@ Inferred types:
 
 'putCopyableUserData' @ [67:28] ==> public open fun <T : (Any..Any?)> putCopyableUserData(@NotNull p0: Key<(Unit..Unit?)>, p1: Unit?): Unit defined in org.jetbrains.kotlin.psi.KtCallExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'key' @ [67:48] ==> val key: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.RemoveExplicitTypeArgumentsIntention.Companion.isApplicableTo[LocalVariableDescriptor]
 
@@ -98,7 +98,7 @@ Inferred types:
 
 'getCopyableUserData' @ [69:101] ==> public open fun <T : (Any..Any?)> getCopyableUserData(@NotNull p0: Key<(Unit..Unit?)>): Unit? defined in org.jetbrains.kotlin.psi.KtCallExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'key' @ [69:121] ==> val key: Key<Unit> defined in org.jetbrains.kotlin.idea.intentions.RemoveExplicitTypeArgumentsIntention.Companion.isApplicableTo[LocalVariableDescriptor]
 
@@ -146,13 +146,13 @@ Inferred types:
 
 'typeArguments' @ [83:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'newCall' @ [84:27] ==> val newCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.intentions.RemoveExplicitTypeArgumentsIntention.Companion.isApplicableTo[LocalVariableDescriptor]
 
 'typeArguments' @ [84:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.typeArguments: (MutableMap<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>..Map<(TypeParameterDescriptor..TypeParameterDescriptor?), (KotlinType..KotlinType?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (approximateFlexible) {
                     KotlinTypeChecker.DEFAULT.equalTypes(type1, type2)

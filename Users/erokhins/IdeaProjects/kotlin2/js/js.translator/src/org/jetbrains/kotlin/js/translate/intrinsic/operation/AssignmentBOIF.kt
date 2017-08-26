@@ -18,7 +18,7 @@
 
 'of' @ [41:52] ==> public open fun <E : (Any..Any?)> of(p0: (KtSingleValueToken..KtSingleValueToken?)): (ImmutableSet<(KtSingleValueToken..KtSingleValueToken?)>..ImmutableSet<(KtSingleValueToken..KtSingleValueToken?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> KtSingleValueToken
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.lexer.KtSingleValueToken..org.jetbrains.kotlin.lexer.KtSingleValueToken?)
 
 'EQ' @ [41:64] ==> public final val EQ: (KtSingleValueToken..KtSingleValueToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 

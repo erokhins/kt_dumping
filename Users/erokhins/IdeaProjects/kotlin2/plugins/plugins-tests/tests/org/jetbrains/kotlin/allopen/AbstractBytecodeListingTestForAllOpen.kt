@@ -4,8 +4,6 @@
 
 'ANNOTATIONS_FOR_TESTS' @ [25:79] ==> public final val ANNOTATIONS_FOR_TESTS: List<String> defined in org.jetbrains.kotlin.allopen.AbstractAllOpenDeclarationAttributeAltererExtension.Companion[DeserializedPropertyDescriptor]
 
-'AllOpenCommandLineProcessor' @ [26:27] ==> public companion object defined in org.jetbrains.kotlin.allopen.AllOpenCommandLineProcessor[FakeCallableDescriptorForObject]
-
 'SUPPORTED_PRESETS' @ [26:55] ==> public final val SUPPORTED_PRESETS: Map<String, List<String>> defined in org.jetbrains.kotlin.allopen.AllOpenCommandLineProcessor.Companion[DeserializedPropertyDescriptor]
 
 'flatMap' @ [26:73] ==> public inline fun <K, V, R> Map<out String, List<String>>.flatMap(transform: (Map.Entry<String, List<String>>) -> Iterable<String>): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]

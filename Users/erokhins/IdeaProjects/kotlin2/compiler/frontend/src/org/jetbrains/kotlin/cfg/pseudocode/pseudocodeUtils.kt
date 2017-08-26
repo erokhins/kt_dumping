@@ -2,7 +2,7 @@
 
 'resultingDescriptor' @ [56:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'when (receiverValue) {
         resolvedCall.extensionReceiver -> {
@@ -25,7 +25,7 @@ Inferred types:
 
 'extensionReceiver' @ [59:22] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callableDescriptor' @ [60:37] ==> val callableDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.cfg.pseudocode.getReceiverTypePredicate[LocalVariableDescriptor]
 
@@ -43,7 +43,7 @@ Inferred types:
 
 'dispatchReceiver' @ [63:22] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'callableDescriptor' @ [64:43] ==> val callableDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.cfg.pseudocode.getReceiverTypePredicate[LocalVariableDescriptor]
 
@@ -51,7 +51,7 @@ Inferred types:
 Inferred types:
     <D : CallableDescriptor> -> CallableDescriptor
 
-'or' @ [65:20] ==> public fun or(predicates: Collection<TypePredicate>): TypePredicate? defined in org.jetbrains.kotlin.cfg.pseudocode[SimpleFunctionDescriptorImpl]
+'or' @ [65:20] ==> public fun or(predicates: Collection<TypePredicate>): TypePredicate? defined in org.jetbrains.kotlin.cfg.pseudocode in file TypePredicate.kt[SimpleFunctionDescriptorImpl]
 
 'rootCallableDescriptors' @ [65:23] ==> val rootCallableDescriptors: List<CallableDescriptor> defined in org.jetbrains.kotlin.cfg.pseudocode.getReceiverTypePredicate[LocalVariableDescriptor]
 
@@ -79,7 +79,7 @@ Inferred types:
 
 'call' @ [66:107] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'isSafeCall' @ [66:112] ==> public fun Call.isSafeCall(): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil in file callUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -135,7 +135,7 @@ Inferred types:
 
 'callee' @ [94:26] ==> val callee: KtExpression defined in org.jetbrains.kotlin.cfg.pseudocode.getExpectedTypePredicate.getTypePredicateForUnresolvedCallArgument[LocalVariableDescriptor]
 
-'getReferenceTargets' @ [94:33] ==> public fun KtExpression.getReferenceTargets(context: BindingContext): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.bindingContextUtil[SimpleFunctionDescriptorImpl]
+'getReferenceTargets' @ [94:33] ==> public fun KtExpression.getReferenceTargets(context: BindingContext): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.bindingContextUtil in file BindingContextUtils.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [94:53] ==> value-parameter bindingContext: BindingContext defined in org.jetbrains.kotlin.cfg.pseudocode.getExpectedTypePredicate[ValueParameterDescriptorImpl]
 
@@ -188,7 +188,7 @@ Inferred types:
 
 'create' @ [112:50] ==> @NotNull public open fun <D : (CallableDescriptor..CallableDescriptor?)> create(@NotNull candidate: ResolutionCandidate<(FunctionDescriptor..FunctionDescriptor?)>, @NotNull trace: DelegatingBindingTrace, @NotNull tracing: TracingStrategy, @NotNull dataFlowInfoForArguments: MutableDataFlowInfoForArguments): ResolvedCallImpl<(FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.resolve.calls.model.ResolvedCallImpl[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'resolutionCandidate' @ [113:21] ==> val resolutionCandidate: (ResolutionCandidate<(FunctionDescriptor..FunctionDescriptor?)>..ResolutionCandidate<(FunctionDescriptor..FunctionDescriptor?)>?) defined in org.jetbrains.kotlin.cfg.pseudocode.getExpectedTypePredicate.getTypePredicateForUnresolvedCallArgument[LocalVariableDescriptor]
 
@@ -200,15 +200,13 @@ Inferred types:
 
 'DataFlowInfoForArgumentsImpl' @ [116:21] ==> public constructor DataFlowInfoForArgumentsImpl(@NotNull initialInfo: DataFlowInfo, @NotNull call: Call) defined in org.jetbrains.kotlin.resolve.calls.model.DataFlowInfoForArgumentsImpl[JavaClassConstructorDescriptor]
 
-'DataFlowInfo' @ [116:50] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [116:63] ==> public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfo.Companion[PropertyDescriptorImpl]
 
 'call' @ [116:70] ==> val call: Call defined in org.jetbrains.kotlin.cfg.pseudocode.getExpectedTypePredicate.getTypePredicateForUnresolvedCallArgument[LocalVariableDescriptor]
 
 'mapValueArgumentsToParameters' @ [118:59] ==> public open fun <D : (CallableDescriptor..CallableDescriptor?)> mapValueArgumentsToParameters(@NotNull call: Call, @NotNull tracing: TracingStrategy, @NotNull candidateCall: MutableResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>): (ValueArgumentsToParametersMapper.Status..ValueArgumentsToParametersMapper.Status?) defined in org.jetbrains.kotlin.resolve.calls.ValueArgumentsToParametersMapper[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'call' @ [118:89] ==> val call: Call defined in org.jetbrains.kotlin.cfg.pseudocode.getExpectedTypePredicate.getTypePredicateForUnresolvedCallArgument[LocalVariableDescriptor]
 
@@ -293,7 +291,7 @@ Inferred types:
 
 'AllTypes' @ [135:85] ==> public object AllTypes : TypePredicate defined in org.jetbrains.kotlin.cfg.pseudocode in file TypePredicate.kt[FakeCallableDescriptorForObject]
 
-'or' @ [138:16] ==> public fun or(predicates: Collection<TypePredicate>): TypePredicate? defined in org.jetbrains.kotlin.cfg.pseudocode[SimpleFunctionDescriptorImpl]
+'or' @ [138:16] ==> public fun or(predicates: Collection<TypePredicate>): TypePredicate? defined in org.jetbrains.kotlin.cfg.pseudocode in file TypePredicate.kt[SimpleFunctionDescriptorImpl]
 
 'predicates' @ [138:19] ==> val predicates: ArrayList<TypePredicate> defined in org.jetbrains.kotlin.cfg.pseudocode.getExpectedTypePredicate.getTypePredicateForUnresolvedCallArgument[LocalVariableDescriptor]
 
@@ -508,7 +506,7 @@ Inferred types:
 
 'resultingDescriptor' @ [171:60] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'type' @ [171:105] ==> public final val VariableDescriptor.type: KotlinType[MyPropertyDescriptor]
 
@@ -585,7 +583,7 @@ Inferred types:
 
 'valueArguments' @ [188:70] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.valueArguments: (MutableMap<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>..Map<(ValueParameterDescriptor..ValueParameterDescriptor?), (ResolvedValueArgument..ResolvedValueArgument?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'parameter' @ [188:85] ==> value-parameter parameter: ValueParameterDescriptor defined in org.jetbrains.kotlin.cfg.pseudocode.getExpectedTypePredicate.addTypePredicates.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -752,7 +750,7 @@ Inferred types:
 
 'value' @ [229:23] ==> value-parameter value: PseudoValue defined in org.jetbrains.kotlin.cfg.pseudocode.getExpectedTypePredicate[ValueParameterDescriptorImpl]
 
-'and' @ [230:12] ==> public fun and(predicates: Collection<TypePredicate>): TypePredicate defined in org.jetbrains.kotlin.cfg.pseudocode[SimpleFunctionDescriptorImpl]
+'and' @ [230:12] ==> public fun and(predicates: Collection<TypePredicate>): TypePredicate defined in org.jetbrains.kotlin.cfg.pseudocode in file TypePredicate.kt[SimpleFunctionDescriptorImpl]
 
 'typePredicates' @ [230:16] ==> val typePredicates: LinkedHashSet<TypePredicate?> defined in org.jetbrains.kotlin.cfg.pseudocode.getExpectedTypePredicate[LocalVariableDescriptor]
 
@@ -773,7 +771,7 @@ Inferred types:
 
 'resultingDescriptor' @ [235:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'extractVariableDescriptorIfAny' @ [236:32] ==> @Nullable public open fun extractVariableDescriptorIfAny(@NotNull instruction: Instruction, @NotNull bindingContext: BindingContext): VariableDescriptor? defined in org.jetbrains.kotlin.cfg.pseudocode.PseudocodeUtil[JavaMethodDescriptor]
 
@@ -865,7 +863,7 @@ Inferred types:
 
 'resultingDescriptor' @ [250:63] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'when (element) {
                     is KtNamedFunction -> element.name == null
@@ -922,7 +920,7 @@ Inferred types:
 
 'getParentOfType' @ [284:29] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtDeclaration..KtDeclaration?)>..Class<out (KtDeclaration..KtDeclaration?)>?)): KtDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
 'this' @ [284:45] ==> <this> defined in org.jetbrains.kotlin.cfg.pseudocode.containingDeclarationForPseudocode[ReceiverParameterDescriptorImpl]
 

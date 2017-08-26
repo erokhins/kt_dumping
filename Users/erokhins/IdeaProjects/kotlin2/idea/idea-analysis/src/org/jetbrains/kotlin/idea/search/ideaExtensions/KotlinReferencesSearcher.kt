@@ -61,8 +61,6 @@ Inferred types:
 
 'kotlinOptions' @ [80:93] ==> public final val kotlinOptions: KotlinReferencesSearchOptions defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReferencesSearchParameters[PropertyDescriptorImpl]
 
-'KotlinReferencesSearchOptions' @ [81:40] ==> public companion object defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReferencesSearchOptions[FakeCallableDescriptorForObject]
-
 'Empty' @ [81:70] ==> public final val Empty: KotlinReferencesSearchOptions defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReferencesSearchOptions.Companion[PropertyDescriptorImpl]
 
 'ArrayList' @ [83:33] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
@@ -127,7 +125,7 @@ Inferred types:
 
 'elements' @ [103:17] ==> val elements: List<PsiNamedElement> defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReferencesSearcher.QueryProcessor.processInReadAction.<anonymous>[LocalVariableDescriptor]
 
-'fold' @ [103:26] ==> public inline fun <T, R> Iterable<PsiNamedElement>.fold(initial: SearchScope, operation: (SearchScope, PsiNamedElement) -> SearchScope): SearchScope defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [103:26] ==> public inline fun <T, R> Iterable<PsiNamedElement>.fold(initial: SearchScope, operation: (acc: SearchScope, PsiNamedElement) -> SearchScope): SearchScope defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiNamedElement
     <R> -> SearchScope
@@ -699,14 +697,14 @@ Inferred types:
 
 'declaration' @ [261:72] ==> val declaration: KtDeclaration defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReferencesSearcher.QueryProcessor.processKtClassOrObject[LocalVariableDescriptor]
 
-'let' @ [262:39] ==> @InlineOnly public inline fun <T, R> KtLightMember<PsiMember>.let(block: (KtLightMember<PsiMember>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [262:39] ==> @InlineOnly public inline fun <T, R> KtLightMember<*>.let(block: (KtLightMember<*>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtLightMember<PsiMember>
+    <T> -> KtLightMember<*>
     <R> -> Unit
 
 'searchNamedElement' @ [262:45] ==> private final fun searchNamedElement(element: PsiNamedElement?, name: String? = ...): Unit defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReferencesSearcher.QueryProcessor[SimpleFunctionDescriptorImpl]
 
-'it' @ [262:64] ==> value-parameter it: KtLightMember<PsiMember> defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReferencesSearcher.QueryProcessor.processKtClassOrObject.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [262:64] ==> value-parameter it: KtLightMember<*> defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReferencesSearcher.QueryProcessor.processKtClassOrObject.<anonymous>[ValueParameterDescriptorImpl]
 
 'containingClass' @ [273:37] ==> value-parameter containingClass: PsiClass? defined in org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReferencesSearcher.QueryProcessor.searchDataClassComponentUsages[ValueParameterDescriptorImpl]
 

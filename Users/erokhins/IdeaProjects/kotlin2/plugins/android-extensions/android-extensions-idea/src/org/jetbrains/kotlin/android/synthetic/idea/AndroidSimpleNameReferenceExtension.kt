@@ -22,8 +22,6 @@
 
 'text' @ [39:47] ==> public final val KtExpression.text: (String..String?)[MyPropertyDescriptor]
 
-'AndroidConst' @ [39:55] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic[FakeCallableDescriptorForObject]
-
 'SYNTHETIC_PACKAGE' @ [39:68] ==> public final val SYNTHETIC_PACKAGE: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[DeserializedPropertyDescriptor]
 
 'reference' @ [43:31] ==> value-parameter reference: KtSimpleNameReference defined in org.jetbrains.kotlin.android.synthetic.idea.AndroidSimpleNameReferenceExtension.handleElementRename[ValueParameterDescriptorImpl]

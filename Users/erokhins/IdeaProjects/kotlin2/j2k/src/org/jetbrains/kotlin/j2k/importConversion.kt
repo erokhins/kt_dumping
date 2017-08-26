@@ -7,7 +7,7 @@ Inferred types:
     <T> -> (com.intellij.psi.PsiImportStatementBase..com.intellij.psi.PsiImportStatementBase?)
     <R> -> Import
 
-'convertImport' @ [39:24] ==> public fun Converter.convertImport(anImport: PsiImportStatementBase, dumpConversion: Boolean = ...): List<Import> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'convertImport' @ [39:24] ==> public fun Converter.convertImport(anImport: PsiImportStatementBase, dumpConversion: Boolean = ...): List<Import> defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [39:38] ==> value-parameter it: (PsiImportStatementBase..PsiImportStatementBase?) defined in org.jetbrains.kotlin.j2k.convertImportList.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -66,13 +66,13 @@ Inferred types:
 
 'Import' @ [49:16] ==> public constructor Import(name: String) defined in org.jetbrains.kotlin.j2k.ast.Import[ClassConstructorDescriptorImpl]
 
-'renderImportName' @ [49:23] ==> private fun renderImportName(fqName: FqName, isOnDemand: Boolean): String defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'renderImportName' @ [49:23] ==> private fun renderImportName(fqName: FqName, isOnDemand: Boolean): String defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [49:40] ==> val fqName: FqName defined in org.jetbrains.kotlin.j2k.convertImport[LocalVariableDescriptor]
 
 'onDemand' @ [49:48] ==> val onDemand: Boolean defined in org.jetbrains.kotlin.j2k.convertImport[LocalVariableDescriptor]
 
-'convertImport' @ [52:9] ==> private fun Converter.convertImport(fqName: FqName, ref: PsiJavaCodeReferenceElement, isOnDemand: Boolean, isImportStatic: Boolean): List<String> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'convertImport' @ [52:9] ==> private fun Converter.convertImport(fqName: FqName, ref: PsiJavaCodeReferenceElement, isOnDemand: Boolean, isImportStatic: Boolean): List<String> defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [52:23] ==> val fqName: FqName defined in org.jetbrains.kotlin.j2k.convertImport[LocalVariableDescriptor]
 
@@ -86,6 +86,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> Import
+
+'Import' @ [53:24] ==> public constructor Import(name: String) defined in org.jetbrains.kotlin.j2k.ast.Import[ClassConstructorDescriptorImpl]
 
 'convertedImports' @ [55:12] ==> val convertedImports: List<Import> defined in org.jetbrains.kotlin.j2k.convertImport[LocalVariableDescriptor]
 
@@ -139,7 +141,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'convertNonStaticImport' @ [67:20] ==> private fun convertNonStaticImport(fqName: FqName, isOnDemand: Boolean, target: PsiElement?): List<String> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'convertNonStaticImport' @ [67:20] ==> private fun convertNonStaticImport(fqName: FqName, isOnDemand: Boolean, target: PsiElement?): List<String> defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [67:43] ==> value-parameter it: ClassId defined in org.jetbrains.kotlin.j2k.convertImport.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -176,19 +178,19 @@ Inferred types:
 
 'isOnDemand' @ [74:13] ==> value-parameter isOnDemand: Boolean defined in org.jetbrains.kotlin.j2k.convertImport[ValueParameterDescriptorImpl]
 
-'convertStaticImportOnDemand' @ [75:13] ==> private fun Converter.convertStaticImportOnDemand(fqName: FqName, target: PsiElement?): List<String> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'convertStaticImportOnDemand' @ [75:13] ==> private fun Converter.convertStaticImportOnDemand(fqName: FqName, target: PsiElement?): List<String> defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [75:41] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.j2k.convertImport[ValueParameterDescriptorImpl]
 
 'target' @ [75:49] ==> val target: PsiElement? defined in org.jetbrains.kotlin.j2k.convertImport[LocalVariableDescriptor]
 
-'convertStaticExplicitImport' @ [78:13] ==> private fun convertStaticExplicitImport(fqName: FqName, target: PsiElement?): List<String> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'convertStaticExplicitImport' @ [78:13] ==> private fun convertStaticExplicitImport(fqName: FqName, target: PsiElement?): List<String> defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [78:41] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.j2k.convertImport[ValueParameterDescriptorImpl]
 
 'target' @ [78:49] ==> val target: PsiElement? defined in org.jetbrains.kotlin.j2k.convertImport[LocalVariableDescriptor]
 
-'convertNonStaticImport' @ [82:9] ==> private fun convertNonStaticImport(fqName: FqName, isOnDemand: Boolean, target: PsiElement?): List<String> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'convertNonStaticImport' @ [82:9] ==> private fun convertNonStaticImport(fqName: FqName, isOnDemand: Boolean, target: PsiElement?): List<String> defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [82:32] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.j2k.convertImport[ValueParameterDescriptorImpl]
 
@@ -332,7 +334,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'renderImportName' @ [115:19] ==> private fun renderImportName(fqName: FqName, isOnDemand: Boolean): String defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'renderImportName' @ [115:19] ==> private fun renderImportName(fqName: FqName, isOnDemand: Boolean): String defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [115:36] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.j2k.convertStaticImportOnDemand[ValueParameterDescriptorImpl]
 
@@ -426,7 +428,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'renderImportName' @ [143:19] ==> private fun renderImportName(fqName: FqName, isOnDemand: Boolean): String defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'renderImportName' @ [143:19] ==> private fun renderImportName(fqName: FqName, isOnDemand: Boolean): String defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [143:36] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.j2k.convertStaticExplicitImport[ValueParameterDescriptorImpl]
 
@@ -462,7 +464,7 @@ Inferred types:
 
 'isOnDemand' @ [151:18] ==> value-parameter isOnDemand: Boolean defined in org.jetbrains.kotlin.j2k.convertNonStaticImport[ValueParameterDescriptorImpl]
 
-'isFacadeClassFromLibrary' @ [152:21] ==> public fun isFacadeClassFromLibrary(element: PsiElement?): Boolean defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'isFacadeClassFromLibrary' @ [152:21] ==> public fun isFacadeClassFromLibrary(element: PsiElement?): Boolean defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'target' @ [152:46] ==> value-parameter target: PsiElement? defined in org.jetbrains.kotlin.j2k.convertNonStaticImport[ValueParameterDescriptorImpl]
 
@@ -470,7 +472,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'isImportedByDefault' @ [154:21] ==> private fun isImportedByDefault(c: KtLightClass): Boolean defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'isImportedByDefault' @ [154:21] ==> private fun isImportedByDefault(c: KtLightClass): Boolean defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'target' @ [154:41] ==> value-parameter target: PsiElement? defined in org.jetbrains.kotlin.j2k.convertNonStaticImport[ValueParameterDescriptorImpl]
 
@@ -482,7 +484,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'renderImportName' @ [158:19] ==> private fun renderImportName(fqName: FqName, isOnDemand: Boolean): String defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'renderImportName' @ [158:19] ==> private fun renderImportName(fqName: FqName, isOnDemand: Boolean): String defined in org.jetbrains.kotlin.j2k in file importConversion.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [158:36] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.j2k.convertNonStaticImport[ValueParameterDescriptorImpl]
 
@@ -506,13 +508,9 @@ Inferred types:
 
 'getDefaultImports' @ [164:60] ==> public open fun getDefaultImports(includeKotlinComparisons: Boolean): List<ImportPath> defined in org.jetbrains.kotlin.resolve.jvm.platform.JvmPlatform[DeserializedSimpleFunctionDescriptor]
 
-'LanguageVersionSettingsImpl' @ [166:9] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [166:37] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 
 'supportsFeature' @ [166:45] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [166:61] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'DefaultImportOfPackageKotlinComparisons' @ [166:77] ==> enum entry DefaultImportOfPackageKotlinComparisons defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

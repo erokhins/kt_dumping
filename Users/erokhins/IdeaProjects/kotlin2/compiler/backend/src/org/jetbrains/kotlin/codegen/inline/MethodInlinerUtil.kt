@@ -22,7 +22,7 @@ Inferred types:
 
 'lambdaSet' @ [39:29] ==> val lambdaSet: SmartSet<LambdaInfo?> defined in org.jetbrains.kotlin.codegen.inline.getLambdaIfExistsAndMarkInstructions[LocalVariableDescriptor]
 
-'getLambdaIfExistsAndMarkInstructions' @ [40:9] ==> private fun MethodInliner.getLambdaIfExistsAndMarkInstructions(insnNode: AbstractInsnNode?, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'getLambdaIfExistsAndMarkInstructions' @ [40:9] ==> private fun MethodInliner.getLambdaIfExistsAndMarkInstructions(insnNode: AbstractInsnNode?, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [40:46] ==> value-parameter it: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.inline.getLambdaIfExistsAndMarkInstructions.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -128,7 +128,7 @@ Inferred types:
 
 'varIndex' @ [68:44] ==> val varIndex: Int defined in org.jetbrains.kotlin.codegen.inline.getLambdaIfExistsAndMarkInstructions[LocalVariableDescriptor]
 
-'singleOrNullInsn' @ [68:54] ==> private fun SourceValue.singleOrNullInsn(): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'singleOrNullInsn' @ [68:54] ==> private fun SourceValue.singleOrNullInsn(): AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'storeIns' @ [69:13] ==> val storeIns: AbstractInsnNode? defined in org.jetbrains.kotlin.codegen.inline.getLambdaIfExistsAndMarkInstructions[LocalVariableDescriptor]
 
@@ -152,7 +152,7 @@ Inferred types:
 Inferred types:
     <V : Value> -> SourceValue
 
-'getLambdaIfExistsAndMarkInstructions' @ [72:13] ==> public fun MethodInliner.getLambdaIfExistsAndMarkInstructions(sourceValue: SourceValue, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'getLambdaIfExistsAndMarkInstructions' @ [72:13] ==> public fun MethodInliner.getLambdaIfExistsAndMarkInstructions(sourceValue: SourceValue, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'topOfStack' @ [72:50] ==> val topOfStack: SourceValue defined in org.jetbrains.kotlin.codegen.inline.getLambdaIfExistsAndMarkInstructions[LocalVariableDescriptor]
 
@@ -205,7 +205,7 @@ Inferred types:
 Inferred types:
     <V : Value> -> SourceValue
 
-'getLambdaIfExistsAndMarkInstructions' @ [83:9] ==> public fun MethodInliner.getLambdaIfExistsAndMarkInstructions(sourceValue: SourceValue, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'getLambdaIfExistsAndMarkInstructions' @ [83:9] ==> public fun MethodInliner.getLambdaIfExistsAndMarkInstructions(sourceValue: SourceValue, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'dispatchReceiver' @ [83:46] ==> val dispatchReceiver: SourceValue defined in org.jetbrains.kotlin.codegen.inline.getLambdaIfExistsAndMarkInstructions[LocalVariableDescriptor]
 

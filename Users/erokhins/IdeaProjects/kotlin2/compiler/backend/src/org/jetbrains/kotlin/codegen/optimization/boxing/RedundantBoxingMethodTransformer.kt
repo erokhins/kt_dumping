@@ -8,7 +8,7 @@
 
 'analyze' @ [42:40] ==> @NotNull public open fun <V : (Value..Value?)> analyze(@NotNull internalClassName: String, @NotNull node: MethodNode, @NotNull interpreter: Interpreter<(BasicValue..BasicValue?)>): (Array<(Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>..Array<out (Frame<(BasicValue..BasicValue?)>..Frame<(BasicValue..BasicValue?)>?)>) defined in org.jetbrains.kotlin.codegen.optimization.transformer.MethodTransformer[JavaMethodDescriptor]
 Inferred types:
-    <V : (Value..Value?)> -> BasicValue
+    <V : (Value..Value?)> -> (org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue..org.jetbrains.org.objectweb.asm.tree.analysis.BasicValue?)
 
 'internalClassName' @ [42:48] ==> value-parameter internalClassName: String defined in org.jetbrains.kotlin.codegen.optimization.boxing.RedundantBoxingMethodTransformer.transform[ValueParameterDescriptorImpl]
 
@@ -836,7 +836,7 @@ Inferred types:
 
 'insn' @ [297:21] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.RedundantBoxingMethodTransformer.adaptInstruction[ValueParameterDescriptorImpl]
 
-'isAreEqualIntrinsic' @ [297:26] ==> public fun AbstractInsnNode.isAreEqualIntrinsic(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isAreEqualIntrinsic' @ [297:26] ==> public fun AbstractInsnNode.isAreEqualIntrinsic(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'adaptAreEqualIntrinsic' @ [298:25] ==> private final fun adaptAreEqualIntrinsic(node: MethodNode, insn: AbstractInsnNode, value: BoxedValueDescriptor): Unit defined in org.jetbrains.kotlin.codegen.optimization.boxing.RedundantBoxingMethodTransformer[SimpleFunctionDescriptorImpl]
 
@@ -848,7 +848,7 @@ Inferred types:
 
 'insn' @ [299:21] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.RedundantBoxingMethodTransformer.adaptInstruction[ValueParameterDescriptorImpl]
 
-'isJavaLangComparableCompareTo' @ [299:26] ==> public fun AbstractInsnNode.isJavaLangComparableCompareTo(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isJavaLangComparableCompareTo' @ [299:26] ==> public fun AbstractInsnNode.isJavaLangComparableCompareTo(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'adaptJavaLangComparableCompareTo' @ [300:25] ==> private final fun adaptJavaLangComparableCompareTo(node: MethodNode, insn: AbstractInsnNode, value: BoxedValueDescriptor): Unit defined in org.jetbrains.kotlin.codegen.optimization.boxing.RedundantBoxingMethodTransformer[SimpleFunctionDescriptorImpl]
 
@@ -860,11 +860,11 @@ Inferred types:
 
 'insn' @ [301:21] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.RedundantBoxingMethodTransformer.adaptInstruction[ValueParameterDescriptorImpl]
 
-'isJavaLangClassBoxing' @ [301:26] ==> public fun AbstractInsnNode.isJavaLangClassBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isJavaLangClassBoxing' @ [301:26] ==> public fun AbstractInsnNode.isJavaLangClassBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [302:21] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.RedundantBoxingMethodTransformer.adaptInstruction[ValueParameterDescriptorImpl]
 
-'isJavaLangClassUnboxing' @ [302:26] ==> public fun AbstractInsnNode.isJavaLangClassUnboxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isJavaLangClassUnboxing' @ [302:26] ==> public fun AbstractInsnNode.isJavaLangClassUnboxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'node' @ [303:25] ==> value-parameter node: MethodNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.RedundantBoxingMethodTransformer.adaptInstruction[ValueParameterDescriptorImpl]
 
@@ -891,7 +891,7 @@ Inferred types:
 
 'insn' @ [310:21] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.RedundantBoxingMethodTransformer.adaptInstruction[ValueParameterDescriptorImpl]
 
-'isJavaLangComparableCompareTo' @ [310:26] ==> public fun AbstractInsnNode.isJavaLangComparableCompareTo(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isJavaLangComparableCompareTo' @ [310:26] ==> public fun AbstractInsnNode.isJavaLangComparableCompareTo(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'adaptJavaLangComparableCompareTo' @ [311:21] ==> private final fun adaptJavaLangComparableCompareTo(node: MethodNode, insn: AbstractInsnNode, value: BoxedValueDescriptor): Unit defined in org.jetbrains.kotlin.codegen.optimization.boxing.RedundantBoxingMethodTransformer[SimpleFunctionDescriptorImpl]
 

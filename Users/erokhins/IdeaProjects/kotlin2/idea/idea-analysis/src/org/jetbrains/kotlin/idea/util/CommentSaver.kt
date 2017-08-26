@@ -1,7 +1,5 @@
 'this' @ [31:90] ==> public constructor CommentSaver(originalElements: PsiChildRange, saveLineBreaks: Boolean = ...) defined in org.jetbrains.kotlin.idea.util.CommentSaver[ClassConstructorDescriptorImpl]
 
-'PsiChildRange' @ [31:95] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
-
 'singleElement' @ [31:109] ==> public final fun singleElement(element: PsiElement): PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[DeserializedSimpleFunctionDescriptor]
 
 'originalElement' @ [31:123] ==> value-parameter originalElement: PsiElement defined in org.jetbrains.kotlin.idea.util.CommentSaver.<init>[ValueParameterDescriptorImpl]
@@ -44,8 +42,6 @@ Inferred types:
 'LineBreakTreeElement' @ [41:81] ==> public constructor LineBreakTreeElement() defined in org.jetbrains.kotlin.idea.util.CommentSaver.LineBreakTreeElement[ClassConstructorDescriptorImpl]
 
 'element' @ [42:21] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.util.CommentSaver.TreeElement.Companion.create[ValueParameterDescriptorImpl]
-
-'CommentTreeElement' @ [42:46] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CommentSaver.CommentTreeElement[FakeCallableDescriptorForObject]
 
 'create' @ [42:65] ==> public final fun create(comment: PsiComment): CommentSaver.CommentTreeElement defined in org.jetbrains.kotlin.idea.util.CommentSaver.CommentTreeElement.Companion[SimpleFunctionDescriptorImpl]
 
@@ -312,7 +308,9 @@ Inferred types:
 
 'savedTreeElement' @ [154:26] ==> private final var PsiElement.savedTreeElement: CommentSaver.TreeElement? defined in org.jetbrains.kotlin.idea.util.CommentSaver[PropertyDescriptorImpl]
 
-'TreeElement' @ [156:30] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CommentSaver.TreeElement[FakeCallableDescriptorForObject]
+'?:' @ [156:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CommentSaver.TreeElement?, right: CommentSaver.TreeElement): CommentSaver.TreeElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> TreeElement
 
 'create' @ [156:42] ==> public final fun create(element: PsiElement): CommentSaver.TreeElement? defined in org.jetbrains.kotlin.idea.util.CommentSaver.TreeElement.Companion[SimpleFunctionDescriptorImpl]
 
@@ -399,13 +397,13 @@ Inferred types:
 
 'getCopyableUserData' @ [182:17] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(CommentSaver.TreeElement..CommentSaver.TreeElement?)>..Key<(CommentSaver.TreeElement..CommentSaver.TreeElement?)>?)): CommentSaver.TreeElement? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TreeElement
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.util.CommentSaver.TreeElement..org.jetbrains.kotlin.idea.util.CommentSaver.TreeElement?)
 
 'SAVED_TREE_KEY' @ [182:37] ==> private final val SAVED_TREE_KEY: Key<CommentSaver.TreeElement> defined in org.jetbrains.kotlin.idea.util.CommentSaver[PropertyDescriptorImpl]
 
 'putCopyableUserData' @ [183:22] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(CommentSaver.TreeElement..CommentSaver.TreeElement?)>..Key<(CommentSaver.TreeElement..CommentSaver.TreeElement?)>?), @Nullable p1: CommentSaver.TreeElement?): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TreeElement
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.util.CommentSaver.TreeElement..org.jetbrains.kotlin.idea.util.CommentSaver.TreeElement?)
 
 'SAVED_TREE_KEY' @ [183:42] ==> private final val SAVED_TREE_KEY: Key<CommentSaver.TreeElement> defined in org.jetbrains.kotlin.idea.util.CommentSaver[PropertyDescriptorImpl]
 
@@ -561,8 +559,6 @@ Inferred types:
 'treeElement' @ [234:45] ==> value-parameter treeElement: CommentSaver.TreeElement defined in org.jetbrains.kotlin.idea.util.CommentSaver.bindNewElement[ValueParameterDescriptorImpl]
 
 'restore' @ [238:9] ==> public final fun restore(resultElements: PsiChildRange, forceAdjustIndent: Boolean = ...): Unit defined in org.jetbrains.kotlin.idea.util.CommentSaver[SimpleFunctionDescriptorImpl]
-
-'PsiChildRange' @ [238:17] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
 
 'singleElement' @ [238:31] ==> public final fun singleElement(element: PsiElement): PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[DeserializedSimpleFunctionDescriptor]
 

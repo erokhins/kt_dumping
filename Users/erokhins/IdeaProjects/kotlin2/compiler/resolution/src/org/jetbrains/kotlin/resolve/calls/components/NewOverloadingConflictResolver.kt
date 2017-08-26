@@ -20,6 +20,8 @@ Inferred types:
 
 'Companion' @ [43:9] ==> public companion object defined in org.jetbrains.kotlin.resolve.calls.components.NewOverloadingConflictResolver[FakeCallableDescriptorForObject]
 
+'createFlatSignature' @ [43:20] ==> private final fun createFlatSignature(candidate: KotlinResolutionCandidate): FlatSignature<KotlinResolutionCandidate> defined in org.jetbrains.kotlin.resolve.calls.components.NewOverloadingConflictResolver.Companion[SimpleFunctionDescriptorImpl]
+
 'it' @ [44:11] ==> value-parameter it: KotlinResolutionCandidate defined in org.jetbrains.kotlin.resolve.calls.components.NewOverloadingConflictResolver.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
 'variableCandidateIfInvoke' @ [44:14] ==> public final val variableCandidateIfInvoke: KotlinResolutionCandidate? defined in org.jetbrains.kotlin.resolve.calls.model.KotlinResolutionCandidate[PropertyDescriptorImpl]

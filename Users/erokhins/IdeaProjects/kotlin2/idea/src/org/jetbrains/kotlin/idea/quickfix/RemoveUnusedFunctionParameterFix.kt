@@ -41,12 +41,12 @@ Inferred types:
 
 'diagnostic' @ [45:58] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedFunctionParameterFix.Companion.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [45:70] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>.psiElement: (KtParameter..KtParameter?)[MyPropertyDescriptor]
+'psiElement' @ [45:70] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>.psiElement: KtParameter[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
-'parameter' @ [46:34] ==> val parameter: (KtParameter..KtParameter?) defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedFunctionParameterFix.Companion.createAction[LocalVariableDescriptor]
+'parameter' @ [46:34] ==> val parameter: KtParameter defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedFunctionParameterFix.Companion.createAction[LocalVariableDescriptor]
 
 'parent' @ [46:44] ==> public final val KtParameter.parent: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
@@ -62,5 +62,5 @@ Inferred types:
 
 'RemoveUnusedFunctionParameterFix' @ [49:20] ==> public constructor RemoveUnusedFunctionParameterFix(parameter: KtParameter) defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedFunctionParameterFix[ClassConstructorDescriptorImpl]
 
-'parameter' @ [49:53] ==> val parameter: (KtParameter..KtParameter?) defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedFunctionParameterFix.Companion.createAction[LocalVariableDescriptor]
+'parameter' @ [49:53] ==> val parameter: KtParameter defined in org.jetbrains.kotlin.idea.quickfix.RemoveUnusedFunctionParameterFix.Companion.createAction[LocalVariableDescriptor]
 

@@ -262,7 +262,9 @@ Inferred types:
 
 'this' @ [113:19] ==> <this> defined in org.jetbrains.kotlin.idea.intentions.ConvertTwoComparisonsToRangeCheckIntention.generateRangeExpressionData.getChangeBy[ReceiverParameterDescriptorImpl]
 
-'ConstantExpressionEvaluator' @ [115:41] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [115:41] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Any?, right: Any): Any[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Any
 
 'getConstant' @ [115:69] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -521,7 +523,9 @@ Inferred types:
 
 'maxText' @ [165:67] ==> val maxText: String? defined in org.jetbrains.kotlin.idea.intentions.ConvertTwoComparisonsToRangeCheckIntention.generateRangeExpressionData[LocalVariableDescriptor]
 
-'ConstantExpressionEvaluator' @ [169:24] ==> public companion object defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator[FakeCallableDescriptorForObject]
+'?:' @ [169:24] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Any?, right: Any): Any[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Any
 
 'getConstant' @ [169:52] ==> @JvmStatic public final fun getConstant(expression: KtExpression, bindingContext: BindingContext): CompileTimeConstant<*>? defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluator.Companion[DeserializedSimpleFunctionDescriptor]
 

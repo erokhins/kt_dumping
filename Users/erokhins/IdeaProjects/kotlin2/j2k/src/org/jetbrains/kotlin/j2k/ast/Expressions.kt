@@ -259,8 +259,6 @@ Inferred types:
 
 'dotPrototype' @ [135:45] ==> value-parameter dotPrototype: PsiElement? defined in org.jetbrains.kotlin.j2k.ast.QualifiedExpression.<init>[ValueParameterDescriptorImpl]
 
-'CommentsAndSpacesInheritance' @ [135:59] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
-
 'LINE_BREAKS' @ [135:88] ==> public final val LINE_BREAKS: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
 'identifier' @ [138:17] ==> public final val identifier: Expression defined in org.jetbrains.kotlin.j2k.ast.QualifiedExpression[PropertyDescriptorImpl]
@@ -587,7 +585,7 @@ Inferred types:
 
 'size' @ [245:50] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'append' @ [246:22] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [246:22] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'block' @ [246:29] ==> public final val block: Block defined in org.jetbrains.kotlin.j2k.ast.LambdaExpression[PropertyDescriptorImpl]
 
@@ -595,7 +593,7 @@ Inferred types:
 
 'builder' @ [249:13] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.LambdaExpression.generateCode[ValueParameterDescriptorImpl]
 
-'append' @ [249:21] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [249:21] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'block' @ [249:28] ==> public final val block: Block defined in org.jetbrains.kotlin.j2k.ast.LambdaExpression[PropertyDescriptorImpl]
 
@@ -702,8 +700,6 @@ Inferred types:
 'buildNonNull' @ [287:33] ==> public final fun buildNonNull(receiver: Expression?, methodName: String, argumentList: ArgumentList = ..., typeArguments: List<Type> = ..., dotPrototype: PsiElement? = ...): MethodCallExpression defined in org.jetbrains.kotlin.j2k.ast.MethodCallExpression.Companion[SimpleFunctionDescriptorImpl]
 
 'createArrayFunction' @ [287:52] ==> val createArrayFunction: String defined in org.jetbrains.kotlin.j2k.ast.createArrayInitializerExpression[LocalVariableDescriptor]
-
-'ArgumentList' @ [287:73] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.ArgumentList[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [287:86] ==> public final fun withNoPrototype(arguments: List<Expression>): ArgumentList defined in org.jetbrains.kotlin.j2k.ast.ArgumentList.Companion[SimpleFunctionDescriptorImpl]
 

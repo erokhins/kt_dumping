@@ -1,4 +1,4 @@
-'printTree' @ [22:5] ==> private fun printTree(node: Context.Node, consumer: (String) -> Unit, depth: Int, settings: Settings): Unit defined in org.jetbrains.kotlin.js.dce[SimpleFunctionDescriptorImpl]
+'printTree' @ [22:5] ==> private fun printTree(node: Context.Node, consumer: (String) -> Unit, depth: Int, settings: Settings): Unit defined in org.jetbrains.kotlin.js.dce in file printTree.kt[SimpleFunctionDescriptorImpl]
 
 'root' @ [22:15] ==> value-parameter root: Context.Node defined in org.jetbrains.kotlin.js.dce.printTree[ValueParameterDescriptorImpl]
 
@@ -125,7 +125,7 @@ Inferred types:
 
 'printNestedMembers' @ [46:64] ==> public final val printNestedMembers: Boolean defined in org.jetbrains.kotlin.js.dce.Settings[PropertyDescriptorImpl]
 
-'printTree' @ [47:13] ==> private fun printTree(node: Context.Node, consumer: (String) -> Unit, depth: Int, settings: Settings): Unit defined in org.jetbrains.kotlin.js.dce[SimpleFunctionDescriptorImpl]
+'printTree' @ [47:13] ==> private fun printTree(node: Context.Node, consumer: (String) -> Unit, depth: Int, settings: Settings): Unit defined in org.jetbrains.kotlin.js.dce in file printTree.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [47:23] ==> val member: Context.Node defined in org.jetbrains.kotlin.js.dce.printTree[LocalVariableDescriptor]
 

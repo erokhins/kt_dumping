@@ -184,9 +184,9 @@ Inferred types:
 
 'other' @ [105:67] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.idea.intentions.SelfTargetingIntention.equals[ValueParameterDescriptorImpl]
 
-'javaClass' @ [105:73] ==> public val <T : Any> SelfTargetingIntention<out PsiElement>.javaClass: Class<SelfTargetingIntention<out PsiElement>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [105:73] ==> public val <T : Any> SelfTargetingIntention<*>.javaClass: Class<SelfTargetingIntention<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> SelfTargetingIntention<out PsiElement>
+    <T : Any> -> SelfTargetingIntention<*>
 
 'text' @ [105:86] ==> private final var text: String defined in org.jetbrains.kotlin.idea.intentions.SelfTargetingIntention[PropertyDescriptorImpl]
 

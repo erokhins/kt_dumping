@@ -4,7 +4,7 @@
 
 'orCreateSourceMapper' @ [39:68] ==> public final val <T : (KtPureElement..KtPureElement?)> MemberCodegen<out (KtPureElement..KtPureElement?)>.orCreateSourceMapper: DefaultSourceMapper[MyPropertyDescriptor]
 Inferred types:
-    <T : (KtPureElement..KtPureElement?)> -> (org.jetbrains.kotlin.psi.KtPureElement..org.jetbrains.kotlin.psi.KtPureElement?)
+    <T : (KtPureElement..KtPureElement?)> -> Captured(*)
 
 'if (InlineUtil.isArrayConstructorWithLambda(function))
                 FictitiousArrayConstructor.create(function as ConstructorDescriptor)
@@ -16,8 +16,6 @@ Inferred types:
 'isArrayConstructorWithLambda' @ [42:28] ==> public open fun isArrayConstructorWithLambda(@NotNull p0: CallableDescriptor): Boolean defined in org.jetbrains.kotlin.resolve.inline.InlineUtil[JavaMethodDescriptor]
 
 'function' @ [42:57] ==> value-parameter function: FunctionDescriptor defined in org.jetbrains.kotlin.codegen.inline.InlineCodegenForDefaultBody.<init>[ValueParameterDescriptorImpl]
-
-'FictitiousArrayConstructor' @ [43:17] ==> public companion object Factory defined in org.jetbrains.kotlin.codegen.inline.FictitiousArrayConstructor[FakeCallableDescriptorForObject]
 
 'create' @ [43:44] ==> @JvmStatic public final fun create(arrayConstructor: ConstructorDescriptor): FictitiousArrayConstructor defined in org.jetbrains.kotlin.codegen.inline.FictitiousArrayConstructor.Factory[SimpleFunctionDescriptorImpl]
 

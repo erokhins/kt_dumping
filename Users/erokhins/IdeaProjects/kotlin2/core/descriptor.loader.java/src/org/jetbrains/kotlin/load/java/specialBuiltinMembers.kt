@@ -20,8 +20,6 @@
 
 'name' @ [49:33] ==> value-parameter name: String defined in org.jetbrains.kotlin.load.java.method[ValueParameterDescriptorImpl]
 
-'SignatureBuildingComponents' @ [50:17] ==> public object SignatureBuildingComponents defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureBuilding.kt[FakeCallableDescriptorForObject]
-
 'signature' @ [50:45] ==> public final fun signature(internalName: String, jvmDescriptor: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
 'this@method' @ [50:55] ==> <this> defined in org.jetbrains.kotlin.load.java.method[ReceiverParameterDescriptorImpl]
@@ -150,6 +148,8 @@ Inferred types:
     <T> -> FqName
     <R> -> Name
 
+'shortName' @ [70:69] ==> @NotNull public open fun shortName(): Name defined in org.jetbrains.kotlin.name.FqName[JavaMethodDescriptor]
+
 'toSet' @ [70:80] ==> public fun <T> Iterable<Name>.toSet(): Set<Name> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Name
@@ -229,7 +229,7 @@ Inferred types:
     <T> -> String
     <R> -> NameAndSignature
 
-'method' @ [99:36] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [99:36] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [99:43] ==> value-parameter it: String defined in org.jetbrains.kotlin.load.java.BuiltinMethodsWithSpecialGenericSignature.ERASED_COLLECTION_PARAMETER_NAME_AND_SIGNATURES.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -282,7 +282,7 @@ Inferred types:
 
 'javaUtil' @ [117:21] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [118:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [118:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [118:96] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -290,7 +290,7 @@ Inferred types:
 
 'javaUtil' @ [119:21] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [120:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [120:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [120:94] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -298,7 +298,7 @@ Inferred types:
 
 'javaUtil' @ [122:21] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [123:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [123:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [123:99] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -306,7 +306,7 @@ Inferred types:
 
 'javaUtil' @ [124:21] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [125:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [125:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [125:101] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -314,7 +314,7 @@ Inferred types:
 
 'javaUtil' @ [126:21] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [127:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [127:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [128:62] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -322,25 +322,25 @@ Inferred types:
 
 'javaUtil' @ [130:21] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [131:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [131:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'MAP_GET_OR_DEFAULT' @ [132:144] ==> enum entry MAP_GET_OR_DEFAULT defined in org.jetbrains.kotlin.load.java.BuiltinMethodsWithSpecialGenericSignature.TypeSafeBarrierDescription[FakeCallableDescriptorForObject]
 
 'javaUtil' @ [134:21] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [135:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [135:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'NULL' @ [135:144] ==> enum entry NULL defined in org.jetbrains.kotlin.load.java.BuiltinMethodsWithSpecialGenericSignature.TypeSafeBarrierDescription[FakeCallableDescriptorForObject]
 
 'javaUtil' @ [136:21] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [137:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [137:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'NULL' @ [137:144] ==> enum entry NULL defined in org.jetbrains.kotlin.load.java.BuiltinMethodsWithSpecialGenericSignature.TypeSafeBarrierDescription[FakeCallableDescriptorForObject]
 
 'javaUtil' @ [139:21] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [140:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [140:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [140:91] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -348,7 +348,7 @@ Inferred types:
 
 'javaUtil' @ [141:21] ==> public final fun javaUtil(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [142:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [142:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [142:95] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -525,7 +525,7 @@ Inferred types:
 
 'OBJECT_PARAMETER_NON_GENERIC' @ [204:42] ==> enum entry OBJECT_PARAMETER_NON_GENERIC defined in org.jetbrains.kotlin.load.java.BuiltinMethodsWithSpecialGenericSignature.SpecialSignatureInfo[FakeCallableDescriptorForObject]
 
-'method' @ [213:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [213:30] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [213:70] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -540,7 +540,7 @@ Inferred types:
 
 'javaLang' @ [217:13] ==> public final fun javaLang(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [217:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [217:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [217:75] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -548,7 +548,7 @@ Inferred types:
 
 'javaLang' @ [218:13] ==> public final fun javaLang(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [218:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [218:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [218:77] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -556,7 +556,7 @@ Inferred types:
 
 'javaLang' @ [219:13] ==> public final fun javaLang(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [219:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [219:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [219:73] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -564,7 +564,7 @@ Inferred types:
 
 'javaLang' @ [220:13] ==> public final fun javaLang(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [220:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [220:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [220:75] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -572,7 +572,7 @@ Inferred types:
 
 'javaLang' @ [221:13] ==> public final fun javaLang(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [221:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [221:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [221:77] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -580,7 +580,7 @@ Inferred types:
 
 'javaLang' @ [222:13] ==> public final fun javaLang(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [222:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [222:32] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [222:79] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -592,7 +592,7 @@ Inferred types:
 
 'javaLang' @ [224:13] ==> public final fun javaLang(name: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
-'method' @ [225:22] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java[SimpleFunctionDescriptorImpl]
+'method' @ [225:22] ==> private fun String.method(name: String, parameters: String, returnType: String): NameAndSignature defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[SimpleFunctionDescriptorImpl]
 
 'desc' @ [225:57] ==> public final val JvmPrimitiveType.desc: String[MyPropertyDescriptor]
 
@@ -844,8 +844,6 @@ Inferred types:
 'overriddenBuiltin' @ [309:34] ==> val overriddenBuiltin: CallableMemberDescriptor defined in org.jetbrains.kotlin.load.java.getJvmMethodNameIfSpecial[LocalVariableDescriptor]
 
 'getBuiltinSpecialPropertyGetterName' @ [309:52] ==> public final fun CallableMemberDescriptor.getBuiltinSpecialPropertyGetterName(): String? defined in org.jetbrains.kotlin.load.java.BuiltinSpecialProperties[FunctionImportedFromObject]
-
-'BuiltinMethodsWithDifferentJvmName' @ [310:40] ==> public object BuiltinMethodsWithDifferentJvmName defined in org.jetbrains.kotlin.load.java in file specialBuiltinMembers.kt[FakeCallableDescriptorForObject]
 
 'getJvmName' @ [310:75] ==> public final fun getJvmName(functionDescriptor: SimpleFunctionDescriptor): Name? defined in org.jetbrains.kotlin.load.java.BuiltinMethodsWithDifferentJvmName[SimpleFunctionDescriptorImpl]
 

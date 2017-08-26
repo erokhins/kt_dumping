@@ -14,9 +14,9 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtCallableDeclaration
 
-'getParentOfType' @ [60:51] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out ({KtCallableDeclaration & KtValVarKeywordOwner}..{KtCallableDeclaration & KtValVarKeywordOwner}?)>..Class<out ({KtCallableDeclaration & KtValVarKeywordOwner}..{KtCallableDeclaration & KtValVarKeywordOwner}?)>?)): {KtCallableDeclaration & KtValVarKeywordOwner}? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'getParentOfType' @ [60:51] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (PsiElement..PsiElement?)>..Class<out (PsiElement..PsiElement?)>?)): PsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> {KtCallableDeclaration & KtValVarKeywordOwner}
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'usageElement' @ [61:21] ==> val usageElement: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.rename.AutomaticVariableRenamer.<init>[LocalVariableDescriptor]
 

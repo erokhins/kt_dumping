@@ -260,7 +260,7 @@ Inferred types:
 
 'ArrayList' @ [126:35] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (KotlinSpacingBuilder.Condition..KotlinSpacingBuilder.Condition?)>..Collection<(KotlinSpacingBuilder.Condition..KotlinSpacingBuilder.Condition?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Condition
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.idea.formatter.KotlinSpacingBuilder.Condition..org.jetbrains.kotlin.idea.formatter.KotlinSpacingBuilder.Condition?)
 
 'conditions' @ [126:45] ==> private final var conditions: ArrayList<KotlinSpacingBuilder.Condition> defined in org.jetbrains.kotlin.idea.formatter.KotlinSpacingBuilder.CustomSpacingBuilder[PropertyDescriptorImpl]
 
@@ -270,7 +270,7 @@ Inferred types:
 
 'Rule' @ [127:23] ==> public constructor Rule(conditions: List<KotlinSpacingBuilder.Condition>, action: (ASTBlock, ASTBlock, ASTBlock) -> Spacing?) defined in org.jetbrains.kotlin.idea.formatter.KotlinSpacingBuilder.Rule[ClassConstructorDescriptorImpl]
 
-'savedConditions' @ [127:28] ==> val savedConditions: ArrayList<KotlinSpacingBuilder.Condition> defined in org.jetbrains.kotlin.idea.formatter.KotlinSpacingBuilder.CustomSpacingBuilder.newRule[LocalVariableDescriptor]
+'savedConditions' @ [127:28] ==> val savedConditions: ArrayList<(KotlinSpacingBuilder.Condition..KotlinSpacingBuilder.Condition?)> defined in org.jetbrains.kotlin.idea.formatter.KotlinSpacingBuilder.CustomSpacingBuilder.newRule[LocalVariableDescriptor]
 
 'rule' @ [127:45] ==> value-parameter rule: (ASTBlock, ASTBlock, ASTBlock) -> Spacing? defined in org.jetbrains.kotlin.idea.formatter.KotlinSpacingBuilder.CustomSpacingBuilder.newRule[ValueParameterDescriptorImpl]
 

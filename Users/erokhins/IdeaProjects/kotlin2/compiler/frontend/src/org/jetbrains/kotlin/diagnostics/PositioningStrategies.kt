@@ -68,17 +68,17 @@ Inferred types:
 
 'delegationSpecifierList' @ [56:25] ==> val delegationSpecifierList: KtSuperTypeList? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DEFAULT.<no name provided>.mark[LocalVariableDescriptor]
 
-'markElement' @ [57:32] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [57:32] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'objectKeyword' @ [57:44] ==> val objectKeyword: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DEFAULT.<no name provided>.mark[LocalVariableDescriptor]
 
-'markRange' @ [59:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [59:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'objectKeyword' @ [59:38] ==> val objectKeyword: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DEFAULT.<no name provided>.mark[LocalVariableDescriptor]
 
 'delegationSpecifierList' @ [59:53] ==> val delegationSpecifierList: KtSuperTypeList? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DEFAULT.<no name provided>.mark[LocalVariableDescriptor]
 
-'markRange' @ [62:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [62:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [63:29] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DEFAULT.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -110,7 +110,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> KtDeclaration
 
-'markElement' @ [79:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [79:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'getElementToMark' @ [79:32] ==> private final fun getElementToMark(declaration: KtDeclaration): PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_RETURN_TYPE.<no name provided>[SimpleFunctionDescriptorImpl]
 
@@ -217,13 +217,13 @@ Inferred types:
 
 'element' @ [107:32] ==> value-parameter element: KtNamedDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_NAME.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markRange' @ [109:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [109:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'startElement' @ [109:38] ==> val startElement: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_NAME.<no name provided>.mark[LocalVariableDescriptor]
 
 'nameIdentifier' @ [109:52] ==> val nameIdentifier: PsiElement? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_NAME.<no name provided>.mark[LocalVariableDescriptor]
 
-'markElement' @ [111:24] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [111:24] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'nameIdentifier' @ [111:36] ==> val nameIdentifier: PsiElement? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_NAME.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -305,7 +305,7 @@ Inferred types:
 
 'getValueParameterList' @ [124:76] ==> public open fun getValueParameterList(): KtParameterList? defined in org.jetbrains.kotlin.psi.KtConstructor[SimpleFunctionDescriptorImpl]
 
-'markElement' @ [124:110] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [124:110] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [124:122] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -317,11 +317,11 @@ Inferred types:
 
 'getConstructorKeyword' @ [125:74] ==> public open fun getConstructorKeyword(): PsiElement? defined in org.jetbrains.kotlin.psi.KtConstructor[SimpleFunctionDescriptorImpl]
 
-'markElement' @ [125:108] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [125:108] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [125:120] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markRange' @ [126:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [126:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'begin' @ [126:38] ==> val begin: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -346,27 +346,27 @@ Inferred types:
                                 ?: element.getValueParameterList()
                                 ?: element
                             }
-                            else element' @ [135:31] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtElement, elseBranch: KtElement): KtElement[SimpleFunctionDescriptorImpl]
+                            else element' @ [135:31] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: NavigatablePsiElement, elseBranch: NavigatablePsiElement): NavigatablePsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtElement
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> NavigatablePsiElement
 
 'element' @ [135:35] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
 'element' @ [136:33] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'getReceiverTypeReference' @ [136:41] ==> @Nullable public abstract fun getReceiverTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.psi.KtFunction[JavaMethodDescriptor]
+'getReceiverTypeReference' @ [136:41] ==> @Override @Nullable public open fun getReceiverTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.psi.KtFunctionLiteral[JavaMethodDescriptor]
 
 'element' @ [137:36] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'getValueParameterList' @ [137:44] ==> @Nullable public abstract fun getValueParameterList(): KtParameterList? defined in org.jetbrains.kotlin.psi.KtFunction[JavaMethodDescriptor]
+'getValueParameterList' @ [137:44] ==> @Override @Nullable public open fun getValueParameterList(): KtParameterList? defined in org.jetbrains.kotlin.psi.KtFunctionLiteral[JavaMethodDescriptor]
 
 'element' @ [138:36] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
 'element' @ [140:34] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markRange' @ [141:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [141:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
-'startElement' @ [141:38] ==> val startElement: KtElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[LocalVariableDescriptor]
+'startElement' @ [141:38] ==> val startElement: NavigatablePsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[LocalVariableDescriptor]
 
 'endOfSignatureElement' @ [141:52] ==> val endOfSignatureElement: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -380,7 +380,7 @@ Inferred types:
 
 'element' @ [144:100] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markRange' @ [145:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [145:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [145:38] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -400,7 +400,7 @@ Inferred types:
 
 'namePlaceholder' @ [151:40] ==> public final val KtPropertyAccessor.namePlaceholder: PsiElement[MyPropertyDescriptor]
 
-'markRange' @ [153:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [153:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [153:38] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -410,7 +410,7 @@ Inferred types:
 
 'nameIdentifier' @ [156:53] ==> public final val KtClass.nameIdentifier: PsiElement?[MyPropertyDescriptor]
 
-'markElement' @ [156:78] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [156:78] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [156:90] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -418,11 +418,11 @@ Inferred types:
 
 'getPrimaryConstructorParameterList' @ [157:67] ==> public final fun getPrimaryConstructorParameterList(): KtParameterList? defined in org.jetbrains.kotlin.psi.KtClass[SimpleFunctionDescriptorImpl]
 
-'markElement' @ [157:114] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [157:114] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'nameAsDeclaration' @ [157:126] ==> val nameAsDeclaration: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[LocalVariableDescriptor]
 
-'markRange' @ [158:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [158:28] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'nameAsDeclaration' @ [158:38] ==> val nameAsDeclaration: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -434,7 +434,7 @@ Inferred types:
 
 'element' @ [161:50] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markRange' @ [164:28] ==> public fun markRange(range: TextRange): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [164:28] ==> public fun markRange(range: TextRange): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [164:38] ==> value-parameter element: KtDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_SIGNATURE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -510,7 +510,7 @@ Inferred types:
 
 'jetTypeParameterList' @ [191:21] ==> val jetTypeParameterList: KtTypeParameterList? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.TYPE_PARAMETERS_OR_DECLARATION_SIGNATURE.<no name provided>.mark[LocalVariableDescriptor]
 
-'markElement' @ [192:28] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [192:28] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'jetTypeParameterList' @ [192:40] ==> val jetTypeParameterList: KtTypeParameterList? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.TYPE_PARAMETERS_OR_DECLARATION_SIGNATURE.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -594,7 +594,7 @@ Inferred types:
 
 'element' @ [219:95] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.FOR_REDECLARATION.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markElement' @ [221:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [221:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'nameIdentifier' @ [221:32] ==> val nameIdentifier: PsiElement? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.FOR_REDECLARATION.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -652,7 +652,7 @@ Inferred types:
 
 'modifier' @ [243:25] ==> val modifier: PsiElement? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.modifierSetPosition.<no name provided>.mark[LocalVariableDescriptor]
 
-'markElement' @ [244:32] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [244:32] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'modifier' @ [244:44] ==> val modifier: PsiElement? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.modifierSetPosition.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -672,7 +672,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> KtArrayAccessExpression
 
-'markElement' @ [254:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [254:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [254:32] ==> value-parameter element: KtArrayAccessExpression defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.ARRAY_ACCESS.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -731,7 +731,7 @@ Inferred types:
 
 'nameIdentifier' @ [269:21] ==> val nameIdentifier: PsiElement? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.VISIBILITY_MODIFIER.<no name provided>.mark[LocalVariableDescriptor]
 
-'markElement' @ [270:28] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [270:28] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'nameIdentifier' @ [270:40] ==> val nameIdentifier: PsiElement? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.VISIBILITY_MODIFIER.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -763,17 +763,17 @@ Inferred types:
 
 'java' @ [279:78] ==> public val <T> KClass<out KtModifierListOwner>.java: Class<out KtModifierListOwner> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtModifierListOwner
+    <T> -> Captured(out KtModifierListOwner)
 
 'canonicalName' @ [279:83] ==> public final val <T : (Any..Any?)> Class<out KtModifierListOwner>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtModifierListOwner
+    <T : (Any..Any?)> -> Captured(out KtModifierListOwner)
 
 'element' @ [279:116] ==> value-parameter element: KtModifierListOwner defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.VISIBILITY_MODIFIER.<no name provided>.mark[ValueParameterDescriptorImpl]
 
 'text' @ [279:124] ==> public final val KtModifierListOwner.text: (String..String?)[MyPropertyDescriptor]
 
-'markElement' @ [281:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [281:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'elementToMark' @ [281:32] ==> val elementToMark: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.VISIBILITY_MODIFIER.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -783,7 +783,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> KtTypeProjection
 
-'markElement' @ [287:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [287:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [287:32] ==> value-parameter element: KtTypeProjection defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.VARIANCE_IN_PROJECTION.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -795,7 +795,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> KtParameter
 
-'markNode' @ [293:20] ==> public fun markNode(node: ASTNode): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markNode' @ [293:20] ==> public fun markNode(node: ASTNode): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [293:29] ==> value-parameter element: KtParameter defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.PARAMETER_DEFAULT_VALUE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -817,7 +817,7 @@ Inferred types:
 
 'VARARG_KEYWORD' @ [299:78] ==> public final val VARARG_KEYWORD: (KtModifierKeywordToken..KtModifierKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'markNode' @ [300:20] ==> public fun markNode(node: ASTNode): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markNode' @ [300:20] ==> public fun markNode(node: ASTNode): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'varargModifier' @ [300:29] ==> val varargModifier: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.PARAMETER_VARARG_MODIFIER.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -829,7 +829,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> PsiElement
 
-'markElement' @ [306:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [306:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 '?:' @ [306:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -862,11 +862,11 @@ Inferred types:
 
 'lastBracketRange' @ [313:24] ==> val lastBracketRange: TextRange? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_WITH_BODY.<no name provided>.mark[LocalVariableDescriptor]
 
-'markRange' @ [314:17] ==> public fun markRange(range: TextRange): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [314:17] ==> public fun markRange(range: TextRange): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'lastBracketRange' @ [314:27] ==> val lastBracketRange: TextRange? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_WITH_BODY.<no name provided>.mark[LocalVariableDescriptor]
 
-'markElement' @ [316:17] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [316:17] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [316:29] ==> value-parameter element: KtDeclarationWithBody defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DECLARATION_WITH_BODY.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -900,7 +900,7 @@ Inferred types:
 
 'element' @ [326:26] ==> value-parameter element: KtNamedDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.VAL_OR_VAR_NODE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markElement' @ [327:35] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [327:35] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [327:47] ==> value-parameter element: KtNamedDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.VAL_OR_VAR_NODE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -908,7 +908,7 @@ Inferred types:
 
 'element' @ [327:74] ==> value-parameter element: KtNamedDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.VAL_OR_VAR_NODE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markElement' @ [328:34] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [328:34] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [328:46] ==> value-parameter element: KtNamedDeclaration defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.VAL_OR_VAR_NODE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -928,7 +928,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> KtWhenEntry
 
-'markElement' @ [336:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [336:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [336:32] ==> value-parameter element: KtWhenEntry defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.ELSE_ENTRY.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -940,7 +940,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> KtWhenExpression
 
-'markElement' @ [342:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [342:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [342:32] ==> value-parameter element: KtWhenExpression defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.WHEN_EXPRESSION.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -952,7 +952,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> KtWhenConditionInRange
 
-'markElement' @ [348:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [348:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [348:32] ==> value-parameter element: KtWhenConditionInRange defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.WHEN_CONDITION_IN_RANGE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -975,19 +975,19 @@ Inferred types:
 
 'element' @ [354:23] ==> value-parameter element: KtExpression defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.SPECIAL_CONSTRUCT_TOKEN.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markElement' @ [355:44] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [355:44] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [355:56] ==> value-parameter element: KtExpression defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.SPECIAL_CONSTRUCT_TOKEN.<no name provided>.mark[ValueParameterDescriptorImpl]
 
 'whenKeyword' @ [355:64] ==> public final val KtWhenExpression.whenKeyword: PsiElement[MyPropertyDescriptor]
 
-'markElement' @ [356:42] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [356:42] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [356:54] ==> value-parameter element: KtExpression defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.SPECIAL_CONSTRUCT_TOKEN.<no name provided>.mark[ValueParameterDescriptorImpl]
 
 'ifKeyword' @ [356:62] ==> public final val KtIfExpression.ifKeyword: PsiElement[MyPropertyDescriptor]
 
-'markElement' @ [357:49] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [357:49] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [357:61] ==> value-parameter element: KtExpression defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.SPECIAL_CONSTRUCT_TOKEN.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1005,7 +1005,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> KtNullableType
 
-'markNode' @ [364:20] ==> public fun markNode(node: ASTNode): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markNode' @ [364:20] ==> public fun markNode(node: ASTNode): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [364:29] ==> value-parameter element: KtNullableType defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.NULLABLE_TYPE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1019,7 +1019,7 @@ Inferred types:
 
 'element' @ [370:17] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.CALL_EXPRESSION.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markRange' @ [371:24] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [371:24] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [371:34] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.CALL_EXPRESSION.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1033,7 +1033,7 @@ Inferred types:
 
 'element' @ [371:99] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.CALL_EXPRESSION.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markElement' @ [373:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [373:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [373:32] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.CALL_EXPRESSION.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1043,7 +1043,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> KtElement
 
-'markElement' @ [379:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [379:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 '?:' @ [379:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1067,13 +1067,13 @@ Inferred types:
 
 'valueParameterList' @ [386:17] ==> val valueParameterList: KtParameterList? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.FUNCTION_PARAMETERS.<no name provided>.mark[LocalVariableDescriptor]
 
-'markElement' @ [387:24] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [387:24] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'valueParameterList' @ [387:36] ==> val valueParameterList: KtParameterList? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.FUNCTION_PARAMETERS.<no name provided>.mark[LocalVariableDescriptor]
 
 'element' @ [389:17] ==> value-parameter element: KtFunction defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.FUNCTION_PARAMETERS.<no name provided>.mark[ValueParameterDescriptorImpl]
 
-'markNode' @ [390:24] ==> public fun markNode(node: ASTNode): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markNode' @ [390:24] ==> public fun markNode(node: ASTNode): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [390:33] ==> value-parameter element: KtFunction defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.FUNCTION_PARAMETERS.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1121,7 +1121,7 @@ Inferred types:
 
 'endOffset' @ [401:103] ==> public final val TextRange.endOffset: Int[MyPropertyDescriptor]
 
-'markElement' @ [404:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [404:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [404:32] ==> value-parameter element: KtElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.CUT_CHAR_QUOTES.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1155,7 +1155,7 @@ Inferred types:
 
 'endOffset' @ [413:67] ==> val endOffset: Int defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.LONG_LITERAL_SUFFIX.<no name provided>.mark[LocalVariableDescriptor]
 
-'markElement' @ [416:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [416:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [416:32] ==> value-parameter element: KtElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.LONG_LITERAL_SUFFIX.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1171,7 +1171,7 @@ Inferred types:
 
 'diagnostic' @ [422:49] ==> value-parameter diagnostic: ParametrizedDiagnostic<out PsiElement> defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.UNREACHABLE_CODE.<no name provided>.markDiagnostic[ValueParameterDescriptorImpl]
 
-'a' @ [422:61] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtElement..KtElement?), (MutableList<(TextRange..TextRange?)>..List<(TextRange..TextRange?)>?)>.a: (MutableList<(TextRange..TextRange?)>..List<(TextRange..TextRange?)>?)[MyPropertyDescriptor]
+'a' @ [422:61] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtElement..KtElement?), (MutableList<(TextRange..TextRange?)>..List<(TextRange..TextRange?)>?)>.a: (MutableList<(TextRange..TextRange?)>..List<(TextRange..TextRange?)>)[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
     <A : (Any..Any?)> -> (kotlin.collections.MutableList<(com.intellij.openapi.util.TextRange..com.intellij.openapi.util.TextRange?)>..kotlin.collections.List<(com.intellij.openapi.util.TextRange..com.intellij.openapi.util.TextRange?)>?)
@@ -1182,7 +1182,7 @@ Inferred types:
 Inferred types:
     <in E : PsiElement> -> KtBinaryExpressionWithTypeRHS
 
-'markRange' @ [428:20] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [428:20] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [428:30] ==> value-parameter element: KtBinaryExpressionWithTypeRHS defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.AS_TYPE.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1236,11 +1236,11 @@ Inferred types:
 
 'valueParameterList' @ [446:62] ==> public final val KtSecondaryConstructor.valueParameterList: KtParameterList?[MyPropertyDescriptor]
 
-'markElement' @ [446:91] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [446:91] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'constructor' @ [446:103] ==> val constructor: KtSecondaryConstructor defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.SECONDARY_CONSTRUCTOR_DELEGATION_CALL.<no name provided>.mark[LocalVariableDescriptor]
 
-'markRange' @ [447:32] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [447:32] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'constructor' @ [447:42] ==> val constructor: KtSecondaryConstructor defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.SECONDARY_CONSTRUCTOR_DELEGATION_CALL.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -1250,7 +1250,7 @@ Inferred types:
 
 'lastChild' @ [447:98] ==> public final val KtParameterList.lastChild: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 
-'markElement' @ [449:28] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [449:28] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [449:40] ==> value-parameter element: KtConstructorDelegationCall defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.SECONDARY_CONSTRUCTOR_DELEGATION_CALL.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1268,11 +1268,11 @@ Inferred types:
 
 'superTypeListEntries' @ [455:38] ==> public final val KtEnumEntry.superTypeListEntries: List<KtSuperTypeListEntry>[MyPropertyDescriptor]
 
-'markElement' @ [456:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [456:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
-'if (specifiers.isEmpty()) element else specifiers[0]' @ [456:32] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>?)>, elseBranch: KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>?)>): KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<*>..StubElement<*>?)>..KtElementImplStub<out (StubElement<*>..StubElement<*>?)>?)>?)>?)>?)>[SimpleFunctionDescriptorImpl]
+'if (specifiers.isEmpty()) element else specifiers[0]' @ [456:32] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>?)>?)>, elseBranch: KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>?)>?)>): KtElementImplStub<out (StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>?)>..StubElement<out (KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>..KtElementImplStub<out (StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>..StubElement<out (KtElementImplStub<*>..KtElementImplStub<*>?)>?)>?)>?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<*>..com.intellij.psi.stubs.StubElement<*>?)>?)>?)>?)>?)>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<*>..org.jetbrains.kotlin.psi.KtElementImplStub<*>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<*>..org.jetbrains.kotlin.psi.KtElementImplStub<*>?)>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<*>..org.jetbrains.kotlin.psi.KtElementImplStub<*>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<*>..org.jetbrains.kotlin.psi.KtElementImplStub<*>?)>?)>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<*>..org.jetbrains.kotlin.psi.KtElementImplStub<*>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<*>..org.jetbrains.kotlin.psi.KtElementImplStub<*>?)>?)>..org.jetbrains.kotlin.psi.KtElementImplStub<out (com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<*>..org.jetbrains.kotlin.psi.KtElementImplStub<*>?)>..com.intellij.psi.stubs.StubElement<out (org.jetbrains.kotlin.psi.KtElementImplStub<*>..org.jetbrains.kotlin.psi.KtElementImplStub<*>?)>?)>?)>?)>
 
 'specifiers' @ [456:36] ==> val specifiers: List<KtSuperTypeListEntry> defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.DELEGATOR_SUPER_CALL.<no name provided>.mark[LocalVariableDescriptor]
 
@@ -1345,7 +1345,7 @@ Inferred types:
     <T> -> PsiElement
     <R> -> Nothing
 
-'markElement' @ [474:57] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [474:57] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [474:69] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.IMPORT_ALIAS.<no name provided>.mark.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1369,15 +1369,15 @@ Inferred types:
     <T> -> KtExpression
     <R> -> Nothing
 
-'markElement' @ [477:57] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [477:57] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [477:69] ==> value-parameter it: KtExpression defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.IMPORT_ALIAS.<no name provided>.mark.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'markElement' @ [479:24] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [479:24] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [479:36] ==> value-parameter it: KtExpression defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.IMPORT_ALIAS.<no name provided>.mark.<anonymous>[ValueParameterDescriptorImpl]
 
-'markElement' @ [481:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [481:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [481:32] ==> value-parameter element: KtImportDirective defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.IMPORT_ALIAS.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1393,13 +1393,13 @@ Inferred types:
 
 'labeledExpression' @ [488:17] ==> val labeledExpression: PsiElement? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.RETURN_WITH_LABEL.<no name provided>.mark[LocalVariableDescriptor]
 
-'markRange' @ [489:24] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markRange' @ [489:24] ==> public fun markRange(from: PsiElement, to: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [489:34] ==> value-parameter element: KtReturnExpression defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.RETURN_WITH_LABEL.<no name provided>.mark[ValueParameterDescriptorImpl]
 
 'labeledExpression' @ [489:43] ==> val labeledExpression: PsiElement? defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.RETURN_WITH_LABEL.<no name provided>.mark[LocalVariableDescriptor]
 
-'markElement' @ [492:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [492:20] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [492:32] ==> value-parameter element: KtReturnExpression defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.RETURN_WITH_LABEL.<no name provided>.mark[ValueParameterDescriptorImpl]
 
@@ -1420,7 +1420,7 @@ Inferred types:
     <T> -> KtTypeReference
     <R> -> Nothing
 
-'markElement' @ [498:57] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics[SimpleFunctionDescriptorImpl]
+'markElement' @ [498:57] ==> public fun markElement(element: PsiElement): List<TextRange> defined in org.jetbrains.kotlin.diagnostics in file PositioningStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [498:69] ==> value-parameter it: KtTypeReference defined in org.jetbrains.kotlin.diagnostics.PositioningStrategies.RECEIVER.<no name provided>.mark.<anonymous>[ValueParameterDescriptorImpl]
 

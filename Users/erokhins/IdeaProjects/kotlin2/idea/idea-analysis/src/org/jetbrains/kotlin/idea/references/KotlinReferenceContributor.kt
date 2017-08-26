@@ -7,9 +7,11 @@ Inferred types:
 
 'registrar' @ [31:14] ==> value-parameter registrar: PsiReferenceRegistrar defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor.registerReferenceProviders[ValueParameterDescriptorImpl]
 
-'registerProvider' @ [32:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (KtSimpleNameExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
+'registerProvider' @ [32:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (expression: KtSimpleNameExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <reified E : KtElement> -> KtSimpleNameExpression
+    <reified E : KtElement> -> [@kotlin.ParameterName] KtSimpleNameExpression
+
+'KtSimpleNameReference' @ [32:42] ==> public constructor KtSimpleNameReference(expression: KtSimpleNameExpression) defined in org.jetbrains.kotlin.idea.references.KtSimpleNameReference[ClassConstructorDescriptorImpl]
 
 'registerMultiProvider' @ [34:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerMultiProvider(priority: Double, crossinline factory: (KtNameReferenceExpression) -> Array<PsiReference>): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -92,35 +94,51 @@ Inferred types:
 
 'it' @ [46:136] ==> value-parameter it: KtNameReferenceExpression defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor.registerReferenceProviders.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'registerProvider' @ [50:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (KtConstructorDelegationReferenceExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
+'registerProvider' @ [50:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (expression: KtConstructorDelegationReferenceExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <reified E : KtElement> -> KtConstructorDelegationReferenceExpression
+    <reified E : KtElement> -> [@kotlin.ParameterName] KtConstructorDelegationReferenceExpression
 
-'registerProvider' @ [52:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (KtCallExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <reified E : KtElement> -> KtCallExpression
+'KtConstructorDelegationReference' @ [50:42] ==> public constructor KtConstructorDelegationReference(expression: (KtConstructorDelegationReferenceExpression..KtConstructorDelegationReferenceExpression?)) defined in org.jetbrains.kotlin.idea.references.KtConstructorDelegationReference[JavaClassConstructorDescriptor]
 
-'registerProvider' @ [54:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (KtArrayAccessExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
+'registerProvider' @ [52:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (expression: KtCallExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <reified E : KtElement> -> KtArrayAccessExpression
+    <reified E : KtElement> -> [@kotlin.ParameterName] KtCallExpression
 
-'registerProvider' @ [56:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (KtCollectionLiteralExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <reified E : KtElement> -> KtCollectionLiteralExpression
+'KtInvokeFunctionReference' @ [52:42] ==> public constructor KtInvokeFunctionReference(@NotNull expression: KtCallExpression) defined in org.jetbrains.kotlin.idea.references.KtInvokeFunctionReference[JavaClassConstructorDescriptor]
 
-'registerProvider' @ [58:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (KtForExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
+'registerProvider' @ [54:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (expression: KtArrayAccessExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <reified E : KtElement> -> KtForExpression
+    <reified E : KtElement> -> [@kotlin.ParameterName] KtArrayAccessExpression
 
-'registerProvider' @ [60:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (KtPropertyDelegate) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <reified E : KtElement> -> KtPropertyDelegate
+'KtArrayAccessReference' @ [54:42] ==> public constructor KtArrayAccessReference(@NotNull expression: KtArrayAccessExpression) defined in org.jetbrains.kotlin.idea.references.KtArrayAccessReference[JavaClassConstructorDescriptor]
 
-'registerProvider' @ [62:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (KtDestructuringDeclarationEntry) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
+'registerProvider' @ [56:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (expression: KtCollectionLiteralExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <reified E : KtElement> -> KtDestructuringDeclarationEntry
+    <reified E : KtElement> -> [@kotlin.ParameterName] KtCollectionLiteralExpression
 
-'registerProvider' @ [64:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (KDocName) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
+'KtCollectionLiteralReference' @ [56:42] ==> public constructor KtCollectionLiteralReference(expression: KtCollectionLiteralExpression) defined in org.jetbrains.kotlin.idea.references.KtCollectionLiteralReference[ClassConstructorDescriptorImpl]
+
+'registerProvider' @ [58:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (element: KtForExpression) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <reified E : KtElement> -> KDocName
+    <reified E : KtElement> -> [@kotlin.ParameterName] KtForExpression
+
+'KtForLoopInReference' @ [58:42] ==> public constructor KtForLoopInReference(element: KtForExpression) defined in org.jetbrains.kotlin.idea.references.KtForLoopInReference[ClassConstructorDescriptorImpl]
+
+'registerProvider' @ [60:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (element: KtPropertyDelegate) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <reified E : KtElement> -> [@kotlin.ParameterName] KtPropertyDelegate
+
+'KtPropertyDelegationMethodsReference' @ [60:42] ==> public constructor KtPropertyDelegationMethodsReference(element: KtPropertyDelegate) defined in org.jetbrains.kotlin.idea.references.KtPropertyDelegationMethodsReference[ClassConstructorDescriptorImpl]
+
+'registerProvider' @ [62:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (element: KtDestructuringDeclarationEntry) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <reified E : KtElement> -> [@kotlin.ParameterName] KtDestructuringDeclarationEntry
+
+'KtDestructuringDeclarationReference' @ [62:42] ==> public constructor KtDestructuringDeclarationReference(element: KtDestructuringDeclarationEntry) defined in org.jetbrains.kotlin.idea.references.KtDestructuringDeclarationReference[ClassConstructorDescriptorImpl]
+
+'registerProvider' @ [64:13] ==> protected final inline fun <reified E : KtElement> PsiReferenceRegistrar.registerProvider(priority: Double, crossinline factory: (element: KDocName) -> PsiReference?): Unit defined in org.jetbrains.kotlin.idea.references.KotlinReferenceContributor[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <reified E : KtElement> -> [@kotlin.ParameterName] KDocName
+
+'KDocReference' @ [64:42] ==> public constructor KDocReference(element: KDocName) defined in org.jetbrains.kotlin.idea.kdoc.KDocReference[ClassConstructorDescriptorImpl]
 

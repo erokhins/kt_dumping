@@ -18,7 +18,7 @@ Inferred types:
 
 'asList' @ [40:30] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (VirtualFile..VirtualFile?)): (MutableList<(VirtualFile..VirtualFile?)>..List<(VirtualFile..VirtualFile?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> VirtualFile
+    <T : (Any..Any?)> -> (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)
 
 'library' @ [40:38] ==> value-parameter library: Library defined in org.jetbrains.kotlin.idea.framework.JsLibraryStdDetectionUtil.hasJsStdlibJar[ValueParameterDescriptorImpl]
 
@@ -74,13 +74,9 @@ Inferred types:
 
 'name' @ [56:17] ==> val name: String defined in org.jetbrains.kotlin.idea.framework.JsLibraryStdDetectionUtil.getJsStdLibJar[LocalVariableDescriptor]
 
-'PathUtil' @ [56:25] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'JS_LIB_JAR_NAME' @ [56:34] ==> public const final val JS_LIB_JAR_NAME: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'name' @ [56:53] ==> val name: String defined in org.jetbrains.kotlin.idea.framework.JsLibraryStdDetectionUtil.getJsStdLibJar[LocalVariableDescriptor]
-
-'PathUtil' @ [56:61] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'JS_LIB_10_JAR_NAME' @ [56:70] ==> public const final val JS_LIB_10_JAR_NAME: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
@@ -116,7 +112,7 @@ Inferred types:
 
 'getUserData' @ [61:38] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Boolean..Boolean?)>): Boolean? defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'IS_JS_LIBRARY_STD_LIB' @ [61:50] ==> private final val IS_JS_LIBRARY_STD_LIB: Key<(Boolean..Boolean?)> defined in org.jetbrains.kotlin.idea.framework.JsLibraryStdDetectionUtil[PropertyDescriptorImpl]
 
@@ -138,7 +134,7 @@ Inferred types:
 
 'putUserData' @ [64:25] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Boolean..Boolean?)>, @Nullable p1: Boolean?): Unit defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'IS_JS_LIBRARY_STD_LIB' @ [64:37] ==> private final val IS_JS_LIBRARY_STD_LIB: Key<(Boolean..Boolean?)> defined in org.jetbrains.kotlin.idea.framework.JsLibraryStdDetectionUtil[PropertyDescriptorImpl]
 

@@ -60,7 +60,9 @@ Inferred types:
 
 'elseBranch' @ [42:74] ==> val elseBranch: KtReturnExpression defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.intentions.FoldIfToReturnAsymmetricallyIntention.applyTo[LocalVariableDescriptor]
 
-'BranchedFoldingUtils' @ [44:26] ==> public object BranchedFoldingUtils defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file BranchedFoldingUtils.kt[FakeCallableDescriptorForObject]
+'!!' @ [44:26] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KtReturnExpression?): KtReturnExpression[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KtReturnExpression
 
 'getFoldableBranchedReturn' @ [44:47] ==> public final fun getFoldableBranchedReturn(branch: KtExpression?): KtReturnExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.BranchedFoldingUtils[SimpleFunctionDescriptorImpl]
 
@@ -68,7 +70,9 @@ Inferred types:
 
 'then' @ [44:89] ==> public final val KtIfExpression.then: KtExpression?[MyPropertyDescriptor]
 
-'BranchedFoldingUtils' @ [45:26] ==> public object BranchedFoldingUtils defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations in file BranchedFoldingUtils.kt[FakeCallableDescriptorForObject]
+'!!' @ [45:26] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KtReturnExpression?): KtReturnExpression[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KtReturnExpression
 
 'getFoldableBranchedReturn' @ [45:47] ==> public final fun getFoldableBranchedReturn(branch: KtExpression?): KtReturnExpression? defined in org.jetbrains.kotlin.idea.intentions.branchedTransformations.BranchedFoldingUtils[SimpleFunctionDescriptorImpl]
 

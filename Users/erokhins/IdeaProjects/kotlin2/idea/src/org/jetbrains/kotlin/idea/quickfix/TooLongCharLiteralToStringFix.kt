@@ -60,12 +60,12 @@ Inferred types:
 
 'diagnostic' @ [36:80] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.TooLongCharLiteralToStringFix.Factory.createAction[ValueParameterDescriptorImpl]
 
-'psiElement' @ [36:92] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtConstantExpression..KtConstantExpression?), (KtConstantExpression..KtConstantExpression?)>.psiElement: (KtConstantExpression..KtConstantExpression?)[MyPropertyDescriptor]
+'psiElement' @ [36:92] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtConstantExpression..KtConstantExpression?), (KtConstantExpression..KtConstantExpression?)>.psiElement: KtConstantExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtConstantExpression..org.jetbrains.kotlin.psi.KtConstantExpression?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtConstantExpression..org.jetbrains.kotlin.psi.KtConstantExpression?)
 
 'TooLongCharLiteralToStringFix' @ [37:20] ==> public constructor TooLongCharLiteralToStringFix(element: KtConstantExpression) defined in org.jetbrains.kotlin.idea.quickfix.TooLongCharLiteralToStringFix[ClassConstructorDescriptorImpl]
 
-'element' @ [37:60] ==> val element: (KtConstantExpression..KtConstantExpression?) defined in org.jetbrains.kotlin.idea.quickfix.TooLongCharLiteralToStringFix.Factory.createAction[LocalVariableDescriptor]
+'element' @ [37:60] ==> val element: KtConstantExpression defined in org.jetbrains.kotlin.idea.quickfix.TooLongCharLiteralToStringFix.Factory.createAction[LocalVariableDescriptor]
 

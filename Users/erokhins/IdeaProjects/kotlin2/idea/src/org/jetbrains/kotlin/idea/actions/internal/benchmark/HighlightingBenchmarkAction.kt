@@ -70,7 +70,7 @@ Inferred types:
 
 'subscribe' @ [78:20] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(DaemonCodeAnalyzer.DaemonListener..DaemonCodeAnalyzer.DaemonListener?)>, @NotNull p1: DaemonCodeAnalyzer.DaemonListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> DaemonListener
+    <L : (Any..Any?)> -> (com.intellij.codeInsight.daemon.DaemonCodeAnalyzer.DaemonListener..com.intellij.codeInsight.daemon.DaemonCodeAnalyzer.DaemonListener?)
 
 'DAEMON_EVENT_TOPIC' @ [78:49] ==> public final val DAEMON_EVENT_TOPIC: (Topic<(DaemonCodeAnalyzer.DaemonListener..DaemonCodeAnalyzer.DaemonListener?)>..Topic<(DaemonCodeAnalyzer.DaemonListener..DaemonCodeAnalyzer.DaemonListener?)>?) defined in com.intellij.codeInsight.daemon.DaemonCodeAnalyzer[JavaPropertyDescriptor]
 

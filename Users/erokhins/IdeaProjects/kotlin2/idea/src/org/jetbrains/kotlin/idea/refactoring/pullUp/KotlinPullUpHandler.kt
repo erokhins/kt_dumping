@@ -184,7 +184,7 @@ Inferred types:
 
 'superClasses' @ [102:55] ==> val superClasses: List<PsiNamedElement> defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHandler.invoke[LocalVariableDescriptor]
 
-'checkConflicts' @ [103:13] ==> public fun checkConflicts(project: Project, sourceClass: KtClassOrObject, targetClass: PsiNamedElement, memberInfos: List<KotlinMemberInfo>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'checkConflicts' @ [103:13] ==> public fun checkConflicts(project: Project, sourceClass: KtClassOrObject, targetClass: PsiNamedElement, memberInfos: List<KotlinMemberInfo>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file pullUpConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [103:28] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.pullUp.KotlinPullUpHandler.invoke[ValueParameterDescriptorImpl]
 

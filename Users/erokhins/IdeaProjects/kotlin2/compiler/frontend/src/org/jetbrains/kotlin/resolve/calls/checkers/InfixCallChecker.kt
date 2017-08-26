@@ -2,7 +2,7 @@
 
 'resultingDescriptor' @ [31:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'functionDescriptor' @ [32:13] ==> val functionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.checkers.InfixCallChecker.check[LocalVariableDescriptor]
 
@@ -16,9 +16,9 @@ Inferred types:
 
 'functionDescriptor' @ [32:96] ==> val functionDescriptor: FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.checkers.InfixCallChecker.check[LocalVariableDescriptor]
 
-'?:' @ [33:21] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ResolvedCall<out CallableDescriptor>?, right: ResolvedCall<out CallableDescriptor>): ResolvedCall<out CallableDescriptor>[SimpleFunctionDescriptorImpl]
+'?:' @ [33:21] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?, right: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>): ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ResolvedCall<out CallableDescriptor>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>
 
 'resolvedCall' @ [33:22] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.resolve.calls.checkers.InfixCallChecker.check[ValueParameterDescriptorImpl]
 
@@ -26,9 +26,9 @@ Inferred types:
 
 'resolvedCall' @ [33:88] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.resolve.calls.checkers.InfixCallChecker.check[ValueParameterDescriptorImpl]
 
-'call' @ [33:102] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
+'call' @ [33:102] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'isInfixCall' @ [34:13] ==> public fun isInfixCall(call: Call): Boolean defined in org.jetbrains.kotlin.resolve.calls.callResolverUtil in file CallResolverUtil.kt[SimpleFunctionDescriptorImpl]
 

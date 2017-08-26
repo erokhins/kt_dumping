@@ -16,13 +16,13 @@ Inferred types:
 
 'toString' @ [43:49] ==> public open fun toString(): String defined in com.sun.tools.javac.util.Name[JavaMethodDescriptor]
 
-'lazy' @ [45:61] ==> public fun <T> lazy(initializer: () -> List<TreeBasedAnnotation>): Lazy<List<TreeBasedAnnotation>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [45:61] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<TreeBasedAnnotation>
+    <T> -> T
 
 'tree' @ [46:9] ==> value-parameter tree: JCTree.JCClassDecl defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass.<init>[ValueParameterDescriptorImpl]
 
-'annotations' @ [46:14] ==> internal fun JCTree.annotations(): Collection<JCTree.JCAnnotation> defined in org.jetbrains.kotlin.javac.wrappers.trees[SimpleFunctionDescriptorImpl]
+'annotations' @ [46:14] ==> internal fun JCTree.annotations(): Collection<JCTree.JCAnnotation> defined in org.jetbrains.kotlin.javac.wrappers.trees in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [46:28] ==> public inline fun <T, R> Iterable<JCTree.JCAnnotation>.map(transform: (JCTree.JCAnnotation) -> TreeBasedAnnotation): List<TreeBasedAnnotation> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -144,10 +144,14 @@ Inferred types:
 
 'JCClassDecl' @ [78:48] ==> protected/*protected and package*/ constructor JCClassDecl(p0: (JCTree.JCModifiers..JCTree.JCModifiers?), p1: (Name..Name?), p2: (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?), p3: (JCTree.JCExpression..JCTree.JCExpression?), p4: (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?), p5: (List<(JCTree..JCTree?)>..List<(JCTree..JCTree?)>?), p6: (Symbol.ClassSymbol..Symbol.ClassSymbol?)) defined in com.sun.tools.javac.tree.JCTree.JCClassDecl[JavaClassConstructorDescriptor]
 
+'name' @ [78:61] ==> public final var name: (Name..Name?) defined in com.sun.tools.javac.tree.JCTree.JCClassDecl[JavaPropertyDescriptor]
+
 'let' @ [80:22] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> FqName): FqName defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> FqName
+
+'FqName' @ [80:28] ==> public constructor FqName(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
 'arrayListOf' @ [83:17] ==> @SinceKotlin @InlineOnly public inline fun <T> arrayListOf(): ArrayList<JavaClassifierType> /* = ArrayList<JavaClassifierType> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -214,6 +218,8 @@ Inferred types:
 
 'this' @ [91:43] ==> <this> defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass.<get-supertypes>.<anonymous>[ReceiverParameterDescriptorImpl]
 
+'add' @ [91:49] ==> public open fun add(element: JavaClassifierType): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
+
 'isAnnotationType' @ [92:24] ==> public open val isAnnotationType: Boolean defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass[PropertyDescriptorImpl]
 
 'javac' @ [93:17] ==> public final val javac: JavacWrapper defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass[PropertyDescriptorImpl]
@@ -226,6 +232,8 @@ Inferred types:
     <R> -> Boolean
 
 'this' @ [93:60] ==> <this> defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass.<get-supertypes>.<anonymous>[ReceiverParameterDescriptorImpl]
+
+'add' @ [93:66] ==> public open fun add(element: JavaClassifierType): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
 'tree' @ [96:13] ==> public final val tree: JCTree.JCClassDecl defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass[PropertyDescriptorImpl]
 
@@ -247,6 +255,8 @@ Inferred types:
 
 'this' @ [96:81] ==> <this> defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass.<get-supertypes>.<anonymous>[ReceiverParameterDescriptorImpl]
 
+'addAll' @ [96:87] ==> public open fun addAll(elements: Collection<JavaClassifierType>): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
+
 'tree' @ [97:13] ==> public final val tree: JCTree.JCClassDecl defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass[PropertyDescriptorImpl]
 
 'extending' @ [97:18] ==> public final var extending: (JCTree.JCExpression..JCTree.JCExpression?) defined in com.sun.tools.javac.tree.JCTree.JCClassDecl[JavaPropertyDescriptor]
@@ -267,6 +277,8 @@ Inferred types:
 
 'this' @ [97:69] ==> <this> defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass.<get-supertypes>.<anonymous>[ReceiverParameterDescriptorImpl]
 
+'add' @ [97:75] ==> public open fun add(element: JavaClassifierType): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
+
 'isEmpty' @ [99:17] ==> public open fun isEmpty(): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
 'javac' @ [100:17] ==> public final val javac: JavacWrapper defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass[PropertyDescriptorImpl]
@@ -280,9 +292,11 @@ Inferred types:
 
 'this' @ [100:45] ==> <this> defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass.<get-supertypes>.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'lazy' @ [104:52] ==> public fun <T> lazy(initializer: () -> Map<Name, TreeBasedClass>): Lazy<Map<Name, TreeBasedClass>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'add' @ [100:51] ==> public open fun add(element: JavaClassifierType): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
+
+'getValue' @ [104:52] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<Name, TreeBasedClass>
+    <T> -> T
 
 'tree' @ [105:9] ==> value-parameter tree: JCTree.JCClassDecl defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass.<init>[ValueParameterDescriptorImpl]
 
@@ -322,9 +336,11 @@ Inferred types:
     <T> -> TreeBasedClass
     <K> -> Name
 
-'lazy' @ [111:44] ==> public fun <T> lazy(initializer: () -> TreeBasedClass?): Lazy<TreeBasedClass?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'name' @ [108:41] ==> public abstract val name: Name defined in org.jetbrains.kotlin.load.java.structure.JavaClass[DeserializedPropertyDescriptor]
+
+'getValue' @ [111:44] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TreeBasedClass?
+    <T> -> T
 
 'treePath' @ [112:10] ==> value-parameter treePath: TreePath defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass.<init>[ValueParameterDescriptorImpl]
 
@@ -484,9 +500,9 @@ Inferred types:
 
 'keys' @ [147:30] ==> public abstract val keys: Set<Name> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 
-'lazy' @ [149:47] ==> public fun <T> lazy(initializer: () -> VirtualFile?): Lazy<VirtualFile?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [149:47] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> VirtualFile?
+    <T> -> T
 
 'javac' @ [150:9] ==> value-parameter javac: JavacWrapper defined in org.jetbrains.kotlin.javac.wrappers.trees.TreeBasedClass.<init>[ValueParameterDescriptorImpl]
 

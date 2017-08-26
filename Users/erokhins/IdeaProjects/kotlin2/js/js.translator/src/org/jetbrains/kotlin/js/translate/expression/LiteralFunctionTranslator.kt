@@ -30,7 +30,7 @@
 
 'descriptor' @ [52:58] ==> val descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.expression.LiteralFunctionTranslator.translate[LocalVariableDescriptor]
 
-'translateAndAliasParameters' @ [53:18] ==> public fun TranslationContext.translateAndAliasParameters(descriptor: FunctionDescriptor, targetList: MutableList<JsParameter>): TranslationContext defined in org.jetbrains.kotlin.js.translate.expression[SimpleFunctionDescriptorImpl]
+'translateAndAliasParameters' @ [53:18] ==> public fun TranslationContext.translateAndAliasParameters(descriptor: FunctionDescriptor, targetList: MutableList<JsParameter>): TranslationContext defined in org.jetbrains.kotlin.js.translate.expression in file FunctionTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [53:46] ==> val descriptor: FunctionDescriptor defined in org.jetbrains.kotlin.js.translate.expression.LiteralFunctionTranslator.translate[LocalVariableDescriptor]
 
@@ -233,7 +233,7 @@ Inferred types:
 
 'accept' @ [86:30] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsFunction..JsFunction?)): (JsFunction..JsFunction?) defined in org.jetbrains.kotlin.js.inline.util.rewriters.NameReplacingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsFunction
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsFunction..org.jetbrains.kotlin.js.backend.ast.JsFunction?)
 
 'lambda' @ [86:37] ==> val lambda: JsFunction defined in org.jetbrains.kotlin.js.translate.expression.LiteralFunctionTranslator.translate[LocalVariableDescriptor]
 
@@ -589,7 +589,7 @@ Inferred types:
 
 'arguments' @ [215:38] ==> public final val JsInvocation.arguments: (MutableList<(JsExpression..JsExpression?)>..List<(JsExpression..JsExpression?)>)[MyPropertyDescriptor]
 
-'getTemporaryNamesInScope' @ [217:22] ==> private fun getTemporaryNamesInScope(suggested: List<JsExpression>): List<JsName> defined in org.jetbrains.kotlin.js.translate.expression[SimpleFunctionDescriptorImpl]
+'getTemporaryNamesInScope' @ [217:22] ==> private fun getTemporaryNamesInScope(suggested: List<JsExpression>): List<JsName> defined in org.jetbrains.kotlin.js.translate.expression in file LiteralFunctionTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'capturedArgs' @ [217:47] ==> val capturedArgs: (MutableList<(JsExpression..JsExpression?)>..List<(JsExpression..JsExpression?)>) defined in org.jetbrains.kotlin.js.translate.expression.moveCapturedLocalInside[LocalVariableDescriptor]
 
@@ -601,6 +601,8 @@ Inferred types:
     <R> -> JsNameRef
 
 'JsName' @ [219:45] ==> public/*package*/ constructor JsName(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.js.backend.ast.JsName[JavaClassConstructorDescriptor]
+
+'makeRef' @ [219:53] ==> @NotNull public open fun makeRef(): JsNameRef defined in org.jetbrains.kotlin.js.backend.ast.JsName[JavaMethodDescriptor]
 
 'JsInvocation' @ [220:17] ==> public constructor JsInvocation(@NotNull p0: JsExpression, @NotNull p1: (MutableList<out (JsExpression..JsExpression?)>..List<(JsExpression..JsExpression?)>)) defined in org.jetbrains.kotlin.js.backend.ast.JsInvocation[JavaClassConstructorDescriptor]
 
@@ -624,6 +626,8 @@ Inferred types:
 Inferred types:
     <T> -> JsName
     <R> -> JsParameter
+
+'JsParameter' @ [223:47] ==> public constructor JsParameter(@NotNull p0: JsName) defined in org.jetbrains.kotlin.js.backend.ast.JsParameter[JavaClassConstructorDescriptor]
 
 'CapturedArgsParams' @ [224:12] ==> public constructor CapturedArgsParams(arguments: List<JsExpression> = ..., parameters: List<JsParameter> = ...) defined in org.jetbrains.kotlin.js.translate.expression.CapturedArgsParams[ClassConstructorDescriptorImpl]
 

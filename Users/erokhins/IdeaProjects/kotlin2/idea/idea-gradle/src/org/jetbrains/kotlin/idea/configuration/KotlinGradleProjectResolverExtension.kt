@@ -1,43 +1,28 @@
-'NotNullableUserDataProperty' @ [39:12] ==> public constructor NotNullableUserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> DataNode<ModuleData>
-    <T : Any> -> Boolean
+'getValue' @ [39:12] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [39:44] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> Boolean
 
-'NotNullableUserDataProperty' @ [41:12] ==> public constructor NotNullableUserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>, defaultValue: Boolean) defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> DataNode<ModuleData>
-    <T : Any> -> Boolean
+'getValue' @ [41:12] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [41:44] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> Boolean
 
-'UserDataProperty' @ [43:12] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<CompilerArgumentsBySourceSet /* = Map<String, ArgsInfo> */>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> DataNode<ModuleData>
-    <T : Any> -> Map<String, ArgsInfo>
+'getValue' @ [43:12] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [43:33] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(CompilerArgumentsBySourceSet /* = Map<String, ArgsInfo> */..CompilerArgumentsBySourceSet? /* = Map<String, ArgsInfo>? */)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> Map<String, ArgsInfo>
 
-'UserDataProperty' @ [45:12] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<String>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> DataNode<ModuleData>
-    <T : Any> -> String
+'getValue' @ [45:12] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [45:33] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(String..String?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> String
 
-'UserDataProperty' @ [47:12] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<String>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> DataNode<ModuleData>
-    <T : Any> -> String
+'getValue' @ [47:12] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [47:33] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(String..String?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
@@ -73,7 +58,7 @@ Inferred types:
 
 'getExtraProject' @ [61:39] ==> @Nullable public abstract fun <T : (Any..Any?)> getExtraProject(@Nullable p0: IdeaModule?, p1: (Class<(KotlinGradleModel..KotlinGradleModel?)>..Class<(KotlinGradleModel..KotlinGradleModel?)>?)): KotlinGradleModel? defined in org.jetbrains.plugins.gradle.service.project.ProjectResolverContext[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinGradleModel
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.gradle.KotlinGradleModel..org.jetbrains.kotlin.gradle.KotlinGradleModel?)
 
 'gradleModule' @ [61:55] ==> value-parameter gradleModule: IdeaModule defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.populateModuleDependencies[ValueParameterDescriptorImpl]
 
@@ -124,11 +109,11 @@ Inferred types:
 
 'ideModule' @ [73:9] ==> value-parameter ideModule: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.populateModuleDependencies[ValueParameterDescriptorImpl]
 
-'isResolved' @ [73:19] ==> public var DataNode<ModuleData>.isResolved: Boolean defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleProjectResolverExtension.kt[PropertyDescriptorImpl]
+'isResolved' @ [73:19] ==> public var DataNode<ModuleData>.isResolved: (Boolean..Boolean?) defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleProjectResolverExtension.kt[PropertyDescriptorImpl]
 
 'ideModule' @ [74:9] ==> value-parameter ideModule: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.populateModuleDependencies[ValueParameterDescriptorImpl]
 
-'hasKotlinPlugin' @ [74:19] ==> public var DataNode<ModuleData>.hasKotlinPlugin: Boolean defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleProjectResolverExtension.kt[PropertyDescriptorImpl]
+'hasKotlinPlugin' @ [74:19] ==> public var DataNode<ModuleData>.hasKotlinPlugin: (Boolean..Boolean?) defined in org.jetbrains.kotlin.idea.configuration in file KotlinGradleProjectResolverExtension.kt[PropertyDescriptorImpl]
 
 'gradleModel' @ [74:37] ==> val gradleModel: KotlinGradleModel defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.populateModuleDependencies[LocalVariableDescriptor]
 
@@ -174,13 +159,13 @@ Inferred types:
 
 'data' @ [83:67] ==> public final val <T : (Any..Any?)> DataNode<out ModuleData>.data: ModuleData[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleData
+    <T : (Any..Any?)> -> Captured(out ModuleData)
 
 'targetModule' @ [83:73] ==> value-parameter targetModule: DataNode<out ModuleData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.addDependency[ValueParameterDescriptorImpl]
 
 'data' @ [83:86] ==> public final val <T : (Any..Any?)> DataNode<out ModuleData>.data: ModuleData[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleData
+    <T : (Any..Any?)> -> Captured(out ModuleData)
 
 'moduleDependencyData' @ [84:9] ==> val moduleDependencyData: ModuleDependencyData defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.addDependency[LocalVariableDescriptor]
 
@@ -196,7 +181,7 @@ Inferred types:
 
 'createChild' @ [86:19] ==> @NotNull public open fun <T : (Any..Any?)> createChild(@NotNull p0: Key<(ModuleDependencyData..ModuleDependencyData?)>, @NotNull p1: ModuleDependencyData): DataNode<(ModuleDependencyData..ModuleDependencyData?)> defined in com.intellij.openapi.externalSystem.model.DataNode[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ModuleDependencyData
+    <T : (Any..Any?)> -> (com.intellij.openapi.externalSystem.model.project.ModuleDependencyData..com.intellij.openapi.externalSystem.model.project.ModuleDependencyData?)
 
 'MODULE_DEPENDENCY' @ [86:43] ==> @NotNull public final val MODULE_DEPENDENCY: Key<(ModuleDependencyData..ModuleDependencyData?)> defined in com.intellij.openapi.externalSystem.model.ProjectKeys[JavaPropertyDescriptor]
 
@@ -218,7 +203,7 @@ Inferred types:
 
 'data' @ [90:47] ==> public final val <T : (Any..Any?)> DataNode<out (Any..Any?)>.data: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'id' @ [90:69] ==> public final val ModuleData.id: String[MyPropertyDescriptor]
 
@@ -226,7 +211,7 @@ Inferred types:
 
 'findAll' @ [96:52] ==> @NotNull public open fun <T : (Any..Any?)> findAll(@NotNull p0: DataNode<*>, @NotNull p1: Key<(GradleSourceSetData..GradleSourceSetData?)>): (MutableCollection<(DataNode<(GradleSourceSetData..GradleSourceSetData?)>..DataNode<(GradleSourceSetData..GradleSourceSetData?)>?)>..Collection<(DataNode<(GradleSourceSetData..GradleSourceSetData?)>..DataNode<(GradleSourceSetData..GradleSourceSetData?)>?)>) defined in com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> GradleSourceSetData
+    <T : (Any..Any?)> -> (org.jetbrains.plugins.gradle.model.data.GradleSourceSetData..org.jetbrains.plugins.gradle.model.data.GradleSourceSetData?)
 
 'fromModule' @ [96:60] ==> value-parameter fromModule: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.populateSourceSetDependencies[ValueParameterDescriptorImpl]
 
@@ -239,7 +224,7 @@ Inferred types:
 
 'it' @ [97:32] ==> value-parameter it: (DataNode<(GradleSourceSetData..GradleSourceSetData?)>..DataNode<(GradleSourceSetData..GradleSourceSetData?)>?) defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.populateSourceSetDependencies.<anonymous>[ValueParameterDescriptorImpl]
 
-'data' @ [97:35] ==> public final val <T : (Any..Any?)> DataNode<(GradleSourceSetData..GradleSourceSetData?)>.data: (GradleSourceSetData..GradleSourceSetData?)[MyPropertyDescriptor]
+'data' @ [97:35] ==> public final val <T : (Any..Any?)> DataNode<(GradleSourceSetData..GradleSourceSetData?)>.data: GradleSourceSetData[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> (org.jetbrains.plugins.gradle.model.data.GradleSourceSetData..org.jetbrains.plugins.gradle.model.data.GradleSourceSetData?)
 
@@ -247,7 +232,7 @@ Inferred types:
 
 'findAll' @ [98:54] ==> @NotNull public open fun <T : (Any..Any?)> findAll(@NotNull p0: DataNode<*>, @NotNull p1: Key<(GradleSourceSetData..GradleSourceSetData?)>): (MutableCollection<(DataNode<(GradleSourceSetData..GradleSourceSetData?)>..DataNode<(GradleSourceSetData..GradleSourceSetData?)>?)>..Collection<(DataNode<(GradleSourceSetData..GradleSourceSetData?)>..DataNode<(GradleSourceSetData..GradleSourceSetData?)>?)>) defined in com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> GradleSourceSetData
+    <T : (Any..Any?)> -> (org.jetbrains.plugins.gradle.model.data.GradleSourceSetData..org.jetbrains.plugins.gradle.model.data.GradleSourceSetData?)
 
 'targetModule' @ [98:62] ==> value-parameter targetModule: DataNode<ModuleData> defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.populateSourceSetDependencies[ValueParameterDescriptorImpl]
 
@@ -260,7 +245,7 @@ Inferred types:
 
 'it' @ [99:32] ==> value-parameter it: (DataNode<(GradleSourceSetData..GradleSourceSetData?)>..DataNode<(GradleSourceSetData..GradleSourceSetData?)>?) defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.populateSourceSetDependencies.<anonymous>[ValueParameterDescriptorImpl]
 
-'data' @ [99:35] ==> public final val <T : (Any..Any?)> DataNode<(GradleSourceSetData..GradleSourceSetData?)>.data: (GradleSourceSetData..GradleSourceSetData?)[MyPropertyDescriptor]
+'data' @ [99:35] ==> public final val <T : (Any..Any?)> DataNode<(GradleSourceSetData..GradleSourceSetData?)>.data: GradleSourceSetData[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> (org.jetbrains.plugins.gradle.model.data.GradleSourceSetData..org.jetbrains.plugins.gradle.model.data.GradleSourceSetData?)
 
@@ -272,7 +257,7 @@ Inferred types:
 
 'getExtraProject' @ [101:43] ==> @Nullable public abstract fun <T : (Any..Any?)> getExtraProject(@Nullable p0: IdeaModule?, p1: (Class<(ExternalProject..ExternalProject?)>..Class<(ExternalProject..ExternalProject?)>?)): ExternalProject? defined in org.jetbrains.plugins.gradle.service.project.ProjectResolverContext[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ExternalProject
+    <T : (Any..Any?)> -> (org.jetbrains.plugins.gradle.model.ExternalProject..org.jetbrains.plugins.gradle.model.ExternalProject?)
 
 'gradleModule' @ [101:59] ==> value-parameter gradleModule: IdeaModule defined in org.jetbrains.kotlin.idea.configuration.KotlinGradleProjectResolverExtension.populateSourceSetDependencies[ValueParameterDescriptorImpl]
 

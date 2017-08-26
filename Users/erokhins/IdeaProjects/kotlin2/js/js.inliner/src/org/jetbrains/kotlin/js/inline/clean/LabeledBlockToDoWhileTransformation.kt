@@ -40,7 +40,7 @@
 
 'accept' @ [38:11] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsNode..JsNode?)): (JsNode..JsNode?) defined in org.jetbrains.kotlin.js.inline.clean.LabeledBlockToDoWhileTransformation.apply.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsNode
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'root' @ [38:18] ==> value-parameter root: JsNode defined in org.jetbrains.kotlin.js.inline.clean.LabeledBlockToDoWhileTransformation.apply[ValueParameterDescriptorImpl]
 

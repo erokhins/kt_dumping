@@ -4,8 +4,6 @@ Inferred types:
 
 'module' @ [66:54] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.versions.getLibraryRootsWithAbiIncompatibleKotlinClasses[ValueParameterDescriptorImpl]
 
-'JvmMetadataVersion' @ [66:62] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [66:81] ==> @field:JvmField public final val INSTANCE: JvmMetadataVersion defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion.Companion[DeserializedPropertyDescriptor]
 
 'KotlinJvmMetadataVersionIndex' @ [66:91] ==> public object KotlinJvmMetadataVersionIndex : KotlinMetadataVersionIndexBase<KotlinJvmMetadataVersionIndex, JvmMetadataVersion> defined in org.jetbrains.kotlin.idea.versions in file KotlinJvmMetadataVersionIndex.kt[FakeCallableDescriptorForObject]
@@ -16,15 +14,13 @@ Inferred types:
 
 'module' @ [70:54] ==> value-parameter module: Module defined in org.jetbrains.kotlin.idea.versions.getLibraryRootsWithAbiIncompatibleForKotlinJs[ValueParameterDescriptorImpl]
 
-'JsMetadataVersion' @ [70:62] ==> public companion object defined in org.jetbrains.kotlin.utils.JsMetadataVersion[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [70:80] ==> @field:JvmField public final val INSTANCE: JsMetadataVersion defined in org.jetbrains.kotlin.utils.JsMetadataVersion.Companion[DeserializedPropertyDescriptor]
 
 'KotlinJsMetadataVersionIndex' @ [70:90] ==> public object KotlinJsMetadataVersionIndex : KotlinMetadataVersionIndexBase<KotlinJsMetadataVersionIndex, JsMetadataVersion> defined in org.jetbrains.kotlin.idea.versions in file KotlinJsMetadataVersionIndex.kt[FakeCallableDescriptorForObject]
 
 'project' @ [74:9] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.versions.updateLibraries[ValueParameterDescriptorImpl]
 
-'allModules' @ [74:17] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'allModules' @ [74:17] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'any' @ [74:30] ==> public inline fun <T> Iterable<(Module..Module?)>.any(predicate: ((Module..Module?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -42,7 +38,7 @@ Inferred types:
 
 'project' @ [81:9] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.versions.updateLibraries[ValueParameterDescriptorImpl]
 
-'allModules' @ [81:17] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure[SimpleFunctionDescriptorImpl]
+'allModules' @ [81:17] ==> public fun Project.allModules(): List<(Module..Module?)> defined in org.jetbrains.kotlin.idea.util.projectStructure in file projectStructureUtil.kt[SimpleFunctionDescriptorImpl]
 
 'any' @ [81:30] ==> public inline fun <T> Iterable<(Module..Module?)>.any(predicate: ((Module..Module?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -60,21 +56,15 @@ Inferred types:
 
 'getConfiguratorByName' @ [88:28] ==> public fun getConfiguratorByName(name: String): KotlinProjectConfigurator? defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
-'KotlinJavaModuleConfigurator' @ [88:50] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator[FakeCallableDescriptorForObject]
-
 'NAME' @ [88:79] ==> public final val NAME: String defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator.Companion[PropertyDescriptorImpl]
 
 'error' @ [89:28] ==> @InlineOnly public inline fun error(message: Any): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
 '+' @ [89:34] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'KotlinJavaModuleConfigurator' @ [89:84] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator[FakeCallableDescriptorForObject]
-
 'NAME' @ [89:113] ==> public final val NAME: String defined in org.jetbrains.kotlin.idea.configuration.KotlinJavaModuleConfigurator.Companion[PropertyDescriptorImpl]
 
 'getConfiguratorByName' @ [91:27] ==> public fun getConfiguratorByName(name: String): KotlinProjectConfigurator? defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
-
-'KotlinJsModuleConfigurator' @ [91:49] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinJsModuleConfigurator[FakeCallableDescriptorForObject]
 
 'NAME' @ [91:76] ==> public const final val NAME: String defined in org.jetbrains.kotlin.idea.configuration.KotlinJsModuleConfigurator.Companion[PropertyDescriptorImpl]
 
@@ -82,11 +72,9 @@ Inferred types:
 
 '+' @ [92:33] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'KotlinJsModuleConfigurator' @ [92:83] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinJsModuleConfigurator[FakeCallableDescriptorForObject]
-
 'NAME' @ [92:110] ==> public const final val NAME: String defined in org.jetbrains.kotlin.idea.configuration.KotlinJsModuleConfigurator.Companion[PropertyDescriptorImpl]
 
-'createConfigureKotlinNotificationCollector' @ [94:21] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'createConfigureKotlinNotificationCollector' @ [94:21] ==> public fun createConfigureKotlinNotificationCollector(project: Project): NotificationMessageCollector defined in org.jetbrains.kotlin.idea.configuration in file NotificationMessageCollector.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [94:64] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.versions.updateLibraries[ValueParameterDescriptorImpl]
 
@@ -278,11 +266,11 @@ Inferred types:
 
 '' @ [169:16] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
-'PathUtil' @ [169:17] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'KOTLIN_JAVA_STDLIB_JAR' @ [169:26] ==> public const final val KOTLIN_JAVA_STDLIB_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'CLASSES' @ [169:64] ==> public final val CLASSES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
+
+'getStdlibPath' @ [169:92] ==> @NotNull public abstract fun getStdlibPath(): File defined in org.jetbrains.kotlin.utils.KotlinPaths[JavaMethodDescriptor]
 
 'isExternalLibrary' @ [171:17] ==> public fun isExternalLibrary(library: Library): Boolean defined in org.jetbrains.kotlin.idea.framework in file KotlinLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -292,7 +280,7 @@ Inferred types:
 
 'asList' @ [172:66] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (VirtualFile..VirtualFile?)): (MutableList<(VirtualFile..VirtualFile?)>..List<(VirtualFile..VirtualFile?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> VirtualFile
+    <T : (Any..Any?)> -> (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)
 
 'library' @ [172:74] ==> value-parameter library: Library defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor.RUNTIME_JAR.findExistingJar[ValueParameterDescriptorImpl]
 
@@ -302,31 +290,29 @@ Inferred types:
 
 '' @ [176:16] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
-'PathUtil' @ [176:17] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'KOTLIN_JAVA_REFLECT_JAR' @ [176:26] ==> public const final val KOTLIN_JAVA_REFLECT_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'CLASSES' @ [176:65] ==> public final val CLASSES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
 
-'' @ [177:23] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
+'getReflectPath' @ [176:94] ==> @NotNull public abstract fun getReflectPath(): File defined in org.jetbrains.kotlin.utils.KotlinPaths[JavaMethodDescriptor]
 
-'PathUtil' @ [177:24] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
+'' @ [177:23] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
 'KOTLIN_JAVA_SCRIPT_RUNTIME_JAR' @ [177:33] ==> public const final val KOTLIN_JAVA_SCRIPT_RUNTIME_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'CLASSES' @ [177:79] ==> public final val CLASSES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
 
-'' @ [178:13] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
+'getScriptRuntimePath' @ [177:107] ==> @NotNull public abstract fun getScriptRuntimePath(): File defined in org.jetbrains.kotlin.utils.KotlinPaths[JavaMethodDescriptor]
 
-'PathUtil' @ [178:14] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
+'' @ [178:13] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
 'KOTLIN_TEST_JAR' @ [178:23] ==> public const final val KOTLIN_TEST_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'CLASSES' @ [178:54] ==> public final val CLASSES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
 
-'' @ [179:21] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
+'getKotlinTestPath' @ [178:83] ==> @NotNull public abstract fun getKotlinTestPath(): File defined in org.jetbrains.kotlin.utils.KotlinPaths[JavaMethodDescriptor]
 
-'PathUtil' @ [179:22] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
+'' @ [179:21] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
 'KOTLIN_JAVA_RUNTIME_JRE7_JAR' @ [179:31] ==> public const final val KOTLIN_JAVA_RUNTIME_JRE7_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
@@ -334,15 +320,11 @@ Inferred types:
 
 '' @ [180:21] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
-'PathUtil' @ [180:22] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'KOTLIN_JAVA_RUNTIME_JRE8_JAR' @ [180:31] ==> public const final val KOTLIN_JAVA_RUNTIME_JRE8_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'CLASSES' @ [180:75] ==> public final val CLASSES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
 
 '' @ [181:29] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
-
-'PathUtil' @ [181:30] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'KOTLIN_JAVA_RUNTIME_JRE7_SRC_JAR' @ [181:39] ==> public const final val KOTLIN_JAVA_RUNTIME_JRE7_SRC_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
@@ -350,27 +332,23 @@ Inferred types:
 
 '' @ [182:29] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
-'PathUtil' @ [182:30] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'KOTLIN_JAVA_RUNTIME_JRE8_SRC_JAR' @ [182:39] ==> public const final val KOTLIN_JAVA_RUNTIME_JRE8_SRC_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'SOURCES' @ [182:87] ==> public final val SOURCES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
 
 '' @ [184:20] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
-'PathUtil' @ [184:21] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'KOTLIN_JAVA_STDLIB_SRC_JAR' @ [184:30] ==> public const final val KOTLIN_JAVA_STDLIB_SRC_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'SOURCES' @ [184:72] ==> public final val SOURCES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
+
+'getStdlibSourcesPath' @ [184:101] ==> @NotNull public abstract fun getStdlibSourcesPath(): File defined in org.jetbrains.kotlin.utils.KotlinPaths[JavaMethodDescriptor]
 
 'super' @ [186:20] ==> <this> defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor.RUNTIME_SRC_JAR[LazyClassReceiverParameterDescriptor]
 
 'findExistingJar' @ [186:26] ==> public open fun findExistingJar(library: Library): VirtualFile? defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[SimpleFunctionDescriptorImpl]
 
 'library' @ [186:42] ==> value-parameter library: Library defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor.RUNTIME_SRC_JAR.findExistingJar[ValueParameterDescriptorImpl]
-
-'LibraryUtils' @ [187:20] ==> public object LibraryUtils defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'getJarFile' @ [187:33] ==> @JvmStatic public final fun getJarFile(classesRoots: List<VirtualFile>, jarName: String): VirtualFile? defined in org.jetbrains.kotlin.utils.LibraryUtils[DeserializedSimpleFunctionDescriptor]
 
@@ -384,13 +362,9 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)
 
-'PathUtil' @ [187:86] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'KOTLIN_JAVA_STDLIB_SRC_JAR_OLD' @ [187:95] ==> public const final val KOTLIN_JAVA_STDLIB_SRC_JAR_OLD: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 '' @ [190:20] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
-
-'PathUtil' @ [190:21] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
 'KOTLIN_REFLECT_SRC_JAR' @ [190:30] ==> public const final val KOTLIN_REFLECT_SRC_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
@@ -398,27 +372,25 @@ Inferred types:
 
 '' @ [191:17] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
-'PathUtil' @ [191:18] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'KOTLIN_TEST_SRC_JAR' @ [191:27] ==> public const final val KOTLIN_TEST_SRC_JAR: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'SOURCES' @ [191:62] ==> public final val SOURCES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
 
 '' @ [193:18] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
-'PathUtil' @ [193:19] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'JS_LIB_JAR_NAME' @ [193:28] ==> public const final val JS_LIB_JAR_NAME: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'CLASSES' @ [193:59] ==> public final val CLASSES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
 
-'' @ [194:22] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
+'getJsStdLibJarPath' @ [193:87] ==> @NotNull public abstract fun getJsStdLibJarPath(): File defined in org.jetbrains.kotlin.utils.KotlinPaths[JavaMethodDescriptor]
 
-'PathUtil' @ [194:23] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
+'' @ [194:22] ==> private constructor LibraryJarDescriptor(jarName: String, orderRootType: OrderRootType, shouldExist: Boolean, getPath: (KotlinPaths) -> File = ...) defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor[ClassConstructorDescriptorImpl]
 
 'JS_LIB_SRC_JAR_NAME' @ [194:32] ==> public const final val JS_LIB_SRC_JAR_NAME: String defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'SOURCES' @ [194:67] ==> public final val SOURCES: (OrderRootType..OrderRootType?) defined in com.intellij.openapi.roots.OrderRootType[JavaPropertyDescriptor]
+
+'getJsStdLibSrcJarPath' @ [194:96] ==> @NotNull public abstract fun getJsStdLibSrcJarPath(): File defined in org.jetbrains.kotlin.utils.KotlinPaths[JavaMethodDescriptor]
 
 'isExternalLibrary' @ [197:13] ==> public fun isExternalLibrary(library: Library): Boolean defined in org.jetbrains.kotlin.idea.framework in file KotlinLibraryUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -430,7 +402,7 @@ Inferred types:
 
 'asList' @ [198:47] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (VirtualFile..VirtualFile?)): (MutableList<(VirtualFile..VirtualFile?)>..List<(VirtualFile..VirtualFile?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> VirtualFile
+    <T : (Any..Any?)> -> (com.intellij.openapi.vfs.VirtualFile..com.intellij.openapi.vfs.VirtualFile?)
 
 'library' @ [198:55] ==> value-parameter library: Library defined in org.jetbrains.kotlin.idea.versions.LibraryJarDescriptor.findExistingJar[ValueParameterDescriptorImpl]
 
@@ -442,8 +414,6 @@ Inferred types:
 
 'invoke' @ [201:29] ==> public abstract operator fun invoke(p1: KotlinPaths): File defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'PathUtil' @ [201:37] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'kotlinPathsForIdeaPlugin' @ [201:46] ==> @JvmStatic public final val kotlinPathsForIdeaPlugin: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'bundledRuntimeBuildNumber' @ [205:12] ==> private val bundledRuntimeBuildNumber: String? defined in org.jetbrains.kotlin.idea.versions in file KotlinRuntimeLibraryUtil.kt[PropertyDescriptorImpl]
@@ -452,9 +422,9 @@ Inferred types:
 
 'getPluginVersion' @ [205:79] ==> @NotNull public open fun getPluginVersion(): String defined in org.jetbrains.kotlin.idea.KotlinPluginUtil[JavaMethodDescriptor]
 
-'lazy' @ [208:51] ==> public fun <T> lazy(initializer: () -> String?): Lazy<String?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [208:51] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String?
+    <T> -> T
 
 'PathUtil' @ [209:16] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
 
@@ -683,7 +653,7 @@ Inferred types:
 
 'getAllKeys' @ [290:52] ==> @NotNull public abstract fun <K : (Any..Any?)> getAllKeys(@NotNull p0: ID<(T..T?), *>, @NotNull p1: Project): (MutableCollection<(T..T?)>..Collection<(T..T?)>) defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> T
+    <K : (Any..Any?)> -> (T..T?)
 
 'id' @ [290:63] ==> val id: ID<(T..T?), (Void..Void?)> defined in org.jetbrains.kotlin.idea.versions.getLibraryRootsWithAbiIncompatibleVersion[LocalVariableDescriptor]
 
@@ -698,6 +668,8 @@ Inferred types:
     <T> -> (T..T?)
 
 'BinaryVersion' @ [291:45] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.BinaryVersion[FakeCallableDescriptorForObject]
+
+'isCompatible' @ [291:60] ==> public abstract fun isCompatible(): Boolean defined in org.jetbrains.kotlin.serialization.deserialization.BinaryVersion[DeserializedSimpleFunctionDescriptor]
 
 'toHashSet' @ [291:74] ==> public fun <T> Iterable<(T..T?)>.toHashSet(): HashSet<(T..T?)> /* = HashSet<(T..T?)> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -717,10 +689,10 @@ Inferred types:
 
 'getInstance' @ [296:43] ==> public open fun getInstance(): (FileBasedIndex..FileBasedIndex?) defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
 
-'getContainingFiles' @ [296:57] ==> @NotNull public abstract fun <K : (Any..Any?), V : (Any..Any?)> getContainingFiles(@NotNull p0: ID<(T..T?), (Void..Void?)>, @NotNull p1: (T..T?), @NotNull p2: GlobalSearchScope): (MutableCollection<(VirtualFile..VirtualFile?)>..Collection<(VirtualFile..VirtualFile?)>) defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
+'getContainingFiles' @ [296:57] ==> @NotNull public abstract fun <K : (Any..Any?), V : (Any..Any?)> getContainingFiles(@NotNull p0: ID<(T..T?), (Void..Void?)>, @NotNull p1: T, @NotNull p2: GlobalSearchScope): (MutableCollection<(VirtualFile..VirtualFile?)>..Collection<(VirtualFile..VirtualFile?)>) defined in com.intellij.util.indexing.FileBasedIndex[JavaMethodDescriptor]
 Inferred types:
     <K : (Any..Any?)> -> (T..T?)
-    <V : (Any..Any?)> -> Void
+    <V : (Any..Any?)> -> (java.lang.Void..java.lang.Void?)
 
 'id' @ [296:76] ==> val id: ID<(T..T?), (Void..Void?)> defined in org.jetbrains.kotlin.idea.versions.getLibraryRootsWithAbiIncompatibleVersion[LocalVariableDescriptor]
 
@@ -750,9 +722,9 @@ Inferred types:
 
 'add' @ [301:22] ==> public open fun add(element: BinaryVersionedFile<T>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
-'BinaryVersionedFile' @ [301:26] ==> public constructor BinaryVersionedFile<out T : BinaryVersion>(file: VirtualFile, version: T, supportedVersion: T) defined in org.jetbrains.kotlin.idea.versions.BinaryVersionedFile[ClassConstructorDescriptorImpl]
+'BinaryVersionedFile' @ [301:26] ==> public constructor BinaryVersionedFile<out T : BinaryVersion>(file: VirtualFile, version: (T..T?), supportedVersion: (T..T?)) defined in org.jetbrains.kotlin.idea.versions.BinaryVersionedFile[ClassConstructorDescriptorImpl]
 Inferred types:
-    <out T : BinaryVersion> -> T
+    <out T : BinaryVersion> -> (T..T?)
 
 'getLocalFile' @ [301:46] ==> @NotNull public open fun getLocalFile(@NotNull p0: VirtualFile): VirtualFile defined in com.intellij.util.PathUtil[JavaMethodDescriptor]
 

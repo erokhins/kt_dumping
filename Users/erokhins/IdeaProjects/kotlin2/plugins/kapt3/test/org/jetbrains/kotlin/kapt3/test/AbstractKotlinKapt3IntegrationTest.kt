@@ -233,8 +233,6 @@ Inferred types:
 
 'getJdkClassesRootsFromCurrentJre' @ [154:41] ==> @JvmStatic public final fun getJdkClassesRootsFromCurrentJre(): List<File> defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedSimpleFunctionDescriptor]
 
-'PathUtil' @ [154:78] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'kotlinPathsForIdeaPlugin' @ [154:87] ==> @JvmStatic public final val kotlinPathsForIdeaPlugin: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'stdlibPath' @ [154:112] ==> public final val KotlinPaths.stdlibPath: File[MyPropertyDescriptor]
@@ -298,8 +296,6 @@ Inferred types:
 'joinToString' @ [172:22] ==> public fun <T> Iterable<String>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: ((String) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
-
-'AbstractKotlinKapt3Test' @ [172:35] ==> public companion object defined in org.jetbrains.kotlin.kapt3.test.AbstractKotlinKapt3Test[FakeCallableDescriptorForObject]
 
 'FILE_SEPARATOR' @ [172:59] ==> public final val FILE_SEPARATOR: String defined in org.jetbrains.kotlin.kapt3.test.AbstractKotlinKapt3Test.Companion[PropertyDescriptorImpl]
 

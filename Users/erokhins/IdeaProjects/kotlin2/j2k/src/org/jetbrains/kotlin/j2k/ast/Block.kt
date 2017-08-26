@@ -44,7 +44,7 @@ Inferred types:
 
 'lBrace' @ [32:24] ==> public final val lBrace: LBrace defined in org.jetbrains.kotlin.j2k.ast.Block[PropertyDescriptorImpl]
 
-'append' @ [32:32] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [32:32] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'statements' @ [32:39] ==> public final val statements: List<Statement> defined in org.jetbrains.kotlin.j2k.ast.Block[PropertyDescriptorImpl]
 

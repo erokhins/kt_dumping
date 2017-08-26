@@ -42,7 +42,7 @@ Inferred types:
 
 'put' @ [47:17] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: DataKey<(Location<*>..Location<*>?)>, p1: (Location<*>..Location<*>?)): Unit defined in com.intellij.testFramework.MapDataContext[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Location<*>
+    <T : (Any..Any?)> -> (com.intellij.execution.Location<*>..com.intellij.execution.Location<*>?)
 
 'DATA_KEY' @ [47:30] ==> public final val DATA_KEY: (DataKey<(Location<*>..Location<*>?)>..DataKey<(Location<*>..Location<*>?)>?) defined in com.intellij.execution.Location[JavaPropertyDescriptor]
 

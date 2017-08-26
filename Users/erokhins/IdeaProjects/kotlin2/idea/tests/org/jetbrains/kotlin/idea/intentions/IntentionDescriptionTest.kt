@@ -143,7 +143,7 @@ Inferred types:
 
 'getExtensionPoint' @ [65:55] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensionPoint(@NotNull p0: ExtensionPointName<(IntentionActionBean..IntentionActionBean?)>): ExtensionPoint<(IntentionActionBean..IntentionActionBean?)> defined in com.intellij.openapi.extensions.ExtensionsArea[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IntentionActionBean
+    <T : (Any..Any?)> -> (com.intellij.codeInsight.intention.IntentionActionBean..com.intellij.codeInsight.intention.IntentionActionBean?)
 
 'EP_INTENTION_ACTIONS' @ [65:90] ==> public final val EP_INTENTION_ACTIONS: (ExtensionPointName<(IntentionActionBean..IntentionActionBean?)>..ExtensionPointName<(IntentionActionBean..IntentionActionBean?)>?) defined in com.intellij.codeInsight.intention.IntentionManager[JavaPropertyDescriptor]
 

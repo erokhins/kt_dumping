@@ -8,7 +8,7 @@
 
 'SmartList' @ [33:57] ==> public constructor SmartList<E : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> IrExpression
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.ir.expressions.IrExpression..org.jetbrains.kotlin.ir.expressions.IrExpression?)
 
 'arguments' @ [36:9] ==> public open val arguments: MutableList<IrExpression> defined in org.jetbrains.kotlin.ir.expressions.impl.IrErrorCallExpressionImpl[PropertyDescriptorImpl]
 

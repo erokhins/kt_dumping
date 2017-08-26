@@ -56,7 +56,7 @@ Inferred types:
 
 'inputVariable' @ [73:39] ==> public final val inputVariable: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.MatchingState[PropertyDescriptorImpl]
 
-'hasUsages' @ [73:53] ==> public fun KtCallableDeclaration.hasUsages(inElements: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'hasUsages' @ [73:53] ==> public fun KtCallableDeclaration.hasUsages(inElements: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [73:63] ==> var state: MatchingState defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.match[LocalVariableDescriptor]
 
@@ -72,7 +72,7 @@ Inferred types:
 
 'indexVariable' @ [76:51] ==> public final val indexVariable: KtCallableDeclaration? defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.MatchingState[PropertyDescriptorImpl]
 
-'hasUsages' @ [76:67] ==> public fun KtCallableDeclaration.hasUsages(inElements: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'hasUsages' @ [76:67] ==> public fun KtCallableDeclaration.hasUsages(inElements: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [76:77] ==> var state: MatchingState defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.match[LocalVariableDescriptor]
 
@@ -207,7 +207,7 @@ Inferred types:
 
 'inputVariable' @ [93:84] ==> public final val inputVariable: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.MatchingState[PropertyDescriptorImpl]
 
-'hasUsages' @ [93:98] ==> public fun KtCallableDeclaration.hasUsages(inElements: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'hasUsages' @ [93:98] ==> public fun KtCallableDeclaration.hasUsages(inElements: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'newState' @ [93:108] ==> var newState: MatchingState defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.match[LocalVariableDescriptor]
 
@@ -223,7 +223,7 @@ Inferred types:
 
 'inputVariable' @ [96:39] ==> public final val inputVariable: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.MatchingState[PropertyDescriptorImpl]
 
-'hasDifferentSetsOfUsages' @ [96:53] ==> public fun KtCallableDeclaration.hasDifferentSetsOfUsages(elements1: Collection<KtElement>, elements2: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'hasDifferentSetsOfUsages' @ [96:53] ==> public fun KtCallableDeclaration.hasDifferentSetsOfUsages(elements1: Collection<KtElement>, elements2: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [96:78] ==> var state: MatchingState defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.match[LocalVariableDescriptor]
 
@@ -239,7 +239,7 @@ Inferred types:
 
 'indexVariable' @ [97:40] ==> public final val indexVariable: KtCallableDeclaration? defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.MatchingState[PropertyDescriptorImpl]
 
-'hasDifferentSetsOfUsages' @ [97:55] ==> public fun KtCallableDeclaration.hasDifferentSetsOfUsages(elements1: Collection<KtElement>, elements2: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'hasDifferentSetsOfUsages' @ [97:55] ==> public fun KtCallableDeclaration.hasDifferentSetsOfUsages(elements1: Collection<KtElement>, elements2: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [97:80] ==> var state: MatchingState defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.match[LocalVariableDescriptor]
 
@@ -269,7 +269,7 @@ Inferred types:
 
 'indexVariable' @ [104:39] ==> public final val indexVariable: KtCallableDeclaration? defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.MatchingState[PropertyDescriptorImpl]
 
-'hasUsages' @ [104:55] ==> public fun KtCallableDeclaration.hasUsages(inElements: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain[SimpleFunctionDescriptorImpl]
+'hasUsages' @ [104:55] ==> public fun KtCallableDeclaration.hasUsages(inElements: Collection<KtElement>): Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file commonUtils.kt[SimpleFunctionDescriptorImpl]
 
 'newState' @ [104:65] ==> var newState: MatchingState defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.match[LocalVariableDescriptor]
 
@@ -585,9 +585,9 @@ Inferred types:
 
 'loopRange' @ [199:62] ==> val loopRange: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.extractLoopData[LocalVariableDescriptor]
 
-'lazy' @ [210:39] ==> public fun <T> lazy(initializer: () -> Pseudocode): Lazy<Pseudocode> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [210:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Pseudocode
+    <T> -> T
 
 'loop' @ [211:31] ==> value-parameter loop: KtForExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.createInitialMatchingState[ValueParameterDescriptorImpl]
 
@@ -708,7 +708,7 @@ Inferred types:
 
 'putCopyableUserData' @ [254:28] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(ExplicitSmartCasts..ExplicitSmartCasts?)>..Key<(ExplicitSmartCasts..ExplicitSmartCasts?)>?), @Nullable p1: ExplicitSmartCasts?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ExplicitSmartCasts
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts..org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts?)
 
 'SMARTCAST_KEY' @ [254:48] ==> val SMARTCAST_KEY: Key<ExplicitSmartCasts> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.checkSmartCastsPreserved[LocalVariableDescriptor]
 
@@ -731,7 +731,7 @@ Inferred types:
 
 'putCopyableUserData' @ [259:28] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(ImplicitSmartCasts..ImplicitSmartCasts?)>..Key<(ImplicitSmartCasts..ImplicitSmartCasts?)>?), @Nullable p1: ImplicitSmartCasts?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ImplicitSmartCasts
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.ImplicitSmartCasts..org.jetbrains.kotlin.resolve.calls.smartcasts.ImplicitSmartCasts?)
 
 'IMPLICIT_RECEIVER_SMARTCAST_KEY' @ [259:48] ==> val IMPLICIT_RECEIVER_SMARTCAST_KEY: Key<ImplicitSmartCasts> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.checkSmartCastsPreserved[LocalVariableDescriptor]
 
@@ -765,7 +765,7 @@ Inferred types:
 
 'getCopyableUserData' @ [272:44] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(ExplicitSmartCasts..ExplicitSmartCasts?)>..Key<(ExplicitSmartCasts..ExplicitSmartCasts?)>?)): ExplicitSmartCasts? defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ExplicitSmartCasts
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts..org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts?)
 
 'SMARTCAST_KEY' @ [272:64] ==> val SMARTCAST_KEY: Key<ExplicitSmartCasts> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.checkSmartCastsPreserved[LocalVariableDescriptor]
 
@@ -793,7 +793,7 @@ Inferred types:
 
 'getCopyableUserData' @ [279:60] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(ImplicitSmartCasts..ImplicitSmartCasts?)>..Key<(ImplicitSmartCasts..ImplicitSmartCasts?)>?)): ImplicitSmartCasts? defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ImplicitSmartCasts
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.ImplicitSmartCasts..org.jetbrains.kotlin.resolve.calls.smartcasts.ImplicitSmartCasts?)
 
 'IMPLICIT_RECEIVER_SMARTCAST_KEY' @ [279:80] ==> val IMPLICIT_RECEIVER_SMARTCAST_KEY: Key<ImplicitSmartCasts> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.checkSmartCastsPreserved[LocalVariableDescriptor]
 
@@ -849,7 +849,7 @@ Inferred types:
 
 'putCopyableUserData' @ [298:20] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(ExplicitSmartCasts..ExplicitSmartCasts?)>..Key<(ExplicitSmartCasts..ExplicitSmartCasts?)>?), @Nullable p1: ExplicitSmartCasts?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ExplicitSmartCasts
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts..org.jetbrains.kotlin.resolve.calls.smartcasts.ExplicitSmartCasts?)
 
 'SMARTCAST_KEY' @ [298:40] ==> val SMARTCAST_KEY: Key<ExplicitSmartCasts> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.checkSmartCastsPreserved[LocalVariableDescriptor]
 
@@ -857,7 +857,7 @@ Inferred types:
 
 'putCopyableUserData' @ [299:20] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(ImplicitSmartCasts..ImplicitSmartCasts?)>..Key<(ImplicitSmartCasts..ImplicitSmartCasts?)>?), @Nullable p1: ImplicitSmartCasts?): Unit defined in org.jetbrains.kotlin.psi.KtExpression[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ImplicitSmartCasts
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.ImplicitSmartCasts..org.jetbrains.kotlin.resolve.calls.smartcasts.ImplicitSmartCasts?)
 
 'IMPLICIT_RECEIVER_SMARTCAST_KEY' @ [299:40] ==> val IMPLICIT_RECEIVER_SMARTCAST_KEY: Key<ImplicitSmartCasts> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.checkSmartCastsPreserved[LocalVariableDescriptor]
 
@@ -1055,7 +1055,9 @@ Inferred types:
 
 'unwrapBlock' @ [370:106] ==> public fun MatchingState.unwrapBlock(): MatchingState defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain in file utils.kt[SimpleFunctionDescriptorImpl]
 
-'IntroduceIndexMatcher' @ [372:17] ==> public object IntroduceIndexMatcher : TransformationMatcher defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence in file IntroduceIndexMatcher.kt[FakeCallableDescriptorForObject]
+'?:' @ [372:17] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: TransformationMatch.Sequence?, right: TransformationMatch.Sequence): TransformationMatch.Sequence[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Sequence
 
 'match' @ [372:39] ==> public open fun match(state: MatchingState): TransformationMatch.Sequence? defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.IntroduceIndexMatcher[SimpleFunctionDescriptorImpl]
 

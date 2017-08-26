@@ -14,8 +14,6 @@
 
 'typeTable' @ [41:83] ==> public final val ProtoBuf.Package.typeTable: (ProtoBuf.TypeTable..ProtoBuf.TypeTable?)[MyPropertyDescriptor]
 
-'SinceKotlinInfoTable' @ [42:34] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfoTable[FakeCallableDescriptorForObject]
-
 'create' @ [42:55] ==> public final fun create(table: ProtoBuf.SinceKotlinInfoTable): SinceKotlinInfoTable defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfoTable.Companion[SimpleFunctionDescriptorImpl]
 
 'proto' @ [42:62] ==> value-parameter proto: ProtoBuf.Package defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedPackageMemberScope.<init>[ValueParameterDescriptorImpl]

@@ -88,13 +88,13 @@ Inferred types:
 
 'this' @ [67:9] ==> <this> defined in org.jetbrains.kotlin.descriptors.annotations.isInlineOnlyOrReifiable[ReceiverParameterDescriptorImpl]
 
-'isReifiable' @ [67:46] ==> private fun CallableMemberDescriptor.isReifiable(): Boolean defined in org.jetbrains.kotlin.descriptors.annotations[SimpleFunctionDescriptorImpl]
+'isReifiable' @ [67:46] ==> private fun CallableMemberDescriptor.isReifiable(): Boolean defined in org.jetbrains.kotlin.descriptors.annotations in file annotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'getDirectMember' @ [67:79] ==> @NotNull public open fun getDirectMember(@NotNull descriptor: CallableMemberDescriptor): CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
 'this' @ [67:95] ==> <this> defined in org.jetbrains.kotlin.descriptors.annotations.isInlineOnlyOrReifiable[ReceiverParameterDescriptorImpl]
 
-'isReifiable' @ [67:101] ==> private fun CallableMemberDescriptor.isReifiable(): Boolean defined in org.jetbrains.kotlin.descriptors.annotations[SimpleFunctionDescriptorImpl]
+'isReifiable' @ [67:101] ==> private fun CallableMemberDescriptor.isReifiable(): Boolean defined in org.jetbrains.kotlin.descriptors.annotations in file annotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'isInlineOnly' @ [67:118] ==> public fun MemberDescriptor.isInlineOnly(): Boolean defined in org.jetbrains.kotlin.descriptors.annotations in file annotationUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -121,13 +121,13 @@ Inferred types:
 
 '!' @ [74:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'hasInlineOnlyAnnotation' @ [74:11] ==> private fun CallableMemberDescriptor.hasInlineOnlyAnnotation(): Boolean defined in org.jetbrains.kotlin.descriptors.annotations[SimpleFunctionDescriptorImpl]
+'hasInlineOnlyAnnotation' @ [74:11] ==> private fun CallableMemberDescriptor.hasInlineOnlyAnnotation(): Boolean defined in org.jetbrains.kotlin.descriptors.annotations in file annotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'getDirectMember' @ [74:56] ==> @NotNull public open fun getDirectMember(@NotNull descriptor: CallableMemberDescriptor): CallableMemberDescriptor defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 
 'this' @ [74:72] ==> <this> defined in org.jetbrains.kotlin.descriptors.annotations.isInlineOnly[ReceiverParameterDescriptorImpl]
 
-'hasInlineOnlyAnnotation' @ [74:78] ==> private fun CallableMemberDescriptor.hasInlineOnlyAnnotation(): Boolean defined in org.jetbrains.kotlin.descriptors.annotations[SimpleFunctionDescriptorImpl]
+'hasInlineOnlyAnnotation' @ [74:78] ==> private fun CallableMemberDescriptor.hasInlineOnlyAnnotation(): Boolean defined in org.jetbrains.kotlin.descriptors.annotations in file annotationUtil.kt[SimpleFunctionDescriptorImpl]
 
 'assert' @ [75:5] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 

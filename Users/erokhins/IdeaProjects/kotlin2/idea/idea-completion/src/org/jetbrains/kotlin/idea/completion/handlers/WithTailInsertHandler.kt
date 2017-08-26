@@ -54,7 +54,7 @@
 
 'getUserData' @ [50:66] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Unit..Unit?)>): Unit? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'KEEP_OLD_ARGUMENT_LIST_ON_TAB_KEY' @ [50:78] ==> public val KEEP_OLD_ARGUMENT_LIST_ON_TAB_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -63,8 +63,6 @@ Inferred types:
 'offsetMap' @ [51:21] ==> public final val InsertionContext.offsetMap: (OffsetMap..OffsetMap?)[MyPropertyDescriptor]
 
 'tryGetOffset' @ [51:31] ==> public fun OffsetMap.tryGetOffset(key: OffsetKey): Int? defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
-
-'SmartCompletion' @ [51:44] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion[FakeCallableDescriptorForObject]
 
 'OLD_ARGUMENTS_REPLACEMENT_OFFSET' @ [51:60] ==> public final val OLD_ARGUMENTS_REPLACEMENT_OFFSET: OffsetKey defined in org.jetbrains.kotlin.idea.completion.smart.SmartCompletion.Companion[PropertyDescriptorImpl]
 
@@ -127,7 +125,7 @@ Inferred types:
 
 'charsSequence' @ [69:44] ==> public final val Document.charsSequence: CharSequence[MyPropertyDescriptor]
 
-'isCharAt' @ [69:58] ==> public fun CharSequence.isCharAt(offset: Int, c: Char): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers[SimpleFunctionDescriptorImpl]
+'isCharAt' @ [69:58] ==> public fun CharSequence.isCharAt(offset: Int, c: Char): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers in file handlerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'offset' @ [69:67] ==> var offset: Int defined in org.jetbrains.kotlin.idea.completion.handlers.WithTailInsertHandler.postHandleInsert[LocalVariableDescriptor]
 
@@ -199,7 +197,7 @@ Inferred types:
 
 'document' @ [94:14] ==> value-parameter document: Document defined in org.jetbrains.kotlin.idea.completion.handlers.WithTailInsertHandler.shouldOverwriteChar[ValueParameterDescriptorImpl]
 
-'isTextAt' @ [94:23] ==> public fun Document.isTextAt(offset: Int, text: String): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers[SimpleFunctionDescriptorImpl]
+'isTextAt' @ [94:23] ==> public fun Document.isTextAt(offset: Int, text: String): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers in file handlerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'offset' @ [94:32] ==> value-parameter offset: Int defined in org.jetbrains.kotlin.idea.completion.handlers.WithTailInsertHandler.shouldOverwriteChar[ValueParameterDescriptorImpl]
 
@@ -211,7 +209,7 @@ Inferred types:
 
 'charsSequence' @ [95:41] ==> public final val Document.charsSequence: CharSequence[MyPropertyDescriptor]
 
-'isCharAt' @ [95:55] ==> public fun CharSequence.isCharAt(offset: Int, c: Char): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers[SimpleFunctionDescriptorImpl]
+'isCharAt' @ [95:55] ==> public fun CharSequence.isCharAt(offset: Int, c: Char): Boolean defined in org.jetbrains.kotlin.idea.completion.handlers in file handlerUtils.kt[SimpleFunctionDescriptorImpl]
 
 'offset' @ [95:64] ==> value-parameter offset: Int defined in org.jetbrains.kotlin.idea.completion.handlers.WithTailInsertHandler.shouldOverwriteChar[ValueParameterDescriptorImpl]
 

@@ -244,7 +244,7 @@ Inferred types:
 
 'resultingDescriptor' @ [105:84] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'descriptor' @ [105:107] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.inspections.CanBeValInspection.buildVisitor.<no name provided>.collectWriteInstructions[ValueParameterDescriptorImpl]
 

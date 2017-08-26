@@ -4,14 +4,14 @@ Inferred types:
 
 'KEY' @ [27:64] ==> public final val KEY: StubIndexKey<(String..String?), (KtTypeAlias..KtTypeAlias?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex.Companion[PropertyDescriptorImpl]
 
-'!!' @ [30:13] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: (MutableCollection<KtTypeAlias>?..Collection<KtTypeAlias>?)): (MutableCollection<KtTypeAlias>..Collection<KtTypeAlias>)[SimpleFunctionDescriptorImpl]
+'!!' @ [30:13] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: (MutableCollection<(KtTypeAlias..KtTypeAlias?)>?..Collection<(KtTypeAlias..KtTypeAlias?)>?)): (MutableCollection<(KtTypeAlias..KtTypeAlias?)>..Collection<(KtTypeAlias..KtTypeAlias?)>)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> (kotlin.collections.MutableCollection<org.jetbrains.kotlin.psi.KtTypeAlias>..kotlin.collections.Collection<org.jetbrains.kotlin.psi.KtTypeAlias>)
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> (kotlin.collections.MutableCollection<(org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)>)
 
 'getElements' @ [30:23] ==> public open fun <Key : (Any..Any?), Psi : (PsiElement..PsiElement?)> getElements(@NotNull p0: StubIndexKey<(String..String?), (KtTypeAlias..KtTypeAlias?)>, @NotNull p1: String, @NotNull p2: Project, @Nullable p3: GlobalSearchScope?, @NotNull p4: Class<(KtTypeAlias..KtTypeAlias?)>): (MutableCollection<(KtTypeAlias..KtTypeAlias?)>..Collection<(KtTypeAlias..KtTypeAlias?)>?) defined in com.intellij.psi.stubs.StubIndex[JavaMethodDescriptor]
 Inferred types:
-    <Key : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtTypeAlias
+    <Key : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)
 
 'KEY' @ [30:35] ==> public final val KEY: StubIndexKey<(String..String?), (KtTypeAlias..KtTypeAlias?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex.Companion[PropertyDescriptorImpl]
 
@@ -27,8 +27,8 @@ Inferred types:
 
 'createIndexKey' @ [33:35] ==> @NotNull public open fun <K : (Any..Any?), Psi : (PsiElement..PsiElement?)> createIndexKey(@NotNull indexClass: Class<out (StubIndexExtension<(String..String?), (KtTypeAlias..KtTypeAlias?)>..StubIndexExtension<(String..String?), (KtTypeAlias..KtTypeAlias?)>?)>): StubIndexKey<(String..String?), (KtTypeAlias..KtTypeAlias?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinIndexUtil[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtTypeAlias
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)
 
 'KotlinTypeAliasByExpansionShortNameIndex' @ [33:50] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex[FakeCallableDescriptorForObject]
 

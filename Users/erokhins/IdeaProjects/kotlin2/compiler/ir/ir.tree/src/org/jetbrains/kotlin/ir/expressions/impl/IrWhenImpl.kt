@@ -149,8 +149,6 @@ Inferred types:
 
 'IrElseBranchImpl' @ [75:17] ==> public constructor IrElseBranchImpl(condition: IrExpression, result: IrExpression) defined in org.jetbrains.kotlin.ir.expressions.impl.IrElseBranchImpl[ClassConstructorDescriptorImpl]
 
-'IrConstImpl' @ [76:25] ==> public companion object defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl[FakeCallableDescriptorForObject]
-
 'boolean' @ [76:37] ==> public final fun boolean(startOffset: Int, endOffset: Int, type: KotlinType, value: Boolean): IrConstImpl<Boolean> defined in org.jetbrains.kotlin.ir.expressions.impl.IrConstImpl.Companion[SimpleFunctionDescriptorImpl]
 
 'result' @ [76:45] ==> value-parameter result: IrExpression defined in org.jetbrains.kotlin.ir.expressions.impl.IrBranchImpl.Companion.elseBranch[ValueParameterDescriptorImpl]

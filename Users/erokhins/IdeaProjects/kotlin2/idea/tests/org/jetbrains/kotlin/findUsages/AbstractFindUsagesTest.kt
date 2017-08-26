@@ -35,9 +35,9 @@
         }
         else {
             Property::class.java
-        }' @ [81:34] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out Any>, elseBranch: Class<out Any>): Class<out Any>[SimpleFunctionDescriptorImpl]
+        }' @ [81:34] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?), elseBranch: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out Any>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.lang.Class<out (kotlin.Any..kotlin.Any?)>..java.lang.Class<out (kotlin.Any..kotlin.Any?)>?)
 
 '!' @ [81:38] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -190,7 +190,7 @@ Inferred types:
 
 'assertInstanceOf' @ [122:28] ==> @Contract public open fun <T : (Any..Any?)> assertInstanceOf(p0: (Any..Any?), @NotNull p1: Class<(T..T?)>): (T..T?) defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'caretElement' @ [122:45] ==> val caretElement: PsiElement defined in org.jetbrains.kotlin.findUsages.AbstractFindUsagesTest.doTest[LocalVariableDescriptor]
 
@@ -322,6 +322,8 @@ Inferred types:
     <T> -> UsageInfo
     <R> -> UsageInfo2UsageAdapter
 
+'UsageInfo2UsageAdapter' @ [159:28] ==> public constructor UsageInfo2UsageAdapter(@NotNull p0: UsageInfo) defined in com.intellij.usages.UsageInfo2UsageAdapter[JavaClassConstructorDescriptor]
+
 'filter' @ [160:22] ==> public inline fun <T> Iterable<UsageInfo2UsageAdapter>.filter(predicate: (UsageInfo2UsageAdapter) -> Boolean): List<UsageInfo2UsageAdapter> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> UsageInfo2UsageAdapter
@@ -350,7 +352,7 @@ Inferred types:
 
 'getExtensions' @ [170:40] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(UsageTypeProvider..UsageTypeProvider?)>): (Array<(UsageTypeProvider..UsageTypeProvider?)>..Array<out (UsageTypeProvider..UsageTypeProvider?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UsageTypeProvider
+    <T : (Any..Any?)> -> (com.intellij.usages.impl.rules.UsageTypeProvider..com.intellij.usages.impl.rules.UsageTypeProvider?)
 
 'EP_NAME' @ [170:72] ==> public final val EP_NAME: (ExtensionPointName<(UsageTypeProvider..UsageTypeProvider?)>..ExtensionPointName<(UsageTypeProvider..UsageTypeProvider?)>?) defined in com.intellij.usages.impl.rules.UsageTypeProvider[JavaPropertyDescriptor]
 
@@ -440,7 +442,7 @@ Inferred types:
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
 
-'findUsages' @ [213:9] ==> internal fun findUsages(targetElement: PsiElement, options: FindUsagesOptions?, highlightingMode: Boolean, project: Project, searchSuperDeclaration: Boolean = ...): Collection<UsageInfo> defined in org.jetbrains.kotlin.findUsages[SimpleFunctionDescriptorImpl]
+'findUsages' @ [213:9] ==> internal fun findUsages(targetElement: PsiElement, options: FindUsagesOptions?, highlightingMode: Boolean, project: Project, searchSuperDeclaration: Boolean = ...): Collection<UsageInfo> defined in org.jetbrains.kotlin.findUsages in file AbstractFindUsagesTest.kt[SimpleFunctionDescriptorImpl]
 
 'caretElement' @ [213:20] ==> value-parameter caretElement: T defined in org.jetbrains.kotlin.findUsages.findUsagesAndCheckResults[ValueParameterDescriptorImpl]
 
@@ -567,8 +569,6 @@ Inferred types:
 'usageType' @ [241:33] ==> val usageType: UsageType? defined in org.jetbrains.kotlin.findUsages.findUsagesAndCheckResults.<anonymous>[LocalVariableDescriptor]
 
 'toString' @ [241:44] ==> @NotNull public open fun toString(@NotNull p0: UsageViewPresentation): String defined in com.intellij.usages.impl.rules.UsageType[JavaMethodDescriptor]
-
-'AbstractFindUsagesTest' @ [241:53] ==> public companion object defined in org.jetbrains.kotlin.findUsages.AbstractFindUsagesTest[FakeCallableDescriptorForObject]
 
 'USAGE_VIEW_PRESENTATION' @ [241:76] ==> public final val USAGE_VIEW_PRESENTATION: UsageViewPresentation defined in org.jetbrains.kotlin.findUsages.AbstractFindUsagesTest.Companion[PropertyDescriptorImpl]
 

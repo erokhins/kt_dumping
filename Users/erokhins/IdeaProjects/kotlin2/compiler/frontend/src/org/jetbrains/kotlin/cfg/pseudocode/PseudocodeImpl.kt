@@ -25,9 +25,9 @@ Inferred types:
 Inferred types:
     <T> -> Instruction
 
-'lazy' @ [55:81] ==> public fun <T> lazy(initializer: () -> Set<LocalFunctionDeclarationInstruction>): Lazy<Set<LocalFunctionDeclarationInstruction>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [55:81] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Set<LocalFunctionDeclarationInstruction>
+    <T> -> T
 
 'getLocalDeclarations' @ [56:9] ==> private final fun getLocalDeclarations(pseudocode: Pseudocode): Set<LocalFunctionDeclarationInstruction> defined in org.jetbrains.kotlin.cfg.pseudocode.PseudocodeImpl[SimpleFunctionDescriptorImpl]
 
@@ -122,7 +122,7 @@ Inferred types:
 Inferred types:
     <T> -> Instruction
 
-'traverseFollowingInstructions' @ [110:13] ==> public fun traverseFollowingInstructions(rootInstruction: Instruction, visited: MutableSet<Instruction> = ..., order: TraversalOrder = ..., handler: ((Instruction) -> TraverseInstructionResult)?): Boolean defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverseFollowingInstructions' @ [110:13] ==> public fun traverseFollowingInstructions(rootInstruction: Instruction, visited: MutableSet<Instruction> = ..., order: TraversalOrder = ..., handler: ((Instruction) -> TraverseInstructionResult)?): Boolean defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'sinkInstruction' @ [110:43] ==> public open val sinkInstruction: SubroutineSinkInstruction defined in org.jetbrains.kotlin.cfg.pseudocode.PseudocodeImpl[PropertyDescriptorImpl]
 
@@ -154,7 +154,7 @@ Inferred types:
 
 'instruction' @ [114:57] ==> val instruction: Instruction defined in org.jetbrains.kotlin.cfg.pseudocode.PseudocodeImpl.<get-reversedInstructions>[LocalVariableDescriptor]
 
-'traverseFollowingInstructions' @ [115:25] ==> public fun traverseFollowingInstructions(rootInstruction: Instruction, visited: MutableSet<Instruction> = ..., order: TraversalOrder = ..., handler: ((Instruction) -> TraverseInstructionResult)?): Boolean defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverseFollowingInstructions' @ [115:25] ==> public fun traverseFollowingInstructions(rootInstruction: Instruction, visited: MutableSet<Instruction> = ..., order: TraversalOrder = ..., handler: ((Instruction) -> TraverseInstructionResult)?): Boolean defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'instruction' @ [115:55] ==> val instruction: Instruction defined in org.jetbrains.kotlin.cfg.pseudocode.PseudocodeImpl.<get-reversedInstructions>[LocalVariableDescriptor]
 
@@ -608,7 +608,7 @@ Inferred types:
 Inferred types:
     <T> -> Instruction
 
-'traverseFollowingInstructions' @ [303:9] ==> public fun traverseFollowingInstructions(rootInstruction: Instruction, visited: MutableSet<Instruction> = ..., order: TraversalOrder = ..., handler: ((Instruction) -> TraverseInstructionResult)?): Boolean defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverseFollowingInstructions' @ [303:9] ==> public fun traverseFollowingInstructions(rootInstruction: Instruction, visited: MutableSet<Instruction> = ..., order: TraversalOrder = ..., handler: ((Instruction) -> TraverseInstructionResult)?): Boolean defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'enterInstruction' @ [303:39] ==> public open val enterInstruction: SubroutineEnterInstruction defined in org.jetbrains.kotlin.cfg.pseudocode.PseudocodeImpl[PropertyDescriptorImpl]
 

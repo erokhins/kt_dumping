@@ -12,7 +12,7 @@
 
 'findChildByClass' @ [29:40] ==> @Nullable public open fun <T : (Any..Any?)> findChildByClass(p0: (Class<(KtTypeReference..KtTypeReference?)>..Class<(KtTypeReference..KtTypeReference?)>?)): KtTypeReference? defined in org.jetbrains.kotlin.psi.KtTypeCodeFragment[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtTypeReference
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
 
 'java' @ [29:80] ==> public val <T> KClass<KtTypeReference>.java: Class<KtTypeReference> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

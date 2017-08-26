@@ -39,7 +39,7 @@ Inferred types:
 
 'get' @ [58:31] ==> public open operator fun <T : (Any..Any?)> get(p0: (Class<(JavaFileManager..JavaFileManager?)>..Class<(JavaFileManager..JavaFileManager?)>?)): (JavaFileManager..JavaFileManager?) defined in com.sun.tools.javac.util.Context[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaFileManager
+    <T : (Any..Any?)> -> (javax.tools.JavaFileManager..javax.tools.JavaFileManager?)
 
 'java' @ [58:58] ==> public val <T> KClass<JavaFileManager>.java: Class<JavaFileManager> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

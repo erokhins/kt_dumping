@@ -113,7 +113,7 @@ Inferred types:
 
 'upperBoundViolated' @ [70:48] ==> val upperBoundViolated: DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.AddGenericUpperBoundFix.Factory.doCreateActions[LocalVariableDescriptor]
 
-'b' @ [70:67] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.b: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'b' @ [70:67] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.b: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -121,7 +121,7 @@ Inferred types:
 
 'upperBoundViolated' @ [70:70] ==> val upperBoundViolated: DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.idea.quickfix.AddGenericUpperBoundFix.Factory.doCreateActions[LocalVariableDescriptor]
 
-'a' @ [70:89] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: (KotlinType..KotlinType?)[MyPropertyDescriptor]
+'a' @ [70:89] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtTypeReference..KtTypeReference?), (KotlinType..KotlinType?), (KotlinType..KotlinType?)>.a: KotlinType[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeReference..org.jetbrains.kotlin.psi.KtTypeReference?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
@@ -135,14 +135,14 @@ Inferred types:
 
 'diagnostic' @ [73:89] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.AddGenericUpperBoundFix.Factory.doCreateActions[ValueParameterDescriptorImpl]
 
-'a' @ [73:101] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (InferenceErrorData..InferenceErrorData?)>.a: (InferenceErrorData..InferenceErrorData?)[MyPropertyDescriptor]
+'a' @ [73:101] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (InferenceErrorData..InferenceErrorData?)>.a: InferenceErrorData[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.inference.InferenceErrorData..org.jetbrains.kotlin.resolve.calls.inference.InferenceErrorData?)
 
 'createActionsByInferenceData' @ [74:21] ==> private final fun createActionsByInferenceData(inferenceData: InferenceErrorData): List<IntentionAction> defined in org.jetbrains.kotlin.idea.quickfix.AddGenericUpperBoundFix.Factory[SimpleFunctionDescriptorImpl]
 
-'inferenceData' @ [74:50] ==> val inferenceData: (InferenceErrorData..InferenceErrorData?) defined in org.jetbrains.kotlin.idea.quickfix.AddGenericUpperBoundFix.Factory.doCreateActions[LocalVariableDescriptor]
+'inferenceData' @ [74:50] ==> val inferenceData: InferenceErrorData defined in org.jetbrains.kotlin.idea.quickfix.AddGenericUpperBoundFix.Factory.doCreateActions[LocalVariableDescriptor]
 
 'emptyList' @ [76:25] ==> public fun <T> emptyList(): List<IntentionAction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

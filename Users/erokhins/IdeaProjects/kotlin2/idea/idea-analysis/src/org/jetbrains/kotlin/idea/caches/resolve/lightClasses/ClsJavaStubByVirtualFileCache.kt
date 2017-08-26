@@ -91,7 +91,7 @@ Inferred types:
 
 'getService' @ [67:35] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(ClsJavaStubByVirtualFileCache..ClsJavaStubByVirtualFileCache?)>): (ClsJavaStubByVirtualFileCache..ClsJavaStubByVirtualFileCache?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClsJavaStubByVirtualFileCache
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ClsJavaStubByVirtualFileCache..org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ClsJavaStubByVirtualFileCache?)
 
 'project' @ [67:46] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.caches.resolve.lightClasses.ClsJavaStubByVirtualFileCache.Companion.getInstance[ValueParameterDescriptorImpl]
 

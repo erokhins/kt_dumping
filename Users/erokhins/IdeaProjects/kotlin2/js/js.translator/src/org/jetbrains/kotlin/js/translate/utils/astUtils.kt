@@ -159,7 +159,7 @@ Inferred types:
 
 'java' @ [79:84] ==> public val <T> KClass<out JsExpression>.java: Class<out JsExpression> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> JsExpression
+    <T> -> Captured(out JsExpression)
 
 'condition' @ [84:13] ==> public final var JsWhile.condition: (JsExpression..JsExpression?)[MyPropertyDescriptor]
 

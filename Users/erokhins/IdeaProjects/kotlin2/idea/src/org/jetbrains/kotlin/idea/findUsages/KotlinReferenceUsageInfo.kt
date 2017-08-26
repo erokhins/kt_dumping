@@ -6,7 +6,7 @@
 
 'java' @ [24:50] ==> public val <T> KClass<out PsiReference>.java: Class<out PsiReference> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiReference
+    <T> -> Captured(out PsiReference)
 
 'element' @ [27:23] ==> public final val KotlinReferenceUsageInfo.element: PsiElement?[MyPropertyDescriptor]
 
@@ -20,9 +20,9 @@ Inferred types:
 
 'it' @ [28:50] ==> value-parameter it: (PsiReference..PsiReference?) defined in org.jetbrains.kotlin.idea.findUsages.KotlinReferenceUsageInfo.getReference.<anonymous>[ValueParameterDescriptorImpl]
 
-'java' @ [28:60] ==> public val <T> KClass<out PsiReference>.java: Class<out PsiReference> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [28:60] ==> public val <T> KClass<out (PsiReference..PsiReference?)>.java: Class<out (PsiReference..PsiReference?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PsiReference
+    <T> -> Captured(out (com.intellij.psi.PsiReference..com.intellij.psi.PsiReference?))
 
 'referenceType' @ [28:68] ==> private final val referenceType: Class<out PsiReference> defined in org.jetbrains.kotlin.idea.findUsages.KotlinReferenceUsageInfo[PropertyDescriptorImpl]
 

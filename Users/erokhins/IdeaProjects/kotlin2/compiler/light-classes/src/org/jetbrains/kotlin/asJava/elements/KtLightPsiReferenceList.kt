@@ -2,9 +2,9 @@
 
 'clsDelegate' @ [40:107] ==> value-parameter clsDelegate: PsiJavaCodeReferenceElement defined in org.jetbrains.kotlin.asJava.elements.KtLightPsiReferenceList.KtLightSuperTypeReference.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [42:38] ==> public fun <T> lazyPub(initializer: () -> KtSuperTypeListEntry?): Lazy<KtSuperTypeListEntry?> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [42:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtSuperTypeListEntry?
+    <T> -> T
 
 'this@KtLightPsiReferenceList' @ [43:33] ==> <this> defined in org.jetbrains.kotlin.asJava.elements.KtLightPsiReferenceList[LazyClassReceiverParameterDescriptor]
 
@@ -80,9 +80,9 @@ Inferred types:
 
 'getSuperTypeList' @ [64:37] ==> public final fun getSuperTypeList(): KtSuperTypeList? defined in org.jetbrains.kotlin.psi.KtClassOrObject[DeserializedSimpleFunctionDescriptor]
 
-'lazyPub' @ [66:39] ==> public fun <T> lazyPub(initializer: () -> Array<KtLightPsiReferenceList.KtLightSuperTypeReference>): Lazy<Array<KtLightPsiReferenceList.KtLightSuperTypeReference>> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [66:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Array<KtLightSuperTypeReference>
+    <T> -> T
 
 'clsDelegate' @ [67:9] ==> public open val clsDelegate: PsiReferenceList defined in org.jetbrains.kotlin.asJava.elements.KtLightPsiReferenceList[PropertyDescriptorImpl]
 

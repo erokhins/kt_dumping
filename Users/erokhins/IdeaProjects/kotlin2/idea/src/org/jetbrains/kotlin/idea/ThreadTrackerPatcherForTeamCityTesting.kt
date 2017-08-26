@@ -14,13 +14,13 @@
 
 'factory' @ [47:63] ==> public final val ForkJoinPool.factory: (ForkJoinPool.ForkJoinWorkerThreadFactory..ForkJoinPool.ForkJoinWorkerThreadFactory?)[MyPropertyDescriptor]
 
-'java' @ [47:78] ==> public val <T> KClass<out ForkJoinPool.ForkJoinWorkerThreadFactory>.java: Class<out ForkJoinPool.ForkJoinWorkerThreadFactory> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [47:78] ==> public val <T> KClass<out (ForkJoinPool.ForkJoinWorkerThreadFactory..ForkJoinPool.ForkJoinWorkerThreadFactory?)>.java: Class<out (ForkJoinPool.ForkJoinWorkerThreadFactory..ForkJoinPool.ForkJoinWorkerThreadFactory?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ForkJoinWorkerThreadFactory
+    <T> -> Captured(out (java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory..java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory?))
 
-'name' @ [47:83] ==> public final val <T : (Any..Any?)> Class<out ForkJoinPool.ForkJoinWorkerThreadFactory>.name: (String..String?)[MyPropertyDescriptor]
+'name' @ [47:83] ==> public final val <T : (Any..Any?)> Class<out (ForkJoinPool.ForkJoinWorkerThreadFactory..ForkJoinPool.ForkJoinWorkerThreadFactory?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ForkJoinWorkerThreadFactory
+    <T : (Any..Any?)> -> Captured(out (java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory..java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory?))
 
 'commonPoolFactoryName' @ [48:13] ==> val commonPoolFactoryName: (String..String?) defined in org.jetbrains.kotlin.idea.ThreadTrackerPatcherForTeamCityTesting.patchThreadTracker[LocalVariableDescriptor]
 

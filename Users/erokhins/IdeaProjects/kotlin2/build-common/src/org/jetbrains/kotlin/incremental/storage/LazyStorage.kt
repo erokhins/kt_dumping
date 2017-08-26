@@ -135,8 +135,8 @@ Inferred types:
 
 'PersistentHashMap' @ [117:13] ==> public constructor PersistentHashMap<Key : (Any..Any?), Value : (Any..Any?)>(@NotNull p0: File, @NotNull p1: KeyDescriptor<(K..K?)>, @NotNull p2: DataExternalizer<(V..V?)>) defined in com.intellij.util.io.PersistentHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <Key : (Any..Any?)> -> K
-    <Value : (Any..Any?)> -> V
+    <Key : (Any..Any?)> -> (K..K?)
+    <Value : (Any..Any?)> -> (V..V?)
 
 'storageFile' @ [117:31] ==> private final val storageFile: File defined in org.jetbrains.kotlin.incremental.storage.LazyStorage[PropertyDescriptorImpl]
 

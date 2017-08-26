@@ -170,7 +170,7 @@ Inferred types:
 
 'andNot' @ [118:99] ==> @NotNull public open fun andNot(p0: raw (ElementPattern<(Any..Any?)>..ElementPattern<*>?)): CharPattern defined in com.intellij.patterns.CharPattern[JavaMethodDescriptor]
 
-'singleCharPattern' @ [118:106] ==> public fun singleCharPattern(char: Char): CharPattern defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'singleCharPattern' @ [118:106] ==> public fun singleCharPattern(char: Char): CharPattern defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'character' @ [119:64] ==> @NotNull public open fun character(): CharPattern defined in com.intellij.patterns.StandardPatterns[JavaMethodDescriptor]
 
@@ -178,7 +178,7 @@ Inferred types:
 
 'andNot' @ [119:97] ==> @NotNull public open fun andNot(p0: raw (ElementPattern<(Any..Any?)>..ElementPattern<*>?)): CharPattern defined in com.intellij.patterns.CharPattern[JavaMethodDescriptor]
 
-'singleCharPattern' @ [119:104] ==> public fun singleCharPattern(char: Char): CharPattern defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'singleCharPattern' @ [119:104] ==> public fun singleCharPattern(char: Char): CharPattern defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 '!!' @ [121:28] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: String?): String[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -198,7 +198,7 @@ Inferred types:
 
 'kotlinIdentifierPartPattern' @ [124:13] ==> private final val kotlinIdentifierPartPattern: CharPattern defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'singleCharPattern' @ [124:44] ==> public fun singleCharPattern(char: Char): CharPattern defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'singleCharPattern' @ [124:44] ==> public fun singleCharPattern(char: Char): CharPattern defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'kotlinIdentifierStartPattern' @ [125:13] ==> private final val kotlinIdentifierStartPattern: CharPattern defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
@@ -208,7 +208,7 @@ Inferred types:
 
 'prefixMatcher' @ [129:63] ==> protected final val prefixMatcher: CamelHumpMatcher defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'asStringNameFilter' @ [129:77] ==> public fun PrefixMatcher.asStringNameFilter(): (String) -> Boolean defined in org.jetbrains.kotlin.idea.completion[SimpleFunctionDescriptorImpl]
+'asStringNameFilter' @ [129:77] ==> public fun PrefixMatcher.asStringNameFilter(): (String) -> Boolean defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'isVisibleDescriptor' @ [131:75] ==> private final fun isVisibleDescriptor(descriptor: DeclarationDescriptor, completeNonAccessible: Boolean): Boolean defined in org.jetbrains.kotlin.idea.completion.CompletionSession[SimpleFunctionDescriptorImpl]
 
@@ -232,23 +232,17 @@ Inferred types:
 
 'isVisibleFilter' @ [137:69] ==> protected final val isVisibleFilter: (DeclarationDescriptor) -> Boolean defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'NotPropertiesService' @ [138:69] ==> public companion object defined in org.jetbrains.kotlin.idea.core.NotPropertiesService[FakeCallableDescriptorForObject]
-
 'getNotProperties' @ [138:90] ==> public final fun getNotProperties(element: PsiElement): Set<FqNameUnsafe> defined in org.jetbrains.kotlin.idea.core.NotPropertiesService.Companion[DeserializedSimpleFunctionDescriptor]
 
 'position' @ [138:107] ==> protected final val position: PsiElement defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'if (nameExpression == null) CallTypeAndReceiver.UNKNOWN else CallTypeAndReceiver.detect(nameExpression)' @ [140:41] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>>, elseBranch: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>>): CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>>[SimpleFunctionDescriptorImpl]
+'if (nameExpression == null) CallTypeAndReceiver.UNKNOWN else CallTypeAndReceiver.detect(nameExpression)' @ [140:41] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: CallTypeAndReceiver<out KtElement?, *>, elseBranch: CallTypeAndReceiver<out KtElement?, *>): CallTypeAndReceiver<out KtElement?, *>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CallTypeAndReceiver<out KtElement?, *>
 
 'nameExpression' @ [140:45] ==> protected final val nameExpression: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'CallTypeAndReceiver' @ [140:69] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
-
 'UNKNOWN' @ [140:89] ==> public object UNKNOWN : CallTypeAndReceiver<Nothing?, CallType.UNKNOWN> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
-
-'CallTypeAndReceiver' @ [140:102] ==> public companion object defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[FakeCallableDescriptorForObject]
 
 'detect' @ [140:122] ==> public final fun detect(expression: KtSimpleNameExpression): CallTypeAndReceiver<*, *> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -267,7 +261,7 @@ Inferred types:
 
 'nameExpression' @ [141:93] ==> protected final val nameExpression: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [141:109] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [141:109] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
 'BasicLookupElementFactory' @ [144:47] ==> public constructor BasicLookupElementFactory(project: Project, insertHandlerProvider: InsertHandlerProvider) defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory[ClassConstructorDescriptorImpl]
 
@@ -275,15 +269,15 @@ Inferred types:
 
 'InsertHandlerProvider' @ [144:82] ==> public constructor InsertHandlerProvider(callType: CallType<*>, expectedInfosCalculator: () -> Collection<ExpectedInfo>) defined in org.jetbrains.kotlin.idea.completion.InsertHandlerProvider[ClassConstructorDescriptorImpl]
 
-'callTypeAndReceiver' @ [144:104] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [144:104] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [144:124] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [144:124] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'expectedInfos' @ [144:136] ==> protected abstract val expectedInfos: Collection<ExpectedInfo> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'lazy' @ [147:57] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> LookupElementsCollector): Lazy<LookupElementsCollector> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [147:57] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LookupElementsCollector
+    <T> -> T
 
 'NONE' @ [147:83] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -364,6 +358,8 @@ Inferred types:
     <T> -> FqName
     <R> -> Boolean
 
+'isJavaClassNotToBeUsedInKotlin' @ [165:52] ==> public fun isJavaClassNotToBeUsedInKotlin(fqName: FqName): Boolean defined in org.jetbrains.kotlin.idea.core[DeserializedSimpleFunctionDescriptor]
+
 'descriptor' @ [168:13] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.completion.CompletionSession.isVisibleDescriptor[ValueParameterDescriptorImpl]
 
 '!' @ [168:54] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
@@ -380,7 +376,7 @@ Inferred types:
 
 'position' @ [171:48] ==> protected final val position: PsiElement defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [171:58] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [171:58] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
 'receiver' @ [171:78] ==> public final val receiver: KtElement? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
@@ -607,7 +603,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> CompletionSorter
 
-'callTypeAndReceiver' @ [261:22] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [261:22] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
 'sorter' @ [262:13] ==> var sorter: CompletionSorter defined in org.jetbrains.kotlin.idea.completion.CompletionSession.createSorter[LocalVariableDescriptor]
 
@@ -742,7 +738,7 @@ Inferred types:
 
 'nameExpression' @ [300:36] ==> protected final val nameExpression: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [300:52] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [300:52] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
 'resolutionFacade' @ [300:73] ==> protected final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
@@ -802,9 +798,7 @@ Inferred types:
 
 'getCopyableUserData' @ [318:30] ==> @Nullable @Contract public open fun <T : (Any..Any?)> getCopyableUserData(p0: Key<((KtExpression) -> KotlinType?..((KtExpression) -> KotlinType?)?)>): ((KtExpression) -> KotlinType?)? defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<KtExpression, KotlinType?>
-
-'KtCodeFragment' @ [318:50] ==> public companion object defined in org.jetbrains.kotlin.psi.KtCodeFragment[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> ((org.jetbrains.kotlin.psi.KtExpression) -> org.jetbrains.kotlin.types.KotlinType?..((org.jetbrains.kotlin.psi.KtExpression) -> org.jetbrains.kotlin.types.KotlinType?)?)
 
 'RUNTIME_TYPE_EVALUATOR' @ [318:65] ==> public final val RUNTIME_TYPE_EVALUATOR: Key<(KtExpression) -> KotlinType?> defined in org.jetbrains.kotlin.psi.KtCodeFragment.Companion[DeserializedPropertyDescriptor]
 
@@ -812,7 +806,7 @@ Inferred types:
 
 'allCollected' @ [319:61] ==> public final val allCollected: ReferenceVariants defined in org.jetbrains.kotlin.idea.completion.ReferenceVariantsCollector[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [321:32] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [321:32] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
 'receiver' @ [321:52] ==> public final val receiver: KtElement? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
@@ -864,7 +858,7 @@ Inferred types:
 
 'nameExpression' @ [331:17] ==> protected final val nameExpression: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [331:35] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [331:35] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
 'resolutionFacade' @ [331:56] ==> protected final val resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
@@ -982,13 +976,11 @@ Inferred types:
 
 'and' @ [358:51] ==> public final infix fun and(other: Int): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [358:55] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CALLABLES_MASK' @ [358:76] ==> public final val CALLABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
 
-'callTypeAndReceiver' @ [359:13] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [359:13] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [360:16] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [360:16] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
 'receiver' @ [360:36] ==> public final val receiver: KtElement? defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
@@ -1002,7 +994,7 @@ Inferred types:
 
 'nameExpression' @ [364:98] ==> protected final val nameExpression: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [364:116] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [364:116] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
 'createNonImportedDeclarationsFilter' @ [365:19] ==> public final fun <TDescriptor : DeclarationDescriptor> createNonImportedDeclarationsFilter(importedDeclarations: Collection<DeclarationDescriptor>): (Collection<CallableDescriptor>) -> Collection<CallableDescriptor> defined in org.jetbrains.kotlin.idea.util.ShadowedDeclarationsFilter[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1086,9 +1078,9 @@ Inferred types:
 
 'receiverTypes' @ [389:64] ==> protected final val receiverTypes: Collection<ReceiverType>? defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'callTypeAndReceiver' @ [390:37] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, CallType<out KtElement?>> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
+'callTypeAndReceiver' @ [390:37] ==> protected final val callTypeAndReceiver: CallTypeAndReceiver<out KtElement?, *> defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
-'callType' @ [390:57] ==> public final val callType: CallType<out KtElement?> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
+'callType' @ [390:57] ==> public final val callType: CallType<*> defined in org.jetbrains.kotlin.idea.util.CallTypeAndReceiver[DeserializedPropertyDescriptor]
 
 'inDescriptor' @ [390:67] ==> protected final val inDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.completion.CompletionSession[PropertyDescriptorImpl]
 
@@ -1138,8 +1130,6 @@ Inferred types:
 'languageVersionSettings' @ [405:53] ==> public val KtElement.languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.idea.project[DeserializedPropertyDescriptor]
 
 'supportsFeature' @ [405:77] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [405:93] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'DslMarkersSupport' @ [405:109] ==> enum entry DslMarkersSupport defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

@@ -83,7 +83,7 @@ Inferred types:
 
 'wrapper' @ [52:42] ==> val wrapper: LocalInspectionToolWrapper defined in org.jetbrains.kotlin.idea.inspections.runInspection[LocalVariableDescriptor]
 
-'runInspection' @ [58:12] ==> public fun runInspection(inspection: LocalInspectionTool, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections[SimpleFunctionDescriptorImpl]
+'runInspection' @ [58:12] ==> public fun runInspection(inspection: LocalInspectionTool, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections in file InspectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'inspectionClass' @ [58:26] ==> value-parameter inspectionClass: Class<*> defined in org.jetbrains.kotlin.idea.inspections.runInspection[ValueParameterDescriptorImpl]
 

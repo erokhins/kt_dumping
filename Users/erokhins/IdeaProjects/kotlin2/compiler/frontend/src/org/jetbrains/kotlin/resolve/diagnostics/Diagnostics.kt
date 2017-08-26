@@ -4,7 +4,7 @@
 
 'java' @ [27:130] ==> public val <T> KClass<out Diagnostics>.java: Class<out Diagnostics> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Diagnostics
+    <T> -> Captured(out Diagnostics)
 
 'all' @ [33:30] ==> public abstract fun all(): Collection<Diagnostic> defined in org.jetbrains.kotlin.resolve.diagnostics.Diagnostics[SimpleFunctionDescriptorImpl]
 

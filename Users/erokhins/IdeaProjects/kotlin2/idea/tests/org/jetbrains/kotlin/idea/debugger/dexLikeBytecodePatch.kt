@@ -20,7 +20,7 @@ Inferred types:
 
 'name' @ [28:54] ==> public final val File.name: (String..String?)[MyPropertyDescriptor]
 
-'needDexPatch' @ [28:59] ==> public fun String.needDexPatch(): Boolean defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'needDexPatch' @ [28:59] ==> public fun String.needDexPatch(): Boolean defined in org.jetbrains.kotlin.idea.debugger in file dexLikeBytecodePatch.kt[SimpleFunctionDescriptorImpl]
 
 'forEach' @ [28:77] ==> public inline fun <T> Array<out (File..File?)>.forEach(action: ((File..File?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -37,6 +37,8 @@ Inferred types:
 'forEach' @ [29:81] ==> public inline fun <T> Array<out (File..File?)>.forEach(action: ((File..File?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (java.io.File..java.io.File?)
+
+'applyDexLikePatch' @ [29:91] ==> private fun applyDexLikePatch(file: File): Unit defined in org.jetbrains.kotlin.idea.debugger in file dexLikeBytecodePatch.kt[SimpleFunctionDescriptorImpl]
 
 'file' @ [34:5] ==> value-parameter file: File defined in org.jetbrains.kotlin.idea.debugger.applyDexLikePatch[ValueParameterDescriptorImpl]
 

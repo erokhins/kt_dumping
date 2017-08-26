@@ -6,7 +6,7 @@
 
 'accept' @ [30:17] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsGlobalBlock..JsGlobalBlock?)): (JsGlobalBlock..JsGlobalBlock?) defined in org.jetbrains.kotlin.js.translate.utils.TypeCheckRewritingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsGlobalBlock
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsGlobalBlock..org.jetbrains.kotlin.js.backend.ast.JsGlobalBlock?)
 
 'fragment' @ [30:24] ==> val fragment: JsProgramFragment defined in org.jetbrains.kotlin.js.translate.utils.expandIsCalls[LocalVariableDescriptor]
 
@@ -16,7 +16,7 @@ Inferred types:
 
 'accept' @ [31:17] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsGlobalBlock..JsGlobalBlock?)): (JsGlobalBlock..JsGlobalBlock?) defined in org.jetbrains.kotlin.js.translate.utils.TypeCheckRewritingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsGlobalBlock
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsGlobalBlock..org.jetbrains.kotlin.js.backend.ast.JsGlobalBlock?)
 
 'fragment' @ [31:24] ==> val fragment: JsProgramFragment defined in org.jetbrains.kotlin.js.translate.utils.expandIsCalls[LocalVariableDescriptor]
 
@@ -155,11 +155,11 @@ Inferred types:
 
 'replaceMe' @ [67:21] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpression..JsExpression?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpression
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'accept' @ [67:31] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.translate.utils.TypeCheckRewritingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'replacement' @ [67:38] ==> val replacement: JsExpression? defined in org.jetbrains.kotlin.js.translate.utils.TypeCheckRewritingVisitor.visit[LocalVariableDescriptor]
 
@@ -323,7 +323,7 @@ Inferred types:
 
 'accept' @ [119:21] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.translate.utils.TypeCheckRewritingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'JsInvocation' @ [119:28] ==> public constructor JsInvocation(@NotNull p0: JsExpression, vararg p1: (JsExpression..JsExpression?)) defined in org.jetbrains.kotlin.js.backend.ast.JsInvocation[JavaClassConstructorDescriptor]
 
@@ -333,7 +333,7 @@ Inferred types:
 
 'accept' @ [120:22] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.translate.utils.TypeCheckRewritingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'JsInvocation' @ [120:29] ==> public constructor JsInvocation(@NotNull p0: JsExpression, vararg p1: (JsExpression..JsExpression?)) defined in org.jetbrains.kotlin.js.backend.ast.JsInvocation[JavaClassConstructorDescriptor]
 
@@ -401,7 +401,7 @@ Inferred types:
 
 'addPrevious' @ [139:26] ==> public open fun <R : (JsStatement..JsStatement?)> addPrevious(p0: (JsVars..JsVars?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsStatement..JsStatement?)> -> JsVars
+    <R : (JsStatement..JsStatement?)> -> (org.jetbrains.kotlin.js.backend.ast.JsVars..org.jetbrains.kotlin.js.backend.ast.JsVars?)
 
 'newVar' @ [139:38] ==> @NotNull public open fun newVar(@NotNull name: JsName, @Nullable expr: JsExpression?): JsVars defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 

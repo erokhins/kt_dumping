@@ -58,10 +58,10 @@ Inferred types:
 
 'name' @ [55:58] ==> value-parameter name: Name defined in org.jetbrains.kotlin.resolve.lazy.descriptors.AbstractLazyMemberScope.doGetClasses[ValueParameterDescriptorImpl]
 
-'mapTo' @ [55:64] ==> public inline fun <T, R, C : MutableCollection<in LazyClassDescriptor>> Iterable<KtClassLikeInfo>.mapTo(destination: (LinkedHashSet<(ClassDescriptor..ClassDescriptor?)>..LinkedHashSet<(ClassDescriptor..ClassDescriptor?)>?), transform: (KtClassLikeInfo) -> LazyClassDescriptor): (LinkedHashSet<(ClassDescriptor..ClassDescriptor?)>..LinkedHashSet<(ClassDescriptor..ClassDescriptor?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapTo' @ [55:64] ==> public inline fun <T, R, C : MutableCollection<in (ClassDescriptor..ClassDescriptor?)>> Iterable<KtClassLikeInfo>.mapTo(destination: (LinkedHashSet<(ClassDescriptor..ClassDescriptor?)>..LinkedHashSet<(ClassDescriptor..ClassDescriptor?)>?), transform: (KtClassLikeInfo) -> (ClassDescriptor..ClassDescriptor?)): (LinkedHashSet<(ClassDescriptor..ClassDescriptor?)>..LinkedHashSet<(ClassDescriptor..ClassDescriptor?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtClassLikeInfo
-    <R> -> LazyClassDescriptor
+    <R> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
     <C : MutableCollection<in R>> -> (java.util.LinkedHashSet<(org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)>..java.util.LinkedHashSet<(org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)>?)
 
 'result' @ [55:70] ==> val result: (LinkedHashSet<(ClassDescriptor..ClassDescriptor?)>..LinkedHashSet<(ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.lazy.descriptors.AbstractLazyMemberScope.doGetClasses[LocalVariableDescriptor]
@@ -71,9 +71,9 @@ Inferred types:
             else {
                 val isExternal = it.modifierList?.hasModifier(KtTokens.EXTERNAL_KEYWORD) ?: false
                 LazyClassDescriptor(c, thisDescriptor, name, it, isExternal)
-            }' @ [56:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: LazyClassDescriptor, elseBranch: LazyClassDescriptor): LazyClassDescriptor[SimpleFunctionDescriptorImpl]
+            }' @ [56:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (ClassDescriptor..ClassDescriptor?), elseBranch: (ClassDescriptor..ClassDescriptor?)): (ClassDescriptor..ClassDescriptor?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> LazyClassDescriptor
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'it' @ [56:17] ==> value-parameter it: KtClassLikeInfo defined in org.jetbrains.kotlin.resolve.lazy.descriptors.AbstractLazyMemberScope.doGetClasses.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -579,11 +579,11 @@ Inferred types:
 
 'java' @ [233:31] ==> public val <T> KClass<out AbstractLazyMemberScope<D, DP>>.java: Class<out AbstractLazyMemberScope<D, DP>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AbstractLazyMemberScope<D, DP>
+    <T> -> Captured(out AbstractLazyMemberScope<D, DP>)
 
 'simpleName' @ [233:36] ==> public final val <T : (Any..Any?)> Class<out AbstractLazyMemberScope<D, DP>>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AbstractLazyMemberScope<D, DP>
+    <T : (Any..Any?)> -> Captured(out AbstractLazyMemberScope<D, DP>)
 
 'p' @ [234:9] ==> value-parameter p: Printer defined in org.jetbrains.kotlin.resolve.lazy.descriptors.AbstractLazyMemberScope.printScopeStructure[ValueParameterDescriptorImpl]
 

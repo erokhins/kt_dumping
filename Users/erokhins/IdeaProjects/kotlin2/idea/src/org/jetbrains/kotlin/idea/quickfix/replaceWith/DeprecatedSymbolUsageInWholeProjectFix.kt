@@ -24,7 +24,7 @@
 
 'replacementStrategy' @ [52:9] ==> value-parameter replacementStrategy: UsageReplacementStrategy defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageInWholeProjectFix.invoke[ValueParameterDescriptorImpl]
 
-'replaceUsagesInWholeProject' @ [52:29] ==> public fun UsageReplacementStrategy.replaceUsagesInWholeProject(targetPsiElement: PsiElement, progressTitle: String, commandName: String, postAction: () -> Unit = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner[SimpleFunctionDescriptorImpl]
+'replaceUsagesInWholeProject' @ [52:29] ==> public fun UsageReplacementStrategy.replaceUsagesInWholeProject(targetPsiElement: PsiElement, progressTitle: String, commandName: String, postAction: () -> Unit = ...): Unit defined in org.jetbrains.kotlin.idea.codeInliner in file UsageReplacementStrategy.kt[SimpleFunctionDescriptorImpl]
 
 'psiElement' @ [52:57] ==> val psiElement: KtDeclaration defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageInWholeProjectFix.invoke[LocalVariableDescriptor]
 
@@ -96,7 +96,9 @@ Inferred types:
 
 'component3' @ [80:47] ==> public final operator fun component3(): DeclarationDescriptor defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion.Data[SimpleFunctionDescriptorImpl]
 
-'DeprecatedSymbolUsageFixBase' @ [80:61] ==> public companion object defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase[FakeCallableDescriptorForObject]
+'?:' @ [80:61] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: DeprecatedSymbolUsageFixBase.Companion.Data?, right: DeprecatedSymbolUsageFixBase.Companion.Data): DeprecatedSymbolUsageFixBase.Companion.Data[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Data
 
 'extractDataFromDiagnostic' @ [80:90] ==> public final fun extractDataFromDiagnostic(deprecatedDiagnostic: Diagnostic): DeprecatedSymbolUsageFixBase.Companion.Data? defined in org.jetbrains.kotlin.idea.quickfix.replaceWith.DeprecatedSymbolUsageFixBase.Companion[SimpleFunctionDescriptorImpl]
 

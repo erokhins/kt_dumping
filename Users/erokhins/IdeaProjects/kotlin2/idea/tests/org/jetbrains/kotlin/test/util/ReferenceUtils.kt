@@ -14,7 +14,7 @@ Inferred types:
 
 'getParentOfType' @ [37:43] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtClass..KtClass?)>): KtClass? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtClass
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClass..org.jetbrains.kotlin.psi.KtClass?)
 
 'navigationElement' @ [37:59] ==> val navigationElement: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.test.util.renderAsGotoImplementation[LocalVariableDescriptor]
 

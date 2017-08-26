@@ -66,6 +66,8 @@ Inferred types:
 Inferred types:
     <T> -> KotlinCallArgument
 
+'checkArgumentInvariants' @ [68:56] ==> private fun KotlinCallArgument.checkArgumentInvariants(): Unit defined in org.jetbrains.kotlin.resolve.calls.model in file KotlinCall.kt[SimpleFunctionDescriptorImpl]
+
 'externalArgument' @ [69:5] ==> public abstract val externalArgument: KotlinCallArgument? defined in org.jetbrains.kotlin.resolve.calls.model.KotlinCall[PropertyDescriptorImpl]
 
 'checkArgumentInvariants' @ [69:23] ==> private fun KotlinCallArgument.checkArgumentInvariants(): Unit defined in org.jetbrains.kotlin.resolve.calls.model in file KotlinCall.kt[SimpleFunctionDescriptorImpl]

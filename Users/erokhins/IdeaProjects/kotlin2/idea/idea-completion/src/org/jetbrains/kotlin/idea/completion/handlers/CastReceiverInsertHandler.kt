@@ -1,6 +1,6 @@
 'findElementOfClassAtOffset' @ [31:38] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> findElementOfClassAtOffset(@NotNull p0: PsiFile, p1: Int, @NotNull p2: Class<(KtSimpleNameExpression..KtSimpleNameExpression?)>, p3: Boolean): KtSimpleNameExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtSimpleNameExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtSimpleNameExpression..org.jetbrains.kotlin.psi.KtSimpleNameExpression?)
 
 'context' @ [31:65] ==> value-parameter context: InsertionContext defined in org.jetbrains.kotlin.idea.completion.handlers.CastReceiverInsertHandler.postHandleInsert[ValueParameterDescriptorImpl]
 
@@ -16,7 +16,7 @@ Inferred types:
 
 'getParentOfType' @ [32:47] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtQualifiedExpression..KtQualifiedExpression?)>, p2: Boolean): KtQualifiedExpression? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtQualifiedExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtQualifiedExpression..org.jetbrains.kotlin.psi.KtQualifiedExpression?)
 
 'expression' @ [32:63] ==> val expression: KtSimpleNameExpression? defined in org.jetbrains.kotlin.idea.completion.handlers.CastReceiverInsertHandler.postHandleInsert[LocalVariableDescriptor]
 

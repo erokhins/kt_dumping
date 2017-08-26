@@ -38,8 +38,6 @@ Inferred types:
 
 'name' @ [43:98] ==> public abstract val name: String defined in kotlin.reflect.KProperty[DeserializedPropertyDescriptor]
 
-'Jsr305State' @ [43:104] ==> public companion object defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
-
 'IGNORE' @ [43:116] ==> enum entry IGNORE defined in org.jetbrains.kotlin.utils.Jsr305State[FakeCallableDescriptorForObject]
 
 'JvmStatic' @ [48:9] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]

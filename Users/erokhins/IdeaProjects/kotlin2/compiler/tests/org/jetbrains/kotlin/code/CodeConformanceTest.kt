@@ -13,6 +13,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [47:17] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'listOf' @ [49:57] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -323,7 +325,7 @@ Inferred types:
 
 'trim' @ [176:57] ==> @InlineOnly public inline fun String.trim(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'ensureFileOrEndsWithSlash' @ [176:64] ==> private fun String.ensureFileOrEndsWithSlash(): String defined in org.jetbrains.kotlin.code[SimpleFunctionDescriptorImpl]
+'ensureFileOrEndsWithSlash' @ [176:64] ==> private fun String.ensureFileOrEndsWithSlash(): String defined in org.jetbrains.kotlin.code in file CodeConformanceTest.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [177:22] ==> public fun <T> Sequence<String>.toList(): List<String> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:

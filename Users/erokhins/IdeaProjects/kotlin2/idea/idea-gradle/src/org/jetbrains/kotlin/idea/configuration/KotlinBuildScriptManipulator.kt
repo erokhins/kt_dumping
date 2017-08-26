@@ -165,7 +165,7 @@ Inferred types:
 
 'scope' @ [87:29] ==> value-parameter scope: DependencyScope defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.addKotlinLibraryToModuleBuildScript[ValueParameterDescriptorImpl]
 
-'toGradleCompileScope' @ [87:35] ==> public fun DependencyScope.toGradleCompileScope(isAndroidModule: Boolean): String defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'toGradleCompileScope' @ [87:35] ==> public fun DependencyScope.toGradleCompileScope(isAndroidModule: Boolean): String defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'isAndroidModule' @ [87:56] ==> value-parameter isAndroidModule: Boolean defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.addKotlinLibraryToModuleBuildScript[ValueParameterDescriptorImpl]
 
@@ -201,7 +201,7 @@ Inferred types:
 
 'getChildrenOfType' @ [104:28] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getChildrenOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtCallExpression..KtCallExpression?)>): (Array<(KtCallExpression..KtCallExpression?)>?..Array<out (KtCallExpression..KtCallExpression?)>?) defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtCallExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallExpression..org.jetbrains.kotlin.psi.KtCallExpression?)
 
 'this' @ [104:46] ==> <this> defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.findPlugin[ReceiverParameterDescriptorImpl]
 
@@ -235,7 +235,7 @@ Inferred types:
 
 'findChildrenOfType' @ [110:25] ==> @NotNull public open fun <T : (PsiElement..PsiElement?)> findChildrenOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<out (KtScriptInitializer..KtScriptInitializer?)>): (MutableCollection<(KtScriptInitializer..KtScriptInitializer?)>..Collection<(KtScriptInitializer..KtScriptInitializer?)>) defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtScriptInitializer
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtScriptInitializer..org.jetbrains.kotlin.psi.KtScriptInitializer?)
 
 'this' @ [110:44] ==> <this> defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.findScriptInitializer[ReceiverParameterDescriptorImpl]
 
@@ -402,7 +402,7 @@ Inferred types:
 
 'getChildrenOfType' @ [146:28] ==> @Nullable public open fun <T : (PsiElement..PsiElement?)> getChildrenOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtCallExpression..KtCallExpression?)>): (Array<(KtCallExpression..KtCallExpression?)>?..Array<out (KtCallExpression..KtCallExpression?)>?) defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtCallExpression
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtCallExpression..org.jetbrains.kotlin.psi.KtCallExpression?)
 
 'this' @ [146:46] ==> <this> defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.findCompileStdLib[ReceiverParameterDescriptorImpl]
 
@@ -710,7 +710,7 @@ Inferred types:
 
 'repository' @ [224:35] ==> val repository: RepositoryDescription? defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.addRepositoryIfMissing[LocalVariableDescriptor]
 
-'toKotlinRepositorySnippet' @ [224:46] ==> public fun RepositoryDescription.toKotlinRepositorySnippet(): String defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'toKotlinRepositorySnippet' @ [224:46] ==> public fun RepositoryDescription.toKotlinRepositorySnippet(): String defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [225:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -868,8 +868,6 @@ Inferred types:
 
 'createImportDirective' @ [275:40] ==> public final fun createImportDirective(importPath: ImportPath): KtImportDirective defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
 
-'ImportPath' @ [275:62] ==> public companion object defined in org.jetbrains.kotlin.resolve.ImportPath[FakeCallableDescriptorForObject]
-
 'fromString' @ [275:73] ==> @JvmStatic public final fun fromString(pathStr: String): ImportPath defined in org.jetbrains.kotlin.resolve.ImportPath.Companion[DeserializedSimpleFunctionDescriptor]
 
 'path' @ [275:84] ==> value-parameter path: String defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.addImportIfMissing[ValueParameterDescriptorImpl]
@@ -909,14 +907,14 @@ Inferred types:
 
 'it' @ [284:37] ==> value-parameter it: String defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.addExpressionIfMissing.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [284:41] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> (PsiElement..PsiElement?)): (PsiElement..PsiElement?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [284:41] ==> @InlineOnly public inline fun <T, R> KtExpression.let(block: (KtExpression) -> PsiElement): PsiElement defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtExpression
-    <R> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <R> -> PsiElement
 
-'if(first) addAfter(created, null) else add(created)' @ [285:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (PsiElement..PsiElement?), elseBranch: (PsiElement..PsiElement?)): (PsiElement..PsiElement?)[SimpleFunctionDescriptorImpl]
+'if(first) addAfter(created, null) else add(created)' @ [285:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiElement, elseBranch: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> PsiElement
 
 'first' @ [285:16] ==> value-parameter first: Boolean = ... defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.addExpressionIfMissing[ValueParameterDescriptorImpl]
 
@@ -942,14 +940,14 @@ Inferred types:
 
 'it' @ [290:53] ==> value-parameter it: String defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.addDeclarationIfMissing.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [290:57] ==> @InlineOnly public inline fun <T, R> KtDeclaration.let(block: (KtDeclaration) -> (PsiElement..PsiElement?)): (PsiElement..PsiElement?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [290:57] ==> @InlineOnly public inline fun <T, R> KtDeclaration.let(block: (KtDeclaration) -> PsiElement): PsiElement defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KtDeclaration
-    <R> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <R> -> PsiElement
 
-'if(first) addAfter(created, null) else add(created)' @ [291:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (PsiElement..PsiElement?), elseBranch: (PsiElement..PsiElement?)): (PsiElement..PsiElement?)[SimpleFunctionDescriptorImpl]
+'if(first) addAfter(created, null) else add(created)' @ [291:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiElement, elseBranch: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> PsiElement
 
 'first' @ [291:16] ==> value-parameter first: Boolean = ... defined in org.jetbrains.kotlin.idea.configuration.KotlinBuildScriptManipulator.addDeclarationIfMissing[ValueParameterDescriptorImpl]
 

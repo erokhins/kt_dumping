@@ -46,7 +46,7 @@ Inferred types:
 
 'project' @ [57:46] ==> public final val <E : (PsiElement..PsiElement?)> Location<out (PsiElement..PsiElement?)>.project: Project[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
 
 'isDumb' @ [57:55] ==> public final val DumbService.isDumb: Boolean[MyPropertyDescriptor]
 
@@ -54,7 +54,7 @@ Inferred types:
 
 'module' @ [59:31] ==> public final val <E : (PsiElement..PsiElement?)> Location<out (PsiElement..PsiElement?)>.module: Module?[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
 
 '!=' @ [61:13] ==> public open fun equals(other: Any?): Boolean defined in org.jetbrains.kotlin.resolve.TargetPlatform[DeserializedSimpleFunctionDescriptor]
 
@@ -68,7 +68,7 @@ Inferred types:
 
 'psiElement' @ [63:40] ==> public final val <E : (PsiElement..PsiElement?)> Location<out (PsiElement..PsiElement?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(*)
 
 'getEntryPointContainer' @ [65:16] ==> public final fun getEntryPointContainer(locationElement: PsiElement): KtDeclarationContainer? defined in org.jetbrains.kotlin.idea.run.KotlinRunConfigurationProducer.Companion[SimpleFunctionDescriptorImpl]
 
@@ -268,15 +268,15 @@ Inferred types:
 'if (strict)
                 PsiTreeUtil.getParentOfType(this, KtClassOrObject::class.java, KtFile::class.java)
             else
-                PsiTreeUtil.getNonStrictParentOfType(this, KtClassOrObject::class.java, KtFile::class.java)' @ [115:27] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?, elseBranch: {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?): {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?[SimpleFunctionDescriptorImpl]
+                PsiTreeUtil.getNonStrictParentOfType(this, KtClassOrObject::class.java, KtFile::class.java)' @ [115:27] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiElement?, elseBranch: PsiElement?): PsiElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> PsiElement?
 
 'strict' @ [115:31] ==> value-parameter strict: Boolean defined in org.jetbrains.kotlin.idea.run.KotlinRunConfigurationProducer.Companion.declarationContainer[ValueParameterDescriptorImpl]
 
-'getParentOfType' @ [116:29] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out ({PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}..{PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?)>..Class<out ({PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}..{PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?)>?)): {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'getParentOfType' @ [116:29] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (PsiElement..PsiElement?)>..Class<out (PsiElement..PsiElement?)>?)): PsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'this' @ [116:45] ==> <this> defined in org.jetbrains.kotlin.idea.run.KotlinRunConfigurationProducer.Companion.declarationContainer[ReceiverParameterDescriptorImpl]
 
@@ -290,9 +290,9 @@ Inferred types:
 Inferred types:
     <T> -> KtFile
 
-'getNonStrictParentOfType' @ [118:29] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getNonStrictParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out ({PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}..{PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?)>..Class<out ({PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}..{PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}?)>?)): {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
+'getNonStrictParentOfType' @ [118:29] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getNonStrictParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (PsiElement..PsiElement?)>..Class<out (PsiElement..PsiElement?)>?)): PsiElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}
+    <T : (PsiElement..PsiElement?)> -> PsiElement
 
 'this' @ [118:54] ==> <this> defined in org.jetbrains.kotlin.idea.run.KotlinRunConfigurationProducer.Companion.declarationContainer[ReceiverParameterDescriptorImpl]
 
@@ -306,5 +306,5 @@ Inferred types:
 Inferred types:
     <T> -> KtFile
 
-'element' @ [119:20] ==> val element: {PsiNamedElement & ElementBase & KtDeclarationContainer & KtAnnotated}? defined in org.jetbrains.kotlin.idea.run.KotlinRunConfigurationProducer.Companion.declarationContainer[LocalVariableDescriptor]
+'element' @ [119:20] ==> val element: PsiElement? defined in org.jetbrains.kotlin.idea.run.KotlinRunConfigurationProducer.Companion.declarationContainer[LocalVariableDescriptor]
 

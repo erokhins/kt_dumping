@@ -89,9 +89,9 @@ Inferred types:
 
 'exposedDiagnostic' @ [56:33] ==> val exposedDiagnostic: DiagnosticWithParameters3<out (PsiElement..PsiElement?), (EffectiveVisibility..EffectiveVisibility?), (DescriptorWithRelation..DescriptorWithRelation?), (EffectiveVisibility..EffectiveVisibility?)> defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
 
-'b' @ [56:51] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), (EffectiveVisibility..EffectiveVisibility?), (DescriptorWithRelation..DescriptorWithRelation?), (EffectiveVisibility..EffectiveVisibility?)>.b: (DescriptorWithRelation..DescriptorWithRelation?)[MyPropertyDescriptor]
+'b' @ [56:51] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), (EffectiveVisibility..EffectiveVisibility?), (DescriptorWithRelation..DescriptorWithRelation?), (EffectiveVisibility..EffectiveVisibility?)>.b: DescriptorWithRelation[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.EffectiveVisibility..org.jetbrains.kotlin.descriptors.EffectiveVisibility?)
     <B : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DescriptorWithRelation..org.jetbrains.kotlin.descriptors.DescriptorWithRelation?)
     <C : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.EffectiveVisibility..org.jetbrains.kotlin.descriptors.EffectiveVisibility?)
@@ -114,18 +114,18 @@ Inferred types:
 
 'exposedDiagnostic' @ [59:33] ==> val exposedDiagnostic: DiagnosticWithParameters3<out (PsiElement..PsiElement?), (EffectiveVisibility..EffectiveVisibility?), (DescriptorWithRelation..DescriptorWithRelation?), (EffectiveVisibility..EffectiveVisibility?)> defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
 
-'c' @ [59:51] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), (EffectiveVisibility..EffectiveVisibility?), (DescriptorWithRelation..DescriptorWithRelation?), (EffectiveVisibility..EffectiveVisibility?)>.c: (EffectiveVisibility..EffectiveVisibility?)[MyPropertyDescriptor]
+'c' @ [59:51] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), (EffectiveVisibility..EffectiveVisibility?), (DescriptorWithRelation..DescriptorWithRelation?), (EffectiveVisibility..EffectiveVisibility?)>.c: EffectiveVisibility[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.EffectiveVisibility..org.jetbrains.kotlin.descriptors.EffectiveVisibility?)
     <B : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DescriptorWithRelation..org.jetbrains.kotlin.descriptors.DescriptorWithRelation?)
     <C : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.EffectiveVisibility..org.jetbrains.kotlin.descriptors.EffectiveVisibility?)
 
 'exposedDiagnostic' @ [60:30] ==> val exposedDiagnostic: DiagnosticWithParameters3<out (PsiElement..PsiElement?), (EffectiveVisibility..EffectiveVisibility?), (DescriptorWithRelation..DescriptorWithRelation?), (EffectiveVisibility..EffectiveVisibility?)> defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
 
-'a' @ [60:48] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), (EffectiveVisibility..EffectiveVisibility?), (DescriptorWithRelation..DescriptorWithRelation?), (EffectiveVisibility..EffectiveVisibility?)>.a: (EffectiveVisibility..EffectiveVisibility?)[MyPropertyDescriptor]
+'a' @ [60:48] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?), C : (Any..Any?)> DiagnosticWithParameters3<out (PsiElement..PsiElement?), (EffectiveVisibility..EffectiveVisibility?), (DescriptorWithRelation..DescriptorWithRelation?), (EffectiveVisibility..EffectiveVisibility?)>.a: EffectiveVisibility[MyPropertyDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <E : (PsiElement..PsiElement?)> -> Captured(out (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?))
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.EffectiveVisibility..org.jetbrains.kotlin.descriptors.EffectiveVisibility?)
     <B : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DescriptorWithRelation..org.jetbrains.kotlin.descriptors.DescriptorWithRelation?)
     <C : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.EffectiveVisibility..org.jetbrains.kotlin.descriptors.EffectiveVisibility?)
@@ -141,11 +141,11 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Pair<Visibility, Visibility>
 
-'exposedVisibility' @ [61:69] ==> val exposedVisibility: (EffectiveVisibility..EffectiveVisibility?) defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
+'exposedVisibility' @ [61:69] ==> val exposedVisibility: EffectiveVisibility defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
 
 'relation' @ [61:87] ==> public abstract fun relation(other: EffectiveVisibility): EffectiveVisibility.Permissiveness defined in org.jetbrains.kotlin.descriptors.EffectiveVisibility[DeserializedSimpleFunctionDescriptor]
 
-'userVisibility' @ [61:96] ==> val userVisibility: (EffectiveVisibility..EffectiveVisibility?) defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
+'userVisibility' @ [61:96] ==> val userVisibility: EffectiveVisibility defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
 
 'LESS' @ [62:13] ==> enum entry LESS defined in org.jetbrains.kotlin.descriptors.EffectiveVisibility.Permissiveness[FakeCallableDescriptorForObject]
 
@@ -154,11 +154,11 @@ Inferred types:
     <out A> -> Visibility
     <out B> -> Visibility
 
-'exposedVisibility' @ [62:26] ==> val exposedVisibility: (EffectiveVisibility..EffectiveVisibility?) defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
+'exposedVisibility' @ [62:26] ==> val exposedVisibility: EffectiveVisibility defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
 
 'toVisibility' @ [62:44] ==> public abstract fun toVisibility(): Visibility defined in org.jetbrains.kotlin.descriptors.EffectiveVisibility[DeserializedSimpleFunctionDescriptor]
 
-'userVisibility' @ [62:60] ==> val userVisibility: (EffectiveVisibility..EffectiveVisibility?) defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
+'userVisibility' @ [62:60] ==> val userVisibility: EffectiveVisibility defined in org.jetbrains.kotlin.idea.quickfix.ChangeVisibilityOnExposureFactory.doCreateActions[LocalVariableDescriptor]
 
 'toVisibility' @ [62:75] ==> public abstract fun toVisibility(): Visibility defined in org.jetbrains.kotlin.descriptors.EffectiveVisibility[DeserializedSimpleFunctionDescriptor]
 

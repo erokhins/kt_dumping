@@ -399,7 +399,7 @@ Inferred types:
 
 'put' @ [156:21] ==> public open fun <T : (Any..Any?)> put(p0: (Context.Key<(TreeMaker..TreeMaker?)>..Context.Key<(TreeMaker..TreeMaker?)>?), p1: (Context.Factory<(TreeMaker..TreeMaker?)>..Context.Factory<(TreeMaker..TreeMaker?)>?)): Unit defined in com.sun.tools.javac.util.Context[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TreeMaker
+    <T : (Any..Any?)> -> (com.sun.tools.javac.tree.TreeMaker..com.sun.tools.javac.tree.TreeMaker?)
 
 'treeMakerKey' @ [156:25] ==> protected/*protected static*/ final val treeMakerKey: (Context.Key<(TreeMaker..TreeMaker?)>..Context.Key<(TreeMaker..TreeMaker?)>?) defined in com.sun.tools.javac.tree.TreeMaker[JavaPropertyDescriptor]
 

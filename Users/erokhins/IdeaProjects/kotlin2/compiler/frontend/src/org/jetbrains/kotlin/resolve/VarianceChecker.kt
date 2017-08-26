@@ -212,7 +212,7 @@ Inferred types:
 
 'declaration' @ [121:31] ==> value-parameter declaration: KtCallableDeclaration defined in org.jetbrains.kotlin.resolve.VarianceCheckerCore.checkCallableDeclaration[ValueParameterDescriptorImpl]
 
-'createTypeBindingForReturnType' @ [121:43] ==> public fun KtCallableDeclaration.createTypeBindingForReturnType(trace: BindingContext): TypeBinding<PsiElement>? defined in org.jetbrains.kotlin.resolve.typeBinding[SimpleFunctionDescriptorImpl]
+'createTypeBindingForReturnType' @ [121:43] ==> public fun KtCallableDeclaration.createTypeBindingForReturnType(trace: BindingContext): TypeBinding<PsiElement>? defined in org.jetbrains.kotlin.resolve.typeBinding in file TypeBinding.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [121:74] ==> value-parameter trace: BindingContext defined in org.jetbrains.kotlin.resolve.VarianceCheckerCore.checkCallableDeclaration[ValueParameterDescriptorImpl]
 
@@ -256,7 +256,7 @@ Inferred types:
 
 'noError' @ [137:16] ==> var noError: Boolean defined in org.jetbrains.kotlin.resolve.VarianceCheckerCore.checkTypeParameters[LocalVariableDescriptor]
 
-'createTypeBinding' @ [141:15] ==> public fun KtTypeReference.createTypeBinding(trace: BindingContext): TypeBinding<KtTypeElement>? defined in org.jetbrains.kotlin.resolve.typeBinding[SimpleFunctionDescriptorImpl]
+'createTypeBinding' @ [141:15] ==> public fun KtTypeReference.createTypeBinding(trace: BindingContext): TypeBinding<KtTypeElement>? defined in org.jetbrains.kotlin.resolve.typeBinding in file TypeBinding.kt[SimpleFunctionDescriptorImpl]
 
 'trace' @ [141:33] ==> value-parameter trace: BindingContext defined in org.jetbrains.kotlin.resolve.VarianceCheckerCore.checkTypePosition[ValueParameterDescriptorImpl]
 
@@ -377,11 +377,11 @@ Inferred types:
 
 'java' @ [172:102] ==> public val <T> KClass<out CallableMemberDescriptor>.java: Class<out CallableMemberDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> CallableMemberDescriptor
+    <T> -> Captured(out CallableMemberDescriptor)
 
 'name' @ [172:107] ==> public final val <T : (Any..Any?)> Class<out CallableMemberDescriptor>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CallableMemberDescriptor
+    <T : (Any..Any?)> -> Captured(out CallableMemberDescriptor)
 
 'if (other == null) this else this and other' @ [176:58] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Boolean, elseBranch: Boolean): Boolean[SimpleFunctionDescriptorImpl]
 Inferred types:

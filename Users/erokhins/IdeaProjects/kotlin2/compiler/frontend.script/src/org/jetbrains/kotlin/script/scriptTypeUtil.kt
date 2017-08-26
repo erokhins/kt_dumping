@@ -2,7 +2,7 @@
 
 'primaryConstructor' @ [36:18] ==> @SinceKotlin public val <T : Any> KClass<out Any>.primaryConstructor: KFunction<Any>? defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> Captured(out Any)
 
 'parameters' @ [36:38] ==> public abstract val parameters: List<KParameter> defined in kotlin.reflect.KFunction[DeserializedPropertyDescriptor]
 
@@ -75,7 +75,7 @@ Inferred types:
 
 'classifier' @ [56:118] ==> val classifier: KClassifier? defined in org.jetbrains.kotlin.script.getKotlinTypeByKType[LocalVariableDescriptor]
 
-'getKotlinTypeByKClass' @ [58:16] ==> public fun getKotlinTypeByKClass(scriptDescriptor: ScriptDescriptor, kClass: KClass<out Any>): KotlinType defined in org.jetbrains.kotlin.script[SimpleFunctionDescriptorImpl]
+'getKotlinTypeByKClass' @ [58:16] ==> public fun getKotlinTypeByKClass(scriptDescriptor: ScriptDescriptor, kClass: KClass<out Any>): KotlinType defined in org.jetbrains.kotlin.script in file scriptTypeUtil.kt[SimpleFunctionDescriptorImpl]
 
 'scriptDescriptor' @ [58:38] ==> value-parameter scriptDescriptor: ScriptDescriptor defined in org.jetbrains.kotlin.script.getKotlinTypeByKType[ValueParameterDescriptorImpl]
 
@@ -103,8 +103,6 @@ Inferred types:
 'KotlinTypeFactory' @ [62:12] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
 
 'simpleType' @ [62:30] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
-
-'Annotations' @ [62:41] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [62:53] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

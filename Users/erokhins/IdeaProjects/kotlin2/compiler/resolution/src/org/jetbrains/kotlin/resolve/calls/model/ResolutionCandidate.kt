@@ -265,7 +265,7 @@ Inferred types:
 
 'processParts' @ [153:13] ==> private final fun processParts(stopOnFirstError: Boolean): Unit defined in org.jetbrains.kotlin.resolve.calls.model.KotlinResolutionCandidate[SimpleFunctionDescriptorImpl]
 
-'getResultApplicability' @ [155:39] ==> public fun getResultApplicability(diagnostics: Collection<KotlinCallDiagnostic>): ResolutionCandidateApplicability defined in org.jetbrains.kotlin.resolve.calls.tower[SimpleFunctionDescriptorImpl]
+'getResultApplicability' @ [155:39] ==> public fun getResultApplicability(diagnostics: Collection<KotlinCallDiagnostic>): ResolutionCandidateApplicability defined in org.jetbrains.kotlin.resolve.calls.tower in file ImplicitScopeTower.kt[SimpleFunctionDescriptorImpl]
 
 'getSystem' @ [155:62] ==> public final fun getSystem(): NewConstraintSystem defined in org.jetbrains.kotlin.resolve.calls.model.KotlinResolutionCandidate[SimpleFunctionDescriptorImpl]
 

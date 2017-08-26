@@ -34,12 +34,16 @@ Inferred types:
 
 'ConversionUnaryIntrinsic' @ [38:45] ==> public constructor ConversionUnaryIntrinsic(applyFun: (receiver: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.NumberAndCharConversionFIF.ConversionUnaryIntrinsic[ClassConstructorDescriptorImpl]
 
+'toInt32' @ [38:72] ==> @NotNull public open fun toInt32(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
+
 'to' @ [39:21] ==> public infix fun <A, B> String.to(that: NumberAndCharConversionFIF.ConversionUnaryIntrinsic): Pair<String, NumberAndCharConversionFIF.ConversionUnaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> ConversionUnaryIntrinsic
 
 'ConversionUnaryIntrinsic' @ [39:51] ==> public constructor ConversionUnaryIntrinsic(applyFun: (receiver: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.NumberAndCharConversionFIF.ConversionUnaryIntrinsic[ClassConstructorDescriptorImpl]
+
+'toShort' @ [39:78] ==> @NotNull public open fun toShort(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
 'to' @ [40:21] ==> public infix fun <A, B> String.to(that: NumberAndCharConversionFIF.ConversionUnaryIntrinsic): Pair<String, NumberAndCharConversionFIF.ConversionUnaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -48,12 +52,16 @@ Inferred types:
 
 'ConversionUnaryIntrinsic' @ [40:56] ==> public constructor ConversionUnaryIntrinsic(applyFun: (receiver: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.NumberAndCharConversionFIF.ConversionUnaryIntrinsic[ClassConstructorDescriptorImpl]
 
+'toByte' @ [40:83] ==> @NotNull public open fun toByte(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
+
 'to' @ [42:21] ==> public infix fun <A, B> String.to(that: NumberAndCharConversionFIF.ConversionUnaryIntrinsic): Pair<String, NumberAndCharConversionFIF.ConversionUnaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> ConversionUnaryIntrinsic
 
 'ConversionUnaryIntrinsic' @ [42:48] ==> public constructor ConversionUnaryIntrinsic(applyFun: (receiver: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.NumberAndCharConversionFIF.ConversionUnaryIntrinsic[ClassConstructorDescriptorImpl]
+
+'longFromInt' @ [42:75] ==> @NotNull public open fun longFromInt(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
 'to' @ [43:21] ==> public infix fun <A, B> String.to(that: NumberAndCharConversionFIF.ConversionUnaryIntrinsic): Pair<String, NumberAndCharConversionFIF.ConversionUnaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -62,12 +70,16 @@ Inferred types:
 
 'ConversionUnaryIntrinsic' @ [43:46] ==> public constructor ConversionUnaryIntrinsic(applyFun: (receiver: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.NumberAndCharConversionFIF.ConversionUnaryIntrinsic[ClassConstructorDescriptorImpl]
 
+'longFromNumber' @ [43:73] ==> @NotNull public open fun longFromNumber(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
+
 'to' @ [45:21] ==> public infix fun <A, B> String.to(that: NumberAndCharConversionFIF.ConversionUnaryIntrinsic): Pair<String, NumberAndCharConversionFIF.ConversionUnaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> ConversionUnaryIntrinsic
 
 'ConversionUnaryIntrinsic' @ [45:54] ==> public constructor ConversionUnaryIntrinsic(applyFun: (receiver: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.NumberAndCharConversionFIF.ConversionUnaryIntrinsic[ClassConstructorDescriptorImpl]
+
+'charToInt' @ [45:81] ==> @NotNull public open fun charToInt(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
 'to' @ [46:21] ==> public infix fun <A, B> String.to(that: NumberAndCharConversionFIF.ConversionUnaryIntrinsic): Pair<String, NumberAndCharConversionFIF.ConversionUnaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -180,6 +192,8 @@ Inferred types:
     <B> -> ConversionUnaryIntrinsic
 
 'ConversionUnaryIntrinsic' @ [57:62] ==> public constructor ConversionUnaryIntrinsic(applyFun: (receiver: JsExpression) -> JsExpression) defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.NumberAndCharConversionFIF.ConversionUnaryIntrinsic[ClassConstructorDescriptorImpl]
+
+'toChar' @ [57:89] ==> @NotNull public open fun toChar(@NotNull expression: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
 'to' @ [59:21] ==> public infix fun <A, B> String.to(that: NumberAndCharConversionFIF.ConversionUnaryIntrinsic): Pair<String, NumberAndCharConversionFIF.ConversionUnaryIntrinsic> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:

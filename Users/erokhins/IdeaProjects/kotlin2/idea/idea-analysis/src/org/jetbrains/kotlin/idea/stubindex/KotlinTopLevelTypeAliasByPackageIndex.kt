@@ -23,8 +23,8 @@ Inferred types:
 
 'createIndexKey' @ [36:35] ==> @NotNull public open fun <K : (Any..Any?), Psi : (PsiElement..PsiElement?)> createIndexKey(@NotNull indexClass: Class<out (StubIndexExtension<(String..String?), (KtTypeAlias..KtTypeAlias?)>..StubIndexExtension<(String..String?), (KtTypeAlias..KtTypeAlias?)>?)>): StubIndexKey<(String..String?), (KtTypeAlias..KtTypeAlias?)> defined in org.jetbrains.kotlin.idea.stubindex.KotlinIndexUtil[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> KtTypeAlias
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtTypeAlias..org.jetbrains.kotlin.psi.KtTypeAlias?)
 
 'KotlinTopLevelTypeAliasByPackageIndex' @ [36:50] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasByPackageIndex[FakeCallableDescriptorForObject]
 

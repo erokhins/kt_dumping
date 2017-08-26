@@ -18,7 +18,5 @@
 
 'loadFile' @ [30:62] ==> @NotNull public open fun loadFile(@NotNull p0: File): String defined in com.intellij.openapi.util.io.FileUtil[JavaMethodDescriptor]
 
-'GenerateProtoBufCompare' @ [30:71] ==> public companion object defined in org.jetbrains.kotlin.generators.protobuf.GenerateProtoBufCompare[FakeCallableDescriptorForObject]
-
 'DEST_FILE' @ [30:95] ==> public final val DEST_FILE: File defined in org.jetbrains.kotlin.generators.protobuf.GenerateProtoBufCompare.Companion[PropertyDescriptorImpl]
 

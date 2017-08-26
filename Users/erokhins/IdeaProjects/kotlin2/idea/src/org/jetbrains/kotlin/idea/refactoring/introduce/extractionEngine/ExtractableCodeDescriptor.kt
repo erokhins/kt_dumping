@@ -267,16 +267,16 @@ Inferred types:
 
 'elementsToReplace' @ [165:70] ==> public final val elementsToReplace: List<KtExpression> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.Jump[PropertyDescriptorImpl]
 
-'with' @ [166:46] ==> @InlineOnly public inline fun <T, R> with(receiver: KotlinBuiltIns, block: KotlinBuiltIns.() -> SimpleType): SimpleType defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [166:46] ==> @InlineOnly public inline fun <T, R> with(receiver: KotlinBuiltIns, block: KotlinBuiltIns.() -> KotlinType): KotlinType defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KotlinBuiltIns
-    <R> -> SimpleType
+    <R> -> KotlinType
 
 'builtIns' @ [166:51] ==> value-parameter builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.Jump.<init>[ValueParameterDescriptorImpl]
 
-'if (conditional) booleanType else unitType' @ [166:63] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: SimpleType, elseBranch: SimpleType): SimpleType[SimpleFunctionDescriptorImpl]
+'if (conditional) booleanType else unitType' @ [166:63] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KotlinType, elseBranch: KotlinType): KotlinType[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> SimpleType
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KotlinType
 
 'conditional' @ [166:67] ==> public final val conditional: Boolean defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.Jump[PropertyDescriptorImpl]
 
@@ -290,7 +290,7 @@ Inferred types:
 
 'singletonList' @ [180:82] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KtProperty..KtProperty?)): (MutableList<(KtProperty..KtProperty?)>..List<(KtProperty..KtProperty?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtProperty
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtProperty..org.jetbrains.kotlin.psi.KtProperty?)
 
 'initializedDeclaration' @ [180:96] ==> public final val initializedDeclaration: KtProperty defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue.Initializer[PropertyDescriptorImpl]
 
@@ -383,9 +383,9 @@ Inferred types:
 Inferred types:
     <reified @PureReifiable T> -> String
 
-'lazy' @ [233:48] ==> public fun <T> lazy(initializer: () -> KotlinType): Lazy<KotlinType> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [233:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinType
+    <T> -> T
 
 'when (outputValues.size) {
                     1 -> return outputValues.first().valueType
@@ -508,13 +508,13 @@ Inferred types:
 
 'emptyMap' @ [267:34] ==> public final fun <K : (Any..Any?), V : (Any..Any?)> emptyMap(): (MutableMap<(OutputValue..OutputValue?), (String..String?)>..Map<(OutputValue..OutputValue?), (String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> OutputValue
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'singletonMap' @ [268:34] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> singletonMap(p0: (OutputValue..OutputValue?), p1: (String..String?)): (MutableMap<(OutputValue..OutputValue?), (String..String?)>..Map<(OutputValue..OutputValue?), (String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> OutputValue
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'outputValues' @ [268:47] ==> public final val outputValues: List<OutputValue> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValueBoxer.AsTuple[PropertyDescriptorImpl]
 
@@ -526,8 +526,8 @@ Inferred types:
 
 'newMapFromKeys' @ [271:35] ==> @NotNull public final fun <K : (Any..Any?), V : (Any..Any?)> newMapFromKeys(@NotNull p0: (MutableIterator<(OutputValue..OutputValue?)>..Iterator<(OutputValue..OutputValue?)>), @NotNull p1: ((OutputValue..OutputValue?)) -> (String..String?)): (MutableMap<(OutputValue..OutputValue?), (String..String?)>..Map<(OutputValue..OutputValue?), (String..String?)>) defined in com.intellij.util.containers.ContainerUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> OutputValue
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'outputValues' @ [271:50] ==> public final val outputValues: List<OutputValue> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValueBoxer.AsTuple[PropertyDescriptorImpl]
 
@@ -543,9 +543,9 @@ Inferred types:
 
 'outputValues' @ [277:69] ==> value-parameter outputValues: List<OutputValue> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValueBoxer.AsList.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [278:48] ==> public fun <T> lazy(initializer: () -> KotlinType): Lazy<KotlinType> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [278:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinType
+    <T> -> T
 
 'assert' @ [279:13] ==> @InlineOnly public inline fun assert(value: Boolean): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -573,7 +573,7 @@ Inferred types:
 
 'singletonList' @ [283:33] ==> public open fun <T : (Any..Any?)> singletonList(p0: (KotlinType..KotlinType?)): (MutableList<(KotlinType..KotlinType?)>..List<(KotlinType..KotlinType?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'commonSupertype' @ [283:64] ==> @NotNull public open fun commonSupertype(@NotNull p0: (MutableCollection<(KotlinType..KotlinType?)>..Collection<(KotlinType..KotlinType?)>)): KotlinType defined in org.jetbrains.kotlin.types.CommonSupertypes[JavaMethodDescriptor]
 
@@ -614,8 +614,8 @@ Inferred types:
 
 'newMapFromKeys' @ [300:34] ==> @NotNull public final fun <K : (Any..Any?), V : (Any..Any?)> newMapFromKeys(@NotNull p0: (MutableIterator<(OutputValue..OutputValue?)>..Iterator<(OutputValue..OutputValue?)>), @NotNull p1: ((OutputValue..OutputValue?)) -> (String..String?)): (MutableMap<(OutputValue..OutputValue?), (String..String?)>..Map<(OutputValue..OutputValue?), (String..String?)>) defined in com.intellij.util.containers.ContainerUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> OutputValue
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue..org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValue?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'outputValues' @ [300:49] ==> public final val outputValues: List<OutputValue> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.OutputValueBoxer.AsList[PropertyDescriptorImpl]
 
@@ -819,11 +819,11 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'lazy' @ [366:44] ==> public fun <T> lazy(initializer: () -> List<DuplicateInfo>): Lazy<List<DuplicateInfo>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [366:44] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<DuplicateInfo>
+    <T> -> T
 
-'findDuplicates' @ [366:51] ==> public fun ExtractableCodeDescriptor.findDuplicates(): List<DuplicateInfo> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'findDuplicates' @ [366:51] ==> public fun ExtractableCodeDescriptor.findDuplicates(): List<DuplicateInfo> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file extractorUtil.kt[SimpleFunctionDescriptorImpl]
 
 'create' @ [376:38] ==> @NotNull public open fun <K : (Any..Any?), V : (Any..Any?)> create(): MultiMap<(KtSimpleNameExpression..KtSimpleNameExpression?), (Replacement..Replacement?)> defined in com.intellij.util.containers.MultiMap[JavaMethodDescriptor]
 Inferred types:
@@ -922,7 +922,7 @@ Inferred types:
 
 'controlFlow' @ [398:13] ==> public final val controlFlow: ControlFlow defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractableCodeDescriptor[PropertyDescriptorImpl]
 
-'copy' @ [398:25] ==> public fun ControlFlow.copy(oldToNewParameters: Map<Parameter, Parameter>): ControlFlow defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine[SimpleFunctionDescriptorImpl]
+'copy' @ [398:25] ==> public fun ControlFlow.copy(oldToNewParameters: Map<Parameter, Parameter>): ControlFlow defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine in file ExtractableCodeDescriptor.kt[SimpleFunctionDescriptorImpl]
 
 'oldToNewParameters' @ [398:30] ==> value-parameter oldToNewParameters: Map<Parameter, Parameter> defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.copy[ValueParameterDescriptorImpl]
 
@@ -1080,15 +1080,9 @@ Inferred types:
 Inferred types:
     <T> -> ExtractionTarget
 
-'ExtractionTarget' @ [467:54] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY_WITH_INITIALIZER' @ [467:71] ==> enum entry PROPERTY_WITH_INITIALIZER defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
-'ExtractionTarget' @ [468:54] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY_WITH_GETTER' @ [468:71] ==> enum entry PROPERTY_WITH_GETTER defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
-
-'ExtractionTarget' @ [469:54] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 
 'LAZY_PROPERTY' @ [469:71] ==> enum entry LAZY_PROPERTY defined in org.jetbrains.kotlin.idea.refactoring.introduce.extractionEngine.ExtractionTarget[FakeCallableDescriptorForObject]
 

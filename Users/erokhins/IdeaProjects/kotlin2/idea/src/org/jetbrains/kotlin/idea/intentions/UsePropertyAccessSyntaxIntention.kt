@@ -33,6 +33,8 @@ Inferred types:
 
 'fqNameList' @ [76:25] ==> public final val fqNameList: MutableList<FqNameUnsafe> defined in org.jetbrains.kotlin.idea.intentions.UsePropertyAccessSyntaxInspection[PropertyDescriptorImpl]
 
+'FqNameUnsafe' @ [76:39] ==> public constructor FqNameUnsafe(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqNameUnsafe[JavaClassConstructorDescriptor]
+
 'fqNameStrings' @ [80:9] ==> private final var fqNameStrings: List<String> defined in org.jetbrains.kotlin.idea.intentions.UsePropertyAccessSyntaxInspection[PropertyDescriptorImpl]
 
 'NotPropertiesServiceImpl' @ [80:25] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.NotPropertiesServiceImpl[FakeCallableDescriptorForObject]
@@ -59,7 +61,7 @@ Inferred types:
 
 'getUnwrappedTool' @ [93:28] ==> public abstract fun <T : (InspectionProfileEntry..InspectionProfileEntry?)> getUnwrappedTool(@NotNull p0: Key<(UsePropertyAccessSyntaxInspection..UsePropertyAccessSyntaxInspection?)>, @NotNull p1: PsiElement): (UsePropertyAccessSyntaxInspection..UsePropertyAccessSyntaxInspection?) defined in com.intellij.codeInspection.InspectionProfile[JavaMethodDescriptor]
 Inferred types:
-    <T : (InspectionProfileEntry..InspectionProfileEntry?)> -> UsePropertyAccessSyntaxInspection
+    <T : (InspectionProfileEntry..InspectionProfileEntry?)> -> (org.jetbrains.kotlin.idea.intentions.UsePropertyAccessSyntaxInspection..org.jetbrains.kotlin.idea.intentions.UsePropertyAccessSyntaxInspection?)
 
 'USE_PROPERTY_ACCESS_INSPECTION' @ [93:45] ==> public final val USE_PROPERTY_ACCESS_INSPECTION: Key<UsePropertyAccessSyntaxInspection> defined in org.jetbrains.kotlin.idea.intentions.NotPropertiesServiceImpl.Companion[PropertyDescriptorImpl]
 
@@ -76,6 +78,8 @@ Inferred types:
     <T> -> String
     <R> -> FqNameUnsafe
 
+'FqNameUnsafe' @ [94:51] ==> public constructor FqNameUnsafe(@NotNull p0: String) defined in org.jetbrains.kotlin.name.FqNameUnsafe[JavaClassConstructorDescriptor]
+
 'toSet' @ [94:66] ==> public fun <T> Iterable<FqNameUnsafe>.toSet(): Set<FqNameUnsafe> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FqNameUnsafe
@@ -86,7 +90,7 @@ Inferred types:
 
 'create' @ [111:90] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(UsePropertyAccessSyntaxInspection..UsePropertyAccessSyntaxInspection?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UsePropertyAccessSyntaxInspection
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.intentions.UsePropertyAccessSyntaxInspection..org.jetbrains.kotlin.idea.intentions.UsePropertyAccessSyntaxInspection?)
 
 'SelfTargetingOffsetIndependentIntention<KtCallExpression>' @ [115:42] ==> public constructor SelfTargetingOffsetIndependentIntention<TElement : KtElement>(elementType: Class<KtCallExpression>, text: String, familyName: String = ...) defined in org.jetbrains.kotlin.idea.intentions.SelfTargetingOffsetIndependentIntention[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -178,7 +182,7 @@ Inferred types:
 
 'resultingDescriptor' @ [143:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 '?:' @ [145:29] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Set<FqNameUnsafe>?, right: Set<FqNameUnsafe>): Set<FqNameUnsafe>[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -191,8 +195,6 @@ Inferred types:
 'toSet' @ [145:93] ==> public fun <T> Iterable<FqNameUnsafe>.toSet(): Set<FqNameUnsafe> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FqNameUnsafe
-
-'NotPropertiesService' @ [146:29] ==> public companion object defined in org.jetbrains.kotlin.idea.core.NotPropertiesService[FakeCallableDescriptorForObject]
 
 'getNotProperties' @ [146:50] ==> public final fun getNotProperties(element: PsiElement): Set<FqNameUnsafe> defined in org.jetbrains.kotlin.idea.core.NotPropertiesService.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -374,7 +376,7 @@ Inferred types:
 
 'call' @ [195:36] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [195:41] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -386,7 +388,7 @@ Inferred types:
 
 'call' @ [196:60] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'KtPsiFactory' @ [197:37] ==> @JvmOverloads public constructor KtPsiFactory(project: Project, markGenerated: Boolean = ...) defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedClassConstructorDescriptor]
 
@@ -448,7 +450,7 @@ Inferred types:
 
 'result' @ [211:36] ==> val result: OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)> defined in org.jetbrains.kotlin.idea.intentions.UsePropertyAccessSyntaxIntention.checkWillResolveToProperty[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [211:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)>.resultingDescriptor: (VariableDescriptor..VariableDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [211:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<(VariableDescriptor..VariableDescriptor?)>.resultingDescriptor: VariableDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 

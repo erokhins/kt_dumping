@@ -72,6 +72,8 @@
 
 'this' @ [66:66] ==> <this> defined in org.jetbrains.kotlin.backend.common.IrValidator[LazyClassReceiverParameterDescriptor]
 
+'error' @ [66:72] ==> private final fun error(element: IrElement, message: String): Unit defined in org.jetbrains.kotlin.backend.common.IrValidator[SimpleFunctionDescriptorImpl]
+
 'performHeavyValidations' @ [66:79] ==> value-parameter performHeavyValidations: Boolean defined in org.jetbrains.kotlin.backend.common.IrValidator.<init>[ValueParameterDescriptorImpl]
 
 'element' @ [69:9] ==> value-parameter element: IrElement defined in org.jetbrains.kotlin.backend.common.IrValidator.visitElement[ValueParameterDescriptorImpl]

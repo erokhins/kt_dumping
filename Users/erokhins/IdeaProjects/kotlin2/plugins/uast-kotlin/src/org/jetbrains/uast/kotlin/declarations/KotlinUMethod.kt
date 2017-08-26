@@ -7,9 +7,9 @@ Inferred types:
 
 'psi' @ [35:70] ==> value-parameter psi: KtLightMethod defined in org.jetbrains.uast.kotlin.declarations.KotlinUMethod.<init>[ValueParameterDescriptorImpl]
 
-'lz' @ [37:38] ==> internal fun <T> lz(initializer: () -> UExpression?): Lazy<UExpression?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [37:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression?
+    <T> -> T
 
 'psi' @ [38:35] ==> value-parameter psi: KtLightMethod defined in org.jetbrains.uast.kotlin.declarations.KotlinUMethod.<init>[ValueParameterDescriptorImpl]
 
@@ -47,9 +47,9 @@ Inferred types:
 
 'kotlinOrigin' @ [47:65] ==> private final val kotlinOrigin: KtElement? defined in org.jetbrains.uast.kotlin.declarations.KotlinUMethod[PropertyDescriptorImpl]
 
-'lz' @ [49:33] ==> internal fun <T> lz(initializer: () -> List<KotlinUAnnotation>): Lazy<List<KotlinUAnnotation>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [49:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KotlinUAnnotation>
+    <T> -> T
 
 'psi' @ [50:9] ==> value-parameter psi: KtLightMethod defined in org.jetbrains.uast.kotlin.declarations.KotlinUMethod.<init>[ValueParameterDescriptorImpl]
 
@@ -75,9 +75,9 @@ Inferred types:
 
 'this' @ [52:46] ==> <this> defined in org.jetbrains.uast.kotlin.declarations.KotlinUMethod[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [55:36] ==> internal fun <T> lz(initializer: () -> List<KotlinUParameter>): Lazy<List<KotlinUParameter>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [55:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<KotlinUParameter>
+    <T> -> T
 
 'psi' @ [56:9] ==> value-parameter psi: KtLightMethod defined in org.jetbrains.uast.kotlin.declarations.KotlinUMethod.<init>[ValueParameterDescriptorImpl]
 
@@ -114,9 +114,9 @@ Inferred types:
 
 'this' @ [60:117] ==> <this> defined in org.jetbrains.uast.kotlin.declarations.KotlinUMethod[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [63:30] ==> internal fun <T> lz(initializer: () -> UExpression?): Lazy<UExpression?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [63:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression?
+    <T> -> T
 
 'when (kotlinOrigin) {
             is KtFunction -> kotlinOrigin.bodyExpression

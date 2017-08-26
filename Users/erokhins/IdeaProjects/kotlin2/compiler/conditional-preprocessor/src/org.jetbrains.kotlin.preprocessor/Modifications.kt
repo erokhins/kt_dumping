@@ -22,11 +22,11 @@ Inferred types:
 
 'declaration' @ [33:27] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.preprocessor.CollectModificationsVisitor.visitDeclaration[ValueParameterDescriptorImpl]
 
-'parseConditionalAnnotations' @ [33:39] ==> public fun KtAnnotated.parseConditionalAnnotations(): List<Conditional> defined in org.jetbrains.kotlin.preprocessor[SimpleFunctionDescriptorImpl]
+'parseConditionalAnnotations' @ [33:39] ==> public fun KtAnnotated.parseConditionalAnnotations(): List<Conditional> defined in org.jetbrains.kotlin.preprocessor in file Conditional.kt[SimpleFunctionDescriptorImpl]
 
-'?:' @ [34:20] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Comparable<{Name & String}>?, right: Comparable<{Name & String}>?): Comparable<{Name & String}>?[SimpleFunctionDescriptorImpl]
+'?:' @ [34:20] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Comparable<*>?, right: Comparable<*>?): Comparable<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Comparable<{Name & String}>?
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Comparable<*>?
 
 'declaration' @ [34:21] ==> value-parameter declaration: KtDeclaration defined in org.jetbrains.kotlin.preprocessor.CollectModificationsVisitor.visitDeclaration[ValueParameterDescriptorImpl]
 

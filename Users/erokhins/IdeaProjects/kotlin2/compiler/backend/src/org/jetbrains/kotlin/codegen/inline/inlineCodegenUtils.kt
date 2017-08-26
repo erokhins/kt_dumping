@@ -186,7 +186,7 @@ Inferred types:
 
 'contextDescriptor' @ [166:57] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.contextDescriptor: (DeclarationDescriptor..DeclarationDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 
 'typeMapper' @ [166:76] ==> value-parameter typeMapper: KotlinTypeMapper defined in org.jetbrains.kotlin.codegen.inline.getInlineName[ValueParameterDescriptorImpl]
 
@@ -236,7 +236,7 @@ Inferred types:
 
 'contextDescriptor' @ [177:81] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.contextDescriptor: (DeclarationDescriptor..DeclarationDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 
 'if (file == null) {
                         CodegenContextUtil.getImplementationOwnerClassType(codegenContext)
@@ -246,8 +246,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Type?
 
 'file' @ [180:25] ==> val file: KtFile? defined in org.jetbrains.kotlin.codegen.inline.getInlineName[LocalVariableDescriptor]
-
-'CodegenContextUtil' @ [181:25] ==> public object CodegenContextUtil defined in org.jetbrains.kotlin.codegen.context in file CodegenContextUtil.kt[FakeCallableDescriptorForObject]
 
 'getImplementationOwnerClassType' @ [181:44] ==> @JvmStatic public final fun getImplementationOwnerClassType(owner: CodegenContext<*>): Type? defined in org.jetbrains.kotlin.codegen.context.CodegenContextUtil[SimpleFunctionDescriptorImpl]
 
@@ -265,7 +263,7 @@ Inferred types:
 
 'contextDescriptor' @ [186:56] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> CodegenContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.contextDescriptor: (DeclarationDescriptor..DeclarationDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 
 'RuntimeException' @ [187:23] ==> public final fun <init>(p0: (String..String?)): RuntimeException /* = RuntimeException */ defined in kotlin.RuntimeException[TypeAliasConstructorDescriptorImpl]
 
@@ -301,8 +299,8 @@ Inferred types:
 
 'get' @ [200:56] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(CallableDescriptor..CallableDescriptor?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(CallableDescriptor..CallableDescriptor?), (ClassDescriptor..ClassDescriptor?)>?), p1: (CallableDescriptor..CallableDescriptor?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> CallableDescriptor
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS_FOR_CALLABLE' @ [200:75] ==> public final val CLASS_FOR_CALLABLE: (WritableSlice<(CallableDescriptor..CallableDescriptor?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(CallableDescriptor..CallableDescriptor?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.codegen.binding.CodegenBinding[JavaPropertyDescriptor]
 
@@ -921,13 +919,13 @@ Inferred types:
 
 'INLINE_MARKER_CLASS_NAME' @ [439:35] ==> private const val INLINE_MARKER_CLASS_NAME: String defined in org.jetbrains.kotlin.codegen.inline in file inlineCodegenUtils.kt[PropertyDescriptorImpl]
 
-'isSuspendMarker' @ [445:62] ==> private fun isSuspendMarker(insn: AbstractInsnNode, id: Int): Boolean defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'isSuspendMarker' @ [445:62] ==> private fun isSuspendMarker(insn: AbstractInsnNode, id: Int): Boolean defined in org.jetbrains.kotlin.codegen.inline in file inlineCodegenUtils.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [445:78] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.inline.isBeforeSuspendMarker[ValueParameterDescriptorImpl]
 
 'INLINE_MARKER_BEFORE_SUSPEND_ID' @ [445:84] ==> private const val INLINE_MARKER_BEFORE_SUSPEND_ID: Int defined in org.jetbrains.kotlin.codegen.inline in file inlineCodegenUtils.kt[PropertyDescriptorImpl]
 
-'isSuspendMarker' @ [446:61] ==> private fun isSuspendMarker(insn: AbstractInsnNode, id: Int): Boolean defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'isSuspendMarker' @ [446:61] ==> private fun isSuspendMarker(insn: AbstractInsnNode, id: Int): Boolean defined in org.jetbrains.kotlin.codegen.inline in file inlineCodegenUtils.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [446:77] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.inline.isAfterSuspendMarker[ValueParameterDescriptorImpl]
 
@@ -1159,8 +1157,6 @@ Inferred types:
 'putReifiedOperationMarkerIfTypeIsReifiedParameter' @ [532:23] ==> public open fun putReifiedOperationMarkerIfTypeIsReifiedParameter(@NotNull type: KotlinType, @NotNull operationKind: ReifiedTypeInliner.OperationKind, @NotNull v: InstructionAdapter, @NotNull codegen: BaseExpressionCodegen): Unit defined in org.jetbrains.kotlin.codegen.ExpressionCodegen[JavaMethodDescriptor]
 
 'type' @ [532:73] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.codegen.inline.createSpecialEnumMethodBody[ValueParameterDescriptorImpl]
-
-'ReifiedTypeInliner' @ [532:79] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.ReifiedTypeInliner[FakeCallableDescriptorForObject]
 
 'ENUM_REIFIED' @ [532:112] ==> enum entry ENUM_REIFIED defined in org.jetbrains.kotlin.codegen.inline.ReifiedTypeInliner.OperationKind[FakeCallableDescriptorForObject]
 

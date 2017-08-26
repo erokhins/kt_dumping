@@ -10,8 +10,6 @@ Inferred types:
 Inferred types:
     <T> -> ModuleInfo
 
-'ModuleInfo' @ [41:33] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
-
 'Capability' @ [41:44] ==> public final val Capability: ModuleDescriptor.Capability<ModuleInfo> defined in org.jetbrains.kotlin.analyzer.ModuleInfo.Companion[DeserializedPropertyDescriptor]
 
 'PRODUCTION' @ [42:53] ==> enum entry PRODUCTION defined in org.jetbrains.kotlin.idea.highlighter.SourceKind[FakeCallableDescriptorForObject]
@@ -156,7 +154,7 @@ Inferred types:
 
 'name' @ [92:68] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'it' @ [92:74] ==> value-parameter it: Diagnostic defined in org.jetbrains.kotlin.idea.highlighter.PlatformHeaderAnnotator.validate.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -175,8 +173,6 @@ Inferred types:
 'SimpleDiagnostics' @ [94:47] ==> public constructor SimpleDiagnostics(diagnostics: Collection<Diagnostic>) defined in org.jetbrains.kotlin.resolve.diagnostics.SimpleDiagnostics[DeserializedClassConstructorDescriptor]
 
 'filteredList' @ [94:65] ==> val filteredList: List<Diagnostic> defined in org.jetbrains.kotlin.idea.highlighter.PlatformHeaderAnnotator.validate[LocalVariableDescriptor]
-
-'Diagnostics' @ [94:84] ==> public companion object defined in org.jetbrains.kotlin.resolve.diagnostics.Diagnostics[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [94:96] ==> public final val EMPTY: Diagnostics defined in org.jetbrains.kotlin.resolve.diagnostics.Diagnostics.Companion[DeserializedPropertyDescriptor]
 

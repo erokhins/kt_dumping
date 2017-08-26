@@ -24,8 +24,6 @@
 
 'modality' @ [43:54] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [43:66] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [43:75] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'addDiagnostic' @ [44:17] ==> public open fun addDiagnostic(diagnostic: KotlinCallDiagnostic): Unit defined in org.jetbrains.kotlin.resolve.calls.model.KotlinResolutionCandidate[SimpleFunctionDescriptorImpl]
@@ -72,7 +70,7 @@ Inferred types:
 
 'dispatchReceiverArgument' @ [60:13] ==> val dispatchReceiverArgument: SimpleKotlinCallArgument? defined in org.jetbrains.kotlin.resolve.calls.components.CheckVisibility.process[LocalVariableDescriptor]
 
-'getReceiverValueWithSmartCast' @ [61:37] ==> public fun getReceiverValueWithSmartCast(receiverArgument: ReceiverValue?, smartCastType: KotlinType?): ReceiverValue? defined in org.jetbrains.kotlin.resolve.calls.smartcasts[SimpleFunctionDescriptorImpl]
+'getReceiverValueWithSmartCast' @ [61:37] ==> public fun getReceiverValueWithSmartCast(receiverArgument: ReceiverValue?, smartCastType: KotlinType?): ReceiverValue? defined in org.jetbrains.kotlin.resolve.calls.smartcasts in file smartCastUtil.kt[SimpleFunctionDescriptorImpl]
 
 'receiverValue' @ [61:67] ==> val receiverValue: (ReceiverValue..ReceiverValue?) defined in org.jetbrains.kotlin.resolve.calls.components.CheckVisibility.process[LocalVariableDescriptor]
 
@@ -146,6 +144,8 @@ Inferred types:
 
 'this@process' @ [76:44] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.components.MapTypeArguments.process[ReceiverParameterDescriptorImpl]
 
+'addDiagnostic' @ [76:58] ==> public open fun addDiagnostic(diagnostic: KotlinCallDiagnostic): Unit defined in org.jetbrains.kotlin.resolve.calls.model.KotlinResolutionCandidate[SimpleFunctionDescriptorImpl]
+
 'ResolutionPart' @ [81:35] ==> public constructor ResolutionPart() defined in org.jetbrains.kotlin.resolve.calls.model.ResolutionPart[ClassConstructorDescriptorImpl]
 
 'assert' @ [83:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -189,6 +189,8 @@ Inferred types:
     <T> -> KotlinCallDiagnostic
 
 'this' @ [93:37] ==> <this> defined in org.jetbrains.kotlin.resolve.calls.components.MapArguments.process[ReceiverParameterDescriptorImpl]
+
+'addDiagnostic' @ [93:43] ==> public open fun addDiagnostic(diagnostic: KotlinCallDiagnostic): Unit defined in org.jetbrains.kotlin.resolve.calls.model.KotlinResolutionCandidate[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [95:9] ==> public final val resolvedCall: MutableResolvedCallAtom defined in org.jetbrains.kotlin.resolve.calls.model.KotlinResolutionCandidate[PropertyDescriptorImpl]
 
@@ -586,7 +588,7 @@ Inferred types:
 
 'argument' @ [215:60] ==> value-parameter argument: KotlinCallArgument defined in org.jetbrains.kotlin.resolve.calls.components.resolveKotlinArgument[ValueParameterDescriptorImpl]
 
-'getExpectedType' @ [215:69] ==> internal fun KotlinCallArgument.getExpectedType(parameter: ParameterDescriptor): UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components[SimpleFunctionDescriptorImpl]
+'getExpectedType' @ [215:69] ==> internal fun KotlinCallArgument.getExpectedType(parameter: ParameterDescriptor): UnwrappedType defined in org.jetbrains.kotlin.resolve.calls.components in file ArgumentsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'candidateParameter' @ [215:85] ==> value-parameter candidateParameter: ParameterDescriptor? defined in org.jetbrains.kotlin.resolve.calls.components.resolveKotlinArgument[ValueParameterDescriptorImpl]
 
@@ -771,8 +773,6 @@ Inferred types:
 'candidateDescriptor' @ [286:60] ==> val candidateDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.resolve.calls.components.CheckAbstractSuperCallPart.process[LocalVariableDescriptor]
 
 'modality' @ [286:80] ==> public final val MemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [286:92] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [286:101] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

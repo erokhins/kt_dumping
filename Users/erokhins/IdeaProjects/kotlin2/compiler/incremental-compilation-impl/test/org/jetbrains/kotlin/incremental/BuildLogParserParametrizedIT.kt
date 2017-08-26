@@ -28,9 +28,9 @@
 
 'logFile' @ [36:46] ==> val logFile: File defined in org.jetbrains.kotlin.incremental.BuildLogParserParametrizedTest.testParser[LocalVariableDescriptor]
 
-'dumpBuildLog' @ [38:32] ==> @Suppress public fun dumpBuildLog(buildSteps: Iterable<BuildStep>): String defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'dumpBuildLog' @ [38:32] ==> @Suppress public fun dumpBuildLog(buildSteps: Iterable<BuildStep>): String defined in org.jetbrains.kotlin.incremental in file testLogsParsingUtil.kt[SimpleFunctionDescriptorImpl]
 
-'parseTestBuildLog' @ [38:45] ==> public fun parseTestBuildLog(file: File): List<BuildStep> defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'parseTestBuildLog' @ [38:45] ==> public fun parseTestBuildLog(file: File): List<BuildStep> defined in org.jetbrains.kotlin.incremental in file testLogsParsingUtil.kt[SimpleFunctionDescriptorImpl]
 
 'logFile' @ [38:63] ==> val logFile: File defined in org.jetbrains.kotlin.incremental.BuildLogParserParametrizedTest.testParser[LocalVariableDescriptor]
 
@@ -78,9 +78,9 @@
 
 'actualNormalized' @ [49:84] ==> val actualNormalized: String defined in org.jetbrains.kotlin.incremental.BuildLogParserParametrizedTest.testParser[LocalVariableDescriptor]
 
-'dumpBuildLog' @ [52:40] ==> @Suppress public fun dumpBuildLog(buildSteps: Iterable<BuildStep>): String defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'dumpBuildLog' @ [52:40] ==> @Suppress public fun dumpBuildLog(buildSteps: Iterable<BuildStep>): String defined in org.jetbrains.kotlin.incremental in file testLogsParsingUtil.kt[SimpleFunctionDescriptorImpl]
 
-'parseTestBuildLog' @ [52:53] ==> public fun parseTestBuildLog(file: File): List<BuildStep> defined in org.jetbrains.kotlin.incremental[SimpleFunctionDescriptorImpl]
+'parseTestBuildLog' @ [52:53] ==> public fun parseTestBuildLog(file: File): List<BuildStep> defined in org.jetbrains.kotlin.incremental in file testLogsParsingUtil.kt[SimpleFunctionDescriptorImpl]
 
 'expectedFile' @ [52:71] ==> val expectedFile: File defined in org.jetbrains.kotlin.incremental.BuildLogParserParametrizedTest.testParser[LocalVariableDescriptor]
 
@@ -114,14 +114,14 @@ Inferred types:
 
 'directories' @ [66:20] ==> val directories: List<(File..File?)> defined in org.jetbrains.kotlin.incremental.BuildLogParserParametrizedTest.Companion.data[LocalVariableDescriptor]
 
-'map' @ [66:32] ==> public inline fun <T, R> Iterable<(File..File?)>.map(transform: ((File..File?)) -> Array<String>): List<Array<String>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [66:32] ==> public inline fun <T, R> Iterable<(File..File?)>.map(transform: ((File..File?)) -> Array<(String..String?)>): List<Array<(String..String?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (java.io.File..java.io.File?)
-    <R> -> Array<String>
+    <R> -> Array<(kotlin.String..kotlin.String?)>
 
-'arrayOf' @ [66:38] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: String): Array<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [66:38] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: (String..String?)): Array<(String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> String
+    <reified @PureReifiable T> -> (kotlin.String..kotlin.String?)
 
 'it' @ [66:46] ==> value-parameter it: (File..File?) defined in org.jetbrains.kotlin.incremental.BuildLogParserParametrizedTest.Companion.data.<anonymous>[ValueParameterDescriptorImpl]
 

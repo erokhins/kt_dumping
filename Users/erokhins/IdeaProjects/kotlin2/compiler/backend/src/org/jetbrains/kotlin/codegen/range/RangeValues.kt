@@ -1,4 +1,4 @@
-'getResolvedCallForRangeExpression' @ [36:5] ==> private fun getResolvedCallForRangeExpression(bindingContext: BindingContext, rangeExpression: KtExpression): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.codegen.range[SimpleFunctionDescriptorImpl]
+'getResolvedCallForRangeExpression' @ [36:5] ==> private fun getResolvedCallForRangeExpression(bindingContext: BindingContext, rangeExpression: KtExpression): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.codegen.range in file RangeValues.kt[SimpleFunctionDescriptorImpl]
 
 'bindingContext' @ [36:39] ==> public final val ExpressionCodegen.bindingContext: BindingContext[MyPropertyDescriptor]
 
@@ -9,14 +9,14 @@ Inferred types:
     <T> -> ResolvedCall<out CallableDescriptor>
     <R> -> Nothing?
 
-'createIntrinsifiedRangeValueOrNull' @ [37:9] ==> private fun ExpressionCodegen.createIntrinsifiedRangeValueOrNull(rangeCall: ResolvedCall<out CallableDescriptor>): RangeValue? defined in org.jetbrains.kotlin.codegen.range[SimpleFunctionDescriptorImpl]
+'createIntrinsifiedRangeValueOrNull' @ [37:9] ==> private fun ExpressionCodegen.createIntrinsifiedRangeValueOrNull(rangeCall: ResolvedCall<out CallableDescriptor>): RangeValue? defined in org.jetbrains.kotlin.codegen.range in file RangeValues.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [37:44] ==> value-parameter it: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.codegen.range.createRangeValueForExpression.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [37:49] ==> @InlineOnly public inline fun <T, R> RangeValue.let(block: (RangeValue) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [37:49] ==> @InlineOnly public inline fun <T, R> RangeValue.let(block: (RangeValue) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> RangeValue
-    <R> -> Nothing?
+    <R> -> Nothing
 
 'it' @ [38:20] ==> value-parameter it: RangeValue defined in org.jetbrains.kotlin.codegen.range.createRangeValueForExpression.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -53,19 +53,19 @@ Inferred types:
 
 'ArrayRangeValue' @ [47:13] ==> public constructor ArrayRangeValue() defined in org.jetbrains.kotlin.codegen.range.ArrayRangeValue[ClassConstructorDescriptorImpl]
 
-'isPrimitiveRange' @ [48:9] ==> public fun isPrimitiveRange(rangeType: KotlinType): Boolean defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'isPrimitiveRange' @ [48:9] ==> public fun isPrimitiveRange(rangeType: KotlinType): Boolean defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeType' @ [48:26] ==> val rangeType: KotlinType defined in org.jetbrains.kotlin.codegen.range.createRangeValueForExpression[LocalVariableDescriptor]
 
 'PrimitiveRangeRangeValue' @ [49:13] ==> public constructor PrimitiveRangeRangeValue() defined in org.jetbrains.kotlin.codegen.range.PrimitiveRangeRangeValue[ClassConstructorDescriptorImpl]
 
-'isPrimitiveProgression' @ [50:9] ==> public fun isPrimitiveProgression(rangeType: KotlinType): Boolean defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'isPrimitiveProgression' @ [50:9] ==> public fun isPrimitiveProgression(rangeType: KotlinType): Boolean defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeType' @ [50:32] ==> val rangeType: KotlinType defined in org.jetbrains.kotlin.codegen.range.createRangeValueForExpression[LocalVariableDescriptor]
 
 'PrimitiveProgressionRangeValue' @ [51:13] ==> public constructor PrimitiveProgressionRangeValue() defined in org.jetbrains.kotlin.codegen.range.PrimitiveProgressionRangeValue[ClassConstructorDescriptorImpl]
 
-'isSubtypeOfCharSequence' @ [52:9] ==> private fun isSubtypeOfCharSequence(type: KotlinType, builtIns: KotlinBuiltIns): Boolean defined in org.jetbrains.kotlin.codegen.range[SimpleFunctionDescriptorImpl]
+'isSubtypeOfCharSequence' @ [52:9] ==> private fun isSubtypeOfCharSequence(type: KotlinType, builtIns: KotlinBuiltIns): Boolean defined in org.jetbrains.kotlin.codegen.range in file RangeValues.kt[SimpleFunctionDescriptorImpl]
 
 'rangeType' @ [52:33] ==> val rangeType: KotlinType defined in org.jetbrains.kotlin.codegen.range.createRangeValueForExpression[LocalVariableDescriptor]
 
@@ -166,7 +166,7 @@ Inferred types:
 
 'resultingDescriptor' @ [87:33] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'when {
         isPrimitiveNumberRangeTo(rangeCallee) ->
@@ -189,7 +189,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> RangeValue?
 
-'isPrimitiveNumberRangeTo' @ [90:9] ==> public fun isPrimitiveNumberRangeTo(rangeTo: CallableDescriptor): Boolean defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'isPrimitiveNumberRangeTo' @ [90:9] ==> public fun isPrimitiveNumberRangeTo(rangeTo: CallableDescriptor): Boolean defined in org.jetbrains.kotlin.codegen in file RangeCodegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'rangeCallee' @ [90:34] ==> val rangeCallee: CallableDescriptor defined in org.jetbrains.kotlin.codegen.range.createIntrinsifiedRangeValueOrNull[LocalVariableDescriptor]
 

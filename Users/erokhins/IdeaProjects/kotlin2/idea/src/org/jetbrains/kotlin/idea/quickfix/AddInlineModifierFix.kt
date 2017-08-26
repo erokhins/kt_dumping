@@ -57,7 +57,7 @@ Inferred types:
 
 'casted' @ [45:29] ==> val casted: DiagnosticWithParameters1<(KtElement..KtElement?), (KtElement..KtElement?)> defined in org.jetbrains.kotlin.idea.quickfix.AddInlineModifierFix.CrossInlineFactory.createAction[LocalVariableDescriptor]
 
-'a' @ [45:36] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtElement..KtElement?), (KtElement..KtElement?)>.a: (KtElement..KtElement?)[MyPropertyDescriptor]
+'a' @ [45:36] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(KtElement..KtElement?), (KtElement..KtElement?)>.a: KtElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
@@ -86,7 +86,7 @@ Inferred types:
 
 'casted' @ [54:29] ==> val casted: DiagnosticWithParameters2<(KtElement..KtElement?), (KtExpression..KtExpression?), (DeclarationDescriptor..DeclarationDescriptor?)> defined in org.jetbrains.kotlin.idea.quickfix.AddInlineModifierFix.NoInlineFactory.createAction[LocalVariableDescriptor]
 
-'a' @ [54:36] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KtExpression..KtExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>.a: (KtExpression..KtExpression?)[MyPropertyDescriptor]
+'a' @ [54:36] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtElement..KtElement?), (KtExpression..KtExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>.a: KtExpression[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)

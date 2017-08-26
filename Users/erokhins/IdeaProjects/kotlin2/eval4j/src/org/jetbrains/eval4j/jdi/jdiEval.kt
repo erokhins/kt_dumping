@@ -2,7 +2,7 @@
 
 'Class' @ [29:34] ==> private constructor Class<T : (Any..Any?)>(p0: (ClassLoader..ClassLoader?)) defined in java.lang.Class[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@c85ef7d
 
 'java' @ [29:47] ==> public val <T> KClass<Class<*>>.java: Class<Class<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -272,7 +272,7 @@ Inferred types:
 
 'asValue' @ [84:83] ==> public fun ObjectReference?.asValue(): ObjectValue defined in org.jetbrains.eval4j.jdi in file jdiValues.kt[SimpleFunctionDescriptorImpl]
 
-'boolean' @ [85:29] ==> public fun boolean(v: Boolean): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'boolean' @ [85:29] ==> public fun boolean(v: Boolean): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'classLoader' @ [86:29] ==> value-parameter classLoader: ClassLoaderReference? defined in org.jetbrains.eval4j.jdi.JDIEval.loadClass[ValueParameterDescriptorImpl]
 
@@ -414,7 +414,7 @@ Inferred types:
 
 'arr' @ [136:33] ==> val arr: Value defined in org.jetbrains.eval4j.jdi.JDIEval.fillArray[LocalVariableDescriptor]
 
-'int' @ [136:38] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [136:38] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'i' @ [136:42] ==> val i: Int defined in org.jetbrains.eval4j.jdi.JDIEval.fillArray[LocalVariableDescriptor]
 
@@ -448,7 +448,7 @@ Inferred types:
 Inferred types:
     <T : Any> -> ObjectReference
 
-'int' @ [149:16] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j[SimpleFunctionDescriptorImpl]
+'int' @ [149:16] ==> public fun int(v: Int): IntValue defined in org.jetbrains.eval4j in file values.kt[SimpleFunctionDescriptorImpl]
 
 'array' @ [149:20] ==> value-parameter array: Value defined in org.jetbrains.eval4j.jdi.JDIEval.getArrayLength[ValueParameterDescriptorImpl]
 
@@ -1598,9 +1598,9 @@ Inferred types:
             }
             else {
                 throwBrokenCodeException(IllegalStateException(lazyMessage(), this.cause))
-            }' @ [455:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: T, elseBranch: T): T[SimpleFunctionDescriptorImpl]
+            }' @ [455:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Nothing, elseBranch: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> T
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Nothing
 
 'cause' @ [455:17] ==> public final val cause: Exception /* = Exception */ defined in org.jetbrains.eval4j.jdi.JdiOperationResult.Fail[PropertyDescriptorImpl]
 

@@ -51,7 +51,7 @@ Inferred types:
 
 'strings' @ [35:121] ==> val strings: Array<String> defined in org.jetbrains.kotlin.inline.inlineFunctionsJvmNames[LocalVariableDescriptor]
 
-'inlineFunctionsJvmNames' @ [36:13] ==> private fun inlineFunctionsJvmNames(functions: List<ProtoBuf.Function>, nameResolver: NameResolver, protoTypeTable: ProtoBuf.TypeTable): Set<String> defined in org.jetbrains.kotlin.inline[SimpleFunctionDescriptorImpl]
+'inlineFunctionsJvmNames' @ [36:13] ==> private fun inlineFunctionsJvmNames(functions: List<ProtoBuf.Function>, nameResolver: NameResolver, protoTypeTable: ProtoBuf.TypeTable): Set<String> defined in org.jetbrains.kotlin.inline in file inlineUtil.kt[SimpleFunctionDescriptorImpl]
 
 'classProto' @ [36:37] ==> val classProto: ProtoBuf.Class defined in org.jetbrains.kotlin.inline.inlineFunctionsJvmNames[LocalVariableDescriptor]
 
@@ -63,7 +63,7 @@ Inferred types:
 
 'typeTable' @ [36:87] ==> public final val ProtoBuf.Class.typeTable: (ProtoBuf.TypeTable..ProtoBuf.TypeTable?)[MyPropertyDescriptor]
 
-'inlineAccessorsJvmNames' @ [37:13] ==> private fun inlineAccessorsJvmNames(properties: List<ProtoBuf.Property>, nameResolver: NameResolver): Set<String> defined in org.jetbrains.kotlin.inline[SimpleFunctionDescriptorImpl]
+'inlineAccessorsJvmNames' @ [37:13] ==> private fun inlineAccessorsJvmNames(properties: List<ProtoBuf.Property>, nameResolver: NameResolver): Set<String> defined in org.jetbrains.kotlin.inline in file inlineUtil.kt[SimpleFunctionDescriptorImpl]
 
 'classProto' @ [37:37] ==> val classProto: ProtoBuf.Class defined in org.jetbrains.kotlin.inline.inlineFunctionsJvmNames[LocalVariableDescriptor]
 
@@ -89,7 +89,7 @@ Inferred types:
 
 'strings' @ [41:125] ==> val strings: Array<String> defined in org.jetbrains.kotlin.inline.inlineFunctionsJvmNames[LocalVariableDescriptor]
 
-'inlineFunctionsJvmNames' @ [42:13] ==> private fun inlineFunctionsJvmNames(functions: List<ProtoBuf.Function>, nameResolver: NameResolver, protoTypeTable: ProtoBuf.TypeTable): Set<String> defined in org.jetbrains.kotlin.inline[SimpleFunctionDescriptorImpl]
+'inlineFunctionsJvmNames' @ [42:13] ==> private fun inlineFunctionsJvmNames(functions: List<ProtoBuf.Function>, nameResolver: NameResolver, protoTypeTable: ProtoBuf.TypeTable): Set<String> defined in org.jetbrains.kotlin.inline in file inlineUtil.kt[SimpleFunctionDescriptorImpl]
 
 'packageProto' @ [42:37] ==> val packageProto: ProtoBuf.Package defined in org.jetbrains.kotlin.inline.inlineFunctionsJvmNames[LocalVariableDescriptor]
 
@@ -101,7 +101,7 @@ Inferred types:
 
 'typeTable' @ [42:91] ==> public final val ProtoBuf.Package.typeTable: (ProtoBuf.TypeTable..ProtoBuf.TypeTable?)[MyPropertyDescriptor]
 
-'inlineAccessorsJvmNames' @ [43:13] ==> private fun inlineAccessorsJvmNames(properties: List<ProtoBuf.Property>, nameResolver: NameResolver): Set<String> defined in org.jetbrains.kotlin.inline[SimpleFunctionDescriptorImpl]
+'inlineAccessorsJvmNames' @ [43:13] ==> private fun inlineAccessorsJvmNames(properties: List<ProtoBuf.Property>, nameResolver: NameResolver): Set<String> defined in org.jetbrains.kotlin.inline in file inlineUtil.kt[SimpleFunctionDescriptorImpl]
 
 'packageProto' @ [43:37] ==> val packageProto: ProtoBuf.Package defined in org.jetbrains.kotlin.inline.inlineFunctionsJvmNames[LocalVariableDescriptor]
 
@@ -198,7 +198,7 @@ Inferred types:
 
 'hasExtension' @ [65:19] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [65:44] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -206,7 +206,7 @@ Inferred types:
 
 'getExtension' @ [66:35] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [66:60] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 

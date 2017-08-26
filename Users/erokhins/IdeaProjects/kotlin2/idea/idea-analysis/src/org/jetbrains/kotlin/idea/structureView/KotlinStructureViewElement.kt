@@ -123,7 +123,7 @@ Inferred types:
 
 'element' @ [93:27] ==> public final val element: NavigatablePsiElement defined in org.jetbrains.kotlin.idea.structureView.KotlinStructureViewElement[PropertyDescriptorImpl]
 
-'getStructureDeclarations' @ [93:35] ==> public fun KtClassOrObject.getStructureDeclarations(): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.structureView[SimpleFunctionDescriptorImpl]
+'getStructureDeclarations' @ [93:35] ==> public fun KtClassOrObject.getStructureDeclarations(): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.structureView in file KotlinStructureViewElement.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [94:35] ==> public final val element: NavigatablePsiElement defined in org.jetbrains.kotlin.idea.structureView.KotlinStructureViewElement[PropertyDescriptorImpl]
 

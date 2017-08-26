@@ -9,6 +9,8 @@ Inferred types:
 
 'TestFile' @ [78:45] ==> public constructor TestFile(module: BaseDiagnosticsTest.TestModule?, fileName: String, textWithMarkers: String, directives: Map<String, String>) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.TestFile[ClassConstructorDescriptorImpl]
 
+'module' @ [78:55] ==> public final val module: BaseDiagnosticsTest.TestModule? defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.TestFile[PropertyDescriptorImpl]
+
 'ExceptionTracker' @ [82:23] ==> public constructor ExceptionTracker() defined in org.jetbrains.kotlin.storage.ExceptionTracker[DeserializedClassConstructorDescriptor]
 
 'if (files.any(TestFile::checkLazyLog)) {
@@ -31,6 +33,8 @@ Inferred types:
     <T> -> TestFile
 
 'TestFile' @ [84:23] ==> public constructor TestFile(module: BaseDiagnosticsTest.TestModule?, fileName: String, textWithMarkers: String, directives: Map<String, String>) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.TestFile[ClassConstructorDescriptorImpl]
+
+'checkLazyLog' @ [84:33] ==> public final val checkLazyLog: Boolean defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.TestFile[PropertyDescriptorImpl]
 
 'lazyOperationsLog' @ [85:13] ==> var lazyOperationsLog: LazyOperationsLog? defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.analyzeAndCheck[LocalVariableDescriptor]
 
@@ -263,8 +267,6 @@ Inferred types:
 
 'getMultiTargetPlatform' @ [160:52] ==> public fun ModuleDescriptor.getMultiTargetPlatform(): MultiTargetPlatform? defined in org.jetbrains.kotlin.resolve[DeserializedSimpleFunctionDescriptor]
 
-'MultiTargetPlatform' @ [160:80] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
-
 'Common' @ [160:100] ==> public object Common : MultiTargetPlatform defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'if (!isCommonModule) emptyList()
@@ -325,8 +327,6 @@ Inferred types:
 'getCapability' @ [166:49] ==> public open fun <T> getCapability(capability: ModuleDescriptor.Capability<MultiTargetPlatform>): MultiTargetPlatform? defined in org.jetbrains.kotlin.descriptors.impl.ModuleDescriptorImpl[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> MultiTargetPlatform
-
-'MultiTargetPlatform' @ [166:63] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'CAPABILITY' @ [166:83] ==> @field:JvmField public final val CAPABILITY: ModuleDescriptor.Capability<MultiTargetPlatform> defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform.Companion[DeserializedPropertyDescriptor]
 
@@ -464,21 +464,13 @@ Inferred types:
 
 'result' @ [222:16] ==> var result: LanguageVersionSettings? defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.loadLanguageVersionSettings[LocalVariableDescriptor]
 
-'BaseDiagnosticsTest' @ [222:26] ==> public companion object defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest[FakeCallableDescriptorForObject]
-
 'DiagnosticTestLanguageVersionSettings' @ [222:46] ==> public constructor DiagnosticTestLanguageVersionSettings(languageFeatures: Map<LanguageFeature, LanguageFeature.State>, apiVersion: ApiVersion, languageVersion: LanguageVersion) defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.DiagnosticTestLanguageVersionSettings[ClassConstructorDescriptorImpl]
 
-'BaseDiagnosticsTest' @ [223:17] ==> public companion object defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest[FakeCallableDescriptorForObject]
-
 'DEFAULT_DIAGNOSTIC_TESTS_FEATURES' @ [223:37] ==> public final val DEFAULT_DIAGNOSTIC_TESTS_FEATURES: Map<LanguageFeature, LanguageFeature.State> defined in org.jetbrains.kotlin.checkers.BaseDiagnosticsTest.Companion[PropertyDescriptorImpl]
-
-'LanguageVersionSettingsImpl' @ [224:17] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [224:45] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 
 'apiVersion' @ [224:53] ==> public open val apiVersion: ApiVersion defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[DeserializedPropertyDescriptor]
-
-'LanguageVersionSettingsImpl' @ [225:17] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [225:45] ==> @field:JvmField public final val DEFAULT: LanguageVersionSettingsImpl defined in org.jetbrains.kotlin.config.LanguageVersionSettingsImpl.Companion[DeserializedPropertyDescriptor]
 
@@ -590,6 +582,8 @@ Inferred types:
 
 'environment' @ [285:21] ==> protected final lateinit var environment: KotlinCoreEnvironment defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest[PropertyDescriptorImpl]
 
+'createPackagePartProvider' @ [285:34] ==> public final fun createPackagePartProvider(scope: GlobalSearchScope): JvmPackagePartProvider defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[DeserializedSimpleFunctionDescriptor]
+
 'moduleContext' @ [289:32] ==> value-parameter moduleContext: ModuleContext defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.analyzeModuleContents[ValueParameterDescriptorImpl]
 
 'module' @ [289:46] ==> public abstract val module: ModuleDescriptor defined in org.jetbrains.kotlin.context.ModuleContext[DeserializedPropertyDescriptor]
@@ -619,8 +613,6 @@ Inferred types:
 
 'platform' @ [292:13] ==> val platform: MultiTargetPlatform? defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.analyzeModuleContents[LocalVariableDescriptor]
 
-'MultiTargetPlatform' @ [292:25] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
-
 'Common' @ [292:45] ==> public object Common : MultiTargetPlatform defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'DefaultAnalyzerFacade' @ [293:20] ==> public object DefaultAnalyzerFacade : AnalyzerFacade defined in org.jetbrains.kotlin.analyzer.common[FakeCallableDescriptorForObject]
@@ -643,8 +635,6 @@ Inferred types:
 'MultiTargetPlatform' @ [296:29] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'CAPABILITY' @ [296:49] ==> @field:JvmField public final val CAPABILITY: ModuleDescriptor.Capability<MultiTargetPlatform> defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform.Companion[DeserializedPropertyDescriptor]
-
-'MultiTargetPlatform' @ [296:63] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'Common' @ [296:83] ==> public object Common : MultiTargetPlatform defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
@@ -695,8 +685,6 @@ Inferred types:
 'moduleContentScope' @ [317:55] ==> val moduleContentScope: GlobalSearchScope defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.analyzeModuleContents[LocalVariableDescriptor]
 
 'moduleClassResolver' @ [318:17] ==> val moduleClassResolver: SingleModuleClassResolver defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.analyzeModuleContents[LocalVariableDescriptor]
-
-'JvmTarget' @ [319:17] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
 'JVM_1_6' @ [319:27] ==> enum entry JVM_1_6 defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -782,11 +770,7 @@ Inferred types:
 Inferred types:
     <T> -> MultiTargetPlatform
 
-'MultiTargetPlatform' @ [345:42] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
-
 'CAPABILITY' @ [345:62] ==> @field:JvmField public final val CAPABILITY: ModuleDescriptor.Capability<MultiTargetPlatform> defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform.Companion[DeserializedPropertyDescriptor]
-
-'MultiTargetPlatform' @ [345:77] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'Common' @ [345:97] ==> public object Common : MultiTargetPlatform defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
@@ -978,8 +962,6 @@ Inferred types:
 'packageText' @ [398:21] ==> val packageText: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.validateAndCompareDescriptorWithFile[LocalVariableDescriptor]
 
 'append' @ [398:33] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
-
-'String' @ [398:40] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
 'format' @ [398:47] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -1226,11 +1208,7 @@ Inferred types:
 
 'nameSuffix' @ [490:26] ==> val nameSuffix: String defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.createModule[LocalVariableDescriptor]
 
-'MultiTargetPlatform' @ [490:50] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
-
 'Common' @ [490:70] ==> public object Common : MultiTargetPlatform defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
-
-'MultiTargetPlatform' @ [490:82] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'Specific' @ [490:102] ==> public constructor Specific(platform: String) defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform.Specific[DeserializedClassConstructorDescriptor]
 
@@ -1286,8 +1264,8 @@ Inferred types:
 
 'getSliceContents' @ [502:51] ==> @NotNull public abstract fun <K : (Any..Any?), V : (Any..Any?)> getSliceContents(@NotNull p0: ReadOnlySlice<(Call..Call?), (ResolvedCall<*>..ResolvedCall<*>?)>): ImmutableMap<(Call..Call?), (ResolvedCall<*>..ResolvedCall<*>?)> defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Call
-    <V : (Any..Any?)> -> ResolvedCall<*>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.Call..org.jetbrains.kotlin.psi.Call?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)
 
 'RESOLVED_CALL' @ [502:83] ==> public final val RESOLVED_CALL: (WritableSlice<(Call..Call?), (ResolvedCall<*>..ResolvedCall<*>?)>..WritableSlice<(Call..Call?), (ResolvedCall<*>..ResolvedCall<*>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -1333,7 +1311,7 @@ Inferred types:
 
 'isCompleted' @ [510:69] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.isCompleted: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'checkResolvedCallsInDiagnostics' @ [514:9] ==> private final fun checkResolvedCallsInDiagnostics(bindingContext: BindingContext): Unit defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest[SimpleFunctionDescriptorImpl]
 
@@ -1355,9 +1333,9 @@ Inferred types:
 
 'ITERATOR_AMBIGUITY' @ [520:44] ==> public final val ITERATOR_AMBIGUITY: (DiagnosticFactory1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
-'setOf' @ [522:48] ==> public fun <T> setOf(vararg elements: (DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)): Set<(DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'setOf' @ [522:48] ==> public fun <T> setOf(vararg elements: (DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)): Set<(DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory2<(org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?), out (kotlin.Comparable<{Name & String}>..kotlin.Comparable<{Name & String}>?), (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>?)>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory2<(org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?), out (kotlin.Comparable<{Name & String}>..kotlin.Comparable<{Name & String}>?), (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>?)>?)
+    <T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory2<(org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?), out (kotlin.Comparable<*>..kotlin.Comparable<*>?), (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>?)>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory2<(org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?), out (kotlin.Comparable<*>..kotlin.Comparable<*>?), (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>?)>?)
 
 'COMPONENT_FUNCTION_AMBIGUITY' @ [523:17] ==> public final val COMPONENT_FUNCTION_AMBIGUITY: (DiagnosticFactory2<(KtExpression..KtExpression?), (Name..Name?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory2<(KtExpression..KtExpression?), (Name..Name?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?) defined in org.jetbrains.kotlin.diagnostics.Errors[JavaPropertyDescriptor]
 
@@ -1396,13 +1374,13 @@ Inferred types:
 
 'cast' @ [529:55] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull p1: (MutableCollection<out (DiagnosticFactory<out (DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)>?)>..Collection<(DiagnosticFactory<out (DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)>?)>)): DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> DiagnosticWithParameters1<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>?)>
+    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters1<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>?)>..org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters1<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?), (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>?)>?)
 
 'diagnostic' @ [529:60] ==> val diagnostic: Diagnostic defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.checkResolvedCallsInDiagnostics[LocalVariableDescriptor]
 
 'diagnosticsStoringResolvedCalls1' @ [529:72] ==> val diagnosticsStoringResolvedCalls1: Set<(DiagnosticFactory1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)> defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.checkResolvedCallsInDiagnostics[LocalVariableDescriptor]
 
-'a' @ [529:106] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>.a: (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)[MyPropertyDescriptor]
+'a' @ [529:106] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?)> DiagnosticWithParameters1<(PsiElement..PsiElement?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>.a: (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>)[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
     <A : (Any..Any?)> -> (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>?)
@@ -1411,25 +1389,25 @@ Inferred types:
 Inferred types:
     <@OnlyInputTypes T> -> (org.jetbrains.kotlin.diagnostics.DiagnosticFactory<out (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)>..org.jetbrains.kotlin.diagnostics.DiagnosticFactory<out (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)>?)
 
-'diagnosticsStoringResolvedCalls2' @ [531:20] ==> val diagnosticsStoringResolvedCalls2: Set<(DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)> defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.checkResolvedCallsInDiagnostics[LocalVariableDescriptor]
+'diagnosticsStoringResolvedCalls2' @ [531:20] ==> val diagnosticsStoringResolvedCalls2: Set<(DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)> defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.checkResolvedCallsInDiagnostics[LocalVariableDescriptor]
 
 'assertResolvedCallsAreCompleted' @ [531:56] ==> private final fun assertResolvedCallsAreCompleted(diagnostic: Diagnostic, resolvedCalls: Collection<ResolvedCall<*>>): Unit defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest[SimpleFunctionDescriptorImpl]
 
 'diagnostic' @ [532:25] ==> val diagnostic: Diagnostic defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.checkResolvedCallsInDiagnostics[LocalVariableDescriptor]
 
-'cast' @ [532:55] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull p1: (MutableCollection<out (DiagnosticFactory<out (DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)>?)>..Collection<(DiagnosticFactory<out (DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)>?)>)): DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
+'cast' @ [532:55] ==> @NotNull public open fun <D : (Diagnostic..Diagnostic?)> cast(@NotNull p0: Diagnostic, @NotNull p1: (MutableCollection<out (DiagnosticFactory<out (DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>?)>..DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>?)>..DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>?)>?)>?)>..Collection<(DiagnosticFactory<out (DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>?)>..DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>?)>?)>..DiagnosticFactory<out (DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>?)>..DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>?)>?)>?)>)): DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>?)> defined in org.jetbrains.kotlin.diagnostics.DiagnosticFactory[JavaMethodDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> DiagnosticWithParameters2<(org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?), out (kotlin.Comparable<{Name & String}>..kotlin.Comparable<{Name & String}>?), (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>?)>
+    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters2<(org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?), out (kotlin.Comparable<*>..kotlin.Comparable<*>?), (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?)>?)>..org.jetbrains.kotlin.diagnostics.DiagnosticWithParameters2<(org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?), out (kotlin.Comparable<*>..kotlin.Comparable<*>?), (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?)>?)>?)
 
 'diagnostic' @ [532:60] ==> val diagnostic: Diagnostic defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.checkResolvedCallsInDiagnostics[LocalVariableDescriptor]
 
-'diagnosticsStoringResolvedCalls2' @ [532:72] ==> val diagnosticsStoringResolvedCalls2: Set<(DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)> defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.checkResolvedCallsInDiagnostics[LocalVariableDescriptor]
+'diagnosticsStoringResolvedCalls2' @ [532:72] ==> val diagnosticsStoringResolvedCalls2: Set<(DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>..DiagnosticFactory2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>?)> defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.checkResolvedCallsInDiagnostics[LocalVariableDescriptor]
 
-'b' @ [532:106] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<{Name & String}>..Comparable<{Name & String}>?), (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)>.b: (MutableCollection<out (ResolvedCall<*>..ResolvedCall<*>?)>..Collection<(ResolvedCall<*>..ResolvedCall<*>?)>?)[MyPropertyDescriptor]
+'b' @ [532:106] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtExpression..KtExpression?), out (Comparable<*>..Comparable<*>?), (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>?)>.b: (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>)[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
-    <A : (Any..Any?)> -> (kotlin.Comparable<{Name & String}>..kotlin.Comparable<{Name & String}>?)
-    <B : (Any..Any?)> -> (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<*>?)>?)
+    <A : (Any..Any?)> -> Captured(out (kotlin.Comparable<*>..kotlin.Comparable<*>?))
+    <B : (Any..Any?)> -> (kotlin.collections.MutableCollection<out (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)>?)>?)
 
 'diagnostic' @ [539:23] ==> value-parameter diagnostic: Diagnostic defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.assertResolvedCallsAreCompleted[ValueParameterDescriptorImpl]
 
@@ -1455,7 +1433,7 @@ Inferred types:
 
 'name' @ [543:67] ==> public final var <D : (Diagnostic..Diagnostic?)> DiagnosticFactory<out (Diagnostic..Diagnostic?)>.name: String[MyPropertyDescriptor]
 Inferred types:
-    <D : (Diagnostic..Diagnostic?)> -> (org.jetbrains.kotlin.diagnostics.Diagnostic..org.jetbrains.kotlin.diagnostics.Diagnostic?)
+    <D : (Diagnostic..Diagnostic?)> -> Captured(*)
 
 'element' @ [543:81] ==> val element: PsiElement defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.assertResolvedCallsAreCompleted[LocalVariableDescriptor]
 
@@ -1473,7 +1451,7 @@ Inferred types:
 
 'isCompleted' @ [544:71] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> MutableResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.isCompleted: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 's' @ [548:63] ==> value-parameter s: String defined in org.jetbrains.kotlin.checkers.AbstractDiagnosticsTest.Companion.HASH_SANITIZER.<no name provided>[ValueParameterDescriptorImpl]
 

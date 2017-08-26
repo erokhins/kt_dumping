@@ -44,9 +44,9 @@ Inferred types:
 
 'getTestName' @ [45:35] ==> @NotNull protected/*protected and package*/ open fun getTestName(p0: Boolean): String defined in org.jetbrains.kotlin.idea.caches.resolve.Java9MultiModuleHighlightingTest[JavaMethodDescriptor]
 
-'listOf' @ [46:32] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [46:32] ==> public fun <T> listOf(vararg elements: (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> (kotlin.String..kotlin.String?)
 
 'jdk9Home' @ [46:52] ==> val jdk9Home: File defined in org.jetbrains.kotlin.idea.caches.resolve.Java9MultiModuleHighlightingTest.testSimpleLibraryExportsPackage.<anonymous>[LocalVariableDescriptor]
 

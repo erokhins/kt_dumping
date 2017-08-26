@@ -72,9 +72,9 @@ Inferred types:
 
 'java' @ [60:35] ==> public val <T> KClass<out PredefinedPackageFragmentDescriptor.PredefinedScope>.java: Class<out PredefinedPackageFragmentDescriptor.PredefinedScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> PredefinedScope
+    <T> -> Captured(out PredefinedScope)
 
 'simpleName' @ [60:40] ==> public final val <T : (Any..Any?)> Class<out PredefinedPackageFragmentDescriptor.PredefinedScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PredefinedScope
+    <T : (Any..Any?)> -> Captured(out PredefinedScope)
 

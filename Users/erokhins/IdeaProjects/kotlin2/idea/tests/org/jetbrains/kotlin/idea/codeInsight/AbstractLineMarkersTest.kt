@@ -168,15 +168,13 @@ Inferred types:
 
 'lineMarkerTooltip' @ [109:52] ==> public final val <T : (PsiElement..PsiElement?)> LineMarkerInfo<out (PsiElement..PsiElement?)>.lineMarkerTooltip: String?[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'startsWith' @ [109:71] ==> public fun String.startsWith(prefix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'description' @ [109:82] ==> val description: String defined in org.jetbrains.kotlin.idea.codeInsight.AbstractLineMarkersTest.assertNavigationElements[LocalVariableDescriptor]
 
 'assertNotNull' @ [111:22] ==> public open fun assertNotNull(p0: (String..String?), p1: (Any..Any?)): Unit defined in junit.framework.TestCase[JavaMethodDescriptor]
-
-'String' @ [112:21] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
 'format' @ [112:28] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -188,7 +186,7 @@ Inferred types:
 
 'navigationHandler' @ [115:42] ==> public final val <T : (PsiElement..PsiElement?)> LineMarkerInfo<out (PsiElement..PsiElement?)>.navigationHandler: GutterIconNavigationHandler<out (PsiElement..PsiElement?)>?[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'if (handler is TestableLineMarkerNavigator) {
                 val navigateElements = handler.getTargetsPopupDescriptor(navigateMarker.element)?.targets?.sortedBy { it.renderAsGotoImplementation() }
@@ -212,7 +210,7 @@ Inferred types:
 
 'element' @ [117:89] ==> public final val <T : (PsiElement..PsiElement?)> LineMarkerInfo<out (PsiElement..PsiElement?)>.element: PsiElement?[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <T : (PsiElement..PsiElement?)> -> Captured(*)
 
 'targets' @ [117:99] ==> public final val targets: Collection<NavigatablePsiElement> defined in org.jetbrains.kotlin.idea.highlighter.markers.NavigationPopupDescriptor[DeserializedPropertyDescriptor]
 
@@ -261,8 +259,6 @@ Inferred types:
 
 'assertTrue' @ [139:22] ==> public open fun assertTrue(p0: (String..String?), p1: Boolean): Unit defined in junit.framework.TestCase[JavaMethodDescriptor]
 
-'String' @ [139:33] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
-
 'format' @ [139:40] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'LINE_MARKER_PREFIX' @ [139:92] ==> private final val LINE_MARKER_PREFIX: String defined in org.jetbrains.kotlin.idea.codeInsight.AbstractLineMarkersTest.Companion[PropertyDescriptorImpl]
@@ -300,8 +296,6 @@ Inferred types:
 'firstLineEnd' @ [150:70] ==> val firstLineEnd: Int defined in org.jetbrains.kotlin.idea.codeInsight.AbstractLineMarkersTest.Companion.getExpectedNavigationText[LocalVariableDescriptor]
 
 'assertTrue' @ [152:22] ==> public open fun assertTrue(p0: (String..String?), p1: Boolean): Unit defined in junit.framework.TestCase[JavaMethodDescriptor]
-
-'String' @ [153:21] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
 'format' @ [153:28] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 

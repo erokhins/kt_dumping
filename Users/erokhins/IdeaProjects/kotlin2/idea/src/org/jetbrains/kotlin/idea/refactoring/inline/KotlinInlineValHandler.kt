@@ -127,7 +127,7 @@ Inferred types:
 Inferred types:
     <T> -> KtExpression
 
-'highlightElements' @ [85:9] ==> public fun highlightElements(project: Project, editor: Editor?, elements: List<PsiElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.inline[SimpleFunctionDescriptorImpl]
+'highlightElements' @ [85:9] ==> public fun highlightElements(project: Project, editor: Editor?, elements: List<PsiElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.inline in file inlineUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [85:27] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineValHandler.inlineElement[ValueParameterDescriptorImpl]
 
@@ -305,7 +305,7 @@ Inferred types:
 
 'project' @ [113:13] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineValHandler.inlineElement[ValueParameterDescriptorImpl]
 
-'checkConflictsInteractively' @ [113:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [113:21] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflictsCopy' @ [113:49] ==> val conflictsCopy: MultiMap<(PsiElement..PsiElement?), (String..String?)> defined in org.jetbrains.kotlin.idea.refactoring.inline.KotlinInlineValHandler.inlineElement[LocalVariableDescriptor]
 

@@ -8,13 +8,13 @@
 
 'resultingDescriptor' @ [29:99] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCallForIn' @ [32:13] ==> value-parameter resolvedCallForIn: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.codegen.range.PrimitiveNumberRangeIntrinsicRangeValue.isIntrinsicInCall[ValueParameterDescriptorImpl]
 
 'resultingDescriptor' @ [32:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'let' @ [32:51] ==> @InlineOnly public inline fun <T, R> CallableDescriptor.let(block: (CallableDescriptor) -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -33,7 +33,7 @@ Inferred types:
 
 'it' @ [35:72] ==> value-parameter it: CallableDescriptor defined in org.jetbrains.kotlin.codegen.range.PrimitiveNumberRangeIntrinsicRangeValue.isIntrinsicInCall.<anonymous>[ValueParameterDescriptorImpl]
 
-'getComparisonGeneratorForRangeContainsCall' @ [43:35] ==> public fun getComparisonGeneratorForRangeContainsCall(codegen: ExpressionCodegen, call: ResolvedCall<out CallableDescriptor>): ComparisonGenerator? defined in org.jetbrains.kotlin.codegen.range.comparison[SimpleFunctionDescriptorImpl]
+'getComparisonGeneratorForRangeContainsCall' @ [43:35] ==> public fun getComparisonGeneratorForRangeContainsCall(codegen: ExpressionCodegen, call: ResolvedCall<out CallableDescriptor>): ComparisonGenerator? defined in org.jetbrains.kotlin.codegen.range.comparison in file ComparisonGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'codegen' @ [43:78] ==> value-parameter codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.range.PrimitiveNumberRangeIntrinsicRangeValue.createIntrinsicInExpressionGenerator[ValueParameterDescriptorImpl]
 

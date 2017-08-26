@@ -10,11 +10,11 @@ Inferred types:
 
 'CachedValueImpl' @ [35:25] ==> public constructor CachedValueImpl<T : (Any..Any?)>(@NotNull p0: CachedValueProvider<(DiagnosticsWithSuppression..DiagnosticsWithSuppression?)>) defined in com.intellij.util.CachedValueImpl[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DiagnosticsWithSuppression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.diagnostics.DiagnosticsWithSuppression..org.jetbrains.kotlin.resolve.diagnostics.DiagnosticsWithSuppression?)
 
-'CachedValueProvider' @ [35:41] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(DiagnosticsWithSuppression..DiagnosticsWithSuppression?)>?): CachedValueProvider<DiagnosticsWithSuppression> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
+'CachedValueProvider' @ [35:41] ==> @FunctionalInterface public fun <T : (Any..Any?)> CachedValueProvider(function: () -> CachedValueProvider.Result<(DiagnosticsWithSuppression..DiagnosticsWithSuppression?)>?): CachedValueProvider<(DiagnosticsWithSuppression..DiagnosticsWithSuppression?)> defined in com.intellij.psi.util[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> DiagnosticsWithSuppression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.diagnostics.DiagnosticsWithSuppression..org.jetbrains.kotlin.resolve.diagnostics.DiagnosticsWithSuppression?)
 
 'delegateDiagnostics' @ [36:30] ==> private final val delegateDiagnostics: Diagnostics defined in org.jetbrains.kotlin.resolve.diagnostics.MutableDiagnosticsWithSuppression[PropertyDescriptorImpl]
 
@@ -36,11 +36,11 @@ Inferred types:
 
 'modificationTracker' @ [37:96] ==> public open val modificationTracker: CompositeModificationTracker defined in org.jetbrains.kotlin.resolve.diagnostics.MutableDiagnosticsWithSuppression[PropertyDescriptorImpl]
 
-'cache' @ [40:62] ==> private final val cache: CachedValueImpl<DiagnosticsWithSuppression> defined in org.jetbrains.kotlin.resolve.diagnostics.MutableDiagnosticsWithSuppression[PropertyDescriptorImpl]
+'cache' @ [40:62] ==> private final val cache: CachedValueImpl<(DiagnosticsWithSuppression..DiagnosticsWithSuppression?)> defined in org.jetbrains.kotlin.resolve.diagnostics.MutableDiagnosticsWithSuppression[PropertyDescriptorImpl]
 
-'value' @ [40:68] ==> public final val <T : (Any..Any?)> CachedValueImpl<DiagnosticsWithSuppression>.value: (DiagnosticsWithSuppression..DiagnosticsWithSuppression?)[MyPropertyDescriptor]
+'value' @ [40:68] ==> public final val <T : (Any..Any?)> CachedValueImpl<(DiagnosticsWithSuppression..DiagnosticsWithSuppression?)>.value: (DiagnosticsWithSuppression..DiagnosticsWithSuppression?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DiagnosticsWithSuppression
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.diagnostics.DiagnosticsWithSuppression..org.jetbrains.kotlin.resolve.diagnostics.DiagnosticsWithSuppression?)
 
 'CompositeModificationTracker' @ [42:40] ==> public constructor CompositeModificationTracker(@NotNull p0: ModificationTracker) defined in com.intellij.openapi.util.CompositeModificationTracker[JavaClassConstructorDescriptor]
 

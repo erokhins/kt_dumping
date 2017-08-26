@@ -10,11 +10,13 @@
 Inferred types:
     <T> -> String
 
-'testWithAutoCompleteSetting' @ [38:5] ==> private fun testWithAutoCompleteSetting(fileText: String, doTest: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.completion.test[SimpleFunctionDescriptorImpl]
+'testWithAutoCompleteSetting' @ [38:5] ==> private fun testWithAutoCompleteSetting(fileText: String, doTest: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.completion.test in file CompletionTestUtil.kt[SimpleFunctionDescriptorImpl]
 
 'fileText' @ [38:33] ==> value-parameter fileText: String defined in org.jetbrains.kotlin.idea.completion.test.testCompletion[ValueParameterDescriptorImpl]
 
-'ExpectedCompletionUtils' @ [39:30] ==> public object ExpectedCompletionUtils defined in org.jetbrains.kotlin.idea.completion.test in file ExpectedCompletionUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [39:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CompletionType?, right: CompletionType): CompletionType[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CompletionType
 
 'getCompletionType' @ [39:54] ==> public final fun getCompletionType(fileText: String): CompletionType? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 
@@ -22,7 +24,9 @@ Inferred types:
 
 'defaultCompletionType' @ [39:85] ==> value-parameter defaultCompletionType: CompletionType = ... defined in org.jetbrains.kotlin.idea.completion.test.testCompletion[ValueParameterDescriptorImpl]
 
-'ExpectedCompletionUtils' @ [40:31] ==> public object ExpectedCompletionUtils defined in org.jetbrains.kotlin.idea.completion.test in file ExpectedCompletionUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [40:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Int?, right: Int): Int[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Int
 
 'getInvocationCount' @ [40:55] ==> public final fun getInvocationCount(fileText: String): Int? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 
@@ -100,8 +104,6 @@ Inferred types:
 
 'items' @ [51:71] ==> val items: Array<LookupElement> defined in org.jetbrains.kotlin.idea.completion.test.testCompletion.<anonymous>[LocalVariableDescriptor]
 
-'ExpectedCompletionUtils' @ [51:78] ==> public object ExpectedCompletionUtils defined in org.jetbrains.kotlin.idea.completion.test in file ExpectedCompletionUtils.kt[FakeCallableDescriptorForObject]
-
 'isWithOrder' @ [51:102] ==> public final fun isWithOrder(fileText: String): Boolean defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 
 'fileText' @ [51:114] ==> value-parameter fileText: String defined in org.jetbrains.kotlin.idea.completion.test.testCompletion[ValueParameterDescriptorImpl]
@@ -122,8 +124,6 @@ Inferred types:
 
 'listToString' @ [55:57] ==> public final fun listToString(items: Collection<ExpectedCompletionUtils.CompletionProposal>): String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 
-'ExpectedCompletionUtils' @ [55:70] ==> public object ExpectedCompletionUtils defined in org.jetbrains.kotlin.idea.completion.test in file ExpectedCompletionUtils.kt[FakeCallableDescriptorForObject]
-
 'getItemsInformation' @ [55:94] ==> public final fun getItemsInformation(items: Array<LookupElement>): List<ExpectedCompletionUtils.CompletionProposal> defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 
 'items' @ [55:114] ==> val items: Array<LookupElement> defined in org.jetbrains.kotlin.idea.completion.test.testCompletion.<anonymous>[LocalVariableDescriptor]
@@ -138,7 +138,9 @@ Inferred types:
 
 'size' @ [56:108] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
-'ExpectedCompletionUtils' @ [62:24] ==> public object ExpectedCompletionUtils defined in org.jetbrains.kotlin.idea.completion.test in file ExpectedCompletionUtils.kt[FakeCallableDescriptorForObject]
+'?:' @ [62:24] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Boolean?, right: Boolean): Boolean[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Boolean
 
 'getAutocompleteSetting' @ [62:48] ==> public final fun getAutocompleteSetting(fileText: String): Boolean? defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 

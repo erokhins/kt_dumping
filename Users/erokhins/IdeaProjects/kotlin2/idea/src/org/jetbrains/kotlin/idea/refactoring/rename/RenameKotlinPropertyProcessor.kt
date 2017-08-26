@@ -232,8 +232,8 @@ Inferred types:
 
 'dfs' @ [133:13] ==> public open fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull p0: (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>), @NotNull p1: DFS.Neighbors<(ClassDescriptor..ClassDescriptor?)>, @NotNull p2: DFS.NodeHandler<(ClassDescriptor..ClassDescriptor?), (Unit..Unit?)>): (Unit..Unit?) defined in org.jetbrains.kotlin.utils.DFS[JavaMethodDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> ClassDescriptor
-    <R : (Any..Any?)> -> Unit
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <R : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'listOf' @ [134:17] ==> public fun <T> listOf(element: ClassDescriptor): List<ClassDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -314,8 +314,8 @@ Inferred types:
 
 'dfs' @ [162:17] ==> public open fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull p0: (MutableCollection<(PsiClass..PsiClass?)>..Collection<(PsiClass..PsiClass?)>), @NotNull p1: DFS.Neighbors<(PsiClass..PsiClass?)>, @NotNull p2: DFS.NodeHandler<(PsiClass..PsiClass?), (Unit..Unit?)>): (Unit..Unit?) defined in org.jetbrains.kotlin.utils.DFS[JavaMethodDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> PsiClass
-    <R : (Any..Any?)> -> Unit
+    <N : (Any..Any?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
+    <R : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'listOf' @ [163:21] ==> public fun <T> listOf(element: KtLightClass): List<KtLightClass> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -389,7 +389,7 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> UsageInfo
 
-'checkRedeclarations' @ [205:9] ==> internal fun checkRedeclarations(descriptor: DeclarationDescriptor, newName: String, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkRedeclarations' @ [205:9] ==> internal fun checkRedeclarations(descriptor: DeclarationDescriptor, newName: String, result: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [205:29] ==> val descriptor: VariableDescriptor defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinPropertyProcessor.findCollisions[LocalVariableDescriptor]
 
@@ -407,7 +407,7 @@ Inferred types:
 
 'collisions' @ [206:68] ==> val collisions: SmartList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinPropertyProcessor.findCollisions[LocalVariableDescriptor]
 
-'checkOriginalUsagesRetargeting' @ [207:9] ==> internal fun checkOriginalUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkOriginalUsagesRetargeting' @ [207:9] ==> internal fun checkOriginalUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, originalUsages: MutableList<UsageInfo>, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [207:40] ==> val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinPropertyProcessor.findCollisions[LocalVariableDescriptor]
 
@@ -417,7 +417,7 @@ Inferred types:
 
 'collisions' @ [207:70] ==> val collisions: SmartList<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinPropertyProcessor.findCollisions[LocalVariableDescriptor]
 
-'checkNewNameUsagesRetargeting' @ [208:9] ==> internal fun checkNewNameUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename[SimpleFunctionDescriptorImpl]
+'checkNewNameUsagesRetargeting' @ [208:9] ==> internal fun checkNewNameUsagesRetargeting(declaration: KtNamedDeclaration, newName: String, newUsages: MutableList<UsageInfo>): Unit defined in org.jetbrains.kotlin.idea.refactoring.rename in file renameConflictUtils.kt[SimpleFunctionDescriptorImpl]
 
 'declaration' @ [208:39] ==> val declaration: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinPropertyProcessor.findCollisions[LocalVariableDescriptor]
 
@@ -661,7 +661,7 @@ Inferred types:
 
 'getRepresentativeLightMethod' @ [281:69] ==> public fun PsiElement.getRepresentativeLightMethod(): PsiMethod? defined in org.jetbrains.kotlin.asJava[DeserializedSimpleFunctionDescriptor]
 
-'checkSuperMethodsWithPopup' @ [282:9] ==> public fun checkSuperMethodsWithPopup(declaration: KtNamedDeclaration, deepestSuperMethods: List<PsiMethod>, actionString: String, editor: Editor, action: (List<PsiElement>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkSuperMethodsWithPopup' @ [282:9] ==> public fun checkSuperMethodsWithPopup(declaration: KtNamedDeclaration, deepestSuperMethods: List<PsiMethod>, actionString: String, editor: Editor, action: (List<PsiElement>) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'callableDeclaration' @ [282:36] ==> val callableDeclaration: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.refactoring.rename.RenameKotlinPropertyProcessor.substituteElementToRename[LocalVariableDescriptor]
 

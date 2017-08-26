@@ -12,8 +12,6 @@
 
 'scriptDescriptor' @ [38:17] ==> private final val scriptDescriptor: LazyScriptDescriptor defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyScriptClassMemberScope[PropertyDescriptorImpl]
 
-'Annotations' @ [39:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [39:29] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'NO_SOURCE' @ [41:31] ==> public final val NO_SOURCE: (SourceElement..SourceElement?) defined in org.jetbrains.kotlin.descriptors.SourceElement[JavaPropertyDescriptor]
@@ -34,7 +32,9 @@
 
 'constructor' @ [48:16] ==> val constructor: ClassConstructorDescriptorImpl defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyScriptClassMemberScope.resolvePrimaryConstructor[LocalVariableDescriptor]
 
-'ScriptHelper' @ [52:16] ==> public companion object defined in org.jetbrains.kotlin.script.ScriptHelper[FakeCallableDescriptorForObject]
+'!!' @ [52:16] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: ScriptHelper?): ScriptHelper[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> ScriptHelper
 
 'getInstance' @ [52:29] ==> public final fun getInstance(): ScriptHelper? defined in org.jetbrains.kotlin.script.ScriptHelper.Companion[SimpleFunctionDescriptorImpl]
 
@@ -60,8 +60,6 @@ Inferred types:
 'constructor' @ [54:21] ==> value-parameter constructor: ClassConstructorDescriptorImpl defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyScriptClassMemberScope.createScriptParameters[ValueParameterDescriptorImpl]
 
 'index' @ [54:40] ==> value-parameter index: Int defined in org.jetbrains.kotlin.resolve.lazy.descriptors.LazyScriptClassMemberScope.createScriptParameters.<anonymous>[ValueParameterDescriptorImpl]
-
-'Annotations' @ [54:47] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [54:59] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 

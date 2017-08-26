@@ -2,9 +2,9 @@
 Inferred types:
     <T : (Any..Any?)> -> ClassLoader?
 
-'lazy' @ [30:34] ==> public fun <T> lazy(initializer: () -> (File..File?)): Lazy<(File..File?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [30:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (java.io.File..java.io.File?)
+    <T> -> T
 
 '+' @ [32:28] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
@@ -12,11 +12,11 @@ Inferred types:
 
 'java' @ [32:46] ==> public val <T> KClass<out KotlinAntTaskUtil>.java: Class<out KotlinAntTaskUtil> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinAntTaskUtil
+    <T> -> Captured(out KotlinAntTaskUtil)
 
 'name' @ [32:51] ==> public final val <T : (Any..Any?)> Class<out KotlinAntTaskUtil>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinAntTaskUtil
+    <T : (Any..Any?)> -> Captured(out KotlinAntTaskUtil)
 
 'replace' @ [32:56] ==> public fun String.replace(oldChar: Char, newChar: Char, ignoreCase: Boolean = ...): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -24,7 +24,7 @@ Inferred types:
 
 'java' @ [33:41] ==> public val <T> KClass<out KotlinAntTaskUtil>.java: Class<out KotlinAntTaskUtil> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinAntTaskUtil
+    <T> -> Captured(out KotlinAntTaskUtil)
 
 'getResource' @ [33:46] ==> public open fun getResource(p0: (String..String?)): (URL..URL?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -88,11 +88,11 @@ Inferred types:
 
 'java' @ [57:36] ==> public val <T> KClass<out KotlinAntTaskUtil>.java: Class<out KotlinAntTaskUtil> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KotlinAntTaskUtil
+    <T> -> Captured(out KotlinAntTaskUtil)
 
 'classLoader' @ [57:41] ==> public final val <T : (Any..Any?)> Class<out KotlinAntTaskUtil>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinAntTaskUtil
+    <T : (Any..Any?)> -> Captured(out KotlinAntTaskUtil)
 
 'myLoader' @ [58:13] ==> val myLoader: (ClassLoader..ClassLoader?) defined in org.jetbrains.kotlin.ant.KotlinAntTaskUtil.getOrCreateClassLoader[LocalVariableDescriptor]
 

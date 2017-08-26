@@ -10,8 +10,6 @@ Inferred types:
 
 'getMultiTargetPlatform' @ [36:20] ==> public fun ModuleDescriptor.getMultiTargetPlatform(): MultiTargetPlatform? defined in org.jetbrains.kotlin.resolve[DeserializedSimpleFunctionDescriptor]
 
-'MultiTargetPlatform' @ [36:48] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
-
 'Common' @ [36:68] ==> public object Common : MultiTargetPlatform defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'dependency' @ [36:78] ==> value-parameter dependency: ModuleDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.commonModuleOrNull.<anonymous>[ValueParameterDescriptorImpl]
@@ -59,7 +57,7 @@ Inferred types:
 
 'commonModuleDescriptor' @ [52:10] ==> val commonModuleDescriptor: ModuleDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.getHeaderDeclarationTooltip[LocalVariableDescriptor]
 
-'hasDeclarationOf' @ [52:33] ==> public fun ModuleDescriptor.hasDeclarationOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'hasDeclarationOf' @ [52:33] ==> public fun ModuleDescriptor.hasDeclarationOf(descriptor: MemberDescriptor): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers in file DeclaredHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [52:50] ==> val descriptor: MemberDescriptor defined in org.jetbrains.kotlin.idea.highlighter.markers.getHeaderDeclarationTooltip[LocalVariableDescriptor]
 
@@ -83,7 +81,7 @@ Inferred types:
 
 'toDescriptor' @ [64:29] ==> public fun KtDeclaration.toDescriptor(): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.core[DeserializedSimpleFunctionDescriptor]
 
-'headerDescriptor' @ [64:67] ==> internal fun MemberDescriptor.headerDescriptor(): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerDescriptor' @ [64:67] ==> internal fun MemberDescriptor.headerDescriptor(): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.highlighter.markers in file DeclaredHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'DescriptorToSourceUtils' @ [65:12] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
 
@@ -117,7 +115,7 @@ Inferred types:
 
 'isImpl' @ [75:13] ==> public final val MemberDescriptor.isImpl: Boolean[MyPropertyDescriptor]
 
-'headerDescriptor' @ [75:23] ==> internal fun MemberDescriptor.headerDescriptor(): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerDescriptor' @ [75:23] ==> internal fun MemberDescriptor.headerDescriptor(): DeclarationDescriptor? defined in org.jetbrains.kotlin.idea.highlighter.markers in file DeclaredHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [80:9] ==> <this> defined in org.jetbrains.kotlin.idea.highlighter.markers.liftToHeader[ReceiverParameterDescriptorImpl]
 

@@ -510,7 +510,7 @@ Inferred types:
 
 'resultingCalls' @ [209:44] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> OverloadResolutionResults<out (CallableDescriptor..CallableDescriptor?)>.resultingCalls: (MutableCollection<out (ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>..Collection<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'map' @ [209:59] ==> public inline fun <T, R> Iterable<(ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)>.map(transform: ((ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>..ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>?)) -> (CallableDescriptor..CallableDescriptor?)): List<(CallableDescriptor..CallableDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -521,7 +521,7 @@ Inferred types:
 
 'resultingDescriptor' @ [209:68] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'resultingDescriptors' @ [210:34] ==> val resultingDescriptors: List<(CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.kotlin.idea.util.ShadowedDeclarationsFilter.filterEqualSignatureGroup[LocalVariableDescriptor]
 

@@ -87,9 +87,9 @@ Inferred types:
             is KtCallExpression -> parent.parent as? KtDotQualifiedExpression
             is KtBinaryExpression -> parent
             else -> null
-        }' @ [61:27] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {ASTDelegatePsiElement & KtExpression}?, entry1: {ASTDelegatePsiElement & KtExpression}?, entry2: {ASTDelegatePsiElement & KtExpression}?): {ASTDelegatePsiElement & KtExpression}?[SimpleFunctionDescriptorImpl]
+        }' @ [61:27] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: NavigatablePsiElement?, entry1: NavigatablePsiElement?, entry2: NavigatablePsiElement?): NavigatablePsiElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {ASTDelegatePsiElement & KtExpression}?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> NavigatablePsiElement?
 
 'parent' @ [61:33] ==> val parent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.intentions.ConvertForEachToForLoopIntention.extractData[LocalVariableDescriptor]
 
@@ -115,7 +115,7 @@ Inferred types:
 
 'resultingDescriptor' @ [68:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'toString' @ [68:73] ==> @NotNull public open fun toString(): String defined in org.jetbrains.kotlin.name.FqNameUnsafe[JavaMethodDescriptor]
 
@@ -125,7 +125,7 @@ Inferred types:
 
 'call' @ [70:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'explicitReceiver' @ [70:42] ==> public final val Call.explicitReceiver: Receiver?[MyPropertyDescriptor]
 
@@ -133,7 +133,7 @@ Inferred types:
 
 'call' @ [71:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'valueArguments' @ [71:42] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 

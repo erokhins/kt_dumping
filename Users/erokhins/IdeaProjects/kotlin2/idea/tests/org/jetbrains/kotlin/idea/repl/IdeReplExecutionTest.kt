@@ -6,7 +6,9 @@
 
 'consoleRunner' @ [36:9] ==> private final lateinit var consoleRunner: KotlinConsoleRunner defined in org.jetbrains.kotlin.idea.repl.IdeReplExecutionTest[PropertyDescriptorImpl]
 
-'KotlinConsoleKeeper' @ [36:25] ==> public companion object defined in org.jetbrains.kotlin.console.KotlinConsoleKeeper[FakeCallableDescriptorForObject]
+'!!' @ [36:25] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: KotlinConsoleRunner?): KotlinConsoleRunner[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> KotlinConsoleRunner
 
 'getInstance' @ [36:45] ==> @JvmStatic public final fun getInstance(project: Project): (KotlinConsoleKeeper..KotlinConsoleKeeper?) defined in org.jetbrains.kotlin.console.KotlinConsoleKeeper.Companion[DeserializedSimpleFunctionDescriptor]
 

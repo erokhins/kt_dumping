@@ -1,11 +1,8 @@
-'UserDataProperty' @ [32:73] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<KotlinFacetSettings>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> Module
-    <T : Any> -> KotlinFacetSettings
+'getValue' @ [32:73] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [32:94] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(KotlinFacetSettings..KotlinFacetSettings?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinFacetSettings
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.KotlinFacetSettings..org.jetbrains.kotlin.config.KotlinFacetSettings?)
 
 'project' @ [36:9] ==> private final val project: Project defined in org.jetbrains.kotlin.idea.facet.KotlinFacetSettingsProviderImpl[PropertyDescriptorImpl]
 
@@ -17,7 +14,7 @@ Inferred types:
 
 'subscribe' @ [36:45] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(ModuleRootListener..ModuleRootListener?)>, @NotNull p1: ModuleRootListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> ModuleRootListener
+    <L : (Any..Any?)> -> (com.intellij.openapi.roots.ModuleRootListener..com.intellij.openapi.roots.ModuleRootListener?)
 
 'PROJECT_ROOTS' @ [37:31] ==> public final val PROJECT_ROOTS: (Topic<(ModuleRootListener..ModuleRootListener?)>..Topic<(ModuleRootListener..ModuleRootListener?)>?) defined in com.intellij.ProjectTopics[JavaPropertyDescriptor]
 

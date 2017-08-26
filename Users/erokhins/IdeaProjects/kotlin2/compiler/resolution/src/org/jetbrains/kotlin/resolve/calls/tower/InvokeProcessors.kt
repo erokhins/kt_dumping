@@ -206,8 +206,6 @@ Inferred types:
 
 'getFunctions' @ [101:99] ==> public abstract fun getFunctions(name: Name, extensionReceiver: ReceiverValueWithSmartCastInfo?): Collection<CandidateWithBoundDispatchReceiver> defined in org.jetbrains.kotlin.resolve.calls.tower.ScopeTowerLevel[SimpleFunctionDescriptorImpl]
 
-'OperatorNameConventions' @ [101:112] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INVOKE' @ [101:136] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'it' @ [101:144] ==> value-parameter it: ReceiverValueWithSmartCastInfo? defined in org.jetbrains.kotlin.resolve.calls.tower.InvokeTowerProcessor.createInvokeProcessor.<anonymous>[ValueParameterDescriptorImpl]
@@ -340,8 +338,6 @@ Inferred types:
 
 'getContributedFunctions' @ [150:45] ==> public abstract fun getContributedFunctions(name: Name, location: LookupLocation): Collection<SimpleFunctionDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'OperatorNameConventions' @ [150:69] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INVOKE' @ [150:93] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'location' @ [150:101] ==> public abstract val location: LookupLocation defined in org.jetbrains.kotlin.resolve.calls.tower.ImplicitScopeTower[PropertyDescriptorImpl]
@@ -350,7 +346,7 @@ Inferred types:
 Inferred types:
     <T> -> SimpleFunctionDescriptor
 
-'createSynthesizedInvokes' @ [151:30] ==> public fun createSynthesizedInvokes(functions: Collection<FunctionDescriptor>): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tasks[SimpleFunctionDescriptorImpl]
+'createSynthesizedInvokes' @ [151:30] ==> public fun createSynthesizedInvokes(functions: Collection<FunctionDescriptor>): Collection<FunctionDescriptor> defined in org.jetbrains.kotlin.resolve.calls.tasks in file synthesizedInvokes.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [151:55] ==> public fun <T> listOf(element: SimpleFunctionDescriptor): List<SimpleFunctionDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -454,8 +450,6 @@ Inferred types:
 'expressionForInvoke' @ [177:92] ==> value-parameter expressionForInvoke: ReceiverValueWithSmartCastInfo defined in org.jetbrains.kotlin.resolve.calls.tower.createCallTowerProcessorForExplicitInvoke[ValueParameterDescriptorImpl]
 
 'getFunctions' @ [177:115] ==> public abstract fun getFunctions(name: Name, extensionReceiver: ReceiverValueWithSmartCastInfo?): Collection<CandidateWithBoundDispatchReceiver> defined in org.jetbrains.kotlin.resolve.calls.tower.ScopeTowerLevel[SimpleFunctionDescriptorImpl]
-
-'OperatorNameConventions' @ [177:128] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'INVOKE' @ [177:152] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 

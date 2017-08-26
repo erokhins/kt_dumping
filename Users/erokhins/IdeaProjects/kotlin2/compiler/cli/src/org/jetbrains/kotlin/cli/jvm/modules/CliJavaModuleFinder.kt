@@ -42,6 +42,8 @@ Inferred types:
 
 'this' @ [37:73] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleFinder[LazyClassReceiverParameterDescriptor]
 
+'findSystemModule' @ [37:79] ==> private final fun findSystemModule(moduleRoot: VirtualFile): JavaModule.Explicit? defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleFinder[SimpleFunctionDescriptorImpl]
+
 'modulesRoot' @ [40:13] ==> private final val modulesRoot: VirtualFile? defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleFinder[PropertyDescriptorImpl]
 
 'findChild' @ [40:26] ==> @Nullable public open fun findChild(@NotNull p0: String): VirtualFile? defined in com.intellij.openapi.vfs.VirtualFile[JavaMethodDescriptor]
@@ -55,6 +57,8 @@ Inferred types:
 
 'this' @ [40:47] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleFinder[LazyClassReceiverParameterDescriptor]
 
+'findSystemModule' @ [40:53] ==> private final fun findSystemModule(moduleRoot: VirtualFile): JavaModule.Explicit? defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleFinder[SimpleFunctionDescriptorImpl]
+
 'userModules' @ [40:74] ==> private final val userModules: LinkedHashMap<String, JavaModule> /* = LinkedHashMap<String, JavaModule> */ defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleFinder[PropertyDescriptorImpl]
 
 'name' @ [40:86] ==> value-parameter name: String defined in org.jetbrains.kotlin.cli.jvm.modules.CliJavaModuleFinder.findModule[ValueParameterDescriptorImpl]
@@ -65,7 +69,9 @@ Inferred types:
 
 'MODULE_INFO_CLS_FILE' @ [43:55] ==> public const final val MODULE_INFO_CLS_FILE: String defined in com.intellij.psi.PsiJavaModule[JavaPropertyDescriptor]
 
-'JavaModuleInfo' @ [44:26] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleInfo[FakeCallableDescriptorForObject]
+'?:' @ [44:26] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: JavaModuleInfo?, right: JavaModuleInfo): JavaModuleInfo[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> JavaModuleInfo
 
 'read' @ [44:41] ==> public final fun read(file: VirtualFile): JavaModuleInfo? defined in org.jetbrains.kotlin.resolve.jvm.modules.JavaModuleInfo.Companion[DeserializedSimpleFunctionDescriptor]
 

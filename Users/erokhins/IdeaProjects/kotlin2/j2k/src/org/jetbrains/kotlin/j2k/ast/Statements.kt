@@ -6,7 +6,7 @@
 
 'builder' @ [31:9] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.DeclarationStatement.generateCode[ValueParameterDescriptorImpl]
 
-'append' @ [31:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [31:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'elements' @ [31:24] ==> public final val elements: List<Element> defined in org.jetbrains.kotlin.j2k.ast.DeclarationStatement[PropertyDescriptorImpl]
 
@@ -14,7 +14,7 @@
 
 'builder' @ [37:9] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.ExpressionListStatement.generateCode[ValueParameterDescriptorImpl]
 
-'append' @ [37:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [37:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'expressions' @ [37:24] ==> public final val expressions: List<Expression> defined in org.jetbrains.kotlin.j2k.ast.ExpressionListStatement[PropertyDescriptorImpl]
 
@@ -215,7 +215,7 @@ Inferred types:
 
 'append' @ [137:47] ==> public final infix fun append(text: String): CodeBuilder defined in org.jetbrains.kotlin.j2k.CodeBuilder[SimpleFunctionDescriptorImpl]
 
-'append' @ [137:60] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [137:60] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'catches' @ [137:67] ==> public final val catches: List<CatchStatement> defined in org.jetbrains.kotlin.j2k.ast.TryStatement[PropertyDescriptorImpl]
 
@@ -257,7 +257,7 @@ Inferred types:
 
 'append' @ [160:50] ==> public final infix fun append(text: String): CodeBuilder defined in org.jetbrains.kotlin.j2k.CodeBuilder[SimpleFunctionDescriptorImpl]
 
-'append' @ [160:66] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [160:66] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'caseContainers' @ [160:73] ==> public final val caseContainers: List<WhenEntry> defined in org.jetbrains.kotlin.j2k.ast.WhenStatement[PropertyDescriptorImpl]
 
@@ -267,7 +267,7 @@ Inferred types:
 
 'builder' @ [166:9] ==> value-parameter builder: CodeBuilder defined in org.jetbrains.kotlin.j2k.ast.WhenEntry.generateCode[ValueParameterDescriptorImpl]
 
-'append' @ [166:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'append' @ [166:17] ==> @JvmName public fun CodeBuilder.append(elements: Collection<Element>, separator: String, prefix: String = ..., suffix: String = ...): CodeBuilder defined in org.jetbrains.kotlin.j2k in file CodeBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'selectors' @ [166:24] ==> public final val selectors: List<WhenEntrySelector> defined in org.jetbrains.kotlin.j2k.ast.WhenEntry[PropertyDescriptorImpl]
 

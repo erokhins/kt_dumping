@@ -67,6 +67,8 @@ Inferred types:
 
 'AbstractInsnNode' @ [55:44] ==> protected/*protected and package*/ constructor AbstractInsnNode(p0: Int) defined in org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode[JavaClassConstructorDescriptor]
 
+'isMeaningful' @ [55:62] ==> public val AbstractInsnNode.isMeaningful: Boolean defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[PropertyDescriptorImpl]
+
 'instructions' @ [60:19] ==> public final var instructions: (InsnList..InsnList?) defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaPropertyDescriptor]
 
 'last' @ [60:32] ==> public final val InsnList.last: (AbstractInsnNode..AbstractInsnNode?)[MyPropertyDescriptor]
@@ -121,6 +123,8 @@ Inferred types:
 
 'AbstractInsnNode' @ [74:46] ==> protected/*protected and package*/ constructor AbstractInsnNode(p0: Int) defined in org.jetbrains.org.objectweb.asm.tree.AbstractInsnNode[JavaClassConstructorDescriptor]
 
+'isMeaningful' @ [74:64] ==> public val AbstractInsnNode.isMeaningful: Boolean defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[PropertyDescriptorImpl]
+
 'BooleanArray' @ [79:16] ==> public constructor BooleanArray(size: Int, init: (Int) -> Boolean) defined in kotlin.BooleanArray[DeserializedClassConstructorDescriptor]
 
 'maxLocals' @ [79:29] ==> public final var maxLocals: Int defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaPropertyDescriptor]
@@ -153,7 +157,7 @@ Inferred types:
 
 'insn' @ [85:21] ==> val insn: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.common.removeUnusedLocalVariables[LocalVariableDescriptor]
 
-'isSize2LoadStoreOperation' @ [85:26] ==> private fun VarInsnNode.isSize2LoadStoreOperation(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.common[SimpleFunctionDescriptorImpl]
+'isSize2LoadStoreOperation' @ [85:26] ==> private fun VarInsnNode.isSize2LoadStoreOperation(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.common in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'used' @ [86:21] ==> val used: BooleanArray defined in org.jetbrains.kotlin.codegen.optimization.common.removeUnusedLocalVariables[LocalVariableDescriptor]
 
@@ -401,11 +405,11 @@ Inferred types:
 
 'java' @ [180:56] ==> public val <T> KClass<out AbstractInsnNode>.java: Class<out AbstractInsnNode> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AbstractInsnNode
+    <T> -> Captured(out AbstractInsnNode)
 
 'simpleName' @ [180:61] ==> public final val <T : (Any..Any?)> Class<out AbstractInsnNode>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AbstractInsnNode
+    <T : (Any..Any?)> -> Captured(out AbstractInsnNode)
 
 'insnText' @ [180:75] ==> internal val AbstractInsnNode?.insnText: String defined in org.jetbrains.kotlin.codegen.inline in file inlineCodegenUtils.kt[PropertyDescriptorImpl]
 

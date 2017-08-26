@@ -44,8 +44,6 @@ Inferred types:
 
 'PrimitiveType' @ [45:53] ==> public constructor PrimitiveType(name: Identifier) defined in org.jetbrains.kotlin.j2k.ast.PrimitiveType[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [45:67] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'withNoPrototype' @ [45:78] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
 'capitalize' @ [45:105] ==> @NotNull @Contract public open fun capitalize(@NotNull p0: String): String defined in com.intellij.openapi.util.text.StringUtil[JavaMethodDescriptor]
@@ -57,8 +55,6 @@ Inferred types:
 'NullType' @ [46:31] ==> public constructor NullType() defined in org.jetbrains.kotlin.j2k.ast.NullType[ClassConstructorDescriptorImpl]
 
 'PrimitiveType' @ [47:21] ==> public constructor PrimitiveType(name: Identifier) defined in org.jetbrains.kotlin.j2k.ast.PrimitiveType[ClassConstructorDescriptorImpl]
-
-'Identifier' @ [47:35] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [47:46] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
@@ -192,8 +188,6 @@ Inferred types:
 'typeArgs' @ [79:129] ==> val typeArgs: List<Type> defined in org.jetbrains.kotlin.j2k.TypeVisitor.constructReferenceElement[LocalVariableDescriptor]
 
 'ReferenceElement' @ [82:16] ==> public constructor ReferenceElement(name: Identifier, typeArgs: List<Element>) defined in org.jetbrains.kotlin.j2k.ast.ReferenceElement[ClassConstructorDescriptorImpl]
-
-'Identifier' @ [82:33] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
 
 'withNoPrototype' @ [82:44] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 

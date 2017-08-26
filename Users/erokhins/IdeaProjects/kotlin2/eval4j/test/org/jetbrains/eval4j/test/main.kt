@@ -1,8 +1,8 @@
-'buildTestSuite' @ [31:26] ==> public fun buildTestSuite(create: (MethodNode, Class<*>, InterpreterResult?) -> TestCase): TestSuite defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'buildTestSuite' @ [31:26] ==> public fun buildTestSuite(create: (MethodNode, Class<*>, InterpreterResult?) -> TestCase): TestSuite defined in org.jetbrains.eval4j.test in file suiteBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'TestCase' @ [33:14] ==> public constructor TestCase(p0: (String..String?)) defined in junit.framework.TestCase[JavaClassConstructorDescriptor]
 
-'getTestName' @ [33:23] ==> public fun getTestName(methodName: String): String defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'getTestName' @ [33:23] ==> public fun getTestName(methodName: String): String defined in org.jetbrains.eval4j.test in file util.kt[SimpleFunctionDescriptorImpl]
 
 'methodNode' @ [33:35] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.eval4j.test.suite.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -18,7 +18,7 @@
 
 'methodNode' @ [38:29] ==> value-parameter methodNode: MethodNode defined in org.jetbrains.eval4j.test.suite.<anonymous>[ValueParameterDescriptorImpl]
 
-'initFrame' @ [39:29] ==> public fun initFrame(owner: String, m: MethodNode): Frame<Value> defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'initFrame' @ [39:29] ==> public fun initFrame(owner: String, m: MethodNode): Frame<Value> defined in org.jetbrains.eval4j.test in file main.kt[SimpleFunctionDescriptorImpl]
 
 'ownerClass' @ [40:37] ==> value-parameter ownerClass: Class<*> defined in org.jetbrains.eval4j.test.suite.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -331,7 +331,7 @@ Inferred types:
 
 'Class' @ [118:63] ==> private constructor Class<T : (Any..Any?)>(p0: (ClassLoader..ClassLoader?)) defined in java.lang.Class[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@277ea076
 
 'java' @ [118:76] ==> public val <T> KClass<Class<*>>.java: Class<Class<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -449,9 +449,9 @@ Inferred types:
 
 'int' @ [149:25] ==> public val Value.int: Int defined in org.jetbrains.eval4j[DeserializedPropertyDescriptor]
 
-'mayThrow' @ [150:16] ==> public final fun <T> mayThrow(f: () -> AbstractValue<out Any?>): AbstractValue<out Any?> defined in org.jetbrains.eval4j.test.REFLECTION_EVAL[SimpleFunctionDescriptorImpl]
+'mayThrow' @ [150:16] ==> public final fun <T> mayThrow(f: () -> Value): Value defined in org.jetbrains.eval4j.test.REFLECTION_EVAL[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> AbstractValue<out Any?>
+    <T> -> Value
 
 'when (elementType.sort) {
                 Type.BOOLEAN -> boolean(JArray.getBoolean(arr, ind))
@@ -468,9 +468,9 @@ Inferred types:
                     if (value == null) NULL_VALUE else ObjectValue(value, Type.getType(value::class.java))
                 }
                 else -> throw UnsupportedOperationException("Unsupported array element type: $elementType")
-            }' @ [151:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: AbstractValue<out Any?>, entry1: AbstractValue<out Any?>, entry2: AbstractValue<out Any?>, entry3: AbstractValue<out Any?>, entry4: AbstractValue<out Any?>, entry5: AbstractValue<out Any?>, entry6: AbstractValue<out Any?>, entry7: AbstractValue<out Any?>, entry8: AbstractValue<out Any?>, entry9: AbstractValue<out Any?>): AbstractValue<out Any?>[SimpleFunctionDescriptorImpl]
+            }' @ [151:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Value, entry1: Value, entry2: Value, entry3: Value, entry4: Value, entry5: Value, entry6: Value, entry7: Value, entry8: Value, entry9: Value): Value[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> AbstractValue<out Any?>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Value
 
 'elementType' @ [151:19] ==> val elementType: (Type..Type?) defined in org.jetbrains.eval4j.test.REFLECTION_EVAL.getArrayElement[LocalVariableDescriptor]
 
@@ -584,7 +584,7 @@ Inferred types:
 
 'java' @ [163:101] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'UnsupportedOperationException' @ [165:31] ==> public final fun <init>(p0: (String..String?)): UnsupportedOperationException /* = UnsupportedOperationException */ defined in kotlin.UnsupportedOperationException[TypeAliasConstructorDescriptorImpl]
 
@@ -790,7 +790,7 @@ Inferred types:
 
 'java' @ [207:89] ==> public val <T> KClass<out Throwable>.java: Class<out Throwable> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Throwable
+    <T> -> Captured(out Throwable)
 
 'findStaticField' @ [212:21] ==> public final fun findStaticField(fieldDesc: FieldDescription): Field defined in org.jetbrains.eval4j.test.REFLECTION_EVAL[SimpleFunctionDescriptorImpl]
 
@@ -844,7 +844,7 @@ Inferred types:
 
 'fieldDesc' @ [226:31] ==> value-parameter fieldDesc: FieldDescription defined in org.jetbrains.eval4j.test.REFLECTION_EVAL.findStaticField[ValueParameterDescriptorImpl]
 
-'findField' @ [226:42] ==> @Suppress public fun Class<out Any>.findField(fieldDesc: FieldDescription): Field? defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'findField' @ [226:42] ==> @Suppress public fun Class<out Any>.findField(fieldDesc: FieldDescription): Field? defined in org.jetbrains.eval4j.test in file main.kt[SimpleFunctionDescriptorImpl]
 
 'fieldDesc' @ [226:52] ==> value-parameter fieldDesc: FieldDescription defined in org.jetbrains.eval4j.test.REFLECTION_EVAL.findStaticField[ValueParameterDescriptorImpl]
 
@@ -878,7 +878,7 @@ Inferred types:
 
 'methodDesc' @ [234:32] ==> value-parameter methodDesc: MethodDescription defined in org.jetbrains.eval4j.test.REFLECTION_EVAL.invokeStaticMethod[ValueParameterDescriptorImpl]
 
-'findMethod' @ [234:44] ==> @Suppress public fun Class<out Any>.findMethod(methodDesc: MethodDescription): Method? defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'findMethod' @ [234:44] ==> @Suppress public fun Class<out Any>.findMethod(methodDesc: MethodDescription): Method? defined in org.jetbrains.eval4j.test in file main.kt[SimpleFunctionDescriptorImpl]
 
 'methodDesc' @ [234:55] ==> value-parameter methodDesc: MethodDescription defined in org.jetbrains.eval4j.test.REFLECTION_EVAL.invokeStaticMethod[ValueParameterDescriptorImpl]
 
@@ -1008,11 +1008,11 @@ Inferred types:
 
 'java' @ [265:33] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 '_class' @ [266:21] ==> val _class: Class<out Any> defined in org.jetbrains.eval4j.test.REFLECTION_EVAL.findInstanceField[LocalVariableDescriptor]
 
-'findField' @ [266:28] ==> @Suppress public fun Class<out Any>.findField(fieldDesc: FieldDescription): Field? defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'findField' @ [266:28] ==> @Suppress public fun Class<out Any>.findField(fieldDesc: FieldDescription): Field? defined in org.jetbrains.eval4j.test in file main.kt[SimpleFunctionDescriptorImpl]
 
 'fieldDesc' @ [266:38] ==> value-parameter fieldDesc: FieldDescription defined in org.jetbrains.eval4j.test.REFLECTION_EVAL.findInstanceField[ValueParameterDescriptorImpl]
 
@@ -1058,7 +1058,7 @@ Inferred types:
 
 '_class' @ [277:28] ==> val _class: Class<Any> defined in org.jetbrains.eval4j.test.REFLECTION_EVAL.invokeMethod[LocalVariableDescriptor]
 
-'findConstructor' @ [277:35] ==> @Suppress public fun Class<Any>.findConstructor(methodDesc: MethodDescription): Constructor<Any?>? defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'findConstructor' @ [277:35] ==> @Suppress public fun Class<Any>.findConstructor(methodDesc: MethodDescription): Constructor<Any?>? defined in org.jetbrains.eval4j.test in file main.kt[SimpleFunctionDescriptorImpl]
 
 'methodDesc' @ [277:51] ==> value-parameter methodDesc: MethodDescription defined in org.jetbrains.eval4j.test.REFLECTION_EVAL.invokeMethod[ValueParameterDescriptorImpl]
 
@@ -1118,9 +1118,9 @@ Inferred types:
 
 'java' @ [290:33] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
-'findMethod' @ [290:38] ==> @Suppress public fun Class<out Any>.findMethod(methodDesc: MethodDescription): Method? defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'findMethod' @ [290:38] ==> @Suppress public fun Class<out Any>.findMethod(methodDesc: MethodDescription): Method? defined in org.jetbrains.eval4j.test in file main.kt[SimpleFunctionDescriptorImpl]
 
 'methodDesc' @ [290:49] ==> value-parameter methodDesc: MethodDescription defined in org.jetbrains.eval4j.test.REFLECTION_EVAL.invokeMethod[ValueParameterDescriptorImpl]
 
@@ -1272,7 +1272,7 @@ Inferred types:
 
 'declaredMethods' @ [326:22] ==> public final val <T : (Any..Any?)> Class<out Any>.declaredMethods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'methodDesc' @ [327:13] ==> value-parameter methodDesc: MethodDescription defined in org.jetbrains.eval4j.test.findMethod[ValueParameterDescriptorImpl]
 
@@ -1282,11 +1282,11 @@ Inferred types:
 
 'declared' @ [327:50] ==> val declared: (Method..Method?) defined in org.jetbrains.eval4j.test.findMethod[LocalVariableDescriptor]
 
-'superclass' @ [330:27] ==> public final val <T : (Any..Any?)> Class<out Any>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [330:27] ==> public final val <T : (Any..Any?)> Class<out Any>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
-'findMethod' @ [330:53] ==> @Suppress public fun Class<out Any>.findMethod(methodDesc: MethodDescription): Method? defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'findMethod' @ [330:53] ==> @Suppress public fun Class<out Any>.findMethod(methodDesc: MethodDescription): Method? defined in org.jetbrains.eval4j.test in file main.kt[SimpleFunctionDescriptorImpl]
 
 'methodDesc' @ [330:64] ==> value-parameter methodDesc: MethodDescription defined in org.jetbrains.eval4j.test.findMethod[ValueParameterDescriptorImpl]
 
@@ -1296,11 +1296,11 @@ Inferred types:
 
 'interfaces' @ [333:23] ==> public final val <T : (Any..Any?)> Class<out Any>.interfaces: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'supertype' @ [334:26] ==> val supertype: (Class<*>..Class<*>?) defined in org.jetbrains.eval4j.test.findMethod[LocalVariableDescriptor]
 
-'findMethod' @ [334:51] ==> @Suppress public fun Class<out Any>.findMethod(methodDesc: MethodDescription): Method? defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'findMethod' @ [334:51] ==> @Suppress public fun Class<out Any>.findMethod(methodDesc: MethodDescription): Method? defined in org.jetbrains.eval4j.test in file main.kt[SimpleFunctionDescriptorImpl]
 
 'methodDesc' @ [334:62] ==> value-parameter methodDesc: MethodDescription defined in org.jetbrains.eval4j.test.findMethod[ValueParameterDescriptorImpl]
 
@@ -1326,7 +1326,7 @@ Inferred types:
 
 'parameterTypes' @ [350:29] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterTypes: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'parameterTypes' @ [351:9] ==> public val MethodDescription.parameterTypes: List<Type> defined in org.jetbrains.eval4j[DeserializedPropertyDescriptor]
 
@@ -1406,7 +1406,7 @@ Inferred types:
 
 'declaredFields' @ [373:22] ==> public final val <T : (Any..Any?)> Class<out Any>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'fieldDesc' @ [374:13] ==> value-parameter fieldDesc: FieldDescription defined in org.jetbrains.eval4j.test.findField[ValueParameterDescriptorImpl]
 
@@ -1416,15 +1416,15 @@ Inferred types:
 
 'declared' @ [374:49] ==> val declared: (Field..Field?) defined in org.jetbrains.eval4j.test.findField[LocalVariableDescriptor]
 
-'superclass' @ [377:22] ==> public final val <T : (Any..Any?)> Class<out Any>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [377:22] ==> public final val <T : (Any..Any?)> Class<out Any>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
-'superclass' @ [378:9] ==> val superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?) defined in org.jetbrains.eval4j.test.findField[LocalVariableDescriptor]
+'superclass' @ [378:9] ==> val superclass: (Class<out Any?>..Class<out Any?>?) defined in org.jetbrains.eval4j.test.findField[LocalVariableDescriptor]
 
-'superclass' @ [379:31] ==> val superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?) defined in org.jetbrains.eval4j.test.findField[LocalVariableDescriptor]
+'superclass' @ [379:31] ==> val superclass: (Class<out Any?>..Class<out Any?>?) defined in org.jetbrains.eval4j.test.findField[LocalVariableDescriptor]
 
-'findField' @ [379:57] ==> @Suppress public fun Class<out Any>.findField(fieldDesc: FieldDescription): Field? defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'findField' @ [379:57] ==> @Suppress public fun Class<out Any>.findField(fieldDesc: FieldDescription): Field? defined in org.jetbrains.eval4j.test in file main.kt[SimpleFunctionDescriptorImpl]
 
 'fieldDesc' @ [379:67] ==> value-parameter fieldDesc: FieldDescription defined in org.jetbrains.eval4j.test.findField[ValueParameterDescriptorImpl]
 
@@ -1434,11 +1434,11 @@ Inferred types:
 
 'interfaces' @ [383:23] ==> public final val <T : (Any..Any?)> Class<out Any>.interfaces: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'supertype' @ [384:26] ==> val supertype: (Class<*>..Class<*>?) defined in org.jetbrains.eval4j.test.findField[LocalVariableDescriptor]
 
-'findField' @ [384:51] ==> @Suppress public fun Class<out Any>.findField(fieldDesc: FieldDescription): Field? defined in org.jetbrains.eval4j.test[SimpleFunctionDescriptorImpl]
+'findField' @ [384:51] ==> @Suppress public fun Class<out Any>.findField(fieldDesc: FieldDescription): Field? defined in org.jetbrains.eval4j.test in file main.kt[SimpleFunctionDescriptorImpl]
 
 'fieldDesc' @ [384:61] ==> value-parameter fieldDesc: FieldDescription defined in org.jetbrains.eval4j.test.findField[ValueParameterDescriptorImpl]
 

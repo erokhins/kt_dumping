@@ -124,10 +124,8 @@ Inferred types:
 
 'findExtension' @ [119:61] ==> @NotNull public open fun <T : (Any..Any?), U : (KotlinProjectConfigurator..KotlinProjectConfigurator?)> findExtension(@NotNull p0: ExtensionPointName<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>, @NotNull p1: Class<(KotlinGradleModuleConfigurator..KotlinGradleModuleConfigurator?)>): KotlinGradleModuleConfigurator defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinProjectConfigurator
-    <U : (T..T?)> -> KotlinGradleModuleConfigurator
-
-'KotlinProjectConfigurator' @ [119:75] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator..org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator?)
+    <U : (T..T?)> -> (org.jetbrains.kotlin.idea.configuration.KotlinGradleModuleConfigurator..org.jetbrains.kotlin.idea.configuration.KotlinGradleModuleConfigurator?)
 
 'EP_NAME' @ [119:101] ==> public final val EP_NAME: ExtensionPointName<(KotlinProjectConfigurator..KotlinProjectConfigurator?)> defined in org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator.Companion[DeserializedPropertyDescriptor]
 
@@ -139,10 +137,8 @@ Inferred types:
 
 'findExtension' @ [122:63] ==> @NotNull public open fun <T : (Any..Any?), U : (KotlinProjectConfigurator..KotlinProjectConfigurator?)> findExtension(@NotNull p0: ExtensionPointName<(KotlinProjectConfigurator..KotlinProjectConfigurator?)>, @NotNull p1: Class<(KotlinJsGradleModuleConfigurator..KotlinJsGradleModuleConfigurator?)>): KotlinJsGradleModuleConfigurator defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinProjectConfigurator
-    <U : (T..T?)> -> KotlinJsGradleModuleConfigurator
-
-'KotlinProjectConfigurator' @ [122:77] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator..org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator?)
+    <U : (T..T?)> -> (org.jetbrains.kotlin.idea.configuration.KotlinJsGradleModuleConfigurator..org.jetbrains.kotlin.idea.configuration.KotlinJsGradleModuleConfigurator?)
 
 'EP_NAME' @ [122:103] ==> public final val EP_NAME: ExtensionPointName<(KotlinProjectConfigurator..KotlinProjectConfigurator?)> defined in org.jetbrains.kotlin.idea.configuration.KotlinProjectConfigurator.Companion[DeserializedPropertyDescriptor]
 
@@ -247,7 +243,7 @@ Inferred types:
 
 'assertSameElements' @ [206:13] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleImportingTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'moduleNames' @ [206:32] ==> val moduleNames: List<String> defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleConfiguratorTest.testListNonConfiguredModules.<anonymous>[LocalVariableDescriptor]
 
@@ -268,7 +264,7 @@ Inferred types:
 
 'assertSameElements' @ [209:13] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleImportingTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'moduleNamesFromConfigurator' @ [209:32] ==> val moduleNamesFromConfigurator: List<String> defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleConfiguratorTest.testListNonConfiguredModules.<anonymous>[LocalVariableDescriptor]
 
@@ -289,7 +285,7 @@ Inferred types:
 
 'assertSameElements' @ [212:13] ==> @SafeVarargs public open fun <T : (Any..Any?)> assertSameElements(@NotNull p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>), @NotNull vararg p1: (String..String?)): Unit defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleImportingTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'moduleNamesWithKotlinFiles' @ [212:32] ==> val moduleNamesWithKotlinFiles: List<String> defined in org.jetbrains.kotlin.idea.codeInsight.gradle.GradleConfiguratorTest.testListNonConfiguredModules.<anonymous>[LocalVariableDescriptor]
 

@@ -1,6 +1,6 @@
 'asList' @ [29:12] ==> @NotNull @Override public open fun asList(): List<OutputFile> defined in org.jetbrains.kotlin.codegen.ClassFileFactory[JavaMethodDescriptor]
 
-'filterClassFiles' @ [29:21] ==> public fun List<OutputFile>.filterClassFiles(): Iterable<OutputFile> defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'filterClassFiles' @ [29:21] ==> public fun List<OutputFile>.filterClassFiles(): Iterable<OutputFile> defined in org.jetbrains.kotlin.codegen in file classFileUtils.kt[SimpleFunctionDescriptorImpl]
 
 'filter' @ [33:12] ==> public inline fun <T> Iterable<OutputFile>.filter(predicate: (OutputFile) -> Boolean): List<OutputFile> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -12,7 +12,7 @@ Inferred types:
 
 'endsWith' @ [33:37] ==> public fun String.endsWith(suffix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'addCompiledParts' @ [37:9] ==> private fun Iterable<PackageParts>.addCompiledParts(state: GenerationState): List<PackageParts> defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'addCompiledParts' @ [37:9] ==> private fun Iterable<PackageParts>.addCompiledParts(state: GenerationState): List<PackageParts> defined in org.jetbrains.kotlin.codegen in file classFileUtils.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [37:26] ==> value-parameter state: GenerationState defined in org.jetbrains.kotlin.codegen.addCompiledPartsAndSort[ValueParameterDescriptorImpl]
 

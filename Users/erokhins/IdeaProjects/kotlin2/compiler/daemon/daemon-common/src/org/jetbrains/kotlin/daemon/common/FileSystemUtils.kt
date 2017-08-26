@@ -193,12 +193,14 @@ Inferred types:
 
 'names' @ [76:58] ==> value-parameter vararg names: String defined in org.jetbrains.kotlin.daemon.common.FileSystem.getRuntimeStateFilesPath[ValueParameterDescriptorImpl]
 
-'fold' @ [76:64] ==> public inline fun <T, R> Array<out String>.fold(initial: File, operation: (File, String) -> File): File defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [76:64] ==> public inline fun <T, R> Array<out String>.fold(initial: File, operation: (acc: File, String) -> File): File defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> File
 
 'base' @ [76:69] ==> val base: File defined in org.jetbrains.kotlin.daemon.common.FileSystem.getRuntimeStateFilesPath[LocalVariableDescriptor]
+
+'File' @ [76:77] ==> public constructor File(p0: (File..File?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'names' @ [77:24] ==> value-parameter vararg names: String defined in org.jetbrains.kotlin.daemon.common.FileSystem.getRuntimeStateFilesPath[ValueParameterDescriptorImpl]
 
@@ -206,7 +208,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'fold' @ [78:30] ==> public inline fun <T, R> Iterable<String>.fold(initial: File, operation: (File, String) -> File): File defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [78:30] ==> public inline fun <T, R> Iterable<String>.fold(initial: File, operation: (acc: File, String) -> File): File defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> File
@@ -237,6 +239,8 @@ Inferred types:
 'it' @ [78:98] ==> value-parameter it: String defined in org.jetbrains.kotlin.daemon.common.FileSystem.getRuntimeStateFilesPath.<anonymous>[ValueParameterDescriptorImpl]
 
 'it' @ [78:109] ==> value-parameter it: String defined in org.jetbrains.kotlin.daemon.common.FileSystem.getRuntimeStateFilesPath.<anonymous>[ValueParameterDescriptorImpl]
+
+'File' @ [78:119] ==> public constructor File(p0: (File..File?), p1: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'if ((dir.exists() && dir.isDirectory) || dir.mkdirs()) dir.absolutePath
                else tempPath' @ [79:16] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]

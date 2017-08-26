@@ -35,14 +35,11 @@ Inferred types:
 
 'createAnnotationEntry' @ [63:78] ==> public final fun createAnnotationEntry(text: String): KtAnnotationEntry defined in org.jetbrains.kotlin.psi.KtPsiFactory[DeserializedSimpleFunctionDescriptor]
 
-'CopyableUserDataProperty' @ [66:61] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<PsiMember>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> PsiMember
-    <T : Any> -> PsiMember
+'getValue' @ [66:61] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [66:90] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(PsiMember..PsiMember?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiMember
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiMember..com.intellij.psi.PsiMember?)
 
 '?:' @ [70:22] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: EncapsulateFieldHelper?, right: EncapsulateFieldHelper): EncapsulateFieldHelper[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -199,7 +196,7 @@ Inferred types:
 
 'entries' @ [102:63] ==> public abstract val entries: MutableSet<MutableMap.MutableEntry<(PsiTypeParameter..PsiTypeParameter?), (PsiType..PsiType?)>> defined in kotlin.collections.MutableMap[DeserializedPropertyDescriptor]
 
-'fold' @ [102:71] ==> public inline fun <T, R> Iterable<MutableMap.MutableEntry<(PsiTypeParameter..PsiTypeParameter?), (PsiType..PsiType?)>>.fold(initial: PsiSubstitutor, operation: (PsiSubstitutor, MutableMap.MutableEntry<(PsiTypeParameter..PsiTypeParameter?), (PsiType..PsiType?)>) -> PsiSubstitutor): PsiSubstitutor defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [102:71] ==> public inline fun <T, R> Iterable<MutableMap.MutableEntry<(PsiTypeParameter..PsiTypeParameter?), (PsiType..PsiType?)>>.fold(initial: PsiSubstitutor, operation: (acc: PsiSubstitutor, MutableMap.MutableEntry<(PsiTypeParameter..PsiTypeParameter?), (PsiType..PsiType?)>) -> PsiSubstitutor): PsiSubstitutor defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> MutableEntry<(com.intellij.psi.PsiTypeParameter..com.intellij.psi.PsiTypeParameter?), (com.intellij.psi.PsiType..com.intellij.psi.PsiType?)>
     <R> -> PsiSubstitutor

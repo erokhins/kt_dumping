@@ -117,7 +117,7 @@ Inferred types:
 
 'resultingDescriptor' @ [61:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'propertyDescriptor' @ [62:16] ==> val propertyDescriptor: PropertyDescriptor defined in org.jetbrains.kotlin.idea.intentions.copyConcatenatedStringToClipboard.ConcatenatedStringGenerator.convertToValueIfCompileTimeConstant[LocalVariableDescriptor]
 

@@ -258,8 +258,6 @@ Inferred types:
 
 'text' @ [139:51] ==> val text: String defined in org.jetbrains.kotlin.compilerRunner.CompilerOutputParser.CompilerOutputSAXHandler.endElement[LocalVariableDescriptor]
 
-'CompilerMessageLocation' @ [139:57] ==> public companion object defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageLocation[FakeCallableDescriptorForObject]
-
 'create' @ [139:81] ==> @JvmStatic public final fun create(path: String?, line: Int, column: Int, lineContent: String?): CompilerMessageLocation? defined in org.jetbrains.kotlin.cli.common.messages.CompilerMessageLocation.Companion[DeserializedSimpleFunctionDescriptor]
 
 'path' @ [139:88] ==> private final var path: String? defined in org.jetbrains.kotlin.compilerRunner.CompilerOutputParser.CompilerOutputSAXHandler[PropertyDescriptorImpl]

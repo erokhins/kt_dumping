@@ -10,7 +10,7 @@
 
 'getInstance' @ [40:38] ==> @NotNull public open fun <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> getInstance(p0: (Class<out (PatternConfigurationProducer..PatternConfigurationProducer?)>..Class<out (PatternConfigurationProducer..PatternConfigurationProducer?)>?)): PatternConfigurationProducer defined in com.intellij.execution.actions.RunConfigurationProducer[JavaMethodDescriptor]
 Inferred types:
-    <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> -> PatternConfigurationProducer
+    <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> -> (com.intellij.execution.junit.PatternConfigurationProducer..com.intellij.execution.junit.PatternConfigurationProducer?)
 
 'PatternConfigurationProducer' @ [40:50] ==> public constructor PatternConfigurationProducer() defined in com.intellij.execution.junit.PatternConfigurationProducer[JavaClassConstructorDescriptor]
 
@@ -26,11 +26,13 @@ Inferred types:
 
 'location' @ [43:28] ==> public final val ConfigurationContext.location: raw (Location<(PsiElement..PsiElement?)>?..Location<*>?)[MyPropertyDescriptor]
 
-'psiElement' @ [43:38] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [43:38] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
-'KotlinJUnitRunConfigurationProducer' @ [44:25] ==> public companion object defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer[FakeCallableDescriptorForObject]
+'?:' @ [44:25] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiClass?, right: PsiClass): PsiClass[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiClass
 
 'getTestClass' @ [44:61] ==> public final fun getTestClass(leaf: PsiElement): PsiClass? defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.Companion[SimpleFunctionDescriptorImpl]
 
@@ -112,7 +114,7 @@ Inferred types:
 
 'location' @ [64:28] ==> public final val ConfigurationContext.location: raw (Location<(PsiElement..PsiElement?)>?..Location<*>?)[MyPropertyDescriptor]
 
-'psiElement' @ [64:38] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [64:38] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
@@ -122,7 +124,7 @@ Inferred types:
 
 'getInstance' @ [67:38] ==> @NotNull public open fun <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> getInstance(p0: (Class<out (PatternConfigurationProducer..PatternConfigurationProducer?)>..Class<out (PatternConfigurationProducer..PatternConfigurationProducer?)>?)): PatternConfigurationProducer defined in com.intellij.execution.actions.RunConfigurationProducer[JavaMethodDescriptor]
 Inferred types:
-    <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> -> PatternConfigurationProducer
+    <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> -> (com.intellij.execution.junit.PatternConfigurationProducer..com.intellij.execution.junit.PatternConfigurationProducer?)
 
 'PatternConfigurationProducer' @ [67:50] ==> public constructor PatternConfigurationProducer() defined in com.intellij.execution.junit.PatternConfigurationProducer[JavaClassConstructorDescriptor]
 
@@ -230,7 +232,7 @@ Inferred types:
 
 'getInstance' @ [102:38] ==> @NotNull public open fun <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> getInstance(p0: (Class<out (PatternConfigurationProducer..PatternConfigurationProducer?)>..Class<out (PatternConfigurationProducer..PatternConfigurationProducer?)>?)): PatternConfigurationProducer defined in com.intellij.execution.actions.RunConfigurationProducer[JavaMethodDescriptor]
 Inferred types:
-    <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> -> PatternConfigurationProducer
+    <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> -> (com.intellij.execution.junit.PatternConfigurationProducer..com.intellij.execution.junit.PatternConfigurationProducer?)
 
 'PatternConfigurationProducer' @ [102:50] ==> public constructor PatternConfigurationProducer() defined in com.intellij.execution.junit.PatternConfigurationProducer[JavaClassConstructorDescriptor]
 
@@ -242,13 +244,15 @@ Inferred types:
 
 'context' @ [102:119] ==> value-parameter context: ConfigurationContext defined in org.jetbrains.kotlin.idea.run.KotlinTestMethodGradleConfigurationProducer.doSetupConfigurationFromContext[ValueParameterDescriptorImpl]
 
-'KotlinJUnitRunConfigurationProducer' @ [106:30] ==> public companion object defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer[FakeCallableDescriptorForObject]
+'?:' @ [106:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Location<PsiMethod>?, right: Location<PsiMethod>): Location<PsiMethod>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Location<PsiMethod>
 
 'getTestMethodLocation' @ [106:66] ==> public final fun getTestMethodLocation(leaf: PsiElement): Location<PsiMethod>? defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.Companion[SimpleFunctionDescriptorImpl]
 
 'contextLocation' @ [106:88] ==> val contextLocation: (Location<(PsiElement..PsiElement?)>..Location<*>) defined in org.jetbrains.kotlin.idea.run.KotlinTestMethodGradleConfigurationProducer.doSetupConfigurationFromContext[LocalVariableDescriptor]
 
-'psiElement' @ [106:104] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [106:104] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
@@ -290,7 +294,7 @@ Inferred types:
 
 'getInstance' @ [120:38] ==> @NotNull public open fun <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> getInstance(p0: (Class<out (PatternConfigurationProducer..PatternConfigurationProducer?)>..Class<out (PatternConfigurationProducer..PatternConfigurationProducer?)>?)): PatternConfigurationProducer defined in com.intellij.execution.actions.RunConfigurationProducer[JavaMethodDescriptor]
 Inferred types:
-    <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> -> PatternConfigurationProducer
+    <T : raw (RunConfigurationProducer<(RunConfiguration..RunConfiguration?)>..RunConfigurationProducer<*>?)> -> (com.intellij.execution.junit.PatternConfigurationProducer..com.intellij.execution.junit.PatternConfigurationProducer?)
 
 'PatternConfigurationProducer' @ [120:50] ==> public constructor PatternConfigurationProducer() defined in com.intellij.execution.junit.PatternConfigurationProducer[JavaClassConstructorDescriptor]
 
@@ -310,13 +314,15 @@ Inferred types:
 
 'module' @ [125:30] ==> public final val ConfigurationContext.module: (Module..Module?)[MyPropertyDescriptor]
 
-'KotlinJUnitRunConfigurationProducer' @ [127:30] ==> public companion object defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer[FakeCallableDescriptorForObject]
+'?:' @ [127:30] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Location<PsiMethod>?, right: Location<PsiMethod>): Location<PsiMethod>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Location<PsiMethod>
 
 'getTestMethodLocation' @ [127:66] ==> public final fun getTestMethodLocation(leaf: PsiElement): Location<PsiMethod>? defined in org.jetbrains.kotlin.idea.run.KotlinJUnitRunConfigurationProducer.Companion[SimpleFunctionDescriptorImpl]
 
 'contextLocation' @ [127:88] ==> val contextLocation: (Location<(PsiElement..PsiElement?)>..Location<*>) defined in org.jetbrains.kotlin.idea.run.KotlinTestMethodGradleConfigurationProducer.doIsConfigurationFromContext[LocalVariableDescriptor]
 
-'psiElement' @ [127:104] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: (PsiElement..PsiElement?)[MyPropertyDescriptor]
+'psiElement' @ [127:104] ==> public final val <E : (PsiElement..PsiElement?)> Location<(PsiElement..PsiElement?)>.psiElement: PsiElement[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 

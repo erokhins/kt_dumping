@@ -16,7 +16,7 @@
 
 'of' @ [44:105] ==> @SafeVarargs public open fun <E : (Enum<(Descriptors.FieldDescriptor.JavaType..Descriptors.FieldDescriptor.JavaType?)>..Enum<(Descriptors.FieldDescriptor.JavaType..Descriptors.FieldDescriptor.JavaType?)>?)> of(p0: (Descriptors.FieldDescriptor.JavaType..Descriptors.FieldDescriptor.JavaType?), vararg p1: (Descriptors.FieldDescriptor.JavaType..Descriptors.FieldDescriptor.JavaType?)): (EnumSet<(Descriptors.FieldDescriptor.JavaType..Descriptors.FieldDescriptor.JavaType?)>..EnumSet<(Descriptors.FieldDescriptor.JavaType..Descriptors.FieldDescriptor.JavaType?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> JavaType
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.protobuf.Descriptors.FieldDescriptor.JavaType..org.jetbrains.kotlin.protobuf.Descriptors.FieldDescriptor.JavaType?)
 
 'INT' @ [45:50] ==> enum entry INT defined in org.jetbrains.kotlin.protobuf.Descriptors.FieldDescriptor.JavaType[FakeCallableDescriptorForObject]
 
@@ -59,7 +59,7 @@ Inferred types:
 
 'LinkedList' @ [70:68] ==> public constructor LinkedList<E : (Any..Any?)>() defined in java.util.LinkedList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Descriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.protobuf.Descriptors.Descriptor..org.jetbrains.kotlin.protobuf.Descriptors.Descriptor?)
 
 'linkedSetOf' @ [71:75] ==> @SinceKotlin @InlineOnly public inline fun <T> linkedSetOf(): LinkedHashSet<Descriptors.FieldDescriptor> /* = LinkedHashSet<Descriptors.FieldDescriptor> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1228,7 +1228,7 @@ Inferred types:
 
 'getExtension' @ [383:25] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.protobuf.DescriptorProtos.FieldOptions[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'skipInComparison' @ [383:62] ==> public final val skipInComparison: (GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.DebugExtOptionsProtoBuf[JavaPropertyDescriptor]
 
@@ -1280,7 +1280,7 @@ Inferred types:
 
 'getExtension' @ [400:31] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.protobuf.DescriptorProtos.FieldOptions[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'stringIdInTable' @ [400:68] ==> public final val stringIdInTable: (GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.DebugExtOptionsProtoBuf[JavaPropertyDescriptor]
 
@@ -1290,7 +1290,7 @@ Inferred types:
 
 'getExtension' @ [401:31] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.protobuf.DescriptorProtos.FieldOptions[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'nameIdInTable' @ [401:68] ==> public final val nameIdInTable: (GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.DebugExtOptionsProtoBuf[JavaPropertyDescriptor]
 
@@ -1308,7 +1308,7 @@ Inferred types:
 
 'getExtension' @ [403:31] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.protobuf.DescriptorProtos.FieldOptions[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'fqNameIdInTable' @ [403:68] ==> public final val fqNameIdInTable: (GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.DebugExtOptionsProtoBuf[JavaPropertyDescriptor]
 
@@ -1386,7 +1386,7 @@ Inferred types:
 
 'getExtension' @ [423:27] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.protobuf.DescriptorProtos.FieldOptions[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'stringIdInTable' @ [423:64] ==> public final val stringIdInTable: (GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.DebugExtOptionsProtoBuf[JavaPropertyDescriptor]
 
@@ -1396,7 +1396,7 @@ Inferred types:
 
 'getExtension' @ [424:27] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.protobuf.DescriptorProtos.FieldOptions[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'nameIdInTable' @ [424:64] ==> public final val nameIdInTable: (GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.DebugExtOptionsProtoBuf[JavaPropertyDescriptor]
 
@@ -1408,7 +1408,7 @@ Inferred types:
 
 'getExtension' @ [426:27] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..Extension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.protobuf.DescriptorProtos.FieldOptions[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'fqNameIdInTable' @ [426:64] ==> public final val fqNameIdInTable: (GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>..GeneratedMessage.GeneratedExtension<(DescriptorProtos.FieldOptions..DescriptorProtos.FieldOptions?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.DebugExtOptionsProtoBuf[JavaPropertyDescriptor]
 

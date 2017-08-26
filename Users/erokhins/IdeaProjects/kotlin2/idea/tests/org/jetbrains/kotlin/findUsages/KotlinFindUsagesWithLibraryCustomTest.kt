@@ -30,7 +30,7 @@ Inferred types:
 Inferred types:
     <reified T : PsiElement> -> KtParameter
 
-'findUsages' @ [28:22] ==> internal fun findUsages(targetElement: PsiElement, options: FindUsagesOptions?, highlightingMode: Boolean, project: Project, searchSuperDeclaration: Boolean = ...): Collection<UsageInfo> defined in org.jetbrains.kotlin.findUsages[SimpleFunctionDescriptorImpl]
+'findUsages' @ [28:22] ==> internal fun findUsages(targetElement: PsiElement, options: FindUsagesOptions?, highlightingMode: Boolean, project: Project, searchSuperDeclaration: Boolean = ...): Collection<UsageInfo> defined in org.jetbrains.kotlin.findUsages in file AbstractFindUsagesTest.kt[SimpleFunctionDescriptorImpl]
 
 'jetParameter' @ [28:33] ==> val jetParameter: KtParameter defined in org.jetbrains.kotlin.findUsages.KotlinFindUsagesWithLibraryCustomTest.testFindUsagesForLocalClassProperty[LocalVariableDescriptor]
 

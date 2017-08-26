@@ -8,8 +8,8 @@
 
 'THashMap' @ [50:74] ==> public constructor THashMap<K : (Any..Any?), V : (Any..Any?)>() defined in gnu.trove.THashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> FqName
-    <V : (Any..Any?)> -> VirtualFile
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
+    <V : (Any..Any?)> -> VirtualFile?
 
 'allScope' @ [51:46] ==> @NotNull public open fun allScope(@NotNull p0: Project): GlobalSearchScope defined in com.intellij.psi.search.GlobalSearchScope[JavaMethodDescriptor]
 
@@ -116,8 +116,8 @@ Inferred types:
 
 'THashMap' @ [74:64] ==> public constructor THashMap<K : (Any..Any?), V : (Any..Any?)>() defined in gnu.trove.THashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ClassId
-    <V : (Any..Any?)> -> JavaClass
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.name.ClassId..org.jetbrains.kotlin.name.ClassId?)
+    <V : (Any..Any?)> -> JavaClass?
 
 'BinaryClassSignatureParser' @ [76:13] ==> public constructor BinaryClassSignatureParser(globalContext: ClassifierResolutionContext) defined in org.jetbrains.kotlin.load.java.structure.impl.classFiles.BinaryClassSignatureParser[DeserializedClassConstructorDescriptor]
 
@@ -224,6 +224,8 @@ Inferred types:
     <T> -> PsiClass
     <R> -> JavaClassImpl
 
+'JavaClassImpl' @ [109:99] ==> public constructor JavaClassImpl(psiClass: PsiClass) defined in org.jetbrains.kotlin.load.java.structure.impl.JavaClassImpl[DeserializedClassConstructorDescriptor]
+
 'forEachClassId' @ [121:9] ==> private final inline fun forEachClassId(fqName: String, block: (ClassId) -> Unit): Unit defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCliJavaFileManagerImpl[SimpleFunctionDescriptorImpl]
 
 'qName' @ [121:24] ==> value-parameter qName: String defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCliJavaFileManagerImpl.findClass[ValueParameterDescriptorImpl]
@@ -281,9 +283,9 @@ Inferred types:
 
 'perfCounter' @ [145:90] ==> private final val perfCounter: PerformanceCounter defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCliJavaFileManagerImpl[PropertyDescriptorImpl]
 
-'time' @ [145:102] ==> public final fun <T> time(block: () -> Array<PsiClass>): Array<PsiClass> defined in org.jetbrains.kotlin.util.PerformanceCounter[DeserializedSimpleFunctionDescriptor]
+'time' @ [145:102] ==> public final fun <T> time(block: () -> (Array<PsiClass>..Array<out (PsiClass..PsiClass?)>)): (Array<PsiClass>..Array<out (PsiClass..PsiClass?)>) defined in org.jetbrains.kotlin.util.PerformanceCounter[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Array<PsiClass>
+    <T> -> (kotlin.Array<com.intellij.psi.PsiClass>..kotlin.Array<out (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)>)
 
 'ArrayList' @ [146:22] ==> public constructor ArrayList<E : (Any..Any?)>(p0: Int) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:

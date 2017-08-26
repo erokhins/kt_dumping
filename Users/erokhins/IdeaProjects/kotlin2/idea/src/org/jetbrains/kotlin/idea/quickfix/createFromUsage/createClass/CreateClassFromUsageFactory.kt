@@ -24,7 +24,7 @@ Inferred types:
     <T> -> ClassKind
     <R> -> QuickFixWithDelegateFactory
 
-'QuickFixWithDelegateFactory' @ [36:13] ==> public fun QuickFixWithDelegateFactory(priority: IntentionActionPriority, createAction: () -> IntentionAction?): QuickFixWithDelegateFactory defined in org.jetbrains.kotlin.idea.quickfix[SimpleFunctionDescriptorImpl]
+'QuickFixWithDelegateFactory' @ [36:13] ==> public fun QuickFixWithDelegateFactory(priority: IntentionActionPriority, createAction: () -> IntentionAction?): QuickFixWithDelegateFactory defined in org.jetbrains.kotlin.idea.quickfix in file QuickFixWithDelegateFactory.kt[SimpleFunctionDescriptorImpl]
 
 'classKind' @ [36:41] ==> value-parameter classKind: ClassKind defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.createClass.CreateClassFromUsageFactory.createFixes.<anonymous>[ValueParameterDescriptorImpl]
 

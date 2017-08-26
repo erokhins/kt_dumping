@@ -187,8 +187,6 @@ Inferred types:
 
 'asString' @ [86:125] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.FqName[JavaMethodDescriptor]
 
-'KotlinRunConfigurationProducer' @ [87:39] ==> public companion object defined in org.jetbrains.kotlin.idea.run.KotlinRunConfigurationProducer[FakeCallableDescriptorForObject]
-
 'getEntryPointContainer' @ [87:70] ==> public final fun getEntryPointContainer(locationElement: PsiElement): KtDeclarationContainer? defined in org.jetbrains.kotlin.idea.run.KotlinRunConfigurationProducer.Companion[DeserializedSimpleFunctionDescriptor]
 
 'function' @ [87:93] ==> value-parameter function: KtNamedFunction defined in org.jetbrains.kotlin.idea.run.RunConfigurationTest.testMainInTest.functionVisitor[ValueParameterDescriptorImpl]
@@ -218,8 +216,6 @@ Inferred types:
 'fqName' @ [95:117] ==> public final val KtNamedFunction.fqName: FqName?[MyPropertyDescriptor]
 
 'asString' @ [95:125] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.FqName[JavaMethodDescriptor]
-
-'KotlinRunConfigurationProducer' @ [96:39] ==> public companion object defined in org.jetbrains.kotlin.idea.run.KotlinRunConfigurationProducer[FakeCallableDescriptorForObject]
 
 'getEntryPointContainer' @ [96:70] ==> public final fun getEntryPointContainer(locationElement: PsiElement): KtDeclarationContainer? defined in org.jetbrains.kotlin.idea.run.KotlinRunConfigurationProducer.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -353,9 +349,13 @@ Inferred types:
 
 'ConfigLibraryUtil' @ [136:16] ==> public object ConfigLibraryUtil defined in org.jetbrains.kotlin.idea.test in file ConfigLibraryUtil.kt[FakeCallableDescriptorForObject]
 
+'configureKotlinRuntimeAndSdk' @ [136:35] ==> public final fun configureKotlinRuntimeAndSdk(module: Module, sdk: Sdk): Unit defined in org.jetbrains.kotlin.idea.test.ConfigLibraryUtil[SimpleFunctionDescriptorImpl]
+
 'doTest' @ [140:9] ==> private final fun doTest(configureRuntime: (Module, Sdk) -> Unit): Unit defined in org.jetbrains.kotlin.idea.run.RunConfigurationTest[SimpleFunctionDescriptorImpl]
 
 'ConfigLibraryUtil' @ [140:16] ==> public object ConfigLibraryUtil defined in org.jetbrains.kotlin.idea.test in file ConfigLibraryUtil.kt[FakeCallableDescriptorForObject]
+
+'configureKotlinJsRuntimeAndSdk' @ [140:35] ==> public final fun configureKotlinJsRuntimeAndSdk(module: Module, sdk: Sdk): Unit defined in org.jetbrains.kotlin.idea.test.ConfigLibraryUtil[SimpleFunctionDescriptorImpl]
 
 'configureModule' @ [144:34] ==> private final fun configureModule(moduleDir: String, outputParentDir: VirtualFile, configModule: Module = ...): RunConfigurationTest.CreateModuleResult defined in org.jetbrains.kotlin.idea.run.RunConfigurationTest[SimpleFunctionDescriptorImpl]
 
@@ -547,7 +547,7 @@ Inferred types:
 
 'put' @ [192:41] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: DataKey<(Location<*>..Location<*>?)>, p1: (Location<*>..Location<*>?)): Unit defined in com.intellij.testFramework.MapDataContext[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Location<*>
+    <T : (Any..Any?)> -> (com.intellij.execution.Location<*>..com.intellij.execution.Location<*>?)
 
 'DATA_KEY' @ [192:54] ==> public final val DATA_KEY: (DataKey<(Location<*>..Location<*>?)>..DataKey<(Location<*>..Location<*>?)>?) defined in com.intellij.execution.Location[JavaPropertyDescriptor]
 

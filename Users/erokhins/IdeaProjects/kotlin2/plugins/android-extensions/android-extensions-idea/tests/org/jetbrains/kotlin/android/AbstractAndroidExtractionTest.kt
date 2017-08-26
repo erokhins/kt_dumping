@@ -24,7 +24,7 @@
 
 'virtualFile' @ [29:52] ==> val virtualFile: VirtualFile defined in org.jetbrains.kotlin.android.AbstractAndroidExtractionTest.doTest[LocalVariableDescriptor]
 
-'checkExtract' @ [31:9] ==> public fun checkExtract(files: ExtractTestFiles, checkAdditionalAfterdata: Boolean = ..., action: (PsiFile) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce[SimpleFunctionDescriptorImpl]
+'checkExtract' @ [31:9] ==> public fun checkExtract(files: ExtractTestFiles, checkAdditionalAfterdata: Boolean = ..., action: (PsiFile) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.introduce in file AbstractExtractionTest.kt[SimpleFunctionDescriptorImpl]
 
 'ExtractTestFiles' @ [31:22] ==> public constructor ExtractTestFiles(path: String, mainFile: PsiFile, extraFilesToPsi: Map<PsiFile, File> = ...) defined in org.jetbrains.kotlin.idea.refactoring.introduce.ExtractTestFiles[ClassConstructorDescriptorImpl]
 

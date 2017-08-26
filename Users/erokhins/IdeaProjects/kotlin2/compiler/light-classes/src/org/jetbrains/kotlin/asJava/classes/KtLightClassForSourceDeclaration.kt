@@ -10,9 +10,9 @@
 
 'classOrObject' @ [69:59] ==> protected final val classOrObject: KtClassOrObject defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration[PropertyDescriptorImpl]
 
-'lazyPub' @ [71:33] ==> public fun <T> lazyPub(initializer: () -> KtLightPsiReferenceList?): Lazy<KtLightPsiReferenceList?> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [71:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtLightPsiReferenceList?
+    <T> -> T
 
 'super' @ [72:28] ==> <this> defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration[LazyClassReceiverParameterDescriptor]
 
@@ -24,9 +24,9 @@ Inferred types:
 
 'this' @ [73:47] ==> <this> defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration[LazyClassReceiverParameterDescriptor]
 
-'lazyPub' @ [76:36] ==> public fun <T> lazyPub(initializer: () -> KtLightPsiReferenceList?): Lazy<KtLightPsiReferenceList?> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [76:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtLightPsiReferenceList?
+    <T> -> T
 
 'super' @ [77:28] ==> <this> defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration[LazyClassReceiverParameterDescriptor]
 
@@ -80,9 +80,9 @@ Inferred types:
 
 'lightClassData' @ [103:16] ==> val lightClassData: LightClassDataHolder.ForClass defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.getLightClassDataHolder[LocalVariableDescriptor]
 
-'lazyPub' @ [106:45] ==> public fun <T> lazyPub(initializer: () -> <no name provided>): Lazy<<no name provided>> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [106:45] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> <no name provided>
+    <T> -> T
 
 'classOrObject' @ [107:9] ==> protected final val classOrObject: KtClassOrObject defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration[PropertyDescriptorImpl]
 
@@ -200,13 +200,13 @@ Inferred types:
 
 'java' @ [150:42] ==> public val <T> KClass<out KtLightClassForSourceDeclaration>.java: Class<out KtLightClassForSourceDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtLightClassForSourceDeclaration
+    <T> -> Captured(out KtLightClassForSourceDeclaration)
 
 'other' @ [150:50] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.equals[ValueParameterDescriptorImpl]
 
 'java' @ [150:63] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'other' @ [152:22] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.equals[ValueParameterDescriptorImpl]
 
@@ -244,9 +244,9 @@ Inferred types:
 
 'getContainingClass' @ [170:22] ==> @Nullable public open fun getContainingClass(): PsiClass? defined in org.jetbrains.kotlin.asJava.classes.KtLazyLightClass[JavaMethodDescriptor]
 
-'lazyPub' @ [173:61] ==> public fun <T> lazyPub(initializer: () -> PsiTypeParameterList): Lazy<PsiTypeParameterList> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [173:61] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiTypeParameterList
+    <T> -> T
 
 'LightClassUtil' @ [174:9] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
 
@@ -268,9 +268,9 @@ Inferred types:
 
 'asString' @ [181:65] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'lazyPub' @ [183:51] ==> public fun <T> lazyPub(initializer: () -> KtLightClassForSourceDeclaration.KtLightClassModifierList): Lazy<KtLightClassForSourceDeclaration.KtLightClassModifierList> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [183:51] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KtLightClassModifierList
+    <T> -> T
 
 'KtLightClassModifierList' @ [183:61] ==> public constructor KtLightClassModifierList(containingClass: KtLightClassForSourceDeclaration) defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.KtLightClassModifierList[ClassConstructorDescriptorImpl]
 
@@ -500,7 +500,7 @@ Inferred types:
 
 'reverse' @ [261:50] ==> @NotNull @Contract public open fun <E : (Any..Any?)> reverse(@NotNull p0: (MutableList<(String..String?)>..List<(String..String?)>)): (MutableList<(String..String?)>..List<(String..String?)>) defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'reversedNames' @ [261:58] ==> val reversedNames: (ArrayList<(String..String?)>..ArrayList<(String..String?)>?) defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.toQualifiedName[LocalVariableDescriptor]
 
@@ -622,11 +622,11 @@ Inferred types:
 
 'java' @ [298:46] ==> public val <T> KClass<out KtLightClassForSourceDeclaration>.java: Class<out KtLightClassForSourceDeclaration> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KtLightClassForSourceDeclaration
+    <T> -> Captured(out KtLightClassForSourceDeclaration)
 
 'simpleName' @ [298:51] ==> public final val <T : (Any..Any?)> Class<out KtLightClassForSourceDeclaration>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KtLightClassForSourceDeclaration
+    <T : (Any..Any?)> -> Captured(out KtLightClassForSourceDeclaration)
 
 'classOrObject' @ [298:65] ==> protected final val classOrObject: KtClassOrObject defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration[PropertyDescriptorImpl]
 
@@ -794,7 +794,7 @@ Inferred types:
 
 'getUserData' @ [374:62] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(CachedValue<LightClassDataHolder.ForClass>..CachedValue<LightClassDataHolder.ForClass>?)>): CachedValue<LightClassDataHolder.ForClass>? defined in org.jetbrains.kotlin.psi.KtClassOrObject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CachedValue<ForClass>
+    <T : (Any..Any?)> -> (com.intellij.psi.util.CachedValue<org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForClass>..com.intellij.psi.util.CachedValue<org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForClass>?)
 
 'JAVA_API_STUB' @ [374:74] ==> private final val JAVA_API_STUB: Key<(CachedValue<LightClassDataHolder.ForClass>..CachedValue<LightClassDataHolder.ForClass>?)> defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.Companion[PropertyDescriptorImpl]
 
@@ -802,7 +802,7 @@ Inferred types:
 
 'getUserData' @ [375:38] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(CachedValue<LightClassDataHolder.ForClass>..CachedValue<LightClassDataHolder.ForClass>?)>): CachedValue<LightClassDataHolder.ForClass>? defined in org.jetbrains.kotlin.psi.KtClassOrObject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CachedValue<ForClass>
+    <T : (Any..Any?)> -> (com.intellij.psi.util.CachedValue<org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForClass>..com.intellij.psi.util.CachedValue<org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForClass>?)
 
 'JAVA_API_STUB' @ [375:50] ==> private final val JAVA_API_STUB: Key<(CachedValue<LightClassDataHolder.ForClass>..CachedValue<LightClassDataHolder.ForClass>?)> defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.Companion[PropertyDescriptorImpl]
 
@@ -818,7 +818,7 @@ Inferred types:
 
 'createCachedValue' @ [377:79] ==> @NotNull public abstract fun <T : (Any..Any?)> createCachedValue(@NotNull p0: CachedValueProvider<(LightClassDataHolder.ForClass..LightClassDataHolder.ForClass?)>, p1: Boolean): CachedValue<(LightClassDataHolder.ForClass..LightClassDataHolder.ForClass?)> defined in com.intellij.psi.util.CachedValuesManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ForClass
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForClass..org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForClass?)
 
 'LightClassDataProviderForClassOrObject' @ [378:25] ==> public constructor LightClassDataProviderForClassOrObject(classOrObject: KtClassOrObject) defined in org.jetbrains.kotlin.asJava.builder.LightClassDataProviderForClassOrObject[ClassConstructorDescriptorImpl]
 
@@ -830,7 +830,7 @@ Inferred types:
 
 'putUserDataIfAbsent' @ [379:39] ==> @NotNull public open fun <T : (Any..Any?)> putUserDataIfAbsent(@NotNull p0: Key<(CachedValue<LightClassDataHolder.ForClass>..CachedValue<LightClassDataHolder.ForClass>?)>, @NotNull p1: CachedValue<LightClassDataHolder.ForClass>): CachedValue<LightClassDataHolder.ForClass> defined in org.jetbrains.kotlin.psi.KtClassOrObject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CachedValue<ForClass>
+    <T : (Any..Any?)> -> (com.intellij.psi.util.CachedValue<org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForClass>..com.intellij.psi.util.CachedValue<org.jetbrains.kotlin.asJava.builder.LightClassDataHolder.ForClass>?)
 
 'JAVA_API_STUB' @ [379:59] ==> private final val JAVA_API_STUB: Key<(CachedValue<LightClassDataHolder.ForClass>..CachedValue<LightClassDataHolder.ForClass>?)> defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.Companion[PropertyDescriptorImpl]
 
@@ -865,8 +865,6 @@ Inferred types:
 'fqName' @ [391:25] ==> val fqName: FqNameUnsafe defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.Companion.checkSuperTypeByFQName[LocalVariableDescriptor]
 
 'isSafe' @ [391:32] ==> public final val FqNameUnsafe.isSafe: Boolean[MyPropertyDescriptor]
-
-'JavaToKotlinClassMap' @ [392:25] ==> public object JavaToKotlinClassMap : PlatformToKotlinClassMap defined in org.jetbrains.kotlin.platform[FakeCallableDescriptorForObject]
 
 'mapJavaToKotlin' @ [392:46] ==> public final fun mapJavaToKotlin(fqName: FqName): ClassId? defined in org.jetbrains.kotlin.platform.JavaToKotlinClassMap[DeserializedSimpleFunctionDescriptor]
 
@@ -1055,9 +1053,9 @@ Inferred types:
 
 'containingClass' @ [456:65] ==> value-parameter containingClass: KtLightClassForSourceDeclaration defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.KtLightClassModifierList.<init>[ValueParameterDescriptorImpl]
 
-'lazyPub' @ [458:34] ==> public fun <T> lazyPub(initializer: () -> Set<String>): Lazy<Set<String>> defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'getValue' @ [458:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Set<String>
+    <T> -> T
 
 'containingClass' @ [458:44] ==> value-parameter containingClass: KtLightClassForSourceDeclaration defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.KtLightClassModifierList.<init>[ValueParameterDescriptorImpl]
 
@@ -1081,7 +1079,7 @@ Inferred types:
 
 'owner' @ [467:18] ==> protected final val owner: KtLightClassForSourceDeclaration defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForSourceDeclaration.KtLightClassModifierList[PropertyDescriptorImpl]
 
-'isPossiblyAffectedByAllOpen' @ [467:24] ==> public fun KtLightClassForSourceDeclaration.isPossiblyAffectedByAllOpen(): Boolean defined in org.jetbrains.kotlin.asJava.classes[SimpleFunctionDescriptorImpl]
+'isPossiblyAffectedByAllOpen' @ [467:24] ==> public fun KtLightClassForSourceDeclaration.isPossiblyAffectedByAllOpen(): Boolean defined in org.jetbrains.kotlin.asJava.classes in file KtLightClassForSourceDeclaration.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [467:57] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -1137,7 +1135,7 @@ Inferred types:
 
 'getService' @ [496:32] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(LightClassInheritanceHelper..LightClassInheritanceHelper?)>): (LightClassInheritanceHelper..LightClassInheritanceHelper?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LightClassInheritanceHelper
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.asJava.classes.LightClassInheritanceHelper..org.jetbrains.kotlin.asJava.classes.LightClassInheritanceHelper?)
 
 'project' @ [496:43] ==> value-parameter project: Project defined in org.jetbrains.kotlin.asJava.classes.LightClassInheritanceHelper.Companion.getService[ValueParameterDescriptorImpl]
 

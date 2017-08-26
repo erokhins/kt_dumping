@@ -222,8 +222,6 @@ Inferred types:
 
 'delete' @ [83:25] ==> public abstract fun delete(): Unit defined in org.jetbrains.kotlin.psi.KtElement[JavaMethodDescriptor]
 
-'PsiChildRange' @ [84:13] ==> public companion object defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [84:27] ==> public final val EMPTY: PsiChildRange defined in org.jetbrains.kotlin.psi.psiUtil.PsiChildRange.Companion[PropertyDescriptorImpl]
 
 'listOf' @ [89:40] ==> public fun <T> listOf(vararg elements: ArgumentType<out Any>): List<ArgumentType<out Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -270,6 +268,8 @@ Inferred types:
 
 'Name' @ [93:63] ==> private constructor Name(@NotNull p0: String, p1: Boolean) defined in org.jetbrains.kotlin.name.Name[JavaClassConstructorDescriptor]
 
+'render' @ [93:69] ==> public fun Name.render(): String defined in org.jetbrains.kotlin.renderer[DeserializedSimpleFunctionDescriptor]
+
 'PsiChildRangeArgumentType' @ [94:9] ==> private object PsiChildRangeArgumentType : PsiElementPlaceholderArgumentType<PsiChildRange, KtElement> defined in org.jetbrains.kotlin.psi in file createByPattern.kt[FakeCallableDescriptorForObject]
 
 'args' @ [98:25] ==> value-parameter vararg args: Any defined in org.jetbrains.kotlin.psi.createByPattern[ValueParameterDescriptorImpl]
@@ -299,7 +299,7 @@ Inferred types:
 
 'java' @ [100:88] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'SUPPORTED_ARGUMENT_TYPES' @ [100:115] ==> private val SUPPORTED_ARGUMENT_TYPES: List<ArgumentType<out Any>> defined in org.jetbrains.kotlin.psi in file createByPattern.kt[PropertyDescriptorImpl]
 
@@ -313,7 +313,7 @@ Inferred types:
 
 'simpleName' @ [100:164] ==> public final val <T : (Any..Any?)> Class<out Any>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'Suppress' @ [104:5] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
@@ -360,7 +360,7 @@ Inferred types:
 
 'component2' @ [113:25] ==> public final operator fun component2(): Map<Int, List<Placeholder>> defined in org.jetbrains.kotlin.psi.PatternData[SimpleFunctionDescriptorImpl]
 
-'processPattern' @ [113:44] ==> private fun processPattern(pattern: String, args: List<Any>): PatternData defined in org.jetbrains.kotlin.psi[SimpleFunctionDescriptorImpl]
+'processPattern' @ [113:44] ==> private fun processPattern(pattern: String, args: List<Any>): PatternData defined in org.jetbrains.kotlin.psi in file createByPattern.kt[SimpleFunctionDescriptorImpl]
 
 'pattern' @ [113:59] ==> value-parameter pattern: String defined in org.jetbrains.kotlin.psi.createByPattern[ValueParameterDescriptorImpl]
 
@@ -483,7 +483,7 @@ Inferred types:
 
 'simpleName' @ [141:107] ==> public final val <T : (Any..Any?)> Class<out PsiElement>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiElement
+    <T : (Any..Any?)> -> Captured(out PsiElement)
 
 'n' @ [141:131] ==> val n: Int defined in org.jetbrains.kotlin.psi.createByPattern[LocalVariableDescriptor]
 
@@ -1202,7 +1202,7 @@ Inferred types:
 
 'this' @ [329:46] ==> <this> defined in org.jetbrains.kotlin.psi.buildExpression[ReceiverParameterDescriptorImpl]
 
-'createExpressionByPattern' @ [329:51] ==> public fun KtPsiFactory.createExpressionByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtExpression defined in org.jetbrains.kotlin.psi[SimpleFunctionDescriptorImpl]
+'createExpressionByPattern' @ [329:51] ==> public fun KtPsiFactory.createExpressionByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtExpression defined in org.jetbrains.kotlin.psi in file createByPattern.kt[SimpleFunctionDescriptorImpl]
 
 'pattern' @ [329:77] ==> value-parameter pattern: String defined in org.jetbrains.kotlin.psi.buildExpression.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1216,7 +1216,7 @@ Inferred types:
 
 'this' @ [333:46] ==> <this> defined in org.jetbrains.kotlin.psi.buildValueArgumentList[ReceiverParameterDescriptorImpl]
 
-'createValueArgumentListByPattern' @ [333:51] ==> public fun KtPsiFactory.createValueArgumentListByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtValueArgumentList defined in org.jetbrains.kotlin.psi[SimpleFunctionDescriptorImpl]
+'createValueArgumentListByPattern' @ [333:51] ==> public fun KtPsiFactory.createValueArgumentListByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtValueArgumentList defined in org.jetbrains.kotlin.psi in file createByPattern.kt[SimpleFunctionDescriptorImpl]
 
 'pattern' @ [333:84] ==> value-parameter pattern: String defined in org.jetbrains.kotlin.psi.buildValueArgumentList.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1246,7 +1246,7 @@ Inferred types:
 
 'this' @ [341:46] ==> <this> defined in org.jetbrains.kotlin.psi.buildDestructuringDeclaration[ReceiverParameterDescriptorImpl]
 
-'createDestructuringDeclarationByPattern' @ [341:51] ==> public fun KtPsiFactory.createDestructuringDeclarationByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtDestructuringDeclaration defined in org.jetbrains.kotlin.psi[SimpleFunctionDescriptorImpl]
+'createDestructuringDeclarationByPattern' @ [341:51] ==> public fun KtPsiFactory.createDestructuringDeclarationByPattern(pattern: String, vararg args: Any, reformat: Boolean = ...): KtDestructuringDeclaration defined in org.jetbrains.kotlin.psi in file createByPattern.kt[SimpleFunctionDescriptorImpl]
 
 'pattern' @ [341:91] ==> value-parameter pattern: String defined in org.jetbrains.kotlin.psi.buildDestructuringDeclaration.<anonymous>[ValueParameterDescriptorImpl]
 

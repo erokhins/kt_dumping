@@ -116,8 +116,6 @@ Inferred types:
 
 'ReferenceElement' @ [74:33] ==> public constructor ReferenceElement(name: Identifier, typeArgs: List<Element>) defined in org.jetbrains.kotlin.j2k.ast.ReferenceElement[ClassConstructorDescriptorImpl]
 
-'Identifier' @ [74:50] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.Identifier[FakeCallableDescriptorForObject]
-
 'withNoPrototype' @ [74:61] ==> public final fun withNoPrototype(name: String, isNullable: Boolean = ..., quotingNeeded: Boolean = ..., imports: Collection<FqName> = ...): Identifier defined in org.jetbrains.kotlin.j2k.ast.Identifier.Companion[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [74:88] ==> @InlineOnly public inline fun <T> listOf(): List<Element> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -171,8 +169,6 @@ Inferred types:
 'variable' @ [81:39] ==> value-parameter variable: PsiVariable defined in org.jetbrains.kotlin.j2k.TypeConverter.convertVariableType[ValueParameterDescriptorImpl]
 
 'typeElement' @ [81:48] ==> public final val PsiVariable.typeElement: PsiTypeElement?[MyPropertyDescriptor]
-
-'CommentsAndSpacesInheritance' @ [81:61] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 
 'NO_SPACES' @ [81:90] ==> public final val NO_SPACES: CommentsAndSpacesInheritance defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance.Companion[PropertyDescriptorImpl]
 
@@ -256,9 +252,9 @@ Inferred types:
 
 'declarationScope' @ [106:40] ==> public final val PsiParameter.declarationScope: PsiElement[MyPropertyDescriptor]
 
-'if (element.hasModifierProperty(PsiModifier.PRIVATE)) element.containingClass else element.containingFile' @ [107:28] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {NavigatablePsiElement & PsiNamedElement}?, elseBranch: {NavigatablePsiElement & PsiNamedElement}?): {NavigatablePsiElement & PsiNamedElement}?[SimpleFunctionDescriptorImpl]
+'if (element.hasModifierProperty(PsiModifier.PRIVATE)) element.containingClass else element.containingFile' @ [107:28] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiElement?, elseBranch: PsiElement?): PsiElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {NavigatablePsiElement & PsiNamedElement}?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> PsiElement?
 
 'element' @ [107:32] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.j2k.TypeConverter.searchScope[ValueParameterDescriptorImpl]
 
@@ -274,9 +270,9 @@ Inferred types:
 
 'containingFile' @ [107:119] ==> public final val PsiField.containingFile: (PsiFile..PsiFile?)[MyPropertyDescriptor]
 
-'if (element.hasModifierProperty(PsiModifier.PRIVATE)) element.containingClass else element.containingFile' @ [108:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {NavigatablePsiElement & PsiNamedElement}?, elseBranch: {NavigatablePsiElement & PsiNamedElement}?): {NavigatablePsiElement & PsiNamedElement}?[SimpleFunctionDescriptorImpl]
+'if (element.hasModifierProperty(PsiModifier.PRIVATE)) element.containingClass else element.containingFile' @ [108:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiElement?, elseBranch: PsiElement?): PsiElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {NavigatablePsiElement & PsiNamedElement}?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> PsiElement?
 
 'element' @ [108:33] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.j2k.TypeConverter.searchScope[ValueParameterDescriptorImpl]
 
@@ -556,7 +552,7 @@ Inferred types:
 
 'referenceSearcher' @ [182:35] ==> public final val referenceSearcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.Converter[PropertyDescriptorImpl]
 
-'findVariableUsages' @ [182:53] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findVariableUsages' @ [182:53] ==> public fun ReferenceSearcher.findVariableUsages(variable: PsiVariable, scope: PsiElement): Collection<PsiReferenceExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'variable' @ [182:72] ==> value-parameter variable: PsiVariable defined in org.jetbrains.kotlin.j2k.TypeConverter.TypeFlavor.forVariableTypeNoCache[ValueParameterDescriptorImpl]
 
@@ -754,7 +750,7 @@ Inferred types:
 
 'referenceSearcher' @ [231:35] ==> public final val referenceSearcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.Converter[PropertyDescriptorImpl]
 
-'findMethodCalls' @ [231:53] ==> public fun ReferenceSearcher.findMethodCalls(method: PsiMethod, scope: PsiElement): Collection<PsiMethodCallExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findMethodCalls' @ [231:53] ==> public fun ReferenceSearcher.findMethodCalls(method: PsiMethod, scope: PsiElement): Collection<PsiMethodCallExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [231:69] ==> value-parameter method: PsiMethod defined in org.jetbrains.kotlin.j2k.TypeConverter.TypeFlavor.forMethodReturnTypeNoCache[ValueParameterDescriptorImpl]
 
@@ -1016,7 +1012,7 @@ Inferred types:
 
 'variable' @ [310:52] ==> value-parameter variable: PsiVariable defined in org.jetbrains.kotlin.j2k.TypeConverter.nullabilityFlavor.<no name provided>.forVariableTypeBeforeUsageSearch[ValueParameterDescriptorImpl]
 
-'shouldGenerateDefaultInitializer' @ [311:24] ==> public fun shouldGenerateDefaultInitializer(searcher: ReferenceSearcher, field: PsiField): Boolean defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'shouldGenerateDefaultInitializer' @ [311:24] ==> public fun shouldGenerateDefaultInitializer(searcher: ReferenceSearcher, field: PsiField): Boolean defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'converter' @ [311:57] ==> public final val converter: Converter defined in org.jetbrains.kotlin.j2k.TypeConverter[PropertyDescriptorImpl]
 
@@ -1143,7 +1139,7 @@ Inferred types:
 
 'otherOperand' @ [334:28] ==> val otherOperand: PsiExpression? defined in org.jetbrains.kotlin.j2k.TypeConverter.nullabilityFlavor.<no name provided>.isNullableFromUsage[LocalVariableDescriptor]
 
-'isNullLiteral' @ [334:42] ==> public fun PsiExpression.isNullLiteral(): Boolean defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'isNullLiteral' @ [334:42] ==> public fun PsiExpression.isNullLiteral(): Boolean defined in org.jetbrains.kotlin.j2k in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'parent' @ [337:22] ==> val parent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.j2k.TypeConverter.nullabilityFlavor.<no name provided>.isNullableFromUsage[LocalVariableDescriptor]
 
@@ -1195,7 +1191,7 @@ Inferred types:
 
 'referenceSearcher' @ [351:48] ==> public final val referenceSearcher: ReferenceSearcher defined in org.jetbrains.kotlin.j2k.Converter[PropertyDescriptorImpl]
 
-'findMethodCalls' @ [351:66] ==> public fun ReferenceSearcher.findMethodCalls(method: PsiMethod, scope: PsiElement): Collection<PsiMethodCallExpression> defined in org.jetbrains.kotlin.j2k[SimpleFunctionDescriptorImpl]
+'findMethodCalls' @ [351:66] ==> public fun ReferenceSearcher.findMethodCalls(method: PsiMethod, scope: PsiElement): Collection<PsiMethodCallExpression> defined in org.jetbrains.kotlin.j2k in file ReferenceSearcher.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [351:82] ==> val method: PsiMethod? defined in org.jetbrains.kotlin.j2k.TypeConverter.nullabilityFlavor.<no name provided>.forVariableTypeAfterUsageSearch[LocalVariableDescriptor]
 

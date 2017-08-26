@@ -68,8 +68,6 @@ Inferred types:
 
 'this' @ [46:22] ==> <this> defined in org.jetbrains.kotlin.load.kotlin.UnsafeVarianceTypeSubstitution.annotatePartsWithUnsafeVariance[ReceiverParameterDescriptorImpl]
 
-'KotlinTypeFactory' @ [48:17] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types[FakeCallableDescriptorForObject]
-
 'flexibleType' @ [48:35] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[DeserializedSimpleFunctionDescriptor]
 
 'lowerBound' @ [49:25] ==> public final val lowerBound: SimpleType defined in org.jetbrains.kotlin.types.FlexibleType[DeserializedPropertyDescriptor]

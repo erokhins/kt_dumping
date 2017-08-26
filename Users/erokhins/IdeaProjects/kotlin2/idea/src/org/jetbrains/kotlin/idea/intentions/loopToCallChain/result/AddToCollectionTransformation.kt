@@ -28,8 +28,6 @@ Inferred types:
 
 'previousTransformation' @ [38:22] ==> value-parameter previousTransformation: SequenceTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.AddToCollectionTransformation.mergeWithPrevious[ValueParameterDescriptorImpl]
 
-'FilterToTransformation' @ [40:17] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FilterToTransformation[FakeCallableDescriptorForObject]
-
 'create' @ [40:40] ==> public final fun create(loop: KtForExpression, inputVariable: KtCallableDeclaration, indexVariable: KtCallableDeclaration?, targetCollection: KtExpression, condition: Condition, isFilterNot: Boolean): ResultTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FilterToTransformation.Companion[SimpleFunctionDescriptorImpl]
 
 'loop' @ [41:25] ==> public final val loop: KtForExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.AddToCollectionTransformation[PropertyDescriptorImpl]
@@ -52,15 +50,11 @@ Inferred types:
 
 'isFilterNot' @ [42:109] ==> public final val isFilterNot: Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.FilterTransformation[PropertyDescriptorImpl]
 
-'FilterNotNullToTransformation' @ [46:17] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FilterNotNullToTransformation[FakeCallableDescriptorForObject]
-
 'create' @ [46:47] ==> public final fun create(loop: KtForExpression, targetCollection: KtExpression): ResultTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FilterNotNullToTransformation.Companion[SimpleFunctionDescriptorImpl]
 
 'loop' @ [46:54] ==> public final val loop: KtForExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.AddToCollectionTransformation[PropertyDescriptorImpl]
 
 'targetCollection' @ [46:60] ==> private final val targetCollection: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.AddToCollectionTransformation[PropertyDescriptorImpl]
-
-'MapToTransformation' @ [50:17] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.MapToTransformation[FakeCallableDescriptorForObject]
 
 'create' @ [50:37] ==> public final fun create(loop: KtForExpression, inputVariable: KtCallableDeclaration, indexVariable: KtCallableDeclaration?, targetCollection: KtExpression, mapping: KtExpression, mapNotNull: Boolean): ResultTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.MapToTransformation.Companion[SimpleFunctionDescriptorImpl]
 
@@ -83,8 +77,6 @@ Inferred types:
 'previousTransformation' @ [50:176] ==> value-parameter previousTransformation: SequenceTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.AddToCollectionTransformation.mergeWithPrevious[ValueParameterDescriptorImpl]
 
 'mapNotNull' @ [50:199] ==> public final val mapNotNull: Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.MapTransformation[PropertyDescriptorImpl]
-
-'FlatMapToTransformation' @ [54:17] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FlatMapToTransformation[FakeCallableDescriptorForObject]
 
 'create' @ [54:41] ==> public final fun create(loop: KtForExpression, inputVariable: KtCallableDeclaration, targetCollection: KtExpression, transform: KtExpression): ResultTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FlatMapToTransformation.Companion[SimpleFunctionDescriptorImpl]
 
@@ -222,8 +214,6 @@ Inferred types:
 'targetCollection' @ [109:91] ==> val targetCollection: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.AddToCollectionTransformation.Matcher.match[LocalVariableDescriptor]
 
 'Result' @ [113:37] ==> public constructor Result(resultTransformation: ResultTransformation, vararg sequenceTransformations: SequenceTransformation) defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.TransformationMatch.Result[ClassConstructorDescriptorImpl]
-
-'MapToTransformation' @ [113:44] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.MapToTransformation[FakeCallableDescriptorForObject]
 
 'create' @ [113:64] ==> public final fun create(loop: KtForExpression, inputVariable: KtCallableDeclaration, indexVariable: KtCallableDeclaration?, targetCollection: KtExpression, mapping: KtExpression, mapNotNull: Boolean): ResultTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.MapToTransformation.Companion[SimpleFunctionDescriptorImpl]
 
@@ -606,8 +596,6 @@ Inferred types:
 
 'render' @ [191:45] ==> public fun FqName.render(): String defined in org.jetbrains.kotlin.renderer[DeserializedSimpleFunctionDescriptor]
 
-'IdeDescriptorRenderers' @ [191:56] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE' @ [191:79] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderTypeArguments' @ [191:91] ==> public abstract fun renderTypeArguments(typeArguments: List<TypeProjection>): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -737,8 +725,6 @@ Inferred types:
 
 'isFilterNot' @ [240:136] ==> value-parameter isFilterNot: Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FilterToTransformation.Companion.create[ValueParameterDescriptorImpl]
 
-'AssignToVariableResultTransformation' @ [241:17] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.AssignToVariableResultTransformation[FakeCallableDescriptorForObject]
-
 'createDelegated' @ [241:54] ==> public final fun createDelegated(delegate: ResultTransformation, initialization: VariableInitialization): AssignToVariableResultTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.AssignToVariableResultTransformation.Companion[SimpleFunctionDescriptorImpl]
 
 'transformation' @ [241:70] ==> val transformation: FilterToTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FilterToTransformation.Companion.create[LocalVariableDescriptor]
@@ -800,8 +786,6 @@ Inferred types:
 'initialization' @ [269:74] ==> val initialization: VariableInitialization? defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FilterNotNullToTransformation.Companion.create[LocalVariableDescriptor]
 
 'initializer' @ [269:89] ==> public final val initializer: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.VariableInitialization[PropertyDescriptorImpl]
-
-'AssignToVariableResultTransformation' @ [270:17] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.AssignToVariableResultTransformation[FakeCallableDescriptorForObject]
 
 'createDelegated' @ [270:54] ==> public final fun createDelegated(delegate: ResultTransformation, initialization: VariableInitialization): AssignToVariableResultTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.AssignToVariableResultTransformation.Companion[SimpleFunctionDescriptorImpl]
 
@@ -900,8 +884,6 @@ Inferred types:
 
 'mapNotNull' @ [312:131] ==> value-parameter mapNotNull: Boolean defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.MapToTransformation.Companion.create[ValueParameterDescriptorImpl]
 
-'AssignToVariableResultTransformation' @ [313:17] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.AssignToVariableResultTransformation[FakeCallableDescriptorForObject]
-
 'createDelegated' @ [313:54] ==> public final fun createDelegated(delegate: ResultTransformation, initialization: VariableInitialization): AssignToVariableResultTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.AssignToVariableResultTransformation.Companion[SimpleFunctionDescriptorImpl]
 
 'transformation' @ [313:70] ==> val transformation: MapToTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.MapToTransformation.Companion.create[LocalVariableDescriptor]
@@ -975,8 +957,6 @@ Inferred types:
 'initializer' @ [351:98] ==> public final val initializer: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.VariableInitialization[PropertyDescriptorImpl]
 
 'transform' @ [351:111] ==> value-parameter transform: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.result.FlatMapToTransformation.Companion.create[ValueParameterDescriptorImpl]
-
-'AssignToVariableResultTransformation' @ [352:17] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.AssignToVariableResultTransformation[FakeCallableDescriptorForObject]
 
 'createDelegated' @ [352:54] ==> public final fun createDelegated(delegate: ResultTransformation, initialization: VariableInitialization): AssignToVariableResultTransformation defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.AssignToVariableResultTransformation.Companion[SimpleFunctionDescriptorImpl]
 

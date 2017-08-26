@@ -17,8 +17,8 @@ Inferred types:
 
 'findFacetType' @ [38:53] ==> @NotNull public abstract fun <F : (Facet<(KotlinFacetConfiguration..KotlinFacetConfiguration?)>..Facet<(KotlinFacetConfiguration..KotlinFacetConfiguration?)>?), C : (FacetConfiguration..FacetConfiguration?)> findFacetType(@NotNull p0: FacetTypeId<(KotlinFacet..KotlinFacet?)>): FacetType<(KotlinFacet..KotlinFacet?), (KotlinFacetConfiguration..KotlinFacetConfiguration?)> defined in com.intellij.facet.FacetTypeRegistry[JavaMethodDescriptor]
 Inferred types:
-    <F : (Facet<(C..C?)>..Facet<(C..C?)>?)> -> KotlinFacet
-    <C : (FacetConfiguration..FacetConfiguration?)> -> KotlinFacetConfiguration
+    <F : (Facet<(C..C?)>..Facet<(C..C?)>?)> -> (org.jetbrains.kotlin.idea.facet.KotlinFacet..org.jetbrains.kotlin.idea.facet.KotlinFacet?)
+    <C : (FacetConfiguration..FacetConfiguration?)> -> (org.jetbrains.kotlin.idea.facet.KotlinFacetConfiguration..org.jetbrains.kotlin.idea.facet.KotlinFacetConfiguration?)
 
 'TYPE_ID' @ [38:67] ==> public final val TYPE_ID: FacetTypeId<KotlinFacet> defined in org.jetbrains.kotlin.idea.facet.KotlinFacetType.Companion[PropertyDescriptorImpl]
 

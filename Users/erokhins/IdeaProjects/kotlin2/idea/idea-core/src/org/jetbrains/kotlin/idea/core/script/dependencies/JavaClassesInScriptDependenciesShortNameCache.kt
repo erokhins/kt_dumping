@@ -14,8 +14,8 @@ Inferred types:
 
 'getElements' @ [39:33] ==> public open fun <Key : (Any..Any?), Psi : (PsiElement..PsiElement?)> getElements(@NotNull p0: StubIndexKey<(String..String?), (PsiClass..PsiClass?)>, @NotNull p1: String, @NotNull p2: Project, @Nullable p3: GlobalSearchScope?, @NotNull p4: Class<(PsiClass..PsiClass?)>): (MutableCollection<(PsiClass..PsiClass?)>..Collection<(PsiClass..PsiClass?)>?) defined in com.intellij.psi.stubs.StubIndex[JavaMethodDescriptor]
 Inferred types:
-    <Key : (Any..Any?)> -> String
-    <Psi : (PsiElement..PsiElement?)> -> PsiClass
+    <Key : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <Psi : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
 
 'getInstance' @ [40:41] ==> public open fun getInstance(): (JavaShortClassNameIndex..JavaShortClassNameIndex?) defined in com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex[JavaMethodDescriptor]
 

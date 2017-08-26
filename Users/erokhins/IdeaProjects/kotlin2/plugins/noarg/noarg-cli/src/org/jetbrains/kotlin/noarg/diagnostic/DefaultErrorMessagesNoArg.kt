@@ -6,7 +6,7 @@
 
 'put' @ [27:13] ==> public open fun <E : (PsiElement..PsiElement?)> put(@NotNull p0: DiagnosticFactory0<(PsiElement..PsiElement?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.diagnostics.rendering.DiagnosticFactoryToRendererMap[JavaMethodDescriptor]
 Inferred types:
-    <E : (PsiElement..PsiElement?)> -> PsiElement
+    <E : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'NO_NOARG_CONSTRUCTOR_IN_SUPERCLASS' @ [27:29] ==> public final val NO_NOARG_CONSTRUCTOR_IN_SUPERCLASS: (DiagnosticFactory0<(PsiElement..PsiElement?)>..DiagnosticFactory0<(PsiElement..PsiElement?)>?) defined in org.jetbrains.kotlin.noarg.diagnostic.ErrorsNoArg[JavaPropertyDescriptor]
 

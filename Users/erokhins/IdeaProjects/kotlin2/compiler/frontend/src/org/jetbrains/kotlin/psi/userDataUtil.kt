@@ -2,7 +2,7 @@
 
 'getUserData' @ [25:69] ==> @Nullable public abstract fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(T..T?)>): T? defined in com.intellij.openapi.util.UserDataHolder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [25:81] ==> public final val key: Key<T> defined in org.jetbrains.kotlin.psi.UserDataProperty[PropertyDescriptorImpl]
 
@@ -10,7 +10,7 @@ Inferred types:
 
 'putUserData' @ [27:80] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(T..T?)>, @Nullable p1: T?): Unit defined in com.intellij.openapi.util.UserDataHolder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [27:92] ==> public final val key: Key<T> defined in org.jetbrains.kotlin.psi.UserDataProperty[PropertyDescriptorImpl]
 
@@ -20,7 +20,7 @@ Inferred types:
 
 'getUserData' @ [31:69] ==> @Nullable public abstract fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(T..T?)>): T? defined in com.intellij.openapi.util.UserDataHolder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [31:81] ==> public final val key: Key<T> defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[PropertyDescriptorImpl]
 
@@ -30,7 +30,7 @@ Inferred types:
 
 'putUserData' @ [34:17] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(T..T?)>, @Nullable p1: T?): Unit defined in com.intellij.openapi.util.UserDataHolder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [34:29] ==> public final val key: Key<T> defined in org.jetbrains.kotlin.psi.NotNullableUserDataProperty[PropertyDescriptorImpl]
 
@@ -48,7 +48,7 @@ Inferred types:
 
 'getCopyableUserData' @ [39:73] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(T..T?)>..Key<(T..T?)>?)): T? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [39:93] ==> public final val key: Key<T> defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[PropertyDescriptorImpl]
 
@@ -56,7 +56,7 @@ Inferred types:
 
 'putCopyableUserData' @ [41:84] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(T..T?)>..Key<(T..T?)>?), @Nullable p1: T?): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [41:104] ==> public final val key: Key<T> defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[PropertyDescriptorImpl]
 
@@ -66,7 +66,7 @@ Inferred types:
 
 'getCopyableUserData' @ [45:73] ==> @Nullable @Contract public abstract fun <T : (Any..Any?)> getCopyableUserData(p0: (Key<(T..T?)>..Key<(T..T?)>?)): T? defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [45:93] ==> public final val key: Key<T> defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[PropertyDescriptorImpl]
 
@@ -76,7 +76,7 @@ Inferred types:
 
 'putCopyableUserData' @ [48:17] ==> public abstract fun <T : (Any..Any?)> putCopyableUserData(p0: (Key<(T..T?)>..Key<(T..T?)>?), @Nullable p1: T?): Unit defined in com.intellij.psi.PsiElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [48:37] ==> public final val key: Key<T> defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[PropertyDescriptorImpl]
 
@@ -90,9 +90,9 @@ Inferred types:
 
 'value' @ [48:69] ==> value-parameter value: T defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty.setValue[ValueParameterDescriptorImpl]
 
-'lazy' @ [56:29] ==> public fun <T> lazy(initializer: () -> NotNullableCopyableUserDataProperty<R, T>): Lazy<NotNullableCopyableUserDataProperty<R, T>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [56:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> NotNullableCopyableUserDataProperty<R, T>
+    <T> -> T
 
 'NotNullableCopyableUserDataProperty' @ [56:36] ==> public constructor NotNullableCopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<T>, defaultValue: T) defined in org.jetbrains.kotlin.psi.NotNullableCopyableUserDataProperty[ClassConstructorDescriptorImpl]
 Inferred types:

@@ -5,6 +5,8 @@ Inferred types:
     <T> -> KotlinType
     <R> -> SmartCastReceiverValue
 
+'SmartCastReceiverValue' @ [25:26] ==> public constructor SmartCastReceiverValue(type: KotlinType) defined in org.jetbrains.kotlin.resolve.calls.smartcasts.SmartCastReceiverValue[ClassConstructorDescriptorImpl]
+
 'receiverArgument' @ [25:53] ==> value-parameter receiverArgument: ReceiverValue? defined in org.jetbrains.kotlin.resolve.calls.smartcasts.getReceiverValueWithSmartCast[ValueParameterDescriptorImpl]
 
 'type' @ [28:30] ==> private final val type: KotlinType defined in org.jetbrains.kotlin.resolve.calls.smartcasts.SmartCastReceiverValue[PropertyDescriptorImpl]

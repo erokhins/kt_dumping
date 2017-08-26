@@ -100,8 +100,6 @@ Inferred types:
 
 'this' @ [66:21] ==> <this> defined in org.jetbrains.kotlin.descriptors.NotFoundClasses.MockClassDescriptor[LazyClassReceiverParameterDescriptor]
 
-'Annotations' @ [66:27] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [66:39] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
 'INVARIANT' @ [66:62] ==> enum entry INVARIANT defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]

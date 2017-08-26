@@ -48,11 +48,7 @@ Inferred types:
 
 'shouldBeBoxed' @ [47:25] ==> value-parameter shouldBeBoxed: Boolean = ... defined in org.jetbrains.kotlin.kapt3.stubs.convertKtType[ValueParameterDescriptorImpl]
 
-'TypeMappingMode' @ [47:40] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode[FakeCallableDescriptorForObject]
-
 'GENERIC_ARGUMENT' @ [47:56] ==> @field:JvmField public final val GENERIC_ARGUMENT: TypeMappingMode defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode.Companion[DeserializedPropertyDescriptor]
-
-'TypeMappingMode' @ [47:78] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode[FakeCallableDescriptorForObject]
 
 'DEFAULT' @ [47:94] ==> @field:JvmField public final val DEFAULT: TypeMappingMode defined in org.jetbrains.kotlin.load.kotlin.TypeMappingMode.Companion[DeserializedPropertyDescriptor]
 
@@ -68,7 +64,7 @@ Inferred types:
 
 'toString' @ [50:37] ==> public open fun toString(): String defined in org.jetbrains.kotlin.codegen.signature.BothSignatureWriter[JavaMethodDescriptor]
 
-'getDefaultTypeForUnknownType' @ [50:49] ==> private fun getDefaultTypeForUnknownType(converter: ClassFileToSourceStubConverter): JCTree.JCExpression defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'getDefaultTypeForUnknownType' @ [50:49] ==> private fun getDefaultTypeForUnknownType(converter: ClassFileToSourceStubConverter): JCTree.JCExpression defined in org.jetbrains.kotlin.kapt3.stubs in file errorTypeConversion.kt[SimpleFunctionDescriptorImpl]
 
 'converter' @ [50:78] ==> value-parameter converter: ClassFileToSourceStubConverter defined in org.jetbrains.kotlin.kapt3.stubs.convertKtType[ValueParameterDescriptorImpl]
 
@@ -99,7 +95,7 @@ Inferred types:
 
 'innerType' @ [58:34] ==> public final val KtNullableType.innerType: KtTypeElement?[MyPropertyDescriptor]
 
-'getDefaultTypeForUnknownType' @ [58:54] ==> private fun getDefaultTypeForUnknownType(converter: ClassFileToSourceStubConverter): JCTree.JCExpression defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'getDefaultTypeForUnknownType' @ [58:54] ==> private fun getDefaultTypeForUnknownType(converter: ClassFileToSourceStubConverter): JCTree.JCExpression defined in org.jetbrains.kotlin.kapt3.stubs in file errorTypeConversion.kt[SimpleFunctionDescriptorImpl]
 
 'converter' @ [58:83] ==> value-parameter converter: ClassFileToSourceStubConverter defined in org.jetbrains.kotlin.kapt3.stubs.convertKtType[ValueParameterDescriptorImpl]
 
@@ -117,7 +113,7 @@ Inferred types:
 
 'converter' @ [61:56] ==> value-parameter converter: ClassFileToSourceStubConverter defined in org.jetbrains.kotlin.kapt3.stubs.convertKtType[ValueParameterDescriptorImpl]
 
-'getDefaultTypeForUnknownType' @ [62:17] ==> private fun getDefaultTypeForUnknownType(converter: ClassFileToSourceStubConverter): JCTree.JCExpression defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'getDefaultTypeForUnknownType' @ [62:17] ==> private fun getDefaultTypeForUnknownType(converter: ClassFileToSourceStubConverter): JCTree.JCExpression defined in org.jetbrains.kotlin.kapt3.stubs in file errorTypeConversion.kt[SimpleFunctionDescriptorImpl]
 
 'converter' @ [62:46] ==> value-parameter converter: ClassFileToSourceStubConverter defined in org.jetbrains.kotlin.kapt3.stubs.convertKtType[ValueParameterDescriptorImpl]
 

@@ -26,8 +26,6 @@
 
 'createFacet' @ [44:22] ==> public fun Module.createFacet(platformKind: TargetPlatformKind<*>? = ...): Unit defined in org.jetbrains.kotlin.idea.stubs in file AbstractMultiModuleTest.kt[SimpleFunctionDescriptorImpl]
 
-'TargetPlatformKind' @ [44:34] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'Common' @ [44:53] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'withStdlibCommon' @ [45:13] ==> value-parameter withStdlibCommon: Boolean = ... defined in org.jetbrains.kotlin.idea.caches.resolve.AbstractMultiModuleHighlightingTest.doMultiPlatformTest[ValueParameterDescriptorImpl]

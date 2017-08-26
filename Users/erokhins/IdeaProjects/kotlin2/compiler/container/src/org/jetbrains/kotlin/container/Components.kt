@@ -4,7 +4,7 @@
 
 'java' @ [24:71] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'getInfo' @ [24:76] ==> public fun Class<*>.getInfo(): ClassInfo defined in org.jetbrains.kotlin.container in file Cache.kt[SimpleFunctionDescriptorImpl]
 
@@ -18,11 +18,11 @@ Inferred types:
 
 'java' @ [29:45] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'simpleName' @ [29:50] ==> public final val <T : (Any..Any?)> Class<out Any>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'InstanceComponentDescriptor' @ [33:58] ==> public constructor InstanceComponentDescriptor(instance: Any) defined in org.jetbrains.kotlin.container.InstanceComponentDescriptor[ClassConstructorDescriptorImpl]
 

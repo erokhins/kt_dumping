@@ -750,7 +750,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<String>
 
-'traverseOuterInstanceReferences' @ [256:39] ==> @JvmOverloads public fun traverseOuterInstanceReferences(member: KtNamedDeclaration, stopAtFirst: Boolean, body: (OuterInstanceReferenceUsageInfo) -> Unit = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'traverseOuterInstanceReferences' @ [256:39] ==> @JvmOverloads public fun traverseOuterInstanceReferences(member: KtNamedDeclaration, stopAtFirst: Boolean, body: (OuterInstanceReferenceUsageInfo) -> Unit = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [256:71] ==> value-parameter element: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.intentions.MoveMemberToCompanionObjectIntention.applyTo[ValueParameterDescriptorImpl]
 
@@ -800,7 +800,7 @@ Inferred types:
 
 'outerInstanceName' @ [267:104] ==> val outerInstanceName: String? defined in org.jetbrains.kotlin.idea.intentions.MoveMemberToCompanionObjectIntention.applyTo[LocalVariableDescriptor]
 
-'MoveCallback' @ [268:76] ==> public fun MoveCallback(function: () -> Unit): MoveCallback defined in com.intellij.refactoring.move[SimpleFunctionDescriptorImpl]
+'MoveCallback' @ [268:76] ==> public fun MoveCallback(function: () -> Unit): MoveCallback defined in com.intellij.refactoring.move[SamConstructorDescriptorImpl]
 
 'runTemplateForInstanceParam' @ [268:91] ==> private final fun runTemplateForInstanceParam(declaration: KtNamedDeclaration, nameSuggestions: List<String>, editor: Editor?): Unit defined in org.jetbrains.kotlin.idea.intentions.MoveMemberToCompanionObjectIntention[SimpleFunctionDescriptorImpl]
 
@@ -934,7 +934,7 @@ Inferred types:
 
 'it' @ [293:110] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.idea.intentions.MoveMemberToCompanionObjectIntention.applyTo.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'collectOuterInstanceReferences' @ [297:39] ==> public fun collectOuterInstanceReferences(member: KtNamedDeclaration): List<OuterInstanceReferenceUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'collectOuterInstanceReferences' @ [297:39] ==> public fun collectOuterInstanceReferences(member: KtNamedDeclaration): List<OuterInstanceReferenceUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [297:70] ==> value-parameter element: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.intentions.MoveMemberToCompanionObjectIntention.applyTo[ValueParameterDescriptorImpl]
 
@@ -1068,7 +1068,7 @@ Inferred types:
 
 'call' @ [318:63] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [318:68] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -1076,7 +1076,7 @@ Inferred types:
 
 'extensionReceiver' @ [320:66] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'extensionReceiver' @ [321:33] ==> val extensionReceiver: ReceiverValue? defined in org.jetbrains.kotlin.idea.intentions.MoveMemberToCompanionObjectIntention.applyTo.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -1096,7 +1096,7 @@ Inferred types:
 
 'dispatchReceiver' @ [327:65] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'if (dispatchReceiver is ExpressionReceiver) {
                                 ExplicitReceiverUsageInfo(refExpr, dispatchReceiver.expression)
@@ -1125,7 +1125,7 @@ Inferred types:
 
 'project' @ [341:9] ==> val project: Project defined in org.jetbrains.kotlin.idea.intentions.MoveMemberToCompanionObjectIntention.applyTo[LocalVariableDescriptor]
 
-'checkConflictsInteractively' @ [341:17] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [341:17] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [341:45] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.MoveMemberToCompanionObjectIntention.applyTo[LocalVariableDescriptor]
 

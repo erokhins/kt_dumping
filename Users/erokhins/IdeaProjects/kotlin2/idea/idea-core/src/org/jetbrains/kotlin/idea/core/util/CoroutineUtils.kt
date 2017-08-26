@@ -8,8 +8,6 @@
 
 'context' @ [32:29] ==> value-parameter context: CoroutineContext defined in org.jetbrains.kotlin.idea.core.util.EDT.dispatch[ValueParameterDescriptorImpl]
 
-'ModalityStateElement' @ [32:37] ==> public companion object Key : CoroutineContext.Key<EDT.ModalityStateElement> defined in org.jetbrains.kotlin.idea.core.util.EDT.ModalityStateElement[FakeCallableDescriptorForObject]
-
 'Key' @ [32:58] ==> public companion object Key : CoroutineContext.Key<EDT.ModalityStateElement> defined in org.jetbrains.kotlin.idea.core.util.EDT.ModalityStateElement[FakeCallableDescriptorForObject]
 
 'modalityState' @ [32:64] ==> public final val modalityState: ModalityState defined in org.jetbrains.kotlin.idea.core.util.EDT.ModalityStateElement[PropertyDescriptorImpl]

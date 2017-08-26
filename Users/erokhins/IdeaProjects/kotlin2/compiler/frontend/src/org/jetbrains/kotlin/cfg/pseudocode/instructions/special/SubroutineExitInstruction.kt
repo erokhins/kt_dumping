@@ -12,7 +12,7 @@
 
 'singleton' @ [37:29] ==> public open fun <T : (Any..Any?)> singleton(p0: (SubroutineSinkInstruction..SubroutineSinkInstruction?)): (MutableSet<(SubroutineSinkInstruction..SubroutineSinkInstruction?)>..Set<(SubroutineSinkInstruction..SubroutineSinkInstruction?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SubroutineSinkInstruction
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.pseudocode.instructions.special.SubroutineSinkInstruction..org.jetbrains.kotlin.cfg.pseudocode.instructions.special.SubroutineSinkInstruction?)
 
 'sink' @ [37:39] ==> public final var sink: SubroutineSinkInstruction defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.special.SubroutineExitInstruction[PropertyDescriptorImpl]
 

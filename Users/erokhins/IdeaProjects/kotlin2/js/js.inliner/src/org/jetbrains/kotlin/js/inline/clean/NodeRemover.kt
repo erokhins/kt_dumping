@@ -14,7 +14,7 @@
 
 'invoke' @ [29:17] ==> public abstract operator fun invoke(p1: T): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'instance' @ [29:27] ==> val instance: {Any & T} defined in org.jetbrains.kotlin.js.inline.clean.NodeRemover.doTraverse[LocalVariableDescriptor]
+'instance' @ [29:27] ==> val instance: T defined in org.jetbrains.kotlin.js.inline.clean.NodeRemover.doTraverse[LocalVariableDescriptor]
 
 'ctx' @ [30:17] ==> value-parameter ctx: JsContext<*> defined in org.jetbrains.kotlin.js.inline.clean.NodeRemover.doTraverse[ValueParameterDescriptorImpl]
 
@@ -24,7 +24,7 @@
 
 'doTraverse' @ [35:15] ==> protected/*protected and package*/ open fun <T : (JsNode..JsNode?)> doTraverse(p0: (T..T?), p1: raw (JsContext<(JsNode..JsNode?)>..JsContext<*>?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsVisitorWithContextImpl[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> T
+    <T : (JsNode..JsNode?)> -> (T..T?)
 
 'node' @ [35:26] ==> value-parameter node: T defined in org.jetbrains.kotlin.js.inline.clean.NodeRemover.doTraverse[ValueParameterDescriptorImpl]
 

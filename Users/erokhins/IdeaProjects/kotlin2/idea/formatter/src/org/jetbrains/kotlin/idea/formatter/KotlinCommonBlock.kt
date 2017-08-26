@@ -62,7 +62,7 @@
 
 'getCustomSettings' @ [48:13] ==> public open fun <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> getCustomSettings(@NotNull p0: Class<(KotlinCodeStyleSettings..KotlinCodeStyleSettings?)>): (KotlinCodeStyleSettings..KotlinCodeStyleSettings?) defined in com.intellij.psi.codeStyle.CodeStyleSettings[JavaMethodDescriptor]
 Inferred types:
-    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> KotlinCodeStyleSettings
+    <T : (CustomCodeStyleSettings..CustomCodeStyleSettings?)> -> (org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings..org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings?)
 
 'KotlinCodeStyleSettings' @ [48:31] ==> public constructor KotlinCodeStyleSettings(container: (CodeStyleSettings..CodeStyleSettings?)) defined in org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings[JavaClassConstructorDescriptor]
 
@@ -94,7 +94,7 @@ Inferred types:
 
 'SAFE_ACCESS_EXPRESSION' @ [89:107] ==> public final val SAFE_ACCESS_EXPRESSION: (KtNodeType..KtNodeType?) defined in org.jetbrains.kotlin.KtNodeTypes[JavaPropertyDescriptor]
 
-'findNodeBlockIndex' @ [90:39] ==> private fun findNodeBlockIndex(blocks: List<Block>, tokenSet: TokenSet): Int defined in org.jetbrains.kotlin.idea.formatter[SimpleFunctionDescriptorImpl]
+'findNodeBlockIndex' @ [90:39] ==> private fun findNodeBlockIndex(blocks: List<Block>, tokenSet: TokenSet): Int defined in org.jetbrains.kotlin.idea.formatter in file KotlinCommonBlock.kt[SimpleFunctionDescriptorImpl]
 
 'nodeSubBlocks' @ [90:58] ==> var nodeSubBlocks: ArrayList<Block> defined in org.jetbrains.kotlin.idea.formatter.KotlinCommonBlock.buildChildren[LocalVariableDescriptor]
 
@@ -1023,7 +1023,7 @@ Inferred types:
 
 'childElement' @ [340:101] ==> value-parameter childElement: ASTNode defined in org.jetbrains.kotlin.idea.formatter.KotlinCommonBlock.getWrappingStrategy.<no name provided>.getWrap[ValueParameterDescriptorImpl]
 
-'startsWithAnnotation' @ [340:114] ==> private fun ASTNode.startsWithAnnotation(): Boolean defined in org.jetbrains.kotlin.idea.formatter[SimpleFunctionDescriptorImpl]
+'startsWithAnnotation' @ [340:114] ==> private fun ASTNode.startsWithAnnotation(): Boolean defined in org.jetbrains.kotlin.idea.formatter in file KotlinCommonBlock.kt[SimpleFunctionDescriptorImpl]
 
 'wrap' @ [341:33] ==> val wrap: (Wrap..Wrap?) defined in org.jetbrains.kotlin.idea.formatter.KotlinCommonBlock.getWrappingStrategy[LocalVariableDescriptor]
 
@@ -1088,9 +1088,9 @@ Inferred types:
                                                               else
                                                                   commonSettings.FIELD_ANNOTATION_WRAP,
                                                               ANNOTATIONS)
-                }' @ [362:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Unit, entry1: Unit, entry2: Unit, entry3: Unit): Unit[SimpleFunctionDescriptorImpl]
+                }' @ [362:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Nothing, entry1: Nothing, entry2: Nothing, entry3: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Unit
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Nothing
 
 'parent' @ [362:23] ==> val parent: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.idea.formatter.KotlinCommonBlock.getWrappingStrategy[LocalVariableDescriptor]
 

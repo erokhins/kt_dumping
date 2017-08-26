@@ -2,7 +2,7 @@
 
 'SmartList' @ [59:66] ==> public constructor SmartList<E : (Any..Any?)>() defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> JsStatement
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'JvmStatic' @ [62:9] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
@@ -13,19 +13,19 @@ Inferred types:
 
 'statement' @ [63:36] ==> value-parameter statement: JsStatement defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.Companion.preserveEvaluationOrder[ValueParameterDescriptorImpl]
 
-'match' @ [64:35] ==> private fun JsNode.match(predicate: (JsNode) -> Boolean): Set<JsNode> defined in org.jetbrains.kotlin.js.inline[SimpleFunctionDescriptorImpl]
+'match' @ [64:35] ==> private fun JsNode.match(predicate: (JsNode) -> Boolean): Set<JsNode> defined in org.jetbrains.kotlin.js.inline in file ExpressionDecomposer.kt[SimpleFunctionDescriptorImpl]
 
 'canBeExtractedByInliner' @ [64:41] ==> value-parameter canBeExtractedByInliner: (JsNode) -> Boolean defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.Companion.preserveEvaluationOrder[ValueParameterDescriptorImpl]
 
-'withParentsOfNodes' @ [65:43] ==> private fun JsNode.withParentsOfNodes(nodes: Set<JsNode>): Set<JsNode> defined in org.jetbrains.kotlin.js.inline[SimpleFunctionDescriptorImpl]
+'withParentsOfNodes' @ [65:43] ==> private fun JsNode.withParentsOfNodes(nodes: Set<JsNode>): Set<JsNode> defined in org.jetbrains.kotlin.js.inline in file ExpressionDecomposer.kt[SimpleFunctionDescriptorImpl]
 
 'extractable' @ [65:62] ==> val extractable: Set<JsNode> defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.Companion.preserveEvaluationOrder.<anonymous>[LocalVariableDescriptor]
 
-'match' @ [66:43] ==> private fun JsNode.match(predicate: (JsNode) -> Boolean): Set<JsNode> defined in org.jetbrains.kotlin.js.inline[SimpleFunctionDescriptorImpl]
+'match' @ [66:43] ==> private fun JsNode.match(predicate: (JsNode) -> Boolean): Set<JsNode> defined in org.jetbrains.kotlin.js.inline in file ExpressionDecomposer.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [66:51] ==> value-parameter it: JsNode defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.Companion.preserveEvaluationOrder.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'withParentsOfNodes' @ [67:50] ==> private fun JsNode.withParentsOfNodes(nodes: Set<JsNode>): Set<JsNode> defined in org.jetbrains.kotlin.js.inline[SimpleFunctionDescriptorImpl]
+'withParentsOfNodes' @ [67:50] ==> private fun JsNode.withParentsOfNodes(nodes: Set<JsNode>): Set<JsNode> defined in org.jetbrains.kotlin.js.inline in file ExpressionDecomposer.kt[SimpleFunctionDescriptorImpl]
 
 'nodesWithSideEffect' @ [67:69] ==> val nodesWithSideEffect: Set<JsNode> defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.Companion.preserveEvaluationOrder.<anonymous>[LocalVariableDescriptor]
 
@@ -39,7 +39,7 @@ Inferred types:
 
 'accept' @ [72:24] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'statement' @ [72:31] ==> value-parameter statement: JsStatement defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.Companion.preserveEvaluationOrder[ValueParameterDescriptorImpl]
 
@@ -103,7 +103,7 @@ Inferred types:
 
 'accept' @ [88:36] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'jsVar' @ [88:43] ==> val jsVar: (JsVars.JsVar..JsVars.JsVar?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.visit[LocalVariableDescriptor]
 
@@ -194,7 +194,7 @@ Inferred types:
 
 'accept' @ [123:20] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'test' @ [123:27] ==> public var JsWhile.test: JsExpression defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils in file astUtils.kt[PropertyDescriptorImpl]
 
@@ -279,7 +279,7 @@ Inferred types:
 
 'acceptList' @ [139:64] ==> public final fun <T : (JsNode..JsNode?)> acceptList(p0: (MutableList<(JsStatement..JsStatement?)>..List<(JsStatement..JsStatement?)>?)): Unit defined in org.jetbrains.kotlin.js.inline.util.rewriters.ContinueReplacingVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'bodyStatements' @ [139:75] ==> val bodyStatements: (MutableList<(JsStatement..JsStatement?)>..List<(JsStatement..JsStatement?)>) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.process.<anonymous>[LocalVariableDescriptor]
 
@@ -291,7 +291,7 @@ Inferred types:
 
 'additionalStatements' @ [144:20] ==> private final var additionalStatements: MutableList<JsStatement> defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[PropertyDescriptorImpl]
 
-'toStatement' @ [144:41] ==> private fun List<JsStatement>.toStatement(): JsStatement defined in org.jetbrains.kotlin.js.inline[SimpleFunctionDescriptorImpl]
+'toStatement' @ [144:41] ==> private fun List<JsStatement>.toStatement(): JsStatement defined in org.jetbrains.kotlin.js.inline in file ExpressionDecomposer.kt[SimpleFunctionDescriptorImpl]
 
 'test' @ [145:13] ==> public var JsWhile.test: JsExpression defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils in file astUtils.kt[PropertyDescriptorImpl]
 
@@ -303,7 +303,7 @@ Inferred types:
 
 'accept' @ [151:18] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'x' @ [151:25] ==> value-parameter x: JsBinaryOperation defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.visit[ValueParameterDescriptorImpl]
 
@@ -375,7 +375,7 @@ Inferred types:
 
 'accept' @ [169:20] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'arg2' @ [169:27] ==> public final var JsBinaryOperation.arg2: (JsExpression..JsExpression?)[MyPropertyDescriptor]
 
@@ -389,7 +389,7 @@ Inferred types:
 
 'additionalStatements' @ [171:13] ==> private final var additionalStatements: MutableList<JsStatement> defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[PropertyDescriptorImpl]
 
-'toStatement' @ [171:34] ==> private fun List<JsStatement>.toStatement(): JsStatement defined in org.jetbrains.kotlin.js.inline[SimpleFunctionDescriptorImpl]
+'toStatement' @ [171:34] ==> private fun List<JsStatement>.toStatement(): JsStatement defined in org.jetbrains.kotlin.js.inline in file ExpressionDecomposer.kt[SimpleFunctionDescriptorImpl]
 
 'addStatement' @ [174:9] ==> private final fun addStatement(statement: JsStatement): Boolean defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[SimpleFunctionDescriptorImpl]
 
@@ -413,7 +413,7 @@ Inferred types:
 
 'replaceMe' @ [175:13] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpression..JsExpression?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpression
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'tmp' @ [175:23] ==> val tmp: ExpressionDecomposer.Temporary defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.processOrAnd[LocalVariableDescriptor]
 
@@ -431,7 +431,7 @@ Inferred types:
 
 'accept' @ [183:20] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'arg2' @ [183:27] ==> public final var JsBinaryOperation.arg2: (JsExpression..JsExpression?)[MyPropertyDescriptor]
 
@@ -511,7 +511,7 @@ Inferred types:
 
 'accept' @ [205:16] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'arg2' @ [205:23] ==> public final var JsBinaryOperation.arg2: (JsExpression..JsExpression?)[MyPropertyDescriptor]
 
@@ -535,7 +535,7 @@ Inferred types:
 
 'accept' @ [220:17] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'array' @ [220:24] ==> public var JsArrayAccess.array: JsExpression defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils in file astUtils.kt[PropertyDescriptorImpl]
 
@@ -557,7 +557,7 @@ Inferred types:
 
 'accept' @ [226:17] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'index' @ [226:24] ==> public var JsArrayAccess.index: JsExpression defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils in file astUtils.kt[PropertyDescriptorImpl]
 
@@ -571,7 +571,7 @@ Inferred types:
 
 'accept' @ [235:16] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'test' @ [235:23] ==> public var JsConditional.test: JsExpression defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils in file astUtils.kt[PropertyDescriptorImpl]
 
@@ -601,7 +601,7 @@ Inferred types:
 
 'accept' @ [242:20] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'then' @ [242:27] ==> public var JsConditional.then: JsExpression defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils in file astUtils.kt[PropertyDescriptorImpl]
 
@@ -615,7 +615,7 @@ Inferred types:
 
 'additionalStatements' @ [244:13] ==> private final var additionalStatements: MutableList<JsStatement> defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[PropertyDescriptorImpl]
 
-'toStatement' @ [244:34] ==> private fun List<JsStatement>.toStatement(): JsStatement defined in org.jetbrains.kotlin.js.inline[SimpleFunctionDescriptorImpl]
+'toStatement' @ [244:34] ==> private fun List<JsStatement>.toStatement(): JsStatement defined in org.jetbrains.kotlin.js.inline in file ExpressionDecomposer.kt[SimpleFunctionDescriptorImpl]
 
 'withNewAdditionalStatements' @ [247:25] ==> private final inline fun <T> withNewAdditionalStatements(fn: () -> JsStatement): JsStatement defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -625,7 +625,7 @@ Inferred types:
 
 'accept' @ [248:25] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'otherwise' @ [248:32] ==> public var JsConditional.otherwise: JsExpression defined in org.jetbrains.kotlin.js.translate.utils.jsAstUtils in file astUtils.kt[PropertyDescriptorImpl]
 
@@ -639,7 +639,7 @@ Inferred types:
 
 'additionalStatements' @ [250:13] ==> private final var additionalStatements: MutableList<JsStatement> defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[PropertyDescriptorImpl]
 
-'toStatement' @ [250:34] ==> private fun List<JsStatement>.toStatement(): JsStatement defined in org.jetbrains.kotlin.js.inline[SimpleFunctionDescriptorImpl]
+'toStatement' @ [250:34] ==> private fun List<JsStatement>.toStatement(): JsStatement defined in org.jetbrains.kotlin.js.inline in file ExpressionDecomposer.kt[SimpleFunctionDescriptorImpl]
 
 'JsIf' @ [253:24] ==> public constructor JsIf(@NotNull p0: JsExpression, @NotNull p1: JsStatement, @Nullable p2: JsStatement?) defined in org.jetbrains.kotlin.js.backend.ast.JsIf[JavaClassConstructorDescriptor]
 
@@ -667,7 +667,7 @@ Inferred types:
 
 'replaceMe' @ [257:13] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsExpression..JsExpression?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (JsNode..JsNode?)> -> JsExpression
+    <R : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'tmp' @ [257:23] ==> val tmp: ExpressionDecomposer.Temporary defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.process[LocalVariableDescriptor]
 
@@ -721,7 +721,7 @@ Inferred types:
 
 'accept' @ [291:21] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'qualifier' @ [291:28] ==> public abstract var qualifier: JsExpression defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.Callable[PropertyDescriptorImpl]
 
@@ -915,7 +915,7 @@ Inferred types:
 
 'accept' @ [339:30] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'elements' @ [339:37] ==> value-parameter elements: MutableList<JsExpression> defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.processByIndices[ValueParameterDescriptorImpl]
 
@@ -983,7 +983,7 @@ Inferred types:
 
 'value' @ [371:45] ==> public final val value: JsExpression? defined in org.jetbrains.kotlin.js.inline.ExpressionDecomposer.Temporary[PropertyDescriptorImpl]
 
-'apply' @ [371:52] ==> @InlineOnly public inline fun <T> JsVars.apply(block: JsVars.() -> Unit): JsVars defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [371:52] ==> @InlineOnly public inline fun <T> JsVars.apply(block: (JsVars).() -> Unit): JsVars defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JsVars
 
@@ -1055,7 +1055,7 @@ Inferred types:
 
 'accept' @ [433:26] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.JsExpressionVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'test' @ [433:33] ==> val test: JsExpression defined in org.jetbrains.kotlin.js.inline.JsExpressionVisitor.visit[LocalVariableDescriptor]
 
@@ -1065,7 +1065,7 @@ Inferred types:
 
 'accept' @ [438:18] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.JsExpressionVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'x' @ [438:25] ==> value-parameter x: JsWhile defined in org.jetbrains.kotlin.js.inline.JsExpressionVisitor.visit[ValueParameterDescriptorImpl]
 
@@ -1077,7 +1077,7 @@ Inferred types:
 
 'accept' @ [443:18] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsExpression..JsExpression?)): (JsExpression..JsExpression?) defined in org.jetbrains.kotlin.js.inline.JsExpressionVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsExpression
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsExpression..org.jetbrains.kotlin.js.backend.ast.JsExpression?)
 
 'x' @ [443:25] ==> value-parameter x: JsDoWhile defined in org.jetbrains.kotlin.js.inline.JsExpressionVisitor.visit[ValueParameterDescriptorImpl]
 
@@ -1089,7 +1089,7 @@ Inferred types:
 
 'accept' @ [448:23] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.inline.JsExpressionVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'x' @ [448:30] ==> value-parameter x: JsLabel defined in org.jetbrains.kotlin.js.inline.JsExpressionVisitor.visit[ValueParameterDescriptorImpl]
 
@@ -1105,7 +1105,7 @@ Inferred types:
 
 'doTraverse' @ [476:19] ==> protected/*protected and package*/ open fun <T : (JsNode..JsNode?)> doTraverse(p0: (R..R?), p1: raw (JsContext<(JsNode..JsNode?)>..JsContext<*>?)): Unit defined in org.jetbrains.kotlin.js.inline.JsExpressionVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> R
+    <T : (JsNode..JsNode?)> -> (R..R?)
 
 'node' @ [476:30] ==> value-parameter node: R defined in org.jetbrains.kotlin.js.inline.match.<no name provided>.doTraverse[ValueParameterDescriptorImpl]
 
@@ -1129,7 +1129,7 @@ Inferred types:
 
 'accept' @ [484:13] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsNode..JsNode?)): (JsNode..JsNode?) defined in org.jetbrains.kotlin.js.inline.match.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsNode
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'this' @ [484:20] ==> <this> defined in org.jetbrains.kotlin.js.inline.match[ReceiverParameterDescriptorImpl]
 
@@ -1157,7 +1157,7 @@ Inferred types:
 
 'doTraverse' @ [498:19] ==> protected/*protected and package*/ open fun <T : (JsNode..JsNode?)> doTraverse(p0: (R..R?), p1: raw (JsContext<(JsNode..JsNode?)>..JsContext<*>?)): Unit defined in org.jetbrains.kotlin.js.inline.JsExpressionVisitor[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> R
+    <T : (JsNode..JsNode?)> -> (R..R?)
 
 'node' @ [498:30] ==> value-parameter node: R defined in org.jetbrains.kotlin.js.inline.withParentsOfNodes.<no name provided>.doTraverse[ValueParameterDescriptorImpl]
 
@@ -1207,7 +1207,7 @@ Inferred types:
 
 'accept' @ [518:13] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsNode..JsNode?)): (JsNode..JsNode?) defined in org.jetbrains.kotlin.js.inline.withParentsOfNodes.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsNode
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsNode..org.jetbrains.kotlin.js.backend.ast.JsNode?)
 
 'this' @ [518:20] ==> <this> defined in org.jetbrains.kotlin.js.inline.withParentsOfNodes[ReceiverParameterDescriptorImpl]
 

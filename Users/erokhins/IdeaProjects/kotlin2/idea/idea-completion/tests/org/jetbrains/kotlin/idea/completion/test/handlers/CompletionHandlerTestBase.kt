@@ -146,8 +146,6 @@ Inferred types:
 
 'listToString' @ [92:64] ==> public final fun listToString(items: Collection<ExpectedCompletionUtils.CompletionProposal>): String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 
-'ExpectedCompletionUtils' @ [92:77] ==> public object ExpectedCompletionUtils defined in org.jetbrains.kotlin.idea.completion.test in file ExpectedCompletionUtils.kt[FakeCallableDescriptorForObject]
-
 'getItemsInformation' @ [92:101] ==> public final fun getItemsInformation(items: Array<LookupElement>): List<ExpectedCompletionUtils.CompletionProposal> defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 
 'arrayOf' @ [92:121] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: LookupElement): Array<LookupElement> defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -171,8 +169,6 @@ Inferred types:
 'ExpectedCompletionUtils' @ [103:24] ==> public object ExpectedCompletionUtils defined in org.jetbrains.kotlin.idea.completion.test in file ExpectedCompletionUtils.kt[FakeCallableDescriptorForObject]
 
 'listToString' @ [103:48] ==> public final fun listToString(items: Collection<ExpectedCompletionUtils.CompletionProposal>): String defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
-
-'ExpectedCompletionUtils' @ [103:61] ==> public object ExpectedCompletionUtils defined in org.jetbrains.kotlin.idea.completion.test in file ExpectedCompletionUtils.kt[FakeCallableDescriptorForObject]
 
 'getItemsInformation' @ [103:85] ==> public final fun getItemsInformation(items: Array<LookupElement>): List<ExpectedCompletionUtils.CompletionProposal> defined in org.jetbrains.kotlin.idea.completion.test.ExpectedCompletionUtils[SimpleFunctionDescriptorImpl]
 

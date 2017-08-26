@@ -44,7 +44,7 @@ Inferred types:
 
 'it' @ [50:71] ==> value-parameter it: Diagnostic defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.invoke.<anonymous>[ValueParameterDescriptorImpl]
 
-'a' @ [50:75] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtClassOrObject..KtClassOrObject?), (CallableMemberDescriptor..CallableMemberDescriptor?), (MutableList<(CallableMemberDescriptor..CallableMemberDescriptor?)>..List<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)>.a: (CallableMemberDescriptor..CallableMemberDescriptor?)[MyPropertyDescriptor]
+'a' @ [50:75] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtClassOrObject..KtClassOrObject?), (CallableMemberDescriptor..CallableMemberDescriptor?), (MutableList<(CallableMemberDescriptor..CallableMemberDescriptor?)>..List<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)>.a: CallableMemberDescriptor[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassOrObject..org.jetbrains.kotlin.psi.KtClassOrObject?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
@@ -186,8 +186,6 @@ Inferred types:
 
 'overriddenDescriptor' @ [82:55] ==> val overriddenDescriptor: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.invoke[LocalVariableDescriptor]
 
-'OverrideMemberChooserObject' @ [83:25] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
-
 'Delegate' @ [83:62] ==> public constructor Delegate(receiverName: String) defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType.Delegate[DeserializedClassConstructorDescriptor]
 
 'delegateTargetDescriptor' @ [83:71] ==> val delegateTargetDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.invoke[LocalVariableDescriptor]
@@ -228,13 +226,13 @@ Inferred types:
 
 'hidesOverrideError' @ [97:25] ==> val hidesOverrideError: DiagnosticWithParameters2<(KtClassOrObject..KtClassOrObject?), (CallableMemberDescriptor..CallableMemberDescriptor?), (MutableList<(CallableMemberDescriptor..CallableMemberDescriptor?)>..List<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)> defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.Companion.createAction[LocalVariableDescriptor]
 
-'psiElement' @ [97:44] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtClassOrObject..KtClassOrObject?), (CallableMemberDescriptor..CallableMemberDescriptor?), (MutableList<(CallableMemberDescriptor..CallableMemberDescriptor?)>..List<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)>.psiElement: (KtClassOrObject..KtClassOrObject?)[MyPropertyDescriptor]
+'psiElement' @ [97:44] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtClassOrObject..KtClassOrObject?), (CallableMemberDescriptor..CallableMemberDescriptor?), (MutableList<(CallableMemberDescriptor..CallableMemberDescriptor?)>..List<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)>.psiElement: KtClassOrObject[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassOrObject..org.jetbrains.kotlin.psi.KtClassOrObject?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
     <B : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)>..kotlin.collections.List<(org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)>?)
 
-'klass' @ [98:17] ==> val klass: (KtClassOrObject..KtClassOrObject?) defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.Companion.createAction[LocalVariableDescriptor]
+'klass' @ [98:17] ==> val klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.Companion.createAction[LocalVariableDescriptor]
 
 'superTypeListEntries' @ [98:23] ==> public final val KtClassOrObject.superTypeListEntries: List<KtSuperTypeListEntry>[MyPropertyDescriptor]
 
@@ -250,7 +248,7 @@ Inferred types:
 
 'hidesOverrideError' @ [103:34] ==> val hidesOverrideError: DiagnosticWithParameters2<(KtClassOrObject..KtClassOrObject?), (CallableMemberDescriptor..CallableMemberDescriptor?), (MutableList<(CallableMemberDescriptor..CallableMemberDescriptor?)>..List<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)> defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.Companion.createAction[LocalVariableDescriptor]
 
-'a' @ [103:53] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtClassOrObject..KtClassOrObject?), (CallableMemberDescriptor..CallableMemberDescriptor?), (MutableList<(CallableMemberDescriptor..CallableMemberDescriptor?)>..List<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)>.a: (CallableMemberDescriptor..CallableMemberDescriptor?)[MyPropertyDescriptor]
+'a' @ [103:53] ==> public final val <E : (PsiElement..PsiElement?), A : (Any..Any?), B : (Any..Any?)> DiagnosticWithParameters2<(KtClassOrObject..KtClassOrObject?), (CallableMemberDescriptor..CallableMemberDescriptor?), (MutableList<(CallableMemberDescriptor..CallableMemberDescriptor?)>..List<(CallableMemberDescriptor..CallableMemberDescriptor?)>?)>.a: CallableMemberDescriptor[MyPropertyDescriptor]
 Inferred types:
     <E : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtClassOrObject..org.jetbrains.kotlin.psi.KtClassOrObject?)
     <A : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
@@ -258,13 +256,11 @@ Inferred types:
 
 'SpecifyOverrideExplicitlyFix' @ [104:20] ==> public constructor SpecifyOverrideExplicitlyFix(element: KtClassOrObject, signature: String) defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix[ClassConstructorDescriptorImpl]
 
-'klass' @ [104:49] ==> val klass: (KtClassOrObject..KtClassOrObject?) defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.Companion.createAction[LocalVariableDescriptor]
-
-'DescriptorRenderer' @ [104:56] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
+'klass' @ [104:49] ==> val klass: KtClassOrObject defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.Companion.createAction[LocalVariableDescriptor]
 
 'ONLY_NAMES_WITH_SHORT_TYPES' @ [104:75] ==> @field:JvmField public final val ONLY_NAMES_WITH_SHORT_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
 'render' @ [104:103] ==> public abstract fun render(declarationDescriptor: DeclarationDescriptor): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
 
-'properOverride' @ [104:110] ==> val properOverride: (CallableMemberDescriptor..CallableMemberDescriptor?) defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.Companion.createAction[LocalVariableDescriptor]
+'properOverride' @ [104:110] ==> val properOverride: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.quickfix.SpecifyOverrideExplicitlyFix.Companion.createAction[LocalVariableDescriptor]
 

@@ -137,7 +137,7 @@ Inferred types:
 
 'subscribe' @ [96:32] ==> public abstract fun <L : (Any..Any?)> subscribe(@NotNull p0: Topic<(GradleSyncListener..GradleSyncListener?)>, @NotNull p1: GradleSyncListener): Unit defined in com.intellij.util.messages.MessageBusConnection[JavaMethodDescriptor]
 Inferred types:
-    <L : (Any..Any?)> -> GradleSyncListener
+    <L : (Any..Any?)> -> (com.android.tools.idea.gradle.project.sync.GradleSyncListener..com.android.tools.idea.gradle.project.sync.GradleSyncListener?)
 
 'gradleSyncTopic' @ [96:42] ==> val gradleSyncTopic: Topic<GradleSyncListener> defined in org.jetbrains.kotlin.android.actions.NewKotlinActivityAction.Companion.subscribe[LocalVariableDescriptor]
 
@@ -304,8 +304,6 @@ Inferred types:
 
 'javaFiles' @ [147:54] ==> val javaFiles: ArrayList<PsiJavaFile> /* = ArrayList<PsiJavaFile> */ defined in org.jetbrains.kotlin.android.actions.NewKotlinActivityAction.actionPerformed[LocalVariableDescriptor]
 
-'JavaToKotlinAction' @ [150:25] ==> public companion object defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction[FakeCallableDescriptorForObject]
-
 'convertFiles' @ [150:44] ==> public final fun convertFiles(javaFiles: List<PsiJavaFile>, project: Project, enableExternalCodeProcessing: Boolean = ...): List<KtFile> defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction.Companion[SimpleFunctionDescriptorImpl]
 
 'javaFiles' @ [150:57] ==> val javaFiles: ArrayList<PsiJavaFile> /* = ArrayList<PsiJavaFile> */ defined in org.jetbrains.kotlin.android.actions.NewKotlinActivityAction.actionPerformed[LocalVariableDescriptor]
@@ -354,7 +352,7 @@ Inferred types:
 
 'kotlin' @ [175:25] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'functions' @ [175:32] ==> @SinceKotlin public val KClass<*>.functions: Collection<KFunction<*>> defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
 
@@ -378,7 +376,7 @@ Inferred types:
 
 'kotlin' @ [176:33] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'functions' @ [176:40] ==> @SinceKotlin public val KClass<*>.functions: Collection<KFunction<*>> defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
 

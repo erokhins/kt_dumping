@@ -182,9 +182,9 @@ Inferred types:
 
 'this@KotlinUClass' @ [75:51] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUClass[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [76:46] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [76:46] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'ktClass' @ [77:44] ==> public final val ktClass: KtClassOrObject? defined in org.jetbrains.uast.kotlin.KotlinUClass[PropertyDescriptorImpl]
 
@@ -200,9 +200,9 @@ Inferred types:
 Inferred types:
     <T> -> UAnnotation
 
-'lz' @ [90:57] ==> internal fun <T> lz(initializer: () -> List<UExpression>): Lazy<List<UExpression>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [90:57] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UExpression>
+    <T> -> T
 
 'initializers' @ [91:33] ==> val initializers: List<KtAnonymousInitializer> defined in org.jetbrains.uast.kotlin.KotlinUClass.getMethods.createUMethod.<no name provided>.uastBody.<anonymous>[LocalVariableDescriptor]
 
@@ -253,10 +253,14 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
 
+'isDelegatedMethod' @ [106:30] ==> local final fun isDelegatedMethod(psiMethod: PsiMethod): Boolean defined in org.jetbrains.uast.kotlin.KotlinUClass.getMethods[SimpleFunctionDescriptorImpl]
+
 'map' @ [107:18] ==> public fun <T, R> Sequence<(PsiMethod..PsiMethod?)>.map(transform: ((PsiMethod..PsiMethod?)) -> UMethod): Sequence<UMethod> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
     <R> -> UMethod
+
+'createUMethod' @ [107:24] ==> local final fun createUMethod(psiMethod: PsiMethod): UMethod defined in org.jetbrains.uast.kotlin.KotlinUClass.getMethods[SimpleFunctionDescriptorImpl]
 
 'toList' @ [108:18] ==> public fun <T> Sequence<UMethod>.toList(): List<UMethod> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:

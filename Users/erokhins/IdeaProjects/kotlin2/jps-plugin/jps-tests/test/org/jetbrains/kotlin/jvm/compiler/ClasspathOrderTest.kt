@@ -46,8 +46,6 @@ Inferred types:
 Inferred types:
     <T> -> File
 
-'PathUtil' @ [48:24] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'kotlinPathsForDistDirectory' @ [48:33] ==> @JvmStatic public final val kotlinPathsForDistDirectory: KotlinPaths defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedPropertyDescriptor]
 
 'stdlibPath' @ [48:61] ==> public final val KotlinPaths.stdlibPath: File[MyPropertyDescriptor]

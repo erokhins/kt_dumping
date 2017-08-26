@@ -147,7 +147,7 @@ Inferred types:
 
 'getExtensions' @ [78:40] ==> @NotNull public open fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(LocalInspectionEP..LocalInspectionEP?)>): (Array<(LocalInspectionEP..LocalInspectionEP?)>..Array<out (LocalInspectionEP..LocalInspectionEP?)>) defined in com.intellij.openapi.extensions.Extensions[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LocalInspectionEP
+    <T : (Any..Any?)> -> (com.intellij.codeInspection.LocalInspectionEP..com.intellij.codeInspection.LocalInspectionEP?)
 
 'LOCAL_INSPECTION' @ [78:72] ==> public final val LOCAL_INSPECTION: (ExtensionPointName<(LocalInspectionEP..LocalInspectionEP?)>..ExtensionPointName<(LocalInspectionEP..LocalInspectionEP?)>?) defined in com.intellij.codeInspection.LocalInspectionEP[JavaPropertyDescriptor]
 
@@ -247,7 +247,7 @@ Inferred types:
 
 'java' @ [100:89] ==> public val <T> KClass<out InspectionProfileEntry>.java: Class<out InspectionProfileEntry> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> InspectionProfileEntry
+    <T> -> Captured(out InspectionProfileEntry)
 
 'assertEmpty' @ [103:24] ==> public open fun assertEmpty(p0: (String..String?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 
@@ -319,7 +319,7 @@ Inferred types:
 
 'assertEmpty' @ [117:24] ==> public open fun <T : (Any..Any?)> assertEmpty(p0: (String..String?), p1: (MutableCollection<(String..String?)>..Collection<(String..String?)>?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'join' @ [117:47] ==> @NotNull @Contract public open fun join(@NotNull p0: (MutableCollection<(String..String?)>..Collection<(String..String?)>), @NotNull p1: String): String defined in com.intellij.openapi.util.text.StringUtil[JavaMethodDescriptor]
 
@@ -357,7 +357,7 @@ Inferred types:
 
 'assertEmpty' @ [128:24] ==> public open fun <T : (Any..Any?)> assertEmpty(p0: (String..String?), p1: (MutableCollection<(String..String?)>..Collection<(String..String?)>?)): Unit defined in com.intellij.testFramework.UsefulTestCase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'failMessages' @ [128:36] ==> val failMessages: MutableList<String> defined in org.jetbrains.kotlin.idea.inspections.InspectionDescriptionTest.testNotEmptyToolNames[LocalVariableDescriptor]
 

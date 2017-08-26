@@ -15,6 +15,8 @@ Inferred types:
 
 'JavaModuleGraphUtil' @ [33:47] ==> private constructor JavaModuleGraphUtil() defined in com.intellij.codeInsight.daemon.impl.analysis.JavaModuleGraphUtil[JavaClassConstructorDescriptor]
 
+'findDescriptorByElement' @ [33:68] ==> @Nullable public open fun findDescriptorByElement(@Nullable p0: PsiElement?): PsiJavaModule? defined in com.intellij.codeInsight.daemon.impl.analysis.JavaModuleGraphUtil[JavaMethodDescriptor]
+
 'fileFromOurModule' @ [39:25] ==> value-parameter fileFromOurModule: VirtualFile? defined in org.jetbrains.kotlin.idea.modules.IdeJavaModuleResolver.checkAccessibility[ValueParameterDescriptorImpl]
 
 'let' @ [39:44] ==> @InlineOnly public inline fun <T, R> VirtualFile.let(block: (VirtualFile) -> PsiJavaModule?): PsiJavaModule? defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -23,6 +25,8 @@ Inferred types:
     <R> -> PsiJavaModule?
 
 'this' @ [39:48] ==> <this> defined in org.jetbrains.kotlin.idea.modules.IdeJavaModuleResolver[LazyClassReceiverParameterDescriptor]
+
+'findJavaModule' @ [39:54] ==> private final fun findJavaModule(file: VirtualFile): PsiJavaModule? defined in org.jetbrains.kotlin.idea.modules.IdeJavaModuleResolver[SimpleFunctionDescriptorImpl]
 
 'this' @ [40:27] ==> <this> defined in org.jetbrains.kotlin.idea.modules.IdeJavaModuleResolver[LazyClassReceiverParameterDescriptor]
 

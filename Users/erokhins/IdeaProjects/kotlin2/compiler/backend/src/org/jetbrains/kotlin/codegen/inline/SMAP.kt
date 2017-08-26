@@ -22,8 +22,6 @@ Inferred types:
 Inferred types:
     <T> -> RangeMapping
 
-'RangeMapping' @ [38:58] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.RangeMapping[FakeCallableDescriptorForObject]
-
 'SKIP' @ [38:71] ==> public final val SKIP: RangeMapping defined in org.jetbrains.kotlin.codegen.inline.RangeMapping.Companion[PropertyDescriptorImpl]
 
 'realMappings' @ [41:13] ==> val realMappings: List<FileMapping> defined in org.jetbrains.kotlin.codegen.inline.SMAPBuilder.build[LocalVariableDescriptor]
@@ -356,8 +354,6 @@ Inferred types:
 
 'value' @ [121:29] ==> value-parameter value: (RangeMapping..RangeMapping?) defined in org.jetbrains.kotlin.codegen.inline.NestedSourceMapper.findMappingIfExists.<anonymous>[ValueParameterDescriptorImpl]
 
-'RangeMapping' @ [121:43] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.RangeMapping[FakeCallableDescriptorForObject]
-
 'compare' @ [121:67] ==> public open fun compare(o1: RangeMapping, o2: RangeMapping): Int defined in org.jetbrains.kotlin.codegen.inline.RangeMapping.Comparator[SimpleFunctionDescriptorImpl]
 
 'value' @ [121:75] ==> value-parameter value: (RangeMapping..RangeMapping?) defined in org.jetbrains.kotlin.codegen.inline.NestedSourceMapper.findMappingIfExists.<anonymous>[ValueParameterDescriptorImpl]
@@ -678,8 +674,6 @@ Inferred types:
 Inferred types:
     <T> -> RangeMapping
 
-'RangeMapping' @ [262:73] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.RangeMapping[FakeCallableDescriptorForObject]
-
 'Comparator' @ [262:86] ==> public object Comparator : Comparator<RangeMapping> defined in org.jetbrains.kotlin.codegen.inline.RangeMapping[FakeCallableDescriptorForObject]
 
 'default' @ [267:30] ==> public final val default: FileMapping defined in org.jetbrains.kotlin.codegen.inline.SMAP[PropertyDescriptorImpl]
@@ -876,8 +870,6 @@ Inferred types:
 'FileMapping' @ [336:19] ==> public constructor FileMapping(name: String, path: String) defined in org.jetbrains.kotlin.codegen.inline.FileMapping[ClassConstructorDescriptorImpl]
 
 'addRangeMapping' @ [338:13] ==> public final fun addRangeMapping(lineMapping: RangeMapping): Unit defined in org.jetbrains.kotlin.codegen.inline.FileMapping.SKIP[SimpleFunctionDescriptorImpl]
-
-'RangeMapping' @ [338:29] ==> public companion object defined in org.jetbrains.kotlin.codegen.inline.RangeMapping[FakeCallableDescriptorForObject]
 
 'SKIP' @ [338:42] ==> public final val SKIP: RangeMapping defined in org.jetbrains.kotlin.codegen.inline.RangeMapping.Companion[PropertyDescriptorImpl]
 

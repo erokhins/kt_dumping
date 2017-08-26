@@ -1,14 +1,12 @@
 'Notification' @ [34:39] ==> public constructor Notification(@NotNull p0: String, @NotNull p1: String, @NotNull p2: String, @NotNull p3: NotificationType, @Nullable p4: NotificationListener?) defined in com.intellij.notification.Notification[JavaClassConstructorDescriptor]
 
-'KotlinConfigurationCheckerComponent' @ [34:52] ==> public companion object defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent[FakeCallableDescriptorForObject]
-
 'CONFIGURE_NOTIFICATION_GROUP_ID' @ [34:88] ==> public final val CONFIGURE_NOTIFICATION_GROUP_ID: String defined in org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent.Companion[PropertyDescriptorImpl]
 
 'notificationString' @ [35:52] ==> value-parameter notificationString: String defined in org.jetbrains.kotlin.idea.configuration.ui.notifications.ConfigureKotlinNotification.<init>[ValueParameterDescriptorImpl]
 
 'WARNING' @ [36:69] ==> enum entry WARNING defined in com.intellij.notification.NotificationType[FakeCallableDescriptorForObject]
 
-'NotificationListener' @ [36:78] ==> public fun NotificationListener(function: (Notification, HyperlinkEvent) -> Unit): NotificationListener defined in com.intellij.notification[SimpleFunctionDescriptorImpl]
+'NotificationListener' @ [36:78] ==> public fun NotificationListener(function: (Notification, HyperlinkEvent) -> Unit): NotificationListener defined in com.intellij.notification[SamConstructorDescriptorImpl]
 
 'event' @ [37:9] ==> value-parameter event: HyperlinkEvent defined in org.jetbrains.kotlin.idea.configuration.ui.notifications.ConfigureKotlinNotification.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -58,7 +56,7 @@
 
 'hashCode' @ [55:24] ==> public open fun hashCode(): Int defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'getCanBeConfiguredModulesWithKotlinFiles' @ [60:27] ==> public fun getCanBeConfiguredModulesWithKotlinFiles(project: Project, excludeModules: Collection<Module> = ...): Collection<Module> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getCanBeConfiguredModulesWithKotlinFiles' @ [60:27] ==> public fun getCanBeConfiguredModulesWithKotlinFiles(project: Project, excludeModules: Collection<Module> = ...): Collection<Module> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [60:68] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.ui.notifications.ConfigureKotlinNotification.Companion.getNotificationString[ValueParameterDescriptorImpl]
 
@@ -82,7 +80,7 @@ Inferred types:
 
 'name' @ [64:74] ==> public final val Module.name: String[MyPropertyDescriptor]
 
-'getAbleToRunConfigurators' @ [65:42] ==> public fun getAbleToRunConfigurators(project: Project): Collection<KotlinProjectConfigurator> defined in org.jetbrains.kotlin.idea.configuration[SimpleFunctionDescriptorImpl]
+'getAbleToRunConfigurators' @ [65:42] ==> public fun getAbleToRunConfigurators(project: Project): Collection<KotlinProjectConfigurator> defined in org.jetbrains.kotlin.idea.configuration in file ConfigureKotlinInProjectUtils.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [65:68] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.configuration.ui.notifications.ConfigureKotlinNotification.Companion.getNotificationString[ValueParameterDescriptorImpl]
 

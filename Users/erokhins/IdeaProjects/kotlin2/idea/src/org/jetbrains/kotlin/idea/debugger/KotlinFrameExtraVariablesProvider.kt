@@ -18,7 +18,7 @@
 Inferred types:
     <T> -> Set<TextWithImports>
 
-'findAdditionalExpressions' @ [52:32] ==> private fun findAdditionalExpressions(position: SourcePosition): Set<TextWithImports> defined in org.jetbrains.kotlin.idea.debugger[SimpleFunctionDescriptorImpl]
+'findAdditionalExpressions' @ [52:32] ==> private fun findAdditionalExpressions(position: SourcePosition): Set<TextWithImports> defined in org.jetbrains.kotlin.idea.debugger in file KotlinFrameExtraVariablesProvider.kt[SimpleFunctionDescriptorImpl]
 
 'sourcePosition' @ [52:58] ==> value-parameter sourcePosition: SourcePosition defined in org.jetbrains.kotlin.idea.debugger.KotlinFrameExtraVariablesProvider.collectVariables[ValueParameterDescriptorImpl]
 
@@ -214,7 +214,7 @@ Inferred types:
 
 'getParentOfType' @ [100:35] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtDeclaration..KtDeclaration?)>): KtDeclaration? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtDeclaration
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtDeclaration..org.jetbrains.kotlin.psi.KtDeclaration?)
 
 'element' @ [100:51] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.debugger.getContainingElement[ValueParameterDescriptorImpl]
 
@@ -224,7 +224,7 @@ Inferred types:
 
 'getParentOfType' @ [100:102] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtElement..KtElement?)>): KtElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtElement
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'element' @ [100:118] ==> value-parameter element: PsiElement defined in org.jetbrains.kotlin.idea.debugger.getContainingElement[ValueParameterDescriptorImpl]
 

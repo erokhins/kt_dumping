@@ -60,13 +60,13 @@
 
 'processInput' @ [50:45] ==> public final val ProcessHandler.processInput: OutputStream?[MyPropertyDescriptor]
 
-'logError' @ [50:68] ==> public fun logError(cl: Class<*>, message: String): Unit defined in org.jetbrains.kotlin.console.actions[SimpleFunctionDescriptorImpl]
+'logError' @ [50:68] ==> public fun logError(cl: Class<*>, message: String): Unit defined in org.jetbrains.kotlin.console.actions in file RunExecuteActions.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [50:77] ==> <this> defined in org.jetbrains.kotlin.console.CommandExecutor[LazyClassReceiverParameterDescriptor]
 
 'java' @ [50:89] ==> public val <T> KClass<out CommandExecutor>.java: Class<out CommandExecutor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> CommandExecutor
+    <T> -> Captured(out CommandExecutor)
 
 '?:' @ [51:23] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Charset?, right: Charset): Charset[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -75,8 +75,6 @@ Inferred types:
 'processHandler' @ [51:24] ==> val processHandler: (ProcessHandler..ProcessHandler?) defined in org.jetbrains.kotlin.console.CommandExecutor.sendCommandToProcess[LocalVariableDescriptor]
 
 'charset' @ [51:66] ==> public final val BaseOSProcessHandler.charset: Charset?[MyPropertyDescriptor]
-
-'Charsets' @ [51:77] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
 
 'UTF_8' @ [51:86] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 

@@ -20,7 +20,7 @@ Inferred types:
 
 'getEmptyQuery' @ [34:53] ==> public open fun <T : (Any..Any?)> getEmptyQuery(): (Query<(PsiClass..PsiClass?)>..Query<(PsiClass..PsiClass?)>?) defined in com.intellij.util.EmptyQuery[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PsiClass
+    <T : (Any..Any?)> -> (com.intellij.psi.PsiClass..com.intellij.psi.PsiClass?)
 
 'search' @ [36:34] ==> @NotNull public open fun search(@NotNull p0: PsiClass, @NotNull p1: SearchScope, p2: Boolean, p3: Boolean, p4: Boolean): Query<(PsiClass..PsiClass?)> defined in com.intellij.psi.search.searches.ClassInheritorsSearch[JavaMethodDescriptor]
 

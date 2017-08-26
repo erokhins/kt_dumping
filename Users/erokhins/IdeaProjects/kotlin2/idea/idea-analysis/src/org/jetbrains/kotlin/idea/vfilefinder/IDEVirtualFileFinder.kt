@@ -4,8 +4,6 @@
 
 'classId' @ [32:46] ==> value-parameter classId: ClassId defined in org.jetbrains.kotlin.idea.vfilefinder.IDEVirtualFileFinder.findMetadata[ValueParameterDescriptorImpl]
 
-'KotlinMetadataFileIndex' @ [32:55] ==> public object KotlinMetadataFileIndex : KotlinMetadataFileIndexBase<KotlinMetadataFileIndex> defined in org.jetbrains.kotlin.idea.vfilefinder in file fileIndexes.kt[FakeCallableDescriptorForObject]
-
 'KEY' @ [32:79] ==> public final val KEY: ID<FqName, Void> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndex[PropertyDescriptorImpl]
 
 'file' @ [35:13] ==> val file: VirtualFile defined in org.jetbrains.kotlin.idea.vfilefinder.IDEVirtualFileFinder.findMetadata[LocalVariableDescriptor]
@@ -39,8 +37,6 @@ Inferred types:
 'findVirtualFileWithHeader' @ [54:13] ==> private final fun findVirtualFileWithHeader(classId: ClassId, key: ID<FqName, Void>): VirtualFile? defined in org.jetbrains.kotlin.idea.vfilefinder.IDEVirtualFileFinder[SimpleFunctionDescriptorImpl]
 
 'classId' @ [54:39] ==> value-parameter classId: ClassId defined in org.jetbrains.kotlin.idea.vfilefinder.IDEVirtualFileFinder.findVirtualFileWithHeader[ValueParameterDescriptorImpl]
-
-'KotlinClassFileIndex' @ [54:48] ==> public object KotlinClassFileIndex : KotlinFileIndexBase<KotlinClassFileIndex> defined in org.jetbrains.kotlin.idea.vfilefinder in file fileIndexes.kt[FakeCallableDescriptorForObject]
 
 'KEY' @ [54:69] ==> public final val KEY: ID<FqName, Void> defined in org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex[PropertyDescriptorImpl]
 

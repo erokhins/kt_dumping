@@ -2,7 +2,7 @@
 
 'JvmStatic' @ [42:5] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
-'translateCall' @ [47:16] ==> private fun translateCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'translateCall' @ [47:16] ==> private fun translateCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [47:30] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator.translate[ValueParameterDescriptorImpl]
 
@@ -18,7 +18,7 @@
 
 'call' @ [47:121] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'callElement' @ [47:126] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -26,7 +26,7 @@ Inferred types:
 
 'context' @ [54:53] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator.translateGet[ValueParameterDescriptorImpl]
 
-'getCallInfo' @ [54:61] ==> public fun TranslationContext.getCallInfo(resolvedCall: ResolvedCall<out CallableDescriptor>, extensionOrDispatchReceiver: JsExpression?): CallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'getCallInfo' @ [54:61] ==> public fun TranslationContext.getCallInfo(resolvedCall: ResolvedCall<out CallableDescriptor>, extensionOrDispatchReceiver: JsExpression?): CallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallInfo.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [54:73] ==> value-parameter resolvedCall: ResolvedCall<out VariableDescriptor> defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator.translateGet[ValueParameterDescriptorImpl]
 
@@ -42,7 +42,7 @@ Inferred types:
 
 'call' @ [55:81] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out VariableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> VariableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out VariableDescriptor)
 
 'callElement' @ [55:86] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -50,7 +50,7 @@ Inferred types:
 
 'context' @ [63:53] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator.translateSet[ValueParameterDescriptorImpl]
 
-'getCallInfo' @ [63:61] ==> public fun TranslationContext.getCallInfo(resolvedCall: ResolvedCall<out CallableDescriptor>, extensionOrDispatchReceiver: JsExpression?): CallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'getCallInfo' @ [63:61] ==> public fun TranslationContext.getCallInfo(resolvedCall: ResolvedCall<out CallableDescriptor>, extensionOrDispatchReceiver: JsExpression?): CallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallInfo.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [63:73] ==> value-parameter resolvedCall: ResolvedCall<out VariableDescriptor> defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator.translateSet[ValueParameterDescriptorImpl]
 
@@ -68,7 +68,7 @@ Inferred types:
 
 'call' @ [64:81] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out VariableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> VariableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out VariableDescriptor)
 
 'callElement' @ [64:86] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -99,8 +99,6 @@ Inferred types:
 
 'dispatchReceiver' @ [76:20] ==> value-parameter dispatchReceiver: JsExpression? defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator.buildCall[ValueParameterDescriptorImpl]
 
-'DefaultFunctionCallCase' @ [77:13] ==> public object DefaultFunctionCallCase : FunctionCallCase defined in org.jetbrains.kotlin.js.translate.callTranslator in file FunctionCallCases.kt[FakeCallableDescriptorForObject]
-
 'buildDefaultCallWithDispatchReceiver' @ [77:37] ==> public final fun buildDefaultCallWithDispatchReceiver(argumentsInfo: CallArgumentTranslator.ArgumentsInfo, dispatchReceiver: JsExpression, functionName: JsName, isNative: Boolean, hasSpreadOperator: Boolean): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator.DefaultFunctionCallCase[SimpleFunctionDescriptorImpl]
 
 'argumentsInfo' @ [77:74] ==> val argumentsInfo: CallArgumentTranslator.ArgumentsInfo defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator.buildCall[LocalVariableDescriptor]
@@ -112,8 +110,6 @@ Inferred types:
 'isNative' @ [77:121] ==> val isNative: Boolean defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator.buildCall[LocalVariableDescriptor]
 
 'hasSpreadOperator' @ [78:74] ==> val hasSpreadOperator: Boolean defined in org.jetbrains.kotlin.js.translate.callTranslator.CallTranslator.buildCall[LocalVariableDescriptor]
-
-'DefaultFunctionCallCase' @ [80:13] ==> public object DefaultFunctionCallCase : FunctionCallCase defined in org.jetbrains.kotlin.js.translate.callTranslator in file FunctionCallCases.kt[FakeCallableDescriptorForObject]
 
 'buildDefaultCallWithoutReceiver' @ [80:37] ==> public final fun buildDefaultCallWithoutReceiver(context: TranslationContext, argumentsInfo: CallArgumentTranslator.ArgumentsInfo, callableDescriptor: CallableDescriptor, isNative: Boolean, hasSpreadOperator: Boolean): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator.DefaultFunctionCallCase[SimpleFunctionDescriptorImpl]
 
@@ -131,7 +127,7 @@ Inferred types:
 
 'explicitReceiverKind' @ [86:17] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'NO_EXPLICIT_RECEIVER' @ [86:41] ==> enum entry NO_EXPLICIT_RECEIVER defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 
@@ -167,7 +163,7 @@ Inferred types:
 
 'variableCall' @ [98:20] ==> val variableCall: ResolvedCall<VariableDescriptor> defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[LocalVariableDescriptor]
 
-'expectedReceivers' @ [98:33] ==> private fun ResolvedCall<out CallableDescriptor>.expectedReceivers(): Boolean defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'expectedReceivers' @ [98:33] ==> private fun ResolvedCall<out CallableDescriptor>.expectedReceivers(): Boolean defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'CallTranslator' @ [99:31] ==> public object CallTranslator defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[FakeCallableDescriptorForObject]
 
@@ -181,7 +177,7 @@ Inferred types:
 
 'extensionOrDispatchReceiver' @ [99:100] ==> public final val extensionOrDispatchReceiver: JsExpression? defined in org.jetbrains.kotlin.js.translate.callTranslator.ExplicitReceivers[PropertyDescriptorImpl]
 
-'translateFunctionCall' @ [100:13] ==> private fun translateFunctionCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, inlineResolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'translateFunctionCall' @ [100:13] ==> private fun translateFunctionCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, inlineResolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [100:35] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[ValueParameterDescriptorImpl]
 
@@ -243,7 +239,7 @@ Inferred types:
 
 'extensionOrDispatchReceiver' @ [105:35] ==> public final val extensionOrDispatchReceiver: JsExpression? defined in org.jetbrains.kotlin.js.translate.callTranslator.ExplicitReceivers[PropertyDescriptorImpl]
 
-'translateFunctionCall' @ [106:17] ==> private fun translateFunctionCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, inlineResolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'translateFunctionCall' @ [106:17] ==> private fun translateFunctionCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, inlineResolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [106:39] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[ValueParameterDescriptorImpl]
 
@@ -257,7 +253,7 @@ Inferred types:
 
 'dispatchReceiver' @ [106:105] ==> val dispatchReceiver: JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[LocalVariableDescriptor]
 
-'translateFunctionCall' @ [109:17] ==> private fun translateFunctionCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, inlineResolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'translateFunctionCall' @ [109:17] ==> private fun translateFunctionCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, inlineResolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [109:39] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[ValueParameterDescriptorImpl]
 
@@ -279,7 +275,7 @@ Inferred types:
 
 'call' @ [115:29] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'call' @ [116:9] ==> val call: Call defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[LocalVariableDescriptor]
 
@@ -293,7 +289,7 @@ Inferred types:
 
 'call' @ [116:69] ==> val call: Call defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[LocalVariableDescriptor]
 
-'computeExplicitReceiversForInvoke' @ [117:42] ==> public fun computeExplicitReceiversForInvoke(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, explicitReceivers: ExplicitReceivers): ExplicitReceivers defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'computeExplicitReceiversForInvoke' @ [117:42] ==> public fun computeExplicitReceiversForInvoke(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, explicitReceivers: ExplicitReceivers): ExplicitReceivers defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [117:76] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[ValueParameterDescriptorImpl]
 
@@ -301,7 +297,7 @@ Inferred types:
 
 'explicitReceivers' @ [117:99] ==> value-parameter explicitReceivers: ExplicitReceivers defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[ValueParameterDescriptorImpl]
 
-'translateFunctionCall' @ [118:16] ==> private fun translateFunctionCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, inlineResolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'translateFunctionCall' @ [118:16] ==> private fun translateFunctionCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, inlineResolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [118:38] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[ValueParameterDescriptorImpl]
 
@@ -311,7 +307,7 @@ Inferred types:
 
 'explicitReceiversForInvoke' @ [118:75] ==> val explicitReceiversForInvoke: ExplicitReceivers defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[LocalVariableDescriptor]
 
-'translateFunctionCall' @ [121:12] ==> private fun translateFunctionCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, inlineResolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'translateFunctionCall' @ [121:12] ==> private fun translateFunctionCall(context: TranslationContext, resolvedCall: ResolvedCall<out FunctionDescriptor>, inlineResolvedCall: ResolvedCall<out CallableDescriptor>, explicitReceivers: ExplicitReceivers): JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallTranslator.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [121:34] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.translateCall[ValueParameterDescriptorImpl]
 
@@ -323,7 +319,7 @@ Inferred types:
 
 'context' @ [130:26] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.translateFunctionCall[ValueParameterDescriptorImpl]
 
-'getCallInfo' @ [130:34] ==> public fun TranslationContext.getCallInfo(resolvedCall: ResolvedCall<out FunctionDescriptor>, explicitReceivers: ExplicitReceivers): FunctionCallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator[SimpleFunctionDescriptorImpl]
+'getCallInfo' @ [130:34] ==> public fun TranslationContext.getCallInfo(resolvedCall: ResolvedCall<out FunctionDescriptor>, explicitReceivers: ExplicitReceivers): FunctionCallInfo defined in org.jetbrains.kotlin.js.translate.callTranslator in file CallInfo.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [130:46] ==> value-parameter resolvedCall: ResolvedCall<out FunctionDescriptor> defined in org.jetbrains.kotlin.js.translate.callTranslator.translateFunctionCall[ValueParameterDescriptorImpl]
 
@@ -337,7 +333,7 @@ Inferred types:
 
 'resultingDescriptor' @ [132:69] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'context' @ [132:90] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.translateFunctionCall[ValueParameterDescriptorImpl]
 
@@ -349,7 +345,7 @@ Inferred types:
 
 'call' @ [133:60] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'callElement' @ [133:65] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -357,7 +353,7 @@ Inferred types:
 
 'resultingDescriptor' @ [134:50] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'context' @ [134:71] ==> value-parameter context: TranslationContext defined in org.jetbrains.kotlin.js.translate.callTranslator.translateFunctionCall[ValueParameterDescriptorImpl]
 
@@ -365,7 +361,7 @@ Inferred types:
 
 'resultingDescriptor' @ [137:22] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'isSuspend' @ [137:42] ==> public final val FunctionDescriptor.isSuspend: Boolean[MyPropertyDescriptor]
 
@@ -401,7 +397,7 @@ Inferred types:
 
 'callExpression' @ [139:80] ==> val callExpression: JsExpression defined in org.jetbrains.kotlin.js.translate.callTranslator.translateFunctionCall[LocalVariableDescriptor]
 
-'apply' @ [139:95] ==> @InlineOnly public inline fun <T> JsExpression.apply(block: (JsExpression).() -> Unit): JsExpression defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [139:95] ==> @InlineOnly public inline fun <T> JsExpression.apply(block: JsExpression.() -> Unit): JsExpression defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JsExpression
 
@@ -413,7 +409,7 @@ Inferred types:
 
 'call' @ [141:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'callElement' @ [141:44] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -431,7 +427,7 @@ Inferred types:
 
 'call' @ [143:118] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'callElement' @ [143:123] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -457,7 +453,7 @@ Inferred types:
 
 'call' @ [146:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'callElement' @ [146:44] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -481,7 +477,7 @@ Inferred types:
 
 'call' @ [165:36] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'callElement' @ [165:41] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -512,13 +508,13 @@ Inferred types:
 
 'dispatchReceiver' @ [171:41] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'resolvedCall' @ [172:29] ==> value-parameter resolvedCall: ResolvedCall<out FunctionDescriptor> defined in org.jetbrains.kotlin.js.translate.callTranslator.computeExplicitReceiversForInvoke[ValueParameterDescriptorImpl]
 
 'extensionReceiver' @ [172:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'if (dispatchReceiver != null && extensionReceiver != null && resolvedCall.explicitReceiverKind == BOTH_RECEIVERS) {
         assert(explicitReceivers.extensionOrDispatchReceiver != null) {
@@ -544,7 +540,7 @@ Inferred types:
 
 'explicitReceiverKind' @ [174:79] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'BOTH_RECEIVERS' @ [174:103] ==> enum entry BOTH_RECEIVERS defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 
@@ -602,7 +598,7 @@ Inferred types:
 
 'explicitReceiverKind' @ [188:31] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out FunctionDescriptor>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> FunctionDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out FunctionDescriptor)
 
 'NO_EXPLICIT_RECEIVER' @ [189:9] ==> enum entry NO_EXPLICIT_RECEIVER defined in org.jetbrains.kotlin.resolve.calls.tasks.ExplicitReceiverKind[FakeCallableDescriptorForObject]
 

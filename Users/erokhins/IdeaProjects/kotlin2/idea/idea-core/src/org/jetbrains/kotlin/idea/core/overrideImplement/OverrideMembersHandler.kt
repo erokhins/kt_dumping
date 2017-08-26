@@ -32,8 +32,6 @@ Inferred types:
 
 'modality' @ [32:41] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [32:53] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [32:62] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'isPrivate' @ [32:84] ==> public open fun isPrivate(@NotNull p0: Visibility): Boolean defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaMethodDescriptor]
@@ -64,7 +62,7 @@ Inferred types:
 
 'SmartList' @ [38:86] ==> public constructor SmartList<E : (Any..Any?)>() defined in com.intellij.util.SmartList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> CallableMemberDescriptor
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableMemberDescriptor..org.jetbrains.kotlin.descriptors.CallableMemberDescriptor?)
 
 'LinkedHashMap' @ [41:44] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
 Inferred types:
@@ -109,6 +107,8 @@ Inferred types:
 
 'Data' @ [48:66] ==> public constructor Data(realSuper: CallableMemberDescriptor, immediateSupers: MutableList<CallableMemberDescriptor> = ...) defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMembersHandler.collectMembersToGenerate.Data[ClassConstructorDescriptorImpl]
 
+'realSuper' @ [48:72] ==> public final val realSuper: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMembersHandler.collectMembersToGenerate.Data[PropertyDescriptorImpl]
+
 'realSupers' @ [49:45] ==> val realSupers: List<CallableMemberDescriptor> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMembersHandler.collectMembersToGenerate[LocalVariableDescriptor]
 
 'filter' @ [49:56] ==> public inline fun <T> Iterable<CallableMemberDescriptor>.filter(predicate: (CallableMemberDescriptor) -> Boolean): List<CallableMemberDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -118,8 +118,6 @@ Inferred types:
 'it' @ [49:65] ==> value-parameter it: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMembersHandler.collectMembersToGenerate.<anonymous>[ValueParameterDescriptorImpl]
 
 'modality' @ [49:68] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [49:80] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [49:89] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -236,19 +234,13 @@ Inferred types:
 
 'realSuper' @ [69:100] ==> val realSuper: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMembersHandler.collectMembersToGenerate[LocalVariableDescriptor]
 
-'OverrideMemberChooserObject' @ [70:29] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
-
 'NO_BODY' @ [70:66] ==> public object NO_BODY : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 
 'immediateSuperToUse' @ [71:25] ==> val immediateSuperToUse: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMembersHandler.collectMembersToGenerate[LocalVariableDescriptor]
 
 'modality' @ [71:45] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [71:57] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [71:66] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
-'OverrideMemberChooserObject' @ [72:29] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [72:66] ==> public object EMPTY : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 
@@ -256,19 +248,13 @@ Inferred types:
 
 'size' @ [73:41] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'OverrideMemberChooserObject' @ [74:29] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
-
 'SUPER' @ [74:66] ==> public object SUPER : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
-
-'OverrideMemberChooserObject' @ [76:29] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
 
 'QUALIFIED_SUPER' @ [76:66] ==> public object QUALIFIED_SUPER : OverrideMemberChooserObject.BodyType defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.BodyType[FakeCallableDescriptorForObject]
 
 'result' @ [79:21] ==> val result: ArrayList<OverrideMemberChooserObject> defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMembersHandler.collectMembersToGenerate[LocalVariableDescriptor]
 
 'add' @ [79:28] ==> public open fun add(element: OverrideMemberChooserObject): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
-
-'OverrideMemberChooserObject' @ [79:32] ==> public companion object defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject[FakeCallableDescriptorForObject]
 
 'create' @ [79:60] ==> public final fun create(project: Project, descriptor: CallableMemberDescriptor, immediateSuper: CallableMemberDescriptor, bodyType: OverrideMemberChooserObject.BodyType, preferConstructorParameter: Boolean = ...): OverrideMemberChooserObject defined in org.jetbrains.kotlin.idea.core.overrideImplement.OverrideMemberChooserObject.Companion[SimpleFunctionDescriptorImpl]
 

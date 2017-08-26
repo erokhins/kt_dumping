@@ -66,7 +66,7 @@
 
 'getContainingIds' @ [67:43] ==> @NotNull public abstract fun <Key : (Any..Any?)> getContainingIds(@NotNull p0: StubIndexKey<(String..String?), *>, @NotNull p1: String, @NotNull p2: Project, @NotNull p3: GlobalSearchScope): IdIterator defined in com.intellij.psi.stubs.StubIndex[JavaMethodDescriptor]
 Inferred types:
-    <Key : (Any..Any?)> -> String
+    <Key : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'getInstance' @ [67:85] ==> @NotNull public open fun getInstance(): KotlinExactPackagesIndex defined in org.jetbrains.kotlin.idea.stubindex.KotlinExactPackagesIndex[JavaMethodDescriptor]
 

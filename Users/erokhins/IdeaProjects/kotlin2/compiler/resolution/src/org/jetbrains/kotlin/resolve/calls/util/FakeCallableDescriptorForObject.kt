@@ -20,17 +20,17 @@
 
 'emptyList' @ [46:83] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(TypeParameterDescriptor..TypeParameterDescriptor?)>..List<(TypeParameterDescriptor..TypeParameterDescriptor?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeParameterDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
 'emptyList' @ [48:85] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ValueParameterDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
 
 'type' @ [50:49] ==> public final val FakeCallableDescriptorForObject.type: KotlinType[MyPropertyDescriptor]
 
 'emptySet' @ [56:84] ==> public final fun <T : (Any..Any?)> emptySet(): (MutableSet<(CallableDescriptor..CallableDescriptor?)>..Set<(CallableDescriptor..CallableDescriptor?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CallableDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
 
 'classDescriptor' @ [58:42] ==> public final val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.resolve.calls.util.FakeCallableDescriptorForObject[PropertyDescriptorImpl]
 

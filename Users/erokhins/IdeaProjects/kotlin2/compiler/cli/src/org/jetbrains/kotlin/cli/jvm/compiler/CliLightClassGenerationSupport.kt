@@ -54,8 +54,8 @@ Inferred types:
 
 'get' @ [83:24] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [83:43] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -77,8 +77,8 @@ Inferred types:
 
 'get' @ [87:24] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?), p1: (PsiElement..PsiElement?)): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> ClassDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'CLASS' @ [87:43] ==> public final val CLASS: (WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (ClassDescriptor..ClassDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -136,8 +136,8 @@ Inferred types:
 
 'get' @ [110:31] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(FqName..FqName?), (MutableCollection<(KtFile..KtFile?)>..Collection<(KtFile..KtFile?)>?)>..ReadOnlySlice<(FqName..FqName?), (MutableCollection<(KtFile..KtFile?)>..Collection<(KtFile..KtFile?)>?)>?), p1: (FqName..FqName?)): (MutableCollection<(KtFile..KtFile?)>?..Collection<(KtFile..KtFile?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> FqName
-    <V : (Any..Any?)> -> (kotlin.collections.MutableCollection<(org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)>)
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
+    <V : (Any..Any?)> -> (kotlin.collections.MutableCollection<(org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)>..kotlin.collections.Collection<(org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)>?)
 
 'PACKAGE_TO_FILES' @ [110:50] ==> public final val PACKAGE_TO_FILES: (WritableSlice<(FqName..FqName?), (MutableCollection<(KtFile..KtFile?)>..Collection<(KtFile..KtFile?)>?)>..WritableSlice<(FqName..FqName?), (MutableCollection<(KtFile..KtFile?)>..Collection<(KtFile..KtFile?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -205,18 +205,14 @@ Inferred types:
 
 'getContributedDescriptors' @ [135:47] ==> public abstract fun getContributedDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean): Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[DeserializedSimpleFunctionDescriptor]
 
-'DescriptorKindFilter' @ [135:73] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'PACKAGES' @ [135:94] ==> @field:JvmField public final val PACKAGES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[DeserializedPropertyDescriptor]
-
-'MemberScope' @ [135:104] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'ALL_NAME_FILTER' @ [135:116] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[DeserializedPropertyDescriptor]
 
 'mapNotNull' @ [136:30] ==> @NotNull @Contract public open fun <T : (Any..Any?), V : (Any..Any?)> mapNotNull(@NotNull p0: (MutableCollection<out (DeclarationDescriptor..DeclarationDescriptor?)>..Collection<(DeclarationDescriptor..DeclarationDescriptor?)>), @NotNull p1: Function<(DeclarationDescriptor..DeclarationDescriptor?), (FqName..FqName?)>): (MutableList<(FqName..FqName?)>..List<(FqName..FqName?)>) defined in com.intellij.util.containers.ContainerUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DeclarationDescriptor
-    <V : (Any..Any?)> -> FqName
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
 
 'members' @ [136:41] ==> val members: Collection<DeclarationDescriptor> defined in org.jetbrains.kotlin.cli.jvm.compiler.CliLightClassGenerationSupport.getSubPackages[LocalVariableDescriptor]
 
@@ -236,8 +232,8 @@ Inferred types:
 
 'get' @ [151:31] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (PsiElement..PsiElement?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'DECLARATION_TO_DESCRIPTOR' @ [151:50] ==> public final val DECLARATION_TO_DESCRIPTOR: (ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(PsiElement..PsiElement?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -264,8 +260,6 @@ Inferred types:
 'listOfNotNull' @ [162:16] ==> public fun <T : Any> listOfNotNull(element: PsiClass?): List<PsiClass> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> PsiClass
-
-'KtLightClassForFacade' @ [163:17] ==> public companion object Factory defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade[FakeCallableDescriptorForObject]
 
 'createForFacade' @ [163:39] ==> public final fun createForFacade(manager: PsiManager, facadeClassFqName: FqName, searchScope: GlobalSearchScope, files: Collection<KtFile>): KtLightClassForFacade defined in org.jetbrains.kotlin.asJava.classes.KtLightClassForFacade.Factory[DeserializedSimpleFunctionDescriptor]
 
@@ -347,8 +341,8 @@ Inferred types:
 
 'record' @ [195:19] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(K..K?), (V..V?)>..WritableSlice<(K..K?), (V..V?)>?), p1: (K..K?), p2: (V..V?)): Unit defined in org.jetbrains.kotlin.cli.jvm.compiler.CliLightClassGenerationSupport.CliBindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [195:26] ==> value-parameter slice: WritableSlice<K, V> defined in org.jetbrains.kotlin.cli.jvm.compiler.CliLightClassGenerationSupport.NoScopeRecordCliBindingTrace.record[ValueParameterDescriptorImpl]
 
@@ -390,8 +384,8 @@ Inferred types:
 
 'get' @ [215:31] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(K..K?), (V..V?)>..ReadOnlySlice<(K..K?), (V..V?)>?), p1: (K..K?)): V? defined in org.jetbrains.kotlin.resolve.BindingTraceContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'slice' @ [215:35] ==> value-parameter slice: ReadOnlySlice<K, V> defined in org.jetbrains.kotlin.cli.jvm.compiler.CliLightClassGenerationSupport.CliBindingTrace.get[ValueParameterDescriptorImpl]
 

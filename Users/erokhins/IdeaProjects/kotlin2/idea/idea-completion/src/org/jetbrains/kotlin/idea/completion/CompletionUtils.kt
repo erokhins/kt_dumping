@@ -21,7 +21,7 @@ Inferred types:
 
 'putUserData' @ [57:9] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(T..T?)>, @Nullable p1: T?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [57:21] ==> value-parameter key: Key<T> defined in org.jetbrains.kotlin.idea.completion.putUserDataDeep[ValueParameterDescriptorImpl]
 
@@ -48,7 +48,7 @@ Inferred types:
 
 'getUserData' @ [66:9] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(T..T?)>): T? defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'key' @ [66:21] ==> value-parameter key: Key<T> defined in org.jetbrains.kotlin.idea.completion.getUserDataDeep[ValueParameterDescriptorImpl]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'putUserData' @ [84:5] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(ItemPriority..ItemPriority?)>, @Nullable p1: ItemPriority?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ItemPriority
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.ItemPriority..org.jetbrains.kotlin.idea.completion.ItemPriority?)
 
 'ITEM_PRIORITY_KEY' @ [84:17] ==> public val ITEM_PRIORITY_KEY: Key<ItemPriority> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -104,7 +104,7 @@ Inferred types:
 
 'putUserData' @ [106:5] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Unit..Unit?)>, @Nullable p1: Unit?): Unit defined in com.intellij.codeInsight.lookup.LookupElement[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'KEEP_OLD_ARGUMENT_LIST_ON_TAB_KEY' @ [106:17] ==> public val KEEP_OLD_ARGUMENT_LIST_ON_TAB_KEY: Key<Unit> defined in org.jetbrains.kotlin.idea.completion in file CompletionUtils.kt[PropertyDescriptorImpl]
 
@@ -239,8 +239,6 @@ Inferred types:
 'this' @ [173:123] ==> <this> defined in org.jetbrains.kotlin.idea.completion.createLookupElement[ReceiverParameterDescriptorImpl]
 
 'withTypeText' @ [174:10] ==> @Contract public open fun withTypeText(@Nullable p0: String?): (LookupElementBuilder..LookupElementBuilder?) defined in com.intellij.codeInsight.lookup.LookupElementBuilder[JavaMethodDescriptor]
-
-'BasicLookupElementFactory' @ [174:23] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory[FakeCallableDescriptorForObject]
 
 'SHORT_NAMES_RENDERER' @ [174:49] ==> public final val SHORT_NAMES_RENDERER: DescriptorRenderer defined in org.jetbrains.kotlin.idea.completion.BasicLookupElementFactory.Companion[PropertyDescriptorImpl]
 
@@ -768,8 +766,6 @@ Inferred types:
 
 'fullText' @ [320:31] ==> public final val fullText: String defined in org.jetbrains.kotlin.idea.completion.createLookupElementForType.<no name provided>[PropertyDescriptorImpl]
 
-'IdeDescriptorRenderers' @ [320:43] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE' @ [320:66] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 
 'renderClassifierName' @ [320:78] ==> public abstract fun renderClassifierName(klass: ClassifierDescriptor): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[DeserializedSimpleFunctionDescriptor]
@@ -876,7 +872,7 @@ Inferred types:
 
 'and' @ [349:80] ==> @SafeVarargs @NotNull public open fun <E : (Any..Any?)> and(vararg p0: (ElementPattern<out (T..T?)>..ElementPattern<out (T..T?)>?)): ElementPattern<(T..T?)> defined in com.intellij.patterns.StandardPatterns[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> T
+    <E : (Any..Any?)> -> (T..T?)
 
 'this' @ [349:84] ==> <this> defined in org.jetbrains.kotlin.idea.completion.and[ReceiverParameterDescriptorImpl]
 
@@ -884,19 +880,19 @@ Inferred types:
 
 'and' @ [350:77] ==> @SafeVarargs @NotNull public open fun <E : (Any..Any?)> and(vararg p0: (ElementPattern<out (T..T?)>..ElementPattern<out (T..T?)>?)): ElementPattern<(T..T?)> defined in com.intellij.patterns.StandardPatterns[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> T
+    <E : (Any..Any?)> -> (T..T?)
 
 'this' @ [350:81] ==> <this> defined in org.jetbrains.kotlin.idea.completion.andNot[ReceiverParameterDescriptorImpl]
 
 'not' @ [350:104] ==> @NotNull public open fun <E : (Any..Any?)> not(p0: (ElementPattern<(T..T?)>..ElementPattern<(T..T?)>?)): ObjectPattern.Capture<(T..T?)> defined in com.intellij.patterns.StandardPatterns[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> T
+    <E : (Any..Any?)> -> (T..T?)
 
 'rhs' @ [350:108] ==> value-parameter rhs: ElementPattern<T> defined in org.jetbrains.kotlin.idea.completion.andNot[ValueParameterDescriptorImpl]
 
 'or' @ [351:79] ==> @SafeVarargs @NotNull public open fun <E : (Any..Any?)> or(@NotNull vararg p0: (ElementPattern<out (T..T?)>..ElementPattern<out (T..T?)>?)): ElementPattern<(T..T?)> defined in com.intellij.patterns.StandardPatterns[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> T
+    <E : (Any..Any?)> -> (T..T?)
 
 'this' @ [351:82] ==> <this> defined in org.jetbrains.kotlin.idea.completion.or[ReceiverParameterDescriptorImpl]
 
@@ -1132,14 +1128,11 @@ Inferred types:
 
 '-' @ [417:46] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'CopyableUserDataProperty' @ [424:76] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<(LookupElement) -> Boolean>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtCodeFragment
-    <T : Any> -> Function1<LookupElement, Boolean>
+'getValue' @ [424:76] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [424:105] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<((LookupElement) -> Boolean..((LookupElement) -> Boolean)?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function1<LookupElement, Boolean>
+    <T : (Any..Any?)> -> ((com.intellij.codeInsight.lookup.LookupElement) -> kotlin.Boolean..((com.intellij.codeInsight.lookup.LookupElement) -> kotlin.Boolean)?)
 
 'original' @ [427:13] ==> public final val DeclarationDescriptor.original: DeclarationDescriptor[MyPropertyDescriptor]
 

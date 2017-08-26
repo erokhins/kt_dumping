@@ -151,7 +151,7 @@ Inferred types:
 
 'result' @ [70:29] ==> val result: LinkedHashSet<HierarchyNodeDescriptor> /* = LinkedHashSet<HierarchyNodeDescriptor> */ defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCalleeTreeStructure.buildChildren[LocalVariableDescriptor]
 
-'getOrCreateNodeDescriptor' @ [70:40] ==> internal fun getOrCreateNodeDescriptor(parent: HierarchyNodeDescriptor, originalElement: PsiElement, reference: PsiReference?, navigateToReference: Boolean, elementToDescriptorMap: MutableMap<PsiElement, NodeDescriptor<*>>, isJavaMap: Boolean): HierarchyNodeDescriptor? defined in org.jetbrains.kotlin.idea.hierarchy.calls[SimpleFunctionDescriptorImpl]
+'getOrCreateNodeDescriptor' @ [70:40] ==> internal fun getOrCreateNodeDescriptor(parent: HierarchyNodeDescriptor, originalElement: PsiElement, reference: PsiReference?, navigateToReference: Boolean, elementToDescriptorMap: MutableMap<PsiElement, NodeDescriptor<*>>, isJavaMap: Boolean): HierarchyNodeDescriptor? defined in org.jetbrains.kotlin.idea.hierarchy.calls in file callHierarchyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'nodeDescriptor' @ [70:66] ==> value-parameter nodeDescriptor: HierarchyNodeDescriptor defined in org.jetbrains.kotlin.idea.hierarchy.calls.KotlinCalleeTreeStructure.buildChildren[ValueParameterDescriptorImpl]
 

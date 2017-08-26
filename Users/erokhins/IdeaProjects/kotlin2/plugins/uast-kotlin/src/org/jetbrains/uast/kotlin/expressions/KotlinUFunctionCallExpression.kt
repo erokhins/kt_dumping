@@ -38,8 +38,6 @@ Inferred types:
 
 'source' @ [48:26] ==> value-parameter source: PsiElement? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression.Companion.resolveSource[ValueParameterDescriptorImpl]
 
-'LightClassUtil' @ [49:34] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava[FakeCallableDescriptorForObject]
-
 'getLightClassMethod' @ [49:49] ==> public final fun getLightClassMethod(function: KtFunction): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[DeserializedSimpleFunctionDescriptor]
 
 'source' @ [49:69] ==> value-parameter source: PsiElement? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression.Companion.resolveSource[ValueParameterDescriptorImpl]
@@ -52,9 +50,9 @@ Inferred types:
 
 'uastParent' @ [56:74] ==> value-parameter uastParent: UElement? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression.<init>[ValueParameterDescriptorImpl]
 
-'lz' @ [58:33] ==> internal fun <T> lz(initializer: () -> ResolvedCall<out CallableDescriptor>?): Lazy<ResolvedCall<out CallableDescriptor>?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [58:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ResolvedCall<out CallableDescriptor>?
+    <T> -> T
 
 '_resolvedCall' @ [59:9] ==> private final val _resolvedCall: ResolvedCall<*>? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
 
@@ -66,25 +64,25 @@ Inferred types:
 
 'analyze' @ [59:50] ==> internal fun KtElement.analyze(): BindingContext defined in org.jetbrains.uast.kotlin in file kotlinInternalUastUtils.kt[SimpleFunctionDescriptorImpl]
 
-'lz' @ [62:34] ==> internal fun <T> lz(initializer: () -> PsiType?): Lazy<PsiType?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [62:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiType?
+    <T> -> T
 
 'this' @ [63:28] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[LazyClassReceiverParameterDescriptor]
 
-'resolvedCall' @ [63:33] ==> private final val resolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
+'resolvedCall' @ [63:33] ==> private final val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
 
-'resolvedCall' @ [64:24] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression.receiverType.<anonymous>[LocalVariableDescriptor]
+'resolvedCall' @ [64:24] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression.receiverType.<anonymous>[LocalVariableDescriptor]
 
-'dispatchReceiver' @ [64:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
+'dispatchReceiver' @ [64:37] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
-'resolvedCall' @ [64:57] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression.receiverType.<anonymous>[LocalVariableDescriptor]
+'resolvedCall' @ [64:57] ==> val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)> defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression.receiverType.<anonymous>[LocalVariableDescriptor]
 
-'extensionReceiver' @ [64:70] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
+'extensionReceiver' @ [64:70] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'receiver' @ [65:9] ==> val receiver: ReceiverValue defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression.receiverType.<anonymous>[LocalVariableDescriptor]
 
@@ -96,23 +94,23 @@ Inferred types:
 
 'psi' @ [65:39] ==> public open val psi: KtCallExpression defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
 
-'lz' @ [68:32] ==> internal fun <T> lz(initializer: () -> String?): Lazy<String?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [68:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String?
+    <T> -> T
 
-'resolvedCall' @ [68:37] ==> private final val resolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
+'resolvedCall' @ [68:37] ==> private final val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
 
-'resultingDescriptor' @ [68:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
+'resultingDescriptor' @ [68:51] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'name' @ [68:72] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 
 'asString' @ [68:78] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'lz' @ [70:36] ==> internal fun <T> lz(initializer: () -> KotlinClassViaConstructorUSimpleReferenceExpression): Lazy<KotlinClassViaConstructorUSimpleReferenceExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [70:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinClassViaConstructorUSimpleReferenceExpression
+    <T> -> T
 
 'KotlinClassViaConstructorUSimpleReferenceExpression' @ [71:9] ==> public constructor KotlinClassViaConstructorUSimpleReferenceExpression(psi: KtCallExpression, identifier: String, uastParent: UElement?) defined in org.jetbrains.uast.kotlin.KotlinClassViaConstructorUSimpleReferenceExpression[ClassConstructorDescriptorImpl]
 
@@ -124,9 +122,9 @@ Inferred types:
 
 'this' @ [71:99] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [74:38] ==> internal fun <T> lz(initializer: () -> UIdentifier?): Lazy<UIdentifier?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [74:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UIdentifier?
+    <T> -> T
 
 'psi' @ [75:32] ==> public open val psi: KtCallExpression defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
 
@@ -144,9 +142,9 @@ Inferred types:
 
 'size' @ [80:36] ==> public abstract val size: Int defined in kotlin.collections.MutableList[DeserializedPropertyDescriptor]
 
-'lz' @ [82:36] ==> internal fun <T> lz(initializer: () -> List<UExpression>): Lazy<List<UExpression>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [82:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<UExpression>
+    <T> -> T
 
 'psi' @ [82:41] ==> public open val psi: KtCallExpression defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
 
@@ -173,9 +171,9 @@ Inferred types:
 
 'size' @ [85:35] ==> public abstract val size: Int defined in kotlin.collections.MutableList[DeserializedPropertyDescriptor]
 
-'lz' @ [87:35] ==> internal fun <T> lz(initializer: () -> List<PsiType>): Lazy<List<PsiType>> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [87:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<PsiType>
+    <T> -> T
 
 'psi' @ [87:40] ==> public open val psi: KtCallExpression defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
 
@@ -196,9 +194,9 @@ Inferred types:
 
 'getExpressionType' @ [90:17] ==> public open fun getExpressionType(): PsiType? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[DeserializedSimpleFunctionDescriptor]
 
-'lz' @ [92:26] ==> internal fun <T> lz(initializer: () -> UastCallKind): Lazy<UastCallKind> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [92:26] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UastCallKind
+    <T> -> T
 
 'when (resolvedCall?.resultingDescriptor) {
             is ConstructorDescriptor -> UastCallKind.CONSTRUCTOR_CALL
@@ -207,17 +205,13 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> UastCallKind
 
-'resolvedCall' @ [93:15] ==> private final val resolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
+'resolvedCall' @ [93:15] ==> private final val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
 
-'resultingDescriptor' @ [93:29] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
+'resultingDescriptor' @ [93:29] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
-
-'UastCallKind' @ [94:41] ==> public companion object defined in org.jetbrains.uast.UastCallKind[FakeCallableDescriptorForObject]
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'CONSTRUCTOR_CALL' @ [94:54] ==> @field:JvmField public final val CONSTRUCTOR_CALL: UastCallKind defined in org.jetbrains.uast.UastCallKind.Companion[DeserializedPropertyDescriptor]
-
-'UastCallKind' @ [95:21] ==> public companion object defined in org.jetbrains.uast.UastCallKind[FakeCallableDescriptorForObject]
 
 'METHOD_CALL' @ [95:34] ==> @field:JvmField public final val METHOD_CALL: UastCallKind defined in org.jetbrains.uast.UastCallKind.Companion[DeserializedPropertyDescriptor]
 
@@ -240,11 +234,11 @@ Inferred types:
 
 'receiver' @ [102:28] ==> public abstract val receiver: UExpression defined in org.jetbrains.uast.UQualifiedReferenceExpression[DeserializedPropertyDescriptor]
 
-'resolvedCall' @ [108:26] ==> private final val resolvedCall: ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
+'resolvedCall' @ [108:26] ==> private final val resolvedCall: ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>? defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression[PropertyDescriptorImpl]
 
-'resultingDescriptor' @ [108:40] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
+'resultingDescriptor' @ [108:40] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?))
 
 'descriptor' @ [109:22] ==> val descriptor: CallableDescriptor defined in org.jetbrains.uast.kotlin.KotlinUFunctionCallExpression.resolve[LocalVariableDescriptor]
 

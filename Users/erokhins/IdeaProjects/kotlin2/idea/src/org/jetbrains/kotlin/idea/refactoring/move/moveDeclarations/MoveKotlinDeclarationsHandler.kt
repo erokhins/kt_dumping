@@ -123,9 +123,9 @@ Inferred types:
                 is KtNamedDeclaration -> listOf(it)
                 is KtFile -> it.declarations.filterIsInstance<KtNamedDeclaration>()
                 else -> emptyList()
-            }' @ [80:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: List<KtNamedDeclaration>, entry1: List<KtNamedDeclaration>, entry2: List<KtNamedDeclaration>): List<KtNamedDeclaration>[SimpleFunctionDescriptorImpl]
+            }' @ [80:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Iterable<KtNamedDeclaration>, entry1: Iterable<KtNamedDeclaration>, entry2: Iterable<KtNamedDeclaration>): Iterable<KtNamedDeclaration>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> List<KtNamedDeclaration>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Iterable<KtNamedDeclaration>
 
 'it' @ [80:19] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.doMoveWithCheck.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -253,7 +253,7 @@ Inferred types:
 
 'project' @ [113:66] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.doMoveWithCheck[ValueParameterDescriptorImpl]
 
-'invokeMoveFilesOrDirectoriesRefactoring' @ [114:17] ==> public fun invokeMoveFilesOrDirectoriesRefactoring(moveDialog: KotlinAwareMoveFilesOrDirectoriesDialog?, project: Project, elements: Array<out PsiElement>, initialTargetDirectory: PsiDirectory?, moveCallback: MoveCallback?): Unit defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'invokeMoveFilesOrDirectoriesRefactoring' @ [114:17] ==> public fun invokeMoveFilesOrDirectoriesRefactoring(moveDialog: KotlinAwareMoveFilesOrDirectoriesDialog?, project: Project, elements: Array<out PsiElement>, initialTargetDirectory: PsiDirectory?, moveCallback: MoveCallback?): Unit defined in org.jetbrains.kotlin.idea.refactoring.move in file moveFilesUtil.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [114:57] ==> value-parameter it: KotlinAwareMoveFilesOrDirectoriesDialog? defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.doMoveWithCheck.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -421,8 +421,6 @@ Inferred types:
 'callback' @ [152:51] ==> value-parameter callback: MoveCallback? defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.doMoveWithCheck[ValueParameterDescriptorImpl]
 
 'show' @ [152:61] ==> public open fun show(): Unit defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinNestedClassesDialog[JavaMethodDescriptor]
-
-'KotlinSelectNestedClassRefactoringDialog' @ [155:17] ==> public companion object defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.KotlinSelectNestedClassRefactoringDialog[FakeCallableDescriptorForObject]
 
 'chooseNestedClassRefactoring' @ [155:58] ==> public final fun chooseNestedClassRefactoring(nestedClass: KtClassOrObject, targetContainer: PsiElement?): Unit defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.KotlinSelectNestedClassRefactoringDialog.Companion[SimpleFunctionDescriptorImpl]
 
@@ -601,7 +599,7 @@ Inferred types:
 
 'canMove' @ [207:16] ==> private final fun canMove(elements: Array<out PsiElement>, targetContainer: PsiElement?, editorMode: Boolean): Boolean defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler[SimpleFunctionDescriptorImpl]
 
-'elementsToMove' @ [207:24] ==> val elementsToMove: (Array<(PsiElement..PsiElement?)>..Array<out (PsiElement..PsiElement?)>?) defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.tryToMove[LocalVariableDescriptor]
+'elementsToMove' @ [207:24] ==> val elementsToMove: (Array<PsiElement>..Array<out (PsiElement..PsiElement?)>?) defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.tryToMove[LocalVariableDescriptor]
 
 'targetContainer' @ [207:40] ==> val targetContainer: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.tryToMove[LocalVariableDescriptor]
 
@@ -609,7 +607,7 @@ Inferred types:
 
 'project' @ [207:82] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.tryToMove[ValueParameterDescriptorImpl]
 
-'elementsToMove' @ [207:91] ==> val elementsToMove: (Array<(PsiElement..PsiElement?)>..Array<out (PsiElement..PsiElement?)>?) defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.tryToMove[LocalVariableDescriptor]
+'elementsToMove' @ [207:91] ==> val elementsToMove: (Array<PsiElement>..Array<out (PsiElement..PsiElement?)>?) defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.tryToMove[LocalVariableDescriptor]
 
 'targetContainer' @ [207:107] ==> val targetContainer: PsiElement? defined in org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.MoveKotlinDeclarationsHandler.tryToMove[LocalVariableDescriptor]
 

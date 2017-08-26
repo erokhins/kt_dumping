@@ -117,19 +117,19 @@ Inferred types:
 
 'name' @ [69:38] ==> public final var HasName.name: (JsName..JsName?)[MyPropertyDescriptor]
 
-'let' @ [69:44] ==> @InlineOnly public inline fun <T, R> JsName.let(block: (JsName) -> JsName): JsName defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [69:44] ==> @InlineOnly public inline fun <T, R> JsName.let(block: (JsName) -> (JsName..JsName?)): (JsName..JsName?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> JsName
-    <R> -> JsName
+    <R> -> (org.jetbrains.kotlin.js.backend.ast.JsName..org.jetbrains.kotlin.js.backend.ast.JsName?)
 
 'if (name.ident.startsWith("$")) {
                             cache.getOrPut(name) { JsScope.declareTemporaryName("x") }
                         }
                         else {
                             name
-                        }' @ [70:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: JsName, elseBranch: JsName): JsName[SimpleFunctionDescriptorImpl]
+                        }' @ [70:25] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (JsName..JsName?), elseBranch: (JsName..JsName?)): (JsName..JsName?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JsName
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.kotlin.js.backend.ast.JsName..org.jetbrains.kotlin.js.backend.ast.JsName?)
 
 'name' @ [70:29] ==> value-parameter name: JsName defined in org.jetbrains.kotlin.js.test.ast.NameResolutionTest.doTest.<no name provided>.visitElement.<anonymous>[ValueParameterDescriptorImpl]
 

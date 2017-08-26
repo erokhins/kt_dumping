@@ -2,9 +2,9 @@
 
 'OUT_VARIANCE' @ [29:49] ==> enum entry OUT_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
-'lazy' @ [32:38] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> KotlinType): Lazy<KotlinType> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [32:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinType
+    <T> -> T
 
 'PUBLICATION' @ [32:64] ==> enum entry PUBLICATION defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 

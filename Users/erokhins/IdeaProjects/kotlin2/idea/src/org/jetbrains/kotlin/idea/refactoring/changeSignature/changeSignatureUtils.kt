@@ -120,7 +120,7 @@ Inferred types:
 
 'container' @ [77:50] ==> val container: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.isInsideOfCallerBody[LocalVariableDescriptor]
 
-'isCaller' @ [77:60] ==> public fun PsiElement.isCaller(allUsages: Array<out UsageInfo>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature[SimpleFunctionDescriptorImpl]
+'isCaller' @ [77:60] ==> public fun PsiElement.isCaller(allUsages: Array<out UsageInfo>): Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature in file changeSignatureUtils.kt[SimpleFunctionDescriptorImpl]
 
 'allUsages' @ [77:69] ==> value-parameter allUsages: Array<out UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.isInsideOfCallerBody[ValueParameterDescriptorImpl]
 
@@ -154,11 +154,7 @@ Inferred types:
 
 'inArgumentPosition' @ [91:24] ==> value-parameter inArgumentPosition: Boolean defined in org.jetbrains.kotlin.idea.refactoring.changeSignature.renderTypeWithSubstitution[ValueParameterDescriptorImpl]
 
-'IdeDescriptorRenderers' @ [91:44] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
-
 'SOURCE_CODE_NOT_NULL_TYPE_APPROXIMATION' @ [91:67] ==> @field:JvmField public final val SOURCE_CODE_NOT_NULL_TYPE_APPROXIMATION: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
-
-'IdeDescriptorRenderers' @ [91:112] ==> public object IdeDescriptorRenderers defined in org.jetbrains.kotlin.idea.util[FakeCallableDescriptorForObject]
 
 'SOURCE_CODE' @ [91:135] ==> @field:JvmField public final val SOURCE_CODE: DescriptorRenderer defined in org.jetbrains.kotlin.idea.util.IdeDescriptorRenderers[DeserializedPropertyDescriptor]
 

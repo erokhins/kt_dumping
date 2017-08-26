@@ -36,8 +36,8 @@
 
 'get' @ [47:64] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..ReadOnlySlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?), p1: (KtReferenceExpression..KtReferenceExpression?)): DeclarationDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtReferenceExpression
-    <V : (Any..Any?)> -> DeclarationDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtReferenceExpression..org.jetbrains.kotlin.psi.KtReferenceExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
 
 'REFERENCE_TARGET' @ [47:83] ==> public final val REFERENCE_TARGET: (WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>..WritableSlice<(KtReferenceExpression..KtReferenceExpression?), (DeclarationDescriptor..DeclarationDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -57,7 +57,7 @@ Inferred types:
 
 'putUserData' @ [56:16] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(AnonymousTemplateEditingListener..AnonymousTemplateEditingListener?)>, @Nullable p1: AnonymousTemplateEditingListener?): Unit defined in com.intellij.openapi.editor.Editor[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AnonymousTemplateEditingListener
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousTemplateEditingListener..org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousTemplateEditingListener?)
 
 'LISTENER_KEY' @ [56:28] ==> private final val LISTENER_KEY: Key<(AnonymousTemplateEditingListener..AnonymousTemplateEditingListener?)> defined in org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousTemplateEditingListener.Companion[PropertyDescriptorImpl]
 
@@ -143,7 +143,7 @@ Inferred types:
 
 'getUserData' @ [87:24] ==> @Nullable public abstract fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(AnonymousTemplateEditingListener..AnonymousTemplateEditingListener?)>): AnonymousTemplateEditingListener? defined in com.intellij.openapi.editor.Editor[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AnonymousTemplateEditingListener
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousTemplateEditingListener..org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousTemplateEditingListener?)
 
 'LISTENER_KEY' @ [87:36] ==> private final val LISTENER_KEY: Key<(AnonymousTemplateEditingListener..AnonymousTemplateEditingListener?)> defined in org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousTemplateEditingListener.Companion[PropertyDescriptorImpl]
 
@@ -177,7 +177,7 @@ Inferred types:
 
 'putUserData' @ [93:24] ==> public abstract fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(AnonymousTemplateEditingListener..AnonymousTemplateEditingListener?)>, @Nullable p1: AnonymousTemplateEditingListener?): Unit defined in com.intellij.openapi.editor.Editor[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AnonymousTemplateEditingListener
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousTemplateEditingListener..org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousTemplateEditingListener?)
 
 'LISTENER_KEY' @ [93:36] ==> private final val LISTENER_KEY: Key<(AnonymousTemplateEditingListener..AnonymousTemplateEditingListener?)> defined in org.jetbrains.kotlin.idea.liveTemplates.macro.AnonymousTemplateEditingListener.Companion[PropertyDescriptorImpl]
 

@@ -23,8 +23,6 @@ Inferred types:
 
 'getMemberScope' @ [31:47] ==> @NotNull public abstract fun getMemberScope(@NotNull typeSubstitution: TypeSubstitution): MemberScope defined in org.jetbrains.kotlin.descriptors.ClassDescriptor[JavaMethodDescriptor]
 
-'TypeConstructorSubstitution' @ [31:62] ==> public companion object defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution[FakeCallableDescriptorForObject]
-
 'create' @ [31:90] ==> @JvmStatic public final fun create(typeConstructor: TypeConstructor, arguments: List<TypeProjection>): TypeSubstitution defined in org.jetbrains.kotlin.types.TypeConstructorSubstitution.Companion[SimpleFunctionDescriptorImpl]
 
 'constructor' @ [31:97] ==> value-parameter constructor: TypeConstructor defined in org.jetbrains.kotlin.types.KotlinTypeFactory.computeMemberScope[ValueParameterDescriptorImpl]

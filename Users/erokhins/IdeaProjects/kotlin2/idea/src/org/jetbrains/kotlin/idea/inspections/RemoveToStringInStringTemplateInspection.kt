@@ -36,7 +36,7 @@
 
 'RemoveToStringFix' @ [44:44] ==> public constructor RemoveToStringFix() defined in org.jetbrains.kotlin.idea.inspections.RemoveToStringFix[ClassConstructorDescriptorImpl]
 
-'toResolvedCall' @ [48:40] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'toResolvedCall' @ [48:40] ==> public fun KtQualifiedExpression.toResolvedCall(bodyResolveMode: BodyResolveMode): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'PARTIAL' @ [48:71] ==> enum entry PARTIAL defined in org.jetbrains.kotlin.resolve.lazy.BodyResolveMode[FakeCallableDescriptorForObject]
 
@@ -44,7 +44,7 @@
 
 'resultingDescriptor' @ [49:59] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callableDescriptor' @ [50:28] ==> val callableDescriptor: CallableMemberDescriptor defined in org.jetbrains.kotlin.idea.inspections.RemoveToStringInStringTemplateInspection.buildVisitor.<no name provided>.isToString[LocalVariableDescriptor]
 

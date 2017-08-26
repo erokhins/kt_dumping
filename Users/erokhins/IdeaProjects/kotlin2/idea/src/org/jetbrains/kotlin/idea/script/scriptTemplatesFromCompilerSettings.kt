@@ -31,9 +31,11 @@ Inferred types:
     <T> -> String
     <R> -> File
 
-'lazy' @ [33:53] ==> public fun <T> lazy(initializer: () -> Map<String, File?>): Lazy<Map<String, File?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'File' @ [32:116] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
+'getValue' @ [33:53] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<String, File?>
+    <T> -> T
 
 'mapOf' @ [33:60] ==> public fun <K, V> mapOf(pair: Pair<String, File?>): Map<String, File?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -59,4 +61,6 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [34:89] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 

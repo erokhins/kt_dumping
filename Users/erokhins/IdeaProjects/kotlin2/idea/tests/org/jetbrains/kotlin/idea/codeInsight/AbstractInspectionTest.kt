@@ -285,7 +285,7 @@ Inferred types:
 
 'options' @ [104:39] ==> val options: String defined in org.jetbrains.kotlin.idea.codeInsight.AbstractInspectionTest.doTest[LocalVariableDescriptor]
 
-'runInspection' @ [106:36] ==> public fun runInspection(inspectionClass: Class<*>, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections[SimpleFunctionDescriptorImpl]
+'runInspection' @ [106:36] ==> public fun runInspection(inspectionClass: Class<*>, project: Project, files: List<VirtualFile>? = ..., withTestDir: String? = ...): InspectionToolPresentation defined in org.jetbrains.kotlin.idea.inspections in file InspectionUtils.kt[SimpleFunctionDescriptorImpl]
 
 'inspectionClass' @ [107:25] ==> val inspectionClass: (Class<*>..Class<*>?) defined in org.jetbrains.kotlin.idea.codeInsight.AbstractInspectionTest.doTest[LocalVariableDescriptor]
 

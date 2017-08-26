@@ -1,6 +1,6 @@
 'getService' @ [33:43] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(SampleResolutionService..SampleResolutionService?)>): (SampleResolutionService..SampleResolutionService?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SampleResolutionService
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.kdoc.SampleResolutionService..org.jetbrains.kotlin.idea.kdoc.SampleResolutionService?)
 
 'resolutionFacade' @ [33:54] ==> value-parameter resolutionFacade: ResolutionFacade defined in org.jetbrains.kotlin.idea.kdoc.SampleResolutionService.Companion.resolveSample[ValueParameterDescriptorImpl]
 

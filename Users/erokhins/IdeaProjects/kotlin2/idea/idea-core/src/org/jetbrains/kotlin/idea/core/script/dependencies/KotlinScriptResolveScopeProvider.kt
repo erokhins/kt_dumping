@@ -49,8 +49,6 @@ Inferred types:
 
 'USE_NULL_RESOLVE_SCOPE' @ [40:63] ==> public final val USE_NULL_RESOLVE_SCOPE: String defined in org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptResolveScopeProvider.Companion[PropertyDescriptorImpl]
 
-'ScriptDependenciesManager' @ [44:21] ==> public companion object defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager[FakeCallableDescriptorForObject]
-
 'getInstance' @ [44:47] ==> @JvmStatic public final fun getInstance(project: Project): ScriptDependenciesManager defined in org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager.Companion[SimpleFunctionDescriptorImpl]
 
 'project' @ [44:59] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptResolveScopeProvider.getResolveScope[ValueParameterDescriptorImpl]

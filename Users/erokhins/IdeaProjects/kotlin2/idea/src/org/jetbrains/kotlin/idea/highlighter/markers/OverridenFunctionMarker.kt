@@ -68,7 +68,7 @@ Inferred types:
 
 'PsiElementProcessorAdapter' @ [70:58] ==> public constructor PsiElementProcessorAdapter<T : (PsiElement..PsiElement?)>(p0: (PsiElementProcessor<(PsiMethod..PsiMethod?)>..PsiElementProcessor<(PsiMethod..PsiMethod?)>?)) defined in com.intellij.psi.search.PsiElementProcessorAdapter[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiMethod
+    <T : (PsiElement..PsiElement?)> -> (com.intellij.psi.PsiMethod..com.intellij.psi.PsiMethod?)
 
 'processor' @ [70:85] ==> val processor: PsiElementProcessor.CollectElementsWithLimit<PsiMethod> defined in org.jetbrains.kotlin.idea.highlighter.markers.getOverriddenMethodTooltip[LocalVariableDescriptor]
 
@@ -354,7 +354,7 @@ Inferred types:
 
 'comparator' @ [146:60] ==> public final val <T : (PsiElement..PsiElement?)> PsiElementListCellRenderer<out PsiElement>.comparator: (Comparator<out (PsiElement..PsiElement?)>..Comparator<out (PsiElement..PsiElement?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> PsiElement
+    <T : (PsiElement..PsiElement?)> -> Captured(out PsiElement)
 
 'indicator' @ [147:21] ==> value-parameter indicator: ProgressIndicator defined in org.jetbrains.kotlin.idea.highlighter.markers.OverridingMethodsUpdater.run[ValueParameterDescriptorImpl]
 

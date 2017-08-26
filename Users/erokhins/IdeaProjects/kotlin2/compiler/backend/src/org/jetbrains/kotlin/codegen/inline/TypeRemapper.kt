@@ -145,20 +145,20 @@ Inferred types:
 
 'HashMap' @ [87:20] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (String..String?), out (String..String?)>..Map<out (String..String?), (String..String?)>?)) defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'remapper' @ [87:28] ==> value-parameter remapper: TypeRemapper defined in org.jetbrains.kotlin.codegen.inline.TypeRemapper.Companion.createNewAndMerge[ValueParameterDescriptorImpl]
 
 'typeMapping' @ [87:37] ==> private final val typeMapping: MutableMap<String, String> defined in org.jetbrains.kotlin.codegen.inline.TypeRemapper[PropertyDescriptorImpl]
 
-'apply' @ [87:50] ==> @InlineOnly public inline fun <T> HashMap<String, String>.apply(block: HashMap<String, String>.() -> Unit): HashMap<String, String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [87:50] ==> @InlineOnly public inline fun <T> HashMap<(String..String?), (String..String?)>.apply(block: HashMap<(String..String?), (String..String?)>.() -> Unit): HashMap<(String..String?), (String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> HashMap<String, String>
+    <T> -> HashMap<(kotlin.String..kotlin.String?), (kotlin.String..kotlin.String?)>
 
 'this' @ [88:17] ==> <this> defined in org.jetbrains.kotlin.codegen.inline.TypeRemapper.Companion.createNewAndMerge.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'putAll' @ [88:22] ==> public open fun putAll(from: Map<out String, String>): Unit defined in java.util.HashMap[JavaMethodDescriptor]
+'putAll' @ [88:22] ==> public open fun putAll(from: Map<out (String..String?), (String..String?)>): Unit defined in java.util.HashMap[JavaMethodDescriptor]
 
 'additionalTypeMappings' @ [88:29] ==> value-parameter additionalTypeMappings: Map<String, String?> defined in org.jetbrains.kotlin.codegen.inline.TypeRemapper.Companion.createNewAndMerge[ValueParameterDescriptorImpl]
 

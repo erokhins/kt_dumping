@@ -549,8 +549,6 @@ Inferred types:
 
 'indexVariable' @ [191:109] ==> public final val indexVariable: KtCallableDeclaration? defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.MatchingState[PropertyDescriptorImpl]
 
-'Condition' @ [191:124] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.Condition[FakeCallableDescriptorForObject]
-
 'create' @ [191:134] ==> public final fun create(expression: KtExpression, negated: Boolean = ...): Condition defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.Condition.Companion[SimpleFunctionDescriptorImpl]
 
 'condition' @ [191:141] ==> value-parameter condition: KtExpression defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.FilterTransformationBase.Matcher.matchOneTransformation[ValueParameterDescriptorImpl]
@@ -622,8 +620,6 @@ Inferred types:
 'state' @ [200:111] ==> value-parameter state: MatchingState defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.FilterTransformationBase.Matcher.matchOneTransformation[ValueParameterDescriptorImpl]
 
 'indexVariable' @ [200:117] ==> public final val indexVariable: KtCallableDeclaration? defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.MatchingState[PropertyDescriptorImpl]
-
-'Condition' @ [200:132] ==> public companion object defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.Condition[FakeCallableDescriptorForObject]
 
 'create' @ [200:142] ==> public final fun create(expression: KtExpression, negated: Boolean = ...): Condition defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.sequence.Condition.Companion[SimpleFunctionDescriptorImpl]
 

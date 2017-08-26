@@ -1,8 +1,8 @@
 'KotlinAbstractUExpression' @ [28:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [31:29] ==> internal fun <T> lz(initializer: () -> UExpression): Lazy<UExpression> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [31:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> UExpression
+    <T> -> T
 
 'KotlinConverter' @ [31:34] ==> internal object KotlinConverter defined in org.jetbrains.uast.kotlin in file KotlinUastLanguagePlugin.kt[FakeCallableDescriptorForObject]
 
@@ -14,9 +14,9 @@ Inferred types:
 
 'this' @ [31:75] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUBinaryExpressionWithType[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [32:26] ==> internal fun <T> lz(initializer: () -> PsiType): Lazy<PsiType> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [32:26] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiType
+    <T> -> T
 
 'psi' @ [32:31] ==> public open val psi: KtBinaryExpressionWithTypeRHS defined in org.jetbrains.uast.kotlin.KotlinUBinaryExpressionWithType[PropertyDescriptorImpl]
 
@@ -26,9 +26,9 @@ Inferred types:
 
 'this' @ [32:51] ==> <this> defined in org.jetbrains.uast.kotlin.KotlinUBinaryExpressionWithType[LazyClassReceiverParameterDescriptor]
 
-'lz' @ [34:35] ==> internal fun <T> lz(initializer: () -> LazyKotlinUTypeReferenceExpression?): Lazy<LazyKotlinUTypeReferenceExpression?> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [34:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> LazyKotlinUTypeReferenceExpression?
+    <T> -> T
 
 'psi' @ [35:9] ==> public open val psi: KtBinaryExpressionWithTypeRHS defined in org.jetbrains.uast.kotlin.KotlinUBinaryExpressionWithType[PropertyDescriptorImpl]
 
@@ -67,25 +67,19 @@ Inferred types:
 
 'AS_KEYWORD' @ [39:18] ==> public final val AS_KEYWORD: (KtKeywordToken..KtKeywordToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'UastBinaryExpressionWithTypeKind' @ [39:32] ==> public companion object defined in org.jetbrains.uast.UastBinaryExpressionWithTypeKind[FakeCallableDescriptorForObject]
-
 'TYPE_CAST' @ [39:65] ==> @field:JvmField public final val TYPE_CAST: UastBinaryExpressionWithTypeKind.TypeCast defined in org.jetbrains.uast.UastBinaryExpressionWithTypeKind.Companion[DeserializedPropertyDescriptor]
 
 'AS_SAFE' @ [40:18] ==> public final val AS_SAFE: (KtToken..KtToken?) defined in org.jetbrains.kotlin.lexer.KtTokens[JavaPropertyDescriptor]
 
-'KotlinBinaryExpressionWithTypeKinds' @ [40:29] ==> public object KotlinBinaryExpressionWithTypeKinds defined in org.jetbrains.uast.kotlin in file KotlinBinaryExpressionWithTypeKinds.kt[FakeCallableDescriptorForObject]
-
 'SAFE_TYPE_CAST' @ [40:65] ==> @JvmField public final val SAFE_TYPE_CAST: UastBinaryExpressionWithTypeKind.TypeCast defined in org.jetbrains.uast.kotlin.KotlinBinaryExpressionWithTypeKinds[PropertyDescriptorImpl]
-
-'UastBinaryExpressionWithTypeKind' @ [41:17] ==> public companion object defined in org.jetbrains.uast.UastBinaryExpressionWithTypeKind[FakeCallableDescriptorForObject]
 
 'UNKNOWN' @ [41:50] ==> @field:JvmField public final val UNKNOWN: UastBinaryExpressionWithTypeKind defined in org.jetbrains.uast.UastBinaryExpressionWithTypeKind.Companion[DeserializedPropertyDescriptor]
 
 'KotlinAbstractUExpression' @ [48:5] ==> public constructor KotlinAbstractUExpression() defined in org.jetbrains.uast.kotlin.KotlinAbstractUExpression[ClassConstructorDescriptorImpl]
 
-'lz' @ [55:35] ==> internal fun <T> lz(initializer: () -> PsiType): Lazy<PsiType> defined in org.jetbrains.uast.kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [55:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiType
+    <T> -> T
 
 'typeReference' @ [55:40] ==> public open var typeReference: UTypeReferenceExpression? defined in org.jetbrains.uast.kotlin.KotlinCustomUBinaryExpressionWithType[PropertyDescriptorImpl]
 

@@ -95,7 +95,7 @@ Inferred types:
 
 'type' @ [69:20] ==> value-parameter type: PrimitiveType? defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF.castOrCreatePrimitiveArray[ValueParameterDescriptorImpl]
 
-'TYPED_ARRAY_MAP' @ [69:28] ==> private final val TYPED_ARRAY_MAP: EnumMap<PrimitiveType, String> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
+'TYPED_ARRAY_MAP' @ [69:28] ==> private final val TYPED_ARRAY_MAP: EnumMap<(PrimitiveType..PrimitiveType?), (String..String?)> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
 
 'createTypedArray' @ [70:13] ==> private final fun createTypedArray(type: PrimitiveType, arg: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[SimpleFunctionDescriptorImpl]
 
@@ -119,8 +119,8 @@ Inferred types:
 
 'EnumMap' @ [77:35] ==> public constructor EnumMap<K : (Enum<(PrimitiveType..PrimitiveType?)>..Enum<(PrimitiveType..PrimitiveType?)>?), V : (Any..Any?)>(p0: (MutableMap<(PrimitiveType..PrimitiveType?), out (String..String?)>..Map<(PrimitiveType..PrimitiveType?), (String..String?)>?)) defined in java.util.EnumMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Enum<(K..K?)>..Enum<(K..K?)>?)> -> PrimitiveType
-    <V : (Any..Any?)> -> String
+    <K : (Enum<(K..K?)>..Enum<(K..K?)>?)> -> (org.jetbrains.kotlin.builtins.PrimitiveType..org.jetbrains.kotlin.builtins.PrimitiveType?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'mapOf' @ [77:43] ==> public fun <K, V> mapOf(vararg pairs: Pair<(PrimitiveType..PrimitiveType?), String>): Map<(PrimitiveType..PrimitiveType?), String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -141,13 +141,13 @@ Inferred types:
 
 'type' @ [84:16] ==> value-parameter type: PrimitiveType defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF.createTypedArray[ValueParameterDescriptorImpl]
 
-'TYPED_ARRAY_MAP' @ [84:24] ==> private final val TYPED_ARRAY_MAP: EnumMap<PrimitiveType, String> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
+'TYPED_ARRAY_MAP' @ [84:24] ==> private final val TYPED_ARRAY_MAP: EnumMap<(PrimitiveType..PrimitiveType?), (String..String?)> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
 
 'JsNew' @ [85:16] ==> public constructor JsNew(p0: (JsExpression..JsExpression?), p1: (MutableList<out (JsExpression..JsExpression?)>..List<(JsExpression..JsExpression?)>?)) defined in org.jetbrains.kotlin.js.backend.ast.JsNew[JavaClassConstructorDescriptor]
 
 'JsNameRef' @ [85:22] ==> public constructor JsNameRef(@NotNull p0: String) defined in org.jetbrains.kotlin.js.backend.ast.JsNameRef[JavaClassConstructorDescriptor]
 
-'TYPED_ARRAY_MAP' @ [85:32] ==> private final val TYPED_ARRAY_MAP: EnumMap<PrimitiveType, String> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
+'TYPED_ARRAY_MAP' @ [85:32] ==> private final val TYPED_ARRAY_MAP: EnumMap<(PrimitiveType..PrimitiveType?), (String..String?)> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
 
 'type' @ [85:48] ==> value-parameter type: PrimitiveType defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF.createTypedArray[ValueParameterDescriptorImpl]
 
@@ -254,7 +254,7 @@ Inferred types:
 
 'primitiveType' @ [103:17] ==> val primitiveType: PrimitiveType? defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF.getTag[LocalVariableDescriptor]
 
-'TYPED_ARRAY_MAP' @ [103:34] ==> private final val TYPED_ARRAY_MAP: EnumMap<PrimitiveType, String> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
+'TYPED_ARRAY_MAP' @ [103:34] ==> private final val TYPED_ARRAY_MAP: EnumMap<(PrimitiveType..PrimitiveType?), (String..String?)> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
 
 'primitiveType' @ [107:27] ==> val primitiveType: PrimitiveType? defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF.getTag[LocalVariableDescriptor]
 
@@ -380,7 +380,7 @@ Inferred types:
 
 'type' @ [132:25] ==> val type: PrimitiveType defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF.<init>[LocalVariableDescriptor]
 
-'TYPED_ARRAY_MAP' @ [132:33] ==> private final val TYPED_ARRAY_MAP: EnumMap<PrimitiveType, String> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
+'TYPED_ARRAY_MAP' @ [132:33] ==> private final val TYPED_ARRAY_MAP: EnumMap<(PrimitiveType..PrimitiveType?), (String..String?)> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
 
 'createTypedArray' @ [133:25] ==> private final fun createTypedArray(type: PrimitiveType, arg: JsExpression): JsExpression defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[SimpleFunctionDescriptorImpl]
 
@@ -603,7 +603,7 @@ Inferred types:
 
 'type' @ [178:21] ==> value-parameter type: PrimitiveType? defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF.createConstructorIntrinsic[ValueParameterDescriptorImpl]
 
-'TYPED_ARRAY_MAP' @ [178:29] ==> private final val TYPED_ARRAY_MAP: EnumMap<PrimitiveType, String> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
+'TYPED_ARRAY_MAP' @ [178:29] ==> private final val TYPED_ARRAY_MAP: EnumMap<(PrimitiveType..PrimitiveType?), (String..String?)> defined in org.jetbrains.kotlin.js.translate.intrinsic.functions.factories.ArrayFIF[PropertyDescriptorImpl]
 
 'invokeKotlinFunction' @ [179:32] ==> @NotNull public open fun invokeKotlinFunction(@NotNull name: String, @NotNull vararg argument: (JsExpression..JsExpression?)): JsInvocation defined in org.jetbrains.kotlin.js.translate.utils.JsAstUtils[JavaMethodDescriptor]
 
@@ -643,7 +643,7 @@ Inferred types:
 
 'resultingDescriptor' @ [189:52] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'original' @ [189:72] ==> public final val CallableDescriptor.original: CallableDescriptor[MyPropertyDescriptor]
 

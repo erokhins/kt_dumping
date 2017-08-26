@@ -8,6 +8,8 @@ Inferred types:
 
 'KotlinBuiltIns' @ [30:55] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull p0: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
 
+'isBuiltIn' @ [30:71] ==> public open fun isBuiltIn(@NotNull p0: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
+
 'name' @ [30:83] ==> public final val ClassifierDescriptor.name: Name[MyPropertyDescriptor]
 
 'requireNotNull' @ [33:23] ==> @InlineOnly public inline fun <T : Any> requireNotNull(value: ClassifierDescriptor?): ClassifierDescriptor defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -22,7 +24,7 @@ Inferred types:
 
 'join' @ [35:27] ==> @NotNull @Contract public final fun <T : (Any..Any?)> join(@NotNull p0: (MutableCollection<out (KotlinType..KotlinType?)>..Collection<(KotlinType..KotlinType?)>), @NotNull p1: ((KotlinType..KotlinType?)) -> (String..String?), @NotNull @NonNls p2: String): String defined in com.intellij.openapi.util.text.StringUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'declaration' @ [35:32] ==> val declaration: ClassifierDescriptor defined in org.jetbrains.kotlin.js.descriptorUtils.getJetTypeFqName[LocalVariableDescriptor]
 
@@ -57,7 +59,7 @@ Inferred types:
 
 'join' @ [40:46] ==> @NotNull @Contract public final fun <T : (Any..Any?)> join(@NotNull p0: (MutableCollection<out (TypeProjection..TypeProjection?)>..Collection<(TypeProjection..TypeProjection?)>), @NotNull p1: ((TypeProjection..TypeProjection?)) -> (String..String?), @NotNull @NonNls p2: String): String defined in com.intellij.openapi.util.text.StringUtil[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> TypeProjection
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.TypeProjection..org.jetbrains.kotlin.types.TypeProjection?)
 
 'typeArguments' @ [40:51] ==> val typeArguments: List<TypeProjection> defined in org.jetbrains.kotlin.js.descriptorUtils.getJetTypeFqName[LocalVariableDescriptor]
 

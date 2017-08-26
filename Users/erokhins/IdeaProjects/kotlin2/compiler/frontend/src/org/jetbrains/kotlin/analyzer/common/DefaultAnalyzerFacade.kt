@@ -12,11 +12,7 @@ Inferred types:
 
 'dependOnOldBuiltIns' @ [60:21] ==> private final val dependOnOldBuiltIns: Boolean defined in org.jetbrains.kotlin.analyzer.common.DefaultAnalyzerFacade.SourceModuleInfo[PropertyDescriptorImpl]
 
-'ModuleInfo' @ [60:42] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
-
 'LAST' @ [60:74] ==> enum entry LAST defined in org.jetbrains.kotlin.analyzer.ModuleInfo.DependencyOnBuiltIns[FakeCallableDescriptorForObject]
-
-'ModuleInfo' @ [60:84] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
 
 'NONE' @ [60:116] ==> enum entry NONE defined in org.jetbrains.kotlin.analyzer.ModuleInfo.DependencyOnBuiltIns[FakeCallableDescriptorForObject]
 
@@ -28,8 +24,6 @@ Inferred types:
 'MultiTargetPlatform' @ [65:77] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'CAPABILITY' @ [65:97] ==> @field:JvmField public final val CAPABILITY: ModuleDescriptor.Capability<MultiTargetPlatform> defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform.Companion[DeserializedPropertyDescriptor]
-
-'MultiTargetPlatform' @ [65:111] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
 'Common' @ [65:131] ==> public object Common : MultiTargetPlatform defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
 
@@ -60,11 +54,7 @@ Inferred types:
 
 'feature' @ [73:25] ==> value-parameter feature: LanguageFeature defined in org.jetbrains.kotlin.analyzer.common.DefaultAnalyzerFacade.analyzeFiles.<no name provided>.getFeatureSupport[ValueParameterDescriptorImpl]
 
-'LanguageFeature' @ [73:36] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'MultiPlatformProjects' @ [73:52] ==> enum entry MultiPlatformProjects defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
-'LanguageFeature' @ [73:75] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED' @ [73:97] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -172,9 +162,9 @@ Inferred types:
 
 'syntheticFiles' @ [113:56] ==> val syntheticFiles: Collection<KtFile> defined in org.jetbrains.kotlin.analyzer.common.DefaultAnalyzerFacade.createResolverForModule[LocalVariableDescriptor]
 
-'if (moduleInfo.isLibrary) GlobalSearchScope.EMPTY_SCOPE else moduleContentScope' @ [114:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: GlobalSearchScope, elseBranch: GlobalSearchScope): GlobalSearchScope[SimpleFunctionDescriptorImpl]
+'if (moduleInfo.isLibrary) GlobalSearchScope.EMPTY_SCOPE else moduleContentScope' @ [114:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (GlobalSearchScope..GlobalSearchScope?), elseBranch: (GlobalSearchScope..GlobalSearchScope?)): (GlobalSearchScope..GlobalSearchScope?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> GlobalSearchScope
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.intellij.psi.search.GlobalSearchScope..com.intellij.psi.search.GlobalSearchScope?)
 
 'moduleInfo' @ [114:21] ==> value-parameter moduleInfo: M defined in org.jetbrains.kotlin.analyzer.common.DefaultAnalyzerFacade.createResolverForModule[ValueParameterDescriptorImpl]
 
@@ -242,7 +232,7 @@ Inferred types:
 
 'container' @ [129:94] ==> val container: StorageComponentContainer defined in org.jetbrains.kotlin.analyzer.common.DefaultAnalyzerFacade.createResolverForModule[LocalVariableDescriptor]
 
-'createContainer' @ [140:36] ==> public fun createContainer(id: String, platform: TargetPlatform, init: StorageComponentContainer.() -> Unit): StorageComponentContainer defined in org.jetbrains.kotlin.resolve[SimpleFunctionDescriptorImpl]
+'createContainer' @ [140:36] ==> public fun createContainer(id: String, platform: TargetPlatform, init: StorageComponentContainer.() -> Unit): StorageComponentContainer defined in org.jetbrains.kotlin.resolve in file TargetPlatform.kt[SimpleFunctionDescriptorImpl]
 
 'targetPlatform' @ [140:73] ==> public open val targetPlatform: TargetPlatform defined in org.jetbrains.kotlin.analyzer.common.DefaultAnalyzerFacade[PropertyDescriptorImpl]
 
@@ -302,7 +292,7 @@ Inferred types:
 
 'getService' @ [154:52] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(MetadataFinderFactory..MetadataFinderFactory?)>): (MetadataFinderFactory..MetadataFinderFactory?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MetadataFinderFactory
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.MetadataFinderFactory..org.jetbrains.kotlin.load.kotlin.MetadataFinderFactory?)
 
 'moduleContext' @ [154:63] ==> value-parameter moduleContext: ModuleContext defined in org.jetbrains.kotlin.analyzer.common.DefaultAnalyzerFacade.createContainerToResolveCommonCode[ValueParameterDescriptorImpl]
 

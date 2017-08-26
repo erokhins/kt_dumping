@@ -37,9 +37,9 @@
         }
         else {
             listOf(Type.CHAR_TYPE, signature.valueParameters[0].asmType)
-        }' @ [35:24] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<Type>, elseBranch: List<Type>): List<Type>[SimpleFunctionDescriptorImpl]
+        }' @ [35:24] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<(Type..Type?)>, elseBranch: List<(Type..Type?)>): List<(Type..Type?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<Type>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<(org.jetbrains.org.objectweb.asm.Type..org.jetbrains.org.objectweb.asm.Type?)>
 
 'owner' @ [35:28] ==> val owner: Type defined in org.jetbrains.kotlin.backend.jvm.intrinsics.BinaryOp.toCallable[LocalVariableDescriptor]
 
@@ -83,7 +83,7 @@ Inferred types:
 
 'context' @ [42:66] ==> value-parameter context: JvmBackendContext defined in org.jetbrains.kotlin.backend.jvm.intrinsics.BinaryOp.toCallable[ValueParameterDescriptorImpl]
 
-'argTypes' @ [42:75] ==> val argTypes: List<Type> defined in org.jetbrains.kotlin.backend.jvm.intrinsics.BinaryOp.toCallable[LocalVariableDescriptor]
+'argTypes' @ [42:75] ==> val argTypes: List<(Type..Type?)> defined in org.jetbrains.kotlin.backend.jvm.intrinsics.BinaryOp.toCallable[LocalVariableDescriptor]
 
 'it' @ [43:13] ==> value-parameter it: InstructionAdapter defined in org.jetbrains.kotlin.backend.jvm.intrinsics.BinaryOp.toCallable.<anonymous>[ValueParameterDescriptorImpl]
 

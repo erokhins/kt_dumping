@@ -20,8 +20,6 @@ Inferred types:
 
 'addToShorteningWaitSet' @ [45:41] ==> public fun KtElement.addToShorteningWaitSet(options: ShortenReferences.Options = ...): Unit defined in org.jetbrains.kotlin.idea.codeInsight.shorten[DeserializedSimpleFunctionDescriptor]
 
-'ShortenReferences' @ [45:64] ==> public companion object defined in org.jetbrains.kotlin.idea.core.ShortenReferences[FakeCallableDescriptorForObject]
-
 'ALL_ENABLED' @ [45:90] ==> public final val ALL_ENABLED: ShortenReferences.Options defined in org.jetbrains.kotlin.idea.core.ShortenReferences.Options.Companion[DeserializedPropertyDescriptor]
 
 'KtResolvableCollisionUsageInfo' @ [53:5] ==> public constructor KtResolvableCollisionUsageInfo(element: PsiElement, referencedElement: PsiElement) defined in org.jetbrains.kotlin.idea.refactoring.rename.KtResolvableCollisionUsageInfo[ClassConstructorDescriptorImpl]

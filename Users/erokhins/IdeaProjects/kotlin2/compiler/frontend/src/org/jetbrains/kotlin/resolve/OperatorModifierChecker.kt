@@ -45,8 +45,6 @@ Inferred types:
 
 'checkSupportsFeature' @ [48:21] ==> private final fun checkSupportsFeature(feature: LanguageFeature, languageVersionSettings: LanguageVersionSettings, diagnosticHolder: DiagnosticSink, modifier: PsiElement): Unit defined in org.jetbrains.kotlin.resolve.OperatorModifierChecker[SimpleFunctionDescriptorImpl]
 
-'LanguageFeature' @ [48:42] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'OperatorRem' @ [48:58] ==> enum entry OperatorRem defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'languageVersionSettings' @ [48:71] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.OperatorModifierChecker.check[ValueParameterDescriptorImpl]
@@ -60,8 +58,6 @@ Inferred types:
 'PROVIDE_DELEGATE' @ [49:41] ==> @field:JvmField public final val PROVIDE_DELEGATE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'checkSupportsFeature' @ [50:21] ==> private final fun checkSupportsFeature(feature: LanguageFeature, languageVersionSettings: LanguageVersionSettings, diagnosticHolder: DiagnosticSink, modifier: PsiElement): Unit defined in org.jetbrains.kotlin.resolve.OperatorModifierChecker[SimpleFunctionDescriptorImpl]
-
-'LanguageFeature' @ [50:42] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'OperatorProvideDelegate' @ [50:58] ==> enum entry OperatorProvideDelegate defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
@@ -82,8 +78,6 @@ Inferred types:
 'languageVersionSettings' @ [54:20] ==> value-parameter languageVersionSettings: LanguageVersionSettings defined in org.jetbrains.kotlin.resolve.OperatorModifierChecker.check[ValueParameterDescriptorImpl]
 
 'supportsFeature' @ [54:44] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
-
-'LanguageFeature' @ [54:60] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'OperatorRem' @ [54:76] ==> enum entry OperatorRem defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 

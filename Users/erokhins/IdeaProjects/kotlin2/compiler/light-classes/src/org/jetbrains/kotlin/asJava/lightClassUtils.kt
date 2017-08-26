@@ -19,7 +19,9 @@ Inferred types:
 
 'fqName' @ [43:18] ==> public final val KtClassOrObject.fqName: FqName?[MyPropertyDescriptor]
 
-'JavaToKotlinClassMap' @ [44:27] ==> public object JavaToKotlinClassMap : PlatformToKotlinClassMap defined in org.jetbrains.kotlin.platform[FakeCallableDescriptorForObject]
+'?:' @ [44:27] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: FqName?, right: FqName): FqName[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> FqName
 
 'mapKotlinToJava' @ [44:48] ==> public final fun mapKotlinToJava(kotlinFqName: FqNameUnsafe): ClassId? defined in org.jetbrains.kotlin.platform.JavaToKotlinClassMap[DeserializedSimpleFunctionDescriptor]
 
@@ -99,13 +101,9 @@ Inferred types:
 
 'toLightClass' @ [57:49] ==> public fun KtClassOrObject.toLightClass(): KtLightClass? defined in org.jetbrains.kotlin.asJava in file lightClassUtils.kt[SimpleFunctionDescriptorImpl]
 
-'LightClassUtil' @ [59:42] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
-
 'getLightClassMethods' @ [59:57] ==> public final fun getLightClassMethods(function: KtFunction): List<PsiMethod> defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
 'this' @ [59:78] ==> <this> defined in org.jetbrains.kotlin.asJava.toLightElements[ReceiverParameterDescriptorImpl]
-
-'LightClassUtil' @ [60:30] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
 
 'getLightClassPropertyMethods' @ [60:45] ==> public final fun getLightClassPropertyMethods(property: KtProperty): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
@@ -116,8 +114,6 @@ Inferred types:
 'listOfNotNull' @ [61:38] ==> public fun <T : Any> listOfNotNull(element: PsiMethod?): List<PsiMethod> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> PsiMethod
-
-'LightClassUtil' @ [61:52] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
 
 'getLightClassAccessorMethod' @ [61:67] ==> public final fun getLightClassAccessorMethod(accessor: KtPropertyAccessor): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
@@ -131,7 +127,7 @@ Inferred types:
 Inferred types:
     <T> -> MutableList<PsiNamedElement>
 
-'toPsiParameters' @ [63:17] ==> public fun KtParameter.toPsiParameters(): Collection<PsiParameter> defined in org.jetbrains.kotlin.asJava[SimpleFunctionDescriptorImpl]
+'toPsiParameters' @ [63:17] ==> public fun KtParameter.toPsiParameters(): Collection<PsiParameter> defined in org.jetbrains.kotlin.asJava in file lightClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'toCollection' @ [63:35] ==> public fun <T, C : MutableCollection<in PsiParameter>> Iterable<PsiParameter>.toCollection(destination: MutableList<PsiNamedElement>): MutableList<PsiNamedElement> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -162,7 +158,9 @@ Inferred types:
 
 'elements' @ [65:48] ==> value-parameter elements: MutableList<PsiNamedElement> defined in org.jetbrains.kotlin.asJava.toLightElements.<anonymous>[ValueParameterDescriptorImpl]
 
-'toPsiTypeParameters' @ [67:35] ==> public fun KtTypeParameter.toPsiTypeParameters(): List<PsiTypeParameter> defined in org.jetbrains.kotlin.asJava[SimpleFunctionDescriptorImpl]
+'add' @ [65:58] ==> public abstract fun add(element: PsiNamedElement): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
+
+'toPsiTypeParameters' @ [67:35] ==> public fun KtTypeParameter.toPsiTypeParameters(): List<PsiTypeParameter> defined in org.jetbrains.kotlin.asJava in file lightClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'listOfNotNull' @ [68:26] ==> public fun <T : Any> listOfNotNull(element: KtLightClass?): List<KtLightClass> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -188,13 +186,9 @@ Inferred types:
 
 'this' @ [73:15] ==> <this> defined in org.jetbrains.kotlin.asJava.toLightMethods[ReceiverParameterDescriptorImpl]
 
-'LightClassUtil' @ [74:30] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
-
 'getLightClassMethods' @ [74:45] ==> public final fun getLightClassMethods(function: KtFunction): List<PsiMethod> defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
 'this' @ [74:66] ==> <this> defined in org.jetbrains.kotlin.asJava.toLightMethods[ReceiverParameterDescriptorImpl]
-
-'LightClassUtil' @ [75:30] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
 
 'getLightClassPropertyMethods' @ [75:45] ==> public final fun getLightClassPropertyMethods(property: KtProperty): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
@@ -204,8 +198,6 @@ Inferred types:
 Inferred types:
     <T> -> PsiMethod
 
-'LightClassUtil' @ [76:31] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
-
 'getLightClassPropertyMethods' @ [76:46] ==> public final fun getLightClassPropertyMethods(parameter: KtParameter): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
 'this' @ [76:75] ==> <this> defined in org.jetbrains.kotlin.asJava.toLightMethods[ReceiverParameterDescriptorImpl]
@@ -213,8 +205,6 @@ Inferred types:
 'toList' @ [76:81] ==> public fun <T> Iterable<PsiMethod>.toList(): List<PsiMethod> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiMethod
-
-'LightClassUtil' @ [77:38] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
 
 'getLightClassAccessorMethods' @ [77:53] ==> public final fun getLightClassAccessorMethods(accessor: KtPropertyAccessor): List<PsiMethod> defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
@@ -255,13 +245,9 @@ Inferred types:
 
 'this' @ [84:15] ==> <this> defined in org.jetbrains.kotlin.asJava.getRepresentativeLightMethod[ReceiverParameterDescriptorImpl]
 
-'LightClassUtil' @ [85:30] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
-
 'getLightClassMethod' @ [85:45] ==> public final fun getLightClassMethod(function: KtFunction): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
 'this' @ [85:65] ==> <this> defined in org.jetbrains.kotlin.asJava.getRepresentativeLightMethod[ReceiverParameterDescriptorImpl]
-
-'LightClassUtil' @ [86:30] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
 
 'getLightClassPropertyMethods' @ [86:45] ==> public final fun getLightClassPropertyMethods(property: KtProperty): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
@@ -269,15 +255,11 @@ Inferred types:
 
 'getter' @ [86:80] ==> public final val getter: PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil.PropertyAccessorsPsiMethods[PropertyDescriptorImpl]
 
-'LightClassUtil' @ [87:31] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
-
 'getLightClassPropertyMethods' @ [87:46] ==> public final fun getLightClassPropertyMethods(parameter: KtParameter): LightClassUtil.PropertyAccessorsPsiMethods defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
 'this' @ [87:75] ==> <this> defined in org.jetbrains.kotlin.asJava.getRepresentativeLightMethod[ReceiverParameterDescriptorImpl]
 
 'getter' @ [87:81] ==> public final val getter: PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil.PropertyAccessorsPsiMethods[PropertyDescriptorImpl]
-
-'LightClassUtil' @ [88:38] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
 
 'getLightClassAccessorMethod' @ [88:53] ==> public final fun getLightClassAccessorMethod(accessor: KtPropertyAccessor): PsiMethod? defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
@@ -335,13 +317,9 @@ Inferred types:
 
 'owner' @ [102:19] ==> val owner: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.asJava.toPsiParameters[LocalVariableDescriptor]
 
-'LightClassUtil' @ [103:34] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
-
 'getLightClassMethods' @ [103:49] ==> public final fun getLightClassMethods(function: KtFunction): List<PsiMethod> defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
 'owner' @ [103:70] ==> val owner: (PsiElement..PsiElement?) defined in org.jetbrains.kotlin.asJava.toPsiParameters[LocalVariableDescriptor]
-
-'LightClassUtil' @ [104:42] ==> public object LightClassUtil defined in org.jetbrains.kotlin.asJava in file LightClassUtil.kt[FakeCallableDescriptorForObject]
 
 'getLightClassAccessorMethods' @ [104:57] ==> public final fun getLightClassAccessorMethods(accessor: KtPropertyAccessor): List<PsiMethod> defined in org.jetbrains.kotlin.asJava.LightClassUtil[SimpleFunctionDescriptorImpl]
 
@@ -416,7 +394,7 @@ Inferred types:
 
 'ktDeclaration' @ [124:23] ==> val ktDeclaration: KtDeclaration defined in org.jetbrains.kotlin.asJava.toPsiTypeParameters[LocalVariableDescriptor]
 
-'toLightElements' @ [124:37] ==> public fun KtElement.toLightElements(): List<PsiNamedElement> defined in org.jetbrains.kotlin.asJava[SimpleFunctionDescriptorImpl]
+'toLightElements' @ [124:37] ==> public fun KtElement.toLightElements(): List<PsiNamedElement> defined in org.jetbrains.kotlin.asJava in file lightClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lightOwners' @ [126:12] ==> val lightOwners: List<PsiNamedElement> defined in org.jetbrains.kotlin.asJava.toPsiTypeParameters[LocalVariableDescriptor]
 
@@ -480,6 +458,8 @@ Inferred types:
 Inferred types:
     <T> -> KtDeclaration
 
+'isNonAbstractMember' @ [148:43] ==> private fun isNonAbstractMember(member: KtDeclaration?): Boolean defined in org.jetbrains.kotlin.asJava in file lightClassUtils.kt[SimpleFunctionDescriptorImpl]
+
 'member' @ [152:13] ==> value-parameter member: KtDeclaration? defined in org.jetbrains.kotlin.asJava.isNonAbstractMember[ValueParameterDescriptorImpl]
 
 'member' @ [152:42] ==> value-parameter member: KtDeclaration? defined in org.jetbrains.kotlin.asJava.isNonAbstractMember[ValueParameterDescriptorImpl]
@@ -522,7 +502,7 @@ Inferred types:
 
 'ktDeclaration' @ [162:26] ==> val ktDeclaration: KtDeclaration defined in org.jetbrains.kotlin.asJava.toLightAnnotation[LocalVariableDescriptor]
 
-'toLightElements' @ [162:40] ==> public fun KtElement.toLightElements(): List<PsiNamedElement> defined in org.jetbrains.kotlin.asJava[SimpleFunctionDescriptorImpl]
+'toLightElements' @ [162:40] ==> public fun KtElement.toLightElements(): List<PsiNamedElement> defined in org.jetbrains.kotlin.asJava in file lightClassUtils.kt[SimpleFunctionDescriptorImpl]
 
 'lightElement' @ [163:13] ==> val lightElement: PsiNamedElement defined in org.jetbrains.kotlin.asJava.toLightAnnotation[LocalVariableDescriptor]
 

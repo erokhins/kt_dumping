@@ -294,9 +294,7 @@ Inferred types:
 
 'value' @ [125:42] ==> public final val ReceiverParameterDescriptor.value: ReceiverValue[MyPropertyDescriptor]
 
-'getText' @ [125:48] ==> internal fun Receiver?.getText(): String defined in org.jetbrains.kotlin.resolve.calls[SimpleFunctionDescriptorImpl]
-
-'DescriptorRenderer' @ [126:13] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
+'getText' @ [125:48] ==> internal fun Receiver?.getText(): String defined in org.jetbrains.kotlin.resolve.calls in file AbstractResolvedCallsTest.kt[SimpleFunctionDescriptorImpl]
 
 'COMPACT_WITH_SHORT_TYPES' @ [126:32] ==> @field:JvmField public final val COMPACT_WITH_SHORT_TYPES: DescriptorRenderer defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[DeserializedPropertyDescriptor]
 
@@ -312,17 +310,17 @@ Inferred types:
 
 'candidateDescriptor' @ [134:13] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resultingDescriptor' @ [134:36] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'appendln' @ [135:13] ==> @InlineOnly public inline fun StringBuilder /* = StringBuilder */.appendln(value: String?): StringBuilder /* = StringBuilder */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'candidateDescriptor' @ [135:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.candidateDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'getText' @ [135:69] ==> internal fun DeclarationDescriptor.getText(): String defined in org.jetbrains.kotlin.resolve.calls in file AbstractResolvedCallsTest.kt[SimpleFunctionDescriptorImpl]
 
@@ -330,7 +328,7 @@ Inferred types:
 
 'resultingDescriptor' @ [137:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'getText' @ [137:65] ==> internal fun DeclarationDescriptor.getText(): String defined in org.jetbrains.kotlin.resolve.calls in file AbstractResolvedCallsTest.kt[SimpleFunctionDescriptorImpl]
 
@@ -340,27 +338,27 @@ Inferred types:
 
 'explicitReceiverKind' @ [140:46] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.explicitReceiverKind: ExplicitReceiverKind[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'appendln' @ [141:9] ==> @InlineOnly public inline fun StringBuilder /* = StringBuilder */.appendln(value: String?): StringBuilder /* = StringBuilder */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'dispatchReceiver' @ [141:41] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
-'getText' @ [141:58] ==> internal fun Receiver?.getText(): String defined in org.jetbrains.kotlin.resolve.calls[SimpleFunctionDescriptorImpl]
+'getText' @ [141:58] ==> internal fun Receiver?.getText(): String defined in org.jetbrains.kotlin.resolve.calls in file AbstractResolvedCallsTest.kt[SimpleFunctionDescriptorImpl]
 
 'appendln' @ [142:9] ==> @InlineOnly public inline fun StringBuilder /* = StringBuilder */.appendln(value: String?): StringBuilder /* = StringBuilder */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'extensionReceiver' @ [142:42] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
-'getText' @ [142:60] ==> internal fun Receiver?.getText(): String defined in org.jetbrains.kotlin.resolve.calls[SimpleFunctionDescriptorImpl]
+'getText' @ [142:60] ==> internal fun Receiver?.getText(): String defined in org.jetbrains.kotlin.resolve.calls in file AbstractResolvedCallsTest.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [144:30] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'valueArguments' @ [144:35] ==> public final val Call.valueArguments: List<(ValueArgument..ValueArgument?)>[MyPropertyDescriptor]
 
@@ -380,13 +378,13 @@ Inferred types:
 
 'valueArgument' @ [151:36] ==> val valueArgument: (ValueArgument..ValueArgument?) defined in org.jetbrains.kotlin.resolve.calls.renderToText.<anonymous>[LocalVariableDescriptor]
 
-'getText' @ [151:52] ==> internal fun ValueArgument.getText(): String defined in org.jetbrains.kotlin.resolve.calls[SimpleFunctionDescriptorImpl]
+'getText' @ [151:52] ==> internal fun ValueArgument.getText(): String defined in org.jetbrains.kotlin.resolve.calls in file AbstractResolvedCallsTest.kt[SimpleFunctionDescriptorImpl]
 
 'getArgumentMapping' @ [152:43] ==> @NotNull public abstract fun getArgumentMapping(@NotNull p0: ValueArgument): ArgumentMapping defined in org.jetbrains.kotlin.resolve.calls.model.ResolvedCall[JavaMethodDescriptor]
 
 'valueArgument' @ [152:62] ==> val valueArgument: (ValueArgument..ValueArgument?) defined in org.jetbrains.kotlin.resolve.calls.renderToText.<anonymous>[LocalVariableDescriptor]
 
-'getText' @ [152:77] ==> internal fun ArgumentMapping.getText(): String defined in org.jetbrains.kotlin.resolve.calls[SimpleFunctionDescriptorImpl]
+'getText' @ [152:77] ==> internal fun ArgumentMapping.getText(): String defined in org.jetbrains.kotlin.resolve.calls in file AbstractResolvedCallsTest.kt[SimpleFunctionDescriptorImpl]
 
 'appendln' @ [154:17] ==> @InlineOnly public inline fun StringBuilder /* = StringBuilder */.appendln(value: String?): StringBuilder /* = StringBuilder */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 

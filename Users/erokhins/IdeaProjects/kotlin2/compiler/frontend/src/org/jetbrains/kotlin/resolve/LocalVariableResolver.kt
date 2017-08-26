@@ -88,8 +88,6 @@
 
 'supportsFeature' @ [76:42] ==> public open fun supportsFeature(feature: LanguageFeature): Boolean defined in org.jetbrains.kotlin.config.LanguageVersionSettings[DeserializedSimpleFunctionDescriptor]
 
-'LanguageFeature' @ [76:58] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'LocalDelegatedProperties' @ [76:74] ==> enum entry LocalDelegatedProperties defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'context' @ [77:17] ==> val context: ExpressionTypingContext defined in org.jetbrains.kotlin.resolve.LocalVariableResolver.process[LocalVariableDescriptor]
@@ -246,8 +244,8 @@ Inferred types:
 
 'record' @ [102:35] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(VariableDescriptor..VariableDescriptor?), (DataFlowValue..DataFlowValue?)>..WritableSlice<(VariableDescriptor..VariableDescriptor?), (DataFlowValue..DataFlowValue?)>?), key: (VariableDescriptor..VariableDescriptor?), value: (DataFlowValue..DataFlowValue?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableDescriptor
-    <V : (Any..Any?)> -> DataFlowValue
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue..org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowValue?)
 
 'BOUND_INITIALIZER_VALUE' @ [102:57] ==> public final val BOUND_INITIALIZER_VALUE: (WritableSlice<(VariableDescriptor..VariableDescriptor?), (DataFlowValue..DataFlowValue?)>..WritableSlice<(VariableDescriptor..VariableDescriptor?), (DataFlowValue..DataFlowValue?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -416,8 +414,6 @@ Inferred types:
 
 'trace' @ [141:102] ==> value-parameter trace: BindingTrace defined in org.jetbrains.kotlin.resolve.LocalVariableResolver.resolveLocalVariableDescriptor[ValueParameterDescriptorImpl]
 
-'Modality' @ [142:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [142:30] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'INTERNAL' @ [143:34] ==> @NotNull public final val INTERNAL: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -484,8 +480,8 @@ Inferred types:
 
 'record' @ [161:19] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?), key: (PsiElement..PsiElement?), value: (VariableDescriptor..VariableDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VARIABLE' @ [161:41] ==> public final val VARIABLE: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -575,8 +571,6 @@ Inferred types:
 
 'propertyDescriptor' @ [180:60] ==> value-parameter propertyDescriptor: PropertyDescriptorImpl defined in org.jetbrains.kotlin.resolve.LocalVariableResolver.initializeWithDefaultGetterSetter[ValueParameterDescriptorImpl]
 
-'Annotations' @ [180:80] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [180:92] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'getter' @ [181:13] ==> var getter: PropertyGetterDescriptorImpl? defined in org.jetbrains.kotlin.resolve.LocalVariableResolver.initializeWithDefaultGetterSetter[LocalVariableDescriptor]
@@ -602,8 +596,6 @@ Inferred types:
 'createDefaultSetter' @ [186:40] ==> @NotNull public open fun createDefaultSetter(@NotNull p0: PropertyDescriptor, @NotNull p1: Annotations): PropertySetterDescriptorImpl defined in org.jetbrains.kotlin.resolve.DescriptorFactory[JavaMethodDescriptor]
 
 'propertyDescriptor' @ [186:60] ==> value-parameter propertyDescriptor: PropertyDescriptorImpl defined in org.jetbrains.kotlin.resolve.LocalVariableResolver.initializeWithDefaultGetterSetter[ValueParameterDescriptorImpl]
-
-'Annotations' @ [186:80] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [186:92] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
@@ -674,8 +666,8 @@ Inferred types:
 
 'record' @ [212:15] ==> public abstract fun <K : (Any..Any?), V : (Any..Any?)> record(slice: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?), key: (PsiElement..PsiElement?), value: (VariableDescriptor..VariableDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTrace[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VARIABLE' @ [212:37] ==> public final val VARIABLE: (WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(PsiElement..PsiElement?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -693,14 +685,14 @@ Inferred types:
 
 'get' @ [218:60] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(slice: (ReadOnlySlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..ReadOnlySlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?), key: (VariableAccessorDescriptor..VariableAccessorDescriptor?)): ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> VariableAccessorDescriptor
-    <V : (Any..Any?)> -> ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor..org.jetbrains.kotlin.descriptors.VariableAccessorDescriptor?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>?)
 
 'DELEGATED_PROPERTY_RESOLVED_CALL' @ [218:79] ==> public final val DELEGATED_PROPERTY_RESOLVED_CALL: (WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..WritableSlice<(VariableAccessorDescriptor..VariableAccessorDescriptor?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
 'this' @ [218:113] ==> <this> defined in org.jetbrains.kotlin.resolve.LocalVariableResolver.updateAccessorFlagsFromResolvedCallForDelegatedProperty[ReceiverParameterDescriptorImpl]
 
-'resultingDescriptor' @ [218:120] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [218:120] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 

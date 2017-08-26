@@ -58,7 +58,7 @@ Inferred types:
 
 'getParentOfType' @ [64:41] ==> @SafeVarargs @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull vararg p1: (Class<out (KtElement..KtElement?)>..Class<out (KtElement..KtElement?)>?)): KtElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtElement
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'parameterUser' @ [64:57] ==> var parameterUser: PsiElement defined in org.jetbrains.kotlin.idea.inspections.CanBeParameterInspection.usedAsPropertyIn[LocalVariableDescriptor]
 

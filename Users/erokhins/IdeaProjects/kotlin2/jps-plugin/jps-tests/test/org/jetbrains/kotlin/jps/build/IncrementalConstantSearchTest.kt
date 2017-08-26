@@ -50,7 +50,7 @@ Inferred types:
 
 'FixedFuture' @ [67:24] ==> public constructor FixedFuture<T : (Any..Any?)>(p0: (Callbacks.ConstantAffection..Callbacks.ConstantAffection?)) defined in com.intellij.util.concurrency.FixedFuture[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ConstantAffection
+    <T : (Any..Any?)> -> (org.jetbrains.jps.builders.java.dependencyView.Callbacks.ConstantAffection..org.jetbrains.jps.builders.java.dependencyView.Callbacks.ConstantAffection?)
 
 'ConstantAffection' @ [67:46] ==> public constructor ConstantAffection(p0: (MutableCollection<(File..File?)>..Collection<(File..File?)>?)) defined in org.jetbrains.jps.builders.java.dependencyView.Callbacks.ConstantAffection[JavaClassConstructorDescriptor]
 

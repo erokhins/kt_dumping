@@ -34,8 +34,8 @@ Inferred types:
 
 'get' @ [50:24] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtExpression..KtExpression?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..ReadOnlySlice<(KtExpression..KtExpression?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?), p1: (KtExpression..KtExpression?)): ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtExpression
-    <V : (Any..Any?)> -> ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtExpression..org.jetbrains.kotlin.psi.KtExpression?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>..org.jetbrains.kotlin.resolve.calls.model.ResolvedCall<(org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)>?)
 
 'LOOP_RANGE_NEXT_RESOLVED_CALL' @ [50:43] ==> public final val LOOP_RANGE_NEXT_RESOLVED_CALL: (WritableSlice<(KtExpression..KtExpression?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>..WritableSlice<(KtExpression..KtExpression?), (ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>..ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -51,7 +51,7 @@ Inferred types:
 
 'nextCall' @ [52:16] ==> val nextCall: ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.codegen.range.forLoop.AbstractForLoopGenerator.getElementType[LocalVariableDescriptor]
 
-'resultingDescriptor' @ [52:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: (FunctionDescriptor..FunctionDescriptor?)[MyPropertyDescriptor]
+'resultingDescriptor' @ [52:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<(FunctionDescriptor..FunctionDescriptor?)>.resultingDescriptor: FunctionDescriptor[MyPropertyDescriptor]
 Inferred types:
     <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
@@ -102,8 +102,8 @@ Inferred types:
 
 'get' @ [65:54] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>..ReadOnlySlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>?), p1: (KtParameter..KtParameter?)): VariableDescriptor? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtParameter
-    <V : (Any..Any?)> -> VariableDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtParameter..org.jetbrains.kotlin.psi.KtParameter?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.VariableDescriptor..org.jetbrains.kotlin.descriptors.VariableDescriptor?)
 
 'VALUE_PARAMETER' @ [65:73] ==> public final val VALUE_PARAMETER: (WritableSlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>..WritableSlice<(KtParameter..KtParameter?), (VariableDescriptor..VariableDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -133,7 +133,7 @@ Inferred types:
 
 'scheduleLeaveVariable' @ [68:13] ==> private final fun scheduleLeaveVariable(runnable: Runnable): Unit defined in org.jetbrains.kotlin.codegen.range.forLoop.AbstractForLoopGenerator[SimpleFunctionDescriptorImpl]
 
-'Runnable' @ [68:35] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [68:35] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'codegen' @ [69:17] ==> protected final val codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.range.forLoop.AbstractForLoopGenerator[PropertyDescriptorImpl]
 
@@ -200,7 +200,7 @@ Inferred types:
 
 'componentDescriptors' @ [93:37] ==> val componentDescriptors: List<VariableDescriptor> defined in org.jetbrains.kotlin.codegen.range.forLoop.AbstractForLoopGenerator.generateDestructuringDeclaration[LocalVariableDescriptor]
 
-'filterOutDescriptorsWithSpecialNames' @ [93:58] ==> public fun Collection<VariableDescriptor>.filterOutDescriptorsWithSpecialNames(): List<VariableDescriptor> defined in org.jetbrains.kotlin.codegen[SimpleFunctionDescriptorImpl]
+'filterOutDescriptorsWithSpecialNames' @ [93:58] ==> public fun Collection<VariableDescriptor>.filterOutDescriptorsWithSpecialNames(): List<VariableDescriptor> defined in org.jetbrains.kotlin.codegen in file codegenUtil.kt[SimpleFunctionDescriptorImpl]
 
 'codegen' @ [94:36] ==> protected final val codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.range.forLoop.AbstractForLoopGenerator[PropertyDescriptorImpl]
 
@@ -222,7 +222,7 @@ Inferred types:
 
 'scheduleLeaveVariable' @ [96:13] ==> private final fun scheduleLeaveVariable(runnable: Runnable): Unit defined in org.jetbrains.kotlin.codegen.range.forLoop.AbstractForLoopGenerator[SimpleFunctionDescriptorImpl]
 
-'Runnable' @ [96:35] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [96:35] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'codegen' @ [97:17] ==> protected final val codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.range.forLoop.AbstractForLoopGenerator[PropertyDescriptorImpl]
 
@@ -298,7 +298,7 @@ Inferred types:
 
 'scheduleLeaveVariable' @ [127:9] ==> private final fun scheduleLeaveVariable(runnable: Runnable): Unit defined in org.jetbrains.kotlin.codegen.range.forLoop.AbstractForLoopGenerator[SimpleFunctionDescriptorImpl]
 
-'Runnable' @ [127:31] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [127:31] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'codegen' @ [127:42] ==> protected final val codegen: ExpressionCodegen defined in org.jetbrains.kotlin.codegen.range.forLoop.AbstractForLoopGenerator[PropertyDescriptorImpl]
 

@@ -18,8 +18,6 @@
 Inferred types:
     <T> -> ModuleInfo
 
-'ModuleInfo' @ [58:64] ==> public companion object defined in org.jetbrains.kotlin.analyzer.ModuleInfo[FakeCallableDescriptorForObject]
-
 'Capability' @ [58:75] ==> public final val Capability: ModuleDescriptor.Capability<ModuleInfo> defined in org.jetbrains.kotlin.analyzer.ModuleInfo.Companion[DeserializedPropertyDescriptor]
 
 'binaryInfo' @ [60:5] ==> val binaryInfo: BinaryModuleInfo? defined in org.jetbrains.kotlin.idea.decompiler.navigation.findDecompiledDeclaration[LocalVariableDescriptor]
@@ -74,11 +72,9 @@ Inferred types:
 
 'project' @ [74:25] ==> public final val GlobalSearchScope.project: Project?[MyPropertyDescriptor]
 
-'findCandidateDeclarationsInIndex' @ [75:27] ==> private fun findCandidateDeclarationsInIndex(referencedDescriptor: DeclarationDescriptor, scope: GlobalSearchScope, project: Project): Collection<KtDeclaration?> defined in org.jetbrains.kotlin.idea.decompiler.navigation[SimpleFunctionDescriptorImpl]
+'findCandidateDeclarationsInIndex' @ [75:27] ==> private fun findCandidateDeclarationsInIndex(referencedDescriptor: DeclarationDescriptor, scope: GlobalSearchScope, project: Project): Collection<KtDeclaration?> defined in org.jetbrains.kotlin.idea.decompiler.navigation in file findDecompiledDeclaration.kt[SimpleFunctionDescriptorImpl]
 
 'referencedDescriptor' @ [76:13] ==> value-parameter referencedDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.decompiler.navigation.findInScope[ValueParameterDescriptorImpl]
-
-'KotlinSourceFilterScope' @ [76:35] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope[FakeCallableDescriptorForObject]
 
 'libraryClassFiles' @ [76:59] ==> @JvmStatic public final fun libraryClassFiles(delegate: GlobalSearchScope, project: Project): GlobalSearchScope defined in org.jetbrains.kotlin.idea.stubindex.KotlinSourceFilterScope.Companion[SimpleFunctionDescriptorImpl]
 
@@ -148,7 +144,7 @@ Inferred types:
 
 'getParentOfType' @ [102:43] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(ClassDescriptor..ClassDescriptor?)>, p2: Boolean): ClassDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> ClassDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
 'referencedDescriptor' @ [102:59] ==> value-parameter referencedDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.decompiler.navigation.findCandidateDeclarationsInIndex[ValueParameterDescriptorImpl]
 
@@ -178,7 +174,7 @@ Inferred types:
 
 'getParentOfType' @ [108:29] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(PropertyDescriptor..PropertyDescriptor?)>, p2: Boolean): PropertyDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> PropertyDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'referencedDescriptor' @ [108:45] ==> value-parameter referencedDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.decompiler.navigation.findCandidateDeclarationsInIndex[ValueParameterDescriptorImpl]
 
@@ -188,7 +184,7 @@ Inferred types:
 
 'getParentOfType' @ [109:32] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(TypeAliasConstructorDescriptor..TypeAliasConstructorDescriptor?)>, p2: Boolean): TypeAliasConstructorDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> TypeAliasConstructorDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.impl.TypeAliasConstructorDescriptor..org.jetbrains.kotlin.descriptors.impl.TypeAliasConstructorDescriptor?)
 
 'referencedDescriptor' @ [109:48] ==> value-parameter referencedDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.decompiler.navigation.findCandidateDeclarationsInIndex[ValueParameterDescriptorImpl]
 
@@ -200,7 +196,7 @@ Inferred types:
 
 'getParentOfType' @ [110:32] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(FunctionDescriptor..FunctionDescriptor?)>, p2: Boolean): FunctionDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> FunctionDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'referencedDescriptor' @ [110:48] ==> value-parameter referencedDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.decompiler.navigation.findCandidateDeclarationsInIndex[ValueParameterDescriptorImpl]
 
@@ -210,7 +206,7 @@ Inferred types:
 
 'getParentOfType' @ [111:32] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable p0: DeclarationDescriptor?, @NotNull p1: Class<(TypeAliasDescriptor..TypeAliasDescriptor?)>, p2: Boolean): TypeAliasDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> TypeAliasDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.TypeAliasDescriptor..org.jetbrains.kotlin.descriptors.TypeAliasDescriptor?)
 
 'referencedDescriptor' @ [111:48] ==> value-parameter referencedDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.idea.decompiler.navigation.findCandidateDeclarationsInIndex[ValueParameterDescriptorImpl]
 
@@ -272,8 +268,6 @@ Inferred types:
 'project' @ [122:95] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.decompiler.navigation.findCandidateDeclarationsInIndex[ValueParameterDescriptorImpl]
 
 'scope' @ [122:104] ==> value-parameter scope: GlobalSearchScope defined in org.jetbrains.kotlin.idea.decompiler.navigation.findCandidateDeclarationsInIndex[ValueParameterDescriptorImpl]
-
-'KotlinTopLevelTypeAliasFqNameIndex' @ [124:35] ==> public companion object defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex[FakeCallableDescriptorForObject]
 
 'getInstance' @ [124:70] ==> @JvmStatic public final fun getInstance(): KotlinTopLevelTypeAliasFqNameIndex defined in org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex.Companion[SimpleFunctionDescriptorImpl]
 
@@ -491,10 +485,10 @@ Inferred types:
 
 'descriptorKey' @ [181:42] ==> val descriptorKey: String defined in org.jetbrains.kotlin.idea.decompiler.navigation.ByDescriptorIndexer.getDeclarationForDescriptor[LocalVariableDescriptor]
 
-'run' @ [181:60] ==> @InlineOnly public inline fun <T, R> ByDescriptorIndexer.run(block: ByDescriptorIndexer.() -> KtDeclaration?): KtDeclaration? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'run' @ [181:60] ==> @InlineOnly public inline fun <T, R> ByDescriptorIndexer.run(block: ByDescriptorIndexer.() -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ByDescriptorIndexer
-    <R> -> KtDeclaration?
+    <R> -> Nothing
 
 'getBuiltinsDescriptorKey' @ [182:20] ==> public final fun getBuiltinsDescriptorKey(descriptor: DeclarationDescriptor): String? defined in org.jetbrains.kotlin.idea.decompiler.navigation.ByDescriptorIndexer[SimpleFunctionDescriptorImpl]
 

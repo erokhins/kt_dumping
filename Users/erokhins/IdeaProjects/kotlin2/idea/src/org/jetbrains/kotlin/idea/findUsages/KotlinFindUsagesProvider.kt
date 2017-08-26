@@ -1,6 +1,6 @@
-'lazy' @ [34:33] ==> public fun <T> lazy(initializer: () -> JavaFindUsagesProvider): Lazy<JavaFindUsagesProvider> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [34:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> JavaFindUsagesProvider
+    <T> -> T
 
 'JavaFindUsagesProvider' @ [34:40] ==> public constructor JavaFindUsagesProvider() defined in com.intellij.lang.java.JavaFindUsagesProvider[JavaClassConstructorDescriptor]
 

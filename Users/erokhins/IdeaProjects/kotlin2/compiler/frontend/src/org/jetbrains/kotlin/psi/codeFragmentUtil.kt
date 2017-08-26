@@ -39,13 +39,13 @@ Inferred types:
 
 'getUserData' @ [41:17] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Boolean..Boolean?)>): Boolean? defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'SUPPRESS_DIAGNOSTICS_IN_DEBUG_MODE' @ [41:29] ==> public val SUPPRESS_DIAGNOSTICS_IN_DEBUG_MODE: Key<Boolean> defined in org.jetbrains.kotlin.psi.codeFragmentUtil in file codeFragmentUtil.kt[PropertyDescriptorImpl]
 
 'putUserData' @ [44:9] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Boolean..Boolean?)>, @Nullable p1: Boolean?): Unit defined in org.jetbrains.kotlin.psi.KtFile[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'SUPPRESS_DIAGNOSTICS_IN_DEBUG_MODE' @ [44:21] ==> public val SUPPRESS_DIAGNOSTICS_IN_DEBUG_MODE: Key<Boolean> defined in org.jetbrains.kotlin.psi.codeFragmentUtil in file codeFragmentUtil.kt[PropertyDescriptorImpl]
 
@@ -57,7 +57,7 @@ Inferred types:
 
 'getUserData' @ [51:13] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(KotlinType..KotlinType?)>): KotlinType? defined in org.jetbrains.kotlin.psi.KtTypeReference[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'DEBUG_TYPE_INFO' @ [51:25] ==> public val DEBUG_TYPE_INFO: Key<KotlinType> defined in org.jetbrains.kotlin.psi.codeFragmentUtil in file codeFragmentUtil.kt[PropertyDescriptorImpl]
 
@@ -71,7 +71,7 @@ Inferred types:
 
 'putUserData' @ [54:13] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(KotlinType..KotlinType?)>, @Nullable p1: KotlinType?): Unit defined in org.jetbrains.kotlin.psi.KtTypeReference[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinType
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'DEBUG_TYPE_INFO' @ [54:25] ==> public val DEBUG_TYPE_INFO: Key<KotlinType> defined in org.jetbrains.kotlin.psi.codeFragmentUtil in file codeFragmentUtil.kt[PropertyDescriptorImpl]
 

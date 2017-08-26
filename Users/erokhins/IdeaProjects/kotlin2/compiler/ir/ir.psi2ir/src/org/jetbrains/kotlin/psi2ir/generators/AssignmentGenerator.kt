@@ -26,7 +26,7 @@
 
 'irRhs' @ [42:44] ==> val irRhs: IrExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAssignment[LocalVariableDescriptor]
 
-'getResolvedCall' @ [46:30] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [46:30] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [46:46] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAugmentedAssignment[ValueParameterDescriptorImpl]
 
@@ -83,7 +83,7 @@ Inferred types:
 
 'statementGenerator' @ [56:42] ==> public final val statementGenerator: StatementGenerator defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator[PropertyDescriptorImpl]
 
-'generateCall' @ [56:62] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [56:62] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [56:75] ==> value-parameter expression: KtBinaryExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAugmentedAssignment[ValueParameterDescriptorImpl]
 
@@ -112,7 +112,7 @@ Inferred types:
 
 'irOpCall' @ [64:17] ==> val irOpCall: IrExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAugmentedAssignment.<anonymous>[LocalVariableDescriptor]
 
-'getResolvedCall' @ [70:30] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [70:30] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [70:46] ==> value-parameter expression: KtPrefixExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generatePrefixIncrementDecrement[ValueParameterDescriptorImpl]
 
@@ -130,7 +130,7 @@ Inferred types:
 
 'assign' @ [74:37] ==> public abstract fun assign(withLValue: (LValue) -> IrExpression): IrExpression defined in org.jetbrains.kotlin.psi2ir.intermediate.AssignmentReceiver[SimpleFunctionDescriptorImpl]
 
-'irBlock' @ [75:13] ==> public inline fun GeneratorWithScope.irBlock(ktElement: KtElement?, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'irBlock' @ [75:13] ==> public inline fun GeneratorWithScope.irBlock(ktElement: KtElement?, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [75:21] ==> value-parameter expression: KtPrefixExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generatePrefixIncrementDecrement[ValueParameterDescriptorImpl]
 
@@ -156,7 +156,7 @@ Inferred types:
 
 'statementGenerator' @ [78:46] ==> public final val statementGenerator: StatementGenerator defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator[PropertyDescriptorImpl]
 
-'generateCall' @ [78:66] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [78:66] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [78:79] ==> value-parameter expression: KtPrefixExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generatePrefixIncrementDecrement[ValueParameterDescriptorImpl]
 
@@ -178,7 +178,7 @@ Inferred types:
 
 'load' @ [80:27] ==> public abstract fun load(): IrExpression defined in org.jetbrains.kotlin.psi2ir.intermediate.LValue[SimpleFunctionDescriptorImpl]
 
-'getResolvedCall' @ [86:30] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [86:30] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [86:46] ==> value-parameter expression: KtPostfixExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generatePostfixIncrementDecrement[ValueParameterDescriptorImpl]
 
@@ -196,7 +196,7 @@ Inferred types:
 
 'assign' @ [90:37] ==> public abstract fun assign(withLValue: (LValue) -> IrExpression): IrExpression defined in org.jetbrains.kotlin.psi2ir.intermediate.AssignmentReceiver[SimpleFunctionDescriptorImpl]
 
-'irBlock' @ [91:13] ==> public inline fun GeneratorWithScope.irBlock(ktElement: KtElement?, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'irBlock' @ [91:13] ==> public inline fun GeneratorWithScope.irBlock(ktElement: KtElement?, origin: IrStatementOrigin? = ..., resultType: KotlinType? = ..., body: IrBlockBuilder.() -> Unit): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [91:21] ==> value-parameter expression: KtPostfixExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generatePostfixIncrementDecrement[ValueParameterDescriptorImpl]
 
@@ -238,7 +238,7 @@ Inferred types:
 
 'statementGenerator' @ [95:46] ==> public final val statementGenerator: StatementGenerator defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator[PropertyDescriptorImpl]
 
-'generateCall' @ [95:66] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'generateCall' @ [95:66] ==> public fun CallGenerator.generateCall(ktElement: KtElement, call: CallBuilder, origin: IrStatementOrigin? = ...): IrExpression defined in org.jetbrains.kotlin.psi2ir.generators in file CallGenerator.kt[SimpleFunctionDescriptorImpl]
 
 'expression' @ [95:79] ==> value-parameter expression: KtPostfixExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generatePostfixIncrementDecrement[ValueParameterDescriptorImpl]
 
@@ -270,7 +270,7 @@ Inferred types:
 
 'origin' @ [104:66] ==> value-parameter origin: IrStatementOrigin defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAssignmentReceiver[ValueParameterDescriptorImpl]
 
-'getResolvedCall' @ [107:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getResolvedCall' @ [107:28] ==> public fun Generator.getResolvedCall(key: KtElement): ResolvedCall<out CallableDescriptor>? defined in org.jetbrains.kotlin.psi2ir.generators in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'ktLeft' @ [107:44] ==> value-parameter ktLeft: KtExpression defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAssignmentReceiver[ValueParameterDescriptorImpl]
 
@@ -280,7 +280,7 @@ Inferred types:
 
 'resultingDescriptor' @ [108:39] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.resultingDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'when (descriptor) {
             is SyntheticFieldDescriptor -> {
@@ -362,9 +362,9 @@ Inferred types:
                             ktLeft.startOffset, ktLeft.endOffset,
                             context.symbolTable.referenceVariable(descriptor),
                             origin
-                    )' @ [117:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {AssignmentReceiver & LValue}, elseBranch: {AssignmentReceiver & LValue}): {AssignmentReceiver & LValue}[SimpleFunctionDescriptorImpl]
+                    )' @ [117:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: AssignmentReceiver, elseBranch: AssignmentReceiver): AssignmentReceiver[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {AssignmentReceiver & LValue}
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> AssignmentReceiver
 
 'descriptor' @ [117:21] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAssignmentReceiver[LocalVariableDescriptor]
 
@@ -575,19 +575,19 @@ Inferred types:
 
 'dispatchReceiver' @ [173:58] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolvedCall' @ [173:76] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAssignmentReceiverForProperty[ValueParameterDescriptorImpl]
 
 'extensionReceiver' @ [173:89] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolvedCall' @ [174:34] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAssignmentReceiverForProperty[ValueParameterDescriptorImpl]
 
 'call' @ [174:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'isSafeCall' @ [174:52] ==> public fun Call.isSafeCall(): Boolean defined in org.jetbrains.kotlin.resolve.calls.callUtil[DeserializedSimpleFunctionDescriptor]
 
@@ -603,7 +603,7 @@ Inferred types:
 
 'propertyReceiver' @ [179:58] ==> val propertyReceiver: CallReceiver defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAssignmentReceiverForProperty[LocalVariableDescriptor]
 
-'getTypeArguments' @ [179:76] ==> public fun getTypeArguments(resolvedCall: ResolvedCall<*>?): Map<TypeParameterDescriptor, KotlinType>? defined in org.jetbrains.kotlin.psi2ir.generators[SimpleFunctionDescriptorImpl]
+'getTypeArguments' @ [179:76] ==> public fun getTypeArguments(resolvedCall: ResolvedCall<*>?): Map<TypeParameterDescriptor, KotlinType>? defined in org.jetbrains.kotlin.psi2ir.generators in file ArgumentsGenerationUtils.kt[SimpleFunctionDescriptorImpl]
 
 'resolvedCall' @ [179:93] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator.generateAssignmentReceiverForProperty[ValueParameterDescriptorImpl]
 
@@ -784,7 +784,7 @@ Inferred types:
 
 'dispatchReceiver' @ [226:26] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'statementGenerator' @ [229:26] ==> public final val statementGenerator: StatementGenerator defined in org.jetbrains.kotlin.psi2ir.generators.AssignmentGenerator[PropertyDescriptorImpl]
 

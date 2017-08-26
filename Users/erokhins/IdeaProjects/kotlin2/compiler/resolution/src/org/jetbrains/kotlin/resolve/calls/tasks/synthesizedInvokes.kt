@@ -8,8 +8,6 @@ Inferred types:
 
 'name' @ [38:20] ==> public final val FunctionDescriptor.name: Name[MyPropertyDescriptor]
 
-'OperatorNameConventions' @ [38:28] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'INVOKE' @ [38:52] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'invoke' @ [41:13] ==> val invoke: FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks.createSynthesizedInvokes[LocalVariableDescriptor]
@@ -50,7 +48,7 @@ Inferred types:
 
 'containerClassId' @ [44:82] ==> val containerClassId: ClassId? defined in org.jetbrains.kotlin.resolve.calls.tasks.createSynthesizedInvokes[LocalVariableDescriptor]
 
-'createSynthesizedFunctionWithFirstParameterAsReceiver' @ [45:13] ==> private fun createSynthesizedFunctionWithFirstParameterAsReceiver(descriptor: FunctionDescriptor): FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks[SimpleFunctionDescriptorImpl]
+'createSynthesizedFunctionWithFirstParameterAsReceiver' @ [45:13] ==> private fun createSynthesizedFunctionWithFirstParameterAsReceiver(descriptor: FunctionDescriptor): FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks in file synthesizedInvokes.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [45:67] ==> val invoke: FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks.createSynthesizedInvokes[LocalVariableDescriptor]
 
@@ -70,7 +68,7 @@ Inferred types:
 
 'overriddenDescriptors' @ [49:97] ==> public final var FunctionDescriptor.overriddenDescriptors: (MutableCollection<out (FunctionDescriptor..FunctionDescriptor?)>..Collection<(FunctionDescriptor..FunctionDescriptor?)>)[MyPropertyDescriptor]
 
-'createSynthesizedFunctionWithFirstParameterAsReceiver' @ [50:39] ==> private fun createSynthesizedFunctionWithFirstParameterAsReceiver(descriptor: FunctionDescriptor): FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks[SimpleFunctionDescriptorImpl]
+'createSynthesizedFunctionWithFirstParameterAsReceiver' @ [50:39] ==> private fun createSynthesizedFunctionWithFirstParameterAsReceiver(descriptor: FunctionDescriptor): FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks in file synthesizedInvokes.kt[SimpleFunctionDescriptorImpl]
 
 'invokeDeclaration' @ [50:93] ==> val invokeDeclaration: FunctionDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks.createSynthesizedInvokes[LocalVariableDescriptor]
 
@@ -182,8 +180,6 @@ Inferred types:
 'descriptor' @ [79:9] ==> value-parameter descriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.resolve.calls.tasks.isSynthesizedInvoke[ValueParameterDescriptorImpl]
 
 'name' @ [79:20] ==> public final val DeclarationDescriptor.name: Name[MyPropertyDescriptor]
-
-'OperatorNameConventions' @ [79:28] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'INVOKE' @ [79:52] ==> @field:JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 

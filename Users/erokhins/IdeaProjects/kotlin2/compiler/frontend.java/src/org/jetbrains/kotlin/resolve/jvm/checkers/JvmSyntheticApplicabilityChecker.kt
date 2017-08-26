@@ -10,7 +10,9 @@
 
 'hasDelegate' @ [39:90] ==> public open fun hasDelegate(): Boolean defined in org.jetbrains.kotlin.psi.KtProperty[JavaMethodDescriptor]
 
-'DescriptorToSourceUtils' @ [40:35] ==> public object DescriptorToSourceUtils defined in org.jetbrains.kotlin.resolve[FakeCallableDescriptorForObject]
+'?:' @ [40:35] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: KtAnnotationEntry?, right: KtAnnotationEntry): KtAnnotationEntry[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> KtAnnotationEntry
 
 'getSourceFromAnnotation' @ [40:59] ==> @JvmStatic public final fun getSourceFromAnnotation(descriptor: AnnotationDescriptor): KtAnnotationEntry? defined in org.jetbrains.kotlin.resolve.DescriptorToSourceUtils[DeserializedSimpleFunctionDescriptor]
 

@@ -1,4 +1,4 @@
-'getInstructions' @ [32:24] ==> public fun Pseudocode.getInstructions(traversalOrder: TraversalOrder): List<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'getInstructions' @ [32:24] ==> public fun Pseudocode.getInstructions(traversalOrder: TraversalOrder): List<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'traversalOrder' @ [32:40] ==> value-parameter traversalOrder: TraversalOrder defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.traverse[ValueParameterDescriptorImpl]
 
@@ -10,7 +10,7 @@
 
 'body' @ [35:25] ==> public final val body: Pseudocode defined in org.jetbrains.kotlin.cfg.pseudocode.instructions.special.LocalFunctionDeclarationInstruction[PropertyDescriptorImpl]
 
-'traverse' @ [35:30] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'traverse' @ [35:30] ==> public fun Pseudocode.traverse(traversalOrder: TraversalOrder, analyzeInstruction: (Instruction) -> Unit): Unit defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'traversalOrder' @ [35:39] ==> value-parameter traversalOrder: TraversalOrder defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.traverse[ValueParameterDescriptorImpl]
 
@@ -20,7 +20,7 @@
 
 'instruction' @ [37:28] ==> val instruction: Instruction defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.traverse[LocalVariableDescriptor]
 
-'getInstructions' @ [46:24] ==> public fun Pseudocode.getInstructions(traversalOrder: TraversalOrder): List<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'getInstructions' @ [46:24] ==> public fun Pseudocode.getInstructions(traversalOrder: TraversalOrder): List<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'traversalOrder' @ [46:40] ==> value-parameter traversalOrder: TraversalOrder defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.traverse[ValueParameterDescriptorImpl]
 
@@ -117,7 +117,7 @@ Inferred types:
 
 'edgesMap' @ [74:12] ==> val edgesMap: LinkedHashMap<Instruction, Edges<I>> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.collectData[LocalVariableDescriptor]
 
-'getInstructions' @ [86:24] ==> public fun Pseudocode.getInstructions(traversalOrder: TraversalOrder): List<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'getInstructions' @ [86:24] ==> public fun Pseudocode.getInstructions(traversalOrder: TraversalOrder): List<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'traversalOrder' @ [86:40] ==> value-parameter traversalOrder: TraversalOrder defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.collectDataFromSubgraph[ValueParameterDescriptorImpl]
 
@@ -139,7 +139,7 @@ Inferred types:
 
 'isStart' @ [91:25] ==> val isStart: Boolean defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.collectDataFromSubgraph[LocalVariableDescriptor]
 
-'getPreviousIncludingSubGraphInstructions' @ [94:36] ==> private fun getPreviousIncludingSubGraphInstructions(instruction: Instruction, traversalOrder: TraversalOrder, startInstruction: Instruction, previousSubGraphInstructions: Collection<Instruction>): Collection<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'getPreviousIncludingSubGraphInstructions' @ [94:36] ==> private fun getPreviousIncludingSubGraphInstructions(instruction: Instruction, traversalOrder: TraversalOrder, startInstruction: Instruction, previousSubGraphInstructions: Collection<Instruction>): Collection<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'instruction' @ [94:77] ==> val instruction: Instruction defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.collectDataFromSubgraph[LocalVariableDescriptor]
 
@@ -300,7 +300,7 @@ Inferred types:
 
 'instruction' @ [137:20] ==> value-parameter instruction: Instruction defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.getPreviousIncludingSubGraphInstructions[ValueParameterDescriptorImpl]
 
-'getPreviousInstructions' @ [137:32] ==> public fun Instruction.getPreviousInstructions(traversalOrder: TraversalOrder): Collection<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'getPreviousInstructions' @ [137:32] ==> public fun Instruction.getPreviousInstructions(traversalOrder: TraversalOrder): Collection<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'traversalOrder' @ [137:56] ==> value-parameter traversalOrder: TraversalOrder defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.getPreviousIncludingSubGraphInstructions[ValueParameterDescriptorImpl]
 
@@ -316,17 +316,17 @@ Inferred types:
 
 'ArrayList' @ [141:18] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (Instruction..Instruction?)>..Collection<(Instruction..Instruction?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Instruction
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.cfg.pseudocode.instructions.Instruction..org.jetbrains.kotlin.cfg.pseudocode.instructions.Instruction?)
 
 'previous' @ [141:28] ==> val previous: Collection<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.getPreviousIncludingSubGraphInstructions[LocalVariableDescriptor]
 
-'result' @ [142:5] ==> val result: ArrayList<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.getPreviousIncludingSubGraphInstructions[LocalVariableDescriptor]
+'result' @ [142:5] ==> val result: ArrayList<(Instruction..Instruction?)> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.getPreviousIncludingSubGraphInstructions[LocalVariableDescriptor]
 
-'addAll' @ [142:12] ==> public open fun addAll(elements: Collection<Instruction>): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
+'addAll' @ [142:12] ==> public open fun addAll(elements: Collection<(Instruction..Instruction?)>): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
 'previousSubGraphInstructions' @ [142:19] ==> value-parameter previousSubGraphInstructions: Collection<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.getPreviousIncludingSubGraphInstructions[ValueParameterDescriptorImpl]
 
-'result' @ [143:12] ==> val result: ArrayList<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.getPreviousIncludingSubGraphInstructions[LocalVariableDescriptor]
+'result' @ [143:12] ==> val result: ArrayList<(Instruction..Instruction?)> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.getPreviousIncludingSubGraphInstructions[LocalVariableDescriptor]
 
 'if (previousValue != newValue && newValue != null) {
         changed[instruction] = true
@@ -419,7 +419,7 @@ Inferred types:
 
 'instruction' @ [185:51] ==> val instruction: (Instruction..Instruction?) defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.traverseFollowingInstructions[LocalVariableDescriptor]
 
-'getNextInstructions' @ [185:63] ==> public fun Instruction.getNextInstructions(traversalOrder: TraversalOrder): Collection<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser[SimpleFunctionDescriptorImpl]
+'getNextInstructions' @ [185:63] ==> public fun Instruction.getNextInstructions(traversalOrder: TraversalOrder): Collection<Instruction> defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser in file PseudocodeTraverser.kt[SimpleFunctionDescriptorImpl]
 
 'order' @ [185:83] ==> value-parameter order: TraversalOrder = ... defined in org.jetbrains.kotlin.cfg.pseudocodeTraverser.traverseFollowingInstructions[ValueParameterDescriptorImpl]
 

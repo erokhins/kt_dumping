@@ -10,7 +10,7 @@
 
 'findChildByType' @ [29:17] ==> @Nullable protected/*protected and package*/ open fun <T : (PsiElement..PsiElement?)> findChildByType(p0: (IElementType..IElementType?)): KtContainerNode? defined in org.jetbrains.kotlin.psi.KtExpressionWithLabel[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtContainerNode..org.jetbrains.kotlin.psi.KtContainerNode?)
+    <T : (PsiElement..PsiElement?)> -> KtContainerNode
 
 'LABEL_QUALIFIER' @ [29:45] ==> public final val LABEL_QUALIFIER: (KtNodeType..KtNodeType?) defined in org.jetbrains.kotlin.KtNodeTypes[JavaPropertyDescriptor]
 

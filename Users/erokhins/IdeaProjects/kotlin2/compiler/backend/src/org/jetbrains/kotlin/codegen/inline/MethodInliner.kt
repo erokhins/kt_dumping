@@ -183,7 +183,7 @@ Inferred types:
 
 'LinkedList' @ [123:30] ==> public constructor LinkedList<E : (Any..Any?)>(p0: (MutableCollection<out (InvokeCall..InvokeCall?)>..Collection<(InvokeCall..InvokeCall?)>?)) defined in java.util.LinkedList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> InvokeCall
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.codegen.inline.InvokeCall..org.jetbrains.kotlin.codegen.inline.InvokeCall?)
 
 'invokeCalls' @ [123:41] ==> private final val invokeCalls: ArrayList<InvokeCall> defined in org.jetbrains.kotlin.codegen.inline.MethodInliner[PropertyDescriptorImpl]
 
@@ -527,11 +527,11 @@ Inferred types:
 
 '!' @ [187:28] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'currentInvokes' @ [187:29] ==> val currentInvokes: LinkedList<InvokeCall> defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline[LocalVariableDescriptor]
+'currentInvokes' @ [187:29] ==> val currentInvokes: LinkedList<(InvokeCall..InvokeCall?)> defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline[LocalVariableDescriptor]
 
 'isEmpty' @ [187:44] ==> public open fun isEmpty(): Boolean defined in java.util.LinkedList[JavaMethodDescriptor]
 
-'currentInvokes' @ [188:38] ==> val currentInvokes: LinkedList<InvokeCall> defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline[LocalVariableDescriptor]
+'currentInvokes' @ [188:38] ==> val currentInvokes: LinkedList<(InvokeCall..InvokeCall?)> defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.doInline[LocalVariableDescriptor]
 
 'remove' @ [188:53] ==> public open fun remove(): (InvokeCall..InvokeCall?) defined in java.util.LinkedList[JavaMethodDescriptor]
 
@@ -1827,7 +1827,7 @@ Inferred types:
 
 'firstParameterIndex' @ [423:58] ==> val firstParameterIndex: Int defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable.<anonymous>[LocalVariableDescriptor]
 
-'getLambdaIfExistsAndMarkInstructions' @ [424:42] ==> public fun MethodInliner.getLambdaIfExistsAndMarkInstructions(sourceValue: SourceValue, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'getLambdaIfExistsAndMarkInstructions' @ [424:42] ==> public fun MethodInliner.getLambdaIfExistsAndMarkInstructions(sourceValue: SourceValue, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'sourceValue' @ [424:79] ==> val sourceValue: (SourceValue..SourceValue?) defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable.<anonymous>[LocalVariableDescriptor]
 
@@ -1904,7 +1904,7 @@ Inferred types:
 
 'i' @ [433:84] ==> val i: Int defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable.<anonymous>[LocalVariableDescriptor]
 
-'getLambdaIfExistsAndMarkInstructions' @ [434:46] ==> public fun MethodInliner.getLambdaIfExistsAndMarkInstructions(sourceValue: SourceValue, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'getLambdaIfExistsAndMarkInstructions' @ [434:46] ==> public fun MethodInliner.getLambdaIfExistsAndMarkInstructions(sourceValue: SourceValue, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'sourceValue' @ [434:83] ==> val sourceValue: (SourceValue..SourceValue?) defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable.<anonymous>[LocalVariableDescriptor]
 
@@ -2126,7 +2126,7 @@ Inferred types:
 
 'POP' @ [479:48] ==> public const final val POP: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'getLambdaIfExistsAndMarkInstructions' @ [480:21] ==> public fun MethodInliner.getLambdaIfExistsAndMarkInstructions(sourceValue: SourceValue, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'getLambdaIfExistsAndMarkInstructions' @ [480:21] ==> public fun MethodInliner.getLambdaIfExistsAndMarkInstructions(sourceValue: SourceValue, processSwap: Boolean, insnList: InsnList, frames: Array<Frame<SourceValue>?>, toDelete: MutableSet<AbstractInsnNode>): LambdaInfo? defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'frame' @ [480:58] ==> val frame: Frame<SourceValue>? defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable.<anonymous>[LocalVariableDescriptor]
 
@@ -2176,7 +2176,7 @@ Inferred types:
 
 'processingNode' @ [499:9] ==> val processingNode: MethodNode defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable[LocalVariableDescriptor]
 
-'remove' @ [499:24] ==> public fun MethodNode.remove(instructions: Collection<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'remove' @ [499:24] ==> public fun MethodNode.remove(instructions: Collection<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'toDelete' @ [499:31] ==> val toDelete: SmartSet<AbstractInsnNode> defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable[LocalVariableDescriptor]
 
@@ -2188,7 +2188,7 @@ Inferred types:
 
 'it' @ [502:50] ==> value-parameter it: (TryCatchBlockNode..TryCatchBlockNode?) defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable.<anonymous>[ValueParameterDescriptorImpl]
 
-'isMeaningless' @ [502:53] ==> public fun TryCatchBlockNode.isMeaningless(): Boolean defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'isMeaningless' @ [502:53] ==> public fun TryCatchBlockNode.isMeaningless(): Boolean defined in org.jetbrains.kotlin.codegen.inline in file CoveringTryCatchNodeProcessor.kt[SimpleFunctionDescriptorImpl]
 
 'processingNode' @ [504:16] ==> val processingNode: MethodNode defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.markPlacesForInlineAndRemoveInlinable[LocalVariableDescriptor]
 
@@ -2901,7 +2901,7 @@ Inferred types:
 
 'node' @ [771:13] ==> value-parameter node: MethodNode defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.Companion.removeClosureAssertions[ValueParameterDescriptorImpl]
 
-'remove' @ [771:18] ==> public fun MethodNode.remove(instructions: Collection<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline[SimpleFunctionDescriptorImpl]
+'remove' @ [771:18] ==> public fun MethodNode.remove(instructions: Collection<AbstractInsnNode>): Unit defined in org.jetbrains.kotlin.codegen.inline in file MethodInlinerUtil.kt[SimpleFunctionDescriptorImpl]
 
 'toDelete' @ [771:25] ==> val toDelete: ArrayList<AbstractInsnNode> /* = ArrayList<AbstractInsnNode> */ defined in org.jetbrains.kotlin.codegen.inline.MethodInliner.Companion.removeClosureAssertions[LocalVariableDescriptor]
 

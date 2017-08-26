@@ -12,7 +12,7 @@ Inferred types:
 
 'getComponent' @ [61:27] ==> public abstract fun <T : (Any..Any?)> getComponent(@NotNull p0: Class<(CompletionBindingContextProvider..CompletionBindingContextProvider?)>): (CompletionBindingContextProvider..CompletionBindingContextProvider?) defined in com.intellij.openapi.project.Project[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CompletionBindingContextProvider
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.CompletionBindingContextProvider..org.jetbrains.kotlin.idea.completion.CompletionBindingContextProvider?)
 
 'CompletionBindingContextProvider' @ [61:40] ==> public companion object defined in org.jetbrains.kotlin.idea.completion.CompletionBindingContextProvider[FakeCallableDescriptorForObject]
 
@@ -45,7 +45,7 @@ Inferred types:
 
 'createCachedValue' @ [87:108] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(CompletionBindingContextProvider.DataHolder..CompletionBindingContextProvider.DataHolder?)>?, p1: Boolean): CachedValue<(CompletionBindingContextProvider.DataHolder..CompletionBindingContextProvider.DataHolder?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DataHolder
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.completion.CompletionBindingContextProvider.DataHolder..org.jetbrains.kotlin.idea.completion.CompletionBindingContextProvider.DataHolder?)
 
 'create' @ [88:42] ==> public open fun <T : (Any..Any?)> create(@Nullable p0: CompletionBindingContextProvider.DataHolder?, @NotNull vararg p1: (Any..Any?)): (CachedValueProvider.Result<(CompletionBindingContextProvider.DataHolder..CompletionBindingContextProvider.DataHolder?)>..CachedValueProvider.Result<(CompletionBindingContextProvider.DataHolder..CompletionBindingContextProvider.DataHolder?)>?) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaMethodDescriptor]
 Inferred types:

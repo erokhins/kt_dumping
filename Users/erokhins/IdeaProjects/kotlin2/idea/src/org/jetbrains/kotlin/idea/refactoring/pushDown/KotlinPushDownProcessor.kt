@@ -175,6 +175,8 @@ Inferred types:
     <T> -> PsiElement
     <R> -> SubclassUsage
 
+'SubclassUsage' @ [108:24] ==> public constructor SubclassUsage(element: PsiElement) defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownProcessor.SubclassUsage[ClassConstructorDescriptorImpl]
+
 'toTypedArray' @ [109:18] ==> public inline fun <reified T> Collection<KotlinPushDownProcessor.SubclassUsage>.toTypedArray(): Array<KotlinPushDownProcessor.SubclassUsage> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T> -> SubclassUsage
@@ -225,7 +227,7 @@ Inferred types:
 Inferred types:
     <T> -> MultiMap<PsiElement, String>
 
-'analyzePushDownConflicts' @ [122:29] ==> public fun analyzePushDownConflicts(context: KotlinPushDownContext, usages: Array<out UsageInfo>): MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pushDown[SimpleFunctionDescriptorImpl]
+'analyzePushDownConflicts' @ [122:29] ==> public fun analyzePushDownConflicts(context: KotlinPushDownContext, usages: Array<out UsageInfo>): MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.refactoring.pushDown in file pushDownConflictsUtils.kt[SimpleFunctionDescriptorImpl]
 
 'context' @ [122:54] ==> private final val context: KotlinPushDownContext defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownProcessor[PropertyDescriptorImpl]
 
@@ -461,8 +463,6 @@ Inferred types:
 
 'modality' @ [180:42] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [180:54] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [180:63] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'memberInfo' @ [180:75] ==> val memberInfo: KotlinMemberInfo defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownProcessor.removeOriginalMembers[LocalVariableDescriptor]
@@ -564,7 +564,7 @@ Inferred types:
 
 'markedElements' @ [212:17] ==> val markedElements: ArrayList<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownProcessor.performRefactoring[LocalVariableDescriptor]
 
-'markElements' @ [212:35] ==> public fun markElements(declaration: KtNamedDeclaration, context: BindingContext, sourceClassDescriptor: ClassDescriptor, targetClassDescriptor: ClassDescriptor?): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'markElements' @ [212:35] ==> public fun markElements(declaration: KtNamedDeclaration, context: BindingContext, sourceClassDescriptor: ClassDescriptor, targetClassDescriptor: ClassDescriptor?): List<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file markingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [212:48] ==> value-parameter it: KotlinMemberInfo defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownProcessor.performRefactoring.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -599,7 +599,7 @@ Inferred types:
 
 'removeOriginalMembers' @ [215:13] ==> private final fun removeOriginalMembers(): Unit defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownProcessor[SimpleFunctionDescriptorImpl]
 
-'clearMarking' @ [218:13] ==> public fun clearMarking(markedElements: List<KtElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp[SimpleFunctionDescriptorImpl]
+'clearMarking' @ [218:13] ==> public fun clearMarking(markedElements: List<KtElement>): Unit defined in org.jetbrains.kotlin.idea.refactoring.pullUp in file markingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'markedElements' @ [218:26] ==> val markedElements: ArrayList<KtElement> defined in org.jetbrains.kotlin.idea.refactoring.pushDown.KotlinPushDownProcessor.performRefactoring[LocalVariableDescriptor]
 

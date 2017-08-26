@@ -3,9 +3,9 @@ Inferred types:
     <K : (Any..Any?)> -> FuzzyType
     <V : (Any..Any?)> -> Pair<FunctionDescriptor, TypeSubstitutor>?
 
-'lazy' @ [44:63] ==> public fun <T> lazy(initializer: () -> List<FunctionDescriptor>): Lazy<List<FunctionDescriptor>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [44:63] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<FunctionDescriptor>
+    <T> -> T
 
 'ArrayList' @ [45:22] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -63,9 +63,9 @@ Inferred types:
 
 'original' @ [54:32] ==> public final val FunctionDescriptor.original: FunctionDescriptor[MyPropertyDescriptor]
 
-'lazy' @ [57:68] ==> public fun <T> lazy(initializer: () -> List<ClassDescriptor>): Lazy<List<ClassDescriptor>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [57:68] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<ClassDescriptor>
+    <T> -> T
 
 'indicesHelper' @ [58:13] ==> private final val indicesHelper: KotlinIndicesHelper? defined in org.jetbrains.kotlin.idea.core.TypesWithOperatorDetector[PropertyDescriptorImpl]
 
@@ -241,8 +241,6 @@ Inferred types:
 
 'TypesWithOperatorDetector' @ [115:5] ==> public constructor TypesWithOperatorDetector(name: Name, scope: LexicalScope, indicesHelper: KotlinIndicesHelper?) defined in org.jetbrains.kotlin.idea.core.TypesWithOperatorDetector[ClassConstructorDescriptorImpl]
 
-'OperatorNameConventions' @ [115:31] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
-
 'CONTAINS' @ [115:55] ==> @field:JvmField public final val CONTAINS: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
 'scope' @ [115:65] ==> value-parameter scope: LexicalScope defined in org.jetbrains.kotlin.idea.core.TypesWithContainsDetector.<init>[ValueParameterDescriptorImpl]
@@ -276,8 +274,6 @@ Inferred types:
 'argumentType' @ [120:54] ==> private final val argumentType: KotlinType defined in org.jetbrains.kotlin.idea.core.TypesWithContainsDetector[PropertyDescriptorImpl]
 
 'TypesWithOperatorDetector' @ [129:5] ==> public constructor TypesWithOperatorDetector(name: Name, scope: LexicalScope, indicesHelper: KotlinIndicesHelper?) defined in org.jetbrains.kotlin.idea.core.TypesWithOperatorDetector[ClassConstructorDescriptorImpl]
-
-'OperatorNameConventions' @ [129:31] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'GET_VALUE' @ [129:55] ==> @field:JvmField public final val GET_VALUE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 
@@ -332,8 +328,6 @@ Inferred types:
 'freeTypeParams' @ [139:78] ==> value-parameter freeTypeParams: Collection<TypeParameterDescriptor> defined in org.jetbrains.kotlin.idea.core.TypesWithGetValueDetector.checkIsSuitableByType[ValueParameterDescriptorImpl]
 
 'TypesWithOperatorDetector' @ [147:5] ==> public constructor TypesWithOperatorDetector(name: Name, scope: LexicalScope, indicesHelper: KotlinIndicesHelper?) defined in org.jetbrains.kotlin.idea.core.TypesWithOperatorDetector[ClassConstructorDescriptorImpl]
-
-'OperatorNameConventions' @ [147:31] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util[FakeCallableDescriptorForObject]
 
 'SET_VALUE' @ [147:55] ==> @field:JvmField public final val SET_VALUE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[DeserializedPropertyDescriptor]
 

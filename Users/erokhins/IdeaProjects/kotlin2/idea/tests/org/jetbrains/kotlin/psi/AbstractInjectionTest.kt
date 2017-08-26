@@ -89,7 +89,7 @@ Inferred types:
 
 'assertOrderedEquals' @ [69:13] ==> public open fun <T : (Any..Any?)> assertOrderedEquals(@NotNull p0: (MutableIterable<(AbstractInjectionTest.ShredInfo..AbstractInjectionTest.ShredInfo?)>..Iterable<(AbstractInjectionTest.ShredInfo..AbstractInjectionTest.ShredInfo?)>), @NotNull p1: (MutableCollection<out (AbstractInjectionTest.ShredInfo..AbstractInjectionTest.ShredInfo?)>..Collection<(AbstractInjectionTest.ShredInfo..AbstractInjectionTest.ShredInfo?)>)): Unit defined in org.jetbrains.kotlin.idea.test.KotlinLightCodeInsightFixtureTestCaseBase[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ShredInfo
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.psi.AbstractInjectionTest.ShredInfo..org.jetbrains.kotlin.psi.AbstractInjectionTest.ShredInfo?)
 
 'actualShreds' @ [70:21] ==> val actualShreds: List<AbstractInjectionTest.ShredInfo> defined in org.jetbrains.kotlin.psi.AbstractInjectionTest.doInjectionPresentTest[LocalVariableDescriptor]
 

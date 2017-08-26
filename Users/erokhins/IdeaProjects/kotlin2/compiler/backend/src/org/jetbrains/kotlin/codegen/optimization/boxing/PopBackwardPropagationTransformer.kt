@@ -99,9 +99,9 @@ Inferred types:
 Inferred types:
     <T> -> InsnNode
 
-'lazy' @ [67:31] ==> public fun <T> lazy(initializer: () -> Array<out Frame<SourceValue>?>): Lazy<Array<out Frame<SourceValue>?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [67:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Array<out Frame<SourceValue>?>
+    <T> -> T
 
 'analyzeMethodBody' @ [67:38] ==> private final fun analyzeMethodBody(): Array<out Frame<SourceValue>?> defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer[SimpleFunctionDescriptorImpl]
 
@@ -113,11 +113,11 @@ Inferred types:
 
 'it' @ [70:30] ==> value-parameter it: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer.transform.<anonymous>[ValueParameterDescriptorImpl]
 
-'isPop' @ [70:33] ==> public fun AbstractInsnNode.isPop(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPop' @ [70:33] ==> public fun AbstractInsnNode.isPop(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file PopBackwardPropagationTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [70:44] ==> value-parameter it: (AbstractInsnNode..AbstractInsnNode?) defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer.transform.<anonymous>[ValueParameterDescriptorImpl]
 
-'isPurePush' @ [70:47] ==> public fun AbstractInsnNode.isPurePush(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPurePush' @ [70:47] ==> public fun AbstractInsnNode.isPurePush(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file PopBackwardPropagationTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'computeTransformations' @ [72:13] ==> private final fun computeTransformations(): Unit defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer[SimpleFunctionDescriptorImpl]
 
@@ -366,7 +366,7 @@ Inferred types:
 
 'insn' @ [132:58] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer.HazardsTrackingInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
-'isPrimitiveTypeConversion' @ [132:63] ==> public fun AbstractInsnNode.isPrimitiveTypeConversion(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPrimitiveTypeConversion' @ [132:63] ==> public fun AbstractInsnNode.isPrimitiveTypeConversion(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file PopBackwardPropagationTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [133:21] ==> value-parameter value: SourceValue defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer.HazardsTrackingInterpreter.unaryOperation[ValueParameterDescriptorImpl]
 
@@ -669,7 +669,7 @@ Inferred types:
 
 'insn' @ [198:17] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer.propagatePopBackwards[ValueParameterDescriptorImpl]
 
-'isPrimitiveBoxing' @ [198:22] ==> public fun AbstractInsnNode.isPrimitiveBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPrimitiveBoxing' @ [198:22] ==> public fun AbstractInsnNode.isPrimitiveBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'getInputTop' @ [199:42] ==> private final fun getInputTop(insn: AbstractInsnNode): SourceValue defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer[SimpleFunctionDescriptorImpl]
 
@@ -687,7 +687,7 @@ Inferred types:
 
 'insn' @ [203:17] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer.propagatePopBackwards[ValueParameterDescriptorImpl]
 
-'isPurePush' @ [203:22] ==> public fun AbstractInsnNode.isPurePush(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPurePush' @ [203:22] ==> public fun AbstractInsnNode.isPurePush(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file PopBackwardPropagationTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'transformations' @ [204:21] ==> private final val transformations: HashMap<AbstractInsnNode, PopBackwardPropagationTransformer.Transformer.Transformation> /* = HashMap<AbstractInsnNode, PopBackwardPropagationTransformer.Transformer.Transformation> */ defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer[PropertyDescriptorImpl]
 
@@ -697,7 +697,7 @@ Inferred types:
 
 'insn' @ [207:17] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer.propagatePopBackwards[ValueParameterDescriptorImpl]
 
-'isPrimitiveTypeConversion' @ [207:22] ==> public fun AbstractInsnNode.isPrimitiveTypeConversion(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPrimitiveTypeConversion' @ [207:22] ==> public fun AbstractInsnNode.isPrimitiveTypeConversion(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file PopBackwardPropagationTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'getInputTop' @ [208:36] ==> private final fun getInputTop(insn: AbstractInsnNode): SourceValue defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer[SimpleFunctionDescriptorImpl]
 
@@ -931,7 +931,7 @@ Inferred types:
 
 'it' @ [286:17] ==> value-parameter it: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer.isTransformableCheckcastOperand[ValueParameterDescriptorImpl]
 
-'isPrimitiveBoxing' @ [286:20] ==> public fun AbstractInsnNode.isPrimitiveBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPrimitiveBoxing' @ [286:20] ==> public fun AbstractInsnNode.isPrimitiveBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 '==' @ [286:43] ==> public open fun equals(other: Any?): Boolean defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
@@ -949,11 +949,11 @@ Inferred types:
 
 'insn' @ [289:53] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer.isTransformablePopOperand[ValueParameterDescriptorImpl]
 
-'isPrimitiveBoxing' @ [289:58] ==> public fun AbstractInsnNode.isPrimitiveBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPrimitiveBoxing' @ [289:58] ==> public fun AbstractInsnNode.isPrimitiveBoxing(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file BoxingInterpreter.kt[SimpleFunctionDescriptorImpl]
 
 'insn' @ [289:81] ==> value-parameter insn: AbstractInsnNode defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer.isTransformablePopOperand[ValueParameterDescriptorImpl]
 
-'isPurePush' @ [289:86] ==> public fun AbstractInsnNode.isPurePush(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isPurePush' @ [289:86] ==> public fun AbstractInsnNode.isPurePush(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file PopBackwardPropagationTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'dontTouchInsnIndices' @ [292:17] ==> private final val dontTouchInsnIndices: BitSet defined in org.jetbrains.kotlin.codegen.optimization.boxing.PopBackwardPropagationTransformer.Transformer[PropertyDescriptorImpl]
 
@@ -975,7 +975,7 @@ Inferred types:
 
 'LDC' @ [299:50] ==> public const final val LDC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
 
-'isUnitInstance' @ [300:9] ==> public fun AbstractInsnNode.isUnitInstance(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing[SimpleFunctionDescriptorImpl]
+'isUnitInstance' @ [300:9] ==> public fun AbstractInsnNode.isUnitInstance(): Boolean defined in org.jetbrains.kotlin.codegen.optimization.boxing in file PopBackwardPropagationTransformer.kt[SimpleFunctionDescriptorImpl]
 
 'opcode' @ [303:9] ==> public final val AbstractInsnNode.opcode: Int[MyPropertyDescriptor]
 

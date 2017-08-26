@@ -144,7 +144,7 @@ Inferred types:
 
 'dispatchReceiver' @ [93:65] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'dispatchReceiver' @ [94:33] ==> val dispatchReceiver: ReceiverValue defined in org.jetbrains.kotlin.idea.intentions.MoveMemberOutOfCompanionObjectIntention.applyTo.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -256,7 +256,7 @@ Inferred types:
 
 'project' @ [122:9] ==> val project: Project defined in org.jetbrains.kotlin.idea.intentions.MoveMemberOutOfCompanionObjectIntention.applyTo[LocalVariableDescriptor]
 
-'checkConflictsInteractively' @ [122:17] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'checkConflictsInteractively' @ [122:17] ==> public fun Project.checkConflictsInteractively(conflicts: MultiMap<PsiElement, String>, onShowConflicts: () -> Unit = ..., onAccept: () -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'conflicts' @ [122:45] ==> val conflicts: MultiMap<PsiElement, String> defined in org.jetbrains.kotlin.idea.intentions.MoveMemberOutOfCompanionObjectIntention.applyTo[LocalVariableDescriptor]
 

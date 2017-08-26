@@ -253,7 +253,7 @@ Inferred types:
 
 'statement' @ [125:42] ==> val statement: KtExpression defined in org.jetbrains.kotlin.idea.inspections.UseExpressionBodyInspection.findValueStatement[LocalVariableDescriptor]
 
-'resultingWhens' @ [125:52] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions[SimpleFunctionDescriptorImpl]
+'resultingWhens' @ [125:52] ==> public fun KtExpression.resultingWhens(): List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.intentions in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'resultingWhens' @ [126:25] ==> val resultingWhens: List<KtWhenExpression> defined in org.jetbrains.kotlin.idea.inspections.UseExpressionBodyInspection.findValueStatement[LocalVariableDescriptor]
 
@@ -269,8 +269,8 @@ Inferred types:
 
 'get' @ [126:83] ==> @Nullable public abstract operator fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..ReadOnlySlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?), p1: (KtWhenExpression..KtWhenExpression?)): Boolean? defined in org.jetbrains.kotlin.resolve.BindingContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtWhenExpression
-    <V : (Any..Any?)> -> Boolean
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtWhenExpression..org.jetbrains.kotlin.psi.KtWhenExpression?)
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'EXHAUSTIVE_WHEN' @ [126:102] ==> public final val EXHAUSTIVE_WHEN: (WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>..WritableSlice<(KtWhenExpression..KtWhenExpression?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 

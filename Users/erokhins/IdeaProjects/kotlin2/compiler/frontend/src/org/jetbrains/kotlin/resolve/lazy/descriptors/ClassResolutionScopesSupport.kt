@@ -54,7 +54,7 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
-'fold' @ [50:69] ==> public inline fun <T, R> Iterable<(ClassDescriptor..ClassDescriptor?)>.fold(initial: LexicalScope, operation: (LexicalScope, (ClassDescriptor..ClassDescriptor?)) -> LexicalScope): LexicalScope defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [50:69] ==> public inline fun <T, R> Iterable<(ClassDescriptor..ClassDescriptor?)>.fold(initial: LexicalScope, operation: (acc: LexicalScope, (ClassDescriptor..ClassDescriptor?)) -> LexicalScope): LexicalScope defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
     <R> -> LexicalScope
@@ -228,7 +228,7 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
 
-'fold' @ [99:64] ==> public inline fun <T, R> Iterable<(ClassDescriptor..ClassDescriptor?)>.fold(initial: LexicalScope, operation: (LexicalScope, (ClassDescriptor..ClassDescriptor?)) -> LexicalScope): LexicalScope defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [99:64] ==> public inline fun <T, R> Iterable<(ClassDescriptor..ClassDescriptor?)>.fold(initial: LexicalScope, operation: (acc: LexicalScope, (ClassDescriptor..ClassDescriptor?)) -> LexicalScope): LexicalScope defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
     <R> -> LexicalScope

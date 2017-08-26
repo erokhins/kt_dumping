@@ -10,9 +10,9 @@ Inferred types:
 
 'version' @ [34:67] ==> value-parameter version: JvmTarget defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [36:34] ==> public fun <T> lazy(initializer: () -> List<TargetPlatformKind.Jvm>): Lazy<List<TargetPlatformKind.Jvm>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [36:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<Jvm>
+    <T> -> T
 
 'JvmTarget' @ [36:41] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
 
@@ -22,6 +22,8 @@ Inferred types:
 Inferred types:
     <T> -> JvmTarget
     <R> -> Jvm
+
+'Jvm' @ [36:66] ==> public constructor Jvm(version: JvmTarget) defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[ClassConstructorDescriptorImpl]
 
 'JVM_PLATFORMS' @ [38:52] ==> public final val JVM_PLATFORMS: List<TargetPlatformKind.Jvm> defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm.Companion[PropertyDescriptorImpl]
 
@@ -41,9 +43,9 @@ Inferred types:
 
 'NoVersion' @ [44:95] ==> public object NoVersion : TargetPlatformVersion defined in org.jetbrains.kotlin.config.TargetPlatformVersion[FakeCallableDescriptorForObject]
 
-'lazy' @ [47:59] ==> public fun <T> lazy(initializer: () -> List<TargetPlatformKind<TargetPlatformVersion>>): Lazy<List<TargetPlatformKind<TargetPlatformVersion>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [47:59] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<TargetPlatformKind<TargetPlatformVersion>>
+    <T> -> T
 
 'Jvm' @ [47:66] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
@@ -55,8 +57,6 @@ Inferred types:
 
 'Jvm' @ [49:21] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm[FakeCallableDescriptorForObject]
 
-'JvmTarget' @ [49:25] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [49:35] ==> @field:JvmField public final val DEFAULT: JvmTarget defined in org.jetbrains.kotlin.config.JvmTarget.Companion[DeserializedPropertyDescriptor]
 
 'JvmStatic' @ [54:5] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
@@ -64,8 +64,6 @@ Inferred types:
 'byCompilerArgumentsOrNull' @ [56:13] ==> public final fun byCompilerArgumentsOrNull(arguments: CommonCompilerArguments?): LanguageFeature.State? defined in org.jetbrains.kotlin.config.CoroutineSupport[SimpleFunctionDescriptorImpl]
 
 'arguments' @ [56:39] ==> value-parameter arguments: CommonCompilerArguments? defined in org.jetbrains.kotlin.config.CoroutineSupport.byCompilerArguments[ValueParameterDescriptorImpl]
-
-'LanguageFeature' @ [56:53] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'defaultState' @ [56:80] ==> public final val defaultState: LanguageFeature.State defined in org.jetbrains.kotlin.config.LanguageFeature[DeserializedPropertyDescriptor]
 
@@ -86,15 +84,11 @@ Inferred types:
 
 'ENABLE' @ [59:33] ==> public const final val ENABLE: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
 
-'LanguageFeature' @ [59:43] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED' @ [59:65] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
 'CommonCompilerArguments' @ [60:9] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
 
 'WARN' @ [60:33] ==> public const final val WARN: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
-
-'LanguageFeature' @ [60:41] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_WARNING' @ [60:63] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
@@ -102,11 +96,11 @@ Inferred types:
 
 'ERROR' @ [61:33] ==> public const final val ERROR: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
 
-'LanguageFeature' @ [61:42] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
-
 'ENABLED_WITH_ERROR' @ [61:64] ==> enum entry ENABLED_WITH_ERROR defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
-'LanguageFeature' @ [66:13] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
+'?:' @ [66:13] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: LanguageFeature.State?, right: LanguageFeature.State): LanguageFeature.State[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> State
 
 'values' @ [66:35] ==> public final fun values(): Array<LanguageFeature.State> defined in org.jetbrains.kotlin.config.LanguageFeature.State[SimpleFunctionDescriptorImpl]
 
@@ -121,8 +115,6 @@ Inferred types:
 'equals' @ [66:75] ==> public fun String?.equals(other: String?, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'argument' @ [66:82] ==> value-parameter argument: String defined in org.jetbrains.kotlin.config.CoroutineSupport.byCompilerArgument[ValueParameterDescriptorImpl]
-
-'LanguageFeature' @ [67:16] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'defaultState' @ [67:43] ==> public final val defaultState: LanguageFeature.State defined in org.jetbrains.kotlin.config.LanguageFeature[DeserializedPropertyDescriptor]
 
@@ -214,10 +206,10 @@ Inferred types:
 
 'compilerArguments' @ [108:17] ==> public final var compilerArguments: CommonCompilerArguments? defined in org.jetbrains.kotlin.config.KotlinFacetSettings[PropertyDescriptorImpl]
 
-'let' @ [108:36] ==> @InlineOnly public inline fun <T, R> CommonCompilerArguments.let(block: (CommonCompilerArguments) -> TargetPlatformKind<TargetPlatformVersion>?): TargetPlatformKind<TargetPlatformVersion>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [108:36] ==> @InlineOnly public inline fun <T, R> CommonCompilerArguments.let(block: (CommonCompilerArguments) -> TargetPlatformKind<*>?): TargetPlatformKind<*>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> CommonCompilerArguments
-    <R> -> TargetPlatformKind<TargetPlatformVersion>?
+    <R> -> TargetPlatformKind<*>?
 
 'when (it) {
                 is K2JVMCompilerArguments -> {
@@ -227,9 +219,9 @@ Inferred types:
                 is K2JSCompilerArguments -> TargetPlatformKind.JavaScript
                 is K2MetadataCompilerArguments -> TargetPlatformKind.Common
                 else -> null
-            }' @ [109:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: TargetPlatformKind<TargetPlatformVersion>?, entry1: TargetPlatformKind<TargetPlatformVersion>?, entry2: TargetPlatformKind<TargetPlatformVersion>?, entry3: TargetPlatformKind<TargetPlatformVersion>?): TargetPlatformKind<TargetPlatformVersion>?[SimpleFunctionDescriptorImpl]
+            }' @ [109:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: TargetPlatformKind<*>?, entry1: TargetPlatformKind<*>?, entry2: TargetPlatformKind<*>?, entry3: TargetPlatformKind<*>?): TargetPlatformKind<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> TargetPlatformKind<TargetPlatformVersion>?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> TargetPlatformKind<*>?
 
 'it' @ [109:19] ==> value-parameter it: CommonCompilerArguments defined in org.jetbrains.kotlin.config.KotlinFacetSettings.<get-targetPlatformKind>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -237,13 +229,9 @@ Inferred types:
 
 'jvmTarget' @ [111:40] ==> @GradleOption @Argument public final var jvmTarget: String? defined in org.jetbrains.kotlin.cli.common.arguments.K2JVMCompilerArguments[DeserializedPropertyDescriptor]
 
-'JvmTarget' @ [111:53] ==> public companion object defined in org.jetbrains.kotlin.config.JvmTarget[FakeCallableDescriptorForObject]
-
 'DEFAULT' @ [111:63] ==> @field:JvmField public final val DEFAULT: JvmTarget defined in org.jetbrains.kotlin.config.JvmTarget.Companion[DeserializedPropertyDescriptor]
 
 'description' @ [111:71] ==> public open val description: String defined in org.jetbrains.kotlin.config.JvmTarget[DeserializedPropertyDescriptor]
-
-'TargetPlatformKind' @ [112:21] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'JVM_PLATFORMS' @ [112:44] ==> public final val JVM_PLATFORMS: List<TargetPlatformKind.Jvm> defined in org.jetbrains.kotlin.config.TargetPlatformKind.Jvm.Companion[PropertyDescriptorImpl]
 
@@ -259,11 +247,7 @@ Inferred types:
 
 'jvmTarget' @ [112:98] ==> val jvmTarget: String defined in org.jetbrains.kotlin.config.KotlinFacetSettings.<get-targetPlatformKind>.<anonymous>[LocalVariableDescriptor]
 
-'TargetPlatformKind' @ [114:45] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
 'JavaScript' @ [114:64] ==> public object JavaScript : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
-
-'TargetPlatformKind' @ [115:51] ==> public companion object defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
 'Common' @ [115:70] ==> public object Common : TargetPlatformKind<TargetPlatformVersion.NoVersion> defined in org.jetbrains.kotlin.config.TargetPlatformKind[FakeCallableDescriptorForObject]
 
@@ -275,7 +259,9 @@ Inferred types:
 
 'languageVersion' @ [123:17] ==> val languageVersion: LanguageVersion defined in org.jetbrains.kotlin.config.KotlinFacetSettings.<get-coroutineSupport>[LocalVariableDescriptor]
 
-'LanguageFeature' @ [123:35] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
+'!!' @ [123:35] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: LanguageVersion?): LanguageVersion[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> LanguageVersion
 
 'sinceVersion' @ [123:62] ==> public final val sinceVersion: LanguageVersion? defined in org.jetbrains.kotlin.config.LanguageFeature[DeserializedPropertyDescriptor]
 
@@ -307,15 +293,11 @@ Inferred types:
 
 'ENABLED' @ [128:39] ==> enum entry ENABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
 
-'CommonCompilerArguments' @ [128:50] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
-
 'ENABLE' @ [128:74] ==> public const final val ENABLE: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
 
 'LanguageFeature' @ [129:17] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'ENABLED_WITH_WARNING' @ [129:39] ==> enum entry ENABLED_WITH_WARNING defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
-
-'CommonCompilerArguments' @ [129:63] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
 
 'WARN' @ [129:87] ==> public const final val WARN: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
 
@@ -326,8 +308,6 @@ Inferred types:
 'LanguageFeature' @ [130:59] ==> public companion object defined in org.jetbrains.kotlin.config.LanguageFeature[FakeCallableDescriptorForObject]
 
 'DISABLED' @ [130:81] ==> enum entry DISABLED defined in org.jetbrains.kotlin.config.LanguageFeature.State[FakeCallableDescriptorForObject]
-
-'CommonCompilerArguments' @ [130:93] ==> public companion object defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments[FakeCallableDescriptorForObject]
 
 'ERROR' @ [130:117] ==> public const final val ERROR: String defined in org.jetbrains.kotlin.cli.common.arguments.CommonCompilerArguments.Companion[DeserializedPropertyDescriptor]
 
@@ -371,7 +351,7 @@ Inferred types:
 
 'getService' @ [156:60] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(KotlinFacetSettingsProvider..KotlinFacetSettingsProvider?)>): (KotlinFacetSettingsProvider..KotlinFacetSettingsProvider?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinFacetSettingsProvider
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.config.KotlinFacetSettingsProvider..org.jetbrains.kotlin.config.KotlinFacetSettingsProvider?)
 
 'project' @ [156:71] ==> value-parameter project: Project defined in org.jetbrains.kotlin.config.KotlinFacetSettingsProvider.Companion.getInstance[ValueParameterDescriptorImpl]
 

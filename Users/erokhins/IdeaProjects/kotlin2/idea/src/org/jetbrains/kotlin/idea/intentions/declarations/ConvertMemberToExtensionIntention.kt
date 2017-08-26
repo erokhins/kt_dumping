@@ -41,7 +41,7 @@ Inferred types:
 
 'element' @ [67:14] ==> value-parameter element: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.intentions.declarations.ConvertMemberToExtensionIntention.applicabilityRange[ValueParameterDescriptorImpl]
 
-'withHeaderImplementations' @ [67:22] ==> internal fun KtDeclaration.withHeaderImplementations(): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'withHeaderImplementations' @ [67:22] ==> internal fun KtDeclaration.withHeaderImplementations(): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'all' @ [67:50] ==> public inline fun <T> Iterable<KtDeclaration>.all(predicate: (KtDeclaration) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -63,7 +63,7 @@ Inferred types:
 
 'liftToHeader' @ [78:17] ==> internal fun KtDeclaration.liftToHeader(): KtDeclaration? defined in org.jetbrains.kotlin.idea.highlighter.markers in file DeclaredHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
-'headerImplementations' @ [78:33] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'headerImplementations' @ [78:33] ==> internal fun KtDeclaration.headerImplementations(): Set<KtDeclaration> defined in org.jetbrains.kotlin.idea.highlighter.markers in file ImplementedHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [78:58] ==> @InlineOnly public inline fun <T, R> Set<KtDeclaration>.let(block: (Set<KtDeclaration>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -208,7 +208,7 @@ Inferred types:
 
 'element' @ [117:48] ==> value-parameter element: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.intentions.declarations.ConvertMemberToExtensionIntention.processSingleDeclaration[ValueParameterDescriptorImpl]
 
-'isHeaderOrHeaderClassMember' @ [117:56] ==> internal fun KtDeclaration.isHeaderOrHeaderClassMember(): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers[SimpleFunctionDescriptorImpl]
+'isHeaderOrHeaderClassMember' @ [117:56] ==> internal fun KtDeclaration.isHeaderOrHeaderClassMember(): Boolean defined in org.jetbrains.kotlin.idea.highlighter.markers in file DeclaredHeaderMarker.kt[SimpleFunctionDescriptorImpl]
 
 'element' @ [119:20] ==> value-parameter element: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.intentions.declarations.ConvertMemberToExtensionIntention.processSingleDeclaration[ValueParameterDescriptorImpl]
 
@@ -470,7 +470,7 @@ Inferred types:
 
 'extension' @ [179:17] ==> val extension: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.intentions.declarations.ConvertMemberToExtensionIntention.processSingleDeclaration[LocalVariableDescriptor]
 
-'getReturnTypeReference' @ [179:27] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder[SimpleFunctionDescriptorImpl]
+'getReturnTypeReference' @ [179:27] ==> internal fun KtNamedDeclaration.getReturnTypeReference(): KtTypeReference? defined in org.jetbrains.kotlin.idea.quickfix.createFromUsage.callableBuilder in file CallableBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'text' @ [179:53] ==> public final val KtTypeReference.text: (String..String?)[MyPropertyDescriptor]
 
@@ -828,7 +828,7 @@ Inferred types:
 
 'element' @ [268:13] ==> value-parameter element: KtCallableDeclaration defined in org.jetbrains.kotlin.idea.intentions.declarations.ConvertMemberToExtensionIntention.createExtensionCallableAndPrepareBodyToSelect[ValueParameterDescriptorImpl]
 
-'withHeaderImplementations' @ [268:21] ==> internal fun KtDeclaration.withHeaderImplementations(): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.refactoring[SimpleFunctionDescriptorImpl]
+'withHeaderImplementations' @ [268:21] ==> internal fun KtDeclaration.withHeaderImplementations(): List<KtDeclaration> defined in org.jetbrains.kotlin.idea.refactoring in file kotlinRefactoringUtil.kt[SimpleFunctionDescriptorImpl]
 
 'filterIsInstance' @ [268:49] ==> public inline fun <reified R> Iterable<*>.filterIsInstance(): List<KtCallableDeclaration> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

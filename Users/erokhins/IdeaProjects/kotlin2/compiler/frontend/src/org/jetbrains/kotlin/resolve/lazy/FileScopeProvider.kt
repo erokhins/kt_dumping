@@ -59,12 +59,9 @@ Inferred types:
 
 'file' @ [53:54] ==> value-parameter file: KtFile defined in org.jetbrains.kotlin.resolve.lazy.FileScopeProviderImpl.getFileScopes[ValueParameterDescriptorImpl]
 
-'UserDataProperty' @ [60:59] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<FileScopesCustomizer>) defined in org.jetbrains.kotlin.psi.UserDataProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <in R : UserDataHolder> -> KtFile
-    <T : Any> -> FileScopesCustomizer
+'getValue' @ [60:59] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[SimpleFunctionDescriptorImpl]
 
 'create' @ [60:80] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(FileScopesCustomizer..FileScopesCustomizer?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FileScopesCustomizer
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.resolve.lazy.FileScopesCustomizer..org.jetbrains.kotlin.resolve.lazy.FileScopesCustomizer?)
 

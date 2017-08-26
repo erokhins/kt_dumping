@@ -11,9 +11,9 @@
 'if (classOrObject.isTopLevel())
         containingFile
     else
-        containingClass' @ [25:32] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {NavigatablePsiElement & PsiNamedElement}?, elseBranch: {NavigatablePsiElement & PsiNamedElement}?): {NavigatablePsiElement & PsiNamedElement}?[SimpleFunctionDescriptorImpl]
+        containingClass' @ [25:32] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: PsiElement?, elseBranch: PsiElement?): PsiElement?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {NavigatablePsiElement & PsiNamedElement}?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> PsiElement?
 
 'classOrObject' @ [25:36] ==> protected final val classOrObject: KtClassOrObject defined in org.jetbrains.kotlin.asJava.classes.KtLightClassImpl[PropertyDescriptorImpl]
 

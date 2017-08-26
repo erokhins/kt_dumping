@@ -4,7 +4,7 @@
 
 'createCachedValue' @ [59:78] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(MultiMap<String, KotlinDebuggerCaches.CompiledDataDescriptor>..MultiMap<String, KotlinDebuggerCaches.CompiledDataDescriptor>?)>?, p1: Boolean): CachedValue<(MultiMap<String, KotlinDebuggerCaches.CompiledDataDescriptor>..MultiMap<String, KotlinDebuggerCaches.CompiledDataDescriptor>?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MultiMap<String, CompiledDataDescriptor>
+    <T : (Any..Any?)> -> (com.intellij.util.containers.MultiMap<kotlin.String, org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.CompiledDataDescriptor>..com.intellij.util.containers.MultiMap<kotlin.String, org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.CompiledDataDescriptor>?)
 
 'Result' @ [61:37] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: MultiMap<String, KotlinDebuggerCaches.CompiledDataDescriptor>?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
 Inferred types:
@@ -12,8 +12,8 @@ Inferred types:
 
 'create' @ [62:34] ==> @NotNull public open fun <K : (Any..Any?), V : (Any..Any?)> create(): MultiMap<(String..String?), (KotlinDebuggerCaches.CompiledDataDescriptor..KotlinDebuggerCaches.CompiledDataDescriptor?)> defined in com.intellij.util.containers.MultiMap[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> CompiledDataDescriptor
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.CompiledDataDescriptor..org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.CompiledDataDescriptor?)
 
 'MODIFICATION_COUNT' @ [62:67] ==> public final val MODIFICATION_COUNT: raw (Key<(Any..Any?)>..Key<*>?) defined in com.intellij.psi.util.PsiModificationTracker[JavaPropertyDescriptor]
 
@@ -23,7 +23,7 @@ Inferred types:
 
 'createCachedValue' @ [65:76] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(MutableMap<PsiElement, List<String>>..MutableMap<PsiElement, List<String>>?)>?, p1: Boolean): CachedValue<(MutableMap<PsiElement, List<String>>..MutableMap<PsiElement, List<String>>?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MutableMap<PsiElement, List<String>>
+    <T : (Any..Any?)> -> (kotlin.collections.MutableMap<com.intellij.psi.PsiElement, kotlin.collections.List<kotlin.String>>..kotlin.collections.MutableMap<com.intellij.psi.PsiElement, kotlin.collections.List<kotlin.String>>?)
 
 'Result' @ [67:37] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: MutableMap<PsiElement, List<String>>?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
 Inferred types:
@@ -42,7 +42,7 @@ Inferred types:
 
 'createCachedValue' @ [72:77] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(MutableMap<PsiElement, KotlinTypeMapper>..MutableMap<PsiElement, KotlinTypeMapper>?)>?, p1: Boolean): CachedValue<(MutableMap<PsiElement, KotlinTypeMapper>..MutableMap<PsiElement, KotlinTypeMapper>?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MutableMap<PsiElement, KotlinTypeMapper>
+    <T : (Any..Any?)> -> (kotlin.collections.MutableMap<com.intellij.psi.PsiElement, org.jetbrains.kotlin.codegen.state.KotlinTypeMapper>..kotlin.collections.MutableMap<com.intellij.psi.PsiElement, org.jetbrains.kotlin.codegen.state.KotlinTypeMapper>?)
 
 'Result' @ [74:37] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: MutableMap<PsiElement, KotlinTypeMapper>?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
 Inferred types:
@@ -61,7 +61,7 @@ Inferred types:
 
 'createCachedValue' @ [79:74] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(WeakBytecodeDebugInfoStorage..WeakBytecodeDebugInfoStorage?)>?, p1: Boolean): CachedValue<(WeakBytecodeDebugInfoStorage..WeakBytecodeDebugInfoStorage?)> defined in com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> WeakBytecodeDebugInfoStorage
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.debugger.WeakBytecodeDebugInfoStorage..org.jetbrains.kotlin.idea.debugger.WeakBytecodeDebugInfoStorage?)
 
 'Result' @ [81:37] ==> public constructor Result<T : (Any..Any?)>(@Nullable p0: WeakBytecodeDebugInfoStorage?, @NotNull vararg p1: (Any..Any?)) defined in com.intellij.psi.util.CachedValueProvider.Result[JavaClassConstructorDescriptor]
 Inferred types:
@@ -89,7 +89,7 @@ Inferred types:
 
 'getService' @ [89:60] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(KotlinDebuggerCaches..KotlinDebuggerCaches?)>): (KotlinDebuggerCaches..KotlinDebuggerCaches?) defined in com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinDebuggerCaches
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches..org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches?)
 
 'project' @ [89:71] ==> value-parameter project: Project defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.Companion.getInstance[ValueParameterDescriptorImpl]
 
@@ -199,7 +199,7 @@ Inferred types:
 
 'emptyList' @ [125:56] ==> public final fun <T : (Any..Any?)> emptyList(): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'getInstance' @ [127:25] ==> public final fun getInstance(project: Project): KotlinDebuggerCaches defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.Companion[SimpleFunctionDescriptorImpl]
 
@@ -373,7 +373,7 @@ Inferred types:
 
 'getParentOfType' @ [177:70] ==> @Nullable @Contract public open fun <T : (PsiElement..PsiElement?)> getParentOfType(@Nullable p0: PsiElement?, @NotNull p1: Class<(KtElement..KtElement?)>): KtElement? defined in com.intellij.psi.util.PsiTreeUtil[JavaMethodDescriptor]
 Inferred types:
-    <T : (PsiElement..PsiElement?)> -> KtElement
+    <T : (PsiElement..PsiElement?)> -> (org.jetbrains.kotlin.psi.KtElement..org.jetbrains.kotlin.psi.KtElement?)
 
 'element' @ [177:86] ==> value-parameter element: PsiElement? defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.Companion.getElementToCreateTypeMapperForLibraryFile[ValueParameterDescriptorImpl]
 
@@ -410,6 +410,8 @@ Inferred types:
     <T> -> AnalysisResult
 
 'AnalysisResult' @ [186:82] ==> public companion object defined in org.jetbrains.kotlin.analyzer.AnalysisResult[FakeCallableDescriptorForObject]
+
+'throwIfError' @ [186:98] ==> public final fun throwIfError(): Unit defined in org.jetbrains.kotlin.analyzer.AnalysisResult[DeserializedSimpleFunctionDescriptor]
 
 'GenerationState' @ [190:25] ==> @JvmOverloads public constructor GenerationState(project: Project, builderFactory: ClassBuilderFactory, module: ModuleDescriptor, bindingContext: BindingContext, files: List<KtFile>, configuration: CompilerConfiguration, generateDeclaredClassFilter: GenerationState.GenerateClassFilter = ..., codegenFactory: CodegenFactory = ..., targetId: TargetId? = ..., moduleName: String? = ..., outDirectory: File? = ..., onIndependentPartCompilationEnd: GenerationStateEventCallback = ..., wantsDiagnostics: Boolean = ...) defined in org.jetbrains.kotlin.codegen.state.GenerationState[DeserializedClassConstructorDescriptor]
 
@@ -555,7 +557,7 @@ Inferred types:
 
 'singletonList' @ [243:76] ==> public open fun <T : (Any..Any?)> singletonList(p0: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'className' @ [243:90] ==> value-parameter className: String defined in org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches.ComputedClassNames.Companion.Cached[ValueParameterDescriptorImpl]
 

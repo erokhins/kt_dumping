@@ -51,7 +51,7 @@ Inferred types:
 
 'getExtensions' @ [44:31] ==> @NotNull public abstract fun <T : (Any..Any?)> getExtensions(@NotNull p0: ExtensionPointName<(T..T?)>): (Array<(T..T?)>..Array<out (T..T?)>) defined in com.intellij.openapi.application.Application[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'epName' @ [44:45] ==> private final val epName: ExtensionPointName<T> defined in org.jetbrains.kotlin.util.MappedExtensionProvider[PropertyDescriptorImpl]
 

@@ -26,7 +26,7 @@
 Inferred types:
     <E : (Any..Any?)> -> UsageInfo
 
-'processInternalReferencesToUpdateOnPackageNameChange' @ [86:5] ==> public fun KtElement.processInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo, body: (originalRefExpr: KtSimpleNameExpression, usageFactory: UsageInfoFactory /* = (KtSimpleNameExpression) -> UsageInfo? */) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'processInternalReferencesToUpdateOnPackageNameChange' @ [86:5] ==> public fun KtElement.processInternalReferencesToUpdateOnPackageNameChange(containerChangeInfo: ContainerChangeInfo, body: (originalRefExpr: KtSimpleNameExpression, usageFactory: UsageInfoFactory /* = (KtSimpleNameExpression) -> UsageInfo? */) -> Unit): Unit defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'containerChangeInfo' @ [86:58] ==> value-parameter containerChangeInfo: ContainerChangeInfo defined in org.jetbrains.kotlin.idea.refactoring.move.getInternalReferencesToUpdateOnPackageNameChange[ValueParameterDescriptorImpl]
 
@@ -161,11 +161,13 @@ Inferred types:
 
 'mainReference' @ [125:63] ==> public val KtSimpleNameExpression.mainReference: KtSimpleNameReference defined in org.jetbrains.kotlin.idea.references[DeserializedPropertyDescriptor]
 
-'lazy' @ [127:28] ==> public fun <T> lazy(initializer: () -> PsiElement?): Lazy<PsiElement?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [127:28] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PsiElement?
+    <T> -> T
 
-'DescriptorToSourceUtilsIde' @ [128:26] ==> public object DescriptorToSourceUtilsIde defined in org.jetbrains.kotlin.idea.codeInsight[FakeCallableDescriptorForObject]
+'?:' @ [128:26] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: PsiElement?, right: PsiElement): PsiElement[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PsiElement
 
 'getAnyDeclaration' @ [128:53] ==> public final fun getAnyDeclaration(project: Project, descriptor: DeclarationDescriptor): PsiElement? defined in org.jetbrains.kotlin.idea.codeInsight.DescriptorToSourceUtilsIde[DeserializedSimpleFunctionDescriptor]
 
@@ -215,7 +217,7 @@ Inferred types:
 
 'dispatchReceiver' @ [141:85] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'dispatchReceiver' @ [142:42] ==> val dispatchReceiver: ReceiverValue? defined in org.jetbrains.kotlin.idea.refactoring.move.processInternalReferencesToUpdateOnPackageNameChange.processReference[LocalVariableDescriptor]
 
@@ -375,14 +377,11 @@ Inferred types:
 
 'it' @ [188:72] ==> value-parameter it: UsageInfoFactory /* = (KtSimpleNameExpression) -> UsageInfo? */ defined in org.jetbrains.kotlin.idea.refactoring.move.processInternalReferencesToUpdateOnPackageNameChange.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'CopyableUserDataProperty' @ [192:70] ==> public constructor CopyableUserDataProperty<in R : PsiElement, T : Any>(key: Key<UsageInfo>) defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : PsiElement> -> KtSimpleNameExpression
-    <T : Any> -> UsageInfo
+'getValue' @ [192:70] ==> public final operator fun getValue(thisRef: R, property: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.CopyableUserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [192:99] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(UsageInfo..UsageInfo?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UsageInfo
+    <T : (Any..Any?)> -> (com.intellij.usageView.UsageInfo..com.intellij.usageView.UsageInfo?)
 
 'usages' @ [195:5] ==> value-parameter usages: Collection<UsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move.markInternalUsages[ValueParameterDescriptorImpl]
 
@@ -431,7 +430,7 @@ Inferred types:
 
 'referencedElement' @ [206:70] ==> public final val MoveRenameUsageInfo.referencedElement: PsiElement?[MyPropertyDescriptor]
 
-'mapToNewOrThis' @ [207:36] ==> internal fun mapToNewOrThis(e: PsiElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>): PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'mapToNewOrThis' @ [207:36] ==> internal fun mapToNewOrThis(e: PsiElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>): PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'referencedElement' @ [207:51] ==> val referencedElement: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move.restoreInternalUsages.<anonymous>[LocalVariableDescriptor]
 
@@ -621,7 +620,7 @@ Inferred types:
 
 'candidateDescriptor' @ [282:25] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.candidateDescriptor: CallableDescriptor[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'isExtension' @ [282:45] ==> public val DeclarationDescriptor.isExtension: Boolean defined in org.jetbrains.kotlin.resolve.descriptorUtil[DeserializedPropertyDescriptor]
 
@@ -919,13 +918,13 @@ Inferred types:
 
 'originalFile' @ [364:67] ==> public final val originalFile: PsiFile defined in org.jetbrains.kotlin.idea.refactoring.move.UnqualifiableMoveRenameUsageInfo[PropertyDescriptorImpl]
 
-'mapToNewOrThis' @ [364:85] ==> internal fun mapToNewOrThis(e: PsiElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>): PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'mapToNewOrThis' @ [364:85] ==> internal fun mapToNewOrThis(e: PsiElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>): PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'originalFile' @ [364:100] ==> public final val originalFile: PsiFile defined in org.jetbrains.kotlin.idea.refactoring.move.UnqualifiableMoveRenameUsageInfo[PropertyDescriptorImpl]
 
 'oldToNewElementsMapping' @ [364:114] ==> value-parameter oldToNewElementsMapping: Map<PsiElement, PsiElement> defined in org.jetbrains.kotlin.idea.refactoring.move.postProcessMoveUsage[ValueParameterDescriptorImpl]
 
-'mapToNewOrThis' @ [365:31] ==> internal fun mapToNewOrThis(e: PsiElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>): PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'mapToNewOrThis' @ [365:31] ==> internal fun mapToNewOrThis(e: PsiElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>): PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'usage' @ [365:46] ==> value-parameter usage: UsageInfo defined in org.jetbrains.kotlin.idea.refactoring.move.postProcessMoveUsage[ValueParameterDescriptorImpl]
 
@@ -943,7 +942,7 @@ Inferred types:
 
 'referencedElement' @ [370:36] ==> public final val MoveRenameUsageInfo.referencedElement: PsiElement?[MyPropertyDescriptor]
 
-'mapToNewOrThis' @ [371:30] ==> internal fun mapToNewOrThis(e: PsiElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>): PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'mapToNewOrThis' @ [371:30] ==> internal fun mapToNewOrThis(e: PsiElement, oldToNewElementsMapping: Map<PsiElement, PsiElement>): PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'oldElement' @ [371:45] ==> val oldElement: PsiElement defined in org.jetbrains.kotlin.idea.refactoring.move.postProcessMoveUsage[LocalVariableDescriptor]
 
@@ -1009,8 +1008,8 @@ Inferred types:
 
 'emptyMap' @ [396:76] ==> public final fun <K : (Any..Any?), V : (Any..Any?)> emptyMap(): (MutableMap<(PsiElement..PsiElement?), (PsiElement..PsiElement?)>..Map<(PsiElement..PsiElement?), (PsiElement..PsiElement?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PsiElement
-    <V : (Any..Any?)> -> PsiElement
+    <K : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
+    <V : (Any..Any?)> -> (com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)
 
 'DELAYED_SHORTENING' @ [397:57] ==> enum entry DELAYED_SHORTENING defined in org.jetbrains.kotlin.idea.references.KtSimpleNameReference.ShorteningMode[FakeCallableDescriptorForObject]
 
@@ -1116,7 +1115,7 @@ Inferred types:
 
 'progressStep' @ [423:49] ==> val progressStep: Double defined in org.jetbrains.kotlin.idea.refactoring.move.postProcessMoveUsages[LocalVariableDescriptor]
 
-'postProcessMoveUsage' @ [424:9] ==> private fun postProcessMoveUsage(usage: UsageInfo, oldToNewElementsMapping: Map<PsiElement, PsiElement>, nonCodeUsages: ArrayList<NonCodeUsageInfo>, shorteningMode: KtSimpleNameReference.ShorteningMode): Unit defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'postProcessMoveUsage' @ [424:9] ==> private fun postProcessMoveUsage(usage: UsageInfo, oldToNewElementsMapping: Map<PsiElement, PsiElement>, nonCodeUsages: ArrayList<NonCodeUsageInfo>, shorteningMode: KtSimpleNameReference.ShorteningMode): Unit defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'usage' @ [424:30] ==> val usage: UsageInfo defined in org.jetbrains.kotlin.idea.refactoring.move.postProcessMoveUsages[LocalVariableDescriptor]
 
@@ -1132,14 +1131,11 @@ Inferred types:
 
 'nonCodeUsages' @ [428:12] ==> val nonCodeUsages: ArrayList<NonCodeUsageInfo> defined in org.jetbrains.kotlin.idea.refactoring.move.postProcessMoveUsages[LocalVariableDescriptor]
 
-'UserDataProperty' @ [431:48] ==> public constructor UserDataProperty<in R : UserDataHolder, T : Any>(key: Key<Boolean>) defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedClassConstructorDescriptor]
-Inferred types:
-    <in R : UserDataHolder> -> KtFile
-    <T : Any> -> Boolean
+'getValue' @ [431:48] ==> public final operator fun getValue(thisRef: R, desc: KProperty<*>): T? defined in org.jetbrains.kotlin.psi.UserDataProperty[DeserializedSimpleFunctionDescriptor]
 
 'create' @ [431:69] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): Key<(Boolean..Boolean?)> defined in com.intellij.openapi.util.Key[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'UsageInfo' @ [433:107] ==> public constructor UsageInfo(@NotNull p0: PsiElement) defined in com.intellij.usageView.UsageInfo[JavaClassConstructorDescriptor]
 
@@ -1343,13 +1339,13 @@ Inferred types:
 
 'dispatchReceiver' @ [504:65] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.dispatchReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'resolvedCall' @ [505:53] ==> val resolvedCall: ResolvedCall<out CallableDescriptor> defined in org.jetbrains.kotlin.idea.refactoring.move.traverseOuterInstanceReferences.<no name provided>.getOuterInstanceReference[LocalVariableDescriptor]
 
 'extensionReceiver' @ [505:66] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'when (outerClassDescriptor) {
                                 dispatchReceiver?.declarationDescriptor -> extensionReceiver != null
@@ -1420,7 +1416,7 @@ Inferred types:
 
 'call' @ [521:91] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out CallableDescriptor>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> CallableDescriptor
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(out CallableDescriptor)
 
 'callElement' @ [521:96] ==> public final val Call.callElement: KtElement[MyPropertyDescriptor]
 
@@ -1459,7 +1455,7 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> OuterInstanceReferenceUsageInfo
 
-'traverseOuterInstanceReferences' @ [543:5] ==> @JvmOverloads public fun traverseOuterInstanceReferences(member: KtNamedDeclaration, stopAtFirst: Boolean, body: (OuterInstanceReferenceUsageInfo) -> Unit = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.move[SimpleFunctionDescriptorImpl]
+'traverseOuterInstanceReferences' @ [543:5] ==> @JvmOverloads public fun traverseOuterInstanceReferences(member: KtNamedDeclaration, stopAtFirst: Boolean, body: (OuterInstanceReferenceUsageInfo) -> Unit = ...): Boolean defined in org.jetbrains.kotlin.idea.refactoring.move in file moveUtils.kt[SimpleFunctionDescriptorImpl]
 
 'member' @ [543:37] ==> value-parameter member: KtNamedDeclaration defined in org.jetbrains.kotlin.idea.refactoring.move.collectOuterInstanceReferences[ValueParameterDescriptorImpl]
 

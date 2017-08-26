@@ -24,6 +24,8 @@ Inferred types:
 
 'environment' @ [67:17] ==> value-parameter environment: KotlinCoreEnvironment defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.<init>[ValueParameterDescriptorImpl]
 
+'createPackagePartProvider' @ [67:30] ==> public final fun createPackagePartProvider(scope: GlobalSearchScope): JvmPackagePartProvider defined in org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment[SimpleFunctionDescriptorImpl]
+
 'ScriptMutableDeclarationProviderFactory' @ [68:27] ==> public constructor ScriptMutableDeclarationProviderFactory() defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ScriptMutableDeclarationProviderFactory[ClassConstructorDescriptorImpl]
 
 'this' @ [71:9] ==> <this> defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer[LazyClassReceiverParameterDescriptor]
@@ -63,8 +65,6 @@ Inferred types:
 'TopDownAnalysisContext' @ [74:39] ==> public constructor TopDownAnalysisContext(@NotNull p0: TopDownAnalysisMode, @NotNull p1: DataFlowInfo, @NotNull p2: DeclarationScopeProvider) defined in org.jetbrains.kotlin.resolve.TopDownAnalysisContext[JavaClassConstructorDescriptor]
 
 'TopLevelDeclarations' @ [75:37] ==> enum entry TopLevelDeclarations defined in org.jetbrains.kotlin.resolve.TopDownAnalysisMode[FakeCallableDescriptorForObject]
-
-'DataFlowInfoFactory' @ [75:59] ==> public object DataFlowInfoFactory defined in org.jetbrains.kotlin.resolve.calls.smartcasts[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [75:79] ==> @field:JvmField public final val EMPTY: DataFlowInfo defined in org.jetbrains.kotlin.resolve.calls.smartcasts.DataFlowInfoFactory[DeserializedPropertyDescriptor]
 
@@ -108,7 +108,7 @@ Inferred types:
 
 'putUserData' @ [99:26] ==> public open fun <T : (Any..Any?)> putUserData(@NotNull p0: Key<(Int..Int?)>, @Nullable p1: Int?): Unit defined in org.jetbrains.kotlin.psi.KtScript[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'PRIORITY_KEY' @ [99:55] ==> public final val PRIORITY_KEY: (Key<(Int..Int?)>..Key<(Int..Int?)>?) defined in org.jetbrains.kotlin.script.ScriptPriorities[JavaPropertyDescriptor]
 
@@ -164,8 +164,8 @@ Inferred types:
 
 'get' @ [110:19] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> get(p0: (ReadOnlySlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>..ReadOnlySlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>?), p1: (KtFile..KtFile?)): PackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.BindingTraceContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtFile
-    <V : (Any..Any?)> -> PackageFragmentDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor?)
 
 'FILE_TO_PACKAGE_FRAGMENT' @ [110:38] ==> public final val FILE_TO_PACKAGE_FRAGMENT: (WritableSlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>..WritableSlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -175,8 +175,8 @@ Inferred types:
 
 'record' @ [111:19] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> record(p0: (WritableSlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>..WritableSlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>?), p1: (KtFile..KtFile?), p2: (PackageFragmentDescriptor..PackageFragmentDescriptor?)): Unit defined in org.jetbrains.kotlin.resolve.BindingTraceContext[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> KtFile
-    <V : (Any..Any?)> -> PackageFragmentDescriptor
+    <K : (Any..Any?)> -> (org.jetbrains.kotlin.psi.KtFile..org.jetbrains.kotlin.psi.KtFile?)
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor?)
 
 'FILE_TO_PACKAGE_FRAGMENT' @ [111:41] ==> public final val FILE_TO_PACKAGE_FRAGMENT: (WritableSlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>..WritableSlice<(KtFile..KtFile?), (PackageFragmentDescriptor..PackageFragmentDescriptor?)>?) defined in org.jetbrains.kotlin.resolve.BindingContext[JavaPropertyDescriptor]
 
@@ -324,7 +324,7 @@ Inferred types:
 
 'delegateProvider' @ [166:28] ==> private final var delegateProvider: PackageMemberDeclarationProvider defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ScriptMutableDeclarationProviderFactory.AdaptablePackageMemberDeclarationProvider[PropertyDescriptorImpl]
 
-'ReplHistory' @ [174:39] ==> public constructor ReplHistory<T>(startingHistory: CompiledHistoryList<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> /* = List<CompiledHistoryItem<out Any?> /* = Pair<CompiledReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */> */ = ...) defined in org.jetbrains.kotlin.cli.common.repl.ReplHistory[DeserializedClassConstructorDescriptor]
+'ReplHistory' @ [174:39] ==> public constructor ReplHistory<T>(startingHistory: CompiledHistoryList<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> /* = List<CompiledHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<CompiledReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */> */ = ...) defined in org.jetbrains.kotlin.cli.common.repl.ReplHistory[DeserializedClassConstructorDescriptor]
 Inferred types:
     <T> -> SuccessfulLine
 
@@ -335,15 +335,15 @@ Inferred types:
 
 'successfulLines' @ [178:27] ==> private final val successfulLines: ReplHistory<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState[PropertyDescriptorImpl]
 
-'resetToLine' @ [178:43] ==> public final fun resetToLine(lineNumber: Int): SourceHistoryList<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> /* = List<SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */> */ defined in org.jetbrains.kotlin.cli.common.repl.ReplHistory[DeserializedSimpleFunctionDescriptor]
+'resetToLine' @ [178:43] ==> public final fun resetToLine(lineNumber: Int): SourceHistoryList<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> /* = List<SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */> */ defined in org.jetbrains.kotlin.cli.common.repl.ReplHistory[DeserializedSimpleFunctionDescriptor]
 
 'lineId' @ [178:55] ==> value-parameter lineId: ILineId defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.resetToLine[ValueParameterDescriptorImpl]
 
 'no' @ [178:62] ==> public abstract val no: Int defined in org.jetbrains.kotlin.cli.common.repl.ILineId[DeserializedPropertyDescriptor]
 
-'removed' @ [179:13] ==> val removed: SourceHistoryList<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> /* = List<SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */> */ defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.resetToLine[LocalVariableDescriptor]
+'removed' @ [179:13] ==> val removed: SourceHistoryList<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> /* = List<SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */> */ defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.resetToLine[LocalVariableDescriptor]
 
-'forEach' @ [179:21] ==> @HidesMembers public inline fun <T> Iterable<SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */>.forEach(action: (SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [179:21] ==> @HidesMembers public inline fun <T> Iterable<SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */>.forEach(action: (SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<ReplCodeLine, SuccessfulLine>
 
@@ -351,20 +351,20 @@ Inferred types:
 
 'remove' @ [179:46] ==> public open fun remove(key: KtFile): ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo? defined in java.util.HashMap[JavaMethodDescriptor]
 
-'it' @ [179:53] ==> value-parameter it: SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */ defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.resetToLine.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [179:53] ==> value-parameter it: SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */ defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.resetToLine.<anonymous>[ValueParameterDescriptorImpl]
 
 'second' @ [179:56] ==> public final val second: ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
 'linePsi' @ [179:63] ==> public open val linePsi: KtFile defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine[PropertyDescriptorImpl]
 
-'removed' @ [180:20] ==> val removed: SourceHistoryList<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> /* = List<SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */> */ defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.resetToLine[LocalVariableDescriptor]
+'removed' @ [180:20] ==> val removed: SourceHistoryList<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> /* = List<SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */> */ defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.resetToLine[LocalVariableDescriptor]
 
-'map' @ [180:28] ==> public inline fun <T, R> Iterable<SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */>.map(transform: (SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */) -> ReplCodeLine): List<ReplCodeLine> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [180:28] ==> public inline fun <T, R> Iterable<SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */>.map(transform: (SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */) -> ReplCodeLine): List<ReplCodeLine> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<ReplCodeLine, SuccessfulLine>
     <R> -> ReplCodeLine
 
-'it' @ [180:34] ==> value-parameter it: SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */ defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.resetToLine.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [180:34] ==> value-parameter it: SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */ defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.resetToLine.<anonymous>[ValueParameterDescriptorImpl]
 
 'first' @ [180:37] ==> public final val first: ReplCodeLine defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
@@ -374,14 +374,14 @@ Inferred types:
 
 'successfulLines' @ [185:20] ==> private final val successfulLines: ReplHistory<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState[PropertyDescriptorImpl]
 
-'reset' @ [185:36] ==> public final fun reset(): SourceHistoryList<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> /* = List<SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */> */ defined in org.jetbrains.kotlin.cli.common.repl.ReplHistory[DeserializedSimpleFunctionDescriptor]
+'reset' @ [185:36] ==> public final fun reset(): SourceHistoryList<ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> /* = List<SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */> */ defined in org.jetbrains.kotlin.cli.common.repl.ReplHistory[DeserializedSimpleFunctionDescriptor]
 
-'map' @ [185:44] ==> public inline fun <T, R> Iterable<SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */>.map(transform: (SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */) -> ReplCodeLine): List<ReplCodeLine> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [185:44] ==> public inline fun <T, R> Iterable<SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */>.map(transform: (SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */) -> ReplCodeLine): List<ReplCodeLine> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Pair<ReplCodeLine, SuccessfulLine>
     <R> -> ReplCodeLine
 
-'it' @ [185:50] ==> value-parameter it: SourceHistoryItem<out Any?> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */ defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.reset.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [185:50] ==> value-parameter it: SourceHistoryItem<[ERROR : Unknown type parameter 1]> /* = Pair<ReplCodeLine, ReplCodeAnalyzer.ResettableAnalyzerState.LineInfo.SuccessfulLine> */ defined in org.jetbrains.kotlin.cli.jvm.repl.ReplCodeAnalyzer.ResettableAnalyzerState.reset.<anonymous>[ValueParameterDescriptorImpl]
 
 'first' @ [185:53] ==> public final val first: ReplCodeLine defined in kotlin.Pair[DeserializedPropertyDescriptor]
 

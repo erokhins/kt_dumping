@@ -8,9 +8,9 @@ Inferred types:
 Inferred types:
     <T> -> PreprocessedVirtualFileFactoryExtension
 
-'lazy' @ [41:78] ==> public fun <T> lazy(initializer: () -> Array<PreprocessedVirtualFileFactoryExtension>): Lazy<Array<PreprocessedVirtualFileFactoryExtension>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [41:78] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Array<PreprocessedVirtualFileFactoryExtension>
+    <T> -> T
 
 'PreprocessedVirtualFileFactoryExtension' @ [42:9] ==> public companion object : ProjectExtensionDescriptor<PreprocessedVirtualFileFactoryExtension> defined in org.jetbrains.kotlin.extensions.PreprocessedVirtualFileFactoryExtension[FakeCallableDescriptorForObject]
 
